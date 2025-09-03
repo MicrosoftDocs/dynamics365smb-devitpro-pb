@@ -1,8 +1,8 @@
 ---
 title: "AllowInCustomizations property"
-description: "Specifies whether this table field can be used as source expression for new page fields in page customizations."
+description: "Specifies whether the fields declared in this object can be used as source expression for new page fields in page customizations, and if they can be made editable."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 09/03/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,19 +11,22 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AllowInCustomizations Property
-> **Version**: _Available or changed with runtime version 12.0._
+> **Version**: _Available or changed with runtime version 16.0._
 
-Specifies whether this table field can be used as source expression for new page fields in page customizations.
+Specifies whether the fields declared in this object can be used as source expression for new page fields in page customizations, and if they can be made editable.
 
 ## Applies to
+-   Table
 -   Table field
 
 ## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Always**|runtime version 12.0|The field can be used as source expression for new page fields in page customizations.|
-|**Never**|runtime version 12.0|The field cannot be used as source expression for new page fields in page customizations.|
+|**ToBeClassified**|runtime version 16.0|The fields declared in this object have not yet been given a classification. By default, the fields can be used as source expressions for new page fields in page customizations, but they cannot be made editable.|
+|**Never**|runtime version 16.0|The fields declared in this object cannot be used as source expressions for new page fields in page customizations.|
+|**AsReadOnly**|runtime version 16.0|The fields declared in this object can be used as source expressions for new page fields in page customizations, but they cannot be made editable.|
+|**AsReadWrite**|runtime version 16.0|The fields declared in this object can be used as source expressions for new page fields in page customizations, and they can be made editable.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -2,7 +2,7 @@
 title: "Table, Table fields, and Table extension properties"
 description: "This article lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md)."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 09/03/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -23,7 +23,7 @@ The following properties all apply to the Table object, only some of these prope
 |-----------|------------|----------|
 |[Access property](devenv-access-property.md)| | -Codeunit <br />  -Query <br />  -Table <br />  -Table field <br />  -Enum Type <br />  -Interface <br />  -Permission Set <br /> |
 |[AccessByPermission property](devenv-accessbypermission-property.md)| | -Table field <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Custom Action <br />  -Page File Upload Action <br />  -Page <br />  -Report <br /> |
-|[AllowInCustomizations property](devenv-allowincustomizations-property.md)| | -Table field <br /> |
+|[AllowInCustomizations property](devenv-allowincustomizations-property.md)| True| -Table <br />  -Table field <br /> |
 |[AutoFormatExpression property](devenv-autoformatexpression-property.md)| | -Table field <br />  -Page Field <br />  -Report Column <br /> |
 |[AutoFormatType property](devenv-autoformattype-property.md)| | -Table field <br />  -Page Field <br />  -Report Column <br /> |
 |[AutoIncrement property](devenv-autoincrement-property.md)| | -Table field <br /> |
