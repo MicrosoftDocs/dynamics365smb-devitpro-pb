@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop analyzer"
 description: "PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 09/02/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,6 +42,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0023](pertenantextensioncop-pte0023.md)|The enum ordinal value should be within the allowed range|Extensibility|Info|
 |[PTE0024](pertenantextensioncop-pte0024.md)|Moving tables or fields is not allowed on per-tenant extensions.|Extensibility|Error|
 |[PTE0025](pertenantextensioncop-pte0025.md)|Avoid using duplicate object names|Extensibility|Warning|
+|[PTE0026](pertenantextensioncop-pte0026.md)|Table fields should use the AllowInCustomizations property|Extensibility|Hidden|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
