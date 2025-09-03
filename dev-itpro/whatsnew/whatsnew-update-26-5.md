@@ -48,6 +48,22 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
   > [!TIP]
   > This feature lets you can upgrade an existing sandbox environment on v26 to v27 preview.
 
+### Automate business tasks with our intelligent agents
+
+Take advantage of the recently released agents to automate common business tasks and reduce manual work.
+
+- **Sales Order Agent** Streamlines sales order creation by interpreting customer requests via email and checking inventory. It generates accurate quotes and orders for review and approval before sending. Learn more in [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
+
+  > Watch the [Less searching more selling with Sales Order Agent](https://youtu.be/Qmd6_5vYKDg) video on YouTube.
+
+- **Payables Agent** Automates vendor invoice processing by monitoring email inboxes and extracting invoice data using OCR. It drafts purchase invoices for review and approval, dramatically reducing manual effort and speeding up accounts payable workflows. Learn more in [Payables Agent](/dynamics365/business-central/payables-agent)
+
+#### Getting set up with the agents
+
+Each agent has a configuration page that simplifies setup. Before you start, you'll have to set up a shared mailbox and your environment for billing. Learn more in [Set up Sales Order Agent](/dynamics365/business-central/sales-order-agent-setup) and [Set up Payables Agent](/dynamics365/business-central/payables-agent-setup).
+
+> Watch the [Billing agents in Business Central - configure "Pay as You Go"](https://youtu.be/9esVS6I4wrY?si=lOzjFx-5wT_Vj3gS) video on YouTube.
+
 ### Business Central 2025 release wave 2 plans published
 
 The release plan for Business Central 2025 release wave 2 is now available. This plan outlines the new features and enhancements scheduled to roll out between October 2025 and March 2026. Explore the full plan and release details at [https://aka.ms/BCreleaseplan](https://aka.ms/BCreleaseplan).
