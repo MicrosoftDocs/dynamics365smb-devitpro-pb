@@ -19,21 +19,21 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-|Product area|Feature|PP/GA|Owner (PM)|
-|-------------------------------|--------------------------------------------------------------|--------------------------------------------|--------------------|
-|Copilot and agents|[Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)|PP|Dmitry Chadayev|
-|Copilot and agents|[Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)|PP|Blazej Kotelko|
-|Country and regional|Alternative posting groups for Employees|PP|Petr Janousek|
-|Country and regional|[Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia)|PP|Petr Janousek|
-|Country and regional|[Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia)|PP|Petr Janousek|
-|Country and regional|[New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia)|PP|Petr Janousek|
-|Country and regional|[New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia)|PP|Petr Janousek|
-|Country and regional|[Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia)|PP|Petr Janousek|
-|Financial Management|Alternative posting groups for Employees|PP|Aleksandar Totovic|
-|Financial Management|[New Contoso Coffee Demo Dataset for Intrastat](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat)|PP|Aleksandar Totovic|
-|Sustainability Management|[Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards)|PP|Aleksandar Totovic|
-|Sustainability Management|[Generate a CSRD preparation report](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/generate-csrd-preparation-report)|GA|Aleksandar Totovic|
-|Sustainability Management|[Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central)|PP|Aleksandar Totovic|
+|Product area|Feature|PP/GA|
+|-------------------------------|--------------------------------------------------------------|--------------------------------------------|
+|Copilot and agents|[Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)|PP|
+| |[Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)|PP|
+|Country and regional|Alternative posting groups for Employees|PP|
+| |[Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia)|PP|
+| |[Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia)|PP|
+| |[New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia)|PP|
+| |[New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia)|PP|
+| |[Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia)|PP|
+|Financial Management|Alternative posting groups for Employees|PP|
+| |[New Contoso Coffee Demo Dataset for Intrastat](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat)|PP|
+|Sustainability Management|[Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards)|PP|
+| |[Generate a CSRD preparation report](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/generate-csrd-preparation-report)|GA|
+| |[Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central)|PP|
 
 ## Localization updates
 
@@ -57,7 +57,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Recent online service features
 
-- [Update sandbox environments to preview versions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/update-sandbox-environments-preview-versions)Manage environment updates more flexibly (general availability)
+- [Update sandbox environments to preview versions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/update-sandbox-environments-preview-versions)
 
   > [!TIP]
   > This feature lets you can upgrade an existing sandbox environment on v26 to v27 preview.
