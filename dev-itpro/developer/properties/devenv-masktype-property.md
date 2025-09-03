@@ -27,6 +27,14 @@ Specifies whether the field value should be masked for security purposes.
 |**Concealed**|runtime version 16.0|The client handles this as a concealed field.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The `MaskType` property is defined on a field-level for the following field types: `Code`, `Text`, `Decimal`, `Integer`, and `BigInteger`.
+
+`MaskType` can't be defined together with the [ExtendedDatatype Property](devenv-extendeddatatype-property.md) set to `Masked`, this will throw an error. Also, the `MaskType` property isn't allowed in repeater controls and in ConfigurationDialog pages.
+
 ## Related information  
+
 [Getting started with AL](../devenv-get-started.md)  
 [Developing extensions](../devenv-dev-overview.md)  

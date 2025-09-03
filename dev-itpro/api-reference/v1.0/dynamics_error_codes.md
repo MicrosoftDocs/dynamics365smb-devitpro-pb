@@ -1,8 +1,6 @@
 ---
 title: (v1.0) Error Codes
 description: (v1.0) List of error codes.
-services: project-madeira
-documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -68,4 +66,5 @@ The error codes in the table below can be divided into the following categories 
 |Any|Any|Unknown|
 
 ## Related information
-[Dynamics 365 Business Central in Graph](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta) 
+
+[Dynamics 365 Business Central in Graph](/graph/api/resources/dynamics-graph-reference) 

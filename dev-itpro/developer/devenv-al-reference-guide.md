@@ -4,6 +4,7 @@ description: Explore the comprehensive AL Reference Guide for Dynamics 365 Busin
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 01/08/2025
+ms.update-cycle: 1095-days
 ms.topic: overview
 ms.reviewer: solsen
 ---
