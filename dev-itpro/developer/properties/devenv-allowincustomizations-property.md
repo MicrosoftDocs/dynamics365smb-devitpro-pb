@@ -32,7 +32,7 @@ Specifies whether the fields declared in this object can be used as source expre
 
 ## Remarks
 
-If you change the property to `Never`, then when the new extension version is published, the field is no longer available for adding to a page using customization. Also, it's removed from any existing pages that show it. For more information about page customization, see [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
+If you change the property to `Never`, then when the new extension version is published, the field is no longer available for adding to a page using customization. Also, it's removed from any existing pages that show it. Learn more in [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
 
 If you change the property from `AsReadWrite` to `AsReadOnly`, then after publishing the new extension version, any page fields defined in page customizations that use the field as a source expression will no longer be editable.
 
@@ -66,7 +66,7 @@ tableextension 50100 MyTable
 The following table extension example adds two fields to the **Customer** table. Because the `AllowInCustomizations` property is set to `Never` on the table extension level, the fields can't be added to pages through customization in the client.  
 
 > [!IMPORTANT]
-> `AllowInCustomizations` on the table extension level only applies to fields declared in the table extension and does not affect the base table fields.
+> `AllowInCustomizations` on the table extension level only applies to fields declared in the table extension and doesn't affect the base table fields.
 
 ```AL
 tableextension 50100 MyExtension extends Customer
