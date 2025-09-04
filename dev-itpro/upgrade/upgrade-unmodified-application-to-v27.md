@@ -1,6 +1,6 @@
 ---
-title: Upgrading Microsoft System and Base Application to Version 26
-description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 26
+title: Upgrading Microsoft System and Base Application to Version 27
+description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 27
 ms.custom: bap-template
 ms.date: 03/28/2025
 ms.reviewer: jswymer
@@ -8,7 +8,6 @@ ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ---
-
 # Upgrading Microsoft System and Base Application to Version 27
 
 Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that use the Microsoft system and base applications.
@@ -23,9 +22,9 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 > [!IMPORTANT]
 > You can't upgrade directly to version 27 from version 24 or earlier because there are several objects in these earlier versions that are ot included in version 27. Upgrade to version 25 first. Learn more about these objects in [Deleted objects](upgrade-considerations-v26.md#deleted-objects). To upgrade to version 25, follow the instructions in [Upgrading Microsoft system and base application to version 25](upgrade-unmodified-application-to-v25.md).  
 
-## Task 2: Prepare for upgrade to version 26
+## Task 1: Prepare for upgrade to version 27
 
-### Review upgrade considerations and known issues for version 26
+### Review upgrade considerations and known issues for version 27
 
 - Learn about key information and tips to prepare for an upgrade in [Important information and considerations when upgrading to Business Central](upgrade-considerations-v26.md).  
 - [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
@@ -39,8 +38,8 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment.
 
 ```powershell
-$OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC250"
-$NewBcServerInstance = "The name of the Business Central server instance for version 26, for example: BC260"
+$OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC260"
+$NewBcServerInstance = "The name of the Business Central server instance for version 27, for example: BC270"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (25-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. In a single-tenant deployment, this is the same as the $TenantDatabase" 
@@ -49,33 +48,33 @@ $SystemAppPath = "The file path and name of the System Application extension for
 $BusFoundAppPath = "The file path and name of the Business Foundationn extension for the update, for example: C:\DVD\Applications\BusinessFoundation\Source\Microsoft_Business Foundation.app"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
-$NewBCVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 26.0.24582.0"
+$NewBCVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 27.0.24582.0"
 $PartnerLicense = "The file path and name of the partner license"
 $CustomerLicense = "The file path and name of the customer license"
-$AddinsFolder = "The file path to the Add-ins folder of version 26 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\260\Service\Add-ins."
+$AddinsFolder = "The file path to the Add-ins folder of version 27 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\270\Service\Add-ins."
 ```
 
-## Task 3: Install version 26
+## Task 2: Install version 27
 
-1. Download the latest available update for Business Central 2025 release wave 1 (version 26) that is compatible with your current version.
+1. Download the latest available update for Business Central 2025 release wave 2 (version 27) that is compatible with your current version.
 
     Learn more in [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-2. Before you install version 26, it can be useful to create a desktop shortcut the [!INCLUDE[admintool](../developer/includes/admintool.md)] for the current version. The reason is that the Start menu item for the current version is replaced with item for the [!INCLUDE[admintool](../developer/includes/admintool.md)] for version 26.
+2. Before you install version 27, it can be useful to create a desktop shortcut the [!INCLUDE[admintool](../developer/includes/admintool.md)] for the current version. The reason is that the Start menu item for the current version is replaced with item for the [!INCLUDE[admintool](../developer/includes/admintool.md)] for version 27.
 
-3. Install Business Central version 26 components.
+3. Install Business Central version 27 components.
 
-    You keep the current version installed to complete some steps in the upgrade process. When you install version 26, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the current version's [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You keep the current version installed to complete some steps in the upgrade process. When you install version 27, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the current version's [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 4: Upgrade permission sets
+## Task 3: Upgrade permission sets
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
 
-## Task 5: Prepare the existing databases
+## Task 4: Prepare the existing databases
 
 1. Make backup of the databases.
 2. Disable data encryption.
@@ -147,11 +146,11 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
 8. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
-## Task 6: Convert application database to version 26
+## Task 5: Convert application database to version 27
 
-This task runs a technical upgrade on the application database to convert it to the version 26 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.
+This task runs a technical upgrade on the application database to convert it to the version 27 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 26 as an administrator.
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 27 as an administrator.
 2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
@@ -171,9 +170,9 @@ This task runs a technical upgrade on the application database to convert it to 
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 7: Configure version 26 server
+## Task 6: Configure version 27 server
 
-When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
+When you installed version 27 in **Task 1**, a version 27 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -196,9 +195,9 @@ When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 8: Import version 26 license
+## Task 7: Import version 27 license
 
-1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 26 license to the database. 
+1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 27 license to the database. 
 
     ```powershell
     Import-NAVServerLicense -ServerInstance $NewBcServerInstance -LicenseFile $PartnerLicense
@@ -210,11 +209,11 @@ When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 9: Synchronize tenant
+## Task 8: Synchronize tenant
 
 Synchronize the tenant database with the platform changes in the application database to get it ready for the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 26 server instance.
+1. (Multitenant only) Mount the tenant to the version 27 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
 
@@ -239,13 +238,13 @@ Synchronize the tenant database with the platform changes in the application dat
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-## Task 10: Publish extensions
+## Task 9: Publish extensions
 
 In this task, you publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 26 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 27 that you started in the previous task.
 
 1. Publish the **System Application** extension (Microsoft_System Application.app).
 
@@ -291,7 +290,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     For example:
 
     ```powershell
-    Publish-NAVApp -ServerInstance BC260 -Path "C:\W1DVD\Applications\ReportLayouts\Source\Microsoft__Exclude_ReportLayouts.app"
+    Publish-NAVApp -ServerInstance BC270 -Path "C:\W1DVD\Applications\ReportLayouts\Source\Microsoft__Exclude_ReportLayouts.app"
     ```
 
     > [!NOTE]
@@ -299,17 +298,17 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 1. Publish new versions of non-Microsoft extensions. Be sure to include new extensions that contain custom permission sets as AL objects.
 
-    If you have new versions of these extensions, built on the Business Central version 26, then publish the new versions.  
+    If you have new versions of these extensions, built on the Business Central version 27, then publish the new versions.  
 
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path "<path to extension>"
     ```
 
-1. Recompile extensions not built on version 26.
+1. Recompile extensions not built on version 27.
 
     [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
-    Do this step for any published extension versions that aren't built on version 26, and you want to reinstall on tenants. These extensions must be recompiled to work with version 26. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+    Do this step for any published extension versions that aren't built on version 27, and you want to reinstall on tenants. These extensions must be recompiled to work with version 27. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
     ```powershell  
     Repair-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension name>
@@ -323,7 +322,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 
-## Task 11: Synchronize tenant with extensions
+## Task 10: Synchronize tenant with extensions
 
 Synchronize the tenant's database schema with any schema changes in the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -373,7 +372,7 @@ Synchronize the tenant's database schema with any schema changes in the new exte
    > [!IMPORTANT]
    > If you're upgrading the v25 subscription billing extension, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Renamed tables and fields in subscription billing extension cause synch errors on upgrade](known-issues.md#renamed-tables-and-fields-in-subscription-billing-extension-cause-synch-errors-on-upgrade).
 
-## Task 12: Upgrade data
+## Task 11: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
@@ -428,19 +427,19 @@ Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Fun
 
 This command upgrades and installs the extensions on the tenant.
 
-## Task 12: Install new Microsoft or reinstall 3rd-party extensions
+## Task 11: Install new Microsoft or reinstall 3rd-party extensions
 
-Complete this task to install new first-time Microsoft extensions that you published in task 10 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
+Complete this task to install new first-time Microsoft extensions that you published in task 9 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
 ```powershell
 Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension version>
 ```
 
-## Task 13: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-## Task 14: Install upgraded permissions sets
+## Task 13: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you decided to use permission sets as AL objects or as data.
 
@@ -465,7 +464,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## Task 15: Change application version
+## Task 14: Change application version
 
 [!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version.md)]
 
@@ -491,4 +490,4 @@ For more information, see [To export and import a permission set](/dynamics365/b
 ## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
-[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
+[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)
