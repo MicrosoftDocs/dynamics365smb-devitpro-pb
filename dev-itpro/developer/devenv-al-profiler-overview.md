@@ -34,18 +34,6 @@ Use the profiler to validate optimizations, isolate slow pages or processes, dis
 
 Apply filters to focus on the most expensive methods. Use profiling early and iteratively to keep performance predictable.
 
-<!--
-## Profiling types compared
-
-| Feature | Instrumentation Profiling | Sampling Profiling |
-|---------|---------------------------|-------------------|
-| Accuracy | High - precise timing for each method | Moderate - statistical representation |
-| Performance impact | Higher - adds overhead to execution | Lower - minimal impact on execution |
-| Setup complexity | More complex | Simpler |
-| Best for | Detailed analysis of specific code paths | Quick overview of performance patterns |
-| File size | Larger | Smaller |
--->
-
 ## Snapshot of the running code
 
 With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can capture a performance profile of the code that was executed for a snapshot. There are two types of profiling; *instrumentation* profiling and *sampling* profiling. Both types of profiling are based on a snapshot of running code. The instrumentation profiling is more accurate and provides more insight. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. The sampling profiling is less accurate, but can provide faster insights into performance trends on code.
@@ -109,6 +97,8 @@ For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.
             "profileSamplingInterval": 100
         }
 ```
+
+> [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
 Starting with 2025 release wave 2, sampling profiling can track SQL calls in both the in-client profiler (web client) and in snapshots captured from Visual Studio Code. The in-client profiler automatically uses sampling. To track SQL calls in Visual Studio Code snapshots, set the `profilingType` to `Sampling` in the launch.json file.
 
