@@ -1926,18 +1926,18 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
-### [Minor update compatibility matrix for upgrade](upgrade/upgrade-v14-v15-compatibility.md)
+### [Minor update compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
 ### Business Central 2025 release wave 2 (v27)
 #### [Overview of upgrade to v27](upgrade/upgrade-overview-v27.md)
 #### [Before upgrading to v27](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Upgrade to v27](upgrade/upgrade-unmodified-application-to-v26.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v26.md)
-### Business Central 2025 release wave 1
+### Business Central 2025 release wave 1 (v26)
 #### [Overview](upgrade/upgrade-overview-v26.md)
 #### [Before upgrading to v26](upgrade/upgrade-considerations-v26.md)
 #### [Upgrade to v26](upgrade/upgrade-unmodified-application-to-v26.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v26.md)
-### Business Central 2024 release wave 2
+### Business Central 2024 release wave 2 (v25)
 #### [Overview](upgrade/upgrade-overview-v25.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
 #### [Upgrade permission sets](upgrade/upgrade-permissions.md)
