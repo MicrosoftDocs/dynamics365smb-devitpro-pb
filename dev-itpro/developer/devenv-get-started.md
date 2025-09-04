@@ -2,7 +2,7 @@
 title: Get started with AL
 description: Description of how to get started with the AL development environment.
 author: SusanneWindfeldPedersen
-ms.date: 04/03/2025
+ms.date: 09/04/2025
 ms.topic: get-started
 ms.author: solsen
 ms.collection: get-started
@@ -28,6 +28,9 @@ Go through the following steps to set up a sandbox environment. Once you've set 
 5) Select <kbd>Alt</kbd>+<kbd>A</kbd>, and right after, <kbd>Alt</kbd>+<kbd>L</kbd> to trigger the **AL Go!** command, choose a path to a new empty folder and which version to run. Then choose **Microsoft cloud sandbox** as the server.  
 6) Enter the credentials that you provided for the sign-up.
 7) Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to deploy and run the extension on your online sandbox tenant.  
+
+> [!NOTE]
+> With runtime 16, you can cancel an in‑progress publish. Hit the **Cancel** button in the dialog in the lower right corner. The operation stops packaging/upload steps as soon as possible; partial artifacts aren’t applied to the server.
 
 You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. Learn more in [JSON files](devenv-json-files.md).
 
