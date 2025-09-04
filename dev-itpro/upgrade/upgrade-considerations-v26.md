@@ -65,7 +65,6 @@ This section includes important deployment changes that are helpful to know when
 
   Learn more about setting up delegation in [Configuring Delegation for Business Central Web Server](../deployment/configure-delegation-web-server.md). You can do this task anytime, but after upgrade, users won't be able to sign in to the web client until you do.
 
-
 ## Related information  
 
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)  
