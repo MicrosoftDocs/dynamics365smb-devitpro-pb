@@ -60,7 +60,7 @@ Take advantage of the recently released agents to automate common business tasks
 
 **Getting set up**
 
-Each agent has a configuration page that simplifies setup. Before you start, you'll have to set up a shared mailbox and your environment for billing. Learn more in [Set up Sales Order Agent](/dynamics365/business-central/sales-order-agent-setup) and [Set up Payables Agent](/dynamics365/business-central/payables-agent-setup).
+Each agent has a configuration page that simplifies setup. Before you start, you have to set up a shared mailbox and your environment for billing. Learn more in [Set up Sales Order Agent](/dynamics365/business-central/sales-order-agent-setup) and [Set up Payables Agent](/dynamics365/business-central/payables-agent-setup).
 
 > Watch the [Billing agents in Business Central - configure "Pay as You Go"](https://youtu.be/9esVS6I4wrY?si=lOzjFx-5wT_Vj3gS) video on YouTube.
 
@@ -90,10 +90,10 @@ Prepare for features expected to be mandatory in the next release wave (27.0). W
 
 For a list of features that became mandatory in update 26.0, go to [Optional features that are now mandatory](https://aka.ms/BCFeatureMgmt).
 
-### Discover all partner related resources
+### Discover all partner-related resources
 
 Are you a partner who wants a list of relevant resources? Learn more in [Resources for Partners](https://aka.ms/BCAll).
 
-### Discover all user related resources
+### Discover all user-related resources
 
 Are you a user who wants a list of relevant resources? Learn more in [Resources for users](https://aka.ms/BCUsers).  
