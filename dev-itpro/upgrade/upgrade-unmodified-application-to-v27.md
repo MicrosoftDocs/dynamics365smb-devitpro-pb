@@ -41,7 +41,7 @@ Many of the steps in this article use PowerShell cmdlets, which require that you
 $OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC260"
 $NewBcServerInstance = "The name of the Business Central server instance for version 27, for example: BC270"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
-$TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (25-0)" 
+$TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (26-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. In a single-tenant deployment, this is the same as the $TenantDatabase" 
 $DatabaseServer = "The SQL Server instance that hosts the databases. The value has the format server_name\instance_name, For example: localhost\BCDEMO"
 $SystemAppPath = "The file path and name of the System Application extension for the update, for example: C:\DVD\Applications\system application\Source\\Microsoft_System Application.app"
@@ -144,8 +144,6 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
 
-8. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
-
 ## Task 5: Convert application database to version 27
 
 This task runs a technical upgrade on the application database to convert it to the version 27 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.
@@ -162,7 +160,7 @@ This task runs a technical upgrade on the application database to convert it to 
 
     ```ps
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (25-0)
+    DatabaseName        : Demo Database BC (26-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
@@ -223,7 +221,7 @@ Synchronize the tenant database with the platform changes in the application dat
 
     > [!IMPORTANT]
     > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you'll get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
-    >  
+    > 
     > For upgrade, set the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
 
     At this stage, the tenant state is OperationalWithSyncPending.
@@ -273,12 +271,11 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 1. Publish the Microsoft_Application extension.
 
-    For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
-
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path $ApplicationAppPath
     ```
 
+    Learn more about this extension in [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 1. Publish the new versions of Microsoft extensions.
 
     In this step, you publish new versions of Microsoft extensions that were used on your old deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
@@ -352,9 +349,6 @@ Synchronize the tenant's database schema with any schema changes in the new exte
 
    Replace `$NewBCVersion` with the exact version of the published Base Application.
 
-   > [!IMPORTANT]
-   > If you're upgrading a Czech (CZ) language version 22 or earlier, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
-
 1. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension.
 
     ```powershell
@@ -427,9 +421,9 @@ Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Fun
 
 This command upgrades and installs the extensions on the tenant.
 
-## Task 11: Install new Microsoft or reinstall 3rd-party extensions
+## Task 11: Install new Microsoft or reinstall non-Microsoft extensions
 
-Complete this task to install new first-time Microsoft extensions that you published in task 9 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
+Complete this task to install new first-time Microsoft extensions that you published in task 9 or any non-Microsoft extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
 ```powershell
 Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension version>
@@ -439,6 +433,7 @@ Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Vers
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
+<!-- 
 ## Task 13: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you decided to use permission sets as AL objects or as data.
@@ -462,9 +457,9 @@ In this task, you install the custom permission sets that you upgraded earlier i
 4. Search for and open the **Permission Sets** page.
 5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
-For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
-
-## Task 14: Change application version
+Learn more in [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
+-->
+## Task 13: Change application version
 
 [!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version.md)]
 
