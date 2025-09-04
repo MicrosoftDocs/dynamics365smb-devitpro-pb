@@ -103,6 +103,8 @@ You can switch to a prerelease version of the AL Language extension directly wit
 3. On the **AL Language** extension, choose the **Switch to Pre-Release Version** button and your extension is updated to the prerelease version.
 4. Likewise, to go back choose the **Switch to Release Version** button.
 
+Use preview environments to prepare for the next release. Learn more in [Prepare for major updates with preview environments](../administration/preview-environments).
+
 ## Next steps
 
 Now that you have the tools and the `HelloWorld` example up and running, you might want to create a small sample app in AL. This walkthrough guides you to create an app adding objects, code, and publishing the app to your tenant. Learn more in [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md).
