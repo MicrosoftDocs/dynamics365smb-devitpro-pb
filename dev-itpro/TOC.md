@@ -1931,7 +1931,7 @@
 #### [Overview of upgrade to v27](upgrade/upgrade-overview-v27.md)
 #### [Before upgrading to v27](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Upgrade to v27](upgrade/upgrade-unmodified-application-to-v27.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v26.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v27.md)
 ### Business Central 2025 release wave 1 (v26)
 #### [Overview](upgrade/upgrade-overview-v26.md)
 #### [Before upgrading to v26](upgrade/upgrade-considerations-v26.md)
