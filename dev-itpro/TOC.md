@@ -2178,6 +2178,14 @@
 ###### [Upgrading the data: Multitenant mode](upgrade/upgrading-the-data-multitenant.md)
 ###### [Quick reference](upgrade/multitenant-upgrade-checklist.md)
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update.md)
+### Related articles
+#### [Convert to AL](upgrade/devenv-code-conversion.md)
+#### Migrating tables and fields between extensions
+##### [Overview](developer/devenv-migrate-table-fields.md)
+##### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+##### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Data migration toolkit - India
+##### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 ### [Some known issues](upgrade/known-issues.md)
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
