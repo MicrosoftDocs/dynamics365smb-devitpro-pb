@@ -13,14 +13,26 @@ ms.reviewer: solsen
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] and updated with sampling profiling for Business Central 2022 release wave 1.
 
-Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling. The AL Profiler is based on a snapshot of running code. The snapshot is a recording of running code that allows for later offline inspection. The AL Profiler is a powerful tool for analyzing performance in code written for Business Central.
+The AL Profiler helps analyze performance hot spots in [!INCLUDE [prod_short](includes/prod_short.md)] extensions by recording execution details from a snapshot of running code. It supports two complementary modes: *instrumentation* profiling for precise, per‑method timing, and *sampling* profiling for a fast, low‑overhead view of where time is spent. Instrumentation offers exact call timings and call counts. Sampling offers rapid, lightweight insight and now also surfaces SQL call activity (including in-client profiling).
+
+Use the profiler to validate optimizations, isolate slow pages or processes, distinguish AL execution time from SQL time, and compare alternative implementations. Profiles open in Visual Studio Code with top-down and bottom-up call stack views, filtering, and color coding by application layer. CodeLens can inline timing and hit data directly in source.
 
 ## When to use the AL Profiler
 
-- When users report that specific pages or processes are running slower than expected.
+- When users report that specific pages or processes run slower than expected.
 - When you're optimizing your extension before publishing it to AppSource.
 - When you want to validate performance improvements in your code.
-- When you need to identify, which parts of a complex process are consuming the most time.
+- When you need to identify, which parts of a complex process consume the most time.
+
+
+## Basic workflow
+
+1. Configure a snapshot (instrumentation or sampling) in launch.json.
+2. Capture and download the snapshot.
+3. Generate (or record in-client) an .alcpuprofile file.
+4. Open and explore call graphs, timings, hit counts, and (sampling) SQL calls.
+
+Apply filters to focus on the most expensive methods. Use profiling early and iteratively to keep performance predictable.
 
 <!--
 ## Profiling types compared
