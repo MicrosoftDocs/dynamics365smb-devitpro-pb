@@ -18,7 +18,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 You can't upgrade directly to version 26 from version 24 or earlier because version 26 deletes many objects. Upgrade to version 25 first. Learn more in [Deleted objects](upgrade-considerations-v26.md#deleted-objects).  
 
-[![Upgrade on unmodified Business Central application.](../developer/media/bc26-upgrade-unmodified-app.png)](../developer/media/bc26-upgrade-unmodified-app.png#lightbox)  
+[![Upgrade on unmodified Business Central application.](../developer/media/bc27-upgrade-unmodified-app.svg)](../developer/media/bc27-upgrade-unmodified-app.svg#lightbox)  
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
