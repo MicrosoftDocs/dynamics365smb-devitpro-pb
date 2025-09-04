@@ -8,7 +8,7 @@ ms.date: 04/09/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Business Central upgrade considerations ans preparation for v26 and later
+# Business Central upgrade considerations and preparation for v26 and later
 
 This article provides important information and tips for things to consider when you prepare to upgrade to 2025 release 1 (version 26) or 2025 release 2 (version 27). The information that's relevant for you depends on which version you're upgrading from, and how much your solution differs from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application.
 
@@ -28,7 +28,7 @@ Learn more about the deprecated features in:
 
 ## Deleted objects
 
-> APPLIES TO: Upgrade from v25.0 only
+> APPLIES TO: Upgrade from v24.0 and earlier only
 
 Many tables and fields are deleted from the base application and other Microsoft extensions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. These objects were in the **Obsolete::Removed** state for more than one major release. For a complete list of the deleted objects, consult [Deleted objects in 2025 release wave 1](deleted-objects-25w1.md).  
 
