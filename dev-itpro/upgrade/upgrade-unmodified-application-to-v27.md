@@ -16,15 +16,12 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 - 2025 release wave 1 (version 26)
 - 2024 release wave 2 (version 25)
 
-You can't upgrade directly to version 26 from version 24 or earlier because version 26 deletes many objects. Upgrade to version 25 first. Learn more in [Deleted objects](upgrade-considerations-v26.md#deleted-objects).  
-
 [![Upgrade on unmodified Business Central application.](../developer/media/bc27-upgrade-unmodified-app.svg)](../developer/media/bc27-upgrade-unmodified-app.svg#lightbox)  
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
-## Task 1: Upgrade to version 25
-
-This task applies if you're upgrading from version 24 or earlier. Follow the instructions in [Upgrading Microsoft system and base application to version 25](upgrade-unmodified-application-to-v25.md).  
+> [!IMPORTANT]
+> You can't upgrade directly to version 27 from version 24 or earlier because there are several objects in these earlier versions that are ot included in version 27. Upgrade to version 25 first. Learn more about these objects in [Deleted objects](upgrade-considerations-v26.md#deleted-objects). To upgrade to version 25, follow the instructions in [Upgrading Microsoft system and base application to version 25](upgrade-unmodified-application-to-v25.md).  
 
 ## Task 2: Prepare for upgrade to version 26
 
