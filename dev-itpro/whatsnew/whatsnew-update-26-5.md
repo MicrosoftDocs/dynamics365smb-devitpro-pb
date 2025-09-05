@@ -41,7 +41,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### Recent online service features 
+### Recent online service features
 
 [Update sandbox environments to preview versions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/update-sandbox-environments-preview-versions)
 
