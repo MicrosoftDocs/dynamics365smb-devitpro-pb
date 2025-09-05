@@ -46,7 +46,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 [Update sandbox environments to preview versions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/update-sandbox-environments-preview-versions)
 
 > [!TIP]
-> This feature lets you upgrade an existing sandbox environment on v26 to v27 public preview recently announced on Microsoft Viva Engage at [Public preview 2025 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=234753163264&view=all). Learn more about the preview features in [What's new in v27.0 preview](whatsnew-update-27-0.md).
+> This feature lets you upgrade an existing sandbox environment on v26 to v27 public preview, whicg was recently announced at [Public preview 2025 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=234753163264&view=all). Learn more about the preview features in [What's new in v27.0 preview](whatsnew-update-27-0.md).
 
 ### Automate business tasks with our intelligent agents
 
