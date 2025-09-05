@@ -76,17 +76,10 @@ The Business Central launch event for the 2025 release wave 1 was held in April 
 
 Prepare for features expected to be mandatory in the next release wave (27.0). When these features become mandatory, they might disrupt extensions and apps you install in the future. Work with your partner to update installed extensions and apps before the features are mandatory. These features are optional and can be enabled on the **Feature Management** page in Business Central. Learn more in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
 
-- [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
 - [Feature Update: Enable multiple users to post warehouse entries at the same time](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions)
-- [Feature: Use optimized text search in lists](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions)
-- [Feature Update: Enable use of G/L currency revaluation](/dynamics365/business-central/finance-revalue-account-balances)
 - [Feature: Enable server certificate validation for Http requests](../developer/devenv-httpcertvalid-feature-key.md)
 - [Feature Update: Enable using 1099 forms to transmit the tax data to the IRS in the United States](/dynamics365/business-central/localfunctionality/unitedstates/set-up-use-irs1099-form)
 - [Feature Update: Enable use of package tracking in physical inventory orders](/dynamics365/business-central/inventory-how-work-item-tracking)
-- [Feature Update: Use new communication texts for reminder terms](/dynamics365/business-central/finance-automate-reminders)
-- [Feature Update: Auto-save with every field change](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
-- [Feature: Preview semantic similarity search on application metadata ](../developer/semantic-search-feature-key.md) (previously named **Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata**)
-- [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)
 
 For a list of features that became mandatory in update 26.0, go to [Optional features that are now mandatory](https://aka.ms/BCFeatureMgmt).
 
