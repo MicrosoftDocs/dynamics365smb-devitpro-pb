@@ -2,7 +2,7 @@
 title: Use semantic similarity search feature key
 description: Learn about the feature key to switch chat with copilot so that it uses semantic search.
 ms.custom: bap-template
-ms.date: 03/17/2025
+ms.date: 08/28/2025
 ms.reviewer: jswymer
 ms.topic: article
 author: jswymer
@@ -14,7 +14,7 @@ ms.author: jswymer
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
-The **Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata** key in **feature management** controls how the system finds pages and reports based on search terms entered by users:
+The **Feature: Preview semantic similarity search on application metadata** key in **Feature Management** controls how the system finds pages and reports based on search terms entered by users:
 
 - When disabled, keyword-based search finds pages and reports by their matching metadata, like name and description. Users need to know the name of the page or report they're looking for.
 - When enabled, semantic search finds pages and reports based on the meaning and context of the search terms, providing relevant results even if the exact words don't match. Users don't need to know the name of the page or report, only the context.
