@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: how-to
 ms.update-cycle: 180-days
-ms.date: 07/16/2025
+ms.date: 09/05/2025
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -14,7 +14,16 @@ ms.reviewer: jswymer
 
 # Build the Copilot capability in AL
 
-Your extensions can enhance Copilot in [!INCLUDE [prod_short](includes/prod_short.md)] with one or more features known as Copilot capabilities. This article explains how to register a new capability, and how to integrate with the Azure OpenAI Service API to generate text through the AI module of [!INCLUDE [prod_short](includes/prod_short.md)] centered around an example of a Copilot capability to draft a project plan.
+Add a Copilot capability to your [!INCLUDE [prod_short](includes/prod_short.md)] extension by using the System.AI module, which integrates with Azure OpenAI Service. You register a capability, store authorization securely, define parameters, supply a metaprompt, and generate structured output while honoring governance, transparency, and telemetry.
+
+Use this article to learn how to:
+
+- Register and expose a Copilot capability
+- Set availability (Preview or Generally Available) and optional Learn more link
+- Store Azure OpenAI endpoint, deployment name, and API key securely
+- Configure chat completion parameters (tokens, temperature)
+- Add system (metaprompt) and user messages and generate a response
+- Apply guard rails and token limits
 
 ## Overview of the AI module
 
@@ -58,7 +67,7 @@ Under Copilot, you find the following objects:
 |[Copilot Availability](/dynamics365/business-central/application/system-application/enum/system.ai.copilot-availability)|Enum|The availability of the Copilot Capability; it can either be in preview or generally available.|
 |[Copilot Capability](/dynamics365/business-central/application/system/enum/system.ai.copilot-capability)|Enum|Defines the capabilities that can be registered.|
 
-Under Azure OpenAI you find the following objects:
+Under Azure OpenAI, you find the following objects:
 
 |Object | Object type | Purpose | 
 |-------|-------------|---------|
@@ -88,7 +97,7 @@ enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 }
 ```
 
-Next, you add a codeunit that registers the capability. Here, the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a project plan. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & agemt capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
+Next, you add a codeunit that registers the capability. Here, the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a project plan. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
 
 ```al
 codeunit 54310 "Secrets And Capabilities Setup"
