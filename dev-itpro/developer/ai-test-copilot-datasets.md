@@ -67,7 +67,7 @@ tests:
 
 ## Get data for your tests
 
-When creating AI tests, the data you use is as important as the AI features you're testing. Quality, consistency, and realism of data are critical for ensuring that your tests are comprehensive and meaningful.
+When you create AI tests, the data you use is as important as the AI features you're testing. Quality, consistency, and realism of data are critical for ensuring that your tests are comprehensive and meaningful.
 
 > [!TIP]
 > Learn more in [Best practices](ai-test-copilot-bestpractices.md) about other considerations when creating datasets.
