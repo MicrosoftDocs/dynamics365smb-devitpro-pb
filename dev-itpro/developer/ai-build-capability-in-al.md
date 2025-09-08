@@ -141,6 +141,8 @@ As a developer, you're responsible for choosing the right billing type for your 
 `Microsoft Billed` - meaning that the Copilot capability is billed by Microsoft
 `Not Billed` - meaning that the Copilot capability is not billed
 
+A capability can be billed by Microsoft either if it's delivered by Microsoft, or if the partner building the capability has chosen to opt in to using Business Central AI resources. Learn more in [Business Central AI resources](ai-dev-tools-resources.md).
+
 The billing type is defined by the extension that registers the capability. The billing type can be set in the `RegisterCapability()` and `ModifyCapability()` procedures. The billing type is shown in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)].
 
 The following example shows how to register a capability with the billing type `Custom Billed`.
@@ -148,6 +150,22 @@ The following example shows how to register a capability with the billing type `
 ```al
 CopilotBillingType := Enum::"Copilot Billing Type"::"Custom Billed";
 ```
+
+At runtime, the billing type setting is validated against which Azure OpenAI resources the capability actually tries to use. As a partner, you might use your own Azure OpenAI subscription during development, testing, and troubleshooting, but opt in to use [!INCLUDE [prod_short](includes/prod_short.md)] AI resources in customer production environments. Therefore, there may be some inconsistency in the defined billing type for the app versus the actual API call to Azure OpenAI in sandboxes.
+
+The following table summarizes the supported combinations. If the combination isn't allowed, the user gets an error message that usage of AI resources isn't authorized with the chosen billing type.
+
+|Publisher|Billing Type|Azure Open AI usage in code|Allowed|
+|---------|-------------|-----------|----------------------|
+|Partner|Microsoft Billed|Business Central AI resources|Yes|
+|Partner|Microsoft Billed|Partner's own Azure OpenAI resources|Only in sandboxes|
+|Partner|Custom Billed|Business Central AI resources|No|
+|Partner|Custom Billed|Partner's own Azure OpenAI resources|Yes|
+|Partner|Not Billed|Business Central AI resources|No|
+|Partner|Not Billed|Partner's own Azure OpenAI resources|Yes|
+|Microsoft|Not Billed|Business Central AI resources|Yes|
+|Microsoft|Microsoft Billed|Microsoft's own Azure OpenAI resources|Yes|
+|Microsoft|Custom Billed|Business Central AI resources|No|
 
 ### Saving the authorization
 
