@@ -141,7 +141,8 @@ As a developer, you're responsible for choosing the right billing type for your 
 `Microsoft Billed` - meaning that the Copilot capability is billed by Microsoft
 `Not Billed` - meaning that the Copilot capability is not billed
 
-The billing type is defined by the extension that registers the capability. The billing type is shown in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)].
+The billing type is defined by the extension that registers the capability. The billing type can be set in the `RegisterCapability()` and `ModifyCapability()` procedures. The billing type is shown in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)].
+
 The following example shows how to register a capability with the billing type `Custom Billed`.
 
 ```al
