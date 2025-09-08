@@ -139,9 +139,9 @@ As a developer, you're responsible for choosing the right billing type for your 
 
 `Custom Billed` - the Copilot capability is billed by partner/publisher
 `Microsoft Billed` - the Copilot capability is billed by Microsoft
-`Not Billed` - the Copilot capability is not billed
+`Not Billed` - the Copilot capability isn't billed
 
-A capability can be billed by Microsoft either if it's delivered by Microsoft, or if the partner building the capability has chosen to opt in to using Business Central AI resources. Learn more in [Business Central AI resources](ai-dev-tools-resources.md).
+A capability is billed by Microsoft either if it's delivered by Microsoft, or if the partner building the capability has chosen to opt in to using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources. Learn more in [Business Central AI resources](ai-dev-tools-resources.md).
 
 The billing type is defined by the extension that registers the capability. The billing type can be set in the `RegisterCapability()` and `ModifyCapability()` procedures. The billing type is shown in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)].
 
@@ -155,7 +155,7 @@ At runtime, the billing type setting is validated against which Azure OpenAI res
 
 The following table summarizes the supported combinations. If the combination isn't allowed, the user gets an error message that usage of AI resources isn't authorized with the chosen billing type.
 
-|Publisher|Billing Type|Azure Open AI usage in code|Allowed|
+|Publisher|Billing Type|Azure OpenAI usage in code|Allowed|
 |---------|-------------|-----------|----------------------|
 |Partner|Microsoft Billed|Business Central AI resources|Yes|
 |Partner|Microsoft Billed|Partner's own Azure OpenAI resources|Only in sandboxes|
