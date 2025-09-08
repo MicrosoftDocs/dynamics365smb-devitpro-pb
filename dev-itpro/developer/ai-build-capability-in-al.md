@@ -137,9 +137,9 @@ For the `"Copilot Availability"`, you can choose `Preview` for the first release
 
 As a developer, you're responsible for choosing the right billing type for your capability. The billing type can be either:
 
-`Custom Billed` - meaning that the Copilot capability is billed by partner/publisher
-`Microsoft Billed` - meaning that the Copilot capability is billed by Microsoft
-`Not Billed` - meaning that the Copilot capability is not billed
+`Custom Billed` - the Copilot capability is billed by partner/publisher
+`Microsoft Billed` - the Copilot capability is billed by Microsoft
+`Not Billed` - the Copilot capability is not billed
 
 A capability can be billed by Microsoft either if it's delivered by Microsoft, or if the partner building the capability has chosen to opt in to using Business Central AI resources. Learn more in [Business Central AI resources](ai-dev-tools-resources.md).
 
