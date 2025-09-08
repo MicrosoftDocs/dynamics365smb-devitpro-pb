@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: how-to
 ms.update-cycle: 180-days
-ms.date: 09/05/2025
+ms.date: 09/08/2025
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -130,6 +130,23 @@ codeunit 54310 "Secrets And Capabilities Setup"
 ```
 
 For the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but is subject to change and that you're welcoming their feedback.
+
+#### Billing type
+
+> [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
+
+As a developer, you're responsible for choosing the right billing type for your capability. The billing type can be either:
+
+`Custom Billed` - meaning that the Copilot capability is billed by partner/publisher
+`Microsoft Billed` - meaning that the Copilot capability is billed by Microsoft
+`Not Billed` - meaning that the Copilot capability is not billed
+
+The billing type is defined by the extension that registers the capability. The billing type is shown in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)].
+The following example shows how to register a capability with the billing type `Custom Billed`.
+
+```al
+CopilotBillingType := Enum::"Copilot Billing Type"::"Custom Billed";
+```
 
 ### Saving the authorization
 
