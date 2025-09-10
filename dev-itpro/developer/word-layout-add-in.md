@@ -26,12 +26,12 @@ The Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] Word add-in incl
 
 Use the task pane in the Word add-in to insert mapped fields, including data, labels, and report information, in a layout. Use this method for a guided UI instead of the XML Mapping pane.
 
-1. In the **Business Central** tab, select **Add Data** to open the **Business Central** pane.
+1. In the **Business Central** tab, select **Add Data** to open the **Business Central** task pane.
 1. Expand the collapsible tree to view data, labels, and report information:
 
-   | | |
+   | Node| Description|
    |---|---|
-   |**Data**|Includes nodes for table (data item) and its underlying source fields (columns) defined in the report's dataset. Use the table node when you want to add a *repeater* (a section that repeats for each record in a dataset). Use a repeater when you want to display a section that lists records in the table, displaying the same fields for each record. For example, if you want a list of customers, the repeater repeats the same layout for each customer—showing their name, address, and balance.|
+   |**Data**|Includes nodes for table (data item) and its underlying source fields (columns) defined in the report's dataset. Use the table node to a add a *repeater*, which repeats a row of columns for each record in a dataset. Add a repeater when you want to display a section that lists records in the table, displaying the same fields for each record. For example, if you want a list of customers, the repeater repeats the same layout for each customer&mdash;showing their name, address, and balance.|
    |**Labels**|Includes text strings for titles, headings, and captions in report.|
    |**Report information**|Includes fields that contain information about the report, like its ID, and requests to run the report, like the date and time (for example, *Report Date* or *Report ID*). This information is often referred to as *metadata*.|
 
@@ -42,6 +42,64 @@ Use the task pane in the Word add-in to insert mapped fields, including data, la
 1. To add a field or repeater, place the cursor in the Word document where you want it.
 1. In the **Business Central** task pane, select the field or table, and then select **Add field** or **Add repeater**.
 
+### Exercise: Create a simple customer list layout
+
+In this exercise, you create a Word layout that lists customers. This exercise creates the layout based on report 101 Customer List. The layout lists customers in a table with columns for cusotmer number, customer name, sales person code, and balance.
+
+#### Step 1: Create and export a blank layout in Business Central
+
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], create a blank Word layout for a report 101 Customer List.
+
+   1. [!INCLUDE[open-report-layouts-page](includes/open-report-layouts-page.md)]
+   1. Select any layout that is for the same report that you want use the new layout for.
+   1. Select **New**.
+   1. In the **Add New Layout for a Report** dialog box, set the following fields.
+
+      | Field | Value | 
+      |---|---|---|
+      | Report ID | 101 |
+      | Layout Name | Enter a brief descriptive name for the layout to help you easily identify it. |
+      | Format Options | **Word**|
+
+   1. Turn on the **Create a blank layout from the report object** option.
+   1. Select **OK**.
+1. Export the new layout.
+
+   1. Select the layout in the **Report Layouts** page.
+   1. Select the **Actions** > **Update and Export Layout** to download the Word layout file (.docx).
+
+#### Step 2: Customize the layout using the Word add-in
+
+1. Open the downloaded document in Word.
+1. Insert a simple table with the two rows and four columns.
+
+   The first is for defining the column headings. The second row is for the data for each customer (this row repeats).
+1. In the first row, add the following text in the columns: **No.**, **Name**, **Salesperson code**, **Balance**.
+1. Define the repeater on the second row for listing the customers:
+
+   1. In the **Business Central** tab, select **Add Data** to open the Word add-in task pane
+   1. In the task pane, expand the `Data'node, then the 'Customer' node.
+   1. In the document, select the entire second row.
+   1. In the *task pane, select the ´Customer` node and then **Add repeater**. The repeater is applied to the selected row.
+  
+1. Add fields to the repeater row:
+
+   1. In the second row of the table, place the cursor in the first cell (the **No.** column of the table).
+   1. In the task pane, select `Customer_No_` and then **Add field**.
+   1. Repeats steps 1 and 2 to add:
+
+      - `*CustAddr_1_` in the **Name** column
+      - `Customer__Salesperson_Code_Caption` in the **Salesperson code** column
+      - `Customer_Balance_LCY` in the **Balance** column.
+1. Save the Word file.
+
+#### Step 3: Import and test the layout in Business Central
+
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], return to the **Report Layouts** page,
+1. Select the layout you created for the customer list, and then select the **Replace Layout** action.
+1. Browse for the Word layout document you modified and select **Open** to import the layout.
+1. Select the for the report you chose, create a new layout (Format Options = Word), and upload the Word file you saved.
+1. Select the **Run Report** > **Print** to test the layout.
 
 ## Insert Layout Comment
 
