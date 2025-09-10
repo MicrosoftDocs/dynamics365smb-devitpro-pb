@@ -24,7 +24,7 @@ The Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] Word add-in incl
 
 ## Add data (preview)
 
-Use the task pane in the Word add-in to insert mapped fields, including data, labels, and report information, in a layout. Use this method for a guided UI instead of the XML Mapping pane.
+The Word add-in includes a task pane that lets you insert mapped fields, such as data, labels, and report information, in a layout. Use this task pane for an intuitive interface instead of the XML Mapping pane.
 
 1. In the **Business Central** tab, select **Add Data** to open the **Business Central** task pane.
 1. Expand the collapsible tree to view data, labels, and report information:
