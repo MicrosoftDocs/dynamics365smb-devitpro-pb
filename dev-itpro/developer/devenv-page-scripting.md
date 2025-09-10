@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 11/21/2024
+ms.date: 09/10/2025
 ms.custom: bap-template 
 ---
 
@@ -26,7 +26,6 @@ You can use the page scripting on any Business Central environment type, includi
 ## What is captured?
 
 The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. For example, it can't automate control add-ins, embedded Power BI reports, or anything outside of the Business Central web client experience.
-
 
 ## Prerequisites
 
@@ -75,14 +74,16 @@ This section outlines the basic steps to make a recording with the page scriptin
 
 1. Go back to the page and run through the task that you want to record.
 
-   As you use the application, your actions and the application’s responses are added in sequence as steps in the **Page Scripting** pane.
+   As you use the application, your actions and the application's responses are added in sequence as steps in the **Page Scripting** pane.
 
 1. At any time during recording, you can perform the following actions:
 
-   - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
-   - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar.
-   - To delete the last captured step, select **...** next to the step and then select **Delete**.
-   - To hide the page scripting pane, select the uppermost ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
+   - Pause recording: Select **Stop** ![stop recording](media/page-scripting-stop-button.png) in the control bar.
+   - Resume recording and continue actions: Select the **Start recording** ![start recording](media/page-scripting-start-button.png) in the control bar.
+   - Delete a captured step: Select **...** in the step and then select **Delete**.
+   - Insert steps between two previously recorded steps: Select **...** in the step after which you wan to add steps, and then select **Record from here**. This action moves the red recording position line. When ready, select the **Start recording** ![start recording](media/page-scripting-start-button.png).
+   - Rearrange steps: Drag a step to move it to a new location.  
+   - Hide the page scripting pane: Select the uppermost ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
    - To cancel recording and exit the page scripting tool, select the **Close recording** ![Shows the X button that closes the page scripting pane](media/page-scripting-hide-button.png) button in the **Recording** bar.
 
 1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
