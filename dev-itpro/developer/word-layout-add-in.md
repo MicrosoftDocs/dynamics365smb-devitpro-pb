@@ -31,7 +31,7 @@ Use the task pane in the Word add-in to insert mapped fields, including data, la
 
    | Node| Description|
    |---|---|
-   |**Data**|Includes nodes for table (data item) and its underlying source fields (columns) defined in the report's dataset. Use the table node to a add a *repeater*, which repeats a row of columns for each record in a dataset. Add a repeater when you want to display a section that lists records in the table, displaying the same fields for each record. For example, if you want a list of customers, the repeater repeats the same layout for each customer&mdash;showing their name, address, and balance.|
+   |**Data**|Includes nodes for table (data item) and its underlying source fields (columns) defined in the report's dataset. Use the table node to add a *repeater*, which repeats a row of columns for each record in a dataset. Add a repeater when you want to display a section that lists records in the table, displaying the same fields for each record. For example, if you want a list of customers, the repeater repeats the same layout for each customer&mdash;showing their name, address, and balance.|
    |**Labels**|Includes text strings for titles, headings, and captions in report.|
    |**Report information**|Includes fields that contain information about the report, like its ID, and requests to run the report, like the date and time (for example, *Report Date* or *Report ID*). This information is often referred to as *metadata*.|
 
@@ -42,9 +42,9 @@ Use the task pane in the Word add-in to insert mapped fields, including data, la
 1. To add a field or repeater, place the cursor in the Word document where you want it.
 1. In the **Business Central** task pane, select the field or table, and then select **Add field** or **Add repeater**.
 
-### Exercise: Create a simple customer list layout
+### Exercise: Create a basic customer list layout
 
-In this exercise, you create a Word layout that lists customers. This exercise creates the layout based on report 101 Customer List. The layout lists customers in a table with columns for cusotmer number, customer name, sales person code, and balance.
+In this exercise, you create a Word layout that lists customers. This exercise creates the layout based on report 101 Customer List. The layout lists customers in a table with columns for customer number, customer name, sales person code, and balance.
 
 #### Step 1: Create and export a blank layout in Business Central
 
@@ -70,7 +70,7 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 #### Step 2: Customize the layout using the Word add-in
 
 1. Open the downloaded document in Word.
-1. Insert a simple table with the two rows and four columns.
+1. Insert a table with the two rows and four columns.
 
    The first is for defining the column headings. The second row is for the data for each customer (this row repeats).
 1. In the first row, add the following text in the columns: **No.**, **Name**, **Salesperson code**, **Balance**.
@@ -97,7 +97,6 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], return to the **Report Layouts** page,
 1. Select the layout you created for the customer list, and then select the **Replace Layout** action.
 1. Browse for the Word layout document you modified and select **Open** to import the layout.
-1. Select the for the report you chose, create a new layout (Format Options = Word), and upload the Word file you saved.
 1. Select the **Run Report** > **Print** to test the layout.
 
 ## Insert Layout Comment
