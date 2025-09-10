@@ -51,7 +51,6 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], create a blank Word layout for a report 101 Customer List.
 
    1. [!INCLUDE[open-report-layouts-page](includes/open-report-layouts-page.md)]
-   1. Select any layout that is for the same report that you want use the new layout for.
    1. Select **New**.
    1. In the **Add New Layout for a Report** dialog box, set the following fields.
 
