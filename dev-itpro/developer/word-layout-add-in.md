@@ -83,7 +83,7 @@ In this exercise, you create a Word layout that lists customers. This exercise c
    1. In the task pane, select `Customer_No_` and then **Add field**.
    1. Repeats steps 1 and 2 to add:
 
-      - `*CustAddr_1_` in the **Name** column
+      - `CustAddr_1_` in the **Name** column
       - `Customer__Salesperson_Code_Caption` in the **Salesperson code** column
       - `Customer_Balance_LCY` in the **Balance** column.
 1. Save the Word file.
