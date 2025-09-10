@@ -76,10 +76,10 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 1. In the first row, add the following text in the columns: **No.**, **Name**, **Salesperson code**, **Balance**.
 1. Define the repeater on the second row for listing the customers:
 
-   1. In the **Business Central** tab, select **Add Data** to open the Word add-in task pane
-   1. In the task pane, expand the `Data'node, then the 'Customer' node.
+   1. In the **Business Central** tab, select **Add Data** to open the Word add-in task pane.
+   1. In the task pane, expand the `Data` node, and then the `Customer` node.
    1. In the document, select the entire second row.
-   1. In the *task pane, select the ´Customer` node and then **Add repeater**. The repeater is applied to the selected row.
+   1. In the task pane, select the `Customer` node and then **Add repeater**. The repeater is applied to the selected row.
   
 1. Add fields to the repeater row:
 
