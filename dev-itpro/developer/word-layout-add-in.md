@@ -42,7 +42,7 @@ The Word add-in includes a task pane that lets you insert mapped fields, such as
 1. To add a field or repeater, place the cursor in the Word document where you want it.
 1. In the **Business Central** task pane, select the field or table, and then select **Add field** or **Add repeater**.
 
-### Exercise: Create a basic customer list layout
+### Exercise: Create a simple customer list layout
 
 In this exercise, you create a Word layout that lists customers. This exercise creates the layout based on report 101 Customer List. The layout lists customers in a table with columns for customer number, customer name, sales person code, and balance.
 
