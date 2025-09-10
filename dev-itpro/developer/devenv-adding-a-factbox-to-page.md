@@ -86,7 +86,7 @@ You can define the following system parts by using the `systempart()` keyword:
 
 #### Summary
 
-The Summary part provides a high-level overview of the record, allowing users to quickly understand key information without having to navigate through multiple fields. The Summary part is of the type system part and can be controlled on `Card`, `Document`, and `ListPlus` pages, which allows developers to hide or configure the summary factbox when it's not needed. You must use the identifier `DefaultSummaryPart` to refer to it in code. The Summary part is *enabled by default on all card pages*.
+The Summary part provides a high-level overview of the record, allowing users to quickly understand key information without having to navigate through multiple fields. The Summary part is of the type system part and can be controlled on `Card`, `Document`, and `ListPlus` pages, which allows developers to hide or configure the summary factbox when it's not needed. You must use the identifier `DefaultSummaryPart` to refer to it in code. The Summary part is *enabled by default on all card, document, and list pages* that have a `FactBoxes` area.
 
 In the following example, a page extension of the Customer card hides the Summary part:
 
