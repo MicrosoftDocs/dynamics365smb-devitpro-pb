@@ -25,7 +25,7 @@ In order to avoid ID clashes for objects added by your extension and objects add
 
 ### Which object members are validated?
 
-The following object members are validated by AS0098:
+The following object members are validated by AS0099:
 
 - Enum Values defined in Enum Extension objects
 - Fields defined in Table Objects
