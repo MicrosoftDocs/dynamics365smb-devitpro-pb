@@ -93,6 +93,9 @@ In the following example, a page extension of the Customer card hides the Summar
 ```al
 pageextension 50101 MyPageExtension extends "Customer Card"
 {
+    PageType = Card;
+    ApplicationArea = All;
+
     ...
     layout
     {
@@ -110,6 +113,9 @@ Or, to hide it in new pages:
 ```al
 page 50101 MyPage
 {
+    PageType = Card;
+    ApplicationArea = All;
+
     ...
     layout
     {
