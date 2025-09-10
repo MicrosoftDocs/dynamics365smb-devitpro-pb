@@ -22,7 +22,7 @@ The Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] Word add-in incl
 
     The **Business Central** tab appears in the ribbon.
 
-## Add data (preview)
+## Add data
 
 The Word add-in includes a task pane that lets you insert mapped fields, such as data, labels, and report information, in a layout. Use this task pane for an intuitive interface instead of the XML Mapping pane.
 
