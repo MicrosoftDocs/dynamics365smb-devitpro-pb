@@ -29,13 +29,15 @@ Use the task pane in the Word add-in to insert mapped fields, including data, la
 1. In the **Business Central** tab, select **Add Data** to open the **Business Central** pane.
 1. Expand the collapsible tree to view data, labels, and report information:
 
-  |**Data**|Includes nodes for table (data item) and its underlying source fields (columns) defined in the report's dataset. Use the table node when you want to add a *repeater* (a section that repeats for each record in a dataset). Use a repeater when you want to display a section that lists records in the table, displaying the same fields for each record. For example, if you want a list of customers, the repeater repeats the same layout for each customer&mdash;showing their name, address, and balance.|
-  |**Labels**|Includes text strings for titles, headings, and captions in report.|
-  |**Report information**|Includes fields that contain information about the report, like its ID, and requests to run the report, like the date and time (for example, *Report Date* or *Report ID*). This information is often referred to as *metadata*.|
+   | | |
+   |---|---|
+   |**Data**|Includes nodes for table (data item) and its underlying source fields (columns) defined in the report's dataset. Use the table node when you want to add a *repeater* (a section that repeats for each record in a dataset). Use a repeater when you want to display a section that lists records in the table, displaying the same fields for each record. For example, if you want a list of customers, the repeater repeats the same layout for each customer—showing their name, address, and balance.|
+   |**Labels**|Includes text strings for titles, headings, and captions in report.|
+   |**Report information**|Includes fields that contain information about the report, like its ID, and requests to run the report, like the date and time (for example, *Report Date* or *Report ID*). This information is often referred to as *metadata*.|
 
-    - **Data** Includes nodes for table (data item) and its underlying source fields (columns) defined in the report's dataset. Use the table node when you want to add a *repeater* (a section that repeats for each record in a dataset; see [Creating a Word layout report](devenv-howto-report-layout.md#add-repeaters)). Use a repeater when you want to display a section that lists records in the table, displaying the same fields for each record. For example, if you want a list of customers, the repeater repeats the same layout for each customer&mdash;showing their name, address, and balance.
+   <!-- - **Data** Includes nodes for table (data item) and its underlying source fields (columns) defined in the report's dataset. Use the table node when you want to add a *repeater* (a section that repeats for each record in a dataset; see [Creating a Word layout report](devenv-howto-report-layout.md#add-repeaters)). Use a repeater when you want to display a section that lists records in the table, displaying the same fields for each record. For example, if you want a list of customers, the repeater repeats the same layout for each customer&mdash;showing their name, address, and balance.
     - **Labels** Includes text strings for titles, headings, and captions in report.
-    - **Report information** Includes fields that contain information about the report, like its ID, and requests to run the report, like the date and time (for example, *Report Date* or *Report ID*). This information is often referred to as *metadata*.
+    - **Report information** Includes fields that contain information about the report, like its ID, and requests to run the report, like the date and time (for example, *Report Date* or *Report ID*). This information is often referred to as *metadata*.-->
 
 1. To add a field or repeater, place the cursor in the Word document where you want it.
 1. In the **Business Central** task pane, select the field or table, and then select **Add field** or **Add repeater**.
