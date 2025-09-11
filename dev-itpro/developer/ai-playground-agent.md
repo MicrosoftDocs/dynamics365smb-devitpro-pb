@@ -1,6 +1,6 @@
 ---
-title: AI Playground agent overview
-description: Learn how you can use AI Playground agent in Business Central
+title: AI Playground Agent overview
+description: Learn how you can use AI Playground Agent in Business Central
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,37 +12,44 @@ ms.date: 09/10/2025
 ms.update-cycle: 180-days
 ---
 
-# AI Playground agent overview (preview)
+# AI Playground Agent overview (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 The AI Playground agent is a tool that allows you to experiment with AI capabilities in Business Central. It's available in sandbox environments and is designed for testing and learning purposes. It provides an environment where you can test and explore AI capabilities without affecting your production data.
 You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios.
 
-
-<!-- move to how to set up
 ## Prerequisites
 
 Before you can use the AI Playground agent, ensure that you have the following prerequisites in place:
 
-Enable the Copilot and agent capabilities in Business Central
-
+- Enable the Copilot and agent capabilities in Business Central
 - A Business Central environment with AI capabilities enabled.
 - Appropriate permissions to access and use AI features in Business Central.
-- An active subscription to the AI services required for the agent.
-- Basic understanding of Business Central and its functionalities.
-- Familiarity with AI concepts and terminology.
-- Access to the AI Playground agent through your Business Central environment.
-- 
-- Pre
 
-## Create an AI Playground agent
+## Turn on AI Playground Agent
 
-To create an AI Playground agent, follow these steps:
+The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in Business Central. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
-1. In Business Central, go to the search bar at the top of the page.
-1. Search for "Agents (Preview)" and select the link from the search results.
+When the AI Playground Agent is enabled, you will see the <insert icon> icon in the top navigation menu of the role center.
 
+## Set up AI Playground Agent
+
+The 
+
+
+
+
+## Activate AI Playground Agent
+
+
+Activate the AI Playground agent for your company.
+
+1. In the navigation bar at the upper right of the role center, select <icon> AI Playground Agent > Activate.
+1. On the Configure the AI Playground Agent page, select OK to activate the agent.
+
+
+<!--
 Steps
 (?) Search for Agents (Preview) and choose the link
 (?) On the Agents (Preview) card, 
@@ -50,6 +57,7 @@ Choose Playground, and then choose Create
 Enter Name, User Display Name, Initials, and choose the Type of agent - set to Playground Agent
 
 PA Agent must be active to add new tasks.
+PA Agent must be inactive to add permissions to it.
 
 (?) Choose OK to create the agent.
 
