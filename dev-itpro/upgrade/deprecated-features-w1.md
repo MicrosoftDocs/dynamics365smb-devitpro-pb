@@ -59,7 +59,7 @@ The following features are marked as `obsolete:pending` in 2025 release wave 2.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Moved| To reduce confusing and highlight that planning capabilities are not limited to manufacturing area, the following global planning setup fields moved from the **Manufacturing Setup** page to the **Inventory Setup** page:</br>-**Current Production Forecast**</br>-**Use Forecast on Locations**</br>-**Use Forecast on Variants**</br>-**Default Safety Lead Time**</br>-**Blank Overflow Level**</br>-**Combined MPS/MRP Calculation**</br>-**Default Dampener Period**</br>-**Default Dampener %**</br>These fields are now made non-editable and hidden on the **Manufacturing Setup** page. |
+|Moved| To reduce confusion, and highlight that planning capabilities aren't limited to manufacturing, we moved the following global planning setup fields from the **Manufacturing Setup** page to the **Inventory Setup** page:</br></br>-**Current Production Forecast**</br>-**Use Forecast on Locations**</br>-**Use Forecast on Variants**</br>-**Default Safety Lead Time**</br>-**Blank Overflow Level**</br>-**Combined MPS/MRP Calculation**</br>-**Default Dampener Period**</br>-**Default Dampener %**</br></br>These fields are now non-editable and hidden on the **Manufacturing Setup** page. |
 
 ## Changes in 2025 release wave 1
 
