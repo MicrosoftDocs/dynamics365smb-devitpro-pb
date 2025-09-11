@@ -159,7 +159,38 @@ During recording and playback, you can edit a captured step. The editing options
 
 ### Change step properties
 
-Some steps, like conditional steps or validation steps, have properties that you can modify to change the behavior. To access the properties for a step in the **Page Scripting** pane, select  **...** > **Properties**.  
+Some steps, like conditional steps or validation steps, have properties that you can modify to change the behavior. To access the properties for a step in the **Page Scripting** pane, select  **...** > **Properties**. Properties are settings or attributes individual steps in the script that:
+
+- Control the behavior of a specific step, for example, the wait time, input field, or page scope.
+- Control execution logic like optional pages or conditional branches.
+
+**Example**:
+```yaml
+- type: wait
+  properties:
+    duration: 1000
+```
+
+**Usage**:
+- Found inside each step block.
+- Used to fine-tune interactions like input, validation, wait, or navigation.
+
+**Key Traits**:
+- Specific to each step.
+- Not reusable across scripts.
+- Edited directly in the step definition.
+
+---
+
+### 🔍 Summary of Differences
+
+| Feature        | Parameters                          | Properties                          |
+|----------------|--------------------------------------|--------------------------------------|
+| **Scope**      | Global to the script or sub-recording | Local to a specific step             |
+| **Purpose**    | Inject dynamic values                | Configure step behavior              |
+| **Defined in** | `parameters:` block at top of YAML   | `properties:` inside each step       |
+| **Used in**    | Expressions, includes, validations   | Waits, inputs, optional pages        |
+| **Editable in**| YAML and (recently) UI               | YAML and UI                          |
 
 #### Use expressions in properties
 
@@ -171,6 +202,74 @@ Here are a couple examples:
 - To generate a "random" name to use in an input step, use the expression: `"Customer " & Today()`.
 
 [Learn more about Power Fx.](/power-platform/power-fx/overview)
+
+### Use parameters for input values
+
+Parameters are named inputs for passing values into the script at runtime. For example, suppose a script has a step that sets a date field. Instead of using the date selected during the recording, you define a parameter that lets you select the date during playback.
+
+Using parameters have the following advantages:
+
+- **Reusability** Instead of hardcoding values (like customer numbers or item IDs), you can use parameters to make the script adaptable for different test scenarios or environments.
+- **Dynamic Execution** You can use parameters in expressions to dynamically calculate or validate values during playback. For instance:
+- **Modularity** Parameters allow you to include sub-recordings and pass values between them. For example, you can create a customer in one recording and validate it in another by passing the customer number as a parameter. <!-- [2](https://microsoft.sharepoint.com/teams/bc-all/_layouts/15/Doc.aspx?sourcedoc=%7B2B3E5106-E6A0-47B2-8757-2B15D3C33DB2%7D&file=Business%20Central%20Page%20Scripting.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).-->
+
+### Add parameters
+
+You can add parameters from the page scripting tool interfacce in Business Central or by modifying the script's YAML file. 
+
+
+
+```yaml
+parameters:
+  Customer List - No.:
+    type: string
+    default: "10000"
+```
+
+**Usage**:
+```yaml
+value: =Parameters.'Customer List - No.'
+```
+
+**Key Traits**:
+- Defined in the `parameters` block.
+- Used in expressions and steps.
+- Can be passed from one script to another.
+- Only editable in YAML (though recent updates allow UI-based parameter definition too)
+
+Parameters in page script make scripts flexible, reusable, and dynamic. Parameters are named inputs that you define at the beginning of a YAML script. They allow you to pass values into the script at runtime, which can then be used throughout the steps of the recording.
+
+```yaml
+parameters:
+  Customer List - No.:
+    type: string
+    default: "10000"
+```
+
+This example defines a parameter called `Customer List - No.` with a default value of `"10000"`.
+
+#### Why Use Parameters?
+
+1. **Reusability** Instead of hardcoding values (like customer numbers or item IDs), you can use parameters to make the script adaptable for different test scenarios or environments.
+1. **Modularity** Parameters allow you to **include sub-recordings** and pass values between them. For example, you can create a customer in one recording and validate it in another by passing the customer number as a parameter[2](https://microsoft.sharepoint.com/teams/bc-all/_layouts/15/Doc.aspx?sourcedoc=%7B2B3E5106-E6A0-47B2-8757-2B15D3C33DB2%7D&file=Business%20Central%20Page%20Scripting.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).
+1. **Dynamic Execution** You can use parameters in expressions to dynamically calculate or validate values during playback. For instance:
+
+    ```yaml
+    value: =Parameters.'Customer List - No.'
+    ```
+
+   This injects the parameter value into a field during the test [3](https://microsoft.sharepoint.com/teams/dynamicsnavmoderndevteam/_layouts/15/Doc.aspx?sourcedoc=%7B5D4D0164-8826-45B3-A48A-EE10A9AFAE35%7D&file=Microsoft%20presents%20-%20Save%20time%20testing%20Business%20Central%20with%20Page%20Scripting.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).
+
+1. **DevOps Integration** Parameters support automation in CI/CD pipelines. You can run scripts with different parameter values using tools like `bc-replay`, which makes it ideal for automated testing across environments (Docker, SaaS, OnPrem)[6](https://outlook.office365.com/owa/?ItemID=AAMkADdhOTU1YzdmLTY1ZjctNGZiYi04MjY3LTJlMDVmOGI1MzRkNwBGAAAAAADkSgUBR26IT6hqIMLT0%2fNeBwDUH29wHW%2fHSoxKaotN5eT8AAAFkEYXAABKHT2NXzTkSZskMneIPA%2b%2fAAbadNQdAAA%3d&exvsurl=1&viewmodel=ReadMessageItem).
+
+#### Advanced Use Cases
+
+- **Conditional Logic**: Use parameters to control which template or sub-script to include based on a condition.
+- **Clipboard Integration**: Combine parameters with clipboard values to validate or reuse data captured during the recording[7](https://microsoft.sharepoint.com/teams/BusinessApplicationsandPlatformBAP/_layouts/15/Doc.aspx?sourcedoc=%7BC08A51D8-5C48-4A19-9E65-880AE023CC6E%7D&file=Evergreen%202024%20release%20waves%201%20and%202%20-%20Dynamics%20365%20-%20Copy.docx&action=default&mobileredirect=true&DefaultItemOpen=1).
+- **UI Definition**: Parameters can now be defined directly in the Page Scripting UI, not just in YAML files[8](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/record-edit-easier-enhanced-page-scripting-tool).
+
+
+Would you like help creating a parameterized script for a specific Business Central scenario or testing workflow?
 
 ### Handle optional pages
 
