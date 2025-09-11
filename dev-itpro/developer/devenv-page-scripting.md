@@ -42,23 +42,6 @@ The **Page Scripting** pane opens on the right side, as illustrated in the follo
 
 Now you're ready to start a new recording or play an existing recording. 
 
-
-<!--
-1. In the **Page Scripting** pane, select the **Start new** button in the pane or the **New recording** icon in the control bar at the top.
-
-   Recording starts, as indicated by solid red circle in the control bar.
-1. Run through the task as you typically would.
-
-   As you interact with the application, your actions and  actions you do are added in sequence to the **Page Scripting** pane.
-
-1. If you want to pause the recording select the **Stop** button in the control bar. To resume recording, select the **Start recording** button.
-1. When you are done, select the **Stop** button.
-
-1. To play back the recording right away, select the **Play** button.
-1. To save the recording to file so you run it later or share with someone, select the **Save** icon in the control bar.
-
-The sections that follow explain other capabilities of the page scripting tool for recording and replaying interactions. -->
-
 > [!NOTE]
 > In this article, *control* refers to page controls, like fields, cues or filters.
 
@@ -92,7 +75,7 @@ This section outlines the basic steps to make a recording with the page scriptin
    You can replay the recording as long as you don't close the page.
 1. To save the recording to file so you can run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar. Learn more in [Save a recording to a file](#save-a-recording-to-a-file).
 
-## Capture and edit steps during recording
+## Edit steps during recording
 
 There are various modifications you can make while recording to change the flow and behavior of steps, like moving steps, setting conditions, and more. These options are explained in the following sections.
 
@@ -195,7 +178,7 @@ Here are a couple examples:
 
 [Learn more about Power Fx](/power-platform/power-fx/overview)
 
-## Use parameters in input values and expressions
+## Parameterize inputs and expressions
 
 Parameters are named inputs for passing values into the script at runtime. For example, suppose a script has a step that sets a date field. Instead of using the date selected during the recording, you define a parameter that lets you select the date during playback.
 
@@ -203,7 +186,7 @@ Using parameters has the following advantages:
 
 - Reusability: Instead of hardcoding values (like customer numbers or item IDs), you can use parameters to make the script adaptable for different test scenarios or environments.
 - Dynamic execution: You can use parameters in expressions to dynamically calculate or validate values during playback.
-- Modularity: Parameters allow you to include sub-recordings and pass values between them. For example, you can create a customer in one recording and validate it in another by passing the customer number as a parameter. <!-- [2](https://microsoft.sharepoint.com/teams/bc-all/_layouts/15/Doc.aspx?sourcedoc=%7B2B3E5106-E6A0-47B2-8757-2B15D3C33DB2%7D&file=Business%20Central%20Page%20Scripting.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).-->
+- Modularity: Parameters allow you to include sub-recordings and pass values between them. For example, you can create a customer in one recording and validate it in another by passing the customer number as a parameter.
 
 ### Add parameters
 
