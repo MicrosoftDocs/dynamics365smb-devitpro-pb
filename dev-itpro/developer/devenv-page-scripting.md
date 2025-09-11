@@ -180,7 +180,7 @@ To handle this case, make the page optional:
 
 During recording and playback, you can edit a captured step. The editing options for a step depend on whether you're recording or playing back a recording and what kind of action the step runs. This section explains some of the options.-->
 
-### Change step properties
+## Change step properties
 
 Some steps, like conditional steps or validation steps, have properties that you can modify to change the behavior. To access the properties for a step in the **Page Scripting** pane, select **...** > **Properties**. Properties are settings or attributes on individual steps that control the behavior of a specific step, for example, the wait time, input field, or page scope.
 
@@ -195,7 +195,7 @@ Here are a couple examples:
 
 [Learn more about Power Fx](/power-platform/power-fx/overview)
 
-### User parameters for input values and expressions
+## Use parameters in input values and expressions
 
 Parameters are named inputs for passing values into the script at runtime. For example, suppose a script has a step that sets a date field. Instead of using the date selected during the recording, you define a parameter that lets you select the date during playback.
 
