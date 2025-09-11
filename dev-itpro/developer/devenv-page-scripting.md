@@ -90,26 +90,32 @@ This section outlines the basic steps to make a recording with the page scriptin
 1. To play back the recording right away, select the **Play** ![play recording](media/page-scripting-play-button.png) button.
 
    You can replay the recording as long as you don't close the page.
-1. To save the recording to file so you can run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar.
+1. To save the recording to file so you can run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar. Learn more in [Save a recording to a file](#save-a-recording-to-a-file).
 
-## Options for capturing steps during recording
+## Capture and edit steps during recording
 
-During recording, you can manually insert special steps by right-clicking a page control and selecting an appropriate option. These options are explained in the following sections.
+There are various modifications you can make while recording to change the flow and behavior of steps, like moving steps, setting conditions, and more. These options are explained in the following sections.
 
-### Copy and paste control values
+## Copy and paste control values
+
+> APPLIES TO: Recording only
 
 The page scripting tool comes with its own clipboard. The clipboard lets you copy values of controls and then paste the values in others controls or expressions, or even use them to [validate results](#validate-control-values). Copy and paste are available from the right-click context menu on a control.
 
 - To copy a control value to the clipboard, right-click the control and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
 - To paste a control value from the clipboard to another control, select **Page Scripting** > **Paste** > select the value from the list. Pasting a value from the clipboard creates an *input* step in the **Page Scripting** pane.
 
-### Use session info (user ID)
+## Use session info (user ID)
+
+> APPLIES TO: Recording only
 
 When recording, you have access to session information, such as the user ID. This information can be used in expressions and defining conditions. For example, suppose you have a list page that can be filtered based on the current signed in user. To insert the user ID in a control, like a filter, right-click the control and then select **Page Scripting** > **Paste**> **Session Info** > **User ID**.
 
 An input step with property value `Session.'User ID'` is added in the **Page Scripting** pane.
 
-### Validate control values
+## Validate control values
+
+> APPLIES TO: Recording only
 
 While recording, you can insert validation steps that assert that a control has a specific value when the recording is played back. When you insert a validation step, you can choose to validate using the control's current value, a value from the clipboard, or a custom value that you define using Power Fx.
 
@@ -124,7 +130,9 @@ To add a validation step:
 
    ![Shows the properties of a validation step recording](media/page-scripting-validation-step.png)
 
-### Make steps conditional
+## Make steps conditional
+
+> APPLIES TO: Recording only
 
 Another option during the recording is to insert conditional steps. During playback, conditional steps are only run if the condition is met. For example, suppose you only want to do some steps if there are no current rows in a list.
 
@@ -140,10 +148,12 @@ To insert conditional steps:
    A *conditional branch step* is added to the **Page Scripting** pane, for example, **When rows count is 0**. The **End Scope** button appears at the top of the step list to indicate that the next steps you add are the conditional steps.
 
 1. Return to the page and go through steps that you want to run if the condition is met.
-1. When you're finished adding conditional steps, select **End scope** in the **Page Scripting** pane.
+1. When you're finished adding conditional steps, select **End scope** elect **...** > **Properties**. 
 1. If you want to modify the condition, go to the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
 
-### Add a wait step
+## Add a wait step
+
+> APPLIES TO: Recording only
 
 When recording is eventually played back, it can be convenient to have a time delay after some steps before the next step runs. You add this delay while recording by inserting a wait step immediately after a captured step. You can only add a wait step on the last step listed in the page scripting tool&mdash;you can't insert wait steps between earlier steps.  
 
@@ -153,46 +163,28 @@ To add a wait step:
 1. In the **Wait Time** box, type the number of milliseconds that you want to wait before the next step runs.
 1. Go back to the page and continue the test you're recording.
 
-## Edit captured steps
+## Make page optional
 
-During recording and playback, you can edit a captured step. The editing options for a step depend on whether you're recording or playing back a recording and what kind of action the step runs. This section explains some of the options. 
+Sometimes a page that opens while recording won't necessarily open during playback. Unless you handle this condition, the script might fail during playback.
+
+A common case is when a confirmation dialog box appears during recording, for example, after changing a field value. During playback, the confirmation dialog box might not appear, for example, because the field value wasn't modified this time. The script fails on the step where it expects the confirmation dialog box.
+
+To handle this case, make the page optional:
+
+1. In the **Page Scripting** pane, locate the recorded step that opens the optional page. The step has the similar to **Page X was shown**, where **X** is the name.
+1. On the step, select **...** > **Make this an optional page**.
+
+   The steps that follow the optional page are indented to indicate that they're only run if the page is shown.
+
+<!-- ## Edit captured steps
+
+During recording and playback, you can edit a captured step. The editing options for a step depend on whether you're recording or playing back a recording and what kind of action the step runs. This section explains some of the options.-->
 
 ### Change step properties
 
-Some steps, like conditional steps or validation steps, have properties that you can modify to change the behavior. To access the properties for a step in the **Page Scripting** pane, select  **...** > **Properties**. Properties are settings or attributes individual steps in the script that:
+Some steps, like conditional steps or validation steps, have properties that you can modify to change the behavior. To access the properties for a step in the **Page Scripting** pane, select **...** > **Properties**. Properties are settings or attributes on individual steps that control the behavior of a specific step, for example, the wait time, input field, or page scope.
 
-- Control the behavior of a specific step, for example, the wait time, input field, or page scope.
-- Control execution logic like optional pages or conditional branches.
-
-**Example**:
-```yaml
-- type: wait
-  properties:
-    duration: 1000
-```
-
-**Usage**:
-- Found inside each step block.
-- Used to fine-tune interactions like input, validation, wait, or navigation.
-
-**Key Traits**:
-- Specific to each step.
-- Not reusable across scripts.
-- Edited directly in the step definition.
-
----
-
-### 🔍 Summary of Differences
-
-| Feature        | Parameters                          | Properties                          |
-|----------------|--------------------------------------|--------------------------------------|
-| **Scope**      | Global to the script or sub-recording | Local to a specific step             |
-| **Purpose**    | Inject dynamic values                | Configure step behavior              |
-| **Defined in** | `parameters:` block at top of YAML   | `properties:` inside each step       |
-| **Used in**    | Expressions, includes, validations   | Waits, inputs, optional pages        |
-| **Editable in**| YAML and (recently) UI               | YAML and UI                          |
-
-#### Use expressions in properties
+### Use expressions in properties
 
 Property values and conditions are typically through actions done during recording. However, these values and conditions are represented as Microsoft Power Fx expressions. Power Fx is the low-code language used across Microsoft Power Platform. It's a general-purpose, strong-typed, declarative, and functional programming language.
 
@@ -201,86 +193,75 @@ Here are a couple examples:
 - To validate that a previously copied value is incremented in a validate step, use the expression: `Clipboard.'SO Processor Activities - ReadyToShip' + 1`.
 - To generate a "random" name to use in an input step, use the expression: `"Customer " & Today()`.
 
-[Learn more about Power Fx.](/power-platform/power-fx/overview)
+[Learn more about Power Fx](/power-platform/power-fx/overview)
 
-### Use parameters for input values
+### User parameters for input values and expressions
 
 Parameters are named inputs for passing values into the script at runtime. For example, suppose a script has a step that sets a date field. Instead of using the date selected during the recording, you define a parameter that lets you select the date during playback.
 
-Using parameters have the following advantages:
+Using parameters has the following advantages:
 
-- **Reusability** Instead of hardcoding values (like customer numbers or item IDs), you can use parameters to make the script adaptable for different test scenarios or environments.
-- **Dynamic Execution** You can use parameters in expressions to dynamically calculate or validate values during playback. For instance:
-- **Modularity** Parameters allow you to include sub-recordings and pass values between them. For example, you can create a customer in one recording and validate it in another by passing the customer number as a parameter. <!-- [2](https://microsoft.sharepoint.com/teams/bc-all/_layouts/15/Doc.aspx?sourcedoc=%7B2B3E5106-E6A0-47B2-8757-2B15D3C33DB2%7D&file=Business%20Central%20Page%20Scripting.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).-->
+- Reusability: Instead of hardcoding values (like customer numbers or item IDs), you can use parameters to make the script adaptable for different test scenarios or environments.
+- Dynamic execution: You can use parameters in expressions to dynamically calculate or validate values during playback.
+- Modularity: Parameters allow you to include sub-recordings and pass values between them. For example, you can create a customer in one recording and validate it in another by passing the customer number as a parameter. <!-- [2](https://microsoft.sharepoint.com/teams/bc-all/_layouts/15/Doc.aspx?sourcedoc=%7B2B3E5106-E6A0-47B2-8757-2B15D3C33DB2%7D&file=Business%20Central%20Page%20Scripting.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).-->
 
 ### Add parameters
 
-You can add parameters from the page scripting tool interfacce in Business Central or by modifying the script's YAML file. 
+You can add parameters from the **Page Scripting** pane in Business Central or by modifying the recording YAML file. If a parameter isn't set, a dialog prompts you to enter a value during replay, as shown in the following figure:
 
+:::image type="content" source="media/page-scripting-parameters.svg" alt-text="Shows a dialog box with the input parameters for a page script.":::.
 
+In general, using parameters is a two-step process. First you define the parameter. Then, you use it as input values or in expressions. The **Page Scripting** pane simplifies this process.
+
+#### [Page Scripting pane](#tab/pagescriptingpane)
+
+To define a parameter:
+
+1. Under the control bar at the top, select **...** > **Properties**.
+1. In the **Properties** section, select **Parameters** > **+ Add parameter**.
+1. Fill in the fields for the parameter, such as **Name**, **Type**, **Default value**, and **Description** as needed.
+
+To assign the parameter:
+
+1. On the step in the **Page Scripting** pane, select **...** > **Properties**.
+1. In the text box under **Properties, enter `Parameters.[parameter name]`, where `[parameter name]` is the name of the parameter. For example, `Parameters.'Sales Order.Document Date'`.
+
+   > [!TIP]
+   > As you start typing, choose the value that appears in the popup next to the text box.  
+
+#### [Recording YAML file](#tab/payablesagentpage)
+
+You define parameters in the `parameters` block, for example:
 
 ```yaml
 parameters:
-  Customer List - No.:
+  Sales Order.Document Date:
     type: string
-    default: "10000"
+    default: 9/4/2025
+  Wait time:
+    type: string
+    description: Enter wait time between steps is ms.
+    default: "1000"
 ```
 
-**Usage**:
-```yaml
-value: =Parameters.'Customer List - No.'
-```
-
-**Key Traits**:
-- Defined in the `parameters` block.
-- Used in expressions and steps.
-- Can be passed from one script to another.
-- Only editable in YAML (though recent updates allow UI-based parameter definition too)
-
-Parameters in page script make scripts flexible, reusable, and dynamic. Parameters are named inputs that you define at the beginning of a YAML script. They allow you to pass values into the script at runtime, which can then be used throughout the steps of the recording.
+Then, assign the parameter to a step.
 
 ```yaml
-parameters:
-  Customer List - No.:
-    type: string
-    default: "10000"
+- type: input
+   target:
+   - page: Sales Order
+      runtimeRef: b9ee
+   - field: Document Date
+   description: Input <value>Parameters.'Sales Order.Document Date'</value> into
+   <caption>Document Date</caption>
+   value: =Parameters.'Sales Order.Document Date'
+- type: wait
+   description: Wait for <value>Parameters.'Wait time'</value> milliseconds
+   time: =Parameters.'Wait time'
+
 ```
 
-This example defines a parameter called `Customer List - No.` with a default value of `"10000"`.
 
-#### Why Use Parameters?
-
-1. **Reusability** Instead of hardcoding values (like customer numbers or item IDs), you can use parameters to make the script adaptable for different test scenarios or environments.
-1. **Modularity** Parameters allow you to **include sub-recordings** and pass values between them. For example, you can create a customer in one recording and validate it in another by passing the customer number as a parameter[2](https://microsoft.sharepoint.com/teams/bc-all/_layouts/15/Doc.aspx?sourcedoc=%7B2B3E5106-E6A0-47B2-8757-2B15D3C33DB2%7D&file=Business%20Central%20Page%20Scripting.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).
-1. **Dynamic Execution** You can use parameters in expressions to dynamically calculate or validate values during playback. For instance:
-
-    ```yaml
-    value: =Parameters.'Customer List - No.'
-    ```
-
-   This injects the parameter value into a field during the test [3](https://microsoft.sharepoint.com/teams/dynamicsnavmoderndevteam/_layouts/15/Doc.aspx?sourcedoc=%7B5D4D0164-8826-45B3-A48A-EE10A9AFAE35%7D&file=Microsoft%20presents%20-%20Save%20time%20testing%20Business%20Central%20with%20Page%20Scripting.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).
-
-1. **DevOps Integration** Parameters support automation in CI/CD pipelines. You can run scripts with different parameter values using tools like `bc-replay`, which makes it ideal for automated testing across environments (Docker, SaaS, OnPrem)[6](https://outlook.office365.com/owa/?ItemID=AAMkADdhOTU1YzdmLTY1ZjctNGZiYi04MjY3LTJlMDVmOGI1MzRkNwBGAAAAAADkSgUBR26IT6hqIMLT0%2fNeBwDUH29wHW%2fHSoxKaotN5eT8AAAFkEYXAABKHT2NXzTkSZskMneIPA%2b%2fAAbadNQdAAA%3d&exvsurl=1&viewmodel=ReadMessageItem).
-
-#### Advanced Use Cases
-
-- **Conditional Logic**: Use parameters to control which template or sub-script to include based on a condition.
-- **Clipboard Integration**: Combine parameters with clipboard values to validate or reuse data captured during the recording[7](https://microsoft.sharepoint.com/teams/BusinessApplicationsandPlatformBAP/_layouts/15/Doc.aspx?sourcedoc=%7BC08A51D8-5C48-4A19-9E65-880AE023CC6E%7D&file=Evergreen%202024%20release%20waves%201%20and%202%20-%20Dynamics%20365%20-%20Copy.docx&action=default&mobileredirect=true&DefaultItemOpen=1).
-- **UI Definition**: Parameters can now be defined directly in the Page Scripting UI, not just in YAML files[8](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/record-edit-easier-enhanced-page-scripting-tool).
-
-
-Would you like help creating a parameterized script for a specific Business Central scenario or testing workflow?
-
-### Handle optional pages
-
-Sometimes a page doesn’t always show in a recorded flow because it depends on data or settings. An example is the confirmation dialog shown when closing a sales order. To handle this situation, you can make the page an optional page, which means that the steps under the page only run if the page is shown.
-
-To make a page optional:
-
-1. In the **Page Scripting** pane, locate the recorded step that opens the optional page. The step has the similar to **Page X was shown**, where **X** is the name.
-1. On the step, select **...** > **Make this an optional page**.
-
-   The steps that follow the optional page are indented to indicate that they're only run if the page is shown.
 
 ## Play a recording
 
