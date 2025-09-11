@@ -16,6 +16,8 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
+> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)] using the AI Playground agent.
+
 The AI Playground agent is a tool that allows you to create prototypes to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. It's available in sandbox environments and is designed for testing and learning purposes. It provides an environment where you can test and explore AI capabilities without affecting your production data. You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios.
 
 ## Prerequisites
@@ -23,24 +25,41 @@ The AI Playground agent is a tool that allows you to create prototypes to experi
 Before you can use the AI Playground agent, ensure that you have the following prerequisites in place:
 
 - Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]
-- Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](includes/prod_short.md)].
+- Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](includes/prod_short.md)]
+
+
+## Set up AI Playground Agent
+
+The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents that have been created in your environment.
+
+To create a new AI Playground agent, follow these steps:
+
+### Create an AI Playground agent
+
+In the **Agents (preview)** page, choose **Playground**, and then **Create**. 
+This opens a **Create Agent**, where you can define the agent's **Name**, **User Display Name**, **Initials**, and **Type**. 
+The **Initials** is used in the UI to represent the agent, such as in chat interfaces.
+The **Type** should be set to **Playground Agent** for AI Playground agents.
+Choose **OK**, and the **Agent Card** opens.
+
+
+
+The **Agent Card** is where you define the agent's purpose and the tasks it will perform.
+
+The profile of the agent is default the Playground agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
+
+An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
+
+In the **Instructions** field, provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. For example, you might instruct the agent to "Help users find customer information quickly."
+Under **Agent Permission Sets**, you add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Permission sets can only be added when the agent is in the **Disabled** state. If you need to modify the permissions later, you must first deactivate the agent.
+
+
 
 ## Turn on AI Playground Agent
 
 The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
 When the AI Playground Agent is enabled, you will see the <insert icon> icon in the top navigation menu of the role center.
-
-## Set up AI Playground Agent
-
-The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents that have been created in your environment.
-
-To create a new AI Playground agent, choose **Playground**, and then **Create**. This opens a **Create Agent**, where you can define the agent's **Name**, **User Display Name**, **Initials**, and **Type**. purpose and the tasks it will perform. The 
-
-The Agent Card is where you define the agent's purpose and the tasks it will perform. 
-
-
-
 
 ## Activate AI Playground Agent
 
@@ -49,6 +68,38 @@ Activate the AI Playground agent for your company.
 
 1. In the navigation bar at the upper right of the role center, select <icon> AI Playground Agent > Activate.
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
+
+
+<!--
+
+Content gaps to address before publication:
+Clarify audience: developers/partners (not end users); add sentence early. DONE
+
+Add “When to use / when not to use” decision list.
+
+Replace placeholder <insert icon>/<icon> with correct UI token or remove until icon name confirmed.
+
+Expand “Set up” section with structured steps:
+Open Agents (Preview) page
+Choose Playground > Create
+Fill fields (clarify each: Name vs User Display Name vs Initials vs Type)
+Add Instructions (purpose; include example)
+(Optional) Add Permission Sets (must deactivate to modify)
+Define Tasks (describe what a task is; example)
+Activate (state transition)
+Add table: Field | Description | Editable after activation? (Yes/No)
+Add section “Tasks” (concept + execution model + limits if any).
+Add section “Permissions model” (least privilege, risks of over-broad sets).
+Add section “Lifecycle”: Create → Iterate (Deactivate/Edit) → Export knowledge to AL → Delete.
+Add “Limitations (preview)” (sandbox only, no production data, not for compliance evaluation).
+Add “Telemetry” (recommend capturing prompts & responses manually during prototype).
+Add “Next steps” linking to build-capability / function calling / testing pages.
+
+
+Front matter: consider ms.topic: how-to if you shift to procedural, or keep concept + spin off creation page for how-to.
+
+
+-->
 
 
 <!--
