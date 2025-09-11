@@ -258,10 +258,9 @@ Then, assign the parameter to a step.
 - type: wait
    description: Wait for <value>Parameters.'Wait time'</value> milliseconds
    time: =Parameters.'Wait time'
-
 ```
 
-
+---
 
 ## Play a recording
 
