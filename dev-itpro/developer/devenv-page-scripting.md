@@ -75,9 +75,9 @@ This section outlines the basic steps to make a recording with the page scriptin
    You can replay the recording as long as you don't close the page.
 1. To save the recording to file so you can run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar. Learn more in [Save a recording to a file](#save-a-recording-to-a-file).
 
-## Edit steps during recording
+## Edit recording
 
-There are various modifications you can make while recording to change the flow and behavior of steps, like moving steps, setting conditions, and more. These options are explained in the following sections.
+While recording, you can edit captured steps to correct actions, add missing inputs, or adjust the flow without stopping the session. Changes take effect immediately in the recording sequence. You can also edit steps when not actively recording — either directly in the **Page Scripting** pane (for example, use ... > Properties, drag steps, or delete/insert steps) or by editing the saved recording YAML file. Edit in the UI apply immediately. After editing the YAML file, save and reopen the recording to test the changes in the Page Scripting tool.
 
 ## Copy and paste control values
 
@@ -244,6 +244,27 @@ Then, assign the parameter to a step.
 ```
 
 ---
+
+## Include another script in a recording
+
+A recording can include scripts from other recordings, letting you create a suite of scripts that run in a certain order. You can use the **Page Scripting** pane or modify the recording YAML.
+
+1. Store the script you want to include in the same folder as the script you're editing (the parent scripty). For example, `c:\bc-replay\recordings` or `c:\bc-replay\recordings\includes`.
+1. In the **Page Scripting** pane, open the recording in which you want to add the script.
+1. Start recording ![start recording](media/page-scripting-start-button.png).
+1. Select the step that you want add the script after, and then select **...** > **Record from here**.
+1. On the same step, elect **...** > **Add Step** > **Include a script**.
+1. Browse for the script to add and select **Open**.
+
+   The script and its steps appear in the pane. The **File path** is the **Properties** section dispaly the relative path to the script.
+
+1. Stop the recording and play the script to test the changes. If adjustments are needed, start recording again and make the changes.
+1. Save when done.
+
+### More info
+
+1. You can't edit the inserted script's steps from the main script.
+1. To pass parameters across included scripts, define them in both the parent suite script and the included scripts.
 
 ## Play a recording
 
