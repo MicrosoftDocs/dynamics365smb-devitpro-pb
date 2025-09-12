@@ -245,22 +245,21 @@ Then, assign the parameter to a step.
 
 ---
 
-## Include another script in a recording
+## Include other scripts
 
 A recording can include scripts from other recordings, letting you create a suite of scripts that run in a certain order. You can include scripts by using the **Page Scripting** pane or modifying the recording's YAML.
 
 ### Before you begin
 
-- Store the scripts you want to include in the same location as the host script. The included scripts can be in any folder as long as it is accessible by host script. For example, you could store the host script in `c:\bc-replay\recordings` and the icluded scripts in `c:\bc-replay\recordings\includes`
+- Store the scripts you want to include in the same location as the host script. The included scripts can be in any folder as long as it is accessible by host script. For example, you could store the host script in `c:\bc-replay\recordings` and the included scripts in `c:\bc-replay\recordings\includes`
 - If you want to pass parameters across included scripts, define them in both the host script and the included scripts.
 
 #### [Page Scripting pane](#tab/pagescripting)
 
-1. Store the script you want to include in the same folder as the script you're editing (the parent script). For example, `c:\bc-replay\recordings` or `c:\bc-replay\recordings\includes`.
-1. In the **Page Scripting** pane, open the recording in which you want to add the script.
+1. Open the recording in which you want to add the script.
 1. Start recording ![start recording](media/page-scripting-start-button.png).
 1. Select the step that you want add the script after, and then select **...** > **Record from here**.
-1. On the same step, elect **...** > **Add Step** > **Include a script**.
+1. On the same step, select **...** > **Add Step** > **Include a script**.
 1. Browse for the script to add and select **Open**.
 
    The script and its steps appear in the pane. The **File path** in the **Properties** section displays the relative path to the script.
@@ -269,7 +268,7 @@ A recording can include scripts from other recordings, letting you create a suit
 1. Save when done.
 
 > [!NOTE]
-> You can't edit inserted script steps from the host script.
+> You can't edit included script steps from the host script. To make changes, edit the original script file that is being included.
 
 #### [Recording YAML](#tab/recyml2)
 
