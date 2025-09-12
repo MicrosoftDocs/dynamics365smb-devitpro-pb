@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 > This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)] using the AI Playground agent.
 
-The AI Playground agent is a tool that allows you to create prototypes to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. It's available in sandbox environments and is designed for testing and learning purposes. It provides an environment where you can test and explore AI capabilities without affecting your production data. You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios.
+The AI Playground agent is a tool that allows you to create prototypes to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. It's available in sandbox environments and is designed for testing and learning purposes. It provides an environment where you can test and explore AI capabilities without affecting your production data. You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered a user in [!INCLUDE [prod_short](includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
 ## Prerequisites
 
@@ -37,11 +37,29 @@ To create a new AI Playground agent, follow these steps:
 ### Create an AI Playground agent
 
 In the **Agents (preview)** page, choose **Playground**, and then **Create**. 
-This opens a **Create Agent**, where you can define the agent's **Name**, **User Display Name**, **Initials**, and **Type**. 
+This opens a **Create Agent**, where you can define the agent's **Name**, **User Display Name**, **Initials**, and **Type**.
+In **Name**, enter a unique name for the agent. This name is used to identify the agent in the system.
+The **User Display Name** is the name that will be shown to users when they interact with
 The **Initials** is used in the UI to represent the agent, such as in chat interfaces.
 The **Type** should be set to **Playground Agent** for AI Playground agents.
 Choose **OK**, and the **Agent Card** opens.
 
+## The agent and the UI
+
+The AI Playground agent can interact with the UI it sees. For example, it cannot access page search. You want to limit the UI the agent can see to improve accuracy and security. The agent is assigned a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI you can build a custom profile for the agent. This is done in the same way as you would build a custom profile for a user. You can then assign this profile to the agent in the **Profile** field on the **Agent Card**.
+
+
+Properties on page customization object:
+
+ClearActions: Boolean - If set to true, all actions on the page are removed for the agent.
+ClearLayout: Boolean - If set to true, the layout of the page is simplified for the agent.
+ClearViews: Boolean - If set to true, all views on the page are removed for the agent.
+DeleteAllowed: Boolean - If set to false, the delete action isn't allowed for the agent.
+InsertAllowed: Boolean - If set to false, the insert action isn't allowed for the agent.    
+
+
+
+**Agent User Settings** page available from the **Agent Card** and it shows the settings for the agent user, such as language and time zone. These settings can be adjusted to match the preferences of the users who will interact with the agent.
 
 
 The **Agent Card** is where you define the agent's purpose and the tasks it will perform.
@@ -51,10 +69,13 @@ The profile of the agent is default the Playground agent (Copilot) type. This ca
 An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
 
 In the **Instructions** field, provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. For example, you might instruct the agent to "Help users find customer information quickly."
-Under **Agent Permission Sets**, you add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Permission sets can only be added when the agent is in the **Disabled** state. If you need to modify the permissions later, you must first deactivate the agent.
+
+Under **Agent Permission Sets**, you add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Permission sets can only be added when the agent is in the **Disabled** state. If you need to modify the permissions later, you must first deactivate the agent. The agent can't have more permissions than the user creating it.
 
 Under **User Access**, you can define who in your organization can interact with the agent. This helps control the usage of the agent. The default user is the one who created the agent, but you can add more users if needed.
 
+
+Agent tasks are specific actions that the agent can perform based on the instructions you provided. You can define multiple tasks for the agent to handle different scenarios. Tasks can only be added when the agent is in the **Active** state. If you need to modify the tasks later, you must first deactivate the agent.
 
 
 ## Turn on AI Playground Agent
