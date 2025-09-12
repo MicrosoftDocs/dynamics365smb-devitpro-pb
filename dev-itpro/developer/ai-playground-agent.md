@@ -14,6 +14,9 @@ ms.update-cycle: 180-days
 
 # AI Playground Agent overview (preview)
 
+
+<!-- split into more articles, using this as a starting point. Live in devitpro, linking from app repo -->
+
 [This article is prerelease documentation and is subject to change.]
 
 > This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)] using the AI Playground agent.
@@ -82,7 +85,7 @@ Agent tasks are specific actions that the agent can perform based on the instruc
 
 Instructions are written in natural language and should clearly describe the agent's purpose.
 
-<!-- Add example of good instructions, like shown in the partner video -->
+<!-- Add example of good instructions, like shown in the partner video. Link to best practices for prompting -->
 
 ## Turn on AI Playground Agent
 
@@ -106,12 +109,15 @@ Activate the AI Playground agent for your company.
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
 
 
+## Testing the AI Playground Agent
 
 ## Best practices
 
 When creating and using an AI Playground agent, consider the following best practices:
 
-Bold instructions and markdown format. Other best practices to be added from the slide deck.
+Bold instructions and markdown format. Other best practices to be added from the slide deck. 
+
+Include link to best practices article.
 
 <!--
 
