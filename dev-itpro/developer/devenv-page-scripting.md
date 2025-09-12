@@ -212,7 +212,7 @@ To assign the parameter:
    > [!TIP]
    > As you start typing, choose the value that appears in the popup next to the text box.  
 
-#### [Recording YAML file](#tab/payablesagentpage)
+#### [Recording YAML file](#tab/recyaml)
 
 You define parameters in the `parameters` block, for example:
 
@@ -247,24 +247,52 @@ Then, assign the parameter to a step.
 
 ## Include another script in a recording
 
-A recording can include scripts from other recordings, letting you create a suite of scripts that run in a certain order. You can use the **Page Scripting** pane or modify the recording YAML.
+A recording can include scripts from other recordings, letting you create a suite of scripts that run in a certain order. You can include scripts by using the **Page Scripting** pane or modifying the recording's YAML.
 
-1. Store the script you want to include in the same folder as the script you're editing (the parent scripty). For example, `c:\bc-replay\recordings` or `c:\bc-replay\recordings\includes`.
+### Before you begin
+
+- Store the scripts you want to include in the same location as the host script. The included scripts can be in any folder as long as it is accessible by host script. For example, you could store the host script in `c:\bc-replay\recordings` and the icluded scripts in `c:\bc-replay\recordings\includes`
+- If you want to pass parameters across included scripts, define them in both the host script and the included scripts.
+
+#### [Page Scripting pane](#tab/pagescripting)
+
+1. Store the script you want to include in the same folder as the script you're editing (the parent script). For example, `c:\bc-replay\recordings` or `c:\bc-replay\recordings\includes`.
 1. In the **Page Scripting** pane, open the recording in which you want to add the script.
 1. Start recording ![start recording](media/page-scripting-start-button.png).
 1. Select the step that you want add the script after, and then select **...** > **Record from here**.
 1. On the same step, elect **...** > **Add Step** > **Include a script**.
 1. Browse for the script to add and select **Open**.
 
-   The script and its steps appear in the pane. The **File path** is the **Properties** section dispaly the relative path to the script.
+   The script and its steps appear in the pane. The **File path** in the **Properties** section displays the relative path to the script.
 
 1. Stop the recording and play the script to test the changes. If adjustments are needed, start recording again and make the changes.
 1. Save when done.
 
-### More info
+> [!NOTE]
+> You can't edit inserted script steps from the host script.
 
-1. You can't edit the inserted script's steps from the main script.
-1. To pass parameters across included scripts, define them in both the parent suite script and the included scripts.
+#### [Recording YAML](#tab/recyml2)
+
+The following code example includes scripts `Recording-1` and `Recording-2` in the host script `Main`. `Recording-1` and `Recording-2` are in a subfolder to `Main`called `ìncludes`.
+
+```yml
+steps:
+  - type: include
+    name: Recording-1
+    file: ./includes/Recording-part-1.yml
+    description: Run <file>Recording-part-1</file>
+  - type: include
+    name: Recording-2
+    file: ./includes/Recording-part-2.yml
+    description: Run <file>Recording-part-2</file>
+name: main2
+description: Test recording
+start:
+  profile: ORDER PROCESSOR
+
+```
+
+---
 
 ## Play a recording
 
