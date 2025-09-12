@@ -44,9 +44,12 @@ The **Initials** is used in the UI to represent the agent, such as in chat inter
 The **Type** should be set to **Playground Agent** for AI Playground agents.
 Choose **OK**, and the **Agent Card** opens.
 
-## The agent and the UI
+**Agent User Settings** page available from the **Agent Card** and it shows the settings for the agent user, such as language and time zone. These settings can be adjusted to match the preferences of the users who will interact with the agent.
 
-The AI Playground agent can interact with the UI it sees. For example, it cannot access page search. You want to limit the UI the agent can see to improve accuracy and security. The agent is assigned a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI you can build a custom profile for the agent. This is done in the same way as you would build a custom profile for a user. You can then assign this profile to the agent in the **Profile** field on the **Agent Card**.
+
+#### The agent and the UI
+
+The AI Playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it is recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
 
 
 Properties on page customization object:
@@ -57,9 +60,7 @@ ClearViews: Boolean - If set to true, all views on the page are removed for the 
 DeleteAllowed: Boolean - If set to false, the delete action isn't allowed for the agent.
 InsertAllowed: Boolean - If set to false, the insert action isn't allowed for the agent.    
 
-
-
-**Agent User Settings** page available from the **Agent Card** and it shows the settings for the agent user, such as language and time zone. These settings can be adjusted to match the preferences of the users who will interact with the agent.
+Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
 
 
 The **Agent Card** is where you define the agent's purpose and the tasks it will perform.
@@ -77,12 +78,24 @@ Under **User Access**, you can define who in your organization can interact with
 
 Agent tasks are specific actions that the agent can perform based on the instructions you provided. You can define multiple tasks for the agent to handle different scenarios. Tasks can only be added when the agent is in the **Active** state. If you need to modify the tasks later, you must first deactivate the agent.
 
+### Instructions and tasks
+
+Instructions are written in natural language and should clearly describe the agent's purpose.
+
+<!-- Add example of good instructions, like shown in the partner video -->
 
 ## Turn on AI Playground Agent
 
 The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
 When the AI Playground Agent is enabled, you will see the <insert icon> icon in the top navigation menu of the role center.
+
+
+## Agent Task Log
+
+Used for troubleshooting the agents behavior. The log captures the interactions between users and the agent, including the prompts sent to the agent and the responses received. This information can be invaluable for diagnosing issues and understanding how the agent is performing.
+
+Drill into every step by clicking the line in the log. You can see the full prompt sent to the agent and the response it generated. This can help you identify any misunderstandings or errors in the agent's behavior.
 
 ## Activate AI Playground Agent
 
@@ -92,6 +105,13 @@ Activate the AI Playground agent for your company.
 1. In the navigation bar at the upper right of the role center, select <icon> AI Playground Agent > Activate.
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
 
+
+
+## Best practices
+
+When creating and using an AI Playground agent, consider the following best practices:
+
+Bold instructions and markdown format. Other best practices to be added from the slide deck.
 
 <!--
 
