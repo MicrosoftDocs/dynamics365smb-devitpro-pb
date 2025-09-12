@@ -15,7 +15,32 @@ ms.update-cycle: 180-days
 # AI Playground Agent overview (preview)
 
 
-<!-- split into more articles, using this as a starting point. Live in devitpro, linking from app repo -->
+<!-- split into more articles, using this as a starting point. Live in devitpro, linking from app repo 
+
+Overview (existing ai-playground-agent.md)
+    Purpose & audience
+    When to use / when not to use
+    Lifecycle summary (Create → Iterate → Graduate)
+    High-level concepts: Instructions, Tasks, Permissions, Profile
+    Limitations (preview)
+    Next steps links
+Create and manage a Playground agent (ai-playground-agent-create.md)
+    Prerequisites
+    Create (step list + field table)
+    Activate / Deactivate
+    Edit (what requires deactivation)
+    Delete / cleanup
+    Lifecycle tips
+Configure instructions, tasks, and permissions (ai-playground-agent-configure.md)
+    Instructions (guidelines + good/bad example)
+    Tasks (definition, when they run, adding/modifying)
+    Permissions & least privilege (including profiles & page customization flags)
+    User access (who can interact)
+    Monitoring (Agent Task Log basics)
+    Graduating to AL extension (short hand-off checklist)
+Best practices for prototyping with AI Playground (ai-playground-agent-best-practices.md)
+    Best practices for instructions, tasks, and permissions
+-->
 
 [This article is prerelease documentation and is subject to change.]
 
