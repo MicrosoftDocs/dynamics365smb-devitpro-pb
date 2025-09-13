@@ -77,7 +77,7 @@ This section outlines the basic steps to make a recording with the page scriptin
 
 ## Edit recording
 
-While recording, you can edit captured steps to correct actions, add missing inputs, or adjust the flow without stopping the session. Changes take effect immediately in the recording sequence. You can also edit steps when not actively recording — either directly in the **Page Scripting** pane (for example, use ... > Properties, drag steps, or delete/insert steps) or by editing the saved recording YAML file. Edit in the UI apply immediately. After editing the YAML file, save and reopen the recording to test the changes in the Page Scripting tool.
+While recording, you can edit captured steps to correct actions, add missing inputs, or adjust the flow without stopping the session. Changes take effect immediately in the recording sequence. You can also edit steps when not actively recording — either directly in the **Page Scripting** pane (for example, use ... > Properties, drag steps, or delete/insert steps) or by editing the saved recording YAML file. Edits in the UI apply immediately. After editing the YAML file, save and reopen the recording to test the changes in the Page Scripting tool.
 
 ## Copy and paste control values
 
@@ -251,7 +251,7 @@ A recording can include scripts from other recordings, letting you create a suit
 
 ### Before you begin
 
-- Store the scripts you want to include in the same location as the host script. The included scripts can be in any folder as long as it is accessible by host script. For example, you could store the host script in `c:\bc-replay\recordings` and the included scripts in `c:\bc-replay\recordings\includes`
+- Store the scripts you want to include in the same location as the host script. The included scripts can be in any folder as long as it's accessible by host script. For example, you could store the host script in `c:\bc-replay\recordings` and the included scripts in `c:\bc-replay\recordings\includes`
 - If you want to pass parameters across included scripts, define them in both the host script and the included scripts.
 
 #### [Page Scripting pane](#tab/pagescripting)
@@ -268,7 +268,7 @@ A recording can include scripts from other recordings, letting you create a suit
 1. Save when done.
 
 > [!NOTE]
-> You can't edit included script steps from the host script. To make changes, edit the original script file that is being included.
+> You can't edit included script steps from the host script. To make changes, edit the original script file that's being included.
 
 #### [Recording YAML](#tab/recyml2)
 
