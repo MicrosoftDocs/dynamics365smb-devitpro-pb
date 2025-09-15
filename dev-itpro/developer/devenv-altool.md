@@ -27,9 +27,9 @@ Learn more in [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www
 
 ALTool is typically used in the following scenarios:
 
-1. **Local development**: Developers can use ALTool to validate their code before deploying it to a sandbox environment.
+1. **Local development**: Developers can use ALTool to validate their code before they deploy it to a sandbox environment.
 2. **Continuous integration**: ALTool can be integrated into CI/CD pipelines to automate the validation and packaging of extensions.
-3. **Pre-deployment checks**: Before deploying an extension to a production environment, ALTool can be used to ensure that it meets all necessary requirements.
+3. **Pre-deployment checks**: Before you deploy an extension to a production environment, ALTool can be used to ensure that it meets all necessary requirements.
 
 ## Get started
 
@@ -45,6 +45,7 @@ Get started with the AL Development Tools package by following the instructions 
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |
 | `help`                         | Display detailed information about a specific command. |
 | `version`                      | Display version information.                         |
+
 
 
 ## Related information
