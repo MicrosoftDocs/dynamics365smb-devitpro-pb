@@ -150,15 +150,21 @@ Customer.DeleteAll;
 
 ## Truncate method
 
-Like Delete, the Truncate method also deletes records from a table. However, the Truncate method provides a high-performance way to remove large volumes of rows from a table by skipping row‑by‑row deletions. Instead of iterating and deleting each row, the platform uses a bulk operation that significantly reduces execution time and logging overhead. The method offers options to either reset AutoIncrement values to 0 or preserve their previous values. It also validates delete permissions before running. If you supply filters, the platform copies the rows you want to keep to a temporary table, truncates the original table, and then moves the kept rows back. This process maintains the speed benefits of bulk deletion while allowing filtered removals, but it does add extra input/output operations.
+Like Delete, the Truncate method also deletes records from a table. However, the Truncate method provides a high-performance way to remove large volumes of rows from a table by skipping row‑by‑row deletions. Instead of iterating and deleting each row, the platform uses a bulk operation that significantly reduces execution time and logging overhead. The method offers options to either reset AutoIncrement values to 0 or preserve their previous values. It also validates delete permissions before running.
+
+Truncate has the following syntax:
 
 ```AL  
 [Ok := ]  Record.Truncate([ResetAutoIncrement: Boolean])
 ```
 
+If you supply filters, the platform copies the rows you want to keep to a temporary table, truncates the original table, and then moves the kept rows back. This process maintains the speed benefits of bulk deletion while allowing filtered removals, but it does add extra input/output operations.
+
+The following example deletes all the records from the **MyTable** table where the Location Code is Red. This example requires that you create the following variable.  
+
 |Variable|Data type|Subtype|  
-|--------------|---------------|-------------|  
-|MyRec|Record|Sample|  
+|-|-|-|  
+|MyRec|Record|MyTable|  
 
 ```AL  
 MyRec.SetRange("Location Code", 'Red');
