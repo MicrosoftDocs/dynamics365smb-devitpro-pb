@@ -71,7 +71,7 @@ begin
 end;
 ```
 
-The following example demonstrates how to truncate a filtered range of records.
+The following example demonstrates how to truncate records matching a filter (in this case the table's "Location Code" field). This approach is only recommended when the majority of records match the filter because Truncate is most efficient in such scenarios.
 
 ```al
 procedure ExampleTruncateFiltered()
