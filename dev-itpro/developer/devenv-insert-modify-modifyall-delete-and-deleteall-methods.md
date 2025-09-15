@@ -17,6 +17,7 @@ The following methods maintain the database by adding, modifying, and removing r
 - [ModifyAll](methods-auto/record/record-modifyall-method.md)  
 - [Delete](methods-auto/record/record-delete-method.md)  
 - [DeleteAll](methods-auto/record/record-deleteall-method.md)
+- [Truncate](methods-auto/record/record-truncate-method.md)
 
 These methods are some of the most frequently used AL methods.  
 
@@ -146,6 +147,38 @@ Customer.DeleteAll;
 
 > [!NOTE]  
 > When you use DeleteAll (true), a copy of the AL variable with its initial values is created. This means that when you use DeleteAll(true) to run the OnDelete trigger, all the changes that were made to the variables in the method or codeunit that's making the call, can't be seen in the OnDelete trigger. If you want to see the changes that you made to the variables, you must use Delete(true) in a loop. There's no difference in performance between using DeleteAll(true) and using Delete(true) in a loop.
+
+## Truncate method
+
+Like Delete, the Truncate method also deletes records from a table. However, the Truncate method provides a high-performance way to remove large volumes of rows from a table by skipping row‑by‑row deletions. Instead of iterating and deleting each row, the platform uses a bulk operation that significantly reduces execution time and logging overhead. The method offers options to either reset AutoIncrement values to 0 or preserve their previous values. It also validates delete permissions before running. If you supply filters, the platform copies the rows you want to keep to a temporary table, truncates the original table, and then moves the kept rows back. This process maintains the speed benefits of bulk deletion while allowing filtered removals, but it does add extra input/output operations.
+
+```AL  
+[Ok := ]  Record.Truncate([ResetAutoIncrement: Boolean])
+```
+
+|Variable|Data type|Subtype|  
+|--------------|---------------|-------------|  
+|MyRec|Record|Sample|  
+
+```AL  
+MyRec.SetRange("Location Code", 'Red');
+Ok :=  MyRec.Truncate(true)
+```
+
+## When to use Truncate or DeleteAll
+
+Use Truncate when you need to clear or massively reduce a table quickly (for example: cleanup, reset between tests, or bulk archival workflows). For selective or small deletions, a standard Delete (row-by-row with WHERE) is preferable because it’s lighter for small sets and behaves predictably with triggers and per-row constraints. DeleteAll (removing every row without a WHERE) is simpler but typically slower than Truncate for very large tables, as it may still trigger per-row operations such as triggers or constraints.
+
+Truncate isn't supported in the following cases, so use DeleteAll instead:
+
+- Temporary tables, system tables, and tables of type other than Normal.
+- When running within a try function.
+- Tables that have a security filter applied.
+- When the current filters contain flow fields, or use a high number of marked records.
+- When there are event subscribers for the OnAfterDelete or OnBeforeDelete triggers of the table.
+- Tables with media fields.
+
+Use Truncate with a filter only when you intend to delete a significant number of the rows in the table. If you need to remve a relatively small number of rows, DeleteAll is generally more efficient.
 
 ## Related information
 
