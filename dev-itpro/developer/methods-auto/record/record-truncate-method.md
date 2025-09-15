@@ -52,7 +52,44 @@ Tables without an AutoIncrement field ignore this parameter. The default is **tr
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+The following example demonstrates how to truncate all records in a table and capture the optional return value to avoid a runtime error when truncate isn't supported.
+
+```al
+procedure ExampleTruncate()
+var
+    MyRec: Record "Truncate Sample";
+    Ok: Boolean;
+begin
+    Ok := MyRec.Truncate(true);
+    if Ok then
+        Message('Truncate Sample table truncated and AutoIncrement reset.')
+    else
+        Message('Truncate not supported; consider DeleteAll.');
+end;
+```
+
+The following example demonstrates how to truncate a filtered range of records.
+
+```al
+procedure ExampleTruncateFiltered()
+var
+    MyRec: Record "Truncate Sample";
+    Ok: Boolean;
+begin
+    MyRec.SetRange("Location Code", 'Red');
+    Ok := MyRec.Truncate(false);
+    if Ok then
+        Message('Filtered records (Location Code=Red) truncated (AutoIncrement preserved).')
+    else
+        Message('Filtered truncate not supported; consider deleting manually.');
+end;
+```
+
 ## See Also
+
 [Record data type](record-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)
