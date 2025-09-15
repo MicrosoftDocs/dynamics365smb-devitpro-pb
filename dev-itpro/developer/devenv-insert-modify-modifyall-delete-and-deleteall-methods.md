@@ -1,14 +1,14 @@
 ---
 title: Insert, Modify, ModifyAll, Delete, and DeleteAll Methods
 description: Describes how to use the Insert, Modify, ModifyAll, Delete, and DeleteAll methods in Business Central
-ms.date: 01/20/2025
+ms.date: 09/15/2025
 ms.topic: article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Insert, Modify, ModifyAll, Delete, and DeleteAll methods
+# Insert, Modify, ModifyAll, Delete, DeleteAll, and Truncate methods
 
 The following methods maintain the database by adding, modifying, and removing records:  
 
