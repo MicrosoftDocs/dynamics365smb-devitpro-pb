@@ -10,7 +10,7 @@ ms.author: grobyns
 
 # Best practices for deprecation of AL code
 
-This article provides guidelines that describe how code in the Base App is obsoleted. It describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. Learn more in [Directives in AL](directives/devenv-directives-in-al.md).
+This article provides guidelines that describe how code in the Base App is obsoleted. It describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. Learn more about how to obsolete code in [Obsolete objects, methods, and symbols in AL](devenv-obsolete-objects.md).
 
 ## Obsoleting code
 
@@ -129,7 +129,7 @@ If an action or other code element points to a now removed object, then the guid
 
 ## Obsoleting reports
 
-If you plan to deprecate reports in your AppSource apps or per-tenant extensions, you might want to inform other developers and your users before you remove the reports. To learn more, go to [Obsoleting reports](devenv-reports-obsoletion.md).
+If you plan to deprecate reports in your AppSource apps or per-tenant extensions, you might want to inform other developers and your users before you remove the reports. Learn more in [Obsoleting reports](devenv-reports-obsoletion.md).
 
 ## Related information
 
