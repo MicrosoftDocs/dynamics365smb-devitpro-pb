@@ -10,7 +10,11 @@ ms.reviewer: solsen
 
 # ALTool
 
-ALTool is a command-line tool used for validating and packaging AL extensions for [!INCLUDE [prod_short](includes/prod_short.md)]. It helps developers ensure that their extensions meet the necessary requirements and can be successfully deployed to the [!INCLUDE [prod_short](includes/prod_short.md)] environment. Learn more in [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools)
+ALTool is a command-line tool used for validating and packaging AL extensions for [!INCLUDE [prod_short](includes/prod_short.md)]. It helps developers ensure that their extensions meet the necessary requirements and can be successfully deployed to the [!INCLUDE [prod_short](includes/prod_short.md)] environment. 
+
+To deploy code built using ALTool, you must sign up for a [Dynamics 365 Business Central Sandbox tenant](https://aka.ms/getsandboxforbusinesscentral).
+
+Learn more in [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools)
 
 ## Key features
 
@@ -26,4 +30,15 @@ ALTool is typically used in the following scenarios:
 2. **Continuous integration**: ALTool can be integrated into CI/CD pipelines to automate the validation and packaging of extensions.
 3. **Pre-deployment checks**: Before deploying an extension to a production environment, ALTool can be used to ensure that it meets all necessary requirements.
 
+## Get started
+
+To get started with the AL Development Tools package, follow the steps below:
+
+1. Install the .NET Tool
+2. Install the AL Templates (see instructions below).
+3. Explore the available tools and templates to create and customize your AL projects.
+
+
 ## Related information
+
+[Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools)
