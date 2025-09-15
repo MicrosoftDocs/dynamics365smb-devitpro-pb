@@ -37,15 +37,20 @@ Get started with the AL Development Tools package by following the instructions 
 
 ## ALTool commands
 
+To get a list of available commands, run the following command in your terminal or command prompt:
+
+```shell
+AL help
+```
+
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
-| `compile`                      | Compile a package using `alc.exe`.                   |
+| `compile`                      | Compile a package using `alc.exe`. Available with runtime 16.   |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |
 | `help`                         | Display detailed information about a specific command. |
 | `version`                      | Display version information.                         |
-
 
 
 ## Related information
