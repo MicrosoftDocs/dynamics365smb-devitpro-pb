@@ -1,12 +1,13 @@
 ---
 title: ALTool
-description: Description of the ALTool used for validating and packaging extensions.
 author: SusanneWindfeldPedersen
+description: Simplify AL extension development with ALTool. Validate code, package extensions, and integrate into CI/CD pipelines for seamless deployment.
 ms.date: 09/15/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
+
 
 # ALTool
 
@@ -45,7 +46,7 @@ AL help
 
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
-| `compile`                      | Compile a package using `alc.exe`. Available with runtime 16.   |
+| `compile`                      | Compile a package using `alc.exe`. **Available with runtime 16.**   |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |
