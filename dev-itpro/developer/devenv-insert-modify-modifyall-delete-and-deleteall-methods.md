@@ -1,3 +1,4 @@
+
 ---
 title: Insert, Modify, ModifyAll, Delete, and DeleteAll Methods
 description: Describes how to use the Insert, Modify, ModifyAll, Delete, and DeleteAll methods in Business Central
@@ -158,6 +159,8 @@ Like `Delete`, the `Truncate` method also deletes records from a table. However,
 [Ok := ]  Record.Truncate([ResetAutoIncrement: Boolean])
 ```
 
+Truncate returns false when truncate isn't [supported](#when-to-use-truncate-or-deleteall).
+
 If you supply filters, the platform copies the rows you want to keep to a temporary table, truncates the original table, and then moves the kept rows back. This process maintains the speed benefits of bulk deletion while allowing filtered removals.
 
 The following example deletes all the records from the **MyTable** table where the Location Code is Red. This example requires that you create the following variable.  
@@ -173,9 +176,9 @@ Ok :=  MyRec.Truncate(true)
 
 ## When to use Truncate or DeleteAll
 
-Use `Truncate` when you need to clear or reduce most of a table. Example scenarios include cleanup, reset between tests, or bulk archival workflows. For selective or small deletions, a standard `Delete` (row-by-row with WHERE) is preferable because it's lighter for small sets and behaves predictably with triggers and per-row constraints. `DeleteAll` (removing every row without a WHERE) is simpler but typically slower than `Truncate` for large tables, because it might still trigger per-row operations such as triggers or constraints.
+Use `Truncate` when you need to clear or reduce most of a table. Example scenarios include cleanup, reset between tests, or bulk archival workflows. `DeleteAll` (removing every row when no filters are applied) is simpler but typically slower than `Truncate` for large tables, because it might still trigger per-row operations such as triggers or constraints. Use `DeleteAll` when not deleting a majority of the table or if the table doesn't support `Truncate`.
 
-`Truncate` isn't supported in the following cases, so use `DeleteAll` instead:
+`Truncate` isn't supported in the following cases:
 
 - Temporary tables, system tables, and tables of type other than Normal.
 - Running inside try functions.
@@ -184,8 +187,21 @@ Use `Truncate` when you need to clear or reduce most of a table. Example scenari
 - When there are event subscribers for the OnAfterDelete or OnBeforeDelete triggers of the table.
 - Tables with media fields.
 
+`Truncate` is supported when the global DatabaseDelete trigger is implemented (which is different for normal DeleteAll in bulk), meaning that trigger will NOT get called on Truncate.
+
+You can use the return value of  `Truncate` to attempt high-performance deletion, and if it isn't supported, fall back to using `DeleteAll`. For example:
+
+```AL  
+If not MyRec.Truncate(true) then
+  MyRec.DeleteAll(false);
+```
+
 ## Related information
 
+[RecordRef.Truncate([Boolean]) method](methods-auto/recordref/recordref-insert-boolean-method.md)  
+[RecordRef.Truncate([Boolean]) method](methods-auto/recordref/recordref-modify-method.md)  
+[RecordRef.Truncate([Boolean]) method](methods-auto/recordref/recordref-delete-method.md)  
+[RecordRef.Truncate([Boolean]) method](methods-auto/recordref/recordref-deleteall-method.md)  
 [AL methods](./methods-auto/library.md)  
 [AL Language reference overview](index.md)  
-[SystemId field](devenv-table-system-fields.md#systemid)
+[SystemId field](devenv-table-system-fields.md#systemid)  

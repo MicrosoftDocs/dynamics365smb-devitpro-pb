@@ -94,6 +94,9 @@ end;
 ```
 
 ## See Also
+
+[Insert, Modify, ModifyAll, Delete, DeleteAll, and Truncate methods](../../devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
+[Record.Truncate([Boolean]) method](../record/record-truncate-method.md)  
 [RecordRef data type](recordref-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)
