@@ -199,9 +199,9 @@ If not MyRec.Truncate(true) then
 ## Related information
 
 [RecordRef.Truncate([Boolean]) method](methods-auto/recordref/recordref-insert-boolean-method.md)  
-[RecordRef.Truncate([Boolean]) method](methods-auto/recordref/recordref-modify-method.md)  
-[RecordRef.Truncate([Boolean]) method](methods-auto/recordref/recordref-delete-method.md)  
-[RecordRef.Truncate([Boolean]) method](methods-auto/recordref/recordref-deleteall-method.md)  
+[RecordRef.Modify([Boolean]) method](methods-auto/recordref/recordref-modify-method.md)  
+[RecordRef.Delete([Boolean]) method](methods-auto/recordref/recordref-delete-method.md)  
+[RecordRef.DeleteAll([Boolean]) method](methods-auto/recordref/recordref-deleteall-method.md)  
 [AL methods](./methods-auto/library.md)  
 [AL Language reference overview](index.md)  
 [SystemId field](devenv-table-system-fields.md#systemid)  
