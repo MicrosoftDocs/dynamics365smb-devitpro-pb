@@ -84,7 +84,7 @@ Record.ModifyAll(Field, NewValue [, RunTrigger])
 
 `ModifyAll` uses the current filters. This means that you can perform the update on a specified set of records in a table. `ModifyAll` returns no value, nor does it cause an error if the set of records to be changed is empty.  
 
-In the following example, the `SetRange` statement selects the records where Salesperson Code is PS. The `ModifyAll` statement changes the Salesperson Code of these records to JR. The example requires that you create the following variable.  
+In the following example, the `SetRange` statement selects the records where `Salesperson Code` is `PS`. The `ModifyAll` statement changes the Salesperson Code of these records to `JR`. The example requires that you create the following variable.  
 
 |Variable|Data type|Subtype|  
 |--------|---------|-------|  
@@ -103,9 +103,9 @@ Customer.ModifyAll("Salesperson Code",'JR');
 [Ok :=] Record.Delete([RunTrigger])  
 ```  
 
-The record that you want to delete must be specified by using the values in the primary key fields before you call this method. This means that `Delete` does take filters into consideration.  
+The record that you want to delete must be specified by using the values in the primary key fields before you call this method. `Delete` does take filters into consideration.  
 
-The following example shows how to use `Delete` to delete the record for customer number 4711. This example requires that you create the following variable.  
+The following example shows how to use `Delete` to delete the record for customer number 4711. The following example requires that you create the following variable.  
 
 |Variable|Data type|Subtype|  
 |--------|---------|-------------|  
@@ -122,9 +122,9 @@ When you're developing your own applications, you should consider the following 
 
 1. Retrieve a record from the database.  
 2. Perform various checks to determine whether the record should be deleted.  
-3. If step 2 indicated that you should delete the record, then delete it.  
+3. Delete the record if step 2 indicated that you should.
 
-This can cause problems in a multi-user environment. Another user can modify or delete the same record between your performing steps 2 and 3. If the record is modified, then perhaps the new contents of the record would have changed your decision to delete it. If it has been deleted by the other user, you can get a run-time error if you have verified that the record existed (in step 1). If the design of your application indicates that you can encounter this problem, you should consider using the LockTable method. LockTable should be used sparingly because this method degrades performance. Learn more about the LockTable method in [LockTable method](methods-auto/record/record-locktable-method.md).  
+This scenario can cause problems in a multi-user environment. Another user can modify or delete the same record between your performing steps 2 and 3. If the record is modified, then perhaps the new contents of the record could change your decision to delete it. If another user deletes it, you can get a run-time error if you have verified that the record existed (in step 1). If the design of your application indicates that you can encounter this problem, you should consider using the LockTable method. LockTable should be used sparingly because this method degrades performance. Learn more about the LockTable method in [LockTable method](methods-auto/record/record-locktable-method.md).  
 
 ## DeleteAll method
 
@@ -134,7 +134,7 @@ This can cause problems in a multi-user environment. Another user can modify or 
 Record.DeleteAll([RunTrigger])  
 ```  
 
-The following example deletes all the records from the `Customer` table where the Salesperson Code is PS. This example requires that you create the following variable.  
+The following example deletes all the records from the `Customer` table where the `Salesperson Code` is `PS`. This example requires that you create the following variable.  
 
 |Variable|Data type|Subtype|  
 |--------------|---------------|-------------|  
@@ -158,7 +158,7 @@ Like `Delete`, the `Truncate` method also deletes records from a table. However,
 [Ok := ]  Record.Truncate([ResetAutoIncrement: Boolean])
 ```
 
-If you supply filters, the platform copies the rows you want to keep to a temporary table, truncates the original table, and then moves the kept rows back. This process maintains the speed benefits of bulk deletion while allowing filtered removals, but it does add extra input/output operations.
+If you supply filters, the platform copies the rows you want to keep to a temporary table, truncates the original table, and then moves the kept rows back. This process maintains the speed benefits of bulk deletion while allowing filtered removals.
 
 The following example deletes all the records from the **MyTable** table where the Location Code is Red. This example requires that you create the following variable.  
 
@@ -173,18 +173,16 @@ Ok :=  MyRec.Truncate(true)
 
 ## When to use Truncate or DeleteAll
 
-Use `Truncate` when you need to clear or massively reduce a table quickly (for example: cleanup, reset between tests, or bulk archival workflows). For selective or small deletions, a standard `Delete` (row-by-row with WHERE) is preferable because it’s lighter for small sets and behaves predictably with triggers and per-row constraints. `DeleteAll` (removing every row without a WHERE) is simpler but typically slower than `Truncate` for very large tables, because it might still trigger per-row operations such as triggers or constraints.
+Use `Truncate` when you need to clear or reduce most of a table. Example scenarios include cleanup, reset between tests, or bulk archival workflows. For selective or small deletions, a standard `Delete` (row-by-row with WHERE) is preferable because it's lighter for small sets and behaves predictably with triggers and per-row constraints. `DeleteAll` (removing every row without a WHERE) is simpler but typically slower than `Truncate` for large tables, because it might still trigger per-row operations such as triggers or constraints.
 
 `Truncate` isn't supported in the following cases, so use `DeleteAll` instead:
 
 - Temporary tables, system tables, and tables of type other than Normal.
-- When running within a try function.
+- Running inside try functions.
 - Tables that have a security filter applied.
 - When the current filters contain flow fields, or use a high number of marked records.
 - When there are event subscribers for the OnAfterDelete or OnBeforeDelete triggers of the table.
 - Tables with media fields.
-
-Use `Truncate` with a filter only when you intend to delete a significant number of the rows in the table. If you need to remve a relatively small number of rows, `DeleteAll` is generally more efficient.
 
 ## Related information
 
