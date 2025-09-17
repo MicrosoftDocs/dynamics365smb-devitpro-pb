@@ -8,16 +8,16 @@ ms.date: 09/17/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Create virtual table synthetic relationships
+# Create synthetic table relationships
 
 This article provides step-by-step instructions on when and how to set up and configure synthetic relationships using virtual tables for
 Business Central in Microsoft Dataverse.
 
 ## When not to use synthetic relationships
 
-Even though it's possible, we don't recommend creating synthetic relationships between two virtual tables. If you need to do it, create a [custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api) with right relationships. They're reflected inside Microsoft Dataverse. Learn more [internal APIs relationships transforming into virtual table relationships](/dynamics365/business-central/dev-itpro/powerplatform/powerplat-entity-modeling#native-tabletonative-table-relationships).
+Even though it's possible, we don't recommend creating synthetic relationships between two virtual tables. If you need to do it, create a [custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api) with the right relationships. They're reflected inside Microsoft Dataverse. Learn more about how internal API relationships transform into virtual table relationships [here](/dynamics365/business-central/dev-itpro/powerplatform/powerplat-entity-modeling#native-tabletonative-table-relationships).
 
-## Create synthetic relationship between virtual tables
+## Create synthetic relationship between native and virtual table
 
 Consider an example where you want to show sales orders from the **dyn365bc_salesorder_v2_0** virtual table inside the native **Account**  table in Dataverse.
 
@@ -45,16 +45,27 @@ Consider an example where you want to show sales orders from the **dyn365bc_sale
    |Native Table Key|The name of the key |crec7_key_for_relation_with_bc_sales|
    |Virtual Table|The logical name for the virtual table you want to use. Find this value in the table properties.|dyn365bc_salesorder_v2_0|
 
-  :::image type="content" source="media/create-synthetic-relationships-virtual-tables/image3.png" alt-text="Screenshot of the Business Central Configuration app highlighting the Virtual Table selection for a synthetic relationship.":::
+   > [!TIP]
+   > To view the logical name in the table properties, open the table, select **Properties**, and then expand **Advanced options** in the **Edit table** pane.
+
+   <!-- :::image type="content" source="media/create-synthetic-relationships-virtual-tables/image3.png" alt-text="Screenshot of the Business Central Configuration app highlighting the Virtual Table selection for a synthetic relationship.":::-->
 
 1. On the **Mapping** tab, provide column mapping between the native table and one or more virtual table columns. All columns included in the table key (defined in step 1) must be mapped. Use their logical names.
 
   :::image type="content" source="../developer/media/dataverse-table-releationship-bc-configuration-app-mappings.png" alt-text="Screenshot of the Business Central Configuration app General tab for defining a synthetic relationship showing native table and key fields.":::
 
 1. Select **Save** to validate and save the relationship.
-1. Test relationship. For example, [create a sub grid](/power-apps/maker/model-driven-apps/form-designer-add-configure-subgrid#add-a-subgrid-component) and choose the **Sales Orders** as related relationship.
+1. Test the relationship. For example, [create a sub grid](/power-apps/maker/model-driven-apps/form-designer-add-configure-subgrid#add-a-subgrid-component) and choose the **Sales Orders** as related relationship.
 
 ## Known limitations
 
 - You can't edit an existing synthetic table relationship. You must remove it and then recreate it with the changes.
 - If you refresh a table that changes columns included in the mapping, an error occurs. You must remove the synthetic relationship first.
+
+## Related information
+
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
+[Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
+[Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
+[Business Central and [!INCLUDE[dataverse](../includes/dataverse_short.md)] Admin Reference](powerplat-admin-reference.md)  
+[FAQ](powerplat-faq.md)  

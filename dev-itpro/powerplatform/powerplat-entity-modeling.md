@@ -21,11 +21,11 @@ By default, virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Table plugin supports custom APIs. After custom APIs are installed, they appear in the list along with standard APIs. There are two important things to keep in mind:
 
 - Always specify a single field of type GUID in the ODataKeyFields property. Learn more in [Developing a custom API - Business Central | Microsoft Learn](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/api-custom).
-- Use only lowercase English letters and numbers inside API identifiers (APIVersion, APIPublisher, APIGroup). This practise helps avoid problems related to encoding across different regional versions of [!INCLUDE[dataverse](../includes/dataverse_short.md)] and [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
+- Use only lowercase English letters and numbers inside API identifiers (APIVersion, APIPublisher, APIGroup). This practice helps avoid problems related to encoding across different regional versions of [!INCLUDE[dataverse](../includes/dataverse_short.md)] and [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
 ## Table fields
 
-When a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table is generated, each property from the API definition is reflected in the corresponding virtual table in [!INCLUDE[dataverse](../includes/dataverse_short.md)] as a column. Each property becomes a column, except when there is a mismatch in supported data types between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and [!INCLUDE[dataverse](../includes/dataverse_short.md)]. The column properties in [!INCLUDE[dataverse](../includes/dataverse_short.md)] are set based on the properties in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+When a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table is generated, each property from the API definition is reflected in the corresponding virtual table in [!INCLUDE[dataverse](../includes/dataverse_short.md)] as a column. Each property becomes a column, except when there's a mismatch in supported data types between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and [!INCLUDE[dataverse](../includes/dataverse_short.md)]. The column properties in [!INCLUDE[dataverse](../includes/dataverse_short.md)] are set based on the properties in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 The following table shows how data types from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] correspond to data types in [!INCLUDE[dataverse](../includes/dataverse_short.md)].
 
@@ -100,7 +100,9 @@ Therefore, in effect, the table name is the only information that is used in a r
 
 ### Virtual table–to–native table relationship
 
-Consider an example where you want to show sales orders from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Account A in Dataverse. A foreign key relation is needed between the native table **Account** and the virtual table **dyn365bc_salesorder_v2_0**. Once the relation is established, a virtual table can be used on pages, like other related tables. To set up a virtual table to native table relation, follow these steps:
+To establish relationships between native and virtual tables, use the synthetic synthetic relationships. Learn more in [Create synthetic table relationships](create-synthetic-relationships-virtual-tables.md).
+
+<!-- Consider an example where you want to show sales orders from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Account A in Dataverse. A foreign key relation is needed between the native table **Account** and the virtual table **dyn365bc_salesorder_v2_0**. Once the relation is established, a virtual table can be used on pages, like other related tables. To set up a virtual table to native table relation, follow these steps:
 
 1. Go to the native table that you want to create a relation to and add a **Key**. Choose the column(s) needed for the relation. 1 to 3 columns can be used in the native to virtual table relation.
 2. Add a new record to the **Business Central Table Relation** table.  
@@ -125,15 +127,15 @@ To follow the example from above, where a relation between the native table **Ac
 5. Open the main page of **Account**. Add a sub grid and choose the **Sales Orders (accountid)** relation.
 6. Save and publish.
 
-**Account** now contains the relation, and **Sales Orders** are shown on the main page if any sales orders exist for the account.
+**Account** now contains the relation, and **Sales Orders** are shown on the main page if any sales orders exist for the account.-->
 
 #### Synchronizing master data
 
 To create native-to-virtual table relations a shared key is needed in order to establish a foreign key relationship. In the Account and Sales Order scenario, the Account Number in the Account table must be identical to the Customer Number in the [!INCLUDE[prod_short](../includes/prod_short.md)] Customer table.
 
-To set up synchronization between Microsoft Dataverse and [!INCLUDE[prod_short](../includes/prod_short.md)], follow the [guide](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the **Dataverse Connection Setup** assisted setup guide in [!INCLUDE[prod_short](../includes/prod_short.md)].
+To set up synchronization between [!INCLUDE[dataverse](../includes/dataverse_short.md)] and [!INCLUDE[prod_short](../includes/prod_short.md)], follow the [guide](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the **Dataverse Connection Setup** assisted setup guide in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-A customization to the synchronization is needed, because the customer number isn't synced with Dataverse by default. The code in the example below adds the field mapping to the synchronization. In this snippet, the synchronization is uni-directional. In this case, [!INCLUDE[prod_short](../includes/prod_short.md)] will be the main, pushing account number to Microsoft Dataverse.
+A customization to the synchronization is needed, because the customer number isn't synced with Dataverse by default. The code in the example below adds the field mapping to the synchronization. In this snippet, the synchronization is uni-directional. In this case, [!INCLUDE[prod_short](../includes/prod_short.md)] will be the main, pushing account number to [!INCLUDE[dataverse](../includes/dataverse_short.md)].
 
 ```al
 codeunit 50100 SyncAdditionalFields
@@ -163,7 +165,7 @@ codeunit 50100 SyncAdditionalFields
 }
 ```
 
-For more information, see [Customizing an Integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md).
+For more information, see [Customizing an Integration with [!INCLUDE[dataverse](../includes/dataverse_short.md)]](../administration/administration-custom-cds-integration.md).
 
 ### Native table–to–virtual table relationships
 
@@ -201,7 +203,7 @@ Calculated and unmapped fields in [!INCLUDE[prod_short](../developer/includes/pr
 
 ## Related information
 
-[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
+[Overview - Integrating Business Central with [!INCLUDE[dataverse](../includes/dataverse_short.md)]](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [Business Central and [!INCLUDE[dataverse](../includes/dataverse_short.md)] Admin Reference](powerplat-admin-reference.md)  
