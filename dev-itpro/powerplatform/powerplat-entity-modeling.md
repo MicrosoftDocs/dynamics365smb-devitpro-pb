@@ -1,7 +1,7 @@
 ---
 title: "Table modeling"
 description: "Relational modeling between Microsoft Dataverse tables used in Business Central"
-ms.date: 11/13/2023
+ms.date: 09/17/2025
 ms.reviewer: solsen
 author: SusanneWindfeldPedersen
 ms.topic: how-to
