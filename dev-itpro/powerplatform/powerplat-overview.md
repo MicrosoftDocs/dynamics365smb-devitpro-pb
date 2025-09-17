@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 Before working with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Tables, it's helpful to fully understand how [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and virtual tables work. We recommend getting started by reading more about [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and tables inside Dataverse. It gives you a smooth introduction so you can fully understand our [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Tables documentation. 
 
-To work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables, you must understand how [!INCLUDE[cds_long_md](../includes/cds_short_md.md)] and virtual tables work. Therefore, the following documentation is a prerequisite:
+To work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables, you must understand how [!INCLUDE[cds_long_md](../includes/dataverse_short.md)] and virtual tables work. Therefore, the following documentation is a prerequisite:
 
 - [What is [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]?](/powerapps/maker/data-platform/data-platform-intro)
 - [Table overview](/powerapps/maker/data-platform/entity-overview)
