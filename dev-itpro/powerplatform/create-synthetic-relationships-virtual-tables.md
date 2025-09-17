@@ -15,37 +15,46 @@ Business Central in Microsoft Dataverse.
 
 ## When not to use synthetic relationships
 
-Even though it is possible, we do not recommend creating synthetic relationships between two virtual tables. If you need to do it, please create a [custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api) with right relationships. They’ll be reflected inside Microsoft Dataverse. Read more about [internal APIs relationships transforming into virtual table relationships](/dynamics365/business-central/dev-itpro/powerplatform/powerplat-entity-modeling#native-tabletonative-table-relationships).
+Even though it's possible, we don't recommend creating synthetic relationships between two virtual tables. If you need to do it, create a [custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api) with right relationships. They're reflected inside Microsoft Dataverse. Learn more [internal APIs relationships transforming into virtual table relationships](/dynamics365/business-central/dev-itpro/powerplatform/powerplat-entity-modeling#native-tabletonative-table-relationships).
 
 ## Create synthetic relationship between virtual tables
 
-Consider an example where you want to show sales orders from the **dyn365bc_salesorder_v2_0** virtual table inside **Account** native table in Dataverse.
+Consider an example where you want to show sales orders from the **dyn365bc_salesorder_v2_0** virtual table inside the native **Account**  table in Dataverse.
 
-1. First, you need to create a foreign key inside Account table. Open **Keys** view and add a new key. Choose the column(s) needed for the relation. 1 to 3 columns can be used in the native to virtual table relation.
+1. Sign in to [Power Apps](https://make.powerapps.com/) and switch to the environment that contains the table.
+1. Create a foreign key in **Account** table:
+
+   1. Select **Tables** > **Account** > **Keys**.
+   1. Select **New key**, then enter a name and display name for the key the **Key** pane.
+   1. Select the columns needed for the relation. You can select one, two, or three columns to use in the native to virtual table relation.
+   1. Select **Save** to create the key.
 
   :::image type="content" source="media/create-synthetic-relationships-virtual-tables/image1.png" alt-text="Screenshot of the Keys view in Dataverse showing creation of a new key for synthetic relationship.":::
 
-1. Once the key is created, open our app **Business Central Configuration**. Go to **Table Relations** and click on **New**.
-1. On the **General** tab, provide:
+1. Open Business Central Configuration app (from the navigation pane, select **Apps** > **Business Central Configuration**).
+1. Select **Table Relations** > **New** to open the **New Business Central Table Relation** page.
 
-   - **Relation Name** – it’s your custom name for this synthetic relationship. Let’s call it **dyn365bc_account2salesorder.**
+    :::image type="content" source="../developer/media/dataverse-table-releationship-bc-configuration-app.png" alt-text="Screenshot of the Business Central Configuration app General tab for defining a synthetic relationship showing native table and key fields.":::
 
-    :::image type="content" source="media/create-synthetic-relationships-virtual-tables/image2.png" alt-text="Screenshot of the Business Central Configuration app General tab for defining a synthetic relationship showing native table and key fields.":::
+1. On the **General** tab, provide the following information:
 
-   - **Native Table** – it’s a logical name of native table you want to use. This can be found on the table properties. Here, it’s **account**.
-   - **Native Table Key** which is the name of the key specified before. In our example, it was called **crec7_key_for_relation_with_bc_sales**.
-   - **Virtual Table -** it’s a logical name for the virtual table you want to use. This can be found on the table properties. Here, it’s **dyn365bc_salesorder_v2_0**.
+   |Field|Description|Example|
+   |-|-|-|
+   |Relation Name|A custom name for this synthetic relationship.|dyn365bc_account2salesorder|
+   |Native Table|The logical name of native table you want to use. Find this value in the table properties.|Account|
+   |Native Table Key|The name of the key |crec7_key_for_relation_with_bc_sales|
+   |Virtual Table|The logical name for the virtual table you want to use. Find this value in the table properties.|dyn365bc_salesorder_v2_0|
 
   :::image type="content" source="media/create-synthetic-relationships-virtual-tables/image3.png" alt-text="Screenshot of the Business Central Configuration app highlighting the Virtual Table selection for a synthetic relationship.":::
 
-1. On the **Mapping** tab, provide column mapping between the native table and the virtual table column(s). All columns included in the table key (defined in step 1) must be mapped. Please use their logical names.
+1. On the **Mapping** tab, provide column mapping between the native table and one or more virtual table columns. All columns included in the table key (defined in step 1) must be mapped. Use their logical names.
 
-  :::image type="content" source="media/create-synthetic-relationships-virtual-tables/image4.png" alt-text="Screenshot of the Mapping tab showing column mappings between native Account table and Sales Order virtual table.":::
+  :::image type="content" source="../developer/media/dataverse-table-releationship-bc-configuration-app-mappings.png" alt-text="Screenshot of the Business Central Configuration app General tab for defining a synthetic relationship showing native table and key fields.":::
 
-1. Press **Save**. Validation will be performed on save.
-1. You can see the relationship works, for example, by [creating a sub grid](/power-apps/maker/model-driven-apps/form-designer-add-configure-subgrid#add-a-subgrid-component) and choosing the **Sales Orders** as related relationship.
+1. Select **Save** to validate and save the relationship.
+1. Test relationship. For example, [create a sub grid](/power-apps/maker/model-driven-apps/form-designer-add-configure-subgrid#add-a-subgrid-component) and choose the **Sales Orders** as related relationship.
 
 ## Known limitations
 
-- Synthetic relationships cannot be edited. You need to remove them first and re-create if changes are needed.
-- If you refresh the table that changes columns included in the mapping, it results in the error. You need to remove the synthetic relationship first.
+- You can't edit an existing synthetic table relationship. You must remove it and then recreate it with the changes.
+- If you refresh a table that changes columns included in the mapping, an error occurs. You must remove the synthetic relationship first.
