@@ -1,7 +1,7 @@
 ---
 title: Business Central Virtual Table for Microsoft Dataverse admin reference
 description: The admin reference for working with Business Central and Microsoft Dataverse tables.
-ms.date: 01/08/2025
+ms.date: 09/17/2025
 ms.reviewer: solsen
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -13,15 +13,15 @@ ms.author: solsen
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]  
-> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/dynamics365/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] is published on the [latest version availability page](/dynamics365/released-versions/dynamics-365ce#all-version-availability).
 
-This article provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+This article provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)].
 
 ## Getting the solution
 
 First get the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
 
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are installed from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
+The following solutions are installed in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are installed from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
 - **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. All communication to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] requires the company ID in the request. 
 - **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table feature.
@@ -31,41 +31,41 @@ The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_
 
 ## Authentication and authorization
 
-After the solutions are installed in the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment, a connection can be set up to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. *Both environments have to be in the same tenant*.  
+After the solutions are installed in the [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] environment, a connection can be set up to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. *Both environments have to be in the same tenant*.  
 
-The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and company to connect to. The following steps walk through this part of the process.
+The next step in the process is to provide [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and company to connect to. The following steps walk through this part of the process.
 
-0. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to the page 'Microsoft Entra applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This allows [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+1. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to the page 'Microsoft Entra applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This allows [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to the table **Business Central Virtual Data Source Configuration**.
+1. In [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], go to the table **Business Central Virtual Data Source Configuration**.
 
-2. Select and edit the data source named “[!INCLUDE[prod_short](../developer/includes/prod_short.md)]”.
+1. Select and edit the data source named “[!INCLUDE[prod_short](../developer/includes/prod_short.md)]”.
 
-3. On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants have a default environment called 'production'.
+1. On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Data Source Configuration, set **environment** to the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. Unless changed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants have a default environment called 'production'.
 
-4. Save your changes before setting the **Default Company**. Otherwise, company can't be set in the next step.
+1. Save your changes before setting the **Default Company**. Otherwise, company can't be set in the next step.
 
-5. Set the **Default Company** value. 
+1. Set the **Default Company** value.
 
-6. Save the changes.
+1. Save the changes.
 
 ## Making virtual tables visible
 
-Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables aren't available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The following steps allow for enabling tables to be virtual, as needed.
+Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables aren't available as virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. The following steps allow for enabling tables to be virtual, as needed.
 
-1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> Tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
+1. In [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], go to **Data -> Tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
 
-2. Choose **Data** in the horizontal menu to view the available data.
+1. Choose **Data** in the horizontal menu to view the available data.
 
-3. Locate and edit the table that you want to enable. The list also contains tables based on custom APIs.
+1. Locate and edit the table that you want to enable. The list also contains tables based on custom APIs.
 
-4. Set **Visible** to **Checked** and save. This generates the virtual table in the **MicrosoftBusinessCentralERPVE** solution. 
+1. Set **Visible** to **Checked** and save. This generates the virtual table in the **MicrosoftBusinessCentralERPVE** solution. 
 
 Selected table appears in all of the appropriate menus, including **Data -> Tables**, and in advanced find dialog box.
 
 ## Refreshing virtual table metadata
 
-The virtual table metadata can be force-refreshed when it's expected for the table metadata in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This syncs the latest table definition from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and update the virtual table.
+The virtual table metadata can be force-refreshed when it's expected for the table metadata in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This syncs the latest table definition from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and update the virtual table.
 
 ## Referencing virtual tables
 
@@ -73,11 +73,11 @@ The virtual tables are all generated in the **MicrosoftBusinessCentralERPVE** so
 
 To consume virtual tables:
 
-1. Create a separate solution as usual in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], which will contain the consuming logic.
+1. Create a separate solution as usual in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], which will contain the consuming logic.
 
-2. Select **tables \> Add Existing**. Select the virtual table that you want to reference from the list.
+1. Select **tables \> Add Existing**. Select the virtual table that you want to reference from the list.
 
-3. When prompted to select assets to add, select any forms, views, or other elements that you want to customize, then select **Finish**.
+1. When prompted to select assets to add, select any forms, views, or other elements that you want to customize, then select **Finish**.
 
 From the development tooling, existing elements such as forms can be modified for the virtual table. Additionally, new forms, views, and other elements can also be added.
 

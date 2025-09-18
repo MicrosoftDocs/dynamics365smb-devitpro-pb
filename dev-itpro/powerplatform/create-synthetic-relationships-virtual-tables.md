@@ -64,6 +64,7 @@ Consider an example where you want to show sales orders from the **dyn365bc_sale
 
 ## Related information
 
+[Use synthetic relationships to expose more Business Central data in Dataverse](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-virtual-tables-expose-more-business-central-data-dataverse)
 [Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
