@@ -1,5 +1,5 @@
 ---
-title: ALTool package
+title: AL Development Tools package
 author: SusanneWindfeldPedersen
 description: 
 ms.date: 09/18/2025
@@ -9,7 +9,7 @@ ms.reviewer: solsen
 ---
 
 
-# ALTool package
+# AL Development Tools package
 
 The AL Development Tools package provides the ALTool command line tool, which is used for compiling and packaging AL extensions for [!INCLUDE [prod_short](includes/prod_short.md)]. It's useful for integration into CI/CD pipelines to automate the build and deployment process.
 
