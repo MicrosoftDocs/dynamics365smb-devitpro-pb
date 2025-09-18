@@ -52,10 +52,10 @@ Consider an example where you want to show sales orders from the **dyn365bc_sale
 
 1. On the **Mapping** tab, provide column mapping between the native table and one or more virtual table columns. All columns included in the table key (defined in step 1) must be mapped. Use their logical names.
 
-  :::image type="content" source="../developer/media/dataverse-table-releationship-bc-configuration-app-mappings.png" alt-text="Screenshot of the Business Central Configuration app General tab for defining a synthetic relationship showing native table and key fields.":::
+   :::image type="content" source="../developer/media/dataverse-table-releationship-bc-configuration-app-mappings.png" alt-text="Screenshot of the Business Central Configuration app General tab for defining a synthetic relationship showing native table and key fields.":::
 
 1. Select **Save** to validate and save the relationship.
-1. Test the relationship. For example, [create a sub grid](/power-apps/maker/model-driven-apps/form-designer-add-configure-subgrid#add-a-subgrid-component) and choose the **Sales Orders** as related relationship.
+1. Test the relationship. For example, in Power Apps, add a subgrid component and set the **Sales Orders** as related relationship. Learn more in [Add a subgrid component](/power-apps/maker/model-driven-apps/form-designer-add-configure-subgrid#add-a-subgrid-component). 
 
 ## Known limitations
 
