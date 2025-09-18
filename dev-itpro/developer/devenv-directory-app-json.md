@@ -12,7 +12,14 @@ ms.reviewer: solsen
 
 [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
-The `directory.app.props.json` file is used to define project metadata for AL extensions in Business Central. It's typically located in the root folder of the AL project. The `directory.app.props.json` file must be created manually. When the file is found by the compiler, it's used to set the defined properties for the app. If a property is defined both in the `directory.app.props.json` file and in the `app.json` file, the value from the `app.json` file takes precedence.
+The `directory.app.props.json` file defines reusable variables and metadata (properties) for one or more AL apps in a folder. With a focus on maintainability, using variables for composing properties offers several advantages:
+
+- Single point of edit, you only change, for example, `baseUrl` once.
+- Safe version bumping, you only edit `minor` or `build`, not the whole string.  
+- Generally reduces copy/paste errors in URLs.
+
+The `directory.app.props.json` file is typically located in the root folder of the AL project, and must be created manually. When the file is found by the compiler, it's used to set the defined properties for the app. If a property is defined both in the `directory.app.props.json` file and in the `app.json` file, the value from the `app.json` file takes precedence. For example, if `publisher`, `help`, or `url` is also present in `app.json`, the `app.json` value overrides the value defined here.
+
 
 ## Create the directory.app.props.json file
 
@@ -42,3 +49,22 @@ Create the `directory.app.props.json` file by following these steps:
     }
 }
 ```
+
+Properties explained - after substitution:
+
+- publisher: "My Company" (organization name shown in Extension management)  
+- url: "https://www.mycompany.com"  
+- privacyStatement: "https://www.mycompany.com/privacy"  
+- EULA: "https://www.mycompany.com/EULA" (link to license terms)  
+- help: "https://www.mycompany.com/documentation" (landing page for help content)
+
+
+## Potential pitfalls
+
+- Leaving `configuration` empty while using `$(configuration)` elsewhere (not in this example) would expand to an empty string—ensure defaults are meaningful.  
+- Typos in variable names inside `$(...)` lead to unresolved tokens (the compiler may treat them literally or error, depending on implementation).  
+- Non-numeric fragments in version parts may cause validation errors—keep them numeric.
+
+## Related information
+
+[JSON files](devenv-json-files.md)  
