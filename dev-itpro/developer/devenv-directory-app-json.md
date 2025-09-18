@@ -20,35 +20,34 @@ The `directory.app.props.json` file defines reusable variables and metadata (pro
 
 The `directory.app.props.json` file is typically located in the root folder of the AL project, and must be created manually. When the file is found by the compiler, it's used to set the defined properties for the app. If a property is defined both in the `directory.app.props.json` file and in the `app.json` file, the value from the `app.json` file takes precedence. For example, if `publisher`, `help`, or `url` is also present in `app.json`, the `app.json` value overrides the value defined here.
 
-
 ## Create the directory.app.props.json file
 
 Create the `directory.app.props.json` file by following these steps:
 
 1) In the root folder of the app project(s), choose **New File**.
 1) Name the file `directory.app.props.json`.
-1) Edit the file by adding one or more properties inside the JSON structure, such as:
+1) Edit the file by adding one or more properties inside the JSON structure, such as:  
 
-```json
-{
-    "variables": {
-        "major": "1",
-        "minor": "2",
-        "build": "0",
-        "revision": "0",
-        "version": "$(major).$(minor).$(build).$(revision)",
-        "configuration": "",
-        "baseUrl": "https://www.mycompany.com"
-    },
-    "properties": {
-        "publisher": "My Company",
-        "url": "$(baseUrl)",
-        "privacyStatement": "$(baseUrl)/privacy",
-        "EULA": "$(baseUrl)/EULA",
-        "help": "$(baseUrl)/documentation"
+    ```json
+    {
+        "variables": {
+            "major": "1",
+            "minor": "2",
+            "build": "0",
+            "revision": "0",
+            "version": "$(major).$(minor).$(build).$(revision)",
+            "configuration": "",
+            "baseUrl": "https://www.mycompany.com"
+        },
+        "properties": {
+            "publisher": "My Company",
+            "url": "$(baseUrl)",
+            "privacyStatement": "$(baseUrl)/privacy",
+            "EULA": "$(baseUrl)/EULA",
+            "help": "$(baseUrl)/documentation"
+        }
     }
-}
-```
+    ```
 
 1) Save the file.
 
