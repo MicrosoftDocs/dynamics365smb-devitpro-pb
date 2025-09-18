@@ -57,4 +57,5 @@ alc.exe help
 
 ## Related information
 
+[ALTool package](devenv-altool-package.md)  
 [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools)
