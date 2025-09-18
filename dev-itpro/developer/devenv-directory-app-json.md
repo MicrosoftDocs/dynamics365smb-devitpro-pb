@@ -26,8 +26,8 @@ The `directory.app.props.json` file is typically located in the root folder of t
 Create the `directory.app.props.json` file by following these steps:
 
 1) In the root folder of the app project(s), choose **New File**.
-2) Name the file `directory.app.props.json`.
-3) Edit the file by adding one or more properties inside the JSON structure, such as:
+1) Name the file `directory.app.props.json`.
+1) Edit the file by adding one or more properties inside the JSON structure, such as:
 
 ```json
 {
@@ -50,7 +50,11 @@ Create the `directory.app.props.json` file by following these steps:
 }
 ```
 
-Properties explained - after substitution:
+1) Save the file.
+
+The example above defines variables for version parts, a `baseUrl`, and properties that use these variables. The `configuration` variable is defined but empty, which is useful if you want to append a configuration suffix to the version in certain build scenarios (for example, `-beta` or `-preview`). The properties section uses the `baseUrl` variable to construct full URLs for `url`, `privacyStatement`, `EULA`, and `help`.
+
+Properties after substitution:
 
 - publisher: "My Company" (organization name shown in Extension management)  
 - url: "https://www.mycompany.com"  
