@@ -17,15 +17,23 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-## Changes in 2026 release wave 1
+## Changes in 2027 release wave 1 (version 29.0)
 
-The following features will be removed in 2026 release wave 1 (update 28.0).
-
-### Excel reports on the Business Manager and Accountant Role Centers (removal)
+### Peppol BIS 2.0 and Peppol BIS 2.1 are replaced by Peppol BIS 3.0 no longer supported
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| The following Excel reports are removed on the **Business Manager** and **Accountant** role centers.<ul><li>Balance Sheet</li><li>Income Statement</li><li>Statement of Cash Flow</li><li>Statement of Retained Earnings</li><li>Sales Taxes Collected</li><li>Customer Statements</li><li>Aged Accounts Payable</li><li>Aged Accounts Receivable</li></ul>Although these reports are useful to some organizations, changing them requires technical skills in AL and VBA (Visual Basic for Applications) programming. We've enhanced analytics capabilities in finance in each release wave over the last years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for finance. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
+|Replaced| Support for PEPPOL BIS 2.0 and PEPPOL BIS 2.1 is removed in 2027 release wave 1 (version 29.0) and replaced by the Peppol BIS 3.0 standard. These Peppol formats were marked as `obsolete:pending` in version 26.0.<br><br>The PEPPOL network has officially phased out versions 2.0 and 2.1, and most government and B2B e-invoicing platforms now mandate Peppol BIS 3.0 for interoperability and compliance. Continuing to support outdated formats introduces security and compliance risks, and limits compatibility with modern e-document processing services.<br><br>You must update all integrations, mappings, and customizations to use Peppol BIS 3.0. This update ensures full compliance with current Peppol regulations and continued interoperability with global e-invoicing networks. |
+
+## Changes in 2026 release wave 1
+
+The following features will be removed in 2026 release wave 1 (version 28.0).
+
+### Excel reports on the Business Manager and Accountant Role Centers
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| The following Excel reports are removed on the **Business Manager** and **Accountant** Role Centers.<ul><li>Balance Sheet</li><li>Income Statement</li><li>Statement of Cash Flow</li><li>Statement of Retained Earnings</li><li>Sales Taxes Collected</li><li>Customer Statements</li><li>Aged Accounts Payable</li><li>Aged Accounts Receivable</li></ul>Although these reports are useful to some organizations, changing them requires technical skills in AL and VBA (Visual Basic for Applications) programming. We've enhanced analytics capabilities in finance in each release wave over the last years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for finance. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
 
 ### API (v1.0) for Business Central (removal)
 
