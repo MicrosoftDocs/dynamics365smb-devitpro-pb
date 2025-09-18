@@ -12,20 +12,33 @@ ms.reviewer: solsen
 
 [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
-The `Directory.app.props.json` file is used to define project metadata for AL extensions in Business Central. It's typically located in the root folder of the AL project. The `Directory.app.props.json` file must be created manually by following the steps and syntax as described below.
+The `directory.app.props.json` file is used to define project metadata for AL extensions in Business Central. It's typically located in the root folder of the AL project. The `directory.app.props.json` file must be created manually. When the file is found by the compiler, it's used to set the defined properties for the app. If a property is defined both in the `directory.app.props.json` file and in the `app.json` file, the value from the `app.json` file takes precedence.
 
-## Create the Directory.app.props.json file
+## Create the directory.app.props.json file
 
+Create the `directory.app.props.json` file by following these steps:
 
-1) In the root folder of the app project that will migrate data to a different app project, choose **New File**.
+1) In the root folder of the app project(s), choose **New File**.
 2) Name the file `directory.app.props.json`.
 3) Edit the file by adding one or more properties inside the JSON structure, such as:
 
 ```json
 {
+    "variables": {
+        "major": "1",
+        "minor": "2",
+        "build": "0",
+        "revision": "0",
+        "version": "$(major).$(minor).$(build).$(revision)",
+        "configuration": "",
+        "baseUrl": "https://www.mycompany.com"
+    },
     "properties": {
-        "propertyName1": "propertyValue1",
-        "propertyName2": "propertyValue2"
+        "publisher": "My Company",
+        "url": "$(baseUrl)",
+        "privacyStatement": "$(baseUrl)/privacy",
+        "EULA": "$(baseUrl)/EULA",
+        "help": "$(baseUrl)/documentation"
     }
 }
 ```
