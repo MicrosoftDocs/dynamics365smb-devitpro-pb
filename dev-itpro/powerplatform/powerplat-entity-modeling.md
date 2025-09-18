@@ -14,7 +14,7 @@ Creating customer-facing solutions often requires operating on data shared betwe
 
 ## Generating virtual tables
 
-By default, virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] aren't visible in [!INCLUDE[dataverse](../includes/dataverse_short.md)]. A user makes them visible by ticking the checkbox inside their entry in the **Available Tables** table inside the Business Central Configuration application or the **Available Virtual Tables – Dataverse** page inside [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+By default, virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] aren't visible in [!INCLUDE[dataverse](../includes/dataverse_short.md)]. You make them visible by ticking the checkbox inside their entry in the **Available Business Central tables** table inside the Business Central Configuration application or the **Available Virtual Tables – Dataverse** page inside [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Learn more in [Making virtual tables visible](powerplat-admin-reference.md#making-virtual-tables-visible).
 
 ## Custom API support
 
