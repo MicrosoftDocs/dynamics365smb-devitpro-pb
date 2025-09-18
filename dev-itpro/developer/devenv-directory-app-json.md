@@ -65,7 +65,7 @@ Properties after substitution:
 
 ## Potential pitfalls
 
-- Leaving `configuration` empty while using `$(configuration)` elsewhere (not in this example) would expand to an empty string — ensure that defaults are meaningful.
+- Leaving `configuration` empty while using `$(configuration)` elsewhere would expand to an empty string — ensure that defaults are meaningful.
 - Typos in variable names inside `$(...)` lead to unresolved tokens — double-check spelling.
 - Non-numeric fragments in version parts causes validation errors — keep them numeric.
 
