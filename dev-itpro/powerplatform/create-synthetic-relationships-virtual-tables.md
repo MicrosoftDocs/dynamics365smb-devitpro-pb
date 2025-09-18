@@ -29,12 +29,12 @@ Consider an example where you want to show sales orders from the **dyn365bc_sale
    1. Select the columns needed for the relation. You can select one, two, or three columns to use in the native to virtual table relation.
    1. Select **Save** to create the key.
 
-  :::image type="content" source="media/create-synthetic-relationships-virtual-tables/image1.png" alt-text="Screenshot of the Keys view in Dataverse showing creation of a new key for synthetic relationship.":::
+   :::image type="content" source="media/create-synthetic-relationships-virtual-tables/image1.png" alt-text="Screenshot of the Keys view in Dataverse showing creation of a new key for synthetic relationship.":::
 
 1. Open Business Central Configuration app (from the navigation pane, select **Apps** > **Business Central Configuration**).
 1. Select **Table Relations** > **New** to open the **New Business Central Table Relation** page.
 
-    :::image type="content" source="../developer/media/dataverse-table-releationship-bc-configuration-app.png" alt-text="Screenshot of the Business Central Configuration app General tab for defining a synthetic relationship showing native table and key fields.":::
+   :::image type="content" source="../developer/media/dataverse-table-releationship-bc-configuration-app.png" alt-text="Screenshot of the Business Central Configuration app General tab for defining a synthetic relationship showing native table and key fields.":::
 
 1. On the **General** tab, provide the following information:
 
