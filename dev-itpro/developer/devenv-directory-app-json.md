@@ -56,11 +56,11 @@ The example above defines variables for version parts, a `baseUrl`, and properti
 
 Properties after substitution:
 
-- publisher: "My Company" (organization name shown in Extension management)  
-- url: "https://www.mycompany.com"  
-- privacyStatement: "https://www.mycompany.com/privacy"  
-- EULA: "https://www.mycompany.com/EULA" (link to license terms)  
-- help: "https://www.mycompany.com/documentation" (landing page for help content)
+- `publisher`: "My Company"
+- `url`: "https://www.mycompany.com"
+- `privacyStatement`: "https://www.mycompany.com/privacy"
+- `EULA`: "https://www.mycompany.com/EULA"
+- `help`: "https://www.mycompany.com/documentation"
 
 
 ## Potential pitfalls
