@@ -2,7 +2,7 @@
 title: "Page, Page fields, and Page extension properties"
 description: "This article lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 09/19/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

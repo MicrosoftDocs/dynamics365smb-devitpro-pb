@@ -2,7 +2,7 @@
 title: "AllowInCustomizations property"
 description: "Specifies whether the fields declared in this object can be used as source expression for new page fields in page customizations, and if they can be made editable."
 ms.author: solsen
-ms.date: 09/03/2025
+ms.date: 09/19/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

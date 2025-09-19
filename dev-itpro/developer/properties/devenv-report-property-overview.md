@@ -2,7 +2,7 @@
 title: "Report, Report fields, and Report extension properties"
 description: "This article lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md)."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 09/19/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

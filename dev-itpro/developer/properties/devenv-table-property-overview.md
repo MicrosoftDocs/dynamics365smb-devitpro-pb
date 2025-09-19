@@ -2,7 +2,7 @@
 title: "Table, Table fields, and Table extension properties"
 description: "This article lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md)."
 ms.author: solsen
-ms.date: 09/03/2025
+ms.date: 09/19/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
