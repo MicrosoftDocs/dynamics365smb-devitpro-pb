@@ -100,6 +100,41 @@ pagecustomization MyPageCust customizes MyPage
 
 To specify if a table field can be used as a source expression for page fields that are created in page customizations, use the [AllowInCustomizations](properties/devenv-allowincustomizations-property.md). The default behavior is that a table field *can* be used in such a way.
 
+### Editable fields in page customizations
+
+[!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
+
+With runtime 16, you can make page fields defined in page customizations **editable**. In versions prior to runtime 16, page fields were read-only, unlike fields that are declared in pages or page extensions.
+
+The following example shows how to make a page field editable in a page customization.
+
+```al
+pagecustomization MyPageCust customizes MyPage
+{
+    layout
+    {
+        addfirst(Content)
+        {
+            field(MyPageCustField; Rec.MyTableField) { Editable = true; }
+        }
+    }
+}
+```
+
+To control how table fields are used in customizations, you can use the [AllowInCustomizations property](properties/devenv-allowincustomizations-property.md). The following values are supported:
+
+- `Never` – still excludes a table's fields from the in-client designer.
+- `AsReadOnly` – allows use in page customizations, but only as read-only.
+- `AsReadWrite` – allows fields to be made editable in page customizations.
+- 
+- 
+<!--
+The default value `ToBeClassified` and the obsolete value `Always` both behave like `AsReadOnly`.
+
+For efficiency, [AllowInCustomizations](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/properties/devenv-allowincustomizations-property) can now also be set at the table and table extension level. On table extensions, this only applies to fields declared in the table extension and does not affect the base table fields.
+
+To support field classification, new analyzer rules are introduced: [AS0138](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0138), [AS0139](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0139), and [PTE0026](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop-pte0026). These rules are currently optional and do not block AppSource submissions or PTE uploads. Learn more in the dedicated sections for analyzer rules.
+-->
 
 ## Related information
 
