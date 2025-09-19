@@ -75,7 +75,20 @@ User accounts and permissions in Business Central on-premises aren't migrated to
    > [!TIP]
    > You can go directly to setting up permission sets from the **Cloud Ready Checklist** page by selecting **Permission Sets**.
 
-## Step 4 Define user mappings
+## Step 4 Migrate Record Links and Notes
+
+> **APPLIES TO:** Migration from Business Central on-premises only
+
+Record Links and Notes are not automatically migrated to the target environment. Instead, they are stored in a buffer table during replication. To ensure these are properly transferred to the actual record link table, you must manually trigger the migration.
+
+1. Open the Cloud Migration Management page
+2. Select the action **Migrate Record Links and Notes**.
+
+This action will move Record Links and Notes from the buffer table to the actual table. If new Replication Runs are completed after completing this action, a warning will be surfaced in the Cloud Migration Management page to rerun this action. Existing records will not be overwritten if the action is run again.
+
+This step must be completed before defining user mappings, as user mappings will also update the users associated with record links and notes.
+
+## Step 5 Define user mappings
 
 > **APPLIES TO:** Migration from Business Central on-premises only
 
@@ -95,7 +108,7 @@ If any data or transactions are dependent on a specific on-premises user account
 - The users are copied from the on-premises database from both **User** and **User Property** tables to the buffer table. If you're using custom SQL scripts to move the data, be sure to include **User Property** table. If this table isn't included, then no data is copied.
 - Not all tables are included in the rename process. Codeunit 418 **User Management** is used to rename the records that don't have the table relationship property set. Some tables, like **Change Log Entry**, aren't supported for this functionality, because they're too large. These tables are excluded from the rename process. 
 
-## Step 5 Reconfigure the Dynamics 365 Sales connection
+## Step 6 Reconfigure the Dynamics 365 Sales connection
 
 > **APPLIES TO:** Migration from Business Central on-premises only
 
