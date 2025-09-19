@@ -198,6 +198,20 @@ To fix this problem, go to the **Cloud Migration Management** page and run the *
 
   - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. Learn more in the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
 
+## Number of records in Tenant Media table decreased in last replication
+
+> Database: online
+
+If the number of records in the Tenant Media table decreases between replication runs, you will see a warning in the Cloud Migration Management page. Typically, this error occurs when existing data is overwritten or when not all records could be copied from the source.This error should be investigating before proceeding with a migration project. 
+
+If any records were removed from the Tenant Media table, consider running a [point-in-time restore](/tenant-admin-center-backup-restore.md) to restore the cloud environment to a point-in-time before the last replication run or start a new replication run.
+
+If records were not copied to the Tenant Media table, verify the size of the records in this table in the source database. Records may not be migrated if their size exceeds the maximum size described in [data handling limits](/operational-limits-online.md#DataHandling). Run the following query on the source database to verify the size of records in the Tenant Media table:
+
+```sql
+SELECT [ID] , datalength([Content]) as rowsize from [dbo].[Tenant Media] order by rowsize desc
+```
+
 ## Disabling the cloud migration
 
 > Database: online
