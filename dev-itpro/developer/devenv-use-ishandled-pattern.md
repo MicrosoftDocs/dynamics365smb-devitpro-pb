@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Using the IsHandled pattern for events
 
-`IsHandled` is a widely used event pattern in the code bast. It's very popular for overriding the code. However, the pattern has significant drawbacks that might not be obvious to developers. We recommend that you limit the use of the pattern to a bare minimum, and only use it in cases where it's absolutely necessary. For example, when a better pattern isn't available.
+`IsHandled` is a widely used event pattern in the code base. It's very popular for overriding the code. However, the pattern has significant drawbacks that might not be obvious to developers. We recommend that you limit the use of the pattern to a bare minimum, and only use it in cases where it's absolutely necessary. For example, when a better pattern isn't available.
 
 ## What is the IsHandled pattern?
 
