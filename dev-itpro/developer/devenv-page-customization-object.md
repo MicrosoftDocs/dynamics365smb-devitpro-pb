@@ -2,7 +2,7 @@
 title: Page customization object
 description: The page customization object in Business Central allows you to add changes to the layout and actions on page that are accessible for a profile.
 author: SusanneWindfeldPedersen
-ms.date: 01/30/2025
+ms.date: 08/19/2025
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
@@ -121,20 +121,7 @@ pagecustomization MyPageCust customizes MyPage
 }
 ```
 
-To control how table fields are used in customizations, you can use the [AllowInCustomizations property](properties/devenv-allowincustomizations-property.md). The following values are supported:
-
-- `Never` – still excludes a table's fields from the in-client designer.
-- `AsReadOnly` – allows use in page customizations, but only as read-only.
-- `AsReadWrite` – allows fields to be made editable in page customizations.
-- 
-- 
-<!--
-The default value `ToBeClassified` and the obsolete value `Always` both behave like `AsReadOnly`.
-
-For efficiency, [AllowInCustomizations](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/properties/devenv-allowincustomizations-property) can now also be set at the table and table extension level. On table extensions, this only applies to fields declared in the table extension and does not affect the base table fields.
-
-To support field classification, new analyzer rules are introduced: [AS0138](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0138), [AS0139](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0139), and [PTE0026](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop-pte0026). These rules are currently optional and do not block AppSource submissions or PTE uploads. Learn more in the dedicated sections for analyzer rules.
--->
+To control how table fields are used in customizations, you can use the [AllowInCustomizations property](properties/devenv-allowincustomizations-property.md).
 
 ## Related information
 
