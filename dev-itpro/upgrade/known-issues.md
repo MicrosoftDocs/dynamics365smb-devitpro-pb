@@ -44,7 +44,7 @@ If the .NET 6.0 SDK or Core Runtime is installed before the IIS (Internet Inform
 ### Workaround
 
 1. Uninstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
-1. Download and install the **ASP.NET Core 6.0 Runtime (v6.0.36) - Windows Hosting Bundle** from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/).
+1. Download and install the **ASP.NET Core 6.0 Runtime (v6.0.36) - Windows Hosting Bundle** from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/) or select [this link](https://go.microsoft.com/fwlink/?linkid=2336162).
 1. Reinstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
 
 ## Renamed tables and fields in subscription billing extension cause synch errors on upgrade
