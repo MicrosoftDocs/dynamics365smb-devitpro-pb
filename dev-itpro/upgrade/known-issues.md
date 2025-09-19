@@ -20,7 +20,22 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ### Problem
 
-You get a fatal error when you install the Web Server components on a machine that has the .NET 6.0 SDK or Core Runtime.
+When you install the Web Server components on a machine that already includes the .NET 6.0 SDK or Core Runtime, you get the following error:
+
+**Web Server Components** Fatal error during installation
+
+The installation log, accessible via a link in the error dialog box, includes entries such as:
+
+```
+RegistrySearch: Id = 'IISASPNETInstalled', searching for registry key value. 
+                Id = 'IISASPNETInstalled', Registry value not found. Key = 'SOFTWARE\Microsoft\InetStp\Components', Value = 'ASPNET'
+
+RegistrySearch: Id = 'IISNETFXInstalled', searching for registry key value. 
+                Id = 'IISNETFXInstalled', Registry value not found. Key = 'SOFTWARE\Microsoft\InetStp\Components', Value = 'NetFxExtensibility'
+
+RegistrySearch: Id = 'WebComponentsPrerequisitesInstalled', searching for registry key value. 
+                Id = 'WebComponentsPrerequisitesInstalled', Registry key not found. Key = 'SOFTWARE\Microsoft\Microsoft Dynamics NAV\260\Web Components Prerequisites'
+```
 
 ### Possible cause
 
