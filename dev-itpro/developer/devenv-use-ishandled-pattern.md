@@ -25,13 +25,13 @@ if not IsHandled then
 
 Today, we mostly use `exit` instead of the error, which increases the number of possible code paths.
 
-According to the pattern's definition, only one subscriber can handle the event. All other subscribers must exit if the event is handles, so the subscriber code should start by checking whether the event was already handled.
+According to the pattern's definition, only one subscriber can handle the event. All other subscribers must exit if the event is handled, so the subscriber code should start by checking whether the event was already handled.
 
 ```AL
 [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'OnFoo', '', false, false)]
 local procedure HandleFooOperation(var IsHandled: Boolean)
 begin
-    if not IsHandled then
+    if IsHandled then
         exit;
 
     DoFoo();
