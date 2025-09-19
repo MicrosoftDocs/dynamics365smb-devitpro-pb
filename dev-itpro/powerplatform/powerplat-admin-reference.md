@@ -10,16 +10,13 @@ ms.author: solsen
 
 # Business Central virtual table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] admin reference
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
-> [!IMPORTANT]  
-> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] is published on the [latest version availability page](/dynamics365/released-versions/dynamics-365ce#all-version-availability).
-
 This article provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)].
 
-## Getting the solution
+## Get the Business Central Virtual Table solution
 
-First get the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
+1. Go to [Business Central Virtual Table on  AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity), select **Get it now** and follow the intructons.
+1. If prompted, sign in to the Power Platform admin center
+1. Select the Power Platform envronment that has Dataverse, and then select **Install**.
 
 The following solutions are installed in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are installed from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
@@ -29,7 +26,7 @@ The following solutions are installed in [!INCLUDE[dataverse_short](../includes/
 - **MicrosoftBusinessCentralVEAnchor** - This serves as a container, holding information needed for AppSource. 
 - **MicrosoftBusinessCentralERPVE** - Virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will be contained in this solution. Tables are added automatically at runtime once they're made visible in the **MicrosoftBusinessCentralERPCatalog**.
 
-## Authentication and authorization
+## Set up authentication and authorization
 
 After the solutions are installed in the [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] environment, a connection can be set up to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. *Both environments have to be in the same tenant*.  
 
@@ -39,7 +36,12 @@ The next step in the process is to provide [!INCLUDE[dataverse_short](../include
 
 1. In [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], go to the table **Business Central Virtual Data Source Configuration**.
 
-1. Select and edit the data source named “[!INCLUDE[prod_short](../developer/includes/prod_short.md)]”.
+   1. Sign in to [Power Apps](https://make.powerapps.com).
+   1. Select **Tables** on the left navigation pane.
+   1. Select the **Business Central Virtual Data Source Configuration** table in the list.
+
+   > [!TIP]
+   > Power Apps is the primary tool for creating and modifying tables in Dataverse.
 
 1. On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Data Source Configuration, set **environment** to the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. Unless changed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants have a default environment called 'production'.
 
