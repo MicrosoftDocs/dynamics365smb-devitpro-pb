@@ -16,7 +16,7 @@ Learn how to use specific keywords to change the page customization layout in [U
 
 
 > [!NOTE]  
-> A single page customization can be used with multiple profiles within the same extension. Page customizations only apply to the RoleCenters they're specified for. In order to view or changes the RoleCenters in the client, go to **My Settings**, and then choose **Role Center**. 
+> A single page customization can be used with multiple profiles within the same extension. Page customizations only apply to the RoleCenters they're specified for. In order to view or change the RoleCenters in the client, go to **My Settings**, and then choose **Role Center**. 
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
@@ -36,7 +36,7 @@ Typing the shortcut `tpagecust` creates the basic layout for a page customizatio
 
 ## Views
 
-Views in [!INCLUDE [prod_short](includes/prod_short.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customizations](devenv-page-customization-object.md). Learn more in [Views](devenv-views.md).
+Views in [!INCLUDE [prod_short](includes/prod_short.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page extensions](devenv-page-ext-object.md), and [Page customizations](devenv-page-customization-object.md). Learn more in [Views](devenv-views.md).
 
 
 ## Page customization example
