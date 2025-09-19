@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
-The `directory.app.props.json` file defines reusable variables and metadata (properties) for one or more AL apps in a folder. With a focus on maintainability, using variables for composing properties offers several advantages:
+The `directory.app.props.json` file defines reusable variables and properties for one or more AL apps in a folder. With a focus on maintainability, using variables for composing properties offers several advantages:
 
 - Single point of edit, you only change, for example, `baseUrl` once.
 - Safe version bumping, you only edit `minor` or `build`, not the whole string.  
@@ -24,7 +24,7 @@ The `directory.app.props.json` file is typically located in the root folder of t
 
 Create the `directory.app.props.json` file by following these steps:
 
-1) In the root folder of the app project(s), choose **New File**.
+1) In the root folder of one or more app projects, choose **New File**.
 1) Name the file `directory.app.props.json`.
 1) Edit the file by adding one or more properties inside the JSON structure, such as:  
 
@@ -51,7 +51,7 @@ Create the `directory.app.props.json` file by following these steps:
 
 1) Save the file.
 
-The example above defines variables for version parts, a `baseUrl`, and properties that use these variables. The `configuration` variable is defined but empty, which is useful if you want to append a configuration suffix to the version in certain build scenarios (for example, `-beta` or `-preview`). The properties section uses the `baseUrl` variable to construct full URLs for `url`, `privacyStatement`, `EULA`, and `help`.
+The example defines variables for version parts, a `baseUrl`, and properties that use these variables. The `configuration` variable is defined but empty, which is useful if you want to append a configuration suffix to the version in certain build scenarios (for example, `-beta` or `-preview`). The properties section uses the `baseUrl` variable to construct full URLs for `url`, `privacyStatement`, `EULA`, and `help`.
 
 Properties after substitution:
 
@@ -64,9 +64,9 @@ Properties after substitution:
 
 ## Potential pitfalls
 
-- Leaving `configuration` empty while using `$(configuration)` elsewhere would expand to an empty string — ensure that defaults are meaningful.
-- Typos in variable names inside `$(...)` lead to unresolved tokens — double-check spelling.
-- Non-numeric fragments in version parts causes validation errors — keep them numeric.
+- Leaving `configuration` empty while using `$(configuration)` elsewhere would expand to an empty string—ensure that defaults are meaningful.
+- Typos in variable names inside `$(...)` lead to unresolved tokens—double-check spelling.
+- Non-numeric fragments in version parts cause validation errors—keep them numeric.
 
 ## Related information
 
