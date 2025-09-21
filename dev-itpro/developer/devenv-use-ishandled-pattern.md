@@ -31,7 +31,7 @@ According to the pattern's definition, only one subscriber can handle the event.
 [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'OnFoo', '', false, false)]
 local procedure HandleFooOperation(var IsHandled: Boolean)
 begin
-    if not IsHandled then
+    if IsHandled then
         exit;
 
     DoFoo();
