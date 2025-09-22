@@ -106,7 +106,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Sales Order Agent overview (preview) (https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
 - Payable Agent overview (preview) (https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
-- Agents in action (showcase video – Sep 2025) (https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
+- Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Billing agents | how to set it up (including how to video)(https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
