@@ -204,9 +204,9 @@ To fix this problem, go to the **Cloud Migration Management** page and run the *
 
 If the number of records in the `Tenant Media` table decreases between replication runs, you get a warning on the **Cloud Migration Management** page. This error usually happens when existing data is overwritten or when not all records are copied from the source. Investigate this error before you continue with a migration project.
 
-If any records were removed from the Tenant Media table, consider a [point-in-time restore](/tenant-admin-center-backup-restore.md) to restore the cloud environment to a point before the last replication run, or start a new replication run.
+If any records were removed from the Tenant Media table, consider a [point-in-time restore](tenant-admin-center-backup-restore.md) to restore the cloud environment to a point before the last replication run, or start a new replication run.
 
-If records aren't copied to the `Tenant Media` table, check the size of the records in this table in the source database. Records can't be migrated if their size exceeds the maximum size described in [data handling limits](/operational-limits-online.md#DataHandling). Run the following query on the source database to check the size of records in the `Tenant Media` table:
+If records aren't copied to the `Tenant Media` table, check the size of the records in this table in the source database. Records can't be migrated if their size exceeds the maximum size described in [data handling limits](operational-limits-online.md#DataHandling). Run the following query on the source database to check the size of records in the `Tenant Media` table:
 
 ```sql
 SELECT [ID] , datalength([Content]) as rowsize from [dbo].[Tenant Media] order by rowsize desc
