@@ -78,7 +78,7 @@ User accounts and permissions in Business Central on-premises aren't migrated to
 Record links and notes aren't automatically migrated to the target environment. Instead, they're stored in a buffer table during replication. To ensure they're properly transferred to the actual record link table, you must manually trigger the migration.
 
 1. Open the **Cloud Migration Management** page.
-2. Select the action **Migrate Record Links and Notes**.
+2. Select the **Migrate Record Links and Notes** action.
 
 This action moves record links and notes from the buffer table to the actual table. If new replication runs are completed after completing this action, a warning to rerun this action appears in the **Cloud Migration Management** page. Existing records aren't overwritten if the action is run again.
 
