@@ -43,8 +43,8 @@ The following table illustrates how the Business Central scenarios performed by 
 | Feature | Copilot Studio Event Scenario | Copilot Credits |
 |----------|----------|----------|
 | Analyze incoming email | Generative answer | 2 Copilot Credits |
-| Analyze e-mail attachment (per attachment) | Generative answer | 2 Copilot Credits |
-| Extract sales data from quotation attachment (per attachment) | Agent action | 5 Copilot Credits |
+| Analyze e-mail attachment (per attachment of supported format) | Generative answer | 2 Copilot Credits |
+| Extract sales data from quotation attachment (per attachment of supported format) | Agent action | 5 Copilot Credits |
 | Create or update sales quote | Agent action | 5 Copilot Credits |
 | Create or update sales order | Agent action | 5 Copilot Credits |
 | Generate response email | Generative answer | 2 Copilot Credits |
@@ -61,14 +61,14 @@ The estimated cost per month is based on the following calculation:
 
 
 ### Payables Agent
-You have a Payables Agent connected to a shared mailbox that processes vendor invoices.
+You have a Payables Agent connected to a shared mailbox that processes vendor invoices (e-documents).
 The following table illustrates how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
 
 | Feature | Copilot Studio Event Scenario | Copilot Credits |
 |----------|----------|----------|
-| Analyze incoming email | Generative answer | 2 Copilot Credits |
-| Analyze e-mail attachment (per attachment) | Generative answer | 2 Copilot Credits |
-| Extract invoice data from attachment | Agent Action | 5 Copilot Credits |
+| Create incoming E-Document (per attachment) | Agent Action | 5 Copilot Credits |
+| Analyze incoming E-Document | Generative answer | 2 Copilot Credits |
+| Extract invoice data from E-Document | Agent Action | 5 Copilot Credits |
 | Create purchase document draft | Agent Action | 5 Copilot Credits |
 | Match or create vendor | Agent Action | 5 Copilot Credits |
 | Process invoice line (per line) | Agent Action | 5 Copilot Credits |
@@ -76,15 +76,20 @@ The following table illustrates how the Business Central scenarios performed by 
 
 An average [Payables Agent run](/dynamics365/business-central/payables-agent#payables-agent-process-floww) is for an invoice with five lines.
 
-Such a run comprises one generative answer to analyze the incoming email (2 Copilot Credits), one agent action to create a purchase document draft (5 Copilot Credits), one agent action to match the vendor (5 Copilot Credits), five agent actions to process invoice lines (5 Copilot Credits each), and one agent action to create the purchase invoice (5 Copilot Credits).
+An average run comprises one agent action to create the incoming e-document from the attachment (5 Copilot Credits), one generative answer to analyze the e-document (2 Copilot Credits), one agent action to extract invoice data (5 Copilot Credits), one agent action to create a purchase document draft (5 Copilot Credits), one agent action to match or create the vendor (5 Copilot Credits), five agent actions to process five invoice lines (5 Copilot Credits each), and one agent action to create the purchase invoice (5 Copilot Credits). 
 
-Typically about 90% of requests also include one invoice attachment, which adds one generative answer to analyze the attachment (2 Copilot Credits) and one agent action to extract invoice data from it (5 Copilot Credits). 
+Assuming the average workload is 100 e-documents per month, and every request has one attachment, the estimated cost per month is based on the following calculation:
 
-The average usage is 100 requests per month.
+**[(5 + 2 + 5 + 5 + 5 + (5×5) + 5)] × 100 requests = 4,700 Copilot Credits/month**
 
-The estimated cost per month is based on the following calculation:
+The cost per run therefore depends on the number of invoice lines in each e-document, as shown in the examples below:
+| Lines per e-document| Copilot Credits | 
+|----------|----------|
+| 1 | 27 Copilot Credits |
+| 5 | 47 Copilot Credits |
+| 10 | 72 Copilot Credits |
+| 25 | 147 Copilot Credits |
 
-**[(2 + 5 + 5 + (5×5) + 5) + (0.9×(2+5))] × 100 requests = 4,640 Copilot Credits/month.**
 
 ## Set up billing model
 
