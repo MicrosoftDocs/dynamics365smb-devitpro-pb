@@ -70,6 +70,8 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 27.0 (preview)](whatsnew/whatsnew-update-27-0.md)
+### [Update 26.5](whatsnew/whatsnew-update-26-5.md)
 ### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
 ### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
 ### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
@@ -1195,6 +1197,8 @@
 #### [Contribute a change yourself](developer/devenv-contribute-extensibility.md)
 #### [Create an extensibility request](developer/create-extensibility-request.md)
 #### [Types of events for extensibility](developer/types-of-events-for-extensibility.md)
+#### [Using the IsHandled pattern for events](developer/devenv-use-ishandled-pattern.md)
+#### [Requirements for new IsHandled events](developer/devenv-use-ishandled-min-req.md) 
 ### Extending AL objects
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### [Extending enumerations](developer/devenv-extensible-enums.md)
