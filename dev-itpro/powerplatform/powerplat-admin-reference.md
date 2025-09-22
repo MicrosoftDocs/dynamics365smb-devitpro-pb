@@ -62,7 +62,7 @@ Due to the large number of OData enabled tables available in [!INCLUDE[prod_shor
 1. Select the **Visible** checkbox.
 1. Select **Save** or **Save and Close**.
 
-# [Using Available Business Central tables](#tab/bctables)
+# [Using Available Business Central Tables table](#tab/bctables)
 
 1. In [Power Apps](https://make.powerapps.com), select **Tables** in the left navigation, select the **All** tab, then search for and select *Available Business Central table*.
 
