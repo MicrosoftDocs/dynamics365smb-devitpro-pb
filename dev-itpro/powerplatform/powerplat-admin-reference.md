@@ -52,28 +52,28 @@ The next step in the process is to provide [!INCLUDE[dataverse_short](../include
 
 ## Making virtual tables visible
 
-Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables aren't available as virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. The following steps allow for enabling tables to be virtual, as needed.
+Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables aren't available as virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. Follow the steps to make tables visible, using either the **Business Central Configuration** app or **Available Business Central Tables** table. Both methods have the same result.
 
 # [Using Business Central Configuration](#tab/bcconfig)
 
-1. In [Power Apps](https://make.powerapps.com), select **Tables** in the left navigation, select thhe **All tab**, then search for and select *Available Business Central table*.
-1. Locate the table that you want to enable. The list also contains tables based on custom APIs.
-
-1. Set **Visible** to **Checked** and save. This action generates the virtual table in the **MicrosoftBusinessCentralERPVE** solution. 
-
-Selected table appears in all of the appropriate menus, including **Data -> Tables**, and in advanced find dialog box.
+1. In [Power Apps](https://make.powerapps.com), select **Apps** > **Business Central Configuration**.
+1. Select **Available Tables** in the left navigation pane.
+1. Select the table to open it for editing.
+1. Select the **Visible** checkbox.
+1. Select **Save** or **Save and Close**.
 
 # [Using Available Business Central tables](#tab/bctables)
 
-1. In [Power Apps](https://make.powerapps.com), select **Tables** in the left navigation, then search for and select *Available Business Central tables*. 
+1. In [Power Apps](https://make.powerapps.com), select **Tables** in the left navigation, select the **All** tab, then search for and select *Available Business Central table*.
 
-   Make sure to search using the **All** tab.
-1. Choose **Data** in the horizontal menu to view the available data.
-1. Locate and edit the table that you want to enable. The list also contains tables based on custom APIs.
+    The tables list contains all visible tables, including tables based on custom APIs.
 
-1. Set **Visible** to **Checked** and save. This action generates the virtual table in the **MicrosoftBusinessCentralERPVE** solution. 
+1. Locate the table you want to enable, and set the **Visible** switch to **Yes**.
+1. Select another row to save the change. This action generates the virtual table in the **MicrosoftBusinessCentralERPVE** solution.
 
-Selected table appears in all of the appropriate menus, including **Data -> Tables**, and in advanced find dialog box.
+---
+
+A table appears in all of the appropriate menus, including **Data -> Tables**, and in the advanced find dialog box.
 
 ## Refreshing virtual table metadata
 
