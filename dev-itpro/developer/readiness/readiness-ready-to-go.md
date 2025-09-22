@@ -110,8 +110,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Billing agents | how to set it up (including how to video)(/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
-- Sales Order Agent available in public preview in following countries (Sep 2025): United States, Canada, UK, Australia, New Zealand, Denmark, Germany, France, Italy, Spain 
-- Payable Agent available in public preview in following countries (Sep 2025): United States, UK, Australia, New Zealand
+- Sales Order Agent available in public preview in following countries/regions (Sep 2025): United States, Canada, UK, Australia, New Zealand, Denmark, Germany, France, Italy, Spain 
+- Payable Agent available in public preview in following countries/regions (Sep 2025): United States, UK, Australia, New Zealand
 
 ### Copilot in Business Central 101
 
