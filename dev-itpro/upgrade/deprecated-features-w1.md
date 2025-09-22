@@ -17,15 +17,23 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-## Changes in 2026 release wave 1
+## Changes in 2027 release wave 1 (version 29.0)
 
-The following features will be removed in 2026 release wave 1 (update 28.0).
-
-### Excel reports on the Business Manager and Accountant Role Centers (removal)
+### Peppol BIS 2.0 and Peppol BIS 2.1 are replaced by Peppol BIS 3.0
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| The following Excel reports are removed on the **Business Manager** and **Accountant** role centers.<ul><li>Balance Sheet</li><li>Income Statement</li><li>Statement of Cash Flow</li><li>Statement of Retained Earnings</li><li>Sales Taxes Collected</li><li>Customer Statements</li><li>Aged Accounts Payable</li><li>Aged Accounts Receivable</li></ul>Although these reports are useful to some organizations, changing them requires technical skills in AL and VBA (Visual Basic for Applications) programming. We've enhanced analytics capabilities in finance in each release wave over the last years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for finance. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
+|Replaced| Support for Peppol BIS 2.0 and Peppol BIS 2.1 is removed in 2027 release wave 1 (version 29.0) and replaced by the Peppol BIS 3.0 standard. These Peppol formats were marked as `obsolete:pending` in version 26.0.<br><br>The Peppol network has officially phased out versions 2.0 and 2.1, and most government and B2B e-invoicing platforms now mandate Peppol BIS 3.0 for interoperability and compliance. Continuing to support outdated formats introduces security and compliance risks, and limits compatibility with modern e-document processing services.<br><br>You must update all integrations, mappings, and customizations to use Peppol BIS 3.0. This update ensures full compliance with current Peppol regulations and continued interoperability with global e-invoicing networks. |
+
+## Changes in 2026 release wave 1
+
+The following features will be removed in 2026 release wave 1 (version 28.0).
+
+### Excel reports on the Business Manager and Accountant Role Centers
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| The following Excel reports are removed on the **Business Manager** and **Accountant** Role Centers.<ul><li>Balance Sheet</li><li>Income Statement</li><li>Statement of Cash Flow</li><li>Statement of Retained Earnings</li><li>Sales Taxes Collected</li><li>Customer Statements</li><li>Aged Accounts Payable</li><li>Aged Accounts Receivable</li></ul>Although these reports are useful to some organizations, changing them requires technical skills in AL and VBA (Visual Basic for Applications) programming. We've enhanced analytics capabilities in finance in each release wave over the last years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for finance. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
 
 ### API (v1.0) for Business Central (removal)
 
@@ -50,6 +58,16 @@ The following features will be removed in 2026 release wave 1 (update 28.0).
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| While useful to some organizations, many legacy reports in Business Central are hard to change for end users and  requires technical skills in AL and RDLC programming. Therefore, the following reports in the application have now been deprecated and will completely removed from [!INCLUDE[prod_short](../includes/prod_short.md)] in 2026 release wave 1:</br></br> **Finance reports**</br>[Aged Accounts Receivables (Legacy)](/dynamics365/business-central/reports/report-120)</br>[Aged Accounts Payable (legacy)](/dynamics365/business-central/reports/report-322)</br>[Trial Balance (legacy)](/dynamics365/business-central/reports/report-6)</br>[Trial Balance/Budget (legacy)](/dynamics365/business-central/reports/report-9) </br></br> **Fixed Assets reports** </br>[Fixed Asset Analysis (legacy)](/dynamics365/business-central/reports/report-5600)</br>[Fixed Asset Details (legacy)](/dynamics365/business-central/reports/report-5604)</br>[Fixed Asset Projected Value (legacy)](/dynamics365/business-central/reports/report-5607) </br></br> **Manufacturing reports** </br>[Work Center List (legacy)](/dynamics365/business-central/reports/report-99000759) </br>[Machine Center List (legacy)](/dynamics365/business-central/reports/report-99000760)  </br>[Rolled-up Cost Shares (legacy)](/dynamics365/business-central/reports/report-99000754)  </br>[Single-Level Cost Shares (legacy)](/dynamics365/business-central/reports/report-99000755) </br>[Detailed Calculation (legacy)](/dynamics365/business-central/reports/report-99000756) </br>[Item BOM Compare list (legacy)](/dynamics365/business-central/reports/report-99000758) </br>[Work Center Load (legacy)](/dynamics365/business-central/reports/report-99000783) </br>[Machine Center Load (legacy)](/dynamics365/business-central/reports/report-99000784) </br>[Work Center Load (legacy)](/dynamics365/business-central/reports/report-99000785)  </br>[Machine Center Load (legacy)](/dynamics365/business-central/reports/report-99000786) </br>[Prod. Order - Calculation (legacy)](/dynamics365/business-central/reports/report-99000767) </br></br> **Sales reports** </br>[Customer - Top 10 List (legacy)](/dynamics365/business-central/reports/report-111) </br></br> **Purchasing reports** </br>[Vendor - List (legacy)](/dynamics365/business-central/reports/report-301)</br>[Vendor - Summary Aging (legacy)](/dynamics365/business-central/reports/report-305) </br></br>We've enhanced analytics capabilities in the application in each release wave over the last three years. For example, we've added data analysis capabilities on list pages and queries, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for most functional areas in the application. </br></br>Learn more about replacement features in [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
+
+## Changes in 2025 release wave 2
+
+The following features are marked as `obsolete:pending` in 2025 release wave 2.
+
+### Global planning setup fields moved to the Inventory Setup page
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Moved| To reduce confusion, and highlight that planning capabilities aren't limited to manufacturing, we moved the following global planning setup fields from the **Manufacturing Setup** page to the **Inventory Setup** page:</br></br>-**Current Production Forecast**</br>-**Use Forecast on Locations**</br>-**Use Forecast on Variants**</br>-**Default Safety Lead Time**</br>-**Blank Overflow Level**</br>-**Combined MPS/MRP Calculation**</br>-**Default Dampener Period**</br>-**Default Dampener %**</br></br>These fields are now non-editable and hidden on the **Manufacturing Setup** page. |
 
 ## Changes in 2025 release wave 1
 
