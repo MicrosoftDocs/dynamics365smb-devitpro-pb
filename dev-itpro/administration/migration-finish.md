@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Complete cloud migration to Business Central online
 
+> **APPLIES TO:** Migration from Business Central on-premises only
+
 This article explains tasks you do in the final phase of cloud migration&mdash;that is, after completing replication, upgrading the data in the online environment, and testing the result of the cloud migration.
 
 > [!TIP]
@@ -33,8 +35,6 @@ To disable cloud migration, complete the following steps:
 > The integration runtime remains installed on your on-premises machine. However, if it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. If you want to migrate data again, you must go through the cloud migration setup again and might also need to reinstall the Self-hosted Integration Runtime.
 
 ## <a name="API"></a> Step 2 Run API data upgrade
-
-> **APPLIES TO:** Migration from Business Central on-premises only
 
 This step is only required if you skipped the API data upgrade during the cloud migration. [Learn more about skipping API data upgrade](migration-skip-api-data-upgrade.md). 
 
@@ -73,27 +73,23 @@ User accounts and permissions in Business Central on-premises aren't migrated to
    > [!TIP]
    > You can go directly to setting up permission sets from the **Cloud Ready Checklist** page by selecting **Permission Sets**.
 
-## Step 4 Migrate Record Links and Notes
+## Step 4 Migrate record links and notes
 
-> **APPLIES TO:** Migration from Business Central on-premises only
+Record links and notes aren't automatically migrated to the target environment. Instead, they're stored in a buffer table during replication. To ensure they're properly transferred to the actual record link table, you must manually trigger the migration.
 
-Record Links and Notes are not automatically migrated to the target environment. Instead, they are stored in a buffer table during replication. To ensure these are properly transferred to the actual record link table, you must manually trigger the migration.
-
-1. Open the Cloud Migration Management page
+1. Open the **Cloud Migration Management** page.
 2. Select the action **Migrate Record Links and Notes**.
 
-This action will move Record Links and Notes from the buffer table to the actual table. If new Replication Runs are completed after completing this action, a warning will be surfaced in the Cloud Migration Management page to rerun this action. Existing records will not be overwritten if the action is run again.
+This action moves record links and notes from the buffer table to the actual table. If new replication runs are completed after completing this action, a warning to rerun this action appears in the **Cloud Migration Management** page. Existing records aren't overwritten if the action is run again.
 
-This step must be completed before defining user mappings, as user mappings will also update the users associated with record links and notes.
+Complete this step before defining user mappings because user mappings also update the users associated with the record links and notes.
 
 ## Step 5 Define user mappings
-
-> **APPLIES TO:** Migration from Business Central on-premises only
 
 If any data or transactions are dependent on a specific on-premises user account, then you must map the on-premises user account to an online user account. 
 
 > [!IMPORTANT]
-> User mappings can only be done once per environment, so it's recommended to do this task as a one of the last step. You can copy to a sandbox and test the changes there so it doesn't affect the production environment.
+> User mappings can only be done once per environment, so do this task as one of the last steps. You can copy to a sandbox and test the changes there so it doesn't affect the production environment.
 
 ### Map on-premises users to online accounts
 
@@ -107,7 +103,5 @@ If any data or transactions are dependent on a specific on-premises user account
 - Not all tables are included in the rename process. Codeunit 418 **User Management** is used to rename the records that don't have the table relationship property set. Some tables, like **Change Log Entry**, aren't supported for this functionality, because they're too large. These tables are excluded from the rename process. 
 
 ## Step 6 Reconfigure the Dynamics 365 Sales connection
-
-> **APPLIES TO:** Migration from Business Central on-premises only
 
 If you're integrating with Dynamics 365 Sales, you have to set up the connection again. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).
