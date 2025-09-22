@@ -37,7 +37,7 @@ Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 ### Sales Order Agent
 
-You have the Sales Order agent connected to a shared mailbox that processes customer requests for quotes and orders.
+You have the Sales Order agent connected to a shared mailbox that processes customer requests for sales quotes and orders.
 The following table illustrates how the Business Central scenarios performed by the Sales Order agent are mapped to Copilot Studio events.
 
 | Feature | Copilot Studio Event Scenario | Copilot Credits |
@@ -61,8 +61,8 @@ The estimated cost per month is based on the following calculation:
 
 
 ### Payables Agent
-You have a payables agent connected to a shared mailbox that processes vendor invoices.
-The following table illustrates how the Business Central scenarios performed by the Sales Order agent are mapped to Copilot Studio events.
+You have a Payables Agent connected to a shared mailbox that processes vendor invoices.
+The following table illustrates how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
 
 | Feature | Copilot Studio Event Scenario | Copilot Credits |
 |----------|----------|----------|
@@ -78,7 +78,7 @@ An average [Payables Agent run](/dynamics365/business-central/payables-agent#pay
 
 Such a run comprises one generative answer to analyze the incoming email (2 Copilot Credits), one agent action to create a purchase document draft (5 Copilot Credits), one agent action to match the vendor (5 Copilot Credits), five agent actions to process invoice lines (5 Copilot Credits each), and one agent action to create the purchase invoice (5 Copilot Credits).
 
-Typically about 90% of requests also include one invoice attachment, which adds one generative answer to analyze the attachment (2 Copilot Credits) and one agent action to extract invoice data (5 Copilot Credits). 
+Typically about 90% of requests also include one invoice attachment, which adds one generative answer to analyze the attachment (2 Copilot Credits) and one agent action to extract invoice data from it (5 Copilot Credits). 
 
 The average usage is 100 requests per month.
 
