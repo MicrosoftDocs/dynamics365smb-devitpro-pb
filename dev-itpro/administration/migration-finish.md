@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 12/15/2023
+ms.date: 09/22/2025
 ms.custom: bap-template 
 ---
 
@@ -14,11 +14,11 @@ ms.custom: bap-template
 This article explains tasks you do in the final phase of cloud migration&mdash;that is, after completing replication, upgrading the data in the online environment, and testing the result of the cloud migration.
 
 > [!TIP]
-> To keep track of which of task you've done, use the [Post Migration Checklist](https://businesscentral.dynamics.com/?page=4020) page to check off tasks as you go along. To open the checklist, go to **Cloud Migration Setup** page then select **Actions** > **Setup checklist**.
+> To keep track of which of tasks you did so far, use the [Post Migration Checklist](https://businesscentral.dynamics.com/?page=4020) page to check off tasks as you go along. To open the checklist, go to **Cloud Migration Setup** page then select **Actions** > **Setup checklist**.
 
 ## Step 1 Disable the cloud migration
 
-Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This step is important because each time someone runs the migration, outstanding documents (like for vendors and inventory items) and other changes made in the online target company are overwritten.
+Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This step is important because each time someone runs the migration, outstanding documents (like for vendors and inventory items), and other changes made in the online target company are overwritten.
 
 When you disable the cloud migration, the cloud migration setup for the environment is deleted. But integration runtime remains. So if you want to migrate data again, you have to first go through the cloud migration setup.
 
@@ -30,7 +30,7 @@ To disable cloud migration, complete the following steps:
 1. Select the **Disable Cloud Migration** > **Yes**.
 
 > [!NOTE]
-> The integration runtime remains installed on your on-premise machine. However, if it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. If you want to migrate data again, you must go through the cloud migration setup again and may also need to re-install the Self-hosted Integration Runtime.
+> The integration runtime remains installed on your on-premises machine. However, if it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. If you want to migrate data again, you must go through the cloud migration setup again and might also need to reinstall the Self-hosted Integration Runtime.
 
 ## <a name="API"></a> Step 2 Run API data upgrade
 
@@ -43,17 +43,15 @@ This step is only required if you skipped the API data upgrade during the cloud 
 1. Select the **Manage API Upgrade** action to open the **API Upgrade overview** page. 
 
    Companies that weren't upgraded have the **API Upgrade Status** of **Disabled**.
-    
+
 1. To run the API data upgrade for a company, do the following steps:
 
    1. On the **API upgrade overview** page, select the company name.
 
-      The **API Data Upgrade List** opens in a new browser tab. 
-      
+      The **API Data Upgrade List** opens in a new browser tab.
    1. On the **API Data Upgrade List** page, select all entities, and then select **Reset** > **"Schedule Upgrades** > **Yes**.
 
       A job queues entry is created and opened.
-   
    1. Schedule the job queue entry to run. [Learn more](/dynamics365/business-central/admin-job-queues-schedule-tasks).
   
 1. Repeat the previous step for each company you want to run the API data upgrade.
@@ -68,7 +66,7 @@ User accounts and permissions in Business Central on-premises aren't migrated to
 
    For more information, go to [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users).
 
-1. An account in Business Central that's associated with their Microsoft 365 account email and assigned the proper permissions to data in Business Central.
+1. An account in Business Central associated with their Microsoft 365 account email and assigned the proper permissions to data in Business Central.
 
    For more information, go to [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions). 
 
