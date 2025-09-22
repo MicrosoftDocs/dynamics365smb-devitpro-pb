@@ -54,7 +54,18 @@ The next step in the process is to provide [!INCLUDE[dataverse_short](../include
 
 Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables aren't available as virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. The following steps allow for enabling tables to be virtual, as needed.
 
-1. In [Power Apps](https://make.powerapps.com), select **Tables** in the left navigation, then search for and select *Available Business Central table*. 
+# [Using Business Central Configuration](#tab/bcconfig)
+
+1. In [Power Apps](https://make.powerapps.com), select **Tables** in the left navigation, select thhe **All tab**, then search for and select *Available Business Central table*.
+1. Locate the table that you want to enable. The list also contains tables based on custom APIs.
+
+1. Set **Visible** to **Checked** and save. This action generates the virtual table in the **MicrosoftBusinessCentralERPVE** solution. 
+
+Selected table appears in all of the appropriate menus, including **Data -> Tables**, and in advanced find dialog box.
+
+# [Using Available Business Central tables](#tab/bctables)
+
+1. In [Power Apps](https://make.powerapps.com), select **Tables** in the left navigation, then search for and select *Available Business Central tables*. 
 
    Make sure to search using the **All** tab.
 1. Choose **Data** in the horizontal menu to view the available data.
