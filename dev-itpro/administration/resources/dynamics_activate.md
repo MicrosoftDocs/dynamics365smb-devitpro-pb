@@ -21,7 +21,7 @@ Represents an activate object in [!INCLUDE[d365fin_long_md](../../includes/d365f
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[POST activate](../api/dynamics_activate_post.md)|activate| Activates a specific feature.|
+|[POST activate](../api/dynamics_activate_create.md)|activate| Activates a specific feature.|
 
 ## Bound Actions
 
