@@ -113,7 +113,7 @@ The following table describes general settings for the server.
 |PTESymbolReferenceCacheTTLInHours|Specifies the lifespan, in hours, of entries in the PTEn symbol reference cache.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 24|
 |XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
 |DisableWriteInsideTryFunctions|Specifies whether database writes are allowed inside the scope of try methods. `true` prevents database writes; `false` allows database writes. Learn more in [Handling errors using try methods](../developer/devenv-handling-errors-using-try-methods.md)<br><br>Default: `true`<br />Dynamically updatable: No|
-|EnforceUserPathForAlFileOperations|Gets or sets whether EnforceUserPath flag should be set for AL File operations.<br><br>Default: `true`<br />Dynamically updatable: No<br><br>**APPLIES TO:** Version 27 and later.|
+|EnforceUserPathForAlFileOperations|Specifies whether the EnforceUserPath flag is set for AL File operations.<br><br>Default: `true`<br />Dynamically updatable: No<br><br>**APPLIES TO:** Version 27 and later.|
 
 ##  <a name="Database"></a> Database settings
   
@@ -391,8 +391,6 @@ The following table describes settings related to development in AL.
 |DeveloperServicesPort|The listening HTTP port for Microsoft Dynamics NAV Developer web services.<br /><br />Valid range: 1 - 65535<br />Default: 7049<br />Dynamically updatable: No|
 |ForceExtensionAllowedTargetLevel| This setting is only used for Business Central on-premises scenarios using Microsoft Entra ID from Visual Studio Code in which case the setting must be set to `true`.<br> This setting is not available from the UI.<br> Default: `false`. Learn more in [Using Microsoft Entra authentication for Business Central on-premises](../developer/devenv-aad-auth-onprem.md).|
 |TestCodeunitDefaultHttpRequestPolicy|Specifies the default behavior for how outgoing http requests are handled in test codeunits.<ul><li>`BlockOutboundRequests`: Any HTTP request issued during the test execution that isn't caught and handled by an HTTP client handler raises an exception.<li></li> `AllowOutboundFromHandler`: All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint.<li></li> `AllowAllOutboundRequests`: All outbound HTTP requests issued during the test execution are allowed.</li></ul>Default: `AllowAllOutboundRequests`<br />Dynamically updatable: No<br /><br />**APPLIES TO:** Version 26 and later.|
-
-**APPLIES TO:** Version 26 and later.|
 
 ## <a name="Compatibility"></a>Compatibility settings
 
