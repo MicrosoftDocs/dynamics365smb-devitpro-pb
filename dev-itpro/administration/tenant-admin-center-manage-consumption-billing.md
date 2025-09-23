@@ -83,7 +83,7 @@ Assuming the average workload is 100 e-documents per month, and every request ha
 **[(5 + 2 + 5 + 5 + 5 + (5×5) + 5)] × 100 requests = 5,200 Copilot Credits/month**
 
 The cost per run therefore depends on the number of invoice lines in each e-document, as shown in the examples below:
-| Lines per e-document| Copilot Credits | 
+| Lines per E-Document| Copilot Credits | 
 |----------|----------|
 | 1 | 32 Copilot Credits |
 | 5 | 52 Copilot Credits |
