@@ -1,12 +1,12 @@
 ---
-title: Tri-state locking in database
+title: Tri-state Locking in Database
 description: Learn about the tri-state locking feature in Business Central.
 author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
 ms.topic: article
 ms.collection: 
-ms.date: 09/04/2023
+ms.date: 09/23/2025
 ms.custom: bap-template
 ---
 
@@ -17,7 +17,7 @@ ms.custom: bap-template
 The tri-state locking feature is aimed at enhancing the performance and concurrency of database transactions. By enabling this feature, AL-based read operations that follow write operations are performed optimistically, rather than with strict consistency and low concurrency. So, users can expect higher levels of concurrency and fewer blocked or failed operations while accessing data. 
 
 > [!NOTE]
-> Explicitly using the [LockTable](methods-auto/record/record-locktable-method.md) method in code will maintain the same behavior, disabling optimistic reads.
+> Explicitly using the [LockTable](methods-auto/record/record-locktable-method.md) method in code maintains the same behavior, disabling optimistic reads.
 
 ## Locking behavior
 
@@ -80,7 +80,7 @@ Tri-state locking is enabled by default for Business Central online and on-premi
 Changes take effect on users the next time they sign in to Business Central. Learn more about feature management in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
 
 > [!NOTE]
-> If you're using Business Central on-premises, the `EnableTriStateLocking` setting in the server configuration must also be set to `true` to use tri-state locking. [Learn more about configuring the server](../administration/configure-server-instance.md#Database).
+> If you're using Business Central on-premises version 23, 24, or 25, the `EnableTriStateLocking` setting in the server configuration must also be set to `true` to use tri-state locking. Learn more about [configuring the server](../administration/configure-server-instance.md#Database). Tri-state locking is always used in later versions.
 
 ## Related information
 
