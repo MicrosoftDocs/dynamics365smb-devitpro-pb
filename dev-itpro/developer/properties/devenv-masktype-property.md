@@ -2,7 +2,7 @@
 title: "MaskType property"
 description: "Specifies whether the field value should be masked for security purposes."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 23/09/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,13 +30,12 @@ Specifies whether the field value should be masked for security purposes.
 
 ## Remarks
 
-The `MaskType` property is defined on a field-level for the following field types: `Code`, `Text`, `Decimal`, `Integer`, and `BigInteger`. It can be used to mask sensitive information in the user interface, such as personal identifiers, financial details, or confidential notes. In the UI, a reveal icon is rendered on the control that allows users to toggle between hide and unhide state.
+The `MaskType` property is defined on a field-level for the following field types: `Code`, `Text`, `Decimal`, `Integer`, and `BigInteger`. It can be used to mask sensitive information in the user interface, such as personal identifiers, financial details, or confidential notes. In the UI, a hide/show icon is rendered on the control that allows users to toggle between hide and unhide state.
 
 `MaskType` can't be defined together with the [ExtendedDatatype Property](devenv-extendeddatatype-property.md) set to `Masked`, this will throw an error. Also, the `MaskType` property isn't allowed in repeater controls and in ConfigurationDialog pages.
 
 > [!IMPORTANT]
 > The `MaskType` property provides a lightweight UI-layer-only information protection, as the unmasked data is transferred to the web browser anyway.
-
 
 ## Related information  
 
