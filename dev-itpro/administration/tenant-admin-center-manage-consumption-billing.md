@@ -53,7 +53,7 @@ An average [Sales Order Agent run](/dynamics365/business-central/sales-order-age
 
 Typically about 40% of requests include one quotation attachment, which adds a generative answer to analyze the attachment (2 Copilot Credits) and an agent action to extract sales data from it (5 Copilot Credits). 
 
-The average usage is 100 requests per month.
+Imagine that your usage is 100 requests per month.
 
 The estimated cost per month is based on the following calculation:
 
