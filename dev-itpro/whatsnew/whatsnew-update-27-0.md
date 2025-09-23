@@ -74,7 +74,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Install UK localization as an extension to the base app](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/install-uk-localization-as-app)| GA|
 | | [New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia)| GA|
 | | [New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia)| GA|
-| | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia)| PGAP|
+| | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia)| GA|
 | | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris)| PP|
 | Development| [Cancel build and publish from Visual Studio Code](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/cancel-build-publish-visual-studio-code)| GA|
 | | [Hide Copilot summaries](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/hide-copilot-summaries)| PP|
