@@ -54,7 +54,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 
 | Product area| Feature| PP/GA|
 |---|---|---|
-| commerce| [Define sell-to and bill-to customer details per company location](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/define-sell-to-bill-to-customer-details-per-company-location)| GA|
+| Commerce| [Define sell-to and bill-to customer details per company location](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/define-sell-to-bill-to-customer-details-per-company-location)| GA|
 | | [Enable staff-to-salesperson mapping for Shopify orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-staff-to-salesperson-mapping-shopify-orders)| GA|
 | | [Synchronize market-specific prices with Shopify](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/synchronize-market-specific-prices-shopify)| GA|
 | | [Troubleshoot the Shopify Connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/troubleshoot-shopify-connector)| GA|
