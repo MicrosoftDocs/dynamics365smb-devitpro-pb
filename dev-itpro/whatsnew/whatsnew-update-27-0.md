@@ -42,7 +42,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 1. Identify the markdown file name in "Release Plan URL" column.
 2. Create a relative link on the text in the "Feature" column using the format: [<text>](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/<markdown file name>. 
 3. Omit .md in the link
-4. Create a column named "PP/GA". If a row has a value in the "Public Preview/Early Access - Release Date" column, set the "PP/GA" column in the row to "PP". Othersise set the "PP/GA" column to "GA".
+4. Create a column named "PP/GA". If a row has a date in the "Public Preview/Early Access - Release Date" column for October, set the "PP/GA" column in the row to "PP". Othersise set the "PP/GA" column to "GA".
 5. Delete the "GA - Release Date", "Public Preview/Early Access - Release Date", and "Release Plan URL" columnw from the table, so the table only has the format:
    
 | Product area| Feature| PP/GA|
@@ -61,26 +61,26 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Use the latest update for the Shopify Connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-latest-update-shopify-connector)| GA|
 | Copilot and agents| [Autofill contact details with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/get-better-field-suggestions-using-autofill-copilot)| PP|
 | | [Connect AI agents to Business Central through MCP server](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server)| PP|
-| | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)| PP|
+| | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)| GA|
 | | [Give more instructions for the agent when you review its tasks](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/give-more-instructions-agent-when-review-its-tasks)| PP|
 | | [Summarize with Copilot enhancements](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-copilot-enhancements)| PP|
 | | [Understand how each Copilot and agent capability is billed](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/understand-how-each-copilot-agent-capability-billed)| PP|
 | | [Use enhanced analysis assist with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analysis-assist-copilot)| GA|
 | | [Use enhanced chat with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-chat-copilot)| PP|
-| | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process)| PP|
-| Country and regional| [Alternative posting groups for employees in Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/alternative-posting-groups-employees-czechia)| PP|
-| | [Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia)| PP|
-| | [Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia)| PP|
+| | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process)| GA|
+| Country and regional| [Alternative posting groups for employees in Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/alternative-posting-groups-employees-czechia)| GA|
+| | [Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia)| GA|
+| | [Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia)| GA|
 | | [Install UK localization as an extension to the base app](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/install-uk-localization-as-app)| GA|
-| | [New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia)| PP|
-| | [New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia)| PP|
-| | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia)| PP|
+| | [New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia)| GA|
+| | [New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia)| GA|
+| | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia)| PGAP|
 | | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris)| PP|
-| Development| [Cancel build and publish from Visual Studio Code](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/cancel-build-publish-visual-studio-code)| PP|
+| Development| [Cancel build and publish from Visual Studio Code](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/cancel-build-publish-visual-studio-code)| GA|
 | | [Hide Copilot summaries](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/hide-copilot-summaries)| PP|
-| | [Record and edit easier with enhanced page scripting tool](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/record-edit-easier-enhanced-page-scripting-tool)| PP|
+| | [Record and edit easier with enhanced page scripting tool](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/record-edit-easier-enhanced-page-scripting-tool)| GA|
 | | [Truncate table data with new AL method](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/truncate-table-data-new-al-method)| GA|
-| | [View SQL call information in performance profiles](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-sql-call-information-performance-profiles)| PP|
+| | [View SQL call information in performance profiles](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-sql-call-information-performance-profiles)| GA|
 | Electronic Documents| [Create e-documents from posted sales invoices](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-e-documents-posted-sales-invoices)| GA|
 | | [Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files)| GA|
 | | [Send e-documents via a service and email simultaneously](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/send-e-documents-via-service-email-simultaneously)| GA|
@@ -122,7 +122,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central)| PP|
 | | [Use updated demo data for Sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-updated-demo-data-sustainability)| GA|
 | | [Use an updated Sustainability Manager Role Center](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-updated-sustainability-admin-role-center)| GA|
-| User experiences| [Adjust width of Copilot, help, and page scripting panes](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/adjust-width-copilot-help-page-scripting-panes)| PP|
+| User experiences| [Adjust width of Copilot, help, and page scripting panes](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/adjust-width-copilot-help-page-scripting-panes)| GA |
 | | Use the Concealed text field type for sensitive data| PP|
 
 ## Changes to optional features in Feature Management
