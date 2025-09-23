@@ -62,7 +62,8 @@ This section describes all the configuration settings for a [!INCLUDE[server](..
 
 ## General settings
   
-The following table describes general settings for the server.  
+The following table describes general settings for the server. 
+ 
 |Key Name|Description|
 |--------|-------------------------------------------------------------------|
 |ALLongRunningFunctionTracingThresholdForApplicationInsights|Specifies the amount of time (in milliseconds) that an AL function can run before a warning event is recorded in the partner's Application Insights resource trace log. If you don't want a threshold, set the value to -1. <br /><br />To collect this telemetry data, the **Application Insights Instrumentation Key** setting must be configured. For information about analyzing this telemetry, see [Analyzing Long Running AL Methods Telemetry](telemetry-al-method-trace.md).<br /><br />Default: -1<br />Dynamically updatable: Yes|
@@ -190,7 +191,8 @@ The following table describes settings related to SOAP services.
 
 ##  <a name="ODataServices"></a> OData services settings
   
-The following table describes settings related OData services.  
+The following table describes settings related OData services.
+ 
 |Key Name|Description|  
 |--------|-------------------------------------------------------------------|  
 |APISubscriptionDelayTime|Specifies the amount of time (in milliseconds) that we need to wait before we can start processing notificatoins.<br /><br /> Default: 30000<br />Dynamically updatable: No|  
