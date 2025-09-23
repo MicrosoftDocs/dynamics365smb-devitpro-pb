@@ -104,10 +104,10 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ### Agents in Business Central
 
-- Sales Order Agent overview (preview) (/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
-- Payable Agent overview (preview) (/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
+- Sales Order Agent overview (preview) [Learn more](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
+- Payable Agent overview (preview)  [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
 - Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
-- Billing agents | how to set it up (including how to video)(/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
+- Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Sales Order Agent available in public preview in following countries/regions (Sep 2025): United States, Canada, UK, Australia, New Zealand, Denmark, Germany, France, Italy, Spain 
