@@ -85,10 +85,11 @@ Assuming the average workload is 100 e-documents per month, and every request ha
 The cost per run therefore depends on the number of invoice lines in each e-document, as shown in the examples below:
 | Lines per e-document| Copilot Credits | 
 |----------|----------|
-| 1 | 27 Copilot Credits |
+| 1 | 32 Copilot Credits |
 | 5 | 52 Copilot Credits |
-| 10 | 72 Copilot Credits |
-| 25 | 147 Copilot Credits |
+| 10 | 77 Copilot Credits |
+| 25 | 152 Copilot Credits |
+| 50 | 277 Copilot Credits |
 
 
 ## Set up billing model
