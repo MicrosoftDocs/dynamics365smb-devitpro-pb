@@ -80,13 +80,13 @@ An average run comprises one agent action to create the incoming e-document from
 
 Assuming the average workload is 100 e-documents per month, and every request has one attachment, the estimated cost per month is based on the following calculation:
 
-**[(5 + 2 + 5 + 5 + 5 + (5×5) + 5)] × 100 requests = 4,700 Copilot Credits/month**
+**[(5 + 2 + 5 + 5 + 5 + (5×5) + 5)] × 100 requests = 5,200 Copilot Credits/month**
 
 The cost per run therefore depends on the number of invoice lines in each e-document, as shown in the examples below:
 | Lines per e-document| Copilot Credits | 
 |----------|----------|
 | 1 | 27 Copilot Credits |
-| 5 | 47 Copilot Credits |
+| 5 | 52 Copilot Credits |
 | 10 | 72 Copilot Credits |
 | 25 | 147 Copilot Credits |
 
