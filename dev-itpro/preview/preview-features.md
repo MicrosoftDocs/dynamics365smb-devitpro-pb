@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [This article is prerelease documentation and is subject to change.]disclaimer
 
-How to try out early preview features in Business Central....
+Intro should mention what this is for - Early preview, spin up preview sandbox possible by all partners, only in US or UK.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
