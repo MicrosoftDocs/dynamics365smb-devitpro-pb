@@ -15,22 +15,30 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 This article explains features in the early preview version of Business Central online available for US and UK sandbox environments. The early preview version lets you try new functionality in a clean environment without customer data, setup, or customizations. You can provide feedback and join discussions about the functionality with the Business Central development team and other users to help improve the functionality.
 
-Create an early preview sandbox environment by following the instructions in [Create a new environment in the Business Central admin center](../administration/tenant-admin-center-environments.md#create-a-new-environment), setting the following  
-
-|Option|Value|
-|-|-|
-|Enviroment Type|Sandbox|
-|Country|UK or US|
-|Version|Version that includes **(early preview), like 27. 2X.X.X,X (early preview|
-
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
+## Get started
+
+1. Create an early preview sandbox environment In the Business Central admin center that has the following settings:
+
+   |Setting|Value|
+   |-|-|
+   |Environment Type|Sandbox|
+   |Country|UK or US|
+   |Version|Version that includes **(early preview)**, like 27.0.1234.5678 (early preview)|
+
+   Learn more in [Create a new environment in the Business Central admin center](../administration/tenant-admin-center-environments.md#create-a-new-environment).
+
+1. Try the features described in the following sections.
+1. Provide feedback by opening the **Preview environment features** page and selecting the **Provide feedback** link for the feature.
 <!--
 Authoring guidance:
 1. Add a new section for the feature, provide a title and description.
-3. Keep plain, factual tone. Avoid promises / roadmap language.
-4. Update ms.date when adding/removing/updating any feature section.
-5. Remove any unused placeholder subsections (don’t leave empty headings).
+1. Keep plain, factual tone. Avoid promises / roadmap language.
+1. Update ms.date when adding/removing/updating any feature section.
+1. Remove any unused placeholder subsections (don’t leave empty headings).
+1. Create a pull request
+1. When pull request is ready for publishing, apply the label **ready for review**. 
 -->
 
 ## Feature 1
