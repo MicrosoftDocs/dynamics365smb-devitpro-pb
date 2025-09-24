@@ -38,4 +38,6 @@ Description of feature 2 including; what it is, who it's for, and any prerequisi
 
 ## Related information
 
+[Create a new sandbox environment](../administration/tenant-admin-center-environments.md#create-a-new-environment)  
+
 <!-- link to feedback -->
