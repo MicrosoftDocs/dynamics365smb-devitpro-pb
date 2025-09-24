@@ -11,9 +11,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Early preview features in Business Central
 
-disclaimer
+[This article is prerelease documentation and is subject to change.]disclaimer
 
-How to try out early preview features in Business Central.
+How to try out early preview features in Business Central....
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Feature 1
 
