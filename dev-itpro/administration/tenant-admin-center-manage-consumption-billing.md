@@ -51,7 +51,7 @@ The following table illustrates how the Business Central scenarios performed by 
 
 ** Only attachments in supported formats are processed (for example, PDF, PNG, JPG).
   
-An average [Sales Order Agent run](/dynamics365/business-central/sales-order-agent#agent-process-flow) comprises one generative answer to analyze the incoming email (2 Copilot Credits), one agent action to create or update a sales quote or order (5 Copilot Credits), and one generative answer to generate the response email (2 Copilot Credits).
+A typical [Sales Order Agent run](/dynamics365/business-central/sales-order-agent#agent-process-flow) comprises one generative answer to analyze the incoming email (2 Copilot Credits), one agent action to create or update a sales quote or order (5 Copilot Credits), and one generative answer to generate the response email (2 Copilot Credits).
 
 For illustration, let’s assume that about 40% of requests also include an attachment in a supported format. In this scenario, 80% of those attachments might contain sales data that can be used for quotation - for example, a purchase order in PDF format (5 Copilot Credits), while the remaining 20% might contain no usable sales data (2 Copilot Credits).
 
