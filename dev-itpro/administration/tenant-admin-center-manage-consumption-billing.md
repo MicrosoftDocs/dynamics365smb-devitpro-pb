@@ -76,9 +76,9 @@ The following table illustrates how the Business Central scenarios performed by 
 | Process invoice line (per line) | Agent Action | 5 Copilot Credits |
 | Create purchase invoice | Agent Action | 5 Copilot Credits |
 
-An average [Payables Agent run](/dynamics365/business-central/payables-agent#payables-agent-process-floww) is for an invoice with five lines.
+For illustration, let’s assume that an average [Payables Agent run](/dynamics365/business-central/payables-agent#payables-agent-process-floww) is for an invoice with five lines.
 
-An average run comprises one agent action to create the incoming e-document from the attachment (5 Copilot Credits), one generative answer to analyze the e-document (2 Copilot Credits), one agent action to extract invoice data (5 Copilot Credits), one agent action to create a purchase document draft (5 Copilot Credits), one agent action to match or create the vendor (5 Copilot Credits), five agent actions to process five invoice lines (5 Copilot Credits each), and one agent action to create the purchase invoice (5 Copilot Credits). 
+Such run comprises one agent action to create the incoming e-document from the attachment (5 Copilot Credits), one generative answer to analyze the e-document (2 Copilot Credits), one agent action to extract invoice data (5 Copilot Credits), one agent action to create a purchase document draft (5 Copilot Credits), one agent action to match or create the vendor (5 Copilot Credits), five agent actions to process five invoice lines (5 Copilot Credits each), and one agent action to create the purchase invoice (5 Copilot Credits). 
 
 Assuming the average workload is 100 e-documents per month, and every request has one attachment, the estimated cost per month is based on the following calculation:
 
