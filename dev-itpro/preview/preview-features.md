@@ -40,6 +40,7 @@ Authoring guidance:
 5. Create a pull request. When pull request is ready for publishing, apply the label **ready for review**.
 6. The live URL for this article is https://learn.microsoft.com/dynamics365/business-central/dev-itpro/preview/preview-features - for section links, these are formatted as https://learn.microsoft.com/dynamics365/business-central/dev-itpro/preview/preview-features#add-feature-title (where add-feature-title is the title you provide, with spaces replaced by hyphens and all lowercase).
 
+-->
 
 ## Add feature title
 
