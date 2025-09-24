@@ -11,7 +11,13 @@ ms.reviewer: solsen
 
 # AL Development Tools package
 
-The AL Development Tools package provides the ALTool command line tool, which is used for compiling and packaging AL extensions for [!INCLUDE [prod_short](includes/prod_short.md)]. It's useful for integration into CI/CD pipelines to automate the build and deployment process.
+When you install the AL Development Tools package, you gain access to a set of command-line utilities designed to streamline AL extension development and automation. The main features include:
+
+- **ALTool command-line utility**: A cross-platform tool for compiling, packaging, and managing AL extensions outside of Visual Studio Code.
+- **Integration with CI/CD pipelines**: Easy automation of build and deployment processes for your AL projects in Azure DevOps, GitHub Actions, or other automation platforms.
+- **Multiple installation options**: The tools package is available as a NuGet package, making it simple to install on build agents or local machines using standard package management workflows.
+- **No need for full Visual Studio Code installation**: Using the ALTool independently is ideal for automated environments or lightweight setups.
+- **Support for various ALTool commands**: Compile, create symbol packages, retrieve manifests, and more—all from the command line.
 
 Learn more in [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools)
 
@@ -20,14 +26,14 @@ Learn more in [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www
 
 ## Get started
 
-Get started with the AL Development Tools package by following the instructions on [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools). When you install the package, you get access to the ALTool command-line tool, and you can use the `AL` alias to run it.
+Get started with the AL Development Tools package by following the instructions on [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools). When you install the package, you get access to the ALTool command-line tool, and you can use the `al` alias to run it.
 
 ## ALTool commands
 
 To get a list of available commands, run the following command in your terminal or command prompt:
 
 ```shell
-AL help
+al help
 ```
 
 | Command                        | Description                                           |
