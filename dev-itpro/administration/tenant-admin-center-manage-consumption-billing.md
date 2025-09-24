@@ -62,9 +62,8 @@ The estimated monthly cost is calculated as follows:
 
 **[(2 + 5 + 5 + 2) + 0.4 × (0.8×5 + 0.2×2)] × 100 requests = 1,576 Copilot Credits/month.**
 
-
 ### Payables Agent
-You have a Payables Agent connected to a shared mailbox that processes vendor invoices (e-documents).
+You have a Payables Agent connected to a shared mailbox that processes vendor invoices (e-documents). Billing events for the Payables agent are being defined. 
 The following table illustrates how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
 
 | Feature | Copilot Studio Event Scenario | Copilot Credits |
