@@ -1,13 +1,12 @@
 ---
 title: AL Development Tools package
-author: SusanneWindfeldPedersen
-description: 
 ms.date: 09/18/2025
+author: SusanneWindfeldPedersen
+description: Streamline AL extension development with the AL Development Tools package. Access powerful command-line utilities for compiling, packaging, and automating workflows.
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
-
 
 # AL Development Tools package
 
