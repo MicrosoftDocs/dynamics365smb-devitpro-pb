@@ -13,7 +13,15 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Intro should mention what this is for - Early preview, spin up preview sandbox possible by all partners, only in US or UK.
+This article explains features in the early preview version of Business Central online available for US and UK sandbox environments. The early preview version lets you try new functionality in a clean environment without customer data, setup, or customizations. You can provide feedback and join discussions about the functionality with the Business Central development team and other users to help improve the functionality.
+
+Create an early preview sandbox environment by following the instructions in [Create a new environment in the Business Central admin center](../administration/tenant-admin-center-environments.md#create-a-new-environment), setting the following  
+
+|Option|Value|
+|-|-|
+|Enviroment Type|Sandbox|
+|Country|UK or US|
+|Version|Version that includes **(early preview), like 27. 2X.X.X,X (early preview|
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
