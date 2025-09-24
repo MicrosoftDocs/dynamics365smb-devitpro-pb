@@ -35,6 +35,7 @@ These features are no longer controlled in **Feature management**, so they can't
 - [Feature Update: Enable using 1099 forms to transmit the tax data to the IRS in the United States](/dynamics365/business-central/localfunctionality/unitedstates/set-up-use-irs1099-form)
 - [Feature: Add fields from related tables in analysis mode.](/dynamics365/business-central/analysis-mode-feature-key)
 - [Feature: Enable server certificate validation for Http requests](/dynamics365/business-central/dev-itpro/developer/devenv-httpcertvalid-feature-key)
+- [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)	
 
 ### Features added and enabled by default in version 27
 
@@ -42,19 +43,16 @@ These features are no longer controlled in **Feature management**, so they can't
 - [Feature: Enable server certificate validation for HTTP requests](../developer/devenv-httpcertvalid-feature-key.md)
 - Feature: Introduce UI support for masking sensitive data.
 
-
-### Features added and disabled by default in version 27
-
-
-- [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)<!-- missing rp-->
-- [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](https://go.microsoft.com/fwlink/?linkid=2303767)
-
 ## Existing features now enabled by default
 
 - [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) 
 - [Feature Update: Enable multiple users to post job ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
 - [Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
 - [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
+
+### Other feature key changes
+
+- [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md) renamed to **Feature: Preview semantic similarity search on application metadata**.
 
 ## 2025 release wave 1 (version 26)
 
