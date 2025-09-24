@@ -23,13 +23,14 @@ Authoring guidance:
 3. Keep plain, factual tone. Avoid promises / roadmap language.
 4. Update ms.date when adding/removing/updating any feature section.
 5. Remove any unused placeholder subsections (don’t leave empty headings).
+6. The live URL for this article is https://learn.microsoft.com/dynamics365/business-central/dev-itpro/preview/preview-features - for section links, these are formatted as https://learn.microsoft.com/dynamics365/business-central/dev-itpro/preview/preview-features#add-feature-title (where add-feature-title is the title you provide, with spaces replaced by hyphens and all lowercase).
 -->
 
-## Feature 1
+## Add feature title
 
 Description of feature 1 including; what it is, who it's for, and any prerequisites or limitations. Are there any steps to enable or configure the feature, if yes, provide them here.
 
-## Feature 2
+## Add feature title 2
 
 Description of feature 2 including; what it is, who it's for, and any prerequisites or limitations. Are there any steps to enable or configure the feature, if yes, provide them here.
 
