@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article introduces early preview features in Business Central. You can spin up an early preview of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to test new features and provide feedback before they are generally available. The features in early preview aren't yet fully supported and are subject to change. Early previews can be enabled for US and UK regions only.
+This article introduces early preview features in Business Central. You can spin up an early preview of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The features in early preview aren't yet fully supported and are subject to change. Early previews can be enabled for US and UK regions only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
