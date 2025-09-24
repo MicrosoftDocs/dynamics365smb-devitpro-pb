@@ -98,7 +98,9 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ### New feature keys enabled by default
 
-- [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)<!-- missing rp-->
+- [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
+- [Feature: Enable server certificate validation for HTTP requests](../developer/devenv-httpcertvalid-feature-key.md)
+- Feature: Introduce UI support for masking sensitive data.
 
 ### New feature keys disabled by default
 
