@@ -19,13 +19,13 @@ This article explains features in the early preview version of Business Central 
 
 ## Get started
 
-1. Create an early preview sandbox environment In the Business Central admin center that has the following settings:
+1. Create an early preview sandbox environment in the Business Central admin center that has the following settings:
 
    |Setting|Value|
    |-|-|
    |Environment Type|Sandbox|
    |Country|UK or US|
-   |Version|Version that includes **(early preview)**, like 27.0.1234.5678 (early preview)|
+   |Version|Version tagged as **(early preview)**, like 27.0.1234.5678 (early preview)|
 
    Learn more in [Create a new environment in the Business Central admin center](../administration/tenant-admin-center-environments.md#create-a-new-environment).
 
