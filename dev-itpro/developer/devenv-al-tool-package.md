@@ -47,5 +47,5 @@ al help
 
 ## Related information
 
-[ALTool](devenv-altool.md)  
+[ALTool](devenv-al-tool.md)  
 [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools)
