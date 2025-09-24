@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains features in the early preview version of Business Central online available for US and UK sandbox environments. The early preview version lets you try new functionality in a clean environment without customer data, setup, or customizations. You can provide feedback and join discussions about the functionality with the Business Central development team and other users to help improve the functionality.
+This article introduces early preview features in Business Central. You can spin up an early preview of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to test new features and provide feedback before they are generally available. The features in early preview aren't yet fully supported and are subject to change. Early previews can be enabled for US and UK regions only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
