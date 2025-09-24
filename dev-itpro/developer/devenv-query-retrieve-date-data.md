@@ -1,11 +1,11 @@
 ---
-title: "Using the Date Method to Retrieve Day, Month, and Year Data"
+title: Retrieving Date Data in Queries
 ms.date: 04/01/2021
 ms.topic: concept-article
 author: jswymer
 ---
 
-# Retrieving Date Data in Queries
+# Retrieving date data in queries
 
 When you have fields in a table that contain dates, you can use a date method to retrieve only the year, month, or day instead of including the date in the resulting dataset of a query.  
   
@@ -14,9 +14,9 @@ When you have fields in a table that contain dates, you can use a date method to
 To set up a date method on a query column, set the [Method Property](properties/devenv-method-property.md) to `Day`, `Month`, and `Year`.  
   
 > [!IMPORTANT]  
->  You can only use a date method on fields that have a Date or DateTime data type. For additional information about how to use a date method on a field that has the DateTime data type, see [Working with DateTime Data Types](devenv-query-retrieve-date-data.md#DateTime).
+> You can only use a date method on fields that have a Date or DateTime data type. Learn more about using a date method on a field that has the DateTime data type in [Working with DateTime Data Types](#DateTime).
 
- For more information about how to set up query columns and properties, see [Query Object](devenv-query-object.md).  
+Learn how to set up query columns and properties in [Query Object](devenv-query-object.md).  
   
 ## Sample table and query
 
@@ -92,7 +92,8 @@ The following table displays the resulting dataset for the sample query with the
 
  The `Month` method retrieves the month from the date expression of a field value in the query column. The month is returned as an integer, in the range of 1 to 12, where 1 represents January and 12 represents December. If the month in the date expression is 0, then 1 is returned.  
   
-### Example  
+### Example - Month method
+
  The following table displays the resulting dataset for the sample query with the `Method` property of the `Order Date` column set to `Month`.  
   
 |Bill\_to\_Name|Month\_Order\_Date|Count\_|  
@@ -104,9 +105,9 @@ The following table displays the resulting dataset for the sample query with the
   
 ## Year method
 
- The `Year` method gets the year from the date expression of a field value in the query column. The year is returned as an integer. If the year in the date expression is 0, then 1900 is returned.  
+The `Year` method gets the year from the date expression of a field value in the query column. The year is returned as an integer. If the year in the date expression is 0, then 1900 is returned.  
   
-### Example
+### Example - Year method
 
  The following table displays the resulting dataset for the sample query with the `Method` property of the `Order Date` column set to `Year`  
   
@@ -128,9 +129,20 @@ The following table displays the resulting dataset for the sample query with the
  The differences in day, month, or year occur because when a date and time value is retrieved from the [!INCLUDE[prod_short](includes/prod_short.md)] database table, it is converted from the regional settings of the [!INCLUDE[prod_short](includes/prod_short.md)] solution to the UTC date and time. The day, month, or year is calculated on the SQL server, and then returned to the query dataset as an integer, which does not consider the regional settings of the [!INCLUDE[prod_short](includes/prod_short.md)] solution.  
   
  To avoid this condition, you should use the date method on fields that have a Date data type instead of a DateTime data type whenever possible. You can also return the DateTime value and implement post processing for the day, month, and year as needed.  
-  
+
+## Date methods behavior on blank Date and DataTime fields
+
+This section explains how the `Day`, `Month`, and `Year` methods handle blank (undefined) Date and DataTime fields. In Business Central, a blank date is represented internally as 0D. In SQL Server, a the blank date is 01-01-1753 (day-month-year).
+
+However, the values that date methods return for blank fields differ by product version. The following table shows the version-specific results:
+
+|Business Central version|`Day`|`Month`|`Year`|
+|---|---|---|---|
+|26 and earlier|1|1|1753|
+|27 and later|0|0|0|
+
 ## Related information  
 
-[Query Objects](devenv-query-object.md)   
-[Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
-[Method Property](properties/devenv-Method-Property.md)
+[Query objects](devenv-query-object.md)   
+[Aggregating data in query objects](devenv-query-totals-grouping.md)  
+[Method property](properties/devenv-Method-Property.md)
