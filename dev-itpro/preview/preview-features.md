@@ -17,12 +17,20 @@ Intro should mention what this is for - Early preview, spin up preview sandbox p
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
+<!--
+Authoring guidance:
+1. Add a new section for the feature, provide a title and description.
+3. Keep plain, factual tone. Avoid promises / roadmap language.
+4. Update ms.date when adding/removing/updating any feature section.
+5. Remove any unused placeholder subsections (don’t leave empty headings).
+-->
+
 ## Feature 1
 
-Description of feature 1.
+Description of feature 1 including; what it is, who it's for, and any prerequisites or limitations. Are there any steps to enable or configure the feature, if yes, provide them here.
 
 ## Feature 2
 
-Description of feature 2.
+Description of feature 2 including; what it is, who it's for, and any prerequisites or limitations. Are there any steps to enable or configure the feature, if yes, provide them here.
 
 ## Related information
