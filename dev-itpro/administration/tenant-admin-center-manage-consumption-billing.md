@@ -45,13 +45,14 @@ The following table illustrates how the Business Central scenarios performed by 
 | Analyze incoming email | Generative answer | 2 Copilot Credits |
 | Process email attachment, no sales data detected (per attachment *) | Generative answer | 2 Copilot Credits |
 | Process email attachment, sales data detected (per attachment *) | Agent action | 5 Copilot Credits |
+| Check for items availability | Agent action | 5 Copilot Credits |
 | Create or update sales quote | Agent action | 5 Copilot Credits |
 | Create or update sales order | Agent action | 5 Copilot Credits |
 | Generate response email | Generative answer | 2 Copilot Credits |
 
 ** Only attachments in supported formats are processed (for example, PDF, PNG, JPG).
   
-A typical [Sales Order Agent run](/dynamics365/business-central/sales-order-agent#agent-process-flow) comprises one generative answer to analyze the incoming email (2 Copilot Credits), one agent action to create or update a sales quote or order (5 Copilot Credits), and one generative answer to generate the response email (2 Copilot Credits).
+A typical [Sales Order Agent run](/dynamics365/business-central/sales-order-agent#agent-process-flow) comprises one generative answer to analyze the incoming email (2 Copilot Credits), one agent action to check for items availability (5 Copilot Credits), one agent action to create or update a sales quote or order (5 Copilot Credits), and one generative answer to generate the response email (2 Copilot Credits).
 
 For illustration, let’s assume that about 40% of requests also include an attachment in a supported format. In this scenario, 80% of those attachments might contain sales data that can be used for quotation - for example, a purchase order in PDF format (5 Copilot Credits), while the remaining 20% might contain no usable sales data (2 Copilot Credits).
 
@@ -59,7 +60,7 @@ Assume the average usage is 100 requests per month.
 
 The estimated monthly cost is calculated as follows:
 
-**[(2 + 5 + 2) + 0.4 × (0.8×5 + 0.2×2)] × 100 requests = 1,076 Copilot Credits/month.**
+**[(2 + 5 + 5 + 2) + 0.4 × (0.8×5 + 0.2×2)] × 100 requests = 1,576 Copilot Credits/month.**
 
 
 ### Payables Agent
