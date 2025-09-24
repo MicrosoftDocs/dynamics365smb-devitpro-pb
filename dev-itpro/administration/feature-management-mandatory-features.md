@@ -42,7 +42,7 @@ These features are no longer controlled in **Feature management**, so they can't
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
 - Feature: Introduce UI support for masking sensitive data.
 
-### Features added and disabled  by default in version 27
+### Features added and disabled by default in version 27
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650)
 
