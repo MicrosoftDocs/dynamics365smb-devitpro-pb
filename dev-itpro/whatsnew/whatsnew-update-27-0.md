@@ -85,12 +85,9 @@ This table lists new and updated features in the 27.0 public preview for sandbox
 
 ## Changes to optional features in Feature Management
 
-This section outlines changes to feature and feature updates controlled by **Feature management** in version 27.0.
+This section outlines changes to feature and feature updates controlled by **Feature management** in version 27.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
-> [!NOTE]
-> Some features in the **Feature Management** page might show an incorrect version for when the feature is automatically enabled. The 27.0 GA release fixes these discrepancies.
-
-### Feature keys now mandatory and removed
+**Feature keys now mandatory and removed**
 
 - [Feature Update: Enable multiple users to post warehouse entries at the same time](https://go.microsoft.com/fwlink/?linkid=2274007)
 - [Feature Update: Enable use of package tracking in physical inventory orders](/dynamics365/business-central/inventory-how-work-item-tracking)
@@ -99,17 +96,11 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature: Enable server certificate validation for Http requests](/dynamics365/business-central/dev-itpro/developer/devenv-httpcertvalid-feature-key)
 - [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)	
 
-### New feature keys enabled by default
+**New feature keys**
 
-- [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)<!-- missing rp-->
-
-### New feature keys disabled by default
-
-- [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650)
-
-### Other feature key changes
-
-- [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md) renamed to **Feature: Preview semantic similarity search on application metadata**.
+- [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
+- [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
+- Feature: Introduce UI support for masking sensitive data.
 
 ## Create new sandbox environment on 27.0 preview
 
