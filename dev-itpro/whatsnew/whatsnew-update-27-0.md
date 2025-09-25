@@ -13,9 +13,9 @@ ms.custom:
 
 This article provides an overview of the new and updated features and general information about update 27.0, which starts 2025 release wave 1.
 
-## Highlights
+<!--## Highlights
 
-To learn about key features in 2025 wave 2, watch the Business Central 2025 release wave 2 launch event videos on YoutTube at [aka.ms/BCLE](https://aka.ms/BCLE).
+To learn about key features in 2025 wave 2, watch the Business Central 2025 release wave 2 launch event videos on YoutTube at [aka.ms/BCLE](https://aka.ms/BCLE).-->
 
 <!-- The next section lists all features available with update 27.0.-->
 <!--summary video start-->
@@ -23,6 +23,9 @@ To learn about key features in 2025 wave 2, watch the Business Central 2025 rele
 <!--summary video end-->
 
 ## New and updated features
+
+> [!TIP]
+> **Watch the 2025 release wave 2 launch event videos** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 This table lists new and updated features in update 27.0. Learn more about all features planned for 2025 release wave 2 (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
 
@@ -166,7 +169,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Upcoming AI-powered enhancements
 
-Watch this video to learn about AI-powered features coming soon in this release wave.
+Watch this video to learn about AI-powered features and enhancments coming soon in this release wave.
 
 <!--summary video start-->
 > [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]
