@@ -13,7 +13,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article introduces early access preview environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. You can spin up an early access preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The environments in early access preview aren't yet fully supported and are subject to change. Early access preview environments can be enabled for US, UK, and DE regions only.
+This article introduces early access preview environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. You can spin up an early access preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The environments in early access preview provided as-is and are subject to change.
+
+Early access preview environments are available for US, UK, and DE countries/regions only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
