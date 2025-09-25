@@ -21,7 +21,7 @@ This article provides an overview of the new and updated features and general in
 
 ## New and updated features
 
-This table lists new and updated features in the 27.0. Learn more about all features planned for 2025 release wave 2 (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
+This table lists new and updated features in update 27.0. Learn more about all features planned for 2025 release wave 2 (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
 
 <!-- Generate table:
 
