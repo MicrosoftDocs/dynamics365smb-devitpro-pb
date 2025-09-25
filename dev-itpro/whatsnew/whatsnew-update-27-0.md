@@ -131,16 +131,16 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 27.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
-**Feature keys now mandatory and removed**
+### Feature keys now mandatory and removed
 
 - [Feature Update: Enable multiple users to post warehouse entries at the same time](https://go.microsoft.com/fwlink/?linkid=2274007)
 - [Feature Update: Enable use of package tracking in physical inventory orders](/dynamics365/business-central/inventory-how-work-item-tracking)
 - [Feature Update: Enable using 1099 forms to transmit the tax data to the IRS in the United States](/dynamics365/business-central/localfunctionality/unitedstates/set-up-use-irs1099-form)
 - [Feature: Add fields from related tables in analysis mode.](/dynamics365/business-central/analysis-mode-feature-key)
 - [Feature: Enable server certificate validation for Http requests](/dynamics365/business-central/dev-itpro/developer/devenv-httpcertvalid-feature-key)
-- [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)	
+- [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)
 
-**New feature keys**
+### New feature keys
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
@@ -148,14 +148,14 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ## Upgrade to 27.0
 
-**Online customers**
+### Online customers
 
 - New customers get Business Central version 27.0 automatically.
 - Existing customers are notified when update 27.0 is available. Admins can schedule update 27.0 to any date within the 5-month update period, which ends on February 28, 2026.
 
 Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
 
-**On-premises customers**
+### On-premises customers
 
 Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v27.md).
 
