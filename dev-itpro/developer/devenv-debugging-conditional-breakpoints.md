@@ -88,6 +88,7 @@ Break on combined criteria (parenthesized):
 
 ```al
 (SalesHeader.Status = SalesHeader.Status::Open) AND (SalesHeader."No." = '103007')
+```
 
 Break when a Boolean flag is false:
 
