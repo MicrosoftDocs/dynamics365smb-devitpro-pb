@@ -1,6 +1,6 @@
 ---
 title: What's New or Changed in Business Central 2025 Release Wave 2 - Update 27.0 preview
-description: Get an overview of new and changed capabilities in the 27.0 update of Business Central online, which is part of 2025 release wave 1.
+description: Get an overview of new and changed capabilities in the 27.0 update of Business Central online, which is part of 2025 release wave 2.
 ms.author: jswymer
 ms.date: 09/03/2025
 ms.reviewer: jswymer
@@ -20,7 +20,7 @@ To learn about key features in 2025 wave 2, watch the Business Central 2025 rele
 ## New and updated features
 
 > [!TIP]
-> **Watch the 2025 release wave 2 launch event videos** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
+> **Watch the 2025 release wave 2 launch event videos** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE). *Note: The link will be updated to the 2025RW2 BCLE videos on October 1*
 
 This table lists new and updated features in update 27.0. Learn more about all features planned for 2025 release wave 2 (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
 
@@ -145,7 +145,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
-- Feature: Introduce UI support for masking sensitive data.
+- Feature: Introduce UI support for masking sensitive data
 
 ## Upgrade to 27.0
 
@@ -164,7 +164,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### AI-powered enhancements
 
-Watch this video to learn about AI-powered features and enhancments coming soon.
+Watch this video to learn about AI-powered features and enhancements coming soon.
 
 <!--summary video start-->
 > [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]
