@@ -37,16 +37,16 @@ These features are no longer controlled in **Feature management**, so they can't
 - [Feature: Enable server certificate validation for Http requests](/dynamics365/business-central/dev-itpro/developer/devenv-httpcertvalid-feature-key)
 - [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)	
 
-### Features added and enabled by default in version 27
+### New features added and enabled by default in version 27
 
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
 - Feature: Introduce UI support for masking sensitive data.
 
-### Features added and disabled by default in version 27
+### New features added and disabled by default in version 27
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650)
 
-## Existing features now enabled by default
+### Existing features now enabled by default
 
 - [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) 
 - [Feature Update: Enable multiple users to post job ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
