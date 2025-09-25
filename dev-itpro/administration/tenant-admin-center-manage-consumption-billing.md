@@ -54,45 +54,16 @@ The following table illustrates how the Business Central scenarios performed by 
   
 A typical [Sales Order Agent run](/dynamics365/business-central/sales-order-agent#agent-process-flow) comprises one generative answer to analyze the incoming email (2 Copilot Credits), one agent action to check for items availability (5 Copilot Credits), one agent action to create or update a sales quote or order (5 Copilot Credits), and one generative answer to generate the response email (2 Copilot Credits).
 
-For illustration, let’s assume that about 40% of requests also include an attachment in a supported format. In this scenario, 80% of those attachments might contain sales data that can be used for quotation - for example, a purchase order in PDF format (5 Copilot Credits), while the remaining 20% might contain no usable sales data (2 Copilot Credits).
+For illustration, let’s assume that about 50% of emails also include an attachment which contains sales data that can be used for quotation - for example, a purchase order in PDF format (5 Copilot Credits).
 
 Assume the average usage is 100 requests per month.
 
 The estimated monthly cost is calculated as follows:
 
-**[(2 + 5 + 5 + 2) + 0.4 × (0.8×5 + 0.2×2)] × 100 requests = 1,576 Copilot Credits/month.**
+**[(2 + 5 + 5 + 2) + 0.5 × 5)] × 100 requests = 1,650 Copilot Credits/month.**
 
 ### Payables Agent
-You have a Payables Agent connected to a shared mailbox that processes vendor invoices (e-documents). Billing events for the Payables agent are being defined. 
-The following table illustrates how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
-
-| Feature | Copilot Studio Event Scenario | Copilot Credits |
-|----------|----------|----------|
-| Create incoming E-Document (per attachment) | Agent Action | 5 Copilot Credits |
-| Analyze incoming E-Document | Generative answer | 2 Copilot Credits |
-| Extract invoice data from E-Document | Agent Action | 5 Copilot Credits |
-| Create purchase document draft | Agent Action | 5 Copilot Credits |
-| Match or create vendor | Agent Action | 5 Copilot Credits |
-| Process invoice line (per line) | Agent Action | 5 Copilot Credits |
-| Create purchase invoice | Agent Action | 5 Copilot Credits |
-
-For illustration, let’s assume that an average [Payables Agent run](/dynamics365/business-central/payables-agent#payables-agent-process-floww) is for an invoice with five lines.
-
-Such run comprises one agent action to create the incoming e-document from the attachment (5 Copilot Credits), one generative answer to analyze the e-document (2 Copilot Credits), one agent action to extract invoice data (5 Copilot Credits), one agent action to create a purchase document draft (5 Copilot Credits), one agent action to match or create the vendor (5 Copilot Credits), five agent actions to process five invoice lines (5 Copilot Credits each), and one agent action to create the purchase invoice (5 Copilot Credits). 
-
-Assuming the average workload is 100 e-documents per month, and every request has one attachment, the estimated cost per month is based on the following calculation:
-
-**[(5 + 2 + 5 + 5 + 5 + (5×5) + 5)] × 100 requests = 5,200 Copilot Credits/month**
-
-The cost per run therefore depends on the number of invoice lines in each e-document, as shown in the examples below:
-| Lines per E-Document| Copilot Credits | 
-|----------|----------|
-| 1 | 32 Copilot Credits |
-| 5 | 52 Copilot Credits |
-| 10 | 77 Copilot Credits |
-| 25 | 152 Copilot Credits |
-| 50 | 277 Copilot Credits |
-
+Billing events for the Payables agent are being defined. 
 
 ## Set up billing model
 
