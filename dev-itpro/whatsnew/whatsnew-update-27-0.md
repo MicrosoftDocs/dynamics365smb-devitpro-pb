@@ -17,11 +17,6 @@ This article provides an overview of the new and updated features and general in
 
 To learn about key features in 2025 wave 2, watch the Business Central 2025 release wave 2 launch event videos on YoutTube at [aka.ms/BCLE](https://aka.ms/BCLE).-->
 
-<!-- The next section lists all features available with update 27.0.-->
-<!--summary video start-->
-<!-- > [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]-->
-<!--summary video end-->
-
 ## New and updated features
 
 > [!TIP]
@@ -167,9 +162,9 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### Upcoming AI-powered enhancements
+### AI-powered enhancements
 
-Watch this video to learn about AI-powered features and enhancments coming soon in this release wave.
+Watch this video to learn about AI-powered features and enhancments coming soon.
 
 <!--summary video start-->
 > [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]
