@@ -16,22 +16,22 @@ As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpo
 
 ## Simple data types supported
 
-    - BigInteger
-    - Boolean
-    - Code
-    - Decimal
-    - Integer
-    - Option
-    - Enum
-    - Text
+- BigInteger
+- Boolean
+- Code
+- Decimal
+- Integer
+- Option
+- Enum
+- Text
 
 ## Complex data types supported
 
-    - Array
-    - List
-    - Dictionary
-    - Record/RecordRef fields
-    - Variant (when it wraps one of the above)
+- Array
+- List
+- Dictionary
+- Record/RecordRef fields
+- Variant (when it wraps one of the above)
 
 ## Operators supported
 
@@ -47,7 +47,8 @@ As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpo
 |`+  -  *  /  DIV  MOD`| Binary arithmetic on numeric types (where meaningful)|
 |`AND` `OR`| Logical (use parentheses to control precedence)|
 
-Parenthesize complex expressions explicitly; AL operator precedence rules apply.
+> [!NOTE]
+> Parenthesize complex expressions explicitly; AL operator precedence rules apply.
 
 ## To set a conditional breakpoint
 
