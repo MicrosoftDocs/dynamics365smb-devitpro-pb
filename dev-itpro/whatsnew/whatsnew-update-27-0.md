@@ -106,14 +106,14 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ## Upgrade to 27.0
 
-### Online customers
+**Online customers**
 
 - New customers get Business Central version 27.0 automatically.
 - Existing customers are notified when update 27.0 is available. Admins can schedule update 27.0 to any date within the 5-month update period, which ends on February 28, 2026.
 
 Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
 
-### On-premises customers
+**On-premises customers**
 
 Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v27.md).
 
@@ -121,7 +121,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Business Central Launch Event
 
-The Business Central Launch Event for the Business Central 2025 release wave 2 is on October 1, 2025. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
+The Business Central Launch Event for the Business Central 2025 release wave 2 is on October 2, 2025. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Discover all partner related resources
 
