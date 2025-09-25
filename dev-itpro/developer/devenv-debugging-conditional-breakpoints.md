@@ -3,7 +3,7 @@ title: Setting conditional breakpoints
 description: Overview of setting conditional breakpoints in AL.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 08/21/2025
+ms.date: 09/25/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.collection: get-started
@@ -25,7 +25,7 @@ As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpo
 - Enum
 - Text
 
-## Complex data types supported
+## Complex data types supported (version 26 and later)
 
 - Array
 - List
@@ -43,9 +43,9 @@ As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpo
 |`>`| Greater than|
 |`<=`| Less than or equal to|
 |`=>`| Greater than or equal to|
-|`-`| Numeric negation|
-|`+  -  *  /  DIV  MOD`| Binary arithmetic on numeric types (where meaningful)|
-|`AND` `OR`| Logical (use parentheses to control precedence)|
+|`-`| Numeric negation (version 26 and later) |
+|`NOT`| Logical negation (version 26 and later) |
+|`AND` `OR`| Logical (use parentheses to control precedence) (version 26 and later)|
 
 > [!NOTE]
 > Parenthesize complex expressions explicitly; AL operator precedence rules apply.
