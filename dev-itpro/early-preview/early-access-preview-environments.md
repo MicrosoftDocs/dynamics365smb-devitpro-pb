@@ -15,7 +15,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 This article introduces early access preview environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. You can spin up an early access preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The environments in early access preview provided as-is and are subject to change.
 
-Early access preview environments are available for US, UK, and DE countries/regions only.
+Early access preview environments are available for US, GB, and DE countries only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
