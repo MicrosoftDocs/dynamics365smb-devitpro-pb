@@ -13,10 +13,13 @@ ms.custom:
 
 This article provides an overview of the new and updated features and general information about update 27.0, which starts 2025 release wave 1.
 
-## Highlights in 2025 release wave 2
+## Highlights
 
+To learn about key features in 2025 wave 2, watch the Business Central 2025 release wave 2 launch event videos on YoutTube at [aka.ms/BCLE](https://aka.ms/BCLE).
+
+<!-- The next section lists all features available with update 27.0.-->
 <!--summary video start-->
-> [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]
+<!-- > [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]-->
 <!--summary video end-->
 
 ## New and updated features
@@ -161,9 +164,13 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### Business Central Launch Event
+### Upcoming AI-powered enhancements
 
-The Business Central Launch Event for the Business Central 2025 release wave 2 is on October 2, 2025. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
+Watch this video to learn about AI-powered features coming soon in this release wave.
+
+<!--summary video start-->
+> [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]
+<!--summary video end-->
 
 ### Discover all partner related resources
 
