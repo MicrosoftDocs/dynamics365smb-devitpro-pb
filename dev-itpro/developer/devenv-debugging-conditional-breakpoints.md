@@ -30,8 +30,8 @@ As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpo
     - Array
     - List
     - Dictionary
-    - Record / RecordRef fields
-    - Variant (when it currently wraps one of the above)
+    - Record/RecordRef fields
+    - Variant (when it wraps one of the above)
 
 ## Operators supported
 
