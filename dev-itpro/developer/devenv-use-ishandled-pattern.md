@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Using the IsHandled pattern for events
 
-`IsHandled` is a widely used event pattern in the code bast. It's very popular for overriding the code. However, the pattern has significant drawbacks that might not be obvious to developers. We recommend that you limit the use of the pattern to a bare minimum, and only use it in cases where it's absolutely necessary. For example, when a better pattern isn't available.
+`IsHandled` is a widely used event pattern in the code base. It's very popular for overriding the code. However, the pattern has significant drawbacks that might not be obvious to developers. We recommend that you limit the use of the pattern to a bare minimum, and only use it in cases where it's absolutely necessary. For example, when a better pattern isn't available.
 
 ## What is the IsHandled pattern?
 
@@ -25,13 +25,13 @@ if not IsHandled then
 
 Today, we mostly use `exit` instead of the error, which increases the number of possible code paths.
 
-According to the pattern's definition, only one subscriber can handle the event. All other subscribers must exit if the event is handles, so the subscriber code should start by checking whether the event was already handled.
+According to the pattern's definition, only one subscriber can handle the event. All other subscribers must exit if the event is handled, so the subscriber code should start by checking whether the event was already handled.
 
 ```AL
 [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'OnFoo', '', false, false)]
 local procedure HandleFooOperation(var IsHandled: Boolean)
 begin
-    if not IsHandled then
+    if IsHandled then
         exit;
 
     DoFoo();
