@@ -1,6 +1,6 @@
 ---
-title: Early preview features in Business Central
-description: Learn about the early preview features available in Business Central.  
+title: Early access preview environments in Business Central
+description: Learn about the early access preview environments that you can access to test features available in Business Central.  
 ms.date: 09/24/2025
 author: jswymer
 ms.author: solsen
@@ -9,11 +9,11 @@ ms.topic: whats-new
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# Early preview features in Business Central
+# Early access preview environments in Business Central
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article introduces early preview features in Business Central. You can spin up an early preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The features in early preview aren't yet fully supported and are subject to change. Early previews can be enabled for US and UK regions only.
+This article introduces early access preview environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. You can spin up an early access preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The environments in early access preview aren't yet fully supported and are subject to change. Early access preview environments can be enabled for US, UK, and DE regions only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
