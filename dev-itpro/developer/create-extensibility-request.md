@@ -35,6 +35,9 @@ Each request should at least contain the following information:
 * A description of why the change is needed. What's the benefit?
 * A description of the request
 
+> [!NOTE]
+> * Events with `IsHandled` pattern requires extended set of information you need to provide - [IsHandled event requirements](#ishandled-event-requirements).
+
 ## Write a clear title
 
 If your request requires changes in just one object, the title should contain information about the specific object to change. For example, **[Country Code] [Object Type] [Object Id] [Object Name]**. Also, add a description of the change, or a descriptive title with the `MultiObjects` tag.
@@ -84,6 +87,13 @@ local procedure event_signature(needed_parameters)
 begin
 end;
 ```
+
+### IsHandled event requirements
+
+`IsHandled` is a widely used event pattern in the code base. It's very popular for overriding the code. However, the pattern has significant drawbacks that might not be obvious to developers. We recommend that you limit the use of the pattern to a bare minimum, and only use it in cases where it's absolutely necessary.  
+Before you submit a request for a new event that uses the IsHandled pattern, review the guidance in [Using the IsHandled pattern](devenv-use-ishandled-pattern.md).  
+If you must use the `IsHandled` pattern, you should document your reason. To learn more, go to [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md).
+
 
 ### Design guidelines
 
