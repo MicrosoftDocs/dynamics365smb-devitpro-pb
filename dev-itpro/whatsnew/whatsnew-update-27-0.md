@@ -11,17 +11,19 @@ ms.custom:
 ---
 # Update 27.0 for Business Central 2025 release wave 2 (online preview)
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+This article provides an overview of the new and updated features and general information about update 27.0, which starts 2025 release wave 1.
 
-This article provides an overview of new and updated features in update 27.0 preview, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
+## Highlights
 
-More features and information about on-premises deployments will be added to this article when version 27.0 is generally available in October 2025. Learn more about all features planned for 2025 release wave (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
+<!--summary video start-->
+> [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]
+<!--summary video end-->
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 
 ## New and updated features
 
-This table lists new and updated features in the 27.0 public preview for sandboxes.
+This table lists new and updated features in the 27.0. Learn more about all features planned for 2025 release wave 2 (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
 
 | Product area | Feature |
 |--------------|--------------|
@@ -102,20 +104,18 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
 - Feature: Introduce UI support for masking sensitive data.
 
-## Create new sandbox environment on 27.0 preview
+## Upgrade to 27.0
 
-Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, follow the instructions in [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment). Set the environment type to **Sandbox** and the version to **27.0 preview**.
+### Online customers
 
-## Update existing sandbox environment to 27.0 preview
+- New customers get Business Central version 27.0 automatically.
+- Existng customers are notified when update 27.0 is available and scheduled. Admins can reschedule update 27.0 to any date within the 5-month update period, which ends on February 28, 2026.
 
-> [!NOTE]
-> Updating a sandbox environment is a new capability introduced in the service.
+### On-premises customers
 
-Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that might contain your own data, setup, and customizations by testing with your extensions installed. To update an existing sandbox, follow the instructions in [Schedule an update for an environment](../administration/tenant-admin-center-update-management.md#schedule). Set the version to **27.0 preview**.
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
 
-## Give feedback
-
-You're invited to share your feedback about the preview&mdash;including bugs, suggestions, or usability concerns&mdash;with the Business Central team at [Business Central Preview Feedback](https://aka.ms/bcpreviewbug).
+Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
 
 ## Good to know
 
