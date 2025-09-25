@@ -115,7 +115,7 @@ Learn more in [Major updates for Business Central online](../administration/upda
 
 ### On-premises customers
 
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v27.md).
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v27.md).
 
 ## Good to know
 
