@@ -13,7 +13,7 @@ ms.custom:
 
 This article provides an overview of the new and updated features and general information about update 27.0, which starts 2025 release wave 1.
 
-## Highlights
+## Highlights in 2025 release wave 2
 
 <!--summary video start-->
 > [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]
