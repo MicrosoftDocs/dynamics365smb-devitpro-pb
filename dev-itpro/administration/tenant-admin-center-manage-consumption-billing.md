@@ -44,22 +44,22 @@ The Sales Order Agent connects to a shared mailbox that processes customer reque
   
 A typical [Sales Order Agent process flow](/dynamics365/business-central/sales-order-agent#agent-process-flow) includes:
 
-- 1 generative answer to analyze the incoming email (2 credits)
-- 1 agent action to check for items availability (5 credits)
-- 1 agent action to create or update a sales quote or order (5 credits)
-- 1 generative answer to generate the response email (2 credits)
+- One generative answer to analyze the incoming email (2 credits)
+- One agent action to check for items availability (5 credits)
+- One agent action to create or update a sales quote or order (5 credits)
+- One generative answer to generate the response email (2 credits)
 
 #### Example
 
 Assume you get an average of 100 requests per month and 50% include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such attachment triggers the 5‑credit agent action. A typical request consumes:
 
 - Analyze incoming email: 2 credits
-- Process attachment with sales data: 5 × 0.5 = 2.5 credits on average per request (since 50% of requests have an attachment)
+- Process attachment with sales data: 5 credits (only on 50% of total requests)
 - Check item availability: 5 credits
 - Create or update sales quote/order: 5 credits
 - Generate response email: 2 credits
 
-The calculated monthly total is: `(2 + 2.5 + 5 + 5 + 2) x 100 = 1,650 Copilot credits/month`
+The calculated monthly total is: `2 + (5 × 0.5) + 5 + 5 + 2 = 1,650 Copilot credits/month`
 
 ### Payables Agent billing
 
