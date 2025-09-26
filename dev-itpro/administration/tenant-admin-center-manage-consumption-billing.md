@@ -26,7 +26,7 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use the *Generative answer* and *Agent action* [event scenarios](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) to bill for consumption as they complete their tasks.
 
-### Sales Order Agent billing events
+### Sales Order Agent billing
 
 The Sales Order Agent connects to a shared mailbox that processes customer requests for sales quotes and orders. The following table shows how the Business Central scenarios performed by the Sales Order agent are mapped to Copilot Studio events.
 
@@ -44,28 +44,24 @@ The Sales Order Agent connects to a shared mailbox that processes customer reque
   
 A typical [Sales Order Agent process flow](/dynamics365/business-central/sales-order-agent#agent-process-flow) includes:
 
-- One generative answer to analyze the incoming email (2 credits)
-- One agent action to check for items availability (5 credits)
-- One agent action to create or update a sales quote or order (5 credits)
-- One generative answer to generate the response email (2 credits)
+- 1 generative answer to analyze the incoming email (2 credits)
+- 1 agent action to check for items availability (5 credits)
+- 1 agent action to create or update a sales quote or order (5 credits)
+- 1 generative answer to generate the response email (2 credits)
 
 #### Example
 
-Assume you get an average of 100 requests per month and 50% of them include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such attachment triggers the 5‑credit agent action. A typical request consumes:
+Assume you get an average of 100 requests per month and 50% include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such attachment triggers the 5‑credit agent action. A typical request consumes:
 
 - Analyze incoming email: 2 credits
-- Process attachment only when sales data is detected: on average 0.5 × 5 = 2.5 credits per request (because 50% of requests have such an attachment)
+- Process attachment with sales data: 5 × 0.5 = 2.5 credits on average per request (since 50% of requests have an attachment)
 - Check item availability: 5 credits
 - Create or update sales quote/order: 5 credits
 - Generate response email: 2 credits
 
-Average credits per request:
-`(2 + 2.5 + 5 + 5 + 2) = 16.5 credits`
+The calculated monthly total is: `(2 + 2.5 + 5 + 5 + 2) x 100 = 1,650 Copilot credits/month`
 
-Monthly total for 100 requests:
-`16.5 × 100 = 1,650 Copilot credits/month`
-
-### Payables Agent
+### Payables Agent billing
 
 Billing events for the Payables agent will be announced in a future update.
 
@@ -80,13 +76,15 @@ Billing events for the Payables agent will be announced in a future update.
 
 ### Set up prepaid capacity
 
-Purchase a Copilot credit pack subscription using the Microsoft 365 admin center (customer) or Partner Center (reseller) to enable prepaid Copilot credit capacity on your tenant. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
+To enable prepaid Copilot credit capacity on your tenant, purchase a Copilot credit pack subscription. Customers purchase Copilot credit packs through the Microsoft 365 admin center, while resellers purchase them through Partner Center. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume from the Copilot credit capacity available in your tenant without any extra setup. This consumption is reported against the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, administrators can [allocate a portion of the prepaid capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity) to the default environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments.
+[!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume from the Copilot credit capacity available in your tenant without any extra setup. The consumption is reported to the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant.
 
-To allocate a portion of prepaid capacity to a specific [!INCLUDE [prod_short](../includes/prod_short.md)] environment, for example to limit consumption on Sandbox environments or to ensure sufficient capacity on Production environments, complete these tasks:
+As an admin, you can allocate a portion of the prepaid capacity to the default Power Platform environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments.
 
-1. Assign part or all of the Copilot Studio message pack to the Power Platform environment as prepaid capacity through the Power Platform admin center (for customers or resellers).
+If you have more than one Power Platform environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, you can have a Power Platform environment with limited capacity for use by Business Central sandboxes, ensuring there's sufficient capacity on production environments. To allocate capacity for a specific Business Central environment, complete these tasks:
+
+1. Assign part or all of the Copilot credit pack to the Power Platform environment as prepaid capacity through the Power Platform admin center (for customers or resellers).
 
    Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity?tabs=new#manage-capacity).
 
