@@ -54,7 +54,7 @@ A typical [Sales Order Agent process flow](/dynamics365/business-central/sales-o
 Assume you get an average of 100 requests per month and 50% include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such attachment triggers the 5‑credit agent action. A typical request consumes:
 
 - Analyze incoming email: 2 credits
-- Process attachment with sales data: 5 credits (only on 50% of total requests)
+- Process attachment with sales data: 5 credits (only on 50% of requests)
 - Check item availability: 5 credits
 - Create or update sales quote/order: 5 credits
 - Generate response email: 2 credits
@@ -130,9 +130,6 @@ Business Central regularly checks the available capacity (quota) of Copilot cred
 
 > [!IMPORTANT]
 > When the quota is depleted, the AI capability is unavailable until more capacity is added.
-
-
-
 
 ## Related information
 
