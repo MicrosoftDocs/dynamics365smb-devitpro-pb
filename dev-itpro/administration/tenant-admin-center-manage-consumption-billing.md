@@ -78,15 +78,15 @@ Billing events for the Payables agent are being defined.
 
 Purchase a Copilot Credit pack subscription using the Microsoft 365 admin center (customer) or Partner Center (reseller) to enable prepaid Copilot Credit capacity on your tenant. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] environments will automatically consume from Copilot Credit capacity available in your tenant without any additional setup. This consumption is reported against the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, administrators can [allocate a portion of the prepaid capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity) to the default environment to reserve it for consumption by [!INCLUDE [prod_short](../includes/prod_short.md)].
+[!INCLUDE [prod_short](../includes/prod_short.md)] environments will automatically consume from Copilot Credit capacity available in your tenant without any additional setup. This consumption is reported against the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, administrators can [allocate a portion of the prepaid capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity) to the default environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments.
 
 To allocate a portion of prepaid capacity to a specific [!INCLUDE [prod_short](../includes/prod_short.md)] environment, for example to limit consumption on Sandbox environments or to ensure sufficient capacity on Production environments, complete these tasks:
 
-1. Assign part or all of the Copilot Studio message pack as prepaid capacity to the Power Platform environment through the Power Platform admin center (for customers or resellers)
+1. Assign part or all of the Copilot Studio message pack as prepaid capacity to the Power Platform environment through the Power Platform admin center (for customers or resellers). 
 
    Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity?tabs=new#manage-capacity).
 
-1. Link the [!INCLUDE [prod_short](../includes/prod_short.md)] environment to the Power Platform environment. This operation can only be completed by internal administrators.
+2. Link the [!INCLUDE [prod_short](../includes/prod_short.md)] environment to the Power Platform environment. This operation can only be completed by internal administrators.
 
    Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
 
