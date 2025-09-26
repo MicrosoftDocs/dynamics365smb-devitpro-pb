@@ -63,7 +63,6 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Troubleshoot the Shopify Connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/troubleshoot-shopify-connector)| GA|
 | | [Use the latest update for the Shopify Connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-latest-update-shopify-connector)| GA|
 | Copilot and agents| [Autofill contact details with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/get-better-field-suggestions-using-autofill-copilot)| PP|
-| | [Connect AI agents to Business Central through MCP server](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server)| PP|
 | | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)| GA|
 | | [Give more instructions for the agent when you review its tasks](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/give-more-instructions-agent-when-review-its-tasks)| PP|
 | | [Summarize with Copilot enhancements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/summarize-copilot-enhancements)| PP|
