@@ -59,7 +59,7 @@ Assume you get an average of 100 requests per month and 50% include an attachmen
 - Create or update sales quote/order: 5 credits
 - Generate response email: 2 credits
 
-The calculated monthly total is: `2 + (5 × 0.5) + 5 + 5 + 2 = 1,650 Copilot credits/month`
+The calculated monthly total is: `[2 + (5 × 0.5) + 5 + 5 + 2] x 100 = 1,650 Copilot credits/month`
 
 ### Payables Agent billing
 
