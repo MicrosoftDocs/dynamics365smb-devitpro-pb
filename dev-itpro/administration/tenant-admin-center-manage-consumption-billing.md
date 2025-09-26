@@ -80,6 +80,8 @@ To enable prepaid Copilot credit capacity on your tenant, purchase a Copilot cre
 
 [!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume from the Copilot credit capacity available in your tenant without any extra setup. The consumption is reported to the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant.
 
+#### Allocate prepaid capacity to specific Business Central environments
+
 As an admin, you can allocate a portion of the prepaid capacity to the default Power Platform environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments.
 
 If you have more than one Power Platform environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, you can have a Power Platform environment with limited capacity for use by Business Central sandboxes, ensuring there's sufficient capacity on production environments. To allocate capacity for a specific Business Central environment, complete these tasks:
