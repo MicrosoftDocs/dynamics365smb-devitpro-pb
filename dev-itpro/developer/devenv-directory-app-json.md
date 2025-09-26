@@ -2,7 +2,7 @@
 title: Directory.app.props.json file
 description: Description of the JSON file for setting project metadata in AL extensions for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 09/17/2025
+ms.date: 09/26/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ The `directory.app.props.json` file defines reusable variables and properties fo
 - Safe version bumping, you only edit `minor` or `build`, not the whole string.  
 - Generally reduces copy/paste errors in URLs.
 
-The `directory.app.props.json` file is typically located in the root folder of the AL project, and must be created manually. When the file is found by the compiler, it's used to set the defined properties for the app. If a property is defined both in the `directory.app.props.json` file and in the `app.json` file, the value from the `app.json` file takes precedence. For example, if `publisher`, `help`, or `url` is also present in `app.json`, the `app.json` value overrides the value defined here.
+The `directory.app.props.json` file is typically located in the root folder of the AL project, and must be created manually. Whether you have one or multiple projects, the `directory.app.props.json` file can help you set variables like revision or build from the environment, and make versioned builds without creating a commit with the variables. When the file is found by the compiler, it's used to set the defined properties for the app. If a property is defined both in the `directory.app.props.json` file and in the `app.json` file, the value from the `app.json` file takes precedence. For example, if `publisher`, `help`, or `url` is also present in `app.json`, the `app.json` value overrides the value defined here.
 
 ## Create the directory.app.props.json file
 
