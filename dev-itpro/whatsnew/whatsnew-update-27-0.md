@@ -13,9 +13,9 @@ ms.custom:
 
 This article provides an overview of the new and updated features and general information about update 27.0, which starts 2025 release wave 1.
 
-<!--## Highlights
+## Highlights
 
-To learn about key features in 2025 wave 2, watch the Business Central 2025 release wave 2 launch event videos on YoutTube at [aka.ms/BCLE](https://aka.ms/BCLE).-->
+- 
 
 ## New and updated features
 
@@ -69,7 +69,6 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Understand how each Copilot and agent capability is billed](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/understand-how-each-copilot-agent-capability-billed)| PP|
 | | [Use enhanced analysis assist with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-analysis-assist-copilot)| GA|
 | | [Use enhanced chat with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-chat-copilot)| PP|
-| | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process)| GA|
 | Country and regional| [Alternative posting groups for employees in Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/alternative-posting-groups-employees-czechia)| GA|
 | | [Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia)| GA|
 | | [Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia)| GA|
