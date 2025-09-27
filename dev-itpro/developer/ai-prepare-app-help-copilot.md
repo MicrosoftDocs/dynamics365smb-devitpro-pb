@@ -43,9 +43,9 @@ The best way to verify that Copilot can reach your help content and is able to r
 > [!TIP]
 > You can also test the AI-readiness of your online content by using Microsoft Copilot Studio’s feature Generative Answers. This uses similar technology to Copilot in [!INCLUDE [prod_short](includes/prod_short.md)], but isn't identical and might not produce the same results or reveal issues with Copilot connecting to your online content. 
 
-## Make help content reachable by Copilot 
+## Make help content reachable by Copilot
 
-Copilot doesn’t do a broad web search to find your online content. Instead, it relies on hints from your app for where to find your documentation, relying specifically on the `app.json` manifest file. The following table highlights requirements that might affect whether Copilot can reach your online content. 
+Copilot doesn’t do a broad web search to find your online content. Instead, it relies on hints from your app for where to find your documentation, relying specifically on the `app.json` manifest file. The following table highlights requirements that might affect whether Copilot can reach your online content.
 
 | Criteria | Detail | Examples |
 |----------|--------|----------|
