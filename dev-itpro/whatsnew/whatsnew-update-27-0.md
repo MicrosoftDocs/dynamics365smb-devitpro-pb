@@ -20,7 +20,7 @@ This article provides an overview of the new and updated features and general in
 ## New and updated features
 
 > [!TIP]
-> **Watch the 2025 release wave 2 launch event videos** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE). *Note: The link will be updated to the 2025RW2 BCLE videos on October 1*
+> **Watch the 2025 release wave 2 launch videos** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE). *Note: The link will be updated to the 2025RW2 BCLE videos on October 1*
 
 This table lists new and updated features in update 27.0. Learn more about all features planned for 2025 release wave 2 (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
 
