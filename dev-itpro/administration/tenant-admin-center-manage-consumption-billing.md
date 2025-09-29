@@ -59,7 +59,7 @@ Assume you get an average of 100 requests per month and 50% include an attachmen
 - Create or update sales quote/order: 5 credits
 - Generate response email: 2 credits
 
-The calculated monthly total is: `[2 + (5 × 0.5) + 5 + 5 + 2] x 100 = 1,650 Copilot credits/month`
+The calculated monthly total is: `[2 + (5 × 0.5) + 5 + 5 + 2] x 100 = 1,650 Copilot Credits/month`
 
 ### Payables Agent billing
 
@@ -67,18 +67,18 @@ Billing events for the Payables agent will be announced in a future update.
 
 ## Set up billing model
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: prepaid capacity and pay-as-you-go. The prepaid capacity model uses Copilot credit pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance. The pay-as-you-go model charges for the actual number of messages consumed by agents during the month. Learn more in [Copilot licensing](/microsoft-copilot-studio/billing-licensing).
+[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: prepaid capacity and pay-as-you-go. The prepaid capacity model uses Copilot Credit pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance. The pay-as-you-go model charges for the actual number of messages consumed by agents during the month. Learn more in [Copilot licensing](/microsoft-copilot-studio/billing-licensing).
 
 > [!NOTE]
 >
 > - Both billing models can be used in the [!INCLUDE [prod_short](../includes/prod_short.md)] environment. When available, prepaid capacity is consumed first.
-> - Copilot credit capacity on the tenant is consumed by [!INCLUDE [prod_short](../includes/prod_short.md)] environments and other Microsoft services on the tenant.
+> - Copilot Credit capacity on the tenant is consumed by [!INCLUDE [prod_short](../includes/prod_short.md)] environments and other Microsoft services on the tenant.
 
 ### Set up prepaid capacity
 
-To enable prepaid Copilot credit capacity on your tenant, purchase a Copilot credit pack subscription. Customers purchase Copilot credit packs through the Microsoft 365 admin center, while resellers purchase them through Partner Center. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
+To enable prepaid Copilot Credit capacity on your tenant, purchase a Copilot Credit pack subscription. Customers purchase Copilot Credit packs through the Microsoft 365 admin center, while resellers purchase them through Partner Center. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume from the Copilot credit capacity available in your tenant without any extra setup. The consumption is reported to the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant.
+[!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume from the Copilot Credit capacity available in your tenant without any extra setup. The consumption is reported to the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant.
 
 #### Allocate prepaid capacity to specific Business Central environments
 
@@ -86,7 +86,7 @@ As an admin, you can allocate a portion of the prepaid capacity to the default P
 
 If you have more than one Power Platform environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, you can have a Power Platform environment with limited capacity for use by Business Central sandboxes, ensuring there's sufficient capacity on production environments. To allocate capacity for a specific Business Central environment, complete these tasks:
 
-1. Assign part or all of the Copilot credit pack to the Power Platform environment as prepaid capacity through the Power Platform admin center (for customers or resellers).
+1. Assign part or all of the Copilot Credit pack to the Power Platform environment as prepaid capacity through the Power Platform admin center (for customers or resellers).
 
    Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity?tabs=new#manage-capacity).
 
@@ -97,7 +97,7 @@ If you have more than one Power Platform environment, you can allocate portions 
 Once completed, consumption of the Copilot credits in the [!INCLUDE [prod_short](../includes/prod_short.md)] environment is limited by the capacity allocated to the linked Power Platform environment.
 
 > [!NOTE]
-> Other Microsoft services running in the linked Power Platform environment might also consume from the environment's allocated Copilot credit capacity. It isn't possible to allocate capacity to specific Microsoft services or features.
+> Other Microsoft services running in the linked Power Platform environment might also consume from the environment's allocated Copilot Credit capacity. It isn't possible to allocate capacity to specific Microsoft services or features.
 
 ### Set up pay-as-you-go
 
@@ -118,7 +118,7 @@ Watch this YouTube video for summary of how to manage pay-as-you-go billing:
 
 ## Manage capacity and usage
 
-You can view Copilot credit capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Copilot credits and capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
+You can view Copilot Credit capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Copilot credits and capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
 
 Business Central regularly checks the available capacity (quota) of Copilot credits. If your organization's quota is low or depleted, users receive in-app notifications about the status and necessary actions. It's important to take timely action on these notifications by reallocating existing capacity or purchasing more capacity.
 
