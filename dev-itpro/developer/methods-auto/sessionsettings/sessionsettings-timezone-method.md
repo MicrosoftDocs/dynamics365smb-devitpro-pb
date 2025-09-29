@@ -42,7 +42,7 @@ The time zone set in the SessionSettings object.
 
 ## Remarks
 
-The default time zone is **UTC**. This method can also be used with web service sessions.
+The default time zone is **UTC**. This method can't be used in web service sessions.
 
 ## Example
 
