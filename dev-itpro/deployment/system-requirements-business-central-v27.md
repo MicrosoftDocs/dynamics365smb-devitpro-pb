@@ -120,7 +120,7 @@ Windows 11 Pro, or Education: 24 months from release date
 
 The following table shows the minimum system requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components.  
 
-<!-- Compat level 150 (SQL Server 2019) has Mainstream End Date on Feb 28, 2025 (so we removed this compat level for 2025w1) -->
+<!-- SQL Server 2022 (and compat level 160) is out of mainstream support on Jan 11, 2028. -->
 
 |Specification|Requirement|  
 |----|-----|  
