@@ -78,7 +78,7 @@ Billing events for the Payables agent will be announced in a future update.
 
 To enable prepaid Copilot Credit capacity on your tenant, purchase a Copilot Credit pack subscription. Customers purchase Copilot Credit packs through the Microsoft 365 admin center, while resellers purchase them through Partner Center. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume from the Copilot Credit capacity available in your tenant without any extra setup. The consumption is reported to the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant.
+[!INCLUDE [prod_short](../includes/prod_short.md)] environments can automatically consume from the Copilot Credit capacity available in your tenant without any extra setup. The Copilot Credit consumption is taken from the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant.
 
 #### Allocate prepaid capacity to specific Business Central environments
 
