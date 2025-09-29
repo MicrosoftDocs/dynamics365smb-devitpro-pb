@@ -82,7 +82,7 @@ Without any extra setup, [!INCLUDE [prod_short](../includes/prod_short.md)] envi
 
 #### Allocate prepaid capacity to specific Business Central environments
 
-If your tenant has more Power Platform environments than just the default environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, assign limited capacity to a Power Platform environment used for [!INCLUDE [prod_short](../includes/prod_short.md)] sandbox environments, and reserve larger capacity for the Power Platform environment used for production environments.
+If your tenant has more Power Platform environments than just the default environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, you could assign limited capacity to a Power Platform environment used for [!INCLUDE [prod_short](../includes/prod_short.md)] sandbox environments, and reserve larger capacity for the Power Platform environment used for production environments.
 
 To allocate capacity for a specific Business Central environment, complete these tasks:
 
