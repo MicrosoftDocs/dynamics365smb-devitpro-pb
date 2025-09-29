@@ -33,8 +33,8 @@ The Sales Order Agent connects to a shared mailbox that processes customer reque
 | Feature | Copilot Studio event scenario | Copilot Credits |
 |----------|----------|----------|
 | Analyze incoming email | Generative answer | 2 |
-| Process email attachment, no sales data detected (per attachment *) | Generative answer | 2 |
-| Process email attachment, sales data detected (per attachment *) | Agent action | 5|
+| Process email attachment, no sales data detected (per attachment*) | Generative answer | 2 |
+| Process email attachment, sales data detected (per attachment*) | Agent action | 5|
 | Check for items availability | Agent action | 5 |
 | Create or update sales quote | Agent action | 5 |
 | Create or update sales order | Agent action | 5 |
@@ -85,9 +85,7 @@ Billing events for the Payables agent will be announced in a future update.
 
 Purchase a Copilot Credit pack subscription to enable prepaid Copilot Credit capacity on your tenant. Customers purchase Copilot Credit packs through the Microsoft 365 admin center, while resellers purchase them through Partner Center. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-Without any extra setup, [!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume Copilot Credit capacity from the [default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, an admin can allocate a portion of the prepaid capacity to the default Power Platform environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity). -->
-
-[!INCLUDE [prod_short](../includes/prod_short.md)] environments will automatically consume from Copilot Credit capacity available in your tenant without any additional setup. This consumption is reported against the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, administrators can [allocate a portion of the prepaid capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity) to the default environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments.
+<!-- Without any extra setup, [!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume Copilot Credit capacity from the [default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, an admin can allocate a portion of the prepaid capacity to the default Power Platform environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity). -->
 
 #### Allocate prepaid capacity to specific Business Central environments
 
