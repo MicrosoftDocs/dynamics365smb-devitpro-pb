@@ -130,7 +130,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 27.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
-### Feature now mandatory and removed from Feature Management
+### Optional feature now mandatory and removed from Feature Management
 
 - [Feature Update: Enable multiple users to post warehouse entries at the same time](https://go.microsoft.com/fwlink/?linkid=2274007)
 - [Feature Update: Enable use of package tracking in physical inventory orders](/dynamics365/business-central/inventory-how-work-item-tracking)
@@ -139,7 +139,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature: Enable server certificate validation for Http requests](/dynamics365/business-central/dev-itpro/developer/devenv-httpcertvalid-feature-key)
 - [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)
 
-### New features in Feature Management
+### New optional features in Feature Management
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
