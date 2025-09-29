@@ -76,13 +76,14 @@ Billing events for the Payables agent will be announced in a future update.
 
 ### Set up prepaid capacity
 
-To enable prepaid Copilot Credit capacity on your tenant, purchase a Copilot Credit pack subscription. Customers purchase Copilot Credit packs through the Microsoft 365 admin center, while resellers purchase them through Partner Center. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
+Purchase a Copilot Credit pack subscription to enable prepaid Copilot Credit capacity on your tenant. Customers purchase Copilot Credit packs through the Microsoft 365 admin center, while resellers purchase them through Partner Center. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-Without any extra setup, [!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume Copilot Credit capacity from the [default Power Platform environment](/power-platform/admin/environments-overview#environment-types) of your tenant. As an admin, you can allocate a portion of the prepaid capacity to the default Power Platform environment as needed to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
+Without any extra setup, [!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume Copilot Credit capacity from the [default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, an admin can allocate a portion of the prepaid capacity to the default Power Platform environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
 
 #### Allocate prepaid capacity to specific Business Central environments
 
 If your tenant has more Power Platform environments than just the default environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, assign limited capacity to a Power Platform environment used for [!INCLUDE [prod_short](../includes/prod_short.md)] sandbox environments, and reserve larger capacity for the Power Platform environment used for production environments.
+
 To allocate capacity for a specific Business Central environment, complete these tasks:
 
 1. Assign part or all of the Copilot Credit pack to the Power Platform environment as prepaid capacity through the Power Platform admin center (for customers or resellers).
