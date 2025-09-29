@@ -15,7 +15,7 @@ This article explains how to set up a Business Central environment for billing C
 
 ## Overview
 
-Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per use. These capabilities use Copilot credits for AI interactions and tasks, like retrieving information and responding to prompts. *Copilot credits* are the billing units that measure usage. The number of Copilot credits consumed by an agent depends on the design of the agent, how often customers interact with it, and the features they use. Learn more about Copilot credits in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
+Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per use. These capabilities use Copilot Credits for AI interactions and tasks, like retrieving information and responding to prompts. *Copilot Credits* are the billing units that measure usage. The number of Copilot Credits consumed by an agent depends on the design of the agent, how often customers interact with it, and the features they use. Learn more about Copilot Credits in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
 
 <!--Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing). [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130)-->
 
@@ -30,7 +30,7 @@ Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 The Sales Order Agent connects to a shared mailbox that processes customer requests for sales quotes and orders. The following table shows how the Business Central scenarios performed by the Sales Order agent are mapped to Copilot Studio events.
 
-| Feature | Copilot Studio event scenario | Copilot credits |
+| Feature | Copilot Studio event scenario | Copilot Credits |
 |----------|----------|----------|
 | Analyze incoming email | Generative answer | 2 |
 | Process email attachment, no sales data detected (per attachment *) | Generative answer | 2 |
@@ -44,20 +44,20 @@ The Sales Order Agent connects to a shared mailbox that processes customer reque
   
 A typical [Sales Order Agent process flow](/dynamics365/business-central/sales-order-agent#agent-process-flow) includes:
 
-- One generative answer to analyze the incoming email (2 credits)
-- One agent action to check for items availability (5 credits)
-- One agent action to create or update a sales quote or order (5 credits)
-- One generative answer to generate the response email (2 credits)
+- One generative answer to analyze the incoming email (2 Copilot Credits)
+- One agent action to check for items availability (5 Copilot Credits)
+- One agent action to create or update a sales quote or order (5 Copilot Credits)
+- One generative answer to generate the response email (2 Copilot Credits)
 
 #### Example
 
 Assume you get an average of 100 requests per month and 50% include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such attachment triggers the 5‑credit agent action. A typical request consumes:
 
-- Analyze incoming email: 2 credits
-- Process attachment with sales data: 5 credits (only on 50% of requests)
-- Check item availability: 5 credits
-- Create or update sales quote/order: 5 credits
-- Generate response email: 2 credits
+- Analyze incoming email: 2 Copilot Credits
+- Process attachment with sales data: 5 Copilot Credits (only on 50% of requests)
+- Check item availability: 5 Copilot Credits
+- Create or update sales quote/order: 5 Copilot Credits
+- Generate response email: 2 Copilot Credits
 
 The calculated monthly total is: `[2 + (5 × 0.5) + 5 + 5 + 2] x 100 = 1,650 Copilot Credits/month`
 
@@ -94,7 +94,7 @@ If you have more than one Power Platform environment, you can allocate portions 
 
    Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
 
-Once completed, consumption of the Copilot credits in the [!INCLUDE [prod_short](../includes/prod_short.md)] environment is limited by the capacity allocated to the linked Power Platform environment.
+Once completed, consumption of the Copilot Credits in the [!INCLUDE [prod_short](../includes/prod_short.md)] environment is limited by the capacity allocated to the linked Power Platform environment.
 
 > [!NOTE]
 > Other Microsoft services running in the linked Power Platform environment might also consume from the environment's allocated Copilot Credit capacity. It isn't possible to allocate capacity to specific Microsoft services or features.
@@ -118,9 +118,9 @@ Watch this YouTube video for summary of how to manage pay-as-you-go billing:
 
 ## Manage capacity and usage
 
-You can view Copilot Credit capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Copilot credits and capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
+You can view Copilot Credit capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Copilot Credits and capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
 
-Business Central regularly checks the available capacity (quota) of Copilot credits. If your organization's quota is low or depleted, users receive in-app notifications about the status and necessary actions. It's important to take timely action on these notifications by reallocating existing capacity or purchasing more capacity.
+Business Central regularly checks the available capacity (quota) of Copilot Credits. If your organization's quota is low or depleted, users receive in-app notifications about the status and necessary actions. It's important to take timely action on these notifications by reallocating existing capacity or purchasing more capacity.
 
 - For prepaid capacity, use the Power Platform admin center to allocate more capacity to the environment from the total available on the tenant. Learn more in [Manage capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
 
