@@ -5,28 +5,19 @@ author: jobulsin
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry, billing
-ms.date: 06/04/2025
+ms.date: 09/26/2025
 ms.author: jobulsin
 ms.reviewer: jswymer
 ---
 # Manage consumption-based billing for agent capabilities
 
-<!--[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]-->
-
 This article explains how to set up a Business Central environment for billing Copilot and agent capabilities.
-
-<!--
-> [!IMPORTANT]
->
-> - This is a preview feature that's available with version 26.4 sandbox and production environments in the United States (US), United Kingdom (UK), Australia (AU), New Zealand (NZ), Canada (CA), Denmark (DK), Germany (DE), Spain (ES), France (FR) and Italy (IT).
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.-->
 
 ## Overview
 
 Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per use. These capabilities use Copilot Credits for AI interactions and tasks, like retrieving information and responding to prompts. *Copilot Credits* are the billing units that measure usage. The number of Copilot Credits consumed by an agent depends on the design of the agent, how often customers interact with it, and the features they use. Learn more about Copilot Credits in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
 
 <!--Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing). [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130)-->
-
 
 ### Billable agent capabilities
 
@@ -35,35 +26,44 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use the *Generative answer* and *Agent action* [event scenarios](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) to bill for consumption as they complete their tasks.
 
-### Sales Order Agent
+### Sales Order Agent billing
 
-You have the Sales Order agent connected to a shared mailbox that processes customer requests for sales quotes and orders.
-The following table illustrates how the Business Central scenarios performed by the Sales Order agent are mapped to Copilot Studio events.
+The Sales Order Agent connects to a shared mailbox that processes customer requests for sales quotes and orders. The following table shows how the Business Central scenarios performed by the Sales Order agent are mapped to Copilot Studio events.
 
-| Feature | Copilot Studio Event Scenario | Copilot Credits |
+| Feature | Copilot Studio event scenario | Copilot Credits |
 |----------|----------|----------|
-| Analyze incoming email | Generative answer | 2 Copilot Credits |
-| Process email attachment, no sales data detected (per attachment *) | Generative answer | 2 Copilot Credits |
-| Process email attachment, sales data detected (per attachment *) | Agent action | 5 Copilot Credits |
-| Check for items availability | Agent action | 5 Copilot Credits |
-| Create or update sales quote | Agent action | 5 Copilot Credits |
-| Create or update sales order | Agent action | 5 Copilot Credits |
-| Generate response email | Generative answer | 2 Copilot Credits |
+| Analyze incoming email | Generative answer | 2 |
+| Process email attachment, no sales data detected (per attachment *) | Generative answer | 2 |
+| Process email attachment, sales data detected (per attachment *) | Agent action | 5|
+| Check for items availability | Agent action | 5 |
+| Create or update sales quote | Agent action | 5 |
+| Create or update sales order | Agent action | 5 |
+| Generate response email | Generative answer | 2 |
 
-** Only attachments in supported formats are processed (for example, PDF, PNG, JPG).
+\* Only attachments in supported formats are processed (for example, PDF, PNG, JPG).
   
-A typical [Sales Order Agent run](/dynamics365/business-central/sales-order-agent#agent-process-flow) comprises one generative answer to analyze the incoming email (2 Copilot Credits), one agent action to check for items availability (5 Copilot Credits), one agent action to create or update a sales quote or order (5 Copilot Credits), and one generative answer to generate the response email (2 Copilot Credits).
+A typical [Sales Order Agent process flow](/dynamics365/business-central/sales-order-agent#agent-process-flow) includes:
 
-For illustration, let’s assume that about 50% of emails also include an attachment which contains sales data that can be used for quotation - for example, a purchase order in PDF format (5 Copilot Credits).
+- One generative answer to analyze the incoming email (2 Copilot Credits)
+- One agent action to check for items availability (5 Copilot Credits)
+- One agent action to create or update a sales quote or order (5 Copilot Credits)
+- One generative answer to generate the response email (2 Copilot Credits)
 
-Assume the average usage is 100 requests per month.
+#### Example: Sales Order Agent billing
 
-The estimated monthly cost is calculated as follows:
+Assume you get an average of 100 requests per month and 50% include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such attachment triggers the 5‑credit agent action. A typical request consumes:
 
-**[(2 + 5 + 5 + 2) + 0.5 × 5)] × 100 requests = 1,650 Copilot Credits/month.**
+- Analyze incoming email: 2 Copilot Credits
+- Process attachment with sales data: 5 Copilot Credits (only on 50% of requests)
+- Check item availability: 5 Copilot Credits
+- Create or update sales quote/order: 5 Copilot Credits
+- Generate response email: 2 Copilot Credits
 
-### Payables Agent
-Billing events for the Payables agent are being defined. 
+The calculated monthly total is: `[2 + (5 × 0.5) + 5 + 5 + 2] x 100 = 1,650 Copilot Credits/month`
+
+### Payables Agent billing
+
+Billing events for the Payables agent will be announced in a future update.
 
 ## Set up billing model
 
@@ -76,24 +76,28 @@ Billing events for the Payables agent are being defined.
 
 ### Set up prepaid capacity
 
-Purchase a Copilot Credit pack subscription using the Microsoft 365 admin center (customer) or Partner Center (reseller) to enable prepaid Copilot Credit capacity on your tenant. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
+Purchase a Copilot Credit pack subscription to enable prepaid Copilot Credit capacity on your tenant. Customers purchase Copilot Credit packs through the Microsoft 365 admin center, while resellers purchase them through Partner Center. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] environments will automatically consume from Copilot Credit capacity available in your tenant without any additional setup. This consumption is reported against the [Default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, administrators can [allocate a portion of the prepaid capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity) to the default environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments.
+Without any extra setup, [!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume Copilot Credit capacity from the [default Power Platform environment](/power-platform/admin/environments-overview#environment-types) in your tenant. If needed, an admin can allocate a portion of the prepaid capacity to the default Power Platform environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
 
-To allocate a portion of prepaid capacity to a specific [!INCLUDE [prod_short](../includes/prod_short.md)] environment, for example to limit consumption on Sandbox environments or to ensure sufficient capacity on Production environments, complete these tasks:
+#### Allocate prepaid capacity to specific Business Central environments
 
-1. Assign part or all of the Copilot Studio message pack as prepaid capacity to the Power Platform environment through the Power Platform admin center (for customers or resellers). 
+If your tenant has more Power Platform environments than just the default environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, you could assign limited capacity to a Power Platform environment used for [!INCLUDE [prod_short](../includes/prod_short.md)] sandbox environments, and reserve larger capacity for the Power Platform environment used for production environments.
 
-   Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity?tabs=new#manage-capacity).
+To allocate capacity for a specific Business Central environment, complete these tasks:
 
-2. Link the [!INCLUDE [prod_short](../includes/prod_short.md)] environment to the Power Platform environment. This operation can only be completed by internal administrators.
+1. Assign part or all of the Copilot Credit pack to the Power Platform environment as prepaid capacity through the Power Platform admin center (for customers or resellers).
+
+   Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
+
+2. Link the [!INCLUDE [prod_short](../includes/prod_short.md)] environment to the Power Platform environment. Only internal admins can complete this task.
 
    Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
 
-Once completed, consumption of Copilot Credits in the [!INCLUDE [prod_short](../includes/prod_short.md)] environment will be limited by the capacity allocated to the linked Power Platform environment.
+Once completed, consumption of the Copilot Credits in the [!INCLUDE [prod_short](../includes/prod_short.md)] environment is limited by the capacity allocated to the linked Power Platform environment.
 
 > [!NOTE]
-> Other Microsoft services running in the linked Power Platform environment may also consume from the environment's allocated Copilot Credit capacity. It is not possible to allocate capacity to specific Microsoft services or features.
+> Other Microsoft services running in the linked Power Platform environment might also consume from the environment's allocated Copilot Credit capacity. It isn't possible to allocate capacity to specific Microsoft services or features.
 
 ### Set up pay-as-you-go
 
@@ -120,7 +124,7 @@ Business Central regularly checks the available capacity (quota) of Copilot Cred
 
 - For prepaid capacity, use the Power Platform admin center to allocate more capacity to the environment from the total available on the tenant. Learn more in [Manage capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
 
-  If there's no quantity to allocate, purchase capacity. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users). You can do this yourself or contact your reseller.
+  If there's no quantity to allocate, purchase capacity. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users). You can do this task yourself or contact your reseller.
 
 - For pay-as-you-go, use Microsoft Cost Management in the Azure portal to view detailed usage and adjust spending limits (budgets) to free up more capacity. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
@@ -128,9 +132,6 @@ Business Central regularly checks the available capacity (quota) of Copilot Cred
 
 > [!IMPORTANT]
 > When the quota is depleted, the AI capability is unavailable until more capacity is added.
-
-
-
 
 ## Related information
 
