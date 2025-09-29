@@ -80,10 +80,9 @@ To enable prepaid Copilot Credit capacity on your tenant, purchase a Copilot Cre
 
 Without any extra setup, [!INCLUDE [prod_short](../includes/prod_short.md)] environments automatically consume Copilot Credit capacity from the [default Power Platform environment](/power-platform/admin/environments-overview#environment-types) of your tenant. As an admin, you can allocate a portion of the prepaid capacity to the default Power Platform environment as needed to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
 
-#### Allocate prepaid capacity for use by specific Business Central environments
+#### Allocate prepaid capacity to specific Business Central environments
 
-If your tenant has more Power Platform environments than just the default environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, you might assign limited capacity to a Power Platform environment used for [!INCLUDE [prod_short](../includes/prod_short.md)] sandbox environments and reserve larger capacity on the Power Platform environment used for production environments.
-
+If your tenant has more Power Platform environments than just the default environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, assign limited capacity to a Power Platform environment used for [!INCLUDE [prod_short](../includes/prod_short.md)] sandbox environments, and reserve larger capacity for the Power Platform environment used for production environments.
 To allocate capacity for a specific Business Central environment, complete these tasks:
 
 1. Assign part or all of the Copilot Credit pack to the Power Platform environment as prepaid capacity through the Power Platform admin center (for customers or resellers).
