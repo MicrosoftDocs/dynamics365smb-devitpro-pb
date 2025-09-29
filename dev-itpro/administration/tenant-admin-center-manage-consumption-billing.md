@@ -49,7 +49,7 @@ A typical [Sales Order Agent process flow](/dynamics365/business-central/sales-o
 - One agent action to create or update a sales quote or order (5 Copilot Credits)
 - One generative answer to generate the response email (2 Copilot Credits)
 
-#### Example
+#### Example: Sales Order Agent billing
 
 Assume you get an average of 100 requests per month and 50% include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such attachment triggers the 5‑credit agent action. A typical request consumes:
 
@@ -84,7 +84,9 @@ To enable prepaid Copilot Credit capacity on your tenant, purchase a Copilot Cre
 
 As an admin, you can allocate a portion of the prepaid capacity to the default Power Platform environment to reserve it for consumption by all [!INCLUDE [prod_short](../includes/prod_short.md)] environments.
 
-If you have more than one Power Platform environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, you can have a Power Platform environment with limited capacity for use by Business Central sandboxes, ensuring there's sufficient capacity on production environments. To allocate capacity for a specific Business Central environment, complete these tasks:
+If you have more than one Power Platform environment, you can allocate portions of the prepaid capacity to different [!INCLUDE [prod_short](../includes/prod_short.md)] environments. For example, assign limited capacity to a Power Platform environment used for Business Central sandbox environments, while reserving larger capacity on the Power Platform environment used for production environments.  
+
+To allocate capacity for a specific Business Central environment, complete these tasks:
 
 1. Assign part or all of the Copilot Credit pack to the Power Platform environment as prepaid capacity through the Power Platform admin center (for customers or resellers).
 
