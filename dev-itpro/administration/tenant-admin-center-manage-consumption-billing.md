@@ -51,7 +51,7 @@ A typical [Sales Order Agent process flow](/dynamics365/business-central/sales-o
 
 For example, assume that:
 
-- 50% of emails include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such email attachment triggers the 5‑credit agent action.
+- 50% of emails include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such email attachment triggers an agent action at cost of 5 Copilot Credits.
 - Average usage is 100 requests per month.
 
 The estimated monthly cost is calculated as: `[2 + 5 + 5 + 2 + (5 × 0.5)] x 100 = 1,650 Copilot Credits/month`
