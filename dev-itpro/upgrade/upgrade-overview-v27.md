@@ -1,8 +1,8 @@
 ---
-title: Upgrading to Dynamics 365 Business Central 2025 release wave 1
-description: Provides an overview of Business Central 2025 release wave 1 upgrade process.
+title: Upgrading to Dynamics 365 Business Central 2025 release wave 2
+description: Provides an overview of Business Central 2025 release wave 2 upgrade process.
 ms.custom: bap-template
-ms.date: 09/04/2025
+ms.date: 09/30/2025
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: overview
