@@ -145,6 +145,36 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
 - Feature: Introduce UI support for masking sensitive data
 
+## On-premises download packages
+
+Select and download the package for the appropriate country or region version from Microsoft Support.
+
+|Country/region|Download package|
+|-|-|
+|AT - Austria|[Dynamics.365.BC.40242.AT.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.AT.DVD.zip)|
+|AU - Australia|[Dynamics.365.BC.40242.AU.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.AU.DVD.zip)|
+|BE - Belgium|[Dynamics.365.BC.40242.BE.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.BE.DVD.zip)|
+|CA - Canada|[Dynamics.365.BC.40242.CA.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.CA.DVD.zip)|
+|CH - Switzerland|[Dynamics.365.BC.40242.CH.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.CH.DVD.zip)|
+|CZ- Czechia|[Dynamics.365.BC.40242.CZ.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.CZ.DVD.zip)|
+|DE - Germany|[Dynamics.365.BC.40242.DE.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.DE.DVD.zip)|
+|DK - Denmark|[Dynamics.365.BC.40242.DK.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.DK.DVD.zip)|
+|ES - Spain|[Dynamics.365.BC.40242.ES.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.ES.DVD.zip)|
+|FI - Finland|[Dynamics.365.BC.40242.FI.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.FI.DVD.zip)|
+|FR - France|[Dynamics.365.BC.40242.FR.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.FR.DVD.zip)|
+|GB - United Kingdom|[Dynamics.365.BC.40242.GB.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.GB.DVD.zip)|
+|IN - India|[Dynamics.365.BC.40242.IN.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.IN.DVD.zip)|
+|IS - Iceland|[Dynamics.365.BC.40242.IS.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.IS.DVD.zip)|
+|IT - Italy|[Dynamics.365.BC.40242.IT.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.IT.DVD.zip)|
+|MX - Mexico|[Dynamics.365.BC.40242.MX.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.MX.DVD.zip)|
+|NL - Netherlands|[Dynamics.365.BC.40242.NL.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.NL.DVD.zip)|
+|NO - Norway|[Dynamics.365.BC.40242.NO.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.NO.DVD.zip)|
+|NZ - New Zealand|[Dynamics.365.BC.40242.NZ.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.NZ.DVD.zip)|
+|RU - Russia|[Dynamics.365.BC.40242.RU.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.RU.DVD.zip)|
+|SE - Sweden|[Dynamics.365.BC.40242.SE.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.SE.DVD.zip)|
+|US - United States|[Dynamics.365.BC.40242.US.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.US.DVD.zip)|
+|All other countries/regions (W1)|[Dynamics.365.BC.40242.W1.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.W1.DVD.zip)|
+
 ## Upgrade to 27.0
 
 ### Online customers
