@@ -1,6 +1,6 @@
 ---
 title: Retrieving Date Data in Queries
-ms.date: 04/01/2021
+ms.date: 09/30/2025
 ms.topic: concept-article
 author: jswymer
 ---
