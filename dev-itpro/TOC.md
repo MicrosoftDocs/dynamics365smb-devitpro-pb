@@ -309,6 +309,8 @@
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Activate](administration/resources/dynamics_activate.md)
+#### [Create activate](administration/api/dynamics_activate_create.md)
 ### [Apicategoryroutes](administration/resources/dynamics_apicategoryroutes.md)
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
 #### [Get automation company](administration/api/dynamics_automationcompany_get.md)
@@ -322,6 +324,8 @@
 #### [Delete configuration package](administration/api/dynamics_configurationpackage_delete.md)
 #### [Create configuration package](administration/api/dynamics_configurationpackage_create.md)
 #### [Update configuration package](administration/api/dynamics_configurationpackage_update.md)
+### [Deactivate](administration/resources/dynamics_deactivate.md)
+#### [Create deactivate](administration/api/dynamics_deactivate_create.md)
 ### [Extension](administration/resources/dynamics_extension.md)
 #### [Get extension](administration/api/dynamics_extension_get.md)
 ### [Extension deployment status](administration/resources/dynamics_extensiondeploymentstatus.md)
@@ -330,6 +334,8 @@
 #### [Get extension upload](administration/api/dynamics_extensionupload_get.md)
 #### [Create extension upload](administration/api/dynamics_extensionupload_create.md)
 #### [Update extension upload](administration/api/dynamics_extensionupload_update.md)
+### [Feature management](administration/resources/dynamics_featuremanagement.md)
+#### [Get feature management](administration/api/dynamics_featuremanagement_get.md)
 ### [Permission set](administration/resources/dynamics_permissionset.md)
 #### [Get permission set](administration/api/dynamics_permissionset_get.md)
 ### [Scheduled job](administration/resources/dynamics_scheduledjob.md)
@@ -488,6 +494,7 @@
 ### [AL outline view](developer/devenv-al-outline-view.md)
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
 ### [AL code actions](developer/devenv-code-actions.md)
+### [ALTool](developer/devenv-al-tool.md)
 ### [Syntax and snippets](developer/devenv-syntax.md)
 ### [Object ranges](developer/devenv-object-ranges.md)
 ### [Developer productivity tips](developer/devenv-dev-productivity-tips.md)
@@ -518,6 +525,7 @@
 #### JSON files
 ##### [JSON files](developer/devenv-json-files.md)
 ##### [Launch JSON file](developer/devenv-json-launch-file.md)
+##### [Directory.app.props JSON file](developer/devenv-directory-app-json.md)
 ##### [Migration JSON file](developer/devenv-migration-json-file.md)
 #### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
@@ -1803,6 +1811,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2025 release wave 2](deployment/system-requirements-business-central-v27.md)
 #### [2025 release wave 1](deployment/system-requirements-business-central-v26.md)
 #### [2024 release wave 2](deployment/system-requirements-business-central-v25.md)
 #### [2024 release wave 1](deployment/system-requirements-business-central-v24.md)
@@ -1930,64 +1939,47 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
-### Business Central 2025 release wave 1
+### [Minor update compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+### Business Central 2025 release wave 2 (v27)
+#### [Overview of upgrade to v27](upgrade/upgrade-overview-v27.md)
+#### [Before upgrading to v27](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Upgrade to v27](upgrade/upgrade-unmodified-application-to-v27.md)
+#### [Installing v27 minor update](upgrade/upgrading-cumulative-update-v27.md)
+### Business Central 2025 release wave 1 (v26)
 #### [Overview](upgrade/upgrade-overview-v26.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v26.md)
-#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
-#### Upgrade application and data
-##### [From v14 unmodified C/AL application to v25](upgrade/upgrade-unmodified-application-v14-v25.md)
-##### [From v14 customized C/AL application to v25](upgrade/upgrade-to-microsoft-base-app-v25.md)
-##### [From v15 and later to v26](upgrade/upgrade-unmodified-application-to-v26.md)
-#### Related articles
-##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### Migrating tables and fields between extensions
-###### [Overview](developer/devenv-migrate-table-fields.md)
-###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-##### Data migration toolkit - India
-###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### [Before upgrading to v26](upgrade/upgrade-considerations-v26.md)
+#### [Upgrade to v26](upgrade/upgrade-unmodified-application-to-v26.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v26.md)
-### Business Central 2024 release wave 2
+### Business Central 2024 release wave 2 (v25)
 #### [Overview](upgrade/upgrade-overview-v25.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
-#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade permission sets](upgrade/upgrade-permissions.md)
 #### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
 #### Upgrade application and data
 ##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v25.md)
 ##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v25.md)
 ##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v25.md)
-#### Related articles
-##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### Migrating tables and fields between extensions
-###### [Overview](developer/devenv-migrate-table-fields.md)
-###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-##### Data migration toolkit - India
-###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v25.md)
-### Business Central 2024 release wave 1
-#### [Overview](upgrade/upgrade-overview-v24.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
-#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
-#### Upgrade application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v24.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v24.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v24.md)
-#### Related articles
-##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### Migrating tables and fields between extensions
-###### [Overview](developer/devenv-migrate-table-fields.md)
-###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-##### Data migration toolkit - India
-###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v24.md)
 ### Earlier versions
+#### Business Central 2024 release wave 1
+##### [Overview](upgrade/upgrade-overview-v24.md)
+##### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+##### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrade permission sets](upgrade/upgrade-permissions.md)
+##### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
+##### Upgrade application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v24.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v24.md)
+###### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v24.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data migration toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v24.md)
 #### Business Central 2023 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v23.md)
 ##### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
@@ -2177,6 +2169,14 @@
 ###### [Upgrading the data: Multitenant mode](upgrade/upgrading-the-data-multitenant.md)
 ###### [Quick reference](upgrade/multitenant-upgrade-checklist.md)
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update.md)
+### Related articles
+#### [Convert to AL](upgrade/devenv-code-conversion.md)
+#### Migrating tables and fields between extensions
+##### [Overview](developer/devenv-migrate-table-fields.md)
+##### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+##### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Data migration toolkit - India
+##### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 ### [Some known issues](upgrade/known-issues.md)
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
