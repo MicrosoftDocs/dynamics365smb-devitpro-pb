@@ -247,6 +247,44 @@ To view ongoing extension installation status, issue [GET extensionDeploymentSta
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionDeploymentStatus
 ```
 
+## Handling Feature Management
+
+### Get a list of available features
+
+To view list of features available in feature management and their status issue a [GET features](api/dynamics_featuremanagement_get.md)
+
+```json
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features
+```
+
+### Activate a feature
+
+To activate a feature, issue a [POST activate](api/dynamics_activate_create.md) on the bound action Microsoft.NAV.activate against the specific feature resource. Use the {featureId} value from the GET features response.
+
+```json
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features({featureId})/Microsoft.NAV.activate
+Authorization: Bearer {token}
+{
+	"updateInBackground":false,
+	"startDateTime":"2025-07-08T16:00:00Z"
+}
+```
+
+If successful, the request typically returns a "200" response. Use the GET features request to verify that the feature state has changed.
+
+
+### Deactivate a feature
+
+To deactivate a feature, issue a [POST deactivate](api/dynamics_deactivate_create.md) on the bound action Microsoft.NAV.deactivate against the specific feature resource.
+
+```json
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features({featureId})/Microsoft.NAV.deactivate
+Authorization: Bearer {token}
+```
+
+If successful, the request typically returns a "200" response. Use the GET features request to verify that the feature state has changed.
+
+
 ## Related information
 
 [Automation company](resources/dynamics_automationcompany.md)  

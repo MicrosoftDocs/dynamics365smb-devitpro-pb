@@ -4,7 +4,7 @@ description: Provides an overview of the Business Central versions and their com
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.date: 07/18/2025
+ms.date: 09/02/2025
 ms.topic: upgrade-and-migration-article
 ms.custom: bap-template
 ---
@@ -36,7 +36,8 @@ The following table lists the Business Central 25 update versions and the minimu
 |[25.7](https://support.microsoft.com/help/5059414)|[26.2](https://support.microsoft.com/help/5061918)|
 |[25.8](https://support.microsoft.com/help/5061917)|[26.3](https://support.microsoft.com/help/5063362)|
 |[25.9](https://support.microsoft.com/help/5063361)|[26.4](https://support.microsoft.com/help/5064779)|
-|[25.10](https://support.microsoft.com/help/5064778)<sup>[\[1\]](#1)</sup>|26.5|
+|[25.10](https://support.microsoft.com/help/5064778)|[26.5](https://support.microsoft.com/help/5066309)|
+|[25.11](https://support.microsoft.com/help/5066308)<sup>[\[1\]](#1)</sup>|26.6|
 
 ## Version 24 compatibility
 
@@ -55,7 +56,8 @@ The following table lists the Business Central 24 update versions and the minimu
 |[24.13](https://support.microsoft.com/help/5059413)|[25.8](https://support.microsoft.com/help/5061917)|
 |[24.14](https://support.microsoft.com/help/5061916)|[25.9](https://support.microsoft.com/help/5063361)|
 |[24.15](https://support.microsoft.com/help/5063360)|[25.10](https://support.microsoft.com/help/5064778)|
-|[24.16](https://support.microsoft.com/help/5064777)<sup>[\[1\]](#1)</sup>|25.11|
+|[24.16](https://support.microsoft.com/help/5064777)|[25.11](https://support.microsoft.com/help/5066308)|
+|[24.17](https://support.microsoft.com/help/5066307)<sup>[\[1\]](#1)</sup>|25.12|
 
 Get a list of all available updates for Business Central 2024 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2024 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65).
 
@@ -108,8 +110,6 @@ The following table lists the Business Central 22 update versions and the minimu
 |[22.18](https://support.microsoft.com/help/5046144)<sup>[\[1\]](#1)</sup> |[23.13](https://support.microsoft.com/help/5047902)|[24.7](https://support.microsoft.com/help/5047903)|[25.1](https://support.microsoft.com/help/5047904)|
 
 Get a list of all available updates for Business Central 2023 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2023 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51).
-
-[!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
 ## Version 21 compatibility
 
