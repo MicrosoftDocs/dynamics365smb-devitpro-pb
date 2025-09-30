@@ -63,7 +63,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Troubleshoot the Shopify Connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/troubleshoot-shopify-connector)| General availability|
 | | [Use the latest update for the Shopify Connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-latest-update-shopify-connector)| General availability|
 | Copilot and agents| [Autofill contact details with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/get-better-field-suggestions-using-autofill-copilot)| Public preview|
-| | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)| General availability|
+| | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)| Public preview availability|
 | | [Give more instructions for the agent when you review its tasks](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/give-more-instructions-agent-when-review-its-tasks)| Public preview|
 | | [Summarize with Copilot enhancements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/summarize-copilot-enhancements)| Public preview|
 | | [Understand how each Copilot and agent capability is billed](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/understand-how-each-copilot-agent-capability-billed)| Public preview|
