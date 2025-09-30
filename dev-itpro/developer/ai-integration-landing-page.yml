@@ -39,6 +39,8 @@ landingContent:
         url: ../ai/transparency-note-dev-tools-for-copilot.md
       - text: What are the Business Central AI resources (preview)
         url: ai-dev-tools-resources.md
+      - text: Test the Copilot capability in AL
+        url: ai-test-copilot.md
     - linkListType: how-to-guide
       links:
       - text: Get set up with Azure OpenAI Service

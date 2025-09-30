@@ -1,15 +1,19 @@
 ---
-title: Write AI Tests
-description: Learn how to write AI tests in AL for Copilot features.
+title: Write AI tests
+description: Learn how to write AL tests for Copilot features using datasets, assertions, and external evaluation.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 07/16/2025
+ms.date: 09/05/2025
 ms.collection:
   - get-started
   - bap-ai-copilot
 ms.reviewer: solsen
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:09/05/2025
 ---
 
 # Write AI tests
