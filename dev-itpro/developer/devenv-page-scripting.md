@@ -131,7 +131,7 @@ To insert conditional steps:
    A *conditional branch step* is added to the **Page Scripting** pane, for example, **When rows count is 0**. The **End Scope** button appears at the top of the step list to indicate that the next steps you add are the conditional steps.
 
 1. Return to the page and go through steps that you want to run if the condition is met.
-1. When you're finished adding conditional steps, select **End scope** elect **...** > **Properties**. 
+1. When you're finished adding conditional steps, select **End scope** in the **Page Scripting** pane. To modify the condition, select **...** > **Properties**. 
 1. If you want to modify the condition, go to the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
 
 ## Add a wait step
