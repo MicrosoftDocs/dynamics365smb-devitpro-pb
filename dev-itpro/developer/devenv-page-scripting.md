@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 09/10/2025
+ms.date: 09/30/2025
 ms.custom: bap-template 
 ---
 
@@ -47,7 +47,7 @@ Now you're ready to start a new recording or play an existing recording.
 
 ## Record
 
-This section outlines the basic steps to make a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
+This section outlines the basic steps to making a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
   
 1. Open the page where you want to start recording.
 
@@ -64,7 +64,7 @@ This section outlines the basic steps to make a recording with the page scriptin
    - Pause recording: Select **Stop** ![stop recording](media/page-scripting-stop-button.png) in the control bar.
    - Resume recording and continue actions: Select the **Start recording** ![start recording](media/page-scripting-start-button.png) in the control bar.
    - Delete a captured step: Select **...** in the step and then select **Delete**.
-   - Insert steps between two previously recorded steps: Select **...** in the step after which you wan to add steps, and then select **Record from here**. This action moves the red recording position line. When ready, select the **Start recording** ![start recording](media/page-scripting-start-button.png).
+   - Insert steps between two previously recorded steps: Select **...** in the step after which you want to add steps, and then select **Record from here**. This action moves the red recording position line. When ready, select the **Start recording** ![start recording](media/page-scripting-start-button.png).
    - Rearrange steps: Drag a step to move it to a new location.  
    - Hide the page scripting pane: Select the uppermost ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
    - To cancel recording and exit the page scripting tool, select the **Close recording** ![Shows the X button that closes the page scripting pane](media/page-scripting-hide-button.png) button in the **Recording** bar.
@@ -131,7 +131,7 @@ To insert conditional steps:
    A *conditional branch step* is added to the **Page Scripting** pane, for example, **When rows count is 0**. The **End Scope** button appears at the top of the step list to indicate that the next steps you add are the conditional steps.
 
 1. Return to the page and go through steps that you want to run if the condition is met.
-1. When you're finished adding conditional steps, select **End scope** in the **Page Scripting** pane. To modify the condition, select **...** > **Properties**. 
+1. When you're finished adding conditional steps, select **End scope** in the **Page Scripting** pane.
 1. If you want to modify the condition, go to the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
 
 ## Add a wait step
@@ -258,7 +258,7 @@ A recording can include scripts from other recordings, letting you create a suit
 
 1. Open the recording in which you want to add the script.
 1. Start recording ![start recording](media/page-scripting-start-button.png).
-1. Select the step that you want add the script after, and then select **...** > **Record from here**.
+1. Select the step that you want to add the script after, and then select **...** > **Record from here**.
 1. On the same step, select **...** > **Add Step** > **Include a script**.
 1. Browse for the script to add and select **Open**.
 
@@ -422,7 +422,7 @@ npx replay
 
 `-Tests`
 
-File glob pattern to select the tests recordings to run
+File glob pattern to select the tests recordings to run.
 
 `-StartAddress`
 
