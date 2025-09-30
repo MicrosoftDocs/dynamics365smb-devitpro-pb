@@ -525,6 +525,7 @@
 #### JSON files
 ##### [JSON files](developer/devenv-json-files.md)
 ##### [Launch JSON file](developer/devenv-json-launch-file.md)
+##### [Directory.app.props JSON file](developer/devenv-directory-app-json.md)
 ##### [Migration JSON file](developer/devenv-migration-json-file.md)
 #### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
