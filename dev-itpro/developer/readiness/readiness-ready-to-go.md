@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 08/20/2025
+ms.date: 09/22/2025
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -102,21 +102,30 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## AI innovation and Copilot
 
+### Agents in Business Central
+
+- Sales Order Agent overview (preview) [Learn more](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
+- Payable Agent overview (preview) [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
+- Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
+- Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
+- Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
+- Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
+- Sales Order Agent available in public preview in following countries/regions (Sep 2025): United States, Canada, UK, Australia, New Zealand, Denmark, Germany, France, Italy, Spain 
+- Payable Agent available in public preview in following countries/regions (Sep 2025): United States, UK, Australia, New Zealand
+
 ### Copilot in Business Central 101
 
 - Pitch deck for Copilot in Business Central: [aka.ms/bcCopilotPitchDeck](https://aka.ms/bcCopilotPitchDeck)
 - Learn how to get your free demo environment at [aka.ms/CDX](https://aka.ms/CDX), or showcase Copilot using prebuilt, click-through demos at [aka.ms/bcSalesTools](https://aka.ms/bcSalesTools)
-- Copilot in Business Central - showcase video: [aka.ms/BC-AI-Sizzle](https://aka.ms/BC-AI-Sizzle)
 - Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
-- Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
-- Sales Order Agent preview video: [aka.ms/bcagents](https://aka.ms/bcagents)
+- Copilot Solutions from Red Carpet partners [YouTube playlist​](https://www.youtube.com/playlist?list=PL1FESh9FqyhQv-XGSbJ4mHzRB2OkuRnuA)
 - Copilot in Business Central FAQ: [About Copilot](/dynamics365/business-central/copilot-overview)
-- Dynamics Communities interview with Mike Morton: [dynamicscommunities.com](https://dynamicscommunities.com/ug/copilot-ug/microsofts-mike-morton-explains-new-copilot-capabilities-inside-business-central/)
 
 ### Copilot in Business Central for developers
 
 - Extend Copilot in Business Central: [aka.ms/bcAIdevDocs](https://aka.ms/bcAIdevDocs)
 - How-to guide for extending Copilot in Business Central: [Developing generative AI experiences​](../ai-build-experience-overview.md)
+- Extending Copilot in Business Central for developers [YouTube playlist​](https://www.youtube.com/playlist?list=PL1FESh9FqyhQqnc4h6YrjramtCaaR1qJJ)
 - Business Central under the hood episode 1 - Developing AI: [Business Central under the hood series (on YouTube)​](https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s)
 
 ## Reporting and business intelligence  
