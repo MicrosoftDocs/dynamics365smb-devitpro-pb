@@ -1,7 +1,7 @@
 ---
 title: Business Central Virtual Table for Microsoft Dataverse admin reference
 description: The admin reference for working with Business Central and Microsoft Dataverse tables.
-ms.date: 01/08/2025
+ms.date: 09/17/2025
 ms.reviewer: solsen
 ms.topic: reference
 author: SusanneWindfeldPedersen
@@ -10,74 +10,84 @@ ms.author: solsen
 
 # Business Central virtual table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] admin reference
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+This article provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)].
 
-> [!IMPORTANT]  
-> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/dynamics365/released-versions/dynamics-365ce#all-version-availability).
+## Get the Business Central Virtual Table solution
 
-This article provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+1. Go to [Business Central Virtual Table on AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity), select **Get it now** and follow the instructions.
+1. If prompted, sign in to the Power Platform admin center.
+1. Select the Power Platform environment that includes Dataverse, and then select **Install**.
 
-## Getting the solution
+The following solutions are installed in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are installed from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
-First get the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
+- **Dynamics365Company** - Add the **cdm_company** table, which is referenced by all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. All communication to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] requires the company ID in the request. 
+- **MicrosoftBusinessCentralVESupport** - Provides the core support for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table feature.
+- **MicrosoftBusinessCentralERPCatalog** - Provides provides a list of available tables, including ones based on custom APIs, in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance.
+- **MicrosoftBusinessCentralVEAnchor** - Serves as a container, holding information needed for AppSource. 
+- **MicrosoftBusinessCentralERPVE** - Contains virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in this solution. Tables are added automatically at runtime once they're made visible in the **MicrosoftBusinessCentralERPCatalog**.
 
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are installed from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
+## Set up authentication and authorization
 
-- **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. All communication to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] requires the company ID in the request. 
-- **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table feature.
-- **MicrosoftBusinessCentralERPCatalog** - This provides a list of available tables, including ones based on custom APIs, in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance.
-- **MicrosoftBusinessCentralVEAnchor** - This serves as a container, holding information needed for AppSource. 
-- **MicrosoftBusinessCentralERPVE** - Virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will be contained in this solution. Tables are added automatically at runtime once they're made visible in the **MicrosoftBusinessCentralERPCatalog**.
+After the solutions are installed in the [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] environment, a connection can be set up to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. *Both environments have to be in the same tenant*.  
 
-## Authentication and authorization
+The next step in the process is to provide [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and company to connect to. The following steps walk through this part of the process.
 
-After the solutions are installed in the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment, a connection can be set up to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. *Both environments have to be in the same tenant*.  
+1. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], open the **Microsoft Entra applications** and set the **Dynamics 365 Business Central for Virtual tables** to **Enabled**. This action allows [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and company to connect to. The following steps walk through this part of the process.
+1. In [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], go to the table **Business Central Virtual Data Source Configuration**.
 
-0. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to the page 'Microsoft Entra applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This allows [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+   1. Sign in to [Power Apps](https://make.powerapps.com).
+   1. Select **Tables** on the left navigation pane to open the **Tables** page.
+   1. Select the **All** tab to display all visible tables, then search for *Business Central Virtual Data Source Configuration* and select it to open for editing.
 
-1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to the table **Business Central Virtual Data Source Configuration**.
+   > [!TIP]
+   > Power Apps is the primary tool for creating and modifying tables in Dataverse.
 
-2. Select and edit the data source named “[!INCLUDE[prod_short](../developer/includes/prod_short.md)]”.
+1. In the **[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Data Source Configuration columns and data** section, use the **+ more** button to show the **environment** and **Default Company** columns in the **Business Central** row if the they are hidden.
+1. Enter the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to connect to in the **environment** column.
 
-3. On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants have a default environment called 'production'.
+   By default, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants have an environment called `production`.
 
-4. Save your changes before setting the **Default Company**. Otherwise, company can't be set in the next step.
-
-5. Set the **Default Company** value. 
-
-6. Save the changes.
+1. Set the **Default Company** value to the Business Central company in the enviroment that you want to connect to by default.
 
 ## Making virtual tables visible
 
-Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables aren't available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The following steps allow for enabling tables to be virtual, as needed.
+Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables aren't available as virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. Follow the steps to make tables visible, using either the **Business Central Configuration** app or **Available Business Central Tables** table. Both methods have the same result.
 
-1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> Tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
+# [Using Business Central Configuration](#tab/bcconfig)
 
-2. Choose **Data** in the horizontal menu to view the available data.
+1. In [Power Apps](https://make.powerapps.com), select **Apps** > **Business Central Configuration**.
+1. Select **Available Tables** in the left navigation pane.
+1. Select the table to open it for editing.
+1. Select the **Visible** checkbox.
+1. Select **Save** or **Save and Close**.
 
-3. Locate and edit the table that you want to enable. The list also contains tables based on custom APIs.
+# [Using Available Business Central Tables table](#tab/bctables)
 
-4. Set **Visible** to **Checked** and save. This generates the virtual table in the **MicrosoftBusinessCentralERPVE** solution. 
+1. In [Power Apps](https://make.powerapps.com), select **Tables** in the left navigation, select the **All** tab, then search for and select *Available Business Central table*.
 
-Selected table appears in all of the appropriate menus, including **Data -> Tables**, and in advanced find dialog box.
+    The tables list contains all visible tables, including tables based on custom APIs.
+
+1. Locate the table you want to enable, and set the **Visible** switch to **Yes**.
+1. Select another row to save the change. This action generates the virtual table in the **MicrosoftBusinessCentralERPVE** solution.
+
+---
+
+A table appears in all of the appropriate menus, including **Data -> Tables**, and in the advanced find dialog box.
 
 ## Refreshing virtual table metadata
 
-The virtual table metadata can be force-refreshed when it's expected for the table metadata in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This syncs the latest table definition from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and update the virtual table.
+You can force-refresh the virtual table metadata when you expect the table metadata in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to change. Set **Refresh** to **Checked**, and then save. This action syncs the latest table definition from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and updates the virtual table.
 
 ## Referencing virtual tables
 
-The virtual tables are all generated in the **MicrosoftBusinessCentralERPVE** solution. That means the items in the solution change as you make tables visible/hidden, but it's still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual table from this solution with the **Add existing** option in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual table doesn't yet exist, it would automatically be made visible without needing extra work.
+The virtual tables are all generated in the **MicrosoftBusinessCentralERPVE** solution. Items in the solution change as you make tables visible or hidden, but it's still a managed solution you can depend on. In a standard ALM flow, you take a reference to a virtual table from this solution by selecting the **Add existing** option in the ISV solution. The solution then shows a missing dependency, which is checked at import time. If a specified virtual table doesn't exist during import, the system automatically makes it visible without extra steps.
 
 To consume virtual tables:
 
-1. Create a separate solution as usual in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], which will contain the consuming logic.
-
-2. Select **tables \> Add Existing**. Select the virtual table that you want to reference from the list.
-
-3. When prompted to select assets to add, select any forms, views, or other elements that you want to customize, then select **Finish**.
+1. Create a separate solution as usual in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], which will contain the consuming logic.
+1. Select **tables \> Add Existing**. Select the virtual table that you want to reference from the list.
+1. When prompted to select assets to add, select any forms, views, or other elements that you want to customize, then select **Finish**.
 
 From the development tooling, existing elements such as forms can be modified for the virtual table. Additionally, new forms, views, and other elements can also be added.
 
