@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Error AA0475
-Truncate can only be used on normal tables without media fields and outside of try functions..
+Truncate can only be used on normal tables without media fields and outside of try functions.
 
 ## Description
 Truncate can only be used on normal tables and not on system tables, temporary tables, or tables with media fields. Truncate also cannot be used within a try function.

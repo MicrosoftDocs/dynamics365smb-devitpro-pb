@@ -2,6 +2,7 @@
 title: AL control statements
 description: Compound, conditional, and repetitive control statements in AL for Business Central.
 ms.date: 03/26/2025
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.author: solsen
