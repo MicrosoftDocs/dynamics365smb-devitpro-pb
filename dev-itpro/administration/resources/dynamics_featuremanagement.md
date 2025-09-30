@@ -22,20 +22,7 @@ Represents a feature management object in [!INCLUDE[d365fin_long_md](../../inclu
 |:--------------------|:-----------|:-------------------------|
 |[GET featureManagement](../api/dynamics_featuremanagement_get.md)|featureManagement|Gets a list of available features and their status.|
 
-
-## Properties
-
-| Property           | Type   |Description     |
-|:-------------------|:-------|:---------------|
-||||
-
-## JSON representation
-
-Here is a JSON representation of the featureManagement resource.
-
-```json
-{
-}
-```
-
 ## Related information
+
+[Activate feature](dynamics_activate.md)  
+[Deactivate feature](dynamics_deactivate.md)

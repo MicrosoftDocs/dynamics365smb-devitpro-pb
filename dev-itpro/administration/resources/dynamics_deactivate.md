@@ -29,12 +29,6 @@ Represents a deactivate object in [!INCLUDE[d365fin_long_md](../../includes/d365
 |:--------------------|:-----------|
 |Microsoft.NAV.deactivate| Deactivates a specific feature.|
 
-## Properties
-
-| Property           | Type   |Description     |
-|:-------------------|:-------|:---------------|
-||||
-
 ## JSON representation
 
 Here is a JSON representation of the deactivate resource.

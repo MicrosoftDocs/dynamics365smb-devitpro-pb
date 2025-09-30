@@ -17,7 +17,6 @@ Creates an activate object in [!INCLUDE[d365fin_long_md](../../includes/d365fin_
 
 Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
-
 ```
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features({featureId})/Microsoft.NAV.activate
 ```
