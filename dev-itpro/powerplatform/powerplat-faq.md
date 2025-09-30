@@ -50,7 +50,7 @@ Depending on the region, the [!INCLUDE[prod_short](../developer/includes/prod_sh
 1. Open the environment you use, locate **Resources**, and select **Dynamics 365 apps**.
 1. Locate the **Business Central Virtual Entity** app in the list, and then select **... (More application actions)** > **Details**.  
 
-   :::image type="content" source="../developer/media/power-plat-bc-virtual-table.svg"" alt-text="Ellipsis button for Business Central Virtual Table details in Power Platform admin center.":::
+   :::image type="content" source="../developer/media/power-plat-bc-virtual-table.svg" alt-text="Ellipsis button for Business Central Virtual Table details in Power Platform admin center.":::
 
 In the **Business Central Virtual Entity Details** pane, the **Version** column under **Package(s)** displays the current version number.
 
