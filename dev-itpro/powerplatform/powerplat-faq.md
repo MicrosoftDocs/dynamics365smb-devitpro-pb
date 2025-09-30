@@ -6,7 +6,6 @@ ms.reviewer: solsen
 author: SusanneWindfeldPedersen
 ms.topic: faq
 ---
-
 # Business Central Virtual Tables FAQ
 
 This article is a collection of frequently asked questions about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables.
