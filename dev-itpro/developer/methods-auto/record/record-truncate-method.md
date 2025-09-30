@@ -52,7 +52,46 @@ Tables without an AutoIncrement field ignore this parameter. The default is **tr
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+The following example demonstrates how to truncate all records in a table and capture the optional return value to avoid a runtime error when truncate isn't supported.
+
+```al
+procedure ExampleTruncate()
+var
+    MyRec: Record "Truncate Sample";
+    Ok: Boolean;
+begin
+    Ok := MyRec.Truncate(true);
+    if Ok then
+        Message('Truncate Sample table truncated and AutoIncrement reset.')
+    else
+        Message('Truncate not supported; consider DeleteAll.');
+end;
+```
+
+The following example demonstrates how to truncate records matching a filter (in this case the table's "Location Code" field). This approach is only recommended when the majority of records match the filter because Truncate is most efficient in such scenarios.
+
+```al
+procedure ExampleTruncateFiltered()
+var
+    MyRec: Record "Truncate Sample";
+    Ok: Boolean;
+begin
+    MyRec.SetRange("Location Code", 'Red');
+    Ok := MyRec.Truncate(false);
+    if Ok then
+        Message('Filtered records (Location Code=Red) truncated (AutoIncrement preserved).')
+    else
+        Message('Filtered truncate not supported; consider deleting manually.');
+end;
+```
+
 ## See Also
+
+[Insert, Modify, ModifyAll, Delete, DeleteAll, and Truncate methods](../../devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
+[RecordRef.Truncate([Boolean]) method](../recordref/recordref-truncate-method.md)  
 [Record data type](record-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)
