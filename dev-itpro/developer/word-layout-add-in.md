@@ -6,7 +6,7 @@ ms.author: kepontop
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.collection: 
-ms.date: 03/12/2025
+ms.date: 09/29/2025
 ms.custom: bap-template
 ---
 # Use the Word add-in for report layouts
@@ -66,7 +66,7 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 #### Step 2: Customize the layout using the Word add-in
 
 1. Open the downloaded document in Word.
-1. Insert a table with the two rows and four columns.
+1. Insert a table with two rows and four columns.
 
    The first is for defining the column headings. The second row is for the data for each customer (this row repeats).
 1. In the first row, add the following text in the columns: **No.**, **Name**, **Salesperson code**, **Balance**.
