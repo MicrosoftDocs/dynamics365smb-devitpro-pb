@@ -1,7 +1,7 @@
 ---
 title: Introduce UI support for masking sensitive data feature key
 description: Learn about the MaskType feature key.
-ms.date: 09/01/2025
+ms.date: 09/30/2025
 ms.reviewer: solsen
 ms.topic: concept-article
 author: SusanneWindfeldPedersen
