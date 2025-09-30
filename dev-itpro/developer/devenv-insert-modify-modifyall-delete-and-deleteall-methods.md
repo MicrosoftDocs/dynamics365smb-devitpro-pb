@@ -124,7 +124,7 @@ When you're developing your own applications, you should consider the following 
 2. Perform various checks to determine whether the record should be deleted.  
 3. Delete the record if step 2 indicated that you should.
 
-This scenario can cause problems in a multi-user environment. Another user can modify or delete the same record between your performing steps 2 and 3. If the record is modified, then perhaps the new contents of the record could change your decision to delete it. If another user deletes it, you can get a run-time error if you have verified that the record existed (in step 1). If the design of your application indicates that you can encounter this problem, you should consider using the LockTable method. LockTable should be used sparingly because this method degrades performance. Learn more about the LockTable method in [LockTable method](methods-auto/record/record-locktable-method.md).  
+This scenario can cause problems in a multi-user environment. Another user can modify or delete the same record between your performing steps 2 and 3. If the record is modified, then perhaps the new contents of the record could change your decision to delete it. If another user deletes it, you can get a run-time error if you verified that the record existed (in step 1). If the design of your application indicates that you can encounter this problem, you should consider using the LockTable method. LockTable should be used sparingly because this method degrades performance. Learn more about the LockTable method in [LockTable method](methods-auto/record/record-locktable-method.md).  
 
 ## DeleteAll method
 
@@ -186,7 +186,7 @@ Use `Truncate` when you need to clear or reduce most of a table. Example scenari
 - When there are event subscribers for the OnAfterDelete or OnBeforeDelete triggers of the table.
 - Tables with media fields.
 
-`Truncate` is supported when the global DatabaseDelete trigger is implemented (which is different for normal DeleteAll in bulk), meaning that trigger will NOT get called on Truncate.
+`Truncate` is supported when the global DatabaseDelete trigger is implemented (which is different for normal DeleteAll in bulk), meaning that trigger doesn't get called on `Truncate`.
 
 You can use the return value of  `Truncate` to attempt high-performance deletion, and if it isn't supported, fall back to using `DeleteAll`. For example:
 
