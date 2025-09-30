@@ -29,7 +29,7 @@ When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 
 
 ## New and changed features
 
-There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1. These changes affect users, administrators, and developers. Learn more at [Overview of Dynamics 365 Business Central 2025 release wave 2](/dynamics365/release-plan/2025wave2smb/dynamics365-business-central/planned-features).
+There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1. These changes affect users, administrators, and developers. Learn more at [Overview of Dynamics 365 Business Central 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/).
 
 ## Deprecated features
 
