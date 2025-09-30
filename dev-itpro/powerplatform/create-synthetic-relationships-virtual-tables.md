@@ -15,7 +15,7 @@ Business Central in Microsoft Dataverse.
 
 ## When not to use synthetic relationships
 
-Even though it's possible, we don't recommend creating synthetic relationships between two virtual tables. If you need to do it, create a [custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api) with the correct relationships. They're reflected inside Microsoft Dataverse. Learn more about how internal API relationships transform into virtual table relationships [here](powerplat-entity-modeling#native-tabletonative-table-relationships).
+Even though it's possible, we don't recommend creating synthetic relationships between two virtual tables. If you need to do it, create a [custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api) with the correct relationships. They're reflected inside Microsoft Dataverse. Learn more about how internal API relationships transform into virtual table relationships [here](powerplat-entity-modeling.md#native-tabletonative-table-relationships).
 
 ## Create synthetic relationship between native and virtual table
 
