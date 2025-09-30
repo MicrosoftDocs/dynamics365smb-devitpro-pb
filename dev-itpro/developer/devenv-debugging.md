@@ -3,7 +3,7 @@ title: Debugging in AL
 description: Debugging in AL with Visual Studio Code and the AL Language extension.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 01/20/2025
+ms.date: 08/21/2025
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.author: solsen
@@ -53,6 +53,9 @@ The following video illustrates that `Customer.dal` is an external file. A break
 Learn more about **Go to Definition** in [AL code navigation](devenv-al-code-navigation.md). 
 
 ### Conditional breakpoints
+
+> [!NOTE]
+> At this point conditional breakpoints aren't supported in version 26.0 and later due to necessary changes in the platform. We're investigating this issue and will update the documentation accordingly.
 
 You can also set a condition on a breakpoint and if the condition evaluates as true, then code execution breaks at the breakpoint. Learn more in [Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md).
 

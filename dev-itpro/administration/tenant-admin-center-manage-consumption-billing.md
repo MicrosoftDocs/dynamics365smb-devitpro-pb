@@ -27,6 +27,7 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 <!--Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing). [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130)-->
 
+
 ### Billable agent capabilities
 
 - [Payables Agent](/dynamics365/business-central/payables-agent)
@@ -71,6 +72,10 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 1. Link the Business Central environment to the Power Platform environment (internal admin).
 
    As a reseller, contact the customer's internal admin. As an internal admin, use the Business Central admin center to link the Business Central environment to the Power Platform environment. Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
+
+Watch this YouTube video for summary of how to manage pay-as-you-go billing:
+
+[![Watch the video](../developer/media/pay-as-you-go-video.png)](https://www.youtube.com/watch?v=9esVS6I4wrY)
 
 ## Manage capacity and usage
 
