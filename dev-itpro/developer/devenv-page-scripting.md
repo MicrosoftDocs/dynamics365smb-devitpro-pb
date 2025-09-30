@@ -272,7 +272,7 @@ A recording can include scripts from other recordings, letting you create a suit
 
 #### [Recording YAML](#tab/recyml2)
 
-The following code example includes scripts `Recording-1` and `Recording-2` in the host script `Main`. `Recording-1` and `Recording-2` are in a subfolder to `Main`called `ìncludes`.
+The following code example includes scripts `Recording-1` and `Recording-2` in the host script `Main`. `Recording-1` and `Recording-2` are in a subfolder to `Main` called `includes`.
 
 ```yml
 steps:
