@@ -31,7 +31,7 @@ The following table shows how data types from [!INCLUDE[prod_short](../developer
 
 | Data type in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] | Modeled data type in [!INCLUDE[dataverse](../includes/dataverse_short.md)] |
 |-------------------------------------|------------------------------------------|
-| Real                                | Decimal<br><br>For information about the possible mismatch, see the next table.</p> |
+| Real                                | Decimal<br><br>For information about the possible mismatch, consult the next table.</p> |
 | Long                                | Decimal, where the precision equals 0 (zero) |
 | Int                                 | Integer |
 | String (non-memo), String (memo)    | String – single line of text, String – multiple lines of text |
@@ -100,7 +100,7 @@ Therefore, in effect, the table name is the only information that is used in a r
 
 ### Virtual table–to–native table relationship
 
-To establish relationships between native and virtual tables, use the synthetic synthetic relationships. Learn more in [Create synthetic table relationships](create-synthetic-relationships-virtual-tables.md).
+To establish relationships between native and virtual tables, use the synthetic relationships. Learn more in [Create synthetic table relationships](create-synthetic-relationships-virtual-tables.md).
 
 <!-- Consider an example where you want to show sales orders from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Account A in Dataverse. A foreign key relation is needed between the native table **Account** and the virtual table **dyn365bc_salesorder_v2_0**. Once the relation is established, a virtual table can be used on pages, like other related tables. To set up a virtual table to native table relation, follow these steps:
 
@@ -165,7 +165,7 @@ codeunit 50100 SyncAdditionalFields
 }
 ```
 
-For more information, see [Customizing an Integration with [!INCLUDE[dataverse](../includes/dataverse_short.md)]](../administration/administration-custom-cds-integration.md).
+Learn more in [Customizing an Integration with [!INCLUDE[dataverse](../includes/dataverse_short.md)]](../administration/administration-custom-cds-integration.md).
 
 ### Native table–to–virtual table relationships
 
@@ -183,7 +183,7 @@ Furthermore, every virtual table for a [!INCLUDE[prod_short](../developer/includ
  
 ## OData actions
 
-OData actions in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables are made available as custom actions in [!INCLUDE[dataverse](../includes/dataverse_short.md)]. For more information about custom actions and what they enable in [!INCLUDE[dataverse](../includes/dataverse_short.md)], see [Custom actions](/powerapps/developer/common-data-service/custom-actions).
+OData actions in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables are made available as custom actions in [!INCLUDE[dataverse](../includes/dataverse_short.md)]. Learn more about custom actions and what they enable in [!INCLUDE[dataverse](../includes/dataverse_short.md)] in [Custom actions](/powerapps/developer/common-data-service/custom-actions).
 
 OData actions generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] have only one parameter, which is the table. There's no output parameter.
 
