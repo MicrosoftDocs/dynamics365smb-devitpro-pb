@@ -1,7 +1,7 @@
 ---
 title: Testing the application overview
 description: Learn about how to use automated tests in Business Central
-ms.date: 23/09/2025
+ms.date: 09/30/2025
 ms.reviewer: solsen
 ms.topic: overview
 author: jswymer
