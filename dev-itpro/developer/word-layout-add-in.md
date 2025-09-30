@@ -51,7 +51,7 @@ In this exercise, you create a Word layout that lists customers. This exercise c
    1. In the **Add New Layout for a Report** dialog box, set the following fields.
 
       | Field | Value | 
-      |---|---|---|
+      |---|---|
       | Report ID | 101 |
       | Layout Name | Enter a brief descriptive name for the layout to help you easily identify it. |
       | Format Options | **Word**|
