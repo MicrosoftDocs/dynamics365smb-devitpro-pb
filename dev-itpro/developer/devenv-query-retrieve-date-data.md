@@ -3,11 +3,16 @@ title: Retrieving Date Data in Queries
 ms.date: 09/30/2025
 ms.topic: concept-article
 author: jswymer
+description: Learn how to retrieve year, month, or day from date fields in query results. Discover setup steps, examples, and best practices.
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:09/30/2025
 ---
 
 # Retrieving date data in queries
-
-When you have fields in a table that contain dates, you can use a date method to retrieve only the year, month, or day instead of including the date in the resulting dataset of a query.  
+  
+You can use a date method to retrieve only the year, month, or day from date fields in query results, instead of including the full date.
   
 ## Setting up a Date method on a query column  
 
@@ -35,11 +40,11 @@ The following table contains data about sales orders for customers. The **Order 
 |3000|Deerfield Graphics Company|29-04-2018|  
 
 > [!NOTE]  
->  This is a simplified subset of the data that is found in table 36 Sales Header of the [!INCLUDE[demolong](includes/demolong_md.md)].
+> The table is a simplified subset of the data that is found in table 36 Sales Header of the [!INCLUDE[demolong](includes/demolong_md.md)].
   
 ### Sample query
 
-The following query object retrieves data from the sample Sales Header table. The query includes a totals method that counts the total the number of records from the table included in the dataset.
+The following query object retrieves data from the sample Sales Header table. The query includes a totals method that counts the total number of records from the table included in the dataset.
   
 ```AL
 query 50100 "Sample Data Query"
@@ -119,20 +124,20 @@ The `Year` method gets the year from the date expression of a field value in the
   
 ## <a name="DateTime"></a> Working with DateTime Data Types
 
- On the SQL server, date and time values are processed using Coordinated Universal Time \(UTC\). If your [!INCLUDE[prod_short](includes/prod_short.md)] solution uses a time zone other than UTC and the field on which you apply the date method has a data type of DateTime, then there might be a difference between the date value that is returned in the dataset for the field and the actual day, month, or year for the field in the table. This occurs when the corresponding UTC date for a field falls on the next day or previous day because of the time of day and the time zone of [!INCLUDE[prod_short](includes/prod_short.md)] solution. The following table includes examples of DateTime values for two time zones that will return days, months, and years in a dataset that differ from the values in the table.  
+On the SQL server, date and time values are processed using Coordinated Universal Time \(UTC\). If your [!INCLUDE[prod_short](includes/prod_short.md)] solution uses a time zone other than UTC and the field on which you apply the date method has a data type of DateTime, then there might be a difference between the date value that is returned in the dataset for the field and the actual day, month, or year for the field in the table. This situation occurs when the corresponding UTC date for a field falls on the next day or previous day because of the time of day and the time zone of [!INCLUDE[prod_short](includes/prod_short.md)] solution. The following table includes examples of DateTime values for two time zones that return days, months, and years in a dataset that differ from the values in the table.  
   
 |Time Zone|Date and Time in [!INCLUDE[prod_short](includes/prod_short.md)]|Day returned by Day method|Month returned by Month method|Year returned by Year method|  
 |---------------|-------------------------------------------|--------------------------------|------------------------------------|----------------------------------|  
 |Pacific Time \(UTC –8:00:00\)|12-31-2011 17:00:00|31|12|2018|  
 |Middle European Time \(UTC +1:00:00\)|01-01-2012 00:59:00|1|1|2019|  
   
- The differences in day, month, or year occur because when a date and time value is retrieved from the [!INCLUDE[prod_short](includes/prod_short.md)] database table, it is converted from the regional settings of the [!INCLUDE[prod_short](includes/prod_short.md)] solution to the UTC date and time. The day, month, or year is calculated on the SQL server, and then returned to the query dataset as an integer, which does not consider the regional settings of the [!INCLUDE[prod_short](includes/prod_short.md)] solution.  
+The differences in day, month, or year occur because when a date and time value is retrieved from the [!INCLUDE[prod_short](includes/prod_short.md)] database table, it's converted from the regional settings of the [!INCLUDE[prod_short](includes/prod_short.md)] solution to the UTC date and time. The day, month, or year is calculated on the SQL server, and then returned to the query dataset as an integer, which doesn't consider the regional settings of the [!INCLUDE[prod_short](includes/prod_short.md)] solution.  
   
- To avoid this condition, you should use the date method on fields that have a Date data type instead of a DateTime data type whenever possible. You can also return the DateTime value and implement post processing for the day, month, and year as needed.  
+To avoid this condition, you should use the date method on fields that have a Date data type instead of a DateTime data type whenever possible. You can also return the DateTime value and implement post processing for the day, month, and year as needed.  
 
 ## Date methods behavior on blank Date and DataTime fields
 
-This section explains how the `Day`, `Month`, and `Year` methods handle blank (undefined) Date and DataTime fields. In Business Central, a blank date is represented internally as 0D. In SQL Server, a the blank date is 01-01-1753 (day-month-year).
+This section explains how the `Day`, `Month`, and `Year` methods handle blank (undefined) Date and DataTime fields. In [!INCLUDE[prod_short](includes/prod_short.md)], a blank date is represented internally as 0D. In SQL Server, a blank date is 01-01-1753 (day-month-year).
 
 However, the values that date methods return for blank fields differ by product version. The following table shows the version-specific results:
 
