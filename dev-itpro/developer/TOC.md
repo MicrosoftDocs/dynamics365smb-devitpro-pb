@@ -1338,7 +1338,7 @@
 #### [Debugger.StepOver() method](methods-auto/debugger/debugger-stepover-method.md)
 #### [Debugger.Stop() method](methods-auto/debugger/debugger-stop-method.md)
 ### [Decimal data type](methods-auto/decimal/decimal-data-type.md)
-#### [Decimal.ToText() method](methods-auto/decimal/decimal-totext--method.md)
+#### [Decimal.ToText() method](methods-auto/decimal/decimal-totext-method.md)
 #### [Decimal.ToText([Boolean]) method](methods-auto/decimal/decimal-totext-boolean-method.md)
 ### [Dialog data type](methods-auto/dialog/dialog-data-type.md)
 #### [Dialog.Confirm(Text [, Boolean] [, Any,...]) method](methods-auto/dialog/dialog-confirm-method.md)
