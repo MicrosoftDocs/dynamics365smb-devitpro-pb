@@ -2,7 +2,7 @@
 title: Keyboard shortcuts for AL in Visual Studio Code
 description: List of keyboard shortcuts for the new development environment (Visual Studio Code).
 author: SusanneWindfeldPedersen
-ms.date: 05/26/2025
+ms.date: 09/04/2025
 ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 # Keyboard shortcuts for AL in Visual Studio Code
 
-The following table provides an overview of some of the shortcut key combinations that you can use when you're working in Visual Studio Code. For a complete overview, see [Key bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
+This article lists commonly used Visual Studio Code keyboard shortcuts for AL development—covering navigation, editing, building, publishing, debugging, and profiling. For the full, platform‑wide set of bindings, go to [Key bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
 
 ## General in Visual Studio Code
 
@@ -25,6 +25,9 @@ The following table provides an overview of some of the shortcut key combination
 |<kbd>Ctrl</kbd>+<kbd>F5</kbd>|Build and publish without debugging. **Note:** The keyboard shortcut has a different meaning when debugging.|
 |<kbd>F6</kbd>|Publish and open Designer.|
 |<kbd>Ctrl</kbd>+<kbd>F2</kbd>|Update the compiler used by the service tier(s).|
+
+> [!NOTE]
+> With runtime 16, you can cancel an in‑progress publish. Hit the **Cancel** button in the dialog in the lower right corner. The operation stops packaging/upload steps as soon as possible; partial artifacts aren’t applied to the server.
 
 ## Editing in Visual Studio Code
 
