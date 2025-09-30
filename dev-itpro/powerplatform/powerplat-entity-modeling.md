@@ -20,7 +20,7 @@ By default, virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Table plugin supports custom APIs. After custom APIs are installed, they appear in the list along with standard APIs. There are two important things to keep in mind:
 
-- Always specify a single field of type GUID in the ODataKeyFields property. Learn more in [Developing a custom API - Business Central | Microsoft Learn](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/api-custom).
+- Always specify a single field of type GUID in the ODataKeyFields property. Learn more in [Developing a custom API](/dynamics365/business-central/dev-itpro/api-custom).
 - Use only lowercase English letters and numbers inside API identifiers (APIVersion, APIPublisher, APIGroup). This practice helps avoid problems related to encoding across different regional versions of [!INCLUDE[dataverse](../includes/dataverse_short.md)] and [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
 ## Table fields
