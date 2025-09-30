@@ -10,7 +10,7 @@ ms.reviewer: solsen
 
 # Adding a FactBox to a page
 
-FactBoxes surface related, at-a-glance information for the current record in the page’s right pane. They can host parts (CardPart or ListPart), charts and cues, and system parts such as Notes and Links. This article shows how to add a FactBox area to a page, add parts, pass context by using the `SubPageLink` or `SubPageView` properties, and apply performance best practices.  A FactBox can be hidden or shown by the user by toggling the little **i** icon in the top right corner of the page.
+FactBoxes surface related, at-a-glance information for the current record in the page’s right pane. They can host parts (CardPart or ListPart), charts and cues, and system parts such as Notes and Links. This article shows how to add a FactBox area to a page, add parts, pass context by using the `SubPageLink` or `SubPageView` properties, and apply performance best practices. A FactBox can be hidden or shown by the user by toggling the little **i** icon in the top right corner of the page.
 
 The following example shows a page that displays a sales order list, where a FactBox is used to show sell-to customer sales history for a selected sales order in the list.
 
@@ -37,7 +37,7 @@ You define the FactBox by adding a FactBox area container control to the page. T
 
 ### Example
 
-The following example shows a simple customer card page with a FactBox. The FactBox contains a KPI for the customer's sales, a Notes part, and a Links part. With 2025 release wave 2, you can control the visibility of the `Summary` part, which is also illustrated in the code example below. Learn more about the system parts that you can choose in [System parts](#system-parts).
+The following example shows a simple customer card page with a FactBox. The FactBox contains a KPI for the customer's sales, a Notes part, and a Links part. With 2025 release wave 2, you can control the visibility of the `Summary` part, which is also illustrated in the following code example. Learn more about the system parts that you can choose in [System parts](#system-parts).
 
 ```AL
 page 50100 "Simple Customercard Page"
@@ -137,7 +137,7 @@ page 50101 MyPage
 
 ## Filtering data displayed on a page in a FactBox
 
-In many cases, you want to change the content that is displayed on the page in the FactBox based on the content of the main page. For example, if the main page is a Customer List, you can have a FactBox that includes the Customer Details page that shows information about a customer. When a user selects a customer in the Customer List, the Customer Details page displays information about the selected customer. To implement this functionality, you set up a table filter that associates a field in the table that is used by the Customer Details page with a field in the table that is used by the Customer List page, as shown in the example below. You can also filter on a constant value or set of conditions. 
+In many cases, you want to change the content that is displayed on the page in the FactBox based on the content of the main page. For example, if the main page is a Customer List, you can have a FactBox that includes the Customer Details page that shows information about a customer. When a user selects a customer in the Customer List, the Customer Details page displays information about the selected customer. To implement this functionality, you set up a table filter that associates a field in the table that is used by the Customer Details page with a field in the table that is used by the Customer List page, as shown in the next example. You can also filter on a constant value or set of conditions. 
 
 ### Example
 
@@ -185,7 +185,7 @@ Having a page composed of multiple FactBox pages that each process data from dif
     2. FactBoxes that aren't within view are only loaded when the user scrolls them into view.
 If the FactBox pane is collapsed, no FactBoxes are loaded until the user expands the FactBox pane.
 
-Below are some practical tips to help you make the most of this optimization:
+The following are some practical tips to help you make the most of this optimization:
 
 - Consider hiding any FactBoxes that represent secondary content that only some users require. Learn more about [Choosing the visibility of parts](devenv-designing-parts.md#choosing-the-visibility-of-parts).  
 - For FactBoxes that require heavy processing, consider processing in the page background task. Learn more about [Using page background tasks](devenv-designing-parts.md#using-page-background-tasks).  
