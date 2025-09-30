@@ -128,8 +128,8 @@ On the SQL server, date and time values are processed using Coordinated Universa
   
 |Time Zone|Date and Time in [!INCLUDE[prod_short](includes/prod_short.md)]|Day returned by Day method|Month returned by Month method|Year returned by Year method|  
 |---------------|-------------------------------------------|--------------------------------|------------------------------------|----------------------------------|  
-|Pacific Time \(UTC –8:00:00\)|12-31-2011 17:00:00|31|12|2018|  
-|Middle European Time \(UTC +1:00:00\)|01-01-2012 00:59:00|1|1|2019|  
+|Pacific Time \(UTC –8:00:00\)|12-31-2025 17:00:00|31|12|2025|  
+|Middle European Time \(UTC +1:00:00\)|01-01-2025 00:59:00|1|1|2025|  
   
 The differences in day, month, or year occur because when a date and time value is retrieved from the [!INCLUDE[prod_short](includes/prod_short.md)] database table, it's converted from the regional settings of the [!INCLUDE[prod_short](includes/prod_short.md)] solution to the UTC date and time. The day, month, or year is calculated on the SQL server, and then returned to the query dataset as an integer, which doesn't consider the regional settings of the [!INCLUDE[prod_short](includes/prod_short.md)] solution.  
   
@@ -137,7 +137,7 @@ To avoid this condition, you should use the date method on fields that have a Da
 
 ## Date methods behavior on blank Date and DataTime fields
 
-This section explains how the `Day`, `Month`, and `Year` methods handle blank (undefined) Date and DataTime fields. In [!INCLUDE[prod_short](includes/prod_short.md)], a blank date is represented internally as 0D. In SQL Server, a blank date is 01-01-1753 (day-month-year).
+This section explains how the `Day`, `Month`, and `Year` methods handle blank (undefined) Date and DateTime fields. In [!INCLUDE[prod_short](includes/prod_short.md)], a blank date is represented internally as 0D. In SQL Server, a blank date is 01-01-1753 (day-month-year).
 
 However, the values that date methods return for blank fields differ by product version. The following table shows the version-specific results:
 
