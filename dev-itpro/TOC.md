@@ -1685,7 +1685,8 @@
 
 ### Data virtualization
 #### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
-#### [Table modeling for virtual tables](powerplatform/powerplat-entity-modeling.md)
+#### [Working with virtual tables](powerplatform/powerplat-entity-modeling.md)
+#### [Create synthetic table relationships](powerplatform/create-synthetic-relationships-virtual-tables.md)
 #### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
 #### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
 #### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
