@@ -1,7 +1,7 @@
 ---
 title: Microsoft Power Platform integration with Business Central via Virtual Tables
 description: Learn about integration of Power Platform with Business Central via virtual tables.
-ms.date: 09/17/2025
+ms.date: 09/30/2025
 ms.reviewer: solsen
 ms.topic: overview
 author: SusanneWindfeldPedersen
@@ -9,7 +9,7 @@ author: SusanneWindfeldPedersen
 
 # Microsoft Power Platform integration with Business Central via virtual tables
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Table Plugin is a virtual data source in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], published on AppSource at [Business Central Virtual Table](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). It enables creating, reading, updating, deleting (CRUD) operations on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data directly from [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and Microsoft Power Platform. Virtual tables don't store data in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. The data stays in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], you need to make them available as virtual tables.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Table Plugin is a virtual data source in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], published on AppSource at [Business Central Virtual Table](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). It enables creating, reading, updating, and deleting (CRUD) operations on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data directly from [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and Microsoft Power Platform. Virtual tables don't store data in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. The data stays in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)], you need to make them available as virtual tables.
 
 ## Prerequisite reading
 
@@ -31,7 +31,7 @@ API (v2.0) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can b
 
 :::image type="content" source="../developer/media/dataverse-virtual-tables.svg#lightbox" alt-text="Shows how data virtualization works between Business Central and Dataverse":::
 
-Virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] acts as regular tables and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with full CRUD capability and without copying to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. , and apply all the logic already residing in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+Virtual tables in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] act as regular tables and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with full CRUD capability, without copying to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]. They can apply all the logic already residing in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ## Known limitations
 
