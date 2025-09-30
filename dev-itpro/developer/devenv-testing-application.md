@@ -23,8 +23,8 @@ The extent to which you can run automated tests depend on your [!INCLUDE[prod_sh
 |-----------------------------------------------------|-----------|-------|----|
 |Online |Production||Running tests isn't allowed because it might have an adverse effect on your business. Testing can incidentally invoke external systems, like CDS, PayPal, and web hook subscriptions. Invoking these systems might slow down the solution for other users or cause data corruption.|
 ||Sandbox|![check mark for feature.](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running a large number of tests or tests that take a long time (more than 15 minutes per test method) isn't allowed. It's recommended that you don't run tests more than one or two hours a day.|
-|On-premises|Production|![check mark for feature.](media/check.png)|For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#Development).|
-||Container-based development environment|![check mark for feature.](media/check.png)|This setup should be the default environment for running large number of tests or setting up CI/CD gates. For more information, see [Running a Container-Based Development Environment](devenv-running-container-development.md) or [Running Tests In Containers](https://freddysblog.com/2019/10/22/running-tests-in-containers-2).|
+|On-premises|Production|![check mark for feature.](media/check.png)|For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. Learn more in [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#Development).|
+||Container-based development environment|![check mark for feature.](media/check.png)|This setup should be the default environment for running large number of tests or setting up CI/CD gates. Learn more in [Running a Container-Based Development Environment](devenv-running-container-development.md) or [Running Tests In Containers](https://freddysblog.com/2019/10/22/running-tests-in-containers-2).|
 
 ## Test codeunits and Test methods
 
@@ -32,7 +32,7 @@ You write tests as AL code in methods of codeunits that are configured to be *te
 
 This pattern doesn't apply to test isolation and isn't recommended as a method for running tests.
 
-For more information about test codeunits and test methods, see [Test codeunits and test methods](devenv-test-codeunits-and-test-methods.md).
+Learn more in [Test codeunits and test methods](devenv-test-codeunits-and-test-methods.md).
 
 ## Test runner codeunits
 
@@ -63,7 +63,7 @@ There are two types of test pages:
 
 - TestRequestPage, which represents the request page on a report.
 
-You access the page's fields and properties or a field by using the dot notation. You can open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. For more information, see [Test pages](devenv-testing-pages.md).
+You access the page's fields and properties or a field by using the dot notation. You can open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. Learn more in [Test pages](devenv-testing-pages.md).
 
 ## UI handlers
 
@@ -73,7 +73,7 @@ For each page and report that you want to handle, you need to create a specific 
 
 If you run a test codeunit from a test runner codeunit, then any unhandled UI in the test methods of the test codeunit causes a failure of the test. If you don't run the test codeunit from a test runner codeunit, then any unhandled UI is displayed as it typically would.
 
-For more information, see [Create Handler methods](devenv-creating-handler-methods.md).
+Learn more in [Create Handler methods](devenv-creating-handler-methods.md).
 
 ## ASSERTERROR Keyword
 
