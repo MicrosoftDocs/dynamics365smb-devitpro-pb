@@ -11,16 +11,17 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The 2025 release wave 1 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] was kicked off on April 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE).
+> The [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2 was kicked off on October 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE).
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
 
-- Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch opening and what's new sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE)
-- Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
-- AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
-- Move your on-premise customers to the cloud, find resources here: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Edition 2025 release wave 2 'What's new' sessions: [aka.ms/BCLE](https://aka.ms/BCLE)
+- Download 'What's new' partner deck: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK) 
+- Download BCLE Highlight videos: [aka.ms/BCHighlights](https://aka.ms/BCHighlights) 
+- Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
+- Move your on-premise customers to the cloud, find resources here: [https://aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Latest release and updates  
 
@@ -34,7 +35,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Stay up to date
 
-- Watch the what's new sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
+- Watch the 'What's new' sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
@@ -42,6 +43,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ## Social and blogs
 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
+- Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://www.microsoft.com/dynamics-365/blog/it-professional/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://www.microsoft.com/dynamics-365/blog/business-leader/)
