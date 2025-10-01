@@ -59,7 +59,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Troubleshoot the Shopify Connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/troubleshoot-shopify-connector)| General availability|
 | | [Use the latest update for the Shopify Connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-latest-update-shopify-connector)| General availability|
 | Copilot and agents| [Autofill contact details with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/get-better-field-suggestions-using-autofill-copilot)| Public preview|
-| | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)| Public preview availability|
+| | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)| Public preview (controlled by **Feature Management**)|
 | | [Give more instructions for the agent when you review its tasks](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/give-more-instructions-agent-when-review-its-tasks)| Public preview|
 | | [Summarize with Copilot enhancements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/summarize-copilot-enhancements)| Public preview|
 | | [Understand how each Copilot and agent capability is billed](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/understand-how-each-copilot-agent-capability-billed)| Public preview|
@@ -95,10 +95,10 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Add data fields to report layouts using Word add-in](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-data-fields-report-layouts-using-word-add-in)| General availability|
 | |  [Deferral reporting enhancements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/deferral-reporting-enhancements)| General availability|
 | | [Use drill-back and dynamic dimension names in Power BI apps](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-drill-back-dynamic-dimension-names-power-bi-apps)| General availability|
-| | [Use enhanced Financial Reporting](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)| General availability|
+| | [Use enhanced Financial Reporting](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)| General availability (controlled by **Feature Management**)|
 | | [Use the enhanced Inventory Power BI app to forecast future inventory flow](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-inventory-power-bi-app-forecast-future-inventory)| General availability|
 | | [Use the enhanced Power BI app for Projects to analyze project profitability](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-app-projects-analyze-project-profitability)| General availability|
-| | [Use the enhanced Power BI Finance app to improve your cashflow](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-finance-app-improve-cashflow)| General availability]|
+| | [Use the enhanced Power BI Finance app to improve your cashflow](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-finance-app-improve-cashflow)| General availability|
 | | [Use the enhanced Power BI Manufacturing app and modernized reports in manufacturing analytics](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-manufacturing-app-modernized-reports-manufacturing-analytics)| General availability|
 | | [Use the enhanced Purchasing Power BI app to analyze risk related to vendors](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-purchasing-analytics)| General availability|
 | | [Use the enhanced Power BI Sales app and modernized reports in sales analytics](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-sales-analytics)| General availability|
@@ -120,7 +120,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Use updated demo data for Sustainability](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-updated-demo-data-sustainability)| General availability|
 | | [Use an updated Sustainability Manager Role Center](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-updated-sustainability-admin-role-center)| General availability|
 | User experiences| [Adjust width of Copilot, help, and page scripting panes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/adjust-width-copilot-help-page-scripting-panes)| General availability |
-| | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data)| Public preview|
+| | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data)| Public preview (controlled by **Feature Management**)|
 
 ## Changes to optional features in Feature Management
 
@@ -139,7 +139,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
-- Feature: Introduce UI support for masking sensitive data
+- [Feature: Introduce UI support for masking sensitive data](../developer/devenv-mask-type-feature-key.md)
 
 ## On-premises download packages
 
