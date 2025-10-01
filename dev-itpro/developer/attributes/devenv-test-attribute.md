@@ -2,7 +2,7 @@
 title: "Test attribute"
 description: "Specifies that the method is a test method."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ Specifies that the method is a test method.
 procedure Test()
 ```
 > [!IMPORTANT]
-> The above signature requires the Test method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the Test method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

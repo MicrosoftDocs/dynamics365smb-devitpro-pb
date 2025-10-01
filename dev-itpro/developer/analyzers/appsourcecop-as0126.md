@@ -2,14 +2,10 @@
 title: "AppSourceCop Warning AS0126"
 description: "By specifying a different publisher name for your extension, you grant extensions from that publisher the permission to access the internal features of your extension."
 ms.author: solsen
-ms.date: 12/19/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
-ai-usage: ai-assisted
-ms.custom:
- - ai-gen-docs-bap
- - ai-seo-date: 12/19/2024
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
