@@ -32,6 +32,12 @@ Specifies whether the fields declared in this object can be used as source expre
 
 ## Remarks
 
+From runtime 12.0, it is possible to add page fields in page customizations. The value `Never` was introduced to prevent sensitive fields from being added in customizations, including using the in-client designer for [page customizations](/dynamics365/business-central/ui-personalization-manage).
+
+From runtime version 16.0, it is possible to make page fields defined in page customizations **editable**. Previously, such fields were always read-only. By default, fields have the value `ToBeClassified` and are read-only. The values `AsReadOnly` and `AsReadWrite` define explicitly whether the field can be made editable.
+
+The value `Always` has been deprecated since it does not capture the developer intent regarding editability. It behaves similarly to `AsReadOnly`.
+
 If you change the property to `Never`, then when the new extension version is published, the field is no longer available for adding to a page using customization. Also, it's removed from any existing pages that show it. Learn more in [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
 
 If you change the property from `AsReadWrite` to `AsReadOnly`, then after publishing the new extension version, any page fields defined in page customizations that use the field as a source expression will no longer be editable.
