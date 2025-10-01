@@ -23,12 +23,19 @@ Specifies whether the fields declared in this object can be used as source expre
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**ToBeClassified**|runtime version 16.0|The fields declared in this object have not yet been given a classification. By default, the fields can be used as source expressions for new page fields in page customizations, but they cannot be made editable.|
-|**Never**|runtime version 16.0|The fields declared in this object cannot be used as source expressions for new page fields in page customizations.|
-|**AsReadOnly**|runtime version 16.0|The fields declared in this object can be used as source expressions for new page fields in page customizations, but they cannot be made editable.|
-|**AsReadWrite**|runtime version 16.0|The fields declared in this object can be used as source expressions for new page fields in page customizations, and they can be made editable.|
+|**ToBeClassified**|runtime version 16.0|The field has not yet been given a classification. By default, the field can be used as source expressions for new page fields in page customizations, but it cannot be made editable.|
+|**Always**|runtime version 12.0|The field can be used as source expression for new page fields in page customizations, but it cannot be made editable.|
+|**Never**|runtime version 12.0|The field cannot be used as source expression for new page fields in page customizations.|
+|**AsReadOnly**|runtime version 16.0|The field can be used as source expression for new page fields in page customizations, but it cannot be made editable.|
+|**AsReadWrite**|runtime version 16.0|The field cannot be used as source expression for new page fields in page customizations.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+From runtime 12.0, it is possible to add page fields in page customizations. The value `Never` was introduced to prevent sensitive fields from being added in customizations, including using the in-client designer for [page customizations](/dynamics365/business-central/ui-personalization-manage).
+
+From runtime version 16.0, it is possible to make page fields defined in page customizations **editable**. Previously, such fields were always read-only. By default, fields have the value `ToBeClassified` and are read-only. The values `AsReadOnly` and `AsReadWrite` define explicitly whether the field can be made editable.
+
+The value `Always` has been deprecated since it does not capture the developer intent regarding editability. It behaves similarly to `AsReadOnly`.
 
 ## Remarks
 
@@ -73,6 +80,7 @@ The following table extension example adds two fields to the **Customer** table.
 
 > [!IMPORTANT]
 > `AllowInCustomizations` on the table extension level only applies to fields declared in the table extension and doesn't affect the base table fields.
+
 
 ```AL
 tableextension 50100 MyExtension extends Customer
