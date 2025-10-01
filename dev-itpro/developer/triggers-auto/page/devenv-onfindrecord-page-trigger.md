@@ -2,7 +2,7 @@
 title: "OnFindRecord (Page) trigger"
 description: "Overrides the default page behavior and enables you to specify which record you want to display when the page opens."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,7 +35,7 @@ Text or code value with the following options:
 =\<\>: Record defined in the Rec variable or the closest match.  
 
 
-## Return Value
+## Return value
 
 *Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  

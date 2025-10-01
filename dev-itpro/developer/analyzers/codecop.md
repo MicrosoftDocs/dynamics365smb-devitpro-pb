@@ -2,7 +2,7 @@
 title: "CodeCop analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.date: 08/05/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

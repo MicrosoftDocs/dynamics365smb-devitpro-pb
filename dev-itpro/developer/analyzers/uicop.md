@@ -2,7 +2,7 @@
 title: "UICop analyzer"
 description: "UICop is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,6 +33,7 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 |[AW0014](uicop-aw0014.md)|Groups containing ActionRef targets should not be hidden.|WebClient|Warning|
 |[AW0015](uicop-aw0015.md)|Actions with scope repeater must be promoted.|WebClient|Warning|
 |[AW0016](uicop-aw0016.md)|Rich Text Editor fields are only allowed while alone in a FastTab group.|WebClient|Warning|
+|[AW0017](uicop-aw0017.md)|MaskType property cannot be used inside repeaters.|WebClient|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
