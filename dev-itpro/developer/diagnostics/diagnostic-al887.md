@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0280"
-description: "The event '{0}' is not found in the target '{1}'."
+title: "Compiler Error AL0887"
+description: "A member of type {0} named '{1}' conflicts with a similarly named member '{2}' of {3} {4}."
 ms.author: solsen
 ms.date: 08/08/2025
 ms.topic: reference
@@ -10,17 +10,14 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0280
+# Compiler Error AL0887
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The event '{0}' is not found in the target '{1}'.
+A member of type {0} named '{1}' conflicts with a similarly named member '{2}' of {3} {4}. Both will have the same database name '{3}'.
 
-
-## Description
-The referenced event is missing.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
-[Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting started with AL](../devenv-get-started.md)  
+[Developing extensions](../devenv-dev-overview.md)  
