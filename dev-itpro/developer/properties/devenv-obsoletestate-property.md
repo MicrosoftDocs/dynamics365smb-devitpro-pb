@@ -2,7 +2,7 @@
 title: "ObsoleteState property"
 description: "Marks whether the object will be deprecated."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,6 +20,7 @@ Marks whether the object will be deprecated.
 -   Page Custom Action
 -   Page File Upload Action
 -   Report Layout
+-   Page User Control
 -   Table
 -   Table field
 -   Table key
@@ -70,6 +71,9 @@ ObsoleteState = Pending;
 ```
 
 ## Remarks
+
+> [!NOTE]
+> The list of available options depends on the element, you're working with. For some elements, the options may be more limited, for other elements you have a wider range of options. The full list of options is: `Moved`, `No`, `Pending`, `PendingMove`, and `Removed`. Some of these settings are used when [moving tables and fields between extensions](../devenv-move-table-fields-between-extensions.md).
 
 By coding against this property, you can use this property as a way to communicate through code to other developers which objects and elements will become obsolete over time and those which are already obsolete, enabling them to adjust their application code accordingly.
 
