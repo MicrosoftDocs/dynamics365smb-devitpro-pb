@@ -2,7 +2,7 @@
 title: "DateTime data type"
 description: "Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999."
 ms.author: solsen
-ms.date: 06/13/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# DateTime Data type
+# DateTime data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999. An undefined or blank DateTime is specified by 0DT.
@@ -24,7 +24,7 @@ The following methods are available on instances of the DateTime data type.
 |-----------|-----------|
 |[Date()](datetime-date-method.md)|Gets the date part.|
 |[Time()](datetime-time-method.md)|Gets the time part.|
-|[ToText([Boolean])](datetime-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
+|[ToText([Boolean])](datetime-totext-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

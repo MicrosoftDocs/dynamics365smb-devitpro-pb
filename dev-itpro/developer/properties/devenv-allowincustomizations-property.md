@@ -1,8 +1,8 @@
 ---
 title: "AllowInCustomizations property"
-description: "Specifies whether this table field can be used as source expression for new page fields in page customizations."
+description: "Specifies whether the fields declared in this object can be used as source expression for new page fields in page customizations, and if they can be made editable."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 09/19/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,9 +11,9 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AllowInCustomizations Property
-> **Version**: _Available or changed with runtime version 12.0._
+> **Version**: _Available or changed with runtime version 16.0._
 
-Specifies whether the table field can be used as source expression for new page fields in page customizations.
+Specifies whether the fields declared in this object can be used as source expression for new page fields in page customizations, and if they can be made editable.
 
 ## Applies to
 -   Table
@@ -39,7 +39,13 @@ The value `Always` has been deprecated since it does not capture the developer i
 
 ## Remarks
 
-If you change the property to `Never`, then when the new extension version is published, the field is no longer available for adding to a page using customization. Also, it's removed from any existing pages that show it. For more information about page customization, see [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
+From runtime 12.0, it is possible to add page fields in page customizations. The value `Never` was introduced to prevent sensitive fields from being added in customizations, including using the in-client designer for [page customizations](/dynamics365/business-central/ui-personalization-manage).
+
+From runtime version 16.0, it is possible to make page fields defined in page customizations **editable**. Previously, such fields were always read-only. By default, fields have the value `ToBeClassified` and are read-only. The values `AsReadOnly` and `AsReadWrite` define explicitly whether the field can be made editable.
+
+The value `Always` has been deprecated since it does not capture the developer intent regarding editability. It behaves similarly to `AsReadOnly`.
+
+If you change the property to `Never`, then when the new extension version is published, the field is no longer available for adding to a page using customization. Also, it's removed from any existing pages that show it. Learn more in [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
 
 If you change the property from `AsReadWrite` to `AsReadOnly`, then after publishing the new extension version, any page fields defined in page customizations that use the field as a source expression will no longer be editable.
 
@@ -73,7 +79,8 @@ tableextension 50100 MyTable
 The following table extension example adds two fields to the **Customer** table. Because the `AllowInCustomizations` property is set to `Never` on the table extension level, the fields can't be added to pages through customization in the client.  
 
 > [!IMPORTANT]
-> `AllowInCustomizations` on the table extension level only applies to fields declared in the table extension and does not affect the base table fields.
+> `AllowInCustomizations` on the table extension level only applies to fields declared in the table extension and doesn't affect the base table fields.
+
 
 ```AL
 tableextension 50100 MyExtension extends Customer

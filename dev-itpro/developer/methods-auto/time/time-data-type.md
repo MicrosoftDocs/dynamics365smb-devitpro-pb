@@ -2,7 +2,7 @@
 title: "Time data type"
 description: "Denotes a time ranging from 00:00:00.000 to 23:59:59.999."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Time Data type
+# Time data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a time ranging from 00:00:00.000 to 23:59:59.999. An undefined or blank time is specified by 0T.
@@ -26,7 +26,7 @@ The following methods are available on instances of the Time data type.
 |[Millisecond()](time-millisecond-method.md)|Gets the milliseconds component of the time represented by this instance.|
 |[Minute()](time-minute-method.md)|Gets the minute component of the time represented by this instance.|
 |[Second()](time-second-method.md)|Gets the seconds component of the time represented by this instance.|
-|[ToText([Boolean])](time-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
+|[ToText([Boolean])](time-totext-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

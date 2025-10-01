@@ -2,7 +2,7 @@
 title: "Duration.ToText([Boolean]) Method"
 description: "Converts the value to a text."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # Duration.ToText([Boolean]) Method
 > **Version**: _Available or changed with runtime version 15.0._
 
-Converts the value to a text. Equvilant to calling Format(value, 0, 0).
+Converts the value to a text. Equivalent to calling Format(value, 0, 0).
 
 
 ## Syntax
@@ -27,7 +27,7 @@ An instance of the [Duration](duration-data-type.md) data type.
 
 *[Optional] Invariant*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If true, invariant formatting will be performed.  
+If true, invariant formatting will be performed. Equivalent to calling Format(value, 0, 9).  
 
 
 ## Return Value

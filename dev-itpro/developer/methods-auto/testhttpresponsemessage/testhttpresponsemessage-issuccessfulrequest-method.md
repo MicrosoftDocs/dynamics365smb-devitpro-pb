@@ -2,7 +2,7 @@
 title: "TestHttpResponseMessage.IsSuccessfulRequest([Boolean]) Method"
 description: "Gets or sets a value that indicates if the HTTP request was successful or not."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Gets or sets a value that indicates if the HTTP request was successful or not. B
 
 ## Syntax
 ```AL
-IsSuccessfulRequest :=   TestHttpResponseMessage.IsSuccessfulRequest([SetIsSuccessfulRequest: Boolean])
+[IsSuccessfulRequest := ]  TestHttpResponseMessage.IsSuccessfulRequest([SetIsSuccessfulRequest: Boolean])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -33,7 +33,7 @@ An instance of the [TestHttpResponseMessage](testhttpresponsemessage-data-type.m
 
 
 ## Return Value
-*IsSuccessfulRequest*  
+*[Optional] IsSuccessfulRequest*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the HttpClient request should indicate success, otherwise **false**.
 
