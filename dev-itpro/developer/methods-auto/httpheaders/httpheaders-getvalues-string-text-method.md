@@ -41,7 +41,77 @@ The specified header values.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+This example demonstrates:
+
+- Adding multiple values to the same header name (Accept header with different MIME types)
+- Retrieving header values using the GetValues() method
+- Checking the return value to ensure the header exists
+- Iterating through the array to process each value
+- Practical use case with response headers like Set-Cookie that often have multiple values
+
+```al
+procedure ExampleGetValues()
+var
+    HttpClient: HttpClient;
+    HttpRequestMessage: HttpRequestMessage;
+    HttpResponseMessage: HttpResponseMessage;
+    HttpHeaders: HttpHeaders;
+    HeaderValues: array[10] of Text;
+    HeaderKey: Text;
+    i: Integer;
+    Success: Boolean;
+begin
+    // Initialize HTTP request
+    HttpRequestMessage.Method := 'GET';
+    HttpRequestMessage.SetRequestUri('https://api.example.com/data');
+    
+    // Add multiple values for the same header (for example, Accept header)
+    HttpHeaders := HttpRequestMessage.GetHeaders();
+    HttpHeaders.Add('Accept', 'application/json');
+    HttpHeaders.Add('Accept', 'application/xml');
+    HttpHeaders.Add('Accept', 'text/plain');
+    
+    // Get the values for the Accept header
+    HeaderKey := 'Accept';
+    Success := HttpHeaders.GetValues(HeaderKey, HeaderValues);
+    
+    if Success then begin
+        Message('Found %1 values for header %2:', ArrayLen(HeaderValues), HeaderKey);
+        
+        // Display each value
+        for i := 1 to ArrayLen(HeaderValues) do begin
+            if HeaderValues[i] <> '' then
+                Message('Value %1: %2', i, HeaderValues[i]);
+        end;
+    end else begin
+        Message('Header %1 not found or has no values', HeaderKey);
+    end;
+    
+    // Send the request
+    if HttpClient.Send(HttpRequestMessage, HttpResponseMessage) then begin
+        // Process response headers
+        HttpHeaders := HttpResponseMessage.GetHeaders();
+        
+        // Check for Set-Cookie headers (servers often send multiple)
+        HeaderKey := 'Set-Cookie';
+        Clear(HeaderValues);
+        
+        if HttpHeaders.GetValues(HeaderKey, HeaderValues) then begin
+            Message('Response contains cookies:');
+            for i := 1 to ArrayLen(HeaderValues) do begin
+                if HeaderValues[i] <> '' then
+                    Message('Cookie %1: %2', i, HeaderValues[i]);
+            end;
+        end;
+    end;
+end;
+```
+
 ## Related information
-[HttpHeaders Data Type](httpheaders-data-type.md)
-[Get Started with AL](../../devenv-get-started.md)
-[Developing Extensions](../../devenv-dev-overview.md)
+
+[HttpHeaders Data Type](httpheaders-data-type.md)  
+[Get Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

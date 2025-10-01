@@ -107,7 +107,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0472](codecop-aa0472.md)|Page control fields having amount AutoFormatType defined must have the property AutoFormatExpression specified.|Localizability|Info|
 |[AA0473](codecop-aa0473.md)|Table control fields of type 'Decimal' must have the property AutoFormatType specified.|Localizability|Info|
 |[AA0474](codecop-aa0474.md)|Table control fields that have amount AutoFormatType defined, must have the property AutoFormatExpression specified.|Localizability|Info|
-|[AA0475](codecop-aa0475.md)|Truncate can only be used on normal tables without media fields and outside of try functions..|Design|Error|
+|[AA0475](codecop-aa0475.md)|Truncate can only be used on normal tables without media fields and outside of try functions.|Design|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
