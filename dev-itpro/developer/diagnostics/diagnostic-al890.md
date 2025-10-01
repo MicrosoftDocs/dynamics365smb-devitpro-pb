@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0280"
-description: "The event '{0}' is not found in the target '{1}'."
+title: "Compiler Error AL0890"
+description: "The identifier assigned to the Summary SystemPart type is not valid."
 ms.author: solsen
 ms.date: 08/08/2025
 ms.topic: reference
@@ -10,17 +10,17 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0280
+# Compiler Error AL0890
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The event '{0}' is not found in the target '{1}'.
+The identifier assigned to the Summary SystemPart type is not valid. Valid identifier is {0}.
 
 
 ## Description
-The referenced event is missing.  
+The default identifier value must be assigned to Summary SystemPart.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
-[Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting started with AL](../devenv-get-started.md)  
+[Developing extensions](../devenv-dev-overview.md)  
