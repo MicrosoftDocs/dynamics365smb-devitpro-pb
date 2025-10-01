@@ -2,7 +2,7 @@
 title: "Compiler Error AL0190"
 description: "Constant value '{0}' is outside the range for a Time."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Constant value '{0}' is outside the range for a Time. 
+Constant value '{0}' is outside the range for a Time.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
