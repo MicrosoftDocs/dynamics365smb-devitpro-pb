@@ -2,7 +2,7 @@
 title: "MaskType property"
 description: "Specifies whether the field value should be masked for security purposes."
 ms.author: solsen
-ms.date: 23/09/2025
+ms.date: 10/01/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
