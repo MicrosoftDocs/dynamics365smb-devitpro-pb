@@ -2,7 +2,7 @@
 title: "DataTransfer.UpdateAuditFields([Boolean]) Method"
 description: "Sets if audit fields should be updated."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets if audit fields should be updated. If the value is set to false, the audit fields are not updated when calling the CopyFields method. Default value is true.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> From runtime version 16.0 and onward, this method is supported in Business Central online.
 
 ## Syntax
 ```AL
