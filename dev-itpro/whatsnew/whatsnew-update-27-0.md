@@ -2,14 +2,14 @@
 title: What's New or Changed in Business Central 2025 Release Wave 2 - Update 27.0 preview
 description: Get an overview of new and changed capabilities in the 27.0 update of Business Central online, which is part of 2025 release wave 2.
 ms.author: jswymer
-ms.date: 09/03/2025
+ms.date: 09/30/2025
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
 ms.custom: 
     - bap-template
 ---
-# Update 27.0 for Business Central 2025 release wave 2 (online preview)
+# Update 27.0 for Business Central 2025 release wave 2 
 
 This article provides an overview of the new and updated features and general information about update 27.0, which starts 2025 release wave 2.
 
