@@ -18,10 +18,10 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ## Hot topics right now
 
 - Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Edition 2025 release wave 2 'What's new' sessions: [aka.ms/BCLE](https://aka.ms/BCLE)
-- Download 'What's new' partner deck:[aka.ms/BCLEDECK](aka.ms/BCLEDECK) 
-- Download BCLE Highlight videos:[aka.ms/BCHighlights](aka.ms/BCHighlights) 
-- Find partner case studies:[aka.ms/D365PartnerSuccessStories](aka.ms/D365PartnerSuccessStories)
-- Move your on-premise customers to the cloud, find resources here: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- Download 'What's new' partner deck: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK) 
+- Download BCLE Highlight videos: [aka.ms/BCHighlights](https://aka.ms/BCHighlights) 
+- Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
+- Move your on-premise customers to the cloud, find resources here: [https://aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Latest release and updates  
 
