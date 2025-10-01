@@ -2,7 +2,7 @@
 title: "SendNotificationHandler attribute"
 description: "Specifies that the method is a SendNotificationHandler method, which handles Send statements."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ Specifies that the method is a SendNotificationHandler method, which handles Sen
 procedure SendNotificationHandler(var TheNotification: Notification) : Boolean;
 ```
 > [!IMPORTANT]
-> The above signature requires the SendNotificationHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the SendNotificationHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *[Optional] HandlerIsOptional*  
