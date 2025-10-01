@@ -188,6 +188,16 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
+### Business Central Launch Edition 2025 release wave 2
+
+The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The  Business Central Launch Edition provides you with a suite of resources:
+
+- 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
+- BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
+- Partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
+- 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
+- BCLE 2025 release wave 2 group on Viva Engage for asking questions to our product experts: [BCLE 2025 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=236770828288&view=all)
+
 ### AI-powered enhancements
 
 Watch this video to learn about AI-powered features and enhancements coming soon.
