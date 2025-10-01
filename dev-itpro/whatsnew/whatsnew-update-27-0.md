@@ -16,7 +16,7 @@ This article provides an overview of the new and updated features and general in
 ## New and updated features
 
 > [!TIP]
-> **Watch the 2025 release wave 2 launch edition videos** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
+> **Watch the launch edition 2025 release wave 2 sessions** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 This table lists new and updated features in update 27.0. Learn more about all features planned for 2025 release wave 2 (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
 
@@ -188,7 +188,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### Business Central Launch Edition 2025 release wave 2
+### Business Central Launch Edition - 2025 release wave 2
 
 The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
 
