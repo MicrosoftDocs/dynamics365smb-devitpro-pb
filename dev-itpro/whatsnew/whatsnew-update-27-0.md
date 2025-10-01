@@ -120,7 +120,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Use updated demo data for Sustainability](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-updated-demo-data-sustainability)| General availability|
 | | [Use an updated Sustainability Manager Role Center](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-updated-sustainability-admin-role-center)| General availability|
 | User experiences| [Adjust width of Copilot, help, and page scripting panes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/adjust-width-copilot-help-page-scripting-panes)| General availability |
-| | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data)| Public preview*|
+| | [Use the Concealed text field type for sensitive data](../developer/properties/devenv-masktype-property.md) <!--(/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data)-->| Public preview*|
 
 \* Controlled in **Feature Management**
 
@@ -184,7 +184,7 @@ Learn more in [Major updates for Business Central online](../administration/upda
 
 ### On-premises customers
 
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v27.md).
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v26.md).
 
 ## Good to know
 
