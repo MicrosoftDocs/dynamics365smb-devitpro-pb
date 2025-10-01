@@ -2,7 +2,7 @@
 title: "ExtendedDatatype property"
 description: "Sets the extended data type of a control."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,6 +30,7 @@ Sets the extended data type of a control.
 |**Ratio**|runtime version 1.0|The text is handled as a progress bar. This is not supported on the Web client.|
 |**Masked**|runtime version 1.0|Displays the value as dots. This will only have effect on fields, where the user can enter and display textual data (including numbers, time, date etc.)|
 |**Person**|runtime version 1.0|The client handles the field as media representing a person and will display this in the signature rounded styling. When the media field is empty, a silhouette of a person is shown.|
+|**Document**|runtime version 16.0|The client handles the media as a document, optimizing its size for portrait-oriented content like PDFs|
 |**Barcode**|runtime version 12.0|The phone and tablet clients handle the field as a code and will provide the option to set the field value using a barcode scanner.|
 |**RichContent**|runtime version 12.0|The client handles the field as a rich text field, which allows for styling and formatting. To enable a rich text field, the field must have the MultiLine property set to `true` and must reside alone within a FastTab group.|
 
