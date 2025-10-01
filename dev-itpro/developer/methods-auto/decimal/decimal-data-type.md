@@ -22,7 +22,7 @@ The following methods are available on instances of the Decimal data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[ToText()](decimal-totext--method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
+|[ToText()](decimal-totext-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 |[ToText([Boolean])](decimal-totext-boolean-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

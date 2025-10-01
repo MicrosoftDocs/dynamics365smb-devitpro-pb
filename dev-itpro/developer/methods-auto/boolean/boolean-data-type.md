@@ -22,7 +22,7 @@ The following methods are available on instances of the Boolean data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[ToText()](boolean-totext--method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
+|[ToText()](boolean-totext-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 |[ToText([Boolean])](boolean-totext-boolean-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
