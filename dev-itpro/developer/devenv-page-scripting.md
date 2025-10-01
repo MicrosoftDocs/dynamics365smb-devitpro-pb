@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 11/21/2024
+ms.date: 09/30/2025
 ms.custom: bap-template 
 ---
 
@@ -27,7 +27,6 @@ You can use the page scripting on any Business Central environment type, includi
 
 The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. For example, it can't automate control add-ins, embedded Power BI reports, or anything outside of the Business Central web client experience.
 
-
 ## Prerequisites
 
 - To record, your user account must have the **PAGESCRIPTING - REC** permission set or equivalent permissions.
@@ -43,29 +42,12 @@ The **Page Scripting** pane opens on the right side, as illustrated in the follo
 
 Now you're ready to start a new recording or play an existing recording. 
 
-
-<!--
-1. In the **Page Scripting** pane, select the **Start new** button in the pane or the **New recording** icon in the control bar at the top.
-
-   Recording starts, as indicated by solid red circle in the control bar.
-1. Run through the task as you typically would.
-
-   As you interact with the application, your actions and  actions you do are added in sequence to the **Page Scripting** pane.
-
-1. If you want to pause the recording select the **Stop** button in the control bar. To resume recording, select the **Start recording** button.
-1. When you are done, select the **Stop** button.
-
-1. To play back the recording right away, select the **Play** button.
-1. To save the recording to file so you run it later or share with someone, select the **Save** icon in the control bar.
-
-The sections that follow explain other capabilities of the page scripting tool for recording and replaying interactions. -->
-
 > [!NOTE]
 > In this article, *control* refers to page controls, like fields, cues or filters.
 
 ## Record
 
-This section outlines the basic steps to make a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
+This section outlines the basic steps to making a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
   
 1. Open the page where you want to start recording.
 
@@ -75,40 +57,48 @@ This section outlines the basic steps to make a recording with the page scriptin
 
 1. Go back to the page and run through the task that you want to record.
 
-   As you use the application, your actions and the application’s responses are added in sequence as steps in the **Page Scripting** pane.
+   As you use the application, your actions and the application's responses are added in sequence as steps in the **Page Scripting** pane.
 
 1. At any time during recording, you can perform the following actions:
 
-   - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
-   - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar.
-   - To delete the last captured step, select **...** next to the step and then select **Delete**.
-   - To hide the page scripting pane, select the uppermost ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
+   - Pause recording: Select **Stop** ![stop recording](media/page-scripting-stop-button.png) in the control bar.
+   - Resume recording and continue actions: Select the **Start recording** ![start recording](media/page-scripting-start-button.png) in the control bar.
+   - Delete a captured step: Select **...** in the step and then select **Delete**.
+   - Insert steps between two previously recorded steps: Select **...** in the step after which you want to add steps, and then select **Record from here**. This action moves the red recording position line. When ready, select the **Start recording** ![start recording](media/page-scripting-start-button.png).
+   - Rearrange steps: Drag a step to move it to a new location.  
+   - Hide the page scripting pane: Select the uppermost ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
    - To cancel recording and exit the page scripting tool, select the **Close recording** ![Shows the X button that closes the page scripting pane](media/page-scripting-hide-button.png) button in the **Recording** bar.
 
 1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
 1. To play back the recording right away, select the **Play** ![play recording](media/page-scripting-play-button.png) button.
 
    You can replay the recording as long as you don't close the page.
-1. To save the recording to file so you can run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar.
+1. To save the recording to file so you can run it later or share with someone, select the **Save** ![save recording](media/page-scripting-save-recording-button.png) button in the control bar. Learn more in [Save a recording to a file](#save-a-recording-to-a-file).
 
-## Options for capturing steps during recording
+## Edit recording
 
-During recording, you can manually insert special steps by right-clicking a page control and selecting an appropriate option. These options are explained in the following sections.
+While recording, you can edit captured steps to correct actions, add missing inputs, or adjust the flow without stopping the session. Changes take effect immediately in the recording sequence. You can also edit steps when not actively recording — either directly in the **Page Scripting** pane (for example, use ... > Properties, drag steps, or delete/insert steps) or by editing the saved recording YAML file. Edits in the UI apply immediately. After editing the YAML file, save and reopen the recording to test the changes in the Page Scripting tool.
 
-### Copy and paste control values
+## Copy and paste control values
+
+> APPLIES TO: Recording only
 
 The page scripting tool comes with its own clipboard. The clipboard lets you copy values of controls and then paste the values in others controls or expressions, or even use them to [validate results](#validate-control-values). Copy and paste are available from the right-click context menu on a control.
 
 - To copy a control value to the clipboard, right-click the control and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
 - To paste a control value from the clipboard to another control, select **Page Scripting** > **Paste** > select the value from the list. Pasting a value from the clipboard creates an *input* step in the **Page Scripting** pane.
 
-### Use session info (user ID)
+## Use session info (user ID)
+
+> APPLIES TO: Recording only
 
 When recording, you have access to session information, such as the user ID. This information can be used in expressions and defining conditions. For example, suppose you have a list page that can be filtered based on the current signed in user. To insert the user ID in a control, like a filter, right-click the control and then select **Page Scripting** > **Paste**> **Session Info** > **User ID**.
 
 An input step with property value `Session.'User ID'` is added in the **Page Scripting** pane.
 
-### Validate control values
+## Validate control values
+
+> APPLIES TO: Recording only
 
 While recording, you can insert validation steps that assert that a control has a specific value when the recording is played back. When you insert a validation step, you can choose to validate using the control's current value, a value from the clipboard, or a custom value that you define using Power Fx.
 
@@ -123,7 +113,9 @@ To add a validation step:
 
    ![Shows the properties of a validation step recording](media/page-scripting-validation-step.png)
 
-### Make steps conditional
+## Make steps conditional
+
+> APPLIES TO: Recording only
 
 Another option during the recording is to insert conditional steps. During playback, conditional steps are only run if the condition is met. For example, suppose you only want to do some steps if there are no current rows in a list.
 
@@ -142,7 +134,9 @@ To insert conditional steps:
 1. When you're finished adding conditional steps, select **End scope** in the **Page Scripting** pane.
 1. If you want to modify the condition, go to the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
 
-### Add a wait step
+## Add a wait step
+
+> APPLIES TO: Recording only
 
 When recording is eventually played back, it can be convenient to have a time delay after some steps before the next step runs. You add this delay while recording by inserting a wait step immediately after a captured step. You can only add a wait step on the last step listed in the page scripting tool&mdash;you can't insert wait steps between earlier steps.  
 
@@ -152,15 +146,28 @@ To add a wait step:
 1. In the **Wait Time** box, type the number of milliseconds that you want to wait before the next step runs.
 1. Go back to the page and continue the test you're recording.
 
-## Edit captured steps
+## Make page optional
 
-During recording and playback, you can edit a captured step. The editing options for a step depend on whether you're recording or playing back a recording and what kind of action the step runs. This section explains some of the options. 
+Sometimes a page that opens while recording won't necessarily open during playback. Unless you handle this condition, the script might fail during playback.
 
-### Change step properties
+A common case is when a confirmation dialog box appears during recording, for example, after changing a field value. During playback, the confirmation dialog box might not appear, for example, because the field value wasn't modified this time. The script fails on the step where it expects the confirmation dialog box.
 
-Some steps, like conditional steps or validation steps, have properties that you can modify to change the behavior. To access the properties for a step in the **Page Scripting** pane, select  **...** > **Properties**.  
+To handle this case, make the page optional:
 
-#### Use expressions in properties
+1. In the **Page Scripting** pane, locate the recorded step that opens the optional page. The step has the similar to **Page X was shown**, where **X** is the name.
+1. On the step, select **...** > **Make this an optional page**.
+
+   The steps that follow the optional page are indented to indicate that they're only run if the page is shown.
+
+<!-- ## Edit captured steps
+
+During recording and playback, you can edit a captured step. The editing options for a step depend on whether you're recording or playing back a recording and what kind of action the step runs. This section explains some of the options.-->
+
+## Change step properties
+
+Some steps, like conditional steps or validation steps, have properties that you can modify to change the behavior. To access the properties for a step in the **Page Scripting** pane, select **...** > **Properties**. Properties are settings or attributes on individual steps that control the behavior of a specific step, for example, the wait time, input field, or page scope.
+
+### Use expressions in properties
 
 Property values and conditions are typically through actions done during recording. However, these values and conditions are represented as Microsoft Power Fx expressions. Power Fx is the low-code language used across Microsoft Power Platform. It's a general-purpose, strong-typed, declarative, and functional programming language.
 
@@ -169,18 +176,122 @@ Here are a couple examples:
 - To validate that a previously copied value is incremented in a validate step, use the expression: `Clipboard.'SO Processor Activities - ReadyToShip' + 1`.
 - To generate a "random" name to use in an input step, use the expression: `"Customer " & Today()`.
 
-[Learn more about Power Fx.](/power-platform/power-fx/overview)
+[Learn more about Power Fx](/power-platform/power-fx/overview)
 
-### Handle optional pages
+## Parameterize inputs and expressions
 
-Sometimes a page doesn’t always show in a recorded flow because it depends on data or settings. An example is the confirmation dialog shown when closing a sales order. To handle this situation, you can make the page an optional page, which means that the steps under the page only run if the page is shown.
+Parameters are named inputs for passing values into the script at runtime. For example, suppose a script has a step that sets a date field. Instead of using the date selected during the recording, you define a parameter that lets you select the date during playback.
 
-To make a page optional:
+Using parameters has the following advantages:
 
-1. In the **Page Scripting** pane, locate the recorded step that opens the optional page. The step has the similar to **Page X was shown**, where **X** is the name.
-1. On the step, select **...** > **Make this an optional page**.
+- Reusability: Instead of hardcoding values (like customer numbers or item IDs), you can use parameters to make the script adaptable for different test scenarios or environments.
+- Dynamic execution: You can use parameters in expressions to dynamically calculate or validate values during playback.
+- Modularity: Parameters allow you to include sub-recordings and pass values between them. For example, you can create a customer in one recording and validate it in another by passing the customer number as a parameter.
 
-   The steps that follow the optional page are indented to indicate that they're only run if the page is shown.
+### Add parameters
+
+You can add parameters from the **Page Scripting** pane in Business Central or by modifying the recording YAML file. If a parameter isn't set, a dialog prompts you to enter a value during replay, as shown in the following figure:
+
+:::image type="content" source="media/page-scripting-parameters.svg" alt-text="Shows a dialog box with the input parameters for a page script.":::.
+
+In general, using parameters is a two-step process. First you define the parameter. Then, you use it as input values or in expressions. The **Page Scripting** pane simplifies this process.
+
+#### [Page Scripting pane](#tab/pagescriptingpane)
+
+To define a parameter:
+
+1. Under the control bar at the top, select **...** > **Properties**.
+1. In the **Properties** section, select **Parameters** > **+ Add parameter**.
+1. Fill in the fields for the parameter, such as **Name**, **Type**, **Default value**, and **Description** as needed.
+
+To assign the parameter:
+
+1. On the step in the **Page Scripting** pane, select **...** > **Properties**.
+1. In the text box under **Properties, enter `Parameters.[parameter name]`, where `[parameter name]` is the name of the parameter. For example, `Parameters.'Sales Order.Document Date'`.
+
+   > [!TIP]
+   > As you start typing, choose the value that appears in the popup next to the text box.  
+
+#### [Recording YAML file](#tab/recyaml)
+
+You define parameters in the `parameters` block, for example:
+
+```yaml
+parameters:
+  Sales Order.Document Date:
+    type: string
+    default: 9/4/2025
+  Wait time:
+    type: string
+    description: Enter wait time between steps is ms.
+    default: "1000"
+```
+
+Then, assign the parameter to a step.
+
+```yaml
+- type: input
+   target:
+   - page: Sales Order
+      runtimeRef: b9ee
+   - field: Document Date
+   description: Input <value>Parameters.'Sales Order.Document Date'</value> into
+   <caption>Document Date</caption>
+   value: =Parameters.'Sales Order.Document Date'
+- type: wait
+   description: Wait for <value>Parameters.'Wait time'</value> milliseconds
+   time: =Parameters.'Wait time'
+```
+
+---
+
+## Include other scripts
+
+A recording can include scripts from other recordings, letting you create a suite of scripts that run in a certain order. You can include scripts by using the **Page Scripting** pane or modifying the recording's YAML.
+
+### Before you begin
+
+- Store the scripts you want to include in the same location as the host script. The included scripts can be in any folder as long as it's accessible by host script. For example, you could store the host script in `c:\bc-replay\recordings` and the included scripts in `c:\bc-replay\recordings\includes`
+- If you want to pass parameters across included scripts, define them in both the host script and the included scripts.
+
+#### [Page Scripting pane](#tab/pagescripting)
+
+1. Open the recording in which you want to add the script.
+1. Start recording ![start recording](media/page-scripting-start-button.png).
+1. Select the step that you want to add the script after, and then select **...** > **Record from here**.
+1. On the same step, select **...** > **Add Step** > **Include a script**.
+1. Browse for the script to add and select **Open**.
+
+   The script and its steps appear in the pane. The **File path** in the **Properties** section displays the relative path to the script.
+
+1. Stop the recording and play the script to test the changes. If adjustments are needed, start recording again and make the changes.
+1. Save when done.
+
+> [!NOTE]
+> You can't edit included script steps from the host script. To make changes, edit the original script file that's being included.
+
+#### [Recording YAML](#tab/recyml2)
+
+The following code example includes scripts `Recording-1` and `Recording-2` in the host script `Main`. `Recording-1` and `Recording-2` are in a subfolder to `Main` called `includes`.
+
+```yml
+steps:
+  - type: include
+    name: Recording-1
+    file: ./includes/Recording-part-1.yml
+    description: Run <file>Recording-part-1</file>
+  - type: include
+    name: Recording-2
+    file: ./includes/Recording-part-2.yml
+    description: Run <file>Recording-part-2</file>
+name: main2
+description: Test recording
+start:
+  profile: ORDER PROCESSOR
+
+```
+
+---
 
 ## Play a recording
 
@@ -311,7 +422,7 @@ npx replay
 
 `-Tests`
 
-File glob pattern to select the tests recordings to run
+File glob pattern to select the tests recordings to run.
 
 `-StartAddress`
 

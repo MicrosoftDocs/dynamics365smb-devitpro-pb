@@ -58,19 +58,19 @@ To schedule an update:
 1. Under **Update Settings**, select the **Modify** action for **Next Update**.
 1. In the **Schedule Environment Update** pane, select target version marked as **Available**.
 
-  > [!NOTE]
-  > During preview periods, a target version marked as **Preview** appears in the list of available versions for sandbox environments. Ensure you're familiar with the limitations of [preview environments](preview-environments.md) before scheduling an update to a preview version.
-  >
-  > Notification recipients registered in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] do not receive email notifications regarding availability of a new preview version or execution of an environment update to a preview version (scheduled, succeeded, or failed update). Use the Operations page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to view details on an environment update to a preview version.
+   > [!NOTE]
+   > During preview periods, a target version marked as **Preview** appears in the list of available versions for sandbox environments. Ensure you're familiar with the limitations of [preview environments](preview-environments.md) before scheduling an update to a preview version.
+   >
+   > Notification recipients registered in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] do not receive email notifications regarding availability of a new preview version or execution of an environment update to a preview version (scheduled, succeeded, or failed update). Use the Operations page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to view details on an environment update to a preview version.
 
 1. Pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
 
-  > [!NOTE]
-  > If you select today's date for the update but the environment's update window is already past, the update starts in the next day's update window.
-  >
-  > For example, if you change the **Scheduled update date** to the current date at 6 PM, and the update window is set to 1 AM–7 AM, the update doesn't start immediately but starts after 1 AM the next day.
-  >
-  > To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets the update start immediately and allows large updates to run for longer than 24 hours if needed. Updates running in this mode aren't automatically canceled when the update window ends. Avoid using this setting for environments that must be available for users by a specific time.  
+   > [!NOTE]
+   > If you select today's date for the update but the environment's update window is already past, the update starts in the next day's update window.
+   >
+   > For example, if you change the **Scheduled update date** to the current date at 6 PM, and the update window is set to 1 AM–7 AM, the update doesn't start immediately but starts after 1 AM the next day.
+   >
+   > To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets the update start immediately and allows large updates to run for longer than 24 hours if needed. Updates running in this mode aren't automatically canceled when the update window ends. Avoid using this setting for environments that must be available for users by a specific time.  
 
 1. Select **Schedule Update**.
 
