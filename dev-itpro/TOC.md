@@ -747,7 +747,7 @@
 ##### [Classifying data](developer/devenv-classifying-data.md)
 
 #### Modifying data
-##### [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
+##### [Insert, Modify, ModifyAll, Delete, DeleteAll, Truncate methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ##### [Temporary tables](developer/devenv-temporary-tables.md)
 ##### [Virtual tables](developer/devenv-virtual-tables.md)
 ###### [Date virtual table](developer/devenv-date-virtual-table.md)
