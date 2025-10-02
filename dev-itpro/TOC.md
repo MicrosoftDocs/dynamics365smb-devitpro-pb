@@ -495,6 +495,7 @@
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
 ### [AL code actions](developer/devenv-code-actions.md)
 ### [ALTool](developer/devenv-al-tool.md)
+#### [ALTool package](developer/devenv-al-tool-package.md)
 ### [Syntax and snippets](developer/devenv-syntax.md)
 ### [Object ranges](developer/devenv-object-ranges.md)
 ### [Developer productivity tips](developer/devenv-dev-productivity-tips.md)
