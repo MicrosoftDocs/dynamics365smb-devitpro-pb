@@ -157,7 +157,7 @@ The following table shows the product version requirements for integrating Busin
 
 |Specification|Requirement|  
 |-----|-----|
-|[!INCLUDE[cds_long_md.md](../developer/includes/cds_long_md.md)] and [!INCLUDE[crm](../developer/includes/crm_md.md)] online |One the following authentication types:<ul><li>Office365 (modern, OAuth2 client secret based)<sup>2</sup></li><li>OAuth<sup>3</sup><br><br>For better security, we recommend Office365 (modern, OAuth2 client secret based) instead of OAuth.</li>|
+|[!INCLUDE[cds_long_md.md](../developer/includes/cds_long_md.md)] and [!INCLUDE[crm](../developer/includes/crm_md.md)] online |One of the following authentication types:<ul><li>Office365 (modern, OAuth2 client secret based)<sup>2</sup></li><li>OAuth<sup>3</sup><br><br>For better security, we recommend Office365 (modern, OAuth2 client secret based) instead of OAuth.</li>|
 |Dynamics 365 Customer Engagement on-premise<br><br>**Note**: Not supported with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online|<ul><li>Dynamics 365 Customer Engagement version 9.0.2</li><li> One of the following authentication types:<ul><li>AD</li><li>IFD</li><li>OAuth<sup>3</sup></li></ul>|
 
 <sup>2</sup> Requires the registration of a third party application in Azure AD. Learn more in [Register an application in Azure AD for connecting from Business Central to Dataverse](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#to-register-an-application-in-azure-ad-for-connecting-from-business-central-to-dataverse).
