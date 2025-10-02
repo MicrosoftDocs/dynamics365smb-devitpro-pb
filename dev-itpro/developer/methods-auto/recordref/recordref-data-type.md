@@ -104,20 +104,7 @@ The following methods are available on instances of the RecordRef data type.
 |[SystemIdNo()](recordref-systemidno-method.md)|Gets the field number that is used by the SystemId field. The SystemId field is a system field that the platform adds to all table objects.|
 |[SystemModifiedAtNo()](recordref-systemmodifiedatno-method.md)|Gets the field number that is used by the SystemModifiedAt field. The SystemModifiedAt field is a system field that the platform adds to all table objects.|
 |[SystemModifiedByNo()](recordref-systemmodifiedbyno-method.md)|Gets the field number that is used by the SystemModifiedBy field. The SystemModifiedBy field is a system field that the platform adds to all table objects.|
-|[Truncate([Boolean])](recordref-truncate-method.md)|Deletes all records in a table that fall within a specified range, in an efficient maner.
-Keep in mind that Truncate allows for less concurrency than DeleteAll, as the entire table will be locked until the transaction is committed.
-
-Truncate with a filter should only be used when the majority of the table is being deleted, as otherwise DeleteAll will be more efficient.
-
-Truncate is currently not supported in the following cases:
-- Temporary tables, system tables, and tables of type other than Normal.
-- When running within a try function.
-- Tables that have a security filter applied.
-- When the current filters contain flow fields, or use a high number of marked records.
-- When the OnAfter/OnBefore events are subscribed for the table.
-- Tables with media fields.
-
-In this case, it is recommended to use DeleteAll instead. |
+|[Truncate([Boolean])](recordref-truncate-method.md)|Deletes all records in a table that fall within a specified range, in an efficient maner.<br>Keep in mind that Truncate allows for less concurrency than DeleteAll, as the entire table will be locked until the transaction is committed.<br><br>Truncate with a filter should only be used when the majority of the table is being deleted, as otherwise DeleteAll will be more efficient.<br><br>Truncate is currently not supported in the following cases:<br>- Temporary tables, system tables, and tables of type other than Normal.<br>- When running within a try function.<br>- Tables that have a security filter applied.<br>- When the current filters contain flow fields, or use a high number of marked records.<br>- When the OnAfter/OnBefore events are subscribed for the table.<br>- Tables with media fields.<br><br>In this case, it is recommended to use DeleteAll instead. |
 |[WritePermission()](recordref-writepermission-method.md)|Determines if you can write to a table.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
