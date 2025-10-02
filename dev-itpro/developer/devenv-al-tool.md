@@ -17,15 +17,15 @@ ALTool is a command line tool used for compiling and packaging AL extensions for
 
 ## Key features
 
-- **Compilation**: ALTool can compile AL code into a deployable package, ensuring that it meets all necessary requirements.
-- **Integration**: ALTool can be integrated into CI/CD pipelines, allowing for automated validation and packaging of extensions during the development process.
+- **Compilation** ALTool can compile AL code into a deployable package, ensuring that it meets all necessary requirements.
+- **Integration** ALTool can be integrated into CI/CD pipelines, allowing for automated validation and packaging of extensions during the development process.
 
 ## Usage
 
 ALTool is typically used in the following scenarios:
 
-1. **Local development**: Developers can use ALTool to validate their code before they deploy it to a sandbox environment.
-2. **Continuous integration**: ALTool can be integrated into CI/CD pipelines to automate the validation and packaging of extensions.
+1. **Local development** Developers can use ALTool to validate their code before they deploy it to a sandbox environment.
+2. **Continuous integration** ALTool can be integrated into CI/CD pipelines to automate the validation and packaging of extensions.
 
 ## Get started
 
