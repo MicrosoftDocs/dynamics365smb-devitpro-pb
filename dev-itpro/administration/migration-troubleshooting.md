@@ -198,7 +198,7 @@ To fix this problem, go to the **Cloud Migration Management** page and run the *
 
   - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. Learn more in the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
 
-## Number of records in Tenant Media table decreased in last replication
+## Number of records in Tenant Media table decreased in last replication
 
 > Database: online
 
