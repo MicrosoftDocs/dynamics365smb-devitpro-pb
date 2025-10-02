@@ -7,12 +7,10 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 12/05/2023
 ms.author: jswymer
 ms.reviewer: jswymer
-
 ms.custom: bap-template
 ---
-# Controlling Telemetry Cost
 
- 
+# Controlling Telemetry Cost
 
 [!INCLUDE[telemetryCost](../includes/include-telemetry-cost.md)]
 

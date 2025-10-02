@@ -66,8 +66,6 @@ With Exchange Server, EWS and Autodiscover try to find the local Exchange Server
 
 ---
 
- 
-
 ## Prepare for deployment
 
 The steps to prepare for deploying the add-in depend on whether you plan to deploy to Exchange Online or Exchange Server.
