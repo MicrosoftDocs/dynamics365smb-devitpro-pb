@@ -13,7 +13,7 @@ ms.reviewer: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # (automation API) Get scheduledJob
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+ 
 
 Retrieves the properties and relationships of a scheduled job object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 

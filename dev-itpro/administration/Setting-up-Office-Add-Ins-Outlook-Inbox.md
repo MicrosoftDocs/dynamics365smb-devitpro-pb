@@ -66,7 +66,7 @@ With Exchange Server, EWS and Autodiscover try to find the local Exchange Server
 
 ---
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+ 
 
 ## Prepare for deployment
 

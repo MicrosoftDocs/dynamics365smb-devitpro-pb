@@ -9,9 +9,8 @@ ms.topic: reference
 ms.author: jswymer
 ms.date: 04/29/2025
 ---
-# Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+# Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]
 
 This article lists features that are available in [!INCLUDE[prod_short](includes/prod_short.md)] but not in on-premises deployments. The article is divided into two sections:
 

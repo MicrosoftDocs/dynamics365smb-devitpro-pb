@@ -16,8 +16,6 @@ ms.custom:
 
 **APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21) and later. For earlier versions, refer to [Configuring Business Central Server in outdated versions](configure-server-instance-archived.md).
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 When you run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Setup and install [!INCLUDE[server](../developer/includes/server.md)], you provide information that is then used as the configuration for the default [!INCLUDE[server](../developer/includes/server.md)] instance. This information is stored in a configuration file for the server instance called CustomSetting.config. The default location of the CustomSettings.config file is *[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service*. 
 
 After you install [!INCLUDE[server](../developer/includes/server.md)], you can change any of the settings, including other settings that weren't available to you in Setup.

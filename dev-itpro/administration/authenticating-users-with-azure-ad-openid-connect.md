@@ -15,8 +15,6 @@ ms.custom:
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 This article explains how to configure Business Central to use Microsoft Entra ID to authenticate users. This setup configures Microsoft Entra authentication to use [OpenID connect](/entra/identity-platform/v2-protocols-oidc).
 
 ## Preparation

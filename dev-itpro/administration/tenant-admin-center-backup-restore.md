@@ -12,8 +12,6 @@ ms.reviewer: jswymer
 
 # Restoring an environment in the admin center
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 As an administrator, you can restore an existing environment from a time in the past, within the retention period that applies to both production and sandbox environments.  
 
 Database backups are an essential part of any business continuity and disaster recovery strategy, because they protect your data from corruption or deletion. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online uses Azure SQL Database as the underlying database backup technology for its environments. All databases are protected by automated backups that the Azure SQL service continuously creates and maintains. For more information, see [Business continuity and disaster recovery (BCDR)](../service-overview.md#business-continuity-and-disaster-recovery-bcdr).  

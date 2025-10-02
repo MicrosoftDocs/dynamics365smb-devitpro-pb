@@ -11,8 +11,6 @@ ms.reviewer: solsen
 
 # Get started developing Connect apps for [!INCLUDE [prod_long](includes/prod_long.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 A Connect app establishes a point-to-point connection between [!INCLUDE [prod_long](includes/prod_long.md)] and a third-party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. In the following section, you can read about how you get started exploring the available APIs for [!INCLUDE [prod_long](includes/prod_long.md)].
 
 [![Shows the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)

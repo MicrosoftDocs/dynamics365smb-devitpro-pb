@@ -13,8 +13,6 @@ ms.custom: bap-template
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 Web services telemetry gathers data about SOAP, OData, and REST API requests to the service. It provides information like the request's endpoint, time to complete, HTTP status codes, and more.  
 
 ## General dimensions (incoming web services request)

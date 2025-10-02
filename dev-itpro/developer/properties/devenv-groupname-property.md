@@ -22,7 +22,7 @@ If the entitlement type is ConcurrentUserServicePlan, the GroupName determines w
 
 ## Remarks
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+ 
 
 ## Related information
 
