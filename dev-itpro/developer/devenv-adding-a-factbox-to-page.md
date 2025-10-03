@@ -2,7 +2,7 @@
 title: Adding a FactBox to a page
 description: A FactBox is located on the right-most side of a page. This area is used to display related facts about the current record including charts, data from related tables, Notes, and Links.
 author: SusanneWindfeldPedersen
-ms.date: 08/26/2025
+ms.date: 10/03/2025
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
@@ -86,7 +86,7 @@ You can define the following system parts by using the `systempart()` keyword:
 
 #### Summary
 
-The Summary part provides a high-level overview of the record, allowing users to quickly understand key information without having to navigate through multiple fields. The Summary part is of the type system part and can be controlled on `Card`, `Document`, and `ListPlus` pages, which allows developers to hide or configure the summary factbox when it's not needed. It can be hidden in code on page objects, page extensions, and profiles by using the identifier `DefaultSummaryPart` to refer to it in code. The Summary part is *enabled by default on all card, document, and list pages* that have a `FactBoxes` area.
+The Summary part provides a high-level overview of the record, allowing users to quickly understand key information without having to navigate through multiple fields. The Summary part is of the type system part and can be controlled on `Card`, `Document`, and `ListPlus` pages, which allows developers to hide or configure the summary factbox when it's not needed. It can be hidden in code on page objects, page extensions, and profiles by using the identifier `DefaultSummaryPart` to refer to it in code. The Summary part is *enabled by default on all card, document, and listplus* pages that have a `FactBoxes` area.
 
 In the following example, a page extension of the Customer card hides the Summary part:
 
