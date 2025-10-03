@@ -15,8 +15,6 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 ## Changes in 2027 release wave 1 (version 29.0)
 
 ### Peppol BIS 2.0 and Peppol BIS 2.1 are replaced by Peppol BIS 3.0

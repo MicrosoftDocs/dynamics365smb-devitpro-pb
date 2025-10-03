@@ -8,14 +8,11 @@ ms.date: 01/04/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
-
 ---
 
 # Analyzing Report Telemetry
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 [!INCLUDE[report_telemetry_intro](../includes/include-report-telemetry-intro.md)]
 

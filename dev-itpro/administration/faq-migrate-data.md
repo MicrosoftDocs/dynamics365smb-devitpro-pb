@@ -13,8 +13,6 @@ ms.custom: sfi-ropc-blocked
 
 # FAQ about migrating to Business Central online from on-premises solutions
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 This section contains answers to frequently asked questions about migrating from on-premises solutions to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
 
 > [!TIP]

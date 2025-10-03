@@ -13,8 +13,6 @@ ms.custom: bap-template
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, when a user/administrator uploads a per-tenant extension to an environment from the Extension Management page, we proactively validate it against the environment.
 
 With this telemetry, partners can monitor these attempts for customers and setup alerts on failures so that they know up-front which customers will need help.

@@ -48,7 +48,7 @@ Finally, as always, if you have ideas for features you would like to see in futu
 
 We need your feedback on the preview! Let us know about your experiences with the new version. There are two ways to contribute:
 
-1. Give feedback and ask questions in the [Business Central public preview group](https://aka.ms/BCPublicPreviewGroup) on the Viva Engage (formerly Yammer).
+1. Give feedback and ask questions in the [Business Central public preview group](https://aka.ms/BCPublicPreviewGroup) on the Viva Engage.
 
    Use this group to share your thoughts, ask questions, participate in discussions, or seek clarifications on any aspect of the preview release.
 

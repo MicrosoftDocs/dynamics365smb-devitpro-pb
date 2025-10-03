@@ -11,8 +11,6 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 This article explains how to develop extensions to send custom telemetry trace events to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for viewing and analyzing.
 
 You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource, which you set up beforehand. In [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], the custom telemetry events are stored in the *traces* table.   
