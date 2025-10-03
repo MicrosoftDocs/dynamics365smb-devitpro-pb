@@ -40,6 +40,19 @@ Tables without an AutoIncrement field ignore this parameter. The default is **tr
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+`Truncate` currently isn't supported in the following cases:
+
+- Temporary tables, system tables, and tables of type other than Normal.
+- When running within a try function.
+- Tables that have a security filter applied.
+- When the current filters contain flow fields, or use a high number of marked records.
+- When the OnAfter/OnBefore events are subscribed for the table.
+- Tables with media fields.
+
+In this case, it's recommended to use `DeleteAll` instead. 
+
 ## Example
 
 The following example demonstrates how to truncate all records in a table and capture the optional return value to avoid a runtime error when truncate isn't supported.
