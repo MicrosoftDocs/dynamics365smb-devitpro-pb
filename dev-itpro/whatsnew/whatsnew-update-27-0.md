@@ -2,7 +2,7 @@
 title: What's New or Changed in Business Central 2025 Release Wave 2 - Update 27.0 preview
 description: Get an overview of new and changed capabilities in the 27.0 update of Business Central online, which is part of 2025 release wave 2.
 ms.author: jswymer
-ms.date: 09/30/2025
+ms.date: 10/02/2025
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
@@ -91,15 +91,15 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Use new Contoso Coffee Demo dataset for Intrastat](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat)| General availability|
 | Governance and administration| [Migrate record links and notes with cloud migration tooling](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling)| General availability|
 | | [Tenant administrators can set Feature Management switches with an API](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/tenant-administrators-set-feature-management-switches-api)| General availability|
-| Reporting and data analysis| Access open-sourced Power BI apps\*\* <!--(/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/access-open-sourced-power-bi-apps)-->| General availability|
+| Reporting and data analysis| [Access open-sourced Power BI apps](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/access-open-sourced-power-bi-apps)| General availability|
 | | [Add data fields to report layouts using Word add-in](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-data-fields-report-layouts-using-word-add-in)| General availability|
-| |  Deferral reporting enhancements\*\* <!--(/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/deferral-reporting-enhancements)-->| General availability|
-| | Use drill-back and dynamic dimension names in Power BI apps\*\* <!--(/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-drill-back-dynamic-dimension-names-power-bi-apps)-->| General availability|
+| |  [Deferral reporting enhancements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/deferral-reporting-enhancements)| General availability|
+| | [Use drill-back and dynamic dimension names in Power BI apps](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-drill-back-dynamic-dimension-names-power-bi-apps)| General availability|
 | | [Use enhanced Financial Reporting](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)| General availability*|
-| | Use the enhanced Inventory Power BI app to forecast future inventory flow\*\* <!--(/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-inventory-power-bi-app-forecast-future-inventory)-->| General availability|
-| | Use the enhanced Power BI app for Projects to analyze project profitability\*\* <!--(/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-app-projects-analyze-project-profitability)-->| General availability|
-| | Use the enhanced Power BI Finance app to improve your cashflow\*\* <!--](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-finance-app-improve-cashflow)-->| General availability|
-| | Use the enhanced Power BI Manufacturing app and modernized reports in manufacturing analytics\*\*<!--(/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-manufacturing-app-modernized-reports-manufacturing-analytics)-->| General availability|
+| | [Use the enhanced Inventory Power BI app to forecast future inventory flow](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-inventory-power-bi-app-forecast-future-inventory)| General availability|
+| | [Use the enhanced Power BI app for Projects to analyze project profitability](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-app-projects-analyze-project-profitability)| General availability|
+| | [Use the enhanced Power BI Finance app to improve your cashflow](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-finance-app-improve-cashflow)| General availability|
+| | [Use the enhanced Power BI Manufacturing app and modernized reports in manufacturing analytics](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-power-bi-manufacturing-app-modernized-reports-manufacturing-analytics)| General availability|
 | | [Use the enhanced Purchasing Power BI app to analyze risk related to vendors](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-purchasing-analytics)| General availability|
 | | [Use the enhanced Power BI Sales app and modernized reports in sales analytics](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-sales-analytics)| General availability|
 | Supply chain management| [Add more fields and columns by personalizing pages](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-more-fields-columns-personalizing-pages)| General availability|
@@ -120,11 +120,9 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | | [Use updated demo data for Sustainability](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-updated-demo-data-sustainability)| General availability|
 | | [Use an updated Sustainability Manager Role Center](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-updated-sustainability-admin-role-center)| General availability|
 | User experiences| [Adjust width of Copilot, help, and page scripting panes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/adjust-width-copilot-help-page-scripting-panes)| General availability |
-| | [Use the Concealed text field type for sensitive data](../developer/properties/devenv-masktype-property.md) <!--(/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data)-->| Public preview*|
+| | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data)| Public preview*|
 
 \* Controlled in **Feature Management** Link coming soon
-
-\*\* Link coming soon
 
 ## Changes to optional features in Feature Management
 
