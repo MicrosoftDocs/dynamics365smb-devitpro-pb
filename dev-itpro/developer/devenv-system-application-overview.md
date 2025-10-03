@@ -10,8 +10,6 @@ ms.reviewer: solsen
 
 # Overview of the application
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 The [!INCLUDE [prod_short](includes/prod_short.md)] application code is being refactored from a single monolythic application into smaller applications (layers), which in turn are built from small modules which handle a single functionality or feature.
 
 The [System application](https://github.com/microsoft/BCApps/tree/main/src/System%20Application) layer contains modules that provide ERP agnostic functionality. These are mostly technical features which any application needs.

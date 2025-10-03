@@ -12,13 +12,11 @@ ms.reviewer: jswymer
 ---
 # Page 6401 Flow Selector Replacement Code
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
- 
 This article includes replacement code Page **6401 Flow Selector** that you can use to fix compilation errors that occur when converting your [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 14 C/AL application to version 15 AL.
 
 To fix the compilation errors, replace the code with the following:
 
-```
+```al
 page 6401 "Flow Selector"
 {
     ApplicationArea = Suite;

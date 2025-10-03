@@ -10,8 +10,6 @@ ms.reviewer: solsen
 
 # Launch JSON file
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 The `launch.json` file contains information about the server that the extension launches on. The `launch.json` file has multiple configuration options available, for example, for snapshot debugging and attach debugging. In Visual Studio Code, you can choose to add a new configuration to the `launch.json` file, by selecting the **Add Configuration** button. 
 
 :::image type="content" source="media/launch-configuration.png" alt-text="Shows the different configurations available in the lauch.json file for the Business Central development environment" lightbox="media/launch-configuration.png":::

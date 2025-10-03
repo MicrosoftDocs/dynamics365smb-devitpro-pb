@@ -9,8 +9,6 @@ ms.date: 01/02/2024
 ---
 # Application access management for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 In this article, you'll learn how you can control which customers can create online environments based on your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] [application family](../deployment/embed-app-using-application-family.md), by enabling your resellers (VARS) to use the Application Management API.
 
 ## Overview

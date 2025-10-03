@@ -14,8 +14,6 @@ ms.custom: bap-template
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 Non-compatible, partner apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they can't compile on that version. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service proactively validates all environments regularly against the next release. If an environment isn't ready to be updated, then the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service sends an email to the administrator and, starting from September 2023, emits telemetry on these validations. 
 
 With this telemetry, partners can monitor environments for the customers and setup alerts so that they know up front which customers need help prior to updating to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
