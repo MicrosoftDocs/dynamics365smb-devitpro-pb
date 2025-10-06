@@ -99,12 +99,57 @@ $validationResults = Run-AlValidation `
 $validationResults | Write-Host -ForegroundColor Red
 ```
 
-All array parameters can also be specified as a comma-separated string. Learn more in this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
+All array parameters can also be specified as a comma-separated string. AppSourceCop is run for each country and output is collected. Publishing and install/upgrade errors surface as exceptions and break the validation. You can then work on eliminating these exceptions. When the `$validationResult` is empty, then no validation errors are found.
+
+### Parameters
+
+The following parameters can be used with the `Run-AlValidation` command:
+
+- `-installApps`: Specify the path or URL to your foreign dependencies, apps which will not be part of the validation (or blank if this is the first).
+- `-previousApps`: Specify the path or URL to your previous version of the .app files (or blank if this is the first).
+- `-apps`: Specify the path or URL to the new version of the .app files.
+- `-countries`: Specify the countries you want to validate against (for example, us,ca).
+- `-affixes`: Specify the affixes you own (for example, fab,con).
+- `-supportedCountries`: Specify the supported countries (for example, us,ca).
+- `-vsixFile`: Specify the AL Language Extension version to use.
+- `-skipVerification`: Skip verification of code signing certificates.
+
+`-previousApps` and `-apps` can be an array of apps or a comma-separated string with app filenames. The app filenames can also be .zip files with .app files inside, a url to an .app file or a .zip file.
+
+### Run-AlCops
+
+`Run-AlCops` is used from `Run-AlValidation` every time AppSourceCop needs to be run, but it can also be used seperately. `Run-AlCops` needs a running docker container to perform the validation in. The function can be called as follows:
+
+```powershell
+$validationResults = Run-AlCops `
+    -containerName my2 `
+    -credential $credential `
+    -enableAppSourceCop `
+    -previousApps @( "https://businesscentralapps.blob.core.windows.net/helloworld-appsource/latest/apps.zip" ) `
+    -apps @( "https://businesscentralapps.blob.core.windows.net/helloworld-appsource-preview/latest/apps.zip" ) `
+    -affixes @("hw") `
+    -supportedCountries @("us")
+```
+
+It can also be used for per-tenant extensions:
+
+```powershell
+$validationResults = Run-AlCops `
+    -containerName 'my2' `
+    -credential $credential `
+    -enablePerTenantExtensionCop `
+    -apps @(
+        "https://businesscentralapps.blob.core.windows.net/helloworld-preview/latest/apps.zip",
+        "https://businesscentralapps.blob.core.windows.net/bingmaps-preview/latest/apps.zip"
+        )
+```
+
+It's possible to add CodeCop and UICop analyzers to the call and to specify a custom ruleset in the `ruleSetFile` parameter. If you're validating for AppSource, the default AppSource validation ruleset is used.
 
 Include app and all library apps in both previousApps and apps and also include all countries/regions on which you want to validate.
 
 > [!NOTE]  
-> The Run-AlValidation can't see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
+> The `Run-AlValidation` can't see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
 
 > [!IMPORTANT]
 > The computer on which you run this command must have Docker and the latest `BcContainerHelper` PowerShell module installed and be able to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
