@@ -35,17 +35,17 @@ As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpo
 
 ## Operators supported
 
-|Operator|Description|
-|--------|-----------|
-|`=`| Equal to|
-|`<>`| Not equal to|
-|`<`| Less than|
-|`>`| Greater than|
-|`<=`| Less than or equal to|
-|`=>`| Greater than or equal to|
-|`-`| Numeric negation (version 26 and later) |
-|`NOT`| Logical negation (version 26 and later) |
-|`AND` `OR`| Logical (use parentheses to control precedence) (version 26 and later)|
+|Operator|Description| Remarks|
+|--------|-----------|--------|
+|`=`| Equal to|-|
+|`<>`| Not equal to|-|
+|`<`| Less than|-|
+|`>`| Greater than|-|
+|`<=`| Less than or equal to|-|
+|`=>`| Greater than or equal to|-|
+|`-`| Numeric negation  |Supported from version 26 and later.|
+|`NOT`| Logical negation  | Supported from version 26 and later.|
+|`AND` `OR`| Logical | Use parentheses to control precedence. <br><br>Supported from version 26 and later.|
 
 > [!NOTE]
 > Parenthesize complex expressions explicitly; AL operator precedence rules apply.
