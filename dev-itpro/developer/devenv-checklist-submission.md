@@ -63,9 +63,9 @@ The technical validation is fully automated and validates the requirements defin
 
 Once the extension has passed these first validation steps, the minimum release for your submission is computed as described in [Computation of Releases for Validation](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
 
-For **each country and each release** targeted by your submission, the following steps are run **for each extension** in the submission:
+For **each country/region and each release** targeted by your submission, the following steps are run **for each extension** in the submission:
 
-1. If the extension with the same version has already been validated for the country, further validation for this extension is skipped.
+1. If the extension with the same version has already been validated for the country/region, further validation for this extension is skipped.
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
 > [!Note]  
@@ -81,7 +81,7 @@ Additionally, if the extension submitted isn't the latest version and a higher v
 1. The next version of your extension and its dependencies are resolved using the [App Management API](../administration/appmanagement/app-management-api.md).
 2. The next version of your extension is tested against the version you submitted using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**  
 
-If all extensions in the submission succeed the validation for each country and release without errors, **the submission is accepted.**.
+If all extensions in the submission succeed the validation for each country/region and release without errors, **the submission is accepted.**.
 
 ## Running technical validation yourself
 
@@ -93,13 +93,13 @@ $validationResults = Run-AlValidation `
     -installApps @( "path/url to your foreign dependencies, apps which will not be part of the validation (or blank if this is the first)" ) `
     -previousApps @( "path/url to your previous version of the .app files (or blank if this is the first)" ) `
     -apps @( "path/url to the new version of the .app files" ) `
-    -countries @( "countries you want to validate against (f.ex. us,ca)" ) `
+    -countries @( "countries/regions you want to validate against (f.ex. us,ca)" ) `
     -affixes @( "affixes you own (f.ex. fab,con)" ) `
-    -supportedCountries @( "supported countries (f.eks. us,ca)" )
+    -supportedCountries @( "supported countries/regions (f.eks. us,ca)" )
 $validationResults | Write-Host -ForegroundColor Red
 ```
 
-All array parameters can also be specified as a comma-separated string. AppSourceCop is run for each country and output is collected. Publishing and install/upgrade errors surface as exceptions and break the validation. You can then work on eliminating these exceptions. When the `$validationResult` is empty, then no validation errors are found.
+All array parameters can also be specified as a comma-separated string. AppSourceCop is run for each country/region and output is collected. Publishing and install/upgrade errors surface as exceptions and break the validation. You can then work on eliminating these exceptions. When the `$validationResult` is empty, then no validation errors are found.
 
 ### Parameters
 
@@ -108,9 +108,9 @@ The following parameters can be used with the `Run-AlValidation` command:
 - `-installApps`: Specify the path or URL to your foreign dependencies, apps which will not be part of the validation (or blank if this is the first).
 - `-previousApps`: Specify the path or URL to your previous version of the .app files (or blank if this is the first).
 - `-apps`: Specify the path or URL to the new version of the .app files.
-- `-countries`: Specify the countries you want to validate against (for example, us,ca).
+- `-countries`: Specify the countries/regions you want to validate against (for example, us,ca).
 - `-affixes`: Specify the affixes you own (for example, fab,con).
-- `-supportedCountries`: Specify the supported countries (for example, us,ca).
+- `-supportedCountries`: Specify the supported countries/regions (for example, us,ca).
 - `-vsixFile`: Specify the AL Language Extension version to use.
 - `-skipVerification`: Skip verification of code signing certificates.
 
