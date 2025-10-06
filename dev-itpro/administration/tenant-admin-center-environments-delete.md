@@ -39,6 +39,7 @@ Here's some important information about deleted environments and their recovery:
 
 - Soft-deleted environments, or any environments listed on **Recently deleted environments** page, aren't counted towards the environment quota on your tenant.
 - Environments that are [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment cannot be deleted. Unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment before deleting the environment.
+- [Early access preview environments](preview-environments.md) are automatically updated to a new preview build every Sunday, and will be deleted should the update fail. Early access preview environments that have been deleted because the update to a new build failed cannot be recovered. Early access preview environments that are deleted normally will only be recoverable until the new preview build is released.
 
 > [!IMPORTANT]
 > You can recover a soft-deleted product environment even if doing so results in exceeding your environment quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription.
