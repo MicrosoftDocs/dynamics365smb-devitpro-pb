@@ -12,14 +12,9 @@ ms.reviewer: jswymer
 
 # Prepare for major updates with preview environments
 
-Every March and September, the months before a new major version is released, you can try new functionality in preview environments. Preview environments are sandbox environments that you create on or update to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. When you create or update a sandbox environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], select the preview version marked as **(Preview)** from the version list.
+New functionality can be previewed in preview environments. Preview environments are sandbox environments that you create on or update to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. When you create or update a sandbox environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], select the preview version marked as **(Preview)** from the version list.
 
 Learn more about update cycles, including the preview period, in [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md).
-
-## Preview environments
-
-Preview environments are sandbox environments on a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Use them to preview and test new features before the version is available. The system deletes preview environments 30 days after the preview version becomes generally available (GA). You can't update a preview environment to a different version.
-
 
 > [!IMPORTANT]
 > Export any data, setup, and customizations in a preview environment that needs to be kept before the end of the preview period to ensure this does not get lost once the preview period ends and preview environments are deleted. 
@@ -30,6 +25,16 @@ Updating an existing sandbox environment to a preview version lets you review ne
 
 > [!NOTE]
 > Notification recipients registered in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] do not receive email notifications regarding availability of a new preview version or execution of an environment update to a preview version (scheduled, succeeded, or failed update). Use the Operations page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to view details on an environment update to a preview version.
+
+## Public preview
+The public preview period runs every March and September, the months before a new major release is due to be released. During the public preview, any tenant can create new sandbox environments on the preview version or update existing sandbox environments to the preview version. The system deletes preview environments 30 days after the preview version becomes generally available (GA). You can't update a preview environment to a different version.
+
+## Early access preview
+The early access preview period runs simultaneous with the update period, i.e. the early access preview period for the major version due to come out in April starts when the update period for the October major version starts. During the early access preview period, only tenants that use the [Partner Sandbox](environment-types.md#partnersandbox) license can create new sandbox environments on the preview version or update existing sandbox environments to the preview version. The only environment localizations supported for early access preview are DE, GB, and US. 
+
+As early access previews coincide with development, environments on the early access preview version are automatically updated to the latest build of the preview version every Sunday. It is not possible to manage or reschedule this update. Environments that fail to update to the new preview build for any reason are automatically deleted and cannot be recovered. Early access preview environments can only be [transferred](tenant-admin-center-environments-move.md) to another tenant if the destination tenant also has the Partner Sandbox license.
+
+As in the public preview period, the system deletes preview environments 30 days after the preview version becomes generally available (GA). You can't update a preview environment to a different version.
 
 ## Practice and test
 
