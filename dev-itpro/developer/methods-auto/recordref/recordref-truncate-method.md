@@ -2,7 +2,7 @@
 title: "RecordRef.Truncate([Boolean]) Method"
 description: "Deletes all records in a table that fall within a specified range, in an efficient maner."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/03/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,20 +13,7 @@ ms.reviewer: solsen
 # RecordRef.Truncate([Boolean]) Method
 > **Version**: _Available or changed with runtime version 16.0._
 
-Deletes all records in a table that fall within a specified range, in an efficient maner.
-Keep in mind that Truncate allows for less concurrency than DeleteAll, as the entire table will be locked until the transaction is committed.
-
-Truncate with a filter should only be used when the majority of the table is being deleted, as otherwise DeleteAll will be more efficient.
-
-Truncate is currently not supported in the following cases:
-- Temporary tables, system tables, and tables of type other than Normal.
-- When running within a try function.
-- Tables that have a security filter applied.
-- When the current filters contain flow fields, or use a high number of marked records.
-- When the OnAfter/OnBefore events are subscribed for the table.
-- Tables with media fields.
-
-In this case, it is recommended to use DeleteAll instead. 
+Deletes all records in a table that fall within a specified range, in an efficient maner. Keep in mind that Truncate allows for less concurrency than DeleteAll, as the entire table will be locked until the transaction is committed.
 
 
 ## Syntax
@@ -52,6 +39,19 @@ Tables without an AutoIncrement field ignore this parameter. The default is **tr
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+`Truncate` currently isn't supported in the following cases:
+
+- Temporary tables, system tables, and tables of type other than Normal.
+- When running within a try function.
+- Tables that have a security filter applied.
+- When the current filters contain flow fields, or use a high number of marked records.
+- When the OnAfter/OnBefore events are subscribed for the table.
+- Tables with media fields.
+
+In this case, it's recommended to use `DeleteAll` instead. 
 
 ## Example
 
