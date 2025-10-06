@@ -131,19 +131,6 @@ $validationResults = Run-AlCops `
     -supportedCountries @("us")
 ```
 
-It can also be used for per-tenant extensions:
-
-```powershell
-$validationResults = Run-AlCops `
-    -containerName 'my2' `
-    -credential $credential `
-    -enablePerTenantExtensionCop `
-    -apps @(
-        "https://businesscentralapps.blob.core.windows.net/helloworld-preview/latest/apps.zip",
-        "https://businesscentralapps.blob.core.windows.net/bingmaps-preview/latest/apps.zip"
-        )
-```
-
 It's possible to add CodeCop and UICop analyzers to the call and to specify a custom ruleset in the `ruleSetFile` parameter. If you're validating for AppSource, the default AppSource validation ruleset is used.
 
 Include app and all library apps in both previousApps and apps and also include all countries/regions on which you want to validate.
