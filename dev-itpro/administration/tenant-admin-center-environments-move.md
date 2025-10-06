@@ -88,6 +88,7 @@ Telemetry signals for the environment transfer operation are emitted to the Appl
 - If you rename an environment upon acceptance in the destination tenant to avoid duplicate environment names in your tenant no Rename operation will be created on the Operations page in the Admin Center. Rather, the **Transfer** Operation will include the source and destination environment names.
 - Environment settings are carried over from the source to the destination tenant. Depending on the nature of the environment transfer settings such as the Application Insights Connection String or Partner Access set up on the environment may need to be changed or removed.
 - Environments that are [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment cannot be transferred. Unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment before creating a transfer on the source tenant.
+- [Early access preview environments](preview-environments.md) can only be transferred to a destination tenant that has the [Partner Sandbox](environment-types.md#partnersandbox) license.
 
 ## Related information
 
