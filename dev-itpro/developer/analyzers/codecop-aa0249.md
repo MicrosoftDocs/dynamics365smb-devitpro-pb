@@ -17,6 +17,9 @@ PageField trigger is unused due to a property value.
 PageField trigger is unused due to a property value.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## How to fix this diagnostic?
+The warning may be triggered for the [`OnLookup` trigger](../triggers-auto/pagefield/devenv-onlookup-pagefield-trigger.md) while the page field is not editable. In such cases, it is best practice to replace the `OnLookup` trigger with the [`OnDrillDown` trigger](../triggers-auto/pagefield/devenv-ondrilldown-pagefield-trigger.md).
+
 ## Related information  
 [CodeCop analyzer](codecop.md)  
 [Getting started with AL](../devenv-get-started.md)  
