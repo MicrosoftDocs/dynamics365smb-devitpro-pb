@@ -20,6 +20,25 @@ The `directory.app.props.json` file defines reusable variables and properties fo
 
 The `directory.app.props.json` file is typically located in the root folder of the AL project, and must be created manually. Whether you have one or multiple projects, the `directory.app.props.json` file can help you set variables like revision or build from the environment, and make versioned builds without creating a commit with the variables. When the file is found by the compiler, it's used to set the defined properties for the app. If a property is defined both in the `directory.app.props.json` file and in the `app.json` file, the value from the `app.json` file takes precedence. For example, if `publisher`, `help`, or `url` is also present in `app.json`, the `app.json` value overrides the value defined here.
 
+## Supported app.json properties
+
+The `directory.app.props.json` file supports the following `app.json` properties:
+- name
+- version
+- publisher
+- description
+- brief
+- privacyStatement
+- EULA
+- help
+- url
+- logo
+- target
+- platform
+- application
+- runtime
+- helpBaseUrl
+
 ## Create the directory.app.props.json file
 
 Create the `directory.app.props.json` file by following these steps:

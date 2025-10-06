@@ -14,8 +14,6 @@ ms.reviewer: jswymer
 
 [!INCLUDE[2020_releasewave2-17-1-later](../includes/2020_releasewave2-17-1-later.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 Keeping sensitive data secure and private is a core concern for most businesses. To add a layer of security, you can monitor important fields when someone changes a value. For example, you might want to know if someone changes your company's IBAN number.
 
 To gather this data, you'll have to start field monitoring and specify the fields that you want to monitor.  For more information, see [Auditing Changes in Business Central - Monitoring Sensitive Fields](/dynamics365/business-central/across-log-changes#monitoring-sensitive-fields) in the Application help.

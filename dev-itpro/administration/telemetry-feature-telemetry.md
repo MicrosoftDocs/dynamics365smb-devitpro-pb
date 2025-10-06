@@ -12,14 +12,13 @@ ms.reviewer: bholtorf
 
 # Feature telemetry
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 The Telemetry AL module simplifies the way you monitor the health of your app and the uptake and usage of application features. There are multiple benefits of using the module compared to sending telemetry via `Session.LogMessage`. For example:
 
 * Different features can be compared across the same metrics.
 * Common information is sent together with every feature telemetry message, which allows for advanced filtering capabilities.
 
 ## Register the feature telemetry module in an app
+
 If you want to get feature telemetry to the app/extension telemetry pipeline, you must add a codeunit that implements the "Telemetry Logger" interface. Below is a simple example on such a codeunit.
 
 ```AL

@@ -14,8 +14,6 @@ ms.reviewer: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 1, version 20.0, and later
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 [!INCLUDE[include_telemetry_database_wait_statistics_md](../includes/include-telemetry-database-wait-statistics.md)]
 
 [!INCLUDE[include_note_database_wait_statistics_md](../includes/include-note-database-wait-statistics.md)]
