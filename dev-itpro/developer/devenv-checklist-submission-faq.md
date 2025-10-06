@@ -349,7 +349,7 @@ When changing a `connect` app to an `add-on` app, you should:
 
 ### How to automatically update my offer using Partner Center submission API?
 
-It's possible to automatically submit apps to AppSource from our DevOps setup by using the [Partner Center Ingestion API](/azure/marketplace/azure-app-apis). Learn more in this blog post [Automatic AppSource Submission of Business Central apps](https://freddysblog.com/2022/09/22/automatic-appsource-submission-of-business-central-apps).
+It's possible to automatically submit apps to AppSource from our DevOps setup by using the [Partner Center Ingestion API](/azure/marketplace/azure-app-apis). <!--Learn more in this blog post [Automatic AppSource Submission of Business Central apps](https://freddysblog.com/2022/09/22/automatic-appsource-submission-of-business-central-apps). -->
 
 ### How do I install an offer with 'Contact Me' listing type on a customer environment?
 
