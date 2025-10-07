@@ -12,11 +12,16 @@ ms.reviewer: solsen
 
 When you install the AL Development Tools package, you gain access to a set of command-line utilities designed to streamline AL extension development and automation. The main features include:
 
-- **ALTool command-line utility**: A cross-platform tool for compiling, packaging, and managing AL extensions outside of Visual Studio Code.
-- **Integration with CI/CD pipelines**: Easy automation of build and deployment processes for your AL projects in Azure DevOps, GitHub Actions, or other automation platforms.
-- **Multiple installation options**: The tools package is available as a NuGet package, making it simple to install on build agents or local machines using standard package management workflows.
-- **No need for full Visual Studio Code installation**: Using the ALTool independently is ideal for automated environments or lightweight setups.
-- **Support for various ALTool commands**: Compile, create symbol packages, retrieve manifests, and more—all from the command line.
+- **ALTool command-line utility**  
+  A cross-platform tool for compiling, packaging, and managing AL extensions outside of Visual Studio Code.
+- **Integration with CI/CD pipelines**  
+  Easy automation of build and deployment processes for your AL projects in Azure DevOps, GitHub Actions, or other automation platforms.
+- **Multiple installation options**  
+  The tools package is available as a NuGet package, making it simple to install on build agents or local machines using standard package management workflows.
+- **No need for full Visual Studio Code installation**  
+  Using the ALTool independently is ideal for automated environments or lightweight setups.
+- **Support for various ALTool commands**  
+  Compile, create symbol packages, retrieve manifests, and more—all from the command line.
 
 Learn more in [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools)
 

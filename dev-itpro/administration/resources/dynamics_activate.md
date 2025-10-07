@@ -49,7 +49,7 @@ Authorization: Bearer {token}
 }
 ```
 
-If successful, the request typically returns a "200" response. Use the GET features request to verify that the feature state has changed.
+If successful, the request typically returns a "200" response. Use the [GET features](dynamics_featuremanagement.md) request to verify that the feature state has changed.
 
 ## Related information
 
