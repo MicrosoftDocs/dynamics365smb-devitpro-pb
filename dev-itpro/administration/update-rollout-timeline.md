@@ -28,7 +28,7 @@ There are two major update cycles per year, with major releases every April and 
 
 ### Preview period
 
-The preview period allows for testing new functionality before the version is made available as an update to your environment. Administrators can create a sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the preview version or update an existing sandbox to the preview version. A preview version lets you try out new functionality or test compatibility of extensions in a cloud environment. This period typically starts a month before the release of the new major version, that is, every March and September. Learn more in [Preparing for major updates with preview environments](preview-environments.md).
+The preview period allows for testing new functionality before the version is made available as an update to your environment. Administrators can create a sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the preview version or update an existing sandbox to the preview version. A preview version lets you try out new functionality or test compatibility of extensions in a cloud environment. For regular tenants, this period starts a month before the release of the new major version, that is, every March and September. Tenants with the [Partner Sandbox](environment-types.md#partnersandbox) license have access to the [early access preview](preview-environments.md), which runs alongside the entire update period. Learn more in [Preparing for major updates with preview environments](preview-environments.md).
 
 ### Update period
 
