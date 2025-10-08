@@ -32,7 +32,7 @@ The public preview period runs every March and September, the months before a ne
 
 ## Early access preview
 
-The early access preview period coincides with the update period for major versions, specifically:
+The early access preview period coincides with the [update period](update-rollout-timeline.md#update-period) for major versions, specifically:
 
 - The early access preview for an upcoming **April** major version starts when the update period for the current **October** major version begins.
 - The early access preview for an upcoming **October** major version starts when the update period for the current **April** major version begins.
