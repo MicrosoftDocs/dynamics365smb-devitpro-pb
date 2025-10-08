@@ -13,6 +13,8 @@ ms.custom: sfi-ropc-nochange
 
 This article addresses some of the most frequently asked questions around validation of apps for AppSource submission.
 
+<!-- delete sections and create overview - hotfixing can stay in ths article -->
+
 ## Questions about the validation process
 
 In the following, you can read about how submissions are handled and learn how to address the most common scenarios.

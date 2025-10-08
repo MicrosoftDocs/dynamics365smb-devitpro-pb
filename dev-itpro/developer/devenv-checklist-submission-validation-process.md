@@ -1,5 +1,5 @@
 ---
-title: Technical validation process
+title: Technical validation process FAQ
 description: Describes the most common questions about the validation process when submitting your app to AppSource for Business Central.
 author: qutreson
 ms.date: 10/08/2025
@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# Technical validation process
+# Technical validation process FAQ
 
 This article addresses some of the most frequently asked questions around validation of apps for AppSource submission.
 
