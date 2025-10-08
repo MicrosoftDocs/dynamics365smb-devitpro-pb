@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 03/21/2023
+ms.date: 10/08/2025
 ms.custom: bap-template
 
 ---
@@ -16,39 +16,39 @@ When an environment is no longer needed, like a sandbox environment, you can del
 
 ## About deleting and recovering environments
 
-Deleting an environment makes it inaccessible to Business Central users and deletes all application and business data. However, when you delete an environment, it's not permanently deleted immediately. First, it's kept as a backup or snapshot and enters a retention period that lasts fourteen days. This initial deletion phase is referred to as *soft delete*. During the retention period, you can fully recover the environment and its data if needed. After fourteen days, the environment and data are permanently deleted and can't be recovered. This final deletion phase is often referred to as *hard delete*.
+Deleting an environment makes it inaccessible to Business Central users and deletes all application and business data. However, when you delete an environment, it's not permanently deleted immediately. First, it's kept as a backup or snapshot and enters a retention period that lasts 14 days. This initial deletion phase is referred to as *soft delete*. During the retention period, you can fully recover the environment and its data if needed. After 14 days, the environment and data are permanently deleted and can't be recovered. This final deletion phase is often referred to as *hard delete*.
 
 Here's some important information about deleted environments and their recovery:  
 
-- If you delete an environment that has the status `Creating Failed` or `Removing Failed`, the environment won't be retained and will be permanently deleted immediately.
+- If you delete an environment that has the status `Creating Failed` or `Removing Failed`, the environment isn't retained and is permanently deleted immediately.
 
-- Deleted environments are removed from the **Recently deleted environments** page fourteen days after the environment has been deleted.
+- Deleted environments are removed from the **Recently deleted environments** page 14 days after the environment was deleted.
 
-   If you need to recover an environment that was deleted more than fourteen days ago, open a service request.
+   If you need to recover an environment that was deleted more than 14 days ago, open a service request.
 
 - When you delete environment, it's automatically renamed to include a suffix with the format `-yyMMddHHmmss`.
 
-   The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you may want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name. 
+   The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you might want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name. 
 
-   If the environment name is too long, it will be truncated to allow using the full suffix in the specified format. When the environment is recovered, it isn't automatically renamed back to the original name.
+   If the environment name is too long, it's truncated to allow using the full suffix in the specified format. When the environment is recovered, it isn't automatically renamed back to the original name.
 
    You can also manually rename soft-deleted environments from the **Recently deleted environments** page.
 - Soft-deleted environments don't get applied with updates, but they remain part of the update schedule until they're permanently deleted.
 
-   When you recover an environment, any updates scheduled for the environment while it was in retention will be applied as part of recovery. If you don't want to apply an update during recovery, you can reschedule it to a later date before starting the recovery.
+   When you recover an environment, any updates scheduled for the environment while it was in retention are applied as part of recovery. If you don't want to apply an update during recovery, you can reschedule it to a later date before starting the recovery.
 
 - Soft-deleted environments, or any environments listed on **Recently deleted environments** page, aren't counted towards the environment quota on your tenant.
-- Environments that are [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment cannot be deleted. Unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment before deleting the environment.
-- [Early access preview environments](preview-environments.md) are automatically updated to a new preview build every Sunday, and will be deleted should the update fail. Early access preview environments that have been deleted because the update to a new build failed cannot be recovered. Early access preview environments that are deleted normally will only be recoverable until the new preview build is released.
+- Environments that are [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment can't be deleted. Unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment before deleting the environment.
+- [Early access preview environments](preview-environments.md#early-access-preview) are automatically updated to a new preview build every Sunday. If the update fails, they're deleted. Early access preview environments that are deleted because the update to a new build failed can't be recovered. Early access preview environments that are deleted normally are only recoverable until the new preview build is released.
 
 > [!IMPORTANT]
 > You can recover a soft-deleted product environment even if doing so results in exceeding your environment quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription.
 >
-> This capability is provided as an exception, to ensure that you can always recover your production environment in critical situations. You must return within your quota within 30 days following the recovery by either deleting a production environment or by purchasing an extra production environment. For more information, see [Managing Capacity](tenant-admin-center-capacity.md).
+> This capability is provided as an exception to ensure that you can always recover your production environment in critical situations. You must return within your quota within 30 days following the recovery by deleting a production environment or purchasing an extra production environment. Learn more in [Managing Capacity](tenant-admin-center-capacity.md).
   
 ## Delete an environment
 
-1. Before you delete an environment, make sure no users are using the environment, they'll be disconnected.
+1. Before you delete an environment, make sure no users are using the environment, because they'll be disconnected.
 2. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, then select environment you want to delete.
 3. In the action ribbon at the top of the page, select **Delete** > **Yes**.
 
