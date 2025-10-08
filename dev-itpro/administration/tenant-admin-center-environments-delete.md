@@ -4,10 +4,9 @@ description: Learn how to delete and recover deleted environments using the Busi
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: how-to 
+ms.topic: how-to
 ms.date: 10/08/2025
 ms.custom: bap-template
-
 ---
 
 # Delete and recover environments
