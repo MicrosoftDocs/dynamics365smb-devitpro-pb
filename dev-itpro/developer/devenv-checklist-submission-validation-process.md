@@ -11,13 +11,9 @@ ms.custom: sfi-ropc-nochange
 
 # Technical validation process FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for AppSource submission.
+This article addresses some of the most frequently asked questions around validation of apps for AppSource submission. In the following, you can read about how submissions are handled and learn how to address the most common scenarios.
 
-## Questions about the validation process
-
-In the following, you can read about how submissions are handled and learn how to address the most common scenarios.
-
-### Against which releases are my apps validated?
+## Against which releases are my apps validated?
 
 The extensions in your submission are validated for all the releases targeted by your submission.
 
@@ -31,13 +27,13 @@ Based on the app.json file of your extension, the service automatically computes
 > [!NOTE]  
 > Thirty days before the release of a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version, all submissions are validated against the upcoming release. The apps in your submission must then be compatible with the upcoming release. The goal is to ensure that your customers won't be blocked during the upgrade of their environment.
 
-### Against which countries/regions are my apps validated?
+## Against which countries/regions are my apps validated?
 
 The extensions in your submission are validated for all the countries/regions targeted by the submission, which are available in [!INCLUDE[prod_short](../includes/prod_short.md)]. You can see which countries/regions you've selected in Partner Center under `Availability > Edit Markets`. 
 
 When you're adding new localizations in [!INCLUDE[prod_short](../includes/prod_short.md)], these countries/regions can be added to Partner Center before they're ready in [!INCLUDE[prod_short](../includes/prod_short.md)]. If you're targeting a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), depending on when your submission is processed, your apps might not be uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] if the localization isn't yet ready in [!INCLUDE[prod_short](../includes/prod_short.md)]. Generally, it's possible to upload apps for 'Planned' localizations a few weeks before they're officially released. When the localization becomes available, if you're experiencing issues installing your apps, you should increase the version in the app.json and submit the packages again in Partner Center. If you're using Azure Application Insights, you can check whether the country/region was validated using this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
-### Against which baselines are my apps validated?
+## Against which baselines are my apps validated?
 
 The service verifies that your extensions don't introduce breaking changes by comparing them to the latest version available in AppSource for each country/region validated.
 
@@ -46,7 +42,7 @@ You can know which versions of your extensions were used as baseline during the 
 > [!IMPORTANT]  
 > As soon as your app has been uploaded to the AppSource marketplace, it will be used as a baseline during the technical validation of your next submissions. As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes; breaking changes on tables or table extensions. This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you're still developing it and expect to change it soon.
 
-### Which apps are validated in my submission?
+## Which apps are validated in my submission?
 
 The main app and the libraries required by the main app are validated and uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)]. If you have included libraries, which aren't required by the main app, they're ignored during the validation and aren't uploaded to the service.
 
@@ -58,23 +54,23 @@ For example, let's consider an app A, which has an offer in the AppSource market
 > [!IMPORTANT]
 > If one or more libraries in your submission have their own offer, their listings in the AppSource marketplace won't be updated automatically. In order to keep the listings in sync with the version of the apps uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)], you should submit a submission for their related offers.
 
-### How long does the 'Automated application validation' take?
+## How long does the 'Automated application validation' take?
 
 During 'Automated application validation', the apps in your submission are validated for each of the country/regions and each of the releases of [!INCLUDE[prod_short](../includes/prod_short.md)] targeted. If you already have a version of these extensions published to AppSource, then it also runs the breaking change validation using the apps currently in AppSource as baseline. Depending on the size of your app, the validation time can vary. Submissions are processed within a few minutes and we expect all submissions to be processed under 3 hours. However, if your app contains thousands of AL files, this process can take longer. We would then recommend splitting the app in smaller modules as it would also improve the development experience and the maintainability of your code base.
 
-### How many automated tests do we need to run for validation and how high must the test coverage be?  
+## How many automated tests do we need to run for validation and how high must the test coverage be?  
 
 When setting up your offer in Partner Center, you must still include a test package in 'App Tests Automation', but it isn't used during the validation of the submission.
 
 Test automation is something we expect you to run, to test your app, and to make sure that the quality of your app is high. We don't run tests of your apps, nor do we have a set value for a required code coverage. Instead, we rely on you to test your app properly to give your customers a good experience.
 
-### When I submit an app to AppSource; do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
+## When I submit an app to AppSource; do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
 
 When setting up your offer in Partner Center, you must still include a document in 'Key Usage Scenario', but it isn't used during the validation of the submission.
 
 We don't run a manual validation of the apps anymore. Instead, we rely on you to test that your app provides your customers with a good experience.
 
-### When are my apps ready to be installed in my Business Central environment?
+## When are my apps ready to be installed in my Business Central environment?
 
 Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the AppSource marketplace.
 
@@ -90,7 +86,7 @@ Where
 
 Learn more about AppSource app preview in the section [Questions about AppSource app previews](#questions-about-appsource-app-previews) in this article.
 
-### When should I include my library apps as part of my submission?
+## When should I include my library apps as part of my submission?
 
 You aren't required to always include the dependencies of your extension as part of your submission.
 
@@ -103,7 +99,7 @@ If you didn't include the dependencies for your app and they aren't publicly ava
 
 If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries/regions targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries/regions, you should use the .app file that is already uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file). All submitted versions that passed the "Automated Application Validation" are considered in the content validation check, even if they weren't made publicly available.
 
-### My app failed at the "Automated application validation" stage, what do I do next?
+## My app failed at the "Automated application validation" stage, what do I do next?
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
@@ -123,19 +119,19 @@ At this stage, your extensions are validated to assess whether they meet the req
 > [!NOTE]
 > Because the extensions in your submission are validated for each release and country/region targeted by the submissions, the validation results can be verbose and can't always be displayed in their full length in Partner Center. The error message will then end with `...(Truncated)`. If that happens for your submission, you should either enable Azure Application Insights in your extension, run the self-validation script, or fix the errors visible and iterate on your submission.
 
-### My app failed at the "Certification" stage, what do I do next?
+## My app failed at the "Certification" stage, what do I do next?
 
 At this stage, your extensions are validated to assess whether they meet the requirements defined in the [Marketing Validation Checklist](readiness/readiness-checklist-marketing.md).
 
 Review the Marketing requirements and the [Marketing Validation FAQ](readiness/readiness-marketing-validation-faq.md) in order to fix the errors reported.
 
-### My app failed at the "Publish application with the service" stage, what do I do next?
+## My app failed at the "Publish application with the service" stage, what do I do next?
 
 At this stage, your extensions are being published to [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
 
-### My app failed at another stage, what do I do next?
+## My app failed at another stage, what do I do next?
 
 If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
 

@@ -11,15 +11,13 @@ ms.custom: sfi-ropc-nochange
 
 # Azure Application Insights and AppSource submission FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for AppSource submission.
+This article addresses some of the most frequently asked questions around Azure Application Insights for AppSource apps.
 
-## Questions about Azure Application Insights usage during AppSource submissions
-
-### How do I enable Application Insights telemetry for my submissions?
+## How do I enable Application Insights telemetry for my submissions?
 
 To enable Application Insights signals for your submissions, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. Learn more about this property in [JSON files](devenv-json-files.md).
 
-### I don't see any signals in the resource specified for my extension, what do I do next?
+## I don't see any signals in the resource specified for my extension, what do I do next?
 
 Here's a list of steps that you can follow to troubleshoot this issue:
 
@@ -29,7 +27,7 @@ Here's a list of steps that you can follow to troubleshoot this issue:
 4. If you're using the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension, make sure that you're using the full connection string and that it contains, at least, the following key-value pairs: `InstrumentationKey=<some-key>`, `IngestionEndpoint=<some-url>`, and `LiveEndpoint=<some-url>`. Learn more in [Connection strings](/azure/azure-monitor/app/sdk-connection-string)
 5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to 'Configure > Usage and estimated costs'. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. Learn more in [Sampling in Application Insights](/azure/azure-monitor/app/sampling). 
 
-### I can see some signals in Application Insights, but I can't find why my submission failed, what do I do next?
+## I can see some signals in Application Insights, but I can't find why my submission failed, what do I do next?
 
 Much information is provided in the custom dimensions of the signals. The validation errors can generally be found for the signals with eventId `LC0034`. Learn more about the signals emitted during the technical validation of AppSource submission in [Analyzing AppSource submission validation trace telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 

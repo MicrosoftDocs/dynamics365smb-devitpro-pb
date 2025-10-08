@@ -11,6 +11,8 @@ ms.custom: sfi-ropc-nochange
 
 # Technical validation FAQ
 
+MAIN ARTICLE
+
 This article addresses some of the most frequently asked questions around validation of apps for AppSource submission.
 
 <!-- delete sections and create overview - hotfixing can stay in ths article -->
