@@ -34,7 +34,7 @@ The public preview period runs every March and September, the months before a ne
 
 The early access preview period coincides with the update period for major versions, specifically:
 
-- The early access preview for an upcoming **April** major version starts when the update period for the current**October** major version begins.
+- The early access preview for an upcoming **April** major version starts when the update period for the current **October** major version begins.
 - The early access preview for an upcoming **October** major version starts when the update period for the current **April** major version begins.
 
 During the early access preview period, only tenants that use the [Partner Sandbox](environment-types.md#partnersandbox) license can create new sandbox environments on the preview version. The only environment localizations supported for early access preview are DE, GB, and US.
