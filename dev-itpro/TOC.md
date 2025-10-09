@@ -32,6 +32,15 @@
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
 
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
+##### [Technical validation process FAQ](developer/devenv-checklist-submission-validation-process.md)
+##### [App identity FAQ](developer/devenv-checklist-submission-app-identity.md)
+##### [Azure Application Insights and AppSource submission FAQ](developer/devenv-checklist-submission-app-insights.md)
+##### [AppSource app previews FAQ](developer/devenv-checklist-submission-app-preview.md)
+##### [Business Central offer FAQ](developer/devenv-checklist-submission-offer.md)
+##### [Names, affixes, and ID ranges FAQ](developer/devenv-checklist-submission-name-affix-range.md)
+##### [Develop and maintain AppSource apps FAQ](developer/devenv-checklist-submission-develop-maintain.md)
+##### [Code-signing validation FAQ](developer/devenv-checklist-submission-code-sign.md)
+##### [Channels for questions and issues FAQ](developer/devenv-checklist-submission-channels.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Embed apps
