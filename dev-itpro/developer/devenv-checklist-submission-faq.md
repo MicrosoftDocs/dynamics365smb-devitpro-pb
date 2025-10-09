@@ -15,7 +15,11 @@ MAIN ARTICLE
 
 This article addresses some of the most frequently asked questions around validation of apps for AppSource submission.
 
-<!-- delete sections and create overview - hotfixing can stay in ths article -->
+Overview
+
+keep hotfixing section here
+
+<!-- delete sections and create overview - hotfixing can stay in ths article
 
 ## Questions about the validation process
 
@@ -353,7 +357,7 @@ When changing a `connect` app to an `add-on` app, you should:
 
 ### How to automatically update my offer using Partner Center submission API?
 
-It's possible to automatically submit apps to AppSource from our DevOps setup by using the [Partner Center Ingestion API](/azure/marketplace/azure-app-apis). <!--Learn more in this blog post [Automatic AppSource Submission of Business Central apps](https://freddysblog.com/2022/09/22/automatic-appsource-submission-of-business-central-apps). -->
+It's possible to automatically submit apps to AppSource from our DevOps setup by using the [Partner Center Ingestion API](/azure/marketplace/azure-app-apis). <!--Learn more in this blog post [Automatic AppSource Submission of Business Central apps](https://freddysblog.com/2022/09/22/automatic-appsource-submission-of-business-central-apps). 
 
 ### How do I install an offer with 'Contact Me' listing type on a customer environment?
 
@@ -401,6 +405,7 @@ When you have questions on developing and maintaining AppSource apps, on automat
 
 You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
 
+-->
 ## Related information
 
-[Technical Validation Checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)

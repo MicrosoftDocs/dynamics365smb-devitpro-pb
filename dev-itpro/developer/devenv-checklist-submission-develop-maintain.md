@@ -11,7 +11,7 @@ ms.custom: sfi-ropc-nochange
 
 # Develop and maintain AppSource apps FAQ
 
-This article addresses some of the most frequently asked questions around maintaining apps for AppSource submission. This section contains frequently asked questions regarding developing apps (in Docker or SaaS). Learn more about maintaining apps after they've reached the AppSource marketplace in [Update lifecycle for AppSource apps FAQ](devenv-update-app-life-cycle-faq.md).
+This article contains frequently asked questions regarding developing apps (in Docker or SaaS). Learn more about maintaining apps after they've reached the AppSource marketplace in [Update lifecycle for AppSource apps FAQ](devenv-update-app-life-cycle-faq.md).
 
 ## What does it mean if I have an app in development that needs another dependency loaded, but I can't get the dependency's codeunits to load in my BC docker instance because it says the dependency's range is outside my range?
 

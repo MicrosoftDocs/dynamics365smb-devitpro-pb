@@ -11,7 +11,7 @@ ms.custom: sfi-ropc-nochange
 
 # Names, affixes, and ID ranges FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for AppSource submission. In the following, you can read about how affixes and ID ranges are assigned.
+This article addresses some of the most frequently asked questions around how affixes and ID ranges are assigned to AppSource apps.
 
 ## Do I need to register different affixes for each of my extensions?
 
@@ -31,4 +31,4 @@ We would like longer names as well. Introducing namespaces could be one investme
 
 ## Related information
 
-[Technical Validation Checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)

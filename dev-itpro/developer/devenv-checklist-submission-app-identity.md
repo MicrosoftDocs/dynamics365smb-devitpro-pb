@@ -50,4 +50,4 @@ If they're different apps (different code), they should have different identity.
 
 ## Related information
 
-[Technical Validation Checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)

@@ -11,7 +11,7 @@ ms.custom: sfi-ropc-nochange
 
 # Code-signing validation FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for AppSource submission. This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). Learn more about code-signing in [Sign an APP Package File](devenv-sign-extension.md).
+This article addresses some of the most frequently asked questions around code-signing validation of apps for AppSource submission. Learn more in [Sign an app package file](devenv-sign-extension.md).
 
 ## Can I use any computer to sign my apps?
 
@@ -37,4 +37,4 @@ Currently we only accept `.pfx` certificates. However, if you have a different c
 
 ## Related information
 
-[Technical Validation Checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)

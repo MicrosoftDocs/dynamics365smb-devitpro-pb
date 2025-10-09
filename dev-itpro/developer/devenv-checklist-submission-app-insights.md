@@ -36,4 +36,4 @@ Much information is provided in the custom dimensions of the signals. The valida
 
 ## Related information
 
-[Technical Validation Checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)

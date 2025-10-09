@@ -83,4 +83,4 @@ During the upgrade of an environment to the next minor, AppSource apps versions 
 
 ## Related information
 
-[Technical Validation Checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)
