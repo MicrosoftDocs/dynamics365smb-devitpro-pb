@@ -15,7 +15,6 @@ This article addresses some of the most frequently asked questions around valida
 
 |Article|Description |
 |---|---|
-|[Technical validation checklist](devenv-checklist-submission.md)|Describes the steps you must go through to successfully submit your app to AppSource using AppSourceCop for Business Central.|
 |[Technical validation process FAQ](devenv-checklist-submission-validation-process.md)|Describes the most common questions about the validation process when submitting your app to AppSource for Business Central.|
 |[App identity FAQ](devenv-checklist-submission-app-identity.md)|Describes the most common questions about app identity in your AppSource app for Business Central.|
 |[Azure Application Insights and AppSource submission FAQ](devenv-checklist-submission-app-insights.md)|Describes the most common questions when submitting your app to AppSource for Business Central.|
