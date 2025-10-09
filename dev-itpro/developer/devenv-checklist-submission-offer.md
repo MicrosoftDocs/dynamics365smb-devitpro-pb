@@ -51,4 +51,4 @@ Learn more about listing types in [App type, contact type, and customer leads](.
 
 ## Related information
 
-[Technical Validation Checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)

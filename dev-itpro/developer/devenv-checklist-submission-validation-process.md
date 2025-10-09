@@ -11,7 +11,7 @@ ms.custom: sfi-ropc-nochange
 
 # Technical validation process FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for AppSource submission. In the following, you can read about how submissions are handled and learn how to address the most common scenarios.
+This article addresses some of the most frequently asked questions about how submissions are handled and how to address the most common scenarios.
 
 ## Against which releases are my apps validated?
 
@@ -137,4 +137,4 @@ If your submission failed at another stage than "Automated application validatio
 
 ## Related information
 
-[Technical Validation Checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)
