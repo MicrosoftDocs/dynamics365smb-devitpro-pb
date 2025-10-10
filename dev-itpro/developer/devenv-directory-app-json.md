@@ -23,21 +23,26 @@ The `directory.app.props.json` file is typically located in the root folder of t
 ## Supported app.json properties
 
 The `directory.app.props.json` file supports the following `app.json` properties:
-- name
-- version
-- publisher
-- description
-- brief
-- privacyStatement
-- EULA
-- help
-- url
-- logo
-- target
-- platform
-- application
-- runtime
-- helpBaseUrl
+
+| Property      |
+|---------------|
+| `name`         |
+| `version`      |
+| `publisher`    |
+| `description`  |
+| `brief` |
+| `privacyStatement`|
+| `EULA` |
+| `help` |
+| `url` |
+| `logo` |
+| `target` |
+| `platform` |
+| `application` |
+| `runtime` |
+| `helpBaseUrl`|
+
+Learn more about these properties in [JSON files](devenv-json-files.md).
 
 ## Create the directory.app.props.json file
 
