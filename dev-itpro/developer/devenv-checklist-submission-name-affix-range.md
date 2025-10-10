@@ -31,4 +31,14 @@ We would like longer names as well. Introducing namespaces could be one investme
 
 ## Related information
 
-[Technical validation checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)  
+[Technical validation process FAQ](devenv-checklist-submission-validation-process.md)  
+[App identity FAQ](devenv-checklist-submission-app-identity.md)  
+[Azure Application Insights and AppSource submission FAQ](devenv-checklist-submission-app-insights.md)  
+[AppSource app previews FAQ](devenv-checklist-submission-app-preview.md)  
+[Business Central offer FAQ](devenv-checklist-submission-offer.md)  
+[Names, affixes, and ID ranges FAQ](devenv-checklist-submission-name-affix-range.md)  
+[Develop and maintain AppSource apps FAQ](devenv-checklist-submission-develop-maintain.md)  
+[Code-signing validation FAQ](devenv-checklist-submission-code-sign.md)  
+[Channels for questions and issues FAQ](devenv-checklist-submission-channels.md)
+
