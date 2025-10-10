@@ -1,21 +1,27 @@
 ---
-title: Deprecated Features in the Base App
+title: Deprecated Features in the application
 description: Describes the features that have been moved, removed, or replaced in the W1 version.
 author: brentholtorf
 ms.author: bholtorf
-ms.date: 03/13/2025
-ms.reviewer: bholtorf
+ms.date: 10/10/2025
+ms.reviewer: solsen
 ms.topic: article
 ms.custom: bap-template
 ---
 
-# Deprecated Features in the Base App
+# Deprecated features in the application
 
-This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The features can relate to the base app or other apps published by Microsoft.
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
 ## Changes in 2027 release wave 1 (version 29.0)
+
+### AMC Fundamentals app (removal)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| For years the **AMC Fundamentals** app has been published to AppSource by Microsoft who shared the feature ownership with AMC. AMC has improved the app and will from now on take responsibility for maintaining and shipping the app. The Microsoft-published app will be removed from Business Central and replaced by an AMC-owned app that takes care of migration from **AMC Fundamentals**. Customers who use **AMC Fundamentals** and wish to use AMC's new app must coordinate this migration with AMC.|
 
 ### Peppol BIS 2.0 and Peppol BIS 2.1 are replaced by Peppol BIS 3.0
 
