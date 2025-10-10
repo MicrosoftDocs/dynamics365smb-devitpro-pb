@@ -122,7 +122,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 | User experiences| [Adjust width of Copilot, help, and page scripting panes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/adjust-width-copilot-help-page-scripting-panes)| General availability |
 | | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data)| Public preview*|
 
-\* Controlled in **Feature Management** Link coming soon
+\* Controlled in **Feature Management**
 
 ## Changes to optional features in Feature Management
 
