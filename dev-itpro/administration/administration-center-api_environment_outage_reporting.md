@@ -6,12 +6,12 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 10/14/2025
 ---
 
 # Business Central Admin Center API - Environment Outage Reporting
 
-Enables the ability to report that an environment isn't accessible and may require attention
+Enables the ability to report that an environment isn't accessible and may require attention.
 
 ## Get Outage Types
 
