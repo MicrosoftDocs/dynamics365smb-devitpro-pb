@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 06/20/2025
+ms.date: 10/14/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -40,14 +40,17 @@ Although the following roles aren't required to access the [!INCLUDE[prodadmince
 
 ## Internal administrators
 
-As the internal administrator, you can select the link in the **Settings** menu when you're signed in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
+Internal admins are tenant users that have at least the [Dynamics 365 Business Central Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-business-central-administrator) role.
 
-Alternatively, you can access the administration center from the URL, use the following pattern but replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
+To access the admin center as an internal admin, do one of the following:
 
-`https://businesscentral.dynamics.com/[TENANT_ID]/admin`
+- Sign in to [Business Central](https://businesscentral.dynamics.com), and then select **Settings** > **Admin Center** in the upper-right corner.  
+- Enter the admin center URL in a browser address. Use the following pattern but replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
 
-> [!TIP]
-> The tenant ID is shown in the **Help and Support** page in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
+  `https://businesscentral.dynamics.com/[TENANT_ID]/admin`
+
+  > [!TIP]
+  > The tenant ID is shown in the **Help and Support** page in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
 ## Delegated administrators (Partner users)
 
@@ -61,7 +64,7 @@ After the relationship is set up, users in the partner tenant can access the [!I
 4. Select **Service Management**.
 5. Under the **Administer Services** heading, select [!INCLUDE[prod_long](../developer/includes/prod_long.md)].
 
-Kearn more in [Grant granular permissions to security groups](/partner-center/customers/gdap-assign-microsoft-entra-roles#grant-permissions-to-security-groups).
+Learn more in [Grant granular permissions to security groups](/partner-center/customers/gdap-assign-microsoft-entra-roles#grant-permissions-to-security-groups).
 
 > [!TIP]
 > Delegated administrators don't need a license assigned or be a guest user in the customer tenant to access and administer the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments.
