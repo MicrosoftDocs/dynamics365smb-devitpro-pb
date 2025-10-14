@@ -58,13 +58,13 @@ Most trials are based on people signing up at [https://dynamics.microsoft.com/bu
 
 ## Get started with a subscription
 
-Each time a user signs in during the trial period, a notification in a blue bar at the top displays the time remaining. If an organization decides to subscribe, they must find a [!INCLUDE[prod_short](../includes/prod_short.md)] partner. For more information, see [How do I find a reselling partner?](/dynamics365/business-central/across-faq#findpartner) (business users) and [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md) (partners).  
+Each time a user signs in during the trial period, a notification in a blue bar at the top displays the time remaining. If an organization decides to subscribe, they must find a [!INCLUDE[prod_short](../includes/prod_short.md)] partner. For more information, see [How do I find a reselling partner?](/dynamics365/business-central/across-faq#findpartner) (business users) and [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md) (partners).
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
 For more information about what you can do with [!INCLUDE [prod_short](../includes/prod_short.md)], see [Get Ready for Doing Business](/dynamics365/business-central/ui-get-ready-business) and [Business Functionality](/dynamics365/business-central/across-business-functionality).  
 
-### Removing and canceling a subscription or trial
+## Removing and canceling a trial or subscription
 
 If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod_short.md)], an administrator must remove the subscription in the Microsoft 365 admin center. An email notification is sent to all admins of the account. Deleting the subscription blocks all users from accessing their [!INCLUDE [prod_short](../includes/prod_short.md)], and deletes all data. Learn more in [Cancel your subscription in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/cancel-your-subscription#steps-to-cancel-your-subscription).
 
