@@ -18,13 +18,13 @@ A *connector* is a proxy or a wrapper around an API that allows the user of the 
 
 [![Shows how the Power Platform connector integrates to Business Central](../developer/media/power-platform-connector-diagram.svg)](../developer/media/power-platform-connector-diagram.svg#lightbox)
 
-For more information, see [Power Platform Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas) in the Power Platform documentation.
+Learn more in [Power Platform Connectors Overview](/connectors/connectors) and [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas) in the Power Platform documentation.
 
 ## Integrating Business Central with Microsoft Power Apps
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Apps by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Apps, you have the flexibility to build the perfect solution for your business domain&mdash;one that uses [!INCLUDE[prod_short](../includes/prod_short.md)] data and processes and maximizes your productivity. With Power Apps custom UI, AI builder, and augmented-reality (AR)/mixed-reality (MR) technologies, you can take your business to the next level with cutting-edge innovation and customized UI. 
 
-For more information, see [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)
+Learn more in [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)
 
 ## Integrating Business Central with Microsoft Power Automate and Azure Logic Apps
 
@@ -32,7 +32,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 The [!INCLUDE[prod_short](../includes/prod_short.md)] integration with Azure Logic Apps is similar, but allows for more advanced control over the deployment and consumption of your automation. Nearly all of the functionality of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector is identical between Power Automate and Azure Logic Apps.
 
-For more information, see [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
+Learn more in [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
 
 ## Integrating Business Central with Microsoft Power BI
 
@@ -47,7 +47,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 :::image type="content" source="/dynamics365/business-central/media/power-bi-architecture.svg" alt-text="Image alt text." lightbox="/dynamics365/business-central/media/power-bi-architecture.svg":::
 
-For more information, see [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview).
+Learn more in [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview).
 
 ### How to embed a Power BI report, page, or visual in the Business Central client
 
@@ -55,17 +55,34 @@ For more information, see [Power BI integration overview](/dynamics365/business-
 
 There are two ways that a Power BI report, page, or visual can be added to a page in the [!INCLUDE[prod_short](../includes/prod_short.md)] client:
 
-1. A user can embed a Power BI report, page, or scorecard on pages that include a Power BI part. For more information, see [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
-1. A developer can programmatically add them from AL. For more information, see [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
-
+1. A user can embed a Power BI report, page, or scorecard on pages that include a Power BI part. Learn more in [Working with Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi).
+1. A developer can programmatically add them from AL. Learn more in [Adding Power BI Report parts to pages](../developer/devenv-power-bi-report-parts.md).
 
 ## Integrating Business Central with Microsoft Power Pages (preview)
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Pages by using virtual tables in Dataverse. With Power Pages, you can allow unlicensed external users to access data stored in [!INCLUDE[prod_short](../includes/prod_short.md)] online.
 
+[![Shows how Copilot Studio integrates with Business Central using connectors and MCP servers](../developer/media/dataverse-virtual-tables.svg)](../developer/media/dataverse-virtual-tables.svg#lightbox)
+
+Learn more in [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
+
+## Integrating Business Central with Microsoft Copilot Studio
+
+Copilot Studio is a graphical, low-code tool for building agents and agent flows and extending agent capabilities with connectors and [MCP (Model Context Protocol)](https://learn.microsoft.com/copilot-studio/model-context-protocol/overview) servers. Copilot Studio together with Business Central lets you build conversational agents that understand your ERP model and act on it. You can surface Business Central data (customers, orders, invoices, inventory) and business logic to users via natural language, automate tasks like creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
+
 [![Shows how data virtualization works between Business Central and Dataverse](../developer/media/dataverse-virtual-tables.svg)](../developer/media/dataverse-virtual-tables.svg#lightbox)
 
-For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
+Agents can use model‑aware tools like the Dynamics 365 Business Central MCP server or connector to read and write records, call custom APIs from AL extensions, while respecting pricing, discount, and validation rules server‑side. You can publish agents into the following targets:
+
+- **Teams**
+- **Dynamics 365**
+- **Microsoft 365 apps**
+- **Power Apps/Pages**
+- **Custom web channels**
+
+Governance (including Entra ID authentication, data loss prevention, and environment policies) ensures secure, auditable access.
+
+Learn more in [Integrating with Microsoft Copilot Studio](../developer/power-pages-on-virtual-tables-overview.md).
 
 ## Related information
 
