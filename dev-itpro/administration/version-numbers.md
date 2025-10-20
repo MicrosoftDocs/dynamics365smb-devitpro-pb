@@ -1,10 +1,10 @@
 ---
-title: Version numbers in Business Central and what they mean
+title: Version Numbers in Business Central
 description: Learn how to read version numbers in Business Central and how to understand them when you troubleshoot issues.
 author: jswymer
 ms.topic: article
 ms.author: jswymer
-ms.date: 03/31/2025
+ms.date: 10/14/2025
 ms.custom: bap-template
 ms.reviewer: jswymer
 ---
@@ -17,8 +17,8 @@ You can use the information about which version the tenant is on to help you tro
 
 |Version  |Example      |Description                                 |
 |---------|-------------|--------------------------------------------|
-|Platform \<major>.\<minor>.\<build>.\<revision>|20.0.12345.0 | Specifies the full platform version, which includes client and server components. |
-|Application \<major>.\<minor>.\<build>.\<revision>|20.1.23456.0| Specifies the full version number for the application, including the major version number and build number. |
+|Platform \<major>.\<minor>.\<build>.\<revision>|27.0.12345.0 | Specifies the full platform version, which includes client and server components. |
+|Application \<major>.\<minor>.\<build>.\<revision>|27.1.23456.0| Specifies the full version number for the application, including the major version number and build number. |
 
 > [!NOTE]
 > In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], only the \<major>.\<minor> version number for the application is used to administer environment updates.
@@ -28,6 +28,7 @@ The numbers are updated based on Microsoft's builds. In the default version of [
 The following list describes the meaning of each of the numbers in a full version number:
 
 - `major` is the major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+  - `27` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 2 update in October 2025 and forward
   - `26` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1 update in April 2025 and forward
   - `25` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 update in October 2024 and forward
   - `24` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 1 update in April 2024 and forward
@@ -48,7 +49,7 @@ The following list describes the meaning of each of the numbers in a full versio
 - `build` is the five digit build number, such as 23456.
 - `revision` is set to 0 for the original release and can remain at 0. However, if the tenant is patched with a hotfix, then that build number can be applied.
 
-In other words, if you see a version number such as `20.1.23456.26323`, then it means major version *20*, update number *1*, build number *23456*, and hotfix number *26323*.
+In other words, if you see a version number such as `27.1.23456.26323`, then it means major version *27*, update number *1*, build number *23456*, and hotfix number *26323*.
 
 The same version numbers are used to identify versions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, including when you deploy containers on Docker.  
 

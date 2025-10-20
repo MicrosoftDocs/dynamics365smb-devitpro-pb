@@ -4,7 +4,7 @@ description: Describes how to upload a Business Central license when you deploy 
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 04/16/2024
+ms.date: 10/14/2025
 ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
@@ -16,18 +16,19 @@ author: jswymer
 
 After an administrator or a Microsoft Certified Partner initially installs [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the next step is to upload the license file that is supplied by Microsoft.  
 
- To save the license file, you must have the necessary roles and permissions in SQL Server. See [Setting Database Owner and Security Administration Permissions](../security/Setting-Database-Owner-and-Security-Administration-Permissions.md).  
+To save the license file, you must have the necessary roles and permissions in SQL Server. Learn more in [Setting Database Owner and Security Administration Permissions](../security/Setting-Database-Owner-and-Security-Administration-Permissions.md).  
 
 > [!NOTE]  
 > Uploading the license file is typically something you do once for each database installation, not once for each client installation. If you need to upload a license for a specific database, see [Uploading a License File for a Specific Database](#UploadtoDatabase).  
 
-Initially, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses CRONUS.flf, which is the demonstration license file. All license files that aren't demonstration license files are named fin.flf or fin.bclicense. The demonstration license file has been given a different name so that it cannot be mistakenly overwritten.  
+Initially, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses CRONUS.flf or CRONUS.bclicense, which is the demonstration license file. All license files that aren't demonstration license files are named fin.flf or fin.bclicense. The demonstration license file has different name so that it can't be mistakenly overwritten.  
+
+> [!TIP]
+> To about the different types of licenses and how licensing works in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], download the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## FLF and bclicense file types
 
-Depending on your Business Central version and when you got your license, the license is either delivered as a single .flf file or as a \.zip that contains both a .flf and a \.bclicense file. The .flf file type is the legacy license format, which was [deprecated and removed in 2023 release wave 1 (v22)](../upgrade/deprecated-features-platform.md#flfformat). The \.bclicense file type is the newer license format. Both file types provide the same terms and permissions. But the \.bclicense file type is better suited for large license files than the \.flf file type. With large licenses, you might have problems importing a \.flf file. The .flf file type will eventually be deprecated.
-
-So we recommend that you use the \.bclicense file if you've gotten one.
+Depending on your Business Central version and when you got your license, the license is either delivered as a single .flf file or as a \.zip that contains both an .flf and a \.bclicense file. The .flf file type is the legacy license format, which was [deprecated and removed in 2023 release wave 1 (v22)](../upgrade/deprecated-features-platform.md#flfformat). The \.bclicense file type is the newer license format. Both file types provide the same terms and permissions. But the \.bclicense file type is better suited for large license files than the \.flf file type. With large licenses, you might have problems importing a \.flf file. So we recommend that you use the \.bclicense file if you have one.
 
 > [!NOTE]
 > The bclicense file type is supported on versions 17.12, 18.7, 19.1 and later.
@@ -67,7 +68,7 @@ The following procedure uploads the license for all [!INCLUDE[prod_short](../dev
     > [!NOTE]  
     >  On a computer running any version of Windows with User Access Control enabled, you must start the development environment as an administrator.  
 
-2. Verify that you are connected to your database. On the **File** menu, point to **Database**, and then choose **Open**.  
+2. Verify that you're connected to your database. On the **File** menu, point to **Database**, and then choose **Open**.  
 
 3. Upload the new license.  
 

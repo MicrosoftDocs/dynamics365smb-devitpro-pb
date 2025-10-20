@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: article
 ms.search.keywords: preview, trial, sandbox, subscription
 ms.search.form: 1803, 1801
-ms.date: 06/26/2024
+ms.date: 10/14/2025
 ms.author: jswymer
 ms.reviewer: solsen
 ---
@@ -55,17 +55,20 @@ If the data in a [!INCLUDE[prod_short](../includes/prod_short.md)] free trial, y
 Most trials are based on people signing up at [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/). These viral trials don't expire, unless the prospect switches to the 30-day trial, and provided that users access [!INCLUDE [prod_short](../includes/prod_short.md)] frequently.  
 
 [!INCLUDE [admin-viral-trial-expiry](../developer/includes/admin-viral-trial-expiry.md)]
+
 ## Get started with a subscription
 
-Each time a user signs in during the trial period, a notification in a blue bar at the top displays the time remaining. If an organization decides to subscribe, they must find a [!INCLUDE[prod_short](../includes/prod_short.md)] partner. For more information, see [How do I find a reselling partner?](/dynamics365/business-central/across-faq#findpartner) (business users) and [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md) (partners).  
+Each time a user signs in during the trial period, a notification in a blue bar at the top displays the time remaining. If an organization decides to subscribe, they must find a [!INCLUDE[prod_short](../includes/prod_short.md)] partner. For more information, see [How do I find a reselling partner?](/dynamics365/business-central/across-faq#findpartner) (business users) and [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md) (partners).
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
 For more information about what you can do with [!INCLUDE [prod_short](../includes/prod_short.md)], see [Get Ready for Doing Business](/dynamics365/business-central/ui-get-ready-business) and [Business Functionality](/dynamics365/business-central/across-business-functionality).  
 
-### Removing a subscription
+## Removing and canceling a trial or subscription
 
-If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod_short.md)], an administrator must remove the subscription in the Microsoft 365 admin center. An email notification is sent to all administrators of the account. Deleting the subscription blocks all users from accessing their [!INCLUDE [prod_short](../includes/prod_short.md)], and deletes all data. If the administrator doesn't remove the subscription, it'll eventually expire, see [Data and access when a trial and subscription ends](#expire).
+If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod_short.md)], an administrator must remove the subscription in the Microsoft 365 admin center. An email notification is sent to all admins of the account. Deleting the subscription blocks all users from accessing their [!INCLUDE [prod_short](../includes/prod_short.md)], and deletes all data. Learn more in [Cancel your subscription in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/cancel-your-subscription#steps-to-cancel-your-subscription).
+
+If the admin doesn't remove the subscription, it eventually expires. Learn more in [Data and access when a trial and subscription ends](#expire).
 
 > [!WARNING]
 > The subscription is deleted immediately and can't be reactivated.
