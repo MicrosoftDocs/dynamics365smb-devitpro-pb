@@ -32,7 +32,9 @@ Environment lifecycle events are communicated through various channels, each wit
 Notifications are sent to all email addresses that are listed in the **Notification recipients** list of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. To ensure the right individuals are notified of the event, manage the list manually by adding and removing recipients.
 
 > [!NOTE]
-> It's important that *at least* one administrator's email address is entered as a notification recipient to ensure proper awareness of events requiring administrative attention.
+>
+> - It's important that *at least* one administrator's email address is entered as a notification recipient to ensure proper awareness of events requiring administrative attention.
+> - You can add up to 100 notification recipients. To support more recipients, create a distribution list and add it as a recipient instead.
 
 > [!IMPORTANT]
 > [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
