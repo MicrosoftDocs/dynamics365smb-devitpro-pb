@@ -54,6 +54,7 @@ Before you can use the AI Playground agent, ensure that you have the following p
 
 - Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]
 - Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](includes/prod_short.md)]
+- A sandbox environment for testing and experimentation
 
 
 ## Set up AI Playground Agent
@@ -92,7 +93,8 @@ Once you have built and published a profile, you can assign it to the agent in t
 
 The **Agent Card** is where you define the agent's purpose and the tasks it performs.
 
-The profile of the agent is default the Playground agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
+> [!NOTE]
+> The profile of the agent is set as default to the Playground agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
 
 An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
 
@@ -115,7 +117,7 @@ Instructions are written in natural language and should clearly describe the age
 
 The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
-When the AI Playground Agent is enabled, you'll see the <insert icon> icon in the top navigation menu of the role center.
+When the AI Playground Agent is enabled, you'll see the <!-- insert icon --> icon in the top navigation menu of the role center.
 
 
 ## Agent Task Log
@@ -126,10 +128,9 @@ Drill into every step by clicking the line in the log. You can see the full prom
 
 ## Activate AI Playground Agent
 
+Once you have created and configured your AI Playground agent, you need to activate it before it can start handling tasks. To activate the AI Playground agent for your company, follow these steps:
 
-Activate the AI Playground agent for your company.
-
-1. In the navigation bar at the upper right of the role center, select <icon> AI Playground Agent > Activate.
+1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> AI Playground Agent > Activate.
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
 
 
@@ -146,7 +147,7 @@ Include link to best practices article.
 <!--
 
 Content gaps to address before publication:
-Clarify audience: developers/partners (not end users); add sentence early. DONE
+Clarify audience: developers/partners (not end users); add sentence early.
 
 Add “When to use / when not to use” decision list.
 
