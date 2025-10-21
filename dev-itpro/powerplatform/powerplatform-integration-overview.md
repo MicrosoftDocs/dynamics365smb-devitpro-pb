@@ -70,19 +70,13 @@ Learn more in [Integrating with Microsoft Power Pages (preview)](../developer/po
 
 Copilot Studio is a graphical, low-code tool for building agents and agent flows and extending agent capabilities with connectors and [MCP (Model Context Protocol)](https://learn.microsoft.com/copilot-studio/model-context-protocol/overview) servers. Copilot Studio together with Business Central lets you build conversational agents that understand your ERP model and act on it. You can surface Business Central data (customers, orders, invoices, inventory) and business logic to users via natural language, automate tasks like creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
 
-[![Shows how agents work between Business Central and Coplito Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
+Agents can connect to Business Central through the Business Central MCP server and Business Central connector for Power Platform, which are both supported by Copilot Studio.
 
-Agents can use model‑aware tools like the Dynamics 365 Business Central MCP server or connector to read and write records, call custom APIs from AL extensions, while respecting pricing, discount, and validation rules server‑side. You can publish agents into the following targets:
+[![Shows how agents work between Business Central and Copilot Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
-- **Teams**
-- **Dynamics 365**
-- **Microsoft 365 apps**
-- **Power Apps/Pages**
-- **Custom web channels**
+To make your agents available to customers, publish them from Copilot Studio to one or more of the supported platforms or channels, including live websites, M365 Copilot, Teams, and more.
 
-Governance (including Entra ID authentication, data loss prevention, and environment policies) ensures secure, auditable access.
-
-Learn more in [Integrating with Microsoft Copilot Studio](../developer/power-pages-on-virtual-tables-overview.md).
+Learn more in [Integrating with Microsoft Copilot Studio](../developer/create-agent-in-copilot-studio.md).
 
 ## Related information
 
