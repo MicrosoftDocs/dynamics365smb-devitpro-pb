@@ -2,7 +2,7 @@
 title: Country/Regional Availability and Supported Languages
 description: Learn where Business Central is available, which languages are supported, and how partners deliver localized solutions through Microsoft commercial marketplace.
 author: sorenfriisalexandersen
-ms.date: 08/04/2025
+ms.date: 10/14/2025
 ms.reviewer: jswymer
 ms.topic: article
 ms.author: altotovi
@@ -211,7 +211,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 >
 > <sup>2</sup> BaseApp for Sweden was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features are available as apps. Existing users can enable new features through the **Feature Management**.
 >
-> <sup>1</sup> This country is available for deployment and transactions, but marketplace availability is postponed. Therefore, ISV solutions from AppSource aren't accessible until further notice.
+> <sup>3</sup> This country is available for deployment and transactions, but marketplace availability is postponed. Therefore, ISV solutions from AppSource aren't accessible until further notice.
 
 Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
