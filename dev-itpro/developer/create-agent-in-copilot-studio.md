@@ -15,9 +15,9 @@ Copilot Studio is a graphical, low-code tool for building agents and agent flows
 
 Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules. <!--By exposing model context and server capabilities, the tools enable agents to automate processes, perform secure data operations, and integrate with existing Business Central workflows.-->
 
-[![Shows how data virtualization works between Business Central and Dataverse](../developer/media/dataverse-virtual-tables.svg)](../developer/media/dataverse-virtual-tables.svg#lightbox)
+[![Shows how agents work between Business Central and Coplito Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
-You can publish agents into the following targets:ons, while respecti
+You can publish agents into the following targets:
 
 - **Teams**
 - **Dynamics 365**
