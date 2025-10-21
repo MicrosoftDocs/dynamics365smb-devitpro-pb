@@ -89,7 +89,7 @@ Emails that do not contain a valid invoice attachment does not incur any cost.
 For example, assume that:
 
 - The agent receives 100 emails in a month, where each contains a valid vendor invoice in PDF format. Each such PDF attachment triggers an agent action at cost of 50 Copilot Credits. Assume that each invoice contains 3 invoice lines.
-- 
+
 The estimated monthly cost is calculated as: `[50 + (5 × 3)] x 100 = 6,500 Copilot Credits/month`
 
 ## Set up billing model
