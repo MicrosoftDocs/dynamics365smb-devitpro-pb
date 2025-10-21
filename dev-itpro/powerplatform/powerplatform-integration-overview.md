@@ -68,13 +68,13 @@ Learn more in [Integrating with Microsoft Power Pages (preview)](../developer/po
 
 ## Integrating Business Central with Microsoft Copilot Studio
 
-Copilot Studio is a graphical, low-code tool for building agents and agent flows and extending agent capabilities with connectors and [MCP (Model Context Protocol)](https://learn.microsoft.com/copilot-studio/model-context-protocol/overview) servers. Copilot Studio together with Business Central lets you build conversational agents that understand your ERP model and act on it. You can surface Business Central data (customers, orders, invoices, inventory) and business logic to users via natural language, automate tasks like creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
+Copilot Studio is a graphical, low-code tool for building agents and agent flows, extending agent capabilities with connectors and [MCP (Model Context Protocol)](https://learn.microsoft.com/copilot-studio/model-context-protocol/overview) servers. Connecting Copilot Studio to Business Central lets you build conversational agents that understand your ERP model and act on it. You can present Business Central data (such as customers, orders, invoices, and inventory) and business logic to users via natural language. You can also automate tasks such as creating sales orders, checking credit, posting payments, and triggering approvals or flows.
 
 Agents can connect to Business Central through the Business Central MCP server and Business Central connector for Power Platform, which are both supported by Copilot Studio.
 
 [![Shows how agents work between Business Central and Copilot Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
-To make your agents available to customers, publish them from Copilot Studio to one or more of the supported platforms or channels, including live websites, M365 Copilot, Teams, and more.
+To make your agents available to customers, publish them from Copilot Studio to one or more of the supported platforms or channels, including live websites, Microsoft 365 Copilot, Teams, and more.
 
 Learn more in [Integrating with Microsoft Copilot Studio](../developer/create-agent-in-copilot-studio.md).
 

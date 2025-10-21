@@ -9,9 +9,9 @@ ms.collection:
 ms.date: 10/20/2025
 ms.custom: bap-template
 ---
-# Create agents with Copilot Studio
+# Create agents for Business Central with Copilot Studio
 
-Copilot Studio is a graphical, low-code tool for building agents and agent flows. You can use it to create conversational agents that understand and act on your business processes and data model in Business Central. Agents present Business Central data (customers, orders, invoices, and inventory) and business logic to users via natural language. Agents automate tasks such as creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
+Copilot Studio is a graphical, low-code tool for building agents and agent flows. You can use it to create conversational agents that understand and act on your business processes and data model in Business Central. Agents present Business Central data (customers, orders, invoices, and inventory) and business logic to users via natural language. Agents can automate tasks such as creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
 
 Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules. <!--By exposing model context and server capabilities, the tools enable agents to automate processes, perform secure data operations, and integrate with existing Business Central workflows.-->
 
@@ -29,7 +29,7 @@ Governance (including Entra ID authentication, data loss prevention, and environ
 
 ## Prerequisites
 
-Copilot Studio user license with Copilot Credits for use. Learn more in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing).
+You have a Copilot Studio user license with available Copilot Credits capacity for use. Learn more in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing).
 
 <!--
 ## Create agent
@@ -74,7 +74,7 @@ Select Model Context Protocol, and then select Dataverse MCP Server.
 If there's no existing Dataverse connection, you're prompted to do so.
 Select Add to agent.
 
-## Add the Business Central connector action as a tool to an agent
+## Add a Business Central connector action as a tool to an agent
 
 1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
 1. In the left-side navigation pane, select **Agents**.
