@@ -70,7 +70,7 @@ The estimated monthly cost is calculated as: `[2 + (5 × 0.5) + 5 + 5 + 2] x 100
 
 ### Payables Agent billing
 
-The Payables Agent connects to a shared mailbox that processes incoming emails and imports and extracts information from vendor invoices and processes those invoices with AI, presented to agent supervisors in a Purchase Document Draft. The following table shows how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
+The Payables Agent connects to a shared mailbox and processes incoming emails and imports and extracts information from vendor invoices and processes those invoices with AI, presented to agent supervisors in a Purchase Document Draft. The following table shows how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
 
 | Feature | Copilot Studio event scenario | Copilot Credits |
 |----------|----------|----------|
