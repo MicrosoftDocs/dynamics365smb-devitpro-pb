@@ -74,14 +74,14 @@ The Payables Agent connects to a shared mailbox and processes incoming emails an
 
 | Feature | Copilot Studio event scenario | Copilot Credits |
 |----------|----------|----------|
-| Process invoice | Agent action | 50 |
+| Process invoice | Agent action x 10 | 50 |
 | Process invoice line | Agent action | 5 |
 
 \* Only attachments in PDF format are processed.
   
 A typical [Payables Agent process flow](/dynamics365/business-central/payables-agent#payables-agent-process-flow) includes:
 
-- One agent action to process the vendor invoices and create the Purchase Document Draft (50 Copilot Credits)
+- Ten agent actions to process the vendor invoices and create the Purchase Document Draft (50 Copilot Credits)
 - One agent action per invoice line to process and interpret line information and perform intelligent matching with history (5 Copilot Credits)
 
 Emails that do not contain a valid invoice attachment does not incur any cost.
