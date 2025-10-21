@@ -20,10 +20,6 @@ If the entitlement type is ConcurrentUserServicePlan, the GroupName determines w
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 ## Related information
 
 [Get Started with AL](../devenv-get-started.md)  

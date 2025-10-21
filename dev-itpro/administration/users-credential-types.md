@@ -14,8 +14,6 @@ ms.update-cycle: 1095-days
 ---
 # Authentication and credential types for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]  
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, users are added through the Microsoft 365 admin center. Once users are created in Microsoft 365, they can be imported into the **Users** window in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Learn more in [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content.  
 
 ## Configuring authentication for on-premises deployments

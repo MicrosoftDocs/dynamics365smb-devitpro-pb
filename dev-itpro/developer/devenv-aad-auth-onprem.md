@@ -11,8 +11,6 @@ author: SusanneWindfeldPedersen
 
 # Use Microsoft Entra authentication for Business Central on-premises installations
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 In addition to using Windows and NavUserPassword authentication, you can use Microsoft Entra ID to authenticate and publish in on-premises installations and containers from Visual Studio Code. Using Microsoft Entra ID makes it possible to mimic application lifecycle operations in an on-premises environment, while keeping the cloud-based Microsoft Entra authentication.
 
 To enable Microsoft Entra authentication, make sure to do as follows: 

@@ -2,7 +2,7 @@
 title: "TestPart data type"
 description: "Represents a variable type that can be used to test Page Application Objects of type Part."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestPart Data type
+# TestPart data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents a variable type that can be used to test Page Application Objects of type Part.
@@ -24,6 +24,7 @@ The following methods are available on instances of the TestPart data type.
 |-----------|-----------|
 |[Caption()](testpart-caption-method.md)|Gets the caption of the test page.|
 |[Editable()](testpart-editable-method.md)|Gets the runtime value of the Editable property on a test page.|
+|[Enabled()](testpart-enabled-method.md)|Gets the enabled state for the part.|
 |[Expand(Boolean)](testpart-expand-method.md)|Expands rows on a test page.|
 |[FindFirstField(TestField, Any)](testpart-findfirstfield-method.md)|Finds the first field in the data set that is displayed on a test page.|
 |[FindNextField(TestField, Any)](testpart-findnextfield-method.md)|Finds the next field in the data set that is displayed on a test page.|
@@ -40,6 +41,7 @@ The following methods are available on instances of the TestPart data type.
 |[Prev()](testpart-prev-method.md)|Sets the current row of the test page as the previous row in the data set.|
 |[Previous()](testpart-previous-method.md)|Sets the current row of the test page as the previous row in the data set.|
 |[ValidationErrorCount()](testpart-validationerrorcount-method.md)|Gets the number of validation errors that occurred on the test page.|
+|[Visible()](testpart-visible-method.md)|Gets the visible state for the part.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

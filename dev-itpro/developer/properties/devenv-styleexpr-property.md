@@ -31,7 +31,7 @@ This note pertains to backward compatibility only. If the property is set to Boo
 
 <!-- For information about how to use the **StyleExpr** property for configuring Cues, see [How to: Set Up Colored Indicators on Cues by Using the Style and StyleExpr Property](devenv-How-to-Set-Up-Colored-Indicators-on-Cues-by-Using-the-Style-and-StyleExpr-Property.md).  -->
 
-In the [Style property](devenv-stylesheets-property.md), you can see the available styles. The **StyleExpr** property is used to set the style for a field based on a condition. The **StyleExpr** property is a Boolean expression that determines whether the style is applied to the field. If the expression evaluates to true, the style is applied. If the expression evaluates to false, the style isn't applied.
+In the [Style property](devenv-style-property.md), you can see the available styles. The **StyleExpr** property is used to set the style for a field based on a condition. The **StyleExpr** property is a Boolean expression that determines whether the style is applied to the field. If the expression evaluates to true, the style is applied. If the expression evaluates to false, the style isn't applied.
 
 You can use a conditional setting of styles by inserting the conditional code in, for example, the [OnAfterGetRecord Trigger](../triggers-auto/page/devenv-onaftergetrecord-page-trigger.md). Remember to cover all cases in else branches to avoid incorrect styles. For example: 
 

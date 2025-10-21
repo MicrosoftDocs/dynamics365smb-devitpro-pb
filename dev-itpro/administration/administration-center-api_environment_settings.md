@@ -11,8 +11,6 @@ ms.custom: sfi-ga-nochange
 ---
 # Business Central admin center API - environment settings
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 Allows you to manage environment-specific settings such as the AppInsights key or the update window.
 
 ## Get Update Settings

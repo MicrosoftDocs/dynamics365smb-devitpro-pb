@@ -29,10 +29,7 @@ If the entitlement type is Role, the RoleType is used to distinguish between loc
 
 ## Remarks
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 When the [Type Property](devenv-type-property.md) is set to `Role`, the `RoleType` property is used to further define whether the `RoleType` is `Local` or `Delegated`.
-
 
 ## Syntax
 

@@ -3,10 +3,9 @@ title: Analyzing Long Running AL Methods Telemetry
 description: Learn about analyzing long running AL methods in Business Central.  
 author: jswymer
 ms.topic: concept-article
-
 ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 08/18/2023
+ms.date: 10/14/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -14,8 +13,6 @@ ms.reviewer: jswymer
 # Analyzing long running AL methods telemetry
 
 [!INCLUDE[prod_short](../includes/2020_releasewave2.md)], version 17.1. Available in extension telemetry starting with version 18.1.
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, including the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
 
@@ -59,7 +56,7 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |eventId|**RT0018**|
 |exclusiveTime|Specifies the execution time of the operation without the time where AL execution was suspended due to client callback (such as when waiting for user input.) The value has the format hh:mm:ss.sssssss. </br></br>Introduced in versions 21.6 and 22.1.|
 |executionTime|Specifies the total time that it took to execute the AL method. The value has the format hh:mm:ss.sssssss.|
-|extensionInfo|Specifies information about individual extensions that contributed to the execution time spent in the call stack up until the point at which the long-running threshold was exceeded and the trace was emitted. The following information is included for each extension:<ul><li>`id` -  the ID of the extension.</li><li>`extensionName` - the name of the extension.</li><li>`extensionVersion` - the version of the extension.</li><li>`extensionPublisher` - the publisher of the extension.</li><li>`subscriberExecutionCount` - the number of event subscribers executed in this extension.</li><li>`executionTime` - the total execution time for this extension in the call stack. The value has the format hh:mm:ss.sssssss.</li></ul>|
+|extensionInfo|Specifies information about individual extensions that contributed to the execution time spent in the call stack up until the point at which the long-running threshold was exceeded and the trace was emitted. The following information is included for each extension:<ul><li>`id` -  the ID of the extension.</li><li>`extensionName` - the name of the extension.</li><li>`extensionVersion` - the version of the extension.</li><li>`extensionPublisher` - the publisher of the extension.</li><li>`subscriberExecutionCount` - the number of event subscribers executed in this extension.</li><li>`executionTime` - the total execution time in milliseconds for this extension in the call stack.</li></ul>|
 |extensionName|Specifies the name of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted. |
 |extensionPublisher|Specifies the publisher of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
 |extensionVersion|Specifies the version of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|

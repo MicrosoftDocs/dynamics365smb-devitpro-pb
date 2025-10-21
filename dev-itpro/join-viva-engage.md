@@ -1,5 +1,5 @@
 ---
-title: About Business Central partner community on Viva Engage (formerly Yammer)
+title: About Business Central partner community on Viva Engage
 description: Learn how Business Central partner community on Viva Engage.
 author: jswymer
 ms.author: jswymer
@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.date: 05/30/2024
 ---
 
-# About Business Central partner community on Viva Engage (formerly Yammer)
+# About Business Central partner community on Viva Engage
 
 The partner community on Viva Engage is your unique opportunity as a partner to stay up to date on what's going on in the Business Central engineering team. We regularly post updates on everything from major and minor updates to events, webinars and other "good to know" things. We have 20+ subgroups you can join on topics such as "App Development", "Onboarding", "Copilot and AI automation", "Docs and training" and more. You can reach out and ask questions directly to the subject matter experts in these subgroups in the partner community. 
 

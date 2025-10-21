@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 08/20/2025
+ms.date: 09/22/2025
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -11,16 +11,17 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The 2025 release wave 1 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] was kicked off on April 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE).
+> The [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2 was kicked off on October 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE).
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
 
-- Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch opening and what's new sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE)
-- Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
-- AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
-- Move your on-premise customers to the cloud, find resources here: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Edition 2025 release wave 2 'What's new' sessions: [aka.ms/BCLE](https://aka.ms/BCLE)
+- Download 'What's new' partner deck: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK) 
+- Download BCLE Highlight videos: [aka.ms/BCHighlights](https://aka.ms/BCHighlights) 
+- Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
+- Move your on-premise customers to the cloud, find resources here: [https://aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Latest release and updates  
 
@@ -34,7 +35,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Stay up to date
 
-- Watch the what's new sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
+- Watch the 'What's new' sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
@@ -42,6 +43,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ## Social and blogs
 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
+- Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://www.microsoft.com/dynamics-365/blog/it-professional/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://www.microsoft.com/dynamics-365/blog/business-leader/)
@@ -102,21 +104,30 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## AI innovation and Copilot
 
+### Agents in Business Central
+
+- Sales Order Agent overview (preview) [Learn more](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
+- Payable Agent overview (preview) [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
+- Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
+- Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
+- Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
+- Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
+- Sales Order Agent available in public preview in following countries/regions (Sep 2025): United States, Canada, UK, Australia, New Zealand, Denmark, Germany, France, Italy, Spain 
+- Payable Agent available in public preview in following countries/regions (Sep 2025): United States, UK, Australia, New Zealand
+
 ### Copilot in Business Central 101
 
 - Pitch deck for Copilot in Business Central: [aka.ms/bcCopilotPitchDeck](https://aka.ms/bcCopilotPitchDeck)
 - Learn how to get your free demo environment at [aka.ms/CDX](https://aka.ms/CDX), or showcase Copilot using prebuilt, click-through demos at [aka.ms/bcSalesTools](https://aka.ms/bcSalesTools)
-- Copilot in Business Central - showcase video: [aka.ms/BC-AI-Sizzle](https://aka.ms/BC-AI-Sizzle)
 - Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
-- Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
-- Sales Order Agent preview video: [aka.ms/bcagents](https://aka.ms/bcagents)
+- Copilot Solutions from Red Carpet partners [YouTube playlist​](https://www.youtube.com/playlist?list=PL1FESh9FqyhQv-XGSbJ4mHzRB2OkuRnuA)
 - Copilot in Business Central FAQ: [About Copilot](/dynamics365/business-central/copilot-overview)
-- Dynamics Communities interview with Mike Morton: [dynamicscommunities.com](https://dynamicscommunities.com/ug/copilot-ug/microsofts-mike-morton-explains-new-copilot-capabilities-inside-business-central/)
 
 ### Copilot in Business Central for developers
 
 - Extend Copilot in Business Central: [aka.ms/bcAIdevDocs](https://aka.ms/bcAIdevDocs)
 - How-to guide for extending Copilot in Business Central: [Developing generative AI experiences​](../ai-build-experience-overview.md)
+- Extending Copilot in Business Central for developers [YouTube playlist​](https://www.youtube.com/playlist?list=PL1FESh9FqyhQqnc4h6YrjramtCaaR1qJJ)
 - Business Central under the hood episode 1 - Developing AI: [Business Central under the hood series (on YouTube)​](https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s)
 
 ## Reporting and business intelligence  

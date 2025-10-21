@@ -12,8 +12,6 @@ ms.collection: get-started
 
 # Debugging in AL
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 *Debugging* is the process of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You can start a debugging session by pressing <kbd>F5</kbd>. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
@@ -53,9 +51,6 @@ The following video illustrates that `Customer.dal` is an external file. A break
 Learn more about **Go to Definition** in [AL code navigation](devenv-al-code-navigation.md). 
 
 ### Conditional breakpoints
-
-> [!NOTE]
-> At this point conditional breakpoints aren't supported in version 26.0 and later due to necessary changes in the platform. We're investigating this issue and will update the documentation accordingly.
 
 You can also set a condition on a breakpoint and if the condition evaluates as true, then code execution breaks at the breakpoint. Learn more in [Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md).
 

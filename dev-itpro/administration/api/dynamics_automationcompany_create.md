@@ -19,7 +19,6 @@ Creates an automation company in [!INCLUDE[d365fin_long_md](../../includes/d365f
 
 Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
-
 ```
 POST /microsoft/automation/v2.0/companies({companyId})/automationCompanies
 ```

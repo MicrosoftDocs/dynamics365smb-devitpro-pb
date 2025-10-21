@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0825"
-description: "Field '{0}' cannot be moved to {1} '{2}' because '{2}' is marked as Moved."
+description: "It is not possible to move the field '{0}' ({1}) to a base table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,11 +14,11 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Field '{0}' cannot be moved to {1} '{2}' because '{2}' is marked as Moved.
+It is not possible to move the field '{0}' ({1}) to a base table.
 
 
 ## Description
-A field cannot be moved to a symbol that is already marked as Moved.  
+A field cannot be moved to a table. Fields can only be moved to table extensions which are not on the same app as the base table.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

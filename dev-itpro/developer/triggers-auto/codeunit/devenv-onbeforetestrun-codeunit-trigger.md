@@ -2,7 +2,7 @@
 title: "OnBeforeTestRun (Codeunit) trigger"
 description: "Runs before a test of a test codeunit is run."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -50,7 +50,7 @@ Specifies the permission set level to use on the test run. The value is retrieve
 - InheritFromTestCodunit - Specifies that a test the uses the TestPermissions property setting of the test codeunit to which it belongs.  
 
 
-## Return Value
+## Return value
 
 *Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
