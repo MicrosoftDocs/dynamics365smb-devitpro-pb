@@ -70,7 +70,7 @@ Learn more in [Integrating with Microsoft Power Pages (preview)](../developer/po
 
 Copilot Studio is a graphical, low-code tool for building agents and agent flows and extending agent capabilities with connectors and [MCP (Model Context Protocol)](https://learn.microsoft.com/copilot-studio/model-context-protocol/overview) servers. Copilot Studio together with Business Central lets you build conversational agents that understand your ERP model and act on it. You can surface Business Central data (customers, orders, invoices, inventory) and business logic to users via natural language, automate tasks like creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
 
-[![Shows how data virtualization works between Business Central and Dataverse](../developer/media/dataverse-virtual-tables.svg)](../developer/media/dataverse-virtual-tables.svg#lightbox)
+[![Shows how agents work between Business Central and Coplito Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
 Agents can use model‑aware tools like the Dynamics 365 Business Central MCP server or connector to read and write records, call custom APIs from AL extensions, while respecting pricing, discount, and validation rules server‑side. You can publish agents into the following targets:
 
