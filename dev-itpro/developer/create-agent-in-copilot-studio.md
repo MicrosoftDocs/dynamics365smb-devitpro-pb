@@ -75,15 +75,15 @@ You can use the Business Central connector actions, like Create Record or List C
 1. Select **Add and configure**. You're taken back to the **Tools** tab, where you can configure the action.
 1. Make the needed changes, then select **Save** when done.-->
 
-## Create agents that use the Business Central connector
+## Creating agents that use the Business Central connector
 
 You can use the Business Central connector actions, like `Create Record` or `List Companies`, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the `Find Records`, `Create Record`, and `Update Record`actions as tools to the agent.
 
 Learn more about the connector and its actions in [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas/).
 
-### Add Business Central connector actions as tools to an agent
+### Exercise: Build an agent to find and create customers in Business Central
 
-This section explains how to build an agent with the Dynamics 365 Business Central connector in Copilot Studio. It walks you through the steps to make a basic agent that can list companies and create new customers in Business Central. The agent uses one read action `Find records (V3)` and one write action `Create record (V3)` of the Business Central connector. You can extend it by adding more connector actions (like `Update record (V3)`, `Delete record (V3)`) and by refining the agent's examples and prompt-handling to cover more business scenarios.  
+Follow the steps in this exercise to create an agent that uses the Dynamics 365 Business Central connector. The agent lets users get information about customer records in Business Central and create customer records by providing instructions in plain language. The agent uses one read action `Find records (V3)` and one write action `Create record (V3)` of the Business Central connector. You can extend it by adding more connector actions (like `Update record (V3)`, `Delete record (V3)`) and by refining the agent's examples and prompt-handling to cover more business scenarios.  
 
 1. Create new or open existing agent.
 
@@ -116,7 +116,6 @@ This section explains how to build an agent with the Dynamics 365 Business Centr
       |API category|Custom value|`V2.0`|
       |Table name|Custom value|`customers`|
 
-   1. (optional) Go to **Inputs** and set **After running** to **Write the response with generative AI**. 
    1. Select **Save**.
    1. Repeat for the `Create record (V3)` tool.
 
