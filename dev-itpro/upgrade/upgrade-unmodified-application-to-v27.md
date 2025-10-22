@@ -2,7 +2,7 @@
 title: Upgrading Microsoft System and Base Application to Version 27
 description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 27
 ms.custom: bap-template
-ms.date: 09/03/2025
+ms.date: 10/21/2025
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.author: jswymer
@@ -66,14 +66,14 @@ $AddinsFolder = "The file path to the Add-ins folder of version 27 server instal
 
     You keep the current version installed to complete some steps in the upgrade process. When you install version 27, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the current version's [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+    Learn more in [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 <!--
 ## Task 3: Upgrade permission sets
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).-->
+Learn more in [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).-->
 
 ## Task 3: Prepare the existing databases
 
@@ -82,7 +82,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
     If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
 
-    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+    Learn more in [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
@@ -179,7 +179,7 @@ When you installed version 27 in **Task 2**, a version 27 [!INCLUDE[server](../d
     Set-NAVServerConfiguration -ServerInstance $NewBcServerInstance -KeyName DatabaseName -KeyValue $ApplicationDatabase
     ```
 
-    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. Learn more in [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
 2. Disable task scheduler on the server instance for purposes of upgrade.
 
@@ -460,21 +460,22 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 Learn more in [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 -->
-## Task 13: Change application version
-
-[!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version.md)]
 
 ## Post-upgrade tasks
 
-1. [!INCLUDE[delegation-upgrade](../developer/includes/delegation-upgrade.md)]
-2. Enable task scheduler on the server instance.
-3. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
-4. If you want to use data encryption as before, enable it.
+1. Update the application version shown on the Help and Support page.
 
-   For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+   [!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version-help-support.md)]
+
+1. [!INCLUDE[delegation-upgrade](../developer/includes/delegation-upgrade.md)]
+1. Enable task scheduler on the server instance.
+1. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
+1. If you want to use data encryption as before, enable it.
+
+   Learn more in [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
-5. Import the customer license
+1. Import the customer license
 
    Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You have to restart the server instance afterwards.
 
