@@ -13,11 +13,11 @@ ms.custom: bap-template
 
 Copilot Studio is a graphical, low-code tool for building agents and agent flows. You can use it to create conversational agents that understand and act on your business processes and data model in Business Central. Agents present Business Central data (customers, orders, invoices, and inventory) and business logic to users via natural language. Agents can automate tasks such as creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
 
-Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules. <!--By exposing model context and server capabilities, the tools enable agents to automate processes, perform secure data operations, and integrate with existing Business Central workflows.-->
+Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules. <!--By exposing model context and server capabilities, the tools enable agents to automate processes, perform secure data operations, and integrate with existing Business Central workflows.-->
 
 [![Shows how agents work between Business Central and Coplito Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
-You can publish agents into the following targets:
+After you create an agent, you can publish agents into the following targets:
 
 - **Teams**
 - **Dynamics 365**
@@ -25,9 +25,7 @@ You can publish agents into the following targets:
 - **Power Apps/Pages**
 - **Custom web channels**
 
-Governance (including Entra ID authentication, data loss prevention, and environment policies) ensures secure, auditable access.
-
-Learn more about Coplit Studio and agents in [Copiot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
+Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
 
 ## Prerequisites
 
@@ -43,9 +41,11 @@ You have a Copilot Studio user license with available Copilot Credits capacity f
 
 After the agent is created, refere to the next sections to add the Dynamics 365 Business Central MCP server or Dynamics 365 Business Central Connectore as tools of the agent.-->
 
-## Add the Business Central MCP server as a tool to an agent
+## Create agents that use the Business Central MCP
 
-After an agent is created, you can add the Business Central MCP server to an agent as a tool access server tools and resources.  MCP server is connected to Copilot Studio, you can add the server to an agent as a tool, and access server tools and resources.
+To be determined.
+
+<!--After an agent is created, you can add the Business Central MCP server to an agent as a tool access server tools and resources.  MCP server is connected to Copilot Studio, you can add the server to an agent as a tool, and access server tools and resources.
 You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilot Studio. The server provides tools for actions in Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
 To add the tools to your agent, follow these steps.
@@ -61,7 +61,7 @@ Select Add to agent.
 
 Select Model Context Protocol, and then select Dataverse MCP Server.
 If there's no existing Dataverse connection, you're prompted to do so.
-Select Add to agent.
+Select Add to agent.-->
 
 <!--
 ## Add Business Central connector actions as a tools to an agent
@@ -81,15 +81,15 @@ You can use the Business Central connector actions, like Create Record or List C
 1. Select **Add and configure**. You're taken back to the **Tools** tab, where you can configure the action.
 1. Make the needed changes, then select **Save** when done.-->
 
-## Create agent that uses Business Central connector
+## Create agents that use the Business Central connector
 
-You can use the Business Central connector actions, like Create Record or List Companies, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the Create Record, Create Record , Create Record actions as tools to the agent.
+You can use the Business Central connector actions, like `Create Record` or `List Companies`, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the `Find Records`, `Create Record`, and `Update Record`actions as tools to the agent.
 
-### Add Business Central connector actions as a tools to an agent
+Learn more about the connector and its actions in [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas/).
+
+### Add Business Central connector actions as tools to an agent
 
 This section explains how to build an agent with the Dynamics 365 Business Central connector in Copilot Studio. It walks you through the steps to make a basic agent that can list companies and create new customers in Business Central. The agent uses one read action `Find records (V3)` and one write action `Create record (V3)` of the Business Central connector. You can extend it by adding more connector actions (like `Update record (V3)`, `Delete record (V3)`) and by refining the agent's examples and prompt-handling to cover more business scenarios.  
-
-
 
 1. Create new or open existing agent.
 
@@ -110,8 +110,6 @@ This section explains how to build an agent with the Dynamics 365 Business Centr
 
    Learn more in [Use connectors in Copilot Studio](/microsoft-copilot-studio/advanced-generative-actions#best-practices-for-topic-and-action-names-and-descriptions)
 
-
-
 1. Configure the tools.
 
    1. On the **Tools** tab of the agent page, select the `Find records (V3)` to open the tool for editing.
@@ -119,8 +117,8 @@ This section explains how to build an agent with the Dynamics 365 Business Centr
 
       |Input name|Fill using|Value|
       |-|-|-|
-      |Envronment|Custom value|Set to Business Central enviroment, for example, `PRODUCTION`|
-      |Company|Custom value|Set to Business Central enviroment, for example, `CRONUS USA, Inc.`|
+      |Envronment|Custom value|Set to Business Central environment, for example, `PRODUCTION`|
+      |Company|Custom value|Set to Business Central environment, for example, `CRONUS USA, Inc.`|
       |API category|Custom value|`V2.0`|
       |Table name|Custom value|`customers`|
 
@@ -159,15 +157,17 @@ This section explains how to build an agent with the Dynamics 365 Business Centr
        - `Show my top custome`
        - `Create a customer named jesse homer with email jesse.homer@contoso.com`
     1. Wait for the response.
-    1.  
-   Learn more in [Test you agent](/microsoft-copilot-studio/authoring-test-bot).
+    1. Make necessary changes and save.
+  
+    Learn more in [Test you agent](/microsoft-copilot-studio/authoring-test-bot).
 
-1. Make necessary changes and save.
 1. Publish and deploy the agent.
+
+   Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
 
 ### Notes and tips
 
 - **Permissions:** The connection uses the signed-in account’s Business Central permissions; ensure the account can read companies and create customers.
-- **Validation:** Use server-side validation rules in Business Central (pricing/validation) — the connector will surface errors; handle those in agent responses.
+- **Validation:** Use server-side validation rules in Business Central (pricing/validation). The connector surfaces errors; handle tthese errors in agent responses.
 - **Inputs:** Validate and sanitize user input before calling Create record (that is, ensure required fields are present).
 - **Logging:** Use the agent’s execution logs to troubleshoot tool calls and to see request/response payloads.
