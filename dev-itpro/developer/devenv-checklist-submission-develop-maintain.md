@@ -1,6 +1,6 @@
 ---
 title: Develop and Maintain AppSource Apps FAQ
-description: Describes the most common questions when submitting your app to AppSource for Business Central.
+description: Describes the most common questions you might have when developing and maintaining AppSource apps for Business Central.
 author: qutreson
 ms.date: 02/19/2025
 ms.reviewer: solsen

@@ -1,6 +1,6 @@
 ---
 title: AppSource Channels for Questions and Issues FAQ
-description: Describes the most common questions when submitting your app to AppSource for Business Central.
+description: Describes the most common questions about channels that you can use for questions and issues you might have when submitting your app to AppSource for Business Central.
 author: qutreson
 ms.date: 10/08/2025
 ms.reviewer: solsen
