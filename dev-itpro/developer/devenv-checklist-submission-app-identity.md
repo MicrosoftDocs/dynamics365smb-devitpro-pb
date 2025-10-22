@@ -1,5 +1,5 @@
 ---
-title: App Identity FAQ
+title: AppSource App Identity FAQ
 description: Describes the most common questions about app identity in your AppSource app for Business Central.
 author: qutreson
 ms.date: 10/08/2025
@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# App identity FAQ
+# AppSource app identity FAQ
 
 This article addresses some of the most frequently asked questions around validation of apps for AppSource submission. This section contains questions related to the identity of apps in AppSource. Learn more from the questions in [App identity](devenv-app-identity.md).
 
@@ -24,8 +24,6 @@ When renaming an extension, you must:
 - update the name of your offer in Partner Center - if your extension is the one for which the offer is created.
 
 ## When is it okay to change the publisher of my extension?
-
-Starting from [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2 (version 19.0), it's possible to change the publisher name of your extensions without breaking dependent extensions.
 
 When changing the publisher of an extension, you must:
 
