@@ -104,7 +104,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
    1. Select **Add to agent**. You return to the agent **Overview** tab.
    1. Repeat to add the connector action `Create record (V3)`. This agent uses this action to create a Customer record.
 
-   Learn more in [Use connectors in Copilot Studio](/microsoft-copilot-studio/advanced-generative-actions#best-practices-for-topic-and-action-names-and-descriptions)
+   Learn more in [Use connectors in Copilot Studio](/microsoft-copilot-studio/advanced-connector).
 
 1. Configure the tools.
 
@@ -121,7 +121,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
    1. Select **Save**.
    1. Repeat for the `Create record (V3)` tool.
 
-   Learn more in [Add tools to custom agents](/microsoft-copilot-studio/advanced-plugin-actions).
+   Learn more in [Make changes to your tools configuration](/microsoft-copilot-studio/advanced-plugin-actions#view-and-make-changes-to-your-tool-configuration).
 
     <!--
         - List customer
