@@ -38,7 +38,7 @@ Learn more in [https://github.com/microsoft/navcontainerhelper/issues](https://g
 
 When you have questions on developing and maintaining AppSource apps, on automatically submitting apps to AppSource, or about the validation process, you can ask a question on Viva Engage. In this group, you find announcements from Microsoft together with discussions around various AppSource-related articles.
 
-You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
+<!-- You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. -->
 
 ## Related information
 
