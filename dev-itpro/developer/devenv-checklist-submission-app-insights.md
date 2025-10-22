@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# AppSource Azure Application Insights and AppSource submission FAQ
+# AppSource Azure Application Insights and submission FAQ
 
 This article addresses some of the most frequently asked questions around Azure Application Insights for AppSource apps.
 
