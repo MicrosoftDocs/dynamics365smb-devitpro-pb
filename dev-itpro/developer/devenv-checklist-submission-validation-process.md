@@ -75,16 +75,18 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the AppSource marketplace.
 
 Before going public with the submitted app version, you can test it after the "Preview creation" step, either yourself as a publisher or with select customers. In order to trigger an install of the preview version, customers must receive and use the app preview install URL:
-	
+
+```	
 `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` 
-	
+```
+
 Where
 
 - `[TenantID]` is the Microsoft Entra ID of the customer environment, 
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
-Learn more about AppSource app preview in the section [Questions about AppSource app previews](#questions-about-appsource-app-previews) in this article.
+Learn more about AppSource app preview in the section [Questions about AppSource app previews](devenv-checklist-submission-app-preview.md).
 
 ## When should I include my library apps as part of my submission?
 
@@ -103,14 +105,14 @@ If you receive an error with the diagnostic code `AVS0107` and a message similar
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
-- If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what caused the error. If you're using Azure Application Insights, information about the validation results is logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started. If you're experiencing issues with Azure Application Insights, refer to the section [Questions bout Azure Application Insights usage during AppSource submissions](#questions-about-azure-application-insights-usage-during-appsource-submissions) in this article.
+- If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what caused the error. If you're using Azure Application Insights, information about the validation results is logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started. If you're experiencing issues with Azure Application Insights, refer to [Questions about Azure Application Insights usage during AppSource submissions](devenv-checklist-submission-app-insights.md).
 - If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. Learn more in "When should I include my library apps as part of my submission?".
 - If this stage failed with an error message similar to `The manifest property 'X' of the extension 'My App' by 'Publisher Name' (version '1.2.3.4') specifies 'Y' while the offer description specifies 'Z'.`, you should either change your app.json file or the offer description to match each other and submit a new version. Offer description changes in Partner Center can be made in the "Properties" section of your offer for the app version, "Offer listing" section for the app name, and your publisher name can be found in Partner Center under `Account Settings > Organizational Profile > Legal > Developer > Publisher Name` or by following [this link](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer). When changing any of these, remember to consult the section on this page called "Questions about app identity".
 - If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission doesn't target any countries/regions currently available in [!INCLUDE[prod_short](../includes/prod_short.md)]. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in [!INCLUDE[prod_short](../includes/prod_short.md)] and resubmit your offer. Generally, it's possible to upload apps for new localizations, a few weeks before they're made available to customers.
 - If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') contains inconsistent information about the package id/name/publisher/version`, it means that something went wrong when the package included in your submission was built. In order to mitigate the issue, you must rebuild the package and submit it again.
 - If this stage failed with an error message similar to `The App ID '<some-Guid>' is already used for Per-Tenant-Extensions in Business Central and cannot be used for the AppSource extension with name 'MyApp' and publisher 'MyPublisher'`, this means that there exists one or many PTEs with the same App ID in the service. Since [!INCLUDE[prod_short](../includes/prod_short.md)] doesn't support having AppSource apps and PTEs with the same App ID, it's then recommended to change the ID of your extension before submitting it in Partner Center. Learn more in [Moving a PTE to AppSource](devenv-extension-moving-scope.md#moving-a-pte-to-appsource). If the PTEs with that App ID aren't used in any customer environments anymore, you can create a support case in Partner Center to request an exception.
 
-- If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't live up to the code signing requirement of AppSource for [!INCLUDE[prod_short](../includes/prod_short.md)]. In order to correctly sign your app, check out the section [Questions about code-signing validation](#questions-about-code-signing-validation) in this article, and take a look at the article [Sign an app package file](devenv-sign-extension.md).
+- If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't live up to the code signing requirement of AppSource for [!INCLUDE[prod_short](../includes/prod_short.md)]. In order to correctly sign your app, check out [Questions about code-signing validation](devenv-checklist-submission-code-sign.md), and take a look at the article [Sign an app package file](devenv-sign-extension.md).
 
 - If this stage failed with the following error message `The submitted package '{0}' by '{1}' was found to contain malware. If you believe this is an error, please retry your submission. If it fails again, follow the documentation to submit your app file for further investigation.`, your submission was flagged for containing malware. First, examine your included artifacts and resources to ensure that they're safe to include in the submission. Make sure you have the latest Windows updates and scan your files with Windows Defender to identify and mitigate the infected files. If you have reason to believe that the detection is a false positive, you can follow the documentation to [Submit a file for malware analysis](/defender-xdr/submission-guide#how-do-i-submit-a-file-to-microsoft-for-analysis) so that it can be manually reviewed.
 
@@ -129,11 +131,11 @@ Review the Marketing requirements and the [Marketing Validation FAQ](readiness/r
 
 At this stage, your extensions are being published to [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
+If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in [Channels to ask questions or report issues](devenv-checklist-submission-channels.md).
 
 ## My app failed at another stage, what do I do next?
 
-If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
+If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in [Channels to ask questions or report issues](devenv-checklist-submission-channels.md).
 
 ## Related information
 
