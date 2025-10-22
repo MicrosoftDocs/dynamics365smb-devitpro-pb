@@ -149,7 +149,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
     1. In the field at the bottom, enter text that explains what you want the agent to do, for example:
 
        - `List customers`
-       - `Show my top custome`
+       - `Show my top customer`
        - `Create a customer named jesse homer with email jesse.homer@contoso.com`
     1. Wait for the response.
     1. Make necessary changes and save.
