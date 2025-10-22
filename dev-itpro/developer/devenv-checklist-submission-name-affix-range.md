@@ -1,5 +1,5 @@
 ---
-title: Names, Affixes, and ID Ranges FAQ
+title: AppSource Names, Affixes, and ID Ranges FAQ
 description: Describes the most common questions about names, affixes, and ID ranges in your AppSource app for Business Central.
 author: qutreson
 ms.date: 10/08/2025
@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# Names, affixes, and ID ranges FAQ
+# AppSource names, affixes, and ID ranges FAQ
 
 This article addresses some of the most frequently asked questions around how affixes and ID ranges are assigned to AppSource apps.
 

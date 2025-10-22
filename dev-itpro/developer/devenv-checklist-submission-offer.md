@@ -1,5 +1,5 @@
 ---
-title: Business Central Offer FAQ
+title: AppSource Business Central Offer FAQ
 description: Describes the most common questions about AppSource app offers for Business Central.
 author: qutreson
 ms.date: 10/08/2025
@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# Business Central offer FAQ
+# AppSource Business Central offer FAQ
 
 This article addresses some of the most frequently asked questions around AppSource app offers.
 

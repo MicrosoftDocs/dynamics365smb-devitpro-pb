@@ -1,5 +1,5 @@
 ---
-title: Channels for Questions and Issues FAQ
+title: AppSource Channels for Questions and Issues FAQ
 description: Describes the most common questions when submitting your app to AppSource for Business Central.
 author: qutreson
 ms.date: 10/08/2025
@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# Channels for questions and issues FAQ
+# AppSource channels for questions and issues FAQ
 
 This article addresses some of the most frequently asked questions around validation of apps for AppSource submission. In the following, you can read about how you reach out for support most efficiently.
 

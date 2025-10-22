@@ -1,5 +1,5 @@
 ---
-title: Code-signing Validation FAQ
+title: AppSource Code-signing Validation FAQ
 description: Describes the most common questions when about code-signing your AppSource app for Business Central.
 author: qutreson
 ms.date: 10/08/2025
@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# Code-signing validation FAQ
+# AppSource code-signing validation FAQ
 
 This article addresses some of the most frequently asked questions around code-signing validation of apps for AppSource submission. Learn more in [Sign an app package file](devenv-sign-extension.md).
 

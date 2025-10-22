@@ -1,5 +1,5 @@
 ---
-title: Azure Application Insights and AppSource Submission FAQ
+title: AppSource Azure Application Insights and AppSource Submission FAQ
 description: Describes the most common questions when submitting your app to AppSource for Business Central.
 author: qutreson
 ms.date: 10/08/2025
@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# Azure Application Insights and AppSource submission FAQ
+# AppSource Azure Application Insights and AppSource submission FAQ
 
 This article addresses some of the most frequently asked questions around Azure Application Insights for AppSource apps.
 
