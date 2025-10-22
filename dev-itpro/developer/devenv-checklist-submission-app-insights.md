@@ -36,4 +36,5 @@ Much information is provided in the custom dimensions of the signals. The valida
 
 ## Related information
 
-[Technical validation checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)  
+[Analyzing AppSource submission validation trace telemetry](../administration/telemetry-appsource-submission-validation-trace.md)
