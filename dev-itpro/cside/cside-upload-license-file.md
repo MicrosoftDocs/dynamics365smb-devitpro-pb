@@ -24,7 +24,7 @@ To save the license file, you must have the necessary roles and permissions in S
 Initially, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses CRONUS.flf or CRONUS.bclicense, which is the demonstration license file. All license files that aren't demonstration license files are named fin.flf or fin.bclicense. The demonstration license file has different name so that it can't be mistakenly overwritten.  
 
 > [!TIP]
-> To about the different types of licenses and how licensing works in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], download the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+> To learn about the different types of licenses and how licensing works in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], download the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## FLF and bclicense file types
 
