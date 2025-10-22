@@ -37,7 +37,7 @@ You have a Copilot Studio user license with available Copilot Credits capacity f
 
 After the agent is created, refere to the next sections to add the Dynamics 365 Business Central MCP server or Dynamics 365 Business Central Connectore as tools of the agent.-->
 
-## Create agents that use the Business Central MCP
+## Create agents that use Business Central MCP
 
 To be determined.
 
@@ -77,7 +77,7 @@ You can use the Business Central connector actions, like Create Record or List C
 1. Select **Add and configure**. You're taken back to the **Tools** tab, where you can configure the action.
 1. Make the needed changes, then select **Save** when done.-->
 
-## Creating agents that use the Business Central connector
+## Create agents that use Business Central connector
 
 You can use the Business Central connector actions, like `Create Record` or `List Companies`, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the `Find Records`, `Create Record`, and `Update Record`actions as tools to the agent.
 
