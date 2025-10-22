@@ -74,7 +74,9 @@ Select Model Context Protocol, and then select Dataverse MCP Server.
 If there's no existing Dataverse connection, you're prompted to do so.
 Select Add to agent.
 
-## Add a Business Central connector action as a tool to an agent
+## Add Business Central connector actions as a tools to an agent
+
+You can use the Business Central connector actions, like Create Record or List Companies, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the Create Record, Create Record , Create Record actions as tools to the agent.
 
 1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
 1. In the left-side navigation pane, select **Agents**.
@@ -83,8 +85,72 @@ Select Add to agent.
    Learn more about creating agents in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
 1. On the agent page, in the **Tools** tab, select **+ Add a tool**.
 1. Under the **Search for tool** box, select **Connector**, then type and enter "Dynamics 365 Business Central" in the search box to display the available connector actions.
-1. Select the connector action you want to add to the agent. The **Add tool** pane opens.
+1. Select the connector action you want to add to the agent. For example, The **Add tool** pane opens.
 1. If the **Connection** box displays the `Not connected`, select the box and then choose **Create new connection**.
 1. Sign in to Business Central with a valid account.
 1. Select **Add and configure**. You're taken back to the **Tools** tab, where you can configure the action.
 1. Make the needed changes, then select **Save** when done.
+
+
+## Create agent that uses Business Central connector
+
+You can use the Business Central connector actions, like Create Record or List Companies, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the Create Record, Create Record , Create Record actions as tools to the agent.
+
+### Add Business Central connector actions as a tools to an agent
+
+This section explains how to build an agent with the Dynamics 365 Business Central connector in Copilot Studio. As an example, it walks you through the basic steps to making an agent that can list companies in Business Central and create new customers.
+
+<>
+1. Create new or open existing agent.
+
+   1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
+   1. In the left-side navigation pane, select **Agents**.
+   1. Select the agent you want to modify or select **New agent** to create a new agent.
+
+   Learn more about creating agents in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
+
+1. Add the Business Central connector actions as tools.
+
+   1. On the **Tools** tab of the agent page, select **+ Add a tool**.
+   1. Under the **Search for tool** box, choose **Connector**, then search for "Dynamics 365 Business Central".
+   1. Select the connector action `List companies`. The **Add tool** page opens.
+   1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
+   1. Select **Add to agent**. You return to the agent **Overview** tab.
+   1. Repeat to add the connector action `Create record`. This agent uses this action to create a Customer record.
+
+   Learn more about adding tools in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
+
+1. Configure the tools.
+
+
+    - List companies
+      - In the action configuration, leave defaults or set a sensible page size.
+      - Optionally expose filters (for example, company id) so the agent can scope results.
+    - Create record (Customers)
+      - Select the table/entity you want to create (for example, Customers).
+      - Mark required fields (for example, Display name, Number, Email) as inputs the agent must supply.
+      - Provide friendly input names so prompts and samples are clear (e.g., Customer name, Customer number).
+
+4. Teach the agent how to use the tools (simple examples)
+    - In the agent’s authoring or examples area add two short examples:
+      - Example 1 (List companies): "Show me the available companies."
+         - Expected tool use: call List companies; present a short, formatted list (name — id).
+      - Example 2 (Create customer): "Create a new customer named Contoso Tests with number CNT-001 and email test@contoso.com."
+         - Expected tool use: call Create record with mapped fields; on success return confirmation and created customer id.
+
+5. Test the agent
+    1. Use the Try pane (or Preview) in Copilot Studio.
+    2. Run: "List companies" — verify the agent calls the connector and shows company names/ids.
+    3. Run: "Create a customer named 'Contoso Test' with number CT-100" — verify connector call, then check Business Central to confirm the new record.
+
+6. Save, publish, and deploy
+    - Save your agent, publish a version, and add target channels (Teams, Power Pages, etc.) as needed.
+    - Verify authentication and environment selection for the published agent.
+
+7. Notes and tips
+    - Permissions: The connection uses the signed-in account’s Business Central permissions; ensure the account can read companies and create customers.
+    - Validation: Use server-side validation rules in Business Central (pricing/validation) — the connector will surface errors; handle those in agent responses.
+    - Inputs: Validate and sanitize user input before calling Create record (e.g., ensure required fields are present).
+    - Logging: Use the agent’s execution logs to troubleshoot tool calls and to see request/response payloads.
+
+This simple pattern — one read action and one write action — is a good base. Extend it by adding more connector actions (Get record, Update record, List records) and by refining the agent’s examples and prompt-handling to cover more business scenarios.
