@@ -2,14 +2,14 @@
 title: Designing Assisted Setup Guides
 description: Learn how to create wizards using the NavigatePage page type in Business Central"
 ms.custom: bap-template
-ms.date: 12/10/2022
+ms.date: 10/14/2025
 ms.topic: install-set-up-deploy
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 
 ---
-# Designing Assisted Setup Guides
+# Designing assisted setup guides
 
 In [!INCLUDE[prod_short](includes/prod_short.md)], you use the `NavigatePage` page type to create an assisted setup. An assisted setup, also called a wizard, is a page that consists of one or more user input pages or steps. These steps are linked together, enabling users to carry out infrequently performed tasks, such as configuration or specific business tasks. In the client, the `NavigatePage` page doesn't an action bar. It's designed to have buttons at the bottom that let users move back and forth through the steps by selecting the **Back** and **Next** buttons, until they finish by selecting the **Finish** button.
 
@@ -19,7 +19,7 @@ An example in [!INCLUDE[prod_short](includes/prod_short.md)] is the **Company Se
 
 ## Build the assisted setup
 
-This section describes the basic tasks for creating an assisted setup. It gives you an understanding of the general structure of an assisted setup guide. Knowing this information will help you build assisted setup guides that look and feel like the ones provided by Microsoft. This section includes some basic AL code for the various steps involved in creating an assisted setup guide. For more information about the code and logic, see the [full example](#example) in this article. The example code for reference only, and your implementation may vary.
+This section describes the basic tasks for creating an assisted setup. It gives you an understanding of the general structure of an assisted setup guide. Knowing this information helps you build assisted setup guides that look and feel like the ones provided by Microsoft. This section includes some basic AL code for the various steps involved in creating an assisted setup guide. For more information about the code and logic, see the [full example](#example) in this article. The example code for reference only, and your implementation might vary.
 
 1. Create a page for the assisted setup, for example:
 
@@ -39,10 +39,10 @@ This section describes the basic tasks for creating an assisted setup. It gives 
     |-|-|
     |[PageType property](properties/devenv-pagetype-property.md)|Set to `NavigatePage`.|
     |[SourceTable](properties/devenv-sourcetable-property.md)|Set to the name of the table that stores the data for the assisted setup.|
-    |[SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md)|Set to `true`. The reason is because Business Central automatically stores all modifications to database tables as soon as users move focus to another field or close the page. Using a temporary table let's users exit the assisted setup guide at any point, without saving the changes they've made so far to the database. Instead, the data modifications are only stored in memory, until code is run to transfer the data to the database.|
+    |[SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md)|Set to `true`. The reason is because Business Central automatically stores all modifications to database tables as soon as users move focus to another field or close the page. Using a temporary table let's users exit the assisted setup guide at any point, without saving the changes they made so far to the database. Instead, the data modifications are only stored in memory, until code is run to transfer the data to the database.|
     |[Caption](properties/devenv-caption-property.md)|Set to the title that you want to show on the top of each step of the assisted guide.|
 
-2. Add the steps that comprise the assisted setup.
+1. Add the steps that comprise the assisted setup.
 
    For each step that you want in the guide, add a `group()` control to the root-level of the `layout` >  `area(Content)` control. For example, the following code adds three steps.
 
@@ -101,22 +101,22 @@ This section describes the basic tasks for creating an assisted setup. It gives 
     ```
 
    - The individual `group()` controls define the content to display for the step, like text and data entry fields. For example, use the [Caption](properties/devenv-caption-property.md) and [InstructionalText](properties/devenv-instructionaltext-property.md) properties to add text. Use `field()` controls for source table fields.
-   - The order of the `group()` controls doesn't necessarily determine the order of the steps in the assisted setup. You'll add AL code to define the logic for when each step appears.
+   - The order of the `group()` controls doesn't necessarily determine the order of the steps in the assisted setup. You add AL code to define the logic for when each step appears.
    - You can include `group()` controls within the root-level `group()` controls. These subgroups can be useful for adjusting the layout fields on a step and adding captions and instructional text.
 
    Because only one step can be shown at a time, you have to add logic to control when each step is shown. To control the visibility, add the following code:
 
    - For each step, define a global boolean variable or a step number condition and apply it the group's [Visible](properties/devenv-visible-property.md) property. The example, uses the boolean variables `Step1Visible`, `Step2Visible`, and `Step2Visible`.
 
-     You'll then have to add AL code to change these variables depending on which step the user is working on.
+     You then have to add AL code to change these variables depending on which step the user is working on.
    - Define a global option variable that has a value for each step.
 
-     You'll use this variable in code to track which step is active. 
+     You use this variable in code to track which step is active. 
 
     > [!NOTE]
     > Multiline fields shown inside a step are shown without a gray background. This behavior allows you to write a list of items or any formatted text that requires new lines.
 
-3. Add the navigation buttons.
+1. Add the navigation buttons.
 
     Assisted setups typically have a **Back**, **Next**, and **Finish** button at the bottom-right of the page. Add each button by using an `action()` control. 
 
@@ -185,13 +185,13 @@ This section describes the basic tasks for creating an assisted setup. It gives 
 
     - Set the [InFooterBar property](properties/devenv-infooterbar-property.md) for each to `true`.
 
-      If the property isn't set or is `false`, then the actions won't' appear.
+      If the property isn't set or is `false`, then the actions don't' appear.
     - Similar to the `Visible` property on the groups, use the [Enabled](properties/devenv-enabled-property.md) property to control when buttons are active on the different steps. For example, **Back** isn't active in the first step, and **Next** isn't active in the last step.
 
         Like on groups, define global boolean variables for each action, then apply the variable to the action's `Editable` property. The global variables are then controlled in AL code.
     - To style the buttons to match other assisted setups in the Microsoft base application, set the [Image](properties/devenv-visible-property.md) property to `PreviousRecord` for the back button, `NextRecord` for the next button, and  `Approve` for the finish.
 
-4. Transfer data from the temporary table to the database table. For example:
+1. Transfer data from the temporary table to the database table. For example:
 
    ```al
     var
@@ -208,7 +208,7 @@ This section describes the basic tasks for creating an assisted setup. It gives 
 
 ## Add standard banners
 
-You may have noticed that most assisted setup guides in the base application, and in this article, include two different banners under the step caption: a gear and a check mark. These banners are based on the following image files in **Media Repository** table:
+You might notice that most assisted setup guides in the base application, and in this article, include two different banners under the step caption: a gear and a check mark. These banners are based on the following image files in **Media Repository** table:
 
 - AssistedSetup-NoText-400px.png for the gear
 - AssistedSetupDone-NoText-400px.png for the check mark.
@@ -289,7 +289,7 @@ begin
 end;
 ```
 
-To add an assisted setup guide to the **Assisted Setup** page, add a codeunit that subscribes to the `OnRegisterAssistedSetup` event. The following code illustrates how you can add the **ToDoAssistedSetup** assisted setup guide. The example also creates a new category called **Tasks** on the **Assisted Setup** page a link to **ToDoAssistedSetup** will be listed:
+To add an assisted setup guide to the **Assisted Setup** page, add a codeunit that subscribes to the `OnRegisterAssistedSetup` event. The following code illustrates how you can add the **ToDoAssistedSetup** assisted setup guide. The example also creates a new category called **Tasks** on the **Assisted Setup** page, where a link to **ToDoAssistedSetup** is listed:
 
 ```al
 codeunit 50100 "AddToDoAssistedSetup"
@@ -336,7 +336,7 @@ enumextension 50100 MyEnumExtension extends "Assisted Setup Group"
 
 ## Example
 
-This code example shows how to use a `NavigatePage` type page to create an assisted setup guide with three steps, as illustrated in the following figures. The assisted setup lets users add entries to a to-do list, which is stored in table **To-Do**. The code for the first step includes a part that reuses the page **Attendee Wizard Subform** of the base application. This part allows users, when they first start the setup, to select the salesperson that the to-do is for.
+This code example shows how to use a `NavigatePage` type page to create an assisted setup guide with three steps, as illustrated in the following figures. The assisted setup lets users add entries to a to-do list, which is stored in table **To-do**. The code for the first step includes a part that reuses the page **Attendee Wizard Subform** of the base application. This part allows users, when they first start the setup, to select the salesperson that the to-do is for.
 
 |Step 1|Step 2|Step 3|
 |-|-|-

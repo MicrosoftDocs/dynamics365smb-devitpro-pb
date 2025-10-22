@@ -2,21 +2,26 @@
 title: Manage Tenant-Specific Notifications
 description: Learn about how an internal admin and a delegated admin can get notified of changes for Business Central tenants. 
 author: jswymer
-
 ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, notifications
-ms.date: 04/12/2023
+ms.date: 10/20/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Manage Tenant-Specific Notifications
+# Manage tenant-specific notifications
 
-You can get notified of administrative events that occur on environments in a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant. For example, we send notifications when a major update is available for environments, when an environment update has succeeded or failed, or when extensions require changes to be compatible with an upcoming update. When these and other similar events occur on the tenant, an email is sent to the notification recipients for the tenant.  
+You can get notified of administrative events that occur on environments in a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant. For example, we send notifications when:
+
+- A major update is available for environments.
+- An environment update succeeds or fails
+- Extensions require changes to be compatible with an upcoming update.
+
+When these and other similar events occur on the tenant, an email is sent to the notification recipients for the tenant.  
 
 > [!NOTE]  
-> If a prospect has signed up for a trial of [!INCLUDE [prod_short](../includes/prod_short.md)], make sure that they understand that they must sign up for notifications. This is especially important if the prospect moves to My Company so that the tenant will expire after 30 days. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for Business Central.
+> If a prospect signed up for a trial of [!INCLUDE [prod_short](../includes/prod_short.md)], make sure that they understand that they must sign up for notifications. This step is especially important if the prospect moves to **My Company** so that the tenant will expire after 30 days. Learn more in [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for Business Central.
 
 ## Communication channels
 
@@ -24,21 +29,23 @@ Environment lifecycle events are communicated through various channels, each wit
 
 ### Email notification
 
-Notifications are sent to all email addresses that are listed in the **Notification recipients** list of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Manage the list manually by adding and removing recipients to ensure the right individuals are notified of the event.
+Notifications are sent to all email addresses that are listed in the **Notification recipients** list of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. To ensure the right individuals are notified of the event, manage the list manually by adding and removing recipients.
 
 > [!NOTE]
-> It is important that *at least* one administrator's email address has been entered as a notification recipient to ensure proper awareness of events requiring administrative attention.
+>
+> - It's important that *at least* one administrator's email address is entered as a notification recipient to ensure proper awareness of events requiring administrative attention.
+> - You can add up to 100 notification recipients. To support more recipients, create a distribution list and add it as a recipient instead.
 
 > [!IMPORTANT]
 > [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
 
 ### Microsoft 365 Message Center
 
-Most environment lifecycle events that emails are sent for will soon also be posted to Microsoft 365 Message Center. Over time, emails that are sent to the specified notification recipients will be a subset of the messages that are posted in Message Center. Eventually, emails sent to notification recipients will be deprecated.  
+Most environment lifecycle events that emails are sent for are also soon posted to Microsoft 365 Message Center. Over time, emails that are sent to the specified notification recipients will be a subset of the messages that are posted in Message Center. Eventually, emails sent to notification recipients are deprecated.  
 
-Already now, we warmly recommend that you make sure that the relevant people [sign up to receive email notifications from the Message center](/microsoft-365/admin/manage/message-center#preferences). For more information, see the article [Message center](/microsoft-365/admin/manage/message-center) in the Microsoft 365 admin content.
+Already now, we warmly recommend that you make sure that the relevant people [sign up to receive email notifications from the Message center](/microsoft-365/admin/manage/message-center#preferences). Learn more in the [Message center](/microsoft-365/admin/manage/message-center) in the Microsoft 365 admin content.
 
-If you're a delegated admin, you might not be able to sign up yourself. In those cases, ask the internal admin to add you or a group email account as recipients. Also, in some scenarios where your organization manages multiple tenants, you might want to use the service communications API in Microsoft Graph to access the health status and message center posts about [!INCLUDE [prod_short](../includes/prod_short.md)]. For more information, see [Access service health and communications in Microsoft Graph](/graph/service-communications-concept-overview).  
+If you're a delegated admin, you might not be able to sign up yourself. In those cases, ask the internal admin to add you or a group email account as recipients. Also, in some scenarios where your organization manages multiple tenants, you might want to use the service communications API in Microsoft Graph to access the health status and message center posts about [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Access service health and communications in Microsoft Graph](/graph/service-communications-concept-overview).  
 
 ### Microsoft 365 Service Health Dashboard
 
@@ -52,13 +59,13 @@ Learn more about Environment Lifecycle trace telemetry [here](telemetry-environm
 
 #### Customize notifications and automation
 
-Azure Logic Apps and Power Automate have built-in connectors to query telemetry in Application Insights that you can use to set up custom notifications or to automate certain actions triggered by an environment lifecycle event.
+Azure Logic Apps and Power Automate have built-in connectors to query telemetry in Application Insights. Use the connectors to set up custom notifications or automate certain actions triggered by an environment lifecycle event.
 
 Learn more about alerts on telemetry events [here](telemetry-overview.md).
 
 ##### Example: Grouped notification for available updates
 
-This Logic App runs every number of days (specified in deployment) and lists all updates made available to environments that emit telemetry to the specified Application Insights resource for the specified period. Administrators can use this to replace the many email notifications they would receive for each individual environment when set up as notification recipient.
+This Logic App runs every number of days (specified in deployment) and lists all updates made available to environments that emit telemetry to the specified Application Insights resource for the specified period. Administrators can use this information to replace the many email notifications they would receive for each individual environment when set up as notification recipient.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FAvailableUpdatesNotification.json)
 
@@ -76,7 +83,7 @@ This Logic App runs a query that returns any failed environment updates ever num
 
 ##### Example: Post adaptive cards in Teams for each available environment update
 
-This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts an adaptive card to a specified Microsoft Teams channel for each environment that has an update available. Based on the user's choice, the Logic App will call the Business Central admin center API using an authorized service-to-service Microsoft Entra app (configuration details specified in the deployment). The adaptive card gives the user four choices:  
+This Logic App queries Application Insights every number of minutes (specified in the deployment). It posts an adaptive card to a specified Microsoft Teams channel for each environment that has an update available. Based on the user's choice, the Logic App calls the Business Central admin center API using an authorized service-to-service Microsoft Entra app (configuration details specified in the deployment). The adaptive card gives the user four choices:  
 
 - Schedule the update as soon as possible ("Run Now"), and allow the update to start outside of the update window for the environment  
 - Reschedule the update to a specified other day  
@@ -86,20 +93,21 @@ This Logic App queries Application Insights every number of minutes (specified i
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentUpdateAdaptiveCard.json)
 
 ##### Example: Post adaptive cards in Teams for user permission errors
-This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts adaptive cards to a specified Microsoft Teams channel for each permission error users in environments emitting telemetry to the specified Application Insights resource have encountered. Using the adaptive card, administrators can open Business Central to assign the needed permissions to the user.
+
+This Logic App queries Application Insights every number of minutes (specified in the deployment). It posts adaptive cards to a specified Microsoft Teams channel for each permission error encountered by users in environments that emit telemetry to the specified Application Insights resource. Administrators can use the adaptive card to open Business Central to assign the needed permissions to the user.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FPermissionError.json)
 
 #### Reporting
 
-To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft AppSource. This app includes an Administration report which shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md), or get it immediately from [Microsoft AppSource](https://aka.ms/bctelemetryreport).
+To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft AppSource. This app includes an Administration report that shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md), or get it immediately from [Microsoft AppSource](https://aka.ms/bctelemetryreport).
 
 > [!NOTE]
 > The Power BI reports and dataset that make up this app are available on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/PowerBI/Reports/AppSource/enrironment-app-pbix). You can customize those resources for your own needs and publish from Power BI desktop.
 
 ### Admin center operations page
 
-The operations page does not notify you of environment lifecycle events, but does provide some details on these operations that are not available in other channels, like the email address of the user that executed an operation. Learn more [here](tenant-admin-center-environments.md#opslog).
+The operations page doesn't notify you of environment lifecycle events. However, it does provide some details on these operations that aren't available in other channels, like the email address of the user that executed an operation. Learn more in [Log of administrative operations](tenant-admin-center-environments.md#opslog).
 
 ### Overview of communication channels
 
@@ -135,35 +143,35 @@ The following table illustrates how we communicate about the different environme
 
 <sup>1</sup><a name="1"></a>Messages for environment lifecycle events are coming to Microsoft 365 Message Center soon.
 
-<sup>2</sup><a name="2"></a>Application Insights and Operations page include full failure details, email notification and Message Center cover fewer failure reasons but include mitigation steps.
+<sup>2</sup><a name="2"></a>Application Insights and Operations page include full failure details. Email notification and Message Center cover fewer failure reasons but include mitigation steps.
 
 <sup>3</sup><a name="3"></a>Examples of setting changes include changes to the environment update window, assigned security groups, and Application Insights settings.
 
 ## Notification of blocked updates
 
-Microsoft updates environments according to the update windows that are defined for the environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. However, if the environment includes an app that isn't compatible with the next version, Microsoft pauses the update and sends a notification of the issue.  
+Microsoft updates environments according to the update windows defined for each environment. These windows are set in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. If the environment includes an app that isn't compatible with the next version, Microsoft pauses the update and sends a notification of the issue.  
 
-After a while, all users see an in-product notification, which may confuse some people. But Microsoft wants to update the environment, so an admin must disable and remove the problematic app so that the update can continue. After more than a month of waiting, Microsoft sends a more strongly worded notification. If the environment is still blocked from getting the update after more than 4-5 months, Microsoft uninstalls the problematic app, but doesn't delete any data. The environment is updated with the latest security and other updates.  
+After a while, all users see an in-product notification, which might confuse some people. But Microsoft wants to update the environment, so an admin must disable and remove the problematic app so that the update can continue. After more than a month of waiting, Microsoft sends a more strongly worded notification. If the environment is still blocked from getting the update after more than 4-5 months, Microsoft uninstalls the problematic app, but doesn't delete any data. The environment is updated with the latest security and other updates.  
 
 The following list illustrates a typical timeline:
 
-* 10 weeks of emails sent to the registered notification recipients.  
+- 10 weeks of emails sent to the registered notification recipients.  
 
-    If the update fails, Microsoft reschedules automatically. The notification recipients will receive multiple emails. If no notification recipient has been set up, then no email is sent.
-* Six weeks with in-product notifications that encourage users to contact their admin.  
+    If the update fails, Microsoft reschedules automatically. The notification recipients receive multiple emails. If no notification recipient is set up, then no email is sent.
+- Six weeks with in-product notifications that encourage users to contact their admin.  
 
-    This notification currently indicates that the environment will expire to worry users so they try to find their admin to sort out things.
-* One month of more explicit in-product notifications
+    This notification currently indicates that the environment will expire, prompting users to contact their admin to resolve the issue.
+- One month of more explicit in-product notifications
 
-    This notification currently indicates that the environment is missing an important update and is blocked. The wording has been chosen to make it clearer what the issue is and what the user must do as quickly as possible.  
+    This notification currently indicates that the environment is missing an important update and is blocked. The wording was chosen to make it clearer what the issue is and what the user must do as quickly as possible.  
 
-If the problematic app hasn't been uninstalled at this point, Microsoft typically starts the process of force-uninstalling apps, including per-tenant extensions. Data isn't deleted.  
+If the problematic app isn't uninstalled at this point, Microsoft typically starts the process of force-uninstalling apps, including per-tenant extensions. Data isn't deleted.  
 
 For more information about updates, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md). For more information about how to keep your [!INCLUDE [prod_short](../includes/prod_short.md)] compliant with upcoming updates, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md).  
 
 ## Cleaning up settings
 
-If you end the relationship with a customer where you have set up your email address as a notification recipient, you must remove the email address while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
+If you end your relationship with a customer where your email address is set as a notification recipient, remove your email address while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 ## Related information
 

@@ -27,7 +27,7 @@ When using the wizard, consider the service tier of the new Azure SQL database c
 
 ## Upscale Azure SQL Database
 
-If you're using Azure SQL Database to migrate your on-premises database, you can monitor CPU and memory utilization in the Azure portal to ensure optimal performance. To monitor utilization, use [Metrics]((/azure/azure-sql/database/monitoring-sql-database-azure-monitor?view=azuresql) for Azure Sql Database in the Azure portal. Metrics shows you real-time performance data for your database, including CPU and memory usage. 
+If you're using Azure SQL Database to migrate your on-premises database, you can monitor CPU and memory utilization in the Azure portal to ensure optimal performance. To monitor utilization, use [Metrics](/azure/azure-sql/database/monitoring-sql-database-azure-monitor?view=azuresql) for Azure Sql Database in the Azure portal. Metrics shows you real-time performance data for your database, including CPU and memory usage. 
 
 If you notice high consumption of CPU and memory, it may be time to upscale your database. Upscaling the database can improve performance by providing more resources for your database to work with. For more information about upscaling, visit [Dynamically scale database resources with minimal downtime](/azure/azure-sql/database/scale-resources). Keep in mind that upscaling increases the cost of your database, so weigh the benefits against the cost before making any changes.
 

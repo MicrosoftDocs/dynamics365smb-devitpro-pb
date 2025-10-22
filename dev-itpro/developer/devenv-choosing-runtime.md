@@ -16,10 +16,16 @@ The runtime version specified in the `app.json` file determines which runtime th
 
 ## Currently available runtime versions
 
-The available options for setting the `runtime` in AL are:
+The most recent runtimes are listed here. For a full list of available runtimes, use IntelliSense in the AL Extension.
 
 |Runtime version|Shipped with                       |Internal version|
 |---------------|-----------------------------------|----------------|  
+|`13.0`         |Business Central 2024 release wave 1|24.0|
+|`14.0`         |Business Central 2024 release wave 2|25.0|
+|`15.0`         |Business Central 2025 release wave 1|26.0|
+|`16.0`         |Business Central 2025 release wave 2|27.0|
+
+<!--
 |`1.0`          |Business Central April 2018 Release|12.0|
 |`2.0`          |Business Central Fall '18 Release  |13.0|
 |`3.0`          |Business Central Spring '19 Release|14.0|
@@ -40,10 +46,7 @@ The available options for setting the `runtime` in AL are:
 |`10.0`         |Business Central 2022 release wave 2|21.0|
 |`11.0`         |Business Central 2023 release wave 1|22.0|
 |`12.0`         |Business Central 2023 release wave 2|23.0|
-|`13.0`         |Business Central 2024 release wave 1|24.0|
-|`14.0`         |Business Central 2024 release wave 2|25.0|
-|`15.0`         |Business Central 2025 release wave 1|26.0|
-|`16.0`         |Business Central 2025 release wave 2|27.0|
+-->
 
 ## Setting the runtime version
 
