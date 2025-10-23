@@ -552,9 +552,9 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-### Update application version
+### Update the application version shown on the Help and Support page
 
-[!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version.md)]
+[!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version-help-support.md)]
 
 ### Import the customer license
 
