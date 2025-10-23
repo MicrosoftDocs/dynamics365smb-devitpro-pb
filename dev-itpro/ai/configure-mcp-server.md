@@ -246,6 +246,8 @@ Business Central doesn’t just bring AI into the application—it can also reac
 ## Configure Business Central MCP Server
 
 
+You can only add one confiuration per MCP Server instance in Copilot Studio.
+You can only add page objects.
 
 ## Prerequisites
 
@@ -261,8 +263,21 @@ Business Central doesn’t just bring AI into the application—it can also reac
    |-|-|
    |Name|Specifies the configuration's name. This name appears in Copilot Studio to assign the configuration to MCP Server connection for an agent.|
    |Description|Specifies a brief description of the configuration.|
-   |Active|When on, configuration and its tools are available for agents to use. If you turn the swicth off, agents that currently use the configuration won't work as expected.|
-   |Dynamic Tool Mode|When this switch is on, Copilot  ether to enable dynamic tool mode for this MCP configuration. When on ,  can search for tools within the configuration dynamically|
-   |Discover Additional Objects||
-   |Allow Create/Update/Delete Tools|Specifies whether to allow create, update, and delete tools for this MCP configuration.|
-1. 
+   |Active|When on, the configuration and its tools are available for agents to use. If you turn the swicth off, agents that currently use the configuration won't work as expected.|
+   |Dynamic Tool Mode|When on, agents that use the configuration can search for tools within the configuration dynamically. In the MCP server configuration for the agent in Copilot Studio, you don't explicitly allow access to the tools. If off, you to select the tools you to allow the agent to use.|
+   |Discover Additional Objects|When on, read-only objects that aren't defined as tools in the confiuration are also accessible by agents. This switch only applies when the **Dynamics Tool Mode** is on. |
+   |Allow Create/Update/Delete Tools|When off, agents that use this configuration can't perform create, update, and delete operations on tools even if the operations are enabled.|
+
+1. In the **Tools** section, add API page objects as tools to the configuration.
+
+   You add the objects individually in lines. Select the **Add All Standard APIs as Tools** to automatically add the Business Central API pages.
+
+   Set the permissions agents have for each tool according to the following table: 
+
+   |Permission|Description|
+   |-|-|
+   |Allow Read|Specifies whether read operations are allowed for this tool.|
+   |Allow Create|Specifies whether create operations are allowed for this tool.|
+   |Allow Modify|Specifies whether modify operations are allowed for this tool.|
+   |Allow Delete|Specifies whether modify operations are allowed for this tool.|
+   |Allow Bound Actions|Specifies whether bound actions are allowed for this tool. A bound action is an OData action that is bound to a resource, like a table or record |
