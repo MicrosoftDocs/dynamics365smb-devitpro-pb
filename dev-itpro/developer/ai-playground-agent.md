@@ -78,14 +78,15 @@ This opens a **Create Agent**, where you can define the agent's **Name**, **User
 
 The AI Playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
 
+On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
-Properties on page customization object:
-
-ClearActions: Boolean - If set to true, all actions on the page are removed for the agent.
-ClearLayout: Boolean - If set to true, the layout of the page is simplified for the agent.
-ClearViews: Boolean - If set to true, all views on the page are removed for the agent.
-DeleteAllowed: Boolean - If set to false, the delete action isn't allowed for the agent.
-InsertAllowed: Boolean - If set to false, the insert action isn't allowed for the agent.    
+| Property | Data type | Description |
+|----------|-----------|-------------|
+| `ClearActions` | Boolean | If set to true, all actions on the page are removed for the agent.|
+| `ClearLayout`  | Boolean | If set to true, the layout of the page is simplified for the agent. |
+| `ClearViews`   | Boolean | If set to true, all views on the page are removed for the agent. |
+| `DeleteAllowed`| Boolean | If set to false, the delete action isn't allowed for the agent. |
+| `InsertAllowed`| Boolean | If set to false, the insert action isn't allowed for the agent. |
 
 Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
 
