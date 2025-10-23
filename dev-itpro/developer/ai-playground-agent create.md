@@ -1,5 +1,5 @@
 ---
-title: AI Playground Agent overview
+title: Create and manage a Playground agent (preview)
 description: Learn how you can use AI Playground Agent in Business Central.
 author: solsen
 ms.author: solsen
@@ -8,44 +8,30 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 09/10/2025
+ms.date: 10/23/2025
 ms.update-cycle: 180-days
 ---
 
-# AI Playground Agent overview (preview)
+# Create and manage a Playground agent (preview)
 
-<!-- split into more articles, using this as a starting point. Live in devitpro, linking from app repo 
+[This article is prerelease documentation and is subject to change.]
 
-Overview (existing ai-playground-agent.md)
-    Purpose & audience
-    When to use / when not to use
-    Lifecycle summary (Create → Iterate → Graduate)
-    High-level concepts: Instructions, Tasks, Permissions, Profile
-    Limitations (preview)
-    Next steps links
+> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)] using the AI Playground agent.
+
+<!--
 Create and manage a Playground agent (ai-playground-agent-create.md)
     Prerequisites
     Create (step list + field table)
     Activate / Deactivate
     Edit (what requires deactivation)
     Delete / cleanup
-    Lifecycle tips
-Configure instructions, tasks, and permissions (ai-playground-agent-configure.md)
-    Instructions (guidelines + good/bad example)
-    Tasks (definition, when they run, adding/modifying)
-    Permissions & least privilege (including profiles & page customization flags)
-    User access (who can interact)
-    Monitoring (Agent Task Log basics)
-    Graduating to AL extension (short hand-off checklist)
-Best practices for prototyping with AI Playground (ai-playground-agent-best-practices.md)
-    Best practices for instructions, tasks, and permissions
--->
+    Lifecycle tips -->
 
 [This article is prerelease documentation and is subject to change.]
 
 > This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)] using the AI Playground agent.
 
-The AI Playground agent is a tool that allows you to create prototypes to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. It's available in sandbox environments and is designed for testing and learning purposes. It provides an environment where you can test and explore AI capabilities without affecting your production data. You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
+You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
 ## Prerequisites
 
@@ -54,7 +40,6 @@ Before you can use the AI Playground agent, ensure that you have the following p
 - Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]
 - Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](includes/prod_short.md)]
 - A sandbox environment for testing and experimentation
-
 
 ## Set up AI Playground Agent
 
@@ -129,16 +114,6 @@ Once you have created and configured your AI Playground agent, you need to activ
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
 
 
-## Testing the AI Playground Agent
-
-## Best practices
-
-When creating and using an AI Playground agent, consider the following best practices:
-
-Bold instructions and markdown format. Other best practices to be added from the slide deck. 
-
-Include link to best practices article.
-
 <!--
 
 Content gaps to address before publication:
@@ -205,24 +180,6 @@ Configure instructions, tasks, and permissions (ai-playground-agent-configure.md
     Monitoring (Agent Task Log basics)
     Graduating to AL extension (short hand-off checklist)
 -->
-
-## Configure instructions, tasks, and permissions
-
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. 
-
-### Writing effective instructions
-
-Think of instructions as something you would give to a human assistant. You'd want to give some context, explain the task clearly, and set expectations for the output. Writing instructions for an AI model is similar. Here are some general tips for writing effective instructions:
-
-- Be clear and specific: avoid vague instructions.
-- Include context: describe the situation or data the model should consider.
-- Set expectations: Tell the model what kind of output you want. For example, a summary, list, or an explanation.
-- Use examples: Show the model what a good response looks like.
-- Iterate and refine: Test and improve your prompt based on results.
-
-With the AI Playground agent, you must give it instructions in natural language that clearly describe its purpose. These instructions guide the agent on using the UI and data it has access to. The more precise and detailed your instructions are, the better the agent can perform its tasks. Before you write the instructions, review the UI that the agent will have access to based on its profile. This helps you understand what the agent can see and do, allowing you to tailor your instructions accordingly. Test these instructions thoroughly to ensure they lead to the desired behavior.
-
-<!-- Add example of good instructions, like shown in the partner video. Link to best practices for prompting -->
 
 ### Defining tasks 
 
