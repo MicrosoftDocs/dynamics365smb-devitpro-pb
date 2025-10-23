@@ -255,7 +255,7 @@ You can only add page objects.
 
 ## Create a MCP Server configuration
 
-1. [!INCLUDE[open-search](includes/open-search.md)], enter **Model Context Protocol (MCP) Server Configurations**, and then choose the related link.
+1. [!INCLUDE[open-search](../includes/open-search.md)], enter **Model Context Protocol (MCP) Server Configurations**, and then choose the related link.
 1. Select **New**.
 1. Set these general fields:  
 
