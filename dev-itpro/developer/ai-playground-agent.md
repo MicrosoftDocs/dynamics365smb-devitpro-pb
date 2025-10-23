@@ -201,6 +201,33 @@ Set up Agent tasks - what are these, how are they best defined - trigger the flo
 
 
 -->
+<!--
+Configure instructions, tasks, and permissions (ai-playground-agent-configure.md)
+    Instructions (guidelines + good/bad example)
+    Tasks (definition, when they run, adding/modifying)
+    Permissions & least privilege (including profiles & page customization flags)
+    User access (who can interact)
+    Monitoring (Agent Task Log basics)
+    Graduating to AL extension (short hand-off checklist)
+-->
+
+## Configure instructions, tasks, and permissions
+
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. 
+
+### Writing effective instructions
+
+Think of instructions as something you would give to a human assistant. You'd want to give some context, explain the task clearly, and set expectations for the output. Writing instructions for an AI model is similar. Here are some general tips for writing effective instructions:
+
+- Be clear and specific, avoid vague instructions.
+- Include context: describe the situation or data the model should consider.
+- Set expectations: Tell the model what kind of output you want. For example, a summary, list, or an explanation.
+- Use examples: Show the model what a good response looks like.
+- Iterate and refine: Test and improve your prompt based on results.
+
+With the AI Playground agent, you must give it instructions in natural language that clearly describe its purpose. These instructions guide the agent on using the UI and data it has access to. The more precise and detailed your instructions are, the better the agent can perform its tasks. Before you write the instructions, review the UI that the agent will have access to based on its profile. This helps you understand what the agent can see and do, allowing you to tailor your instructions accordingly. Test these instructions thoroughly to ensure they lead to the desired behavior.
+
+### Defining tasks 
 
 ## Related information
 
