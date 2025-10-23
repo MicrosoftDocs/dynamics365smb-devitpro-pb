@@ -90,11 +90,14 @@ On the page customization object, you can set specific flags to control what the
 
 Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
 
+> [!NOTE]
+> The profile of the agent is set as default to the Playground agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
+
+
+<!-- move next section to configure article? -->
 
 The **Agent Card** is where you define the agent's purpose and the tasks it performs.
 
-> [!NOTE]
-> The profile of the agent is set as default to the Playground agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
 
 An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
 
