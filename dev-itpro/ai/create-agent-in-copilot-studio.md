@@ -23,28 +23,9 @@ After you create an agent, you can publish agents into multiple platforms or cha
 
 Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
 
-<!-- ### What are agents and when to use them
-
-AI agents to connect to your environments and perform a range of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
-
-Use an agent when users need to:
-
-- Look up records, like customers, items, inventory, or documents.
-- Trigger operations on records (create records, post, check status).
-- Ask natural-language questions instead of navigating pages.
-- Access Business Central data securely from external channels.
-
-
-Agents don't:
-
-- Add new AL code or business logic.
-- Replace extension development.
-- Override permissions or policies.
-- Modify the schema or internal engine behavior.-->
-
 ## Connection options
 
-You can build agents that connect to Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. In short:
+You can build agents that connect to Business Central Connector for Power Platform and Business Central MCP (Model Context Protocol) server:
 
 **Power Platform Business Central connector** exposes common Business Central operations (CRUD, standard actions) through ready made actions. It hides the HTTP/OData details, handles auth, paging, and retry behavior, and integrates with DLP and environment governance.
 
@@ -56,12 +37,6 @@ Use the following table for comparison:
 |-|-|-|-|
 | Business Central connector | Task-focused CRUD actions | Listing, creating, updating specific records |
 | Business Central MCP server | Rich, model-aware, multi-turn interactions |Exploratory queries, refinements, chained operations |
-
-<!--
-| Option | Best for | Access style | Typical scenarios |
-|-|-|-|-|
-| Business Central connector | Task-focused CRUD actions | Predefined action calls | Listing, creating, updating specific records |
-| Business Central MCP server | Rich, model-aware, multi-turn interactions | Model context and server tools | Exploratory queries, refinements, chained operations |-->
 
 ## Prerequisites
 
@@ -181,3 +156,22 @@ You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilo
 1. Publish and deploy the agent.
 
    Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
+
+
+<!-- ### What are agents and when to use them
+
+AI agents to connect to your environments and perform a range of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
+
+Use an agent when users need to:
+
+- Look up records, like customers, items, inventory, or documents.
+- Trigger operations on records (create records, post, check status).
+- Ask natural-language questions instead of navigating pages.
+- Access Business Central data securely from external channels.
+
+Agents don't:
+
+- Add new AL code or business logic.
+- Replace extension development.
+- Override permissions or policies.
+- Modify the schema or internal engine behavior.-->
