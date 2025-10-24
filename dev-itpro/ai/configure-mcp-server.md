@@ -245,7 +245,7 @@ Business Central doesn’t just bring AI into the application—it can also reac
 
 # Configure Business Central MCP Server
 
-Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to to connect to your environments and perform a range of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
+Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
 
 The article explains how to enable and configure the Business Central MCP Server in your Business Central environment to allow agents can connect to the environment's APIs.
 
@@ -276,7 +276,7 @@ Once the MCP server is enabled and configured, its configurations become availab
 
 1. In the **Tools** section, add API page objects as tools to the configuration.
 
-   You add the objects individually in lines. Select the **Add All Standard APIs as Tools** to automatically add the Business Central API pages.
+   You add the objects individually in lines. Select **Add All Standard APIs as Tools** to automatically add all Business Central API pages as tools.
 
    Set the permissions agents have for each tool according to the following table: 
 
@@ -285,7 +285,7 @@ Once the MCP server is enabled and configured, its configurations become availab
    |Allow Read|Specifies whether read operations are allowed for this tool.|
    |Allow Create|Specifies whether create operations are allowed for this tool.|
    |Allow Modify|Specifies whether modify operations are allowed for this tool.|
-   |Allow Delete|Specifies whether modify operations are allowed for this tool.|
+   |Allow Delete|Specifies whether delete operations are allowed for this tool.|
    |Allow Bound Actions|Specifies whether bound actions are allowed for this tool. A bound action is an OData action that is bound to a resource, like a table or record |
 
 ## Next steps
