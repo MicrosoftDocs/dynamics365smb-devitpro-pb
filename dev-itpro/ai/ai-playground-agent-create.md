@@ -30,7 +30,7 @@ Before you can use the AI Playground agent, ensure that you have the following p
 
 ## Getting started
 
-To get started, navigate to the Agent Builder Playground in your Business Central sandbox environment. Start by creating a new agent and giving it a clear name and description that reflect its purpose. Next, define the agent's instructions in natural language. These instructions should articulate the agent's goals, the tasks it should perform, and any constraints or considerations it must respect. 
+To get started, navigate to the Agent Builder Playground in your [!INCLUDE [prod_short](../includes/prod_short.md)] sandbox environment. Start by creating a new agent and giving it a clear name and description that reflect its purpose. Next, define the agent's instructions in natural language. These instructions should articulate the agent's goals, the tasks it should perform, and any constraints or considerations it must respect. 
 
 After you define the behavior, assign a user profile that determines which UI elements and data entities the agent can interact with. Finally, configure the permissions that govern its execution, ensuring that the agent operates within safe and predictable boundaries.
 
@@ -58,17 +58,17 @@ This opens a **Create Agent**, where you can define the agent's **Name**, **User
 
 The AI Playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
 
+On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
-Properties on page customization object:
-
-ClearActions: Boolean - If set to true, all actions on the page are removed for the agent.
-ClearLayout: Boolean - If set to true, the layout of the page is simplified for the agent.
-ClearViews: Boolean - If set to true, all views on the page are removed for the agent.
-DeleteAllowed: Boolean - If set to false, the delete action isn't allowed for the agent.
-InsertAllowed: Boolean - If set to false, the insert action isn't allowed for the agent.    
+| Property | Data type | Description |
+|----------|-----------|-------------|
+| `ClearActions` | Boolean | If set to true, all actions on the page are removed for the agent.|
+| `ClearLayout`  | Boolean | If set to true, the layout of the page is simplified for the agent. |
+| `ClearViews`   | Boolean | If set to true, all views on the page are removed for the agent. |
+| `DeleteAllowed`| Boolean | If set to false, the delete action isn't allowed for the agent. |
+| `InsertAllowed`| Boolean | If set to false, the insert action isn't allowed for the agent. |
 
 Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
-
 
 The **Agent Card** is where you define the agent's purpose and the tasks it performs.
 
