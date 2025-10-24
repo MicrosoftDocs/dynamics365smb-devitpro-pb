@@ -67,51 +67,6 @@ Use the following table for comparison:
 
 You have a Copilot Studio user license with available Copilot Credits capacity for use. Learn more in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing).
 
-## Create agents that use Business Central MCP
-
-After an agent is created, you can add the Business Central MCP server to an agent as a tool access server tools and resources.  MCP server is connected to Copilot Studio, you can add the server to an agent as a tool, and access server tools and resources.
-You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilot Studio. The server provides tools for actions in Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-
-1. Create new or open existing agent.
-
-   1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
-   1. In the left-side navigation pane, select **Agents**.
-   1. Select the agent you want to modify or select **New agent** to create a new agent.
-
-   Learn more about creating agents in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
-
-1. Connect the agent to the Business Central MCP server.
-
-   1. On the **Tools** tab of the agent page, select **+ Add a tool**.
-   1. Search for and select **Dynamics 365 Business Central MCP Server (Preview)**.
-   1. Select the connector action `Find records (V3)`. The **Add tool** page opens.
-   1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
-   1. Select **Add and configure** to retrun to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
-   1. In **Inputs** section of the **Tools** tab, configure the MCP server to connect Business Central by setiing the folloing fields.
-
-      |Field|Value|
-      |-|-|
-      |Environment|The Business Central environment the agent connects to. Select the down arrow and select the environment for the  that environments appear.|
-      |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the that environments appear.|
-      |MCP Server Configuration|The MCP configuration defined in Business Central the agent uses. Select the down arrow and select one of the avilable configurations. Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md)|
-
-   1. The **Tools** section on the page displays the individaul tools available to the agent. Use this section to specific which tools the agent is allowed to use.
-
-      For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, trun on the **Allow All** to allow all listed tools.
-
-      > [!NOTE]
-      > If there are no tools listed, then the selected MCP configuration is configured to automatically detect and allow tools, so you don't need can't manually allow them. Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
-
-1. Select **Save**.
-1. Test the agent.
-   1. Select **Test** in the upper-right corner of any page to open the **Test your agent** pane.
-   1. In the field at the bottom, enter text that explains what you want the agent to do.
-
-   Learn more in [Test you agent](/microsoft-copilot-studio/authoring-test-bot).
-1. Publish and deploy the agent.
-
-   Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
-
 ## Create agents that use Business Central connector
 
 You can use the Business Central connector actions, like `Create Record` or `List Companies`, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the `Find Records`, `Create Record`, and `Update Record`actions as tools to the agent.
@@ -181,3 +136,48 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 - **Validation:** Use server-side validation rules in Business Central (pricing/validation). The connector surfaces errors; handle these errors in agent responses.
 - **Inputs:** Validate and sanitize user input before calling Create record (that is, ensure required fields are present).
 - **Logging:** Use the agent’s execution logs to troubleshoot tool calls and to see request/response payloads.
+
+## Create agents that use Business Central MCP
+
+After an agent is created, you can add the Business Central MCP server to an agent as a tool access server tools and resources.  MCP server is connected to Copilot Studio, you can add the server to an agent as a tool, and access server tools and resources.
+You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilot Studio. The server provides tools for actions in Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+
+1. Create new or open existing agent.
+
+   1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
+   1. In the left-side navigation pane, select **Agents**.
+   1. Select the agent you want to modify or select **New agent** to create a new agent.
+
+   Learn more about creating agents in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
+
+1. Connect the agent to the Business Central MCP server.
+
+   1. On the **Tools** tab of the agent page, select **+ Add a tool**.
+   1. Search for and select **Dynamics 365 Business Central MCP Server (Preview)**.
+   1. Select the connector action `Find records (V3)`. The **Add tool** page opens.
+   1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
+   1. Select **Add and configure** to retrun to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
+   1. In **Inputs** section of the **Tools** tab, configure the MCP server to connect Business Central by setiing the folloing fields.
+
+      |Field|Value|
+      |-|-|
+      |Environment|The Business Central environment the agent connects to. Select the down arrow and select the environment for the  that environments appear.|
+      |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the that environments appear.|
+      |MCP Server Configuration|The MCP configuration defined in Business Central the agent uses. Select the down arrow and select one of the avilable configurations. Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md)|
+
+   1. The **Tools** section on the page displays the individaul tools available to the agent. Use this section to specific which tools the agent is allowed to use.
+
+      For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, trun on the **Allow All** to allow all listed tools.
+
+      > [!NOTE]
+      > If there are no tools listed, then the selected MCP configuration is configured to automatically detect and allow tools, so you don't need can't manually allow them. Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
+
+1. Select **Save**.
+1. Test the agent.
+   1. Select **Test** in the upper-right corner of any page to open the **Test your agent** pane.
+   1. In the field at the bottom, enter text that explains what you want the agent to do.
+
+   Learn more in [Test you agent](/microsoft-copilot-studio/authoring-test-bot).
+1. Publish and deploy the agent.
+
+   Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
