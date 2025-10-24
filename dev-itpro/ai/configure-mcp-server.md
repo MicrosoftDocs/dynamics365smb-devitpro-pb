@@ -245,7 +245,7 @@ Business Central doesn’t just bring AI into the application—it can also reac
 
 # Configure Business Central MCP Server
 
-Business Central provides an Model Context Protocol (MCP) Server that enables AI agents to to connect to your envronments and perform arange of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
+Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to to connect to your envronments and perform arange of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
 
 The article explains how to enable and configure the Business Central MCP Server in your Business Central environment to allow agents can connect to the enviroments's APIs.
 
@@ -253,7 +253,7 @@ The article explains how to enable and configure the Business Central MCP Server
 
 Configuring the Business Central MCP server involves exposing API page objects in individual configurations. Each configuration exposes one or more API pages as *tools*, which specify the object and permitted operations (create, read, update, and delete).
 
-Once the MCP server is enabled and configured, its configurations become available in Copilot Studio for agent makers to use in their agents. Learn more in [](cre)
+Once the MCP server is enabled and configured, its configurations become available in Copilot Studio for agent makers to use in their agents. Learn more in [Create agents with Copilot Studio](create-agent-in-copilot-studio.md).
 
 ## Prerequisites
 
@@ -290,4 +290,4 @@ Once the MCP server is enabled and configured, its configurations become availab
 
 ## Next steps
 
-[][]
+[Create agents with Copilot Studio](create-agent-in-copilot-studio.md#create-agents-that-use-business-central-mcp)
