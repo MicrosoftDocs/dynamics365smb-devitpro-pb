@@ -243,7 +243,11 @@ Business Central doesn’t just bring AI into the application—it can also reac
 ## Activate MCP server
 -->
 
-## Configure Business Central MCP Server
+# Configure Business Central MCP Server
+
+The article explains how to enable and configure the Business Central MCP Server in your Business Central environment to allow agents can connect to APIs. 
+
+## Configuration overview
 
 
 You can only add one confiuration per MCP Server instance in Copilot Studio.
@@ -255,7 +259,7 @@ You can only add page objects.
 
 ## Create a MCP Server configuration
 
-1. [!INCLUDE[open-search](../includes/open-search.md)], enter **Model Context Protocol (MCP) Server Configurations**, and then choose the related link.
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
 1. Select **New**.
 1. Set these general fields:  
 
@@ -281,3 +285,7 @@ You can only add page objects.
    |Allow Modify|Specifies whether modify operations are allowed for this tool.|
    |Allow Delete|Specifies whether modify operations are allowed for this tool.|
    |Allow Bound Actions|Specifies whether bound actions are allowed for this tool. A bound action is an OData action that is bound to a resource, like a table or record |
+
+## Next steps
+
+[][]
