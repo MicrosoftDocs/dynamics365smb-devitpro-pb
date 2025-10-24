@@ -157,6 +157,10 @@ You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilo
 
    Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
 
+## Related information
+
+[Transparency note: Semantic Metadata Search in Business Central](transparency-note-semantic-metadata-search.md)  
+
 
 <!-- ### What are agents and when to use them
 

@@ -56,7 +56,12 @@ Once the MCP server is enabled and configured, its configurations become availab
 
 ## Next steps
 
-[Create agents with Copilot Studio](create-agent-in-copilot-studio.md#create-agents-that-use-business-central-mcp)  
+[Create agents with Copilot Studio](create-agent-in-copilot-studio.md#create-agents-that-use-business-central-mcp.md)  
+
+## Related information
+
+[Transparency note: Semantic Metadata Search in Business Central](transparency-note-semantic-metadata-search.md)  
+
 
 <!--
 # Build agents with Copilot Studio

@@ -79,3 +79,7 @@ Tested with over 12,000 cases covering synonyms, abbreviations, and semantic var
 
 ## Learn more about Semantic Metadata Search in Business Central
 
+## Related information
+
+[Create agents with Copilot Studio](configure-mcp-server.md)  
+[Create agents with Copilot Studio](create-agent-in-copilot-studio.md#create-agents-that-use-business-central-mcp.md)  
