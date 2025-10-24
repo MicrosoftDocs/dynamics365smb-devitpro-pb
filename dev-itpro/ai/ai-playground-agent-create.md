@@ -18,19 +18,6 @@ ms.update-cycle: 180-days
 
 > This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground agent.
 
-<!--
-Create and manage a Playground agent (ai-playground-agent-create.md)
-    Prerequisites
-    Create (step list + field table)
-    Activate / Deactivate
-    Edit (what requires deactivation)
-    Delete / cleanup
-    Lifecycle tips -->
-
-[This article is prerelease documentation and is subject to change.]
-
-> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground agent.
-
 You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
 ## Prerequisites
@@ -40,6 +27,14 @@ Before you can use the AI Playground agent, ensure that you have the following p
 - Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]
 - Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)]
 - A sandbox environment for testing and experimentation
+
+## Getting started
+
+To get started, navigate to the Agent Builder Playground in your Business Central sandbox environment. Start by creating a new agent and giving it a clear name and description that reflect its purpose. Next, define the agent's instructions in natural language. These instructions should articulate the agent's goals, the tasks it should perform, and any constraints or considerations it must respect. 
+
+After you define the behavior, assign a user profile that determines which UI elements and data entities the agent can interact with. Finally, configure the permissions that govern its execution, ensuring that the agent operates within safe and predictable boundaries.
+
+Once your agent is configured, you can test it by triggering sample goals and observing its behavior in the timeline view. This timeline view provides a detailed record of the agent's reasoning steps, actions, and outcomes, allowing you to verify that it behaves as intended. If adjustments are needed, you can refine the instructions, modify permissions, or update the user profile and retest. The playground's iterative design makes it easy to experiment and improve until you achieve the desired results.
 
 ## Set up AI Playground Agent
 
@@ -88,17 +83,13 @@ Under **Agent Permission Sets**, you add the permissions that the agent should h
 
 Under **User Access**, you can define who in your organization can interact with the agent. This helps control the usage of the agent. The default user is the one who created the agent, but you can add more users if needed.
 
-
 Agent tasks are specific actions that the agent can perform based on the instructions you provided. You can define multiple tasks for the agent to handle different scenarios. Tasks can only be added when the agent is in the **Active** state. If you need to modify the tasks later, you must first deactivate the agent.
-
-
 
 ## Turn on AI Playground Agent
 
 The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
 When the AI Playground Agent is enabled, you'll see the <!-- insert icon --> icon in the top navigation menu of the role center.
-
 
 ## Agent Task Log
 
@@ -112,76 +103,6 @@ Once you have created and configured your AI Playground agent, you need to activ
 
 1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> AI Playground Agent > Activate.
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
-
-
-<!--
-
-Content gaps to address before publication:
-Clarify audience: developers/partners (not end users); add sentence early.
-
-Add “When to use / when not to use” decision list.
-
-Replace placeholder <insert icon>/<icon> with correct UI token or remove until icon name confirmed.
-
-Expand “Set up” section with structured steps:
-Open Agents (Preview) page
-Choose Playground > Create
-Fill fields (clarify each: Name vs User Display Name vs Initials vs Type)
-Add Instructions (purpose; include example)
-(Optional) Add Permission Sets (must deactivate to modify)
-Define Tasks (describe what a task is; example)
-Activate (state transition)
-Add table: Field | Description | Editable after activation? (Yes/No)
-Add section “Tasks” (concept + execution model + limits if any).
-Add section “Permissions model” (least privilege, risks of over-broad sets).
-Add section “Lifecycle”: Create → Iterate (Deactivate/Edit) → Export knowledge to AL → Delete.
-Add “Limitations (preview)” (sandbox only, no production data, not for compliance evaluation).
-Add “Telemetry” (recommend capturing prompts & responses manually during prototype).
-Add “Next steps” linking to build-capability / function calling / testing pages.
-
-
-Front matter: consider ms.topic: how-to if you shift to procedural, or keep concept + spin off creation page for how-to.
-
-
--->
-
-
-<!--
-Steps
-(?) Search for Agents (Preview) and choose the link
-(?) On the Agents (Preview) card, 
-Choose Playground, and then choose Create
-Enter Name, User Display Name, Initials, and choose the Type of agent - set to Playground Agent
-
-PA Agent must be active to add new tasks.
-PA Agent must be inactive to add permissions to it.
-
-(?) Choose OK to create the agent.
-
-Agent Card
-Prefilled information from earlier step
-State - Disabled by default
-Playground - Instructions this is where you write the prompt that you want the agent to act on. Good, working example!
-What to be aware of
-
-Agent Permission Sets
-Add the necessary permissions for the Agent to perform the task described in the instructions. 
-
-Set up Agent tasks - what are these, how are they best defined - trigger the flow? How many can you add? Good example needed. I can enter more, how are these processed?
-
-
--->
-<!--
-Configure instructions, tasks, and permissions (ai-playground-agent-configure.md)
-    Instructions (guidelines + good/bad example)
-    Tasks (definition, when they run, adding/modifying)
-    Permissions & least privilege (including profiles & page customization flags)
-    User access (who can interact)
-    Monitoring (Agent Task Log basics)
-    Graduating to AL extension (short hand-off checklist)
--->
-
-### Defining tasks 
 
 ## Related information
 
