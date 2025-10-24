@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)] using the AI Playground agent.
+> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground agent.
 
 <!--
 Create and manage a Playground agent (ai-playground-agent-create.md)
@@ -29,16 +29,16 @@ Create and manage a Playground agent (ai-playground-agent-create.md)
 
 [This article is prerelease documentation and is subject to change.]
 
-> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)] using the AI Playground agent.
+> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground agent.
 
-You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
+You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
 ## Prerequisites
 
 Before you can use the AI Playground agent, ensure that you have the following prerequisites in place:
 
-- Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]
-- Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](includes/prod_short.md)]
+- Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]
+- Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)]
 - A sandbox environment for testing and experimentation
 
 ## Set up AI Playground Agent
@@ -95,7 +95,7 @@ Agent tasks are specific actions that the agent can perform based on the instruc
 
 ## Turn on AI Playground Agent
 
-The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
+The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
 When the AI Playground Agent is enabled, you'll see the <!-- insert icon --> icon in the top navigation menu of the role center.
 
