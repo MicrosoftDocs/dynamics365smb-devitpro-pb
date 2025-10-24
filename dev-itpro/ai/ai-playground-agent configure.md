@@ -38,4 +38,6 @@ With the AI Playground agent, you must give it instructions in natural language 
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)
+[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
+[AI Playground Agent overview (preview)](ai-playground-agent.md)  
+[Create and manage a Playground agent (preview)](ai-playground-agent-create.md)  

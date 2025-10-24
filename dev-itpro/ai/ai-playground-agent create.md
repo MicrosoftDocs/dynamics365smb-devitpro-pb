@@ -185,4 +185,6 @@ Configure instructions, tasks, and permissions (ai-playground-agent-configure.md
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)
+[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
+[AI Playground Agent overview (preview)](ai-playground-agent.md)  
+[Configure instructions, tasks, and permissions for AI Playground (preview)](ai-playground-agent-configure.md)  
