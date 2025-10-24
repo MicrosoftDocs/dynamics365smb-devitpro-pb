@@ -15,7 +15,7 @@ Copilot Studio is a graphical, low-code tool for building agents and agent flows
 
 ## Introduction
 
-Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules. <!--By exposing model context and server capabilities, the tools enable agents to automate processes, perform secure data operations, and integrate with existing Business Central workflows.-->
+Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules.
 
 [![Shows how agents work between Business Central and Coplito Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
@@ -26,16 +26,6 @@ Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilo
 ## Prerequisites
 
 You have a Copilot Studio user license with available Copilot Credits capacity for use. Learn more in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing).
-
-<!--
-## Create agent
-
-1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
-1. In the left-side navigation pane, select **Agents** > **New agent**.
-1. On the **Start building your agent** page, use  **Describe** and **Configure** tabs to name and describe the agent. This step is optional, because you can switch to this Configure view at any time later.
-1. Select **Create**.
-
-After the agent is created, refere to the next sections to add the Dynamics 365 Business Central MCP server or Dynamics 365 Business Central Connectore as tools of the agent.-->
 
 ## Create agents that use Business Central MCP
 
@@ -57,28 +47,30 @@ You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilo
    1. Select the connector action `Find records (V3)`. The **Add tool** page opens.
    1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
    1. Select **Add and configure** to retrun to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
-   1. In **Inputs** section, configure the MCP server to connect Business Central.
+   1. In **Inputs** section of the **Tools** tab, configure the MCP server to connect Business Central by setiing the folloing fields.
 
-      - 
+      |Field|Value|
+      |-|-|
+      |Environment|The Business Central environment the agent connects to. Select the down arrow and select the environment for the  that environments appear.|
+      |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the that environments appear.|
+      |MCP Server Configuration|The MCP configuration defined in Business Central the agent uses. Select the down arrow and select one of the avilable configurations. Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md)|
 
+   1. The **Tools** section on the page displays the individaul tools available to the agent. Use this section to specific which tools the agent is allowed to use.
 
-<!--
-## Add Business Central connector actions as a tools to an agent
+      For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, trun on the **Allow All** to allow all listed tools.
 
-You can use the Business Central connector actions, like Create Record or List Companies, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the Create Record, Create Record , Create Record actions as tools to the agent.
+      > [!NOTE]
+      > If there are no tools listed, then the selected MCP configuration is configured to automatically detect and allow tools, so you don't need can't manually allow them. Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
 
-1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
-1. In the left-side navigation pane, select **Agents**.
-1. Select the agent you want to modify or select **New agent** to create a new agent.
+1. Select **Save**.
+1. Test the agent.
+   1. Select **Test** in the upper-right corner of any page to open the **Test your agent** pane.
+   1. In the field at the bottom, enter text that explains what you want the agent to do.
 
-   Learn more about creating agents in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
-1. On the agent page, in the **Tools** tab, select **+ Add a tool**.
-1. Under the **Search for tool** box, select **Connector**, then type and enter "Dynamics 365 Business Central" in the search box to display the available connector actions.
-1. Select the connector action you want to add to the agent. For example, The **Add tool** pane opens.
-1. If the **Connection** box displays the `Not connected`, select the box and then choose **Create new connection**.
-1. Sign in to Business Central with a valid account.
-1. Select **Add and configure**. You're taken back to the **Tools** tab, where you can configure the action.
-1. Make the needed changes, then select **Save** when done.-->
+   Learn more in [Test you agent](/microsoft-copilot-studio/authoring-test-bot).
+1. Publish and deploy the agent.
+
+   Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
 
 ## Create agents that use Business Central connector
 
@@ -125,26 +117,6 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
    1. Repeat for the `Create record (V3)` tool.
 
    Learn more in [Make changes to your tools configuration](/microsoft-copilot-studio/advanced-plugin-actions#view-and-make-changes-to-your-tool-configuration).
-
-    <!--
-        - List customer
-          - In the action configuration, leave defaults or set a sensible page size.
-          - Optionally expose filters (for example, company id) so the agent can scope results.
-        - Create record (V3) (Customers)
-          - Select the table/entity you want to create (for example, Customers).
-          - Mark required fields (for example, Display name, Number, Email) as inputs the agent must supply.
-          - Provide friendly input names so prompts and samples are clear (e.g., Customer name, Customer number).-->
-
-<!--
-1. Teach the agent how to use the tools (examples)
-
-   In the agent’s authoring or examples area add two short examples:
-
-   - Example 1 (List customers): "Show me the available customers."
-
-     Expected tool use: call Find records; present a short, formatted list (ID — name — email).
-   - Example 2 (Create customer): "Create a new customer named Contoso Tests with number CNT-001 and email test@contoso.com."
-     Expected tool use: call Create record with mapped fields; on success return confirmation and created customer id.-->
 
 1. Test the agent.
 
