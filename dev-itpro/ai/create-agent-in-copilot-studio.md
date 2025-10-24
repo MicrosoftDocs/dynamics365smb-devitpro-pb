@@ -23,7 +23,7 @@ After you create an agent, you can publish agents into multiple platforms or cha
 
 Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
 
-<!### What are agents and when to use them
+<!-- ### What are agents and when to use them
 
 AI agents to connect to your environments and perform a range of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
 
@@ -34,7 +34,7 @@ Use an agent when users need to:
 - Ask natural-language questions instead of navigating pages.
 - Access Business Central data securely from external channels.
 
-<!--
+
 Agents don't:
 
 - Add new AL code or business logic.
