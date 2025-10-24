@@ -22,7 +22,7 @@ To get an agent up and running effectively, you need to configure its instructio
 
 ### Writing effective instructions
 
-Think of instructions as something you would give to a human assistant. You'd want to give some context, explain the task clearly, and set expectations for the output. Writing instructions for an AI model is similar. Here are some general tips for writing effective instructions:
+Think of instructions as something you would give to a human assistant. You'd want to give some context, explain the task clearly, and set expectations for the output. Writing instructions for an AI model is similar. <!-- insert the 4 main points --> Here are some general tips for writing effective instructions:
 
 - Be clear and specific: avoid vague instructions.
 - Include context: describe the situation or data the model should consider.

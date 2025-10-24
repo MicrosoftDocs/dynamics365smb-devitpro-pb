@@ -14,7 +14,7 @@ ms.update-cycle: 180-days
 
 # AI Playground Agent overview (preview)
 
-<!-- split into more articles, using this as a starting point. Live in devitpro, linking from app repo 
+<!-- split into more articles, use this as a starting point. Live in devitpro, linking from app repo 
 
 Overview (existing ai-playground-agent.md)
     Purpose & audience
@@ -43,9 +43,74 @@ Best practices for prototyping with AI Playground (ai-playground-agent-best-prac
 
 [This article is prerelease documentation and is subject to change.]
 
-> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground agent.
+The AI Playground agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
 
-The AI Playground agent is a tool that allows you to create prototypes to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and is designed for testing and learning purposes. It provides an environment where you can test and explore AI capabilities without affecting your production data. You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
+## Purpose and audience
+
+The AI Playground agent is designed for:
+
+- **Developers and partners** who want to prototype AI-powered features before building them in AL extensions
+- **Solution architects** evaluating AI integration possibilities for their Business Central solutions  
+- **IT professionals** exploring automation scenarios with AI assistance
+- **Product teams** validating AI use cases and gathering requirements
+
+The tool helps you understand how AI can interact with Business Central's user interface and data, allowing you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows.
+
+## When to use and when not to use
+
+### When to use AI Playground Agent
+
+Use the AI Playground agent when you want to:
+
+- **Prototype AI features** before investing in AL development
+- **Test AI interactions** with Business Central's UI and data  
+- **Validate use cases** and gather requirements for AI-powered solutions
+- **Experiment with prompts** and AI behavior in a controlled environment
+- **Demonstrate AI capabilities** to stakeholders or customers
+- **Learn AI integration patterns** for Business Central
+
+### When not to use AI Playground Agent
+
+Don't use the AI Playground agent when:
+
+- **Production environments** are involved (sandbox only)
+- **Compliance or security evaluation** is the primary goal
+- **Performance testing** with real-world data volumes is needed
+- **Final implementation** is ready (graduate to AL extension instead)
+- **End-user training** is the main objective (use production-ready Copilot features)
+
+## Agent lifecycle summary
+
+The typical AI Playground agent follows this lifecycle:
+
+1. **Create** → Set up the agent with basic identity and profile
+2. **Configure** → Define instructions, permissions, and tasks  
+3. **Activate** → Enable the agent for testing
+4. **Iterate** → Test, refine instructions, and adjust permissions
+5. **Graduate** → Export learnings to build a production AL extension
+6. **Clean up** → Deactivate and remove the prototype agent
+
+Each phase has specific requirements and limitations that guide your development process.
+
+## High-level concepts
+
+Understanding these key concepts helps you work effectively with AI Playground agents:
+
+### Instructions
+
+Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the Business Central interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role.
+
+### Tasks
+
+Tasks are specific actions that the agent can perform based on your instructions. They represent concrete scenarios or workflows that the agent should handle. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests.
+
+### Permissions
+
+The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege—grant only the permissions necessary for the agent's intended functionality. Permission sets can only be modified when the agent is deactivated.
+
+### Profile
+
+The agent is assigned a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
 
 ## Prerequisites
 
@@ -55,66 +120,34 @@ Before you can use the AI Playground agent, ensure that you have the following p
 - Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)]
 - A sandbox environment for testing and experimentation
 
+## Limitations (preview)
 
-## Set up AI Playground Agent
+As a preview feature, the AI Playground agent has several important limitations:
 
-The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents that have been created in your environment.
+### Environment restrictions
 
-To create a new AI Playground agent, follow these steps:
+- **Sandbox only**: Available exclusively in sandbox environments—never in production
+- **No production data**: Don't use for testing with real customer or business data
+- **Preview functionality**: Features and behavior may change without notice
 
-### Create an AI Playground agent
+### Operational constraints
 
-1. In the **Agents (preview)** page, choose **Playground**, and then **Create**. 
-This opens a **Create Agent**, where you can define the agent's **Name**, **User Display Name**, **Initials**, and **Type**.
-1. In **Name**, enter a unique name for the agent. This name is used to identify the agent in the system.
-1. The **User Display Name** is the name that is shown to users when they interact with
-1. The **Initials** is used in the UI to represent the agent, such as in chat interfaces.
-1. The **Type** should be set to **Playground Agent** for AI Playground agents.
-1. Choose **OK**, and the **Agent Card** opens.
+- **State dependencies**: Permission changes require deactivation; task changes require activation
+- **Permission inheritance**: Agents can't have more permissions than their creating user
+- **UI interaction limits**: Agents see only what their assigned profile allows
+- **No page search**: Agents can't use the search functionality in the interface
 
-**Agent User Settings** page available from the **Agent Card** and it shows the settings for the agent user, such as language and time zone. These settings can be adjusted to match the preferences of the users who interact with the agent.
+### Development considerations
 
-#### The agent and the UI
+- **Prototype only**: Not suitable for production implementations or compliance evaluation
+- **Manual telemetry**: No automatic logging—capture prompts and responses manually during testing
+- **Temporary nature**: Designed for experimentation, not long-term solutions
 
-The AI Playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
+## Getting started
 
-On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
+Ready to try the AI Playground agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case.
 
-| Property | Data type | Description |
-|----------|-----------|-------------|
-| `ClearActions` | Boolean | If set to true, all actions on the page are removed for the agent.|
-| `ClearLayout`  | Boolean | If set to true, the layout of the page is simplified for the agent. |
-| `ClearViews`   | Boolean | If set to true, all views on the page are removed for the agent. |
-| `DeleteAllowed`| Boolean | If set to false, the delete action isn't allowed for the agent. |
-| `InsertAllowed`| Boolean | If set to false, the insert action isn't allowed for the agent. |
-
-Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
-
-> [!NOTE]
-> The profile of the agent is set as default to the Playground agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
-
-
-<!-- move next section to configure article? -->
-
-The **Agent Card** is where you define the agent's purpose and the tasks it performs.
-
-
-An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
-
-In the **Instructions** field, provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. For example, you might instruct the agent to "Help users find customer information quickly."
-
-Under **Agent Permission Sets**, you add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Permission sets can only be added when the agent is in the **Disabled** state. If you need to modify the permissions later, you must first deactivate the agent. The agent can't have more permissions than the user creating it.
-
-Under **User Access**, you can define who in your organization can interact with the agent. This helps control the usage of the agent. The default user is the one who created the agent, but you can add more users if needed.
-
-
-Agent tasks are specific actions that the agent can perform based on the instructions you provided. You can define multiple tasks for the agent to handle different scenarios. Tasks can only be added when the agent is in the **Active** state. If you need to modify the tasks later, you must first deactivate the agent.
-
-
-
-## Turn on AI Playground Agent
-
-The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
+To use the AI Playground Agent, you must first enable Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
 When the AI Playground Agent is enabled, you'll see the <!-- insert icon --> icon in the top navigation menu of the role center.
 
@@ -210,28 +243,9 @@ Configure instructions, tasks, and permissions (ai-playground-agent-configure.md
     Graduating to AL extension (short hand-off checklist)
 -->
 
-## Configure instructions, tasks, and permissions
-
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. 
-
-### Writing effective instructions
-
-Think of instructions as something you would give to a human assistant. You'd want to give some context, explain the task clearly, and set expectations for the output. Writing instructions for an AI model is similar. Here are some general tips for writing effective instructions:
-
-- Be clear and specific: avoid vague instructions.
-- Include context: describe the situation or data the model should consider.
-- Set expectations: Tell the model what kind of output you want. For example, a summary, list, or an explanation.
-- Use examples: Show the model what a good response looks like.
-- Iterate and refine: Test and improve your prompt based on results.
-
-With the AI Playground agent, you must give it instructions in natural language that clearly describe its purpose. These instructions guide the agent on using the UI and data it has access to. The more precise and detailed your instructions are, the better the agent can perform its tasks. Before you write the instructions, review the UI that the agent will have access to based on its profile. This helps you understand what the agent can see and do, allowing you to tailor your instructions accordingly. Test these instructions thoroughly to ensure they lead to the desired behavior.
-
-<!-- Add example of good instructions, like shown in the partner video. Link to best practices for prompting -->
-
-### Defining tasks 
-
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
 [Create and manage a Playground agent (preview)](ai-playground-agent-create.md)  
 [Configure instructions, tasks, and permissions for AI Playground (preview)](ai-playground-agent-configure.md)  
+[Best practices for prototyping with AI Playground (preview)](ai-playground-agent-best-practices.md)
