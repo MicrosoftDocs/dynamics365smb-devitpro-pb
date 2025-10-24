@@ -245,9 +245,9 @@ Business Central doesn’t just bring AI into the application—it can also reac
 
 # Configure Business Central MCP Server
 
-Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to to connect to your envronments and perform arange of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
+Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to to connect to your environments and perform a range of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
 
-The article explains how to enable and configure the Business Central MCP Server in your Business Central environment to allow agents can connect to the enviroments's APIs.
+The article explains how to enable and configure the Business Central MCP Server in your Business Central environment to allow agents can connect to the environment's APIs.
 
 ## Configuration overview
 
