@@ -13,7 +13,6 @@ ms.custom: bap-template
 
 Copilot Studio is a graphical, low-code tool for building agents and agent flows. You can use it to create conversational agents that understand and act on your business processes and data model in Business Central. Agents present Business Central data (customers, orders, invoices, and inventory) and business logic to users via natural language. Agents can automate tasks such as creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
 
-
 ## Introduction
 
 Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules. <!--By exposing model context and server capabilities, the tools enable agents to automate processes, perform secure data operations, and integrate with existing Business Central workflows.-->
@@ -40,25 +39,28 @@ After the agent is created, refere to the next sections to add the Dynamics 365 
 
 ## Create agents that use Business Central MCP
 
-To be determined.
-
-<!--After an agent is created, you can add the Business Central MCP server to an agent as a tool access server tools and resources.  MCP server is connected to Copilot Studio, you can add the server to an agent as a tool, and access server tools and resources.
+After an agent is created, you can add the Business Central MCP server to an agent as a tool access server tools and resources.  MCP server is connected to Copilot Studio, you can add the server to an agent as a tool, and access server tools and resources.
 You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilot Studio. The server provides tools for actions in Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-To add the tools to your agent, follow these steps.
+1. Create new or open existing agent.
 
-Connect to Dataverse using an MCP server in Microsoft Copilot Studio
-Go to Power App and select your environment from the top right environment selector.
-From the left navigation pane, select Agents > Create new agent. If the item isn’t in the side panel pane, select …More and then select the item you want.
-Select Create.
-Scroll down to the Tools section and select + Add tool.
-Select Model Context Protocol, and then select Dataverse MCP Server.
-If there's no existing Dataverse connection, you're prompted to do so.
-Select Add to agent.
+   1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
+   1. In the left-side navigation pane, select **Agents**.
+   1. Select the agent you want to modify or select **New agent** to create a new agent.
 
-Select Model Context Protocol, and then select Dataverse MCP Server.
-If there's no existing Dataverse connection, you're prompted to do so.
-Select Add to agent.-->
+   Learn more about creating agents in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
+
+1. Connect the agent to the Business Central MCP server.
+
+   1. On the **Tools** tab of the agent page, select **+ Add a tool**.
+   1. Search for and select **Dynamics 365 Business Central MCP Server (Preview)**.
+   1. Select the connector action `Find records (V3)`. The **Add tool** page opens.
+   1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
+   1. Select **Add and configure** to retrun to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
+   1. In **Inputs** section, configure the MCP server to connect Business Central.
+
+      - 
+
 
 <!--
 ## Add Business Central connector actions as a tools to an agent
