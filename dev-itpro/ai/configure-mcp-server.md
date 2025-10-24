@@ -259,7 +259,7 @@ Once the MCP server is enabled and configured, its configurations become availab
 
 - The **Feature: Enable MCP Server access** feature is enabled on the environment in the [Feature Management](https://businesscentral.dynamics.com/?page=2610) page. Learn more in [Enabling Upcoming Features Ahead of Time](/dynamics365/business-central/dev-itpro/administration/feature-management).
 
-## Create a MCP Server configuration
+## Create MCP Server configurations
 
 1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
 1. Select **New**.
