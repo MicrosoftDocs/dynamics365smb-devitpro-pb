@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 Copilot Studio is a graphical, low-code tool for building agents and agent flows. You can use it to create conversational agents that understand and act on your business processes and data model in Business Central. Agents present Business Central data (customers, orders, invoices, and inventory) and business logic to users via natural language. Agents can automate tasks such as creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
 
-## Introduction
+## Overview
 
 Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules.
 
@@ -22,6 +22,40 @@ Business Central provides two model‑aware tools that agents can use to interac
 After you create an agent, you can publish agents into multiple platforms or channels, like live websites and Microsoft 365 Copilot, or messaging platforms like Teams and Facebook.
 
 Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
+
+### What are agents and when to use them
+
+AI agents to connect to your environments and perform a range of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
+
+Use an agent when users need to:
+
+- Look up records, like customers, items, inventory, or documents.
+- Trigger operations on records (create records, post, check status).
+- Ask natural-language questions instead of navigating pages.
+- Access Business Central data securely from external channels.
+
+<!--
+Agents don't:
+
+- Add new AL code or business logic.
+- Replace extension development.
+- Override permissions or policies.
+- Modify the schema or internal engine behavior.-->
+
+## Connection options
+
+You can build agents that connect to Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. In short:
+
+**Power Platform Business Central connector** exposes common Business Central operations (CRUD, standard actions) through ready made actions. It hides the HTTP/OData details, handles auth, paging, and retry behavior, and integrates with DLP and environment governance.
+
+**Business Central MCP server** uses Model Context Protocol to provides a model aware, context rich API surface. MCP aims to standardize how clients like agent interact with Business Central's data model and business logic, exposing semantic "model context" rather than just raw OData endpoints. It’s designed for richer client experiences, better intent handling, and stable contracts as the model evolves.
+
+Use the following table for comparison:
+
+| Option | Best for | Access style | Typical scenarios |
+|-|-|-|-|
+| Business Central connector | Task-focused CRUD actions | Predefined action calls | Listing, creating, updating specific records |
+| Business Central MCP server | Rich, model-aware, multi-turn interactions | Model context + server tools | Exploratory queries, refinements, chained operations |
 
 ## Prerequisites
 
