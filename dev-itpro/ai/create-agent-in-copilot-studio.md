@@ -29,13 +29,13 @@ You can build agents that connect to Business Central Connector for Power Platfo
 
 **Power Platform Business Central connector** exposes common Business Central operations (CRUD, standard actions) through ready made actions. It hides the HTTP/OData details, handles auth, paging, and retry behavior, and integrates with DLP and environment governance.
 
-**Business Central MCP server** uses Model Context Protocol to provides a model aware, context rich API surface. MCP aims to standardize how clients like agent interact with Business Central's data model and business logic, exposing semantic "model context" rather than just raw OData endpoints. It’s designed for richer client experiences, better intent handling, and stable contracts as the model evolves.
+**Business Central MCP server** uses the Model Context Protocol to provide a model-aware, context-rich API interface. MCP aims to standardize how clients such as agents interact with Business Central's data model and business logic, exposing a semantic "model context" rather than just raw OData endpoints. It's designed for richer client experiences, better intent handling, and more stable interfaces.
 
 Use the following table for comparison:
 
 | Option | Best for | Typical scenarios |
 |-|-|-|-|
-| Business Central connector | Task-focused CRUD actions | Listing, creating, updating specific records |
+| Business Central connector | Specific task-focused CRUD operations | Listing, creating, updating specific records |
 | Business Central MCP server | Rich, model-aware, multi-turn interactions |Exploratory queries, refinements, chained operations |
 
 ## Prerequisites
