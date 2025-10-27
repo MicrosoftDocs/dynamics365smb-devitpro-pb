@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <style>
+      .title-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1f1f1f; }
+      .section-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; }
+      .step-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; fill: #1f1f1f; }
+      .small-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9px; fill: #666666; }
+      .arrow { stroke: #666666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .flow-arrow { stroke: #0078d4; stroke-width: 3; fill: none; marker-end: url(#bluearrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
+    </marker>
+    <marker id="bluearrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0078d4" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="25" text-anchor="middle" class="title-text">AI Playground Agent Workflow in Business Central</text>
+  
+  <!-- Prerequisites Section -->
+  <rect x="20" y="50" width="200" height="120" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <rect x="20" y="50" width="200" height="30" fill="#1976d2"/>
+  <text x="120" y="70" text-anchor="middle" class="section-text">Prerequisites</text>
+  <text x="30" y="95" class="step-text">• Enable Copilot capabilities</text>
+  <text x="30" y="110" class="step-text">• Sandbox environment</text>
+  <text x="30" y="125" class="step-text">• Appropriate permissions</text>
+  <text x="30" y="140" class="step-text">• Navigate to Agents (preview)</text>
+  <text x="30" y="155" class="small-text">Foundational setup required</text>
+  
+  <!-- Agent Creation Section -->
+  <rect x="260" y="50" width="200" height="120" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <rect x="260" y="50" width="200" height="30" fill="#7b1fa2"/>
+  <text x="360" y="70" text-anchor="middle" class="section-text">Agent Creation</text>
+  <text x="270" y="95" class="step-text">• Choose Playground > Create</text>
+  <text x="270" y="110" class="step-text">• Define Name & Display Name</text>
+  <text x="270" y="125" class="step-text">• Set Initials & Type</text>
+  <text x="270" y="140" class="step-text">• Agent Card opens</text>
+  <text x="270" y="155" class="small-text">Agent created in Disabled state</text>
+  
+  <!-- Configuration Section -->
+  <rect x="500" y="50" width="200" height="120" rx="8" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <rect x="500" y="50" width="200" height="30" fill="#388e3c"/>
+  <text x="600" y="70" text-anchor="middle" class="section-text">Configuration</text>
+  <text x="510" y="95" class="step-text">• Write Instructions (prompts)</text>
+  <text x="510" y="110" class="step-text">• Assign Profile/Role</text>
+  <text x="510" y="125" class="step-text">• Add Permission Sets</text>
+  <text x="510" y="140" class="step-text">• Define User Access</text>
+  <text x="510" y="155" class="small-text">Configure while Disabled</text>
+  
+  <!-- Activation Section -->
+  <rect x="740" y="50" width="200" height="120" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <rect x="740" y="50" width="200" height="30" fill="#f57c00"/>
+  <text x="840" y="70" text-anchor="middle" class="section-text">Activation</text>
+  <text x="750" y="95" class="step-text">• Review configuration</text>
+  <text x="750" y="110" class="step-text">• Activate agent</text>
+  <text x="750" y="125" class="step-text">• Add Tasks (Active required)</text>
+  <text x="750" y="140" class="step-text">• Ready for testing</text>
+  <text x="750" y="155" class="small-text">State changes to Active</text>
+  
+  <!-- Testing & Execution Section -->
+  <rect x="980" y="50" width="200" height="120" rx="8" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+  <rect x="980" y="50" width="200" height="30" fill="#c2185b"/>
+  <text x="1080" y="70" text-anchor="middle" class="section-text">Testing & Execution</text>
+  <text x="990" y="95" class="step-text">• Create manual tasks</text>
+  <text x="990" y="110" class="step-text">• Observe timeline view</text>
+  <text x="990" y="125" class="step-text">• Review Agent Task Log</text>
+  <text x="990" y="140" class="step-text">• Analyze performance</text>
+  <text x="990" y="155" class="small-text">Iterative testing process</text>
+  
+  <!-- Flow arrows between main sections -->
+  <path d="M 220 110 L 250 110" class="flow-arrow"/>
+  <path d="M 460 110 L 490 110" class="flow-arrow"/>
+  <path d="M 700 110 L 730 110" class="flow-arrow"/>
+  <path d="M 940 110 L 970 110" class="flow-arrow"/>
+  
+  <!-- Agent Components Detail -->
+  <rect x="50" y="220" width="280" height="180" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="50" y="220" width="280" height="25" fill="#666666"/>
+  <text x="190" y="237" text-anchor="middle" class="section-text">Agent Identity Components</text>
+  
+  <circle cx="80" cy="270" r="25" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="80" y="275" text-anchor="middle" class="step-text">Name</text>
+  <text x="120" y="270" class="step-text">Unique identifier in system</text>
+  
+  <circle cx="80" cy="310" r="25" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="80" y="315" text-anchor="middle" class="step-text">Profile</text>
+  <text x="120" y="310" class="step-text">Determines UI access & visibility</text>
+  
+  <circle cx="80" cy="350" r="25" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="80" y="355" text-anchor="middle" class="step-text">Perms</text>
+  <text x="120" y="350" class="step-text">Controls data & action access</text>
+  
+  <!-- Instructions Detail -->
+  <rect x="370" y="220" width="280" height="180" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="370" y="220" width="280" height="25" fill="#666666"/>
+  <text x="510" y="237" text-anchor="middle" class="section-text">Instructions & Behavior</text>
+  
+  <rect x="385" y="260" width="250" height="15" fill="#e1f5fe" stroke="#0288d1" stroke-width="1"/>
+  <text x="390" y="270" class="step-text">Natural Language Goals</text>
+  
+  <rect x="385" y="280" width="250" height="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="1"/>
+  <text x="390" y="290" class="step-text">Structured Formatting (bold, numbers)</text>
+  
+  <rect x="385" y="300" width="250" height="15" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
+  <text x="390" y="310" class="step-text">Specific Keywords for Agent Runtime</text>
+  
+  <rect x="385" y="320" width="250" height="15" fill="#fce4ec" stroke="#c2185b" stroke-width="1"/>
+  <text x="390" y="330" class="step-text">Business Context & Constraints</text>
+  
+  <text x="390" y="350" class="small-text">Instructions guide how agent interprets requests</text>
+  <text x="390" y="365" class="small-text">and interacts with Business Central interface</text>
+  
+  <!-- Profile & Permissions Detail -->
+  <rect x="690" y="220" width="280" height="180" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="690" y="220" width="280" height="25" fill="#666666"/>
+  <text x="830" y="237" text-anchor="middle" class="section-text">Profile & Permission Control</text>
+  
+  <text x="700" y="260" class="step-text">Page Customization Properties:</text>
+  <text x="710" y="275" class="small-text">• ClearActions - Remove page actions</text>
+  <text x="710" y="290" class="small-text">• ClearLayout - Simplify page layout</text>
+  <text x="710" y="305" class="small-text">• ClearViews - Remove page views</text>
+  <text x="710" y="320" class="small-text">• DeleteAllowed - Control delete access</text>
+  <text x="710" y="335" class="small-text">• InsertAllowed - Control insert access</text>
+  
+  <text x="700" y="360" class="step-text">Least Privilege Principle</text>
+  <text x="710" y="375" class="small-text">Agent can't have more permissions than creator</text>
+  
+  <!-- State Management -->
+  <rect x="50" y="450" width="500" height="120" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="50" y="450" width="500" height="25" fill="#666666"/>
+  <text x="300" y="467" text-anchor="middle" class="section-text">Agent State Management</text>
+  
+  <rect x="80" y="490" width="120" height="60" rx="5" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="140" y="510" text-anchor="middle" class="step-text">DISABLED</text>
+  <text x="90" y="525" class="small-text">• Modify permissions</text>
+  <text x="90" y="535" class="small-text">• Modify instructions</text>
+  <text x="90" y="545" class="small-text">• Cannot add tasks</text>
+  
+  <rect x="350" y="490" width="120" height="60" rx="5" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="410" y="510" text-anchor="middle" class="step-text">ACTIVE</text>
+  <text x="360" y="525" class="small-text">• Add/modify tasks</text>
+  <text x="360" y="535" class="small-text">• Execute tasks</text>
+  <text x="360" y="545" class="small-text">• Cannot modify perms</text>
+  
+  <path d="M 200 520 L 340 520" class="arrow"/>
+  <text x="270" y="515" text-anchor="middle" class="small-text">Activate</text>
+  
+  <path d="M 350 530 L 210 530" class="arrow"/>
+  <text x="280" y="545" text-anchor="middle" class="small-text">Deactivate</text>
+  
+  <!-- Task Execution Flow -->
+  <rect x="590" y="450" width="580" height="120" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="590" y="450" width="580" height="25" fill="#666666"/>
+  <text x="880" y="467" text-anchor="middle" class="section-text">Task Execution Process</text>
+  
+  <circle cx="630" cy="510" r="20" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="630" y="515" text-anchor="middle" class="small-text">Task</text>
+  
+  <circle cx="720" cy="510" r="20" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="720" y="515" text-anchor="middle" class="small-text">LLM</text>
+  
+  <circle cx="810" cy="510" r="20" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="810" y="515" text-anchor="middle" class="small-text">UI</text>
+  
+  <circle cx="900" cy="510" r="20" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="900" y="515" text-anchor="middle" class="small-text">Data</text>
+  
+  <circle cx="990" cy="510" r="20" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+  <text x="990" y="515" text-anchor="middle" class="small-text">Log</text>
+  
+  <path d="M 650 510 L 700 510" class="arrow"/>
+  <path d="M 740 510 L 790 510" class="arrow"/>
+  <path d="M 830 510 L 880 510" class="arrow"/>
+  <path d="M 920 510 L 970 510" class="arrow"/>
+  
+  <text x="630" y="540" text-anchor="middle" class="small-text">Manual</text>
+  <text x="720" y="540" text-anchor="middle" class="small-text">Process</text>
+  <text x="810" y="540" text-anchor="middle" class="small-text">Navigate</text>
+  <text x="900" y="540" text-anchor="middle" class="small-text">Access</text>
+  <text x="990" y="540" text-anchor="middle" class="small-text">Timeline</text>
+  
+  <!-- Iteration & Graduation -->
+  <rect x="50" y="620" width="380" height="120" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="50" y="620" width="380" height="25" fill="#666666"/>
+  <text x="240" y="637" text-anchor="middle" class="section-text">Iteration & Refinement</text>
+  
+  <text x="70" y="665" class="step-text">1. Test agent behavior with various inputs</text>
+  <text x="70" y="680" class="step-text">2. Review Agent Task Log for performance</text>
+  <text x="70" y="695" class="step-text">3. Refine instructions based on results</text>
+  <text x="70" y="710" class="step-text">4. Adjust permissions if needed (deactivate first)</text>
+  <text x="70" y="725" class="step-text">5. Repeat until desired behavior achieved</text>
+  
+  <rect x="470" y="620" width="380" height="120" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="470" y="620" width="380" height="25" fill="#666666"/>
+  <text x="660" y="637" text-anchor="middle" class="section-text">Graduation to Production</text>
+  
+  <text x="490" y="665" class="step-text">1. Document working instructions & configurations</text>
+  <text x="490" y="680" class="step-text">2. Capture lessons learned & design decisions</text>
+  <text x="490" y="695" class="step-text">3. Implement in AL extensions or Agent SDK</text>
+  <text x="490" y="710" class="step-text">4. Clean up playground agent</text>
+  <text x="490" y="725" class="step-text">5. Deploy production-ready solution</text>
+  
+  <!-- Graduation arrow -->
+  <path d="M 430 680 L 460 680" class="flow-arrow"/>
+  
+  <!-- Limitations box -->
+  <rect x="890" y="620" width="280" height="120" rx="8" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <rect x="890" y="620" width="280" height="25" fill="#d32f2f"/>
+  <text x="1030" y="637" text-anchor="middle" class="section-text">Key Limitations</text>
+  
+  <text x="900" y="665" class="small-text">• Sandbox environments only (never production)</text>
+  <text x="900" y="680" class="small-text">• No built-in triggers (manual task creation)</text>
+  <text x="900" y="695" class="small-text">• No page search functionality</text>
+  <text x="900" y="710" class="small-text">• State-dependent configuration changes</text>
+  <text x="900" y="725" class="small-text">• Preview functionality may change</text>
+  
+  <!-- Feedback arrows -->
+  <path d="M 1080 190 Q 1080 300 880 400 Q 680 400 300 400 Q 120 400 120 210" class="arrow" stroke-dasharray="5,5"/>
+  <text x="600" y="390" text-anchor="middle" class="small-text" transform="rotate(0)">Continuous feedback and iteration based on testing results</text>
+  
+</svg>
