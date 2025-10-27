@@ -1,5 +1,5 @@
 ---
-title: Create and manage a Playground Agent (preview)
+title: Create and manage an AI Playground Agent (preview)
 description: Learn how you can use AI Playground Agent in Business Central.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 10/23/2025
 ms.update-cycle: 180-days
 ---
 
-# Create and manage a Playground Agent (preview)
+# Create and manage an AI Playground Agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -108,4 +108,4 @@ Once you have created and configured your AI Playground agent, you need to activ
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
 [AI Playground Agent overview (preview)](ai-playground-agent.md)  
-[Configure instructions, tasks, and permissions for AI Playground (preview)](ai-playground-agent-configure.md)  
+[Configure instructions, tasks, and permissions for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  

@@ -1,5 +1,5 @@
 ---
-title: Best practices for prototyping with AI Playground (preview)
+title: Best practices for prototyping with an AI Playground Agent (preview)
 description: Learn best practices for creating effective AI Playground agents in Business Central.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 10/24/2025
 ms.update-cycle: 180-days
 ---
 
-# Best practices for prototyping with AI Playground (preview)
+# Best practices for prototyping with an AI Playground Agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -217,7 +217,7 @@ Create agent-specific profiles that:
 ## Related information
 
 [AI Playground Agent overview (preview)](ai-playground-agent.md)  
-[Create and manage a Playground agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions, tasks, and permissions for AI Playground (preview)](ai-playground-agent-configure.md)  
+[Create and manage an AI Playground Agent (preview)](ai-playground-agent-create.md)  
+[Configure instructions, tasks, and permissions for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
 [Build Copilot capability in AL](../developer/ai-build-capability-in-al.md)  
 [Test Copilot capability in AL](../developer/ai-test-copilot.md)

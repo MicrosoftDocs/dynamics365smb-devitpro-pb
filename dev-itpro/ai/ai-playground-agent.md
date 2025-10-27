@@ -164,6 +164,6 @@ When the AI Playground Agent is enabled, you'll see the <!-- insert icon --> ico
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Create and manage a Playground agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions, tasks, and permissions for AI Playground (preview)](ai-playground-agent-configure.md)  
-[Best practices for prototyping with AI Playground (preview)](ai-playground-agent-best-practices.md)
+[Create and manage an AI Playground Agent (preview)](ai-playground-agent-create.md)  
+[Configure instructions, tasks, and permissions for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
+[Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)
