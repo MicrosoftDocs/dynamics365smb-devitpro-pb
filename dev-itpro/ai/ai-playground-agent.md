@@ -110,7 +110,7 @@ The agent operates with explicit permission sets that control what data and acti
 
 ### Profile
 
-The agent is assigned a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
+The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
 
 ## Prerequisites
 
@@ -126,9 +126,9 @@ As a preview feature, the AI Playground Agent has several important limitations:
 
 ### Environment restrictions
 
-- **Sandbox only**: Available exclusively in sandbox environments — never in production
+- **Sandbox only**: Available exclusively in sandbox environments—never in production
 - **Sandbox data**: Can be used with customer data in sandbox environments (including sandbox copies of production data)
-- **Preview functionality**: Features and behavior may change without notice
+- **Preview functionality**: Features and behavior might change without notice
 
 ### Operational constraints
 
@@ -159,7 +159,7 @@ Ready to try the AI Playground Agent? The process involves enabling the feature,
 
 To use the AI Playground Agent, you must first enable Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
-When the AI Playground Agent is enabled, you'll see the <!-- insert icon --> icon in the top navigation menu of the role center. Now, you can create and configure your AI Playground Agent. Learn more in [Create and manage a Playground agent (preview)](./ai-playground-agent-create.md).
+When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center. Now, you can create and configure your AI Playground Agent. Learn more in [Create and manage a Playground agent (preview)](./ai-playground-agent-create.md).
 
 ## Related information
 

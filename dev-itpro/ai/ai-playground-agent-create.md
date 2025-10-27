@@ -38,7 +38,7 @@ Once your agent is configured, you can test it by triggering sample goals and ob
 
 ## Set up AI Playground Agent
 
-The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents that have been created in your environment.
+The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents in your environment.
 
 To create a new AI Playground Agent, follow these steps:
 
@@ -73,7 +73,7 @@ Once you have built and published a profile, you can assign it to the agent in t
 The **Agent Card** is where you define the agent's purpose and the tasks it performs.
 
 > [!NOTE]
-> The profile of the agent is set as default to the Playground Agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
+> The profile of the agent is set as default to the Playground Agent (Copilot) type. This can be changed, but changing the type changes what the agent has access to.
 
 An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
 
@@ -89,7 +89,7 @@ Agent tasks are specific actions that the agent can perform based on the instruc
 
 The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
-When the AI Playground Agent is enabled, you'll see the <!-- insert icon --> icon in the top navigation menu of the role center.
+When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center.
 
 ## Agent Task Log
 
