@@ -27,16 +27,36 @@ Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilo
 
 You can build agents that connect to Business Central Connector for Power Platform and Business Central MCP (Model Context Protocol) server:
 
-**Power Platform Business Central connector** exposes common Business Central operations (CRUD, standard actions) through ready made actions. It hides the HTTP/OData details, handles auth, paging, and retry behavior, and integrates with DLP and environment governance.
+**Business Central Connector** is part of the Power Platform framework. It provides a simplified, low-code interface for accessing Business Central entities such as customers, vendors, items, and invoices. This connector is ideal for scenarios where:
 
-**Business Central MCP server** uses the Model Context Protocol to provide a model-aware, context-rich API interface. MCP aims to standardize how clients such as agents interact with Business Central's data model and business logic, exposing a semantic "model context" rather than just raw OData endpoints. It's designed for richer client experiences, better intent handling, and more stable interfaces.
+- You want to build agents quickly using Power Automate flows or Copilot Studio actions.
+- You prefer a declarative approach with minimal custom code.
+- You need to integrate with other Microsoft services like Dataverse and other Power Platform products.
 
-Use the following table for comparison:
+The connector abstracts away many of the underlying API details, making it easier to use but less flexible for advanced scenarios.
 
-| Option | Best for | Typical scenarios |
-|-|-|-|-|
-| Business Central connector | Specific task-focused CRUD operations | Listing, creating, updating specific records |
-| Business Central MCP server | Rich, model-aware, multi-turn interactions |Exploratory queries, refinements, chained operations |
+**Business Central MCP Server**  is a server implementation that uses the Model Context Protocol (MCP) to provide direct access to Business Central’s REST APIs, including custom API pages and system endpoints. This approach is suited for:
+
+- Advanced integrations requiring fine-grained control over API calls.
+- Accessing custom extensions or non-standard entities.
+- Scenarios where performance, scalability, or security policies require direct API management.
+
+Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, DELETE) against Business Central endpoints, allowing for full customization and extensibility.
+
+### Choosing the connector and MCP Server
+
+Your choice depends on the agent’s requirements, the level of customization needed, and your familiarity with Business Central APIs.
+
+|Feature|Business Central Connector|MCP Server|
+|-|-|-|
+|Setup Complexity|Low|Medium to High|
+|API Coverage|Limited to standard entities|Full (including custom APIs)|
+|Customization|Limited|Extensive|
+|Integration with Power Platform|Native|Requires custom flows|
+|Performance Tuning|Minimal control|Full control|
+|Authentication|Managed via Power Platform|Requires OAuth setup|
+
+In short, the connector offers ease of use and rapid development, while the MCP server provides flexibility and control for complex scenarios. 
 
 ## Prerequisites
 
@@ -114,8 +134,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 
 ## Create agents that use Business Central MCP
 
-After an agent is created, you can add the Business Central MCP server to an agent as a tool access server tools and resources.  MCP server is connected to Copilot Studio, you can add the server to an agent as a tool, and access server tools and resources.
-You can use the Dynamics 365 ERP MCP server to create agents in Microsoft Copilot Studio. The server provides tools for actions in Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+Follow these steps to create an agent that connects to the Business MCP server.
 
 1. Create new or open existing agent.
 
