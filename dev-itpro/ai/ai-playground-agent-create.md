@@ -40,9 +40,9 @@ Once your agent is configured, you can test it by triggering sample goals and ob
 
 The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents that have been created in your environment.
 
-To create a new AI Playground agent, follow these steps:
+To create a new AI Playground Agent, follow these steps:
 
-### Create an AI Playground agent
+### Create an AI Playground Agent
 
 1. In the **Agents (preview)** page, choose **Playground**, and then **Create**. 
 This opens a **Create Agent**, where you can define the agent's **Name**, **User Display Name**, **Initials**, and **Type**.
@@ -56,7 +56,7 @@ This opens a **Create Agent**, where you can define the agent's **Name**, **User
 
 #### The agent and the UI
 
-The AI Playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
+The AI Playground Agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
 
 On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
@@ -73,7 +73,7 @@ Once you have built and published a profile, you can assign it to the agent in t
 The **Agent Card** is where you define the agent's purpose and the tasks it performs.
 
 > [!NOTE]
-> The profile of the agent is set as default to the Playground agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
+> The profile of the agent is set as default to the Playground Agent (Copilot) type. This can be changed, but you must be aware that changing the type will change what the agent has access to.
 
 An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
 
@@ -99,7 +99,7 @@ Drill into every step by clicking the line in the log. You can see the full prom
 
 ## Activate AI Playground Agent
 
-Once you have created and configured your AI Playground agent, you need to activate it before it can start handling tasks. To activate the AI Playground agent for your company, follow these steps:
+Once you have created and configured your AI Playground Agent, you need to activate it before it can start handling tasks. To activate the AI Playground Agent for your company, follow these steps:
 
 1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> AI Playground Agent > Activate.
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
