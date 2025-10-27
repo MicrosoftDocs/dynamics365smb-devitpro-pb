@@ -1,5 +1,5 @@
 ---
-title: Configure instructions, tasks, and permissions for an AI Playground Agent (preview)
+title: Configure instructionsand tasks for an AI Playground Agent (preview)
 description: Learn how you can use AI Playground Agent in Business Central.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 09/10/2025
 ms.update-cycle: 180-days
 ---
 
-# Configure instructions, tasks, and permissions for an AI Playground Agent (preview)
+# Configure instructions and tasks for an AI Playground Agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -60,7 +60,29 @@ Test your instructions thoroughly to ensure they lead to the desired behavior, a
 
 <!-- Add example of good instructions, like shown in the partner video. Link to best practices for prompting -->
 
-### Defining tasks 
+### Defining tasks
+
+#### How to trigger your agent
+
+You invoke your agent by manually creating a task for it. When creating a task, you can specify an additional message that gets passed to the agent to complement the general instructions with specific details for that particular task.
+
+#### Current limitations in public preview
+
+The public preview of the agent builder playground doesn't include built-in integrations for automatically triggering your custom agents based on:
+
+- Incoming emails
+- System events  
+- Recurring schedules
+
+#### Workarounds for testing scenarios
+
+You can simulate these trigger scenarios manually:
+
+- **Email simulation**: Insert email headers and body content in the agent task message to test email-based workflows
+- **Event simulation**: Manually trigger agents with tasks that represent the events you want to test
+- **Recurrence simulation**: Create tasks manually at intervals to test recurring scenarios
+
+This manual approach allows you to validate your agent's behavior across different trigger scenarios during the prototyping phase.
 
 ## Related information
 
