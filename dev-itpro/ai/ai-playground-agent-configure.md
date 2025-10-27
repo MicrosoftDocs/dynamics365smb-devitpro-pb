@@ -22,15 +22,41 @@ To get an agent up and running effectively, you need to configure its instructio
 
 ### Writing effective instructions
 
-Think of instructions as something you would give to a human assistant. You'd want to give some context, explain the task clearly, and set expectations for the output. Writing instructions for an AI model is similar. Clarity, specificity, context, and structure are the four main points to consider. Here are some general tips for writing effective instructions:
+At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for AI Playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. You can even use LLM-based tools like Copilot to help optimize your instructions.
 
-- Be clear and specific: avoid vague instructions.
-- Include context: describe the situation or data the model should consider.
-- Set expectations: Tell the model what kind of output you want. For example, a summary, list, or an explanation.
-- Use examples: Show the model what a good response looks like.
-- Iterate and refine: Test and improve your prompt based on results.
+#### Key principles for agent instructions
 
-With the AI Playground Agent, you must give it instructions in natural language that clearly describe its purpose. These instructions guide the agent on using the UI and data it has access to. The more precise and detailed your instructions are, the better the agent can perform its tasks. Before you write the instructions, review the UI that the agent has access to based on its profile. This helps you understand what the agent can see and do, allowing you to tailor your instructions accordingly. Test these instructions thoroughly to ensure they lead to the desired behavior.
+**Structure and brevity**:
+
+- **Introduce structure** in your instructions using clear sections and formatting
+- **Write as few instructions as possible** while maintaining clarity—concise instructions often perform better
+- Use **emphasis** (bold text, UPPERCASE) to highlight important points
+- Apply **numbering** to create logical flow and priorities
+
+**Formatting for clarity**:
+
+- Use bullet points or numbered lists for multi-step processes
+- Bold key terms and critical requirements
+- Structure instructions with clear headings when appropriate
+- Keep sentences short and direct
+
+**Agent-specific considerations**:
+
+- Include **specific keywords or phrasing** to help the agent utilize available tools in the agent runtime effectively
+- Review the UI that the agent has access to based on its profile before writing instructions
+- Tailor instructions to match what the agent can see and do
+- Reference specific field names, page titles, and actions that align with the agent's profile
+
+#### When instructions aren't enough
+
+If you're having difficulty achieving accuracy with your agent:
+
+- **Consider changing or adding new functionality** to better support the agent's tasks
+- **Optimize the UI** that the agent interacts with
+- **Improve error messages and tooltips** to provide clearer guidance
+- **Enhance page instructions** to help the agent be more successful
+
+Test your instructions thoroughly to ensure they lead to the desired behavior, and iterate based on the agent's actual performance.
 
 <!-- Add example of good instructions, like shown in the partner video. Link to best practices for prompting -->
 
