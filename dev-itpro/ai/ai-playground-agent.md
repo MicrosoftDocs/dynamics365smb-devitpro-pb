@@ -45,6 +45,8 @@ Best practices for prototyping with AI Playground (ai-playground-agent-best-prac
 
 The AI Playground Agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
 
+:::image type="content" source="ai-playground-agent-workflow.svg" alt-text="TEST":::
+
 ## Purpose and audience
 
 The AI Playground Agent is primarily designed for:
@@ -96,13 +98,13 @@ Each phase has specific requirements and limitations that guide your development
 
 Understanding these key concepts helps you work effectively with AI Playground agents:
 
-### Instructions
+### Instructions and tasks
 
-Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more in [Configure instructions, tasks, and permissions for AI Playground Agent (preview)](ai-playground-agent-configure.md).
+Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more in [Configure instructions and tasks for AI Playground Agent (preview)](ai-playground-agent-configure.md).
 
 ### Tasks
 
-Tasks are specific actions that the agent can perform based on your instructions. They represent concrete scenarios or workflows that the agent should handle. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more in [Configure instructions, tasks, and permissions for AI Playground Agent (preview)](ai-playground-agent-configure.md).
+Tasks are specific actions that the agent can perform based on your instructions. They represent concrete scenarios or workflows that the agent should handle. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more in [Configure instructions and tasks for AI Playground Agent (preview)](ai-playground-agent-configure.md).
 
 ### Permissions
 
