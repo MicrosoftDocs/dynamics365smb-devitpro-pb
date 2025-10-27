@@ -23,35 +23,33 @@ After you create an agent, you can publish agents into multiple platforms or cha
 
 Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
 
-## Connection options
+### Connection options
 
 You can build agents that connect to Business Central Connector for Power Platform and Business Central MCP (Model Context Protocol) server:
 
-**Business Central Connector** is part of the Power Platform framework. It provides a simplified, low-code interface for accessing Business Central entities such as customers, vendors, items, and invoices. This connector is ideal for scenarios where:
+**Business Central Connector:** Part of the Power Platform framework. It provides a simplified, low-code interface for accessing Business Central entities such as customers, vendors, items, and invoices. This connector is ideal for scenarios where:
 
-- The agent needs to perform simple CRUD (create, read, update, delete) operations using predfined actions while acting as the user (respecting their Business Central permissions).
+- The agent needs to perform simple CRUD (create, read, update, delete) operations using predefined actions while acting as the user (respecting their Business Central permissions).
 - You want low-code integration through Power Automate.
 - Your organization’s governance model requires per-user control for auditing and compliance.
 
 The connector abstracts away many of the underlying API details, making it easier to use but less flexible for advanced scenarios.
 
-**Business Central MCP Server**  is a server implementation that uses the Model Context Protocol (MCP) to provide direct access to Business Central’s REST APIs, including custom API pages and system endpoints. This approach is suited for:
+**Business Central MCP Server:** A server implementation that uses the Model Context Protocol (MCP) to provide direct access to Business Central’s REST APIs, including custom API pages and system endpoints. This approach is suited for:
 
-- Advanced integrations requiring fine-grained control over API calls custom extensions or non-standard entities.
+- Advanced integrations requiring fine-grained control over API calls, custom extensions, or non-standard entities.
 - The agent must coordinate multiple AI-driven steps&mdash;such as retrieving data, analyzing it, and performing actions&mdash; into one seamless, automated workflow (AI orchestration).
 - Scenarios where performance, scalability, or security policies require direct API management.
 
 Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, DELETE) against Business Central endpoints, allowing for full customization and extensibility.
 
-### Choosing the connector and MCP Server
-
-Your choice depends on the agent’s requirements, the level of customization needed, and your familiarity with Business Central APIs.
+**Choosing the connector and MCP Server:** Your choice depends on the agent’s requirements, the level of customization needed, and your familiarity with Business Central APIs. Use this table as a guide:
 
 |Aspect|Business Central Connector|MCP Server|
 |-|-|-|
 |Setup complexity|Low|Medium|
 |API coverage|Limited to standard entities|Full (including custom APIs)|
-|Customization|Limited|extensive|
+|Customization|Limited|Extensive|
 |Integration with Power Platform|Native|Requires custom flows|
 |Performance tuning|Minimal control|Full control|
 |Authentication|Managed via Power Platform|Requires OAuth setup|
