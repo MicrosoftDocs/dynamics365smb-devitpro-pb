@@ -1,3 +1,17 @@
+---
+title: AI Playground Agent Architecture and Flow Diagram
+description: Learn how you can use AI Playground Agent in Business Central.
+author: solsen
+ms.author: solsen
+ms.reviewer: solsen
+ms.topic: concept-article
+ms.collection:
+  - get-started
+  - bap-ai-copilot
+ms.date: 10/23/2025
+ms.update-cycle: 180-days
+---
+
 # AI Playground Agent Architecture and Flow Diagram
 
 This diagram illustrates how the AI Playground Agent works in Business Central, from creation through execution.
