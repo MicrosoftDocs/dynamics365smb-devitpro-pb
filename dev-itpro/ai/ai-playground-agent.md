@@ -47,14 +47,14 @@ The AI Playground agent is a prototyping tool that allows developers and partner
 
 ## Purpose and audience
 
-The AI Playground agent is designed for:
+The AI Playground agent is primarily designed for:
 
-- **Developers and partners** who want to prototype AI-powered features before building them in AL extensions
-- **Solution architects** evaluating AI integration possibilities for their Business Central solutions  
-- **IT professionals** exploring automation scenarios with AI assistance
-- **Product teams** validating AI use cases and gathering requirements
+- **Product owners** who want to prototype AI-powered features before building them in AL extensions
+- **Domain experts** evaluating AI integration possibilities for their [!INCLUDE [prod_short](../includes/prod_short.md)] solutions  
+- **Consultants** exploring automation scenarios with AI assistance for client solutions
+- **Developers** validating AI use cases and gathering requirements for custom implementations
 
-The tool helps you understand how AI can interact with Business Central's user interface and data, allowing you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows.
+The tool helps you understand how AI can interact with [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, allowing you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows.
 
 ## When to use and when not to use
 
@@ -63,11 +63,11 @@ The tool helps you understand how AI can interact with Business Central's user i
 Use the AI Playground agent when you want to:
 
 - **Prototype AI features** before investing in AL development
-- **Test AI interactions** with Business Central's UI and data  
+- **Test AI interactions** with [!INCLUDE [prod_short](../includes/prod_short.md)] UI and data  
 - **Validate use cases** and gather requirements for AI-powered solutions
 - **Experiment with prompts** and AI behavior in a controlled environment
 - **Demonstrate AI capabilities** to stakeholders or customers
-- **Learn AI integration patterns** for Business Central
+- **Learn AI integration patterns** for [!INCLUDE [prod_short](../includes/prod_short.md)]
 
 ### When not to use AI Playground Agent
 
@@ -87,7 +87,7 @@ The typical AI Playground agent follows this lifecycle:
 2. **Configure** → Define instructions, permissions, and tasks  
 3. **Activate** → Enable the agent for testing
 4. **Iterate** → Test, refine instructions, and adjust permissions
-5. **Graduate** → Export learnings to build a production AL extension
+5. **Graduate** → Export learnings to build production solutions using AL extensions or the agent development SDK
 6. **Clean up** → Deactivate and remove the prototype agent
 
 Each phase has specific requirements and limitations that guide your development process.
@@ -98,11 +98,11 @@ Understanding these key concepts helps you work effectively with AI Playground a
 
 ### Instructions
 
-Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the Business Central interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role.
+Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more in [Configure instructions, tasks, and permissions for AI Playground Agent (preview)](ai-playground-agent-configure.md).
 
 ### Tasks
 
-Tasks are specific actions that the agent can perform based on your instructions. They represent concrete scenarios or workflows that the agent should handle. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests.
+Tasks are specific actions that the agent can perform based on your instructions. They represent concrete scenarios or workflows that the agent should handle. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more in [Configure instructions, tasks, and permissions for AI Playground Agent (preview)](ai-playground-agent-configure.md).
 
 ### Permissions
 
@@ -126,8 +126,8 @@ As a preview feature, the AI Playground agent has several important limitations:
 
 ### Environment restrictions
 
-- **Sandbox only**: Available exclusively in sandbox environments—never in production
-- **No production data**: Don't use for testing with real customer or business data
+- **Sandbox only**: Available exclusively in sandbox environments — never in production
+- **Sandbox data**: Can be used with customer data in sandbox environments (including sandbox copies of production data)
 - **Preview functionality**: Features and behavior may change without notice
 
 ### Operational constraints
@@ -142,6 +142,16 @@ As a preview feature, the AI Playground agent has several important limitations:
 - **Prototype only**: Not suitable for production implementations or compliance evaluation
 - **Manual telemetry**: No automatic logging—capture prompts and responses manually during testing
 - **Temporary nature**: Designed for experimentation, not long-term solutions
+
+## Future development path
+
+While the AI Playground agent provides a prototype experience for testing AI capabilities, the agent development SDK allows developers and partners to package custom agents as deployable apps. This SDK includes:
+
+- Instructions, integrations, and configuration packaged in AL extensions
+- Testing frameworks for agent development
+- Deployment capabilities for production environments
+
+The agent development SDK provides a graduation path from playground prototypes to production-ready AI solutions.
 
 ## Getting started
 

@@ -1,5 +1,5 @@
 ---
-title: Create and manage a Playground agent (preview)
+title: Create and manage a Playground Agent (preview)
 description: Learn how you can use AI Playground Agent in Business Central.
 author: solsen
 ms.author: solsen
@@ -12,21 +12,21 @@ ms.date: 10/23/2025
 ms.update-cycle: 180-days
 ---
 
-# Create and manage a Playground agent (preview)
+# Create and manage a Playground Agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground agent.
+> This article is primarily intended for product owners, domain experts, consultants, and developers who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground Agent.
 
-You can create an AI Playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
+You can create an AI Playground Agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The Agent can be given specific instructions and tasks to see how it performs in different scenarios. The Agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
 ## Prerequisites
 
-Before you can use the AI Playground agent, ensure that you have the following prerequisites in place:
+Before you can use the AI Playground Agent, ensure that you have the following prerequisites in place:
 
 - Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 - Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)].
-- A sandbox environment for testing and experimentation
+- A sandbox environment for testing and experimentation (can include customer data such as sandbox copies of production data)
 
 ## Getting started
 

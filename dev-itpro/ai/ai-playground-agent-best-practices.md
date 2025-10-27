@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-> This article is intended for developers and partners who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground agent.
+> This article is primarily intended for product owners, domain experts, consultants, and developers who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground agent.
 
 Following these best practices helps you create more effective AI Playground agents and get better results from your prototyping efforts.
 
@@ -109,10 +109,10 @@ Create agent-specific profiles that:
 
 ### Protect sensitive information
 
-- Never use production data in playground environments
-- Avoid including real customer information in instructions
-- Be cautious with financial or personal data in test scenarios
-- Use synthetic or anonymized data for testing
+- Only use playground in sandbox environments (never production)
+- Be cautious with sensitive data in agent instructions and configurations  
+- Consider data privacy implications when testing with customer data
+- Document data handling practices for compliance requirements
 
 ### Control agent access
 
@@ -166,6 +166,7 @@ Create agent-specific profiles that:
 - Consider integration with existing Business Central features
 - Design for scalability and performance requirements
 - Plan testing strategies for production code
+- Consider the upcoming agent development SDK for packaging agents as deployable apps
 
 ### Prototype cleanup
 
