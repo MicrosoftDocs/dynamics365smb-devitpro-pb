@@ -49,7 +49,7 @@ Your choice depends on the agent’s requirements, the level of customization ne
 
 |Aspect|Business Central Connector|MCP Server|
 |-|-|-|
-|Setup complexity|Low|Medium to High|
+|Setup complexity|Low|Medium|
 |API coverage|Limited to standard entities|Full (including custom APIs)|
 |Customization|Limited|extensive|
 |Integration with Power Platform|Native|Requires custom flows|
