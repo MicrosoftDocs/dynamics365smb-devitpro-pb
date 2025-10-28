@@ -45,8 +45,6 @@ Best practices for prototyping with AI Playground (ai-playground-agent-best-prac
 
 The AI Playground Agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
 
-:::image type="content" source="ai-playground-agent-workflow.svg" alt-text="TEST":::
-
 ## Purpose and audience
 
 The AI Playground Agent is primarily designed for:
@@ -94,7 +92,7 @@ The typical AI Playground Agent follows this lifecycle:
 
 Each phase has specific requirements and limitations that guide your development process.
 
-:::image type="content" source="ai-playground-lifecycle.svg" alt-text="AI Playground Agent lifecycle":::
+:::image type="content" source="diagram.png" alt-text="AI Playground Agent lifecycle":::
 
 
 ## High-level concepts
