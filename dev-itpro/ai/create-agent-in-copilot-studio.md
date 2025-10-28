@@ -9,7 +9,7 @@ ms.collection:
 ms.date: 10/20/2025
 ms.custom: bap-template
 ---
-# Create agents for Business Central with Copilot Studio
+# Create agents for Business Central in Copilot Studio
 
 Copilot Studio is a graphical, low-code tool for building agents and agent flows. You can use it to create conversational agents that understand and act on your business processes and data model in Business Central. Agents present Business Central data (customers, orders, invoices, and inventory) and business logic to users via natural language. Agents can automate tasks such as creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
 
@@ -131,7 +131,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 - **Inputs:** Validate and sanitize user input before calling Create record (that is, ensure required fields are present).
 - **Logging:** Use the agent’s execution logs to troubleshoot tool calls and to see request/response payloads.
 
-## Create agents that use Business Central MCP
+## Create agents that connect to Business Central MCP Server
 
 Follow these steps to create an agent that connects to the Business MCP server.
 
