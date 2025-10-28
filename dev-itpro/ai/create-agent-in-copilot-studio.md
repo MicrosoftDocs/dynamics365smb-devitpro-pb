@@ -37,8 +37,8 @@ The connector abstracts away many of the underlying API details, making it easie
 
 **Business Central MCP Server:** A server implementation that uses the Model Context Protocol (MCP) to provide direct access to Business Central’s REST APIs, including custom API pages and system endpoints. This approach is suited for:
 
-- Advanced integrations requiring fine-grained control over API calls, custom extensions, or non-standard entities.
-- The agent must coordinate multiple AI-driven steps&mdash;such as retrieving data, analyzing it, and performing actions&mdash; into one seamless, automated workflow (AI orchestration).
+- Advanced integrations requiring fine-grained control over API calls, custom extensions, or nonstandard entities.
+- The agent must coordinate multiple AI-driven steps&mdash;such as retrieving data, analyzing it, and performing actions&mdash;into one seamless, automated workflow (AI orchestration).
 - Scenarios where performance, scalability, or security policies require direct API management.
 
 Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, DELETE) against Business Central endpoints, allowing for full customization and extensibility.
@@ -59,7 +59,7 @@ In short, the connector offers ease of use and rapid development, while the MCP 
 ## Prerequisites
 
 - You have a Copilot Studio user license with available Copilot Credits capacity for use. Learn more in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing).
-- To connect the agent to the Business Central MCP Server, it must be enabled and condifured in the Business Central environment. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+- To connect the agent to the Business Central MCP Server, it must be enabled and configured in the Business Central environment. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
 
 ## Create agents that use Business Central connector
 
@@ -149,18 +149,18 @@ Follow these steps to create an agent that connects to the Business MCP server.
    1. Search for and select **Dynamics 365 Business Central MCP Server (Preview)**.
    1. Select the connector action `Find records (V3)`. The **Add tool** page opens.
    1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
-   1. Select **Add and configure** to retrun to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
-   1. In **Inputs** section of the **Tools** tab, configure the MCP server to connect Business Central by setiing the folloing fields.
+   1. Select **Add and configure** to return to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
+   1. In **Inputs** section of the **Tools** tab, configure the MCP server to connect Business Central by setting the following fields.
 
       |Field|Value|
       |-|-|
-      |Environment|The Business Central environment the agent connects to. Select the down arrow and select the environment for the  that environments appear.|
-      |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the that environments appear.|
-      |MCP Server Configuration|The MCP configuration defined in Business Central the agent uses. Select the down arrow and select one of the avilable configurations. Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md)|
+      |Environment|The Business Central environment the agent connects to. Select the down arrow and select the environment for the environments appear.|
+      |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the environments appear.|
+      |MCP Server Configuration|The MCP configuration defined in Business Central the agent uses. Select the down arrow and select one of the available configurations. Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md)|
 
-   1. The **Tools** section on the page displays the individaul tools available to the agent. Use this section to specific which tools the agent is allowed to use.
+   1. The **Tools** section on the page displays the individual tools available to the agent. Use this section to specific which tools the agent is allowed to use.
 
-      For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, trun on the **Allow All** to allow all listed tools.
+      For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, turn on the **Allow All** to allow all listed tools.
 
       > [!NOTE]
       > If there are no tools listed, then the selected MCP configuration is configured to automatically detect and allow tools, so you don't need can't manually allow them. Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
