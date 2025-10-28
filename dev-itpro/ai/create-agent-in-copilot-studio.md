@@ -9,7 +9,7 @@ ms.collection:
 ms.date: 10/20/2025
 ms.custom: bap-template
 ---
-# Create agents for Business Central in Copilot Studio
+# Create agents for connecting to Business Central in Copilot Studio
 
 Copilot Studio is a graphical, low-code tool for building agents and agent flows. You can use it to create conversational agents that understand and act on your business processes and data model in Business Central. Agents present Business Central data (customers, orders, invoices, and inventory) and business logic to users via natural language. Agents can automate tasks such as creating sales orders, checking credit, or posting payments, and trigger approvals or flows.
 
