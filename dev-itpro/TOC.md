@@ -1728,6 +1728,12 @@
 #### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 #### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
+<!-- Microsoft Copilot Studio -->
+### Integrating with Microsoft Copilot Studio
+#### [Configure Business Central MCP Server](ai/configure-mcp-server.md)
+#### [Create agents that connect to Business Central MCP Server](ai/create-agent-in-copilot-studio.md) 
+
+#### Administrator
 
 <!-- end Microsoft Power Platform -->
 
