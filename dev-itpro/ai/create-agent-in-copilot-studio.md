@@ -31,7 +31,7 @@ You can build agents that connect to Business Central Connector for Power Platfo
 
 - The agent needs to perform simple CRUD (create, read, update, delete) operations using predefined actions while acting as the user (respecting their Business Central permissions).
 - You want low-code integration through Power Automate.
-- Your organization’s governance model requires per-user control for auditing and compliance.
+- Your organizations governance model requires per-user control for auditing and compliance.
 
 The connector abstracts away many of the underlying API details, making it easier to use but less flexible for advanced scenarios.
 
@@ -178,22 +178,3 @@ Follow these steps to create an agent that connects to the Business MCP server.
 ## Related information
 
 [Transparency note: Semantic Metadata Search in Business Central](transparency-note-semantic-metadata-search.md)  
-
-
-<!-- ### What are agents and when to use them
-
-AI agents to connect to your environments and perform a range of interactions and tasks. Agents enable customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
-
-Use an agent when users need to:
-
-- Look up records, like customers, items, inventory, or documents.
-- Trigger operations on records (create records, post, check status).
-- Ask natural-language questions instead of navigating pages.
-- Access Business Central data securely from external channels.
-
-Agents don't:
-
-- Add new AL code or business logic.
-- Replace extension development.
-- Override permissions or policies.
-- Modify the schema or internal engine behavior.-->
