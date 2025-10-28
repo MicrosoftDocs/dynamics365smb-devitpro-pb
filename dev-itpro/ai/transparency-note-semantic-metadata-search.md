@@ -65,7 +65,7 @@ Semantic Metadata Search is an AI-powered capability designed to improve navigat
 - Use clear, descriptive queries.
 - Maintain accurate metadata for better results
 
-## Evaluation of Semantic Metadata Search in Business Central 
+## Evaluation of Semantic Metadata Search in Business Central
 
 Tested with over 12,000 cases covering synonyms, abbreviations, and semantic variations. Performance measured by accuracy of expected results in the top 3 returned items.
 
@@ -76,8 +76,6 @@ Tested with over 12,000 cases covering synonyms, abbreviations, and semantic var
 [Microsoft responsible AI resources](https://www.microsoft.com/en-us/ai/tools-practices) 
 
 [Microsoft Azure Learning courses on responsible AI](/ai/)
-
-## Learn more about Semantic Metadata Search in Business Central
 
 ## Related information
 

@@ -163,7 +163,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
       For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, turn on the **Allow All** to allow all listed tools.
 
       > [!NOTE]
-      > If there are no tools listed, then the selected MCP configuration is configured to automatically detect and allow tools, so you don't need can't manually allow them. Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
+      > If there are no tools listed, then the selected MCP configuration is set to automatically detect and allow tools, so you don't need can't manually allow them. Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
 
 1. Select **Save**.
 1. Test the agent.
