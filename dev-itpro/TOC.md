@@ -2188,5 +2188,7 @@
 # Responsible AI
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
+## [Transparency note: Semantic Metadata Search in Business Central](ai/transparency-note-semantic-metadata-search.md)  
+
 <!-- end upgrade -->
 <!--on-prem ends-->
