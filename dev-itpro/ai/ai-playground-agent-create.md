@@ -85,11 +85,6 @@ Under **User Access**, you can define who in your organization can interact with
 
 Agent tasks are specific actions that the agent can perform based on the instructions you provided. You can define multiple tasks for the agent to handle different scenarios. Tasks can only be added when the agent is in the **Active** state. If you need to modify the tasks later, you must first deactivate the agent.
 
-## Turn on AI Playground Agent
-
-The AI Playground Agent is available in sandbox environments. To use the AI Playground Agent, you must first enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
-
-When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center.
 
 ## Agent Task Log
 
@@ -103,6 +98,8 @@ Once you have created and configured your AI Playground Agent, you need to activ
 
 1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> AI Playground Agent > Activate.
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
+
+When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center.
 
 ## Related information
 
