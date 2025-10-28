@@ -25,10 +25,28 @@ The agent operates with explicit permission sets that control what data and acti
 > [!NOTE]
 > Permission sets can only be modified when the agent is deactivated.
 
-
-## Profile
+## Profiles
 
 The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
+
+> [!NOTE]
+> The profile of the agent is set as default to the **Playground Agent (Copilot)** type. This can be changed, but changing the type changes what the agent has access to.
+
+### The agent and the UI
+
+The AI Playground Agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
+
+On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
+
+| Property | Data type | Description |
+|----------|-----------|-------------|
+| `ClearActions` | Boolean | If set to true, all actions on the page are removed for the agent.|
+| `ClearLayout`  | Boolean | If set to true, the layout of the page is simplified for the agent. |
+| `ClearViews`   | Boolean | If set to true, all views on the page are removed for the agent. |
+| `DeleteAllowed`| Boolean | If set to false, the delete action isn't allowed for the agent. |
+| `InsertAllowed`| Boolean | If set to false, the insert action isn't allowed for the agent. |
+
+Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
 
 ## Related information
 
