@@ -218,6 +218,6 @@ Create agent-specific profiles that:
 
 [AI Playground Agent overview (preview)](ai-playground-agent.md)  
 [Create and manage an AI Playground Agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions, tasks, and permissions for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
+[Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
 [Build Copilot capability in AL](../developer/ai-build-capability-in-al.md)  
 [Test Copilot capability in AL](../developer/ai-test-copilot.md)

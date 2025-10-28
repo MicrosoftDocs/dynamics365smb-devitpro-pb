@@ -54,30 +54,9 @@ This opens a **Create Agent**, where you can define the agent's **Name**, **User
 
 **Agent User Settings** page available from the **Agent Card** and it shows the settings for the agent user, such as language and time zone. These settings can be adjusted to match the preferences of the users who interact with the agent.
 
-#### The agent and the UI
-
-The AI Playground Agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
-
-On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
-
-| Property | Data type | Description |
-|----------|-----------|-------------|
-| `ClearActions` | Boolean | If set to true, all actions on the page are removed for the agent.|
-| `ClearLayout`  | Boolean | If set to true, the layout of the page is simplified for the agent. |
-| `ClearViews`   | Boolean | If set to true, all views on the page are removed for the agent. |
-| `DeleteAllowed`| Boolean | If set to false, the delete action isn't allowed for the agent. |
-| `InsertAllowed`| Boolean | If set to false, the insert action isn't allowed for the agent. |
-
-Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
-
-The **Agent Card** is where you define the agent's purpose and the tasks it performs.
-
-> [!NOTE]
-> The profile of the agent is set as default to the Playground Agent (Copilot) type. This can be changed, but changing the type changes what the agent has access to.
-
 An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
 
-In the **Instructions** field, provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. For example, you might instruct the agent to "Help users find customer information quickly."
+In the **Instructions** field, provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
 
 Under **Agent Permission Sets**, you add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Permission sets can only be added when the agent is in the **Disabled** state. If you need to modify the permissions later, you must first deactivate the agent. The agent can't have more permissions than the user creating it.
 
@@ -85,12 +64,6 @@ Under **User Access**, you can define who in your organization can interact with
 
 Agent tasks are specific actions that the agent can perform based on the instructions you provided. You can define multiple tasks for the agent to handle different scenarios. Tasks can only be added when the agent is in the **Active** state. If you need to modify the tasks later, you must first deactivate the agent.
 
-
-## Agent Task Log
-
-Used for troubleshooting the agents behavior. The log captures the interactions between users and the agent, including the prompts sent to the agent and the responses received. This information can be invaluable for diagnosing issues and understanding how the agent is performing.
-
-Drill into every step by clicking the line in the log. You can see the full prompt sent to the agent and the response it generated. This can help you identify any misunderstandings or errors in the agent's behavior.
 
 ## Activate AI Playground Agent
 

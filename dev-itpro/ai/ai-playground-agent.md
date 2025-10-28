@@ -98,6 +98,15 @@ Each phase has specific requirements and limitations that guide your development
 
 Understanding the following key concepts helps you work effectively with AI Playground agents.
 
+## Prerequisites
+
+Before you can use the AI Playground Agent, ensure that you have the following prerequisites in place:
+
+- Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]
+- Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)]
+- A sandbox environment for testing and experimentation
+
+
 ### Instructions and tasks
 
 Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. 
@@ -113,14 +122,6 @@ The agent operates with explicit permission sets that control what data and acti
 The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
 
 Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
-
-## Prerequisites
-
-Before you can use the AI Playground Agent, ensure that you have the following prerequisites in place:
-
-- Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]
-- Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)]
-- A sandbox environment for testing and experimentation
 
 ## Limitations (preview)
 
@@ -157,11 +158,7 @@ The agent development SDK provides a graduation path from playground prototypes 
 
 ## Getting started
 
-Ready to try the AI Playground Agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case.
-
-To use the AI Playground Agent, you must first enable Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
-
-When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center. Now, you can create and configure your AI Playground Agent. Learn more in [Create and manage an AI Playground Agent (preview)](./ai-playground-agent-create.md).
+Ready to try the AI Playground Agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and manage an AI Playground Agent (preview)](./ai-playground-agent-create.md).
 
 ## Related information
 
