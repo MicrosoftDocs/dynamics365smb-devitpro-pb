@@ -11,7 +11,7 @@ ms.custom:
 ---
 # Configure Business Central MCP Server
 
-Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. With agents, customers and employees to conversationally engage with Business Central from various channels, like Microsoft 365 Copilot, Teams, and websites.
+Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. With agents, customers and employees to conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, and websites.
 
 The article explains how to enable and configure the Business Central MCP Server in your Business Central environment so agents can connect to the environment's APIs.
 
@@ -19,7 +19,7 @@ The article explains how to enable and configure the Business Central MCP Server
 
 Configuring the Business Central MCP server involves exposing API page objects in individual configurations. Each configuration exposes one or more API pages as *tools*, which specify the object and permitted operations (create, read, update, and delete).
 
-Once the MCP server is enabled and configured, its configurations become available in Copilot Studio for agent makers to use in their agents. Learn more in [Create agents with Copilot Studio](create-agent-in-copilot-studio.md).
+Once the MCP server is enabled and configured, the individual configurations become available in Copilot Studio for agent makers to use in their agents. Learn more in [Create agents with Copilot Studio](create-agent-in-copilot-studio.md).
 
 ## Prerequisites
 
@@ -61,5 +61,3 @@ Once the MCP server is enabled and configured, its configurations become availab
 ## Related information
 
 [Transparency note: Semantic Metadata Search in Business Central](transparency-note-semantic-metadata-search.md)  
-
-
