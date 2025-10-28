@@ -108,4 +108,4 @@ Once you have created and configured your AI Playground Agent, you need to activ
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
 [AI Playground Agent overview (preview)](ai-playground-agent.md)  
-[Configure instructions, tasks, and permissions for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
+[Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
