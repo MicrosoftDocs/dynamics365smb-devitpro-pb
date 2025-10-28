@@ -88,4 +88,4 @@ This manual approach allows you to validate your agent's behavior across differe
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
 [AI Playground Agent overview (preview)](ai-playground-agent.md)  
-[Create and manage an AI Playground Agent (preview)](ai-playground-agent-create.md)  
+[Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md)  

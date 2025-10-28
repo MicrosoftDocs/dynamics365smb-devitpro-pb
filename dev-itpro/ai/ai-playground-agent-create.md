@@ -1,5 +1,5 @@
 ---
-title: Create and manage an AI Playground Agent (preview)
+title: Create and activate an AI Playground Agent (preview)
 description: Learn how you can use AI Playground Agent in Business Central.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 10/23/2025
 ms.update-cycle: 180-days
 ---
 
-# Create and manage an AI Playground Agent (preview)
+# Create and activate an AI Playground Agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
