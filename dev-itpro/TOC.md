@@ -1731,7 +1731,7 @@
 <!-- Microsoft Copilot Studio -->
 ### Integrating with Microsoft Copilot Studio
 #### [Configure Business Central MCP Server](ai/configure-mcp-server.md)
-#### [Create agents for connecting to Business Central](ai/create-agent-in-copilot-studio.md) 
+#### [Create agents to connect to Business Central](ai/create-agent-in-copilot-studio.md) 
 <!-- end Microsoft Copilot Studio -->
 <!-- end Microsoft Power Platform -->
 
