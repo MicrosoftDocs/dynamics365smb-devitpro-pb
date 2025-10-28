@@ -20,7 +20,11 @@ The AI Playground Agent is a prototyping tool that allows developers and partner
 
 ## Permissions
 
-The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege—grant only the permissions necessary for the agent's intended functionality. Permission sets can only be modified when the agent is deactivated.
+The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege—grant only the permissions necessary for the agent's intended functionality. 
+
+> [!NOTE]
+> Permission sets can only be modified when the agent is deactivated.
+
 
 ## Profile
 

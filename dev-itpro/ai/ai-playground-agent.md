@@ -94,6 +94,9 @@ The typical AI Playground Agent follows this lifecycle:
 
 Each phase has specific requirements and limitations that guide your development process.
 
+:::image type="content" source="ai-playground-lifecycle.svg" alt-text="AI Playground Agent lifecycle":::
+
+
 ## High-level concepts
 
 Understanding these key concepts helps you work effectively with AI Playground agents:

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <style>
+      .title-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #1f1f1f; }
+      .step-number { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; }
+      .step-title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #1f1f1f; }
+      .step-description { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px; fill: #666666; }
+      .flow-arrow { stroke: #0078d4; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0078d4" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="25" text-anchor="middle" class="title-text">AI Playground Agent Lifecycle</text>
+  
+  <!-- Step 1: Create -->
+  <g transform="translate(50, 60)">
+    <circle cx="50" cy="30" r="20" fill="#1976d2"/>
+    <text x="50" y="35" text-anchor="middle" class="step-number">1</text>
+    <rect x="10" y="60" width="80" height="80" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="50" y="80" text-anchor="middle" class="step-title">Create</text>
+    <text x="15" y="95" class="step-description">Set up agent with</text>
+    <text x="15" y="105" class="step-description">basic identity</text>
+    <text x="15" y="115" class="step-description">and profile</text>
+  </g>
+  
+  <!-- Arrow 1->2 -->
+  <path d="M 150 100 L 190 100" class="flow-arrow"/>
+  
+  <!-- Step 2: Configure -->
+  <g transform="translate(210, 60)">
+    <circle cx="50" cy="30" r="20" fill="#7b1fa2"/>
+    <text x="50" y="35" text-anchor="middle" class="step-number">2</text>
+    <rect x="10" y="60" width="80" height="80" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="50" y="80" text-anchor="middle" class="step-title">Configure</text>
+    <text x="15" y="95" class="step-description">Define instructions,</text>
+    <text x="15" y="105" class="step-description">permissions,</text>
+    <text x="15" y="115" class="step-description">and tasks</text>
+  </g>
+  
+  <!-- Arrow 2->3 -->
+  <path d="M 310 100 L 350 100" class="flow-arrow"/>
+  
+  <!-- Step 3: Activate -->
+  <g transform="translate(370, 60)">
+    <circle cx="50" cy="30" r="20" fill="#388e3c"/>
+    <text x="50" y="35" text-anchor="middle" class="step-number">3</text>
+    <rect x="10" y="60" width="80" height="80" rx="8" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+    <text x="50" y="80" text-anchor="middle" class="step-title">Activate</text>
+    <text x="15" y="95" class="step-description">Enable agent</text>
+    <text x="15" y="105" class="step-description">for testing</text>
+  </g>
+  
+  <!-- Arrow 3->4 -->
+  <path d="M 470 100 L 510 100" class="flow-arrow"/>
+  
+  <!-- Step 4: Iterate -->
+  <g transform="translate(530, 60)">
+    <circle cx="50" cy="30" r="20" fill="#f57c00"/>
+    <text x="50" y="35" text-anchor="middle" class="step-number">4</text>
+    <rect x="10" y="60" width="80" height="80" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+    <text x="50" y="80" text-anchor="middle" class="step-title">Iterate</text>
+    <text x="15" y="95" class="step-description">Test, refine</text>
+    <text x="15" y="105" class="step-description">instructions, adjust</text>
+    <text x="15" y="115" class="step-description">permissions</text>
+  </g>
+  
+  <!-- Arrow 4->5 -->
+  <path d="M 630 100 L 670 100" class="flow-arrow"/>
+  
+  <!-- Step 5: Graduate -->
+  <g transform="translate(690, 60)">
+    <circle cx="50" cy="30" r="20" fill="#c2185b"/>
+    <text x="50" y="35" text-anchor="middle" class="step-number">5</text>
+    <rect x="10" y="60" width="80" height="80" rx="8" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+    <text x="50" y="80" text-anchor="middle" class="step-title">Graduate</text>
+    <text x="15" y="95" class="step-description">Export learnings</text>
+    <text x="15" y="105" class="step-description">to build production</text>
+    <text x="15" y="115" class="step-description">solutions</text>
+  </g>
+  
+  <!-- Arrow 5->6 -->
+  <path d="M 790 100 L 830 100" class="flow-arrow"/>
+  
+  <!-- Step 6: Clean up -->
+  <g transform="translate(850, 60)">
+    <circle cx="50" cy="30" r="20" fill="#616161"/>
+    <text x="50" y="35" text-anchor="middle" class="step-number">6</text>
+    <rect x="10" y="60" width="80" height="80" rx="8" fill="#f5f5f5" stroke="#616161" stroke-width="2"/>
+    <text x="50" y="80" text-anchor="middle" class="step-title">Clean up</text>
+    <text x="15" y="95" class="step-description">Deactivate and</text>
+    <text x="15" y="105" class="step-description">remove prototype</text>
+    <text x="15" y="115" class="step-description">agent</text>
+  </g>
+  
+  <!-- Iteration feedback loop -->
+  <path d="M 580 170 Q 580 190 450 190 Q 320 190 320 170" stroke="#f57c00" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="450" y="205" text-anchor="middle" class="step-description">Iterative refinement loop</text>
+  
+  <!-- Key phases labels -->
+  <rect x="70" y="200" width="140" height="25" rx="5" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
+  <text x="140" y="217" text-anchor="middle" class="step-title">Setup Phase</text>
+  
+  <rect x="390" y="200" width="140" height="25" rx="5" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
+  <text x="460" y="217" text-anchor="middle" class="step-title">Testing Phase</text>
+  
+  <rect x="710" y="200" width="140" height="25" rx="5" fill="#fce4ec" stroke="#c2185b" stroke-width="1"/>
+  <text x="780" y="217" text-anchor="middle" class="step-title">Production Phase</text>
+  
+  <!-- Development stages -->
+  <text x="150" y="250" text-anchor="middle" class="step-description">Prototype Development</text>
+  <text x="460" y="250" text-anchor="middle" class="step-description">Validation & Refinement</text>
+  <text x="780" y="250" text-anchor="middle" class="step-description">Implementation & Cleanup</text>
+  
+</svg>

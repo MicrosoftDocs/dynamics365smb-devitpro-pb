@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <style>
+      .title-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1f1f1f; }
+      .section-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; }
+      .step-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; fill: #1f1f1f; }
+      .small-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9px; fill: #666666; }
+      .flow-arrow { stroke: #0078d4; stroke-width: 3; fill: none; marker-end: url(#bluearrowhead); }
+    </style>
+    <marker id="bluearrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0078d4" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="25" text-anchor="middle" class="title-text">AI Playground Agent Workflow - Simplified</text>
+  
+  <!-- Prerequisites Section -->
+  <rect x="50" y="60" width="200" height="120" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <rect x="50" y="60" width="200" height="30" fill="#1976d2"/>
+  <text x="150" y="80" text-anchor="middle" class="section-text">Prerequisites</text>
+  <text x="60" y="105" class="step-text">• Enable Copilot capabilities</text>
+  <text x="60" y="120" class="step-text">• Sandbox environment</text>
+  <text x="60" y="135" class="step-text">• Appropriate permissions</text>
+  <text x="60" y="150" class="step-text">• Navigate to Agents (preview)</text>
+  <text x="60" y="165" class="small-text">Foundational setup required</text>
+  
+  <!-- Agent Creation Section -->
+  <rect x="290" y="60" width="200" height="120" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <rect x="290" y="60" width="200" height="30" fill="#7b1fa2"/>
+  <text x="390" y="80" text-anchor="middle" class="section-text">Agent Creation</text>
+  <text x="300" y="105" class="step-text">• Choose Playground > Create</text>
+  <text x="300" y="120" class="step-text">• Define Name & Display Name</text>
+  <text x="300" y="135" class="step-text">• Set Initials & Type</text>
+  <text x="300" y="150" class="step-text">• Agent Card opens</text>
+  <text x="300" y="165" class="small-text">Agent created in Disabled state</text>
+  
+  <!-- Configuration Section -->
+  <rect x="530" y="60" width="200" height="120" rx="8" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <rect x="530" y="60" width="200" height="30" fill="#388e3c"/>
+  <text x="630" y="80" text-anchor="middle" class="section-text">Configuration</text>
+  <text x="540" y="105" class="step-text">• Write Instructions (prompts)</text>
+  <text x="540" y="120" class="step-text">• Assign Profile/Role</text>
+  <text x="540" y="135" class="step-text">• Add Permission Sets</text>
+  <text x="540" y="150" class="step-text">• Define User Access</text>
+  <text x="540" y="165" class="small-text">Configure while Disabled</text>
+  
+  <!-- Activation Section -->
+  <rect x="770" y="60" width="200" height="120" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <rect x="770" y="60" width="200" height="30" fill="#f57c00"/>
+  <text x="870" y="80" text-anchor="middle" class="section-text">Activation</text>
+  <text x="780" y="105" class="step-text">• Review configuration</text>
+  <text x="780" y="120" class="step-text">• Activate agent</text>
+  <text x="780" y="135" class="step-text">• Add Tasks (Active required)</text>
+  <text x="780" y="150" class="step-text">• Ready for testing</text>
+  <text x="780" y="165" class="small-text">State changes to Active</text>
+  
+  <!-- Testing & Execution Section -->
+  <rect x="1010" y="60" width="180" height="120" rx="8" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+  <rect x="1010" y="60" width="180" height="30" fill="#c2185b"/>
+  <text x="1100" y="80" text-anchor="middle" class="section-text">Testing & Execution</text>
+  <text x="1020" y="105" class="step-text">• Create manual tasks</text>
+  <text x="1020" y="120" class="step-text">• Observe timeline view</text>
+  <text x="1020" y="135" class="step-text">• Review Agent Task Log</text>
+  <text x="1020" y="150" class="step-text">• Analyze performance</text>
+  <text x="1020" y="165" class="small-text">Iterative testing process</text>
+  
+  <!-- Flow arrows between main sections -->
+  <path d="M 250 120 L 280 120" class="flow-arrow"/>
+  <path d="M 490 120 L 520 120" class="flow-arrow"/>
+  <path d="M 730 120 L 760 120" class="flow-arrow"/>
+  <path d="M 970 120 L 1000 120" class="flow-arrow"/>
+  
+  <!-- State Management Simplified -->
+  <rect x="200" y="220" width="400" height="100" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="200" y="220" width="400" height="25" fill="#666666"/>
+  <text x="400" y="237" text-anchor="middle" class="section-text">Agent State Management</text>
+  
+  <rect x="230" y="260" width="120" height="50" rx="5" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="290" y="280" text-anchor="middle" class="step-text">DISABLED</text>
+  <text x="240" y="295" class="small-text">• Modify configuration</text>
+  <text x="240" y="305" class="small-text">• Cannot add tasks</text>
+  
+  <rect x="420" y="260" width="120" height="50" rx="5" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="480" y="280" text-anchor="middle" class="step-text">ACTIVE</text>
+  <text x="430" y="295" class="small-text">• Add/execute tasks</text>
+  <text x="430" y="305" class="small-text">• Cannot modify perms</text>
+  
+  <path d="M 350 285 L 410 285" class="flow-arrow"/>
+  <text x="380" y="275" text-anchor="middle" class="small-text">Activate</text>
+  
+  <!-- Key Points -->
+  <rect x="650" y="220" width="500" height="100" rx="8" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <rect x="650" y="220" width="500" height="25" fill="#666666"/>
+  <text x="900" y="237" text-anchor="middle" class="section-text">Key Points</text>
+  
+  <text x="670" y="260" class="step-text">• Agents work only in sandbox environments</text>
+  <text x="670" y="275" class="step-text">• Instructions guide how agents interpret requests</text>
+  <text x="670" y="290" class="step-text">• Profile controls UI access, permissions control data access</text>
+  <text x="670" y="305" class="step-text">• Test iteratively and refine instructions based on results</text>
+  
+  <!-- Workflow Steps Numbers -->
+  <circle cx="150" cy="45" r="15" fill="#1976d2"/>
+  <text x="150" y="50" text-anchor="middle" fill="white" class="step-text">1</text>
+  
+  <circle cx="390" cy="45" r="15" fill="#7b1fa2"/>
+  <text x="390" y="50" text-anchor="middle" fill="white" class="step-text">2</text>
+  
+  <circle cx="630" cy="45" r="15" fill="#388e3c"/>
+  <text x="630" y="50" text-anchor="middle" fill="white" class="step-text">3</text>
+  
+  <circle cx="870" cy="45" r="15" fill="#f57c00"/>
+  <text x="870" y="50" text-anchor="middle" fill="white" class="step-text">4</text>
+  
+  <circle cx="1100" cy="45" r="15" fill="#c2185b"/>
+  <text x="1100" y="50" text-anchor="middle" fill="white" class="step-text">5</text>
+  
+</svg>
