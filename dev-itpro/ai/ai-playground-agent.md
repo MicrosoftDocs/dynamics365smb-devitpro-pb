@@ -83,8 +83,6 @@ Don't use the AI Playground Agent when:
 
 The typical AI Playground Agent follows this lifecycle:
 
-:::image type="content" source="diagram.png" alt-text="AI Playground Agent lifecycle":::
-
 1. **Create** - Set up the agent with basic identity and profile
 1. **Configure** - Define instructions, permissions, and tasks
 1. **Activate** - Enable the agent for testing
@@ -93,6 +91,8 @@ The typical AI Playground Agent follows this lifecycle:
 1. **Clean up** - Deactivate and remove the prototype agent
 
 Each phase has specific requirements and limitations that guide your development process.
+
+:::image type="content" source="../media/ai-playground-lifecycle.png" alt-text="AI Playground Agent lifecycle":::
 
 ## High-level concepts
 
