@@ -83,21 +83,20 @@ Don't use the AI Playground Agent when:
 
 The typical AI Playground Agent follows this lifecycle:
 
-1. **Create** → Set up the agent with basic identity and profile
-2. **Configure** → Define instructions, permissions, and tasks  
-3. **Activate** → Enable the agent for testing
-4. **Iterate** → Test, refine instructions, and adjust permissions
-5. **Graduate** → Export learnings to build production solutions using AL extensions or the agent development SDK
-6. **Clean up** → Deactivate and remove the prototype agent
+:::image type="content" source="diagram.png" alt-text="AI Playground Agent lifecycle":::
+
+1. **Create** - Set up the agent with basic identity and profile
+1. **Configure** - Define instructions, permissions, and tasks
+1. **Activate** - Enable the agent for testing
+1. **Iterate** - Test, refine instructions, and adjust permissions
+1. **Graduate** - Export learnings to build production solutions using AL extensions or the agent development SDK
+1. **Clean up** - Deactivate and remove the prototype agent
 
 Each phase has specific requirements and limitations that guide your development process.
 
-:::image type="content" source="diagram.png" alt-text="AI Playground Agent lifecycle":::
-
-
 ## High-level concepts
 
-Understanding these key concepts helps you work effectively with AI Playground agents:
+Understanding the following key concepts helps you work effectively with AI Playground agents.
 
 ### Instructions and tasks
 
@@ -162,7 +161,7 @@ Ready to try the AI Playground Agent? The process involves enabling the feature,
 
 To use the AI Playground Agent, you must first enable Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 
-When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center. Now, you can create and configure your AI Playground Agent. Learn more in [Create and manage a Playground agent (preview)](./ai-playground-agent-create.md).
+When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center. Now, you can create and configure your AI Playground Agent. Learn more in [Create and manage an AI Playground Agent (preview)](./ai-playground-agent-create.md).
 
 ## Related information
 
