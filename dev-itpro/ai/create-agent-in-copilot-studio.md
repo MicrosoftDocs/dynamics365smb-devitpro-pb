@@ -147,7 +147,6 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
    1. On the **Tools** tab of the agent page, select **+ Add a tool**.
    1. Search for and select **Dynamics 365 Business Central MCP Server (Preview)**.
-   1. Select the connector action `Find records (V3)`. The **Add tool** page opens.
    1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
    1. Select **Add and configure** to return to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
    1. In **Inputs** section of the **Tools** tab, configure the MCP server to connect Business Central by setting the following fields.
