@@ -17,13 +17,13 @@ ms.update-cycle: 180-days
 [This article is prerelease documentation and is subject to change.]
 > This article is primarily intended for product owners, domain experts, consultants, and developers who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground Agent.
 
-## Understanding Agent Decision-Making
+## Understanding agent decision-making
  
 - Agents act based on instructions and the data available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 - Only decision points in logs reflect moments where instructions/context could affect choices.
 
-## Troubleshooting Tools and Logs
+## Troubleshooting tools and logs
 
 - Use the Agent Tasks page and Agent Task Log for high-level and detailed troubleshooting.
 - Log entries show what the agent saw, available tools, and related messages/logs.
@@ -34,25 +34,25 @@ Used for troubleshooting the agents behavior. The log captures the interactions 
 
 Drill into every step by clicking the line in the log. You can see the full prompt sent to the agent and the response it generated. This can help you identify any misunderstandings or errors in the agent's behavior.
 
-## Debugging Common Scenarios
+## Debugging common scenarios
 
 - Check for missing actions or fields in page content if navigation or editing fails.
 - Simplify pages or customize descriptions to reduce confusion.
 
-## Customizing Agent Profiles and UI
+## Customizing agent profiles and UI
 
 - Customize agent profiles and page descriptions using AL code.
 - Export and package tailored profiles for your agent.
 
-## Debugging Agent Code
+## Debugging agent code
 
 - Use Visual Studio Code to debug agent sessions and AL code.
 
-## Handling Content Violation Errors
+## Handling content violation errors
 
 - Rephrase flagged instructions or review context for problematic keywords.
 
-## Agent’s Perception of the UI
+## Agent's perception of the UI
 
 - The agent sees the UI as JSON; log entries capture this view for troubleshooting.
 
