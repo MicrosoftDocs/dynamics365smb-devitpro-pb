@@ -36,25 +36,33 @@ The development process is iterative by design. You can continuously refine your
 
 ## Set up AI Playground Agent
 
-The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents in your environment.
-
-To create a new AI Playground Agent, follow these steps:
+The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents in your environment. To create a new AI Playground Agent, follow these steps:
 
 ### Create an AI Playground Agent
 
-1. In the **Agents (preview)** page, choose **Playground**, and then **Create**. 
-This opens a **Create Agent**, where you can define the agent's **Name**, **User Display Name**, **Initials**, and **Type**.
+1. In the **Agents (preview)** page, choose **Playground**, and then **Create agent**. 
+This opens a **Create Agent (preview)**, where you can define the agent's **Type**, **Name**, **Display Name**, and **Initials**.
+1. The **Type** should be set to **Agent** for AI Playground agents.
 1. In **Name**, enter a unique name for the agent. This name is used to identify the agent in the system.
-1. The **User Display Name** is the name that is shown to users when they interact with
+1. The **Display Name** is the name that is shown to users when they interact with the agent.
 1. The **Initials** is used in the UI to represent the agent, such as in chat interfaces.
-1. The **Type** should be set to **Playground Agent** for AI Playground agents.
-1. Choose **OK**, and the **Agent Card** opens.
+1. Choose **OK**, and the **Create agent (preview)** dialog opens.
+
+### Configure the AI Playground Agent
+
+The **Create agent (preview)** dialog allows you to configure your AI Playground Agent by setting up its instructions, profile, and permissions. The dialog is also where you enable the agent for use, once it's set up.
+
+Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
+
+Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
+
+Under **Permissions**, use **Manage permissions** to add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
+
+### Accessing agent settings
 
 **Agent User Settings** page available from the **Agent Card** and it shows the settings for the agent user, such as language and time zone. These settings can be adjusted to match the preferences of the users who interact with the agent.
 
 An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
-
-In the **Instructions** field, provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
 
 Under **Agent Permission Sets**, you add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Permission sets can only be added when the agent is in the **Disabled** state. If you need to modify the permissions later, you must first deactivate the agent. The agent can't have more permissions than the user creating it.
 
