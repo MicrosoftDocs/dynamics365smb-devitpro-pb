@@ -58,7 +58,7 @@ Under **Profile (role)**, use the **Setup profile** option to select the profile
 
 Under **Permissions**, use **Manage permissions** to add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
 
-## Activate AI Playground Agent
+## Activate an AI Playground Agent
 
 Once you have created and configured your AI Playground Agent, you need to activate it before it can start handling tasks. To activate the AI Playground Agent for your company, follow these steps:
 
@@ -71,9 +71,9 @@ When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon i
 
 You can access and modify the settings of an existing AI Playground Agent either from the Copilot chat pane or by navigating to the **Agents (preview)** page and selecting the agent you want to configure. 
 
-Opening the agent from the Copilot chat pane, choose the agent's name at the top of the pane. In the chat pane, choose the settings icon (<!-- insert icon -->) to open the **Configure agent (preview)** dialog.
+In the **Agents (preview)** page, choose the agent, and either open the **Agent Card (preview)** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** dialog opens.
 
-Opening the agent from the **Agents (preview)** page, select the agent from the list to open the **Agent Card (preview)**. From here, you can access various settings and configurations for the agent.
+In the Copilot chat pane for the specific agent, choose the settings icon (<!-- insert icon -->) to open a **Configure agent (preview)** dialog.
 
 ### Understanding agent states
 
