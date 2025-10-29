@@ -45,7 +45,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Bahrain|Partner|W1|Available|BH|UAE|
 |Bangladesh|Partner|W1|Available|BD|Asia Pacific|
 |Belgium|Microsoft|BE|Available|BE|Europe|
-|Belize|Partner|W1|Available|BZ <sup>3</sup>|Brazil|
+|Belize|Partner|W1|Available|BZ|Brazil|
 |Bermuda|Partner|W1|Available|BM|Brazil|
 |Bolivia|Partner|W1|Available|BO|Brazil|
 |Bosnia and Herzegovina|Partner|W1|Available|BA|Europe|
@@ -54,7 +54,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Brunei|Partner|W1|Available|BN|Asia Pacific|
 |Brazil|Partner|W1|Available|BR|Brazil|
 |Bulgaria|Partner|W1|Available|BG|Europe|
-|Burkina Faso|Partner|W1|Available|BF <sup>3</sup>|South Africa|
+|Burkina Faso|Partner|W1|Available|BF|South Africa|
 |Cambodia|Partner|W1|Available|KH|Asia Pacific|
 |Cameroon|Partner|W1|Available|CM|South Africa|
 |Canada|Microsoft|NA|Available|CA|Canada|
@@ -82,13 +82,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Fiji|Partner|W1|Available|FJ|Australia|
 |Finland|Microsoft|FI|Available|FI|Europe|
 |France|Microsoft|FR|Available|FR|France|
-|French Polynesia|Partner|W1|Available|PF <sup>3</sup>|Australia|
-|Gabon|Partner|W1|Available|GA <sup>3</sup>|South Africa|
+|French Polynesia|Partner|W1|Available|PF|Australia|
+|Gabon|Partner|W1|Available|GA|South Africa|
 |Gambia|Partner|W1|Available|GM <sup>3</sup>|South Africa|
 |Georgia|Partner|W1|Available|GE|Europe|
 |Germany|Microsoft|DE|Available|DE|Germany|
 |Ghana|Partner|W1|Available|GH|South Africa|
-|Gibraltar|Partner|W1|Available|GI <sup>3</sup>|Europe|
+|Gibraltar|Partner|W1|Available|GI|Europe|
 |Greece|Partner|W1|Available|GR|Europe|
 |Greenland (Denmark)|Microsoft|W1|Available|DK|Europe|
 |Grenada|Partner|W1|Available|GD|Brazil|
@@ -116,7 +116,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Kenya|Partner|W1|Available|KE|South Africa|
 |Kosovo|Partner|W1|Available|XK|Europe|
 |Kuwait|Partner|W1|Available|KW|UAE|
-|Laos|Partner|W1|Available|LA <sup>3</sup>|Asia Pacific|
+|Laos|Partner|W1|Available|LA|Asia Pacific|
 |Latvia|Partner|W1|Available|LV|Europe|
 |Lebanon|Partner|W1|Available|LB|UAE|
 |Liechtenstein|Partner|CH|Available|LI|Europe|
@@ -127,16 +127,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malawi|Partner|W1|Available|MW|South Africa|
 |Malaysia|Partner|W1|Available|MY|Asia Pacific|
 |Maldives|Partner|W1|Available|MV|Asia Pacific|
-|Mali|Partner|W1|Available|ML <sup>3</sup>|South Africa|
+|Mali|Partner|W1|Available|ML|South Africa|
 |Malta|Partner|W1|Available|MT|Europe|
-|Marshall Islands|Partner|W1|Available|MH <sup>3</sup>|Asia Pacific|
+|Marshall Islands|Partner|W1|Available|MH|Asia Pacific|
 |Mauritius|Partner|W1|Available|MU|South Africa|
 |Mexico|Microsoft|NA|Available|MX|United States|
 |Micronesia|Partner|W1|Available|FM|Asia Pacific|
-|Moldova|Partner|W1|Available|MD <sup>3</sup>|Europe|
+|Moldova|Partner|W1|Available|MD|Europe|
 |Monaco|Partner|FR|Available|MC|France|
 |Mongolia|Partner|W1|Available|MN|Asia Pacific|
-|Montserrat|Partner|W1|Available|MS <sup>3</sup>|Brazil|
+|Montserrat|Partner|W1|Available|MS|Brazil|
 |Montenegro|Partner|W1|Available|ME|Europe|
 |Morocco|Partner|W1|Available|MA|South Africa|
 |Mozambique|Partner|W1|Available|MZ|South Africa|
@@ -163,9 +163,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Qatar|Partner|W1|Available|QA|UAE|
 |Romania|Partner|W1|Available|RO|Europe|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|N/A|
-|Saint Kitts and Nevis|Partner|W1|Available|KN <sup>3</sup>|Brazil|
-|Saint Lucia|Partner|W1|Available|LC <sup>3</sup>|Brazil|
-|Saint Vincent and the Grenadines|Partner|W1|Available|VC <sup>3</sup>|Brazil|
+|Saint Kitts and Nevis|Partner|W1|Available|KN|Brazil|
+|Saint Lucia|Partner|W1|Available|LC|Brazil|
+|Saint Vincent and the Grenadines|Partner|W1|Available|VC|Brazil|
 |Samoa|Partner|W1|Available|WS|Australia|
 |San Marino|Partner|IT|Available|SM|Europe|
 |Sao Tome & Principe|Partner|W1|Available|ST|South Africa|
@@ -189,19 +189,19 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Trinidad and Tobago|Partner|W1|Available|TT|Brazil|
 |Tunisia|Partner|W1|Available|TN|South Africa|
 |Türkiye|Partner|W1|Available|TR|UAE|
-|Turks and Caicos Islands|Partner|W1|Available|TC <sup>3</sup>|Brazil|
+|Turks and Caicos Islands|Partner|W1|Available|TC|Brazil|
 |Uganda|Partner|W1|Available|UG|South Africa|
 |Ukraine|Partner|W1|Available|UA|Europe|
 |United Arab Emirates|Partner|W1|Available|AE|UAE|
-|United Kingdom|Microsoft|GB|Available|GB|United Kingdom|
+|United Kingdom|Microsoft|GB|Available|GB <sup>4</sup>|United Kingdom|
 |United States|Microsoft|NA|Available|US|United States|
-|U.S. Virgin Islands|Partner|W1|Available|VI <sup>3</sup>|Brazil|
+|U.S. Virgin Islands|Partner|W1|Available|VI|Brazil|
 |Uruguay|Partner|W1|Available|UY|Brazil|
-|Uzbekistan|Partner|W1|Available|UZ <sup>3</sup>|UAE|
+|Uzbekistan|Partner|W1|Available|UZ|UAE|
 |Vanuatu|Partner|W1|Available|VU|Australia|
-|Vatican City|Partner|IT|Available|VA <sup>3</sup>|Europe|
+|Vatican City|Partner|IT|Available|VA|Europe|
 |Vietnam|Partner|W1|Available|VN|Asia Pacific|
-|Yemen|Partner|W1|Available|YE <sup>3</sup>|UAE|
+|Yemen|Partner|W1|Available|YE|UAE|
 |Zambia|Partner|W1|Available|ZM|South Africa|
 |Zimbabwe|Partner|W1|Available|ZW|South Africa|
 
@@ -212,6 +212,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 > <sup>2</sup> BaseApp for Sweden was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features are available as apps. Existing users can enable new features through the **Feature Management**.
 >
 > <sup>3</sup> This country is available for deployment and transactions, but marketplace availability is postponed. Therefore, ISV solutions from AppSource aren't accessible until further notice.
+>
+> <sup>4</sup> BaseApp for United Kingdom was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2. Current localization features are available as apps. Users can enable new features through the **Feature Management**.
+
 
 Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
