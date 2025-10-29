@@ -30,11 +30,9 @@ Before you can use the AI Playground Agent, ensure that you have the following p
 
 ## Getting started
 
-To get started, navigate to the Agent Builder Playground in your [!INCLUDE [prod_short](../includes/prod_short.md)] sandbox environment. Start by creating a new agent and giving it a clear name and description that reflect its purpose. Next, define the agent's instructions in natural language. These instructions should articulate the agent's goals, the tasks it should perform, and any constraints or considerations it must respect. 
+Creating an AI Playground Agent involves several key phases: design, configuration, and testing. You'll start by defining your agent's identity and purpose, then specify its behavior through natural language instructions. The agent needs appropriate permissions and user profiles to interact with your [!INCLUDE [prod_short](../includes/prod_short.md)] environment safely and effectively.
 
-After you define the behavior, assign a user profile that determines which UI elements and data entities the agent can interact with. Finally, configure the permissions that govern its execution, ensuring that the agent operates within safe and predictable boundaries.
-
-Once your agent is configured, you can test it by triggering sample goals and observing its behavior in the timeline view. This timeline view provides a detailed record of the agent's reasoning steps, actions, and outcomes, allowing you to verify that it behaves as intended. If adjustments are needed, you can refine the instructions, modify permissions, or update the user profile and retest. The playground's iterative design makes it easy to experiment and improve until you achieve the desired results.
+The development process is iterative by design. You can continuously refine your agent's instructions, adjust its permissions, and test different scenarios until it performs as expected. The playground environment provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
 ## Set up AI Playground Agent
 
