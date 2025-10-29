@@ -36,7 +36,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
    |Name|Specifies the configuration's name. This name appears in Copilot Studio to assign the configuration to MCP Server connection for an agent.|
    |Description|Specifies a brief description of the configuration.|
    |Active|When on, the configuration and its tools are available for agents to use. If you turn the switch off, agents that currently use the configuration won't work as expected.|
-   |Dynamic Tool Mode|When on, agents that use the configuration can search for tools within the configuration dynamically. In the MCP server configuration for the agent in Copilot Studio, you don't explicitly allow access to the tools. If off, you to select the tools you to allow the agent to use.|
+   |Dynamic Tool Mode|When on, agents that use the configuration can search for tools within the configuration dynamically. In the MCP server configuration for the agent in Copilot Studio, you don't explicitly allow access to the tools. If off, you select the tools you want to allow the agent to use.|
    |Discover Additional Objects|When on, read-only objects that aren't defined as tools in the configuration are also accessible by agents. This switch only applies when the **Dynamics Tool Mode** is on. |
    |Allow Create/Update/Delete Tools|When off, agents that use this configuration can't perform create, update, and delete operations on tools even if the operations are enabled.|
 
