@@ -58,19 +58,6 @@ Under **Profile (role)**, use the **Setup profile** option to select the profile
 
 Under **Permissions**, use **Manage permissions** to add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
 
-### Accessing agent settings
-
-**Agent User Settings** page available from the **Agent Card** and it shows the settings for the agent user, such as language and time zone. These settings can be adjusted to match the preferences of the users who interact with the agent.
-
-An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks.
-
-Under **Agent Permission Sets**, you add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Permission sets can only be added when the agent is in the **Disabled** state. If you need to modify the permissions later, you must first deactivate the agent. The agent can't have more permissions than the user creating it.
-
-Under **User Access**, you can define who in your organization can interact with the agent. This helps control the usage of the agent. The default user is the one who created the agent, but you can add more users if needed.
-
-Agent tasks are specific actions that the agent can perform based on the instructions you provided. You can define multiple tasks for the agent to handle different scenarios. Tasks can only be added when the agent is in the **Active** state. If you need to modify the tasks later, you must first deactivate the agent.
-
-
 ## Activate AI Playground Agent
 
 Once you have created and configured your AI Playground Agent, you need to activate it before it can start handling tasks. To activate the AI Playground Agent for your company, follow these steps:
@@ -79,6 +66,18 @@ Once you have created and configured your AI Playground Agent, you need to activ
 1. On the Configure the AI Playground Agent page, select OK to activate the agent.
 
 When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center.
+
+### Accessing agent settings after creation
+
+You can access and modify the settings of an existing AI Playground Agent either from the Copilot chat pane or by navigating to the **Agents (preview)** page and selecting the agent you want to configure. 
+
+Opening the agent from the Copilot chat pane, choose the agent's name at the top of the pane. In the chat pane, choose the settings icon (<!-- insert icon -->) to open the **Configure agent (preview)** dialog.
+
+Opening the agent from the **Agents (preview)** page, select the agent from the list to open the **Agent Card (preview)**. From here, you can access various settings and configurations for the agent.
+
+### Understanding agent states
+
+An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks. Working on the setup, you can switch the agent between **Disabled** and **Active** states as needed. To modify the permissions of an agent, you must first deactivate it.
 
 ## Related information
 
