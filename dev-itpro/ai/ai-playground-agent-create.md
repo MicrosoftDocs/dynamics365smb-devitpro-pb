@@ -34,7 +34,7 @@ Creating an AI Playground Agent involves several key phases: design, configurati
 
 The development process is iterative by design. You can continuously refine your agent's instructions, adjust its permissions, and test different scenarios until it performs as expected. The playground environment provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
-## Set up AI Playground Agent
+## Set up an AI Playground Agent
 
 The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents in your environment. To create a new AI Playground Agent, follow these steps:
 
@@ -48,7 +48,7 @@ This opens a **Create Agent (preview)**, where you can define the agent's **Type
 1. The **Initials** is used in the UI to represent the agent, such as in chat interfaces.
 1. Choose **OK**, and the **Create agent (preview)** dialog opens.
 
-### Configure the AI Playground Agent
+### Configure an AI Playground Agent
 
 The **Create agent (preview)** dialog allows you to configure your AI Playground Agent by setting up its instructions, profile, and permissions. The dialog is also where you enable the agent for use, once it's set up.
 
