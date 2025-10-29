@@ -108,7 +108,6 @@ Before you can use the AI Playground Agent, ensure that you have the following p
 - Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)]
 - A sandbox environment for testing and experimentation
 
-
 ### Instructions and tasks
 
 Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. 
@@ -156,7 +155,7 @@ While the AI Playground Agent provides a prototype experience for testing AI cap
 - Testing frameworks for agent development
 - Deployment capabilities for production environments
 
-The agent development SDK provides a graduation path from playground prototypes to production-ready AI solutions.
+The agent development SDK provides a graduation path from playground prototypes to production-ready AI solutions. Learn more in [Graduating an AI Playground Agent (preview)](./ai-playground-agent-graduate.md).
 
 ## Getting started
 
@@ -167,4 +166,5 @@ Ready to try the AI Playground Agent? The process involves enabling the feature,
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
 [Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md)  
 [Configure instructions, tasks, and permissions for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
+[Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
 [Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)

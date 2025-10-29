@@ -18,42 +18,42 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-## Understanding agent decision-making
- 
+## Understand agent decision-making
+
 - Agents act based on instructions and the data available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 - Only decision points in logs reflect moments where instructions/context could affect choices.
 
 ## Troubleshooting tools and logs
 
-- Use the Agent Tasks page and Agent Task Log for high-level and detailed troubleshooting.
-- Log entries show what the agent saw, available tools, and related messages/logs.
+- Use the **Agent Tasks** page and **Agent Task Log** for high-level and detailed troubleshooting.
+- Log entries show what the agent identified, available tools, and related messages/logs.
 
 ### Agent Task Log
 
-Used for troubleshooting the agents behavior. The log captures the interactions between users and the agent, including the prompts sent to the agent and the responses received. This information can be invaluable for diagnosing issues and understanding how the agent is performing.
+The **Agent Task Log** is used for troubleshooting the agent's behavior. The log captures the interactions between users and the agent, including the prompts sent to the agent and the responses received. This information can be valuable for diagnosing issues and understanding how the agent is performing.
 
 Drill into every step by clicking the line in the log. You can see the full prompt sent to the agent and the response it generated. This can help you identify any misunderstandings or errors in the agent's behavior.
 
-## Debugging common scenarios
+## Debug common scenarios
 
 - Check for missing actions or fields in page content if navigation or editing fails.
 - Simplify pages or customize descriptions to reduce confusion.
 
-## Customizing agent profiles and UI
+## Customize agent profiles and UI
 
 - Customize agent profiles and page descriptions using AL code.
 - Export and package tailored profiles for your agent.
 
-## Debugging agent code
+## Debug agent code
 
 - Use Visual Studio Code to debug agent sessions and AL code.
 
-## Handling content violation errors
+## Handle content violation errors
 
 - Rephrase flagged instructions or review context for problematic keywords.
 
-## Agent's perception of the UI
+## The agent's perception of the UI
 
 - The agent sees the UI as JSON; log entries capture this view for troubleshooting.
 
@@ -64,3 +64,9 @@ Drill into every step by clicking the line in the log. You can see the full prom
 - Log entries include factboxes and page settings that may influence agent actions. -->
 
 ## Related information
+
+[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
+[Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md)  
+[Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
+[Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
+[Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)
