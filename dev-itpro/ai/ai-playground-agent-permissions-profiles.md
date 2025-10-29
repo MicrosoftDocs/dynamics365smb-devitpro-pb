@@ -16,6 +16,8 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
+[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+
 The AI Playground Agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
 
 ## Permissions

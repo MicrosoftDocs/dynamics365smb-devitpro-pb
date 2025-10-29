@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-> This article is primarily intended for product owners, domain experts, consultants, and developers who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground Agent.
+[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
 To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. 
 

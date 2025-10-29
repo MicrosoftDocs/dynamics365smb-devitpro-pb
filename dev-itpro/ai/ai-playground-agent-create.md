@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-> This article is primarily intended for product owners, domain experts, consultants, and developers who want to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] using the AI Playground Agent.
+[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
 You can create an AI Playground Agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The Agent can be given specific instructions and tasks to see how it performs in different scenarios. The Agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
