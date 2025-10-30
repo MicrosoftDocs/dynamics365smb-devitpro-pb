@@ -1,12 +1,12 @@
 ---
 title: Create Agents with Copilot Studio
 description: Learn how to create conversational agents with Copilot Studio that integrate with Business Central data and automate business processes through natural language interactions.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
+author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/20/2025
+ms.date: 10/30/2025
 ms.custom: bap-template
 ---
 # Create agents in Copilot Studio that connect to Business Central
