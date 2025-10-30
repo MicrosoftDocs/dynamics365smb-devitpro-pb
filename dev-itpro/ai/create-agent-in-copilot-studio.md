@@ -135,7 +135,9 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 
 ## Create agents that connect to Business Central MCP Server
 
-[!INCLUDE [preview-section](~/../shared/preview-includes/preview-section.md)]
+[!INCLUDE [preview-section](~/../shared-content/shared/preview-includes/preview-section.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 Follow these steps to create an agent that connects to the Business MCP server.
 
