@@ -18,6 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
+SDK developers can graduate an AI Playground Agent to a production-ready Copilot feature by converting the agent's instructions, tasks, and permissions into an AL extension. This process involves translating the prototyped functionality into code that can be deployed in a production environment.
 
 ## Related information
 
