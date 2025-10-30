@@ -36,27 +36,11 @@ Creating an AI Playground Agent involves several key phases: design, configurati
 
 The development process is iterative by design. You can continuously refine your agent's instructions, adjust its permissions, and test different scenarios until it performs as expected. The playground environment provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
-<!--
-## Set up an AI Playground Agent
-
-The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents in your environment. To create a new AI Playground Agent, follow these steps:
-
-
-### Create an AI Playground Agent
-
-1. In the **Agents (preview)** page, choose **Playground**, and then **Create agent**. 
-This opens a **Create Agent (preview)**, where you can define the agent's **Type**, **Name**, **Display Name**, and **Initials**.
-1. The **Type** should be set to **Agent** for AI Playground agents.
-1. In **Name**, enter a unique name for the agent. This name is used to identify the agent in the system.
-1. The **Display Name** is the name that is shown to users when they interact with the agent.
-1. The **Initials** is used in the UI to represent the agent, such as in chat interfaces.
-1. Choose **OK**, and the **Create agent (preview)** dialog opens. -->
-
 ## Turn on AI Playground Agent capability
 
-The agent capability is on if the :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: AI Playground Agent icon appears in the top navigation menu of the role center.
+The agent capability is on if the :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: Agent icon appears in the top navigation menu of the role center.
 
-If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The AI Playground Agent is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities]().
+If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The AI Playground Agent is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities](/dynamics365/business-central/enable-ai).
 
 Next, configure and activate the agent to get started.
 
