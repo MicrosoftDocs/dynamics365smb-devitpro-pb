@@ -76,7 +76,7 @@ Agents can connect to Business Central through the Business Central MCP ([Model 
 
 To make your agents available to customers, you can publish them from Copilot Studio to one or more of the supported platforms or channels, including live websites, Microsoft 365 Copilot, Teams, and more.
 
-Learn more in [Create agents for Business Central with Copilot Studio](../developer/create-agent-in-copilot-studio.md).
+Learn more in [Create agents for Business Central with Copilot Studio](../ai/create-agent-in-copilot-studio.md).
 
 ## Related information
 

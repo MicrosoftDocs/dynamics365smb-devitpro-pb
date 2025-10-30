@@ -1,6 +1,6 @@
 ---
 title: Transparency Note Semantic Metadata Search in Business Central  
-description: Developer tools for Copilot in Business Central help you build safer, adaptable AI features. Learn how to use the toolkit and boost productivity.
+description: Semantic Metadata Search helps you build safer, adaptable AI features. Learn how to use the toolkit and boost productivity.
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer
@@ -79,5 +79,5 @@ Tested with over 12,000 cases covering synonyms, abbreviations, and semantic var
 
 ## Related information
 
-[Create agents with Copilot Studio](configure-mcp-server.md)  
-[Create agents with Copilot Studio](create-agent-in-copilot-studio.md#create-agents-that-use-business-central-mcp.md)  
+[Configure Business MCP server](configure-mcp-server.md)  
+[Create agents with Copilot Studio](create-agent-in-copilot-studio.md)  

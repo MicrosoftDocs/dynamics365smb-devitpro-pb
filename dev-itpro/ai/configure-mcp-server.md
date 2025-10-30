@@ -84,7 +84,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
 
 ## Next steps
 
-[Create agents with Copilot Studio](create-agent-in-copilot-studio.md#create-agents-that-use-business-central-mcp.md)  
+[Create agents with Copilot Studio](create-agent-in-copilot-studio.md)  
 
 ## Related information
 
