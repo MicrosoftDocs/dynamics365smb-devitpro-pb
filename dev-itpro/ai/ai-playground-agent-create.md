@@ -73,7 +73,7 @@ You can access and modify the settings of an existing AI Playground Agent either
 
 In the **Agents (preview)** page, choose the agent, and either open the **Agent Card (preview)** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** wizard opens.
 
-In the Copilot chat pane for the specific agent, choose the settings icon (<!-- insert icon -->) to open a **Configure agent (preview)** wizard.
+In the Copilot chat pane for the specific agent, choose the :::image type="content" source="../media/ai-playground-settings-icon.png" alt-text="AI Playground Agent settings icon"::: icon to open a **Configure agent (preview)** wizard.
 
 ### Understanding agent states
 
