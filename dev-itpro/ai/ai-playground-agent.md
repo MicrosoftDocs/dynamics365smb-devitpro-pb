@@ -14,33 +14,6 @@ ms.update-cycle: 180-days
 
 # AI Playground Agent overview (preview)
 
-<!-- split into more articles, use this as a starting point. Live in devitpro, linking from app repo 
-
-Overview (existing ai-playground-agent.md)
-    Purpose & audience
-    When to use / when not to use
-    Lifecycle summary (Create → Iterate → Graduate)
-    High-level concepts: Instructions, Tasks, Permissions, Profile
-    Limitations (preview)
-    Next steps links
-Create and manage a Playground agent (ai-playground-agent-create.md)
-    Prerequisites
-    Create (step list + field table)
-    Activate / Deactivate
-    Edit (what requires deactivation)
-    Delete / cleanup
-    Lifecycle tips
-Configure instructions, tasks, and permissions (ai-playground-agent-configure.md)
-    Instructions (guidelines + good/bad example)
-    Tasks (definition, when they run, adding/modifying)
-    Permissions & least privilege (including profiles & page customization flags)
-    User access (who can interact)
-    Monitoring (Agent Task Log basics)
-    Graduating to AL extension (short hand-off checklist)
-Best practices for prototyping with AI Playground (ai-playground-agent-best-practices.md)
-    Best practices for instructions, tasks, and permissions
--->
-
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
@@ -104,9 +77,11 @@ Understanding the following key concepts helps you work effectively with AI Play
 
 Before you can use the AI Playground Agent, ensure that you have the following prerequisites in place:
 
-- Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]
-- Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)]
-- A sandbox environment for testing and experimentation
+- - Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
+- Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)].
+- A sandbox environment for testing and experimentation (can include customer data such as sandbox copies of production data)
+- Set up the [!INCLUDE [prod_short](../includes/prod_short.md)] environment for billing agent capabilities in the [!INCLUDE [prod_short](../includes/prod_short.md)] Admin Center.  
+Agents use Microsoft Copilot Studio messages when activated, which your company is charged for. Learn more in [Manage consumption-based billing](../administration/tenant-admin-center-manage-consumption-billing.md).
 
 ### Instructions and tasks
 
