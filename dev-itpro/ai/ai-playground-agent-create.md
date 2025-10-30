@@ -83,19 +83,9 @@ When you configure the agent, it uses the same language as the display language 
 
 The Agent icon changes to :::image type="content" source="../media/ai-playground-icon.png" alt-text="AI Playground Agent icon"::: after configured, indicating the agent is active and ready to handle tasks.
 
-
-## Activate an AI Playground Agent
-
-Once you have created and configured your AI Playground Agent, you need to activate it before it can start handling tasks. To activate the AI Playground Agent for your company, follow these steps:
-
-1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> AI Playground Agent > Activate.
-1. On the Configure the AI Playground Agent page, select OK to activate the agent.
-
-When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon in the top navigation menu of the role center.
-
 ### Accessing agent settings after creation
 
-You can access and modify the settings of an existing AI Playground Agent either from the Copilot chat pane or by navigating to the **Agents (preview)** page and selecting the agent you want to configure. 
+You can access and modify the settings of an existing AI Playground Agent either from the badge icon :::image type="content" source="../media/ai-playground-icon.png" alt-text="AI Playground Agent icon"::: or by navigating to the **Agents (preview)** page and selecting the agent you want to configure.
 
 In the **Agents (preview)** page, choose the agent, and either open the **Agent Card (preview)** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** wizard opens.
 
