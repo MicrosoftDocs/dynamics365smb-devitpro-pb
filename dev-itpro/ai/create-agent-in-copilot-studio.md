@@ -65,8 +65,6 @@ In short, the connector offers ease of use and rapid development, while the MCP 
 
 ## Create agents that use Business Central connector
 
-[!INCLUDE [preview-section](~/../shared-content/shared/preview-includes/preview-section.md)]
-
 You can use the Business Central connector actions, like `Create Record` or `List Companies`, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the `Find Records`, `Create Record`, and `Update Record`actions as tools to the agent.
 
 Learn more about the connector and its actions in [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas/).
@@ -136,6 +134,8 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 - **Logging:** Use the agent’s execution logs to troubleshoot tool calls and to see request/response payloads.
 
 ## Create agents that connect to Business Central MCP Server
+
+[!INCLUDE [preview-section](~/../shared/preview-includes/preview-section.md)]
 
 Follow these steps to create an agent that connects to the Business MCP server.
 
