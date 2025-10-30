@@ -67,14 +67,18 @@ Next, configure and activate the agent to get started.
 
 The **Create agent (preview)** wizard allows you to configure your AI Playground Agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
-1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> AI Playground Agent.
-1. Choose the <Settings icon> and the **Create agent (preview)** wizard opens.
-1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
+1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> Agent > Activate.
+1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** for the agent. The **Intials** field value is suggested based on the **Display Name**, but can be modified.
+:::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="AI Playground Agent setup":::
+1. In the **Description** field, provide an optional description for the agent.
+1. nder **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
 This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
+1. Choose the arrow to go to the next page of the wizard.
 1. Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with.  
 You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
 1. Under **Permissions**, use **Manage permissions** to add the permissions that the agent should have.  
 This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
+1. Use the arrow to go to the previous page of the wizard.
 1. Turn on the **Active** toggle.
 1. Select **Update** to complete the setup.
 
