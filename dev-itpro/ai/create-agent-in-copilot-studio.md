@@ -65,6 +65,8 @@ In short, the connector offers ease of use and rapid development, while the MCP 
 
 ## Create agents that use Business Central connector
 
+[!INCLUDE [preview-section](~/../shared-content/shared/preview-includes/preview-section.md)]
+
 You can use the Business Central connector actions, like `Create Record` or `List Companies`, in your agent by adding them as *tools*. Tools are the building blocks that enable your agent to interact with external systems, in this case, Business Central. For example, if you want to create an agent that allows you list, create, and update items in Business Central, add the `Find Records`, `Create Record`, and `Update Record`actions as tools to the agent.
 
 Learn more about the connector and its actions in [Dynamics 365 Business Central Connector](/connectors/dynamicssmbsaas/).
@@ -126,7 +128,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 
    Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
 
-### Notes and tips
+### Tips and best practices when using connector
 
 - **Permissions:** The connection uses the signed-in account’s Business Central permissions; ensure the account can read companies and create customers.
 - **Validation:** Use server-side validation rules in Business Central (pricing/validation). The connector surfaces errors; handle these errors in agent responses.
@@ -155,17 +157,15 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
       |Field|Value|
       |-|-|
-      |Environment|The Business Central environment that the agent connects to. Select the down arrow and select the environment for the environments appear.|
-      |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the environments appear.|
-      |MCP Server Configuration|The MCP configuration defined in Business Central that the agent uses. An MCP configuration specifies the APIs the agent can access and its permissions (create, read, update, or delete). Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md). <br><br>If you leave this field blank, the agent has read-only access to all API pages in the Business Central environment. |
+      |Environment|The Business Central environment that the agent connects to. Select the down arrow and select the environment when it appears.|
+      |Company|The company in Business Central that the agent connects to. Select the down arrow and select the company when it appears.|
+      |MCP Server Configuration|The MCP configuration defined in Business Central that the agent uses. An MCP configuration specifies the APIs the agent can access and its permissions (create, read, update, or delete). Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md).<br><br>You can leave this field blank, in which case, the agent has read-only access to all exposed API pages in the Business Central environment. |
 
    1. Go to the **Tools** section to view the individual tools (APIs) available to the agent, based on the **MCP Server Configuration** field. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in the list header to make sure the view is up-to-date.
 
-      - If you didn't specify a configuration: the list shows only the standard server actions—`bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. All API pages in Business Central are still available to the agent as read‑only tools but are discovered dynamically and therefore aren't listed individually.
-      - If you specified a configuration that uses dynamic tool mode: the list shows only the standard actions (`bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`). API pages defined in the configuration are available to the agent at runtime and aren't listed individually.
-      - If you specified a configuration that doesn't use dynamic tool mode: the list includes the standard actions plus as a separate tool entry for each action configured for API pages, so you can review and manage them individually. 
-
-        For each tool the agent should access, turn on the **Allow** switch. To permit all listed tools, enable **Allow All**.
+      - If you didn't specify a configuration: the list shows only the standard server actions `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. Read-only tools are available to the agent for all API pages in Business Central but they're are discovered dynamically and therefore not listed individually.|
+      - If you specified a configuration that uses dynamic tool mode: the list shows the standard actions (`bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`). Tools for API pages defined in the configuration are available to the agent at runtime but aren't listed individually.
+      - If you specified a configuration that doesn't use dynamic tool mode: the list includes tools for API pages included in the configuration, so you can review and manage them individually.
 
       Learn more about tools and dynamics tool mode in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations) and [How API object entries in Business Central map to MCP server tools](configure-mcp-server.md#how-api-page-object-entries-map-to-mcp-server-tools).
 1. Select **Save**.
@@ -177,6 +177,18 @@ Follow these steps to create an agent that connects to the Business MCP server.
 1. Publish and deploy the agent.
 
    Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
+
+### Tips and best practices when using MCP Server
+
+- To improve results:
+
+  - Use a version of GTP-5 as the model
+  - Give the instructions to the agent.
+- To get a list of available API pages in a Business Central environment, open the Page Metadata virtual table (ID 2000000138) in the Business Central web client by using the following URL, customized for the enviroment the agent connects to:
+
+  ```http
+  https://businesscentral.dynamics.com/<tenant ID>/<environmet name>?table=2000000138
+  ```
 
 ## Related information
 

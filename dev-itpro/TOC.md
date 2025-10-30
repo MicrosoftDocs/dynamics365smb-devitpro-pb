@@ -1730,8 +1730,8 @@
 <!-- end Microsoft Power BI -->
 <!-- Microsoft Copilot Studio -->
 ### Integrating with Microsoft Copilot Studio
-#### [Configure Business Central MCP Server](ai/configure-mcp-server.md)
-#### [Create agents to connect to Business Central](ai/create-agent-in-copilot-studio.md) 
+#### [Create agents that connect to Business Central](ai/create-agent-in-copilot-studio.md)
+#### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md)
 <!-- end Microsoft Copilot Studio -->
 <!-- end Microsoft Power Platform -->
 
