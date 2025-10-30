@@ -55,7 +55,6 @@ Once the MCP server is enabled and configured, the individual configurations bec
    |Allow Bound Actions|Specifies whether bound actions are allowed for this tool. A bound action is an OData action that is bound to a resource, like a table or record |
 
 
-
 ## Next steps
 
 [Create agents with Copilot Studio](create-agent-in-copilot-studio.md#create-agents-that-use-business-central-mcp.md)  

@@ -153,16 +153,17 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
       |Field|Value|
       |-|-|
-      |Environment|The Business Central environment the agent connects to. Select the down arrow and select the environment for the environments appear.|
+      |Environment|The Business Central environment that the agent connects to. Select the down arrow and select the environment for the environments appear.|
       |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the environments appear.|
-      |MCP Server Configuration|The MCP configuration defined in Business Central the agent uses. Select the down arrow and select one of the available configurations. Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md)|
+      |MCP Server Configuration|The MCP configuration defined in Business Central that the agent uses. An MCP configuration specifies the APIs the agent can access and its permissions (create, read, upgate, or delete). Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md). <br><br>If you leave this field blank, the agent has read-only access to all API pages in the Business Central environment. |
 
-   1. The **Tools** section on the page displays the individual tools available to the agent. Use this section to specific which tools the agent is allowed to use.
+   1. Go to the **Tools** section to view the individual tools (APIs) available to the agent. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in heading of the list to make sure it's up-to-date.
+
+     If you didn't specify a value in **MCP Server Configuration** field, the tools list contains only the standard Business Central tools available to the server: `bc_actions_search`, `bc_actions_describe`, and `` bc_actions_invoke`. 
+
+     Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
 
       For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, turn on the **Allow All** to allow all listed tools.
-
-      > [!NOTE]
-      > If there are no tools listed, then the selected MCP configuration is set to automatically detect and allow tools, so you don't need can't manually allow them. Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
 
 1. Select **Save**.
 1. Test the agent.
