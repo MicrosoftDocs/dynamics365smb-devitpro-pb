@@ -31,7 +31,16 @@
 #### [Marketing validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
 
-#### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
+#### [AppSource technical validation FAQ](developer/devenv-checklist-submission-faq.md)
+##### [AppSource technical validation process FAQ](developer/devenv-checklist-submission-validation-process.md)
+##### [AppSource app identity FAQ](developer/devenv-checklist-submission-app-identity.md)
+##### [AppSource Azure Application Insights and submission FAQ](developer/devenv-checklist-submission-app-insights.md)
+##### [AppSource app previews FAQ](developer/devenv-checklist-submission-app-preview.md)
+##### [AppSource Business Central offer FAQ](developer/devenv-checklist-submission-offer.md)
+##### [AppSource names, affixes, and ID ranges FAQ](developer/devenv-checklist-submission-name-affix-range.md)
+##### [Develop and maintain AppSource apps FAQ](developer/devenv-checklist-submission-develop-maintain.md)
+##### [AppSource code-signing validation FAQ](developer/devenv-checklist-submission-code-sign.md)
+##### [AppSource channels for questions and issues FAQ](developer/devenv-checklist-submission-channels.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Embed apps
