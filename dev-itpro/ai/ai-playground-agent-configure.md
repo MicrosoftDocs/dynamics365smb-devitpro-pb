@@ -1,5 +1,5 @@
 ---
-title: Configure instructionsand tasks for an AI Playground Agent (preview)
+title: Configure instructions and tasks for an AI Playground Agent (preview)
 description: Learn how you can use AI Playground Agent in Business Central.
 author: solsen
 ms.author: solsen
@@ -19,6 +19,16 @@ ms.update-cycle: 180-days
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
 To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md).
+
+## Instruction framework
+
+Effective agent instructions follow a structured approach with three key components:
+
+- **Responsibilities** Define what the agent is accountable for (for example, handling customer reminders, processing credit memos, or managing sales quotes)
+- **Guidelines** Set rules that apply across all tasks (for example, always request user review before posting documents or sending external communications)  
+- **Instructions** Provide step-by-step, ordered lists for each specific task, including sub-steps for clarity
+
+This framework ensures that agents act consistently, handle exceptions gracefully, and involve users when necessary.
 
 ### Writing effective instructions
 
@@ -58,6 +68,40 @@ If you're having difficulty achieving accuracy with your agent:
 
 Test your instructions thoroughly to ensure they lead to the desired behavior, and iterate based on the agent's actual performance.
 
+#### User intervention and review guidelines
+
+##### When to request user intervention
+
+- The agent should request user intervention when it can't proceed due to missing data, ambiguous situations, or validation errors
+- Provide clear examples in your instructions of when to ask for help
+- Default behavior: Any validation errors or missing critical information should trigger user intervention
+
+Examples of intervention scenarios:
+
+- If customer information is incomplete or foreign, ask for user intervention
+- If required items aren't found in inventory, request assistance  
+- When encountering unexpected error messages or system responses
+
+##### User review requirements
+
+- Agents should always request user review before proceeding with critical steps or sending outgoing messages
+- All outgoing communications (emails, documents, notifications) require user review by default
+- After completing significant actions (like creating sales quotes or processing orders), request user review before moving forward
+
+##### Response handling
+
+- Agents draft messages and responses based on instructions but must confirm before sending
+- Provide clear summaries of actions taken and request clarification when needed
+- Example: After creating a sales quote, reply with a summary and ask for any needed clarifications from the customer
+
+#### Memory and state management
+
+Agents retain a history of their actions and searches but don't store the full state of every page they interact with. To ensure important information is preserved:
+
+- Include explicit instructions to memorize specific key-value pairs when needed
+- Stored values can be referenced in later steps of the same task
+- Example: "Memorize the external document reference from the newly created sales quote for use in follow-up communications"
+
 <!-- Add example of good instructions, like shown in the partner video. Link to best practices for prompting -->
 
 ### Defining tasks
@@ -83,6 +127,35 @@ You can simulate these trigger scenarios manually:
 - **Recurrence simulation**: Create tasks manually at intervals to test recurring scenarios
 
 This manual approach allows you to validate your agent's behavior across different trigger scenarios during the prototyping phase.
+
+## Instruction optimization and continuous improvement
+
+### Error handling and validation
+
+When writing instructions, include specific guidance for error handling:
+
+- **Validate inputs**: Ensure all required fields are filled before proceeding with critical actions
+- **Improve error messages**: Make error messages clear, specific, and actionable for both the agent and users
+- Use emphasis to highlight critical validation points
+
+Examples:
+
+- **DO NOT** proceed until the requested date is entered
+- Validate that the request date is entered for this month before processing
+- **ALWAYS** confirm customer details are complete before creating quotes
+
+### Instruction management and testing
+
+- **Test for accuracy regularly** Instruction effectiveness can change over time as systems and processes evolve
+- **Use AI optimization** Leverage AI tools like Copilot to help refine and update instructions
+- **Dynamic updates** Instructions can be updated through setup pages without requiring agent reconfiguration
+- **Less is more** Shift from verbose to concise instructions—simpler instructions often perform better than complex ones
+
+### Advanced capabilities
+
+**Page-specific instructions** You can provide dynamic prompts based on the specific pages or contexts the agent encounters. Use conditional logic for instructions tied to particular scenarios.
+
+**Additional tools** Agents can use advanced tools like field setting, lookups, and action invocation. Include specific keywords in your instructions that help the agent utilize these tools effectively within the agent runtime.
 
 ## Related information
 
