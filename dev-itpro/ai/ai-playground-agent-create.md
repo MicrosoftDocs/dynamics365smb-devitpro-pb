@@ -36,7 +36,7 @@ Creating an AI Playground Agent involves several key phases: design, configurati
 
 The development process is iterative by design. You can continuously refine your agent's instructions, adjust its permissions, and test different scenarios until it performs as expected. The playground environment provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
-<!-->
+<!--
 ## Set up an AI Playground Agent
 
 The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents in your environment. To create a new AI Playground Agent, follow these steps:
