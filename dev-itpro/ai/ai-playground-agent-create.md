@@ -36,9 +36,11 @@ Creating an AI Playground Agent involves several key phases: design, configurati
 
 The development process is iterative by design. You can continuously refine your agent's instructions, adjust its permissions, and test different scenarios until it performs as expected. The playground environment provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
+<!-->
 ## Set up an AI Playground Agent
 
 The **Agents (preview)** page is where you create and manage your AI Playground agents. The list shows all the agents in your environment. To create a new AI Playground Agent, follow these steps:
+
 
 ### Create an AI Playground Agent
 
@@ -48,17 +50,34 @@ This opens a **Create Agent (preview)**, where you can define the agent's **Type
 1. In **Name**, enter a unique name for the agent. This name is used to identify the agent in the system.
 1. The **Display Name** is the name that is shown to users when they interact with the agent.
 1. The **Initials** is used in the UI to represent the agent, such as in chat interfaces.
-1. Choose **OK**, and the **Create agent (preview)** dialog opens.
+1. Choose **OK**, and the **Create agent (preview)** dialog opens. -->
+
+## Turn on AI Playground Agent capability
+
+The agent capability is on if the AI Playground Agent icon appears in the top navigation menu of the role center.
+
+image
+<!-- image that shows the AI Playground Agent icon on a role center -->
+
+If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The AI Playground Agent is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities]().
+
+Next, configure and activate the agent to get started.
 
 ### Configure an AI Playground Agent
 
-The **Create agent (preview)** dialog allows you to configure your AI Playground Agent by setting up its instructions, profile, and permissions. The dialog is also where you enable the agent for use, once it's set up.
+The **Create agent (preview)** wizard allows you to configure your AI Playground Agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
-Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
+1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> AI Playground Agent.
+1. Choose the <Settings icon> and the **Create agent (preview)** wizard opens.
+1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
+This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
+1. Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with.  
+You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
+1. Under **Permissions**, use **Manage permissions** to add the permissions that the agent should have.  
+This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
+1. Turn on the **Active** toggle.
+1. Select **Update** to complete the setup.
 
-Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
-
-Under **Permissions**, use **Manage permissions** to add the permissions that the agent should have. This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
 
 ## Activate an AI Playground Agent
 
@@ -73,9 +92,9 @@ When the AI Playground Agent is enabled, you see the <!-- insert icon --> icon i
 
 You can access and modify the settings of an existing AI Playground Agent either from the Copilot chat pane or by navigating to the **Agents (preview)** page and selecting the agent you want to configure. 
 
-In the **Agents (preview)** page, choose the agent, and either open the **Agent Card (preview)** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** dialog opens.
+In the **Agents (preview)** page, choose the agent, and either open the **Agent Card (preview)** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** wizard opens.
 
-In the Copilot chat pane for the specific agent, choose the settings icon (<!-- insert icon -->) to open a **Configure agent (preview)** dialog.
+In the Copilot chat pane for the specific agent, choose the settings icon (<!-- insert icon -->) to open a **Configure agent (preview)** wizard.
 
 ### Understanding agent states
 
