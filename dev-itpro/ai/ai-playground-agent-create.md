@@ -54,10 +54,7 @@ This opens a **Create Agent (preview)**, where you can define the agent's **Type
 
 ## Turn on AI Playground Agent capability
 
-The agent capability is on if the AI Playground Agent icon appears in the top navigation menu of the role center.
-
-image
-<!-- image that shows the AI Playground Agent icon on a role center -->
+The agent capability is on if the :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: AI Playground Agent icon appears in the top navigation menu of the role center.
 
 If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The AI Playground Agent is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities]().
 
@@ -67,7 +64,7 @@ Next, configure and activate the agent to get started.
 
 The **Create agent (preview)** wizard allows you to configure your AI Playground Agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
-1. In the navigation bar at the upper right of the role center, select <!-- insert icon --> Agent > Activate.
+1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: Agent > Activate.
 1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** for the agent. The **Intials** field value is suggested based on the **Display Name**, but can be modified.
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="AI Playground Agent setup":::
 1. In the **Description** field, provide an optional description for the agent.

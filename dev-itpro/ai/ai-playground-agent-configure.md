@@ -68,7 +68,7 @@ You invoke your agent by manually creating a task for it. When creating a task, 
 
 #### Current limitations in public preview
 
-The public preview of the agent builder playground doesn't include built-in integrations for automatically triggering your custom agents based on:
+The public preview of the agent playground doesn't include built-in integrations for automatically triggering your custom agents based on:
 
 - Incoming emails
 - System events  
