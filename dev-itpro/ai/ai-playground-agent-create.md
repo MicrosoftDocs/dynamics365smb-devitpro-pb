@@ -38,7 +38,7 @@ The development process is iterative by design. You can continuously refine your
 
 ## Turn on AI Playground Agent capability
 
-The agent capability is on if the :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: Agent icon appears in the top navigation menu of the role center.
+The agent capability is on if the :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: **Agent** icon appears in the top navigation menu of the role center.
 
 If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The AI Playground Agent is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities](/dynamics365/business-central/enable-ai).
 
@@ -48,11 +48,11 @@ Next, configure and activate the agent to get started.
 
 The **Create agent (preview)** wizard allows you to configure your AI Playground Agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
-1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: Agent > Activate.
+1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: **Agent** > **Activate**.
 1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** for the agent. The **Intials** field value is suggested based on the **Display Name**, but can be modified.
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="AI Playground Agent setup":::
 1. In the **Description** field, provide an optional description for the agent.
-1. nder **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
+1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
 This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
 1. Choose the arrow to go to the next page of the wizard.
 1. Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with.  
@@ -77,7 +77,7 @@ In the Copilot chat pane for the specific agent, choose the settings icon (<!-- 
 
 ### Understanding agent states
 
-An agent is also by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks. Working on the setup, you can switch the agent between **Disabled** and **Active** states as needed. To modify the permissions of an agent, you must first deactivate it.
+An agent is by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks. Working on the setup, you can switch the agent between **Disabled** and **Active** states as needed. To modify the permissions of an agent, you must first deactivate it.
 
 ## Related information
 
