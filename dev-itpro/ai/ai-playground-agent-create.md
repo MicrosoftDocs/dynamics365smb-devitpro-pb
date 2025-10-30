@@ -69,7 +69,7 @@ The Agent icon changes to :::image type="content" source="../media/ai-playground
 
 ### Accessing agent settings after creation
 
-You can access and modify the settings of an existing AI Playground Agent either from the badge icon :::image type="content" source="../media/ai-playground-icon.png" alt-text="AI Playground Agent icon"::: or by navigating to the **Agents (preview)** page and selecting the agent you want to configure.
+You can access and modify the settings of an existing AI Playground Agent either from the icon :::image type="content" source="../media/ai-playground-icon.png" alt-text="AI Playground Agent icon"::: or by navigating to the **Agents (preview)** page and selecting the agent you want to configure.
 
 In the **Agents (preview)** page, choose the agent, and either open the **Agent Card (preview)** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** wizard opens.
 
