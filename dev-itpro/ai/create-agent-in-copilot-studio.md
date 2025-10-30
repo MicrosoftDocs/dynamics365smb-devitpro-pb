@@ -11,7 +11,7 @@ ms.custom: bap-template
 ---
 # Create agents in Copilot Studio that connect to Business Central
 
-This article explains how to build, configure, and publish agents in Coplit Studio that integrate with Business Central using either the Business Central Connector or the Business Central MCP Server.
+This article explains how to build, configure, and publish agents in Copilot Studio that integrate with Business Central using either the Business Central Connector or the Business Central MCP Server.
 
 ## Overview
 
@@ -157,18 +157,17 @@ Follow these steps to create an agent that connects to the Business MCP server.
       |-|-|
       |Environment|The Business Central environment that the agent connects to. Select the down arrow and select the environment for the environments appear.|
       |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the environments appear.|
-      |MCP Server Configuration|The MCP configuration defined in Business Central that the agent uses. An MCP configuration specifies the APIs the agent can access and its permissions (create, read, upgate, or delete). Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md). <br><br>If you leave this field blank, the agent has read-only access to all API pages in the Business Central environment. |
+      |MCP Server Configuration|The MCP configuration defined in Business Central that the agent uses. An MCP configuration specifies the APIs the agent can access and its permissions (create, read, update, or delete). Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md). <br><br>If you leave this field blank, the agent has read-only access to all API pages in the Business Central environment. |
 
-   1. Go to the **Tools** section to view the individual tools (APIs) available to the agent, based on the **MCP Server Configuration** field value. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in heading of the list to make sure it's up-to-date.
+   1. Go to the **Tools** section to view the individual tools (APIs) available to the agent, based on the **MCP Server Configuration** field. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in the list header to make sure the view is up-to-date.
 
-      - If you didn't specify a configuration, the tools list includes only the standard server actions for working with Business Central: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. All API pages objects are available to the agent as read-only tools, but these aren't listed because the agent discovers them dynamically.
-      - If you specified a configuration that uses dynamics tool mode, the tools list includes only the standard Business Central tools available to the server: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. All Business Central API pages defined in the configuration are available as tools for agent, but aren't listed because the agent discovers them dynamically.
-      - If you specified a configuration that doesn't use dynamics tool mode, the tools list includes only all the standard Business Central tools available to the server: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. All Business Central API pages defined in the configuration are available as tools for agent, but aren't listed because the agent discovers them dynamically.
+      - If you didn't specify a configuration: the list shows only the standard server actions—`bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. All API pages in Business Central are still available to the agent as read‑only tools but are discovered dynamically and therefore aren't listed individually.
+      - If you specified a configuration that uses dynamic tool mode: the list shows only the standard actions (`bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`). API pages defined in the configuration are available to the agent at runtime and aren't listed individually.
+      - If you specified a configuration that doesn't use dynamic tool mode: the list includes the standard actions plus as a separate tool entry for each action configured for API pages, so you can review and manage them individually. 
 
-      Learn more about dynamic tool mode in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
+        For each tool the agent should access, turn on the **Allow** switch. To permit all listed tools, enable **Allow All**.
 
-     For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, turn on the **Allow All** to allow all listed tools.
-
+      Learn more about tools and dynamics tool mode in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations) and [How API object entries in Business Central map to MCP server tools](configure-mcp-server.md#how-api-page-object-entries-map-to-mcp-server-tools).
 1. Select **Save**.
 1. Test the agent.
    1. Select **Test** in the upper-right corner of any page to open the **Test your agent** pane.
