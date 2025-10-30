@@ -36,21 +36,21 @@ At the core of defining agents is expressing goals and instructions in natural l
 
 #### Key principles for agent instructions
 
-**Structure and brevity**:
+##### Structure and brevity
 
 - **Introduce structure** in your instructions using clear sections and formatting
 - **Write as few instructions as possible** while maintaining clarity—concise instructions often perform better
 - Use **emphasis** (bold text, UPPERCASE) to highlight important points
 - Apply **numbering** to create logical flow and priorities
 
-**Formatting for clarity**:
+##### Formatting for clarity
 
 - Use bullet points or numbered lists for multi-step processes
 - Bold key terms and critical requirements
 - Structure instructions with clear headings when appropriate
 - Keep sentences short and direct
 
-**Agent-specific considerations**:
+##### Agent-specific considerations
 
 - Include **specific keywords or phrasing** to help the agent utilize available tools in the agent runtime effectively
 - Review the UI that the agent has access to based on its profile before writing instructions

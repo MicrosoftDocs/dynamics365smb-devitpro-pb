@@ -29,7 +29,7 @@ Effective agent instructions are specific, actionable, and contextual:
 **Good example:**
 
 ```text
-You are a customer service agent for a Business Central implementation. 
+You're a customer service agent for a Business Central implementation. 
 When users ask about customer information, search the Customer table and provide:
 - Customer name and number
 - Contact details (phone, email)
