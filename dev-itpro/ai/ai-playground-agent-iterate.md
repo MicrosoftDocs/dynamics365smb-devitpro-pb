@@ -18,6 +18,10 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
+
+IMPORT/EXPORT agent - description missing - need to add
+
+
 ## Understand agent decision-making
 
 - Agents act based on instructions and the data available at each decision point.
