@@ -157,13 +157,15 @@ Follow these steps to create an agent that connects to the Business MCP server.
       |Company|The company in Business Central that the agent connects to. Select the down arrow and select the environment for the environments appear.|
       |MCP Server Configuration|The MCP configuration defined in Business Central that the agent uses. An MCP configuration specifies the APIs the agent can access and its permissions (create, read, upgate, or delete). Learn more about MCP Server configurations in [Configure Business Central MCP Server](configure-mcp-server.md). <br><br>If you leave this field blank, the agent has read-only access to all API pages in the Business Central environment. |
 
-   1. Go to the **Tools** section to view the individual tools (APIs) available to the agent. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in heading of the list to make sure it's up-to-date.
+   1. Go to the **Tools** section to view the individual tools (APIs) available to the agent, based on the **MCP Server Configuration** field value. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in heading of the list to make sure it's up-to-date.
 
-     If you didn't specify a value in **MCP Server Configuration** field, the tools list contains only the standard Business Central tools available to the server: `bc_actions_search`, `bc_actions_describe`, and `` bc_actions_invoke`. 
+      - If you don't specify a configuration, the tools list includes only the standard server actions for working with Business Central: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. All API pages objects are available to the agent as read-only tools, but these aren't listed because the agent discovers them dynamically.
+      - If you specied a configuration that uses dynamics tool mode, the tools list includes only the standard Business Central tools available to the server: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. All Business Central API pages defined in the configuration are available as tools for agent, but aren't listed because the agent discovers them dynamically.
+      - If you specied a configuration that doesn't use dynamics tool mode, the tools list includes only all the standard Business Central tools available to the server: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. All Business Central API pages defined in the configuration are available as tools for agent, but aren't listed because the agent discovers them dynamically.
 
      Learn more about tool detection in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations).
 
-      For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, turn on the **Allow All** to allow all listed tools.
+     For each tool you want the agent to access, turn on the **Allow** switch for each tool you want the agent to access. Alternatively, turn on the **Allow All** to allow all listed tools.
 
 1. Select **Save**.
 1. Test the agent.

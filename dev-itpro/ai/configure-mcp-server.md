@@ -35,22 +35,22 @@ Once the MCP server is enabled and configured, the individual configurations bec
    |-|-|
    |Name|Specifies the configuration's name. This name appears in Copilot Studio to assign the configuration to MCP Server connection for an agent.|
    |Description|Specifies a brief description of the configuration.|
-   |Active|When on, the configuration and its tools are available for agents to use. If you turn the switch off, agents that currently use the configuration won't work as expected.|
-   |Dynamic Tool Mode|When on, agents that use the configuration can search for tools within the configuration dynamically. In the MCP server configuration for the agent in Copilot Studio, you don't explicitly allow access to the tools. If off, you select the tools you want to allow the agent to use.|
-   |Discover Additional Objects|When on, read-only objects that aren't defined as tools in the configuration are also accessible by agents. This switch only applies when the **Dynamics Tool Mode** is on. |
-   |Allow Create/Update/Delete Tools|When off, agents that use this configuration can't perform create, update, and delete operations on tools even if the operations are enabled.|
+   |Active|Specifies whether the configuration is active. When this switch is on, the configuration and its tools are available for agents to use. If you turn the switch off, agents that currently use the configuration won't work as expected.|
+   |Dynamic Tool Mode|Specifies whether to enable dynamic tool mode for the MCP configuration. When this switch is on, agents search for tools within the configuration dynamically, which means the tools don't have to be explicitly added to agent configuration.<br><br>This option is useful when you expose a large number of API pages because some clients, like Copilot Studio, limit the number of tools on an agent. Tools in excess of the limit are not available to the agent. <br><br>For example, Copilot Studio currently has a limit of 70 tools. If you add all standard APIs as tools in the configuration, only the first 70 are available to agents you build in Copilot Studio. To make all the standard APIs available, turn the switch on.|
+   |Discover Additional Objects|Specifies whether to allow discovery of read-only objects not defined in the configuration. When this switch is on, agents that use the configuration also have ready-only access to all the environment's API page objects in the environment that aren't included as tools in the configuration. This switch only applies when the **Dynamic Tool Mode** is on. |
+   |Allow Create/Update/Delete Tools|Specifies whether APIs included as tools in the configuration can perform create, update, or delete operations. When this switch is turned off, agents that use this configuration can't perform create, update, and delete operations on tools even if the operations are enabled in the configuration.|
 
 1. In the **Tools** section, add API page objects as tools to the configuration.
 
-   You add the objects individually in lines. Select **Add All Standard APIs as Tools** to automatically add all Business Central API pages as tools.
-
-   Set the permissions agents have for each tool according to the following table: 
+   You can add objects individually as separate entries. Select **Add All Standard APIs as Tools** to automatically add all Business Central API pages as tools.
 
    |Permission|Description|
    |-|-|
    |Allow Read|Specifies whether read operations are allowed for this tool.|
    |Allow Create|Specifies whether create operations are allowed for this tool.|
    |Allow Modify|Specifies whether modify operations are allowed for this tool.|
+   |Allow Delete|Specifies whether delete operations are allowed for this tool.|
+   |Allow Bound Actions|Specifies whether bound actions are allowed for this tool. A bound action is an OData action that is bound to a resource, like a table or record.|
    |Allow Delete|Specifies whether delete operations are allowed for this tool.|
    |Allow Bound Actions|Specifies whether bound actions are allowed for this tool. A bound action is an OData action that is bound to a resource, like a table or record |
 
