@@ -52,7 +52,6 @@ Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, 
 |Setup complexity|Low|Medium|
 |API coverage|Limited to standard entities|Full (including custom APIs)|
 |Customization|Limited|Extensive|
-|Integration with Power Platform|Native|Requires custom flows|
 |Performance tuning|Minimal control|Full control|
 |Authentication|Managed via Power Platform|Requires OAuth setup|
 
@@ -186,7 +185,27 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
   - Use a version of GTP-5 as the model
   - Give the instructions to the agent.
-- To get a list of available API pages in a Business Central environment, open the Page Metadata virtual table (ID 2000000138) in the Business Central web client by using the following URL, customized for the enviroment the agent connects to:
+  
+    Instructions are the directions and parameters an agent follows. Agents depend on instructions to:
+
+    - Decide what tool or knowledge might need to be called to address a user query or autonomous trigger.
+    - Fill inputs for any tool based on the available context.
+    - Generate a response to the end user.
+
+      To add instructions, go to the **Overview** tab on the agent page, and add instructions in the **Instructions** section.  For example:
+
+      ```
+      You are a Business Central agent. The user will ask a question, or ask you to perform a task or retrieve data. Start by outlining a plan of what you have and what you must do and then use the available tools to retrieve the relevant information.
+   
+      Clearly show your reasoning, before trying to invoke any tool. 
+   
+      Additionally:
+      Prefer using semantic search when searching for available actions.
+      ```
+
+      Learn more in [Write instructions](/microsoft-copilot-studio/authoring-instructions?branch=main).
+
+  - To get a list of available API pages in a Business Central environment, open the Page Metadata virtual table (ID 2000000138) in the Business Central web client by using the following URL, customized for the enviroment the agent connects to:
 
   ```http
   https://businesscentral.dynamics.com/<tenant ID>/<environmet name>?table=2000000138
