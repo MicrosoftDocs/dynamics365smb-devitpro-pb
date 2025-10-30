@@ -81,6 +81,10 @@ This allows you to define what data and actions it can access. This is important
 1. Use the arrow to go to the previous page of the wizard.
 1. Turn on the **Active** toggle.
 1. Select **Update** to complete the setup.
+<!--1. Ensure the Agent's language is set to a supported language.  
+When you configure the agent, it uses the same language as the display language of your workspace. Learn how to change the agent's language.-->
+
+The Agent icon changes to :::image type="content" source="../media/ai-playground-icon.png" alt-text="AI Playground Agent icon"::: after configured, indicating the agent is active and ready to handle tasks.
 
 
 ## Activate an AI Playground Agent
