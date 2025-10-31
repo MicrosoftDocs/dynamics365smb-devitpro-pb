@@ -50,7 +50,7 @@ Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, 
 ## Prerequisites
 
 - You have a Copilot Studio user license with available Copilot Credits capacity for use. Learn more in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing).
-- To connect the agent to the Business Central MCP Server, it must be enabled and configured in the Business Central environment. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+- To connect the agent to the Business Central MCP Server, it must be enabled in the Business Central environment. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
 
 ## Create agents that use Business Central connector
 
