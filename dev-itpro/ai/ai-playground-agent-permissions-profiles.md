@@ -29,8 +29,8 @@ The agent operates with explicit permission sets that control what data and acti
 
 ## Profiles
 
-The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Designing profiles](../developer/devenv-design-profiles.md).
-    
+The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Designing profiles](../developer/devenv-design-profiles.md) and [Page customization object](../developer/devenv-page-customization-object.md).
+
 > [!NOTE]
 > The profile of the agent is set as default to the **Playground Agent (Copilot)** type. This can be changed, but changing the type changes what the agent has access to.
 
@@ -48,6 +48,10 @@ On the page customization object, you can set specific flags to control what the
 | `DeleteAllowed`| Boolean | If set to false, the delete action isn't allowed for the agent. |
 | `InsertAllowed`| Boolean | If set to false, the insert action isn't allowed for the agent. |
 
+```al
+page customization example with these...
+```
+
 Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
 
 ## Related information
@@ -55,4 +59,6 @@ Once you have built and published a profile, you can assign it to the agent in t
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
 [Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md)  
 [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
-[Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)
+[Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)  
+[Designing profiles](../developer/devenv-design-profiles.md)  
+[Page customization object](../developer/devenv-page-customization-object.md)  
