@@ -202,7 +202,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
 - To get a list of available API pages in a Business Central environment, open the Page Metadata virtual table (ID 2000000138) in the Business Central web client by using the following URL, customized for the environment the agent connects to:
 
   ```http
-  https://businesscentral.dynamics.com/<tenant ID>/<environmet name>?table=2000000138
+  https://businesscentral.dynamics.com/<tenant ID>/<environment name>?table=2000000138
   ```
 
 ## Related information
