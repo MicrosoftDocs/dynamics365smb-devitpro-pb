@@ -45,17 +45,7 @@ The connector abstracts away many of the underlying API details, making it easie
 
 Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, DELETE) against Business Central endpoints, allowing for full customization and extensibility.
 
-**Choosing the connector and MCP Server:** Your choice depends on the agent’s requirements, the level of customization needed, and your familiarity with Business Central APIs. Use this table as a guide:
-
-|Aspect|Business Central Connector|MCP Server|
-|-|-|-|
-|Setup complexity|Low|Medium|
-|API coverage|Limited to standard entities|Full (including custom APIs)|
-|Customization|Limited|Extensive|
-|Performance tuning|Minimal control|Full control|
-|Authentication|Managed via Power Platform|Requires OAuth setup|
-
-In short, the connector offers ease of use and rapid development, while the MCP server provides flexibility and control for complex scenarios.
+**Choosing the connector and MCP Server:** Your choice depends on the agent’s requirements, the level of customization needed, and your familiarity with Business Central APIs. In short, the connector offers ease of use and rapid development, while the MCP server provides flexibility and control for complex scenarios.
 
 ## Prerequisites
 
