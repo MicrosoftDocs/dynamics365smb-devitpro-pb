@@ -2,7 +2,7 @@
 title: Build Business Central agents with Copilot Studio
 description: Learn how to create agents that expose existing Business Central data and processes through Copilot Studio using either the Business Central MCP server or Business Central connector.
 ms.topic: how-to
-ms.date: 10/22/2025
+ms.date: 10/31/2025
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -17,7 +17,7 @@ The article explains how to enable and configure the Business Central MCP Server
 
 ## Configuration overview
 
-Configuring the Business Central MCP server involves exposing API page objects in individual configurations. Each configuration exposes one or more API pages as *tools*, which specify the object and permitted operations (create, read, update, and delete).
+By default, the MCP Server gives agents read-only access to all exposed Business Central API pages. If you want to enable agents to create, modify, or delete entities and data, you must configure these operations on the MCP Server. Configuring the Business Central MCP server involves exposing API page objects in individual configurations. Each configuration exposes one or more API pages as *tools*, which specify the object and permitted operations (create, read, update, and delete).
 
 Once the MCP server is enabled and configured, the individual configurations become available in Copilot Studio for agent makers to use in their agents. Learn more in [Create agents with Copilot Studio](create-agent-in-copilot-studio.md).
 
