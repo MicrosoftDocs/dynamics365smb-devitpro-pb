@@ -175,7 +175,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
 ### Tips and best practices when using MCP Server
 
-- To improve results:
+- To improve results, try these options:
 
   - Use a version of GTP-5 as the model
   - Give the instructions to the agent.
@@ -186,7 +186,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
     - Fill inputs for any tool based on the available context.
     - Generate a response to the end user.
 
-      To add instructions, go to the **Overview** tab on the agent page, and add instructions in the **Instructions** section.  For example:
+      To add instructions, go to the **Overview** tab on the agent page, and add instructions in the **Instructions** section. For example:
 
       ```
       You are a Business Central agent. The user will ask a question, or ask you to perform a task or retrieve data. Start by outlining a plan of what you have and what you must do and then use the available tools to retrieve the relevant information.
@@ -199,7 +199,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
       Learn more in [Write instructions](/microsoft-copilot-studio/authoring-instructions?branch=main).
 
-  - To get a list of available API pages in a Business Central environment, open the Page Metadata virtual table (ID 2000000138) in the Business Central web client by using the following URL, customized for the enviroment the agent connects to:
+- To get a list of available API pages in a Business Central environment, open the Page Metadata virtual table (ID 2000000138) in the Business Central web client by using the following URL, customized for the environment the agent connects to:
 
   ```http
   https://businesscentral.dynamics.com/<tenant ID>/<environmet name>?table=2000000138
