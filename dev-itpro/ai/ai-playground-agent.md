@@ -140,6 +140,6 @@ Ready to try the AI Playground Agent? The process involves enabling the feature,
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
 [Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions, tasks, and permissions for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
+[Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
 [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
 [Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)
