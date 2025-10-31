@@ -50,9 +50,11 @@ Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, 
 ## Prerequisites
 
 - You have a Copilot Studio user license with available Copilot Credits capacity for use. Learn more in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing).
-- To connect the agent to the Business Central MCP Server, it must be enabled in the Business Central environment. As long as the Business Central MCP Server is enabled, the agent can read data in Business Central using the default read-only permissions. If you want the agent to create, update, or delete entities and data, the MCP server must be configured to allow these operations.
+- To connect the agent to the Business Central MCP Server, it must be enabled in the Business Central environment.
 
-  Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+  As long as the Business Central MCP Server is enabled, the agent can read data in Business Central through the default read-only permissions on all exposed API pages. If you want the agent to create, update, or delete entities and data, the MCP server must be configured to allow these operations on API pages. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+
+  You use these configurations when you set up the agent to connect to Business Central by specifying the appropriate MCP Server configuration during the agent setup process.
 
 ## Create agents that use Business Central connector
 
