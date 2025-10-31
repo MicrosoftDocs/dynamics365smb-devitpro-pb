@@ -1,6 +1,6 @@
 ---
 title: Set up AI Playground Agent permissions and profiles (preview)
-description: Learn how you can use AI Playground Agent in Business Central.
+description: Discover how to configure AI Playground Agent permissions and profiles to control access and customize the user interface for sandbox environments.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

@@ -1,6 +1,6 @@
 ---
 title: AI Playground Agent overview
-description: Learn how you can use AI Playground Agent in Business Central.
+description: Discover the AI Playground Agent, a tool for testing AI capabilities in Business Central. Prototype, validate, and refine AI-powered solutions.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

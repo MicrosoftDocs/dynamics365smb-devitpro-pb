@@ -1,6 +1,6 @@
 ---
 title: Best practices for prototyping with an AI Playground Agent (preview)
-description: Learn best practices for creating effective AI Playground agents in Business Central.
+description: Explore how to design, test, and refine AI Playground agents in Business Central. Follow these best practices to optimize your prototypes.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

@@ -1,6 +1,6 @@
 ---
 title: Configure instructions and tasks for an AI Playground Agent (preview)
-description: Learn how you can use AI Playground Agent in Business Central.
+description: Learn how to configure instructions and tasks for an AI Playground Agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

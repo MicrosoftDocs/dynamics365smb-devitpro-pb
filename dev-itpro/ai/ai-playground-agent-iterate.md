@@ -1,6 +1,6 @@
 ---
 title: Iterate and manage an AI Playground Agent (preview)
-description: Learn how you can use AI Playground Agent in Business Central.
+description: Learn how to iterate and manage an AI Playground Agent in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

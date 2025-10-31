@@ -1,6 +1,6 @@
 ---
 title: Create and activate an AI Playground Agent (preview)
-description: Learn how you can use AI Playground Agent in Business Central.
+description: Learn how to create and activate an AI Playground Agent in Business Central to automate tasks, integrate AI, and enhance your workflows.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

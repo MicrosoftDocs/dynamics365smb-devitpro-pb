@@ -1,6 +1,6 @@
 ---
 title: Graduate an AI Playground Agent (preview)
-description: Learn how you can use AI Playground Agent in Business Central.
+description: Learn how to graduate an AI Playground Agent to a production-ready Copilot feature in Business Central by converting prototypes into deployable AL extensions.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
