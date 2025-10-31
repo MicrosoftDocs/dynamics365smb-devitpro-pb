@@ -186,7 +186,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
     - Fill inputs for any tool based on the available context.
     - Generate a response to the end user.
 
-      To add instructions, go to the **Overview** tab on the agent page, and add instructions in the **Instructions** section. For example:
+      To add instructions, go to the **Overview** tab on the agent page, and add instructions in the **Instructions** section. For example, try adding:
 
       ```
       You are a Business Central agent. The user will ask a question, or ask you to perform a task or retrieve data. Start by outlining a plan of what you have and what you must do and then use the available tools to retrieve the relevant information.
