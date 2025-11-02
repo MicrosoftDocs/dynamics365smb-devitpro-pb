@@ -54,7 +54,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
    |Allow Delete|Specifies whether delete operations are allowed for this tool.|
    |Allow Bound Actions|Specifies whether bound actions are allowed for this tool. A bound action is an OData action that is bound to a resource, like a table or record |
 
-   ### How API page object entries map to MCP server tools
+   ## How API page object entries map to MCP server tools
 
    When you add an API page object entry to the MCP Server Configuration, each allow operation (read, create, modify, update, or delete) results in a corresponding tool being made available in the MCP server. These tools can then be added to agents in clients like Copilot Studio.
 
