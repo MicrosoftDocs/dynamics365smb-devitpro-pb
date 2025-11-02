@@ -17,7 +17,7 @@ The article explains how to enable and configure the Business Central MCP Server
 
 ## Configuration overview
 
-By default, the MCP Server gives agents read-only access to all exposed Business Central API pages. If you want to enable agents to create, modify, or delete entities and data, you must configure these operations on the MCP Server. Configuring the Business Central MCP server involves exposing API page objects in individual configurations. Each configuration exposes one or more API pages as *tools*, which specify the object and permitted operations (create, read, update, and delete).
+By default, the MCP Server gives agents read-only access to all exposed Business Central API pages. If you want to enable agents to create, modify, or delete entities and data, you must configure these operations on the MCP Server. Configuring the Business Central MCP server involves adding API page objects in individual configurations and defining the allowed operations. The operations are avaolable as *tools* in Copilot Studio. Learn more in [How API page object entries map to MCP server tools](#how-api-page-object-entries-map-to-mcp-server-tools).
 
 Once the MCP server is enabled and configured, the individual configurations become available in Copilot Studio for agent makers to use in their agents. Learn more in [Create agents with Copilot Studio](create-agent-in-copilot-studio.md).
 
