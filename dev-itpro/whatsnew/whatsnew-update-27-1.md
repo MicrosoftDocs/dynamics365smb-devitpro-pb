@@ -50,17 +50,6 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ### Online customers
 
-New customers automatically get Business Central version 27.1. If you're an existing customer or partner, you get an email notification when the update is available. You can choose when to update to the version. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management.md#schedule-an-update).
-
-### On-premises customers
-
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27.1. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
-
-
-## Upgrade to 27.0
-
-### Online customers
-
 - New customers get Business Central version 27.1 automatically.
 - Existing customers are notified when update 27.1 is available. Admins can schedule update 27.1 to any date within the 5-month update period, which ends on February 28, 2026.
 
@@ -68,7 +57,7 @@ Learn more in [Major updates for Business Central online](../administration/upda
 
 ### On-premises customers
 
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v26.md).
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to update 27.1. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v26.md).
 
 ## Good to know
 
