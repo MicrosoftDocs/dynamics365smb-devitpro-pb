@@ -26,28 +26,29 @@ ms.update-cycle: 180-days
 
 ## Troubleshooting tools and logs
 
-- Use the **Agent Tasks** page and **Agent Task Log** for high-level and detailed troubleshooting.
+- Use the **Agent Tasks** page and **Agent Task Log** in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] for high-level and detailed troubleshooting.
 - Log entries show what the agent identified, available tools, and related messages/logs.
 
 ### Agent Task Log
 
-The **Agent Task Log** is used for troubleshooting the agent's behavior. The log captures the interactions between users and the agent, including the prompts sent to the agent and the responses received. This information can be valuable for diagnosing issues and understanding how the agent is performing.
+The **Agent Task Log** in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] is used for troubleshooting the agent's behavior. The log captures the interactions between users and the agent, including the prompts sent to the agent and the responses received. This information can be valuable for diagnosing issues and understanding how the agent is performing.
 
 Drill into every step by clicking the line in the log. You can see the full prompt sent to the agent and the response it generated. This can help you identify any misunderstandings or errors in the agent's behavior.
 
 ## Debug common scenarios
 
+Use debugging strategies for common issues. Learn more in [Debugging in AL](../developer/devenv-debugging.md).
+
 - Check for missing actions or fields in page content if navigation or editing fails.
 - Simplify pages or customize descriptions to reduce confusion.
+- Use Visual Studio Code to debug agent sessions and AL code.
 
 ## Customize agent profiles and UI
 
+Finetune the agent's access and interface, including:
+
 - Customize agent profiles and page descriptions using AL code.
 - Export and package tailored profiles for your agent.
-
-## Debug agent code
-
-- Use Visual Studio Code to debug agent sessions and AL code.
 
 ## Handle content violation errors
 
@@ -56,12 +57,6 @@ Drill into every step by clicking the line in the log. You can see the full prom
 ## The agent's perception of the UI
 
 - The agent sees the UI as JSON; log entries capture this view for troubleshooting.
-
-<!-->
-## 8. Q&A and Advanced Scenarios
-
-- Tools are available based on page type; extend capabilities via AL code if needed.
-- Log entries include factboxes and page settings that may influence agent actions. -->
 
 ## Related information
 
