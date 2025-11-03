@@ -26,6 +26,8 @@ When iterating and managing an AI Playground Agent, it's important to understand
 - Review both instructions and context to diagnose agent behavior.
 - Only decision points in logs reflect moments where instructions/context could affect choices.
 
+Learn more about writing effective instructions in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md) and best practices in [Best practices for prototyping with an AI Playground Agent (preview)](ai-playground-agent-best-practices.md).
+
 ## Troubleshooting tools and logs
 
 For effective troubleshooting, use the following tools:

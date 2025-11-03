@@ -18,15 +18,15 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md). Finetune and improve your agent's behavior by following guidance in [Iterate and manage an AI Playground Agent (preview)](ai-playground-agent-iterate.md).
 
 ## Instruction framework
 
 Effective agent instructions follow a structured approach with three key components:
 
-- **Responsibilities** Define what the agent is accountable for (for example, handling customer reminders, processing credit memos, or managing sales quotes)
-- **Guidelines** Set rules that apply across all tasks (for example, always request user review before posting documents or sending external communications)  
-- **Instructions** Provide step-by-step, ordered lists for each specific task, including sub-steps for clarity
+- **Responsibilities** Define what the agent is accountable for. For example, handling customer reminders, processing credit memos, or managing sales quotes.
+- **Guidelines** Set rules that apply across all tasks. For example, always request user review before posting documents or sending external communications.
+- **Instructions** Provide step-by-step, ordered lists for each specific task, including sub-steps for clarity.
 
 This framework ensures that agents act consistently, handle exceptions gracefully, and involve users when necessary.
 
