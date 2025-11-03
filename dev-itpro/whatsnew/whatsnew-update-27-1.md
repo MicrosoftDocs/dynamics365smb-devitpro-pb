@@ -40,7 +40,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Localization updates
 
-tbd
+To be determined.
 
 ## Release plan
 
@@ -72,30 +72,34 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### Recent and upcoming online service features
+### Recent online service features
 
+**Early access preview versions for partner:** Tenants with the partner sandbox license get early access to preview environments for the next major Business Central version, giving you a head start in exploring new capabilities and preparing for changes ahead of general availability. Learn more in [Earky access previewes](../administration/preview-environments.md#early-access-preview).
 
-### Business Central Launch Event videos on YouTube
+### Business Central Launch Edition - 2025 release wave 2
 
-The Business Central launch event for the 2025 release wave 1 was held in April 2025. This online event provided information about the new features and enhancements in the 2025 release wave 1 for resellers, partners, ISVs, and consultants. Watch the event videos on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
+The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
+
+- 45+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
+- 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
+- BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
+- 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
+- BCLE 2025 release wave 2 group on Viva Engage for asking questions to our product experts: [BCLE 2025 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=236770828288&view=all)
 
 ### Features becoming mandatory next release wave
 
 Prepare for features expected to be mandatory in the next release wave (28.0). When these features become mandatory, they might disrupt extensions and apps you install in the future. Work with your partner to update installed extensions and apps before the features are mandatory. These features are optional and can be enabled on the **Feature Management** page in Business Central. Learn more in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
 
-- [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
-- [Feature Update: Enable multiple users to post warehouse entries at the same time](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions) <!--(/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/allow-more-than-one-user-post-warehouse-entries-at-time)-->
-- [Feature: Use optimized text search in lists](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions)
 - [Feature Update: Enable use of G/L currency revaluation](/dynamics365/business-central/finance-revalue-account-balances)
-- [Feature: Enable server certificate validation for Http requests](../developer/devenv-httpcertvalid-feature-key.md)
-- [Feature Update: Enable using 1099 forms to transmit the tax data to the IRS in the United States](/dynamics365/business-central/localfunctionality/unitedstates/set-up-use-irs1099-form)
-- [Feature Update: Enable use of package tracking in physical inventory orders](/dynamics365/business-central/inventory-how-work-item-tracking)
+- [Feature Update: New sales pricing experience](/previous-versions/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
 - [Feature Update: Use new communication texts for reminder terms](/dynamics365/business-central/finance-automate-reminders)
-- [Feature Update: Auto-save with every field change](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
-- [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)
-- [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)
+- [Feature: Advanced Tell Me (preview)](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)
+- [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
+- [Feature: Enable MCP Server access](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server)
+- [Feature: Preview semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)
+- [Feature: Use optimized text search in lists](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions)
 
-For a list of features that became mandatory in update 27.0, go to [Optional features that are now mandatory](https://aka.ms/BCFeatureMgmt).
+For a list of features that became mandatory in version 27, go to [Optional features that are now mandatory](https://aka.ms/BCFeatureMgmt).
 
 ### Discover all partner related resources
 
