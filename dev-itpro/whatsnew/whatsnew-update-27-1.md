@@ -51,7 +51,7 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 ### Online customers
 
 - New customers get Business Central version 27.1 automatically.
-- Existing customers are notified when update 27.1 is available. Admins can schedule update 27.1 to any date within the 5-month update period, which ends on February 28, 2026.
+- Existing customers are notified when update 27.1 is available. Admins can schedule update 27.1 to any date within the five-month update period, which ends on February 28, 2026.
 
 Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
 
@@ -63,13 +63,13 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Recent online service features
 
-**Early access preview versions for partner:** Tenants with the partner sandbox license get early access to preview environments for the next major Business Central version, giving you a head start in exploring new capabilities and preparing for changes ahead of general availability. Learn more in [Early access previewes](../administration/preview-environments.md#early-access-preview).
+**Early access preview versions for partner:** Tenants with the partner sandbox license get early access to preview environments for the next major Business Central version so they can explore new capabilities and prepare for changes ahead of general availability. Learn more in [Early access previews](../administration/preview-environments.md#early-access-preview).
 
 **Consume available Copilot Credits with no extra setup:** You can now use prepaid Copilot Credits without configuring AI billing on Business Central environments. Copilot Credits consumed by Business Central environments that don't have AI billing setup are reported against the Power Platform default environment for the tenant. Learn more in [Manage consumption-based billing for agent capabilities](../administration/tenant-admin-center-manage-consumption-billing.md).
 
 ### Business Central Launch Edition - 2025 release wave 2
 
-The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
+The Business Central Launch Event (BCLE) is now the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
 
 - 45+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
 - 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
