@@ -20,11 +20,15 @@ ms.update-cycle: 180-days
 
 ## Understand agent decision-making
 
+When iterating and managing an AI Playground Agent, it's important to understand how the agent makes decisions:
+
 - Agents act based on instructions and the data available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 - Only decision points in logs reflect moments where instructions/context could affect choices.
 
 ## Troubleshooting tools and logs
+
+For effective troubleshooting, use the following tools:
 
 - Use the **Agent Tasks** page and **Agent Task Log** in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] for high-level and detailed troubleshooting.
 - Log entries show what the agent identified, available tools, and related messages/logs.
