@@ -74,7 +74,9 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Recent online service features
 
-**Early access preview versions for partner:** Tenants with the partner sandbox license get early access to preview environments for the next major Business Central version, giving you a head start in exploring new capabilities and preparing for changes ahead of general availability. Learn more in [Earky access previewes](../administration/preview-environments.md#early-access-preview).
+**Early access preview versions for partner:** Tenants with the partner sandbox license get early access to preview environments for the next major Business Central version, giving you a head start in exploring new capabilities and preparing for changes ahead of general availability. Learn more in [Early access previewes](../administration/preview-environments.md#early-access-preview).
+
+**Consume available Copilot Credits with no extra setup:** You can now use prepaid Copilot Credits without configuring AI billing on Business Central environments. Copilot Credits consumed by Business Central environments that don't have AI billing setup are reported against the Power Platform default environment for the tenant. Learn more in [Manage consumption-based billing for agent capabilities](../administration/tenant-admin-center-manage-consumption-billing.md).
 
 ### Business Central Launch Edition - 2025 release wave 2
 
