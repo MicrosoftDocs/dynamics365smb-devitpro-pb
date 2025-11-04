@@ -127,7 +127,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 - **Permissions:** The connection uses the signed-in account’s Business Central permissions; ensure the account can read companies and create customers.
 - **Validation:** Use server-side validation rules in Business Central (pricing/validation). The connector surfaces errors; handle these errors in agent responses.
 - **Inputs:** Validate and sanitize user input before calling Create record (that is, ensure required fields are present).
-- **Logging:** Use the agent’s execution logs to troubleshoot tool calls and to see request/response payloads.
+- **Logging:** Use the agent's execution logs to troubleshoot tool calls and to see request/response payloads.
 
 ## Create agents that connect to Business Central MCP Server
 
@@ -185,7 +185,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
   
     Instructions are the directions and parameters an agent follows. Agents depend on instructions to:
 
-    - Decide what tool or knowledge might need to be called to address a user query or autonomous trigger.
+    - Decide what tool or knowledge to call to address a user query or autonomous trigger.
     - Fill inputs for any tool based on the available context.
     - Generate a response to the end user.
 
