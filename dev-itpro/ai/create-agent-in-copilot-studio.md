@@ -29,7 +29,7 @@ Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilo
 
 You can build agents that connect to Business Central using either the **Business Central Connector for Power Platform** or the **Business Central MCP (Model Context Protocol) server**:
 
-**Business Central Connector:** This connectore is part of the Power Platform framework. It provides a simplified, low-code interface for accessing Business Central entities such as customers, vendors, items, and invoices. It's ideal for scenarios where:
+**Business Central Connector:** This connector is part of the Power Platform framework. It provides a simplified, low-code interface for accessing Business Central entities such as customers, vendors, items, and invoices. It's ideal for scenarios where:
 
 - The agent needs to perform simple CRUD (create, read, update, delete) operations using predefined actions while acting as the user (respecting their Business Central permissions).
 - You want low-code integration through Power Automate.
