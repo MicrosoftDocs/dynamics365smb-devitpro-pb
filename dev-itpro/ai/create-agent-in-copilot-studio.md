@@ -33,13 +33,11 @@ You can build agents that connect to Business Central using the **Business Centr
 
 - The agent needs to perform simple CRUD (create, read, update, delete) operations using predefined actions while acting as the user (respecting their Business Central permissions).
 - You want low-code integration through Power Automate.
-- Your organization's governance model requires per-user control for auditing and compliance.
 
 The connector abstracts away many of the API details, making it easier to use but less flexible for advanced scenarios.
 
-**Business Central MCP Server:** This implementation uses the Model Context Protocol (MCP) to provide direct access to Business Central’s REST APIs, including custom API pages and system endpoints. This approach is suited for:
+**Business Central MCP Server:** This implementation uses the Model Context Protocol (MCP) to provide access to Business Central through standard and custom API pages and system endpoints. It's ideal for scenarios where:
 
-- Advanced integrations requiring fine-grained control over API calls, custom extensions, or nonstandard entities.
 - The agent must coordinate multiple AI-driven steps&mdash;such as retrieving data, analyzing it, and performing actions&mdash;into one seamless, automated workflow (AI orchestration).
 - Scenarios where performance, scalability, or security policies require direct API management.
 
@@ -47,8 +45,8 @@ Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, 
 
 **Choosing the connector and MCP Server:** Your choice depends on the agent’s requirements, the level of customization needed, and your familiarity with Business Central APIs. In short:
 
-- Connector: Easier to use, faster to implement, ideal for standard use cases.
-- MCP server: More flexible, suited for complex workflows and custom integrations.
+- Connector: For standard integration and automation
+- MCP server: For AI agents only
 
 **Using both**: In some cases, you might use both the connector and MCP Server in a Copilot Studio agent. For example, using both is helpful when the API you need to connect to has a cryptic description that the AI via MCP can't interpret. Adding that API as a tool manually with the connector allows you to edit descriptions and provide AI-friendly context.
 
