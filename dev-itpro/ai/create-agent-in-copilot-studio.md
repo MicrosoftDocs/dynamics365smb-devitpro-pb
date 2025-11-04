@@ -27,7 +27,7 @@ Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilo
 
 ### Connection options
 
-You can build agents that connect to Business Central using either the **Business Central Connector for Power Platform** or the **Business Central MCP (Model Context Protocol) server**:
+You can build agents that connect to Business Central using the **Business Central Connector for Power Platform** or the **Business Central MCP (Model Context Protocol) server**. You can also use both options together:
 
 **Business Central Connector:** This connector is part of the Power Platform framework. It provides a simplified, low-code interface for accessing Business Central entities such as customers, vendors, items, and invoices. It's ideal for scenarios where:
 
@@ -49,6 +49,8 @@ Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, 
 
 - Connector: Easier to use, faster to implement, ideal for standard use cases.
 - MCP server: More flexible, suited for complex workflows and custom integrations.
+
+**Using both**: In some cases, you might use both the connector and MCP Server in a Copilot Studio agent. For example, using both is helpful when the API you need to connect to has a cryptic description that the AI via MCP can't interpret. Adding that API as a tool manually with the connector allows you to edit descriptions and provide AI-friendly context.
 
 ## Prerequisites
 
