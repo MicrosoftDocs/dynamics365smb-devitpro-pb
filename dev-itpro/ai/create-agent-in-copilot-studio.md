@@ -36,7 +36,7 @@ You can build agents that connect to Business Central using the **Business Centr
 
 The connector abstracts away many of the API details, making it easier to use but less flexible for advanced scenarios.
 
-**Business Central MCP Server:** This implementation uses the Model Context Protocol (MCP) to provide access to Business Central through standard and custom API pages and system endpoints. It's ideal for scenarios where:
+**Business Central MCP Server:** This implementation uses the Model Context Protocol (MCP) to provide access to Business Central through standard and custom API pages. It's ideal for scenarios where:
 
 - The agent must coordinate multiple AI-driven steps&mdash;such as retrieving data, analyzing it, and performing actions&mdash;into one seamless, automated workflow (AI orchestration).
 - Scenarios where performance, scalability, or security policies require direct API management.
