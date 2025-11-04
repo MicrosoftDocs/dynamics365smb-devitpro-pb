@@ -200,7 +200,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
       Prefer using semantic search when searching for available actions.
       ```
 
-      Learn more in [Write instructions](/microsoft-copilot-studio/authoring-instructions?branch=main).
+    Learn more in [Write instructions](/microsoft-copilot-studio/authoring-instructions).
 
 - To get a list of available API pages in a Business Central environment, open the Page Metadata virtual table (ID 2000000138) in the Business Central web client by using the following URL, customized for the environment the agent connects to:
 
