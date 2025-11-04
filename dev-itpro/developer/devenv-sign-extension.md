@@ -136,4 +136,4 @@ You can check the validity of your code signing by transferring your signed app 
 [Get started with AL](devenv-get-started.md)  
 [Keyboard shortcuts](devenv-keyboard-shortcuts.md)  
 [AL development environment](devenv-reference-overview.md)  
-[Questions about code-signing validation](devenv-checklist-submission-faq.md#questions-about-code-signing-validation)
+[Questions about code-signing validation](devenv-checklist-submission-code-sign.md)
