@@ -34,13 +34,12 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | Financial Management | [Print the Audit Trail report](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/print-audit-trail-report) | General availability |
 | | [Use new SEPA file CAMT0530008](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sepa-file-camt0530008) | Public preview |
 | | [Use the Account Payable Role Center](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-account-payables-administrator-role-center) | General availability |
-| Governance and administration | [Cancel running environment update](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/cancel-running-environment-update) | General availability |
 | Sustainability Management | [Support Digital Product Pass reporting requirements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/support-digital-product-pass-reporting-requirements) | General availability |
 | User experiences | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data) | General availability |
 
 ## Localization updates
 
-To be determined.
+No localization updates for 27.1.
 
 ## Release plan
 
