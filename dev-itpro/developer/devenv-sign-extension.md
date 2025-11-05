@@ -2,7 +2,7 @@
 title: Sign an app package file
 description: This article explains how to sign an AL app package file with a pfx file or with Azure Key Vault.
 author: SusanneWindfeldPedersen
-ms.date: 03/12/2024
+ms.date: 04/11/2025
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
@@ -127,7 +127,7 @@ Makecert –sk myNewKey –n “CN=Prosewaretest” –r –ss my
 
 ## Code signing for AppSource
 
-If you publish the extension as an app on AppSource, the app package file must be signed using a certificate purchased from a Certification Authority (CA); a self-signed certificate won't be accepted by the technical validation. The CA must have its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec, see the image below. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
+If you publish the extension as an app on AppSource, the app package file must be signed using a certificate purchased from a Certification Authority (CA); a self-signed certificate won't be accepted by the technical validation. The CA must have its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
 
 You can check the validity of your code signing by transferring your signed app file to a Windows device, which didn't sign it. Right-click on the file and go to **Properties**,**Digital Signatures**, and then choose **Details**. In this pop-up, choose **View Certificate** and finally go to **Certification Path**. If the Certification Path has only one entry, then the file isn't signed correctly and is rejected by AppSource technical validation.
 
