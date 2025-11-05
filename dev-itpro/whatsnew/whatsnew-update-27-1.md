@@ -22,10 +22,10 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | Product area | Feature | Public preview/General availability |
 |-|-|-|
 | Copilot and agents | [Automate payables processes with the Payables Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/automate-payables-processes-payables-agent) | General availability |
-| | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent) | General availability |
-| | [Connect AI agents to Business Central through MCP server](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server) | Public preview |
 | | [Get more contextual invoice drafts with Payables Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/get-more-contextual-invoice-drafts-payables-agent) | General availability |
+| | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent) | General availability |
 | | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process) | General availability |
+| | [Connect AI agents to Business Central through MCP server](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server) | Public preview |
 | Country and regional | [Delete companies from production environments in Denmark](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/delete-companies-production-environments-denmark) | General availability |
 | | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris) | General availability |
 | Electronic Documents | [Process sales e-documents in two steps](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/process-sales-e-documents-two-steps) | General availability |
