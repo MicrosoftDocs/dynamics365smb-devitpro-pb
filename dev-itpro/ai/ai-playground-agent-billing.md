@@ -16,4 +16,6 @@ ms.update-cycle: 180-days
 
 The AI Playground Agent is billed differently...
 
+Insert section in [this article instead](../administration/tenant-admin-center-manage-consumption-billing.md)
+
 ## Related information

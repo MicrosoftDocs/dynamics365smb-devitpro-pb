@@ -108,7 +108,7 @@ Agents retain a history of their actions and searches but don't store the full s
 
 #### How to trigger your agent
 
-You invoke your agent by manually creating a task for it. When creating a task, you can specify an additional message that gets passed to the agent to complement the general instructions with specific details for that particular task.
+You invoke your agent by manually creating a task for it. When creating a task, you can specify an additional message that gets passed to the agent to complement the general instructions with specific details for that particular task. As you're testing and prototyping your agent, you can create tasks directly from the **AI Playground Agent** setup page. Each task you create will appear in the agent's task queue, where the agent will pick it up and process it according to its instructions.
 
 #### Current limitations in public preview
 
