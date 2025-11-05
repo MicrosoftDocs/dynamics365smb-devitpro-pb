@@ -70,7 +70,27 @@ The estimated monthly cost is calculated as: `[2 + (5 × 0.5) + 5 + 5 + 2] x 100
 
 ### Payables Agent billing
 
-Billing events for the Payables agent will be announced in a future update.
+The Payables Agent connects to a shared mailbox and processes incoming emails and imports and extracts information from vendor invoices and processes those invoices with AI, presented to agent supervisors in a Purchase Document Draft. The following table shows how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
+
+| Feature | Copilot Studio event scenario | Copilot Credits |
+|----------|----------|----------|
+| Process invoice | Agent action x 10 | 50 |
+| Process invoice line | Agent action | 5 |
+
+\* Only attachments in PDF format are processed.
+  
+A typical [Payables Agent process flow](/dynamics365/business-central/payables-agent#payables-agent-process-flow) includes:
+
+- Ten agent actions to process the vendor invoices and create the Purchase Document Draft (50 Copilot Credits)
+- One agent action per invoice line to process and interpret line information and perform intelligent matching with history (5 Copilot Credits)
+
+Emails that do not contain a valid invoice attachment does not incur any cost.
+
+For example, assume that:
+
+- The agent receives 100 emails in a month, where each contains a valid vendor invoice in PDF format. Each such PDF attachment triggers an agent action at cost of 50 Copilot Credits. Assume that each invoice contains 3 invoice lines.
+
+The estimated monthly cost is calculated as: `[50 + (5 × 3)] x 100 = 6,500 Copilot Credits/month`
 
 ## Set up billing model
 
