@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 06/21/2024
+ms.date: 11/06/2025
 ms.custom: sfi-ropc-blocked
 ---
 
@@ -151,6 +151,9 @@ Sign in to the [Azure portal](https://portal.azure.com) to register your client 
 ### Getting an access token with Authorization Code Flow
 
 HTTP requests sent to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API must include the Authorization HTTP header, and the value must be an access token.
+
+> [!IMPORTANT]
+> The username and password flow isn't recommended as the application will be asking a user for their password directly, which is an insecure pattern. Microsoft Entra ID and Windows authentication are more secure alternatives. You should only use username and password authentication when Microsoft Entra ID and Windows authentication aren't viable.
 
 The following examples show how to obtain such a token using PowerShell. Using C# is straightforward.
 
