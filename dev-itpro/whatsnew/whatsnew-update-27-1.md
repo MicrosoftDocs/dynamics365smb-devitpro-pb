@@ -36,6 +36,8 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | | [Use the Account Payable Role Center](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-account-payables-administrator-role-center) | General availability |
 | Sustainability Management | [Support Digital Product Pass reporting requirements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/support-digital-product-pass-reporting-requirements) | General availability |
 | User experiences | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data) | General availability |
+|Shopify| [Create sales invoices from orders automatically, and use new ways to view orders](/dynamics365/business-central/shopify/synchronize-orders) | General availability |
+| | [Use renamed customer templates and fulfillments](/dynamics365/business-central/shopify/synchronize-customers) | General availability |
 
 ## Localization updates
 
