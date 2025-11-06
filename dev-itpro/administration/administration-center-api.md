@@ -153,7 +153,7 @@ Sign in to the [Azure portal](https://portal.azure.com) to register your client 
 HTTP requests sent to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API must include the Authorization HTTP header, and the value must be an access token.
 
 > [!IMPORTANT]
-> The username and password flow isn't recommended as the application will be asking a user for their password directly, which is an insecure pattern. Microsoft Entra ID and Windows authentication are more secure alternatives. You should only use username and password authentication when Microsoft Entra ID and Windows authentication aren't viable.
+> Microsoft doesn't recommend using the username and password flow because it will be asking a user for their password directly, which is an insecure pattern. Microsoft Entra ID and Windows authentication are more secure alternatives. You should only use username and password authentication when Microsoft Entra ID and Windows authentication aren't viable.
 
 The following examples show how to obtain such a token using PowerShell. Using C# is straightforward.
 
