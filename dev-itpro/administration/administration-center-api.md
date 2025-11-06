@@ -6,8 +6,7 @@ ms.topic: concept-article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 06/21/2024
-ms.custom: sfi-ropc-blocked
+ms.date: 11/06/2025
 ---
 
 # The Business Central Admin Center API
@@ -151,6 +150,8 @@ Sign in to the [Azure portal](https://portal.azure.com) to register your client 
 ### Getting an access token with Authorization Code Flow
 
 HTTP requests sent to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API must include the Authorization HTTP header, and the value must be an access token.
+
+[!INCLUDE [username-password-ropc](../includes/username-password-ropc.md)]
 
 The following examples show how to obtain such a token using PowerShell. Using C# is straightforward.
 
