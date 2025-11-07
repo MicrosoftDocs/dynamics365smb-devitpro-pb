@@ -1737,7 +1737,11 @@
 #### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 #### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
-
+<!-- Microsoft Copilot Studio -->
+### Integrating with Microsoft Copilot Studio
+#### [Create agents that connect to Business Central](ai/create-agent-in-copilot-studio.md)
+#### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md)
+<!-- end Microsoft Copilot Studio -->
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
@@ -2193,5 +2197,7 @@
 # Responsible AI
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
+## [Transparency note: Semantic Metadata Search in Business Central](ai/transparency-note-semantic-metadata-search.md)  
+
 <!-- end upgrade -->
 <!--on-prem ends-->
