@@ -13,7 +13,7 @@ Exports UI text strings of objects from a specified [!INCLUDE[navnow](includes/n
 ## Syntax  
 
 ```  
-finsql.exe command=exporttranslate, file=<exportfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=exporttranslate, file=<exportfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [pswd] [ntauthentication=<yes|no|1|0>]  
 ```  
 
 #### Parameters  
@@ -93,9 +93,7 @@ finsql.exe command=exporttranslate, file=<exportfile>, [servername=<server>,] [d
 
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
 
- *password*  
-
- The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
+pswd
 
  *ntauthentication*  
 

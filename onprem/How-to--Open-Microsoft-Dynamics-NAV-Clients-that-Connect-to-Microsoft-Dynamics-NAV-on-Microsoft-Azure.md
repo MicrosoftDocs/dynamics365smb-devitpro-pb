@@ -12,14 +12,13 @@ This topic describes how to open the [!INCLUDE[nav_windows](includes/nav_windows
 
 ```  
 The NAV Server machine is: MyNavVm.cloudapp.net  
-The NAV Server machine administrator password: 123NavVm!a  
+The NAV Server machine administrator 
 The NAV Server Instance is: DynamicsNAV90_Ins1  
-The NAV Server account credentials: NSTService/P@ssword312  
+The NAV Server account credentials: 
 The Windows Client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
 The Web Client can be accessed at: https://MyNavVm.cloudapp.net/DynamicsNAV90_Ins1  
 A user has been added to the database with the following credentials:  
-  user=navuser  
-  password=N@Vpw312  
+
 ```  
 
  The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] is available from a ClickOnce web site, which lets you install the client from a web page. The [!INCLUDE[nav_web](includes/nav_web_md.md)] is available from any supported browser.  

@@ -255,8 +255,6 @@ The following walkthrough demonstrates how to use the Example-2VM.ps1 script of 
     The Windows Client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
     The Web Client can be accessed at: https://MyNavVm.cloudapp.net/DynamicsNAV72_Ins1  
     A user has been added to the database with the following credentials:  
-      user=navuser  
-      password=[password]  
   
     ```  
   

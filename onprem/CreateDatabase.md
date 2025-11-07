@@ -12,7 +12,7 @@ Creates a new database for [!INCLUDE[navnow](includes/navnow_md.md)] on an SQL s
 ## Syntax  
   
 ```  
-finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,] [collation=<collation>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
+finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,] [collation=<collation>,] [logfile=<path and filename>,] [username=<user name>,] [pswd,] [ntauthentication=<yes|no|0|1>]  
 ```  
   
 #### Parameters  
@@ -63,10 +63,7 @@ finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,]
  If you specify the *username* parameter, then you must also specify the *password* parameter and the *ntauthentication* parameter must be **no**.  
   
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
-  
- *password*  
-  
- The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
+   
   
  *ntauthentication*  
   

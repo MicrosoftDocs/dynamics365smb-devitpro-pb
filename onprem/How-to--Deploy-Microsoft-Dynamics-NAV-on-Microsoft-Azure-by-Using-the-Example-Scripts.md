@@ -94,14 +94,13 @@ This topic describes how to deploy [!INCLUDE[navnow](includes/navnow_md.md)] by 
   
     ```  
     The NAV Server machine is: MyNavVm.cloudapp.net  
-    The NAV Server machine administrator password: 123NavVm!a  
+    The NAV Server machine administrator 
     The NAV Server Instance is: nav_server_instance_Ins1  
     The NAV Server account credentials: NSTService/P@ssword312  
     The Windows client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
     The Web Client can be accessed at: https://MyNavVm.cloudapp.net/nav_server_instance_Ins1  
     A user has been added to the database with the following credentials:  
-      user=navuser  
-      password=N@Vpw312  
+
     ```  
   
      New virtual machines appear in the Azure management portal under Virtual Machines, and you can access [!INCLUDE[navnow](includes/navnow_md.md)] from the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or [!INCLUDE[nav_web](includes/nav_web_md.md)]. For more information, see [How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure](How-to--Open-Microsoft-Dynamics-NAV-Clients-that-Connect-to-Microsoft-Dynamics-NAV-on-Microsoft-Azure.md).  

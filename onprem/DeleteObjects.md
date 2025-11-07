@@ -13,7 +13,7 @@ Deletes objects from the specified [!INCLUDE[navnow](includes/navnow_md.md)] dat
 ## Syntax  
 
 ```  
-finsql.exe command=deleteobjects, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
+finsql.exe command=deleteobjects, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<user name>,] [pswd,] [ntauthentication=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
 ```  
 
 #### Parameters  
@@ -88,10 +88,6 @@ The name of the [!INCLUDE[navnow](includes/navnow_md.md)] database in which the 
  If you specify the *username* parameter, then you must also specify the *password* parameter and the *ntauthentication* parameter must be **no**.  
 
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
-
- *password*  
-
- The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
 
  *ntauthentication*  
 

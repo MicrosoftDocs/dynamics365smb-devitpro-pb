@@ -145,7 +145,7 @@ The following walkthrough demonstrates how to use the Example-1VM.ps1 script of 
     $NAV_AzureServiceName = 'MyNavVm'  
     $NAV_DomainName = 'cloudapp.net'  
     $NAV_VMAdminUserName = 'NavVmAdmin'  
-    $NAV_VMAdminPassword = ''  
+    $NAV_VMAdminPassword
     $NAV_AzureLocation = 'North Europe'  
     $NAV_VMSize = 'Small'  
     $NAV_OSImageWithSqlServer = ''  
