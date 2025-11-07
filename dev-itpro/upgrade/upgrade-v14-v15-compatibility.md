@@ -4,7 +4,7 @@ description: Provides an overview of the Business Central versions and their com
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.date: 10/02/2025
+ms.date: 11/03/2025
 ms.topic: upgrade-and-migration-article
 ms.custom: bap-template
 ---
@@ -32,7 +32,10 @@ The following table lists the Business Central 26 update versions and the minimu
 |Version 26 |Version 27|
 |-|-|
 |26.0 to 26.5|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[26.6](https://support.microsoft.com/help/5068248)|27.1|
+|[26.6](https://support.microsoft.com/help/5068248)|[27.1](https://support.microsoft.com/help/5071096)|
+|[26.7](https://support.microsoft.com/help/5071095)<sup>[\[1\]](#1)</sup>|27.2|
+
+Get a list of all available updates for Business Central 2025 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-1-8cb260a4-6a57-4325-a4d7-7aa84c3234e6).
 
 ## Version 25 compatibility
 
@@ -47,7 +50,10 @@ The following table lists the Business Central 25 update versions and the minimu
 |[25.9](https://support.microsoft.com/help/5063361)|[26.4](https://support.microsoft.com/help/5064779)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
 |[25.10](https://support.microsoft.com/help/5064778)|[26.5](https://support.microsoft.com/help/5066309)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
 |[25.11](https://support.microsoft.com/help/5066308)|[26.6](https://support.microsoft.com/help/5068248)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[25.12](https://support.microsoft.com/help/5068247)<sup>[\[1\]](#1)</sup>|26.7|27.1|
+|[25.12](https://support.microsoft.com/help/5068247)|[26.7](https://support.microsoft.com/help/5071095)|[27.1](https://support.microsoft.com/help/5071096)|
+|[25.13](https://support.microsoft.com/help/5068247)<sup>[\[1\]](#1)</sup>|26.8|27.2|
+
+Get a list of all available updates for Business Central 2024 release wave 2 at [Released Updates for Microsoft Dynamics 365 Business Central 2024 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776).
 
 ## Version 24 compatibility
 
