@@ -2,9 +2,6 @@
 title: "Walkthrough: Deploying Microsoft Dynamics NAV on Two Microsoft Azure Virtual Machines"
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: f9e96066-e260-4f41-a42e-0e9e8ce2994a
-caps.latest.revision: 17
-ms.custom: sfi-ropc-blocked
 ---
 # Walkthrough: Deploying Microsoft Dynamics NAV on Two Microsoft Azure Virtual Machines
 The following walkthrough demonstrates how to use the Example-2VM.ps1 script of the [!INCLUDE[nav_prov_long](includes/nav_prov_long_md.md)] to deploy [!INCLUDE[navnow](includes/navnow_md.md)] on Microsoft Azure. The walkthrough deploys the [!INCLUDE[navnow](includes/navnow_md.md)] components, including the [!INCLUDE[demolong](includes/demolong_md.md)], on two virtual machines as illustrated in the following figure.  
