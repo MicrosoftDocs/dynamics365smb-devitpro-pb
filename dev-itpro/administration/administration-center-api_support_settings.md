@@ -17,10 +17,12 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-GET /admin/v2.24/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
@@ -56,10 +58,12 @@ Sets the support contact information for a specified environment
 
 ```
 Content-Type: application/json
-PUT /admin/v2.24/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
