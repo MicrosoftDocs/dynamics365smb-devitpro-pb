@@ -51,8 +51,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment.
+
 `appId` - ID of the targeted app.
 
 ### Body
@@ -127,8 +130,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment.
+
 `appId` - ID of the targeted app.
 
 ### Body
@@ -191,8 +197,11 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment.
+
 `appId` - ID of the targeted app.
 
 ### Response
@@ -229,7 +238,9 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment.
 
 ### Response
@@ -267,7 +278,9 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment.
 
 ### Response
@@ -308,8 +321,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment.
+
 `appId` - ID of the targeted app.
 
 ### Body
@@ -373,8 +389,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment.
+
 `appId` - ID of the targeted app.
 
 ### Body
@@ -414,9 +433,13 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment.
+
 `appId` - Id of the targeted app.
+
 `operationId` - Id of the app update operation. Used for getting information about a specific operation.
 
 ### Response
