@@ -3,9 +3,6 @@ title: "ExportLangModule"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 73d232d6-4551-4faf-9914-570ba4c5301e
-caps.latest.revision: 6
-ms.custom: sfi-ropc-blocked
 ---
 # ExportLangModule
 Exports a language module from the specified database to a file.  

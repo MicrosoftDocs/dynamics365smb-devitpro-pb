@@ -4,7 +4,6 @@ ms.topic: include
 ms.date: 07/27/2023
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.custom: sfi-ropc-blocked
 ---
 ## Define SQL database connection and integration runtime 
 
