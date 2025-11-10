@@ -20,8 +20,17 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/sessions
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
 
 ### Response
 ```
@@ -53,8 +62,18 @@ GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 Gets session information for a specific session id.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+`sessionId` - The ID of the session
 
 ### Response
 
@@ -82,8 +101,18 @@ GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 Terminates and deletes an active session.
 
 ```
-DELETE /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+`sessionId` - The ID of the session
 
 ## Related information
 
