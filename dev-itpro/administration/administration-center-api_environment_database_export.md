@@ -22,13 +22,13 @@ To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permiss
 Gets information about the number of exports allowed per month and the amount remaining.
 
 ```
-GET /admin/v2.24/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
+GET /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Response
@@ -54,13 +54,13 @@ Starts the export of an environment's database to a provided Azure storage accou
 
 ```
 Content-Type: application/json
-POST /admin/v2.24/exports/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Body
@@ -88,10 +88,14 @@ POST /admin/v2.24/exports/applications/{applicationFamily}/environments/{environ
 Gets information about the exports that have been done within a provided time frame, for which environment, and by which user.
 
 ```
-POST /admin/v2.24/exports/history?start={startTime}&end={endTime}
+POST /admin/{apiVersion}/exports/history?start={startTime}&end={endTime}
 ```
 
-### Query parameters
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+### Query Parameters
 
 `startTime` - datetime // The start of the export history entry time window to query
 `endTime` - datetime // The end of the  export history entry time window to query
