@@ -18,10 +18,12 @@ Telemetry includes the top-level AL events and any returned errors logged from t
 Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters to return a manageable data set.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
 ### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
