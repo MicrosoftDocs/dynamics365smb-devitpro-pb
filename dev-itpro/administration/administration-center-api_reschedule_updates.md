@@ -140,7 +140,7 @@ Example for selecting a target version that is not yet available.
 
 ## Cancel running update
 
-Cancels a running update and restores the environment to its state immediately before the update started. Can only be used while an update is running. Operation may take over an hour during which the environment is not accessible.
+Cancels a running update or Cloud Migration data upgrade and restores the environment to its state immediately before the operation started. Can only be used while an update is running. Operation may take over an hour during which the environment is not accessible.
 
 ```
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/operations/{id}/cancel
@@ -156,6 +156,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 `id` - The operation ID for the update operation. Can be obtained from the `GET /admin/v2.28/environments/{environmentName}/operations` endpoint
 
+### Restrictions
+
+- Environment operation must be of type `Update` or `Data Upgrade`
+- Environment operation must be in state `Running`
+- For operations of type `Update`, the environment cannot be in the Enforced Update Period
 
 
 ## Related information
