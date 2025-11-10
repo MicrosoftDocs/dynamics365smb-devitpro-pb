@@ -91,6 +91,12 @@ To schedule an update to a planned version:
 > [!NOTE]  
 > Only versions planned for release during the [update period](update-rollout-timeline.md#update-period) of the environment's current major version can be selected. For example, you can't select planned version 26.5 for an environment on 25.x, because 26.5 releases in September 2025 and the 25.x update period ends in August 2025.
 
+## Cancel a running update
+
+Running updates are cancelled automatically if the update does not succeed before the end of the update window set for the environment. If you need to cancel an update before the end of the update window or an update that has been allowed to run outside the environment's update window, you can do so from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. To cancel a running update, navigate to the **Operation Details** pane from the Environment Details or Operations page and choose **Cancel update** by the operation status.
+
+Cancelling a running update will stop the update process and restore the environment to its state immediately before the update started. Depending on the size of the environment database this process may take more than an hour, during which the environment is not accessible.
+
 ## <a name="notify"></a>Get notified of updates
 
 A notification is sent to all notification recipients that are listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] whenever a new version becomes available and whenever an update is scheduled for your environment. Learn more in [Managing Tenant Notifications](tenant-admin-center-notifications.md).
