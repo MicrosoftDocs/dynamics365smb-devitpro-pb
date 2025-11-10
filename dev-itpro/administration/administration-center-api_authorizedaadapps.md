@@ -23,8 +23,12 @@ Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodad
 Returns a list of Entra tenants for which the app that is authenticating the call is registered as authorized app in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. This does not indicate whether the AdminCenter.ReadWrite.All app permission that is required has been granted as well.
 
 ```
-GET /admin/v2.24/authorizedAadApps/manageableTenants
+GET /admin/{apiVersion}/authorizedAadApps/manageableTenants
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -49,8 +53,12 @@ GET /admin/v2.24/authorizedAadApps/manageableTenants
 Returns the Microsoft Entra apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant.
 
 ```
-GET /admin/v2.24/authorizedAadApps
+GET /admin/{apiVersion}/authorizedAadApps
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -75,8 +83,12 @@ GET /admin/v2.24/authorizedAadApps
 Authorizes a Microsoft Entra app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant. This does not grant admin consent or assign permission sets in environments to the Microsoft Entra app.
 
 ```
-PUT /admin/v2.24/authorizedAadApps/<appClientId>
+PUT /admin/{apiVersion}/authorizedAadApps/<appClientId>
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 ```
@@ -90,8 +102,12 @@ PUT /admin/v2.24/authorizedAadApps/<appClientId>
 Removes a Microsoft Entra app authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant. This does not revoke admin consent in Microsoft Entra ID nor remove permission sets assigned to the Microsoft Entra app in environments.
 
 ```
-DELETE /admin/v2.24/authorizedAadApps/<appClientId>
+DELETE /admin/{apiVersion}/authorizedAadApps/<appClientId>
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ## Related information
 
