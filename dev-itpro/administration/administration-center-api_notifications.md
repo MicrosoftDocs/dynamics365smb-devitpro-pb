@@ -18,8 +18,12 @@ Notifications are sent to the recipient email addresses set up for the tenant. F
 Returns a list of notification recipients.
 
 ```
-GET /admin/v2.24/settings/notification/recipients
+GET /admin/{apiVersion}/settings/notification/recipients
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -48,8 +52,12 @@ Create a new notification recipient.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.24/settings/notification/recipients
+PUT /admin/{apiVersion}/settings/notification/recipients
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Body
 
@@ -88,10 +96,12 @@ Returns the newly created recipient.
 Deletes an existing notification recipient.
 
 ```
-DELETE /admin/v2.24/settings/notification/recipients/{id}
+DELETE /admin/{apiVersion}/settings/notification/recipients/{id}
 ```
 
 ### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `id` - The unique identifier of the notification recipient to delete.
 
@@ -108,8 +118,12 @@ DELETE /admin/v2.24/settings/notification/recipients/{id}
 Returns the full set of notification settings including the list of recipients.
 
 ```
-GET /admin/v2.24/settings/notification
+GET /admin/{apiVersion}/settings/notification
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
