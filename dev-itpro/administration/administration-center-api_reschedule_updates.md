@@ -18,10 +18,12 @@ Allows for the management of scheduled updates such as rescheduling the update t
 Get information about update target versions and their status for a specific environment.
 
 ```
-GET /admin/v2.28/applications/{applicationFamily}/environments/{environmentName}/updates
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/updates
 ```
 
 ### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
@@ -93,10 +95,12 @@ Returns information about updates available for the specified environment.
 Select a target version and update date for the next update on an environment. Only one target version can be selected per environment at a time; selecting a new target version for the next environment updates automatically unselects the previous target version.
 
 ```
-PATCH /admin/v2.28/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
+PATCH /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
 ```
 
 ### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
@@ -139,10 +143,12 @@ Example for selecting a target version that is not yet available.
 Cancels a running update and restores the environment to its state immediately before the update started. Can only be used while an update is running. Operation may take over an hour during which the environment is not accessible.
 
 ```
-POST /admin/v2.28/applications/{applicationFamily}/environments/{environmentName}/operations/{id}/cancel
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/operations/{id}/cancel
 ```
 
 ### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
