@@ -28,7 +28,9 @@ GET /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{e
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment
 
 ### Response
@@ -60,7 +62,9 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment
 
 ### Body
@@ -98,6 +102,7 @@ POST /admin/{apiVersion}/exports/history?start={startTime}&end={endTime}
 ### Query Parameters
 
 `startTime` - datetime // The start of the export history entry time window to query
+
 `endTime` - datetime // The end of the  export history entry time window to query
 
 ### Response
