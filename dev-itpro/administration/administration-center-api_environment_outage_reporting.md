@@ -137,7 +137,9 @@ POST /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
 `environmentName` - Name of the targeted environment
 
 ### Body
