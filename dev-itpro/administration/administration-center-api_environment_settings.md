@@ -18,13 +18,13 @@ Allows you to manage environment-specific settings such as the AppInsights key o
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application as is. (For example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Response
@@ -57,8 +57,12 @@ Returns the environment's update settings, or "null" if none exist
 Returns a list of time zones and basic information associated with them, such as daylight saving time and the current offset from Coordinated Universal Time (UTC). Time zone identifiers are the only allowed values for the `timeZoneId` parameter of the update settings.
 
 ```
-GET /admin/v2.24/applications/settings/timezones
+GET /admin/{apiVersion}/applications/settings/timezones
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
  
@@ -85,13 +89,13 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application as is. (For example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Body
@@ -161,13 +165,13 @@ Sets the connection string or instrumentation key an environment uses for Azure 
 
 ```
 Content-Type: application/json
-POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Body
@@ -195,13 +199,13 @@ POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName
 Gets the Microsoft Entra group currently assigned to an environment.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Response
@@ -234,13 +238,13 @@ Assigns a Microsoft Entra group to an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Body
@@ -262,13 +266,13 @@ Returns 200 if successful, or 404 if the group doesn't exist in Microsoft Entra 
 Clears a Microsoft Entra group that is currently assigned to an environment.
 
 ```
-DELETE /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ## Get partner access settings
@@ -281,13 +285,13 @@ Returns a boolean value that indicates whether the environment allows access for
 > Only internal global administrators can use this API endpoint. Delegated administrator or application authentication isn't supported.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Response
@@ -309,13 +313,13 @@ Enable or disable delegated administrators and foreign multitenant apps to admin
 > Only internal global administrators can use this API endpoint. Delegated administrator or application authentication isn't supported.
 
 ```
-PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
+PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Body
@@ -334,13 +338,13 @@ PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 Returns a boolean value that indicates whether the environment allows access with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Response
@@ -359,13 +363,13 @@ Specifies whether users can access the environment with Microsoft 365 licenses. 
 
 ```
 Content-Type: application/json
-POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Body
@@ -388,13 +392,13 @@ Specifies whether AppSource apps installed on the environment should be updated 
 
 ```
 Content-Type: application/json
-PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/appSourceAppsUpdateCadence
+PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/appSourceAppsUpdateCadence
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment
 
 ### Body
