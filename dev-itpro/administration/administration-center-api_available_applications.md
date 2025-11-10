@@ -18,8 +18,12 @@ The API endpoints here should be utilized to determine what values can be used f
 Get a list of the currently available application families, the available countries/regions within those families, and the available rings within the countries/regions.
 
 ```
-GET /admin/v2.24/applications/
+GET /admin/{apiVersion}/applications/
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -45,15 +49,14 @@ GET /admin/v2.24/applications/
 Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
+GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
-
 `countryCode` - Code for the ring's country.
-
 `ringName` - Name of the ring to inspect.
 
 
