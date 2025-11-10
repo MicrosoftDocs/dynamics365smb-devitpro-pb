@@ -155,7 +155,9 @@ The following walkthrough demonstrates how to use the Example-2VM.ps1 script of 
      Because you do not provide a value for the *$NAV\_VMAdminPassword* setting, the script will generate a password automatically. You will see the password in the message that appears when the script has completed.  
   
      Because you do not provide a value for the *$NAV\_OSImageWithSqlServer* and *$NAV\_OSImageWithoutSqlServer* settings, the script will use the latest version of a supported image from the Azure Gallery.  
-  
+
+     [!INCLUDE [includes-connection-string-caution](../dev-itpro/developer/includes/includes-connection-string-caution.md)]
+
 5.  Go to the **2-Box NAV Deployment settings** section to specify parameters that configure the virtual machine that will run SQL Server and the [!INCLUDE[navnow](includes/navnow_md.md)] database. Set the parameters as follows:  
   
     ```  
@@ -167,7 +169,9 @@ The following walkthrough demonstrates how to use the Example-2VM.ps1 script of 
   
     ```  
   
-     Because you do not provide a value for the *$NAV\_SqlServerMachineAdminPassword* setting, the script will generate a password automatically. You will see the password in the message that appears when the script has completed.  
+     Because you do not provide a value for the *$NAV\_SqlServerMachineAdminPassword* setting, the script will generate a password automatically. You will see the password in the message that appears when the script has completed.
+
+     [!INCLUDE [includes-connection-string-caution](../dev-itpro/developer/includes/includes-connection-string-caution.md)]  
   
 6.  Go to the **Microsoft Dynamics NAV installation settings** section to specify parameters that install [!INCLUDE[navnow](includes/navnow_md.md)] on the virtual machine. Set the parameters as follows:  
   
@@ -202,6 +206,8 @@ The following walkthrough demonstrates how to use the Example-2VM.ps1 script of 
     ```  
   
      Because you do not provide a values for the *$NAV\_WindowsServiceAccountPassword* and *$NAV\_NAVAdminPassword* settings, the script will generate passwords automatically. You will see the passwords in the message that appears when the script has completed.  
+
+     [!INCLUDE [includes-connection-string-caution](../dev-itpro/developer/includes/includes-connection-string-caution.md)]
   
 8.  Go to the **Security Certificates for NAV Client Services settings** section to specify parameters that configure security certificates for the clients and ClickOnce installation of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. Set the parameters as follows:  
   
@@ -209,11 +215,12 @@ The following walkthrough demonstrates how to use the Example-2VM.ps1 script of 
     $NAV_ClientServicesPfxFile = 'C:\Cloud\HowTo\MyAzureVM.pfx'  
     $NAV_HttpsWebClientPfxFile = ""  
     $NAV_HttpsWebClientPfxPassword = ""  
-    $NAV_ClientServicesPfxPassword = "pfxpassword"  
+    $NAV_ClientServicesPfxPassword = "<pfxpassword>"  
     $NAV_ClickOnceCodeSigningPfxFile = 'C:\Cloud\HowTo\ClickOnceSignature.pfx'   
     $NAV_ClickOnceCodeSigningPfxPassword = 'clickoncesignaturepassword'  
     ```  
-  
+
+     [!INCLUDE [includes-connection-string-caution](../dev-itpro/developer/includes/includes-connection-string-caution.md)]
 9. Go to the **Tool dependencies** section to specify parameters that are required for the deployment.  
   
     ```  
@@ -242,21 +249,23 @@ The following walkthrough demonstrates how to use the Example-2VM.ps1 script of 
      It will take approximately 30-45 minutes for the script to complete. If the script completes without errors, then text similar to the following appears in the console:  
   
     ```  
-    The NAV Server virtual machine is: MyNavVm.cloudapp.net  
+    The NAV Server virtual machine is: <server>.cloudapp.net  
     The NAV Server virtual machine administrator username: NSTService  
-    The NAV Server virtual machine administrator password: [password]  
+    The NAV Server virtual machine administrator password: <password>  
     The NAV Server Instance is: DynamicsNAV72_Ins1  
-    The NAV Server account credentials: NSTService/[password]  
+    The NAV Server account credentials: NSTService/<password>   
     The SQL Server machine is: NavSqlAdmin.cloudapp.net  
-    The SQL Server machine administrator password: [password]  
-    The Windows Client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
-    The Web Client can be accessed at: https://MyNavVm.cloudapp.net/DynamicsNAV72_Ins1  
+    The SQL Server machine administrator password: <password>   
+    The Windows Client can be downloaded via ClickOnce at: https://<server>.cloudapp.net:9004  
+    The Web Client can be accessed at: https://<server>.cloudapp.net/DynamicsNAV72_Ins1  
     A user has been added to the database with the following credentials:  
   
     ```  
   
      Two new virtual machines are added on Azure. To see the new virtual machine, sign in to the [Microsoft Azure Management Portal](https://manage.windowsazure.com/), and then choose **VIRTUAL MACHINES**.  
-  
+
+     [!INCLUDE [includes-connection-string-caution](../dev-itpro/developer/includes/includes-connection-string-caution.md)]
+
 ##  <a name="OpenRTCs"></a> Opening the RoleTailored Clients  
  When the script has completed with no errors, you can then access the [!INCLUDE[rtc](includes/rtc_md.md)]s.  
   
@@ -266,7 +275,7 @@ The following walkthrough demonstrates how to use the Example-2VM.ps1 script of 
   
 2.  In the address, type the following address:  
   
-     **https://MyNavVm.cloudapp.net:9004**  
+     **https://<server>.cloudapp.net:9004**  
   
 3.  Follow the instructions on the webpage to install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
   
@@ -276,7 +285,7 @@ The following walkthrough demonstrates how to use the Example-2VM.ps1 script of 
   
 2.  In the address, type the following address:  
   
-     **https://MyNavVm.cloudapp.net/DynamicsNAV72\_Instance1**  
+     **https://<server>.cloudapp.net/DynamicsNAV72\_Instance1**  
   
 ## Next Steps  
  [Scaling the Microsoft Dynamics NAV Network Topology](Scaling-the-Microsoft-Dynamics-NAV-Network-Topology.md)  
