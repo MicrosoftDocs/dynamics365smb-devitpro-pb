@@ -45,15 +45,14 @@ Installs an app on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment.
-
 `appId` - ID of the targeted app.
 
 ### Body
@@ -122,15 +121,14 @@ Uninstalls an app from an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment.
-
 `appId` - ID of the targeted app.
 
 ### Body
@@ -187,15 +185,14 @@ Lists dependent apps that need to be uninstalled in order to uninstall the targe
 
 ```
 Content-Type: application/json
-GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstallRequirements  
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstallRequirements  
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment.
-
 `appId` - ID of the targeted app.
 
 ### Response
@@ -226,13 +223,13 @@ Example `200 OK` response with body:
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment.
 
 ### Response
@@ -264,13 +261,13 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment.
 
 ### Response
@@ -305,15 +302,14 @@ Updates an app using an existing endpoint, but when new parameters in the reques
 
 ```
 Content-Type: application/json
-POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment.
-
 `appId` - ID of the targeted app.
 
 ### Body
@@ -371,15 +367,14 @@ Cancels an app update in scheduled state.
 
 ```
 Content-Type: application/json
-POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment.
-
 `appId` - ID of the targeted app.
 
 ### Body
@@ -413,17 +408,15 @@ POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName
 Gets information about app install, uninstall, and update operations for the specified app.
 
 ```
-GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 ### Route Parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
 `environmentName` - Name of the targeted environment.
-
 `appId` - Id of the targeted app.
-
 `operationId` - Id of the app update operation. Used for getting information about a specific operation.
 
 ### Response
