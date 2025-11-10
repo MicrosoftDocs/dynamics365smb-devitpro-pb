@@ -18,7 +18,7 @@ You can create tables in [!INCLUDE[navnow](includes/navnow_md.md)] that represen
  To use an external table in your code, you must first register one or more connections to the external database as shown in the following code example.  
   
 ```  
-REGISTERTABLECONNECTION(TABLECONNECTIONTYPE::ExternalSQL, 'ExternalDb1', 'Data Source=ProdServer1;Initial Catalog=ProdDb1;User ID=sqladmin;);  
+REGISTERTABLECONNECTION(TABLECONNECTIONTYPE::ExternalSQL, 'ExternalDb1', 'Data Source=ProdServer1;Initial Catalog=ProdDb1;User ID=sqladmin;Password=<password>');  
 ```  
   
  When records from external tables are instantiated, the connection is set on them. To set the current table connection, issue the following C/AL command so that different instances can use different connections.  

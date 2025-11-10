@@ -6,7 +6,6 @@ ms.date: 04/01/2021
 ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.custom: 
 ---
 
 # Using the development environment from the command prompt
@@ -23,7 +22,7 @@ You can start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.
 The finsql.exe has the following syntax.  
 
 ```  
-finsql.exe [command=<command> | designobject=<object type> <object ID>][,servername=<server>][,collation=<collation>][,database=<database>][,file=<file>][,filter=<filter>][,generatesymbolreference=<yes|no>][,importaction=<default|overwrite|skip|0|1|2>][,langid=<ID>][,logfile=<logfile>][,navservername=<name>][,navserverinstance=<instance>][,navservermanagementport=<port>][,ntauthentication=<yes|no|0|1>][,objectcache=<cache>][,password=][,showalldesignercolumns=<yes|no|0|1>][,suppressbuildsearchindex=<yes|no|0|1>][,synchronizeschemachanges=<yes|no|force>][,temppath=<path>][,tenant=<tenant ID>][,unicode=<yes|no|0|1>][,useoldeditor=<yes|no>][,username=<user name>][,suppresselevationcheck=<yes|no|0|1>] 
+finsql.exe [command=<command> | designobject=<object type> <object ID>][,servername=<server>][,collation=<collation>][,database=<database>][,file=<file>][,filter=<filter>][,generatesymbolreference=<yes|no>][,importaction=<default|overwrite|skip|0|1|2>][,langid=<ID>][,logfile=<logfile>][,navservername=<name>][,navserverinstance=<instance>][,navservermanagementport=<port>][,ntauthentication=<yes|no|0|1>][,objectcache=<cache>][,password=<password>][,showalldesignercolumns=<yes|no|0|1>][,suppressbuildsearchindex=<yes|no|0|1>][,synchronizeschemachanges=<yes|no|force>][,temppath=<path>][,tenant=<tenant ID>][,unicode=<yes|no|0|1>][,useoldeditor=<yes|no>][,username=<user name>][,suppresselevationcheck=<yes|no|0|1>] 
 ``` 
 
 ### Syntax Key  

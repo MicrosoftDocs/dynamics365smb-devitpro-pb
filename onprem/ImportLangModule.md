@@ -3,9 +3,6 @@ title: "ImportLangModule"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: e4d673a7-dbe3-43e7-bb88-baa4fd0047e6
-caps.latest.revision: 9
-ms.custom: sfi-ropc-blocked
 ---
 # ImportLangModule
 Imports a language module from a file to the specified [!INCLUDE[navnow](includes/navnow_md.md)] database.  

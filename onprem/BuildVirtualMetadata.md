@@ -3,9 +3,6 @@ title: "BuildVirtualMetadata"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: bbd6a403-863d-44cb-998c-895b4a860ece
-caps.latest.revision: 8
-ms.custom: sfi-ropc-blocked
 ---
 # BuildVirtualMetadata
 Regenerates C\# and metadata information in [!INCLUDE[navnow](includes/navnow_md.md)] virtual tables for a specified language.  

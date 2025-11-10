@@ -3,9 +3,6 @@ title: "DesignObject"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 5701acd3-515e-4a03-8edd-be1b2a2b67d3
-caps.latest.revision: 11
-ms.custom: sfi-ropc-blocked
 ---
 # DesignObject
 Opens the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] and opens the specified object for design.  
@@ -13,7 +10,7 @@ Opens the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] and opens the 
 ## Syntax  
 
 ```  
-Finsql.exe [servername=<server>,] [database=<database>,] designobject=<object type> <object ID>, [username=<user name>,] [pswd,] [ntauthentication=<yes|no|0|1>]  
+Finsql.exe [servername=<server>,] [database=<database>,] designobject=<object type> <object ID>, [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
 ```  
 
 #### Parameters  
@@ -73,6 +70,10 @@ Finsql.exe [servername=<server>,] [database=<database>,] designobject=<object ty
  If you specify the *username* parameter, then you must also specify the *password* parameter and the *ntauthentication* parameter must be **no**.  
 
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
+
+ *password*  
+
+ The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
 
  *ntauthentication*  
 

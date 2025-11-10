@@ -3,9 +3,6 @@ title: "ExportLangModule"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 73d232d6-4551-4faf-9914-570ba4c5301e
-caps.latest.revision: 6
-ms.custom: sfi-ropc-blocked
 ---
 # ExportLangModule
 Exports a language module from the specified database to a file.  
@@ -13,7 +10,7 @@ Exports a language module from the specified database to a file.
 ## Syntax  
 
 ```  
-finsql.exe command=exportlangmodule, file=<exportfile>, langid=<langid>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [username=<username>,] [pswd] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=exportlangmodule, file=<exportfile>, langid=<langid>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
 ```  
 
 #### Parameters  
@@ -81,7 +78,9 @@ finsql.exe command=exportlangmodule, file=<exportfile>, langid=<langid>, [server
 
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
 
- pswd
+ *password*  
+
+ The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
 
  *ntauthentication*  
 

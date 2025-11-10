@@ -3,9 +3,6 @@ title: "DeleteObjects"
 author: jswymer
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 33764be6-81d6-439d-84ce-61b5e2f89a17
-caps.latest.revision: 7
-ms.custom: sfi-ropc-blocked
 ---
 # DeleteObjects
 Deletes objects from the specified [!INCLUDE[navnow](includes/navnow_md.md)] database.  
@@ -88,6 +85,10 @@ The name of the [!INCLUDE[navnow](includes/navnow_md.md)] database in which the 
  If you specify the *username* parameter, then you must also specify the *password* parameter and the *ntauthentication* parameter must be **no**.  
 
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
+
+ *password*  
+
+ The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
 
  *ntauthentication*  
 
