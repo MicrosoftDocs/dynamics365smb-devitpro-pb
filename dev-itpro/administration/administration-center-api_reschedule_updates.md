@@ -1,5 +1,5 @@
 ---
-title: Business Central Admin Center API - Reschedule Updates
+title: Business Central Admin Center API - Manage Updates
 description: Learn about the Business Central administration center API for rescheduling updates.
 author: jswymer
 ms.topic: reference
@@ -9,31 +9,25 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 03/31/2025
 ---
 
-# Business Central Admin Center API - Reschedule Updates
+# Business Central Admin Center API - Manage Updates
 
 Allows for the management of scheduled updates such as rescheduling the update to a run on or after a specific date within a provided range.
 
-## Flexible Update Management
-
-The endpoints documented below ship when flexible update management becomes generally available and apply only to environments on version 25.5 or higher. Prepare any integrations using the Admin Center API to use these endpoints to use the new scheduling features once flexible update management features are available on your environments.
-
-
-
-### Get Updates
+## Get Updates
 
 Get information about update target versions and their status for a specific environment.
 
 ```
-GET /admin/v2.27/applications/{applicationFamily}/environments/{environmentName}/updates
+GET /admin/v2.28/applications/{applicationFamily}/environments/{environmentName}/updates
 ```
 
-#### Route Parameters
+### Route Parameters
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
-#### Response
+### Response
 
 Returns information about updates available for the specified environment.
 
@@ -94,15 +88,15 @@ Returns information about updates available for the specified environment.
 }
 ```
 
-### Select target version for next environment update
+## Select target version for next environment update
 
 Select a target version and update date for the next update on an environment. Only one target version can be selected per environment at a time; selecting a new target version for the next environment updates automatically unselects the previous target version.
 
 ```
-PATCH /admin/v2.27/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
+PATCH /admin/v2.28/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
 ```
 
-#### Route Parameters
+### Route Parameters
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
@@ -111,7 +105,7 @@ PATCH /admin/v2.27/applications/{applicationFamily}/environments/{environmentNam
 `targetVersion` - Version number of the target version to be selected as next update, must match the value returned by the `GET /admin/vX.XX/applications/{applicationFamily}/environments/{environmentName}/updates` request.
 
 
-#### Body
+### Body
 
 Example for selecting a target version that is available.
 
@@ -134,93 +128,28 @@ Example for selecting a target version that is not yet available.
 }
 ```
 
-#### Expected Error Codes
+### Expected Error Codes
 
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
 `environmentNotFound` - the targeted environment couldn't be found
 
-## Legacy
-The legacy endpoints documented below are backwards compatible with the new endpoints introduced as part of flexible update management, but do not offer all scheduling options the new endpoints offer. It is recommended to update your integrations to use the flexible update management endpoints documented above for environments on version 25.5 or higher.
+## Cancel running update
 
-### Get Scheduled Update
-
-Get information about the next update that is scheduled for a specific environment.
+Cancels a running update and restores the environment to its state immediately before the update started. Can only be used while an update is running. Operation may take over an hour during which the environment is not accessible.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/upgrade
+POST /admin/v2.28/applications/{applicationFamily}/environments/{environmentName}/operations/{id}/cancel
 ```
 
-#### Route Parameters
+### Route Parameters
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
-#### Response
+`id` - The operation ID for the update operation. Can be obtained from the `GET /admin/v2.28/environments/{environmentName}/operations` endpoint
 
-Returns information about the scheduled update for the specified environment.
-
-```
-{
-  "environmentName": string, // The name of the targeted environment.
-  "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "sourceVersion": string, // The current version of the environment's application.
-  "targetVersion": string, // The version of the application that the environment will update to.
-  "canTenantSelectDate": boolean, // Indicates if a new update date can be selected.
-  "didTenantSelectDate": boolean, // Indicates if the tenant has selected the current date for the update.
-  "earliestSelectableUpgradeDate": datetime, // Specifies the earliest date that can be chosen for the update.
-  "latestSelectableUpgradeDate": datetime, // Specifies the latest date that can be chosen for the update.
-  "upgradeDate": datetime, // The currently selected scheduled date of the update.
-  "updateStatus": string, // The current status of the environment's update. (enum | "Scheduled" or "Running")
-  "ignoreUpgradeWindow": boolean, // Indicates if the environment's update window will be ignored
-  "isActive": boolean, // Indicates if the update is activated and is scheduled to occur.
-}
-```
-
-#### Expected Error Codes
-
-`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
-
-`environmentNotFound` - the targeted environment couldn't be found
-
-## Reschedule Update
-
-Reschedule the next update on the environment. It is not possible to specify a target version using this legacy endpoint.
-
-```
-Content-Type: application/json
-PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/upgrade
-```
-
-#### Route Parameters
-
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
-
-`environmentName` - Name of the targeted environment
-
-#### Body
-
-```
-{
-  "runOn": datetime, // Sets the date that the upgrade should be run on.
-  "ignoreUpgradeWindow": boolean // Specifies if the upgrade window for the environment should be respected.
-}
-```
-
-#### Expected Error Codes
-
-`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
-
-`requestBodyRequired` - the request body must be provided
-
-`resourceDoesNotExist` - no upgrade is currently scheduled for the targeted environment
-
-` entityValidationFailed` - some unhandled error occurred in the validation of the request
-
-`environmentNotFound` - the targeted environment couldn't be found
-
-   - target: {applicationFamily}/{environmentName}
 
 
 ## Related information
