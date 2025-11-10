@@ -97,6 +97,9 @@ Running updates are cancelled automatically if the update does not succeed befor
 
 Cancelling a running update will stop the update process and restore the environment to its state immediately before the update started. Depending on the size of the environment database this process may take more than an hour, during which the environment is not accessible.
 
+> [!NOTE]  
+> Updates cannot be cancelled on environments that are in the [Enforced Update Period](update-rollout-timeline.md) for the source version of the environment update.
+
 ## <a name="notify"></a>Get notified of updates
 
 A notification is sent to all notification recipients that are listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] whenever a new version becomes available and whenever an update is scheduled for your environment. Learn more in [Managing Tenant Notifications](tenant-admin-center-notifications.md).
