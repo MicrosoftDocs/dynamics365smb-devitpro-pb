@@ -55,8 +55,11 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}
 ### Route Parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+
 `countryCode` - Code for the ring's country.
+
 `ringName` - Name of the ring to inspect.
 
 
