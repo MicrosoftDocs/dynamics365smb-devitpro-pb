@@ -27,11 +27,12 @@ Creates a request to transfer an environment to another Microsoft Entra tenant.
 > This API call must be authenticated on the source tenant.
 
 ```
-POST /admin/v2.24/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 `environmentName` - Name of the environment
 
@@ -85,8 +86,12 @@ Accepts an environment transfer on the destination tenant.
 > This API call must be authenticated on the destination tenant.
 
 ```
-POST /admin/v2.24/transfers/incoming
+POST /admin/{apiVersion}/transfers/incoming
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Body
 
@@ -136,11 +141,12 @@ Cancels a created transfer request on the source tenant.
 > This API call must be authenticated on the source tenant.
 
 ```
-DELETE /admin/v2.24/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 `environmentName` - Name of the environment
 
@@ -183,8 +189,12 @@ Get a list of transfer requests on the source tenant that haven't yet been compl
 > This API call must be authenticated on the source tenant.
 
 ```
-GET /admin/v2.24/transfers/outgoing
+GET /admin/{apiVersion}/transfers/outgoing
 ```
+
+### Route Parameters
+
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 ```
@@ -225,11 +235,12 @@ Get a list incoming transfers on the destination tenant from a specific source t
 > This API call must be authenticated on the destination tenant.
 
 ```
-GET /admin/v2.24/transfers/incoming/{sourceEntraTenantId}
+GET /admin/{apiVersion}/transfers/incoming/{sourceEntraTenantId}
 ```
 
 ### Route parameters
 
+`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 `sourceEntraTenantId` - Microsoft Entra tenant ID for the source tenant
 
 ### Response
