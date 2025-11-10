@@ -3,9 +3,6 @@ title: "ExportObjects"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 3aa7629a-ced2-461d-8322-59347ec5d4f4
-caps.latest.revision: 19
-ms.custom: sfi-ropc-blocked
 ---
 # ExportObjects
 Exports objects from the specified database.  
@@ -13,7 +10,7 @@ Exports objects from the specified database.
 ## Syntax  
 
 ```  
-finsql.exe command=exportobjects, file=<exportfile>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [filter=<filter>,] [username=<username>,] [pswd,] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=exportobjects, file=<exportfile>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [filter=<filter>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
 ```  
 
 #### Parameters  
@@ -98,6 +95,10 @@ finsql.exe command=exportobjects, file=<exportfile>, [servername=<server>,] [dat
  If you specify the *username* parameter, then you must also specify the *password* parameter and the *ntauthentication* parameter must be **no**.  
 
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
+
+ *password*  
+
+ The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
 
  *ntauthentication*  
 
