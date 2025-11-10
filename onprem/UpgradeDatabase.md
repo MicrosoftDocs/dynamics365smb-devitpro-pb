@@ -2,9 +2,6 @@
 title: "UpgradeDatabase"
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 5ccd436d-5938-4fe5-b35e-4f7a39f215e8
-caps.latest.revision: 7
-ms.custom: sfi-ropc-blocked
 ---
 # UpgradeDatabase
 Upgrades an existing [!INCLUDE[navnow](includes/navnow_md.md)] database.  
@@ -12,7 +9,7 @@ Upgrades an existing [!INCLUDE[navnow](includes/navnow_md.md)] database.
 ## Syntax  
   
 ```  
-finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, logfile=<path and filename>,] [username=<user name>,] [pswd] [ntauthentication=<yes|no|0|1>]  
+finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
 ```  
   
 #### Parameters  
@@ -54,6 +51,9 @@ finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, l
   
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
   
+ *password*  
+  
+ The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
   
  *ntauthentication*  
   

@@ -9,7 +9,7 @@ Imports objects from a file to the specified database.
 ## Syntax  
   
 ```  
-finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [importaction=<default|overwrite|skip|0|1|2>,] [username=<username>,] [pswd] [ntauthentication=<yes|no|1|0>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
+finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [importaction=<default|overwrite|skip|0|1|2>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
 ```  
   
 #### Parameters  
@@ -85,6 +85,9 @@ finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [dat
   
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
   
+ *password*  
+  
+ The password to use with the **username** parameter to authenticate to the database. If you do not specify a username and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
   
  *ntauthentication*  
   
