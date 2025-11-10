@@ -33,7 +33,9 @@ POST /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/env
 ### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+
 `environmentName` - Name of the environment
 
 ### Body
@@ -147,7 +149,9 @@ DELETE /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/e
 ### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+
 `environmentName` - Name of the environment
 
 ### Response
@@ -241,6 +245,7 @@ GET /admin/{apiVersion}/transfers/incoming/{sourceEntraTenantId}
 ### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
 `sourceEntraTenantId` - Microsoft Entra tenant ID for the source tenant
 
 ### Response
