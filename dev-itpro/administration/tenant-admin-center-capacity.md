@@ -35,10 +35,11 @@ Customers can also choose to purchase any number of extra production environment
 
 You can create and use production and sandbox environments in any country/region that the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, including where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located.
 
- Customers, administrators, and partners can create more environments using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+Customers, administrators, and partners can create more environments using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same license. Each user acts within the scope of their license in each environment.
-Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment.
+When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same license. Each user acts within the scope of their license in each environment. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment.
+
+Partners using the [Partner Sandbox](environment-types.md#partnersandbox) license on their partner tenants can purchase additional sandbox environments by increasing the number of Partner Sandbox user licenses on their tenant. Like regular [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, the first five Partner Sandbox licenses grant one production environment and three sandbox environments on the tenant. Each additional five Partner Sandbox licenses automatically grant three additional sandbox environments on the tenant.
 
 ## Storage
 
