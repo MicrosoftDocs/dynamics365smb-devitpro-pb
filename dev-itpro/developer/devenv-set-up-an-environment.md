@@ -6,7 +6,7 @@ ms.date: 11/10/2025
 ms.reviewer: bholtorf
 ms.topic: how-to
 author: bholtorf
-ms.custom: sfi-ropc-blocked
+ms.custom: bap-template
 ---
 
 # Set up an environment for developing a module
