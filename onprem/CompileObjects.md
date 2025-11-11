@@ -3,9 +3,6 @@ title: "CompileObjects"
 author: jswymer
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: bf71a267-45d8-43cf-b881-f0b3976e81e5
-caps.latest.revision: 28
-ms.custom: sfi-ropc-blocked
 ---
 # CompileObjects
 Compiles objects from the specified database.  
@@ -43,7 +40,7 @@ finsql.exe command=compileobjects, [servername=<server>,] [database=<database>,]
  If you do not specify the *database* parameter but you do specify the *servername* parameter, then the [Open Database](uiref/-$-S_2335-Open-Database-$-.md) window opens so that you can specify the database name.  
 
 > [!TIP]  
->  To view the name of the current database, on the **File** menu, choose **Database**, and then choose **Information**. Use the value of the **Database Name** field for the *database* parameter.  
+> To view the name of the current database, on the **File** menu, choose **Database**, and then choose **Information**. Use the value of the **Database Name** field for the *database* parameter.  
 
  *logfile*  
 

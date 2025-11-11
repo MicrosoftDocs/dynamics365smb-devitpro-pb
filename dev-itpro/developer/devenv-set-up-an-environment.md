@@ -1,27 +1,27 @@
 ---
-title: "Set Up an Environment for Developing a Module"
+title: Set up an environment for developing a module
 description: Learn how to set up the tools you need to build a module in the System Application.
 ms.author: bholtorf
-ms.date: 07/29/2021
+ms.date: 11/10/2025
 ms.reviewer: bholtorf
 ms.topic: how-to
 author: bholtorf
-ms.custom: sfi-ropc-blocked
+ms.custom: bap-template
 ---
 
-# Set Up an Environment for Developing a Module
+# Set up an environment for developing a module
 
-This topic describes how to set up an environment for developing a module in the System Application.
+This article describes how to set up an environment for developing a module in the System Application.
 
 ## Requirements
 
 - You must have a GitHub account.
-- You are familiar with the basics of [Git](https://git-scm.com/), and have the application available. You will use Git to access the GitHub repository.
+- You're familiar with the basics of [Git](https://git-scm.com/), and have the application available. You will use Git to access the GitHub repository.
 - [Docker](https://www.docker.com/) is installed. You will use it to run Business Central as a self-contained application.
-- [BcContainerHelper](https://www.powershellgallery.com/packages/BcContainerHelper/) is installed. You will use it to create a Docker container.
-- Demo or Partner license for Business Central
+- [BcContainerHelper](https://www.powershellgallery.com/packages/BcContainerHelper/) is installed. You'll use it to create a Docker container.
+- You have a Demo or Partner license for [!INCLUDE [prod_short](includes/prod_short.md)].
 
-## Get the Repository On Your Local Machine
+## Get the repository on your local machine
 
 1. Open the [BCApps Repository](https://github.com/microsoft/BCApps), and choose **Fork** to create a fork of the repository.
 2. Choose **Code**, and then copy the URL under code to clone the forked repository.
@@ -41,16 +41,19 @@ This topic describes how to set up an environment for developing a module in the
     ],
     ```
 
-    For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
+    To learn more about the settings.json, go to [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
-## Set Up a Business Central Docker Container
+## Set up a Business Central Docker container
 
-1. In PowerShell, import the **BcContainerHelper** module by running the **Import-Module BcContainerHelper** command. This loads the functions from the module.
-2. Run the **New-BcContainerWizard** command. This opens a new PowerShell window and allows you to configure your [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] container.
+1. In PowerShell, import the **BcContainerHelper** module by running the **Import-Module BcContainerHelper** command. This command loads the functions from the module.
+2. Run the **New-BcContainerWizard** command. This command opens a new PowerShell window and allows you to configure your [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] container.
 3. Complete the steps in the wizard. Make the following changes to the default values.
 
     1. On the **Local Docker Container or Azure VM** step, choose a local docker container.
     2. On the **Authentication, Username/Password Authentication** step, choose options **a**, **b** or **c**.
+
+    [!INCLUDE [includes-connection-string-caution](includes/includes-connection-string-caution.md)]
+
     3. On the **Container Name** step, enter a name.
     4. On the **Version** step, choose options **e** or **f**, depending on whether you want a sandbox or on-premises build.
 
