@@ -66,7 +66,7 @@ Alternatively, you can start the cloud migration in another environment, or you 
 ## Cancel data upgrade
 If you need to cancel a running data upgrade operation, you can do so from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. To cancel a running data upgrade, navigate to the **Operation Details** pane from the Environment Details or Operations page and choose **Cancel update** by the operation status.
 
-Cancelling a running data upgrade operation will stop the process and restore the environment to its state immediately before the data upgrade started. Depending on the size of the environment database this process may take more than an hour, during which the environment is not accessible.
+Canceling a running data upgrade operation will stop the process and restore the environment to its state immediately before the data upgrade started. Depending on the size of the environment database this process may take more than an hour, during which the environment isn't accessible.
 
 ## Next steps
 
