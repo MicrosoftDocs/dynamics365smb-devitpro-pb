@@ -95,7 +95,7 @@ To schedule an update to a planned version:
 
 Running updates are cancelled automatically if the update does not succeed before the end of the update window set for the environment. If you need to cancel an update before the end of the update window or an update that has been allowed to run outside the environment's update window, you can do so from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. To cancel a running update, navigate to the **Operation Details** pane from the Environment Details or Operations page and choose **Cancel update** by the operation status.
 
-Cancelling a running update will stop the update process and restore the environment to its state immediately before the update started. Depending on the size of the environment database this process may take more than an hour, during which the environment is not accessible.
+Canceling a running update will stop the update process and restore the environment to its state immediately before the update started. Depending on the size of the environment database this process may take more than an hour, during which the environment isn't accessible.
 
 > [!NOTE]  
 > Updates cannot be cancelled on environments that are in the [Enforced Update Period](update-rollout-timeline.md) for the source version of the environment update.
