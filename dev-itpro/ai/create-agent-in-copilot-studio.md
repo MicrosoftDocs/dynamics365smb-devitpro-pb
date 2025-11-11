@@ -1,12 +1,12 @@
 ---
-title: Create Agents with Copilot Studio
+title: Create Agents in Copilot Studio that Connect to Business Central
 description: Learn how to create conversational agents with Copilot Studio that integrate with Business Central data and automate business processes through natural language interactions.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/30/2025
+ms.date: 11/11/2025
 ms.custom: bap-template
 ---
 # Create agents in Copilot Studio that connect to Business Central
@@ -207,6 +207,8 @@ Follow these steps to create an agent that connects to the Business MCP server.
   ```http
   https://businesscentral.dynamics.com/<tenant ID>/<environment name>?table=2000000138
   ```
+
+  Filter the list by **Page Type** = **API** and **APIVersion** = **v2.0**.
 
 ## Related information
 
