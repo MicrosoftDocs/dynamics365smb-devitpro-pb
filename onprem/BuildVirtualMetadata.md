@@ -3,9 +3,6 @@ title: "BuildVirtualMetadata"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: bbd6a403-863d-44cb-998c-895b4a860ece
-caps.latest.revision: 8
-ms.custom: sfi-ropc-blocked
 ---
 # BuildVirtualMetadata
 Regenerates C\# and metadata information in [!INCLUDE[navnow](includes/navnow_md.md)] virtual tables for a specified language.  
@@ -13,7 +10,7 @@ Regenerates C\# and metadata information in [!INCLUDE[navnow](includes/navnow_md
 ## Syntax  
 
 ```  
-finsql.exe command=buildvirtualmetadata, langid=<langid>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
+finsql.exe command=buildvirtualmetadata, langid=<langid>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [username=<user name>,] [ntauthentication=<yes|no|0|1>]  
 ```  
 
 #### Parameters  
@@ -66,9 +63,6 @@ finsql.exe command=buildvirtualmetadata, langid=<langid>, [servername=<server>,]
 
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
 
- *password*  
-
- The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
 
  *ntauthentication*  
 

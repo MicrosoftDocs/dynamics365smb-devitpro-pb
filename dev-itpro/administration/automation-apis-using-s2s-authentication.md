@@ -6,7 +6,6 @@ ms.date: 06/20/2025
 ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.custom: sfi-ropc-blocked
 ---
  
 # Using service-to-service (S2S) authentication 
@@ -16,8 +15,7 @@ Service-to-Service (S2S) authentication is suited for scenarios where integratio
 > [!NOTE]
 > For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Microsoft Entra ID documentation.
 
-
-In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Microsoft Entra ID. 
+In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents unattended integrations because MFA is required to acquire the access token from Microsoft Entra ID.
 
 ## Feature availability
 
