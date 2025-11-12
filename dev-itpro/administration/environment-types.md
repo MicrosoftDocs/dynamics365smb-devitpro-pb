@@ -63,7 +63,7 @@ Partner Sandbox licenses can but don't have to exist alongside regular full user
 
 Partners can purchase the unique, partner-only license via Web Direct to create flexible, cost-effective solutions that don't expire. Accessing the SKUs and pricing is simple: [Go to experience.dynamics.com](https://experience.dynamics.com/requestlicense/) and submit a request for the *Dynamics 365 Business Central Partner Sandbox* license. Use a valid MPN ID. Once your request is approved, you receive a token to purchase the SKUs directly. Pay by credit card. If the total billing is over $500/month for your company, then you can pay by invoice.
 
-To change the number of Partner Sandbox licenses on your tenant after purchasing initial licenses through experience.dynamics.com, [manage your subscription in the Microsoft 365 Admin Center](https://learn.microsoft.com/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users?view=o365-worldwide#buy-more-or-reduce-licenses).
+To change the number of Partner Sandbox licenses on your tenant after purchasing initial licenses through experience.dynamics.com, [manage your subscription in the Microsoft 365 Admin Center](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users#buy-more-or-reduce-licenses).
 
 ### <a name="precautions"></a>Precautions for sandbox environments with production data
 
