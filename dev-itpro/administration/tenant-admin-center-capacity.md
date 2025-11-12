@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
-ms.date: 06/20/2025
+ms.date: 11/12/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -39,7 +39,7 @@ Customers, administrators, and partners can create more environments using the [
 
 When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same license. Each user acts within the scope of their license in each environment. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment.
 
-Partners using the [Partner Sandbox](environment-types.md#partnersandbox) license on their partner tenants can purchase additional sandbox environments by increasing the number of Partner Sandbox user licenses on their tenant. Like regular [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, the first five Partner Sandbox licenses grant one production environment and three sandbox environments on the tenant. Each additional five Partner Sandbox licenses automatically grant three additional sandbox environments on the tenant.
+Partners using the [Partner Sandbox](environment-types.md#partnersandbox) license on their partner tenants can purchase extra sandbox environments by increasing the number of Partner Sandbox user licenses on their tenant. Like regular [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, the first five Partner Sandbox licenses grant one production environment and three sandbox environments on the tenant. Each extra five Partner Sandbox licenses automatically grant three more sandbox environments on the tenant.
 
 ## Storage
 
