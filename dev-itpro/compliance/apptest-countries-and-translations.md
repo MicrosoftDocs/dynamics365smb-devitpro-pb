@@ -2,8 +2,8 @@
 title: Country/Regional Availability and Supported Languages
 description: Learn where Business Central is available, which languages are supported, and how partners deliver localized solutions through Microsoft commercial marketplace.
 author: sorenfriisalexandersen
-ms.date: 10/14/2025
-ms.reviewer: jswymer
+ms.date: 11/12/2025
+ms.reviewer: solsen
 ms.topic: article
 ms.author: altotovi
 ms.custom: references_regions
@@ -27,7 +27,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 
 ## Countries and regions
 
-| Country/region | Localized by | Base app | Availability | Environment country abbreviation | Azure geography |
+| Country/region | Localized by | Base app | Availability | Environment country/region abbreviation | Azure geography |
 |----------------|--------------|---------| -------------|----------------------------------|-----------------|
 |Aland Islands|Partner|W1|Planned - December 2025|||
 |Albania|Partner|W1|Available|AL|Europe|
@@ -278,11 +278,11 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 >
 > <sup>2</sup> BaseApp for Sweden was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features are available as apps. Existing users can enable new features through the **Feature Management**.
 >
-> <sup>3</sup> This country is available for deployment and transactions, but marketplace availability is postponed. Therefore, ISV solutions from AppSource aren't accessible until further notice.
+> <sup>3</sup> This country/region is available for deployment and transactions, but marketplace availability is postponed. Therefore, ISV solutions from AppSource aren't accessible until further notice.
 >
 > <sup>4</sup> BaseApp for United Kingdom was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2. Current localization features are available as apps. Users can enable new features through the **Feature Management**.
 >
-> <sup>5</sup> The country is enabled in AppSource and the CSP pricelist, but before deployment you must submit a request to the [Microsoft localization team](mailto:d365bcloc@microsoft.com). Deployment will be available in the next minor version after your request is processed.
+> <sup>5</sup> The country/region is enabled in AppSource and the CSP pricelist, but before deployment you must submit a request to the [Microsoft localization team](mailto:d365bcloc@microsoft.com). Deployment will be available in the next minor version after your request is processed.
 
 
 Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
