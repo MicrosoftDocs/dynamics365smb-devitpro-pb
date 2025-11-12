@@ -96,7 +96,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Egypt|Partner|W1|Available|EG|South Africa|
 |Eritrea|Partner|W1|Available|ER|South Africa|
 |Estonia|Partner|W1|Available|EE|Europe|
-|Eswatini (Swaziland)|Partner|W1|Available|SZ|5)|
+|Eswatini|Partner|W1|Available|SZ|5)|
 |Ethiopia|Partner|W1|Available|ET|South Africa|
 |Falkland Islands|Partner|W1|Planned - December 2025|||
 |Faroe Islands (Denmark)|Microsoft|W1|Available|DK|Europe|
@@ -267,7 +267,6 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Vatican City|Partner|IT|Available|VA|Europe|
 |Vietnam|Partner|W1|Available|VN|Asia Pacific|
 |Wallis and Futuna|Partner|W1|Planned - December 2025|||
-|Western Sahara|Partner|W1|Planned - December 2025|||
 |Yemen|Partner|W1|Available|YE|UAE|
 |Zambia|Partner|W1|Available|ZM|South Africa|
 |Zimbabwe|Partner|W1|Available|ZW|South Africa|
