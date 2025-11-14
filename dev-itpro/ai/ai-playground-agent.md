@@ -91,6 +91,10 @@ Tasks are specific actions that the agent can perform based on your instructions
 
 Learn more about instructions and tasks in [Configure instructions and tasks for AI Playground Agent (preview)](ai-playground-agent-configure.md).
 
+### Supported languages
+
+While this feature can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might impact accuracy and the user experience. Learn more about geographic and language availability at [Copilot international availability](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
+
 ### Permissions and profiles
 
 The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege—grant only the permissions necessary for the agent's intended functionality. Permission sets can only be modified when the agent is deactivated. 
