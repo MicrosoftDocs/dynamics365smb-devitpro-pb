@@ -19,7 +19,7 @@ The **Feature: Preview semantic similarity search on application metadata** key 
 - When disabled, Copilot uses keyword-based search to find objects by matching their metadata, like name and description. Users need to know the name of the object they're looking for.
 - When enabled, Copilot uses semantic search to find objects based on the meaning and context of the search terms, providing relevant results even if the exact words don't match.
 
-[!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [prouction-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Capabilities that use semantic search
 
