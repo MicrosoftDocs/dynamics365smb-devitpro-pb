@@ -25,8 +25,7 @@ The **Feature: Preview semantic similarity search on application metadata** key 
 
 - [Chat with Copilot](/dynamics365/business-central/chat-with-copilot)
 - [Analysis assist](/dynamics365/business-central/analysis-assist)
-- [MCP Server](../ai/configure-mcp-server.md)
-
+- Dynamic tool mode in [MCP Server](../ai/configure-mcp-server.md)
 
 ## Related information
 
