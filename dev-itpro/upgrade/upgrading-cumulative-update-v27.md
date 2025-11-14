@@ -2,7 +2,7 @@
 title: Install a Business Central 2025 release Wave 2 (version 27) Update
 description: This article describes the tasks required for getting the monthly version 27 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 09/03/2025
+ms.date: 11/03/2025
 ms.reviewer: jswymer
 ms.topic: install-set-up-deploy
 ms.author: jswymer
@@ -69,7 +69,7 @@ The installation media (DVD) includes new versions of Microsoft's Base Applicati
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the quotation marks with the correct values for your environment.
 
 ```powershell
-$BcServerInstance = "The name of the Business Central server instance, for example: BC260"
+$BcServerInstance = "The name of the Business Central server instance, for example: BC270"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (27-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB." 

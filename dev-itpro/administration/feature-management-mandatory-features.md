@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: article
-ms.date: 06/19/2025
+ms.date: 11/03/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.collection:
@@ -40,7 +40,7 @@ These features are no longer controlled in **Feature management**, so they can't
 ### New features added and enabled by default in version 27
 
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
-- Feature: Introduce UI support for masking sensitive data.
+- [Feature: Introduce UI support for masking sensitive data](../developer/devenv-mask-type-feature-key.md)
 
 ### New features added and disabled by default in version 27
 

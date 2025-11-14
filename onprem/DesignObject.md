@@ -3,9 +3,6 @@ title: "DesignObject"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 5701acd3-515e-4a03-8edd-be1b2a2b67d3
-caps.latest.revision: 11
-ms.custom: sfi-ropc-blocked
 ---
 # DesignObject
 Opens the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] and opens the specified object for design.  

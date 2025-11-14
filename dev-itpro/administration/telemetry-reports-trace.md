@@ -1,12 +1,12 @@
 ---
-title: Report Generation Telemetry | Microsoft Docs
-description: Learn about the report telemetry in Business Central  
+title: Report Generation Telemetry
+description: Learn about the report telemetry in Business Central.
 author: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/04/2024
+ms.date: 11/12/2025
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.custom: bap-template
 ---
 
@@ -69,6 +69,9 @@ The custom dimensions that are of particular interest for this operation include
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |extensionPublisher|Specifies the publisher of the extension that the report object belongs to.|
+| layoutAppId | Specifies the ID for the layout that was used to render the report. This dimension was added in version 20.0.| 
+| layoutName | Specifies the name for the layout that was used to render the report. This dimension was added in version 20.0.| 
+| layoutType | Specifies the type of the layout that was used to render the report. See [layoutType](#layoutType). This dimension was added in version 20.0.| 
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
 |reportAction|Specifies the action that was done on the report. See [reportAction](#reportAction). This dimension was added in version 20.0.|
 |reportingEngine | Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |

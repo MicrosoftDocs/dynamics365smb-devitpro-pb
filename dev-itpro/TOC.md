@@ -79,10 +79,11 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 27.1](whatsnew/whatsnew-update-27-1.md)
 ### [Update 27.0](whatsnew/whatsnew-update-27-0.md)
 ### [Update 26.5](whatsnew/whatsnew-update-26-5.md)
-### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
 ### Updates for earlier major versions
+#### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
 #### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
 #### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
 #### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
@@ -1737,7 +1738,11 @@
 #### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 #### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
-
+<!-- Microsoft Copilot Studio -->
+### Integrating with Microsoft Copilot Studio
+#### [Create agents that connect to Business Central](ai/create-agent-in-copilot-studio.md)
+#### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md)
+<!-- end Microsoft Copilot Studio -->
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
@@ -2193,5 +2198,7 @@
 # Responsible AI
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
+## [Transparency note: Semantic Metadata Search in Business Central](ai/transparency-note-semantic-metadata-search.md)  
+
 <!-- end upgrade -->
 <!--on-prem ends-->

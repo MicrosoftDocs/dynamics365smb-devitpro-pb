@@ -3,9 +3,7 @@ title: "Walkthrough: Deploying Microsoft Dynamics NAV on a Microsoft Azure Virtu
 author: jswymer
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 8f2aaf49-d3c0-42a1-997e-8f65fc42eda7
 ms.author: jswymer
-ms.custom: sfi-ropc-blocked
 ---
 # Walkthrough: Deploying Microsoft Dynamics NAV on a Microsoft Azure Virtual Machine
 The following walkthrough demonstrates how to use the Example-1VM.ps1 script of the [!INCLUDE[nav_prov_long](includes/nav_prov_long_md.md)] to deploy [!INCLUDE[navnow](includes/navnow_md.md)] on Microsoft Azure from a local computer. The walkthrough deploys the [!INCLUDE[navnow](includes/navnow_md.md)] components, including the [!INCLUDE[demolong](includes/demolong_md.md)], on a single virtual machine as illustrated in the following figure.  
@@ -142,10 +140,10 @@ The following walkthrough demonstrates how to use the Example-1VM.ps1 script of 
 4.  Go to the  **Azure virtual machine settings** section to specify parameters for the virtual machine that will be created on Microsoft Azure. Set the parameters as follows:  
 
     ```  
-    $NAV_AzureServiceName = 'MyNavVm'  
+    $NAV_AzureServiceName = '<server>'  
     $NAV_DomainName = 'cloudapp.net'  
     $NAV_VMAdminUserName = 'NavVmAdmin'  
-    $NAV_VMAdminPassword = ''  
+    $NAV_VMAdminPassword
     $NAV_AzureLocation = 'North Europe'  
     $NAV_VMSize = 'Small'  
     $NAV_OSImageWithSqlServer = ''  
@@ -154,6 +152,8 @@ The following walkthrough demonstrates how to use the Example-1VM.ps1 script of 
      Because you do not provide a value for the *$NAV\_VMAdminPassword* setting, the script will generate a password automatically. You will see the password in the message that appears when the script has completed.  
 
      Because you do not provide a value for the *$NAV\_OSImageWithSqlServer* setting, the script will use the latest version of a supported image from the Azure Gallery.  
+
+     [!INCLUDE [includes-connection-string-caution](../dev-itpro/developer/includes/includes-connection-string-caution.md)]
 
 5.  Go to the **Microsoft Dynamics NAV installation settings** section to specify parameters that install [!INCLUDE[navnow](includes/navnow_md.md)] on the virtual machine. Set the parameters as follows:  
 
@@ -188,17 +188,20 @@ The following walkthrough demonstrates how to use the Example-1VM.ps1 script of 
     ```  
 
      Because you do not provide a values for the *$NAV\_WindowsServiceAccountPassword* and *$NAV\_NAVAdminPassword* settings, the script will generate passwords automatically. You will see the passwords in the message that appears when the script has completed.  
+     [!INCLUDE [includes-connection-string-caution](../dev-itpro/developer/includes/includes-connection-string-caution.md)]
 
 7.  Go to the **Security Certificates for NAV Client Services settings** section to specify parameters that configure security certificates for the clients and ClickOnce installation of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. Set the parameters as follows:  
 
     ```  
     $NAV_ClientServicesPfxFile = 'C:\Cloud\HowTo\MyAzureVM.pfx'  
-    $NAV_ClientServicesPfxPassword = "pfxpassword"  
+    $NAV_ClientServicesPfxPassword = "<pfxpassword>"  
     $NAV_HttpsWebClientPfxFile = ""  
     $NAV_HttpsWebClientPfxPassword = ""  
     $NAV_ClickOnceCodeSigningPfxFile = 'C:\Cloud\HowTo\ClickOnceSignature.pfx'   
     $NAV_ClickOnceCodeSigningPfxPassword = 'clickoncesignaturepassword'  
-    ```  
+    ```
+
+     [!INCLUDE [includes-connection-string-caution](../dev-itpro/developer/includes/includes-connection-string-caution.md)]
 
 8.  Go to the **Tool dependencies** section to specify parameters for the tools for the deployment.  
 
@@ -228,13 +231,13 @@ The following walkthrough demonstrates how to use the Example-1VM.ps1 script of 
      It will take approximately 30-45 minutes for the script to finish. If the script is completed without errors, then text similar to the following appears in the console.  
 
     ```  
-    The NAV Server virtual machine is: MyNavVm.cloudapp.net   
+    The NAV Server virtual machine is: <server>.cloudapp.net   
     The NAV Server virtual machine administrator username: NSTService  
-    The NAV Server virtual machine administrator password: [password]  
+    The NAV Server virtual machine administrator password: <password>
     The NAV Server Instance is: DynamicsNAV72_Ins1  
-    The NAV Server account credentials: NSTService/[password]  
-    The Windows Client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
-    The Web Client can be accessed at: https://MyNavVm.cloudapp.net/DynamicsNAV72_Ins1  
+    The NAV Server account credentials: NSTService/<password>  
+    The Windows Client can be downloaded via ClickOnce at: https://<server\.cloudapp.net:9004  
+    The Web Client can be accessed at: https://<server>.cloudapp.net/DynamicsNAV72_Ins1  
     A user has been added to the database with the following credentials:  
       user=navuser  
       password=[password]  
@@ -261,7 +264,7 @@ The following walkthrough demonstrates how to use the Example-1VM.ps1 script of 
 
 2.  In the address, type the following address:  
 
-     **https://MyNavVm.cloudapp.net/DynamicsNAV72\_Instance1**  
+     **https://<server>.cloudapp.net/DynamicsNAV72\_Instance1**  
 
 ## Next Steps  
  [Scaling the Microsoft Dynamics NAV Network Topology](Scaling-the-Microsoft-Dynamics-NAV-Network-Topology.md)  

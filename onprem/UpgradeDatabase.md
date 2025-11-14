@@ -2,9 +2,6 @@
 title: "UpgradeDatabase"
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 5ccd436d-5938-4fe5-b35e-4f7a39f215e8
-caps.latest.revision: 7
-ms.custom: sfi-ropc-blocked
 ---
 # UpgradeDatabase
 Upgrades an existing [!INCLUDE[navnow](includes/navnow_md.md)] database.  
