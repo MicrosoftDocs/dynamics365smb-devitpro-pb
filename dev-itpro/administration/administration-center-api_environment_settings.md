@@ -6,14 +6,14 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 07/16/2025
+ms.date: 11/17/2025
 ms.custom: sfi-ga-nochange
 ---
-# Business Central admin center API - environment settings
+# Business Central admin center API - Environment settings
 
 Allows you to manage environment-specific settings such as the AppInsights key or the update window.
 
-## Get Update Settings
+## Get update settings
 
 Returns the update settings for the environment.
 
@@ -21,7 +21,7 @@ Returns the update settings for the environment.
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -46,13 +46,13 @@ Returns the environment's update settings, or "null" if none exist
 > [!NOTE]  
 > The UTC values identify the current or next immediate occurrence of the update window. For instance, when the request is issued, if the current time is within the update window defined for the environment, then `preferredStartTimeUtc` will identify an instant in the past, and `preferredEndTimeUtc` will identify an instant in the future. Otherwise, both the start and end times will identify instants in the future. For a static, deterministic set of values that uniquely identify the definition of the update window for a given environment, refer to the `preferredStartTime`, `preferredEndTime`, and `timeZoneId` values.
 
-### Expected Error Codes
+### Expected error codes
 
 `environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
-## Get Time Zones for Update Settings
+## Get time zones for update settings
 
 **INTRODUCED IN:** API version 2.13
 
@@ -62,7 +62,7 @@ Returns a list of time zones and basic information associated with them, such as
 GET /admin/{apiVersion}/applications/settings/timezones
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -85,7 +85,7 @@ Returns a wrapped array of time zones.
 }
 ```
 
-## Set Update Settings
+## Set update settings
 
 Sets the update window start and end times.
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -145,7 +145,7 @@ Returns the updated settings
 > [!NOTE]  
 > The `date` components of the values are ignored. Only the time components are used.
 
-### Expected Error Codes
+### Expected error codes
 
 `environmentNotFound` - the targeted environment couldn't be found
 
@@ -165,14 +165,14 @@ Returns the updated settings
 Sets the connection string or instrumentation key an environment uses for Azure Application Insights resource, which you can use to gather telemetry. For information about Application Insights and the connection string/instrumentation key, go to [Enable Environment Telemetry](telemetry-enable-application-insights.md#appinsights).
 
 > [!IMPORTANT]
-> This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this task during non-working hours to avoid disruptions.
+> This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this task during nonworking hours to avoid disruptions.
 
 ```
 Content-Type: application/json
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -188,7 +188,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
 `environmentNotFound` - the targeted environment couldn't be found
 
@@ -198,7 +198,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 `cannotSetAppInsightsKey` - the targeted environment's status isn't 'Active'
 
-## Get Security Group
+## Get security group
 
 **INTRODUCED IN:** API version 2.8
 
@@ -208,7 +208,7 @@ Gets the Microsoft Entra group currently assigned to an environment.
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -218,7 +218,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Response
 
-If the group exists in Microsoft Graph (formerly Azure AD graph):
+If the group exists in Microsoft Graph:
 
 ```
 {
@@ -227,7 +227,7 @@ If the group exists in Microsoft Graph (formerly Azure AD graph):
 }
 ```
 
-If a previously assigned group no longer exists in Microsoft Graph (formerly Azure AD graph):
+If a previously assigned group no longer exists in Microsoft Graph:
 
 ```
 {
@@ -238,7 +238,7 @@ If a previously assigned group no longer exists in Microsoft Graph (formerly Azu
 
 If no group is configured for the tenant, returns 204. 
 
-## Set Security Group
+## Set security group
 
 **INTRODUCED IN:** API version 2.8
 
@@ -249,7 +249,7 @@ Content-Type: application/json
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -269,7 +269,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 Returns 200 if successful, or 404 if the group doesn't exist in Microsoft Entra ID.
 
-## Clear Security Group
+## Clear security group
 
 **INTRODUCED IN:** API version 2.8
 
@@ -279,7 +279,7 @@ Clears a Microsoft Entra group that is currently assigned to an environment.
 DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -300,7 +300,7 @@ Returns a boolean value that indicates whether the environment allows access for
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -330,7 +330,7 @@ Enable or disable delegated administrators and foreign multitenant apps to admin
 PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -357,7 +357,7 @@ Returns a boolean value that indicates whether the environment allows access wit
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -381,10 +381,10 @@ Specifies whether users can access the environment with Microsoft 365 licenses. 
 
 ```
 Content-Type: application/json
-POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -396,7 +396,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{enviro
 
 ```
 { 
-   "enabled": "true" 
+   "enabled": "true" 
 } 
 ```
 
@@ -404,7 +404,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{enviro
 
 Returns 200 if successful.
 
-## Set App Update Cadence for Environment
+## Set app update cadence for environment
 
 **INTRODUCED IN:** API version 2.19
 
@@ -415,7 +415,7 @@ Content-Type: application/json
 PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/appSourceAppsUpdateCadence
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -427,7 +427,7 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ```
 { 
-   "value": string //Accepted values are 'Default', 'DuringMajorUpgrade', and 'DuringMajorMinorUpgrade'
+   "value": string //Accepted values are 'Default', 'DuringMajorUpgrade', and 'DuringMajorMinorUpgrade'
 } 
 ```
 

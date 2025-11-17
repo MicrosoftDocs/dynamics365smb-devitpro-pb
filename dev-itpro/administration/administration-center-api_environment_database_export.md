@@ -30,9 +30,9 @@ GET /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{e
 
 `apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
-`applicationFamily` - family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - family of the environment's application (for example, "BusinessCentral").
 
-`environmentName` - name of the targeted environment
+`environmentName` - name of the targeted environment.
 
 ### Response
 
@@ -47,7 +47,7 @@ Returns the metrics around the current month's database exports.
 
 ### Expected error codes
 
-`environmentNotFound` - targeted environment can't be found
+`environmentNotFound` - targeted environment can't be found.
 
    - target: {applicationFamily}/{environmentName}
 
@@ -62,11 +62,11 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 
 ### Route parameters
 
-`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
-`applicationFamily` - family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - family of the environment's application (for example, "BusinessCentral").
 
-`environmentName` - name of the targeted environment
+`environmentName` - name of the targeted environment.
 
 ### Body
 
@@ -80,13 +80,13 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 
 ### Expected error codes
 
-`environmentNotFound` - targeted environment can't be found
+`environmentNotFound` - targeted environment can't be found.
 
    - target: {applicationFamily}/{environmentName}
 
-`requestBodyRequired` - request body must be provided
+`requestBodyRequired` - request body must be provided.
 
-`exportFailed` - export failed because the target environment's version is too old, it isn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports is used up
+`exportFailed` - export failed because the target environment's version is too old, it isn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports is used up.
 
 ## Get export history
 
@@ -98,17 +98,17 @@ POST /admin/{apiVersion}/exports/history?start={startTime}&end={endTime}
 
 ### Route parameters
 
-`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
 ### Query parameters
 
-`startTime` - datetime // The start of the export history entry time window to query
+`startTime` - datetime // The start of the export history entry time window to query.
 
-`endTime` - datetime // The end of the  export history entry time window to query
+`endTime` - datetime // The end of the  export history entry time window to query.
 
 ### Response
 
-Returns a detailed list of the database exports that occurred within the provided timeframe of the `start` and `end` query parameters
+Returns a detailed list of the database exports that occurred within the provided timeframe of the `start` and `end` query parameters.
 
 ```
 {

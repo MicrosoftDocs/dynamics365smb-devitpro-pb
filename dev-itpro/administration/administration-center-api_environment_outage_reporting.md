@@ -6,28 +6,28 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/14/2025
+ms.date: 11/17/2025
 ---
 
-# Business Central Admin Center API - Environment Outage Reporting
+# Business Central Admin Center API - Environment outage reporting
 
-Enables the ability to report that an environment isn't accessible and may require attention.
+Enables the ability to report that an environment isn't accessible and might require attention.
 
-## Get Outage Types
+## Get outage types
 
-Gets the list of supported categories of outages
+Gets the list of supported categories of outages.
 
 ```
 GET /admin/{apiVersion}/support/outageTypes
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
-Returns a list with information about the supported outage types for reporting
+Returns a list with information about the supported outage types for reporting.
 
 ```
 {
@@ -40,27 +40,27 @@ Returns a list with information about the supported outage types for reporting
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
 `cannotGetOutages` - an unhandled error occurred when trying to acquire the outage types
 
 `tenantNotFound` - the calling tenant information couldn't be found
 
-## Get Outage Questions
+## Get outage questions
 
-Gets the list of metadata about questions that need to be answered when reporting an environment outage
+Gets the list of metadata about questions that need to be answered when reporting an environment outage.
 
 ```
 GET /admin/{apiVersion}/support/outageTypes/{outageType}/outageQuestions
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
-Returns the list of question metadata for the provided outage type
+Returns the list of question metadata for the provided outage type.
 
 ```
 {
@@ -80,27 +80,27 @@ Returns the list of question metadata for the provided outage type
 }   
 ```
 
-### Expected Error Codes
+### Expected error codes
 
-`cannotGetOutageQuestions` - an unhandled error occurred when trying to acquire the outage types
+`cannotGetOutageQuestions` - an unhandled error occurred when trying to acquire the outage types.
 
-`tenantNotFound` - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found.
 
-## Get Reported Outages
+## Get reported outages
 
-Gets the list of outages that have been previously reported 
+Gets the list of outages that were previously reported.
 
 ```
 GET /admin/{apiVersion}/support/reportedoutages
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
-Returns the list of outages reported across all environments for the calling tenant
+Returns the list of outages reported across all environments for the calling tenant.
 
 ```
 {
@@ -119,28 +119,28 @@ Returns the list of outages reported across all environments for the calling ten
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
-`cannotGetReportedOutages` - an unhandled error occurred when trying to acquire the reported outages
+`cannotGetReportedOutages` - an unhandled error occurred when trying to acquire the reported outages.
 
-`tenantNotFound` - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found.
 
-## Report Outage
+## Report outage
 
-Initiates an outage report indicating that an environment isn't accessible
+Initiates an outage report indicating that an environment isn't accessible.
 
 ```
 Content-Type: application/json
 POST /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - family of the environment's application (for example, "BusinessCentral").
 
-`environmentName` - Name of the targeted environment
+`environmentName` - name of the targeted environment.
 
 ### Body
 
@@ -170,18 +170,19 @@ Returns information about the created outage report
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
-`requestBodyRequired` - the request body must be provided
+`requestBodyRequired` - the request body must be provided,
 
-`environmentNotFound` - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found.
 
    - target: {applicationFamily}/{environmentName}
 
-`failedToReportOutage` - an unhandled error occurred when trying to report the outage
+`failedToReportOutage` - an unhandled error occurred when trying to report the outage.
 
 ## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+
