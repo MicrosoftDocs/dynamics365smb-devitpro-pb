@@ -1,12 +1,13 @@
 ---
 title: Business Central Admin Center API - Support settings
-description: Learn about the Business Central administration center API for managing support settings.
+ms.author: jswymer
+description: Learn how to resolve support contact issues in Business Central environments using the Admin Center API. Get detailed guidance on API routes and responses.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 12/27/2023
+ms.date: 11/17/2025
 ---
 # Business Central Admin Center API - Support settings
 
@@ -22,11 +23,11 @@ GET /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{e
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - the name of the targeted environment
 
 ### Response
 
@@ -63,11 +64,11 @@ PUT /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{e
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - the name of the targeted environment
 
 ### Body
  
@@ -103,7 +104,6 @@ Returns the newly updated support contact information.
 `resourceDoesNotExist` - couldn't find the necessary information to communicate with the targeted environment's API
 
 `businessCentralCommunicationException` - an unhandled error occurred when communicating with the targeted environment's API
-
 
 ## Related information
 

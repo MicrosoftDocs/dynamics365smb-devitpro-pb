@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 08/19/2025
+ms.date: 11/17/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -95,7 +95,7 @@ To schedule an update to a planned version:
 
 Running updates are canceled automatically if the update doesn't succeed before the end of the update window set for the environment. If you need to cancel an update before the end of the update window or an update that can run outside the environment's update window, you can do so manually. To cancel a running update, navigate to the **Operation Details** pane from the Environment Details or Operations page and select the **Cancel update** button next to the operation status.
 
-Canceling a running update stops the update process and restores the environment to its state immediately before the update started. Depending on the size of the environment database this process might take more than an hour, during which the environment isn't accessible.
+Canceling a running update stops the update process and restores the environment to its state immediately before the update started. Depending on the size of the environment database, this process might take more than an hour, during which the environment isn't accessible.
 
 > [!NOTE]  
 > Updates can't be canceled on environments that are in the [Enforced Update Period](update-rollout-timeline.md) for the source version of the environment update.
