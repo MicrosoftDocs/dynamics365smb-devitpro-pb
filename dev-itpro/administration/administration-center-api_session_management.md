@@ -1,15 +1,16 @@
 ---
 title: Business Central Admin Center API - Session Management
-description: Learn about the Business Central administration center API.
+ms.author: jswymer
+description: Learn how to manage sessions in Business Central environments using the Admin Center API. Retrieve session details or terminate sessions with ease.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 11/17/2025
 ---
 
-# Business Central Admin Center API - Session Management
+# Business Central Admin Center API - Session management
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
@@ -23,16 +24,16 @@ Gets active sessions for an environment.
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the ring's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
-
+`environmentName` - the name of the targeted environment
 
 ### Response
+
 ```
 {
   value: [
@@ -59,21 +60,21 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ## Get session details
 
-Gets session information for a specific session id.
+Gets session information for a specific session ID.
 
 ```
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the ring's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - the name of the targeted environment
 
-`sessionId` - The ID of the session
+`sessionId` - the ID of the session
 
 ### Response
 
@@ -104,13 +105,13 @@ Terminates and deletes an active session.
 DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the ring's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - the name of the targeted environment
 
 `sessionId` - The ID of the session
 
@@ -119,3 +120,4 @@ DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{enviro
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+
