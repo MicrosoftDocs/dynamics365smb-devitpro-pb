@@ -1,19 +1,20 @@
 ---
 title: Business Central Admin Center API - Manage Updates
-description: Learn about the Business Central administration center API for rescheduling updates.
+ms.author: jswymer
+description: Learn how to reschedule updates and manage target versions for Business Central environments using the Admin Center API.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 03/31/2025
+ms.date: 11/17/2025
 ---
 
-# Business Central Admin Center API - Manage Updates
+# Business Central Admin Center API - Manage updates
 
-Allows for the management of scheduled updates such as rescheduling the update to a run on or after a specific date within a provided range.
+Allows for the management of scheduled updates such as scheduling the update to run on or after a specific date within a provided range.
 
-## Get Updates
+## Get updates
 
 Get information about update target versions and their status for a specific environment.
 
@@ -21,13 +22,13 @@ Get information about update target versions and their status for a specific env
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/updates
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - the name of the targeted environment
 
 ### Response
 
@@ -98,20 +99,19 @@ Select a target version and update date for the next update on an environment. O
 PATCH /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - the name of the targeted environment
 
 `targetVersion` - Version number of the target version to be selected as next update, must match the value returned by the `GET /admin/vX.XX/applications/{applicationFamily}/environments/{environmentName}/updates` request.
 
-
 ### Body
 
-Example for selecting a target version that is available.
+Example for selecting a target version that's available.
 
 ```
 {
@@ -119,12 +119,12 @@ Example for selecting a target version that is available.
 "targetVersionType": "GA", // Indicates the type of the target version, i.e. "GA" or "Preview". Defaults to "GA" if property is omitted from body. "Preview" versions can only be scheduled for sandbox environments
   "scheduleDetails": {
     "selectedDateTime": datetime // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
-    "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment may be ignored for this update
+    "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment might be ignored for this update
   }
 }
 ```
 
-Example for selecting a target version that is not yet available.
+Example for selecting a target version that isn't yet available.
 
 ```
 {
@@ -132,7 +132,7 @@ Example for selecting a target version that is not yet available.
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
@@ -140,27 +140,27 @@ Example for selecting a target version that is not yet available.
 
 ## Cancel running update
 
-Cancels a running update or Cloud Migration data upgrade and restores the environment to its state immediately before the operation started. Can only be used while an update is running. Operation may take over an hour during which the environment is not accessible.
+Cancels a running update or Cloud Migration data upgrade and restores the environment to its state immediately before the operation started. Can only be used while an update is running. The operation might take over an hour during which the environment isn't accessible.
 
 ```
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/operations/{id}/cancel
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - the name of the targeted environment
 
 `id` - The operation ID for the update operation. Can be obtained from the `GET /admin/v2.28/environments/{environmentName}/operations` endpoint
 
 ### Restrictions
 
-- Environment operation must be of type `Update` or `Data Upgrade`
-- Environment operation must be in state `Running`
-- For operations of type `Update`, the environment cannot be in the Enforced Update Period
+- Environment operation must be of type `Update` or `Data Upgrade`.
+- Environment operation must be in state `Running`.
+- For operations of type `Update`, the environment can't be in the Enforced Update Period.
 
 
 ## Related information
