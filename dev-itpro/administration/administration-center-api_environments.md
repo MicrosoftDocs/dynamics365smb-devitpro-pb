@@ -13,9 +13,9 @@ ms.date: 11/17/2025
 
 Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. The environment APIs can be used to:
 
-- Get information about the environments currently set up for the tenant
-- Get information about the used storage and allowed quotas
-- Create a new environment using sample data or as a sandbox copy of the production environment
+- Get information about the environments currently set up for the tenant.
+- Get information about the used storage and allowed quotas.
+- Create a new environment using sample data or as a sandbox copy of the production environment.
 - Delete an environment.
 
 ## Get environments and get environments by application family
@@ -34,9 +34,9 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - the family of the environment's application as is. (for example, "BusinessCentral)
+`applicationFamily` - the family of the environment's application as is (for example, "BusinessCentral)
 
 ### Response
 
@@ -87,7 +87,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
@@ -145,7 +145,7 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family to create the new environment within (for example, "BusinessCentral")
 
@@ -272,7 +272,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{sourceEn
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the source environment's application (for example, "BusinessCentral")
 
@@ -401,7 +401,7 @@ DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{enviro
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application. (for example "BusinessCentral")
 
@@ -494,7 +494,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application. (for example "BusinessCentral")
 
@@ -543,7 +543,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Routing parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
 
@@ -593,7 +593,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Routing parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
 
@@ -653,7 +653,7 @@ GET admin/{apiVersion}/applications/{applicationType}/environments/{environmentN
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
@@ -696,7 +696,7 @@ POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{envi
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
 
@@ -726,7 +726,7 @@ POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{envi
 
 ### Routing parameters
 
-`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
 
@@ -750,7 +750,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
@@ -788,7 +788,7 @@ GET /admin/{apiVersion}/environments/usedstorage
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -816,7 +816,7 @@ GET /admin/{apiVersion}/environments/quotas
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 Returns quotas object.
@@ -849,7 +849,7 @@ GET /admin/{apiVersion}/environments/{environmentName}/operations
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `environmentName` - the name of the targeted environment
 
@@ -965,7 +965,7 @@ See [Operation Types](#operation-types).
 
 ### Route parameters
 
-`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `applicationType` - the family of the environment's application (for example, "BusinessCentral")
 
