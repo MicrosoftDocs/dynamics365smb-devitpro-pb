@@ -65,6 +65,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}
 `ringName` - Name of the ring to inspect.
 
 ### Response
+
 ```
 {
   "value": [ // A list of the available application versions within the ring that environments can be created on 
