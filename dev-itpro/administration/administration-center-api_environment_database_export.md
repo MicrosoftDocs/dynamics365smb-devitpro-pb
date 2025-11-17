@@ -1,23 +1,24 @@
 ---
 title: Business Central Admin Center API - Environment Database Export
-description: Learn about the Business Central administration center API for exporting an environment database.
+ms.author: jswymer
+description: Learn how to export an environment database using the Business Central Admin Center API. Discover permissions, metrics, and error handling for seamless exports.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 01/03/2023
+ms.date: 11/17/2025
 ---
 
-# Business Central Admin Center API - Environment Database Export
+# Business Central Admin Center API - Environment database export
 
-Allows for the export of an environment's Azure database. Databases are exported to an Azure Storage account provided by you. There is a limit to the number of exports that can be done within a month as shown by the 'metrics' endpoint below.
+Allows for the export of an environment's Azure database. Databases are exported to an Azure Storage account provided by you. There's a limit to the number of exports that can be done within a month as shown by the 'metrics' endpoint in the following section.
 
-### Required In-Product Permissions for Exporting an Environment Database
+### Required in-product permissions for exporting an environment database
 
 To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permission set assigned to your Business Central user account or authorized Microsoft Entra app.
 
-## Get Export Metrics
+## Get export metrics
 
 Gets information about the number of exports allowed per month and the amount remaining.
 
@@ -25,13 +26,13 @@ Gets information about the number of exports allowed per month and the amount re
 GET /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - name of the targeted environment
 
 ### Response
 
@@ -44,28 +45,28 @@ Returns the metrics around the current month's database exports.
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
-`environmentNotFound` - the targeted environment couldn't be found
+`environmentNotFound` - targeted environment can't be found
 
    - target: {applicationFamily}/{environmentName}
 
-## Start Environment Database Export
+## Start environment database export
 
-Starts the export of an environment's database to a provided Azure storage account
+Starts the export of an environment's database to a provided Azure storage account.
 
 ```
 Content-Type: application/json
 POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment
+`environmentName` - name of the targeted environment
 
 ### Body
 
@@ -77,29 +78,29 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
-`environmentNotFound` - the targeted environment couldn't be found
+`environmentNotFound` - targeted environment can't be found
 
    - target: {applicationFamily}/{environmentName}
 
-`requestBodyRequired` - the request body must be provided
+`requestBodyRequired` - request body must be provided
 
-`exportFailed` - the export failed because the target environment's version was too old, it wasn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been used up
+`exportFailed` - export failed because the target environment's version is too old, it isn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports is used up
 
-## Get Export History
+## Get export history
 
-Gets information about the exports that have been done within a provided time frame, for which environment, and by which user.
+Gets information about the exports that happen within a provided time frame, for which environment, and by which user.
 
 ```
 POST /admin/{apiVersion}/exports/history?start={startTime}&end={endTime}
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-### Query Parameters
+### Query parameters
 
 `startTime` - datetime // The start of the export history entry time window to query
 
@@ -124,9 +125,9 @@ Returns a detailed list of the database exports that occurred within the provide
 ```
 
 > [!NOTE]
-> All datetime values are in UTC
+> All datetime values are in UTC.
 
-## Case-Invariant blocked environment names
+## Case-invariant blocked environment names
 
 ### All environment types
 
@@ -152,11 +153,11 @@ Returns a detailed list of the database exports that occurred within the provide
 - signout
 - tablet
 
-### Production Environment Types
+### Production environment types
 
 - production
 
-### Sandbox Environment Types
+### Sandbox environment types
 
 - sandbox
 

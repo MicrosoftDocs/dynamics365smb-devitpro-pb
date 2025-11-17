@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 11/17/2025
 ---
 
-# Business Central admin center API - available applications
+# Business Central admin center API - Available applications
 
 Get information about the currently available application families, countries/regions, rings, and versions that environments can be created on.
 The API endpoints here should be utilized to determine what values can be used for environment creation or copying.

@@ -10,7 +10,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 11/17/2025
 ---
 
-# Business Central admin center API - telemetry (API)
+# Business Central admin center API - Telemetry (API)
 
 Telemetry includes the top-level AL events and any returned errors logged from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment.
 
