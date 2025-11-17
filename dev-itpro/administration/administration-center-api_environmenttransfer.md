@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 01/19/2024
+ms.date: 11/17/2025
 ---
 
 # Business Central Admin Center API - Transfer environments
@@ -32,11 +32,11 @@ POST /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/env
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application as is. (for example, "BusinessCentral")
 
-`environmentName` - Name of the environment
+`environmentName` - the name of the environment
 
 ### Body
 
@@ -91,9 +91,9 @@ Accepts an environment transfer on the destination tenant.
 POST /admin/{apiVersion}/transfers/incoming
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Body
 
@@ -148,11 +148,11 @@ DELETE /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/e
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application as is (for example, "BusinessCentral")
 
-`environmentName` - Name of the environment
+`environmentName` - the name of the environment
 
 ### Response
 
@@ -196,9 +196,9 @@ Get a list of transfer requests on the source tenant that haven't yet been compl
 GET /admin/{apiVersion}/transfers/outgoing
 ```
 
-### Route Parameters
+### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 ```
@@ -244,7 +244,7 @@ GET /admin/{apiVersion}/transfers/incoming/{sourceEntraTenantId}
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `sourceEntraTenantId` - Microsoft Entra tenant ID for the source tenant
 
@@ -278,7 +278,6 @@ GET /admin/{apiVersion}/transfers/incoming/{sourceEntraTenantId}
     ]
 }
 ```
-
 
 ## Related information
 
