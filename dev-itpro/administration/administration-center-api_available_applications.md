@@ -60,7 +60,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}
 
 `applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
 
-`countryCode` - Code for the ring's country.
+`countryCode` - Code for the ring's country/region.
 
 `ringName` - Name of the ring to inspect.
 
