@@ -28,7 +28,7 @@ GET /admin/{apiVersion}/authorizedAadApps/manageableTenants
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -58,7 +58,7 @@ GET /admin/{apiVersion}/authorizedAadApps
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -88,7 +88,7 @@ PUT /admin/{apiVersion}/authorizedAadApps/<appClientId>
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -109,7 +109,7 @@ DELETE /admin/{apiVersion}/authorizedAadApps/<appClientId>
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ## Related information
 

@@ -24,7 +24,7 @@ GET /admin/{apiVersion}/applications/
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -56,13 +56,13 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the ring's application (for example, "BusinessCentral")
 
 `countryCode` - Code for the ring's country/region.
 
-`ringName` - Name of the ring to inspect.
+`ringName` - the name of the ring to inspect.
 
 ### Response
 

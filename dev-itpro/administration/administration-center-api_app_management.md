@@ -50,11 +50,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Route Parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
@@ -129,11 +129,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Route Parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
@@ -196,11 +196,11 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Route Parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
@@ -237,11 +237,11 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Route Parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 ### Response
 Returns information about the apps installed on the environment.
@@ -277,11 +277,11 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Route Parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 ### Response
 
@@ -320,11 +320,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Route Parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
@@ -388,11 +388,11 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Route Parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
@@ -432,11 +432,11 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Route Parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
-`environmentName` - Name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 `appId` - Id of the targeted app.
 

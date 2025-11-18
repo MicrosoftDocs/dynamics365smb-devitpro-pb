@@ -30,9 +30,9 @@ GET /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{e
 
 `apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
-`applicationFamily` - family of the environment's application (for example, "BusinessCentral").
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
 
-`environmentName` - name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 ### Response
 
@@ -64,9 +64,9 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 
 `apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
-`applicationFamily` - family of the environment's application (for example, "BusinessCentral").
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
 
-`environmentName` - name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 ### Body
 

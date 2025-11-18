@@ -23,7 +23,7 @@ GET /admin/{apiVersion}/support/outageTypes
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -56,7 +56,7 @@ GET /admin/{apiVersion}/support/outageTypes/{outageType}/outageQuestions
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -96,7 +96,7 @@ GET /admin/{apiVersion}/support/reportedoutages
 
 ### Route parameters
 
-`apiVersion` - The version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
@@ -138,9 +138,9 @@ POST /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{
 
 `apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - family of the environment's application (for example, "BusinessCentral").
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
 
-`environmentName` - name of the targeted environment.
+`environmentName` - the name of the targeted environment.
 
 ### Body
 
