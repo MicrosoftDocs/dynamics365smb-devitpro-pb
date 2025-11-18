@@ -62,7 +62,7 @@ The typical AI Playground Agent follows this lifecycle:
 1. **Configure** - Define instructions, permissions, and tasks
 1. **Activate** - Enable the agent for testing
 1. **Iterate** - Test, refine instructions, and adjust permissions
-1. **Graduate** - Export learnings to build production solutions using AL extensions or the agent development SDK
+1. **Graduate** - Export learnings to build production solutions using AL extensions <!-- or the agent development SDK -->
 1. **Clean up** - Deactivate and remove the prototype agent
 
 Each phase has specific requirements and limitations that guide your development process.
@@ -126,6 +126,7 @@ As a preview feature, the AI Playground Agent has several important limitations:
 - **Manual telemetry**: No automatic logging—capture prompts and responses manually during testing
 - **Temporary nature**: Designed for experimentation, not long-term solutions
 
+<!-- 
 ## Future development path
 
 While the AI Playground Agent provides a prototype experience for testing AI capabilities, the agent development SDK allows developers and partners to package custom agents as deployable apps. This SDK includes:
@@ -135,6 +136,7 @@ While the AI Playground Agent provides a prototype experience for testing AI cap
 - Deployment capabilities for production environments
 
 The agent development SDK provides a graduation path from playground prototypes to production-ready AI solutions. Learn more in [Graduating an AI Playground Agent (preview)](./ai-playground-agent-graduate.md).
+-->
 
 ## Getting started
 
