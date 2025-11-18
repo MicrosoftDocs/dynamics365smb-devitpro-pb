@@ -34,6 +34,11 @@ The day of week.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This method always returns 1 for Monday and 7 for Sunday, regardless of the system's regional settings.
+
 ## Related information
 [Date Data Type](date-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
