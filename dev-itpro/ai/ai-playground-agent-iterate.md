@@ -64,6 +64,28 @@ Finetune the agent's access and interface, including:
 
 - The agent sees the UI as JSON; log entries capture this view for troubleshooting.
 
+## Export an agent configuration
+
+As part of iterating to improve your agent, you can export and import the agent's configuration from the AI Playground to your local machine. The exported configuration includes:
+
+- **Instructions**: The detailed guidelines that define how the agent should behave.
+- **Tasks**: The specific actions the agent can perform.
+- **Permissions**: The access rights the agent requires to function correctly.
+
+To export the configuration, do the following:
+
+1. On the **Agents (preview)** page, choose the agent that you want to export.
+1. Choose **Show more options** and then choose **Export agent**.
+1. The exported agent appears in your **Downloads** window. 
+
+<!-->
+To import the configuration, do the following:
+
+1. 
+-->
+
+
+
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
