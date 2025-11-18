@@ -2,7 +2,7 @@
 title: Adding actions to a page
 description: Create and display actions in the ribbon of all pages and group them together under Actions, Navigate, Reports tabs and preview it in the Windows Client.
 author: SusanneWindfeldPedersen
-ms.date: 04/17/2024
+ms.date: 11/14/2025
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
@@ -18,28 +18,28 @@ This topic shows how to create new actions, how to add actions to a page, and ho
 - Report
 
 > [!NOTE]  
-> With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted actions](devenv-promoted-actions.md).
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. Learn more in [Promoted actions](devenv-promoted-actions.md).
 
 Before putting an action on a page you should think about the business processes that the action supports. For example, on page 42, the Sales Orders list page, the Actions button contains actions for all tasks related to processing sales orders. Creating these actions can make it easier for the order processor to perform their daily tasks, such as posting sales orders and creating new customer orders.  
 
-For more information about different types of actions and where to use them, see [Actions overview](devenv-actions-overview.md).
+Learn more about different types of actions and where to use them in [Actions overview](devenv-actions-overview.md).
 
 > [!TIP]
-> After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. For more information, see [Use Designer](devenv-inclient-designer.md).
+> After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. Learn more in [Use Designer](devenv-inclient-designer.md).
 
 
 ## To add actions to a page
 
 The page actions are displayed on the header section. There are multiple tabs to help navigate to the right item.
   
-In order to add actions to the action bar, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. For more information about adding, moving, and modifying actions, see [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls).
+In order to add actions to the action bar, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. Learn more about adding, moving, and modifying actions in [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls).
 
 > [!NOTE]  
 > Actions can only be linked to a page, or to a group control. Actions cannot be linked to fields, or parts on a page.
 
 ## Set an icon to an action
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes images that you can use on actions in command bar menus and promoted actions on the ribbon. To add an image to an action, you add the **Image** property and you must provide the name of the image you that want to use from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Action icon library. By default, the size of images is 16 pixels high by 16 pixels wide. For promoted actions, you can choose to display larger images that are 32 pixels high and 32 pixels wide. For more information, see [Image property](properties/devenv-image-property.md).
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes images that you can use on actions in command bar menus and promoted actions on the ribbon. To add an image to an action, you add the **Image** property and you must provide the name of the image that you want to use from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Action icon library. By default, the size of images is 16 pixels high by 16 pixels wide. For promoted actions, you can choose to display larger images that are 32 pixels high and 32 pixels wide. Learn more in [Image property](properties/devenv-image-property.md).
 
 [!INCLUDE[available_icons](includes/include-available-icons.md)]
 
@@ -48,7 +48,7 @@ In order to add actions to the action bar, you must use the keywords with Anchor
 
 ### Example
 
-The following example shows how to use different action areas on a **page object of the PageType Card**. These actions will display in the following menus in the action bar. The following example uses the *legacy* syntax for promoted actions. For more information, see [Promoted actions](devenv-promoted-actions.md).
+The following example shows how to use different action areas on a **page object of the PageType Card**. These actions will display in the following menus in the action bar. The following example uses the *legacy* syntax for promoted actions. Learn more in [Promoted actions](devenv-promoted-actions.md).
 
 1. Actions menu: The `area(Processing)` action area is used to display the action in the Actions menu. This action uses the **Promoted** and **PromotedCategory** properties in order to display the action in the promoted actions menu called **Process**.  
 1. New Document group: The `area(Creation)` action area is used to display the action in the **New document** group in the Actions menu. Also, this action uses the **Image** property to display a form icon instead of a default icon.
@@ -120,14 +120,14 @@ page 50110 PageName
 ``` 
 
 > [!NOTE]  
-> Actions can be assigned to a page by setting the RunObject property, or by adding a trigger to a Codeunit. For more information, see [RunObject Property](properties/devenv-runobject-property.md) and [Codeunit Triggers](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md).  
+> Actions can be assigned to a page by setting the RunObject property, or by adding a trigger to a Codeunit. Learn more in [RunObject Property](properties/devenv-runobject-property.md) and [Codeunit Triggers](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md).  
 
-The promoted action menus are always displayed first so the promoted actions provide quick access to common tasks, and users don't have to browse through a menu to access them. Add the Promoted property to add actions to the promoted action menu. For more information on how to add promoted actions, promoted categories, and examples, see [Promoted Actions](devenv-promoted-actions.md). 
+The promoted action menus are always displayed first so the promoted actions provide quick access to common tasks, and users don't have to browse through a menu to access them. Add the Promoted property to add actions to the promoted action menu. Learn more about how to add promoted actions, promoted categories, and examples in [Promoted actions](devenv-promoted-actions.md). 
   
-You can assign different icons for your actions from the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] image library. For more information, see [Image property](properties/devenv-image-property.md). 
+You can assign different icons for your actions from the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] image library. Learn more in [Image property](properties/devenv-image-property.md). 
 
 > [!NOTE]  
-> Specifically for the `PromptDialog` page type, there are only two types of actions that can be defined; `SystemActions` and `PromptGuide`. For more information, see [PromptDialog page type](devenv-page-type-promptdialog.md).
+> Specifically for the `PromptDialog` page type, there are only two types of actions that can be defined; `SystemActions` and `PromptGuide`. Learn more in [PromptDialog page type](devenv-page-type-promptdialog.md).
 
 ## Set up a keyboard shortcut on an action
 
