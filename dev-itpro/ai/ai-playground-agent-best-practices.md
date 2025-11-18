@@ -166,7 +166,7 @@ Create agent-specific profiles that:
 - Consider integration with existing Business Central features
 - Design for scalability and performance requirements
 - Plan testing strategies for production code
-- Consider the upcoming agent development SDK for packaging agents as deployable apps
+<!-- - Consider the upcoming agent development SDK for packaging agents as deployable apps -->
 
 ### Prototype cleanup
 

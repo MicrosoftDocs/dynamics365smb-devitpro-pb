@@ -18,25 +18,14 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-SDK developers can graduate an AI Playground Agent to a production-ready Copilot feature by converting the agent's instructions, tasks, and permissions into an AL extension. This process involves translating the prototyped functionality into code that can be deployed in a production environment.
+<!-->
+SDK developers can graduate an AI Playground Agent to a production-ready Copilot feature by converting the agent's instructions, tasks, and permissions into an AL extension. This process involves translating the prototyped functionality into code that can be deployed in a production environment.-->
 
-## Export an agent configuration
+Developers can graduate an AI Playground Agent to a production-ready Copilot feature by converting the agent's instructions, tasks, and permissions into an AL extension. This process involves translating the prototyped functionality into code that can be deployed in a production environment
 
-To facilitate the graduation process, you can export the agent's configuration from the AI Playground and import it into your AL extension project. The exported configuration includes:
+## Steps to graduate an AI Playground Agent
 
-- **Instructions**: The detailed guidelines that define how the agent should behave.
-- **Tasks**: The specific actions the agent can perform.
-- **Permissions**: The access rights the agent requires to function correctly.
-
-To export the configuration, do the following:
-
-1. On the **Agents (preview)** page, choose the agent that you want to export.
-1. Choose **Show more options** and then choose **Export agent**.
-1. The exported agent appears in your **Downloads** window. 
-
-Save the exported file and include it in your AL extension project.
-
-## Import an agent configuration into an AL extension
+Content for this section is coming soon.
 
 ## Related information
 
