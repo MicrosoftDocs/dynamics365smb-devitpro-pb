@@ -1466,6 +1466,14 @@
 ## [How to work with a performance problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
 <!-- integration-->
+# Integration with AI
+## AI Playground agent (preview)
+### [AI Playground agent overview (preview)](ai/ai-playground-agent.md)
+### [Create and activate an AI Playground agent (preview)](ai/ai-playground-agent-create.md)
+### [Configure instructions and tasks for an AI Playground Agent (preview)](ai/ai-playground-agent-configure.md)
+### [Set up AI Playground Agent permissions and profiles (preview)](ai/ai-playground-agent-permissions-profiles.md)
+### [Iterate and manage an AI Playground Agent (preview)](ai/ai-playground-agent-iterate.md)
+### [Best practices for prototyping with an AI Playground Agent (preview)](ai/ai-playground-agent-best-practices.md)
 # Integration
 ## [Integration overview](developer/integration-overview.md)
 <!-- web service -->
