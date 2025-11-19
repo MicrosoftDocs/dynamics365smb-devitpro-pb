@@ -37,7 +37,7 @@ This approach allows you to focus on the business logic and desired outcomes, wh
 
 Start by describing your agent's purpose and workflow in plain language. Don't worry about perfect formatting at this stage—just capture the core requirements and workflow.
 
-**Example initial draft:**
+#### Example initial draft
 
 ```text
 I want an agent that helps with customer credit checks. When a sales order comes in, 
@@ -72,13 +72,13 @@ Provide your draft instructions to AI tools like Copilot, which can help you:
 
 ### Example transformation
 
-**Before (initial draft):**
+#### Before (initial draft)
 
 ```text
 Check customer credit when creating sales orders. Stop if over limit.
 ```
 
-**After (AI-refined with best practices):**
+#### After (AI-refined with best practices)
 
 ```text
 **RESPONSIBILITY**: Monitor customer credit limits during sales order creation
@@ -146,18 +146,18 @@ As you refine your agent instructions, consider incorporating these advanced pat
 
 #### User intervention and review
 
-**When to request user intervention:**
+##### When to request user intervention
 
 - The agent should request user intervention when it can't proceed due to missing data, ambiguous situations, or validation errors
 - Examples: incomplete customer information, items not found in inventory, unexpected error messages
 
-**User review requirements:**
+##### User review requirements
 
 - Agents should always request user review before proceeding with critical steps or sending outgoing messages
 - All outgoing communications require user review by default
 - After completing significant actions, request user review before moving forward
 
-**Response handling:**
+##### Response handling
 
 - Agents draft messages based on instructions but must confirm before sending
 - Provide clear summaries of actions taken

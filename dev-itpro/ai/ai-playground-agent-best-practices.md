@@ -59,6 +59,8 @@ Help users with customer stuff.
 - Document what works and what doesn't
 - Test edge cases and unexpected inputs
 
+Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
+
 ## Tasks best practices
 
 ### Define specific, measurable tasks
@@ -80,6 +82,8 @@ Create tasks that have clear success criteria:
 - Design tasks that can work together logically
 - Consider task dependencies and sequencing
 - Plan for error handling and fallback scenarios
+
+Learn more in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md).
 
 ## Permissions best practices
 
@@ -127,6 +131,8 @@ Create agent-specific profiles that:
 - Document the business purpose for each agent
 - Track who has access and why
 - Plan for agent cleanup and removal
+
+Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
 
 ## Testing and validation best practices
 
