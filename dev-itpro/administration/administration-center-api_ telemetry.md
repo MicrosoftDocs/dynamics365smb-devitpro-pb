@@ -17,15 +17,17 @@ Telemetry includes the top-level AL events and any returned errors logged from t
 
 Returns the telemetry information for the provided environment and filters. It's recommended that you provide start and end time parameters to return a manageable data set.
 
-```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
 ### Route parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment
 
 ### Query parameters
 
@@ -37,7 +39,7 @@ GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 
 Returns the telemetry logs and with data column headers.
 
-```
+```JSON
 {
   "queryColumns": [
     {
@@ -62,6 +64,7 @@ Returns the telemetry logs and with data column headers.
 `invalidInput` - the targeted property is invalid in some way
 
    - target: {logCategory} - the provided log category isn't a valid value
+
 
 ## Related information
 
