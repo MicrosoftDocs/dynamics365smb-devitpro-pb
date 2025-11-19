@@ -1467,7 +1467,7 @@
 <!-- end performance -->
 <!-- integration with AI-->
 # Integration with AI
-## Integrating AI using developer tools for Copilot
+## Integrate AI using developer tools for Copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
@@ -1495,10 +1495,14 @@
 ##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
 ##### [AI test tool](developer/ai-test-copilot-testtool.md)
 ##### [Best practices](developer/ai-test-copilot-bestpractices.md)
-## Developing AI with machine learning APIs
+## Develope AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
 ### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
+## Create and publish agents with Copilot Studio
+### [Create agents that connect to Business Central](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
 <!-- end integration with AI-->
 
 <!-- integration-->
