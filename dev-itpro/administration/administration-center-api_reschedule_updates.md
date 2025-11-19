@@ -18,7 +18,7 @@ Allows for the management of scheduled updates such as scheduling the update to 
 
 Get information about update target versions and their status for a specific environment.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/updates
 ```
 
@@ -34,7 +34,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 Returns information about updates available for the specified environment.
 
-```
+```JSON
 {
   "value": [
     {
@@ -95,7 +95,7 @@ Returns information about updates available for the specified environment.
 
 Select a target version and update date for the next update on an environment. Only one target version can be selected per environment at a time; selecting a new target version for the next environment updates automatically unselects the previous target version.
 
-```
+```HTTP
 PATCH /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
 ```
 
@@ -113,7 +113,7 @@ PATCH /admin/{apiVersion}/applications/{applicationFamily}/environments/{environ
 
 Example for selecting a target version that's available.
 
-```
+```JSON
 {
   "selected": true, // Optional. Must be true to select target version; setting this to false returns an error. Omitting it from the body changes scheduleDetails properties for the targetVersion without selecting it or for a targetVersion that is already selected
 "targetVersionType": "GA", // Indicates the type of the target version, i.e. "GA" or "Preview". Defaults to "GA" if property is omitted from body. "Preview" versions can only be scheduled for sandbox environments
@@ -126,7 +126,7 @@ Example for selecting a target version that's available.
 
 Example for selecting a target version that isn't yet available.
 
-```
+```JSON
 {
   "selected": true // Required. Must be true to select target version. Setting this to false returns an error
 }
@@ -142,7 +142,7 @@ Example for selecting a target version that isn't yet available.
 
 Cancels a running update or Cloud Migration data upgrade and restores the environment to its state immediately before the operation started. Can only be used while an update is running. The operation might take over an hour during which the environment isn't accessible.
 
-```
+```HTTP
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/operations/{id}/cancel
 ```
 
@@ -161,7 +161,6 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 - Environment operation must be of type `Update` or `Data Upgrade`.
 - Environment operation must be in state `Running`.
 - For operations of type `Update`, the environment can't be in the Enforced Update Period.
-
 
 ## Related information
 

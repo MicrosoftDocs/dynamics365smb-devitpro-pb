@@ -22,7 +22,7 @@ Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodad
 
 Returns a list of Microsoft Entra tenants for which the app that's authenticating the call is registered as authorized app in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It doesn't indicate whether the required AdminCenter.ReadWrite.All app permission is granted as well.
 
-```
+```HTTP
 GET /admin/{apiVersion}/authorizedAadApps/manageableTenants
 ```
 
@@ -32,7 +32,7 @@ GET /admin/{apiVersion}/authorizedAadApps/manageableTenants
 
 ### Response
 
-```
+```JSON
 {
     "value": [
         {
@@ -52,7 +52,7 @@ GET /admin/{apiVersion}/authorizedAadApps/manageableTenants
 
 Returns the Microsoft Entra apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant.
 
-```
+```HTTP
 GET /admin/{apiVersion}/authorizedAadApps
 ```
 
@@ -62,7 +62,7 @@ GET /admin/{apiVersion}/authorizedAadApps
 
 ### Response
 
-```
+```JSON
 [
     {
         "appId": "00000000-0000-0000-000000000000",
@@ -82,7 +82,7 @@ GET /admin/{apiVersion}/authorizedAadApps
 
 Authorizes a Microsoft Entra app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant. It doesn't grant admin consent or assign permission sets in environments to the Microsoft Entra app.
 
-```
+```HTTP
 PUT /admin/{apiVersion}/authorizedAadApps/<appClientId>
 ```
 
@@ -92,7 +92,7 @@ PUT /admin/{apiVersion}/authorizedAadApps/<appClientId>
 
 ### Response
 
-```
+```JSON
 {
     "appId": "00000000-0000-0000-000000000000",
     "isAdminConsentGranted": false
@@ -103,7 +103,7 @@ PUT /admin/{apiVersion}/authorizedAadApps/<appClientId>
 
 Removes a Microsoft Entra app authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant. It doesn't revoke admin consent in Microsoft Entra ID nor remove permission sets assigned to the Microsoft Entra app in environments.
 
-```
+```HTTP
 DELETE /admin/{apiVersion}/authorizedAadApps/<appClientId>
 ```
 
@@ -116,3 +116,4 @@ DELETE /admin/{apiVersion}/authorizedAadApps/<appClientId>
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+

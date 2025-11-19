@@ -17,7 +17,7 @@ Telemetry includes the top-level AL events and any returned errors logged from t
 
 Returns the telemetry information for the provided environment and filters. It's recommended that you provide start and end time parameters to return a manageable data set.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
@@ -39,7 +39,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 Returns the telemetry logs and with data column headers.
 
-```
+```JSON
 {
   "queryColumns": [
     {
@@ -64,6 +64,7 @@ Returns the telemetry logs and with data column headers.
 `invalidInput` - the targeted property is invalid in some way
 
    - target: {logCategory} - the provided log category isn't a valid value
+
 
 ## Related information
 

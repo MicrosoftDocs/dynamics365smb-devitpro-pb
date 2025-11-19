@@ -17,7 +17,7 @@ Enables the ability to report that an environment isn't accessible and might req
 
 Gets the list of supported categories of outages.
 
-```
+```HTTP
 GET /admin/{apiVersion}/support/outageTypes
 ```
 
@@ -29,7 +29,7 @@ GET /admin/{apiVersion}/support/outageTypes
 
 Returns a list with information about the supported outage types for reporting.
 
-```
+```JSON
 {
   "value": [
     {
@@ -50,7 +50,7 @@ Returns a list with information about the supported outage types for reporting.
 
 Gets the list of metadata about questions that need to be answered when reporting an environment outage.
 
-```
+```HTTP
 GET /admin/{apiVersion}/support/outageTypes/{outageType}/outageQuestions
 ```
 
@@ -62,7 +62,7 @@ GET /admin/{apiVersion}/support/outageTypes/{outageType}/outageQuestions
 
 Returns the list of question metadata for the provided outage type.
 
-```
+```JSON
 {
   "value": [
     {
@@ -90,7 +90,7 @@ Returns the list of question metadata for the provided outage type.
 
 Gets the list of outages that were previously reported.
 
-```
+```HTTP
 GET /admin/{apiVersion}/support/reportedoutages
 ```
 
@@ -102,7 +102,7 @@ GET /admin/{apiVersion}/support/reportedoutages
 
 Returns the list of outages reported across all environments for the calling tenant.
 
-```
+```JSON
 {
   "value": [
     {
@@ -129,7 +129,7 @@ Returns the list of outages reported across all environments for the calling ten
 
 Initiates an outage report indicating that an environment isn't accessible.
 
-```
+```HTTP
 Content-Type: application/json
 POST /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
@@ -144,7 +144,7 @@ POST /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{
 
 ### Body
 
-```
+```JSON
 {
   "outageType": string, // The category of the outage being reported.
   "outageQuestionAnswers": [{ // The collection of answers to the questions associated with the outage type.
@@ -163,7 +163,7 @@ POST /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{
 
 Returns information about the created outage report
 
-```
+```JSON
 {
     "creationStatus": string, // The status of the request to create an outage report. (enum | "Unknown", "Created", "UpdatedExisting", "Error")
     "msaasCaseNumber": string, // The identifier of the MSaaS ticket that is associated with the outage report.
@@ -179,6 +179,7 @@ Returns information about the created outage report
    - target: {applicationFamily}/{environmentName}
 
 `failedToReportOutage` - an unhandled error occurred when trying to report the outage.
+
 
 ## Related information
 

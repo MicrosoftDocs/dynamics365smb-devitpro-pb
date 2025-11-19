@@ -17,7 +17,7 @@ Allows you to manage environment-specific settings such as the AppInsights key o
 
 Returns the update settings for the environment.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
@@ -33,7 +33,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 Returns the environment's update settings, or "null" if none exist
 
-```
+```JSON
 {
   "preferredStartTime": string, // Start of environment update window in 24h format (HH:mm). Supported by API version 2.13 and later only. 
   "preferredEndTime": string, // End of environment update window in 24h format (HH:mm). Supported by API version 2.13 and later only.  
@@ -58,7 +58,7 @@ Returns the environment's update settings, or "null" if none exist
 
 Returns a list of time zones and basic information associated with them, such as daylight saving time and the current offset from Coordinated Universal Time (UTC). Time zone identifiers are the only allowed values for the `timeZoneId` parameter of the update settings.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/settings/timezones
 ```
 
@@ -70,7 +70,7 @@ GET /admin/{apiVersion}/applications/settings/timezones
  
 Returns a wrapped array of time zones.
 
-```
+```JSON
 {
   "value":
     [
@@ -89,7 +89,7 @@ Returns a wrapped array of time zones.
 
 Sets the update window start and end times.
 
-```
+```HTTP
 Content-Type: application/json
 PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
@@ -114,7 +114,7 @@ With API version 2.13 and later, there are two different parameter sets for defi
 
 Example with wall-time + timezone parameter set (supported only by API v2.13 and later):
 
-```
+```JSON
 {
   "preferredStartTime": string, // Start of environment update window,
   "preferredEndTime": string, // End of environment update window
@@ -124,7 +124,7 @@ Example with wall-time + timezone parameter set (supported only by API v2.13 and
 
 Example with UTC parameter set:
 
-```
+```JSON
 {
   "preferredStartTimeUtc": datetime, // Start of environment update window
   "preferredEndTimeUtc": datetime, // End of environment update window
@@ -135,7 +135,7 @@ Example with UTC parameter set:
 
 Returns the updated settings
 
-```
+```JSON
 {
   "preferredStartTimeUtc": datetime, // Start of environment update window
   "preferredEndTimeUtc": datetime, // End of environment update window
@@ -167,7 +167,7 @@ Sets the connection string or instrumentation key an environment uses for Azure 
 > [!IMPORTANT]
 > This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this task during nonworking hours to avoid disruptions.
 
-```
+```HTTP
 Content-Type: application/json
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
@@ -182,7 +182,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Body
 
-```
+```JSON
 {
   "key": string, // The Application Insights key for the environment
 }
@@ -204,7 +204,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 Gets the Microsoft Entra group currently assigned to an environment.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
@@ -220,7 +220,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 If the group exists in Microsoft Graph:
 
-```
+```JSON
 {
     "id": "796d9c99-80e4-479c-8544-e745ffd18150",
     "displayName": "Security group 1"
@@ -229,7 +229,7 @@ If the group exists in Microsoft Graph:
 
 If a previously assigned group no longer exists in Microsoft Graph:
 
-```
+```JSON
 {
     "id": "796d9c99-80e4-479c-8544-e745ffd18150",
     "displayName": ""
@@ -244,7 +244,7 @@ If no group is configured for the tenant, returns 204.
 
 Assigns a Microsoft Entra group to an environment.
 
-```
+```HTTP
 Content-Type: application/json
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
@@ -259,7 +259,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Body
 
-```
+```JSON
 {
   "Value": GUID, // The object Id of the Microsoft Entra group, "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 }
@@ -275,7 +275,7 @@ Returns 200 if successful, or 404 if the group doesn't exist in Microsoft Entra 
 
 Clears a Microsoft Entra group that is currently assigned to an environment.
 
-```
+```HTTP
 DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
@@ -296,7 +296,7 @@ Returns a boolean value that indicates whether the environment allows access for
 > [!IMPORTANT]
 > Only internal global administrators can use this API endpoint. Delegated administrator or application authentication isn't supported.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
 
@@ -310,7 +310,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Response
 
-```
+```JSON
 {
   "status": "Disabled | AllowAllPartnerTenants | AllowSelectedPartnerTenants",
   "allowedPartnerTenantIds": ["guid1", "guid"2, ...] // Only if status is "AllowSelectedPartnerTenants"
@@ -326,7 +326,7 @@ Enable or disable delegated administrators and foreign multitenant apps to admin
 > [!IMPORTANT]
 > Only internal global administrators can use this API endpoint. Delegated administrator or application authentication isn't supported.
 
-```
+```HTTP
 PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
 
@@ -340,7 +340,7 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Body
 
-```
+```JSON
 {
   "status": "Disabled | AllowAllPartnerTenants | AllowSelectedPartnerTenants",
   "allowedPartnerTenantIds": ["guid1", "guid2", ...] // Only if status is "AllowSelectedPartnerTenants"
@@ -353,7 +353,7 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 Returns a boolean value that indicates whether the environment allows access with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
 ```
 
@@ -367,7 +367,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Response
 
-```
+```JSON
 {
   "enabled": true/false
 }
@@ -379,7 +379,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 Specifies whether users can access the environment with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
-```
+```HTTP
 Content-Type: application/json
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
 ```
@@ -394,7 +394,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Body
 
-```
+```JSON
 { 
    "enabled": "true" 
 } 
@@ -410,7 +410,7 @@ Returns 200 if successful.
 
 Specifies whether AppSource apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more at [Manage Apps](tenant-admin-center-manage-apps.md).
 
-```
+```HTTP
 Content-Type: application/json
 PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/appSourceAppsUpdateCadence
 ```
@@ -425,7 +425,7 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Body
 
-```
+```JSON
 { 
    "value": string //Accepted values are 'Default', 'DuringMajorUpgrade', and 'DuringMajorMinorUpgrade'
 } 

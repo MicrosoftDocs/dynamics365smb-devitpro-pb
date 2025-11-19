@@ -22,7 +22,7 @@ To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permiss
 
 Gets information about the number of exports allowed per month and the amount remaining.
 
-```
+```HTTP
 GET /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
@@ -38,7 +38,7 @@ GET /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{e
 
 Returns the metrics around the current month's database exports.
 
-```
+```JSON
 {
   "exportsPerMonth": int, // The total number of allowed exports of the targeted environment every month.
   "exportsRemainingThisMonth": int, // The number of exports remaining for the targeted environment that can be performed this month.
@@ -55,7 +55,7 @@ Returns the metrics around the current month's database exports.
 
 Starts the export of an environment's database to a provided Azure storage account.
 
-```
+```HTTP
 Content-Type: application/json
 POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
@@ -70,7 +70,7 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 
 ### Body
 
-```
+```JSON
 {
   "storageAccountSasUri": string, // An Azure SAS uri pointing at the Azure storage account where the database will be exported to. The uri must have (Read | Write | Create | Delete) permissions
   "container": string, // The name of the container that will be created by the process to store the exported database.
@@ -92,7 +92,7 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 
 Gets information about the exports that happen within a provided time frame, for which environment, and by which user.
 
-```
+```HTTP
 POST /admin/{apiVersion}/exports/history?start={startTime}&end={endTime}
 ```
 
@@ -110,7 +110,7 @@ POST /admin/{apiVersion}/exports/history?start={startTime}&end={endTime}
 
 Returns a detailed list of the database exports that occurred within the provided timeframe of the `start` and `end` query parameters.
 
-```
+```JSON
 {
   "applicationType": string, // Family of the environment (for example, "BusinessCentral")
   "applicationVersion": string, // The version of the environment's application at the time of the export.

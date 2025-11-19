@@ -42,7 +42,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments
 
 Returns a wrapped array of environments.
 
-```
+```JSON
 {
   "value":
   [
@@ -97,7 +97,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 Returns a single environment if exists.
 
-```
+```JSON
 {
   "value":
   [
@@ -155,7 +155,7 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Body
 
-```
+```JSON
 {
   "environmentType": string, // The type of environment to create (enum | "Production", "Sandbox")
   "countryCode": string, // The country to create the environment within
@@ -173,7 +173,7 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 EnvironmentOperation response with HTTP status code 202 (Accepted) with the following format:
 
-```
+```JSON
 {
   "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "create",
@@ -202,7 +202,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 Returns HTTP status code 201 (Created) with newly created environment.
 
-```
+```JSON
 {
   "friendlyName": string, // Display name of the environment
   "type": string, // Environment type (for example, "Sandbox", "Production")
@@ -282,7 +282,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{sourceEn
 
 ### Body
 
-```
+```JSON
 {
   "environmentName": string, // The name of the new environment.
   "type": string // The type of environment to create. With API v2.8 and earlier, only the value "Sandbox" is supported.
@@ -295,7 +295,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{sourceEn
 
 EnvironmentOperation response with HTTP status code 202 (Accepted) with the following format:
 
-```
+```JSON
 {
   "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "copy",
@@ -324,7 +324,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 Returns HTTP status code 201 (Created) with newly copied environment.
 
-```
+```JSON
 {
   "friendlyName": string, // Display name of the environment
   "type": string, // Environment type (for example, "Sandbox", "Production")
@@ -371,7 +371,7 @@ Returns HTTP status code 201 (Created) with newly copied environment.
 
 `conflictingDeveloperExtensions` - The source environment contains 'uploaded' extensions that are already published to the destination service as 'developer' extensions. This condition will cause conflicts.
 
-  ```
+  ```JSON
   extensionData:
   {
       "conflictingExtensions": [{
@@ -415,7 +415,7 @@ DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{enviro
 
 EnvironmentOperation response with HTTP status code 202 (Accepted) with the following format:
 
-```
+```JSON
 {
   "id": "8924140b-0da8-4bbb-8a4f-dac047944e72",
   "type": "softDelete",
@@ -441,7 +441,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 EnvironmentOperation response with HTTP status code 202 (Accepted) with the following format:
 
-```
+```JSON
 {
   "id": "8924140b-0da8-4bbb-8a4f-dac047944e72",
   "type": "delete",
@@ -504,7 +504,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 EnvironmentOperation response with HTTP status code 202 (Accepted) with the following format:
 
-```
+```JSON
 {
   "id": "8924140b-0da8-4bbb-8a4f-dac047944e72",
   "type": "recover",
@@ -551,7 +551,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Body
 
-```
+```JSON
 {
   "NewEnvironmentName": "sandbox"
 }
@@ -560,7 +560,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 ### Response
 
 202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters
-```
+```JSON
 {
   "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "environmentRename", // Operation type
@@ -601,7 +601,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ### Body
 
-```
+```JSON
 {
   "EnvironmentName": "x-restored", // Mandatory. The name of the new environment that will be created as the result of the resore operation.
   "EnvironmentType": "production", // Mandatory. The type of the new environment.
@@ -616,7 +616,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters.
 
-```
+```JSON
 {
   "id": "00001111-aaaa-2222-bbbb-3333cccc4444", // Operation ID
   "type": "pitRestore",  // Operation type
@@ -664,7 +664,7 @@ GET admin/{apiVersion}/applications/{applicationType}/environments/{environmentN
 
 200 OK with body. Body represents an ordered list of available restore periods that are non-overlapping and sorted in ascending order by period start date-time. If there are no available restore periods, the list will be empty. correspondingApplicationPackageVersion indicates the Application version that the environment will be restored to.
 
-```
+```JSON
 {
   "value": [
     {
@@ -759,7 +759,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 ### Response
 
 Returns used storage information of a single environment if exists.
-```
+```JSON
 {
   "environmentType": string, // Environment type (for example, "Sandbox", "Production")
   "environmentName": string, // Environment name, unique within an application family
@@ -793,7 +793,7 @@ GET /admin/{apiVersion}/environments/usedstorage
 ### Response
 
 Returns a wrapped array of used storage objects.
-```
+```JSON
 {
   "value":
   [
@@ -820,7 +820,7 @@ GET /admin/{apiVersion}/environments/quotas
 
 ### Response
 Returns quotas object.
-```
+```JSON
 {
   "environmentsCount":
   {
@@ -901,7 +901,7 @@ Data is returned for the following operation types:
 
 Example `200 OK` response:
 
-```
+```JSON
 {
 
   "value": [
@@ -973,7 +973,7 @@ See [Operation Types](#operation-types).
 
 Example `200 OK` response:
 
-```
+```JSON
 {
 
   "value": [

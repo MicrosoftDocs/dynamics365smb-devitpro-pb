@@ -18,7 +18,7 @@ Notifications are sent to the recipient email addresses that are set up for the 
 
 Returns a list of notification recipients.
 
-```
+```HTTP
 GET /admin/{apiVersion}/settings/notification/recipients
 ```
 
@@ -30,7 +30,7 @@ GET /admin/{apiVersion}/settings/notification/recipients
 
 Returns a wrapped array of recipients.
 
-```
+```JSON
 {
   "value": 
   [
@@ -51,7 +51,7 @@ Returns a wrapped array of recipients.
 
 Create a new notification recipient.
 
-```
+```HTTP
 Content-Type: application/json
 PUT /admin/{apiVersion}/settings/notification/recipients
 ```
@@ -62,7 +62,7 @@ PUT /admin/{apiVersion}/settings/notification/recipients
 
 ### Body
 
-```
+```JSON
 {
   "email": string, // Email address of the recipient
   "name": string // Full name of the recipient
@@ -73,7 +73,7 @@ PUT /admin/{apiVersion}/settings/notification/recipients
 
 Returns the newly created recipient.
 
-```
+```JSON
 {
   "id": GUID, // Unique identifier of the recipient
   "email": string, // Email address of the recipient
@@ -96,7 +96,7 @@ Returns the newly created recipient.
 
 Deletes an existing notification recipient.
 
-```
+```HTTP
 DELETE /admin/{apiVersion}/settings/notification/recipients/{id}
 ```
 
@@ -118,7 +118,7 @@ DELETE /admin/{apiVersion}/settings/notification/recipients/{id}
 
 Returns the full set of notification settings including the list of recipients.
 
-```
+```HTTP
 GET /admin/{apiVersion}/settings/notification
 ```
 
@@ -130,7 +130,7 @@ GET /admin/{apiVersion}/settings/notification
 
 Returns the notification settings.
 
-```
+```JSON
 {
   "aadTenantId": GUID, // AAD Tenant ID of the caller
   "recipients": [

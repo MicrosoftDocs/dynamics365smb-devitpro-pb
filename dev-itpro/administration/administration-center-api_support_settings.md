@@ -17,7 +17,7 @@ Allows for the management of support settings, such as changing the contact, for
 
 Get information about the support contact for a specified environment.
 
-```
+```HTTP
 GET /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
@@ -33,7 +33,7 @@ GET /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{e
 
 Returns information about the support contact for that environment.
 
-```
+```JSON
 {
   "name": string, // The name of the support contact.
   "email": string, // The email address of the support contact.
@@ -57,7 +57,7 @@ Returns information about the support contact for that environment.
 
 Sets the support contact information for a specified environment
 
-```
+```HTTP
 Content-Type: application/json
 PUT /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
@@ -72,7 +72,7 @@ PUT /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{e
 
 ### Body
  
-```
+```JSON
 {
   "name": string, // The name of the support contact.
   "email": string, // The email address of the support contact.
@@ -83,7 +83,7 @@ PUT /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{e
 ### Response
 
 Returns the newly updated support contact information.
-```
+```JSON
 {
   "name": string, // The name of the support contact.
   "email": string, // The email address of the support contact.

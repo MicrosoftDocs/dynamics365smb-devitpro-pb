@@ -20,7 +20,7 @@ Manage the active sessions on an environment.
 
 Gets active sessions for an environment.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
@@ -34,7 +34,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Response
 
-```
+```JSON
 {
   value: [
     {
@@ -62,7 +62,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 Gets session information for a specific session ID.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
@@ -78,7 +78,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ### Response
 
-```
+```JSON
 {
   environmentName: string,
   applicationFamily: string,
@@ -101,7 +101,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 Terminates and deletes an active session.
 
-```
+```HTTP
 DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
@@ -120,4 +120,5 @@ DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{enviro
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+
 

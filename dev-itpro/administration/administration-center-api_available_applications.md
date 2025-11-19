@@ -18,7 +18,7 @@ The API endpoints here should be utilized to determine what values can be used f
 
 Get a list of the currently available application families, the available countries/regions within those families, and the available rings within the countries/regions.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/
 ```
 
@@ -28,7 +28,7 @@ GET /admin/{apiVersion}/applications/
 
 ### Response
 
-```
+```JSON
 {
   "value": [
     {
@@ -50,7 +50,7 @@ GET /admin/{apiVersion}/applications/
 
 Gets a list of the currently available versions that an environment can be created on within a logical ring group.
 
-```
+```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
@@ -66,7 +66,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}
 
 ### Response
 
-```
+```JSON
 {
   "value": [ // A list of the available application versions within the ring that environments can be created on 
     "<version string>",
@@ -81,3 +81,4 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)  
+

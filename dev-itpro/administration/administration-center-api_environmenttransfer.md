@@ -26,7 +26,7 @@ Creates a request to transfer an environment to another Microsoft Entra tenant.
 > [!NOTE]  
 > This API call must be authenticated on the source tenant.
 
-```
+```HTTP
 POST /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
 ```
 
@@ -42,7 +42,7 @@ POST /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/env
 
 Specifies the Microsoft Entra tenant ID of the destination tenant and the date and time at which the transfer should run, if accepted on the destination tenant.
 
-```
+```JSON
 {
     "DestinationEntraTenantId": Guid, //The Microsoft Entra tenant ID of the destination tenant
     "RunAt": datetime // The date and time at which the transfer should run, if accepted on the destination tenant. Expressed as UTC timestamp.
@@ -53,7 +53,7 @@ Specifies the Microsoft Entra tenant ID of the destination tenant and the date a
 
 Returns details of the operation created to request the environment transfer.
 
-```
+```JSON
 {
     "id": Guid, // Guid of the created operation
     "type": string, // Type of the created operation, i.e. "requestTransferToAnotherEntraTenant"
@@ -87,7 +87,7 @@ Accepts an environment transfer on the destination tenant.
 > [!NOTE]  
 > This API call must be authenticated on the destination tenant.
 
-```
+```HTTP
 POST /admin/{apiVersion}/transfers/incoming
 ```
 
@@ -99,7 +99,7 @@ POST /admin/{apiVersion}/transfers/incoming
 
 Specifies the details of the environment for which a transfer is to be accepted.
 
-```
+```JSON
 {
     "SourceEnvironmentName" : string, // Name of the environment in the source tenant
     "ApplicationFamily" : string, // Name of the Application Family of the environment
@@ -112,7 +112,7 @@ Specifies the details of the environment for which a transfer is to be accepted.
 
 Returns the details of the operation created in the destination tenant for the environment transfer.
 
-```
+```JSON
 {
     "id": Guid, // ID of the operation created
     "type": string, // Type of the created operation, i.e. "moveToAnotherAadTenant"
@@ -142,7 +142,7 @@ Cancels a created transfer request on the source tenant.
 > [!NOTE]  
 > This API call must be authenticated on the source tenant.
 
-```
+```HTTP
 DELETE /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/environments/{environmentName}
 ```
 
@@ -158,7 +158,7 @@ DELETE /admin/{apiVersion}/transfers/outgoing/applications/{applicationFamily}/e
 
 Returns the details of the operation that was canceled in the source tenant.
 
-```
+```JSON
 {
     "id": Guid, // ID of the operation cancelled
     "type": string, // Type of the cancelled operation, i.e. "requestTransferToAnotherEntraTenant"
@@ -192,7 +192,7 @@ Get a list of transfer requests on the source tenant that haven't yet been compl
 > [!NOTE]  
 > This API call must be authenticated on the source tenant.
 
-```
+```HTTP
 GET /admin/{apiVersion}/transfers/outgoing
 ```
 
@@ -201,7 +201,7 @@ GET /admin/{apiVersion}/transfers/outgoing
 `apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
-```
+```JSON
 {
     "value": [
         {
@@ -238,7 +238,7 @@ Get a list incoming transfers on the destination tenant from a specific source t
 > [!NOTE]  
 > This API call must be authenticated on the destination tenant.
 
-```
+```HTTP
 GET /admin/{apiVersion}/transfers/incoming/{sourceEntraTenantId}
 ```
 
@@ -249,7 +249,7 @@ GET /admin/{apiVersion}/transfers/incoming/{sourceEntraTenantId}
 `sourceEntraTenantId` - Microsoft Entra tenant ID for the source tenant
 
 ### Response
-```
+```JSON
 {
     "value": [
         {
