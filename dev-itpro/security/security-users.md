@@ -28,7 +28,7 @@ Customers using kiosks, where multiple users sign in to [!INCLUDE[prod_short](..
 
 ## Establish out-of-band verification for high-value transactions
 
-For example, some organizations use a pre-agreed 'safety word' or callback procedure to confirm any unusual payment requests. Training employees to verify before acting can prevent scams.” 
+For example, some organizations use a pre-agreed 'safety word' or callback procedure to confirm any unusual payment requests. Training employees to verify before acting can prevent scams.
 
 ## Personal security best practices
 
