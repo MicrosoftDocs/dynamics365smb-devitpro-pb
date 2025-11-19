@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 11/03/2025
+ms.date: 11/19/2025
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -21,7 +21,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Download 'What's new' partner deck: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK) 
 - Download BCLE Highlight videos: [aka.ms/BCHighlights](https://aka.ms/BCHighlights) 
 - Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
-- Move your on-premise customers to the cloud, find resources here: [https://aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- Move your on-premises customers to the cloud, find resources here: [https://aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Latest release and updates  
 
@@ -113,8 +113,9 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
-- Sales Order Agent available in public preview in following countries/regions (Sep 2025): United States, Canada, UK, Australia, New Zealand, Denmark, Germany, France, Italy, Spain 
-- Payable Agent available in public preview in following countries/regions (Sep 2025): United States, UK, Australia, New Zealand
+- Sales Order Agent is generally available in all countries. 
+- Payable Agent is generally available in the following countries/regions (November 2025): United States, United Kingdom, Australia, and New Zealand.
+
 
 ### Copilot in Business Central 101
 
