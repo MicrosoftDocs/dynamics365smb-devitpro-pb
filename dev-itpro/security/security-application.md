@@ -34,7 +34,7 @@ The authentication method configured for Business Central Server is also used to
 
 ## Authorization
 
-After a user is authenticated, authorization determines which areas the user can access, such as the pages and reports they can open and the permissions they have on associated data. For more information, see the following articles:
+After a user is authenticated, authorization determines which areas the user can access, such as the pages and reports they can open and the permissions they have on associated data. Learn more in the following articles:
 
 [User Permissions in the Application](user-security.md#user-permissions-in-the-application)
 
@@ -51,6 +51,9 @@ After a user is authenticated, authorization determines which areas the user can
 [Analyzing Authorization Telemetry](../administration/telemetry-authorization-trace.md)
 
 [Using OAuth to Authorize Business Central Web Services](../webservices/authenticate-web-services-using-oauth.md)
+
+> [!NOTE]
+> After successful authentication, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] allows a user in only if they exist in the environment and have permission to the company or data they're trying to access. In other words, being a licensed in Microsoft Entra ID isn't enough&mdash;the user must also be set up inside [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with appropriate access.
 
 ## Data encryption
 

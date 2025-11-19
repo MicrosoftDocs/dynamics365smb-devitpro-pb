@@ -24,6 +24,10 @@ This section helps you understand and improve the security of your [!INCLUDE[pro
 - Always require MFA for Business Central sign-in. We recommend using modern authentication options (such as Authenticator apps or FIDO2 keys) and disabling basic auth methods. Learn more in [Setting up Multifactor Authentication (MFA) for Business Central](multifactor-authentication.md).
 - Access can be controlled per [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment for internal users, delegated administrators, and multitenant applications. Learn more in [Manage Access to Environments](../administration/tenant-admin-center-manage-access.md).
 
+### Monitor sign-in attempts to detect threats
+
+Admins can monitor failed sign-in attempts to Business Central through [Microsoft Entra sign-in logs](/entra/identity/conditional-access/troubleshoot-conditional-access#microsoft-entra-sign-in-events) or [[!INCLUDE[prod_short](../developer/includes/prod_short.md)] authorization trace telemetry](../administration/telemetry-authorization-trace.md). Frequent authentication failures might indicate an attacker trying to guess passwords or an integration using incorrect credentials, so active monitoring is important.
+
 ## Privileged access
 
 Consider using Microsoft Entra ID Privileged Identity Management (PIM) for Business Central administrators. PIM ensures that high-privilege roles (like Global Admin or Dynamics 365 Admin) are only activated when needed, reducing the risk of always-on admin accounts. This incorporation emphasizes best practice for cloud admins: don't leave admin privileges permanent – require on-demand activation. Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure).
@@ -36,7 +40,7 @@ Perform Business Central administration from a highly secure, isolated workstati
 
 ## Enforce separation of duties for sensitive operations
 
-In Business Central, use built-in features like Approval Workflows to ensure critical transactions (like large payments, purchase orders, or journal postings) require approval by a second person. This reduces the risk of fraud or mistakes by a single user.
+In Business Central, use built-in features like [Approval Workflows](/dynamics365/business-central/across-set-up-workflows) to ensure critical transactions (like large payments, purchase orders, or journal postings) require approval by a second person. This practice reduces the risk of fraud or mistakes by a single user.
 
 ## Data isolation and encryption
 

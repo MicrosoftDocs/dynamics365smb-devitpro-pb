@@ -26,6 +26,10 @@ Customers using kiosks, where multiple users sign in to [!INCLUDE[prod_short](..
 - Before ending a session at the kiosk, business users should remember to sign out of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], then close all browser windows. Closing the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] browser tab or closing the browser without signing out might not fully complete the signout process.
 - Each user should use private or guest browsing modes so that any data cached by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is discarded when the browser closes. Private or guest browsing can degrade some [!INCLUDE[prod_short](../developer/includes/prod_short.md)] features and performance optimizations that are only available when the browser provides access to its storage mechanisms.
 
+## Establish out-of-band verification for high-value transactions
+
+For example, some organizations use a pre-agreed 'safety word' or callback procedure to confirm any unusual payment requests. Training employees to verify before acting can prevent scams.” 
+
 ## Personal security best practices
 
 - **Think before you click:** Emphasize phishing awareness: Don't trust unsolicited emails or links that seem "too good" or urgent; if something feels off, double-check with IT.
