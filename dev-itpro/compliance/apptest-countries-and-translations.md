@@ -207,7 +207,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Reunion|Partner|W1|Available|RE|5)|
 |Romania|Partner|W1|Available|RO|Europe|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|N/A|
-|Rwanda|Partner|W1|Available|RW|South Africa North|
+|Rwanda|Partner|W1|Available <sup>5)</sup>|RW|South Africa North|
 |Saint Barthélemy|Partner|W1|Planned - December 2025|||
 |Saint Kitts and Nevis|Partner|W1|Available|KN|Brazil|
 |Saint Lucia|Partner|W1|Available|LC|Brazil|

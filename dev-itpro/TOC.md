@@ -208,7 +208,7 @@
 #### [Transfer environments](administration/administration-center-api_environmenttransfer.md)
 #### [Environment settings](administration/administration-center-api_environment_settings.md)
 #### [Notifications](administration/administration-center-api_notifications.md)
-#### [Reschedule updates](administration/administration-center-api_reschedule_updates.md)
+#### [Manage updates](administration/administration-center-api_reschedule_updates.md)
 #### [Session management](administration/administration-center-api_session_management.md)
 #### [Support settings](administration/administration-center-api_support_settings.md)
 #### [Telemetry](administration/administration-center-api_telemetry.md)
@@ -1465,6 +1465,46 @@
 ## [On-premises](performance/performance-onprem.md)
 ## [How to work with a performance problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
+<!-- integration with AI-->
+# Integration with AI
+## Integrate AI using developer tools for Copilot
+### [Overview](developer/ai-integration-landing-page.yml)
+### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
+### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
+### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
+### [Prepare your app Help for Copilot (preview)](developer/ai-prepare-app-help-copilot.md)
+### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [Business Central AI resources (preview)](developer/ai-dev-tools-resources.md)
+### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
+### [Token counting in AI](developer/ai-system-app-token-counting.md)
+### [Function calling in AI](developer/ai-system-app-function-calling.md)
+### Extend Copilot in Business Central 
+#### [Introduction](developer/ai-build-experience-overview.md)
+#### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### Build Copilot user experience
+##### [Overview](developer/ai-build-experience.md)
+##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
+##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
+##### [Design content mode](developer/copilot-design-content-mode.md)
+##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
+##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
+#### Test Copilot capability in AL
+##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
+##### [Datasets](developer/ai-test-copilot-datasets.md)
+##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
+##### [AI test tool](developer/ai-test-copilot-testtool.md)
+##### [Best practices](developer/ai-test-copilot-bestpractices.md)
+## Develop AI with machine learning APIs
+### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
+### [Prediction API overview](developer/ml-prediction-api-overview.md)
+### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
+## Create agents that connect to Business Central
+### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
+<!-- end integration with AI-->
+
 <!-- integration-->
 # Integration
 ## [Integration overview](developer/integration-overview.md)
@@ -1605,39 +1645,6 @@
 ## Integrating with external systems using events
 ### [Using webhooks to track data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
-
-## Integrating AI using developer tools for Copilot
-### [Overview](developer/ai-integration-landing-page.yml)
-### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
-### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
-### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
-### [Prepare your app Help for Copilot (preview)](developer/ai-prepare-app-help-copilot.md)
-### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
-### [Business Central AI resources (preview)](developer/ai-dev-tools-resources.md)
-### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
-### [Token counting in AI](developer/ai-system-app-token-counting.md)
-### [Function calling in AI](developer/ai-system-app-function-calling.md)
-### Extend Copilot in Business Central 
-#### [Introduction](developer/ai-build-experience-overview.md)
-#### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
-#### Build Copilot user experience
-##### [Overview](developer/ai-build-experience.md)
-##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
-##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
-##### [Design content mode](developer/copilot-design-content-mode.md)
-##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
-##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
-#### Test Copilot capability in AL
-##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
-##### [Datasets](developer/ai-test-copilot-datasets.md)
-##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
-##### [AI test tool](developer/ai-test-copilot-testtool.md)
-##### [Best practices](developer/ai-test-copilot-bestpractices.md)
-## Developing AI with machine learning APIs
-### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
-### [Prediction API overview](developer/ml-prediction-api-overview.md)
-### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 
 <!-- Office apps and Microsoft 365 start -->
 ## Integrating Business Central with Office apps and Microsoft 365
