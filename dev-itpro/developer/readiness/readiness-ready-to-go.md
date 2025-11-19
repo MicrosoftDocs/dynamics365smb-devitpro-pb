@@ -113,7 +113,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
-- Sales Order Agent is generally available in all countries. 
+- Sales Order Agent is generally available in all countries/regions. 
 - Payable Agent is generally available in the following countries/regions (November 2025): United States, United Kingdom, Australia, and New Zealand.
 
 
