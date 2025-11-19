@@ -10,7 +10,7 @@ ms.reviewer: solsen
 
 # Business Central security 
 
-This section helps you understand and improve the security of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. In the links below you find information, guidance, and recommended practices related to authentication, data encryption, and safely integrating with other services. You'll also find information on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] certifications and regulatory compliance.
+This section helps you understand and improve the security of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. In the links below you find information, guidance, and recommended practices related to authentication, data encryption, and safely integrating with other services. You can also find information on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] certifications and regulatory compliance.
 
 ## Authentication
 
@@ -33,6 +33,10 @@ In addition to using PIM, physical device security is crucial for administrator 
 ### Use secure admin devices
 
 Perform Business Central administration from a highly secure, isolated workstation. For example, have a dedicated PC (or Azure Virtual Desktop/Cloud PC) for admin use only, with hardened configuration (up-to-date OS, limited software, full disk encryption, and mandatory MFA). Avoid doing daily work or general browsing on the same machine used for privileged access.
+
+## Enforce separation of duties for sensitive operations
+
+In Business Central, use built-in features like Approval Workflows to ensure critical transactions (like large payments, purchase orders, or journal postings) require approval by a second person. This reduces the risk of fraud or mistakes by a single user.
 
 ## Data isolation and encryption
 
