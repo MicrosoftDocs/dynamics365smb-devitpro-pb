@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 09/10/2025
+ms.date: 11/19/2025
 ms.update-cycle: 180-days
 ---
 
@@ -20,7 +20,37 @@ ms.update-cycle: 180-days
 
 To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md). Finetune and improve your agent's behavior by following guidance in [Iterate and manage an AI Playground Agent (preview)](ai-playground-agent-iterate.md).
 
-## Instruction framework
+## Getting started with agent instructions
+
+### The AI-assisted approach
+
+Rather than trying to write perfect instructions from the start, we recommend an iterative, AI-assisted workflow:
+
+1. **Start with your ideas** - Write down what you want your agent to do in natural language, without worrying about format or structure
+2. **Use AI to refine** - Leverage Copilot or other AI tools to transform your initial thoughts into well-structured instructions following best practices
+3. **Test and iterate** - Deploy your agent, observe its behavior, and refine the instructions based on real-world results
+4. **Leverage community examples** - Reference proven patterns and examples from the community
+
+This approach allows you to focus on the business logic and desired outcomes, while AI helps with the technical formatting and best practices.
+
+### Draft your initial instructions
+
+Start by describing your agent's purpose and workflow in plain language. Don't worry about perfect formatting at this stage—just capture the core requirements and workflow.
+
+**Example initial draft:**
+
+```text
+I want an agent that helps with customer credit checks. When a sales order comes in, 
+it should check if the customer has exceeded their credit limit. If they have, it should 
+notify the sales team and suggest alternative payment terms. It needs to look at their 
+payment history too.
+```
+
+Once you have your initial draft, you can use AI tools to refine it according to best practices and proven patterns.
+
+## Refining instructions with AI assistance
+
+### Instruction framework
 
 Effective agent instructions follow a structured approach with three key components:
 
@@ -30,79 +60,119 @@ Effective agent instructions follow a structured approach with three key compone
 
 This framework ensures that agents act consistently, handle exceptions gracefully, and involve users when necessary.
 
-### Writing effective instructions
+### Using AI to structure your instructions
 
-At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for AI Playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. You can even use LLM-based tools like Copilot to help optimize your instructions.
+Provide your draft instructions to AI tools like Copilot, which can help you:
 
-#### Key principles for agent instructions
+- Structure your instructions into clear sections (Responsibilities, Guidelines, Instructions)
+- Add appropriate emphasis and formatting
+- Incorporate proven navigation patterns and tool usage
+- Ensure alignment with your agent's profile and permissions
+- Add validation rules and error handling guidance
 
-##### Structure and brevity
+### Example transformation
 
-- **Introduce structure** in your instructions using clear sections and formatting
-- **Write as few instructions as possible** while maintaining clarity—concise instructions often perform better
-- Use **emphasis** (bold text, UPPERCASE) to highlight important points
-- Apply **numbering** to create logical flow and priorities
+**Before (initial draft):**
 
-##### Formatting for clarity
+```text
+Check customer credit when creating sales orders. Stop if over limit.
+```
 
-- Use bullet points or numbered lists for multi-step processes
-- Bold key terms and critical requirements
-- Structure instructions with clear headings when appropriate
-- Keep sentences short and direct
+**After (AI-refined with best practices):**
 
-##### Agent-specific considerations
+```text
+**RESPONSIBILITY**: Monitor customer credit limits during sales order creation
+
+**GUIDELINES**:
+- Always request user review before blocking an order
+- Provide clear explanations of credit status
+- Suggest alternative payment terms when applicable
+
+**INSTRUCTIONS**:
+1. When a sales order is created, retrieve the customer's current balance and credit limit
+2. Calculate available credit: Credit Limit - Current Balance
+3. If available credit is less than the order amount:
+   a. **DO NOT** proceed with order creation
+   b. Request user intervention with details: current balance, credit limit, order amount
+   c. Suggest alternative payment terms (e.g., Cash, Prepayment)
+4. Document the credit check result for audit purposes
+```
+
+### Community-driven best practices
+
+The Business Central community maintains repositories of agent instruction patterns, examples, and best practices. These resources can be used to ground AI-generated instruction improvements:
+
+- Navigation patterns for common Business Central pages
+- Tool usage examples for standard operations
+- Error handling and validation patterns
+- User intervention scenarios
+
+By referencing these community patterns when refining your instructions, you ensure your agent follows proven approaches and handles edge cases effectively. insert link!
+
+### Key principles for agent instructions
+
+At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for AI Playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality.
+
+#### Start simple, iterate based on results
+
+- Begin with core functionality and essential workflows
+- Deploy and test with real scenarios
+- Add complexity and refinements based on observed behavior
+- Use AI to help incorporate lessons learned from testing
+
+#### Leverage AI and community knowledge
+
+- Use AI tools to transform drafts into structured instructions
+- Reference community patterns for common scenarios
+- Ground AI refinements with proven examples
+- Contribute your own successful patterns back to the community
+
+#### Focus on outcomes, not formatting
+
+- Describe what the agent should accomplish, not how to format the text
+- Let AI handle the structuring, emphasis, and formatting details
+- Concentrate on business logic, edge cases, and user experience
+
+#### Agent-specific considerations
 
 - Include **specific keywords or phrasing** to help the agent utilize available tools in the agent runtime effectively
 - Review the UI that the agent has access to based on its profile before writing instructions
 - Tailor instructions to match what the agent can see and do
 - Reference specific field names, page titles, and actions that align with the agent's profile
 
-#### When instructions aren't enough
+### Advanced instruction concepts
 
-If you're having difficulty achieving accuracy with your agent:
+As you refine your agent instructions, consider incorporating these advanced patterns. AI tools can help you apply these concepts effectively when you provide your draft instructions and indicate which patterns are relevant.
 
-- **Consider changing or adding new functionality** to better support the agent's tasks
-- **Optimize the UI** that the agent interacts with
-- **Improve error messages and tooltips** to provide clearer guidance
-- **Enhance page instructions** to help the agent be more successful
+#### User intervention and review
 
-Test your instructions thoroughly to ensure they lead to the desired behavior, and iterate based on the agent's actual performance.
-
-#### User intervention and review guidelines
-
-##### When to request user intervention
+**When to request user intervention:**
 
 - The agent should request user intervention when it can't proceed due to missing data, ambiguous situations, or validation errors
-- Provide clear examples in your instructions of when to ask for help
-- Default behavior: Any validation errors or missing critical information should trigger user intervention
+- Examples: incomplete customer information, items not found in inventory, unexpected error messages
 
-Examples of intervention scenarios:
-
-- If customer information is incomplete or foreign, ask for user intervention
-- If required items aren't found in inventory, request assistance  
-- When encountering unexpected error messages or system responses
-
-##### User review requirements
+**User review requirements:**
 
 - Agents should always request user review before proceeding with critical steps or sending outgoing messages
-- All outgoing communications (emails, documents, notifications) require user review by default
-- After completing significant actions (like creating sales quotes or processing orders), request user review before moving forward
+- All outgoing communications require user review by default
+- After completing significant actions, request user review before moving forward
 
-##### Response handling
+**Response handling:**
 
-- Agents draft messages and responses based on instructions but must confirm before sending
-- Provide clear summaries of actions taken and request clarification when needed
-- Example: After creating a sales quote, reply with a summary and ask for any needed clarifications from the customer
+- Agents draft messages based on instructions but must confirm before sending
+- Provide clear summaries of actions taken
 
 #### Memory and state management
 
-Agents retain a history of their actions and searches but don't store the full state of every page they interact with. To ensure important information is preserved:
+Agents retain a history of their actions and searches but don't store the full state of every page. Include explicit instructions to memorize specific key-value pairs when needed, which can be referenced in later steps.
 
-- Include explicit instructions to memorize specific key-value pairs when needed
-- Stored values can be referenced in later steps of the same task
-- Example: "Memorize the external document reference from the newly created sales quote for use in follow-up communications"
+Example: "Memorize the external document reference from the newly created sales quote for use in follow-up communications"
 
-<!-- Add example of good instructions, like shown in the partner video. Link to best practices for prompting -->
+#### Error handling and validation
+
+- **Validate inputs**: Ensure all required fields are filled before proceeding with critical actions
+- **Use emphasis**: Highlight critical validation points with bold text or UPPERCASE
+- Examples: "**DO NOT** proceed until the requested date is entered" or "**ALWAYS** confirm customer details are complete before creating quotes"
 
 ### Defining tasks
 
@@ -112,7 +182,7 @@ You invoke your agent by manually creating a task for it. When creating a task, 
 
 #### Current limitations in public preview
 
-The public preview of the agent playground doesn't include built-in integrations for automatically triggering your custom agents based on:
+The public preview of the agent playground doesn't include built-in integrations for automatically triggering your custom agents based on, for example:
 
 - Incoming emails
 - System events  
@@ -128,23 +198,20 @@ You can simulate these trigger scenarios manually:
 
 This manual approach allows you to validate your agent's behavior across different trigger scenarios during the prototyping phase.
 
-## Instruction optimization and continuous improvement
+## Testing and continuous improvement
 
-### Error handling and validation
+### When instructions aren't enough
 
-When writing instructions, include specific guidance for error handling:
+If you're having difficulty achieving accuracy with your agent:
 
-- **Validate inputs**: Ensure all required fields are filled before proceeding with critical actions
-- **Improve error messages**: Make error messages clear, specific, and actionable for both the agent and users
-- Use emphasis to highlight critical validation points
+- **Consider changing or adding new functionality** to better support the agent's tasks
+- **Optimize the UI** that the agent interacts with
+- **Improve error messages and tooltips** to provide clearer guidance
+- **Enhance page instructions** to help the agent be more successful
 
-Examples:
+Test your instructions thoroughly to ensure they lead to the desired behavior, and iterate based on the agent's actual performance.
 
-- **DO NOT** proceed until the requested date is entered
-- Validate that the request date is entered for this month before processing
-- **ALWAYS** confirm customer details are complete before creating quotes
-
-### Instruction management and testing
+### Instruction management best practices
 
 - **Test for accuracy regularly** Instruction effectiveness can change over time as systems and processes evolve
 - **Use AI optimization** Leverage AI tools like Copilot to help refine and update instructions
@@ -156,6 +223,33 @@ Examples:
 **Page-specific instructions** You can provide dynamic prompts based on the specific pages or contexts the agent encounters. Use conditional logic for instructions tied to particular scenarios.
 
 **Additional tools** Agents can use advanced tools like field setting, lookups, and action invocation. Include specific keywords in your instructions that help the agent utilize these tools effectively within the agent runtime.
+
+## Frequently asked questions
+
+### How detailed should my initial draft be?
+
+Start with enough detail to convey the business logic and key decision points. You don't need perfect formatting or complete edge case coverage—focus on the core workflow. AI can help fill in the structure and best practices.
+
+### Can I update instructions after the agent is deployed?
+
+Yes, agent instructions can be updated dynamically. Test your changes in a sandbox environment first, then deploy updates to your production agent. Remember that agents must be deactivated to modify certain settings.
+
+### How do I know if my instructions are working?
+
+Monitor the agent's behavior through the timeline view in the playground. Look for:
+
+- Successful task completions
+- Appropriate use of tools and navigation
+- Correct handling of edge cases
+- Reasonable user intervention requests
+
+### Where can I find example instructions and patterns?
+
+The Business Central community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance.
+
+### Should I write different instructions for different environments?
+
+Your core instructions should be environment-agnostic. Use the agent's profile and permissions to control what it can access in different environments, rather than having environment-specific instructions.
 
 ## Related information
 
