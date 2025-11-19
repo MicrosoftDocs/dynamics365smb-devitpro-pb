@@ -123,6 +123,9 @@ Every Business Central table has built-in audit fields: Created On/Created By an
 
 Learn more in [Data audit fields](../developer/devenv-table-system-fields.md#audit).
 
+> [!TIP]
+> You can use Business Central’s analysis mode on any list page. Add the system fields (Created/Modified date and user) to the list (they can be hidden), then turn on analysis mode. With these fields present, the analysis mode (and Copilot) can help summarize recent changes to the data in that list&mdash; giving you a lightweight audit view.
+
 ---
 
 ## Related information  
