@@ -107,7 +107,7 @@ The Business Central community maintains repositories of agent instruction patte
 - Error handling and validation patterns
 - User intervention scenarios
 
-By referencing these community patterns when refining your instructions, you ensure your agent follows proven approaches and handles edge cases effectively. insert link!
+By referencing these community patterns when refining your instructions, you ensure your agent follows proven approaches and handles edge cases effectively. Learn more in [alguidelines](https://github.com/microsoft/alguidelines/blob/d2cdf97e0c4ba8fa3a618169339d2d6655d63493/content/docs/agentic-coding/vibe-coding-rules/al-code-style.md).
 
 ### Key principles for agent instructions
 
