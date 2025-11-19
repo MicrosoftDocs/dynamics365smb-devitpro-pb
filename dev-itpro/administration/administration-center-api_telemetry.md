@@ -1,31 +1,34 @@
 ---
 title: Business Central Admin Center API - Telemetry
-description: Learn about the Business Central administration center API for logging telemetry.
+ms.author: jswymer
+description: Explore the Business Central Admin Center API for telemetry logging, including top-level AL events and error tracking for tenant environments.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 11/17/2025
 ---
 
-# Business Central Admin Center API - Telemetry (API)
+# Business Central admin center API - Telemetry (API)
 
-Telemetry includes the top-level AL events and any returned errors logged from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment. 
+Telemetry includes the top-level AL events and any returned errors logged from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment.
 
-## Get Environment Telemetry
+## Get environment telemetry
 
-Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters to return a manageable data set.
+Returns the telemetry information for the provided environment and filters. It's recommended that you provide start and end time parameters to return a manageable data set.
 
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
-```
 
-### Route Parameters
+### Route parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment
 
 ### Query parameters
 
@@ -37,7 +40,7 @@ GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 
 Returns the telemetry logs and with data column headers.
 
-```
+```JSON
 {
   "queryColumns": [
     {
@@ -51,7 +54,7 @@ Returns the telemetry logs and with data column headers.
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
@@ -62,6 +65,7 @@ Returns the telemetry logs and with data column headers.
 `invalidInput` - the targeted property is invalid in some way
 
    - target: {logCategory} - the provided log category isn't a valid value
+
 
 ## Related information
 
