@@ -122,6 +122,7 @@ SQL Server handles record-level security filters just like other filters that th
 Every Business Central table has built-in audit fields: Created On/Created By and Last Modified On/Modified By. These fields capture who created a record and when, and who last modified it. These fields provide an audit trail for changes to any data.
 
 Learn more in [Data audit fields](../developer/devenv-table-system-fields.md#audit).
+
 ---
 
 ## Related information  
