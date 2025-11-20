@@ -110,7 +110,7 @@ Some applications of AI can be sensitive and impactful on individuals and societ
 - The use or misuse of an AI feature that determines eligibility for education might infringe upon human rights.
 - The use or misuse of an AI feature that ranks individuals’ access to social housing might have consequential impact to their life opportunities.
 
-Sensitive use cases require increased attention throughout their development lifecycle. They might carry extra effort to satisfy any of your organization’s policies or regulations in the countries, regions, or industries in which they'll be deployed.
+Sensitive use cases require increased attention throughout their development lifecycle. They might carry extra effort to satisfy any of your organization’s policies or regulations in the countries or regions, or industries in which they'll be deployed.
 
 - Seek appropriate legal and professional advice  
 
