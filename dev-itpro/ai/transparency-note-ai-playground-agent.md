@@ -90,6 +90,7 @@ Agents in Business Central are intended for use with Business Central online, Mi
 - Use of AI platforms other than Azure OpenAI Service
 - The agent playground isn't intended for use with any other AI models other than Azure OpenAI Service. 
 
+<br>
 - Financial impact  
 
 Because your AI features are attached to your Azure OpenAI Service key, you're responsible for the operating costs of Azure OpenAI resources throughout development, testing and when your customers use the feature in production or sandbox environments. For example, an AI feature that provides a handful of monthly suggestions to business owners will likely consume fewer resources and cost less. In contrast, an AI feature that generates a daily, two-page project summary for each employee will likely consume more resources and cost more.
@@ -198,16 +199,17 @@ To reduce time and effort to build responsible use cases, the agent playground  
 
 ## Working Responsible AI into your development practices
 
-We recommend that partners adopt a similar process and criteria to the Microsoft Responsible AI Standard as a structured mechanism to build use cases responsibly. For example, you should:
+We recommend that partners adopt a similar process and criteria to the [Microsoft Responsible AI Standard](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5cmFl) as a structured mechanism to build use cases responsibly. For example, you should:
 
 - Assess the impact of your AI feature using the Microsoft Responsible AI Impact Assessment Template.
 - Review the assessment with diverse stakeholders and subject matter experts (SMEs).
 - Mitigate any identified risks by adjusting your use case requirements, design, implementation, and documentation after understanding which mitigations are already provided by the toolkit.
 - Measure whether your mitigations are successful at reducing or deflecting risk.
 
-
 ## Learn more about responsible AI
 
-[Microsoft AI principles]()
-[Microsoft responsible AI resources]()
-[Microsoft Azure Learning courses on responsible AI]()
+[Microsoft AI principles](https://www.microsoft.com/en-us/ai/responsible-ai) 
+
+[Microsoft responsible AI resources](https://www.microsoft.com/en-us/ai/tools-practices) 
+
+[Microsoft Azure Learning courses on responsible AI](/ai/)
