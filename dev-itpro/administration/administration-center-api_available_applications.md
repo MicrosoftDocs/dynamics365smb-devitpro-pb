@@ -6,30 +6,35 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 11/17/2025
 ---
 
-# Business Central Admin Center API - Available Applications
+# Business Central admin center API - Available applications
 
 Get information about the currently available application families, countries/regions, rings, and versions that environments can be created on.
-The API endpoints here should be utilized to determine what values can be used for environment creation or copying 
+The API endpoints here should be utilized to determine what values can be used for environment creation or copying.
 
 ## Applications and corresponding Countries/regions with Rings
+
 Get a list of the currently available application families, the available countries/regions within those families, and the available rings within the countries/regions.
 
+```HTTP
+GET /admin/{apiVersion}/applications/
 ```
-GET /admin/v2.24/applications/
-```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
-```
+```JSON
 {
   "value": [
     {
       "applicationFamily": string, // The name of the family for a given Business Central offered application. (Typically this will just be "BusinessCentral")
       "countriesringDetails": {
-          "countryCode": string, // Code for a country that the application family supports creating environments within.
+          "countryCode": string, // Code for a country/region that the application family supports creating environments within.
           "rings": [{ // A list of logical ring groupings where environments can be created
             "name": string, // The API name of the ring (for example, PROD, PREVIEW)
             "productionRing": bool, // Indicates that the ring is a production ring. Currently there should only be one production ring within a country.
@@ -41,24 +46,27 @@ GET /admin/v2.24/applications/
 }
 ```
 
-## Ring details with Versions
-Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
+## Ring details with versions
 
+Gets a list of the currently available versions that an environment can be created on within a logical ring group.
+
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
-GET /admin/v2.24/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
-```
 
-### Route Parameters
+### Route parameters
 
-`applicationFamily` - Family of the ring's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`countryCode` - Code for the ring's country.
+`applicationFamily` - the family of the ring's application (for example, "BusinessCentral")
 
-`ringName` - Name of the ring to inspect.
+`countryCode` - Code for the ring's country/region.
 
+`ringName` - the name of the ring to inspect.
 
 ### Response
-```
+
+```JSON
 {
   "value": [ // A list of the available application versions within the ring that environments can be created on 
     "<version string>",
@@ -72,4 +80,5 @@ GET /admin/v2.24/applications/{applicationFamily}/Countries/{countryCode}/Rings/
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
-[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)  
+

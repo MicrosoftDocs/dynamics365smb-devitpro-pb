@@ -208,7 +208,7 @@
 #### [Transfer environments](administration/administration-center-api_environmenttransfer.md)
 #### [Environment settings](administration/administration-center-api_environment_settings.md)
 #### [Notifications](administration/administration-center-api_notifications.md)
-#### [Reschedule updates](administration/administration-center-api_reschedule_updates.md)
+#### [Manage updates](administration/administration-center-api_reschedule_updates.md)
 #### [Session management](administration/administration-center-api_session_management.md)
 #### [Support settings](administration/administration-center-api_support_settings.md)
 #### [Telemetry](administration/administration-center-api_telemetry.md)
