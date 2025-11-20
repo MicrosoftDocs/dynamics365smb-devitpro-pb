@@ -14,7 +14,7 @@ This guide provides scenario-based security recommendations organized by persona
 
 ## Partner Scenarios
 
-### How do I ensure my consultants don't have persistent access to all customers I manage?
+### Ensure my consultants don't have persistent access to all customers I manage
 
 **Context and Problem:**  
 Partners managing multiple customers through GDAP (Granular Delegated Admin Privileges) face a security risk when consultants have persistent, always-on administrative access to customer environments. A compromised consultant account could lead to unauthorized access across all customers. Compliance requirements and customer trust demand minimizing standing privileges.
@@ -25,7 +25,7 @@ Implement time-bound privileged access using Microsoft Entra ID Privileged Ident
 **Guidance:**
 
 1. **Set up GDAP with groups:**
-   - In your partner's Microsoft Entra ID, create one security group per customer you have a GDAP relationship with (e.g., `GDAP-CustomerA-Admins`, `GDAP-CustomerB-Admins`)
+   - In your partner's Microsoft Entra ID, create one security group per customer you have a GDAP relationship with (for example, `GDAP-CustomerA-Admins`, `GDAP-CustomerB-Admins`)
    - Establish the GDAP relationship with each customer, linking the relevant security group to the appropriate Azure AD roles
    - Do not directly assign consultants to these groups permanently
 
@@ -33,7 +33,7 @@ Implement time-bound privileged access using Microsoft Entra ID Privileged Ident
    - Enable Microsoft Entra ID Privileged Identity Management (requires Microsoft Entra ID P2 or Microsoft Entra ID Governance license)
    - Make the GDAP customer groups eligible for activation in PIM rather than permanently assigned
    - Configure activation requirements (e.g., justification, approval workflow, maximum duration)
-   - Set appropriate activation duration limits (e.g., 4-8 hours)
+   - Set appropriate activation duration limits (for example, 4-8 hours)
 
 3. **Consultant workflow:**
    - When a consultant needs to work on a specific customer, they request activation of the relevant customer group in PIM
@@ -57,10 +57,10 @@ Implement time-bound privileged access using Microsoft Entra ID Privileged Ident
 **ROI Consideration:**  
 Partners can absorb licensing costs and position this as a premium security offering. The cost of a single security breach far exceeds the licensing investment.
 
-### How do I secure API access for automation tools I build for customers?
+### Secure API access for automation tools I build for customers
 
 **Context and Problem:**  
-Partners often build automation tools, integrations, or monitoring solutions that need to call Business Central APIs across multiple customer tenants. Using personal admin accounts or long-lived secrets creates security risks and operational fragility.
+Partners often build automation tools, integrations, or monitoring solutions that need to call [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs across multiple customer tenants. Using personal admin accounts or long-lived secrets creates security risks and operational fragility.
 
 **Solution:**  
 Use managed identities with Federated Identity Credentials (FIC) when running in Azure, or implement secure credential management for non-Azure scenarios.
@@ -98,13 +98,13 @@ Use managed identities with Federated Identity Credentials (FIC) when running in
 
 ## Administrator Scenarios
 
-### How do I restrict network access to Business Central from external services?
+### Restrict network access to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external services
 
 **Context and Problem:**  
-Your Business Central environment (AppSource apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from your Business Central environment reaches these services, blocking potential unauthorized access or data exfiltration attempts from other sources.
+Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (AppSource apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment reaches these services, blocking potential unauthorized access or data exfiltration attempts from other sources.
 
 **Solution:**  
-Use Azure service tags and network access controls to create allowlists based on Business Central's IP ranges.
+Use Azure service tags and network access controls to create allowlists based on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s IP ranges.
 
 **Guidance:**
 
@@ -119,33 +119,37 @@ Use Azure service tags and network access controls to create allowlists based on
 **Scenario B: Destination is Azure Storage Account**  
 (Special case due to internal routing)
 
-1. Create an Azure Function as a proxy in the same region as Business Central
+1. Create an Azure Function as a proxy in the same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 2. Restrict Azure Function access using service tag-based access restriction: allow `Dynamics365BusinessCentral`
 3. Create a private endpoint or VNet integration from Azure Function to Storage Account
-4. Configure your Business Central extension to call the Azure Function instead of Storage directly
+4. Configure your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to call the Azure Function instead of Storage directly
 5. Azure Function proxies requests to Storage Account
 
 **Scenario C: Destination supports IP allowlisting only**  
 (On-premises systems, third-party SaaS, custom APIs)
 
-1. Retrieve current Business Central IP ranges:
+1. Retrieve current [!INCLUDE[prod_short](../developer/includes/prod_short.md)] IP ranges:
+
    ```powershell
    $serviceTags = Get-AzNetworkServiceTag -Location eastus2
    $bcTag = $serviceTags.Values | Where-Object { $_.Name -eq "Dynamics365BusinessCentral" }
    $bcTag.Properties.AddressPrefixes
    ```
-2. Configure firewall/network rules on destination to allow these IP ranges
-3. Monitor the `ChangeNumber` property and update rules when Microsoft updates the ranges
-4. Consider automating updates using Azure Automation or scheduled scripts
+
+1. Configure firewall/network rules on destination to allow these IP ranges
+1. Monitor the `ChangeNumber` property and update rules when Microsoft updates the ranges
+1. Consider automating updates using Azure Automation or scheduled scripts
 
 **Benefits:**
-- **Prevents unauthorized access** from non-Business Central sources
+
+- **Prevents unauthorized access** from non-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] sources
 - **Reduces attack surface** significantly
 - **Compliance** with network segmentation requirements
 - **Visibility** into allowed traffic patterns
 
 **Trade-offs:**
-- **No per-environment granularity:** Service tag includes all Business Central environments globally
+
+- **No per-environment granularity:** Service tag includes all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments globally
 - **Maintenance overhead:** IP ranges change over time (though infrequently)
 - **Proxy complexity:** Storage Account scenario requires additional Azure Function
 - **Regional limitations:** Must be in supported Azure regions for some scenarios
@@ -153,10 +157,10 @@ Use Azure service tags and network access controls to create allowlists based on
 ### How do I monitor and respond to suspicious login attempts?
 
 **Context and Problem:**  
-Attackers may attempt credential stuffing, password spraying, or brute-force attacks against your Business Central users. Integration accounts might use incorrect credentials. You need visibility into authentication failures to detect threats early and respond appropriately.
+Attackers may attempt credential stuffing, password spraying, or brute-force attacks against your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users. Integration accounts might use incorrect credentials. You need visibility into authentication failures to detect threats early and respond appropriately.
 
 **Solution:**  
-Implement comprehensive monitoring of authentication events using Microsoft Entra sign-in logs and Business Central telemetry.
+Implement comprehensive monitoring of authentication events using Microsoft Entra sign-in logs and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry.
 
 **Guidance:**
 
@@ -177,14 +181,14 @@ Implement comprehensive monitoring of authentication events using Microsoft Entr
    Sample KQL query for Log Analytics:
    ```kusto
    SigninLogs
-   | where AppDisplayName contains "Business Central"
+   | where AppDisplayName contains "[!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
    | where ResultType != 0  // Failed sign-ins
    | summarize FailureCount=count() by UserPrincipalName, IPAddress, bin(TimeGenerated, 10m)
    | where FailureCount > 5
    ```
 
-3. **Monitor Business Central telemetry:**
-   - Enable Business Central telemetry to Azure Application Insights
+3. **Monitor [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry:**
+   - Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry to Azure Application Insights
    - Track authorization failures and permission errors
    - Monitor API authentication failures for service accounts
    - Set up alerts for anomalous API usage patterns
@@ -214,7 +218,7 @@ Implement comprehensive monitoring of authentication events using Microsoft Entr
 Password-only authentication is vulnerable to phishing, credential theft, and account takeover. Regulatory requirements and security best practices mandate multi-factor authentication (MFA), but enabling it requires balancing security with user experience.
 
 **Solution:**  
-Implement Microsoft Entra Conditional Access policies to require MFA for Business Central access with modern authentication methods.
+Implement Microsoft Entra Conditional Access policies to require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] access with modern authentication methods.
 
 **Guidance:**
 
@@ -225,10 +229,10 @@ Implement Microsoft Entra Conditional Access policies to require MFA for Busines
 
 2. **Configure Conditional Access policy:**
    - Navigate to Microsoft Entra admin center → Protection → Conditional Access
-   - Create new policy: "Require MFA for Business Central"
+   - Create new policy: "Require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
    - **Assignments:**
-     - Users: Include "All users" or specific Business Central user groups
-     - Cloud apps: Select "Dynamics 365 Business Central"
+     - Users: Include "All users" or specific [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user groups
+     - Cloud apps: Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
    - **Access controls:**
      - Grant access, but require multi-factor authentication
    - **Session controls:** Consider sign-in frequency (e.g., require re-auth every 7 days)
@@ -274,7 +278,7 @@ Introducing new CA policies prompts users to reauthenticate. Plan changes during
 A single user with unrestricted access can create fraudulent transactions, approve their own payments, or modify critical master data without oversight. Regulatory frameworks (SOX, internal controls) require separation of duties to prevent fraud and errors.
 
 **Solution:**  
-Implement Business Central's Approval Workflows combined with role-based permissions to enforce multi-person authorization for sensitive operations.
+Implement [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s Approval Workflows combined with role-based permissions to enforce multi-person authorization for sensitive operations.
 
 **Guidance:**
 
@@ -287,7 +291,7 @@ Implement Business Central's Approval Workflows combined with role-based permiss
    - Customer credit limit increases
 
 2. **Configure Approval Workflows:**
-   - Navigate to Business Central → Workflows
+   - Navigate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] → Workflows
    - Create approval workflow for each sensitive operation type
    - Define approval hierarchy (e.g., manager approval, finance director for large amounts)
    - Set threshold amounts where applicable
@@ -330,7 +334,7 @@ Start with high-risk, high-value transactions only. Expand separation of duties 
 
 ## Developer Scenarios
 
-### How do I secure API calls from my Business Central extension to external services?
+### How do I secure API calls from my [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to external services?
 
 **Context and Problem:**  
 Your extension needs to call external APIs (payment gateways, shipping providers, tax services) and requires credentials or API keys. Hardcoding secrets in code or storing them in plain text creates severe security vulnerabilities.
@@ -341,23 +345,23 @@ Use Azure Key Vault for secret storage, accessed via secure authentication patte
 **Guidance:**
 
 1. **Set up Azure Key Vault:**
-   - Create Azure Key Vault in same region as Business Central for optimal performance
+   - Create Azure Key Vault in same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for optimal performance
    - Store API keys, connection strings, certificates as Key Vault secrets
    - Enable Key Vault logging to monitor secret access
    - Configure access policies or use Azure RBAC
 
-2. **Access from Business Central:**
+2. **Access from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:**
    - **Option A - App registration with certificate:**
      - Create app registration in customer's Microsoft Entra ID
      - Upload certificate to app registration (do NOT use client secrets)
      - Grant app registration "Get Secret" permission on Key Vault
-     - Store certificate in Business Central isolated storage
+     - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage
      - Use AL HttpClient with certificate authentication
    
    - **Option B - Managed identity (for SaaS integrations):**
      - If calling Azure Function/Logic App as intermediary
      - Azure service uses managed identity to access Key Vault
-     - Business Central calls Azure service (no secrets in BC)
+     - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in BC)
 
 3. **AL code pattern:**
    ```al
@@ -400,7 +404,7 @@ Use Azure Key Vault for secret storage, accessed via secure authentication patte
 ### How do I secure inter-service communication using service tags?
 
 **Context and Problem:**  
-Your AppSource app or PTE calls external Azure services (SQL Database, Cosmos DB, custom APIs). You want to restrict these services to only accept traffic from Business Central, preventing unauthorized access from other sources.
+Your AppSource app or PTE calls external Azure services (SQL Database, Cosmos DB, custom APIs). You want to restrict these services to only accept traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], preventing unauthorized access from other sources.
 
 **Solution:**  
 Configure network access controls on Azure services using the `Dynamics365BusinessCentral` service tag.
@@ -414,7 +418,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
      - Type: Service Tag
      - Service Tag: `Dynamics365BusinessCentral`
      - Rule name: "Allow-BC-Traffic"
-   - Test connection from Business Central
+   - Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
    - Monitor denied connection attempts
 
 2. **For Azure Key Vault:**
@@ -455,14 +459,14 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 - **Testing complexity:** Difficult to test from development machines
 
 **Important limitation:**  
-Service tags represent ALL Business Central environments globally. You cannot restrict to a single environment or region. For higher granularity, consider additional application-level authentication (API keys, OAuth).
+Service tags represent ALL [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments globally. You cannot restrict to a single environment or region. For higher granularity, consider additional application-level authentication (API keys, OAuth).
 
 ## Auditor Scenarios
 
 ### How do I verify that appropriate security controls are in place?
 
 **Context and Problem:**  
-As an auditor (internal or external), you need to verify that Business Central deployments meet security standards, compliance requirements, and internal policies. Manual verification is time-consuming and incomplete.
+As an auditor (internal or external), you need to verify that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployments meet security standards, compliance requirements, and internal policies. Manual verification is time-consuming and incomplete.
 
 **Solution:**  
 Use a checklist-based approach combining automated queries and manual verification procedures.
@@ -472,7 +476,7 @@ Use a checklist-based approach combining automated queries and manual verificati
 **Authentication Controls Verification:**
 1. **Confirm MFA is enforced:**
    - Review Microsoft Entra Conditional Access policies
-   - Verify "Require MFA" is enabled for Business Central app
+   - Verify "Require MFA" is enabled for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app
    - Check for exemptions or exclusions (should be minimal/none)
    - Sample authentication logs to confirm MFA claims in tokens
 
@@ -508,7 +512,7 @@ Use a checklist-based approach combining automated queries and manual verificati
 **Monitoring and Detection:**
 1. **Verify logging is enabled:**
    - Confirm Microsoft Entra sign-in logs retention (90+ days)
-   - Verify Business Central telemetry is flowing to Application Insights
+   - Verify [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry is flowing to Application Insights
    - Check Change Log is enabled for sensitive tables
    - Review alert configurations
 
@@ -550,14 +554,14 @@ Use a checklist-based approach combining automated queries and manual verificati
 ### How do I track and report on data access patterns?
 
 **Context and Problem:**  
-For compliance and security investigations, you need to understand who accessed what data, when, and from where. Business Central doesn't enable comprehensive data access logging by default.
+For compliance and security investigations, you need to understand who accessed what data, when, and from where. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't enable comprehensive data access logging by default.
 
 **Solution:**  
-Implement multi-layered audit logging using Business Central Change Log, database auditing, and telemetry.
+Implement multi-layered audit logging using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Change Log, database auditing, and telemetry.
 
 **Guidance:**
 
-1. **Enable Business Central Change Log:**
+1. **Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Change Log:**
    - Navigate to Change Log Setup
    - Enable change logging for sensitive tables:
      - Customer, Vendor, Bank Account
@@ -579,7 +583,7 @@ Implement multi-layered audit logging using Business Central Change Log, databas
    WITH (STATE = ON)
    ```
 
-3. **Use Business Central telemetry (online):**
+3. **Use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry (online):**
    - Enable environment telemetry to Application Insights
    - Monitor custom telemetry events:
      - `AL: Long Running SQL Query` (data access patterns)
@@ -620,8 +624,8 @@ Don't enable logging reactively after an incident. Implement comprehensive audit
 ## Related information
 
 [Security and Protection](security-and-protection.md)  
-[Business Central Online Security](security-online.md)  
-[Business Central On-Premises Security](security-onpremises.md)  
+[[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online Security](security-online.md)  
+[[!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises Security](security-onpremises.md)  
 [Security Tips for Business Users](security-users.md)  
 [Use Azure Service Tags](security-service-tags.md)  
 [Setting up Multifactor Authentication](multifactor-authentication.md)  
