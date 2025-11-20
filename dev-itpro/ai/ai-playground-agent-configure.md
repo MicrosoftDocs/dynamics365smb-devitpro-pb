@@ -64,7 +64,7 @@ This framework ensures that agents act consistently, handle exceptions gracefull
 
 Provide your draft instructions to AI tools like Copilot, which can help you:
 
-- Structure your instructions into clear sections (Responsibilities, Guidelines, Instructions)
+- Structure your instructions into clear sections (responsibilities, guidelines, and instructions)
 - Add appropriate emphasis and formatting
 - Incorporate proven navigation patterns and tool usage
 - Ensure alignment with your agent's profile and permissions
@@ -94,7 +94,7 @@ Check customer credit when creating sales orders. Stop if over limit.
 3. If available credit is less than the order amount:
    a. **DO NOT** proceed with order creation
    b. Request user intervention with details: current balance, credit limit, order amount
-   c. Suggest alternative payment terms (e.g., Cash, Prepayment)
+   c. Suggest alternative payment terms (for example; Cash, Prepayment)
 4. Document the credit check result for audit purposes
 ```
 
@@ -166,7 +166,7 @@ As you refine your agent instructions, consider incorporating these advanced pat
 
 Agents retain a history of their actions and searches but don't store the full state of every page. Include explicit instructions to memorize specific key-value pairs when needed, which can be referenced in later steps.
 
-Example: "Memorize the external document reference from the newly created sales quote for use in follow-up communications"
+Example: "Memorize the external document reference from the newly created sales quote for use in follow-up communications".
 
 #### Error handling and validation
 
@@ -178,17 +178,17 @@ Example: "Memorize the external document reference from the newly created sales 
 
 #### How to trigger your agent
 
-You invoke your agent by manually creating a task for it. When creating a task, you can specify an additional message that gets passed to the agent to complement the general instructions with specific details for that particular task. As you're testing and prototyping your agent, you can create tasks directly from the **AI Playground Agent** setup page. Each task you create will appear in the agent's task queue, where the agent will pick it up and process it according to its instructions.
+You invoke your agent by manually creating a task for it because the current public preview doesn't support automatic triggers, such as incoming mails, system events, or recurring schedules. 
 
-#### Current limitations in public preview
+When creating a task, you can specify an additional message that gets passed to the agent to complement the general instructions with specific details for that particular task. As you're testing and prototyping your agent, you can create tasks directly from the **AI Playground Agent** setup page. Each task you create will appear in the agent's task queue, where the agent will pick it up and process it according to its instructions. Tasks kan be stopped and restarted as needed.
+
+#### Workarounds for testing scenarios
 
 The public preview of the agent playground doesn't include built-in integrations for automatically triggering your custom agents based on, for example:
 
 - Incoming emails
 - System events  
 - Recurring schedules
-
-#### Workarounds for testing scenarios
 
 You can simulate these trigger scenarios manually:
 
