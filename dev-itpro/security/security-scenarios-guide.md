@@ -332,6 +332,8 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
    - Configure notifications (email, in-app)
    - Enable delegation for approver absence scenarios
 
+   Learn more in [Use Approval Workflows](/dynamics365/business-central/across-how-use-approval-workflows).
+
 1. Design segregated permission sets:
    - Requester role: Can create payment journals but cannot post
    - Approver role: Can approve but cannot create their own requests
@@ -339,13 +341,15 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
    - Ensure no single user has all three capabilities
    - Use security groups for easier management
 
+   Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+
 1. Implement audit logging:
-   - Enable Change Log for sensitive tables (Vendor Bank Account, User Permissions)
-   - Monitor approval workflow telemetry
-   - Regular review of who approved what (monthly reconciliation)
+   - Enable Change Log for sensitive tables (Vendor Bank Account, User Permissions). Learn more about the change log in [Audit changes](/dynamics365/business-central/across-log-changes).
+   - Monitor approval workflow telemetry.
+   - Regular review of who approved what (monthly reconciliation).
 
 1. Handle exceptions:
-   - Document emergency override procedures (requires C-level approval)
+   - Document emergency override procedures (requires C-level approval). Learn more in [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
    - Temporary permission elevation should be logged and time-limited
    - Post-incident review of all emergency actions
 
