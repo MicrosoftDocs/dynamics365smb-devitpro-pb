@@ -30,7 +30,7 @@ Learn more in [Microsoft Entra Privileged Identity Management](/entra/id-governa
    1. In your partner's Microsoft Entra ID tenant, create one security group per customer you have a GDAP relationship with (for example, `GDAP-CustomerA-Admins`, `GDAP-CustomerB-Admins`). Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
 
       Don't directly assign consultants to these groups permanently.
-   - Establish the GDAP relationship with each customer, linking the relevant security group to the appropriate Microsoft Entra roles. Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
+   1. Establish the GDAP relationship with each customer, linking the relevant security group to the appropriate Microsoft Entra roles. Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
 
 1. Configure PIM for time-bound access:
 
