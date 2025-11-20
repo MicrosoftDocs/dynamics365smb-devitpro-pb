@@ -1,12 +1,11 @@
 ---
 title: Transparency Note Business Central Agent Playground
-description: 
-author: 
-ms.author: 
+author: pborring
+description: Learn how the Business Central Agent Playground empowers partners to prototype AI-powered agents, automate workflows, and enhance productivity responsibly.
+ms.author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ms.topic: faq
-ms.collection:
-  - bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ms.date: 11/20/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
