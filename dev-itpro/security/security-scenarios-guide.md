@@ -262,7 +262,7 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
    1. Set assignments:
 
       - **Users:** Include "All users" or specific [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user groups
-      - **Target Resources:** Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
+      - **Target Resources:** Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]". Learn more [Conditional Access: Target resources](/entra/identity/conditional-access/concept-conditional-access-cloud-apps)
       - **Access controls:** Grant access, but require multi-factor authentication
    - **Session controls:** Consider sign-in frequency (for example, require re-auth every 7 days)
 
@@ -301,8 +301,8 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
 - Legacy app challenges: Some integrations may not support modern auth
 - Offline scenarios: Users need device access for authenticator app
 
-**Critical note:**  
-Introducing new CA policies prompts users to reauthenticate. Plan changes during maintenance windows and communicate clearly to minimize disruption. Update background job credentials and service accounts before enforcement.
+> [!IMPORTANT]
+> Introducing new CA policies prompts users to reauthenticate. Plan changes during maintenance windows and communicate clearly to minimize disruption. Update background job credentials and service accounts before enforcement.
 
 ### Implement separation of duties for financial transactions
 
