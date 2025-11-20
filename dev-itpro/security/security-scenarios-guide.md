@@ -240,7 +240,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 
 ### Enforce multifactor authentication for all users
 
-**Context and problem:** 
+**Context and problem:**
 Password-only authentication is vulnerable to phishing, credential theft, and account takeover. Regulatory requirements and security best practices mandate multifactor authentication (MFA), but enabling it requires balancing security with user experience.
 
 **Solution:**  
@@ -257,22 +257,23 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
 
 1. Configure Conditional Access policy:
 
-   1. In Microsoft Entra admin center, navigate to Protection > Conditional Access
-   1. Create new policy, for exampme "Require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]". Learn more in [Create a Conditional Access policy](/entra/identity/conditional-access/how-to-policy-mfa-admin-portals).
-   - Assignments:
-     - Users: Include "All users" or specific [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user groups
-     - Cloud apps: Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
-   - Access controls:
-     - Grant access, but require multi-factor authentication
-   - Session controls: Consider sign-in frequency (for example, require re-auth every 7 days)
+   1. In [Microsoft Entra admin center](https://entra.microsoft.com), navigate to **Protection** > **Conditional Access**.
+   1. Create new policy. Learn more in [Create a Conditional Access policy](/entra/identity/conditional-access/how-to-policy-mfa-admin-portals).
+   1. Set assignments:
+
+      - **Users:** Include "All users" or specific [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user groups
+      - **Target Resources:** Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
+      - **Access controls:** Grant access, but require multi-factor authentication
+   - **Session controls:** Consider sign-in frequency (for example, require re-auth every 7 days)
 
 1. Enable modern authentication methods:
-   - Navigate to Authentication methods policies
-   - Enable Microsoft Authenticator (push notifications and passwordless)
-   - Enable FIDO2 security keys for high-privilege accounts
+   - In [Microsoft Entra admin center](https://entra.microsoft.com), select **Authentication methods** > **Policies**. Learn more in [Authentication methods in Microsoft Entra ID](/entra/identity/authentication/concept-authentication-methods).
+   - Enable **Microsoft Authenticator** (push notifications and passwordless)
+   - Enable **Passkey (FIDO2)**
+   - Enable **Temporary Access Pass** for new user onboarding
    - Disable less secure methods (SMS, voice) after transition period
-   - Enable Temporary Access Pass for new user onboarding
 
+   Learn more in [Manage authentication methods for Microsoft Entra ID](/entra/identity/authentication/concept-authentication-methods-manage).
 1. Plan rollout:
    - Phase 1 (report-only mode): Monitor impact without enforcing
    - Phase 2 (pilot group): Enable for IT and early adopters
@@ -280,14 +281,14 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
    - Provide user training and help desk preparation
 
 1. Handle service accounts:
-   - Use certificate-based authentication for automated processes
+   - Use certificate-based authentication for automated processes. Learn more in [Certificate credentials](/entra/identity-platform/certificate-credentials).
    - Never exempt service accounts from security policies
-   - Consider managed identities for Azure-hosted integrations
+   - Consider managed identities for Azure-hosted integrations. Learn more in [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview).
 
 **Benefits:**
 
-- 99.9% reduction in account compromise risk (Microsoft data)
-- Compliance with regulations (GDPR, SOC 2, ISO 27001)
+- Reduction in account compromise risk
+- Compliance with regulations
 - User trust in platform security
 - Passwordless future: Foundation for eliminating passwords entirely
 - Conditional flexibility: Can exempt trusted locations if needed
