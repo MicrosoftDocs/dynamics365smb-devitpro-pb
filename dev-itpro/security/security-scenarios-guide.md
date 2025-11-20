@@ -387,10 +387,10 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
      - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage
      - Use AL HttpClient with certificate authentication
 
-   - Option B - Managed identity (for SaaS integrations):
+   - Option B - Managed identity (for online integrations):
      - If calling Azure Function/Logic App as intermediary
      - Azure service uses managed identity to access Key Vault
-     - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in BC)
+     - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in Business Central)
 
 1. AL code pattern:
 
@@ -415,7 +415,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 1. Implement secret rotation:
    - Rotate secrets every 90 days minimum
    - Use Key Vault secret versions
-   - Update references in BC setup tables without code changes
+   - Update references in Business Central setup tables without code changes
 
 **Benefits:**
 
@@ -469,7 +469,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 1. Automation for IP range updates:
 
    ```powershell
-   # Script to sync BC IP ranges to firewall
+   # Script to sync Business Central IP ranges to firewall
    $serviceTags = Get-AzNetworkServiceTag -Location eastus2
    $bcTag = $serviceTags.Values | Where-Object { $_.Name -eq "Dynamics365BusinessCentral" }
    
@@ -482,13 +482,13 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 **Benefits:**
 
 - Automated IP management: Microsoft maintains service tag IP ranges
-- Reduced attack surface: Only BC can reach your services
+- Reduced attack surface: Only Business Central can reach your services
 - Compliance: Network segmentation requirement
 - No manual IP updates: Service tags auto-update
 
 **Trade-offs:**
 
-- Global scope: All BC environments worldwide included, not per-environment filtering
+- Global scope: All Business Central environments worldwide included, not per-environment filtering
 - Azure-only: Service tags only work within Azure
 - Initial configuration: Requires understanding of Azure networking
 - Testing complexity: Difficult to test from development machines
@@ -592,7 +592,7 @@ Learn more in [Security and Protection](security-and-protection.md), [Business C
 
 **Trade-offs:**
 
-- Technical expertise required: Auditor needs Azure/BC knowledge
+- Technical expertise required: Auditor needs Azure/Business Central knowledge
 - Time investment: Thorough audit takes 8-16 hours per environment
 - Access requirements: Needs elevated privileges to review all settings
 - Point-in-time: Snapshot of controls, not continuous assurance
@@ -625,6 +625,7 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
    - Select fields to track: All fields vs. critical fields only
    - Consider performance impact (logging adds overhead)
 
+   Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)
 1. Configure SQL Server Auditing (on-premises):
 
    ```sql
