@@ -160,9 +160,9 @@ Use Azure service tags and network access controls to create allowlists based on
 - Proxy complexity: Storage Account scenario requires additional Azure Function
 - Regional limitations: Must be in supported Azure regions for some scenarios
 
-### How do I monitor and respond to suspicious login attempts?
+### Monitor and respond to suspicious login attempts
 
-**Context and Problem:**
+**Context and problem:**
 Attackers may attempt credential stuffing, password spraying, or brute-force attacks against your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users. Integration accounts might use incorrect credentials. You need visibility into authentication failures to detect threats early and respond appropriately.
 
 **Solution:**  
@@ -223,9 +223,9 @@ Implement comprehensive monitoring of authentication events using Microsoft Entr
 - Expertise required: Creating effective KQL queries requires learning curve
 - False positives: Legitimate scenarios (e.g., VPN users) may trigger alerts
 
-### How do I enforce multi-factor authentication for all users?
+### Enforce multi-factor authentication for all users
 
-**Context and Problem:**  
+**Context and problem:**  
 Password-only authentication is vulnerable to phishing, credential theft, and account takeover. Regulatory requirements and security best practices mandate multi-factor authentication (MFA), but enabling it requires balancing security with user experience.
 
 **Solution:**  
@@ -285,9 +285,9 @@ Implement Microsoft Entra Conditional Access policies to require MFA for [!INCLU
 **Critical note:**  
 Introducing new CA policies prompts users to reauthenticate. Plan changes during maintenance windows and communicate clearly to minimize disruption. Update background job credentials and service accounts before enforcement.
 
-### How do I implement separation of duties for financial transactions?
+### Implement separation of duties for financial transactions
 
-**Context and Problem:**  
+**Context and problem:**  
 A single user with unrestricted access can create fraudulent transactions, approve their own payments, or modify critical master data without oversight. Regulatory frameworks (SOX, internal controls) require separation of duties to prevent fraud and errors.
 
 **Solution:**  
@@ -349,9 +349,9 @@ Start with high-risk, high-value transactions only. Expand separation of duties 
 
 ## Developer Scenarios
 
-### How do I secure API calls from my [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to external services?
+### Secure API calls from my [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to external services
 
-**Context and Problem:**  
+**Context and problem:**  
 Your extension needs to call external APIs (payment gateways, shipping providers, tax services) and requires credentials or API keys. Hardcoding secrets in code or storing them in plain text creates severe security vulnerabilities.
 
 **Solution:**  
@@ -419,9 +419,9 @@ Use Azure Key Vault for secret storage, accessed via secure authentication patte
 - Cost: Key Vault operations are metered (typically <$1/month)
 - Error handling: Need robust retry logic for Key Vault unavailability
 
-### How do I secure inter-service communication using service tags?
+### Secure inter-service communication using service tags
 
-**Context and Problem:**  
+**Context and problem:**  
 Your AppSource app or PTE calls external Azure services (SQL Database, Cosmos DB, custom APIs). You want to restrict these services to only accept traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], preventing unauthorized access from other sources.
 
 **Solution:**  
@@ -484,9 +484,9 @@ Service tags represent ALL [!INCLUDE[prod_short](../developer/includes/prod_shor
 
 ## Auditor Scenarios
 
-### How do I verify that appropriate security controls are in place?
+### Verify that appropriate security controls are in place
 
-**Context and Problem:**  
+**Context and problem:**  
 As an auditor (internal or external), you need to verify that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployments meet security standards, compliance requirements, and internal policies. Manual verification is time-consuming and incomplete.
 
 **Solution:**  
@@ -494,7 +494,7 @@ Use a checklist-based approach combining automated queries and manual verificati
 
 **Guidance:**
 
-**Authentication Controls Verification:**
+**Authentication controls verification:**
 
 1. Confirm MFA is enforced:
    - Review Microsoft Entra Conditional Access policies
@@ -507,7 +507,7 @@ Use a checklist-based approach combining automated queries and manual verificati
    - Confirm Conditional Access blocks legacy auth protocols
    - Verify no app passwords are enabled
 
-**Authorization Controls Verification:**
+**Authorization controls verification:**
 
 1. Review separation of duties:
    - Export user permission sets
@@ -521,7 +521,7 @@ Use a checklist-based approach combining automated queries and manual verificati
    - Check if PIM is used for admin access (time-bound)
    - Review admin action logs
 
-**Data Protection Verification:**
+**Data protection verification:**
 
 1. Confirm encryption at rest:
    - Verify TDE is enabled on database (online: automatic; on-prem: check SQL Server)
@@ -533,7 +533,7 @@ Use a checklist-based approach combining automated queries and manual verificati
    - Check certificate validity and strength
    - Review network service tag configurations
 
-**Monitoring and Detection:**
+**Monitoring and detection:**
 
 1. Verify logging is enabled:
    - Confirm Microsoft Entra sign-in logs retention (90+ days)
@@ -546,7 +546,7 @@ Use a checklist-based approach combining automated queries and manual verificati
    - Confirm contact procedures are documented
    - Review past security incident reports
 
-**Compliance Artifacts:**
+**Compliance artifacts:**
 
 1. Collect evidence:
    - Export Conditional Access policies (JSON)
@@ -580,9 +580,9 @@ Use a checklist-based approach combining automated queries and manual verificati
 - Privileged access review: Monthly
 - Automated control testing: Continuous (where possible)
 
-### How do I track and report on data access patterns?
+### Track and report on data access patterns
 
-**Context and Problem:**  
+**Context and problem:**  
 For compliance and security investigations, you need to understand who accessed what data, when, and from where. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't enable comprehensive data access logging by default.
 
 **Solution:**  
