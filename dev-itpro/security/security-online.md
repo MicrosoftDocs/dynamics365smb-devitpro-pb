@@ -21,7 +21,7 @@ This section helps you understand and improve the security of your [!INCLUDE[pro
    > [!NOTE]
    > Introducing new CA policies prompts users to reauthenticate; plan such changes to minimize disruption (for example, inform users, update background job credentials if needed).
 
-- Always require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] sign-in. We recommend using modern authentication options (such as Authenticator apps or FIDO2 keys) and disabling basic auth methods. Learn more in [Setting up Multifactor Authentication (MFA) for Business Central](multifactor-authentication.md).
+- Always require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] sign-in. We recommend using modern authentication options (such as Authenticator apps or FIDO2 keys) and disabling basic auth methods. Learn more in [Setting up Multifactor Authentication (MFA)l](multifactor-authentication.md).
 - Access can be controlled per [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment for internal users, delegated administrators, and multitenant applications. Learn more in [Manage Access to Environments](../administration/tenant-admin-center-manage-access.md).
 
 ### Monitor sign-in attempts to detect threats
@@ -30,7 +30,7 @@ Admins can monitor failed sign-in attempts to [!INCLUDE[prod_short](../developer
 
 ## Privileged access
 
-Consider using Microsoft Entra ID Privileged Identity Management (PIM) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators. PIM ensures that high-privilege roles (like Global Admin or Dynamics 365 Business Central Administrator) are only activated when needed, reducing the risk of always-on admin accounts. This incorporation emphasizes best practice for cloud admins: don't leave admin privileges permanent – require on-demand activation. Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure).
+Consider using Microsoft Entra ID Privileged Identity Management (PIM) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators. PIM ensures that high-privilege roles (like Global Admin or Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administrator) are only activated when needed, reducing the risk of always-on admin accounts. This incorporation emphasizes best practice for cloud admins: don't leave admin privileges permanent – require on-demand activation. Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure).
 
 In addition to using PIM, physical device security is crucial for administrator access.
 
@@ -54,13 +54,13 @@ Data belonging to a single tenant is stored in an isolated database and is never
 
 We recommend that you use encrypted network protocols to connect to the Power BI server and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services. Learn more in the following articles:
 
-[Connect to Business Central with Power BI](/power-bi/service-connect-to-microsoft-dynamics-nav) 
+[Connect to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Power BI](/power-bi/service-connect-to-microsoft-dynamics-nav) 
 
-[Using Security Certificates with Business Central on-premises](../deployment/implement-security-certificates-production-environment.md) 
+[Using Security Certificates with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises](../deployment/implement-security-certificates-production-environment.md) 
 
 ## Customer Lockbox
 
-Most of the operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in rare occasions that require access to customer data. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
+Most of the operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in rare occasions that require access to customer data. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. Customer Lockbox approvals expire after 8 hours, so any needed support access beyond that would require a new request.
 
 Customer Lockbox for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is administered in the Power Platform Admin Center and requires the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to be [linked to a Power Platform environment](../administration/tenant-admin-center-environments.md#linked-power-platform-environment). Learn more about administering Customer Lockbox in the Power Platform Admin Center [here](/power-platform/admin/about-lockbox). If the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is linked to a Power Platform for which Lockbox is enabled, Lockbox is also automatically enabled for the linked [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. Lockbox requests for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can only be approved or rejected in the Power Platform Admin Center by users with at least the [Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) role.
 
@@ -88,6 +88,10 @@ By default, audit logs are kept for 180 days or longer, if your organization pur
 Admins can search [!INCLUDE[prod_short](../developer/includes/prod_short.md)] audit events in the Microsoft Purview portal just as they would for Exchange or SharePoint audit data. You can also use PowerShell or the Graph API (Management Activity API) to retrieve and filter these logs programmatically for analysis.
 
 Learn more in [Auditing in Microsoft Purview](../auditing/audit-events-in-purview.md)
+
+## Per-environment access restrictions
+
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] allows environment-specific access control for partners. An internal administrator can configure an allowlist of external Microsoft Entra tenant IDs (such as partners or ISVs) that are permitted to access a given environment (via Delegated Admin or OAuth apps). This practice adds an extra layer on top of tenant-wide delegation (GDAP) and app consent – if an environment is restricted, only the specified partner tenants can gain access with their accounts or apps. You can configure up to 10 allowed tenants per environment in the Admin Center. Learn more in [Manage access](../administration/tenant-admin-center-manage-access.md).
 
 ## Related information  
 
