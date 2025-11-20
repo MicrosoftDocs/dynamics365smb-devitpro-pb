@@ -77,9 +77,9 @@ Understanding the following key concepts helps you work effectively with AI Play
 
 Before you can use the AI Playground Agent, ensure that you have the following prerequisites in place:
 
-- - Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
+- Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 - Appropriate permissions to access and use the AI Playground Agent in [!INCLUDE [prod_short](../includes/prod_short.md)].
-- A sandbox environment for testing and experimentation (can include customer data such as sandbox copies of production data)
+- A sandbox environment for testing and experimentation (can include customer data such as sandbox copies of production data).
 - Set up the [!INCLUDE [prod_short](../includes/prod_short.md)] environment for billing agent capabilities in the [!INCLUDE [prod_short](../includes/prod_short.md)] Admin Center.  
 Agents use Microsoft Copilot Studio messages when activated, which your company is charged for. Learn more in [Manage consumption-based billing](../administration/tenant-admin-center-manage-consumption-billing.md).
 

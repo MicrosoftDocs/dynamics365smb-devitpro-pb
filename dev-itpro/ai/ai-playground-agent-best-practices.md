@@ -29,7 +29,7 @@ Effective agent instructions are specific, actionable, and contextual:
 **Good example:**
 
 ```text
-You're a customer service agent for a Business Central implementation. 
+You're a customer service agent for a [!INCLUDE [prod_short](../includes/prod_short.md)] implementation. 
 When users ask about customer information, search the Customer table and provide:
 - Customer name and number
 - Contact details (phone, email)
@@ -169,7 +169,7 @@ Learn more in [Set up AI Playground Agent permissions and profiles (preview)](ai
 ### AL development considerations
 
 - Plan how to implement agent capabilities in AL code
-- Consider integration with existing Business Central features
+- Consider integration with existing [!INCLUDE [prod_short](../includes/prod_short.md)] features
 - Design for scalability and performance requirements
 - Plan testing strategies for production code
 <!-- - Consider the upcoming agent development SDK for packaging agents as deployable apps -->

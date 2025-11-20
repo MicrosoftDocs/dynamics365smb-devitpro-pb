@@ -100,9 +100,9 @@ Check customer credit when creating sales orders. Stop if over limit.
 
 ### Community-driven best practices
 
-The Business Central community maintains repositories of agent instruction patterns, examples, and best practices. These resources can be used to ground AI-generated instruction improvements:
+The [!INCLUDE [prod_short](../includes/prod_short.md)] community maintains repositories of agent instruction patterns, examples, and best practices. These resources can be used to ground AI-generated instruction improvements:
 
-- Navigation patterns for common Business Central pages
+- Navigation patterns for common [!INCLUDE [prod_short](../includes/prod_short.md)] pages
 - Tool usage examples for standard operations
 - Error handling and validation patterns
 - User intervention scenarios
@@ -245,7 +245,7 @@ Monitor the agent's behavior through the timeline view in the playground. Look f
 
 ### Where can I find example instructions and patterns?
 
-The Business Central community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance.
+The [!INCLUDE [prod_short](../includes/prod_short.md)] community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance.
 
 ### Should I write different instructions for different environments?
 
