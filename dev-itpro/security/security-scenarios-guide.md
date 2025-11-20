@@ -22,30 +22,30 @@ Partners managing multiple customers through GDAP (Granular Delegated Admin Priv
 **Solution:**  
 Implement time-bound privileged access using Microsoft Entra ID Privileged Identity Management (PIM) combined with granular delegated admin privileges (GDAP) group-based access control.
 
-Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure) and [GDAP introduction](/partner-center/gdap-introduction).
+Learn more in [Microsoft Entra Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-configure) and [Granular delegated admin privileges](/partner-center/gdap-introduction).
 
 **Guidance:**
 
 1. Set up GDAP with groups:
-   - In your partner's Microsoft Entra ID tenant, create one security group per customer you have a GDAP relationship with (for example, `GDAP-CustomerA-Admins`, `GDAP-CustomerB-Admins`). Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
-   - Don't directly assign consultants to these groups permanently.
-   - Establish the GDAP relationship with each customer, linking the relevant security group to the appropriate Azure AD roles. Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
+   1. In your partner's Microsoft Entra ID tenant, create one security group per customer you have a GDAP relationship with (for example, `GDAP-CustomerA-Admins`, `GDAP-CustomerB-Admins`). Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
 
-   Learn more [Granular delegated admin privileges](/partner-center/customers/gdap-introduction)
+      Don't directly assign consultants to these groups permanently.
+   - Establish the GDAP relationship with each customer, linking the relevant security group to the appropriate Microsoft Entra roles. Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
 
 1. Configure PIM for time-bound access:
-   - Enable Microsoft Entra ID Privileged Identity Management (requires Microsoft Entra ID P2 or Microsoft Entra ID Governance license)
-   - Make the GDAP customer groups eligible for activation in PIM rather than permanently assigned
-   - Configure activation requirements (for example, justification, approval workflow, maximum duration)
-   - Set appropriate activation duration limits (for example, 4-8 hours)
 
-   Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure)
+   1. Enable Microsoft Entra ID Privileged Identity Management (requires Microsoft Entra ID P2 or Microsoft Entra ID Governance license). Learn more in [Start using Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-getting-started)
+   1. Make the GDAP customer groups eligible for activation in PIM rather than permanently assigned. Learn more in [Assign eligibility for a group in Privileged Identity Management](/entra/id-governance/privileged-identity-management/groups-assign-member-owner). 
+   1. Configure activation requirements (for example, justification, approval workflow, maximum duration)
+   1. Set appropriate activation duration limits (for example, 4-8 hours)
 
-1. Consultant workflow:
-   - When a consultant needs to work on a specific customer, they request activation of the relevant customer group in PIM
-   - They provide business justification (for example, ticket number, task description)
-   - Access is granted for the specified time window only
-   - Access automatically expires after the configured duration
+**Consultant workflow:**
+Here's the workflow for consultants when PIM is configured:
+
+- When a consultant needs to work on a specific customer, they request activation of the relevant customer group in PIM
+- They provide business justification (for example, ticket number, task description)
+- Access is granted for the specified time window only
+- Access automatically expires after the configured duration
 
 **Benefits:**
 
@@ -57,13 +57,10 @@ Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/i
 
 **Trade-offs:**
 
-- Licensing cost: Requires Microsoft Entra ID P2 or Governance licenses (typically $6-9 per user/month)
+- Licensing cost: Requires Microsoft Entra ID P2 or Governance licenses
 - Initial setup complexity: Requires configuring PIM and GDAP groups for each customer
 - User friction: Consultants must request access before working, adding 1-5 minutes overhead
-- Administrative overhead: May require approval workflows and monitoring
-
-**ROI consideration:**
-Partners can absorb licensing costs and position this as a premium security offering. The cost of a single security breach far exceeds the licensing investment.
+- Administrative overhead: Might require approval workflows and monitoring
 
 ### Secure API access for automation tools I build for customers
 
@@ -79,21 +76,23 @@ Learn more in [Business Central Administration Center API](../administration/adm
 
 **If running in Azure (recommended):**
 
-1. Deploy your automation as an Azure resource (Function App, Logic App, or Azure Container Instance)
-1. Enable system-assigned or user-assigned managed identity on the Azure resource
-1. Register an app in your partner's Microsoft Entra ID
-1. Configure Federated Identity Credential on the app registration, linking it to the Azure resource's managed identity
-1. Authorize the app in customer tenants via GDAP or direct app authorization
-1. Your code acquires tokens automatically using the managed identity—no secrets to manage
+1. Deploy your automation as an Azure resource (Function App, Logic App, or Azure Container Instance). Learn more in [Azure Functions](/azure/azure-functions/functions-overview), [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), or [Azure Container Instances](/azure/container-instances/container-instances-overview).
+1. Enable system-assigned or user-assigned managed identity on the Azure resource. Learn more in [How to manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities).
+1. Register an app in your partner's Microsoft Entra ID. Learn more in [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
+1. Configure Federated Identity Credential on the app registration, linking it to the Azure resource's managed identity. Learn more in [Configure an application to trust a managed identity](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity) and [Workload identity federation](/entra/workload-id/workload-identity-federation).
+1. Authorize the app in customer tenants via GDAP or direct app authorization. Learn more in [Manage Access to Environments](../administration/tenant-admin-center-manage-access.md).
+
+Your code acquires tokens automatically using the managed identity—no secrets to manage. Learn more in [Access token request with a federated credential](/entra/identity-platform/v2-oauth2-client-creds-grant-flow#third-case-access-token-request-with-a-federated-credential).
 
 **If not running in Azure:**
 
-1. Create a dedicated app registration per integration/tool
-1. Use certificate-based authentication instead of client secrets
-1. Store certificates securely in Azure Key Vault or hardware security modules
-1. Implement certificate rotation procedures (every 12 months minimum)
-1. Use separate credentials per customer environment when possible
-1. Monitor API usage through telemetry
+1. Create a dedicated app registration per integration/tool. Learn more in [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
+1. Use certificate-based authentication instead of client secrets. Learn more in [Microsoft identity platform application authentication certificate credentials](/entra/identity-platform/certificate-credentials).
+1. Store certificates securely in Azure Key Vault or hardware security modules. Learn more in [About Azure Key Vault certificates](/azure/key-vault/certificates/about-certificates).
+1. Implement certificate rotation procedures (every 12 months minimum). Learn more in [Automate the rotation of a secret for resources that have two sets of authentication credentials](/azure/key-vault/secrets/tutorial-rotation-dual).
+
+   Use separate credentials per customer environment when possible.
+1. Monitor API usage through telemetry. Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
 **Benefits:**
 
@@ -106,7 +105,7 @@ Learn more in [Business Central Administration Center API](../administration/adm
 **Trade-offs:**
 
 - Azure dependency for optimal security (managed identities)
-- Complexity in multi-tenant scenarios
+- Complexity in multitenant scenarios
 - Learning curve for FIC and managed identity concepts
 - Cost of Azure resources (minimal—Function Apps can run on consumption plan)
 
@@ -137,12 +136,12 @@ Learn more in [Use Azure security service tags](security-service-tags.md) and [A
 
 1. Create an Azure Function as a proxy in the same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 1. Restrict Azure Function access using service tag-based access restriction: allow `Dynamics365BusinessCentral`
-1. Create a private endpoint or VNet integration from Azure Function to Storage Account
+1. Create a private endpoint or virtual network integration from Azure Function to Storage Account
 1. Configure your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to call the Azure Function instead of Storage directly
 1. Azure Function proxies requests to Storage Account
 
 **Scenario C: Destination supports IP allowlisting only**  
-(On-premises systems, third-party SaaS, custom APIs)
+(On-premises systems, non-Microsoft SaaS, custom APIs)
 
 1. Retrieve current [!INCLUDE[prod_short](../developer/includes/prod_short.md)] IP ranges:
 
@@ -167,13 +166,13 @@ Learn more in [Use Azure security service tags](security-service-tags.md) and [A
 
 - No per-environment granularity: Service tag includes all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments globally
 - Maintenance overhead: IP ranges change over time (though infrequently)
-- Proxy complexity: Storage Account scenario requires additional Azure Function
+- Proxy complexity: Storage Account scenario requires extra Azure Function
 - Regional limitations: Must be in supported Azure regions for some scenarios
 
-### Monitor and respond to suspicious login attempts
+### Monitor and respond to suspicious sign-in attempts
 
 **Context and problem:**
-Attackers may attempt credential stuffing, password spraying, or brute-force attacks against your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users. Integration accounts might use incorrect credentials. You need visibility into authentication failures to detect threats early and respond appropriately.
+Attackers might attempt credential stuffing, password spraying, or brute-force attacks against your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users. Integration accounts might use incorrect credentials. You need visibility into authentication failures to detect threats early and respond appropriately.
 
 **Solution:**  
 Implement comprehensive monitoring of authentication events using Microsoft Entra sign-in logs and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry.
@@ -184,10 +183,10 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 
 1. Enable Microsoft Entra ID sign-in logging:
    - Navigate to Microsoft Entra admin center → Monitoring → Sign-in logs
-   - Configure diagnostic settings to route logs to:
-     - Azure Monitor Log Analytics workspace (recommended for querying)
-     - Azure Storage (for long-term retention)
-     - Azure Event Hub (for SIEM integration)
+   - [Configure diagnostic settings](/entra/identity/monitoring-health/howto-configure-diagnostic-settings) to route logs to:
+     - [Azure Monitor Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) (recommended for querying)
+     - [Azure Storage](/azure/storage/common/storage-account-overview) (for long-term retention)
+     - [Azure Event Hubs](/azure/event-hubs/event-hubs-about) (for Security Information and Event Management (SIEM) integration)
    - Retention: Set to at least 90 days for security investigations
 
 1. Create alert rules for suspicious patterns:
