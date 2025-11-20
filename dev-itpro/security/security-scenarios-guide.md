@@ -32,12 +32,12 @@ Implement time-bound privileged access using Microsoft Entra ID Privileged Ident
 1. Configure PIM for time-bound access:
    - Enable Microsoft Entra ID Privileged Identity Management (requires Microsoft Entra ID P2 or Microsoft Entra ID Governance license)
    - Make the GDAP customer groups eligible for activation in PIM rather than permanently assigned
-   - Configure activation requirements (e.g., justification, approval workflow, maximum duration)
+   - Configure activation requirements (for example, justification, approval workflow, maximum duration)
    - Set appropriate activation duration limits (for example, 4-8 hours)
 
 1. Consultant workflow:
    - When a consultant needs to work on a specific customer, they request activation of the relevant customer group in PIM
-   - They provide business justification (e.g., ticket number, task description)
+   - They provide business justification (for example, ticket number, task description)
    - Access is granted for the specified time window only
    - Access automatically expires after the configured duration
 
@@ -221,7 +221,7 @@ Implement comprehensive monitoring of authentication events using Microsoft Entr
 - Alert fatigue: Too many alerts can desensitize teams
 - Cost: Log Analytics charges based on data ingestion and retention
 - Expertise required: Creating effective KQL queries requires learning curve
-- False positives: Legitimate scenarios (e.g., VPN users) may trigger alerts
+- False positives: Legitimate scenarios (for example, VPN users) may trigger alerts
 
 ### Enforce multi-factor authentication for all users
 
@@ -246,7 +246,7 @@ Implement Microsoft Entra Conditional Access policies to require MFA for [!INCLU
      - Cloud apps: Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
    - Access controls:
      - Grant access, but require multi-factor authentication
-   - Session controls: Consider sign-in frequency (e.g., require re-auth every 7 days)
+   - Session controls: Consider sign-in frequency (for example, require re-auth every 7 days)
 
 1. Enable modern authentication methods:
    - Navigate to Authentication methods policies
@@ -296,7 +296,7 @@ Implement [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s Approval
 **Guidance:**
 
 1. Identify sensitive operations requiring approval:
-   - Payment journals exceeding threshold (e.g., >$10,000)
+   - Payment journals exceeding threshold (for example, >$10,000)
    - Vendor master data changes (bank account modifications)
    - User permission changes or role assignments
    - Fixed asset disposals
@@ -306,7 +306,7 @@ Implement [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s Approval
 1. Configure Approval Workflows:
    - Navigate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] → Workflows
    - Create approval workflow for each sensitive operation type
-   - Define approval hierarchy (e.g., manager approval, finance director for large amounts)
+   - Define approval hierarchy (for example, manager approval, finance director for large amounts)
    - Set threshold amounts where applicable
    - Configure notifications (email, in-app)
    - Enable delegation for approver absence scenarios
@@ -574,7 +574,7 @@ Use a checklist-based approach combining automated queries and manual verificati
 - Point-in-time: Snapshot of controls, not continuous assurance
 
 **Audit frequency recommendation:**
- 
+
 - External compliance audits: Annual (SOC 2, ISO 27001)
 - Internal security reviews: Quarterly
 - Privileged access review: Monthly
