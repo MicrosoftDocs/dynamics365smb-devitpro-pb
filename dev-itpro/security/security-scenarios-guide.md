@@ -181,19 +181,25 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 
 **Guidance:**
 
-1. Enable Microsoft Entra ID sign-in logging:
-   - Navigate to Microsoft Entra admin center → Monitoring → Sign-in logs
-   - [Configure diagnostic settings](/entra/identity/monitoring-health/howto-configure-diagnostic-settings) to route logs to:
-     - [Azure Monitor Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) (recommended for querying)
-     - [Azure Storage](/azure/storage/common/storage-account-overview) (for long-term retention)
-     - [Azure Event Hubs](/azure/event-hubs/event-hubs-about) (for Security Information and Event Management (SIEM) integration)
-   - Retention: Set to at least 90 days for security investigations
+1. Set up Microsoft Entra ID sign-in logging:
+   1. In [Microsoft Entra admin center](https://entra.microsodt.com), open the Sign-in Logs. Learn more in [View logs through the Microsoft Entra admin center](/entra/identity/monitoring-health/howto-access-activity-logs?tabs=microsoft-entra-activity-logs%2Carchive-activity-logs-to-a-storage-account#view-logs-through-the-microsoft-entra-admin-center).
+   1. [Configure diagnostic settings](/entra/identity/monitoring-health/howto-configure-diagnostic-settings) to route logs to:
+
+      - [Azure Monitor Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) (recommended for querying)
+      - [Azure Storage](/azure/storage/common/storage-account-overview) (for long-term retention)
+      - [Azure Event Hubs](/azure/event-hubs/event-hubs-about) (for Security Information and Event Management (SIEM) integration)
+      - Retention: Set to at least 90 days for security investigations
+
+        Learn more in [Configure diagnostic settings](/entra/identity/monitoring-health/howto-configure-diagnostic-settings).
 
 1. Create alert rules for suspicious patterns:
+
    - Multiple failed sign-ins: Alert when user has >5 failures in 10 minutes
    - Impossible travel: Alert when sign-ins occur from geographically distant locations within short timeframes
    - Unfamiliar locations: Alert when sign-ins come from countries where you don't operate
    - Disabled accounts: Alert on any authentication attempt to disabled accounts
+
+   Learn more in [Create alert rules](/azure/azure-monitor/alerts/alerts-create-new-alert-rule).
 
    Sample KQL query for Log Analytics:
 
@@ -207,10 +213,8 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 
 1. Monitor [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry:
 
-   - Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry to Azure Application Insights
-   - Track authorization failures and permission errors
-   - Monitor API authentication failures for service accounts
-   - Set up alerts for anomalous API usage patterns
+   1. Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry to Azure Application Insights. Learn more in [Turn environment telemetry on or off](../administration/telemetry-enable-application-insights.md).
+   1. Monitor authorization failures and permission errors and API authentication failures for service accounts Learn more in [Authorization trace telemetry](../administration/telemetry-authorization-trace.md) [Permission errors trace telemetry](../administration/.telemetry-permission-error-trace.md), and [Web Services telemetry](../administration/telemetry-webservices-trace.md).
 
 1. Establish response procedures:
 
@@ -234,10 +238,10 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 - Expertise required: Creating effective KQL queries requires learning curve
 - False positives: Legitimate scenarios (for example, VPN users) may trigger alerts
 
-### Enforce multi-factor authentication for all users
+### Enforce multifactor authentication for all users
 
-**Context and problem:**  
-Password-only authentication is vulnerable to phishing, credential theft, and account takeover. Regulatory requirements and security best practices mandate multi-factor authentication (MFA), but enabling it requires balancing security with user experience.
+**Context and problem:** 
+Password-only authentication is vulnerable to phishing, credential theft, and account takeover. Regulatory requirements and security best practices mandate multifactor authentication (MFA), but enabling it requires balancing security with user experience.
 
 **Solution:**  
 Implement Microsoft Entra Conditional Access policies to require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] access with modern authentication methods.
@@ -252,8 +256,9 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
    - Plan migration to Microsoft Authenticator app or FIDO2 security keys
 
 1. Configure Conditional Access policy:
-   - Navigate to Microsoft Entra admin center → Protection → Conditional Access
-   - Create new policy: "Require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
+
+   1. In Microsoft Entra admin center, navigate to Protection > Conditional Access
+   1. Create new policy, for exampme "Require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]". Learn more in [Create a Conditional Access policy](/entra/identity/conditional-access/how-to-policy-mfa-admin-portals).
    - Assignments:
      - Users: Include "All users" or specific [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user groups
      - Cloud apps: Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
