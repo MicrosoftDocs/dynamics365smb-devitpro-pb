@@ -119,7 +119,7 @@ SQL Server handles record-level security filters just like other filters that th
 
 ### Built-in data audit fields
 
-Every Business Central table has built-in audit fields: Created On/Created By and Last Modified On/Modified By. These fields capture who created a record and when, and who last modified it. These fields provide an audit trail for changes to any data.
+Every [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table has built-in audit fields: Created On/Created By and Last Modified On/Modified By. These fields capture who created a record and when, and who last modified it. These fields provide an audit trail for changes to any data.
 
 Learn more in [Data audit fields](../developer/devenv-table-system-fields.md#audit).
 
@@ -127,5 +127,6 @@ Learn more in [Data audit fields](../developer/devenv-table-system-fields.md#aud
 
 ## Related information  
 
+[Customer-managed encryption key](security-online.md#customer-managed-encryption-key)  
 [Users and credential types](../administration/users-credential-types.md)  
 [Security considerations](Security-Considerations.md)  

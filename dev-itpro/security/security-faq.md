@@ -34,7 +34,7 @@ Here you can learn about the Post Incident Review process: [Microsoft security i
 
 ## How can I quickly review changes to data without enabling the change log? 
 
-You can use Business Central’s analysis mode on any list page. Add the system fields (Created/Modified date and user) to the list (they can be hidden), then turn on analysis mode. With these fields present, the analysis mode (and Copilot) can help summarize recent changes to the data in that list&mdash;giving you a lightweight audit view.
+You can use [!INCLUDE[prod_short](../developer/includes/prod_short.md)]’s analysis mode on any list page. Add the system fields (Created/Modified date and user) to the list (they can be hidden), then turn on analysis mode. With these fields present, the analysis mode (and Copilot) can help summarize recent changes to the data in that list&mdash;giving you a lightweight audit view.
 
 Learn more in [Analyze list page and query data using data analysis mode](/dynamics365/business-central/analysis-mode).
 
