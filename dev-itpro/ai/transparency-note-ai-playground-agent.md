@@ -2,7 +2,7 @@
 title: Transparency Note Business Central Agent Playground
 author: pborring
 description: Learn how the Business Central Agent Playground empowers partners to prototype AI-powered agents, automate workflows, and enhance productivity responsibly.
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.reviewer: solsen
 ms.topic: faq
 ms.collection: bap-ai-copilot
@@ -103,8 +103,8 @@ Business Central users can maintain full transparency and control over the chang
     - Receive notifications on the role center that come from the agent when it requires help or when the process demands human review. 
     - Get a better understanding of the specific task context and history (“timeline” view), including key steps involved in it.
     - Get a detailed review of each entity created by the agent that surfaces all changes and suggestions made by the agent within a specific task. This behavior allows users to review and adjust changes, and then sign off on proceeding with the task.
-    - Get an overview of the agent's key performance indicators (KPIs) that summarize the impact of the agent's work.
-
+    - Get an overview of the agent's key performance indicators (KPIs) that summarize the impact of the agent's work.  
+    
     Make sure you attend to the notifications raised by the agent to review and approve its work.
 
 - All actions done by the agent, including creating and modifying records and calling actions, carry the agent's user ID. This user ID appears in the same places and in the same way as it does with other users, such as in list views, history, posted documents, notifications, and more.
