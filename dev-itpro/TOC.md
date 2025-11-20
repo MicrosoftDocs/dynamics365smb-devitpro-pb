@@ -1417,6 +1417,7 @@
 
 ## Security
 ### [Security overview](security/security-and-protection.md)
+### [Security scenarios guide](security/security-scenarios-guide.md)
 ### [Tips for business users](security/security-users.md)
 ### [Application](security/security-application.md)
 ### [Setting up Multifactor Authentication (MFA)](security/multifactor-authentication.md)
