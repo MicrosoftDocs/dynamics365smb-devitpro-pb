@@ -22,6 +22,8 @@ Partners managing multiple customers through GDAP (Granular Delegated Admin Priv
 **Solution:**  
 Implement time-bound privileged access using Microsoft Entra ID Privileged Identity Management (PIM) combined with GDAP group-based access control.
 
+Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure) and [GDAP introduction](/partner-center/gdap-introduction).
+
 **Guidance:**
 
 1. Set up GDAP with groups:
@@ -67,6 +69,8 @@ Partners often build automation tools, integrations, or monitoring solutions tha
 **Solution:**  
 Use managed identities with Federated Identity Credentials (FIC) when running in Azure, or implement secure credential management for non-Azure scenarios.
 
+Learn more in [Business Central Administration Center API](../administration/administration-center-api.md), [Automation APIs](../administration/itpro-introduction-to-automation-apis.md), and [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview).
+
 **Guidance:**
 
 **If running in Azure (recommended):**
@@ -111,6 +115,8 @@ Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (Ap
 
 **Solution:**  
 Use Azure service tags and network access controls to create allowlists based on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s IP ranges.
+
+Learn more in [Use Azure security service tags](security-service-tags.md) and [Azure service tags overview](/azure/virtual-network/service-tags-overview).
 
 **Guidance:**
 
@@ -167,6 +173,8 @@ Attackers may attempt credential stuffing, password spraying, or brute-force att
 
 **Solution:**  
 Implement comprehensive monitoring of authentication events using Microsoft Entra sign-in logs and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry.
+
+Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md) and [Sign-in logs in Microsoft Entra ID](/entra/identity/monitoring-health/concept-sign-ins).
 
 **Guidance:**
 
@@ -231,6 +239,8 @@ Password-only authentication is vulnerable to phishing, credential theft, and ac
 **Solution:**  
 Implement Microsoft Entra Conditional Access policies to require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] access with modern authentication methods.
 
+Learn more in [Setting up Multifactor Authentication for Business Central](multifactor-authentication.md), [Conditional Access overview](/entra/identity/conditional-access/overview), and [Authentication and Credential Types](../administration/users-credential-types.md).
+
 **Guidance:**
 
 1. Assess current authentication methods:
@@ -292,6 +302,8 @@ A single user with unrestricted access can create fraudulent transactions, appro
 
 **Solution:**  
 Implement [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s Approval Workflows combined with role-based permissions to enforce multi-person authorization for sensitive operations.
+
+Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions) and [Use Approval Workflows](/dynamics365/business-central/across-how-use-approval-workflows).
 
 **Guidance:**
 
@@ -356,6 +368,8 @@ Your extension needs to call external APIs (payment gateways, shipping providers
 
 **Solution:**  
 Use Azure Key Vault for secret storage, accessed via secure authentication patterns from AL code.
+
+Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and [HttpClient Data Type](../developer/methods-auto/httpclient/httpclient-data-type.md).
 
 **Guidance:**
 
@@ -482,6 +496,8 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 **Important limitation:**  
 Service tags represent ALL [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments globally. You cannot restrict to a single environment or region. For higher granularity, consider additional application-level authentication (API keys, OAuth).
 
+Learn more in [Use Azure security service tags](security-service-tags.md).
+
 ## Auditor Scenarios
 
 ### Verify that appropriate security controls are in place
@@ -491,6 +507,8 @@ As an auditor (internal or external), you need to verify that [!INCLUDE[prod_sho
 
 **Solution:**  
 Use a checklist-based approach combining automated queries and manual verification procedures.
+
+Learn more in [Security and Protection](security-and-protection.md), [Business Central Online Security](security-online.md), and [Microsoft Dynamics 365 Cloud Services Compliance](https://aka.ms/d365-compliance-list).
 
 **Guidance:**
 
@@ -521,6 +539,8 @@ Use a checklist-based approach combining automated queries and manual verificati
    - Check if PIM is used for admin access (time-bound)
    - Review admin action logs
 
+   Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+
 **Data protection verification:**
 
 1. Confirm encryption at rest:
@@ -528,10 +548,14 @@ Use a checklist-based approach combining automated queries and manual verificati
    - For on-prem: Confirm backup encryption enabled
    - Check for customer-managed key (CMK) if required by policy
 
+   Learn more in [Transparent Data Encryption](transparent-data-encryption.md) and [Data Encryption at Rest](security-online.md#data-isolation-and-encryption).
+
 1. Verify network encryption:
    - Confirm HTTPS/TLS 1.2+ for all client connections
    - Check certificate validity and strength
    - Review network service tag configurations
+
+   Learn more in [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).
 
 **Monitoring and detection:**
 
@@ -587,6 +611,8 @@ For compliance and security investigations, you need to understand who accessed 
 
 **Solution:**  
 Implement multi-layered audit logging using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Change Log, database auditing, and telemetry.
+
+Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes), [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md), and [Transparent Data Encryption](transparent-data-encryption.md).
 
 **Guidance:**
 
