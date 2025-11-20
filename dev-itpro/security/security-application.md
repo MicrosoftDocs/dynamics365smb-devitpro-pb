@@ -65,7 +65,7 @@ You can encrypt data on the Business Central server by generating new encryption
 
 The Microsoft Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software. SDL addresses security compliance requirements while reducing development cost. Learn more in [Security Development Lifecycle](https://www.microsoft.com/sdl).  
 
-## Auditing
+## Auditing data fields
 
 For a comprehensive audit trail of data changes, Business Central offers a change log feature. When the change log is enabled enabled for specific tables/fields, it records every insertion, modification, or deletion (including the old and new values, user, and timestamp).
 
@@ -75,6 +75,12 @@ Learn more about the change log in [Audit changes](/dynamics365/business-central
 
 > [!TIP]
 > Instead of the change log, you can use Business Central's analysis mode on any list page. Add the system fields (Created/Modified date and user) to the list (they can be hidden), then turn on analysis mode. With these fields present, the analysis mode (and Copilot) can help summarize recent changes to the data in that list&mdash;giving you a lightweight audit view.
+
+### Sensitive field monitoring with email alerts
+
+Admins can set up monitoring of specific fields in Business Central, letting you flag fields as sensitive. If these fields are changed, the system can send an email alert to designated recipients and emit telemetry about the change. For example, you might monitor the bank account number field on a vendor card. This way, any change triggers an immediate alert, helping you quickly catch potential fraud attempts.
+
+Learn more in [Monitor sensitive fields](/dynamics365/business-central/across-log-changes#monitor-sensitive-fields) and [Analyzing field monitoring telemetry](../administration/telemetry-field-monitoring-trace.md).
 
 ## Related information  
 

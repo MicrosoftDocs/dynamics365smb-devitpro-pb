@@ -16,31 +16,31 @@ This section helps you understand and improve the security of your [!INCLUDE[pro
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Microsoft Entra ID as the authentication method, which is automatically set up and managed for you.
 
-- It's possible to configure Microsoft Entra ID to allow or deny authentications to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only if certain extra conditions are met using Conditional Access to further improve security of your environments. Administrators can apply Microsoft Entra ID Conditional Access policies to enforce conditions like MFA on every sign in, restrict sign-ins to trusted locations or compliant devices, etc., for Business Central. (For example, you might apply the 'Require MFA for all users' policy template to Business Central.) Learn more in [Conditional Access](/entra/identity/conditional-access/overview).
+- It's possible to configure Microsoft Entra ID to allow or deny authentications to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only if certain extra conditions are met using Conditional Access to further improve security of your environments. Administrators can apply Microsoft Entra ID Conditional Access policies to enforce conditions like MFA on every sign in, restrict sign-ins to trusted locations or compliant devices, for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For example, you might apply the 'Require MFA for all users' policy template to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Learn more in [Conditional Access](/entra/identity/conditional-access/overview).
 
-    > [!NOTE]
-    > Introducing new CA policies will prompt users to reauthenticate; plan such changes to minimize disruption (for example, inform users, update background job credentials if needed).
+   > [!NOTE]
+   > Introducing new CA policies prompts users to reauthenticate; plan such changes to minimize disruption (for example, inform users, update background job credentials if needed).
 
-- Always require MFA for Business Central sign-in. We recommend using modern authentication options (such as Authenticator apps or FIDO2 keys) and disabling basic auth methods. Learn more in [Setting up Multifactor Authentication (MFA) for Business Central](multifactor-authentication.md).
+- Always require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] sign-in. We recommend using modern authentication options (such as Authenticator apps or FIDO2 keys) and disabling basic auth methods. Learn more in [Setting up Multifactor Authentication (MFA) for Business Central](multifactor-authentication.md).
 - Access can be controlled per [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment for internal users, delegated administrators, and multitenant applications. Learn more in [Manage Access to Environments](../administration/tenant-admin-center-manage-access.md).
 
 ### Monitor sign-in attempts to detect threats
 
-Admins can monitor failed sign-in attempts to Business Central through [Microsoft Entra sign-in logs](/entra/identity/conditional-access/troubleshoot-conditional-access#microsoft-entra-sign-in-events) or [[!INCLUDE[prod_short](../developer/includes/prod_short.md)] authorization trace telemetry](../administration/telemetry-authorization-trace.md). Frequent authentication failures might indicate an attacker trying to guess passwords or an integration using incorrect credentials, so active monitoring is important.
+Admins can monitor failed sign-in attempts to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] through [Microsoft Entra sign-in logs](/entra/identity/conditional-access/troubleshoot-conditional-access#microsoft-entra-sign-in-events) or [[!INCLUDE[prod_short](../developer/includes/prod_short.md)] authorization trace telemetry](../administration/telemetry-authorization-trace.md). Frequent authentication failures might indicate an attacker trying to guess passwords or an integration using incorrect credentials, so active monitoring is important.
 
 ## Privileged access
 
-Consider using Microsoft Entra ID Privileged Identity Management (PIM) for Business Central administrators. PIM ensures that high-privilege roles (like Global Admin or Dynamics 365 Admin) are only activated when needed, reducing the risk of always-on admin accounts. This incorporation emphasizes best practice for cloud admins: don't leave admin privileges permanent – require on-demand activation. Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure).
+Consider using Microsoft Entra ID Privileged Identity Management (PIM) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators. PIM ensures that high-privilege roles (like Global Admin or Dynamics 365 Business Central Administrator) are only activated when needed, reducing the risk of always-on admin accounts. This incorporation emphasizes best practice for cloud admins: don't leave admin privileges permanent – require on-demand activation. Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure).
 
 In addition to using PIM, physical device security is crucial for administrator access.
 
 ### Use secure admin devices
 
-Perform Business Central administration from a highly secure, isolated workstation. For example, have a dedicated PC (or Azure Virtual Desktop/Cloud PC) for admin use only, with hardened configuration (up-to-date OS, limited software, full disk encryption, and mandatory MFA). Avoid doing daily work or general browsing on the same machine used for privileged access.
+Perform [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administration from a highly secure, isolated workstation. For example, have a dedicated PC (or Azure Virtual Desktop/Cloud PC) for admin use only, with hardened configuration (up-to-date OS, limited software, full disk encryption, and mandatory MFA). Avoid doing daily work or general browsing on the same machine used for privileged access.
 
 ## Enforce separation of duties for sensitive operations
 
-In Business Central, use built-in features like [Approval Workflows](/dynamics365/business-central/across-set-up-workflows) to ensure critical transactions (like large payments, purchase orders, or journal postings) require approval by a second person. This practice reduces the risk of fraud or mistakes by a single user.
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], use built-in features like [Approval Workflows](/dynamics365/business-central/across-set-up-workflows) to ensure critical transactions (like large payments, purchase orders, or journal postings) require approval by a second person. This practice reduces the risk of fraud or mistakes by a single user.
 
 ## Data isolation and encryption
 
@@ -60,7 +60,7 @@ We recommend that you use encrypted network protocols to connect to the Power BI
 
 ## Customer Lockbox
 
-Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in rare occasions that require access to customer data. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
+Most of the operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in rare occasions that require access to customer data. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
 
 Customer Lockbox for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is administered in the Power Platform Admin Center and requires the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to be [linked to a Power Platform environment](../administration/tenant-admin-center-environments.md#linked-power-platform-environment). Learn more about administering Customer Lockbox in the Power Platform Admin Center [here](/power-platform/admin/about-lockbox). If the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is linked to a Power Platform for which Lockbox is enabled, Lockbox is also automatically enabled for the linked [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. Lockbox requests for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can only be approved or rejected in the Power Platform Admin Center by users with at least the [Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) role.
 
@@ -73,6 +73,21 @@ The customer-managed encryption key used to encrypt your customer data in [!INCL
 Sometimes a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is created from an environment that's encrypted with a customer-managed encryption key using a copy or restore operation. In this case, the newly created environment is encrypted using the Microsoft-managed encryption key. To encrypt the newly created environment using a customer-managed encryption key, link it to a Power Platform environment that has the desired customer-managed encryption key applied. 
 
 Similarly, bacpac files created during an environment export operation are encrypted differently. When you export an environment that's encrypted with a customer-managed encryption key, the resulting bacpac files in the storage account use the [encryption key applied to the storage account](/azure/storage/common/customer-managed-keys-overview) rather than the environment's encryption key.
+
+## Auditing administrative actions
+
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online automatically logs various administrative and high-level events to your Microsoft Purview audit log, such as:
+
+- Creating or deleting an environment
+- Installing an app extension
+- Changing a user’s permissions or settings
+- Changing tenant-level or system configurations
+
+By default, audit logs are kept for 180 days or longer, if your organization purchased extended retention.
+
+Admins can search [!INCLUDE[prod_short](../developer/includes/prod_short.md)] audit events in the Microsoft Purview portal just as they would for Exchange or SharePoint audit data. You can also use PowerShell or the Graph API (Management Activity API) to retrieve and filter these logs programmatically for analysis.
+
+Learn more in [Auditing in Microsoft Purview](../auditing/audit-events-in-purview.md)
 
 ## Related information  
 
