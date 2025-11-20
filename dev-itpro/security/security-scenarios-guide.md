@@ -20,13 +20,13 @@ This guide provides scenario-based security recommendations organized by persona
 Partners managing multiple customers through GDAP (Granular Delegated Admin Privileges) face a security risk when consultants have persistent, always-on administrative access to customer environments. A compromised consultant account could lead to unauthorized access across all customers. Compliance requirements and customer trust demand minimizing standing privileges.
 
 **Solution:**  
-Implement time-bound privileged access using Microsoft Entra ID Privileged Identity Management (PIM) combined with GDAP group-based access control.
+Implement time-bound privileged access using Microsoft Entra ID Privileged Identity Management (PIM) combined with granular delegated admin privileges (GDAP) group-based access control.
 
 Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure) and [GDAP introduction](/partner-center/gdap-introduction).
 
 **Guidance:**
 
-1. Set up granular delegated admin privileges (GDAP) with groups:
+1. Set up GDAP with groups:
    - In your partner's Microsoft Entra ID tenant, create one security group per customer you have a GDAP relationship with (for example, `GDAP-CustomerA-Admins`, `GDAP-CustomerB-Admins`). Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
    - Don't directly assign consultants to these groups permanently.
    - Establish the GDAP relationship with each customer, linking the relevant security group to the appropriate Azure AD roles. Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
