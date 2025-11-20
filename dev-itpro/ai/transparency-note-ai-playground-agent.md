@@ -11,7 +11,7 @@ ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
-# Transparency Note: Business Central Agent Playground
+# Transparency note: Business Central Agent Playground
 
 ## What is a Transparency Note?
 
@@ -38,55 +38,84 @@ This tool is intended for:
 Agents operate in Business Central using AI to identify and complete tasks based on their instructions and user configuration. An agent acts acts and interacts with the UI similar to a user, where what they can access can also be limited by Business Central’s same, extensive controls for security and role-tailoring.
 
 - Agent instructions  
-The agent gets high-level business instructions that define its purpose, outline the tasks it performs, and specify more considerations. These instructions are set in the agent code and aren't visible to users
-- Agent configuration
-The agent is available directly within Business Central. You can configure and activate the agent and specify the users who can use the agent. In the agent playground there is no support for specifying additional configuration properties beyond the agent instruction prompt, permission and user profile, and the general agent capabilities like language, locale and time zone.
-- Task execution and interaction
-The agent operates based on its instructions and user configuration. The instructions describe its purpose, tasks, and high-level considerations for how to perform the flow. These instructions are defined in the agent code and aren't visible to users. The agent uses AI to identify and carry out the steps needed to complete its task within the Business Central environment. 
-The agent interacts with the Business Central web client using the logical UI API. The agent can:  
-  Read data displayed on pages.
-  Access properties of UI elements, such as names, descriptions, fields, actions, and tooltips.
-  Combine this data with user-provided instructions.
-  Use AI and business knowledge to orchestrate the steps needed to complete each task.
+
+  The agent gets high-level business instructions that define its purpose, outline the tasks it performs, and specify more considerations. These instructions are set in the agent code and aren't visible to users
+
+- Agent configuration  
+
+  The agent is available directly within Business Central. You can configure and activate the agent and specify the users who can use the agent. In the agent playground there is no support for specifying additional configuration properties beyond the agent instruction prompt, permission and user profile, and the general agent capabilities like language, locale and time zone.
+
+- Task execution and interaction  
+
+  The agent operates based on its instructions and user configuration. The instructions describe its purpose, tasks, and high-level considerations for how to perform the flow. These instructions are defined in the agent code and aren't visible to users. The agent uses AI to identify and carry out the steps needed to complete its task within the Business Central environment.  
+  
+  The agent interacts with the Business Central web client using the logical UI API. The agent can:  
+  - Read data displayed on pages.
+  - Access properties of UI elements, such as names, descriptions, fields, actions, and tooltips.
+  - Combine this data with user-provided instructions.
+  - Use AI and business knowledge to orchestrate the steps needed to complete each task.
+  
 - Access and permissions  
-An agent runs as an independent [MB5.1]user in Business Central and is granted access only to the necessary parts of the product. It is configured with its own permission set and UI role (profile) that limits the parts of the product and UI elements (such as pages, fields, and actions) it can access.[QT6.1][PB6.2] It then runs with the intersection of the permissions given to the agent with the permissions of the user that approved the task - or the user that configured the agent, if task approval was not required
-- Transparency and change control
-The agent seeks user intervention in specific situations as instructed, such providing business review, approval for key operations, or requesting assistance for help.
-Business Central maintains full transparency and provides control over changes made by the agent. The agent brings humans in the loop when their attention is required by issuing in-product notifications that are displayed on the role center. For example, a notification occurs when approval is instructed for important changes.
-For each task performed by the agent, users get a detailed timeline that shows the key steps taken by the agent and human users, including the email conversation. Users can review this information and update the values and actions the agent suggested if needed. Business Central can also display the reasoning used by the agent and citations that led to a suggested value.
-- Troubleshooting agentscore part of exploring and prototyping agents in the agent playground is the ability to understand what steps the agent performed when running, which data is used at each step, and what AI generated. To help with this, the agent playground includes troubleshooting views
-A core part of exploring and prototyping agents in the agent playground is the ability to understand what steps the agent performed when running, which data is used at each step, and what AI generated. To help with this, the agent playground includes troubleshooting views
+
+  An agent runs as an independent user in Business Central and is granted access only to the necessary parts of the product. It is configured with its own permission set and UI role (profile) that limits the parts of the product and UI elements (such as pages, fields, and actions) it can access. It then runs with the intersection of the permissions given to the agent with the permissions of the user that approved the task - or the user that configured the agent, if task approval was not required.
+
+- Transparency and change control  
+
+  The agent seeks user intervention in specific situations as instructed, such providing business review, approval for key operations, or requesting assistance for help.  
+  
+  Business Central maintains full transparency and provides control over changes made by the agent. The agent brings humans in the loop when their attention is required by issuing in-product notifications that are displayed on the role center. For example, a notification occurs when approval is instructed for important changes.  
+  
+  For each task performed by the agent, users get a detailed timeline that shows the key steps taken by the agent and human users, including the email conversation. Users can review this information and update the values and actions the agent suggested if needed. Business Central can also display the reasoning used by the agent and citations that led to a suggested value.
+
+- Troubleshooting agents  
+
+  A core part of exploring and prototyping agents in the agent playground is the ability to understand what steps the agent performed when running, which data is used at each step, and what AI generated. To help with this, the agent playground includes troubleshooting views.
 
 ## Use Cases
 
 ### Intended uses
 
-The agent playground is intended for Business Central partners to explore and prototype custom agents in Business Central. It can be used to design, implement, and deploy various use cases where generative AI is applied to solve specialized tasks in an automated way, such as:
-•	Automating quote-to-order transitions
+The agent playground is intended for Business Central partners to explore and prototype custom agents in Business Central. It can be used to design, implement, and deploy various use cases where generative AI is applied to solve specialized tasks in an automated way, such as:  
+
+- Automating quote-to-order transitions
 
 ### Considerations when choosing a use case
 
 We encourage partners to use the agent playground in their innovative solutions or applications. However, here are some considerations when choosing a use case.
 
 - Building features for customers that aren't yet running Business Central online
+
 Agents in Business Central are intended for use with Business Central online, Microsoft's SaaS flavor of Business Central. 
+
 - Use of AI platforms other than Azure OpenAI Service
 - The agent playground isn't intended for use with any other AI models other than Azure OpenAI Service. 
-- Financial impact
-Because your AI features are attached to your Azure OpenAI Service key[MB13.1], you're responsible for the operating costs of Azure OpenAI resources throughout development, testing and when your customers use the feature in production or sandbox environments. For example, an AI feature that provides a handful of monthly suggestions to business owners will likely consume fewer resources and cost less. In contrast, an AI feature that generates a daily, two-page project summary for each employee will likely consume more resources and cost more.
-- Use for non-AI use cases or non-business use cases
+
+- Financial impact  
+
+Because your AI features are attached to your Azure OpenAI Service key, you're responsible for the operating costs of Azure OpenAI resources throughout development, testing and when your customers use the feature in production or sandbox environments. For example, an AI feature that provides a handful of monthly suggestions to business owners will likely consume fewer resources and cost less. In contrast, an AI feature that generates a daily, two-page project summary for each employee will likely consume more resources and cost more.
+
+- Use for non-AI use cases or non-business use cases  
+
 The agent playground is built specifically to unlock the benefits and manage the challenges of autonomous agents in a business context. Using the playground for other purposes, or personal use cases might erode customer trust and understanding of these experiences.
-- Fully automated use cases
+
+- Fully automated use cases  
+
 Autonomous agents are intended to help support productivity and should be used with human-in-the-loop review. We acknowledge that AI systems aren't always correct and that careful review from humans is required to assess that generated output is accurate and appropriate. Use cases that fully automate processes without human oversight elevate the risk to stakeholders and place more accountability on the developer of the AI feature. For example, generating reminder emails and immediately sending those to thousands of contacts might result in recipients receiving inappropriate content that affects the customer's reputation.
-- Sensitive use cases
-Some applications of AI can be sensitive and impactful on individuals and society, as well as on the partner that published the AI feature. For example:
--    The use or misuse of an AI feature that predicts when to service critical machinery might result in injury.
--    The use or misuse of an AI feature that determines eligibility for education might infringe upon human rights.
--    The use or misuse of an AI feature that ranks individuals’ access to social housing might have consequential impact to their life opportunities.
+
+- Sensitive use cases  
+
+Some applications of AI can be sensitive and impactful on individuals and society, as well as on the partner that published the AI feature. For example:  
+
+- The use or misuse of an AI feature that predicts when to service critical machinery might result in injury.
+- The use or misuse of an AI feature that determines eligibility for education might infringe upon human rights.
+- The use or misuse of an AI feature that ranks individuals’ access to social housing might have consequential impact to their life opportunities.
 
 Sensitive use cases require increased attention throughout their development lifecycle. They might carry extra effort to satisfy any of your organization’s policies or regulations in the countries, regions, or industries in which they'll be deployed.
-- Seek appropriate legal and professional advice
+
+- Seek appropriate legal and professional advice  
+
 We strongly recommend seeking legal advice from a specialist to understand the laws and regulations applicable to your use case. You're responsible for complying with all laws and regulations, including privacy, security, accessibility, and AI safety.
+
 - **Language Support**: English is the primary supported language; user interactions in other languages may yield inconsistent results. In addition, agent instructions should be defined in English to ensure optimal accuracy.
 - **User administration**: Agents are not allowed to access and modify user configurations for security reasons. This includes permissions, user information and profile assignment.
 
@@ -105,7 +134,7 @@ Business Central users can maintain full transparency and control over the chang
     - Get a detailed review of each entity created by the agent that surfaces all changes and suggestions made by the agent within a specific task. This behavior allows users to review and adjust changes, and then sign off on proceeding with the task.
     - Get an overview of the agent's key performance indicators (KPIs) that summarize the impact of the agent's work.  
     
-    Make sure you attend to the notifications raised by the agent to review and approve its work.
+Make sure you attend to the notifications raised by the agent to review and approve its work.
 
 - All actions done by the agent, including creating and modifying records and calling actions, carry the agent's user ID. This user ID appears in the same places and in the same way as it does with other users, such as in list views, history, posted documents, notifications, and more.
 - Approval workflows can be used to add an extra layer of control to the tasks done by the agent, as they do with other users. You can set up approval workflows to make the agent create a request for approval for a specific change. The change isn't allowed until another user approves the request. Learn more in Use Approval Workflows.
