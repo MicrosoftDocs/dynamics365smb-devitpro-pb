@@ -26,16 +26,20 @@ Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/i
 
 **Guidance:**
 
-1. Set up GDAP with groups:
-   - In your partner's Microsoft Entra ID, create one security group per customer you have a GDAP relationship with (for example, `GDAP-CustomerA-Admins`, `GDAP-CustomerB-Admins`)
-   - Establish the GDAP relationship with each customer, linking the relevant security group to the appropriate Azure AD roles
-   - Do not directly assign consultants to these groups permanently
+1. Set up granular delegated admin privileges (GDAP) with groups:
+   - In your partner's Microsoft Entra ID tenant, create one security group per customer you have a GDAP relationship with (for example, `GDAP-CustomerA-Admins`, `GDAP-CustomerB-Admins`). Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
+   - Don't directly assign consultants to these groups permanently.
+   - Establish the GDAP relationship with each customer, linking the relevant security group to the appropriate Azure AD roles. Learn more in [Manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
+
+   Learn more [Granular delegated admin privileges](/partner-center/customers/gdap-introduction)
 
 1. Configure PIM for time-bound access:
    - Enable Microsoft Entra ID Privileged Identity Management (requires Microsoft Entra ID P2 or Microsoft Entra ID Governance license)
    - Make the GDAP customer groups eligible for activation in PIM rather than permanently assigned
    - Configure activation requirements (for example, justification, approval workflow, maximum duration)
    - Set appropriate activation duration limits (for example, 4-8 hours)
+
+   Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure)
 
 1. Consultant workflow:
    - When a consultant needs to work on a specific customer, they request activation of the relevant customer group in PIM
