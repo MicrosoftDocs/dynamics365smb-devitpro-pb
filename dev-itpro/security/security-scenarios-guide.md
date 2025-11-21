@@ -664,13 +664,13 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
 **Guidance:**
 
 1. Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Change Log:
-   - Navigate to Change Log Setup
-   - Enable change logging for sensitive tables:
+   1. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to **Change Log Setup**.
+   1. Enable change logging for sensitive tables:
      - Customer, Vendor, Bank Account
      - G/L Entry, Customer Ledger Entry, Vendor Ledger Entry
      - User, User Group, Permission Set
-   - Select fields to track: All fields vs. critical fields only
-   - Consider performance impact (logging adds overhead)
+   1. Select fields to track: All fields versus critical fields only
+   1. Consider performance impact (logging adds overhead)
 
    Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)
 1. Configure SQL Server Auditing (on-premises):
@@ -688,13 +688,13 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
    ```
 
 1. Use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry (online):
-   - Enable environment telemetry to Application Insights
-   - Monitor custom telemetry events:
-     - `AL: Long Running SQL Query` (data access patterns)
-     - `AL: Permission Error` (unauthorized access attempts)
-     - `AL: Company Switched` (cross-company access)
+   1. Enable environment telemetry to Application Insights. Learn more in [Turn environment telemetry on or off](../administration/telemetry-enable-application-insights.md).
+   1. Monitor custom telemetry events:
+     - [Long Running SQL Query Telemetry](../administration/telemetry-long-running-sql-query-trace.md) (data access patterns)
+     - [Permission Error Telemetry](../administration/telemetry-permission-error-trace.md) (unauthorized access attempts)
+     - [Company Lifecycle Telemetry](../administration/telemetry-company-lifecycle-trace.md) (cross-company access)
 
-1. Create access reports:
+1. Create access reports using KQL queries in Application Insights and SQL queries for Change Log data:
    - Daily access summary:
      - Who accessed which companies
      - Failed permission checks
@@ -704,6 +704,8 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
      - Bank account field reads
      - Salary information views
      - Customer credit card data (if stored)
+
+   Learn more in [Kusto Query Language (KQL) overview](/azure/data-explorer/kusto/query/) and [Create a report in Business Central](/dynamics365/business-central/ui-work-report).
 
 1. Retention and archival:
    - Change Log: Archive monthly to separate table, retain 13 months
