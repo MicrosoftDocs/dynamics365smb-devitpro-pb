@@ -398,14 +398,16 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview), [Ap
      - Upload certificate to app registration (do NOT use client secrets). Learn more in [Certificate credentials](/entra/identity-platform/certificate-credentials).
      - Grant app registration "Get Secret" permission on Key Vault. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy).
      - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage. Learn more in [Isolated Storage](../developer/devenv-isolated-storage.md).
-     - Use AL HttpClient with certificate authentication. Learn more in [HttpClient Data Type](../developer/methods-auto/httpclient/httpclient-data-type.md).
+
 
    - Option B - Managed identity (for online integrations):
      - If calling Azure Function/Logic App as intermediary
      - Azure service uses managed identity to access Key Vault. Learn more in [Use managed identities for App Service and Azure Functions](/azure/app-service/overview-managed-identity).
      - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in Business Central)
 
-1. AL code pattern:
+1. AL code pattern: Use AL [HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md) with certificate authentication.
+
+   The following example shows how to retrieve a secret from Azure Key Vault using certificate-based authentication:
 
    ```al
    local procedure GetApiKey(): Text
