@@ -32,7 +32,7 @@ Agents use Microsoft Copilot Studio messages when activated, which your company 
 
 ## Getting started
 
-Creating an AI playground agent involves several key phases: design, configuration, and testing. You'll start by defining your agent's identity and purpose, then specify its behavior through natural language instructions. The agent needs appropriate permissions and user profiles to interact with your [!INCLUDE [prod_short](../includes/prod_short.md)] environment safely and effectively.
+Creating an AI playground agent involves several key phases: design, configuration, and testing. You start by defining your agent's identity and purpose, then specify its behavior through natural language instructions. The agent needs appropriate permissions and user profiles to interact with your [!INCLUDE [prod_short](../includes/prod_short.md)] environment safely and effectively.
 
 The development process is iterative by design. You can continuously refine your agent's instructions, adjust its permissions, and test different scenarios until it performs as expected. The playground environment provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
@@ -42,14 +42,14 @@ The agent capability is on if the :::image type="content" source="../media/ai-pl
 
 If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The AI playground agent is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities](/dynamics365/business-central/enable-ai).
 
-Next, configure and activate the agent to get started.
+Next, configure, and activate the agent to get started.
 
 ### Configure an AI playground agent
 
 The **Create agent (preview)** wizard allows you to configure your AI playground agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="AI Playground Agent create new"::: **Agent** > **Activate**.
-1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** for the agent. The **Intials** field value is suggested based on the **Display Name**, but can be modified.
+1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** for the agent. The **Initials** field value is suggested based on the **Display Name**, but can be modified.
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="AI Playground Agent setup":::
 1. In the **Description** field, provide an optional description for the agent.
 1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  

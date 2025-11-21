@@ -49,7 +49,7 @@ Use debugging strategies for common issues. Learn more in [Debugging in AL](../d
 
 ## Customize agent profiles and UI
 
-Finetune the agent's access and interface, including:
+Fine tune the agent's access and interface, including:
 
 - Customize agent profiles and page descriptions using AL code.
 - Export and package tailored profiles for your agent.
@@ -81,8 +81,6 @@ To import the configuration, do the following:
 
 1. 
 -->
-
-
 
 ## Related information
 
