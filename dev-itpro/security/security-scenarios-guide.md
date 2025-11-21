@@ -382,7 +382,7 @@ Your extension needs to call external APIs (payment gateways, shipping providers
 **Solution:**  
 Use Azure Key Vault for secret storage, accessed via secure authentication patterns from AL code.
 
-Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview), [App Key Vault Secrets Telemetry](../administration/telemetry-app-key-vault-secret-trace.md), and [HttpClient Data Type](../developer/methods-auto/httpclient/httpclient-data-type.md).
+Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and [HttpClient Data Type](../developer/methods-auto/httpclient/httpclient-data-type.md).
 
 **Guidance:**
 
@@ -431,6 +431,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview), [Ap
    - Rotate secrets every 90 days minimum
    - Use Key Vault secret versions
    - Update references in Business Central setup tables without code changes
+   - Monitor Key Vault access using Business Central telemetry to track secret retrieval patterns and troubleshoot failures. Learn more in [App Key Vault Secrets Telemetry](../administration/telemetry-app-key-vault-secret-trace.md).
 
 **Benefits:**
 
@@ -459,7 +460,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 **Guidance:**
 
 1. For Azure SQL Database:
-   - Navigate to Azure SQL Server → Networking
+   - In [Azure portal](https://portal.zure.com), go to **Azure SQL Server** > **Networking**.
    - Remove "Allow Azure services" if enabled
    - Add virtual network rule or firewall rule:
      - Type: Service Tag
@@ -468,10 +469,14 @@ Configure network access controls on Azure services using the `Dynamics365Busine
    - Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
    - Monitor denied connection attempts
 
+   Learn more in [Azure SQL Database firewall rules](/azure/azure-sql/database/firewall-configure).
+
 1. For Azure Key Vault:
    - Navigate to Key Vault → Networking → Firewalls and virtual networks
    - Select "Disable public access" or "Allow public access from specific virtual networks and IP addresses"
    - Add network rule: Service Tag = `Dynamics365BusinessCentral`
+
+   Learn more in [Configure Azure Key Vault networking settings](/azure/key-vault/general/network-security).
 
 1. For custom APIs behind Azure Application Gateway/Firewall:
    - Configure WAF rules to allow `Dynamics365BusinessCentral` source
@@ -480,6 +485,8 @@ Configure network access controls on Azure services using the `Dynamics365Busine
      - Destination: Your backend subnet
      - Port: 443
      - Action: Allow
+
+   Learn more in [Network security groups](/azure/virtual-network/network-security-groups-overview) and [Azure Application Gateway](/azure/application-gateway/overview).
 
 1. Automation for IP range updates:
 
