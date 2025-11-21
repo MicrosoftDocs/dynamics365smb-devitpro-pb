@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI playground agent (preview)](ai-playground-agent-create.md). Finetune and improve your agent's behavior by following guidance in [Iterate and manage an AI playground agent (preview)](ai-playground-agent-iterate.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI playground agent (preview)](ai-playground-agent-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an AI playground agent (preview)](ai-playground-agent-iterate.md).
 
 ## Getting started with agent instructions
 
@@ -27,7 +27,7 @@ To get an agent up and running effectively, you need to configure its instructio
 Rather than trying to write perfect instructions from the start, we recommend an iterative, AI-assisted workflow:
 
 1. **Start with your ideas** - Write down what you want your agent to do in natural language, without worrying about format or structure
-2. **Use AI to refine** - Leverage Copilot or other AI tools to transform your initial thoughts into well-structured instructions following best practices
+2. **Use AI to refine** - Use Copilot or other AI tools to transform your initial thoughts into well-structured instructions following best practices
 3. **Test and iterate** - Deploy your agent, observe its behavior, and refine the instructions based on real-world results
 4. **Leverage community examples** - Reference proven patterns and examples from the community
 
@@ -56,7 +56,7 @@ Effective agent instructions follow a structured approach with three key compone
 
 - **Responsibilities** Define what the agent is accountable for. For example, handling customer reminders, processing credit memos, or managing sales quotes.
 - **Guidelines** Set rules that apply across all tasks. For example, always request user review before posting documents or sending external communications.
-- **Instructions** Provide step-by-step, ordered lists for each specific task, including sub-steps for clarity.
+- **Instructions** Provide step-by-step, ordered lists for each specific task, including substeps for clarity.
 
 This framework ensures that agents act consistently, handle exceptions gracefully, and involve users when necessary.
 
@@ -120,7 +120,7 @@ At the core of defining agents is expressing goals and instructions in natural l
 - Add complexity and refinements based on observed behavior
 - Use AI to help incorporate lessons learned from testing
 
-#### Leverage AI and community knowledge
+#### Use AI and community knowledge
 
 - Use AI tools to transform drafts into structured instructions
 - Reference community patterns for common scenarios
@@ -166,7 +166,7 @@ As you refine your agent instructions, consider incorporating these advanced pat
 
 Agents retain a history of their actions and searches but don't store the full state of every page. Include explicit instructions to memorize specific key-value pairs when needed, which can be referenced in later steps.
 
-Example: "Memorize the external document reference from the newly created sales quote for use in follow-up communications".
+Example: "Memorize the external document reference from the newly created sales quote for use in follow-up communications."
 
 #### Error handling and validation
 
@@ -180,7 +180,7 @@ Example: "Memorize the external document reference from the newly created sales 
 
 You invoke your agent by manually creating a task for it because the current public preview doesn't support automatic triggers, such as incoming mails, system events, or recurring schedules. 
 
-When creating a task, you can specify an additional message that gets passed to the agent to complement the general instructions with specific details for that particular task. As you're testing and prototyping your agent, you can create tasks directly from the **AI Playground Agent** setup page. Each task you create will appear in the agent's task queue, where the agent will pick it up and process it according to its instructions. Tasks kan be stopped and restarted as needed.
+When creating a task, you can specify an extra message that gets passed to the agent to complement the general instructions with specific details for that particular task. As you're testing and prototyping your agent, you can create tasks directly from the **AI Playground Agent** setup page. Each task you create appears in the agent's task queue, where the agent picks it up and process it according to its instructions. Tasks can be stopped and restarted as needed.
 
 #### Workarounds for testing scenarios
 

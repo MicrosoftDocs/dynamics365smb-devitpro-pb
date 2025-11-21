@@ -62,7 +62,7 @@ The typical AI playground agent follows this lifecycle:
 1. **Configure** - Define instructions, permissions, and tasks
 1. **Activate** - Enable the agent for testing
 1. **Iterate** - Test, refine instructions, and adjust permissions
-1. **Graduate** - Export learnings to build production solutions using AL extensions <!-- or the agent development SDK -->
+1. **Graduate** - Export learnings to build production solutions using AL extensions
 1. **Clean up** - Deactivate and remove the prototype agent
 
 Each phase has specific requirements and limitations that guide your development process.
