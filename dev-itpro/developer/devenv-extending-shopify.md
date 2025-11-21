@@ -10,16 +10,11 @@ ms.topic: how-to
 ---
 # Extend the Shopify Connector
 
-The Shopify Connector offers a few points of extensibility. We're keeping the number of points to a minimum so that we can follow the rapid development on the Shopify side without introducing breaking changes.
-
-> [!NOTE]
-> We're making extensibility available based on feedback from our partners and customers. If there's a scenario you'd like to cover, you can contribute yourself. To learn more, go to [Is the Shopify connector open for contribution](/dynamics365/business-central/shopify/shopify-faq#is-the-shopify-connector-open-for-contribution).
-
 ## Extensibility approaches
 
 ### Per-tenant extension
 
-Per-tenant extensions use classic extensibility. Extensions subscribe to exposed events and other artifacts and adjust existing flows. The benefit of this approach is that you can develop in a cloud sandbox. The restriction is that you can't modify API calls. For example, to add new nodes or call different Shopify APIs. Because the connector depends on the Shopify API and its release cycle, the number of exposed events in the connector is noticeably less than in other Microsoft code. There have been cases where a redesign was needed to uptake the new ways to do things on Shopify that would cause multiple breaking changes for per-tenant extensions.
+Per-tenant extensions use classic extensibility. Extensions subscribe to exposed events and other artifacts and adjust existing flows. The benefit of this approach is that you can develop in a cloud sandbox. The restriction is that you can't modify API calls. For example, to add new nodes or call different Shopify APIs. Because the connector depends on the Shopify API and its release cycle, the number of exposed events in the connector is noticeably less than in other Microsoft code. There have been cases where a redesign was needed to uptake the new ways to do things on Shopify that would cause multiple breaking changes for per-tenant extensions. If you discovered missing integration events or public function or have other extensibility enhancement, you can contribute via [BCApps](https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Shopify) repository.
 
 ### Hybrid approach
 
@@ -27,26 +22,9 @@ In addition to classic extensibility, you can also create a separate branch of c
 
 ### Co-development
 
-If you're missing functionality you need, instead of building a per-tenant extension or onboarding to the hybrid approach, you can contribute code to the Shopify Connector through a co-development process. Co-development ensures that you don't need to maintain proprietary code and can use out of the box functionality. Co-development requires acceptance from the engineering team from both the use case and architectural perspectives. Also worth mentioning is that shipping new features, including those built by our community, is usually tied to major releases.
+If you're missing functionality you need, instead of building a per-tenant extension or onboarding to the hybrid approach, you can contribute code to the Shopify Connector through a co-development process. Co-development ensures that you don't need to maintain proprietary code and can use out of the box functionality. Co-development requires acceptance from the engineering team from both the use case and architectural perspectives. Also worth mentioning is that shipping new features, including those built by our community, is usually tied to major releases. You can find code and contribute via [BCApps](https://github.com/microsoft/BCApps/tree/main/src/Apps/W1/Shopify) repository.
 
-## Useful hints
-
-### Dependency in app.json
-
-If you're building a per-tenant extension or plan to use the hybrid approach, you must list the Shopify Connector as a dependency in the **app.json** file. Remember to use the correct version number.
-
-```json
-    "dependencies": [
-        {
-            "id": "ec255f57-31d0-4ca2-b751-f2fa7c745abb",
-            "name": "Shopify Connector",
-            "publisher": "Microsoft",
-            "version": "25.0.0.0"
-        }
-    ],
-```
-
-To learn more, go to [JSON files](devenv-json-files.md).
+## Useful hints for co-development
 
 ### Registering the Shopify app
 
@@ -101,7 +79,7 @@ codeunit 30199 "Shpfy Authentication Mgt."
     Access = Internal;
     var
         // https://shopify.dev/api/usage/access-scopes
-        // ScopeTxt: Label 'write_orders,read_all_orders,...  //replace this line with line below
+        // ScopeTxt: Label 'write_orders,read_all_orders,read_orders...  //replace this line with line below
         ScopeTxt: Label 'write_orders,read_orders,...        
 
 ```
@@ -121,11 +99,14 @@ Make sure that you filled in the **Allowed redirection URL(s)** field correctly 
 
 In the **Overview** section of the app, choose the **Select Store** action. First install the app from there, then try to connect [!INCLUDE [prod_short](../includes/prod_short.md)] to the Shopify store again.
 
+
 ## Extensibility examples
+
+Below you can find various extensibility examples.
 
 ### Application manifest
 
-To extend the Shopify Connector, create a new extension and add Shopify Connector as a dependency.
+If you're building a per-tenant extension or plan to use the hybrid approach, you must list the Shopify Connector as a dependency in the **app.json** file. Remember to use the correct version number.
 
 ```json
 {
@@ -141,17 +122,8 @@ To extend the Shopify Connector, create a new extension and add Shopify Connecto
       "version": "25.0.0.0"
     }
   ],
-  "platform": "1.0.0.0",
-  "application": "25.0.0.0",
-  "idRanges": [
-    {
-      "from": 50100,
-      "to": 50149
-    }
-  ],
-  "runtime": "14.0"
-}
 ```
+To learn more, go to [JSON files](devenv-json-files.md).
 
 ### Order processing
 
@@ -645,7 +617,7 @@ The following example shows how to use the GTIN field to map imported products t
 ```al
 codeunit 50108 "Shpfy Product Import Mapping"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnBeforeFindMapping, '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnBeforeFindProductMapping, '', false, false)]
     procedure BeforeFindMapping(Direction: Enum "Shpfy Mapping Direction"; var ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; var Item: Record Item; ItemVariant: Record "Item Variant"; var Handled: Boolean)
     var
         FindItem: Record Item;
