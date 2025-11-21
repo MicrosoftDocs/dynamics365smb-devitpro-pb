@@ -344,7 +344,7 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
    Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 1. Implement audit logging:
-   - Enable Change Log for sensitive tables (Vendor Bank Account, User Permissions). Learn more about the change log in [Audit changes](/dynamics365/business-central/across-log-changes).
+   - Enable change log for sensitive tables (Vendor Bank Account, User Permissions). Learn more about the change log in [Audit changes](/dynamics365/business-central/across-log-changes).
    - Monitor approval workflow telemetry.
    - Regular review of who approved what (monthly reconciliation).
 
@@ -464,8 +464,8 @@ Configure network access controls on Azure services using the `Dynamics365Busine
    1. Under **Public access**, clear the **Allow Azure services and resources to access this server** checkbox.
    1. To restrict access to Business Central IP ranges, use one of these approaches:
 
-     - **Option A - Virtual Network rule** (recommended): Create a virtual network with service endpoint enabled, then add a VNet rule that references the `Dynamics365BusinessCentral` service tag.
-     - **Option B - Firewall IP rules**: Retrieve the IP address ranges from the `Dynamics365BusinessCentral` service tag using PowerShell (see [Scenario C](#C) above), then add firewall rules for each IP range.
+      - **Option A - Virtual Network rule** (recommended): Create a virtual network with service endpoint enabled, then add a VNet rule that references the `Dynamics365BusinessCentral` service tag.
+      - **Option B - Firewall IP rules**: Retrieve the IP address ranges from the `Dynamics365BusinessCentral` service tag using PowerShell (see [Scenario C](#C) above), then add firewall rules for each IP range.
 
    1. Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
    1. Monitor denied connection attempts in Azure SQL audit logs. Learn more in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview).
@@ -485,22 +485,22 @@ Configure network access controls on Azure services using the `Dynamics365Busine
    1. In [Azure portal](https://portal.azure.com), go to your **Application Gateway** > **Web application firewall** (under Settings).
    1. Select your **WAF Policy** (or create one).
    1. Under **Custom rules**, add a new rule:
-     - **Rule type**: Match rule
-     - **Priority**: Set appropriately (lower numbers = higher priority)
-     - **Match conditions**:
-       - **Match variable**: RemoteAddr
-       - **Operation**: IPMatch
-       - **IP addresses or ranges**: Enter IP ranges from `Dynamics365BusinessCentral` service tag (retrieve using PowerShell from [Scenario C](#C) above)
-     - **Action**: Allow
+      - **Rule type**: Match rule
+      - **Priority**: Set appropriately (lower numbers = higher priority)
+      - **Match conditions**:
+         - **Match variable**: RemoteAddr
+         - **Operation**: IPMatch
+         - **IP addresses or ranges**: Enter IP ranges from `Dynamics365BusinessCentral` service tag (retrieve using PowerShell from [Scenario C](#C) above)
+      - **Action**: Allow
 
-     Learn more in [Create custom rules for Web Application Firewall v2](/azure/web-application-firewall/ag/create-custom-waf-rules).
-   1.  Create a Network Security Group (NSG) rule for your backend subnet:
-     - **Source**: Service Tag - `Dynamics365BusinessCentral`
-     - **Destination**: Your backend subnet
-     - **Destination port**: 443
-     - **Action**: Allow
+      Learn more in [Create custom rules for Web Application Firewall v2](/azure/web-application-firewall/ag/create-custom-waf-rules).
+   1. Create a Network Security Group (NSG) rule for your backend subnet:
+      - **Source**: Service Tag - `Dynamics365BusinessCentral`
+      - **Destination**: Your backend subnet
+      - **Destination port**: 443
+      - **Action**: Allow
 
-     Learn more in [Create a network security group](/azure/virtual-network/manage-network-security-group).
+      Learn more in [Create a network security group](/azure/virtual-network/manage-network-security-group).
 
    > [!TIP]
    > For global distribution scenarios requiring multi-region load balancing and CDN capabilities, consider using [Azure Front Door](/azure/frontdoor/front-door-overview) with similar WAF custom rules. Learn more in [Configure IP restriction rules with WAF for Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-rate-limit-configure).
@@ -609,7 +609,7 @@ Learn more in [Security and Protection](security-and-protection.md), [Business C
 1. Verify logging is enabled:
    - Confirm Microsoft Entra sign-in logs retention (90+ days).
    - Verify [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry is flowing to Application Insights.
-   - Check Change Log is enabled for sensitive tables.
+   - Check change log is enabled for sensitive tables.
    - Review alert configurations.
 
 1. Test incident response:
@@ -657,18 +657,20 @@ Learn more in [Security and Protection](security-and-protection.md), [Business C
 For compliance and security investigations, you need to understand who accessed what data, when, and from where. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't enable comprehensive data access logging by default.
 
 **Solution:**  
-Implement multi-layered audit logging using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Change Log, database auditing, and telemetry.
+Implement multi-layered audit logging using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] change log, database auditing, and telemetry.
 
 Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes), [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md), and [Transparent Data Encryption](transparent-data-encryption.md).
 
 **Guidance:**
 
-1. Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Change Log:
+1. Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] change log:
    1. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to **Change Log Setup**.
    1. Enable change logging for sensitive tables:
-     - Customer, Vendor, Bank Account
-     - G/L Entry, Customer Ledger Entry, Vendor Ledger Entry
-     - User, User Group, Permission Set
+
+      - Customer, Vendor, Bank Account
+      - G/L Entry, Customer Ledger Entry, Vendor Ledger Entry
+      - User, User Group, Permission Set
+
    1. Select fields to track: All fields versus critical fields only.
    1. Consider performance impact (logging adds overhead).
 
@@ -694,7 +696,7 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
      - [Permission Error Telemetry](../administration/telemetry-permission-error-trace.md) (unauthorized access attempts)
      - [Company Lifecycle Telemetry](../administration/telemetry-company-lifecycle-trace.md) (cross-company access)
 
-1. Create access reports using KQL queries in Application Insights and SQL queries for Change Log data:
+1. Create access reports using KQL queries in Application Insights and SQL queries for change log data:
    - Daily access summary:
      - Who accessed which companies
      - Failed permission checks
@@ -708,7 +710,7 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
    Learn more in [Kusto Query Language (KQL) overview](/azure/data-explorer/kusto/query/) and [Create a report in Business Central](/dynamics365/business-central/ui-work-report).
 
 1. Retention and archival:
-   - Change Log: Archive monthly to separate table, retain 13 months.
+   - Change log: Archive monthly to separate table, retain 13 months.
    - SQL Audit files: Retain 90 days active, 7 years archive.
    - Telemetry: Application Insights default 90 days, export to storage for long-term.
 
