@@ -117,7 +117,7 @@ Your code acquires tokens automatically using the managed identity—no secrets 
 Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (AppSource apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment reaches these services, blocking potential unauthorized access or data exfiltration attempts from other sources.
 
 **Solution:**  
-Use Azure service tags and network access controls to create allowlists based on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s IP ranges.
+Use Azure service tags and network access controls to create allow lists based on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s IP ranges.
 
 Learn more in [Use Azure security service tags](security-service-tags.md) and [Azure service tags overview](/azure/virtual-network/service-tags-overview).
 
@@ -196,7 +196,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 
    - Multiple failed sign-ins: Alert when user has >5 failures in 10 minutes
    - Impossible travel: Alert when sign-ins occur from geographically distant locations within short timeframes
-   - Unfamiliar locations: Alert when sign-ins come from countries where you don't operate
+   - Unfamiliar locations: Alert when sign-ins come from countries/regions where you don't operate
    - Disabled accounts: Alert on any authentication attempt to disabled accounts
 
    Learn more in [Create alert rules](/azure/azure-monitor/alerts/alerts-create-new-alert-rule).
@@ -236,7 +236,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 - Alert fatigue: Too many alerts can desensitize teams
 - Cost: Log Analytics charges based on data ingestion and retention
 - Expertise required: Creating effective KQL queries requires learning curve
-- False positives: Legitimate scenarios (for example, VPN users) may trigger alerts
+- False positives: Legitimate scenarios (for example, VPN users) might trigger alerts
 
 ### Enforce multifactor authentication for all users
 
@@ -263,8 +263,8 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
 
       - **Users:** Include "All users" or specific [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user groups
       - **Target Resources:** Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]". Learn more [Conditional Access: Target resources](/entra/identity/conditional-access/concept-conditional-access-cloud-apps)
-      - **Access controls:** Grant access, but require multi-factor authentication
-      - **Session controls:** Consider sign-in frequency (for example, require re-auth every 7 days)
+      - **Access controls:** Grant access, but require multifactor authentication
+      - **Session controls:** Consider sign-in frequency (for example, require reauth every seven days)
 
 1. Enable modern authentication methods:
    - In [Microsoft Entra admin center](https://entra.microsoft.com), select **Authentication methods** > **Policies**. Learn more in [Authentication methods in Microsoft Entra ID](/entra/identity/authentication/concept-authentication-methods).
@@ -295,10 +295,10 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
 
 **Trade-offs:**
 
-- User friction: Additional authentication step at sign-in
+- User friction: Extra authentication step at sign-in
 - Support burden: Initial increase in help desk calls during rollout
 - License requirements: Conditional Access requires Microsoft Entra ID P1 minimum
-- Legacy app challenges: Some integrations may not support modern auth
+- Legacy app challenges: Some integrations might not support modern auth
 - Offline scenarios: Users need device access for authenticator app
 
 > [!IMPORTANT]
@@ -336,15 +336,15 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
 
 1. Design segregated permission sets:
    - Requester role: Can create payment journals but can't post
-   - Approver role: Can approve but cannot create their own requests
-   - Posting role: Can only post pre-approved transactions
+   - Approver role: Can approve but can't create their own requests
+   - Posting role: Can only post preapproved transactions
    - Ensure no single user has all three capabilities
    - Use security groups for easier management
 
    Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 1. Implement audit logging:
-   - Enable change log for sensitive tables (Vendor Bank Account, User Permissions). Learn more about the change log in [Audit changes](/dynamics365/business-central/across-log-changes).
+   - Enable change log for sensitive tables (Vendor Bank Account, User Permissions). Learn more about the change log at [Audit changes](/dynamics365/business-central/across-log-changes).
    - Monitor approval workflow telemetry.
    - Regular review of who approved what (monthly reconciliation).
 
@@ -390,7 +390,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
    - Create Azure Key Vault in same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for optimal performance. Learn more in [Quickstart: Create a key vault using the Azure portal](/azure/key-vault/general/quick-create-portal).
    - Store API keys, connection strings, certificates as Key Vault secrets.
    - Enable Key Vault logging to monitor secret access. Learn more in [Azure Key Vault logging](/azure/key-vault/general/logging).
-   - Configure access policies or use Azure RBAC. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy) or [Azure Key Vault RBAC guide](/azure/key-vault/general/rbac-guide).
+   - Configure access policies or use Azure role-based access control (RBAC). Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy) or [Azure Key Vault RBAC guide](/azure/key-vault/general/rbac-guide).
 
 1. Access from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
    
@@ -444,15 +444,15 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 **Trade-offs:**
 
 - Azure dependency: Requires Azure subscription
-- Latency: Additional network call to Key Vault (cache appropriately)
+- Latency: Extra network call to Key Vault (cache appropriately)
 - Complexity: More complex than hardcoded values
-- Cost: Key Vault operations are metered (typically <$1/month)
+- Cost: Key Vault operations are metered
 - Error handling: Need robust retry logic for Key Vault unavailability
 
 ### Secure inter-service communication using service tags
 
 **Context and problem:**  
-Your AppSource app or PTE calls external Azure services (SQL Database, Cosmos DB, custom APIs). You want to restrict these services to only accept traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], preventing unauthorized access from other sources.
+Your AppSource app or pertenant extension (PTE) calls external Azure services (SQL Database, Cosmos DB, custom APIs). You want to restrict these services to only accept traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], preventing unauthorized access from other sources.
 
 **Solution:**  
 Configure network access controls on Azure services using the `Dynamics365BusinessCentral` service tag.
@@ -464,8 +464,8 @@ Configure network access controls on Azure services using the `Dynamics365Busine
    1. Under **Public access**, clear the **Allow Azure services and resources to access this server** checkbox.
    1. To restrict access to Business Central IP ranges, use one of these approaches:
 
-      - **Option A - Virtual Network rule** (recommended): Create a virtual network with service endpoint enabled, then add a VNet rule that references the `Dynamics365BusinessCentral` service tag.
-      - **Option B - Firewall IP rules**: Retrieve the IP address ranges from the `Dynamics365BusinessCentral` service tag using PowerShell (see [Scenario C](#C) above), then add firewall rules for each IP range.
+      - **Option A - Virtual Network rule** (recommended): Create a virtual network with service endpoint enabled, then add a virtual network rule that references the `Dynamics365BusinessCentral` service tag.
+      - **Option B - Firewall IP rules**: Retrieve the IP address ranges from the `Dynamics365BusinessCentral` service tag using PowerShell (see [Scenario C: Destination supports IP allowlisting only](#C)), then add firewall rules for each IP range.
 
    1. Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
    1. Monitor denied connection attempts in Azure SQL audit logs. Learn more in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview).
@@ -477,7 +477,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
    1. Select **Allow public access from specific virtual networks and IP addresses** (or **Disable public access** if you want to block all public access).
    1. To restrict access to Business Central IP ranges, use one of these approaches:
      - **Option A - Virtual Network** (recommended): Add your virtual network with a service endpoint for Microsoft.KeyVault, which can then reference service tags at the network level.
-     - **Option B - Firewall rules**: In the **Firewall** section, add the IP address ranges from the `Dynamics365BusinessCentral` service tag (retrieve them using PowerShell as shown in [Scenario C](#C) above).
+     - **Option B - Firewall rules**: In the **Firewall** section, add the IP address ranges from the `Dynamics365BusinessCentral` service tag (retrieve them using PowerShell as shown in [Scenario C: Destination supports IP allowlisting only](#C)).
 
    Learn more in [Configure Azure Key Vault networking settings](/azure/key-vault/general/network-security).
 
@@ -490,7 +490,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
       - **Match conditions**:
          - **Match variable**: RemoteAddr
          - **Operation**: IPMatch
-         - **IP addresses or ranges**: Enter IP ranges from `Dynamics365BusinessCentral` service tag (retrieve using PowerShell from [Scenario C](#C) above)
+         - **IP addresses or ranges**: Enter IP ranges from `Dynamics365BusinessCentral` service tag (retrieve using PowerShell from [Scenario C: Destination supports IP allowlisting only](#C)).
       - **Action**: Allow
 
       Learn more in [Create custom rules for Web Application Firewall v2](/azure/web-application-firewall/ag/create-custom-waf-rules).
@@ -522,7 +522,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 
    - Store the `ChangeNumber` in Azure Table Storage or Key Vault for persistence.
    - Configure alerts to notify administrators when IP ranges are updated.
-   - Test the automation in a non-production environment first.
+   - Test the automation in a nonproduction environment first.
 
    Learn more in [What is Azure Automation?](/azure/automation/overview).
 
@@ -531,7 +531,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 - Automated IP management: Microsoft maintains service tag IP ranges
 - Reduced attack surface: Only Business Central can reach your services
 - Compliance: Network segmentation requirement
-- No manual IP updates: Service tags auto-update
+- No manual IP updates: Service tags autoupdate
 
 **Trade-offs:**
 
@@ -541,7 +541,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 - Testing complexity: Difficult to test from development machines
 
 **Important limitation:**  
-Service tags represent ALL [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments globally. You cannot restrict to a single environment or region. For higher granularity, consider additional application-level authentication (API keys, OAuth).
+Service tags represent ALL [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments globally. You can't restrict to a single environment or region. For higher granularity, consider extra application-level authentication (API keys, OAuth).
 
 Learn more in [Use Azure security service tags](security-service-tags.md).
 
@@ -591,8 +591,8 @@ Learn more in [Security and Protection](security-and-protection.md), [Business C
 **Data protection verification:**
 
 1. Confirm encryption at rest:
-   - Verify TDE is enabled on database (online: automatic; on-prem: check SQL Server).
-   - For on-prem: Confirm backup encryption enabled.
+   - Verify TDE is enabled on database (online: automatic; on-premises: check SQL Server).
+   - For on-premises: Confirm backup encryption enabled.
    - Check for customer-managed key (CMK) if required by policy.
 
    Learn more in [Transparent Data Encryption](transparent-data-encryption.md) and [Data Encryption at Rest](security-online.md#data-isolation-and-encryption).
@@ -602,7 +602,7 @@ Learn more in [Security and Protection](security-and-protection.md), [Business C
    - Check certificate validity and strength.
    - Review network service tag configurations.
 
-   Learn more in [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).
+   Learn more in [Using Security Certificates with Business Central on-premises](../deployment/implement-security-certificates-production-environment.md).
 
 **Monitoring and detection:**
 
@@ -710,9 +710,9 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
    Learn more in [Kusto Query Language (KQL) overview](/azure/data-explorer/kusto/query/) and [Create a report in Business Central](/dynamics365/business-central/ui-work-report).
 
 1. Retention and archival:
-   - Change log: Archive monthly to separate table, retain 13 months.
+   - Change log: Archive monthly to separate table and retain 13 months.
    - SQL Audit files: Retain 90 days active, 7 years archive.
-   - Telemetry: Application Insights default 90 days, export to storage for long-term.
+   - Telemetry: Application Insights defaults 90 days, export to storage for long-term.
 
 **Benefits:**
 
@@ -729,13 +729,13 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
 - Privacy considerations: Logging employee activity requires policy disclosure
 
 **Best practice for auditors:**  
-Don't enable logging reactively after an incident. Implement comprehensive audit trails proactively. The data you didn't log yesterday cannot be retrieved for today's investigation.
+Don't enable logging reactively after an incident. Implement comprehensive audit trails proactively. The data you didn't log yesterday can't be retrieved for today's investigation.
 
 ## Related information
 
 [Security and Protection](security-and-protection.md)  
 [[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online Security](security-online.md)  
-[[!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises Security](security-onpremises.md)  
+[[!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises Security](security-onpremises.md)  
 [Security Tips for Business Users](security-users.md)  
 [Use Azure Service Tags](security-service-tags.md)  
 [Setting up Multifactor Authentication](multifactor-authentication.md)  
