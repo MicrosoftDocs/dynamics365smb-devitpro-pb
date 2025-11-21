@@ -64,7 +64,7 @@ Fine tune the agent's access and interface, including:
 
 ## Export an agent configuration
 
-As part of iterating to improve your agent, you can export and import the agent's configuration from the AI Playground to your local machine. The exported configuration includes:
+As part of iterating to improve your agent, you can export and import the agent's configuration from the AI playground to your local machine. The exported configuration includes:
 
 - **Instructions**: The detailed guidelines that define how the agent should behave.
 - **Tasks**: The specific actions the agent can perform.

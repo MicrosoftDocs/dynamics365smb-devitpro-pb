@@ -71,7 +71,7 @@ Each phase has specific requirements and limitations that guide your development
 
 ## High-level concepts
 
-Understanding the following key concepts helps you work effectively with AI Playground agents.
+Understanding the following key concepts helps you work effectively with AI playground agents.
 
 ## Prerequisites
 
