@@ -264,7 +264,7 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
       - **Users:** Include "All users" or specific [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user groups
       - **Target Resources:** Select "Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]". Learn more [Conditional Access: Target resources](/entra/identity/conditional-access/concept-conditional-access-cloud-apps)
       - **Access controls:** Grant access, but require multi-factor authentication
-   - **Session controls:** Consider sign-in frequency (for example, require re-auth every 7 days)
+      - **Session controls:** Consider sign-in frequency (for example, require re-auth every 7 days)
 
 1. Enable modern authentication methods:
    - In [Microsoft Entra admin center](https://entra.microsoft.com), select **Authentication methods** > **Policies**. Learn more in [Authentication methods in Microsoft Entra ID](/entra/identity/authentication/concept-authentication-methods).
@@ -326,11 +326,11 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
 
 1. Configure Approval Workflows:
    - In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to **Workflows**.
-   - Create approval workflow for each sensitive operation type
-   - Define approval hierarchy (for example, manager approval, finance director for large amounts)
-   - Set threshold amounts where applicable
-   - Configure notifications (email, in-app)
-   - Enable delegation for approver absence scenarios
+   - Create approval workflow for each sensitive operation type.
+   - Define approval hierarchy (for example, manager approval, finance director for large amounts).
+   - Set threshold amounts where applicable.
+   - Configure notifications (email, in-app).
+   - Enable delegation for approver absence scenarios.
 
    Learn more in [Use Approval Workflows](/dynamics365/business-central/across-how-use-approval-workflows).
 
