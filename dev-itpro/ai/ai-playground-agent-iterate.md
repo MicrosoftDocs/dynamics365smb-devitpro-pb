@@ -10,7 +10,7 @@ ms.date: 10/23/2025
 ms.update-cycle: 180-days
 ---
 
-# Iterate and manage an AI Playground Agent (preview)
+# Iterate and manage an AI playground agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -18,13 +18,13 @@ ms.update-cycle: 180-days
 
 ## Understand agent decision-making
 
-When iterating and managing an AI Playground Agent, it's important to understand how the agent makes decisions:
+When iterating and managing an AI playground agent, it's important to understand how the agent makes decisions:
 
 - Agents act based on instructions and the data available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 - Only decision points in logs reflect moments where instructions/context could affect choices.
 
-Learn more about writing effective instructions in [Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md) and best practices in [Best practices for prototyping with an AI Playground Agent (preview)](ai-playground-agent-best-practices.md).
+Learn more about writing effective instructions in [Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md) and best practices in [Best practices for prototyping with an AI playground agent (preview)](ai-playground-agent-best-practices.md).
 
 ## Troubleshooting tools and logs
 
@@ -87,8 +87,8 @@ To import the configuration, do the following:
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: AI Playground Agent (preview)](transparency-note-ai-playground-agent.md)  
-[Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
-[Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
-[Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)
+[Transparency Note: AI playground agent (preview)](transparency-note-ai-playground-agent.md)  
+[Create and activate an AI playground agent (preview)](ai-playground-agent-create.md)  
+[Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md)  
+[Set up AI playground agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
+[Best practices for prototyping with AI playground agent (preview)](ai-playground-agent-best-practices.md)

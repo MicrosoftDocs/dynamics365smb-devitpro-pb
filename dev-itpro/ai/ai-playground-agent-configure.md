@@ -1,5 +1,5 @@
 ---
-title: Configure instructions and tasks for an AI Playground Agent (preview)
+title: Configure Instructions and Tasks for an AI Playground Agent (preview)
 description: Learn how to configure instructions and tasks for an AI Playground Agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
@@ -12,13 +12,13 @@ ms.date: 11/19/2025
 ms.update-cycle: 180-days
 ---
 
-# Configure instructions and tasks for an AI Playground Agent (preview)
+# Configure instructions and tasks for an AI playground agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md). Finetune and improve your agent's behavior by following guidance in [Iterate and manage an AI Playground Agent (preview)](ai-playground-agent-iterate.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI playground agent (preview)](ai-playground-agent-create.md). Finetune and improve your agent's behavior by following guidance in [Iterate and manage an AI playground agent (preview)](ai-playground-agent-iterate.md).
 
 ## Getting started with agent instructions
 
@@ -254,8 +254,8 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: AI Playground Agent (preview)](transparency-note-ai-playground-agent.md)  
-[AI Playground Agent overview (preview)](ai-playground-agent.md)  
-[Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md)  
-[Set up AI Playground Agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
-[Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)
+[Transparency Note: AI playground agent (preview)](transparency-note-ai-playground-agent.md)  
+[AI playground agent overview (preview)](ai-playground-agent.md)  
+[Create and activate an AI playground agent (preview)](ai-playground-agent-create.md)  
+[Set up AI playground agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
+[Best practices for prototyping with AI playground agent (preview)](ai-playground-agent-best-practices.md)

@@ -10,13 +10,13 @@ ms.date: 09/10/2025
 ms.update-cycle: 180-days
 ---
 
-# Set up AI Playground Agent permissions and profiles (preview)
+# Set up AI playground agent permissions and profiles (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-The AI Playground Agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. 
+The AI playground agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. 
 
 ## Permissions
 
@@ -34,7 +34,7 @@ The agent is assigned to a profile (role) that determines which UI elements it c
 
 ### The agent and the UI
 
-The AI Playground Agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
+The AI playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
 
 On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
@@ -55,9 +55,9 @@ Once you have built and published a profile, you can assign it to the agent in t
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: AI Playground Agent (preview)](transparency-note-ai-playground-agent.md)  
-[Create and activate an AI Playground Agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions and tasks for an AI Playground Agent (preview)](ai-playground-agent-configure.md)  
-[Best practices for prototyping with AI Playground Agent (preview)](ai-playground-agent-best-practices.md)  
+[Transparency Note: AI playground agent (preview)](transparency-note-ai-playground-agent.md)  
+[Create and activate an AI playground agent (preview)](ai-playground-agent-create.md)  
+[Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md)  
+[Best practices for prototyping with AI playground agent (preview)](ai-playground-agent-best-practices.md)  
 [Designing profiles](../developer/devenv-design-profiles.md)  
 [Page customization object](../developer/devenv-page-customization-object.md)  
