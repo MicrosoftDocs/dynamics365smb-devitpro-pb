@@ -14,7 +14,7 @@ This guide provides scenario-based security recommendations organized by persona
 
 ## Partner Scenarios
 
-### Ensure my consultants don't have persistent access to all customers I manage
+### Ensure consultants don't have persistent access to all customers you manage
 
 **Context and problem:**  
 Partners managing multiple customers through GDAP (Granular Delegated Admin Privileges) face a security risk when consultants have persistent, always-on administrative access to customer environments. A compromised consultant account could lead to unauthorized access across all customers. Compliance requirements and customer trust demand minimizing standing privileges.
@@ -62,7 +62,7 @@ Here's the workflow for consultants when PIM is configured:
 - User friction: Consultants must request access before working, adding 1-5 minutes overhead
 - Administrative overhead: Might require approval workflows and monitoring
 
-### Secure API access for automation tools I build for customers
+### Secure API access for automation tools you build for customers
 
 **Context and problem:**  
 Partners often build automation tools, integrations, or monitoring solutions that need to call [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs across multiple customer tenants. Using personal admin accounts or long-lived secrets creates security risks and operational fragility.
