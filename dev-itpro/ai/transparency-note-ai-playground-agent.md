@@ -35,7 +35,7 @@ This tool is intended for:
 
 ## Capabilities
 
-Agents operate in Business Central using AI to identify and complete tasks based on their instructions and user configuration. An agent acts acts and interacts with the UI similar to a user, where what they can access can also be limited by Business Central’s same, extensive controls for security and role-tailoring.
+Agents operate in Business Central using AI to identify and complete tasks based on their instructions and user configuration. An agent acts and interacts with the UI similar to a user, where what they can access can also be limited by Business Central’s same, extensive controls for security and role-tailoring.
 
 - Agent instructions  
 
@@ -43,7 +43,7 @@ Agents operate in Business Central using AI to identify and complete tasks based
 
 - Agent configuration  
 
-  The agent is available directly within Business Central. You can configure and activate the agent and specify the users who can use the agent. In the agent playground there is no support for specifying additional configuration properties beyond the agent instruction prompt, permission and user profile, and the general agent capabilities like language, locale and time zone.
+  The agent is available directly within Business Central. You can configure and activate the agent and specify the users who can use the agent. In the agent playground, there's no support for specifying extra configuration properties beyond the agent instruction prompt, permission and user profile, and the general agent capabilities like language, locale, and time zone.
 
 - Task execution and interaction  
 
@@ -57,7 +57,7 @@ Agents operate in Business Central using AI to identify and complete tasks based
   
 - Access and permissions  
 
-  An agent runs as an independent user in Business Central and is granted access only to the necessary parts of the product. It is configured with its own permission set and UI role (profile) that limits the parts of the product and UI elements (such as pages, fields, and actions) it can access. It then runs with the intersection of the permissions given to the agent with the permissions of the user that approved the task - or the user that configured the agent, if task approval was not required.
+  An agent runs as an independent user in Business Central and is granted access only to the necessary parts of the product. It's configured with its own permission set and UI role (profile) that limits the parts of the product and UI elements (such as pages, fields, and actions) it can access. It then runs with the intersection of the permissions given to the agent with the permissions of the user that approved the task - or the user that configured the agent, if task approval wasn't required.
 
 - Transparency and change control  
 
@@ -95,7 +95,7 @@ Agents in Business Central are intended for use with Business Central online, Mi
 
 Because your AI features are attached to your Azure OpenAI Service key, you're responsible for the operating costs of Azure OpenAI resources throughout development, testing and when your customers use the feature in production or sandbox environments. For example, an AI feature that provides a handful of monthly suggestions to business owners will likely consume fewer resources and cost less. In contrast, an AI feature that generates a daily, two-page project summary for each employee will likely consume more resources and cost more.
 
-- Use for non-AI use cases or non-business use cases  
+- Use for non-AI use cases or nonbusiness use cases  
 
 The agent playground is built specifically to unlock the benefits and manage the challenges of autonomous agents in a business context. Using the playground for other purposes, or personal use cases might erode customer trust and understanding of these experiences.
 
@@ -117,8 +117,8 @@ Sensitive use cases require increased attention throughout their development lif
 
 We strongly recommend seeking legal advice from a specialist to understand the laws and regulations applicable to your use case. You're responsible for complying with all laws and regulations, including privacy, security, accessibility, and AI safety.
 
-- **Language Support**: English is the primary supported language; user interactions in other languages may yield inconsistent results. In addition, agent instructions should be defined in English to ensure optimal accuracy.
-- **User administration**: Agents are not allowed to access and modify user configurations for security reasons. This includes permissions, user information and profile assignment.
+- **Language Support**: English is the primary supported language; user interactions in other languages might yield inconsistent results. In addition, agent instructions should be defined in English to ensure optimal accuracy.
+- **User administration**: Agents aren't allowed to access and modify user configurations for security reasons. This includes permissions, user information, and profile assignment.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
@@ -132,7 +132,7 @@ We strongly encourage building and assigning permission sets and profile specifi
 Business Central users can maintain full transparency and control over the changes made by an agent by using other experiences that enable them to:
     - Receive notifications on the role center that come from the agent when it requires help or when the process demands human review. 
     - Get a better understanding of the specific task context and history (“timeline” view), including key steps involved in it.
-    - Get a detailed review of each entity created by the agent that surfaces all changes and suggestions made by the agent within a specific task. This behavior allows users to review and adjust changes, and then sign off on proceeding with the task.
+    - Get a detailed review of each entity created by the agent that surfaces all changes and suggestions made by the agent within a specific task. This behavior allows users to review and adjust changes, and then agree on proceeding with the task.
     - Get an overview of the agent's key performance indicators (KPIs) that summarize the impact of the agent's work.  
     
 Make sure you attend to the notifications raised by the agent to review and approve its work.
@@ -149,7 +149,7 @@ It's important to understand that while AI systems are valuable tools, they're n
 ## Eligible environments
 
 > [!IMPORTANT]
-> The feature is available only in sandbox environments for evaluation purposes at the current stage. The agents built in the playground cannot be deployed to a production environment yet.
+> The feature is available only in sandbox environments for evaluation purposes at the current stage. The agents built in the playground can't be deployed to a production environment yet.
 
 ## Limitations for specific industries, products, and topics
 
@@ -177,11 +177,12 @@ The agent playground itself doesn't determine the set of languages or environmen
 Large Language Models are trained on large volumes of data in different languages, but the overall corpus of data isn't evenly distributed across all world languages. This behavior means your specific agent use case might be more successful in some languages than others. Check language quality independently for each use case, decide which languages to support for each use case, and clearly document supported languages. We recommend seeking appropriate legal and professional advice from a specialist to understand the laws and regulations applicable to your choice of languages.
 
 ## Language of agent instructions (prompts)
+
 Business Central's built-in safeguards are designed to work with agent instruction prompts that are in English language. These safeguards are less effective when the prompts you write, the data you include in your prompts, or the end-user prompts you include with your prompt to Azure OpenAI Service aren't in English.
 
 ## Playground agent extensibility
-Agents created in the playground are not extensible. However, an agent will be able to use and react to page fields added by extensions, if the agent has permissions and access via its assigned profile to those added fields. [QT29.1]
 
+Agents created in the playground aren't extensible. However, an agent is able to use and react to page fields added by extensions, if the agent has permissions and access via its assigned profile to those added fields. [QT29.1]
 
 ## Evaluation of the Agent Playground
 
@@ -189,7 +190,7 @@ Agents created in the playground are not extensible. However, an agent will be a
 
 The toolkit is reviewed and tested throughout Microsoft's development lifecycle. It meets the requirements outlined in the [Responsible AI Standard](/ai/responsible-ai) that sets the bar for Microsoft's AI products and features.
 
-In addition, the private preview is aiming at evaluating success of the agent playground through early adoption of the technology by select partner developers.
+In addition, the preview is aiming at evaluating success of the agent playground through early adoption of the technology by select partner developers.
 
 ### Evaluating and integrating agents for your use
 
