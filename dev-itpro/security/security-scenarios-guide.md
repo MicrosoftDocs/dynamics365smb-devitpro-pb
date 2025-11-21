@@ -374,7 +374,7 @@ Start with high-risk, high-value transactions only. Expand separation of duties 
 
 ## Developer Scenarios
 
-### Secure API calls from my [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to external services
+### Secure API calls from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to external services
 
 **Context and problem:**  
 Your extension needs to call external APIs (payment gateways, shipping providers, tax services) and requires credentials or API keys. Hardcoding secrets in code or storing them in plain text creates severe security vulnerabilities.
