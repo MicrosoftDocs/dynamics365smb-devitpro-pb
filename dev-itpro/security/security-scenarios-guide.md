@@ -34,18 +34,18 @@ Learn more in [Microsoft Entra Privileged Identity Management](/entra/id-governa
 
 1. Configure PIM for time-bound access:
 
-   1. Enable Microsoft Entra ID Privileged Identity Management (requires Microsoft Entra ID P2 or Microsoft Entra ID Governance license). Learn more in [Start using Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-getting-started)
+   1. Enable Microsoft Entra ID Privileged Identity Management (requires Microsoft Entra ID P2 or Microsoft Entra ID Governance license). Learn more in [Start using Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-getting-started).
    1. Make the GDAP customer groups eligible for activation in PIM rather than permanently assigned. Learn more in [Assign eligibility for a group in Privileged Identity Management](/entra/id-governance/privileged-identity-management/groups-assign-member-owner). 
-   1. Configure activation requirements (for example, justification, approval workflow, maximum duration)
-   1. Set appropriate activation duration limits (for example, 4-8 hours)
+   1. Configure activation requirements (for example, justification, approval workflow, maximum duration).
+   1. Set appropriate activation duration limits (for example, 4-8 hours).
 
 **Consultant workflow:**
 Here's the workflow for consultants when PIM is configured:
 
-- When a consultant needs to work on a specific customer, they request activation of the relevant customer group in PIM
-- They provide business justification (for example, ticket number, task description)
-- Access is granted for the specified time window only
-- Access automatically expires after the configured duration
+- When a consultant needs to work on a specific customer, they request activation of the relevant customer group in PIM.
+- They provide business justification (for example, ticket number, task description).
+- Access is granted for the specified time window only.
+- Access automatically expires after the configured duration.
 
 **Benefits:**
 
@@ -126,19 +126,19 @@ Learn more in [Use Azure security service tags](security-service-tags.md) and [A
 **Scenario A: Destination service supports service tags natively**  
 (Azure SQL Database, Azure Key Vault, Azure Cosmos DB, and so on.)
 
-1. Navigate to your Azure resource's networking settings
-1. Configure firewall rules or network access controls
-1. Add a rule allowing traffic from the `Dynamics365BusinessCentral` service tag
-1. Remove any overly permissive rules (for example, "Allow all Azure services")
+1. Navigate to your Azure resource's networking settings.
+1. Configure firewall rules or network access controls.
+1. Add a rule allowing traffic from the `Dynamics365BusinessCentral` service tag.
+1. Remove any overly permissive rules (for example, "Allow all Azure services").
 
 **Scenario B: Destination is Azure Storage Account**  
 (Special case due to internal routing)
 
-1. Create an Azure Function as a proxy in the same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
-1. Restrict Azure Function access using service tag-based access restriction: allow `Dynamics365BusinessCentral`
-1. Create a private endpoint or virtual network integration from Azure Function to Storage Account
-1. Configure your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to call the Azure Function instead of Storage directly
-1. Azure Function proxies requests to Storage Account
+1. Create an Azure Function as a proxy in the same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+1. Restrict Azure Function access using service tag-based access restriction: allow `Dynamics365BusinessCentral`.
+1. Create a private endpoint or virtual network integration from Azure Function to Storage Account.
+1. Configure your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to call the Azure Function instead of Storage directly.
+1. Azure Function proxies requests to Storage Account.
 
 <a id="C"></a>**Scenario C: Destination supports IP allowlisting only**  
 (On-premises systems, non-Microsoft SaaS, custom APIs)
@@ -151,9 +151,9 @@ Learn more in [Use Azure security service tags](security-service-tags.md) and [A
    $bcTag.Properties.AddressPrefixes
    ```
 
-1. Configure firewall/network rules on destination to allow these IP ranges
-1. Monitor the `ChangeNumber` property and update rules when Microsoft updates the ranges
-1. Consider automating updates using Azure Automation or scheduled scripts
+1. Configure firewall/network rules on destination to allow these IP ranges.
+1. Monitor the `ChangeNumber` property and update rules when Microsoft updates the ranges.
+1. Consider automating updates using Azure Automation or scheduled scripts.
 
 **Benefits:**
 
@@ -251,9 +251,9 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
 **Guidance:**
 
 1. Assess current authentication methods:
-   - Review authentication methods report in Microsoft Entra ID
-   - Identify users still using SMS/voice call (less secure)
-   - Plan migration to Microsoft Authenticator app or FIDO2 security keys
+   - Review authentication methods report in Microsoft Entra ID.
+   - Identify users still using SMS/voice call (less secure).
+   - Plan migration to Microsoft Authenticator app or FIDO2 security keys.
 
 1. Configure Conditional Access policy:
 
@@ -275,14 +275,14 @@ Learn more in [Setting up Multifactor Authentication for Business Central](multi
 
    Learn more in [Manage authentication methods for Microsoft Entra ID](/entra/identity/authentication/concept-authentication-methods-manage).
 1. Plan rollout:
-   - Phase 1 (report-only mode): Monitor impact without enforcing
-   - Phase 2 (pilot group): Enable for IT and early adopters
-   - Phase 3 (broad deployment): Roll out to all users with communication plan
-   - Provide user training and help desk preparation
+   - Phase 1 (report-only mode): Monitor impact without enforcing.
+   - Phase 2 (pilot group): Enable for IT and early adopters.
+   - Phase 3 (broad deployment): Roll out to all users with communication plan.
+   - Provide user training and help desk preparation.
 
 1. Handle service accounts:
    - Use certificate-based authentication for automated processes. Learn more in [Certificate credentials](/entra/identity-platform/certificate-credentials).
-   - Never exempt service accounts from security policies
+   - Never exempt service accounts from security policies.
    - Consider managed identities for Azure-hosted integrations. Learn more in [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview).
 
 **Benefits:**
@@ -350,8 +350,8 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
 
 1. Handle exceptions:
    - Document emergency override procedures (requires C-level approval). Learn more in [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
-   - Temporary permission elevation should be logged and time-limited
-   - Post-incident review of all emergency actions
+   - Temporary permission elevation should be logged and time-limited.
+   - Post-incident review of all emergency actions.
 
 **Benefits:**
 
@@ -388,7 +388,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 
 1. Set up Azure Key Vault:
    - Create Azure Key Vault in same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for optimal performance. Learn more in [Quickstart: Create a key vault using the Azure portal](/azure/key-vault/general/quick-create-portal).
-   - Store API keys, connection strings, certificates as Key Vault secrets
+   - Store API keys, connection strings, certificates as Key Vault secrets.
    - Enable Key Vault logging to monitor secret access. Learn more in [Azure Key Vault logging](/azure/key-vault/general/logging).
    - Configure access policies or use Azure RBAC. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy) or [Azure Key Vault RBAC guide](/azure/key-vault/general/rbac-guide).
 
@@ -401,9 +401,9 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
    - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage. Learn more in [Isolated Storage](../developer/devenv-isolated-storage.md).
 
    **Option B - Managed identity (for online integrations):**
-   - If calling Azure Function/Logic App as intermediary
+   - If calling Azure Function/Logic App as intermediary.
    - Azure service uses managed identity to access Key Vault. Learn more in [Use managed identities for App Service and Azure Functions](/azure/app-service/overview-managed-identity).
-   - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in Business Central)
+   - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in Business Central).
 
 1. AL code pattern: Use AL [HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md) with certificate authentication.
 
@@ -428,9 +428,9 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
    ```
 
 1. Implement secret rotation:
-   - Rotate secrets every 90 days minimum
-   - Use Key Vault secret versions
-   - Update references in Business Central setup tables without code changes
+   - Rotate secrets every 90 days minimum.
+   - Use Key Vault secret versions.
+   - Update references in Business Central setup tables without code changes.
    - Monitor Key Vault access using Business Central telemetry to track secret retrieval patterns and troubleshoot failures. Learn more in [App Key Vault Secrets Telemetry](../administration/telemetry-app-key-vault-secret-trace.md).
 
 **Benefits:**
@@ -467,7 +467,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
      - **Option A - Virtual Network rule** (recommended): Create a virtual network with service endpoint enabled, then add a VNet rule that references the `Dynamics365BusinessCentral` service tag.
      - **Option B - Firewall IP rules**: Retrieve the IP address ranges from the `Dynamics365BusinessCentral` service tag using PowerShell (see [Scenario C](#C) above), then add firewall rules for each IP range.
 
-   1. Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+   1. Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
    1. Monitor denied connection attempts in Azure SQL audit logs. Learn more in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview).
 
    Learn more in [Azure SQL Database firewall rules](/azure/azure-sql/database/firewall-configure).
@@ -506,7 +506,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
    > For global distribution scenarios requiring multi-region load balancing and CDN capabilities, consider using [Azure Front Door](/azure/frontdoor/front-door-overview) with similar WAF custom rules. Learn more in [Configure IP restriction rules with WAF for Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-rate-limit-configure).
 
 1. Automate IP range updates to detect when Microsoft changes the Business Central service tag IP addresses:
-   1. Create an Azure Automation runbook or scheduled script that runs daily
+   1. Create an Azure Automation runbook or scheduled script that runs daily.
    1. Use the following PowerShell script to monitor for changes:
 
    ```powershell
@@ -520,9 +520,9 @@ Configure network access controls on Azure services using the `Dynamics365Busine
    }
    ```
 
-   - Store the `ChangeNumber` in Azure Table Storage or Key Vault for persistence
-   - Configure alerts to notify administrators when IP ranges are updated
-   - Test the automation in a non-production environment first
+   - Store the `ChangeNumber` in Azure Table Storage or Key Vault for persistence.
+   - Configure alerts to notify administrators when IP ranges are updated.
+   - Test the automation in a non-production environment first.
 
    Learn more in [What is Azure Automation?](/azure/automation/overview).
 
@@ -562,73 +562,73 @@ Learn more in [Security and Protection](security-and-protection.md), [Business C
 **Authentication controls verification:**
 
 1. Confirm MFA is enforced:
-   - Review Microsoft Entra Conditional Access policies
-   - Verify "Require MFA" is enabled for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app
-   - Check for exemptions or exclusions (should be minimal/none)
-   - Sample authentication logs to confirm MFA claims in tokens
+   - Review Microsoft Entra Conditional Access policies.
+   - Verify "Require MFA" is enabled for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app.
+   - Check for exemptions or exclusions (should be minimal/none).
+   - Sample authentication logs to confirm MFA claims in tokens.
 
 1. Check for legacy authentication blocks:
-   - Review sign-in logs for BasicAuth protocol usage
-   - Confirm Conditional Access blocks legacy auth protocols
-   - Verify no app passwords are enabled
+   - Review sign-in logs for BasicAuth protocol usage.
+   - Confirm Conditional Access blocks legacy auth protocols.
+   - Verify no app passwords are enabled.
 
 **Authorization controls verification:**
 
 1. Review separation of duties:
-   - Export user permission sets
-   - Verify no user has both "Create Payment" and "Approve Payment"
-   - Check approval workflow configurations
-   - Review override/emergency access logs
+   - Export user permission sets.
+   - Verify no user has both "Create Payment" and "Approve Payment".
+   - Check approval workflow configurations.
+   - Review override/emergency access logs.
 
 1. Audit privileged access:
-   - List all users with SUPER permission set
-   - Verify justification for each (should be minimal)
-   - Check if PIM is used for admin access (time-bound)
-   - Review admin action logs
+   - List all users with SUPER permission set.
+   - Verify justification for each (should be minimal).
+   - Check if PIM is used for admin access (time-bound).
+   - Review admin action logs.
 
    Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 **Data protection verification:**
 
 1. Confirm encryption at rest:
-   - Verify TDE is enabled on database (online: automatic; on-prem: check SQL Server)
-   - For on-prem: Confirm backup encryption enabled
-   - Check for customer-managed key (CMK) if required by policy
+   - Verify TDE is enabled on database (online: automatic; on-prem: check SQL Server).
+   - For on-prem: Confirm backup encryption enabled.
+   - Check for customer-managed key (CMK) if required by policy.
 
    Learn more in [Transparent Data Encryption](transparent-data-encryption.md) and [Data Encryption at Rest](security-online.md#data-isolation-and-encryption).
 
 1. Verify network encryption:
-   - Confirm HTTPS/TLS 1.2+ for all client connections
-   - Check certificate validity and strength
-   - Review network service tag configurations
+   - Confirm HTTPS/TLS 1.2+ for all client connections.
+   - Check certificate validity and strength.
+   - Review network service tag configurations.
 
    Learn more in [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).
 
 **Monitoring and detection:**
 
 1. Verify logging is enabled:
-   - Confirm Microsoft Entra sign-in logs retention (90+ days)
-   - Verify [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry is flowing to Application Insights
-   - Check Change Log is enabled for sensitive tables
-   - Review alert configurations
+   - Confirm Microsoft Entra sign-in logs retention (90+ days).
+   - Verify [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry is flowing to Application Insights.
+   - Check Change Log is enabled for sensitive tables.
+   - Review alert configurations.
 
 1. Test incident response:
-   - Verify security runbooks exist
-   - Confirm contact procedures are documented
-   - Review past security incident reports
+   - Verify security runbooks exist.
+   - Confirm contact procedures are documented.
+   - Review past security incident reports.
 
 **Compliance artifacts:**
 
 1. Collect evidence:
-   - Export Conditional Access policies (JSON)
-   - Screenshot approval workflow configurations
-   - Export user permission reports with dates
-   - Collect security alert reports from last quarter
+   - Export Conditional Access policies (JSON).
+   - Screenshot approval workflow configurations.
+   - Export user permission reports with dates.
+   - Collect security alert reports from last quarter.
 
 1. Document findings:
-   - Use standardized control testing templates
-   - Rate controls: Effective / Needs Improvement / Ineffective
-   - Provide remediation recommendations with priority
+   - Use standardized control testing templates.
+   - Rate controls: Effective / Needs Improvement / Ineffective.
+   - Provide remediation recommendations with priority.
 
 **Benefits:**
 
@@ -669,8 +669,8 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
      - Customer, Vendor, Bank Account
      - G/L Entry, Customer Ledger Entry, Vendor Ledger Entry
      - User, User Group, Permission Set
-   1. Select fields to track: All fields versus critical fields only
-   1. Consider performance impact (logging adds overhead)
+   1. Select fields to track: All fields versus critical fields only.
+   1. Consider performance impact (logging adds overhead).
 
    Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)
 1. Configure SQL Server Auditing (on-premises):
@@ -708,9 +708,9 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
    Learn more in [Kusto Query Language (KQL) overview](/azure/data-explorer/kusto/query/) and [Create a report in Business Central](/dynamics365/business-central/ui-work-report).
 
 1. Retention and archival:
-   - Change Log: Archive monthly to separate table, retain 13 months
-   - SQL Audit files: Retain 90 days active, 7 years archive
-   - Telemetry: Application Insights default 90 days, export to storage for long-term
+   - Change Log: Archive monthly to separate table, retain 13 months.
+   - SQL Audit files: Retain 90 days active, 7 years archive.
+   - Telemetry: Application Insights default 90 days, export to storage for long-term.
 
 **Benefits:**
 
