@@ -393,17 +393,17 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
    - Configure access policies or use Azure RBAC. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy) or [Azure Key Vault RBAC guide](/azure/key-vault/general/rbac-guide).
 
 1. Access from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
-   - Option A - App registration with certificate:
-     - Create app registration in customer's Microsoft Entra ID. Learn more in [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
-     - Upload certificate to app registration (do NOT use client secrets). Learn more in [Certificate credentials](/entra/identity-platform/certificate-credentials).
-     - Grant app registration "Get Secret" permission on Key Vault. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy).
-     - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage. Learn more in [Isolated Storage](../developer/devenv-isolated-storage.md).
+   
+   **Option A - App registration with certificate:**
+   - Create app registration in customer's Microsoft Entra ID. Learn more in [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
+   - Upload certificate to app registration (do NOT use client secrets). Learn more in [Certificate credentials](/entra/identity-platform/certificate-credentials).
+   - Grant app registration "Get Secret" permission on Key Vault. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy).
+   - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage. Learn more in [Isolated Storage](../developer/devenv-isolated-storage.md).
 
-
-   - Option B - Managed identity (for online integrations):
-     - If calling Azure Function/Logic App as intermediary
-     - Azure service uses managed identity to access Key Vault. Learn more in [Use managed identities for App Service and Azure Functions](/azure/app-service/overview-managed-identity).
-     - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in Business Central)
+   **Option B - Managed identity (for online integrations):**
+   - If calling Azure Function/Logic App as intermediary
+   - Azure service uses managed identity to access Key Vault. Learn more in [Use managed identities for App Service and Azure Functions](/azure/app-service/overview-managed-identity).
+   - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in Business Central)
 
 1. AL code pattern: Use AL [HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md) with certificate authentication.
 
@@ -460,31 +460,31 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 **Guidance:**
 
 1. For Azure SQL Database:
-   - In [Azure portal](https://portal.azure.com), open your SQL logical server (not individual database), then select **Networking**.
-   - Under **Public access**, clear the **Allow Azure services and resources to access this server** checkbox.
-   - To restrict access to Business Central IP ranges, use one of these approaches:
+   1. In [Azure portal](https://portal.azure.com), open your SQL logical server (not individual database), then select **Networking**.
+   1. Under **Public access**, clear the **Allow Azure services and resources to access this server** checkbox.
+   1. To restrict access to Business Central IP ranges, use one of these approaches:
 
      - **Option A - Virtual Network rule** (recommended): Create a virtual network with service endpoint enabled, then add a VNet rule that references the `Dynamics365BusinessCentral` service tag.
      - **Option B - Firewall IP rules**: Retrieve the IP address ranges from the `Dynamics365BusinessCentral` service tag using PowerShell (see [Scenario C](#C) above), then add firewall rules for each IP range.
 
-   - Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
-   - Monitor denied connection attempts in Azure SQL audit logs. Learn more in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview).
+   1. Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+   1. Monitor denied connection attempts in Azure SQL audit logs. Learn more in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview).
 
    Learn more in [Azure SQL Database firewall rules](/azure/azure-sql/database/firewall-configure).
 
 1. For Azure Key Vault:
-   - In [Azure portal](https://portal.azure.com), open your key vault, and select **Networking** (under **Settings**).
-   - Under **Firewalls and virtual networks**, select **Allow public access from specific virtual networks and IP addresses** (or **Disable public access** if you want to block all public access).
-   - To restrict access to Business Central IP ranges, use one of these approaches:
+   1. In [Azure portal](https://portal.azure.com), open your key vault, and select **Networking** (under **Settings**).
+   1. Select **Allow public access from specific virtual networks and IP addresses** (or **Disable public access** if you want to block all public access).
+   1. To restrict access to Business Central IP ranges, use one of these approaches:
      - **Option A - Virtual Network** (recommended): Add your virtual network with a service endpoint for Microsoft.KeyVault, which can then reference service tags at the network level.
      - **Option B - Firewall rules**: In the **Firewall** section, add the IP address ranges from the `Dynamics365BusinessCentral` service tag (retrieve them using PowerShell as shown in [Scenario C](#C) above).
 
    Learn more in [Configure Azure Key Vault networking settings](/azure/key-vault/general/network-security).
 
 1. For custom APIs behind Azure Application Gateway, create web application firewall (WAF) and Network Security Group (NSG) rules:
-   - In [Azure portal](https://portal.azure.com), go to your **Application Gateway** > **Web application firewall** (under Settings).
-   - Select your **WAF Policy** (or create one).
-   - Under **Custom rules**, add a new rule:
+   1. In [Azure portal](https://portal.azure.com), go to your **Application Gateway** > **Web application firewall** (under Settings).
+   1. Select your **WAF Policy** (or create one).
+   1. Under **Custom rules**, add a new rule:
      - **Rule type**: Match rule
      - **Priority**: Set appropriately (lower numbers = higher priority)
      - **Match conditions**:
@@ -494,7 +494,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
      - **Action**: Allow
 
      Learn more in [Create custom rules for Web Application Firewall v2](/azure/web-application-firewall/ag/create-custom-waf-rules).
-   - Create a Network Security Group (NSG) rule for your backend subnet:
+   1.  Create a Network Security Group (NSG) rule for your backend subnet:
      - **Source**: Service Tag - `Dynamics365BusinessCentral`
      - **Destination**: Your backend subnet
      - **Destination port**: 443
@@ -506,8 +506,8 @@ Configure network access controls on Azure services using the `Dynamics365Busine
    > For global distribution scenarios requiring multi-region load balancing and CDN capabilities, consider using [Azure Front Door](/azure/frontdoor/front-door-overview) with similar WAF custom rules. Learn more in [Configure IP restriction rules with WAF for Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-rate-limit-configure).
 
 1. Automate IP range updates to detect when Microsoft changes the Business Central service tag IP addresses:
-   - Create an Azure Automation runbook or scheduled script that runs daily
-   - Use the following PowerShell script to monitor for changes:
+   1. Create an Azure Automation runbook or scheduled script that runs daily
+   1. Use the following PowerShell script to monitor for changes:
 
    ```powershell
    # Script to sync Business Central IP ranges to firewall
