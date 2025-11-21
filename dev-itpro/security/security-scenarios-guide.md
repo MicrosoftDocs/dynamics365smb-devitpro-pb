@@ -183,7 +183,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 
 1. Set up Microsoft Entra ID sign-in logging:
    1. In [Microsoft Entra admin center](https://entra.microsodt.com), open the Sign-in Logs. Learn more in [View logs through the Microsoft Entra admin center](/entra/identity/monitoring-health/howto-access-activity-logs?tabs=microsoft-entra-activity-logs%2Carchive-activity-logs-to-a-storage-account#view-logs-through-the-microsoft-entra-admin-center).
-   1. [Configure diagnostic settings](/entra/identity/monitoring-health/howto-configure-diagnostic-settings) to route logs to:
+   1. Configure diagnostic settings to route logs to:
 
       - [Azure Monitor Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) (recommended for querying)
       - [Azure Storage](/azure/storage/common/storage-account-overview) (for long-term retention)
@@ -325,7 +325,7 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
    - Customer credit limit increases
 
 1. Configure Approval Workflows:
-   - Navigate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] → Workflows
+   - In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to **Workflows**.
    - Create approval workflow for each sensitive operation type
    - Define approval hierarchy (for example, manager approval, finance director for large amounts)
    - Set threshold amounts where applicable
@@ -335,7 +335,7 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
    Learn more in [Use Approval Workflows](/dynamics365/business-central/across-how-use-approval-workflows).
 
 1. Design segregated permission sets:
-   - Requester role: Can create payment journals but cannot post
+   - Requester role: Can create payment journals but can't post
    - Approver role: Can approve but cannot create their own requests
    - Posting role: Can only post pre-approved transactions
    - Ensure no single user has all three capabilities
@@ -382,27 +382,27 @@ Your extension needs to call external APIs (payment gateways, shipping providers
 **Solution:**  
 Use Azure Key Vault for secret storage, accessed via secure authentication patterns from AL code.
 
-Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and [HttpClient Data Type](../developer/methods-auto/httpclient/httpclient-data-type.md).
+Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview), [App Key Vault Secrets Telemetry](../administration/telemetry-app-key-vault-secret-trace.md), and [HttpClient Data Type](../developer/methods-auto/httpclient/httpclient-data-type.md).
 
 **Guidance:**
 
 1. Set up Azure Key Vault:
-   - Create Azure Key Vault in same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for optimal performance
+   - Create Azure Key Vault in same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for optimal performance. Learn more in [Quickstart: Create a key vault using the Azure portal](/azure/key-vault/general/quick-create-portal).
    - Store API keys, connection strings, certificates as Key Vault secrets
-   - Enable Key Vault logging to monitor secret access
-   - Configure access policies or use Azure RBAC
+   - Enable Key Vault logging to monitor secret access. Learn more in [Azure Key Vault logging](/azure/key-vault/general/logging).
+   - Configure access policies or use Azure RBAC. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy) or [Azure Key Vault RBAC guide](/azure/key-vault/general/rbac-guide).
 
 1. Access from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
    - Option A - App registration with certificate:
-     - Create app registration in customer's Microsoft Entra ID
-     - Upload certificate to app registration (do NOT use client secrets)
-     - Grant app registration "Get Secret" permission on Key Vault
-     - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage
-     - Use AL HttpClient with certificate authentication
+     - Create app registration in customer's Microsoft Entra ID. Learn more in [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
+     - Upload certificate to app registration (do NOT use client secrets). Learn more in [Certificate credentials](/entra/identity-platform/certificate-credentials).
+     - Grant app registration "Get Secret" permission on Key Vault. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy).
+     - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage. Learn more in [Isolated Storage](../developer/devenv-isolated-storage.md).
+     - Use AL HttpClient with certificate authentication. Learn more in [HttpClient Data Type](../developer/methods-auto/httpclient/httpclient-data-type.md).
 
    - Option B - Managed identity (for online integrations):
      - If calling Azure Function/Logic App as intermediary
-     - Azure service uses managed identity to access Key Vault
+     - Azure service uses managed identity to access Key Vault. Learn more in [Use managed identities for App Service and Azure Functions](/azure/app-service/overview-managed-identity).
      - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in Business Central)
 
 1. AL code pattern:
