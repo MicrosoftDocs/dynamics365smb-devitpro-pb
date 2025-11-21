@@ -182,7 +182,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 **Guidance:**
 
 1. Set up Microsoft Entra ID sign-in logging:
-   1. In [Microsoft Entra admin center](https://entra.microsodt.com), open the Sign-in Logs. Learn more in [View logs through the Microsoft Entra admin center](/entra/identity/monitoring-health/howto-access-activity-logs?tabs=microsoft-entra-activity-logs%2Carchive-activity-logs-to-a-storage-account#view-logs-through-the-microsoft-entra-admin-center).
+   1. In [Microsoft Entra admin center](https://entra.microsodt.com), open the Sign-in Logs. Learn more in [View logs through the Microsoft Entra admin center](/entra/identity/monitoring-health/howto-access-activity-logs#view-logs-through-the-microsoft-entra-admin-center).
    1. Configure diagnostic settings to route logs to:
 
       - [Azure Monitor Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) (recommended for querying)
@@ -214,7 +214,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 1. Monitor [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry:
 
    1. Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry to Azure Application Insights. Learn more in [Turn environment telemetry on or off](../administration/telemetry-enable-application-insights.md).
-   1. Monitor authorization failures and permission errors and API authentication failures for service accounts Learn more in [Authorization trace telemetry](../administration/telemetry-authorization-trace.md) [Permission errors trace telemetry](../administration/.telemetry-permission-error-trace.md), and [Web Services telemetry](../administration/telemetry-webservices-trace.md).
+   1. Monitor authorization failures and permission errors and API authentication failures for service accounts Learn more in [Authorization trace telemetry](../administration/telemetry-authorization-trace.md) [Permission errors trace telemetry](../administration/telemetry-permission-error-trace.md), and [Web Services telemetry](../administration/telemetry-webservices-trace.md).
 
 1. Establish response procedures:
 
@@ -431,7 +431,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
    - Rotate secrets every 90 days minimum.
    - Use Key Vault secret versions.
    - Update references in Business Central setup tables without code changes.
-   - Monitor Key Vault access using Business Central telemetry to track secret retrieval patterns and troubleshoot failures. Learn more in [App Key Vault Secrets Telemetry](../administration/telemetry-app-key-vault-secret-trace.md).
+   - Monitor Key Vault access using Business Central telemetry to track secret retrieval patterns and troubleshoot failures. Learn more in [App Key Vault Secrets Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
 **Benefits:**
 
