@@ -28,7 +28,7 @@ Learn more about the AI playground agent in [AI playground agent overview (previ
 
 Effective agent instructions are specific, actionable, and contextual:
 
-**Good example:**
+#### Good example
 
 ```text
 You're a customer service agent for a Business Central implementation. 
@@ -40,7 +40,7 @@ When users ask about customer information, search the Customer table and provide
 Always format responses in a clear, professional manner and ask clarifying questions if the request is ambiguous.
 ```
 
-**Poor example:**
+#### Poor example
 
 ```text
 Help users with customer stuff.

@@ -72,13 +72,13 @@ Provide your draft instructions to AI tools like Copilot, which can help you:
 
 ### Example transformation
 
-#### Before (initial draft)
+#### Before - initial draft
 
 ```text
 Check customer credit when creating sales orders. Stop if over limit.
 ```
 
-#### After (AI-refined with best practices)
+#### After - AI-refined with best practices
 
 ```text
 **RESPONSIBILITY**: Monitor customer credit limits during sales order creation
@@ -149,7 +149,7 @@ As you refine your agent instructions, consider incorporating these advanced pat
 ##### When to request user intervention
 
 - The agent should request user intervention when it can't proceed due to missing data, ambiguous situations, or validation errors
-- Examples: incomplete customer information, items not found in inventory, unexpected error messages
+- Examples can be; incomplete customer information, items aren't found in inventory, or unexpected error messages
 
 ##### User review requirements
 
@@ -159,20 +159,22 @@ As you refine your agent instructions, consider incorporating these advanced pat
 
 ##### Response handling
 
-- Agents draft messages based on instructions but must confirm before sending
+- Agents draft messages based on instructions but they must confirm before sending
 - Provide clear summaries of actions taken
 
 #### Memory and state management
 
 Agents retain a history of their actions and searches but don't store the full state of every page. Include explicit instructions to memorize specific key-value pairs when needed, which can be referenced in later steps.
 
-Example: "Memorize the external document reference from the newly created sales quote for use in follow-up communications."
+An example of giving such instructions could be: "Memorize the external document reference from the newly created sales quote for use in follow-up communications."
 
 #### Error handling and validation
 
 - **Validate inputs**: Ensure all required fields are filled before proceeding with critical actions
 - **Use emphasis**: Highlight critical validation points with bold text or UPPERCASE
-- Examples: "**DO NOT** proceed until the requested date is entered" or "**ALWAYS** confirm customer details are complete before creating quotes"
+- Examples could be;  
+  "**DO NOT** proceed until the requested date is entered"  
+  "**ALWAYS** confirm customer details are complete before creating quotes"
 
 ### Defining tasks
 
