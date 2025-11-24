@@ -75,7 +75,7 @@ Provide your draft instructions to AI tools like Copilot, which can help you:
 #### Before - initial draft
 
 ```text
-Check customer credit when creating sales orders. Stop if over limit.
+Check customer credit for the given sales order. Document the result.
 ```
 
 #### After - AI-refined with best practices
@@ -89,13 +89,15 @@ Check customer credit when creating sales orders. Stop if over limit.
 - Suggest alternative payment terms when applicable
 
 **INSTRUCTIONS**:
-1. When a sales order is created, retrieve the customer's current balance and credit limit
+1. For the given sales order, retrieve the customer's current balance and credit limit
 2. Calculate available credit: Credit Limit - Current Balance
 3. If available credit is less than the order amount:
    a. **DO NOT** proceed with order creation
    b. Request user intervention with details: current balance, credit limit, order amount
    c. Suggest alternative payment terms (for example; Cash, Prepayment)
 4. Document the credit check result for audit purposes
+   a. Add a new comment line with the credit check details to the **Comments** section of the sales order
+   b. Example format: "Credit Check - [Date/Time] | Available Credit: [Amount] | Order Amount: [Amount] | Status: [APPROVED/BLOCKED]"
 ```
 
 ### Community-driven best practices
@@ -127,10 +129,9 @@ At the core of defining agents is expressing goals and instructions in natural l
 - Ground AI refinements with proven examples
 - Contribute your own successful patterns back to the community
 
-#### Focus on outcomes, not formatting
+#### Focus on outcomes
 
-- Describe what the agent should accomplish, not how to format the text
-- Let AI handle the structuring, emphasis, and formatting details
+- Describe what the agent should accomplish
 - Concentrate on business logic, edge cases, and user experience
 
 #### Agent-specific considerations
@@ -170,6 +171,7 @@ As you refine your agent instructions, consider incorporating these advanced pat
 Agents retain a history of their actions and searches but don't store the full state of every page. Include explicit instructions to memorize specific key-value pairs when needed, which can be referenced in later steps.
 
 An example of giving such instructions could be: "Memorize the external document reference from the newly created sales quote for use in follow-up communications."
+Consider providing an example of what the memorized information should look like to improve accuracy, eg. "external document reference: ABCD1234 Document Number: 1234"
 
 #### Error handling and validation
 
@@ -183,25 +185,187 @@ An example of giving such instructions could be: "Memorize the external document
 
 #### How to trigger your agent
 
-You invoke your agent by manually creating a task for it because the current public preview doesn't support automatic triggers, such as incoming mails, system events, or recurring schedules. 
+There are two ways to trigger a task for your agent:
+1. Manually via the **Agent tasks** page in [!INCLUDE [prod_short](../includes/prod_short.md)] through the **Create task** action
+2. Through the **Tasks AL API** which allows for integrating both with UI elements such as actions and with events such as receiving an email or a sales order posting
 
-When creating a task, you can specify an extra message that gets passed to the agent to complement the general instructions with specific details for that particular task. As you're testing and prototyping your agent, you can create tasks directly from the **AI Playground Agent** setup page. Each task you create appears in the agent's task queue, where the agent picks it up and process it according to its instructions. Tasks can be stopped and restarted as needed.
+When creating a task, you can specify an extra message that gets passed to the agent to complement the general instructions with specific details for that particular task. Each task you create appears in the agent's task queue, where the agent picks it up and process it according to its instructions. Tasks can be stopped and restarted as needed.
 
-#### Workarounds for testing scenarios
+#### Integrating agents with common scenarios
 
-The public preview of the agent playground doesn't include built-in integrations for automatically triggering your custom agents based on, for example:
+The Tasks AL API allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows.
 
-- Incoming emails
-- System events  
-- Recurring schedules
+##### Using the Agent Task Builder API
 
-You can simulate these trigger scenarios manually:
+The `Agent Task Builder` codeunit provides the primary interface for creating agent tasks. Here are common integration patterns:
 
-- **Email simulation**: Insert email headers and body content in the agent task message to test email-based workflows
-- **Event simulation**: Manually trigger agents with tasks that represent the events you want to test
-- **Recurrence simulation**: Create tasks manually at intervals to test recurring scenarios
+###### Trigger from a page action
 
-This manual approach allows you to validate your agent's behavior across different trigger scenarios during the prototyping phase.
+Add a page action that creates an agent task when clicked:
+
+```al
+action(CreateAgentTask)
+{
+    Caption = 'Send to Agent';
+    Image = Robot;
+
+    trigger OnAction()
+    var
+        AgentTaskBuilder: Codeunit "Agent Task Builder";
+        AgentTask: Record "Agent Task";
+    begin
+        AgentTask := AgentTaskBuilder
+            .Initialize(AgentUserSecurityId, 'Review Sales Order')
+            .SetExternalId('SO-' + Rec."No.")
+            .AddTaskMessage('Sales Team', 'Please review sales order ' + Rec."No." + ' for customer ' + Rec."Sell-to Customer Name")
+            .Create();
+    end;
+}
+```
+
+###### Trigger from business events
+
+Respond to system events like document posting:
+
+```al
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnAfterSalesInvHeaderInsert', '', false, false)]
+local procedure OnAfterSalesInvoicePost(var SalesInvHeader: Record "Sales Invoice Header")
+var
+    AgentTaskBuilder: Codeunit "Agent Task Builder";
+    AgentTaskMessageBuilder: Codeunit "Agent Task Message Builder";
+    AgentTask: Record "Agent Task";
+begin
+    // Only create task for high-value invoices
+    if SalesInvHeader.Amount > 10000 then begin
+        AgentTaskMessageBuilder
+            .Initialize('System', 'New high-value invoice posted: ' + SalesInvHeader."No." + ' for customer ' + SalesInvHeader."Sell-to Customer Name" + '. Amount: ' + Format(SalesInvHeader.Amount))
+            .SetSkipMessageSanitization(true);
+
+        AgentTask := AgentTaskBuilder
+            .Initialize(AgentUserSecurityId, 'Review High-Value Invoice')
+            .SetExternalId('INV-' + SalesInvHeader."No.")
+            .AddTaskMessage(AgentTaskMessageBuilder)
+            .Create();
+    end;
+end;
+```
+
+###### Simulate email-based triggers
+
+For testing email integration scenarios, format the task message to include email metadata:
+
+```al
+local procedure CreateEmailSimulationTask(FromAddress: Text; Subject: Text; Body: Text)
+var
+    AgentTaskBuilder: Codeunit "Agent Task Builder";
+    AgentTaskMessageBuilder: Codeunit "Agent Task Message Builder";
+    MessageText: Text;
+begin
+    MessageText := StrSubstNo('EMAIL FROM: %1\nSUBJECT: %2\n\n%3', FromAddress, Subject, Body);
+    
+    AgentTaskMessageBuilder
+        .Initialize(FromAddress, MessageText)
+        .SetSkipMessageSanitization(true);
+
+    AgentTaskBuilder
+        .Initialize(AgentUserSecurityId, Subject)
+        .SetExternalId('EMAIL-' + Format(CurrentDateTime))
+        .AddTaskMessage(AgentTaskMessageBuilder)
+        .Create();
+end;
+```
+
+###### Add attachments to tasks
+
+When your task needs to include files for the agent to process:
+
+```al
+local procedure CreateTaskWithAttachment()
+var
+    AgentTaskBuilder: Codeunit "Agent Task Builder";
+    AgentTaskMessageBuilder: Codeunit "Agent Task Message Builder";
+    TempBlob: Codeunit "Temp Blob";
+    InStr: InStream;
+begin
+    // Prepare your file content in InStr
+    TempBlob.CreateInStream(InStr);
+    
+    AgentTaskMessageBuilder
+        .Initialize('User', 'Please process this document')
+        .AddAttachment('document.pdf', 'application/pdf', InStr);
+
+    AgentTaskBuilder
+        .Initialize(AgentUserSecurityId, 'Process Document')
+        .AddTaskMessage(AgentTaskMessageBuilder)
+        .Create();
+end;
+```
+
+###### Add messages to existing tasks
+
+Continue conversations by adding new messages to existing agent tasks:
+
+```al
+local procedure AddMessageToExistingTask(ExternalId: Text; MessageText: Text)
+var
+    AgentTask: Codeunit "Agent Task";
+    AgentTaskRecord: Record "Agent Task";
+    AgentTaskMessageBuilder: Codeunit "Agent Task Message Builder";
+begin
+    // Get the existing task by its external ID
+    AgentTaskRecord := AgentTask.GetTaskByExternalId(AgentUserSecurityId, ExternalId);
+    
+    // Add a new message to the task
+    AgentTaskMessageBuilder
+        .Initialize('User', MessageText)
+        .SetRequiresReview(true)
+        .AddToTask(AgentTaskRecord);
+    
+    // Restart the task if it's completed or stopped
+    if AgentTask.CanSetStatusToReady(AgentTaskRecord) then
+        AgentTask.SetStatusToReady(AgentTaskRecord);
+end;
+```
+
+This pattern is useful for:
+- Providing additional information after the initial task creation
+- Continuing multi-turn conversations with your agent
+- Simulating email thread continuations
+
+###### Manage task lifecycle
+
+Monitor and control running tasks:
+
+```al
+local procedure ManageAgentTask(var AgentTask: Record "Agent Task")
+var
+    AgentTaskCU: Codeunit "Agent Task";
+begin
+    // Check task status
+    if AgentTaskCU.IsTaskRunning(AgentTask) then
+        Message('Task is still running');
+    
+    if AgentTaskCU.IsTaskCompleted(AgentTask) then
+        Message('Task completed successfully');
+    
+    // Restart a stopped task
+    if AgentTaskCU.CanSetStatusToReady(AgentTask) then
+        AgentTaskCU.SetStatusToReady(AgentTask);
+    
+    // Stop a running task
+    AgentTaskCU.StopTask(AgentTask, true);
+end;
+```
+
+##### Best practices for API integration
+
+- **Use meaningful External IDs**: Set unique external IDs that connect tasks to your business records (for example email thread IDs)
+- **Include context in messages**: Provide all the specific details the agent needs to complete the task
+- **Handle task creation errors**: Wrap task creation in error handling to manage exceptions gracefully
+- **Test with realistic data**: Use actual business scenarios to validate your integration
+- **Monitor task completion**: Implement follow-up logic based on task status changes
+
+This API-based approach allows you to build automated workflows during the prototyping phase, which can later be refined when migrating to production features.
 
 ## Testing and continuous improvement
 
@@ -225,9 +389,18 @@ Test your instructions thoroughly to ensure they lead to the desired behavior, a
 
 ### Advanced capabilities
 
-**Page-specific instructions** You can provide dynamic prompts based on the specific pages or contexts the agent encounters. Use conditional logic for instructions tied to particular scenarios.
+**Page-specific instructions** You can provide dynamic prompts based on the specific page that the agent encounters. Use conditional logic for instructions tied to particular scenarios.
 
-**Additional tools** Agents can use advanced tools like field setting, lookups, and action invocation. Include specific keywords in your instructions that help the agent utilize these tools effectively within the agent runtime.
+```
+Consider the following fields:
+{% if page.id == 42 %}
+Field "The answer" - An important answer to questions about the universe
+{% else %}
+Field "Business data" - Relevant business information
+{% endif %}
+```
+
+**Additional tools** Agents can use tools like field setting, lookups, and action invocation. Include specific keywords in your instructions that help the agent utilize these tools effectively within the agent runtime. You can find a list of these tools in the log entry details for individual log entries.
 
 ## Frequently asked questions
 
@@ -237,7 +410,7 @@ Start with enough detail to convey the business logic and key decision points. Y
 
 ### Can I update instructions after the agent is deployed?
 
-Yes, agent instructions can be updated dynamically. Test your changes in a sandbox environment first, then deploy updates to your production agent. Remember that agents must be deactivated to modify certain settings.
+Yes, agent instructions can be updated dynamically. Remember that agents must be deactivated to modify certain settings.
 
 ### How do I know if my instructions are working?
 
