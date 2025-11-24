@@ -149,7 +149,10 @@ As you refine your agent instructions, consider incorporating these advanced pat
 ##### When to request user intervention
 
 - The agent should request user intervention when it can't proceed due to missing data, ambiguous situations, or validation errors
-- Examples can be; incomplete customer information, items aren't found in inventory, or unexpected error messages
+- Examples could be:  
+  - incomplete customer information  
+  - items aren't found in inventory  
+  - unexpected error messages
 
 ##### User review requirements
 
@@ -172,7 +175,7 @@ An example of giving such instructions could be: "Memorize the external document
 
 - **Validate inputs**: Ensure all required fields are filled before proceeding with critical actions
 - **Use emphasis**: Highlight critical validation points with bold text or UPPERCASE
-- Examples could be;  
+- Examples could be:  
   "**DO NOT** proceed until the requested date is entered"  
   "**ALWAYS** confirm customer details are complete before creating quotes"
 
@@ -247,7 +250,7 @@ Monitor the agent's behavior through the timeline view in the playground. Look f
 
 ### Where can I find example instructions and patterns?
 
-The [!INCLUDE [prod_short](../includes/prod_short.md)] community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance.
+The [!INCLUDE [prod_short](../includes/prod_short.md)] community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance. <!--link-->
 
 ### Should I write different instructions for different environments?
 
