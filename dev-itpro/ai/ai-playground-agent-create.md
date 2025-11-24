@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 10/30/2025
+ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
@@ -19,6 +19,8 @@ ms.update-cycle: 180-days
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
 You can create an AI playground agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. The Agent can be given specific instructions and tasks to see how it performs in different scenarios. The Agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
+
+Learn more about the AI playground agent in [AI playground agent overview (preview)](ai-playground-agent.md).
 
 ## Prerequisites
 

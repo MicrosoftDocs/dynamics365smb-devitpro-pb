@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 09/10/2025
+ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-The AI playground agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. 
+The AI playground agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more about the AI playground agent in [AI playground agent overview (preview)](ai-playground-agent.md).
 
 ## Permissions
 

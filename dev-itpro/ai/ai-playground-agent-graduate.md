@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 09/10/2025
+ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
@@ -19,7 +19,7 @@ ms.update-cycle: 180-days
 <!-->
 SDK developers can graduate an AI playground agent to a production-ready Copilot feature by converting the agent's instructions, tasks, and permissions into an AL extension. This process involves translating the prototyped functionality into code that can be deployed in a production environment.-->
 
-Developers can graduate an AI playground agent to a production-ready Copilot feature by converting the agent's instructions, tasks, and permissions into an AL extension. This process involves translating the prototyped functionality into code that can be deployed in a production environment
+Developers can graduate an AI playground agent to a production-ready Copilot feature by converting the agent's instructions, tasks, and permissions into an AL extension. This process involves translating the prototyped functionality into code that can be deployed in a production environment. Learn more about the AI playground agent in [AI playground agent overview (preview)](ai-playground-agent.md).
 
 ## Steps to graduate an AI playground agent
 

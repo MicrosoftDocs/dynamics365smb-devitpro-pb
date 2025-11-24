@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 10/24/2025
+ms.date: 12/95/2025
 ms.update-cycle: 180-days
 ---
 
@@ -19,6 +19,8 @@ ms.update-cycle: 180-days
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
 Following these best practices helps you create more effective AI playground agents and get better results from your prototyping efforts.
+
+Learn more about the AI playground agent in [AI playground agent overview (preview)](ai-playground-agent.md).
 
 ## Instructions best practices
 
