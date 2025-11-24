@@ -1502,13 +1502,13 @@
 ## Create agents that connect to Business Central
 ### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-## AI playground agent (preview)
-### [AI playground agent overview (preview)](ai/ai-playground-agent.md)
-### [Create and activate an AI playground agent (preview)](ai/ai-playground-agent-create.md)
-### [Configure instructions and tasks for an AI playground agent (preview)](ai/ai-playground-agent-configure.md)
-### [Set up AI playground agent permissions and profiles (preview)](ai/ai-playground-agent-permissions-profiles.md)
-### [Iterate and manage an AI playground agent (preview)](ai/ai-playground-agent-iterate.md)
-### [Best practices for prototyping with an AI playground agent (preview)](ai/ai-playground-agent-best-practices.md)
+## Agent playground (preview)
+### [Agent playground overview (preview)](ai/agent-playground.md)
+### [Create and activate a playground agent (preview)](ai/agent-playground-create.md)
+### [Configure instructions and tasks for a playground agent (preview)](ai/agent-playground-configure.md)
+### [Set up playground agent permissions and profiles (preview)](ai/agent-playground-permissions-profiles.md)
+### [Iterate and manage a playground agent (preview)](ai/agent-playground-iterate.md)
+### [Best practices for prototyping with the Agent playground (preview)](ai/agent-playground-best-practices.md)
 <!-- end integration with AI-->
 
 # Integration
@@ -2211,7 +2211,7 @@
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 ## [Transparency note: Semantic Metadata Search in Business Central](ai/transparency-note-semantic-metadata-search.md)  
-## [Transparency note: Business Central Agent Playground](ai/transparency-note-ai-playground-agent.md)
+## [Transparency note: Business Central Agent Playground](ai/transparency-note-agent-playground.md)
 
 <!-- end upgrade -->
 <!--on-prem ends-->

@@ -1,16 +1,16 @@
 ---
-title: Iterate and manage an AI Playground Agent (preview)
-description: Learn how to iterate and manage an AI Playground Agent in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
+title: Iterate and manage a playground agent (preview)
+description: Learn how to iterate and manage a playground agent in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 12/2052025
+ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Iterate and manage an AI playground agent (preview)
+# Iterate and manage a playground agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -18,12 +18,12 @@ ms.update-cycle: 180-days
 
 ## Understand agent decision-making
 
-When iterating and managing an AI playground agent, it's important to understand how the agent makes decisions:
+When iterating and managing a playground agent, it's important to understand how the agent makes decisions:
 
 - Agents act based on instructions and the context available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 
-Learn more about writing effective instructions in [Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md) and best practices in [Best practices for prototyping with an AI playground agent (preview)](ai-playground-agent-best-practices.md).
+Learn more about writing effective instructions in [Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md) and best practices in [Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md).
 
 ## Troubleshooting tools and logs
 
@@ -104,7 +104,7 @@ messages and the content that they interact with. Sometimes content may be incor
 
 ## Export or import an agent configuration
 
-As part of iterating to improve your agent, you can export and import the agent's configuration from the AI playground to your local machine. The exported configuration includes:
+As part of iterating to improve your agent, you can export and import the agent's configuration from the Agent playground to your local machine. The exported configuration includes:
 
 - **Identity**: The name and display name of an agent
 - **Instructions**: The detailed guidelines that define how the agent should behave.
@@ -127,8 +127,8 @@ To import the configuration, do the following:
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: AI playground agent (preview)](transparency-note-ai-playground-agent.md)  
-[Create and activate an AI playground agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md)  
-[Set up AI playground agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
-[Best practices for prototyping with AI playground agent (preview)](ai-playground-agent-best-practices.md)
+[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
+[Create and activate a playground agent (preview)](agent-playground-create.md)  
+[Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md)  
+[Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md)  
+[Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md)

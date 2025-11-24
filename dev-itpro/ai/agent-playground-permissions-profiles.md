@@ -1,6 +1,6 @@
 ---
-title: Set up AI Playground Agent permissions and profiles (preview)
-description: Discover how to configure AI Playground Agent permissions and profiles to control access and customize the user interface for sandbox environments.
+title: Set up playground agent permissions and profiles (preview)
+description: Discover how to configure playground agent permissions and profiles to control access and customize the user interface for sandbox environments.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,13 +10,13 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Set up AI playground agent permissions and profiles (preview)
+# Set up playground agent permissions and profiles (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-The AI playground agent is a prototyping tool that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more about the AI playground agent in [AI playground agent overview (preview)](ai-playground-agent.md).
+The Agent playground is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building playground agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more about the Agent playground in [Agent playground overview (preview)](agent-playground.md).
 
 ## Permissions
 
@@ -65,7 +65,7 @@ You can create custom profiles specifically for agents, using page customization
 
 ### The agent and the UI
 
-The AI playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
+A playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
 
 On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
@@ -86,9 +86,9 @@ Once you have built and published a profile, you can assign it to the agent in t
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: AI playground agent (preview)](transparency-note-ai-playground-agent.md)  
-[Create and activate an AI playground agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md)  
-[Best practices for prototyping with AI playground agent (preview)](ai-playground-agent-best-practices.md)  
+[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
+[Create and activate a playground agent (preview)](agent-playground-create.md)  
+[Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md)  
+[Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md)  
 [Designing profiles](../developer/devenv-design-profiles.md)  
 [Page customization object](../developer/devenv-page-customization-object.md)  

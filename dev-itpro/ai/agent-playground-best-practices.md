@@ -1,6 +1,6 @@
 ---
-title: Best practices for prototyping with an AI Playground Agent (preview)
-description: Explore how to design, test, and refine AI Playground agents in Business Central. Follow these best practices to optimize your prototypes.
+title: Best practices for prototyping with an Agent playground (preview)
+description: Explore how to design, test, and refine Agent playgrounds in Business Central. Follow these best practices to optimize your prototypes.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,15 +12,15 @@ ms.date: 12/95/2025
 ms.update-cycle: 180-days
 ---
 
-# Best practices for prototyping with an AI playground agent (preview)
+# Best practices for prototyping with the Agent playground (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-Following these best practices helps you create more effective AI playground agents and get better results from your prototyping efforts.
+Following these best practices helps you create more effective playground agents and get better results from your prototyping efforts.
 
-Learn more about the AI playground agent in [AI playground agent overview (preview)](ai-playground-agent.md).
+Learn more about the Agent playground in [Agent playground overview (preview)](agent-playground.md).
 
 ## Instructions best practices
 
@@ -61,7 +61,7 @@ You're a customer service agent. Provide info about customers.
 - Document what works and what doesn't
 - Test edge cases and unexpected inputs
 
-Learn more in [Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md).
+Learn more in [Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md).
 
 ## Tasks best practices
 
@@ -92,7 +92,7 @@ Create tasks that have clear success criteria:
 - Consider task dependencies and sequencing
 - Plan for error handling and fallback scenarios
 
-Learn more in [Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md).
+Learn more in [Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md).
 
 ## Permissions best practices
 
@@ -149,7 +149,7 @@ unavailable to the external customer like the wholesale acquisition cost of the 
 - Track who has access and why
 - Plan for agent cleanup and removal
 
-Learn more in [Set up AI playground agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md).
+Learn more in [Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md).
 
 ## Testing and validation best practices
 
@@ -259,10 +259,10 @@ Learn more in [Set up AI playground agent permissions and profiles (preview)](ai
 
 ## Related information
 
-[AI playground agent overview (preview)](ai-playground-agent.md)  
-[Transparency Note: AI playground agent (preview)](transparency-note-ai-playground-agent.md)  
-[Create and activate an AI playground agent (preview)](ai-playground-agent-create.md)  
-[Configure instructions and tasks for an AI playground agent (preview)](ai-playground-agent-configure.md)  
-[Set up AI playground agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
+[Agent playground overview (preview)](agent-playground.md)  
+[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
+[Create and activate a playground agent (preview)](agent-playground-create.md)  
+[Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md)  
+[Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md)  
 [Build Copilot capability in AL](../developer/ai-build-capability-in-al.md)  
 [Test Copilot capability in AL](../developer/ai-test-copilot.md)

@@ -1,6 +1,6 @@
 ---
-title: Configure Instructions and Tasks for an AI Playground Agent (preview)
-description: Learn how to configure instructions and tasks for an AI Playground Agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
+title: Configure Instructions and Tasks for a Playground Agent (preview)
+description: Learn how to configure instructions and tasks for a playground agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,13 +12,13 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Configure instructions and tasks for an AI playground agent (preview)
+# Configure instructions and tasks for a playground agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an AI playground agent (preview)](ai-playground-agent-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an AI playground agent (preview)](ai-playground-agent-iterate.md).
+To get a playground agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate a playground agent (preview)](agent-playground-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage a playground agent (preview)](agent-playground-iterate.md).
 
 ## Getting started with agent instructions
 
@@ -113,7 +113,7 @@ By referencing these community patterns when refining your instructions, you ens
 
 ### Key principles for agent instructions
 
-At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for AI playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality.
+At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality.
 
 #### Start simple, iterate based on results
 
@@ -432,8 +432,8 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: AI playground agent (preview)](transparency-note-ai-playground-agent.md)  
-[AI playground agent overview (preview)](ai-playground-agent.md)  
-[Create and activate an AI playground agent (preview)](ai-playground-agent-create.md)  
-[Set up AI playground agent permissions and profiles (preview)](ai-playground-agent-permissions-profiles.md)  
-[Best practices for prototyping with AI playground agent (preview)](ai-playground-agent-best-practices.md)
+[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
+[Agent playground overview (preview)](agent-playground.md)  
+[Create and activate a playground agent (preview)](agent-playground-create.md)  
+[Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md)  
+[Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md)
