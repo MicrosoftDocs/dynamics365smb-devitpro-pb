@@ -5,7 +5,7 @@ author: jobulsin
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry, billing
-ms.date: 09/26/2025
+ms.date: 12/05/2025
 ms.author: jobulsin
 ms.reviewer: jswymer
 ---
