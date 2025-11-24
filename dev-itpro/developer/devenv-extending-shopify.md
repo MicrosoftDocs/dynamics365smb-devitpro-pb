@@ -3,7 +3,7 @@ title: Extending Shopify
 author: brentholtorf
 description: Discover extensibility options for the Shopify Connector, including event subscriptions, API interactions, and co-development contributions.
 ms.author: bholtorf
-ms.reviewer: bholtorf
+ms.reviewer: solsen
 ms.custom: bap-template
 ms.date: 11/24/2025
 ms.topic: how-to
