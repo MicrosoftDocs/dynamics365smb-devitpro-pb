@@ -50,7 +50,6 @@ Don't use the AI playground agent when:
 
 - **Production environments** are involved (sandbox only)
 - **Compliance or security evaluation** is the primary goal
-- **Performance testing** with real-world data volumes is needed
 - **Final implementation** is ready (graduate to AL extension instead)
 - **End-user training** is the main objective (use production-ready Copilot features)
 
@@ -93,7 +92,7 @@ Learn more about instructions and tasks in [Configure instructions and tasks for
 
 ### Supported languages
 
-While this feature can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might affect accuracy and the user experience.
+This feature currently supports only English as language. While this feature can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might affect accuracy and the user experience.
 
 Learn more about geographic and language availability at [Copilot international availability](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
 

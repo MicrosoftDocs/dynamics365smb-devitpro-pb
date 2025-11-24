@@ -25,9 +25,40 @@ The agent operates with explicit permission sets that control what data and acti
 > [!NOTE]
 > Permission sets can only be modified when the agent is deactivated.
 
+### How to determine required permissions
+You can refer to the documentation about how to
+[create or modify permissions for a specific workflow via recording permissions](/dynamics365/business-central/ui-define-granular-permissions#create-or-modify-permissions-by-recording-your-actions).
+
+Alternatively, you can assign existing permission sets to the agent, treating it like a user performing the intended tasks. In this approach, applying the principle of least privilege becomes especially critical to minimize the risk of the agent accessing functionality beyond its intended scope.
+
+### Effective permissions
+
+When a user schedules a task for an agent, the task is executed with permissions from the intersection of the user's permissions and the agent's permissions. This design ensures **agents never exceed the privileges of the user who scheduled the task**.
+
+**Example:**
+
+| Permission | User | Agent | Effective Permissions |
+|------------|------|-------|----------------------|
+| Read Customers | ✅ | ✅ | ✅ |
+| Modify Customers | ✅ | ✅ | ✅ |
+| Delete Customers | ✅ | ❌ | ❌ |
+| Post Sales Orders | ✅ | ❌ | ❌ |
+| Read Items | ❌ | ✅ | ❌ |
+
+This means:
+- The agent can read and modify customers (both user and agent have these permissions)
+- The agent cannot delete customers or post sales orders (agent lacks these permissions, even though the user has them)
+- The agent cannot read items (user lacks this permission, even though the agent has it)
+
+
+
+
+
 ## Profiles
 
-The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Designing profiles](../developer/devenv-design-profiles.md) and [Page customization object](../developer/devenv-page-customization-object.md).
+The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. The profile also defines the role center, which is the agent's starting point when it executes a task.
+
+You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Designing profiles](../developer/devenv-design-profiles.md) and [Page customization object](../developer/devenv-page-customization-object.md).
 
 > [!NOTE]
 > The profile of the agent is set as default to the **Playground Agent (Copilot)** type. This can be changed, but changing the type changes what the agent has access to.

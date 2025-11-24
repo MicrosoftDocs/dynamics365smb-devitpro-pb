@@ -82,46 +82,47 @@ Agents can be configured with settings on how to format dates, currency and othe
 
 ## Debug common scenarios
 
-Use debugging strategies for common issues. Learn more in [Debugging in AL](../developer/devenv-debugging.md).
-
+- Review the task log to get a high-level understanding of the task
 - Check for missing actions or fields in page content if navigation or editing fails.
-- Simplify pages or customize descriptions to reduce confusion.
+- Simplify pages or customize tooltips to reduce confusion for the agent.
 - Use Visual Studio Code to debug agent sessions and AL code.
+- Use debugging strategies for AL related issues. Learn more in [Debugging in AL](../developer/devenv-debugging.md).
 
-## Customize agent profiles and UI
+## The agent's perception of the UI
 
 Fine tune the agent's access and interface, including:
 
 - Customize agent profiles and page descriptions using AL code.
 - Export and package tailored profiles for your agent.
 
+You can simulate the agent's view by assigning the profile to your user and navigating through [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
+
 ## Handle content violation errors
 
-- Rephrase flagged instructions or review context for problematic keywords.
+Agents come with protections against content that may be deemed harmful towards users. This protection is applied to instructions,
+messages and the content that they interact with. Sometimes content may be incorrectly classified as a content violation. To go around that, rephrase the agent instructions or review the relevant page content and messages for problematic keywords.
 
-## The agent's perception of the UI
-
-- The agent sees the UI as JSON; log entries capture this view for troubleshooting.
-
-## Export an agent configuration
+## Export or import an agent configuration
 
 As part of iterating to improve your agent, you can export and import the agent's configuration from the AI playground to your local machine. The exported configuration includes:
 
+- **Identity**: The name and display name of an agent
 - **Instructions**: The detailed guidelines that define how the agent should behave.
-- **Tasks**: The specific actions the agent can perform.
 - **Permissions**: The access rights the agent requires to function correctly.
+- **Profile**: The name of the profile that should be used. The profile itself should be exported separately.
 
 To export the configuration, do the following:
 
 1. On the **Agents (preview)** page, choose the agent that you want to export.
-1. Choose **Show more options** and then choose **Export agent**.
-1. The exported agent appears in your **Downloads** window. 
+2. Choose **Show more options** and then choose **Export agent**.
+3. The exported agent appears in your **Downloads** window. 
 
-<!-->
 To import the configuration, do the following:
-
-1. 
--->
+1. On the **Agents (preview)** page, choose the agent that you want to export.
+2. Choose **Show more options** and then choose **Import agent**.
+3. Select if the agent should be a new agent or replace an existing agent - if the name already exists.
+4. Continue to import the agent
+5. Activate it
 
 ## Related information
 
