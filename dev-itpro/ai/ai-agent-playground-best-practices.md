@@ -80,11 +80,12 @@ Create tasks that have clear success criteria:
 - Test each task independently
 
 ### UI Design
-- The less elements that the agent needs to consider, the more accurate it is
+
+- The fewer elements that the agent needs to consider, the more accurate it is
 - Ensure that tooltips on relevant actions are descriptive enough for human and agent users
-- Hide unrelated elements that may confuse the agent during testing
+- Hide unrelated elements that might confuse the agent during testing
 - Consider navigation shortcuts for your agent like adding links to the relevant pages to its role center
-- Less navigation steps leads to a more cost-effective and accurate agent
+- Fewer navigation steps leads to a more cost-effective and accurate agent
 
 ### Structure task workflows
 
@@ -122,7 +123,7 @@ Create agent-specific profiles that:
 ### Protect sensitive information
 
 - Be cautious with sensitive data in agent instructions and configurations
-- Ensure that the agent can access only data that is relevant to its task
+- Ensure that the agent can access only data that's relevant to its task
 - Consider data privacy implications when testing with customer data
 - Document data handling practices for compliance requirements
 
@@ -134,13 +135,13 @@ Create agent-specific profiles that:
 - Deactivate agents when not in active use
 
 ### Data Isolation
-When an agent's output is used for external communication, it is necessary to test that the outputs do not expose unrelated data.
-For example, if an agent answers to email queries about product prices, it is vital to test that it does not reveal internal details that would otherwise be
+When an agent's output is used for external communication, it's necessary to test that the outputs don't expose unrelated data.
+For example, if an agent answers to email queries about product prices, it's vital to test that it doesn't reveal internal details that would otherwise be
 unavailable to the external customer like the wholesale acquisition cost of the product.
 
 - Ensure that the agent's profile covers only the necessary elements for its task
 - Always perform a human review of the output messages of agents if they interact with external customers
-- If necessary, design agent specific pages or AL event subscribers which filter the data to what the agent is supposed to process
+- If necessary, design agent specific pages or AL event subscribers, which filter the data to what the agent is supposed to process
 
 ### Document and audit
 
@@ -161,7 +162,8 @@ Learn more in [Set up playground agent permissions and profiles (preview)](agent
 - Check that the agent follows instructions consistently
 
 ### Accuracy testing
-- Create scenarios with easily verifiable acceptance criteria - eg. 'a new sales order with a single bicycle should be added'
+
+- Create scenarios with easily verifiable acceptance criteria - for example, 'a new sales order with a single bicycle should be added'
 - Generate many variations through real business cases or via LLM powered tools, ensure consistency of outputs
 - Ensure the agent can recover from common error scenarios, like field validations during data entry
 - Include scenarios where the agent failed during development as test cases to ensure it doesn't regress
@@ -174,7 +176,8 @@ Learn more in [Set up playground agent permissions and profiles (preview)](agent
 - Test with users who weren't involved in development
 
 ### Red teaming
-- Try to ask your agent about pages/fields it should not have access to
+
+- Try to ask your agent about pages/fields it shouldn't have access to
 - Ask your agent to infer information about the business that it shouldn't have access to
 - Request your agent to perform actions that should be invalid for your scenario, eg. to set the price of a product to zero and then sell it 
 
@@ -182,7 +185,7 @@ Learn more in [Set up playground agent permissions and profiles (preview)](agent
 
 - Monitor the number of steps and the total credit cost of your test tasks
 - Test on realistic data volumes to ensure that your agent can handle the complexity of the task
-- Optimize for the minimum amount of steps as longer workflows can reduce the accuracy of agents
+- Optimize for the minimum number of steps as longer workflows can reduce the accuracy of agents
 
 <!-- Introduce when SDK is introduced
 ## Graduation to production best practices
@@ -221,23 +224,23 @@ Learn more in [Set up playground agent permissions and profiles (preview)](agent
 - **Contradictory requirements** create unpredictable results
 - **Missing context** results in poor decision-making
 - **Specific tool references** can lead to regressions if they get renamed. Refer to *what* the agent should do, not *which tool* to use
-- **Ambiguous instructions** can cause erratic behavior as they may be interpreted either way on every run
-- **Safety filters** can be triggered if the instructions are treated as a jaibreak attempt. Refactor the instructions to avoid any false positives
+- **Ambiguous instructions** can cause erratic behavior as they might be interpreted either way on every run
+- **Safety filters** can be triggered if the instructions are treated as a jailbreak attempt. Refactor the instructions to avoid any false positives
 
 ### Permission issues
 
-- **Unecessary agent permissions** can allow agents to modify data they shouldn't
+- **Unnecessary agent permissions** can allow agents to modify data they shouldn't
 - **The intersection of the assigning user's permissions and the agent permissions** should be enough to perform all of its functions
 - **Agents cannot configure users or other agents by design**
 - **Agents cannot access sensitive pages like user cards or permission set assignment**
 
 ### UI Design
-- **Limit the UI** either via profiles or pages designed specifically for your agent to help it achieve its task
-- 
+
+- **Limit the UI** either via profiles or pages designed specifically for your agent to help it achieve its task 
 
 ### Testing
 
-- **Agents are non-deterministic** so testing is the only way to validate they do what they are designed to do
+- **Agents are non-deterministic** so testing is the only way to validate they do what they're designed to do
 - **Testing only happy paths** misses important edge cases
 - **Skipping documentation** makes knowledge transfer difficult
 
