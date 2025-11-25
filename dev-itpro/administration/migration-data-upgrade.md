@@ -10,7 +10,7 @@ ms.custom: bap-template
 ---
 # Upgrade data
 
-This article explains the process for running the data upgrade as part of cloud migration. Data upgrade is typically required when migrating from Business Central version that is earlier than the version used on the destination online environment. Data upgrade runs the logic that's required upgrade the platform-related data in database.
+This article explains the process for running the data upgrade as part of cloud migration. Data upgrade is typically required when migrating from Business Central version that is earlier than the version used on the destination online environment. Data upgrade runs the logic that's required to upgrade the platform-related data in the database.
 
 [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process.md)]
 
