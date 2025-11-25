@@ -79,7 +79,7 @@ Create tasks that have clear success criteria:
 - Consider the agent's UI access limitations - determined by their profile.
 - Test each task independently
 
-### UI Design
+### UI design
 
 - The fewer elements that the agent needs to consider, the more accurate it is
 - Ensure that tooltips on relevant actions are descriptive enough for human and agent users

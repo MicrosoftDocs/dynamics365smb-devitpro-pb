@@ -39,11 +39,11 @@ When a user schedules a task for an agent, the task is executed with permissions
 
 | Permission | User | Agent | Effective Permissions |
 |------------|------|-------|----------------------|
-| Read Customers | ✅ | ✅ | ✅ |
-| Modify Customers | ✅ | ✅ | ✅ |
-| Delete Customers | ✅ | ❌ | ❌ |
-| Post Sales Orders | ✅ | ❌ | ❌ |
-| Read Items | ❌ | ✅ | ❌ |
+| Read Customers | Yes | Yes | Yes |
+| Modify Customers | Yes | Yes | Yes |
+| Delete Customers | Yes | No | No |
+| Post Sales Orders | Yes | No | No |
+| Read Items | No | Yes | No |
 
 This means that in this example:
 
