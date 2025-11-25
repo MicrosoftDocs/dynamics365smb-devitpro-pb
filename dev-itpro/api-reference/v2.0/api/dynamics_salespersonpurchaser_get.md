@@ -17,7 +17,7 @@ Retrieves the properties and relationships of a salesperson purchaser object for
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-GET businesscentralPrefix/companies({id})/salespersonPurchasers({id})
+GET businesscentralPrefix/companies({id})/salespeoplePurchasers({id})
 ```
 
 ## Request headers
@@ -32,7 +32,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a ```200 OK``` response code and a **salespersonPurchaser** object in the response body.
+If successful, this method returns a ```200 OK``` response code and a **salespeoplePurchaser** object in the response body.
 
 ## Example
 
@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and a **salesper
 Here's an example of the request.
 
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salespersonPurchasers({id})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salespeoplePurchasers({id})
 ```
 
 **Response**
