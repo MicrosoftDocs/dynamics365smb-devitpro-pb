@@ -45,6 +45,8 @@ When a user schedules a task for an agent, the task is executed with permissions
 | Post Sales Orders | Yes | No | No |
 | Read Items | No | Yes | No |
 
+
+
 This means that in this example:
 
 - The agent can read and modify customers (both user and agent have these permissions)
