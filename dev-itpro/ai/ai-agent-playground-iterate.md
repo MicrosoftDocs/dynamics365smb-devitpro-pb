@@ -34,28 +34,30 @@ For effective troubleshooting, use the following tools:
 
 ### Agent Task Log
 
-The **Agent Task Log** in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] is used for troubleshooting the agent's behavior. It is an activity log for a specific task which captures all the actions that the agent took took, its interactions with user messages and important events in the lifecycle of a task. This information can be valuable for diagnosing issues and understanding how the agent is performing.
+The **Agent Task Log** in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] is used for troubleshooting the agent's behavior. It's an activity log for a specific task, which captures all the actions that the agent took, its interactions with user messages and important events in the lifecycle of a task. This information can be valuable for diagnosing issues and understanding how the agent is performing.
 
 Drill into every step by clicking **View details**. You can see information about the context of the specific entry. This can help you identify any misunderstandings or errors in the agent's behavior.
 
 ### Log entry details
 
-The details of a log entry contain all the context that the agent took into account when making a decision.
+The details of a log entry contain the context that the agent took into account when making a decision.
 
 #### Decision or not?
 
-Some entries correspond to moments when the agent had to decide to take an action. These are identified by the **decision point** field. The agent takes into account its instructions and all the context that will be mentioned below to decide on an action. The **description** of the log entry contains the action that was decided. Changing the instructions can only affect these specific points.
+Some entries correspond to moments when the agent had to decide to take an action. These are identified by the **decision point** field. The agent takes into account its instructions and the context that will be mentioned below to decide on an action. The **description** of the log entry contains the action that was decided. Changing the instructions can only affect these specific points.
 
 Other entries correspond either to user interactions like user interventions or messages arriving or to system actions, like stopping a task because it violated a system constraint.
 
 #### What the agent saw
 
-This section is a representation of the page as the agent saw it when making a decision. It encodes what elements were visible on the page and all the metadata that it knows about them. It can answer questions like:
+This section is a representation of the page as the agent saw it when making a decision. It encodes what elements were visible on the page and the metadata that it knows about them. It can answer questions like:
+
 - Was an action present?
 - Was a field editable?
 - Was a field visible?
 
 It also encodes what values were available on the page at the time of the decision. This helps with questions like below:
+
 - What date was selected in the "Date" field?
 - Which customer was being processed?
 - What was the description of the item being processed?
@@ -78,7 +80,7 @@ Agents have to navigate [!INCLUDE [prod_short](../developer/includes/prod_short.
 
 #### Agent settings
 
-Agents can be configured with settings on how to format dates, currency and other information. These will be displayed in the agent settings section.
+Agents can be configured with settings on how to format dates, currency, and other information. These are displayed in the agent settings section.
 
 ## Debug common scenarios
 
@@ -99,8 +101,8 @@ You can simulate the agent's view by assigning the profile to your user and navi
 
 ## Handle content violation errors
 
-Agents come with protections against content that may be deemed harmful towards users. This protection is applied to instructions,
-messages and the content that they interact with. Sometimes content may be incorrectly classified as a content violation. To go around that, rephrase the agent instructions or review the relevant page content and messages for problematic keywords.
+Agents come with protections against content that might be deemed harmful towards users. This protection is applied to instructions,
+messages, and the content that they interact with. Sometimes content might be incorrectly classified as a content violation. To go around that, rephrase the agent instructions or review the relevant page content and messages for problematic keywords.
 
 ## Export or import an agent configuration
 

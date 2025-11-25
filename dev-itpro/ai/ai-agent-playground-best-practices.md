@@ -134,7 +134,8 @@ Create agent-specific profiles that:
 - Regularly review user access lists
 - Deactivate agents when not in active use
 
-### Data Isolation
+### Data isolation
+
 When an agent's output is used for external communication, it's necessary to test that the outputs don't expose unrelated data.
 For example, if an agent answers to email queries about product prices, it's vital to test that it doesn't reveal internal details that would otherwise be
 unavailable to the external customer like the wholesale acquisition cost of the product.
@@ -234,7 +235,7 @@ Learn more in [Set up playground agent permissions and profiles (preview)](agent
 - **Agents cannot configure users or other agents by design**
 - **Agents cannot access sensitive pages like user cards or permission set assignment**
 
-### UI Design
+### UI design
 
 - **Limit the UI** either via profiles or pages designed specifically for your agent to help it achieve its task 
 
