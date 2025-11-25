@@ -46,13 +46,10 @@ When a user schedules a task for an agent, the task is executed with permissions
 | Read Items | ❌ | ✅ | ❌ |
 
 This means:
+
 - The agent can read and modify customers (both user and agent have these permissions)
-- The agent cannot delete customers or post sales orders (agent lacks these permissions, even though the user has them)
-- The agent cannot read items (user lacks this permission, even though the agent has it)
-
-
-
-
+- The agent can't delete customers or post sales orders (agent lacks these permissions, even though the user has them)
+- The agent can't read items (user lacks this permission, even though the agent has it)
 
 ## Profiles
 
