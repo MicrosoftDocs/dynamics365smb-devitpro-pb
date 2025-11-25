@@ -1503,12 +1503,12 @@
 ### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Agent playground (preview)
-### [Agent playground overview (preview)](ai/agent-playground.md)
-### [Create and activate a playground agent (preview)](ai/agent-playground-create.md)
-### [Configure instructions and tasks for a playground agent (preview)](ai/agent-playground-configure.md)
-### [Set up playground agent permissions and profiles (preview)](ai/agent-playground-permissions-profiles.md)
-### [Iterate and manage a playground agent (preview)](ai/agent-playground-iterate.md)
-### [Best practices for prototyping with the Agent playground (preview)](ai/agent-playground-best-practices.md)
+### [Agent playground overview (preview)](ai/ai-agent-playground.md)
+### [Create and activate a playground agent (preview)](ai/ai-agent-playground-create.md)
+### [Configure instructions and tasks for a playground agent (preview)](ai/ai-agent-playground-configure.md)
+### [Set up playground agent permissions and profiles (preview)](ai/ai-agent-playground-permissions-profiles.md)
+### [Iterate and manage a playground agent (preview)](ai/ai-agent-playground-iterate.md)
+### [Best practices for prototyping with the Agent playground (preview)](ai/ai-agent-playground-best-practices.md)
 <!-- end integration with AI-->
 
 # Integration

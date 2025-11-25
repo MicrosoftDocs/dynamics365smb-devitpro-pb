@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-To get a playground agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate a playground agent (preview)](agent-playground-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage a playground agent (preview)](agent-playground-iterate.md).
+To get a playground agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate a playground agent (preview)](ai-agent-playground-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage a playground agent (preview)](ai-agent-playground-iterate.md).
 
 ## Getting started with agent instructions
 
@@ -432,8 +432,8 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Agent playground overview (preview)](agent-playground.md)  
-[Create and activate a playground agent (preview)](agent-playground-create.md)  
-[Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md)
+[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Agent playground overview (preview)](ai-agent-playground.md)  
+[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
+[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)

@@ -88,7 +88,7 @@ Instructions are natural language descriptions that define your agent's purpose 
 
 Tasks are specific actions that the agent can perform based on your instructions. They represent concrete scenarios or workflows that the agent should handle. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests.
 
-Learn more about instructions and tasks in [Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md).
+Learn more about instructions and tasks in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
 
 ### Supported languages
 
@@ -102,7 +102,7 @@ The agent operates with explicit permission sets that control what data and acti
 
 The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
 
-Learn more in [Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md).
+Learn more in [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md).
 
 ## Limitations (preview)
 
@@ -129,13 +129,13 @@ As a preview feature, the Agent playground has several important limitations:
 
 ## Getting started
 
-Ready to try the Agent playground? The process involves enabling the feature, creating your playground agent, and configuring it for your specific use case. Learn more in [Create and activate a playground agent (preview)](./agent-playground-create.md).
+Ready to try the Agent playground? The process involves enabling the feature, creating your playground agent, and configuring it for your specific use case. Learn more in [Create and activate a playground agent (preview)](./ai-agent-playground-create.md).
 
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Create and activate a playground agent (preview)](agent-playground-create.md)  
-[Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md)  
-[Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md)
+[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
+[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
+[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)

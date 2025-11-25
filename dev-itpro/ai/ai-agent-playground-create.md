@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 You can create a playground agent in the Agent playground to test various AI functionalities, such as automating tasks and integrating AI into your workflows. A playground agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
-Learn more about the Agent playground in [Agent playground overview (preview)](agent-playground.md).
+Learn more about the Agent playground in [Agent playground overview (preview)](ai-agent-playground.md).
 
 ## Prerequisites
 
@@ -55,12 +55,12 @@ The **Create agent (preview)** wizard allows you to configure your playground ag
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="Playground agent setup":::
 1. In the **Description** field, provide an optional description for the agent.
 1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
-This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md).
+This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
 1. Choose the arrow to go to the next page of the wizard.
 1. Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with.  
-You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md).
+You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md).
 1. Under **Permissions**, use **Manage permissions** to add the permissions that the agent should have.  
-This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md).
+This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md).
 1. Use the arrow to go to the previous page of the wizard.
 1. Turn on the **Active** toggle.
 1. Select **Update** to complete the setup.
@@ -82,8 +82,8 @@ An agent is by default in the **Disabled** state. You must activate the agent to
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Agent playground overview (preview)](agent-playground.md)  
-[Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md)  
-[Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md)
+[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Agent playground overview (preview)](ai-agent-playground.md)  
+[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
+[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)

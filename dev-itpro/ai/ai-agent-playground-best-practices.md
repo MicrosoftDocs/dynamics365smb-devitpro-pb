@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 Following these best practices helps you create more effective playground agents and get better results from your prototyping efforts.
 
-Learn more about the Agent playground in [Agent playground overview (preview)](agent-playground.md).
+Learn more about the Agent playground in [Agent playground overview (preview)](ai-agent-playground.md).
 
 ## Instructions best practices
 
@@ -61,7 +61,7 @@ You're a customer service agent. Provide info about customers.
 - Document what works and what doesn't
 - Test edge cases and unexpected inputs
 
-Learn more in [Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md).
+Learn more in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
 
 ## Tasks best practices
 
@@ -93,7 +93,7 @@ Create tasks that have clear success criteria:
 - Consider task dependencies and sequencing
 - Plan for error handling and fallback scenarios
 
-Learn more in [Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md).
+Learn more in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
 
 ## Permissions best practices
 
@@ -151,7 +151,7 @@ unavailable to the external customer like the wholesale acquisition cost of the 
 - Track who has access and why
 - Plan for agent cleanup and removal
 
-Learn more in [Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md).
+Learn more in [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md).
 
 ## Testing and validation best practices
 
@@ -263,10 +263,10 @@ Learn more in [Set up playground agent permissions and profiles (preview)](agent
 
 ## Related information
 
-[Agent playground overview (preview)](agent-playground.md)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Create and activate a playground agent (preview)](agent-playground-create.md)  
-[Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md)  
-[Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md)  
+[Agent playground overview (preview)](ai-agent-playground.md)  
+[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
+[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
+[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
 [Build Copilot capability in AL](../developer/ai-build-capability-in-al.md)  
 [Test Copilot capability in AL](../developer/ai-test-copilot.md)

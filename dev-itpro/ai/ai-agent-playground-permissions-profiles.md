@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-The Agent playground is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building playground agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more about the Agent playground in [Agent playground overview (preview)](agent-playground.md).
+The Agent playground is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building playground agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more about the Agent playground in [Agent playground overview (preview)](ai-agent-playground.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ Alternatively, you can assign existing permission sets to the agent, treating it
 
 When a user schedules a task for an agent, the task is executed with permissions from the intersection of the user's permissions and the agent's permissions. This design ensures **agents never exceed the privileges of the user who scheduled the task**.
 
-**Example:**
+#### Example
 
 | Permission | User | Agent | Effective Permissions |
 |------------|------|-------|----------------------|
@@ -45,7 +45,7 @@ When a user schedules a task for an agent, the task is executed with permissions
 | Post Sales Orders | ✅ | ❌ | ❌ |
 | Read Items | ❌ | ✅ | ❌ |
 
-This means:
+This means that in this example:
 
 - The agent can read and modify customers (both user and agent have these permissions)
 - The agent can't delete customers or post sales orders (agent lacks these permissions, even though the user has them)
@@ -83,9 +83,9 @@ Once you have built and published a profile, you can assign it to the agent in t
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Create and activate a playground agent (preview)](agent-playground-create.md)  
-[Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md)  
-[Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md)  
+[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
+[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
+[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)  
 [Designing profiles](../developer/devenv-design-profiles.md)  
 [Page customization object](../developer/devenv-page-customization-object.md)  

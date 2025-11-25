@@ -23,7 +23,7 @@ When iterating and managing a playground agent, it's important to understand how
 - Agents act based on instructions and the context available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 
-Learn more about writing effective instructions in [Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md) and best practices in [Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md).
+Learn more about writing effective instructions in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md) and best practices in [Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md).
 
 ## Troubleshooting tools and logs
 
@@ -129,8 +129,8 @@ To import the configuration, do the following:
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Create and activate a playground agent (preview)](agent-playground-create.md)  
-[Configure instructions and tasks for a playground agent (preview)](agent-playground-configure.md)  
-[Set up playground agent permissions and profiles (preview)](agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](agent-playground-best-practices.md)
+[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
+[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
+[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)
