@@ -1,8 +1,8 @@
 ---
 title: Field groups
-description: A field group defines the fields to display in a DropDown control in Dynamics 365 Business Central. 
+description: Discover how to use the `fieldgroups` keyword to configure DropDown and Brick field groups in table and table extension objects.
 ms.author: solsen
-ms.date: 11/13/2024
+ms.date: 12/25/2025
 ms.topic: how-to
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,9 +10,9 @@ ms.reviewer: solsen
 
 # Field groups (DropDown controls)
 
-A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table. The DropDown control is used to select a record from a list of records. 
+A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table. The `DropDown` control is used to select a record from a list of records. 
 
-In a table object, you define field groups by first adding a `fieldgroups` control, and then adding one or more `fieldgroup(<Name>; <Field>)` keyword for each group, where:
+In a table object, you define field groups by first adding a `fieldgroups` control, and then adding one or more `fieldgroup(<Name>; <Field>)` keywords for each group, where:
 
 - `<Name>` can be either `DropDown`, for adding fields to the drop-down control, or `Brick` to display data as tiles.
 - `<Field>` is a comma-separated list of the fields, by name, to include in the group.  
@@ -36,20 +36,10 @@ fieldgroups
 
 > [!NOTE]  
 > The `fieldgroups` keyword can't be inserted before the `key` control.
-
 > [!IMPORTANT]  
-> The syntax for using a DropDown, must be spelled `DropDown` with the right capitalization.
-
+> The syntax for using a `DropDown` must be spelled `DropDown` with the right capitalization.
 
 In a table extension object, the `fieldgroups` control allows you to add more fields to a field group defined for the table object. This can be done by using the `addlast(<name>; <field>)` keyword.
-<!--
-In order to add fields to a field group, you create a table extension and specify the `fieldgroups` control and the fields you want to append to the field group. 
- 
-
-> [!NOTE]  
-> You can only place the fields at the end of the field group members list using the `addlast` keyword. 
-
--->
 
 > [!WARNING]  
 > The server removes the duplicates, if multiple extensions attempt to add the same field more than once. A field can only be added to the field group once.
@@ -76,7 +66,7 @@ tableextension 50100 CustomerExercise extends Customer
 ```
 
 > [!NOTE]  
-> If the field you're adding to the DropDown has `Visibility = false` on the underlying lookup page, it won't show up in the drop-down. 
+> If the field you're adding to the `DropDown` has `Visibility = false` on the underlying lookup page, it won't show up in the drop-down. 
 
 If we want to add the "Address 2" field to the Ship-to Address DropDown, the following code illustrates the changes needed to add the "Address 2" field to the Ship-To Address DropDown fieldgroup. The underlying lookup page is the Ship-To Address List, where Address 2 has the `Visibility` property set to `false`. 
 
@@ -105,7 +95,7 @@ pageextension 50101 ShipToAddressExercise extends "Ship-to Address"
 
 [!INCLUDE[2023-releasewave2](../includes/2023-releasewave2.md)]
 
-It's always possible to add fields to the two predefined field groups, `DropDown` and `Brick`. If they aren't defined on the target table, they are dynamically created and contain only the fields specified in the `addlast` controls.
+It's always possible to add fields to the two predefined field groups, `DropDown` and `Brick`. If they aren't defined on the target table, they're dynamically created and contain only the fields specified in the `addlast` controls.
 
 The ordering of the fields is determined by the order in which extensions are loaded by the server, while removing any duplicate fields.
 
