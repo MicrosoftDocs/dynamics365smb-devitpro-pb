@@ -127,18 +127,6 @@ As a preview feature, the Agent playground has several important limitations:
 - **Manual telemetry**: No automatic logging—capture prompts and responses manually during testing
 - **Temporary nature**: Designed for experimentation, not long-term solutions
 
-<!-- 
-## Future development path
-
-While the Agent playground provides a prototype experience for testing AI capabilities, the agent development SDK allows developers and partners to package custom agents as deployable apps. This SDK includes:
-
-- Instructions, integrations, and configuration packaged in AL extensions
-- Testing frameworks for agent development
-- Deployment capabilities for production environments
-
-The agent development SDK provides a graduation path from playground prototypes to production-ready AI solutions. Learn more in [Graduating a playground agent (preview)](./agent-playground-graduate.md).
--->
-
 ## Getting started
 
 Ready to try the Agent playground? The process involves enabling the feature, creating your playground agent, and configuring it for your specific use case. Learn more in [Create and activate a playground agent (preview)](./agent-playground-create.md).
