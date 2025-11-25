@@ -41,6 +41,8 @@ During the early access preview period, only tenants that use the [Partner Sandb
 
 As early access previews coincide with development, environments on the early access preview version are automatically updated to the latest build of the preview version every Sunday. It isn't possible to manage or reschedule this update. Environments that fail to update to the new preview build for any reason are automatically deleted and can't be recovered. Early access preview environments can only be [transferred](tenant-admin-center-environments-move.md) to another tenant if the destination tenant also has the Partner Sandbox license.
 
+It is also possible to update an existing sandbox to a preview build. Please observe that once this is done, this sandbox will automatically be updated with every new preview version and if not possible it will be deleted.
+
 As in the public preview period, the system deletes preview environments 30 days after the preview version becomes generally available (GA). You can't update a preview environment to a different version.
 
 ## Practice and test
