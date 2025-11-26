@@ -59,6 +59,13 @@ landingContent:
       links:
       - text: Sample extension in BCTech GitHub repo  
         url: https://aka.ms/BCStartCodingWithAI    
+# Card
+  - title: Community
+    linkLists:
+    - linkListType: sample
+      links:
+      - text: Community guidelines
+        url: https://github.com/microsoft/alguidelines/blob/d2cdf97e0c4ba8fa3a618169339d2d6655d63493/content/docs/agentic-coding/vibe-coding-rules/al-code-style
 
 # Card
   - title: Resources 
