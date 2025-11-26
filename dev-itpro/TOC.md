@@ -1505,11 +1505,11 @@
 ## Agent playground (preview)
 ### [Overview](ai/ai-agent-playground-landing-page.yml)
 ### [Agent playground overview (preview)](ai/ai-agent-playground.md)
-### [Create and activate a playground agent (preview)](ai/ai-agent-playground-create.md)
-### [Configure instructions and tasks for a playground agent (preview)](ai/ai-agent-playground-configure.md)
-### [Set up playground agent permissions and profiles (preview)](ai/ai-agent-playground-permissions-profiles.md)
-### [Iterate and manage a playground agent (preview)](ai/ai-agent-playground-iterate.md)
-### [Best practices for prototyping with the Agent playground (preview)](ai/ai-agent-playground-best-practices.md)
+### [Create and activate (preview)](ai/ai-agent-playground-create.md)
+### [Configure instructions and tasks (preview)](ai/ai-agent-playground-configure.md)
+### [Set up permissions and profiles (preview)](ai/ai-agent-playground-permissions-profiles.md)
+### [Iterate and manage (preview)](ai/ai-agent-playground-iterate.md)
+### [Best practices (preview)](ai/ai-agent-playground-best-practices.md)
 <!-- end integration with AI-->
 
 # Integration
