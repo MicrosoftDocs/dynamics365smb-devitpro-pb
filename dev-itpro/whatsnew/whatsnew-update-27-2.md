@@ -24,7 +24,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 | Copilot and agents | [Suggest gas emissions in sustainability journals with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/suggest-gas-emissions-sustainability-journals-copilot) | Public preview |
 | Country and regional | [Add drill-down links to VAT entries in the VAT return lines for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-drill-down-links-vat-entries-vat-return-lines-czechia) | General availability |
-| | [Enable additional countries and regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-additional-countries-regions) | General availability |
+| | [Enable additional countries/regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-additional-countries-regions) | General availability |
 | Electronic Documents | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) | General availability |
 | | [Use purchase draft page to preview Peppol electronic invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-purchase-draft-page-preview-peppol-electronic-invoices) | Public preview |
 | | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | General availability |
