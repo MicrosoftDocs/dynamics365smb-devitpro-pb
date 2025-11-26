@@ -93,7 +93,7 @@ For example, assume that:
 
 The estimated monthly cost is calculated as: `[50 + (5 × 3)] x 100 = 6,500 Copilot Credits/month`
 
-### Agent playground billing
+### Agent playground billing (preview)
 
 Billing events for the Agent playground will be announced in a future update.
 
