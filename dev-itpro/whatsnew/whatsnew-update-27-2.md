@@ -19,25 +19,22 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
+
 | Product area | Feature | Public preview/General availability |
 |-|-|-|
-| Copilot and agents | [Automate payables processes with the Payables Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/automate-payables-processes-payables-agent) | General availability |
-| | [Get more contextual invoice drafts with Payables Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/get-more-contextual-invoice-drafts-payables-agent) | General availability |
-| | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent) | General availability |
-| | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process) | General availability |
-| | [Connect AI agents to Business Central through MCP server](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server) | Public preview |
-| Country and regional | [Delete companies from production environments in Denmark](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/delete-companies-production-environments-denmark) | General availability |
-| | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris) | General availability |
-| Electronic Documents | [Process sales e-documents in two steps](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/process-sales-e-documents-two-steps) | General availability |
-| | [Use the E-Documents framework with Power Automate and other solutions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-power-automate) | General availability |
-| | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | Public preview |
-| Financial Management | [Print the Audit Trail report](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/print-audit-trail-report) | General availability |
-| | [Use new SEPA file CAMT0530008](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sepa-file-camt0530008) | Public preview |
-| | [Use the Account Payable Role Center](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-account-payables-administrator-role-center) | General availability |
-| Sustainability Management | [Support Digital Product Pass reporting requirements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/support-digital-product-pass-reporting-requirements) | General availability |
-| User experiences | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data) | General availability |
-|Shopify| [Create sales invoices from orders automatically, and use new ways to view orders](/dynamics365/business-central/shopify/synchronize-orders) | General availability |
-| | [Use renamed customer templates and fulfillments](/dynamics365/business-central/shopify/synchronize-customers) | General availability |
+| Copilot and agents | [Suggest gas emissions in sustainability journals with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/suggest-gas-emissions-sustainability-journals-copilot) | Public preview |
+| Country and regional | [Add drill-down links to VAT entries in the VAT return lines for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-drill-down-links-vat-entries-vat-return-lines-czechia) | General availability |
+| | [Enable additional countries and regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-additional-countries-regions) | General availability |
+| Electronic Documents | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) | General availability |
+| | [Use purchase draft page to preview Peppol electronic invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-purchase-draft-page-preview-peppol-electronic-invoices) | Public preview |
+| | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | General availability |
+| Financial Management | [Use new SEPA file CAMT0530008](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sepa-file-camt0530008) | General availability |
+| Governance and administration | [Automate environment management with Power Platform connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/automate-environment-management-power-platform-connector) | General availability |
+| | [Cancel running environment update](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/cancel-running-environment-update) | General availability |
+| Supply chain management | [Evaluate quality of incoming goods and materials](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/evaluate-quality-incoming-goods-materials) | General availability |
+| | [Use subcontracting capabilities in production processes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-subcontracting-capabilities-production-processes) | General availability |
+| Sustainability Management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) | General availability |
+| | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) | General availability |
 
 ## Localization updates
 
@@ -64,9 +61,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Recent online service features
 
-**Early access preview versions for partner:** Tenants with the partner sandbox license get early access to preview environments for the next major Business Central version so they can explore new capabilities and prepare for changes ahead of general availability. Learn more in [Early access previews](../administration/preview-environments.md#early-access-preview).
-
-**Consume available Copilot Credits with no extra setup:** You can now use prepaid Copilot Credits without configuring AI billing on Business Central environments. Copilot Credits consumed by Business Central environments that don't have AI billing setup are reported against the Power Platform default environment for the tenant. Learn more in [Manage consumption-based billing for agent capabilities](../administration/tenant-admin-center-manage-consumption-billing.md).
+**Cancel running environment update (general availability):** Admins can now cancel a running update on an environment from the Business Central admin center. This capability gives you greater control and flexibility during update operations, allowing you to intervene when necessary&mdash;whether due to unexpected issues, timing conflicts, or other operational concerns. Learn more in [Cancel running environment update (release plan)](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/cancel-running-environment-update) and [Cancel a running update (documentation)](../administration/tenant-admin-center-update-management.md#cancel-a-running-update).
 
 ### Business Central Launch Edition - 2025 release wave 2
 
