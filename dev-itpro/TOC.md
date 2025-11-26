@@ -1504,12 +1504,13 @@
 ### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Agent playground (preview)
 ### [Overview](ai/ai-agent-playground-landing-page.yml)
-### [Agent playground overview (preview)](ai/ai-agent-playground.md)
+### [Agent playground (preview)](ai/ai-agent-playground.md)
 ### [Create and activate (preview)](ai/ai-agent-playground-create.md)
 ### [Configure instructions and tasks (preview)](ai/ai-agent-playground-configure.md)
 ### [Set up permissions and profiles (preview)](ai/ai-agent-playground-permissions-profiles.md)
 ### [Iterate and manage (preview)](ai/ai-agent-playground-iterate.md)
 ### [Best practices (preview)](ai/ai-agent-playground-best-practices.md)
+### [Transparency note: Business Central agent playground](ai/transparency-note-agent-playground.md)
 <!-- end integration with AI-->
 
 # Integration
