@@ -85,7 +85,7 @@ Once you have built and published a profile, you can assign it to the agent in t
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
 [Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
 [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
 [Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)  

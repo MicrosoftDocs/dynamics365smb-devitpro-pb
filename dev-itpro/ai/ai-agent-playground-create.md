@@ -82,7 +82,7 @@ An agent is by default in the **Disabled** state. You must activate the agent to
 ## Related information
 
 [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
 [Agent playground overview (preview)](ai-agent-playground.md)  
 [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
 [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  

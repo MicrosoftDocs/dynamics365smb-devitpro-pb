@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 12/95/2025
+ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
@@ -264,7 +264,7 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 ## Related information
 
 [Agent playground overview (preview)](ai-agent-playground.md)  
-[Transparency Note: Agent playground (preview)](transparency-note-ai-agent-playground.md)  
+[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
 [Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
 [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
 [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
