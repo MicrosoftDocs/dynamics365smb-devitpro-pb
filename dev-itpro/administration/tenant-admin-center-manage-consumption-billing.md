@@ -23,7 +23,7 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 - [Payables Agent](/dynamics365/business-central/payables-agent)
 - [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
-- [Agent playground (preview)](ai/ai-agent-playground.md)
+- [Agent playground (preview)](../ai/ai-agent-playground.md)
 
 Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use the *Generative answer* and *Agent action* [event scenarios](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) to bill for consumption as they complete their tasks.
 
