@@ -10,7 +10,7 @@ ms.reviewer: jswymer
 
 # Security in Business Central
 
-Security is a top priority for Microsoft and Business Central. The product is developed and operated with a security-first approach, and Microsoft conducts regular internal penetration testing and runs a public security bounty program to identify and fix vulnerabilities before they can be exploited.
+Security is a top priority for Microsoft and Business Central. The product is developed and operated with a security-first approach. Microsoft conducts regular internal penetration testing and runs a public security bounty program to identify and fix vulnerabilities before they can be exploited.
 
 A robust security system is essential for protecting your database and the information it contains. Business Central helps you control unauthorized access and specify what authenticated users can do, such as what data they can read and modify.
 
@@ -21,7 +21,7 @@ Business Central provides comprehensive security features organized into five ke
 **Authentication and identity**
 
 - Microsoft Entra ID integration for centralized identity management
-- Multi-factor authentication (MFA) for enhanced login security
+- Multifactor authentication (MFA) for enhanced sign-in security
 - Modern authentication methods support
 
 **Access control and permissions**
@@ -40,7 +40,7 @@ Business Central provides comprehensive security features organized into five ke
 
 - IP filtering to restrict network access
 - Azure security service tags for network segmentation
-- Support for private endpoints and VNet integration
+- Support for private endpoints and virtual network integration
 
 **Security operations**
 
