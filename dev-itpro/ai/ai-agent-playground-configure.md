@@ -170,7 +170,7 @@ As you refine your agent instructions, consider incorporating these advanced pat
 
 Agents retain a history of their actions and searches but don't store the full state of every page. Include explicit instructions to memorize specific key-value pairs when needed, which can be referenced in later steps.
 
-An example of giving such instructions could be: "Memorize the external document reference from the newly created sales quote for use in follow-up communications."
+An example of giving such instructions could be: "**Memorize** the external document reference from the newly created sales quote for use in follow-up communications."
 Consider providing an example of what the memorized information should look like to improve accuracy, for example "external document reference: ABCD1234 Document Number: 1234"
 
 #### Error handling and validation
@@ -180,6 +180,8 @@ Consider providing an example of what the memorized information should look like
 - Examples could be:  
   "**DO NOT** proceed until the requested date is entered"  
   "**ALWAYS** confirm customer details are complete before creating quotes"
+
+Learn more in [Instruction keywords](ai-agent-playground-configure-keywords.md).
 
 ### Defining tasks
 
