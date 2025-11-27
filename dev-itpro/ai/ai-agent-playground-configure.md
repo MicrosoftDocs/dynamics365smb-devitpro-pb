@@ -1,6 +1,6 @@
 ---
-title: Configure Instructions and Tasks for a Playground Agent (preview)
-description: Learn how to configure instructions and tasks for a playground agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
+title: Configure Instructions for a Playground Agent (preview)
+description: Learn how to configure instructions for a playground agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,13 +12,15 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Configure instructions and tasks for a playground agent (preview)
+# Configure instructions for a playground agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
 To get a playground agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate a playground agent (preview)](ai-agent-playground-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage a playground agent (preview)](ai-agent-playground-iterate.md).
+
+Learn more about how to trigger your agent once you have written effective instructions in [Run a playground agent (preview)](ai-agent-playground-configure-tasks.md).
 
 ## Getting started with agent instructions
 
