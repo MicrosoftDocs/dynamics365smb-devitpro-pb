@@ -49,7 +49,7 @@ Next, configure, and activate the agent to get started.
 
 The **Create agent (preview)** wizard allows you to configure your playground agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
-1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Activate**. <!-- **Create** -->
+1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Create**.
 1. In the **Custom Agents Wizard** dialog, choose whether to create a blank agent or use a template.  
   - To create a blank agent, choose **Blank Agent**, and then choose **Next**.
   - To use a template, choose **SALES VALIDATION**, and then choose **Next**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further.
