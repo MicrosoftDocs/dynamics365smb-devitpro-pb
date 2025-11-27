@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 When writing instructions for your playground agent, you can use specific keywords and phrasing to help the agent understand how to utilize the tools available in the agent runtime effectively. These keywords guide the agent's behavior, ensuring it follows best practices and handles tasks as intended.
 
-Learn more about what instructions and tasks are in [Configure Instructions and Tasks for a Playground Agent (preview)](ai-agent-playground-configure.md).
+Learn more about what instructions and tasks are in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
 
 ## Agent history
 
