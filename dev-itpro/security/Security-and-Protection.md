@@ -10,12 +10,49 @@ ms.reviewer: jswymer
 
 # Security in Business Central
 
-Business Central can be targeted by common cyber threats (phishing emails, malware, fraud scams, and so on). Understanding this landscape underlines the importance of using Business Central's security features.
+Security is a top priority for Microsoft and Business Central. The product is developed and operated with a security-first approach, and Microsoft conducts regular internal penetration testing and runs a public security bounty program to identify and fix vulnerabilities before they can be exploited.
 
-A business solution must have a built-in security system that helps protect your database, and the information that it contains, from unauthorized access. It must also allow you to specify what authenticated users are allowed to do in the database, such as what data they can read and modify.
+A robust security system is essential for protecting your database and the information it contains. Business Central helps you control unauthorized access and specify what authenticated users can do, such as what data they can read and modify.
 
-The following articles help you understand and improve the security of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+## Key security capabilities
 
+Business Central provides comprehensive security features organized into five key areas:
+
+**Authentication and identity**
+
+- Microsoft Entra ID integration for centralized identity management
+- Multi-factor authentication (MFA) for enhanced login security
+- Modern authentication methods support
+
+**Access control and permissions**
+
+- Granular user permission controls and role-based access control (RBAC)
+- Database-level access controls for data operations
+- Fine-tuned permissions for specific business scenarios
+
+**Data protection**
+
+- Enterprise-grade encryption at rest and in transit
+- Secure credential management
+- Built-in protections for sensitive business data
+
+**Network security**
+
+- IP filtering to restrict network access
+- Azure security service tags for network segmentation
+- Support for private endpoints and VNet integration
+
+**Security operations**
+
+- Continuous security monitoring and updates
+- Regular vulnerability assessments and remediation
+- Compliance with industry security standards
+
+## Security resources
+
+The following articles provide detailed guidance on implementing and managing security in Business Central:
+
+- [Security Guide: How to Secure Business Central](security-scenarios-guide.md)
 - [Application security](security-application.md)  
 - [Azure security service tags](security-service-tags.md)  
 - [Security tips for business users](security-users.md)  
@@ -23,10 +60,3 @@ The following articles help you understand and improve the security of [!INCLUDE
 - [On-premises security](security-onpremises.md)  
 - [Data security](data-security.md)
 - [Security FAQ](security-faq.md)
-
-## Continuous security improvement at Microsoft
-
-Business Central is developed and operated with a ‘security-first’ mindset (as part of Microsoft’s Secure Future Initiative). Microsoft conducts regular internal penetration testing on the service and even runs a public security bounty program&mdash;all to identify and fix vulnerabilities before they can be exploited.
-
-<!--
-[!INCLUDE [admin-tlswarning](../developer/includes/admin-tlswarning.md)]-->

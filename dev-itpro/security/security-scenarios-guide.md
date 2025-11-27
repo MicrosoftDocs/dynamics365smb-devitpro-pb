@@ -8,7 +8,7 @@ ms.author: jswymer
 ms.reviewer: solsen
 ---
 
-# Security Guide: How Do I Secure Business Central?
+# Security Guide: How to Secure Business Central
 
 This guide provides scenario-based security recommendations organized by persona. Each best practice includes context, solution, guidance, benefits, and trade-offs to help you make informed security decisions.
 
