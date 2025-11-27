@@ -29,8 +29,7 @@ Before you can create a playground agent, ensure that you have the following pre
 - Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 - Appropriate permissions to access and use the Agent playground in [!INCLUDE [prod_short](../includes/prod_short.md)]. This must include the `Agent-Admin` and the `Agent - Diagnostics` permission sets assigned to your user.
 - A sandbox environment for testing and experimentation (can include customer data such as sandbox copies of production data)
-- Set up the [!INCLUDE [prod_short](../includes/prod_short.md)] environment for billing agent capabilities in the [!INCLUDE [prod_short](../includes/prod_short.md)] Admin Center.  
-Agents use Microsoft Copilot Studio messages when activated, which your company is charged for. Learn more in [Manage consumption-based billing](../administration/tenant-admin-center-manage-consumption-billing.md).
+- Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
 
 ## Getting started
 
@@ -50,7 +49,10 @@ Next, configure, and activate the agent to get started.
 
 The **Create agent (preview)** wizard allows you to configure your playground agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
-1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Activate**.
+1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Activate**. <!-- **Create** -->
+1. In the **Custom Agents Wizard** dialog, choose whether to create a blank agent or use a template.  
+  - To create a blank agent, choose **Blank Agent**, and then choose **Next**.
+  - To use a template, choose **SALES VALIDATION**, and then choose **Next**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further.
 1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** for the agent. The **Initials** field value is suggested based on the **Display Name**, but can be modified.
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="Playground agent setup":::
 1. In the **Description** field, provide an optional description for the agent.
