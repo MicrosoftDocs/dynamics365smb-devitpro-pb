@@ -47,6 +47,8 @@ landingContent:
         url: ai-agent-playground-tasks-api.md
       - text: Set up playground permissions and profiles
         url: ai-agent-playground-permissions-profiles.md
+      - text: Run a playground agent
+        url: ai-agent-playground-run-agent.md
       - text: Iterate and test a playground agent
         url: ai-agent-playground-iterate.md
 # Card

@@ -1510,6 +1510,7 @@
 ### [Instruction keywords (preview)](ai/ai-agent-playground-configure-keywords.md)
 ### [Integrate with the Tasks AL API (preview)](ai/ai-agent-playground-tasks-api.md)
 ### [Set up permissions and profiles (preview)](ai/ai-agent-playground-permissions-profiles.md)
+### [Run a playground agent (preview)](ai/ai-agent-playground-run-agent.md)
 ### [Iterate and manage (preview)](ai/ai-agent-playground-iterate.md)
 ### [Best practices (preview)](ai/ai-agent-playground-best-practices.md)
 ### [Transparency note: Business Central agent playground](ai/transparency-note-agent-playground.md)
