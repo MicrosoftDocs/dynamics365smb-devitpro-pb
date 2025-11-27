@@ -116,12 +116,15 @@ As part of iterating to improve your agent, you can export and import the agent'
 To export the configuration, do the following:
 
 1. On the **Agents (preview)** page, choose the agent that you want to export.
-2. Choose **Show more options** and then choose **Export agent**.
-3. The exported agent appears in your **Downloads** window. 
+2. Choose **Export agent**.
+3. The exported agent appears in your **Downloads** window in .xml format. 
 
 To import the configuration, do the following:
-1. On the **Agents (preview)** page, choose the agent that you want to export.
-2. Choose **Show more options** and then choose **Import agent**.
+
+<!-- check with newest UI before publishing -->
+
+1. On the **Agents (preview)** page, choose the agent that you want to import.
+2. Choose **Import agent**.
 3. Select if the agent should be a new agent or replace an existing agent - if the name already exists.
 4. Continue to import the agent
 5. Activate it

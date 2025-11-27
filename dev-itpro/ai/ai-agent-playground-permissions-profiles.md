@@ -26,6 +26,7 @@ The agent operates with explicit permission sets that control what data and acti
 > Permission sets can only be modified when the agent is deactivated.
 
 ### How to determine required permissions
+
 You can refer to the documentation about how to
 [create or modify permissions for a specific workflow via recording permissions](/dynamics365/business-central/ui-define-granular-permissions#create-or-modify-permissions-by-recording-your-actions).
 
@@ -44,8 +45,6 @@ When a user schedules a task for an agent, the task is executed with permissions
 | Delete Customers | Yes | No | No |
 | Post Sales Orders | Yes | No | No |
 | Read Items | No | Yes | No |
-
-
 
 This means that in this example:
 
@@ -77,7 +76,17 @@ On the page customization object, you can set specific flags to control what the
 | `InsertAllowed`| Boolean | If set to false, the insert action isn't allowed for the agent. |
 
 ```al
-page customization example with these...
+pagecustomization 50100 CustomerAgentProfileCustomization
+{
+    PageType = Card;
+    PageID = Customer;
+    ClearActions = true;
+    ClearLayout = true;
+    ClearViews = true;
+    DeleteAllowed = false;
+    InsertAllowed = false;
+    ...
+}
 ```
 
 Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
