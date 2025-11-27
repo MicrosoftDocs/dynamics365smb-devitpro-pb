@@ -195,6 +195,30 @@ When creating a task, you can specify an extra message that gets passed to the a
 
 The Tasks AL API allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows.
 
+##### Getting information about the available playground agents
+
+The first step to configure agents is to retrieve their user ID. The agent playground provides an API to retrieve all available agents.
+
+```al
+local procedure GetAllAgents()
+var
+    CustomAgent: Codeunit "Custom Agent";
+    TempAgentInfo: Record "Custom Agent Info" temporary;
+begin
+    // Retrieve all custom agents
+    CustomAgent.GetCustomAgents(TempAgentInfo);
+    
+    // Iterate through the agents
+    if TempAgentInfo.FindSet() then
+        repeat
+            // Use the agent information
+            // TempAgentInfo."User Security ID" contains the agent's user ID
+            // TempAgentInfo."User Name" contains the agent's user name
+            Message('Agent: %1 (ID: %2)', TempAgentInfo."User Name", TempAgentInfo."User Security ID");
+        until TempAgentInfo.Next() = 0;
+end;
+```
+
 ##### Using the Agent Task Builder API
 
 The `Agent Task Builder` codeunit provides the primary interface for creating agent tasks. Here are common integration patterns:
