@@ -41,6 +41,8 @@ landingContent:
         url: ai-agent-playground-create.md
       - text: Configure a playground agent
         url: ai-agent-playground-configure.md
+      - text: Instruction keywords for playground agents
+        url: ai-agent-playground-configure-keywords.md
       - text: Set up playground permissions and profiles
         url: ai-agent-playground-permissions-profiles.md
       - text: Iterate and test a playground agent

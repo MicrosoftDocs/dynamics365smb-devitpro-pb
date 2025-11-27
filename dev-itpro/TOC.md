@@ -1507,6 +1507,7 @@
 ### [Agent playground (preview)](ai/ai-agent-playground.md)
 ### [Create and activate (preview)](ai/ai-agent-playground-create.md)
 ### [Configure instructions and tasks (preview)](ai/ai-agent-playground-configure.md)
+### [Instruction keywords (preview)](ai/ai-agent-playground-configure-keywords.md)
 ### [Set up permissions and profiles (preview)](ai/ai-agent-playground-permissions-profiles.md)
 ### [Iterate and manage (preview)](ai/ai-agent-playground-iterate.md)
 ### [Best practices (preview)](ai/ai-agent-playground-best-practices.md)
