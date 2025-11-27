@@ -113,7 +113,7 @@ By referencing these community patterns when refining your instructions, you ens
 
 ### Key principles for agent instructions
 
-At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality.
+At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for playground agents (preview)](ai-agent-playground-configure-keywords.md).
 
 #### Start simple, iterate based on results
 
@@ -180,8 +180,6 @@ Consider providing an example of what the memorized information should look like
 - Examples could be:  
   "**DO NOT** proceed until the requested date is entered"  
   "**ALWAYS** confirm customer details are complete before creating quotes"
-
-Learn more in [Instruction keywords](ai-agent-playground-configure-keywords.md).
 
 ### Defining tasks
 
