@@ -1,5 +1,5 @@
 ---
-title: Create and activate a playground agent (preview)
+title: Create and activate an agent using the agent playground (preview)
 description: Learn how to create and activate a playground agent in Business Central to automate tasks, integrate AI, and enhance your workflows.
 author: solsen
 ms.author: solsen
