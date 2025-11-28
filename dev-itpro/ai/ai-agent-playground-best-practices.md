@@ -1,6 +1,6 @@
 ---
 title: Best practices for prototyping with an Agent playground (preview)
-description: Explore how to design, test, and refine Agent playgrounds in Business Central. Follow these best practices to optimize your prototypes.
+description: Explore how to design, test, and refine custom agents using the agent playground. Follow these best practices to optimize your prototypes.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
