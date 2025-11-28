@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-Following these best practices helps you create more effective playground agents and get better results from your prototyping efforts.
+Following these best practices helps you create agents and get better results from your prototyping efforts.
 
 Learn more about the Agent playground in [Agent playground overview (preview)](ai-agent-playground.md).
 
