@@ -12,7 +12,7 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Instruction keywords for a playground agent (preview)
+# Instruction keywords for an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
