@@ -1,6 +1,6 @@
 ---
-title: Instruction keywords (preview)
-description: 
+title: Instruction keywords for a playground agent (preview)
+description: Learn about the instruction keywords you can use to guide the behavior of your playground agent in Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,7 +12,7 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Instruction keywords (preview)
+# Instruction keywords for a playground agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 When writing instructions for your playground agent, you can use specific keywords and phrasing to help the agent understand how to utilize the tools available in the agent runtime effectively. These keywords guide the agent's behavior, ensuring it follows best practices and handles tasks as intended.
 
-Learn more about what instructions and tasks are in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
+Learn more about what instructions and tasks are in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ## Agent history
 
@@ -51,9 +51,13 @@ Here are some common keywords and phrases you can use in your agent's instructio
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Agent playground overview (preview)](ai-agent-playground.md)  
-[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
-[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)
+[Overview](ai-agent-playground-landing-page.yml)  
+[Agent playground (preview)](ai-agent-playground.md)  
+[Create and activate (preview)](ai-agent-playground-create.md)   
+[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
+[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
+[Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

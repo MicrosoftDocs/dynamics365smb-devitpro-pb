@@ -1,5 +1,5 @@
 ---
-title: Configure Instructions for a Playground Agent (preview)
+title: Write effective Instructions for a Playground Agent (preview)
 description: Learn how to configure instructions for a playground agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Configure instructions for a playground agent (preview)
+# Write effective Instructions for a playground agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -259,9 +259,13 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Agent playground overview (preview)](ai-agent-playground.md)  
-[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
-[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)
+[Overview](ai-agent-playground-landing-page.yml)  
+[Agent playground (preview)](ai-agent-playground.md)  
+[Create and activate (preview)](ai-agent-playground-create.md)   
+[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
+[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
+[Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

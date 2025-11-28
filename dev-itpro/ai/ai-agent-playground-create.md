@@ -57,7 +57,7 @@ The **Create agent (preview)** wizard allows you to configure your playground ag
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="Playground agent setup":::
 1. In the **Description** field, provide an optional description for the agent.
 1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
-This serves as the prompt that guides the agent's behavior. Learn more in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
+This serves as the prompt that guides the agent's behavior. Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 1. Choose the arrow to go to the next page of the wizard.
 1. Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with.  
 You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md).
@@ -83,9 +83,13 @@ An agent is by default in the **Disabled** state. You must activate the agent to
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Agent playground overview (preview)](ai-agent-playground.md)  
-[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
-[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)
+[Overview](ai-agent-playground-landing-page.yml)  
+[Agent playground (preview)](ai-agent-playground.md)  
+[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
+[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
+[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
+[Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

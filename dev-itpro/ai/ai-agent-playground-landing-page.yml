@@ -39,10 +39,10 @@ landingContent:
       links:
       - text: Create a playground agent
         url: ai-agent-playground-create.md
-      - text: Configure a playground agent
-        url: ai-agent-playground-configure.md
-      - text: Instruction keywords for playground agents
-        url: ai-agent-playground-configure-keywords.md
+      - text: Write effective instructions for a playground agent
+        url: ai-agent-playground-effective-instructions.md
+      - text: Instruction keywords for a playground agent
+        url: ai-agent-playground-instruction-keywords.md
       - text: Use the tasks API to integrate with a playground agent
         url: ai-agent-playground-tasks-api.md
       - text: Set up playground permissions and profiles

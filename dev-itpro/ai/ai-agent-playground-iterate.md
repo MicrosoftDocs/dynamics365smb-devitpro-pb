@@ -23,7 +23,7 @@ When iterating and managing a playground agent, it's important to understand how
 - Agents act based on instructions and the context available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 
-Learn more about writing effective instructions in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md) and best practices in [Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md).
+Learn more about writing effective instructions in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md) and best practices in [Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md).
 
 ## Troubleshooting tools and logs
 
@@ -131,9 +131,13 @@ To import the configuration, do the following:
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
-[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
-[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)
+[Overview](ai-agent-playground-landing-page.yml)  
+[Agent playground (preview)](ai-agent-playground.md)  
+[Create and activate (preview)](ai-agent-playground-create.md)  
+[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
+[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
+[Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-To get a playground agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. Learn more about how to write effective instructions in [Configure instructions for a playground agent (preview)](ai-agent-playground-configure.md).
+To get a playground agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. Learn more about how to write effective instructions in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ## Defining tasks
 
@@ -39,9 +39,13 @@ Once your agent is set up and tasks are being created, it's important to monitor
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Agent playground overview (preview)](ai-agent-playground.md)  
-[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
-[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)
+[Overview](ai-agent-playground-landing-page.yml)  
+[Agent playground (preview)](ai-agent-playground.md)  
+[Create and activate (preview)](ai-agent-playground-create.md)  
+[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
+[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
+[Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

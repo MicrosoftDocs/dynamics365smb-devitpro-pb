@@ -14,7 +14,7 @@ ms.update-cycle: 180-days
 
 # Integrate with the Tasks AL API
 
-The Tasks AL API allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows.
+The Tasks AL API allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run a playground agent (preview)](ai-agent-playground-run-agent.md).
 
 ## Get information about the available playground agents
 
@@ -215,10 +215,14 @@ This API-based approach allows you to build automated workflows during the proto
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Agent playground overview (preview)](ai-agent-playground.md)  
-[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
-[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)
+[Overview](ai-agent-playground-landing-page.yml)  
+[Agent playground (preview)](ai-agent-playground.md)  
+[Create and activate (preview)](ai-agent-playground-create.md)  
+[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
+[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
+[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
+[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
+[Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
 

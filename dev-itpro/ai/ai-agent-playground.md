@@ -87,7 +87,7 @@ Instructions are natural language descriptions that define your agent's purpose 
 
 Tasks are specific actions that the agent can perform based on your instructions. They represent concrete scenarios or workflows that the agent should handle. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests.
 
-Learn more about instructions and tasks in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
+Learn more about instructions and tasks in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ### Supported languages
 
@@ -132,9 +132,13 @@ Ready to try the Agent playground? The process involves enabling the feature, cr
 
 ## Related information
 
-[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
-[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
-[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)
+[Overview](ai-agent-playground-landing-page.yml)  
+[Create and activate (preview)](ai-agent-playground-create.md)  
+[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
+[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
+[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
+[Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

@@ -61,7 +61,7 @@ You're a customer service agent. Provide info about customers.
 - Document what works and what doesn't
 - Test edge cases and unexpected inputs
 
-Learn more in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
+Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ## Tasks best practices
 
@@ -93,7 +93,7 @@ Create tasks that have clear success criteria:
 - Consider task dependencies and sequencing
 - Plan for error handling and fallback scenarios
 
-Learn more in [Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md).
+Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ## Permissions best practices
 
@@ -263,10 +263,13 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 
 ## Related information
 
-[Agent playground overview (preview)](ai-agent-playground.md)  
-[Transparency Note: Agent playground (preview)](transparency-note-agent-playground.md)  
-[Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
-[Configure instructions and tasks for a playground agent (preview)](ai-agent-playground-configure.md)  
-[Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Build Copilot capability in AL](../developer/ai-build-capability-in-al.md)  
-[Test Copilot capability in AL](../developer/ai-test-copilot.md)
+[Overview](ai-agent-playground-landing-page.yml)  
+[Agent playground (preview)](ai-agent-playground.md)  
+[Create and activate (preview)](ai-agent-playground-create.md)  
+[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
+[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
+[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
+[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
