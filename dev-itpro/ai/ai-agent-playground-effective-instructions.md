@@ -12,7 +12,7 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Write effective Instructions for a playground agent (preview)
+# Write effective instructions for a playground agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
