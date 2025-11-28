@@ -1,5 +1,5 @@
 ---
-title: Instruction keywords for a playground agent (preview)
+title: Instruction keywords for an agent (preview)
 description: Learn about the instruction keywords you can use to guide the behavior of your playground agent in Business Central.
 author: solsen
 ms.author: solsen
