@@ -1,6 +1,6 @@
 ---
 title: Write effective Instructions for an agent (preview)
-description: Learn how to configure instructions for a playground agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
+description: Learn how to author instructions for an agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
