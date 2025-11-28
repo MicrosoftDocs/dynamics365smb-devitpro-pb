@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 To get a playground agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate a playground agent (preview)](ai-agent-playground-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage a playground agent (preview)](ai-agent-playground-iterate.md).
 
-Learn more about how to trigger your agent once you have written effective instructions in [Run a playground agent (preview)](ai-agent-playground-configure-tasks.md).
+Learn more about how to trigger your agent once you have written effective instructions in [Run a playground agent (preview)](ai-agent-playground-run-agent.md).
 
 ## Getting started with agent instructions
 
@@ -115,7 +115,7 @@ By referencing these community patterns when refining your instructions, you ens
 
 ### Key principles for agent instructions
 
-At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for playground agents (preview)](ai-agent-playground-configure-keywords.md).
+At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for playground agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for playground agents (preview)](ai-agent-playground-instruction-keywords.md).
 
 #### Start simple, iterate based on results
 
