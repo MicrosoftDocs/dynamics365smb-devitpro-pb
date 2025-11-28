@@ -29,7 +29,7 @@ Learn more about how to trigger your agent once you have written effective instr
 Rather than trying to write perfect instructions from the start, we recommend an iterative, AI-assisted workflow:
 
 1. **Start with your ideas** - Write down what you want your agent to do in natural language, without worrying about format or structure
-2. **Use AI to refine** - Use Copilot or other AI tools to transform your initial thoughts into well-structured instructions following best practices
+2. **Use AI to refine** - Use Copilot or other AI tools to transform your initial thoughts into well-structured instructions. Use the best practices as a knowledge input to your chosen AI tool to help it suggest good instructions.
 3. **Test and iterate** - Deploy your agent, observe its behavior, and refine the instructions based on real-world results
 4. **Leverage community examples** - Reference proven patterns and examples from the community
 
