@@ -44,7 +44,7 @@ The details of a log entry contain the context that the agent took into account 
 
 #### Decision or not?
 
-Some entries correspond to moments when the agent had to decide to take an action. These are identified by the **decision point** field. The agent takes into account its instructions and the context that will be mentioned below to decide on an action. The **description** of the log entry contains the action that was decided. Changing the instructions can only affect these specific points.
+Some entries correspond to moments when the agent had to decide to take an action. These are identified by the **decision point** field. The agent takes into account its instructions and the context to decide on an action. The **description** of the log entry contains the action that was decided. Changing the instructions can only affect these specific points.
 
 Other entries correspond either to user interactions like user interventions or messages arriving or to system actions, like stopping a task because it violated a system constraint.
 

@@ -85,7 +85,7 @@ Create tasks that have clear success criteria:
 - Ensure that tooltips on relevant actions are descriptive enough for human and agent users
 - Hide unrelated elements that might confuse the agent during testing
 - Consider navigation shortcuts for your agent like adding links to the relevant pages to its role center
-- Fewer navigation steps leads to a more cost-effective and accurate agent
+- Fewer navigation steps lead to a more cost-effective and accurate agent
 
 ### Structure task workflows
 
@@ -180,7 +180,7 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 
 - Try to ask your agent about pages/fields it shouldn't have access to
 - Ask your agent to infer information about the business that it shouldn't have access to
-- Request your agent to perform actions that should be invalid for your scenario, eg. to set the price of a product to zero and then sell it 
+- Request your agent to perform actions that should be invalid for your scenario, for example, to set the price of a product to zero and then sell it 
 
 ### Performance considerations
 

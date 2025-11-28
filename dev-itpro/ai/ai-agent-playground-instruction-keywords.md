@@ -24,14 +24,14 @@ Learn more about what instructions and tasks are in [Write effective instruction
 
 ## Agent history
 
-Similar to a chat completion API, the agent retains a history of all actions that have taken place in the current session. This history helps the agent understand the context of the conversation and make informed decisions based on previous interactions. The agent stores:
+Similar to a chat completion API, the agent retains a history of all actions that took place in the current session. This history helps the agent understand the context of the conversation and make informed decisions based on previous interactions. The agent stores:
 
 - Every action performed by the agent.
 - Any search run on a list page, along with the results returned.
 
 The agent *doesn't* store:
 
-- The state of every page it has visited. To do this, you must *explicitly* instruct the agent to save the state.
+- The state of every page it visited. To do this, you must *explicitly* instruct the agent to save the state.
 
 ## Common instruction keywords
 
