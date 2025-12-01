@@ -121,7 +121,7 @@ As a preview feature, the Agent playground has several important limitations:
 - **Permission inheritance**: Agents can't have more permissions than their creating user
 - **UI interaction limits**: Agents see only what their assigned profile allows
 - **Single list per page**: Agents can only interact with one list on any given page. If a page has multiple sublists (for example, sales lines and notes in a factbox), the agent can only access one of them
-- **No page search**: Agents can't use **Tell me** to find specific information. Navigation is limited to available actions and links
+- **No Tell me**: Agents can't use **Tell me** to find specific information. Navigation is limited to available actions and links
 
 ### Development considerations
 
