@@ -1512,6 +1512,7 @@
 ### [Set up permissions and profiles (preview)](ai/ai-agent-playground-permissions-profiles.md)
 ### [Run a playground agent (preview)](ai/ai-agent-playground-run-agent.md)
 ### [Iterate and manage (preview)](ai/ai-agent-playground-iterate.md)
+### [Export and import (preview)](ai/ai-agent-playground-export-import.md)
 ### [Best practices (preview)](ai/ai-agent-playground-best-practices.md)
 ### [Transparency note: Business Central agent playground](ai/transparency-note-agent-playground.md)
 <!-- end integration with AI-->

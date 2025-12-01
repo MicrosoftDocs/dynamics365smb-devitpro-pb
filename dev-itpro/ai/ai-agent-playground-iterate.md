@@ -106,30 +106,7 @@ You can simulate the agent's view by assigning the profile to your user and navi
 Agents come with protections against content that might be deemed harmful towards users. This protection is applied to instructions,
 messages, and the content that they interact with. Sometimes content might be incorrectly classified as a content violation. To go around that, rephrase the agent instructions or review the relevant page content and messages for problematic keywords.
 
-## Export or import an agent configuration
 
-As part of iterating to improve your agent, you can export and import the agent's configuration from the Agent playground to your local machine. The exported configuration includes:
-
-- **Identity**: The name and display name of an agent
-- **Instructions**: The detailed guidelines that define how the agent should behave.
-- **Permissions**: The access rights the agent requires to function correctly.
-- **Profile**: The name of the profile that should be used. The profile itself should be exported separately.
-
-To export the configuration, do the following:
-
-1. On the **Agents (preview)** page, choose the agent that you want to export.
-2. Choose **Export agent**.
-3. The exported agent appears in your **Downloads** window in .xml format. 
-
-To import the configuration, do the following:
-
-<!-- check with newest UI before publishing -->
-
-1. On the **Agents (preview)** page, choose the agent that you want to import.
-2. Choose **Import agent**.
-3. Select if the agent should be a new agent or replace an existing agent - if the name already exists.
-4. Continue to import the agent
-5. Activate it
 
 ## Related information
 

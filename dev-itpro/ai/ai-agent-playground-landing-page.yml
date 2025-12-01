@@ -51,6 +51,8 @@ landingContent:
         url: ai-agent-playground-run-agent.md
       - text: Iterate and test a playground agent (preview)
         url: ai-agent-playground-iterate.md
+      - text: Export and import a playground agent (preview)
+        url: ai-agent-playground-export-import.md
 # Card
   - title: Prototyping best practices
     linkLists:

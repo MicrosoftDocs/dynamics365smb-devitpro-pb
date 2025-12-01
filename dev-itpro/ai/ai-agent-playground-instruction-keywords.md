@@ -40,8 +40,8 @@ Here are some common keywords and phrases you can use in your agent's instructio
 |Keyword/Phrase|Description| Example |
 |--------------|-----------|---------|
 |**Ask for assistance**|Instructs the agent to seek help if needed during task execution.| "If you encounter an error, then ask for assistance." |
-|**Request a review**|Instructs the agent to ask for a review of its work before finalizing. The task will continue after the user confirms. Note: All outgoing messages require a review.| "When the sales order is created, request a review before posting." |
-|**Reply**| Instructs the agent to respond to a message or query.| "When the sales order is created, reply with the confirmation." |
+|**Request a review**|Instructs the agent to ask for a review of its work before finalizing. The task will continue after the user confirms.| "When the sales order is created, request a review before posting." |
+|**Reply**| Instructs the agent to respond to a message or query. Note: All outgoing messages require a review.| "When the sales order is created, reply with the confirmation." |
 |**Write an email**|Instructs the agent to compose and send an email. All outgoing messages require a review.| "When the sales order is created, write an email to the customer with the confirmation." |
 |**Memorize**| Instructs the agent to store specific values. These values can later be referenced.| "Memorize the customer's credit limit for future reference." |
 |**Set field**| Instructs the agent to set a specific field value.| "Set the 'Status' field to 'Approved'." |
