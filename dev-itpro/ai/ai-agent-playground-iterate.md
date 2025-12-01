@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 ## Understand agent decision-making
 
-When iterating and managing a playground agent, it's important to understand how the agent makes decisions:
+When iterating and managing an agent, it's important to understand how the agent makes decisions:
 
 - Agents act based on instructions and the context available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
