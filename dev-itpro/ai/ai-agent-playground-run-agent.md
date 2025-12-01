@@ -35,7 +35,7 @@ When creating a task, you can specify an extra message that gets passed to the a
 
 ## Testing and continuous improvement
 
-Once your agent is set up and tasks are being created, it's important to monitor its performance and make adjustments as necessary. Use the insights gained from task executions to refine your agent's instructions and improve its effectiveness over time. For more information on iterating and managing your playground agent, see [Iterate and manage a playground agent (preview)](ai-agent-playground-iterate.md).
+Once your agent is set up and tasks are being created, it's important to monitor its performance and make adjustments as necessary. Use the insights gained from task executions to refine your agent's instructions and improve its effectiveness over time. Learn more about continuously improving your playground agent in [Iterate and manage a playground agent (preview)](ai-agent-playground-iterate.md).
 
 ## Related information
 
