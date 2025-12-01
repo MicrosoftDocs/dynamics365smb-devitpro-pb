@@ -1,5 +1,5 @@
 ---
-title: Set up playground agent permissions and profiles (preview)
+title: Set up agent permissions and profiles (preview)
 description: Discover how to configure playground agent permissions and profiles to control access and customize the user interface for sandbox environments.
 author: solsen
 ms.author: solsen
