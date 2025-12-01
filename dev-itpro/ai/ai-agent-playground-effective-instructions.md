@@ -203,6 +203,7 @@ Test your instructions thoroughly to ensure they lead to the desired behavior, a
 - **Test for accuracy regularly** Instruction effectiveness can change over time as systems and processes evolve
 - **Use AI optimization** Leverage AI tools like Copilot to help refine and update instructions
 - **Dynamic updates** Instructions can be updated through setup pages without requiring agent reconfiguration
+- **Version control** The UI maintains a history of instruction changes, allowing you to revert to earlier versions if needed. This is useful when testing different instruction approaches or when a new version doesn't perform as expected
 - **Less is more** Shift from verbose to concise instructions—simpler instructions often perform better than complex ones
 
 ### Advanced capabilities
@@ -251,11 +252,11 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 
 [Overview (preview)](ai-agent-playground-landing-page.yml)  
 [Agent playground (preview)](ai-agent-playground.md)  
-[Create and activate (preview)](ai-agent-playground-create.md)   
+[Create and activate (preview)](ai-agent-playground-create.md)  
 [Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
 [Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
 [Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
 [Best practices (preview)](ai-agent-playground-best-practices.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)

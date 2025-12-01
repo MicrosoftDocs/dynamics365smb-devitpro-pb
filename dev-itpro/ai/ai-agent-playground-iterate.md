@@ -106,7 +106,26 @@ You can simulate the agent's view by assigning the profile to your user and navi
 Agents come with protections against content that might be deemed harmful towards users. This protection is applied to instructions,
 messages, and the content that they interact with. Sometimes content might be incorrectly classified as a content violation. To go around that, rephrase the agent instructions or review the relevant page content and messages for problematic keywords.
 
+## Manage instruction versions
 
+As you iterate on your agent's instructions, the system maintains a version history of your changes. This allows you to:
+
+- **Review previous versions** - View the history of instruction changes to understand what worked and what didn't
+- **Revert to earlier versions** - Roll back to a previous version if new instructions don't perform as expected
+- **Compare versions** - Analyze differences between instruction versions to identify what changes impacted agent behavior
+
+To access instruction version history:
+
+1. Open the agent setup, for example from the **Agents (preview)** page.
+2. In the **Playground - Instructions** section, use the **Get earlier version** button to view and restore previous versions.
+3. Test the restored version to validate it meets your requirements.
+
+This capability is particularly useful when:
+
+- Experimenting with different instruction approaches
+- A new version introduces unexpected behavior
+- You want to understand which instruction changes led to improved performance
+- Multiple team members are collaborating on agent instructions
 
 ## Related information
 
