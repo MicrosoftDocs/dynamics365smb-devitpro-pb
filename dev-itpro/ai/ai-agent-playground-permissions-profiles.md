@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-The Agent playground is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building playground agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more about the Agent playground in [Agent playground overview (preview)](ai-agent-playground.md).
+The Agent playground is a prototyping environment that allows subject matter experts, product owners, consultants and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more about the Agent playground in [Agent playground overview (preview)](ai-agent-playground.md).
 
 ## Permissions
 
