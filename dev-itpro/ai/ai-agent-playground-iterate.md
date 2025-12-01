@@ -66,6 +66,8 @@ It also encodes what values were available on the page at the time of the decisi
 
 When the agent makes a decision, it can select from a list of available tools to call. This list is provided in the form of descriptions. It can be used to inform how the agent's instructions should be crafted. To nudge the agent towards a specific tool, these descriptions can be used as a starting point. It also serves as a list of capabilities of what the agents can do.
 
+Learn more in [Instruction keywords for an agent (preview)](ai-agent-playground-instruction-keywords.md).
+
 #### Messages
 
 One or more messages can be added to a task during its execution. The agent uses all messages received up to a specific point to make decisions on what to do next.
@@ -80,7 +82,7 @@ Agents have to navigate [!INCLUDE [prod_short](../developer/includes/prod_short.
 
 #### Agent settings
 
-Agents can be configured with settings on how to format dates, currency, and other information. These are displayed in the agent settings section.
+Agents can be configured with settings on how to format dates, currency, and other information. Some of these settings are page and record specific, which means that for the same agent and the same page, the values can be different depending on the records displayed. These settings are displayed in **Tasks and page settings**.
 
 ## Debug common scenarios
 
