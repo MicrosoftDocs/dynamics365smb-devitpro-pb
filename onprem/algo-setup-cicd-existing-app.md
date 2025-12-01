@@ -4,7 +4,7 @@ description: "Setting up continuous integration, continuous delivery (CI/CD) for
 author: freddyk
 ms.date: 01/24/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ---

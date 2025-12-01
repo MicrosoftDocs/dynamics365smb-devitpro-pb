@@ -2,7 +2,7 @@
 title: Migrate to Business Central online from on-premises
 description: Get more background information about migrating to the cloud from Business Central on-premises, such as how to handle multiple companies or per-tenant-extensions.
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.reviewer: jswymer
 ms.search.keywords: cloud, migrate, saas, online
 ms.date: 11/30/2022
