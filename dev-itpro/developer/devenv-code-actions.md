@@ -34,6 +34,8 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the following code a
 - Insert `using` statement for a missing namespace. Fix for instance, document, project, or workspace.
 - Move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. Learn more in [Tooltip property](properties/devenv-tooltip-property.md).
 - Fix code to use the `this` keyword for self-reference and code readability. Learn more in [Use the this keyword for codeunit self-reference](devenv-al-this-keyword.md).
+- Add namespace from template / inferred from sibling files / publisher.project. Fix for instance, document, project, or workspace.
+- Sort `using` statements on the document, project, or workspace.
 
 ## Examples
 
