@@ -33,9 +33,10 @@ To import the configuration, do the following:
 
 1. On the **Agents (preview)** page, choose the agent that you want to import.
 2. Choose **Import agent**.
-3. Select if the agent should be a new agent or replace an existing agent - if the name already exists.
-4. Continue to import the agent
-5. Activate it
+3. Select if the agent should be a new agent or replace an existing agent - if an agent with this name already exists.
+4. Continue to import the agent.
+5. Activate it.
+
 
 ## Related information
 
