@@ -48,9 +48,9 @@ Some entries correspond to moments when the agent had to decide to take an actio
 
 Other entries correspond either to user interactions like user interventions or messages arriving or to system actions, like stopping a task because it violated a system constraint.
 
-#### What the agent saw
+#### What the agent had access to
 
-This section is a representation of the page as the agent saw it when making a decision. It encodes what elements were visible on the page and the metadata that it knows about them. It can answer questions like:
+This section is a representation of the page as the agent had access to when making a decision. It encodes what elements were visible on the page and the metadata that it knows about them. It can answer questions like:
 
 - Was an action present?
 - Was a field editable?
