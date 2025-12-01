@@ -2,7 +2,7 @@
 title: Update 27.2 for Microsoft Dynamics 365 Business Central 2025 Release Wave 2
 description: Get an overview of new and changed capabilities in the 27.2 update of Business Central online, which is part of 2025 release wave 2
 ms.author: jswymer
-ms.date: 11/26/2025
+ms.date: 12/01/2025
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer
@@ -19,10 +19,8 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-
 | Product area | Feature | Public preview/General availability |
 |-|-|-|
-| Copilot and agents | [Suggest gas emissions in sustainability journals with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/suggest-gas-emissions-sustainability-journals-copilot) | Public preview |
 | Country and regional | [Add drill-down links to VAT entries in the VAT return lines for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-drill-down-links-vat-entries-vat-return-lines-czechia) | General availability |
 | | [Enable additional countries/regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-additional-countries-regions) | General availability |
 | Electronic Documents | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) | General availability |
