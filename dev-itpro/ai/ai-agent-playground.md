@@ -120,7 +120,8 @@ As a preview feature, the Agent playground has several important limitations:
 - **State dependencies**: Permission changes require deactivation when on the **Agent Card**; task changes require activation
 - **Permission inheritance**: Agents can't have more permissions than their creating user
 - **UI interaction limits**: Agents see only what their assigned profile allows
-- **No page search**: Agents can't use the search functionality in the interface
+- **Single list per page**: Agents can only interact with one list on any given page. If a page has multiple sublists (for example, sales lines and notes in a factbox), the agent can only access one of them
+- **No page search**: Agents can't use search functionality to find specific records, including **Tell me**. Navigation is limited to available actions and links
 
 ### Development considerations
 
@@ -143,4 +144,4 @@ Ready to try the Agent playground? The process involves enabling the feature, cr
 [Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
 [Best practices (preview)](ai-agent-playground-best-practices.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)
