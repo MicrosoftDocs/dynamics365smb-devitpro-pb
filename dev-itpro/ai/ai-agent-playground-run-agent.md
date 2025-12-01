@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-To get a playground agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. Learn more about how to write effective instructions in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. Learn more about how to write effective instructions in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ## Defining tasks
 
