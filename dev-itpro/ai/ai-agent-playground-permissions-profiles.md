@@ -10,7 +10,7 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Set up playground agent permissions and profiles (preview)
+# Set up agent permissions and profiles (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
