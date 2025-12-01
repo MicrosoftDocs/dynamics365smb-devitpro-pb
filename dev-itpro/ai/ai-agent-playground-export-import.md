@@ -14,7 +14,7 @@ ms.update-cycle: 180-days
 
 # Export or import an agent configuration
 
-As part of iterating to improve your agent, you can export and import the agent's configuration from the Agent playground to your local machine. The exported configuration includes:
+As part of iterating to improve your agent, you can export and import the agent's configuration from the playground agent to your local machine. The purpose of this feature is to allow you to back up your agent configuration, share it with others, or move it between different sandbox environments. The exported configuration includes:
 
 - **Identity**: The name and display name of an agent
 - **Instructions**: The detailed guidelines that define how the agent should behave.
@@ -24,19 +24,16 @@ As part of iterating to improve your agent, you can export and import the agent'
 To export the configuration, do the following:
 
 1. On the **Agents (preview)** page, choose the agent that you want to export.
-2. Choose **Export agent**.
+2. Under **Actions** > **Other**, choose **Export agent definition**.
 3. The exported agent appears in your **Downloads** window in .xml format. 
 
 To import the configuration, do the following:
 
-<!-- check with newest UI before publishing -->
-
 1. On the **Agents (preview)** page, choose the agent that you want to import.
-2. Choose **Import agent**.
-3. Select if the agent should be a new agent or replace an existing agent - if an agent with this name already exists.
-4. Continue to import the agent.
-5. Activate it.
-
+1. Under **Actions** > **Other**, choose **Import agent definition**, which opens the **Import agents** dialog.
+1. Choose the **Select XML File** button to browse to the .xml file that you want to import.
+1. Review the imported agent details and choose whether to add or replace the existing agent configuration if the agent already exists. Then choose **Import**.
+1. Activate the imported agent and choose **Done**.
 
 ## Related information
 
