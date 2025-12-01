@@ -58,8 +58,8 @@ Don't use the Agent playground when:
 A typical playground agent follows this lifecycle:
 
 1. **Create** - Set up the agent with basic identity and profile
-1. **Configure** - Define instructions, permissions, and tasks
-1. **Activate** - Enable the agent for testing
+1. **Configure** - Define instructions and permissions
+1. **Activate** - Enable the agent for testing, add tasks
 1. **Iterate** - Test, refine instructions, and adjust permissions
 1. **Graduate** - Export learnings to build production solutions using AL extensions
 1. **Clean up** - Deactivate and remove the prototype agent
