@@ -26,9 +26,9 @@ Learn more about the Agent playground in [Agent playground overview (preview)](a
 
 Before you can create an agent in the agent playground, ensure that you have the following prerequisites in place:
 
-- Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
+- Enable the **Custom Agent** capability in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 - Appropriate permissions to access and use the Agent playground in [!INCLUDE [prod_short](../includes/prod_short.md)]. This must include the "AGENT - ADMIN" and the "AGENT - DIAGNOSTICS" permission sets assigned to your user.
-- A sandbox environment for testing and experimentation (can include customer data such as sandbox copies of production data)
+- A sandbox environment for testing and experimentation from version 27.2 (can include customer data such as sandbox copies of production data)
 - Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
 
 ## Getting started

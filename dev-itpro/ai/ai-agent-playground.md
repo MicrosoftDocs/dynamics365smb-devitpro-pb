@@ -80,7 +80,7 @@ Before you can use the Agent playground, ensure that you have the following prer
 - Appropriate permissions to access and use the Agent playground in [!INCLUDE [prod_short](../includes/prod_short.md)].  
   - "AGENT - ADMIN" gives permission to work with the playground.  
   - "AGENT - DIAGNOSTICS" gives access to extra troubleshooting data.
-- A sandbox environment for testing and experimentation (can include customer data such as sandbox copies of production data).
+- A sandbox environment for testing and experimentation from version 27.2 (can include customer data such as sandbox copies of production data).
 - Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
 
 ### Instructions and tasks
