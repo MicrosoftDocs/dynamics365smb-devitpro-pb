@@ -134,7 +134,7 @@ Ready to try the Agent playground? The process involves enabling the feature, cr
 
 ## Related information
 
-[Overview](ai-agent-playground-landing-page.yml)  
+[Overview (preview)](ai-agent-playground-landing-page.yml)  
 [Create and activate (preview)](ai-agent-playground-create.md)  
 [Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  

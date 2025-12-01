@@ -175,6 +175,8 @@ Agents retain a history of their actions and searches but don't store the full s
 An example of giving such instructions could be: "**Memorize** the external document reference from the newly created sales quote for use in follow-up communications."
 Consider providing an example of what the memorized information should look like to improve accuracy, for example "external document reference: ABCD1234 Document Number: 1234"
 
+Learn more about using specific instruction keywords in [Instruction keywords for an agent (preview)](ai-agent-playground-instruction-keywords.md).
+
 #### Error handling and validation
 
 - **Validate inputs**: Ensure all required fields are filled before proceeding with critical actions
@@ -247,7 +249,7 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 
 ## Related information
 
-[Overview](ai-agent-playground-landing-page.yml)  
+[Overview (preview)](ai-agent-playground-landing-page.yml)  
 [Agent playground (preview)](ai-agent-playground.md)  
 [Create and activate (preview)](ai-agent-playground-create.md)   
 [Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  

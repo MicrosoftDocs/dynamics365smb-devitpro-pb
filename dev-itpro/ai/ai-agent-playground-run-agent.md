@@ -39,7 +39,7 @@ Once your agent is set up and tasks are being created, it's important to monitor
 
 ## Related information
 
-[Overview](ai-agent-playground-landing-page.yml)  
+[Overview (preview)](ai-agent-playground-landing-page.yml)  
 [Agent playground (preview)](ai-agent-playground.md)  
 [Create and activate (preview)](ai-agent-playground-create.md)  
 [Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  

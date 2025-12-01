@@ -215,7 +215,7 @@ This API-based approach allows you to build automated workflows during the proto
 
 ## Related information
 
-[Overview](ai-agent-playground-landing-page.yml)  
+[Overview (preview)](ai-agent-playground-landing-page.yml)  
 [Agent playground (preview)](ai-agent-playground.md)  
 [Create and activate (preview)](ai-agent-playground-create.md)  
 [Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  

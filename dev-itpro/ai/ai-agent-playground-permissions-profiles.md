@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-The Agent playground is a prototyping environment that allows subject matter experts, product owners, consultants and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more about the Agent playground in [Agent playground overview (preview)](ai-agent-playground.md).
+The Agent playground is a prototyping environment that allows subject matter experts, product owners, consultants and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [Agent playground overview (preview)](ai-agent-playground.md).
 
 ## Permissions
 
@@ -67,24 +67,28 @@ A playground agent can interact with the UI it sees. For example, it can't acces
 
 On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
-| Property | Data type | Description |
+| Property | Data type | If set to... |
 |----------|-----------|-------------|
-| `ClearActions` | Boolean | If set to true, all actions on the page are removed for the agent.|
-| `ClearLayout`  | Boolean | If set to true, the layout of the page is simplified for the agent. |
-| `ClearViews`   | Boolean | If set to true, all views on the page are removed for the agent. |
-| `DeleteAllowed`| Boolean | If set to false, the delete action isn't allowed for the agent. |
-| `InsertAllowed`| Boolean | If set to false, the insert action isn't allowed for the agent. |
+| `ClearActions` | Boolean | `true`, all actions on the page are removed for the agent.|
+| `ClearLayout`  | Boolean | `true`, the layout of the page is simplified for the agent. |
+| `ClearViews`   | Boolean | `true`, all views on the page are removed for the agent. |
+| `DeleteAllowed`| Boolean | `false`, the delete action isn't allowed for the agent. |
+| `InsertAllowed`| Boolean | `false`, the insert action isn't allowed for the agent. |
+
+#### Example of a page customization for an agent profile
+
+With the following page customization, the agent assigned to this profile won't see any actions or views on the Customer Card page, will have a simplified layout, and won't be able to insert or delete customers.
 
 ```al
 pagecustomization 50100 CustomerAgentProfileCustomization
 {
     PageType = Card;
     PageID = Customer;
-    ClearActions = true;
-    ClearLayout = true;
-    ClearViews = true;
-    DeleteAllowed = false;
-    InsertAllowed = false;
+    ClearActions = true; // No actions available
+    ClearLayout = true;  // Simplified layout
+    ClearViews = true;    // No views available
+    DeleteAllowed = false; // Delete not allowed
+    InsertAllowed = false; // Insert not allowed
     ...
 }
 ```
@@ -93,7 +97,7 @@ Once you have built and published a profile, you can assign it to the agent in t
 
 ## Related information
 
-[Overview](ai-agent-playground-landing-page.yml)  
+[Overview (preview)](ai-agent-playground-landing-page.yml)  
 [Agent playground (preview)](ai-agent-playground.md)  
 [Create and activate (preview)](ai-agent-playground-create.md)  
 [Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  

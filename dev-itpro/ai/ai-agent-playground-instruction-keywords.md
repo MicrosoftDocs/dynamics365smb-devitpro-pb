@@ -50,7 +50,7 @@ Here are some common keywords and phrases you can use in your agent's instructio
 
 ## Related information
 
-[Overview](ai-agent-playground-landing-page.yml)  
+[Overview (preview)](ai-agent-playground-landing-page.yml)  
 [Agent playground (preview)](ai-agent-playground.md)  
 [Create and activate (preview)](ai-agent-playground-create.md)   
 [Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
