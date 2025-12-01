@@ -8,11 +8,11 @@
 
 # Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
 
-title: Working with custom agents in Business Central (preview)
+title: Working with playground agents in Business Central (preview)
 summary: Explore the Agent playground to create and test custom AI agents in Business Central.
 
 metadata:
-  title: Working with custom agents in Business Central (preview)
+  title: Working with playground agents in Business Central (preview)
   description: Explore the Agent playground to create and test custom AI agents in Business Central.
   author: SusanneWindfeldPedersen
   ms.author: solsen
