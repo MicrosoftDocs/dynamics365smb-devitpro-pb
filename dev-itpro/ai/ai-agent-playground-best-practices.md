@@ -26,42 +26,7 @@ Learn more about the Agent playground in [Agent playground overview (preview)](a
 
 ### Write clear and specific instructions
 
-Effective agent instructions are specific, actionable, and contextual:
-
-#### Good example
-
-```text
-You're a customer service agent for a Business Central implementation. 
-When users ask about customer information, search the Customers page and provide:
-- Customer name and number
-- Contact details (phone, email)
-- Current balance and credit limit
-- Recent sales history (last 5 transactions)
-Always format responses in a clear, professional manner and ask clarifying questions if the request is ambiguous.
-```
-
-#### Poor example
-
-```text
-You're a customer service agent. Provide info about customers.
-```
-
-### Include context and constraints
-
-- Define the agent's role and scope clearly
-- Specify what information the agent should use, be specific about pages or actions if it gets confused
-- Set expectations for response format and tone
-- Include any business rules or constraints
-- Provide examples of good responses when possible
-
-### Use iterative refinement
-
-- Start with basic instructions and test
-- Refine based on actual agent behavior
-- Document what works and what doesn't
-- Test edge cases and unexpected inputs
-
-Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
+Effective agent instructions are specific, actionable, and contextual. Instructions are key to guiding agent behavior. Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ## Tasks best practices
 
