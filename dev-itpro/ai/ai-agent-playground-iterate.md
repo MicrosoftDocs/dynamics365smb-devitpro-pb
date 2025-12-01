@@ -1,6 +1,6 @@
 ---
 title: Iterate and manage an agent (preview)
-description: Learn how to iterate and manage a playground agent in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
+description: Learn how to iterate and manage an agent created in the agent playground in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
