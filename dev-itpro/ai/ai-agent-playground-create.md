@@ -50,10 +50,10 @@ Next, configure, and activate the agent to get started.
 The **Create agent (preview)** wizard allows you to configure your playground agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Create**.
-1. In the **Custom Agents Wizard** dialog, choose whether to create a blank agent or use a template.  
+1. In the **Create agent** wizard, choose whether to create a blank agent or use a template.  
   - To create a blank agent, choose **Create agent from scratch**, and then choose **Next**.
-  - To use a template, choose **SALES VALIDATION**, and then choose **Next**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further.
-1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** for the agent. The **Initials** field value is suggested based on the **Display Name**, but can be modified. <!-- check on newest build -->
+  - To use a template, choose **Sales Validation**, choose **Next**, and then choose **Create agent**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further.
+1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** and **Initials** field values are now suggested based on the **Name**, but can be modified.
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="Playground agent setup":::
 1. In the **Description** field, provide an optional description for the agent.
 1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
