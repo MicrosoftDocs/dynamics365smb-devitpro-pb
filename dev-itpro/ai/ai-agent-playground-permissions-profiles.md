@@ -61,12 +61,9 @@ The agent is assigned to a profile (role) that determines which UI elements it c
 
 You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Designing profiles](../developer/devenv-design-profiles.md) and [Page customization object](../developer/devenv-page-customization-object.md).
 
-> [!NOTE]
-> The profile of the agent is set as default to the **Playground Agent (Copilot)** type. This can be changed, but changing the type changes what the agent has access to.
-
 ### The agent and the UI
 
-A playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user.
+A playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user. The intent is to define an inclusion list or positive list of UI elements exposed to the agent.
 
 On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
@@ -92,6 +89,12 @@ pagecustomization 50100 CustomerAgentProfileCustomization
     ClearViews = true;    // No views available
     DeleteAllowed = false; // Delete not allowed
     InsertAllowed = false; // Insert not allowed
+
+    layout
+    {
+       modify(Name) { Visible = true; }
+       // Other changes
+    }
     ...
 }
 ```

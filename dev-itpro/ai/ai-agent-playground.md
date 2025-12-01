@@ -99,7 +99,7 @@ Learn more about geographic and language availability at [Copilot international 
 
 ### Permissions and profiles
 
-The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege—grant only the permissions necessary for the agent's intended functionality. Permission sets can only be modified when the agent is deactivated.
+The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege—grant only the permissions necessary for the agent's intended functionality. Permission sets can only be modified when the agent is deactivated in the **Agent Card**. From the agent's setup page, permissions can be modified while the agent is active, but the changes only affect new tasks or tasks which are paused and then restarted.
 
 The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. To reduce contextual noise and increase accuracy, it is highly recommended to create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
 
@@ -117,7 +117,7 @@ As a preview feature, the Agent playground has several important limitations:
 
 ### Operational constraints
 
-- **State dependencies**: Permission changes require deactivation; task changes require activation
+- **State dependencies**: Permission changes require deactivation when on the **Agent Card**; task changes require activation
 - **Permission inheritance**: Agents can't have more permissions than their creating user
 - **UI interaction limits**: Agents see only what their assigned profile allows
 - **No page search**: Agents can't use the search functionality in the interface
