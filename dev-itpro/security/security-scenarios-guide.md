@@ -80,7 +80,7 @@ Learn more in [Business Central Administration Center API](../administration/adm
 1. Enable system-assigned or user-assigned managed identity on the Azure resource. Learn more in [How to manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities).
 1. Register an app in your partner's Microsoft Entra ID. Learn more in [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
 1. Configure Federated Identity Credential on the app registration, linking it to the Azure resource's managed identity. Learn more in [Configure an application to trust a managed identity](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity) and [Workload identity federation](/entra/workload-id/workload-identity-federation).
-1. Authorize the app in customer tenants via GDAP or direct app authorization. Learn more in [Manage Access to Environments](../administration/tenant-admin-center-manage-access.md).
+1. Grant consent to the app in customer tenants as a partner or direct as a customer. Learn more in [Manage Access to Environments](../administration/tenant-admin-center-manage-access.md).
 
 Your code acquires tokens automatically using the managed identity—no secrets to manage. Learn more in [Access token request with a federated credential](/entra/identity-platform/v2-oauth2-client-creds-grant-flow#third-case-access-token-request-with-a-federated-credential).
 
@@ -97,7 +97,6 @@ Your code acquires tokens automatically using the managed identity—no secrets 
 **Benefits:**
 
 - No credential theft risk (managed identity scenario)
-- Automated credential rotation (Azure handles it)
 - Fine-grained access control per customer
 - Complete audit trail of API calls
 - Compliance with zero-trust principles
@@ -111,10 +110,11 @@ Your code acquires tokens automatically using the managed identity—no secrets 
 
 ## Administrator Scenarios
 
-### Restrict network access to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external services
+### Restrict access to externals services from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls
 
 **Context and problem:**  
-Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (AppSource apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment reaches these services, blocking potential unauthorized access or data exfiltration attempts from other sources.
+
+Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (AppSource apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reaches these services. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is an online (SaaS) solution where environments are regularly rebalanced and upgraded across application services with changing IP addresses. So you need a solution that works with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s dynamic infrastructure.
 
 **Solution:**  
 Use Azure service tags and network access controls to create allow lists based on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s IP ranges.
@@ -124,7 +124,7 @@ Learn more in [Use Azure security service tags](security-service-tags.md) and [A
 **Guidance:**
 
 **Scenario A: Destination service supports service tags natively**  
-(Azure SQL Database, Azure Key Vault, Azure Cosmos DB, and so on.)
+(only Azure functions or web apps (in Azure App Services) support service tags natively in firewall rules)
 
 1. Navigate to your Azure resource's networking settings.
 1. Configure firewall rules or network access controls.
@@ -160,7 +160,6 @@ Learn more in [Use Azure security service tags](security-service-tags.md) and [A
 - Prevents unauthorized access from non-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] sources
 - Reduces attack surface significantly
 - Compliance with network segmentation requirements
-- Visibility into allowed traffic patterns
 
 **Trade-offs:**
 
@@ -214,7 +213,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 1. Monitor [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry:
 
    1. Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry to Azure Application Insights. Learn more in [Turn environment telemetry on or off](../administration/telemetry-enable-application-insights.md).
-   1. Monitor authorization failures and permission errors and API authentication failures for service accounts Learn more in [Authorization trace telemetry](../administration/telemetry-authorization-trace.md) [Permission errors trace telemetry](../administration/telemetry-permission-error-trace.md), and [Web Services telemetry](../administration/telemetry-webservices-trace.md).
+   1. Monitor authorization failures and permission errors and API authentication failures for service accounts. Learn more in [Authorization trace telemetry](../administration/telemetry-authorization-trace.md) [Permission errors trace telemetry](../administration/telemetry-permission-error-trace.md), and [Web Services telemetry](../administration/telemetry-webservices-trace.md).
 
 1. Establish response procedures:
 
@@ -344,7 +343,7 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
    Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 1. Implement audit logging:
-   - Enable change log for sensitive tables (Vendor Bank Account, User Permissions). Learn more about the change log at [Audit changes](/dynamics365/business-central/across-log-changes).
+   - Monitor sensitive fields tables (like Vendor Bank Account or company's IBAN number). Learn more in [Monitor sensitive fields](/dynamics365/business-central/across-log-changes#monitor-sensitive-fields)
    - Monitor approval workflow telemetry.
    - Regular review of who approved what (monthly reconciliation).
 
@@ -367,7 +366,7 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
 - User resistance: Perceived as bureaucratic or lack of trust
 - Complex setup: Requires careful workflow design and testing
 - Approver availability: Vacation/absence can block operations (mitigate with delegation)
-- Overhead for small transactions: May need threshold-based rules
+- Overhead for small transactions: Might need threshold-based rules
 
 **Best practice:**  
 Start with high-risk, high-value transactions only. Expand separation of duties gradually based on risk assessment and user feedback. Balance control with operational efficiency.
@@ -388,42 +387,51 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 
 1. Set up Azure Key Vault:
    - Create Azure Key Vault in same region as [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for optimal performance. Learn more in [Quickstart: Create a key vault using the Azure portal](/azure/key-vault/general/quick-create-portal).
-   - Store API keys, connection strings, certificates as Key Vault secrets.
+   - Store API keys, connection strings, certificates in a Key Vault.
    - Enable Key Vault logging to monitor secret access. Learn more in [Azure Key Vault logging](/azure/key-vault/general/logging).
    - Configure access policies or use Azure role-based access control (RBAC). Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy) or [Azure Key Vault RBAC guide](/azure/key-vault/general/rbac-guide).
 
 1. Access from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
-   
-   **Option A - App registration with certificate:**
+
    - Create app registration in customer's Microsoft Entra ID. Learn more in [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
    - Upload certificate to app registration (do NOT use client secrets). Learn more in [Certificate credentials](/entra/identity-platform/certificate-credentials).
    - Grant app registration "Get Secret" permission on Key Vault. Learn more in [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy).
-   - Store certificate in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] isolated storage. Learn more in [Isolated Storage](../developer/devenv-isolated-storage.md).
-
-   **Option B - Managed identity (for online integrations):**
-   - If calling Azure Function/Logic App as intermediary.
-   - Azure service uses managed identity to access Key Vault. Learn more in [Use managed identities for App Service and Azure Functions](/azure/app-service/overview-managed-identity).
-   - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls Azure service (no secrets in Business Central).
 
 1. AL code pattern: Use AL [HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md) with certificate authentication.
 
-   The following example shows how to retrieve a secret from Azure Key Vault using certificate-based authentication:
+   > [!NOTE]
+   > The following example is conceptual and shows the general pattern. For complete implementation details including OAuth token acquisition, certificate management, and error handling, see [Azure Key Vault REST API](/rest/api/keyvault/secrets/get-secret) and [HttpClient.AddCertificate Method](../developer/methods-auto/httpclient/httpclient-addcertificate-method.md).
 
    ```al
    local procedure GetApiKey(): Text
    var
        Client: HttpClient;
+       Headers: HttpHeaders;
        Response: HttpResponseMessage;
+       Certificate: SecretText;
+       AccessToken: SecretText;
        KeyVaultUrl: Text;
    begin
+       // Retrieve certificate from Azure Key Vault
+       Certificate := GetCertificateFromKeyVault();
+       
+       // Add certificate for authentication
+       Client.AddCertificate(Certificate);
+       
+       // Acquire OAuth token using certificate (implementation required)
+       AccessToken := AcquireTokenWithCertificate();
+       
+       // Add authorization header
+       Client.DefaultRequestHeaders(Headers);
+       Headers.Add('Authorization', SecretStrSubstNo('Bearer %1', AccessToken));
+       
        KeyVaultUrl := 'https://mykeyvault.vault.azure.net/secrets/api-key?api-version=7.3';
        
-       // Authenticate using certificate-based auth
        if not Client.Get(KeyVaultUrl, Response) then
-           Error('Failed to retrieve secret');
+           Error('Failed to retrieve secret from Key Vault');
        
-       // Parse and return secret value
-       // Implement proper error handling
+       // Parse JSON response and return secret value (implementation required)
+       exit(ParseSecretFromResponse(Response));
    end;
    ```
 
@@ -452,7 +460,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 ### Secure inter-service communication using service tags
 
 **Context and problem:**  
-Your AppSource app or pertenant extension (PTE) calls external Azure services (SQL Database, Cosmos DB, custom APIs). You want to restrict these services to only accept traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], preventing unauthorized access from other sources.
+Your AppSource app or per-tenant extension (PTE) calls external Azure services (SQL Database, Cosmos DB, custom APIs). You can minimize traffic to your service by restricting it to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only.
 
 **Solution:**  
 Configure network access controls on Azure services using the `Dynamics365BusinessCentral` service tag.
@@ -503,7 +511,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
       Learn more in [Create a network security group](/azure/virtual-network/manage-network-security-group).
 
    > [!TIP]
-   > For global distribution scenarios requiring multi-region load balancing and CDN capabilities, consider using [Azure Front Door](/azure/frontdoor/front-door-overview) with similar WAF custom rules. Learn more in [Configure IP restriction rules with WAF for Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-rate-limit-configure).
+   > For global distribution scenarios requiring multi-region load balancing and content delivery network (CDN) capabilities, consider using [Azure Front Door](/azure/frontdoor/front-door-overview) with similar WAF custom rules. Learn more in [Configure IP restriction rules with WAF for Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-rate-limit-configure).
 
 1. Automate IP range updates to detect when Microsoft changes the Business Central service tag IP addresses:
    1. Create an Azure Automation runbook or scheduled script that runs daily.
@@ -657,13 +665,19 @@ Learn more in [Security and Protection](security-and-protection.md), [Business C
 For compliance and security investigations, you need to understand who accessed what data, when, and from where. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't enable comprehensive data access logging by default.
 
 **Solution:**  
-Implement multi-layered audit logging using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] change log, database auditing, and telemetry.
+Implement multi-layered audit logging using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] change log, sensistive field monitoring, database auditing, and telemetry.
 
 Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes), [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md), and [Transparent Data Encryption](transparent-data-encryption.md).
 
 **Guidance:**
 
-1. Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] change log:
+1. Enable [!INCLUDE[prod_short](../developer/includes/prod_short.md)] change log and/or sensitive field monitoring.
+
+  > [!NOTE]
+  > Change logging and sensitive field monitoring add overhead, which impacts performance. Sensitive field monitoring has significantly less performance impact than the change log feature, making it a recommended alternative.
+
+   **Enable change logging:**
+
    1. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to **Change Log Setup**.
    1. Enable change logging for sensitive tables:
 
@@ -672,9 +686,15 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
       - User, User Group, Permission Set
 
    1. Select fields to track: All fields versus critical fields only.
-   1. Consider performance impact (logging adds overhead).
 
-   Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)
+   **Enable sensitive field monitoring:**
+
+   1. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to **Monitor Field Change Setup**.
+   1. Specify the fields that you want to monitor based on filter criteria, such as the data sensitivity classification for the fields.
+   1. After you finish the guide, you can manage settings for field monitoring on the **Field Monitoring Setup** page.
+
+   Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).
+
 1. Configure SQL Server Auditing (on-premises):
 
    ```sql
@@ -712,7 +732,7 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
 1. Retention and archival:
    - Change log: Archive monthly to separate table and retain 13 months.
    - SQL Audit files: Retain 90 days active, 7 years archive.
-   - Telemetry: Application Insights defaults 90 days, export to storage for long-term.
+   - Telemetry: Application Insights defaults 90 days. Export to storage for long-term.
 
 **Benefits:**
 

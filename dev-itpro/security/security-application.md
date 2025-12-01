@@ -80,6 +80,9 @@ Learn more about the change log in [Audit changes](/dynamics365/business-central
 
 Admins can set up monitoring of specific fields in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], letting you flag fields as sensitive. If these fields are changed, the system can send an email alert to designated recipients and emit telemetry about the change. For example, you might monitor the bank account number field on a vendor card. This way, any change triggers an immediate alert, helping you quickly catch potential fraud attempts.
 
+> [!TIP]
+> Sensitive field monitoring has significantly less performance impact than the change log feature, making it a recommended alternative. Use it to track critical fields without the overhead of logging every change across entire tables.
+
 Learn more in [Monitor sensitive fields](/dynamics365/business-central/across-log-changes#monitor-sensitive-fields) and [Analyzing field monitoring telemetry](../administration/telemetry-field-monitoring-trace.md).
 
 ## Related information  

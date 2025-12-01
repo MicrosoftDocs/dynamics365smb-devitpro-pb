@@ -32,7 +32,7 @@ This page describes the definitions of a security incident and our customer noti
 
 Here you can learn about the Post Incident Review process: [Microsoft security incident management: Post-incident activity](/compliance/assurance/assurance-sim-post-incident-activity)
 
-## How can I quickly review changes to data without enabling the change log? 
+## How can I quickly review the latest changes to data without enabling the change log?
 
 You can use [!INCLUDE[prod_short](../developer/includes/prod_short.md)]’s analysis mode on any list page. Add the system fields (Created/Modified date and user) to the list (they can be hidden), then turn on analysis mode. With these fields present, the analysis mode (and Copilot) can help summarize recent changes to the data in that list&mdash;giving you a lightweight audit view.
 

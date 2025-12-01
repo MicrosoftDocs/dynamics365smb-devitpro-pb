@@ -38,15 +38,14 @@ Business Central provides comprehensive security features organized into five ke
 
 **Network security**
 
-- IP filtering to restrict network access
-- Azure security service tags for network segmentation
-- Support for private endpoints and virtual network integration
+- Azure security service tags for IP-based network segmentation and access control.
 
 **Security operations**
 
-- Continuous security monitoring and updates
-- Regular vulnerability assessments and remediation
-- Compliance with industry security standards
+- Continuous security monitoring and updates (by Microsoft)
+- Regular vulnerability assessments and remediation (by Microsoft)
+- Compliance with industry security standards (by Microsoft)
+- Audit logging and activity tracking for compliance (by partner/customer/auditor)
 
 ## Security resources
 

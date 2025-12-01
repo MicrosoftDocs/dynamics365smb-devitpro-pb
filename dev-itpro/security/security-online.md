@@ -43,7 +43,7 @@ Access can be controlled per [!INCLUDE[prod_short](../developer/includes/prod_sh
 
 ### Use Privileged Identity Management
 
-Consider using Microsoft Entra ID Privileged Identity Management (PIM) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators. PIM ensures that high-privilege roles (like Global Admin or Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administrator) are only activated when needed, reducing the risk of always-on admin accounts. This incorporation emphasizes best practice for cloud admins: don't leave admin privileges permanent – require on-demand activation. Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure).
+Consider using Microsoft Entra ID Privileged Identity Management (PIM) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators. PIM ensures that high-privilege roles (like Dynamics 365 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administrator) are only activated when needed, reducing the risk of always-on admin accounts. This incorporation emphasizes best practice for cloud admins: don't leave admin privileges permanent – require on-demand activation. Learn more in [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure).
 
 In addition to using PIM, physical device security is crucial for administrator access.
 
