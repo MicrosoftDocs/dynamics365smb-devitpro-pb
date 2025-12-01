@@ -56,7 +56,7 @@ The **Create agent (preview)** wizard allows you to configure your playground ag
 1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** and **Initials** field values are now suggested based on the **Name**, but can be modified.
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="Playground agent setup":::
 1. In the **Description** field, provide an optional description for the agent.
-1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do.  
+1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do. <!-- Use the **Download instructions** option... -->
 This serves as the prompt that guides the agent's behavior. Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 1. Choose the arrow to go to the next page of the wizard.
 1. Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with.  
