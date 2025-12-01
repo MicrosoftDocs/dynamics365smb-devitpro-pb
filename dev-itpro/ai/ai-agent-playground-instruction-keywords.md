@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 When writing instructions for your agent, you can use specific keywords and phrasing to help the agent understand how to utilize the tools available in the agent runtime effectively. These keywords guide the agent's behavior, ensuring it follows best practices and handles tasks as intended.
 
-Learn more about what instructions and tasks are in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
+Learn more about what instructions and tasks are in [Write effective instructions for an agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ## Agent history
 
