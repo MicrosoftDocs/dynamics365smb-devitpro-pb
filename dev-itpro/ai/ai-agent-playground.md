@@ -85,11 +85,10 @@ Before you can use the Agent playground, ensure that you have the following prer
 
 ### Instructions and tasks
 
-Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role.
+Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more about instructions in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
-Tasks are specific actions that the agent can perform based on your instructions. They represent concrete scenarios or workflows that the agent should handle. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests.
+Tasks are a way to trigger the agent. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more about tasks in [Run a playground agent (preview)](ai-agent-playground-run-agent.md).
 
-Learn more about instructions and tasks in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
 ### Supported languages
 
