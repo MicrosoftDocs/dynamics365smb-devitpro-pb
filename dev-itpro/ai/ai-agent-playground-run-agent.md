@@ -12,7 +12,7 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Run a playground agent (preview)
+# Run an agent created in the playground (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
