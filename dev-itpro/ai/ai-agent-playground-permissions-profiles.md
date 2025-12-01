@@ -63,7 +63,7 @@ You can create custom profiles specifically for agents, using page customization
 
 ### The agent and the UI
 
-A playground agent can interact with the UI it sees. For example, it can't access page search. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user. The intent is to define an inclusion list or positive list of UI elements exposed to the agent.
+A playground agent can interact with the UI it sees. It can access search on any list page, but not **Tell me**. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user. The intent is to define an inclusion list or positive list of UI elements exposed to the agent.
 
 On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
