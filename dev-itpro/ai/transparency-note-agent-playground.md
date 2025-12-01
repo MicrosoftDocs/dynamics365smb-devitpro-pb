@@ -11,7 +11,7 @@ ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
-# Transparency note: Business Central agent playground
+# Transparency note: Business Central agent playground (preview)
 
 ## What is a Transparency Note?
 

@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate a playground agent (preview)](ai-agent-playground-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage a playground agent (preview)](ai-agent-playground-iterate.md).
 
-Learn more about how to trigger your agent once you have written effective instructions in [Run a playground agent (preview)](ai-agent-playground-run-agent.md).
+Learn more about how to *trigger* your agent once you have written effective instructions in [Run a playground agent (preview)](ai-agent-playground-run-agent.md).
 
 ## Getting started with agent instructions
 
@@ -182,18 +182,6 @@ Consider providing an example of what the memorized information should look like
 - Examples could be:  
   "**DO NOT** proceed until the requested date is entered"  
   "**ALWAYS** confirm customer details are complete before creating quotes"
-
-### Defining tasks
-
-#### How to trigger your agent
-
-There are two ways to trigger a task for your agent:
-
-1. Manually via the **Agent tasks** page in [!INCLUDE [prod_short](../includes/prod_short.md)] through the **Create task** action
-2. Through the **Tasks AL API** which allows for integrating both with UI elements such as actions and with events such as receiving an email or a sales order posting. Learn more in [Integrate with the Tasks AL API](ai-agent-playground-tasks-api.md).
-
-When creating a task, you can specify an extra message that gets passed to the agent to complement the general instructions with specific details for that particular task. Each task you create appears in the agent's task queue, where the agent picks it up and processes it according to its instructions. Tasks can be stopped and restarted as needed.
-
 
 ## Testing and continuous improvement
 
