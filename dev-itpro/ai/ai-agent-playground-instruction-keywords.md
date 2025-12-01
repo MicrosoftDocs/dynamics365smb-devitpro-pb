@@ -39,7 +39,7 @@ Here are some common keywords and phrases you can use in your agent's instructio
 
 |Keyword/Phrase|Description| Example |
 |--------------|-----------|---------|
-|**Then ask for assistance**|Instructs the agent to seek help if needed during task execution.| "If you encounter an error, then ask for assistance." |
+|**Ask for assistance**|Instructs the agent to seek help if needed during task execution.| "If you encounter an error, then ask for assistance." |
 |**Request a review**|Instructs the agent to ask for a review of its work before finalizing. The task will continue after the user confirms. Note: All outgoing messages require a review.| "When the sales order is created, request a review before posting." |
 |**Reply**| Instructs the agent to respond to a message or query.| "When the sales order is created, reply with the confirmation." |
 |**Write an email**|Instructs the agent to compose and send an email. All outgoing messages require a review.| "When the sales order is created, write an email to the customer with the confirmation." |
@@ -47,7 +47,6 @@ Here are some common keywords and phrases you can use in your agent's instructio
 |**Set field**| Instructs the agent to set a specific field value.| "Set the 'Status' field to 'Approved'." |
 |**Use lookup**| Instructs the agent to use a specific lookup.| "Use lookup to select the appropriate payment terms." |
 |**Invoke action**| Instructs the agent to invoke a specific action.| "Invoke the 'Post' action to finalize the sales order." |
-
 
 ## Related information
 
