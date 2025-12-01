@@ -10,7 +10,7 @@ ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ---
 
-# Iterate and manage a playground agent (preview)
+# Iterate and manage an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
