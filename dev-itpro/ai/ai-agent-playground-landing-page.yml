@@ -8,11 +8,11 @@
 
 # Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
 
-title: Working with custom agents in Business Central
+title: Working with custom agents in Business Central (preview)
 summary: Explore the Agent playground to create and test custom AI agents in Business Central.
 
 metadata:
-  title: Working with custom agents in Business Central
+  title: Working with custom agents in Business Central (preview)
   description: Explore the Agent playground to create and test custom AI agents in Business Central.
   author: SusanneWindfeldPedersen
   ms.author: solsen
@@ -31,25 +31,25 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: Agent playground overview
+      - text: Agent playground overview (preview)
         url: ai-agent-playground.md
-      - text: Responsible AI transparency note for Agent playground
+      - text: Responsible AI transparency note for Agent playground (preview)
         url: transparency-note-agent-playground.md 
     - linkListType: how-to-guide
       links:
-      - text: Create a playground agent
+      - text: Create a playground agent (preview)
         url: ai-agent-playground-create.md
-      - text: Write effective instructions for a playground agent
+      - text: Write effective instructions for a playground agent (preview)
         url: ai-agent-playground-effective-instructions.md
-      - text: Instruction keywords for a playground agent
+      - text: Instruction keywords for a playground agent (preview)
         url: ai-agent-playground-instruction-keywords.md
-      - text: Use the tasks API to integrate with a playground agent
+      - text: Use the tasks API to integrate with a playground agent (preview)
         url: ai-agent-playground-tasks-api.md
-      - text: Set up playground permissions and profiles
+      - text: Set up playground permissions and profiles (preview)
         url: ai-agent-playground-permissions-profiles.md
-      - text: Run a playground agent
+      - text: Run a playground agent (preview)
         url: ai-agent-playground-run-agent.md
-      - text: Iterate and test a playground agent
+      - text: Iterate and test a playground agent (preview)
         url: ai-agent-playground-iterate.md
 # Card
   - title: Prototyping best practices

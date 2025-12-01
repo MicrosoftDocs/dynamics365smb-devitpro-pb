@@ -1503,7 +1503,7 @@
 ### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Agent playground (preview)
-### [Overview](ai/ai-agent-playground-landing-page.yml)
+### [Overview (preview)](ai/ai-agent-playground-landing-page.yml)
 ### [Agent playground (preview)](ai/ai-agent-playground.md)
 ### [Create and activate (preview)](ai/ai-agent-playground-create.md)
 ### [Write effective instructions (preview)](ai/ai-agent-playground-effective-instructions.md)
