@@ -28,7 +28,6 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | General availability |
 | Financial Management | [Use new SEPA file CAMT0530008](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sepa-file-camt0530008) | General availability |
 | Governance and administration | [Automate environment management with Power Platform connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/automate-environment-management-power-platform-connector) | General availability |
-| | [Cancel running environment update](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/cancel-running-environment-update) | General availability |
 | Supply chain management | [Evaluate quality of incoming goods and materials](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/evaluate-quality-incoming-goods-materials) | General availability |
 | | [Use subcontracting capabilities in production processes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-subcontracting-capabilities-production-processes) | General availability |
 | Sustainability Management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) | General availability |
