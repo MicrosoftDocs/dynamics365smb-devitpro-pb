@@ -2,7 +2,7 @@
 title: "Upgrading Version 17 Base Application to Version 18"
 description: Describes how to upgrade an unmodified Business Central 16 application to version 17
 ms.date: 10/01/2020
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 author: jswymer
 ---

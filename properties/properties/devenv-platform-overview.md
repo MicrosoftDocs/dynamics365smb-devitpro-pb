@@ -4,7 +4,7 @@ description: Introduces and explains the elements that the Business Central plat
 ms.custom: bap-template
 ms.date: 09/25/2023
 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ---
 

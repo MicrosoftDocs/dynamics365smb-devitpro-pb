@@ -1,7 +1,7 @@
 ---
 title: "Calculation formulas and the CalcFormula property"
 ms.date: 09/04/2023
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 description: Master Dynamics365 Business Central CalcFormula Property & Calculation Formulas for FlowFields. Learn syntax, filters & more.
 ---

@@ -4,7 +4,7 @@ description: "Set up and register a customer production environment for AL-Go fo
 author: freddyk
 ms.date: 12/30/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ---

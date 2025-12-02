@@ -3,7 +3,7 @@ title: "Symbol Files"
 description: "Description of the symbols file."
 author: SusanneWindfeldPedersen
 ms.date: 10/01/2020
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
