@@ -76,7 +76,7 @@ Understanding the following key concepts helps you work effectively with playgro
 
 Before you can use the Agent playground, ensure that you have the following prerequisites in place:
 
-- Enable the Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
+- Enable the **Custom Agent** capability in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
 - Appropriate permissions to access and use the Agent playground in [!INCLUDE [prod_short](../includes/prod_short.md)].  
   - "AGENT - ADMIN" gives permission to work with the playground.  
   - "AGENT - DIAGNOSTICS" gives access to extra troubleshooting data.
