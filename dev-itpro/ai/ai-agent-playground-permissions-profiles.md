@@ -99,7 +99,7 @@ pagecustomization 50100 CustomerAgentProfileCustomization
 }
 ```
 
-Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card**.
+Once you have built and published a profile, you can assign it to the agent in the **Profile** field on the **Agent Card** or from the **Configure agent** wizard.
 
 ## Related information
 
