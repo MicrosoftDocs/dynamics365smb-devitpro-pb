@@ -4,7 +4,7 @@ description: "Overview of the settings for AL-Go for Business Central."
 author: SusanneWindfeldPedersen
 ms.date: 05/27/2022
 ms.reviewer: 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ms.custom: sfi-ropc-nochange
