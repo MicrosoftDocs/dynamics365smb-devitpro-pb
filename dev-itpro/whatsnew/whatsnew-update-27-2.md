@@ -2,7 +2,7 @@
 title: Update 27.2 for Microsoft Dynamics 365 Business Central 2025 Release Wave 2
 description: Get an overview of new and changed capabilities in the 27.2 update of Business Central online, which is part of 2025 release wave 2
 ms.author: jswymer
-ms.date: 12/01/2025
+ms.date: 12/03/2025
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer
@@ -24,12 +24,9 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | Country and regional | [Add drill-down links to VAT entries in the VAT return lines for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-drill-down-links-vat-entries-vat-return-lines-czechia) | General availability |
 | | [Enable additional countries/regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-additional-countries-regions) | General availability |
 | Electronic Documents | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) | General availability |
-| | [Use purchase draft page to preview Peppol electronic invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-purchase-draft-page-preview-peppol-electronic-invoices) | Public preview |
 | | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | General availability |
 | Financial Management | [Use new SEPA file CAMT0530008](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sepa-file-camt0530008) | General availability |
-| Governance and administration | [Automate environment management with Power Platform connector](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/automate-environment-management-power-platform-connector) | General availability |
-| Supply chain management | [Evaluate quality of incoming goods and materials](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/evaluate-quality-incoming-goods-materials) | General availability |
-| | [Use subcontracting capabilities in production processes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-subcontracting-capabilities-production-processes) | General availability |
+| Supply chain management | [Evaluate quality of incoming goods and materials](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/evaluate-quality-incoming-goods-materials) | Public preview |
 | Sustainability Management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) | General availability |
 | | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) | General availability |
 
@@ -67,8 +64,6 @@ The Business Central Launch Event (BCLE) is now the Business Central Launch Edit
 - 45+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
 - 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
 - BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
-- 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
-- BCLE 2025 release wave 2 group on Viva Engage for asking questions to our product experts: [BCLE 2025 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=236770828288&view=all)
 
 ### Features becoming mandatory next release wave
 
