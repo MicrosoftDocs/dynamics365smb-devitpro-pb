@@ -76,9 +76,9 @@ Respond to system events like document posting:
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnAfterSalesInvHeaderInsert', '', false, false)]
 local procedure OnAfterSalesInvoicePost(var SalesInvHeader: Record "Sales Invoice Header")
 var
+    AgentTask: Record "Agent Task";
     AgentTaskBuilder: Codeunit "Agent Task Builder";
     AgentTaskMessageBuilder: Codeunit "Agent Task Message Builder";
-    AgentTask: Record "Agent Task";
 begin
     // Only create task for high-value invoices
     if SalesInvHeader.Amount > 10000 then begin
@@ -153,8 +153,8 @@ Continue conversations by adding new messages to existing agent tasks:
 ```al
 local procedure AddMessageToExistingTask(ExternalId: Text; MessageText: Text)
 var
-    AgentTask: Codeunit "Agent Task";
     AgentTaskRecord: Record "Agent Task";
+    AgentTask: Codeunit "Agent Task";
     AgentTaskMessageBuilder: Codeunit "Agent Task Message Builder";
 begin
     // Get the existing task by its external ID
@@ -225,4 +225,3 @@ This API-based approach allows you to build automated workflows during the proto
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
 [Best practices (preview)](ai-agent-playground-best-practices.md)  
 [Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
-
