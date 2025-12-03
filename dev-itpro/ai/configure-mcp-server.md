@@ -38,7 +38,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
    |Active|Specifies whether the configuration is active. When this switch is on, the configuration and its tools are available for agents to use. If you turn off the switch, agents that currently use the configuration won't work as expected.|
    |Dynamic Tool Mode|Specifies whether to enable dynamic tool mode for the MCP configuration. When this switch is on, agents search for tools within the configuration dynamically, which means the tools don't have to be explicitly added to agent configuration.<br><br>This option is useful when you expose a large number of API pages because some clients, like Copilot Studio, limit the number of tools on an agent. Tools in excess of the limit aren't available to the agent. <br><br>For example, Copilot Studio currently has a limit of 70 tools. If you add all standard APIs as tools in the configuration, only the first 70 are available to agents you build in Copilot Studio. To make all the standard APIs available, turn on the switch.|
    |Discover Additional Objects|Specifies whether to allow discovery of read-only objects not defined in the configuration. When this switch is on, agents that use the configuration also have ready-only access to all the environment's API page objects in the environment that aren't included as tools in the configuration. This switch only applies when the **Dynamic Tool Mode** is on. |
-   |Allow Create/Update/Delete Tools|Specifies whether APIs included as tools in the configuration can perform create, update, or delete operations. When this switch is turned off, agents that use this configuration can't perform create, update, and delete operations with tools even if the operations are enabled in the configuration.|
+   |Unblock Edit Tools|Specifies whether APIs included as tools in the configuration can perform create, update, or delete operations. When this switch is turned off, agents that use this configuration can't perform create, update, and delete operations with tools even if the operations are enabled in the configuration. Specifies whether APIs included as tools in the configuration can perform create, update, or delete operations. When this switch is turned off, `Allow Create`, `Allow Modify`, `Allow Delete`, and `Allow Bound Actions` permissions on tools in this configuration are set to `false` making the tools read-only.|
 
 1. In the **Tools** section, add API page objects as tools to the configuration.
 
@@ -60,10 +60,11 @@ Once the MCP server is enabled and configured, the individual configurations bec
 
    |Business Central object permissions|Tool|
    |-|-|
-   |Allow read|`List<object_name>_ PAG<ID>`|
-   |Allow create|`Create <object_name>_ PAG<ID>`|
-   |Allow modify|`ListUpdate <object_name>_ PAG<ID>`|
-   |Allow delete|`Delete <object_name>_ PAG<ID>`|
+   |Allow read|`List<object_name>_PAG<ID>`|
+   |Allow create|`Create<object_name>_PAG<ID>`|
+   |Allow modify|`ListUpdate<object_name>_PAG<ID>`|
+   |Allow delete|`Delete<object_name>_PAG<ID>`|
+   |Allow bound actions|`<bound_action_name>_PAG<ID>`|
 
    For example, if you specify the following on the **MCP Server Configuration** page:
 
@@ -82,7 +83,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
 
 ## Next steps
 
-[Create agents with Copilot Studio](create-agent-in-copilot-studio.md)  
+[Create agents with Copilot Studio](create-agent-in-copilot-studio.md)
 
 ## Related information
 
