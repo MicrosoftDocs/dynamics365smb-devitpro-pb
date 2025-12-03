@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 08/19/2025
+ms.date: 11/17/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -61,7 +61,7 @@ To schedule an update:
    > [!NOTE]
    > During preview periods, a target version marked as **Preview** appears in the list of available versions for sandbox environments. Ensure you're familiar with the limitations of [preview environments](preview-environments.md) before scheduling an update to a preview version.
    >
-   > Notification recipients registered in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] do not receive email notifications regarding availability of a new preview version or execution of an environment update to a preview version (scheduled, succeeded, or failed update). Use the Operations page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to view details on an environment update to a preview version.
+   > Notification recipients registered in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] don't receive email notifications regarding availability of a new preview version or execution of an environment update to a preview version (scheduled, succeeded, or failed update). Use the Operations page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to view details on an environment update to a preview version.
 
 1. Pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
 
@@ -90,6 +90,15 @@ To schedule an update to a planned version:
 
 > [!NOTE]  
 > Only versions planned for release during the [update period](update-rollout-timeline.md#update-period) of the environment's current major version can be selected. For example, you can't select planned version 26.5 for an environment on 25.x, because 26.5 releases in September 2025 and the 25.x update period ends in August 2025.
+
+## Cancel a running update
+
+Running updates are canceled automatically if the update doesn't succeed before the end of the update window set for the environment. If you need to cancel an update before the end of the update window or an update that can run outside the environment's update window, you can do so manually. To cancel a running update, navigate to the **Operation Details** pane from the Environment Details or Operations page and select the **Cancel update** button next to the operation status.
+
+Canceling a running update stops the update process and restores the environment to its state immediately before the update started. Depending on the size of the environment database, this process might take more than an hour, during which the environment isn't accessible.
+
+> [!NOTE]  
+> Updates can't be canceled on environments that are in the [Enforced Update Period](update-rollout-timeline.md) for the source version of the environment update.
 
 ## <a name="notify"></a>Get notified of updates
 

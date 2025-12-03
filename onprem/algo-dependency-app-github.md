@@ -4,7 +4,7 @@ description: "Create a dependency in the app.json file in your AL-Go project for
 author: freddyk
 ms.date: 01/27/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ---

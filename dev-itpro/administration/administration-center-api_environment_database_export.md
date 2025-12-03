@@ -1,71 +1,76 @@
 ---
 title: Business Central Admin Center API - Environment Database Export
-description: Learn about the Business Central administration center API for exporting an environment database.
+ms.author: jswymer
+description: Learn how to export an environment database using the Business Central Admin Center API. Discover permissions, metrics, and error handling for seamless exports.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 01/03/2023
+ms.date: 11/17/2025
 ---
 
-# Business Central Admin Center API - Environment Database Export
+# Business Central Admin Center API - Environment database export
 
-Allows for the export of an environment's Azure database. Databases are exported to an Azure Storage account provided by you. There is a limit to the number of exports that can be done within a month as shown by the 'metrics' endpoint below.
+Allows for the export of an environment's Azure database. Databases are exported to an Azure Storage account provided by you. There's a limit to the number of exports that can be done within a month as shown by the 'metrics' endpoint in the following section.
 
-### Required In-Product Permissions for Exporting an Environment Database
+### Required in-product permissions for exporting an environment database
 
 To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permission set assigned to your Business Central user account or authorized Microsoft Entra app.
 
-## Get Export Metrics
+## Get export metrics
 
 Gets information about the number of exports allowed per month and the amount remaining.
 
+```HTTP
+GET /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
-GET /admin/v2.24/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
-```
 
-### Route Parameters
+### Route parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
-`environmentName` - Name of the targeted environment
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
+
+`environmentName` - the name of the targeted environment.
 
 ### Response
 
 Returns the metrics around the current month's database exports.
 
-```
+```JSON
 {
   "exportsPerMonth": int, // The total number of allowed exports of the targeted environment every month.
   "exportsRemainingThisMonth": int, // The number of exports remaining for the targeted environment that can be performed this month.
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
-`environmentNotFound` - the targeted environment couldn't be found
+`environmentNotFound` - targeted environment can't be found.
 
    - target: {applicationFamily}/{environmentName}
 
-## Start Environment Database Export
+## Start environment database export
 
-Starts the export of an environment's database to a provided Azure storage account
+Starts the export of an environment's database to a provided Azure storage account.
 
-```
+```HTTP
 Content-Type: application/json
-POST /admin/v2.24/exports/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-### Route Parameters
+### Route parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
-`environmentName` - Name of the targeted environment
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral").
+
+`environmentName` - the name of the targeted environment.
 
 ### Body
 
-```
+```JSON
 {
   "storageAccountSasUri": string, // An Azure SAS uri pointing at the Azure storage account where the database will be exported to. The uri must have (Read | Write | Create | Delete) permissions
   "container": string, // The name of the container that will be created by the process to store the exported database.
@@ -73,34 +78,39 @@ POST /admin/v2.24/exports/applications/{applicationFamily}/environments/{environ
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
-`environmentNotFound` - the targeted environment couldn't be found
+`environmentNotFound` - targeted environment can't be found.
 
    - target: {applicationFamily}/{environmentName}
 
-`requestBodyRequired` - the request body must be provided
+`requestBodyRequired` - request body must be provided.
 
-`exportFailed` - the export failed because the target environment's version was too old, it wasn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been used up
+`exportFailed` - export failed because the target environment's version is too old, it isn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports is used up.
 
-## Get Export History
+## Get export history
 
-Gets information about the exports that have been done within a provided time frame, for which environment, and by which user.
+Gets information about the exports that happen within a provided time frame, for which environment, and by which user.
 
+```HTTP
+POST /admin/{apiVersion}/exports/history?start={startTime}&end={endTime}
 ```
-POST /admin/v2.24/exports/history?start={startTime}&end={endTime}
-```
+
+### Route parameters
+
+`apiVersion` - version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)].
 
 ### Query parameters
 
-`startTime` - datetime // The start of the export history entry time window to query
-`endTime` - datetime // The end of the  export history entry time window to query
+`startTime` - datetime // The start of the export history entry time window to query.
+
+`endTime` - datetime // The end of the  export history entry time window to query.
 
 ### Response
 
-Returns a detailed list of the database exports that occurred within the provided timeframe of the `start` and `end` query parameters
+Returns a detailed list of the database exports that occurred within the provided timeframe of the `start` and `end` query parameters.
 
-```
+```JSON
 {
   "applicationType": string, // Family of the environment (for example, "BusinessCentral")
   "applicationVersion": string, // The version of the environment's application at the time of the export.
@@ -115,9 +125,9 @@ Returns a detailed list of the database exports that occurred within the provide
 ```
 
 > [!NOTE]
-> All datetime values are in UTC
+> All datetime values are in UTC.
 
-## Case-Invariant blocked environment names
+## Case-invariant blocked environment names
 
 ### All environment types
 
@@ -143,11 +153,11 @@ Returns a detailed list of the database exports that occurred within the provide
 - signout
 - tablet
 
-### Production Environment Types
+### Production environment types
 
 - production
 
-### Sandbox Environment Types
+### Sandbox environment types
 
 - sandbox
 
