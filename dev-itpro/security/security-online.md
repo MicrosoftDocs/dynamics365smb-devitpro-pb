@@ -71,9 +71,13 @@ All customer data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
 The customer-managed encryption key used to encrypt your customer data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] at rest is administered in the Power Platform Admin Center and requires the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to be [linked to a Power Platform environment](../administration/tenant-admin-center-environments.md#linked-power-platform-environment). If the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is linked to a Power Platform environment to which a customer-managed encryption key is applied, this key also automatically applies to the linked [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. Unlinking an environment encrypted with a customer-managed encryption key or removing the customer-managed encryption key from the linked Power Platform environment automatically reverts encryption of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to the Microsoft-managed encryption key. Learn more about administering customer-managed encryption keys in [Power Platform admin center documentation](/power-platform/admin/customer-managed-key).
 
+#### Customer-managed encryption key for copied or restored environments
+
 Sometimes a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is created from an environment that's encrypted with a customer-managed encryption key using a copy or restore operation. In this case, the newly created environment is encrypted using the Microsoft-managed encryption key. To encrypt the newly created environment using a customer-managed encryption key, link it to a Power Platform environment that has the desired customer-managed encryption key applied. 
 
-Similarly, bacpac files created during an environment export operation are encrypted differently. When you export an environment that's encrypted with a customer-managed encryption key, the resulting bacpac files in the storage account use the [encryption key applied to the storage account](/azure/storage/common/customer-managed-keys-overview) rather than the environment's encryption key.
+#### Encryption key for exported environment data in bacpac file
+
+When you export environment data, the data in the resulting bacpac file is encrypted using the [encryption key applied to the Azure storage account](/azure/storage/common/customer-managed-keys-overview) rather than the environment's encryption key. To use the environment's customer-managed encryption key on data in the bacpac file, apply the key to the Azure storage account.
 
 ### Customer Lockbox
 
