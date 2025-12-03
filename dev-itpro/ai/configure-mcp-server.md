@@ -92,7 +92,7 @@ If the **Dynamic Tool Mode** is turned on, then the tools aren't available for s
 In this case, the agent uses these standard tools to search for and execute the needed tools from the configuration: `bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`.
 
 > [!NOTE]
-> These standard tools use a different naming convention (lowercase with underscores) because they are system-level tools provided by the MCP server, not generated from object metadata like the other tools listed above.
+> These standard tools use a different naming convention (lowercase with underscores) because they're system-level tools provided by the MCP server, not generated from object metadata like the other tools listed in the other tab.
 ---
 
 ## Next steps
