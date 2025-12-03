@@ -2,7 +2,7 @@
 title: "Upgrading Base Application Tables That Are Now Temporary"
 description: Describes how to upgrade base application tables that have been changed to temporary starting with version 18
 ms.date: 04/15/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 author: jswymer
 ---

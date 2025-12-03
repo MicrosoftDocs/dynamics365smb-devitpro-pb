@@ -4,7 +4,7 @@ description: Concept description #Required; article description that's displayed
 author: jswymer #Required; your GitHub user alias, with correct capitalization.
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
-ms.topic: conceptual #Required; don't change.
+ms.topic: concept-article #Required; don't change.
 ms.date: 11/25/2022
 ms.custom: bap-template #Required; don't change.
 ---
