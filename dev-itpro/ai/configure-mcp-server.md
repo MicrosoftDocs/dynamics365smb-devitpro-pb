@@ -54,7 +54,9 @@ Once the MCP server is enabled and configured, the individual configurations bec
 
 ## How API page object entries map to MCP server tools
 
-When you add an API page object entry to the MCP Server Configuration, each allowed operation (read, create, modify, update, delete, or bound action) results in a corresponding tool in the MCP server. These tools can then be added to agents in clients like Copilot Studio. Depending on the **Dynamic Tool Mode** setting, these tools are added explicitly by agent makers during design or dynamically by the agent at runtime. 
+When you add an API page object entry to the MCP Server Configuration, each allowed operation (read, create, modify, update, delete, or bound action) results in a corresponding tool in the MCP server. These tools can then be added to agents in clients like Copilot Studio. Depending on the **Dynamic Tool Mode** setting, these tools are added explicitly by agent makers during design or dynamically by the agent at runtime.
+
+The following sections explain how tools are named and made available in each mode.
 
 ### [Dynamic Tool Mode off](#tab/off)
 
