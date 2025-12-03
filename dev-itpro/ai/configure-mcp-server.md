@@ -93,6 +93,7 @@ In this case, the agent uses these standard tools to search for and execute the 
 
 > [!NOTE]
 > These standard tools use a different naming convention (lowercase with underscores) because they're system-level tools provided by the MCP server, not generated from object metadata like the other tools listed in the other tab.
+
 ---
 
 ## Next steps
