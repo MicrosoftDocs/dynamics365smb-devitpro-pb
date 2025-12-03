@@ -1,7 +1,7 @@
 ---
 title: "Dynamics NAV Client connected to Business Central using ClickOnce"
 ms.date: 04/20/2022
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.search.keywords: NAV Windows client
 author: jswymer

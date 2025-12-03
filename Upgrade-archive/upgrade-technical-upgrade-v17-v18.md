@@ -2,7 +2,7 @@
 title: "Technical upgrade from version 17 to version 18"
 description: Describes how to do a technical upgrade from Business Central 17 to 18
 ms.date: 12/27/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 author: jswymer
 ---
