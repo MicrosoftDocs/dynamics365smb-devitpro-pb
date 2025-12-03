@@ -26,7 +26,6 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | Electronic Documents | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) | General availability |
 | | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | General availability |
 | Financial Management | [Use new SEPA file CAMT0530008](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sepa-file-camt0530008) | General availability |
-| Supply chain management | [Evaluate quality of incoming goods and materials](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/evaluate-quality-incoming-goods-materials) | Public preview |
 | Sustainability Management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) | General availability |
 | | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) | General availability |
 
