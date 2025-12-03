@@ -76,10 +76,10 @@ For example, if you specify the following on the **MCP Server Configuration** pa
 
 The following tools are made available in the server:
 
-- `ListAPIV2 - Customer_ PAG30009`
-- `Create APIV2 - Customer_ PAG30009`
-- `ListUpdate APIV2 - Customer_ PAG30009`
-- `Delete APIV2 - Customer_ PAG30009`
+- `ListAPIV2 - Customer_PAG30009`
+- `CreateAPIV2 - Customer_PAG30009`
+- `ListUpdate APIV2 - Customer_PAG30009`
+- `DeleteAPIV2 - Customer_PAG30009`
 
 These tools appear in the MCP server and can be added to agents in Copilot Studio, allowing agents to perform the permitted operations on the specified API page objects.
 
@@ -89,6 +89,8 @@ If the **Dynamic Tool Mode** is turned on, then the tools aren't available for s
 
 In this case, the agent uses these standard tools to search for and execute the needed tools from the configuration: `bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`.
 
+> [!NOTE]
+> These standard tools use a different naming convention (lowercase with underscores) because they are system-level tools provided by the MCP server, not generated from object metadata like the other tools listed above.
 ---
 
 ## Next steps
