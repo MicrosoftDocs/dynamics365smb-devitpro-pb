@@ -2,7 +2,7 @@
 title: Update 27.2 for Microsoft Dynamics 365 Business Central 2025 Release Wave 2
 description: Get an overview of new and changed capabilities in the 27.2 update of Business Central online, which is part of 2025 release wave 2
 ms.author: jswymer
-ms.date: 12/03/2025
+ms.date: 12/04/2025
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer
@@ -23,15 +23,18 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 | Country and regional | [Add drill-down links to VAT entries in the VAT return lines for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-drill-down-links-vat-entries-vat-return-lines-czechia) | General availability |
 | | [Enable additional countries/regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-additional-countries-regions) | General availability |
-| Electronic Documents | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) | General availability |
+| Electronic documents | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) | General availability |
 | | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | General availability |
-| Financial Management | [Use new SEPA file CAMT0530008](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sepa-file-camt0530008) | General availability |
-| Sustainability Management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) | General availability |
+| Financial management | [Use new SEPA file CAMT0530008](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sepa-file-camt0530008) | General availability |
+| Sustainability management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) | General availability |
 | | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) | General availability |
 
 ## Localization updates
 
-No localization updates for 27.2.
+|Country/region|Feature|Description|
+|-|-|-|
+|USA|Update IRS Reporting Periods|This feature improves 1099 period management by allowing automatic creation of new reporting periods. Users can copy the previous period's setup to multiple companies at once, reducing manual work.|
+|USA|IRS 1099 Vendor Overview page|The new IRS 1099 Vendor Overview page provides a consolidated view of all key information related to 1099 forms. It displays vendors, forms, and form boxes with corresponding amounts, giving users clear insights and better control over their 1099 reporting.|
 
 ## Release plan
 
