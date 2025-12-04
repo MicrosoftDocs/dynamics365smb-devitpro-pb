@@ -77,7 +77,7 @@ Sometimes a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] envi
 
 #### Encryption key for exported environment data in bacpac file
 
-When you export environment data, the data in the resulting bacpac file is encrypted using the [encryption key applied to the Azure storage account](/azure/storage/common/customer-managed-keys-overview) rather than the environment's encryption key. To use the environment's customer-managed encryption key on data in the bacpac file, apply the key to the Azure storage account.
+When you export environment data, the data in the resulting bacpac file is encrypted using the encryption key applied to the Azure storage account rather than the environment's encryption key. To use the environment's customer-managed encryption key on data in the bacpac file, apply the key to the Azure storage account. Learn more in [Enable customer-managed keys for a storage account](/azure/storage/common/customer-managed-keys-overview#enable-customer-managed-keys-for-a-storage-account).
 
 ### Customer Lockbox
 
