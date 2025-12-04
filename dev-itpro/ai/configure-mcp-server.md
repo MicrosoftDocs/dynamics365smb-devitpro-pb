@@ -2,7 +2,7 @@
 title: Build Business Central agents with Copilot Studio
 description: Learn how to create agents that expose existing Business Central data and processes through Copilot Studio using either the Business Central MCP server or Business Central connector.
 ms.topic: how-to
-ms.date: 12/03/2025
+ms.date: 12/04/2025
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -24,6 +24,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
 ## Prerequisites
 
 - The **Feature: Enable MCP Server access** feature is enabled on the environment in the [Feature Management](https://businesscentral.dynamics.com/?page=2610) page. Learn more in [Enabling Upcoming Features Ahead of Time](/dynamics365/business-central/dev-itpro/administration/feature-management).
+- You have the **MCP - ADMIN** permission set or equivalent permissions.
 
 ## Create MCP Server configurations
 
