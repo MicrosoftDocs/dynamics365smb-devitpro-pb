@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
 
-The Agent playground is a prototyping environment that allows subject matter experts, product owners, consultants and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [Agent playground overview (preview)](ai-agent-playground.md).
+The Agent playground is a prototyping environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [Agent playground overview (preview)](ai-agent-playground.md).
 
 ## Permissions
 
@@ -37,7 +37,7 @@ Alternatively, you can assign existing permission sets to the agent, treating it
 When a user schedules a task for an agent, the task is executed with permissions from the intersection of the user's permissions and the agent's permissions. This design ensures **agents never exceed the privileges of the user who scheduled the task**.
 
 > [!NOTE]
-> If the agent makes a user intervention request, the task will continue proceeding with the *permissions of the user that responded to that intervention request*. This user might be different from the task creator.
+> If the agent makes a user intervention request, the task continues proceeding with the *permissions of the user that responded to that intervention request*. This user might be different from the task creator.
 
 #### Example
 

@@ -35,7 +35,7 @@ Before you can create an agent in the agent playground, ensure that you have the
 
 Creating an agent involves several key phases: design, configuration, and testing. You start by defining your agent's identity and purpose, then specify its behavior through natural language instructions. The agent needs appropriate permissions and user profiles to interact with your [!INCLUDE [prod_short](../includes/prod_short.md)] environment safely and effectively.
 
-The development process is iterative by design. You can continuously refine your agent's instructions, adjust what is has access to via its profile and permissions, and test different scenarios until it performs as expected. The Agent playground provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
+The development process is iterative by design. You can continuously refine your agent's instructions, adjust what it has access to via its profile and permissions, and test different scenarios until it performs as expected. The Agent playground provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
 ## Turn on the Agent playground capability
 

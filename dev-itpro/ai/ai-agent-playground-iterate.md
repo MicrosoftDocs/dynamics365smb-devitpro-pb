@@ -120,7 +120,7 @@ To access instruction version history:
 2. In the **Playground - Instructions** section, use the **Get earlier version** button to view and restore previous versions.
 3. Test the restored version to validate it meets your requirements.
 
-This capability is particularly useful when:
+This capability is useful when:
 
 - Experimenting with different instruction approaches
 - A new version introduces unexpected behavior
