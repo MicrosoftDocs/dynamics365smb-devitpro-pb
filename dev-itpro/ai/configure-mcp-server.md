@@ -24,7 +24,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
 ## Prerequisites
 
 - The **Feature: Enable MCP Server access** feature is enabled on the environment in the [Feature Management](https://businesscentral.dynamics.com/?page=2610) page. Learn more in [Enabling Upcoming Features Ahead of Time](/dynamics365/business-central/dev-itpro/administration/feature-management).
-- You have the **MCP - ADMIN** permission set or equivalent permissions.
+- You have the **MCP - ADMIN** permission set or equivalent permissions. 
 
 ## Create MCP Server configurations
 
