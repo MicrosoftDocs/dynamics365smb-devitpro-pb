@@ -2,7 +2,7 @@
 title: Upgrading Microsoft System and Base Application to Version 27
 description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 27
 ms.custom: bap-template
-ms.date: 10/21/2025
+ms.date: 12/04/2025
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.author: jswymer
@@ -16,6 +16,8 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 - 2024 release wave 2 (version 25)
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc27-upgrade-unmodified-app.svg)](../developer/media/bc27-upgrade-unmodified-app.svg#lightbox)  
+
+
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
@@ -130,7 +132,7 @@ Learn more in [Upgrading Permissions Sets and Permissions](upgrade-permissions.m
     Get-NAVAppInfo -ServerInstance $OldBcServerInstance -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance $OldBcServerInstance -Name $_.Name -Version $_.Version }
     ```
 
-    [What are symbols?](upgrade-overview-v15.md#Symbols)  
+    The Symbols extension isn't supported in version 27 and later. Symbols are now included with the Business Central server binaries instead of an extension. [What are symbols?](upgrade-overview-v15.md#Symbols)  
 6. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:

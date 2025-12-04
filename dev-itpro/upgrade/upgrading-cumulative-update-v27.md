@@ -44,6 +44,7 @@ The application includes AL extensions that define the objects and code that mak
 
     Customization extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or non-Microsoft extensions. Microsoft extensions are available on the DVD. Non-Microsoft extensions are extensions developed by your organization or by another organization, like a software development company.
 
+
 ### Single-tenant and multitenant deployments
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
