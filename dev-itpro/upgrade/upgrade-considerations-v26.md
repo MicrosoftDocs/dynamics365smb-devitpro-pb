@@ -56,31 +56,9 @@ To upgrade the extension, you must synchronize the extension's database schema w
 
 ## Performance and upgrade considerations for installed extensions
 
-Installing a large number of apps (extensions) in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can negatively impact performance and upgrade operations. Consider the following impacts when planning your upgrade:
+Installing a large number of apps (extensions) in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can negatively impact performance and upgrade operations.
 
-### Performance impact
-
-- **Slower environment startup** - Each installed extension adds to the initialization time when the environment starts or restarts.
-- **Longer upgrade times** - The upgrade process must process all installed extensions, even if they're not actively used.
-- **Increased risk exposure** - Extensions from untrusted sources can introduce security vulnerabilities or performance issues.
-
-### General guidelines
-
-- Install only the extensions that are required for your business processes.
-- Ensure that extensions come from sources you trust.
-- Uninstall extensions that are no longer needed, such as migration extensions after data migration is complete.
-
-### Data retention after uninstallation
-
-When an extension is uninstalled, its data remains in your database by design. This preserved data can:
-
-- Consume unnecessary database space
-- Slow down environment runtime operations
-- Increase the duration of environment upgrades
-
-### Recommended actions
-
-Use the **Delete Orphaned Extension Data** page to identify and clean up obsolete data that's no longer in use. Regular maintenance helps keep your environment efficient and reduces upgrade complexity.
+[!INCLUDE [extensions-performance-impact](../includes/extensions-performance-impact.md)]
 
 Learn more:
 
