@@ -139,16 +139,6 @@ When this step is completed, you can continue to update your Business Central so
         Get-NAVAppInfo -ServerInstance $BcServerInstance -Tenant $TenantId | % { Uninstall-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name $_.Name -Version $_.Version -Force}
         ```
 
-1. Unpublish the existing system symbols.
-
-    To unpublish the system symbols, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp) as follows:
-
-    ```powershell
-    Unpublish-NAVApp -ServerInstance $BcServerInstance -Name System
-    ```
-
-    [What are symbols?](upgrade-overview-v15.md#Symbols).
-
 1. (Multitenant only) Dismount the tenants from the application database.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
