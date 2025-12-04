@@ -38,7 +38,7 @@ Business Central provides comprehensive security features organized into five ke
 
 **Network security**
 
-- Azure security service tags for IP-based network segmentation and access control.
+- Azure security service tags for IP-based network segmentation and access control
 
 **Security operations**
 
