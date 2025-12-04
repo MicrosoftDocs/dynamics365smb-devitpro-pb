@@ -75,10 +75,6 @@ The customer-managed encryption key used to encrypt your customer data in [!INCL
 
 Sometimes a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is created from an environment that's encrypted with a customer-managed encryption key using a copy or restore operation. In this case, the newly created environment is encrypted using the Microsoft-managed encryption key. To encrypt the newly created environment using a customer-managed encryption key, link it to a Power Platform environment that has the desired customer-managed encryption key applied. 
 
-#### Encryption key for exported environment data in bacpac file
-
-When you export environment data, the data in the resulting bacpac file is encrypted using the encryption key applied to the Azure storage account rather than the environment's encryption key. To use the environment's customer-managed encryption key on data in the bacpac file, apply the key to the Azure storage account. Learn more in [Enable customer-managed keys for a storage account](/azure/storage/common/customer-managed-keys-overview#enable-customer-managed-keys-for-a-storage-account).
-
 ### Customer Lockbox
 
 Most of the operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in rare occasions that require access to customer data. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. Customer Lockbox approvals expire after 8 hours, so any needed support access beyond that would require a new request.
