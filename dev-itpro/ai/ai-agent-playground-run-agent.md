@@ -48,4 +48,5 @@ Once your agent is set up and tasks are being created, it's important to monitor
 [Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
 [Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
 [Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

@@ -95,4 +95,5 @@ An agent is by default in the **Disabled** state. You must activate the agent to
 [Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
 [Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
 [Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

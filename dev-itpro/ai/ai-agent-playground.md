@@ -143,4 +143,5 @@ Ready to try the Agent playground? The process involves enabling the feature, cr
 [Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
 [Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
 [Transparency note: Business Central agent playground](transparency-note-agent-playground.md)

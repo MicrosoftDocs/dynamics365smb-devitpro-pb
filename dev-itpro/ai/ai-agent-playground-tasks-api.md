@@ -14,6 +14,10 @@ ms.update-cycle: 180-days
 
 # Integrate with the Tasks AL API
 
+[This article is prerelease documentation and is subject to change.]
+
+[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+
 The Tasks AL API allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run a playground agent (preview)](ai-agent-playground-run-agent.md).
 
 ## Get information about the available playground agents
@@ -224,4 +228,5 @@ This API-based approach allows you to build automated workflows during the proto
 [Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
 [Best practices (preview)](ai-agent-playground-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
 [Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
