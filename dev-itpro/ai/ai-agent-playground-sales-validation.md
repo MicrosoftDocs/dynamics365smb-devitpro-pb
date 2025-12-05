@@ -42,10 +42,10 @@ Now, the agent has been created and activated.
 Next, add an item with inventory that the Sales Validation Agent can use to validate sales orders.
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Items**, and then choose the related link.
-1. Open an item you'll add the sales order
-1. Under Inventory section, press the ... on the Inventory field
-1. Add quantity to New Inventory for a location that isn't Unspecified
-1. Press ok
+1. Open the **Item Card** for the item you'll add to the sales order, which you will create in the next section.
+1. In the **Inventory** section, press the ... on the **Inventory** field.
+1. On the **Adjust Inventory** page, add quantity to the **New Inventory** field for a location that isn't Unspecified.
+1. Press **OK**.
 
 ### Create and process a sales order using the Sales Validation Agent
 
