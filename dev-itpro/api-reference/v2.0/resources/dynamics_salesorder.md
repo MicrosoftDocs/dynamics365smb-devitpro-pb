@@ -31,7 +31,7 @@ Represents a sales order in [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 The salesOrder resource type offers a bound action called `shipAndInvoice`, which ship and invoices the corresponding salesOrder batch.
 This is illustrated in the following example:
-`SHIPANDINVOICE https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesOrders({id})/Microsoft.NAV.shipAndInvoice`
+`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesOrders({id})/Microsoft.NAV.shipAndInvoice`
 
 The response has no content; the response code is 204.
 
