@@ -22,15 +22,13 @@ The Sales Validation Agent is a preconfigured playground agent designed to help 
 
 ## Steps to create and use the Sales Validation Agent
 
-Follow these steps to create and use the Sales Validation Agent in the Agent playground.
+Follow these steps to create and use the Sales Validation Agent, which is available with the Agent playground.
 
 ### Create the Sales Validation Agent
 
-First, create the Sales Validation Agent in the Agent playground.
+First, create the Sales Validation Agent using the Agent playground capability.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Create**.
-  The agent pane opens.
-1. Choose **Create**.
 1. In the **Create agent** wizard, choose **Sales Validation**, and then choose the **Create agent** button.
 1. In the **Configure agent** dialog, activate the agent.
 1. Choose **Update** to save and close the agent setup dialog.
@@ -43,7 +41,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Items**, and then choose the related link.
 1. Open the **Item Card** for the item you'll add to the sales order, which you will create in the next section.
-1. In the **Inventory** section, press the ... on the **Inventory** field.
+1. In the **Inventory** section, use the **AssistEdit (...)** on the **Inventory** field.
 1. On the **Adjust Inventory** page, add quantity to the **New Inventory** field for a location that isn't Unspecified.
 1. Press **OK**.
 
