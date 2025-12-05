@@ -65,6 +65,8 @@ landingContent:
     linkLists:
     - linkListType: sample
       links:
+      - text: Create a Sales Validation Agent (preview)  
+        url: ai-agent-playground-sales-validation.md
       - text: Sample extension in BCTech GitHub repo  
         url: https://aka.ms/BCStartCodingWithAI    
 # Card
