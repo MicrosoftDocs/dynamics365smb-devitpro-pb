@@ -116,7 +116,6 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Sales Order Agent is generally available in all countries/regions. 
 - Payable Agent is generally available in the following countries/regions (November 2025): United States, United Kingdom, Australia, and New Zealand.
-- Agent playground is in preview with version 27.2. Learn more in [Agent playground overview (preview)](../../ai/ai-agent-playground.md).
 
 ### Copilot in Business Central 101
 
