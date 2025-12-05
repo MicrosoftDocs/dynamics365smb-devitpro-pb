@@ -3,7 +3,7 @@ title: Security overview
 description: Get an overview of the articles about security in Business Central, so that you can configure your solution.
 author: jswymer
 ms.topic: overview
-ms.date: 11/17/2025
+ms.date: 12/05/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -39,6 +39,7 @@ Business Central provides comprehensive security features organized into five ke
 **Network security**
 
 - Azure security service tags for IP-based network segmentation and access control.
+- Enterprise-grade encryption of network traffic
 
 **Security operations**
 
