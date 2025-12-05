@@ -52,7 +52,7 @@ The **Create agent (preview)** wizard allows you to configure your playground ag
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose whether to create a blank agent or use a template.  
   - To create a blank agent, choose **Create agent from scratch**, and then choose **Next**.
-  - To use a template, choose **Sales Validation**, choose **Next**, and then choose **Create agent**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further.
+  - To use a template, choose **Sales Validation**, choose **Next**, and then choose **Create agent**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further. Learn more in [Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md).
 1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** and **Initials** field values are now suggested based on the **Name**, but can be modified.
 :::image type="content" source="../media/ai-playground-agent-setup.png" alt-text="Playground agent setup":::
 1. In the **Description** field, provide an optional description for the agent.
