@@ -41,7 +41,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 1. Identify the markdown file name in "Release Plan URL" column.
 2. Create a relative link on the text in the "Feature" column using the format: [<text>](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/<markdown file name>. 
 3. Omit .md in the link
-4. Create a column named "Public preview/General availability". If a row has a date in the "Public Preview/Early Access - Release Date" column for October, set the "Public preview/General availability" column in the row to "Public preview". Othersise set the "Public preview/General availability" column to "General availability".
+4. Create a column named "Public preview/General availability". If a row has a date in the "GA - Release Date" column for November or December, set the "Public preview/General availability" column in the row to "General availability". Otherwise set the "Public preview/General availability" column to "Public preview".
 5. Delete the "General availability - Release Date", "Public Preview/Early Access - Release Date", and "Release Plan URL" columnw from the table, so the table only has the format:
    
 | Product area| Feature| Public preview/General availability|

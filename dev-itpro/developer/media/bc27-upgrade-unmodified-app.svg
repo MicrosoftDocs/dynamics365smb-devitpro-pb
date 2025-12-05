@@ -35,14 +35,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.4859375"
-     inkscape:cx="532.99685"
+     inkscape:cx="533.33333"
      inkscape:cy="236.551"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg66" />
+     inkscape:current-layer="g66" />
   <g
      id="g66"
      clip-path="url(#clipPath66)"
@@ -653,30 +653,6 @@
        fill="none"
        fill-rule="evenodd"
        id="path60" />
-    <rect
-       x="562.5"
-       y="432.5"
-       width="311"
-       height="17"
-       stroke="#afabab"
-       stroke-width="3"
-       stroke-miterlimit="8"
-       fill="#afabab"
-       id="rect60" />
-    <text
-       fill="#ffffff"
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="18.6667px"
-       transform="translate(639.855,447)"
-       id="text61">System Symbols</text>
-    <text
-       fill="#ffffff"
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="18.6667px"
-       transform="translate(765.155,447)"
-       id="text62">V27</text>
     <rect
        x="561.5"
        y="273.5"
