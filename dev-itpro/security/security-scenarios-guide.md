@@ -460,7 +460,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 ### Secure inter-service communication using service tags
 
 **Context and problem:**  
-Your AppSource app or per-tenant extension (PTE) calls external Azure services (SQL Database, Cosmos DB, custom APIs). You can minimize traffic to your service by restricting it to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only.
+Your AppSource app or per-tenant extension (PTE) calls external Azure services. You want to minimize the attack surgace and reduce traffic to your service by restricting it to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only.
 
 **Solution:**  
 Configure network access controls on Azure services using the `Dynamics365BusinessCentral` service tag.
@@ -470,11 +470,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 1. For Azure SQL Database:
    1. In [Azure portal](https://portal.azure.com), open your SQL logical server (not individual database), then select **Networking**.
    1. Under **Public access**, clear the **Allow Azure services and resources to access this server** checkbox.
-   1. To restrict access to Business Central IP ranges, use one of these approaches:
-
-      - **Option A - Virtual Network rule** (recommended): Create a virtual network with service endpoint enabled, then add a virtual network rule that references the `Dynamics365BusinessCentral` service tag.
-      - **Option B - Firewall IP rules**: Retrieve the IP address ranges from the `Dynamics365BusinessCentral` service tag using PowerShell (see [Scenario C: Destination supports IP allowlisting only](#C)), then add firewall rules for each IP range.
-
+   1. To restrict access to Business Central IP ranges, create a virtual network with service endpoint enabled, then add a virtual network rule that references the `Dynamics365BusinessCentral` service tag.
    1. Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
    1. Monitor denied connection attempts in Azure SQL audit logs. Learn more in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview).
 
@@ -483,9 +479,7 @@ Configure network access controls on Azure services using the `Dynamics365Busine
 1. For Azure Key Vault:
    1. In [Azure portal](https://portal.azure.com), open your key vault, and select **Networking** (under **Settings**).
    1. Select **Allow public access from specific virtual networks and IP addresses** (or **Disable public access** if you want to block all public access).
-   1. To restrict access to Business Central IP ranges, use one of these approaches:
-     - **Option A - Virtual Network** (recommended): Add your virtual network with a service endpoint for Microsoft.KeyVault, which can then reference service tags at the network level.
-     - **Option B - Firewall rules**: In the **Firewall** section, add the IP address ranges from the `Dynamics365BusinessCentral` service tag (retrieve them using PowerShell as shown in [Scenario C: Destination supports IP allowlisting only](#C)).
+   1. To restrict access to Business Central IP ranges, add your virtual network with a service endpoint for Microsoft.KeyVault, which can then reference service tags at the network level.
 
    Learn more in [Configure Azure Key Vault networking settings](/azure/key-vault/general/network-security).
 
