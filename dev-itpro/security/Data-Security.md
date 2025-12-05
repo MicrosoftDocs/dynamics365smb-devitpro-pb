@@ -1,7 +1,7 @@
 ---
 title: Data Security in Business Central
 description: Learn about the four different levels of data security in Business Central. Also learn how you control access to data. 
-ms.date: 11/19/2025
+ms.date: 12/05/2025
 ms.topic: reference
 author: jswymer
 ---
@@ -28,6 +28,8 @@ Graphically, these levels can be represented as the layers, where the central la
 ![Security overview.](../developer/media/security-overview.png "Security overview")
 
 ## [Database-level security](#tab/database-level)
+
+[!INCLUDE[on_prem_only.md](../developer/includes/on_prem_only.md)]
 
 The first layer of security when you open [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is database security.  
 
