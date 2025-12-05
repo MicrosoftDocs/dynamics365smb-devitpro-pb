@@ -44,6 +44,7 @@ The application includes AL extensions that define the objects and code that mak
 
     Customization extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or non-Microsoft extensions. Microsoft extensions are available on the DVD. Non-Microsoft extensions are extensions developed by your organization or by another organization, like a software development company.
 
+
 ### Single-tenant and multitenant deployments
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
@@ -138,16 +139,6 @@ When this step is completed, you can continue to update your Business Central so
         ```powershell 
         Get-NAVAppInfo -ServerInstance $BcServerInstance -Tenant $TenantId | % { Uninstall-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name $_.Name -Version $_.Version -Force}
         ```
-
-1. Unpublish the existing system symbols.
-
-    To unpublish the system symbols, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp) as follows:
-
-    ```powershell
-    Unpublish-NAVApp -ServerInstance $BcServerInstance -Name System
-    ```
-
-    [What are symbols?](upgrade-overview-v15.md#Symbols).
 
 1. (Multitenant only) Dismount the tenants from the application database.
 
