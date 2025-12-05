@@ -695,19 +695,7 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
 
    Learn more in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).
 
-1. Configure SQL Server Auditing (on-premises):
-
-   ```sql
-   -- Create server audit
-   CREATE SERVER AUDIT BCDataAccessAudit
-   TO FILE (FILEPATH = 'C:\SQLAudit\')
-   
-   -- Create database audit specification
-   CREATE DATABASE AUDIT SPECIFICATION BCTableAccess
-   FOR SERVER AUDIT BCDataAccessAudit
-   ADD (SELECT ON SCHEMA::dbo BY public)
-   WITH (STATE = ON)
-   ```
+1. Configure SQL Server Auditing (on-premises). Learn more in [Create a Server Audit and Server Audit Specification](/sql/relational-databases/security/auditing/create-a-server-audit-and-server-audit-specification).
 
 1. Use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry (online):
    1. Enable environment telemetry to Application Insights. Learn more in [Turn environment telemetry on or off](../administration/telemetry-enable-application-insights.md).
@@ -716,7 +704,7 @@ Learn more in [Auditing Changes in Business Central](/dynamics365/business-centr
      - [Permission Error Telemetry](../administration/telemetry-permission-error-trace.md) (unauthorized access attempts)
      - [Company Lifecycle Telemetry](../administration/telemetry-company-lifecycle-trace.md) (cross-company access)
 
-1. Create access reports using KQL queries in Application Insights and SQL queries for change log data:
+1. Create access reports using KQL queries in Application Insights:
    - Daily access summary:
      - Who accessed which companies
      - Failed permission checks
