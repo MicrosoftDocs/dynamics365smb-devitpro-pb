@@ -40,7 +40,7 @@ Now, the agent has been created and activated.
 Next, add an item with inventory that the Sales Validation Agent can use to validate sales orders.
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Items**, and then choose the related link.
-1. Open the **Item Card** for the item you'll add to the sales order, which you will create in the next section.
+1. Open the **Item Card** for the item you'll add to the sales order, which you'll create in the next section.
 1. In the **Inventory** section, use the **AssistEdit (...)** on the **Inventory** field.
 1. On the **Adjust Inventory** page, add quantity to the **New Inventory** field for a location that isn't Unspecified.
 1. Press **OK**.
@@ -55,7 +55,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
   Ensure that the **Location** is the same location you added quantity for.
 1. For that sales line, under **Line** > **Functions**, choose **Reserve**.
 1. There should be quantity available for reservation from **Item Ledger Entry**, select it, and choose **Reserve from Current Line**. Then, choose **OK**.
-1. Back in the **Sales Order** card, under **Shipping and Billing**, optionally change the **Shipping Date**, otherwise just remember it. Note that if there are others with the same date, the agent tries to process it 
+1. Back in the **Sales Order** card, under **Shipping and Billing**, optionally change the **Shipping Date**, otherwise just remember it. If there are others with the same date, the agent tries to process it 
 1. Depending on the quantity reserved:
   - **Shipping Advice** determines if the sales order should be released.
       - **Partial** - As long as some quantity has been reserved, it can be released
@@ -71,7 +71,7 @@ Add a new task to the agent Open the Agents (Preview)
 1. And then, add the following message: `Run and process shipment date <date>   <- That will be sufficient. <date> corresponds to the shipping date you chose for the sales order.`
 1. Choose **OK**.
 
-The agent will go through and process all sales orders that have a shipping date according to what you specified in the task.
+The agent goes through and process all sales orders that have a shipping date according to what you specified in the task.
 
 ## Related information
 
