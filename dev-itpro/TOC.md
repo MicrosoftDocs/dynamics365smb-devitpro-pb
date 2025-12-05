@@ -1514,7 +1514,7 @@
 ### [Iterate and manage](ai/ai-agent-playground-iterate.md)
 ### [Export and import](ai/ai-agent-playground-export-import.md)
 ### [Best practices](ai/ai-agent-playground-best-practices.md)
-### [Create a Sales Validation Agent (preview)](ai/ai-agent-playground-sales-validation.md)
+### [Create a Sales Validation Agent](ai/ai-agent-playground-sales-validation.md)
 ### [Transparency note: Business Central agent playground](ai/transparency-note-agent-playground.md)
 <!-- end integration with AI-->
 

@@ -41,7 +41,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Items**, and then choose the related link.
 1. Open the **Item Card** for the item you'll add to the sales order, which you'll create in the next section.
-1. In the **Inventory** section, use the **AssistEdit (...)** on the **Inventory** field.
+1. In the **Inventory** section, use the AssistEdit :::image type="content" source="../media/assist-edit-icon.png" alt-text="AssistEdit icon"::: button on the **Inventory** field.
 1. On the **Adjust Inventory** page, add quantity to the **New Inventory** field for a location that isn't Unspecified.
 1. Press **OK**.
 
