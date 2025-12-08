@@ -13,7 +13,7 @@ ms.reviewer: solsen
 
 [!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
-Namespaces are used to organize code into logical groups and hierarchies and they ensure uniqueness in code names and allow reuse of names in different contexts. Namespaces also provide structure for the code base, making it easier to navigate and understand. For more information, see [Namespaces in AL](devenv-namespaces-overview.md).
+Namespaces are used to organize code into logical groups and hierarchies and they ensure uniqueness in code names and allow reuse of names in different contexts. Namespaces also provide structure for the code base, making it easier to navigate and understand. Learn more in [Namespaces in AL](devenv-namespaces-overview.md).
 
 Several features and tools are available to help you progressively adopt namespaces in your AL projects. These tools automate repetitive tasks and provide guidance to streamline the transition of your codebase to use namespaces effectively.
 
@@ -48,6 +48,7 @@ MyApp/
 ```
 
 If your `al.namespaceTemplate` is set to `"MyCompany.$(parentfolder)"`, the code action suggests:
+
 - `MyCompany.Sales` for files in the `Sales` folder
 - `MyCompany.Inventory` for files in the `Inventory` folder
 
@@ -57,7 +58,7 @@ If the template isn't set and the file `SalesOrder.Codeunit.al` already defines 
 
 For most scenarios, the code action described in the previous section in combination with the `al.namespaceTemplate` setting should suffice. However, for situations where you require more granular control that can't be expressed through the `namespaceTemplate` configuration, we're sharing a PowerShell script that allows you to specify namespaces for multiple objects at a time, using your folder structure. Usually code is divided into folders according to some kind of structure, which is often what you would like to replicate to some degree in your namespaces. 
 
-The script shown in this article, allows you to specify what namespace to assign all your AL objects within a folder. After you run the script, you can then customize these bit further. We recommend doing a commit once you have found the proper namespaces. You can then use the code action to apply `using` statements to your application.
+The script shown in this article, allows you to specify what namespace to assign all your AL objects within a folder. After you run the script, you can then customize it a bit further. We recommend doing a commit once you have found the proper namespaces. You can then use the code action to apply `using` statements to your application.
 
 The script takes a .csv file as input, which specifies what namespace to give to each file within a folder. The .csv file should contain a folder name and a namespace, as illustrated in the following example:
 
@@ -78,7 +79,7 @@ Retention Policy,System.DataAdministration
 SharePoint,System.Integration.Sharepoint
 ```
 
-Copy and paste the following code lines into your preferred script editor, then save the file as a .ps1 file. Now, open PowerShell as an administrator, locate the folder of the script, and run the script with the following command: `.\<scriptname>.ps1`. The script prompts you to specify the .csv file and the base path of your application. The script will then go through all the files in the base path and assign the namespaces specified in the .csv file based on the given folder names.
+Copy and paste the following code lines into your preferred script editor, then save the file as a .ps1 file. Now, open PowerShell as an administrator, locate the folder of the script, and run the script with the following command: `.\<scriptname>.ps1`. The script prompts you to specify the .csv file and the base path of your application. The script goes through all the files in the base path and assigns the namespaces specified in the .csv file based on the given folder names.
 
 ```powershell
 param
@@ -129,7 +130,7 @@ foreach ($file in $files) {
 
 ```
 
-You're now ready to open Visual Studio Code and use the AL code actions to apply all the missing `using` statements.
+You're now ready to open Visual Studio Code and use the AL code actions to apply all the missing `using` statements. Learn more in [AL code actions](devenv-code-actions.md).
 
 ## Organize using statements
 
@@ -162,10 +163,9 @@ When adopting namespaces in your AL projects, consider the following best practi
 - **Sort using statements** - Keep using statements alphabetically sorted for clean and readable imports.
 - **Review generated namespaces** - Always verify that automatically generated namespaces match your organizational standards before committing changes.
 
+## Support for fully qualified names
 
-# Support for fully qualified names
-
-New method overloads enable you to run application objects using their fully qualified names, making it easier to reference objects across different namespaces without ambiguity.
+Method overloads enable you to run application objects using their fully qualified names, making it easier to reference objects across different namespaces without ambiguity.
 
 ### Running objects by fully qualified name
 
