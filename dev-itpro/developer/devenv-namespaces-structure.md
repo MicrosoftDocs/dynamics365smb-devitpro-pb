@@ -21,7 +21,7 @@ Several features and tools are available to help you progressively adopt namespa
 
 [!INCLUDE [2026-releasewave1-later](../includes/2026-releasewave1-later.md)]
 
-A code action automatically adds namespaces to AL files that are missing them, helping you quickly bring your codebase into compliance with CodeCop rule [AA0247](analyzers/codecop-aa0247).
+A code action automatically adds namespaces to AL files that are missing them, helping you quickly bring your codebase into compliance with CodeCop rule [AA0247](analyzers/codecop-aa0247.md).
 
 ### Namespace resolution logic
 
