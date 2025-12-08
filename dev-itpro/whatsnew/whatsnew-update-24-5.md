@@ -3,6 +3,7 @@ title: Update 24.5 for Microsoft Dynamics 365 Business Central 2024 Release Wave
 description: Get an overview of new and changed capabilities in the 24.5 update of Business Central online, which is part of 2024 release wave 1.
 ms.author: jswymer
 ms.date: 09/04/2024
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.topic: article
 author: jswymer
@@ -23,8 +24,8 @@ Learn about the hotfixes on Microsoft Support at [Update 24.5 for Business Centr
 
 - [Automate country of origin listed for item tracking code in Intrastat reporting (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
 - [Enable sustainability features for integrations with APIs (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/achieving-sustainable-compliance-business-central)
-- [Migrate record links and notes with cloud migration tooling (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling)
-- [Remove friction when working with external app dependencies (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/remove-friction-when-working-external-app-dependencies)
+- [Migrate record links and notes with cloud migration tooling (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/planned-features)
+- [Remove friction when working with external app dependencies (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/planned-features)
 
 ## Localization updates
 

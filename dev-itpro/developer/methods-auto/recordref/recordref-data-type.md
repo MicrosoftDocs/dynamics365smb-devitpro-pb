@@ -2,7 +2,7 @@
 title: "RecordRef data type"
 description: "References a record in a table."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/03/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef Data type
+# RecordRef data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 References a record in a table.
@@ -45,9 +45,11 @@ The following methods are available on instances of the RecordRef data type.
 |[DeleteLink(Integer)](recordref-deletelink-method.md)|Deletes a specified link from a record in a table.|
 |[DeleteLinks()](recordref-deletelinks-method.md)|Deletes all of the links that have been added to a record.|
 |[Duplicate()](recordref-duplicate-method.md)|Duplicates the table that contains the RecordRef.|
-|[Field(Integer)](recordref-field-method.md)|Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error.|
+|[Field(Integer)](recordref-field-integer-method.md)|Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error.|
+|[Field(Text)](recordref-field-string-method.md)|Gets a FieldRef for the field that has the name FieldName in the table that is currently selected. If no field has this name, the method returns an error.|
 |[FieldCount()](recordref-fieldcount-method.md)|Gets the number of fields in the table that is currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected.|
-|[FieldExist(Integer)](recordref-fieldexist-method.md)|Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.|
+|[FieldExist(Integer)](recordref-fieldexist-integer-method.md)|Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.|
+|[FieldExist(Text)](recordref-fieldexist-string-method.md)|Determines if the field that has the name FieldName exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.|
 |[FieldIndex(Integer)](recordref-fieldindex-method.md)|Gets the FieldRef of the field that has the specified index in the table that is referred to by the RecordRef.|
 |[FilterGroup([Integer])](recordref-filtergroup-method.md)|Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.|
 |[Find([Text])](recordref-find-method.md)|Finds a record in a table based on the values stored in the key fields.|
@@ -102,6 +104,7 @@ The following methods are available on instances of the RecordRef data type.
 |[SystemIdNo()](recordref-systemidno-method.md)|Gets the field number that is used by the SystemId field. The SystemId field is a system field that the platform adds to all table objects.|
 |[SystemModifiedAtNo()](recordref-systemmodifiedatno-method.md)|Gets the field number that is used by the SystemModifiedAt field. The SystemModifiedAt field is a system field that the platform adds to all table objects.|
 |[SystemModifiedByNo()](recordref-systemmodifiedbyno-method.md)|Gets the field number that is used by the SystemModifiedBy field. The SystemModifiedBy field is a system field that the platform adds to all table objects.|
+|[Truncate([Boolean])](recordref-truncate-method.md)|Deletes all records in a table that fall within a specified range, in an efficient maner. Keep in mind that Truncate allows for less concurrency than DeleteAll, as the entire table will be locked until the transaction is committed.|
 |[WritePermission()](recordref-writepermission-method.md)|Determines if you can write to a table.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,12 +1,14 @@
 ---
 title: "Authenticating Users with Active Directory Federation Services"
 description: Learn how to configure Business Central on-premises to use AD FS authentication.
-ms.custom: bap-template
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 # Authenticating Users with Active Directory Federation Services
 

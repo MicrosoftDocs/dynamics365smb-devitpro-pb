@@ -3,6 +3,7 @@ title: Upgrade an unmodified application
 description: The article explains how to upgrade an application that has no custom code to Business Central 2019 release wave 2.
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer

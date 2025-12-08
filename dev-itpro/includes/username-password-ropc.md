@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Microsoft doesn't recommend using the username and password flow because it will be asking a user for their password directly, which is an insecure pattern. Microsoft Entra ID and Windows authentication are more secure alternatives. You should only use username and password authentication when Microsoft Entra ID and Windows authentication aren't viable.

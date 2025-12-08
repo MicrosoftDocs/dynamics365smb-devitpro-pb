@@ -4,7 +4,7 @@ description: "Create a release of your AL-Go application for Business Central."
 author: freddyk
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ---

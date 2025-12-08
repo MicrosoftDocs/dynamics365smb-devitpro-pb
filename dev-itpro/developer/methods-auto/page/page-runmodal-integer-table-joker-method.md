@@ -41,6 +41,11 @@ Specifies what action the user took on the page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+[!INCLUDE [dev-page-zero-run](../../includes/dev-page-zero-run.md)]
+
 ## Related information
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

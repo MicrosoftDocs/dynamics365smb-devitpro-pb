@@ -2,8 +2,6 @@
 title: "CreateDatabase"
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 13ff1577-9ed8-46a5-b96d-ee4123d25c9c
-caps.latest.revision: 5
 ---
 # CreateDatabase
 Creates a new database for [!INCLUDE[navnow](includes/navnow_md.md)] on an SQL server.  

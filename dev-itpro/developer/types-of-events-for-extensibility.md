@@ -6,7 +6,7 @@ ms.author: bholtorf
 ms.reviewer: solsen
 ms.topic: article
 ms.collection: 
-ms.date: 10/09/2024
+ms.date: 08/15/2025
 ms.custom: bap-template
 ---
 
@@ -572,7 +572,7 @@ table 1060 "Payment Service Setup"
     end;
 ```
 
-## See also
+## Related information
 
 [Extensibility overview](devenv-extensibility-overview.md)  
 [Extension objects overview](devenv-extension-object-overview.md)  

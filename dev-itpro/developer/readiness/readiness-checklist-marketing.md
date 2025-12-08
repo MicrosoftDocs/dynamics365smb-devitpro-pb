@@ -5,6 +5,7 @@ author: a-emniel
 ms.date: 09/26/2023
 ms.reviewer: solsen
 ms.topic: reference
+ms.custom: sfi-image-nochange
 ---
 
 # Marketing validation checklist

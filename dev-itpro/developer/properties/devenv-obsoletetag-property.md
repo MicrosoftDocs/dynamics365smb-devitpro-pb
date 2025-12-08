@@ -2,7 +2,7 @@
 title: "ObsoleteTag property"
 description: "Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,6 +20,7 @@ Specifies a free-form text to support tracking of where and when the object was 
 -   Page Custom Action
 -   Page File Upload Action
 -   Report Layout
+-   Page User Control
 -   Table
 -   Table field
 -   Table key
@@ -64,9 +65,11 @@ ObsoleteTag = 'This field is being deprecated with the newest build of the produ
 
 ## Remarks
 
-Use this property to add valuable information to developers about an object or element that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete('<Reason>','<tag>')]`. For more information, see [Obsolete Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute).
+Use this property to add valuable information to developers about an object or element that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete('<Reason>','<tag>')]`. Learn more in [Obsolete attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute).
 
-For an elaborate example of deprecating, see [Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md).
+Learn more about obsoletion in [Obsolete objects, methods, and symbols in AL](../devenv-obsolete-objects.md).
+
+For an elaborate example of deprecating, see [Best practices for deprecation of code in the base app](../devenv-deprecation-guidelines.md).
 
 ## Related information  
 

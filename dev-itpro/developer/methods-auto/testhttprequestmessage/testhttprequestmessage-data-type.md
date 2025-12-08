@@ -2,7 +2,7 @@
 title: "TestHttpRequestMessage data type"
 description: "Represents a test HTTP request message."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestHttpRequestMessage Data type
+# TestHttpRequestMessage data type
 > **Version**: _Available or changed with runtime version 15.0._
 
 Represents a test HTTP request message.
@@ -28,6 +28,8 @@ The following methods are available on instances of the TestHttpRequestMessage d
 |[RequestType()](testhttprequestmessage-requesttype-method.md)|Gets the HTTP method type.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## Related information  
-[Getting started with AL](../devenv-get-started.md)  
-[Developing extensions](../devenv-dev-overview.md)  
+
+## Related information
+
+[Getting started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: al
 ms.date: 05/01/2024
+ms.update-cycle: 1095-days
 ms.author: solsen
 ms.custom: evergreen
 ms.reviewer: solsen

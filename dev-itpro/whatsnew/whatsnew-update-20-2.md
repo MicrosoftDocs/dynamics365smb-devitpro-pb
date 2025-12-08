@@ -3,6 +3,7 @@ title: "Update 20.2 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 20.2 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: jswymer
 ms.date: 04/01/2024
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.topic: article
 author: jswymer
@@ -10,8 +11,6 @@ ms.custom: evergreen
 ---
 
 # Update 20.2 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 Would you like to know what has changed in update 20.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 

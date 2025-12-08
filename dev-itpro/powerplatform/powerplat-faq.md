@@ -1,54 +1,59 @@
 ---
-title: "Business Central virtual tables FAQ"
-description: "Frequently asked questions for working with Business Central virtual tables"
-ms.date: 11/13/2023
+title: Business Central Virtual Tables FAQ
+description: Frequently asked questions for working with Business Central virtual tables.
+ms.date: 09/30/2025
 ms.reviewer: solsen
 author: SusanneWindfeldPedersen
 ms.topic: faq
 ---
-
 # Business Central Virtual Tables FAQ
 
-> [!IMPORTANT]  
-> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/dynamics365/released-versions/dynamics-365ce#all-version-availability).
+This article is a collection of frequently asked questions about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables.
 
-This article is a collection of frequently asked questions about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. 
+## Can a solution from an independent software vendor (ISV) take a dependency on virtual tables? What does the application lifecycle management (ALM) look like? 
 
-### What version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do I need?
+Yes. The virtual tables are all generated in the **MicrosoftBusinessCentralERPVE** solution, which is API-managed. In other words, the items in the solution change as you make tables visible or hidden, but the solution is still a managed solution that you can take dependency on. The standard ALM flow just takes a standard reference to a virtual table from this solution with the **Add existing** option in the ISV solution. Missing dependency of the solution is checked when the solution is imported and during import, if a specified virtual table doesn't yet exist, the virtual table is automatically made visible.
 
-Version 17.0 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is needed. Version 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual tables.  
+## Which tables from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do users see in the catalog in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]?
 
-### Can a solution from an independent software vendor (ISV) take a dependency on virtual tables? What does the application lifecycle management (ALM) look like?
+Generally, users can see all tables exposed as API (v.2.0) and data exposed via custom APIs. Remember that you need to make them visible before they appear in the **Table** view.
 
-Yes. The virtual tables are all generated in the **MicrosoftBusinessCentralERPVE** solution, which is API-managed. In other words, the items in the solution change as you make tables visible or hidden, but the solution is still a managed solution that you can take dependency on. The standard ALM flow just takes a standard reference to a virtual table from this solution with the **Add existing** option in the ISV solution. Missing dependency of the solution will be checked when the solution is imported and during import, if a specified virtual table doesn't yet exist, the virtual table is automatically made visible.
+## Do all Microsoft Power Platform users have to be users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]?
 
-### Which tables from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do users see in the catalog in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]?
+Any user of Microsoft Power Platform who tries to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a virtual table must also exist as a user in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Therefore, technically, not *all* users have to be users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Only those users who access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through virtual tables must be users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-Generally, users see all tables exposed as API pages except for Microsoft legacy API pages: beta and v1.0.
+## Where do I find available tables to be exposed inside Dataverse? 
 
-### Do all Microsoft Power Platform users have to be users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]?
+In the **Table** view, the table is named **Available Business Central tables**. You can also run our preinstalled app called **Business Central Configuration**.
 
-Any user of Microsoft Power Platform who tries to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a virtual table must also exist as a user in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Therefore, technically, not *all* users have to be users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Only those users who access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through virtual tables must be users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+## Can I change the prefix for the virtual tables?
 
-### Where do I find the catalog table?
+No. All [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables should be generated in the **MicrosoftBusinessCentralERPVE** solution, and they all have the "dyn365bc_" prefix. This prefix can't be changed.
 
-In the **Advanced find** window, the table is named **Available [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables**.
+## How can I show, in the same grid, data from multiple virtual tables that are joined to a physical table record in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)]?
 
-### Can I change the prefix for the virtual tables?
+This approach isn't currently possible in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)].
 
-No. All [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables should be generated in the **MicrosoftBusinessCentralERPVE** solution, and they all have the "dyn365bc\_" prefix. This prefix won't be changed.
-
-### How can I show, in the same grid, data from multiple virtual tables that are joined to a physical table record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]?
-
-This approach isn't currently possible in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
-
-### If I want a default value to be entered in a column during pre-create, will an initValue on the data table then work?
+## If I want a default value to be entered in a column during precreate, will an initValue on the data table then work?
 
 Yes. Here's the order of calls:
 
-1. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] sends a create or update message.
+1. [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] sends a create or update message.
 2. All the existing logic on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table and backing tables is invoked. This logic includes default value entry that might change values.
-3. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] sends another Retrieve (single) message to get the latest copy of the data, including any columns that default values were entered for.
+3. [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] sends another Retrieve (single) message to get the latest copy of the data, including any columns that default values were entered for.
+
+## How do I verify the version of your Business Central Virtual Table Plugin?
+
+Depending on the region, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Table Plugin version might vary. To verify your version, you need to: 
+
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Open the environment you use, locate **Resources**, and select **Dynamics 365 apps**.
+1. Locate the **Business Central Virtual Entity** app in the list, and then select **... (More application actions)** > **Details**.  
+
+   :::image type="content" source="../developer/media/power-plat-bc-virtual-table.svg" alt-text="Ellipsis button for Business Central Virtual Table details in Power Platform admin center.":::
+
+In the **Business Central Virtual Entity Details** pane, the **Version** column under **Package(s)** displays the current version number.
+
 
 ## Related information
 

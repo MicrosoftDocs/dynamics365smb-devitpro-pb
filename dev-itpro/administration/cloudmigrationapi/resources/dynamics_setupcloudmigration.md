@@ -7,6 +7,7 @@ ms.devlang: al
 ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
+ms.custom: sfi-ropc-nochange
 ---
 
 # (cloudMigration API) setupCloudMigration resource type

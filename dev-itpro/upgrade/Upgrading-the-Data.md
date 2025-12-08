@@ -3,6 +3,7 @@ title: Upgrading the Data to in Single-Tenant Deployment
 description: This article describes the tasks required for upgrade the data to version 14 when you have a single-tenant deployment. 
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.author: jswymer
 author: jswymer

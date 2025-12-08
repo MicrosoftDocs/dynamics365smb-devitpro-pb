@@ -1,8 +1,8 @@
 ---
 title: "Text.IncStr(Text, BigInteger) Method"
-description: "Increases the last positive number or decreases the last negative number inside a string by the provided positive increment."
+description: "Increments the last positive number by the provided increment."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # Text.IncStr(Text, BigInteger) Method
 > **Version**: _Available or changed with runtime version 15.0._
 
-Increases the last positive number or decreases the last negative number inside a string by the provided positive increment.
+Increments the last positive number by the provided increment. The result of the increment must be zero or positive, otherwise an error is thrown.
 
 
 ## Syntax
@@ -29,7 +29,7 @@ The string that you want to increase or decrease.
 
 *Increment*  
 &emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
-The increment value. Only values from 1 to the max value of type BigInteger are supported.  
+The increment value.  
 
 
 ## Return Value

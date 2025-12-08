@@ -20,7 +20,7 @@ For more information about version numbers, see [Version numbers in Business Cen
     For example:
 
     ```powershell
-    Set-NAVApplication -ServerInstance BC210 -ApplicationVersion 21.0.38071.0 -Force
+    Set-NAVApplication -ServerInstance BC260 -ApplicationVersion 26.0.38071.0 -Force
     ```
 
 2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.

@@ -4,6 +4,7 @@ description: Description of AL user-defined and system-defined variables.
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.date: 04/26/2024
+ms.update-cycle: 1095-days
 author: KennieNP
 ms.author: solsen
 ms.collection: get-started

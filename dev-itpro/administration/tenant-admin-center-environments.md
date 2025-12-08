@@ -8,11 +8,10 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, restore
 ms.date: 03/31/2025
 ms.author: jswymer
 ms.reviewer: jswymer
+ms.custom: sfi-image-nochange
 ---
 
 # Managing production and sandbox environments in the admin center
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production and sandbox environments for the tenant, and allows you to manage updates for each environment.
 

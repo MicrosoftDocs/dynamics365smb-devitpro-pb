@@ -2,7 +2,7 @@
 title: "HyperlinkHandler attribute"
 description: "Specifies that the method is a HyperLinkHandler method, which handles HyperLinkHandler statements."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ Specifies that the method is a HyperLinkHandler method, which handles HyperLinkH
 procedure HyperlinkHandler(Message: Text[1024])
 ```
 > [!IMPORTANT]
-> The above signature requires the HyperlinkHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the HyperlinkHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 > **Version**: _Available or changed with runtime version 2.1._
 ```AL
@@ -41,7 +41,7 @@ procedure HyperlinkHandler(Message: Text[1024])
 procedure HyperlinkHandler(Message: Text)
 ```
 > [!IMPORTANT]
-> The above signature requires the HyperlinkHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the HyperlinkHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Message*  

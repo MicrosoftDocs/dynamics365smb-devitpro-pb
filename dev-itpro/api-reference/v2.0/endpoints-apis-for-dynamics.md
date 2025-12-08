@@ -11,16 +11,14 @@ ms.reviewer: solsen
 
 # Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 [!INCLUDE[prod_short](../../includes/prod_short.md)] on-premises and online expose an API that makes it possible to integrate with other services. To enable integration with these APIs, you must go through a few steps to enable the access first. For more information about these steps, see [Enabling APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
 
 ## Accessing the endpoints
 
-Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with [!INCLUDE[prod_short](../../includes/prod_short.md)]. Creating your integration through an API provides simple access to the supported functionality in a single endpoint, giving you a simplified experience for creating a single app with integrations across multiple Microsoft products.
+Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with [!INCLUDE[prod_short](../../includes/prod_short.md)]. Creating your integration through an API provides simple access to the supported functionality in a single endpoint, giving you a simplified experience for creating a single app with integrations across multiple Microsoft products. Learn more about the structure of the API endpoints in [API endpoint structure](../../webservices/api-endpoint-structure.md).
 
 > [!IMPORTANT]  
-> With the introduction of multiple [!INCLUDE[prod_short](../../includes/prod_short.md)]  > environments, the name of the environment being connected to needs to go into the URI.  To learn how to get a list of environments deployed on the tenant, see [Getting a list of environments](../../webservices/api-get-environments.md).
+> With the introduction of multiple [!INCLUDE[prod_short](../../includes/prod_short.md)] environments, the name of the environment being connected to needs to go into the URI.  To learn how to get a list of environments deployed on the tenant, see [Getting a list of environments](../../webservices/api-get-environments.md).
 
 ### [!INCLUDE[prod_short](../../includes/prod_short.md)]
 
@@ -58,3 +56,4 @@ For more information, see [FAQ: IP addresses or ranges for the Business Central 
 [Developing Connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
 [Microsoft web services overview](../../webservices/web-services.md)  
 [OpenAPI specification](dynamics-open-api.md)  
+[API endpoint structure](../../webservices/api-endpoint-structure.md)  

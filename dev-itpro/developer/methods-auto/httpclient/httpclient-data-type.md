@@ -2,7 +2,7 @@
 title: "HttpClient data type"
 description: "Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpClient Data type
+# HttpClient data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
@@ -48,7 +48,11 @@ The following methods are available on instances of the HttpClient data type.
 The supported security protocols are controlled by the **SecurityProtocol** configuration setting. For more information, see [Microsoft Dynamics 365 Business Central Server Configuration](../../../administration/configure-server-instance.md#Compatibility).
 
 ## Ways that HttpClient calls can fail
+
 All of the methods HttpClient.Delete, HttpClient.Get, HttpClient.Post, HttpClient.Put, or HttpClient.Send in the HttpClient data type can fail and return false. 
+
+[!INCLUDE[allowhttpclientnote](../../includes/include-http-call-failure-reasons.md)]
+
 
 [!INCLUDE[httpCallErrors](../../../includes/include-http-call-errors-note.md)]
 

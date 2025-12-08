@@ -6,13 +6,12 @@ ms.date: 01/03/2024
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
+ms.custom: sfi-ropc-nochange
 ---
 
 # Resource exposure policy setting
 
 [!INCLUDE[2022_releasewave2_changed](../includes/2022_releasewave2_changed.md)]
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 When you develop an extension, your code is protected against downloading or debugging by default. Read below about adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
 

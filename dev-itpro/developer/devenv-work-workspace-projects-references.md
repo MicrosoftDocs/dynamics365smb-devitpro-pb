@@ -6,6 +6,7 @@ ms.date: 09/25/2024
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
+ms.custom: sfi-image-nochange
 ---
 
 # Work with multiple projects and project references

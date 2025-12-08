@@ -2,6 +2,7 @@
 title: Dynamics NAV client connected to Business Central using ClickOnce
 description: Learn how to deploy the Dynamics NAV Client connected to Business Central using ClickOnce
 ms.date: 06/20/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.search.keywords: NAV Windows client
 author: jswymer

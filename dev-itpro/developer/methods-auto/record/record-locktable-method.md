@@ -39,14 +39,16 @@ If this parameter is true, the version of the Record will be checked. If this pa
 
 ## Remarks
 
-If the session is not using Read Scale-Out, then LockTable does the following:  
+Read scale-out lets databases offload read-only workloads to read-only replicas, isolating them from the main read-write workload to improve performance. Learn more in [Using read scale-out for better performance](../../../administration/database-read-scale-out-overview.md).
 
-1) Starts a transaction.
-2) Makes sure that all subsequent statements that read data will apply an UPDLOCK on the database.
+LockTable behaves differently depending on whether read scale-out is used. If the session doesn't use read scale-out, LockTable does these actions:
 
-If the session is using Read Scale-Out, then LockTable does the following:
+1. Starts a transaction.
+1. Makes sure that all subsequent statements that read data apply an UPDLOCK on the database.
 
-1) Makes sure that all subsequent statements that read data use REPEATABLEREAD on the database.
+If the session uses Read Scale-Out, LockTable does the following:
+
+1. Makes sure that all subsequent statements that read data use REPEATABLEREAD on the database.
 
 Because all write operations automatically lock the table that is being used, LockTable would appear unnecessary. However, you could have a transaction in which an application wants to inspect data before possibly changing it, with a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This makes sure that no other application makes changes between the read operation and the possible write operation.
 

@@ -6,6 +6,7 @@ ms.date: 12/03/2024
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
+ms.custom: sfi-image-nochange
 ---
 
 # Test the advanced sample extension

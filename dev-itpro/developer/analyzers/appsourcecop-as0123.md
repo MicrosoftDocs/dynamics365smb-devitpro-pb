@@ -2,14 +2,10 @@
 title: "AppSourceCop Error AS0123"
 description: "A key cannot be declared as clustered on an existing table."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
-ai-usage: ai-assisted
-ms.custom:
- - ai-gen-docs-bap
- - ai-seo-date: 12/19/2024
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

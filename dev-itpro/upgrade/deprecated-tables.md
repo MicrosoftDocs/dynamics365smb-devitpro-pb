@@ -2,6 +2,7 @@
 title: Deprecated Tables
 description: Shows the tables that have been marked as removed in the various versions of Business Central.
 ms.date: 05/21/2025
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.author: solsen

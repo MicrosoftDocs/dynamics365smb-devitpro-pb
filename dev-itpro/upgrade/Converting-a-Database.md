@@ -3,6 +3,7 @@ title: "Converting a Database to Dynamics 365 Business Central - Technical Upgra
 description: "Learn how to convert a database from one of the supported versions to Business Central version 14 as part of a technical upgrade."
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer

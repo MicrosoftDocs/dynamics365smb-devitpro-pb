@@ -2,7 +2,7 @@
 title: (automation API) Delete automationCompany
 description: Deletes an automation company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
 ms.author: solsen

@@ -2,7 +2,7 @@
 title: "Text.SelectStr(Integer, Text) Method"
 description: "Retrieves a substring from a comma-separated string."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 11/04/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,14 +41,12 @@ The substring from the comma-separated string at the index specified.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-
- SelectStr treats string values as OPTIONS. This means that identical values in different strings are not allowed.  
   
- Any trailing commas are removed before the operation starts.  
+Any trailing commas are removed before the operation starts.  
   
- If *Number* is less than 1 or greater than the number of real values \(excluding trailing commas\) in the string, then an error is returned.  
+If *Number* is less than 1 or greater than the number of real values \(excluding trailing commas\) in the string, then an error is returned.  
   
- Quotes are not supported. For example, a,b,"c,d",e is treated as a five-element substring where substring 4 is d".  
+Quotes aren't supported. For example, a,b,"c,d",e is treated as a five-element substring where substring 4 is d".  
   
 ## Example 1
  

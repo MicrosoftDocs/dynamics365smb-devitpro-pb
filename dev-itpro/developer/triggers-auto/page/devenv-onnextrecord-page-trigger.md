@@ -2,7 +2,7 @@
 title: "OnNextRecord (Page) trigger"
 description: "Determines the next record to be displayed."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ end;
 The number of records stepped through before displaying another record. A negative value indicates steps backwards.  
 
 
-## Return Value
+## Return value
 
 *ActualSteps*  
 &emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)  

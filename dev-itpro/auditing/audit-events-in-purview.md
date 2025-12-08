@@ -10,17 +10,14 @@ ms.author: jobulsin
 
 # Auditing in Microsoft Purview
 
-> [!NOTE]
-> Microsoft Purview auditing solutions for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is in Preview. Register any feedback and requests for other events to be auditable on [aka.ms/bcideas](https://aka.ms/bcideas).
-
 Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit auditable events to [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. For [!INCLUDE[prod_short](../developer/includes/prod_short.md)], this means that Create, Update, and Delete events that require administrator privileges are emitted to Purview's unified audit log, aiding security, legal, and compliance investigation across all Microsoft services used in your organization.
 
 > [!TIP]  
-> Before [!INCLUDE[prod_short](../includes/prod_short.md)] online logs authorization attempts to telemetry, a successful authentication (sign in) must happen against Microsoft Entra ID (formerly Azure Active Directory). With the information in the Microsoft Entra sign-in log, you can figure out what happened if a user sign-in failed. Learn more in [Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in).
+> Before [!INCLUDE[prod_short](../includes/prod_short.md)] online logs authorization attempts to telemetry, a successful authentication (sign in) must happen against Microsoft Entra ID. With the information in the Microsoft Entra sign-in log, you can figure out what happened if a user sign-in failed. Learn more in [Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in).
 > 
 > If you want to track, monitor, or alert on successful and failed sign in attempts against Microsoft Entra ID, configure integration to Azure Monitor on Microsoft Entra and analyze further with KQL. Learn more in [Integrate Microsoft Entra logs with Azure Monitor](/entra/identity/monitoring-health/howto-access-activity-logs#integrate-logs-with-azure-monitor-logs).
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all events listed below to Microsoft Purview auditing solutions, and Purview is enabled by default on every tenant. Learn more about enabling or disabling Purview auditing solutions on your tenant in  [Turn auditing on or off](/purview/audit-log-enable-disable) in the Microsoft Purview documentation.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all events listed below to Microsoft Purview auditing solutions. Purview auditing solutions may be enabled automatically on your tenant depending on your Microsoft 365 subscription. Learn more about enabling or disabling Purview auditing solutions on your tenant in  [Turn auditing on or off](/purview/audit-log-enable-disable) in the Microsoft Purview documentation.
 
 ## Schema overview
 
@@ -1249,7 +1246,99 @@ You can audit the activities in the table below by filtering to the `Configured 
 
 ## Configured cloud migration activities
 
-Coming soon.
+You can audit the activities in the table below by filtering to the `Configured cloud migration` event.
+
+<table>
+<thead><tr><th>Activity</th><th>Custom dimensions</th><th>Sample value</th></tr></thead>
+<tbody>
+<tr>
+<td rowspan="3">Replication run completed.</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td>ReplicationType</td><td>Data Replication</td></tr>
+<tr>
+<td>SourceProduct</td><td>GP</td></tr>
+<tr>
+<td rowspan="6">Replication run completed with failed tables.</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td>ReplicationType</td><td>Data Replication</td></tr>
+<tr>
+<td>SourceProduct</td><td>GP</td></tr>
+<tr>
+<td>HasFailures</td><td>True</td></tr>
+<tr>
+<td>NumberOfFailedTables</td><td>5</td></tr>
+<tr>
+<td>Details</td><td>Replication completed with errors</td></tr>
+<tr>
+<td rowspan="3">Table mapping has been [Created|Modified|Renamed|Deleted] by UserSecurityId [UserSecurityId].</td>
+<td>TableName</td><td>Customer</td></tr>
+<tr>
+<td>SourceTableName</td><td>RM00101</td></tr>
+<tr>
+<td>TargetTableType</td><td>0</td></tr>
+<tr>
+<td rowspan="6">Cloud migration setup completed by UserSecurityId [UserSecurityId].</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td>TotalNumberOfOnPremCompanies</td><td>3</td></tr>
+<tr>
+<td>NumberOfCompanies</td><td>2</td></tr>
+<tr>
+<td>TotalMigrationSize</td><td>1.6 (Measured in GB)</td></tr>
+<tr>
+<td>TotalOnPremSize</td><td>2.2 (Measured in GB)</td></tr>
+<tr>
+<td>Product</td><td>GP</td></tr>
+<tr>
+<td rowspan="4">Cloud migration setup disabled by UserSecurityId [UserSecurityId].</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td>DisabledReasonDescription</td><td>User cancelled migration</td></tr>
+<tr>
+<td>DisabledReason</td><td>Abandoned</td></tr>
+<tr>
+<td>SourceProduct</td><td>GP</td></tr>
+<tr>
+<td rowspan="3">Replication run started by UserSecurityId [UserSecurityId].</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td>ReplicationType</td><td>Data Replication</td></tr>
+<tr>
+<td>SourceProduct</td><td>GP</td></tr>
+<tr>
+<td rowspan="6">Cloud migration is completed.</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td>NumberOfCompanies</td><td>2</td></tr>
+<tr>
+<td>TotalMigrationSize</td><td>1.6 (Measured in GB)</td></tr>
+<tr>
+<td>TotalOnPremSize</td><td>2.2 (Measured in GB)</td></tr>
+<tr>
+<td>Product</td><td>GP</td></tr>
+<tr>
+<td>MigrationDateTime</td><td>20250826T120000.000Z</td></tr>
+<tr>
+<td rowspan="1">The delegated admin has been granted consent to run the cloud migration by UserSecurityId [UserSecurityId].</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td rowspan="1">The consent granted to delegated admin to run the cloud migration has been revoked by UserSecurityId [UserSecurityId].</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td rowspan="2">Data upgrade started by UserSecurityId [UserSecurityId].</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td>SourceProduct</td><td>GP</td></tr>
+<tr>
+<td rowspan="3">The replication property has been changed by UserSecurityId [UserSecurityId].</td>
+<td>Category</td><td>Cloud Migration</td></tr>
+<tr>
+<td>TablesModified</td><td>Customer,Vendor</td></tr>
+<tr>
+<td>ReplicateData</td><td>True</td></tr>
+</tbody></table>
 
 ## Administered report activities
 

@@ -4,6 +4,7 @@ description: Describes the codeunit object, which is a container for business lo
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 05/19/2025
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen

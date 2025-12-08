@@ -10,8 +10,6 @@ author: jswymer
 ---
 # Configuring Business Central Web Server instances
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 Accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] or App requires a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on Internet Information Services (IIS). You create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance for the [!INCLUDE[webserver](../developer/includes/webserver.md)] two ways:
 
 - Using the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the [!INCLUDE[webserver](../developer/includes/webserver.md)]

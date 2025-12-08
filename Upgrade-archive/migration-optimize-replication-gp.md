@@ -4,7 +4,7 @@ description: This article explains things you can do to improve the performance 
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/22/2023
 ms.custom: bap-template
 ---

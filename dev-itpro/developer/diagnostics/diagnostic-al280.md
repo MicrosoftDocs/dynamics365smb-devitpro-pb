@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0280"
-description: "The event '{0}' is not found in the target."
+description: "The event '{0}' is not found in the target '{1}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The event '{0}' is not found in the target.
+The event '{0}' is not found in the target '{1}'.
 
 
 ## Description

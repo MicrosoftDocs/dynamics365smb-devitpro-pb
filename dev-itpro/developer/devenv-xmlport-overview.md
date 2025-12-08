@@ -3,6 +3,7 @@ title: XMLport overview
 description: Describes the XMLport object in AL, which is composed of a schema, request page, properties, triggers, and code.
 author: blrobl
 ms.date: 01/30/2025
+ms.update-cycle: 1095-days
 ms.reviewer: solsen
 ms.topic: overview
 ms.author: brobledodiaz

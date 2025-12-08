@@ -2,7 +2,7 @@
 title: "TestFilterField data type"
 description: "Represents the type of a field filter in a test filter on a page or on a request page."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestFilterField Data type
+# TestFilterField data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents the type of a field filter in a test filter on a page or on a request page.

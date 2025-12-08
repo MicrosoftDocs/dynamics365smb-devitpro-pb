@@ -76,7 +76,7 @@ ALTER TABLE [YOUR TABLE] ENABLE CHANGE_TRACKING
 If a user has problems managing a cloud migration, like starting migration, initializing companies, or migrating data from earlier versions, check that:
 
 - The user has a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license (Essentials or Premium, depending on their solution). We recommend using free Dynamics 365 Business Central Premium Trial subscription for this user.  
-- The user is assigned the SUPER permission set.
+- The user is assigned to the SUPER permission set.
 
 Running cloud migration requires SUPER permissions because the operation has to be able to schedule diverse background tasks on behalf of the user. As part of the setup to run cloud migration, delegated administrators can obtain consent from an internal licensed user that has SUPER permissions. Other delegated roles can't run cloud migration.
 
@@ -103,7 +103,7 @@ Running cloud migration requires SUPER permissions because the operation has to 
 
     The computer where IR is installed ideally shouldn't be switched off, go to sleep, or hibernate. If these conditions happen, the IR might get into an error state. In this case, we recommend that you reinstall the IR and turn off sleep hibernate on the computer.  
 
-- Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Migration can be interrupted by your machine running out of memory, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every extra parallel migration slows down the overall progress considerably.
+- Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Running out of memory on the machine can interrupt migration, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every extra parallel migration slows down the overall progress considerably.
 
 If you experience problems with Microsoft Integration Runtime, also see [Troubleshoot self-hosted integration runtime](/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide).
 
@@ -113,7 +113,7 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
 - If you migrate several on-premises databases to several online environments, it's possible to reuse the same IR for these migrations.
 
-    Once you've successfully connected and migrated data into one online environment, you can reuse the IR for another environment. To reuse an IR, enter its name in **Integration Runtime Name** field of **Data Migration Setup** assisted setup, instead of leaving the field blank.
+    After you successfully connect and migrate data into one online environment, you can reuse the IR for another environment. To reuse an IR, enter its name in **Integration Runtime Name** field of **Data Migration Setup** assisted setup, instead of leaving the field blank.
 
 - Use a restored backup when migrating the same on-premises database to different online environments.
 
@@ -125,7 +125,7 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
 - Don't try to migrate data from several on-premises databases into the same online environment at the same time.  
 
-    For example, you might have two companies, where each company is in its own on-premises database. If you need to do this type of migration, the migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then set up the migration in the same online environment, provide a new connection string to the next on-premises database. You can use the same Integration Runtime and Authorization key.  
+    For example, you might have two companies, where each company is in its own on-premises database. If you need to do this type of migration, then migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then set up the migration in the same online environment, provide a new connection string to the next on-premises database. You can use the same Integration Runtime and Authorization key.  
 
 ## Product version
 
@@ -151,7 +151,7 @@ This section explains how to avoid and fix errors caused by incompatible version
 - Before migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
 
   - Verifies that you're migrating from a supported version
-  - Verifies that you selected the right product version in the **Data Migration Setup** assisted setup, **Dynamics 365 Business Central current version** or **Dynamics 365 Business Central earlier versions**.
+  - Verifies that you selected the right product version in the **Data Migration Setup** assisted setup: **Dynamics 365 Business Central current version** or **Dynamics 365 Business Central earlier versions**.
   - Determines which upgrade code is executed.
 
     If that field is blank, the migration can't run.
@@ -173,7 +173,7 @@ Change the company name, run the migration, and then, when migration is complete
 
 > Database: on-premises
 
-If cloud migration has completed successfully, but pages in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online aren't showing the expected data, or there are duplicate record exceptions thrown for setup tables, it's most likely due to table extensions missing records that are present in the base application.  
+If cloud migration completes successfully, but pages in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online don't show the expected data, or duplicate record exceptions appear for setup tables, table extensions probably miss records that exist in the base application.
 
 [!INCLUDE [bc-cloud-migrate-tableext](../includes/bc-cloud-migrate-tableext.md)]
 
@@ -198,19 +198,33 @@ To fix this problem, go to the **Cloud Migration Management** page and run the *
 
   - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. Learn more in the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
 
+## Number of records in Tenant Media table decreased in last replication
+
+> Database: online
+
+If the number of records in the `Tenant Media` table decreases between replication runs, you get a warning on the **Cloud Migration Management** page. This error usually happens when existing data is overwritten or when not all records are copied from the source. Investigate this error before you continue with a migration project.
+
+If any records were removed from the Tenant Media table, consider a [point-in-time restore](tenant-admin-center-backup-restore.md) to restore the cloud environment to a point before the last replication run, or start a new replication run.
+
+If records aren't copied to the `Tenant Media` table, check the size of the records in this table in the source database. Records can't be migrated if their size exceeds the maximum size described in [data handling limits](operational-limits-online.md#DataHandling). Run the following query on the source database to check the size of records in the `Tenant Media` table:
+
+```sql
+SELECT [ID] , datalength([Content]) as rowsize from [dbo].[Tenant Media] order by rowsize desc
+```
+
 ## Disabling the cloud migration
 
 > Database: online
 
-When you've completed the migration, disable cloud migration by using the **Disable Cloud Migration** action on the **Cloud Migration Management** page. This action properly disengages the synchronization and cleans up the Azure Data Factory resources deployed for this migration.
+After you finish the migration, select the **Disable Cloud Migration** action on the **Cloud Migration Management** page to disable cloud migration. This action properly disengages the synchronization and cleans up the Azure Data Factory resources deployed for this migration.
 
 > [!IMPORTANT]
-> Just uninstalling the cloud migration apps, even with the option to remove the data, doesn't disable the migration in the same way. If you don't disable **Cloud Migration**, users experience permission-related errors when they try to modify records in the migrated companies.
+> Simply uninstalling the cloud migration apps, even with the option to remove the data, doesn't properly disable the migration. If you don't disable **Cloud Migration**, users might experience permission-related errors when they try to modify records in the migrated companies.
 
 ## Related information
 
-[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
+[Migrating on-premises Data to Business Central Online](migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
+[FAQ about Connecting to Business Central Online from on-premises Solutions](faq-migrate-data.md)  

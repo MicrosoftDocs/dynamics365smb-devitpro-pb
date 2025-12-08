@@ -10,6 +10,9 @@ When an environment is created as a copy of another environment, a number of pre
 - Tasks in the job queue are automatically stopped  
 
     To see which scheduled jobs are stopped, and to decide which jobs to restart in the new environment, go to the **Scheduled Tasks** page in [!INCLUDE [prod_short](prod_short.md)]. There, you can set tasks to be ready to run in the job queue. However, only tasks that are marked as belonging to the current environment can run. For more information, see [View Scheduled Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks#view-scheduled-tasks) in the business functionality content.  
+- All agents are copied with their tasks, but are turned off on the target environment
+
+    To see which agents are turned off, and to decide which agents to enable in the new environment, go to the **Agents** page in [!INCLUDE [prod_short](prod_short.md)]. There, you can enable agents as needed for the copied environment.
 - Any base application integration settings are cleared  
 - Any irreversible features that were enabled in the original environment will also be turned on in the copy. For more information, see [Features that can't be turned off](../../administration/feature-management.md#features-that-cant-be-turned-off).  
 - Development extensions that are published from [AL-Go for GitHub](https://aka.ms/AL-Go) or Azure DevOps and any extensions that depend on them are uninstalled when the source environment is a sandbox. Any data that was created in the original environment by the extensions that are now uninstalled in the copy will not be deleted. Any updates to per-tenant extensions that are slotted to be upgraded with the next minor or major upgrade will be retained.

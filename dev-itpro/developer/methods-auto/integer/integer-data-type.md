@@ -2,7 +2,7 @@
 title: "Integer data type"
 description: "Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Integer Data type
+# Integer data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.
@@ -22,7 +22,7 @@ The following methods are available on instances of the Integer data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[ToText()](integer-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
+|[ToText()](integer-totext-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

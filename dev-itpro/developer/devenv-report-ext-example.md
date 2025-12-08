@@ -136,7 +136,6 @@ table 50202 Producer
 
 As we've seen in the previous sections, the base table `BaseFoodTable` was extended with the `GMOFood` extension. To reflect that change, it makes sense to extend the `FoodReport` to enable displaying the extra set of fields that were added; both to the existing `FoodTable` and to the new table `Producer`. To do that, we need to use a report extension object. For more information, see [Report Extension Object](devenv-report-ext-object.md). In the `dataset` element, three new columns are added to the `FoodTable` dataitem, and a new `dataitem` element is introduced that adds columns corresponding to the reports source table.
 
-
 ```al
 reportextension 50200 FoodExtension extends FoodReport
 {
@@ -165,6 +164,7 @@ reportextension 50200 FoodExtension extends FoodReport
 ```
 
 The example code above illustrates how additive changes to tables that are used on reports can use report extension objects to reflect these changes.
+Note that `addfirst(Restaurant)` will add the new `Producer` dataitem as the first child dataitem under the existing `Restaurant` dataitem. It won't add another `Restaurant` dataitem.
 
 ## Related information
 

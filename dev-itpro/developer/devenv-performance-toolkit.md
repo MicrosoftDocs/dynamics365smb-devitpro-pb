@@ -2,18 +2,17 @@
 title: Performance Toolkit extension
 description: Test your extensions for performance regressions during the development process for Business Central apps. 
 author: bholtorf
-ms.custom: bap-template
 ms.date: 02/21/2024
 ms.reviewer: bholtorf
-
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
 ms.topic: article
 ms.author: bholtorf
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # The Performance Toolkit extension
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 The Performance Toolkit extension (BCPT) is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prod_short](includes/prod_short.md)] for their customers. Because things change between released versions, it's important that ISVs and VARs can test the performance of their solutions to ensure that new versions don't introduce performance regressions when the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
 

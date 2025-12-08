@@ -16,7 +16,7 @@ ms.author: solsen
 If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server, and await a process to trigger the breakpoint you've set. Then debugging starts when the code that the breakpoint is set on is hit. 
 
 > [!NOTE]  
-> To use the attach functionality, you must make sure that your app is published with <kbd>Ctrl</kbd>+<kbd>F5</kbd> first, or with <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with <kbd>F5</kbd>. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing <kbd>F5</kbd> (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
+> To use the attach functionality, you must make sure that your app is published with <kbd>Ctrl</kbd>+<kbd>F5</kbd> first, or with <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with <kbd>F5</kbd>. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing <kbd>F5</kbd> (Refresh) in a browser might not create a new server session, because it's cached, but if a session is expired and refreshed that will create a new session.
 
 > [!IMPORTANT]  
 > Only the user who starts a Visual Studio Code attach session can issue the Web request on the server.
@@ -32,7 +32,7 @@ In the attach configuration, the `breakOnNext` setting specifies the next client
 
 Two other important properties are `sessionId` and `userId`. `sessionId` specifies an ongoing session of the specified type in `breakOnNext`. This session should belong to the user in `userId` property if specified.
 
-If `sessionId` isn't specified, but `userId` is, then the debugger will be attached to the next session of the type specified in `breakOnNext` for the given user. Learn more about the `userId` and `sessionId` properties in [Initialize a snapshot debugging session on a cloud production environment (launch.json)](devenv-json-launch-file#initialize-a-snapshot-debugging-session-on-a-cloud-production-environment-launchjson).
+If `sessionId` isn't specified, but `userId` is, then the debugger will be attached to the next session of the type specified in `breakOnNext` for the given user. Learn more about the `userId` and `sessionId` properties in [Initialize a snapshot debugging session on a cloud production environment (launch.json)](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-a-cloud-production-environment-launchjson).
 
 > [!IMPORTANT]  
 > In case of `userId` being a different user than the user logged into Visual Studio Code, then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
@@ -105,7 +105,7 @@ The `launch.json` file is now populated with the correct attach configuration se
 3. Set `breakOnNext` to specify the client type on which to break.
 4. In your code, set at least one breakpoint using **Run** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
 You can always add more breakpoints while debugging. 
-5. If your most recent app is not yet published, it's important to make sure you publish it slecting <kbd>Ctrl</kbd>+<kbd>F5</kbd> , alternatively <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for RAD publishing. Then, use <kbd>F5</kbd> to start the attach session.  
+5. If your most recent app isn't yet published, it's important to make sure you publish it selecting <kbd>Ctrl</kbd>+<kbd>F5</kbd>; alternatively <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for RAD publishing. Then, use <kbd>F5</kbd> to start the attach session.  
     > [!IMPORTANT]  
     > If you modify the app code during the debugging session, make sure to re-publish the app using <kbd>Ctrl</kbd>+<kbd>F5</kbd> .
 6. After publishing the app, select <kbd>F5</kbd> to start a debugging session.  
@@ -117,8 +117,8 @@ You can always add more breakpoints while debugging.
 
 ## Related information  
 
-[AL Development Environment](devenv-reference-overview.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Developing extensions in AL](devenv-dev-overview.md)  
 [Debugging](devenv-debugging.md)  
-[Snapshot Debugging](devenv-snapshot-debugging.md)  
-[JSON Files](devenv-json-files.md)  
+[Snapshot debugging](devenv-snapshot-debugging.md)  
+[JSON files](devenv-json-files.md)  

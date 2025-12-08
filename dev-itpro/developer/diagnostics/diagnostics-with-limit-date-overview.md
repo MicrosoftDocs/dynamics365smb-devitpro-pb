@@ -2,7 +2,7 @@
 title: "Warnings turning into errors overview"
 description: ""
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,6 +17,7 @@ This article lists all the warning diagnostics that will turn or have turned int
 
 |Release|Diagnostics|Message|
 |---------|-----------|------|
+|2026 release wave 2| - [AL0885](diagnostic-al885.md) <br /> | - The field '{0}' cannot be referenced in this context. You can only reference symbols from the base object '{1}' and the current extension.<br />|
 |2025 release wave 2| - [AL0864](diagnostic-al864.md) <br /> | - The control type 'ChartPart' is not supported.<br />|
 |2025 release wave 1| - [AL0755](diagnostic-al755.md) <br />  - [AL0803](diagnostic-al803.md) <br />  - [AL0816](diagnostic-al816.md) <br />  - [AL0818](diagnostic-al818.md) <br />  - [AL0826](diagnostic-al826.md) <br />  - [AL0837](diagnostic-al837.md) <br />  - [AL0845](diagnostic-al845.md) <br /> | - The '{0}' already defines a built-in member called '{1}'. Choose another name for {2} '{1}', or it might cause runtime issues.<br /> - The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Choose another name for one of them. Otherwise, this might cause runtime issues.<br /> - The property '{0}' cannot be set if the property '{1}' is set to '{2}'.<br /> - The {0} '{1}' already defines an event called '{2}' with the same parameter types in '{3}'.<br /> - The type '{0}' cannot be used as a type argument in this context.<br /> - The symbol '{0}' results in the same translation ID as one or more other symbols. Rename symbol to resolve the problem.<br /> - The {0} '{1}' is already being used. The EntityName and EntityNames property values must be unique.<br />|
 |2024 release wave 2| - [AL0545](diagnostic-al545.md) <br />  - [AL0775](diagnostic-al775.md) <br />  - [AL0778](diagnostic-al778.md) <br />  - [AL0780](diagnostic-al780.md) <br />  - [AL0788](diagnostic-al788.md) <br />  - [AL0804](diagnostic-al804.md) <br />  - [AL0805](diagnostic-al805.md) <br />  - [AL0814](diagnostic-al814.md) <br />  - [AL0830](diagnostic-al830.md) <br /> | - An area of type '{0}' is not valid on pages of type '{1}'.<br /> - Try methods should not specify an explicit return value, because the value will be discarded. The actual return value depends on whether the method returns an error or not.<br /> - The implicit conversion will overflow when converting from a 'Guid' to a '{0}' which is shorter than the converted textual representation of a 'Guid'.<br /> - It is not allowed to call `ModifyAll` on a field of FieldClass='{0}'.<br /> - An area of type '{0}' is only valid on pages of type(s) '{1}'.<br /> - You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.<br /> - The object ID '{0}' should not be surrounded with quotes.<br /> - The source of a column cannot be a flow filter.<br /> - The method '{0}' is not supported as the implementation for the interface method because it is a try function.<br />|

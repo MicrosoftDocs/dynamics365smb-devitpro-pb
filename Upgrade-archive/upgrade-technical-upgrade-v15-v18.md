@@ -2,7 +2,7 @@
 title: "Technical Upgrade from Version 15 to Version 17" 
 description: Describes how to do a technical upgrade from Business Central 15 to 17
 ms.date: 10/01/2020
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 author: jswymer
 ---

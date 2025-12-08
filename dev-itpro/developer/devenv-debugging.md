@@ -3,7 +3,7 @@ title: Debugging in AL
 description: Debugging in AL with Visual Studio Code and the AL Language extension.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 01/20/2025
+ms.date: 08/21/2025
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.author: solsen
@@ -11,8 +11,6 @@ ms.collection: get-started
 ---
 
 # Debugging in AL
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 

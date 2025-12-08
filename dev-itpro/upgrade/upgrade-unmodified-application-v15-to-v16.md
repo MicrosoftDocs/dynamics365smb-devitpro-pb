@@ -3,6 +3,7 @@ title: "Upgrading Version 15 Base Application to Version 16"
 description: Describes how to upgrade an unmodified Business Central 15 application to version 16
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.author: jswymer
 author: jswymer

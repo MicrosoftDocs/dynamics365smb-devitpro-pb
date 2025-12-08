@@ -29,8 +29,9 @@ The articles in this section describe the key concepts and techniques for using 
 |Use APIs to automate tasks on an environment | [Administration API](../administration/itpro-introduction-to-automation-apis.md) |
 |Use APIs to automate environment administration tasks | [Admin Center API](../administration/administration-center-api.md) |
 |Use APIs to automate environment cloud migration tasks | [Cloud Migration API](../administration/cloudmigrationapi/cloud-migration-api-overview.md) |
-|Develop a custom API for reading Business Central data | [API Developer Overview](../developer/devenv-api.md)  <br>[API Page Type](../developer/devenv-api-pagetype.md)  <br>[API Query Type](../developer/devenv-api-querytype.md)  <br>[Walk-through: Developing a Custom API](../developer/devenv-develop-custom-api.md) |
-|Enable built-in API (for on-premises) | [Enabling the API for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|  
+|Develop a custom API for reading Business Central data | [API Developer Overview](../developer/devenv-api.md)  <br>[API Page Type](../developer/devenv-api-pagetype.md)  <br>[API Query Type](../developer/devenv-api-querytype.md)  <br>[Walkthrough: Developing a Custom API](../developer/devenv-develop-custom-api.md) |
+|Enable built-in API (for on-premises) | [Enabling the API for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|
+|Learn more about the structure of the API endpoints | [API endpoint structure](api-endpoint-structure.md)|
 
 
 ## Related information

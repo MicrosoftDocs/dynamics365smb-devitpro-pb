@@ -4,6 +4,7 @@ description: Description of the relational operators in AL and how they are used
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.date: 04/26/2024
+ms.update-cycle: 1095-days
 ms.author: solsen
 author: KennieNP
 ms.custom: evergreen

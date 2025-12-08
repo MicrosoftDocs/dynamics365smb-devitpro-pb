@@ -47,13 +47,12 @@ begin
 end;  
 ```  
   
- `RecRef.Open(18)` - Opens table 18 or causes a run-time error if table 18 does not exist.  
+ `RecRef.Open(18)` - Opens table 18 or causes a runtime error if table 18 doesn't exist.  
   
  `RecRef.Caption` - Returns the caption of the table.  
   
  `RecRef.CurrentKey` - Returns the caption of the current key in the table.  
   
-
 ## Related information
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

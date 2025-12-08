@@ -18,14 +18,6 @@ Objects that have been published must not change namespace. This might break the
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule does not exist anymore and has been replaced by:
-- [AS0034 - For table property value changes](appsourcecop-as0034.md)
-- [AS0036 - For field property value changes](appsourcecop-as0036.md)
-- [AS0038 - For key property value changes](appsourcecop-as0038.md)
-- [AS0039 - For table property removal](appsourcecop-as0039.md)
-- [AS0041 - For field property removal](appsourcecop-as0041.md)
-- [AS0042 - For key property removal](appsourcecop-as0042.md)
-
 ## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

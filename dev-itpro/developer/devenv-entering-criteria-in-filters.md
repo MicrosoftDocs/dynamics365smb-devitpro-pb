@@ -3,6 +3,7 @@ title: Entering criteria in filters
 description: Describes how to enter criteria in filters in AL for Business Central.
 ms.custom: evergreen
 ms.date: 05/21/2025
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.author: solsen

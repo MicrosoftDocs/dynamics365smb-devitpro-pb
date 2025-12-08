@@ -39,7 +39,7 @@ The record to find.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The GoToRecord method loops over all records until it finds the identifies record.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed. 
+The `GoToRecord` method loops over all records until it finds the selected record. For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed. For performance reasons, consider setting [TestPage filters](../../devenv-testing-pages.md#filter-data-on-test-pages) before using `GoToRecord`.
 
 ## Related information
 [TestPage Data Type](testpage-data-type.md)  

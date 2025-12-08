@@ -2,7 +2,6 @@
 title: FAQ about Migrating to Business Central Online
 description: Get answers to your questions about migrating to the cloud from an on-premises solution.
 author: jswymer
-
 ms.reviewer: jswymer
 ms.topic: faq
 ms.search.keywords: cloud, edge
@@ -11,8 +10,6 @@ ms.author: jswymer
 ---
 
 # FAQ about migrating to Business Central online from on-premises solutions
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 This section contains answers to frequently asked questions about migrating from on-premises solutions to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
 

@@ -2,7 +2,7 @@
 title: "Decimal.ToText() Method"
 description: "Converts the value to a text."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "OnDeleteRecord (Request Page) trigger"
 description: "Runs before a record is deleted from the table."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -26,7 +26,7 @@ end;
 ```
 
 
-## Return Value
+## Return value
 
 *Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  

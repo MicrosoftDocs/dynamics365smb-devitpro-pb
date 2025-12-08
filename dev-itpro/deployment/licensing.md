@@ -10,8 +10,6 @@ ms.reviewer: solsen
 
 # Licensing in Dynamics 365 Business Central
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses can only be purchased through CSP. Microsoft offers several types of paid licenses for business users:
 
 - Essentials  
@@ -65,7 +63,7 @@ Most, but not all, licenses can be reassigned. Except as permitted in this parag
 
 ## Device licenses
 
-The Dynamics 365 Business Central Device license allows multiple users to simultaneously use a device that is covered by the license. For example, it might be a point of sales, shop floor, or warehouse device. When you've purchased many device licenses, up to that number of users assigned to the *Dynamics 365 Business Central Device Users* group can sign in at the same time. For more information, see the Microsoft Dynamics 365 Business Central Licensing Guide. The guide is available for download on the [Business Central](https://dynamics.microsoft.com/business-central/overview/) website.
+The Dynamics 365 Business Central Device license allows multiple users to simultaneously use a device that is covered by the license. For example, it might be a point of sales, shop floor, or warehouse device. When you've purchased many device licenses, up to that number of users assigned to the *Dynamics 365 Business Central Device Users* group can sign in at the same time. For more information, see the Microsoft Dynamics 365 Business Central Licensing Guide. The guide is available for download on the [Business Central](https://www.microsoft.com/dynamics-365/products/business-central/) website.
 
 Your company's Microsoft 365 administrator or Microsoft partner can create the *Dynamics 365 Business Central Device Users* group and add device users as members in the [Microsoft 365 Admin Center](https://admin.microsoft.com/) or on the [Azure portal](https://portal.azure.com/).
 

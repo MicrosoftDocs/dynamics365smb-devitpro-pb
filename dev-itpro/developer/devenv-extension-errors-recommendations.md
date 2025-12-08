@@ -2,7 +2,7 @@
 title: Extending error messages with recommendations
 description: Overview of how you can extend the error messages with recommendations framework to reduce friction for users of Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 10/03/2024
+ms.date: 11/17/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ Improving error handling and error messages reduces friction for users and highl
 
 In [!INCLUDE [prod_short](includes/prod_short.md)], the user can use the actionable error messages displayed on the **Error Messages** page to resolve issues and continue working. The **Error Messages** page serves as a centralized location for all error notifications, making it easier to manage and resolve multiple issues efficiently.
 
-This article shows how to raise actionable error messages from the `ErrorMessageManagement` codeunit using the **Error Messages with Recommendations** app. 
+This article explains the technical framework for extending error messages with recommendations using the **Error Messages with Recommendations** app. It describes the key components, interfaces, and events that enable you to create actionable error messages from the `ErrorMessageManagement` codeunit.
 
 ## Technical implementation details
 

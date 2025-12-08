@@ -2,14 +2,10 @@
 title: "AppSourceCop Error AS0049"
 description: "The access modifier of an application object cannot be changed to a value that provides less access because it will break dependent extensions."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
-ai-usage: ai-assisted
-ms.custom:
- - ai-gen-docs-bap
- - ai-seo-date: 10/01/2024
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

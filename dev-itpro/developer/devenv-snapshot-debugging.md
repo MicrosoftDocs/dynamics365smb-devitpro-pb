@@ -1,8 +1,8 @@
 ---
-title: "Snapshot debugging"
-description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
+title: Snapshot debugging
+description: Overview of how snapshot debugging allows recording running AL code for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 09/13/2023
+ms.date: 09/03/2025
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,8 +12,6 @@ ms.reviewer: solsen
 
 > [!NOTE]  
 > With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 - Snapshot Debugging is available in production cloud environments.
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 With snapshot debugging, you can record AL code that runs on the server, and when it has completed, debug the recorded *snapshot* in Visual Studio Code. Snapshot debugging lets you inspect code execution and variables in the production environment on a cloud service for a specified user session. To create and download a snapshot file that exists on the server on behalf of an end-user, the user must be part of the **D365 Snapshot Debug** permission set. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 

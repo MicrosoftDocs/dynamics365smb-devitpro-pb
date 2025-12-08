@@ -1,7 +1,7 @@
 ---
 title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues that can affect Business Central installation or upgrade.
-ms.date: 05/15/2025
+ms.date: 09/19/2025
 ms.reviewer: jswymer
 ms.topic: troubleshooting-known-issue
 ms.author: jswymer
@@ -20,7 +20,22 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ### Problem
 
-You get a fatal error when you install the Web Server components on a machine that has the .NET 6.0 SDK or Core Runtime.
+When you install the Web Server components on a machine that already includes the .NET 6.0 SDK or Core Runtime, you get the following error:
+
+**Web Server Components** Fatal error during installation
+
+The installation log, accessible via a link in the error dialog box, includes entries such as:
+
+```
+RegistrySearch: Id = 'IISASPNETInstalled', searching for registry key value. 
+                Id = 'IISASPNETInstalled', Registry value not found. Key = 'SOFTWARE\Microsoft\InetStp\Components', Value = 'ASPNET'
+
+RegistrySearch: Id = 'IISNETFXInstalled', searching for registry key value. 
+                Id = 'IISNETFXInstalled', Registry value not found. Key = 'SOFTWARE\Microsoft\InetStp\Components', Value = 'NetFxExtensibility'
+
+RegistrySearch: Id = 'WebComponentsPrerequisitesInstalled', searching for registry key value. 
+                Id = 'WebComponentsPrerequisitesInstalled', Registry key not found. Key = 'SOFTWARE\Microsoft\Microsoft Dynamics NAV\260\Web Components Prerequisites'
+```
 
 ### Possible cause
 
@@ -29,7 +44,7 @@ If the .NET 6.0 SDK or Core Runtime is installed before the IIS (Internet Inform
 ### Workaround
 
 1. Uninstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
-1. Download and install the .NET 6.0 Hosting Bundle from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/).
+1. Download and install the **ASP.NET Core 6.0 Runtime (v6.0.36) - Windows Hosting Bundle** from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/) or select [this link](https://go.microsoft.com/fwlink/?linkid=2336162).
 1. Reinstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
 
 ## Renamed tables and fields in subscription billing extension cause synch errors on upgrade

@@ -2,7 +2,7 @@
 title: "ObsoleteReason property"
 description: "Specifies why the object has been marked as Pending in the ObsoleteState property."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,6 +20,7 @@ Specifies why the object has been marked as Pending in the ObsoleteState propert
 -   Page Custom Action
 -   Page File Upload Action
 -   Report Layout
+-   Page User Control
 -   Table
 -   Table field
 -   Table key
@@ -65,6 +66,8 @@ ObsoleteReason = 'Not Needed';
 ## Remarks 
 
 Use this property to inform developers about an object or element that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
+
+Learn more about obsoletion in [Obsolete objects, methods, and symbols in AL](../devenv-obsolete-objects.md).
 
 ## Related information
 

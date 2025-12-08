@@ -6,6 +6,7 @@ ms.date: 10/04/2023
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
+ms.custom: sfi-ropc-nochange
 ---
 
 # Running a container-based development environment
@@ -20,7 +21,7 @@ Install Docker and configure it for Windows Containers.
 
     - For Windows Desktop, use [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) - (option to qualify for free SKU - license may be required).
     - For Windows Server, use [Mirantis Container Runtime](https://docs.mirantis.com/mcr/23.0/overview.html) - (option to qualify for free SKU - license may be required).
-    - An alternative is to use Docker Engine, which is open source and community-driven. For more information, see [Docker and Business Central](https://freddysblog.com/2021/10/30/docker-and-business-central/).
+    - An alternative is to use Docker Engine, which is open source and community-driven.
         
 2. For Windows Desktop, switch Docker to use Windows containers. By default Docker uses Linux containers.
 

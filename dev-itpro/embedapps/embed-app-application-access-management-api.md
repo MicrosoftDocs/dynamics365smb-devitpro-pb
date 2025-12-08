@@ -11,8 +11,6 @@ ms.date: 08/24/2023
 ---
 # Application Access Management API
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 You can manage access to application families available in the service if you have at least the delegated **Dynamics 365 Administrator** role. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service.
 
 > [!NOTE]

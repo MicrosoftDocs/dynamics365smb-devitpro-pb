@@ -3,6 +3,7 @@ title: Entitlement object
 description: Discover how to define and use entitlement objects in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/19/2025
+ms.update-cycle: 1095-days
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,8 +13,6 @@ ms.custom: evergreen
 # Entitlement object
 
 [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Microsoft Entra ID.
 

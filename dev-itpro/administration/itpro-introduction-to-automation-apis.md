@@ -2,7 +2,7 @@
 title: Introduction to automation APIs
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
 author: SusanneWindfeldPedersen
-ms.date: 02/04/2025
+ms.date: 12/05/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -154,6 +154,9 @@ Removing the permissionSet from the user is done by issuing a [DELETE userPermis
 
 To get new users from Office 365, two bound actions on the **users** endpoint can be used: `Microsoft.NAV.getNewUsersFromOffice365` and `Microsoft.NAV.getNewUsersFromOffice365Async`. Both actions retrieve new users or new user information from the Office 365 portal but former one is designed for delegated admins and it runs synchronous and latter one schedules a background job, which makes it asynchronous. `Microsoft.NAV.getNewUsersFromOffice365Async` returns a link to the scheduled job where you can track the progress. You can also track the progress by issuing a [GET scheduledJobs](api/dynamics_scheduledjob_get.md) on the users entity. Existing, unchanged users won't be updated with these actions.
 
+> [!NOTE]
+> The `getNewUsersFromOffice365` and `getNewUsersFromOffice365Async` APIs aren't supported when using service-to-service (S2S) authentication. This operation requires that users are assigned the **SUPER** permission set in all companies, which can't be assigned to application users. Learn more at [Using service-to-service (S2S) authentication](/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication).
+
 ## Handling tenant extensions
 
 Add-on extensions, which are already published to the tenant can be installed and uninstalled. Per-tenant extensions can be uploaded and installed. To get the list of all extensions on the tenant, issue a [GET extensions](api/dynamics_extension_get.md). This returns the packageId needed for installing and uninstalling extensions.
@@ -246,6 +249,44 @@ To view ongoing extension installation status, issue [GET extensionDeploymentSta
 ```json
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionDeploymentStatus
 ```
+
+## Handling Feature Management
+
+### Get a list of available features
+
+To view list of features available in feature management and their status issue a [GET features](api/dynamics_featuremanagement_get.md)
+
+```json
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features
+```
+
+### Activate a feature
+
+To activate a feature, issue a [POST activate](api/dynamics_activate_create.md) on the bound action Microsoft.NAV.activate against the specific feature resource. Use the {featureId} value from the GET features response.
+
+```json
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features({featureId})/Microsoft.NAV.activate
+Authorization: Bearer {token}
+{
+	"updateInBackground":false,
+	"startDateTime":"2025-07-08T16:00:00Z"
+}
+```
+
+If successful, the request typically returns a "200" response. Use the GET features request to verify that the feature state has changed.
+
+
+### Deactivate a feature
+
+To deactivate a feature, issue a [POST deactivate](api/dynamics_deactivate_create.md) on the bound action Microsoft.NAV.deactivate against the specific feature resource.
+
+```json
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features({featureId})/Microsoft.NAV.deactivate
+Authorization: Bearer {token}
+```
+
+If successful, the request typically returns a "200" response. Use the GET features request to verify that the feature state has changed.
+
 
 ## Related information
 

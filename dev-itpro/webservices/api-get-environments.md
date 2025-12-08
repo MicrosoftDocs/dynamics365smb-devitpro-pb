@@ -11,8 +11,6 @@ ms.reviewer: jswymer
 
 # Get a List of Business Central Environments
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 [!INCLUDE[prod_short](../includes/prod_short.md)] can have multiple environments. When working with a Business Central API, the name of the environment being connected to must to go into the endpoint URI. You can retrieve a list of environments deployed on the tenant by calling the environments endpoint as described in this article.
 
 ## Request
@@ -48,3 +46,4 @@ Returns a wrapped array of environments.
 [Developing Connect Apps for Dynamics 365 Business Central](../developer/devenv-develop-connect-apps.md)  
 [Microsoft Web Services Overview](web-services.md)  
 [OpenAPI Specification](../api-reference/v2.0/dynamics-open-api.md)  
+[API endpoint structure](api-endpoint-structure.md)

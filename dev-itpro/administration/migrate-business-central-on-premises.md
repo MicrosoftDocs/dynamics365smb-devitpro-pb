@@ -1,13 +1,12 @@
 ---
-title: Business Central on-premises to online migration End-to-end overview
+title: Business Central On-premises to Online Migration End-to-end Overview
 description: This article provides an overview of how the migration works from Business Central on-premises and the necessary tasks for completing the migration.
 author: jswymer
 ms.topic: article
 ms.reviewer: jswymer
 ms.search.keywords: cloud, migrate, saas, online
-ms.date: 06/11/2024
+ms.date: 06/20/2025
 ms.author: jswymer
-
 ms.custom: bap-template
 ---
 
@@ -23,7 +22,7 @@ The end-to-end process is described [here](migrate-data.md). In this article, we
 
 ## Understanding cloud migration
 
-Data migration is the process of securely migrating data from an on-premises SQL Server instance (or Azure SQL) to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  You manage cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online through a connection to the on-premises database and various components that establish a pipeline for replicating data. The on-premises solution remains the operative environment until you complete the cloud migration. <!--[!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]-->  
+Data migration is the process of securely migrating data from an on-premises SQL Server instance (or Azure SQL) to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. You manage cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online through a connection to the on-premises database and various components that establish a pipeline for replicating data. The on-premises solution remains the operative environment until you complete the cloud migration. <!--[!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]-->  
 
 ### Components involved
 
@@ -36,7 +35,7 @@ The following figure illustrates the main components involved in the data migrat
 |Component|Description|
 |-|-|
 |On-premises database|This database is the on-premises SQL Server database or an Azure SQL Database that stores business data for the companies to migrate to the cloud. |
-|Azure Data Factory|A key component of the data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service that's built for migrating large amounts raw data across data sources and controlling data integration projects. Azure Data Factory migrates the data between on-premises and online directly. In other words, it doesn't look at any permissions within the applications you're transferring data between&mdash;only SQL permissions.|
+|Azure Data Factory|A key component of the data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service for migrating large amounts raw data across data sources and controlling data integration projects. Azure Data Factory migrates the data between on-premises and online directly. In other words, it doesn't look at any permissions within the applications you're transferring data between&mdash;only SQL permissions.|
 |Pipelines|Pipelines are the main elements of Azure Data Factory. Pipelines are groupings of activities that copy, move, and transform data, and also orchestrate its flow.|
 |Integration Runtime|The Integration Runtime component is the compute infrastructure of Azure Data Factory. There are two Integration Runtime instances in the end-to-end process. The first instance securely copies data from on-premises to the cloud, where the pipelines are created. If the on-premises database is an SQL Server database, you use a self-hosted integration runtime. This runtime is installed locally on the on-premises network and registered in Azure Data Factory. If the on-premises database is an Azure SQL Database, an Azure Integration Runtime is used. From the pipeline, the Azure Integration Runtime then moves the data to the online database for the environment. |
 |Online database|This database in the Azure SQL Database of the Business Central environment that you're migrating data to.|
@@ -56,7 +55,7 @@ The cloud migration process transfers business data from one or more companies i
 <!-- With extensions, data is only migrated if the extension that contains the tables or table extensions is installed on the target online environment and its configured for data replication by the [ReplicateData](../developer/properties/devenv-replicatedata-property.md).-->
 
 > [!NOTE]
-> **What data isn't migrated?** During the data migration process, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't migrate most system tables, users, and permissions. Additionally, record links aren't currently migrated because they are associated with a user ID, and users aren't migrated from the on-premises environment to the online tenant.
+> **What data isn't migrated?** During the data migration process, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't migrate most system tables, users, and permissions. Additionally, record links aren't currently migrated because they're associated with a user ID, and users aren't migrated from the on-premises environment to the online tenant.
 
 In general, data is migrated table by table. Depending on their size, tables might also be combined and migrated together for performance reasons. In either case, the success and failure of the migration is tracked for each table. For instance, tables fail to migrate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed.  
 
@@ -152,7 +151,7 @@ This section outlines the general process or phases you go through to migrate da
 
       To get started, go to [Align SQL table definitions](migration-align-table-definitions.md) and [Clean data](migration-clean-data.md).
 
-    1. Optimize cloud migration performance:
+   1. Optimize cloud migration performance:
 
        Follow practical steps to enhance and improve the efficiency and reliability of the migration process while minimizing the risk of data loss or downtime. 
 
@@ -168,7 +167,7 @@ This section outlines the general process or phases you go through to migrate da
 
    This step migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment. 
 
-   At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. For example, suppose you ran the assisted setup guide from a test company in a sandbox environment because you worry that many extensions might be problematic. Once the data has been replicated to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
+   At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. For example, suppose you ran the assisted setup guide from a test company in a sandbox environment because you worry that many extensions might be problematic. Once the data is replicated to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
    To get started, go to [Replicate data](migration-data-replication.md).
 
@@ -190,7 +189,7 @@ This section outlines the general process or phases you go through to migrate da
 
    1. Optimize your Business Central online environment:
 
-      Configure the system to meet your business needs. This task may include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
+      Configure the system to meet your business needs. This task might include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
    1. Set up user access
 
       Grant access to your new Business Central online system for all relevant users. This task includes creating new user accounts, setting up permissions, and defining roles and responsibilities.
@@ -212,31 +211,30 @@ By completing these tasks, you can ensure a successful migration to the cloud-ba
 
 You manage the cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online. But once you start the migration phase, the on-premises solution remains the operative environment until you complete the migration. [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]  
 
-Any existing data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online will be overwritten with data from your on-premises solution, or source, once the data replication is run.  
+Any existing data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is overwritten with data from your on-premises solution, or source, once the data replication is run.  
 
 If you don't want data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to be overwritten, don't configure the connection. The only exception is when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times in that specific scenario.
 
-With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.  
+With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, several stored procedures are added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.  
 
 ### Limited data entry during migration period
 
-Once the cloud migration is set up and underway, the data that you can enter in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant is limited to data that isn't included in data migration from on-premises. Otherwise, any data that was written to the tenant database would be continuously overwritten during the migration process.  
+After you set up cloud migration, you can enter only data that isn't included in data migration from on-premises in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. Otherwise, any data that was written to the tenant database would be continuously overwritten during the migration process.  
 
-To make setting up this read-only tenant more efficient, we created the <!--*Intelligent Cloud* user group and the-->*Intelligent Cloud* permission set. Once the cloud migration environment is configured, existing users in the online tenant that don't have SUPER permissions are automatically assigned to the *Intelligent Cloud* <!--user group--> permission set. Only users with SUPER permissions will be allowed to make modifications to the system at this point. If you add any online users later, make sure you assign them *Intelligent Cloud* permission set. They're not assigned automatically.
+To make setting up this read-only tenant more efficient, we created the <!--*Intelligent Cloud* user group and the-->*Intelligent Cloud* permission set. Once the cloud migration environment is configured, existing users in the online tenant that don't have SUPER permissions are automatically assigned to the *Intelligent Cloud* <!--user group--> permission set. Only users with SUPER permissions can make modifications to the system at this point. If you add any online users later, make sure you assign them *Intelligent Cloud* permission set. They're not assigned automatically.
 
 > [!NOTE]  
 > Before you configure a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, make sure that at least one user in each company is assigned SUPER permissions.  
 
 Users that are reassigned to the *Intelligent Cloud* <!--user group--> permission set have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user can create new user groups and permissions sets and assign users accordingly. It's highly recommended to create any new permissions sets from a copy of the *Intelligent Cloud* permission set and then take away permissions you don't want users to have.  
 
-
 > [!WARNING]
-> If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may have to clear all your data and rerun a full migration to correct this.
+> Granting insert, modify, or delete permissions to any resource in the application set to read-only can negatively affect data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this condition occurs, you might have to clear all your data and rerun a full migration to correct it.
 
 ## Related information
 
 [Migrate on-premises data to Business Central online introduction](migrate-data.md)  
-[Intelligent Insights with Business Central Online](/dynamics365/business-central/about-intelligent-cloud)  
-[Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md)  
-[Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[Important Information and Considerations for Before Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019](../upgrade/Upgrade-Considerations.md)
+[Intelligent insights with Business Central online](/dynamics365/business-central/about-intelligent-cloud)  
+[Migrate legacy help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] format](../upgrade/migrate-help.md)  
+[Upgrading from Dynamics NAV to Business Central online](../upgrade/Upgrade-Considerations.md#online)  
+[Important information and considerations for before upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019](../upgrade/Upgrade-Considerations.md)

@@ -4,6 +4,7 @@ description: Overview of the objects in the AL Language development environment.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 05/14/2025
+ms.update-cycle: 1095-days
 ms.topic: overview
 ms.author: solsen
 ms.reviewer: solsen

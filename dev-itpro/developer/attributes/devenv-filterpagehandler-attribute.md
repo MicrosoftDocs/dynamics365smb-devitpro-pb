@@ -2,7 +2,7 @@
 title: "FilterPageHandler attribute"
 description: "Specifies that the method is a FilterPageHandler method, which handles a specific filter page."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ Specifies that the method is a FilterPageHandler method, which handles a specifi
 procedure FilterPageHandler(var Record1: RecordRef [; var Record2: RecordRef] [; var Record3: RecordRef] [; var Record4: RecordRef] [; var Record5: RecordRef] [; var Record6: RecordRef] [; var Record7: RecordRef] [; var Record8: RecordRef] [; var Record9: RecordRef] [; var Record10: RecordRef]) : Boolean;
 ```
 > [!IMPORTANT]
-> The above signature requires the FilterPageHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the FilterPageHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Record1*  

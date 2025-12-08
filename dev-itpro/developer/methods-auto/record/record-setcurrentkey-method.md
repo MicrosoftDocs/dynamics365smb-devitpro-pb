@@ -2,7 +2,7 @@
 title: "Record.SetCurrentKey(Any [, Any,...]) Method"
 description: "Selects a key for a table."
 ms.author: solsen
-ms.date: 11/12/2024
+ms.date: 06/12/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -209,7 +209,7 @@ The following example illustrates the behavior of SetCurrentKey if no keys can b
     var
         MyRecord: Record MyTable;
     begin
-        if not MyRecord.SetCurrentKey(BlobField) then
+        if not MyRecord.SetCurrentKey(Field5) then
           // handle if no key was found 
           // VERY IMPORTANT AS IN THIS CASE, THE SERVER WILL RAISE A RUNTIME ERROR
 

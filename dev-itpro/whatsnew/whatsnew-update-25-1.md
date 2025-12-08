@@ -3,6 +3,7 @@ title: Update 25.1 for Microsoft Dynamics 365 Business Central 2024 release wave
 description: Get an overview of new and changed capabilities in the 25.1 update of Business Central online, which is part of 2024 release wave 2.
 ms.author: jswymer
 ms.date: 10/29/2024
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.topic: article
 author: jswymer
@@ -24,7 +25,7 @@ Learn about the hotfixes on Microsoft Support at [Update 25.1 for Business Centr
 - [Change the data search method in lists (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/change-data-search-method-lists)
 - [Report sustainability entries with financial reports (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reporting-sustainability-entries-financial-reports)
 - [VAT Return feature now available - Czechia (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/vat-return-czechia)
-- [Use new service providers in the e-documents framework (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-new-service-providers-e-documents-framework)
+- [Use new service providers in the e-documents framework (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/planned-features)
 
 ## Localization updates
 

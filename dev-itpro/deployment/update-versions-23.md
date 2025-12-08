@@ -7,6 +7,7 @@ ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: article
 ms.date: 04/25/2025
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen

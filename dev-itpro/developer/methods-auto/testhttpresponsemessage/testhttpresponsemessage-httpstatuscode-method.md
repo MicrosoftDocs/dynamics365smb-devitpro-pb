@@ -2,7 +2,7 @@
 title: "TestHttpResponseMessage.HttpStatusCode([Integer]) Method"
 description: "Gets or sets the status code of the HTTP response."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Gets or sets the status code of the HTTP response.
 
 ## Syntax
 ```AL
-StatusCode :=   TestHttpResponseMessage.HttpStatusCode([SetStatusCode: Integer])
+[StatusCode := ]  TestHttpResponseMessage.HttpStatusCode([SetStatusCode: Integer])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -33,7 +33,7 @@ The status code of the HTTP response.
 
 
 ## Return Value
-*StatusCode*  
+*[Optional] StatusCode*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The status code of the HTTP response.
 

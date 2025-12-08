@@ -4,6 +4,7 @@ description: Learn about the Get, Find, and Next methods for searching records i
 ms.author: solsen
 ms.custom: evergreen
 ms.date: 05/26/2025
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -95,7 +95,10 @@
       },
       "ms.collection": {
         "developer/ai-integration-landing-page.yml": "bap-ai-copilot"
-      }
+      },
+      "ms.update-cycle": {
+        "developer/ai-integration-landing-page.yml": "180-days"
+      },
     },
     "template": [],
     "dest": "dev-itpro",

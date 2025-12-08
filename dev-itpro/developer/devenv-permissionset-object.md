@@ -4,6 +4,7 @@ description: Describes the permission set object, which sets permissions on obje
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 06/02/2025
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen

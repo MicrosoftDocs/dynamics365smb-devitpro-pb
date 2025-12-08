@@ -6,6 +6,7 @@ ms.date: 04/01/2021
 ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
+ms.custom: sfi-image-nochange
 ---
 # Moving Tables and Fields to Extensions Up the Dependency Graph
 

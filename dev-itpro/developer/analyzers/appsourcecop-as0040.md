@@ -2,14 +2,10 @@
 title: "AppSourceCop Warning AS0040"
 description: "Destructive page properties that have been published must not be removed."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
-ai-usage: ai-assisted
-ms.custom:
- - ai-gen-docs-bap
- - ai-seo-date: 10/01/2024
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

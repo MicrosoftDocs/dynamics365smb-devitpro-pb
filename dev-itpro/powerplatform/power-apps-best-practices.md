@@ -6,7 +6,9 @@ ms.author: andersg
 ms.reviewer: jswymer
 ms.topic: best-practice
 ms.date: 04/24/2023
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 # Best practices for Power Apps with Business Central (preview)
 

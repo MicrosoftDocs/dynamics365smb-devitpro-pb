@@ -3,15 +3,13 @@ title: Multifactor authentication (MFA) for Business Central
 description: This article explains how to add multifactor authentication (MFA) when your solution uses Microsoft Entra ID as authentication mechanism.
 author: jswymer
 ms.custom: bap-template
-
 ms.topic: concept-article
 ms.author: jswymer
 ms.date: 11/13/2023
 ms.reviewer: jswymer
 ---
-# Setting up Multifactor Authentication (MFA) for Business Central  
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+# Setting up Multifactor Authentication (MFA) for Business Central  
 
 When using Microsoft Entra authentication with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], we recommend you take advantage of Microsoft Entra multifactor authentication (MFA). MFA further safeguards access to the application and data. It delivers single sign-on authentication through a range of verification options, like:
 

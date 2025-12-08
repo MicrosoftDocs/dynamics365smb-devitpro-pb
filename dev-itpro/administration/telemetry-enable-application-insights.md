@@ -5,8 +5,10 @@ ms.author: kepontop
 ms.topic: how-to
 author: jswymer
 ms.date: 07/23/2024
-ms.custom: bap-template
 ms.reviewer: jswymer
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Turn environment telemetry on or off

@@ -3,6 +3,7 @@ title: "Upgrading Version 15, 16, 17, or 18 Base Application to Version 20"
 description: Describes how to upgrade an unmodified Business Central 17, 18, or 19 to version 20
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.author: jswymer
 author: jswymer
