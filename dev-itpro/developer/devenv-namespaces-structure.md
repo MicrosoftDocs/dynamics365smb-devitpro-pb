@@ -9,13 +9,13 @@ ms.topic: concept-article
 ms.reviewer: solsen
 ---
 
-# Structuring namespaces in AL
+# Adopting namespaces in AL
 
 [!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
 Namespaces are used to organize code into logical groups and hierarchies and they ensure uniqueness in code names and allow reuse of names in different contexts. Namespaces also provide structure for the code base, making it easier to navigate and understand. For more information, see [Namespaces in AL](devenv-namespaces-overview.md).
 
-Several features and tools have been introduced to help you progressively adopt namespaces in your AL projects. These tools automate repetitive tasks and provide guidance to streamline the transition of your codebase to use namespaces effectively.
+Several features and tools are available to help you progressively adopt namespaces in your AL projects. These tools automate repetitive tasks and provide guidance to streamline the transition of your codebase to use namespaces effectively.
 
 ## Using a code action for automated namespace addition
 
@@ -51,34 +51,34 @@ If your `al.namespaceTemplate` is set to `"MyCompany.$(parentfolder)"`, the code
 - `MyCompany.Sales` for files in the `Sales` folder
 - `MyCompany.Inventory` for files in the `Inventory` folder
 
-If the template is not set and the file `SalesOrder.Codeunit.al` already defines a namespace, the code action will suggest the same namespace for the `SalesInvoice.Codeunit.al` file.
+If the template isn't set and the file `SalesOrder.Codeunit.al` already defines a namespace, the code action suggests the same namespace for the `SalesInvoice.Codeunit.al` file.
 
 ## Using a PowerShell script for bulk namespace addition
 
-For most scenarios, the code action described in the previous section in combination with the `al.namespaceTemplate` setting should suffice. However, for situations where you require more granular control that cannot be expressed through the `namespaceTemplate` configuration, we are sharing a PowerShell script that allows you to specify namespaces for multiple objects at a time, using your folder structure. Usually code is divided into folders according to some kind of structure, which is often what you would like to replicate to some degree in your namespaces. 
+For most scenarios, the code action described in the previous section in combination with the `al.namespaceTemplate` setting should suffice. However, for situations where you require more granular control that can't be expressed through the `namespaceTemplate` configuration, we're sharing a PowerShell script that allows you to specify namespaces for multiple objects at a time, using your folder structure. Usually code is divided into folders according to some kind of structure, which is often what you would like to replicate to some degree in your namespaces. 
 
-The script shown in this article, allows you to specify what namespace to assign all your AL objects within a folder. After you have run the script, you can then customize these a bit further. We recommend doing a commit once you have found the proper namespaces. You can then use the code action to apply `using` statements to your application.
+The script shown in this article, allows you to specify what namespace to assign all your AL objects within a folder. After you run the script, you can then customize these bit further. We recommend doing a commit once you have found the proper namespaces. You can then use the code action to apply `using` statements to your application.
 
 The script takes a .csv file as input, which specifies what namespace to give to each file within a folder. The .csv file should contain a folder name and a namespace, as illustrated in the following example:
 
 | Folder             | Namespace |
 |--------------------|-----------|
-| Azure AD Graph     | System.Azure.Identity|
-| Azure AD Licensing | System.Azure.Identity |
+| Microsoft Entra ID Graph     | System.Azure.Identity|
+| Microsoft Entra ID Licensing | System.Azure.Identity |
 | Data Archive       | System.DataAdministration |
 | Retention Policy   | System.DataAdministration |
 | SharePoint         | System.Integration.Sharepoint |
 
 ```csv
 Folder,Namespace
-Azure AD Graph,System.Azure.Identity
-Azure AD Licensing,System.Azure.Identity
+Microsoft Entra ID Graph,System.Azure.Identity
+Microsoft Entra ID Licensing,System.Azure.Identity
 Data Archive,System.DataAdministration
 Retention Policy,System.DataAdministration
 SharePoint,System.Integration.Sharepoint
 ```
 
-Copy and paste the following code lines into your preferred script editor, then save the file as a .ps1 file. Now, open PowerShell as an administrator, locate the folder of the script, and run the script with the following command: `.\<scriptname>.ps1`. The script will prompt you to specify the .csv file and the base path of your application. The script will then go through all the files in the base path and assign the namespaces specified in the .csv file based on the given folder names.
+Copy and paste the following code lines into your preferred script editor, then save the file as a .ps1 file. Now, open PowerShell as an administrator, locate the folder of the script, and run the script with the following command: `.\<scriptname>.ps1`. The script prompts you to specify the .csv file and the base path of your application. The script will then go through all the files in the base path and assign the namespaces specified in the .csv file based on the given folder names.
 
 ```powershell
 param
