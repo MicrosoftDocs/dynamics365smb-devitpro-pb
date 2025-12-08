@@ -1,1 +1,1 @@
-> **APPLIES TO:** Business Central 2026 release wave 1 and later
+> **APPLIES TO:** Business Central 2025 release wave 1 and later
