@@ -19,7 +19,9 @@ Several features and tools are available to help you progressively adopt namespa
 
 ## Using a code action for automated namespace addition
 
-A new code action automatically adds namespaces to AL files that are missing them, helping you quickly bring your codebase into compliance with CodeCop rule [AA0247](analyzers/codecop-aa0247).
+[!INCLUDE [2026-releasewave1-later](../includes/2026-releasewave1-later.md)]
+
+A code action automatically adds namespaces to AL files that are missing them, helping you quickly bring your codebase into compliance with CodeCop rule [AA0247](analyzers/codecop-aa0247).
 
 ### Namespace resolution logic
 
@@ -165,7 +167,9 @@ When adopting namespaces in your AL projects, consider the following best practi
 
 ## Support for fully qualified names
 
-Method overloads enable you to run application objects using their fully qualified names, making it easier to reference objects across different namespaces without ambiguity.
+[!INCLUDE [2026-releasewave1-later](../includes/2026-releasewave1-later.md)]
+
+Business Central 2026 release wave 1 introduces method overloads that accept fully qualified names for application objects. This enhancement simplifies the process of referencing objects across different namespaces, improving code clarity and maintainability.
 
 ### Running objects by fully qualified name
 
