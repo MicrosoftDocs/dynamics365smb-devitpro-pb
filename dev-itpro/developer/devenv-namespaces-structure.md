@@ -203,7 +203,9 @@ codeunit 10 MyCodeunit
 
 ### Runtime namespace properties
 
-Record and RecordRef instances now expose a `FullyQualifiedName` property, enabling you to determine the complete namespace path of an object at runtime.
+[!INCLUDE [2026-releasewave1-later](../includes/2026-releasewave1-later.md)]
+
+With 2026 release wave 1, the `Record` and `RecordRef` instances expose a `FullyQualifiedName` property, enabling you to determine the complete namespace path of an object at runtime.
 
 ```al
 codeunit 10 MyCodeunit
