@@ -61,8 +61,8 @@ In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], use built-in fea
 
 Data belonging to a single tenant is stored in an isolated database and is never mixed with data from other tenants. This setup ensures complete isolation of data in day-to-day use and in backup/restore scenarios. Furthermore, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses encryption to help protect tenant data in the following ways:
 
-- Data at rest is encrypted by using Transparent Data Encryption (TDE) and backup encryption.
-- Data backups are always encrypted.
+- Data at rest is encrypted by using Transparent Data Encryption (TDE) and backup encryption. Leran more in [Data Encryption at Rest](transparent-data-encryption.md).
+- Data backups are always encrypted. [](../administration/r)
 - All network traffic inside the service is encrypted by using industry-standard encryption protocols.
 
 ### Customer-managed encryption key
