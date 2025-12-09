@@ -49,7 +49,7 @@ Returns information about updates available for the specified environment.
         "ignoreUpdateWindow": false, // Indicates whether the update window for the environment may be ignored when running this update
         "rolloutStatus": "Active" // Indicates the rollout status of updates to this target version, e.g. "Active", "UnderMaintenance", or "Postponed"
       }
-      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA" or "Preview"
+      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview"
     },
     { 
       // Example for a target version that has been released but has not been selected as next update for the specified environment
@@ -63,7 +63,7 @@ Returns information about updates available for the specified environment.
         "ignoreUpdateWindow": false,
         "rolloutStatus": "Active"
       }
-      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA" or "Preview"
+      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview"
     },
     {     
       // Example for a target version that has not yet been released but has been selected as next update for the specified environment
@@ -74,7 +74,7 @@ Returns information about updates available for the specified environment.
         "month": 8, // Indicates the number of the month in which the target version is expected to be released
         "year": 2025 // Indicates the year in which the target version is expected to be released
       }
-      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA" or "Preview"
+      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview"
     },
     {
       // Example for a target version that has not yet been released and has not been selected as next update for the specified environment
@@ -85,7 +85,7 @@ Returns information about updates available for the specified environment.
         "month": 9,
         "year": 2025
       }
-      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA" or "Preview"
+      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview"
     }
   ]
 }
@@ -116,7 +116,7 @@ Example for selecting a target version that's available.
 ```JSON
 {
   "selected": true, // Optional. Must be true to select target version; setting this to false returns an error. Omitting it from the body changes scheduleDetails properties for the targetVersion without selecting it or for a targetVersion that is already selected
-"targetVersionType": "GA", // Indicates the type of the target version, i.e. "GA" or "Preview". Defaults to "GA" if property is omitted from body. "Preview" versions can only be scheduled for sandbox environments
+"targetVersionType": "GA", // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview". Defaults to "GA" if property is omitted from body. "Preview" and "EarlyAccessPreview" versions can only be scheduled for sandbox environments. Additionally, Partner Sandbox license is required to schedule update targetting "EarlyAccessPreview".
   "scheduleDetails": {
     "selectedDateTime": datetime // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
     "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment might be ignored for this update

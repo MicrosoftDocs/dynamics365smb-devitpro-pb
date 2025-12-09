@@ -4,7 +4,7 @@ description: "Set up key vault access for an AppSource app for AL-Go for Busines
 author: freddyk
 ms.date: 01/27/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ---

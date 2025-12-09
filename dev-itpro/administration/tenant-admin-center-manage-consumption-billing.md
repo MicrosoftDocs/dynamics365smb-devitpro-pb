@@ -5,7 +5,7 @@ author: jobulsin
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry, billing
-ms.date: 09/26/2025
+ms.date: 12/05/2025
 ms.author: jobulsin
 ms.reviewer: jswymer
 ---
@@ -23,6 +23,7 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 - [Payables Agent](/dynamics365/business-central/payables-agent)
 - [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
+- [Agent playground (preview)](../ai/ai-agent-playground.md)
 
 Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use the *Generative answer* and *Agent action* [event scenarios](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) to bill for consumption as they complete their tasks.
 
@@ -91,6 +92,10 @@ For example, assume that:
 - The agent receives 100 emails in a month, where each contains a valid vendor invoice in PDF format. Each such PDF attachment triggers an agent action at cost of 50 Copilot Credits. Assume that each invoice contains 3 invoice lines.
 
 The estimated monthly cost is calculated as: `[50 + (5 × 3)] x 100 = 6,500 Copilot Credits/month`
+
+### Agent playground billing (preview)
+
+Billing events for the Agent playground will be announced in a future update.
 
 ## Set up billing model
 

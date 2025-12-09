@@ -4,7 +4,7 @@ description: "Enable partner telemetry by adding Application Insights to AL-Go f
 author: freddyk
 ms.date: 12/30/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ms.custom: sfi-ropc-nochange

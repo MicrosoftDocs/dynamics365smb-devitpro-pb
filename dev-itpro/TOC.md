@@ -79,6 +79,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 27.2](whatsnew/whatsnew-update-27-2.md)
 ### [Update 27.1](whatsnew/whatsnew-update-27-1.md)
 ### [Update 27.0](whatsnew/whatsnew-update-27-0.md)
 ### [Update 26.5](whatsnew/whatsnew-update-26-5.md)
@@ -1502,10 +1503,22 @@
 ## Create agents that connect to Business Central
 ### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-
+## Agent playground (preview)
+### [Overview](ai/ai-agent-playground-landing-page.yml)
+### [Agent playground](ai/ai-agent-playground.md)
+### [Create and activate](ai/ai-agent-playground-create.md)
+### [Write effective instructions](ai/ai-agent-playground-effective-instructions.md)
+### [Instruction keywords](ai/ai-agent-playground-instruction-keywords.md)
+### [Integrate with the Tasks AL API](ai/ai-agent-playground-tasks-api.md)
+### [Set up permissions and profiles](ai/ai-agent-playground-permissions-profiles.md)
+### [Run a playground agent](ai/ai-agent-playground-run-agent.md)
+### [Iterate and manage](ai/ai-agent-playground-iterate.md)
+### [Export and import](ai/ai-agent-playground-export-import.md)
+### [Best practices](ai/ai-agent-playground-best-practices.md)
+### [Create a Sales Validation Agent](ai/ai-agent-playground-sales-validation.md)
+### [Transparency note: Business Central agent playground](ai/transparency-note-agent-playground.md)
 <!-- end integration with AI-->
 
-<!-- integration-->
 # Integration
 ## [Integration overview](developer/integration-overview.md)
 <!-- web service -->
@@ -2206,6 +2219,7 @@
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 ## [Transparency note: Semantic Metadata Search in Business Central](ai/transparency-note-semantic-metadata-search.md)  
+## [Transparency note: Business Central Agent Playground](ai/transparency-note-agent-playground.md)
 
 <!-- end upgrade -->
 <!--on-prem ends-->
