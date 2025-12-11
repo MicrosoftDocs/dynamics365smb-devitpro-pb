@@ -12,7 +12,7 @@ ms.collection: get-started
 
 # Debug MCP Server for AL
 
-The Debug MCP Server is an AI-powered debugging tool that allows you to analyze the runtime state of AL code during active debugging sessions using natural language queries. Unlike traditional debugging where you manually inspect variables and step through code, the Debug MCP Server enables GitHub Copilot to programmatically access stack frames, variables, source code, and breakpoints to help diagnose issues.
+The Debug Model Context Protocol (MCP) Server is an AI-powered debugging tool that allows you to analyze the runtime state of AL code during active debugging sessions using natural language queries. Unlike traditional debugging where you manually inspect variables and step through code, the Debug MCP Server enables GitHub Copilot to programmatically access stack frames, variables, source code, and breakpoints to help diagnose issues.
 
 ## When to use the Debug MCP Server
 
