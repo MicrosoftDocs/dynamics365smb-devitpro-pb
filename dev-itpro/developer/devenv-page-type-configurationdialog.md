@@ -1,6 +1,6 @@
 ---
 title: The ConfigurationDialog Page Type
-description: The ConfigurationDialog page type allows you to create configuration dialogs for setting up and managing settings in Business Central.
+description: Describes the ConfigurationDialog page type used to create configuration dialogs for setting up and managing agent application settings in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
@@ -11,12 +11,12 @@ ms.update-cycle: 180-days
 ms.reviewer: solsen
 ---
 
-# ConfigurationDialog page type
+# The ConfigurationDialog page type
 
 The `ConfigurationDialog` page type is a specialized page type that enables developers to create focused configuration dialogs for setting up and managing application settings, preferences, and configurations. This page type provides a streamlined user experience with a modal dialog interface, system actions for saving or canceling changes, and support for temporary data sources.
 
 > [!IMPORTANT]
-> The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)].
+> The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the agent playground capabilities in [Agent playground (preview)](ai-agent-playground.md).
 
 <!-->
 ## Snippet support
@@ -338,6 +338,7 @@ Use `InstructionalText` at both page and group levels to guide users:
 
 ## Related information
 
+[Agent playground (preview)](ai-agent-playground.md)  
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
 [PageType property](properties/devenv-pagetype-property.md)  
