@@ -18,7 +18,7 @@ The `ConfigurationDialog` page type is a specialized page type that enables deve
 > [!IMPORTANT]
 > The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the agent playground capabilities in [Agent playground (preview)](ai-agent-playground.md).
 
-<!-->
+<!--
 ## Snippet support
 
 Type the shortcut `tpage` and then choose the **Page of type Configuration Dialog**, which creates the basic layout for a `ConfigurationDialog` page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. -->
