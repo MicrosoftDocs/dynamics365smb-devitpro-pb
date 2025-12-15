@@ -154,11 +154,11 @@ As you refine your agent instructions, consider incorporating these advanced pat
 
 ##### When to request user intervention
 
-- The agent should request user intervention when it can't proceed due to missing data, ambiguous situations, or validation errors
-- Examples could be:  
-  - incomplete customer information  
-  - items aren't found in inventory  
-  - unexpected error messages
+The agent should request user intervention when it can't proceed due to missing data, ambiguous situations, or validation errors. Examples could be:
+
+- incomplete customer information  
+- items aren't found in inventory  
+- unexpected error messages
 
 ##### User review requirements
 

@@ -14,12 +14,16 @@ ms.update-cycle: 180-days
 
 # Export or import an agent configuration
 
+[This article is prerelease documentation and is subject to change.]
+
+[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+
 As part of iterating to improve your agent, you can export and import the agent's configuration from the playground agent to your local machine. The purpose of this feature is to allow you to back up your agent configuration, share it with others, or move it between different sandbox environments. The exported configuration includes:
 
-- **Identity**: The name and display name of an agent
-- **Instructions**: The detailed guidelines that define how the agent should behave.
-- **Permissions**: The access rights the agent requires to function correctly.
-- **Profile**: The name of the profile that should be used. The profile itself should be exported separately.
+- **Identity** - the name and display name of an agent
+- **Instructions** - the detailed guidelines that define how the agent should behave.
+- **Permissions** - the access rights the agent requires to function correctly.
+- **Profile** - the name of the profile that should be used. The profile itself should be exported separately.
 
 To export the configuration, do the following:
 
