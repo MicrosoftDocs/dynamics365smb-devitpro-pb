@@ -56,9 +56,12 @@ Once you have your initial draft, you can use AI tools to refine it according to
 
 Effective agent instructions follow a structured approach with three key components:
 
-- **Responsibilities** Define what the agent is accountable for. For example, handling customer reminders, processing credit memos, or managing sales quotes.
-- **Guidelines** Set rules that apply across all tasks. For example, always request user review before posting documents or sending external communications.
-- **Instructions** Provide step-by-step, ordered lists for each specific task, including substeps for clarity.
+- **Responsibilities**  
+Define what the agent is accountable for. For example, handling customer reminders, processing credit memos, or managing sales quotes.
+- **Guidelines**  
+Set rules that apply across all tasks. For example, always request user review before posting documents or sending external communications.
+- **Instructions**  
+Provide step-by-step, ordered lists for each specific task, including substeps for clarity.
 
 This framework ensures that agents act consistently, handle exceptions gracefully, and involve users when necessary.
 
