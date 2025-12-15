@@ -260,17 +260,19 @@ The following best practices can help you get the most out of the Debug MCP Serv
 
 ## Troubleshooting
 
+The following sections describe common issues and how to resolve them.
+
 ### "No debug session active"
 
-- Ensure you've hit a breakpoint or error
-- Code must be paused in debugger
-- Check AL Language extension is running
+- Ensure that you've hit a breakpoint or error
+- Code must be paused in the debugger
+- Check that the AL Language extension is running
 
 ### "Frame ID not found"
 
-- Frame IDs are 0-based
-- Check stack depth first with Get Stack Frames
-- Ensure frame still exists (hasn't returned)
+- Frame IDs are 0-based indexes
+- Check the stack depth first with **Get Stack Frames**
+- Ensure that the frame still exists (hasn't returned)
 
 ### "Source code unavailable"
 
@@ -280,9 +282,9 @@ The following best practices can help you get the most out of the Debug MCP Serv
 
 ### "Empty variable list"
 
-- Frame might have no local variables
+- The frame might not have any local variables
 - Check global variables in Frame 0
-- Procedure might use parameters only
+- The procedure might use parameters only
 
 ## Advanced techniques
 
@@ -290,25 +292,25 @@ The following best practices can help you get the most out of the Debug MCP Serv
 
 Track how a value changes through the call stack:
 
-*"Show me the MyParameter variable at frames 0, 1, and 2 to see how it was modified"*
+- `Show me the MyParameter variable at frames 0, 1, and 2 to see how it was modified`
 
 ### Error context gathering
 
 Get comprehensive error context:
 
-*"Get the stack frames, then show variables at the error frame and the source code of the calling method"*
+- `Get the stack frames, then show variables at the error frame and the source code of the calling method`
 
 ### Test failure root cause
 
 Understand test failures:
 
-*"This test is failing - use the Debug MCP Server to show me the full call stack from the test method to the error"*
+- `This test is failing - use the Debug MCP Server to show me the full call stack from the test method to the error`
 
 ### Performance investigation
 
 Check database statistics:
 
-*"Show me the database statistics at the current frame - how many SQL operations occurred?"*
+- `Show me the database statistics at the current frame - how many SQL operations occurred?`
 
 ## Related information
 
