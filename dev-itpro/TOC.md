@@ -563,6 +563,7 @@
 #### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Conditional breakpoints](developer/devenv-debugging-conditional-breakpoints.md)
+#### [Debug MCP Server for AL](developer/devenv-debug-mcp-server.md)
 #### [Attach and debug next](developer/devenv-attach-debug-next.md)
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
