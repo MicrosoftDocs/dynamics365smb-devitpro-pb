@@ -221,22 +221,22 @@ Special values include:
 The Debug MCP Server has the following limitations:
 
 - **Requires active debug session** - it can't analyze past executions
-- **Frame-based** - Limited to current call stack; can't inspect other sessions
-- **No time travel** - Can't go back to previous breakpoints
+- **Frame-based** - it's limited to current call stack; can't inspect other sessions
+- **No time travel** - it can't go back to previous breakpoints
 
 ## Comparison with traditional debugging
 
 |Feature|Debug MCP Server|Traditional Debugger|
 |-------|----------------|-------------------|
-|View call stack|✅ Programmatic access|✅ Visual panel|
-|Inspect variables|✅ All frames at once|✅ One frame at a time|
-|Step through code|❌|✅|
-|Watch variables|❌|✅ (watch expressions)|
-|AI analysis|✅ Automatic insights|❌|
-|Complex pattern detection|✅|❌|
-|Set breakpoints|✅ Programmatic|✅ Manual|
-|Export debug info|✅ Via Copilot|❌|
-|Multi-frame analysis|✅ Simultaneous|⚠️ Manual switching|
+|View call stack|Yes. Programmatic access|Yes. Visual panel|
+|Inspect variables|Yes. All frames at once|Yes. One frame at a time|
+|Step through code|No.|Yes.|
+|Watch variables|No.|Yes. (watch expressions)|
+|AI analysis|Yes. Automatic insights|No.|
+|Complex pattern detection|Yes.|No.|
+|Set breakpoints|Yes. Programmatic|Yes. Manual|
+|Export debug info|Yes. Via Copilot|No.|
+|Multi-frame analysis|Yes. Simultaneous|No. Manual switching|
 
 ## Best practices for AL developers
 
@@ -313,5 +313,7 @@ Check database statistics:
 ## Related information
 
 [Debugging in AL](devenv-debugging.md)  
+[Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md)  
 [Snapshot Debugging](devenv-snapshot-debugging.md)  
-[Attach and Debug Next](devenv-attach-debug-next.md)
+[Attach and Debug Next](devenv-attach-debug-next.md)  
+[Debug upgrade and install code](devenv-debug-upgrade-install-code.md)
