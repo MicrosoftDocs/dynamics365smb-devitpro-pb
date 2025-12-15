@@ -54,6 +54,17 @@ Version 25.0 introduced the **Subscription & Recurring Billing** extension. In v
 
 To upgrade the extension, you must synchronize the extension's database schema with the tenant database schema using a force sync operation. Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. For a list of renamed tables and fields, see [Renamed tables and fields](known-issues.md#renamed-tables-and-fields-in-subscription-billing-extension-cause-synch-errors-on-upgrade).
 
+## Performance and upgrade considerations for installed extensions
+
+Installing a large number of apps (extensions) in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can negatively impact performance and upgrade operations.
+
+[!INCLUDE [extensions-performance-impact](../includes/extensions-performance-impact.md)]
+
+Learn more:
+
+- [Unpublishing and Uninstalling Extensions](../developer/devenv-unpublish-and-uninstall-extension-v2.md)
+- [How Application Configurations Affect Performance](../performance/performance-application.md)
+
 ## Important deployment-related changes in version 23.0
 
 This section includes important deployment changes that are helpful to know when from coming from a version 22 and earlier deployment. These changes were introduced in version 23.0. These changes don't affect the upgrade process, just the deployment.

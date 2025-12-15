@@ -2,7 +2,7 @@
 title: Introduction to automation APIs
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
 author: SusanneWindfeldPedersen
-ms.date: 02/04/2025
+ms.date: 12/05/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -153,6 +153,9 @@ Removing the permissionSet from the user is done by issuing a [DELETE userPermis
 ### Get new users from Office 365
 
 To get new users from Office 365, two bound actions on the **users** endpoint can be used: `Microsoft.NAV.getNewUsersFromOffice365` and `Microsoft.NAV.getNewUsersFromOffice365Async`. Both actions retrieve new users or new user information from the Office 365 portal but former one is designed for delegated admins and it runs synchronous and latter one schedules a background job, which makes it asynchronous. `Microsoft.NAV.getNewUsersFromOffice365Async` returns a link to the scheduled job where you can track the progress. You can also track the progress by issuing a [GET scheduledJobs](api/dynamics_scheduledjob_get.md) on the users entity. Existing, unchanged users won't be updated with these actions.
+
+> [!NOTE]
+> The `getNewUsersFromOffice365` and `getNewUsersFromOffice365Async` APIs aren't supported when using service-to-service (S2S) authentication. This operation requires that users are assigned the **SUPER** permission set in all companies, which can't be assigned to application users. Learn more at [Using service-to-service (S2S) authentication](/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication).
 
 ## Handling tenant extensions
 

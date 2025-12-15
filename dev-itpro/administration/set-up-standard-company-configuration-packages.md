@@ -6,9 +6,10 @@ ms.topic: how-to
 ms.devlang: al
 ms.search.keywords:
 ms.search.form: 8610, 8613, 8614, 8615, 8620, 8632
-ms.date: 06/20/2025
+ms.date: 12/10/2025
 ms.author: jswymer
 ms.reviewer: jswymer
+ms.custom: bap-template
 ---
 # Set up company configuration packages
 
@@ -80,6 +81,10 @@ The process of creating and importing a configuration package involves the follo
 When you export and import configuration packages between two company databases, both databases need the same schema so all data transfers successfully. The databases should have the same table and field structure, in which the tables have the same primary keys and fields have the same IDs and data types. Your configuration package must use the same version of [!INCLUDE [prod_short](../includes/prod_short.md)] as the customer environments you want to apply it to.
 
 You can import a configuration package exported from a database with a different schema than the target database. However, any tables or fields in the configuration package that are missing in the target database aren't imported. Tables with different primary keys and fields with different data types will also not successfully import. For example, if the configuration pack includes table **50000, Customer** that has primary key **Code20** and the database to which you import the pack includes table **50000, Customer Bank Account** that has the primary key **Code20 + Code 20**, then data isn't imported.  
+
+### BLOB fields
+
+By default, multiline BLOB fields, such as the work description, use base64 encoding. You can import and export BLOB fields that use other types of encoding, but if you need to edit them, you must manually convert the text to base64 before you export to Excel. Afterward, make sure that the field uses the same encoding that's specified for the field in the app.
 
 ## Create a custom company configuration package
 
