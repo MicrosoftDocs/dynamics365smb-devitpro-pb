@@ -3,9 +3,9 @@ title: Security FAQ for Business Central
 description: Find useful links and other answers to frequently asked questions about security in Dynamics 365 Business Central.
 author: kennienp
 ms.topic: overview
-ms.date: 12/11/2024
+ms.date: 12/11/2025
 ms.author: kepontop
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ---
 
 # Security FAQ for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
@@ -20,18 +20,24 @@ Data belonging to a single tenant is stored in an isolated database and is never
 
 The latest penetration tests and security assessments can be found on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/viewpage/PenTest). 
 
-> [!NOTE]
-> To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account) and review and accept the Microsoft non-disclosure agreement for compliance materials.
+> To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account) and review and accept the Microsoft confidentiality agreement for compliance materials.
 
 ## Why does [!INCLUDE[prod_short](../developer/includes/prod_short.md)] still support RSA-CBC ciphers (TLS_ECDHE_RSA_with AES_128_CBC_SHA256 (0xC027) and TLS_ECDHE_RSA_with_AES_256_CBC_SHA384 (0xC028)), which are considered weaker?
 
-Microsoft weighs the relative risk and disruption to customer operations in choosing cipher suites to support. The RSA-CBC cipher suites haven't been broken yet. We've enabled them to ensure consistency across our services and products, and to support all customer configurations. However, they're at the bottom of the priority list. We deprecate these ciphers at the right time, based on the Microsoft Crypto Board's continuous assessment.
+Microsoft weighs the relative risk and disruption to customer operations in choosing cipher suites to support. The RSA-CBC cipher suites aren't broken yet. We enabled them to ensure consistency across our services and products, and to support all customer configurations. However, they're at the bottom of the priority list. We deprecate these ciphers at the right time, based on the Microsoft Crypto Board's continuous assessment.
 
 ## How do you handle security incidents?
 
 This page describes the definitions of a security incident and our customer notification Service Level Agreements (SLA): [Security incident management overview](/compliance/assurance/assurance-incident-management).
 
 Here you can learn about the Post Incident Review process: [Microsoft security incident management: Post-incident activity](/compliance/assurance/assurance-sim-post-incident-activity)
+
+<!--
+## How can I quickly review the latest changes to data without enabling the change log?
+
+You can use [!INCLUDE[prod_short](../developer/includes/prod_short.md)]’s analysis mode on any list page. Add the system fields (Created/Modified date and user) to the list (they can be hidden), then turn on analysis mode. With these fields present, the analysis mode (and Copilot) can help summarize recent changes to the data in that list&mdash;giving you a lightweight audit view.
+
+Learn more in [Analyze list page and query data using data analysis mode](/dynamics365/business-central/analysis-mode).-->
 
 ## Related information  
 
