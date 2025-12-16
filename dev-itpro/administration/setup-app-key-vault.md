@@ -79,33 +79,34 @@ Follow these instruction to install the moduels and provision the key reader app
 The next task is to grant the key vault reader application permission to read secrets from your key vaults. The steps in this task are done from the [Azure portal](https://portal.azure.com).
 
 1. Open the key vault in the portal.
-2. Select **Access policies**, then **Add Access Policy**.
-3. Set **Secret Permissions** to **Get**.
-4. Choose **Select principal**, and then in the pane on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV key vault Reader**. 
-5. Select **Add**, then **Save**.
+1. Select **Access policies**, then **Add Access Policy**.
+1. Set **Secret Permissions** to **Get**.
+1. Select **Select principal**, and then in the pane on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV key vault Reader**. 
+1. Select **Add**, then **Save**.
 
 Perhaps, if your key vault is using Azure Role-Based Access Control then the steps would be:
 1. Navigate to your Azure Key Vault: In the Azure portal, go to your Key Vault resource.
-2. **Access Control (IAM)**: Under the Settings menu, select **Access control (IAM)**.
-3. Add Role Assignment: Click on **+ Add** and choose **Add role assignment**.
-4. Select Role: On the Add role assignment page, search for **Key Vault Secrets User** and select it from the search results. This role allows the service identity to read secrets but not perform any other actions.
-5. Select Members: Go to the Members tab, select **User, group, or service principal**, then click on **+ Select members**. In the pane on the right, search for either the application (client) ID 7e97dcfb-bcdd-426e-8f0a-96439602627a or the display name Dynamics 365 Business Central ISV key vault Reader.
+1. **Access Control (IAM)**: Under the Settings menu, select **Access control (IAM)**.
+1. Add Role Assignment: Select **+ Add** and choose **Add role assignment**.
+1. Select Role: On the Add role assignment page, search for **Key Vault Secrets User** and select it from the search results. This role allows the service identity to read secrets but not perform any other actions.
+1. Select Members: Go to the Members tab, select **User, group, or service principal**, then select **+ Select members**. In the pane on the right, search for either the application (client) ID 7e97dcfb-bcdd-426e-8f0a-96439602627a or the display name Dynamics 365 Business Central ISV key vault Reader.
+
 ## Introduce the special Azure key vault secret
 
 Once your key vault is created, there are few steps that you should perform. Feel free to skip the first couple of them if you're just linking new app to an existing Azure key vault.
 
 1. Create **AllowedBusinessCentralAppIds** secret in your key vault. You can learn how to create a secret following this [guide](/azure/key-vault/secrets/quick-create-portal).
-2. Add your AppId or AppIds as content of the secret. If you're adding multiple appIds separate them by comma or semicolumn.
+1. Add your AppId or AppIds as content of the secret. If you're adding multiple appIds separate them by comma or semicolumn.
 Your secret creation screen should look similar to this:
  ![Create new key vault secret.](../developer/media/setup-app-key-vault-secret-creation.png "Creating AllowedBusinessCentralAppIds secret.")  
-3. If you're linking a new app to the existing Azure key vault, you have to create a new version of the **AllowedBusinessCentralAppIds** secret. When creating the new version make sure to correctly append the new appId. In order to do so you have to get the value of the secret from the existing version by clicking on the secret name then on **Current version** and then on **Show secret value**, copy this value and upon creating the new verion modify the secret value to be the existing value + ", [new appId]".
+1. If you're linking a new app to the existing Azure key vault, you have to create a new version of the **AllowedBusinessCentralAppIds** secret. When creating the new version make sure to correctly append the new appId. In order to do so you have to get the value of the secret from the existing version by clicking on the secret name then on **Current version** and then on **Show secret value**, copy this value and upon creating the new verion modify the secret value to be the existing value + ", [new appId]".
 
 ## Extra information
 
 1. The key vault URLs added to your `app.json` file should belong to the same Microsoft Entra Tenant.
-2. Microsoft registers the link between your AppSource app and Azure key vault upon submission of a new AppSource app version. Once this link is established, it can't be removed as this is considered breaking changes, and it might break existing installations of your AppSource app.
-3. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, this won't "deregister" the access to the key vault from this specific AppSource app. Once the registration is done, it's irreversible.
-4. If you're facing issues that are generic and don't give you actionable error messages, contact the AppSource Marketplace support.
+1. Microsoft registers the link between your AppSource app and Azure key vault upon submission of a new AppSource app version. Once this link is established, it can't be removed as this is considered breaking changes, and it might break existing installations of your AppSource app.
+1. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, this won't "deregister" the access to the key vault from this specific AppSource app. Once the registration is done, it's irreversible.
+1. If you're facing issues that are generic and don't give you actionable error messages, contact the AppSource Marketplace support.
 
 ## Related information  
 
