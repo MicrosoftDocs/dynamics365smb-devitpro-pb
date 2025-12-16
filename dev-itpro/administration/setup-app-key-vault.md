@@ -35,35 +35,39 @@ For using other methods, learn more in [Azure key vault Developer's Guide](/azur
 
 Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online solution is configured to use a Microsoft Entra application for reading key vault secrets. The application is called **Dynamics 365 Business Central ISV key vault Reader**. Microsoft manages the key vault reader application, however, there are a couple tasks that you have to do to enable it. First, the application must be provisioned on your Microsoft Entra tenant, as described here.
 
-To provision the key vault reader application, use the [Microsoft Entra ID PowerShell module](/powershell/module/azuread).
+To provision the key vault reader application, you use the [Microsoft.Graph.Applications module](/powershell/module/microsoft.graph.applications) and [Microsoft.Graph.Authentication module](/powershell/module/microsoft.graph.authentication). These modules are part of the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview).
+
+Follow these instruction to install the moduels and provision the key reader application:
 
 1. Open Windows PowerShell as an administrator.
-1. Install the Microsoft Entra ID PowerShell module.
+1. Run the following command to install the Microsoft.Graph.Applications and Microsoft.Graph.Authentication modules.
+
+   ```powershell
+   Install-Module Microsoft.Graph.Applications -Scope CurrentUser -Repository PSGallery -Force
+   ```
+
+   This command also installs the Microsoft.Graph.Authentication module because the Microsoft.Graph.Applications module depends on it.
+1. Run the following command to import the Microsoft Graph PowerShell modules.
 
     ```powershell
-    Install-Module AzureAD 
+    Import-Module Microsoft.Graph.Applications
     ```
 
-1. Import the Microsoft Entra ID module.
-
-    ```powershell
-    Import-Module AzureAD 
-    ```
-
+   This command also imports the Microsoft.Graph.Authentication module because the Microsoft.Graph.Applications module depends on it.
 1. Connect to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Microsoft Entra tenant.
 
     1. Run the following command:
 
        ```powershell
-       Connect-AzureAD 
+       Connect-MgGraph -Scopes "Application.ReadWrite.All"
        ```
 
     1. Provide your sign-in name and password when prompted.
 
-1. Create a Microsoft Entra service principal using the following command:
+1. Run the following command to create a Microsoft Entra service principal:
 
     ```powershell
-    New-AzureADServicePrincipal -AppId 7e97dcfb-bcdd-426e-8f0a-96439602627a
+    New-MgServicePrincipal -AppId "7e97dcfb-bcdd-426e-8f0a-96439602627a"
     ```
 
     `7e97dcfb-bcdd-426e-8f0a-96439602627a` is the Application (client) ID of Microsoft's centralized Microsoft Entra application.
