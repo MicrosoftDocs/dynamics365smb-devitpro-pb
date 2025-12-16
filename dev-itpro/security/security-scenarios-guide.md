@@ -204,7 +204,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 
    ```kusto
    SigninLogs
-   | where AppDisplayName contains "[!INCLUDE[prod_short](../developer/includes/prod_short.md)]"
+   | where AppDisplayName contains "Business Central"
    | where ResultType != 0  // Failed sign-ins
    | summarize FailureCount=count() by UserPrincipalName, IPAddress, bin(TimeGenerated, 10m)
    | where FailureCount > 5
@@ -645,10 +645,10 @@ Don't enable logging reactively after an incident. Implement comprehensive audit
 
 ## Related information
 
-[Security and Protection](security-and-protection.md)  
-[[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online Security](security-online.md)  
-[[!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises Security](security-onpremises.md)  
-[Security Tips for Business Users](security-users.md)  
+[Security and protection](security-and-protection.md)  
+[[!INCLUDE[prod_short](../developer/includes/prod_short.md)] online security](security-online.md)  
+[[!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises security](security-onpremises.md)  
+[Security tips for business users](security-users.md)  
 [Use Azure Service Tags](security-service-tags.md)  
-[Setting up Multifactor Authentication](multifactor-authentication.md)  
-[Manage Access to Environments](../administration/tenant-admin-center-manage-access.md)
+[Setting up multifactor authentication](multifactor-authentication.md)  
+[Manage access to environments](../administration/tenant-admin-center-manage-access.md)
