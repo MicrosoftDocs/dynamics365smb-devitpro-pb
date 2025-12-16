@@ -1,7 +1,7 @@
 ---
 title: Set up app key vaults for Business Central online
 description: Describes how to use an Azure key vault with Business Central extensions for online.
-ms.date: 01/06/2025
+ms.date: 12/16/2025
 ms.topic: how-to
 author: jswymer
 ms.reviewer: solsen
@@ -37,7 +37,7 @@ Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online solutio
 
 To provision the key vault reader application, you use the [Microsoft.Graph.Applications module](/powershell/module/microsoft.graph.applications) and [Microsoft.Graph.Authentication module](/powershell/module/microsoft.graph.authentication). These modules are part of the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview).
 
-Follow these instruction to install the moduels and provision the key reader application:
+Follow these instructions to install the modules and provision the key reader application:
 
 1. Open Windows PowerShell as an administrator.
 1. Run the following command to install the Microsoft.Graph.Applications and Microsoft.Graph.Authentication modules.
@@ -96,16 +96,18 @@ Perhaps, if your key vault is using Azure Role-Based Access Control then the ste
 Once your key vault is created, there are few steps that you should perform. Feel free to skip the first couple of them if you're just linking new app to an existing Azure key vault.
 
 1. Create **AllowedBusinessCentralAppIds** secret in your key vault. You can learn how to create a secret following this [guide](/azure/key-vault/secrets/quick-create-portal).
-1. Add your AppId or AppIds as content of the secret. If you're adding multiple appIds separate them by comma or semicolumn.
-Your secret creation screen should look similar to this:
- ![Create new key vault secret.](../developer/media/setup-app-key-vault-secret-creation.png "Creating AllowedBusinessCentralAppIds secret.")  
-1. If you're linking a new app to the existing Azure key vault, you have to create a new version of the **AllowedBusinessCentralAppIds** secret. When creating the new version make sure to correctly append the new appId. In order to do so you have to get the value of the secret from the existing version by clicking on the secret name then on **Current version** and then on **Show secret value**, copy this value and upon creating the new verion modify the secret value to be the existing value + ", [new appId]".
+1. Add your AppId or AppIds as content of the secret. If you're adding multiple appIds, separate them by comma or semicolumn.
+
+   Your secret creation screen should look similar to this image:
+
+   ![Create new key vault secret.](../developer/media/setup-app-key-vault-secret-creation.png "Creating AllowedBusinessCentralAppIds secret.")  
+1. If you're linking a new app to the existing Azure key vault, you have to create a new version of the **AllowedBusinessCentralAppIds** secret. When creating the new version, make sure to correctly append the new appId. In order to do so you have to get the value of the secret from the existing version by clicking on the secret name then on **Current version** and then on **Show secret value**, copy this value and upon creating the new version modify the secret value to be the existing value + ", [new appId]".
 
 ## Extra information
 
 1. The key vault URLs added to your `app.json` file should belong to the same Microsoft Entra Tenant.
 1. Microsoft registers the link between your AppSource app and Azure key vault upon submission of a new AppSource app version. Once this link is established, it can't be removed as this is considered breaking changes, and it might break existing installations of your AppSource app.
-1. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, this won't "deregister" the access to the key vault from this specific AppSource app. Once the registration is done, it's irreversible.
+1. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, these actions don't "deregister" the access to the key vault from this specific AppSource app. Once the registration is done, it's irreversible.
 1. If you're facing issues that are generic and don't give you actionable error messages, contact the AppSource Marketplace support.
 
 ## Related information  
