@@ -1,9 +1,9 @@
 ---
-title: Security Scenarios Guide by Persona
+title: Security scenarios Guide by Persona
 description: Practical security scenarios and best practices for partners, administrators, auditors, and developers working with Dynamics 365 Business Central.
 author: jswymer
 ms.topic: how-to
-ms.date: 11/20/2025
+ms.date: 12/16/2025
 ms.author: jswymer
 ms.reviewer: solsen
 ---
@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 This guide provides scenario-based security recommendations organized by persona. Each best practice includes context, solution, guidance, benefits, and trade-offs to help you make informed security decisions.
 
-## Partner Scenarios
+## Partner scenarios
 
 ### Ensure consultants don't have persistent access to all customers you manage
 
@@ -108,7 +108,7 @@ Your code acquires tokens automatically using the managed identity—no secrets 
 - Learning curve for FIC and managed identity concepts
 - Cost of Azure resources (minimal—Function Apps can run on consumption plan)
 
-## Administrator Scenarios
+## Administrator scenarios
 
 ### Restrict access to externals services from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls
 
@@ -371,7 +371,7 @@ Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-cen
 **Best practice:**  
 Start with high-risk, high-value transactions only. Expand separation of duties gradually based on risk assessment and user feedback. Balance control with operational efficiency.
 
-## Developer Scenarios
+## Developer scenarios
 
 ### Secure API calls from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extension to external services
 
@@ -457,97 +457,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 - Cost: Key Vault operations are metered
 - Error handling: Need robust retry logic for Key Vault unavailability
 
-### Secure inter-service communication using service tags
-
-**Context and problem:**  
-Your AppSource app or per-tenant extension (PTE) calls external Azure services. You want to minimize the attack surface and reduce traffic to your service by restricting it to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only.
-
-**Solution:**  
-Configure network access controls on Azure services using the `Dynamics365BusinessCentral` service tag.
-
-**Guidance:**
-
-1. For Azure SQL Database:
-   1. In [Azure portal](https://portal.azure.com), open your SQL logical server (not individual database), then select **Networking**.
-   1. Under **Public access**, clear the **Allow Azure services and resources to access this server** checkbox.
-   1. To restrict access to Business Central IP ranges, create a virtual network with service endpoint enabled, then add a virtual network rule that references the `Dynamics365BusinessCentral` service tag.
-   1. Test connection from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
-   1. Monitor denied connection attempts in Azure SQL audit logs. Learn more in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview).
-
-   Learn more in [Azure SQL Database firewall rules](/azure/azure-sql/database/firewall-configure).
-
-1. For Azure Key Vault:
-   1. In [Azure portal](https://portal.azure.com), open your key vault, and select **Networking** (under **Settings**).
-   1. Select **Allow public access from specific virtual networks and IP addresses** (or **Disable public access** if you want to block all public access).
-   1. To restrict access to Business Central IP ranges, add your virtual network with a service endpoint for Microsoft.KeyVault, which can then reference service tags at the network level.
-
-   Learn more in [Configure Azure Key Vault networking settings](/azure/key-vault/general/network-security).
-
-1. For custom APIs behind Azure Application Gateway, create web application firewall (WAF) and Network Security Group (NSG) rules:
-   1. In [Azure portal](https://portal.azure.com), go to your **Application Gateway** > **Web application firewall** (under Settings).
-   1. Select your **WAF Policy** (or create one).
-   1. Under **Custom rules**, add a new rule:
-      - **Rule type**: Match rule
-      - **Priority**: Set appropriately (lower numbers = higher priority)
-      - **Match conditions**:
-         - **Match variable**: RemoteAddr
-         - **Operation**: IPMatch
-         - **IP addresses or ranges**: Enter IP ranges from `Dynamics365BusinessCentral` service tag (retrieve using PowerShell from [Scenario C: Destination supports IP allowlisting only](#C)).
-      - **Action**: Allow
-
-      Learn more in [Create custom rules for Web Application Firewall v2](/azure/web-application-firewall/ag/create-custom-waf-rules).
-   1. Create a Network Security Group (NSG) rule for your backend subnet:
-      - **Source**: Service Tag - `Dynamics365BusinessCentral`
-      - **Destination**: Your backend subnet
-      - **Destination port**: 443
-      - **Action**: Allow
-
-      Learn more in [Create a network security group](/azure/virtual-network/manage-network-security-group).
-
-   > [!TIP]
-   > For global distribution scenarios requiring multi-region load balancing and content delivery network (CDN) capabilities, consider using [Azure Front Door](/azure/frontdoor/front-door-overview) with similar WAF custom rules. Learn more in [Configure IP restriction rules with WAF for Azure Front Door](/azure/web-application-firewall/afds/waf-front-door-rate-limit-configure).
-
-1. Automate IP range updates to detect when Microsoft changes the Business Central service tag IP addresses:
-   1. Create an Azure Automation runbook or scheduled script that runs daily.
-   1. Use the following PowerShell script to monitor for changes:
-
-   ```powershell
-   # Script to sync Business Central IP ranges to firewall
-   $serviceTags = Get-AzNetworkServiceTag -Location eastus2
-   $bcTag = $serviceTags.Values | Where-Object { $_.Name -eq "Dynamics365BusinessCentral" }
-   
-   if ($bcTag.Properties.ChangeNumber -ne $lastKnownChangeNumber) {
-       # Update firewall rules in Azure SQL, Key Vault, WAF policies, etc.
-       # Store new ChangeNumber for next comparison
-   }
-   ```
-
-   - Store the `ChangeNumber` in Azure Table Storage or Key Vault for persistence.
-   - Configure alerts to notify administrators when IP ranges are updated.
-   - Test the automation in a nonproduction environment first.
-
-   Learn more in [What is Azure Automation?](/azure/automation/overview).
-
-**Benefits:**
-
-- Automated IP management: Microsoft maintains service tag IP ranges
-- Reduced attack surface: Only Business Central can reach your services
-- Compliance: Network segmentation requirement
-- No manual IP updates: Service tags autoupdate
-
-**Trade-offs:**
-
-- Global scope: All Business Central environments worldwide included, not per-environment filtering
-- Azure-only: Service tags only work within Azure
-- Initial configuration: Requires understanding of Azure networking
-- Testing complexity: Difficult to test from development machines
-
-**Important limitation:**  
-Service tags represent ALL [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments globally. You can't restrict to a single environment or region. For higher granularity, consider extra application-level authentication (API keys, OAuth).
-
-Learn more in [Use Azure security service tags](security-service-tags.md).
-
-## Auditor Scenarios
+## Auditor scenarios
 
 ### Verify that appropriate security controls are in place
 
