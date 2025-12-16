@@ -1,6 +1,7 @@
 ---
 title: Set up app key vaults for Business Central online
-description: Describes how to use an Azure key vault with Business Central extensions for online.
+ms.author: jswymer
+description: Learn how to set up Azure key vaults for Business Central online extensions. Follow step-by-step instructions to securely manage secrets for your AppSource apps.
 ms.date: 12/16/2025
 ms.topic: how-to
 author: jswymer
@@ -85,6 +86,7 @@ The next task is to grant the key vault reader application permission to read se
 1. Select **Add**, then **Save**.
 
 Perhaps, if your key vault is using Azure Role-Based Access Control then the steps would be:
+
 1. Navigate to your Azure Key Vault: In the Azure portal, go to your Key Vault resource.
 1. **Access Control (IAM)**: Under the Settings menu, select **Access control (IAM)**.
 1. Add Role Assignment: Select **+ Add** and choose **Add role assignment**.
@@ -106,7 +108,7 @@ Once your key vault is created, there are few steps that you should perform. Fee
 ## Extra information
 
 1. The key vault URLs added to your `app.json` file should belong to the same Microsoft Entra Tenant.
-1. Microsoft registers the link between your AppSource app and Azure key vault upon submission of a new AppSource app version. Once this link is established, it can't be removed as this is considered breaking changes, and it might break existing installations of your AppSource app.
+1. Microsoft registers the link between your AppSource app and Azure key vault upon submission of a new AppSource app version. Once this link is established, it can't be removed because it's considered to be a breaking change, and it might break existing installations of your AppSource app.
 1. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, these actions don't "deregister" the access to the key vault from this specific AppSource app. Once the registration is done, it's irreversible.
 1. If you're facing issues that are generic and don't give you actionable error messages, contact the AppSource Marketplace support.
 
