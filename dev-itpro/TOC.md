@@ -862,7 +862,7 @@
 ####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
 ####### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
 ###### ConfigurationDialog pages
-####### [ConfigurationDialog page type](developer/devenv-page-type-configurationdialog.md)
+####### [ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
