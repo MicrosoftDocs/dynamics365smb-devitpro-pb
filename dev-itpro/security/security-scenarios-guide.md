@@ -460,7 +460,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 ### Secure inter-service communication using service tags
 
 **Context and problem:**  
-Your AppSource app or per-tenant extension (PTE) calls external Azure services. You want to minimize the attack surgace and reduce traffic to your service by restricting it to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only.
+Your AppSource app or per-tenant extension (PTE) calls external Azure services. You want to minimize the attack surface and reduce traffic to your service by restricting it to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only.
 
 **Solution:**  
 Configure network access controls on Azure services using the `Dynamics365BusinessCentral` service tag.
