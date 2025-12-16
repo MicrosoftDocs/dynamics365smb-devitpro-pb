@@ -13,7 +13,11 @@ ms.reviewer: solsen
 
 # The ConfigurationDialog page type
 
-The `ConfigurationDialog` page type is a specialized page type that enables developers to create focused configuration dialogs for setting up and managing application settings, preferences, and configurations. This page type provides a streamlined user experience with a modal dialog interface, system actions for saving or canceling changes, and support for temporary data sources.
+[This article is prerelease documentation and is subject to change.]
+
+[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+
+The `ConfigurationDialog` page type is a specialized page type that enables developers to create focused configuration dialogs for setting up and managing application settings, preferences, and configurations for agents. This page type provides a streamlined user experience with a modal dialog interface, system actions for saving or canceling changes, and support for temporary data sources.
 
 > [!IMPORTANT]
 > The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the agent playground capabilities in [Agent playground (preview)](../ai/ai-agent-playground.md).
