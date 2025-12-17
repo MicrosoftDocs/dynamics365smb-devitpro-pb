@@ -207,11 +207,11 @@ begin
 end;
 ```
 
-## Writing AL code specific to Agent sessions
+## Writing AL code specific to agent sessions
 
 In some use cases, agent-specific AL code needs to be written. Examples of these are:
 
-- Adding specific filtering on a page based on the agent task running - eg. filter the sales orders only to the customer mentioned in the task message
+- Adding specific filtering on a page based on the agent task running, for example filter the sales orders only to the customer mentioned in the task message
 - Hiding or showing parts of the UI dynamically to agents
 - Showing dialogs with guidance for the agent
 - Running validation events after agent actions
@@ -237,7 +237,6 @@ If the code needs to run only for a specific agent instance, the `UserID()` func
 A more performant pattern to subscribe multiple events only for the duration of a specific agent's tasks is to use the `Agent Session` codeunit to bind events during the login process of agent sessions.
 
 ```al
-
 namespace CustomAgentEvents;
 
 using System.Agents;
