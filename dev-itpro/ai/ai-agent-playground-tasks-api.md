@@ -207,6 +207,113 @@ begin
 end;
 ```
 
+## Writing AL code specific to Agent sessions
+
+In some use cases, agent-specific AL code needs to be written. Examples of these are:
+
+- Adding specific filtering on a page based on the agent task running - eg. filter the sales orders only to the customer mentioned in the task message
+- Hiding or showing parts of the UI dynamically to agents
+- Showing dialogs with guidance for the agent
+- Running validation events after agent actions
+ 
+The `Agent Session` codeunit can be used for this purpose.
+
+```al
+local procedure DoAgentWork()
+var
+    AgentSession: Codeunit "Agent Session";
+    AgentMetadataProvider: Enum "Agent Metadata Provider";
+begin
+    if not AgentSession.IsAgentSession(AgentMetadataProvider::"Custom Agent") then
+        exit;
+
+    // Agent-specific code goes here...
+    Message('Running in an Agent session!');
+end;
+```
+
+If the code needs to run only for a specific agent instance, the `UserID()` function can be used to retrieve the currently running agent.
+
+A more performant pattern to subscribe multiple events only for the duration of a specific agent's tasks is to use the `Agent Session` codeunit to bind events during the login process of agent sessions.
+
+```al
+
+namespace CustomAgentEvents;
+
+using System.Agents;
+using System.Agents.Playground.CustomAgent;
+using System.Environment.Configuration;
+using System.Security.AccessControl;
+
+codeunit 50102 "Custom Agent Session Events"
+{
+    Access = Internal;
+    InherentEntitlements = X;
+    InherentPermissions = X;
+    SingleInstance = true;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", OnAfterInitialization, '', false, false)]
+    local procedure RegisterSubscribersOnAfterInitialization()
+    begin
+        RegisterAgentEvents();
+    end;
+
+    local procedure RegisterAgentEvents()
+    var
+        AgentTaskID: BigInteger;
+        CustomAgent: Codeunit "Custom Agent";
+        AgentSession: Codeunit "Agent Session";
+        AgentMetadataProvider: Enum "Agent Metadata Provider";
+    begin
+        if not AgentSession.IsAgentSession(AgentMetadataProvider) then
+            exit;
+
+        SetupCustomEvents(AgentTaskID);
+    end;
+
+    local procedure SetupCustomEvents(AgentTaskID: BigInteger)
+    begin
+        GlobalCustomAgentEvents.SetAgentTaskID(AgentTaskID);
+        if BindSubscription(GlobalCustomAgentEvents) then;
+    end;
+
+    var
+        GlobalCustomAgentEvents: Codeunit "Custom Agent Events";
+}
+```
+
+Then a subscriber can be defined like the following to run code only for that specific agent task:
+
+```al
+codeunit 50101 "Custom Agent Events"
+{
+    Access = Internal;
+    InherentEntitlements = X;
+    InherentPermissions = X;
+    SingleInstance = true;
+
+    internal procedure SetAgentTaskID(NewAgentTaskID: BigInteger)
+    begin
+        AgentTaskID := NewAgentTaskID;
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Sales Header", OnAfterInsertEvent, '', false, false)]
+    local procedure OnAfterInsertSalesHeader(var Rec: Record "Sales Header")
+    begin
+        EncourageAgent();
+    end;
+
+    procedure EncourageAgent()
+    begin
+        Message('Keep up the great work, Agent!');
+    end;
+
+    var
+        AgentTaskID: BigInteger;
+}
+```
+
+
 ## Best practices for API integration
 
 - **Use meaningful external IDs**: Set unique external IDs that connect tasks to your business records (for example email thread IDs)
