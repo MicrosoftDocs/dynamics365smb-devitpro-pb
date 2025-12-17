@@ -34,19 +34,14 @@ The `ConfigurationDialog` page type has some specific properties that characteri
 |Property|Description|
 |--------|-----------|
 |`PageType` | The `PageType` property must be set to `ConfigurationDialog` for this specific page type. Learn more in [properties/devenv-pagetype-property.md](properties/devenv-pagetype-property.md).|
-|`SourceTableTemporary` | Often set to `true` to use a temporary table as the data source, allowing you to collect settings before committing them to the database. Learn more in [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)|
-|`Extensible` | Typically set to `false` to ensure the configuration experience remains consistent and controlled. Learn more in [Extensible property](properties/devenv-extensible-property.md)|
+|`SourceTableTemporary` | Must be set to `true` to use a temporary table as the data source, allowing you to collect settings before committing them to the database. Learn more in [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)|
+|`Extensible` | Must be set to `false` for this page type. Learn more in [Extensible property](properties/devenv-extensible-property.md)|
 |`InstructionalText` | Provides guidance to users about what the configuration dialog is for and what they need to do. Learn more in [InstructionalText property](properties/devenv-instructionaltext-property.md)|
 |`RefreshOnActivate` | When set to `true`, the page refreshes its data when it becomes active again after a user navigates away. Learn more in [RefreshOnActivate property](properties/devenv-refreshonactivate-property.md)|
 
 ## Layout areas of the ConfigurationDialog page type
 
-The `ConfigurationDialog` page type uses standard layout areas to organize configuration options:
-
-|Area |Description|
-|-----|-----------|
-|`Content` | The main area containing fields, groups, and parts for configuration options.|
-|`FactBoxes` | Optional area for displaying related information or context.|
+The `ConfigurationDialog` page type uses the `Content`, which gives a main area that contains fields, groups, and parts for configuration options.
 
 ### Groups and fields
 
