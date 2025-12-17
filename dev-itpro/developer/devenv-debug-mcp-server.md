@@ -1,6 +1,6 @@
 ---
-title: Debug MCP Server for AL
-description: Learn how to use the Debug MCP Server to analyze runtime state during debugging sessions with AI-powered insights in AL.
+title: Troubleshooting MCP Server for AL
+description: Learn how to use the Troubleshooting MCP Server to analyze runtime state during debugging sessions with AI-powered insights in AL.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 12/11/2025
@@ -10,13 +10,13 @@ ms.author: solsen
 ms.collection: get-started
 ---
 
-# Debug MCP Server for AL
+# Troubleshooting MCP Server for AL
 
-The Debug Model Context Protocol (MCP) Server is an AI-powered debugging tool that allows you to analyze the runtime state of AL code during active debugging sessions using natural language queries. Unlike traditional debugging where you manually inspect variables and step through code, the Debug MCP Server enables GitHub Copilot to programmatically access stack frames, variables, source code, and breakpoints to help diagnose issues.
+The Troubleshooting Model Context Protocol (MCP) Server is an AI-powered debugging tool that allows you to analyze the runtime state of AL code during active debugging sessions using natural language queries. Unlike traditional debugging where you manually inspect variables and step through code, the Troubleshooting MCP Server enables GitHub Copilot to programmatically access stack frames, variables, source code, and breakpoints to help diagnose issues.
 
-## When to use the Debug MCP Server
+## When to use the Troubleshooting MCP Server
 
-Use the Debug MCP Server when you want Copilot to help analyze:
+Use the Troubleshooting MCP Server when you want Copilot to help analyze:
 
 - **Runtime errors** - Understand how execution reached an error point
 - **Complex call stacks** - Trace method calls across multiple application objects
@@ -39,9 +39,9 @@ Traditional debugging is still better for:
 
 ## Available tools
 
-The Debug MCP Server is only available when debugging. In Visual Studio Code, you can see the available tools by clicking the tools window in the Copilot Chat.
+The Troubleshooting MCP Server is only available when debugging. In Visual Studio Code, you can see the available tools by clicking the tools window in the Copilot Chat.
 
-The Debug MCP Server supports four tools, which are described in the following sections.
+The Troubleshooting MCP Server supports four tools, which are described in the following sections.
 
 ### Get stack frames
 
@@ -134,12 +134,12 @@ Use the tool for:
 
 ## Tips and best practices
 
-In the next sections, you can find tips and best practices for using the Debug MCP Server effectively.
+In the next sections, you can find tips and best practices for using the Troubleshooting MCP Server effectively.
 
 ### Be specific in your requests
 
 - **Don't ask** "What's wrong with my code?"
-- **Ask** "Analyze how we got to this error using the Debug MCP Server" instead.
+- **Ask** "Analyze how we got to this error using the Troubleshooting MCP Server" instead.
 
 ### Reference stack frame numbers
 
@@ -156,7 +156,7 @@ Ask Copilot to gather comprehensive information, such as:
 
 ### Use for complex scenarios
 
-The Debug MCP Server works well for complex debugging scenarios, such as:
+The Troubleshooting MCP Server works well for complex debugging scenarios, such as:
 
 - Deep call stacks (5+ frames)
 - Multiple codeunit interactions
@@ -165,7 +165,7 @@ The Debug MCP Server works well for complex debugging scenarios, such as:
 
 ### Verify Copilot's findings
 
-The Debug MCP Server provides raw data, but you should always verify the findings by checking:
+The Troubleshooting MCP Server provides raw data, but you should always verify the findings by checking:
 
 - Variable values match your expectations
 - Frame sequence makes logical sense
@@ -173,11 +173,11 @@ The Debug MCP Server provides raw data, but you should always verify the finding
 
 ## Common use cases
 
-Some common use cases for the Debug MCP Server are described in the next sections.
+Some common use cases for the Troubleshooting MCP Server are described in the next sections.
 
 ### Debugging test failures
 
-Ask: `Use the Debug MCP Server to show me the call stack and variables when this test fails`
+Ask: `Use the Troubleshooting MCP Server to show me the call stack and variables when this test fails`
 
 ### Understanding error origins
 
@@ -204,7 +204,7 @@ Frame IDs represent the call stack position, refer to the following table for de
 
 ## Variable display format
 
-In the Debug MCP Server, variables are shown with the following properties:
+In the Troubleshooting MCP Server, variables are shown with the following properties:
 
 - **Name** - Variable identifier
 - **Value** - Current value (or `<Uninitialized>`)
@@ -218,7 +218,7 @@ Special values include:
 
 ## Limitations
 
-The Debug MCP Server has the following limitations:
+The Troubleshooting MCP Server has the following limitations:
 
 - **Requires active debug session** - it can't analyze past executions
 - **Frame-based** - it's limited to current call stack; can't inspect other sessions
@@ -226,7 +226,7 @@ The Debug MCP Server has the following limitations:
 
 ## Comparison with traditional debugging
 
-|Feature|Debug MCP Server|Traditional Debugger|
+|Feature|Troubleshooting MCP Server|Traditional Debugger|
 |-------|----------------|-------------------|
 |View call stack|Yes. Programmatic access|Yes. Visual panel|
 |Inspect variables|Yes. All frames at once|Yes. One frame at a time|
@@ -240,11 +240,11 @@ The Debug MCP Server has the following limitations:
 
 ## Best practices for AL developers
 
-The following best practices can help you get the most out of the Debug MCP Server.
+The following best practices can help you get the most out of the Troubleshooting MCP Server.
 
 ### Do
 
-- Use Debug MCP Server for complex call stack analysis  
+- Use Troubleshooting MCP Server for complex call stack analysis  
 - Ask Copilot to correlate variables across multiple frames  
 - Request pattern detection in error scenarios  
 - Get AI insights on why errors occurred  
@@ -304,7 +304,7 @@ Get comprehensive error context:
 
 Understand test failures:
 
-- `This test is failing - use the Debug MCP Server to show me the full call stack from the test method to the error`
+- `This test is failing - use the Troubleshooting MCP Server to show me the full call stack from the test method to the error`
 
 ### Performance investigation
 
