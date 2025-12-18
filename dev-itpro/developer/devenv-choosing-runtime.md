@@ -25,7 +25,16 @@ The most recent runtimes are listed here. For a full list of available runtimes,
 |`15.0`         |Business Central 2025 release wave 1|26.0|
 |`16.0`         |Business Central 2025 release wave 2|27.0|
 
-<!--
+## Setting the runtime version
+
+Selecting the runtime depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works to ensure compatibility. This prevents you from inadvertently using features that aren't supported on the older server.
+
+If an earlier runtime is picked, it can be good idea to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime can detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime. Though it might not be possible to refactor code for a future runtime, while using an older runtime, staying on top of these changes may help making design decisions early on.
+
+## Historical runtime versions
+
+|Runtime version|Shipped with                       |Internal version|
+|---------------|-----------------------------------|----------------|  
 |`1.0`          |Business Central April 2018 Release|12.0|
 |`2.0`          |Business Central Fall '18 Release  |13.0|
 |`3.0`          |Business Central Spring '19 Release|14.0|
@@ -46,13 +55,6 @@ The most recent runtimes are listed here. For a full list of available runtimes,
 |`10.0`         |Business Central 2022 release wave 2|21.0|
 |`11.0`         |Business Central 2023 release wave 1|22.0|
 |`12.0`         |Business Central 2023 release wave 2|23.0|
--->
-
-## Setting the runtime version
-
-Selecting the runtime depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works to ensure compatibility. This prevents you from inadvertently using features that aren't supported on the older server.
-
-If an earlier runtime is picked, it can be good idea to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime can detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime. Though it might not be possible to refactor code for a future runtime, while using an older runtime, staying on top of these changes may help making design decisions early on.
 
 ## Related information
 
