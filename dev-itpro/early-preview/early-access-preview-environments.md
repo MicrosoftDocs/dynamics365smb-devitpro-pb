@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article introduces early access preview environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. You can spin up an early access preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The environments in early access preview are provided as-is and are subject to change.
+This article introduces early access preview environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. You can spin up an early access preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they're generally available. The environments in early access preview are provided as-is and are subject to change.
 
 Early access preview environments are only available for the United States, Great Britain, and Germany.
 
@@ -42,7 +42,7 @@ Key capabilities include:
 - Template-based inspections: Use quality inspection templates with customizable measurements and pass/fail criteria.
 - Lot blocking and grading: Automatically block or grade inventory lots based on test results.
 
-This early access feature is supported by an early release of the documentation for it. Like the features themselves, the documentation is also subject to change. To access the content, go to [Quality management overview](/dynamics365/business-central/qms-overview.md).
+This early access feature comes with an early release of the documentation for it. Like the features themselves, the documentation is subject to change. To access the content, go to [Quality management overview](/dynamics365/business-central/qms-overview.md).
 
 ## Related information
 
