@@ -153,5 +153,9 @@ reportextension 50136 MyCustRepExtension extends "Customer - List"
 
 ## Related information
 
-[Getting started with AL](../../devenv-get-started.md)  
+[OnInitReport (report) trigger](devenv-oninitreport-report-trigger.md)  
+[OnPreReport (report) trigger](devenv-onprereport-report-trigger.md)  
+[OnPostReport (report) trigger](devenv-onpostreport-report-trigger.md)  
+[Report triggers and runtime operations](../../devenv-report-triggers.md)  
+[Get started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)  
