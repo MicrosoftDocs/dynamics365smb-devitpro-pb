@@ -13,9 +13,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article introduces early access preview environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. You can spin up an early access preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The environments in early access preview provided as-is and are subject to change.
+This article introduces early access preview environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. You can spin up an early access preview sandbox of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online to test new features and provide feedback before they are generally available. The environments in early access preview are provided as-is and are subject to change.
 
-Early access preview environments are available for US, GB, and DE countries only.
+Early access preview environments are only available for the United States, Great Britain, and Germany.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -30,13 +30,19 @@ Authoring guidance:
 
 -->
 
-## Add feature title
+## Quality Management features
 
-Description of feature 1 including; what it is, who it's for, and any prerequisites or limitations. Are there any steps to enable or configure the feature, if yes, provide them here.
+Quality Management provides comprehensive quality control capabilities throughout business operations. The features help you maintain product quality standards by creating quality inspections at key points for purchase receipts, production and assembly output, and warehouse operations.
 
-## Add feature title 2
+Key capabilities include:
 
-Description of feature 2 including; what it is, who it's for, and any prerequisites or limitations. Are there any steps to enable or configure the feature, if yes, provide them here.
+- Automated test creation: Automatically create quality inspections when you receive purchase orders, post production and assembly output, or process warehouse movements.
+- Manual test creation: Create quality tests on-demand for reactive testing scenarios.
+- Scheduled test creation: Create quality tests for regular, or periodic inspections using the job queue.
+- Template-based inspections: Use quality inspection templates with customizable measurements and pass/fail criteria.
+- Lot blocking and grading: Automatically block or grade inventory lots based on test results.
+
+This early access feature is supported by an early release of the documentation for it. Like the features themselves, the documentation is also subject to change. To access the content, go to [Quality management overview](/dynamics365/business-central/qms-overview.md).
 
 ## Related information
 
