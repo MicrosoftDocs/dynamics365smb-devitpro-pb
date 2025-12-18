@@ -39,7 +39,7 @@ Traditional debugging is still better for:
 
 ## Available tools
 
-The Troubleshooting MCP Server is *only available when debugging*. When you start a debugging session and pause at a breakpoint or error, the Troubleshooting MCP Server automatically becomes available to GitHub Copilot. The Troubleshooting MCP Server should automatically be used when you ask Copilot questions related to debugging. If you want to ensure that the Troubleshooting MCP Server is being used, you can explicitly reference it in your questions.
+The Troubleshooting MCP Server is *only available when debugging*. When you start a debugging session and pause at a breakpoint or error, the Troubleshooting MCP Server automatically becomes available to GitHub Copilot. The Troubleshooting MCP Server should automatically be used when you ask Copilot questions related to debugging. If you want to ensure that the Troubleshooting MCP Server is being used, you can explicitly reference it in your questions. For example: `Use the Troubleshooting MCP Server to show me the call stack and variables when this error occurred.`
 
 ### To verify the Troubleshooting MCP Server is available
 
