@@ -39,7 +39,14 @@ Traditional debugging is still better for:
 
 ## Available tools
 
-The Troubleshooting MCP Server is only available when debugging. In Visual Studio Code, you can see the available tools by clicking the tools window in the Copilot Chat.
+The Troubleshooting MCP Server is *only available when debugging*. When you start a debugging session and pause at a breakpoint or error, the Troubleshooting MCP Server automatically becomes available to GitHub Copilot. The Troubleshooting MCP Server should automatically be used when you ask Copilot questions related to debugging. If you want to ensure that the Troubleshooting MCP Server is being used, you can explicitly reference it in your questions.
+
+### To verify the Troubleshooting MCP Server is available
+
+- In Visual Studio Code, click the **tools icon** in the Copilot Chat window to see available MCP servers and their tools
+- Look for the Troubleshooting MCP Server and its four tools listed under it
+
+### Troubleshooting MCP Server tools
 
 The Troubleshooting MCP Server supports four tools, which are described in the following sections.
 
