@@ -12,8 +12,6 @@ ms.reviewer: solsen
 
 # OpenAPI specification for Dynamics 365 Business Central (v1.0)
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 Standard APIs for Business Central are available as an [OpenAPI Specification (OAS)](https://swagger.io/specification/). OAS defines a standard interface to RESTful APIs, providing a uniform access to APIs and documentation.  
 
 ## Download Business Central OpenAPI specification

@@ -3,9 +3,6 @@ title: "ImportLangModule"
 author: edupont04
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: e4d673a7-dbe3-43e7-bb88-baa4fd0047e6
-caps.latest.revision: 9
-ms.custom: sfi-ropc-blocked
 ---
 # ImportLangModule
 Imports a language module from a file to the specified [!INCLUDE[navnow](includes/navnow_md.md)] database.  
@@ -13,7 +10,7 @@ Imports a language module from a file to the specified [!INCLUDE[navnow](include
 ## Syntax  
 
 ```  
-finsql.exe command=importlangmodule, file=<importfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=importlangmodule, file=<importfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [pswd] [ntauthentication=<yes|no|1|0>]  
 ```  
 
 #### Parameters  
@@ -95,9 +92,6 @@ finsql.exe command=importlangmodule, file=<importfile>, [servername=<server>,] [
 
  For more information about database users and permissions, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
 
- *password*  
-
- The password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.  
 
  *ntauthentication*  
 

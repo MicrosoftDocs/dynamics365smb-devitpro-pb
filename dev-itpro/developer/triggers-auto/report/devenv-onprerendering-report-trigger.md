@@ -1,8 +1,8 @@
 ---
 title: "OnPreRendering (Report) trigger"
-description: "Runs when a report dataset has been finalized and before the output artifact has been rendered in an extension object."
+description: "Runs when a report dataset has been finalized and before the output artifact has been rendered."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -53,7 +53,9 @@ Learn more in [Attach files, append, and protect report PDFs in AL](../../devenv
 
 ## Example
 
-> [!TIP]
+> [!NOTE]
+> This example applies to [!INCLUDE [prod_short](../../includes/prod_short.md)] on-premises only. For more detailed examples, go to [Business Central Tech Samples on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments).
+>
 > Sample code that shows how use the `OnPreRendering` report trigger to manage PDF attachments for electronic invoicing in [!INCLUDE [prod_short](../../includes/prod_short.md)] is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments) repository.
 
 The following AL code example create a report extension object that modifies the **Customer - List** report PDF output to include an attached file and append it with the **Customer - Top 10 List** report. In the OnPreRendering trigger of the report extension, the code:

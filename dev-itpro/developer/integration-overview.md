@@ -5,7 +5,7 @@ author: kennienp
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
-ms.date: 10/25/2024
+ms.date: 10/19/2025
 ---
 
 # Integration overview for Business Central (for architects and developers)
@@ -27,7 +27,7 @@ Most integrations (except for a few built-in integrations) to and from [!INCLUDE
 
 The recommended way to use web services for [!INCLUDE[prod_short](../includes/prod_short.md)] is by using the REST API stack. 
 
-For more information, see [Web services overview](../webservices/web-services.md).
+Learn more in [Web services overview](../webservices/web-services.md).
 
 ## How to explore and develop against Business Central REST APIs
 
@@ -54,7 +54,7 @@ For more information on how to explore and develop against APIs, best practices,
 - [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
 - [!INCLUDE[m365_word](includes/m365-word-name.md)]
 
-For more information, see [Integrating Business Central with Microsoft 365](m365-integration-overview.md). 
+Learn more in [Integrating Business Central with Microsoft 365](m365-integration-overview.md). 
 
 ## Integrating Business Central with Power Platform
 
@@ -68,8 +68,9 @@ For more information, see [Integrating Business Central with Microsoft 365](m365
 - Power Automate
 - Power BI
 - Power Pages
+- Copilot Studio
 
-For more information, see [Integrating Business Central with Power Platform](../powerplatform/powerplatform-integration-overview.md).
+Learn more in [Integrating Business Central with Power Platform](../powerplatform/powerplatform-integration-overview.md).
 
 ## Built-in: Integrating Business Central with Dataverse
 
@@ -82,25 +83,25 @@ For more information, see [Integrating Business Central with Power Platform](../
 
 :::image type="content" source="media/connect-to-dataverse.svg" alt-text="Shows the four interactions of DataVerse with Business Central" lightbox="media/connect-to-dataverse.svg":::
 
-For more information, see [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md).
+Learn more in [Integrating Business Central with Microsoft Dataverse](dataverse-integration-overview.md).
 
 ## Built-in: Integrating Business Central with Dynamics 365 Sales
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamics 365 Sales by first setting up integration to [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] and then doing more setup from the [!INCLUDE[prod_short](../includes/prod_short.md)] application. Integrating to Dynamics 365 Sales lets users view information from [!INCLUDE[prod_short](../includes/prod_short.md)] while they're working in Dynamics 365 Sales. For example, when preparing a sales quote it could be useful to know whether you have enough inventory to fulfill the order.
 
-For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).  
+Learn more in [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).  
 
 ## Built in: Integrating Business Central with Dynamics 365 Field Service
 
 Service organizations require a front-to-back application in which financials, inventory, and procurement are tightly coupled with service delivery. They generate financial data with every transaction. Every work order represents cost and revenue, and every resource generates profit and loss. Customer interactions add entries on the general ledger. The integration between [!INCLUDE [prod_short](includes/prod_short.md)] and [!INCLUDE [m365-field-service-name](includes/m365-field-service-name.md)] streamlines the end-to-end process of managing service operations and ensures a smooth flow of information between the two systems.
 
-For more information, see [Integrate with Microsoft Dynamics 365 Field Service](/dynamics365/business-central/admin-integrate-field-service).
+Learn more in [Integrate with Microsoft Dynamics 365 Field Service](/dynamics365/business-central/admin-integrate-field-service).
 
 ## Built-in: Integrating Business Central with Shopify
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Shopify by installing and configuring the Shopify Connector app. By connecting your Shopify store (or stores) with [!INCLUDE[prod_short](../includes/prod_short.md)], you can maximize your business productivity and manage and view insights from your business and your Shopify store as one unit.
 
-For more information, see [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started).
+Learn more in [Get started with the Shopify connector](/dynamics365/business-central/shopify/get-started).
 
 ## Integrating to external systems from AL code: calling external services
 
@@ -108,7 +109,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and ext
 
 :::image type="content" source="media/httpclient.svg" alt-text="Shows how AL apps and extensions can call external web services from Business Central" lightbox="media/httpclient.svg":::
 
-For more information, see [Call external services with the HttpClient data type](../developer/devenv-httpclient.md).
+Learn more in [Call external services with the HttpClient data type](../developer/devenv-httpclient.md).
 
 ## Integrating to external systems from AL code: Azure services
 
@@ -116,8 +117,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and ext
 
 :::image type="content" source="media/connect-to-azure-services.svg" alt-text="Shows how AL apps and extensions can call Azure services from Business Central" lightbox="media/connect-to-azure-services.svg":::
 
-For more information, see [Integrating Business Central with Azure services](./integration-azure-overview.md).
-
+Learn more in [Integrating Business Central with Azure services](./integration-azure-overview.md).
 
 ## Integrating Business Central with infrastructure services
 
@@ -130,7 +130,7 @@ Here are some supported integrations between Business Central and fundamental se
 - Telemetry: [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
 - Local printers: [!INCLUDE[m365_universal_print](../includes/universal-print-name.md)]
 
-For more information, see [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
+Learn more in [Integrating Business Central with infrastructure services](integration-infrastructure-overview.md).
 
 
 ## Integrating AI by extending Copilot in Business Central
@@ -139,7 +139,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and ext
 
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
 
-For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
+Learn more in [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
 ## Related information
 

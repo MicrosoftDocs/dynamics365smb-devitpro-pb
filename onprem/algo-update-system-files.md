@@ -4,7 +4,7 @@ description: "Updating the AL-Go system files for your project for Business Cent
 author: freddyk
 ms.date: 04/28/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ---

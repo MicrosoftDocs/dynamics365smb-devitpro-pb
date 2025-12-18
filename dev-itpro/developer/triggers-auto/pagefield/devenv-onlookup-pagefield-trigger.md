@@ -2,7 +2,7 @@
 title: "OnLookup (Page Field) trigger"
 description: "Runs in place of the normal lookup features for the current page."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ end;
 Text string entered into the text box and used as the lookup value.  
 
 
-## Return Value
+## Return value
 
 *Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  

@@ -2,11 +2,10 @@
 title: "AL diagnostics"
 description: ""
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
-ms.custom: sfi-ropc-nochange
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -181,7 +180,7 @@ ms.custom: sfi-ropc-nochange
 |[AL0277](diagnostic-al277.md)|A Date literal value is expected for property {0}.|Error|
 |[AL0278](diagnostic-al278.md)|A DateTime literal value is expected for property {0}.|Error|
 |[AL0279](diagnostic-al279.md)|The key '{0}' on table '{1}' contains too many fields.|Error|
-|[AL0280](diagnostic-al280.md)|The event '{0}' is not found in the target.|Error|
+|[AL0280](diagnostic-al280.md)|The event '{0}' is not found in the target '{1}'.|Error|
 |[AL0281](diagnostic-al281.md)|Object member '{0}' is not an event.|Error|
 |[AL0282](diagnostic-al282.md)|The member referenced by event subscriber '{0}' parameter '{1}' is not found.|Error|
 |[AL0283](diagnostic-al283.md)|The event '{0}' must not have a return value.|Error|
@@ -702,7 +701,7 @@ ms.custom: sfi-ropc-nochange
 |[AL0822](diagnostic-al822.md)|'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.|Warning|
 |[AL0823](diagnostic-al823.md)|Field '{0}' is marked as PendingMove and cannot be used in an active key.|Warning|
 |[AL0824](diagnostic-al824.md)|Field '{0}' is moved and cannot be used in an active key.|Error|
-|[AL0825](diagnostic-al825.md)|Field '{0}' cannot be moved to {1} '{2}' because '{2}' is marked as Moved.|Error|
+|[AL0825](diagnostic-al825.md)|It is not possible to move the field '{0}' ({1}) to a base table.|Error|
 |[AL0826](diagnostic-al826.md)|The type '{0}' cannot be used as a type argument in this context.|Warning (future error)|
 |[AL0827](diagnostic-al827.md)|Argument {0}: The argument {0} of field class {1} is not supported. Allowed field class types are '{2}'.|Error|
 |[AL0828](diagnostic-al828.md)|The field '{0}' with ID '{1}' can't be moved because it is part of the table's primary key.|Error|
@@ -731,6 +730,7 @@ ms.custom: sfi-ropc-nochange
 |[AL0851](diagnostic-al851.md)|The type '{0}' doesn't support casting.|Error|
 |[AL0852](diagnostic-al852.md)|Interface '{0}' cannot extend interface {1} since it causes a circular reference.|Error|
 |[AL0853](diagnostic-al853.md)|'{0}' cannot be used as a part in '{1}' because it causes a circular reference.|Error|
+|[AL0854](diagnostic-al854.md)|'{0}' is a namespace and is not valid in this context.|Error|
 |[AL0855](diagnostic-al855.md)|The variable name cannot be empty.|Error|
 |[AL0856](diagnostic-al856.md)|Statements cannot start with a parenthesis in runtime version '{0}'. The supported runtime versions are: '{1}' or greater.|Error|
 |[AL0857](diagnostic-al857.md)|The size of resource file '{0}' exceeds the maximum allowed size limit of '{1}' MB. File size: '{2}' MB.|Error|
@@ -760,6 +760,14 @@ ms.custom: sfi-ropc-nochange
 |[AL0882](diagnostic-al882.md)|Pages with SubType set to UserControlHost must specify at most one field of type Text in the Navigation Area.|Error|
 |[AL0883](diagnostic-al883.md)|The value '{0}' is not a valid HTTP status code.|Error|
 |[AL0884](diagnostic-al884.md)|The value '{0}' is outside the allowed range for mocked HTTP status codes. Redirect (3**) status codes are not permitted.|Error|
+|[AL0885](diagnostic-al885.md)|The field '{0}' cannot be referenced in this context. You can only reference symbols from the base object '{1}' and the current extension.|Warning (future error)|
+|[AL0886](diagnostic-al886.md)|The field '{0}' cannot be referenced in this context. You can only reference symbols from the base object '{1}' and the current extension.|Error|
+|[AL0887](diagnostic-al887.md)|A member of type {0} named '{1}' conflicts with a similarly named member '{2}' of {3} {4}. Both will have the same database name '{3}'.|Error|
+|[AL0888](diagnostic-al888.md)|The parameter '{0}' is of the type 'SecretText' but is passed to a control add-in procedure. This will expose the value for debugging in the browser.|Warning|
+|[AL0889](diagnostic-al889.md)|Cannot use reserved keyword '{0}' in this context.|Error|
+|[AL0890](diagnostic-al890.md)|The identifier assigned to the Summary SystemPart type is not valid. Valid identifier is {0}.|Error|
+|[AL0891](diagnostic-al891.md)|The ExtendedDataType '{0}' cannot be used on pages of type {1}.|Error|
+|[AL0892](diagnostic-al892.md)|Fields set as ExtendedDataType '{0}' cannot be referenced on {1} type pages.|Error|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|

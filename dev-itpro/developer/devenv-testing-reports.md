@@ -16,7 +16,7 @@ Before extensions, the output of a report was saved to a file, but extensions de
 
 ## Example
 
-The following example shows how to initialize the codeunit 131007 `Library - Report Dataset` by using the `RunReportAndLoad` method. This method is preferred as it runs the report and initialize the `Library - Report DataSet` codeunit. To verify the output, call either the `AssertElementWithValueExists` or the `AssertElementWithValueNotExist` method. The other methods in the library should work as well if they don't contain “Tag” in the name. `RUNREQUESTPAGE` and `[RequestPageHandler]` are optional and you can use them when you want to open the request page. 
+The following example shows how to initialize the codeunit 131007 `Library - Report Dataset` by using the `RunReportAndLoad` method. This method is preferred as it runs the report and initialize the `Library - Report DataSet` codeunit. To verify the output, call either the `AssertElementWithValueExists` or the `AssertElementWithValueNotExist` method. The other methods in the library should work as well if they don't contain “Tag” in the name. `RunRequestPage` and `[RequestPageHandler]` are optional and you can use them when you want to open the request page. 
 
 > [!TIP]  
 > If you want to run the report separately and load the data from the input stream manually, you can use the `LoadDataFromInstream` method.
@@ -34,6 +34,9 @@ codeunit 50105 MyReportTesting
         LibraryReportDataset: Codeunit "Library - Report Dataset";
         GenJournalLine: Record "Gen. Journal Line";
     begin
+        // CreateRemittanceAdvices();
+        // Commit(); // required after data changes and before calling RunRequestPage
+
         // Run the Report Remittance Advice - Journal. 
         XmlParameters := Report.RunRequestPage(Report::"Remittance Advice - Journal");
         LibraryReportDataset.RunReportAndLoad(Report::"Remittance Advice - Journal", GenJournalLine, XmlParameters);
@@ -43,14 +46,14 @@ codeunit 50105 MyReportTesting
     end;
 
     [RequestPageHandler]
-    procedure RemittanceAdviceJournalRequestPageHandler(var RemittanceAdviceJournal: TestRequestPage 399)
+    procedure RemittanceAdviceJournalRequestPageHandler(var RemittanceAdviceJournal: TestRequestPage "Remittance Advice - Journal")
     begin
         // Empty handler used to close the request page. We use default settings. 
     end;
 }
 ```
 
-Any changes done in the handler above results in the `XmlParameters` being changed and applied automatically when the report runs. Examples of the implementation in the existing tests are in `Codeunit 133770` and `Codeunit 134141`.
+Any changes done in the handler above results in the `XmlParameters` being changed and applied automatically when the report runs. Examples of the implementation in the existing tests are in codeunit 133770 `ERM Remittance Report UT` and codeunit 134141 `ERM Bank Reconciliation`.
 
 ## Remarks
 

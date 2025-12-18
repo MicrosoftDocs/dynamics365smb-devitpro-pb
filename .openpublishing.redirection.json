@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "dev-itpro/security/user-security.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/security/security-application",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "dev-itpro/administration/monitor-server-event-traces.md",
       "redirect_url": "Monitoring-Microsoft-Dynamics-NAV-Server-Events",
       "redirect_document_id": false
@@ -7653,7 +7658,12 @@
     "source_path": "dev-itpro/developer/devenv-get-started-container-sandbox.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-running-container-development",
     "redirect_document_id": false
-   }
+   },
+    {
+      "source_path": "dev-itpro/developer/methods/devenv-recordid-method-record.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/recordid/recordid-data-type",
+      "redirect_document_id": false
+    }
   ] 
 }
 

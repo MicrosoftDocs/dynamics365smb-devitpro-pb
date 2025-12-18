@@ -2,7 +2,7 @@
 title: "ModalPageHandler attribute"
 description: "Specifies that the method is a ModalPageHandler method, which handles specific pages that are run modally."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ Specifies that the method is a ModalPageHandler method, which handles specific p
 procedure ModalPageHandler(var Page: TestPage)
 ```
 > [!IMPORTANT]
-> The above signature requires the ModalPageHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the ModalPageHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 > **Version**: _Available or changed with runtime version 2.1._
 ```AL
@@ -41,7 +41,7 @@ procedure ModalPageHandler(var Page: TestPage)
 procedure ModalPageHandler(var Page: Page; var Response: Action)
 ```
 > [!IMPORTANT]
-> The above signature requires the ModalPageHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the ModalPageHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Page*  

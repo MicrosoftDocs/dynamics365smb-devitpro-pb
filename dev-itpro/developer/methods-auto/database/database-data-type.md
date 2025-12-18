@@ -2,7 +2,7 @@
 title: "Database data type"
 description: "Provides access to common database functionality."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Database Data type
+# Database data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Provides access to common database functionality.
@@ -36,7 +36,8 @@ The following methods are available on the Database data type.
 |[ImportData(Boolean, var Text [, Boolean] [, Boolean] [, Record])](database-importdata-method.md)|Imports data from a file that has been exported from a database.|
 |[IsInWriteTransaction()](database-isinwritetransaction-method.md)|Checks whether or not you are in a write transaction.|
 |[LastUsedRowVersion()](database-lastusedrowversion-method.md)|Gets the last used RowVersion from the database.|
-|[LockTimeout([Boolean])](database-locktimeout-method.md)|Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting.|
+|[LockTimeout([Boolean])](database-locktimeout-method.md)|Determines whether the lock timeout setting is set to On. You can also use this method to override the default setting.|
+|[LockTimeoutDuration([Integer])](database-locktimeoutduration-method.md)|Gets or sets the current lock timeout duration in seconds. Setting a lock timeout of 0 or less disables the lock timeout.|
 |[MinimumActiveRowVersion()](database-minimumactiverowversion-method.md)|Returns the lowest active RowVersion in the database. This is the lowest RowVersion for an uncomitted row, meaning rows with a lower timestamp than this value are guaranteed to be comitted. If there are no active transactions, this value is equal to LastUsedRowVersion + 1.|
 |[RegisterTableConnection(TableConnectionType, Text, Text)](database-registertableconnection-method.md)|Registers a table connection to an external database.|
 |[SelectLatestVersion()](database-selectlatestversion--method.md)|Forces the latest version of the database to be used.|

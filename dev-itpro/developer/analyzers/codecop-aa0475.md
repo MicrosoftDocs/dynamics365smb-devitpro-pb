@@ -2,7 +2,7 @@
 title: "CodeCop Error AA0475"
 description: "Truncate can only be used on normal tables and not on system tables, temporary tables, or tables with media fields."
 ms.author: solsen
-ms.date: 08/05/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

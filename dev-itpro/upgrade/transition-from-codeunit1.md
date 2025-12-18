@@ -1,35 +1,35 @@
 ---
-title: "Transitioning from Codeunit 1"
-description: "Learn how to convert your code as part of the upgrade to version 14 of Business Central."
+title: Transitioning from Codeunit 1 to System Codeunits
+description: Learn how to convert your custom code as part of the upgrade to version 14 of Business Central.
 ms.custom: evergreen
-ms.date: 04/18/2024
+ms.date: 10/14/2025
 ms.update-cycle: 1095-days
 ms.topic: concept-article
 author: jswymer
 ---
-# Transitioning from Codeunit 1 to System Codeunits
+# Transitioning from codeunit 1 to system codeunits
 
 [!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
 
-With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], codeunit 1 **Application Management** has been removed and replaced with new System codeunits. No functionality has been removed by this change. All system method triggers, event publishers, and their code have been moved to other codeunits.
+With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], codeunit 1 **Application Management** is removed and replaced with new System codeunits. No functionality is removed with this change. All system method triggers, event publishers, and their code are moved to other codeunits.
 
-However, this change will affect the upgrade process from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] and how you develop from now on.
+However, this change affects the upgrade process from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] and how you develop from now on.
 
 ## Overview
 
-The foundation of this change is events - publishers and subscribers. System codeunits don't contain code. They only contain event publishers. Instead of running codeunit 1 and calling respective functions, [!INCLUDE[server](../developer/includes/server.md)] runs system codeunits. The system codeunits will in turn raise published events. There are various management codeunits that subscribe to these events. Like codeunit 1, these subscriber codeunits contain method triggers and integration event publishers. They can call application functionality and raise events. The following figure illustrates the process:
+The foundation of this change is events - publishers and subscribers. System codeunits don't contain code. They only contain event publishers. Instead of running codeunit 1 and calling respective functions, [!INCLUDE[server](../developer/includes/server.md)] runs system codeunits. In turn, the system codeunits raise published events. There are various management codeunits that subscribe to these events. Like codeunit 1, these subscriber codeunits contain method triggers and integration event publishers. They can call application functionality and raise events. The following figure illustrates the process:
 
 ![System event publishers.](../media/system-event-publishers.png "system event publishers")
 
 ### About system codeunits
--    They have IDs in the 2 billion range.
--    You can't modify them.
--    Currently, we don't recommend that code subscribes to the events in the new system codeunits 2000000001..2000000010 directly. Although not blocked, it might be in a future release. Instead, you should subscribe to one of the integration events.
 
-  
+- They have IDs in the two billion range.
+- You can't modify them.
+- Currently, we don't recommend that code subscribes to the events in the new system codeunits 2000000001..2000000010 directly. Although not blocked, it might be in a future release. Instead, you should subscribe to one of the integration events.
+
 ## Mapping Codeunit 1 method triggers to events
 
-The following table lists the mappings between the codeunit 1 triggers and the new method triggers/publishers in the management codeunits.
+The following table lists the mappings between the codeunit **1** triggers and the new method triggers/publishers in the management codeunits.
 
 |Codeunit 1 trigger|New codeunit ID|New codeunit name|New method|
 |------------------|---------------|-------------|----------|
@@ -94,11 +94,11 @@ The following table lists the mappings between the codeunit 1 triggers and the n
 |OnAfterMakeDateText|N/A|N/A
 |OnAfterMakeTimeText|N/A|N/A
 |OnAfterMakeText|N/A|N/A
-|OnAfterMakeDateTimeFilter|41|LanguageManagement|OnAfterMakeDateTimeFilter
-|OnAfterMakeDateFilter|41|LanguageManagement|OnAfterMakeDateFilter
-|OnAfterMakeTextFilter|41|LanguageManagement|OnAfterMakeTextFilter
+|OnAfterMakeDateTimeFilter|41|TextManagement|OnAfterMakeDateTimeFilter
+|OnAfterMakeDateFilter|41|TextManagement|OnAfterMakeDateFilter
+|OnAfterMakeTextFilter|41|TextManagement|OnAfterMakeTextFilter
 |OnAfterMakeCodeFilter|N/A|N/A
-|OnAfterMakeTimeFilter|41|LanguageManagement|OnAfterMakeTimeFilter
+|OnAfterMakeTimeFilter|41|TextManagement|OnAfterMakeTimeFilter
 |OnAfterAutoFormatTranslate|45|AutoFormatManagement|OnAfterAutoFormatTranslate
 |OnAfterCaptionClassTranslate|42|CaptionManagement|OnAfterCaptionClassTranslate
 |OnAfterGetGlobalTableTriggerMask|49|GlobalTriggerManagement|OnAfterGetGlobalTableTriggerMask
@@ -135,12 +135,12 @@ The following table lists the mappings between the codeunit 1 triggers and the n
 
 ### Full upgrade - application code and data
 
-Move custom logic from the old codeunit 1 to the management codeunits and methods. Change custom code that call into codeunit 1 to call or subscribe to the new methods. You can do this step as part of the application code upgrade. 
+Move custom logic from the old codeunit 1 to the management codeunits and methods. Change custom code that calls into codeunit 1 to call or subscribe to the new methods. You can do this step as part of the application code upgrade. 
 
 ### Technical upgrade
 
 After you convert the old database to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform, import and compile the replacement codeunit 1 object. You get the replacement object from [Codeunit 1 Replacement](codeunit1-replacement.md).
 
-## Related information  
- [Converting a Database](Converting-a-Database.md)  
- 
+## Related information
+
+[Converting a Database](Converting-a-Database.md)  

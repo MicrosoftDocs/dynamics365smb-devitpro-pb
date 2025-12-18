@@ -3,9 +3,6 @@ title: "DeleteObjects"
 author: jswymer
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 33764be6-81d6-439d-84ce-61b5e2f89a17
-caps.latest.revision: 7
-ms.custom: sfi-ropc-blocked
 ---
 # DeleteObjects
 Deletes objects from the specified [!INCLUDE[navnow](includes/navnow_md.md)] database.  
@@ -13,7 +10,7 @@ Deletes objects from the specified [!INCLUDE[navnow](includes/navnow_md.md)] dat
 ## Syntax  
 
 ```  
-finsql.exe command=deleteobjects, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
+finsql.exe command=deleteobjects, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<user name>,] [pswd,] [ntauthentication=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
 ```  
 
 #### Parameters  

@@ -14,8 +14,6 @@ ms.reviewer: jswymer
 
 **INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2, version 23.0. 
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] changelog feature lets you track direct modifications a user makes to data in the database. You specify each table and field that you want the system to log, and then you activate the changelog. The changelog is based on changes that are made to data in the tables that you track. 
 
 For more information about the changelog feature, see [Auditing changes in Business Central](/dynamics365/business-central/across-log-changes).

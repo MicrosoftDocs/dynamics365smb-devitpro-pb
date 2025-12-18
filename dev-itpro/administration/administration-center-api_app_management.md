@@ -43,22 +43,24 @@ To use the `install` and `uninstall` endpoints, you must have the *Exten. Mgt. -
 
 Installs an app on an environment.
 
-```
+```HTTP
 Content-Type: application/json
-POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
 ```
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment.
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
 ### Body
 
-```
+```JSON
 { 
   "targetVersion": string, // Optional. If not provided, latest version will be installed. Required if "allowPreviewVersion": true 
   "useEnvironmentUpdateWindow": boolean, // If true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window. 
@@ -82,7 +84,7 @@ POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName
 
 Example `200 OK` response with body:
 
-```
+```JSON
 { 
   "id": guid, // ID of the operation used for tracking the update request 
   "type": string, // Type of the operation, for this endpoint, it's "install" 
@@ -96,7 +98,7 @@ Example `200 OK` response with body:
 
 Example `400 Bad Request` response when dependent apps need to be installed first:
 
-```
+```JSON
 { 
   "code": string, // Error code 
   "message": string, // Detailed error message 
@@ -120,22 +122,24 @@ Example `400 Bad Request` response when dependent apps need to be installed firs
 
 Uninstalls an app from an environment.
 
-```
+```HTTP
 Content-Type: application/json
-POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment.
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
 ### Body
 
-```
+```JSON
 { 
   "useEnvironmentUpdateWindow": boolean, // If set to true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window. 
   "uninstallDependents": boolean // Value indicating whether any other dependent apps should be uninstalled, otherwise information about dependent apps will be returned in error details 
@@ -147,7 +151,7 @@ POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName
 
 Example `200 OK` response with body:
 
-```
+```JSON
 {
   "id": guid, // ID of the operation used for tracking the update request 
   "type": string, // Type of the operation. For this endpoint, it's "uninstall".
@@ -161,7 +165,7 @@ Example `200 OK` response with body:
 
 Example `400 Bad Request` response when dependent apps need to be uninstalled first: 
 
-```
+```JSON
 { 
   "code": string, // Error Code 
   "message": string, // Detailed error message 
@@ -185,16 +189,18 @@ Lists dependent apps that need to be uninstalled in order to uninstall the targe
 
 **INTRODUCED IN:** API version 2.25
 
-```
+```HTTP
 Content-Type: application/json
-GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstallRequirements  
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstallRequirements  
 ```
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment.
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
@@ -202,7 +208,7 @@ GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}
 
 Example `200 OK` response with body:
 
-```
+```JSON
 {
   "value":
   [
@@ -225,20 +231,22 @@ Example `200 OK` response with body:
 
 Get information about apps that are installed on the environment.
 
-```
-GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment.
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment.
 
 ### Response
 Returns information about the apps installed on the environment.
 
-```
+```JSON
 {
   "value":
   [
@@ -263,19 +271,21 @@ Returns information about the apps installed on the environment.
 
 Get information about new app versions that are available for apps currently installed on the environment.
 
-```
-GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment.
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment.
 
 ### Response
 
-```
+```JSON
 {
   "value":
   [ 
@@ -303,22 +313,24 @@ GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}
 
 Updates an app using an existing endpoint, but when new parameters in the request body are available.
 
-```
+```HTTP
 Content-Type: application/json
-POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment.
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
 ### Body
 
-```
+```JSON
 { 
   "useEnvironmentUpdateWindow": boolean, // If set to true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window.
   "targetVersion": string, // Always required. There's no option to update to the latest. You have to first do a "availableAppUpdates", call then use the version here.
@@ -331,7 +343,7 @@ POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName
 
 200 OK, with Body, example:
 
-```
+```JSON
 { 
   "id": guid, // ID of the operation used for tracking the update request
   "type": string, // Type of the operation. For this endpoint, it's "update".
@@ -344,10 +356,10 @@ POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName
   "canceledBy: string // Empty value
 }
 ```
-  
+  
 Example `400 Bad Request` response when dependent apps need to be updated first:
 
-```
+```JSON
 { 
   "code": string, // Error Code 
   "message": string, // Detailed error message 
@@ -369,22 +381,24 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
 
 Cancels an app update in scheduled state.
 
-```
+```HTTP
 Content-Type: application/json
-POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
 ```
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment.
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment.
 
 `appId` - ID of the targeted app.
 
 ### Body
 
-```
+```JSON
 { 
   "ScheduledOperationId": guid // Obtained when scheduling an update or by getting app operations for the environment
 }
@@ -394,7 +408,7 @@ POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName
 
 200 OK, with Body, example:
 
-```
+```JSON
 { 
   "id": guid, // ID of the operation used for tracking the update request
   "type": string, // Type of the operation. For this endpoint, it's "update".
@@ -412,15 +426,17 @@ POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName
 
 Gets information about app install, uninstall, and update operations for the specified app.
 
-```
-GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment.
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment.
 
 `appId` - Id of the targeted app.
 
@@ -431,7 +447,7 @@ GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}
 Returns the list of app update operations for the specified app.
 *Note*: `operationId` is provided, the single operation is returned instead.
 
-```
+```JSON
 {
   "value":
   [
@@ -498,6 +514,7 @@ You'll need the following information about Business Central and your Teams serv
     1. Select **Go to resource group**.
     2. Select the resource for the Teams API connection to open it.
     3. Select **Edit API connection** > **Authorize**, then sign in with your credentials.
+
 
 ## Related information
 

@@ -4,7 +4,7 @@ description: Provides an overview of the different upgrade paths for Business Ce
 author: jswymer
 ms.topic: upgrade-and-migration-article
 ms.author: jswymer
-ms.date: 04/09/2025
+ms.date: 08/25/2025
 ms.reviewer: jswymer
 ---
 
@@ -24,13 +24,13 @@ The following sections provide the supported upgrade paths to the different [!IN
 > - Minor updates are regularly available for each release wave. Not all minor updates between two releases are compatible. Upgrade to a release update that's compatible with your current version to avoid problems. Learn more in [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
 > - Starting in 2025 release wave 1 (v26), the direct upgrade from Business Central 2019 (v14) to the latest release won't be supported. The supported upgrade path will be through 2024 release wave 2 (v25). Learn more in [Deprecated features in the platform - clients, server, and database](deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260)
 
+## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 2 (v27)
+
+[!INCLUDE[upgrade-path-v27](../developer/includes/upgrade-path-v27.md)]
+
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1 (v26)
 
-|  Source version  |  Path  |
-|------------|--------------|
-|<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)] (version 8)</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] (version 9)</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)] (version 10)</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] (version 11)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (version 13)</li></ul>|<ol><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 (version 25)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1 (version 26)</li></ol>This path requires you convert your application from C/AL to AL.|
-|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (version 19)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 (version 22)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2 (version 23)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 1 (version 24)</li></ul>|<ol><li>Version 25</li><li>Version 26</li></ol>|
-|<ul><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 (version 25)</li></ul>|Direct to version 26|
+[!INCLUDE[upgrade-path-v26](../developer/includes/upgrade-path-v26.md)]
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 (v25)
 

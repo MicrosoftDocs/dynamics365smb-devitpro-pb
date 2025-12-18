@@ -59,7 +59,6 @@ Here's an example of the response.
     "displayName": "CRONUS USA, Inc.",
     "companyNumber" : "17806",
     "companyName" : "CRONUS US",
-    "businessRelation" : "Vendor",
     "addressLine1": "7122 South Ashford Street",
     "addressLine2": "Westminster",
     "city": "Atlanta",

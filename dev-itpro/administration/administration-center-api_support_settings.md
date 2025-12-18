@@ -1,12 +1,13 @@
 ---
 title: Business Central Admin Center API - Support settings
-description: Learn about the Business Central administration center API for managing support settings.
+ms.author: jswymer
+description: Learn how to resolve support contact issues in Business Central environments using the Admin Center API. Get detailed guidance on API routes and responses.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 12/27/2023
+ms.date: 11/17/2025
 ---
 # Business Central Admin Center API - Support settings
 
@@ -16,21 +17,23 @@ Allows for the management of support settings, such as changing the contact, for
 
 Get information about the support contact for a specified environment.
 
-```
-GET /admin/v2.24/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+```HTTP
+GET /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment
 
 ### Response
 
 Returns information about the support contact for that environment.
 
-```
+```JSON
 {
   "name": string, // The name of the support contact.
   "email": string, // The email address of the support contact.
@@ -54,20 +57,22 @@ Returns information about the support contact for that environment.
 
 Sets the support contact information for a specified environment
 
-```
+```HTTP
 Content-Type: application/json
-PUT /admin/v2.24/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route parameters
 
-`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`environmentName` - Name of the targeted environment
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment
 
 ### Body
  
-```
+```JSON
 {
   "name": string, // The name of the support contact.
   "email": string, // The email address of the support contact.
@@ -78,7 +83,7 @@ PUT /admin/v2.24/support/applications/{applicationFamily}/environments/{environm
 ### Response
 
 Returns the newly updated support contact information.
-```
+```JSON
 {
   "name": string, // The name of the support contact.
   "email": string, // The email address of the support contact.
@@ -99,7 +104,6 @@ Returns the newly updated support contact information.
 `resourceDoesNotExist` - couldn't find the necessary information to communicate with the targeted environment's API
 
 `businessCentralCommunicationException` - an unhandled error occurred when communicating with the targeted environment's API
-
 
 ## Related information
 

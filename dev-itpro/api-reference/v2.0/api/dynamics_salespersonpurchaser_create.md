@@ -17,7 +17,7 @@ Creates a salesperson purchaser in [!INCLUDE[prod_short](../../../includes/prod_
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-POST businesscentralPrefix/companies({id})/salespersonPurchasers({id})
+POST businesscentralPrefix/companies({id})/salespeoplePurchasers({id})
 ```
 
 ## Request headers
@@ -26,16 +26,14 @@ POST businesscentralPrefix/companies({id})/salespersonPurchasers({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **salespersonPurchaser**, the **salespersonPurchaser** won't be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **salespeoplePurchaser**, the **salespeoplePurchaser** won't be updated. |
 
 ## Request body
 
-In the request body, supply a JSON representation of a **salespersonPurchaser** object.
-
+In the request body, supply a JSON representation of a **salespeoplePurchaser** object.
 ## Response
 
-If successful, this method returns ```201 Created``` response code and a **salespersonPurchaser** object in the response body.
-
+If successful, this method returns ```201 Created``` response code and a **salespeoplePurchaser** object in the response body.
 
 ## Example
 
@@ -44,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **sales
 Here's an example of the request.
 
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salespersonPurchasers({id})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salespeoplePurchasers({id})
 Content-type: application/json
 {
     "code": "JS",

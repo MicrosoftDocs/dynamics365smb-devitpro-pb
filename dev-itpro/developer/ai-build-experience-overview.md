@@ -27,7 +27,7 @@ A Copilot in a Business Central extension involves three essential components:
 To develop an effective Copilot extension, you need to work with each of these components.
 
 > [!NOTE]
-> Although some Copilot features from Microsoft are able to search the web with Bing Search, this capability isn't available to AL developers as a component that can be used or referenced from extensions. If you're interested having your copilot features use the web for grounding data, join the partner community discussion on the [Dynamics 365 Business Central Partner Community Network on Viva Engage](https://go.microsoft.com/fwlink/?linkid=2229283) (formerly Yammer).
+> Although some Copilot features from Microsoft are able to search the web with Bing Search, this capability isn't available to AL developers as a component that can be used or referenced from extensions. If you're interested having your copilot features use the web for grounding data, join the partner community discussion on the [Dynamics 365 Business Central Partner Community Network on Viva Engage](https://go.microsoft.com/fwlink/?linkid=2229283).
 
 ## Getting set up with Azure OpenAI Service
 

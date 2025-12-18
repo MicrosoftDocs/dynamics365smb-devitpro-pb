@@ -4,7 +4,7 @@ description: Learn about how you as the internal administrator or as a reselling
 author: jswymer
 ms.topic: article
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 06/21/2024
+ms.date: 11/14/2025
 ms.author: jswymer
 ms.reviewer: solsen
 ---
@@ -94,6 +94,10 @@ Trials can expire, and so can a paid subscription, such as if the organization d
 ## <a name="infrastructure"></a>Understanding Business Central online infrastructure
 
 If you're migrating from an on-premises solution, understanding the infrastructure of [!INCLUDE [prod_short](../includes/prod_short.md)] online can help you make good choices for how to set up environments and companies. For more information and an example, see [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).  
+
+## Administer feedback in Power Platform admin center
+
+Administrators can control whether users can provide product feedback for the tenant through settings in the Power Platform admin center. Learn more in [Tenant settings](/power-platform/admin/tenant-settings?tabs=new) in the Power Platform documentation.
 
 ## Related information
 

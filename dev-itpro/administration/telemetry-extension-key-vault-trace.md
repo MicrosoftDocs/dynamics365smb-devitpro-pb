@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 12/29/2023
+ms.date: 09/25/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -172,6 +172,7 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
+|secretName|Specifies the secret name.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ### Sample KQL code (successful Azure Keyvault retrievals)
@@ -193,6 +194,7 @@ traces
 , extensionPublisher = customDimensions.extensionPublisher
 , extensionVersion = customDimensions.extensionVersion
 , keyVaultUrl = customDimensions.keyVaultUrl
+, secretName = customDimensions.SecretName
 ```
 
 
@@ -225,6 +227,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
+|secretName|Specifies the secret name.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ### Sample KQL code (Azure Keyvault retrieval errors)
@@ -247,6 +250,7 @@ traces
 , extensionVersion = customDimensions.extensionVersion
 , failureReason = customDimensions.failureReason
 , keyVaultUrl = customDimensions.keyVaultUrl
+, secretName = customDimensions.SecretName
 ```
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]

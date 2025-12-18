@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: how-to
 ms.update-cycle: 180-days
-ms.date: 07/16/2025
+ms.date: 09/08/2025
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -14,7 +14,16 @@ ms.reviewer: jswymer
 
 # Build the Copilot capability in AL
 
-Your extensions can enhance Copilot in [!INCLUDE [prod_short](includes/prod_short.md)] with one or more features known as Copilot capabilities. This article explains how to register a new capability, and how to integrate with the Azure OpenAI Service API to generate text through the AI module of [!INCLUDE [prod_short](includes/prod_short.md)] centered around an example of a Copilot capability to draft a project plan.
+Add a Copilot capability to your [!INCLUDE [prod_short](includes/prod_short.md)] extension by using the System.AI module, which integrates with Azure OpenAI Service. You register a capability, store authorization securely, define parameters, supply a metaprompt, and generate structured output while honoring governance, transparency, and telemetry.
+
+Use this article to learn how to:
+
+- Register and expose a Copilot capability
+- Set availability (Preview or Generally Available) and optional Learn more link
+- Store Azure OpenAI endpoint, deployment name, and API key securely
+- Configure chat completion parameters (tokens, temperature)
+- Add system (metaprompt) and user messages and generate a response
+- Apply guard rails and token limits
 
 ## Overview of the AI module
 
@@ -58,7 +67,7 @@ Under Copilot, you find the following objects:
 |[Copilot Availability](/dynamics365/business-central/application/system-application/enum/system.ai.copilot-availability)|Enum|The availability of the Copilot Capability; it can either be in preview or generally available.|
 |[Copilot Capability](/dynamics365/business-central/application/system/enum/system.ai.copilot-capability)|Enum|Defines the capabilities that can be registered.|
 
-Under Azure OpenAI you find the following objects:
+Under Azure OpenAI, you find the following objects:
 
 |Object | Object type | Purpose | 
 |-------|-------------|---------|
@@ -74,7 +83,7 @@ Learn more in [System application reference](/dynamics365/business-central/appli
 
 ### Registering an AI capability
 
-A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error is thrown. The registered capability shows up in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can be deactivated from this page, but doesn't change the registration of the capability. All capabilities are active by default, and customer administrators can deactivate the capability from this page at any time.
+A new AI capability must be registered with the AI module. Every extension must register with the `Copilot Capability` codeunit, and if the capability isn't registered with the extension, which is using it, an error is thrown. The registered capability shows up in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)]. The capability can be deactivated from this page, but doesn't change the registration of the capability. All capabilities are active by default, and customer administrators can deactivate the capability from this page at any time.
 
 To register the capability, you add an `enumextension` of the **Copilot Capability** enum. The following example shows how to register a new capability for drafting a project plan.
 
@@ -88,7 +97,7 @@ enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 }
 ```
 
-Next, you add a codeunit that registers the capability. Here, the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a project plan. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
+Next, you add a codeunit that registers the capability. Here, the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a project plan. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
 
 ```al
 codeunit 54310 "Secrets And Capabilities Setup"
@@ -121,6 +130,42 @@ codeunit 54310 "Secrets And Capabilities Setup"
 ```
 
 For the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but is subject to change and that you're welcoming their feedback.
+
+#### Billing type
+
+> [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
+
+As a developer, you're responsible for choosing the right billing type for your capability. The billing type can be either:
+
+`Custom Billed` - the Copilot capability is billed by partner/publisher
+`Microsoft Billed` - the Copilot capability is billed by Microsoft
+`Not Billed` - the Copilot capability isn't billed
+
+A capability is billed by Microsoft either if it's delivered by Microsoft, or if the partner building the capability opts in to using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources. Learn more in [Business Central AI resources](ai-dev-tools-resources.md).
+
+The billing type is defined by the extension that registers the capability. The billing type can be set in the `RegisterCapability()` and `ModifyCapability()` procedures. The billing type is shown in the **Copilot & agent capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)].
+
+The following example shows how to register a capability with the billing type `Custom Billed`.
+
+```al
+CopilotBillingType := Enum::"Copilot Billing Type"::"Custom Billed";
+```
+
+At runtime, the billing type setting is validated against, which Azure OpenAI resources the capability actually tries to use. As a partner, you might use your own Azure OpenAI subscription during development, testing, and troubleshooting, but opt in to use [!INCLUDE [prod_short](includes/prod_short.md)] AI resources in customer production environments. Therefore, there may be some inconsistency in the defined billing type for the app versus the actual API call to Azure OpenAI in sandboxes.
+
+The following table summarizes the supported combinations. If the combination isn't allowed, the user gets an error message that usage of AI resources isn't authorized with the chosen billing type.
+
+|Publisher|Billing Type|Azure OpenAI usage in code|Allowed|
+|---------|-------------|-----------|----------------------|
+|Partner|Microsoft Billed|Business Central AI resources|Yes|
+|Partner|Microsoft Billed|Partner's own Azure OpenAI resources|Only in sandboxes|
+|Partner|Custom Billed|Business Central AI resources|No|
+|Partner|Custom Billed|Partner's own Azure OpenAI resources|Yes|
+|Partner|Not Billed|Business Central AI resources|No|
+|Partner|Not Billed|Partner's own Azure OpenAI resources|Yes|
+|Microsoft|Not Billed|Business Central AI resources|Yes|
+|Microsoft|Microsoft Billed|Microsoft's own Azure OpenAI resources|Yes|
+|Microsoft|Custom Billed|Business Central AI resources|No|
 
 ### Saving the authorization
 

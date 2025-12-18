@@ -23,8 +23,12 @@ If you're subscribing to a custom API page, both the URL you send the subscripti
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../endpoints-apis-for-dynamics.md).
+
+> [!IMPORTANT]
+> The subscription ID must be enclosed in single quotes in the URL.
+
 ```
-DELETE businesscentralPrefix/subscriptions({'id'})
+DELETE businesscentralPrefix/subscriptions('{id}')
 ```
 
 ## Request headers
@@ -43,16 +47,15 @@ If successful, this method returns a `204 No Content` response code.
 
 **Request**
 
-Here's an example of the request.
+Here's an example of the request. Note that the subscription ID value must be enclosed in single quotes.
+
 ```json
-DELETE https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'}) 
+DELETE https://{businesscentralPrefix}/api/v1.0/subscriptions('c670ea73-b37b-4a7e-8dc4-de3e1f6f5445')
 ```
 
 **Response**
 
 No response body.
-
-
 
 ## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    

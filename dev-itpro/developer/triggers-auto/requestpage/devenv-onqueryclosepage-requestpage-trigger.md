@@ -2,7 +2,7 @@
 title: "OnQueryClosePage (Request Page) trigger"
 description: "Runs when a page closes and before the OnClosePage trigger executes."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ end;
 The CloseAction chosen by the user; usually OK or Cancel.  
 
 
-## Return Value
+## Return value
 
 *Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  

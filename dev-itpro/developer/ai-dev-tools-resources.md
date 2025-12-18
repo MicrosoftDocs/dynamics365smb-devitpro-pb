@@ -46,7 +46,7 @@ Quickly integrate AI capabilities into your solutions without having to navigate
 - *Improved reliability*  
 Proactive scaling, throttling, load balancing, and fault tolerance measures, ensuring consistent performance during peak demand.
 - *Enhanced security compliance*  
-Built in compliance measures and governance, including robust protection from malicious and harmful content, ensuring compliance with data residency requirements, reducing the burden of ensuring regulatory compliance for ISVs.
+Built-in compliance measures and governance, including robust protection from malicious and harmful content, ensuring compliance with data residency requirements, reducing the burden of ensuring regulatory compliance for ISVs.
 - *Streamlined experience for customers*  
 Customers experience a more seamless AI resource management process, avoiding the need to maintain different configurations for separate ISV solutions.
 
@@ -73,7 +73,7 @@ Learn more about the rates under AI Tools in [Billing rates and management](/mic
 
 ### Gracefully handle errors in case of overconsumption
 
-When using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, developers can easily react and handle cases of overconsumption. Overconsumption can happen, for example, when the customer provides non-valid billing information, or when a user is using AI resources too fast.
+When using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, developers can easily react and handle cases of overconsumption. Overconsumption can happen, for example, when the customer provides nonvalid billing information, or when a user is using AI resources too fast.
 
 To identify and handle these scenarios, developers can use the codeunit `AOAI Operation Response`, which is returned when using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
 
@@ -81,7 +81,7 @@ Here are some examples of using an instance of `AOAI Operation Response` to iden
 
 |AL code check|scenario|
 |-----------------------------------|-------------|
-|`AOAIOperationResponse.IsSuccess()`|The operation was successful and no additional error handling is needed.|
+|`AOAIOperationResponse.IsSuccess()`|The operation was successful and no more error handling is needed.|
 |`AOAIOperationResponse.GetStatusCode() = 402`|The operation wasn't successful because the current Microsoft Entra tenant ran out of AI resources and has no valid billing setup.|
 |`AOAIOperationResponse.GetStatusCode() = 429`|The current user is issuing requests to Copilot too fast. This can be an indication of automations or scheduled tasks that the user isn't aware of. This error disappears after a few seconds.|
 |`AOAIOperationResponse.GetStatusCode() = 503`|The [!INCLUDE [prod_short](includes/prod_short.md)] backend is temporarily unavailable; this is a rare occurrence and typically transient.|
@@ -100,15 +100,15 @@ By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for
 |Area|Business Central AI resources|Your own AOAI subscription|
 |----|-----------------------------|--------------------------|
 |Deployment|Microsoft manages the AI resources. <br><br>We ask you to have an active Azure OpenAI subscription for sign-up, but no model. | You must handle deploying models, keep them up to date, set up Azure subscriptions, take care of geography and data residency, etc. <br><br>You're charged for deployed models even if they aren't used.|
-|Model support|Production-ready models available (today GPT-4o and GPT-4o-mini, more in the future). <br><br> Get notified via developer telemetry when new models are coming, and old models are obsoleted. Observe that when models are discontinued, partners will be accountable for migrating to newer models and model versions as dictated by Microsoft within communicated SLA.<br><br>Embeddings aren't yet available.|All Azure OpenAI models are available. <br><br>Follow Azure OpenAI model deprecation timelines. <br><br>Embeddings and fine tuning are available depending on your model.|
+|Model support|Production-ready models available (today GPT-4o and GPT-4o-mini, more in the future). <br><br> Get notified via developer telemetry when new models are coming, and old models are obsoleted. Observe that when models are discontinued, partners are accountable for migrating to newer models and model versions as dictated by Microsoft within communicated SLA.<br><br>Embeddings aren't yet available.|All Azure OpenAI models are available. <br><br>Follow Azure OpenAI model deprecation timelines. <br><br>Embeddings and fine tuning are available depending on your model.|
 |Responsible AI|Azure OpenAI content filters predefined by Business Central. <br><br>Microsoft automatically appends safeguard prompts to your system prompt that increase protection against typical harms such as generation of harmful content and prompt injection attacks.|Azure OpenAI content filters, configurable by you. <br><br>Microsoft automatically appends safeguard prompts to your system prompt that increase protection against typical harms such as generation of harmful content and prompt injection attacks in Saas|
 |Environments|SaaS only|Can be used in SaaS, and for testing in containers.|
 |Billing|Microsoft charges the customer when they use AI. <br><br> Customers can track usage, set limits, and get a single, detailed invoice across Copilot features that use the toolkit AI resources. <br><br>You charge the customer for your IP.|You must track billing, split billing if multiple customers share the same subscription, manage spending limits, provide usage statistics etc.|
-|Geographic availability|AI model endpoints are available in limited Azure geographies, managed by Microsoft, that may change over time. You can find the list of currently supported Azure geos [here](/dynamics365/business-central/ai-copilot-data-movement#how-data-movement-across-geographies-works). <br><br> Customer environments in all other geos connect to endpoints in the US and are managed by the data governance controls provided to administrators in Business Central.|Availability follows the general availability of the chosen model in Azure OpenAI. See [Azure OpenAI Models](/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions) for more.|
+|Geographic availability|AI model endpoints are available in limited Azure geographies, managed by Microsoft, that might change over time. You can find the list of currently supported Azure geos [here](/dynamics365/business-central/ai-copilot-data-movement#how-data-movement-across-geographies-works). <br><br> Customer environments in all other geos connect to endpoints in the US and are managed by the data governance controls provided to administrators in Business Central.|Availability follows the general availability of the chosen model in Azure OpenAI. See [Azure OpenAI Models](/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions) for more.|
 
 ## Mandatory to migrate to newer models as older ones are deprecated
 
-Models evolve and are replaced over time. By using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, partners will be accountable for migrating to newer models and model versions as dictated by Microsoft within the communicated SLA. Failure to do so can lead to Copilot features using the deprecated model in [!INCLUDE [prod_short](includes/prod_short.md)] AI resources to no longer work in production.
+Models evolve and are replaced over time. By using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, partners are accountable for migrating to newer models and model versions as dictated by Microsoft within the communicated SLA. Failure to do so can lead to Copilot features using the deprecated model in [!INCLUDE [prod_short](includes/prod_short.md)] AI resources to no longer work in production.
 
 ## Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and your own subscription in AL
 
@@ -131,7 +131,7 @@ AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions",GetEndp
 The [!INCLUDE [prod_short](includes/prod_short.md)] AI resources can only be used in customer production environments. Therefore, it's recommended that partners create and use their own Azure OpenAI subscriptions as part of noncustomer usage, for example, when prototyping, developing, testing, and supporting AI capabilities.
 
 > [!NOTE]  
-> To use the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources in an app, the partner must provide information about their own Azure OpenAI subscription. This is to ensure that the partner is aware of and has accepted Azure OpenAI Service data, privacy and security policies.
+> To use the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources in an app, the partner must provide information about their own Azure OpenAI subscription. This is to ensure that the partner is aware of and has accepted Azure OpenAI Service data, privacy, and security policies.
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot easily allow conditionally branching on the Azure OpenAI subscription used, for example, using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources when running in customer environments and a custom Azure OpenAI subscription for the rest.
 

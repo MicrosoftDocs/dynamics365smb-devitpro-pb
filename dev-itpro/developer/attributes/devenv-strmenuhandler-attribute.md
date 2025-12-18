@@ -2,7 +2,7 @@
 title: "StrMenuHandler attribute"
 description: "Specifies that the method is a StrMenuHandler method, which handles StrMenu statements."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ Specifies that the method is a StrMenuHandler method, which handles StrMenu stat
 procedure StrMenuHandler(Options: Text[1024]; var Choice: Integer; Instruction: Text[1024])
 ```
 > [!IMPORTANT]
-> The above signature requires the StrMenuHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the StrMenuHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 > **Version**: _Available or changed with runtime version 2.1._
 ```AL
@@ -41,7 +41,7 @@ procedure StrMenuHandler(Options: Text[1024]; var Choice: Integer; Instruction: 
 procedure StrMenuHandler(Options: Text; var Choice: Integer; Instruction: Text)
 ```
 > [!IMPORTANT]
-> The above signature requires the StrMenuHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the StrMenuHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Choice*  

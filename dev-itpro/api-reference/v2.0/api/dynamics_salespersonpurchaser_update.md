@@ -17,7 +17,7 @@ Updates the properties of a salesperson purchaser object for [!INCLUDE[prod_shor
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-PATCH businesscentralPrefix/companies({id})/salespersonPurchasers({id})
+PATCH businesscentralPrefix/companies({id})/salespeoplePurchasers({id})
 ```
 
 ## Request headers
@@ -26,7 +26,7 @@ PATCH businesscentralPrefix/companies({id})/salespersonPurchasers({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **salespersonPurchaser**, the **salesperson purchaser** won't be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **salespeoplePurchaser**, the **salespeoplePurchaser** won't be updated. |
 
 ## Request body
 
@@ -34,7 +34,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a ```200 OK``` response code and an updated **salespersonPurchaser** object in the response body.
+If successful, this method returns a ```200 OK``` response code and an updated **salespeoplePurchaser** object in the response body.
 
 ## Example
 
@@ -43,7 +43,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 Here's an example of the request.
 
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/salespersonPurchasers({id})
+PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/salespeoplePurchasers({id})
 Content-type: application/json
 {
     "id": "f57a8943-92b5-ed11-94cc-000d3a2feca1",

@@ -6,7 +6,6 @@ ms.date: 04/01/2021
 ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.custom: sfi-ropc-blocked
 ---
 
 # Using the development environment from the command prompt

@@ -4,7 +4,7 @@ description: "Setting up a GitHub runner to help increase the performance on bui
 author: freddyk
 ms.date: 01/21/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ---

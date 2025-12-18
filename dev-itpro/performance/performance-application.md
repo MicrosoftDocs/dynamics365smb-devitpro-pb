@@ -15,6 +15,12 @@ The sections in this article are tips and tricks on how to set up [!INCLUDE[prod
 
 Any extensions that you install can affect the overall system performance. So if you install an app from AppSource, but later discover it's not needed, then uninstall it. The same advice applies to the extension that comes preinstalled in an environment. For example, uninstall all migration extensions after you've migrated data, or if you don't intend to migrate data.
 
+### Performance impact of installed extensions
+
+[!INCLUDE [extensions-performance-impact](../includes/extensions-performance-impact.md)]
+
+For more information about uninstalling extensions and managing orphaned data, see [Unpublishing and Uninstalling Extensions](../developer/devenv-unpublish-and-uninstall-extension-v2.md).
+
 ## Run things in the background
 
 It's often desirable to offload work from the user session to happen in the background. Examples are:

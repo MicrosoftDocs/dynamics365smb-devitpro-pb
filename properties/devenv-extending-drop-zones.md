@@ -3,7 +3,7 @@ title: Add drop zones for file uploads
 description: Learn how you can handle multiple file uploads and designate different page parts as file drop zones.
 ms.custom: bap-template
 ms.reviewer: ivkoleti
-ms.topic: conceptual
+ms.topic: concept-article
 author: brentholtorf
 ms.author: bholtorf
 ms.date: 03/04/2024

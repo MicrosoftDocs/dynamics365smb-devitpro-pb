@@ -2,7 +2,7 @@
 title: "ObsoleteReason property"
 description: "Specifies why the object has been marked as Pending in the ObsoleteState property."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,6 +20,7 @@ Specifies why the object has been marked as Pending in the ObsoleteState propert
 -   Page Custom Action
 -   Page File Upload Action
 -   Report Layout
+-   Page User Control
 -   Table
 -   Table field
 -   Table key

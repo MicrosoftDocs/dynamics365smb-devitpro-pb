@@ -2,7 +2,7 @@
 title: "TestHttpResponseMessage.IsBlockedByEnvironment([Boolean]) Method"
 description: "Gets or sets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Gets or sets a value that indicates if the HTTP response is the result of the en
 
 ## Syntax
 ```AL
-IsBlockedByEnvironment :=   TestHttpResponseMessage.IsBlockedByEnvironment([SetIsBlockedByEnvironment: Boolean])
+[IsBlockedByEnvironment := ]  TestHttpResponseMessage.IsBlockedByEnvironment([SetIsBlockedByEnvironment: Boolean])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -33,7 +33,7 @@ An instance of the [TestHttpResponseMessage](testhttpresponsemessage-data-type.m
 
 
 ## Return Value
-*IsBlockedByEnvironment*  
+*[Optional] IsBlockedByEnvironment*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the HTTP response is the result of the environment blocking an outgoing HTTP request, otherwise **false**.
 

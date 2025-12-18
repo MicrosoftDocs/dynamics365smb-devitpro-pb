@@ -2,9 +2,6 @@
 title: "How to: Deploy Microsoft Dynamics NAV on Microsoft Azure by Using the Example Scripts"
 ms.date: 10/01/2018
 ms.topic: article
-ms.assetid: 64f54243-c168-4f02-8de2-a3f663a3b437
-caps.latest.revision: 13
-ms.custom: sfi-ropc-blocked
 ---
 # How to: Deploy Microsoft Dynamics NAV on Microsoft Azure by Using the Example Scripts
 This topic describes how to deploy [!INCLUDE[navnow](includes/navnow_md.md)] by using the Example-1VM.ps1 and Example-2VM.ps1 scripts that are available with the [!INCLUDE[nav_prov_long](includes/nav_prov_long_md.md)]. The scripts deploy [!INCLUDE[navnow](includes/navnow_md.md)] in different network topologies. For more information, see [Deploying Microsoft Dynamics NAV Using the Example Scripts](Deploying-Microsoft-Dynamics-NAV-Using-the-Example-Scripts.md).  
@@ -64,7 +61,7 @@ This topic describes how to deploy [!INCLUDE[navnow](includes/navnow_md.md)] by 
      To set a parameter, delete the `# TODO`, and then provide a value for the parameter. For example, the following line of code contains the parameter that specifies the Azure service name, which in turn becomes the virtual machine name:  
   
     ```  
-    # TODO: $NAV_AzureServiceName = 'MyService'  
+    # TODO: $NAV_AzureServiceName = '<MyService>'  
     ```  
   
      To set this parameter to `MyCompanyVM`, you would change the code to the following:  
@@ -93,15 +90,14 @@ This topic describes how to deploy [!INCLUDE[navnow](includes/navnow_md.md)] by 
      It will take approximately 30-45 minutes for the script to be completed. If the script is completed without errors, then text similar to the following appears in the console:  
   
     ```  
-    The NAV Server machine is: MyNavVm.cloudapp.net  
-    The NAV Server machine administrator password: 123NavVm!a  
+    The NAV Server machine is: <server>.cloudapp.net  
+    The NAV Server machine administrator 
     The NAV Server Instance is: nav_server_instance_Ins1  
-    The NAV Server account credentials: NSTService/P@ssword312  
-    The Windows client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
-    The Web Client can be accessed at: https://MyNavVm.cloudapp.net/nav_server_instance_Ins1  
+    The NAV Server account credentials:
+    The Windows client can be downloaded via ClickOnce at: https://<server>.cloudapp.net:9004  
+    The Web Client can be accessed at: https://<server>.cloudapp.net/nav_server_instance_Ins1  
     A user has been added to the database with the following credentials:  
-      user=navuser  
-      password=N@Vpw312  
+
     ```  
   
      New virtual machines appear in the Azure management portal under Virtual Machines, and you can access [!INCLUDE[navnow](includes/navnow_md.md)] from the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or [!INCLUDE[nav_web](includes/nav_web_md.md)]. For more information, see [How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure](How-to--Open-Microsoft-Dynamics-NAV-Clients-that-Connect-to-Microsoft-Dynamics-NAV-on-Microsoft-Azure.md).  

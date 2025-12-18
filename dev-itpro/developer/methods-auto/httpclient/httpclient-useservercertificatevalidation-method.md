@@ -2,7 +2,7 @@
 title: "HttpClient.UseServerCertificateValidation(Boolean) Method"
 description: "If true, the client validates the server certificate for all HTTP requests."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ If true, the client validates the server certificate for all HTTP requests. If f
 
 ## Syntax
 ```AL
-CurrentUseServerCertificateValidation :=   HttpClient.UseServerCertificateValidation(UseServerCertificateValidation: Boolean)
+[CurrentUseServerCertificateValidation := ]  HttpClient.UseServerCertificateValidation(UseServerCertificateValidation: Boolean)
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -33,7 +33,7 @@ Set to `true` to validate the server certificate; when set to `false` the valida
 
 
 ## Return Value
-*CurrentUseServerCertificateValidation*  
+*[Optional] CurrentUseServerCertificateValidation*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether the client validates the server certificate or not.
 

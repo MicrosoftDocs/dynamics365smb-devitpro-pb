@@ -4,7 +4,7 @@ description: "Adding a test app to your AL-Go solution for Business Central."
 author: freddyk
 ms.date: 12/30/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-business-central
 ms.author: solsen
 ---

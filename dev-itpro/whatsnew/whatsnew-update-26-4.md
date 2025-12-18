@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 26.4 update 
 ms.author: jswymer
 ms.date: 08/04/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ms.custom:
     - bap-template

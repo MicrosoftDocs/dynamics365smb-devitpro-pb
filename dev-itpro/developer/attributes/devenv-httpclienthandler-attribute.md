@@ -2,7 +2,7 @@
 title: "HttpClientHandler attribute"
 description: "Specifies that the method is an HttpClientHandler method, which catches and handles HTTP requests in test executions."
 ms.author: solsen
-ms.date: 05/16/2025
+ms.date: 08/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,7 +35,7 @@ Specifies that the method is an HttpClientHandler method, which catches and hand
 procedure HttpClientHandler(Request: TestHttpRequestMessage; var Response: TestHttpResponseMessage) IssueOriginalRequest: Boolean;
 ```
 > [!IMPORTANT]
-> The above signature requires the HttpClientHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the HttpClientHandler method to be *global*. Learn more in [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Request*  

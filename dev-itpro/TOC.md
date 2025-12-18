@@ -31,7 +31,16 @@
 #### [Marketing validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
 
-#### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
+#### [AppSource technical validation FAQ](developer/devenv-checklist-submission-faq.md)
+##### [AppSource technical validation process FAQ](developer/devenv-checklist-submission-validation-process.md)
+##### [AppSource app identity FAQ](developer/devenv-checklist-submission-app-identity.md)
+##### [AppSource Azure Application Insights and submission FAQ](developer/devenv-checklist-submission-app-insights.md)
+##### [AppSource app previews FAQ](developer/devenv-checklist-submission-app-preview.md)
+##### [AppSource Business Central offer FAQ](developer/devenv-checklist-submission-offer.md)
+##### [AppSource names, affixes, and ID ranges FAQ](developer/devenv-checklist-submission-name-affix-range.md)
+##### [Develop and maintain AppSource apps FAQ](developer/devenv-checklist-submission-develop-maintain.md)
+##### [AppSource code-signing validation FAQ](developer/devenv-checklist-submission-code-sign.md)
+##### [AppSource channels for questions and issues FAQ](developer/devenv-checklist-submission-channels.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Embed apps
@@ -70,14 +79,16 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
-### [Update 27.0 (preview)](whatsnew/whatsnew-update-27-0.md)
+### [Update 27.2](whatsnew/whatsnew-update-27-2.md)
+### [Update 27.1](whatsnew/whatsnew-update-27-1.md)
+### [Update 27.0](whatsnew/whatsnew-update-27-0.md)
 ### [Update 26.5](whatsnew/whatsnew-update-26-5.md)
-### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
-### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
-### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
-### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
-### [Update 26.0](whatsnew/whatsnew-update-26-0.md)
 ### Updates for earlier major versions
+#### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
+#### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
+#### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
+#### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
+#### [Update 26.0](whatsnew/whatsnew-update-26-0.md)
 #### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
 #### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
 #### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
@@ -198,7 +209,7 @@
 #### [Transfer environments](administration/administration-center-api_environmenttransfer.md)
 #### [Environment settings](administration/administration-center-api_environment_settings.md)
 #### [Notifications](administration/administration-center-api_notifications.md)
-#### [Reschedule updates](administration/administration-center-api_reschedule_updates.md)
+#### [Manage updates](administration/administration-center-api_reschedule_updates.md)
 #### [Session management](administration/administration-center-api_session_management.md)
 #### [Support settings](administration/administration-center-api_support_settings.md)
 #### [Telemetry](administration/administration-center-api_telemetry.md)
@@ -309,6 +320,8 @@
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Activate](administration/resources/dynamics_activate.md)
+#### [Create activate](administration/api/dynamics_activate_create.md)
 ### [Apicategoryroutes](administration/resources/dynamics_apicategoryroutes.md)
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
 #### [Get automation company](administration/api/dynamics_automationcompany_get.md)
@@ -322,6 +335,8 @@
 #### [Delete configuration package](administration/api/dynamics_configurationpackage_delete.md)
 #### [Create configuration package](administration/api/dynamics_configurationpackage_create.md)
 #### [Update configuration package](administration/api/dynamics_configurationpackage_update.md)
+### [Deactivate](administration/resources/dynamics_deactivate.md)
+#### [Create deactivate](administration/api/dynamics_deactivate_create.md)
 ### [Extension](administration/resources/dynamics_extension.md)
 #### [Get extension](administration/api/dynamics_extension_get.md)
 ### [Extension deployment status](administration/resources/dynamics_extensiondeploymentstatus.md)
@@ -330,6 +345,8 @@
 #### [Get extension upload](administration/api/dynamics_extensionupload_get.md)
 #### [Create extension upload](administration/api/dynamics_extensionupload_create.md)
 #### [Update extension upload](administration/api/dynamics_extensionupload_update.md)
+### [Feature management](administration/resources/dynamics_featuremanagement.md)
+#### [Get feature management](administration/api/dynamics_featuremanagement_get.md)
 ### [Permission set](administration/resources/dynamics_permissionset.md)
 #### [Get permission set](administration/api/dynamics_permissionset_get.md)
 ### [Scheduled job](administration/resources/dynamics_scheduledjob.md)
@@ -488,6 +505,8 @@
 ### [AL outline view](developer/devenv-al-outline-view.md)
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
 ### [AL code actions](developer/devenv-code-actions.md)
+### [ALTool](developer/devenv-al-tool.md)
+#### [ALTool package](developer/devenv-al-tool-package.md)
 ### [Syntax and snippets](developer/devenv-syntax.md)
 ### [Object ranges](developer/devenv-object-ranges.md)
 ### [Developer productivity tips](developer/devenv-dev-productivity-tips.md)
@@ -518,6 +537,7 @@
 #### JSON files
 ##### [JSON files](developer/devenv-json-files.md)
 ##### [Launch JSON file](developer/devenv-json-launch-file.md)
+##### [Directory.app.props JSON file](developer/devenv-directory-app-json.md)
 ##### [Migration JSON file](developer/devenv-migration-json-file.md)
 #### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
@@ -747,7 +767,7 @@
 ##### [Classifying data](developer/devenv-classifying-data.md)
 
 #### Modifying data
-##### [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
+##### [Insert, Modify, ModifyAll, Delete, DeleteAll, Truncate methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ##### [Temporary tables](developer/devenv-temporary-tables.md)
 ##### [Virtual tables](developer/devenv-virtual-tables.md)
 ###### [Date virtual table](developer/devenv-date-virtual-table.md)
@@ -1398,6 +1418,7 @@
 
 ## Security
 ### [Security overview](security/security-and-protection.md)
+### [Security scenarios guide](security/security-scenarios-guide.md)
 ### [Tips for business users](security/security-users.md)
 ### [Application](security/security-application.md)
 ### [Setting up Multifactor Authentication (MFA)](security/multifactor-authentication.md)
@@ -1446,7 +1467,59 @@
 ## [On-premises](performance/performance-onprem.md)
 ## [How to work with a performance problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
-<!-- integration-->
+<!-- integration with AI-->
+# Integration with AI
+## Integrate AI using developer tools for Copilot
+### [Overview](developer/ai-integration-landing-page.yml)
+### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
+### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
+### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
+### [Prepare your app Help for Copilot (preview)](developer/ai-prepare-app-help-copilot.md)
+### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [Business Central AI resources (preview)](developer/ai-dev-tools-resources.md)
+### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
+### [Token counting in AI](developer/ai-system-app-token-counting.md)
+### [Function calling in AI](developer/ai-system-app-function-calling.md)
+### Extend Copilot in Business Central 
+#### [Introduction](developer/ai-build-experience-overview.md)
+#### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### Build Copilot user experience
+##### [Overview](developer/ai-build-experience.md)
+##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
+##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
+##### [Design content mode](developer/copilot-design-content-mode.md)
+##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
+##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
+#### Test Copilot capability in AL
+##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
+##### [Datasets](developer/ai-test-copilot-datasets.md)
+##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
+##### [AI test tool](developer/ai-test-copilot-testtool.md)
+##### [Best practices](developer/ai-test-copilot-bestpractices.md)
+## Develop AI with machine learning APIs
+### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
+### [Prediction API overview](developer/ml-prediction-api-overview.md)
+### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
+## Create agents that connect to Business Central
+### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## Agent playground (preview)
+### [Overview](ai/ai-agent-playground-landing-page.yml)
+### [Agent playground](ai/ai-agent-playground.md)
+### [Create and activate](ai/ai-agent-playground-create.md)
+### [Write effective instructions](ai/ai-agent-playground-effective-instructions.md)
+### [Instruction keywords](ai/ai-agent-playground-instruction-keywords.md)
+### [Integrate with the Tasks AL API](ai/ai-agent-playground-tasks-api.md)
+### [Set up permissions and profiles](ai/ai-agent-playground-permissions-profiles.md)
+### [Run a playground agent](ai/ai-agent-playground-run-agent.md)
+### [Iterate and manage](ai/ai-agent-playground-iterate.md)
+### [Export and import](ai/ai-agent-playground-export-import.md)
+### [Best practices](ai/ai-agent-playground-best-practices.md)
+### [Create a Sales Validation Agent](ai/ai-agent-playground-sales-validation.md)
+### [Transparency note: Business Central agent playground](ai/transparency-note-agent-playground.md)
+<!-- end integration with AI-->
+
 # Integration
 ## [Integration overview](developer/integration-overview.md)
 <!-- web service -->
@@ -1587,39 +1660,6 @@
 ### [Using webhooks to track data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
 
-## Integrating AI using developer tools for Copilot
-### [Overview](developer/ai-integration-landing-page.yml)
-### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
-### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
-### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
-### [Prepare your app Help for Copilot (preview)](developer/ai-prepare-app-help-copilot.md)
-### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
-### [Business Central AI resources (preview)](developer/ai-dev-tools-resources.md)
-### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
-### [Token counting in AI](developer/ai-system-app-token-counting.md)
-### [Function calling in AI](developer/ai-system-app-function-calling.md)
-### Extend Copilot in Business Central 
-#### [Introduction](developer/ai-build-experience-overview.md)
-#### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
-#### Build Copilot user experience
-##### [Overview](developer/ai-build-experience.md)
-##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
-##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
-##### [Design content mode](developer/copilot-design-content-mode.md)
-##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
-##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
-#### Test Copilot capability in AL
-##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
-##### [Datasets](developer/ai-test-copilot-datasets.md)
-##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
-##### [AI test tool](developer/ai-test-copilot-testtool.md)
-##### [Best practices](developer/ai-test-copilot-bestpractices.md)
-## Developing AI with machine learning APIs
-### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
-### [Prediction API overview](developer/ml-prediction-api-overview.md)
-### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
-
 <!-- Office apps and Microsoft 365 start -->
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
@@ -1677,7 +1717,8 @@
 
 ### Data virtualization
 #### [Integrate with Microsoft Dataverse via virtual tables](powerplatform/powerplat-overview.md)
-#### [Table modeling for virtual tables](powerplatform/powerplat-entity-modeling.md)
+#### [Working with virtual tables](powerplatform/powerplat-entity-modeling.md)
+#### [Create synthetic table relationships](powerplatform/create-synthetic-relationships-virtual-tables.md)
 #### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
 #### [Business Central and Dataverse admin reference for virtual tables](powerplatform/powerplat-admin-reference.md)
 #### [FAQ for virtual tables](powerplatform/powerplat-faq.md)
@@ -1718,7 +1759,11 @@
 #### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 #### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
-
+<!-- Microsoft Copilot Studio -->
+### Integrating with Microsoft Copilot Studio
+#### [Create agents that connect to Business Central](ai/create-agent-in-copilot-studio.md)
+#### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md)
+<!-- end Microsoft Copilot Studio -->
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
@@ -1803,6 +1848,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2025 release wave 2](deployment/system-requirements-business-central-v27.md)
 #### [2025 release wave 1](deployment/system-requirements-business-central-v26.md)
 #### [2024 release wave 2](deployment/system-requirements-business-central-v25.md)
 #### [2024 release wave 1](deployment/system-requirements-business-central-v24.md)
@@ -1930,64 +1976,47 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
-### Business Central 2025 release wave 1
+### [Minor update compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+### Business Central 2025 release wave 2 (v27)
+#### [Overview of upgrade to v27](upgrade/upgrade-overview-v27.md)
+#### [Before upgrading to v27](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Upgrade to v27](upgrade/upgrade-unmodified-application-to-v27.md)
+#### [Installing v27 minor update](upgrade/upgrading-cumulative-update-v27.md)
+### Business Central 2025 release wave 1 (v26)
 #### [Overview](upgrade/upgrade-overview-v26.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v26.md)
-#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
-#### Upgrade application and data
-##### [From v14 unmodified C/AL application to v25](upgrade/upgrade-unmodified-application-v14-v25.md)
-##### [From v14 customized C/AL application to v25](upgrade/upgrade-to-microsoft-base-app-v25.md)
-##### [From v15 and later to v26](upgrade/upgrade-unmodified-application-to-v26.md)
-#### Related articles
-##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### Migrating tables and fields between extensions
-###### [Overview](developer/devenv-migrate-table-fields.md)
-###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-##### Data migration toolkit - India
-###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### [Before upgrading to v26](upgrade/upgrade-considerations-v26.md)
+#### [Upgrade to v26](upgrade/upgrade-unmodified-application-to-v26.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v26.md)
-### Business Central 2024 release wave 2
+### Business Central 2024 release wave 2 (v25)
 #### [Overview](upgrade/upgrade-overview-v25.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
-#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade permission sets](upgrade/upgrade-permissions.md)
 #### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
 #### Upgrade application and data
 ##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v25.md)
 ##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v25.md)
 ##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v25.md)
-#### Related articles
-##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### Migrating tables and fields between extensions
-###### [Overview](developer/devenv-migrate-table-fields.md)
-###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-##### Data migration toolkit - India
-###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v25.md)
-### Business Central 2024 release wave 1
-#### [Overview](upgrade/upgrade-overview-v24.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
-#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
-#### Upgrade application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v24.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v24.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v24.md)
-#### Related articles
-##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### Migrating tables and fields between extensions
-###### [Overview](developer/devenv-migrate-table-fields.md)
-###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-##### Data migration toolkit - India
-###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v24.md)
 ### Earlier versions
+#### Business Central 2024 release wave 1
+##### [Overview](upgrade/upgrade-overview-v24.md)
+##### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+##### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrade permission sets](upgrade/upgrade-permissions.md)
+##### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
+##### Upgrade application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v24.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v24.md)
+###### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v24.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data migration toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v24.md)
 #### Business Central 2023 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v23.md)
 ##### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
@@ -2177,10 +2206,21 @@
 ###### [Upgrading the data: Multitenant mode](upgrade/upgrading-the-data-multitenant.md)
 ###### [Quick reference](upgrade/multitenant-upgrade-checklist.md)
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update.md)
+### Related articles
+#### [Convert to AL](upgrade/devenv-code-conversion.md)
+#### Migrating tables and fields between extensions
+##### [Overview](developer/devenv-migrate-table-fields.md)
+##### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+##### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Data migration toolkit - India
+##### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 ### [Some known issues](upgrade/known-issues.md)
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
+## [Transparency note: Semantic Metadata Search in Business Central](ai/transparency-note-semantic-metadata-search.md)  
+## [Transparency note: Business Central Agent Playground](ai/transparency-note-agent-playground.md)
+
 <!-- end upgrade -->
 <!--on-prem ends-->

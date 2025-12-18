@@ -1,31 +1,36 @@
 ---
 title: Business Central Admin Center API - Notifications
-description: Learn about the Business Central administration center API for setting up notifications.
+ms.author: jswymer
+description: Learn how to set up and manage notifications using the Business Central Admin Center API. Discover endpoints for creating, retrieving, and deleting recipients.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 11/17/2025
 ---
 
 # Business Central Admin Center API - Notifications (API)
 
-Notifications are sent to the recipient email addresses set up for the tenant. For example, notifications are sent for update availability, successful updates, update failures, and extension validations.
+Notifications are sent to the recipient email addresses that are set up for the tenant. For example, notifications are sent for update availability, successful updates, update failures, and extension validations.
 
-## Get Notification Recipients
+## Get notification recipients
 
 Returns a list of notification recipients.
 
+```HTTP
+GET /admin/{apiVersion}/settings/notification/recipients
 ```
-GET /admin/v2.24/settings/notification/recipients
-```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
 Returns a wrapped array of recipients.
 
-```
+```JSON
 {
   "value": 
   [
@@ -38,22 +43,26 @@ Returns a wrapped array of recipients.
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
 `tenantNotFound` - the calling tenant information couldn't be found
 
-## Create Notification Recipient
+## Create notification recipient
 
 Create a new notification recipient.
 
-```
+```HTTP
 Content-Type: application/json
-PUT /admin/v2.24/settings/notification/recipients
+PUT /admin/{apiVersion}/settings/notification/recipients
 ```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Body
 
-```
+```JSON
 {
   "email": string, // Email address of the recipient
   "name": string // Full name of the recipient
@@ -64,7 +73,7 @@ PUT /admin/v2.24/settings/notification/recipients
 
 Returns the newly created recipient.
 
-```
+```JSON
 {
   "id": GUID, // Unique identifier of the recipient
   "email": string, // Email address of the recipient
@@ -72,7 +81,7 @@ Returns the newly created recipient.
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
 `invalidInput` - the targeted property is invalid in some way
 
@@ -83,39 +92,45 @@ Returns the newly created recipient.
 
 `tenantNotFound` - the calling tenant information couldn't be found
 
-## Delete Notification Recipient
+## Delete notification recipient
 
 Deletes an existing notification recipient.
 
-```
-DELETE /admin/v2.24/settings/notification/recipients/{id}
+```HTTP
+DELETE /admin/{apiVersion}/settings/notification/recipients/{id}
 ```
 
-### Route Parameters
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 `id` - The unique identifier of the notification recipient to delete.
 
-### Expected Error Codes
+### Expected error codes
 
 `invalidInput` - the targeted property is invalid in some way
 
-   - target: {id} - provided id can't be the empty guid
+   - target: {id} - provided ID can't be the empty GUID
 
 `tenantNotFound` - the calling tenant information couldn't be found
 
-## Get Notification Settings
+## Get notification settings
 
 Returns the full set of notification settings including the list of recipients.
 
+```HTTP
+GET /admin/{apiVersion}/settings/notification
 ```
-GET /admin/v2.24/settings/notification
-```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
 ### Response
 
 Returns the notification settings.
 
-```
+```JSON
 {
   "aadTenantId": GUID, // AAD Tenant ID of the caller
   "recipients": [
@@ -128,7 +143,7 @@ Returns the notification settings.
 }
 ```
 
-### Expected Error Codes
+### Expected error codes
 
 `tenantNotFound` - the calling tenant information couldn't be found
 
@@ -138,3 +153,4 @@ Returns the notification settings.
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+
