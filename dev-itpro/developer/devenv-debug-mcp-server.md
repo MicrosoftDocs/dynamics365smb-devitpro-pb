@@ -18,7 +18,7 @@ The Troubleshooting Model Context Protocol (MCP) Server is an AI-powered debuggi
 
 Use the Troubleshooting MCP Server when you want Copilot to help analyze:
 
-- **Runtime errors** - Understand how execution reached an error point
+- **AL runtime errors** - Understand how execution reached an error point
 - **Complex call stacks** - Trace method calls across multiple application objects
 - **Variable state** - Inspect variable values at specific execution points
 - **Logic flow issues** - Understand why code took a particular path
@@ -249,6 +249,7 @@ The following best practices can help you get the most out of the Troubleshootin
 - Request pattern detection in error scenarios  
 - Get AI insights on why errors occurred  
 - Use for test failure analysis
+- Use for fixing code
 
 ### Don't
 
