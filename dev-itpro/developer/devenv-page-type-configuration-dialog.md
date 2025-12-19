@@ -55,12 +55,6 @@ Within the `Content` area, you can organize fields into groups to structure rela
 
 The `ConfigurationDialog` page type primarily uses system actions to provide a consistent user experience.
 
-|Action area|Description|
-|-----------|-----------|
-|`SystemActions` | Contains predefined system actions for the dialog, such as `OK` and `Cancel`.|
-|`Promoted` | Standard actions that can be promoted for better visibility.|
-|`Processing` | Custom actions for specific configuration tasks.|
-
 ### System actions
 
 System actions in a `ConfigurationDialog` provide the primary interaction points:
