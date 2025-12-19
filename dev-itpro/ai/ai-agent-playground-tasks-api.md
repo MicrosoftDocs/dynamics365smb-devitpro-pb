@@ -165,7 +165,6 @@ Agents can process attachments with the following file types:
 
 - **PDF documents** (.pdf) - Invoices, purchase orders, contracts, reports
 - **Image files** (.png, .jpg, .jpeg) - Scanned documents, receipts, product images
-- **Office documents** Word (.docx), Excel (.xlsx), PowerPoint (.pptx)
 
 #### File size limits
 
