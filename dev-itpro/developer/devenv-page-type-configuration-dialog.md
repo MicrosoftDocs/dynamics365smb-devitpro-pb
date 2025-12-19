@@ -86,6 +86,8 @@ These actions can have their captions and tooltips customized to match the speci
 
 The following example shows the `CustomAgentSetup` page that contains a configuration dialog for setting up an agent. It demonstrates how to use the `group(StartCard)` control with `ShowCaption = false` to create individual card sections within the dialog.
 
+```al
+
 namespace System.Agents.Playground.CustomAgent;
 
 using System.Agents;
@@ -549,7 +551,7 @@ page 4377 "Custom Agent Setup"
         NewInstructionsTxt: Text;
         SummaryTxt: Text;
 }
-
+```
 
 ## Key features and best practices
 
