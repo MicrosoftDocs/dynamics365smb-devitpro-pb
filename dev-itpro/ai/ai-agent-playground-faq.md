@@ -24,7 +24,7 @@ This article answers common questions about using the Agent playground in [!INCL
 
 ### Can I link a mailbox to a playground agent like the Sales Order Agent?
 
-Yes, you can integrate email functionality with playground agents. [VERIFY: Add link to sample code in BCTech repository showing mailbox integration patterns]
+Yes, you can integrate email functionality with playground agents. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
 
 This allows you to:
 
