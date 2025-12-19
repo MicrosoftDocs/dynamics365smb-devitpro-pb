@@ -152,14 +152,11 @@ end;
 
 Attachments enable agents to process documents like invoices, purchase orders, receipts, contracts, and other business documents. The agent can extract data from these files and use the information to complete tasks.
 
-<!--added for attachment -->
 ### Attachment capabilities and limitations
 
 When working with attachments in agent tasks, be aware of the following capabilities and constraints:
 
 #### Supported file types
-
-<!-- verify -->
 
 Agents can process attachments with the following file types:
 
@@ -192,7 +189,7 @@ When processing PDF documents, agents can handle up to **10 pages** per document
   - Processing the document in multiple tasks
 - Test your document processing scenarios with typical document sizes during prototyping
 
-> [!IMPORTANT]
+> [!NOTE]
 > The 10-page limit addresses known limitations with multi-page PDF processing. Always test with representative documents to ensure your scenarios work within these constraints.
 
 ### Process attachments with custom logic
@@ -403,7 +400,6 @@ begin
     AgentTaskCU.StopTask(AgentTask, true);
 end;
 ```
-<!-- End added for attachment -->
 
 ## Writing AL code specific to agent sessions
 
