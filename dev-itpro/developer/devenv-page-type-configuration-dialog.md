@@ -51,6 +51,24 @@ Within the `Content` area, you can organize fields into groups to structure rela
 - **Fields** - Individual configuration options with validation and assist-edit capabilities
 - **Parts** - Embed subpages for complex configuration scenarios
 
+#### Defining the start card
+
+The `ConfigurationDialog` page type does not have a dedicated start card area. Instead, you can use `group` inside the `Content` area to create sections that guide users through the configuration process and omit the caption for the group to create a clean look, as shown in the following example.
+
+```al
+group(FieldName; BooleanSource)
+{
+    ApplicationArea = All;
+    ShowCaption = false;
+
+    trigger OnValidate();
+    begin
+    end;
+}
+```
+
+The example in the **Example** section demonstrates how to create a configuration dialog using groups and fields effectively.
+
 ## Actions in the ConfigurationDialog page
 
 The `ConfigurationDialog` page type primarily uses system actions to provide a consistent user experience.
@@ -66,43 +84,158 @@ These actions can have their captions and tooltips customized to match the speci
 
 ## Example
 
-The following example shows a configuration dialog for setting up an agent. The dialog collects agent settings including name, instructions, profile, and permissions before creating or updating the agent configuration.
+The following example shows the `CustomAgentSetup` page that contains a configuration dialog for setting up an agent. It demonstrates how to use the `group(StartCard)` control with `ShowCaption = false` to create individual card sections within the dialog.
 
-```al
-page 50100 "Agent Configuration Dialog"
+namespace System.Agents.Playground.CustomAgent;
+
+using System.Agents;
+using System.Agents.Playground;
+using System.AI;
+using System.Environment.Configuration;
+using System.Reflection;
+using System.Security.AccessControl;
+
+page 4377 "Custom Agent Setup"
 {
     PageType = ConfigurationDialog;
     Extensible = false;
     ApplicationArea = All;
+    RefreshOnActivate = true;
+    IsPreview = true;
     Caption = 'Configure agent';
     InstructionalText = 'Configure which instructions the agent follows, its permissions, and how it appears to users.';
-    SourceTable = "Agent Setup";
+    AdditionalSearchTerms = 'Playground agent, Custom Agent, Agent';
+    SourceTable = "Custom Agent Setup";
     SourceTableTemporary = true;
-    RefreshOnActivate = true;
+    InherentEntitlements = X;
+    HelpLink = 'https://go.microsoft.com/fwlink/?linkid=2344702';
 
     layout
     {
         area(Content)
         {
+            part(AgentSetupPart; "Agent Setup Part")
+            {
+                ApplicationArea = All;
+                Visible = AgentSetupPartVisible;
+                UpdatePropagation = Both;
+            }
+            group(StartCard)
+            {
+                Visible = not AgentSetupPartVisible;
+
+                group(Header)
+                {
+                    field(Badge; AgentSetupBuffer.Initials)
+                    {
+                        ShowCaption = false;
+                        Editable = false;
+                        ToolTip = 'The badge of the agent.';
+                    }
+                    field(Type; AgentSetupBuffer."Agent Metadata Provider")
+                    {
+                        ShowCaption = false;
+                        Editable = false;
+                        ToolTip = 'Specifies the type of the agent.';
+                    }
+                    field(Name; AgentSetupBuffer."Display Name")
+                    {
+                        ShowCaption = false;
+                        Editable = false;
+                        ToolTip = 'The name of the agent.';
+                    }
+                    field(State; AgentSetupBuffer.State)
+                    {
+                        Caption = 'Active';
+                        ToolTip = 'Specifies the state of the agent, such as enabled or disabled.';
+
+                        trigger OnValidate()
+                        begin
+                            AgentSetupBuffer."State Updated" := true;
+                            AgentSetupBuffer.Modify();
+                            IsUpdated := true;
+                        end;
+                    }
+                    field(UserSettingsLink; ManageUserAccessLbl)
+                    {
+                        Caption = 'Coworkers can use this agent.';
+                        ApplicationArea = All;
+                        ToolTip = 'Specifies the user access control settings for the agent.';
+
+                        trigger OnDrillDown()
+                        var
+                            AgentSetup: Codeunit "Agent Setup";
+                        begin
+                            if AgentSetup.UpdateUserAccessControl(AgentSetupBuffer) then
+                                IsUpdated := true;
+                        end;
+                    }
+                }
+
+                field(Summary; SummaryTxt)
+                {
+                    Caption = 'Summary';
+                    MultiLine = true;
+                    Editable = false;
+                    ToolTip = 'Specifies a brief description of the agent.';
+                }
+            }
             group(AgentDetails)
             {
                 Caption = 'About the agent';
-
-                field(AgentName; Rec."Display Name")
+                field(AgentUserName; AgentName)
                 {
-                    ApplicationArea = All;
                     Caption = 'Name';
+                    ToolTip = 'Specifies the unique user name of the agent.';
+                    Editable = IsFirstTimeSetup;
+
+                    trigger OnValidate()
+                    var
+                        CustomAgentSetup: Codeunit "Custom Agent Setup";
+                    begin
+                        IsUpdated := true;
+
+                        if AgentSetupBuffer."Display Name" = '' then
+                            AgentSetupBuffer.Validate("Display Name", AgentName);
+
+                        if Rec.Initials = '' then begin
+                            Rec.Validate(Initials, CustomAgentSetup.GenerateInitialsFromName(AgentName));
+                            Rec.Modify(true);
+                            AgentSetupBuffer.Validate(Initials, Rec.Initials);
+                            AgentSetupBuffer.Modify(true);
+                        end;
+
+                        // The User Name is a Code[50], but we want to preserve the casing for the display name.
+                        AgentName := AgentName.ToUpper();
+                        AgentSetupBuffer.Validate("User Name", AgentName);
+                        AgentSetupBuffer.Modify(true);
+                    end;
+                }
+                field(AgentDisplayName; AgentSetupBuffer."Display Name")
+                {
+                    Caption = 'Display name';
                     ToolTip = 'Specifies the display name of the agent.';
 
                     trigger OnValidate()
                     begin
+                        AgentSetupBuffer.Validate("Display Name", AgentSetupBuffer."Display Name");
                         IsUpdated := true;
-                        UpdateControls();
+                    end;
+                }
+                field(InitialsText; Rec.Initials)
+                {
+                    Caption = 'Initials';
+                    ToolTip = 'Specifies the initials of the agent.';
+
+                    trigger OnValidate()
+                    begin
+                        AgentSetupBuffer.Validate(Initials, Rec.Initials);
+                        AgentSetupBuffer.Modify(true);
+                        IsUpdated := true;
                     end;
                 }
                 field(AgentDescription; Rec.Description)
                 {
-                    ApplicationArea = All;
                     Caption = 'Description';
                     MultiLine = true;
                     ToolTip = 'Specifies the description of the agent.';
@@ -110,17 +243,7 @@ page 50100 "Agent Configuration Dialog"
                     trigger OnValidate()
                     begin
                         IsUpdated := true;
-                    end;
-                }
-                field(State; Rec.State)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Active';
-                    ToolTip = 'Specifies whether the agent is active or not.';
-
-                    trigger OnValidate()
-                    begin
-                        IsUpdated := true;
+                        SummaryTxt := GetSummaryText();
                     end;
                 }
                 group(InstructionGroup)
@@ -130,19 +253,30 @@ page 50100 "Agent Configuration Dialog"
 
                     field(EditInstructions; EditInstructionsLbl)
                     {
-                        ApplicationArea = All;
                         Caption = 'Edit instructions';
                         ShowCaption = false;
-                        ToolTip = 'Opens a dialog to edit the agent instructions.';
+                        ApplicationArea = All;
+                        ToolTip = 'Specifies the instructions for the agent.';
                         Editable = false;
 
                         trigger OnDrillDown()
                         var
-                            InstructionsDialog: Page "Agent Instructions Dialog";
+                            TempCustomAgentSetup: Record "Custom Agent Setup" temporary;
+                            CustomAgentInstructionsDialog: Page "Custom Ag. Instructions Dialog";
                         begin
-                            if InstructionsDialog.RunModal() = Action::OK then begin
-                                InstructionText := InstructionsDialog.GetInstructions();
+                            CustomAgentInstructionsDialog.SetReadOnlyMode(false);
+                            CustomAgentInstructionsDialog.SetIsTemporary(true);
+                            CustomAgentInstructionsDialog.SetUserSecurityId(Rec."User Security ID");
+                            if (NewInstructionsTxt <> '') then
+                                CustomAgentInstructionsDialog.SetInstructions(NewInstructionsTxt)
+                            else begin
+                                TempCustomAgentSetup."User Security ID" := Rec."User Security ID";
+                                TempCustomAgentSetup.Insert();
+                            end;
+
+                            if CustomAgentInstructionsDialog.RunModal() = Action::OK then begin
                                 IsUpdated := true;
+                                NewInstructionsTxt := CustomAgentInstructionsDialog.GetInstructions();
                             end;
                         end;
                     }
@@ -155,19 +289,25 @@ page 50100 "Agent Configuration Dialog"
                 group(ProfileGroup)
                 {
                     Caption = 'Profile (role)';
-                    InstructionalText = 'Choose the user profile that the agent uses when it completes tasks.';
+                    InstructionalText = 'Choose the user profile that the agent uses when it completes tasks. The agent can only see the fields and actions that the profile makes visible.';
 
-                    field(Profile; ProfileName)
+                    field(Profile; ProfileDisplayName)
                     {
-                        ApplicationArea = All;
-                        Caption = 'Profile';
-                        ToolTip = 'Specifies the profile assigned to the agent.';
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Setup profile';
+                        ToolTip = 'Specifies the profile that is associated with the agent.';
                         Editable = false;
 
                         trigger OnAssistEdit()
+                        var
+                            Agent: Codeunit Agent;
+                            UserSettings: Codeunit "User Settings";
                         begin
-                            if SelectProfile() then
+                            TempUserSettingsRecord."User Security ID" := AgentSetupBuffer."User Security ID";
+                            if Agent.ProfileLookup(TempUserSettingsRecord) then begin
+                                ProfileDisplayName := UserSettings.GetProfileName(TempUserSettingsRecord);
                                 IsUpdated := true;
+                            end;
                         end;
                     }
                 }
@@ -176,19 +316,17 @@ page 50100 "Agent Configuration Dialog"
                     Caption = 'Permissions';
                     InstructionalText = 'Define access rights to control what the agent can work with.';
 
-                    field(ManagePermissions; ManagePermissionsLbl)
+                    field(Permissions; ManagePermissionsLbl)
                     {
-                        ApplicationArea = All;
                         Caption = 'Manage permissions';
                         ShowCaption = false;
-                        ToolTip = 'Opens a dialog to manage agent permissions.';
+                        ApplicationArea = All;
+                        ToolTip = 'Defines the permissions for the agent.';
                         Editable = false;
 
                         trigger OnDrillDown()
-                        var
-                            PermissionsPage: Page "Agent Permissions";
                         begin
-                            if PermissionsPage.RunModal() = Action::OK then
+                            if Page.RunModal(Page::"Custom Ag. Select Acc Control", TempAccessControlBuffer) = Action::LookupOK then
                                 IsUpdated := true;
                         end;
                     }
@@ -196,7 +334,6 @@ page 50100 "Agent Configuration Dialog"
             }
         }
     }
-
     actions
     {
         area(SystemActions)
@@ -205,90 +342,214 @@ page 50100 "Agent Configuration Dialog"
             {
                 Caption = 'Update';
                 ToolTip = 'Apply the changes to the agent setup.';
-                Enabled = IsValid and IsUpdated;
+                Enabled = IsUpdated;
             }
+
             systemaction(Cancel)
             {
                 Caption = 'Cancel';
-                ToolTip = 'Discard the changes and close the setup page.';
+                ToolTip = 'Discards the changes and closes the setup page.';
             }
         }
     }
 
-    trigger OnOpenPage()
+    local procedure GetIsUpdated()
+    var
+        AgentSetup: Codeunit "Agent Setup";
     begin
-        if Rec.IsEmpty() then begin
-            Rec.Init();
-            Rec.Insert();
-        end;
-        
-        IsValid := false;
+        if not AgentSetupPartVisible then
+            exit;
+
+        IsUpdated := IsUpdated or AgentSetup.GetChangesMade(AgentSetupBuffer);
+    end;
+
+    trigger OnOpenPage()
+    var
+        AgentPlaygroundPermissions: Codeunit "Agent Playground Permissions";
+        UserIdFilter: Text;
+    begin
+        AgentPlaygroundPermissions.VerifyCurrentUserCanCreateCustomAgent();
+        if not AzureOpenAI.IsEnabled(Enum::"Copilot Capability"::"Custom Agent") then
+            Error(CustomAgentIsNotEnabledInCopilotCapabilitiesErr);
+
+        UserIdFilter := Rec.GetFilter("User Security ID");
+        if not Evaluate(Rec."User Security ID", UserIdFilter) then
+            Clear(Rec."User Security ID");
+
+        if not IsNullGuid(Rec."User Security ID") then
+            CurrPage.Caption(ConfigureAgentCaptionLbl)
+        else
+            CurrPage.Caption(CreateAgentCaptionLbl);
+
         IsUpdated := false;
+        UpdateControls();
+    end;
+
+    trigger OnAfterGetRecord()
+    begin
         UpdateControls();
     end;
 
     trigger OnAfterGetCurrRecord()
     begin
-        UpdateControls();
+        GetIsUpdated();
+    end;
+
+    trigger OnModifyRecord(): Boolean
+    begin
+        IsUpdated := true;
     end;
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     var
-        AgentMgt: Codeunit "Agent Management";
+        CustomAgentSetup: Codeunit "Custom Agent Setup";
     begin
         if CloseAction = CloseAction::Cancel then
             exit(true);
 
-        // Validate required configuration
-        if not ValidateConfiguration() then
-            exit(false);
+        if AgentName = '' then
+            Error(AgentMustHaveNameErr);
 
-        // Apply the agent configuration
-        AgentMgt.UpdateAgentFromSetup(Rec, InstructionText, ProfileName);
+        GetIsUpdated();
+        IsAgentConfiguredCheck();
+        IsAgentEnabledCheck();
+
+        CustomAgentSetup.UpdateAgent(AgentSetupBuffer, TempAccessControlBuffer);
+        Rec."User Security ID" := AgentSetupBuffer."User Security ID";
+        ApplyCustomAgentSetupValues();
+        ApplyUserSettingsValues();
+
         exit(true);
     end;
 
-    local procedure SelectProfile(): Boolean
+    local procedure ApplyCustomAgentSetupValues()
     var
-        AllProfile: Record "All Profile";
+        NewCustomAgentSetupRecord: Record "Custom Agent Setup";
     begin
-        if Page.RunModal(Page::"Available Profiles", AllProfile) = Action::LookupOK then begin
-            ProfileName := AllProfile."Profile ID";
-            exit(true);
+        if not NewCustomAgentSetupRecord.Get(Rec."User Security ID") then begin
+            NewCustomAgentSetupRecord."User Security ID" := Rec."User Security ID";
+            NewCustomAgentSetupRecord.Insert(true);
         end;
-        exit(false);
+
+        NewCustomAgentSetupRecord.Initials := Rec.Initials;
+        NewCustomAgentSetupRecord.Description := Rec.Description;
+        NewCustomAgentSetupRecord."User Security ID" := Rec."User Security ID";
+        NewCustomAgentSetupRecord.Modify(true);
+        if NewInstructionsTxt <> '' then
+            NewCustomAgentSetupRecord.SetInstructions(NewInstructionsTxt);
     end;
 
-    local procedure ValidateConfiguration(): Boolean
+    local procedure ApplyUserSettingsValues()
+    var
+        Agent: Codeunit "Agent";
     begin
-        if Rec."Display Name" = '' then
-            Error('You must specify an agent name.');
-            
-        if InstructionText = '' then
-            Error('The agent must have instructions assigned.');
-            
-        if ProfileName = '' then
-            Error('The agent must have a profile assigned.');
+        if TempUserSettingsRecord."Profile ID" <> '' then
+            Agent.SetProfile(AgentSetupBuffer."User Security ID", TempUserSettingsRecord."Profile ID", TempUserSettingsRecord."App ID");
+    end;
 
-        exit(true);
+    local procedure GetSummaryText(): Text
+    begin
+        exit(StrSubstNo(AgentSummaryWithAIWarningLbl, Rec.Description));
     end;
 
     local procedure UpdateControls()
+    var
+        CustomAgentSetup: Codeunit "Custom Agent Setup";
+        AgentSetup: Codeunit "Agent Setup";
+        UserSettings: Codeunit "User Settings";
     begin
-        IsValid := (Rec."Display Name" <> '') and 
-                   (InstructionText <> '') and 
-                   (ProfileName <> '');
+        IsFirstTimeSetup := IsNullGuid(Rec."User Security ID");
+
+        if Rec.IsEmpty() then begin
+            if not IsFirstTimeSetup then begin
+                CustomAgentSetupRecord.Get(Rec."User Security ID");
+                Rec.TransferFields(CustomAgentSetupRecord, true);
+            end;
+            Rec.Insert();
+
+            AgentSetup.GetSetupRecord(AgentSetupBuffer, Rec."User Security ID", Enum::"Agent Metadata Provider"::"Custom Agent", '', '', SummaryTxt);
+            AgentName := AgentSetupBuffer."User Name";
+
+            if IsNullGuid(Rec."User Security ID") then
+                Rec.Initials := '';
+        end;
+
+        SummaryTxt := GetSummaryText();
+
+        if AgentSetupPartVisible then begin
+            CurrPage.AgentSetupPart.Page.Initialize(Rec."User Security ID", Enum::"Agent Metadata Provider"::"Custom Agent", '', '', SummaryTxt);
+            CurrPage.AgentSetupPart.Page.GetAgentSetupBuffer(AgentSetupBuffer);
+        end;
+
+        if TempAccessControlBuffer.IsEmpty() then
+            CustomAgentSetup.GetAccessControl(Rec."User Security ID", TempAccessControlBuffer);
+
+        AgentType := CustomAgentSetup.GetAgentType();
+
+        if (TempUserSettingsRecord."Profile ID" = '') and (not IsNullGuid(AgentSetupBuffer."User Security ID")) then begin
+            UserSettings.GetUserSettings(AgentSetupBuffer."User Security ID", TempUserSettingsRecord);
+            ProfileDisplayName := UserSettings.GetProfileName(TempUserSettingsRecord);
+        end;
+    end;
+
+    local procedure IsAgentConfiguredCheck()
+    var
+        TempAllProfile: Record "All Profile" temporary;
+        CustomAgentSetup: Codeunit "Custom Agent Setup";
+        InstructionsTxt: Text;
+    begin
+        if (NewInstructionsTxt = '') then
+            if (not CustomAgentSetupRecord.TryGetInstructions(Rec."User Security ID", InstructionsTxt)) or (InstructionsTxt = '') then
+                Error(AgentMustHaveInstructionsErr);
+
+        if (TempAccessControlBuffer.IsEmpty()) then
+            Error(PermissionSetMustBeSetErr);
+
+        if ProfileDisplayName = '' then
+            Error(ProfileMustBeSetErr);
+
+        CustomAgentSetup.GetDefaultProfile(TempAllProfile);
+        if ProfileDisplayName = TempAllProfile."Profile ID" then
+            Error(ProfileMustBeSetErr);
+    end;
+
+    local procedure IsAgentEnabledCheck()
+    var
+        ReadyToActivateLbl: Label 'Ready to activate the agent?';
+    begin
+        if (AgentSetupBuffer.State = AgentSetupBuffer.State::Disabled)
+                and IsNullGuid(Rec."User Security ID") then // Only show the confirmation dialog for the first time
+            if Confirm(ReadyToActivateLbl) then
+                AgentSetupBuffer.State := AgentSetupBuffer.State::Enabled;
     end;
 
     var
-        InstructionText: Text;
-        ProfileName: Text;
-        IsValid: Boolean;
+        CustomAgentSetupRecord: Record "Custom Agent Setup";
+        AgentSetupBuffer: Record "Agent Setup Buffer";
+        TempAccessControlBuffer: Record "Access Control Buffer" temporary;
+        TempUserSettingsRecord: Record "User Settings" temporary;
+        AzureOpenAI: Codeunit "Azure OpenAI";
+        AgentSetupPartVisible: Boolean;
+        AgentType: Text;
+        AgentName: Text[50];
+        ProfileDisplayName: Text;
         IsUpdated: Boolean;
-        EditInstructionsLbl: Label 'Edit instructions';
+        IsFirstTimeSetup: Boolean;
+        CustomAgentIsNotEnabledInCopilotCapabilitiesErr: Label 'The custom agent capability is not enabled in Copilot capabilities.\\Please enable the capability before setting up the agent.';
+        AgentMustHaveInstructionsErr: Label 'The agent must have instructions assigned.';
+        ProfileMustBeSetErr: Label 'The agent must have a profile assigned which is not the default profile.';
+        PermissionSetMustBeSetErr: Label 'The agent must have a permission set assigned.';
+        ManageUserAccessLbl: Label 'Manage user access';
         ManagePermissionsLbl: Label 'Manage permissions';
+        EditInstructionsLbl: Label 'Edit instructions';
+        CreateAgentCaptionLbl: Label 'Create agent';
+        ConfigureAgentCaptionLbl: Label 'Configure agent';
+        AgentSummaryWithAIWarningLbl: Label '%1 This agent uses AI - review its actions for accuracy.', Comment = '%1 = User-entered description of the agent';
+        AgentMustHaveNameErr: Label 'The agent must have a name.';
+        NewInstructionsTxt: Text;
+        SummaryTxt: Text;
 }
-```
+
 
 ## Key features and best practices
 
