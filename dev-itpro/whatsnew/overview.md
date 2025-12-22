@@ -13,25 +13,20 @@ ms.topic: whats-new
 
 Wondering about upcoming and recently released capabilities in Dynamics 365 Business Central? We've captured all the details, end to end, top to bottom, which you can use for planning.
 
-## What's available and planned for release wave
+## New and planned in release wave
 
-Business Central follows a six-month release cycle called a *release wave*. Each wave groups new, changed, and planned features for that half-year period. Release wave details are available through two sources: Release Planner and Release Plans. These sources use the same underlying data, which is updated regularly throughout the release wave.
+Business Central follows a six-month release cycle called a *release wave*. Each wave groups new, changed, and planned features for that half-year period. Release wave details are available through *Release Planner* and *Release Plans*. These sources use the same underlying data, but present the data differently.
 
-- **Release Planner** presents availability and rollout progress for features across all release waves. It provides an interactive experience to track where and when features become available, letting you filter on features and share them with others. [Check out the release planner site](https://experience.dynamics.com/releaseplans/?app=Business+Central).
+- **Release Planner** tracks feature availability and rollout progress interactively, letting your filter features and share with others. [View the release planner](https://experience.dynamics.com/releaseplans/?app=Business+Central).
 
-- **Release Plans** on Microsoft Learn describe features for specific release waves. Features are organized by functiinal area, and each feature includes a business value, description, and planned public preview and general availability dates. You can also download the release plan as a single PDF. Choose the following links to learn about the latest versions of Business Central.
+- **Release Plans** describe features for specific release waves, including business value, description, and availability dates. You can also download release plans as PDFs. Select a link below for the latest Business Central versions:
 
   - Current wave: [2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/planned-features)
-  - Previous wave: [2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/planned-features)
   - Earlier waves: [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/).
 
-### Explore Business Central
+## New and changed in recent minor updates
 
-Explore the app at the [Dynamics 365 Business Central Capabilities](https://www.microsoft.com/dynamics-365/products/business-central/) site.
-
-## What's new and changed in latest minor updates
-
-Minor updates are released monthly and include newly available release wave features, regulatory updates, and critical service improvements. Each update is documented in a dedicated article published with the release version.
+Minor updates are released monthly with new release wave features, regulatory updates, and critical improvements. Each update is documented in a dedicated article.
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
