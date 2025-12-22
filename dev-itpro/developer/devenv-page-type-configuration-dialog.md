@@ -6,7 +6,7 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 12/11/2025
+ms.date: 12/22/2025
 ms.update-cycle: 180-days
 ms.reviewer: solsen
 ---
@@ -53,7 +53,7 @@ Within the `Content` area, you can organize fields into groups to structure rela
 
 #### Defining the start card
 
-The `ConfigurationDialog` page type does not have a dedicated start card area. Instead, you can use `group` inside the `Content` area to create sections that guide users through the configuration process and omit the caption for the group to create a clean look, as shown in the following example.
+The `ConfigurationDialog` page type uses `group` inside the `Content` area, which is referred to as the `StartCard` in the [Example](#example). With the `StartCard`, you can create sections that guide users through the configuration process and omit the caption for the group to create a clean look. The following example shows how to define a `StartCard` group without a caption:
 
 ```al
 group(FieldName; BooleanSource)
@@ -66,8 +66,6 @@ group(FieldName; BooleanSource)
     end;
 }
 ```
-
-The example in the **Example** section demonstrates how to create a configuration dialog using groups and fields effectively.
 
 ## Actions in the ConfigurationDialog page
 
