@@ -1,4 +1,5 @@
 ﻿# [Development and administration](index.md)
+
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
 ## [Update 27.2](whatsnew/whatsnew-update-27-2.md)
