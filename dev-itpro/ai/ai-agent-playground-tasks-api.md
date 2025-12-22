@@ -154,7 +154,7 @@ Attachments enable agents to process documents like invoices, purchase orders, r
 
 ### Attachment capabilities and limitations
 
-When working with attachments in agent tasks, be aware of the following capabilities and constraints:
+When working with attachments in agent tasks, be aware of the following capabilities and constraints.
 
 #### Supported file types
 
@@ -162,6 +162,9 @@ Agents can process attachments with the following file types:
 
 - **PDF documents** (.pdf) - Invoices, purchase orders, contracts, reports
 - **Image files** (.png, .jpg, .jpeg) - Scanned documents, receipts, product images
+
+> [!NOTE]
+> Be aware that agents only process text out of images and pdfs and not the images themselves.
 
 #### File size limits
 
