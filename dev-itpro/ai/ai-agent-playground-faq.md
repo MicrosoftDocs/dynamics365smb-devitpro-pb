@@ -87,7 +87,6 @@ Learn more about creating tasks programmatically in [Integrate with the Tasks AL
 
 ### Can I write agent instructions in languages other than English?
 
-<!--Disclaimer?-->
 Yes, you can write agent instructions in your local language. The AI models support multiple languages, allowing you to:
 
 - Write instructions in the language most natural for your team
@@ -167,17 +166,6 @@ Choose the approach that best fits your scenario and stage of development:
 - Need **version control** and **ALM** (Application Lifecycle Management)
 
 **Example scenarios:** Custom Copilot features, AI-powered document processing, intelligent automation in extensions
-
-<!--
-#### Graduation path:
-
-Many successful implementations follow this progression:
-
-1. **Start with playground agent** - Validate the concept and gather requirements
-2. **Test in Copilot Studio** - Refine the conversational experience if needed
-3. **Graduate to AL code** - Build production-ready extensions with full capabilities
-
-Learn more in [Agent playground overview (preview)](ai-agent-playground.md). -->
 
 ## UI interaction and guidance
 
