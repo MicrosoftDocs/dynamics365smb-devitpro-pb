@@ -303,6 +303,6 @@ The payload sent from `OnPreRendering` for the example:
 
 ## Related information
 
-[OnPreRendering (report) trigger](/triggers-auto/report/devenv-onprerendering-report-trigger.md)  
-[OnPreRendering (report extension) trigger](/triggers-auto/report/devenv-onprerendering-reportextension-trigger.md)  
+[OnPreRendering (report) trigger](triggers-auto/report/devenv-onprerendering-report-trigger.md)  
+[OnPreRendering (report extension) trigger](triggers-auto/report/devenv-onprerendering-reportextension-trigger.md)  
 [Designing reports](devenv-reports.md)  
