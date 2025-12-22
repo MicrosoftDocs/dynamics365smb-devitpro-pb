@@ -93,7 +93,7 @@ Yes, you can write agent instructions in your local language. The AI models supp
 - Use domain-specific terminology in your native language
 - Provide multilingual support for international implementations
 
-While other languages are supported, English instructions may yield the best results due to the training data used for the AI models.
+While other languages are supported, English instructions might yield the best results due to the training data used for the AI models.
 
 > [!TIP]
 > While instructions can be in any language, consider that many Business Central field names, page names, and technical terms are in English. Mixing languages for technical references while keeping business logic in your local language often works well.
