@@ -9,13 +9,13 @@ ms.custom: bap-template
 ms.topic: whats-new 
 ---
 
-# What's new and planned in Business Central
+# What's new and planned features in Business Central
 
 Wondering about upcoming and recently released capabilities in Dynamics 365 Business Central? We've captured all the details, end to end, top to bottom, which you can use for planning.
 
 ## New and planned in release wave
 
-Business Central follows a six-month release cycle called a *release wave* that groups new, changed, and planned features for the half-year period. Release wave details are available through *Release Planner* and *Release Plans*. These sources use the same underlying data, but present the data differently.
+Business Central follows a six-month release cycle called a *release wave* that groups new, changed, and planned features for the half-year period. Release wave details are available through *Release Planner* and *Release Plans*. These sources use the same underlying data, but present the data differently:
 
 - **Release Planner** interactively view feature availability and rollout progress, letting you filter features and share with others. [View the release planner](https://experience.dynamics.com/releaseplans/?app=Business+Central).
 
