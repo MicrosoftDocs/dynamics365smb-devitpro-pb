@@ -326,6 +326,7 @@ Use `InstructionalText` at both page and group levels to guide users:
 
 ## Related information
 
+[Integrate with the Tasks AL API (preview)](../ai/ai-agent-playground-tasks-api.md)
 [Agent playground (preview)](../ai/ai-agent-playground.md)  
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
