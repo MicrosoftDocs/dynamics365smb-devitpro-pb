@@ -36,7 +36,7 @@ Minor updates are released monthly with new release wave features, regulatory up
 
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 
-For earlier versions, visit the [Updates for earlier major versions](whatsnew-update-16-5.md) section.
+For earlier versions, visit the [Updates for earlier major versions](whatsnew-update-26-5.md) section.
 
 ## Get the latest version
 
