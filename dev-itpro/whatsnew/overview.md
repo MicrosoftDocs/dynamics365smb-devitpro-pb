@@ -9,7 +9,7 @@ ms.custom: bap-template
 ms.topic: whats-new 
 ---
 
-# What's new or changed in Business Central
+# What's new and planned in Business Central
 
 Wondering about upcoming and recently released capabilities in Dynamics 365 Business Central? We've captured all the details, end to end, top to bottom, which you can use for planning.
 
@@ -29,7 +29,7 @@ Business Central follows a six-month release cycle called a *release wave*. Each
 
 Explore the app at the [Dynamics 365 Business Central Capabilities](https://www.microsoft.com/dynamics-365/products/business-central/) site.
 
-## What's available in latest minor updates
+## What's new and changed in latest minor updates
 
 Minor updates are released monthly and include newly available release wave features, regulatory updates, and critical service improvements. Each update is documented in a dedicated article published with the release version.
 
