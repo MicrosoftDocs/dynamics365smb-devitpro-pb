@@ -239,7 +239,7 @@ page 50100 "Agent Configuration"
 
 This example demonstrates the essential patterns of `ConfigurationDialog`:
 
-**1. StartCard pattern**
+#### StartCard pattern
 
 ```al
 group(StartCard)
@@ -248,26 +248,33 @@ group(StartCard)
     // Fields without a visible group caption
 }
 ```
+
 The `StartCard` group has `ShowCaption = false`, creating a clean entry point with just the fields visible.
 
-**2. Card structure**
+#### Card structure
+
 Each subsequent `group` creates a separate card section:
+
 - **InstructionsCard** - Shows caption "Instructions" with guidance
 - **ProfileCard** - Shows caption "Profile" with assist-edit field
 
-**3. Temporary table**
+#### Temporary table
+
 ```al
 SourceTable = "Agent Setup Buffer";
 SourceTableTemporary = true;
 ```
+
 Settings are collected in a temporary table before being applied in `OnQueryClosePage`.
 
-**4. Validation flow**
+#### Validation flow
+
 - **Field validation** - `OnValidate` triggers update the `IsValid` state
 - **Page validation** - `OnQueryClosePage` performs final validation before applying changes
 - **System action enablement** - OK button is enabled only when `IsValid = true`
 
-**5. System actions**
+#### System actions
+
 ```al
 systemaction(OK)
 {
@@ -275,7 +282,8 @@ systemaction(OK)
     Enabled = IsValid;
 }
 ```
-The OK button is customized with a meaningful caption and conditional enablement.
+
+The **OK** button is customized with a meaningful caption and conditional enablement.
 
 ## Key features and best practices
 
