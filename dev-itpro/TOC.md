@@ -861,6 +861,8 @@
 ####### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
 ####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
 ####### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
+###### ConfigurationDialog pages
+####### [ConfigurationDialog page type](developer/devenv-page-type-configurationdialog.md)
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
@@ -1511,7 +1513,6 @@
 ### [Write effective instructions](ai/ai-agent-playground-effective-instructions.md)
 ### [Instruction keywords](ai/ai-agent-playground-instruction-keywords.md)
 ### [Integrate with the Tasks AL API](ai/ai-agent-playground-tasks-api.md)
-### [The ConfigurationDialog page type (preview)](developer/devenv-page-type-configuration-dialog.md)
 ### [Set up permissions and profiles](ai/ai-agent-playground-permissions-profiles.md)
 ### [Run a playground agent](ai/ai-agent-playground-run-agent.md)
 ### [Iterate and manage](ai/ai-agent-playground-iterate.md)
