@@ -20,7 +20,7 @@ ms.reviewer: solsen
 The `ConfigurationDialog` page type is a specialized page type that enables developers to create focused configuration dialogs for setting up and managing application settings, preferences, and configurations for agents. This page type provides a streamlined user experience with a modal dialog interface, system actions for saving or canceling changes, and support for temporary data sources.
 
 > [!IMPORTANT]
-> The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the agent playground capabilities in [Agent playground (preview)](../ai/ai-agent-playground.md).
+> The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the Tasks AL API in [Integrate with the Tasks AL API (preview)](../ai/ai-agent-playground-tasks-api.md).
 
 
 ## Snippet support
@@ -283,7 +283,7 @@ The OK button is customized with a meaningful caption and conditional enablement
 
 ### Temporary tables
 
-Using `SourceTableTemporary = true` is common with `ConfigurationDialog` pages because it allows you to:
+Using `SourceTableTemporary = true` is mandatory with `ConfigurationDialog` pages and allows you to:
 
 - Collect configuration settings without immediately affecting the database
 - Validate all settings together before applying changes
