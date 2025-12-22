@@ -242,6 +242,7 @@ page 50100 "Agent Configuration"
 This example demonstrates the essential patterns of `ConfigurationDialog`:
 
 **1. StartCard pattern**
+
 ```al
 group(StartCard)
 {
