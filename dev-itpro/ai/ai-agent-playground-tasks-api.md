@@ -529,6 +529,7 @@ This API-based approach allows you to build automated workflows during the proto
 [Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
 [Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
+[Agent playground frequently asked questions (preview)](ai-agent-playground-faq.md)  
 [Best practices (preview)](ai-agent-playground-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
 [Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  

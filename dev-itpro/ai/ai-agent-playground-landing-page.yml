@@ -53,6 +53,8 @@ landingContent:
         url: ai-agent-playground-iterate.md
       - text: Export and import a playground agent (preview)
         url: ai-agent-playground-export-import.md
+      - text: Agent playground frequently asked questions (preview)
+        url: ai-agent-playground-faq.md
 # Card
   - title: Prototyping best practices
     linkLists:
