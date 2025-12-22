@@ -54,7 +54,7 @@ Learn more in [Attach files, append, and protect report PDFs in AL](../../devenv
 ## Example
 
 > [!NOTE]
-> This example applies to [!INCLUDE [prod_short](../../includes/prod_short.md)] on-premises only. For more detailed examples, go to [Business Central Tech Samples on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments).
+>  The capability in described in this article works with both [!INCLUDE [prod_short](includes/prod_short.md)] online and on-premises. However, some parts of this example apply to on-premises only. For more detailed examples, go to [Business Central Tech Samples on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments).
 >
 > Sample code that shows how use the `OnPreRendering` report trigger to manage PDF attachments for electronic invoicing in [!INCLUDE [prod_short](../../includes/prod_short.md)] is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments) repository.
 
