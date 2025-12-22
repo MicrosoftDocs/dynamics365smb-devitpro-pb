@@ -56,7 +56,7 @@ Within the `Content` area, you can organize fields into groups to structure rela
 The `ConfigurationDialog` page type uses `group` inside the `Content` area, which is referred to as the `StartCard` in the [Example](#example). With the `StartCard`, you can create sections that guide users through the configuration process and omit the caption for the group to create a clean look. The following example shows how to define a `StartCard` group without a caption:
 
 ```al
-group(FieldName; BooleanSource)
+group(StartCard)
 {
     ApplicationArea = All;
     ShowCaption = false;
