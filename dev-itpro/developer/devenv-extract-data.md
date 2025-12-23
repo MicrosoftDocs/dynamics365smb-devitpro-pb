@@ -35,7 +35,7 @@ The fastest and least disruptive way to retrieve delta loads from [!INCLUDE[prod
 
 1. Enable read scale-out on the [!INCLUDE[prod_short](includes/prod_short.md)] database.
 
-   In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service, read scale-out is automatically enabled on the databases. Learn how to enable read scale-out for on-premises installations in [Configuring database for read scale-out](database-read-scale-out-configuration.md).
+   In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service, read scale-out is automatically enabled on the databases. Learn how to enable read scale-out for on-premises installations in [Configuring database for read scale-out](../administration/database-read-scale-out-configuration.md).
 1. Configure your API page/query to run with read scale‑out.
 
     ```al  
@@ -71,7 +71,7 @@ The fastest and least disruptive way to retrieve delta loads from [!INCLUDE[prod
     }
     ```
 
-    Learn more about API pages in [](devenv-api-pagetype.md)
+    Learn more about API pages in [API page type](devenv-api-pagetype.md).
 1. Filter the API request using the `lastModifiedDateTime` field.
 
     ```http
