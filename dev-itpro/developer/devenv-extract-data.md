@@ -114,7 +114,7 @@ You can use your ETL tool of choice to read and transform data. Read about some 
 
 ### SQL Server Integration Services (SSIS)
 
-For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, one popular tool of choice is SQL Server Integration Services (SSIS) that is shipped with SQL Server. It's possible to autogenerate SSIS packages from a metadata store using script tasks or a tool such as BIML. Learn more about these tools in [About BIML](https://www.varigence.com/biml) and [About SSIS](/sql/integration-services/sql-server-integration-services).
+For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, one popular tool of choice is SQL Server Integration Services (SSIS) that is shipped with SQL Server. It's possible to autogenerate SSIS packages from a metadata store using script tasks or a tool such as Business Intelligence Markup Language (BIML). Learn more about these tools in [About BIML](https://www.varigence.com/what-is-biml) and [About SSIS](/sql/integration-services/sql-server-integration-services).
 
 ### Azure Data Factory
 
