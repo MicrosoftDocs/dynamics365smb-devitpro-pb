@@ -27,7 +27,7 @@ When establishing a data lake or a data warehouse, you typically need to do two 
 
 ### Getting a historical load
 
-The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
+The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database. Learn more in [Exporting databases in the admin center (online)](../administration/tenant-admin-center-database-export.md) and [Create a full database backup (on-premises)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?).
 
 ### Getting delta loads
 
