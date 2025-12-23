@@ -27,16 +27,64 @@ When establishing a data lake or a data warehouse, you typically need to do two 
 
 ### Getting a historical load
 
-The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database. Learn more in [Exporting databases in the admin center (online)](../administration/tenant-admin-center-database-export.md) and [Create a full database backup (on-premises)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?).
+The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database. Learn more in [Exporting databases in the admin center](../administration/tenant-admin-center-database-export.md) and [Create a full database backup (on-premises)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?).
 
 ### Getting delta loads
 
-The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field LastModifiedOn (introduced in version 17.0) to filter only the data that was changed/added since the last time you read data.
+The fastest and least disruptive way to retrieve delta loads from [!INCLUDE[prod_short](includes/prod_short.md)] online is to configure API queries to run on read‑scaleout and filter the results using the data audit field `SystemModifiedAt` (exposed in APIs as `lastModifiedDateTime`). This implementation allows you to retrieve only the records that were added or modified since your last successful read. Here are the high-level steps involved.
+
+1. Enable read scale-out on the [!INCLUDE[prod_short](includes/prod_short.md)] database.
+
+   In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service, read scale-out is automatically enabled on the databases. Learn how to enable read scale-out for on-premises installations in [Configuring database for read scale-out](database-read-scale-out-configuration.md).
+1. Configure your API page/query to run with read scale‑out.
+
+    ```al  
+    page 50123 "Customer Changes API"
+    {
+        PageType = API;
+        DelayedInsert = true;
+        SourceTable = Customer;
+        APIVersion = 'v2.0';
+        APIPublisher = 'contoso';
+        APIGroup = 'customers';
+        EntityName = 'customerChange';
+        EntitySetName = 'customerChanges';
+        Editable = false;
+    
+        // Key for persistent id in API; use SystemId on modern BC
+        ODataKeyFields = SystemId;
+    
+        // Route GETs to read-only replica where possible
+        DataAccessIntent = ReadOnly;
+    
+        layout
+        {
+            area(content)
+            {
+                field(systemId; Rec.SystemId) { }
+                field(no; Rec."No.") { }
+                field(displayName; Rec.Name) { }
+                field(lastModifiedDateTime; Rec.SystemModifiedAt) { Caption = 'lastModifiedDateTime'; }
+                // add any fields required downstream
+            }
+        }
+    }
+    ```
+
+    Learn more about API pages in [](devenv-api-pagetype.md)
+1. Filter the API request using the `lastModifiedDateTime` field.
+
+    ```http
+    GET https://{bc-server}:{port}/{instance}/api/contoso/customers/v2.0/companies({CompanyId})/customerChanges
+    ?$filter=lastModifiedDateTime gt 2025-12-01T00:00:00Z
+    &$orderby=lastModifiedDateTime asc
+    &$top=1000
+    ```
 
 Also consider this pattern: For each company, start by determining which tables that you load data from have new data. You can do this in an AL codeunit that you expose as a web service endpoint. Based on the result of this initial call, only call the APIs that you know will return data. This practice reduces the number of API calls you need to issue for your incremental loads. The impact of this optimization depends on the distribution of new data since last load.
 
 > [!NOTE]
-> Delta links were deprecated in Business Central 2023 release wave 2 (v23)and in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
+> Delta links were deprecated in Business Central 2023 release wave 2 (v23)and in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. Learn more in [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
 
 ## Tools for reading data
 
@@ -44,8 +92,7 @@ For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can just rea
 
 For [!INCLUDE[prod_short](includes/prod_short.md)] online, the only supported option for reading data is using APIs. The APIs can be either the standard APIs that are shipped with [!INCLUDE[prod_short](includes/prod_short.md)] or custom APIs that you build in Visual Studio Code and ship as an extension).
 
-There exists a code sample that you may use to be more productive with APIs: API generator. 
-For more information, see [API query generator](https://github.com/microsoft/BCTech/tree/master/samples/APIQueryGenerator)
+There exists a code sample that you may use to be more productive with APIs: API generator. Learn more in [API query generator](https://github.com/microsoft/BCTech/tree/master/samples/APIQueryGenerator)
 
 ## Throughput of data reads with APIs
 
@@ -57,7 +104,7 @@ Even if the ETL setup reads the historical dataset before switching to increment
 
 ## Stability of ETL pipelines
 
-No matter which tool you choose, you must make your data pipelines robust towards timeouts and design them so that they are rerunnable. All [!INCLUDE[prod_short](includes/prod_short.md)] tables have system fields _SystemRowversion_ and _SystemLastModifiedOn_. For more information about system fields, go to [About system fields](devenv-table-system-fields.md). If your ETL setup tracks which watermark (either a date or a rowversion) was read last time, then data pipelines can utilize this behavior to read changes since the watermark.
+No matter which tool you choose, you must make your data pipelines robust towards timeouts and design them so that they are rerunnable. All [!INCLUDE[prod_short](includes/prod_short.md)] tables have system fields `SystemRowVersion` and `SystemModifiedAt`. Learn more about system fields in [About system fields](devenv-table-system-fields.md). If your ETL setup tracks which watermark (either a date or a rowversion) was read last time, then data pipelines can utilize this behavior to read changes since the watermark.
 
 ## ETL tools
 
@@ -65,25 +112,27 @@ You can use your ETL tool of choice to read and transform data. Read about some 
 
 ### SQL Server Integration Services (SSIS)
 
-For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, one popular tool of choice is SQL Server Integration Services (SSIS) that is shipped with SQL Server. It's possible to autogenerate SSIS packages from a metadata store using script tasks or a tool such as BIML. For more information about these tools, see [About BIML](https://www.varigence.com/biml) and [About SSIS](/sql/integration-services/sql-server-integration-services).
+For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, one popular tool of choice is SQL Server Integration Services (SSIS) that is shipped with SQL Server. It's possible to autogenerate SSIS packages from a metadata store using script tasks or a tool such as BIML. Learn more about these tools in [About BIML](https://www.varigence.com/biml) and [About SSIS](/sql/integration-services/sql-server-integration-services).
 
 ### Azure Data Factory
 
-For [!INCLUDE[prod_short](includes/prod_short.md)] online, you can use a tool such as Azure Data Factory to read and transform data. Azure Data Factory is a managed cloud service that is built for complex hybrid extract-transform-load (ETL), extract-load-transform (ELT), and data integration projects. For more information about Azure Data Factory, see [About ADF](/azure/data-factory/introduction)
+For [!INCLUDE[prod_short](includes/prod_short.md)] online, you can use a tool such as Azure Data Factory to read and transform data. Azure Data Factory is a managed cloud service that is built for complex hybrid extract-transform-load (ETL), extract-load-transform (ELT), and data integration projects. Learn more about Azure Data Factory in [About ADF](/azure/data-factory/introduction)
 
-You can use the Azure Data Factory OData connector with service principal authentication to extract data from [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [Azure Data Factory OData connector](/azure/data-factory/connector-odata?tabs=data-factory) and [How-to connect Business Central to Azure](/answers/questions/751705/how-to-connect-business-central-to-azure-data-fact).
+You can use the Azure Data Factory OData connector with service principal authentication to extract data from [!INCLUDE[prod_short](includes/prod_short.md)]. Learn more in [Azure Data Factory OData connector](/azure/data-factory/connector-odata?tabs=data-factory) and [How-to connect Business Central to Azure](/answers/questions/751705/how-to-connect-business-central-to-azure-data-fact).
 
 ### Power BI dataflows
 
-It's also possible to use Power BI dataflows for your extract pipelines. With Power BI dataflows, you can connect to [!INCLUDE[prod_short](includes/prod_short.md)] APIs and utilize incremental refresh to only load data that was changed since last refresh. For more information about, see [About incremental refresh](/power-query/dataflows/incremental-refresh) and [About Power BI dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service).
+It's also possible to use Power BI dataflows for your extract pipelines. With Power BI dataflows, you can connect to [!INCLUDE[prod_short](includes/prod_short.md)] APIs and utilize incremental refresh to only load data that was changed since last refresh. Learn more about in [About incremental refresh](/power-query/dataflows/incremental-refresh) and [About Power BI dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service).
 
 <!--Microsoft MVP Steven Renders has written a nice blog post on how to use Power BI dataflows with [!INCLUDE[prod_short](includes/prod_short.md)]:
 [How do I create a Power BI dataflow with Business Central data](https://thinkaboutit.be/2023/02/how-do-i-create-a-power-bi-dataflow-with-business-central-data/)-->
 
 ### bc2adls code sample (unsupported)
 
-Another (unsupported) option is to use the _bc2adls_ code sample to transfer data from the [!INCLUDE[server](includes/server.md)] directly to an Azure Data Lake Storage (ADLS) data lake. For more information about bc2adls, see [About bc2adls](https://github.com/microsoft/bc2adls) on GitHub.com.
+Another (unsupported) option is to use the _bc2adls_ code sample to transfer data from the [!INCLUDE[server](includes/server.md)] directly to an Azure Data Lake Storage (ADLS) data lake. For more information about bc2adls in [About bc2adls](https://github.com/microsoft/bc2adls) on GitHub.com.
 
 ## Related information
 
-[Adding Power BI Report parts to pages](devenv-power-bi-report-parts.md)
+[Adding Power BI Report parts to pages](devenv-power-bi-report-parts.md)  
+[Using read scale-out for better performance](../administration/database-read-scale-out-overview.md)  
+[Using filters with OData/API calls](devenv-connect-apps-filtering.md)
