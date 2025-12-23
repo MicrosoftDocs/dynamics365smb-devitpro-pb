@@ -84,19 +84,19 @@ The fastest and least disruptive way to retrieve delta loads from [!INCLUDE[prod
 Also consider this pattern: For each company, start by determining which tables that you load data from have new data. You can do this in an AL codeunit that you expose as a web service endpoint. Based on the result of this initial call, only call the APIs that you know will return data. This practice reduces the number of API calls you need to issue for your incremental loads. The impact of this optimization depends on the distribution of new data since last load.
 
 > [!NOTE]
-> Delta links were deprecated in Business Central 2023 release wave 2 (v23)and in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. Learn more in [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
+> Delta links were deprecated in Business Central 2023 release wave 2 (v23) and in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. Learn more in [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
 
 ## Tools for reading data
 
 For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can just read directly from the environment database. This option isn't available for [!INCLUDE[prod_short](includes/prod_short.md)] online, so establishing this type of integration could block you from migrating from on-premises to the online version. 
 
-For [!INCLUDE[prod_short](includes/prod_short.md)] online, the only supported option for reading data is using APIs. The APIs can be either the standard APIs that are shipped with [!INCLUDE[prod_short](includes/prod_short.md)] or custom APIs that you build in Visual Studio Code and ship as an extension).
+For [!INCLUDE[prod_short](includes/prod_short.md)] online, the only supported option for reading data is using APIs. The APIs can be either the standard APIs that are shipped with [!INCLUDE[prod_short](includes/prod_short.md)] or custom APIs that you build in Visual Studio Code and ship as an extension.
 
-There exists a code sample that you may use to be more productive with APIs: API generator. Learn more in [API query generator](https://github.com/microsoft/BCTech/tree/master/samples/APIQueryGenerator)
+There exists a code sample that you can use to be more productive with APIs. Learn more in [API query generator](https://github.com/microsoft/BCTech/tree/master/samples/APIQueryGenerator)
 
 ## Throughput of data reads with APIs
 
-Measurements have shown that it isn't unusual to be able to read 2 MB/sec per API call. This rate means that it's possible to transfer up to 120 MB/min or 7200 MB/hour for pipelines running sequentially. 
+Measurements show that it isn't unusual to be able to read 2 MB/sec per API call. This rate means that it's possible to transfer up to 120 MB/min or 7200 MB/hour for pipelines running sequentially. 
 
 In [!INCLUDE[prod_short](includes/prod_short.md)] online, the current parallelism for API calls is 5. This value means that you can read up to 35 GB/hour if no other processes call web services on [!INCLUDE[prod_short](includes/prod_short.md)]. For an ETL setup that updates the staging area nightly with yesterday's changes, this rate should fit most maintenance windows (unless the environment has several GB of new/updated data per day).
 
@@ -104,7 +104,7 @@ Even if the ETL setup reads the historical dataset before switching to increment
 
 ## Stability of ETL pipelines
 
-No matter which tool you choose, you must make your data pipelines robust towards timeouts and design them so that they are rerunnable. All [!INCLUDE[prod_short](includes/prod_short.md)] tables have system fields `SystemRowVersion` and `SystemModifiedAt`. Learn more about system fields in [About system fields](devenv-table-system-fields.md). If your ETL setup tracks which watermark (either a date or a rowversion) was read last time, then data pipelines can utilize this behavior to read changes since the watermark.
+No matter which tool you choose, you must make your data pipelines robust towards timeouts and design them so that they're rerunnable. All [!INCLUDE[prod_short](includes/prod_short.md)] tables have system fields `SystemRowVersion` and `SystemModifiedAt`. Learn more about system fields in [About system fields](devenv-table-system-fields.md). If your ETL setup tracks which watermark (either a date or a rowversion) was read last time, then data pipelines can utilize this behavior to read changes since the watermark.
 
 ## ETL tools
 
