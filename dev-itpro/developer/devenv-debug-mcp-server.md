@@ -32,6 +32,8 @@ Traditional debugging is still better for:
 
 ## Prerequisites
 
+The following prerequisites are needed to run the Troubleshooting MCP Server:
+
 - Active debugging session in Visual Studio Code
 - Execution paused at a breakpoint or error
 - AL Language extension installed
