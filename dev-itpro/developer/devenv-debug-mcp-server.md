@@ -253,7 +253,9 @@ The following best practices can help you get the most out of the Troubleshootin
 
 ### Do
 
-- Use Troubleshooting MCP Server for complex call stack analysis  
+Do use the Troubleshooting MCP Server to:
+
+- Use the Troubleshooting MCP Server for complex call stack analysis  
 - Ask Copilot to correlate variables across multiple frames  
 - Request pattern detection in error scenarios  
 - Get AI insights on why errors occurred  
@@ -262,7 +264,9 @@ The following best practices can help you get the most out of the Troubleshootin
 
 ### Don't
 
-- Replace all manual debugging with MCP Server  
+Don't use the Troubleshooting MCP Server to:
+
+- Replace all manual debugging with the MCP Server  
 - Expect it to modify execution flow  
 - Use for simple single-step investigations  
 - Rely on it without verifying findings  
@@ -274,7 +278,7 @@ The following sections describe common issues and how to resolve them.
 
 ### "No debug session active"
 
-- Ensure that you've hit a breakpoint or error
+- Ensure that you've hit a breakpoint or an error
 - Code must be paused in the debugger
 - Check that the AL Language extension is running
 
@@ -326,6 +330,6 @@ Check database statistics:
 
 [Debugging in AL](devenv-debugging.md)  
 [Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md)  
-[Snapshot Debugging](devenv-snapshot-debugging.md)  
-[Attach and Debug Next](devenv-attach-debug-next.md)  
+[Snapshot debugging](devenv-snapshot-debugging.md)  
+[Attach and debug next](devenv-attach-debug-next.md)  
 [Debug upgrade and install code](devenv-debug-upgrade-install-code.md)
