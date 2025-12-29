@@ -6,6 +6,7 @@ ms.date: 01/04/2023
 ms.topic: concept-article
 ms.author: nhsejth
 ms.reviewer: jswymer
+ms.search.form: 9882
 ---
 
 # Localizing the report data formatting and caption strings
