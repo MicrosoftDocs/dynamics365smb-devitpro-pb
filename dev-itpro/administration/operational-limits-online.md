@@ -7,6 +7,7 @@ ms.date: 04/08/2025
 ms.reviewer: jswymer
 ms.topic: article
 ms.author: jswymer
+ms.search.form: 9882
 ---
 
 # Operational limits for Business Central online
