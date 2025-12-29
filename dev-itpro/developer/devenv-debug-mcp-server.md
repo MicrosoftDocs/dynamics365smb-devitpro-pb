@@ -34,10 +34,10 @@ Traditional debugging is still better for:
 
 The following prerequisites are needed to run the Troubleshooting MCP Server:
 
-- Active debugging session in Visual Studio Code
-- Execution paused at a breakpoint or error
-- AL Language extension installed
-- GitHub Copilot Chat enabled
+- An active debugging session in Visual Studio Code
+- That execution paused at a breakpoint or error
+- The AL Language extension installed
+- The GitHub Copilot Chat enabled
 
 ## Available tools
 
@@ -45,7 +45,7 @@ The Troubleshooting MCP Server is *only available when debugging*. When you star
 
 ### To verify the Troubleshooting MCP Server is available
 
-- In Visual Studio Code, click the **tools icon** in the Copilot Chat window to see available MCP servers and their tools
+- In Visual Studio Code, choose the **tools icon** in the Copilot Chat window to see available MCP servers and their tools
 - Look for the Troubleshooting MCP Server and its four tools listed under it
 
 ### Troubleshooting MCP Server tools
@@ -202,10 +202,10 @@ Ask: `Get the source code for the system codeunit frame and show me what paramet
 
 ## Understanding frame IDs
 
-Frame IDs represent the call stack position, refer to the following table for details:
+Frame IDs represent the call stack position. Refer to the following table for details:
 
 |Frame ID| Description |
-|..------|-------------|
+|------|-------------|
 |0       | Current execution point (where debugger is paused) |
 |1       | Direct caller |
 |2       | Caller's caller |
@@ -280,7 +280,7 @@ The following sections describe common issues and how to resolve them.
 
 ### "Frame ID not found"
 
-- Frame IDs are 0-based indexes
+- Frame IDs are zero-based indexes
 - Check the stack depth first with **Get Stack Frames**
 - Ensure that the frame still exists (hasn't returned)
 
