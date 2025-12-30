@@ -80,7 +80,7 @@ Create agent-specific profiles that:
 
 ### Test permission boundaries
 
-- Verify the agent can't access restricted data
+- Verify that the agent can't access restricted data
 - Confirm that permission changes work as expected
 
 ## Security and privacy best practices
@@ -145,7 +145,7 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 
 - Try to ask your agent about pages/fields it shouldn't have access to
 - Ask your agent to infer information about the business that it shouldn't have access to
-- Request your agent to perform actions that should be invalid for your scenario, for example, to set the price of a product to zero and then sell it 
+- Request your agent to perform actions that shouldn't be valid for your scenario, for example, to set the price of a product to zero and then sell it 
 
 ### Performance considerations
 
@@ -200,7 +200,7 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 - **Agents cannot configure users or other agents by design**
 - **Agents cannot access sensitive pages like user cards or permission set assignment**
 
-### UI design
+### UI design problems
 
 - **Limit the UI** either via profiles or pages designed specifically for your agent to help it achieve its task 
 

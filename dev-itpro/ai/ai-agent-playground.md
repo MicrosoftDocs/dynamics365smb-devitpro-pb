@@ -29,7 +29,7 @@ The Agent playground is primarily designed for teams who want to prototype AI-po
 - **Consultants** exploring automation scenarios with AI assistance for client solutions
 - **Developers** validating AI use cases and gathering requirements for custom implementations
 
-The playground helps you understand how AI can interact with [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, allowing you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows through playground agents.
+The playground helps you understand how AI can interact with [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, which allows you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows through playground agents.
 
 ## When to use and when not to use
 
