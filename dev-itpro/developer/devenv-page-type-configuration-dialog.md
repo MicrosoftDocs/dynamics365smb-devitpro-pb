@@ -254,8 +254,8 @@ The `StartCard` group has `ShowCaption = false`, creating a clean entry point wi
 
 Each subsequent `group` creates a separate card section:
 
-- **InstructionsCard** - Shows caption "Instructions" with guidance
-- **ProfileCard** - Shows caption "Profile" with assist-edit field
+- **InstructionsCard** - Shows caption **Instructions** with guidance
+- **ProfileCard** - Shows caption **Profile** with an assist-edit field
 
 #### Temporary table
 
@@ -270,7 +270,7 @@ Settings are collected in a temporary table before being applied in `OnQueryClos
 
 - **Field validation** - `OnValidate` triggers update the `IsValid` state
 - **Page validation** - `OnQueryClosePage` performs final validation before applying changes
-- **System action enablement** - OK button is enabled only when `IsValid = true`
+- **System action enablement** - The **OK** button is enabled only when `IsValid = true`
 
 #### System actions
 
