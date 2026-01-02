@@ -22,7 +22,6 @@ The `ConfigurationDialog` page type is a specialized page type that enables deve
 > [!IMPORTANT]
 > The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the Tasks AL API in [Integrate with the Tasks AL API (preview)](../ai/ai-agent-playground-tasks-api.md).
 
-
 ## Snippet support
 
 Type the shortcut `tpage` and then choose the **Page of type Configuration Dialog**, which creates the basic layout for a `ConfigurationDialog` page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -33,7 +32,7 @@ The `ConfigurationDialog` page type has some specific properties that characteri
 
 |Property|Description|
 |--------|-----------|
-|`PageType` | The `PageType` property must be set to `ConfigurationDialog` for this specific page type. Learn more in [properties/devenv-pagetype-property.md](properties/devenv-pagetype-property.md).|
+|`PageType` | Must be set to `ConfigurationDialog` for this specific page type. Learn more in [properties/devenv-pagetype-property.md](properties/devenv-pagetype-property.md).|
 |`SourceTableTemporary` | Must be set to `true` to use a temporary table as the data source, allowing you to collect settings before committing them to the database. Learn more in [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)|
 |`Extensible` | Must be set to `false` for this page type. Learn more in [Extensible property](properties/devenv-extensible-property.md)|
 |`InstructionalText` | Provides guidance to users about what the configuration dialog is for and what they need to do. Learn more in [InstructionalText property](properties/devenv-instructionaltext-property.md)|
@@ -53,7 +52,7 @@ Within the `Content` area, you can organize fields into groups to structure rela
 
 #### Defining the start card
 
-The `ConfigurationDialog` page type uses `group` inside the `Content` area, which is referred to as the `StartCard` in the [Example](#example). With the `StartCard`, you can create sections that guide users through the configuration process and omit the caption for the group to create a clean look. The following example shows how to define a `StartCard` group without a caption:
+The `ConfigurationDialog` page type uses `group` inside the `Content` area, which is referred to as the `StartCard` in the [Example](#example). With the `StartCard`, you can create sections that guide users through the configuration process and omit the caption for the group to create a clean look. The following example shows how to omit a caption:
 
 ```al
 group(StartCard)
