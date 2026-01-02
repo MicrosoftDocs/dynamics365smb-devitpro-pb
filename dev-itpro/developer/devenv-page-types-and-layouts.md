@@ -25,11 +25,11 @@ The following table provides an overview of the page types supported in [!INCLUD
 |Page type|Examples of use|Main data display|Characteristics|
 |---------|---------------|----------------|---------------|
 |`RoleCenter`|Overview of business performance and the start page for a specific user profile.|Defined by the embedded parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
-|`Card`|Master, reference, and set up data management. [Card page example](devenv-simple-card-page-example.md)|Single entity|Titled entity with FastTabs. May embed parts.|
-|`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart immediately follow the header section(s).|
-|`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with at least one `ListPart`. Can have fields above or below the part(s).|
-|`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list's `Repeater`.|
-|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet's `Repeater`.|
+|`Card`|Master, reference, and set up data management. [Card page example](devenv-simple-card-page-example.md)|Single entity|Titled entity with FastTabs. Might embed parts.|
+|`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart immediately follow one or more header sections.|
+|`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with at least one `ListPart`. Can have fields above or below one or more parts.|
+|`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. Might have field groups and subpages above and below the list's `Repeater`.|
+|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. Might have field groups and subpages above and below the worksheet's `Repeater`.|
 |`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. Can have one or more groups of fields and parts.|
 |`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. Can have one or more groups of fields and parts.|
 |`NavigatePage`|Multi-step dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields and parts.|
@@ -47,20 +47,20 @@ A fundamental characteristic of a page type is how it relates to the data presen
 |`Card`, `Document`, and `ListPlus`|`List` and `Worksheet`|
 |---------|---------------|
 |![Entity page actions](media/page-layout-entity-actions.png "Entity pages and their actions")|![Collection page actions](media/page-layout-collection-actions.png "Collection pages and their actions")|
-|The **entity-oriented** page types have actions (in top and in action bar) that affect the entity or context given by the title of the page.|The **collection-oriented** page types provide actions in action bar (and on the rows' action menu) that take effect on the selected row(s) in the collection.|
+|The **entity-oriented** page types have actions (in top and in action bar) that affect the entity or context given by the title of the page.|The **collection-oriented** page types provide actions in action bar (and on the rows' action menu) that take effect on the selected rows in the collection.|
 
 #### Entity-oriented pages
 
-In [!INCLUDE[prod_short](includes/prod_short.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction, or other important business event, for example, a sales transaction.
+In [!INCLUDE[prod_short](includes/prod_short.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented page is the `Card`, which provides details about a single customer or other primary data, and the `Document`, which represents a single transaction, or other important business event, for example, a sales transaction.
 
 `ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
 The `CardPart` page type is an entity-oriented page type for inclusion in another page, for example, in a FactBox.
 
 > [!IMPORTANT]  
-> Because entity-oriented pages represent a *single* entity, such as a customer or an item, don't use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented page *can* embed a `ListPart` part page that, in turn, contains a repeater control. Learn more about how to user repeater controls [Work with repeater controls](devenv-repeater-controls.md).
+> Because entity-oriented pages represent a *single* entity, such as a customer or an item, don't use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features might not work properly, and it might not get the expected size. However, an entity-oriented page *can* embed a `ListPart` part page that, in turn, contains a repeater control. Learn more about how to user repeater controls [Work with repeater controls](devenv-repeater-controls.md).
 >
-> If you currently have an entity-oriented page that uses a repeater, in most cases, you can just change the page type from `Card` to `List`, or `CardPart` to `ListPart`. In some cases, it is more complicated. For example, if the page has actions that act on the grid or variables that are used in the grid.
+> If you currently have an entity-oriented page that uses a repeater, in most cases, you can just change the page type from `Card` to `List`, or `CardPart` to `ListPart`. In some cases, it's more complicated. For example, if the page has actions that act on the grid or variables that are used in the grid.
 
 #### Collection-oriented pages
 
@@ -114,15 +114,15 @@ There are three different ways a section's size are determined.
 
 |Symbol|Layout behavior|Notes|
 |---------|---------------|----|
-|![Designer action bar size to content.](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
-|![Designer action bar size with limits.](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
-|![Designer action bar size to fill space.](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar size to content.](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page uses a scrollbar if needed.|
+|![Designer action bar size with limits.](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part uses a scrollbar if content exceeds available space.|
+|![Designer action bar size to fill space.](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part uses a scrollbar if content exceeds available space.|
 
 Which of the section sizing behavior is used is dependent on the chosen page type. For each of the page types described in the sections below, we present the typical layouts, and the way that the sections are sized.
 
 ## Card and Document page layouts 
 
-The primary purpose of Card pages is to support users managing master and reference data, such as Customer, Vendor, and Item entities. (The name *Card* refers to how this kind of business data was kept on paper cards in filing cabinets before being computerized.) The Card page type is also often used for setup pages.
+The overall purpose of Card pages is to support users managing primary and reference data, such as Customer, Vendor, and Item entities. (The name *Card* refers to how this kind of business data was kept on paper cards in filing cabinets before being computerized.) The Card page type is also often used for setup pages.
 
 The Document pages' primary purpose is to represent a transaction or other important event in the domain of business. Document pages are the computerized counterpart to paper-based documents (quotes, invoices, orders, etc.), and as such, document pages often have associated workflow or audit trail requirements.
 
@@ -132,24 +132,24 @@ Below are examples of Card and Document page compositions, showing how space is 
 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
-|Sections are placed vertically from top to bottom of the page.|A ListPart can be embedded. In this case, the ListPart's height is limited.|When a ListPart is embedded as the last part on the page, it will expand to fill space.|
+|Sections are placed vertically from top to bottom of the page.|A ListPart can be embedded. In this case, the ListPart's height is limited.|When a ListPart is embedded as the last part on the page, it expands to fill space.|
 |![Card layout example 1.](media/page-layout-card-1.png "Card example 1")|![Card layout example 2](media/page-layout-card-2.png "Card example 2")|![Card layout example 3](media/page-layout-card-3.png "Card example 3")|
 
 ### Document layouts
 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
-|Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be embedded. In this case, the first ListPart is allowed the most space.|When no ListPart is embedded, the Document layout follows the Card layout exactly.|
+|Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header sections.|Multiple ListParts can be embedded. In this case, the first ListPart is allowed the most space.|When no ListPart is embedded, the Document layout follows the Card layout exactly.|
 |![Document layout example 1.](media/page-layout-doc-1.png "Document example 1")|![Document layout example 2](media/page-layout-doc-2.png "Document example 2")|![Document layout example 3](media/page-layout-doc-3.png "Document example 3")|
 
 > [!NOTE]  
-> The Document page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
+> The Document page type allows the first ListPart on the page to use extra vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
 
 ### The well-designed card or document page
 
 From the user's perspective, the following are qualities of a well-designed card or document page:
 
-- Uses the page type `Card` if the page represents master or reference data, or is a setup page.
+- Uses the page type `Card` if the page represents primary or reference data, or is a setup page.
 - Uses the page type `Document` if the page represents a transaction or other important event in the domain of business.
 - Has a page title that clearly identifies the data represented in the page.
 - Is optimized for overview by organizing data in FastTabs and marking relevant fields as `Promoted` or `Additional`.
@@ -164,11 +164,11 @@ The ListPlus pages' primary purpose is to support users in managing or browsing 
 
 The ListPlus page type is a versatile means to support analysis and management tasks in a specific entity context (named by the page title). ListPlus pages can show persistent data about the entity/event in addition to giving options for how data is viewed or filtered.
 
-A ListPlus page should generally not contain a repeater control but will typically embed a `ListPart` page that in turn embeds a repeater. In addition, a ListPlus page can embed groups of fields and CardParts. Below are examples of ListPlus page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
+A ListPlus page should not contain a repeater control but typically embeds a `ListPart` page that in turn embeds a repeater. In addition, a ListPlus page can embed groups of fields and CardParts. Below are examples of ListPlus page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
-|Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two or more ListParts, they'll share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
+|Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two or more ListParts, they share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
 |![ListPlus layout example 1.](media/page-layout-listplus-1.png "ListPlus example 1")|![ListPlus layout example 2](media/page-layout-listplus-2.png "ListPlus example 2")|![ListPlus layout example 3](media/page-layout-listplus-3.png "ListPlus example 3")|
 
 From the user's perspective, the following are qualities of a well-designed ListPlus page:
@@ -192,7 +192,7 @@ List pages must contain a single `Repeater` group. In addition, a list can embed
 
 From the user's perspective, the following are qualities of a well-designed List page:
 
-- Defines a set of columns that is optimized for viewing and filtering the given collection. Optimize the column order for data entry if the list is editable.
+- Defines a set of columns that's optimized for viewing and filtering the given collection. Optimize the column order for data entry if the list is editable.
 - Has a page title that clearly names or identifies the collection of entities/entries presented.
 - If a summary or more detail related to the selected row are shown, these appear below the list.
 - If custom viewing options are available, these appear above the list.
@@ -216,7 +216,7 @@ Worksheet pages must contain a single `Repeater` group. In addition, a worksheet
 
 From the user's perspective, the following are qualities of a well-designed worksheet page:
 
-- Defines a set of columns that is optimized for overviewing and managing the given collection. Columns are ordered relative to their importance.
+- Defines a set of columns that's optimized for overviewing and managing the given collection. Columns are ordered relative to their importance.
 - Has fields above the grid that specify filtering options or specify the default values effective during data entry and editing in the grid.
 - If summary fields or more details of the selected row are shown, these appear below the repeater.
 
@@ -230,7 +230,7 @@ It's also possible to use the common page types (`Card`, `Document`, `List`, etc
 
 Generally, [!INCLUDE[prod_short](includes/prod_short.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
 
-Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page contains much content, it's possible for the user to increase the dialog size with the maximize button.
+Given the size of the screen where the dialog appears, more or less of the page contents are visible without scrolling. When a page contains much content, it's possible for the user to increase the dialog size with the maximize button.
   
 > [!NOTE]  
 > The dialogs created from the `StandardDialog` and `ConfirmationDialog` page types aren't currently providing a maximize button.
