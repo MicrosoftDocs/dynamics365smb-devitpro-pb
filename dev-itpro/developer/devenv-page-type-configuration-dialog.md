@@ -1,12 +1,11 @@
 ---
 title: The ConfigurationDialog Page Type (preview)
-description: Describes the ConfigurationDialog page type used to create configuration dialogs for setting up and managing agent application settings in Dynamics 365 Business Central.
+description: Learn how to use the `ConfigurationDialog` page type to create focused configuration dialogs for managing agent settings in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
-ms.collection:
-  - bap-ai-copilot
-ms.date: 12/22/2025
+ms.collection: bap-ai-copilot
+ms.date: 01/02/2026
 ms.update-cycle: 180-days
 ms.reviewer: solsen
 ---
