@@ -323,6 +323,8 @@ Use `InstructionalText` at both page and group levels to guide users:
 - Page-level instructional text explains the overall purpose
 - Group-level instructional text provides context for related fields
 
+Writing clear and concise instructions improves usability. Learn more about how users write effective instructional text in [Write effective instructions for a playground agent (preview)](../ai/ai-agent-playground-effective-instructions.md).
+
 ## Related information
 
 [Integrate with the Tasks AL API (preview)](../ai/ai-agent-playground-tasks-api.md)
