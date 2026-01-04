@@ -42,6 +42,7 @@ Returns information about updates available for the specified environment.
       "targetVersion": "26.1",
       "available": true, // Indicates whether the target version has been released
       "selected": true, // Indicates whether the next selected update is for this target version
+      "updateStatus": "scheduled", // 
       "scheduleDetails": {
         "latestSelectableDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the last date for which the update to this target version can be scheduled
         "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the datetime for which the update to this target version has been scheduled
@@ -68,7 +69,7 @@ Returns information about updates available for the specified environment.
       "targetVersion": "26.3", 
       "available": false,
       "selected": true,
-      "expectedAvailablity": {
+      "expectedAvailability": {
         "month": 8, // Indicates the number of the month in which the target version is expected to be released
         "year": 2025 // Indicates the year in which the target version is expected to be released
       },
@@ -79,7 +80,7 @@ Returns information about updates available for the specified environment.
       "targetVersion": "26.4",
       "available": false,
       "selected": false,
-      "expectedAvailablity": {
+      "expectedAvailability": {
         "month": 9,
         "year": 2025
       },
