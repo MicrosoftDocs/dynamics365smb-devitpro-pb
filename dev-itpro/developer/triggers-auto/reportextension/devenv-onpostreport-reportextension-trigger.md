@@ -49,7 +49,7 @@ Create the following global text constant variable.
 ## Related information
 
 [OnPostReport (report) trigger](../report/devenv-onpostreport-report-trigger.md)  
-[OnPreReport (report extension) trigger](../report/devenv-onprereport-reportextension-trigger.md)  
+[OnPreReport (report extension) trigger](devenv-onprereport-reportextension-trigger.md)  
 [OnPreReport (report) trigger](../report/devenv-onprereport-report-trigger.md)  
 [Report triggers and runtime operations](../../devenv-report-triggers.md)  
 [Get started with AL](../../devenv-get-started.md)  
