@@ -19,7 +19,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-| Product area | Feature | Public preview/General availability |
+| Product area | Feature | Public preview/general availability |
 |-|-|-|
 | Copilot and agents | [Match purchase invoices to orders with Payables Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/match-purchase-invoices-orders-payables-agent) | Public preview |
 | Copilot and agents | [Prioritize invoice draft changes using Payables Agent confidence level](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/prioritize-invoice-draft-changes-using-payables-agent-confidence-level) | Public preview |
