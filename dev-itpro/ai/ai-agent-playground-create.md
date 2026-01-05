@@ -91,6 +91,7 @@ An agent is by default in the **Disabled** state. You must activate the agent to
 [Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-agent-playground-attachments.md)  
 [Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
 [Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  

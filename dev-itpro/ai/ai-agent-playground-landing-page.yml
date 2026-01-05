@@ -45,6 +45,8 @@ landingContent:
         url: ai-agent-playground-instruction-keywords.md
       - text: Use the tasks API to integrate with a playground agent (preview)
         url: ai-agent-playground-tasks-api.md
+      - text: Attachment capabilities and limitations (preview)
+        url: ai-agent-playground-attachments.md
       - text: Set up playground permissions and profiles (preview)
         url: ai-agent-playground-permissions-profiles.md
       - text: Run a playground agent (preview)

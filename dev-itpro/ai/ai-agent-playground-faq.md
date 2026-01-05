@@ -239,6 +239,7 @@ Learn more about available keywords in [Instruction keywords for playground agen
 [Create and activate a playground agent (preview)](ai-agent-playground-create.md)  
 [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-agent-playground-attachments.md)  
 [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
 [Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
 [Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md)  

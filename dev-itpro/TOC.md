@@ -1513,6 +1513,7 @@
 ### [Write effective instructions](ai/ai-agent-playground-effective-instructions.md)
 ### [Instruction keywords](ai/ai-agent-playground-instruction-keywords.md)
 ### [Integrate with the Tasks AL API](ai/ai-agent-playground-tasks-api.md)
+### [Attachment capabilities and limitations](ai/ai-agent-playground-attachments.md)
 ### [Set up permissions and profiles](ai/ai-agent-playground-permissions-profiles.md)
 ### [Run a playground agent](ai/ai-agent-playground-run-agent.md)
 ### [Iterate and manage](ai/ai-agent-playground-iterate.md)

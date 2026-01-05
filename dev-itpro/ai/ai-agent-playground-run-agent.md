@@ -45,6 +45,7 @@ Once your agent is set up and tasks are being created, it's important to monitor
 [Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-agent-playground-attachments.md)  
 [Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
 [Iterate and manage (preview)](ai-agent-playground-iterate.md)  
 [Agent playground frequently asked questions (preview)](ai-agent-playground-faq.md)  

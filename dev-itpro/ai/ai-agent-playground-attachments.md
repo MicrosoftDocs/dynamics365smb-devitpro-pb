@@ -1,5 +1,5 @@
 ---
-title: Attachment capabilities and limitations
+title: Attachment capabilities and limitations (preview)
 description: Learn about the capabilities and limitations when working with attachments in agent tasks within the Agent playground in Business Central. Understand supported file types, size limits, and best practices for document processing.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 01/05/2026
 ms.update-cycle: 180-days
 ---
 
-# Attachment capabilities and limitations
+# Attachment capabilities and limitations (preview)
 
 When working with attachments in agent tasks, be aware of the following capabilities and constraints.
 
