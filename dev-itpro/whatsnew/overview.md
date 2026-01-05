@@ -24,7 +24,7 @@ Explore the app at the [Dynamics 365 Business Central Capabilities](https://www.
 
 ## Releases of Dynamics 365 Business Central
 
-Learn more about what's new or changed in recent releases in the links in the following table.
+Learn more about what's new or changed in recent release updates in the links in the following table.
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
@@ -34,7 +34,10 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 
-For earlier versions, visit the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans).  <!--required section-->
+For earlier updates, refer to the article under the 
+For earlier release plan versions, visit the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans).  <!--required section-->
+
+
 
 ## Get the latest version
 

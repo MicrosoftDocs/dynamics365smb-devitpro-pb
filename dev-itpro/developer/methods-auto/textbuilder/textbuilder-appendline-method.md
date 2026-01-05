@@ -37,7 +37,13 @@ The string to append.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The default line terminator in AL TextBuilder is `\r\n` (CRLF).
+
 ## Related information
+
 [TextBuilder Data Type](textbuilder-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
