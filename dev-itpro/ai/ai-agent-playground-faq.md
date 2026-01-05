@@ -143,7 +143,7 @@ Choose the approach that best fits your scenario and stage of development:
 - **Rapid iteration** is needed to refine requirements
 - You're in a **sandbox environment** and want quick results
 
-**Limitations:** Playground agents are for prototyping only and shouldn't be used in production environments.
+**Limitations:** Agents created in the playground are for prototyping in sandbox environments. To deliver these agents to customers in production environments, use the AL agent SDK to productize adding integrations, setup etc. and ship in extensions.
 
 #### Use **Copilot Studio agents** when:
 
