@@ -37,13 +37,13 @@ The JSON object containing post rendering setup which will be applied by the run
 
 ## Remarks
 
-The `OnPreRendering trigger` runs after the `OnPreDataItem` trigger for the last dataitem and before `OnPostReport` trigger. It runs after the base report's `OnPreRendering` trigger. Learn more about report trigger flow in [Report triggers and runtime operations](../../devenv-report-triggers.md#overall-report-trigger-and-operations).
+The `OnPreRendering trigger` runs after the `OnPreDataItem` trigger for the last dataitem and before `OnPostReport` trigger. It runs after the base report's `OnPreRendering` trigger. Learn more about report trigger flow in [Report triggers and runtime operations](../../devenv-report-triggers.md#overall-report-trigger-and-operations.md).
 
 ## Related information
 
-[OnInitReport (report) trigger](devenv-oninitreport-report-trigger.md)  
-[OnPreReport (report) trigger](devenv-onprereport-report-trigger.md)  
-[OnPostReport (report) trigger](devenv-onpostreport-report-trigger.md)  
+[OnInitReport (report) trigger](../report/devenv-oninitreport-report-trigger.md)  
+[OnPreReport (report) trigger](../report/devenv-onprereport-report-trigger.md)  
+[OnPostReport (report) trigger](../report/devenv-onpostreport-report-trigger.md)  
 [Report triggers and runtime operations](../../devenv-report-triggers.md)  
 [Get started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)  
