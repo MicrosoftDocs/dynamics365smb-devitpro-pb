@@ -209,63 +209,6 @@ When processing invoice attachments:
 5. For invoices over $10,000, always request supervisor approval
 ```
 
-### Add messages to existing tasks
-
-Continue conversations by adding new messages to existing agent tasks:
-
-```al
-local procedure AddMessageToExistingTask(ExternalId: Text; MessageText: Text)
-var
-    AgentTaskRecord: Record "Agent Task";
-    AgentTask: Codeunit "Agent Task";
-    AgentTaskMessageBuilder: Codeunit "Agent Task Message Builder";
-begin
-    // Get the existing task by its external ID
-    AgentTaskRecord := AgentTask.GetTaskByExternalId(AgentUserSecurityId, ExternalId);
-    
-    // Add a new message to the task
-    AgentTaskMessageBuilder
-        .Initialize('User', MessageText)
-        .SetRequiresReview(true)
-        .AddToTask(AgentTaskRecord);
-    
-    // Restart the task if it's completed or stopped
-    if AgentTask.CanSetStatusToReady(AgentTaskRecord) then
-        AgentTask.SetStatusToReady(AgentTaskRecord);
-end;
-```
-
-This pattern is useful for:
-
-- Providing additional information after the initial task creation
-- Continuing multi-turn conversations with your agent
-- Simulating email thread continuations
-
-### Manage task lifecycle
-
-Monitor and control running tasks:
-
-```al
-local procedure ManageAgentTask(var AgentTask: Record "Agent Task")
-var
-    AgentTaskCU: Codeunit "Agent Task";
-begin
-    // Check task status
-    if AgentTaskCU.IsTaskRunning(AgentTask) then
-        Message('Task is still running');
-    
-    if AgentTaskCU.IsTaskCompleted(AgentTask) then
-        Message('Task completed successfully');
-    
-    // Restart a stopped task
-    if AgentTaskCU.CanSetStatusToReady(AgentTask) then
-        AgentTaskCU.SetStatusToReady(AgentTask);
-    
-    // Stop a running task
-    AgentTaskCU.StopTask(AgentTask, true);
-end;
-```
-
 ## Related information
 
 [Overview (preview)](ai-agent-playground-landing-page.yml)  
