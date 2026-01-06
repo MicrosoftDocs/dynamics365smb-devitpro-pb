@@ -130,8 +130,6 @@ Learn more in [Write effective instructions for a playground agent (preview)](ai
 
 ### When should I use a playground agent vs. Copilot Studio agent vs. AL code?
 
-<!-- [PENDING: Verify guidance with Peter] -->
-
 Choose the approach that best fits your scenario and stage of development:
 
 #### Use **playground agents** when:
@@ -166,42 +164,9 @@ Choose the approach that best fits your scenario and stage of development:
 
 **Example scenarios:** Custom Copilot features, AI-powered document processing, intelligent automation in extensions
 
-## UI interaction and guidance
-
-### How can I provide information to agents about actions and fields in the UI?
-
-<!--  [PENDING: Verify with Sotiris whether tooltip or AboutText property is used] 
-
-Agents learn about UI elements through:
-
-- **ToolTip property** - [VERIFY: Confirm this is the property agents read]
-- **AboutText property** - [VERIFY: Confirm if this property is also used]
-- **Agent instructions** - You can explicitly describe actions and fields
-- **Field and action names** - Clear naming helps agents understand purpose
-
-**Best practices:**
-
-1. **Use descriptive tooltips/about text** - Ensure your fields and actions have clear descriptions that explain their purpose
-2. **Reference UI elements in instructions** - When necessary, explicitly mention page names, field names, or action names in your agent instructions
-3. **Test agent understanding** - Monitor agent reasoning to see if it correctly interprets UI elements
-4. **Customize profiles** - Control which UI elements the agent can see through profile configuration
-
-**Example instruction guidance:**
-
-```text
-To approve a sales order:
-1. Navigate to the Sales Orders page
-2. Select the order to approve
-3. Choose the "Approve" action under the Process menu
-4. Verify the "Approval Status" field changes to "Approved"
-```
--->
-
 ## Agent capabilities
 
 ### Does the agent support filtering on pages?
-
-<!-- [PENDING: Need to document available tools/capabilities more comprehensively, not just keywords] -->
 
 Yes, agents can filter data on pages. Filtering is one of the core capabilities that agents use to navigate and find specific records.
 
