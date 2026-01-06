@@ -47,7 +47,6 @@ Within the `Content` area, you can organize fields into groups to structure rela
 
 - **Groups** - Organize related fields together with captions and instructional text
 - **Fields** - Individual configuration options with validation and assist-edit capabilities
-- **Parts** - Embed subpages for complex configuration scenarios
 
 #### Defining the start card
 
@@ -71,12 +70,12 @@ The `ConfigurationDialog` page type primarily uses system actions to provide a c
 
 ### System actions
 
-System actions in a `ConfigurationDialog` provide the primary interaction points:
+System actions in a `ConfigurationDialog` provide the primary interaction points for users to complete or cancel the configuration process. They are:
 
 - **OK** - Saves the configuration and closes the dialog
 - **Cancel** - Discards changes and closes the dialog
 
-These actions can have their captions and tooltips customized to match the specific configuration scenario.
+The triggers for these actions can't be defined as they are defined by the platform.
 
 ## Example
 
