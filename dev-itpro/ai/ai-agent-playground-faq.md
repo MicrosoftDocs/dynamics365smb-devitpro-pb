@@ -148,10 +148,9 @@ Choose the approach that best fits your scenario and stage of development:
 #### Use **Copilot Studio agents** when:
 
 - Building **production-ready** conversational experiences
-- Need **cross-platform** integration (Teams, websites, Power Platform)
+- Need integration with other products via the many supported Copilot Studio connectors
 - Require **advanced dialog management** and conversation flows
 - Want **low-code** development with visual designers
-- Need **enterprise-grade** security and compliance features
 - Building **customer-facing** or **employee-facing** chat experiences
 
 **Example scenarios:** Customer service chatbots, HR support agents, IT helpdesk automation
