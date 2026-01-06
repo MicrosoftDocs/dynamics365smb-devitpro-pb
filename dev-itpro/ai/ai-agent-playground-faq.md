@@ -24,7 +24,7 @@ This article answers common questions about using the Agent playground in [!INCL
 
 ### Can I link a mailbox to a playground agent like the Sales Order Agent?
 
-Yes, you can integrate email functionality with playground agents. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
+Yes. While there is no built-in configuration of email integration in the agent playground, you can integrate email functionality with agents using the AL agent SDK. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
 
 This allows you to:
 
@@ -143,7 +143,7 @@ Choose the approach that best fits your scenario and stage of development:
 - **Rapid iteration** is needed to refine requirements
 - You're in a **sandbox environment** and want quick results
 
-**Limitations:** Playground agents are for prototyping only and shouldn't be used in production environments.
+**Limitations:** Agents created in the playground are for prototyping in sandbox environments. To deliver these agents to customers in production environments, use the AL agent SDK to productize adding integrations, setup etc. and ship in extensions.
 
 #### Use **Copilot Studio agents** when:
 
