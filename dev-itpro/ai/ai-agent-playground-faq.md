@@ -87,16 +87,16 @@ Learn more about creating tasks programmatically in [Integrate with the Tasks AL
 
 ### Can I write agent instructions in languages other than English?
 
-Yes, you can write agent instructions in your local language. The AI models support multiple languages, allowing you to:
+> [!NOTE]
+> While instructions can be in any language, consider that many Business Central field names, page names, and technical terms are in English. Mixing languages for technical references while keeping business logic in your local language often works well.
+>
+> While other languages are supported, English instructions might yield the best results due to the training data used for the AI models.
+
+You can write agent instructions in your local language, but bear the language considerations in mind. The AI models support multiple languages, allowing you to:
 
 - Write instructions in the language most natural for your team
 - Use domain-specific terminology in your native language
 - Provide multilingual support for international implementations
-
-While other languages are supported, English instructions might yield the best results due to the training data used for the AI models.
-
-> [!TIP]
-> While instructions can be in any language, consider that many Business Central field names, page names, and technical terms are in English. Mixing languages for technical references while keeping business logic in your local language often works well.
 
 Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
 
