@@ -23,7 +23,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 | Copilot and agents | [Match purchase invoices to orders with Payables Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/match-purchase-invoices-orders-payables-agent) | Public preview |
 | Copilot and agents | [Prioritize invoice draft changes using Payables Agent confidence level](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/prioritize-invoice-draft-changes-using-payables-agent-confidence-level) | Public preview |
-| Copilot and agents | [Use Payables Agent in more countries/regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-payables-agent-more-countries-regions) | Public preview |
+| Copilot and agents | [Use Payables Agent in more countries/regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-payables-agent-more-countries-regions) | General availability |
 | Country and regional | [Enable embedded Verifactu mode in Spain](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-embedded-verifactu-mode-spain) | Public preview |
 | Country and regional | [Print IRS 1099 form copies in bulk in the US](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/print-irs-1099-form-copies-bulk-usa) | General availability |
 
