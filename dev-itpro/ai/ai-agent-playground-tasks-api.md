@@ -276,7 +276,6 @@ begin
     // Add a new message to the task
     AgentTaskMessageBuilder
         .Initialize('User', MessageText)
-        .SetRequiresReview(true)
         .AddToTask(AgentTaskRecord);
     
     // Restart the task if it's completed or stopped
