@@ -61,7 +61,7 @@ By default, when you attach a file to an agent task, the agent processes it usin
 
 #### Use custom document analyzers
 
-If you need to use a custom Azure AI Document Intelligence analyzer or other content understanding services, you can implement your own processing logic in AL:
+If you need to use a custom Azure AI Document Intelligence analyzer or other content understanding services, you can implement your own processing logic in AL to extract specific fields and pass only the relevant data to the agent:
 
 ```al
 local procedure CreateTaskWithCustomProcessing()
@@ -79,11 +79,11 @@ begin
     // Process with your custom analyzer to extract specific fields
     ExtractedData := DocumentAnalyzer.ExtractInvoiceFields(InStr);
     
-    // Create task with extracted data in the message
+    // Create task with only the extracted data - no need to attach the original file
+    // since the relevant information has already been extracted
     AgentTaskMessageBuilder
         .Initialize('Document Processing', 
-            'Process invoice with the following extracted data: ' + ExtractedData)
-        .AddAttachment('invoice.pdf', 'application/pdf', InStr);
+            'Process invoice with the following extracted data: ' + ExtractedData);
 
     AgentTaskBuilder
         .Initialize(AgentUserSecurityId, 'Process Invoice')
@@ -91,6 +91,9 @@ begin
         .Create();
 end;
 ```
+
+> [!NOTE]
+> When you extract data using custom document analyzers, you typically don't need to also attach the original file, as this would duplicate the information. Only attach the original document if you need it for reference, audit purposes, or if the agent needs to access additional context beyond the extracted fields.
 
 This approach allows you to:
 
