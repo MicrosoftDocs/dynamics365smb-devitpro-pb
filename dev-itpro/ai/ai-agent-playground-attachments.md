@@ -134,10 +134,9 @@ begin
         'Please validate and create purchase invoice.',
         VendorName, InvoiceNumber, TotalAmount);
     
-    AgentTaskMessageBuilder
-        .Initialize('System', TaskMessage)
-        .AddAttachment('vendor-invoice.pdf', 'application/pdf', InvoicePDF)
-        .SetSkipMessageSanitization(true);
+    // Pass only the extracted data to the agent - no need for the original PDF
+    // since we've already extracted all relevant fields
+    AgentTaskMessageBuilder.Initialize('System', TaskMessage);
 
     AgentTaskBuilder
         .Initialize(AgentUserSecurityId, 'Vendor Invoice - ' + InvoiceNumber)
