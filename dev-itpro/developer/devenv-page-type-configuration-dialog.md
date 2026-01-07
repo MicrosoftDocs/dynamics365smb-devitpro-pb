@@ -43,7 +43,7 @@ The `ConfigurationDialog` page type uses the `Content` area, which provides spac
 
 ### Parts for reusable configuration components
 
-Within the `Content` area, you can embed reusable page parts that encapsulate specific configuration functionality:
+Within the `Content` area, you can embed reusable page parts that encapsulate specific configuration functionality. This allows you to modularize complex configuration logic and present it in a consistent manner.
 
 ```al
 part(AgentSetupPart; "Agent Setup Part")
@@ -75,7 +75,7 @@ Each root-level group in the `Content` area represents a Card in the configurati
 
 1. Place a boolean field as the first field in the group
 2. Set `ShowCaption = false` on that field
-3. The group's caption will appear at the top of the card with a toggle on the right side
+3. The group's caption appears at the top of the card with a toggle on the right side
 
 ```al
 group(MonitorIncomingCard)
@@ -135,7 +135,7 @@ This pattern creates a visual hierarchy:
 - Other fields within each group provide detailed configuration
 
 > [!TIP]
-> Use `InstructionalText` on groups to provide helpful guidance. While not specific to `ConfigurationDialog`, it's particularly useful for guiding users through card-based configuration.
+> Use `InstructionalText` on groups to provide helpful guidance. While not specific to `ConfigurationDialog`, it's useful for guiding users through card-based configuration.
 
 ## Actions in the ConfigurationDialog page
 
@@ -148,7 +148,7 @@ System actions in a `ConfigurationDialog` provide the primary interaction points
 - **OK** - Saves the configuration and closes the dialog
 - **Cancel** - Discards changes and closes the dialog
 
-The triggers for these actions can't be defined as they are defined by the platform.
+The triggers for these actions can't be defined as they're defined by the platform.
 
 ## Example
 
@@ -511,7 +511,7 @@ This creates a visual hierarchy where users can enable/disable features at diffe
 
 #### Drill-down pattern for complex settings
 
-Instead of crowding the main page with many fields, complex settings like instructions and permissions use non-editable fields with `OnDrillDown` triggers:
+Instead of crowding the main page with many fields, complex settings like instructions and permissions use noneditable fields with `OnDrillDown` triggers:
 
 ```al
 field(EditInstructions; EditInstructionsLbl)
@@ -532,9 +532,10 @@ field(EditInstructions; EditInstructionsLbl)
 ```
 
 This pattern:
+
 - Keeps the main configuration page focused and uncluttered
 - Opens specialized dialogs for detailed settings
-- Returns to the main page after the user completes the sub-dialog
+- Returns to the main page after the user completes the subdialog
 
 #### Multiple temporary buffer records
 
@@ -628,7 +629,7 @@ Use page parts to encapsulate reusable configuration components:
 
 ### Drill-down for complex settings
 
-Use non-editable fields with `OnDrillDown` triggers to handle complex settings:
+Use noneditable fields with `OnDrillDown` triggers to handle complex settings:
 
 ```al
 field(ComplexSetting; SettingLabel)
