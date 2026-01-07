@@ -17,8 +17,6 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc27-upgrade-unmodified-app.svg)](../developer/media/bc27-upgrade-unmodified-app.svg#lightbox)  
 
-
-
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
 > [!IMPORTANT]
@@ -28,7 +26,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 ### Review upgrade considerations and known issues for version 27
 
-- Learn about key information and tips to prepare for an upgrade in [Important information and considerations when upgrading to Business Central](upgrade-considerations-v26.md).  
+- Learn about key information and tips to prepare for an upgrade in [Business Central upgrade considerations and preparation for v26 and later](upgrade-considerations-v26.md).  
 - [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
 
 ### Prepare new runtime packages
@@ -70,10 +68,11 @@ $AddinsFolder = "The file path to the Add-ins folder of version 27 server instal
 
     Learn more in [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-<!--
-## Task 3: Upgrade permission sets
+<!--## Task 3: Upgrade permission sets
 
-Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
+Version 18 (2022 realease wave 1) introduced the capability to define permissions sets as AL objects in extensions, instead of as data in database tables. Permissions sets as AL objects is the default and recommended model for permissions.
+
+If your existing database already uses AL-based permissions sets, you can skip this step. If it doesn't, you should either transition to the AL-object model. till uses legacy model, where permissions are defined and stored as data in the database you . Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
 
 Learn more in [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).-->
 
@@ -436,7 +435,6 @@ Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Vers
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-<!-- 
 ## Task 13: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you decided to use permission sets as AL objects or as data.
@@ -461,7 +459,6 @@ In this task, you install the custom permission sets that you upgraded earlier i
 5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
 Learn more in [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
--->
 
 ## Post-upgrade tasks
 

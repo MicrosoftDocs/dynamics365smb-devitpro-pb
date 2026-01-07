@@ -76,6 +76,14 @@ This section includes important deployment changes that are helpful to know when
 
   Learn more about setting up delegation in [Configuring Delegation for Business Central Web Server](../deployment/configure-delegation-web-server.md). You can do this task anytime, but after upgrade, users won't be able to sign in to the web client until you do.
 
+## Transition to AL-based permissions and permission sets
+
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In versions earlier than v18, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Starting with v18, permission sets and permissions can be defined in AL objects as part of extensions. This model is default and recommended model for permissions and permission sets. Predefined permission sets provided by Microsoft and AppSource apps from partners are now defined by AL objects. Learn more in [Entitlements and permission sets overview](../developer/devenv-entitlements-and-permissionsets-overview.md).
+
+If your existing solution hasn't switched to use permission sets defined as AL objects in extensions, you can continue to use the legacy data-defined permission sets after upgrade&mdash;these permission sets aren't affected by upgrade. However, this capability will be removed in a future version, so we recommend that you make the transition to as part of the upgrade.
+
+Learn more in [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
+
 ## Related information  
 
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)  
