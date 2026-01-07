@@ -67,6 +67,76 @@ You can organize fields into groups to structure related settings:
 - **Fields** - Individual configuration options with validation and assist-edit capabilities
 - **Nested groups** - Create hierarchical organization of related settings
 
+### Cards with toggle controls
+
+Each root-level group in the `Content` area represents a Card in the configuration dialog. Cards can have a toggle control at the top by using a specific pattern:
+
+#### Add a toggle to a card
+
+1. Place a boolean field as the first field in the group
+2. Set `ShowCaption = false` on that field
+3. The group's caption will appear at the top of the card with a toggle on the right side
+
+```al
+group(MonitorIncomingCard)
+{
+    Caption = 'Monitor incoming information';
+    InstructionalText = 'The agent will read messages in these channels:';
+
+    // Boolean field as first child creates a toggle for the card
+    field("Monitor incoming inquiries"; Rec."Incoming Monitoring")
+    {
+        ShowCaption = false;
+        ToolTip = 'Specifies if the agent should monitor incoming inquiries.';
+    }
+    
+    // Other fields in the card...
+}
+```
+
+**Sub-groups can also have toggles** using the same pattern. Place a boolean field with `ShowCaption = false` as the first child of a nested group:
+
+```al
+group(MonitorIncomingCard)
+{
+    Caption = 'Monitor incoming information';
+    
+    field("Monitor incoming inquiries"; Rec."Incoming Monitoring")
+    {
+        ShowCaption = false;
+    }
+    
+    // Nested group with its own toggle
+    group(MailboxGroup)
+    {
+        Caption = 'Mailbox';
+        
+        field(MailEnabled; Rec."Email Monitoring")
+        {
+            ShowCaption = false;
+            ToolTip = 'Specifies if the agent should monitor incoming mail.';
+        }
+        
+        field(Mailbox; MailboxName)
+        {
+            Caption = 'Account';
+            ToolTip = 'Specifies the email account that the agent monitors.';
+            Editable = false;
+            ShowMandatory = true;
+        }
+    }
+}
+```
+
+This pattern creates a visual hierarchy:
+
+- The **outer card** has a toggle controlling the entire "Monitor incoming information" feature
+- The **nested Mailbox group** has its own toggle for email-specific monitoring
+- Other fields within each group provide detailed configuration
+
+> [!TIP]
+> Use `InstructionalText` on groups to provide helpful guidance. While not specific to `ConfigurationDialog`, it's particularly useful for guiding users through card-based configuration.
+
 ## Actions in the ConfigurationDialog page
 
 The `ConfigurationDialog` page type primarily uses system actions to provide a consistent user experience.
@@ -82,7 +152,7 @@ The triggers for these actions can't be defined as they are defined by the platf
 
 ## Example
 
-The following example demonstrates a simplified configuration dialog for setting up an agent. It shows the key patterns of the `ConfigurationDialog` page type, including embedded parts, drill-down fields for complex settings, and managing multiple buffer records.
+The following example demonstrates a simplified configuration dialog for setting up an agent. It shows the key patterns of the `ConfigurationDialog` page type, including embedded parts, cards with toggles, drill-down fields for complex settings, and managing multiple buffer records.
 
 ```al
 page 50100 "Agent Configuration"
@@ -107,7 +177,7 @@ page 50100 "Agent Configuration"
                 UpdatePropagation = Both;
             }
             
-            // Basic agent information
+            // Basic agent information card
             group(AgentDetails)
             {
                 Caption = 'About the agent';
@@ -164,6 +234,57 @@ page 50100 "Agent Configuration"
                                 InstructionText := InstructionsDialog.GetInstructions();
                                 IsUpdated := true;
                             end;
+                        end;
+                    }
+                }
+            }
+            
+            // Card with toggle control
+            group(MonitorIncomingCard)
+            {
+                Caption = 'Monitor incoming information';
+                InstructionalText = 'The agent will read messages in these channels:';
+
+                // Boolean field as first child creates a toggle for the card
+                field(MonitorIncoming; Rec."Incoming Monitoring")
+                {
+                    ShowCaption = false;
+                    ToolTip = 'Specifies if the agent should monitor incoming inquiries.';
+
+                    trigger OnValidate()
+                    begin
+                        IsUpdated := true;
+                    end;
+                }
+
+                // Nested group with its own toggle
+                group(MailboxGroup)
+                {
+                    Caption = 'Mailbox';
+                    
+                    field(MailEnabled; Rec."Email Monitoring")
+                    {
+                        ShowCaption = false;
+                        ToolTip = 'Specifies if the agent should monitor incoming mail.';
+
+                        trigger OnValidate()
+                        begin
+                            IsUpdated := true;
+                        end;
+                    }
+                    
+                    field(Mailbox; MailboxName)
+                    {
+                        Caption = 'Account';
+                        ToolTip = 'Specifies the email account that the agent monitors.';
+                        Editable = false;
+                        ShowMandatory = true;
+
+                        trigger OnAssistEdit()
+                        begin
+                            // Open mailbox selection dialog
+                            if SelectMailbox(MailboxName) then
+                                IsUpdated := true;
                         end;
                     }
                 }
@@ -313,6 +434,7 @@ page 50100 "Agent Configuration"
         AgentNameVar: Text[50];
         InstructionText: Text;
         ProfileDisplayName: Text;
+        MailboxName: Text;
         IsUpdated: Boolean;
         EditInstructionsLbl: Label 'Edit instructions';
         ManagePermissionsLbl: Label 'Manage permissions';
@@ -339,6 +461,53 @@ The page embeds a reusable part that provides consistent agent preview and confi
 CurrPage.AgentSetupPart.Page.SetAgentSetupBuffer(AgentSetupBuffer);
 CurrPage.AgentSetupPart.Page.Update(false);
 ```
+
+#### Cards with toggle controls
+
+The example demonstrates how to create cards with toggle controls using a boolean field with `ShowCaption = false` as the first field:
+
+```al
+group(MonitorIncomingCard)
+{
+    Caption = 'Monitor incoming information';
+    InstructionalText = 'The agent will read messages in these channels:';
+
+    // Boolean field as first child creates a toggle
+    field(MonitorIncoming; Rec."Incoming Monitoring")
+    {
+        ShowCaption = false;
+    }
+    // ... other fields
+}
+```
+
+This pattern creates a card with:
+- The group's caption displayed at the top ("Monitor incoming information")
+- A toggle control on the right side of the card
+- Instructional text below the caption
+- The card's fields shown beneath
+
+**Nested groups can also have toggles:**
+
+```al
+group(MailboxGroup)
+{
+    Caption = 'Mailbox';
+    
+    field(MailEnabled; Rec."Email Monitoring")
+    {
+        ShowCaption = false;  // Creates a toggle for this nested group
+    }
+    
+    field(Mailbox; MailboxName)
+    {
+        Caption = 'Account';
+        // ... field configuration
+    }
+}
+```
+
+This creates a visual hierarchy where users can enable/disable features at different levels, providing granular control over configuration options.
 
 #### Drill-down pattern for complex settings
 
