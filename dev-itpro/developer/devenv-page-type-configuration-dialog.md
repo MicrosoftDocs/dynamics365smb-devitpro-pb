@@ -39,30 +39,33 @@ The `ConfigurationDialog` page type has some specific properties that characteri
 
 ## Layout areas of the ConfigurationDialog page type
 
-The `ConfigurationDialog` page type uses the `Content`, which gives a main area that contains fields, groups, and parts for configuration options.
+The `ConfigurationDialog` page type uses the `Content` area, which provides space for fields, groups, and parts that organize configuration options.
+
+### Parts for reusable configuration components
+
+Within the `Content` area, you can embed reusable page parts that encapsulate specific configuration functionality:
+
+```al
+part(AgentSetupPart; "Agent Setup Part")
+{
+    ApplicationArea = All;
+    UpdatePropagation = Both;
+}
+```
+
+Parts are useful for:
+
+- Creating reusable configuration components across different setup pages
+- Separating complex UI logic into focused sub-pages
+- Enabling consistent user experiences across related configuration scenarios
 
 ### Groups and fields
 
-Within the `Content` area, you can organize fields into groups to structure related settings:
+You can organize fields into groups to structure related settings:
 
 - **Groups** - Organize related fields together with captions and instructional text
 - **Fields** - Individual configuration options with validation and assist-edit capabilities
-
-#### Defining the start card
-
-The `ConfigurationDialog` page type uses `group` inside the `Content` area, which is referred to as the `StartCard` in the [Example](#example). With the `StartCard`, you can create sections that guide users through the configuration process and omit the caption for the group to create a clean look. The following example shows how to omit a caption:
-
-```al
-group(StartCard)
-{
-    ApplicationArea = All;
-    ShowCaption = false;
-
-    trigger OnValidate();
-    begin
-    end;
-}
-```
+- **Nested groups** - Create hierarchical organization of related settings
 
 ## Actions in the ConfigurationDialog page
 
@@ -79,7 +82,7 @@ The triggers for these actions can't be defined as they are defined by the platf
 
 ## Example
 
-The following example demonstrates a simplified configuration dialog for setting up an agent. It shows the key patterns of the `ConfigurationDialog` page type, including the `StartCard` group structure and validation flow.
+The following example demonstrates a simplified configuration dialog for setting up an agent. It shows the key patterns of the `ConfigurationDialog` page type, including embedded parts, drill-down fields for complex settings, and managing multiple buffer records.
 
 ```al
 page 50100 "Agent Configuration"
@@ -88,86 +91,136 @@ page 50100 "Agent Configuration"
     Extensible = false;
     ApplicationArea = All;
     Caption = 'Configure agent';
-    InstructionalText = 'Set up your agent with a name, instructions, and profile.';
-    SourceTable = "Agent Setup Buffer";
+    InstructionalText = 'Configure which instructions the agent follows, its permissions, and how it appears to users.';
+    SourceTable = "Agent Setup Record";
     SourceTableTemporary = true;
+    RefreshOnActivate = true;
 
     layout
     {
         area(Content)
         {
-            // StartCard: Initial fields without a visible caption
-            group(StartCard)
+            // Reusable part for agent preview/settings
+            part(AgentSetupPart; "Agent Setup Part")
             {
-                ShowCaption = false;
-
-                field(AgentName; Rec."Display Name")
+                ApplicationArea = All;
+                UpdatePropagation = Both;
+            }
+            
+            // Basic agent information
+            group(AgentDetails)
+            {
+                Caption = 'About the agent';
+                
+                field(AgentName; AgentNameVar)
                 {
-                    ApplicationArea = All;
-                    Caption = 'Agent name';
-                    ToolTip = 'Specifies the name of the agent.';
+                    Caption = 'Name';
+                    ToolTip = 'Specifies the unique name of the agent.';
 
                     trigger OnValidate()
                     begin
-                        UpdateControls();
+                        IsUpdated := true;
+                        // Update the buffer and refresh the part
+                        AgentSetupBuffer.Validate("User Name", AgentNameVar);
+                        AgentSetupBuffer.Modify(true);
+                        UpdateAgentSetupPart();
                     end;
                 }
+                
                 field(AgentDescription; Rec.Description)
                 {
-                    ApplicationArea = All;
                     Caption = 'Description';
                     MultiLine = true;
-                    ToolTip = 'Specifies what the agent does.';
+                    ToolTip = 'Specifies the description of the agent.';
 
                     trigger OnValidate()
                     begin
-                        UpdateControls();
+                        IsUpdated := true;
+                        // Notify the part about the change
+                        CurrPage.AgentSetupPart.Page.SetAgentSummary(Rec.Description);
+                        CurrPage.AgentSetupPart.Page.Update(false);
                     end;
                 }
-            }
-            
-            // Instructions card with visible caption
-            group(InstructionsCard)
-            {
-                Caption = 'Instructions';
-                InstructionalText = 'Describe what the agent should do.';
-
-                field(Instructions; InstructionText)
+                
+                // Complex settings accessed via drill-down
+                group(InstructionGroup)
                 {
-                    ApplicationArea = All;
-                    Caption = 'Agent instructions';
-                    MultiLine = true;
-                    ToolTip = 'Specifies the instructions for the agent.';
+                    Caption = 'Instructions for the agent';
+                    InstructionalText = 'Use everyday words to describe what the agent should do.';
 
-                    trigger OnValidate()
-                    begin
-                        UpdateControls();
-                    end;
-                }
-            }
-            
-            // Profile card with assist-edit
-            group(ProfileCard)
-            {
-                Caption = 'Profile';
-                InstructionalText = 'Select the profile that determines what the agent can see.';
+                    field(EditInstructions; EditInstructionsLbl)
+                    {
+                        Caption = 'Edit instructions';
+                        ShowCaption = false;
+                        ToolTip = 'Opens a dialog to edit the agent instructions.';
+                        Editable = false;
 
-                field(Profile; ProfileName)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Profile';
-                    ToolTip = 'Specifies the profile for the agent.';
-                    Editable = false;
-
-                    trigger OnAssistEdit()
-                    var
-                        AllProfile: Record "All Profile";
-                    begin
-                        if Page.RunModal(Page::"Available Profiles", AllProfile) = Action::LookupOK then begin
-                            ProfileName := AllProfile."Profile ID";
-                            UpdateControls();
+                        trigger OnDrillDown()
+                        var
+                            InstructionsDialog: Page "Agent Instructions Dialog";
+                        begin
+                            InstructionsDialog.SetInstructions(InstructionText);
+                            if InstructionsDialog.RunModal() = Action::OK then begin
+                                InstructionText := InstructionsDialog.GetInstructions();
+                                IsUpdated := true;
+                            end;
                         end;
-                    end;
+                    }
+                }
+            }
+            
+            // Agent access and visibility settings
+            group(AgentConfiguration)
+            {
+                Caption = 'Agent''s visibility and access';
+
+                group(ProfileGroup)
+                {
+                    Caption = 'Profile (role)';
+                    InstructionalText = 'Choose the user profile that the agent uses when it completes tasks.';
+
+                    field(Profile; ProfileDisplayName)
+                    {
+                        Caption = 'Setup profile';
+                        ToolTip = 'Specifies the profile that is associated with the agent.';
+                        Editable = false;
+
+                        trigger OnAssistEdit()
+                        var
+                            AllProfile: Record "All Profile";
+                        begin
+                            if Page.RunModal(Page::"Available Profiles", AllProfile) = Action::LookupOK then begin
+                                TempUserSettings."Profile ID" := AllProfile."Profile ID";
+                                ProfileDisplayName := AllProfile."Profile ID";
+                                IsUpdated := true;
+                            end;
+                        end;
+                    }
+                }
+                
+                group(PermissionsGroup)
+                {
+                    Caption = 'Permissions';
+                    InstructionalText = 'Define access rights to control what the agent can work with.';
+
+                    field(Permissions; ManagePermissionsLbl)
+                    {
+                        Caption = 'Manage permissions';
+                        ShowCaption = false;
+                        ToolTip = 'Opens a dialog to manage the agent permissions.';
+                        Editable = false;
+
+                        trigger OnDrillDown()
+                        var
+                            PermissionsPage: Page "Select Agent Permissions";
+                        begin
+                            PermissionsPage.Initialize(AgentSetupBuffer."User Security ID", TempPermissions);
+                            if PermissionsPage.RunModal() = Action::OK then begin
+                                PermissionsPage.GetPermissions(TempPermissions);
+                                IsUpdated := true;
+                            end;
+                        end;
+                    }
                 }
             }
         }
@@ -179,14 +232,15 @@ page 50100 "Agent Configuration"
         {
             systemaction(OK)
             {
-                Caption = 'Create';
-                ToolTip = 'Create the agent with the specified settings.';
-                Enabled = IsValid;
+                Caption = 'Update';
+                ToolTip = 'Apply the changes to the agent setup.';
+                Enabled = IsUpdated;
             }
+            systemaction(Cancel)
             systemaction(Cancel)
             {
                 Caption = 'Cancel';
-                ToolTip = 'Cancel and close the dialog.';
+                ToolTip = 'Discards the changes and closes the setup page.';
             }
         }
     }
@@ -197,6 +251,11 @@ page 50100 "Agent Configuration"
             Rec.Init();
             Rec.Insert();
         end;
+        
+        // Initialize buffer records
+        AgentSetupBuffer.Init();
+        AgentSetupBuffer.Insert();
+        
         UpdateControls();
     end;
 
@@ -206,56 +265,217 @@ page 50100 "Agent Configuration"
             exit(true);
 
         // Validate required fields
-        if Rec."Display Name" = '' then
+        if AgentNameVar = '' then
             Error('You must specify an agent name.');
             
         if InstructionText = '' then
             Error('You must provide instructions.');
             
-        if ProfileName = '' then
+        if ProfileDisplayName = '' then
             Error('You must select a profile.');
+        
+        if TempPermissions.IsEmpty() then
+            Error('You must assign at least one permission set.');
 
+        // Apply all settings
+        ApplySettings();
         exit(true);
     end;
 
     local procedure UpdateControls()
     begin
-        IsValid := (Rec."Display Name" <> '') and 
-                   (InstructionText <> '') and 
-                   (ProfileName <> '');
+        // Refresh the part with current buffer data
+        CurrPage.AgentSetupPart.Page.SetAgentSetupBuffer(AgentSetupBuffer);
+        CurrPage.AgentSetupPart.Page.Update(false);
+    end;
+    
+    local procedure UpdateAgentSetupPart()
+    begin
+        CurrPage.AgentSetupPart.Page.SetAgentSetupBuffer(AgentSetupBuffer);
+        CurrPage.AgentSetupPart.Page.SetAgentSummary(Rec.Description);
+        CurrPage.Update(false);
+    end;
+    
+    local procedure ApplySettings()
+    var
+        AgentSetup: Codeunit "Agent Setup";
+    begin
+        // Apply all collected settings to the database
+        AgentSetup.UpdateAgent(AgentSetupBuffer, TempPermissions);
+        AgentSetup.SetProfile(AgentSetupBuffer."User Security ID", TempUserSettings);
+        AgentSetup.SetInstructions(AgentSetupBuffer."User Security ID", InstructionText);
     end;
 
     var
+        AgentSetupBuffer: Record "Agent Setup Buffer" temporary;
+        TempPermissions: Record "Permission Buffer" temporary;
+        TempUserSettings: Record "User Settings" temporary;
+        AgentNameVar: Text[50];
         InstructionText: Text;
-        ProfileName: Text;
-        IsValid: Boolean;
+        ProfileDisplayName: Text;
+        IsUpdated: Boolean;
+        EditInstructionsLbl: Label 'Edit instructions';
+        ManagePermissionsLbl: Label 'Manage permissions';
 }
 ```
 
 ### Understanding the example
 
-This example demonstrates the essential patterns of `ConfigurationDialog`:
+This example demonstrates the essential patterns of `ConfigurationDialog` for agent setup:
 
-#### StartCard pattern
+#### Embedded parts
 
 ```al
-group(StartCard)
+part(AgentSetupPart; "Agent Setup Part")
 {
-    ShowCaption = false;
-    // Fields without a visible group caption
+    ApplicationArea = All;
+    UpdatePropagation = Both;
 }
 ```
 
-The `StartCard` group has `ShowCaption = false`, creating a clean entry point with just the fields visible.
+The page embeds a reusable part that provides consistent agent preview and configuration UI. The part is updated using:
 
-#### Card structure
+```al
+CurrPage.AgentSetupPart.Page.SetAgentSetupBuffer(AgentSetupBuffer);
+CurrPage.AgentSetupPart.Page.Update(false);
+```
 
-Each subsequent `group` creates a separate card section:
+#### Drill-down pattern for complex settings
 
-- **InstructionsCard** - Shows caption **Instructions** with guidance
-- **ProfileCard** - Shows caption **Profile** with an assist-edit field
+Instead of crowding the main page with many fields, complex settings like instructions and permissions use non-editable fields with `OnDrillDown` triggers:
 
-#### Temporary table
+```al
+field(EditInstructions; EditInstructionsLbl)
+{
+    Editable = false;
+    
+    trigger OnDrillDown()
+    var
+        InstructionsDialog: Page "Agent Instructions Dialog";
+    begin
+        InstructionsDialog.SetInstructions(InstructionText);
+        if InstructionsDialog.RunModal() = Action::OK then begin
+            InstructionText := InstructionsDialog.GetInstructions();
+            IsUpdated := true;
+        end;
+    end;
+}
+```
+
+This pattern:
+- Keeps the main configuration page focused and uncluttered
+- Opens specialized dialogs for detailed settings
+- Returns to the main page after the user completes the sub-dialog
+
+#### Multiple temporary buffer records
+
+The page manages multiple temporary records to collect related settings before applying them:
+
+```al
+var
+    AgentSetupBuffer: Record "Agent Setup Buffer" temporary;
+    TempPermissions: Record "Permission Buffer" temporary;
+    TempUserSettings: Record "User Settings" temporary;
+```
+
+This allows validation across all settings before committing changes to the database.
+
+#### Nested groups for organization
+
+```al
+group(AgentConfiguration)
+{
+    Caption = 'Agent''s visibility and access';
+
+    group(ProfileGroup)
+    {
+        Caption = 'Profile (role)';
+        InstructionalText = 'Choose the user profile...';
+        // fields
+    }
+    
+    group(PermissionsGroup)
+    {
+        Caption = 'Permissions';
+        InstructionalText = 'Define access rights...';
+        // fields
+    }
+}
+```
+
+Nested groups create a clear visual hierarchy that organizes related concepts.
+
+#### Change tracking and conditional enablement
+
+The `IsUpdated` variable tracks whether the user has made any changes:
+
+```al
+trigger OnValidate()
+begin
+    IsUpdated := true;
+    // ... update logic
+end;
+```
+
+System actions can be conditionally enabled based on this state:
+
+```al
+systemaction(OK)
+{
+    Caption = 'Update';
+    Enabled = IsUpdated;
+}
+```
+
+#### Validation and applying settings
+
+The `OnQueryClosePage` trigger validates all required fields and applies settings only when the user confirms:
+
+```al
+trigger OnQueryClosePage(CloseAction: Action): Boolean
+begin
+    if CloseAction = CloseAction::Cancel then
+        exit(true);
+
+    // Validate all requirements
+    if AgentNameVar = '' then
+        Error('You must specify an agent name.');
+    
+    // Apply all settings
+    ApplySettings();
+    exit(true);
+end;
+```
+
+## Key features and best practices
+
+### Parts for reusable components
+
+Use page parts to encapsulate reusable configuration components:
+
+- Create consistent UI patterns across related configuration scenarios
+- Separate complex logic into focused sub-pages
+- Enable bi-directional communication with `UpdatePropagation = Both`
+
+### Drill-down for complex settings
+
+Use non-editable fields with `OnDrillDown` triggers to handle complex settings:
+
+```al
+field(ComplexSetting; SettingLabel)
+{
+    Editable = false;
+    
+    trigger OnDrillDown()
+    begin
+        // Open specialized dialog
+    end;
+}
+```
+
+This pattern keeps the main configuration page focused while providing access to detailed settings.
+
+### Temporary tables
 
 ```al
 SourceTable = "Agent Setup Buffer";
@@ -286,10 +506,20 @@ The **OK** button is customized with a meaningful caption and conditional enable
 
 ### Temporary tables
 
-Using `SourceTableTemporary = true` is mandatory with `ConfigurationDialog` pages and allows you to:
+Using `SourceTableTemporary = true` is mandatory with `ConfigurationDialog` pages. Additionally, you can manage multiple temporary buffer records to organize related settings:
+
+```al
+var
+    AgentSetupBuffer: Record "Agent Setup Buffer" temporary;
+    TempPermissions: Record "Permission Buffer" temporary;
+    TempUserSettings: Record "User Settings" temporary;
+```
+
+This allows you to:
 
 - Collect configuration settings without immediately affecting the database
 - Validate all settings together before applying changes
+- Manage related settings across multiple temporary tables
 - Cancel the configuration without leaving partial data
 - Provide a better user experience with immediate feedback
 
@@ -299,20 +529,30 @@ Configuration dialogs should validate user input at multiple points:
 
 - **Field-level validation** - In `OnValidate` triggers for immediate feedback
 - **Page-level validation** - In `OnQueryClosePage` before applying changes
-- **Cross-field validation** - In dedicated procedures that check relationships between fields
+- **Cross-field and cross-buffer validation** - In dedicated procedures that check relationships between fields and buffer records
 
 ### System action enablement
 
-You can control when system actions are enabled:
+You can control when system actions are enabled based on change tracking:
 
 ```al
+var
+    IsUpdated: Boolean;
+
+trigger OnValidate()
+begin
+    IsUpdated := true;
+end;
+
 systemaction(OK)
 {
-    Caption = 'Apply';
+    Caption = 'Update';
     ToolTip = 'Apply the configuration changes.';
-    Enabled = AllRequiredFieldsFilled;
+    Enabled = IsUpdated;
 }
 ```
+
+This provides clear feedback to users about whether changes have been made.
 
 ### Instructional text
 
