@@ -153,34 +153,6 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 - Test on realistic data volumes to ensure that your agent can handle the complexity of the task
 - Optimize for the minimum number of steps as longer workflows can reduce the accuracy of agents
 
-<!-- Introduce when SDK is introduced
-## Graduation to production best practices
-
-### Knowledge transfer preparation
-
-- Document all working instructions and configurations
-- Identify which features need AL implementation
-- Plan the development roadmap for production features
-- Capture lessons learned and design decisions
-
-### AL development considerations
-
-- Plan how to implement agent capabilities in AL code
-- Consider integration with existing [!INCLUDE [prod_short](../includes/prod_short.md)] features
-- Design for scalability and performance requirements
-- Plan testing strategies for production code
-
-<!-- - Consider the upcoming agent development SDK for packaging agents as deployable apps -->
-<!--
-### Prototype cleanup
-
-- Deactivate and remove playground agents after graduation
-- Clean up test data and configurations
-- Document the graduation process for future reference
-- Archive prototype documentation for reference
-
--->
-
 ## Common pitfalls to avoid
 
 ### Instruction problems

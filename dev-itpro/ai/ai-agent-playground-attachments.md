@@ -14,6 +14,10 @@ ms.update-cycle: 180-days
 
 # Attachment capabilities and limitations (preview)
 
+[This article is prerelease documentation and is subject to change.]
+
+[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+
 When working with attachments in agent tasks, be aware of the following capabilities and constraints.
 
 ## Supported file types

@@ -482,6 +482,7 @@ group(MonitorIncomingCard)
 ```
 
 This pattern creates a card with:
+
 - The group's caption displayed at the top ("Monitor incoming information")
 - A toggle control on the right side of the card
 - Instructional text below the caption
@@ -577,7 +578,7 @@ Nested groups create a clear visual hierarchy that organizes related concepts.
 
 #### Change tracking and conditional enablement
 
-The `IsUpdated` variable tracks whether the user has made any changes:
+The `IsUpdated` variable tracks whether the user made any changes:
 
 ```al
 trigger OnValidate()
@@ -703,7 +704,7 @@ systemaction(OK)
 }
 ```
 
-This provides clear feedback to users about whether changes have been made.
+This provides clear feedback to users about whether changes are made.
 
 ### Instructional text
 
