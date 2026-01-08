@@ -54,7 +54,7 @@ Learn more about using the SDK in [Integrate with the Tasks AL API (preview)](ai
 
 ### How can I trigger an agent on a schedule (for example, daily)?
 
-> [PENDING: Link to scheduled task sample in BCTech once available from Darrick]
+<!-- Link to scheduled task sample in BCTech once available -->
 
 You can schedule agent tasks using job queues in [!INCLUDE [prod_short](../includes/prod_short.md)]:
 
@@ -88,7 +88,7 @@ Learn more about creating tasks programmatically in [Integrate with the Tasks AL
 ### Can I write agent instructions in languages other than English?
 
 > [!NOTE]
-> While instructions can be in any language, consider that many Business Central field names, page names, and technical terms are in English. Mixing languages for technical references while keeping business logic in your local language often works well.
+> While instructions can be in any language, consider that many [!INCLUDE [prod_short](../developer/includes/prod_short.md)] field names, page names, and technical terms are in English. Mixing languages for technical references while keeping business logic in your local language often works well.
 >
 > While other languages are supported, English instructions might yield the best results due to the training data used for the AI models.
 
