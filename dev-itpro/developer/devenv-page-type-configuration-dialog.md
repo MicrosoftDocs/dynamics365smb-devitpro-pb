@@ -41,9 +41,9 @@ The `ConfigurationDialog` page type has some specific properties that characteri
 
 The `ConfigurationDialog` page type uses the `Content` area, which provides space for fields, groups, and parts that organize configuration options.
 
-### Parts for reusable configuration components
+### The AgentSetupPart
 
-Within the `Content` area, you can embed reusable page parts that encapsulate specific configuration functionality. This allows you to modularize complex configuration logic and present it in a consistent manner.
+Within the `Content` area, you can use the page part `AgentSetupPart` that encapsulates specific configuration functionality.
 
 ```al
 part(AgentSetupPart; "Agent Setup Part")
@@ -53,11 +53,9 @@ part(AgentSetupPart; "Agent Setup Part")
 }
 ```
 
-Parts are useful for:
+> [!IMPORTANT]
+> The AgentSetupPart must be used as first element in the layout. And no other parts are accepted in this layout.
 
-- Creating reusable configuration components across different setup pages
-- Separating complex UI logic into focused sub-pages
-- Enabling consistent user experiences across related configuration scenarios
 
 ### Groups and fields
 
@@ -357,7 +355,7 @@ page 50100 "Agent Configuration"
                 ToolTip = 'Apply the changes to the agent setup.';
                 Enabled = IsUpdated;
             }
-            systemaction(Cancel)
+
             systemaction(Cancel)
             {
                 Caption = 'Cancel';
@@ -463,6 +461,8 @@ CurrPage.AgentSetupPart.Page.Update(false);
 ```
 
 #### Cards with toggle controls
+
+Start typing `group` in the context of a ConfigurationDialog page, which creates the basic layout for a `GroupToogle` layout.
 
 The example demonstrates how to create cards with toggle controls using a boolean field with `ShowCaption = false` as the first field:
 
