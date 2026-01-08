@@ -436,7 +436,7 @@ Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Vers
 
 ## Task 14: Install upgraded permissions sets
 
-In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you decided to use permission sets as AL objects or as data.
+This task is only required if you transitioned to permission sets as AL objects or upgraded permission sets as data in task 3.
 
 ### For permission sets as AL objects
 
