@@ -2,7 +2,7 @@
 title: Upgrading Microsoft System and Base Application to Version 27
 description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 27
 ms.custom: bap-template
-ms.date: 12/04/2025
+ms.date: 01/08/2026
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.author: jswymer
@@ -70,9 +70,10 @@ $AddinsFolder = "The file path to the Add-ins folder of version 27 server instal
 
 ## Task 3: Upgrade permission sets
 
-Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
+Version 18 introduced AL-based permission sets for the system and extensions. AL-based permission sets are the default in Microsoft and most custom extensions.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
+- If you already use AL-based permission sets, no action is required in this task.
+- If you still use the legacy, data-based model, decide whether to transition now or continue temporarily. Learn more in [Upgrading permissions sets and permissions](upgrade-permissions.md).
 
 ## Task 4: Prepare the existing databases
 

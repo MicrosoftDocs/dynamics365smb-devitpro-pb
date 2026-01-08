@@ -33,6 +33,12 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension.|
 
+### <a name="permissions"></a>Use only data-defined permission sets for on-premises (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | Before 2021 release wave 1 (v18.0), system and extension permissions and entitlements were stored as data in the application database. Starting with v18.0, they're defined in AL objects of extensions.<br><br>Through version 28.x, you can continue to use only data-defined permission sets by setting the `UsePermissionSetsFromExtensions` parameter of the [!INCLUDE [server](../developer/includes/server.md)] instance to `false`.<br><br>This capability will be removed in version 29.0. Learn more in [Entitlements and permissions overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
+
 ## Changes in 2025 release wave 1 (version 26.0)
 
 ### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removal)
@@ -58,7 +64,6 @@ This article describes the features that are up for removal or that have been re
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
-
 
 ### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
 
@@ -264,14 +269,6 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |---------|---------|
 |Removed (online only)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. Any integrations/solutions that connect to Business Central online using Web Service Access Key (Basic Auth) **will stop working after October 1, 2022**. OAuth2 will be the only authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).  For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services. |
 
-### <a name="permissions"></a>Permissions defined as data
-
-The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Removed | With releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database. This has changed with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] v.18.0. With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2022 release wave 1, the support for defining permissions and entitlements as data in the application database will be removed. For more information, see [Entitlements and Permissions Overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
-
 ### <a name="deprecate legacy v1 endpoints"></a>Deprecate legacy V1 endpoints for Power Automate, Power Apps and Logic Apps in favor of newer technology
 
 The legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being **replaced** later in Business Central online in 2022 and as a consequence we encourage everyone to switch to the most up-to-date V3 endpoints.
@@ -398,6 +395,7 @@ The following component is **Removed** with [!INCLUDE[prod_short](../developer/i
 
 <!--BDM-->
 We have simplified the story for how to deploy Help for a customer-specific solution of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and for deploying Help for an AppSource app. No matter what your solution is, deploy your solution-specific or customized Help to any website that you prefer. Out of the box, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses the [learn.microsoft.com](/dynamics365/business-central/) site for the Learn more-links and contextual Help. Each customer and each partner can override this with their own Help. It's now the same for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, so any investment on-premises carries forward if you migrate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
+
 
 ## Changes in 2020 release wave 1 (version 16.0)
 
