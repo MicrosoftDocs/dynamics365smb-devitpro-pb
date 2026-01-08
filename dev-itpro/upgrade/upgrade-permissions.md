@@ -1,7 +1,7 @@
 ---
 title: "Upgrading Permission Sets and Permissions"
 description: Describes how to upgrade permissions and permission sets 
-ms.date: 10/01/2020
+ms.date: 01/08/2026
 ms.topic: how-to
 ms.author: jswymer
 author: jswymer
@@ -9,13 +9,13 @@ ms.reviewer: jswymer
 ---
 # Upgrading permissions sets and permissions
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects in AL code, then packaged in extensions. See [Entitlements and Permissions](../developer/devenv-entitlements-and-permissionsets-overview.md) to learn more.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects in AL code, then packaged in extensions. Learn more in [Entitlements and Permissions](../developer/devenv-entitlements-and-permissionsets-overview.md).
 
-This change has implications on upgrade from versions earlier than version 18. Or, if you're upgrading a later version that still uses the legacy data-based permission sets, and you want to upgrade permission sets that are based on Microsoft permission sets to the latest changes. These implications are discussed in this article.
+This change has implications on upgrade from versions earlier than version 18. Or, if you're upgrading a later version that still uses the legacy data-based permission sets that include permission sets that are based on Microsoft permission. These implications are discussed in this article.
 
 ## Overview
 
-Permissions as AL objects is now the default model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. You'll see this change, for example, if you install v18 or v19 demonstration database. If you view the permissions-related tables in the database, like the **Permission Set** and **Permission** tables, you'll notice that tables are almost empty.
+Permissions as AL objects is now the default model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. You see this change, for example, if you install the demonstration database for a version later than v17. If you view the permissions-related tables in the database, like the **Permission Set** and **Permission** tables, you notice that tables are almost empty.
 
 Although it's recommended to transition to permissions defined as AL objects, you can choose to continue using the legacy databased permissions model. You specify which permissions model your solution uses by changing [!INCLUDE[server](../developer/includes/server.md)] setting called **Use Permission Sets From Extensions**.
 
@@ -23,7 +23,7 @@ When upgrading from a previous version, decide which model you want to use. Then
 
 ## Start using permission sets defined as AL objects
 
-If you've customized Microsoft permission sets, it's important to know what you've changed in these permission sets. Knowing these changes will let you reimplement the permission sets as new AL permission set objects or permission set extension objects.
+If your environment includes customized permission sets based on Microsoft permission sets, it's important to know what you changed in these permission sets. Knowing these changes helps you reimplement the permission sets as new AL permission set objects or permission set extension objects.
 
 1. Determine what customizations you made to Microsoft permission sets.
 
@@ -50,6 +50,10 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
        Replace `C:\folderpath\` with the folder path to the file.
 
+       <!-- Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+       Unblock-File 'C:\can-delete\Convert-PermissionSets.psm1'
+       "-->
+
     1. Run the Convert-PermissionSets cmdlet to export permission sets from the current [!INCLUDE [prod_short](../developer/includes/prod_short.md)] database to AL permission set object files:
 
        ```powershell
@@ -64,11 +68,11 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
        This command creates a separate AL file for each permission set. The file names have the format *name*.permissionset.al.
 
-    1. Compare the exported AL permission set files with permission set files from the version 18 to determine the differences.
+    1. Compare the exported AL permission set files with permission set files in new [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version to determine the differences.
 
-       You'll find the new AL permission set files are on the installation media (DVD) in the **Applications\BaseApp\Source\Base Application.Source.zip\Permissions** folder.
+       The new AL permission set files are on the installation media (DVD) in the **Applications\BaseApp\Source\Base Application.Source.zip\Permissions** folder.
 
-    Now you have the list of changes that you made compared to the version 18 permission sets from Microsoft.
+    Now you have the list of changes that you made compared to the latest version of the permission sets from Microsoft.
 
 1. Create new AL objects for permissions sets based on the change list.
 
@@ -77,32 +81,32 @@ If you've customized Microsoft permission sets, it's important to know what you'
    |If the change|Then|See...|
    |----|----|---|
    |Only added new permissions to an existing permission set|Create an AL permission set extension object with the added permissions.|[Permission Set Extension Object](../developer/devenv-permissionset-ext-object.md)|
-   |Removed or changed permissions in a permission set|For these type of changes, you'll create an AL permission set object.<ol><li>Make a copy of version 18 or version 19 AL permission set file.</li><li>Modify the copy to include the customizations you want.</li></ol> |[Permission Set Object](../developer/devenv-permissionset-object.md)
+   |Removed or changed permissions in a permission set|For these type of changes, you create an AL permission set object.<ol><li>Make a copy of version 18 or version 19 AL permission set file.</li><li>Modify the copy to include the customizations you want.</li></ol> |[Permission Set Object](../developer/devenv-permissionset-object.md)
 
 1. Create an AL project for version 18. Include the permission set files that you created in step 2 and other custom permission sets generated in step 1.6.
 
 1. Compile and build the extension package.
 
-1. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18 or 19.
+1. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to the new [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version.
 
     > [!IMPORTANT]
     > If you have a multitenant deployment, when you mount tenants, give tenants permission to write to the application database.
 
-1. Publish and install the extension on your version 18 deployment.
+1. Publish, sync, and install the extension on your updated version deployment.
 
 ## Continue using the permission sets defined as data
 
 > [!NOTE]
-> The capability to use permission sets defined as data has been deprecated and will be removed in an upcoming release. Learn more in [Deprecated Features in W1](deprecated-features-w1.md).
+> The capability to use permission sets defined as data is deprecated and will be removed in an upcoming release. Learn more in [Deprecated platform features](deprecated-features-platform.md).
 
-Your application can use permission sets from various sources, like Microsoft, partners, extensions, and user-defined permission sets. When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database, even after upgrade. If you have customized Microsoft permission sets, you'll probably want to keep them up to date with the latest from Business Central.
+Your application can use permission sets from various sources, like Microsoft, partners, extensions, and user-defined permission sets. When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database, even after upgrade. If there are customized permission sets based on Microsoft permission sets, you probably want to keep them up to date with the latest from Business Central.
 
 1. From the old [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version, open the **Permissions Sets** page and export the **System** permission sets as XML to a file.
 
     You can export all permission sets. But you're mostly interested in the Microsoft permission sets and custom permission sets based on Microsoft permission sets.  
 
     > [!IMPORTANT]
-    > If you're upgrading the application, either exclude the SUPER permission set when exporting or be sure to remove it later from the XML file that you'll import. You can't replace or modify the SUPER permission set. If you're doing a technical upgrade, you'll have to include the SUPER permission set.
+    > If you're upgrading the application, either exclude the SUPER permission set when exporting or be sure to remove it later from the XML file that you import. You can't replace or modify the SUPER permission set. If you're doing a technical upgrade, you must include the SUPER permission set.
 
     Learn more in [Export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
@@ -111,7 +115,7 @@ Your application can use permission sets from various sources, like Microsoft, p
 1. Using a file comparison tool, compare the to XML files and merge the necessary changes into a single XML file.
 
     Now you have upgraded permissions as XML.
-1. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18 or 19.
+1. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to the new [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version.
 
     > [!IMPORTANT]
     > If you have a multitenant deployment, make sure the tenants are allowed to write to application database.
