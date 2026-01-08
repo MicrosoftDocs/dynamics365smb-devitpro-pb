@@ -214,6 +214,7 @@ codeunit 50102 "Custom Agent Session Events"
         if not AgentSession.IsAgentSession(AgentMetadataProvider) then
             exit;
 
+        AgentTaskID := AgentSession.GetCurrentSessionAgentTaskId();
         SetupCustomEvents(AgentTaskID);
     end;
 
