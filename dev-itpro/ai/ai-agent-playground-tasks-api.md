@@ -206,10 +206,9 @@ codeunit 50102 "Custom Agent Session Events"
 
     local procedure RegisterAgentEvents()
     var
-        AgentTaskID: BigInteger;
-        CustomAgent: Codeunit "Custom Agent";
         AgentSession: Codeunit "Agent Session";
         AgentMetadataProvider: Enum "Agent Metadata Provider";
+        AgentTaskID: BigInteger;
     begin
         if not AgentSession.IsAgentSession(AgentMetadataProvider) then
             exit;
