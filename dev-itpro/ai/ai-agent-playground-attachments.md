@@ -20,17 +20,15 @@ When working with attachments in agent tasks, be aware of the following capabili
 
 Agents can process attachments with the following file types:
 
-- **PDF documents** (.pdf) - Invoices, purchase orders, contracts, reports
-- **Image files** (.png, .jpg, .jpeg) - Scanned documents, receipts, product images
+- **PDF documents** (.pdf) - Invoices, purchase orders, contracts, and reports
+- **Image files** (.png, .jpg, .jpeg) - Scanned documents, receipts, and product images
 
 > [!NOTE]
 > Be aware that agents only process text out of images and pdfs and not the images themselves.
 
 ## File size limits
 
-<!-- The exact file size limit needs to be verified. -->
-
-Attachments are subject to the standard file size limits in [!INCLUDE [prod_short](../includes/prod_short.md)]. [VERIFY: Specify the exact MB/GB limit here]
+Attachments are subject to the standard file size limits in [!INCLUDE [prod_short](../includes/prod_short.md)].
 
 If you need to process large files:
 
@@ -43,7 +41,7 @@ If you need to process large files:
 
 When processing PDF documents, agents can handle up to **10 pages** per document. This limit applies to document extraction and processing capabilities.
 
-**Considerations for multi-page PDFs:**
+### Considerations for multi-page PDFs
 
 - Documents exceeding 10 pages might not be fully processed
 - If you have documents with more than 10 pages, consider:
