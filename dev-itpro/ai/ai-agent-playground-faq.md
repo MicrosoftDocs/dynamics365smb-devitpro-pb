@@ -162,7 +162,7 @@ Choose the approach that best fits your scenario and stage of development:
 - Building **commercial solutions** for AppSource
 - Need **version control** and **ALM** (Application Lifecycle Management)
 
-**Example scenarios:** Custom Copilot features, AI-powered document processing, intelligent automation in extensions
+**Example scenarios:** Custom Copilot features, AI-powered document processing, and intelligent automation in extensions
 
 ## Agent capabilities
 
@@ -178,7 +178,7 @@ Yes, agents can filter data on pages. Filtering is one of the core capabilities 
 - Filter by date ranges
 - [VERIFY: Add complete list of supported filtering capabilities]
 
-**Available agent capabilities:** [VERIFY: Document the full set of tools and capabilities beyond keywords]
+**Available agent capabilities:**
 
 The agent's ability to use filtering depends on:
 
