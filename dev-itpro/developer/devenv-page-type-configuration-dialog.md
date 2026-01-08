@@ -619,14 +619,6 @@ end;
 
 ## Key features and best practices
 
-### Parts for reusable components
-
-Use page parts to encapsulate reusable configuration components:
-
-- Create consistent UI patterns across related configuration scenarios
-- Separate complex logic into focused sub-pages
-- Enable bi-directional communication with `UpdatePropagation = Both`
-
 ### Drill-down for complex settings
 
 Use noneditable fields with `OnDrillDown` triggers to handle complex settings:
@@ -645,15 +637,6 @@ field(ComplexSetting; SettingLabel)
 
 This pattern keeps the main configuration page focused while providing access to detailed settings.
 
-### Temporary tables
-
-```al
-SourceTable = "Agent Setup Buffer";
-SourceTableTemporary = true;
-```
-
-Settings are collected in a temporary table before being applied in `OnQueryClosePage`.
-
 #### Validation flow
 
 - **Field validation** - `OnValidate` triggers update the `IsValid` state
@@ -671,8 +654,6 @@ systemaction(OK)
 ```
 
 The **OK** button is customized with a meaningful caption and conditional enablement.
-
-## Key features and best practices
 
 ### Temporary tables
 
