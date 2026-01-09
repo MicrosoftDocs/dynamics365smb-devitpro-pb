@@ -97,7 +97,7 @@ If your environment includes customized permission sets based on Microsoft permi
 ## Continue using the permission sets defined as data
 
 > [!NOTE]
-> The capability to use permission sets defined as data is deprecated and will be removed in an upcoming release. Learn more in [Deprecated platform features](deprecated-features-platform.md#use-only-data-defined-permission-sets-for-on-premises-removal).
+> The capability to use permission sets defined as data is deprecated and will be removed in an upcoming release. Learn more in [Deprecated platform features](deprecated-features-platform.md#permissions).
 
 Your application can use permission sets from various sources, like Microsoft, partners, extensions, and user-defined permission sets. When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database, even after upgrade. If there are customized permission sets based on Microsoft permission sets, you probably want to keep them up to date with the latest from Business Central.
 
