@@ -37,7 +37,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Before 2021 release wave 1 (v18.0), system and extension permissions and entitlements are stored as data in the application database. Starting with v18.0, they're defined in AL objects of extensions.<br><br>Through version 28.x, you can continue to use only data-defined permission sets by setting the `UsePermissionSetsFromExtensions` parameter of the [!INCLUDE [server](../developer/includes/server.md)] instance to `false`.<br><br>This capability will be removed in version 29.0. Learn more in [Entitlements and permissions overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
+|Removed | Before 2021 release wave 1 (v18.0), system and extension permissions and entitlements are stored as data in the application database. Starting with v18.0, they're defined in AL objects of extensions.<br><br>Through version 28.x, you can continue to use only data-defined permission sets by setting the `UsePermissionSetsFromExtensions` parameter of the [!INCLUDE [server](../developer/includes/server.md)] instance to `false`.<br><br>Starting with version 29.0, this capability is no longer available. Learn more in [Entitlements and permissions overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
 
 ## Changes in 2025 release wave 1 (version 26.0)
 
