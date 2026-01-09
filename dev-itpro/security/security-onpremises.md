@@ -76,6 +76,10 @@ The following articles explain how to secure client, web service, and Power BI c
 
 [Connect to Business Central with Power BI](/power-bi/service-connect-to-microsoft-dynamics-nav)
 
+## Use secure admin devices
+
+Perform Business Central administration from a highly secure, isolated workstation. For example, have a dedicated PC (or Azure Virtual Desktop/Cloud PC) for admin use only, with hardened configuration (up-to-date OS, limited software, full disk encryption, and mandatory MFA). Avoid doing daily work or general browsing on the same machine used for privileged access.
+
 ## Related information  
 
 [Security and Protection](security-and-protection.md)  

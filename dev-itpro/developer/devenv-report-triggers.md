@@ -209,7 +209,7 @@ The following figure illustrates the flow associated with a Word report layout t
 
 ## Related information
 
-[Report Triggers](triggers-auto/report/devenv-oninitreport-report-trigger.md)   
-[Report Data Item Triggers](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   
-[Report Object](devenv-report-object.md)  
+[Report triggers](triggers-auto/report/devenv-oninitreport-report-trigger.md)  
+[Report data item triggers](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)  
+[Report object](devenv-report-object.md)  
 [Triggers](/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers)  

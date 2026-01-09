@@ -82,8 +82,8 @@
 ### [Update 27.2](whatsnew/whatsnew-update-27-2.md)
 ### [Update 27.1](whatsnew/whatsnew-update-27-1.md)
 ### [Update 27.0](whatsnew/whatsnew-update-27-0.md)
-### [Update 26.5](whatsnew/whatsnew-update-26-5.md)
 ### Updates for earlier major versions
+#### [Update 26.5](whatsnew/whatsnew-update-26-5.md)
 #### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
 #### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
 #### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
@@ -1418,6 +1418,7 @@
 
 ## Security
 ### [Security overview](security/security-and-protection.md)
+### [Security scenarios guide](security/security-scenarios-guide.md)
 ### [Tips for business users](security/security-users.md)
 ### [Application](security/security-application.md)
 ### [Setting up Multifactor Authentication (MFA)](security/multifactor-authentication.md)

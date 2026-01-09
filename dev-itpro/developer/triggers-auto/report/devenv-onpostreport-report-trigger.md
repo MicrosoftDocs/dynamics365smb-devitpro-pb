@@ -31,7 +31,7 @@ end;
 
 ## Remarks  
 
-This trigger is run after all data items are processed. The trigger is not run if the report was stopped manually or by using the Quit before processing had concluded.  
+This trigger is run after all data items are processed. The trigger is not run if the report was stopped manually or by using the Quit before processing had concluded. Learn more about report trigger flow in [Report triggers and runtime operations](../../devenv-report-triggers.md#overall-report-trigger-and-operations).
 
 Because this trigger is run after the report is processed, you can use it to inform users about the result of the report run. For example, if some records could not be processed, you could inform the user of this using the following code in this trigger.  
 
@@ -50,7 +50,9 @@ Because this trigger is run before the End Write Transaction, you can also give 
 
 ## Related information
 
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
-[OnPostReport (Report Extension) Trigger](../reportextension/devenv-onpostreport-reportextension-trigger.md)  
-[Report Triggers and Runtime Operations](../../devenv-report-triggers.md)  
+[OnPostReport (report extension) trigger](../reportextension/devenv-onpostreport-reportextension-trigger.md)  
+[OnPreRendering (report) trigger](../report/devenv-onprerendering-report-trigger.md)  
+[OnPreReport (report) trigger](../report/devenv-onprereport-report-trigger.md)  
+[Report triggers and runtime operations](../../devenv-report-triggers.md)  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  
