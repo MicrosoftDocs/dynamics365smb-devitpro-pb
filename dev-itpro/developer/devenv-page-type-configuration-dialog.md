@@ -54,8 +54,7 @@ part(AgentSetupPart; "Agent Setup Part")
 ```
 
 > [!IMPORTANT]
-> The AgentSetupPart must be used as first element in the layout. And no other parts are accepted in this layout.
-
+> The `AgentSetupPart` must be used as first element in the layout. And no other parts are accepted in this layout.
 
 ### Groups and fields
 
@@ -65,7 +64,7 @@ You can organize fields into groups to structure related settings:
 - **Fields** - Individual configuration options with validation and assist-edit capabilities
 - **Nested groups** - Create hierarchical organization of related settings
 
-### Cards with toggle controls
+### Cards that have toggle controls
 
 Each root-level group in the `Content` area represents a Card in the configuration dialog. Cards can have a toggle control at the top by using a specific pattern:
 
