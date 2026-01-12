@@ -1425,7 +1425,6 @@
 #### [Security model in Business Central](security/security-application.md)
 #### [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Permissions on Objects](developer/devenv-permissions-on-database-objects.md)
-
 ### [Online](security/security-online.md)
 ### On-premises
 #### [On-premises security](security/security-onpremises.md)
@@ -1434,7 +1433,8 @@
 #### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
 #### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
-### [Data security](security/data-security.md)
+### Data security
+#### [Data security overview](security/data-security.md)
 #### [Using security filters](security/Security-Filters.md)
 ### [Azure security service tags](security/security-service-tags.md)
 ### [Security FAQ](security/security-faq.md)
