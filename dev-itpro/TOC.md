@@ -1422,22 +1422,27 @@
 ### [Security overview](security/security-and-protection.md)
 ### [Security scenarios guide](security/security-scenarios-guide.md)
 ### [Tips for business users](security/security-users.md)
-### [Application](security/security-application.md)
 ### [Setting up Multifactor Authentication (MFA)](security/multifactor-authentication.md)
+### Application security
+#### [Security model in Business Central](security/security-application.md)
+#### [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Permissions on Objects](developer/devenv-permissions-on-database-objects.md)
 ### [Online](security/security-online.md)
-### [On-premises](security/security-onpremises.md)
-### [Data security](security/data-security.md)
+### On-premises
+#### [On-premises security](security/security-onpremises.md)
+#### [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
+#### [Enhancing Server Security](security/enhancing-server-instance-security.md)
+#### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
+#### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
+#### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
+### Data security
+#### [Data security overview](security/data-security.md)
+#### [Using security filters](security/Security-Filters.md)
 ### [Azure security service tags](security/security-service-tags.md)
 ### [Security FAQ](security/security-faq.md)
 <!--
 ### [Considerations](security/security-considerations.md)
-### [User Security](security/user-security.md)
-### [Data Security](security/data-security.md)
-### [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
-### [Enhancing Server Security](security/enhancing-server-instance-security.md)
-### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
-### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
-### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
+#### [User Security](security/user-security.md)
 -->
 ## Privacy
 ### [Privacy FAQ](security/PrivacyFAQ.md)

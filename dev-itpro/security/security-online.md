@@ -8,7 +8,7 @@ ms.date: 12/03/2025
 ms.reviewer: solsen
 ---
 
-# Business Central security 
+# Business Central security (online deployment)
 
 This section helps you understand and improve the security of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. In the links below you find information, guidance, and recommended practices related to authentication, data encryption, and safely integrating with other services. You can also find information on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] certifications and regulatory compliance.
 
@@ -62,7 +62,7 @@ In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], use built-in fea
 Data belonging to a single tenant is stored in an isolated database and is never mixed with data from other tenants. This setup ensures complete isolation of data in day-to-day use and in backup/restore scenarios. Furthermore, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses encryption to help protect tenant data in the following ways:
 
 - Data at rest is encrypted by using Transparent Data Encryption (TDE) and backup encryption. Leran more in [Data Encryption at Rest](transparent-data-encryption.md).
-- Data backups are always encrypted. [](../administration/r)
+- Data backups are always encrypted. 
 - All network traffic inside the service is encrypted by using industry-standard encryption protocols.
 
 ### Customer-managed encryption key
