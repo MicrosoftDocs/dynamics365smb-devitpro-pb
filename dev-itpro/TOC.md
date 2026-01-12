@@ -1420,12 +1420,15 @@
 ### [Security overview](security/security-and-protection.md)
 ### [Security scenarios guide](security/security-scenarios-guide.md)
 ### [Tips for business users](security/security-users.md)
-### [Application](security/security-application.md)
+### [Setting up Multifactor Authentication (MFA)](security/multifactor-authentication.md)
+### Application security
+#### [Security model in Business Central](security/security-application.md)
 #### [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Permissions on Objects](developer/devenv-permissions-on-database-objects.md)
-### [Setting up Multifactor Authentication (MFA)](security/multifactor-authentication.md)
+
 ### [Online](security/security-online.md)
-### [On-premises](security/security-onpremises.md)
+### On-premises
+#### [On-premises security](security/security-onpremises.md)
 #### [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
 #### [Enhancing Server Security](security/enhancing-server-instance-security.md)
 #### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)

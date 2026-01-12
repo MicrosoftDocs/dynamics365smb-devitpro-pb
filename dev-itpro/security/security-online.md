@@ -8,7 +8,7 @@ ms.date: 12/03/2025
 ms.reviewer: solsen
 ---
 
-# Business Central security 
+# Business Central security (online deployment)
 
 This section helps you understand and improve the security of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. In the links below you find information, guidance, and recommended practices related to authentication, data encryption, and safely integrating with other services. You can also find information on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] certifications and regulatory compliance.
 
