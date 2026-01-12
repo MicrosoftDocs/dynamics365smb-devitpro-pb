@@ -213,7 +213,7 @@ Example `200 OK` response with body:
   "value":
   [
     {
-      "id": guid, // ID of the dependent app
+      "appId": guid, // ID of the dependent app
       "name": string, // Name of the dependent app
       "publisher": string, // Publisher of the dependent app
       "version": string, // Version of the dependent app
@@ -251,7 +251,7 @@ Returns information about the apps installed on the environment.
   "value":
   [
     { 
-      "id": guid, // Id of the installed app 
+      "appId": guid, // Id of the installed app 
       "name": string, // Name of the installed app 
       "publisher": string, // Publisher of the installed app 
       "version": string, // Version of the installed app
@@ -290,14 +290,14 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
   "value":
   [ 
     { 
-      "id": guid, // Id of the app 
+      "appId": guid, // Id of the app 
       "name": string, // Name of the app 
       "publisher": string, // Publisher of the app 
       "version": string, // New version available of the app
       "requirements": // List of other apps that need to be installed or updated before this app can be updated
       [
         { 
-          "id": guid, // Id of the app
+          "appId": guid, // Id of the app
           "name": string, // Name of the app 
           "publisher": string, // Publisher of the app 
           "version": string, // Version the required app needs to be updated to or installed
