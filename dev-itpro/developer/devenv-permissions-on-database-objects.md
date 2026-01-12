@@ -1,5 +1,5 @@
 ---
-title: Permissions on Database Objects
+title: Permissions on Objects
 description: This article provides an overview of permissions on objects in Business Central.
 ms.date: 06/02/2025
 ms.topic: concept-article
@@ -8,9 +8,9 @@ ms.reviewer: solsen
 author: SusanneWindfeldPedersen
 ---
 
-# Permissions on database objects
+# Permissions on objects
 
-This article provides an overview of permissions on objects in [!INCLUDE [prod_short](includes/prod_short.md)].
+This article provides an overview of permissions on objects such as tables, pages, and reports in [!INCLUDE [prod_short](includes/prod_short.md)].
   
 ## Permissions
 
