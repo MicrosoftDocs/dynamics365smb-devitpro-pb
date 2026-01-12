@@ -1,7 +1,8 @@
 ---
 title: Set up app key vaults for Business Central online
-description: Describes how to use an Azure key vault with Business Central extensions for online.
-ms.date: 01/06/2025
+ms.author: jswymer
+description: Learn how to set up Azure key vaults for Business Central online extensions. Follow step-by-step instructions to securely manage secrets for your AppSource apps.
+ms.date: 12/16/2025
 ms.topic: how-to
 author: jswymer
 ms.reviewer: solsen
@@ -35,35 +36,39 @@ For using other methods, learn more in [Azure key vault Developer's Guide](/azur
 
 Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online solution is configured to use a Microsoft Entra application for reading key vault secrets. The application is called **Dynamics 365 Business Central ISV key vault Reader**. Microsoft manages the key vault reader application, however, there are a couple tasks that you have to do to enable it. First, the application must be provisioned on your Microsoft Entra tenant, as described here.
 
-To provision the key vault reader application, use the [Microsoft Entra ID PowerShell module](/powershell/module/azuread).
+To provision the key vault reader application, you use the [Microsoft.Graph.Applications module](/powershell/module/microsoft.graph.applications) and [Microsoft.Graph.Authentication module](/powershell/module/microsoft.graph.authentication). These modules are part of the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview).
+
+Follow these instructions to install the modules and provision the key reader application:
 
 1. Open Windows PowerShell as an administrator.
-1. Install the Microsoft Entra ID PowerShell module.
+1. Run the following command to install the Microsoft.Graph.Applications and Microsoft.Graph.Authentication modules.
+
+   ```powershell
+   Install-Module Microsoft.Graph.Applications -Scope CurrentUser -Repository PSGallery -Force
+   ```
+
+   This command also installs the Microsoft.Graph.Authentication module because the Microsoft.Graph.Applications module depends on it.
+1. Run the following command to import the Microsoft Graph PowerShell modules.
 
     ```powershell
-    Install-Module AzureAD 
+    Import-Module Microsoft.Graph.Applications
     ```
 
-1. Import the Microsoft Entra ID module.
-
-    ```powershell
-    Import-Module AzureAD 
-    ```
-
+   This command also imports the Microsoft.Graph.Authentication module because the Microsoft.Graph.Applications module depends on it.
 1. Connect to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Microsoft Entra tenant.
 
     1. Run the following command:
 
        ```powershell
-       Connect-AzureAD 
+       Connect-MgGraph -Scopes "Application.ReadWrite.All"
        ```
 
     1. Provide your sign-in name and password when prompted.
 
-1. Create a Microsoft Entra service principal using the following command:
+1. Run the following command to create a Microsoft Entra service principal:
 
     ```powershell
-    New-AzureADServicePrincipal -AppId 7e97dcfb-bcdd-426e-8f0a-96439602627a
+    New-MgServicePrincipal -AppId "7e97dcfb-bcdd-426e-8f0a-96439602627a"
     ```
 
     `7e97dcfb-bcdd-426e-8f0a-96439602627a` is the Application (client) ID of Microsoft's centralized Microsoft Entra application.
@@ -75,33 +80,37 @@ To provision the key vault reader application, use the [Microsoft Entra ID Power
 The next task is to grant the key vault reader application permission to read secrets from your key vaults. The steps in this task are done from the [Azure portal](https://portal.azure.com).
 
 1. Open the key vault in the portal.
-2. Select **Access policies**, then **Add Access Policy**.
-3. Set **Secret Permissions** to **Get**.
-4. Choose **Select principal**, and then in the pane on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV key vault Reader**. 
-5. Select **Add**, then **Save**.
+1. Select **Access policies**, then **Add Access Policy**.
+1. Set **Secret Permissions** to **Get**.
+1. Select **Select principal**, and then in the pane on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV key vault Reader**. 
+1. Select **Add**, then **Save**.
 
 Perhaps, if your key vault is using Azure Role-Based Access Control then the steps would be:
+
 1. Navigate to your Azure Key Vault: In the Azure portal, go to your Key Vault resource.
-2. **Access Control (IAM)**: Under the Settings menu, select **Access control (IAM)**.
-3. Add Role Assignment: Click on **+ Add** and choose **Add role assignment**.
-4. Select Role: On the Add role assignment page, search for **Key Vault Secrets User** and select it from the search results. This role allows the service identity to read secrets but not perform any other actions.
-5. Select Members: Go to the Members tab, select **User, group, or service principal**, then click on **+ Select members**. In the pane on the right, search for either the application (client) ID 7e97dcfb-bcdd-426e-8f0a-96439602627a or the display name Dynamics 365 Business Central ISV key vault Reader.
+1. **Access Control (IAM)**: Under the Settings menu, select **Access control (IAM)**.
+1. Add Role Assignment: Select **+ Add** and choose **Add role assignment**.
+1. Select Role: On the Add role assignment page, search for **Key Vault Secrets User** and select it from the search results. This role allows the service identity to read secrets but not perform any other actions.
+1. Select Members: Go to the Members tab, select **User, group, or service principal**, then select **+ Select members**. In the pane on the right, search for either the application (client) ID 7e97dcfb-bcdd-426e-8f0a-96439602627a or the display name Dynamics 365 Business Central ISV key vault Reader.
+
 ## Introduce the special Azure key vault secret
 
 Once your key vault is created, there are few steps that you should perform. Feel free to skip the first couple of them if you're just linking new app to an existing Azure key vault.
 
 1. Create **AllowedBusinessCentralAppIds** secret in your key vault. You can learn how to create a secret following this [guide](/azure/key-vault/secrets/quick-create-portal).
-2. Add your AppId or AppIds as content of the secret. If you're adding multiple appIds separate them by comma or semicolumn.
-Your secret creation screen should look similar to this:
- ![Create new key vault secret.](../developer/media/setup-app-key-vault-secret-creation.png "Creating AllowedBusinessCentralAppIds secret.")  
-3. If you're linking a new app to the existing Azure key vault, you have to create a new version of the **AllowedBusinessCentralAppIds** secret. When creating the new version make sure to correctly append the new appId. In order to do so you have to get the value of the secret from the existing version by clicking on the secret name then on **Current version** and then on **Show secret value**, copy this value and upon creating the new verion modify the secret value to be the existing value + ", [new appId]".
+1. Add your AppId or AppIds as content of the secret. If you're adding multiple appIds, separate them by comma or semicolumn.
+
+   Your secret creation screen should look similar to this image:
+
+   ![Create new key vault secret.](../developer/media/setup-app-key-vault-secret-creation.png "Creating AllowedBusinessCentralAppIds secret.")  
+1. If you're linking a new app to the existing Azure key vault, you have to create a new version of the **AllowedBusinessCentralAppIds** secret. When creating the new version, make sure to correctly append the new appId. In order to do so you have to get the value of the secret from the existing version by clicking on the secret name then on **Current version** and then on **Show secret value**, copy this value and upon creating the new version modify the secret value to be the existing value + ", [new appId]".
 
 ## Extra information
 
 1. The key vault URLs added to your `app.json` file should belong to the same Microsoft Entra Tenant.
-2. Microsoft registers the link between your AppSource app and Azure key vault upon submission of a new AppSource app version. Once this link is established, it can't be removed as this is considered breaking changes, and it might break existing installations of your AppSource app.
-3. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, this won't "deregister" the access to the key vault from this specific AppSource app. Once the registration is done, it's irreversible.
-4. If you're facing issues that are generic and don't give you actionable error messages, contact the AppSource Marketplace support.
+1. Microsoft registers the link between your AppSource app and Azure key vault upon submission of a new AppSource app version. Once this link is established, it can't be removed because it's considered to be a breaking change, and it might break existing installations of your AppSource app.
+1. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, these actions don't "deregister" the access to the key vault from this specific AppSource app. Once the registration is done, it's irreversible.
+1. If you're facing issues that are generic and don't give you actionable error messages, contact the AppSource Marketplace support.
 
 ## Related information  
 
