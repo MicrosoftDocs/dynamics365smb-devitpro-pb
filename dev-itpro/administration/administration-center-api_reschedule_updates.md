@@ -42,13 +42,13 @@ Returns information about updates available for the specified environment.
       "targetVersion": "26.1",
       "available": true, // Indicates whether the target version has been released
       "selected": true, // Indicates whether the next selected update is for this target version
-      "scheduleDetails":
-      {
-        "latestSelectableDate": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the last date for which the update to this target version can be scheduled
+      "updateStatus": "scheduled", // 
+      "scheduleDetails": {
+        "latestSelectableDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the last date for which the update to this target version can be scheduled
         "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the datetime for which the update to this target version has been scheduled
         "ignoreUpdateWindow": false, // Indicates whether the update window for the environment may be ignored when running this update
         "rolloutStatus": "Active" // Indicates the rollout status of updates to this target version, e.g. "Active", "UnderMaintenance", or "Postponed"
-      }
+      },
       "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview"
     },
     { 
@@ -56,13 +56,12 @@ Returns information about updates available for the specified environment.
       "targetVersion": "26.2",
       "available": true,
       "selected": false,  
-      "scheduleDetails":
-      {        
-        "latestSelectableDate": "YYYY-MM-DDTHH:MM:SSZ",
+      "scheduleDetails": {        
+        "latestSelectableDateTime": "YYYY-MM-DDTHH:MM:SSZ",
         "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Specifies the date for which this update will be scheduled if Microsoft services select this as next update for the environment, null if no date has been specified by an environment administrator
         "ignoreUpdateWindow": false,
         "rolloutStatus": "Active"
-      }
+      },
       "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview"
     },
     {     
@@ -70,10 +69,10 @@ Returns information about updates available for the specified environment.
       "targetVersion": "26.3", 
       "available": false,
       "selected": true,
-      "expectedAvailablity":
+      "expectedAvailability": {
         "month": 8, // Indicates the number of the month in which the target version is expected to be released
         "year": 2025 // Indicates the year in which the target version is expected to be released
-      }
+      },
       "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview"
     },
     {
@@ -81,10 +80,10 @@ Returns information about updates available for the specified environment.
       "targetVersion": "26.4",
       "available": false,
       "selected": false,
-      "expectedAvailablity": {
+      "expectedAvailability": {
         "month": 9,
         "year": 2025
-      }
+      },
       "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview"
     }
   ]
