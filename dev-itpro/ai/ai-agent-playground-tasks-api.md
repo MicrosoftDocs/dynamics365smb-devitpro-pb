@@ -154,6 +154,10 @@ Attachments enable agents to process documents like invoices, purchase orders, r
 
 Learn more in [Attachment capabilities and limitations](ai-agent-playground-attachments.md).
 
+### Create configuration dialogs for agents
+
+When building AL extensions that integrate with agents, you can create dedicated configuration interfaces using the `ConfigurationDialog` page type. This specialized page type is designed specifically for agent setup scenarios and provides features like temporary data sources, system actions, and structured layouts. Learn more in [The ConfigurationDialog page type (preview)](../developer/devenv-page-type-configuration-dialog.md).
+
 ## Writing AL code specific to agent sessions
 
 In some use cases, agent-specific AL code needs to be written. Examples of these are:
