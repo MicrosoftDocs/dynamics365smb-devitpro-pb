@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
 ms.collection: bap-ai-copilot
-ms.date: 01/02/2026
+ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ms.reviewer: solsen
 ---
@@ -66,7 +66,7 @@ You can organize fields into groups to structure related settings:
 
 ### Cards that have toggle controls
 
-Each root-level group in the `Content` area represents a Card in the configuration dialog. Cards can have a toggle control at the top by using a specific pattern:
+Each root-level group in the `Content` area represents a card in the configuration dialog. Cards can have a toggle control at the top by using a specific pattern:
 
 #### Add a toggle to a card
 
