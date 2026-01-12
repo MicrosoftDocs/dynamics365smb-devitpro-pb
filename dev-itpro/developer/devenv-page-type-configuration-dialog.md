@@ -211,29 +211,22 @@ page 50100 "Agent Configuration"
                 }
                 
                 // Complex settings accessed via drill-down
-                group(InstructionGroup)
+                field(Profile; ProfileDisplayName)
                 {
-                    Caption = 'Instructions for the agent';
-                    InstructionalText = 'Use everyday words to describe what the agent should do.';
+                    Caption = 'Profile';
+                    ToolTip = 'Specifies the profile that is associated with the agent.';
+                    Editable = false;
 
-                    field(EditInstructions; EditInstructionsLbl)
-                    {
-                        Caption = 'Edit instructions';
-                        ShowCaption = false;
-                        ToolTip = 'Opens a dialog to edit the agent instructions.';
-                        Editable = false;
-
-                        trigger OnDrillDown()
-                        var
-                            InstructionsDialog: Page "Agent Instructions Dialog";
-                        begin
-                            InstructionsDialog.SetInstructions(InstructionText);
-                            if InstructionsDialog.RunModal() = Action::OK then begin
-                                InstructionText := InstructionsDialog.GetInstructions();
-                                IsUpdated := true;
-                            end;
+                    trigger OnAssistEdit()
+                    var
+                        AllProfile: Record "All Profile";
+                    begin
+                        if Page.RunModal(Page::"Available Profiles", AllProfile) = Action::LookupOK then begin
+                            TempUserSettings."Profile ID" := AllProfile."Profile ID";
+                            ProfileDisplayName := AllProfile."Profile ID";
+                            IsUpdated := true;
                         end;
-                    }
+                    end;
                 }
             }
             
@@ -287,61 +280,6 @@ page 50100 "Agent Configuration"
                     }
                 }
             }
-            
-            // Agent access and visibility settings
-            group(AgentConfiguration)
-            {
-                Caption = 'Agent''s visibility and access';
-
-                group(ProfileGroup)
-                {
-                    Caption = 'Profile (role)';
-                    InstructionalText = 'Choose the user profile that the agent uses when it completes tasks.';
-
-                    field(Profile; ProfileDisplayName)
-                    {
-                        Caption = 'Setup profile';
-                        ToolTip = 'Specifies the profile that is associated with the agent.';
-                        Editable = false;
-
-                        trigger OnAssistEdit()
-                        var
-                            AllProfile: Record "All Profile";
-                        begin
-                            if Page.RunModal(Page::"Available Profiles", AllProfile) = Action::LookupOK then begin
-                                TempUserSettings."Profile ID" := AllProfile."Profile ID";
-                                ProfileDisplayName := AllProfile."Profile ID";
-                                IsUpdated := true;
-                            end;
-                        end;
-                    }
-                }
-                
-                group(PermissionsGroup)
-                {
-                    Caption = 'Permissions';
-                    InstructionalText = 'Define access rights to control what the agent can work with.';
-
-                    field(Permissions; ManagePermissionsLbl)
-                    {
-                        Caption = 'Manage permissions';
-                        ShowCaption = false;
-                        ToolTip = 'Opens a dialog to manage the agent permissions.';
-                        Editable = false;
-
-                        trigger OnDrillDown()
-                        var
-                            PermissionsPage: Page "Select Agent Permissions";
-                        begin
-                            PermissionsPage.Initialize(AgentSetupBuffer."User Security ID", TempPermissions);
-                            if PermissionsPage.RunModal() = Action::OK then begin
-                                PermissionsPage.GetPermissions(TempPermissions);
-                                IsUpdated := true;
-                            end;
-                        end;
-                    }
-                }
-            }
         }
     }
 
@@ -387,14 +325,8 @@ page 50100 "Agent Configuration"
         if AgentNameVar = '' then
             Error('You must specify an agent name.');
             
-        if InstructionText = '' then
-            Error('You must provide instructions.');
-            
         if ProfileDisplayName = '' then
             Error('You must select a profile.');
-        
-        if TempPermissions.IsEmpty() then
-            Error('You must assign at least one permission set.');
 
         // Apply all settings
         ApplySettings();
@@ -420,22 +352,17 @@ page 50100 "Agent Configuration"
         AgentSetup: Codeunit "Agent Setup";
     begin
         // Apply all collected settings to the database
-        AgentSetup.UpdateAgent(AgentSetupBuffer, TempPermissions);
+        AgentSetup.UpdateAgent(AgentSetupBuffer);
         AgentSetup.SetProfile(AgentSetupBuffer."User Security ID", TempUserSettings);
-        AgentSetup.SetInstructions(AgentSetupBuffer."User Security ID", InstructionText);
     end;
 
     var
         AgentSetupBuffer: Record "Agent Setup Buffer" temporary;
-        TempPermissions: Record "Permission Buffer" temporary;
         TempUserSettings: Record "User Settings" temporary;
         AgentNameVar: Text[50];
-        InstructionText: Text;
         ProfileDisplayName: Text;
         MailboxName: Text;
         IsUpdated: Boolean;
-        EditInstructionsLbl: Label 'Edit instructions';
-        ManagePermissionsLbl: Label 'Manage permissions';
 }
 ```
 
@@ -510,22 +437,22 @@ group(MailboxGroup)
 
 This creates a visual hierarchy where users can enable/disable features at different levels, providing granular control over configuration options.
 
-#### Drill-down pattern for complex settings
+#### Assist-edit pattern for complex settings
 
-Instead of crowding the main page with many fields, complex settings like instructions and permissions use noneditable fields with `OnDrillDown` triggers:
+Instead of crowding the main page with many fields, complex settings like profile selection use noneditable fields with `OnAssistEdit` triggers:
 
 ```al
-field(EditInstructions; EditInstructionsLbl)
+field(Profile; ProfileDisplayName)
 {
     Editable = false;
     
-    trigger OnDrillDown()
+    trigger OnAssistEdit()
     var
-        InstructionsDialog: Page "Agent Instructions Dialog";
+        AllProfile: Record "All Profile";
     begin
-        InstructionsDialog.SetInstructions(InstructionText);
-        if InstructionsDialog.RunModal() = Action::OK then begin
-            InstructionText := InstructionsDialog.GetInstructions();
+        if Page.RunModal(Page::"Available Profiles", AllProfile) = Action::LookupOK then begin
+            TempUserSettings."Profile ID" := AllProfile."Profile ID";
+            ProfileDisplayName := AllProfile."Profile ID";
             IsUpdated := true;
         end;
     end;
@@ -535,46 +462,20 @@ field(EditInstructions; EditInstructionsLbl)
 This pattern:
 
 - Keeps the main configuration page focused and uncluttered
-- Opens specialized dialogs for detailed settings
-- Returns to the main page after the user completes the subdialog
+- Opens specialized lookup pages for selection
+- Returns to the main page after the user makes a selection
 
-#### Multiple temporary buffer records
+#### Temporary buffer records
 
-The page manages multiple temporary records to collect related settings before applying them:
+The page manages temporary records to collect settings before applying them:
 
 ```al
 var
     AgentSetupBuffer: Record "Agent Setup Buffer" temporary;
-    TempPermissions: Record "Permission Buffer" temporary;
     TempUserSettings: Record "User Settings" temporary;
 ```
 
 This allows validation across all settings before committing changes to the database.
-
-#### Nested groups for organization
-
-```al
-group(AgentConfiguration)
-{
-    Caption = 'Agent''s visibility and access';
-
-    group(ProfileGroup)
-    {
-        Caption = 'Profile (role)';
-        InstructionalText = 'Choose the user profile...';
-        // fields
-    }
-    
-    group(PermissionsGroup)
-    {
-        Caption = 'Permissions';
-        InstructionalText = 'Define access rights...';
-        // fields
-    }
-}
-```
-
-Nested groups create a clear visual hierarchy that organizes related concepts.
 
 #### Change tracking and conditional enablement
 
@@ -608,9 +509,12 @@ begin
     if CloseAction = CloseAction::Cancel then
         exit(true);
 
-    // Validate all requirements
+    // Validate required fields
     if AgentNameVar = '' then
         Error('You must specify an agent name.');
+        
+    if ProfileDisplayName = '' then
+        Error('You must select a profile.');
     
     // Apply all settings
     ApplySettings();
@@ -620,23 +524,23 @@ end;
 
 ## Key features and best practices
 
-### Drill-down for complex settings
+### Assist-edit for complex settings
 
-Use noneditable fields with `OnDrillDown` triggers to handle complex settings:
+Use noneditable fields with `OnAssistEdit` triggers to handle complex settings:
 
 ```al
 field(ComplexSetting; SettingLabel)
 {
     Editable = false;
     
-    trigger OnDrillDown()
+    trigger OnAssistEdit()
     begin
-        // Open specialized dialog
+        // Open specialized lookup or dialog
     end;
 }
 ```
 
-This pattern keeps the main configuration page focused while providing access to detailed settings.
+This pattern keeps the main configuration page focused while providing access to detailed settings through lookups or specialized dialogs.
 
 #### Validation flow
 
@@ -658,12 +562,11 @@ The **OK** button is customized with a meaningful caption and conditional enable
 
 ### Temporary tables
 
-Using `SourceTableTemporary = true` is mandatory with `ConfigurationDialog` pages. Additionally, you can manage multiple temporary buffer records to organize related settings:
+Using `SourceTableTemporary = true` is mandatory with `ConfigurationDialog` pages. You can manage temporary buffer records to organize settings:
 
 ```al
 var
     AgentSetupBuffer: Record "Agent Setup Buffer" temporary;
-    TempPermissions: Record "Permission Buffer" temporary;
     TempUserSettings: Record "User Settings" temporary;
 ```
 
