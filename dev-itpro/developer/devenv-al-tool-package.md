@@ -43,6 +43,8 @@ al help
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
 | `compile`                      | Compile a package using `alc.exe`.  |
+| `workspace`                    | Workspace related commands.  |
+| `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |
