@@ -69,13 +69,13 @@ The `projects` argument is a space-separated list of paths to AL project folders
 
 The following options are supported:
 
-  --port <port>                                  Port number for the HTTP server. [default: 5000]
-  --packagecachepath <packagecachepath>          Paths to the package cache folders.
-  --assemblyprobingpaths <assemblyprobingpaths>  Paths to probe for dependent assemblies.
-  --ruleset <ruleset>                            Path to the ruleset file.
-  --outfolder <outfolder>                        Output folder for compilation artifacts.
-  --codeanalyzers <codeanalyzers>                Code analyzers to enable.
-  -?, -h, --help                                 Show help and usage information
+  --port                  Port number for the HTTP server. [default: 5000]
+  --packagecachepath      Paths to the package cache folders.
+  --assemblyprobingpaths  Paths to probe for dependent assemblies.
+  --ruleset               Path to the ruleset file.
+  --outfolder             Output folder for compilation artifacts.
+  --codeanalyzers         Code analyzers to enable.
+  -?, -h, --help          Show help and usage information
 
 Once the server is launched, it will listen on the specified port for MCP calls and provides several tools for agents to interact with the loaded projects.
 
