@@ -75,7 +75,7 @@ When enabled, the migration tools conduct the following evaluation process:
 - If no customer-level account exists but the customer's class has one, create the line and apply it to all customers in that class
 - If neither customer nor class has a sales account, use the default from **Posting Accounts Setup** in Dynamics GP (if available).
 
-Each recurring line includes a description based on the Dynamics GP account and dimensions, is linked to the correct GL account, and is configured to automatically insert on vendor quotes, orders, invoices, and credit memos.
+Each recurring line includes a description based on the Dynamics GP account and dimensions, is linked to the correct GL account, and is configured to automatically insert on customer quotes, orders, invoices, and credit memos.
 
 ## Vendor master records and outstanding transactions from the Payables module
 
