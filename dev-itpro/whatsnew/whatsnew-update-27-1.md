@@ -38,6 +38,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | User experiences | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data) | General availability |
 |Shopify| [Create sales invoices from orders automatically, and use new ways to view orders](/dynamics365/business-central/shopify/synchronize-orders) | General availability |
 | | [Use renamed customer templates and fulfillments](/dynamics365/business-central/shopify/synchronize-customers) | General availability |
+|Dynamics GP migration|**Recurring purchase and sales lines creation:** The Dynamics GP migration tool supports automatic creation of recurring purchase and sales lines in Business Central from Dynamics GP Purchasing and Sales Accounts. When enabled in migration settings, it evaluates vendor/customer accounts, class accounts, and default purchasing/sales accounts in Dynamics GP, then generates corresponding recurring lines in Business Central. Each line is linked to the appropriate vendors or customers, includes mapped dimensions, and is set to insert automatically on purchase or sales documents. This option is off by default. <br><br>Learn more in [Generating recurring purchase lines](../administration/migrate-dynamics-gp.md#creating-recurring-purchase-lines) and [Generating recurring sales lines](../administration/migrate-dynamics-gp.md#recurring-sales-lines).|General availability|
 
 ## Localization updates
 
@@ -67,12 +68,6 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 **Early access preview versions for partner:** Tenants with the partner sandbox license get early access to preview environments for the next major Business Central version so they can explore new capabilities and prepare for changes ahead of general availability. Learn more in [Early access previews](../administration/preview-environments.md#early-access-preview).
 
 **Consume available Copilot Credits with no extra setup:** You can now use prepaid Copilot Credits without configuring AI billing on Business Central environments. Copilot Credits consumed by Business Central environments that don't have AI billing setup are reported against the Power Platform default environment for the tenant. Learn more in [Manage consumption-based billing for agent capabilities](../administration/tenant-admin-center-manage-consumption-billing.md).
-
-### Dynamics GP cloud migration: Recurring sales and purchase line creation
-
-The Dynamics GP migration tool supports automatic creation of recurring purchase and sales lines in Business Central from Dynamics GP Purchasing and Sales Accounts. When enabled in migration settings, it evaluates vendor/customer accounts, class accounts, and default purchasing/sales accounts in Dynamics GP, then generates corresponding recurring lines in Business Central. Each line is linked to the appropriate vendors or customers, includes mapped dimensions, and is set to insert automatically on purchase or sales documents. This option is off by default.
-
-Learn more in [Generating recorring purchase lines](../administration/migrate-dynamics-gp.md#creating-recurring-purchase-lines) and [Generating recurring sales lines](../administration/migrate-dynamics-gp.md#recurring-sales-lines)
 
 ### Business Central Launch Edition - 2025 release wave 2
 
