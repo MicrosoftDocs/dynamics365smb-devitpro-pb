@@ -10,6 +10,8 @@ ms.author: jobulsin
 
 # Auditing in Microsoft Purview
 
+[!INCLUDE[online_only](../developer/includes/online_only.md)]
+
 Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit auditable events to [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. For [!INCLUDE[prod_short](../developer/includes/prod_short.md)], this means that Create, Update, and Delete events that require administrator privileges are emitted to Purview's unified audit log, aiding security, legal, and compliance investigation across all Microsoft services used in your organization.
 
 [!INCLUDE[audit_authentication_to_telemetry_tip](../includes/audit_authentication_to_telemetry_tip.md)]
