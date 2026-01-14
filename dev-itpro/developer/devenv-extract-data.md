@@ -124,7 +124,7 @@ You can use the Azure Data Factory OData connector with service principal authen
 
 ### Power BI dataflows
 
-It's also possible to use Power BI dataflows for your extract pipelines. With Power BI dataflows, you can connect to [!INCLUDE[prod_short](includes/prod_short.md)] APIs and utilize incremental refresh to only load data that was changed since last refresh. Learn more about in [About incremental refresh](/power-query/dataflows/incremental-refresh) and [About Power BI dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service).
+It's also possible to use Power BI dataflows for your extract pipelines. With Power BI dataflows, you can connect to [!INCLUDE[prod_short](includes/prod_short.md)] APIs and utilize incremental refresh to only load data that was changed since last refresh. Learn more in [About incremental refresh](/power-query/dataflows/incremental-refresh) and [About Power BI dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service).
 
 <!--Microsoft MVP Steven Renders has written a nice blog post on how to use Power BI dataflows with [!INCLUDE[prod_short](includes/prod_short.md)]:
 [How do I create a Power BI dataflow with Business Central data](https://thinkaboutit.be/2023/02/how-do-i-create-a-power-bi-dataflow-with-business-central-data/)-->
