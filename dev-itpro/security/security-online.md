@@ -4,7 +4,7 @@ description: Learn about the main aspects of security in your online deployment 
 author: jswymer
 ms.topic: article
 ms.author: jswymer
-ms.date: 12/03/2025
+ms.date: 01/14/2026
 ms.reviewer: solsen
 ---
 
@@ -25,7 +25,7 @@ It's possible to configure Microsoft Entra ID to allow or deny authentications t
     > [!NOTE]
     > Introducing new CA policies prompts users to reauthenticate; plan such changes to minimize disruption (for example, inform users, update background job credentials if needed).
 
-### Require Multi-Factor Authentication (MFA)
+### Require multifactor authentication (MFA)
 
 Always require MFA for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] sign-in. We recommend using modern authentication options (such as Authenticator apps or FIDO2 keys) and disabling basic auth methods. Learn more in [Setting up Multifactor Authentication (MFA)l](multifactor-authentication.md).
 
@@ -65,7 +65,7 @@ In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], use built-in fea
 
 Data belonging to a single tenant is stored in an isolated database and is never mixed with data from other tenants. This setup ensures complete isolation of data in day-to-day use and in backup/restore scenarios. Furthermore, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses encryption to help protect tenant data in the following ways:
 
-- Data at rest is encrypted by using Transparent Data Encryption (TDE) and backup encryption. Leran more in [Data Encryption at Rest](transparent-data-encryption.md).
+- Data at rest is encrypted by using Transparent Data Encryption (TDE) and backup encryption. Learn more in [Data Encryption at Rest](transparent-data-encryption.md).
 - Data backups are always encrypted. 
 - All network traffic inside the service is encrypted by using industry-standard encryption protocols.
 
