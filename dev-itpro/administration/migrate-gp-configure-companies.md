@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
 ms.collection: 
-ms.date: 02/29/2024
+ms.date: 01/14/2026
 ms.custom: bap-template
 ---
 
@@ -26,7 +26,7 @@ Complete this task after you set up cloud migration and before you replicate dat
 
 The **GP Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup. You can also open the page by searching for and opening the **Cloud Migration Management** page and then selecting the **GP Company Migration Configuration** action.
 
-![Shows GP company migration configuration page](../developer/media/gp-company-migration-configuration.svg)
+![Shows GP company migration configuration page](../developer/media/gp-company-migration-configuration.png)
 
 Once you have the **GP Company Migration Configuration** open, you can start to configure what data you to migrate by using the different sections of the page. The page enables you to configure the migration globally for all companies that you chose to migrate (using the upper sections of the page) or on a per-company basis using the **Per Company** section.
 
@@ -63,7 +63,11 @@ The steps in this section configure the data migration globally for all companie
 
 1. Choose the inactive record or discontinued items that you want to migrate.
 
-   Use the **Inactive records** section to specify the inactive records or discontinued items that you want to migrate. By default, no inactive records or discontinued items are migrated. So, for example, if you wanted to migrate inactive customers, turn on the **Inactive Customers** switch.
+   Use the **Include these records** section to specify the inactive records or discontinued items that you want to migrate. By default, no inactive records or discontinued items are migrated. So, for example, if you wanted to migrate inactive customers, turn on the **Inactive Customers** switch.
+
+1. Choose whether to generate recurring sales or purchasing line.
+
+   Use the **Recurring records** section to specify whether to generate recurring sales or purchasing lines using the default sales or purchasing accounts defined on the Vendor, Customer, Class or Posting Setup in GP. Learn more in [Creating recurring purchase lines](migrate-dynamics-gp.md#creating-recurring-purchase-lines) and [Creating recurring sales lines](migrate-dynamics-gp.md#creating-recurring-sales-lines).
 
 1. Choose the classes that you want to migrate as posting groups.
 
