@@ -10,6 +10,8 @@ ms.reviewer: jswymer
 
 # Data Encryption at Rest
 
+[!INCLUDE[on_prem_only.md](../developer/includes/on_prem_only.md)]. For online versions, encryption is always enabled and you cannot turn it off.
+
 When thinking about data encryption, you should mainly consider three scenarios:
 
 - Encrypt your data at rest, which means encrypting it while it's stored on whatever file storage you use.
