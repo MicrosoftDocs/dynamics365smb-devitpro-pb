@@ -1,7 +1,7 @@
 ---
 title: How to work with a performance problem
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
-ms.date: 05/31/2024
+ms.date: 01/14/2026
 ms.reviewer: solsen
 ms.topic: how-to
 author: KennieNP
@@ -29,7 +29,6 @@ To solve a performance problem, a common pattern is to do iterations of the foll
 
 Continue until the "slow" operations are comparable to the established baseline.
 
-
 ## Performance analysis tools
 
 Business Central comes with tools that can be used to analyze a performance problem. In the following, you can read about the pros and cons of the different performance tools described below.
@@ -37,11 +36,12 @@ Business Central comes with tools that can be used to analyze a performance prob
 |Performance tool | Properties |
 |---------------------------------|-------------|
 | Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
-|In-client performance profiler | Good for troubleshooting a performance scenario in the web client. <br>No developer required to run the tool.<br>For more information, see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md). | 
+|In-client performance profiler | Good for troubleshooting a performance scenario in the web client. <br>No developer required to run the tool.<br>Learn more in [In-client performance profiler overview](../administration/performance-profiler-overview.md). | 
 |Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
 |Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Slows down the system while running. <br> Can inject much data into Azure Application Insights. <br> Data collection must happen live. |
 |Database performance pages|The pages _Database Missing Indexes_ and _Database Wait Statistics_ show insights into database performance and how to fix it. |
-| AL profiler | Good to troubleshoot performance of a scenario. <br> Detailed information on where in the code the time is spent. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. <br>For more information, see [AL Profiler](../developer/devenv-al-profiler-overview.md) |
+| AL profiler | Good to troubleshoot performance of a scenario. <br> Detailed information on where in the code the time is spent. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. <br>Learn more in [AL Profiler](../developer/devenv-al-profiler-overview.md) |
+| Scheduled performance profiler | Use the scheduled performance profiler to investigate on individual user interactions or system processes. Learn more in [Scheduled performance profiler overview](../administration/scheduled-performance-profiler-overview.md)|
 
 
 ## Analyzing performance issues using the page inspector
