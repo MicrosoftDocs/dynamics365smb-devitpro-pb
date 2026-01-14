@@ -39,7 +39,7 @@ Business Central comes with tools that can be used to analyze a performance prob
 | Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
 |In-client performance profiler | Good for troubleshooting a performance scenario in the web client. <br>No developer required to run the tool.<br>Learn more in [In-client performance profiler overview](../administration/performance-profiler-overview.md). | 
 |Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
-|Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Slows down the system while running. <br> Can inject much data into Azure Application Insights. <br> Data collection must happen live. |
+|Verbose telemetry | Gives you all SQL queries for the session where you repro the issue. <br> Slows down the system while running. <br> Can inject much data into Azure Application Insights. <br> Data collection must happen live. |
 |Database performance pages|The pages _Database Missing Indexes_ and _Database Wait Statistics_ show insights into database performance and how to fix it. |
 | AL profiler | Good to troubleshoot performance of a scenario. <br> Detailed information on where in the code the time is spent. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. <br>Learn more in [AL Profiler](../developer/devenv-al-profiler-overview.md) |
 
@@ -104,7 +104,7 @@ With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, yo
 
 ## Analyzing performance issues using database missing indexes
 
-If you notice that the information retrieval from your database is slow, you can index columns that are frequently used by the application. You can see the list of potential columns that can be indexed and other useful information about them on **Database Missing Indexes**. This information will help you to optimize the performance of your database and application.
+If you notice that the information retrieval from your database is slow, you can index columns that are frequently used by the application. You can see the list of potential columns that can be indexed and other useful information about them on **Database Missing Indexes**. This information helps you to optimize the performance of your database and application.
 
 For more information about missing indexes and how they help you in achieving performance objectives, see [Missing Indexes in Dynamics 365 Business Central](../administration/database-missing-indexes.md).
 
@@ -133,8 +133,6 @@ This example illustrates how you can use the performance tuning process and tele
 - After configuring, data access intent and maybe having added indexes, measure rendering time and compare with the baseline. Also check if the new rendering time is good enough with respect to the acceptable rendering time that you defined together with the tenant administrator/customer. If the performance is still not good enough, you probably need to involve the extension publisher. 
 - What is the SQL statement to SQL row ratio (get this using eventId RT0006)? Maybe the extension publisher can make the report more set-based when reading data. The telemetry samples repository at [aka.ms/bctelemetrysamples](https://aka.ms/bctelemetrysamples) has KQL samples that can help with this analysis.
 - If you have data to back it up, consider filing a performance support request to the extension publisher. They're probably interested in making their app better and faster. Provide info about indexes you added, the kusto queries you used and the results, and also if the report could run as ReadOnly by default. 
-
-
 
 ## Related information
 
