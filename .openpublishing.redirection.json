@@ -7663,6 +7663,76 @@
       "source_path": "dev-itpro/developer/methods/devenv-recordid-method-record.md",
       "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/recordid/recordid-data-type",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-attachments.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-best-practices.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-create.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-effective-instructions.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-export-import.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-faq.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-instruction-keywords.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-iterate.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-landing-page.yml",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-permissions-profiles.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-run-agent.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-sales-validation.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/ai-agent-playground-tasks-api.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
+      "redirect_document_id": false
     }
   ] 
 }
