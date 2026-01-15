@@ -2,7 +2,7 @@
 title: Update 27.3 for Microsoft Dynamics 365 Business Central 2025 Release Wave 2
 description: Get an overview of new and changed capabilities in the 27.3 update of Business Central online, which is part of 2025 release wave 2
 ms.author: jswymer
-ms.date: 12/08/2025
+ms.date: 01/15/2026
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer
@@ -29,9 +29,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Localization updates
 
-|Country/region|Feature|Description|
-|-|-|-|
-|tbs|tbd|
+No localization updates in 27.3
 
 ## Release plan
 
