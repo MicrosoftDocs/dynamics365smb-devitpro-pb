@@ -65,7 +65,7 @@ In the **GP Company Migration Configuration** page, you can also choose to migra
 
 We also bring over outstanding receivables transactions. These transactions are brought in with the amount remaining in Dynamics GP. For example, if an invoice for $1000 was entered into Dynamics GP, and it has been partially paid and has a remaining balance of $400, the new invoice created in Business Central is for $600 because that's the amount remaining to be paid. We bring over all transaction types from Receivables Management.
 
-### Creating recurring sales lines
+### Generating recurring sales lines
 
 The migration tools can automatically create recurring sales lines in Business Central based on sales accounts already set up in Dynamics GP. The option to create recurring sales lines is available on the **GP Company Migration Configuration** and **GP Company Migration Settings** page and is turned off by default.
 
@@ -91,7 +91,7 @@ We also bring over outstanding Payables transactions. These transactions are bro
 
 You can also bring over Open Purchase Orders. When we migrate purchase orders, we're looking at the items and the quantities remaining on those items to determine what we bring over as an open purchase order. If an item is fully received and invoiced that item isn't migrated. By bringing over open purchase orders, you don't have to enter outstanding transactions from the purchase order aspect.
 
-### Creating recurring purchase lines
+### Generating recurring purchase lines
 
 The migration tools can automatically create recurring purchase lines in Business Central based on purchasing accounts already set up in Dynamics GP. The option to create recurring purchase lines is available on the **GP Company Migration Configuration** and **GP Company Migration Settings** page and is turned off by default.
 
