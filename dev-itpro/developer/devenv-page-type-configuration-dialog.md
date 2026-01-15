@@ -14,12 +14,12 @@ ms.reviewer: solsen
 
 [This article is prerelease documentation and is subject to change.]
 
-[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
 The `ConfigurationDialog` page type is a specialized page type that enables developers to create focused configuration dialogs for setting up and managing application settings, preferences, and configurations for agents. This page type provides a streamlined user experience with a modal dialog interface, system actions for saving or canceling changes, and support for temporary data sources.
 
 > [!IMPORTANT]
-> The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the Tasks AL API in [Integrate with the Tasks AL API (preview)](../ai/ai-agent-playground-tasks-api.md).
+> The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the Tasks AL API in [Integrate with the Tasks AL API (preview)](../ai/ai-agent-designer-tasks-api.md).
 
 ## Snippet support
 
@@ -615,12 +615,12 @@ Use `InstructionalText` at both page and group levels to guide users:
 - Page-level instructional text explains the overall purpose
 - Group-level instructional text provides context for related fields
 
-Writing clear and concise instructions improves usability. To guide users well, you can learn best practices for crafting effective instructional text. Learn more in [Write effective instructions for a playground agent (preview)](../ai/ai-agent-playground-effective-instructions.md).
+Writing clear and concise instructions improves usability. To guide users well, you can learn best practices for crafting effective instructional text. Learn more in [Write effective instructions for an Agent (preview)](../ai/ai-agent-designer-effective-instructions.md).
 
 ## Related information
 
-[Integrate with the Tasks AL API (preview)](../ai/ai-agent-playground-tasks-api.md)
-[Agent playground (preview)](../ai/ai-agent-playground.md)  
+[Integrate with the Tasks AL API (preview)](../ai/ai-agent-designer-tasks-api.md)
+[Agent designer (preview)](../ai/ai-agent-designer.md)  
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
 [PageType property](properties/devenv-pagetype-property.md)  
