@@ -236,7 +236,7 @@ Yes, agent instructions can be updated dynamically. Remember that agents must be
 
 ### How do I know if my instructions are working?
 
-Monitor the agent's behavior through the timeline view in the playground. Look for:
+Monitor the agent's behavior through the timeline view in the Agent designer. Look for:
 
 - Successful task completions
 - Appropriate use of tools and navigation

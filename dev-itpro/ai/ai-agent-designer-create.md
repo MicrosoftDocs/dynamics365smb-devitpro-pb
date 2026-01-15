@@ -1,5 +1,5 @@
 ---
-title: Create and activate an agent using the Agent designer playground (preview)
+title: Create and activate an agent using the Agent designer (preview)
 description: Learn how to create and activate an agent in Business Central to automate tasks, integrate AI, and enhance your workflows.
 author: solsen
 ms.author: solsen
@@ -27,7 +27,7 @@ Learn more about the Agent designer in [Agent designer overview (preview)](ai-ag
 Before you can create an agent in the Agent designer, ensure that you have the following prerequisites in place:
 
 - Enable the **Custom Agent** capability in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
-- Appropriate permissions to access and use the Agent playground in [!INCLUDE [prod_short](../includes/prod_short.md)]. This must include the "AGENT - ADMIN" and the "AGENT - DIAGNOSTICS" permission sets assigned to your user.
+- Appropriate permissions to access and use the Agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)]. This must include the "AGENT - ADMIN" and the "AGENT - DIAGNOSTICS" permission sets assigned to your user.
 - A sandbox environment for testing and experimentation from version 27.2 (can include customer data such as sandbox copies of production data)
 - Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
 
@@ -71,11 +71,11 @@ The Agent icon changes to :::image type="content" source="../media/ai-designer-i
 
 ### Accessing agent settings after creation
 
-You can access and modify the settings of an existing playground agent either from the icon :::image type="content" source="../media/ai-designer-icon.png" alt-text="Playground agent icon"::: or by navigating to the **Agents (preview)** page and selecting the agent you want to configure.
+You can access and modify the settings of an existing agent either from the icon :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent designer icon"::: or by navigating to the **Agents (preview)** page and selecting the agent you want to configure.
 
 In the **Agents (preview)** page, choose the agent, and either open the **Agent Card (preview)** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** wizard opens.
 
-In the Copilot chat pane for the specific agent, choose the :::image type="content" source="../media/ai-designer-settings-icon.png" alt-text="Playground agent settings icon"::: icon to open a **Configure agent (preview)** wizard.
+In the Copilot chat pane for the specific agent, choose the :::image type="content" source="../media/ai-designer-settings-icon.png" alt-text="Agent designer settings icon"::: icon to open a **Configure agent (preview)** wizard.
 
 ### Understanding agent states
 

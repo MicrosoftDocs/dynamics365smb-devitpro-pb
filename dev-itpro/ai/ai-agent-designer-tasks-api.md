@@ -332,7 +332,7 @@ This API-based approach allows you to build automated workflows during the proto
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Agent designer (preview)](ai-agent-playground.md)  
+[Agent designer (preview)](ai-agent-designer.md)  
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  

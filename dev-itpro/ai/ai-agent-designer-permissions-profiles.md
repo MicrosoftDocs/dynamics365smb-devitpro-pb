@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Agent playground is a prototyping environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [Agent playground overview (preview)](ai-agent-playground.md).
+The Agent designer is a prototyping environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [Agent designer overview (preview)](ai-agent-designer-overview.md).
 
 ## Permissions
 
@@ -63,7 +63,7 @@ You can create custom profiles specifically for agents, using page customization
 
 ### The agent and the UI
 
-A playground agent can interact with the UI it sees. It can access search on any list page, but not **Tell me**. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user. The intent is to define an inclusion list or positive list of UI elements exposed to the agent.
+An agent can interact with the UI it sees. It can access search on any list page, but not **Tell me**. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user. The intent is to define an inclusion list or positive list of UI elements exposed to the agent.
 
 On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
@@ -104,15 +104,15 @@ Once you have built and published a profile, you can assign it to the agent in t
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Agent playground (preview)](ai-agent-playground.md)  
+[Agent designer (preview)](ai-agent-designer-overview.md)  
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Run a playground agent (preview)](ai-agent-designer-run-agent.md)  
+[Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent playground frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)  

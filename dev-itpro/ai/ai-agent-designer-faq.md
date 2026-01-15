@@ -24,7 +24,7 @@ This article answers common questions about using the Agent designer in [!INCLUD
 
 ### Can I link a mailbox to an Agent like the Sales Order Agent?
 
-Yes. While there is no built-in configuration of email integration in the agent playground, you can integrate email functionality with agents using the AL agent SDK. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
+Yes. While there is no built-in configuration of email integration in the Agent designer, you can integrate email functionality with agents using the AL agent SDK. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
 
 This allows you to:
 

@@ -1,6 +1,6 @@
 ---
 title: Agent Designer Overview
-description: Discover the Agent playground, a tool for testing AI capabilities in Business Central by building playground agents. Prototype, validate, and refine AI-powered solutions.
+description: Discover the Agent designer, a tool for testing AI capabilities in Business Central by building agents. Prototype, validate, and refine AI-powered solutions.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -18,18 +18,18 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Agent designer is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building playground agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
+The Agent designer is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
 
 ## Purpose and audience
 
-The Agent designer is primarily designed for teams who want to prototype AI-powered capabilities by configuring playground agents:
+The Agent designer is primarily designed for teams who want to prototype AI-powered capabilities by configuring agents:
 
 - **Product owners** who want to prototype AI-powered features before building them in AL extensions
 - **Domain experts** evaluating AI integration possibilities for their [!INCLUDE [prod_short](../includes/prod_short.md)] solutions  
 - **Consultants** exploring automation scenarios with AI assistance for client solutions
 - **Developers** validating AI use cases and gathering requirements for custom implementations
 
-The playground helps you understand how AI can interact with [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, which allows you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows through playground agents.
+The Agent designer helps you understand how AI can interact with [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, which allows you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows through agents.
 
 ## When to use and when not to use
 
@@ -55,7 +55,7 @@ Don't use the Agent designer when:
 
 ## Agent lifecycle summary
 
-A typical playground agent follows this lifecycle:
+A typical agent follows this lifecycle:
 
 1. **Create** - Set up the agent with basic identity and profile
 1. **Configure** - Define instructions and permissions
@@ -66,11 +66,11 @@ A typical playground agent follows this lifecycle:
 
 Each phase has specific requirements and limitations that guide your development process.
 
-:::image type="content" source="../media/ai-designer-lifecycle.png" alt-text="Playground agent lifecycle":::
+:::image type="content" source="../media/ai-designer-lifecycle.png" alt-text="Agent lifecycle":::
 
 ## High-level concepts
 
-Understanding the following key concepts helps you work effectively with playground agents.
+Understanding the following key concepts helps you work effectively with agents.
 
 ## Prerequisites
 

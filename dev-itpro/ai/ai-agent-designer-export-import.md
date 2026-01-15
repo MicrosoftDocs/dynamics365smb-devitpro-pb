@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-As part of iterating to improve your agent, you can export and import the agent's configuration from the playground agent to your local machine. The purpose of this feature is to allow you to back up your agent configuration, share it with others, or move it between different sandbox environments. The exported configuration includes:
+As part of iterating to improve your agent, you can export and import the agent's configuration from the Agent designer to your local machine. The purpose of this feature is to allow you to back up your agent configuration, share it with others, or move it between different sandbox environments. The exported configuration includes:
 
 - **Identity** - the name and display name of an agent
 - **Instructions** - the detailed guidelines that define how the agent should behave.

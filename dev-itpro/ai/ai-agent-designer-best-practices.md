@@ -116,7 +116,7 @@ unavailable to the external customer like the wholesale acquisition cost of the 
 - Track who has access and why
 - Plan for agent cleanup and removal
 
-Learn more in [Set up playground agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
+Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
 
 ## Testing and validation best practices
 
