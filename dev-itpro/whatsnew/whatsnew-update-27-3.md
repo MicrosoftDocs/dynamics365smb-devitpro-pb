@@ -48,6 +48,12 @@ Learn more in [Major updates for Business Central online](../administration/upda
 
 Deployments using version 24 or earlier must upgrade to version 25 before upgrading to update 27.3. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v26.md).
 
+## Known issues
+
+### Evaluation company creation requires specific work date
+
+If you create the evaluation company in the following country/region versions, make sure that you set the work date to January 1, 2026 before you create a new company: AU, CA, DE, DK, ES, FR, GB, IT, NZ, US.
+
 ## Good to know
 
 ### Recent online service features
