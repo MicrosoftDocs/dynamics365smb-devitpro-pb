@@ -10,12 +10,11 @@ ms.author: jobulsin
 
 # Auditing in Microsoft Purview
 
+[!INCLUDE[online_only](../developer/includes/online_only.md)]
+
 Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit auditable events to [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. For [!INCLUDE[prod_short](../developer/includes/prod_short.md)], this means that Create, Update, and Delete events that require administrator privileges are emitted to Purview's unified audit log, aiding security, legal, and compliance investigation across all Microsoft services used in your organization.
 
-> [!TIP]  
-> Before [!INCLUDE[prod_short](../includes/prod_short.md)] online logs authorization attempts to telemetry, a successful authentication (sign in) must happen against Microsoft Entra ID. With the information in the Microsoft Entra sign-in log, you can figure out what happened if a user sign-in failed. Learn more in [Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in).
-> 
-> If you want to track, monitor, or alert on successful and failed sign in attempts against Microsoft Entra ID, configure integration to Azure Monitor on Microsoft Entra and analyze further with KQL. Learn more in [Integrate Microsoft Entra logs with Azure Monitor](/entra/identity/monitoring-health/howto-access-activity-logs#integrate-logs-with-azure-monitor-logs).
+[!INCLUDE[audit_authentication_to_telemetry_tip](../includes/audit_authentication_to_telemetry_tip.md)]
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all events listed below to Microsoft Purview auditing solutions. Purview auditing solutions may be enabled automatically on your tenant depending on your Microsoft 365 subscription. Learn more about enabling or disabling Purview auditing solutions on your tenant in  [Turn auditing on or off](/purview/audit-log-enable-disable) in the Microsoft Purview documentation.
 
