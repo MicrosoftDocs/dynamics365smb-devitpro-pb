@@ -69,7 +69,7 @@ The steps in this section configure the data migration globally for all companie
 
    Use the **Recurring records** section to specify whether to generate recurring sales or purchasing lines using the default sales or purchasing accounts defined on the Vendor, Customer, Class or Posting Setup in GP.
 
-   Learn more in [Creating recurring purchase lines](migrate-dynamics-gp.md#creating-recurring-purchase-lines) and [Creating recurring sales lines](migrate-dynamics-gp.md#creating-recurring-sales-lines).
+   Learn more in [Creating recurring purchase lines](migrate-dynamics-gp.md#generating-recurring-purchase-lines) and [Creating recurring sales lines](migrate-dynamics-gp.md#generating-recurring-sales-lines).
 
 1. Choose the classes that you want to migrate as posting groups.
 
