@@ -7733,6 +7733,11 @@
       "source_path": "dev-itpro/ai/ai-agent-playground-tasks-api.md",
       "redirect_url": "/dynamics365/business-central/dev-itpro/ai/ai-agent-designer-landing-page",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/ai/transparency-note-agent-playground.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/ai/transparency-note-agent-designer",
+      "redirect_document_id": false
     }
   ] 
 }
