@@ -4,7 +4,7 @@ description: Provides an overview of the Business Central versions and their com
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.date: 12/03/2025
+ms.date: 01/15/2026
 ms.topic: upgrade-and-migration-article
 ms.custom: bap-template
 ---
