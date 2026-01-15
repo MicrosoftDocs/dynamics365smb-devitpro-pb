@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Agent designer is a prototyping environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [Agent designer overview (preview)](ai-agent-designer-overview.md).
+The Agent designer is a prototyping environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [Agent designer overview (preview)](ai-agent-designer.md).
 
 ## Permissions
 
@@ -104,7 +104,7 @@ Once you have built and published a profile, you can assign it to the agent in t
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Agent designer (preview)](ai-agent-designer-overview.md)  
+[Agent designer (preview)](ai-agent-designer.md)  
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
