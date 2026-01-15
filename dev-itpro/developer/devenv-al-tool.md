@@ -2,7 +2,7 @@
 title: ALTool
 author: SusanneWindfeldPedersen
 description: Simplify AL extension development with ALTool. Validate code, package extensions, and integrate into CI/CD pipelines for seamless deployment.
-ms.date: 09/15/2025
+ms.date: 01/15/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
