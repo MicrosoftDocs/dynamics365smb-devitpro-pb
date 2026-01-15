@@ -1,6 +1,6 @@
 ---
-title: Run a Playground Agent (preview)
-description: Learn how to trigger a playground agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
+title: Run an Agent (preview)
+description: Learn how to trigger an agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,13 +12,13 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Run an agent created in the playground (preview)
+# Run an Agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. Learn more about how to write effective instructions in [Write effective instructions for a playground agent (preview)](ai-agent-designer-effective-instructions.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. Learn more about how to write effective instructions in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
 
 ## Defining tasks
 
@@ -35,12 +35,12 @@ When creating a task, you can specify an extra message that gets passed to the a
 
 ## Testing and continuous improvement
 
-Once your agent is set up and tasks are being created, it's important to monitor its performance and make adjustments as necessary. Use the insights gained from task executions to refine your agent's instructions and improve its effectiveness over time. Learn more about continuously improving your playground agent in [Iterate and manage a playground agent (preview)](ai-agent-designer-iterate.md).
+Once your agent is set up and tasks are being created, it's important to monitor its performance and make adjustments as necessary. Use the insights gained from task executions to refine your agent's instructions and improve its effectiveness over time. Learn more about continuously improving your playground agent in [Iterate and manage an Agent (preview)](ai-agent-designer-iterate.md).
 
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Agent playground (preview)](ai-agent-playground.md)  
+[Agent designer (preview)](ai-agent-designer.md)  
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
@@ -48,7 +48,7 @@ Once your agent is set up and tasks are being created, it's important to monitor
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent playground frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)  

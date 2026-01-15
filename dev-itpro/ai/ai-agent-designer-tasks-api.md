@@ -18,11 +18,11 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Tasks AL API allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run a playground agent (preview)](ai-agent-designer-run-agent.md).
+The Tasks AL API allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run an Agent (preview)](ai-agent-designer-run-agent.md).
 
-## Get information about the available playground agents
+## Get information about the available agents
 
-The first step to configure agents is to retrieve their user ID. The agent playground provides an API to retrieve all available agents.
+The first step to configure agents is to retrieve their user ID. The agent designer provides an API to retrieve all available agents.
 
 ```al
 local procedure GetAllAgents()
@@ -332,14 +332,14 @@ This API-based approach allows you to build automated workflows during the proto
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Agent playground (preview)](ai-agent-playground.md)  
+[Agent designer (preview)](ai-agent-playground.md)  
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run a playground agent (preview)](ai-agent-designer-run-agent.md)  
+[Run an Agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent playground frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)  

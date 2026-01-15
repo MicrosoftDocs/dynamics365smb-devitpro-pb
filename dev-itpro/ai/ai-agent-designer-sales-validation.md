@@ -18,11 +18,11 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Sales Validation Agent is a preconfigured playground agent designed to help you automate the validation of sales orders in [!INCLUDE [prod_short](../includes/prod_short.md)]. This agent can check sales orders for inventory availability and ensure that orders meet specific criteria before processing.
+The Sales Validation Agent is a preconfigured agent designed to help you automate the validation of sales orders in [!INCLUDE [prod_short](../includes/prod_short.md)]. This agent can check sales orders for inventory availability and ensure that orders meet specific criteria before processing.
 
 ## Steps to create and use the Sales Validation Agent
 
-Follow these steps to create and use the Sales Validation Agent, which is available with the Agent playground.
+Follow these steps to create and use the Sales Validation Agent, which is available with the Agent designer.
 
 ### Create the Sales Validation Agent
 
@@ -83,8 +83,8 @@ The agent goes through and process all sales orders that have a shipping date ac
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run a playground agent (preview)](ai-agent-designer-run-agent.md)  
+[Run an Agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent playground frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)
+[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)
