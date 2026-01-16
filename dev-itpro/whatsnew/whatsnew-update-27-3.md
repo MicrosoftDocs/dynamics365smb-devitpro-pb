@@ -15,7 +15,7 @@ Would you like to know what changes are in update 27.3? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 27.3 for Business Central 2025 release wave 2](https://support.microsoft.com/help/5073765).
+Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 27.3 for Business Central 2025 release wave 2](https://support.microsoft.com/help/5075270).
 
 ## Feature changes
 
