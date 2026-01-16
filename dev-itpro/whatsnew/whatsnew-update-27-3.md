@@ -52,7 +52,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Evaluation company creation requires specific work date
 
-If you create the evaluation company in the following country/region versions, make sure that you set the work date to January 1, 2026 before you create a new company: AU, CA, DE, DK, ES, FR, GB, IT, NZ, US.
+If you create the evaluation company in the following country/region versions, make sure that you set the work date to January 1, 2026 before you create a new company: AU, CA, DE, DK, ES, FR, GB, IT, NZ, US. Learn more in [](../upgrade/known-issues.md#)
 
 ## Good to know
 
