@@ -2,7 +2,7 @@
 title: "ExtendedDatatype property"
 description: "Sets the extended data type of a control."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 01/16/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,6 +33,7 @@ Sets the extended data type of a control.
 |**Document**|runtime version 16.0|The client handles the media as a document, optimizing its size for portrait-oriented content like PDFs|
 |**Barcode**|runtime version 12.0|The phone and tablet clients handle the field as a code and will provide the option to set the field value using a barcode scanner.|
 |**RichContent**|runtime version 12.0|The client handles the field as a rich text field, which allows for styling and formatting. To enable a rich text field, the field must have the MultiLine property set to `true` and must reside alone within a FastTab group.|
+|**Task**|runtime version 16.1|The client handles the field as a task and will display this as hyperlinked whenever the field is not editable.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
