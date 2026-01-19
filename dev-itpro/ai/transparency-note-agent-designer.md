@@ -11,21 +11,21 @@ ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
-# Transparency note: Business Central agent playground (preview)
+# Transparency note: Business Central Agent designer (preview)
 
 ## What is a Transparency Note?
 
 An AI system includes the technology, the people who use it, the people it affects, and the environment where it's deployed. Creating a system that is fit for its intended purpose requires an understanding of how the technology works, what its capabilities and limitations are, and how to achieve the best performance. Microsoft's Transparency Notes help you learn how our AI technology works, what choices system owners can make to influence system performance and behavior, and why it's important to consider the whole system, including the technology, people, and environment. Use Transparency Notes when you develop or deploy your own system, or share them with people who use or are affected by your system. Microsoft’s Transparency Notes are part of a broader effort at Microsoft to put our AI Principles into practice. Learn more at [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
 
-## The basics of Business Central agent playground
+## The basics of Business Central Agent designer
 
 ### Introduction
 
-The [!INCLUDE [prod_short](../includes/prod_short.md)] agent playground is an environment designed to help partners prototype, test, and refine AI-powered agents in Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)]. This transparency note outlines the system’s capabilities, limitations, and responsible use considerations to support informed and ethical adoption by our partner ecosystem.
+The [!INCLUDE [prod_short](../includes/prod_short.md)] Agent designer is an environment designed to help partners prototype, test, and refine AI-powered agents in Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)]. This transparency note outlines the system’s capabilities, limitations, and responsible use considerations to support informed and ethical adoption by our partner ecosystem.
 
-### What is the agent playground?
+### What is the Agent designer?
 
-The agent playground enables partners to prototype, run and troubleshoot autonomous agents that can reason over [!INCLUDE [prod_short](../includes/prod_short.md)] data, automate workflows, and enhance user productivity. It provides a guided interface for iterating on agent instruction, access to [!INCLUDE [prod_short](../includes/prod_short.md)] entities, and relies on Azure OpenAI models.
+The Agent designer enables partners to prototype, run and troubleshoot autonomous agents that can reason over [!INCLUDE [prod_short](../includes/prod_short.md)] data, automate workflows, and enhance user productivity. It provides a guided interface for iterating on agent instruction, access to [!INCLUDE [prod_short](../includes/prod_short.md)] entities, and relies on Azure OpenAI models.
 
 This tool is intended for:
 
@@ -43,7 +43,7 @@ Agents operate in [!INCLUDE [prod_short](../includes/prod_short.md)] using AI to
 
 - Agent configuration  
 
-  The agent is available directly within [!INCLUDE [prod_short](../includes/prod_short.md)]. You can configure and activate the agent and specify the users who can use the agent. In the agent playground, there's no support for specifying extra configuration properties beyond the agent instruction prompt, permission and user profile, and the general agent capabilities like language, locale, and time zone.
+  The agent is available directly within [!INCLUDE [prod_short](../includes/prod_short.md)]. You can configure and activate the agent and specify the users who can use the agent. In the Agent designer, there's no support for specifying extra configuration properties beyond the agent instruction prompt, permission and user profile, and the general agent capabilities like language, locale, and time zone.
 
 - Task execution and interaction  
 
@@ -70,26 +70,26 @@ Agents operate in [!INCLUDE [prod_short](../includes/prod_short.md)] using AI to
 
 - Troubleshooting agents  
 
-  A core part of exploring and prototyping agents in the agent playground is the ability to understand what steps the agent performed when running, which data is used at each step, and what AI generated. To help with this, the agent playground includes troubleshooting views.
+  A core part of exploring and prototyping agents in the Agent designer is the ability to understand what steps the agent performed when running, which data is used at each step, and what AI generated. To help with this, the Agent designer includes troubleshooting views.
 
 ## Use Cases
 
 ### Intended uses
 
-The agent playground is intended for [!INCLUDE [prod_short](../includes/prod_short.md)] partners to explore and prototype custom agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. It can be used to design, implement, and deploy various use cases where generative AI is applied to solve specialized tasks in an automated way, such as:  
+The Agent designer is intended for [!INCLUDE [prod_short](../includes/prod_short.md)] partners to explore and prototype custom agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. It can be used to design, implement, and deploy various use cases where generative AI is applied to solve specialized tasks in an automated way, such as:  
 
 - Automating quote-to-order transitions
 
 ### Considerations when choosing a use case
 
-We encourage partners to use the agent playground in their innovative solutions or applications. However, here are some considerations when choosing a use case.
+We encourage partners to use the Agent designer in their innovative solutions or applications. However, here are some considerations when choosing a use case.
 
 - Building features for customers that aren't yet running [!INCLUDE [prod_short](../includes/prod_short.md)] online
 
 Agents in [!INCLUDE [prod_short](../includes/prod_short.md)] are intended for use with [!INCLUDE [prod_short](../includes/prod_short.md)] online, Microsoft's SaaS flavor of [!INCLUDE [prod_short](../includes/prod_short.md)]. 
 
 - Use of AI platforms other than Azure OpenAI Service
-- The agent playground isn't intended for use with any other AI models other than Azure OpenAI Service. 
+- The Agent designer isn't intended for use with any other AI models other than Azure OpenAI Service. 
 
 <br>
 - Financial impact  
@@ -98,7 +98,7 @@ Because your AI features are attached to your Azure OpenAI Service key, you're r
 
 - Use for non-AI use cases or nonbusiness use cases  
 
-The agent playground is built specifically to unlock the benefits and manage the challenges of autonomous agents in a business context. Using the playground for other purposes, or personal use cases might erode customer trust and understanding of these experiences.
+The Agent designer is built specifically to unlock the benefits and manage the challenges of autonomous agents in a business context. Using the Agent designer for other purposes, or personal use cases might erode customer trust and understanding of these experiences.
 
 - Fully automated use cases  
 
@@ -149,11 +149,11 @@ It's important to understand that while AI systems are valuable tools, they're n
 ## Eligible environments
 
 > [!IMPORTANT]
-> The feature is available only in sandbox environments for evaluation purposes at the current stage. The agents built in the playground can't be deployed to a production environment yet.
+> The feature is available only in sandbox environments for evaluation purposes at the current stage. The agents built in the Agent designer can't be deployed to a production environment yet.
 
 ## Limitations for specific industries, products, and topics
 
-The agent playground includes built-in safety mechanisms that prevent the undesirable generation of harmful content, such as sexually explicit content or incitement of violence. Sometimes, our customers operate in industries, sell products and services, or work with processes that naturally overlap with what might be considered inappropriate in other contexts, or work with data that might trigger these safeguards. The agent playground might not perform as well in these cases. For example:
+The Agent designer includes built-in safety mechanisms that prevent the undesirable generation of harmful content, such as sexually explicit content or incitement of violence. Sometimes, our customers operate in industries, sell products and services, or work with processes that naturally overlap with what might be considered inappropriate in other contexts, or work with data that might trigger these safeguards. The Agent designer might not perform as well in these cases. For example:
 
 - an agent that generates project plans for testing of weapons might not be able to generate complete plans.
 - an AI feature for a customer selling child psychology services might not be able to operate the feature.
@@ -170,7 +170,7 @@ Learn more in [Azure AI Content Safety](/azure/ai-foundry/openai/concepts/conten
 
 ## Language and country/region limitations
 
-The agent playground itself doesn't determine the set of languages or environment localizations in which your agent feature is available. Mixed language input might result in lower-quality output because the system relies on pure string similarity, and the semantic part of the matching might not work properly.
+The Agent designer itself doesn't determine the set of languages or environment localizations in which your agent feature is available. Mixed language input might result in lower-quality output because the system relies on pure string similarity, and the semantic part of the matching might not work properly.
 
 ## About languages and Large Language Models
 
@@ -182,21 +182,21 @@ Large Language Models are trained on large volumes of data in different language
 
 ## Playground agent extensibility
 
-Agents created in the playground aren't extensible. However, an agent is able to use and react to page fields added by extensions, if the agent has permissions and access via its assigned profile to those added fields.
+Agents created in the Agent designer aren't extensible. However, an agent is able to use and react to page fields added by extensions, if the agent has permissions and access via its assigned profile to those added fields.
 
-## Evaluation of the agent playground
+## Evaluation of the Agent designer
 
 ### Evaluation methods and results
 
 The toolkit is reviewed and tested throughout Microsoft's development lifecycle. It meets the requirements outlined in the [Responsible AI Standard](/ai/responsible-ai) that sets the bar for Microsoft's AI products and features.
 
-In addition, the preview is aiming at evaluating success of the agent playground through early adoption of the technology by select partner developers.
+In addition, the preview is aiming at evaluating success of the Agent designer through early adoption of the technology by select partner developers.
 
 ### Evaluating and integrating agents for your use
 
 The Microsoft cloud runs on trust. Our fundamental promise to our customers is that their data is their data: it isn't used to train foundation AI models to the benefit of others, and it's protected by comprehensive enterprise compliance and security controls that they govern. Furthermore, Microsoft's AI systems are built on Responsible AI principles of fairness, reliability, safety, privacy, security, inclusiveness, transparency, and accountability.
 
-To reduce time and effort to build responsible use cases, the agent playground includes many built-in safeguards that reduce risk and impact to customers, their customers, and partners. However, each use case might come with unique challenges depending on the nature of that use case, the affected stakeholders, and how AI is applied. You're responsible for assessing and mitigating risks for your use cases. In some cases, resting on system safeguards might be insufficient.
+To reduce time and effort to build responsible use cases, the Agent designer includes many built-in safeguards that reduce risk and impact to customers, their customers, and partners. However, each use case might come with unique challenges depending on the nature of that use case, the affected stakeholders, and how AI is applied. You're responsible for assessing and mitigating risks for your use cases. In some cases, resting on system safeguards might be insufficient.
 
 ## Working Responsible AI into your development practices
 
