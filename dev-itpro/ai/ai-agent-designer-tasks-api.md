@@ -22,7 +22,7 @@ The Tasks AL API allows you to trigger agent tasks programmatically from AL code
 
 ## Get information about the available agents
 
-The first step to configure agents is to retrieve their user ID. The agent designer provides an API to retrieve all available agents.
+The first step to configure agents is to retrieve their user ID. The Agent designer provides an API to retrieve all available agents.
 
 ```al
 local procedure GetAllAgents()
@@ -232,7 +232,7 @@ codeunit 50102 "Custom Agent Session Events"
 }
 ```
 
-Then a subscriber can be defined like the following to run code only for that specific agent task:
+Then, a subscriber can be defined like the following to run code only for that specific agent task:
 
 ```al
 codeunit 50101 "Custom Agent Events"
@@ -342,4 +342,4 @@ This API-based approach allows you to build automated workflows during the proto
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)  
+[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  

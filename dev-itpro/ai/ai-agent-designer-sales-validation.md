@@ -87,4 +87,4 @@ The agent goes through and process all sales orders that have a shipping date ac
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
-[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)
+[Transparency note: Business Central Agent designer](transparency-note-agent-designer.md)

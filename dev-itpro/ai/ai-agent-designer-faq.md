@@ -1,6 +1,6 @@
 ---
 title: Agent designer frequently asked questions (preview)
-description: Get answers to common questions about the agent designer in Business Central, including integration, SDK access, scheduling, instructions, and capabilities.
+description: Get answers to common questions about the Agent designer in Business Central, including integration, SDK access, scheduling, instructions, and capabilities.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

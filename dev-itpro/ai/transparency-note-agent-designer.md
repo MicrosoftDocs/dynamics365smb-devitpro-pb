@@ -13,6 +13,10 @@ ms.custom: bap-template
 
 # Transparency note: Business Central Agent designer (preview)
 
+[This article is prerelease documentation and is subject to change.]
+
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
+
 ## What is a Transparency Note?
 
 An AI system includes the technology, the people who use it, the people it affects, and the environment where it's deployed. Creating a system that is fit for its intended purpose requires an understanding of how the technology works, what its capabilities and limitations are, and how to achieve the best performance. Microsoft's Transparency Notes help you learn how our AI technology works, what choices system owners can make to influence system performance and behavior, and why it's important to consider the whole system, including the technology, people, and environment. Use Transparency Notes when you develop or deploy your own system, or share them with people who use or are affected by your system. Microsoft’s Transparency Notes are part of a broader effort at Microsoft to put our AI Principles into practice. Learn more at [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).

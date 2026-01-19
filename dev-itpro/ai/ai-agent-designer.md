@@ -89,7 +89,6 @@ Instructions are natural language descriptions that define your agent's purpose 
 
 Tasks are a way to trigger the agent. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more about tasks in [Run an Agent (preview)](ai-agent-designer-run-agent.md).
 
-
 ### Supported languages
 
 This feature currently supports only English as language. While this feature can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might affect accuracy and the user experience.
@@ -110,7 +109,7 @@ As a preview feature, the Agent designer has several important limitations:
 
 ### Environment restrictions
 
-- **Sandbox only**: Available exclusively in sandbox environments—never in production
+- **Sandbox only**: Available exclusively in sandbox environments; never in production
 - **Sandbox data**: Can be used with customer data in sandbox environments (including sandbox copies of production data)
 - **Preview functionality**: Features and behavior might change without notice
 
@@ -146,4 +145,4 @@ Ready to try the Agent designer? The process involves enabling the feature, crea
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)
+[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)
