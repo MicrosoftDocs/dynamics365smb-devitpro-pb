@@ -54,4 +54,4 @@ To import the configuration, do the following:
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)  
+[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  

@@ -51,4 +51,4 @@ Once your agent is set up and tasks are being created, it's important to monitor
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)  
+[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  
