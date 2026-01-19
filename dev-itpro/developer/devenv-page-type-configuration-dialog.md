@@ -19,7 +19,7 @@ ms.reviewer: solsen
 The `ConfigurationDialog` page type is a specialized page type that enables developers to create focused configuration dialogs for setting up and managing application settings, preferences, and configurations for agents. This page type provides a streamlined user experience with a modal dialog interface, system actions for saving or canceling changes, and support for temporary data sources.
 
 > [!IMPORTANT]
-> The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more about the Tasks AL API in [Integrate with the Tasks AL API (preview)](../ai/ai-agent-designer-tasks-api.md).
+> The `ConfigurationDialog` page type is intended specifically for agent development scenarios. Use this page type when building configuration interfaces for agents and AI-powered capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more in [Integrate with the Tasks AL API (preview)](../ai/ai-agent-designer-tasks-api.md).
 
 ## Snippet support
 
@@ -31,7 +31,7 @@ The `ConfigurationDialog` page type has some specific properties that characteri
 
 |Property|Description|
 |--------|-----------|
-|`PageType` | Must be set to `ConfigurationDialog` for this specific page type. Learn more in [properties/devenv-pagetype-property.md](properties/devenv-pagetype-property.md).|
+|`PageType` | Must be set to `ConfigurationDialog` for this specific page type. Learn more in [PageType property](properties/devenv-pagetype-property.md).|
 |`SourceTableTemporary` | Must be set to `true` to use a temporary table as the data source, allowing you to collect settings before committing them to the database. Learn more in [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)|
 |`Extensible` | Must be set to `false` for this page type. Learn more in [Extensible property](properties/devenv-extensible-property.md)|
 |`InstructionalText` | Provides guidance to users about what the configuration dialog is for and what they need to do. Learn more in [InstructionalText property](properties/devenv-instructionaltext-property.md)|
@@ -54,7 +54,7 @@ part(AgentSetupPart; "Agent Setup Part")
 ```
 
 > [!IMPORTANT]
-> The `AgentSetupPart` must be used as first element in the layout. And no other parts are accepted in this layout.
+> The `AgentSetupPart` must be used as the first element in the layout. And no other parts are accepted in this layout.
 
 ### Groups and fields
 
@@ -70,9 +70,9 @@ Each root-level group in the `Content` area represents a card in the configurati
 
 #### Add a toggle to a card
 
-1. Place a boolean field as the first field in the group
-2. Set `ShowCaption = false` on that field
-3. The group's caption appears at the top of the card with a toggle on the right side
+1. Place a boolean field as the first field in the group.
+2. Set `ShowCaption = false` on that field.
+3. The group's caption appears at the top of the card with a toggle on the right side.
 
 ```al
 group(MonitorIncomingCard)
@@ -132,7 +132,7 @@ This pattern creates a visual hierarchy:
 - Other fields within each group provide detailed configuration
 
 > [!TIP]
-> Use `InstructionalText` on groups to provide helpful guidance. While not specific to `ConfigurationDialog`, it's useful for guiding users through card-based configuration.
+> Use `InstructionalText` on groups to provide helpful guidance. While it's not specific to `ConfigurationDialog`, it's useful for guiding users through card-based configuration.
 
 ## Actions in the ConfigurationDialog page
 
@@ -619,7 +619,7 @@ Writing clear and concise instructions improves usability. To guide users well, 
 
 ## Related information
 
-[Integrate with the Tasks AL API (preview)](../ai/ai-agent-designer-tasks-api.md)
+[Integrate with the Tasks AL API (preview)](../ai/ai-agent-designer-tasks-api.md)  
 [Agent designer (preview)](../ai/ai-agent-designer.md)  
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
@@ -627,4 +627,4 @@ Writing clear and concise instructions improves usability. To guide users well, 
 [SourceTable property](properties/devenv-sourcetable-property.md)  
 [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)  
 [Extensible property](properties/devenv-extensible-property.md)  
-[InstructionalText property](properties/devenv-instructionaltext-property.md)
+[InstructionalText property](properties/devenv-instructionaltext-property.md)  
