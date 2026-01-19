@@ -42,7 +42,7 @@ When a user schedules a task for an agent, the task is executed with permissions
 #### Example
 
 | Permission | User | Agent | Effective Permissions |
-|------------|------|-------|----------------------|
+| ------------ | ------ | ------- | ---------------------- |
 | Read Customers | Yes | Yes | Yes |
 | Modify Customers | Yes | Yes | Yes |
 | Delete Customers | Yes | No | No |
@@ -69,7 +69,7 @@ On the page customization object, you can set specific flags to control what the
 
 | Property | Data type | If set to... |
 |----------|-----------|-------------|
-| `ClearActions` | Boolean | `true`, all actions on the page are removed for the agent.|
+| `ClearActions` | Boolean | `true`, all actions on the page are removed for the agent. |
 | `ClearLayout`  | Boolean | `true`, the layout of the page is simplified for the agent. |
 | `ClearViews`   | Boolean | `true`, all views on the page are removed for the agent. |
 | `DeleteAllowed`| Boolean | `false`, the delete action isn't allowed for the agent. |
