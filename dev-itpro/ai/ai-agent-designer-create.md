@@ -39,7 +39,7 @@ The development process is iterative by design. You can continuously refine your
 
 ## Turn on the Agent designer capability
 
-The Agent designer capability is on if the :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Playground agent create new"::: **Agent** icon appears in the top navigation menu of the role center.
+The Agent designer capability is on if the :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Create new agent"::: **Agent** icon appears in the top navigation menu of the role center.
 
 If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The Agent designer is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities](/dynamics365/business-central/enable-ai).
 
@@ -49,12 +49,12 @@ Next, configure, and activate the agent to get started.
 
 The **Create agent (preview)** wizard allows you to configure your agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
-1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Create**.
+1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Create new agent"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose whether to create a blank agent or use a template.  
   - To create a blank agent, choose **Create agent from scratch**, and then choose **Next**.
   - To use a template, choose **Sales Validation**, choose **Next**, and then choose **Create agent**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further. Learn more in [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md).
 1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** and **Initials** field values are now suggested based on the **Name**, but can be modified.
-:::image type="content" source="../media/ai-designer-agent-setup.png" alt-text="Playground agent setup":::
+:::image type="content" source="../media/ai-designer-agent-setup.png" alt-text="Agent designer setup":::
 1. In the **Description** field, provide an optional description for the agent.
 1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do. <!-- Use the **Download instructions** option... -->
 This serves as the prompt that guides the agent's behavior. Learn more in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
@@ -67,7 +67,7 @@ This allows you to define what data and actions it can access. This is important
 1. Turn on the **Active** toggle.
 1. Select **Update** to complete the setup.
 
-The Agent icon changes to :::image type="content" source="../media/ai-designer-icon.png" alt-text="Playground agent icon"::: after configured, indicating the agent is active and ready to handle tasks.
+The Agent icon changes to :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent designer icon"::: after configured, indicating the agent is active and ready to handle tasks.
 
 ### Accessing agent settings after creation
 

@@ -66,7 +66,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 Add a new task to the agent Open the Agents (Preview)
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Agent Tasks (preview)**, and then choose the related link.
-1. Under **Playground** actions, choose **Create task**.
+1. Under **Agent designer** actions, choose **Create task**.
 1. Add a title, for example, `Validate and process sales orders`.
 1. And then, add the following message: `Run and process shipment date <date>`.  
   That will be sufficient. `<date>` corresponds to the shipping date you chose for the sales order.

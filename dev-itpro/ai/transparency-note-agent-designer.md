@@ -1,7 +1,7 @@
 ---
-title: Transparency Note Business Central Agent Playground
+title: Transparency Note Business Central Agent designer (preview)
 author: pborring
-description: Learn how the Business Central Agent Playground empowers partners to prototype AI-powered agents, automate workflows, and enhance productivity responsibly.
+description: Learn how the Business Central Agent designer empowers partners to prototype AI-powered agents, automate workflows, and enhance productivity responsibly.
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: faq
@@ -180,7 +180,7 @@ Large Language Models are trained on large volumes of data in different language
 
 [!INCLUDE [prod_short](../includes/prod_short.md)]'s built-in safeguards are designed to work with agent instruction prompts that are in English language. These safeguards are less effective when the prompts you write, the data you include in your prompts, or the end-user prompts you include with your prompt to Azure OpenAI Service aren't in English.
 
-## Playground agent extensibility
+## Agent designer extensibility
 
 Agents created in the Agent designer aren't extensible. However, an agent is able to use and react to page fields added by extensions, if the agent has permissions and access via its assigned profile to those added fields.
 
