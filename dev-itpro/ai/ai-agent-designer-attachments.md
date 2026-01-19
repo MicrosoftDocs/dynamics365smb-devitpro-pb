@@ -28,7 +28,7 @@ Agents can process attachments with the following file types:
 - **Image files** (.png, .jpg, .jpeg) - Scanned documents, receipts, and product images
 
 > [!NOTE]
-> Be aware that agents only process text out of images and pdfs and not the images themselves.
+> Be aware that agents only process text out of images and PDFs and not of the images themselves.
 
 ## File size limits
 

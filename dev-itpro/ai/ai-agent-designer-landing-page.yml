@@ -60,7 +60,7 @@ landingContent:
     linkLists:
     - linkListType: reference
       links:
-      - text: Use the Tasks API to integrate with an Agent (preview)
+      - text: Use the Tasks AL API to integrate with an Agent (preview)
         url: ai-agent-designer-tasks-api.md
       - text: The ConfigurationDialog page type for designing agents (preview)
         url: ../developer/devenv-page-type-configuration-dialog.md

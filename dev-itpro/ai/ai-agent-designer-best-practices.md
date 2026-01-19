@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 Following these best practices helps you create agents and get better results from your prototyping efforts.
 
-Learn more about the Agent designer in [Agent designer overview (preview)](ai-agent-designer.md).
+Learn more in [Agent designer overview (preview)](ai-agent-designer.md).
 
 ## Instructions best practices
 
