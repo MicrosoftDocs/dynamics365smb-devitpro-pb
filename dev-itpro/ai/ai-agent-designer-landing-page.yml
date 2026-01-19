@@ -45,7 +45,7 @@ landingContent:
         url: ai-agent-designer-instruction-keywords.md
       - text: Attachment capabilities and limitations (preview)
         url: ai-agent-designer-attachments.md
-      - text: Set up designer permissions and profiles (preview)
+      - text: Set up Agent permissions and profiles (preview)
         url: ai-agent-designer-permissions-profiles.md
       - text: Run an Agent (preview)
         url: ai-agent-designer-run-agent.md
@@ -60,9 +60,9 @@ landingContent:
     linkLists:
     - linkListType: reference
       links:
-      - text: Use the tasks API to integrate with an Agent (preview)
+      - text: Use the Tasks API to integrate with an Agent (preview)
         url: ai-agent-designer-tasks-api.md
-      - text: The ConfigurationDialog page type for designer agents (preview)
+      - text: The ConfigurationDialog page type for designing agents (preview)
         url: ../developer/devenv-page-type-configuration-dialog.md
 # Card
   - title: Prototyping best practices
