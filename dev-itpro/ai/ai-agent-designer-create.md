@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 You can create an agent in the Agent designer to test various AI functionalities, such as automating tasks and integrating AI into your workflows. An agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
-Learn more about the Agent designer in [Agent designer overview (preview)](ai-agent-designer.md).
+Learn more in [Agent designer overview (preview)](ai-agent-designer.md).
 
 ## Prerequisites
 

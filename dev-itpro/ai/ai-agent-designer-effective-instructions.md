@@ -163,7 +163,7 @@ The agent should request user intervention when it can't proceed due to missing 
 ##### User review requirements
 
 - Agents should always request user review before proceeding with critical steps or sending outgoing messages
-- All outgoing communications require user review by default
+- All outgoing communications require a user review by default
 - After completing significant actions, request user review before moving forward
 
 ##### Response handling
@@ -182,9 +182,9 @@ Learn more about using specific instruction keywords in [Instruction keywords fo
 
 #### Error handling and validation
 
-- **Validate inputs**: Ensure all required fields are filled before proceeding with critical actions
+- **Validate inputs**: Ensure all required fields are filled in before proceeding with critical actions
 - **Use emphasis**: Highlight critical validation points with bold text or UPPERCASE
-- Examples could be:  
+- For example:  
   "**DO NOT** proceed until the requested date is entered"  
   "**ALWAYS** confirm customer details are complete before creating quotes"
 
@@ -203,11 +203,11 @@ Test your instructions thoroughly to ensure they lead to the desired behavior, a
 
 ### Instruction management best practices
 
-- **Test for accuracy regularly** Instruction effectiveness can change over time as systems and processes evolve
-- **Use AI optimization** Leverage AI tools like Copilot to help refine and update instructions
-- **Dynamic updates** Instructions can be updated through setup pages without requiring agent reconfiguration
-- **Version control** The UI maintains a history of instruction changes, allowing you to revert to earlier versions if needed. This is useful when testing different instruction approaches or when a new version doesn't perform as expected
-- **Less is more** Shift from verbose to concise instructions—simpler instructions often perform better than complex ones
+- **Test for accuracy regularly** Instruction effectiveness can change over time as systems and processes evolve.
+- **Use AI optimization** Leverage AI tools like Copilot to help refine and update instructions.
+- **Dynamic updates** Instructions can be updated through setup pages without requiring agent reconfiguration.
+- **Version control** The UI maintains a history of instruction changes, allowing you to revert to earlier versions if needed. This is useful when testing different instruction approaches or when a new version doesn't perform as expected.
+- **Less is more** Shift from verbose to concise instructions. Simpler instructions often perform better than complex ones.
 
 ### Advanced capabilities
 
@@ -245,7 +245,7 @@ Monitor the agent's behavior through the timeline view in the Agent designer. Lo
 
 ### Where can I find example instructions and patterns?
 
-The [!INCLUDE [prod_short](../includes/prod_short.md)] community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance. <!--link-->
+The [!INCLUDE [prod_short](../includes/prod_short.md)] community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance. Learn more in [alguidelines](https://github.com/microsoft/alguidelines/blob/d2cdf97e0c4ba8fa3a618169339d2d6655d63493/content/docs/agentic-coding/GettingStarted/effective-prompting.md)
 
 ### Should I write different instructions for different environments?
 
