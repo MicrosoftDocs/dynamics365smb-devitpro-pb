@@ -154,7 +154,7 @@ POST /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{
   ("firstName": string), // (Optional) - The first name of the person whose to contact with updates on the outage report
   ("lastName": string), // (Optional) - The last name of the person whose to contact with updates on the outage report
   ("email": string), // (Optional) - An email to contact with updates on the outage report
-  ("phone": string), // (Optional) - A phone number to contact with updates on the outage report. It should contain only numbers, use 00 instead of + for international number prefix.
+  ("phone": string), // (Optional) - A phone number to contact with updates on the outage report. It should contain only numbers, use 00 instead of + for international number prefix
   ("appVersion": string), // (Optional) - If known, the version of the targeted environment's application
   ("platformVersion": string) //(Optional) - If known, the version of the targeted environment's platform
 }
