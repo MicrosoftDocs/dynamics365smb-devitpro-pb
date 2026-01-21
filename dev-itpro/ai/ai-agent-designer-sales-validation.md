@@ -63,7 +63,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 
 ### Run the Sales Validation Agent to process sales orders
 
-Add a new task to the agent Open the Agents (Preview)
+Add a new task to the agent.
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Agent Tasks (preview)**, and then choose the related link.
 1. Under **Agent designer** actions, choose **Create task**.
