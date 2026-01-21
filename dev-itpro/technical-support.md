@@ -50,7 +50,7 @@ Learn more in [Configuring [!INCLUDE[webserver](developer/includes/webserver.md)
 
 Technical support involves break-fix issues, which are technical problems you experience while using services. Break-fix refers to the work involved in supporting technology when it fails during normal use in a standard Cronus database environment and requires intervention by the Dynamics support team to restore it to working order.
 
-Understanding how functionality works isn’t a break-fix issue, but rather relates to training. These how-to questions, or advisory services, involve knowledge transfer and can often be answered by reviewing product documentation, asking questions in online forums, or contacting a knowledgeable partner. While there may be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training is not included in support plans.
+Understanding how functionality works isn’t a break-fix issue, but rather relates to training. These how-to questions, or advisory services, involve knowledge transfer and can often be answered by reviewing product documentation, asking questions in online forums, or contacting a knowledgeable partner. While there may be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training isn't included in support plans.
 
 ### How is support provided for performance issues?
 
@@ -60,11 +60,11 @@ The Microsoft Dynamics support team invests its best effort on a break-fix case 
 
 ### Does Microsoft provide support for data corruption?
 
-Data may become corrupted for various reasons, such as malfunctioning software, custom code, partner or ISV software, or power outages. Microsoft doesn’t assist in correcting damaged data. According to the Service Provider License Agreement (SPLA), Microsoft doesn’t have a legal obligation to change or correct data that has been corrupted due to malfunctioning software.
+Data may become corrupted for various reasons, such as malfunctioning software, custom code, partner or ISV software, or power outages. Microsoft doesn’t help correcting damaged data. According to the Service Provider License Agreement (SPLA), Microsoft doesn’t have a legal obligation to change or correct data that is corrupted due to malfunctioning software.
 
 ### What happens if the issue can't be reproduced or is related to customized databases or customizations?
 
-In scenarios where a problem can't be reproduced in a standard Cronus sandbox environment, the Microsoft Dynamics support team provides best-effort support for break-fix cases to assist. If the root cause of the issue is not identified after this effort, it is recommended to consult a partner or the community forums for further investigation, and the technical support incident will be closed.
+In scenarios where a problem can't be reproduced in a standard Cronus sandbox environment, the Microsoft Dynamics support team provides best-effort support for break-fix cases to assist. If the root cause of the issue isn't identified after this effort, it's recommended to consult a partner or the community forums for further investigation, and the technical support incident will be closed.
 
 ## Troubleshooting and support
 
@@ -83,11 +83,11 @@ As a partner, you have different support channels depending on what type of issu
 [!INCLUDE [prod_support](includes/prodsupport.md)]
 
 > [!TIP]
-> When you submit your first support ticket as a partner, you must specify details about your company's support plan. If you or your colleagues do not know these details, contact your Microsoft rep.
+> When you submit your first support ticket as a partner, you must specify details about your company's support plan. If you or your colleagues don't know these details, contact your Microsoft rep.
 
 #### Non-product related questions
 
-On occasion, as a partner, you'll run into questions that aren't directly related to the product. The following list outlines how to get answers to those questions.
+On occasion, as a partner, you run into questions that aren't directly related to the product. The following list outlines how to get answers to those questions.
 
 [!INCLUDE [nonprodsupport](includes/nonprodsupport.md)]
 
