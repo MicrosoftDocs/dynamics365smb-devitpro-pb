@@ -85,7 +85,7 @@ Before you can use the Agent designer, ensure that you have the following prereq
 
 ### Instructions and tasks
 
-Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more about instructions in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
 
 Tasks are a way to trigger the agent. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more about tasks in [Run an Agent (preview)](ai-agent-designer-run-agent.md).
 
@@ -97,7 +97,7 @@ Learn more about geographic and language availability at [Copilot international 
 
 ### Permissions and profiles
 
-The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege—grant only the permissions necessary for the agent's intended functionality. Permission sets can only be modified when the agent is deactivated in the **Agent Card**. From the agent's setup page, permissions can be modified while the agent is active, but the changes only affect new tasks or tasks, which are paused and then restarted.
+The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege; grant only the permissions necessary for the agent's intended functionality. Permission sets can only be modified when the agent is deactivated in the **Agent Card**. From the agent's setup page, permissions can be modified while the agent is active, but the changes only affect new tasks or tasks, which are paused and then restarted.
 
 The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. To reduce contextual noise and increase accuracy, it's highly recommended to create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
 

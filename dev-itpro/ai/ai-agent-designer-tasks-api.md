@@ -126,7 +126,7 @@ end;
 
 ### Add attachments to tasks
 
-When your task needs to include files for the agent to process:
+When your task needs to include files for the agent to process, use the `AddAttachment` method:
 
 ```al
 local procedure CreateTaskWithAttachment()
