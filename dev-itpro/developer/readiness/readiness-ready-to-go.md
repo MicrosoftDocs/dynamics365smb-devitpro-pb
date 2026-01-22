@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 12/10/2025
+ms.date: 01/22/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -45,7 +45,6 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
-- Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://www.microsoft.com/dynamics-365/blog/it-professional/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://www.microsoft.com/dynamics-365/blog/business-leader/)
 <!--- Join the [!INCLUDE [prod_short](../includes/prod_short.md)] development group on Viva Engage (Yammer): [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md)) -->
@@ -59,14 +58,13 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
-- The AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 - The Microsoft coordinated #BCTalent offerings help partners with recruiting, training, and coaching services: [aka.ms/BCTalent](https://aka.ms/BCTalent)  
 - Sign up for Business Central Partner Sandbox offer: [aka.ms/BCPartnerSandbox](https://aka.ms/BCPartnerSandbox)
 <!-- - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md)) -->
 
 ## Go to market
 
-- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://www.microsoft.com/dynamics-365/products/business-central/)  
+- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [www.business-central.com](https://www.business-central.com)  
 - Try [!INCLUDE [prod_short](../includes/prod_short.md)] for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
 - Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
@@ -89,7 +87,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Customer onboarding and resources
 
-- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)  
+- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on Marketplace: [aka.ms/BCAppSource](https://marketplace.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)  
 - Get [!INCLUDE [prod_short](../includes/prod_short.md)] on your mobile devices: [aka.ms/BusinessCentralApp](https://aka.ms/BusinessCentralApp)  
 - Get [!INCLUDE [prod_short](../includes/prod_short.md)] installable app on your desktop: [aka.ms/BCPWA](https://aka.ms/BCPWA)  
 - Learn about onboarding experiences in [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)  
