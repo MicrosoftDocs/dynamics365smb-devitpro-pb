@@ -321,11 +321,16 @@ end;
 
 ## Best practices for API integration
 
-- **Use meaningful external IDs**: Set unique external IDs that connect tasks to your business records (for example email thread IDs)
-- **Include context in messages**: Provide all the specific details the agent needs to complete the task
-- **Handle task creation errors**: Wrap task creation in error handling to manage exceptions gracefully
-- **Test with realistic data**: Use actual business scenarios to validate your integration
-- **Monitor task completion**: Implement follow-up logic based on task status changes
+- **Use meaningful external IDs**  
+  Set unique external IDs that connect tasks to your business records (for example email thread IDs)
+- **Include context in messages**  
+  Provide all the specific details the agent needs to complete the task
+- **Handle task creation errors**  
+  Wrap task creation in error handling to manage exceptions gracefully
+- **Test with realistic data**  
+  Use actual business scenarios to validate your integration
+- **Monitor task completion**  
+  Implement follow-up logic based on task status changes
 
 This API-based approach allows you to build automated workflows during the prototyping phase, which can later be refined when migrating to production features.
 
