@@ -104,14 +104,18 @@ Learn more in [Write effective instructions for an Agent (preview)](ai-agent-des
 
 No, there's no hard limit on instruction size. However, we recommend keeping instructions focused and concise for best results.
 
-**Recommendations:**
+#### Recommendations for effective instructions
 
-- **Optimal length**: 500-2000 words for most scenarios
-- **Focus on essentials**: Include only relevant guidance and rules
-- **Use structure**: Break instructions into clear sections (responsibilities, guidelines, steps)
-- **Avoid repetition**: Don't repeat information that's already available in field tooltips or page descriptions
+- **Optimal length**  
+  500-2000 words for most scenarios
+- **Focus on essentials**  
+  Include only relevant guidance and rules
+- **Use structure**  
+  Break instructions into clear sections (responsibilities, guidelines, steps)
+- **Avoid repetition**  
+  Don't repeat information that's already available in field tooltips or page descriptions
 
-**Signs your instructions might be too long:**
+#### Signs your instructions might be too long
 
 - The agent frequently misses important steps
 - Responses become inconsistent
@@ -132,7 +136,7 @@ Learn more in [Write effective instructions for an Agent (preview)](ai-agent-des
 
 Choose the approach that best fits your scenario and stage of development:
 
-#### Use **Agent designer** when:
+#### Use **Agent designer** when
 
 - **Prototyping** new AI-powered features before committing to development
 - **Testing** AI feasibility for specific business scenarios
@@ -141,7 +145,8 @@ Choose the approach that best fits your scenario and stage of development:
 - **Rapid iteration** is needed to refine requirements
 - You're in a **sandbox environment** and want quick results
 
-**Limitations:** Agents created in the Agent designer are for prototyping in sandbox environments. To deliver these agents to customers in production environments, use the AL agent SDK to productize adding integrations, setup etc. and ship in extensions.
+**Limitations:**  
+Agents created in the Agent designer are for prototyping in sandbox environments. To deliver these agents to customers in production environments, use the AL agent SDK to productize adding integrations, setup etc. and ship in extensions.
 
 #### Use **Copilot Studio agents** when:
 
