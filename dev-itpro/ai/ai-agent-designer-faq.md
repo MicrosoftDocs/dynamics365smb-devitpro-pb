@@ -156,7 +156,8 @@ Agents created in the Agent designer are for prototyping in sandbox environments
 - Want **low-code** development with visual designers
 - Building **customer-facing** or **employee-facing** chat experiences
 
-**Example scenarios:** Customer service chatbots, HR support agents, IT helpdesk automation
+**Example scenarios:**  
+Customer service chatbots, HR support agents, IT helpdesk automation.
 
 #### Use **AL code** when:
 
@@ -167,7 +168,8 @@ Agents created in the Agent designer are for prototyping in sandbox environments
 - Building **commercial solutions** for AppSource
 - Need **version control** and **ALM** (Application Lifecycle Management)
 
-**Example scenarios:** Custom Copilot features, AI-powered document processing, and intelligent automation in extensions
+**Example scenarios:**  
+Custom Copilot features, AI-powered document processing, and intelligent automation in extensions.
 
 ## Agent capabilities
 
