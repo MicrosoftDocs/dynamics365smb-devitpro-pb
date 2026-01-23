@@ -1,6 +1,6 @@
 ---
 title: AppSource Azure Application Insights and Submission FAQ
-description: Describes the most common questions about Azure Application Insightswhen submitting your app to AppSource for Business Central.
+description: Describes the most common questions about Azure Application Insights when submitting your app to AppSource for Business Central.
 author: qutreson
 ms.date: 10/08/2025
 ms.reviewer: solsen
@@ -25,7 +25,13 @@ Here's a list of steps that you can follow to troubleshoot this issue:
 2. Validate that the time range when running the query covers the time of the submission.
 3. If you're using the `applicationInsightsKey` property in the manifest (app.json) of your extension, you should use the `applicationInsightsConnectionString` property instead because it's more reliable. Make sure to use the full connection string from your Azure Application Resource.
 4. If you're using the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension, make sure that you're using the full connection string and that it contains, at least, the following key-value pairs: `InstrumentationKey=<some-key>`, `IngestionEndpoint=<some-url>`, and `LiveEndpoint=<some-url>`. Learn more in [Connection strings](/azure/azure-monitor/app/sdk-connection-string)
-5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to 'Configure > Usage and estimated costs'. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. Learn more in [Sampling in Application Insights](/azure/azure-monitor/app/sampling). 
+5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to 'Configure > Usage and estimated costs'. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. Learn more in [Sampling in Application Insights](/previous-versions/azure/azure-monitor/app/sampling-classic-api).
+6. Ensure your networking configuration allows ingestion. On many Azure cloud resources, it's possible to limit inbound traffic. This can prevent ingestion for your Application Insights signals. To investigate your networking setup, please follow the relevant guidance for you Application Insights resource setup:
+   a. For a Log Analytics Workspace with an attached Network Security Perimeter, refer to [Configure Azure Monitor with Network Security Perimeter
+](/azure/azure-monitor/fundamentals/network-security-perimeter). You may also find guidance at [Diagnostic logs for Network Security Perimeter
+](/azure/private-link/network-security-perimeter-diagnostic-logs) to see how to troubleshoot blocked traffic
+   b. For a Log Analytics Workspace using Azure Monitor Private Link Scopes, refer to [Configure private link for Azure Monitor
+](/azure/azure-monitor/logs/private-link-configure#configure-access-to-ampls-resources) for information about data ingestion for public networks not connected via your Private Link Scopes.
 
 ## I can see some signals in Application Insights, but I can't find why my submission failed, what do I do next?
 
