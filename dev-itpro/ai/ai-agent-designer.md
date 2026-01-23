@@ -121,12 +121,6 @@ As a preview feature, the Agent designer has several important limitations:
 - **Single list per page**: Agents can only interact with one list on any given page. If a page has multiple sublists (for example, sales lines and notes in a factbox), the agent can only access one of them
 - **No Tell me**: Agents can't use **Tell me** to find specific information. Navigation is limited to available actions and links
 
-### Development considerations
-
-- **Prototype only**: Not suitable for production implementations or compliance evaluation
-- **Manual telemetry**: No automatic logging—capture prompts and responses manually during testing
-- **Temporary nature**: Designed for experimentation, not long-term solutions
-
 ## Getting started
 
 Ready to try the Agent designer? The process involves enabling the feature, creating your Agent, and configuring it for your specific use case. Learn more in [Create and activate an Agent (preview)](./ai-agent-designer-create.md).
