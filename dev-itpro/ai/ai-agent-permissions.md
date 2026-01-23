@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-Agents in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are governed by two kinds of permission controls. 
+Agents in [!INCLUDE[prodshort](../developer/includes/prodshort.md) are governed by two kinds of permission controls. 
 
 - The **access controls** - Since agents are modelled as users in the system, they are assigned permissions via permission sets to govern what data, pages and objects they can access. These are called the **access controls** of the agent.
 - The **agent access controls** - This refers to the system that controls which **human users** have the ability to **edit** the configuration of an agent.
