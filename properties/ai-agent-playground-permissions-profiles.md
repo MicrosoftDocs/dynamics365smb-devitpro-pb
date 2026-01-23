@@ -34,26 +34,7 @@ Alternatively, you can assign existing permission sets to the agent, treating it
 
 ### Effective permissions
 
-When a user schedules a task for an agent, the task is executed with permissions from the intersection of the user's permissions and the agent's permissions. This design ensures **agents never exceed the privileges of the user who scheduled the task**.
-
-> [!NOTE]
-> If the agent makes a user intervention request, the task continues proceeding with the *permissions of the user that responded to that intervention request*. This user might be different from the task creator.
-
-#### Example
-
-| Permission | User | Agent | Effective Permissions |
-|------------|------|-------|----------------------|
-| Read Customers | Yes | Yes | Yes |
-| Modify Customers | Yes | Yes | Yes |
-| Delete Customers | Yes | No | No |
-| Post Sales Orders | Yes | No | No |
-| Read Items | No | Yes | No |
-
-This means that in this example:
-
-- The agent can read and modify customers (both user and agent have these permissions)
-- The agent can't delete customers or post sales orders (agent lacks these permissions, even though the user has them)
-- The agent can't read items (user lacks this permission, even though the agent has it)
+Learn more about how agent and user permissions interact in [Agent permissions](ai-agent-permissions.md#effective-permissions).
 
 ## Profiles
 
