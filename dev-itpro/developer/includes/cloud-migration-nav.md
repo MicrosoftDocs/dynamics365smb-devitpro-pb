@@ -15,5 +15,5 @@ The process consists of three parts:
 1. Upgrade from [!INCLUDE[navnow_md](navnow_md.md)] to [!INCLUDE[prod_short](prod_short.md)] version 14. Learn more in [Upgrading to Business Central on-premises (version 14)](../../upgrade/upgrading-to-business-central-on-premises.md).
 
    Convert non-standard functionality and customizations to apps and per-tenant extensions. Learn more in [Deploying a Tenant Customization](../devenv-deploy-tenant-customization.md).
-1. Upgrade to at least [!INCLUDE[prod_short](prod_short.md)] the lowest major and minor version that is available for deployment in Tenant Admin Center. 
+1. Upgrade to at least [!INCLUDE[prod_short](prod_short.md)] to the lowest major and minor version that is available for deployment in Tenant Admin Center. 
 1. Migrate to [!INCLUDE[prod_short](prod_short.md)] online and then switch to use it going forward. Learn more in [Migrate On-Premises Data to Business Central Online](../../administration/migrate-data.md).
