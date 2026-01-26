@@ -373,7 +373,7 @@ The `GetAgentAnnotations` method on the `IAgentMetadata` interface allows for de
 
 ### Summary page
 
-It is possible to define a summary page for the agent, which will be shown when the user hovers over the agent icons in the role center. This page has the purpose of showing a small number of important KPIs that are relevant to the agent. This page only supports displaying numeric values.
+It's possible to define a summary page for the agent, which is shown when the user hovers over the agent icons in the role center. This page has the purpose of showing a few important KPIs that are relevant to the agent. This page only supports displaying numeric values.
 
 ## Managing agent tasks
 
@@ -581,7 +581,7 @@ If the code needs to run only for a specific agent instance, the `UserID()` func
 
 ### Bind events for agent task duration
 
-A more performant pattern to subscribe multiple events only for the duration of a specific agent's tasks is to use the `Agent Session` codeunit to bind events during the login process of agent sessions.
+A more performant pattern to subscribe multiple events only during a specific agent's tasks is to use the `Agent Session` codeunit to bind events during the sign in process of agent sessions.
 
 ```al
 codeunit 50102 "Agent Session Events"
@@ -656,9 +656,9 @@ For detecting if the current session is specifically a custom agent session, see
 
 ## Cross-agent operations
 
-For security reasons, it is only possible to use the agent SDK to interact with agents defined in your own application. Creating instances, tasks, messages and any configuration changes targeting an agent defined in a different application will be blocked with an error.
+For security reasons, it's only possible to use the agent SDK to interact with agents defined in your own application. Creating instances, tasks, messages and any configuration changes targeting an agent defined in a different application is blocked with an error.
 
-The following example will fail if `"Other Agent"` is defined in a different application:
+The following example fails if `"Other Agent"` is defined in a different application:
 
 ```al
 procedure CreateTaskForOtherAgent()
@@ -674,7 +674,7 @@ begin
 end;
 ```
 
-It is possible however to allow access to your agent for other apps by creating your own API for interacting with it. To do this, public procedures which implement the functionality must be exposed.
+It's possible however to allow access to your agent for other apps by creating your own API for interacting with it. To do this, public procedures, which implement the functionality must be exposed.
 
 ```al
 codeunit 50110 "My Agent API"
