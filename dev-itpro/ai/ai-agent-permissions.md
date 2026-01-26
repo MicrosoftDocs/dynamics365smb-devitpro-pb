@@ -21,7 +21,7 @@ ms.update-cycle: 180-days
 Two kinds of permission controls govern agents in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
 
 - The **access controls** - Since agents are modeled as users in the system, they're assigned permissions via permission sets to govern what data, pages, and objects they can access. These are called the **access controls** of the agent.
-- The **agent access controls** - This refers to the system that controls which **human users** have the ability to **edit** the configuration of an agent.
+- The **agent access controls** - This refers to the system that controls, which **human users** have the ability to **edit** the configuration of an agent.
 
 ## Access Controls - Effective permissions of an agent
 
@@ -48,11 +48,11 @@ This means that in this example:
 
 ## Per-company access controls
 
-It is possible to assign permissions to an agent for just specific companies. This has the following effects:
+It's possible to assign permissions to an agent for specific companies. This has the following effects:
 
-**Agent visibility**: If an agent does not have any permissions on a specific company, it will not appear on the role center when logged in to that company.
-**Ability to configure permissions**: When an agent has permissions across multiple companies, a user can only configure permissions for the companies where they also have access. The user won't be able to modify permission assignments for companies they can't access themselves.
-**Per-company permissions**: When a task executes for a specific company, the intersection will only consider permissions defined for that company or all companies.
+**Agent visibility**: If an agent doesn't have any permissions on a specific company, it doesn't appear on the role center when logged in to that company.
+**Ability to configure permissions**: When an agent has permissions across multiple companies, a user can only configure permissions for the companies where they also have access. The user isn't able to modify permission assignments for companies they can't access themselves.
+**Per-company permissions**: When a task runs for a specific company, the intersection will only consider permissions defined for that company or all companies.
 
 ### Configuring access controls via code
 
@@ -90,7 +90,7 @@ This allows users to be assigned as administrators of specific agent instances, 
 
 To assign a user as an administrator of all agents, they can be assigned the `AGENT - ADMIN` permission set. This permission set comes with the following privileges:
 
-**Configure all agents**: All agents will be configurable by the user.
+**Configure all agents**: All agents are configurable by the user.
 **Create agents**: New agents can be created by the user
 **Configure profiles**: Profiles for both users and agents can be configured
 
@@ -100,13 +100,13 @@ The `AGENT - ADMIN` permission set is included in the `SECURITY` permission set.
 
 ### Configuring agent permissions across companies
 
-When a user is assigned the `AGENT - ADMIN` permission set for a specific company or set of companies, this gives them the right to configure the permissions of the agents which are defined on that exact set of companies only.
+When a user is assigned to the `AGENT - ADMIN` permission set for a specific company or set of companies, this gives them the right to configure the permissions of the agents, which are defined on that exact set of companies only.
 
 #### Example
 
 Consider an environment with three companies: **Cronus US**, **Cronus EU**, and **Cronus Asia**. An agent named "Sales Agent" is configured with the `D365 SALES` permission set for **Cronus US** and **Cronus EU**.
 
-| Scenario | User's AGENT - ADMIN assigned for | Can user configure `D365 Sales` on agent |
+| Scenario | User's AGENT - ADMIN assigned for | Can the user configure `D365 Sales` on agent |
 |----------|-----------------------------------|--------------------------------|
 | Exact match | Cronus US, Cronus EU | Yes |
 | Superset | Cronus US, Cronus EU, Cronus Asia | Yes |
@@ -117,6 +117,6 @@ The user can only configure an agent's permissions for a specific company if the
 
 ## Related information
 
-- [Agent SDK](ai-agent-sdk.md)
-- [Design agents with the Custom Agent designer](ai-agent-designer.md)
-- [Custom Agent designer AL API](ai-agent-designer-tasks-api.md)
+[Agent SDK](ai-agent-sdk.md)  
+[Agent designer overview](ai-agent-designer.md)  
+[Integrate with the Tasks AL API](ai-agent-designer-tasks-api.md)  
