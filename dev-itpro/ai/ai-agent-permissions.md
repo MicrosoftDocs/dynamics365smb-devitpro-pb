@@ -12,15 +12,15 @@ ms.date: 01/23/2026
 ms.update-cycle: 180-days
 ---
 
-# Agent permissions
+# Agent permissions (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-Agents in [!INCLUDE[prodshort](../developer/includes/prodshort.md) are governed by two kinds of permission controls. 
+Two kinds of permission controls govern agents in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
 
-- The **access controls** - Since agents are modelled as users in the system, they are assigned permissions via permission sets to govern what data, pages and objects they can access. These are called the **access controls** of the agent.
+- The **access controls** - Since agents are modeled as users in the system, they're assigned permissions via permission sets to govern what data, pages, and objects they can access. These are called the **access controls** of the agent.
 - The **agent access controls** - This refers to the system that controls which **human users** have the ability to **edit** the configuration of an agent.
 
 ## Access Controls - Effective permissions of an agent

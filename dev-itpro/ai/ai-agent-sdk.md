@@ -12,7 +12,7 @@ ms.date: 01/21/2026
 ms.update-cycle: 180-days
 ---
 
-# Agent SDK
+# Agent SDK (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
