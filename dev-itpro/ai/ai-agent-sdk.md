@@ -20,13 +20,13 @@ ms.update-cycle: 180-days
 
 ## Quick-start
 
-To quickly get started with a template agent that you can customize to your needs, you can use the `AL: New Project` command in VSCode to choose the `Agent` template. This will provide you with a skeleton of an implementation which covers most of the topics discussed in this article. 
+To quickly get started with a template agent that you can customize to your needs, you can use the `AL: New Project` command in Visual Studio Code to choose the `Agent` template. This provides you with a skeleton of an implementation, which covers most of the topics discussed in this article. 
 
-## Defining an agent
+## Define an agent
 
-To define an agent in AL, you need to extend the enum that defines the available types of agents and to implement several interfaces that configure how the agent is created, how it presents itself in the UI, and how it executes tasks.
+To define an agent in AL, you need to extend the enum that defines the available types of agents and to implement several interfaces that configure how the agent is created, how it presents itself in the UI, and how it runs tasks.
 
-### Registering the agent type
+### Register the agent type
 
 Register your agent by extending the `Agent Metadata Provider` enum. This creates a unique identifier for your agent type and specifies which codeunits implement the required interfaces.
 
@@ -70,7 +70,7 @@ The `IAgentTaskExecution` interface controls how agents process and execute task
 
 - **Message analysis**: Validate incoming messages and post-process outgoing messages, adding annotations for errors or warnings that should stop processing or trigger user intervention
 - **User intervention suggestions**: Provide contextual guidance when the agent requests assistance, helping users understand what actions are available to take
-- **Page context**: Supply additional contextual data when the agent navigates to specific pages or records during task execution
+- **Page context**: Supply extra contextual data when the agent navigates to specific pages or records during task execution
 
 ### Creating agent instances
 
@@ -108,7 +108,7 @@ end;
 
 ### Creating a setup page for the agent
 
-To provide a user interface for configuring agent instances, create a setup page using the `ConfigurationDialog` page type. This page allows users to configure agent-specific settings while leveraging the built-in `Agent Setup Part` for common agent configuration.
+To provide a user interface for configuring agent instances, create a setup page using the `ConfigurationDialog` page type. This page allows users to configure agent-specific settings while using the built-in `Agent Setup Part` for common agent configuration.
 
 The setup page typically includes:
 
@@ -218,7 +218,7 @@ end;
 The following design principles are recommended when creating a setup page for your agent.
 
 - As a source table, you must use a table with the user security ID of your agents as the primary key. The table should contain other relevant settings for your agent.
-- The source table should be used as a temporary table, so that any changes are not applied until the user decides to update their configuration by clicking the update button.
+- The source table should be used as a temporary table, so that any changes aren't applied until the user decides to update their configuration by clicking the update button.
 - Always use the setup part as it ensures a common visual identity for agents and also comes with relevant disclaimers around the use of AI in your feature.
 
 ### Configuring an agent instance
@@ -289,7 +289,7 @@ Agent instructions are defined on **each agent instance separately**. This allow
 
 #### Static agent instructions
 
-If an agent has instructions that will not change based on per-instance settings or other parameters, the easiest way to define them is in the resources of the agent's AL application. The instructions can then be set every time an agent instance is created by accessing the resource file.
+If an agent has instructions that won't change based on per-instance settings or other parameters, the easiest way to define them is in the resources of the agent's AL application. The instructions can then be set every time an agent instance is created by accessing the resource file.
 
 First, add the instruction file to your `app.json` resources:
 
@@ -318,7 +318,7 @@ end;
 ```
 
 > [!NOTE]
-> Upgrade code will be needed for older instances if instructions are only applied during creation.
+> Upgrade code is needed for older instances if instructions are only applied during creation.
 
 ### Dynamic instructions on task startup
 
@@ -351,13 +351,14 @@ end;
 ```
 
 This pattern is useful when:
+
 - Instructions should be regenerated based on changes to the agent's setup table
 - Different agent instances require different instruction variations based on their configuration
-- Instructions must be fetched from some external service, eg. a keyvault
+- Instructions must be fetched from some external service, for example, a keyvault
 
 ### Advanced topics
 
-#### Allowing the creation of one or many agent instances via the UI
+#### Allow the creation of one or many agent instances via the UI
 
 The `IAgentFactory` interface mandates the implementation of the `ShowCanCreate` method. This method allows for fine-grained control of when an agent instance should be creatable via the UI. Some examples of how it can be used:
 
