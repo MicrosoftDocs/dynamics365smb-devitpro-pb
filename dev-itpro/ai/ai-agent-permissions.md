@@ -18,19 +18,19 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-Two kinds of permission controls govern agents in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
+Two kinds of permission controls govern agents in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 - The **access controls** - Since agents are modeled as users in the system, they're assigned permissions via permission sets to govern what data, pages, and objects they can access. These are called the **access controls** of the agent.
 - The **agent access controls** - This refers to the system that controls, which **human users** have the ability to **edit** the configuration of an agent.
 
-## Access Controls - Effective permissions of an agent
+## Access controls - effective permissions of an agent
 
-When a user schedules a task for an agent, the task is executed with permissions from the intersection of the user's permissions and the agent's permissions. This design ensures **agents never exceed the privileges of the user who scheduled the task**.
+When a user schedules a task for an agent, the task is run with permissions from the intersection of the user's permissions and the agent's permissions. This design ensures **agents never exceed the privileges of the user who scheduled the task**.
 
 > [!NOTE]
 > If the agent makes a user intervention request, the task continues proceeding with the *permissions of the user that responded to that intervention request*. This user might be different from the task creator.
 
-### Example
+### Example - permission intersection
 
 | Permission | User | Agent | Effective Permissions |
 |------------|------|-------|----------------------|
@@ -76,7 +76,7 @@ begin
 end;
 ```
 
-## Agent Access Controls - Who can see and edit the agent
+## Agent access controls - who can see and edit the agent
 
 An agent access control record defines which users have access to configure an agent. The `Agent Access Control` record contains the following fields:
 
@@ -102,11 +102,11 @@ The `AGENT - ADMIN` permission set is included in the `SECURITY` permission set.
 
 When a user is assigned to the `AGENT - ADMIN` permission set for a specific company or set of companies, this gives them the right to configure the permissions of the agents, which are defined on that exact set of companies only.
 
-#### Example
+#### Example - configuring agent permissions across companies
 
 Consider an environment with three companies: **Cronus US**, **Cronus EU**, and **Cronus Asia**. An agent named "Sales Agent" is configured with the `D365 SALES` permission set for **Cronus US** and **Cronus EU**.
 
-| Scenario | User's AGENT - ADMIN assigned for | Can the user configure `D365 Sales` on agent |
+| Scenario | User's `AGENT - ADMIN` assigned for | Can the user configure `D365 Sales` on agent |
 |----------|-----------------------------------|--------------------------------|
 | Exact match | Cronus US, Cronus EU | Yes |
 | Superset | Cronus US, Cronus EU, Cronus Asia | Yes |
