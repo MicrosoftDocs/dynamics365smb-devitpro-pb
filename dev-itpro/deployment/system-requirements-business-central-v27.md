@@ -66,7 +66,7 @@ The following table shows the minimum system requirements for customizing or ext
 
 |Specification|Requirement|
 |-----|-----|
-|Supported operating systems|<ul><li>Windows Server 2025<li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows 11</li>/ul>Learn more about the supported versions and their lifecycles at [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
+|Supported operating systems|<ul><li>Windows Server 2025<li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows 11</li></ul>Learn more about the supported versions and their lifecycles at [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL Language extension for Microsoft Dynamics 365 Business Central](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: four cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
 |Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2021 or later</li></ul></li></ul>|  
@@ -78,22 +78,6 @@ Learn more in [Get Started with AL](../developer/devenv-get-started.md).
 ## <a name="NavServerReqs"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server
 
 The following table shows the minimum system requirements for [!INCLUDE[server](../developer/includes/server.md)].  
-
-<!-- Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2. 
-
-From version 25, Windows 10 will only support Version 22H2. 
-
-Windows 10, version 22H2 is the last feature update released for Windows 10 and will be serviced with monthly updates through October 14, 2025 after which it is no longer supported. So, we need to remove this for 2026w2.
-
-
-For Windows 11, https://learn.microsoft.com/en-gb/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-11-
-
-Windows 11 Enterprise, or Education: 36 months from release date
-Windows 11 Pro, or Education: 24 months from release date
-
-2025w1 <-> 22H1 (36 months)
-2025w1 <-> 23H1 (24 months)
--->
 
 |Specification|Requirement|  
 |-----|-----|  
