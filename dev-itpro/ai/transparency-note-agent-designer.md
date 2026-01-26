@@ -192,7 +192,7 @@ Agents created in the Agent designer aren't extensible. However, an agent is abl
 
 ### Evaluation methods and results
 
-The toolkit is reviewed and tested throughout Microsoft's development lifecycle. It meets the requirements outlined in the [Responsible AI Standard](/ai/responsible-ai) that sets the bar for Microsoft's AI products and features.
+The toolkit is reviewed and tested throughout Microsoft's development lifecycle. It meets the requirements outlined in the [Responsible AI Standard](https://www.microsoft.com/ai/responsible-ai) that sets the bar for Microsoft's AI products and features.
 
 In addition, the preview is aiming at evaluating success of the Agent designer through early adoption of the technology by select partner developers.
 
