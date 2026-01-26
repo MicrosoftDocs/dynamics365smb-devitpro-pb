@@ -184,13 +184,13 @@ Learn more about configuration dialogs in [The ConfigurationDialog page type (pr
 
 The `Agent Setup` codeunit is designed to work with custom setup pages, providing helper methods for UI-based agent configuration. It uses the `Agent Setup Buffer` record to track configuration changes and persist them when saved.
 
-**Setup record management**
+#### Set up record management
 
 - Initialize a setup record for new agents or retrieve existing configuration
 - Save changes made through the UI, automatically creating new agents or updating existing ones
 - Track whether changes have been made that need to be saved
 
-**UI helpers for configuration pages**
+#### UI helpers for configuration pages
 
 - Open the language and region settings page for the agent
 - Open the agent access control page to manage which users can interact with the agent
@@ -225,24 +225,24 @@ The following design principles are recommended when creating a setup page for y
 
 The `Agent` codeunit provides methods to configure various aspects of an agent instance after creation. All configuration methods require the agent's User Security ID.
 
-**Lifecycle management**
+#### Lifecycle management
 
 - Activate or deactivate agent instances to control whether they can process tasks
 - Check the current activation state of an agent
 
-**Identity and display settings**
+#### Identity and display settings
 
 - Get or set the agent's display name
 - Retrieve the agent's user name
 - Set the agent's instructions that guide how it completes tasks
 - Assign a profile to control which Role Center and UI elements the agent uses
 
-**Localization settings**
+#### Localization settings
 
 - Update the agent's language, regional settings (locale), and time zone
 - Retrieve current user settings including profile, language, and regional preferences
 
-**Permissions and access control**
+#### Permissions and access control
 
 - Assign permission sets to control what data and operations the agent can access
 - Retrieve the current permission sets assigned to the agent
@@ -295,7 +295,6 @@ First, add the instruction file to your `app.json` resources:
 
 ```json
 {
-    ...,
     "resourceFolders": ["Resources"]
 }
 ```
@@ -381,7 +380,7 @@ The Agent SDK allows you to trigger agent tasks programmatically from AL code. T
 
 ### Using the Agent Task Builder API
 
-The `Agent Task Builder` codeunit provides the primary interface for creating agent tasks. Here are common integration patterns:
+The `Agent Task Builder` codeunit provides the primary interface for creating agent tasks. In the next sections, you can see some common integration patterns.
 
 #### Trigger from a page action
 
@@ -652,7 +651,7 @@ codeunit 50101 "Agent Events"
 }
 ```
 
-For detecting if the current session is specifically a custom agent session, see [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
+Learn more about detecting if the current session is specifically a custom agent session in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
 
 ## Cross-agent operations
 
