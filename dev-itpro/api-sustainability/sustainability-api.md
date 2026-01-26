@@ -3,7 +3,7 @@ title: Sustainability API
 description: Learn how to use APIs in related to the sustainability features.
 author: altotovi
 ms.topic: reference
-ms.date: 06/18/2024
+ms.date: 01/26/2026
 ms.author: altotovi
 ms.reviewer: solsen
 ms.service: dynamics-365-business-central
@@ -161,7 +161,7 @@ Represents the *Sustainability Ledger Entries* in [!INCLUDE[prod_short](../inclu
 
 Represents the *Sust. Posted ESG Report Line* in [!INCLUDE[prod_short](../includes/prod_short.md)].   
 
-### Methods   
+### Methods
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
@@ -188,7 +188,7 @@ Represents the *Sust. Posted ESG Report Line* in [!INCLUDE[prod_short](../includ
 |fieldCaption |string |Specifies the postedESGReportLine's field caption.|
 |valueSettings |string |Specifies the postedESGReportLine's value setting.|
 |accountFilter |string |Specifies the postedESGReportLine's account filter.|
-|reportingUnit |string |Specifies the postedESGReportLine's reportinmg unit of measure.|
+|reportingUnit |string |Specifies the postedESGReportLine's reporting unit of measure.|
 |rowType |string |Specifies the postedESGReportLine's row type.|
 |rowTotaling |string |Specifies the postedESGReportLine's row totaling model.|
 |calculateWith |string |Specifies the postedESGReportLine's calculate with information.|
@@ -313,11 +313,11 @@ Represents a *Sustainability Goals* in [!INCLUDE[prod_short](../includes/prod_sh
 |baselineForN2O|decimal |Specifies the sustainabilityGoal's baseline for N2O.|
 |baselineForWasteIntensity|decimal |Specifies the sustainabilityGoal's baseline for waste intensity.|
 |baselineForWaterIntensity|decimal |Specifies the sustainabilityGoal's baseline for water intensity.|
-|currentValueForCO2|decimal |Specifies the sustainabilityGoal's CO2 current value.
-|currentValueForCH4|decimal |Specifies the sustainabilityGoal's CH4 current value.
-|currentValueForN2O|decimal |Specifies the sustainabilityGoal's N2O current value.
-|currentValueForWasteInt|decimal |Specifies the sustainabilityGoal's waste intensity current value.
-|currentValueForWaterInt|decimal |Specifies the sustainabilityGoal's water intensity current value.
+|currentValueForCO2|decimal |Specifies the sustainabilityGoal's CO2 current value.|
+|currentValueForCH4|decimal |Specifies the sustainabilityGoal's CH4 current value.|
+|currentValueForN2O|decimal |Specifies the sustainabilityGoal's N2O current value.|
+|currentValueForWasteInt|decimal |Specifies the sustainabilityGoal's waste intensity current value.|
+|currentValueForWaterInt|decimal |Specifies the sustainabilityGoal's water intensity current value.|
 |mainGoal|boolean |Specifies the sustainabilityGoal's main goal.|
 |targetValueForCH4|decimal |Specifies the sustainabilityGoal's targeted value for CH4.|
 |targetValueForCO2|decimal |Specifies the sustainabilityGoal's targeted value for CO2.|
