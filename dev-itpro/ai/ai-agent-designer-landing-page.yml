@@ -47,7 +47,7 @@ landingContent:
         url: ai-agent-designer-attachments.md
       - text: Set up Agent permissions and profiles (preview)
         url: ai-agent-designer-permissions-profiles.md
-      - text: Run an Agent (preview)
+      - text: Run an agent (preview)
         url: ai-agent-designer-run-agent.md
       - text: Iterate and test an Agent (preview)
         url: ai-agent-designer-iterate.md

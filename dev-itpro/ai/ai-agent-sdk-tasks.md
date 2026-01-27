@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Agent SDK allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run an Agent (preview)](ai-agent-designer-run-agent.md).
+The Agent SDK allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run an agent (preview)](ai-agent-designer-run-agent.md).
 
 ## Creating agent tasks
 
@@ -298,4 +298,4 @@ Learn more about detecting if the current session is specifically a custom agent
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
 [Agent designer (preview)](ai-agent-designer.md)  
-[Run an Agent (preview)](ai-agent-designer-run-agent.md)
+[Run an agent (preview)](ai-agent-designer-run-agent.md)

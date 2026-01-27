@@ -169,7 +169,7 @@ begin
 end;
 ```
 
-It's possible however to allow access to your agent for other apps by creating your own API for interacting with it. To do this, public procedures, which implement the functionality must be exposed.
+It's possible, however, to allow access to your agent for other apps by creating your own API for interacting with it. To do this, public procedures, which implement the functionality must be exposed.
 
 ```al
 codeunit 50110 "My Agent API"
