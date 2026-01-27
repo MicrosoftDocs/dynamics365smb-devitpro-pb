@@ -2,7 +2,7 @@
 title: Set up app key vaults for Business Central online
 ms.author: jswymer
 description: Learn how to set up Azure key vaults for Business Central online extensions. Follow step-by-step instructions to securely manage secrets for your AppSource apps.
-ms.date: 12/16/2025
+ms.date: 01/27/2026
 ms.topic: how-to
 author: jswymer
 ms.reviewer: solsen
@@ -15,7 +15,7 @@ ms.reviewer: solsen
 AppSource apps for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can be developed to get secrets from Azure keys vaults. The app key vault feature is readily available for use on the service by all AppSource apps. However, there are some onboarding tasks required.
 
 > [!IMPORTANT]
-> With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, App key vaults can only be used with AppSource apps. They're not supported with per-tenant extensions.
+> With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, App key vaults can only be used with AppSource apps. They're not supported with per-tenant extensions and dev extensions.
 
 > [!TIP]
 > You must also specify secrets in a key vault if you deploy [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as part of the Embed App program. Especially if you must support the Outlook add-in, in which case you must specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. <!--For more information, see [Setting Up the Office Add-Ins for Outlook Integration with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](Setting-up-Office-Add-Ins-Outlook-Inbox.md).-->
