@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 11/20/2025
+ms.date: 01/27/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -29,7 +29,7 @@ The [!INCLUDE [prod_short](../includes/prod_short.md)] Agent designer is an envi
 
 ### What is the Agent designer?
 
-The Agent designer enables partners to prototype, run and troubleshoot autonomous agents that can reason over [!INCLUDE [prod_short](../includes/prod_short.md)] data, automate workflows, and enhance user productivity. It provides a guided interface for iterating on agent instruction, access to [!INCLUDE [prod_short](../includes/prod_short.md)] entities, and relies on Azure OpenAI models.
+The Agent designer enables partners to prototype, run, and troubleshoot autonomous agents that can reason over [!INCLUDE [prod_short](../includes/prod_short.md)] data, automate workflows, and enhance user productivity. It provides a guided interface for iterating on agent instruction, access to [!INCLUDE [prod_short](../includes/prod_short.md)] entities, and relies on Azure OpenAI models.
 
 This tool is intended for:
 
@@ -43,15 +43,15 @@ Agents operate in [!INCLUDE [prod_short](../includes/prod_short.md)] using AI to
 
 - Agent instructions  
 
-  The agent gets high-level business instructions that define its purpose, outline the tasks it performs, and specify more considerations. These instructions are set in the agent code and aren't visible to users
+  The agent gets high-level business instructions that define its purpose, outline the tasks it performs, and specify more considerations. These instructions are set in the agent code and aren't visible to users.
 
 - Agent configuration  
 
-  The agent is available directly within [!INCLUDE [prod_short](../includes/prod_short.md)]. You can configure and activate the agent and specify the users who can use the agent. In the Agent designer, there's no support for specifying extra configuration properties beyond the agent instruction prompt, permission and user profile, and the general agent capabilities like language, locale, and time zone.
+  The agent is available directly within [!INCLUDE [prod_short](../includes/prod_short.md)]. You can configure and activate the agent and specify the users who can use the agent. In the Agent designer, there's no support for specifying extra configuration properties beyond the agent instruction prompt, permission, and user profile, and the general agent capabilities like language, locale, and time zone.
 
 - Task execution and interaction  
 
-  The agent operates based on its instructions and user configuration. The instructions describe its purpose, tasks, and high-level considerations for how to perform the flow. These instructions are defined in the agent code and aren't visible to users. The agent uses AI to identify and carry out the steps needed to complete its task within the Business Central environment.  
+  The agent operates based on its instructions and user configuration. The instructions describe its purpose, tasks, and high-level considerations for how to perform the flow. These instructions are defined in the agent code and aren't visible to users. The agent uses AI to identify and carry out the steps needed to complete its task within the B[!INCLUDE [prod_short](../includes/prod_short.md)] environment.  
   
   The agent interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] web client using the logical UI API. The agent can:  
 
