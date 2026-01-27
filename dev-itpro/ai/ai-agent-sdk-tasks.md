@@ -290,54 +290,6 @@ codeunit 50101 "Agent Events"
 
 Learn more about detecting if the current session is specifically a custom agent session in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
 
-## Cross-agent operations
-
-For security reasons, it's only possible to use the agent SDK to interact with agents defined in your own application. Creating instances, tasks, messages and any configuration changes targeting an agent defined in a different application is blocked with an error.
-
-The following example fails if `"Other Agent"` is defined in a different application:
-
-```al
-procedure CreateTaskForOtherAgent()
-var
-    AgentTaskBuilder: Codeunit "Agent Task Builder";
-    OtherAgentUserSecurityID: Guid;
-begin
-    // This will fail with an error if "Other Agent" is defined in a different app
-    AgentTaskBuilder
-        .Initialize(OtherAgentUserSecurityID, 'Task for Other Agent')
-        .AddTaskMessage('User', 'Please process this request')
-        .Create();
-end;
-```
-
-It's possible however to allow access to your agent for other apps by creating your own API for interacting with it. To do this, public procedures, which implement the functionality must be exposed.
-
-```al
-codeunit 50110 "My Agent API"
-{
-    Access = Public;
-
-    /// <summary>
-    /// Creates a task for the My Agent instance.
-    /// </summary>
-    /// <param name="AgentUserSecurityID">The User Security ID of the agent instance.</param>
-    /// <param name="TaskTitle">The title of the task.</param>
-    /// <param name="TaskMessage">The message content for the task.</param>
-    /// <returns>The created Agent Task record.</returns>
-    procedure CreateTask(AgentUserSecurityID: Guid; TaskTitle: Text[150]; TaskMessage: Text): Record "Agent Task"
-    var
-        AgentTaskBuilder: Codeunit "Agent Task Builder";
-    begin
-        exit(AgentTaskBuilder
-            .Initialize(AgentUserSecurityID, TaskTitle)
-            .AddTaskMessage('External App', TaskMessage)
-            .Create());
-    end;
-}
-```
-
-Other applications can then call these public procedures to interact with your agent without directly using the SDK.
-
 ## Related information
 
 [Agent SDK (preview)](ai-agent-sdk.md)  

@@ -86,7 +86,7 @@ end;
 
 ## Agent instructions
 
-Agent instructions are defined on **each agent instance separately**. This allows for customizing instructions based on custom settings per agent and for dynamically updating them during the agent's lifetime. There are a few different strategies that can be followed to assign instructions to your agent.
+Agent instructions are defined on **each agent instance separately**. This allows for customizing instructions based on custom settings per agent and for dynamically updating them during the agent's lifetime.
 
 ### Setting agent instructions from resources
 
@@ -151,6 +151,61 @@ end;
 
 > [!IMPORTANT]
 > You cannot create agent instances from install codeunits, upgrade codeunits, or background sessions. Agent creation requires an interactive user session.
+
+## Cross-agent operations
+
+For security reasons, it's only possible to use the agent SDK to interact with agents defined in your own application. Creating instances, tasks, messages and any configuration changes targeting an agent defined in a different application is blocked with an error.
+
+The following example fails if `"Other Agent"` is defined in a different application:
+
+```al
+procedure ConfigureOtherAgent()
+var
+    Agent: Codeunit Agent;
+    OtherAgentUserSecurityID: Guid;
+begin
+    // This will fail with an error if "Other Agent" is defined in a different app
+    Agent.SetDisplayName(OtherAgentUserSecurityID, 'Updated Name');
+end;
+```
+
+It's possible however to allow access to your agent for other apps by creating your own API for interacting with it. To do this, public procedures, which implement the functionality must be exposed.
+
+```al
+codeunit 50110 "My Agent API"
+{
+    Access = Public;
+
+    /// <summary>
+    /// Updates the display name of the My Agent instance.
+    /// </summary>
+    /// <param name="AgentUserSecurityID">The User Security ID of the agent instance.</param>
+    /// <param name="NewDisplayName">The new display name to set.</param>
+    procedure SetDisplayName(AgentUserSecurityID: Guid; NewDisplayName: Text[80])
+    var
+        Agent: Codeunit Agent;
+    begin
+        Agent.SetDisplayName(AgentUserSecurityID, NewDisplayName);
+    end;
+
+    /// <summary>
+    /// Activates or deactivates the My Agent instance.
+    /// </summary>
+    /// <param name="AgentUserSecurityID">The User Security ID of the agent instance.</param>
+    /// <param name="Activate">True to activate, false to deactivate.</param>
+    procedure SetActiveState(AgentUserSecurityID: Guid; Activate: Boolean)
+    var
+        Agent: Codeunit Agent;
+    begin
+        if Activate then
+            Agent.Activate(AgentUserSecurityID)
+        else
+            Agent.Deactivate(AgentUserSecurityID);
+    end;
+}
+```
+
+Other applications can then call these public procedures to interact with your agent without directly using the SDK.
 
 ## Related information
 

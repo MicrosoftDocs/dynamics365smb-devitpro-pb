@@ -20,6 +20,9 @@ ms.update-cycle: 180-days
 
 The Agent SDK provides the AL interfaces and codeunits needed to build custom AI agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. This article provides an overview of the SDK and links to detailed documentation for each area.
 
+> [!IMPORTANT]
+> The Agent SDK is currently enabled only for sandbox environments for evaluation purposes. Production environments do not support agent development at this time.
+
 ## Quick-start
 
 To quickly get started with a template agent that you can customize to your needs; press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and start typing `AL: New Project` command in Visual Studio Code to choose the `Agent` template. This provides you with a skeleton of an implementation, which covers most of the topics discussed in this documentation.
