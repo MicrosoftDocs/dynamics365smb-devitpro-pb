@@ -351,7 +351,7 @@ The following design principles are recommended when creating a setup page for y
 ## Related information
 
 [Configure agents (preview)](ai-agent-sdk-configuration.md)  
-[Agent SDK (preview)](ai-agent-sdk.md)  
+[Agent SDK (preview)](ai-agent-sdk-overview.md)  
 [Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
 [Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
 [The ConfigurationDialog page type (preview)](../developer/devenv-page-type-configuration-dialog.md)

@@ -117,7 +117,7 @@ The user can only configure an agent's permissions for a specific company if the
 
 ## Related information
 
-[Agent SDK](ai-agent-sdk.md)  
+[Agent SDK](ai-agent-sdk-overview.md)  
 [Agent designer overview](ai-agent-designer.md)  
 [Integrate with the Tasks AL API](ai-agent-designer-tasks-api.md)  
 [Create and activate (preview)](ai-agent-designer-create.md)  

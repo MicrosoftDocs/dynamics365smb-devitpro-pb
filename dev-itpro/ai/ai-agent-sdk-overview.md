@@ -48,7 +48,7 @@ Once you've defined your agent type, you need to create setup pages and configur
 - **Agent configuration**: Set display names, profiles, localization, permissions, and access controls
 - **Instructions**: Define static or dynamic instructions for your agent
 
-Learn more in [Agent setup and configuration (preview)](ai-agent-sdk-setup-configuration.md).
+Learn more in [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md).
 
 ## Managing agent tasks
 
@@ -65,7 +65,7 @@ Learn more in [Managing agent tasks (preview)](ai-agent-sdk-tasks.md).
 ## Related information
 
 [Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
-[Agent setup and configuration (preview)](ai-agent-sdk-setup-configuration.md)  
+[Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
 [Agent designer (preview)](ai-agent-designer.md)  

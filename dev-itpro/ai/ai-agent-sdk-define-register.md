@@ -295,8 +295,8 @@ end;
 
 ## Related information
 
-[Agent SDK (preview)](ai-agent-sdk.md)  
-[Agent setup and configuration (preview)](ai-agent-sdk-setup-configuration.md)  
+[Agent SDK (preview)](ai-agent-sdk-overview.md)  
+[Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
 [Agent designer (preview)](ai-agent-designer.md)  

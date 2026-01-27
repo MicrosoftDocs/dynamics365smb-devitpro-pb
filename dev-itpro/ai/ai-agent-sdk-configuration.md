@@ -210,7 +210,7 @@ Other applications can then call these public procedures to interact with your a
 ## Related information
 
 [Create agent setup pages (preview)](ai-agent-sdk-setup-page.md)  
-[Agent SDK (preview)](ai-agent-sdk.md)  
+[Agent SDK (preview)](ai-agent-sdk-overview.md)  
 [Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
 [Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
 [Agent permissions (preview)](ai-agent-permissions.md)  
