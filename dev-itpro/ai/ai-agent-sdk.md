@@ -376,7 +376,7 @@ It's possible to define a summary page for the agent, which is shown when the us
 
 ## Managing agent tasks
 
-The Agent SDK allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run an Agent (preview)](ai-agent-designer-run-agent.md).
+The Agent SDK allows you to trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run an agent (preview)](ai-agent-designer-run-agent.md).
 
 ### Using the Agent Task Builder API
 
@@ -711,7 +711,7 @@ Other applications can then call these public procedures to interact with your a
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an Agent (preview)](ai-agent-designer-run-agent.md)  
+[Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  

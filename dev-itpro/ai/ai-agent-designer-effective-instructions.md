@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an Agent (preview)](ai-agent-designer-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an Agent (preview)](ai-agent-designer-iterate.md).
 
-Learn more about how to *trigger* your agent once you have written effective instructions in [Run an Agent (preview)](ai-agent-designer-run-agent.md).
+Learn more about how to *trigger* your agent once you have written effective instructions in [Run an agent (preview)](ai-agent-designer-run-agent.md).
 
 ## Getting started with agent instructions
 
@@ -260,7 +260,7 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an Agent (preview)](ai-agent-designer-run-agent.md)  
+[Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  

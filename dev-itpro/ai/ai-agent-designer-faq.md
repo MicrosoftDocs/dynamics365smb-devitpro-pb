@@ -33,7 +33,7 @@ This allows you to:
 - Extract information from email attachments
 - Send automated responses
 
-Learn more about triggering agents in [Run an Agent (preview)](ai-agent-designer-run-agent.md).
+Learn more about triggering agents in [Run an agent (preview)](ai-agent-designer-run-agent.md).
 
 ## Development and SDK
 
@@ -212,6 +212,6 @@ Learn more about available keywords in [Instruction keywords for an Agent (previ
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
 [Set up Agent designer permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an Agent (preview)](ai-agent-designer-run-agent.md)  
+[Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Best practices for prototyping with the Agent designer (preview)](ai-agent-designer-best-practices.md)  
 [Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)

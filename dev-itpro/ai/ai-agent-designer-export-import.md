@@ -49,7 +49,7 @@ To import the configuration, do the following:
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an Agent (preview)](ai-agent-designer-run-agent.md)  
+[Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
