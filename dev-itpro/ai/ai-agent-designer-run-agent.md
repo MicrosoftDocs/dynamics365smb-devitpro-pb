@@ -1,5 +1,5 @@
 ---
-title: Run an Agent (preview)
+title: Run an agent (preview)
 description: Learn how to trigger an agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Run an Agent (preview)
+# Run an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 

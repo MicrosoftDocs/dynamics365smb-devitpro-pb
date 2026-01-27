@@ -1521,7 +1521,7 @@
 ### [Integrate with the Tasks AL API](ai/ai-agent-designer-tasks-api.md)
 ### [Attachment capabilities and limitations](ai/ai-agent-designer-attachments.md)
 ### [Set up permissions and profiles](ai/ai-agent-designer-permissions-profiles.md)
-### [Run an Agent](ai/ai-agent-designer-run-agent.md)
+### [Run an agent](ai/ai-agent-designer-run-agent.md)
 ### [Iterate and manage](ai/ai-agent-designer-iterate.md)
 ### [Export and import](ai/ai-agent-designer-export-import.md)
 ### [Best practices](ai/ai-agent-designer-best-practices.md)
