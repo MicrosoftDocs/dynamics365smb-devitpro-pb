@@ -130,7 +130,7 @@ We strongly recommend seeking legal advice from a specialist to understand the l
 - Access control and permissions
 
 Agents can be granted access exclusively to specific parts of [!INCLUDE [prod_short](../includes/prod_short.md)] required to perform its designated tasks. The agent settings include predefined permissions and a user interface (UI) role, also known as a profile, that an administrator or configuring user can assign to the agent. This assignment restricts the agent's access to certain areas of the product. It defines the type of access (for example, whether the agent is only allowed to read specific data or also update or delete it) and determines which UI elements—such as pages, fields, actions, and FactBoxes—it can interact with.
-We strongly encourage building and assigning permission sets and profile specific to the Agent, which can be assigned on the Agent card. This practice ensures that the agent only has access to the functionalities and data necessary for its role, enhancing both security and efficiency within the system.
+We strongly encourage building and assigning permission sets and profile specific to the agent, which can be assigned on the Agent card. This practice ensures that the agent only has access to the functionalities and data necessary for its role, enhancing both security and efficiency within the system.
 
 - Transparency and notifications
 
