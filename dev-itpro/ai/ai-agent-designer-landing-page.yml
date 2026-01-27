@@ -64,6 +64,18 @@ landingContent:
         url: ai-agent-designer-tasks-api.md
       - text: The ConfigurationDialog page type for designing agents (preview)
         url: ../developer/devenv-page-type-configuration-dialog.md
+  - title: Develop with the Agent SDK
+    linkLists:
+    - linkListType: reference
+      links:
+      - text: Agent SDK overview (preview)
+        url: ai-agent-sdk-overview.md
+      - text: Define and register an agent (preview)]
+        url: ai-agent-sdk-define-register.md
+      - text: Agent setup and configuration (preview)
+        url: ai-agent-sdk-setup-page.md
+      - text: Managing agent tasks (preview)
+        url: ai-agent-sdk-tasks.md
 # Card
   - title: Prototyping best practices
     linkLists:
