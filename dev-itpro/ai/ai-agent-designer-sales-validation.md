@@ -51,7 +51,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 1. On the **Sales Orders** list page, create a new sales order.
 1. Choose any customer.
 1. Add one or more new sales lines, with the item from the previous step.
-1. Add quantity to one or more lines.
+1. Add quantity to one or more lines.  
   Ensure that the **Location** is the same location you added quantity for.
 1. For that sales line, under **Line** > **Functions**, choose **Reserve**.
 1. There should be quantity available for reservation from **Item Ledger Entry**, select it, and choose **Reserve from Current Line**. Then, choose **OK**.
