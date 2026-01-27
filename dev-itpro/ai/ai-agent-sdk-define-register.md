@@ -173,15 +173,17 @@ The `GetAgentAnnotations` method returns annotations (errors or warnings) to dis
 ```al
 procedure GetAgentAnnotations(AgentUserId: Guid; var Annotations: Record "Agent Annotation")
 var
-    MyAgentSetup: Record "My Agent Setup";
+    MyAgentLicenseMgt: Codeunit "My Agent License Mgt.";
+    LicenseMissingMsg: Label 'Agent license not found.';
+    LicenseMissingDetailsTxt: Label 'A premium license is required to use this agent. Please contact your administrator to add the necessary license.';
 begin
     Clear(Annotations);
     
-    if not MyAgentSetup.Get(AgentUserId) then begin
-        Annotations.Code := 'SETUP001';
+    if not MyAgentLicenseMgt.IsLicenseActive() then begin
+        Annotations.Code := 'LICENSE001';
         Annotations.Severity := Annotations.Severity::Error;
-        Annotations.Message := 'Agent setup is incomplete.';
-        Annotations.Details := 'Please complete the agent setup before running tasks.';
+        Annotations.Message := LicenseMissingMsg;
+        Annotations.Details := LicenseMissingDetailsTxt;
         Annotations.Insert();
     end;
 end;
@@ -224,15 +226,18 @@ end;
 local procedure ValidateInputMessage(AgentTaskMessage: Record "Agent Task Message"; var Annotations: Record "Agent Annotation")
 var
     AgentMessage: Codeunit "Agent Message";
+    MyAgentRelevance: Codeunit "My Agent Relevance";
     MessageText: Text;
+    NotRelevantMsg: Label 'This message does not appear to be relevant to sales order processing.';
+    NotRelevantDetailsTxt: Label 'The agent is designed to handle sales orders. Please provide a message related to sales order creation, updates, or inquiries.';
 begin
     MessageText := AgentMessage.GetText(AgentTaskMessage);
     
-    if StrLen(MessageText) < 10 then begin
-        Annotations.Code := 'VAL001';
+    if not MyAgentRelevance.IsMessageRelevant(MessageText) then begin
+        Annotations.Code := 'RELEVANCE001';
         Annotations.Severity := Annotations.Severity::Warning;
-        Annotations.Message := 'Message is too short.';
-        Annotations.Details := 'Please provide more details for the agent to process.';
+        Annotations.Message := NotRelevantMsg;
+        Annotations.Details := NotRelevantDetailsTxt;
         Annotations.Insert();
     end;
 end;
@@ -241,12 +246,16 @@ local procedure PostProcessOutputMessage(var AgentTaskMessage: Record "Agent Tas
 var
     AgentMessage: Codeunit "Agent Message";
     OldText: Text;
-    SignatureTxt: Label '\n\nBest regards,\nMy Agent';
+    SignatureTxt: Label '\n\nWritten with the help of AI\n';
 begin
     OldText := AgentMessage.GetText(AgentTaskMessage);
     AgentMessage.UpdateText(AgentTaskMessage, OldText + SignatureTxt);
 end;
 ```
+
+> [!NOTE]
+> For implementing relevance checks with Azure OpenAI, see [Developer tools for Copilot](../developer/developer-tools-for-copilot-overview.md).
+
 
 ### Provide user intervention suggestions
 
@@ -261,16 +270,24 @@ Each suggestion includes:
 procedure GetAgentTaskUserInterventionSuggestions(
     AgentTaskUserInterventionRequestDetails: Record "Agent User Int Request Details"; 
     var Suggestions: Record "Agent Task User Int Suggestion")
+var
+    ApproveSalesOrderLbl: Label 'Approve the sales order';
+    // Descriptions are locked as they are used internally to decide relevance
+    ApproveSalesOrderDescriptionLbl: Label 'Use when the agent needs approval to proceed with a sales order.', Locked = true;
+    ApproveSalesOrderInstructionsLbl: Label 'Review the sales order details and click Approve if everything is correct.';
+    ProvideMissingCustomerInfoLbl: Label 'Provide missing customer information';
+    ProvideMissingCustomerInfoDescriptionLbl: Label 'Use when customer data is incomplete or invalid.', Locked = true;
+    ProvideMissingCustomerInfoInstructionsLbl: Label 'Update the customer record with the correct information, then retry the task.';
 begin
     if AgentTaskUserInterventionRequestDetails.Type = AgentTaskUserInterventionRequestDetails.Type::Assistance then begin
-        Suggestions.Summary := 'Approve the sales order';
-        Suggestions.Description := 'Use when the agent needs approval to proceed with a sales order.';
-        Suggestions.Instructions := 'Review the sales order details and click Approve if everything is correct.';
+        Suggestions.Summary := ApproveSalesOrderLbl;
+        Suggestions.Description := ApproveSalesOrderDescriptionLbl;
+        Suggestions.Instructions := ApproveSalesOrderInstructionsLbl;
         Suggestions.Insert();
         
-        Suggestions.Summary := 'Provide missing customer information';
-        Suggestions.Description := 'Use when customer data is incomplete or invalid.';
-        Suggestions.Instructions := 'Update the customer record with the correct information, then retry the task.';
+        Suggestions.Summary := ProvideMissingCustomerInfoLbl;
+        Suggestions.Description := ProvideMissingCustomerInfoDescriptionLbl;
+        Suggestions.Instructions := ProvideMissingCustomerInfoInstructionsLbl;
         Suggestions.Insert();
     end;
 end;

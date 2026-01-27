@@ -130,7 +130,7 @@ Learn more in [Attachment capabilities and limitations](ai-agent-designer-attach
 Continue conversations by adding new messages to existing agent tasks:
 
 ```al
-local procedure AddMessageToExistingTask(ExternalId: Text; MessageText: Text)
+local procedure AddMessageToExistingTask(ExternalId: Text; MessageText: Text; Sender: Text)
 var
     AgentTaskRecord: Record "Agent Task";
     AgentTask: Codeunit "Agent Task";
@@ -141,7 +141,7 @@ begin
     
     // Add a new message to the task
     AgentTaskMessageBuilder
-        .Initialize('User', MessageText)
+        .Initialize(Sender, MessageText)
         .AddToTask(AgentTaskRecord);
     
     // Restart the task if it's completed or stopped
