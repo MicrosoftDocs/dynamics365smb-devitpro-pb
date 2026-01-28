@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. Learn more about how to write effective instructions in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. Learn more about how to write effective instructions in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 
 ## Defining tasks
 
@@ -51,4 +51,4 @@ Once your agent is set up and tasks are being created, it's important to monitor
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

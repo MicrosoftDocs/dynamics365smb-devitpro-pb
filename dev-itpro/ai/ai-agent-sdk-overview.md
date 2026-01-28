@@ -1,6 +1,6 @@
 ---
 title: Agent SDK overview (preview)
-description: Learn about the Agent SDK for building AI agents in Dynamics 365 Business Central.
+description: Learn about the agent SDK for building AI agents in Dynamics 365 Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -18,10 +18,10 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Agent SDK provides the AL interfaces and codeunits needed to build custom AI agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. This article provides an overview of the SDK and links to detailed documentation for each area.
+The agent SDK provides the AL interfaces and codeunits needed to build custom AI agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. This article provides an overview of the SDK and links to detailed documentation for each area.
 
 > [!IMPORTANT]
-> The Agent SDK is currently enabled only for sandbox environments for evaluation purposes. Production environments do not support agent development at this time.
+> The agent SDK is currently enabled only for sandbox environments for evaluation purposes. Production environments don't support agent development at this time.
 
 ## Quick-start
 
@@ -79,4 +79,4 @@ Learn more in [Managing agent tasks (preview)](ai-agent-sdk-tasks.md).
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)

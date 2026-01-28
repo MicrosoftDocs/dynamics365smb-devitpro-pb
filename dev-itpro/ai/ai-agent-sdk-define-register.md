@@ -92,6 +92,7 @@ The `IAgentFactory` interface defines how agent instances are created and config
 The `GetFirstTimeSetupPageId` method returns the ID of the page displayed when configuring a new agent instance for the first time. This is different from `GetSetupPageId` on the `IAgentMetadata` interface, which is used for subsequent configuration of existing agents.
 
 Both methods typically return the same page ID, but they serve different purposes:
+
 - `GetFirstTimeSetupPageId` (IAgentFactory): Called during initial agent creation
 - `GetSetupPageId` (IAgentMetadata): Called when editing an existing agent's configuration
 
@@ -209,6 +210,7 @@ The `IAgentTaskExecution` interface controls how agents process and execute task
 The `AnalyzeAgentTaskMessage` method analyzes the content of agent task messages and their attachments. This method is called for both input (incoming) and output (outgoing) messages, allowing you to validate inputs and post-process outputs.
 
 For input messages, you can add annotations to flag issues:
+
 - **Error annotations** stop the task from being processed further
 - **Warning annotations** trigger a request for user intervention
 
@@ -262,6 +264,7 @@ end;
 The `GetAgentTaskUserInterventionSuggestions` method provides contextual suggestions when the agent requests assistance. These suggestions help guide users on what actions they can take to help the agent complete its task.
 
 Each suggestion includes:
+
 - **Summary**: A user-friendly title for the suggestion
 - **Description**: Context about when this suggestion applies (used by the system to determine relevance)
 - **Instructions**: Detailed steps for the agent to follow

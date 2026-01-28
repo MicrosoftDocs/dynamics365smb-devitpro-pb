@@ -1,6 +1,6 @@
 ---
 title: Agent Designer Overview
-description: Discover the Agent designer, a tool for testing AI capabilities in Business Central by building agents. Prototype, validate, and refine AI-powered solutions.
+description: Discover the agent designer, a tool for testing AI capabilities in Business Central by building agents. Prototype, validate, and refine AI-powered solutions.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -18,24 +18,24 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Agent designer is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
+The agent designer is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
 
 ## Purpose and audience
 
-The Agent designer is primarily designed for teams who want to prototype AI-powered capabilities by configuring agents:
+The agent designer is primarily designed for teams who want to prototype AI-powered capabilities by configuring agents:
 
 - **Product owners** who want to prototype AI-powered features before building them in AL extensions
 - **Domain experts** evaluating AI integration possibilities for their [!INCLUDE [prod_short](../includes/prod_short.md)] solutions  
 - **Consultants** exploring automation scenarios with AI assistance for client solutions
 - **Developers** validating AI use cases and gathering requirements for custom implementations
 
-The Agent designer helps you understand how AI can interact with [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, which allows you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows through agents.
+The agent designer helps you understand how AI can interact with [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, which allows you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows through agents.
 
 ## When to use and when not to use
 
-### When to use the Agent designer
+### When to use the agent designer
 
-Use the Agent designer when you want to:
+Use the agent designer when you want to:
 
 - **Prototype AI features** before investing in AL development
 - **Test AI interactions** with [!INCLUDE [prod_short](../includes/prod_short.md)] UI and data  
@@ -44,9 +44,9 @@ Use the Agent designer when you want to:
 - **Demonstrate AI capabilities** to stakeholders or customers
 - **Learn AI integration patterns** for [!INCLUDE [prod_short](../includes/prod_short.md)]
 
-### When not to use the Agent designer
+### When not to use the agent designer
 
-Don't use the Agent designer when:
+Don't use the agent designer when:
 
 - **Production environments** are involved (sandbox only)
 - **Compliance or security evaluation** is the primary goal
@@ -77,15 +77,15 @@ Understanding the following key concepts helps you work effectively with agents.
 Before you can use the Agent designer, ensure that you have the following prerequisites in place:
 
 - Enable the **Custom Agent** capability in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
-- Appropriate permissions to access and use the Agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)].  
-  - "AGENT - ADMIN" gives permission to work with the Agent designer.  
+- Appropriate permissions to access and use the agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)].  
+  - "AGENT - ADMIN" gives permission to work with the agent designer.  
   - "AGENT - DIAGNOSTICS" gives access to extra troubleshooting data.
 - A sandbox environment for testing and experimentation from version 27.2 (can include customer data such as sandbox copies of production data).
 - Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
 
 ### Instructions and tasks
 
-Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 
 Tasks are a way to trigger the agent. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more about tasks in [Run an agent (preview)](ai-agent-designer-run-agent.md).
 
@@ -101,11 +101,11 @@ The agent operates with explicit permission sets that control what data and acti
 
 The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. To reduce contextual noise and increase accuracy, it's highly recommended to create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
 
-Learn more in [Set up Agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
+Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
 
 ## Limitations (preview)
 
-As a preview feature, the Agent designer has several important limitations:
+As a preview feature, the agent designer has several important limitations:
 
 ### Environment restrictions
 
@@ -123,7 +123,7 @@ As a preview feature, the Agent designer has several important limitations:
 
 ## Getting started
 
-Ready to try the Agent designer? The process involves enabling the feature, creating your Agent, and configuring it for your specific use case. Learn more in [Create and activate an Agent (preview)](./ai-agent-designer-create.md).
+Ready to try the agent designer? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-agent-designer-create.md).
 
 ## Related information
 
@@ -139,4 +139,4 @@ Ready to try the Agent designer? The process involves enabling the feature, crea
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)

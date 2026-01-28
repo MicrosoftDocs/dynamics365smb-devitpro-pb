@@ -615,7 +615,7 @@ Use `InstructionalText` at both page and group levels to guide users:
 - Page-level instructional text explains the overall purpose
 - Group-level instructional text provides context for related fields
 
-Writing clear and concise instructions improves usability. To guide users well, you can learn best practices for crafting effective instructional text. Learn more in [Write effective instructions for an Agent (preview)](../ai/ai-agent-designer-effective-instructions.md).
+Writing clear and concise instructions improves usability. To guide users well, you can learn best practices for crafting effective instructional text. Learn more in [Write effective instructions for an agent (preview)](../ai/ai-agent-designer-effective-instructions.md).
 
 ## Related information
 

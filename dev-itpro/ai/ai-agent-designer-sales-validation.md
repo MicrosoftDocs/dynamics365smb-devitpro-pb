@@ -1,6 +1,6 @@
 ---
 title: Create a Sales Validation Agent
-description: Learn how to create and use a Sales Validation Agent in the Agent designer to automate sales order validation tasks in Business Central.
+description: Learn how to create and use a Sales Validation Agent in the agent designer to automate sales order validation tasks in Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -22,11 +22,11 @@ The Sales Validation Agent is a preconfigured agent designed to help you automat
 
 ## Steps to create and use the Sales Validation Agent
 
-Follow these steps to create and use the Sales Validation Agent, which is available with the Agent designer.
+Follow these steps to create and use the Sales Validation Agent, which is available with the agent designer.
 
 ### Create the Sales Validation Agent
 
-First, create the Sales Validation Agent using the Agent designer capability.
+First, create the Sales Validation Agent using the agent designer capability.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Agent create new"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose **Sales Validation**, and then choose the **Create agent** button.
@@ -87,4 +87,4 @@ The agent goes through and process all sales orders that have a shipping date ac
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
-[Transparency note: Business Central Agent designer](transparency-note-agent-designer.md)
+[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)
