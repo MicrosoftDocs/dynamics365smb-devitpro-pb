@@ -232,7 +232,7 @@ Start with enough detail to convey the business logic and key decision points. Y
 
 ### Can I update instructions after the agent is deployed?
 
-Yes, agent instructions can be updated dynamically. Remember that agents must be deactivated to modify certain settings.
+Yes, agent instructions can be updated dynamically. 
 
 ### How do I know if my instructions are working?
 

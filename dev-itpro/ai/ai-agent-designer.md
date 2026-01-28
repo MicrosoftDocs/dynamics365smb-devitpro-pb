@@ -113,7 +113,6 @@ As a preview feature, the agent designer has several important limitations:
 
 ### Operational constraints
 
-- **State dependencies**: Permission changes require deactivation when on the **Agent Card**; task changes require activation
 - **Permission inheritance**: Agents can't have more permissions than their creating user
 - **UI interaction limits**: Agents see only what their assigned profile allows
 - **Single list per page**: Agents can only interact with one list on any given page. If a page has multiple sublists (for example, sales lines and notes in a factbox), the agent can only access one of them
