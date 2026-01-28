@@ -1,5 +1,5 @@
 ---
-title: Create and activate an agent using the Agent designer (preview)
+title: Create and activate an agent using the agent designer (preview)
 description: Learn how to create and activate an agent in Business Central to automate tasks, integrate AI, and enhance your workflows.
 author: solsen
 ms.author: solsen
@@ -12,22 +12,22 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Create and activate an Agent (preview)
+# Create and activate an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-You can create an agent in the Agent designer to test various AI functionalities, such as automating tasks and integrating AI into your workflows. An agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
+You can create an agent in the agent designer to test various AI functionalities, such as automating tasks and integrating AI into your workflows. An agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
 Learn more in [Agent designer overview (preview)](ai-agent-designer.md).
 
 ## Prerequisites
 
-Before you can create an agent in the Agent designer, ensure that you have the following prerequisites in place:
+Before you can create an agent in the agent designer, ensure that you have the following prerequisites in place:
 
 - Enable the **Custom Agent** capability in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
-- Appropriate permissions to access and use the Agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)]. This must include the "AGENT - ADMIN" and the "AGENT - DIAGNOSTICS" permission sets assigned to your user.
+- Appropriate permissions to access and use the agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)]. This must include the "AGENT - ADMIN" and the "AGENT - DIAGNOSTICS" permission sets assigned to your user.
 - A sandbox environment for testing and experimentation from version 27.2 (can include customer data such as sandbox copies of production data)
 - Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
 
@@ -35,13 +35,13 @@ Before you can create an agent in the Agent designer, ensure that you have the f
 
 Creating an agent involves several key phases: design, configuration, and testing. You start by defining your agent's identity and purpose, then specify its behavior through natural language instructions. The agent needs appropriate permissions and user profiles to interact with your [!INCLUDE [prod_short](../includes/prod_short.md)] environment safely and effectively.
 
-The development process is iterative by design. You can continuously refine your agent's instructions, adjust what it has access to via its profile and permissions, and test different scenarios until it performs as expected. The Agent designer provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
+The development process is iterative by design. You can continuously refine your agent's instructions, adjust what it has access to via its profile and permissions, and test different scenarios until it performs as expected. The agent designer provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
-## Turn on the Agent designer capability
+## Turn on the agent designer capability
 
-The Agent designer capability is on if the :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Create new agent"::: **Agent** icon appears in the top navigation menu of the role center.
+The agent designer capability is on if the :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Create new agent"::: **Agent** icon appears in the top navigation menu of the role center.
 
-If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The Agent designer is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities](/dynamics365/business-central/enable-ai).
+If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The agent designer is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities](/dynamics365/business-central/enable-ai).
 
 Next, configure, and activate the agent to get started.
 
@@ -57,7 +57,7 @@ The **Create agent (preview)** wizard allows you to configure your agent by sett
 :::image type="content" source="../media/ai-designer-agent-setup.png" alt-text="Agent designer setup":::
 1. In the **Description** field, provide an optional description for the agent.
 1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do. <!-- Use the **Download instructions** option... -->
-This serves as the prompt that guides the agent's behavior. Learn more in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+This serves as the prompt that guides the agent's behavior. Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 1. Choose the arrow to go to the next page of the wizard.
 1. Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with.  
 You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
@@ -67,7 +67,7 @@ This allows you to define what data and actions it can access. This is important
 1. Turn on the **Active** toggle.
 1. Select **Update** to complete the setup.
 
-The Agent icon changes to :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent designer icon"::: after configured, indicating the agent is active and ready to handle tasks.
+The agent icon changes to :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent designer icon"::: after configured, indicating the agent is active and ready to handle tasks.
 
 ### Accessing agent settings after creation
 
@@ -98,4 +98,4 @@ An agent is by default in the **Disabled** state. You must activate the agent to
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

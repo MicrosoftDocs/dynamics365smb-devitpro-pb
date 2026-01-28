@@ -1,6 +1,6 @@
 ---
-title: Export and Import an Agent configuration
-description: Learn how to export and import agent configurations in the Agent designer to streamline your development process.
+title: Export and Import an agent configuration
+description: Learn how to export and import agent configurations in the agent designer to streamline your development process.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,13 +12,13 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Export or import an Agent configuration
+# Export or import an agent configuration
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-As part of iterating to improve your agent, you can export and import the agent's configuration from the Agent designer to your local machine. The purpose of this feature is to allow you to back up your agent configuration, share it with others, or move it between different sandbox environments. The exported configuration includes:
+As part of iterating to improve your agent, you can export and import the agent's configuration from the agent designer to your local machine. The purpose of this feature is to allow you to back up your agent configuration, share it with others, or move it between different sandbox environments. The exported configuration includes:
 
 - **Identity** - the name and display name of an agent
 - **Instructions** - the detailed guidelines that define how the agent should behave.
@@ -54,4 +54,4 @@ To import the configuration, do the following:
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

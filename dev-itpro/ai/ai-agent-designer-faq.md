@@ -1,6 +1,6 @@
 ---
 title: Agent designer frequently asked questions (preview)
-description: Get answers to common questions about the Agent designer in Business Central, including integration, SDK access, scheduling, instructions, and capabilities.
+description: Get answers to common questions about the agent designer in Business Central, including integration, SDK access, scheduling, instructions, and capabilities.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -18,13 +18,13 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-This article answers common questions about using the Agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)].
+This article answers common questions about using the agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)].
 
 ## Integration and connectivity
 
-### Can I link a mailbox to an Agent like the Sales Order Agent?
+### Can I link a mailbox to an agent like the Sales Order Agent?
 
-Yes. While there is no built-in configuration of email integration in the Agent designer, you can integrate email functionality with agents using the AL agent SDK. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
+Yes. While there is no built-in configuration of email integration in the agent designer, you can integrate email functionality with agents using the AL agent SDK. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
 
 This allows you to:
 
@@ -98,7 +98,7 @@ You can write agent instructions in your local language, but bear the language c
 - Use domain-specific terminology in your native language
 - Provide multilingual support for international implementations
 
-Learn more in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 
 ### Is there a size limit for agent instructions?
 
@@ -128,15 +128,15 @@ If your instructions exceed 3000-4000 words, consider:
 - Moving static reference information to linked documentation
 - Consolidating redundant or overlapping guidance
 
-Learn more in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 
 ## Choosing the right approach
 
-### When should I use Agent designer vs. Copilot Studio agent vs. AL code?
+### When should I use agent designer vs. Copilot Studio agent vs. AL code?
 
 Choose the approach that best fits your scenario and stage of development:
 
-#### Use **Agent designer** when
+#### Use **agent designer** when
 
 - **Prototyping** new AI-powered features before committing to development
 - **Testing** AI feasibility for specific business scenarios
@@ -146,7 +146,7 @@ Choose the approach that best fits your scenario and stage of development:
 - You're in a **sandbox environment** and want quick results
 
 **Limitations:**  
-Agents created in the Agent designer are for prototyping in sandbox environments. To deliver these agents to customers in production environments, use the AL agent SDK to productize adding integrations, setup etc. and ship in extensions.
+Agents created in the agent designer are for prototyping in sandbox environments. To deliver these agents to customers in production environments, use the AL agent SDK to productize adding integrations, setup etc. and ship in extensions.
 
 #### Use **Copilot Studio agents** when:
 
@@ -202,16 +202,16 @@ To find overdue invoices:
 3. Review the filtered list and prioritize by amount
 ```
 
-Learn more about available keywords in [Instruction keywords for an Agent (preview)](ai-agent-designer-instruction-keywords.md).
+Learn more about available keywords in [Instruction keywords for an agent (preview)](ai-agent-designer-instruction-keywords.md).
 
 ## Related information
 
 [Agent designer overview (preview)](ai-agent-designer.md)  
-[Create and activate an Agent (preview)](ai-agent-designer-create.md)  
-[Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md)  
+[Create and activate an agent (preview)](ai-agent-designer-create.md)  
+[Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Set up Agent designer permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
+[Set up agent designer permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Best practices for prototyping with the Agent designer (preview)](ai-agent-designer-best-practices.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)
+[Best practices for prototyping with the agent designer (preview)](ai-agent-designer-best-practices.md)  
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)

@@ -22,7 +22,7 @@ When working with attachments in agent tasks, be aware of the following capabili
 
 ## Supported file types
 
-Agents can process attachments with the following file types:
+agents can process attachments with the following file types:
 
 - **PDF documents** (.pdf) - Invoices, purchase orders, contracts, and reports
 - **Image files** (.png, .jpg, .jpeg) - Scanned documents, receipts, and product images
@@ -224,4 +224,4 @@ When processing invoice attachments:
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer](transparency-note-agent-designer.md)
+[Transparency note: Business Central agent designer](transparency-note-agent-designer.md)

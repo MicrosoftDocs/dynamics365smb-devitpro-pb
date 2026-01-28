@@ -1,5 +1,5 @@
 ---
-title: Write effective Instructions for an Agent (preview)
+title: Write effective Instructions for an agent (preview)
 description: Learn how to author instructions for an agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
@@ -12,13 +12,13 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Write effective instructions for an Agent (preview)
+# Write effective instructions for an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an Agent (preview)](ai-agent-designer-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an Agent (preview)](ai-agent-designer-iterate.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an agent (preview)](ai-agent-designer-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an agent (preview)](ai-agent-designer-iterate.md).
 
 Learn more about how to *trigger* your agent once you have written effective instructions in [Run an agent (preview)](ai-agent-designer-run-agent.md).
 
@@ -118,7 +118,7 @@ By referencing these community patterns when refining your instructions, you ens
 
 ### Key principles for agent instructions
 
-At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for an Agent (preview)](ai-agent-designer-instruction-keywords.md).
+At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for an agent (preview)](ai-agent-designer-instruction-keywords.md).
 
 #### Start simple, iterate based on results
 
@@ -178,7 +178,7 @@ Agents retain a history of their actions and searches per task, but don't store 
 An example of giving such instructions could be: "**Memorize** the external document reference from the newly created sales quote for use in follow-up communications."
 Consider providing an example of what the memorized information should look like to improve accuracy, for example "external document reference: ABCD1234 Document Number: 1234"
 
-Learn more about using specific instruction keywords in [Instruction keywords for an Agent (preview)](ai-agent-designer-instruction-keywords.md).
+Learn more about using specific instruction keywords in [Instruction keywords for an agent (preview)](ai-agent-designer-instruction-keywords.md).
 
 #### Error handling and validation
 
@@ -236,7 +236,7 @@ Yes, agent instructions can be updated dynamically. Remember that agents must be
 
 ### How do I know if my instructions are working?
 
-Monitor the agent's behavior through the timeline view in the Agent designer. Look for:
+Monitor the agent's behavior through the timeline view in the agent designer. Look for:
 
 - Successful task completions
 - Appropriate use of tools and navigation
@@ -265,4 +265,4 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)

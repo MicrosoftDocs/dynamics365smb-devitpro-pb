@@ -1,6 +1,6 @@
 ---
-title: Iterate and manage an Agent (preview)
-description: Learn how to iterate and manage an Agent created in the Agent designer in Business Central. Discover tools, logs, and customization options to optimize Agent behavior.
+title: Iterate and manage an agent (preview)
+description: Learn how to iterate and manage an agent created in the agent designer in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Iterate and manage an Agent (preview)
+# Iterate and manage an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -23,7 +23,7 @@ When iterating and managing an agent, it's important to understand how the agent
 - Agents act based on instructions and the context available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 
-Learn more about writing effective instructions in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md) and best practices in [Best practices for prototyping with the Agent designer (preview)](ai-agent-designer-best-practices.md).
+Learn more about writing effective instructions in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md) and best practices in [Best practices for prototyping with the agent designer (preview)](ai-agent-designer-best-practices.md).
 
 ## Troubleshooting tools and logs
 
@@ -66,7 +66,7 @@ It also encodes what values were available on the page at the time of the decisi
 
 When the agent makes a decision, it can select from a list of available tools to call. This list is provided in the form of descriptions. It can be used to inform how the agent's instructions should be crafted. To nudge the agent towards a specific tool, these descriptions can be used as a starting point. It also serves as a list of capabilities of what the agents can do.
 
-Learn more in [Instruction keywords for an Agent (preview)](ai-agent-designer-instruction-keywords.md).
+Learn more in [Instruction keywords for an agent (preview)](ai-agent-designer-instruction-keywords.md).
 
 #### Messages
 
@@ -141,4 +141,4 @@ This capability is useful when:
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

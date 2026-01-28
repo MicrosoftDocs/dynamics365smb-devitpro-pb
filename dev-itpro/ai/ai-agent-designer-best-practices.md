@@ -1,6 +1,6 @@
 ---
-title: Best practices for prototyping with the Agent designer (preview)
-description: Explore how to design, test, and refine custom agents using the Agent designer. Follow these best practices to optimize your prototypes.
+title: Best practices for prototyping with the agent designer (preview)
+description: Explore how to design, test, and refine custom agents using the agent designer. Follow these best practices to optimize your prototypes.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,7 +12,7 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Best practices for prototyping with the Agent designer (preview)
+# Best practices for prototyping with the agent designer (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -58,7 +58,7 @@ Create tasks that have clear success criteria:
 - Consider task dependencies and sequencing
 - Plan for error handling and fallback scenarios
 
-Learn more in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 
 ## Permissions best practices
 
@@ -212,4 +212,4 @@ Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designe
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

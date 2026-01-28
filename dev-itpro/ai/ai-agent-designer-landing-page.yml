@@ -8,12 +8,12 @@
 
 # Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
 
-title: Working with Agents in Business Central (preview)
-summary: Explore the Agent designer to create and test custom AI agents in Business Central.
+title: Working with agents in Business Central (preview)
+summary: Explore the agent designer to create and test custom AI agents in Business Central.
 
 metadata:
-  title: Working with Agents in Business Central (preview)
-  description: Explore the Agent designer to create and test custom AI agents in Business Central.
+  title: Working with agents in Business Central (preview)
+  description: Explore the agent designer to create and test custom AI agents in Business Central.
   author: SusanneWindfeldPedersen
   ms.author: solsen
   ms.date: 01/13/2026
@@ -33,38 +33,38 @@ landingContent:
       links:
       - text: Agent designer overview (preview)
         url: ai-agent-designer.md
-      - text: Responsible AI transparency note for Agent designer (preview)
+      - text: Responsible AI transparency note for agent designer (preview)
         url: transparency-note-agent-designer.md 
     - linkListType: how-to-guide
       links:
-      - text: Create an Agent (preview)
+      - text: Create an agent (preview)
         url: ai-agent-designer-create.md
-      - text: Write effective instructions for an Agent (preview)
+      - text: Write effective instructions for an agent (preview)
         url: ai-agent-designer-effective-instructions.md
-      - text: Instruction keywords for an Agent (preview)
+      - text: Instruction keywords for an agent (preview)
         url: ai-agent-designer-instruction-keywords.md
       - text: Attachment capabilities and limitations (preview)
         url: ai-agent-designer-attachments.md
-      - text: Set up Agent permissions and profiles (preview)
+      - text: Set up agent permissions and profiles (preview)
         url: ai-agent-designer-permissions-profiles.md
       - text: Run an agent (preview)
         url: ai-agent-designer-run-agent.md
-      - text: Iterate and test an Agent (preview)
+      - text: Iterate and test an agent (preview)
         url: ai-agent-designer-iterate.md
-      - text: Export and import an Agent (preview)
+      - text: Export and import an agent (preview)
         url: ai-agent-designer-export-import.md
       - text: Agent frequently asked questions (preview)
         url: ai-agent-designer-faq.md
 # Card
-  - title: Develop with the Agent designer API
+  - title: Develop with the agent designer API
     linkLists:
     - linkListType: reference
       links:
-      - text: Use the Tasks AL API to integrate with an Agent (preview)
+      - text: Use the Tasks AL API to integrate with an agent (preview)
         url: ai-agent-designer-tasks-api.md
       - text: The ConfigurationDialog page type for designing agents (preview)
         url: ../developer/devenv-page-type-configuration-dialog.md
-  - title: Develop with the Agent SDK
+  - title: Develop with the agent SDK
     linkLists:
     - linkListType: reference
       links:
@@ -81,7 +81,7 @@ landingContent:
     linkLists:
     - linkListType: overview
       links: 
-      - text: Best practices for prototyping with the Agent designer (preview)
+      - text: Best practices for prototyping with the agent designer (preview)
         url: ai-agent-designer-best-practices.md
 # Card
   - title: Demos and samples 

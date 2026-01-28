@@ -1,6 +1,6 @@
 ---
-title: Instruction keywords for an Agent (preview)
-description: Learn about the instruction keywords you can use to guide the behavior of your Agent in Business Central.
+title: Instruction keywords for an agent (preview)
+description: Learn about the instruction keywords you can use to guide the behavior of your agent in Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,7 +12,7 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Instruction keywords for an Agent (preview)
+# Instruction keywords for an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 When writing instructions for your agent, you can use specific keywords and phrasing to help the agent understand how to utilize the tools available in the agent runtime effectively. These keywords guide the agent's behavior, ensuring it follows best practices and handles tasks as intended.
 
-Learn more about what instructions and tasks are in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+Learn more about what instructions and tasks are in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 
 ## Agent history
 
@@ -62,4 +62,4 @@ Here are some common keywords and phrases you can use in your agent's instructio
 [Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central Agent designer (preview)](transparency-note-agent-designer.md)  
+[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  
