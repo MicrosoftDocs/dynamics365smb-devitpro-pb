@@ -72,16 +72,13 @@ The agent icon changes to :::image type="content" source="../media/ai-designer-i
 
 You can access and modify the settings of an existing agent either from the icon :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent designer icon"::: or by navigating to the **Agents (preview)** page and selecting the agent you want to configure.
 
-In the **Agents (preview)** page, choose the agent, and either open the **Agent Card (preview)** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** wizard opens.
+In the **Agents (preview)** page, choose the agent, and either open the **Agent Card** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** wizard opens.
 
 In the Copilot chat pane for the specific agent, choose the :::image type="content" source="../media/ai-designer-settings-icon.png" alt-text="Agent designer settings icon"::: icon to open a **Configure agent (preview)** wizard.
 
 ### Understanding agent states
 
 An agent is by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks. Working on the setup, you can switch the agent between **Disabled** and **Active** states as needed.
-
-> [!NOTE]
-> To modify the permissions of an agent, you must first deactivate it.
 
 ## Related information
 
