@@ -30,10 +30,11 @@ First, create the Sales Validation Agent using the agent designer capability.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Agent create new"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose **Sales Validation**, and then choose the **Create agent** button.
-1. In the **Configure agent** dialog, activate the agent.
+1. You can use the arrows to review the setup steps.
+1. In the **Configure agent** dialog, choose the **Active** toggle to activate the agent.
 1. Choose **Update** to save and close the agent setup dialog.
 
-Now, the agent has been created and activated.
+Now, the agent is created and activated.
 
 ### Add an item with inventory to be used in sales orders
 
@@ -66,7 +67,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 Add a new task to the agent.
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Agent Tasks (preview)**, and then choose the related link.
-1. Under **Agent designer** actions, choose **Create task**.
+1. Under **Designer** actions, choose **Run task** and create a new task for triggering the agent.
 1. Add a title, for example, `Validate and process sales orders`.
 1. And then, add the following message: `Run and process shipment date <date>`.  
   That will be sufficient. `<date>` corresponds to the shipping date you chose for the sales order.

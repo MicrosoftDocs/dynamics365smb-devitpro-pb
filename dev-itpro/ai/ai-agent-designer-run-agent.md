@@ -28,7 +28,7 @@ A task represents a specific unit of work that the agent needs to perform. Each 
 
 There are two ways to trigger a task for your agent:
 
-1. Manually via the **Agent tasks** page in [!INCLUDE [prod_short](../includes/prod_short.md)] through the **Create task** action.
+1. Manually via the **Agent Tasks** page in [!INCLUDE [prod_short](../includes/prod_short.md)] through the **Create new task** action.
 2. Through the **Tasks AL API** which allows for integrating both with UI elements such as actions and with events such as receiving an email or a sales order posting. Learn more in [Integrate with the Tasks AL API](ai-agent-designer-tasks-api.md).
 
 When creating a task, you can specify an extra message that gets passed to the agent to complement the general instructions with specific details for that particular task. Each task you create appears in the agent's task queue, where the agent picks it up and processes it according to its instructions. Tasks can be stopped and restarted as needed.
