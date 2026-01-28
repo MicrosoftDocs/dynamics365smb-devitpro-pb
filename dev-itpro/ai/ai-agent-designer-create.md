@@ -47,7 +47,7 @@ Next, configure, and activate the agent to get started.
 
 ### Configure an agent
 
-The **Create agent (preview)** wizard allows you to configure your agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
+The **Create agent** wizard allows you to configure your agent by setting up its instructions, profile, and permissions. The wizard is also where you enable the agent for use, once it's set up.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Create new agent"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose whether to create a blank agent or use a template.  
@@ -56,14 +56,13 @@ The **Create agent (preview)** wizard allows you to configure your agent by sett
 1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** and **Initials** field values are now suggested based on the **Name**, but can be modified.
 :::image type="content" source="../media/ai-designer-agent-setup.png" alt-text="Agent designer setup":::
 1. In the **Description** field, provide an optional description for the agent.
-1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do. <!-- Use the **Download instructions** option... -->
-This serves as the prompt that guides the agent's behavior. Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 1. Choose the arrow to go to the next page of the wizard.
 1. Under **Profile (role)**, use the **Setup profile** option to select the profile that determines what UI elements the agent can see and interact with.  
 You can create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete. Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
 1. Under **Permissions**, use **Manage permissions** to add the permissions that the agent should have.  
-This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
-1. Use the arrow to go to the previous page of the wizard.
+This allows you to define what data and actions it can access. This is important for ensuring that the agent operates within the boundaries of your organization's data security policies. Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)
+1. Under **Instructions for the agent**, use the **Edit instructions** option to provide a clear and concise description of what you want the agent to do. This serves as the prompt that guides the agent's behavior. Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
+1. Under **Optimize agent instructions**, use the **Go to task playground** option to go to the **Agent task playground** page, where you can refine the agent's instructions and create a task to run the agent. Learn more in [Iterate and manage an agent (preview)](ai-agent-designer-iterate.md). If you want to skip this step for now, you can return to it later after activating the agent. If you choose to go to the task playground, you must complete the setup of the agent first.
 1. Turn on the **Active** toggle.
 1. Select **Update** to complete the setup.
 
