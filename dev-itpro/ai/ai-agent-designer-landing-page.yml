@@ -70,7 +70,7 @@ landingContent:
       links:
       - text: Agent SDK overview (preview)
         url: ai-agent-sdk-overview.md
-      - text: Define and register an agent (preview)]
+      - text: Define and register an agent (preview)
         url: ai-agent-sdk-define-register.md
       - text: Agent setup and configuration (preview)
         url: ai-agent-sdk-setup-page.md
