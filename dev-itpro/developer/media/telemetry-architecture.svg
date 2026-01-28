@@ -74,26 +74,17 @@
 		</marker>
 	</defs>
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
-		<v:userDefs>
-			<v:ud v:nameU="visNavType" v:val="VT0(1):26"/>
-		</v:userDefs>
 		<title>Page-1</title>
 		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
 				v:shadowOffsetY="-8.50394"/>
 		<v:layer v:name="Connector" v:index="0"/>
 		<g id="shape83-1" v:mID="83" v:groupContext="shape" transform="translate(12.4227,-0.375)">
 			<title>Sheet.83</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(1000):26"/>
-			</v:userDefs>
 			<rect x="0" y="0.749993" width="782.397" height="216.576" class="st1"/>
 		</g>
 		<g id="shape45-3" v:mID="45" v:groupContext="shape" transform="translate(512.027,-24.7612)">
 			<title>Sheet.45</title>
 			<desc>Business Central environment</desc>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(2000):26"/>
-			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="76.2779" cy="141.192" width="152.56" height="152.267"/>
 			<path d="M0 141.19 C0 99.15 34.16 65.06 76.28 65.06 C118.42 65.06 152.56 99.15 152.56 141.19 C152.56 183.26 118.42 217.33
@@ -102,30 +93,18 @@
 						v:horizAlign="1"/><tspan x="48.28" dy="1.38em" class="st4" v:langID="1033">environment</tspan></text>		</g>
 		<g id="shape46-8" v:mID="46" v:groupContext="shape" transform="translate(620.328,-108.758)">
 			<title>Sheet.46</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(3000):26"/>
-			</v:userDefs>
 			<path d="M0 206.25 L0 217.33 L102.16 217.33 L102.16 206.25 L0 206.25 L0 206.25 Z" class="st5"/>
 		</g>
 		<g id="shape47-10" v:mID="47" v:groupContext="shape" transform="translate(651.197,-91.2154)">
 			<title>Sheet.47</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(4000):26"/>
-			</v:userDefs>
 			<path d="M0 206.58 L0 217.33 L39.55 217.33 L39.55 206.58 L0 206.58 L0 206.58 Z" class="st5"/>
 		</g>
 		<g id="shape54-12" v:mID="54" v:groupContext="shape" transform="translate(3.19744E-14,-88.0811)">
 			<title>Sheet.54</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(5000):26"/>
-			</v:userDefs>
 			<path d="M0 203.07 L0 217.33 L124.57 217.33 L124.57 203.07 L0 203.07 L0 203.07 Z" class="st5"/>
 		</g>
 		<g id="shape65-14" v:mID="65" v:groupContext="shape" transform="translate(569.622,-131.435)">
 			<title>Sheet.65</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(6000):26"/>
-			</v:userDefs>
 			<path d="M29.17 217.24 C29.17 217.33 29.17 217.33 29.17 217.33 C9.15 217.33 9.15 217.33 9.15 217.33 C9.15 217.33 9.15
 						 217.33 9.15 217.33 C9.04 217.33 9.04 217.33 8.93 217.33 C4.06 217.33 0 213.27 0 208.25 C0 203.21 4.06 199.23
 						 8.93 199.23 C9.56 199.23 10.19 199.23 10.79 199.34 C12.58 196.52 15.57 194.63 19.11 194.63 C24.19 194.63
@@ -134,17 +113,11 @@
 		</g>
 		<g id="shape79-17" v:mID="79" v:groupContext="shape" transform="translate(487.613,-12.0468)">
 			<title>Sheet.79</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(7000):26"/>
-			</v:userDefs>
 			<path d="M0 217.33 L214.67 217.33 L214.67 21.5 L0 21.5 L0 217.33 Z" class="st6"/>
 		</g>
 		<g id="shape91-19" v:mID="91" v:groupContext="shape" v:layerMember="0" transform="translate(522.825,-54.7288)">
 			<title>Dynamic connector.91</title>
 			<desc>App/extension-level telemetry</desc>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(8000):26"/>
-			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-160.255" cy="202.094" width="142.85" height="20.0036"/>
 			<path d="M0 210.24 L-324.08 210.24" class="st7"/>
@@ -153,9 +126,6 @@
 		<g id="shape94-27" v:mID="94" v:groupContext="shape" v:layerMember="0" transform="translate(530.377,-143.336)">
 			<title>Dynamic connector.94</title>
 			<desc>Environment-level telemetry</desc>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(9000):26"/>
-			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-164.861" cy="202.094" width="135.21" height="20.0036"/>
 			<path d="M0 210.24 L-333.61 210.24" class="st7"/>
@@ -164,18 +134,12 @@
 		<g id="shape124-34" v:mID="124" v:groupContext="shape" transform="translate(101.906,-123.817)">
 			<title>Sheet.124</title>
 			<desc>Azure Application Insights</desc>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(10000):26"/>
-			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="43.6589" cy="174.849" width="87.32" height="84.9547"/>
 			<path d="M0 217.33 L87.32 217.33 L87.32 132.37 L0 132.37 L0 217.33 Z" class="st11"/>
 			<text x="4.58" y="195.85" class="st3" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/><v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/>Azure Application <tspan
 						x="26.58" dy="1.2em" class="st4">Insights</tspan></text>		</g>
 		<g id="group125-38" transform="translate(91.6885,-13.9149)" v:mID="125" v:groupContext="group">
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(11000):26"/>
-			</v:userDefs>
 			<title>Sheet.125</title>
 			<g id="shape78-39" v:mID="78" v:groupContext="shape" transform="translate(0,-10.6894)">
 				<title>Sheet.78</title>
@@ -195,9 +159,6 @@
 							x="26.58" dy="1.2em" class="st4">Insights</tspan></text>			</g>
 		</g>
 		<g id="group126-47" transform="translate(76.3842,-186.075)" v:mID="126" v:groupContext="group">
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(12000):26"/>
-			</v:userDefs>
 			<title>Azure Service Log Analytics.88</title>
 			<desc>Log Analytics workspace</desc>
 			<g id="shape127-48" v:mID="127" v:groupContext="shape">
@@ -230,9 +191,6 @@
 							x="-27.28" dy="1.2em" class="st4">workspace</tspan></text>			</g>
 		</g>
 		<g id="group144-65" transform="translate(62.2109,-86.8628)" v:mID="144" v:groupContext="group">
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(13000):26"/>
-			</v:userDefs>
 			<title>Azure Service Log Analytics.144</title>
 			<desc>Log Analytics workspace</desc>
 			<g id="shape145-66" v:mID="145" v:groupContext="shape">
@@ -265,9 +223,6 @@
 							x="-27.28" dy="1.2em" class="st4">workspace</tspan></text>			</g>
 		</g>
 		<g id="group150-81" transform="translate(132.433,-166.252)" v:mID="150" v:groupContext="group">
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(14000):26"/>
-			</v:userDefs>
 			<title>Application Insights.94</title>
 			<g id="shape151-82" v:mID="151" v:groupContext="shape" transform="translate(7.93385,-5.68434E-14)">
 				<title>Sheet.151</title>
@@ -309,9 +264,6 @@
 			</g>
 		</g>
 		<g id="group155-94" transform="translate(133.572,-52.8661)" v:mID="155" v:groupContext="group">
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(15000):26"/>
-			</v:userDefs>
 			<title>Application Insights.155</title>
 			<g id="shape156-95" v:mID="156" v:groupContext="shape" transform="translate(7.93385,-5.68434E-14)">
 				<title>Sheet.156</title>
@@ -352,11 +304,8 @@
 							 217.33 L8.28 215.83 Z" class="st18"/>
 			</g>
 		</g>
-		<g id="shape160-105" v:mID="160" v:groupContext="shape" transform="translate(661.186,-166.252)">
+		<g id="shape160-105" v:mID="160" v:groupContext="shape" transform="translate(654.661,-162.427)">
 			<title>Sheet.160</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(16000):26"/>
-			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="181.33" width="35.9955" height="35.9955" class="st5"/>
 			<image x="0" y="181.33" width="35.9955" height="35.9955" preserveAspectRatio="none" xlink:href="data:image/png;base64,
 						iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
