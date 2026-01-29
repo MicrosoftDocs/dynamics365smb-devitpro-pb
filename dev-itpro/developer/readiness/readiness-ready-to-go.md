@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 01/22/2026
+ms.date: 01/29/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -115,7 +115,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Sales Order Agent is generally available in all countries/regions. 
-- Payable Agent is generally available in the following countries/regions (November 2025): United States, United Kingdom, Australia, and New Zealand.
+- Payable Agent is generally available in the following countries/regions (January 2026): United States, Canada, United Kingdom, Denmark, France, Italy, Germany, Spain, Australia, and New Zealand.
+
 
 ### Copilot in Business Central 101
 
