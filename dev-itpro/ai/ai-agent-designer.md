@@ -1,6 +1,6 @@
 ---
-title: Agent Designer Overview
-description: Discover the agent designer, a tool for testing AI capabilities in Business Central by building agents. Prototype, validate, and refine AI-powered solutions.
+title: AI Development Toolkit Overview
+description: Discover the AI Development Toolkit for testing AI capabilities in Business Central by building agents. Prototype, validate, and refine AI-powered solutions.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,30 +12,30 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Agent designer overview (preview)
+# AI development toolkit overview (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The agent designer is a prototyping environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
+The [!INCLUDE [prod_short](../includes/prod_short.md)] AI development toolkit provides an environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
 
 ## Purpose and audience
 
-The agent designer is primarily designed for teams who want to prototype AI-powered capabilities by configuring agents:
+Building proof-of-concept agents is primarily designed for teams who want to prototype AI-powered capabilities by configuring agents. The ability to design agents is part of the AI development toolkit, which is intended for:
 
 - **Product owners** who want to prototype AI-powered features before building them in AL extensions
 - **Domain experts** evaluating AI integration possibilities for their [!INCLUDE [prod_short](../includes/prod_short.md)] solutions  
 - **Consultants** exploring automation scenarios with AI assistance for client solutions
 - **Developers** validating AI use cases and gathering requirements for custom implementations
 
-The agent designer helps you understand how AI can interact with [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, which allows you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows through agents.
+Building and designing agents helps you understand how AI can interact with the [!INCLUDE [prod_short](../includes/prod_short.md)] user interface and data, which allows you to test various AI functionalities such as automating tasks, answering questions, and integrating AI into workflows through agents.
 
 ## When to use and when not to use
 
-### When to use the agent designer
+### When to use the AI development toolkit
 
-Use the agent designer when you want to:
+Use the AI development toolkit when you want to:
 
 - **Prototype AI features** before investing in AL development
 - **Test AI interactions** with [!INCLUDE [prod_short](../includes/prod_short.md)] UI and data  
@@ -44,9 +44,9 @@ Use the agent designer when you want to:
 - **Demonstrate AI capabilities** to stakeholders or customers
 - **Learn AI integration patterns** for [!INCLUDE [prod_short](../includes/prod_short.md)]
 
-### When not to use the agent designer
+### When not to use the AI development toolkit
 
-Don't use the agent designer when:
+Don't use the AI development toolkit when:
 
 - **Production environments** are involved (sandbox only)
 - **Compliance or security evaluation** is the primary goal
@@ -74,11 +74,11 @@ Understanding the following key concepts helps you work effectively with agents.
 
 ## Prerequisites
 
-Before you can use the agent designer, ensure that you have the following prerequisites in place:
+Before you can design agents in [!INCLUDE [prod_short](../includes/prod_short.md)], ensure that you have the following prerequisites in place:
 
 - Enable the **Custom Agent** capability in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
-- Appropriate permissions to access and use the agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)].  
-  - "AGENT - ADMIN" gives permission to work with the agent designer.  
+- Appropriate permissions to access and use the design capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)].  
+  - "AGENT - ADMIN" gives permission to design agents.  
   - "AGENT - DIAGNOSTICS" gives access to extra troubleshooting data.
 - A sandbox environment for testing and experimentation from version 27.2 (can include customer data such as sandbox copies of production data).
 - Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
@@ -103,7 +103,7 @@ Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designe
 
 ## Limitations (preview)
 
-As a preview feature, the agent designer has several important limitations:
+As a preview feature, the AI development toolkit has several important limitations:
 
 ### Environment restrictions
 
@@ -120,7 +120,7 @@ As a preview feature, the agent designer has several important limitations:
 
 ## Getting started
 
-Ready to try the agent designer? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-agent-designer-create.md).
+Ready to try design an agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-agent-designer-create.md).
 
 ## Related information
 
@@ -133,7 +133,7 @@ Ready to try the agent designer? The process involves enabling the feature, crea
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Design an agent FAQ (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)

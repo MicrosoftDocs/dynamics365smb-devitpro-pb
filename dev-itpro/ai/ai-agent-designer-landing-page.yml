@@ -9,11 +9,11 @@
 # Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
 
 title: Working with agents in Business Central (preview)
-summary: Explore the agent designer to create and test custom AI agents in Business Central.
+summary: Explore tools for designing and testing custom AI agents in Business Central.
 
 metadata:
   title: Working with agents in Business Central (preview)
-  description: Explore the agent designer to create and test custom AI agents in Business Central.
+  description: Explore tools for designing and testing custom AI agents in Business Central.
   author: SusanneWindfeldPedersen
   ms.author: solsen
   ms.date: 01/13/2026
@@ -31,7 +31,7 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: Agent designer overview (preview)
+      - text: AI development toolkit overview (preview)
         url: ai-agent-designer.md
       - text: Responsible AI transparency note for agent designer (preview)
         url: transparency-note-agent-designer.md 
@@ -73,11 +73,11 @@ landingContent:
       - text: Work with custom agents in AL (preview)
         url: ai-agent-designer-tasks-api.md
 # Card
-  - title: Prototyping best practices
+  - title: Designing and building best practices
     linkLists:
     - linkListType: overview
       links: 
-      - text: Best practices for prototyping with the agent designer (preview)
+      - text: Best practices for designing and building with the AI development toolkit (preview)
         url: ai-agent-designer-best-practices.md
 # Card
   - title: Demos and samples 
