@@ -126,7 +126,7 @@ The user can only configure an agent's permissions for a specific company if the
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Best practices for designing an agent FAQ (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)

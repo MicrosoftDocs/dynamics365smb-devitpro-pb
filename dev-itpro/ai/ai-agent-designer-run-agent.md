@@ -40,7 +40,7 @@ Once your agent is set up and tasks are being created, it's important to monitor
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Agent designer (preview)](ai-agent-designer.md)  
+[AI development toolkit (preview)](ai-agent-designer.md)   
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
@@ -48,7 +48,7 @@ Once your agent is set up and tasks are being created, it's important to monitor
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Best practices for designing an agent FAQ (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

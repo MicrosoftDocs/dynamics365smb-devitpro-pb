@@ -1,6 +1,6 @@
 ---
 title: Attachment capabilities and limitations (preview)
-description: Learn about the capabilities and limitations when working with attachments in agent tasks within the Agent designer in Business Central. Understand supported file types, size limits, and best practices for document processing.
+description: Learn about the capabilities and limitations when working with attachments in agent tasks within the AI development toolkit in Business Central. Understand supported file types, size limits, and best practices for document processing.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -221,7 +221,7 @@ When processing invoice attachments:
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Best practices for designing an agent FAQ (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer](transparency-note-agent-designer.md)

@@ -1,6 +1,6 @@
 ---
-title: Best practices for prototyping with the agent designer (preview)
-description: Explore how to design, test, and refine custom agents using the agent designer. Follow these best practices to optimize your prototypes.
+title: Best practices for designing an agent (preview)
+description: Explore how to design, test, and refine custom agents using the AI development toolkit. Follow these best practices to optimize your prototypes.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,21 +12,21 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Best practices for prototyping with the agent designer (preview)
+# Best practices for designing an agent FAQ (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-Following these best practices helps you create agents and get better results from your prototyping efforts.
+Following these best practices helps you create agents and get better results from your designing efforts.
 
-Learn more in [Agent designer overview (preview)](ai-agent-designer.md).
+Learn more in [AI development toolkit overview (preview)](ai-agent-designer.md).
 
 ## Instructions best practices
-
+ 
 ### Write clear and specific instructions
 
-Effective agent instructions are specific, actionable, and contextual. Instructions are key to guiding agent behavior. Learn more in [Write effective instructions for an Agent (preview)](ai-agent-designer-effective-instructions.md).
+Effective agent instructions are specific, actionable, and contextual. Instructions are key to guiding agent behavior. Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
 
 ## Tasks best practices
 
@@ -201,7 +201,7 @@ Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designe
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Agent designer (preview)](ai-agent-designer.md)  
+[AI development toolkit (preview)](ai-agent-designer.md)   
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
@@ -210,6 +210,6 @@ Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designe
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Agent designer frequently asked questions (preview)](ai-agent-designer-faq.md)  
+[Best practices for designing an agent FAQ (preview)](ai-agent-designer-faq.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

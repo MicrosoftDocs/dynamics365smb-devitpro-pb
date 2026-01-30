@@ -302,4 +302,4 @@ end;
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Agent designer (preview)](ai-agent-designer.md)  
+[AI development toolkit (preview)](ai-agent-designer.md)   
