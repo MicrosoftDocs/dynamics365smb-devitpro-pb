@@ -1,6 +1,6 @@
 ---
 title: "File.Create(Text [, TextEncoding]) Method"
-description: "Creates an Automation object."
+description: "Creates a File on a OnPrem Business Central Server."
 ms.author: solsen
 ms.date: 08/26/2024
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # File.Create(Text [, TextEncoding]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Creates an Automation object.
+Creates a File on a OnPrem Business Central Server.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
