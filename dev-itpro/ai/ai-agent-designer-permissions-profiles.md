@@ -109,7 +109,7 @@ Once you have built and published a profile, you can assign it to the agent in t
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Best practices for designing an agent FAQ (preview)](ai-agent-designer-faq.md)  
+[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

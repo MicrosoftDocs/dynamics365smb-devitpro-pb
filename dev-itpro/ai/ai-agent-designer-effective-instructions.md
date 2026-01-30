@@ -1,5 +1,5 @@
 ---
-title: Write effective Instructions for an agent (preview)
+title: Write effective instructions for an agent (preview)
 description: Learn how to author instructions for an agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
@@ -236,7 +236,7 @@ Yes, agent instructions can be updated dynamically.
 
 ### How do I know if my instructions are working?
 
-Monitor the agent's behavior through the timeline view in the agent designer. Look for:
+Monitor the agent's behavior through the timeline view. Look for:
 
 - Successful task completions
 - Appropriate use of tools and navigation
@@ -262,7 +262,7 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Best practices for designing an agent FAQ (preview)](ai-agent-designer-faq.md)  
+[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: Agent designer frequently asked questions (preview)
+title: Frequently asked questions (preview)
 description: Get answers to common questions about the agent designer in Business Central, including integration, SDK access, scheduling, instructions, and capabilities.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Agent designer frequently asked questions (preview)
+# Frequently asked questions (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -24,7 +24,7 @@ This article answers common questions about using the agent designer in [!INCLUD
 
 ### Can I link a mailbox to an agent like the Sales Order Agent?
 
-Yes. While there is no built-in configuration of email integration in the agent designer, you can integrate email functionality with agents using the AL agent SDK. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
+Yes. While there is no built-in configuration of email integration in the agent designer, you can integrate email functionality with agents using the AI development toolkit. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
 
 This allows you to:
 
@@ -132,11 +132,11 @@ Learn more in [Write effective instructions for an agent (preview)](ai-agent-des
 
 ## Choosing the right approach
 
-### When should I use agent designer vs. Copilot Studio agent vs. AL code?
+### When should I use which tools?
 
 Choose the approach that best fits your scenario and stage of development:
 
-#### Use **agent designer** when
+#### **Design agents** when
 
 - **Prototyping** new AI-powered features before committing to development
 - **Testing** AI feasibility for specific business scenarios
@@ -146,7 +146,7 @@ Choose the approach that best fits your scenario and stage of development:
 - You're in a **sandbox environment** and want quick results
 
 **Limitations:**  
-Agents created in the agent designer are for prototyping in sandbox environments. To deliver these agents to customers in production environments, use the AL agent SDK to productize adding integrations, setup etc. and ship in extensions.
+These agents are for prototyping in sandbox environments. To deliver these agents to customers in production environments, use the AI development toolkit to productize adding integrations, setup etc. and ship in extensions.
 
 #### Use **Copilot Studio agents** when:
 
@@ -183,7 +183,6 @@ Yes, agents can filter data on pages. Filtering is one of the core capabilities 
 - Apply multiple filter criteria
 - Use comparison operators (equals, greater than, less than)
 - Filter by date ranges
-- [VERIFY: Add complete list of supported filtering capabilities]
 
 **Available agent capabilities:**
 
@@ -211,7 +210,7 @@ Learn more about available keywords in [Instruction keywords for an agent (previ
 [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Set up agent designer permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
+[Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Best practices for prototyping with the agent designer (preview)](ai-agent-designer-best-practices.md)  
+[Best practices for designing an agent (preview)](ai-agent-designer-best-practices.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)

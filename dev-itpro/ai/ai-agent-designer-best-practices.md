@@ -12,7 +12,7 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Best practices for designing an agent FAQ (preview)
+# Best practices for designing an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -210,6 +210,6 @@ Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designe
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Best practices for designing an agent FAQ (preview)](ai-agent-designer-faq.md)  
+[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  

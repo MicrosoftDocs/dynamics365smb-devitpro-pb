@@ -23,7 +23,7 @@ When iterating and managing an agent, it's important to understand how the agent
 - Agents act based on instructions and the context available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 
-Learn more about writing effective instructions in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md) and best practices in [Best practices for prototyping with the agent designer (preview)](ai-agent-designer-best-practices.md).
+Learn more about writing effective instructions in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md) and best practices in [Best practices for designing an agent (preview)](ai-agent-designer-best-practices.md).
 
 ## Troubleshooting tools and logs
 
@@ -138,7 +138,7 @@ This capability is useful when:
 [Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Best practices for designing an agent FAQ (preview)](ai-agent-designer-faq.md)  
+[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
 [Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  
