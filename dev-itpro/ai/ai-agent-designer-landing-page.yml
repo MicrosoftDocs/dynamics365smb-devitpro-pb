@@ -56,7 +56,7 @@ landingContent:
       - text: Agent frequently asked questions (preview)
         url: ai-agent-designer-faq.md
 # Card
-  - title: Develop with the agent designer API
+  - title: Develop with the SDK
     linkLists:
     - linkListType: reference
       links:
@@ -64,11 +64,7 @@ landingContent:
         url: ai-agent-designer-tasks-api.md
       - text: The ConfigurationDialog page type for designing agents (preview)
         url: ../developer/devenv-page-type-configuration-dialog.md
-  - title: Develop with the agent SDK
-    linkLists:
-    - linkListType: reference
-      links:
-      - text: Agent SDK overview (preview)
+      - text: SDK overview (preview)
         url: ai-agent-sdk-overview.md
       - text: Define and register an agent (preview)
         url: ai-agent-sdk-define-register.md
