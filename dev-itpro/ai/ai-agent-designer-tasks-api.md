@@ -64,7 +64,7 @@ begin
 end;
 ```
 
-For more information about writing AL code specific to agent sessions, including event subscription patterns and task-specific code, see [Agent SDK (preview)](ai-agent-sdk-overview.md).
+Learn more about writing AL code specific to agent sessions, including event subscription patterns and task-specific code, in [Agent SDK (preview)](ai-agent-sdk-overview.md).
 
 ## Related information
 
