@@ -60,10 +60,6 @@ landingContent:
     linkLists:
     - linkListType: reference
       links:
-      - text: Use the Tasks AL API to integrate with an agent (preview)
-        url: ai-agent-designer-tasks-api.md
-      - text: The ConfigurationDialog page type for designing agents (preview)
-        url: ../developer/devenv-page-type-configuration-dialog.md
       - text: SDK overview (preview)
         url: ai-agent-sdk-overview.md
       - text: Define and register an agent (preview)
@@ -72,6 +68,10 @@ landingContent:
         url: ai-agent-sdk-setup-page.md
       - text: Managing agent tasks (preview)
         url: ai-agent-sdk-tasks.md
+      - text: The ConfigurationDialog page type (preview)
+        url: ../developer/devenv-page-type-configuration-dialog.md
+      - text: Work with custom agents in AL (preview)
+        url: ai-agent-designer-tasks-api.md
 # Card
   - title: Prototyping best practices
     linkLists:
