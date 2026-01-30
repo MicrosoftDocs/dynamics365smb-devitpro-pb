@@ -169,8 +169,8 @@ Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designe
 
 - **Unnecessary agent permissions** can allow agents to modify data they shouldn't
 - **The intersection of the assigning user's permissions and the agent permissions** should be enough to perform all of its functions
-- **Agents cannot configure users or other agents by design**
-- **Agents cannot access sensitive pages like user cards or permission set assignment**
+- **Agents can't configure users or other agents by design**
+- **Agents can't access sensitive pages like user cards or permission set assignment**
 
 ### UI design problems
 

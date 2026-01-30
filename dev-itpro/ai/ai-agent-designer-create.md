@@ -1,5 +1,5 @@
 ---
-title: Create and activate an agent using the agent designer (preview)
+title: Create and activate an agent (preview)
 description: Learn how to create and activate an agent in Business Central to automate tasks, integrate AI, and enhance your workflows.
 author: solsen
 ms.author: solsen
@@ -18,16 +18,16 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-You can create an agent in the agent designer to test various AI functionalities, such as automating tasks and integrating AI into your workflows. An agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
+You can create an agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. An agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
-Learn more in [Agent designer overview (preview)](ai-agent-designer.md).
+Learn more in [AI development toolkit overview (preview)](ai-agent-designer.md).
 
 ## Prerequisites
 
-Before you can create an agent in the agent designer, ensure that you have the following prerequisites in place:
+Before you can create an agent, ensure that you have the following prerequisites in place:
 
 - Enable the **Custom Agent** capability in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
-- Appropriate permissions to access and use the agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)]. This must include the "AGENT - ADMIN" and the "AGENT - DIAGNOSTICS" permission sets assigned to your user.
+- Appropriate permissions to design an agent in [!INCLUDE [prod_short](../includes/prod_short.md)]. This must include the "AGENT - ADMIN" and the "AGENT - DIAGNOSTICS" permission sets assigned to your user.
 - A sandbox environment for testing and experimentation from version 27.2 (can include customer data such as sandbox copies of production data)
 - Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
 
@@ -37,11 +37,11 @@ Creating an agent involves several key phases: design, configuration, and testin
 
 The development process is iterative by design. You can continuously refine your agent's instructions, adjust what it has access to via its profile and permissions, and test different scenarios until it performs as expected. The agent designer provides tools to monitor the agent's reasoning and actions, making it easy to identify areas for improvement and validate that the agent meets your requirements.
 
-## Turn on the agent designer capability
+## Turn on the design capability
 
-The agent designer capability is on if the :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Create new agent"::: **Agent** icon appears in the top navigation menu of the role center.
+The design capability is on if the :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Create new agent"::: **Agent** icon appears in the top navigation menu of the role center.
 
-If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The agent designer is listed under Production ready previews. Learn more in [Configure Copilot and AI agent capabilities](/dynamics365/business-central/enable-ai).
+If the icon isn't present, turn it on from the **Copilot & agent capabilities** page, like other Copilot features in [!INCLUDE [prod_short](../includes/prod_short.md)]. The design capability is listed under **Production ready previews**. Learn more in [Configure Copilot and AI agent capabilities](/dynamics365/business-central/enable-ai).
 
 Next, configure, and activate the agent to get started.
 
@@ -66,15 +66,15 @@ This allows you to define what data and actions it can access. This is important
 1. Turn on the **Active** toggle.
 1. Select **Update** to complete the setup.
 
-The agent icon changes to :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent designer icon"::: after configured, indicating the agent is active and ready to handle tasks.
+The agent icon changes to :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent design icon"::: after configured, indicating the agent is active and ready to handle tasks.
 
 ### Accessing agent settings after creation
 
-You can access and modify the settings of an existing agent either from the icon :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent designer icon"::: or by navigating to the **Agents (preview)** page and selecting the agent you want to configure.
+You can access and modify the settings of an existing agent either from the icon :::image type="content" source="../media/ai-designer-icon.png" alt-text="Agent design icon"::: or by navigating to the **Agents (preview)** page and selecting the agent you want to configure.
 
 In the **Agents (preview)** page, choose the agent, and either open the **Agent Card** , or use the **Setup** while standing on the agent to modify and the **Create agent (preview)** wizard opens.
 
-In the Copilot chat pane for the specific agent, choose the :::image type="content" source="../media/ai-designer-settings-icon.png" alt-text="Agent designer settings icon"::: icon to open a **Configure agent (preview)** wizard.
+In the Copilot chat pane for the specific agent, choose the :::image type="content" source="../media/ai-designer-settings-icon.png" alt-text="Agent design settings icon"::: icon to open a **Configure agent (preview)** wizard.
 
 ### Understanding agent states
 
