@@ -52,7 +52,7 @@ Learn more in [Agent setup and configuration (preview)](ai-agent-sdk-configurati
 
 ## Managing agent tasks
 
-AL provides codeunits to trigger and manage agent tasks programmatically:
+The API for building agents provides codeunits to trigger and manage agent tasks programmatically:
 
 - **Agent Task Builder API**: Create tasks from page actions, business events, or email triggers
 - **Attachments**: Add documents for agents to process
