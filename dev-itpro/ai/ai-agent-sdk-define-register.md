@@ -1,6 +1,6 @@
 ---
 title: Define and register an agent (preview)
-description: Learn how to define and register AI agents in Dynamics 365 Business Central using the Agent SDK.
+description: Learn how to define and register AI agents in Dynamics 365 Business Central using the AI development toolkit.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

@@ -1,5 +1,5 @@
 ---
-title: Configure agents via the SDK (preview)
+title: Configure agents (preview)
 description: Learn how to configure agent instances and manage agent instructions in Dynamics 365 Business Central.
 author: solsen
 ms.author: solsen
@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 This article explains how to configure agent instances and manage agent instructions. 
 
-There can be one or multiple instances of an agent in [!INCLUDE [prod_short](../includes/prod_short.md)]. Each agent instance can have its own instructions, permissions, user settings, and agent access controls defined separately. Each agent instance is uniquely identified by its **User Security ID** which is passed as a parameter to all the methods of the SDK.
+There can be one or multiple instances of an agent in [!INCLUDE [prod_short](../includes/prod_short.md)]. Each agent instance can have its own instructions, permissions, user settings, and agent access controls defined separately. Each agent instance is uniquely identified by its **User Security ID** which is passed as a parameter to all the methods of the API.
 
 ## Configuring an agent instance
 
@@ -154,7 +154,7 @@ end;
 
 ## Cross-agent operations
 
-For security reasons, it's only possible to use the agent SDK to interact with agents defined in your own application. Creating instances, tasks, messages and any configuration changes targeting an agent defined in a different application is blocked with an error.
+For security reasons, it's only possible to use the AI development toolkit to interact with agents defined in your own application. Creating instances, tasks, messages and any configuration changes targeting an agent defined in a different application is blocked with an error.
 
 The following example fails if `"Other Agent"` is defined in a different application:
 
@@ -205,7 +205,7 @@ codeunit 50110 "My Agent API"
 }
 ```
 
-Other applications can then call these public procedures to interact with your agent without directly using the SDK.
+Other applications can then call these public procedures to interact with your agent without directly using the API.
 
 ## Related information
 

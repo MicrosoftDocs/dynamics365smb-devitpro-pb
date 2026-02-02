@@ -288,7 +288,7 @@ codeunit 50101 "Agent Events"
 }
 ```
 
-Learn more about detecting if the current session is specifically a custom agent session in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
+Learn more about detecting if the current session is specifically an agent session in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
 
 ## Related information
 
