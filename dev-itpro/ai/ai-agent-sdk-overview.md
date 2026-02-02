@@ -1,6 +1,6 @@
 ---
-title: Agent SDK overview (preview)
-description: Learn about the agent SDK for building AI agents in Dynamics 365 Business Central.
+title: Coding agents in AL (preview)
+description: Learn about the development tools for building AI agents in Dynamics 365 Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,16 +12,16 @@ ms.date: 01/21/2026
 ms.update-cycle: 180-days
 ---
 
-# Agent SDK (preview)
+# Coding agents in AL (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The agent SDK provides the AL interfaces and codeunits needed to build custom AI agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. This article provides an overview of the SDK and links to detailed documentation for each area.
+In AL, you find interfaces and codeunits designed for building custom AI agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. This article provides an overview of these tools and links to detailed documentation for each area.
 
 > [!IMPORTANT]
-> The agent SDK is currently enabled only for sandbox environments for evaluation purposes. Production environments don't support agent development at this time.
+> This capability is currently enabled only for sandbox environments for evaluation purposes. Production environments don't support agent development at this time.
 
 ## Quick-start
 
@@ -52,7 +52,7 @@ Learn more in [Agent setup and configuration (preview)](ai-agent-sdk-configurati
 
 ## Managing agent tasks
 
-The SDK allows you to trigger and manage agent tasks programmatically:
+AL provides codeunits to trigger and manage agent tasks programmatically:
 
 - **Agent Task Builder API**: Create tasks from page actions, business events, or email triggers
 - **Attachments**: Add documents for agents to process
