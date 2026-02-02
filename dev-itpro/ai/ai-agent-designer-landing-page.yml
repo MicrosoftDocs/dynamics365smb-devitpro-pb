@@ -56,11 +56,11 @@ landingContent:
       - text: Agent frequently asked questions (preview)
         url: ai-agent-designer-faq.md
 # Card
-  - title: Develop with the SDK
+  - title: Develop with the AI development toolkit
     linkLists:
     - linkListType: reference
       links:
-      - text: SDK overview (preview)
+      - text: Coding agents in AL (preview)
         url: ai-agent-sdk-overview.md
       - text: Define and register an agent (preview)
         url: ai-agent-sdk-define-register.md

@@ -1,6 +1,6 @@
 ---
 title: Frequently asked questions (preview)
-description: Get answers to common questions about the agent designer in Business Central, including integration, SDK access, scheduling, instructions, and capabilities.
+description: Get answers to common questions about designing agents in Business Central, including integration, AI development toolkit access, scheduling, instructions, and capabilities.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -35,20 +35,20 @@ This allows you to:
 
 Learn more about triggering agents in [Run an agent (preview)](ai-agent-designer-run-agent.md).
 
-## Development and SDK
+## Development
 
-### Where can I find the agent SDK code?
+### Where can I find the AI development toolkit code?
 
-Access the agent SDK at: [BCApps/src/System Application/App/Agent](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Agent)
+Access the AI development toolkit at: [BCApps/src/System Application/App/Agent](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Agent)
 
-The SDK provides:
+The toolkit provides:
 
 - Agent Task Builder API
 - Agent Task Message Builder API
 - Custom Agent management codeunits
 - Sample implementations and patterns
 
-Learn more about using the SDK in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
+Learn more in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
 
 ## Scheduling and automation
 
