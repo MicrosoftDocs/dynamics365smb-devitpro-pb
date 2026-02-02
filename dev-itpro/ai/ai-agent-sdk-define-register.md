@@ -298,7 +298,7 @@ end;
 
 ## Related information
 
-[Agent SDK (preview)](ai-agent-sdk-overview.md)  
+[Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
 [Overview (preview)](ai-agent-designer-landing-page.yml)  

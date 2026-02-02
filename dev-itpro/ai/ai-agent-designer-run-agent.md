@@ -35,7 +35,7 @@ When creating a task, you can specify an extra message that gets passed to the a
 
 ## Testing and continuous improvement
 
-Once your agent is set up and tasks are being created, it's important to monitor its performance and make adjustments as necessary. Use the insights gained from task executions to refine your agent's instructions and improve its effectiveness over time. Learn more about continuously improving your agent in [Iterate and manage an Agent (preview)](ai-agent-designer-iterate.md).
+Once your agent is set up and tasks are being created, it's important to monitor its performance and make adjustments as necessary. Use the insights gained from task executions to refine your agent's instructions and improve its effectiveness over time. Learn more about continuously improving your agent in [Iterate and manage an agent (preview)](ai-agent-designer-iterate.md).
 
 ## Related information
 

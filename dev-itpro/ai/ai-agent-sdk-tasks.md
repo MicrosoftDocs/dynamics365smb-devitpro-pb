@@ -292,7 +292,7 @@ Learn more about detecting if the current session is specifically a custom agent
 
 ## Related information
 
-[Agent SDK (preview)](ai-agent-sdk-overview.md)  
+[Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  

@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 The Tasks AL API allows you to work with custom agents programmatically from AL code. This article covers how to retrieve agent information and write AL code specific to agent sessions.
 
-For information about creating and managing agent tasks, including triggering tasks from page actions, business events, adding attachments, and managing task lifecycle, see [Agent SDK (preview)](ai-agent-sdk-overview.md).
+For information about creating and managing agent tasks, including triggering tasks from page actions, business events, adding attachments, and managing task lifecycle, see [Coding agents in AL (preview)](ai-agent-sdk-overview.md).
 
 ## Get information about the available custom agents
 
@@ -64,13 +64,13 @@ begin
 end;
 ```
 
-Learn more about writing AL code specific to agent sessions, including event subscription patterns and task-specific code, in [Agent SDK (preview)](ai-agent-sdk-overview.md).
+Learn more about writing AL code specific to agent sessions, including event subscription patterns and task-specific code, in [Coding agents in AL (preview)](ai-agent-sdk-overview.md).
 
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
 [AI development toolkit (preview)](ai-agent-designer.md)   
-[Agent SDK (preview)](ai-agent-sdk-overview.md)  
+[Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  

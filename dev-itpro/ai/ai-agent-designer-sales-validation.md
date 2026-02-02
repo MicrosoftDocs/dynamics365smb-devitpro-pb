@@ -22,11 +22,11 @@ The Sales Validation Agent is a preconfigured agent designed to help you automat
 
 ## Steps to create and use the Sales Validation Agent
 
-Follow these steps to create and use the Sales Validation Agent, which is available with the agent designer.
+Follow these steps to create and use the Sales Validation Agent, which is available as part of the AI development toolkit.
 
 ### Create the Sales Validation Agent
 
-First, create the Sales Validation Agent using the agent designer capability.
+First, create the Sales Validation Agent.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Agent create new"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose **Sales Validation**, and then choose the **Create agent** button.

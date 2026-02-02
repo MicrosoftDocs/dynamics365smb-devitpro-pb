@@ -1,6 +1,6 @@
 ---
 title: Iterate and manage an agent (preview)
-description: Learn how to iterate and manage an agent created in the agent designer in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
+description: Learn how to iterate and manage an agent designed in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -117,7 +117,7 @@ As you iterate on your agent's instructions, the system maintains a version hist
 To access instruction version history:
 
 1. Open the agent setup, for example from the **Agents (preview)** page.
-2. In the **Agent designer - Instructions** section, use the **Get earlier version** button to view and restore previous versions.
+2. In the **Agent - Instructions** section, use the **Get earlier version** button to view and restore previous versions.
 3. Test the restored version to validate it meets your requirements.
 
 This capability is useful when:
