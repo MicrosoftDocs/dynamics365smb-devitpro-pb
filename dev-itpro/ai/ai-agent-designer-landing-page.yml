@@ -33,7 +33,7 @@ landingContent:
       links:
       - text: AI development toolkit overview (preview)
         url: ai-agent-designer.md
-      - text: Responsible AI transparency note for agent designer (preview)
+      - text: Responsible AI transparency note for AI development toolkit (preview)
         url: transparency-note-agent-designer.md 
     - linkListType: how-to-guide
       links:
