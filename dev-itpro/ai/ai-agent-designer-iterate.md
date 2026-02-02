@@ -141,4 +141,4 @@ This capability is useful when:
 [Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)  

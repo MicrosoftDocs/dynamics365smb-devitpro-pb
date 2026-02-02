@@ -213,4 +213,4 @@ Learn more about available keywords in [Instruction keywords for an agent (previ
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Best practices for designing an agent (preview)](ai-agent-designer-best-practices.md)  
-[Transparency note: Business Central agent designer (preview)](transparency-note-agent-designer.md)
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)
