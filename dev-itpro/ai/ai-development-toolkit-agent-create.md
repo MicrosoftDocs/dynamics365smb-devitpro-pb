@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-You can create an agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. An agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
+With the AI development toolkit, you can create an agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. An agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
 Learn more in [AI development toolkit overview (preview)](ai-development-toolkit-overview.md).
 
