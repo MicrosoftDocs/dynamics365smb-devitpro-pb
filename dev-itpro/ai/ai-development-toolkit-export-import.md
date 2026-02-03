@@ -1,6 +1,6 @@
 ---
 title: Export and Import an agent configuration
-description: Learn how to export and import agent configurations in the agent designer to streamline your development process.
+description: Learn how to export and import agent configurations in the agent design experience to streamline your development process.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

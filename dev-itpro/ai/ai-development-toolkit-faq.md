@@ -18,13 +18,13 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-This article answers common questions about using the agent designer in [!INCLUDE [prod_short](../includes/prod_short.md)].
+This article answers common questions about using the agent design experience in [!INCLUDE [prod_short](../includes/prod_short.md)].
 
 ## Integration and connectivity
 
 ### Can I link a mailbox to an agent like the Sales Order Agent?
 
-Yes. While there is no built-in configuration of email integration in the agent designer, you can integrate email functionality with agents using the AI development toolkit. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
+Yes. While there is no built-in configuration of email integration in the agent design experience, you can integrate email functionality with agents using the AI development toolkit. Learn more in the BCTech repo sample [Agent and Email Integration Sample](https://github.com/microsoft/BCTech/pull/338/files).
 
 This allows you to:
 
