@@ -32,7 +32,7 @@ Add a page action that creates an agent task when clicked:
 action(CreateAgentTask)
 {
     Caption = 'Send to Agent';
-    Image = Robot;
+    Image = Task;
 
     trigger OnAction()
     var
