@@ -1515,7 +1515,7 @@
 ## Agent designer (preview)
 ### [Overview](ai/ai-development-toolkit-landing-page.yml)
 ### [AI development toolkit overview](ai/ai-development-toolkit-overview.md)
-### [Create and activate](ai/ai-development-toolkit-agent-create..md)
+### [Create and activate](ai/ai-development-toolkit-agent-create.md)
 ### [Write effective instructions](ai/ai-development-toolkit-instructions.md)
 ### [Instruction keywords](ai/ai-development-toolkit-instruction-keywords.md)
 ### [Integrate with the Tasks AL API](ai/ai-development-toolkit-tasks-api.md)

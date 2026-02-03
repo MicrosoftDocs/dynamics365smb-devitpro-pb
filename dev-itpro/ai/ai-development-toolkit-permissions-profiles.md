@@ -102,7 +102,7 @@ Once you have built and published a profile, you can assign it to the agent in t
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [AI development toolkit (preview)](ai-development-toolkit-overview.md)   
-[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  

@@ -120,12 +120,12 @@ As a preview feature, the AI development toolkit has several important limitatio
 
 ## Getting started
 
-Ready to try design an agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-development-toolkit-agent-create..md).
+Ready to try design an agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-development-toolkit-agent-create.md).
 
 ## Related information
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
-[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  

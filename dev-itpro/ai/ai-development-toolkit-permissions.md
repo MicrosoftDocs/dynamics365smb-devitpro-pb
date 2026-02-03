@@ -120,7 +120,7 @@ The user can only configure an agent's permissions for a specific company if the
 [Coding agents in AL](ai-agent-sdk-overview.md)  
 [AI development toolkit overview](ai-development-toolkit-overview.md)  
 [Integrate with the Tasks AL API](ai-development-toolkit-tasks-api.md)  
-[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
 [Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  

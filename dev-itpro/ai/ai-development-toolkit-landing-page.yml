@@ -38,7 +38,7 @@ landingContent:
     - linkListType: how-to-guide
       links:
       - text: Create an agent (preview)
-        url: ai-development-toolkit-agent-create..md
+        url: ai-development-toolkit-agent-create.md
       - text: Write effective instructions for an agent (preview)
         url: ai-development-toolkit-instructions.md
       - text: Instruction keywords for an agent (preview)

@@ -206,7 +206,7 @@ Learn more about available keywords in [Instruction keywords for an agent (previ
 ## Related information
 
 [AI development toolkit overview (preview)](ai-development-toolkit-overview.md)  
-[Create and activate an agent (preview)](ai-development-toolkit-agent-create..md)  
+[Create and activate an agent (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  

@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an agent (preview)](ai-development-toolkit-agent-create..md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an agent (preview)](ai-development-toolkit-iterate.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an agent (preview)](ai-development-toolkit-agent-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an agent (preview)](ai-development-toolkit-iterate.md).
 
 Learn more about how to *trigger* your agent once you have written effective instructions in [Run an agent (preview)](ai-development-toolkit-run-agent.md).
 
@@ -255,7 +255,7 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [AI development toolkit (preview)](ai-development-toolkit-overview.md)   
-[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
