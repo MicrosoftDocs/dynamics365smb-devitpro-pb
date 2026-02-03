@@ -18,9 +18,9 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an agent (preview)](ai-agent-designer-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an agent (preview)](ai-agent-designer-iterate.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an agent (preview)](ai-development-toolkit-agent-create..md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an agent (preview)](ai-development-toolkit-iterate.md).
 
-Learn more about how to *trigger* your agent once you have written effective instructions in [Run an agent (preview)](ai-agent-designer-run-agent.md).
+Learn more about how to *trigger* your agent once you have written effective instructions in [Run an agent (preview)](ai-development-toolkit-run-agent.md).
 
 ## Getting started with agent instructions
 
@@ -118,7 +118,7 @@ By referencing these community patterns when refining your instructions, you ens
 
 ### Key principles for agent instructions
 
-At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for an agent (preview)](ai-agent-designer-instruction-keywords.md).
+At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
 
 #### Start simple, iterate based on results
 
@@ -178,7 +178,7 @@ Agents retain a history of their actions and searches per task, but don't store 
 An example of giving such instructions could be: "**Memorize** the external document reference from the newly created sales quote for use in follow-up communications."
 Consider providing an example of what the memorized information should look like to improve accuracy, for example "external document reference: ABCD1234 Document Number: 1234"
 
-Learn more about using specific instruction keywords in [Instruction keywords for an agent (preview)](ai-agent-designer-instruction-keywords.md).
+Learn more about using specific instruction keywords in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
 
 #### Error handling and validation
 
@@ -253,16 +253,16 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 
 ## Related information
 
-[Overview (preview)](ai-agent-designer-landing-page.yml)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [AI development toolkit (preview)](ai-development-toolkit-overview.md)   
-[Create and activate (preview)](ai-agent-designer-create.md)  
-[Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
-[Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
-[Best practices (preview)](ai-agent-designer-best-practices.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
+[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)

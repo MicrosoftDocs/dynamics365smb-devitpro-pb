@@ -85,9 +85,9 @@ Before you can design agents in [!INCLUDE [prod_short](../includes/prod_short.md
 
 ### Instructions and tasks
 
-Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
+Instructions are natural language descriptions that define your agent's purpose and behavior. Think of them as detailed prompts that guide how the agent interprets requests and interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] interface. Well-written instructions include context, clear expectations, and specific guidance about the agent's role. Learn more in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md).
 
-Tasks are a way to trigger the agent. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more about tasks in [Run an agent (preview)](ai-agent-designer-run-agent.md).
+Tasks are a way to trigger the agent. Tasks can only be added when the agent is active, and they help structure how the agent responds to different types of requests. Learn more about tasks in [Run an agent (preview)](ai-development-toolkit-run-agent.md).
 
 ### Supported languages
 
@@ -99,7 +99,7 @@ Learn more about geographic and language availability at [Copilot international 
 
 The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege; grant only the permissions necessary for the agent's intended functionality. The agent is assigned to a profile (role) that determines which UI elements it can see and interact with. To reduce contextual noise and increase accuracy, it's highly recommended to create custom profiles specifically for agents, using page customization properties to control visibility of actions, layouts, views, and operations like insert/delete.
 
-Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
+Learn more in [Set up agent permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md).
 
 ## Limitations (preview)
 
@@ -120,20 +120,20 @@ As a preview feature, the AI development toolkit has several important limitatio
 
 ## Getting started
 
-Ready to try design an agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-agent-designer-create.md).
+Ready to try design an agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-development-toolkit-agent-create..md).
 
 ## Related information
 
-[Overview (preview)](ai-agent-designer-landing-page.yml)  
-[Create and activate (preview)](ai-agent-designer-create.md)  
-[Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
-[Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
-[Best practices (preview)](ai-agent-designer-best-practices.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)

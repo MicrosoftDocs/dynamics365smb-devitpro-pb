@@ -38,23 +38,23 @@ landingContent:
     - linkListType: how-to-guide
       links:
       - text: Create an agent (preview)
-        url: ai-agent-designer-create.md
+        url: ai-development-toolkit-agent-create..md
       - text: Write effective instructions for an agent (preview)
-        url: ai-agent-designer-effective-instructions.md
+        url: ai-development-toolkit-instructions.md
       - text: Instruction keywords for an agent (preview)
-        url: ai-agent-designer-instruction-keywords.md
+        url: ai-development-toolkit-instruction-keywords.md
       - text: Attachment capabilities and limitations (preview)
-        url: ai-agent-designer-attachments.md
+        url: ai-development-toolkit-attachments.md
       - text: Set up agent permissions and profiles (preview)
-        url: ai-agent-designer-permissions-profiles.md
+        url: ai-development-toolkit-permissions-profiles.md
       - text: Run an agent (preview)
-        url: ai-agent-designer-run-agent.md
+        url: ai-development-toolkit-run-agent.md
       - text: Iterate and test an agent (preview)
-        url: ai-agent-designer-iterate.md
+        url: ai-development-toolkit-iterate.md
       - text: Export and import an agent (preview)
-        url: ai-agent-designer-export-import.md
+        url: ai-development-toolkit-export-import.md
       - text: Agent frequently asked questions (preview)
-        url: ai-agent-designer-faq.md
+        url: ai-development-toolkit-faq.md
 # Card
   - title: Develop with the AI development toolkit
     linkLists:
@@ -71,21 +71,21 @@ landingContent:
       - text: The ConfigurationDialog page type (preview)
         url: ../developer/devenv-page-type-configuration-dialog.md
       - text: Work with custom agents in AL (preview)
-        url: ai-agent-designer-tasks-api.md
+        url: ai-development-toolkit-tasks-api.md
 # Card
   - title: Designing and building best practices
     linkLists:
     - linkListType: overview
       links: 
       - text: Best practices for designing and building with the AI development toolkit (preview)
-        url: ai-agent-designer-best-practices.md
+        url: ai-development-toolkit-best-practices.md
 # Card
   - title: Demos and samples 
     linkLists:
     - linkListType: sample
       links:
       - text: Create a Sales Validation Agent (preview)  
-        url: ai-agent-designer-sales-validation.md
+        url: ai-development-toolkit-sales-validation.md
       - text: Sample extension in BCTech GitHub repo  
         url: https://aka.ms/BCStartCodingWithAI    
 # Card

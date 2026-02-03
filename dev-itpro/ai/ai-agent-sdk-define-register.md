@@ -301,5 +301,5 @@ end;
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
-[Overview (preview)](ai-agent-designer-landing-page.yml)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [AI development toolkit (preview)](ai-development-toolkit-overview.md)   

@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-You can trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run an agent (preview)](ai-agent-designer-run-agent.md).
+You can trigger agent tasks programmatically from AL code. This enables integration with UI actions, business events, and custom workflows. You can also simulate email-based triggers for testing scenarios from the UI. Learn more in [Run an agent (preview)](ai-development-toolkit-run-agent.md).
 
 ## Creating agent tasks
 
@@ -123,7 +123,7 @@ end;
 
 Attachments enable agents to process documents like invoices, purchase orders, receipts, contracts, and other business documents. The agent can extract data from these files and use the information to complete tasks.
 
-Learn more in [Attachment capabilities and limitations](ai-agent-designer-attachments.md).
+Learn more in [Attachment capabilities and limitations](ai-development-toolkit-attachments.md).
 
 ## Adding messages to existing tasks
 
@@ -288,14 +288,14 @@ codeunit 50101 "Agent Events"
 }
 ```
 
-Learn more about detecting if the current session is specifically an agent session in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
+Learn more about detecting if the current session is specifically an agent session in [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md).
 
 ## Related information
 
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
-[Overview (preview)](ai-agent-designer-landing-page.yml)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [AI development toolkit (preview)](ai-development-toolkit-overview.md)   
-[Run an agent (preview)](ai-agent-designer-run-agent.md)
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)
