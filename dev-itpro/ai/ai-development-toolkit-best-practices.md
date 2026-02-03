@@ -20,13 +20,13 @@ ms.update-cycle: 180-days
 
 Following these best practices helps you create agents and get better results from your designing efforts.
 
-Learn more in [AI development toolkit overview (preview)](ai-agent-designer.md).
+Learn more in [AI development toolkit overview (preview)](ai-development-toolkit-overview.md).
 
 ## Instructions best practices
  
 ### Write clear and specific instructions
 
-Effective agent instructions are specific, actionable, and contextual. Instructions are key to guiding agent behavior. Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
+Effective agent instructions are specific, actionable, and contextual. Instructions are key to guiding agent behavior. Learn more in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md).
 
 ## Tasks best practices
 
@@ -58,7 +58,7 @@ Create tasks that have clear success criteria:
 - Consider task dependencies and sequencing
 - Plan for error handling and fallback scenarios
 
-Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
+Learn more in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md).
 
 ## Permissions best practices
 
@@ -116,7 +116,7 @@ unavailable to the external customer like the wholesale acquisition cost of the 
 - Track who has access and why
 - Plan for agent cleanup and removal
 
-Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md).
+Learn more in [Set up agent permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md).
 
 ## Testing and validation best practices
 
@@ -200,16 +200,16 @@ Learn more in [Set up agent permissions and profiles (preview)](ai-agent-designe
 
 ## Related information
 
-[Overview (preview)](ai-agent-designer-landing-page.yml)  
-[AI development toolkit (preview)](ai-agent-designer.md)   
-[Create and activate (preview)](ai-agent-designer-create.md)  
-[Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
-[Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

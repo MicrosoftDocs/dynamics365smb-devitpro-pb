@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The [!INCLUDE [prod_short](../includes/prod_short.md)] AI development toolkit is an environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [AI development toolkit overview (preview)](ai-agent-designer.md).
+The [!INCLUDE [prod_short](../includes/prod_short.md)] AI development toolkit is an environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [AI development toolkit overview (preview)](ai-development-toolkit-overview.md).
 
 ## Permissions
 
@@ -100,16 +100,16 @@ Once you have built and published a profile, you can assign it to the agent in t
 
 ## Related information
 
-[Overview (preview)](ai-agent-designer-landing-page.yml)  
-[AI development toolkit (preview)](ai-agent-designer.md)   
-[Create and activate (preview)](ai-agent-designer-create.md)  
-[Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
-[Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-designer-iterate.md)  
-[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
-[Best practices (preview)](ai-agent-designer-best-practices.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

@@ -33,7 +33,7 @@ This allows you to:
 - Extract information from email attachments
 - Send automated responses
 
-Learn more about triggering agents in [Run an agent (preview)](ai-agent-designer-run-agent.md).
+Learn more about triggering agents in [Run an agent (preview)](ai-development-toolkit-run-agent.md).
 
 ## Development
 
@@ -48,7 +48,7 @@ The toolkit provides:
 - Custom Agent management codeunits
 - Sample implementations and patterns
 
-Learn more in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
+Learn more in [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md).
 
 ## Scheduling and automation
 
@@ -81,7 +81,7 @@ codeunit 50100 "Daily Agent Task Scheduler"
 }
 ```
 
-Learn more about creating tasks programmatically in [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md).
+Learn more about creating tasks programmatically in [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md).
 
 ## Instructions and language
 
@@ -98,7 +98,7 @@ You can write agent instructions in your local language, but bear the language c
 - Use domain-specific terminology in your native language
 - Provide multilingual support for international implementations
 
-Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
+Learn more in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md).
 
 ### Is there a size limit for agent instructions?
 
@@ -128,7 +128,7 @@ If your instructions exceed 3000-4000 words, consider:
 - Moving static reference information to linked documentation
 - Consolidating redundant or overlapping guidance
 
-Learn more in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md).
+Learn more in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md).
 
 ## Choosing the right approach
 
@@ -201,16 +201,16 @@ To find overdue invoices:
 3. Review the filtered list and prioritize by amount
 ```
 
-Learn more about available keywords in [Instruction keywords for an agent (preview)](ai-agent-designer-instruction-keywords.md).
+Learn more about available keywords in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
 
 ## Related information
 
-[AI development toolkit overview (preview)](ai-agent-designer.md)  
-[Create and activate an agent (preview)](ai-agent-designer-create.md)  
-[Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
-[Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Best practices for designing an agent (preview)](ai-agent-designer-best-practices.md)  
-[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)
+[AI development toolkit overview (preview)](ai-development-toolkit-overview.md)  
+[Create and activate an agent (preview)](ai-development-toolkit-agent-create..md)  
+[Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-best-practices.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)

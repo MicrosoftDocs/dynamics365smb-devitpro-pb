@@ -23,7 +23,7 @@ When iterating and managing an agent, it's important to understand how the agent
 - Agents act based on instructions and the context available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 
-Learn more about writing effective instructions in [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md) and best practices in [Best practices for designing an agent (preview)](ai-agent-designer-best-practices.md).
+Learn more about writing effective instructions in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md) and best practices in [Best practices for designing an agent (preview)](ai-development-toolkit-best-practices.md).
 
 ## Troubleshooting tools and logs
 
@@ -66,7 +66,7 @@ It also encodes what values were available on the page at the time of the decisi
 
 When the agent makes a decision, it can select from a list of available tools to call. This list is provided in the form of descriptions. It can be used to inform how the agent's instructions should be crafted. To nudge the agent towards a specific tool, these descriptions can be used as a starting point. It also serves as a list of capabilities of what the agents can do.
 
-Learn more in [Instruction keywords for an agent (preview)](ai-agent-designer-instruction-keywords.md).
+Learn more in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
 
 #### Messages
 
@@ -129,16 +129,16 @@ This capability is useful when:
 
 ## Related information
 
-[Overview (preview)](ai-agent-designer-landing-page.yml)  
-[AI development toolkit (preview)](ai-agent-designer.md)   
-[Create and activate (preview)](ai-agent-designer-create.md)  
-[Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
-[Attachment capabilities and limitations (preview)](ai-agent-designer-attachments.md)  
-[Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
-[Run an agent (preview)](ai-agent-designer-run-agent.md)  
-[Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
-[Best practices (preview)](ai-agent-designer-best-practices.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Create and activate (preview)](ai-development-toolkit-agent-create..md)  
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

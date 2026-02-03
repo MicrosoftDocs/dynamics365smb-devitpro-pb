@@ -49,7 +49,7 @@ The `Agent` codeunit provides methods to configure various aspects of an agent i
 - Retrieve the current permission sets assigned to the agent
 - Configure which users can manage the agent or assign tasks to it through agent access controls
 
-Learn more in [Agent permissions](ai-agent-permissions.md).
+Learn more in [Agent permissions](ai-development-toolkit-permissions.md).
 
 ```al
 procedure ConfigureAgent(AgentUserSecurityID: Guid; AgentInstructions: SecretText)
@@ -213,9 +213,9 @@ Other applications can then call these public procedures to interact with your a
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
 [Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
-[Agent permissions (preview)](ai-agent-permissions.md)  
-[Overview (preview)](ai-agent-designer-landing-page.yml)  
-[AI development toolkit (preview)](ai-agent-designer.md)   
-[Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
-[Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)
+[Agent permissions (preview)](ai-development-toolkit-permissions.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)
