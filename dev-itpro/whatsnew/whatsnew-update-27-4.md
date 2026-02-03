@@ -21,11 +21,9 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 | Product area | Feature | Public preview/general availability |
 |-|-|-|
-| Copilot and agents | [Match purchase invoices to orders with Payables Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/match-purchase-invoices-orders-payables-agent) | Public preview |
-| | [Prioritize invoice draft changes using Payables Agent confidence level](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/prioritize-invoice-draft-changes-using-payables-agent-confidence-level) | Public preview |
-| | [Use Payables Agent in more countries/regions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-payables-agent-more-countries-regions) | General availability |
-| Country/region | [Enable embedded Verifactu mode in Spain](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-embedded-verifactu-mode-spain) | Public preview |
-| | [Print IRS 1099 form copies in bulk in the US](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/print-irs-1099-form-copies-bulk-usa) | General availability |
+| Copilot and agents | [Envision and design AI agents in Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/envision-prototype-custom-ai-agents-using-agent-designer) | Public preview |
+| Electronic Documents | [Use purchase draft page to preview Peppol electronic invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-purchase-draft-page-preview-peppol-electronic-invoices) | Public preview |
+| Governance and administration | [Export sandbox environment databases](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/export-sandbox-environment-databases) | Public preview |
 
 ## Localization updates
 
