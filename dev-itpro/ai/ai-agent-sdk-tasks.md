@@ -297,5 +297,5 @@ Learn more about detecting if the current session is specifically an agent sessi
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[AI development toolkit (preview)](ai-agent-designer.md)   
+[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
 [Run an agent (preview)](ai-agent-designer-run-agent.md)

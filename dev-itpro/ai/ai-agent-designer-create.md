@@ -20,7 +20,7 @@ ms.update-cycle: 180-days
 
 You can create an agent to test various AI functionalities, such as automating tasks and integrating AI into your workflows. An agent can be given specific instructions and tasks to see how it performs in different scenarios. The agent is considered as a user in [!INCLUDE [prod_short](../includes/prod_short.md)], so it can be assigned permission sets to control what data and actions it can access.
 
-Learn more in [AI development toolkit overview (preview)](ai-agent-designer.md).
+Learn more in [AI development toolkit overview (preview)](ai-development-toolkit-overview.md).
 
 ## Prerequisites
 
@@ -83,7 +83,7 @@ An agent is by default in the **Disabled** state. You must activate the agent to
 ## Related information
 
 [Overview (preview)](ai-agent-designer-landing-page.yml)  
-[AI development toolkit (preview)](ai-agent-designer.md)   
+[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
 [Instruction keywords (preview)](ai-agent-designer-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
@@ -94,4 +94,4 @@ An agent is by default in the **Disabled** state. You must activate the agent to
 [Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

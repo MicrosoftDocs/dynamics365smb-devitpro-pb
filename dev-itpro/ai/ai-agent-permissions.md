@@ -118,7 +118,7 @@ The user can only configure an agent's permissions for a specific company if the
 ## Related information
 
 [Coding agents in AL](ai-agent-sdk-overview.md)  
-[AI development toolkit overview](ai-agent-designer.md)  
+[AI development toolkit overview](ai-development-toolkit-overview.md)  
 [Integrate with the Tasks AL API](ai-agent-designer-tasks-api.md)  
 [Create and activate (preview)](ai-agent-designer-create.md)  
 [Write effective instructions (preview)](ai-agent-designer-effective-instructions.md)  
@@ -129,4 +129,4 @@ The user can only configure an agent's permissions for a specific company if the
 [Best practices for designing an agent (preview)](ai-agent-designer-faq.md)  
 [Best practices (preview)](ai-agent-designer-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-agent-designer-sales-validation.md)  
-[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)

@@ -620,7 +620,7 @@ Writing clear and concise instructions improves usability. To guide users well, 
 ## Related information
 
 [Integrate with the Tasks AL API (preview)](../ai/ai-agent-designer-tasks-api.md)  
-[Agent designer (preview)](../ai/ai-agent-designer.md)  
+[Agent designer (preview)](../ai/ai-development-toolkit-overview.md)  
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
 [PageType property](properties/devenv-pagetype-property.md)  

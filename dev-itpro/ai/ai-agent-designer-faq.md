@@ -205,7 +205,7 @@ Learn more about available keywords in [Instruction keywords for an agent (previ
 
 ## Related information
 
-[AI development toolkit overview (preview)](ai-agent-designer.md)  
+[AI development toolkit overview (preview)](ai-development-toolkit-overview.md)  
 [Create and activate an agent (preview)](ai-agent-designer-create.md)  
 [Write effective instructions for an agent (preview)](ai-agent-designer-effective-instructions.md)  
 [Integrate with the Tasks AL API (preview)](ai-agent-designer-tasks-api.md)  
@@ -213,4 +213,4 @@ Learn more about available keywords in [Instruction keywords for an agent (previ
 [Set up permissions and profiles (preview)](ai-agent-designer-permissions-profiles.md)  
 [Run an agent (preview)](ai-agent-designer-run-agent.md)  
 [Best practices for designing an agent (preview)](ai-agent-designer-best-practices.md)  
-[Transparency note: Business Central AI development toolkit (preview)](transparency-note-agent-designer.md)
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)
