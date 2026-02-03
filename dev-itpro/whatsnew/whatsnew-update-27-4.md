@@ -56,7 +56,7 @@ If you create the evaluation company in the following country/region versions, m
 
 ### Recent online service features
 
-**Cancel running environment update (general availability):** Admins can now cancel a running update on an environment from the Business Central admin center. This capability gives you greater control and flexibility during update operations, allowing you to intervene when necessary&mdash;whether due to unexpected issues, timing conflicts, or other operational concerns. Learn more in [Cancel running environment update (release plan)](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/cancel-running-environment-update) and [Cancel a running update (documentation)](../administration/tenant-admin-center-update-management.md#cancel-a-running-update).
+**Cancel running environment update (general availability):** Admins can now cancel a running update on an environment from the Business Central admin center. This capability gives you greater control and flexibility during update operations, allowing you to intervene when necessary&mdash;whether due to unexpected issues, timing conflicts, or other operational concerns. Learn more in [Export sandbox environment databases](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/export-sandbox-environment-databases) and [Exporting databases in the admin center (documentation)](../administration/tenant-admin-center-database-export.md).
 
 ### Business Central Launch Edition - 2025 release wave 2
 
