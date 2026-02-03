@@ -1,0 +1,58 @@
+---
+title: Understanding agent visibility (preview)
+description: Learn about the factors that control agent visibility in Dynamics 365 Business Central.
+author: solsen
+ms.author: solsen
+ms.reviewer: solsen
+ms.topic: how-to
+ms.collection:
+  - get-started
+  - bap-ai-copilot
+ms.date: 01/21/2026
+ms.update-cycle: 180-days
+---
+
+# Understanding agent visibility (preview)
+
+[This article is prerelease documentation and is subject to change.]
+
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
+
+There are multiple factors that control if an agent's avatar can be seen in the role center and if new instances of an agent can be created through it.
+
+## Application must be installed
+
+Agents come from AL applications. If the application which contains an agent is uninstalled, the agent will no longer appear on the role center and all existing instances will become inactive. It will only be possible to reactivate the agent when the application is reinstalled or upgraded.
+
+## Copilot capability
+
+All agents are tied to a copilot capability that controls if they are enabled. You can find these in the `Copilot & agent capabilities` page. The agent's capability must be active for agents to appear on the role center.
+
+## Permissions
+
+### Agent permissions
+
+For an agent to be visible in the role center when logged in to a specific company, at least one permission set which applies for the current company must be assigned to it.
+
+### User permissions
+
+At least one of the conditions below must apply for an agent to be visible for a user:
+- The user has the `Agent - Admin` permission set. These are suggested only for users who are meant to administrate all agents on one company or across all companies.
+- The user exists in the agent user access controls of the agent. They do not need to have the right to configure the agent to see its avatar and tasks.
+
+If the user should be able to configure agents, they also require **permission to access the setup page**.
+
+## Creating new agents icon
+
+For a user to be allowed to create agents via the role center, three conditions must apply.
+- The user has access to see the agent, as described in previous sections.
+- The user has the `Manage All Agents` permission, which is provided via `Agent - Admin` permission set.
+- The agent type allows instance creation. Learn more in [Control agent instance creation](ai-agent-sdk-define-register.md#control-agent-instance-creation). 
+
+
+## Related information
+
+[Configure agents (preview)](ai-agent-sdk-configuration.md)  
+[Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
+[Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
+[Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
