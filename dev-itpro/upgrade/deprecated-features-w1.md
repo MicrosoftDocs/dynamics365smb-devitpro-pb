@@ -15,7 +15,7 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
-## Changes in 2027 release wave 1 (version 29.0)
+## Changes in 2027 release wave 1 (version 30.0)
 
 ### AMC Fundamentals app (removal)
 
