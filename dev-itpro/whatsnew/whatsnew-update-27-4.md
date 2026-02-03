@@ -2,7 +2,7 @@
 title: Update 27.4 for Microsoft Dynamics 365 Business Central 2025 Release Wave 2
 description: Get an overview of new and changed capabilities in the 27.4 update of Business Central online, which is part of 2025 release wave 2
 ms.author: jswymer
-ms.date: 01/15/2026
+ms.date: 02/03/2026
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer
@@ -23,7 +23,6 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 | Copilot and agents | [Envision and design AI agents in Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/envision-prototype-custom-ai-agents-using-agent-designer) | Public preview |
 | Electronic Documents | [Use purchase draft page to preview Peppol electronic invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-purchase-draft-page-preview-peppol-electronic-invoices) | Public preview |
-| Governance and administration | [Export sandbox environment databases](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/export-sandbox-environment-databases) | Public preview |
 
 ## Localization updates
 
@@ -45,12 +44,6 @@ Learn more in [Major updates for Business Central online](../administration/upda
 ### On-premises customers
 
 Deployments using version 24 or earlier must upgrade to version 25 before upgrading to update 27.4. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v26.md).
-
-## Known issues
-
-### Evaluation company creation requires specific work date for some country/region versions
-
-If you create the evaluation company in the following country/region versions, make sure that you set the work date to January 1, 2026 before you create a new company: AU, CA, DE, DK, ES, FR, GB, IT, NZ, US. Learn more in [Evaluation company creation fails in some country/region versions](../upgrade/known-issues.md#evaluation-company-creation-fails-in-some-countryregion-versions).
 
 ## Good to know
 
