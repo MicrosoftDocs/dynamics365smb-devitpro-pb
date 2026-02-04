@@ -86,6 +86,7 @@ pageViews
 | where timestamp > ago(7d) // adjust as needed
 | where customDimensions.pageDataSourceType != 'Query'
 | parse kind=regex client_Browser with browserName:string ' ' browserVersion:string
+| extend deviceHardware = parse_json(tostring(customDimensions.deviceHardware))
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -107,11 +108,10 @@ pageViews
 , deviceLocale = customDimensions.deviceLocale
 , deviceScreenResolution = customDimensions.deviceScreenResolution
 // device hardware info (if available)
-, deviceHardware = parse_json(tostring(customDimensions.deviceHardware))
-, deviceMemoryGB = toint(parse_json(tostring(customDimensions.deviceHardware)).memory)
-, deviceCores = toint(parse_json(tostring(customDimensions.deviceHardware)).cores)
-, deviceDownlinkMbps = todouble(parse_json(tostring(customDimensions.deviceHardware)).downlink)
-, deviceRttMs = toint(parse_json(tostring(customDimensions.deviceHardware)).rtt)
+, deviceMemoryGB = toint(deviceHardware.memory)
+, deviceCores = toint(deviceHardware.cores)
+, deviceDownlinkMbps = todouble(deviceHardware.downlink)
+, deviceRttMs = toint(deviceHardware.rtt)
 // page details
 , designerLevel = customDimensions.designerLevel
 , expandedFastTabs = customDimensions.expandedFastTabs
@@ -128,6 +128,26 @@ pageViews
 , clientOS = client_OS
 , durationInMs = duration
 , location = client_CountryOrRegion
+```
+
+### Sample KQL code (download speed)
+
+This KQL code can help you analyze network (download) speed of users:
+
+```kql
+// Page views (normal pages)
+pageViews
+| where timestamp > ago(7d) // adjust as needed
+| where customDimensions has "deviceHardware"
+| extend deviceHardware = parse_json(tostring(customDimensions.deviceHardware))
+| project 
+// device hardware info (if available)
+  deviceMemoryGB = toint(deviceHardware.memory)
+, deviceCores = toint(deviceHardware.cores)
+, deviceDownlinkMbps = todouble(deviceHardware.downlink)
+, deviceRttMs = toint(deviceHardware.rtt)
+// change the summary statement to calculate statistics for other hardware properties
+| summarize min(deviceDownlinkMbps), avg(deviceDownlinkMbps), median=percentile(deviceDownlinkMbps, 50), 95percentile = percentile(deviceDownlinkMbps, 95), max(deviceDownlinkMbps)
 ```
 
 ## Query opened

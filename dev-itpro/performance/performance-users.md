@@ -47,11 +47,18 @@ If a choice of networks is available, consider connecting to a secure network th
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts the app. We recommend that you test network latency at [AzureSpeed.com](https://www.AzureSpeed.com) or similar services.
 
-Bandwidth requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] depend on your scenario. Most typical scenarios require a bandwidth, which is 1 megabyte per second (MBps) or more. However, we recommend more bandwidth for scenarios that have high payload requirements, such as scenarios that involve rich media or client add-ins.
+Bandwidth requirements for [!INCLUDE[prod_short](../includes/prod_short.md)] depend on your scenario. Most typical scenarios require a bandwidth, which is 1 megabyte per second (MBps) or more. However, we recommend more bandwidth for scenarios that have high payload requirements, such as scenarios that involve rich media or client add-ins.
 
 > [!IMPORTANT]  
 > Don't calculate the total bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent network usage of a given location is very difficult to calculate.
 
+### Getting statistics on users network speed from telemetry
+
+[!INCLUDE[2026rw1](../includes/2025-releasewave1-later.md)]                                                                                           
+
+If telemetry has been enabled on the environment, you can see information about hardware and network for the client devices that access [!INCLUDE[prod_short](../includes/prod_short.md)]. This information includes properties such as network bandwidth and network round-trip time.
+
+To learn more, go to [Page view telemetry](../administration/telemetry-page-view-trace.md).
 
 ## Keep powered up
 
