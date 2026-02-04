@@ -32,10 +32,10 @@ The `ConfigurationDialog` page type has some specific properties that characteri
 |Property|Description|
 |--------|-----------|
 |`PageType` | Must be set to `ConfigurationDialog` for this specific page type. Learn more in [PageType property](properties/devenv-pagetype-property.md).|
-|`SourceTableTemporary` | Must be set to `true` to use a temporary table as the data source, allowing you to collect settings before committing them to the database. Learn more in [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)|
-|`Extensible` | Must be set to `false` for this page type. Learn more in [Extensible property](properties/devenv-extensible-property.md)|
-|`InstructionalText` | Provides guidance to users about what the configuration dialog is for and what they need to do. Learn more in [InstructionalText property](properties/devenv-instructionaltext-property.md)|
-|`RefreshOnActivate` | When set to `true`, the page refreshes its data when it becomes active again after a user navigates away. Learn more in [RefreshOnActivate property](properties/devenv-refreshonactivate-property.md)|
+|`SourceTableTemporary` | Must be set to `true` to use a temporary table as the data source, allowing you to collect settings before committing them to the database. Learn more in [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md).|
+|`Extensible` | Must be set to `false` for this page type. Learn more in [Extensible property](properties/devenv-extensible-property.md).|
+|`InstructionalText` | Provides guidance to users about what the configuration dialog is for and what they need to do. Learn more in [InstructionalText property](properties/devenv-instructionaltext-property.md).|
+|`RefreshOnActivate` | When set to `true`, the page refreshes its data when it becomes active again after a user navigates away. Learn more in [RefreshOnActivate property](properties/devenv-refreshonactivate-property.md).|
 
 ## Layout areas of the ConfigurationDialog page type
 
@@ -434,7 +434,7 @@ group(MailboxGroup)
 }
 ```
 
-This creates a visual hierarchy where users can enable/disable features at different levels, providing granular control over configuration options.
+This creates a visual hierarchy where users can switch on/off features at different levels, providing granular control over configuration options.
 
 #### Assist-edit pattern for complex settings
 
