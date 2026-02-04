@@ -23,6 +23,9 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 | Copilot and agents | [Envision and design AI agents in Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/envision-prototype-custom-ai-agents-using-agent-designer) | Public preview |
 | Electronic Documents | [Use purchase draft page to preview Peppol electronic invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-purchase-draft-page-preview-peppol-electronic-invoices) | Public preview |
+| Governance and administration | [Export sandbox environment databases](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/export-sandbox-environment-databases)<sup>1</sup> | Public preview |
+
+<sup>1</sup> This feature is a service feature available independently of the update version.
 
 ## Localization updates
 
@@ -47,9 +50,9 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### New online service features
+<!--### New online service features
 
-**Export sandbox environment databases (public preview):** You can now export databases from sandbox environments directly in the Business Central admin center, making it easier to analyze data, create backups, or migrate databases to other environments. Learn more in [Export sandbox environment databases](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/export-sandbox-environment-databases) and [Exporting databases in the admin center (documentation)](../administration/tenant-admin-center-database-export.md).
+**Export sandbox environment databases (public preview):** You can now export databases from sandbox environments directly in the Business Central admin center, making it easier to analyze data, create backups, or migrate databases to other environments. Learn more in [Export sandbox environment databases](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/export-sandbox-environment-databases) and [Exporting databases in the admin center (documentation)](../administration/tenant-admin-center-database-export.md).-->
 
 ### Business Central Launch Edition - 2025 release wave 2
 
