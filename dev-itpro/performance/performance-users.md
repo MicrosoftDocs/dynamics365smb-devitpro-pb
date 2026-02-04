@@ -1,7 +1,7 @@
 ---
 title: Performance Tips for Business Users
 description: Various tips and tricks to improve speed and agility of working with Business Central.
-ms.date: 02/09/2023
+ms.date: 02/07/2026
 ms.reviewer: jswymer
 ms.topic: article
 author: mikebcMSFT
@@ -56,7 +56,7 @@ Bandwidth requirements for [!INCLUDE[prod_short](../includes/prod_short.md)] dep
 
 [!INCLUDE[2026rw1](../includes/2025-releasewave1-later.md)]                                                                                           
 
-If telemetry has been enabled on the environment, you can see information about hardware and network for the client devices that access [!INCLUDE[prod_short](../includes/prod_short.md)]. This information includes properties such as network bandwidth and network round-trip time.
+If telemetry is enabled on the environment, you can see information about hardware and network for the client devices that access [!INCLUDE[prod_short](../includes/prod_short.md)]. This information includes properties such as network bandwidth and network round-trip time.
 
 To learn more, go to [Page view telemetry](../administration/telemetry-page-view-trace.md).
 
