@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/22/2022
+ms.date: 02/04/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
