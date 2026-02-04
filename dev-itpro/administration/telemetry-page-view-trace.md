@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/22/2022
+ms.date: 02/04/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -60,7 +60,7 @@ All fields are documented here: [Application Insights PageViews Schema](/azure/a
 | componentVersion       | Specifies the version number of the component that emits telemetry (see the component dimension.)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | deprecatedKeys         | A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | designerLevel          | Specifies the design level in which the page was opened. This dimension provides additional insight when the `hostType` dimension is **Designer**. <ul><li>**None**<br /> The page wasn't opened in a design mode. This value is shown when the `hostType` dimension is a value other than **Designer**</li><li>**Personalization**<br /> The page opened in the personalizing mode for tailoring the page in the user's workspace only. See [Personalize Your Workspace](/dynamics365/business-central/ui-personalization-user). </li><li>**Configuration** <br /> The page opened in customizing mode for tailoring the page for all users of a specific profile. See [Customizing Pages for Profiles](/dynamics365/business-central/ui-personalization-manage). </li><li>**Development** <br /> The page opened in design mode for developing and modifying the page from the client for all users. See [Use Designer](../developer/devenv-inclient-designer.md).</li><li>**Inspector**<br /> The page opened in page inspection mode for viewing page information like source table, source extension, and filters. See [Inspecting Pages](/dynamics365/business-central/across-inspect-page).</li><li>**All** - the page was opened in the personalization, configuration, development, and inspector modes. |
-| deviceHardware         | Specifies hardware and network information about the client device. This dimension is only available when the browser supports the Network Information API. The value is a JSON object with the following properties: <ul><li>**memory** - Device memory in gigabytes (for example, 8 for 8 GB)</li><li>**cores** - Number of CPU cores available</li><li>**downlink** - Network bandwidth estimate in megabits per second</li><li>**rtt** - Network round-trip time in milliseconds</li></ul>Example value: `{"memory":8,"cores":4,"downlink":10.5,"rtt":50}`<br><br>Use `parse_json()` in KQL queries to extract individual properties.<br><br>**Available from:** version 26.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| deviceHardware         | Specifies hardware and network information about the client device. This dimension is only available when the browser supports the Network Information API. The value is a JSON object with the following properties: <ul><li>**memory** - Device memory in gigabytes (for example, 8 for 8 GB)</li><li>**cores** - Number of CPU cores available</li><li>**downlink** - Network bandwidth estimate in megabits per second</li><li>**rtt** - Network round-trip time in milliseconds</li></ul>Example value: `{"memory":8,"cores":4,"downlink":10.5,"rtt":50}`<br><br>Use `parse_json()` in KQL queries to extract individual properties.<br><br>**Available from:** version 26.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | deviceLocale           | Specifies the preferred language that's configured for the device that opened the page. For example, this dimension could show the language setting of a browser used to view the page. The value is a language code, such as **en-US** or **da-DK**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | deviceScreenResolution | [!INCLUDE[deviceScreenResolution](../includes/include-telemetry-dimension-device-screen-resolution.md)]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | environmentName        | [!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -86,6 +86,7 @@ pageViews
 | where timestamp > ago(7d) // adjust as needed
 | where customDimensions.pageDataSourceType != 'Query'
 | parse kind=regex client_Browser with browserName:string ' ' browserVersion:string
+| extend deviceHardware = parse_json(tostring(customDimensions.deviceHardware))
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -107,11 +108,10 @@ pageViews
 , deviceLocale = customDimensions.deviceLocale
 , deviceScreenResolution = customDimensions.deviceScreenResolution
 // device hardware info (if available)
-, deviceHardware = parse_json(tostring(customDimensions.deviceHardware))
-, deviceMemoryGB = toint(parse_json(tostring(customDimensions.deviceHardware)).memory)
-, deviceCores = toint(parse_json(tostring(customDimensions.deviceHardware)).cores)
-, deviceDownlinkMbps = todouble(parse_json(tostring(customDimensions.deviceHardware)).downlink)
-, deviceRttMs = toint(parse_json(tostring(customDimensions.deviceHardware)).rtt)
+, deviceMemoryGB = toint(deviceHardware.memory)
+, deviceCores = toint(deviceHardware.cores)
+, deviceDownlinkMbps = todouble(deviceHardware.downlink)
+, deviceRttMs = toint(deviceHardware.rtt)
 // page details
 , designerLevel = customDimensions.designerLevel
 , expandedFastTabs = customDimensions.expandedFastTabs
@@ -128,6 +128,26 @@ pageViews
 , clientOS = client_OS
 , durationInMs = duration
 , location = client_CountryOrRegion
+```
+
+### Sample KQL code (download speed)
+
+This KQL code can help you analyze network (download) speed of users:
+
+```kql
+// Analyze network (download) speed (adjust to other hardware properties)
+pageViews
+| where timestamp > ago(7d) // adjust as needed
+| where customDimensions has "deviceHardware"
+| extend deviceHardware = parse_json(tostring(customDimensions.deviceHardware))
+| project 
+// device hardware info (if available)
+  deviceMemoryGB = toint(deviceHardware.memory)
+, deviceCores = toint(deviceHardware.cores)
+, deviceDownlinkMbps = todouble(deviceHardware.downlink)
+, deviceRttMs = toint(deviceHardware.rtt)
+// change the summary statement to calculate statistics for other hardware properties
+| summarize min(deviceDownlinkMbps), avg(deviceDownlinkMbps), median=percentile(deviceDownlinkMbps, 50), 95percentile = percentile(deviceDownlinkMbps, 95), max(deviceDownlinkMbps)
 ```
 
 ## Query opened
