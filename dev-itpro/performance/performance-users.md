@@ -1,7 +1,7 @@
 ---
 title: Performance Tips for Business Users
 description: Various tips and tricks to improve speed and agility of working with Business Central.
-ms.date: 02/07/2026
+ms.date: 02/04/2026
 ms.reviewer: jswymer
 ms.topic: article
 author: mikebcMSFT
