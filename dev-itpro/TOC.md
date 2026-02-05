@@ -1528,6 +1528,13 @@
 ### [Best practices](ai/ai-development-toolkit-best-practices.md)
 ### [FAQ](ai/ai-development-toolkit-faq.md)
 ### [Create a Sales Validation Agent](ai/ai-development-toolkit-sales-validation.md)
+### Coding agents in AL
+#### [Coding agents in AL overview](developer/ai-agent-sdk-overview.md)
+#### [Define and register an agent programmatically](developer/ai-agent-sdk-define-register.md)
+#### [Agent setup and configuration](developer/ai-agent-sdk-setup-page.md)
+#### [Managing agent tasks programmatically](developer/ai-agent-sdk-tasks.md)
+#### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
+#### [Work with agents in AL](developer/ai-development-toolkit-tasks-api.md)
 ### [Transparency note: Business Central AI development toolkit](ai/transparency-note-ai-development-toolkit.md)
 <!-- end integration with AI-->
 
