@@ -1,6 +1,6 @@
 ---
-title: Configure agents (preview)
-description: Learn how to configure agent instances and manage agent instructions in Dynamics 365 Business Central.
+title: Configure agents programmatically (preview)
+description: Learn how to configure agent instances and manage agent instructions programmatically in Dynamics 365 Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,15 +12,15 @@ ms.date: 01/21/2026
 ms.update-cycle: 180-days
 ---
 
-# Configure agents (preview)
+# Configure agents programmatically (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-This article explains how to configure agent instances and manage agent instructions. 
+This article explains how to configure agent instances and manage agent instructions programmatically.
 
-There can be one or multiple instances of an agent in [!INCLUDE [prod_short](../includes/prod_short.md)]. Each agent instance can have its own instructions, permissions, user settings, and agent access controls defined separately. Each agent instance is uniquely identified by its **User Security ID** which is passed as a parameter to all the methods of the API.
+There can be one or multiple instances of an agent in [!INCLUDE [prod_short](../includes/prod_short.md)]. Each agent instance can have its own instructions, permissions, user settings, and agent access controls defined separately. Each agent instance is uniquely identified by its **User Security ID**, which is passed as a parameter to all the methods of the API.
 
 ## Configuring an agent instance
 
@@ -122,7 +122,7 @@ end;
 
 ## Creating agent instances programmatically
 
-While the typical way to create agent instances is through a [setup page](ai-agent-sdk-setup-page.md), you can also create them programmatically using the `Agent` codeunit. This approach is intended for automation scenarios where agent instances need to be created as part of a business process, eg. a custom wizard.
+While the typical way to create agent instances is through a [setup page](ai-agent-sdk-setup-page.md), you can also create them programmatically using the `Agent` codeunit. This approach is intended for automation scenarios where agent instances need to be created as part of a business process, for example, a custom wizard.
 
 ```al
 procedure CreateMyAgent(AgentInstructions: SecretText)
@@ -150,7 +150,7 @@ end;
 ```
 
 > [!IMPORTANT]
-> You cannot create agent instances from install codeunits, upgrade codeunits, or background sessions. Agent creation requires an interactive user session.
+> You can't create agent instances from install codeunits, upgrade codeunits, or background sessions. Agent creation requires an interactive user session.
 
 ## Cross-agent operations
 
@@ -211,8 +211,8 @@ Other applications can then call these public procedures to interact with your a
 
 [Create agent setup pages (preview)](ai-agent-sdk-setup-page.md)  
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
-[Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
-[Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
+[Define and register an agent programmatically  (preview)](ai-agent-sdk-define-register.md)  
+[Managing agent tasks programmatically  (preview)](ai-agent-sdk-tasks.md)  
 [Agent permissions (preview)](ai-development-toolkit-permissions.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [AI development toolkit (preview)](ai-development-toolkit-overview.md)   

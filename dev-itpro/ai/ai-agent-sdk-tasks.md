@@ -293,7 +293,7 @@ Learn more about detecting if the current session is specifically an agent sessi
 ## Related information
 
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
-[Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
+[Define and register an agent programmatically  (preview)](ai-agent-sdk-define-register.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  

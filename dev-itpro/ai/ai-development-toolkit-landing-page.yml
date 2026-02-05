@@ -64,11 +64,11 @@ landingContent:
       links:
       - text: Coding agents in AL
         url: ai-agent-sdk-overview.md
-      - text: Define and register an agent
+      - text: Define and register an agent programmatically 
         url: ai-agent-sdk-define-register.md
       - text: Agent setup and configuration
         url: ai-agent-sdk-setup-page.md
-      - text: Managing agent tasks
+      - text: Managing agent tasks programmatically 
         url: ai-agent-sdk-tasks.md
       - text: The ConfigurationDialog page type
         url: ../developer/devenv-page-type-configuration-dialog.md

@@ -37,7 +37,7 @@ To define an agent in AL, you need to extend the enum that defines the available
 | `IAgentMetadata` | Provides runtime metadata for individual agent instances, such as initials, setup pages, summary pages, and annotations. |
 | `IAgentTaskExecution` | Controls how agents process and execute tasks, including message analysis, user intervention suggestions, and page context. |
 
-Learn more in [Define and register an agent (preview)](ai-agent-sdk-define-register.md).
+Learn more in [Define and register an agent programmatically  (preview)](ai-agent-sdk-define-register.md).
 
 ## Setup and configuration
 
@@ -50,7 +50,7 @@ Once you've defined your agent type, you need to create setup pages and configur
 
 Learn more in [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md).
 
-## Managing agent tasks
+## Managing agent tasks programmatically 
 
 The API for building agents provides codeunits to trigger and manage agent tasks programmatically:
 
@@ -60,13 +60,13 @@ The API for building agents provides codeunits to trigger and manage agent tasks
 - **Agent sessions**: Detect agent sessions and bind events for task duration
 - **Cross-agent operations**: Create public APIs to allow other apps to interact with your agent
 
-Learn more in [Managing agent tasks (preview)](ai-agent-sdk-tasks.md).
+Learn more in [Managing agent tasks programmatically  (preview)](ai-agent-sdk-tasks.md).
 
 ## Related information
 
-[Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
+[Define and register an agent programmatically  (preview)](ai-agent-sdk-define-register.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
-[Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
+[Managing agent tasks programmatically  (preview)](ai-agent-sdk-tasks.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [AI development toolkit (preview)](ai-development-toolkit-overview.md)   
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  

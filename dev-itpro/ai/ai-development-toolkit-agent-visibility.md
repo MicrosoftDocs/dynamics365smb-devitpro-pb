@@ -53,7 +53,7 @@ For a user to be allowed to create agents via the role center, three conditions 
 
 ## Related information
 
-[Configure agents (preview)](ai-agent-sdk-configuration.md)  
+[Configure agents programmatically  (preview)](ai-agent-sdk-configuration.md)  
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
-[Define and register an agent (preview)](ai-agent-sdk-define-register.md)  
-[Managing agent tasks (preview)](ai-agent-sdk-tasks.md)  
+[Define and register an agent programmatically  (preview)](ai-agent-sdk-define-register.md)  
+[Managing agent tasks programmatically  (preview)](ai-agent-sdk-tasks.md)  
