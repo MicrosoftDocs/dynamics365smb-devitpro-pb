@@ -75,7 +75,7 @@ landingContent:
       - text: Work with agents in AL
         url: ai-development-toolkit-tasks-api.md
 # Card
-  - title: Designing and building best practices
+  - title: Best practices
     linkLists:
     - linkListType: overview
       links: 
@@ -93,7 +93,7 @@ landingContent:
 # Card
   - title: Resources 
     linkLists:
-    - linkListType: overview
+    - linkListType: reference
       links:
       - text: Microsoft responsible AI 
         url: https://aka.ms/RAI
