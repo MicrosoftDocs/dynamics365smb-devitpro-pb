@@ -1,5 +1,5 @@
 ---
-title: Managing agent tasks (preview)
+title: Managing agent tasks programmatically (preview)
 description: Learn how to create and manage agent tasks, work with agent sessions, and handle cross-agent operations in Dynamics 365 Business Central.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 01/21/2026
 ms.update-cycle: 180-days
 ---
 
-# Managing agent tasks (preview)
+# Managing agent tasks programmatically (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -293,7 +293,7 @@ Learn more about detecting if the current session is specifically an agent sessi
 ## Related information
 
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
-[Define and register an agent programmatically  (preview)](ai-agent-sdk-define-register.md)  
+[Define and register an agent programmatically (preview)](ai-agent-sdk-define-register.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  

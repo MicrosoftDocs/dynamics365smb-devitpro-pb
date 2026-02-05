@@ -64,9 +64,9 @@ Learn more in [Managing agent tasks programmatically  (preview)](ai-agent-sdk-ta
 
 ## Related information
 
-[Define and register an agent programmatically  (preview)](ai-agent-sdk-define-register.md)  
+[Define and register an agent programmatically (preview)](ai-agent-sdk-define-register.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
-[Managing agent tasks programmatically  (preview)](ai-agent-sdk-tasks.md)  
+[Managing agent tasks programmatically (preview)](ai-agent-sdk-tasks.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [AI development toolkit (preview)](ai-development-toolkit-overview.md)   
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
