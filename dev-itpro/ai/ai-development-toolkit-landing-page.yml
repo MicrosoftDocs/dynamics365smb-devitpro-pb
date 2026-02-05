@@ -9,14 +9,14 @@
 # Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
 
 title: Working with agents in Business Central (preview)
-summary: Explore tools for designing and testing custom AI agents in Business Central.
+summary: Explore tools for designing and testing AI agents in Business Central.
 
 metadata:
   title: Working with agents in Business Central (preview)
-  description: Explore tools for designing and testing custom AI agents in Business Central.
+  description: Explore tools for designing and testing AI agents in Business Central.
   author: SusanneWindfeldPedersen
   ms.author: solsen
-  ms.date: 01/13/2026
+  ms.date: 02/05/2026
   ms.topic: landing-page # DON'T CHANGE
   ms.service: dynamics-365-business-central
   ms.custom: bap-template #Required; don't change.
