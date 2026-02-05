@@ -1,6 +1,6 @@
 ---
 title: Best practices for designing an agent (preview)
-description: Explore how to design, test, and refine custom agents using the AI development toolkit. Follow these best practices to optimize your prototypes.
+description: Explore how to design, test, and refine agents using the AI development toolkit. Follow these best practices to optimize your prototypes.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen

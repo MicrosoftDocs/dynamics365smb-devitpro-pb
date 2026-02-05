@@ -72,7 +72,7 @@ landingContent:
         url: ai-agent-sdk-tasks.md
       - text: The ConfigurationDialog page type
         url: ../developer/devenv-page-type-configuration-dialog.md
-      - text: Work with custom agents in AL
+      - text: Work with agents in AL
         url: ai-development-toolkit-tasks-api.md
 # Card
   - title: Designing and building best practices
