@@ -38,6 +38,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Watch the 'What's new' sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
+- Stay up to date with AI Business Solutions CSP Office Hours: [aka.ms/CSPpartnerhours](https://aka.ms/CSPpartnerhours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 
