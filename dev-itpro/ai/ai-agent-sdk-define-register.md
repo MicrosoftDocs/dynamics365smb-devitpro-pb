@@ -107,7 +107,7 @@ end;
 
 ### Control agent instance creation
 
-The `ShowCanCreateAgent` method controls whether users can create new agent instances through the UI. This method allows for fine-grained control of agent instance creation. Note that returning `false` doesn't prevent programmatic creation of agents.
+The `ShowCanCreateAgent` method controls whether users can create new agent instances through the UI. This method allows for fine-grained control of agent instance creation. Returning `false` doesn't prevent programmatic creation of agents.
 
 Common patterns for this method:
 
@@ -169,7 +169,7 @@ end;
 
 ### Add agent-level annotations
 
-The `GetAgentAnnotations` method returns annotations (errors or warnings) to display for the agent at the agent level. These annotations are not persisted and are regularly requested by the server. Use this method to validate preconditions for agent operation, such as licensing requirements or the validity of its configuration.
+The `GetAgentAnnotations` method returns annotations (errors or warnings) to display for the agent at the agent level. These annotations aren't persisted and are regularly requested by the server. Use this method to validate preconditions for agent operation, such as licensing requirements or the validity of its configuration.
 
 ```al
 procedure GetAgentAnnotations(AgentUserId: Guid; var Annotations: Record "Agent Annotation")

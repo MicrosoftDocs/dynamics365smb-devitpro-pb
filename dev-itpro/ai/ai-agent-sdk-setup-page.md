@@ -166,7 +166,7 @@ table 50100 "My Agent Setup"
 
 Learn more about configuration dialogs in [The ConfigurationDialog page type (preview)](../developer/devenv-page-type-configuration-dialog.md).
 
-## Enabling revertable changes
+## Enabling reversible changes
 
 The setup page is designed to allow users to make changes and preview them without committing to the database. This provides a safe editing experience where users can cancel at any time without persisting unwanted modifications.
 
@@ -179,17 +179,17 @@ The setup page is designed to allow users to make changes and preview them witho
    - Gets set to `true` when fields are modified
    - Signals that the user has made edits that need to be confirmed or discarded
 
-3. **Explicit commit on Update**: When the user clicks **Update**:
+3. **Explicit commit on Update**: When the user selects **Update**:
    - The `OnQueryClosePage` trigger saves the changes to the actual database
    - Agent configuration is persisted through the `Agent Setup` codeunit
    - Custom properties are written to your setup table
 
-4. **Automatic revert on Cancel**: When the user clicks **Cancel**:
+4. **Automatic revert on Cancel**: When the user selects **Cancel**:
    - All changes are automatically discarded
    - No database writes occur
    - The user's session ends without any modifications being saved
 
-Custom setup pages should be designed with this pattern in mind. It is important to ensure that errors in the setup page do not commit partial data as that would circumvent the users' expectations.
+Custom setup pages should be designed with this pattern in mind. It's important to ensure that errors in the setup page don't commit partial data as that would circumvent the users' expectations.
 
 ## Modifying Agent Setup Part properties
 
@@ -239,7 +239,7 @@ You can update other properties in the `Agent Setup Buffer` such as:
 
 The setup page shown above calls helper procedures to manage initialization and saving. These procedures work with the `Agent Setup` codeunit from the system to manage agent configuration.
 
-These procedures should ideally be implemented in a separate codeunit, but they are shown inline here for ease of understanding.
+These procedures should ideally be implemented in a separate codeunit, but they're shown inline here for ease of understanding.
 
 ### Initializing the setup record
 
@@ -276,7 +276,7 @@ end;
 
 ### Saving the setup record
 
-Save the agent configuration when the user clicks Update. Use the `Agent Setup` codeunit to persist the agent settings and set instructions for new agents.
+Save the agent configuration when the user selects Update. Use the `Agent Setup` codeunit to persist the agent settings and set instructions for new agents.
 
 ```al
 local procedure SaveSetupRecord(var TempMyAgentSetup: Record "My Agent Setup" temporary; var AgentSetupBuffer: Record "Agent Setup Buffer")

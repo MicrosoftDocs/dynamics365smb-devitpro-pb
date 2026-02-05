@@ -25,7 +25,7 @@ In AL, you find interfaces and codeunits designed for building custom AI agents 
 
 ## Quick-start
 
-To quickly get started with a template agent that you can customize to your needs; press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and start typing `AL: New Project` command in Visual Studio Code to choose the `Agent` template. This provides you with a skeleton of an implementation, which covers most of the topics discussed in this documentation.
+To quickly get started with a template agent that, you can customize to your needs; press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and start typing `AL: New Project` command in Visual Studio Code to choose the `Agent` template. This provides you with a skeleton of an implementation, which covers most of the topics discussed in this documentation.
 
 ## Core interfaces
 
