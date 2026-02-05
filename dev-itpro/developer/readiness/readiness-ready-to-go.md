@@ -115,8 +115,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Sales Order Agent is generally available in all countries/regions. 
-- Payable Agent is generally available in the following countries/regions (January 2026): United States, Canada, United Kingdom, Denmark, France, Italy, Germany, Spain, Australia, and New Zealand.
-
+- Payable Agent is generally available in the following countries/regions (February 2026): United States, Canada, Belgium, Denmark, France, Germany, Italy, Netherlands, Norway, Spain, Sweden, United Kingdom, Australia, and New Zealand.
 
 ### Copilot in Business Central 101
 
