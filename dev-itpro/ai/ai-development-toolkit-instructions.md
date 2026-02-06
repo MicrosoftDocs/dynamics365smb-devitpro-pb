@@ -1,5 +1,5 @@
 ---
-title: Write effective Instructions for an agent (preview)
+title: Write effective instructions for an agent (preview)
 description: Learn how to author instructions for an agent in Business Central. Optimize agent behavior with structured guidelines and clear steps.
 author: solsen
 ms.author: solsen
@@ -8,19 +8,19 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 12/05/2025
+ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Write effective instructions for a playground agent (preview)
+# Write effective instructions for an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate a playground agent (preview)](ai-agent-playground-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage a playground agent (preview)](ai-agent-playground-iterate.md).
+To get an agent up and running effectively, you need to configure its instructions, tasks, and permissions appropriately. To create a new agent, learn more in [Create and activate an agent (preview)](ai-development-toolkit-agent-create.md). Fine tune and improve your agent's behavior by following guidance in [Iterate and manage an agent (preview)](ai-development-toolkit-iterate.md).
 
-Learn more about how to *trigger* your agent once you have written effective instructions in [Run a playground agent (preview)](ai-agent-playground-run-agent.md).
+Learn more about how to *trigger* your agent once you have written effective instructions in [Run an agent (preview)](ai-development-toolkit-run-agent.md).
 
 ## Getting started with agent instructions
 
@@ -56,9 +56,12 @@ Once you have your initial draft, you can use AI tools to refine it according to
 
 Effective agent instructions follow a structured approach with three key components:
 
-- **Responsibilities** Define what the agent is accountable for. For example, handling customer reminders, processing credit memos, or managing sales quotes.
-- **Guidelines** Set rules that apply across all tasks. For example, always request user review before posting documents or sending external communications.
-- **Instructions** Provide step-by-step, ordered lists for each specific task, including substeps for clarity.
+- **Responsibilities**  
+Define what the agent is accountable for. For example, handling customer reminders, processing credit memos, or managing sales quotes.
+- **Guidelines**  
+Set rules that apply across all tasks. For example, always request user review before posting documents or sending external communications.
+- **Instructions**  
+Provide step-by-step, ordered lists for each specific task, including substeps for clarity.
 
 This framework ensures that agents act consistently, handle exceptions gracefully, and involve users when necessary.
 
@@ -115,7 +118,7 @@ By referencing these community patterns when refining your instructions, you ens
 
 ### Key principles for agent instructions
 
-At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for playground agents (preview)](ai-agent-playground-instruction-keywords.md).
+At the core of defining agents is expressing goals and instructions in natural language. Writing instructions for agents is similar to crafting prompts for large language models (LLMs), so you can apply general prompt-writing guidelines to improve instruction quality. Learn about specific keywords in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
 
 #### Start simple, iterate based on results
 
@@ -153,14 +156,14 @@ As you refine your agent instructions, consider incorporating these advanced pat
 
 The agent should request user intervention when it can't proceed due to missing data, ambiguous situations, or validation errors. Examples could be:
 
-- incomplete customer information  
-- items aren't found in inventory  
-- unexpected error messages
+- Incomplete customer information  
+- Items aren't found in inventory  
+- Unexpected error messages
 
 ##### User review requirements
 
 - Agents should always request user review before proceeding with critical steps or sending outgoing messages
-- All outgoing communications require user review by default
+- All outgoing communications require a user review by default
 - After completing significant actions, request user review before moving forward
 
 ##### Response handling
@@ -175,13 +178,13 @@ Agents retain a history of their actions and searches per task, but don't store 
 An example of giving such instructions could be: "**Memorize** the external document reference from the newly created sales quote for use in follow-up communications."
 Consider providing an example of what the memorized information should look like to improve accuracy, for example "external document reference: ABCD1234 Document Number: 1234"
 
-Learn more about using specific instruction keywords in [Instruction keywords for an agent (preview)](ai-agent-playground-instruction-keywords.md).
+Learn more about using specific instruction keywords in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
 
 #### Error handling and validation
 
-- **Validate inputs**: Ensure all required fields are filled before proceeding with critical actions
+- **Validate inputs**: Ensure all required fields are filled in before proceeding with critical actions
 - **Use emphasis**: Highlight critical validation points with bold text or UPPERCASE
-- Examples could be:  
+- For example:  
   "**DO NOT** proceed until the requested date is entered"  
   "**ALWAYS** confirm customer details are complete before creating quotes"
 
@@ -200,11 +203,11 @@ Test your instructions thoroughly to ensure they lead to the desired behavior, a
 
 ### Instruction management best practices
 
-- **Test for accuracy regularly** Instruction effectiveness can change over time as systems and processes evolve
-- **Use AI optimization** Leverage AI tools like Copilot to help refine and update instructions
-- **Dynamic updates** Instructions can be updated through setup pages without requiring agent reconfiguration
-- **Version control** The UI maintains a history of instruction changes, allowing you to revert to earlier versions if needed. This is useful when testing different instruction approaches or when a new version doesn't perform as expected
-- **Less is more** Shift from verbose to concise instructions—simpler instructions often perform better than complex ones
+- **Test for accuracy regularly** Instruction effectiveness can change over time as systems and processes evolve.
+- **Use AI optimization** Leverage AI tools like Copilot to help refine and update instructions.
+- **Dynamic updates** Instructions can be updated through setup pages without requiring agent reconfiguration.
+- **Version control** The UI maintains a history of instruction changes, allowing you to revert to earlier versions if needed. This is useful when testing different instruction approaches or when a new version doesn't perform as expected.
+- **Less is more** Shift from verbose to concise instructions. Simpler instructions often perform better than complex ones.
 
 ### Advanced capabilities
 
@@ -229,11 +232,11 @@ Start with enough detail to convey the business logic and key decision points. Y
 
 ### Can I update instructions after the agent is deployed?
 
-Yes, agent instructions can be updated dynamically. Remember that agents must be deactivated to modify certain settings.
+Yes, agent instructions can be updated dynamically. 
 
 ### How do I know if my instructions are working?
 
-Monitor the agent's behavior through the timeline view in the playground. Look for:
+Monitor the agent's behavior through the timeline view. Look for:
 
 - Successful task completions
 - Appropriate use of tools and navigation
@@ -242,7 +245,7 @@ Monitor the agent's behavior through the timeline view in the playground. Look f
 
 ### Where can I find example instructions and patterns?
 
-The [!INCLUDE [prod_short](../includes/prod_short.md)] community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance. <!--link-->
+The [!INCLUDE [prod_short](../includes/prod_short.md)] community maintains repositories with agent instruction patterns, navigation examples, and tool usage guidance. These resources provide proven approaches that you can reference when refining your instructions with AI assistance. Learn more in [alguidelines](https://github.com/microsoft/alguidelines/blob/d2cdf97e0c4ba8fa3a618169339d2d6655d63493/content/docs/agentic-coding/GettingStarted/effective-prompting.md)
 
 ### Should I write different instructions for different environments?
 
@@ -250,14 +253,16 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 
 ## Related information
 
-[Overview (preview)](ai-agent-playground-landing-page.yml)  
-[Agent playground (preview)](ai-agent-playground.md)  
-[Create and activate (preview)](ai-agent-playground-create.md)  
-[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
-[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
-[Best practices (preview)](ai-agent-playground-best-practices.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)

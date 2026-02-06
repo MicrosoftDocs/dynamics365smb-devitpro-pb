@@ -1,6 +1,6 @@
 ---
-title: Best practices for prototyping with an Agent playground (preview)
-description: Explore how to design, test, and refine custom agents using the agent playground. Follow these best practices to optimize your prototypes.
+title: Best practices for designing an agent (preview)
+description: Explore how to design, test, and refine agents using the AI development toolkit. Follow these best practices to optimize your prototypes.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -8,25 +8,25 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 12/05/2025
+ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# Best practices for prototyping with the Agent playground (preview)
+# Best practices for designing an agent (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-Following these best practices helps you create agents and get better results from your prototyping efforts.
+Following these best practices helps you create agents and get better results from your designing efforts.
 
-Learn more about the Agent playground in [Agent playground overview (preview)](ai-agent-playground.md).
+Learn more in [AI development toolkit overview (preview)](ai-development-toolkit-overview.md).
 
 ## Instructions best practices
-
+ 
 ### Write clear and specific instructions
 
-Effective agent instructions are specific, actionable, and contextual. Instructions are key to guiding agent behavior. Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
+Effective agent instructions are specific, actionable, and contextual. Instructions are key to guiding agent behavior. Learn more in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md).
 
 ## Tasks best practices
 
@@ -58,7 +58,7 @@ Create tasks that have clear success criteria:
 - Consider task dependencies and sequencing
 - Plan for error handling and fallback scenarios
 
-Learn more in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md).
+Learn more in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md).
 
 ## Permissions best practices
 
@@ -80,7 +80,7 @@ Create agent-specific profiles that:
 
 ### Test permission boundaries
 
-- Verify the agent can't access restricted data
+- Verify that the agent can't access restricted data
 - Confirm that permission changes work as expected
 
 ## Security and privacy best practices
@@ -116,7 +116,7 @@ unavailable to the external customer like the wholesale acquisition cost of the 
 - Track who has access and why
 - Plan for agent cleanup and removal
 
-Learn more in [Set up playground agent permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md).
+Learn more in [Set up agent permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md).
 
 ## Testing and validation best practices
 
@@ -145,41 +145,13 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 
 - Try to ask your agent about pages/fields it shouldn't have access to
 - Ask your agent to infer information about the business that it shouldn't have access to
-- Request your agent to perform actions that should be invalid for your scenario, for example, to set the price of a product to zero and then sell it 
+- Request your agent to perform actions that shouldn't be valid for your scenario, for example, to set the price of a product to zero and then sell it 
 
 ### Performance considerations
 
 - Monitor the number of steps and the total credit cost of your test tasks
 - Test on realistic data volumes to ensure that your agent can handle the complexity of the task
 - Optimize for the minimum number of steps as longer workflows can reduce the accuracy of agents
-
-<!-- Introduce when SDK is introduced
-## Graduation to production best practices
-
-### Knowledge transfer preparation
-
-- Document all working instructions and configurations
-- Identify which features need AL implementation
-- Plan the development roadmap for production features
-- Capture lessons learned and design decisions
-
-### AL development considerations
-
-- Plan how to implement agent capabilities in AL code
-- Consider integration with existing [!INCLUDE [prod_short](../includes/prod_short.md)] features
-- Design for scalability and performance requirements
-- Plan testing strategies for production code
-
-<!-- - Consider the upcoming agent development SDK for packaging agents as deployable apps -->
-<!--
-### Prototype cleanup
-
-- Deactivate and remove playground agents after graduation
-- Clean up test data and configurations
-- Document the graduation process for future reference
-- Archive prototype documentation for reference
-
--->
 
 ## Common pitfalls to avoid
 
@@ -197,10 +169,10 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 
 - **Unnecessary agent permissions** can allow agents to modify data they shouldn't
 - **The intersection of the assigning user's permissions and the agent permissions** should be enough to perform all of its functions
-- **Agents cannot configure users or other agents by design**
-- **Agents cannot access sensitive pages like user cards or permission set assignment**
+- **Agents can't configure users or other agents by design**
+- **Agents can't access sensitive pages like user cards or permission set assignment**
 
-### UI design
+### UI design problems
 
 - **Limit the UI** either via profiles or pages designed specifically for your agent to help it achieve its task 
 
@@ -228,14 +200,16 @@ Learn more in [Set up playground agent permissions and profiles (preview)](ai-ag
 
 ## Related information
 
-[Overview (preview)](ai-agent-playground-landing-page.yml)  
-[Agent playground (preview)](ai-agent-playground.md)  
-[Create and activate (preview)](ai-agent-playground-create.md)  
-[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
-[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

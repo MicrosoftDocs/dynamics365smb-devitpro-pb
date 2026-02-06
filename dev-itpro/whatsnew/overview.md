@@ -29,6 +29,7 @@ Minor updates are released monthly and can include new release wave features, re
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|27.4|Application Build 27.4 Platform Build 27.0|February 2026|[Update 27.4 for Business Central 2025 release wave 2](whatsnew-update-27-4.md)|
 |27.3|Application Build 27.3 Platform Build 27.0|January 2026|[Update 27.3 for Business Central 2025 release wave 2](whatsnew-update-27-3.md)|
 |27.2|Application Build 27.2 Platform Build 27.0|December 2025|[Update 27.2 for Business Central 2025 release wave 2](whatsnew-update-27-2.md)|
 |27.1|Application Build 27.1 Platform Build 27.0|November 2025|[Update 27.1 for Business Central 2025 release wave 2](whatsnew-update-27-1.md)|
