@@ -1528,7 +1528,7 @@
 ### [FAQ](ai/ai-development-toolkit-faq.md)
 ### [Create a Sales Validation Agent](ai/ai-development-toolkit-sales-validation.md)
 ### Coding agents in AL
-#### [Overview](ai/ai-agent-sdk-overview.md)
+#### [Overview](ai/ai-agent-sdk-overview.md.md)
 #### [Define and register an agent programmatically](ai/ai-agent-sdk-define-register.md)
 #### [Agent setup and configuration](ai/ai-agent-sdk-setup-page.md)
 #### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
