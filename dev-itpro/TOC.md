@@ -1534,7 +1534,7 @@
 #### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
 #### [Integrate with the Tasks AL API](ai/ai-development-toolkit-tasks-api.md)
 #### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
-#### [Work with agents in AL](developer/ai-development-toolkit-tasks-api.md)
+#### [Work with agents in AL](ai/ai-development-toolkit-tasks-api.md)
 ### [Transparency note: Business Central AI development toolkit](ai/transparency-note-ai-development-toolkit.md)
 <!-- end integration with AI-->
 
