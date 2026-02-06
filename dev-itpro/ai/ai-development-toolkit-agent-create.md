@@ -51,8 +51,9 @@ The **Create agent** wizard allows you to configure your agent by setting up its
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Create new agent"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose whether to create a blank agent or use a template.  
-  - To create a blank agent, choose **Create agent from scratch**, and then choose **Next**.
-  - To use a template, choose **Sales Validation**, choose **Next**, and then choose **Create agent**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further. Learn more in [Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md).
+  
+   - To create a blank agent, choose **Create agent from scratch**, and then choose **Next**.
+   - To use a template, choose **Sales Validation**, choose **Next**, and then choose **Create agent**. The template provides a starting point with predefined instructions and tasks focused on sales order validation. The next steps describe how to customize the agent further. Learn more in [Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md).
 1. On the **Create agent (preview)** wizard, enter a **Name** and **Display Name** and **Initials** field values are now suggested based on the **Name**, but can be modified.
 :::image type="content" source="../media/ai-designer-agent-setup.png" alt-text="Agent designer setup":::
 1. In the **Description** field, provide an optional description for the agent.
