@@ -1531,7 +1531,7 @@
 #### [Overview](ai/ai-agent-sdk-overview.md)
 #### [Define and register an agent programmatically](ai/ai-agent-sdk-define-register.md)
 #### [Create agent setup pages](ai/ai-agent-sdk-setup-page.md)
-#### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md) x
+#### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
 #### [Integrate with the Tasks AL API](ai/ai-development-toolkit-tasks-api.md)
 #### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
 ### [Transparency note: Business Central AI development toolkit](ai/transparency-note-ai-development-toolkit.md)
