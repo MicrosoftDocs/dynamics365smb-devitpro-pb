@@ -27,11 +27,11 @@ An instance of the [DataTransfer](datatransfer-data-type.md) data type.
 
 *SourceField*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The source table field.  
+The source table field. Only fields of [FieldClass](../fieldclass/fieldclass-option.md) type Normal are supported. 
 
 *DestinationField*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The destination table field.  
+The destination table field. Only fields of [FieldClass](../fieldclass/fieldclass-option.md) type Normal are supported. 
 
 
 
@@ -41,7 +41,7 @@ The destination table field.
 
 [!INCLUDE[data-transfer](../../../developer/includes/data-transfer.md)]
 
-Use this method when copying data in rows or fields of table to rows or fields of another table. For more information, see [Transferring Data Bewteen Tables](../../../developer/devenv-data-transfer.md).
+Use this method when copying data in rows or fields of table to rows or fields of another table. For more information, see [Transferring Data Between Tables](../../../developer/devenv-data-transfer.md).
 
 > [!NOTE]
 > Copying the SystemID and [data audit](../../devenv-table-system-fields.md#audit) fields using CopyRows is supported in Business Central version 21.5 and later.
