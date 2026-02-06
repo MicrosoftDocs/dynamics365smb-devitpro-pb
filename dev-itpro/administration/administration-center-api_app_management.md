@@ -260,7 +260,7 @@ Returns information about the apps installed on the environment.
       "lastUpdateAttemptResult": string // (enum | "Failed", "Succeeded", "Canceled", "Skipped")
       "lastUninstallOperationId": guid // Id of the last uninstall operation that was performed for this app
       "lastUninstallAttemptResult": string // (enum | "Failed", "Succeeded", "Canceled", "Skipped")
-      "appType": string // (enum | "Global", "PTE", "DEV")
+      "appType": string // (enum | "global", "tenant", "dev")
       "canBeUninstalled": boolean // Specifies whether the app can be uninstalled
     }
   ]
