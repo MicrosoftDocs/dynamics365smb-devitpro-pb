@@ -1530,11 +1530,10 @@
 ### Coding agents in AL
 #### [Overview](ai/ai-agent-sdk-overview.md)
 #### [Define and register an agent programmatically](ai/ai-agent-sdk-define-register.md)
-#### [Agent setup and configuration](ai/ai-agent-sdk-setup-page.md)
-#### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
+#### [Create agent setup pages](ai/ai-agent-sdk-setup-page.md)
+#### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md) x
 #### [Integrate with the Tasks AL API](ai/ai-development-toolkit-tasks-api.md)
 #### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
-#### [Work with agents in AL](ai/ai-development-toolkit-tasks-api.md)
 ### [Transparency note: Business Central AI development toolkit](ai/transparency-note-ai-development-toolkit.md)
 <!-- end integration with AI-->
 
