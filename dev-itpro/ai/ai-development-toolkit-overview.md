@@ -1,5 +1,5 @@
 ---
-title: AI Development Toolkit Overview
+title: Designing and coding agents (preview)
 description: Discover the AI Development Toolkit for testing AI capabilities in Business Central by building agents. Prototype, validate, and refine AI-powered solutions.
 author: solsen
 ms.author: solsen
@@ -12,7 +12,7 @@ ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
-# AI development toolkit overview (preview)
+# Designing and coding agents (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
