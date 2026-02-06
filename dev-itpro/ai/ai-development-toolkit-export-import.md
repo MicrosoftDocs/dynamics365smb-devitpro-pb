@@ -42,7 +42,7 @@ To import the configuration, do the following:
 ## Related information
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
-[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
 [Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
