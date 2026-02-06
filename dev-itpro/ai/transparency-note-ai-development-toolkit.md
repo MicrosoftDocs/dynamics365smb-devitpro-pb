@@ -90,7 +90,7 @@ We encourage partners to use the AI development toolkit in their innovative solu
 
 - Building features for customers that aren't yet running [!INCLUDE [prod_short](../includes/prod_short.md)] online
 
-Agents in [!INCLUDE [prod_short](../includes/prod_short.md)] are intended for use with [!INCLUDE [prod_short](../includes/prod_short.md)] online, Microsoft's SaaS flavor of [!INCLUDE [prod_short](../includes/prod_short.md)]. 
+  Agents in [!INCLUDE [prod_short](../includes/prod_short.md)] are intended for use with [!INCLUDE [prod_short](../includes/prod_short.md)] online, Microsoft's SaaS flavor of [!INCLUDE [prod_short](../includes/prod_short.md)]. 
 
 - Use of AI platforms other than Azure OpenAI Service
 - The AI development toolkit isn't intended for use with any other AI models other than Azure OpenAI Service. 
@@ -102,25 +102,25 @@ Because your AI features are attached to your Azure OpenAI Service key, you're r
 
 - Use for non-AI use cases or nonbusiness use cases  
 
-The AI development toolkit is built specifically to unlock the benefits and manage the challenges of autonomous agents in a business context. Using the AI development toolkit for other purposes, or personal use cases might erode customer trust and understanding of these experiences.
+  The AI development toolkit is built specifically to unlock the benefits and manage the challenges of autonomous agents in a business context. Using the AI development toolkit for other purposes, or personal use cases might erode customer trust and understanding of these experiences.
 
 - Fully automated use cases  
 
-Autonomous agents are intended to help support productivity and should be used with human-in-the-loop review. We acknowledge that AI systems aren't always correct and that careful review from humans is required to assess that generated output is accurate and appropriate. Use cases that fully automate processes without human oversight elevate the risk to stakeholders and place more accountability on the developer of the AI feature. For example, generating reminder emails and immediately sending those to thousands of contacts might result in recipients receiving inappropriate content that affects the customer's reputation.
+  Autonomous agents are intended to help support productivity and should be used with human-in-the-loop review. We acknowledge that AI systems aren't always correct and that careful review from humans is required to assess that generated output is accurate and appropriate. Use cases that fully automate processes without human oversight elevate the risk to stakeholders and place more accountability on the developer of the AI feature. For example, generating reminder emails and immediately sending those to thousands of contacts might result in recipients receiving inappropriate content that affects the customer's reputation.
 
 - Sensitive use cases  
 
-Some applications of AI can be sensitive and impactful on individuals and society, as well as on the partner that published the AI feature. For example:  
+  Some applications of AI can be sensitive and impactful on individuals and society, as well as on the partner that published the AI feature. For example:  
 
-- The use or misuse of an AI feature that predicts when to service critical machinery might result in injury.
-- The use or misuse of an AI feature that determines eligibility for education might infringe upon human rights.
-- The use or misuse of an AI feature that ranks individuals’ access to social housing might have consequential impact to their life opportunities.
+  - The use or misuse of an AI feature that predicts when to service critical machinery might result in injury.
+  - The use or misuse of an AI feature that determines eligibility for education might infringe upon human rights.
+  - The use or misuse of an AI feature that ranks individuals’ access to social housing might have consequential impact to their life opportunities.
 
-Sensitive use cases require increased attention throughout their development lifecycle. They might carry extra effort to satisfy any of your organization’s policies or regulations in the countries or regions, or industries in which they'll be deployed.
+  Sensitive use cases require increased attention throughout their development lifecycle. They might carry extra effort to satisfy any of your organization’s policies or regulations in the countries or regions, or industries in which they'll be deployed.
 
 - Seek appropriate legal and professional advice  
 
-We strongly recommend seeking legal advice from a specialist to understand the laws and regulations applicable to your use case. You're responsible for complying with all laws and regulations, including privacy, security, accessibility, and AI safety.
+  We strongly recommend seeking legal advice from a specialist to understand the laws and regulations applicable to your use case. You're responsible for complying with all laws and regulations, including privacy, security, accessibility, and AI safety.
 
 - **Language Support**: English is the primary supported language; user interactions in other languages might yield inconsistent results. In addition, agent instructions should be defined in English to ensure optimal accuracy.
 - **User administration**: Agents aren't allowed to access and modify user configurations for security reasons. This includes permissions, user information, and profile assignment.
@@ -129,17 +129,19 @@ We strongly recommend seeking legal advice from a specialist to understand the l
 
 - Access control and permissions
 
-Agents can be granted access exclusively to specific parts of [!INCLUDE [prod_short](../includes/prod_short.md)] required to perform its designated tasks. The agent settings include predefined permissions and a user interface (UI) role, also known as a profile, that an administrator or configuring user can assign to the agent. This assignment restricts the agent's access to certain areas of the product. It defines the type of access (for example, whether the agent is only allowed to read specific data or also update or delete it) and determines which UI elements—such as pages, fields, actions, and FactBoxes—it can interact with.
-We strongly encourage building and assigning permission sets and profile specific to the agent, which can be assigned on the Agent card. This practice ensures that the agent only has access to the functionalities and data necessary for its role, enhancing both security and efficiency within the system.
+  Agents can be granted access exclusively to specific parts of [!INCLUDE [prod_short](../includes/prod_short.md)] required to perform its designated tasks. The agent settings include predefined permissions and a user interface (UI) role, also known as a profile, that an administrator or configuring user can assign to the agent. This assignment restricts the agent's access to certain areas of the product. It defines the type of access (for example, whether the agent is only allowed to read specific data or also update or delete it) and determines which UI elements—such as pages, fields, actions, and FactBoxes—it can interact with.
+
+  We strongly encourage building and assigning permission sets and profile specific to the agent, which can be assigned on the Agent card. This practice ensures that the agent only has access to the functionalities and data necessary for its role, enhancing both security and efficiency within the system.
 
 - Transparency and notifications
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] users can maintain full transparency and control over the changes made by an agent by using other experiences that enable them to:
-    - Receive notifications on the role center that come from the agent when it requires help or when the process demands human review. 
-    - Get a better understanding of the specific task context and history (“timeline” view), including key steps involved in it.
-    - Get a detailed review of each entity created by the agent that surfaces all changes and suggestions made by the agent within a specific task. This behavior allows users to review and adjust changes, and then agree on proceeding with the task.
-    - Get an overview of the agent's key performance indicators (KPIs) that summarize the impact of the agent's work.  
-Make sure you attend to the notifications raised by the agent to review and approve its work.
+  [!INCLUDE [prod_short](../includes/prod_short.md)] users can maintain full transparency and control over the changes made by an agent by using other experiences that enable them to:
+  - Receive notifications on the role center that come from the agent when it requires help or when the process demands human review. 
+  - Get a better understanding of the specific task context and history (“timeline” view), including key steps involved in it.
+  - Get a detailed review of each entity created by the agent that surfaces all changes and suggestions made by the agent within a specific task. This behavior allows users to review and adjust changes, and then agree on proceeding with the task.
+  - Get an overview of the agent's key performance indicators (KPIs) that summarize the impact of the agent's work.  
+
+  Make sure you attend to the notifications raised by the agent to review and approve its work.
 
 - All actions done by the agent, including creating and modifying records and calling actions, carry the agent's user ID. This user ID appears in the same places and in the same way as it does with other users, such as in list views, history, posted documents, notifications, and more.
 - Approval workflows can be used to add an extra layer of control to the tasks done by the agent, as they do with other users. You can set up approval workflows to make the agent create a request for approval for a specific change. The change isn't allowed until another user approves the request. Learn more in [Use Approval Workflows](/dynamics365/business-central/across-how-use-approval-workflows).
