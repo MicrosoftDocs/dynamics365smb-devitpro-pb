@@ -1512,9 +1512,9 @@
 ## Create agents that connect to Business Central
 ### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-## AI development toolkit (preview)
+## Designing and coding agents (preview)
 ### [Overview](ai/ai-development-toolkit-landing-page.yml)
-### [AI development toolkit overview](ai/ai-development-toolkit-overview.md)
+### [Designing and coding agents](ai/ai-development-toolkit-overview.md)
 ### [Create and activate](ai/ai-development-toolkit-agent-create.md)
 ### [Write effective instructions](ai/ai-development-toolkit-instructions.md)
 ### [Instruction keywords](ai/ai-development-toolkit-instruction-keywords.md)
