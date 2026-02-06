@@ -254,7 +254,7 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 ## Related information
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
-[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
 [Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  

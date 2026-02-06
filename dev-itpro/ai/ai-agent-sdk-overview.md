@@ -68,7 +68,7 @@ Learn more in [Managing agent tasks programmatically  (preview)](ai-agent-sdk-ta
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
 [Managing agent tasks programmatically (preview)](ai-agent-sdk-tasks.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
-[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
 [Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  

@@ -8,11 +8,11 @@
 
 # Metadata notes: https://review.docs.microsoft.com/en-us/help/contribute/metadata-overview?branch=main
 
-title: Working with agents in Business Central (preview)
+title: Designing and coding agents in Business Central (preview)
 summary: Explore tools for designing and testing AI agents in Business Central.
 
 metadata:
-  title: Working with agents in Business Central (preview)
+  title: Designing and coding agents in Business Central (preview)
   description: Explore tools for designing and testing AI agents in Business Central.
   author: SusanneWindfeldPedersen
   ms.author: solsen
@@ -31,7 +31,7 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: AI development toolkit overview
+      - text: Designing and coding agents
         url: ai-development-toolkit-overview.md
       - text: Responsible AI transparency note for AI development toolkit
         url: transparency-note-ai-development-toolkit.md 

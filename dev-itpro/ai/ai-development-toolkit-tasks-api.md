@@ -69,7 +69,7 @@ Learn more about writing AL code specific to agent sessions, including event sub
 ## Related information
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
-[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  

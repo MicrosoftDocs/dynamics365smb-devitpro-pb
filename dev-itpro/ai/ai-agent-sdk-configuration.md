@@ -215,7 +215,7 @@ Other applications can then call these public procedures to interact with your a
 [Managing agent tasks programmatically (preview)](ai-agent-sdk-tasks.md)  
 [Agent permissions (preview)](ai-development-toolkit-permissions.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
-[AI development toolkit (preview)](ai-development-toolkit-overview.md)   
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
 [Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)
