@@ -55,6 +55,52 @@ Follow these steps to replicate data to the online tenant.
    > [!TIP]
    > [!INCLUDE [cloud-migration-telemetry](../developer/includes/cloud-migration-telemetry.md)]
 
+## Migration Validation Feature Overview
+
+The Migration Validation feature allows you to verify data migrated from GP to Business Central, either automatically or manually. This process ensures accuracy and improves efficiency by comparing source data in GP with migrated data in Business Central.
+
+### Accessing Validation Results
+
+On the Cloud Migration Management page, in the Company Status Fact Box area, a tile called Validation Errors will appear.
+
+- If validation issues are detected, click the tile to view detailed results.
+- The Migration Validation Results page provides a summary view across all migrated companies, including: 
+
+  - Entities tested
+  - Description of each validation test
+  - Number of records that failed validation
+
+You can drill down into failed records to see:
+
+- Specific record details
+- Company context
+- Expected value versus migrated value
+
+### Running Validation
+
+You can choose to run validation:
+
+- Automatically after migration by enabling Automatic Validation in the Configure GP Migration > GP Migration Settings window.
+- Manually after migration completion:
+
+  - Navigate to Validation Errors Tile > Company Migration Status > Run All Validation, or
+  - From the Migration Management page: Actions > Validation Status > Run All Validation
+
+## Managing Validation Tests
+
+If you do not want a specific validation test to run, select Ignore on the Migration Validation Results page.
+
+### Entities Included in Validation
+
+- G/L Accounts
+- Statistical Accounts
+- Bank Accounts
+- Customers
+- Items
+- Purchase Orders
+- Vendors
+- Vendor 1099 Information
+
 ## Troubleshoot and fix problems
 
 If errors occur during data replication, fix them then rerun the data replication. Learn more about some common errors at [Cloud migration troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
