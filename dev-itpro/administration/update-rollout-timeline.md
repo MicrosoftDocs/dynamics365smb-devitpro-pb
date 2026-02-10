@@ -51,6 +51,9 @@ The grace period starts when the update period ends and lasts one month. It occu
 
 The enforced period starts when the grace period ends. During this period, any extensions causing the update to the next major version to fail, for example, because of compatibility issues, might be automatically uninstalled from the environment so that the update succeeds. Data belonging to these uninstalled extensions isn't deleted from the environment and can be recovered by installing a compatible extension version after the update succeeds. Learn more in [When Microsoft can't update apps or PTEs](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
+> [!IMPORTANT]
+> It is not possible to [restore](tenant-admin-center-backup-restore.md) an environment to a version that is in its Grace or Enforced update period after an update to a later version has succeeded.
+
 ## Minor updates
 
 Minor updates are released every month in which there's no major update release, that is, every month except April and October. These updates contain application changes that are critical improvements to the service, including regulatory updates. Like major updates, minor updates are generally available at the start of each calendar month. After a minor update is general available, new environments use the new minor version by default. The new minor version becomes available as an update to environments on the previous version about a week after general availability. The exact timing can vary by environment.  
