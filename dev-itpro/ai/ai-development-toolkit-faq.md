@@ -203,6 +203,12 @@ To find overdue invoices:
 
 Learn more about available keywords in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
 
+## AI development toolkit app
+
+### Do I need to install the AI development toolkit app to use the agent design experience?
+
+No, the agent design experience is built directly into [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and shouldn't require a separate app installation. However, if you don't see the agent design experience, go to the **Extension Management** page, and ensure that the **AI Development Toolkit** extension is installed and enabled. If it's not installed, you can install it from Marketplace. Learn more about installing apps in [Install an extension](/dynamics365/business-central/ui-extensions-install-uninstall#install).
+
 ## Feedback
 
 ### How can I provide feedback for the agent design experience?
