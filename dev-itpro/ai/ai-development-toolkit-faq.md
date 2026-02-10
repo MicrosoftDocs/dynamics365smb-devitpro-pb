@@ -207,7 +207,7 @@ Learn more about available keywords in [Instruction keywords for an agent (previ
 
 ### Do I need to install the AI development toolkit app to use the agent design experience?
 
-No, the agent design experience is built directly into [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and shouldn't require a separate app installation. However, if you don't see the agent design experience, go to the **Extension Management** page, and ensure that the **AI Development Toolkit** extension is installed and enabled. If it's not installed, you can install it from Marketplace. Learn more about installing apps in [Install an extension](/dynamics365/business-central/ui-extensions-install-uninstall#install).
+No, the agent design experience is built directly into [!INCLUDE [prod_short](../developer/includes/prod_short.md)] sandbox environments and shouldn't require a separate app installation. However, if you don't see the agent design experience, go to the **Extension Management** page, and ensure that the **AI Development Toolkit** extension is installed and enabled. If it's not installed, you can install it from [Marketplace](https://marketplace.microsoft.com/product/PUBID.microsoftdynsmb%7CAID.business-central-agent-designer%7CPAPPID.f2d0130c-4b0e-437a-bcfd-0dc9f84ac961?tab=Overview). Learn more about installing apps in [Install an extension](/dynamics365/business-central/ui-extensions-install-uninstall#install).
 
 ## Provide feedback
 
