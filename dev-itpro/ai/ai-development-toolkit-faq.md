@@ -209,7 +209,7 @@ Learn more about available keywords in [Instruction keywords for an agent (previ
 
 No, the agent design experience is built directly into [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and shouldn't require a separate app installation. However, if you don't see the agent design experience, go to the **Extension Management** page, and ensure that the **AI Development Toolkit** extension is installed and enabled. If it's not installed, you can install it from Marketplace. Learn more about installing apps in [Install an extension](/dynamics365/business-central/ui-extensions-install-uninstall#install).
 
-## Feedback
+## Provide feedback
 
 ### How can I provide feedback for the agent design experience?
 
