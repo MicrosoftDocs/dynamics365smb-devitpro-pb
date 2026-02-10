@@ -8,7 +8,7 @@ ms.topic: faq
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/12/2026
+ms.date: 02/10/2026
 ms.update-cycle: 180-days
 ---
 
@@ -202,6 +202,20 @@ To find overdue invoices:
 ```
 
 Learn more about available keywords in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
+
+## Feedback
+
+### How can I provide feedback for the agent design experience?
+
+We welcome your feedback to help us improve the agent design experience. In [!INCLUDE [prod_short](../developer/includes/prod_short.md)], there are several places where you can provide feedback on agents and the agent design experience. Use the **Give feedback** option here:
+
+- **Agent Task Log Entries** page - provide feedback on specific agent tasks and their execution
+- **Agent Task Log** page - share your thoughts on the overall agent performance and runtime behavior
+
+Use the thumbs up/down buttons to indicate whether the agent's response was helpful, and provide additional comments to help us understand your experience and improve the product here:
+
+- **Agent timeline**- give feedback on the sequence of agent actions and interactions
+- **Edit instructions** page - let us know about your experience writing and editing instructions for agents
 
 ## Related information
 
