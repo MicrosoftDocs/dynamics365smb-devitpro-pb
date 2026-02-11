@@ -64,7 +64,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Brazil|Partner|W1|Available|BR|Brazil|
 |Bulgaria|Partner|W1|Available|BG|Europe|
 |Burkina Faso|Partner|W1|Available|BF|South Africa|
-|Burundi|Partner|W1|Available|BI|5)|
+|Burundi|Partner|W1|Available|BI|5) Planned for April 2026|
 |Cambodia|Partner|W1|Available|KH|Asia Pacific|
 |Cameroon|Partner|W1|Available|CM|South Africa|
 |Canada|Microsoft|NA|Available|CA|Canada|
@@ -77,8 +77,8 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Cocos Islands|Partner|W1|Available|CC|5)|
 |Colombia|Partner|W1|Available|CO|Brazil|
 |Comoros|Partner|W1|Available|KM|5)|
-|Congo|Partner|W1|Available|CG|5)|
-|Congo (DRC)|Partner|W1|Available|CD|5)|
+|Congo|Partner|W1|Available|CG|5) Planned for April 2026|
+|Congo (DRC)|Partner|W1|Available|CD|5) Planned for April 2026|
 |Cook Islands|Partner|W1|Available|CK|5)|
 |Costa Rica|Partner|W1|Available|CR|Brazil|
 |Côte d’Ivoire|Partner|W1|Available|CI|South Africa|
@@ -91,7 +91,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Dominica|Partner|W1|Available|DM|Brazil|
 |Dominican Republic|Partner|W1|Available|DO|Brazil|
 |Ecuador|Partner|W1|Available|EC|Brazil|
-|Equatorial Guinea|Partner|W1|Available|GQ|5)|
+|Equatorial Guinea|Partner|W1|Available|GQ|5) Planned for April 2026|
 |El Salvador|Partner|W1|Available|SV|Brazil|
 |Egypt|Partner|W1|Available|EG|South Africa|
 |Eritrea|Partner|W1|Available|ER|South Africa|
@@ -183,7 +183,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |New Caledonia|Partner|W1|Available|NC|Australia|
 |New Zealand|Microsoft|NZ|Available|NZ|Australia|
 |Nicaragua|Partner|W1|Available|NI|Brazil|
-|Niger|Partner|W1|Available|NE|5)|
+|Niger|Partner|W1|Available|NE|5) Planned for April 2026|
 |Nigeria|Partner|W1|Available|NG|South Africa|
 |Niue|Partner|W1|Available|NU|5)|
 |Norfolk Island|Partner|W1|Available|NF|5)|
@@ -204,7 +204,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Portugal|Partner|W1|Available|PT|Europe|
 |Puerto Rico|Partner|W1|Available|PR|Brazil|
 |Qatar|Partner|W1|Available|QA|UAE|
-|Reunion|Partner|W1|Available|RE|5)|
+|Reunion|Partner|W1|Available|RE|5) Planned for April 2026|
 |Romania|Partner|W1|Available|RO|Europe|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|N/A|
 |Rwanda|Partner|W1|Available|RW|South Africa North|
@@ -221,7 +221,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Senegal|Partner|W1|Available|SN|South Africa|
 |Serbia|Partner|W1|Available|RS|Europe|
 |Seychelles|Partner|W1|Available|SC|South Africa|
-|Sierra Leone|Partner|W1|Available|SL|5)|
+|Sierra Leone|Partner|W1|Available|SL|5) Planned for April 2026|
 |Singapore|Partner|W1|Available|SG|Asia Pacific|
 |Sint Maarten|Partner|W1|Available|SX|5)|
 |Slovakia|Partner|W1|Available|SK|Europe|
@@ -231,11 +231,11 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |South Africa|Partner|W1|Available|ZA|South Africa|
 |South Georgia and South Sandwich Islands|Partner|W1|Available|GS|5)|
 |South Korea|Partner|W1|Available|KR|Korea|
-|South Sudan|Partner|W1|Available|SS|5)|
+|South Sudan|Partner|W1|Available|SS|5) Planned for April 2026|
 |Spain|Microsoft|ES|Available|ES|Europe|
 |Sri Lanka|Partner|W1|Available|LK|Asia Pacific|
 |St Helena, Ascension, Tristan da Cunha|Partner|W1|Available|SH|5)|
-|Sudan|Partner|W1|Available|SD|5)|
+|Sudan|Partner|W1|Available|SD|5) Planned for April 2026|
 |Suriname|Partner|W1|Available|SR|Brazil|
 |Svalbard|Partner|W1|Available|SJ|5)|
 |Sweden|Microsoft|SE <sup>2</sup>|Available|SE|Sweden|
@@ -281,8 +281,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 >
 > <sup>4</sup> BaseApp for United Kingdom was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2. Current localization features are available as apps. Users can enable new features through the **Feature Management**.
 >
-> <sup>5</sup> The country/region is enabled in AppSource and the CSP pricelist, but before deployment you must submit a request to the [Microsoft localization team](mailto:d365bcloc@microsoft.com). Deployment will be available up th the next two minor versions after your request is processed.
-
+> <sup>5</sup> The country/region is enabled in AppSource and on the CSP pricelist, but before deployment you must submit a request to the [Microsoft localization team](mailto:d365bcloc@microsoft.com). **Deployment‑ready statuses** are published four times per year (April, July, October, and January), and the wave depends on when your request is processed. If you see a planned availability date, do not submit a request as this country/region is already in the queue for enablement. Also, do not sell in these countries/regions until they are fully available for deployment, even if they appear as planned.
 
 Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
