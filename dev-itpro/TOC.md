@@ -461,6 +461,7 @@
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
+##### [Validate Dynamics GP data migration](administration/migrate-gp-validation.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### Finish cloud migration
