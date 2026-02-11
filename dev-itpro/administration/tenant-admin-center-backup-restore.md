@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 10/08/2025
+ms.date: 02/11/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -34,7 +34,7 @@ For more information about permissions sets and user groups, see [Assign Permiss
 - An environment can be restored to any time up to 28 days ago. It's not possible to restore an environment to a time more than 28 days ago.
 - An environment can only be restored within the same Azure region and country/region ([!INCLUDE[prod_short](../developer/includes/prod_short.md)] localization) as the original environment.
 - A production environment can be restored to an environment of type **Production** or **Sandbox**. A sandbox environment can only be restored to a **Sandbox** environment.
-- The environment is restored to the major/minor version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] it was on at the time the environment is restored to. It is not possible to restore to an environment to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version that is in its grace or enforced update period. For more information, see [Update cycles](update-rollout-timeline.md).
+- The environment is restored to the major/minor version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] it was on at the time the environment is restored to. It's not possible to restore to an environment to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version that is in its grace or enforced update period. Learn more in [Update cycles](update-rollout-timeline.md).
 - When you restore a sandbox environment, all development extensions (that is, extensions published directly from Visual Studio Code) aren't available in the restored environment&mdash;even if they were present at the point-in-time you're restoring to). Additionally, any per-tenant extensions that depend on such development extensions are also not available.
 - Every AppSource and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app in the restored environment will have the latest available hotfix installed automatically&mdash;even if the hotfix was introduced after the point-in-time you're restoring to.
 - Microsoft Entra app registration, status, and permissions in the environment are restored to their state at the time you're restoring to. Apps that were authorized in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] aren't restored even if their permissions in the restored environment are.
