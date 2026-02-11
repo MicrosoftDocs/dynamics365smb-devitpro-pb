@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 08/19/2025
+ms.date: 02/11/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -52,7 +52,7 @@ The grace period starts when the update period ends and lasts one month. It occu
 The enforced period starts when the grace period ends. During this period, any extensions causing the update to the next major version to fail, for example, because of compatibility issues, might be automatically uninstalled from the environment so that the update succeeds. Data belonging to these uninstalled extensions isn't deleted from the environment and can be recovered by installing a compatible extension version after the update succeeds. Learn more in [When Microsoft can't update apps or PTEs](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
 > [!IMPORTANT]
-> It is not possible to [restore](tenant-admin-center-backup-restore.md) an environment to a version that is in its Grace or Enforced update period after an update to a later version has succeeded.
+> It's not possible to [restore](tenant-admin-center-backup-restore.md) an environment to a version that is in its Grace or Enforced update period after an update to a later version has succeeded.
 
 ## Minor updates
 
