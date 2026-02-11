@@ -8,7 +8,7 @@ ms.topic: faq
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/12/2026
+ms.date: 02/10/2026
 ms.update-cycle: 180-days
 ---
 
@@ -202,6 +202,26 @@ To find overdue invoices:
 ```
 
 Learn more about available keywords in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
+
+## AI development toolkit app
+
+### Do I need to install the AI development toolkit app to use the agent design experience?
+
+No, the agent design experience is built directly into [!INCLUDE [prod_short](../developer/includes/prod_short.md)] sandbox environments and shouldn't require a separate app installation. However, if you don't see the agent design experience, go to the **Extension Management** page, and ensure that the **AI Development Toolkit** extension is installed and enabled. If it's not installed, you can install it from [Marketplace](https://marketplace.microsoft.com/product/PUBID.microsoftdynsmb%7CAID.business-central-agent-designer%7CPAPPID.f2d0130c-4b0e-437a-bcfd-0dc9f84ac961?tab=Overview). Learn more about installing apps in [Install an extension](/dynamics365/business-central/ui-extensions-install-uninstall#install).
+
+## Provide feedback
+
+### How can I provide feedback for the agent design experience?
+
+We welcome your feedback to help us improve the agent design experience. In [!INCLUDE [prod_short](../developer/includes/prod_short.md)], there are several places where you can provide feedback on agents and the agent design experience. Use the **Give feedback** option here:
+
+- **Agent Task Log Entries** page - provide feedback on specific agent tasks and their execution
+- **Agent Task Log** page - share your thoughts on the overall agent performance and runtime behavior
+
+Use the thumbs up/down buttons to indicate whether the agent's response was helpful, and provide additional comments to help us understand your experience and improve the product here:
+
+- **Agent timeline**- give feedback on the sequence of agent actions and interactions
+- **Edit instructions** page - let us know about your experience writing and editing instructions for agents
 
 ## Related information
 
