@@ -55,6 +55,9 @@ Any user running the cloud migration setup flow as delegated administrator must 
 
    If you want to add or remove companies later, you can return to this page. For more information about using this page, see [Configure Dynamics GP company data migration](migrate-gp-configure-companies.md).
 
+   > [!TIP]
+   > You can enable automatic validation during migration setup. On the **GP Company Migration Configuration** page, select **GP Migration Settings** to access the option to turn on **Automatic Validation**. When enabled, validation runs automatically after migration completes. For more information, see [Validate Dynamics GP data migration](migrate-gp-validation.md).
+
 1. Select **Finish** to complete the cloud migration setup.
 
   If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.

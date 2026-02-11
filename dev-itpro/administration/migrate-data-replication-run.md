@@ -34,10 +34,9 @@ Before running data replication, we recommend doing a test, or *diagnostics*, ru
 To do a diagnostics run, follow these steps:
 
 1. Open the **Cloud Migration Management** page.
+1. Select **Create diagnostics run** and follow the instructions.
 
-2. Select **Create diagnostics run** and follow the instructions.
-
-3. Monitor the progress on the **Cloud Migration Management** page by checking the **Migration Log** list and status fields.
+1. Monitor the progress on the **Cloud Migration Management** page by checking the **Migration Log** list and status fields.
 
 ## Run data replication
 
@@ -46,7 +45,7 @@ Follow these steps to replicate data to the online tenant.
 <!--This task runs the cloud migration that you set up previously, copying data from your on-premises database to your online environment.-->
 
 1. Search for and open the **Cloud Migration Management** page.
-2. On the **Cloud Migration Management** page, select **Run data replication** (or **Run Migration Now**) > **Yes**. 
+1. On the **Cloud Migration Management** page, select **Run data replication** (or **Run Migration Now**) > **Yes**. 
 
    This step starts replicating data to the online tenant.
 1. If the data replication starts, you get a message that the cloud migration was successfully started. Select **OK** to continue.
@@ -54,52 +53,6 @@ Follow these steps to replicate data to the online tenant.
 
    > [!TIP]
    > [!INCLUDE [cloud-migration-telemetry](../developer/includes/cloud-migration-telemetry.md)]
-
-## Migration Validation Feature Overview
-
-The Migration Validation feature allows you to verify data migrated from GP to Business Central, either automatically or manually. This process ensures accuracy and improves efficiency by comparing source data in GP with migrated data in Business Central.
-
-### Accessing Validation Results
-
-On the Cloud Migration Management page, in the Company Status Fact Box area, a tile called Validation Errors will appear.
-
-- If validation issues are detected, click the tile to view detailed results.
-- The Migration Validation Results page provides a summary view across all migrated companies, including: 
-
-  - Entities tested
-  - Description of each validation test
-  - Number of records that failed validation
-
-You can drill down into failed records to see:
-
-- Specific record details
-- Company context
-- Expected value versus migrated value
-
-### Running Validation
-
-You can choose to run validation:
-
-- Automatically after migration by enabling Automatic Validation in the Configure GP Migration > GP Migration Settings window.
-- Manually after migration completion:
-
-  - Navigate to Validation Errors Tile > Company Migration Status > Run All Validation, or
-  - From the Migration Management page: Actions > Validation Status > Run All Validation
-
-## Managing Validation Tests
-
-If you do not want a specific validation test to run, select Ignore on the Migration Validation Results page.
-
-### Entities Included in Validation
-
-- G/L Accounts
-- Statistical Accounts
-- Bank Accounts
-- Customers
-- Items
-- Purchase Orders
-- Vendors
-- Vendor 1099 Information
 
 ## Troubleshoot and fix problems
 
@@ -123,6 +76,7 @@ For Business Central on-premises migration:
 For Dynamics GP migration:
 
 - [Run data upgrade for Dynamics GP](migration-data-upgrade-gp.md)
+- [Validate Dynamics GP data migration](migrate-gp-validation.md)
 - [Complete Dynamics GP cloud migration](migration-finish-gp.md)
 
 For Dynamics SL migration:
