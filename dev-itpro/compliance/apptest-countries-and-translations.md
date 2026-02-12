@@ -2,8 +2,8 @@
 title: Country/Regional Availability and Supported Languages
 description: Learn where Business Central is available, which languages are supported, and how partners deliver localized solutions through Microsoft commercial marketplace.
 author: sorenfriisalexandersen
-ms.date: 11/12/2025
-ms.reviewer: solsen
+ms.date: 02/12/2026
+ms.reviewer: v-soumramani
 ms.topic: article
 ms.author: altotovi
 ms.custom: references_regions
@@ -281,7 +281,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 >
 > <sup>4</sup> BaseApp for United Kingdom was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2. Current localization features are available as apps. Users can enable new features through the **Feature Management**.
 >
-> <sup>5</sup> The country/region is enabled in AppSource and on the CSP pricelist, but before deployment you must submit a request to the [Microsoft localization team](mailto:d365bcloc@microsoft.com). **Deployment‑ready statuses** are published four times per year (April, July, October, and January), and the wave depends on when your request is processed. If you see a planned availability date, do not submit a request as this country/region is already in the queue for enablement. Also, do not sell in these countries/regions until they are fully available for deployment, even if they appear as planned.
+> <sup>5</sup> The country or region is enabled in AppSource and the CSP pricelist. Before deployment, you must submit a request to the [Microsoft localization team](mailto:d365bcloc@microsoft.com). **Deployment‑ready statuses** are published four times per year—in April, July, October, and January—and the wave depends on when your request is processed. If you see a planned availability date, don't submit a request, as this country or region is already in the queue for enablement. Also, don't sell in these countries or regions until they're fully available for deployment, even if they appear as planned.
 
 Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
