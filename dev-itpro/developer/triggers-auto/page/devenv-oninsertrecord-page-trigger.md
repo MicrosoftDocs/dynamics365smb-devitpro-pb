@@ -29,14 +29,14 @@ end;
 
 *BelowxRec*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-This return value indicates whether the new record is to be inserted after the last record in the table (xRec). If false, the record is to be inserted between an existing record and the last record. If true, the record is to be inserted below the last record in the table (xRec).  
+This value indicates whether the new record is to be inserted after the last record in the table (xRec). If false, the record is to be inserted between an existing record and the last record. If true, the record is to be inserted below the last record in the table (xRec).  
 
 
 ## Return value
 
 *Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-**true** if the record was inserted, otherwise **false**. The return value is checked after each call. The default value is **true**.  
+Specifies whether the record will be inserted by the runtime after the OnInsertRecord trigger finishes executing. If **true**, the record is inserted. If **false**, the record is not inserted. The return value is evaluated after each call to the trigger. The default value is true.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
