@@ -20,7 +20,6 @@ The most recent runtimes are listed here. For a full list of available runtimes,
 
 |Runtime version|Shipped with                       |Internal version|
 |---------------|-----------------------------------|----------------|  
-|`13.0`         |Business Central 2024 release wave 1|24.0|
 |`14.0`         |Business Central 2024 release wave 2|25.0|
 |`15.0`         |Business Central 2025 release wave 1|26.0|
 |`16.0`         |Business Central 2025 release wave 2|27.0|
@@ -55,6 +54,7 @@ If an earlier runtime is picked, it can be good idea to have a daily or weekly b
 |`10.0`         |Business Central 2022 release wave 2|21.0|
 |`11.0`         |Business Central 2023 release wave 1|22.0|
 |`12.0`         |Business Central 2023 release wave 2|23.0|
+|`13.0`         |Business Central 2024 release wave 1|24.0|
 
 ## Related information
 

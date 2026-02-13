@@ -63,7 +63,7 @@ Not all output options apply to every report action. This table shows which outp
 ### Example
 
 > [!NOTE]
-> This example applies to [!INCLUDE [prod_short](includes/prod_short.md)] on-premises only. For more detailed examples, go to [Business Central Tech Samples on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments).
+> The capability in described in this article works with both [!INCLUDE [prod_short](includes/prod_short.md)] online and on-premises. However, some parts of this example apply to on-premises only. For more detailed examples, go to [Business Central Tech Samples on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments).
 
 The following AL code example create a report extension object that modifies the **Customer - List** report PDF output to include an attached file and append it with the **Customer - Top 10 List** report. In the OnPreRendering trigger of the report extension, the code:
 
@@ -303,4 +303,6 @@ The payload sent from `OnPreRendering` for the example:
 
 ## Related information
 
+[OnPreRendering (report) trigger](triggers-auto/report/devenv-onprerendering-report-trigger.md)  
+[OnPreRendering (report extension) trigger](triggers-auto/reportextension/devenv-onprerendering-reportextension-trigger.md)  
 [Designing reports](devenv-reports.md)  

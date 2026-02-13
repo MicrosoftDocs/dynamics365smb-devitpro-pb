@@ -2,14 +2,14 @@
 title: Update 27.1 for Microsoft Dynamics 365 Business Central 2025 Release Wave 2
 description: Get an overview of new and changed capabilities in the 27.1 update of Business Central online, which is part of 2025 release wave 2
 ms.author: jswymer
-ms.date: 11/03/2025
+ms.date: 01/14/2026
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer
 ms.custom:
     - bap-template
 ---
-# Update 27.1 for Business Central online 2025 release wave 1
+# Update 27.1 for Business Central online 2025 release wave 2
 
 Would you like to know what changes are in update 27.1? Below you find an overview and relevant links to what was done on hotfixes and regulatory features in this update. In addition, we gathered some good to know information and links that you might find interesting.
 
@@ -38,6 +38,10 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | User experiences | [Use the Concealed text field type for sensitive data](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-concealed-text-field-type-sensitive-data) | General availability |
 |Shopify| [Create sales invoices from orders automatically, and use new ways to view orders](/dynamics365/business-central/shopify/synchronize-orders) | General availability |
 | | [Use renamed customer templates and fulfillments](/dynamics365/business-central/shopify/synchronize-customers) | General availability |
+|Cloud migration|**Recurring purchase and sales lines creation for Dynamics GP migration:** The migration tool supports automatic creation of recurring purchase and sales lines in Business Central from Dynamics GP purchasing and sales accounts. Learn more in [Generating recurring purchase lines](../administration/migrate-dynamics-gp.md#generating-recurring-purchase-lines) and [Generating recurring sales lines](../administration/migrate-dynamics-gp.md#generating-recurring-sales-lines). | General availability |
+
+<!--
+|Dynamics GP migration|**Recurring purchase and sales lines creation:** The Dynamics GP migration tool supports automatic creation of recurring purchase and sales lines in Business Central from Dynamics GP Purchasing and Sales Accounts. When enabled in migration settings, it evaluates vendor/customer accounts, class accounts, and default purchasing/sales accounts in Dynamics GP, then generates corresponding recurring lines in Business Central. Each line is linked to the appropriate vendors or customers, includes mapped dimensions, and is set to insert automatically on purchase or sales documents. This option is off by default. <br><br>Learn more in [Generating recurring purchase lines](../administration/migrate-dynamics-gp.md#creating-recurring-purchase-lines) and [Generating recurring sales lines](../administration/migrate-dynamics-gp.md#recurring-sales-lines). | General availability |-->
 
 ## Localization updates
 

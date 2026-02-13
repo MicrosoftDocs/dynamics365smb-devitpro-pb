@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 12/10/2025
+ms.date: 02/05/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -11,7 +11,7 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2 was kicked off on October 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE).
+> The [!INCLUDE [prod_short](../includes/prod_short.md)] release wave 1 2026 public preview is just around the corner and will be available for public use on March 2. The new release brings many improvements and we're looking forward to your feedback. More updates coming soon — stay tuned!
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
@@ -38,6 +38,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Watch the 'What's new' sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
+- Stay up to date with AI Business Solutions CSP Office Hours: [aka.ms/CSPpartnerhours](https://aka.ms/CSPpartnerhours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 
@@ -45,7 +46,6 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
-- Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://www.microsoft.com/dynamics-365/blog/it-professional/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://www.microsoft.com/dynamics-365/blog/business-leader/)
 <!--- Join the [!INCLUDE [prod_short](../includes/prod_short.md)] development group on Viva Engage (Yammer): [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md)) -->
@@ -59,14 +59,13 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
-- The AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 - The Microsoft coordinated #BCTalent offerings help partners with recruiting, training, and coaching services: [aka.ms/BCTalent](https://aka.ms/BCTalent)  
 - Sign up for Business Central Partner Sandbox offer: [aka.ms/BCPartnerSandbox](https://aka.ms/BCPartnerSandbox)
 <!-- - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md)) -->
 
 ## Go to market
 
-- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://www.microsoft.com/dynamics-365/products/business-central/)  
+- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [www.business-central.com](https://www.business-central.com)  
 - Try [!INCLUDE [prod_short](../includes/prod_short.md)] for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
 - Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
@@ -89,7 +88,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Customer onboarding and resources
 
-- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)  
+- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on Marketplace: [aka.ms/BCMarketplace](https://aka.ms/BCMarketplace)  
 - Get [!INCLUDE [prod_short](../includes/prod_short.md)] on your mobile devices: [aka.ms/BusinessCentralApp](https://aka.ms/BusinessCentralApp)  
 - Get [!INCLUDE [prod_short](../includes/prod_short.md)] installable app on your desktop: [aka.ms/BCPWA](https://aka.ms/BCPWA)  
 - Learn about onboarding experiences in [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)  
@@ -109,15 +108,16 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ### Agents in Business Central
 
+- Agent pitch deck - [aka.ms/BCAgentPitchDeck](https://aka.ms/BCAgentPitchDeck)
 - Sales Order Agent overview (preview) [Learn more](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
 - Payable Agent overview (preview) [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
-- Agent playground (preview) [Learn more](../../ai/ai-agent-playground.md)
+- Designing and coding agents (preview) [Learn more](../../ai/ai-development-toolkit-landing-page.yml)
 - Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Sales Order Agent is generally available in all countries/regions. 
-- Payable Agent is generally available in the following countries/regions (November 2025): United States, United Kingdom, Australia, and New Zealand.
+- Payable Agent is generally available in the following countries/regions (February 2026): United States, Canada, Belgium, Denmark, France, Germany, Italy, Netherlands, Norway, Spain, Sweden, United Kingdom, Australia, and New Zealand.
 
 ### Copilot in Business Central 101
 
@@ -209,8 +209,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - [Business Central Launch Event (aka.ms/BCLE)](https://aka.ms/BCLE)
 - [Directions NA](https://directionsna.com)
-- [Directions EMEA](https://directions4partners.com/events/directions-emea-2023/)  
-- [Directions ASIA](https://directions4partners.com/events/directions-asia-2024/)
+- [Directions EMEA](https://www.directionsforpartners.com/emea2026)  
+- [Directions ASIA](https://www.directionsforpartners.com/asia2026)
 - [Business Central TechDays](https://bctechdays.com)
 - [Days of Knowledge (In several countries)](https://directions4partners.com/days-of-knowledge/)
 - [Days of Knowledge (Central)](https://directions4partners.com/days-of-knowledge/)

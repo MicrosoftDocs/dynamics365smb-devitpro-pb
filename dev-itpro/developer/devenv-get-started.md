@@ -2,7 +2,7 @@
 title: Get started with AL
 description: Description of how to get started with the AL development environment.
 author: SusanneWindfeldPedersen
-ms.date: 09/04/2025
+ms.date: 12/09/2025
 ms.topic: get-started
 ms.author: solsen
 ms.collection: get-started
@@ -26,33 +26,31 @@ Go through the following steps to set up a sandbox environment. Once you've set 
 3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 4) Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
 5) Select <kbd>Alt</kbd>+<kbd>A</kbd>, and right after, <kbd>Alt</kbd>+<kbd>L</kbd> to trigger the **AL Go!** command, choose a path to a new empty folder and which version to run. Then choose **Microsoft cloud sandbox** as the server.  
+  The **AL: Go!** command creates a new AL project with all the necessary files and folders including the `app.json` and `launch.json` files.
 6) Enter the credentials that you provided for the sign-up.
 7) Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to deploy and run the extension on your online sandbox tenant.  
 
-> [!NOTE]
-> With runtime 16, you can cancel an in‑progress publish. Hit the **Cancel** button in the dialog in the lower right corner. The operation stops packaging/upload steps as soon as possible; partial artifacts aren’t applied to the server.
-
 You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. Learn more in [JSON files](devenv-json-files.md).
+
+> [!NOTE]
+> With runtime 16.0 and later, you can cancel an in‑progress publish. Hit the **Cancel** button in the dialog in the lower right corner. The operation stops packaging/upload steps as soon as possible; partial artifacts aren’t applied to the server.
 
 ### Things to note
 
 - If you want to create a container-based sandbox, see [Get started with the container sandbox development environment](devenv-get-started-container-sandbox.md). Learn more about which sandboxes you can choose in [Sandbox environments for Dynamics 365 Business Central development](devenv-sandbox-overview.md).
-
 - It's not supported to publish an extension from Visual Studio Code with the same identifiers as an extension, which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
-
 - For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut key might not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
-
 - If you want to change your configuration at a later point in time, you can do so in the launch.json file. Just choose the **Add Configuration** button on the bottom right side, and then choose one of the available options. You don't have a launch.json file until you have run the `AL:Go!` command.
 
 ## Tips and tricks
 
-+ Use <kbd>Ctrl+Space</kbd> to activate IntelliSense at any place in the code, which helps you identify possible options.
++ Use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to activate IntelliSense at any place in the code, which helps you identify possible options.
 + Always use the `.al` extension on new files.
 + Use the built-in [snippets for code](devenv-syntax.md#examples-of-snippets) by typing `t` and choose the desired snippet from the list.
 + Create objects within the right object ranges, see [Object ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
-+ Use <kbd>F2</kbd> to rename objects, types etc. Learn more in [Keyboard shortcuts](devenv-keyboard-shortcuts.md#editing-in-visual-studio-code).
++ Use <kbd>F2</kbd> to rename objects, types, etc. Learn more in [Keyboard shortcuts](devenv-keyboard-shortcuts.md#editing-in-visual-studio-code).
 + The `settings.json` file contains user and workspace settings, these options can be modified to suit your preference. If you want to modify Visual Studio Code editor options and functional behavior settings, see [User and workspace settings](https://code.visualstudio.com/docs/getstarted/settings).
 + When no folders are opened, the primary side bar for the Visual Studio Code Explorer has a **Create AL Project** button. Clicking this button invokes the `AL:Go!` command to create a new project.
 
@@ -93,9 +91,6 @@ The access to develop and publish extensions is controlled on a user or user gro
 If you add new permission sets and want to control the access to develop and publish extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
 
 To prohibit a user from publishing, just remove the user from the **EXTEN. MGT. - ADMIN** permission set.
-
-> [!NOTE]  
-> The **EXTEN. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
 ## Switching between different versions of AL
 

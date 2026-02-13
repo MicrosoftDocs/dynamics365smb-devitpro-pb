@@ -28,8 +28,16 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## Related information  
+
+## Remarks
+
+This trigger runs after the `OninitReport` trigger and the base report's `OnPreReport` trigger, and before data items are processed. Learn more about report trigger flow in [Report triggers and runtime operations](../../devenv-report-triggers.md#overall-report-trigger-and-operations).
+
+## Related information
+
+[OnInitReport (report) trigger](../report/devenv-oninitreport-report-trigger.md)
+[OnPreReport (report extension) trigger](devenv-onprereport-reportextension-trigger.md)  
+[OnPostReport (report extension) trigger](../report/devenv-onpostreport-report-trigger.md)  
+[Report Triggers and Runtime Operations](../../devenv-report-triggers.md)  
 [Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
-[OnPreReport (Report) Trigger](../report/devenv-onprereport-report-trigger.md)  
-[Report Triggers and Runtime Operations](../../devenv-report-triggers.md)
+[Developing extensions](../../devenv-dev-overview.md)  

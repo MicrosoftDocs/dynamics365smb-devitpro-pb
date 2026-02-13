@@ -2,7 +2,7 @@
 title: Install a Business Central 2025 release Wave 2 (version 27) Update
 description: This article describes the tasks required for getting the monthly version 27 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 11/03/2025
+ms.date: 01/12/2026
 ms.reviewer: jswymer
 ms.topic: install-set-up-deploy
 ms.author: jswymer

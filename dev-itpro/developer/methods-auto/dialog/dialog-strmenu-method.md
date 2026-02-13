@@ -2,7 +2,7 @@
 title: "Dialog.StrMenu(Text [, Integer] [, Text]) Method"
 description: "Creates a menu window that displays a series of options."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 12/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -46,7 +46,7 @@ The number of the menu option that the user selected. If the user presses the Es
 
 ## Example  
 
-This example shows how to use the Dialog.StrMenu method.  
+This example shows how to use the `Dialog.StrMenu` method.  
  
 ```al
 var

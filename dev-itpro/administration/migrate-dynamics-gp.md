@@ -7,7 +7,7 @@ ms.devlang: al
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge, gp, migration
 ms.search.form: 4003
-ms.date: 01/2/2025
+ms.date: 01/14/2026
 ms.author: jswymer
 ---
 # Dynamics GP data migrated to Business Central online
@@ -65,6 +65,18 @@ In the **GP Company Migration Configuration** page, you can also choose to migra
 
 We also bring over outstanding receivables transactions. These transactions are brought in with the amount remaining in Dynamics GP. For example, if an invoice for $1000 was entered into Dynamics GP, and it has been partially paid and has a remaining balance of $400, the new invoice created in Business Central is for $600 because that's the amount remaining to be paid. We bring over all transaction types from Receivables Management.
 
+### Generating recurring sales lines
+
+The migration tools can automatically create recurring sales lines in Business Central based on sales accounts already set up in Dynamics GP. The option to create recurring sales lines is available on the **GP Company Migration Configuration** and **GP Company Migration Settings** page and is turned off by default.
+
+When enabled, the migration tools conduct the following evaluation process:
+
+- If a customer has a sales account assigned, create a recurring sales line for that customer.
+- If no customer-level account exists but the customer's class has one, create the line and apply it to all customers in that class
+- If neither customer nor class has a sales account, use the default from **Posting Accounts Setup** in Dynamics GP (if available).
+
+Each recurring line includes a description based on the Dynamics GP account and dimensions, is linked to the correct GL account, and is configured to automatically insert on customer quotes, orders, invoices, and credit memos.
+
 ## Vendor master records and outstanding transactions from the Payables module
 
 In the **GP Company Migration Configuration** page, you can choose to migrate all vendors from Dynamics GP or only active vendors. This action allows you not to migrate over vendors marked as inactive. All addresses from the vendor are brought over into Business Central. All vendor addresses from the vendor are migrated to Business Central. The vendor's Remit To Address is set to the main address for the vendor. All other vendor addresses are set up as Order addresses in Business Central, which allows the end user to choose the address needed when entering transactions after the migration.  
@@ -78,6 +90,18 @@ We also bring over outstanding Payables transactions. These transactions are bro
 **1099** vendor information and amounts can be migrated to Business Central. The **GP Company Migration Configuration** page has the option where you can select if you want to migrate **1099** information. The tax type, Federal ID number, and **1099** box number from the vendor record are migrated. In addition, the  **1099** box amounts are migrated for each **1099** vendor. If you select to migration **1099** information, you must also indicate the calendar year for which you want to migrate **1099** amounts.  The first supported year for migrating **1099** information is 2024.
 
 You can also bring over Open Purchase Orders. When we migrate purchase orders, we're looking at the items and the quantities remaining on those items to determine what we bring over as an open purchase order. If an item is fully received and invoiced that item isn't migrated. By bringing over open purchase orders, you don't have to enter outstanding transactions from the purchase order aspect.
+
+### Generating recurring purchase lines
+
+The migration tools can automatically create recurring purchase lines in Business Central based on purchasing accounts already set up in Dynamics GP. The option to create recurring purchase lines is available on the **GP Company Migration Configuration** and **GP Company Migration Settings** page and is turned off by default.
+
+When enabled, the migration tools conduct the following evaluation process:
+
+- If a vendor has a purchasing account assigned, create a recurring purchase line for that vendor
+- If no vendor-level account exists but the vendor's class has one, create the line and apply it to all vendors in that class
+- If neither vendor nor class has a purchasing account, use the default from **Posting Accounts Setup** in Dynamics GP (if available).
+
+Each recurring line includes a description based on the Dynamics GP account and dimensions, is linked to the correct GL account, and is configured to automatically insert on vendor quotes, orders, invoices, and credit memos.
 
 ## Inventory items
 
