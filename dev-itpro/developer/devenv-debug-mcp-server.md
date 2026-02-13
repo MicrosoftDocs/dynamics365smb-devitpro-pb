@@ -3,7 +3,7 @@ title: Troubleshooting MCP Server for AL
 description: Learn how to use the Troubleshooting MCP Server to analyze runtime state during debugging sessions with AI-powered insights in AL.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 12/11/2025
+ms.date: 02/13/2026
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.author: solsen
@@ -238,7 +238,7 @@ The Troubleshooting MCP Server has the following limitations:
 |Feature|Troubleshooting MCP Server|Traditional Debugger|
 |-------|----------------|-------------------|
 |View call stack|Yes. Programmatic access|Yes. Visual panel|
-|Inspect variables|Yes. All frames at once|Yes. One frame at a time|
+|Inspect variables|Yes. Per Frame ID, showing variables for that call.|Yes. One frame at a time|
 |Step through code|No.|Yes.|
 |Watch variables|No.|Yes. (watch expressions)|
 |AI analysis|Yes. Automatic insights|No.|
