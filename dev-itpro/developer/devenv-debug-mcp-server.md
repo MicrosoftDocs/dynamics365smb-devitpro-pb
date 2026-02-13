@@ -45,8 +45,7 @@ The Troubleshooting MCP Server is *only available when debugging*. When you star
 
 ### To verify the Troubleshooting MCP Server is available
 
-- In Visual Studio Code, choose the **tools icon** in the Copilot Chat window to see available MCP servers and their tools
-- Look for the Troubleshooting MCP Server and its four tools listed under it
+- The Troubleshooting MCP Server is only active during a debug session.
 
 ### Troubleshooting MCP Server tools
 
