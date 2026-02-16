@@ -41,8 +41,6 @@ landingContent:
         url: ai-development-toolkit-agent-create.md
       - text: Write effective instructions for an agent
         url: ai-development-toolkit-instructions.md
-      - text: Instruction keywords for an agent
-        url: ai-development-toolkit-instruction-keywords.md
       - text: Attachment capabilities and limitations
         url: ai-development-toolkit-attachments.md
       - text: Set up agent permissions and profiles
@@ -57,6 +55,12 @@ landingContent:
         url: ai-development-toolkit-agent-visibility.md
       - text: Agent frequently asked questions
         url: ai-development-toolkit-faq.md
+    - linkListType: reference
+      links:
+      - text: Integrate with the Tasks AL API
+        url: ai-development-toolkit-tasks-api.md
+      - text: Instruction keywords for an agent
+        url: ai-development-toolkit-instruction-keywords.md
 # Card
   - title: Develop with the AI development toolkit
     linkLists:
