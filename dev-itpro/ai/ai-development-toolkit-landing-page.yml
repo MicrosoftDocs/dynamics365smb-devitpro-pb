@@ -49,6 +49,8 @@ landingContent:
         url: ai-development-toolkit-permissions-profiles.md
       - text: Run an agent
         url: ai-development-toolkit-run-agent.md
+      - text: Integrate with the Tasks AL API
+        url: ai-development-toolkit-tasks-api.md
       - text: Iterate and test an agent
         url: ai-development-toolkit-iterate.md
       - text: Export and import an agent
