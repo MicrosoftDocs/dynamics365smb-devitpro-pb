@@ -4,7 +4,7 @@ description: Learn how to use the AI Test Tool to test Copilot features in AL.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 02/16/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 # AI Test Tool
 
-The AI Test Tool is an essential component of the developer tools for Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. It focuses on data-driven test automation to ensure that AI systems are accurate with various inputs, maintain the trust and security of our customers and their data, and are resilient to changes in AI model versions.
+The AI Test Tool for AL is an essential component of the developer tools for Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. It focuses on data-driven test automation to ensure that AI systems are accurate with various inputs, maintain the trust and security of our customers and their data, and are resilient to changes in AI model versions.
 
 With the AI Test Tool, you can:
 
@@ -25,7 +25,7 @@ With the AI Test Tool, you can:
 
 ## Step-by-step: using the AI Test Tool
 
-This goes over how to use the AI Test tool to set up a test suite, execute it, and view the results.
+This goes over how to use the AI Test Tool to set up a test suite, execute it, and view the results.
 
 **Prerequisite**: You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](ai-test-copilot-datasets.md) and [Writing AI tests](ai-test-copilot-ai-tests.md).
 
