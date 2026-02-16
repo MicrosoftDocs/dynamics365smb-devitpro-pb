@@ -97,7 +97,7 @@ Windows 11 Pro, or Education: 24 months from release date
 
 |Specification|Requirement|  
 |-----|-----|  
-|Supported operating systems|<ul><li>Windows 11 Enterprise, or Education \(64-bit edition, version 23H2 and later.\)</li><li>Windows 11 Pro \(64-bit edition, version 24H2 and later.\)</li><li>Windows Server 2025 (Datacenter, Standard)</li><li>Windows Server 2022 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
+|Supported operating systems|[!INCLUDE[supported-windows-versions](../developer/includes/supported-windows-versions.md)]|
 |Hardware resources|<ul><li>Hard disk space: 100 GB</li><li>Memory:<br /> 16 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, refer to [Microsoft Dynamics 365 for Sales Integration Requirements](#CRM).|  
 |Additional software|<ul><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li></ul>|  
