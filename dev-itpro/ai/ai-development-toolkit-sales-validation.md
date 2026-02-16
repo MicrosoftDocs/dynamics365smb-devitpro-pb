@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/12/2026
+ms.date: 02/13/2026
 ms.update-cycle: 180-days
 ---
 
@@ -67,7 +67,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 Add a new task to the agent.
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Agent Tasks (preview)**, and then choose the related link.
-1. Under **Designer** actions, choose **Run task** and create a new task for triggering the agent.
+1. Under **Design** actions, choose **Run task** and create a new task for triggering the agent.
 1. Add a title, for example, `Validate and process sales orders`.
 1. And then, add the following message: `Run and process shipment date <date>`.  
   That will be sufficient. `<date>` corresponds to the shipping date you chose for the sales order.
