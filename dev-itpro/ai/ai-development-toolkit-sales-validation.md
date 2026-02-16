@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 02/13/2026
+ms.date: 02/16/2026
 ms.update-cycle: 180-days
 ---
 
@@ -30,7 +30,8 @@ First, create the Sales Validation Agent.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Agent create new"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose **Sales Validation**, and then choose the **Create agent** button.
-1. You can use the arrows to review the setup steps.
+1. You can use the arrows to review the setup steps.  
+  If you want to change any of the default settings, you can do that now or after the agent is created. For example, you can change the agent name, description, or instructions. The default instructions are designed to validate sales orders based on inventory availability and shipping dates, but you can customize them to fit your specific business needs.
 1. In the **Configure agent** dialog, choose the **Active** toggle to activate the agent.
 1. Choose **Update** to save and close the agent setup dialog.
 
