@@ -64,11 +64,11 @@ This simplified configuration allows agents to:
 
 **General**
 
-Dynamic Tool Mode: Off
+Dynamic Tool Mode: OFF
 
-Discover Additional Objects: Off
+Discover Additional Objects: OFF
 
-Unblock Edit Tools: On
+Unblock Edit Tools: ON
 
 **Available Items**
 
@@ -87,11 +87,11 @@ This simplified configuration allows agents to:
 
 **General**
 
-Dynamic Tool Mode: On
+Dynamic Tool Mode: ON
 
-Discover Additional Objects: On
+Discover Additional Objects: ON
 
-Unblock Edit Tools: On
+Unblock Edit Tools: ON
 
 **Available Items**
 
