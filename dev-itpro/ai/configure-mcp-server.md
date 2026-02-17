@@ -122,7 +122,7 @@ For example, if you specify the following on the **MCP Server Configuration** pa
 
 |Object type|Object ID|Object Name|Allow read|Allow create|Allow modify|Allow delete|
 |-|-|-|-|-|-|-|
-|Page|30009|APIV2 - Customer|X|X|X|X|
+|Page|30009|APIV2 - Customer|✓|✓|✓|✓|
 
 The following tools are made available in the server:
 
