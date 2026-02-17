@@ -43,7 +43,7 @@ The connector abstracts away many of the API details, making it easier to use bu
 
 Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, DELETE) against Business Central endpoints, allowing for full customization and extensibility.
 
-**Choosing the connector and MCP Server:** Your choice depends on the agent’s requirements, the level of customization needed, and your familiarity with Business Central APIs. In short:
+**Choosing the connector and MCP Server:** Your choice depends on the agent's requirements, the level of customization needed, and your familiarity with Business Central APIs. In short:
 
 - Connector: For standard integration and automation
 - MCP server: For AI agents only
@@ -141,7 +141,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
    1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
    1. In the left-side navigation pane, select **Agents**.
-   1. Select the agent you want to modify or select **New agent** to create a new agent.
+   1. Select the agent you want to modify or select **Create a blank agent** to create a new agent from scratch.
 
    Learn more about creating agents in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
 
@@ -150,7 +150,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
    1. On the **Tools** tab of the agent page, select **+ Add a tool**.
    1. Search for and select **Dynamics 365 Business Central MCP Server (Preview)**.
    1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
-   1. Select **Add and configure** to return to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
+   1. Select **Add and configure** to return to the **Tools** tab.
    1. In **Inputs** section of the **Tools** tab, configure the MCP server to connect Business Central by setting the following fields.
 
       |Field|Value|
@@ -161,9 +161,9 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
    1. Go to the **Tools** section to view the individual tools (APIs) available to the agent, based on the **MCP Server Configuration** field. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in the list header to make sure the view is up-to-date.
 
-      - If you didn't specify a configuration: the list shows only the standard server actions `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. Read-only tools are available to the agent for all API pages in Business Central but they're discovered dynamically and therefore not listed.|
-      - If you specified a configuration that uses dynamic tool mode: the list shows the standard actions (`bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`). Tools for API pages defined in the configuration are available to the agent at runtime but aren't listed.
-      - If you specified a configuration that doesn't use dynamic tool mode: the list includes tools for API pages included in the configuration, so you can review and manage them individually.
+      - If you didn't specify a configuration, the list shows only the system tools: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. Read-only tools are available to the agent for all API pages in Business Central but they're discovered dynamically and therefore not listed.|
+      - If you specified a configuration that uses dynamic tool mode, the list shows the system tools: (`bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`). Tools for API pages defined in the configuration are available to the agent at runtime but aren't listed.
+      - If you specified a configuration that doesn't use dynamic tool mode, the list includes tools for API pages included in the configuration , so you can review and manage them individually.
 
       Learn more about tools and dynamics tool mode in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations) and [How API object entries in Business Central map to MCP server tools](configure-mcp-server.md#how-api-page-object-entries-map-to-mcp-server-tools).
 1. Select **Save**.

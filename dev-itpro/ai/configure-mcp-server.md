@@ -17,14 +17,16 @@ The article explains how to enable and configure the Business Central MCP Server
 
 ## Configuration overview
 
-By default, the MCP Server gives agents read-only access to all exposed Business Central API pages. If you want to enable agents to create, modify, or delete entities and data, you must configure these operations on the MCP Server. Configuring the Business Central MCP server involves adding API page objects in individual configurations and defining the allowed operations. The operations are available as *tools* in Copilot Studio. Learn more in [How API page object entries map to MCP server tools](#how-api-page-object-entries-map-to-mcp-server-tools).
+By default, the MCP Server gives agents read-only access to all exposed Business Central API pages. This behavior means that without any extra setup in Business Central, agent makers can immediately create agents that read the data exposed by these APIs.
+
+On the other hand, if you want to enable agents to create, modify, or delete entities and data, you must configure these operations on the MCP Server as describe in this article. Configuring the Business Central MCP server involves adding API page objects in individual configurations and defining the allowed operations. The operations are available as *tools* in Copilot Studio. Learn more in [How API page object entries map to MCP server tools](#how-api-page-object-entries-map-to-mcp-server-tools).
 
 Once the MCP server is enabled and configured, the individual configurations become available in Copilot Studio for agent makers to use in their agents. Learn more in [Create agents with Copilot Studio](create-agent-in-copilot-studio.md).
 
 ## Prerequisites
 
 - The **Feature: Enable MCP Server access** feature is enabled on the environment in the [Feature Management](https://businesscentral.dynamics.com/?page=2610) page. Learn more in [Enabling Upcoming Features Ahead of Time](/dynamics365/business-central/dev-itpro/administration/feature-management).
-- You have the **MCP - ADMIN** permission set or equivalent permissions. 
+- You have at least the **MCP - ADMIN** permission set or equivalent permissions.
 
 ## Create MCP Server configurations
 
@@ -53,9 +55,54 @@ Once the MCP server is enabled and configured, the individual configurations bec
    |Allow Delete|Specifies whether delete operations are allowed for this tool.|
    |Allow Bound Actions|Specifies whether bound actions are allowed for this tool. A bound action is an OData action that is bound to a resource, like a table or record.|
 
+### Example 1
+
+This simplified configuration allows agents to:
+
+- Read, modify, create, and delete items
+- Read and modify
+
+**General**
+
+Dynamic Tool Mode: Off
+
+Discover Additional Objects: Off
+
+Unblock Edit Tools: On
+
+**Available Items**
+
+|Object ID|ObjectName |Allow read  |Allow modify  |Allow create |Allow delete|
+|-|-|-|-|-|-|
+|30008|APIV2 - Items|✓|✓|✓|✓|
+|30009|APIV2 - Customers|✓|✓|||
+
+### Example 2
+
+This simplified configuration allows agents to:
+
+- Read, modify, create, and delete items
+- Read and modify customers
+- Read all other API pages
+
+**General**
+
+Dynamic Tool Mode: On
+
+Discover Additional Objects: On
+
+Unblock Edit Tools: On
+
+**Available Items**
+
+|Object ID|ObjectName |Allow read  |Allow modify  |Allow create |Allow delete|
+|-|-|-|-|-|-|
+|30008|APIV2 - Items|✓|✓|✓|✓|
+|30009|APIV2 - Customers|✓|✓|||
+
 ## How API page object entries map to MCP server tools
 
-When you add an API page object entry to the MCP Server Configuration, each allowed operation (read, create, modify, update, delete, or bound action) results in a corresponding tool in the MCP server. These tools can then be added to agents in clients like Copilot Studio.
+When you add an API page object entry to an MCP Server Configuration, each allowed operation (read, create, modify, update, delete, or bound action) results in a corresponding tool in the MCP server. These tools can then be added to agents in clients like Copilot Studio.
 
 Depending on the **Dynamic Tool Mode** setting, these tools are added explicitly by agent makers during design or dynamically by the agent at runtime. The following sections explain how tools are named and made available in each mode.
 
@@ -93,7 +140,7 @@ If the **Dynamic Tool Mode** is turned on, then the tools aren't available for s
 In this case, the agent uses these standard tools to search for and execute the needed tools from the configuration: `bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`.
 
 > [!NOTE]
-> These standard tools use a different naming convention (lowercase with underscores) because they're system-level tools provided by the MCP server, not generated from object metadata like the other tools listed in the other tab.
+> These system tools use a different naming convention (lowercase with underscores) because they're provided by the MCP server, not generated from object metadata like the other tools listed in the other tab.
 
 ---
 
