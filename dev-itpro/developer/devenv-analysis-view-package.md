@@ -142,6 +142,7 @@ You can also rename the tab and change its description through the tab menu by c
 
 ## Related information
 
+[Analysis views](/dynamics365/business-central/ui-how-to-use-analysis-views)  
 [Pages overview](devenv-pages-overview.md)  
 [Page extension object](devenv-page-ext-object.md)  
 [Page customization object](devenv-page-customization-object.md)  
