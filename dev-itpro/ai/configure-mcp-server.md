@@ -144,6 +144,9 @@ In this case, the agent uses these standard tools to search for and execute the 
 
 ---
 
+
+Business Central has an MCP server that you can configure and use from Visual Studio Code, and it’s mainly intended to connect Copilot / agent mode in VS Code directly to a running Business Central environment (sandbox, local container, or cloud) so the AI can act with live BC context, not just static source code.
+
 ## Next steps
 
 [Create agents with Copilot Studio](create-agent-in-copilot-studio.md)
