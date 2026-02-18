@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 [!INCLUDE [prod_short](includes/prod_short.md)] allows you to export analysis views that are created in Analysis Mode for list and worksheet pages, package them, and deliver them as part of your AL extensions. This article describes how to export a view definition, add it to your AL project, and define it on a page, page extension, or page customization.
 
-Learn more about analysis view in [Analysis views](/dynamics365/business-central/ui-how-to-use-analysis-views).
+Learn more about using the analysis view in [Analysis views](/dynamics365/business-central/ui-how-to-use-analysis-views).
 
 ## Export an analysis view definition
 
@@ -22,7 +22,7 @@ To export an analysis view, follow these steps:
 2. Enter **Analysis Mode**.
 3. On the analysis view tab, open the tab menu and choose **Export Definition**.
 
-This action downloads a JSON file that contains the serialized definition of the analysis view. Add this file to your AL extension project.
+This action downloads a JSON file that contains the serialized definition of the analysis view. Add this file to your AL extension project. 
 
 ## Define analysis views on pages
 
