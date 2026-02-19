@@ -4,7 +4,7 @@ description: Configure and modify settings in the Setup or Installed Business Ce
 author: jswymer
 ms.topic: how-to
 ms.service: dynamics-365-op
-ms.date: 02/18/2026
+ms.date: 02/19/2026
 ms.author: jswymer
 ms.reviewer: solsen
 ms.custom:
