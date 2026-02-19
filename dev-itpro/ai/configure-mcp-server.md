@@ -1,17 +1,16 @@
 ---
-title: Build Business Central agents with Copilot Studio
-description: Learn how to create agents that expose existing Business Central data and processes through Copilot Studio using either the Business Central MCP server or Business Central connector.
+title: Configure Business Central MCP Server
+description: Learn how to configure the Business Central MCP Server to enable AI agents to access and interact with your Business Central data and processes.
 ms.topic: how-to
 ms.date: 02/19/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.collection: 
 ms.custom: 
 ---
 # Configure Business Central MCP Server
 
-Business Central provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. With agents, customers and employees can conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, Visual Studio Code, and websites.
+Business Central provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. Customers and employees can conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, Visual Studio Code, and websites.
 
 With the MCP Server configured, agents can perform tasks such as:
 
@@ -29,7 +28,7 @@ The article explains how to enable and configure the Business Central MCP Server
 
 By default, the MCP Server gives agents read-only access to all exposed Business Central API pages. This behavior means that without any extra setup in Business Central, agent makers can immediately create agents that read the data exposed by these APIs.
 
-On the other hand, if you want to enable agents to create, modify, or delete entities and data, you must configure these operations on the MCP Server as describe in this article. Configuring the Business Central MCP server involves adding API page objects in individual configurations and defining the allowed operations. The operations are available as *tools* in Copilot Studio. Learn more in [How API page object entries map to MCP server tools](#how-api-page-object-entries-map-to-mcp-server-tools).
+On the other hand, if you want to enable agents to create, modify, or delete entities and data, you must configure these operations on the MCP Server. Configuring the Business Central MCP server involves adding API page objects in individual configurations and defining the allowed operations. The operations are available as *tools* in Copilot Studio. Learn more in [How API page object entries map to MCP server tools](#how-api-page-object-entries-map-to-mcp-server-tools).
 
 Once the MCP server is enabled and configured, the individual configurations become available in Copilot Studio for agent makers to use in their agents. Learn more in [Create agents with Copilot Studio](create-agent-in-copilot-studio.md).
 
@@ -48,7 +47,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
    |-|-|
    |Name|Specifies the configuration's name. This name appears in Copilot Studio to assign the configuration to MCP Server connection for an agent.|
    |Description|Specifies a brief description of the configuration.|
-   |Active|Specifies whether the configuration is active. When this switch is on, the configuration and its tools are available for agents to use. If you turn off the switch, agents that currently use the configuration won't work as expected.|
+   |Active|Specifies whether the configuration is active. When this switch is on, the configuration and its tools are available for agents to use. If you turn off the switch, agents that currently use the configuration don't work as expected.|
    |Dynamic Tool Mode|Specifies whether to enable dynamic tool mode for the MCP configuration. When this switch is on, agents search for tools within the configuration dynamically, which means the tools don't have to be explicitly added to agent configuration.<br><br>This option is useful when you expose a large number of API pages because some clients, like Copilot Studio, limit the number of tools on an agent. Tools in excess of the limit aren't available to the agent. <br><br>For example, Copilot Studio currently has a limit of 70 tools. If you add all standard APIs as tools in the configuration, only the first 70 are available to agents you build in Copilot Studio. To make all the standard APIs available, turn on the switch.|
    |Discover Additional Objects|Specifies whether agents can access API page objects that aren't explicitly defined in the configuration. When this switch is on, agents have read-only access to all API page objects in the environment, even if they aren't added as tools in the configuration. This setting only works when **Dynamic Tool Mode** is turned on.|
    |Unblock Edit Tools|Specifies whether APIs included as tools in the configuration can perform create, update, or delete operations. When this switch is turned on, the `Allow Create`, `Allow Modify`, `Allow Delete`, and `Allow Bound Actions` permissions control write operations. When turned off, all these permissions are set to `false` making the tools read-only.|
@@ -156,14 +155,15 @@ In this case, the agent uses these standard tools to search for and execute the 
 
 ## Get the MCP server configuration connection string
 
-Each MCP server configuration has a connection string, which is JSON definition that includes informaton for agents to connect to your Business Central environment. You can use the connection string to set up the MCP configuration in various clients, such as Visual Studio Code, to enable natural-language access to your Business Central data and processes.
+Each MCP server configuration has a connection string, which is JSON definition that includes information for agents to connect to your Business Central environment. You can use the connection string to set up the MCP configuration in various clients, such as Visual Studio Code, to enable natural-language access to your Business Central data and processes.
 
 To get your MCP server configuration connection string:
 
 1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
 1. Open the configuration from the list.
 1. On the **Model Context Protocol (MCP) Server Configuration** page, select **Advanced** > **Connection String**.
-1. On the **Connection String** dialog displays the connection string similaer to:
+
+   The **Connection String** dialog displays the connection string similar to:
 
    ```json
    "businesscentral": {
@@ -178,7 +178,7 @@ To get your MCP server configuration connection string:
    }
    ```
 
-   - `url`: The MCP server endpoint. This value is the same for all Business Central MCP configurations .
+   - `url`: The MCP server endpoint. This value is the same for all Business Central MCP configurations.
    - `type`: The connection protocol type. This value is the same for all Business Central MCP configurations.
    - `TenantId`: The Microsoft Entra tenant ID used by the Business Central environment
    - `EnvironmentName`: The Business Central environment name
