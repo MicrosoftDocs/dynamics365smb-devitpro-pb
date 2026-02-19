@@ -11,7 +11,17 @@ ms.custom:
 ---
 # Configure Business Central MCP Server
 
-Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. With agents, customers and employees to conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, and websites.
+Business Central provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. With agents, customers and employees can conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, Visual Studio Code, and websites.
+
+With the MCP Server configured, agents can perform tasks such as:
+
+- **View records**: List all customers, items, or other entities exposed through API pages
+- **Edit records**: Update customer information, item details, or other entity properties
+- **Create records**: Add new customers, items, or other entities to Business Central
+- **Delete records**: Remove entities from Business Central when permissions allow
+- **Perform bound actions**: Execute OData actions attached to records, like posting documents or changing statuses
+
+The specific tasks available depend on your MCP Server configuration and the permissions you define for each API page object.
 
 The article explains how to enable and configure the Business Central MCP Server in your Business Central environment so agents can connect to the environment's APIs.
 
@@ -144,12 +154,44 @@ In this case, the agent uses these standard tools to search for and execute the 
 
 ---
 
+## Get the MCP server configuration connection string
 
-Business Central has an MCP server that you can configure and use from Visual Studio Code, and it’s mainly intended to connect Copilot / agent mode in VS Code directly to a running Business Central environment (sandbox, local container, or cloud) so the AI can act with live BC context, not just static source code.
+Each MCP server configuration has a connection string, which is JSON definition that includes informaton for agents to connect to your Business Central environment. You can use the connection string to set up the MCP configuration in various clients, such as Visual Studio Code, to enable natural-language access to your Business Central data and processes.
+
+To get your MCP server configuration connection string:
+
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Open the configuration from the list.
+1. On the **Model Context Protocol (MCP) Server Configuration** page, select **Advanced** > **Connection String**.
+1. On the **Connection String** dialog displays the connection string similaer to:
+
+   ```json
+   "businesscentral": {
+      "url": "https://mcp.businesscentral.dynamics.com",
+      "type": "http",
+      "headers": {
+      "TenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
+      "EnvironmentName": "Production",
+      "Company": "CRONUS USA, Inc.",
+      "ConfigurationName": "MyMCPConfig"
+      }
+   }
+   ```
+
+   - `url`: The MCP server endpoint. This value is the same for all Business Central MCP configurations .
+   - `type`: The connection protocol type. This value is the same for all Business Central MCP configurations.
+   - `TenantId`: The Microsoft Entra tenant ID used by the Business Central environment
+   - `EnvironmentName`: The Business Central environment name
+   - `Company`: The company name in Business Central
+   - `ConfigurationName`: The name for your MCP configuration
+
+1. Copy the text or select **Download** to save it in a text (.txt) file on your device.
 
 ## Next steps
 
 [Create agents with Copilot Studio](create-agent-in-copilot-studio.md)
+
+[Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
 
 ## Related information
 
