@@ -134,7 +134,7 @@ group("CopilotActionGroup")
 
 ## UI strings
 
-When writing UI strings, such as labels and captions, we recommend following these best practices:
+When writing UI strings, such as labels and captions, we recommend following best practices:
 
 - Use sentence case for labels and captions, when a verb is present and the string can be read as a sentence. For example, "Calculate total", "Generate report", "Turn index off", "Submit order".
 - Use title case for labels and captions when a verb isn't present, or the string can't be read as a sentence. For example, "Customer Card", "General Ledger", "Dimensions", "Sales Order".
