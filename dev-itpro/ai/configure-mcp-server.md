@@ -2,7 +2,7 @@
 title: Build Business Central agents with Copilot Studio
 description: Learn how to create agents that expose existing Business Central data and processes through Copilot Studio using either the Business Central MCP server or Business Central connector.
 ms.topic: how-to
-ms.date: 12/04/2025
+ms.date: 02/19/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
