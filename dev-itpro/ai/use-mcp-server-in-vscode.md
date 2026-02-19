@@ -22,6 +22,9 @@ Before you begin, ensure the following requirements are met:
 
 - Visual Studio Code installed with GitHub Copilot extension
 - Access to a Business Central online environment enabled with the MCP server. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+- Connection string details for MCP server configuration you want to use for agents (TenantId, EnvironmentName, Company, and ConfigurationName).
+
+  You can get the complete MCP server configuration connection string directly from the Business Central web client. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
 
 ## Set up the MCP Server in Visual Studio Code
 
@@ -43,7 +46,10 @@ Before you begin, ensure the following requirements are met:
    2. In this folder, create a folder named `.vscode` if it doesn't already exist.  
    3 In the `.vscode` folder, create a file called `mcp.json`.
 
-1. Add the Business Central MCP server configuration to the `mcp.json` file:
+1. Add the Business Central MCP server configuration connection string to the `mcp.json` file:
+
+   > [!TIP]
+   > If you copied the MCP server configuration connection string directly from the Business Central web client paste it here. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
 
    ```json
    {
