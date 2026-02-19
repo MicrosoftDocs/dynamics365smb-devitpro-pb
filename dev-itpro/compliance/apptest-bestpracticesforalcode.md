@@ -2,13 +2,13 @@
 title: Best practices for AL code
 description: Best practices for writing AL code for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 05/16/2025
+ms.date: 02/19/2026
 ms.topic: best-practice
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Best practices for AL  
+# Best practices for AL
 
 This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additive to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
@@ -96,6 +96,8 @@ actions
     addafter(ApprovalEntries)
     {
         action(MyPrefixVacation)
+    }
+}
 ```
 
 #### Codeunit
@@ -129,6 +131,13 @@ group("CopilotActionGroup")
     }
 }
 ```
+
+## UI strings
+
+When writing UI strings, such as labels and captions, we recommend following these best practices:
+
+- Use sentence case for labels and captions, when a verb is present and the string can be read as a sentence. For example, "Calculate total", "Generate report", "Turn index off", "Submit order".
+- Use title case for labels and captions when a verb isn't present, or the string can't be read as a sentence. For example, "Customer Card", "General Ledger", "Dimensions", "Sales Order".
 
 ## Formatting
 
