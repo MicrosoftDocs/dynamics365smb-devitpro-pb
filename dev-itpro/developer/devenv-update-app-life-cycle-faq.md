@@ -3,7 +3,7 @@ title: "Lifecycle of apps and extensions FAQ"
 description: "Overview of the frequently asked questions about updating an app on Marketplace."
 author: SusanneWindfeldPedersen
 ms.topic: faq
-ms.author: freddyk
+ms.author: solsen
 ms.date: 08/01/2021
 ms.reviewer: jswymer
 ---

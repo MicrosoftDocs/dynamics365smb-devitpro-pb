@@ -1,11 +1,11 @@
 ---
 title: "FAQ about Updating your Business Central App"
 description: "Get answers to some of your questions about updating your app for Dynamics 365 Business Central"
-author: freddyk
+author: jswymer
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.topic: faq
-ms.author: freddyk
+ms.author: jswymer
 ---
 
 # FAQ about Updating your Business Central App

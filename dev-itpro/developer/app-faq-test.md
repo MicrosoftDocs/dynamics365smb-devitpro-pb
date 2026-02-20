@@ -1,11 +1,11 @@
 ---
 title: "FAQ about Testing your Business Central App"
 description: "Get answers to some of your questions about testing when you build an app for Dynamics 365 Business Central"
-author: freddyk
+author: susannewindfeldpedersen
 ms.date: 08/15/2022
 ms.reviewer: jswymer
 ms.topic: faq
-ms.author: freddyk
+ms.author: solsen
 ---
 
 # FAQ about Testing your Business Central App

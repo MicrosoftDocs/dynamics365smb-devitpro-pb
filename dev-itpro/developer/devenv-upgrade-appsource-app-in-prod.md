@@ -2,11 +2,10 @@
 title: "Upgrading Marketplace Apps in Production"
 description: "Describes how to upgrade apps available on Marketplace that are already in running in production."
 author: SusanneWindfeldPedersen
-
 ms.date: 08/19/2021
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.author: freddyk
+ms.author: solsen
 ---
 
 # Upgrading Marketplace Apps in Production

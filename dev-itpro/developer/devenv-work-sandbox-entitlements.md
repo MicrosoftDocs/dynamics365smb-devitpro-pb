@@ -1,11 +1,11 @@
 ---
 title: Working with sandboxes and entitlements
 description: Learn about development sandboxes and entitlements.
-ms.author: freddyk
+ms.author: jswymer
 ms.reviewer: jswymer
 ms.date: 01/04/2024
 ms.topic: concept-article
-author: freddydk
+author: jswymer
 ---
 
 # Working with development sandboxes and entitlements
