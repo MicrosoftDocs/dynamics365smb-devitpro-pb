@@ -3,7 +3,7 @@ title: Deprecated Features in the application
 description: Describes the features that have been moved, removed, or replaced in the W1 version.
 author: brentholtorf
 ms.author: bholtorf
-ms.date: 10/10/2025
+ms.date: 02/20/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.custom: bap-template
@@ -184,7 +184,7 @@ The following features are marked as `obsolete:pending` in 2023 release wave 1.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups and adding the ability to group users directly on permission sets. On the **Permission Sets** page, use the **Users** FactBox to assign the set to users.<br><br> To make it easier to reuse sets of users across other Dynamics 365 apps, we've also introduced optional security groups. Administrators can link [!INCLUDE [prod_short](../includes/prod_short.md)] security groups to their counterparts in Microsoft Entra ID or Windows Active Directory. The link let's administrators manage group memberships in Active Directory. In terms of managing permissions, security groups work in the same way as user groups. Learrn more about the new security groups in [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).<br><br>If you have an extension that relies on user groups, and you'd like to explore examples of how to update it to use permission sets or [!INCLUDE [prod_short](../developer/includes/prod_short.md)] security groups, refer to [Migrate from User Groups to Permission Sets or Security Groups](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-user-groups). |
+|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups and adding the ability to group users directly on permission sets. On the **Permission Sets** page, use the **Users** FactBox to assign the set to users.<br><br> To make it easier to reuse sets of users across other Dynamics 365 apps, we've also introduced optional security groups. Administrators can link [!INCLUDE [prod_short](../includes/prod_short.md)] security groups to their counterparts in Microsoft Entra ID or Windows Active Directory. The link let's administrators manage group memberships in Active Directory. In terms of managing permissions, security groups work in the same way as user groups. Learn more about the new security groups in [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).<br><br>For on-premises deployments using Microsoft Entra authentication, security groups support requires Business Central version 25.11, 26.5, 27.4 or later.<br><br>If you have an extension that relies on user groups, and you'd like to explore examples of how to update it to use permission sets or [!INCLUDE [prod_short](../developer/includes/prod_short.md)] security groups, refer to [Migrate from User Groups to Permission Sets or Security Groups](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-user-groups).|
 
 ## Changes in 2022 release wave 2
 
