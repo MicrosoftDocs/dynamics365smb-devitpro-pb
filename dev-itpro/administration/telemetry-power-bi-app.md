@@ -15,7 +15,7 @@ ms.custom:
 
 # Analyze and monitor telemetry with Power BI
 
-To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we've developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we've developed two Power BI apps available from Microsoft Marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
 ## About the reports in the app 
 
@@ -90,7 +90,7 @@ What do the pages in the report show?
 
 To install or update the app for _environment telemetry_, go to [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport) and select **Get it now**.
 
-You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
+You'll first have to sign in to Microsoft Marketplace using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
 
 Once installed, the **Dynamics 365 Business Central Usage** app appears under **Apps** in Power BI. A workspace with the same name is also installed for configuring the app.
 
@@ -106,7 +106,7 @@ By default, the app shows sample data in the reports. This sample data enables y
 
 To install or update the app for _app telemetry_, go to [https://aka.ms/bctelemetry-isv-app](https://aka.ms/bctelemetry-isv-app) and select **Get it now**.
 
-You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
+You'll first have to sign in to Microsoft Marketplace using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
 
 Once installed, the **Dynamics 365 Business Central App Usage** app appears under **Apps** in Power BI. A workspace with the same name is also installed for configuring the app.
 
@@ -197,7 +197,7 @@ The following video shows how to connect Power BI telemetry apps to read your te
 
 ## Install, share, and update apps
 
-From time to time, the app is released in a new improved version via AppSource. To learn how to deal with app updates, see 
+From time to time, the app is released in a new improved version via Marketplace. To learn how to deal with app updates, see 
 [Install, share, and update template apps in your organization](/power-bi/connect-data/service-template-apps-install-distribute)
 
 ### Video example

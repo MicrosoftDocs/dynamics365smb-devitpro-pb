@@ -114,7 +114,7 @@ Your code acquires tokens automatically using the managed identity—no secrets 
 
 **Context and problem:**  
 
-Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (AppSource apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reaches these services. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is an online (SaaS) solution where environments are regularly rebalanced and upgraded across application services with changing IP addresses. So you need a solution that works with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s dynamic infrastructure.
+Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (Marketplace apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reaches these services. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is an online (SaaS) solution where environments are regularly rebalanced and upgraded across application services with changing IP addresses. So you need a solution that works with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s dynamic infrastructure.
 
 **Solution:**  
 Use Azure service tags and network access controls to create allow lists based on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s IP ranges.

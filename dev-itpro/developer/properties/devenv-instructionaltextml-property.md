@@ -31,7 +31,7 @@ InstructionalTextML = ENU='Add an entity from your list of contacts.'; ESP='Aña
 
 ## Remarks
 
-To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+To submit an app to Marketplace, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 ## Related information  
 

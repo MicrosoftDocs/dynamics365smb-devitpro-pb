@@ -1,6 +1,6 @@
 ---
-title: AppSource Azure Application Insights and Submission FAQ
-description: Describes the most common questions about Azure Application Insights when submitting your app to AppSource for Business Central.
+title: Marketplace Azure Application Insights and Submission FAQ
+description: Describes the most common questions about Azure Application Insights when submitting your app to Marketplace for Business Central.
 author: qutreson
 ms.date: 01/23/2026
 ms.reviewer: solsen
@@ -9,9 +9,9 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# AppSource Azure Application Insights and submission FAQ
+# Marketplace Azure Application Insights and submission FAQ
 
-This article addresses some of the most frequently asked questions around Azure Application Insights for AppSource apps.
+This article addresses some of the most frequently asked questions around Azure Application Insights for Marketplace apps.
 
 ## How do I enable Application Insights telemetry for my submissions?
 
@@ -32,7 +32,7 @@ Here's a list of steps that you can follow to troubleshoot this issue:
 
 ## I can see some signals in Application Insights, but I can't find why my submission failed, what do I do next?
 
-Much information is provided in the custom dimensions of the signals. The validation errors can generally be found for the signals with eventId `LC0034`. Learn more about the signals emitted during the technical validation of AppSource submission in [Analyzing AppSource submission validation trace telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+Much information is provided in the custom dimensions of the signals. The validation errors can generally be found for the signals with eventId `LC0034`. Learn more about the signals emitted during the technical validation of Marketplace submission in [Analyzing Marketplace submission validation trace telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
 > [!NOTE]
 > Instead of writing your own queries, we recommend using the executable Azure Data Studio [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). This guide contains queries that process the signals for your submission and extract the important information.
@@ -40,4 +40,4 @@ Much information is provided in the custom dimensions of the signals. The valida
 ## Related information
 
 [Technical validation checklist](devenv-checklist-submission.md)  
-[Analyzing AppSource submission validation trace telemetry](../administration/telemetry-appsource-submission-validation-trace.md)
+[Analyzing Marketplace submission validation trace telemetry](../administration/telemetry-appsource-submission-validation-trace.md)

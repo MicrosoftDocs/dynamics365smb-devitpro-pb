@@ -12,7 +12,7 @@ ms.author: freddyk
 
 This section contains answers to frequently asked questions about managing the offer in Partner Center when you submit an app for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-## If I select the Go Live button, does that mean my app goes live to AppSource?
+## If I select the Go Live button, does that mean my app goes live to Marketplace?
 
 No. This button is deceiving, and I wish it were worded differently. When you select this button, it triggers our validation process and puts your app into our validation queue.
 
@@ -33,5 +33,5 @@ No. If you don't change your app in a submission, we skip technical validation.
 
 [FAQ about Updating your Business Central App](app-faq-update.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  
-[Update Lifecycle for AppSource Apps FAQ](devenv-update-app-life-cycle-faq.md)  
+[Update Lifecycle for Marketplace Apps FAQ](devenv-update-app-life-cycle-faq.md)  
 [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  

@@ -1,6 +1,6 @@
 ---
 title: Rules and guidelines for AL code
-description: Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to AppSource.
+description: Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to Marketplace.
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
 ms.reviewer: solsen
@@ -77,7 +77,7 @@ To help you save time, we're sharing a list of the top 15 common pitfalls that r
     Our validation team is testing your app functionality manually, so we need to be able to understand the core functionality of your app. If your user scenario document is missing important details that are needed for us to properly walk through your app's setup and usage scenarios, we can't validate your app successfully. For more information, see [User Scenario Documentation](apptest-userscenario.md).
 15. The .json file is incorrect
 
-    There are many values in the app.json file that may not be mandatory to compile your app, but are mandatory for your app to be in AppSource. For example, your app can't be published to a production tenant if the **target** value is set to *OnPrem*. It must be set to *Cloud*. For information, see [JSON Files](../developer/devenv-json-files.md).
+    There are many values in the app.json file that may not be mandatory to compile your app, but are mandatory for your app to be in Marketplace. For example, your app can't be published to a production tenant if the **target** value is set to *OnPrem*. It must be set to *Cloud*. For information, see [JSON Files](../developer/devenv-json-files.md).
 
 ## Related information
 

@@ -30,13 +30,13 @@ Environments that have extensions with name collisions can experience issues whe
 
 ## Affixes requirements for extensions
 
-### For AppSource extensions
+### For Marketplace extensions
 
 > [!IMPORTANT]  
-> The use of affixes for object names is required for AppSource submissions as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
+> The use of affixes for object names is required for Marketplace submissions as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
 
 
-In order to meet the requirements for the AppSource technical validation, you must have a three letters affix registered for your extension publisher, and you must use the affix in your extension.
+In order to meet the requirements for the Marketplace technical validation, you must have a three letters affix registered for your extension publisher, and you must use the affix in your extension.
 
 If you don't have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com?subject=Affix%20Registration%20Request&body=MPN%20ID%3A%20%3CMPN%20ID%20in%20Partner%20Center%3E%0APublisher%20Name%3A%20%3Cthe%20publisher%20name%20that%20you%20use%20in%20your%20extensions%20(in%20the%20app.json%20file)%3E%0AAffixes%3A%20%3Cfive%20affix%20suggestions%20(each%20exactly%20three%20characters%20long)%20in%20order%20of%20priority%3E) and provide us with the following information to reserve the prefix/suffix of your choosing:
 
@@ -51,10 +51,10 @@ Note, that you aren't required to change any already registered affixes; you can
 
 ### For per-tenant extensions
 
-Per-tenant extensions aren't required to use a prefix or suffix, but we strongly recommend that you do so. You can use *pte* as prefix or suffix to avoid conflicts with AppSource apps or base objects.
+Per-tenant extensions aren't required to use a prefix or suffix, but we strongly recommend that you do so. You can use *pte* as prefix or suffix to avoid conflicts with Marketplace apps or base objects.
 
 > [!NOTE]
-> If your per-tenant extension causes a conflict with a new object in the base application or an updated AppSource app, then the per-tenant extension will be required to make the change.
+> If your per-tenant extension causes a conflict with a new object in the base application or an updated Marketplace app, then the per-tenant extension will be required to make the change.
 
 ## Examples of objects with affixes or namespaces
 
@@ -168,7 +168,7 @@ Let's look at some examples:
 | pte myext salesperson code | salesperson code myext pte |
 | pteMyExtSalesPersonCode    | SalesPersonCodeMyExtPte    |
 
-## Examples - AppSource app
+## Examples - Marketplace app
 
 Alternatively, let's say that your company is Fabrikam, and you're building an app called *Rentals*. First thing, you email [d365val@microsoft.com](mailto:d365val@microsoft.com) and register *fab* as your company affix.  
 

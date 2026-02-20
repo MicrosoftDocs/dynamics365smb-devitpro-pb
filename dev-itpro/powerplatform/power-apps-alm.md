@@ -20,7 +20,7 @@ When you're building and distributing software services, application lifecycle m
 
 Business Central offers full ALM support for Power Platform solutions in our Al-Go for GitHub template. The integration lets you store your AL and Power Platform artifacts in a single repository&mdash;where you can manage it with a unified set of tools. This setup means you can add Power Platform artifacts to your offering without any extra management and setup cost.  
 
-The Al-Go for GitHub template is open source and based on the [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions). For now, we only support per-tenant extensions, not AppSource extensions. To learn more, about the template and how to use it, go to [https://github.com/microsoft/AL-Go/tree/PPPreview](https://github.com/microsoft/AL-Go/tree/PPPreview).
+The Al-Go for GitHub template is open source and based on the [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions). For now, we only support per-tenant extensions, not Marketplace extensions. To learn more, about the template and how to use it, go to [https://github.com/microsoft/AL-Go/tree/PPPreview](https://github.com/microsoft/AL-Go/tree/PPPreview).
 
 ## New and updated workflows
 

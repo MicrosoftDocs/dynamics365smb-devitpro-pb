@@ -1,6 +1,6 @@
 ---
 title: User scenario documentation
-description: Describing how to generate the required scenario document to get your app approved for AppSource.
+description: Describing how to generate the required scenario document to get your app approved for Marketplace.
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
 ms.topic: article

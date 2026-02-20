@@ -20,7 +20,7 @@ Yes. It's your app and you're the expert, so you should have a vested interest i
 
 No. Please, don't submit your app for validation until it has been 100% tested. This will lead to many delays in the validation process otherwise. Also, it wastes time and resources.
 
-## Is it ok to test my AppSource app in an on-premises environment?
+## Is it ok to test my Marketplace app in an on-premises environment?
 
 No. You must test your app using [!INCLUDE[prod_short](includes/prod_short.md)] online. Although [!INCLUDE[prod_short](includes/prod_short.md)] online and on-premises are similar, they aren't the exact same. If you only test on-premises, invariably issues will be found in our validation testing.
 
@@ -62,5 +62,5 @@ No. It's important you test from various previous versions of your app. This is 
 
 [FAQ about Updating your Business Central App](app-faq-update.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  
-[Update Lifecycle for AppSource Apps FAQ](devenv-update-app-life-cycle-faq.md)  
+[Update Lifecycle for Marketplace Apps FAQ](devenv-update-app-life-cycle-faq.md)  
 [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  

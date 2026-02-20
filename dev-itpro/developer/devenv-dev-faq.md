@@ -34,9 +34,9 @@ To read about enabling debugging in AL, see here [Debugging](devenv-debugging.md
 
 We always download the highest published version of symbols. This means that if one of your dependencies has a higher version published, that version is downloaded even if it's not installed for your environment.
 
-## Where do I find help regarding AppSource validation and submission?
+## Where do I find help regarding Marketplace validation and submission?
 
-When submitting an app for AppSource, you must make sure that it validates against the [Technical Validation Checklist](devenv-checklist-submission.md). For frequently asked questions, see [Technical Validation Checklist FAQ](devenv-checklist-submission-faq.md).
+When submitting an app for Marketplace, you must make sure that it validates against the [Technical Validation Checklist](devenv-checklist-submission.md). For frequently asked questions, see [Technical Validation Checklist FAQ](devenv-checklist-submission-faq.md).
 
 ## What constitutes the identity of an app?
 

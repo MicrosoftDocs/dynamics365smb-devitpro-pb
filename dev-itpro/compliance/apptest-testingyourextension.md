@@ -1,6 +1,6 @@
 ---
 title: Testing your extension
-description: Describing the steps you must go through to successfully submit your app to AppSource.
+description: Describing the steps you must go through to successfully submit your app to Marketplace.
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
 ms.topic: how-to

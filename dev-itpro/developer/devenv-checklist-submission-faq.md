@@ -1,6 +1,6 @@
 ---
 title: Technical validation FAQ
-description: Describes the most common questions when submitting your app to AppSource for Business Central.
+description: Describes the most common questions when submitting your app to Marketplace for Business Central.
 author: qutreson
 ms.date: 02/19/2025
 ms.reviewer: solsen
@@ -11,23 +11,23 @@ ms.custom: sfi-ropc-nochange
 
 # Technical validation FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for AppSource submission. In the following sections, you can read about the technical validation process, questions about app identity, code-signing validation, Azure Application Insights usage during AppSource submissions, channels to ask questions or report issues, and AppSource app previews.
+This article addresses some of the most frequently asked questions around validation of apps for Marketplace submission. In the following sections, you can read about the technical validation process, questions about app identity, code-signing validation, Azure Application Insights usage during Marketplace submissions, channels to ask questions or report issues, and Marketplace app previews.
 
 |Article|Description |
 |---|---|
-|[Technical validation process FAQ](devenv-checklist-submission-validation-process.md)|Describes the most common questions about the validation process when submitting your app to AppSource for Business Central.|
-|[App identity FAQ](devenv-checklist-submission-app-identity.md)|Describes the most common questions about app identity in your AppSource app for Business Central.|
-|[Azure Application Insights and AppSource submission FAQ](devenv-checklist-submission-app-insights.md)|Describes the most common questions when submitting your app to AppSource for Business Central.|
-|[AppSource app previews FAQ](devenv-checklist-submission-app-preview.md)|Describes the most common questions about AppSource previews for Business Central.|
-|[Business Central offer FAQ](devenv-checklist-submission-offer.md)|Describes the most common questions about AppSource app offers for Business Central.|
-|[Names, affixes, and ID ranges FAQ](devenv-checklist-submission-name-affix-range.md)|Describes the most common questions about names, affixes, and ID ranges in your AppSource app for Business Central.|
-|[Develop and maintain AppSource apps FAQ](devenv-checklist-submission-develop-maintain.md)|Describes the most common questions when submitting your app to AppSource for Business Central.|
-|[Code-signing validation FAQ](devenv-checklist-submission-code-sign.md)|Describes the most common questions when about code-signing your AppSource app for Business Central.|
-|[Channels for questions and issues FAQ](devenv-checklist-submission-channels.md)|Describes the most common questions when submitting your app to AppSource for Business Central.|
+|[Technical validation process FAQ](devenv-checklist-submission-validation-process.md)|Describes the most common questions about the validation process when submitting your app to Marketplace for Business Central.|
+|[App identity FAQ](devenv-checklist-submission-app-identity.md)|Describes the most common questions about app identity in your Marketplace app for Business Central.|
+|[Azure Application Insights and Marketplace submission FAQ](devenv-checklist-submission-app-insights.md)|Describes the most common questions when submitting your app to Marketplace for Business Central.|
+|[Marketplace app previews FAQ](devenv-checklist-submission-app-preview.md)|Describes the most common questions about Marketplace previews for Business Central.|
+|[Business Central offer FAQ](devenv-checklist-submission-offer.md)|Describes the most common questions about Marketplace app offers for Business Central.|
+|[Names, affixes, and ID ranges FAQ](devenv-checklist-submission-name-affix-range.md)|Describes the most common questions about names, affixes, and ID ranges in your Marketplace app for Business Central.|
+|[Develop and maintain Marketplace apps FAQ](devenv-checklist-submission-develop-maintain.md)|Describes the most common questions when submitting your app to Marketplace for Business Central.|
+|[Code-signing validation FAQ](devenv-checklist-submission-code-sign.md)|Describes the most common questions when about code-signing your Marketplace app for Business Central.|
+|[Channels for questions and issues FAQ](devenv-checklist-submission-channels.md)|Describes the most common questions when submitting your app to Marketplace for Business Central.|
 
-## Questions about hotfixing an AppSource app
+## Questions about hotfixing a Marketplace app
 
-For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an AppSource app](devenv-hotfixing-appsource-app.md)
+For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing a Marketplace app](devenv-hotfixing-appsource-app.md)
 
 
 <!-- delete sections and create overview - hotfixing can stay in ths article

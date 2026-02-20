@@ -29,7 +29,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 ```
 
 > [!NOTE]  
-> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource app or per-tenant extension by changing the setting.
+> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your Marketplace app or per-tenant extension by changing the setting.
 
 > [!IMPORTANT]  
 > The **AL: Go!** template sets the `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile` options in the `resourceExposurePolicy` setting to `true`. 
@@ -63,13 +63,13 @@ Unless, you've specified the `[NonDebuggable]` attribute on methods and variable
 
 The default value of the `allowDebugging` flag is `false`. If `allowDebugging` is set to `true`, anyone who extends your code can debug it.
 
-It's, however, not possible to allow both, debugging and **Go to Definition**, and still protect source from being extracted through the debug experience, for example, by using third party Visual Studio Code tools. For AppSource apps, if you want to protect your IP, it's recommended to limit access to the source by setting the `resourceExposurePolicy` flags to `false`. Then rely on the ability to grant yourself and optionally trusted reseller partners time-limited individual access through the dynamic override of the resource policy. For more information, see [Override the resource policy](devenv-security-settings-and-ip-protection.md#override-the-resource-policy) in this article.
+It's, however, not possible to allow both, debugging and **Go to Definition**, and still protect source from being extracted through the debug experience, for example, by using third party Visual Studio Code tools. For Marketplace apps, if you want to protect your IP, it's recommended to limit access to the source by setting the `resourceExposurePolicy` flags to `false`. Then rely on the ability to grant yourself and optionally trusted reseller partners time-limited individual access through the dynamic override of the resource policy. For more information, see [Override the resource policy](devenv-security-settings-and-ip-protection.md#override-the-resource-policy) in this article.
 
 For per-tenant extensions, if the customer owns the IP and approves of exposing it, it's recommended to at least allow debugging and include source in symbols to make troubleshooting, extracting IP from the service, and working across resellers easier.
 
 #### When can code be viewed even though the `allowDebugging` flag is set to `false`?
 
-Someone will still be able to view your code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via AppSource. Use the `applyToDevExtension` setting to specify if all resource exposure policies should also apply to your **DEV extension**.
+Someone will still be able to view your code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via Marketplace. Use the `applyToDevExtension` setting to specify if all resource exposure policies should also apply to your **DEV extension**.
  
 ### allowDownloadingSource
 
@@ -112,7 +112,7 @@ It's a requirement to enable overriding the resource policy, that you have a key
 > [!IMPORTANT]  
 > Resource exposure policy overrides can be used to dynamically grant users of a given Microsoft Entra tenant ID access. The users performing the action, such as debugging, **must be delegated admins or a guest user** on the target environment. In addition, you must specify the `tenant` property in the `launch.json` file. The `tenant` property must be set to the target tenant ID. For more information, see [JSON Files](devenv-json-launch-file.md#publish-to-cloud-settings-launchjson).
 
-For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault-overview.md) and [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md). For [!INCLUDE[prod_short](includes/prod_short.md)] online, the app key vault feature is only supported for AppSource extensions.
+For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault-overview.md) and [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md). For [!INCLUDE[prod_short](includes/prod_short.md)] online, the app key vault feature is only supported for Marketplace extensions.
 
 
 #### Common mistakes

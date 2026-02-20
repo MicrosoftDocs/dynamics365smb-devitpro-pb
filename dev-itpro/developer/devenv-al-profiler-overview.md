@@ -20,7 +20,7 @@ Use the profiler to validate optimizations, isolate slow pages or processes, dis
 ## When to use the AL Profiler
 
 - When users report that specific pages or processes run slower than expected.
-- When you're optimizing your extension before publishing it to AppSource.
+- When you're optimizing your extension before publishing it to Marketplace.
 - When you want to validate performance improvements in your code.
 - When you need to identify, which parts of a complex process consume the most time.
 

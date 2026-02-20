@@ -1,6 +1,6 @@
 ---
 title: "Lifecycle of apps and extensions FAQ"
-description: "Overview of the frequently asked questions about updating an app on AppSource."
+description: "Overview of the frequently asked questions about updating an app on Marketplace."
 author: SusanneWindfeldPedersen
 ms.topic: faq
 ms.author: freddyk
@@ -8,9 +8,9 @@ ms.date: 08/01/2021
 ms.reviewer: jswymer
 ---
 
-# Update lifecycle for AppSource apps FAQ
+# Update lifecycle for Marketplace apps FAQ
 
-See the following sections for frequently asked questions regarding updating apps on AppSource.
+See the following sections for frequently asked questions regarding updating apps on Marketplace.
 
 ## I want to submit an updated version of my app. What is the process for that?
 For any updated version of your app (small or large changes), you follow the same submission as your original version. It must go through the same validation process. The following are the steps that you must follow:
@@ -29,7 +29,7 @@ For any updated version of your app (small or large changes), you follow the sam
 The app is checked into our service and becomes the active version for that current production release of Business Central. If a tenant is already upgraded to the current release, they can install this updated version of your app.
 
 ## Does Microsoft now update my app (to this latest updated version) on all tenants that already have a previous version?
-Microsoft will only force update apps during the 2 major releases (release wave 1 and 2). For these releases, each tenant will have their AppSource apps force updated to the latest available versions in our service.
+Microsoft will only force update apps during the 2 major releases (release wave 1 and 2). For these releases, each tenant will have their Marketplace apps force updated to the latest available versions in our service.
 
 ## How do I update the apps on my tenant for minor releases then?
 If a tenant wants to update the apps on their tenant during the minor releases, the tenant admin needs to handle this. Here are the steps you follow to update your apps:

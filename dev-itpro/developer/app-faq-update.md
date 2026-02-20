@@ -26,7 +26,7 @@ For information about what constitutes the identity of an app, see [App Identity
 
 ## When is my updated app available for tenants to install?
 
-As soon as your updated app passes validation and is checked into our service, it then becomes the active version (for whatever the current [!INCLUDE[prod_short](includes/prod_short.md)] version is at that time). Even though your offer might still show as in progress in Partner Center, the updated app is active and ready to install. Also, even though your version number in AppSource might show as older, tenants will still get this latest updated version. For example, your updated version might be version 1.0.0.5. And in AppSource it might still show 1.0.0.1. Tenants will get the version 1.0.0.5.
+As soon as your updated app passes validation and is checked into our service, it then becomes the active version (for whatever the current [!INCLUDE[prod_short](includes/prod_short.md)] version is at that time). Even though your offer might still show as in progress in Partner Center, the updated app is active and ready to install. Also, even though your version number in Marketplace might show as older, tenants will still get this latest updated version. For example, your updated version might be version 1.0.0.5. And in Marketplace it might still show 1.0.0.1. Tenants will get the version 1.0.0.5.
 
 ## What version of Business Central is my updated app compatible with?
 
@@ -52,13 +52,13 @@ We recommend that you bundle more bug fixes and features so that your app doesn'
 
 We treat critical hotfixes with the utmost importance. We do have a process around this. Additional information on this hotfix process can be found [here](devenv-update-app-life-cycle-faq.md#what-if-a-customer-reports-a-critical-bug-in-my-app-and-needs-an-immediate-hotfix-version-of-my-app).
 
-## If I make changes to the library app, must I also submit an update for the AppSource app?
+## If I make changes to the library app, must I also submit an update for the Marketplace app?
 
 You would upload the updated library app to Partner Center, leave the main app as is, and submit for validation. We then see that the main app has not changed and only validate the library app.
 
 ## But wouldn’t I need to change the dependency in my main app’s json to reference the updated library app file? 
 
-No. The version number in the dependency listing in the json file to an app is a minimum version. The main app is essentially saying, "I need version 1.0.0.1 or greater" of the library app. For example, the AppSource app lists version 1.0.0.1 for the library app, and that means that it can also use version 1.0.0.2.
+No. The version number in the dependency listing in the json file to an app is a minimum version. The main app is essentially saying, "I need version 1.0.0.1 or greater" of the library app. For example, the Marketplace app lists version 1.0.0.1 for the library app, and that means that it can also use version 1.0.0.2.
 
 ## Why don't I see the updated version of my app in my sandbox tenant?
 
@@ -73,5 +73,5 @@ Your tenant is on an older version of [!INCLUDE[prod_short](includes/prod_short.
 
 [FAQ about Managing and Submitting your Business Central Offer](app-faq-offer.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  
-[Update Lifecycle for AppSource Apps FAQ](devenv-update-app-life-cycle-faq.md)  
+[Update Lifecycle for Marketplace Apps FAQ](devenv-update-app-life-cycle-faq.md)  
 [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  

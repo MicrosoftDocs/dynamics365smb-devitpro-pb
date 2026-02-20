@@ -1,6 +1,6 @@
 ---
-title: AppSource Channels for Questions and Issues FAQ
-description: Describes the most common questions about channels that you can use for questions and issues you might have when submitting your app to AppSource for Business Central.
+title: Marketplace Channels for Questions and Issues FAQ
+description: Describes the most common questions about channels that you can use for questions and issues you might have when submitting your app to Marketplace for Business Central.
 author: qutreson
 ms.date: 10/08/2025
 ms.reviewer: solsen
@@ -9,9 +9,9 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# AppSource channels for questions and issues FAQ
+# Marketplace channels for questions and issues FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for AppSource submission. In the following, you can read about how you reach out for support most efficiently.
+This article addresses some of the most frequently asked questions around validation of apps for Marketplace submission. In the following, you can read about how you reach out for support most efficiently.
 
 ## When do I contact d365val@microsoft.com?
 
@@ -36,9 +36,9 @@ Learn more in [https://github.com/microsoft/navcontainerhelper/issues](https://g
 
 ## When do I write on Viva Engage?
 
-When you have questions on developing and maintaining AppSource apps, on automatically submitting apps to AppSource, or about the validation process, you can ask a question on Viva Engage. In this group, you find announcements from Microsoft together with discussions around various AppSource-related articles.
+When you have questions on developing and maintaining Marketplace apps, on automatically submitting apps to Marketplace, or about the validation process, you can ask a question on Viva Engage. In this group, you find announcements from Microsoft together with discussions around various Marketplace-related articles.
 
-<!-- You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. -->
+<!-- You can join this Marketplace group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. -->
 
 ## Related information
 

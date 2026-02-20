@@ -10,7 +10,7 @@ ms.reviewer: jswymer
 
 # Components and capabilities
 
-When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], be it an AppSource app or an [!INCLUDE[embedapp](../developer/includes/embedapp.md)], you must know which components and deployment steps are provided by Microsoft. Additionally, you must be aware of which components and steps you need to provide.
+When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], be it a Marketplace app or an [!INCLUDE[embedapp](../developer/includes/embedapp.md)], you must know which components and deployment steps are provided by Microsoft. Additionally, you must be aware of which components and steps you need to provide.
 
 ## Components
 

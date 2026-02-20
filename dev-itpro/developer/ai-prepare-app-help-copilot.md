@@ -57,7 +57,7 @@ Copilot doesn’t do a broad web search to find your online content. Instead, it
 | Authentication | Online content must be publicly reachable without authentication. Copilot isn't able to sign into any website, not even with the current user’s credentials. | |
 | Format | Copilot primarily finds and uses text-base content. Copilot can use PDF documents and Microsoft Excel spreadsheets hosted directly at a URL path on your website as long as they aren't embedded on an HTML page. Copilot doesn't use any content from images, videos, slides, or Microsoft Word documents.| A PDF that contains troubleshooting information available at `https://fabrikam.com/docs/troubleshooting.pdf` is used. |
 
-Copilot is designed to work primarily with add-on apps installed from Microsoft AppSource. If customizations (per-tenant extensions) satisfy the above criteria, Copilot is also able to answer questions about those customizations. 
+Copilot is designed to work primarily with add-on apps installed from Microsoft Marketplace. If customizations (per-tenant extensions) satisfy the above criteria, Copilot is also able to answer questions about those customizations. 
 
 > [!IMPORTANT]
 > App publishers are responsible for the URLs they choose to include with their apps and all content that the URL contains or leads to. You must regularly ensure that your online documentation is free of malicious or harmful content, uses language appropriate for work, and is relevant to your app. By specifying a URL in the `Help` property of your `app.json` file, you confirm that you're the owner of this website and are responsible for the quality of your content. 

@@ -13,7 +13,7 @@ The following sections help you understand and improve the performance of [!INCL
 
 - Visit [Performance tips for business users](performance-users.md) to learn more about tips on how you can work with end-users to improve the performance.
 - Visit [How application configurations affect performance](performance-application.md) to learn about how in-product configurations affect performance.
-- Visit [Performance articles for developers](performance-developer.md) to learn about how to code for performance in AL, and how to identify performance issues using the [Performance toolkit](../developer/devenv-performance-toolkit.md) extension. The extension is available for free on [AppSource](https://go.microsoft.com/fwlink/?linkid=2148001). 
+- Visit [Performance articles for developers](performance-developer.md) to learn about how to code for performance in AL, and how to identify performance issues using the [Performance toolkit](../developer/devenv-performance-toolkit.md) extension. The extension is available for free on [Marketplace](https://go.microsoft.com/fwlink/?linkid=2148001). 
 - Visit [Performance in Business Central online](performance-online.md) to learn more about performance in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service.
 - Visit [Performance of Business Central on-premises installations](performance-onprem.md) to learn more about the various ways the different components in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can be configured to achieve better performance for an on-premises installation.
 - Visit [How to work with a performance problem](performance-work-perf-problem.md) to learn more on how to tackle a performance problem.
