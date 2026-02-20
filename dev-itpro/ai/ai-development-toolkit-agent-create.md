@@ -27,7 +27,9 @@ Learn more in [AI development toolkit overview (preview)](ai-development-toolkit
 Before you can create an agent, ensure that you have the following prerequisites in place:
 
 - Enable the **Custom Agent** capability in [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai).
-- Appropriate permissions to design an agent in [!INCLUDE [prod_short](../includes/prod_short.md)]. To create agents, you must have the "AGENT - ADMIN" and to see the execution cost and the serialized page in the agent task log entries, you need the "AGENT - DIAGNOSTICS" permission sets assigned to your user.
+- Appropriate permissions to design an agent in [!INCLUDE [prod_short](../includes/prod_short.md)].  
+  - "AGENT - ADMIN" gives you permission to design agents.  
+  - "AGENT - DIAGNOSTICS" gives you access to see the execution cost and the serialized page in the agent task log entries.
 - A sandbox environment for testing and experimentation from version 27.2 (can include customer data such as sandbox copies of production data)
 - Billing setup for agent capabilities in your tenant. Learn more in [Manage consumption billing for agents (preview)](../administration/tenant-admin-center-manage-consumption-billing.md).
 
