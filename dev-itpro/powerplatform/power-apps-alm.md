@@ -2,10 +2,9 @@
 title: Application lifecycle management
 description: Learn how to use AL-Go to implement application lifecycle management (ALM) for your Power Apps 
 author: andersgMSFT
-ms.author: andersg
+ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: article
-
 ms.date: 04/21/2023
 ms.custom: bap-template
 ---

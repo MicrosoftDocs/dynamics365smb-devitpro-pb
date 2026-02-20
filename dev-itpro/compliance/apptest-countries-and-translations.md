@@ -318,7 +318,7 @@ This table gives an overview of supported platform and application languages, an
 |Dutch (Netherlands)|nl-NL|Available|Microsoft, Available on Marketplace||
 |English (Australian)|en-AU|Available|Microsoft, Available on Marketplace||
 |English (Canada)|en-CA|Available|Microsoft, Available on Marketplace|| 
-|English (Great Britain)|en-GB|Available|Microsoft, Available on Marketplace||
+|English (United Kingdom)|en-GB|Available|Microsoft, Available on Marketplace||
 |English (New Zealand)|en-NZ|Available|Microsoft, Available on Marketplace||
 |English (South Africa)|en-ZA|Available|-||  
 |English (United States)|en-US|Built-in|Built-in||
