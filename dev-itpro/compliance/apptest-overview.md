@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
 ms.reviewer: solsen
 ms.topic: overview
-ms.author: freddyk
+ms.author: solsen
 ---
 
 # Rules and guidelines for AL code

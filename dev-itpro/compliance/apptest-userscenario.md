@@ -4,7 +4,7 @@ description: Describing how to generate the required scenario document to get yo
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
 ms.topic: article
-ms.author: freddyk
+ms.author: solsen
 ms.reviewer: jswymer
 ---
 

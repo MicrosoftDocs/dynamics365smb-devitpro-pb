@@ -4,7 +4,7 @@ description: Describing the steps you must go through to successfully submit you
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
 ms.topic: how-to
-ms.author: freddyk
+ms.author: solsen
 ---
 
 # Testing your extension

@@ -4,7 +4,7 @@ description: Use a prefix or suffix for names in your extension. This rule appli
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
 ms.topic: how-to
-ms.author: freddyk
+ms.author: solsen
 ms.reviewer: jswymer
 ---
 
