@@ -71,7 +71,7 @@ When the app has been updated with entitlements, it must be published to Marketp
 
 ## Preview of your app
 
-The publisher of a Marketplace app might run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [Preview versions of Marketplace apps](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-appsource-apps).
+The publisher of a Marketplace app might run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [Preview versions of Marketplace apps](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-marketplace-apps).
 
 ## Get insights into your app
 

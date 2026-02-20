@@ -181,7 +181,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 **Guidance:**
 
 1. Set up Microsoft Entra ID sign-in logging:
-   1. In [Microsoft Entra admin center](https://entra.microsodt.com), open the Sign-in Logs. Learn more in [View logs through the Microsoft Entra admin center](/entra/identity/monitoring-health/howto-access-activity-logs#view-logs-through-the-microsoft-entra-admin-center).
+   1. In [Microsoft Entra admin center](https://entra.microsoft.com), open the Sign-in Logs. Learn more in [View logs through the Microsoft Entra admin center](/entra/identity/monitoring-health/howto-access-activity-logs#view-logs-through-the-microsoft-entra-admin-center).
    1. Configure diagnostic settings to route logs to:
 
       - [Azure Monitor Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) (recommended for querying)
