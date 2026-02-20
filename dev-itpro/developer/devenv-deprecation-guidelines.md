@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/30/2024
 ms.reviewer: solsen
 ms.topic: best-practice
-ms.author: grobyns
+ms.author: solsen
 ---
 
 # Best practices for deprecation of AL code
