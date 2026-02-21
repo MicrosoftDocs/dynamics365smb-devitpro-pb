@@ -15,7 +15,6 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 
 ## Considerations before you begin
 
-- You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
 - You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. Learn more in the [Users who can export databases](#users-who-can-export-databases) section.
 - You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
@@ -62,7 +61,7 @@ For more information on generating and using a SAS, see [Grant limited access to
 
 After you created the Azure storage account and generated the SAS URI, you can then create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-1. On the **Environments** list page, choose the relevant production environment to view the environment details.
+1. On the **Environments** list page, choose the relevant environment to view the environment details.
 1. On the action ribbon of the environment details, choose **Database**, and then choose **Create Database Export**.
 1. In the **File Name** field, specify a name for the export file, or leave the default value.
 1. In the **SAS URI** field, specify the **Blob service SAS URL** value that you copied in the previous section.

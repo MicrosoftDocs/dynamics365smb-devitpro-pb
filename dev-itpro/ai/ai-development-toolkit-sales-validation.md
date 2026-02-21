@@ -1,6 +1,6 @@
 ---
 title: Create a Sales Validation Agent
-description: Learn how to create and use a Sales Validation Agent in the Agent playground to automate sales order validation tasks in Business Central.
+description: Learn how to create and use a Sales Validation Agent in the agent design experience to automate sales order validation tasks in Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 12/05/2025
+ms.date: 02/16/2026
 ms.update-cycle: 180-days
 ---
 
@@ -16,24 +16,26 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Sales Validation Agent is a preconfigured playground agent designed to help you automate the validation of sales orders in [!INCLUDE [prod_short](../includes/prod_short.md)]. This agent can check sales orders for inventory availability and ensure that orders meet specific criteria before processing.
+The Sales Validation Agent is a preconfigured agent designed to help you automate the validation of sales orders in [!INCLUDE [prod_short](../includes/prod_short.md)]. This agent can check sales orders for inventory availability and ensure that orders meet specific criteria before processing.
 
 ## Steps to create and use the Sales Validation Agent
 
-Follow these steps to create and use the Sales Validation Agent, which is available with the Agent playground.
+Follow these steps to create and use the Sales Validation Agent, which is available as part of the AI development toolkit.
 
 ### Create the Sales Validation Agent
 
-First, create the Sales Validation Agent using the Agent playground capability.
+First, create the Sales Validation Agent.
 
-1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-playground-icon-new.png" alt-text="Playground agent create new"::: **Agent** > **Create**.
+1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Agent create new"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose **Sales Validation**, and then choose the **Create agent** button.
-1. In the **Configure agent** dialog, activate the agent.
+1. You can use the arrows to review the setup steps.  
+  If you want to change any of the default settings, you can do that now or after the agent is created. For example, you can change the agent name, description, or instructions. The default instructions are designed to validate sales orders based on inventory availability and shipping dates, but you can customize them to fit your specific business needs.
+1. In the **Configure agent** dialog, choose the **Active** toggle to activate the agent.
 1. Choose **Update** to save and close the agent setup dialog.
 
-Now, the agent has been created and activated.
+Now, the agent is created and activated.
 
 ### Add an item with inventory to be used in sales orders
 
@@ -51,7 +53,7 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 1. On the **Sales Orders** list page, create a new sales order.
 1. Choose any customer.
 1. Add one or more new sales lines, with the item from the previous step.
-1. Add quantity to one or more lines.
+1. Add quantity to one or more lines.  
   Ensure that the **Location** is the same location you added quantity for.
 1. For that sales line, under **Line** > **Functions**, choose **Reserve**.
 1. There should be quantity available for reservation from **Item Ledger Entry**, select it, and choose **Reserve from Current Line**. Then, choose **OK**.
@@ -63,10 +65,10 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 
 ### Run the Sales Validation Agent to process sales orders
 
-Add a new task to the agent Open the Agents (Preview)
+Add a new task to the agent.
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Agent Tasks (preview)**, and then choose the related link.
-1. Under **Playground** actions, choose **Create task**.
+1. Under **Design** actions, choose **Run task** and create a new task for triggering the agent.
 1. Add a title, for example, `Validate and process sales orders`.
 1. And then, add the following message: `Run and process shipment date <date>`.  
   That will be sufficient. `<date>` corresponds to the shipping date you chose for the sales order.
@@ -76,13 +78,15 @@ The agent goes through and process all sales orders that have a shipping date ac
 
 ## Related information
 
-[Overview (preview)](ai-agent-playground-landing-page.yml)  
-[Create and activate (preview)](ai-agent-playground-create.md)  
-[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
-[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
-[Best practices (preview)](ai-agent-playground-best-practices.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)

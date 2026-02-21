@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 01/29/2026
+ms.date: 02/05/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -11,7 +11,7 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2 was kicked off on October 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE).
+> The [!INCLUDE [prod_short](../includes/prod_short.md)] release wave 1 2026 public preview is just around the corner and will be available for public use on March 2. The new release brings many improvements and we're looking forward to your feedback. More updates coming soon — stay tuned!
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
@@ -38,6 +38,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Watch the 'What's new' sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
+- Stay up to date with AI Business Solutions CSP Office Hours: [aka.ms/CSPpartnerhours](https://aka.ms/CSPpartnerhours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 
@@ -107,16 +108,16 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ### Agents in Business Central
 
+- Agent pitch deck - [aka.ms/BCAgentPitchDeck](https://aka.ms/BCAgentPitchDeck)
 - Sales Order Agent overview (preview) [Learn more](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
 - Payable Agent overview (preview) [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
-- Agent playground (preview) [Learn more](../../ai/ai-agent-playground.md)
+- Designing and coding agents (preview) [Learn more](../../ai/ai-development-toolkit-landing-page.yml)
 - Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Sales Order Agent is generally available in all countries/regions. 
-- Payable Agent is generally available in the following countries/regions (January 2026): United States, Canada, United Kingdom, Denmark, France, Italy, Germany, Spain, Australia, and New Zealand.
-
+- Payable Agent is generally available in the following countries/regions (February 2026): United States, Canada, Belgium, Denmark, France, Germany, Italy, Netherlands, Norway, Spain, Sweden, United Kingdom, Australia, and New Zealand.
 
 ### Copilot in Business Central 101
 

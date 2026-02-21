@@ -1,12 +1,12 @@
 ---
 title: Iterate and manage an agent (preview)
-description: Learn how to iterate and manage an agent created in the agent playground in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
+description: Learn how to iterate and manage an agent designed in Business Central. Discover tools, logs, and customization options to optimize agent behavior.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 12/05/2025
+ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
@@ -14,7 +14,7 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
 ## Understand agent decision-making
 
@@ -23,7 +23,7 @@ When iterating and managing an agent, it's important to understand how the agent
 - Agents act based on instructions and the context available at each decision point.
 - Review both instructions and context to diagnose agent behavior.
 
-Learn more about writing effective instructions in [Write effective instructions for a playground agent (preview)](ai-agent-playground-effective-instructions.md) and best practices in [Best practices for prototyping with the Agent playground (preview)](ai-agent-playground-best-practices.md).
+Learn more about writing effective instructions in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md) and best practices in [Best practices for designing an agent (preview)](ai-development-toolkit-best-practices.md).
 
 ## Troubleshooting tools and logs
 
@@ -66,7 +66,7 @@ It also encodes what values were available on the page at the time of the decisi
 
 When the agent makes a decision, it can select from a list of available tools to call. This list is provided in the form of descriptions. It can be used to inform how the agent's instructions should be crafted. To nudge the agent towards a specific tool, these descriptions can be used as a starting point. It also serves as a list of capabilities of what the agents can do.
 
-Learn more in [Instruction keywords for an agent (preview)](ai-agent-playground-instruction-keywords.md).
+Learn more in [Instruction keywords for an agent (preview)](ai-development-toolkit-instruction-keywords.md).
 
 #### Messages
 
@@ -117,7 +117,7 @@ As you iterate on your agent's instructions, the system maintains a version hist
 To access instruction version history:
 
 1. Open the agent setup, for example from the **Agents (preview)** page.
-2. In the **Playground - Instructions** section, use the **Get earlier version** button to view and restore previous versions.
+2. In the **Agent - Instructions** section, use the **Get earlier version** button to view and restore previous versions.
 3. Test the restored version to validate it meets your requirements.
 
 This capability is useful when:
@@ -129,14 +129,16 @@ This capability is useful when:
 
 ## Related information
 
-[Overview (preview)](ai-agent-playground-landing-page.yml)  
-[Agent playground (preview)](ai-agent-playground.md)  
-[Create and activate (preview)](ai-agent-playground-create.md)  
-[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
-[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
-[Best practices (preview)](ai-agent-playground-best-practices.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

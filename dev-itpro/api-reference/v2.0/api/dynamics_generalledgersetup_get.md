@@ -4,7 +4,7 @@ description: Gets a general ledger setup object in Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 01/28/2025
+ms.date: 02/16/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and a **generalL
 Here's an example of the request.
 
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/generalLedgerSetups({id})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/generalLedgerSetup({id})
 ```
 
 **Response**

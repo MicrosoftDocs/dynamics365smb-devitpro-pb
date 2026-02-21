@@ -2,6 +2,7 @@
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
+## [Update 27.4](whatsnew/whatsnew-update-27-4.md)
 ## [Update 27.3](whatsnew/whatsnew-update-27-3.md)
 ## [Update 27.2](whatsnew/whatsnew-update-27-2.md)
 ## [Update 27.1](whatsnew/whatsnew-update-27-1.md)
@@ -862,6 +863,8 @@
 ####### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
 ####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
 ####### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
+###### ConfigurationDialog pages
+####### [ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
@@ -1510,20 +1513,30 @@
 ## Create agents that connect to Business Central
 ### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-## Agent playground (preview)
-### [Overview](ai/ai-agent-playground-landing-page.yml)
-### [Agent playground](ai/ai-agent-playground.md)
-### [Create and activate](ai/ai-agent-playground-create.md)
-### [Write effective instructions](ai/ai-agent-playground-effective-instructions.md)
-### [Instruction keywords](ai/ai-agent-playground-instruction-keywords.md)
-### [Integrate with the Tasks AL API](ai/ai-agent-playground-tasks-api.md)
-### [Set up permissions and profiles](ai/ai-agent-playground-permissions-profiles.md)
-### [Run a playground agent](ai/ai-agent-playground-run-agent.md)
-### [Iterate and manage](ai/ai-agent-playground-iterate.md)
-### [Export and import](ai/ai-agent-playground-export-import.md)
-### [Best practices](ai/ai-agent-playground-best-practices.md)
-### [Create a Sales Validation Agent](ai/ai-agent-playground-sales-validation.md)
-### [Transparency note: Business Central agent playground](ai/transparency-note-agent-playground.md)
+## Designing and coding agents (preview)
+### [Overview](ai/ai-development-toolkit-landing-page.yml)
+### [Designing and coding agents](ai/ai-development-toolkit-overview.md)
+### [Create and activate](ai/ai-development-toolkit-agent-create.md)
+### [Write effective instructions](ai/ai-development-toolkit-instructions.md)
+### [Instruction keywords](ai/ai-development-toolkit-instruction-keywords.md)
+### [Set up permissions and profiles](ai/ai-development-toolkit-permissions-profiles.md)
+### [Run an agent](ai/ai-development-toolkit-run-agent.md)
+### [Integrate with the Tasks AL API](ai/ai-development-toolkit-tasks-api.md)
+### [Attachment capabilities and limitations](ai/ai-development-toolkit-attachments.md)
+### [Iterate and manage](ai/ai-development-toolkit-iterate.md)
+### [Understand agent visibility](ai/ai-development-toolkit-agent-visibility.md)
+### [Export and import](ai/ai-development-toolkit-export-import.md)
+### [Best practices](ai/ai-development-toolkit-best-practices.md)
+### [FAQ](ai/ai-development-toolkit-faq.md)
+### [Create a Sales Validation Agent](ai/ai-development-toolkit-sales-validation.md)
+### Coding agents in AL
+#### [Overview](ai/ai-agent-sdk-overview.md)
+#### [Define and register an agent programmatically](ai/ai-agent-sdk-define-register.md)
+#### [Configure agents programmatically](ai/ai-agent-sdk-configuration.md)
+#### [Create agent setup pages](ai/ai-agent-sdk-setup-page.md)
+#### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
+#### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
+### [Transparency note: Business Central AI development toolkit](ai/transparency-note-ai-development-toolkit.md)
 <!-- end integration with AI-->
 
 # Integration
