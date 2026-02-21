@@ -1,17 +1,18 @@
 ---
-title: Upgrading Microsoft System and Base Application to Version 28
-description: Describes how to upgrade an unmodified Business Central version 15 through 27 to version 28
+title: Upgrade to Business Central 2026 release wave 1 (version 28)
+description: Describes how to upgrade an unmodified Business Central version 25 and later to version 28
 ms.custom: bap-template
-ms.date: 01/08/2026
+ms.date: 02/21/2026
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ---
-# Upgrading Microsoft System and Base Application to Version 28
+# Upgrade to Business Central 2026 release wave 1 (version 28)
 
 Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that use the Microsoft system and base applications.
 
+- 2025 release wave 2 (version 27)
 - 2025 release wave 1 (version 26)
 - 2024 release wave 2 (version 25)
 

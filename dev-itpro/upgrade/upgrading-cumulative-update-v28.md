@@ -1,5 +1,5 @@
 ---
-title: Install a Business Central 2025 release Wave 2 (version 28) Update
+title: Install a Business Central 2026 release wave 1 (version 28) Update
 description: This article describes the tasks required for getting the monthly version 28 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
 ms.date: 02/21/2026
@@ -8,7 +8,7 @@ ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
 ---
-# Install a Business Central 2025 release wave 2 update
+# Install a Business Central 2026 release wave 1 update
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that are released for Business Central.
 
@@ -43,7 +43,6 @@ The application includes AL extensions that define the objects and code that mak
 - Customization extensions
 
     Customization extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or non-Microsoft extensions. Microsoft extensions are available on the DVD. Non-Microsoft extensions are extensions developed by your organization or by another organization, like a software development company.
-
 
 ### Single-tenant and multitenant deployments
 
@@ -150,7 +149,7 @@ When this step is completed, you can continue to update your Business Central so
 
 ## Task 1: Install Business Central components
 
-From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update. 
+From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update.
 
 1. Stop the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -565,7 +564,7 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [Business Central on-premises 2026 release wave 1 updates](../deployment/update-versions-28.md)  
 [Upgrading to Business Central 2026 release wave 1](upgrade-overview-v28.md)  
-[Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
+[Synchronizing the tenant database and application database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Publish and install an extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
-[Getting Started in AL](../developer/devenv-get-started.md)  
+[Getting started in AL](../developer/devenv-get-started.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
