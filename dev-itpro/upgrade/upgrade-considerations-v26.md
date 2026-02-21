@@ -4,7 +4,7 @@ description: This article provides tips and considerations to prepare a solution
 author: jswymer
 ms.custom: bap-template
 ms.topic: article
-ms.date: 02c/21/2026
+ms.date: 02/21/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
