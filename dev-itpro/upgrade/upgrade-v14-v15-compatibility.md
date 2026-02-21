@@ -34,7 +34,7 @@ The following table lists the Business Central 26 update versions and the minimu
 |27.0 to 27.5|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |27.6<sup>[\[1\]](#1)</sup>|28.1|
 
-Get a list of all available updates for Business Central 2025 release wave 2 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 2 on-premises]https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-2-7f4863fc-e30c-497d-b510-df9e7007253c).
+Get a list of all available version 27 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-2-7f4863fc-e30c-497d-b510-df9e7007253c).
 
 ## Version 26 compatibility
 
@@ -70,7 +70,7 @@ The following table lists the Business Central 25 update versions and the minimu
 |[25.13](https://support.microsoft.com/help/5068247)|[26.8](https://support.microsoft.com/help/5073764)|[27.2](https://support.microsoft.com/help/5073765)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |[25.14](https://support.microsoft.com/help/5073763)|[26.9](https://support.microsoft.com/help/5075269)|[27.3](https://support.microsoft.com/help/5075270)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |[25.15](https://support.microsoft.com/help/5075268)|[26.10](https://support.microsoft.com/help/5078590)|[27.4](https://support.microsoft.com/help/5078591)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
-|[25.16](https://support.microsoft.com/help/5078589)<sup>[\[1\]](#1)</sup>|26.11|27.5|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.16](https://support.microsoft.com/help/5078589)|26.11|27.5|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |25.17|26.12|27.6|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |25.18<sup>[\[1\]](#1)</sup>|26.13|27.7|28.1|
 
