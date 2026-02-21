@@ -122,7 +122,7 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
         Get-NAVAppInfo -ServerInstance $OldBcServerInstance -Tenant $TenantId| % { Uninstall-NAVApp -ServerInstance $OldBcServerInstance -Tenant $TenantId -Name $_.Name -Version $_.Version -Force}
         ```
 
-5. Unpublish all system symbols.
+5. Unpublish all system symbols (version 26 and earlier only).
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
 
@@ -130,7 +130,7 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
     Get-NAVAppInfo -ServerInstance $OldBcServerInstance -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance $OldBcServerInstance -Name $_.Name -Version $_.Version }
     ```
 
-    The Symbols extension isn't supported in version 28 and later. Symbols are now included with the Business Central server binaries instead of an extension. [What are symbols?](upgrade-overview-v15.md#Symbols)  
+    The Symbols extension isn't supported in version 27 and later. Symbols are now included with the Business Central server binaries instead of an extension. [What are symbols?](upgrade-overview-v15.md#Symbols)  
 6. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
