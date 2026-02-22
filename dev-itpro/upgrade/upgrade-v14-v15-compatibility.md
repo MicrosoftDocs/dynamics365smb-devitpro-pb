@@ -97,7 +97,7 @@ The following table lists the Business Central 24 update versions and the minimu
 |[24.15](https://support.microsoft.com/help/5063360)|[25.10](https://support.microsoft.com/help/5064778)|
 |[24.16](https://support.microsoft.com/help/5064777)|[25.11](https://support.microsoft.com/help/5066308)|
 |[24.17](https://support.microsoft.com/help/5066307)|[25.12](https://support.microsoft.com/help/5068247)|
-|[24.18](https://support.microsoft.com/help/5068246)<sup>[\[1\]](#1)</sup>|25.13|
+|[24.18](https://support.microsoft.com/help/5068246)|[25.13](https://support.microsoft.com/help/5068247)|
 
 Get a list of all available updates for Business Central 2024 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2024 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65).
 
