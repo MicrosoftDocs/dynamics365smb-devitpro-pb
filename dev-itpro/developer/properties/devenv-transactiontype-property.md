@@ -25,7 +25,7 @@ Sets the transaction type.
 |-----------|-----------|---------------------------------------|
 |**UpdateNoLocks**|runtime version 1.0|All read operations are performed with READ UNCOMMITTED locking until the table is either modified by a write operation or locked with the **LOCKTABLE** method.|
 |**Update**|runtime version 1.0|All read operations are performed with REPEATABLE READ locking until the table is either modified by any write operation or locked with the **LOCKTABLE** method.|
-|**Snapshot**|runtime version 1.0|ll read operations are performed with REPEATABLE READ locking.|
+|**Snapshot**|runtime version 1.0|All read operations are performed with REPEATABLE READ locking.|
 |**Browse**|runtime version 1.0|All read operations are performed with READ UNCOMMITTED locking.|
 |**Report**|runtime version 1.0|Maps to the **Browse** transaction type.|
 
