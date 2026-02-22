@@ -61,9 +61,9 @@ $AddinsFolder = "The file path to the Add-ins folder of version 28 server instal
 
     Learn more in [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-2. Before you install version 28, it can be useful to create a desktop shortcut the [!INCLUDE[admintool](../developer/includes/admintool.md)] for the current version. The reason is that the Start menu item for the current version is replaced with item for the [!INCLUDE[admintool](../developer/includes/admintool.md)] for version 28.
+1. Before you install version 28, it can be useful to create a desktop shortcut the [!INCLUDE[admintool](../developer/includes/admintool.md)] for the current version. The reason is that the Start menu item for the current version is replaced with item for the [!INCLUDE[admintool](../developer/includes/admintool.md)] for version 28.
 
-3. Install Business Central version 28 components.
+1. Install Business Central version 28 components.
 
     You keep the current version installed to complete some steps in the upgrade process. When you install version 28, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the current version's [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
@@ -79,7 +79,7 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
 ## Task 4: Prepare the existing databases
 
 1. Make backup of the databases.
-2. Disable data encryption.
+1. Disable data encryption.
 
     If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
 
@@ -87,11 +87,11 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for your current version as an administrator.
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for your current version as an administrator.
 
    [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 
-4. (Single-tenant only) Uninstall all extensions from the old tenants.
+1. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.
 
@@ -107,7 +107,7 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
 
         For a single-tenant deployment, set the `$TenantId` to default.
 
-    2. Uninstall the extensions.
+    1. Uninstall the extensions.
 
         To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
 
@@ -123,7 +123,7 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
         Get-NAVAppInfo -ServerInstance $OldBcServerInstance -Tenant $TenantId| % { Uninstall-NAVApp -ServerInstance $OldBcServerInstance -Tenant $TenantId -Name $_.Name -Version $_.Version -Force}
         ```
 
-5. Unpublish all system symbols (version 26 and earlier only).
+1. Unpublish all system symbols (version 26 and earlier only).
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
 
@@ -132,7 +132,7 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
     ```
 
     The Symbols extension isn't supported in version 27 and later. Symbols are now included with the Business Central server binaries instead of an extension. [What are symbols?](upgrade-overview-v15.md#Symbols)  
-6. (Multitenant only) Dismount the tenants from the application server instance.
+1. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
@@ -140,7 +140,7 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
     Dismount-NAVTenant -ServerInstance $OldBcServerInstance -Tenant $TenantId
     ```
 
-7. Stop the server instance.
+1. Stop the server instance.
 
     ```powershell
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
@@ -151,7 +151,7 @@ Version 18 introduced AL-based permission sets for the system and extensions. AL
 This task runs a technical upgrade on the application database to convert it to the version 28 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. It also adds the system symbols for the version to the database.
 
 1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 28 as an administrator.
-2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
+1. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $ApplicationDatabase
@@ -160,9 +160,9 @@ This task runs a technical upgrade on the application database to convert it to 
 
     When completed, a message like the following displays in the console:
 
-    ```ps
+    ```powershell
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (26-0)
+    DatabaseName        : Demo Database BC (27-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
@@ -182,14 +182,14 @@ When you installed version 28 in **Task 2**, a version 28 [!INCLUDE[server](../d
 
     In a single tenant deployment, this command mounts the tenant automatically. Learn more in [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-2. Disable task scheduler on the server instance for purposes of upgrade.
+1. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance $NewBcServerInstance -KeyName "EnableTaskScheduler" -KeyValue false
     ```
 
     Be sure to re-enable task scheduler after upgrade if needed.
-3. Restart the server instance.
+1. Restart the server instance.
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
@@ -203,7 +203,7 @@ When you installed version 28 in **Task 2**, a version 28 [!INCLUDE[server](../d
     Import-NAVServerLicense -ServerInstance $NewBcServerInstance -LicenseFile $PartnerLicense
     ```
 
-2. Restart the server instance.
+1. Restart the server instance.
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
@@ -228,7 +228,7 @@ Synchronize the tenant database with the platform changes in the application dat
 
     At this stage, the tenant state is OperationalWithSyncPending.
 
-2. Synchronize the tenant with the application database.
+1. Synchronize the tenant with the application database.
 
     Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
