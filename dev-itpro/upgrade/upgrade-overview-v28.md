@@ -2,7 +2,7 @@
 title: Upgrading to Dynamics 365 Business Central 2026 release wave 1
 description: Provides an overview of Business Central 2026 release wave 1 upgrade process.
 ms.custom: bap-template
-ms.date: 09/30/2025
+ms.date: 02/22/2026
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: overview
@@ -29,7 +29,7 @@ When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 
 
 ## New and changed features
 
-There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1. These changes affect users, administrators, and developers. Learn more at [Overview of Dynamics 365 Business Central 2026 release wave 1](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/).
+There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2026 release wave 1. These changes affect users, administrators, and developers. Learn more in [Overview of Dynamics 365 Business Central 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/).
 
 ## Deprecated features
 
@@ -43,10 +43,10 @@ From these articles, use the links in the table of contents to view more depreca
 
 ## <a name="online"></a>Migrate to Business Central online
 
-[!INCLUDE[upgrade-migrae-online](../developer/includes/upgrade-migrate-online.md]
+[!INCLUDE[upgrade-migrate-online](../developer/includes/upgrade-migrate-online.md]
 
 ## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
-[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
-[[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)  
+[Upgrading extensions](../developer/devenv-upgrading-extensions.md)  
+[[!INCLUDE[prod_long](../developer/includes/prod_long.md)] upgrade compatibility matrix](upgrade-v14-v15-compatibility.md)  
