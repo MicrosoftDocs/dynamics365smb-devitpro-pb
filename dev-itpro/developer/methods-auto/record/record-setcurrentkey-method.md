@@ -2,7 +2,7 @@
 title: "Record.SetCurrentKey(Any [, Any,...]) Method"
 description: "Selects a key for a table."
 ms.author: solsen
-ms.date: 06/12/2025
+ms.date: 02/23/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -44,22 +44,23 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Remarks
 
-You can use SetCurrentKey to hint a sort order to the [!INCLUDE[prod_short](../../includes/prod_short.md)] server. With the fields suggested in SetCurrentKey, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server then searches available key definitions and adds an ORDER BY clause with the fields from the key to the SQL statement issued to the database. 
+You can use `SetCurrentKey` to hint a sort order to the [!INCLUDE[prod_short](../../includes/prod_short.md)] server. With the fields suggested in `SetCurrentKey`, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server then searches available key definitions and adds an ORDER BY clause with the fields from the key to the SQL statement issued to the database. 
 
-A key matches the fields passed to SetCurrentKey if the key fields are either an exact match, or if the fields are a prefix of the key fields.
+A key matches the fields passed to `SetCurrentKey` if the key fields are either an exact match, or if the fields are a prefix of the key fields.
 
-If no key is found that matches the fields given to SetCurrentKey, the sort order will still be applied but without a key, the query may be slower.
+If no key is found that matches the fields given to `SetCurrentKey`, the sort order will still be applied but without a key, the query may be slower.
 
-When you use SetCurrentKey, the following rules apply:  
+When you use `SetCurrentKey`, the following rules apply:  
 
-- You can't use SetCurrentKey on:
-  - FlowFilter fields.
-  - Nested FlowFields.
-  - FlowFields on ExternalSQL tables.
-  - Blob Fields.
-  - FlowFields on Virtual tables.
-  - FlowFields that query across application database / tenant database.
-  - FlowFields that query different table types.
+- You can't use `SetCurrentKey` on:
+
+  - FlowFilter fields
+  - Nested FlowFields
+  - FlowFields on ExternalSQL tables
+  - Blob fields
+  - FlowFields on virtual tables
+  - FlowFields that query across application database / tenant database
+  - FlowFields that query different table types
 
   These fields aren't sortable. If any of these fields are used in the method, it returns `false` at runtime and an error occurs if not handled.
 - Only active keys are considered.
@@ -68,12 +69,12 @@ When you use SetCurrentKey, the following rules apply:
 
   - Fields that are part of a **IncludedFields** definition aren't used when searching for a matching key.
 
-  - If you specify only one field as a parameter when you call SetCurrentKey, the key that is selected might consist of more than one field.  
+  - If you specify only one field as a parameter when you call `SetCurrentKey`, the key that is selected might consist of more than one field.  
 
   - If the field that you specify is the first component of several keys, the key that is selected might not be the key that you expect.  
 
 ## Related information
 
-[Record Data Type](record-data-type.md)  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Record data type](record-data-type.md)  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  
