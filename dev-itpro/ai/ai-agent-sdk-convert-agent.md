@@ -22,14 +22,15 @@ After prototyping an agent in [!INCLUDE [prod_short](../includes/prod_short.md)]
 
 ## Exporting the agent
 
-As a first step, the agent can be exported via [!INCLUDE [prod_short](includes/prod_short.md)] so that the developer can have an overview of everything that the agent includes. An exported agent will consist of the following components:
+As a first step, the agent can be exported via [!INCLUDE [prod_short](includes/prod_short.md)] so that the developer can have an overview of everything that the agent includes. An exported agent consists of the following components:
+
 - Identifying information, name, display name, initials
 - Instructions
 - Default permission sets
 - Default profile
 - Agent user settings
 
-All of these components will have to be included in the AL application to define your agent.
+All of these components have to be included in the AL application to define your agent.
 
 ## Creating an AL application for your agent
 
@@ -78,7 +79,7 @@ end;
 
 ### Default profile
 
-The default profile can also be defined via the `GetDefaultProfile` method required by the `IAgentFactory` interface. If the profile is created in [!INCLUDE [prod_short](../includes/prod_short.md)] or contains customizations created in the UI, they will also need to be included in the application in the form of a profile object and page customizations.
+The default profile can also be defined via the `GetDefaultProfile` method required by the `IAgentFactory` interface. If the profile is created in [!INCLUDE [prod_short](../includes/prod_short.md)] or contains customizations created in the UI, they must also be included in the application in the form of a profile object and page customizations.
 
 ```al
 procedure GetDefaultProfile(var TempAllProfile: Record "All Profile" temporary)
@@ -111,7 +112,7 @@ For localization settings, you can use the [UpdateLocalizationSettings](https://
 
 ### Triggering the agent
 
-When an agent is packaged as part of an application, tasks for it are meant to be triggered via AL code. Follow the guidance in [Managing agent tasks programmatically](ai-agent-sdk-tasks.md) to understand how to create tasks for your agent as part of a business process, event or other integration scenarios.
+When an agent is packaged as part of an application, tasks for it are meant to be triggered via AL code. Follow the guidance in [Managing agent tasks programmatically](ai-agent-sdk-tasks.md) to understand how to create tasks for your agent as part of a business process, event, or other integration scenarios.
 
 # Sales Validation Agent as an AL application
 
