@@ -1526,6 +1526,7 @@
 ### [Iterate and manage](ai/ai-development-toolkit-iterate.md)
 ### [Understand agent visibility](ai/ai-development-toolkit-agent-visibility.md)
 ### [Export and import agents](ai/ai-development-toolkit-export-import.md)
+### [Convert an agent to AL code](ai/ai-agent-sdk-convert-agent.md)
 ### [Best practices](ai/ai-development-toolkit-best-practices.md)
 ### [FAQ](ai/ai-development-toolkit-faq.md)
 ### [Create a Sales Validation Agent](ai/ai-development-toolkit-sales-validation.md)
