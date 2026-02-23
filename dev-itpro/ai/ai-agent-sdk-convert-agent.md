@@ -18,13 +18,13 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-After prototyping an agent in [!INCLUDE [prod_short](../includes/prod_short.md)], it has to be packaged as part of an AL application to be distributed.
+When you have prototyped and tested your agent in [!INCLUDE [prod_short](../includes/prod_short.md)], you can convert it to AL code and package it as part of an AL application. This allows you to distribute your agent to other environments and customers, and also to integrate it with other AL code and business processes.
 
-## Exporting the agent
+## Export the agent
 
 As a first step, the agent can be exported via [!INCLUDE [prod_short](includes/prod_short.md)] so that the developer can have an overview of everything that the agent includes. An exported agent consists of the following components:
 
-- Identifying information, name, display name, initials
+- Identifying information, name, display name, and initials
 - Instructions
 - Default permission sets
 - Default profile
@@ -32,11 +32,11 @@ As a first step, the agent can be exported via [!INCLUDE [prod_short](includes/p
 
 All of these components have to be included in the AL application to define your agent.
 
-## Creating an AL application for your agent
+## Create an AL application for your agent
 
-Review [Coding agents in AL (preview)](ai-agent-sdk-overview.md) to create an AL application for your agent. This application will both apply the settings specific to your exported agents and introduce the necessary AL objects for an agent like the interfaces, setup page, summary page and so on.
+Review [Coding agents in AL (preview)](ai-agent-sdk-overview.md) to create an AL application for your agent. This application both applies the settings specific to your exported agents and introduces the necessary AL objects for an agent like the interfaces, setup page, summary page, and so on.
 
-## Adapting the exported agent to AL
+## Adapt the exported agent to AL
 
 ### Instructions
 
