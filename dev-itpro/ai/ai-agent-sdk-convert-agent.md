@@ -22,7 +22,7 @@ When you have prototyped and tested your agent in [!INCLUDE [prod_short](../incl
 
 ## Export the agent
 
-As a first step, the agent can be exported via [!INCLUDE [prod_short](includes/prod_short.md)] so that the developer can have an overview of everything that the agent includes. An exported agent consists of the following components:
+As a first step, the agent can be exported via [!INCLUDE [prod_short](../includes/prod_short.md)] so that the developer can have an overview of everything that the agent includes. An exported agent consists of the following components:
 
 - Identifying information, name, display name, and initials
 - Instructions
@@ -114,7 +114,7 @@ For localization settings, you can use the [UpdateLocalizationSettings](https://
 
 When an agent is packaged as part of an application, tasks for it are meant to be triggered via AL code. Follow the guidance in [Managing agent tasks programmatically](ai-agent-sdk-tasks.md) to understand how to create tasks for your agent as part of a business process, event, or other integration scenarios.
 
-# Sales Validation Agent as an AL application
+## Sales Validation Agent as an AL application
 
 You can visit the [BCTech Sales Validation Agent Sample](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent) to see how the Sales Validation Agent can be packaged as an app. This can be used as a starter template to develop and publish your own agents.
 
