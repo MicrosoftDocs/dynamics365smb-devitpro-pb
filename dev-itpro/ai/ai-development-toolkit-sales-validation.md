@@ -76,6 +76,10 @@ Add a new task to the agent.
 
 The agent goes through and process all sales orders that have a shipping date according to what you specified in the task.
 
+## Sales Validation Agent as an AL application
+
+You can visit the [BCTech repository](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent) to see how the Sales Validation Agent can be packaged as an app. This can be used as a starter template to develop and publish your own agents.
+
 ## Related information
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
@@ -88,5 +92,6 @@ The agent goes through and process all sales orders that have a shipping date ac
 [Run an agent (preview)](ai-development-toolkit-run-agent.md)  
 [Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
 [Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
-[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)
+[Sales Validation Agent in AL (preview)](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent)
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)
