@@ -78,6 +78,8 @@ landingContent:
         url: ../developer/devenv-page-type-configuration-dialog.md
       - text: Work with agents in AL
         url: ai-development-toolkit-tasks-api.md
+      - text: Convert an agent created in the UI to code
+        url: ai-development-toolkit-export-import.md
 # Card
   - title: Best practices
     linkLists:
