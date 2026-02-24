@@ -93,5 +93,5 @@ You can visit the [BCTech repository](https://github.com/microsoft/BCTech/tree/m
 [Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
 [Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
 [Best practices (preview)](ai-development-toolkit-best-practices.md)
-[Sales Validation Agent in AL](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent)
+[Sales Validation Agent in AL (preview)](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent)
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)
