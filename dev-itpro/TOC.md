@@ -1525,7 +1525,8 @@
 ### [Attachment capabilities and limitations](ai/ai-development-toolkit-attachments.md)
 ### [Iterate and manage](ai/ai-development-toolkit-iterate.md)
 ### [Understand agent visibility](ai/ai-development-toolkit-agent-visibility.md)
-### [Export and import](ai/ai-development-toolkit-export-import.md)
+### [Export and import agents](ai/ai-development-toolkit-export-import.md)
+### [Convert an agent to AL code](ai/ai-agent-sdk-convert-agent.md)
 ### [Best practices](ai/ai-development-toolkit-best-practices.md)
 ### [FAQ](ai/ai-development-toolkit-faq.md)
 ### [Create a Sales Validation Agent](ai/ai-development-toolkit-sales-validation.md)
@@ -1536,6 +1537,7 @@
 #### [Create agent setup pages](ai/ai-agent-sdk-setup-page.md)
 #### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
 #### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
+#### [Convert an agent to AL code](ai/ai-agent-sdk-convert-agent.md)
 ### [Transparency note: Business Central AI development toolkit](ai/transparency-note-ai-development-toolkit.md)
 <!-- end integration with AI-->
 
