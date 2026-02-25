@@ -1,5 +1,6 @@
 ---
 title: "Update 15.3 for Microsoft Dynamics 365 Business Central 2019 Release Wave 2"
+description: Find out what's changed with update 15.3.
 ms.author: solsen
 ms.date: 04/01/2024
 ms.update-cycle: 1095-days

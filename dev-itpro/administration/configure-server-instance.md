@@ -249,7 +249,8 @@ The following table describes settings related to management services.
 |ManagementServicesEnabled|Specifies whether [!INCLUDE[admintool](../developer/includes/admintool.md)] is enabled for this server instance.<br /><br /> Default: Enabled<br />Dynamically updatable: No<br><br>**APPLIES TO:** Version 21. Deleted and replaced by **ManagementAPIServicesEnabled** in later versions.|  
 |ManagementServicesIdleClientTimeout|Specifies the amount of time a PowerShell command, like Invoke-NAVCodeunit, can run before the session times out and closes.<br /><br />The value has the format hh:mm:ss.<br />Default: 10:00:00<br />Dynamically updatable: No| 
 |ManagementServicesPort|The listening TCP port for the [!INCLUDE[admintool](../developer/includes/admintool.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)].<br /><br /> Valid range: 1 - 65535<br /> Default: 7045<br />Dynamically updatable: No <br><br>**APPLIES TO:** Version 21. Deleted and replaced by **ManagementAPIServicesPort** in later versions.| 
-in
+
+
 ## Azure key vault client identity and extension settings
 
 The following table describes settings related to Azure key vault settings. These settings are used when you want to use Azure Key Vaults to store extension secrets and data encryption keys. Learn more in [Setting up App Key Vaults ](setup-app-key-vault-onprem.md) and [Data Encryption](../developer/devenv-encrypting-data.md).
