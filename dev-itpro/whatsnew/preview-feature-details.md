@@ -1,11 +1,20 @@
 ﻿---
-title: Feature details  
+title: Feature details
 description: Feature details for Business Central 2026 release wave 1
+ms.date: 02/25/2026
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: concept-article
 ---
 
-# Feature details
+# Feature details for Business Central 2026 release wave 1 (preview)
 
-Thsi articles provides details about the features available in the Business Central 2026 release wave 1 (preview). 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+This articles provides details about the features available in the Business Central 2026 release wave 1 (preview). 
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Add pictures to item variants to differentiate product options
 
