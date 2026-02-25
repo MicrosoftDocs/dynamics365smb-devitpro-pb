@@ -194,7 +194,7 @@ Updating an existing sandbox environment to a preview version lets you review ne
 
 ### Business Central Launch Edition - 2026 release wave 1
 
-The Business Central Launch Event for the Business Central 2025 release wave 2 is on October 1, 2025. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
+The Business Central Launch Event for 2026 release wave 1 is on April 1, 2026. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### AI-powered enhancements
 
