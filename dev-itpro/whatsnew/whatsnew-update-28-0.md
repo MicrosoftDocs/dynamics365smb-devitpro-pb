@@ -1,6 +1,6 @@
 ---
-title: What's New or Changed in Business Central 2025 Release Wave 2 - Update 27.0 preview
-description: Get an overview of new and changed capabilities in the 27.0 update of Business Central online, which is part of 2025 release wave 2.
+title: What's New or Changed in Business Central 2026 release wave 1 - Update 28.0 preview
+description: Get an overview of new and changed capabilities in the 28.0 update of Business Central online, which is part of 2026 release wave 1.
 ms.author: jswymer
 ms.date: 10/02/2025
 ms.reviewer: jswymer
@@ -9,14 +9,20 @@ author: jswymer
 ms.custom: 
     - bap-template
 ---
-# Update 27.0 for Business Central 2025 release wave 2 
+# Update 28.0 for Business Central 2026 release wave 1 
 
-This article provides an overview of the new and updated features and general information about update 27.0, which starts 2025 release wave 2.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+This article provides an overview of new and updated features in update 28.0 preview, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
+
+More features and information about on-premises deployments will be added to this article when version 28.0 is generally available in October 2025. Learn more about all features planned for 2025 release wave (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Highlights
 
 > [!TIP]
-> **Watch the launch edition 2025 release wave 2 sessions** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
+> **Watch the launch edition 2026 release wave 1 sessions** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ## New and updated features
 
@@ -119,7 +125,7 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 
 ## Changes to optional features in Feature Management
 
-This section outlines changes to feature and feature updates controlled by **Feature management** in version 27.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
+This section outlines changes to feature and feature updates controlled by **Feature management** in version 28.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
 ### Optional feature now mandatory and removed from Feature Management
 
@@ -136,6 +142,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
 - [Feature: Introduce UI support for masking sensitive data](../developer/devenv-mask-type-feature-key.md)
 
+<!--
 ## On-premises download packages
 
 Select and download the package for the appropriate country or region version from Microsoft Support.
@@ -166,22 +173,33 @@ Select and download the package for the appropriate country or region version fr
 |US - United States|[Dynamics.365.BC.40242.US.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.US.DVD.zip)|
 |All other countries/regions (W1)|[Dynamics.365.BC.40242.W1.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.W1.DVD.zip)|
 
-## Upgrade to 27.0
+## Upgrade to 28.0
 
 ### Online customers
 
-- New customers get Business Central version 27.0 automatically.
-- Existing customers are notified when update 27.0 is available. Admins can schedule update 27.0 to any date within the 5-month update period, which ends on February 28, 2026.
+- New customers get Business Central version 28.0 automatically.
+- Existing customers are notified when update 28.0 is available. Admins can schedule update 28.0 to any date within the 5-month update period, which ends on February 28, 2026.
 
 Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
 
 ### On-premises customers
 
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 27. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 27](../upgrade/upgrade-considerations-v26.md).
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 28. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 28](../upgrade/upgrade-considerations-v26.md).-->
+
+## Create new sandbox environment on 28.0 preview
+
+Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, follow the instructions in [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment). Set the environment type to **Sandbox** and the version to **28.0 preview**.
+
+## Update existing sandbox environment to 28.0 preview
+
+> [!NOTE]
+> Updating a sandbox environment is a new capability introduced in the service.
+
+Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that might contain your own data, setup, and customizations by testing with your extensions installed. To update an existing sandbox, follow the instructions in [Schedule an update for an environment](../administration/tenant-admin-center-update-management.md#schedule). Set the version to **28.0 preview**.
 
 ## Good to know
 
-### Business Central Launch Edition - 2025 release wave 2
+### Business Central Launch Edition - 2026 release wave 1
 
 The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
 
@@ -189,7 +207,7 @@ The Business Central Launch Event has transformed into the Business Central Laun
 - 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
 - BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
 - 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
-- BCLE 2025 release wave 2 group on Viva Engage for asking questions to our product experts: [BCLE 2025 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=236770828288&view=all)
+- BCLE 2026 release wave 1 group on Viva Engage for asking questions to our product experts: [BCLE 2026 release wave 1](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=236770828288&view=all)
 
 ### AI-powered enhancements
 
