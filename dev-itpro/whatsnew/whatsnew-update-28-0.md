@@ -19,10 +19,11 @@ More features and information about on-premises deployments will be added to thi
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
+<!--
 ## Highlights
 
 > [!TIP]
-> **Watch the launch edition 2026 release wave 1 sessions** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
+> **Watch the launch edition 2026 release wave 1 sessions** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).-->
 
 ## New and updated features
 
