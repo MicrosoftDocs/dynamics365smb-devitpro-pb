@@ -129,18 +129,11 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ### Optional feature now mandatory and removed from Feature Management
 
-- [Feature Update: Enable multiple users to post warehouse entries at the same time](https://go.microsoft.com/fwlink/?linkid=2274007)
-- [Feature Update: Enable use of package tracking in physical inventory orders](/dynamics365/business-central/inventory-how-work-item-tracking)
-- [Feature Update: Enable using 1099 forms to transmit the tax data to the IRS in the United States](/dynamics365/business-central/localfunctionality/unitedstates/set-up-use-irs1099-form)
-- [Feature: Add fields from related tables in analysis mode.](/dynamics365/business-central/analysis-mode-feature-key)
-- [Feature: Enable server certificate validation for Http requests](/dynamics365/business-central/dev-itpro/developer/devenv-httpcertvalid-feature-key)
-- [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)
-
 ### New optional features in Feature Management
 
-- [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
-- [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
-- [Feature: Introduce UI support for masking sensitive data](../developer/devenv-mask-type-feature-key.md)
+- [Feature Update: Accelerated Depreciation](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
+- [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
+- [Feature Update: Track changes done through the user interface.](../developer/devenv-mask-type-feature-key.md)
 
 <!--
 ## On-premises download packages
@@ -201,13 +194,7 @@ Updating an existing sandbox environment to a preview version lets you review ne
 
 ### Business Central Launch Edition - 2026 release wave 1
 
-The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
-
-- 45+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
-- 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
-- BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
-- 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
-- BCLE 2026 release wave 1 group on Viva Engage for asking questions to our product experts: [BCLE 2026 release wave 1](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=236770828288&view=all)
+The Business Central Launch Event for the Business Central 2025 release wave 2 is on October 1, 2025. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### AI-powered enhancements
 
