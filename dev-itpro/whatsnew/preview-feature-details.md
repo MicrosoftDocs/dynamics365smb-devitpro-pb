@@ -5,6 +5,8 @@ description: Feature details for Business Central 2026 release wave 1
 
 # Feature details
 
+Thsi articles provides details about the features available in the Business Central 2026 release wave 1 (preview). 
+
 ## Add pictures to item variants to differentiate product options
 
 You can now store pictures for item variants, letting you add images that represent each variant, such as color or size, so you can quickly recognize differences. You can take a picture, import an existing file, export the current image, or delete it from a **Picture** FactBox on the **Item Variant Card** page.
