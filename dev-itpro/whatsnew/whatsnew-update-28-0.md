@@ -9,7 +9,7 @@ author: jswymer
 ms.custom: 
     - bap-template
 ---
-# Update 28.0 for Business Central 2026 release wave 1 
+# Update 28.0 for Business Central 2026 release wave 1 (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
