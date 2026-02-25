@@ -30,10 +30,6 @@ Sales Metrics:
 - **Gross Margin (%)**: Assess profitability by comparing revenue to cost of goods sold. Calculated as((Net Sales - COGS) ÷ Net Sales. A higher percentage reflects better profitability.
 - **Return Rate (%)**: Monitor product quality and customer satisfaction through return ratios.  Calculated as Returned Quantity ÷ Total Sold Quantity. A lower percentage indicates fewer returns and higher product acceptance.
 
-
-
-
-
 When you turn on the **Summarize with Copilot** capability, you automatically enable these enhancements. 
 
 > [!NOTE]
@@ -271,7 +267,7 @@ Shopify releases a new API version every three months at the beginning of the qu
 
 ### API changes
 
-### Exporting inventory and product variants
+#### Exporting inventory and product variants
 
 This update aligns Business Central with the latest Shopify inventory mutation logic. When you export inventory:
 
@@ -281,29 +277,29 @@ This update aligns Business Central with the latest Shopify inventory mutation l
 
 The export process for product variants is also updated. Business Central creates correct batch sizes when you export product variants. Shopify now enforces a limit of 50,000 inventory quantities per mutation. The connector automatically calculates the correct number of variants per batch depending on your number of locations. When you export items or variants, Business Central sends them in the optimal batch size, without requiring any configuration from you.
 
-### Handling updated bulk operations
+#### Handling updated bulk operations
 
 Shopify removed support for older bulk operation queries. The connector now uses the new *GetBulkRequest* pattern, ensuring that actions like exporting products or retrieving catalogs work with the latest API expectations.
 
-### Updated return reasons
+#### Updated return reasons
 
 Shopify introduced new return reason definitions. Business Central now stores both the return reason *name* and *handle* on return lines. If you previously mapped return reasons using the old field, you now use the new values when you process refunds or analyzing return data.
 
-### More detailed payout information
+#### More detailed payout information
 
 Payout records now include an external trace ID. When you import payouts, you can view this extra identifier to support reconciliation or payment inquiries.
 
-### Removing the tax code from variants
+#### Removing the tax code from variants
 
 Shopify removed the legacy **Tax Code** field from variants. Business Central reflects this change by marking the tax code value as obsolete. If you rely on this information in your reporting or processing, migrate to other fields supported by Shopify.
 
-### Expanded metafield support
+#### Expanded metafield support
 
 You can now work with Shopify’s new **article\_reference** metafield type. This helps you maintain richer product information when you synchronize item data.
 
 ### User feedback
 
-### Review retrieved Shopify data for fulfillment orders
+#### Review retrieved Shopify data for fulfillment orders
 
 You can now inspect the raw Shopify JSON captured when fulfillment orders are imported. This helps you diagnose issues with imported fulfillment data.
 
@@ -313,11 +309,11 @@ You can:
 *   Open a specific **Shopify Fulfillment Order** card and choose **Retrieved Shopify Data**.
 *   If you import fulfillment lines separately, you can inspect the data for each line.
 
-### Import marketing text when you create items from Shopify
+#### Import marketing text when you create items from Shopify
 
 When you create new items by syncing products from Shopify, Business Central now imports the product’s HTML description into the **Marketing Text** field, provided that you enable **Sync Item Marketing Text**. This extra synchronization gives you richer product information on new items without manually copying descriptions.
 
-### Set the unit of measure when you select an item on order lines
+#### Set the unit of measure when you select an item on order lines
 
 When you map Shopify order lines to items manually, Business Central now automatically fills in the **Unit of Measure Code** based on the value from the item’s setup.
 
@@ -326,7 +322,7 @@ When you map Shopify order lines to items manually, Business Central now automat
 
 The auto-fill reduces manual entry and helps you avoid unit‑of‑measure errors when you process Shopify orders.
 
-### Import retail location information on order headers
+#### Import retail location information on order headers
 
 Shopify order headers now include the **retailLocation** (ID and name). Business Central imports and stores this information so that you can review it and use it in future processes. This update only imports the data, and isn't used for automated processing yet.
 
