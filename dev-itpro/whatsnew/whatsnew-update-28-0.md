@@ -19,13 +19,11 @@ More features and information about on-premises deployments will be added to thi
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-<!--
-#### Highlights
+##  Highlights
 
-> [!TIP]
-> **Watch the launch edition 2026 release wave 1 sessions** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).-->
+tba
 
-#### New and updated features
+### New and updated features
 
 This table lists new and updated features in update 28.0. Learn more about all features planned for 2026 release wave 1 (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).
 
@@ -58,6 +56,10 @@ In the table, make each feature name in the Feature column a markdown link. Foll
 6. List row in aphabetical order by "Product area" then "Feature" column.
 7. Remove duplicates in "Product area" column
 1. Remove all unnecessary spaces
+
+
+
+For preview: riun
 -->
 
 | Product area | Feature | Public preview/General availability |
