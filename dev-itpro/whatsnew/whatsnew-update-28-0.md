@@ -123,21 +123,15 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 | Sustainability Management | [Use new APIs in Sustainability for better integration](preview-feature-details.md#use-new-apis-in-sustainability-for-better-integration) | Public preview |
 | | [Use new sales document reports layout that show your carbon footprint](preview-feature-details.md#use-new-sales-document-reports-layout-that-show-your-carbon-footprint) | General availability |
 
-\* Controlled in **Feature Management**
-
 ## Changes to optional features in Feature Management
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 28.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
-### Optional feature now mandatory and removed from Feature Management
-
-tbd
-
 ### New optional features in Feature Management
 
-- [Feature Update: Accelerated Depreciation (disabled by default)
-- [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
-- Feature Update: Track changes done through the user interface
+- Feature Update: Improved performance in Trial Balance-related Excel reports - Enables performance enhancements on Trial Balance-related Excel reports. Learn more in [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting).
+- Feature Update: Track changes done through the user interface - Captures changes made by user interaction with the UI.
+- Feature Update: Accelerated Depreciation - This feature update isn't available yet, It is disabled by default and enabling it has no affect. 
 
 ## Create new sandbox environment on 28.0 preview
 
