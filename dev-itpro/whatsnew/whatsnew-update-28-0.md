@@ -1160,7 +1160,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - [Feature Update: Accelerated Depreciation](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
 - [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
-- [Feature Update: Track changes done through the user interface.](../developer/devenv-mask-type-feature-key.md)
+- Feature Update: Track changes done through the user interface
 
 <!--
 #### On-premises download packages
