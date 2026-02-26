@@ -9,23 +9,24 @@ author: jswymer
 ms.custom: 
     - bap-template
 ---
+
 # Update 28.0 for Business Central 2026 release wave 1 (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides an overview of new and updated features in update 28.0 preview, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
 
-More features and information about on-premises deployments will be added to this article when version 28.0 is generally available in October 2025. Learn more about all features planned for 2025 release wave (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).
+More features and information about on-premises deployments will be added to this article when version 28.0 is generally available in April 2026. <!-- Learn more about all features planned for 2026 release wave 1 (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).-->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-##  Highlights
+## Highlights
 
 tba
 
-### New and updated features
+## New and updated features
 
-This table lists new and updated features in update 28.0. Learn more about all features planned for 2026 release wave 1 (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).
+This table lists new and updated features in update 28.0. Select the link the **Feature** column to learn about a specific feature.
 
 <!-- Generate table:
 
@@ -131,24 +132,26 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ### Optional feature now mandatory and removed from Feature Management
 
+tbd
+
 ### New optional features in Feature Management
 
 - [Feature Update: Accelerated Depreciation](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
 - [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
 - Feature Update: Track changes done through the user interface
 
-### Create new sandbox environment on 28.0 preview
+## Create new sandbox environment on 28.0 preview
 
 Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, follow the instructions in [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment). Set the environment type to **Sandbox** and the version to **28.0 preview**.
 
-### Update existing sandbox environment to 28.0 preview
+## Update existing sandbox environment to 28.0 preview
 
 > [!NOTE]
 > Updating a sandbox environment is a new capability introduced in the service.
 
 Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that might contain your own data, setup, and customizations by testing with your extensions installed. To update an existing sandbox, follow the instructions in [Schedule an update for an environment](../administration/tenant-admin-center-update-management.md#schedule). Set the version to **28.0 preview**.
 
-### Good to know
+## Good to know
 
 ### Business Central Launch Edition - 2026 release wave 1
 
