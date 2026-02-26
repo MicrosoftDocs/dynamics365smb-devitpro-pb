@@ -408,7 +408,7 @@ Returns 200 if successful.
 
 **INTRODUCED IN:** API version 2.19
 
-Specifies whether AppSource apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more at [Manage Apps](tenant-admin-center-manage-apps.md).
+Specifies whether Marketplace apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more at [Manage Apps](tenant-admin-center-manage-apps.md).
 
 ```HTTP
 Content-Type: application/json

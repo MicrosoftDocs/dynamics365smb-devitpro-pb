@@ -100,7 +100,7 @@ This Logic App queries Application Insights every number of minutes (specified i
 
 #### Reporting
 
-To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft AppSource. This app includes an Administration report that shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md), or get it immediately from [Microsoft AppSource](https://aka.ms/bctelemetryreport).
+To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft Marketplace. This app includes an Administration report that shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md), or get it immediately from [Microsoft Marketplace](https://aka.ms/bctelemetryreport).
 
 > [!NOTE]
 > The Power BI reports and dataset that make up this app are available on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/PowerBI/Reports/AppSource/enrironment-app-pbix). You can customize those resources for your own needs and publish from Power BI desktop.
@@ -132,11 +132,11 @@ The following table illustrates how we communicate about the different environme
 |Environment Setting Change <sup>[\[3\]](#3) |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
 |Environment Deleted |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
 |Environment Renamed |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|AppSource App Install/Update Scheduling |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|AppSource App/PTE Install/Update |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|AppSource App Uninstall Scheduling |![check mark for feature](../developer/media/check.png) |         |         |         |
-|AppSource App/PTE Uninstall | ![check mark for feature](../developer/media/check.png)        |         |         |         | ![check mark for feature](../developer/media/check.png)
-|AppSource App/PTE Dependency Install & Update Orchestration |![check mark for feature](../developer/media/check.png) |         |         |         |
+|Marketplace App Install/Update Scheduling |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
+|Marketplace App/PTE Install/Update |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
+|Marketplace App Uninstall Scheduling |![check mark for feature](../developer/media/check.png) |         |         |         |
+|Marketplace App/PTE Uninstall | ![check mark for feature](../developer/media/check.png)        |         |         |         | ![check mark for feature](../developer/media/check.png)
+|Marketplace App/PTE Dependency Install & Update Orchestration |![check mark for feature](../developer/media/check.png) |         |         |         |
 |Installed PTE incompatible with next version |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |         |
 |Service Incidents and Advisories |         |         |         |![check mark for feature](../developer/media/check.png) |
 |Feature Change and Deprecation Announcements |         |         |![check mark for feature](../developer/media/check.png) |         |
@@ -167,7 +167,7 @@ The following list illustrates a typical timeline:
 
 If the problematic app isn't uninstalled at this point, Microsoft typically starts the process of force-uninstalling apps, including per-tenant extensions. Data isn't deleted.  
 
-For more information about updates, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md). For more information about how to keep your [!INCLUDE [prod_short](../includes/prod_short.md)] compliant with upcoming updates, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md).  
+For more information about updates, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md). For more information about how to keep your [!INCLUDE [prod_short](../includes/prod_short.md)] compliant with upcoming updates, see [Maintain Marketplace Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md).  
 
 ## Cleaning up settings
 

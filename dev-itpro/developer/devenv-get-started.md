@@ -38,7 +38,7 @@ You now have a `HelloWorld` sample that compiles and runs. The JSON files in the
 ### Things to note
 
 - If you want to create a container-based sandbox, see [Get started with the container sandbox development environment](devenv-get-started-container-sandbox.md). Learn more about which sandboxes you can choose in [Sandbox environments for Dynamics 365 Business Central development](devenv-sandbox-overview.md).
-- It's not supported to publish an extension from Visual Studio Code with the same identifiers as an extension, which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
+- It's not supported to publish an extension from Visual Studio Code with the same identifiers as an extension, which is already published to Marketplace. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
 - For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut key might not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
 - If you want to change your configuration at a later point in time, you can do so in the launch.json file. Just choose the **Add Configuration** button on the bottom right side, and then choose one of the available options. You don't have a launch.json file until you have run the `AL:Go!` command.
 

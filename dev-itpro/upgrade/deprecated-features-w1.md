@@ -21,7 +21,7 @@ This article describes the features that have been moved, removed, or replaced i
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| For years the **AMC Fundamentals** app has been published to AppSource by Microsoft who shared the feature ownership with AMC. AMC has improved the app and will from now on take responsibility for maintaining and shipping the app. The Microsoft-published app will be removed from Business Central and replaced by an AMC-owned app that takes care of migration from **AMC Fundamentals**. Customers who use **AMC Fundamentals** and wish to use AMC's new app must coordinate this migration with AMC.|
+|Replaced| For years the **AMC Fundamentals** app has been published to Marketplace by Microsoft who shared the feature ownership with AMC. AMC has improved the app and will from now on take responsibility for maintaining and shipping the app. The Microsoft-published app will be removed from Business Central and replaced by an AMC-owned app that takes care of migration from **AMC Fundamentals**. Customers who use **AMC Fundamentals** and wish to use AMC's new app must coordinate this migration with AMC.|
 
 ### Peppol BIS 2.0 and Peppol BIS 2.1 are replaced by Peppol BIS 3.0
 
@@ -45,11 +45,11 @@ The following features will be removed in 2026 release wave 1 (version 28.0).
 |-----------------------------|-----|
 |Replaced| With [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can create Connect apps. Connect apps establish a point-to-point connection between [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and non-Micrososft solutions or services using the standard REST API to interchange data. </br></br>In 2020 release wave 2, we introduced an improved API where all complex properties are replaced with first-level properties or navigation properties. This change significantly improves API performance because the complex fields were previously calculated at runtime. In API v2.0, all multipart keys and non-GUID keys are replaced with unique GUID keys. Entities can be retrieved using the SystemId, which is immutable, platform-enforced, and indexed. This change improves auditing and API reading performance. The API v2.0 contains all the functionality from API v1.0, so migration should be possible. If this isn't the case, reach out to us via [https://github.com/microsoft/ALAppExtensions](https://github.com/microsoft/ALAppExtensions).</br></br>To learn about the replacement feature, go to [Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md). |
 
-### Legacy Power BI apps on AppSource (removal)
+### Legacy Power BI apps on Marketplace (removal)
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| While useful to show the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following Power BI apps on AppSource are replaced: <ul><li>Dynamics 365 Business Central - CRM</li><li>Dynamics 365 Business Central - Finance</li><li>Dynamics 365 Business Central - Sales</li></ul> The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The new Power BI apps were released in version 25.1. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics).  |
+|Replaced| While useful to show the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following Power BI apps on Marketplace are replaced: <ul><li>Dynamics 365 Business Central - CRM</li><li>Dynamics 365 Business Central - Finance</li><li>Dynamics 365 Business Central - Sales</li></ul> The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The new Power BI apps were released in version 25.1. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics).  |
 
 ### Intelligent Cloud Insights (removal)
 
@@ -83,11 +83,11 @@ The following features are marked as `obsolete:pending` in 2025 release wave 1.
 |-----------------------------|-----|
 |Replaced| The following Excel reports will be are removed on the **Business Manager** and **Accountant** role centers.<ul><li>Balance Sheet</li><li>Income Statement</li><li>Statement of Cash Flow</li><li>Statement of Retained Earnings</li><li>Sales Taxes Collected</li><li>Customer Statements</li><li>Aged Accounts Payable</li><li>Aged Accounts Receivable</li></ul>Although these reports are useful to some organizations, changing them requires technical skills in AL and VBA (Visual Basic for Applications) programming. We've enhanced analytics capabilities in finance in each release wave over the last years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for finance. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
 
-### Legacy Power BI apps on AppSource (warning)
+### Legacy Power BI apps on Marketplace (warning)
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| While useful for showing the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following legacy Power BI apps on AppSource are replaced: <ul><li>Dynamics 365 Business Central - CRM</li><li>Dynamics 365 Business Central - Finance</li><li>Dynamics 365 Business Central - Sales</li></ul> The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The new Power BI apps were released in version 25.1. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics).  |
+|Replaced| While useful for showing the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following legacy Power BI apps on Marketplace are replaced: <ul><li>Dynamics 365 Business Central - CRM</li><li>Dynamics 365 Business Central - Finance</li><li>Dynamics 365 Business Central - Sales</li></ul> The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The new Power BI apps were released in version 25.1. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics).  |
 
 ### Intelligent Cloud Insights (warning)
 

@@ -37,7 +37,7 @@ In the client, tooltips appear when you point to the caption of the control.
 
 
 > [!NOTE]  
-> To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+> To submit an app to Marketplace, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 > [!NOTE]  
 > List page field tooltips are only shown in the [!INCLUDE[nav_web](../includes/nav_web_md.md)] and [!INCLUDE[nav_tablet_md](../includes/nav_tablet_md.md)].
