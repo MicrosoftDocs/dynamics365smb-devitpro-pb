@@ -400,7 +400,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 1. AL code pattern: Use AL [HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md) with certificate authentication.
 
    > [!NOTE]
-   > The following example is conceptual and shows the general pattern. For complete implementation details including OAuth token acquisition, certificate management, and error handling, see [Azure Key Vault REST API](/rest/api/keyvault/secrets/get-secret) and [HttpClient.AddCertificate Method](../developer/methods-auto/httpclient/httpclient-addcertificate-method.md).
+   > The following example is conceptual and shows the general pattern. For complete implementation details including OAuth token acquisition, certificate management, and error handling, see [Azure Key Vault REST API](/rest/api/keyvault/secrets/get-secret) and [HttpClient.AddCertificate Method](../developer/methods-auto/httpclient/httpclient-addcertificate-string-string-method.md).
 
    ```al
    local procedure GetApiKey(): Text
