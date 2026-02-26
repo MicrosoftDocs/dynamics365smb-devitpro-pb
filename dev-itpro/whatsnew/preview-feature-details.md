@@ -38,22 +38,22 @@ You can now store pictures for item variants, letting you add images that repres
 
 The **Description 2** field is now available for personalization on more pages.
 
-*   **Production BOM Lines** (page 99000788)
-*   **Production BOM Version Lines** (page 99000789)
-*   **Prod. BOM Mat. per Ver. Matrix** (page 9287)
-*   **Prod. BOM Version Comparison** (page 9288)
-*   **Planning Component List** (page 99000861)
-*   **Planning Components** (page 99000862)
-*   **Prod. Order Comp. Lines** (page 5407)
-*   **Prod. Order Components** (page 99000818)
-*   **Standard Tasks** (page 99000799)
-*   **Routing Lines** (page 99000765)
-*   **Routing Version Lines** (page 99000767)
-*   **Planning Routing** (page 99000863)
-*   **Prod. Order Routing** (page 99000817)
-*   **Prod. Order Routing Lines** (page 5408)
-*   **Machine Center Task List** (page 99000916)
-*   **Work Center Task List** (page 99000915)
+* **Production BOM Lines** (page 99000788)
+* **Production BOM Version Lines** (page 99000789)
+* **Prod. BOM Mat. per Ver. Matrix** (page 9287)
+* **Prod. BOM Version Comparison** (page 9288)
+* **Planning Component List** (page 99000861)
+* **Planning Components** (page 99000862)
+* **Prod. Order Comp. Lines** (page 5407)
+* **Prod. Order Components** (page 99000818)
+* **Standard Tasks** (page 99000799)
+* **Routing Lines** (page 99000765)
+* **Routing Version Lines** (page 99000767)
+* **Planning Routing** (page 99000863)
+* **Prod. Order Routing** (page 99000817)
+* **Prod. Order Routing Lines** (page 5408)
+* **Machine Center Task List** (page 99000916)
+* **Work Center Task List** (page 99000915)
 
 The **Description 2** field is added at the table level, and is fully supported in planning, routing, production order creation, and related processes.
 
@@ -105,10 +105,10 @@ We've extended approval workflows to item journals and requisition and planning 
 
 Item Journals now support the same approval workflow capabilities that you have today in general journal batches. You can send batches for approval from the following journals:
 
-*   Item Journal
-*   Physical Inventory Journal
-*   Output Journal
-*   Consumption Journal
+* Item Journal
+* Physical Inventory Journal
+* Output Journal
+* Consumption Journal
 
 When a journal batch has an approval entry in progress, you can't edit, delete, or post the record until the approval is completed or canceled. The workflow status shows on the journal pages, and the **Approve**, **Reject**, **Delegate**, and **Comments** approval actions are available.
 
@@ -116,9 +116,9 @@ When a journal batch has an approval entry in progress, you can't edit, delete, 
 
 Requisition and planning worksheets now include full approval workflow support at the worksheet batch level. You can send a worksheet batch for approval before you carry out planning or convert requisition lines into purchase documents. When an approval request is created for a worksheet batch:
 
-*   You can't insert, modify, or delete requisition or planning lines.
-*   The workflow status shows on the worksheet pages.
-*   Approval actions are available to approve, reject, or delegate the batch.
+* You can't insert, modify, or delete requisition or planning lines.
+* The workflow status shows on the worksheet pages.
+* Approval actions are available to approve, reject, or delegate the batch.
 
 Worksheet-level approval prevents changes to planning data while decisions are pending.
 
@@ -525,24 +525,24 @@ We've addressed several friction points in manufacturing processes.
 
 When you report production output for items with serial number tracking, you often need one journal line per serial number. Previously, when you turned on **Item Tracking on Lines** in the **Output Journal** and chose **Explode Routing**, the last operation for a serial-tracked item could still show the full order quantity on the line. With this improvement, Business Central respects item tracking setting when exploding routing lines in output journals:
 
-*   For serial-tracked items, Business Central splits the last routing operation into multiple lines with quantity 1 per serial number, and the journal line is ready for you to enter assigned serial number.
-*   For lot-tracked items, the behavior is unchanged. The operation remains on a single line with the full quantity.
+* For serial-tracked items, Business Central splits the last routing operation into multiple lines with quantity 1 per serial number, and the journal line is ready for you to enter assigned serial number.
+* For lot-tracked items, the behavior is unchanged. The operation remains on a single line with the full quantity.
 
 ### Respect location code when posting capacity and overhead
 
 In many manufacturing environments, you post production consumption and output by location, with separate WIP accounts per site. Until now, capacity and overhead postings were always evaluated against the **Inventory Posting Setup** for a *blank* location code, because the related entries didn't have a location value. This could cause:
 
-*   All capacity and overhead costs to be posted to a single WIP account.
-*   Imbalances when material consumption and output were posted to location-specific WIP accounts, but capacity and overhead went to the blank-location WIP account.
-*   An error that forced you to maintain an **Inventory Posting Setup** line for blank location when you added overhead to routings and posted the production journal.
+* All capacity and overhead costs to be posted to a single WIP account.
+* Imbalances when material consumption and output were posted to location-specific WIP accounts, but capacity and overhead went to the blank-location WIP account.
+* An error that forced you to maintain an **Inventory Posting Setup** line for blank location when you added overhead to routings and posted the production journal.
 
 With this improvement, Business Central uses the production location when posting capacity and overhead.
 
 The following list describes what we changed.
 
 *  Value entries that are linked to capacity ledger entries now have a **Location Code** value that comes from the related production order line or item journal line.
-*   When you post capacity or overhead, Business Central uses the **Inventory Posting Setup** for that specific location, not the blank location.
-*   You are no longer forced to keep an **Inventory Posting Setup** line for a blank location just to post overhead.
+* When you post capacity or overhead, Business Central uses the **Inventory Posting Setup** for that specific location, not the blank location.
+* You are no longer forced to keep an **Inventory Posting Setup** line for a blank location just to post overhead.
 
 ### Control warnings for non-certified production BOMs and routings
 
@@ -905,16 +905,7 @@ The feature surfaces existing **Created By** and **Modified By** fields more int
 
 ## Stop all active tasks for selected agent
 
-This feature introduces a centralized action stops all active tasks for a selected agent, addressing scenarios where an agent is overloaded, misconfigured, or executing tasks that need immediate cancellation.
-
-Key capabilities:
-
-- One-click action to stop all active tasks for a selected agent
-- Confirmation dialog to prevent accidental task termination
-- Support for long-running and queued tasks with appropriate cancellation handling
-- Role-based access restricted to privileged users and administrators
-
-
+This feature introduces a new action that stops all active tasks for a selected agent, addressing scenarios where an agent is overloaded, misconfigured, or executing tasks that need immediate cancellation. It's a one-click action to stop all active tasks for a selected agent. It shows a confirmation dialog to prevent accidental task termination and then stops all tasks currently running.
 
 ## Sync images of product variants between Business Central and Shopify
 
@@ -1087,9 +1078,9 @@ Shopify releases a new API version every three months at the beginning of the qu
 
 This update aligns Business Central with the latest Shopify inventory mutation logic. When you export inventory:
 
-*   Business Central sends updated on‑hand quantities using the new *inventorySetQuantities* mutation.
-*   The connector avoids concurrency conflicts by opting out of Shopify’s compare‑and‑swap mechanism, because Business Central acts as the source of truth.
-*   The connector automatically retries operations when Shopify responds with concurrency‑related errors, helping you reduce missed updates. When retries still fail, the system logs the skipped records so you can review and take corrective action.
+* Business Central sends updated on‑hand quantities using the new *inventorySetQuantities* mutation.
+* The connector avoids concurrency conflicts by opting out of Shopify’s compare‑and‑swap mechanism, because Business Central acts as the source of truth.
+* The connector automatically retries operations when Shopify responds with concurrency‑related errors, helping you reduce missed updates. When retries still fail, the system logs the skipped records so you can review and take corrective action.
 
 The export process for product variants is also updated. Business Central creates correct batch sizes when you export product variants. Shopify now enforces a limit of 50,000 inventory quantities per mutation. The connector automatically calculates the correct number of variants per batch depending on your number of locations. When you export items or variants, Business Central sends them in the optimal batch size, without requiring any configuration from you.
 
@@ -1121,9 +1112,9 @@ You can now inspect the raw Shopify JSON captured when fulfillment orders are im
 
 You can:
 
-*   Open **Shopify Fulfillment Orders** and choose **Retrieved Shopify Data**.
-*   Open a specific **Shopify Fulfillment Order** card and choose **Retrieved Shopify Data**.
-*   If you import fulfillment lines separately, you can inspect the data for each line.
+* Open **Shopify Fulfillment Orders** and choose **Retrieved Shopify Data**.
+* Open a specific **Shopify Fulfillment Order** card and choose **Retrieved Shopify Data**.
+* If you import fulfillment lines separately, you can inspect the data for each line.
 
 #### Import marketing text when you create items from Shopify
 
@@ -1133,8 +1124,8 @@ When you create new items by syncing products from Shopify, Business Central now
 
 When you map Shopify order lines to items manually, Business Central now automatically fills in the **Unit of Measure Code** based on the value from the item’s setup.
 
-*   If the item has a **Sales Unit of Measure**, that value is used.
-*   Otherwise, the **Base Unit of Measure** is applied.
+* If the item has a **Sales Unit of Measure**, that value is used.
+* Otherwise, the **Base Unit of Measure** is applied.
 
 The auto-fill reduces manual entry and helps you avoid unit‑of‑measure errors when you process Shopify orders.
 
