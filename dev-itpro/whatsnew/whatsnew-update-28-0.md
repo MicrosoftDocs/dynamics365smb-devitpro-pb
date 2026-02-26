@@ -1148,8 +1148,9 @@ The following documents use the new layouts:
   * Standard ESG Sales Quote (Word)
   * Standard ESG Sales Quote â€“ Blue (Word)
 
-Each layout is based on the corresponding standard template and include additional sustainability fields. These additions allow you to provide transparent emissions information on both quotes (preâ€‘sales) and invoices (postâ€‘sales) to ensure consistency between commercial documents and sustainability reporting. The layouts work with existing COâ‚‚e values calculated using value chain operations from the **Sustainability** module and require no additional customization.
-#### Changes to optional features in Feature Management
+Each layout is based on the corresponding standard template and include additional sustainability fields. These additions allow you to provide transparent emissions information on both quotes (preâ€‘sales) and invoices (postâ€‘sales) to ensure consistency between commercial documents and sustainability reporting. The layouts work with existing COâ‚‚e values calculated using value chain operations from the **Sustainability** module and require no additional customization.-->
+
+## Changes to optional features in Feature Management
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 28.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
@@ -1221,14 +1222,6 @@ Updating an existing sandbox environment to a preview version lets you review ne
 ### Business Central Launch Edition - 2026 release wave 1
 
 The Business Central Launch Event for 2026 release wave 1 is on April 1, 2026. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
-
-### AI-powered enhancements
-
-Watch this video to learn about AI-powered features and enhancements coming soon.
-
-<!--summary video start-->
-> [!VIDEO https://aka.ms/ReleaseHighlight/2025W2/BusinessCentral]
-<!--summary video end-->
 
 ### Discover all partner related resources
 
