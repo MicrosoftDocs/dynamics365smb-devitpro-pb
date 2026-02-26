@@ -115,7 +115,7 @@ Your target website is expected to have a default page that will display if no o
 For page extensions, the value of the *ContextSensitiveHelpPage* property applies only to the controls that the page extension adds to the extended page objects. For example, if your page extension adds two new controls to the base application's Customer Card page, then the *Learn more* links in the tooltips for those two controls will go to the help page that you've specified. The *Learn more* links in the rest of the controls will go to the default help that is specified in the base application. This way, multiple apps can extend the same page object and each apply their own content-sensitive help link without overwriting the context-sensitive links for other apps.  
 
 > [!NOTE]  
-> The app.json file also contains a *help* property that is used by AppSource to specify the link that describes the app or solution.  
+> The app.json file also contains a *help* property that is used by Marketplace to specify the link that describes the app or solution.  
 
 ## UI-to-help mapping for the base application
 
