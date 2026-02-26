@@ -70,7 +70,7 @@ Once the MCP server is enabled and configured, the individual configurations bec
 This simplified configuration allows agents to:
 
 - Read, modify, create, and delete items
-- Read and modify
+- Read and modify customers
 
 **General**
 
