@@ -7,6 +7,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: 
+ms.search.form: 8351
 ---
 # Configure Business Central MCP Server
 

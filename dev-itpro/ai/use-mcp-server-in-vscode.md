@@ -43,13 +43,10 @@ Before you begin, ensure the following requirements are met:
    Use if you want to use the MCP server configuration in a project or repo. Projects can have different MCP servers/endpoints:
 
    1. Open the root folder of the workspace or project
-   2. In this folder, create a folder named `.vscode` if it doesn't already exist.  
-   3 In the `.vscode` folder, create a file called `mcp.json`.
+   1. In this folder, create a folder named `.vscode` if it doesn't already exist.  
+   1. In the `.vscode` folder, create a file called `mcp.json`.
 
-1. Add the Business Central MCP server configuration connection string to the `mcp.json` file:
-
-   > [!TIP]
-   > If you copied the MCP server configuration connection string directly from the Business Central web client paste it here. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
+1. Add the Business Central MCP server configuration connection string within the `"servers": { }` element of the `mcp.json` file as illustrated in the follwoing json code.  
 
    ```json
    {
@@ -68,11 +65,14 @@ Before you begin, ensure the following requirements are met:
     }
     ```
 
-1. Replace the placeholder values with your actual Business Central environment details:
+   Replace the placeholder values with your actual Business Central environment details:
    - `TenantId`: Your organization's Microsoft Entra tenant ID (for example, "aaaabbbb-0000-cccc-1111-dddd2222eeee")
    - `EnvironmentName`: Your Business Central environment name (for example, "Production" or "Sandbox")
    - `Company`: The company name in Business Central (for example, "CRONUS USA, Inc.")
    - `ConfigurationName`: A name for the MCP configuration (for example, "MyMCPConfig")
+
+   > [!TIP]
+   > If you copied the MCP server configuration connection string directly from the Business Central web client, paste the copy within `"servers": { }`. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
 
 1. In the toolbar that appears under `"servers":` line, select **Start** to start the server.
 
