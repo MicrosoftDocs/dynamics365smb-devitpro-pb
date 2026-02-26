@@ -120,7 +120,6 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 | | [Post purchase invoices for drop shipments independently of related sales invoices](preview-feature-details.md#post-purchase-invoices-for-drop-shipments-independently-of-related-sales-invoices) | General availability |
 | | [Reverse drop shipments when sales and purchase documents aren't invoiced](preview-feature-details.md#reverse-drop-shipments-when-sales-and-purchase-documents-arent-invoiced) | General availability |
 | | [Send posted sales shipments and return receipts by email](preview-feature-details.md#send-posted-sales-shipments-and-return-receipts-by-email) | General availability |
-| | [Use subcontracting capabilities in production processes](preview-feature-details.md#use-subcontracting-capabilities-in-production-processes) | General availability |
 | Sustainability Management | [Use new APIs in Sustainability for better integration](preview-feature-details.md#use-new-apis-in-sustainability-for-better-integration) | Public preview |
 | | [Use new sales document reports layout that show your carbon footprint](preview-feature-details.md#use-new-sales-document-reports-layout-that-show-your-carbon-footprint) | General availability |
 
@@ -136,7 +135,7 @@ tbd
 
 ### New optional features in Feature Management
 
-- [Feature Update: Accelerated Depreciation](https://go.microsoft.com/fwlink/?linkid=2331650) (disabled by default)
+- [Feature Update: Accelerated Depreciation (disabled by default)
 - [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
 - Feature Update: Track changes done through the user interface
 

@@ -1074,22 +1074,6 @@ For Danish localizations, the posting process can automatically create **Digital
 
 
 
-## Use subcontracting capabilities in production processes
-
-The standard Dynamics 365 Business Central solution already meets many global needs. We expand that solution to meet local needs by adding capabilities that include:
-
-* Logistic flows that manage subcontractor transfers for raw materials and components, along with warehouse handling and item tracking.
-* Flexible pricing that considers the work center, item, dates, and quantity.
-* Finished good receipts with item tracking and warehouse handling from purchase orders.
-* Logistic flow that manages subcontractor transfers of finished goods.
-* Enhanced usability and more transparency in production processes.
-
-**Special note for Italian localizations**
-
-The Italian localization currently supports logistics for both finished goods and raw materials/components. We deprecate the existing local functionality and provide upgrade logic to facilitate migration to a new W1 solution. You decide when to start the transition by activating a feature key on the **Feature Management** page.
-
-
-
 ## Use the latest update for the Shopify connector
 
 Shopify releases a new API version every three months at the beginning of the quarter, and supports each version for 12 months. The updated versions might contain important changes, so it's important to uptake Shopify API versions in major releases of Business Central. Typically, new versions of APIs increase stability and security, and enable additional capabilities. Starting with this release, Shopify Connector uses the Shopify API that was released in January 2026.
