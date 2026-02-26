@@ -6,6 +6,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: concept-article
+ROBOTS: NOINDEX
 ---
 
 # Feature details for Business Central 2026 release wave 1 (preview)
@@ -672,17 +673,9 @@ Copilot is built on Microsoft's comprehensive approach to enterprise security, p
 
 [Read the FAQ for Copilot data security and privacy for Dynamics 365.](/power-platform/faqs-copilot-data-security-privacy)
 
-
-### Geographic areas
-Visit the [Explore Feature Geography](https://aka.ms/FeatureGeographicAvailabilityReport) report for Microsoft Azure areas where this feature is planned or available.
-
-### Language availability
-Visit the [Explore Feature Language](https://aka.ms/FeatureLanguageAvailabilityReport) report for information on this feature's availability.
-
 ### Additional resources
+
 [Summarize records with Copilot](/dynamics365/business-central/summarize-with-copilot) (docs)
-
-
 
 ## Get started with clearer user setup controls for Czechia
 
