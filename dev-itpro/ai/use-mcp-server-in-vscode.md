@@ -46,7 +46,7 @@ Before you begin, ensure the following requirements are met:
    1. In this folder, create a folder named `.vscode` if it doesn't already exist.  
    1. In the `.vscode` folder, create a file called `mcp.json`.
 
-1. Add the Business Central MCP server configuration connection string within the `"servers": { }` element of the `mcp.json` file as illustrated in the follwoing json code.  
+1. Add the Business Central MCP server configuration connection string within the `"servers": { }` element of the `mcp.json` file as illustrated in the following json code.  
 
    ```json
    {
