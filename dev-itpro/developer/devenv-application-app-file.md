@@ -101,13 +101,13 @@ The `Microsoft_Application_<version>.app` file can be edited to use the code-cus
 
 ## Up-taking the Application app
 
-The Application app logically encapsulates apps making up a solution (such as the Base Application and System Application), and provides an abstraction to protect the AppSource and per-tenant (PTEs) extensions running on top of that solution from not being able to resolve dependencies to these apps.
+The Application app logically encapsulates apps making up a solution (such as the Base Application and System Application), and provides an abstraction to protect the Marketplace and per-tenant (PTEs) extensions running on top of that solution from not being able to resolve dependencies to these apps.
 
 When using it, future refactoring of the referenced solution; like extracting some areas into separate apps, or changes to the identities of the apps, which comprise the solution, won't be forcing all other dependent apps to change or add new apps to their dependencies, as these dependencies will be resolved implicitly via the reference to the Application app. 
 
 Additionally, it's meant to simplify the on-premises upgrade scenarios, when customizations are extracted from the Base Application into extensions. And finally it makes it possible to make the same apps available not only to the [!INCLUDE[prod_short](includes/prod_short.md)] customers, but also to the customers of the rich, vertical solutions called Embed Apps, which are also running in the [!INCLUDE[prod_short](includes/prod_short.md)] service. 
 
-To enable these benefits, all you need to do, as an AppSource or PTE app owner, is to add the `"application"` property in the `app.json` file of your app and provide the minimum Microsoft Base Application version that this app is compatible with. For more information, see [JSON files](devenv-json-files.md). Also, you need to remove the direct dependencies to the Base Application and System Application from the `app.json` file. See the following example:
+To enable these benefits, all you need to do, as a Marketplace or PTE app owner, is to add the `"application"` property in the `app.json` file of your app and provide the minimum Microsoft Base Application version that this app is compatible with. For more information, see [JSON files](devenv-json-files.md). Also, you need to remove the direct dependencies to the Base Application and System Application from the `app.json` file. See the following example:
 
 ```json
 {
@@ -134,7 +134,7 @@ To enable these benefits, all you need to do, as an AppSource or PTE app owner, 
 ```
 
 > [!IMPORTANT]  
-> Soon up-taking the Application app will also be a mandatory requirement for AppSource apps, enforced by the AppSource technical validation. Thus, it is highly recommended to change the existing AppSource apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new AppSource apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prod_short](includes/prod_short.md)] online environments.
+> Soon up-taking the Application app will also be a mandatory requirement for Marketplace apps, enforced by the Marketplace technical validation. Thus, it is highly recommended to change the existing Marketplace apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new Marketplace apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prod_short](includes/prod_short.md)] online environments.
 
 
 ## Related information

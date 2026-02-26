@@ -1,7 +1,7 @@
 ---
 title: Set up app key vaults for Business Central online
 ms.author: jswymer
-description: Learn how to set up Azure key vaults for Business Central online extensions. Follow step-by-step instructions to securely manage secrets for your AppSource apps.
+description: Learn how to set up Azure key vaults for Business Central online extensions. Follow step-by-step instructions to securely manage secrets for your Marketplace apps.
 ms.date: 01/27/2026
 ms.topic: how-to
 author: jswymer
@@ -12,10 +12,10 @@ ms.reviewer: solsen
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-AppSource apps for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can be developed to get secrets from Azure keys vaults. The app key vault feature is readily available for use on the service by all AppSource apps. However, there are some onboarding tasks required.
+Marketplace apps for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can be developed to get secrets from Azure keys vaults. The app key vault feature is readily available for use on the service by all Marketplace apps. However, there are some onboarding tasks required.
 
 > [!IMPORTANT]
-> With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, App key vaults can only be used with AppSource apps. They're not supported with per-tenant extensions and dev extensions.
+> With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, App key vaults can only be used with Marketplace apps. They're not supported with per-tenant extensions and dev extensions.
 
 > [!TIP]
 > You must also specify secrets in a key vault if you deploy [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as part of the Embed App program. Especially if you must support the Outlook add-in, in which case you must specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. <!--For more information, see [Setting Up the Office Add-Ins for Outlook Integration with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](Setting-up-Office-Add-Ins-Outlook-Inbox.md).-->
@@ -108,9 +108,9 @@ Once your key vault is created, there are few steps that you should perform. Fee
 ## Extra information
 
 1. The key vault URLs added to your `app.json` file should belong to the same Microsoft Entra Tenant.
-1. Microsoft registers the link between your AppSource app and Azure key vault upon submission of a new AppSource app version. Once this link is established, it can't be removed because it's considered to be a breaking change, and it might break existing installations of your AppSource app.
-1. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, these actions don't "deregister" the access to the key vault from this specific AppSource app. Once the registration is done, it's irreversible.
-1. If you're facing issues that are generic and don't give you actionable error messages, contact the AppSource Marketplace support.
+1. Microsoft registers the link between your Marketplace app and Azure key vault upon submission of a new Marketplace app version. Once this link is established, it can't be removed because it's considered to be a breaking change, and it might break existing installations of your Marketplace app.
+1. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, these actions don't "deregister" the access to the key vault from this specific Marketplace app. Once the registration is done, it's irreversible.
+1. If you're facing issues that are generic and don't give you actionable error messages, contact the Marketplace support.
 
 ## Related information  
 

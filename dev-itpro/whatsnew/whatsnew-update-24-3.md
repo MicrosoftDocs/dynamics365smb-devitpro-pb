@@ -27,7 +27,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Simplify collections with Copilot for Finance and Business Central (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/empower-collections-team-copilot-finance-business-central)
 - [Enable sustainability features for integrations with APIs](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/enable-sustainability-features-integrations-apis)
 - [Automate country of origin listed for item tracking code in Intrastat reporting](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
-- [Install Field Service Integration with Business Central from AppSource](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/install-field-service-integration-business-central-appsource)
+- [Install Field Service Integration with Business Central from Marketplace](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/install-field-service-integration-business-central-appsource)
 
 ## Localization updates
 

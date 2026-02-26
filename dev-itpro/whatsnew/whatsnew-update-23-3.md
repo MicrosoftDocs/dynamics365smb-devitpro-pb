@@ -25,7 +25,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Detect invalid cloud migration configurations with proactive warnings](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/detect-invalid-cloud-migration-configurations-proactive-warnings)
 - [Translatable Excel layouts](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/translatable-excel-layouts)
 - [Make use of static and runtime metadata available in Excel layouts](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/make-use-static-runtime-metadata-excel-layouts)
-- [AppSource app hotfixes are now validated against the latest available app version](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-app-hotfixes-are-now-validated-against-latest-app-version)
+- [Marketplace app hotfixes are now validated against the latest available app version](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-app-hotfixes-are-now-validated-against-latest-app-version)
 - [Generic Microsoft Graph API Wrapper](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/call-graph-al-graph-module)
 - [Add Azure File Services API module](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/use-azure-files-azure-file-service-api-module)
 
@@ -71,9 +71,9 @@ During November, we'll host the following calls, which you can already register 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
-### Automatically update AppSource apps with minor updates  
+### Automatically update Marketplace apps with minor updates  
 
-You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
+You can now change the app update cadence for your environments to have Marketplace apps update with every minor update. Read the Release Plan for more details.
 
 ### Features becoming mandatory soon
 

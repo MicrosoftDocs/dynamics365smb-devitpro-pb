@@ -10,7 +10,7 @@ ms.date: 03/31/2025
 
 # Development process for moving tables and fields between extensions
 
-This article provides a step-by-step process for moving tables or fields between extensions in [!INCLUDE [prod_short](includes/prod_short.md)]. It covers various scenarios, including moving tables or fields *down to a dependency*, *up to a dependent*, or *to a non-dependent* extension. The article includes instructions on handling dependencies and publishing extensions to AppSource, ensuring a smooth transition without breaking changes. Learn more about the concepts and prerequisites behind this in [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md).
+This article provides a step-by-step process for moving tables or fields between extensions in [!INCLUDE [prod_short](includes/prod_short.md)]. It covers various scenarios, including moving tables or fields *down to a dependency*, *up to a dependent*, or *to a non-dependent* extension. The article includes instructions on handling dependencies and publishing extensions to Marketplace, ensuring a smooth transition without breaking changes. Learn more about the concepts and prerequisites behind this in [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md).
 
 ## Steps in the development process
 
@@ -18,7 +18,7 @@ Moving tables or fields between extensions is a process that consists of three m
 
 1. The source and destination extensions are modified or created to specify the moves.
 2. The move is performed on a [!INCLUDE [prod_short](includes/prod_short.md)] on-premises instance or a sandbox by a series of lifecycle operations.
-3. The extensions are submitted to AppSource, so that they can be installed to customers.
+3. The extensions are submitted to Marketplace, so that they can be installed to customers.
 
 ## Move scenarios
 
@@ -206,9 +206,9 @@ In summary, we'll look at the order in the extensions must be published. In both
 
 Having looked at the two previous scenarios *move down* and *move up*, the last scenario is a *lateral move*. A lateral move requires the same process as you can read about in [Move up](#move-up). However, further changes might be required to deal with objects that the table or field that's being moved depends on, for example, enums used as types of fields. That's because after a lateral move, it must be possible to resolve the moved table or field in both the source and destination extensions. Learn more in [Handling dependencies of moved tables or fields](#handling-dependencies-of-moved-tables-or-fields).
 
-## Publishing to AppSource
+## Publishing to Marketplace
 
-When you publish extensions to AppSource, there are some specific things to be aware of. The next sections describe these. Also, learn more in [Considerations before moving](devenv-move-table-fields-between-extensions.md#considerations-before-moving).
+When you publish extensions to Marketplace, there are some specific things to be aware of. The next sections describe these. Also, learn more in [Considerations before moving](devenv-move-table-fields-between-extensions.md#considerations-before-moving).
 
 ### Validation sign in
 
@@ -216,7 +216,7 @@ Extensions that move out table or fields are validated to not cause a breaking c
 
 ### Order of submissions
 
-The rule of thumb when publishing extensions that perform a move to AppSource, is to first submit the source extension and then submit the destination extension. The publishing orders from previous sections can also be used as the submission order for submitting to AppSource. Moves are allowed within a single submission or across submissions. For example, in a *move down* scenario it's possible to submit the source extension, which moves a table and the destination dependency as a library app. It's also possible to submit them in two separate submissions.
+The rule of thumb when publishing extensions that perform a move to Marketplace, is to first submit the source extension and then submit the destination extension. The publishing orders from previous sections can also be used as the submission order for submitting to Marketplace. Moves are allowed within a single submission or across submissions. For example, in a *move down* scenario it's possible to submit the source extension, which moves a table and the destination dependency as a library app. It's also possible to submit them in two separate submissions.
 
 ### Validation across target releases
 

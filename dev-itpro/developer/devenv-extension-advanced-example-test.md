@@ -13,7 +13,7 @@ ms.custom: sfi-image-nochange
 
 This walkthrough builds on the advanced sample extension, which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
 
-For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
+For information about submitting your app to Marketplace, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
 ## Prerequisites
 
