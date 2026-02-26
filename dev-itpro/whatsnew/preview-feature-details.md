@@ -175,7 +175,7 @@ For tax on plastic, Business Central calculates excise quantities by aggregating
 
 For tax on sugar, Business Central uses Item ledger entries from sales and negative adjustments to determine the total sugar content for the reporting period. The tax basis is derived by multiplying the excise quantity per unit by the total quantity sold or consumed.
 
-These calculations generate the core data needed to report tax on plastics and sugar, while the specific country‑level tax declaration forms remain out of scope. This provides flexibility for partners and customers to adapt the output to local submission requirements while relying on standardized, accurate calculations in Business Central.
+These calculations generate the core data needed to report tax on plastics and sugar, while the specific country/region‑level tax declaration forms remain out of scope. This provides flexibility for partners and customers to adapt the output to local submission requirements while relying on standardized, accurate calculations in Business Central.
 
 
 
@@ -663,7 +663,7 @@ Sales Metrics:
 When you turn on the **Summarize with Copilot** capability, you automatically enable these enhancements. 
 
 > [!NOTE]
-> - You can use this feature as a production-ready preview in production and sandbox environments for any country localization. Production-ready previews have supplemental terms of use. For more information, see [Supplemental terms of use for Dynamics 365 preview](https://go.microsoft.com/fwlink/?linkid=2105274).
+> - You can use this feature as a production-ready preview in production and sandbox environments for any country/region localization. Production-ready previews have supplemental terms of use. For more information, see [Supplemental terms of use for Dynamics 365 preview](https://go.microsoft.com/fwlink/?linkid=2105274).
 > - Microsoft supports this feature in English and select languages only. While you can use it in other languages, it might not work as expected. Language quality depends on your interaction and system settings, which can affect accuracy and the user experience.
 > - AI-generated content might be incorrect.
 
@@ -876,7 +876,7 @@ This new setting provides better control over document language while maintainin
 
 ## Set up Service Participants to Company Information
 
-Business Central currently identifies the receiving company for electronic documents by using VAT Registration No. or GLN. This approach isn't consistent across all countries and doesn't fully support local requirements where different identifiers or schemes are expected.
+Business Central currently identifies the receiving company for electronic documents by using VAT Registration No. or GLN. This approach isn't consistent across all countries/regions and doesn't fully support local requirements where different identifiers or schemes are expected.
 
 This feature extends Company Information with the same Service Participant model already used for customers and vendors. By aligning these entities, Business Central gains a more consistent and future‑proof approach to identifying companies in electronic document exchange scenarios.
 
@@ -884,7 +884,7 @@ This feature extends Company Information with the same Service Participant model
 
 * Provide a reliable and localization‑agnostic way to identify the company when sending or receiving E‑Documents.
 * Align Company Information with the established Service Participant framework used for customers and vendors.
-* Improve interoperability with multiple standards, including Peppol and other country‑specific schemes.
+* Improve interoperability with multiple standards, including Peppol and other country/region‑specific schemes.
 * Simplify setup and reduce errors caused by inconsistent identification methods.
 
 To enable it, administrators need to navigate to **Company Information** and specify the appropriate **Service Participant Identifier** and **Scheme**. When Business Central sends or receives E‑Documents, it uses the new **Service Participant** fields for company identification. The system behavior is now aligned with how customer and vendor participants are handled, increasing consistency across the application.
