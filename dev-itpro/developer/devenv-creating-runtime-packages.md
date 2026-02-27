@@ -47,7 +47,7 @@ The `Repair-NAVApp` cmdlet requires that the runtime package includes the source
 
 ## Limitations
 
-The limitation of runtime packages is that they only work for on-premises installations, so you can't submit them to AppSource. Learn more about the extension requirements for AppSource in [Technical validation checklist](devenv-checklist-submission.md). Moreover, debugging into an extension to view the source code isn't allowed by default; the `allowDebugging` flag is by default set to `false`. Learn more in [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
+The limitation of runtime packages is that they only work for on-premises installations, so you can't submit them to Marketplace. Learn more about the extension requirements for Marketplace in [Technical validation checklist](devenv-checklist-submission.md). Moreover, debugging into an extension to view the source code isn't allowed by default; the `allowDebugging` flag is by default set to `false`. Learn more in [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
 > [!NOTE]  
 > Runtime packages are guaranteed to work only if published to a platform with the same version as the one where they were produced.

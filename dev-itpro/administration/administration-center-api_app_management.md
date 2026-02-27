@@ -17,7 +17,7 @@ Manage the apps that are installed on the environment.
 
 ### <a name="eula"></a>End-User License Agreement and Terms of Use for Installing an App 
 
-When you install an app from AppSource, you're shown a page for accepting the end-user license agreement, terms of use, and privacy policy. This isn't the case when you install an app using the API, because there's currently no user-interface with the feature. Instead, to install an app using the API, you must set the `"acceptIsvEula":` property in the request body, which is used for agreeing to the same terms as would when you install from AppSource. For more information, see [acceptIsvEula](#acceptisveula).
+When you install an app from Marketplace, you're shown a page for accepting the end-user license agreement, terms of use, and privacy policy. This isn't the case when you install an app using the API, because there's currently no user-interface with the feature. Instead, to install an app using the API, you must set the `"acceptIsvEula":` property in the request body, which is used for agreeing to the same terms as would when you install from Marketplace. For more information, see [acceptIsvEula](#acceptisveula).
 
 <!--
 By setting this parameter to `true`, you accept the following terms:
@@ -76,9 +76,9 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 > [!IMPORTANT]
 > By setting the `acceptIsvEula` property to `true`, you not only agree with ISV's end-user license terms (EULA) but also with these terms:
 >
-> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) <!--(https://privacy.microsoft.com/privacystatement)-->.**
+> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of Marketplace is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) <!--(https://privacy.microsoft.com/privacystatement)-->.**
 
-<sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on AppSource. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
+<sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on Marketplace. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
 
 ### Response
 

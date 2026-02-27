@@ -113,8 +113,8 @@ Before you submit, we recommend that you review the [technical validation checkl
 
 [The SMB opportunity for app publishers](opportunity-app-publisher.md)  
 [The lifecycle of apps and extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  
-[Update lifecycle for AppSource apps FAQ](../devenv-update-app-life-cycle-faq.md)  
-[Maintain AppSource apps and per-tenant extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
+[Update lifecycle for Marketplace apps FAQ](../devenv-update-app-life-cycle-faq.md)  
+[Maintain Marketplace apps and per-tenant extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
 [Microsoft responsibilities for apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]

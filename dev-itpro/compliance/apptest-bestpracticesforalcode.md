@@ -26,7 +26,7 @@ Each file name should contain the object name (using only characters A–Z, a–
 The CodeCop analyzer suggests that the object name is part of the file name, which is encouraged as a best practice. Adding any affixes to the file names is voluntary.
 
 > [!NOTE]  
-> If you're submitting an app to AppSource, you must follow the guidance in the [Technical validation checklist](../developer/devenv-checklist-submission.md).
+> If you're submitting an app to Marketplace, you must follow the guidance in the [Technical validation checklist](../developer/devenv-checklist-submission.md).
 
 ### File naming notation
 

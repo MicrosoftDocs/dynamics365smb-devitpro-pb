@@ -1,6 +1,6 @@
 ---
-title: Hotfix an AppSource app
-description: Learn how to hotfix an AppSource app in Dynamics 365 Business Central.
+title: Hotfix a Marketplace app
+description: Learn how to hotfix a Marketplace app in Dynamics 365 Business Central.
 author: qutreson
 ms.author: solsen
 ms.reviewer: solsen
@@ -9,27 +9,27 @@ ms.date: 11/14/2023
 ms.custom: bap-template
 ---
 
-# Hotfix an AppSource app
+# Hotfix a Marketplace app
 
-A `hotfix` is generally the submission of a new version of an AppSource app outside the planned scheduling, whether the hotfix applies to the latest major, latest minor app, or a previous version. 
+A `hotfix` is generally the submission of a new version of a Marketplace app outside the planned scheduling, whether the hotfix applies to the latest major, latest minor app, or a previous version. 
 
-However, for AppSource apps, the term `hotfix` is used to refer to the submission of a new version, which isn't the latest version of the app. For example, if you have version 2.0.0.0 of your app available in AppSource and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered as a hotfix because 1.5.0.0 isn't the latest version available.
+However, for Marketplace apps, the term `hotfix` is used to refer to the submission of a new version, which isn't the latest version of the app. For example, if you have version 2.0.0.0 of your app available in Marketplace and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered as a hotfix because 1.5.0.0 isn't the latest version available.
 
 > [!IMPORTANT]  
-> When you submit a hotfix, don't update the version of your offer in Partner Center to match the hotfix version submitted because the version shown in Partner Center on the AppSource marketplace listing shows the latest version.
+> When you submit a hotfix, don't update the version of your offer in Partner Center to match the hotfix version submitted because the version shown in Partner Center on the Marketplace listing shows the latest version.
 
 > [!NOTE]  
 > The concept of hotfix is tied to the country/region for which the version of your app is available. If you have different versions of your apps in some countries/regions, your submission might be a hotfix for one country/region but not another. However, we generally don't recommend having different versions per country/region.
 
 ## Against which releases is a hotfix submission validated?
 
-When you submit a hotfix of your AppSource app, the service will automatically detect among the existing versions, which is the next version of your app that your customers will be upgraded to when their environment is upgraded to the next major/minor. The service then validates your submission up to the [!INCLUDE [prod_short](includes/prod_short.md)] release for which this extension is available. 
+When you submit a hotfix of your Marketplace app, the service will automatically detect among the existing versions, which is the next version of your app that your customers will be upgraded to when their environment is upgraded to the next major/minor. The service then validates your submission up to the [!INCLUDE [prod_short](includes/prod_short.md)] release for which this extension is available. 
 
 The minimum release targeted by the submission is computed based on the `application` property similar to any other submission.
 
 ### Example 1 - One version targeting the next release
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -42,7 +42,7 @@ On their upgrade to the next major, your customers on [!INCLUDE [prod_short](inc
 
 ### Example 2 - Multiple versions targeting the next release
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -56,7 +56,7 @@ On their upgrade to the next major, your customers on [!INCLUDE [prod_short](inc
 
 ### Example 3 - Multiple versions targeting the next releases
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -70,7 +70,7 @@ On their upgrade to the next major, your customers on [!INCLUDE [prod_short](inc
 
 ### Example 4 - Submitting a hotfix with application equal to the next versions
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -90,7 +90,7 @@ Note that version 1.5.0.0 wouldn't be available to any customers, except when us
 
 ### Example 5 - Submitting a hotfix with application higher than the next versions
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -111,11 +111,11 @@ Note that version 1.5.0.0 wouldn't be available to any customers, except when us
 
 ## What is the extra validation done for a hotfix submission?
 
-To ensure that your customer can upgrade from your hotfix version to the next version available in AppSource, we're validating for breaking changes the next version of your app that would be selected during an environment upgrade to the next minor/major with your hotfix version.
+To ensure that your customer can upgrade from your hotfix version to the next version available in Marketplace, we're validating for breaking changes the next version of your app that would be selected during an environment upgrade to the next minor/major with your hotfix version.
 
 ### Example 1 - One version targeting the next release
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -128,7 +128,7 @@ If you submit a new version 1.5.0.0 with the `application` property set to 22.0.
 
 ### Example 2 - Multiple versions targeting the next release
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -143,7 +143,7 @@ If you submit a new version 1.5.0.0 with the `application` property set to 22.0.
 
 ### Example 3 - Multiple versions targeting the next releases
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -168,7 +168,7 @@ As part of a hotfix, you also can't add new AL objects (pages, reports, codeunit
 
 ### Example 1 - How to add procedures in hotfixes
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -209,7 +209,7 @@ However, you aren't allowed to define a new procedure `procedure MyNewPublicProc
 
 ### Example 2 - How to add AL objects in hotfixes
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
@@ -248,9 +248,9 @@ However, you aren't allowed to define a new procedure `codeunit 1000002 MyNewPub
 ### Example 3 - How to handle hotfixes when objects are obsoleted and removed within the next release
 
 > [!IMPORTANT]  
-> This example demonstrates the impact of obsoleting and removing objects within the same release. The technical validation of AppSource submission doesn't enforce a specific timeline when deprecating code, but we recommend following the approach documented in [Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)
+> This example demonstrates the impact of obsoleting and removing objects within the same release. The technical validation of Marketplace submission doesn't enforce a specific timeline when deprecating code, but we recommend following the approach documented in [Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)
 
-Let's consider that you have the following versions of your app publicly available in AppSource:
+Let's consider that you have the following versions of your app publicly available in Marketplace:
 
 | Version | Target [!INCLUDE [prod_short](includes/prod_short.md)] version |
 | ------- | ---- |
