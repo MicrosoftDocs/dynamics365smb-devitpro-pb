@@ -1,5 +1,5 @@
 ---
-title: Maintain AppSource apps and per-tenant extensions
+title: Maintain Marketplace apps and per-tenant extensions
 description: Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product.
 author: SusanneWindfeldPedersen
 ms.date: 03/31/2025
@@ -8,11 +8,11 @@ ms.author: solsen
 ms.reviewer: jswymer
 ---
 
-# Maintain AppSource apps and Per-Tenant extensions in Business Central online
+# Maintain Marketplace apps and Per-Tenant extensions in Business Central online
 
 As a partner, keeping your apps and per-tenant extensions (PTEs) up to date is your responsibility. [!INCLUDE [prod_short](includes/prod_short.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prod_short](includes/prod_short.md)] because of the promise of having an always up-to-date business solution.  
 
-To not break this promise, developers that bring apps to Microsoft AppSource, and resellers that provide PTEs to respond to the unique needs of customers, have a responsibility to align their code to the Microsoft release rhythm. For more information, see [major updates and minor updates](../administration/update-rollout-timeline.md). Microsoft's inability to update tenants due to publishers' incompatible code leads to significant service disruptions and must be prevented because it affects the service's trustworthiness and customer satisfaction.  
+To not break this promise, developers that bring apps to Microsoft Marketplace, and resellers that provide PTEs to respond to the unique needs of customers, have a responsibility to align their code to the Microsoft release rhythm. For more information, see [major updates and minor updates](../administration/update-rollout-timeline.md). Microsoft's inability to update tenants due to publishers' incompatible code leads to significant service disruptions and must be prevented because it affects the service's trustworthiness and customer satisfaction.  
 
 ## Resources
 
@@ -64,19 +64,19 @@ A preview release is made available approximately one month before the announced
 > Microsoft tests code based on technical compatibility. As the publisher, you're still responsible for all functional and logical validation. For more information, see [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md).
 
 > [!NOTE]  
-> If an app has been published through AppSource, it shouldn't be tested, installed, or in other ways treated as a PTE since this will create conflicts.
+> If an app has been published through Marketplace, it shouldn't be tested, installed, or in other ways treated as a PTE since this will create conflicts.
 
 ### Update period
 
 The update period starts when a new major version is generally available, typically the first workday of every April and October, and lasts for five months. Administrators can schedule the update to run on any day during this period. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md) will receive a notification with failure details and recommended actions.
 
-Technical incompatibilities with AppSource apps installed on the environment might not be visible in the customer's [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)]. AppSource Apps that are incompatible with the latest generally available version of [!INCLUDE [prod_short](includes/prod_short.md)] might be removed from AppSource **30 days** after the release of that version. If an incompatible AppSource app, PTE, or Dev Extension is preventing the deployment of a critical security update, it might be uninstalled within **14 days** of the critical security update first becoming available.
+Technical incompatibilities with Marketplace apps installed on the environment might not be visible in the customer's [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)]. Marketplace Apps that are incompatible with the latest generally available version of [!INCLUDE [prod_short](includes/prod_short.md)] might be removed from Marketplace **30 days** after the release of that version. If an incompatible Marketplace app, PTE, or Dev Extension is preventing the deployment of a critical security update, it might be uninstalled within **14 days** of the critical security update first becoming available.
 
 ### Grace period
 
 The grace period starts when the update period ends and lasts for one month, which is September for the update period that starts in April and March for the update period that starts in October. During the grace period, the update can't be rescheduled to a later date. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md) receive a notification with failure details and recommended actions. Although the publisher's code continues to run on an outdated version of [!INCLUDE [prod_short](includes/prod_short.md)] online, the customer must work with their reseller to resolve these issues immediately so that the environment can be updated. Next to messages in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], all users in the customer's tenant might also get more active warnings about the incompatibilities when they use the product in the browser or their mobile device.
 
-For AppSource apps, if no appropriate action or follow-up was taken by the publisher since the release, the app is removed from AppSource. This situation means no new customers are able to install the app in a new tenant. It ensures that new customers aren't affected by incompatibilities with the latest version of [!INCLUDE [prod_short](includes/prod_short.md)].  
+For Marketplace apps, if no appropriate action or follow-up was taken by the publisher since the release, the app is removed from Marketplace. This situation means no new customers are able to install the app in a new tenant. It ensures that new customers aren't affected by incompatibilities with the latest version of [!INCLUDE [prod_short](includes/prod_short.md)].  
 
 If the publisher wants to have their app available again, they must mitigate all existing incompatibility issues and go through the full validation process again. Once a compatible version of the app is published, the update to the app is automatically installed once environments are updated.
 
@@ -84,7 +84,7 @@ If the publisher wants to have their app available again, they must mitigate all
 
 The enforced update period starts when the grace period ends. During this period, any extensions that are causing the update to the next major version to fail might be uninstalled from the environment automatically in order for the update to succeed. For example, the update could fail because of compatibility issues. Data belonging to extensions that are uninstalled automatically during this period isn't deleted from the environment. The data can be recovered by installing a version of the extension that is compatible after the update succeeds. Once a compatible version of an app is made available, it won't be automatically installed on each environment from which it was uninstalled as part of the enforced update period.
 
-During this period, the customer and their reselling partner are fully responsible for finding a solution on how to proceed in this situation. Microsoft might also choose to remove all existing apps by this publisher from AppSource and block the publisher from publishing new apps for [!INCLUDE [prod_short](includes/prod_short.md)].  
+During this period, the customer and their reselling partner are fully responsible for finding a solution on how to proceed in this situation. Microsoft might also choose to remove all existing apps by this publisher from Marketplace and block the publisher from publishing new apps for [!INCLUDE [prod_short](includes/prod_short.md)].  
 
 ## Get notified about incompatibilities by Microsoft
 

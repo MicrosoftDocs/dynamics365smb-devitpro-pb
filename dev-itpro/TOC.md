@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
@@ -86,29 +86,29 @@
 ### [The lifecycle of apps and extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
-### [Maintain AppSource apps and per-tenant extensions](developer/app-maintain.md)
-### [Discontinuing an AppSource app](developer/devenv-app-discontinue.md)
+### [Maintain Marketplace apps and per-tenant extensions](developer/app-maintain.md)
+### [Discontinuing a Marketplace app](developer/devenv-app-discontinue.md)
 ### [Development of a localization solution](developer/readiness/readiness-develop-localization.md)
 <!--#### How Microsoft runs the service -->
 ### [Microsoft responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and capabilities](deployment/app-components.md)
-### [Add your app to AppSource](administration/appsource.md)
+### [Add your app to Marketplace](administration/appsource.md)
 <!--AppSourcevalidation-->
-### AppSource validation
+### Marketplace validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Marketing validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
 
-#### [AppSource technical validation FAQ](developer/devenv-checklist-submission-faq.md)
-##### [AppSource technical validation process FAQ](developer/devenv-checklist-submission-validation-process.md)
-##### [AppSource app identity FAQ](developer/devenv-checklist-submission-app-identity.md)
-##### [AppSource Azure Application Insights and submission FAQ](developer/devenv-checklist-submission-app-insights.md)
-##### [AppSource app previews FAQ](developer/devenv-checklist-submission-app-preview.md)
-##### [AppSource Business Central offer FAQ](developer/devenv-checklist-submission-offer.md)
-##### [AppSource names, affixes, and ID ranges FAQ](developer/devenv-checklist-submission-name-affix-range.md)
-##### [Develop and maintain AppSource apps FAQ](developer/devenv-checklist-submission-develop-maintain.md)
-##### [AppSource code-signing validation FAQ](developer/devenv-checklist-submission-code-sign.md)
-##### [AppSource channels for questions and issues FAQ](developer/devenv-checklist-submission-channels.md)
+#### [Marketplace technical validation FAQ](developer/devenv-checklist-submission-faq.md)
+##### [Marketplace technical validation process FAQ](developer/devenv-checklist-submission-validation-process.md)
+##### [Marketplace app identity FAQ](developer/devenv-checklist-submission-app-identity.md)
+##### [Marketplace Azure Application Insights and submission FAQ](developer/devenv-checklist-submission-app-insights.md)
+##### [Marketplace app previews FAQ](developer/devenv-checklist-submission-app-preview.md)
+##### [Marketplace Business Central offer FAQ](developer/devenv-checklist-submission-offer.md)
+##### [Marketplace names, affixes, and ID ranges FAQ](developer/devenv-checklist-submission-name-affix-range.md)
+##### [Develop and maintain Marketplace apps FAQ](developer/devenv-checklist-submission-develop-maintain.md)
+##### [Marketplace code-signing validation FAQ](developer/devenv-checklist-submission-code-sign.md)
+##### [Marketplace channels for questions and issues FAQ](developer/devenv-checklist-submission-channels.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Embed apps
@@ -133,7 +133,7 @@
 ### [Set up company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding experiences](administration/onboarding-experiences.md)
-### [Selling Business Central apps through AppSource](developer/devenv-sell-apps-appsource.md)
+### [Selling Business Central apps through Marketplace](developer/devenv-sell-apps-appsource.md)
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.yml)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
@@ -142,7 +142,7 @@
 ### [FAQ about updating your Business Central app](developer/app-faq-update.md)
 ### [FAQ about managing and submitting your Business Central offer](developer/app-faq-offer.md)
 ### [FAQ for marketing validation](developer/readiness/readiness-marketing-validation-faq.md)
-### [FAQ for update lifecycle for AppSource apps](developer/devenv-update-app-life-cycle-faq.md)
+### [FAQ for update lifecycle for Marketplace apps](developer/devenv-update-app-life-cycle-faq.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## Help and support
@@ -231,7 +231,7 @@
 ### [Set up app key vaults for extensions](administration/setup-app-key-vault.md)
 ### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
 ### [Upgrading per-tenant extensions that conflict with other extensions](upgrade/upgrade-pte-merge-conflict.md)
-### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
+### [Upgrading Marketplace apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Apply company configuration packages](administration/apply-company-configuration-packages.md)
 <!-- onboard customers-->
@@ -259,7 +259,7 @@
 ### [Telemetry FAQ](administration/telemetry-faq.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
-#### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
@@ -521,10 +521,10 @@
 #### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
 #### [Get started with building apps](developer/readiness/get-started.md)
 #### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
-### AppSource validation
+### Marketplace validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
-#### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
@@ -1346,19 +1346,19 @@
 #### [FAQ about testing your Business Central app](developer/app-faq-test.md)
 
 ### Deploying and installing
-#### [Maintain AppSource apps and per-tenant extensions](developer/app-maintain.md)
+#### [Maintain Marketplace apps and per-tenant extensions](developer/app-maintain.md)
 #### [FAQ about managing and submitting your Business Central offer](developer/app-faq-offer.md)
 #### [Writing extension install code](developer/devenv-extension-install-code.md)
 #### [Publish and install an extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 #### [Uninstall and unpublish an extension](developer/devenv-unpublish-and-uninstall-extension-v2.md)
-#### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
+#### [Upgrading Marketplace apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 
 ### Updating and hotfixing
 #### [Overview](developer/devenv-app-life-cycle.md)
 #### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
-#### [Update lifecycle for AppSource apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
+#### [Update lifecycle for Marketplace apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about updating your Business Central app](developer/app-faq-update.md)
-#### [Hotfixing an AppSource app](developer/devenv-hotfixing-appsource-app.md)
+#### [Hotfixing a Marketplace app](developer/devenv-hotfixing-appsource-app.md)
 #### [Upgrading extensions](developer/devenv-upgrading-extensions.md)
 
 ### Deprecating code
@@ -1525,7 +1525,8 @@
 ### [Attachment capabilities and limitations](ai/ai-development-toolkit-attachments.md)
 ### [Iterate and manage](ai/ai-development-toolkit-iterate.md)
 ### [Understand agent visibility](ai/ai-development-toolkit-agent-visibility.md)
-### [Export and import](ai/ai-development-toolkit-export-import.md)
+### [Export and import agents](ai/ai-development-toolkit-export-import.md)
+### [Convert an agent to AL code](ai/ai-agent-sdk-convert-agent.md)
 ### [Best practices](ai/ai-development-toolkit-best-practices.md)
 ### [FAQ](ai/ai-development-toolkit-faq.md)
 ### [Create a Sales Validation Agent](ai/ai-development-toolkit-sales-validation.md)
@@ -1536,6 +1537,7 @@
 #### [Create agent setup pages](ai/ai-agent-sdk-setup-page.md)
 #### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
 #### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
+#### [Convert an agent to AL code](ai/ai-agent-sdk-convert-agent.md)
 ### [Transparency note: Business Central AI development toolkit](ai/transparency-note-ai-development-toolkit.md)
 <!-- end integration with AI-->
 

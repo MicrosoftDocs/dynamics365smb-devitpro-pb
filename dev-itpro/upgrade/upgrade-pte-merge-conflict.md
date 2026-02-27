@@ -105,4 +105,4 @@ Once the sandbox environment has been successfully updated to the next release, 
 
 ## Related information
 
-[Upgrading AppSource Apps in Production](../developer/devenv-upgrade-appsource-app-in-prod.md)
+[Upgrading Marketplace Apps in Production](../developer/devenv-upgrade-appsource-app-in-prod.md)
