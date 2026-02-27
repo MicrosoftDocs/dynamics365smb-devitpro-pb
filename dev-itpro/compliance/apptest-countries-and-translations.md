@@ -7,6 +7,7 @@ ms.reviewer: v-soumramani
 ms.topic: article
 ms.author: altotovi
 ms.custom: references_regions
+ms.search.form: 9, 2500, 3563
 ---
 
 # Country/regional availability and supported languages
