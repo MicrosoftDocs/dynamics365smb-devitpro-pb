@@ -113,7 +113,7 @@ Sometimes an environment can't get the new update. For example, a per-tenant ext
 
 [!INCLUDE [admin-update-pte](../includes/admin-update-pte.md)]
 
-If there's a conflict between a per-tenant extension and an AppSource app, you might need to clear the schema of the PTE to allow the AppSource app to take over. Learn more in [Clashes between a PTE and an AppSource app](../upgrade/upgrade-pte-merge-conflict.md#clashes-between-a-pte-and-an-appsource-app).
+If there's a conflict between a per-tenant extension and a Marketplace app, you might need to clear the schema of the PTE to allow the Marketplace app to take over. Learn more in [Clashes between a PTE and a Marketplace app](../upgrade/upgrade-pte-merge-conflict.md#clashes-between-a-pte-and-an-appsource-app).
 
 Learn more in [Completed updates](update-rollout-timeline.md#completed-updates).  
 
