@@ -1,6 +1,6 @@
 ---
-title: AppSource Names, Affixes, and ID Ranges FAQ
-description: Describes the most common questions about names, affixes, and ID ranges in your AppSource app for Business Central.
+title: Marketplace Names, Affixes, and ID Ranges FAQ
+description: Describes the most common questions about names, affixes, and ID ranges in your Marketplace app for Business Central.
 author: qutreson
 ms.date: 10/08/2025
 ms.reviewer: solsen
@@ -9,9 +9,9 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# AppSource names, affixes, and ID ranges FAQ
+# Marketplace names, affixes, and ID ranges FAQ
 
-This article addresses some of the most frequently asked questions around how affixes and ID ranges are assigned to AppSource apps.
+This article addresses some of the most frequently asked questions around how affixes and ID ranges are assigned to Marketplace apps.
 
 ## Do I need to register different affixes for each of my extensions?
 
@@ -34,11 +34,11 @@ We would like longer names as well. Introducing namespaces could be one investme
 [Technical validation checklist](devenv-checklist-submission.md)  
 [Technical validation process FAQ](devenv-checklist-submission-validation-process.md)  
 [App identity FAQ](devenv-checklist-submission-app-identity.md)  
-[Azure Application Insights and AppSource submission FAQ](devenv-checklist-submission-app-insights.md)  
-[AppSource app previews FAQ](devenv-checklist-submission-app-preview.md)  
+[Azure Application Insights and Marketplace submission FAQ](devenv-checklist-submission-app-insights.md)  
+[Marketplace app previews FAQ](devenv-checklist-submission-app-preview.md)  
 [Business Central offer FAQ](devenv-checklist-submission-offer.md)  
 [Names, affixes, and ID ranges FAQ](devenv-checklist-submission-name-affix-range.md)  
-[Develop and maintain AppSource apps FAQ](devenv-checklist-submission-develop-maintain.md)  
+[Develop and maintain Marketplace apps FAQ](devenv-checklist-submission-develop-maintain.md)  
 [Code-signing validation FAQ](devenv-checklist-submission-code-sign.md)  
 [Channels for questions and issues FAQ](devenv-checklist-submission-channels.md)
 

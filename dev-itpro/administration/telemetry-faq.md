@@ -92,7 +92,7 @@ For each new signal type we add, we try to backport to the current major release
 
 ## How can I get the Power BI reports on telemetry?
 
-To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we developed two Power BI apps available from Microsoft Marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
 Read more here: [Analyze telemetry with Power BI](telemetry-power-bi-app.md)
 

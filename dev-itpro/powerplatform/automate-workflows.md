@@ -223,7 +223,7 @@ The [connectors](/connectors/dynamicssmbsaas/) for Power Platform and Azure Logi
 The **Find records (V3)** action finds records in the same way as [filter expressions in OData URIs](../webservices/use-filter-expressions-in-odata-uris.md). But it does so behind the scenes, so all you have to do is add the action as a step in your flow. Learn more at [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)).  
 
    > [!NOTE]
-   > All the actions and triggers in the connector (except the ones related to approvals) support Business Central APIs coming from AppSource extensions or from other extensions installed in your Business Central environment, provided that they follow the API best practices. Learn more at [Developing a Custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api).
+   > All the actions and triggers in the connector (except the ones related to approvals) support Business Central APIs coming from Marketplace extensions or from other extensions installed in your Business Central environment, provided that they follow the API best practices. Learn more at [Developing a Custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api).
 
 ## Related information
 

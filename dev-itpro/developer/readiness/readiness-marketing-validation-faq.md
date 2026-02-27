@@ -46,7 +46,7 @@ You're required to submit two distinct pages for support and help that is, they 
 
 ## Can I use the Microsoft Dynamics 365 Business Central logo?  
 
-No, you can't use the [!INCLUDE[prod_short](../includes/prod_short.md)] logo, as it’s a Microsoft trademarked logo. However, you can use the “Get it from Microsoft AppSource” badge, which you can find [here](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide). 
+No, you can't use the [!INCLUDE[prod_short](../includes/prod_short.md)] logo, as it’s a Microsoft trademarked logo. However, you can use the “Get it from Microsoft Marketplace” badge, which you can find [here](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide). 
 
 ## Can we speed up or avoid Marketing validation?  
 

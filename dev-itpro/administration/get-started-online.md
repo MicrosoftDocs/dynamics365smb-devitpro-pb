@@ -111,7 +111,7 @@ Learn more about the [Cloud Solution Provider](/partner-center/csp-overview) (CS
 ### License ordering and customer management
 
 In [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, you use PartnerSource to order new licenses, renumber objects, and include add-ons. After each change, you need to generate a new license file and manually update the license in the customer database.
-In [!INCLUDE [prod_short](../includes/prod_short.md)] online, you place orders through your indirect provider's portal and manage customers in the Microsoft Partner Center. The process is more streamlined—you no longer need to generate license files or renumber objects. Subscriptions or additional users are available to your customers immediately after purchase; which means that no manual license installation is required. You also add apps using Microsoft AppSource.
+In [!INCLUDE [prod_short](../includes/prod_short.md)] online, you place orders through your indirect provider's portal and manage customers in the Microsoft Partner Center. The process is more streamlined—you no longer need to generate license files or renumber objects. Subscriptions or additional users are available to your customers immediately after purchase; which means that no manual license installation is required. You also add apps using Microsoft Marketplace.
 
 Learn more and see the [examples of what you can achieve on Partner Center](/partner-center/customers/connect-with-your-customers?toc=%2Fdynamics365%2Fbusiness-central%2Fdev-itpro%2Ftoc.json).
 
@@ -134,16 +134,16 @@ In an on-premises model, each customer has one partner who manages its license. 
 
 Learn more about [trials and subscriptions in Business Central online](trials-subscriptions.md).
 
-### AppSource transactability
+### Marketplace transactability
 
-Apps that extend [!INCLUDE [prod_short](../includes/prod_short.md)] online functionality are published on AppSource. Pay special attention to the AppSource transactability. This is the option to purchase the app directly through AppSource. An increasing number of apps have the transactability option enabled. They can be added to [!INCLUDE [prod_short](../includes/prod_short.md)] in two ways:
+Apps that extend [!INCLUDE [prod_short](../includes/prod_short.md)] online functionality are published on Marketplace. Pay special attention to the Marketplace transactability. This is the option to purchase the app directly through Marketplace. An increasing number of apps have the transactability option enabled. They can be added to [!INCLUDE [prod_short](../includes/prod_short.md)] in two ways:
 
 * Customer purchases the app directly from the ISV.
 * Indirect reseller (you) purchases the app from the ISV through the indirect provider.
 
 Both ways are different from the on-premises model, where you act as a managing partner for the customer. In the on-premises model, you usually transact directly with the ISV and then add the application to the customer license on PartnerSource.
 
-Learn more in [selling Business Central apps through AppSource](../developer/devenv-sell-apps-appsource.md).
+Learn more in [selling Business Central apps through Marketplace](../developer/devenv-sell-apps-appsource.md).
 
 ### Regions
 
