@@ -14,7 +14,7 @@ author: thpeder
 
 The extension with ID '{0}' appears multiple times in the submission, while all extensions submitted are expected to have a unique ID.
 
-## How to fix this diagnostic for AppSource submissions?
+## How to fix this diagnostic for Marketplace submissions?
 
 Make sure you only include your app once in the submission in Partner Center.
 

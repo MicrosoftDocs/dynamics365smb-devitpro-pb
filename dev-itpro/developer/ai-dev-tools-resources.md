@@ -1,6 +1,6 @@
 ---
 title: Use developer tools for Copilot in Business Central AI resources 
-description: Learn how you can use the developer tools for Copilot in Business Central AI resources in your own AppSource extensions to create Copilot experiences in Business Central
+description: Learn how you can use the developer tools for Copilot in Business Central AI resources in your own Marketplace extensions to create Copilot experiences in Business Central
 author: pborring
 ms.author: solsen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot is that [!INCLUDE [prod_short](includes/prod_short.md)] partners can use Large Language Models (LLMs) via Microsoft-managed Azure OpenAI resources for their AppSource extensions that extend Copilot in Business Central. This approach eliminates the need to independently procure and manage Azure OpenAI subscriptions for customers.
+A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot is that [!INCLUDE [prod_short](includes/prod_short.md)] partners can use Large Language Models (LLMs) via Microsoft-managed Azure OpenAI resources for their Marketplace extensions that extend Copilot in Business Central. This approach eliminates the need to independently procure and manage Azure OpenAI subscriptions for customers.
 
 Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources is the default and recommended approach.
 
@@ -69,7 +69,7 @@ This allows customers to:
 Learn more about the rates under AI Tools in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management#message-scenarios)
  
 > [!NOTE]  
-> It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP).
+> It's important to note that the AI billing model isn't intended to replace the existing Marketplace monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the Marketplace monetization option available to ISVs to monetize their intellectual property (IP).
 
 ### Gracefully handle errors in case of overconsumption
 

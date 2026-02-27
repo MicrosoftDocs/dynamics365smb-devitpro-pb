@@ -1,8 +1,8 @@
 ---
 title: Sample Power Apps for Business Central
 description: Sample apps that give partners an easy way to get started with building Power Apps
-author: andersgMSFT
-ms.author: andersg
+author: jswymer
+ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: article
 

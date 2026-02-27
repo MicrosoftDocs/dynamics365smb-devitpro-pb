@@ -173,7 +173,7 @@ When the prerequisites are met, and you have retrieved an endpoint URL, an Azure
 
 The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object, which provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. The ApiKey variable is defined as `SecretText`, which means that it isn't available to the debugger for inspection.
 
-An alternative to using the `IsolatedStorage` object, if you're building an AppSource app, is to use the AppSource Key Vault. Learn more in [Setting up App Key Vaults for Business Central online](../administration/setup-app-key-vault.md).
+An alternative to using the `IsolatedStorage` object, if you're building a Marketplace app, is to use the AppSource Key Vault. Learn more in [Setting up App Key Vaults for Business Central online](../administration/setup-app-key-vault.md).
 
 ```al
 local procedure SetAuthorization(var AzureOpenAI: Codeunit "Azure OpenAI")
