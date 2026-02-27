@@ -1,7 +1,7 @@
 ---
 title: Upgrading Per-Tenant Extensions that conflicts with other extensions
 description: This article describes how to upgrade a Per-Tenant Extension that contains table or a table field that conflicts with another extension in Dynamics 365 Business Central.
-ms.date: 10/25/2021
+ms.date: 02/27/2026
 ms.topic: how-to
 ms.author: solsen
 author: SusanneWindfeldPedersen
@@ -103,6 +103,35 @@ This error message is raised because the system does not allow implicitly removi
 
 Once the sandbox environment has been successfully updated to the next release, steps 2-6 on the production environment must be replicated. Before doing so, ensure that the customer will not be impacted by the changes and clearly communicate a maintenance window in which the work will be performed.
 
+## Clashes between a PTE and an AppSource app
+
+A common scenario is when a per-tenant extension (PTE) was built to fill a gap in functionality that is now covered by an AppSource app. In this case, objects or fields defined in the PTE may conflict with the corresponding objects or fields introduced by the AppSource app, preventing the AppSource app from being installed.
+
+The recommended resolution is to uninstall the PTE with the **Delete data** option, which removes the extension's schema from the database entirely. After the schema is cleared, the AppSource app can be installed without conflicts.
+
+> [!WARNING]
+> Uninstalling an extension with the **Delete data** option permanently deletes all data stored in tables and table extensions that the extension contributes. Back up any data you need to retain before you proceed.
+
+To resolve the conflict, follow these steps:
+
+1. **Back up your data.**  
+   Export any data stored in the tables or table extensions defined by the PTE. You can use RapidStart, Configuration Packages, or any other mechanism to export the data to an external storage system.
+
+2. **Uninstall the PTE with the Delete data option.**  
+   In [!INCLUDE[prod_short](../includes/prod_short.md)], open the **Extension Management** page, select the PTE, and choose **Uninstall**. In the uninstall dialog, enable the **Delete extension data** option before confirming. This removes all tables, fields, and other schema objects contributed by the extension and clears any trace of it from the database.
+
+   Alternatively, you can uninstall the extension using the [Business Central Administration Center API](../administration/administration-center-api_app_management.md).
+
+3. **Install the AppSource app.**  
+   Once the PTE schema has been removed, install the AppSource app from [Microsoft AppSource](https://appsource.microsoft.com). The app can now be installed without conflicts.
+
+4. **Restore your data.**  
+   Import any data you backed up in step 1 into the fields now owned by the AppSource app. Verify that field lengths, data types, and formats are compatible before importing.
+
+5. **Validate the environment.**  
+   Test functionality to confirm the AppSource app is working correctly and that the restored data is accurate.
+
 ## Related information
 
-[Upgrading Marketplace Apps in Production](../developer/devenv-upgrade-appsource-app-in-prod.md)
+[Upgrading Marketplace Apps in Production](../developer/devenv-upgrade-appsource-app-in-prod.md)  
+[Environments that can't get updated](../administration/tenant-admin-center-update-management.md#environments-that-cant-get-updated)
