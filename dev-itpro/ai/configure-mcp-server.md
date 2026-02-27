@@ -53,9 +53,9 @@ Once the MCP server is enabled and configured, the individual configurations bec
    |Discover Additional Objects|Specifies whether agents can access API page objects that aren't explicitly defined in the configuration. When this switch is on, agents have read-only access to all API page objects in the environment, even if they aren't added as tools in the configuration. This setting only works when **Dynamic Tool Mode** is turned on.|
    |Unblock Edit Tools|Specifies whether APIs included as tools in the configuration can perform create, update, or delete operations. When this switch is turned on, the `Allow Create`, `Allow Modify`, `Allow Delete`, and `Allow Bound Actions` permissions control write operations. When turned off, all these permissions are set to `false` making the tools read-only.|
 
-1. In the **Tools** section, add API page objects as tools to the configuration.
+1. In the **Available Tools** section, add API page objects as tools to the configuration.
 
-   You can add objects individually as separate entries. Select **Add All Standard APIs as Tools** to automatically add all Business Central API pages as tools.
+   To add a page, set the **Object ID** field and then select the permissions as described in the table. To automatically add all Business Central API pages as tools, select **Add All Standard APIs as Tools**.
 
    |Permission|Description|
    |-|-|
