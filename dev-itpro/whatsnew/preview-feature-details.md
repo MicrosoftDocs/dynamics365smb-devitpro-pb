@@ -1,7 +1,7 @@
 ﻿---
 title: Feature details
 description: Feature details for Business Central 2026 release wave 1
-ms.date: 02/25/2026
+ms.date: 02/28/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -901,6 +901,11 @@ This improvement benefits roles that frequently work with shared data&mdash;incl
 
 The feature surfaces existing **Created By** and **Modified By** fields more intuitively while respecting Business Central’s data privacy and permissions model.
 
+## Stay in flow of work with updated Outlook integration
+
+- We've improved security of the Outlook add-ins that helps users manage their business inbox. When you install the add-ins, you'll need to complete an extra one-time setup to ensure your account stays protected. Administrators can still automate add-in deployment across your organization using centralized deployment.
+- We've also improved the user experience, speed and security of the contact synchronization feature that people can use to copy contacts from Business Central to Microsoft 365. You can easily author mails or schedule meetings with business contacts from Outlook and Teams. To synchronize contacts, go to the Contacts list and find the new **Synchronize with Outlook** action.
+- As we continue our work to keep our customers secure, we're deprecating the Exchange Synch. setup pages that are no longer needed for connecting Business Central with Outlook and Exchange.
 
 
 ## Stop all active tasks for selected agent

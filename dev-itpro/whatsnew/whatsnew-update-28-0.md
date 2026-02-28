@@ -2,7 +2,7 @@
 title: What's New or Changed in Business Central 2026 release wave 1 - Update 28.0 preview
 description: Get an overview of new and changed capabilities in the 28.0 update of Business Central online, which is part of 2026 release wave 1.
 ms.author: jswymer
-ms.date: 10/02/2025
+ms.date: 02/28/2026
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
@@ -98,6 +98,7 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 | | [Connect AI agents to the Admin Center through MCP server](preview-feature-details.md#connect-ai-agents-to-the-admin-center-through-mcp-server) | Public preview |
 | | [Manage database index usage and cost per company](preview-feature-details.md#manage-database-index-usage-and-cost-per-company) | General availability |
 | | [Migrate to the cloud from any SQL database](preview-feature-details.md#migrate-to-the-cloud-from-any-sql-database) | Public preview |
+|Productive with Microsoft 365|[Stay in flow of work with updated Outlook integration](preview-feature-details.md#stay-in-flow-of-work-with-updated-outlook-integration)| General availability |
 | Reporting and data analysis | [Control the lifecycle of report layouts](preview-feature-details.md#control-the-lifecycle-of-report-layouts) | General availability |
 | | [Enhanced demo data for sales, purchasing, and fixed assets analytics](preview-feature-details.md#enhanced-demo-data-for-sales-purchasing-and-fixed-assets-analytics) | General availability |
 | | [Enhanced Subscription Billing Power BI app](preview-feature-details.md#enhanced-subscription-billing-power-bi-app) | General availability |
