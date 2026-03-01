@@ -10,7 +10,7 @@ ms.custom:
     - bap-template
 ---
 
-# Update 28.0 for Business Central 2026 release wave 1 (preview)
+# Update 28.0 preview for Business Central 2026 release wave 1
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -18,11 +18,9 @@ This article provides an overview of new and updated features in update 28.0 pre
 
 More features and information about on-premises deployments will be added to this article when version 28.0 is generally available in April 2026. <!-- Learn more about all features planned for 2026 release wave 1 (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).-->
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
-## Highlights
-
-tba
+> [!IMPORTANT]
+> - The features in this article are preview features.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## New and updated features
 
