@@ -10,11 +10,11 @@ ms.custom:
     - bap-template
 ---
 
-# Update 28.0 preview for Business Central 2026 release wave 1
+# Update 28.0 public preview for Business Central 2026 release wave 1
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article provides an overview of new and updated features in update 28.0 preview, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
+This article provides an overview of new and updated features in update 28.0 public preview, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
 
 More features and information about on-premises deployments will be added to this article when version 28.0 is generally available in April 2026. <!-- Learn more about all features planned for 2026 release wave 1 (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).-->
 
@@ -132,11 +132,11 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - Feature Update: Track changes done through the user interface - Captures changes made by user interaction with the UI.
 - Feature Update: Accelerated Depreciation - This feature update isn't available yet, It is disabled by default and enabling it has no affect.
 
-## Create new sandbox environment on 28.0 preview
+## Create new sandbox environment on 28.0 public preview
 
 Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, follow the instructions in [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment). Set the environment type to **Sandbox** and the version to **28.0 preview**.
 
-## Update existing sandbox environment to 28.0 preview
+## Update existing sandbox environment to 28.0 public preview
 
 > [!NOTE]
 > Updating a sandbox environment is a new capability introduced in the service.
@@ -144,6 +144,14 @@ Creating a new preview environment lets you review new functionality in a clean 
 Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that might contain your own data, setup, and customizations by testing with your extensions installed. To update an existing sandbox, follow the instructions in [Schedule an update for an environment](../administration/tenant-admin-center-update-management.md#schedule). Set the version to **28.0 preview**.
 
 ## Good to know
+
+### Duration and deletion of public preview environments
+
+The public preview runs from the first week of March until update 28.0 becomes generally available in the first week of April. During this period, you can create new sandbox environments on the preview version or update existing sandbox environments to it.
+
+Microsoft will automatically delete preview sandbox environments 30 days after update 28.0 becomes generally available&mdash;sometime in early May 2026. You can't update a preview environment to a different version.
+
+Learn more about public preview in [Prepare for major updates with preview environments](../administration/preview-environments.md).
 
 ### Business Central Launch Edition - 2026 release wave 1
 
