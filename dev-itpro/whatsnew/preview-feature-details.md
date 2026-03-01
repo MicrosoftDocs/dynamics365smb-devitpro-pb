@@ -1,5 +1,5 @@
 ﻿---
-title: Feature details
+title: Feature details in update 28.0 public preview for 2026 release wave 1
 description: Feature details for Business Central 2026 release wave 1
 ms.date: 02/28/2026
 author: jswymer
@@ -9,13 +9,15 @@ ms.topic: concept-article
 ROBOTS: NOINDEX
 ---
 
-# Feature details for Business Central 2026 release wave 1 (preview)
+# Feature details for Business Central 2026 release wave 1 public preview
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This articles provides details about the features available in the Business Central 2026 release wave 1 (preview). 
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+> [!IMPORTANT]
+> - The features in this article are preview features.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Add pictures to item variants to differentiate product options
 
@@ -510,12 +512,6 @@ The extension also offers several tools for reporting and analyses.
 - **Certificate of Analysis**: A certificate of analysis provides detailed information about the composition and quality of a product. You often need it for regulatory compliance.
 - **Quality Status Overview**: An overview of item quality status helps stakeholders understand the current quality levels and any issues in production.
 - **Quality Orders Overview**: An overview of quality orders summarizes customer requirements and production batches. It ensures that quality expectations are met.
-
-### Get early access preview versions as a partner
-
-Tenants with the partner sandbox license get early access to preview environments for the next major Business Central version, giving you a head start in exploring new capabilities and preparing for changes ahead of general availability.
-
-
 
 ## Experience improved usability in manufacturing
 

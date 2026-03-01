@@ -9,7 +9,6 @@ author: jswymer
 ms.custom: 
     - bap-template
 ---
-
 # Update 28.0 public preview for Business Central 2026 release wave 1
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -155,7 +154,7 @@ Learn more about public preview in [Prepare for major updates with preview envir
 
 ### Business Central Launch Edition - 2026 release wave 1
 
-The Business Central Launch Event for 2026 release wave 1 is on April 1, 2026. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
+The Business Central Launch Edition for 2026 release wave 1 is on April 1, 2026. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Discover all partner related resources
 
