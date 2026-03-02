@@ -55,16 +55,19 @@ landingContent:
         url: ai-development-toolkit-agent-visibility.md
       - text: Agent frequently asked questions
         url: ai-development-toolkit-faq.md
-    - linkListType: video
-      links:
-      - text: Design and code agents in Business Central (video)
-        url: https://aka.ms/bcdesignagents
     - linkListType: reference
       links:
       - text: Integrate with the Tasks AL API
         url: ai-development-toolkit-tasks-api.md
       - text: Instruction keywords for an agent
         url: ai-development-toolkit-instruction-keywords.md
+# Card
+  - title: Videos
+    linkLists:
+    - linkListType: video
+      links:
+      - text: Design and code agents in Business Central (video)
+        url: https://aka.ms/bcdesignagents
 # Card
   - title: Develop with the AI development toolkit
     linkLists:
