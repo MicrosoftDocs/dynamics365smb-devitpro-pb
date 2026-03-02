@@ -129,7 +129,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - Feature Update: Improved performance in Trial Balance-related Excel reports - Enables performance enhancements on Trial Balance-related Excel reports. Learn more in [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting).
 - Feature Update: Track changes done through the user interface - Captures changes made by user interaction with the UI.
-- Feature Update: Accelerated Depreciation - This feature update isn't available yet, It is disabled by default and enabling it has no affect.
+- Feature Update: Accelerated Depreciation - This feature update isn't available yet. It's disabled by default and enabling it has no effect.
 
 ## Create new sandbox environment on 28.0 public preview
 
