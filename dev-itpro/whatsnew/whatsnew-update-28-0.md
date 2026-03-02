@@ -146,6 +146,24 @@ Updating an existing sandbox environment to a preview version lets you review ne
 
 ### Duration and deletion of public preview environments
 
+The public preview runs from the first week of March until update 28.0 becomes generally available in April. Microsoft will automatically delete preview sandbox environments 30 days after general availability. You can't update a preview environment to a different version. Learn more in [Prepare for major updates with preview environments](../administration/preview-environments.md).
+
+### Give feedback on the public preview
+
+Share feedback in the [Business Central public preview group](https://aka.ms/BCPublicPreviewGroup) on Viva Engage or report bugs at [https://aka.ms/bcpreviewbugs](https://aka.ms/bcpreviewbugs).
+
+### Business Central Launch Edition - 2026 release wave 1
+
+The Business Central Launch Edition launches April 1, 2026. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
+
+### Partner and user resources
+
+- **Partners:** [Resources for Partners](https://aka.ms/BCAll)
+- **Users:** [Resources for users](https://aka.ms/BCUsers)
+
+
+### Duration and deletion of public preview environments
+
 The public preview runs from the first week of March until update 28.0 becomes generally available in the first week of April. During this period, you can create new sandbox environments on the preview version or update existing sandbox environments to it.
 
 Microsoft will automatically delete preview sandbox environments 30 days after update 28.0 becomes generally available&mdash;sometime in early May 2026. You can't update a preview environment to a different version.
