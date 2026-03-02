@@ -154,7 +154,7 @@ Learn more about public preview in [Prepare for major updates with preview envir
 
 ### Give feedback on the public preview
 
-Share feedback in the [Business Central public preview group](https://aka.ms/BCPublicPreviewGroup) on Viva Engage or report bugs at [https://aka.ms/bcpreviewbugs](https://aka.ms/bcpreviewbugs).
+Share feedback and questions in the [Business Central public preview group](https://aka.ms/BCPublicPreviewGroup) on Viva Engage or report bugs at [https://aka.ms/bcpreviewbugs](https://aka.ms/bcpreviewbugs).
 
 ### Business Central Launch Edition - 2026 release wave 1
 
