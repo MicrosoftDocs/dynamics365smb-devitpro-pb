@@ -134,6 +134,7 @@ When you export a layout or open/edit it through OneDrive in [!INCLUDE[prod_shor
 - For custom layouts, there's no default fallback extension, so the MIME type must provide the extension if you want a deterministic file name/extension when exporting or editing the layout.
 
 For this reason, when defining custom layouts, make sure the MIME type is aligned with the intended file extension used by export/edit flows.
+
 ## Related information
 
 [Working with and troubleshooting payloads](devenv-reports-troubleshoot-printing.md)  
