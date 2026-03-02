@@ -32,7 +32,7 @@ report 50000 "Standard Report Layout"
             LayoutFile = './StandardReportLayout.custom';
             Caption = 'First custom layout';
             Summary = 'First custom layout summary';
-            MimeType = 'Application/ReportLayout/MyExtension';
+            MimeType = 'ReportLayout/MyExtension';
         }
     }
 }
