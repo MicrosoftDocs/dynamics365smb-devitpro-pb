@@ -48,9 +48,9 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 The public preview version of Business Central 2026 release wave 1 (update 28.0) is now available for Business Central online tenants. The public preview enables you to test and provide feedback on new features coming with Business Central 2026 release wave 1 in April. Learn more in [Update 28.0 (preview)](whatsnew-update-28-0.md).
 
-### Business Central Launch Edition - 2025 release wave 2
+### Business Central Launch Edition - 2025 release wave 2 information
 
-The Business Central Launch Event (BCLE) is now the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
+The Business Central Launch Edition includes these resources:
 
 - 45+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
 - 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
