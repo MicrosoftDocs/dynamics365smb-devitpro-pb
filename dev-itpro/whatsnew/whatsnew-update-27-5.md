@@ -34,9 +34,9 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 ### Online customers
 
 - New customers get Business Central version 27.5 automatically.
-- Existing customers are notified when update 27.5 is available. Admins can schedule update 27.5 to any date within the five-month update period, which ends on February 28, 2026.
+- Existing customers are notified when update 27.5 is available. Admins can schedule update 27.5 to any date within the five-month update period for the the release wave, which ends last week of February 28 or early , 2026.
 
-Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
+Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#update-period).
 
 ### On-premises customers
 
