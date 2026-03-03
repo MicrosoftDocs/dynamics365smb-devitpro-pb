@@ -1,7 +1,7 @@
 ---
 title: Developing a Custom Report Render
 description: Describe the custom report render logic and how to implement it in AL code.
-ms.date: 01/20/2025
+ms.date: 03/03/2026
 ms.reviewer: solsen
 ms.topic: concept-article
 author: nhsejth
@@ -128,8 +128,8 @@ The simplest possible custom document render can be implemented as in the follow
 
 When you export a layout or open/edit it through OneDrive in [!INCLUDE[prod_short](../includes/prod_short.md)], the file extension is resolved from the layout metadata, not from report output actions.
 
-- The platform builds the export file name from layout name + resolved file extension.
-- It first checks the layout's stored MIME type. If the MIME type contains `reportlayout/`, that value is used to derive the extension.
+- The export file name is built from the layout name and the resolved file extension.
+- The layout's stored MIME type is checked first. If the MIME type contains `reportlayout/`, that value is used to derive the extension.
 - If no usable MIME type is available, it falls back to layout format defaults: Word = `docx`, RDLC = `rdl`, Excel = `xlsx`.
 - For custom layouts, there's no default fallback extension, so the MIME type must provide the extension if you want a deterministic file name/extension when exporting or editing the layout.
 
