@@ -1,6 +1,6 @@
 Database indexes significantly affect performance. While indexes speed up read operations (find, filter, sort, aggregate), they require storage and can slow down write operations because the index must be kept up to date.
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] provides tools to view index usage statistics and selectively disable low-use indexes to improve write performance and reduce storage costs. This is particularly beneficial for:
+[!INCLUDE[prod_short](prod_short.md)] provides tools to view index usage statistics and selectively disable low-use indexes to improve write performance and reduce storage costs. This is particularly beneficial for:
 
 - Tables with high transaction volumes where write performance is critical
 - Reducing database storage costs by removing indexes that aren't being used
