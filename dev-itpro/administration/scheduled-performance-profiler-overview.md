@@ -2,7 +2,7 @@
 title: Scheduled performance profiler overview
 description: Describes how to use the Profiler Schedules page in Business Central to troubleshoot slow processes across time.
 ms.author: sodragon
-ms.date: 01/30/2025
+ms.date: 03/03/2026
 ms.reviewer: solsen
 ms.topic: article
 author: sodragon
