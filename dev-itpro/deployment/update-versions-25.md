@@ -28,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5081983](https://support.microsoft.com/help/5081983)|Update 25.17|March 2026|Application Build 25.17, Platform Build 25.2|
 |[5078589](https://support.microsoft.com/help/5078589)|Update 25.16|February 2026|Application Build 25.16.45420, Platform Build 25.2.45350|
 |[5075268](https://support.microsoft.com/help/5075268)|Update 25.15|January 2026|Application Build 25.15.44303, Platform Build 25.2.44164|
 |[5073763](https://support.microsoft.com/help/5073763)|Update 25.14|December 2025|Application Build 25.14.42772, Platform Build 25.2.42699|
