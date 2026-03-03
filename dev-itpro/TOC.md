@@ -3,6 +3,7 @@
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
 ## [Update 28.0 (preview)](whatsnew/whatsnew-update-28-0.md)
+## [Update 27.5](whatsnew/whatsnew-update-27-5.md)
 ## [Update 27.4](whatsnew/whatsnew-update-27-4.md)
 ## [Update 27.3](whatsnew/whatsnew-update-27-3.md)
 ## [Update 27.2](whatsnew/whatsnew-update-27-2.md)
