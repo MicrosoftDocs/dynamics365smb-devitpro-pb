@@ -19,17 +19,11 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-| Product area | Feature | Public preview/general availability |
-|-|-|-|
-| Copilot and agents | [Envision and design AI agents in Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/envision-prototype-custom-ai-agents-using-agent-designer) | Public preview |
-| Electronic Documents | [Use purchase draft page to preview Peppol electronic invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-purchase-draft-page-preview-peppol-electronic-invoices) | Public preview |
-| Governance and administration | [Export sandbox environment databases](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/export-sandbox-environment-databases)<sup>1</sup> | Public preview |
-
-<sup>1</sup> This feature is a service feature available independently of the update version.
+No changes.
 
 ## Localization updates
 
-No localization updates in 27.5
+No updates.
 
 ## Release plan
 
@@ -50,9 +44,9 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-<!--### New online service features
+### Business Central 2026 release wave 1 public preview
 
-**Export sandbox environment databases (public preview):** You can now export databases from sandbox environments directly in the Business Central admin center, making it easier to analyze data, create backups, or migrate databases to other environments. Learn more in [Export sandbox environment databases](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/export-sandbox-environment-databases) and [Exporting databases in the admin center (documentation)](../administration/tenant-admin-center-database-export.md).-->
+The public preview version of Business Central 2026 release wave 1 (update 28.0) is now available for Business Central online tenants. The public preview enables you to test and provide feedback on new features coming with Business Central 2026 release wave 1 in April. Learn more in [Update 28.0 (preview)](whatsnew-update-28-0.md).
 
 ### Business Central Launch Edition - 2025 release wave 2
 
