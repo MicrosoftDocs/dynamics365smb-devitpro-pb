@@ -15,15 +15,15 @@ Would you like to know what changes are in update 27.5? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 27.5 for Business Central 2025 release wave 2](https://support.microsoft.com/help/5078591).
+Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 27.5 for Business Central 2025 release wave 2](https://support.microsoft.com/help/5081986).
 
 ## Feature changes
 
-No changes.
+No changes
 
 ## Localization updates
 
-No updates.
+No updates
 
 ## Release plan
 
@@ -34,9 +34,7 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 ### Online customers
 
 - New customers get Business Central version 27.5 automatically.
-- Existing customers are notified when update 27.5 is available. Admins can schedule update 27.5 to any date within the five-month update period for the the release wave, which ends last week of February 28 or early , 2026.
-
-Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#update-period).
+- Existing customers are notified when update 27.5 is available so they schedule the update. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management.md#schedule).
 
 ### On-premises customers
 
