@@ -8,4 +8,4 @@ Database indexes significantly affect performance. While indexes speed up read o
 
 You can view detailed index usage statistics from the **Table Information** page, including index storage size and query usage metrics. Turn off nonessential indexes while protecting unique indexes, primary keys, SIFT indexes, and $systemid indexes from being disabled.
 
-Learn more in [Manage database index usage and cost](/dynamics365/business-central/manage-indexes).
+Learn more in [Manage database index usage and cost](/dynamics365/business-central/manage-indexes?toc=/dynamics365/business-central/dev-itpro/toc.json).
