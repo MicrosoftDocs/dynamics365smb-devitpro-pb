@@ -4,11 +4,11 @@ description: Learn how you can use the developer tools for Copilot in Business C
 author: pborring
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: concept-article
+ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 08/27/2025
+ms.date: 03/04/2026
 ms.update-cycle: 180-days
 ---
 
