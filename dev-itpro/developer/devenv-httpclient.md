@@ -2,7 +2,7 @@
 title: Call external services with the HttpClient data type
 description: Learn about how to call external services using the HttpClient datatype.
 ms.custom: bap-template
-ms.date: 03/12/2025
+ms.date: 03/04/2026
 ms.reviewer: solsen
 ms.topic: how-to
 author: kennienp
@@ -21,7 +21,7 @@ In this article, you learn how to make HTTP requests using the *HttpClient* data
 
 ## Set up an external call
 
-The first thing you need to do is to define the HTTP request, that is, which URI to call, set request and content HTTP headers, and choose which HTTP method to use. You do this using the `HttpRequestMessage` data type.
+The first thing you need to do is to define the HTTP request. Specify the URI to call, set request and content HTTP headers, and choose which HTTP method to use. You do this using the `HttpRequestMessage` data type.
 
 The following example illustrates ways to prepare the request.
 
@@ -101,6 +101,20 @@ If you need to debug failing HTTP calls due to server certificates that fail to 
 
 With version 27, the server certificate validation is enforced, and the only way to disable it is through the [HttpClient.UseServerCertificateValidation(Boolean) method](methods-auto/httpclient/httpclient-useservercertificatevalidation-method.md). In versions prior to version 27, the server certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md), which allows app and per-tenant extension publishers to modify their code.
 
+### Anti-SSRF validation for AL HttpClient
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+The AL HttpClient is hardened with anti-SSRF (Server-Side Request Forgery) validation. This security measure blocks HTTP requests to internal IP addresses by default, helping protect your environment against server-side request forgery attacks.
+
+For on-premises deployments that require HTTP calls to internal IP addresses, two server configuration settings are available:
+
+- `NavHttpClientAntiSSRFEnabled` - Controls whether anti-SSRF validation is active. Set to `true` (default) to enable validation, or `false` to disable it entirely.
+- `NavHttpClientAntiSSRFAllowedAddresses` - Specifies a list of internal IP addresses that are allowed even when validation is enabled. The value is a JSON array of IP addresses (for example, `["10.0.0.1", "192.168.1.100"]`).
+
+> [!IMPORTANT]
+> The recommended approach is to keep `NavHttpClientAntiSSRFEnabled` set to `true` and only add the specific IP addresses you need to `NavHttpClientAntiSSRFAllowedAddresses`. Disabling validation entirely is discouraged because it removes an important layer of protection against SSRF attacks.
+
 ### Supported HTTP methods
 
 [!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md)]
@@ -148,7 +162,7 @@ The following example illustrates the error handling you need to set up for hand
 
 ### Using cookies
 
-Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using `HttpClient`. This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the `Cookie` datatype and AL methods for handling cookies, you can automatically reuse response cookies, handle cookies manually, or a mix of both. 
+Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using `HttpClient`. This capability allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where non-Microsoft endpoints require cookie customization. With the `Cookie` datatype and AL methods for handling cookies, you can automatically reuse response cookies, handle cookies manually, or a mix of both. 
 
 ### Using certificates
 
@@ -174,7 +188,7 @@ Learn more in:
 
 ## Testing external calls
 
-Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses, and allowing you to track outbound traffic during the test executions.
+Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses. It allows you to track outbound traffic during the test executions.
 
 Learn more in [Mock outbound HttpClient web service calls during testing](devenv-httpclient-mock-outbound-calls.md).
 
