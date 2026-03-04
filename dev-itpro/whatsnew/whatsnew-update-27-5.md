@@ -19,7 +19,17 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-No changes
+| Product area | Feature | Public preview/General availability |
+|-|-|-|
+| Country and regional | [Adjust VAT in local currency on sales documents in Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/adjust-vat-local-currency-sales-documents-czechia) | Public preview |
+| | [Align VAT periods with Microsoft standards for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/align-vat-periods-microsoft-standards-czechia) | Public preview |
+| | [Change Original Document VAT Date in VAT Entries - Czechia | Public preview |
+| | [Get started with clearer user setup controls for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/get-started-clearer-user-setup-controls-czechia) | Public preview |
+| | [Transfer journal line descriptions to bank statements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements) | Public preview |
+| Electronic documents | [Set up Service Participants to Company Information](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/set-up-service-participants-company-information) | Public preview |
+| Governance and administration | [Migrate to the cloud from any SQL database](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/migrate-cloud-sql-database)<sup>1</sup> | Public preview |
+
+<sup>1</sup> This feature is a service feature available independently of the update version.
 
 ## Localization updates
 
