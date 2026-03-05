@@ -112,6 +112,8 @@ For on-premises deployments that require HTTP calls to internal IP addresses, tw
 - `NavHttpClientAntiSSRFEnabled` - Controls whether anti-SSRF validation is active. Set to `true` (default) to enable validation, or `false` to disable it entirely.
 - `NavHttpClientAntiSSRFAllowedAddresses` - Specifies a list of internal IP addresses that are allowed even when validation is enabled. The value is a JSON array of IP addresses (for example, `["10.0.0.1", "192.168.1.100"]`).
 
+Learn how to configure [!INCLUDE [server](includes/server.md)] in [Configure Business Central Server ](../administration/configure-server-instance.md).
+
 > [!IMPORTANT]
 > The recommended approach is to keep `NavHttpClientAntiSSRFEnabled` set to `true` and only add the specific IP addresses you need to `NavHttpClientAntiSSRFAllowedAddresses`. Disabling validation entirely is discouraged because it removes an important layer of protection against SSRF attacks.
 
