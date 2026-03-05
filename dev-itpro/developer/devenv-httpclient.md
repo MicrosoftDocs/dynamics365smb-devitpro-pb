@@ -99,7 +99,7 @@ If an app or per-tenant extension needs to selectively disable certificate valid
 
 If you need to debug failing HTTP calls due to server certificates that fail to be validated, telemetry is emitted if there are certificate validation failures. Learn more in [Analyzing server certificate validation errors with telemetry](../administration/telemetry-webservices-outgoing-certificate-validation-errors.md).
 
-With version 27, the server certificate validation is enforced, and the only way to disable it is through the [HttpClient.UseServerCertificateValidation(Boolean) method](methods-auto/httpclient/httpclient-useservercertificatevalidation-method.md). In versions prior to version 27, the server certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md), which allows app and per-tenant extension publishers to modify their code.
+With version 27, the server certificate validation is enforced, and the only way to disable it is through the [HttpClient.UseServerCertificateValidation(Boolean) method](methods-auto/httpclient/httpclient-useservercertificatevalidation-method.md). In versions before version 27, the server certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md), which allows app and per-tenant extension publishers to modify their code.
 
 ### Anti-SSRF validation for AL HttpClient
 
@@ -107,7 +107,7 @@ With version 27, the server certificate validation is enforced, and the only way
 
 The AL HttpClient is hardened with anti-SSRF (Server-Side Request Forgery) validation. This security measure blocks HTTP requests to internal IP addresses by default, helping protect your environment against server-side request forgery attacks.
 
-For on-premises deployments that require HTTP calls to internal IP addresses, two server configuration settings are available:
+This validation is always enabled with [!INCLUDE [prod_short](includes/prod_short.md)] online and can't be disabled. For on-premises deployments that require HTTP calls to internal IP addresses, two server configuration settings are available:
 
 - `NavHttpClientAntiSSRFEnabled` - Controls whether anti-SSRF validation is active. Set to `true` (default) to enable validation, or `false` to disable it entirely.
 - `NavHttpClientAntiSSRFAllowedAddresses` - Specifies a list of internal IP addresses that are allowed even when validation is enabled. The value is a JSON array of IP addresses (for example, `["10.0.0.1", "192.168.1.100"]`).
