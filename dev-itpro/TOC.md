@@ -216,6 +216,7 @@
 #### [Session management](administration/administration-center-api_session_management.md)
 #### [Support settings](administration/administration-center-api_support_settings.md)
 #### [Telemetry](administration/administration-center-api_telemetry.md)
+#### [MCP](administration/administration-center-api_mcp.md)
 <!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
 ## Entitlements and permissions
 ### [Licenses and entitlements](deployment/licensing.md)
