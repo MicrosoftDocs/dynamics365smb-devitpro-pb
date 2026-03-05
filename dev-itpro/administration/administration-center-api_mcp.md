@@ -26,6 +26,8 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API MC
 https://mcp.businesscentral.dynamics.com/admin/v1 
 ```
 
+Connect to the MCP Server in [VSCode](https://code.visualstudio.com/docs/copilot/customization/mcp-servers), [Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent), or any other tool that supports MCP.
+
 ## Excluded Tools
 
 The MCP Sever includes all tools available in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API, with the exception of endpoints that may disrupt an environment if called unintentionally. The following API endpoints are excluded during the public preview:
