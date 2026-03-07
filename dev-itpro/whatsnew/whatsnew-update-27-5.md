@@ -47,7 +47,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### Stop all task action for Sales Order Agent
+### Stop all tasks action for Sales Order Agent
 
 There's a new **Stop all tasks** action on the task pane. If the agent becomes blocked after importing too many tasks, you can unblock it by clearing the task list.
 
