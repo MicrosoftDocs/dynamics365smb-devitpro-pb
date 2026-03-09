@@ -2,28 +2,23 @@
 title: What's New or Changed in Business Central 2026 release wave 1 - Update 28.0 preview
 description: Get an overview of new and changed capabilities in the 28.0 update of Business Central online, which is part of 2026 release wave 1.
 ms.author: jswymer
-ms.date: 02/28/2026
+ms.date: 03/09/2026
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
 ms.custom: 
     - bap-template
 ---
-# Update 28.0 public preview for Business Central 2026 release wave 1
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Update 28.0 for Business Central 2026 release wave 1
 
 This article provides an overview of new and updated features in update 28.0 public preview, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
 
-More features and information about on-premises deployments will be added to this article when version 28.0 is generally available in April 2026. <!-- Learn more about all features planned for 2026 release wave 1 (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).-->
-
-> [!IMPORTANT]
-> - The features in this article are preview features.
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
-
 ## New and updated features
 
-This table lists new and updated features in update 28.0. Select the link the **Feature** column to learn about a specific feature.
+> [!TIP]
+> **Watch the launch edition 2026 release wave 1 sessions** Get a walkthrough of the key features on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
+
+This table lists new and updated features in update 28.0. Learn more about all features planned for 2026 release wave 1 (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).
 
 <!-- Generate table:
 
@@ -131,7 +126,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - Feature Update: Track changes done through the user interface - Captures changes made by user interaction with the UI.
 - Feature Update: Accelerated Depreciation - This feature update isn't available yet. It's disabled by default and enabling it has no effect.
 
-## Create new sandbox environment on 28.0 public preview
+## Create new sandbox environment on 28.0
 
 Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, follow the instructions in [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment). Set the environment type to **Sandbox** and the version to **28.0 preview**.
 
@@ -142,23 +137,68 @@ Creating a new preview environment lets you review new functionality in a clean 
 
 Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that might contain your own data, setup, and customizations by testing with your extensions installed. To update an existing sandbox, follow the instructions in [Schedule an update for an environment](../administration/tenant-admin-center-update-management.md#schedule). Set the version to **28.0 preview**.
 
+## On-premises download packages
+
+Select and download the package for the appropriate country or region version from Microsoft Support.
+
+|Country/region|Download package|
+|-|-|
+|AT - Austria|[Dynamics.365.BC.40242.AT.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.AT.DVD.zip)|
+|AU - Australia|[Dynamics.365.BC.40242.AU.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.AU.DVD.zip)|
+|BE - Belgium|[Dynamics.365.BC.40242.BE.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.BE.DVD.zip)|
+|CA - Canada|[Dynamics.365.BC.40242.CA.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.CA.DVD.zip)|
+|CH - Switzerland|[Dynamics.365.BC.40242.CH.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.CH.DVD.zip)|
+|CZ- Czechia|[Dynamics.365.BC.40242.CZ.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.CZ.DVD.zip)|
+|DE - Germany|[Dynamics.365.BC.40242.DE.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.DE.DVD.zip)|
+|DK - Denmark|[Dynamics.365.BC.40242.DK.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.DK.DVD.zip)|
+|ES - Spain|[Dynamics.365.BC.40242.ES.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.ES.DVD.zip)|
+|FI - Finland|[Dynamics.365.BC.40242.FI.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.FI.DVD.zip)|
+|FR - France|[Dynamics.365.BC.40242.FR.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.FR.DVD.zip)|
+|GB - United Kingdom|[Dynamics.365.BC.40242.GB.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.GB.DVD.zip)|
+|IN - India|[Dynamics.365.BC.40242.IN.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.IN.DVD.zip)|
+|IS - Iceland|[Dynamics.365.BC.40242.IS.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.IS.DVD.zip)|
+|IT - Italy|[Dynamics.365.BC.40242.IT.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.IT.DVD.zip)|
+|MX - Mexico|[Dynamics.365.BC.40242.MX.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.MX.DVD.zip)|
+|NL - Netherlands|[Dynamics.365.BC.40242.NL.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.NL.DVD.zip)|
+|NO - Norway|[Dynamics.365.BC.40242.NO.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.NO.DVD.zip)|
+|NZ - New Zealand|[Dynamics.365.BC.40242.NZ.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.NZ.DVD.zip)|
+|RU - Russia|[Dynamics.365.BC.40242.RU.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.RU.DVD.zip)|
+|SE - Sweden|[Dynamics.365.BC.40242.SE.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.SE.DVD.zip)|
+|US - United States|[Dynamics.365.BC.40242.US.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.US.DVD.zip)|
+|All other countries/regions (W1)|[Dynamics.365.BC.40242.W1.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.W1.DVD.zip)|
+
+## Upgrade to 28.0
+
+### Online customers
+
+- New customers get Business Central version 28.0 automatically.
+- Existing customers are notified when update 28.0 is available. Admins can schedule update 28.0 to any date within the 5-month update period, which ends on February 28, 2026.
+
+Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
+
+### On-premises customers
+
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 28. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 28](../upgrade/upgrade-considerations-v26.md).
+
 ## Good to know
-
-### Duration and deletion of public preview environments
-
-The public preview runs from early March until update 28.0 becomes generally available in the early April. During this period, you can create new sandbox environments on the preview version or update existing sandbox environments to it.
-
-Microsoft will automatically delete preview sandbox environments 30 days after update 28.0 becomes generally available&mdash;in early May 2026. You can't update a preview environment to a different version.
-
-Learn more about public preview in [Prepare for major updates with preview environments](../administration/preview-environments.md).
-
-### Give feedback on the public preview
-
-If you encounter any issues or glitches during your testing, please help us by filling out and submitting the form at [https://aka.ms/bcpreviewbugs](https://aka.ms/bcpreviewbugs).
 
 ### Business Central Launch Edition - 2026 release wave 1
 
-The Business Central Launch Edition for 2026 release wave 1 is on April 1, 2026. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
+The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
+
+- 45+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
+- 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
+- BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
+- 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
+- BCLE 2026 release wave 1 group on Viva Engage for asking questions to our product experts: [BCLE 2026 release wave 1]()
+
+### AI-powered enhancements
+
+Watch this video to learn about AI-powered features and enhancements coming soon.
+
+<!--summary video start-->
+> [!VIDEO https://aka.ms/ReleaseHighlight/2026W1/BusinessCentral]
+<!--summary video end-->
 
 ### Discover all partner related resources
 
