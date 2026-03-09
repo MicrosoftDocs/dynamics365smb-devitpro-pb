@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 08/27/2025
+ms.date: 03/09/2026
 ms.update-cycle: 180-days
 ---
 
@@ -112,12 +112,15 @@ Models evolve and are replaced over time. By using the [!INCLUDE [prod_short](in
 
 ## Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and your own subscription in AL
 
-The default and recommended approach is to use the developer toolkit AI resources when extending Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. All you need to do is to authenticate with the `SetManagedResourceAuthorization` method in the [AI Module AzureOpenAI](/dynamics365/business-central/application/system-application/codeunit/system.ai.azure-openai) codeunit. As part of this, you also need to provide your own AzureOpenAI subscription details, but this isn't used or billed when authenticating with `SetManagedResourceAuthorization`.
+The default and recommended approach is to use the developer toolkit AI resources when extending Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. All you need to do is to authenticate with the `SetManagedResourceAuthorization` method in the [AI Module AzureOpenAI](/dynamics365/business-central/application/system-application/codeunit/system.ai.azure-openai) codeunit.
 
 ```al
 // Example of using the default toolkit AI resources in AL 
-AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions",AzureOpenAIAccountName,AzureOpenAIApiKey,AOAIDeployments.GetGPT4oLatest());
+AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions", AOAIDeployments.GetGPT4oLatest());
 ```
+
+> [!NOTE]
+> The previous signature of `SetManagedResourceAuthorization` that required `AzureOpenAIAccountName` and `AzureOpenAIApiKey` parameters is obsolete. Partners no longer need to provide their own Azure OpenAI subscription details when using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources.
 
 If you instead want to use your own subscription, whether for a customer, or just when you develop or test, you must authenticate with your own subscription using the `SetAuthorization` method.
 
@@ -131,7 +134,7 @@ AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions",GetEndp
 The [!INCLUDE [prod_short](includes/prod_short.md)] AI resources can only be used in customer production environments. Therefore, it's recommended that partners create and use their own Azure OpenAI subscriptions as part of noncustomer usage, for example, when prototyping, developing, testing, and supporting AI capabilities.
 
 > [!NOTE]  
-> To use the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources in an app, the partner must provide information about their own Azure OpenAI subscription. This is to ensure that the partner is aware of and has accepted Azure OpenAI Service data, privacy, and security policies.
+> You must have an Azure subscription in order to use the AI development toolkit in Business Central. If you do not have the Azure subscription, you may not use the AI development toolkit in Business Central. Azure OpenAI Service is made available to customers under the terms governing their subscription to Microsoft Azure Services, including Product Terms such as the Universal License Terms applicable to Microsoft Generative AI Services and the product offering terms for Azure OpenAI. Please review these terms carefully as they contain important conditions and obligations governing your use of Azure OpenAI Service. Unless otherwise indicated in the service, all Azure customers are eligible for access to Azure OpenAI models, and all uses consistent with the Product Terms and Code of Conduct are permitted. If you're using the AI development toolkit in Business Central to develop features that run on managed AI resources, you should enable app/extension-level telemetry, so we can directly communicate the underlying AI model changes to you in a timely manner.
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot easily allow conditionally branching on the Azure OpenAI subscription used, for example, using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources when running in customer environments and a custom Azure OpenAI subscription for the rest.
 
@@ -143,7 +146,7 @@ The following code snippet demonstrates how to use the `EnvironmentInformation` 
 If not EnvironmentInformation.IsSaaSInfrastructure() then
     AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions",GetEndpoint(),GetDeployment(),GetApiKey());
 else
-    AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions",AzureOpenAIAccountName,AzureOpenAIApiKey,AOAIDeployments.GetGPT4oLatest());
+    AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions", AOAIDeployments.GetGPT4oLatest());
 ```
 
 ## Samples
