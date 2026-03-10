@@ -15,8 +15,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API pr
 
 Using tools like Visual Studio Code, administrators can ask questions such as environment update status, available upgrades, or installed extensions, and receive structured responses sourced directly from the Admin Center. Agents can also propose follow‑up actions—such as copying an environment to a sandbox, scheduling an update, or investigating a failed upgrade—while keeping the user in control through explicit confirmation steps.
 
-> [!IMPORTANT]
-> The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] MCP Server is in public preview.
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Location
 
