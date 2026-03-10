@@ -19,7 +19,7 @@ Using tools like Visual Studio Code, administrators can ask questions such as en
 
 ## Location
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API MCP Server is located at the following URL:
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API MCP server is located at the following URL:
 
 ```HTTP
 https://mcp.businesscentral.dynamics.com/admin/v1 
@@ -29,45 +29,45 @@ Connect to the MCP server in [Visual Studio Code](https://code.visualstudio.com/
 
 ## Excluded tools
 
-The MCP server includes all tools available in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API, except for endpoints that might disrupt an environment if called unintentionally. The following API endpoints are excluded during the public preview:
+The MCP server includes all tools available in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API, except for endpoints that might disrupt an environment if called unintentionally. The following API endpoints **are excluded during the public preview**:
 
-### Set security group
+### Set security group - excluded during public preview
 
 ```HTTP
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
-### Clear security group
+### Clear security group - excluded during public preview
 
 ```HTTP
 DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
-### Delete environment
+### Delete environment - excluded during public preview
 
 ```HTTP
 DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-### Rename environment
+### Rename environment - excluded during public preview
 
 ```HTTP
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
-### Link Power Platform environment
+### Link Power Platform environment - excluded during public preview
 
 ```HTTP
 POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id}
 ```
 
-### Unlink Power Platform environment
+### Unlink Power Platform environment - excluded during public preview
 
 ```HTTP
 POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id}
 ```
 
-### Uninstall app
+### Uninstall app - excluded during public preview
 
 ```HTTP
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
