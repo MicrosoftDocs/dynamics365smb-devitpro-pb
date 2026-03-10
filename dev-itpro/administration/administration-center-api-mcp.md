@@ -75,4 +75,4 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ## Related information
 
-[Business Central Administration Center API reference](admin-center-api-reference.md)  
+[Business Central Administration Center API reference](administration-center-api.md)  
