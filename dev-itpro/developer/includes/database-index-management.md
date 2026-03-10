@@ -2,7 +2,7 @@ Database indexes significantly affect performance. While indexes speed up read o
 
 [!INCLUDE[prod_short](prod_short.md)] provides tools to view index usage statistics and selectively disable low-use indexes to improve write performance and reduce storage costs. This capability is beneficial for:
 
-- Tables with high transaction volumes where write performance is critical
+- Optimizing tables with high transaction volumes where write performance is critical
 - Reducing database storage costs by removing indexes that aren't being used
 - Identifying which indexes are actually being used by queries
 
