@@ -4,12 +4,12 @@ description: Get introduced to the Business Central Admin Center API MCP Server
 author: jobulsin
 ms.topic: concept-article
 ms.devlang: al
-ms.reviewer: 
+ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry, mcp, ai
-ms.date: 05/03/2026
+ms.date: 03/10/2026
 ---
 
-# The Business Central Admin Center API MCP Server
+# The Business Central Admin Center API MCP server
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that that exposes [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] APIs in a standardized, self‑describing way. MCP‑compatible AI agents can discover available admin operations, understand context, and perform environment management tasks.
 
@@ -26,43 +26,54 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API MC
 https://mcp.businesscentral.dynamics.com/admin/v1 
 ```
 
-Connect to the MCP Server in [VSCode](https://code.visualstudio.com/docs/copilot/customization/mcp-servers), [Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent), or any other tool that supports MCP.
+Connect to the MCP Server in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers), [Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent), or any other tool that supports MCP.
 
-## Excluded Tools
+## Excluded tools
 
-The MCP Sever includes all tools available in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API, with the exception of endpoints that may disrupt an environment if called unintentionally. The following API endpoints are excluded during the public preview:
+The MCP server includes all tools available in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API, except for endpoints that might disrupt an environment if called unintentionally. The following API endpoints are excluded during the public preview:
 
-### Set Security Group
+### Set security group
+
 ```HTTP
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
-### Clear Security Group
+### Clear security group
+
 ```HTTP
 DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
-### Delete Environment
+### Delete environment
+
 ```HTTP
 DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-### Rename Environment
+### Rename environment
+
 ```HTTP
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
-### Link Power Platform Environment
+### Link Power Platform environment
+
 ```HTTP
 POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id}
 ```
 
-### Unlink Power Platform Environment
+### Unlink Power Platform environment
+
 ```HTTP
 POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id}
 ```
 
 ### Uninstall app
+
 ```HTTP
 POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
+
+## Related information
+
+[Business Central Administration Center API reference](admin-center-api-reference.md)  
