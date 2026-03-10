@@ -1,5 +1,5 @@
 ---
-title: Business Central Administration Center API MCP Server
+title: Business Central Administration Center API MCP Server (preview)
 description: Get introduced to the Business Central Admin Center API MCP Server
 author: jobulsin
 ms.topic: concept-article
@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry, mcp, 
 ms.date: 03/10/2026
 ---
 
-# The Business Central Admin Center API MCP server
+# The Business Central Admin Center API MCP server (preview)
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that that exposes [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] APIs in a standardized, self‑describing way. MCP‑compatible AI agents can discover available admin operations, understand context, and perform environment management tasks.
 
@@ -26,7 +26,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API MC
 https://mcp.businesscentral.dynamics.com/admin/v1 
 ```
 
-Connect to the MCP Server in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers), [Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent), or any other tool that supports MCP.
+Connect to the MCP server in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers), [Copilot Studio](/microsoft-copilot-studio/mcp-add-existing-server-to-agent), or any other tool that supports MCP.
 
 ## Excluded tools
 
