@@ -20,9 +20,9 @@ An entitlement consists of many [PermissionSet objects](devenv-permissionset-obj
 
 Entitlements can only be used with the online version of [!INCLUDE [prod_short](includes/prod_short.md)].
 
-## Supporting transactability for AppSource apps
+## Supporting transactability for Marketplace apps
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements support transactability for AppSource apps by binding entitlements to offers. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements support transactability for Marketplace apps by binding entitlements to offers. Learn more in [Selling Business Central apps through Marketplace](devenv-sell-apps-appsource.md).
 
 <!--
 > [!NOTE]  
@@ -86,7 +86,7 @@ entitlement "Delegated BC Admin agent - Partner"
 
 ### Entitlement example - per-user plan
 
-An example of an entitlement where `Type` is `PerUserOfferPlan`. This type is used to enable transactability for AppSource apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+An example of an entitlement where `Type` is `PerUserOfferPlan`. This type is used to enable transactability for Marketplace apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through Marketplace](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_PerUserOfferPlan
@@ -100,7 +100,7 @@ entitlement BC_PerUserOfferPlan
 
 ### Entitlement example - unlicensed
 
-For scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans, the `Unlicensed` type of entitlement is used. This type is used to enable custom licensing for an existing customer, or *side-by-side support*, for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+For scenarios when the user isn't licensed through entitlements mapping to Marketplace offer plans, the `Unlicensed` type of entitlement is used. This type is used to enable custom licensing for an existing customer, or *side-by-side support*, for transactability-enabled apps on Marketplace. For more information, see [Selling Business Central apps through Marketplace](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_Unlicensed
@@ -180,7 +180,7 @@ procedure CheckingForEntitlementsUsingPermissions()
 
 ### Entitlement example - Microsoft Entra group
 
-This example shows an entitlement where `Type` is `Group`. It supports scenarios where a user needs access to the AppSource app with transact support without buying a developer license. The `id` property is the object ID of the Microsoft Entra group. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+This example shows an entitlement where `Type` is `Group`. It supports scenarios where a user needs access to the Marketplace app with transact support without buying a developer license. The `id` property is the object ID of the Microsoft Entra group. Learn more in [Selling Business Central apps through Marketplace](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_Group
@@ -193,7 +193,7 @@ entitlement BC_Group
 
 ### Entitlement example - Microsoft Entra application access
 
-An example of an entitlement where `Type` is `Application`. It supports scenarios when a vendor needs access to the AppSource app with transact support and no need to buy a license. The `id` property is the client ID of the Microsoft Entra application. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+An example of an entitlement where `Type` is `Application`. It supports scenarios when a vendor needs access to the Marketplace app with transact support and no need to buy a license. The `id` property is the client ID of the Microsoft Entra application. Learn more in [Selling Business Central apps through Marketplace](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_SpecificApplication
@@ -203,7 +203,7 @@ entitlement BC_SpecificApplication
 }
 ```
 
-An example of an entitlement where `Type` is `ApplicationScope`. It supports scenarios when Microsoft Entra application access to the AppSource app with transact support is needed and no license is required. The `id` property is the scope assigned to the Microsoft Entra application. Learn more in [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md).
+An example of an entitlement where `Type` is `ApplicationScope`. It supports scenarios when Microsoft Entra application access to the Marketplace app with transact support is needed and no license is required. The `id` property is the scope assigned to the Microsoft Entra application. Learn more in [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md).
 
 ```al
 entitlement BC_ApplicationWithAPIRWScope
@@ -224,4 +224,4 @@ entitlement BC_ApplicationWithAutomationScope
 [AL development environment](devenv-reference-overview.md)  
 [Entitlements and permission set overview](devenv-entitlements-and-permissionsets-overview.md)  
 [Permission set extension object](devenv-permissionset-ext-object.md)  
-[Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md)  
+[Selling Business Central apps through Marketplace](devenv-sell-apps-appsource.md)  

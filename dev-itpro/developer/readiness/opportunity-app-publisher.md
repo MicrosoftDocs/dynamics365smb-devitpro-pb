@@ -18,20 +18,20 @@ Our mission is to empower every individual and every organization on the planet 
 
 ## The Microsoft commercial marketplace
 
-[Microsoft AppSource](https://appsource.microsoft.com/) is part of Microsoft's commercial marketplace where customers can find, try to get business solutions apps. It's the launch pad for your joint go-to-market activities with Microsoft and a medium for business growth. By using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine.  
+[Microsoft Marketplace](https://appsource.microsoft.com/) is part of Microsoft's commercial marketplace where customers can find, try to get business solutions apps. It's the launch pad for your joint go-to-market activities with Microsoft and a medium for business growth. By using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on Marketplace can be the centerpiece of your cloud business engine.  
 
-In November 2020, Microsoft AppSource had more than 3 million monthly active users and +20,000 apps. Specifically, for [!INCLUDE[prod_short](../includes/prod_short.md)], there are more than 1500 apps available and the number is growing fast.  
+In November 2020, Microsoft Marketplace had more than 3 million monthly active users and +20,000 apps. Specifically, for [!INCLUDE[prod_short](../includes/prod_short.md)], there are more than 1500 apps available and the number is growing fast.  
 
 ## Go-to Market scenarios
 
-As an AppSource publisher, you can focus on the following two scenarios with [!INCLUDE[prod_short](../includes/prod_short.md)] and Microsoft AppSource:  
+As a Marketplace publisher, you can focus on the following two scenarios with [!INCLUDE[prod_short](../includes/prod_short.md)] and Microsoft Marketplace:  
 
 - Connect
 - Add-on
 
 ### Connect
 
-Connect your existing online service with the [!INCLUDE[prod_short](../includes/prod_short.md)] through a powerful API. Following are some examples of existing connect apps that you can find on AppSource:  
+Connect your existing online service with the [!INCLUDE[prod_short](../includes/prod_short.md)] through a powerful API. Following are some examples of existing connect apps that you can find on Marketplace:  
 
 - Square payments, which allows you take payments with a Square terminal.  
 
@@ -61,7 +61,7 @@ Learn more on how to build your app: [Get Started with AL](../devenv-get-started
 
 ## Consultancy services
 
-A large number of business users find it easy to buy consultancy services to research, deploy and manage apps. Therefore, next to providing Apps, a publisher can also market consultancy services on Microsoft AppSource to connect with buyers. The offered services could be assessments, briefings, workshops, proof of concepts, and implementations. In general, the services are typically fixed in scope and duration. They're offered at a fixed price or free, and have a defined outcome.  
+A large number of business users find it easy to buy consultancy services to research, deploy and manage apps. Therefore, next to providing Apps, a publisher can also market consultancy services on Microsoft Marketplace to connect with buyers. The offered services could be assessments, briefings, workshops, proof of concepts, and implementations. In general, the services are typically fixed in scope and duration. They're offered at a fixed price or free, and have a defined outcome.  
 
 <!-- links no longer valid
 Here are a few examples of consultancy services provided by publishers:  

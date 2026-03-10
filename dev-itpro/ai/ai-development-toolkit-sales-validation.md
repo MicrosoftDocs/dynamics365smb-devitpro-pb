@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/12/2026
+ms.date: 02/16/2026
 ms.update-cycle: 180-days
 ---
 
@@ -30,7 +30,8 @@ First, create the Sales Validation Agent.
 
 1. In the navigation bar at the upper right of the role center, select :::image type="content" source="../media/ai-designer-icon-new.png" alt-text="Agent create new"::: **Agent** > **Create**.
 1. In the **Create agent** wizard, choose **Sales Validation**, and then choose the **Create agent** button.
-1. You can use the arrows to review the setup steps.
+1. You can use the arrows to review the setup steps.  
+  If you want to change any of the default settings, you can do that now or after the agent is created. For example, you can change the agent name, description, or instructions. The default instructions are designed to validate sales orders based on inventory availability and shipping dates, but you can customize them to fit your specific business needs.
 1. In the **Configure agent** dialog, choose the **Active** toggle to activate the agent.
 1. Choose **Update** to save and close the agent setup dialog.
 
@@ -67,13 +68,17 @@ Next, add an item with inventory that the Sales Validation Agent can use to vali
 Add a new task to the agent.
 
 1. Select **Search** (<kbd>Alt</kbd>+<kbd>Q</kbd>) :::image type="icon" source="../media/search_small.png"::: in the upper-right corner, enter **Agent Tasks (preview)**, and then choose the related link.
-1. Under **Designer** actions, choose **Run task** and create a new task for triggering the agent.
+1. Under **Design** actions, choose **Run task** and create a new task for triggering the agent.
 1. Add a title, for example, `Validate and process sales orders`.
 1. And then, add the following message: `Run and process shipment date <date>`.  
   That will be sufficient. `<date>` corresponds to the shipping date you chose for the sales order.
 1. Choose **OK**.
 
 The agent goes through and process all sales orders that have a shipping date according to what you specified in the task.
+
+## Sales Validation Agent as an AL application
+
+You can visit the [BCTech repository](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent) to see how the Sales Validation Agent can be packaged as an app. This can be used as a starter template to develop and publish your own agents.
 
 ## Related information
 
@@ -87,5 +92,6 @@ The agent goes through and process all sales orders that have a shipping date ac
 [Run an agent (preview)](ai-development-toolkit-run-agent.md)  
 [Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
 [Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
-[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)
+[Sales Validation Agent in AL (preview)](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent)
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)

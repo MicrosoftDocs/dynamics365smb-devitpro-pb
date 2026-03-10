@@ -17,7 +17,7 @@ To get started developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_m
 > Extensions that have been published to a sandbox environment from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) are removed when the environment is updated or relocated within our service. For more information, see [Production and sandbox environments](../administration/environment-types.md) and [FAQ for developing in AL](devenv-dev-faq.md).
 
 > [!IMPORTANT]  
-> From Visual Studio Code it's not supported to publish an extension with the same identifiers as an extension published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you publish such an extension, it can be removed at any time.
+> From Visual Studio Code it's not supported to publish an extension with the same identifiers as an extension published to Marketplace. Identifiers include the combination of appID and version or name, publisher, and version. If you publish such an extension, it can be removed at any time.
 
 ## Development sandbox overview
 
@@ -34,7 +34,7 @@ The following table outlines the most important capabilities on the offered deve
 |Debugging|Enabled|Enabled|
 |Database access|No|Yes|
 |**Extensions**|Must be manually installed.| Must be manually installed.|
-|From AppSource|Available.|Not available.|
+|From Marketplace|Available.|Not available.|
 |From File|Available.|Available.|
 |From Visual Studio Code|Available.|Available.|
 

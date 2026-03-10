@@ -2,7 +2,7 @@
 title: Scheduled performance profiler overview
 description: Describes how to use the Profiler Schedules page in Business Central to troubleshoot slow processes across time.
 ms.author: sodragon
-ms.date: 01/30/2025
+ms.date: 03/03/2026
 ms.reviewer: solsen
 ms.topic: article
 author: sodragon
@@ -13,7 +13,7 @@ author: sodragon
 In some cases, many different business processes can interfere with each other, which can cause some of them to take longer than expected. Diagnosing these issues becomes more challenging because they can be transient as they depend on specific users' workflows
 or even happen outside of business hours. An example could be when scheduled jobs are run at the same time. 
 
-Your administrator can use the **Profiler Schedules** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to set up schedules for when snapshots of the processes should be recorded. A schedule defines the time slots and filters for which activity should be recorded for a particular user. While recording, the profiler monitors all the activities that match the filters and produces individual profiles for each of them separately. They allow for retroactive investigation on individual user interactions or system processes by providing a view of what processes were running on the system during the defined time slots. Identifying where the holdup is, can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself.
+Your administrator or partner can use the **Profiler Schedules** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to set up schedules for when snapshots of the processes should be recorded. A schedule defines the time slots and filters for which activity should be recorded for a particular user. While recording, the profiler monitors all the activities that match the filters and produces individual profiles for each of them separately. They allow for retroactive investigation on individual user interactions or system processes by providing a view of what processes were running on the system during the defined time slots. Identifying where the holdup is, can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself.
 
 ## Setting up a profiler schedule
 
@@ -23,21 +23,21 @@ To get started working with the **Profiler Schedules** page, follow these steps:
     > [!NOTE]  
     > You can also access the **Profiler Schedules** page from under **Help & Support**, under **Analyze Performance with scheduled profiler**.
 2. Create a new schedule by choosing the **New** action. This opens the **Profiler Schedule** card page.
-3. Here you can set up the different parameters of the schedule. Start by selecting a start and end time, the user whose activity is recorded and the type of activity to be recorded. 
+3. Add a description for your schedule, which makes it easy for you to identify it in the future.
+4. Select the user to be profiled, for example, the user who has reported a performance problem.
+5. Select the activity type, depending on what kind of performance problem was reported (for example, **Activities in the browser** for a user experiencing slow page loads).
+6. Select a start and end time for the schedule.
     > [!TIP]  
-    > To get the most accurate results and limit the amount of data produced, choose the shortest possible time slot that will be appropriate to investigate the performance issues.
-4. Add a description for your schedule, which makes it easy for you to identify it in the future.  
-    > [!TIP]  
-    > A short description of the investigated issue is a good candidate.
-5. Close the card page.
+    > Choose a time slot that's appropriate for the issue you're investigating. For intermittent performance problems, a longer schedule - even several days - can help catch the issue. Be aware that profiling has a minor performance impact on the selected user; for details, see the [FAQ](#faq).
+7. Close the card page.
    [!INCLUDE [prod_short](../includes/prod_short.md)] now automatically records any activity that matches your configuration and happens in the time frame that you configured.
 
 ## Types of activity, which can be recorded
 
 Profiler schedules are supported for the following types of activities:
 
-1. **Activity in the browser** - A user logs into [!INCLUDE [prod_short](../includes/prod_short.md)] and uses the product.
-2. **Background Tasks** - Scheduled jobs or sessions created from AL code for background processing.
+1. **Activities in the browser** - A user logs into [!INCLUDE [prod_short](../includes/prod_short.md)] and uses the product.
+2. **Background Tasks (incl. job queues)** - Scheduled tasks, job queues, and sessions created from AL code for background processing.
 3. **Web Service Calls** - Incoming OData or SOAP API calls.
 
 ## Permissions for creating a schedule
@@ -46,9 +46,7 @@ Administrator users can create schedules for themselves and other users. Other u
 
 ### How to turn off a schedule
 
-A schedule can be turned off by navigating to it via the **Profiler Schedules** page and toggling off the **Enabled** field.  
-  > [!NOTE]  
-  > Profiles might still be generated for a short duration as the setting propagates across the system.
+A schedule can be turned off by navigating to it via the **Profiler Schedules** page and toggling off the **Enabled** field. A schedule also automatically becomes inactive when its configured end time is reached.
 
 ## Viewing and analyzing the profiles from a schedule
 
@@ -69,14 +67,20 @@ An overview of the fields of the **Performance Profiles** page can be found belo
 
 | Name                  | Description                                                    |
 |-----------------------|----------------------------------------------------------------|
-| Start Time            | When the profile started-                                      |
-| User Name             | The name of the user associated with the activity.             |
-| Activity Type         | The type of activity for which the schedule is created.        |
+| Start Time            | When the profile started.                                      |
+| User Name             | The name of the user who performed the activity.             |
+| Activity Type         | The type of activity that the user performed.        |
 | Activity Description  | A system generated description of the activity.                |
 | Activity Duration     | The duration of the recorded activity, not including idle time.|
-| AL Execution Duration | The duration of the executed AL code in the recorded activity,  not including idle time. |
-| Correlation ID        | An ID used to correlate the activity with internal telemetry.  |
-| Schedule ID           | The ID of the associated schedule.                              |
+| AL Execution Duration | The duration of the executed AL code in the recorded activity, not including idle time. |
+| Duration of captured SQL calls | The total duration of captured SQL calls in the recorded activity. |
+| Number of SQL Calls   | The number of SQL calls made during the recorded activity.     |
+| Duration of Http Calls | The total duration of HTTP calls made during the recorded activity. |
+| Number of Http Calls  | The number of HTTP calls made during the recorded activity.    |
+| Duration of Platform Calls | The total duration of platform calls made during the recorded activity. |
+| Correlation ID        | An ID used to correlate the activity with telemetry. Corresponds to Operation ID in Application Insights.  |
+| Client Session ID     | The ID of the client session in which the activity was recorded. Corresponds to the Session ID in Application Insights. |
+| Schedule Description  | The description of the schedule that generated the profile.    |
 
 ## Downloading performance profiles
 
@@ -104,13 +108,13 @@ While scheduled profiling is enabled for a session, it's not possible to attach 
 
 ## FAQ
 
-### Is scheduled profiling enabled?
+### What's the performance impact of running with a profiler schedule?
+
+Profiling only affects the specific user selected in the schedule, and only for the selected type of activity (for example, activities in the browser). Other users and other activity types aren't impacted at all. The overhead of profiling applies only to AL code execution and is typically around 10%. Because database calls, which tend to dominate overall execution time, aren't affected by profiling, the real-world impact on the user's experience is usually much smaller.
+
+### Is scheduled profiling enabled for my session?
 
 The **Active Schedule ID** field in the **Profiler Schedules** page contains the active schedule for the current session. It's empty if profiling isn't enabled.
-
-### What's the performance impact of running with a profiler schedule? Will the users be affected?
-
-A user whose session, which is being profiled might experience some performance degradation due to the recording. This is because activities need to be recorded and stored for further investigation. The rule of thumb is to limit the duration of the schedules to the minimum required for the investigation and to apply schedules to as few users as possible.
 
 ### How many profiles are generated from a schedule?
 

@@ -26,7 +26,7 @@ Microsoft’s Transparency Notes are part of a broader effort at Microsoft to pu
 
 Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and midsized organizations. Copilot in Business Central is the AI-powered assistant that helps boost creativity and reduce repetitive tasks across lines of business, such as finance, operations, and marketing.
 
-Customers purchase Business Central through a network of software partners, who also customize the system to their needs via mature development tools in Visual Studio Code. Adaptability is a core tenet of Business Central. Partners around the world build their business on this principle. They tailor the system to individual and changing customer needs, provide solutions in almost every industry and region, and sell add-ons at scale through Microsoft AppSource. Naturally, both partners and customers expect Copilot to be as adaptable as the rest of Business Central.
+Customers purchase Business Central through a network of software partners, who also customize the system to their needs via mature development tools in Visual Studio Code. Adaptability is a core tenet of Business Central. Partners around the world build their business on this principle. They tailor the system to individual and changing customer needs, provide solutions in almost every industry and region, and sell add-ons at scale through Microsoft Marketplace. Naturally, both partners and customers expect Copilot to be as adaptable as the rest of Business Central.
 
 Business Central's development platform includes:
 

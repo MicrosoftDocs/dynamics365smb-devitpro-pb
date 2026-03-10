@@ -10,9 +10,9 @@ ms.custom: sfi-image-nochange
 
 # Marketing validation checklist
 
-The storefront details on AppSource are the first impression that prospects get regarding your offer. First impressions last, so make sure to invest some time in developing the content on the storefront, so it gives a good impression from the beginning. Failing to do so will jeopardize the hard work you put in, when developing your offer, likely leaving the prospect confused or looking elsewhere. Accordingly, we recommend you put in the time, effort and due diligence when developing this content.
+The storefront details on Marketplace are the first impression that prospects get regarding your offer. First impressions last, so make sure to invest some time in developing the content on the storefront, so it gives a good impression from the beginning. Failing to do so will jeopardize the hard work you put in, when developing your offer, likely leaving the prospect confused or looking elsewhere. Accordingly, we recommend you put in the time, effort and due diligence when developing this content.
 
-You use Partner Center to submit your offer to AppSource. In the following, you can find information on all the marketing-related items that you need to fill out in Partner Center prior to submitting your app to AppSource. Follow this marketing validation checklist and get your app passed on the first submission. 
+You use Partner Center to submit your offer to Marketplace. In the following, you can find information on all the marketing-related items that you need to fill out in Partner Center prior to submitting your app to Marketplace. Follow this marketing validation checklist and get your app passed on the first submission. 
 
 > [!TIP]  
 > Marketing validation is a manual process that is required for new offers or when the marketing details change on existing offers. As a publisher there is no way you can impact how fast the marketing validation process takes. 
@@ -32,13 +32,13 @@ You need to have the following three items in mind, when you're creating your st
 
 ## How do I fill out the marketing section in Partner Center?
 
-The following section walks you through the marketing-related components, that is, *offer setup*, *properties*, *offer listing*, and *availability*, which you need to fill out in Partner Center prior to submitting your app to AppSource. 
+The following section walks you through the marketing-related components, that is, *offer setup*, *properties*, *offer listing*, and *availability*, which you need to fill out in Partner Center prior to submitting your app to Marketplace. 
 
 ### Offer Setup
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|App type|Read more about the  types of apps you can submit to AppSource. | [Read more](readiness-checklist-e-industries-categories-apptype.md#app-type) |
+|App type|Read more about the  types of apps you can submit to Marketplace. | [Read more](readiness-checklist-e-industries-categories-apptype.md#app-type) |
 |Listing type| How do you want potential customers to interact with your offer? | [Read more](readiness-checklist-e-industries-categories-apptype.md#listing-type)|
 |Customer leads| Provide connection details to the CRM system where you would like to send customer leads.  | [Read more](readiness-checklist-e-industries-categories-apptype.md#customer-leads)|
 
@@ -74,9 +74,9 @@ The following section walks you through the marketing-related components, that i
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
 |Markets (countries/regions)|Choose the markets that your app is available in (make sure that it resembles the supported countries/regions paragraph in the description text). | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
-|Hide key|The hide key is a token that is used to view the preview of your offer in AppSource before going live.| [Read more](readiness-checklist-f-supportedproducts-keywords.md)|
+|Hide key|The hide key is a token that is used to view the preview of your offer in Marketplace before going live.| [Read more](readiness-checklist-f-supportedproducts-keywords.md)|
 
 
-## How does my offer look when it's live on AppSource?
+## How does my offer look when it's live on Marketplace?
 
 ![arrowhead indicator down.](../../media/salesandinventoryforecast.gif)
