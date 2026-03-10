@@ -15,32 +15,48 @@ ms.service: dynamics-365-business-central
 
 You can use the built-in *Test Explorer* in Visual Studio Code to discover and run AL tests in your workspace. This feature lets you run tests directly from the IDE instead of using an external test runner or the [!INCLUDE [prod_short](includes/prod_short.md)] web client.
 
-> [!NOTE]
-> This feature is under active development and should be considered experimental. More functionality may be added, or existing functionality may change.
-
 ## Prerequisites
 
 Before you run tests from Visual Studio Code, make sure you meet the following requirements:
 
 - [!INCLUDE [prod_short](includes/prod_short.md)] version 28.0 or newer (2026 release wave 1).
 - The AL Language extension for Visual Studio Code is installed.
-- Your tests are published to a [!INCLUDE [prod_short](includes/prod_short.md)] server (sandbox or local).
 
 ## Discover and run tests
 
 The Test Explorer automatically detects test codeunits and test methods in the active workspace.
 
 1. Open the **Test Explorer** view in Visual Studio Code. Learn more about the Test Explorer in [Testing in Visual Studio Code](https://code.visualstudio.com/docs/debugtest/testing).
-1. Verify that your test codeunits appear in the test list. Only tests in the active workspace are added to the Test Explorer.
-1. Select the test you want to run, and then choose the **Run** button.
-1. Review the test results in the **Test Explorer** panel.
+1. Verify that your test codeunits appear in the test list. Only tests in the active workspace are added to the Test Explorer. Tests are sorted first by their owning app, then by the codeunit that declares them, and finally the test procedures themselves.
+1. Select the test you want to run, and then choose the **Run** button. See the section on [Test run profiles](#test-run-profiles) below for more information on how you can execute tests.
+1. Review the test execution progress and results in the **Test Results** panel.
 
-> [!IMPORTANT]
-> You must publish your tests to a [!INCLUDE [prod_short](includes/prod_short.md)] server before you can run them. The Test Explorer doesn't compile or publish tests for you.
+## Test run profiles
+
+We support the following run profiles:
+
+| **Profile name**     | **Description** |
+|----------------------|-----------------|
+| Publish & Run        | Publishes the test project and any of its dependencies (if they have changed) before running the selected tests. This is the default run profile. |
+| Run                  | Runs the selected tests without pre-publishing the project. |
+| Run & Debug          | Publishes the test project and starts a run with the debugger attached. |
+| Coverage (Procedure) | Runs the selected tests and collects procedure-level code coverage. See the [View code coverage information](#view-code-coverage-information) section below for how this can be used. |
 
 ## View code coverage information
 
-The tests can collect information about the procedures that are invoked as part of the test run. You can view this information in the CodeLens bar of a procedure by selecting the test that ran it.
+When the Coverage (Procedure) run profile is selected, the test run will keep track of the procedures and triggers that are invoked by each test. This information is then surfaced as a new codelens on the relevant procedures and triggers.
+
+![Test run codelens showing coverage information](media/test-running-codelens.png)
+
+Clicking on this new codelens will execute the tests that had covered the procedure or trigger. This is useful when making changes to quickly run the most relevant tests.
+
+## Test execution
+
+Tests run from Visual Studio code do not execute under an AL [test runner codeunit](devenv-testrunner-codeunits.md). This has a few implications.
+
+1. Running AI tests is not supported.
+2. Any tests that rely on events published in a test runner for test setup or teardown many not work.
+3. Isolation level is determined by the [RequiredTestIsolation](properties/devenv-requiredtestisolation-property.md) property set on the test codeunit. If this property is not set, we default to Codeunit level isolation.
 
 ## Supported environments
 
