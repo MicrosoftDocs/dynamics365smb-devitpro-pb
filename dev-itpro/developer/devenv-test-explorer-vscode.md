@@ -28,7 +28,7 @@ The Test Explorer automatically detects test codeunits and test methods in the a
 
 1. Open the **Test Explorer** view in Visual Studio Code. Learn more about the Test Explorer in [Testing in Visual Studio Code](https://code.visualstudio.com/docs/debugtest/testing).
 1. Verify that your test codeunits appear in the test list. Only tests in the active workspace are added to the Test Explorer. Tests are sorted first by their owning app, then by the codeunit that declares them, and finally the test procedures themselves.
-1. Select the test you want to run, and then choose the **Run** button. See the section on [Test run profiles](#test-run-profiles) below for more information on how you can execute tests.
+1. Select the test you want to run, and then choose the **Run** button. Learn more in the [Test run profiles](#test-run-profiles) section.
 1. Review the test execution progress and results in the **Test Results** panel.
 
 ## Test run profiles
@@ -38,25 +38,25 @@ We support the following run profiles:
 | **Profile name**     | **Description** |
 |----------------------|-----------------|
 | Publish & Run        | Publishes the test project and any of its dependencies (if they have changed) before running the selected tests. This is the default run profile. |
-| Run                  | Runs the selected tests without pre-publishing the project. |
+| Run                  | Runs the selected tests without prepublishing the project. |
 | Run & Debug          | Publishes the test project and starts a run with the debugger attached. |
-| Coverage (Procedure) | Runs the selected tests and collects procedure-level code coverage. See the [View code coverage information](#view-code-coverage-information) section below for how this can be used. |
+| Coverage (Procedure) | Runs the selected tests and collects procedure-level code coverage. Learn more in the [View code coverage information](#view-code-coverage-information) section. |
 
 ## View code coverage information
 
-When the Coverage (Procedure) run profile is selected, the test run will keep track of the procedures and triggers that are invoked by each test. This information is then surfaced as a new codelens on the relevant procedures and triggers.
+When the Coverage (Procedure) run profile is selected, the test run keeps track of the procedures and triggers that are invoked by each test. This information is then surfaced as a new CodeLens on the relevant procedures and triggers.
 
-![Test run codelens showing coverage information](media/test-running-codelens.png)
+![Test run CodeLens showing coverage information](media/test-running-codelens.png)
 
-Clicking on this new codelens will execute the tests that had covered the procedure or trigger. This is useful when making changes to quickly run the most relevant tests.
+Clicking on this new CodeLens will execute the tests that had covered the procedure or trigger. This is useful when making changes to quickly run the most relevant tests.
 
 ## Test execution
 
-Tests run from Visual Studio code do not execute under an AL [test runner codeunit](devenv-testrunner-codeunits.md). This has a few implications.
+Tests run from Visual Studio Code don't execute under an AL [test runner codeunit](devenv-testrunner-codeunits.md). This has a few implications.
 
-1. Running AI tests is not supported.
-2. Any tests that rely on events published in a test runner for test setup or teardown many not work.
-3. Isolation level is determined by the [RequiredTestIsolation](properties/devenv-requiredtestisolation-property.md) property set on the test codeunit. If this property is not set, we default to Codeunit level isolation.
+1. Running AI tests isn't supported.
+2. Any tests that rely on events published in a test runner for test setup or teardown might not work.
+3. Isolation level is determined by the [RequiredTestIsolation](properties/devenv-requiredtestisolation-property.md) property set on the test codeunit. If this property isn't set, we default to Codeunit level isolation.
 
 ## Supported environments
 
