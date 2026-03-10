@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 01/05/2026
+ms.date: 03/03/2026
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -30,6 +30,7 @@ Minor updates are released monthly and can include new release wave features, re
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
 |28.0 (preview) |Application Build 28.0 Platform Build 28.0|March 2026|[Update 28.0 for Business Central 2026 release wave 1 (preview)](whatsnew-update-28-0.md)|
+|27.5|Application Build 27.5 Platform Build 27.0|March 2026|[Update 27.5 for Business Central 2025 release wave 2](whatsnew-update-27-5.md)|
 |27.4|Application Build 27.4 Platform Build 27.0|February 2026|[Update 27.4 for Business Central 2025 release wave 2](whatsnew-update-27-4.md)|
 |27.3|Application Build 27.3 Platform Build 27.0|January 2026|[Update 27.3 for Business Central 2025 release wave 2](whatsnew-update-27-3.md)|
 |27.2|Application Build 27.2 Platform Build 27.0|December 2025|[Update 27.2 for Business Central 2025 release wave 2](whatsnew-update-27-2.md)|

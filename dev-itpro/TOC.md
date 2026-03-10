@@ -3,6 +3,7 @@
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
 ## [Update 28.0 (preview)](whatsnew/whatsnew-update-28-0.md)
+## [Update 27.5](whatsnew/whatsnew-update-27-5.md)
 ## [Update 27.4](whatsnew/whatsnew-update-27-4.md)
 ## [Update 27.3](whatsnew/whatsnew-update-27-3.md)
 ## [Update 27.2](whatsnew/whatsnew-update-27-2.md)
@@ -1888,6 +1889,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2025 release wave 2 on-premises updates](deployment/update-versions-27.md)
 #### [2025 release wave 1 on-premises updates](deployment/update-versions-26.md)
 #### [2024 release wave 2 on-premises updates](deployment/update-versions-25.md)
 #### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
