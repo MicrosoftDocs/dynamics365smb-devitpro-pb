@@ -22,16 +22,16 @@ Represents a date formula that has the same capabilities as an ordinary input st
 
 ## Remarks
 
-When a date calculation formula is stored in a DateFormula field, it is converted to a generic, non-language dependent format. When a date calculation formula is retrieved from a DateFormula field, it is converted to a valid date conversion string for the currently selected language.  
+When a date calculation formula is stored in a `DateFormula` field, it's converted to a generic, nonlanguage dependent format. When a date calculation formula is retrieved from a `DateFormula` field, it's converted to a valid date conversion string for the currently selected language.  
 
-To assign a value to a DateFormula data type, whether it is a field or a variable, you must use the [Evaluate Method](../system/system-evaluate-method.md).  
+To assign a value to a `DateFormula` data type, whether it's a field or a variable, you must use the [Evaluate method](../system/system-evaluate-method.md).  
 
-The following table shows the syntax that is used to create the date formula.  
+The following table shows the syntax that's used to create the date formula.  
 
 |Syntax|Description|  
-|------------|---------------------------------------|  
+|------------|------------| 
 |**30D**|30 days|  
-|**2W**|2 weeks|  
+|**2W**|Two weeks|  
 |**CM+10D**|Current month plus 10 days|  
 |**CM+1M**|Current month plus one month|  
 |**CQ+1M+20D**|Current quarter plus one month plus 20 days|  
@@ -42,14 +42,14 @@ In [!INCLUDE [prod_short](../../includes/prod_short.md)], weeks begin on Monday 
  
 ## Example  
 
-This example requires that you create a DateFormulaVariable variable that is a DateFormula data type.  
+This example requires that you create a `DateFormulaVariable` variable that is a `DateFormula` data type.  
 
 ```al
 if Format(DateFormulaVariable) = '' then  
   Evaluate(DateFormulaVariable, '<1W>');  
 ```  
 
-You must use the [Format Method](../system/system-format-joker-integer-string-method.md) to make a comparison with a text string. If you do not use this method, then the `if` statement will fail because you cannot compare a DateFormula data type with a Text data type.  
+You must use the [Format method](../system/system-format-joker-integer-string-method.md) to make a comparison with a text string. If you don't use this method, then the `if` statement fails because you can't compare a `DateFormula` data type with a `Text` data type.  
 
 ## Related information
 
