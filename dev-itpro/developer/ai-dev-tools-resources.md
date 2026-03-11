@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 03/09/2026
+ms.date: 03/11/2026
 ms.update-cycle: 180-days
 ---
 
@@ -118,6 +118,8 @@ The default and recommended approach is to use the developer toolkit AI resource
 // Example of using the default toolkit AI resources in AL 
 AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions", AOAIDeployments.GetGPT4oLatest());
 ```
+
+View more examples in [BCTech samples](https://github.com/microsoft/BCTech/tree/master/samples/AzureOpenAI).
 
 > [!NOTE]
 > The previous signature of `SetManagedResourceAuthorization` that required `AzureOpenAIAccountName` and `AzureOpenAIApiKey` parameters is obsolete. Partners no longer need to provide their own Azure OpenAI subscription details when using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources.
