@@ -262,7 +262,7 @@
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
-#### [AppSource app recurrent validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
+#### [Marketplace app recurrent validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
@@ -528,7 +528,7 @@
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
 #### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
-#### [AppSource app recurrent validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
+#### [Marketplace app recurrent validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
