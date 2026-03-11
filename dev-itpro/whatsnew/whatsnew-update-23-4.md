@@ -22,7 +22,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- [AppSource ISV publishers can preview their AppSource apps with select customers](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-isv-publishers-preview-their-appsource-apps-select-customers)
+- [Marketplace ISV publishers can preview their Marketplace apps with select customers](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-isv-publishers-preview-their-appsource-apps-select-customers)
 
 ## Localization updates
 
@@ -65,9 +65,9 @@ Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOf
 
 In the current minor update, we’re transitioning to the Shopify Admin API version 2023-10. Note that as of April 1, 2024, Business Central will no longer support the Shopify Admin API version 2023-04. To continue to use your integration, we recommend upgrading to Business Central version 23.4 or later before this date. You can see version of Shopify Admin API and the date until API is valid in the Shopify Shop Card page.
 
-### Automatically update AppSource apps with minor updates
+### Automatically update Marketplace apps with minor updates
 
-You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the [release plan](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features) for more details.
+You can now change the app update cadence for your environments to have Marketplace apps update with every minor update. Read the [release plan](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features) for more details.
 
 ### Features becoming mandatory soon
 

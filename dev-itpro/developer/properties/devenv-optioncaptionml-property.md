@@ -24,7 +24,7 @@ Sets the strings that are displayed to the user for selecting an option. OptionC
 
 
 > [!NOTE]  
-> To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+> To submit an app to Marketplace, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
   
 ## Syntax
  

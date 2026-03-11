@@ -1,6 +1,6 @@
 ---
 title: Instruction keywords for an agent (preview)
-description: Learn about the instruction keywords you can use to guide the behavior of your playground agent in Business Central.
+description: Learn about the instruction keywords you can use to guide the behavior of your agent in Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 12/05/2025
+ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
@@ -16,11 +16,11 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
 When writing instructions for your agent, you can use specific keywords and phrasing to help the agent understand how to utilize the tools available in the agent runtime effectively. These keywords guide the agent's behavior, ensuring it follows best practices and handles tasks as intended.
 
-Learn more about what instructions and tasks are in [Write effective instructions for an agent (preview)](ai-agent-playground-effective-instructions.md).
+Learn more about what instructions and tasks are in [Write effective instructions for an agent (preview)](ai-development-toolkit-instructions.md).
 
 ## Agent history
 
@@ -50,14 +50,16 @@ Here are some common keywords and phrases you can use in your agent's instructio
 
 ## Related information
 
-[Overview (preview)](ai-agent-playground-landing-page.yml)  
-[Agent playground (preview)](ai-agent-playground.md)  
-[Create and activate (preview)](ai-agent-playground-create.md)   
-[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
-[Set up permissions and profiles (preview)](ai-agent-playground-permissions-profiles.md)  
-[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
-[Best practices (preview)](ai-agent-playground-best-practices.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)   
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

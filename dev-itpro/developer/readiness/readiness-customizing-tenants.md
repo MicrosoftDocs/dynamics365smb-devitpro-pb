@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 Every business is unique. Dynamics 365 Business Central is ready to adapt to how customers work: their streamlined processes, their terminology, and how their employees or departments connect and collaborate.  
 
-Whilst there may already be add-on apps available on AppSource that cover a customer’s need, we also have the tools for you to build fully custom functionality or adapt what is already available out-of-the box. 
+Whilst there may already be add-on apps available on Marketplace that cover a customer’s need, we also have the tools for you to build fully custom functionality or adapt what is already available out-of-the box. 
  
 ## Examples of custom changes to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] 
 
@@ -44,5 +44,5 @@ To learn more about customization, select the following links:
 - [Get Started with AL](../devenv-get-started.md)  
 - [AL Development Environment](../devenv-reference-overview.md)  
 - [Update Lifecycle for Customizations of Business Central Online](../devenv-customization-update-lifecycle.md)
-- [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](../app-maintain.md) 
+- [Maintain Marketplace Apps and Per-Tenant Extensions in Business Central Online](../app-maintain.md) 
 - [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)

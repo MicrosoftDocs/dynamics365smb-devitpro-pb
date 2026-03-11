@@ -4,7 +4,7 @@ description: A purchase invoice line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 02/16/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -71,11 +71,11 @@ Represents a purchase invoice line in [!INCLUDE[prod_short](../../../includes/pr
 |netAmountIncludingTax|decimal|The net amount including tax is the total net amount including tax. Read-Only.|
 |expectedReceiptDate|date|The date the item in the line is expected to be received.|
 |itemVariantId|GUID|The ID of the item variant in the purchase invoice line.|
-|locationId|GUID||
+|locationId|GUID|The ID of the location in the purchase invoice line.|
 
 ## JSON representation
 
-Here's a JSON representation of the purchaseInvoiceLine resource.
+Here's a JSON representation of the purchaseInvoiceLine resource, showing the full shape of the resources that a GET would return.
 
 
 ```json
