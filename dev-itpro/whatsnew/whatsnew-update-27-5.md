@@ -47,6 +47,12 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
+### Stop all tasks action for Sales Order Agent
+
+There's a new **Stop all tasks** action on the task pane. If the agent becomes blocked after importing too many tasks, you can unblock it by clearing the task list.
+
+![Shows the task pane of the Sales Order Agent highlighting the stop all tasks action](../developer/media/sales-order-agent-task-clip.png)
+
 ### Business Central 2026 release wave 1 public preview
 
 The public preview version of Business Central 2026 release wave 1 (update 28.0) is now available for Business Central online tenants. The public preview enables you to test and provide feedback on new features coming with Business Central 2026 release wave 1 in April. Learn more in [Update 28.0 (preview)](whatsnew-update-28-0.md).
