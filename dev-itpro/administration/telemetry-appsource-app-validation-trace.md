@@ -133,7 +133,7 @@ Occurs when the recurrent validation of an AppSource app has completed, but erro
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |countryCodeList|Specifies the comma-separated list of countries/regions that the app was validated for.|
-|failureReason|**One or more error diagnostics were reported. For more information about the diagnostics, see traces with eventId LC0237.**|
+|failureReason|**One or more extension validation tasks have failed.**|
 |[See common custom dimensions](#other)||
 
 
