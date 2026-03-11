@@ -2,8 +2,8 @@
 title: Analyzing AppSource app recurrent validation telemetry
 description: Learn about the telemetry for recurrent validation of AppSource apps in Business Central.
 author: IhorHandziuk
-ms.author: IhorHandziuk
-ms.reviewer: IhorHandziuk
+ms.author: ihhandzi
+ms.reviewer: ihhandzi
 ms.topic: concept-article
 ms.date: 03/11/2026
 ms.custom: bap-template
