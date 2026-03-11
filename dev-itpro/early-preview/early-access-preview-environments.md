@@ -19,17 +19,6 @@ Early access preview environments are only available for the United States, Unit
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-<!--
-Authoring guidance:
-1. Add a new section for the feature, provide a title and description.
-2. Keep plain, factual tone. Avoid promises / roadmap language.
-3. Update ms.date when adding/removing/updating any feature section.
-4. Remove any unused placeholder subsections (don’t leave empty headings).
-5. Create a pull request. When pull request is ready for publishing, apply the label **ready for review**.
-6. The live URL for this article is https://learn.microsoft.com/dynamics365/business-central/dev-itpro/preview/preview-features - for section links, these are formatted as https://learn.microsoft.com/dynamics365/business-central/dev-itpro/preview/preview-features#add-feature-title (where add-feature-title is the title you provide, with spaces replaced by hyphens and all lowercase).
-
--->
-
 ## Quality Management features
 
 Quality Management provides comprehensive quality control capabilities throughout business operations. The features help you maintain product quality standards by creating quality inspections at key points for purchase receipts, production and assembly output, and warehouse operations.
