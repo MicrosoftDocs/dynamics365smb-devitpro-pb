@@ -1,7 +1,7 @@
 ---
 title: Early access preview environments in Business Central
 description: Learn about the early access preview environments that you can access to test features available in Business Central.  
-ms.date: 09/24/2025
+ms.date: 03/13/2026
 author: jswymer
 ms.author: solsen
 ms.reviewer: jswymer
@@ -47,5 +47,3 @@ This early access feature comes with an early release of the documentation for i
 ## Related information
 
 [Create a new sandbox environment](../administration/tenant-admin-center-environments.md#create-a-new-environment)  
-
-<!-- link to feedback -->
