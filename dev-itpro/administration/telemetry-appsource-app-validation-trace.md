@@ -1,6 +1,6 @@
 ---
-title: Analyzing AppSource app recurrent validation telemetry
-description: Learn about the telemetry for recurrent validation of AppSource apps in Business Central.
+title: Analyzing Marketplace app recurrent validation telemetry
+description: Learn about the telemetry for recurrent validation of Marketplace apps in Business Central.
 author: IhorHandziuk
 ms.author: ihhandzi
 ms.reviewer: ihhandzi
@@ -10,20 +10,20 @@ ms.custom: bap-template
 
 ---
 
-# Analyzing AppSource app recurrent validation telemetry
+# Analyzing Marketplace app recurrent validation telemetry
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
-The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service proactively validates AppSource apps on a recurring basis against the next release. This recurrent validation ensures that AppSource apps continue to compile and meet technical requirements across upcoming [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions. If an app fails validation, telemetry traces are emitted to the partner's Application Insights resource.
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service proactively validates Marketplace apps on a recurring basis against the next release. This recurrent validation ensures that Marketplace apps continue to compile and meet technical requirements across upcoming [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions. If an app fails validation, telemetry traces are emitted to the partner's Application Insights resource.
 
-With this telemetry, partners can monitor their AppSource apps and set up alerts so that they know up front which apps need attention prior to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This process is separate from the [Marketplace submission validation](telemetry-appsource-submission-validation-trace.md), which occurs when an app is submitted through Partner Center.
+With this telemetry, partners can monitor their Marketplace apps and set up alerts so that they know up front which apps need attention prior to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This process is separate from the [Marketplace submission validation](telemetry-appsource-submission-validation-trace.md), which occurs when an app is submitted through Partner Center.
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
 The validation flow is as follows:
 
 ```text
-First, AppSource app recurrent validation started (LC0230).
+First, Marketplace app recurrent validation started (LC0230).
 For each extension
         Extension validation started (LC0234)
         Either
@@ -33,21 +33,21 @@ For each extension
                 Extension validation completed with failures (LC0237)
 Finally,
 either
-        AppSource app recurrent validation completed successfully (LC0232)
+        Marketplace app recurrent validation completed successfully (LC0232)
 or
-        AppSource app recurrent validation completed with failures (LC0233)
+        Marketplace app recurrent validation completed with failures (LC0233)
         Diagnostic reported on validation (LC0231)
 ```
 
-## <a name="appsourceappvalidationstarted"></a>AppSource app recurrent validation started (LC0230)
+## <a name="marketplaceappvalidationstarted"></a>Marketplace app recurrent validation started (LC0230)
 
-Occurs when a new recurrent validation attempt is started for an AppSource app extension.
+Occurs when a new recurrent validation attempt is started for a Marketplace app extension.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**AppSource app recurrent validation started: extension {extensionInfo} for countries/regions {countryCodeList}, and target build version {targetVersion}** <br /><br /> `{extensionInfo}` indicates information about the extension being validated.<br /><br /> `{countryCodeList}` indicates the list of countries/regions the app is being validated for.<br /><br /> `{targetVersion}` indicates the new version that the app is validated against.|
+|message|**Marketplace app recurrent validation started: extension {extensionInfo} for countries/regions {countryCodeList}, and target build version {targetVersion}** <br /><br /> `{extensionInfo}` indicates information about the extension being validated.<br /><br /> `{countryCodeList}` indicates the list of countries/regions the app is being validated for.<br /><br /> `{targetVersion}` indicates the new version that the app is validated against.|
 
 ### Custom dimensions
 
@@ -60,14 +60,14 @@ Occurs when a new recurrent validation attempt is started for an AppSource app e
 
 <a name="other"></a>**Common custom dimensions**
 
-The following table explains other custom dimensions that are common to all AppSource app recurrent validation traces.
+The following table explains other custom dimensions that are common to all Marketplace app recurrent validation traces.
 
 |Dimension|Description or value|
 |---------|-----|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
-## <a name="appsourceappvalidationdiagnosticreported"></a>Diagnostic reported on AppSource app recurrent validation (LC0231)
+## <a name="marketplaceappvalidationdiagnosticreported"></a>Diagnostic reported on Marketplace app recurrent validation (LC0231)
 
 Occurs during the recurrent validation request to report diagnostics related to the validation itself. For example, it could be that a validation has duplicate object IDs. This signal isn't necessarily an error, but can also be a warning or information.
 
@@ -93,15 +93,15 @@ Occurs during the recurrent validation request to report diagnostics related to 
 |[See common custom dimensions](#other)||
 
 
-## <a name="appsourceappvalidationcompleted"></a>AppSource app recurrent validation completed successfully (LC0232)
+## <a name="marketplaceappvalidationcompleted"></a>Marketplace app recurrent validation completed successfully (LC0232)
 
-Occurs when the recurrent validation of an AppSource app has completed successfully and no errors occurred.
+Occurs when the recurrent validation of a Marketplace app has completed successfully and no errors occurred.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**AppSource app recurrent validation completed successfully: extension {extensionInfo}, country {countryCodeList}, and target build version {targetVersion}** <br /><br /> `{extensionInfo}` indicates information about the extension that was validated.<br /><br /> `{countryCodeList}` indicates the list of countries/regions the app was validated for.<br /><br /> `{targetVersion}` indicates the version that the app was validated against.|
+|message|**Marketplace app recurrent validation completed successfully: extension {extensionInfo}, country {countryCodeList}, and target build version {targetVersion}** <br /><br /> `{extensionInfo}` indicates information about the extension that was validated.<br /><br /> `{countryCodeList}` indicates the list of countries/regions the app was validated for.<br /><br /> `{targetVersion}` indicates the version that the app was validated against.|
 
 ### Custom dimensions
 
@@ -114,15 +114,15 @@ Occurs when the recurrent validation of an AppSource app has completed successfu
 |[See common custom dimensions](#other)||
 
 
-## <a name="appsourceappvalidationcompletedwithfailure"></a>AppSource app recurrent validation completed with failures (LC0233)
+## <a name="marketplaceappvalidationcompletedwithfailure"></a>Marketplace app recurrent validation completed with failures (LC0233)
 
-Occurs when the recurrent validation of an AppSource app has completed, but errors occurred.
+Occurs when the recurrent validation of a Marketplace app has completed, but errors occurred.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**AppSource app recurrent validation completed with failures: extension {extensionInfo} and target build version {targetVersion}** <br /><br /> `{extensionInfo}` indicates information about the extension that was validated.<br /><br /> `{targetVersion}` indicates the version that the app was validated against.|
+|message|**Marketplace app recurrent validation completed with failures: extension {extensionInfo} and target build version {targetVersion}** <br /><br /> `{extensionInfo}` indicates information about the extension that was validated.<br /><br /> `{targetVersion}` indicates the version that the app was validated against.|
 |severityLevel|**3**|
 
 ### Custom dimensions
@@ -137,12 +137,12 @@ Occurs when the recurrent validation of an AppSource app has completed, but erro
 |[See common custom dimensions](#other)||
 
 
-### Sample KQL code (AppSource app recurrent validation completed with failures)
+### Sample KQL code (Marketplace app recurrent validation completed with failures)
 
-This KQL code can help you get started analyzing recurrent validation failures for an AppSource app:
+This KQL code can help you get started analyzing recurrent validation failures for a Marketplace app:
 
 ```kql
-// AppSource app recurrent validation completed with failures (LC0233)
+// Marketplace app recurrent validation completed with failures (LC0233)
 traces
 | where customDimensions has "LC0233"
 | where customDimensions.eventId == "LC0233"
@@ -236,7 +236,7 @@ Occurs when a diagnostic error is reported during the validation of an extension
 
 ### Sample KQL code (Validation diagnostic reported)
 
-This KQL code can help you get started analyzing recurrent validation diagnostics for an AppSource app:
+This KQL code can help you get started analyzing recurrent validation diagnostics for a Marketplace app:
 
 ```kql
 // Validation diagnostic reported (LC0236)
@@ -289,7 +289,7 @@ Occurs when the validation for a specific extension has completed, but errors oc
 
 ### Sample KQL code (Extension validation completed with failures)
 
-This KQL code can help you get started analyzing recurrent validation failures for an AppSource app:
+This KQL code can help you get started analyzing recurrent validation failures for a Marketplace app:
 
 ```kql
 // Extension validation completed with failures (LC0237)
