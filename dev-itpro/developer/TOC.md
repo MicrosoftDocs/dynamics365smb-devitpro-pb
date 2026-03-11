@@ -3066,6 +3066,7 @@
 ### [InternalEvent attribute](attributes/devenv-internalevent-attribute.md)
 ### [MessageHandler attribute](attributes/devenv-messagehandler-attribute.md)
 ### [ModalPageHandler attribute](attributes/devenv-modalpagehandler-attribute.md)
+### [Native attribute](attributes/devenv-native-attribute.md)
 ### [NonDebuggable attribute](attributes/devenv-nondebuggable-attribute.md)
 ### [None attribute](attributes/devenv-none-attribute.md)
 ### [Normal attribute](attributes/devenv-normal-attribute.md)
