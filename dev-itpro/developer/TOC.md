@@ -3162,6 +3162,7 @@
 ### [DefaultLayout property](properties/devenv-defaultlayout-property.md)
 ### [DefaultNamespace property](properties/devenv-defaultnamespace-property.md)
 ### [DefaultRenderingLayout property](properties/devenv-defaultrenderinglayout-property.md)
+### [DefinitionFile property](properties/devenv-definitionfile-property.md)
 ### [DelayedInsert property](properties/devenv-delayedinsert-property.md)
 ### [DeleteAllowed property](properties/devenv-deleteallowed-property.md)
 ### [Description property](properties/devenv-description-property.md)
