@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later
 
-AI agent tools enable GitHub Copilot and any Model Context Protocol (MCP)-compatible AI agent to perform core Business Central development tasks on your behalf — building, publishing, searching symbols, running diagnostics, and debugging AL extensions — without leaving your editor or workflow.
+AI agent tools enable GitHub Copilot and any Model Context Protocol (MCP)-compatible AI agent to perform core Business Central development tasks on your behalf—building, publishing, searching symbols, running diagnostics, and debugging AL extensions—without leaving your editor or workflow.
 
 These tools are designed for two usage surfaces that share a consistent set of tool names and behaviors:
 
@@ -55,15 +55,16 @@ When GitHub Copilot is running in Agent mode, it can call AL tools automatically
 ```
 
 **Example Copilot prompts:**
+
 - *"Build my AL project and show me any errors."* — Copilot calls `al_build`, then `al_getdiagnostics`.
 - *"Find all codeunits related to posting."* — Copilot calls `al_symbolsearch` with appropriate filters.
 - *"Publish my extension to my sandbox environment."* — Copilot calls `al_publish`.
 
-Copilot can chain tools automatically. For example, if `al_build` reports errors, Copilot may call `al_getdiagnostics` to retrieve the full details, suggest code fixes, rebuild, and then publish — all in a single conversation turn.
+Copilot can chain tools automatically. For example, if `al_build` reports errors, Copilot might call `al_getdiagnostics` to retrieve the full details, suggest code fixes, rebuild, and then publish—all in a single conversation turn.
 
 ## Using the AL MCP Server
 
-The AL MCP Server is a standalone process that exposes AL tools over the Model Context Protocol. It runs anywhere that .NET 8 is available and does not require Visual Studio Code.
+The AL MCP Server is a standalone process that exposes AL tools over the Model Context Protocol. It runs anywhere that .NET 8 is available and doesn't require Visual Studio Code.
 
 ### Starting the server
 
@@ -75,21 +76,21 @@ JSON-RPC traffic is exchanged on `stdout`. All diagnostic logs are written to `s
 
 ### Connecting an agent
 
-Configure your MCP-compatible agent (for example, Claude Desktop, a custom agent built on the MCP SDK, or a CI pipeline agent) to launch the command above as an MCP server. The agent will discover the available AL tools automatically through the MCP `tools/list` call.
+Configure your MCP-compatible agent (for example, Claude Desktop, a custom agent built on the MCP SDK, or a CI pipeline agent) to launch the command above as an MCP server. The agent discovers the available AL tools automatically through the MCP `tools/list` call.
 
 ### Authentication
 
 When the AL MCP Server needs to connect to a Business Central cloud environment, it uses browser-based interactive authentication via Microsoft Authentication Library (MSAL). Tokens are cached securely on disk and reused across tool calls.
 
 - Call `al_auth_login` to authenticate before calling `al_publish` or `al_downloadsymbols` with a cloud environment.
-- For on-premises deployments using Windows authentication, no explicit login is required.
+- For on-premises deployments using Windows authentication, no explicit sign in is required.
 - Call `al_auth_logout` to clear cached tokens when switching accounts.
 
 ## Common workflows
 
 ### Build and validate
 
-1. Call `al_downloadsymbols` to download symbol packages if they are missing or out of date.
+1. Call `al_downloadsymbols` to download symbol packages if they're missing or out of date.
 2. Call `al_build` (or `al_compile` in AL MCP for faster validation without producing an `.app`).
 3. Call `al_getdiagnostics` to inspect errors and warnings.
 
