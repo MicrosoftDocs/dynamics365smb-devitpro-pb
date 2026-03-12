@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: article
-ms.date: 11/03/2025
+ms.date: 03/12/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.collection:
@@ -23,6 +23,20 @@ This article provides the following information about optional features, startin
 Some of the features or design improvements in major and minor updates are optional and aren't immediately enabled. You can learn about these features in the release plans and documentation and decide whether your administrator should turn them on. To learn more about optional features, go to [Enabling Upcoming Features Ahead of Time](feature-management.md).
 
 However, these features are only optional for a while. The period in which they're optional typically starts when the update they're made in becomes generally available. The period ends when the features become mandatory and are automatically enabled. The approximate date and service update when we expect to make each optional feature mandatory is shown in the **Automatically enabled from** field on the **Feature Management** page. After that date, the feature will no longer appear on the Feature Management page, and you can't turn it off. To learn more about the optional period, go to [Example timeline for an optional feature](feature-management.md#example-timeline-for-an-optional-feature).
+
+## 2026 release wave 1 (version 28)
+
+### New features added and enabled by default in version 27
+
+- [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
+- [Feature: Introduce UI support for masking sensitive data](../developer/devenv-mask-type-feature-key.md)
+
+### New features added and disabled by default in version 27
+
+
+### Existing features now enabled by default
+
+- [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650)
 
 ## 2025 release wave 2 (version 27)
 
