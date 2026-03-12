@@ -19,11 +19,11 @@ Two tools manage authentication for the AL MCP Server when connecting to Busines
 > [!NOTE]
 > These tools are available on the AL MCP Server only. In Visual Studio Code, authentication is handled transparently using the existing Visual Studio Code account session.
 >
-> For on-premises Business Central deployments that use Windows authentication, no explicit login is required.
+> For on-premises Business Central deployments that use Windows authentication, no explicit sign in is required.
 
 ## al_auth_login
 
-The `al_auth_login` tool opens a browser window for interactive Microsoft Entra ID (formerly Azure Active Directory) sign-in. After the user signs in, the resulting token is cached. Subsequent AL MCP tool calls that require authentication will use the cached token automatically, without prompting again.
+The `al_auth_login` tool opens a browser window for interactive Microsoft Entra ID sign-in. After the user signs in, the resulting token is cached. Subsequent AL MCP tool calls that require authentication uses the cached token automatically, without prompting again.
 
 ### Parameters
 
@@ -33,7 +33,7 @@ The `al_auth_login` tool opens a browser window for interactive Microsoft Entra 
 | `environmentType` | string | `"Sandbox"` | The type of Business Central environment: `"OnPrem"`, `"Sandbox"`, or `"Production"`. |
 | `environmentName` | string | — | The name of the cloud environment (for example, `"sandbox"` or `"production"`). |
 | `applicationFamily` | string | — | The application family for the cloud server, if applicable. |
-| `usernameHint` | string | — | Optional. Pre-fills the account selector in the browser sign-in dialog with the specified email address. |
+| `usernameHint` | string | — | Optional. Prefills the account selector in the browser sign-in dialog with the specified email address. |
 | `noCache` | boolean | `false` | When `true`, clears any existing cached tokens before initiating the new sign-in flow. |
 
 ### Return value
@@ -41,7 +41,7 @@ The `al_auth_login` tool opens a browser window for interactive Microsoft Entra 
 | Property | Type | Description |
 |----------|------|-------------|
 | `Success` | boolean | `true` if authentication completed successfully. |
-| `AuthRequired` | boolean | `true` if user interaction in the browser is required (this is the expected state for an interactive login). |
+| `AuthRequired` | boolean | `true` if user interaction in the browser is required (this is the expected state for an interactive sign in). |
 | `Message` | string | Status message describing the outcome. |
 
 ### Examples

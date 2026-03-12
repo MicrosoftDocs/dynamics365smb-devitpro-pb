@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later
 
-The AL MCP Server is a standalone Model Context Protocol (MCP) server that exposes AL development tools — building, compiling, publishing, symbol search, diagnostics, and more — to any MCP-compatible AI agent. It runs as a separate process and does not require Visual Studio Code.
+The AL MCP Server is a standalone Model Context Protocol (MCP) server that exposes AL development tools—building, compiling, publishing, symbol search, diagnostics, and more—to any MCP-compatible AI agent. It runs as a separate process and doesn't require Visual Studio Code.
 
 This makes it possible to integrate AL development operations into CI/CD pipelines, chat-based agent workflows, and custom automation tooling using any agent that supports the Model Context Protocol.
 
@@ -40,11 +40,11 @@ The server reads JSON-RPC requests from `stdin` and writes responses to `stdout`
 altool launchmcpserver --transport http --port 5010
 ```
 
-The server listens for HTTP requests on the specified port. Use this transport for agents that connect over a network or for scenarios where launching a subprocess is not practical.
+The server listens for HTTP requests on the specified port. Use this transport for agents that connect over a network or for scenarios where launching a subprocess isn't practical.
 
 ## Available tools
 
-The following tools are exposed by the AL MCP Server. Tools marked **MCP only** are not available in the Visual Studio Code Language Model Tools API.
+The following tools are exposed by the AL MCP Server. Tools marked **MCP only** aren't available in the Visual Studio Code Language Model Tools API.
 
 | Tool | Description |
 |------|-------------|
@@ -131,7 +131,7 @@ When a tool needs to connect to a Business Central cloud environment, the AL MCP
 3. After sign-in, the token is cached. All subsequent tool calls in the session reuse it automatically.
 4. When finished, call `al_auth_logout` to clear the cache.
 
-For on-premises Business Central deployments that use Windows authentication, no explicit login is required.
+For on-premises Business Central deployments that use Windows authentication, no explicit sign in is required.
 
 ## Common automation workflows
 
@@ -168,7 +168,7 @@ altool launchmcpserver --transport stdio
 
 ## Session behavior
 
-The AL MCP Server maintains a compilation session for the duration of the process lifetime. The session is initialized when the server starts and is shared across all tool calls. This means that symbol state and compilation caches are preserved between calls, which improves performance for sequential operations such as compile → diagnose → fix → recompile.
+The AL MCP Server maintains a compilation session during the process lifetime. The session is initialized when the server starts and is shared across all tool calls. This means that symbol state and compilation caches are preserved between calls, which improves performance for sequential operations such as compile → diagnose → fix → recompile.
 
 If you need to work with multiple AL projects in the same server session, use the `projectPath` parameter on individual tool calls to target a specific project.
 
