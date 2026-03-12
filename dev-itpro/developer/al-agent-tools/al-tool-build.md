@@ -16,7 +16,7 @@ ms.reviewer: solsen
 
 The `al_build` tool compiles AL source code and generates a deployable `.app` package. It supports building a single project or the entire workspace including the full dependency tree, and returns detailed diagnostics on completion.
 
-Use `al_build` when you need the `.app` file — for example, before publishing. If you only need to validate your code without producing an output package, use [`al_compile`](al-tool-compile.md) (AL MCP only), which is faster.
+Use `al_build` when you need the `.app` file—for example, before publishing. If you only need to validate your code without producing an output package, use [`al_compile`](al-tool-compile.md) (AL MCP only), which is faster.
 
 ## Parameters
 
@@ -53,7 +53,7 @@ On failure, the tool returns a list of diagnostics describing what prevented the
 ## Prerequisites
 
 - The AL project folder must contain a valid `app.json` file.
-- Required symbol packages must be available in the `.alpackages` folder. If they are missing, run [`al_downloadsymbols`](al-tool-downloadsymbols.md) first.
+- Required symbol packages must be available in the `.alpackages` folder. If they're missing, run [`al_downloadsymbols`](al-tool-downloadsymbols.md) first.
 
 ## Examples
 
