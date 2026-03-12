@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later
 
-The AL Language extension registers a set of Language Model Tools with the Visual Studio Code Language Model Tools API. These tools are available to GitHub Copilot in Agent mode and to any Copilot-compatible extension running inside Visual Studio Code. They allow an AI agent to perform core AL development tasks — building, publishing, downloading symbols, searching symbols, reading diagnostics, and debugging — directly from a conversation.
+The AL Language extension registers a set of Language Model Tools with the Visual Studio Code Language Model Tools API. These tools are available to GitHub Copilot in Agent mode and to any Copilot-compatible extension running inside Visual Studio Code. They allow an AI agent to perform core AL development tasks—building, publishing, downloading symbols, searching symbols, reading diagnostics, and debugging—directly from a conversation.
 
 ## Available tools
 
@@ -41,7 +41,7 @@ When GitHub Copilot is in Agent mode, it can invoke AL tools automatically in re
 
 ### Example prompts
 
-| What you say | What happens |
+| Your prompt | What happens |
 |-------------|--------------|
 | *"Build my AL project."* | Copilot calls `al_build` with `scope="current"`. |
 | *"Build everything in the workspace."* | Copilot calls `al_build` with `scope="all"`. |
@@ -57,14 +57,14 @@ When GitHub Copilot is in Agent mode, it can invoke AL tools automatically in re
 
 Copilot can chain AL tools automatically in a single conversation turn. For example:
 
-- If `al_build` reports errors, Copilot may call `al_getdiagnostics` to retrieve the full list, suggest code fixes, rebuild, and then publish — all without further prompting.
-- If you ask Copilot to investigate a bug, it may call `al_symbolsearch` to locate the relevant code, set a breakpoint with `al_setbreakpoint`, and then start debugging with `al_debug`.
+- If `al_build` reports errors, Copilot might call `al_getdiagnostics` to retrieve the full list, suggest code fixes, rebuild, and then publish—all without further prompting.
+- If you ask Copilot to investigate a bug, it might call `al_symbolsearch` to locate the relevant code, set a breakpoint with `al_setbreakpoint`, and then start debugging with `al_debug`.
 
 This behavior is guided by workflow chains that the AL Language Server defines for each tool. The chains describe likely next steps after success or failure, enabling Copilot to make coherent, multi-step decisions.
 
 ## Connection settings
 
-The Visual Studio Code tools read connection settings from the active `launch.json` configuration in your workspace. You do not need to specify server URLs, tenant IDs, or authentication parameters in the chat — Copilot derives them from your workspace configuration.
+The Visual Studio Code tools read connection settings from the active `launch.json` configuration in your workspace. You don't need to specify server URLs, tenant IDs, or authentication parameters in the chat—Copilot derives them from your workspace configuration.
 
 To target a different environment, update `launch.json` or switch the active launch configuration in Visual Studio Code before invoking the tool.
 
@@ -72,9 +72,9 @@ To target a different environment, update `launch.json` or switch the active lau
 
 The `al_downloadsymbols` tool supports a `globalSourcesOnly` option that downloads Microsoft platform and base application symbols from Microsoft NuGet feeds and AppSource without requiring a connection to a live Business Central server. This is useful when:
 
-- You are working offline.
+- You're working offline.
 - You want to build without configuring a server connection.
-- You are running in a CI environment where a BC server is not available.
+- You're running in a CI environment where a BC server isn't available.
 
 To use this in Copilot Chat: *"Download symbols from global sources only."*
 
