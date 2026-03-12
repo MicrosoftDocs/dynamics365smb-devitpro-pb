@@ -26,15 +26,15 @@ However, these features are only optional for a while. The period in which they'
 
 ## 2026 release wave 1 (version 28)
 
-### New features added and enabled by default in version 27
+### New features added and enabled by default in version 28
 
-- [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
-- [Feature: Introduce UI support for masking sensitive data](../developer/devenv-mask-type-feature-key.md)
+- Feature Update: Improved performance in Trial Balance-related Excel reports - Enables performance enhancements on Trial Balance-related Excel reports. Learn more in [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting).
 
-### New features added and disabled by default in version 27
+### New features added and disabled by default in version 28
 
+- Feature Update: Accelerated Depreciation
 
-### Existing features now enabled by default
+### Existing features now enabled by default in version 28
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650)
 
