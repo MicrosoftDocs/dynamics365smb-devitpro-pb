@@ -1,9 +1,9 @@
 ---
 title: AI Agent Tools for AL Development
-description: Learn about the AI agent tools available for AL development, including how to use them in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the AI agent tools available for AL development, including how to use them in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -20,8 +20,8 @@ These tools are designed for two usage surfaces that share a consistent set of t
 
 | Surface | Description | Best for |
 |---------|-------------|----------|
-| **VS Code Language Model Tools** | Tools registered with the VS Code Language Model Tools API, available to GitHub Copilot in Agent mode and any Copilot-compatible extension | Developers working interactively in VS Code |
-| **AL MCP Server** | A standalone Model Context Protocol server (`altool launchmcpserver`) that exposes AL tools over STDIO or HTTP | Headless environments, CI/CD pipelines, AI agents that run outside VS Code |
+| **Visual Studio Code Language Model Tools** | Tools registered with the Visual Studio Code Language Model Tools API, available to GitHub Copilot in Agent mode and any Copilot-compatible extension | Developers working interactively in Visual Studio Code |
+| **AL MCP Server** | A standalone Model Context Protocol server (`altool launchmcpserver`) that exposes AL tools over STDIO or HTTP | Headless environments, CI/CD pipelines, AI agents that run outside Visual Studio Code |
 
 Because both surfaces use the same tool names, an agent trained on one surface can work with the other with no retraining.
 
@@ -29,7 +29,7 @@ Because both surfaces use the same tool names, an agent trained on one surface c
 
 The following tools are available across both surfaces. Some tools are exclusive to one surface due to the nature of the operation.
 
-| Tool | Description | VS Code | AL MCP |
+| Tool | Description | Visual Studio Code | AL MCP |
 |------|-------------|:-------:|:------:|
 | [`al_build`](al-tool-build.md) | Build the AL project and generate the `.app` package | ✓ | ✓ |
 | [`al_compile`](al-tool-compile.md) | Validate AL code without generating an `.app` (MCP only) | — | ✓ |
@@ -38,13 +38,13 @@ The following tools are available across both surfaces. Some tools are exclusive
 | [`al_symbolsearch`](al-tool-symbolsearch.md) | Search AL symbols across the project and its dependencies | ✓ | ✓ |
 | [`al_getdiagnostics`](al-tool-getdiagnostics.md) | Retrieve filtered compilation diagnostics | ✓ | ✓ |
 | [`al_getpackagedependencies`](al-tool-getpackagedependencies.md) | List the project's `app.json` dependencies (MCP only) | — | ✓ |
-| [`al_debug`](al-tool-debug.md) | Start a debug session without republishing (VS Code only) | ✓ | — |
-| [`al_setbreakpoint`](al-tool-setbreakpoint.md) | Programmatically add, remove, or toggle breakpoints (VS Code only) | ✓ | — |
-| [`al_snapshotdebugging`](al-tool-snapshotdebugging.md) | Manage snapshot debugging sessions (VS Code only) | ✓ | — |
+| [`al_debug`](al-tool-debug.md) | Start a debug session without republishing (Visual Studio Code only) | ✓ | — |
+| [`al_setbreakpoint`](al-tool-setbreakpoint.md) | Programmatically add, remove, or toggle breakpoints (Visual Studio Code only) | ✓ | — |
+| [`al_snapshotdebugging`](al-tool-snapshotdebugging.md) | Manage snapshot debugging sessions (Visual Studio Code only) | ✓ | — |
 | [`al_auth_login`](al-tool-auth.md#al_auth_login) | Authenticate to Microsoft Entra ID (MCP only) | — | ✓ |
 | [`al_auth_logout`](al-tool-auth.md#al_auth_logout) | Clear cached authentication tokens (MCP only) | — | ✓ |
 
-## Using tools in VS Code with GitHub Copilot
+## Using tools in Visual Studio Code with GitHub Copilot
 
 When GitHub Copilot is running in Agent mode, it can call AL tools automatically in response to natural-language requests. You can also reference a tool explicitly in Copilot Chat by prefixing its name with `#`:
 
@@ -63,7 +63,7 @@ Copilot can chain tools automatically. For example, if `al_build` reports errors
 
 ## Using the AL MCP Server
 
-The AL MCP Server is a standalone process that exposes AL tools over the Model Context Protocol. It runs anywhere that .NET 8 is available and does not require VS Code.
+The AL MCP Server is a standalone process that exposes AL tools over the Model Context Protocol. It runs anywhere that .NET 8 is available and does not require Visual Studio Code.
 
 ### Starting the server
 
@@ -104,7 +104,7 @@ When the AL MCP Server needs to connect to a Business Central cloud environment,
 
 1. Call `al_symbolsearch` with a query to find tables, codeunits, pages, fields, or other AL objects across the project and its dependencies.
 
-### Debug an already-published extension (VS Code)
+### Debug an already-published extension (Visual Studio Code)
 
 1. Call `al_debug` to attach the debugger to the deployed extension without republishing.
 2. Optionally call `al_setbreakpoint` to set breakpoints at specific lines.
@@ -117,7 +117,7 @@ To force re-authentication, set `noCache: true` on any tool that supports it, or
 
 ## Related articles
 
-- [AL Language Model Tools for VS Code](al-language-model-tools-vscode.md)
+- [AL Language Model Tools for Visual Studio Code](al-language-model-tools-vscode.md)
 - [AL MCP Server reference](al-mcp-server.md)
 - [AL tool reference: al_build](al-tool-build.md)
 - [AL tool reference: al_compile](al-tool-compile.md)

@@ -1,9 +1,9 @@
 ---
 title: Download AL symbol packages - al_downloadsymbols
-description: Learn about the al_downloadsymbols tool available for AL development, including how to use it in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the al_downloadsymbols tool available for AL development, including how to use it in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -12,19 +12,19 @@ ms.reviewer: solsen
 
 # Download AL symbol packages - al_downloadsymbols
 
-**Applies to:** AL Language extension 17.0 and later | Available in: VS Code, AL MCP Server
+**Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
 
 The `al_downloadsymbols` tool downloads dependent `.app` symbol packages that AL compilation requires. Symbol packages contain the type information for objects defined in other extensions and in the Business Central base application.
 
 Run this tool before building or compiling if you encounter "symbol not found" errors, if you have added new dependencies to `app.json`, or if you want to refresh symbols to pick up updates from a connected Business Central environment.
 
-In VS Code, connection details are read from the active `launch.json` configuration. In AL MCP, you can pass connection parameters directly or let the tool read from the workspace configuration.
+In Visual Studio Code, connection details are read from the active `launch.json` configuration. In AL MCP, you can pass connection parameters directly or let the tool read from the workspace configuration.
 
 After a successful download, the workspace is automatically reloaded to refresh compilation caches.
 
 ## Parameters
 
-### VS Code
+### Visual Studio Code
 
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
@@ -53,7 +53,7 @@ Downloaded symbols are saved to the `.alpackages` folder inside the project dire
 
 ## Examples
 
-### Download symbols from a connected BC server (VS Code)
+### Download symbols from a connected BC server (Visual Studio Code)
 
 In Copilot Chat, say: *"Download symbols for my project."*
 
@@ -63,7 +63,7 @@ Copilot calls `al_downloadsymbols`. Connection details are read from `launch.jso
 
 This mode does not require a Business Central server connection. It downloads the Microsoft platform and base application symbols from Microsoft NuGet feeds and AppSource.
 
-**VS Code:**
+**Visual Studio Code:**
 ```json
 {
   "globalSourcesOnly": true

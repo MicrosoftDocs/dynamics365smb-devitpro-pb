@@ -1,9 +1,9 @@
 ---
 title: Debugging tools - al_debug, al_setbreakpoint, al_snapshotdebugging
-description: Learn about the debugging tools available for AL development, including how to use them in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the debugging tools available for AL development, including how to use them in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -12,15 +12,15 @@ ms.reviewer: solsen
 
 # Debugging tools - al_debug, al_setbreakpoint, al_snapshotdebugging
 
-**Applies to:** AL Language extension 17.0 and later | Available in: VS Code only
+**Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code only
 
-Three tools support debugging AL extensions inside VS Code. All three are available only in VS Code (not in the AL MCP Server), because they interact directly with the VS Code debugger and Problems panel.
+Three tools support debugging AL extensions inside Visual Studio Code. All three are available only in Visual Studio Code (not in the AL MCP Server), because they interact directly with the Visual Studio Code debugger and Problems panel.
 
 ---
 
 ## al_debug — Start a debug session
 
-The `al_debug` tool starts a debug session that attaches to an already-published AL extension without triggering a new publish. This is equivalent to the **Start Without Publishing** action in VS Code.
+The `al_debug` tool starts a debug session that attaches to an already-published AL extension without triggering a new publish. This is equivalent to the **Start Without Publishing** action in Visual Studio Code.
 
 Use this tool when your extension is already deployed and you want to attach the debugger to investigate a specific issue without the overhead of a full publish.
 
@@ -36,7 +36,7 @@ A message string indicating that the debug session started, or an error message 
 
 In Copilot Chat: *"Start debugging without republishing."*
 
-Copilot calls `al_debug`. If no debug configuration is active, VS Code prompts you to select one.
+Copilot calls `al_debug`. If no debug configuration is active, Visual Studio Code prompts you to select one.
 
 ---
 
@@ -91,7 +91,7 @@ The `al_snapshotdebugging` tool manages snapshot debugging sessions. Snapshot de
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `action` | `"initialize"` \| `"finish"` \| `"view"` | Yes | The action to perform: `"initialize"` starts a new snapshot capture, `"finish"` ends the current capture and saves the trace, `"view"` opens the Snapshots view in VS Code to inspect recorded traces. |
+| `action` | `"initialize"` \| `"finish"` \| `"view"` | Yes | The action to perform: `"initialize"` starts a new snapshot capture, `"finish"` ends the current capture and saves the trace, `"view"` opens the Snapshots view in Visual Studio Code to inspect recorded traces. |
 
 ### Return value
 
@@ -124,7 +124,7 @@ Copilot calls `al_snapshotdebugging` with `action="view"`.
 1. Call `al_snapshotdebugging` with `action="initialize"` to start capturing.
 2. Reproduce the scenario you want to investigate in Business Central.
 3. Call `al_snapshotdebugging` with `action="finish"` to stop the capture and save the trace.
-4. Call `al_snapshotdebugging` with `action="view"` to open the trace in VS Code and step through the recorded execution.
+4. Call `al_snapshotdebugging` with `action="view"` to open the trace in Visual Studio Code and step through the recorded execution.
 
 ---
 

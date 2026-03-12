@@ -1,9 +1,9 @@
 ---
-title: AL Language Model Tools for VS Code
-description: Learn about the AL Language Model Tools available for AL development, including how to use them in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+title: AL Language Model Tools for Visual Studio Code
+description: Learn about the AL Language Model Tools available for AL development, including how to use them in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later
 
-The AL Language extension registers a set of Language Model Tools with the VS Code Language Model Tools API. These tools are available to GitHub Copilot in Agent mode and to any Copilot-compatible extension running inside VS Code. They allow an AI agent to perform core AL development tasks — building, publishing, downloading symbols, searching symbols, reading diagnostics, and debugging — directly from a conversation.
+The AL Language extension registers a set of Language Model Tools with the Visual Studio Code Language Model Tools API. These tools are available to GitHub Copilot in Agent mode and to any Copilot-compatible extension running inside Visual Studio Code. They allow an AI agent to perform core AL development tasks — building, publishing, downloading symbols, searching symbols, reading diagnostics, and debugging — directly from a conversation.
 
 ## Available tools
 
@@ -64,9 +64,9 @@ This behavior is guided by workflow chains that the AL Language Server defines f
 
 ## Connection settings
 
-The VS Code tools read connection settings from the active `launch.json` configuration in your workspace. You do not need to specify server URLs, tenant IDs, or authentication parameters in the chat — Copilot derives them from your workspace configuration.
+The Visual Studio Code tools read connection settings from the active `launch.json` configuration in your workspace. You do not need to specify server URLs, tenant IDs, or authentication parameters in the chat — Copilot derives them from your workspace configuration.
 
-To target a different environment, update `launch.json` or switch the active launch configuration in VS Code before invoking the tool.
+To target a different environment, update `launch.json` or switch the active launch configuration in Visual Studio Code before invoking the tool.
 
 ## Downloading symbols from global sources
 
@@ -80,7 +80,7 @@ To use this in Copilot Chat: *"Download symbols from global sources only."*
 
 ## Prerequisites
 
-- The AL Language extension version 17.0 or later must be installed in VS Code.
+- The AL Language extension version 17.0 or later must be installed in Visual Studio Code.
 - GitHub Copilot must be installed and signed in.
 - Your workspace must contain a valid AL project with an `app.json` file.
 - A `launch.json` configuration is required for tools that connect to a Business Central server (`al_publish`, `al_downloadsymbols` without `globalSourcesOnly`).

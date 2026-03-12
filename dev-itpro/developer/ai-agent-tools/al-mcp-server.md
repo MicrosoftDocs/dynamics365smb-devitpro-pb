@@ -3,7 +3,7 @@ title: AL MCP Server
 description: Learn about the AL MCP Server, a standalone Model Context Protocol (MCP) server that exposes AL development tools for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later
 
-The AL MCP Server is a standalone Model Context Protocol (MCP) server that exposes AL development tools — building, compiling, publishing, symbol search, diagnostics, and more — to any MCP-compatible AI agent. It runs as a separate process and does not require VS Code.
+The AL MCP Server is a standalone Model Context Protocol (MCP) server that exposes AL development tools — building, compiling, publishing, symbol search, diagnostics, and more — to any MCP-compatible AI agent. It runs as a separate process and does not require Visual Studio Code.
 
 This makes it possible to integrate AL development operations into CI/CD pipelines, chat-based agent workflows, and custom automation tooling using any agent that supports the Model Context Protocol.
 
@@ -44,7 +44,7 @@ The server listens for HTTP requests on the specified port. Use this transport f
 
 ## Available tools
 
-The following tools are exposed by the AL MCP Server. Tools marked **MCP only** are not available in the VS Code Language Model Tools API.
+The following tools are exposed by the AL MCP Server. Tools marked **MCP only** are not available in the Visual Studio Code Language Model Tools API.
 
 | Tool | Description |
 |------|-------------|
@@ -175,7 +175,7 @@ If you need to work with multiple AL projects in the same server session, use th
 ## Related articles
 
 - [AI agent tools overview](al-agent-tools-overview.md)
-- [AL Language Model Tools for VS Code](al-language-model-tools-vscode.md)
+- [AL Language Model Tools for Visual Studio Code](al-language-model-tools-vscode.md)
 - [al_build](al-tool-build.md)
 - [al_compile](al-tool-compile.md)
 - [al_publish](al-tool-publish.md)

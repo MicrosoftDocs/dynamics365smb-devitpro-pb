@@ -1,9 +1,9 @@
 ---
 title: Compile AL project - al_compile
-description: Learn about the al_compile tool available for AL development, including how to use it in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the al_compile tool available for AL development, including how to use it in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -19,7 +19,7 @@ The `al_compile` tool compiles the AL workspace and returns diagnostics **withou
 Use [`al_build`](al-tool-build.md) instead when you need the `.app` file — for example, before publishing.
 
 > [!NOTE]
-> `al_compile` is available on the AL MCP Server only. In VS Code, use `al_build` with `scope="current"` for an equivalent result.
+> `al_compile` is available on the AL MCP Server only. In Visual Studio Code, use `al_build` with `scope="current"` for an equivalent result.
 
 ## Parameters
 

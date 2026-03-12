@@ -1,9 +1,9 @@
 ---
 title: Publish AL extension to Business Central - al_publish
-description: Learn about the al_publish tool available for AL development, including how to use it in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the al_publish tool available for AL development, including how to use it in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Publish AL extension to Business Central - al_publish
 
-**Applies to:** AL Language extension 17.0 and later | Available in: VS Code, AL MCP Server
+**Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
 
 The `al_publish` tool deploys an AL extension to a Business Central environment — either a cloud (SaaS) sandbox or production environment, or an on-premises server. It supports several deployment modes depending on your workflow.
 
@@ -21,7 +21,7 @@ The `al_publish` tool deploys an AL extension to a Business Central environment 
 | Mode | Description |
 |------|-------------|
 | **Full publish** | Builds the project and publishes the resulting `.app` file. This is the default mode. |
-| **Incremental (RAD) publish** | Uses Rapid Application Development (RAD) delta compilation to publish only the changes since the last full publish. Faster for iterative development. Available in VS Code only. |
+| **Incremental (RAD) publish** | Uses Rapid Application Development (RAD) delta compilation to publish only the changes since the last full publish. Faster for iterative development. Available in Visual Studio Code only. |
 | **Full dependency tree** | Builds and publishes the active project together with all its dependencies in the correct order. |
 | **Skip build** | Publishes an existing `.app` file without rebuilding the project. Useful when the build has already been performed in a previous step. |
 
@@ -35,7 +35,7 @@ For cloud environments, the tool uses browser-based interactive authentication v
 
 ## Parameters
 
-### VS Code
+### Visual Studio Code
 
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
@@ -83,13 +83,13 @@ For cloud environments, the tool uses browser-based interactive authentication v
 
 ## Examples
 
-### Publish the active project to a sandbox (VS Code)
+### Publish the active project to a sandbox (Visual Studio Code)
 
 In Copilot Chat, say: *"Publish my extension to the sandbox."*
 
 Copilot calls `al_publish` with the default parameters. Connection details come from `launch.json`.
 
-### Publish with full dependency tree (VS Code)
+### Publish with full dependency tree (Visual Studio Code)
 
 ```json
 {
@@ -136,7 +136,7 @@ Copilot calls `al_publish` with the default parameters. Connection details come 
 
 | Outcome | Suggested action |
 |---------|-----------------|
-| Published successfully | In VS Code, the debugger attaches automatically (when `debug: true`). In AL MCP, verify the deployment on the BC server. |
+| Published successfully | In Visual Studio Code, the debugger attaches automatically (when `debug: true`). In AL MCP, verify the deployment on the BC server. |
 | Build error before publish | Run [`al_getdiagnostics`](al-tool-getdiagnostics.md) to review the errors, fix the code, and retry. |
 | Authentication error | Run [`al_auth_login`](al-tool-auth.md#al_auth_login) (AL MCP) and retry, or set `noCache: true`. |
 
@@ -145,4 +145,4 @@ Copilot calls `al_publish` with the default parameters. Connection details come 
 - [`al_build`](al-tool-build.md) — Build without publishing.
 - [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download symbol packages needed before publishing.
 - [`al_auth_login`](al-tool-auth.md#al_auth_login) — Authenticate to Microsoft Entra ID before publishing to the cloud.
-- [`al_debug`](al-tool-debug.md) — Attach the debugger without republishing (VS Code only).
+- [`al_debug`](al-tool-debug.md) — Attach the debugger without republishing (Visual Studio Code only).

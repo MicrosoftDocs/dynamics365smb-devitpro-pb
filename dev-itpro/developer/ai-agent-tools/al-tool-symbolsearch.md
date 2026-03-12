@@ -1,9 +1,9 @@
 ---
 title: Search AL symbols - al_symbolsearch
-description: Learn about the al_symbolsearch tool available for AL development, including how to use it in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the al_symbolsearch tool available for AL development, including how to use it in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Search AL symbols - al_symbolsearch
 
-**Applies to:** AL Language extension 17.0 and later | Available in: VS Code, AL MCP Server
+**Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
 
 The `al_symbolsearch` tool searches AL symbols — objects such as tables, codeunits, pages, reports, enumerations, and interfaces, as well as their members such as fields, methods, keys, actions, and triggers — across the active project and all referenced dependencies. Results come from the AL Language Server, which ensures that the search is workspace-aware and reflects the current compilation state.
 
@@ -65,7 +65,7 @@ The tool returns a `symbols` array. Each item in the array has the following pro
 
 The response also includes a `truncated` boolean flag. When `true`, there are more results than the specified `limit`; narrow your search to see all matches.
 
-## VS Code examples
+## Visual Studio Code examples
 
 In Copilot Chat, you can describe what you are looking for in natural language:
 

@@ -1,9 +1,9 @@
 ---
 title: Get package dependencies - al_getpackagedependencies
-description: Learn about the al_getpackagedependencies tool available for AL development, including how to use it in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the al_getpackagedependencies tool available for AL development, including how to use it in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -19,7 +19,7 @@ The `al_getpackagedependencies` tool reads the `app.json` file of an AL project 
 Use this tool to understand what packages a project requires before downloading symbols or publishing, to audit dependency graphs, or to check whether a specific package is referenced.
 
 > [!NOTE]
-> This tool is available on the AL MCP Server only. In VS Code, inspect the `app.json` file directly to view dependencies.
+> This tool is available on the AL MCP Server only. In Visual Studio Code, inspect the `app.json` file directly to view dependencies.
 
 ## Parameters
 

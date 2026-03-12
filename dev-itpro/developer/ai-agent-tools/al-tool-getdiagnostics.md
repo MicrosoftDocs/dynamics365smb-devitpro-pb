@@ -1,9 +1,9 @@
 ---
 title: Get AL diagnostics - al_getdiagnostics
-description: Learn about the al_getdiagnostics tool available for AL development, including how to use it in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the al_getdiagnostics tool available for AL development, including how to use it in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -12,18 +12,18 @@ ms.reviewer: solsen
 
 # Get AL diagnostics - al_getdiagnostics
 
-**Applies to:** AL Language extension 17.0 and later | Available in: VS Code, AL MCP Server
+**Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
 
 The `al_getdiagnostics` tool retrieves AL compilation diagnostics — errors, warnings, informational messages, and hints — with flexible filtering by scope, severity, source area, file, or folder.
 
-- In VS Code, diagnostics are read from the Problems panel, which reflects the current state of the AL Language Server.
+- In Visual Studio Code, diagnostics are read from the Problems panel, which reflects the current state of the AL Language Server.
 - In AL MCP, diagnostics come directly from the compiler output.
 
 Use this tool after a build or compilation to inspect what needs to be fixed, to check whether a project is error-free, or to monitor code quality by filtering for specific diagnostic codes or analyzer areas.
 
 ## Parameters
 
-### VS Code
+### Visual Studio Code
 
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
@@ -49,7 +49,7 @@ Use this tool after a build or compilation to inspect what needs to be fixed, to
 
 ## Return value
 
-### VS Code
+### Visual Studio Code
 
 The response includes:
 
@@ -78,13 +78,13 @@ Each item in `diagnostics` has: `file`, `severity`, `message`, `code`, and a loc
 
 ## Examples
 
-### Get all errors in the workspace (VS Code)
+### Get all errors in the workspace (Visual Studio Code)
 
 In Copilot Chat: *"Show me all errors in the project."*
 
 Copilot calls `al_getdiagnostics` with `scope="project"` and `severities=["error"]`.
 
-### Check for AppSourceCop violations (VS Code)
+### Check for AppSourceCop violations (Visual Studio Code)
 
 ```json
 {
@@ -93,7 +93,7 @@ Copilot calls `al_getdiagnostics` with `scope="project"` and `severities=["error
 }
 ```
 
-### Get errors in a specific file (VS Code)
+### Get errors in a specific file (Visual Studio Code)
 
 ```json
 {

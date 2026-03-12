@@ -1,9 +1,9 @@
 ---
 title: Authentication tools - al_auth_login and al_auth_logout
-description: Learn about the al_auth_login and al_auth_logout tools available for AL development, including how to use them in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the al_auth_login and al_auth_logout tools available for AL development, including how to use them in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -17,7 +17,7 @@ ms.reviewer: solsen
 Two tools manage authentication for the AL MCP Server when connecting to Business Central cloud environments (SaaS). Authentication uses browser-based interactive sign-in through Microsoft Authentication Library (MSAL). Tokens are cached securely on disk and reused automatically by tools that require them, such as `al_publish` and `al_downloadsymbols`.
 
 > [!NOTE]
-> These tools are available on the AL MCP Server only. In VS Code, authentication is handled transparently using the existing VS Code account session.
+> These tools are available on the AL MCP Server only. In Visual Studio Code, authentication is handled transparently using the existing Visual Studio Code account session.
 >
 > For on-premises Business Central deployments that use Windows authentication, no explicit login is required.
 

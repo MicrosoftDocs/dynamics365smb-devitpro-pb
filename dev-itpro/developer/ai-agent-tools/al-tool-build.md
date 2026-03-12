@@ -1,9 +1,9 @@
 ---
 title: Build AL project - al_build
-description: Learn about the al_build tool available for AL development, including how to use it in VS Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
+description: Learn about the al_build tool available for AL development, including how to use it in Visual Studio Code with GitHub Copilot and through the AL MCP Server for headless environments and CI/CD pipelines.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: how-to
+ms.topic: concept-article
 ms.update-cycle: 180-days
 ms.date: 03/12/2026
 ms.collection: bap-ai-copilot
@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Build AL project - al_build
 
-**Applies to:** AL Language extension 17.0 and later | Available in: VS Code, AL MCP Server
+**Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
 
 The `al_build` tool compiles AL source code and generates a deployable `.app` package. It supports building a single project or the entire workspace including the full dependency tree, and returns detailed diagnostics on completion.
 
@@ -20,7 +20,7 @@ Use `al_build` when you need the `.app` file — for example, before publishing.
 
 ## Parameters
 
-### VS Code
+### Visual Studio Code
 
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
@@ -57,7 +57,7 @@ On failure, the tool returns a list of diagnostics describing what prevented the
 
 ## Examples
 
-### Build the active project (VS Code or AL MCP)
+### Build the active project (Visual Studio Code or AL MCP)
 
 ```json
 {
