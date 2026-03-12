@@ -14,9 +14,9 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later | Available in: AL MCP Server only
 
-The `al_compile` tool compiles the AL workspace and returns diagnostics **without** generating an `.app` package. Because it skips the packaging step, it is faster than [`al_build`](al-tool-build.md) and is the preferred choice for validation-only scenarios such as pull-request checks, pre-commit gates, and quick iterative feedback loops.
+The `al_compile` tool compiles the AL workspace and returns diagnostics **without** generating an `.app` package. Because it skips the packaging step, it's faster than [`al_build`](al-tool-build.md) and is the preferred choice for validation-only scenarios such as pull-request checks, precommit gates, and quick iterative feedback loops.
 
-Use [`al_build`](al-tool-build.md) instead when you need the `.app` file — for example, before publishing.
+Use [`al_build`](al-tool-build.md) instead when you need the `.app` file—for example, before publishing.
 
 > [!NOTE]
 > `al_compile` is available on the AL MCP Server only. In Visual Studio Code, use `al_build` with `scope="current"` for an equivalent result.
@@ -40,7 +40,7 @@ The tool returns a compilation result object with the following properties:
 |----------|------|-------------|
 | `Succeeded` | boolean | `true` if the compilation completed with no errors. |
 | `Diagnostics` | array | List of diagnostic items. Each item contains `Severity`, `Code` (for example, `AL0118`), `Location` (file and line), and `Description` (human-readable message). |
-| `Message` | string | Optional additional context about the compilation result. |
+| `Message` | string | Optional extra context about the compilation result. |
 
 ## Examples
 
@@ -88,7 +88,7 @@ Each item in the `Diagnostics` array has the following structure:
 | Outcome | Suggested action |
 |---------|-----------------|
 | No errors | Proceed with [`al_build`](al-tool-build.md) to generate the `.app` package. |
-| Errors reported | Fix the reported issues and re-run `al_compile`. |
+| Errors reported | Fix the reported issues and rerun `al_compile`. |
 | Symbols not found | Run [`al_downloadsymbols`](al-tool-downloadsymbols.md) to refresh the symbol packages. |
 
 ## Related tools

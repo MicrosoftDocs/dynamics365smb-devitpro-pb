@@ -40,7 +40,7 @@ Copilot calls `al_debug`. If no debug configuration is active, Visual Studio Cod
 
 ## al_setbreakpoint — Set or remove a breakpoint
 
-The `al_setbreakpoint` tool programmatically adds, removes, or toggles a breakpoint at a specific line in an AL source file. This lets an agent set targeted breakpoints as part of an automated debugging workflow — for example, after analyzing an error to determine exactly where execution should pause.
+The `al_setbreakpoint` tool programmatically adds, removes, or toggles a breakpoint at a specific line in an AL source file. This lets an agent set targeted breakpoints as part of an automated debugging workflow—for example, after analyzing an error to determine exactly where execution should pause.
 
 ### Parameters
 

@@ -36,7 +36,7 @@ After a successful download, the workspace is automatically reloaded to refresh 
 |-----------|------|---------|-------------|
 | `projectPath` | string | First project in workspace | Absolute path to the AL project folder containing `app.json` and `launch.json`. |
 | `globalSourcesOnly` | boolean | `false` | When `true`, downloads symbols only from Microsoft NuGet feeds and AppSource. No server connection or authentication is required. |
-| `force` | boolean | `false` | When `true`, re-downloads all symbol packages even if they are already cached locally. |
+| `force` | boolean | `false` | When `true`, re-downloads all symbol packages even if they're already cached locally. |
 | `noCache` | boolean | `false` | When `true`, bypasses the authentication token cache and forces a new sign-in. |
 | `useInteractiveLogin` | boolean | `true` | When `true`, opens a browser window for Microsoft Entra ID sign-in if authentication is required. |
 | `environmentName` | string | — | Cloud environment name (for example, `"sandbox"` or `"production"`). Overrides `launch.json`. |
@@ -61,7 +61,7 @@ Copilot calls `al_downloadsymbols`. Connection details are read from `launch.jso
 
 ### Download symbols from global sources only (offline / CI)
 
-This mode does not require a Business Central server connection. It downloads the Microsoft platform and base application symbols from Microsoft NuGet feeds and AppSource.
+This mode doesn't require a Business Central server connection. It downloads the Microsoft platform and base application symbols from Microsoft NuGet feeds and AppSource.
 
 **Visual Studio Code:**
 

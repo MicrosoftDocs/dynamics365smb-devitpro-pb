@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
 
-The `al_getdiagnostics` tool retrieves AL compilation diagnostics — errors, warnings, informational messages, and hints — with flexible filtering by scope, severity, source area, file, or folder.
+The `al_getdiagnostics` tool retrieves AL compilation diagnostics—errors, warnings, informational messages, and hints—with flexible filtering by scope, severity, source area, file, or folder.
 
 - In Visual Studio Code, diagnostics are read from the Problems panel, which reflects the current state of the AL Language Server.
 - In AL MCP, diagnostics come directly from the compiler output.
@@ -70,7 +70,7 @@ Each item in `diagnostics` has:
 | `source` | string | Diagnostic source (for example, `"AL"`, `"AppSourceCop"`). |
 | `code` | string | Diagnostic code (for example, `"AL0118"`). |
 | `range` | object | Start and end position in the file: `{ start: { line, character }, end: { line, character } }`. |
-| `relatedInformation` | array | Additional context, when `includeRelatedInformation: true`. |
+| `relatedInformation` | array | Extra context, when `includeRelatedInformation: true`. |
 
 ### AL MCP Server
 

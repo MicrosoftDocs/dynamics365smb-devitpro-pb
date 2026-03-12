@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
 
-The `al_symbolsearch` tool searches AL symbols — objects such as tables, codeunits, pages, reports, enumerations, and interfaces, as well as their members such as fields, methods, keys, actions, and triggers — across the active project and all referenced dependencies. Results come from the AL Language Server, which ensures that the search is workspace-aware and reflects the current compilation state.
+The `al_symbolsearch` tool searches AL symbols—objects such as tables, codeunits, pages, reports, enumerations, and interfaces, as well as their members such as fields, methods, keys, actions, and triggers—across the active project and all referenced dependencies. Results come from the AL Language Server, which ensures that the search is workspace-aware and reflects the current compilation state.
 
 Use this tool to explore the AL symbol space, discover available APIs, audit object usage, or understand what fields and methods an object exposes.
 

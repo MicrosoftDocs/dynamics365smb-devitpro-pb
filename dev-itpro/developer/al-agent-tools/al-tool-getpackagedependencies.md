@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later | Available in: AL MCP Server only
 
-The `al_getpackagedependencies` tool reads the `app.json` file of an AL project and returns its declared package dependencies — including the app name, publisher, app ID (GUID), and version range for each dependency.
+The `al_getpackagedependencies` tool reads the `app.json` file of an AL project and returns its declared package dependencies—including the app name, publisher, app ID (GUID), and version range for each dependency.
 
 Use this tool to understand what packages a project requires before downloading symbols or publishing, to audit dependency graphs, or to check whether a specific package is referenced.
 

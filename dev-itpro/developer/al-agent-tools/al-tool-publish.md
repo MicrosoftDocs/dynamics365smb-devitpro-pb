@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 **Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
 
-The `al_publish` tool deploys an AL extension to a Business Central environment — either a cloud (SaaS) sandbox or production environment, or an on-premises server. It supports several deployment modes depending on your workflow.
+The `al_publish` tool deploys an AL extension to a Business Central environment—either a cloud (SaaS) sandbox or production environment, or an on-premises server. It supports several deployment modes depending on your workflow.
 
 ## Deployment modes
 
@@ -30,7 +30,7 @@ The `al_publish` tool deploys an AL extension to a Business Central environment 
 For cloud environments, the tool uses browser-based interactive authentication via Microsoft Authentication Library (MSAL). Tokens are cached and reused across calls.
 
 - In AL MCP, call [`al_auth_login`](al-tool-auth.md#al_auth_login) before publishing to a cloud environment.
-- For on-premises environments using Windows authentication, no explicit login is required.
+- For on-premises environments using Windows authentication, no explicit sign in is required.
 - Pass `noCache: true` to force a new sign-in and bypass the token cache.
 
 ## Parameters
