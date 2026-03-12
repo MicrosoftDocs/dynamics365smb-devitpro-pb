@@ -21,8 +21,6 @@ Two tools manage authentication for the AL MCP Server when connecting to Busines
 >
 > For on-premises Business Central deployments that use Windows authentication, no explicit login is required.
 
----
-
 ## al_auth_login
 
 The `al_auth_login` tool opens a browser window for interactive Microsoft Entra ID (formerly Azure Active Directory) sign-in. After the user signs in, the resulting token is cached. Subsequent AL MCP tool calls that require authentication will use the cached token automatically, without prompting again.
@@ -84,8 +82,6 @@ The `al_auth_login` tool opens a browser window for interactive Microsoft Entra 
 - When you receive an authentication error from another tool.
 - When switching to a different Microsoft Entra account (combine with `noCache: true`).
 
----
-
 ## al_auth_logout
 
 The `al_auth_logout` tool clears all cached Microsoft Entra ID tokens from the local MSAL token cache. After calling this tool, any tool that requires authentication will prompt for sign-in again.
@@ -107,13 +103,9 @@ None.
 - Before calling `al_auth_login` with a different account.
 - To resolve persistent authentication errors by clearing a stale cached token.
 
----
-
 ## Security design
 
 Authentication tokens are never passed as tool parameters and are never returned in tool responses. The sign-in flow is handled entirely by MSAL and the user's browser. The AL MCP Server only stores and reuses the resulting token from the secure local cache.
-
----
 
 ## Related tools
 

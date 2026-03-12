@@ -115,13 +115,13 @@ Authentication tokens are never passed as tool parameters or returned in tool re
 
 To force re-authentication, set `noCache: true` on any tool that supports it, or call `al_auth_logout` first.
 
-## Related articles
+## Related information
 
-- [AL Language Model Tools for Visual Studio Code](al-language-model-tools-vscode.md)
-- [AL MCP Server reference](al-mcp-server.md)
-- [AL tool reference: al_build](al-tool-build.md)
-- [AL tool reference: al_compile](al-tool-compile.md)
-- [AL tool reference: al_publish](al-tool-publish.md)
-- [AL tool reference: al_downloadsymbols](al-tool-downloadsymbols.md)
-- [AL tool reference: al_symbolsearch](al-tool-symbolsearch.md)
-- [AL tool reference: al_getdiagnostics](al-tool-getdiagnostics.md)
+[AL Language Model Tools for Visual Studio Code](al-language-model-tools-vscode.md)  
+[AL MCP Server reference](al-mcp-server.md)  
+[AL tool reference: al_build](al-tool-build.md)  
+[AL tool reference: al_compile](al-tool-compile.md)  
+[AL tool reference: al_publish](al-tool-publish.md)  
+[AL tool reference: al_downloadsymbols](al-tool-downloadsymbols.md)  
+[AL tool reference: al_symbolsearch](al-tool-symbolsearch.md)  
+[AL tool reference: al_getdiagnostics](al-tool-getdiagnostics.md)  

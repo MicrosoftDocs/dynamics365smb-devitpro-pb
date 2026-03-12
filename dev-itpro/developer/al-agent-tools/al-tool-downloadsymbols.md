@@ -64,6 +64,7 @@ Copilot calls `al_downloadsymbols`. Connection details are read from `launch.jso
 This mode does not require a Business Central server connection. It downloads the Microsoft platform and base application symbols from Microsoft NuGet feeds and AppSource.
 
 **Visual Studio Code:**
+
 ```json
 {
   "globalSourcesOnly": true
@@ -71,6 +72,7 @@ This mode does not require a Business Central server connection. It downloads th
 ```
 
 **AL MCP:**
+
 ```json
 {
   "globalSourcesOnly": true

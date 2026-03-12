@@ -172,15 +172,15 @@ The AL MCP Server maintains a compilation session for the duration of the proces
 
 If you need to work with multiple AL projects in the same server session, use the `projectPath` parameter on individual tool calls to target a specific project.
 
-## Related articles
+## Related information
 
-- [AI agent tools overview](al-agent-tools-overview.md)
-- [AL Language Model Tools for Visual Studio Code](al-language-model-tools-vscode.md)
-- [al_build](al-tool-build.md)
-- [al_compile](al-tool-compile.md)
-- [al_publish](al-tool-publish.md)
-- [al_downloadsymbols](al-tool-downloadsymbols.md)
-- [al_symbolsearch](al-tool-symbolsearch.md)
-- [al_getdiagnostics](al-tool-getdiagnostics.md)
-- [al_getpackagedependencies](al-tool-getpackagedependencies.md)
-- [al_auth_login and al_auth_logout](al-tool-auth.md)
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL Language Model Tools for Visual Studio Code](al-language-model-tools-vscode.md)  
+[al_build](al-tool-build.md)  
+[al_compile](al-tool-compile.md)  
+[al_publish](al-tool-publish.md)  
+[al_downloadsymbols](al-tool-downloadsymbols.md)  
+[al_symbolsearch](al-tool-symbolsearch.md)  
+[al_getdiagnostics](al-tool-getdiagnostics.md)  
+[al_getpackagedependencies](al-tool-getpackagedependencies.md)  
+[al_auth_login and al_auth_logout](al-tool-auth.md)  

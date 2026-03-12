@@ -38,8 +38,6 @@ In Copilot Chat: *"Start debugging without republishing."*
 
 Copilot calls `al_debug`. If no debug configuration is active, Visual Studio Code prompts you to select one.
 
----
-
 ## al_setbreakpoint — Set or remove a breakpoint
 
 The `al_setbreakpoint` tool programmatically adds, removes, or toggles a breakpoint at a specific line in an AL source file. This lets an agent set targeted breakpoints as part of an automated debugging workflow — for example, after analyzing an error to determine exactly where execution should pause.
@@ -80,8 +78,6 @@ Copilot calls `al_setbreakpoint` with `action="add"` and `lineNumber=42`.
   "action": "toggle"
 }
 ```
-
----
 
 ## al_snapshotdebugging — Manage snapshot debugging sessions
 
@@ -125,8 +121,6 @@ Copilot calls `al_snapshotdebugging` with `action="view"`.
 2. Reproduce the scenario you want to investigate in Business Central.
 3. Call `al_snapshotdebugging` with `action="finish"` to stop the capture and save the trace.
 4. Call `al_snapshotdebugging` with `action="view"` to open the trace in Visual Studio Code and step through the recorded execution.
-
----
 
 ## Related tools
 

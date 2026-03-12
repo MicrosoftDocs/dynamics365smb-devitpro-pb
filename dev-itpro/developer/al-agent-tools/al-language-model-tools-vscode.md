@@ -85,13 +85,13 @@ To use this in Copilot Chat: *"Download symbols from global sources only."*
 - Your workspace must contain a valid AL project with an `app.json` file.
 - A `launch.json` configuration is required for tools that connect to a Business Central server (`al_publish`, `al_downloadsymbols` without `globalSourcesOnly`).
 
-## Related articles
+## Related information
 
-- [AI agent tools overview](al-agent-tools-overview.md)
-- [AL MCP Server reference](al-mcp-server.md)
-- [al_build](al-tool-build.md)
-- [al_publish](al-tool-publish.md)
-- [al_downloadsymbols](al-tool-downloadsymbols.md)
-- [al_symbolsearch](al-tool-symbolsearch.md)
-- [al_getdiagnostics](al-tool-getdiagnostics.md)
-- [al_debug, al_setbreakpoint, al_snapshotdebugging](al-tool-debug.md)
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL MCP Server reference](al-mcp-server.md)  
+[al_build](al-tool-build.md)  
+[al_publish](al-tool-publish.md)  
+[al_downloadsymbols](al-tool-downloadsymbols.md)  
+[al_symbolsearch](al-tool-symbolsearch.md)  
+[al_getdiagnostics](al-tool-getdiagnostics.md)  
+[al_debug, al_setbreakpoint, al_snapshotdebugging](al-tool-debug.md)  
