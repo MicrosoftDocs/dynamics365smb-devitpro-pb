@@ -157,3 +157,8 @@ In AL MCP, wrap all parameters under a `parameters` key:
 
 - [`al_getdiagnostics`](al-tool-getdiagnostics.md) — Get compilation errors and warnings.
 - [`al_getpackagedependencies`](al-tool-getpackagedependencies.md) — List the packages available in the symbol search scope (AL MCP only).
+
+## Related information
+
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL MCP Server reference](al-mcp-server.md)  

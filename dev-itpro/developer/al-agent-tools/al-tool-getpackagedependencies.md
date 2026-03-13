@@ -80,3 +80,8 @@ Each item in `Dependencies` has:
 
 - [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download the symbol packages for the listed dependencies.
 - [`al_symbolsearch`](al-tool-symbolsearch.md) — Search symbols within the downloaded packages.
+
+## Related information
+
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL MCP Server reference](al-mcp-server.md)  

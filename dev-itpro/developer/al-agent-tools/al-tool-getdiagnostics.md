@@ -143,3 +143,9 @@ Copilot calls `al_getdiagnostics` with `scope="project"` and `severities=["error
 - [`al_build`](al-tool-build.md) — Build the project; errors are returned in the build result and also appear in diagnostics.
 - [`al_compile`](al-tool-compile.md) — Compile without building; faster validation (AL MCP only).
 - [`al_symbolsearch`](al-tool-symbolsearch.md) — Search for the symbol referenced in an error to understand its definition.
+
+## Related information
+
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL MCP Server reference](al-mcp-server.md)  
+

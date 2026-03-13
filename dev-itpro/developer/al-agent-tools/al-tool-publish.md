@@ -146,3 +146,9 @@ Copilot calls `al_publish` with the default parameters. Connection details come 
 - [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download symbol packages needed before publishing.
 - [`al_auth_login`](al-tool-auth.md#al_auth_login) — Authenticate to Microsoft Entra ID before publishing to the cloud.
 - [`al_debug`](al-tool-debug.md) — Attach the debugger without republishing (Visual Studio Code only).
+
+## Related information
+
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL MCP Server reference](al-mcp-server.md)  
+

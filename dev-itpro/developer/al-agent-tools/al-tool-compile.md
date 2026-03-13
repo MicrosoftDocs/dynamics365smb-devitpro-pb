@@ -96,3 +96,9 @@ Each item in the `Diagnostics` array has the following structure:
 - [`al_build`](al-tool-build.md) — Build and produce an `.app` package (both surfaces).
 - [`al_getdiagnostics`](al-tool-getdiagnostics.md) — Retrieve diagnostics with richer filtering options.
 - [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download symbol packages before compiling.
+
+## Related information
+
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL MCP Server reference](al-mcp-server.md)  
+

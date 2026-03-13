@@ -111,3 +111,9 @@ Authentication tokens are never passed as tool parameters and are never returned
 
 - [`al_publish`](al-tool-publish.md) — Deploy an extension; requires authentication for cloud environments.
 - [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download symbol packages; requires authentication for cloud environments.
+
+## Related information
+
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL MCP Server reference](al-mcp-server.md)  
+

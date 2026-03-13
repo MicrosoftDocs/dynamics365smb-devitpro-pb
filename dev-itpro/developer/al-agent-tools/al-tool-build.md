@@ -107,3 +107,9 @@ On failure, the tool returns a list of diagnostics describing what prevented the
 - [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download symbol packages before building.
 - [`al_getdiagnostics`](al-tool-getdiagnostics.md) — Read errors and warnings after a build.
 - [`al_publish`](al-tool-publish.md) — Deploy the built `.app` to Business Central.
+
+## Related information
+
+[AI agent tools overview](al-agent-tools-overview.md)  
+[AL MCP Server reference](al-mcp-server.md)  
+
