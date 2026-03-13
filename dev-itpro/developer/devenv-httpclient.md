@@ -103,7 +103,14 @@ With version 27, the server certificate validation is enforced, and the only way
 
 ### Anti-SSRF validation for AL HttpClient
 
-[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+<!--[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]-->
+
+> **Availability:** Anti-SSRF validation is fully available in [!INCLUDE [prod_short](includes/prod_short.md)] online. For on-premises, it's availability depends on the [!INCLUDE [prod_short](includes/prod_short.md)] version and these [!INCLUDE [server](includes/server.md)] settings:
+>
+>|Setting|Available from update (platform version|
+>|-|-|
+>|`NavHttpClientAntiSSRFEnabled`|26.11 (platform 26.0.46773)<br>27.2 (platform 27.0.42799)<br>28.0 (platform 28.0.47117.0)|
+>|`NavHttpClientAntiSSRFAllowedAddresses`|26.11 (platform 26.0.46773)<br>27.2 (platform 27.0.42799)<br>28.0 (platform 28.0.47117.0)|
 
 The AL HttpClient is hardened with anti-SSRF (Server-Side Request Forgery) validation. This security measure blocks HTTP requests to internal IP addresses by default, helping protect your environment against server-side request forgery attacks.
 
@@ -115,10 +122,12 @@ This validation is always enabled with [!INCLUDE [prod_short](includes/prod_shor
 Learn how to configure [!INCLUDE [server](includes/server.md)] in [Configure Business Central Server ](../administration/configure-server-instance.md).
 
 > [!IMPORTANT]
-> The recommended approach is to keep `NavHttpClientAntiSSRFEnabled` set to `true` and only add the specific IP addresses you need to `NavHttpClientAntiSSRFAllowedAddresses`. Disabling validation entirely is discouraged because it removes an important layer of protection against SSRF attacks.
+> If your current [!INCLUDE [prod_short](includes/prod_short.md)] version only includes `NavHttpClientAntiSSRFEnabled`, set it to `false` (disable) if your solution needs to  connect to internal endpoints.
+>
+> Once `NavHttpClientAntiSSRFAllowedAddresses` is available in your version, set it to the specific IP addresses you need to allow and set `NavHttpClientAntiSSRFEnabled` to `true` to enable validation. Disabling validation entirely is discouraged because it removes an important layer of protection against SSRF attacks.
 
 ### Supported HTTP methods
-
+ 
 [!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md)]
 
 ## Parsing the result
