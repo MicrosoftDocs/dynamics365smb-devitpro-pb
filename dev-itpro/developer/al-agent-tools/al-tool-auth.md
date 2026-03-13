@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Authentication tools - al_auth_login and al_auth_logout
 
-**Applies to:** AL Language extension 17.0 and later | Available in: AL MCP Server only
+[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)] | Available in: AL MCP Server only
 
 Two tools manage authentication for the AL MCP Server when connecting to Business Central cloud environments (SaaS). Authentication uses browser-based interactive sign-in through Microsoft Authentication Library (MSAL). Tokens are cached securely on disk and reused automatically by tools that require them, such as `al_publish` and `al_downloadsymbols`.
 

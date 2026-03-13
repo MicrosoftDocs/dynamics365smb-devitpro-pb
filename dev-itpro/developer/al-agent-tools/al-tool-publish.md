@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Publish AL extension to Business Central - al_publish
 
-**Applies to:** AL Language extension 17.0 and later | Available in: Visual Studio Code, AL MCP Server
+[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
 
 The `al_publish` tool deploys an AL extension to a Business Central environment—either a cloud (SaaS) sandbox or production environment, or an on-premises server. It supports several deployment modes depending on your workflow.
 

@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # AI agent tools for AL development
 
-**Applies to:** AL Language extension 17.0 and later
+[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)]
 
 AI agent tools enable GitHub Copilot and any Model Context Protocol (MCP)-compatible AI agent to perform core Business Central development tasks on your behalf—building, publishing, searching symbols, running diagnostics, and debugging AL extensions—without leaving your editor or workflow.
 
