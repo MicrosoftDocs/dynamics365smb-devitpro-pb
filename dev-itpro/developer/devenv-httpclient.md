@@ -107,7 +107,7 @@ With version 27, the server certificate validation is enforced, and the only way
 
 > **Availability:** Anti-SSRF validation is fully available in [!INCLUDE [prod_short](includes/prod_short.md)] online. For on-premises, it's availability depends on the [!INCLUDE [prod_short](includes/prod_short.md)] version and these [!INCLUDE [server](includes/server.md)] settings:
 >
->|Setting|Available from update (platform version|
+>|Setting|Available from update (platform version)|
 >|-|-|
 >|`NavHttpClientAntiSSRFEnabled`|26.11 (platform 26.0.46773)<br>27.2 (platform 27.0.42799)<br>28.0 (platform 28.0.47117.0)|
 >|`NavHttpClientAntiSSRFAllowedAddresses`|26.11 (platform 26.0.46773)<br>27.2 (platform 27.0.42799)<br>28.0 (platform 28.0.47117.0)|
