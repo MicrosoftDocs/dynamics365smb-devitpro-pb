@@ -32,7 +32,7 @@ This walkthrough illustrates the following tasks:
 
 ## Prerequisites
 
-To complete this walkthrough, you'll need: 
+To complete this walkthrough, you need: 
 
 - The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant
 - Visual Studio Code
@@ -42,15 +42,15 @@ Learn more about how to get started with your first extension for [!INCLUDE[d365
 
 ## Customer Rewards extension overview
 
-This sample extension enables the ability to set up any number of reward levels and the minimum number of rewards points required to attain that level. When the sample extension is installed, customers begin to accrue one reward point per sales order. When no reward levels are set up, the customer's reward level is set to 'NONE' even though the customer may have reward points. To begin using the sample extension, the user must accept the extension terms and activate the extension by entering a valid activation code using the **Customer Rewards Assisted Setup Wizard**. Following all the steps of this walkthrough allows you to publish the extension on your tenant and create a possible new feature for your customers. 
+This sample extension enables the ability to set up any number of reward levels and the minimum number of rewards points required to attain that level. When the sample extension is installed, customers begin to accrue one reward point per sales order. When no reward levels are set up, the customer's reward level is set to 'NONE' even though the customer might have reward points. To begin using the sample extension, the user must accept the extension terms and activate the extension by entering a valid activation code using the **Customer Rewards Assisted Setup Wizard**. Following all the steps of this walkthrough allows you to publish the extension on your tenant and create a possible new feature for your customers. 
 
 ## Developing the sample Customer Rewards extension
 
-In the following section, you'll be adding the objects that are needed for the Customer Rewards extension. 
+In the following section, you're adding the objects that are needed for the Customer Rewards extension. 
 
 ### Customer Rewards table objects
 
-First, we'll get started with the table objects that store the data. 
+First, we get started with the table objects that store the data. 
 
 #### Reward Level table object
 
@@ -682,7 +682,7 @@ codeunit 50100 "Customer Rewards Install Logic"
  
 #### Customer Rewards Ext. Mgt. codeunit object
 
-The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the logic and functionality required for the Customer Rewards extension. This codeunit contains examples of how we can use events to react to specific actions or behavior that occurs within our extension. In this sample extension, there's the need to make a call to an external service or API to validate activation codes entered by the user. Typically, you may do this by defining procedures that take in the activation code and then make calls to the API. Instead of using that approach, we use events in AL. Let us look at the following code from the codeunit. 
+The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the logic and functionality required for the Customer Rewards extension. This codeunit contains examples of how we can use events to react to specific actions or behavior that occurs within our extension. In this sample extension, there's the need to make a call to an external service or API to validate activation codes entered by the user. Typically, you might do this by defining procedures that take in the activation code and then make calls to the API. Instead of using that approach, we use events in AL. Let us look at the following code from the codeunit. 
  
 ```AL
     // Activates Customer Rewards if activation code is validated successfully  
