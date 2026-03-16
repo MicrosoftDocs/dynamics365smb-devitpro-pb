@@ -12,9 +12,9 @@ ms.reviewer: solsen
 
 It's required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension, which is used as the foundation for writing a test, which you can read about in the [Test the advanced sample extension](devenv-extension-advanced-example-test.md) article. If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
 
-For information about submitting your app to Marketplace, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
+Learn more about submitting your app to Marketplace in [Checklist for submitting your app](devenv-checklist-submission.md).
 
-This walkthrough will guide you through all the steps that you must follow to create the sample extension in AL. The final result can be published, installed, and tested on your sandbox. After you have built your extension, you must write the test for it.
+This walkthrough guides you through all the steps that you must follow to create the sample extension in AL. The final result can be published, installed, and tested on your sandbox. After you have built your extension, you must write the test for it.
 
 ## About this walkthrough
 
@@ -35,12 +35,10 @@ This walkthrough illustrates the following tasks:
 To complete this walkthrough, you'll need: 
 
 - The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant
-
 - Visual Studio Code
-
 - The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code
 
-For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md). It's recommended to try out simpler examples, before starting this walkthrough.
+Learn more about how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in [Getting started](devenv-get-started.md). It's recommended to try out simpler examples, before starting this walkthrough.
 
 ## Customer Rewards extension overview
 
@@ -70,14 +68,14 @@ table 50100 "Reward Level"
             MinValue = 0; 
             NotBlank = true; 
 
-            trigger OnValidate(); 
+            trigger OnValidate() 
             var 
                 tempPoints: Integer; 
                 RewardLevel: Record "Reward Level"; 
             begin 
                 tempPoints := "Minimum Reward Points"; 
                 RewardLevel.SetRange("Minimum Reward Points", tempPoints); 
-                if RewardLevel.FindFirst then 
+                if RewardLevel.FindFirst() then 
                     Error('Minimum Reward Points must be unique'); 
             end; 
         } 
@@ -92,13 +90,13 @@ table 50100 "Reward Level"
         key("Minimum Reward Points"; "Minimum Reward Points") { } 
     } 
 
-    trigger OnInsert(); 
+    trigger OnInsert() 
     begin 
 
         Validate("Minimum Reward Points"); 
     end; 
 
-    trigger OnModify(); 
+    trigger OnModify() 
     begin 
         Validate("Minimum Reward Points"); 
     end; 
@@ -142,7 +140,8 @@ table 50101 "Activation Code Information"
 
 #### Customer Rewards Mgt. Setup table object 
 
-The following code adds a new table 50102 **Customer Rewards Mgt. Setup** for storing information about the codeunit that should be used to handle events in the extension. This enables us to mock events in our sample test. The table consists of two fields: **Primary Key** and **Customer Rewards Ext. Mgt. Codeunit ID**. 
+The following code adds a new table 50102 **Customer Rewards Mgt. Setup** for storing information about the codeunit that should be used to handle events in the extension. This enables us to mock events in our sample test. The table consists of two fields: **Primary Key** and **Customer Rewards Ext. Mgt. Codeunit ID**.
+
 ```AL
 table 50102 "Customer Rewards Mgt. Setup" 
 { 
@@ -189,7 +188,7 @@ tableextension 50100 "CustomerTable Ext." extends Customer
 
 ### Customer Rewards page objects
 
-For each page object, you can specify the target Help page that describes the feature that the page object is part of. The `ContextSensitiveHelpPage` property on the page object works together with the link that is specified in the app.json file. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+For each page object, you can specify the target Help page that describes the feature that the page object is part of. The `ContextSensitiveHelpPage` property on the page object works together with the link that is specified in the app.json file. Learn more in [Configure context-sensitive help](../help/context-sensitive-help.md).  
 
 #### Customer Rewards Wizard page object
 
@@ -270,7 +269,7 @@ page 50100 "Customer Rewards Wizard"
                             Editable = true; 
                             Caption = 'I understand and accept these terms.'; 
 
-                            trigger OnValidate(); 
+                            trigger OnValidate() 
                             begin 
                                 ShowFirstPage; 
                             end; 
@@ -347,7 +346,7 @@ page 50100 "Customer Rewards Wizard"
                 Image = PreviousRecord; 
                 InFooterBar = true; 
 
-                trigger OnAction(); 
+                trigger OnAction() 
                 begin 
                     NextStep(true); 
                 end; 
@@ -362,7 +361,7 @@ page 50100 "Customer Rewards Wizard"
                 Image = NextRecord; 
                 InFooterBar = true; 
 
-                trigger OnAction(); 
+                trigger OnAction() 
                 begin 
                     NextStep(false); 
                 end; 
@@ -377,7 +376,7 @@ page 50100 "Customer Rewards Wizard"
                 Image = NextRecord; 
                 InFooterBar = true; 
 
-                trigger OnAction(); 
+                trigger OnAction() 
                 var 
                     CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
                 begin 
@@ -402,7 +401,7 @@ page 50100 "Customer Rewards Wizard"
                 Image = Approve; 
                 InFooterBar = true; 
 
-                trigger OnAction(); 
+                trigger OnAction() 
                 begin 
                     FinishAndEnableCustomerRewards 
                 end; 
@@ -410,12 +409,12 @@ page 50100 "Customer Rewards Wizard"
         } 
     } 
 
-    trigger OnInit(); 
+    trigger OnInit() 
     begin 
         LoadTopBanners; 
     end; 
 
-    trigger OnOpenPage(); 
+    trigger OnOpenPage() 
     begin 
         Step := Step::First; 
         EnableControls; 
@@ -441,7 +440,7 @@ page 50100 "Customer Rewards Wizard"
     begin 
         if Backwards then 
             Step := Step - 1 
-        ELSE 
+        else 
             Step := Step + 1; 
         EnableControls; 
     end; 
@@ -495,11 +494,11 @@ page 50100 "Customer Rewards Wizard"
 
     local procedure LoadTopBanners()
     begin 
-        if MediaRepositoryStandard.GET('AssistedSetup-NoText-400px.png', FORMAT(CURRENTCLIENTTYPE)) 
+        if MediaRepositoryStandard.Get('AssistedSetup-NoText-400px.png', Format(CurrentClientType)) 
       then 
-            if MediaResourcesStandard.GET(MediaRepositoryStandard."Media Resources Ref") 
+            if MediaResourcesStandard.Get(MediaRepositoryStandard."Media Resources Ref") 
         then 
-                TopBannerVisible := MediaResourcesStandard."Media Reference".HASVALUE; 
+            TopBannerVisible := MediaResourcesStandard."Media Reference".HasValue; 
     end; 
 
     var 
@@ -552,7 +551,7 @@ page 50101 "Rewards Level List"
         }
     }
 
-    trigger OnOpenPage(); 
+    trigger OnOpenPage() 
     begin 
 
         if(not CustomerRewardsExtMgt.IsCustomerRewardsActivated) then 
@@ -567,7 +566,8 @@ page 50101 "Rewards Level List"
 
 ### Customer Rewards page extension objects 
 
-#### Customer card page extension object 
+#### Customer card page extension object
+
 A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service. The following page extension object extends the **Customer Card** page object by adding two field controls: **RewardLevel** and **RewardPoints** after the **Name** field control on the page. The fields are added in the layout section. 
 
 ```AL
@@ -597,7 +597,7 @@ pageextension 50100 "Customer Card Ext." extends "Customer Card"
         }
     }
 
-    trigger OnAfterGetRecord(); 
+    trigger OnAfterGetRecord() 
     var 
         CustomerRewardsMgtExt: Codeunit "Customer Rewards Ext. Mgt."; 
     begin 
@@ -610,7 +610,8 @@ pageextension 50100 "Customer Card Ext." extends "Customer Card"
 } 
 ```
  
-#### Customer list page extension object 
+#### Customer list page extension object
+
 A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service. The following page extension object extends the **Customer List** page object by adding one action control; **Reward Levels** to the **Customer** group on the page. 
 
 ```AL
@@ -624,13 +625,9 @@ pageextension 50101 "Customer List Ext." extends "Customer List"
             { 
                 ApplicationArea = All; 
                 Image = CustomerRating; 
-                Promoted = true; 
-                PromotedCategory = Process; 
-                PromotedIsBig = true;
                 ToolTip = 'Open the list of reward levels.';
 
-
-                trigger OnAction(); 
+                trigger OnAction()
                 begin 
                     if CustomerRewardsExtMgt.IsCustomerRewardsActivated then 
                         CustomerRewardsExtMgt.OpenRewardsLevelPage 
@@ -639,6 +636,13 @@ pageextension 50101 "Customer List Ext." extends "Customer List"
                 end; 
             } 
         } 
+
+        addlast(Promoted)
+        {
+            actionref("Reward Levels_Promoted"; "Reward Levels")
+            {
+            }
+        }
     } 
 
     var 
@@ -658,7 +662,7 @@ codeunit 50100 "Customer Rewards Install Logic"
     // Customer Rewards Install Logic 
     Subtype = Install; 
 
-    trigger OnInstallAppPerCompany(); 
+    trigger OnInstallAppPerCompany() 
     begin 
         SetDefaultCustomerRewardsExtMgtCodeunit; 
     end; 
@@ -723,7 +727,7 @@ The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the 
                     ActivationCodeInfo.Init; 
                     ActivationCodeInfo.ActivationCode := ActivationCode; 
                     ActivationCodeInfo."Date Activated" := Today; 
-                    ActivationCodeInfo."Expiration Date" := CALCDATE('<1Y>', Today); 
+                    ActivationCodeInfo."Expiration Date" := CalcDate('<1Y>', Today); 
                     ActivationCodeInfo.Insert; 
                 end; 
             end; 
@@ -747,7 +751,7 @@ We define an event publisher method **OnGetActivationCodeStatusFromServer** that
 
 By using events when the extension makes external calls to a service, we're able to mock the behavior of what happens when events are raised. This becomes useful when writing tests for the extension. 
 
-For more information about events, see [Events in Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]](devenv-events-in-al.md). 
+Learn more about events in [Events](devenv-events-in-al.md). 
 
 Below is the full code for this codeunit. 
 
@@ -763,7 +767,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
     begin 
-        if not ActivationCodeInfo.FindFirst then 
+        if not ActivationCodeInfo.FindFirst() then 
             exit(false); 
 
         if(ActivationCodeInfo."Date Activated" <= Today) and(Today <= ActivationCodeInfo."Expiration Date") then 
@@ -800,7 +804,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
         RewardLevelRec.SetRange("Minimum Reward Points", 0, RewardPoints); 
         RewardLevelRec.SetCurrentKey("Minimum Reward Points"); // sorted in ascending order 
 
-        if not RewardLevelRec.FindFirst then 
+        if not RewardLevelRec.FindFirst() then 
             exit; 
         MinRewardLevelPoints := RewardLevelRec."Minimum Reward Points"; 
 
@@ -808,7 +812,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
             RewardLevelRec.Reset; 
             RewardLevelRec.SetRange("Minimum Reward Points", MinRewardLevelPoints, RewardPoints); 
             RewardLevelRec.SetCurrentKey("Minimum Reward Points"); // sorted in ascending order 
-            RewardLevelRec.FindLast; 
+            RewardLevelRec.FindLast(); 
             RewardLevelTxt := RewardLevelRec.Level; 
         end; 
     end; 
@@ -855,7 +859,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
                     ActivationCodeInfo.Init; 
                     ActivationCodeInfo.ActivationCode := ActivationCode; 
                     ActivationCodeInfo."Date Activated" := Today; 
-                    ActivationCodeInfo."Expiration Date" := CALCDATE('<1Y>', Today); 
+                    ActivationCodeInfo."Expiration Date" := CalcDate('<1Y>', Today); 
                     ActivationCodeInfo.Insert; 
 
                 end; 
@@ -877,7 +881,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
 
     // Subcribes to the OnAfterReleaseSalesDoc event and increases reward points for the sell to customer in posted sales order 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Sales Document", 'OnAfterReleaseSalesDoc', '', false, false)] 
-    local procedure OnAfterReleaseSalesDocSubscriber(VAR SalesHeader: Record "Sales Header"; PreviewMode: Boolean; LinesWereModified: Boolean)
+    local procedure OnAfterReleaseSalesDocSubscriber(var SalesHeader: Record "Sales Header"; PreviewMode: Boolean; LinesWereModified: Boolean)
     var 
         Customer: Record Customer; 
     begin 
@@ -895,18 +899,19 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 
     begin 
         if CustomerRewardsExtMgtSetup.Get then 
-            exit(CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID" = CODEUNIT::"Customer Rewards Ext. Mgt."); 
+            exit(CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID" = Codeunit::"Customer Rewards Ext. Mgt."); 
         exit(false); 
     end; 
 } 
 ```
 
 ### Conclusion
-At this point, the Customer Rewards sample extension can be published and installed on your sandbox. To continue writing tests for the sample extension, see [Test the advanced sample extension](devenv-extension-advanced-example-test.md). 
 
-## Related information  
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
-[How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
-[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+At this point, the Customer Rewards sample extension can be published and installed on your sandbox. Learn more about writing tests for the sample extension in [Test the advanced sample extension](devenv-extension-advanced-example-test.md). 
+
+## Related information
+
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  
+[How to: Publish and install an extension](devenv-how-publish-and-install-an-extension-v2.md)  
+[Configure context-sensitive help](../help/context-sensitive-help.md)  
