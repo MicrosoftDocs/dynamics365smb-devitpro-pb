@@ -1031,6 +1031,7 @@ On line 36 of codeunit 50103 **Customer Rewards Test**, we can see the Assert st
 When you go into the SetDefaultCustomerRewardsExtMgtCodeunit method, codeunit 50100 Customer Rewards Install Logic, you see the change, we made to cause the test to fail. Revert it so that `CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID"` now stores `Codeunit::"Customer Rewards Ext. Mgt."`, instead of 0. Publish the updated extension and tests to your tenant and run the tests again. The test **TestOnInstallLogic** should pass now because the actual result matches what is expected.  
 
 ### Conclusion
+
 At this point, the Customer Rewards sample extension can be published and installed on your sandbox. 
 
 ## Related information
