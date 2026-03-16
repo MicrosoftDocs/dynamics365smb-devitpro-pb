@@ -16,6 +16,37 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, consult [Resources for Help and Support](../help-and-support.md).
 
+## Business Central admin shell cmdlets fail when run in PowerShell 7 remote sessions
+
+> Applies to: Business Central on‑premises v28.0
+
+### Problem
+
+When you run Business Central administration cmdlets (for example, cmdlets from the BusinessCentral.Management or Microsoft.Dynamics.Nav.Management modules) in a remote PowerShell session that uses PowerShell 7, the cmdlets fail to load or execute.
+
+You might see errors similar to the following:
+
+- mport-Module : The specified module could not be loaded
+- Method invocation failed because [type] does not contain a method
+- Unexpected failures when running administration cmdlets such as Get-NAVServerInstance or Set-NAVServerConfiguration
+
+This issue typically occurs when connecting to the Business Central server by using PowerShell remoting from a client that starts a PowerShell 7 (pwsh) session.
+
+### Impact
+
+You can’t use the Business Central Administration Shell remotely if the remote session is hosted by PowerShell 7. This affects common administration tasks such as server configuration, service restarts, and application management.
+
+### Workaround
+
+Use Windows PowerShell 5.1 for remote administration of Business Central v28.0.
+PowerShell remoting over WinRM uses Windows PowerShell 5.1 by default. To avoid this issue:
+
+1. Start Windows PowerShell (not PowerShell 7) on the client computer (computer where [!INCLUDE[server](../developer/includes/server.md)]).
+1. Connect to the Business Central server by using Enter-PSSession or Invoke-Command.
+1. Run Business Central administration cmdlets in that session.
+
+PowerShell 7 remoting (for example, via SSH or a custom WinRM endpoint) isn’t supported for Business Central administration in version 28.0.
+
 ## Evaluation company creation fails in some country/region versions
 
 > Applies to: 27.3 online
