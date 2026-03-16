@@ -252,7 +252,7 @@ Test pages mimic actual pages, but don't present any UI on a client computer. Te
 
 ### UI handlers
 
-To create tests that can be automated, you must handle cases when user interaction is requested by code that's being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a test method that has a ConfirmHandler handles CONFIRM method calls. If code that's being tested calls the CONFIRM method, then the ConfirmHandler method is called instead of the CONFIRM method. You write code in the ConfirmHandler method to verify that the expected question is displayed by the CONFIRM method and you write AL code to return the relevant reply. The following table describes the available UI handlers.  
+To create tests that can be automated, you must handle cases when user interaction is requested by code that's being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a test method that has a ConfirmHandler handles Confirm method calls. If code that's being tested calls the Confirm method, then the ConfirmHandler method is called instead of the Confirm method. You write code in the ConfirmHandler method to verify that the expected question is displayed by the Confirm method and you write AL code to return the relevant reply. The following table describes the available UI handlers.  
 
 |Function Type|Syntax example|Purpose|
 |-------------|-------|-------|
@@ -266,9 +266,9 @@ To create tests that can be automated, you must handle cases when user interacti
 
 You must create a specific handler for each page that you want to handle. Any unhandled UI in the test methods of the test codeunit causes a failure of the test.  
 
-### ASSERTERROR statement
+### asserterror statement
 
-When you test your extension, you should test that your code performs as expected under both successful and failing conditions. These are called positive and negative tests. To test how your extension performs under failing conditions, you can use the ASSERTERROR keyword. The ASSERTERROR keyword specifies that an error is expected at run time in the statement that follows the ASSERTERROR keyword. If a simple or compound statement that follows the ASSERTERROR keyword causes an error, then execution successfully continues to the next statement in the test function. If a statement that follows the ASSERTERROR keyword doesn't cause an error, then the ASSERTERROR statement itself fails with an error, and the test function that's running produces a FAILURE result. 
+When you test your extension, you should test that your code performs as expected under both successful and failing conditions. These are called positive and negative tests. To test how your extension performs under failing conditions, you can use the `asserterror` keyword. The `asserterror` keyword specifies that an error is expected at run time in the statement that follows the `asserterror` keyword. If a simple or compound statement that follows the `asserterror` keyword causes an error, then execution successfully continues to the next statement in the test function. If a statement that follows the `asserterror` keyword doesn't cause an error, then the `asserterror` statement itself fails with an error, and the test function that's running produces a FAILURE result. 
 
 The 50103 **Customer Rewards Test** codeunit contains all the tests for the Customer Rewards extension. For each test method, we follow the following pattern: 
 
@@ -292,13 +292,14 @@ And finally, we verify using the **Assert** codeunit from the Application Test T
 
 This is one of the tests that focus on the **Customer Rewards Assisted Setup Guide**. The test verifies that an error message is displayed when a not valid activation code is entered in the wizard.  
 
-First, **Initialize** is called to clean up previous state and bind our mock subscriber methods to the test codeunit. Additionally, we set our MockActivationResponse to return FAILURE since we are mocking a not valid validation of the activation code. We also use the **Library - Lower Permissions** codeunit to restrict the users permission to one that doesn't have the SUPER permission.   
+First, **Initialize** is called to clean up previous state and bind our mock subscriber methods to the test codeunit. Additionally, we set our MockActivationResponse to return FAILURE since we are mocking a not valid validation of the activation code. We also use the **Library - Lower Permissions** codeunit to restrict the users permission to one that doesn't have the SUPER permission.
 
 Next, we open the **Customer Rewards Wizard** by using a Customer Rewards Wizard, the TestPage object is used to mimic the actual page. On the page, the activation code is entered and then the Activate action is invoked.
 
 And finally, we verify that an error message is displayed because the validation of the activation code failed. If no other error is reported, then we're also able to conclude that the functionality in this test can be run without the need for a SUPER permission.  
 
-### TestRewardLevelsActionExistsOnCustomerListPage Test 
+### TestRewardLevelsActionExistsOnCustomerListPage Test
+
 This test verifies that the new **Reward Levels** action exists on the Customer List page. 
 
 ### TestCustomerHasBronzeRewardLevelAfterPostedSalesOrders Test 
