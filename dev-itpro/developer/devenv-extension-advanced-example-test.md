@@ -2,7 +2,7 @@
 title: Test the advanced sample extension
 description: Includes test code for the advanced example extension.
 author: SusanneWindfeldPedersen
-ms.date: 12/03/2024
+ms.date: 03/16/2026
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
@@ -13,15 +13,15 @@ ms.custom: sfi-image-nochange
 
 This walkthrough builds on the advanced sample extension, which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
 
-For information about submitting your app to Marketplace, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
+Learn more about submitting your app to Marketplace in [Checklist for submitting your app](devenv-checklist-submission.md).
 
 ## Prerequisites
 
 To complete this walkthrough, you need:
 
 - Dynamics 365 Business Central Docker container-based development environment
-For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md) and [Running a Container-Based Development Environment](devenv-running-container-development.md)    
-- [Visual Studio Code](https://code.visualstudio.com/Download)   
+Learn more in [Get started with the container sandbox development environment](devenv-get-started-container-sandbox.md) and [Running a container-based development environment](devenv-running-container-development.md)  
+- [Visual Studio Code](https://code.visualstudio.com/Download)  
 - The [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al) for Visual Studio Code
 
 ## Identify the areas of the extension that need to be tested 
@@ -30,7 +30,7 @@ Before writing tests for your extension, you need to identify all the areas of t
 
 - Ensure that your tests cover all the setup and usage scenario steps found in the [user scenario document](../compliance/apptest-userscenario.md). This includes Assisted Setup, pages, fields, actions, events, and other controls and objects used by your extension.  
 - The CRONUS demo company is used in this walkthrough. If your app requires setup within the core product or any more data, remember to include that in your tests. 
-- As part of your tests, remember to include tests that verify that the extension works as expected for **a user that does not have SUPER permissions**. For more information, see [Special Permission Sets](../administration/administration-special-permission-sets.md).
+- As part of your tests, remember to include tests that verify that the extension works as expected for **a user that does not have SUPER permissions**. Learn more in [Special permission sets](../administration/administration-special-permission-sets.md).
 - Your tests **should not make any requests to an external service**. Mock your external calls to prevent this from happening. 
 
 In the sample test, we consider the following: 
@@ -90,7 +90,7 @@ Our CustomerRewardsTest project is referencing objects from the CustomerRewards 
 }
 ```
 
-For more information, see [JSON Files](devenv-json-files.md). 
+Learn more in [JSON files](devenv-json-files.md). 
 
 After setting the `dependencies` value, you are prompted to download the symbols from the base project/package if they aren't present.  
 
@@ -215,12 +215,12 @@ codeunit 50102 MockCustomerRewardsExtMgt
 
             if(JsonRepsonse.SelectToken('ActivationResponse', Result)) then begin 
                 if(Result.AsValue().AsText() = 'Success') then begin 
-                    if ActivationCodeInfo.FindFirst then 
+                    if ActivationCodeInfo.FindFirst() then 
                         ActivationCodeInfo.Delete; 
                         ActivationCodeInfo.Init; 
                         ActivationCodeInfo.ActivationCode := ActivationCode; 
                         ActivationCodeInfo."Date Activated" := Today; 
-                        ActivationCodeInfo."Expiration Date" := CALCDATE('<1Y>', Today); 
+                        ActivationCodeInfo."Expiration Date" := CalcDate('<1Y>', Today); 
                         ActivationCodeInfo.Insert; 
                 end; 
             end; 
@@ -411,7 +411,7 @@ codeunit 50103 "Customer Rewards Test"
 
         // [Then] Error message displayed 
         asserterror CustomerRewardsWizardTestPage.ActionActivate.Invoke; 
-        Assert.AreEqual(GETLASTERRORTEXT, 'Activation code cannot be blank.', 'Invalid error message.'); 
+        Assert.AreEqual(GetLastErrorText(), 'Activation code cannot be blank.', 'Invalid error message.'); 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
     end; 
 
@@ -437,7 +437,7 @@ codeunit 50103 "Customer Rewards Test"
 
         // [Then] Error message displayed 
         asserterror CustomerRewardsWizardTestPage.ActionActivate.Invoke; 
-        Assert.AreEqual(GETLASTERRORTEXT, 'Activation code must have 14 digits.', 'Invalid error message.'); 
+        Assert.AreEqual(GetLastErrorText(), 'Activation code must have 14 digits.', 'Invalid error message.'); 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
     end; 
 
@@ -463,7 +463,7 @@ codeunit 50103 "Customer Rewards Test"
 
         // [Then] Error message displayed 
         asserterror CustomerRewardsWizardTestPage.ActionActivate.Invoke; 
-        Assert.AreEqual(GETLASTERRORTEXT, 'Activation code must have 14 digits.', 'Invalid error message.'); 
+        Assert.AreEqual(GetLastErrorText(), 'Activation code must have 14 digits.', 'Invalid error message.'); 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
     end; 
 
@@ -490,7 +490,7 @@ codeunit 50103 "Customer Rewards Test"
 
         // [Then] Error message displayed 
         asserterror CustomerRewardsWizardTestPage.ActionActivate.Invoke; 
-        Assert.AreEqual(GETLASTERRORTEXT, 'Activation failed. Please check the activtion code you entered.', 'Invalid error message.'); 
+        Assert.AreEqual(GetLastErrorText(), 'Activation failed. Please check the activtion code you entered.', 'Invalid error message.'); 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
     end; 
 
@@ -540,7 +540,7 @@ codeunit 50103 "Customer Rewards Test"
         // [When] User opens Reward Level Page 
         // [Then] Error message      
         asserterror RewardLevelListTestPage.OpenView; 
-        Assert.AreEqual(GETLASTERRORTEXT, 'Customer Rewards is not activated', 'Invalid error message.'); 
+        Assert.AreEqual(GetLastErrorText(), 'Customer Rewards is not activated', 'Invalid error message.'); 
     end; 
 
     [Test] 
@@ -878,7 +878,7 @@ codeunit 50103 "Customer Rewards Test"
         VerifyCustomerRewardLevel(CustomerCardTestPage.RewardLevel.Value, GoldLevelTxt); 
     end; 
 
-    local procedure OpenCustomerRewardsWizardActivationPage(VAR CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard")
+    local procedure OpenCustomerRewardsWizardActivationPage(var CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard")
     begin 
         CustomerRewardsWizardTestPage.OpenView; 
         CustomerRewardsWizardTestPage.EnableFeature.SetValue(true); 
@@ -908,7 +908,7 @@ codeunit 50103 "Customer Rewards Test"
         ActivationCodeInfo.Init; 
         ActivationCodeInfo.ActivationCode := '12345678901234'; 
         ActivationCodeInfo."Date Activated" := Today; 
-        ActivationCodeInfo."Expiration Date" := CALCDATE('<1Y>', Today); 
+        ActivationCodeInfo."Expiration Date" := CalcDate('<1Y>', Today); 
         ActivationCodeInfo.Insert; 
     end; 
 
@@ -922,8 +922,8 @@ codeunit 50103 "Customer Rewards Test"
     begin 
         LibrarySales.CreateSalesHeader(SalesHeader, SalesHeader."Document Type"::Order, SellToCustomerNo); 
         LibrarySales.CreateSalesLine(SalesLine, SalesHeader, SalesLine.Type::Item, '', 1); 
-        SalesLine.VALIDATE("Unit Price", LibraryRandom.RandIntInRange(5000, 10000)); 
-        SalesLine.MODIFY(TRUE); 
+        SalesLine.Validate("Unit Price", LibraryRandom.RandIntInRange(5000, 10000)); 
+        SalesLine.Modify(true); 
         LibrarySales.PostSalesDocument(SalesHeader, true, true); 
     end; 
 
@@ -1031,9 +1031,9 @@ When you go into the SetDefaultCustomerRewardsExtMgtCodeunit method, codeunit 50
 ### Conclusion
 At this point, the Customer Rewards sample extension can be published and installed on your sandbox. 
 
-## Related information  
-[Developing Extensions](devenv-dev-overview.md)  
-[Get Started with AL](devenv-get-started.md)  
-[How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
-[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md) 
+## Related information
+
+[Developing extensions](devenv-dev-overview.md)  
+[Get started with AL](devenv-get-started.md)  
+[How to: Publish and install an extension](devenv-how-publish-and-install-an-extension-v2.md)  
 
