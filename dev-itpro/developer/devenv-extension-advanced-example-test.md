@@ -28,7 +28,7 @@ Learn more in [Get started with the container sandbox development environment](d
 
 Before writing tests for your extension, you need to identify all the areas of the extension that need to be tested.  
 
-- Ensure that your tests cover all the setup and usage scenario steps found in the [user scenario document](../compliance/apptest-userscenario.md). This includes Assisted Setup, pages, fields, actions, events, and other controls and objects used by your extension.  
+- Ensure that your tests cover the setup and usage scenario steps found in the [user scenario document](../compliance/apptest-userscenario.md). This includes Assisted Setup, pages, fields, actions, events, and other controls and objects used by your extension.  
 - The CRONUS demo company is used in this walkthrough. If your app requires setup within the core product or any more data, remember to include that in your tests. 
 - As part of your tests, remember to include tests that verify that the extension works as expected for **a user that does not have SUPER permissions**. Learn more in [Special permission sets](../administration/administration-special-permission-sets.md).
 - Your tests **should not make any requests to an external service**. Mock your external calls to prevent this from happening. 
@@ -92,11 +92,11 @@ Our CustomerRewardsTest project is referencing objects from the CustomerRewards 
 
 Learn more in [JSON files](devenv-json-files.md). 
 
-After setting the `dependencies` value, you are prompted to download the symbols from the base project/package if they aren't present.  
+After setting the `dependencies` value, you're prompted to download the symbols from the base project/package if they aren't present.  
 
 ## Application Test Toolkit
 
-We are using the Application Test Toolkit to automate and run the tests that we write. The toolkit includes: 
+We're using the Application Test Toolkit to automate and run the tests that we write. The toolkit includes: 
 
 - Codeunits with test functions to test various application areas. 
 
@@ -159,7 +159,7 @@ We can now begin writing the tests for the extension.
 
 ### MockCustomerRewardsExtMgt codeunit object 
 
-The 50102 **MockCustomerRewardsExtMgt** codeunit contains all the code that mocks the process of validating the activation code for Customer Rewards. Because we can't make requests to external services in the tests, we define a subscriber method **MockOnGetActivationCodeStatusFromServerSubscriber** for handling the **OnGetActivationCodeStatusFromServer** event when it's raised in the **Customer Rewards Ext. Mgt.** codeunit. The **EventSubscriberInstance** property for this codeunit is set to **Manual** so that we can control when the subscriber function is called. We want the subscriber method to be called only during our tests. We also define a Setup procedure that modifies the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table so that the actual **OnGetActivationCodeStatusFromServerSubscriber** won't handle **OnGetActivationCodeStatusFromServer** event when it's raised. 
+The 50102 **MockCustomerRewardsExtMgt** codeunit contains the code that mocks the process of validating the activation code for Customer Rewards. Because we can't make requests to external services in the tests, we define a subscriber method **MockOnGetActivationCodeStatusFromServerSubscriber** for handling the **OnGetActivationCodeStatusFromServer** event when it's raised in the **Customer Rewards Ext. Mgt.** codeunit. The **EventSubscriberInstance** property for this codeunit is set to **Manual** so that we can control when the subscriber function is called. We want the subscriber method to be called only during our tests. We also define a Setup procedure that modifies the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table so that the actual **OnGetActivationCodeStatusFromServerSubscriber** won't handle **OnGetActivationCodeStatusFromServer** event when it's raised. 
 
 ```AL
 codeunit 50102 MockCustomerRewardsExtMgt 
@@ -243,15 +243,16 @@ codeunit 50102 MockCustomerRewardsExtMgt
 
 ## Customer Rewards Test codeunit object
 
-A test codeunit must have its **Subtype** property set to **Test** and the test methods must be decorated with the `[Test]` attribute. When a test codeunit runs, it executes the **OnRun** trigger, and then executes each test method in the codeunit. By default, each test function runs in a separate database transaction, but you can use the **TransactionModel** attribute on test methods to control the transactional behavior. The outcome of a test method is either SUCCESS or FAILURE. If any error is raised by either the code that is being tested or the test code, then the outcome is FAILURE and the error is included in the results log file. Even if the outcome of one test method is FAILURE, the next test methods are still executed. 
+A test codeunit must have its **Subtype** property set to **Test** and the test methods must be decorated with the `[Test]` attribute. When a test codeunit runs, it executes the **OnRun** trigger, and then executes each test method in the codeunit. By default, each test function runs in a separate database transaction, but you can use the **TransactionModel** attribute on test methods to control the transactional behavior. The outcome of a test method is either SUCCESS or FAILURE. If any error is raised by either the code that's being tested or the test code, then the outcome is FAILURE and the error is included in the results log file. Even if the outcome of one test method is FAILURE, the next test methods are still executed. 
 
 In addition to the Application Test Toolkit, the following features are available to help you test your extension: 
 
 ### Test pages 
 Test pages mimic actual pages, but don't present any UI on a client computer. Test pages let you test the code on a page by using AL to simulate user interaction with the page. You can access the fields on a page and the properties of a page or a field by using the dot notation. You can open and close test pages, perform actions on the test page, and navigate around the test page by using AL methods. 
 
-### UI handlers 
-To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a test method that has a ConfirmHandler handles CONFIRM method calls. If code that is being tested calls the CONFIRM method, then the ConfirmHandler method is called instead of the CONFIRM method. You write code in the ConfirmHandler method to verify that the expected question is displayed by the CONFIRM method and you write AL code to return the relevant reply. The following table describes the available UI handlers.  
+### UI handlers
+
+To create tests that can be automated, you must handle cases when user interaction is requested by code that's being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a test method that has a ConfirmHandler handles CONFIRM method calls. If code that's being tested calls the CONFIRM method, then the ConfirmHandler method is called instead of the CONFIRM method. You write code in the ConfirmHandler method to verify that the expected question is displayed by the CONFIRM method and you write AL code to return the relevant reply. The following table describes the available UI handlers.  
 
 |Function Type|Syntax example|Purpose|
 |-------------|-------|-------|
@@ -267,7 +268,7 @@ You must create a specific handler for each page that you want to handle. Any un
 
 ### ASSERTERROR statement
 
-When you test your extension, you should test that your code performs as expected under both successful and failing conditions. These are called positive and negative tests. To test how your extension performs under failing conditions, you can use the ASSERTERROR keyword. The ASSERTERROR keyword specifies that an error is expected at run time in the statement that follows the ASSERTERROR keyword. If a simple or compound statement that follows the ASSERTERROR keyword causes an error, then execution successfully continues to the next statement in the test function. If a statement that follows the ASSERTERROR keyword doesn't cause an error, then the ASSERTERROR statement itself fails with an error, and the test function that is running produces a FAILURE result. 
+When you test your extension, you should test that your code performs as expected under both successful and failing conditions. These are called positive and negative tests. To test how your extension performs under failing conditions, you can use the ASSERTERROR keyword. The ASSERTERROR keyword specifies that an error is expected at run time in the statement that follows the ASSERTERROR keyword. If a simple or compound statement that follows the ASSERTERROR keyword causes an error, then execution successfully continues to the next statement in the test function. If a statement that follows the ASSERTERROR keyword doesn't cause an error, then the ASSERTERROR statement itself fails with an error, and the test function that's running produces a FAILURE result. 
 
 The 50103 **Customer Rewards Test** codeunit contains all the tests for the Customer Rewards extension. For each test method, we follow the following pattern: 
 
@@ -281,7 +282,7 @@ Let us look some of the sample tests.
 
 ### TestOnInstallLogic Test
 
-This test verifies that the logic we defined in our Install codeunit works as expected. We first call a helper method **Initialize** which initializes and cleans up any objects that will be needed for the test. The Initialize method also binds our mock codeunit **MockCustomerRewardsExtMgt** to our test codeunit so that any events raised during our test can be handled by the subscriber methods specified in our mock codeunit. 
+This test verifies that the logic we defined in our Install codeunit works as expected. We first call a helper method **Initialize** which initializes and cleans up any objects that are needed for the test. The Initialize method also binds our mock codeunit **MockCustomerRewardsExtMgt** to our test codeunit so that any events raised during our test can be handled by the subscriber methods specified in our mock codeunit. 
 
 Next, we invoke the **SetDefaultCustomerRewardsExtMgtCodeunit** method, which is the method defined in our Install codeunit. 
 
@@ -301,7 +302,7 @@ And finally, we verify that an error message is displayed because the validation
 This test verifies that the new **Reward Levels** action exists on the Customer List page. 
 
 ### TestCustomerHasBronzeRewardLevelAfterPostedSalesOrders Test 
-This is one of the tests that considers the interaction between Customers, Sales Orders, and Reward Levels. This test verifies that when two sales orders are made for a new customer, that customer accrues two reward points. Consequently, they attain the corresponding reward level for two points, which is the BRONZE reward level. 
+This is one of the tests that considers the interaction between Customers, Sales Orders, and Reward Levels. This test verifies that when two sales orders are made for a new customer, that customer accrues two reward points. So, they attain the corresponding reward level for two points, which is the BRONZE reward level. 
 
 First, the test is initialized by calling Initialize. The extension is activated and then a BRONZE reward level for two points or more is set up in the **Reward Level** table. 
 
@@ -309,7 +310,7 @@ Next, a new **Customer** is created using the **LibrarySales** codeunit from the
 
 Finally, to verify that the customer got the correct reward points and level, we open the **Customer Card** using its corresponding TestPage and then verify the values in the **Reward Points** and **Reward Level** fields. 
 
-There are many more areas that we look at in the sample test. See the full codeunit below for the rest of the tests. 
+There are many more areas that we look at in the sample test. See the full codeunit in the following for the rest of the tests. 
 
 ```AL
 codeunit 50103 "Customer Rewards Test"
@@ -983,7 +984,7 @@ You can now see all the test methods from your test codeunits.
 
 ## Failing tests
 
-Let us look at what to do if you have a failing test. To create a failing test, we'll modify the **SetDefaultCustomerRewardsExtMgtCodeunit** method in codeunit 50100 **Customer Rewards Install Logic** to the following: 
+Let us look at what to do if you have a failing test. To create a failing test, we modify the **SetDefaultCustomerRewardsExtMgtCodeunit** method in codeunit 50100 **Customer Rewards Install Logic** to the following: 
 
 ```AL
 procedure SetDefaultCustomerRewardsExtMgtCodeunit()
@@ -1026,7 +1027,7 @@ On line 36 of codeunit 50103 **Customer Rewards Test**, we can see the Assert st
 
 ![Customer Rewards Install Logic.](media/CustRewardsInstallLogic.png)
 
-When you go into the SetDefaultCustomerRewardsExtMgtCodeunit method, codeunit 50100 Customer Rewards Install Logic, you will see the change, we made to cause the test to fail. Revert it so that `CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID"` now stores `Codeunit::"Customer Rewards Ext. Mgt."`, instead of 0. Publish the updated extension and tests to your tenant and run the tests again. The test **TestOnInstallLogic** should pass now because the actual result matches what is expected.  
+When you go into the SetDefaultCustomerRewardsExtMgtCodeunit method, codeunit 50100 Customer Rewards Install Logic, you see the change, we made to cause the test to fail. Revert it so that `CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID"` now stores `Codeunit::"Customer Rewards Ext. Mgt."`, instead of 0. Publish the updated extension and tests to your tenant and run the tests again. The test **TestOnInstallLogic** should pass now because the actual result matches what is expected.  
 
 ### Conclusion
 At this point, the Customer Rewards sample extension can be published and installed on your sandbox. 
