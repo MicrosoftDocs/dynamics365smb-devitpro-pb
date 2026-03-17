@@ -62,6 +62,13 @@ landingContent:
       - text: Instruction keywords for an agent
         url: ai-development-toolkit-instruction-keywords.md
 # Card
+  - title: Videos
+    linkLists:
+    - linkListType: video
+      links:
+      - text: Design and code agents in Business Central (video)
+        url: https://aka.ms/bcdesignagents
+# Card
   - title: Develop with the AI development toolkit
     linkLists:
     - linkListType: reference
@@ -78,6 +85,8 @@ landingContent:
         url: ../developer/devenv-page-type-configuration-dialog.md
       - text: Work with agents in AL
         url: ai-development-toolkit-tasks-api.md
+      - text: Convert an agent created in the UI to code
+        url: ai-development-toolkit-export-import.md
 # Card
   - title: Best practices
     linkLists:

@@ -12,7 +12,7 @@ ms.reviewer: jswymer
 
 # Managing Apps
 
-A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is built as a collection of apps. These apps include Microsoft and non-Microsoft apps, for example, apps from AppSource. The apps work together to provide customers with a broad set of features to address their various business, market, and industry needs.
+A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is built as a collection of apps. These apps include Microsoft and non-Microsoft apps, for example, apps from Marketplace. The apps work together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
 Updates are frequently made available for these apps by Microsoft, partners, and ISVs. App updates add new features and fix known problems. To keep your environment up to date and running smoothly, you should check for and install the latest updates regularly.
 
@@ -31,7 +31,7 @@ Open the **Manage Apps** page from the environment details page by selecting **E
 The **Manage Apps** lists all the apps installed on the environment and indicates whether updates are available. When first opened, the system starts checking for updates for Global apps. Wait for this operation to complete.
 
    > [!Important]
-   > When an ISV [provides a new version of their AppSource app](appsource.md), Microsoft validates it against the latest, currently available version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] at the time. If the new app version passes validation, it's made available for the customers' environments that are running on that version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and greater. So if an AppSource app update isn't in the list, your environment might not yet be running on the version the app was registered for.
+   > When an ISV [provides a new version of their Marketplace app](appsource.md), Microsoft validates it against the latest, currently available version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] at the time. If the new app version passes validation, it's made available for the customers' environments that are running on that version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and greater. So if a Marketplace app update isn't in the list, your environment might not yet be running on the version the app was registered for.
 
 When completed, if an update is available for an app, there are two indications:
 
@@ -98,7 +98,7 @@ You can't, however, install a new app from the **Manage App** page. Use the **Ex
 
 Installed apps always update when the environment updates to a new major or minor version if the app update is required for the Business Central version the environment is updating to. For example, an app update occurs when the app developer indicates that the installed version of the app isn't compatible with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version your environment is updating to. Additionally, all apps update to the latest version when an environment updates to a new major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-Administrators can control whether apps installed on the environment should be updated when [!INCLUDE[prod_short](../developer/includes/prod_short.md)] updates to a new minor version by using the **Apps Update Cadence** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Choose **With minor and major updates** for **Apps Update Cadence** on the Environment Details page. This video gives an overview how you can control when AppSource apps update automatically on your environment:
+Administrators can control whether apps installed on the environment should be updated when [!INCLUDE[prod_short](../developer/includes/prod_short.md)] updates to a new minor version by using the **Apps Update Cadence** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Choose **With minor and major updates** for **Apps Update Cadence** on the Environment Details page. This video gives an overview how you can control when Marketplace apps update automatically on your environment:
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=a3ed0192-c90b-4987-bbb7-1233d74df5d3]
 
@@ -115,7 +115,7 @@ When you install an app update, the new app version is published, synchronized, 
 
 When the installation of an app update fails, the **Available Update Action** column displays the **Update failed** action. Select this action to get more information. The **App Update Details** pane provides some details about update and what might have caused the failure.
 
-Sometimes the update could fail because of a transient problem. Select **Retry** to try to install the update again. If the installation continues to fail, contact your ISV. You can find the support details of each ISV on their app page on AppSource. Contact Microsoft support if the app publisher is **Microsoft**.
+Sometimes the update could fail because of a transient problem. Select **Retry** to try to install the update again. If the installation continues to fail, contact your ISV. You can find the support details of each ISV on their app page on Marketplace. Contact Microsoft support if the app publisher is **Microsoft**.
 
    > [!TIP]
    > When reporting issues to Microsoft Support, always provide the **Operation ID** displayed in the error message. This information helps expedite the investigations.
@@ -130,22 +130,22 @@ When uninstalling an app, it's possible to delete application data as well. This
 
 If other apps depend on the app that is being uninstalled, those dependent apps also have to be uninstalled. The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] lists dependent apps in the App Uninstall pane and ask to confirm that these apps are to be uninstalled as well. 
 
-## Preview versions of AppSource apps
+## Preview versions of Marketplace apps
 
 > [!Note]
-> Preview versions of AppSource apps are supported for Sandbox environments on version 23.0 and higher.
+> Preview versions of Marketplace apps are supported for Sandbox environments on version 23.0 and higher.
 
-The publisher of an AppSource app might run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. Preview versions of apps behave differently from public versions of apps in the following ways:
+The publisher of a Marketplace app might run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. Preview versions of apps behave differently from public versions of apps in the following ways:
 
-- Preview versions of AppSource Apps can only be installed using the URL containing the `PreviewKey` parameter that the app publisher can generate.
+- Preview versions of Marketplace Apps can only be installed using the URL containing the `PreviewKey` parameter that the app publisher can generate.
 - It's not possible to install a version of an app that is lower than the latest publicly available version of that app for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version the Sandbox environment is on. Hence, when installing an app using the URL with the `PreviewKey` parameter, the highest compatible publicly available version of that app might be installed instead, if there's no higher preview version available.
-- Preview versions of AppSource Apps can only be installed on sandbox environments. It's not possible to copy a sandbox environment to a production environment if the sandbox environment has a preview version of an AppSource app installed. Hence, if you want to copy the sandbox environment to a production environment, you must first either update installed preview apps to public versions or uninstall preview apps.
-- Preview versions of AppSource Apps can be updated to a higher preview or public version. Updating to a higher preview version is only possible using the URL containing the `PreviewKey` parameter. Updating to a higher public version of a preview app can be done from the **Manage Apps** page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+- Preview versions of Marketplace Apps can only be installed on sandbox environments. It's not possible to copy a sandbox environment to a production environment if the sandbox environment has a preview version of a Marketplace app installed. Hence, if you want to copy the sandbox environment to a production environment, you must first either update installed preview apps to public versions or uninstall preview apps.
+- Preview versions of Marketplace Apps can be updated to a higher preview or public version. Updating to a higher preview version is only possible using the URL containing the `PreviewKey` parameter. Updating to a higher public version of a preview app can be done from the **Manage Apps** page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 - Updating a Preview version of an app triggers a ForceSync. This operation allows the app publisher to make breaking changes between preview versions. However, it can lead to data loss if data is written in tables removed in the preview app version you're updating to.
 - Installed Preview versions automatically update to the latest publicly available version with the **App Update Cadence** set for the environment if the latest publicly available version is a higher version than the installed Preview version.
 - It's not visible in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] or on the **Extension Management** page in the environment that an installed version of an app is a preview version. [Extension Lifecycle Trace Telemetry signals](./telemetry-extension-lifecycle-trace.md) **LC0010** and **LC00022** emitted to the Application Insights resource set up for the environment on which the app is being installed include customDimensions `extensionAvailability` and `extensionPreviewKeyProvided` to indicate whether the signal relates to Preview or Public version of an app.
 
-[Learn more about Preview versions of AppSource Apps](../developer/devenv-checklist-submission-app-preview.md).
+[Learn more about Preview versions of Marketplace Apps](../developer/devenv-checklist-submission-app-preview.md).
 
 ## Related information
 

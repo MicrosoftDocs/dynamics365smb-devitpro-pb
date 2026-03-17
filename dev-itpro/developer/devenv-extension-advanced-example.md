@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 It's required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension, which is used as the foundation for writing a test, which you can read about in the [Test the advanced sample extension](devenv-extension-advanced-example-test.md) article. If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
 
-For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
+For information about submitting your app to Marketplace, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
 This walkthrough will guide you through all the steps that you must follow to create the sample extension in AL. The final result can be published, installed, and tested on your sandbox. After you have built your extension, you must write the test for it.
 

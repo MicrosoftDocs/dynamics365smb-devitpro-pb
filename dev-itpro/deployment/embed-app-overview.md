@@ -61,7 +61,7 @@ The partner can control which third party apps can be installed for their [!INCL
 
 - Safe listing of the 3rd party apps - no other apps will be possible to install, except the ones explicitly approved by the partner  
 - App install/uninstall controlled by the partner  
-- The partner can choose to allow a customer to install other extensions from the AppSource, but this will be an explicit partner decision, not the default behavior  
+- The partner can choose to allow a customer to install other extensions from the Marketplace, but this will be an explicit partner decision, not the default behavior  
 
 ### Code-customizations of the base application
 

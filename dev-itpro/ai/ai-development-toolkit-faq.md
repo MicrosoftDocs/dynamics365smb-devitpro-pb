@@ -165,7 +165,7 @@ Customer service chatbots, HR support agents, IT helpdesk automation.
 - Need **full control** over the implementation and logic
 - Require **tight integration** with Business Central objects and events
 - Must meet **specific performance** or **security** requirements
-- Building **commercial solutions** for AppSource
+- Building **commercial solutions** for Marketplace
 - Need **version control** and **ALM** (Application Lifecycle Management)
 
 **Example scenarios:**  

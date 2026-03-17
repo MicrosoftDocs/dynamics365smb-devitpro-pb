@@ -182,7 +182,7 @@ Replace `Name` with descriptive text that you want to use to identify the key. R
 In a table object, the first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
 
 > [!TIP]
-> Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 18, it's possible to create a table extension that only holds key definitions. You can utilize this to add keys to tables in the base application or in AppSource extensions, where you don't have ownership of the table definitions. 
+> Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 18, it's possible to create a table extension that only holds key definitions. You can utilize this to add keys to tables in the base application or in Marketplace extensions, where you don't have ownership of the table definitions. 
 
 The following code illustrates simple examples of a table object and table extension object.
 
