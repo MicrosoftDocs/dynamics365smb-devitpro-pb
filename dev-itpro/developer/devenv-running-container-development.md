@@ -22,7 +22,7 @@ Install Docker and configure it for Windows Containers.
     - For Windows Desktop, use [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) - (option to qualify for free SKU - license may be required).
     - For Windows Server, use [Mirantis Container Runtime](https://docs.mirantis.com/mcr/23.0/overview.html) - (option to qualify for free SKU - license may be required).
     - An alternative is to use Docker Engine, which is open source and community-driven.
-        
+
 2. For Windows Desktop, switch Docker to use Windows containers. By default Docker uses Linux containers.
 
     To switch to Windows containers, in the Taskbar, right-click the Docker icon ![Docker](media/docker-icon.png "Docker icon"), and then select **Switch to Windows Containers**. For more information, see [Switch between Windows and Linux containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
@@ -36,14 +36,24 @@ To support the use of containers, optional PowerShell scripts are available, whi
 
 1. Start PowerShell as an administrator. 
 
+   > [!IMPORTANT]
+   > For 2026 release wave 1 (version 28.0) containers, use Windows PowerShell 5.1 if you expect to run management functions such as `Restart-BcContainer`, `Get-BcContainerAppInfo`, and `Publish-BcContainerApp`. These functions reley on Business Central admin modules. PowerShell 7 has a known issue where Business Central admins modules fail to load, causing module import errors. Learn more in [Known issues](../upgrade/known-issues.md).
 
-```install-module BCContainerHelper -force```
+1. Run the following command to install the BCContainerHelper module.
 
-To see which functions are available in the BCContainerHelper module use the following command:
+   ```powershell
+   install-module BCContainerHelper -force
+   ```
 
-```Write-BCContainerHelperWelcomeText```
+1. To get a list of functions are available in the BCContainerHelper module, run the following command:
 
-To get started quickly, run the following command from the BCContainerHelper module:
+   ```powershell
+   Write-BCContainerHelperWelcomeText
+   ```
+
+## Quick start: Create new container
+
+To get started quickly with a sandbox conatiner on the latest Business Central version, run the following command from the BCContainerHelper module:
 
 ```powershell
 $artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select Latest

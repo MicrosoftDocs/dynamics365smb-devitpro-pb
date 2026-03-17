@@ -16,50 +16,31 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, consult [Resources for Help and Support](../help-and-support.md).
 
-## Business Central admin shell cmdlets fail in PowerShell 7 remote sessions
+## Business Central admin shell modules fail in PowerShell 7 remote sessions
 
-> Applies to: Business Central on‑premises v28.0
+> Applies to: Business Central v28.0 on‑premises and container-based environments on Docker
 
 ### Problem
 
-When you run  [!INCLUDE[adminshell](../developer/includes/adminshell.md)] cmdlets (for example, cmdlets from the Microsoft.BusinessCentral.Management module) in a remote PowerShell session that uses PowerShell 7, the cmdlets fail to load or execute.
+PowerShell 7 has a known issue where [!INCLUDE[adminshell](../developer/includes/adminshell.md)] modules fail to load in remote PowerShell sessions. This issue affects both on‑premises deployments and container-based environments.
 
-You might get errors similar to the following:
+- On‑premises deployments
+
+   You get an error when you try to import the .[!INCLUDE[adminshell](../developer/includes/adminshell.md)] modules in a remote session. Because the module fails to load, dependent cmdlets can't be invoked.
+
+- Container-based environments
+
+   You get errors when running BCContainerHelper management functions such as  `Restart-BcContainer`, `Get-BcContainerAppInfo`, and `Publish-BcContainerApp`. These functions rely on Business Central admin modules, which BCContainerHelper invokes through a remote PowerShell session to the container.
+
+Depending on your enviroment, you might get errors similar to the following:
 
 `Import-Module: Could not load file or assembly '<name , version, culture, public key token>'. Uncaught exception during type initialization.`
 
 `The term '<cmdlet name>' is not recognized as a name of a cmdlet, function, script file, or executable program.`
 
-### Impact
-
-You can't use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] remotely for on-premises deployments or through the BcContainerHelper module for managing Business Central environments on Docker.
-
 ### Workaround
 
-Use Windows PowerShell 5.1 for remote administration of Business Central v28.0. PowerShell remoting over WinRM uses Windows PowerShell 5.1 by default.
-
-1. On the computer installed with [!INCLUDE[server](../developer/includes/server.md)] (remote computer), run **Windows PowerShell** as an administrator.
-
-   From Start menu, type **Windows PowerShell**, right-click **Windows PowerShell**, then select Run as Administrator.
-
-1. Run the following command to check that the PowerShell version is 5.1
-
-   ```powershell
-   $PSVersionTable.PSVersion
-   ```
-
-1. On the local computer, connect to the [!INCLUDE[server](../developer/includes/server.md)] computer by using `Enter-PSSession`:
-
-   ```powershell
-   Enter-PSSession -ComputerName <BCServerNameOrIP> -Credential <Domain\User>
-   ```
-
-1. Import the Business Central administration module and run cmdlets:
-
-   ```powershell
-   Import-Module "C:\Program Files\Microsoft Dynamics 365 Business Central\Service\BusinessCentral.Management.psd1"
-   Get-NAVServerInstance
-   ```
+Use Windows PowerShell 5.1 when running [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and BCContainerHelper modules in remote sessions.
 
 ## Evaluation company creation fails in some country/region versions
 
