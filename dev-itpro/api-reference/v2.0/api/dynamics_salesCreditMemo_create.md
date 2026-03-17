@@ -1,12 +1,10 @@
 ---
 title: Create salesCreditMemos  
 description: Creates a sales credit memo object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 02/16/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -60,7 +58,7 @@ Content-type: application/json
 Here's an example of a response.
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 HTTP/1.1 201 Created
@@ -68,41 +66,26 @@ Content-type: application/json
 
 {
   "id": "1e8cb9c0-44e3-ea11-bb43-000d3a2feca1",
-  "documentId": "960f5c9c-44e3-ea11-bb43-000d3a2feca1",
-  "sequence": 10000,
-  "itemId": "0ea6738a-44e3-ea11-bb43-000d3a2feca1",
-  "accountId": "00000000-0000-0000-0000-000000000000",
-  "lineType": "Item",
-  "lineObjectNumber": "1996-S",
-  "description": "ATLANTA Whiteboard, base",
-  "unitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
-  "unitOfMeasureCode": "PCS",
-  "quantity": 12,
-  "unitPrice": 1397.3,
-  "discountAmount": 0,
-  "discountPercent": 0,
-  "discountAppliedBeforeTax": false,
-  "amountExcludingTax": 16767.6,
-  "taxCode": "FURNITURE",
-  "taxPercent": 6.00002,
-  "totalTaxAmount": 1006.06,
-  "amountIncludingTax": 17773.66,
-  "invoiceDiscountAllocation": 0,
-  "netAmount": 16767.6,
-  "netTaxAmount": 1006.06,
-  "netAmountIncludingTax": 17773.66,
-  "shipmentDate": "2020-04-02",
-  "shippedQuantity": 0,
-  "invoicedQuantity": 0,
-  "invoiceQuantity": 12,
-  "shipQuantity": 12,
-  "itemVariantId": "00000000-0000-0000-0000-000000000000"
+  "number": "1009",
+  "creditMemoDate": "2022-12-27",
+  "dueDate": "2023-01-27",
+  "customerId": "customerId-value",
+  "contactId": "",
+  "customerNumber": "10000",
+  "customerName": "Adatum Corporation",
+  "billingPostalAddress": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "countryLetterCode": "",
+    "postalCode": ""
+  }
 }
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Sales Credit Memo](../resources/dynamics_salescreditmemo.md)  
 [Get Sales Credit Memo](dynamics_salescreditmemo_get.md)  
 [Update Sales Credit Memo](dynamics_salescreditmemo_update.md)  

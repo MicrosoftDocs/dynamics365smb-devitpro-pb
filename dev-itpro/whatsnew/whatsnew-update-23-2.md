@@ -61,9 +61,9 @@ During November, we'll host the following calls, which you can already register 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
-### Automatically update AppSource apps with minor updates  
+### Automatically update Marketplace apps with minor updates  
 
-You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the Release Plan for more details.
+You can now change the app update cadence for your environments to have Marketplace apps update with every minor update. Read the Release Plan for more details.
 
 ### Features becoming mandatory soon
 
