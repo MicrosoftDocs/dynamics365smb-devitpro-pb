@@ -148,7 +148,7 @@ The following code snippet demonstrates how to use the `EnvironmentInformation` 
 If not EnvironmentInformation.IsSaaSInfrastructure() then
     AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions",GetEndpoint(),GetDeployment(),GetApiKey());
 else
-    AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions", AOAIDeployments.GetGPT4oLatest());
+    AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions", AOAIDeployments.GetGPT41Latest());
 ```
 
 ## Samples
