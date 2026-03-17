@@ -59,7 +59,7 @@ alc.exe help
 
 ## ALMCP
 
-The ALMCP (AL Model Context Protocol) server allows autonomous agents to interact with an AL workspace. It can be launched via ALTool with the `launchmcpserver` command. It's usage is as follows:
+The ALMCP (AL Model Context Protocol) server allows autonomous agents to interact with an AL workspace. It's launched via ALTool with the `launchmcpserver` command. It's usage is as follows:
 
 ```shell
   al launchmcpserver [<projects>...] [options]
@@ -79,7 +79,7 @@ The following options are supported:
 | `--codeanalyzers <analyzers>` | Code analyzers to enable. |
 | `-?, -h, --help`          | Show help and usage information |
 
-Once the server is launched, it will listen on the specified port for MCP calls and provides several tools for agents to interact with the loaded projects.
+Once the server is launched, it listens on the specified port for MCP calls and provides several tools for agents to interact with the loaded projects.
 
 ## Related information
 
