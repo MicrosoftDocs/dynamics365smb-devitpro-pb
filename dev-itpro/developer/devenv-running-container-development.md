@@ -32,7 +32,10 @@ Install Docker and configure it for Windows Containers.
 
 ## Set up Business Central using the BCContainerHelper PowerShell module
 
-To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `BCContainerHelper` to work with containers. On a Windows Desktop, Windows Server 2016 or Windows server 2019 machine, **start PowerShell as an Administrator** and type:
+To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `BCContainerHelper` to work with containers. On a device running a supported Windows version:
+
+1. Start PowerShell as an administrator. 
+
 
 ```install-module BCContainerHelper -force```
 
@@ -118,7 +121,6 @@ Use `help Publish-BcContainerApp -detailed` to get a full list of parameters and
 ## Related information
 
 [Get Started with AL](devenv-get-started.md)  
-[Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
