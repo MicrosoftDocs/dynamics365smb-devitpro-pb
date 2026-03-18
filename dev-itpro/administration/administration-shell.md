@@ -33,6 +33,7 @@ To run the shell, you have to be a member of the local administrator group on th
     Replace `C:\Program Files\Microsoft Dynamics 365 Business Central\nnn` with the path to your server installation.
 
 
+#
 For Business Central on-premises (v28.0), remote administration must be performed using Windows PowerShell 5.1. When connecting via PowerShell remoting (Enter-PSSession or Invoke-Command), the default WinRM endpoint always hosts Windows PowerShell 5.1, even if PowerShell 7 is installed on the server. PowerShell 7–based remoting is not supported for the Business Central administration modules.
 
 ## Get help on the cmdlets
@@ -44,6 +45,7 @@ Get-Command *NAV*
 ```
 
 To get help with syntax, options, and examples for a specific cmdlet in Business Central version 23 or earlier, enter the following command:
+
 
 ```PowerShell  
 Get-Help <cmd name> -full
