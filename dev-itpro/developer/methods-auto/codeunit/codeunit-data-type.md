@@ -2,7 +2,7 @@
 title: "Codeunit data type"
 description: "Is a container for AL code that you can use from other application objects."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,7 +22,8 @@ The following methods are available on the Codeunit data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Run(Integer [, var Record])](codeunit-run-method.md)|Loads and runs the unit of AL code you specify. To use this method, you can specify a table associated with the codeunit when you defined the codeunit properties. This allows you to pass a variable with the method. The transaction that the codeunit contains is always committed due to the Boolean return value.|
+|[Run(Integer [, var Record])](codeunit-run-integer-table-method.md)|Loads and runs the unit of AL code you specify. To use this method, you can specify a table associated with the codeunit when you defined the codeunit properties. This allows you to pass a variable with the method. The transaction that the codeunit contains is always committed due to the Boolean return value.|
+|[Run(Text [, var Record])](codeunit-run-string-table-method.md)|Loads and runs the unit of AL code you specify. To use this method, you can specify a table associated with the codeunit when you defined the codeunit properties. This allows you to pass a variable with the method. The transaction that the codeunit contains is always committed due to the Boolean return value.|
 
 ## Instance methods
 The following methods are available on instances of the Codeunit data type.
