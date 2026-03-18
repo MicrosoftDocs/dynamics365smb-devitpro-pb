@@ -40,7 +40,7 @@ Depending on your enviroment, you might get errors similar to the following:
 
 ### Workaround
 
-Use Windows PowerShell 5.1 when running [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and BCContainerHelper modules in remote sessions.
+Use Windows PowerShell 5.1 when running [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and BCContainerHelper modules in remote sessions. Learn more in [Business Central admin shell](../administration/administration-shell.md) and [Running a container-based development environment](../developer/devenv-running-container-development.md).
 
 ## Evaluation company creation fails in some country/region versions
 
