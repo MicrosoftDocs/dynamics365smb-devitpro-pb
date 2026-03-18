@@ -24,9 +24,9 @@ Starting with 2024 release wave 1 (v24), Business Central admin modules are inst
 
 - PowerShell 7 modules are most up-to-date and recommended for best performance. The PowerShell 7 modules are stored in the **Admin** folder of the Business Central Server installation and prefixed with `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav`: The Microsoft.BusinessCentral.Management.dll, Microsoft.BusinessCentral.Apps.Management.dll, and Microsoft.BusinessCentral.Apps.Tools.dll.
 
-- A Windows PowerShell 5 compatibility layer module is available users who aren't ready to use PowerShell 7. This module is named Microsoft.Dynamics.Nav.Management.dll and is stored in the **Management** folder Business Central Server installation. It consolidates the cmdlets/functions of all three modules (Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll) into a single module. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility?view=powershell-7.4).
+- A Windows PowerShell 5 compatibility layer module is available users who aren't ready to use PowerShell 7. This module is named Microsoft.Dynamics.Nav.Management.dll and is stored in the **Management** folder Business Central Server installation. It consolidates the cmdlets/functions of all three modules (Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll) into a single module. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility).
 
-## Run the Business Central Admin Shell
+## Run the Business Central Administration Shell
 
 To run the shell, you have to be a member of the local administrator group on the computer. There are a couple ways to run the shell.
 
