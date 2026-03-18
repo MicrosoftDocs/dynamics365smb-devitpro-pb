@@ -4,7 +4,7 @@ description: Learn how to create datasets for AI tests in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 03/13/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
