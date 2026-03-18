@@ -524,7 +524,7 @@
 ### Ready to Go
 #### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
 #### [Get started with building apps](developer/readiness/get-started.md)
-#### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
+#### [Business Central on Microsoft training](/learn/dynamics366/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### Marketplace validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
@@ -1515,9 +1515,12 @@
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
 ### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
-## Create agents that connect to Business Central
-### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## [Create agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## MCP in Business Central (preview)
+### [Overview](ai/mcp-overview.md)
+### [Configure Business Central MCP Server](ai/configure-mcp-server.md)
+### [Connect from VS Code](ai/mcp-connect-vscode.md)
+### [Connect from Copilot Studio](ai/mcp-connect-copilot-studio.md)
 ## Designing and coding agents (preview)
 ### [Overview](ai/ai-development-toolkit-landing-page.yml)
 ### [Designing and coding agents](ai/ai-development-toolkit-overview.md)
@@ -1844,7 +1847,7 @@
 ## Local functionality
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
-### [Deprecated features in the Belgian Version](upgrade/deprecated-features-be.md)
+### [Deprecated features in the Belgian Version](upgrade/devenv-deprecated-features-be.md)
 ### [Deprecated features in the Canadian Version](upgrade/deprecated-features-ca.md)
 ### [Deprecated features in the Czech Version](upgrade/deprecated-features-cz.md)
 ### [Deprecated features in the Dutch Version](upgrade/deprecated-features-nl.md)
@@ -2083,12 +2086,9 @@
 ######## [Overview](developer/devenv-migrate-table-fields.md)
 ######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
 ######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-####### Data migration toolkit - India
-######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
 ##### Technical upgrade
 ###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v22.md)
-###### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
-###### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
+###### [From version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v22.md)
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
 #### Business Central 2022 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v21.md)
@@ -2126,7 +2126,7 @@
 ####### [Convert to AL](upgrade/devenv-code-conversion.md)
 ####### Migrating tables and fields between extensions
 ######## [Overview](developer/devenv-migrate-table-fields.md)
-######## [Moving fables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
 ######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ####### Data Migration Toolkit - India
 ######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
