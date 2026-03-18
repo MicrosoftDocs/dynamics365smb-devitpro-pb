@@ -116,7 +116,7 @@ The default and recommended approach is to use the developer toolkit AI resource
 
 ```al
 // Example of using the default toolkit AI resources in AL 
-AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions", AOAIDeployments.GetGPT4oLatest());
+AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions", AOAIDeployments.GetGPT41Latest());
 ```
 
 View more examples in [BCTech samples](https://github.com/microsoft/BCTech/tree/master/samples/AzureOpenAI).
