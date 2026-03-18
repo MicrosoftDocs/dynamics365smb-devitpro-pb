@@ -11,7 +11,7 @@ ms.search.form: 8351
 ---
 # Configure Business Central MCP Server
 
-Business Central provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. Customers and employees can conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, Visual Studio Code, and websites.
+The Business Central MCP Server enables AI clients to connect to your environments, allowing agents within those clients to perform a range of interactions and tasks. Customers and employees can conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, Visual Studio Code, and websites.
 
 With the MCP Server configured, agents can perform tasks such as:
 
@@ -23,7 +23,7 @@ With the MCP Server configured, agents can perform tasks such as:
 
 The specific tasks available depend on your MCP Server configuration and the permissions you define for each API page object.
 
-The article explains how to enable and configure the Business Central MCP Server in your Business Central environment so agents can connect to the environment's APIs.
+This article explains how to enable and configure the Business Central MCP Server in your Business Central environment so AI clients can connect to the environment's APIs and use them in their agents.
 
 ## Configuration overview
 
@@ -156,7 +156,7 @@ In this case, the agent uses these standard tools to search for and execute the 
 
 ## Get the MCP server configuration connection string
 
-Each MCP server configuration has a connection string, which is JSON definition that includes information for agents to connect to your Business Central environment. You can use the connection string to set up the MCP configuration in various clients, such as Visual Studio Code, to enable natural-language access to your Business Central data and processes.
+Each MCP server configuration has a connection string, which is a JSON definition that includes information for AI clients to connect to your Business Central environment. You can use the connection string to set up the MCP configuration in various clients, such as Visual Studio Code, to enable natural-language access to your Business Central data and processes.
 
 To get your MCP server configuration connection string:
 
