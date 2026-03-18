@@ -1517,7 +1517,7 @@
 ### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 ## [Create agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## MCP in Business Central (preview)
-### [MCP in Business Central overview](ai/connect-to-business-central-using-mcp.md.md)
+### [MCP in Business Central overview](ai/connect-to-business-central-using-mcp.md)
 ### [Configure Business Central MCP Server](ai/configure-mcp-server.md)
 ### [Use MCP server with Copilot Studio](ai/create-agent-in-copilot-studio.md#create-agents-that-connect-to-business-central-mcp-server)
 ### [Use MCP server with Visual Studio Code](ai/use-mcp-server-in-vscode.md)
