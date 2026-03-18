@@ -2,7 +2,7 @@
 title: "CodeCop analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -108,6 +108,8 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0473](codecop-aa0473.md)|Table control fields of type 'Decimal' must have the property AutoFormatType specified.|Localizability|Info|
 |[AA0474](codecop-aa0474.md)|Table control fields that have amount AutoFormatType defined, must have the property AutoFormatExpression specified.|Localizability|Info|
 |[AA0475](codecop-aa0475.md)|Truncate can only be used on normal tables without media fields and outside of try functions.|Design|Error|
+|[AA0476](codecop-aa0476.md)|The AI test configuration is not valid.|Design|Error|
+|[AA0477](codecop-aa0477.md)|Unordered using statements|Readability|Info|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
