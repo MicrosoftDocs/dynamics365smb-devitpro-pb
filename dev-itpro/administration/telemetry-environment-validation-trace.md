@@ -25,7 +25,7 @@ The validation flow is as follows:
 ```text
 First, environment validation started (LC0220). 
 For each extension (main + dependent extensions)
-        Extension validation started (LC0204)
+        Extension validation started (LC0224)
         Either 
                 Extension validation completed successfully (LC0225)
         or
@@ -36,7 +36,7 @@ either
         Environment validation completed successfully (LC0222)
 or
         Environment validation completed with failures (LC0223)
-        Environment diagnostic reported (LC0227)
+        Environment diagnostic reported (LC0221 and/or LC0227)
 ```
 
 ## <a name="environment-validation-started"></a>Environment validation started (LC0220)
@@ -58,6 +58,31 @@ Occurs when a new validation attempt is started for the environment.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
+
+
+## <a name="environment-validation-diagnostic-reported"></a>Environment validation diagnostic reported (LC0221)
+
+Occurs during the environment validation to report diagnostics related to the validation itself. For example, it could be that there are duplicate object IDs across extensions in the environment. This signal isn't necessarily an error, but can also be a warning or information.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Diagnostic reported on validation of environment {environmentId} for target build version {targetVersion}**|
+|severityLevel|**1** for information, **2** for warning, **3** for error|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**LC0221**|
+|environmentTenantAAD|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
+|diagnosticCode|[!INCLUDE[diagnosticCode](../includes/include-telemetry-dimension-diagnostics-code.md)]|
+|diagnosticMessage|[!INCLUDE[diagnosticMessage](../includes/include-telemetry-dimension-diagnostics-message.md)]|
+|diagnosticSeverity|[!INCLUDE[diagnosticSeverity](../includes/include-telemetry-dimension-diagnostics-severity.md)]|
 
 
 ## <a name="extension-validation-started"></a>Extension validation started (LC0224)
