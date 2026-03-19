@@ -16,43 +16,47 @@ Business Central provides an MCP server at `https://mcp.businesscentral.dynamics
 - **Copilot Studio**: Custom agents that integrate Business Central capabilities
 - **Non-Microsoft AI clients**: Claude, ChatGPT, and other MCP-compatible applications
 
-## Configuring what the MCP server can do
+## Prerequisites
 
-Once configured, AI clients connected to the Business Central MCP server can perform various operations on your behalf:
+Before you can use the Business Central MCP server, you must meet the following prerequisites::
 
-**Data operations**
+- **Business Central online**: The MCP server is available for Business Central online environments
+- **MCP-compatible client**: An application that supports the Model Context Protocol
+- **User account**: A Business Central user account with appropriate permissions
+- **MCP server configuration**: At least one configuration created by an administrator (for write operations)
 
-- **View records**: List all customers, items, vendors, or other entities exposed through API pages
-- **Edit records**: Update customer information, item details, pricing, or other entity properties
-- **Create records**: Add new customers, items, sales orders, or other entities to Business Central
-- **Delete records**: Remove entities from Business Central when permissions allow
+## Configure what the MCP server can do
 
-**Business processes**
+By default, the Business Central MCP Server gives AI clients read-only access to all exposed Business Central API pages. This means that without any extra setup, agents can immediately read data from your Business Central environment.
 
-- **Execute operations**: Perform OData bound actions attached to records, such as:
-  - Posting documents (sales orders, purchase orders, invoices)
-  - Changing record statuses
-  - Running business logic defined in your Business Central environment
+To enable agents to create, modify, or delete data, administrators must configure the MCP Server. Configuration involves:
 
-**Conversational interactions**
+- Adding specific API page objects to configurations
+- Defining which operations are allowed (read, create, modify, delete, bound actions)
+- Setting up permissions that control what data agents can access
 
-- **Natural language queries**: Ask questions like "Show me all customers in California" or "What's the inventory level for item X?"
-- **Guided workflows**: Have the AI guide you through complex business processes
-- **Data analysis**: Get summaries, trends, and insights from your Business Central data
+Once configured, these operations become available as "tools" that agents can use to:
 
-The specific capabilities available depend on how you configure the MCP server and what permissions you grant. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+- **View and manage records**: List, create, update, and delete entities like customers, items, or sales orders
+- **Execute business processes**: Post documents, change statuses, and run business logic
+- **Answer natural language queries**: Provide conversational access to your Business Central data
 
-## Connecting to the MCP Server
+The specific capabilities available to agents depend on how you configure the MCP server and what permissions you define for each API. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
 
-Connecting to the Business Central MCP server varies depending on which AI client you're using. Here are the main approaches:
+## Connect to the MCP server
 
-Some clients have built-in Business Central MCP support with preconfigured authentication. For these clients, you just add the MCP server configuration with your environment details.
+All AI clients connect to the Business Central MCP server using the following endpoint:
 
-- **GitHub Copilot in  Visual Studio Code**: Uses Visual Studio Code's preregistered Microsoft Entra ID application. Learn more in [Use the Business Central MCP Server in Visual Studio Code
-](use-mcp-server-in-vscode.md)
+`https://mcp.businesscentral.dynamics.com`
+
+How you connect depends on the AI client you’re using.
+
+Some AI clients include built-in support for Business Central MCP and handle authentication automatically. For these clients, you only need to add the MCP server configuration and specify your Business Central environment details.
+
+- **GitHub Copilot in Visual Studio Code**: Uses Visual Studio Code’s preregistered Microsoft Entra ID application. Learn more in [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
 - **Copilot Studio**: Handles authentication through Power Platform Connector framework. Learn more in [Connect from Copilot Studio](create-agent-in-copilot-studio.md)-
 
-For AI clients without built-in support (Claude, ChatGPT, MCP Inspector, and so on.), there's more setup required. You need to register an application in Microsoft Entra ID and configure the client with your application credentials and environment details. Learn more in [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md.md).
+For AI clients without built-in support (Claude, ChatGPT, MCP Inspector, and so on.), more setup is required. You must register an application in Microsoft Entra ID and configure the client with your application credentials and environment details. Learn more in [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md.md).
 
 ### Required environment details
 
@@ -65,7 +69,7 @@ All MCP clients connecting to Business Central need to specify which environment
 | `Company` | The company name within the environment | `CRONUS USA, Inc.` |
 | `ConfigurationName` | (Optional) The MCP server configuration to use | `SalesTeamConfig` |
 
-## How the connection works
+### How the connection works
 
 The Business Central MCP server acts as a bridge between AI clients and your Business Central data:
 
@@ -92,15 +96,6 @@ This process ensures that:
 - All operations are performed with your user identity and permissions
 - Your Business Central permissions apply to all AI-initiated operations
 - Audit trails show who performed each action
-
-## Prerequisites
-
-To use Business Central MCP:
-
-- **Business Central online**: The MCP server is available for Business Central online environments
-- **MCP-compatible client**: An application that supports the Model Context Protocol
-- **User account**: A Business Central user account with appropriate permissions
-- **MCP server configuration**: At least one configuration created by an administrator (for write operations)
 
 ## Next steps
 
