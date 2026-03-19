@@ -14,6 +14,8 @@ ms.collection:
 
 # Use the Business Central MCP Server in Visual Studio Code
 
+> **APPLIES TO:** Business Central online
+
 The Business Central Model Context Protocol (MCP) server enables developers and business users to interact with Business Central data directly from Visual Studio Code using natural language. This integration allows you to perform common business operations&mdash;such as viewing customers, creating items, and processing sales orders&mdash;through conversational AI assistance.
 
 This article gives instructions for configuring the Business Central MCP server in Visual Studio Code and using it for AI-powered natural language queries to manage your business data. Learn more about the MCP Server in [Configure Business Central MCP Server](configure-mcp-server.md).

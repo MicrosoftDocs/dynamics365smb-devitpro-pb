@@ -11,7 +11,9 @@ ms.date: 03/18/2026
 ms.custom: bap-template 
 ---
 
-# Connect Business Central MCP server with non-Microsoft clients 
+# Connect Business Central MCP server with non-Microsoft clients
+
+> **APPLIES TO:** Business Central online
 
 This article explains how to connect MCP clients that don't have built-in Business Central support, like Claude, ChatGPT, and MCP Inspector, to Business Central MCP server. To connect these clients, you must register your own application in Microsoft Entra ID and configure the client manually.
 

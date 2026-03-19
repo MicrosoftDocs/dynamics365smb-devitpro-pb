@@ -11,11 +11,11 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Business Central MCP Server overview
+# MCP in Business Central overview
 
 > **APPLIES TO:** Business Central online
 
-The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open protocol that standardizes how AI applications communicate with data sources and tools. It provides a universal way for AI applications—like Copilot Studio, GitHub Copilot, Claude, ChatGPT, and custom agents—to securely access and interact with external systems.
+The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open protocol that standardizes how AI applications communicate with data sources and tools. It provides a universal way for AI applications—like Copilot Studio, GitHub Copilot, Claude, ChatGPT, and custom agents—to securely access and interact with external systems, like Business Central.
 
 ## Business Central MCP Server
 
