@@ -1,3 +1,16 @@
+---
+title: Business Central MCP Server Overview and Setup
+description: Learn how to set up and use the Business Central MCP server to enable AI clients like GitHub Copilot and ChatGPT to interact with your Business Central data.
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: concept-article
+ms.date: 02/18/2026
+ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
+---
+
 # Business Central MCP Server overview
 
 > **APPLIES TO:** Business Central online
@@ -18,7 +31,7 @@ Business Central provides an MCP server at `https://mcp.businesscentral.dynamics
 
 ## Prerequisites
 
-Before you can use the Business Central MCP server, you must meet the following prerequisites::
+Before you can use the Business Central MCP server, you must meet the following prerequisites:
 
 - **Business Central online**: The MCP server is available for Business Central online environments
 - **MCP-compatible client**: An application that supports the Model Context Protocol

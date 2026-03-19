@@ -8,6 +8,8 @@ ms.topic: how-to
 ms.collection: 
 ms.date: 02/18/2026
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Use the Business Central MCP Server in Visual Studio Code
