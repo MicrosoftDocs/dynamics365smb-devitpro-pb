@@ -11,6 +11,8 @@ ms.search.form: 8350_Primary, 8351_Primary,
 ---
 # Configure Business Central MCP Server
 
+> **APPLIES TO:** Business Central online
+
 The Business Central MCP Server enables AI clients to connect to your environments, allowing agents within those clients to perform a range of interactions and tasks. Customers and employees can conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, Visual Studio Code, and websites.
 
 With the MCP Server configured, agents can perform tasks such as:
@@ -110,6 +112,30 @@ Unblock Edit Tools: ON
 |30008|APIV2 - Items|✓|✓|✓|✓|
 |30009|APIV2 - Customers|✓|✓|||
 
+## Export and import MCP Server configurations
+
+You can export MCP Server configurations as JSON files, which makes it easier to share configurations with other users and across different environments. You can export existing configurations, modify them, and import them as new configurations. Alternatively, you can create new configurations from scratch in JSON format and import them.
+
+### Export a configuration
+
+To export an existing MCP Server configuration:
+
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Select the configuration you want to export from the list.
+1. On the **Model Context Protocol (MCP) Server Configuration** page, select **Advanced** > **Export**.
+
+The configuration is downloaded as a JSON file to your device. You can then edit this file in any text editor to modify settings or share it with other users.
+
+### Import a configuration
+
+To import an MCP Server configuration from a JSON file:
+
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Select **Advanced** > **Import**.
+1. Browse to and select the JSON configuration file you want to import.
+
+The configuration is imported as a new entry and appears in the list of available configurations. You can then activate it and make any additional adjustments as needed.
+
 ## How API page object entries map to MCP server tools
 
 When you add an API page object entry to an MCP Server Configuration, each allowed operation (read, create, modify, update, delete, or bound action) results in a corresponding tool in the MCP server. These tools can then be added to agents in clients like Copilot Studio.
@@ -194,6 +220,8 @@ To get your MCP server configuration connection string:
 [Create agents with Copilot Studio](create-agent-in-copilot-studio.md)
 
 [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
+
+[Use Business Central MCP server with non-Microsoft clients](use-mcp-server-non-microsoft.md)
 
 ## Related information
 

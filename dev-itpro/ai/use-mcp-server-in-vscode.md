@@ -12,7 +12,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Use the Business Central MCP Server in Visual Studio Code
+# Use the Business Central MCP Server with Visual Studio Code
 
 > **APPLIES TO:** Business Central online
 

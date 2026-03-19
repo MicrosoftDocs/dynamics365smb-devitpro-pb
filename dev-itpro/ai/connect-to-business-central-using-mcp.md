@@ -56,20 +56,28 @@ Once configured, these operations become available as "tools" that agents can us
 
 The specific capabilities available to agents depend on how you configure the MCP server and what permissions you define for each API. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
 
-## Connect to the MCP server
+## Allowed MCP clients
 
-All AI clients connect to the Business Central MCP server using the following endpoint:
+An MCP client is an AI application that can connect to the Business Central MCP server to discover available tools and run them. Business Central supports:
+
+- Visual Studio Code with GitHub Copilot
+- Copilot Studio
+- Other clients that comply with [Model Context Protocol](https://modelcontextprotocol.io/specification/2025-11-25), like Claude, ChatGPT, and MCP Inspector.
+
+## Connect to the MCP server with MCP clients
+
+All MCP clients connect to the Business Central MCP server using the following endpoint:
 
 `https://mcp.businesscentral.dynamics.com`
 
-How you connect depends on the AI client you’re using.
+How you connect depends on the client you're using.
 
-Some AI clients include built-in support for Business Central MCP and handle authentication automatically. For these clients, you only need to add the MCP server configuration and specify your Business Central environment details.
+The Microsody clients include built-in support for Business Central MCP and handle authentication automatically. For these clients, you only need to condfigure the Business Central enviroment and MCP server configuration deatils in the client:
 
-- **GitHub Copilot in Visual Studio Code**: Uses Visual Studio Code’s preregistered Microsoft Entra ID application. Learn more in [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
-- **Copilot Studio**: Handles authentication through Power Platform Connector framework. Learn more in [Connect from Copilot Studio](create-agent-in-copilot-studio.md)-
+- Visual Studio Code uses Visual Studio Code's preregistered Microsoft Entra ID application. Learn more in [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
+- Copilot Studio handles authentication through Power Platform Connector framework. Learn more in [Connect from Copilot Studio](create-agent-in-copilot-studio.md)-
 
-For AI clients without built-in support (Claude, ChatGPT, MCP Inspector, and so on.), more setup is required. You must register an application in Microsoft Entra ID and configure the client with your application credentials and environment details. Learn more in [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md.md).
+Other clients require more setup. You must register an application in Microsoft Entra ID and configure the client with your application credentials and environment details. Learn more in [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md.md).
 
 ### Required environment details
 
