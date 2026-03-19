@@ -188,6 +188,7 @@ To get your MCP server configuration connection string:
 
 1. Copy the text or select **Download** to save it in a text (.txt) file on your device.
 
+
 ## Next steps
 
 [Create agents with Copilot Studio](create-agent-in-copilot-studio.md)
