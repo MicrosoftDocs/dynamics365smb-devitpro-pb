@@ -64,7 +64,7 @@ An MCP client is an AI application that can connect to the Business Central MCP 
 - Copilot Studio
 - Other clients that comply with [Model Context Protocol](https://modelcontextprotocol.io/specification/2025-11-25), like Claude, ChatGPT, and MCP Inspector.
 
-## Connect to the MCP server with MCP clients
+## How MCP clients connect to MCP server
 
 All MCP clients connect to the Business Central MCP server using the following endpoint:
 
@@ -72,7 +72,7 @@ All MCP clients connect to the Business Central MCP server using the following e
 
 How you connect depends on the client you're using.
 
-**Microsoft MCP clients** include native authentication support for Business Central MCP, so you don't need to register an application. You only need to configure the Business Central environment and MCP server configuration details in the client:
+**Microsoft MCP clients** include authentication support for Business Central MCP, so you don't need to register an application. You only need to configure the Business Central environment and MCP server configuration details in the client:
 
 - Visual Studio Code uses Visual Studio Code's preregistered Microsoft Entra ID application. Learn more in [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
 - Copilot Studio handles authentication through Power Platform Connector framework. Learn more in [Connect from Copilot Studio](create-agent-in-copilot-studio.md)
@@ -95,7 +95,7 @@ All MCP clients connecting to Business Central need to specify which environment
 The Business Central MCP server acts as a bridge between AI clients and your Business Central data:
 
 ```
-AI Client (Visual Studo Code, Copilot Studio, Claude)
+MCP client (Visual Studio Code, Copilot Studio, Claude)
     ↓ (MCP Protocol)
 Business Central MCP Server (https://mcp.businesscentral.dynamics.com)
     ↓ (Business Central APIs)
@@ -107,10 +107,10 @@ Your Business Central Environment (data and business logic)
 Business Central MCP uses Microsoft Entra ID for secure authentication:
 
 1. The AI client attempts to connect to the MCP server
-2. The server responds with authentication requirements (Microsoft Entra ID)
-3. The client redirects you to sign in with your Microsoft account
-4. Microsoft Entra ID issues an access token to the client
-5. The client uses this token to make authorized requests on your behalf
+1. The server responds with authentication requirements (Microsoft Entra ID)
+1. The client redirects you to sign in with your Microsoft account
+1. Microsoft Entra ID issues an access token to the client
+1. The client uses this token to make authorized requests on your behalf
 
 This process ensures that:
 
