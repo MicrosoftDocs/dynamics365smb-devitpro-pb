@@ -99,6 +99,8 @@ Once the MCP server is configured, you can interact with Business Central throug
 
 ## Related Information
 
+[Business Central MCP Server overview](connect-to-business-central-using-mcp.md)  
+[Configure Business Central MCP Server](configure-mcp-server.md)  
 [Model Context Protocol Documentation](https://modelcontextprotocol.io)  
 [Business Central API Reference](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)  
 [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)
