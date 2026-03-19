@@ -77,7 +77,7 @@ Extensions are compiled as .app package files. The .app package file can be depl
 
 ## Submitting your app
 
-After development and testing are done, you can submit your extension package to AppSource. Before you submit the extension package, we encourage you to read the checklist to facilitate the validation process. Learn more in [Checklist for submitting your app](devenv-checklist-submission.md). To get code validation helping you to bring your extension package to AppSource, you can enable the AppSourceCop code analyzer. Learn more in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
+After development and testing are done, you can submit your extension package to Marketplace. Before you submit the extension package, we encourage you to read the checklist to facilitate the validation process. Learn more in [Checklist for submitting your app](devenv-checklist-submission.md). To get code validation helping you to bring your extension package to Marketplace, you can enable the AppSourceCop code analyzer. Learn more in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 
 ## Related information
 

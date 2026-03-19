@@ -51,7 +51,7 @@ If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser,
 
 [!INCLUDE [admin-trial-signup](../includes/admin-trial-signup.md)]
 
-This type of environment can be useful if you want to demonstrate the general user interface, for example, or talk about how they can add capabilities with apps from AppSource.  
+This type of environment can be useful if you want to demonstrate the general user interface, for example, or talk about how they can add capabilities with apps from Marketplace.  
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 

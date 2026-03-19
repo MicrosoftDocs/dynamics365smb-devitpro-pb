@@ -11,7 +11,7 @@ ms.topic: how-to
 
 ## Building a landing page that drives a successful buying transaction
 
-Microsoft will drive qualified traffic to AppSource. Though, once a prospect becomes aware of your app, it will be your job to guide them through to a successful buying transaction. Deliberately mapping and architecting the buying journey is critical to ensure a high level of engagement and conversion. Only presenting your app’s features and functionality, or just providing a free trial, won't ensure prospects will become buyers. For this you need to have a good landing page that is built to help you capture attention, accelerate your customer acquisition process, and drive buying behavior. The recommendations on this page will help you do so.
+Microsoft will drive qualified traffic to Marketplace. Though, once a prospect becomes aware of your app, it will be your job to guide them through to a successful buying transaction. Deliberately mapping and architecting the buying journey is critical to ensure a high level of engagement and conversion. Only presenting your app’s features and functionality, or just providing a free trial, won't ensure prospects will become buyers. For this you need to have a good landing page that is built to help you capture attention, accelerate your customer acquisition process, and drive buying behavior. The recommendations on this page will help you do so.
 
 ## Examples of how other partners have implemented our best practices
 
@@ -216,7 +216,7 @@ Most lead capture forms are way too long, demanding, and intimidating, and have 
 
 | Element         | Description | Example |
 |-----------------|-------------|---------|
-|**AppSource app page link & social share**|Include a link back to your listing on AppSource, so the prospect can return when ready.|Return to AppSource.|
+|**Marketplace app page link & social share**|Include a link back to your listing on Marketplace, so the prospect can return when ready.|Return to Marketplace.|
 
 - Also, enable visitors to share and forward your app with others!
 

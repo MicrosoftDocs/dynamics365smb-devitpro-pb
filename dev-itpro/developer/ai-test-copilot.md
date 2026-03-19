@@ -4,7 +4,7 @@ description: Explore testing strategies for Copilot features in AL. Ensure AI-ge
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 07/02/2025
+ms.date: 03/13/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
@@ -26,11 +26,17 @@ Testing helps ensure that Copilot features:
 
 Without proper validation, AI-generated outputs can lead to user frustration, compliance risks, and brand damage.
 
+## Permission set prerequisite for the AI Test Tool
+
+To use the AI Test Tool, users must have the **AI TEST TOOLKIT** permission set assigned. This permission set provides access to the necessary pages and actions to create and run AI tests.
+
+## Overview of the AI Test Tool
+
 In the next articles, we’ll explore how to test Copilot features in Business Central using the AI Test Tool. This tool allows you to create and run tests that validate the accuracy, safety, and reliability of your Copilot features.
 
 - [Create datasets](ai-test-copilot-datasets.md)  
 - [Write AI tests](ai-test-copilot-ai-tests.md)  
-- [AI test tool](ai-test-copilot-testtool.md)  
+- [AI Test Tool](ai-test-copilot-testtool.md)  
 - [Best practices for testing the Copilot capability](ai-test-copilot-bestpractices.md)  
 
 ## Related information

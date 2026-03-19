@@ -3,7 +3,7 @@ title: Enabling APIs for Microsoft Dynamics 365 Business Central
 description: Describing the steps you must go through to enable access to the APIs.
 author: SusanneWindfeldPedersen
 ms.custom: how-to
-ms.date: 10/28/2024
+ms.date: 02/16/2026
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
@@ -15,10 +15,11 @@ ms.reviewer: solsen
 
 [!INCLUDE[prod_short](../../includes/prod_short.md)] exposes an API that makes it possible to integrate with other services. To enable integration with these APIs, you must go through a few steps to enable the access for [!INCLUDE[prod_short](../../includes/prod_short.md)].
 
+APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] online are enabled by default. Learn more in [Endpoints for APIs](endpoints-apis-for-dynamics.md).
+
 ## Enable access to the APIs
 
 1. Open the [!INCLUDE[adminshell](../../developer/includes/adminshell.md)].
-
    [!INCLUDE[open-admin-shell](../../developer/includes/open-admin-shell.md)]
 1. Run the [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet to enable OData services.
 
@@ -42,7 +43,7 @@ ms.reviewer: solsen
 1. On the **API Setup** page, choose the **Integrate APIs** button.  
     This starts a process of populating all the integration tables with records for all APIs. The process can take several minutes.
 
-Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).
+Depending on where you want to access the APIs from, you must specify the correct endpoint. Learn more in [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
 [!INCLUDE[on-prem-ws-off-405-note](../../includes/include-on-prem-ws-off-405-note.md)]
 
