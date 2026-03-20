@@ -12,7 +12,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Use the Business Central MCP Server with Visual Studio Code
+# Connect to Business Central MCP Server with Visual Studio Code
 
 > **APPLIES TO:** Business Central online
 
@@ -99,7 +99,7 @@ Once the MCP server is configured, you can interact with Business Central throug
 
 ## Related Information
 
-[Business Central MCP Server overview](connect-to-business-central-using-mcp.md)  
+[Business Central MCP Server overview](mcp-overview.md)  
 [Configure Business Central MCP Server](configure-mcp-server.md)  
 [Model Context Protocol Documentation](https://modelcontextprotocol.io)  
 [Business Central API Reference](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)  

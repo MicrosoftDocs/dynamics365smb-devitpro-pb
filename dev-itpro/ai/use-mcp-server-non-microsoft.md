@@ -11,7 +11,7 @@ ms.date: 03/18/2026
 ms.custom: bap-template 
 ---
 
-# Use Business Central MCP server with non-Microsoft clients
+# Connect to Business Central MCP server with non-Microsoft clients
 
 > **APPLIES TO:** Business Central online
 
@@ -72,7 +72,7 @@ After an app registered for MCP clients, you can connect clients the Business Ce
 | Token endpoint | `https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/token` |
 | Scope | `https://mcp.businesscentral.dynamics.com/.default` |
 
-Also configure the environment headers (`TenantId`, `EnvironmentName`, `Company`) as described in [How it works](connect-to-business-central-using-mcp.md#how-the-connection-works).
+Also configure the environment headers (`TenantId`, `EnvironmentName`, `Company`) as described in [How it works](mcp-overview.md#how-the-connection-works).
 
 The client uses the OAuth 2.0 Authorization Code flow with PKCE to authenticate. When you initiate the connection, a browser window opens for you to sign in with your Microsoft account.
 

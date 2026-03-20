@@ -11,7 +11,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# MCP in Business Central overview
+# Model Context Protocol (MCP) in Business Central overview
 
 > **APPLIES TO:** Business Central online
 
