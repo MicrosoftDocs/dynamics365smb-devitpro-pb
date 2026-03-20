@@ -58,7 +58,7 @@ Structure:
 - A minimum of one document is required (up to a maximum of 3 are allowed).
 - We recommend you to add the link to your app landing page to all your documents.
 - Think wisely about what content you include in the learn more section. Don't sell, educate the prospect.
-- Don't just include a description of your offer here – the prospect has already read the description in the store front details in AppSource and has shown an interest in your offering by clicking on the learn more item – don't discourage this interest by repeating something that they already know. 
+- Don't just include a description of your offer here – the prospect has already read the description in the store front details in Marketplace and has shown an interest in your offering by clicking on the learn more item – don't discourage this interest by repeating something that they already know. 
 - Instead, use this opportunity to show them something new that entices their interest to start using your offer even more.
 - Remember that you are not allowed to include Microsoft Dynamics 365 logos or trademarks in your supporting documents.
 

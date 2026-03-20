@@ -36,7 +36,7 @@ This article highlights the new feature of Power Pages on virtual tables, the pr
 To preview the new feature of Power Pages on virtual tables, complete the following tasks:
 
 1. Create or upgrade a Business Central environment with Dynamics 365 Business Central 2023 release Wave 2 (version 23.1 or later).
-1. In Business Central, use the assisted setup guide to connect your Business Central environment to a Dataverse environment in which you want to make your Business Central tables available as virtual tables. This task guides you to install the **Business Central Virtual Table** app from AppSource.
+1. In Business Central, use the assisted setup guide to connect your Business Central environment to a Dataverse environment in which you want to make your Business Central tables available as virtual tables. This task guides you to install the **Business Central Virtual Table** app from Marketplace.
 
    For more information, go to [Connect Business Central online to Dataverse](#connect) in this article.
 1. In Business Central, admins can assign permission sets to the built-in app/service-to-service (S2S) users that must access data stored in Business Central online via Power Pages on behalf of anonymous and authenticated external users.  
@@ -80,9 +80,9 @@ To connect your Business Central environment to a Dataverse environment in which
 
 1. Review the terms and conditions. If you want to accept, turn on the **I accept** switch, and then select **Next**.
 1. Specify your Dataverse environment URL, sign in as an administrator user, and then select **Next**.
-1. Install the **Business Central Virtual Table** app from AppSource, and then select **Finish**.
+1. Install the **Business Central Virtual Table** app from Marketplace, and then select **Finish**.
 
-   ![Screenshot of the Business Central Virtual Table app from AppSource](media/virtual-table-plugin.png)
+   ![Screenshot of the Business Central Virtual Table app from Marketplace](media/virtual-table-plugin.png)
 
 ## <a name="s2s"></a>Assign permission sets to anonymous and authenticated external users
 

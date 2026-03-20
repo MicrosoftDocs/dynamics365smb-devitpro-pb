@@ -56,7 +56,7 @@ CaptionML = ENU= 'Name',DAN='Navn',ESP='Nombre',FRA='Nom',ENC='Name';
 ## Remarks
 
 > [!NOTE]  
-> To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+> To submit an app to Marketplace, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 The CaptionML property is multilanguage enabled, so it can contain a list of text strings in different languages. The string that is used is selected according to the user's language settings. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 

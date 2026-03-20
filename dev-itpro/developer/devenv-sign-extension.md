@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 Code signing is a common practice for many applications. It's the process of digitally signing a file to verify the author and that the file hasn't been tampered with since it was signed. The signature of the app package file is verified during the publishing of the extension using the `Publish-NAVApp` cmdlet. For more technical information on signing, see [Authenticode](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537359(v=vs.85)).
 
 > [!NOTE]  
-> If you want to publish an unsigned extension package in your on-premise environment, you need to explicitly state it by using the - *SkipVerification* parameter on the `Publish-NAVApp` cmdlet. An extension without a valid signature won't be published on AppSource.
+> If you want to publish an unsigned extension package in your on-premise environment, you need to explicitly state it by using the - *SkipVerification* parameter on the `Publish-NAVApp` cmdlet. An extension without a valid signature won't be published on Marketplace.
 
 How you sign an app package file depends on when your certificate was issued. On June 1, 2023 the industry standards for storing code signing certificates changed. Certificate Authorities now require code signing certificates to be stored on Hardware Security Modules (HSM) or Hardware Tokens that are certified with FIPS 140-2 Level 2 or equivalent. Code signing certificates issued after this date are therefore only issued via physical USB tokens, into on-premises HSM services, or cloud HSM services such as Azure Key Vault.
 
@@ -125,11 +125,11 @@ The following (deprecated) MakeCert command is used to create a new self-signed 
 Makecert –sk myNewKey –n “CN=Prosewaretest” –r –ss my
 ```
 
-## Code signing for AppSource
+## Code signing for Marketplace
 
-If you publish the extension as an app on AppSource, the app package file must be signed using a certificate purchased from a Certification Authority (CA); a self-signed certificate won't be accepted by the technical validation. The CA must have its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
+If you publish the extension as an app on Marketplace, the app package file must be signed using a certificate purchased from a Certification Authority (CA); a self-signed certificate won't be accepted by the technical validation. The CA must have its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
 
-You can check the validity of your code signing by transferring your signed app file to a Windows device, which didn't sign it. Right-click on the file and go to **Properties**,**Digital Signatures**, and then choose **Details**. In this pop-up, choose **View Certificate** and finally go to **Certification Path**. If the Certification Path has only one entry, then the file isn't signed correctly and is rejected by AppSource technical validation.
+You can check the validity of your code signing by transferring your signed app file to a Windows device, which didn't sign it. Right-click on the file and go to **Properties**,**Digital Signatures**, and then choose **Details**. In this pop-up, choose **View Certificate** and finally go to **Certification Path**. If the Certification Path has only one entry, then the file isn't signed correctly and is rejected by Marketplace technical validation.
 
 ## Related information
 

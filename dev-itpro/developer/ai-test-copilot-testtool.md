@@ -4,7 +4,7 @@ description: Learn how to use the AI Test Tool to test Copilot features in AL.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 03/13/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 # AI Test Tool
 
-The AI Test Tool is an essential component of the developer tools for Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. It focuses on data-driven test automation to ensure that AI systems are accurate with various inputs, maintain the trust and security of our customers and their data, and are resilient to changes in AI model versions.
+The AI Test Tool for AL is an essential component of the developer tools for Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. It focuses on data-driven test automation to ensure that AI systems are accurate with various inputs, maintain the trust and security of our customers and their data, and are resilient to changes in AI model versions.
 
 With the AI Test Tool, you can:
 
@@ -25,13 +25,15 @@ With the AI Test Tool, you can:
 
 ## Step-by-step: using the AI Test Tool
 
-This goes over how to use the AI Test tool to set up a test suite, execute it, and view the results.
+This goes over how to use the AI Test Tool to set up a test suite, execute it, and view the results.
 
-**Prerequisite**: You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](ai-test-copilot-datasets.md) and [Writing AI tests](ai-test-copilot-ai-tests.md).
+**Prerequisite**: 
+- You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](ai-test-copilot-datasets.md) and [Writing AI tests](ai-test-copilot-ai-tests.md).
+- You have the **AI TEST TOOLKIT** permission set assigned to your user.
 
 ### Step 1 - upload datasets
 
-1. Open the **AI Test Suite** page.
+1. Open the **AI Eval Suites** page.
 1. Open the **Test Input** page using the **Input Datasets** action.
 1. Import the dataset using the **Import data-driven test inputs** action and uploading your dataset.
 
@@ -41,7 +43,7 @@ Once the dataset is uploaded, you can open and view the dataset in [!INCLUDE [pr
 
 ### Step 2 - set up the test suite
 
-1. Open the *AI Test Suite* page.
+1. Open the *AI Eval Suites* page.
 1. Upload the previously created datasets for the tests.
 1. Create a test suite using the New action.
 1. Open the newly created test suite.
@@ -55,7 +57,7 @@ Specify a unique code for the test suite and description. On the header level, s
 
 These steps make sure that the test suite is preconfigured whenever the test app is installed.
 
-1. Open the **AI Test Suites** page.
+1. Open the **AI Eval Suites** page.
 1. Export the previously created test suite using the **Export** action.
 1. In your test app, add the datasets and test suite to the /.resources folder.
 1. Create an install codeunit that imports the test suite and dataset when installed.
@@ -108,9 +110,9 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ### Step 4 - run the test suite
 
-1. Open the **AI Test Suites** page.
+1. Open the **AI Eval Suites** page.
 1. Open the previously created test suite.
-1. Run the AI Test Suite using the **Start** action. Alternatively, run them one line at a time using the **Start** action for each line. Each test method is executed for each dataset line.
+1. Run the AI Eval Suites using the **Start** action. Alternatively, run them one line at a time using the **Start** action for each line. Each test method is executed for each dataset line.
 1. The tests doing the evaluation in AL either fail or succeed based on the condition.
 1. Test Output must be generated for all the tests, which needs to be evaluated externally.
 
