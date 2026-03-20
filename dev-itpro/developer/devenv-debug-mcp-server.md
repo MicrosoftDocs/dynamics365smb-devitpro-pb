@@ -56,6 +56,18 @@ The Troubleshooting MCP Server is *only available when debugging*. When you star
 
 The Troubleshooting MCP Server supports four tools, which are described in the following sections.
 
+### Analyzing AL runtime errors with all tools
+
+The best scenario for the Troubleshooting MCP Server is when the debugger stops at an AL runtime error. When you ask Copilot to analyze the error and suggest a fix, Copilot automatically calls all three diagnostic tools:
+
+- **Get stack frames** - to trace the complete call stack and identify how execution reached the error
+- **Get variables** - for each relevant stack frame to inspect variable state at the error point
+- **Get source code** - for relevant frames to understand the code context that led to the error
+
+Based on this comprehensive analysis, Copilot can also suggest a code fix.
+
+Ask: `Use the Troubleshooting MCP Server to analyze the error at the current breakpoint and suggest a fix`
+
 ### Get stack frames
 
 Retrieves the complete call stack showing how execution reached the current point. The tool returns detailed information about each stack frame and can be used for:
@@ -186,7 +198,7 @@ The Troubleshooting MCP Server provides raw data, but you should always verify t
 
 ## Common use cases
 
-Some common use cases for the Troubleshooting MCP Server are described in the next sections.
+The primary use case for the Troubleshooting MCP Server is analyzing AL runtime errors, where Copilot automatically invokes all three diagnostic tools—call stack, variables, and source code—to provide a comprehensive analysis and suggest a fix. It can also be used for the following scenarios.
 
 ### Debugging test failures
 
