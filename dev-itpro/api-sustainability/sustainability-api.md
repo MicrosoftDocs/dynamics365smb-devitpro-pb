@@ -223,7 +223,7 @@ Represents the *Sustainability Value Entry* in [!INCLUDE[prod_short](../includes
 |itemLedgerEntryQuantity|decimal |Specifies the sustainabilityValueEntry's quantity in the item ledger entry.|
 |invoicedQuantity|decimal |Specifies the sustainabilityValueEntry's  invoiced quantity.|
 |co2EPerUnit|decimal |Specifies the sustainabilityValueEntry's carbon footprint per unit.|
-|userID|string |Specifies the sustainabilityValueEntry's used ID. |
+|userID|string |Specifies the sustainabilityValueEntry's user ID. |
 |sourceCode|string |Specifies the sustainabilityValueEntry's source code. |
 |accountNo|string |Specifies the sustainabilityValueEntry's account number. |
 |accountName|string |Specifies the sustainabilityValueEntry's account name. |
