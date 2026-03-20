@@ -33,7 +33,7 @@ Returns a list with information about the supported outage types for reporting.
 {
   "value": [
     {
-      "outageType": string, // The identifier of the outage type. 
+      "outageType": string, // The identifier of the outage type.
       "name": string, // A displayable name for the outage type.
       "description": string, // A displayable description for the outage type.
     }]
@@ -68,16 +68,16 @@ Returns the list of question metadata for the provided outage type.
     {
       "sequence": int, // The order in which the question should be answered
       "parentId": int, // The identifier of a toggle question whose value indicates if this question should be shown. that is if the parent value is 'true' then this question should also be answered
-      "id": string, // The unique identifier of the question 
+      "id": string, // The unique identifier of the question
       "defaultValue": string, // The default value of the question if it has no value
       "questionType": string, // (enum | "None", "Toggle", "TextField", "DateTime")
-      "questionText": string, // The question's text to display 
+      "questionText": string, // The question's text to display
       "required": bool, // Indicates if the question must have a value
       "onText": string, // Toggle type only - display text for when the question is toggled to 'true'
       "offText": string, // Toggle type only - display text for when the question is toggled to 'false'
       "multiline": bool // Indicates if the value is intended to contain multi-line text
     }]
-}   
+}
 ```
 
 ### Expected error codes
@@ -151,10 +151,11 @@ POST /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{
     "id": string, // The identifier of the question being answered.
     "answer": string // The answered value of the question.
   }],
-  ("contact": string), // (Optional) - The name of the person whose to contact with updates on the outage report
+  ("firstName": string), // (Optional) - The first name of the person whose to contact with updates on the outage report
+  ("lastName": string), // (Optional) - The last name of the person whose to contact with updates on the outage report
   ("email": string), // (Optional) - An email to contact with updates on the outage report
-  ("phone": string), // (Optional) - A phone number to contact with updates on the outage report
-  ("appVersion": string), // (Optional) - If known, the version of the targeted environment's application 
+  ("phone": string), // (Optional) - A phone number to contact with updates on the outage report. It should contain only numbers, use 00 instead of + for international number prefix
+  ("appVersion": string), // (Optional) - If known, the version of the targeted environment's application
   ("platformVersion": string) //(Optional) - If known, the version of the targeted environment's platform
 }
 ```
@@ -183,7 +184,7 @@ Returns information about the created outage report
 
 ## Related information
 
-[The Business Central Administration Center API](administration-center-api.md)  
-[Manage Apps](tenant-admin-center-manage-apps.md)  
-[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+[The Business Central Administration Center API](administration-center-api.md)
+[Manage Apps](tenant-admin-center-manage-apps.md)
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)
 

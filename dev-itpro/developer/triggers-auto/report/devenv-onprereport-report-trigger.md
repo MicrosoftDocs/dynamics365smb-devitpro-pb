@@ -31,7 +31,9 @@ end;
 
 ## Remarks  
 
-This trigger runs after the request page is run. The table views and filters for the report data items are set while this trigger is run. As this trigger is run after the request page is processed, you have access to any filters the user has set. If you want to print the settings of these filters in the report, you can retrieve them using the following text string.  
+This trigger runs after the `OninitReport` trigger and request page (if any) are run, before data items are processed. Learn more about report trigger flow in [Report triggers and runtime operations](../../devenv-report-triggers.md#overall-report-trigger-and-operations).
+
+The table views and filters for the report data items are set while this trigger is run. As this trigger is run after the request page is processed, you have access to any filters the user has set. If you want to print the settings of these filters in the report, you can retrieve them using the following text string.  
   
 ```AL
 ReportFilter := SomeRecord.GetFilters;  
@@ -41,7 +43,8 @@ Use the ReportFilter text string as the source expression for a control in a sec
 
 ## Related information
 
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
-[OnPreReport (Report Extension) Trigger](../reportextension/devenv-onprereport-reportextension-trigger.md)  
-[Report Triggers and Runtime Operations](../../devenv-report-triggers.md)
+[OnInitReport (report) trigger](../report/devenv-oninitreport-report-trigger.md)  
+[OnPreReport (report) trigger](../report/devenv-onprereport-report-trigger.md)  
+[Report triggers and runtime operations](../../devenv-report-triggers.md)  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

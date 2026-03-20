@@ -2,7 +2,7 @@
 title: Upgrading Microsoft System and Base Application to Version 27
 description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 27
 ms.custom: bap-template
-ms.date: 12/04/2025
+ms.date: 01/08/2026
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.author: jswymer
@@ -17,8 +17,6 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc27-upgrade-unmodified-app.svg)](../developer/media/bc27-upgrade-unmodified-app.svg#lightbox)  
 
-
-
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
 > [!IMPORTANT]
@@ -28,7 +26,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 ### Review upgrade considerations and known issues for version 27
 
-- Learn about key information and tips to prepare for an upgrade in [Important information and considerations when upgrading to Business Central](upgrade-considerations-v26.md).  
+- Learn about key information and tips to prepare for an upgrade in [Business Central upgrade considerations and preparation for v26 and later](upgrade-considerations-v26.md).  
 - [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
 
 ### Prepare new runtime packages
@@ -70,14 +68,14 @@ $AddinsFolder = "The file path to the Add-ins folder of version 27 server instal
 
     Learn more in [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-<!--
 ## Task 3: Upgrade permission sets
 
-Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
+Version 18 introduced AL-based permission sets for the system and extensions. AL-based permission sets are the default in Microsoft and most custom extensions.
 
-Learn more in [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).-->
+- If you already use AL-based permission sets, no action is required in this task.
+- If you still use the legacy, data-based model, decide whether to transition now or continue temporarily. Learn more in [Upgrading permissions sets and permissions](upgrade-permissions.md).
 
-## Task 3: Prepare the existing databases
+## Task 4: Prepare the existing databases
 
 1. Make backup of the databases.
 2. Disable data encryption.
@@ -147,7 +145,7 @@ Learn more in [Upgrading Permissions Sets and Permissions](upgrade-permissions.m
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
 
-## Task 4: Convert application database to version 27
+## Task 5: Convert application database to version 27
 
 This task runs a technical upgrade on the application database to convert it to the version 27 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. It also adds the system symbols for the version to the database.
 
@@ -171,7 +169,7 @@ This task runs a technical upgrade on the application database to convert it to 
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 5: Configure version 27 server
+## Task 6: Configure version 27 server
 
 When you installed version 27 in **Task 2**, a version 27 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
 
@@ -196,7 +194,7 @@ When you installed version 27 in **Task 2**, a version 27 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 6: Import version 27 license
+## Task 7: Import version 27 license
 
 1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 27 license to the database. 
 
@@ -210,7 +208,7 @@ When you installed version 27 in **Task 2**, a version 27 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 7: Synchronize tenant
+## Task 8: Synchronize tenant
 
 Synchronize the tenant database with the platform changes in the application database to get it ready for the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -239,7 +237,7 @@ Synchronize the tenant database with the platform changes in the application dat
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-## Task 8: Publish extensions
+## Task 9: Publish extensions
 
 In this task, you publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
@@ -322,7 +320,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 
-## Task 9: Synchronize tenant with extensions
+## Task 10: Synchronize tenant with extensions
 
 Synchronize the tenant's database schema with any schema changes in the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -369,7 +367,7 @@ Synchronize the tenant's database schema with any schema changes in the new exte
    > [!IMPORTANT]
    > If you're upgrading the v25 subscription billing extension, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Renamed tables and fields in subscription billing extension cause synch errors on upgrade](known-issues.md#renamed-tables-and-fields-in-subscription-billing-extension-cause-synch-errors-on-upgrade).
 
-## Task 10: Upgrade data
+## Task 11: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
@@ -424,7 +422,7 @@ Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Fun
 
 This command upgrades and installs the extensions on the tenant.
 
-## Task 11: Install new Microsoft or reinstall non-Microsoft extensions
+## Task 12: Install new Microsoft or reinstall non-Microsoft extensions
 
 Complete this task to install new first-time Microsoft extensions that you published in task 9 or any non-Microsoft extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
@@ -432,14 +430,13 @@ Complete this task to install new first-time Microsoft extensions that you publi
 Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension version>
 ```
 
-## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 13: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-<!-- 
-## Task 13: Install upgraded permissions sets
+## Task 14: Install upgraded permissions sets
 
-In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you decided to use permission sets as AL objects or as data.
+This task is only required if you transitioned to permission sets as AL objects or upgraded permission sets as data in task 3.
 
 ### For permission sets as AL objects
 
@@ -461,7 +458,6 @@ In this task, you install the custom permission sets that you upgraded earlier i
 5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
 Learn more in [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
--->
 
 ## Post-upgrade tasks
 
@@ -477,7 +473,7 @@ Learn more in [To export and import a permission set](/dynamics365/business-cent
    Learn more in [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
-1. Import the customer license
+1. Import the customer license.
 
    Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You have to restart the server instance afterwards.
 

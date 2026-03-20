@@ -94,7 +94,7 @@ The Performance Toolkit is actually three separate extensions that work together
 |Component  |Description  |
 |---------|---------|
 |**Performance Toolkit** | This is the recommended place to start because this extension makes it easier to get going with performance tests. The extension is free and can be installed from the **Extensions Marketplace** for Visual Studio Code. This extension can set up a new BCPT project that targets your environment, and it includes **BCPT-SampleTests** and the PowerShell scripts for simulating scenarios. It also allows you to run your scenarios from Visual Studio Code. <br><br>**IMPORTANT:** You can use the toolkit only in sandbox environments and Docker images. You can't use it in a production tenant. Currently, only Windows is supported.
-|**Performance Toolkit** | Free and available on [AppSource](https://go.microsoft.com/fwlink/?linkid=2148001).
+|**Performance Toolkit** | Free and available on [Marketplace](https://go.microsoft.com/fwlink/?linkid=2148001).
 | **PowerShell Scripts** | A command line tool for simulating multiple users signing in and interacting with [!INCLUDE[prod_short](includes/prod_short.md)]. |
 |**BCPT-SampleTests**    | Free and available on the [ALAppExtensions](https://go.microsoft.com/fwlink/?linkid=2148002) repository on GitHub. These tests are intended to provide inspiration for creating your own tests. You can't use them for actual testing.       |
 
@@ -114,7 +114,7 @@ To use the Performance Toolkit, you must be assigned to the *BC PERF. TOOLKIT* p
 There are two ways to get started with the Performance Toolkit:
 
 * The recommended way is to install the **Performance Toolkit** extension from the Extension Marketplace in Visual Studio Code. This extension is purpose-built to make it easy to set up the toolkit and start testing performance.  
-* If you want to set up the toolkit yourself, install the toolkit from AppSource via the **Extensions Marketplace** page in [!INCLUDE [prod_short](includes/prod_short.md)], get the test samples from GitHub and download the DVD to get the PowerShell scripts. This method is useful, for example, if you can't install the extension in Visual Studio Code or your environment isn't supported. Learn more about getting the scripts at [Run using the PowerShell scripts](#run-using-the-powershell-scripts).
+* If you want to set up the toolkit yourself, install the toolkit from Marketplace via the **Extensions Marketplace** page in [!INCLUDE [prod_short](includes/prod_short.md)], get the test samples from GitHub and download the DVD to get the PowerShell scripts. This method is useful, for example, if you can't install the extension in Visual Studio Code or your environment isn't supported. Learn more about getting the scripts at [Run using the PowerShell scripts](#run-using-the-powershell-scripts).
 
 The following steps provide an overview of how to get started. This article describes each step in more detail.
 

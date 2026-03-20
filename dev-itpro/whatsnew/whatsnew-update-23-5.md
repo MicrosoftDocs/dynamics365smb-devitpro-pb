@@ -60,8 +60,8 @@ Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOf
 ### Shopify connector update  
 With the previous minor update (23.4), we transitioned to the Shopify Admin API version 2023-10. Note that as of April 1, 2024, Business Central will no longer support the Shopify Admin API version 2023-04. To continue to use your integration, we recommend upgrading to Business Central version 23.4 or later before this date. You can see version of Shopify Admin API and the date until API is valid in the Shopify Shop Card page.
 
-### Automatically update AppSource apps with minor updates  
-You can now change the app update cadence for your environments to have AppSource apps update with every minor update. Read the [release plan](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features) for more details.
+### Automatically update Marketplace apps with minor updates  
+You can now change the app update cadence for your environments to have Marketplace apps update with every minor update. Read the [release plan](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features) for more details.
 
 ### Features becoming mandatory soon
 Prepare for features becoming mandatory soon on [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt).

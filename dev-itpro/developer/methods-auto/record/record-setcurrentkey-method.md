@@ -2,7 +2,7 @@
 title: "Record.SetCurrentKey(Any [, Any,...]) Method"
 description: "Selects a key for a table."
 ms.author: solsen
-ms.date: 06/12/2025
+ms.date: 02/23/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -44,17 +44,22 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Remarks
 
-You can use SetCurrentKey to hint a sort order to the [!INCLUDE[prod_short](../../includes/prod_short.md)] server. With the fields suggested in SetCurrentKey, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server then searches available key definitions and adds an ORDER BY clause with the fields from the key to the SQL statement issued to the database. 
+You can use `SetCurrentKey` to hint a sort order to the [!INCLUDE[prod_short](../../includes/prod_short.md)] server. With the fields suggested in `SetCurrentKey`, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server then searches available key definitions and adds an ORDER BY clause with the fields from the key to the SQL statement issued to the database. 
 
-When you use SetCurrentKey, the following rules apply:  
+A key matches the fields passed to `SetCurrentKey` if the key fields are either an exact match, or if the fields are a prefix of the key fields.
 
-- You can't use SetCurrentKey on:
+If no key is found that matches the fields given to `SetCurrentKey`, the sort order will still be applied but without a key, the query may be slower.
+
+When you use `SetCurrentKey`, the following rules apply:  
+
+- You can't use `SetCurrentKey` on:
+
   - FlowFilter fields
   - Nested FlowFields
   - FlowFields on ExternalSQL tables
-  - Blob Fields
-  - FlowFields on Virtual tables
-  - FlowFields that query across app / tenant db
+  - Blob fields
+  - FlowFields on virtual tables
+  - FlowFields that query across application database / tenant database
   - FlowFields that query different table types
 
   These fields aren't sortable. If any of these fields are used in the method, it returns `false` at runtime and an error occurs if not handled.
@@ -64,172 +69,12 @@ When you use SetCurrentKey, the following rules apply:
 
   - Fields that are part of a **IncludedFields** definition aren't used when searching for a matching key.
 
-  - If you specify only one field as a parameter when you call SetCurrentKey, the key that is selected might consist of more than one field.  
+  - If you specify only one field as a parameter when you call `SetCurrentKey`, the key that is selected might consist of more than one field.  
 
   - If the field that you specify is the first component of several keys, the key that is selected might not be the key that you expect.  
 
-## Example - robust coding
-
-When writing AL code, you should always assume that calls to **SetCurrentKey** might fail. Use the following code snippet to write robust AL code that doesn't break if table keys change.
-
-```AL
-    var
-        MyRecord: Record MyTable;
-    begin
-        if not MyRecord.SetCurrentKey(Field1, Field2) then
-          // handle if no key was found 
-```
-
-If a **SetCurrentKey** call fails, an error message is shown to the user:
-
-```
-Sorting cannot be done based on the {field1 [, field2]*} field(s) in the {table name} table.
-
-Page {page name} has to close.
-```
-
-
-## Example - successful SetCurrentKey call
-
-Suppose that you have the following table with keys defined:
-
-```AL
-table 50100 MyTable
-{
-    fields
-    {
-        field(1; Field1; Integer)
-        {
-        }
-        field(2; Field2; Integer)
-        {
-        }        
-        field(3; Field3; Integer)
-        {
-        }
-        field(4; Field4; Integer)
-        {
-        }
-
-        field(5; Field5; Code[10])
-        {
-            FieldClass = FlowFilter;
-        }
-    }
-
-    keys
-    {
-        key(Key1; Field1, Field2) 
-        {
-        }
-
-        key(Key2; Field3, Field1, Field2)
-        {
-        }
-
-        key(Key3; Field1, Field2, Field4)
-        {
-        }
-
-        key(Key4; Field2, Field3)
-        {
-        }
-    }
-}
-```
-
-In AL code, you then use the SetCurrentKey method to imply your preferred sort order of the data:
-
-```AL
-    procedure MyDataProc()
-    var
-        MyRecord: Record MyTable;
-    begin
-        if not MyRecord.SetCurrentKey(Field1, Field2) then
-          // handle if no key was found 
-
-        if not MyRecord.Find then
-          // handle no records
-        
-        // more code here
-    end;
-```
-
-In the previous code example, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server searches for a key that starts with the fields **Field1** and **Field2**. For the table **MyTable**, two such keys exist: **Key1** and **Key3**. It's not deterministic which of the keys the [!INCLUDE[prod_short](../../includes/prod_short.md)] server uses. For illustration, assume that the [!INCLUDE[prod_short](../../includes/prod_short.md)] server picks **Key3**. The SQL statement generated by the [!INCLUDE[prod_short](../../includes/prod_short.md)] then looks something like this:
-
-```SQL
-SELECT Field1, Field2, Field3, Field4, Field5
-  FROM MyTable
- // this ORDER BY clause is added by the Business Central server due to the SetCurrentKey call 
- // assuming that the server picks Key3  
- ORDER BY Field1, Field2, Field4
-```
-
-In the end, the SQL query optimizer might choose not to use the index corresponding to **Key3**, if it determines that it can get a faster execution plan without using the index.
-
-## Example - unsuccessful SetCurrentKey call without a runtime error
-
-Assume that you have the **MyTable** table as defined in the previous example.
-
-The following example illustrates the behavior of SetCurrentKey if no keys can be found.
-
-```AL
-    procedure MyDataProcNoKeyFound()
-    var
-        MyRecord: Record MyTable;
-    begin
-        if not MyRecord.SetCurrentKey(Field4) then
-          // handle if no key was found 
-
-        if not MyRecord.Find then
-          // handle no records
-        
-        // more code here
-    end;
-```
-
-In the previous code example, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server searches for a key that starts with the field **Field4**. For the table **MyTable**, no such key exists. However, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server returns **true**, doesn't raise a runtime error, and still adds an ORDER BY clause. In this case, the SQL statement generated by the [!INCLUDE[prod_short](../../includes/prod_short.md)] then looks something like this:
-
-```SQL
-SELECT Field1, Field2, Field3, Field4, Field5
-  FROM MyTable
- // this ORDER BY clause is added by the Business Central server due to the SetCurrentKey call 
- // assuming that the server could not find any key
- ORDER BY Field4
-```
-
-## Example - unsuccessful SetCurrentKey call with runtime error
-
-Assume that you have the **MyTable** table as defined in the previous example.
-
-The following example illustrates the behavior of SetCurrentKey if no keys can be found and the SetCurrentKey uses a field that isn't supported in SetCurrentKey. In this case, the field has the data type FlowField.
-
-```AL
-    procedure MyDataProcNoKeyFound()
-    var
-        MyRecord: Record MyTable;
-    begin
-        if not MyRecord.SetCurrentKey(Field5) then
-          // handle if no key was found 
-          // VERY IMPORTANT AS IN THIS CASE, THE SERVER WILL RAISE A RUNTIME ERROR
-
-        if not MyRecord.Find then
-            // handle no records
-        
-        // more code here
-    end;
-```
-
-In the code example, the [!INCLUDE[prod_short](../../includes/prod_short.md)] server searches for a key that starts with the field **Field5**. For the table **MyTable**, the field is nonsearchable, so the [!INCLUDE[prod_short](../../includes/prod_short.md)] server returns **false**. The [!INCLUDE[prod_short](../../includes/prod_short.md)] server doesn't add an ORDER BY clause in this case and raises a runtime error (the error surfaces to the user if it's not handled). In this case, the SQL statement generated by the [!INCLUDE[prod_short](../../includes/prod_short.md)] then looks something like this:
-
-```SQL
-SELECT Field1, Field2, Field3, Field4, Field5
-  FROM MyTable
- // no ORDER BY clause added by the Business Central server due to the SetCurrentKey call 
-```
-
 ## Related information
 
-[Record Data Type](record-data-type.md)  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Record data type](record-data-type.md)  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  
