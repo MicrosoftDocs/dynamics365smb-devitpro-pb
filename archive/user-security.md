@@ -9,7 +9,6 @@ author: jswymer
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] provides a security system that allows administrators to manage user access to the objects and data in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. Because the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database is on SQL Server or Azure SQL Database, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] security system and either the SQL Server SQL Server or Azure SQL Database security system work together to help ensure that only authorized users can gain access to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
 
-
 ## User permissions in the application
 
 For users to access the application, they must be have a valid user account in the application. Then, they must be granted permissions to the various areas of the application, based on their role. The management of user accounts and permissions is done from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. For more information, see the following articles in the Business Central application help:
@@ -25,7 +24,7 @@ For more information, see [Authentication and Credential Types](../administratio
 
 ## Limiting user access beyond the permission level
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] provides options for limiting and monitoring user access to the database. 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] provides options for limiting and monitoring user access to the database.
   
 ### Limiting access to specific database entries
   

@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 12/05/2025
+ms.date: 01/12/2026
 ms.update-cycle: 180-days
 ---
 
@@ -14,16 +14,13 @@ ms.update-cycle: 180-days
 
 [This article is prerelease documentation and is subject to change.]
 
-[!INCLUDE [ai-playground-preview](../includes/ai-playground-preview.md)]
+[!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The Agent playground is a prototyping environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [Agent playground overview (preview)](ai-agent-playground.md).
+The [!INCLUDE [prod_short](../includes/prod_short.md)] AI development toolkit is an environment that allows subject matter experts, product owners, consultants, and developers to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. It's available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data. Learn more in [AI development toolkit overview (preview)](ai-development-toolkit-overview.md).
 
 ## Permissions
 
 The agent operates with explicit permission sets that control what data and actions it can access. This follows the principle of least privilege—grant only the permissions necessary for the agent's intended functionality. 
-
-> [!NOTE]
-> Permission sets can only be modified when the agent is deactivated.
 
 ### How to determine required permissions
 
@@ -42,7 +39,7 @@ When a user schedules a task for an agent, the task is executed with permissions
 #### Example
 
 | Permission | User | Agent | Effective Permissions |
-|------------|------|-------|----------------------|
+| ------------ | ------ | ------- | ---------------------- |
 | Read Customers | Yes | Yes | Yes |
 | Modify Customers | Yes | Yes | Yes |
 | Delete Customers | Yes | No | No |
@@ -63,13 +60,13 @@ You can create custom profiles specifically for agents, using page customization
 
 ### The agent and the UI
 
-A playground agent can interact with the UI it sees. It can access search on any list page, but not **Tell me**. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user. The intent is to define an inclusion list or positive list of UI elements exposed to the agent.
+An agent can interact with the UI it sees. It can access search on any list page, but not **Tell me**. The agent is assigned to a profile just like any other user and this is the key to controlling its access. For the **Profile (Role)**, to ensure that you don't expose too much of the UI, it's recommended to build a custom profile for the agent in the same way as you would build a custom profile for a user. The intent is to define an inclusion list or positive list of UI elements exposed to the agent.
 
 On the page customization object, you can set specific flags to control what the agent can see and do on that page. The following flags are available:
 
 | Property | Data type | If set to... |
 |----------|-----------|-------------|
-| `ClearActions` | Boolean | `true`, all actions on the page are removed for the agent.|
+| `ClearActions` | Boolean | `true`, all actions on the page are removed for the agent. |
 | `ClearLayout`  | Boolean | `true`, the layout of the page is simplified for the agent. |
 | `ClearViews`   | Boolean | `true`, all views on the page are removed for the agent. |
 | `DeleteAllowed`| Boolean | `false`, the delete action isn't allowed for the agent. |
@@ -103,14 +100,16 @@ Once you have built and published a profile, you can assign it to the agent in t
 
 ## Related information
 
-[Overview (preview)](ai-agent-playground-landing-page.yml)  
-[Agent playground (preview)](ai-agent-playground.md)  
-[Create and activate (preview)](ai-agent-playground-create.md)  
-[Write effective instructions (preview)](ai-agent-playground-effective-instructions.md)  
-[Instruction keywords (preview)](ai-agent-playground-instruction-keywords.md)  
-[Integrate with the Tasks AL API (preview)](ai-agent-playground-tasks-api.md)  
-[Run a playground agent (preview)](ai-agent-playground-run-agent.md)  
-[Iterate and manage (preview)](ai-agent-playground-iterate.md)  
-[Best practices (preview)](ai-agent-playground-best-practices.md)  
-[Create a Sales Validation Agent (preview)](ai-agent-playground-sales-validation.md)  
-[Transparency note: Business Central agent playground](transparency-note-agent-playground.md)  
+[Overview (preview)](ai-development-toolkit-landing-page.yml)  
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
+[Create and activate (preview)](ai-development-toolkit-agent-create.md)  
+[Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
+[Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
+[Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
+[Run an agent (preview)](ai-development-toolkit-run-agent.md)  
+[Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

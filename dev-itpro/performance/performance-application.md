@@ -13,7 +13,7 @@ The sections in this article are tips and tricks on how to set up [!INCLUDE[prod
 
 ## Uninstall extensions that you don't use
 
-Any extensions that you install can affect the overall system performance. So if you install an app from AppSource, but later discover it's not needed, then uninstall it. The same advice applies to the extension that comes preinstalled in an environment. For example, uninstall all migration extensions after you've migrated data, or if you don't intend to migrate data.
+Any extensions that you install can affect the overall system performance. So if you install an app from Marketplace, but later discover it's not needed, then uninstall it. The same advice applies to the extension that comes preinstalled in an environment. For example, uninstall all migration extensions after you've migrated data, or if you don't intend to migrate data.
 
 ### Performance impact of installed extensions
 

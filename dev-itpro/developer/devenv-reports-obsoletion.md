@@ -11,7 +11,7 @@ ms.date: 03/13/2025
 
 # Obsoleting reports
 
-If you plan to deprecate reports in your AppSource apps or per-tenant extensions, you might want to communicate the deprecation to other developers and to your users before you remove the reports.
+If you plan to deprecate reports in your Marketplace apps or per-tenant extensions, you might want to communicate the deprecation to other developers and to your users before you remove the reports.
 
 > [!NOTE]  
 > The article describes some best practices that Microsoft uses for obsoleting reports and layouts, and is meant as a nonenforced guidance and best practices. You can use this article as inspiration for how to set up your own best practices for deprecating your reports.

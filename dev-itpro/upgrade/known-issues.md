@@ -16,6 +16,51 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, consult [Resources for Help and Support](../help-and-support.md).
 
+## Business Central admin shell modules fail in PowerShell 7 remote sessions
+
+> Applies to: Business Central v28.0 on‑premises and container-based environments on Docker
+
+### Problem
+
+PowerShell 7 has a known issue where [!INCLUDE[adminshell](../developer/includes/adminshell.md)] modules fail to load in remote PowerShell sessions. This issue affects both on‑premises deployments and container-based environments.
+
+- On‑premises deployments
+
+   You get an error when you try to import the .[!INCLUDE[adminshell](../developer/includes/adminshell.md)] modules in a remote session. Because the module fails to load, dependent cmdlets can't be invoked.
+
+- Container-based environments
+
+   You get errors when running BCContainerHelper management functions such as  `Restart-BcContainer`, `Get-BcContainerAppInfo`, and `Publish-BcContainerApp`. These functions rely on Business Central admin modules, which BCContainerHelper invokes through a remote PowerShell session to the container.
+
+Depending on your enviroment, you might get errors similar to the following:
+
+`Import-Module: Could not load file or assembly '<name , version, culture, public key token>'. Uncaught exception during type initialization.`
+
+`The term '<cmdlet name>' is not recognized as a name of a cmdlet, function, script file, or executable program.`
+
+### Workaround
+
+Use Windows PowerShell 5.1 when running [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and BCContainerHelper modules in remote sessions. Learn more in [Business Central admin shell](../administration/administration-shell.md) and [Running a container-based development environment](../developer/devenv-running-container-development.md).
+
+## Evaluation company creation fails in some country/region versions
+
+> Applies to: 27.3 online
+
+### Problem
+
+When you create an evaluation company in the following countries/regions: AU, CA, DE, DK, ES, FR, GB, IT, NZ, US, the process fails with an error in the **Setup Status** column, and an error similar to the following is logged on the **Job Queue Entries** page:
+
+```
+Document Record ID must have a value in E-Document: Document Entry No=7. It cannot be zero or empty.
+```
+
+### Workaround
+
+Before creating a new evaluation company in any of the affected countries/regions, set the work date to January 1, 2026. You can do this from the **My Settings** page by updating the **Work Date** field. Learn more in [Set work date](/dynamics365/business-central/ui-change-basic-settings#work-date).
+
+If the company creation has already failed, delete the failed company, set the work date as described, and try again.
+
+
 ## Web server components installation fails because of missing .NET Core Hosting Bundle
 
 ### Problem
@@ -1032,3 +1077,4 @@ netsh http add urlacl url=http://+:<PORT NUMBER>/<BC SERVICE NAME>/ user="<BC SE
 ## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
+

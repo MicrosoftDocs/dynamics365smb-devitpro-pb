@@ -17,7 +17,7 @@ Manage the apps that are installed on the environment.
 
 ### <a name="eula"></a>End-User License Agreement and Terms of Use for Installing an App 
 
-When you install an app from AppSource, you're shown a page for accepting the end-user license agreement, terms of use, and privacy policy. This isn't the case when you install an app using the API, because there's currently no user-interface with the feature. Instead, to install an app using the API, you must set the `"acceptIsvEula":` property in the request body, which is used for agreeing to the same terms as would when you install from AppSource. For more information, see [acceptIsvEula](#acceptisveula).
+When you install an app from Marketplace, you're shown a page for accepting the end-user license agreement, terms of use, and privacy policy. This isn't the case when you install an app using the API, because there's currently no user-interface with the feature. Instead, to install an app using the API, you must set the `"acceptIsvEula":` property in the request body, which is used for agreeing to the same terms as would when you install from Marketplace. For more information, see [acceptIsvEula](#acceptisveula).
 
 <!--
 By setting this parameter to `true`, you accept the following terms:
@@ -76,9 +76,9 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 > [!IMPORTANT]
 > By setting the `acceptIsvEula` property to `true`, you not only agree with ISV's end-user license terms (EULA) but also with these terms:
 >
-> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) <!--(https://privacy.microsoft.com/privacystatement)-->.**
+> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of Marketplace is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) <!--(https://privacy.microsoft.com/privacystatement)-->.**
 
-<sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on AppSource. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
+<sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on Marketplace. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
 
 ### Response
 
@@ -213,7 +213,7 @@ Example `200 OK` response with body:
   "value":
   [
     {
-      "id": guid, // ID of the dependent app
+      "appId": guid, // ID of the dependent app
       "name": string, // Name of the dependent app
       "publisher": string, // Publisher of the dependent app
       "version": string, // Version of the dependent app
@@ -251,7 +251,7 @@ Returns information about the apps installed on the environment.
   "value":
   [
     { 
-      "id": guid, // Id of the installed app 
+      "appId": guid, // Id of the installed app 
       "name": string, // Name of the installed app 
       "publisher": string, // Publisher of the installed app 
       "version": string, // Version of the installed app
@@ -260,7 +260,7 @@ Returns information about the apps installed on the environment.
       "lastUpdateAttemptResult": string // (enum | "Failed", "Succeeded", "Canceled", "Skipped")
       "lastUninstallOperationId": guid // Id of the last uninstall operation that was performed for this app
       "lastUninstallAttemptResult": string // (enum | "Failed", "Succeeded", "Canceled", "Skipped")
-      "appType": string // (enum | "Global", "PTE", "DEV")
+      "appType": string // (enum | "global", "tenant", "dev")
       "canBeUninstalled": boolean // Specifies whether the app can be uninstalled
     }
   ]
@@ -290,14 +290,14 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
   "value":
   [ 
     { 
-      "id": guid, // Id of the app 
+      "appId": guid, // Id of the app 
       "name": string, // Name of the app 
       "publisher": string, // Publisher of the app 
       "version": string, // New version available of the app
       "requirements": // List of other apps that need to be installed or updated before this app can be updated
       [
         { 
-          "id": guid, // Id of the app
+          "appId": guid, // Id of the app
           "name": string, // Name of the app 
           "publisher": string, // Publisher of the app 
           "version": string, // Version the required app needs to be updated to or installed
