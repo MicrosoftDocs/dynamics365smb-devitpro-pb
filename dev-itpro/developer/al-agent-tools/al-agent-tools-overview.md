@@ -16,6 +16,9 @@ ms.reviewer: solsen
 
 AI agent tools enable GitHub Copilot and any Model Context Protocol (MCP)-compatible AI agent to perform core Business Central development tasks on your behalf—building, publishing, searching symbols, running diagnostics, and debugging AL extensions—without leaving your editor or workflow.
 
+> [!TIP]
+> These tools are specific to AI agents in Visual Studio Code and are different from the [ALTool command-line tool](../devenv-al-tool.md), which is used for compiling and packaging AL extensions in CI/CD pipelines.
+
 These tools are designed for two usage surfaces that share a consistent set of tool names and behaviors:
 
 | Surface | Description | Best for |
