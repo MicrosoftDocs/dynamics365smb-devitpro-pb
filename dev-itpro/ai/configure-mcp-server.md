@@ -2,7 +2,7 @@
 title: Build Business Central agents with Copilot Studio
 description: Learn how to create agents that expose existing Business Central data and processes through Copilot Studio using either the Business Central MCP server or Business Central connector.
 ms.topic: how-to
-ms.date: 12/04/2025
+ms.date: 03/02/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -10,6 +10,7 @@ ms.collection:
 ms.custom: 
 ms.search.form: 8350_Primary, 8351_Primary, 
 ---
+
 # Configure Business Central MCP Server
 
 Business Central provides an [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) Server that enables AI agents to connect to your environments and perform a range of interactions and tasks. With agents, customers and employees to conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, and websites.
@@ -45,6 +46,9 @@ Once the MCP server is enabled and configured, the individual configurations bec
 1. In the **Tools** section, add API page objects as tools to the configuration.
 
    You can add objects individually as separate entries. Select **Add All Standard APIs as Tools** to automatically add all Business Central API pages as tools.
+
+   > [!NOTE]
+   > API pages of subtype `ListPart` and `CardPart` aren't currently supported as MCP tools. Only top-level API pages can be added to MCP Server configurations.
 
    |Permission|Description|
    |-|-|
