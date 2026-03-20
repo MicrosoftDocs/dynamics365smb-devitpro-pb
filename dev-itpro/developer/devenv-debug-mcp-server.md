@@ -68,7 +68,7 @@ Based on this comprehensive analysis, Copilot can also suggest a code fix.
 
 Ask: `Use the Troubleshooting MCP Server to analyze the error at the current breakpoint and suggest a fix`
 
-### Get stack frames
+### Get Stack Frames
 
 Retrieves the complete call stack showing how execution reached the current point. The tool returns detailed information about each stack frame and can be used for:
 
