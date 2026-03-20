@@ -238,7 +238,7 @@ Represents the *Sustainability Value Entry* in [!INCLUDE[prod_short](../includes
 
 ## sustainabilityPurchaseLine  
 
-Represents a *Purchase Lines* in [!INCLUDE[prod_short](../includes/prod_short.md)] with value tracking information.  
+Represents a *Purchase Line* in [!INCLUDE[prod_short](../includes/prod_short.md)] with value tracking information.  
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
@@ -267,7 +267,7 @@ Represents a *Purchase Lines* in [!INCLUDE[prod_short](../includes/prod_short.md
 |amountIncludingVat|decimal |Specifies the sustainabilityPurchaseLine's amount including VAT.|
 |amount|decimal |Specifies the sustainabilityPurchaseLine's amount. |
 |renewableEnergy|boolean |Specifies the sustainabilityPurchaseLine's renewable energy compliance.|
-|emissionCO2|decimal |Specifies the sustainabilityPurchaseLine's CO2 amission.|
+|emissionCO2|decimal |Specifies the sustainabilityPurchaseLine's CO2 emission.|
 |emissionCH4|decimal |Specifies the sustainabilityPurchaseLine's CH4 emission.|
 |emissionN2O|decimal |Specifies the sustainabilityPurchaseLine's N2O emission.|
 |energyConsumption|decimal |Specifies the sustainabilityPurchaseLine's energy consumption amount.|
@@ -296,7 +296,7 @@ Represents a *Sustainability Goals* in [!INCLUDE[prod_short](../includes/prod_sh
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |id|GUID |The unique ID of the sustainabilityGoal. Noneditable. |
-|scorecardNo|string |Specifies the sustainabilityGoal's  scorecard number.|
+|scorecardNo|string |Specifies the sustainabilityGoal's scorecard number.|
 |no|string |Specifies the sustainabilityGoal's goal number.|
 |lineNo|string |Specifies the sustainabilityGoal's line number for the specific goal.|
 |name|string |Specifies the sustainabilityGoal's goal name.|
