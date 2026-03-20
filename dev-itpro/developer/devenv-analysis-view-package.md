@@ -150,8 +150,6 @@ Unlike user-defined analysis views, packaged views:
 - Are consistent across users—every user who has the extension installed sees the same set of packaged views.
 - Survive user personalization resets, because they're defined in AL code rather than stored as user data.
 
-<!-- TODO: Add screenshot of locked analysis view -->
-
 Packaged analysis views can't be deleted or moved. However, you can hide and unhide them by using:
 
 - [Designer](devenv-inclient-designer.md), which applies to all users
@@ -159,8 +157,6 @@ Packaged analysis views can't be deleted or moved. However, you can hide and unh
 - [Page customizations for profiles](devenv-page-customization-object.md), for a specific role
 
 You can also rename the tab and change its description through the tab menu by choosing **Rename**.
-
-<!-- TODO: Add screenshot of Designer with analysis view -->
 
 ## Related information
 
