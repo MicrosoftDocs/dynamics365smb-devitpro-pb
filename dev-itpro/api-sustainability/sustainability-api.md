@@ -229,7 +229,7 @@ Represents the *Sustainability Value Entry* in [!INCLUDE[prod_short](../includes
 |accountName|string |Specifies the sustainabilityValueEntry's account name. |
 |co2EAmountActual|decimal |Specifies the sustainabilityValueEntry's carbon footprint actual amount.|
 |co2EAmountExpected|decimal |Specifies the sustainabilityValueEntry's carbon footprint expected amount.|
-|capacityLedgerEntryNo|integer |Specifies the sustainabilityValueEntry's capavity ledger entry number.|
+|capacityLedgerEntryNo|integer |Specifies the sustainabilityValueEntry's capacity ledger entry number.|
 |documentDate|date |Specifies the sustainabilityValueEntry's document date. |
 |documentType|string |Specifies the sustainabilityValueEntry's document type. |
 |documentLineNo|string |Specifies the sustainabilityValueEntry's document line number.|
