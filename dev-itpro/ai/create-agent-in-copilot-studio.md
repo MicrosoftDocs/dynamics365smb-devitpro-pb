@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.collection: 
 ms.date: 11/11/2025
 ms.custom: bap-template
+ms.search.form: 8350, 8351, 
 ---
 # Create agents in Copilot Studio that connect to Business Central
 
