@@ -48,7 +48,7 @@ alc.exe help
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
 | `compile`                      | Compile a package using `alc.exe`.  |
-| `workspace`                    | Workspace related commands.  |
+| `workspace`                    | Workspace-related commands.  |
 | `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
@@ -59,7 +59,7 @@ alc.exe help
 
 ## ALMCP
 
-The ALMCP (AL Model Context Protocol) server allows autonomous agents to interact with an AL workspace. It's launched via ALTool with the `launchmcpserver` command. It's usage is as follows:
+The ALMCP (AL Model Context Protocol) server allows autonomous agents to interact with an AL workspace. It's launched via ALTool with the `launchmcpserver` command. Its usage is as follows:
 
 ```shell
   al launchmcpserver [<projects>...] [options]
