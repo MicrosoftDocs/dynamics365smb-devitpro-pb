@@ -175,7 +175,7 @@ Represents the *Sust. Posted ESG Report Line* in [!INCLUDE[prod_short](../includ
 |esgReportingTemplateName |string |Specifies the postedESGReportLine's template name.|
 |esgReportingName |string |Specifies the postedESGReportLine's reporting name. |
 |lineNo |string |Specifies the postedESGReportLine's line number. |
-|grouping |string |Specifies the postedESGReportLine's groupin info. |
+|grouping |string |Specifies the postedESGReportLine's grouping info. |
 |rowNo |string |Specifies the postedESGReportLine's row number.|
 |description |string |Specifies the postedESGReportLine's description. |
 |reportingCode |string |Specifies the postedESGReportLine's reporting code. |
