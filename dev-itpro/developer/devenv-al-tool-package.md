@@ -30,7 +30,7 @@ Learn more in [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www
 
 ## Get started
 
-Get started with the AL Development Tools package by following the instructions on [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools). When you install the package, you get access to the ALTool command-line tool, and you can use the `al` alias to run it.
+Get started with the AL Development Tools package by following the instructions on [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools). When you install the package, you get access to the ALTool command-line tool, and you can use the `al` alias to run it. The `al` alias is a convenience provided by the tools package so you don't need to reference the full path to `alc.exe` as you would when using [ALTool directly from the Visual Studio Code AL Extension](devenv-al-tool.md#get-started).
 
 ## ALTool commands
 

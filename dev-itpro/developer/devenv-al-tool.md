@@ -37,6 +37,8 @@ The ALTool executable is located in the `bin` folder in a path equivalent to the
 C:\Users\<user>\.vscode\extensions\ms-dynamics-smb.al-17.0.1750311\bin\win32\alc.exe
 ```
 
+Alternatively, you can install the [AL Development Tools package](devenv-al-tool-package.md) as a NuGet package, which provides the `al` alias so you can run ALTool commands without specifying the full path to `alc.exe`. This option is ideal for CI/CD pipelines and automated environments where a full Visual Studio Code installation isn't needed.
+
 ## ALTool commands
 
 To get a list of available commands, run the following command in your terminal or command prompt:
@@ -62,7 +64,7 @@ alc.exe help
 The ALMCP (AL Model Context Protocol) server allows autonomous agents to interact with an AL workspace. It's launched via ALTool with the `launchmcpserver` command. Its usage is as follows:
 
 ```shell
-  al launchmcpserver [<projects>...] [options]
+alc.exe launchmcpserver [<projects>...] [options]
 ```
 
 The `projects` argument is a space-separated list of paths to AL project folders. Each path should be wrapped in double quotes `"`.
