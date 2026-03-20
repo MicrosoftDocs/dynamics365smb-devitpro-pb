@@ -2,6 +2,8 @@
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
+## [Update 28.0 (preview)](whatsnew/whatsnew-update-28-0.md)
+## [Update 27.5](whatsnew/whatsnew-update-27-5.md)
 ## [Update 27.4](whatsnew/whatsnew-update-27-4.md)
 ## [Update 27.3](whatsnew/whatsnew-update-27-3.md)
 ## [Update 27.2](whatsnew/whatsnew-update-27-2.md)
@@ -215,6 +217,7 @@
 #### [Session management](administration/administration-center-api_session_management.md)
 #### [Support settings](administration/administration-center-api_support_settings.md)
 #### [Telemetry](administration/administration-center-api_telemetry.md)
+#### [MCP (preview)](administration/administration-center-api-mcp.md)
 <!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
 ## Entitlements and permissions
 ### [Licenses and entitlements](deployment/licensing.md)
@@ -260,6 +263,7 @@
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [Marketplace app breaking changes validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
@@ -525,6 +529,7 @@
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
 #### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [Marketplace app breaking changes validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
@@ -1887,6 +1892,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2025 release wave 2 on-premises updates](deployment/update-versions-27.md)
 #### [2025 release wave 1 on-premises updates](deployment/update-versions-26.md)
 #### [2024 release wave 2 on-premises updates](deployment/update-versions-25.md)
 #### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
