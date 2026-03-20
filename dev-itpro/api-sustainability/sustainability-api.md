@@ -163,30 +163,30 @@ Represents the *Sust. Posted ESG Report Line* in [!INCLUDE[prod_short](../includ
 
 ### Methods
 
-| Method | Return Type|Description |
+| Method | Return Type | Description |
 |:--------------------|:-----------|:-------------------------|
 | GET | postedESGReportLine | Gets a postedESGReportLine object. |
 
 ### Properties  
 
-| Property           | Type   |Description     |
+| Property           | Type   | Description     |
 |:-------------------|:-------|:---------------|
-|id |GUID | The unique ID of the postedESGReportLine. |
-|esgReportingTemplateName |string |Specifies the postedESGReportLine's template name.|
-|esgReportingName |string |Specifies the postedESGReportLine's reporting name. |
-|lineNo |string |Specifies the postedESGReportLine's line number. |
-|grouping |string |Specifies the postedESGReportLine's grouping info. |
-|rowNo |string |Specifies the postedESGReportLine's row number.|
-|description |string |Specifies the postedESGReportLine's description. |
-|reportingCode |string |Specifies the postedESGReportLine's reporting code. |
-|conceptLink |string |Specifies the postedESGReportLine's concept link.|
-|concept |string |Specifies the postedESGReportLine's concept. |
-|fieldType |string |Specifies the postedESGReportLine's field type.|
-|tableNo |integer |Specifies the postedESGReportLine's table number.|
-|source |string |Specifies the postedESGReportLine's source. |
-|fieldNo |integer |Specifies the postedESGReportLine's table field number.|
-|fieldCaption |string |Specifies the postedESGReportLine's field caption.|
-|valueSettings |string |Specifies the postedESGReportLine's value setting.|
+| id | GUID | The unique ID of the postedESGReportLine. |
+| esgReportingTemplateName | string | Specifies the postedESGReportLine's template name. |
+| esgReportingName | string | Specifies the postedESGReportLine's reporting name. |
+| lineNo | string | Specifies the postedESGReportLine's line number. |
+| grouping | string | Specifies the postedESGReportLine's groupin info. |
+| rowNo | string | Specifies the postedESGReportLine's row number. |
+| description | string | Specifies the postedESGReportLine's description. |
+| reportingCode | string | Specifies the postedESGReportLine's reporting code. |
+| conceptLink | string | Specifies the postedESGReportLine's concept link. |
+| concept | string | Specifies the postedESGReportLine's concept. |
+| fieldType | string | Specifies the postedESGReportLine's field type. |
+| tableNo | integer | Specifies the postedESGReportLine's table number. |
+| source | string | Specifies the postedESGReportLine's source. |
+| fieldNo | integer | Specifies the postedESGReportLine's table field number. |
+| fieldCaption | string | Specifies the postedESGReportLine's field caption. |
+| valueSettings | string | Specifies the postedESGReportLine's value setting. |
 |accountFilter |string |Specifies the postedESGReportLine's account filter.|
 |reportingUnit |string |Specifies the postedESGReportLine's reporting unit of measure.|
 |rowType |string |Specifies the postedESGReportLine's row type.|
