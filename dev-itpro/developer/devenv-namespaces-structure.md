@@ -134,7 +134,7 @@ foreach ($file in $files) {
 
 You're now ready to open Visual Studio Code and use the AL code actions to apply all the missing `using` statements. Learn more in [AL code actions](devenv-code-actions.md).
 
-## Organize using statements
+## Organize `using` statements
 
 To maintain clean and readable code, especially in files with many namespace imports, keeping `using` statements alphabetically sorted is a good practice. A code action is available to automatically sort your `using` statements alphabetically.
 
