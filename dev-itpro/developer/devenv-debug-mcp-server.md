@@ -40,9 +40,9 @@ Traditional debugging is still better for:
 The following prerequisites are needed to run the Troubleshooting MCP Server:
 
 - An active debugging session in Visual Studio Code
-- That execution paused at a breakpoint or error
+- Execution is paused at a breakpoint or error
 - The AL Language extension installed
-- The GitHub Copilot Chat enabled
+- GitHub Copilot Chat is enabled
 
 ## Available tools
 
