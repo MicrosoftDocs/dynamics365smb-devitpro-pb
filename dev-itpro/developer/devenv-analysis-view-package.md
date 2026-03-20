@@ -72,7 +72,7 @@ page 50100 ListPageWithAnalysisView
         {
             Caption = 'Customer Analysis View';
             Tooltip = 'My Analysis View description';
-            DefinitionFile = 'BasePage\Base.analysis.json';
+            DefinitionFile = 'BasePage/Base.analysis.json';
         }
     }
 }
