@@ -184,7 +184,7 @@ Represents the *Sust. Posted ESG Report Line* in [!INCLUDE[prod_short](../includ
 |fieldType |string |Specifies the postedESGReportLine's field type.|
 |tableNo |integer |Specifies the postedESGReportLine's table number.|
 |source |string |Specifies the postedESGReportLine's source. |
-|fieldNo |integer |Specifies the postedESGReportLine's tab;e field number.|
+|fieldNo |integer |Specifies the postedESGReportLine's table field number.|
 |fieldCaption |string |Specifies the postedESGReportLine's field caption.|
 |valueSettings |string |Specifies the postedESGReportLine's value setting.|
 |accountFilter |string |Specifies the postedESGReportLine's account filter.|
