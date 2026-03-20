@@ -2,7 +2,7 @@
 title: "Compiler Error AL0127"
 description: "Member '{0}' cannot be used like a method."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Member '{0}' cannot be used like a method.
+Member '{0}' cannot be used like a method. Remove the parentheses or call a valid method.
 
 
 ## Description
