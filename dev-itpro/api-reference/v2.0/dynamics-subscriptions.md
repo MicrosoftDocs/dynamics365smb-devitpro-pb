@@ -19,7 +19,7 @@ In the sections that follow, replace the URL prefix for [!INCLUDE[prod_short](..
 > With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RFC 7159, section 8.1.
 
 > [!NOTE]  
-> When an entity is changed by a delegated admin, a notification will not be triggered immediately. Only when an entity is changed by a licensed user will the notification be sent. This notification will contain changes made by all users - also the change made by the delegated admin.
+> When an entity is changed by a delegated admin, a notification isn't triggered immediately. Only when an entity is changed by a licensed user the notification is sent. This notification contains changes made by all users - also the change made by the delegated admin.
 
 ## Register a webhook subscription
 
@@ -52,7 +52,7 @@ If you're subscribing to a custom API page, both the URL you send the subscripti
 
 ## Renewing the subscription
 
-Subscriptions will expire after three days, if not renewed before. Subscriptions are renewed by issuing a [PATCH](api/dynamics_subscriptions_update.md) request to the subscription.
+Subscriptions expire after three days, if not renewed before. Subscriptions are renewed by issuing a [PATCH](api/dynamics_subscriptions_update.md) request to the subscription.
 
 ```
 PATCH https://{businesscentralPrefix}/api/v2.0/subscriptions({id}) 
