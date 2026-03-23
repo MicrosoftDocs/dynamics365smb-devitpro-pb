@@ -40,10 +40,6 @@ These features are no longer controlled in **Feature management**, so they can't
 
 - Feature Update: Accelerated Depreciation
 
-### Existing features now enabled by default in version 28
-
-- [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650)
-
 ## 2025 release wave 2 (version 27)
 
 ### Features mandatory in version 27
