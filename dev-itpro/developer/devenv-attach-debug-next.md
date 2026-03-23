@@ -45,23 +45,21 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 The following example illustrates a configuration for a local server, where you want to debug a web client session.
 
 ```json
-...
 {
-            "name": "My attach to local server",
-            "type": "al",
-            "request": "attach",
-            "server": "https://localhost",
-            "serverInstance": "BC200",
-            "authentication": "Windows",
-            "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10,
-            "breakOnNext": "WebClient"
-        }
-...
+    "name": "My attach to local server",
+    "type": "al",
+    "request": "attach",
+    "server": "https://localhost",
+    "serverInstance": "BC200",
+    "authentication": "Windows",
+    "breakOnError": true,
+    "breakOnRecordWrite": false,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "WebClient"
+}
 ```
 
 ## Example (attach to an online sandbox web services session)
@@ -69,22 +67,20 @@ The following example illustrates a configuration for a local server, where you 
 The following example illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
 
 ```json
-...
 {
-            "name": "Attach to online sandbox",
-            "type": "al",
-            "request": "attach",
-            "environmentType": "Sandbox",
-            "environmentName": "MyEnvironment",
-            "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10,
-            "breakOnNext": "WebServiceClient"
-        }
-...
+    "name": "Attach to online sandbox",
+    "type": "al",
+    "request": "attach",
+    "environmentType": "Sandbox",
+    "environmentName": "MyEnvironment",
+    "breakOnError": true,
+    "breakOnRecordWrite": false,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "WebServiceClient"
+}
 ```
 
 ## Example (attach to an agent session on a cloud sandbox)
@@ -92,22 +88,20 @@ The following example illustrates a configuration for an online sandbox, where y
 The following example illustrates a configuration for attaching to an agent session on a cloud sandbox.
 
 ```json
-...
 {
-            "name": "Attach to agent on cloud sandbox",
-            "type": "al",
-            "request": "attach",
-            "environmentType": "Sandbox",
-            "environmentName": "MyEnvironment",
-            "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10,
-            "breakOnNext": "Agent"
-        }
-...
+    "name": "Attach to agent on cloud sandbox",
+    "type": "al",
+    "request": "attach",
+    "environmentType": "Sandbox",
+    "environmentName": "MyEnvironment",
+    "breakOnError": true,
+    "breakOnRecordWrite": false,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "Agent"
+}
 ```
 
 ## Example (attach to an agent session on your own server)
@@ -115,23 +109,21 @@ The following example illustrates a configuration for attaching to an agent sess
 The following example illustrates a configuration for attaching to an agent session on your own server.
 
 ```json
-...
 {
-            "name": "Attach to agent on own server",
-            "type": "al",
-            "request": "attach",
-            "server": "https://localhost",
-            "serverInstance": "BC200",
-            "authentication": "Windows",
-            "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10,
-            "breakOnNext": "Agent"
-        }
-...
+    "name": "Attach to agent on own server",
+    "type": "al",
+    "request": "attach",
+    "server": "https://localhost",
+    "serverInstance": "BC200",
+    "authentication": "Windows",
+    "breakOnError": true,
+    "breakOnRecordWrite": false,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "Agent"
+}
 ```
 
 ## Supported Attach configurations
