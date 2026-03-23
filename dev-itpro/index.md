@@ -3,8 +3,8 @@ title: Development and administration for Business Central
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 04/10/2025
-ms.topic: article
+ms.date: 03/23/2026
+ms.topic: concept-article
 ms.reviewer: solsen
 ---
 
@@ -44,6 +44,7 @@ The following table outlines recommended content for you to get started:
 |[Developer learning paths on Microsoft Learn](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&resource_type=learning%20path&products=dynamics-business-central&roles=developer)| Provides links to role-specific training. |
 |[Development in AL](developer/devenv-dev-overview.md)|Get an understanding of the basics and terms you will encounter while working in Visual Studio Code with the AL extension.|
 |[Get started with AL](developer/devenv-get-started.md)|Learn how to set up a development environment.|
+|[Develop with AI](ai/ai-development-toolkit-overview.md)|Learn how to build AI-powered experiences, including Copilot features and agents, using the AI Development Toolkit.|
 |[The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)|Learn about the business opportunity for building your app on top of [!INCLUDE [prod_short](developer/includes/prod_short.md)].|
 |[Get started with building apps](developer/readiness/get-started.md)|Learn how to get started as a partner.|
 
