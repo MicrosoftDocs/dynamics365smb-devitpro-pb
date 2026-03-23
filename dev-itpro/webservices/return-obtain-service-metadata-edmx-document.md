@@ -15,7 +15,13 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] implementation o
   
 The following guidelines have been implemented for EDM.  
   
--   [!INCLUDE[prod_short](../developer/includes/prod_short.md)] field names are mapped to EDMX property names by replacing spaces with underscores.  
+-   [!INCLUDE[prod_short](../developer/includes/prod_short.md)] field names are mapped to EDMX property names by applying the following transformations:  
+    - Spaces are replaced with underscores (`_`)
+    - Dots (`.`) are removed (example: `No.` → `No`)
+    - Parentheses are removed (example: `Balance (LCY)` → `Balance_LCY`)
+    - Slashes (`/`) are replaced with underscores (example: `Country/Region` → `Country_Region`)
+    - Apostrophes (`'`) are encoded as `_x0027_` (example: `Don't` → `Don_x0027_t`)
+    - Percent signs (`%`) are replaced with `Percent` (example: `Profit %` → `Profit_Percent`)
   
 -   Primary key fields in tables are automatically defined as properties in the service metadata document even if they are not exposed on a page as controls.  
   
