@@ -2,7 +2,7 @@
 title: ALTool
 author: SusanneWindfeldPedersen
 description: Simplify AL extension development with ALTool. Validate code, package extensions, and integrate into CI/CD pipelines for seamless deployment.
-ms.date: 09/15/2025
+ms.date: 01/15/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -37,6 +37,8 @@ The ALTool executable is located in the `bin` folder in a path equivalent to the
 C:\Users\<user>\.vscode\extensions\ms-dynamics-smb.al-17.0.1750311\bin\win32\alc.exe
 ```
 
+Alternatively, you can install the [AL Development Tools package](devenv-al-tool-package.md) as a NuGet package, which provides the `al` alias so you can run ALTool commands without specifying the full path to `alc.exe`. This option is ideal for CI/CD pipelines and automated environments where a full Visual Studio Code installation isn't needed.
+
 ## ALTool commands
 
 To get a list of available commands, run the following command in your terminal or command prompt:
@@ -48,12 +50,38 @@ alc.exe help
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
 | `compile`                      | Compile a package using `alc.exe`.  |
+| `workspace`                    | Workspace-related commands.  |
+| `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |
 | `help`                         | Display detailed information about a specific command. |
 | `version`                      | Display version information.                         |
 
+
+## ALMCP
+
+The ALMCP (AL Model Context Protocol) server allows autonomous agents to interact with an AL workspace. It's launched via ALTool with the `launchmcpserver` command. Its usage is as follows:
+
+```shell
+alc.exe launchmcpserver [<projects>...] [options]
+```
+
+The `projects` argument is a space-separated list of paths to AL project folders. Each path should be wrapped in double quotes `"`.
+
+The following options are supported:
+
+| Option                 | Description|
+|------------------------|------------|
+| `--port <port>`        | Port number for the HTTP server. [default: 5000] |
+| `--packagecachepath <paths>` | Paths to the package cache folders. |
+| `--assemblyprobingpaths <paths>` | Paths to probe for dependent assemblies. |
+| `--ruleset <path>`     | Path to the ruleset file. |
+| `--outfolder <path>`   | Output folder for compilation artifacts. |
+| `--codeanalyzers <analyzers>` | Code analyzers to enable. |
+| `-?, -h, --help`          | Show help and usage information |
+
+Once the server is launched, it listens on the specified port for MCP calls and provides several tools for agents to interact with the loaded projects.
 
 ## Related information
 
