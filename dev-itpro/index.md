@@ -45,6 +45,8 @@ The following table outlines recommended content for you to get started:
 |[Development in AL](developer/devenv-dev-overview.md)|Get an understanding of the basics and terms you will encounter while working in Visual Studio Code with the AL extension.|
 |[Get started with AL](developer/devenv-get-started.md)|Learn how to set up a development environment.|
 |[Develop with AI](ai/ai-development-toolkit-overview.md)|Learn how to build AI-powered experiences, including Copilot features and agents, using the AI Development Toolkit.|
+|[AL-Go for GitHub](al-go/algo-overview.md)|Learn how to use AL-Go templates and actions to automate DevOps and CI/CD processes for your AL projects.|
+|[Power Platform integration](powerplatform/powerplat-overview.md)|Learn how to integrate [!INCLUDE [prod_short](developer/includes/prod_short.md)] with Microsoft Power Platform using virtual tables, Power Automate, and Power Apps.|
 |[The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)|Learn about the business opportunity for building your app on top of [!INCLUDE [prod_short](developer/includes/prod_short.md)].|
 |[Get started with building apps](developer/readiness/get-started.md)|Learn how to get started as a partner.|
 
