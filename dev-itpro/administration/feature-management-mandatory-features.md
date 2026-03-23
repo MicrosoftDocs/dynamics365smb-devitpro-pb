@@ -26,9 +26,15 @@ However, these features are only optional for a while. The period in which they'
 
 ## 2026 release wave 1 (version 28)
 
+### Features mandatory in version 28
+
+These features are no longer controlled in **Feature management**, so they can't be disabled.
+
+- [Feature: Enable MCP Server access](https://go.microsoft.com/fwlink/?linkid=2336932) (**Note:** In 28.0, this feature is listed in **Feature Management** as **Enabled for all users**. However, disabling the feature has no effect. The feature will be removed from Feature Management in a future update.)
+
 ### New features added and enabled by default in version 28
 
-- Feature Update: Improved performance in Trial Balance-related Excel reports - Enables performance enhancements on Trial Balance-related Excel reports. Learn more in [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting).
+- [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting).
 
 ### New features added and disabled by default in version 28
 
