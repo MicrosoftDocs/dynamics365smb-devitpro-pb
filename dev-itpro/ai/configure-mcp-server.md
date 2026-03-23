@@ -2,13 +2,14 @@
 title: Configure Business Central MCP Server
 description: Learn how to configure the Business Central MCP Server to enable AI agents to access and interact with your Business Central data and processes.
 ms.topic: how-to
-ms.date: 02/19/2026
+ms.date: 03/02/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: 
 ms.search.form: 8350_Primary, 8351_Primary, 
 ---
+
 # Configure Business Central MCP Server
 
 > **APPLIES TO:** Business Central online
@@ -57,6 +58,9 @@ Once the MCP server is enabled and configured, the individual configurations bec
 1. In the **Available Tools** section, add API page objects as tools to the configuration.
 
    To add a page, set the **Object ID** field and then select the permissions as described in the table. To automatically add all Business Central API pages as tools, select **Add All Standard APIs as Tools**.
+
+   > [!NOTE]
+   > API pages of subtype `ListPart` and `CardPart` aren't currently supported as MCP tools. Only top-level API pages can be added to MCP Server configurations.
 
    |Permission|Description|
    |-|-|
