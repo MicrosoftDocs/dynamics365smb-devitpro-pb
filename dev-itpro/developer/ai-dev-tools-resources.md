@@ -4,7 +4,7 @@ description: Learn how you can use the developer tools for Copilot in Business C
 author: pborring
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: concept-article
+ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-copilot
