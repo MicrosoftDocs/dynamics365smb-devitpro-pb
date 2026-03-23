@@ -2,7 +2,7 @@
 title: "Page, Page fields, and Page extension properties"
 description: "This article lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
-ms.date: 09/19/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -38,9 +38,9 @@ The following properties all apply to the Page object, only some of these proper
 |[AutoSplitKey property](devenv-autosplitkey-property.md)| | -Request Page <br />  -Page <br /> |
 |[BlankNumbers property](devenv-blanknumbers-property.md)| | -Table field <br />  -Page Field <br /> |
 |[BlankZero property](devenv-blankzero-property.md)| True| -Table field <br />  -Page Field <br /> |
-|[Caption property](devenv-caption-property.md)| True| -Table <br />  -Table field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Report Column <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
+|[Caption property](devenv-caption-property.md)| True| -Table <br />  -Table field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Page Analysis View <br />  -Report Column <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
 |[CaptionClass property](devenv-captionclass-property.md)| True| -Table field <br />  -Page Label <br />  -Page Field <br /> |
-|[CaptionML property](devenv-captionml-property.md)| True| -Table <br />  -Table field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Report Column <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
+|[CaptionML property](devenv-captionml-property.md)| True| -Table <br />  -Table field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Page Analysis View <br />  -Report Column <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
 |[CardPageId property](devenv-cardpageid-property.md)| True| -Request Page <br />  -Page <br /> |
 |[ChangeTrackingAllowed property](devenv-changetrackingallowed-property.md)| | -Page <br /> |
 |[CharAllowed property](devenv-charallowed-property.md)| | -Table field <br />  -Page Field <br /> |
@@ -57,6 +57,7 @@ The following properties all apply to the Page object, only some of these proper
 |[DataCaptionFields property](devenv-datacaptionfields-property.md)| True| -Table <br />  -Request Page <br />  -Page <br /> |
 |[DateFormula property](devenv-dateformula-property.md)| | -Table field <br />  -Page Field <br /> |
 |[DecimalPlaces property](devenv-decimalplaces-property.md)| | -Table field <br />  -Page Field <br />  -Report Column <br /> |
+|[DefinitionFile property](devenv-definitionfile-property.md)| | -Page Analysis View <br /> |
 |[DelayedInsert property](devenv-delayedinsert-property.md)| | -Page <br /> |
 |[DeleteAllowed property](devenv-deleteallowed-property.md)| True| -Request Page <br />  -Page <br /> |
 |[Description property](devenv-description-property.md)| True| -Codeunit <br />  -Table field <br />  -Table key <br />  -Page <br />  -Page Action <br />  -Page Action Area <br />  -Page Action Group <br />  -Page Area <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Query <br />  -Query Column <br />  -Query Data Item <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Table <br />  -Xml Port <br />  -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br />  -Profile <br /> |
@@ -155,13 +156,13 @@ The following properties all apply to the Page object, only some of these proper
 |[SubPageView property](devenv-subpageview-property.md)| | -Page Part <br />  -Page System Part <br />  -Page Chart Part <br /> |
 |[TableRelation property](devenv-tablerelation-property.md)| True| -Table field <br />  -Page Field <br /> |
 |[Title property](devenv-title-property.md)| | -Page Field <br /> |
-|[ToolTip property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
-|[ToolTipML property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTip property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTipML property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
 |[TreeInitialState property](devenv-treeinitialstate-property.md)| True| -Page Group <br /> |
 |[UpdatePropagation property](devenv-updatepropagation-property.md)| | -Page Part <br />  -Page System Part <br />  -Page Chart Part <br /> |
 |[UsageCategory property](devenv-usagecategory-property.md)| | -Query <br />  -Page <br />  -Report <br /> |
 |[ValuesAllowed property](devenv-valuesallowed-property.md)| | -Table field <br />  -Page Field <br /> |
-|[Visible property](devenv-visible-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Ref <br />  -Page Custom Action <br />  -Page File Upload Action <br />  -Page View <br />  -Page User Control <br /> |
+|[Visible property](devenv-visible-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Ref <br />  -Page Custom Action <br />  -Page File Upload Action <br />  -Page View <br />  -Page Analysis View <br />  -Page User Control <br /> |
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

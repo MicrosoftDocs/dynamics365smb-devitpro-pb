@@ -4,7 +4,7 @@ description: Includes code for an example extension, complete with new objects, 
 author: jswymer
 ms.author: jswymer
 ms.reviewer: solsen
-ms.date: 06/10/2024
+ms.date: 03/16/2026
 ms.topic: install-set-up-deploy
 ms.collection: get-started
 ms.custom: sfi-ropc-nochange
@@ -121,6 +121,11 @@ page 50101 "Reward Card"
     // The source table shows data from the "Reward" table.
     SourceTable = Reward;
 
+    // ApplicationArea sets the application area that applies to the page.
+    // Setting the property to All means that all controls 
+    // will always appear in the user interface.
+    ApplicationArea = All;
+
     // The layout describes the visual parts on the page.
     layout
     {
@@ -130,21 +135,14 @@ page 50101 "Reward Card"
             {
                 field("Reward Id"; Rec."Reward ID")
                 {
-                    // ApplicationArea sets the application area that 
-                    // applies to the page field and action controls. 
-                    // Setting the property to All means that the control 
-                    // will always appear in the user interface.
-                    ApplicationArea = All;
                 }
 
                 field(Description; Rec.Description)
                 {
-                    ApplicationArea = All;
                 }
 
                 field("Discount Percentage"; Rec."Discount Percentage")
                 {
-                    ApplicationArea = All;
                 }
             }
         }
@@ -177,6 +175,9 @@ page 50102 "Reward List"
     // This will allow users to open records from the list in the "Reward Card" page.
     CardPageId = "Reward Card";
 
+    // ApplicationArea is set at the page level so all controls inherit it.
+    ApplicationArea = All;
+
     layout
     {
         area(content)
@@ -185,17 +186,14 @@ page 50102 "Reward List"
             {
                 field("Reward ID"; Rec."Reward ID")
                 {
-                    ApplicationArea = All;
                 }
 
                 field(Description; Rec.Description)
                 {
-                    ApplicationArea = All;
                 }
 
                 field("Discount Percentage"; Rec."Discount Percentage")
                 {
-                    ApplicationArea = All;
                 }
             }
         }
@@ -525,7 +523,7 @@ For more information about writing and running upgrade code, see [Upgrading exte
 [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. Create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource). Now, add the Application Insights connection string to the extension manifest (app.json file):
 
 ```json
-"applicationInsightConnectionString": "<connection string>"
+"applicationInsightsConnectionString": "<connection string>"
 ```
 
 Replace `<connection string>` with your connection string.
