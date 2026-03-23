@@ -84,7 +84,7 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 |Electronic documents|[Link inbound e-documents to purchase invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/link-inbound-e-documents-purchase-invoices)|General availability|
 ||[Set a default e-document type on vendor templates](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/set-default-e-document-type-vendor-templates)|General availability|
 ||[Set up Service Participants to Company Information](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/set-up-service-participants-company-information)|General availability|
-|Financial Management|[Calculate taxes for plastic and sugar](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/calculate-taxes-plastic-sugar)|Public preview|
+|Financial management|[Calculate taxes for plastic and sugar](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/calculate-taxes-plastic-sugar)|Public preview|
 ||[Calculate withholding taxes for vendors](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/calculate-withholding-taxes-vendors)|Public preview|
 ||Reduce time spent on recurring invoicing in Subscription Billing|General availability|
 ||[Use self-billed invoices](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-self-billed-invoices)|Public preview|
@@ -117,7 +117,7 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 ||[Reverse drop shipments when sales and purchase documents aren't invoiced](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/reverse-drop-shipments-when-sales-purchase-documents-arent-invoiced)|General availability|
 ||[Send posted sales shipments and return receipts by email](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/send-posted-sales-shipments-return-receipts-email)|General availability|
 ||Use date formulas to control allowed posting periods|General availability|
-|Sustainability Management|[Use new APIs in Sustainability for better integration](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-apis-sustainability-better-integration)|Public preview|
+|Sustainability management|[Use new APIs in Sustainability for better integration](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-apis-sustainability-better-integration)|Public preview|
 ||[Use new sales document report layouts that show your carbon footprint](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-new-sales-document-reports-layout-that-show-carbon-footprint)|General availability|
 
 ## Changes to optional features in Feature Management
