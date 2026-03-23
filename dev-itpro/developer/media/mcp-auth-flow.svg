@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="580" viewBox="0 0 1100 580" role="img"
+     aria-label="Business Central MCP authentication sequence using PRM and OAuth 2.0 Authorization Code with PKCE">
+  <style>
+    text {
+      font-family: Segoe UI, Arial, sans-serif;
+      font-size: 14px;
+      fill: #242424;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .line {
+      stroke: #8A8886;
+      stroke-width: 1;
+    }
+    .arrow {
+      stroke: #0078D4;
+      stroke-width: 1.6;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .dashed {
+      stroke-dasharray: 6,4;
+    }
+    .step {
+      font-weight: 600;
+    }
+    .subtle {
+      fill: #605E5C;
+      font-size: 12px;
+    }
+    .endpoint {
+      fill: #323130;
+      font-size: 12px;
+    }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="9.5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="550" y="32" text-anchor="middle" class="title">
+    Business Central MCP authentication flow
+  </text>
+  <text x="550" y="52" text-anchor="middle" class="subtle">
+    401 challenge, PRM discovery, OAuth 2.0 Authorization Code with PKCE
+  </text>
+
+  <!-- Participants -->
+  <text x="150" y="92" text-anchor="middle">MCP client</text>
+
+  <text x="420" y="92" text-anchor="middle">MCP server</text>
+  <text x="420" y="112" text-anchor="middle" class="endpoint">
+    https://mcp.businesscentral.dynamics.com
+  </text>
+
+  <text x="690" y="92" text-anchor="middle">PRM endpoint</text>
+  <text x="690" y="112" text-anchor="middle" class="subtle">
+    /.well-known/protected-resource-metadata
+  </text>
+
+  <text x="960" y="92" text-anchor="middle">Microsoft Entra ID</text>
+
+  <!-- Lifelines -->
+  <line x1="150" y1="130" x2="150" y2="540" class="line"/>
+  <line x1="420" y1="130" x2="420" y2="540" class="line"/>
+  <line x1="690" y1="130" x2="690" y2="540" class="line"/>
+  <line x1="960" y1="130" x2="960" y2="540" class="line"/>
+
+  <!-- 1 -->
+  <path d="M150 160 L420 160" class="arrow"/>
+  <text x="285" y="148" text-anchor="middle">
+    <tspan class="step">1.</tspan> Unauthenticated request
+  </text>
+
+  <!-- 2 -->
+  <path d="M420 200 L150 200" class="arrow dashed"/>
+  <text x="285" y="188" text-anchor="middle">
+    <tspan class="step">2.</tspan> 401 Unauthorized
+  </text>
+  <text x="285" y="208" text-anchor="middle" class="subtle">
+    WWW-Authenticate → PRM
+  </text>
+
+  <!-- 3 -->
+  <path d="M150 245 L690 245" class="arrow"/>
+  <text x="420" y="236" text-anchor="middle">
+    <tspan class="step">3.</tspan> Retrieve PRM document
+  </text>
+
+  <path d="M690 285 L150 285" class="arrow dashed"/>
+  <text x="420" y="276" text-anchor="middle">
+    PRM response
+  </text>
+  <text x="420" y="296" text-anchor="middle" class="subtle">
+    Identifies Microsoft Entra ID as authorization server
+  </text>
+
+  <!-- 4 -->
+  <path d="M150 335 L960 335" class="arrow"/>
+  <text x="555" y="325" text-anchor="middle">
+    <tspan class="step">4.</tspan> Authorization request (OAuth 2.0 + PKCE)
+  </text>
+  <text x="555" y="345" text-anchor="middle" class="subtle">
+    code_challenge, user sign-in
+  </text>
+
+  <path d="M960 375 L150 375" class="arrow dashed"/>
+  <text x="555" y="365" text-anchor="middle">
+    Authorization code
+  </text>
+
+  <path d="M150 415 L960 415" class="arrow"/>
+  <text x="555" y="405" text-anchor="middle">
+    Token request (code + code_verifier)
+  </text>
+
+  <path d="M960 455 L150 455" class="arrow dashed"/>
+  <text x="555" y="445" text-anchor="middle">
+    Access token
+  </text>
+
+  <!-- 5 -->
+  <path d="M150 495 L420 495" class="arrow"/>
+  <text x="285" y="485" text-anchor="middle">
+    <tspan class="step">5.</tspan> Authorized requests
+  </text>
+  <text x="285" y="505" text-anchor="middle" class="subtle">
+    Authorization: Bearer &lt;access_token&gt;
+  </text>
+</svg>

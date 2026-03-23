@@ -26,7 +26,9 @@ Business Central provides an MCP server at `https://mcp.businesscentral.dynamics
 - **Microsoft 365 Copilot**: Natural language queries and actions within your Microsoft 365 workspace using agents
 - **Visual Studio Code**: AI-assisted development and data exploration with GitHub Copilot
 - **Copilot Studio**: Custom agents that integrate Business Central capabilities
-- **Non-Microsoft AI clients**: Claude, ChatGPT, and other MCP-compatible applications
+- **Non-Microsoft MCP clients**: Claude, ChatGPT, and other MCP-compatible applications
+
+![Shows how MCP clients connect to Business Central](../developer/media/mcp-client-server.svg)
 
 <!--
 ## Prerequisites
@@ -62,7 +64,7 @@ An MCP client is an AI application that can connect to the Business Central MCP 
 
 - Visual Studio Code with GitHub Copilot
 - Copilot Studio
-- Other clients that comply with [Model Context Protocol](https://modelcontextprotocol.io/specification/2025-11-25), like Claude, ChatGPT, and MCP Inspector.
+- Other clients that comply with [Model Context Protocol specification](https://modelcontextprotocol.io/specification/2025-11-25), for example Claude, ChatGPT, and MCP Inspector.
 
 ## How MCP clients connect to MCP server
 
@@ -77,7 +79,7 @@ How you connect depends on the client you're using.
 - Visual Studio Code uses Visual Studio Code's preregistered Microsoft Entra ID application. Learn more in [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
 - Copilot Studio handles authentication through Power Platform Connector framework. Learn more in [Connect from Copilot Studio](create-agent-in-copilot-studio.md)
 
-**Other MCP clients** require more setup. You must register an application in Microsoft Entra ID and configure the client with your application credentials and environment details. Learn more in [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md.md).
+**Other MCP clients** require more setup. You must register an application in Microsoft Entra ID and configure the client with your application credentials and environment details. Learn more in [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md).
 
 ### Required environment details
 
@@ -90,27 +92,23 @@ All MCP clients connecting to Business Central need to specify which environment
 | `Company` | The company name within the environment | `CRONUS USA, Inc.` |
 | `ConfigurationName` | (Optional) The MCP server configuration to use | `SalesTeamConfig` |
 
-### How the connection works
+### How the connection and authentication work
 
-The Business Central MCP server acts as a bridge between AI clients and your Business Central data:
+The Business Central MCP server acts as a bridge between MCP clients and your Business Central data. Business Central MCP authentication follows the standard [MCP authentication specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) with Microsoft Entra ID as the authorization server:
 
-```
-MCP client (Visual Studio Code, Copilot Studio, Claude)
-    ↓ (MCP Protocol)
-Business Central MCP Server (https://mcp.businesscentral.dynamics.com)
-    ↓ (Business Central APIs)
-Your Business Central Environment (data and business logic)
-```
+![Shows how MCP clients connect to Business Central](../developer/media/mcp-auth-flow.svg)
 
-### Authentication flow
+1. The MCP client sends an unauthenticated request to the MCP server.
+2. The server responds with `401 Unauthorized` and a `WWW-Authenticate` header pointing to the Protected Resource Metadata (PRM) endpoint.
+3. The client retrieves the PRM document from `https://mcp.businesscentral.dynamics.com/.well-known/protected-resource-metadata`, which identifies Microsoft Entra ID as the authorization server.
+4. The client performs the OAuth 2.0 Authorization Code flow with [PKCE (RFC 7636)](https://datatracker.ietf.org/doc/html/rfc7636):
+    - Generates a `code_verifier` and `code_challenge`
+    - Redirects the user to the Entra ID authorization endpoint
+    - Exchanges the returned authorization code (along with the `code_verifier`) for an access token
+5. The client includes the access token in subsequent requests to the MCP server, making authorized requests on the user's behalf
 
-Business Central MCP uses Microsoft Entra ID for secure authentication:
-
-1. The AI client attempts to connect to the MCP server
-1. The server responds with authentication requirements (Microsoft Entra ID)
-1. The client redirects you to sign in with your Microsoft account
-1. Microsoft Entra ID issues an access token to the client
-1. The client uses this token to make authorized requests on your behalf
+> [!NOTE]
+> Because Entra ID does not support Dynamic Client Registration (DCR), the standard MCP DCR step is skipped. Microsoft-provided clients, like Visual Studio Code, built-in Microsoft applicationIDs. Non-Microsoft  clients require custom application registration in Microsoft Entra ID. Learn 
 
 This process ensures that:
 
