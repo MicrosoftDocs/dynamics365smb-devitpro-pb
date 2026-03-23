@@ -25,7 +25,7 @@ This article gives instructions for configuring the Business Central MCP server 
 Before you begin, ensure the following requirements are met:
 
 - Visual Studio Code installed with GitHub Copilot extension
-- Access to a Business Central online environment enabled with the MCP server. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+- Access to a Business Central online environment configured with the MCP server. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
 - Connection string details for MCP server configuration you want to use for agents (TenantId, EnvironmentName, Company, and ConfigurationName).
 
   You can get the complete MCP server configuration connection string directly from the Business Central web client. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
