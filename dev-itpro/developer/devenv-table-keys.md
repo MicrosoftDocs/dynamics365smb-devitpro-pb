@@ -35,6 +35,10 @@ The primary key is always active. SQL Server keeps the table sorted in primary k
 > [!NOTE]  
 > In the development environment, it's technically possible to create a primary key based on up to 20 fields. However, because of SQL Server limitations, only the first 16 are used.
 
+### Automatic key splitting
+
+When the [AutoSplitKey](properties/devenv-autosplitkey-property.md) property is enabled on a page, a value is automatically calculated for the last field of the primary key so that a new record is inserted between two adjacent records. Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1, the platform can also generate negative key values when a row is inserted before the first record in the list. The value 0 is not generated as a key value.
+
 ## Secondary keys
 
 In a table object, any keys defined after the primary key are called *secondary keys*. All keys defined in a table extension object are considered secondary keys.

@@ -2,7 +2,7 @@
 title: What's New or Changed in Business Central 2026 release wave 1 - Update 28.0 preview
 description: Get an overview of new and changed capabilities in the 28.0 update of Business Central online, which is part of 2026 release wave 1.
 ms.author: jswymer
-ms.date: 03/09/2026
+ms.date: 03/23/2026
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
@@ -107,7 +107,7 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 | | [Create purchase quotes for contacts](preview-feature-details.md#create-purchase-quotes-for-contacts) | General availability |
 | | [Define item attributes for item variants](preview-feature-details.md#define-item-attributes-for-item-variants) | General availability |
 | | [Experience improved usability in manufacturing](preview-feature-details.md#experience-improved-usability-in-manufacturing) | General availability |
-| | [Evaluate the quality of goods and materials](preview-feature-details.md#evaluate-the-quality-of-goods-and-materials) | Public preview |
+| | [Evaluate the quality of goods and materials](preview-feature-details.md#evaluate-the-quality-of-goods-and-materials) | General availability |
 | | [Filter receipt and shipment lines to quickly find the documents you want to invoice](preview-feature-details.md#filter-receipt-and-shipment-lines-to-quickly-find-the-documents-you-want-to-invoice) | General availability |
 | | [Match purchase invoices to multiple order and receipt lines](preview-feature-details.md#match-purchase-invoices-to-multiple-order-and-receipt-lines) | General availability |
 | | [Post purchase invoices for drop shipments independently of related sales invoices](preview-feature-details.md#post-purchase-invoices-for-drop-shipments-independently-of-related-sales-invoices) | General availability |
