@@ -133,19 +133,6 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650)
 
-## Upgrade to 28.0
-
-### Online customers
-
-- New customers get Business Central version 28.0 automatically.
-- Existing customers are notified when update 28.0 is available. Admins can schedule update 28.0 to any date within the 5-month update period, which ends on August 31, 2026.
-
-Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
-
-### On-premises customers
-
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 28. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 28](../upgrade/upgrade-considerations-v26.md).
-
 ## On-premises download packages
 
 Select and download the package for the appropriate country or region version from Microsoft Support.
@@ -181,7 +168,7 @@ Select and download the package for the appropriate country or region version fr
 ### Online customers
 
 - New customers get Business Central version 28.0 automatically.
-- Existing customers are notified when update 28.0 is available. Admins can schedule update 28.0 to any date within the 5-month update period, which ends on February 28, 2026 for version 28.
+- Existing customers are notified when update 28.0 is available. Admins can schedule update 28.0 to any date within the 5-month update period, which ends on August 31, 2026.
 
 Learn more in [Major updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
 
@@ -202,14 +189,6 @@ The Business Central Launch Event has transformed into the Business Central Laun
 - BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
 - 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - BCLE 2026 release wave 1 group on Viva Engage for asking questions to our product experts: [BCLE 2026 release wave 1]()
-
-### AI-powered enhancements
-
-Watch this video to learn about AI-powered features and enhancements coming soon.
-
-<!--summary video start-->
-> [!VIDEO https://aka.ms/ReleaseHighlight/2026W1/BusinessCentral]
-<!--summary video end-->
 
 ### Discover all partner related resources
 
