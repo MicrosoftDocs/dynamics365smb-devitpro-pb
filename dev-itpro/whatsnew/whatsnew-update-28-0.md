@@ -56,7 +56,7 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 
 |Product area|Feature|Public preview/General availability|
 |-|-|-|
-|Application|External Storage support for document attachments|General availability|
+|Application|External storage support for document attachments|General availability|
 |Copilot and agents|[Connect AI agents to Business Central through MCP server](../ai/mcp-overview.md)|
 ||[Discover emails in the mailbox that have been processed by Payables Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/discover-emails-mailbox-that-have-been-processed-payables-agent)|General availability|
 ||Get item insights with advanced KPIs and Summary|General availability|
