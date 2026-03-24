@@ -23,9 +23,8 @@ An **MCP server** is a service that implements the Model Context Protocol, expos
 
 Business Central provides an MCP server at `https://mcp.businesscentral.dynamics.com` that enables AI clients to interact with your Business Central environments. This capability allows customers and employees to conversationally engage with Business Central data and logic from various channels, such as:
 
-- **Microsoft 365 Copilot**: Natural language queries and actions within your Microsoft 365 workspace using agents
 - **Visual Studio Code**: AI-assisted development and data exploration with GitHub Copilot
-- **Copilot Studio**: Custom agents that integrate Business Central capabilities
+- **Copilot Studio**: Create custom agents that use natural language to query and perform actions on Business Central, and can integrate within your Microsoft 365 Copilot environment.
 - **Non-Microsoft MCP clients**: Claude, ChatGPT, and other MCP-compatible applications
 
 ![Shows how MCP clients connect to Business Central](../developer/media/mcp-client-server.svg)
@@ -99,16 +98,16 @@ The Business Central MCP server acts as a bridge between MCP clients and your Bu
 ![Shows how MCP clients connect to Business Central](../developer/media/mcp-auth-flow.svg)
 
 1. The MCP client sends an unauthenticated request to the MCP server.
-2. The server responds with `401 Unauthorized` and a `WWW-Authenticate` header pointing to the Protected Resource Metadata (PRM) endpoint.
-3. The client retrieves the PRM document from `https://mcp.businesscentral.dynamics.com/.well-known/protected-resource-metadata`, which identifies Microsoft Entra ID as the authorization server.
-4. The client performs the OAuth 2.0 Authorization Code flow with [PKCE (RFC 7636)](https://datatracker.ietf.org/doc/html/rfc7636):
+1. The server responds with `401 Unauthorized` and a `WWW-Authenticate` header pointing to the Protected Resource Metadata (PRM) endpoint.
+1. The client retrieves the PRM document from `https://mcp.businesscentral.dynamics.com/.well-known/protected-resource-metadata`, which identifies Microsoft Entra ID as the authorization server.
+1. The client performs the OAuth 2.0 Authorization Code flow with [PKCE (RFC 7636)](https://datatracker.ietf.org/doc/html/rfc7636):
     - Generates a `code_verifier` and `code_challenge`
-    - Redirects the user to the Entra ID authorization endpoint
+    - Redirects the user to the Microsoft Entra ID authorization endpoint
     - Exchanges the returned authorization code (along with the `code_verifier`) for an access token
-5. The client includes the access token in subsequent requests to the MCP server, making authorized requests on the user's behalf
+1. The client includes the access token in subsequent requests to the MCP server, making authorized requests on the user's behalf
 
 > [!NOTE]
-> Because Entra ID does not support Dynamic Client Registration (DCR), the standard MCP DCR step is skipped. Microsoft-provided clients, like Visual Studio Code, built-in Microsoft applicationIDs. Non-Microsoft  clients require custom application registration in Microsoft Entra ID. Learn 
+> Because Microsoft Entra ID doesn't support Dynamic Client Registration (DCR), the standard MCP DCR step is skipped. Microsoft-provided clients, like Visual Studio Code, built-in Microsoft applicationIDs. Non-Microsoft  clients require custom application registration in Microsoft Entra ID. Learn 
 
 This process ensures that:
 
