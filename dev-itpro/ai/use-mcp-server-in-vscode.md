@@ -38,18 +38,18 @@ This article gives instructions for configuring the Business Central MCP server 
 ## Set up the MCP Server in Visual Studio Code
 
 1. Open Visual Studio Code.
-1. Open the MCP server configuration file at either the user or workspace level, depending on whether you want the configuration available globally or only for a specific project:
+1. You can configure the MCP server in Visual Studio Code at either the user level or the workspace level, depending on whether you want the configuration to apply globally or only to a specific project.
 
    **User-level configuration:**
 
-   Use if you want the MCP server configuration available in every file, folder, or project you open:
+   Follow these steps if you want the MCP server configuration available in every file, folder, or workspace:
 
    1. Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open Command Palette.
    1. In search, enter and select **MCP: Open User Configuration**.
 
    **Workspace-level configuration:**
 
-   Use if you want to use the MCP server configuration in a project or repo. Projects can have different MCP servers/endpoints:
+   Follow these steps if you want the MCP server configuration to apply only to a specific folder or workspace.
 
    1. Open the root folder of the workspace or project
    1. In this folder, create a folder named `.vscode` if it doesn't already exist.  
