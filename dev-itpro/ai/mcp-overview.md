@@ -15,47 +15,37 @@ ms.collection:
 
 > **APPLIES TO:** Business Central online
 
-The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open protocol that standardizes how AI applications communicate with data sources and tools. It provides a universal way for AI applications—like Copilot Studio, GitHub Copilot, Claude, ChatGPT, and custom agents—to securely access and interact with external systems, like Business Central.
+The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open standard that defines how AI applications communicate with data sources and tools. It provides a consistent and secure way for AI clients&mdash;such as Copilot Studio, GitHub Copilot, Claude, ChatGPT, and custom agents&mdash;to access and interact with external systems like Business Central.
 
 ## Business Central MCP Server
 
 An **MCP server** is a service that implements the Model Context Protocol, exposing an application's data and functionality to AI clients. When an AI client connects to an MCP server, it can read data, perform actions, and integrate that application's capabilities directly into conversational workflows—all through a standardized interface.
 
-Business Central provides an MCP server at `https://mcp.businesscentral.dynamics.com` that enables AI clients to interact with your Business Central environments. This capability allows customers and employees to conversationally engage with Business Central data and logic from various channels, such as:
+The Business Central MCP server enables AI clients to interact with Business Central environments, allowing customers and employees to conversationally work with Business Central data and business logic from various channels, including:
 
 - **Visual Studio Code**: AI-assisted development and data exploration with GitHub Copilot
-- **Copilot Studio**: Create custom agents that use natural language to query and perform actions on Business Central, and can integrate within your Microsoft 365 Copilot environment.
-- **Non-Microsoft MCP clients**: Claude, ChatGPT, and other MCP-compatible applications
+- **Copilot Studio**: Create custom agents that use natural language to query data and perform actions in Business Central, and integrate with Microsoft 365 Copilot
+- **Non-Microsoft MCP clients**:  MCP‑compatible clients such as Claude and ChatGPT
 
 ![Shows how MCP clients connect to Business Central](../developer/media/mcp-client-server.svg)
 
-<!--
-## Prerequisites
-
-Before you can use the Business Central MCP server, you must meet the following prerequisites:
-
-- **Business Central online**: The MCP server is available for Business Central online environments
-- **MCP-compatible client**: An application that supports the Model Context Protocol
-- **User account**: A Business Central user account with appropriate permissions
-- **MCP server configuration**: At least one configuration created by an administrator (for write operations)-->
-
 ## What the MCP Server can do
 
-By default, the Business Central MCP Server gives AI clients read-only access to all exposed Business Central API pages. This means that without any extra setup, MCP clients can immediately read data from your Business Central environment.
+By default, the Business Central MCP server provides read-only access to all exposed Business Central API pages. With no extra configuration, MCP clients can immediately read data from your Business Central environment.
 
-To enable agents to create, modify, or delete data, administrators must configure the MCP Server. Configuration involves:
+To allow agents to create, modify, or delete data, administrators must configure the MCP server. Configuration includes:
 
-- Adding specific API page objects to configurations
-- Defining which operations are allowed (read, create, modify, delete, bound actions)
-- Setting up permissions that control what data agents can access
+- Adding specific API page objects
+- Defining allowed operations (read, create, modify, delete, bound actions)
+- Assigning permissions to control what data agents can access
 
-Once configured, these operations become available as "tools" that agents can use to:
+Once configured, these capabilities are exposed to agents as tools, which they can use to:
 
-- **View and manage records**: List, create, update, and delete entities like customers, items, or sales orders
-- **Execute business processes**: Post documents, change statuses, and run business logic
-- **Answer natural language queries**: Provide conversational access to your Business Central data
+- View and manage records – List, create, update, and delete entities such as customers, items, and sales orders
+- Execute business processes – Post documents, change statuses, and run business logic
+- Answer natural language queries – Provide conversational access to Business Central data
 
-The specific capabilities available to agents depend on how you configure the MCP server and what permissions you define for each API. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+The capabilities available to agents depend on how the MCP server is configured and the permissions assigned to each API. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
 
 ## Supported MCP Clients
 
@@ -86,7 +76,7 @@ All MCP clients connecting to Business Central need to specify which environment
 
 | Detail | Description | Example |
 |--------|-------------|---------|
-| `TenantId` | Your Microsoft Entra tenant ID (GUID) | `00000000-0000-0000-0000-000000000000` |
+| `TenantId` | Your Microsoft Entra tenant ID (GUID) | `aaaabbbb-0000-cccc-1111-dddd2222eeee` |
 | `EnvironmentName` | The name of your Business Central environment | `Production` |
 | `Company` | The company name within the environment | `CRONUS USA, Inc.` |
 | `ConfigurationName` | (Optional) The MCP server configuration to use | `SalesTeamConfig` |
