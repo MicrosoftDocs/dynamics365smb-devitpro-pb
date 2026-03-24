@@ -1,6 +1,6 @@
 ---
-title: Use the Business Central MCP Server in Visual Studio Code
-description: Learn how to set up and use the Business Central Model Context Protocol (MCP) server in Visual Studio Code to interact with your Business Central data through natural language.
+title: onnect to Business Central MCP Server with Visual Studio Code
+description: Learn how to set up and use the Business Central MCP server in Visual Studio Code to interact with your Business Central data through natural language.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -16,9 +16,7 @@ ms.collection:
 
 > **APPLIES TO:** Business Central online
 
-The Business Central Model Context Protocol (MCP) server enables developers and business users to interact with Business Central data directly from Visual Studio Code using natural language. This integration allows you to perform common business operations&mdash;such as viewing customers, creating items, and processing sales orders&mdash;through conversational AI assistance.
-
-This article gives instructions for configuring the Business Central MCP server in Visual Studio Code and using it for AI-powered natural language queries to manage your business data. Learn more about the MCP Server in [Configure Business Central MCP Server](configure-mcp-server.md).
+The Business Central Model Context Protocol (MCP) server lets developers and business users interact with Business Central data directly from Visual Studio Code by using natural language through GitHub Copilot. With this integration, you can perform common business operations&mdash;such as viewing customers, creating items, and processing sales orders&mdash;through conversational AI assistance. This article explains how to configure the Business Central MCP server in Visual Studio Code and how to use it with GitHub Copilot to manage Business Central data. Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Central](mcp-overview.md).
 
 ## Prerequisites
 
@@ -94,7 +92,7 @@ This article gives instructions for configuring the Business Central MCP server 
 Once the MCP server is configured, you can interact with Business Central through GitHub Copilot Chat.
 
 1. In Visual Studio Code, open the GitHub Copilot Chat in the Agent mode (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>).
-1. In the Chat input boc, type a question or instructions like: "Can you list all items" or "list my customers".
+1. In the Chat input box, type a question or instructions like: "Can you list all items" or "list my customers".
 1. The agent starts working on a response, like fetching customer data.
 
    > [!NOTE]
