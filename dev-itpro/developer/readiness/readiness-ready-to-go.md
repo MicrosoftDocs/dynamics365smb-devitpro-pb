@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 03/02/2026
+ms.date: 03/24/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -103,7 +103,6 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
   - Watch videos comparing work in [Dynamics GP to Dynamics 365 Business Central](https://www.youtube.com/playlist?list=PL1FESh9FqyhQIVH-Tu2RdAAG13gcZ-a9B)
   - Marketing & campaign resources - [Event-in-a-box](https://dynamicspartners.transform.microsoft.com/download/protected?assetname=protectedassets%2FDynamics%20GP%20Migration%20Campaign%20in%20a%20Box.zip&download=1&protected=1&src=https:%2F%2Fdynamicspartners.transform.microsoft.com%2Fgtm%2Fsmb%2Fbusiness-central)
 
-
 ## AI innovation and Copilot
 
 ### Agents in Business Central
@@ -147,7 +146,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Automate: [aka.ms/BCAutomate](https://aka.ms/BCAutomate) 
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
-- [Prototype] Low code sync of [!INCLUDE [prod_short](../includes/prod_short.md)] entities to Dataverse: [aka.ms/bc2dataverse](https://aka.ms/BC2Dataverse)
+- [!INCLUDE [prod_short](../includes/prod_short.md)] and Copilot Studio: [aka.ms/BCCcopilotStudio](https://aka.ms/BCCcopilotStudio)
 
 ## Shopify
 
