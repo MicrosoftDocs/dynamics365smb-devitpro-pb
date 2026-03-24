@@ -73,9 +73,8 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 ||Use e-invoice formats for service invoices in Germany|Public preview|
 |Development|Download symbols from NuGet feed|General availability|
 ||[Evaluate AL coding agents with BC-Bench](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench)|General availability|
-||Run AL objects and open record references using fully qualified names|General availability|
+||[Run AL objects and open record references using fully qualified names](names)|General availability|
 ||Run AL tests from Visual Studio Code|General availability|
-||Use semantic search on data and metadata|General availability|
 |Ecommerce|[Assign custom collections to items exported to Shopify](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/assign-custom-collections-items-exported-shopify)|General availability|
 ||[Export items to Shopify with product options based on item attributes](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/export-items-shopify-product-options-based-item-attributes)|General availability|
 ||[Sync images of product variants between Business Central and Shopify](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/sync-images-product-variants-between-business-central-shopify)|General availability|
