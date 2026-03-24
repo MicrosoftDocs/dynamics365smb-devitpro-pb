@@ -821,7 +821,7 @@ New method overloads have been introduced to support running codeunits, pages, a
 
 ## Run AL Tests from Visual Studio Code
 
-You can now use the built in Text Explorer in Visual Studio Code to discover and run AL tests in the workspace. Read more about the Test Explorer and running tests in Visual Studio Code here https://code.visualstudio.com/docs/debugtest/testing
+You can now use the built in Test Explorer in Visual Studio Code to discover and run AL tests in the workspace. Read more about the Test Explorer and running tests in Visual Studio Code here https://code.visualstudio.com/docs/debugtest/testing
 
 Currently, only tests in the active workspace are added to the Test Explorer. The tests have to be published beforehand to a Business Central server before being run.
 
