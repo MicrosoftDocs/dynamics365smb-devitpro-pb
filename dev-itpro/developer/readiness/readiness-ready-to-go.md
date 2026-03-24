@@ -146,7 +146,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Automate: [aka.ms/BCAutomate](https://aka.ms/BCAutomate) 
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
-- [!INCLUDE [prod_short](../includes/prod_short.md)] and Copilot Studio: [aka.ms/BCCcopilotStudio](https://aka.ms/BCCcopilotStudio)
+- [!INCLUDE [prod_short](../includes/prod_short.md)] and Copilot Studio: [aka.ms/BCCcopilotStudio](https://aka.ms/BCCopilotStudio)
 
 ## Shopify
 
