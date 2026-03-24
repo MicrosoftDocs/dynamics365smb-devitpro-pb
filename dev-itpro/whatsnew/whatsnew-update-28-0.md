@@ -71,9 +71,9 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 ||[Transfer journal line descriptions to bank statements](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
 ||[Use carbon footprint with OIOUBL e-invoicing format](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-carbon-footprint-oioubl-e-invoicing-format)|General availability|
 ||Use e-invoice formats for service invoices in Germany|Public preview|
-|Development|Download symbols from NuGet feed|General availability|
+|Development|[Download symbols from NuGet feed](../developer/devenv-al-extension-configuration.md)|General availability|
 ||[Evaluate AL coding agents with BC-Bench](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench)|General availability|
-||[Run AL objects and open record references using fully qualified names](names)|General availability|
+||[Run AL objects and open record references using fully qualified names](../developer/devenv-namespaces-structure.md)|General availability|
 ||Run AL tests from Visual Studio Code|General availability|
 |Ecommerce|[Assign custom collections to items exported to Shopify](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/assign-custom-collections-items-exported-shopify)|General availability|
 ||[Export items to Shopify with product options based on item attributes](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/export-items-shopify-product-options-based-item-attributes)|General availability|
