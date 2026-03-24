@@ -22,11 +22,16 @@ This article gives instructions for configuring the Business Central MCP server 
 
 ## Prerequisites
 
-Before you begin, ensure the following requirements are met:
-
-- Visual Studio Code installed with GitHub Copilot extension
+- Visual Studio Code installed with the GitHub Copilot extension
 - Access to a Business Central online environment configured with the MCP server. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
-- Connection string details for MCP server configuration you want to use for agents (TenantId, EnvironmentName, Company, and ConfigurationName)
+- The MCP server connection string details, including the following values (required for setup only):
+
+   | Detail | Description | Example |
+   |--------|-------------|---------|
+   | `TenantId` | Your organization's Microsoft Entra tenant ID | `aaaabbbb-0000-cccc-1111-dddd2222eeee` |
+   | `EnvironmentName` | The name of your Business Central environment | `Production` |
+   | `Company` | The company name in Business Central to connect to| `CRONUS USA, Inc.` |
+   | `ConfigurationName` | (Optional) The MCP server configuration to use | `SalesTeamConfig` |
 
   You can get the complete MCP server configuration connection string directly from the Business Central web client. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
 
@@ -59,21 +64,17 @@ Before you begin, ensure the following requirements are met:
                 "url": "https://mcp.businesscentral.dynamics.com",
                 "type": "http",
                 "headers": {
-                    "TenantId": "your-tenant-id",
-                    "EnvironmentName": "your-environment-name",
-                    "Company": "your-company-name",
-                    "ConfigurationName": "your-configuration-name"
+                    "TenantId": "<Business-Central-tenant-id>",
+                    "EnvironmentName": "<Business-Central-environment-name>",
+                    "Company": "<Business-Central-company-name>",
+                    "ConfigurationName": "<mcp-server-configuration-name>"
                 }
             }
         }
     }
     ```
 
-   Replace the placeholder values with your actual Business Central environment details:
-   - `TenantId`: Your organization's Microsoft Entra tenant ID (for example, "aaaabbbb-0000-cccc-1111-dddd2222eeee")
-   - `EnvironmentName`: Your Business Central environment name (for example, "Production" or "Sandbox")
-   - `Company`: The company name in Business Central (for example, "CRONUS USA, Inc.")
-   - `ConfigurationName`: A name for the MCP configuration (for example, "MyMCPConfig")
+   Replace the placeholder `<>`values with your actual Business Central environment details. [Learn more](#prerequisites)
 
    > [!TIP]
    > If you copied the MCP server configuration connection string directly from the Business Central web client, paste the copy within `"servers": { }`. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
