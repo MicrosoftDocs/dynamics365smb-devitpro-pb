@@ -73,7 +73,7 @@ All MCP clients connect to the Business Central MCP server using the following e
 
 How you connect depends on the client you're using.
 
-**Microsoft MCP clients** include authentication support for Business Central MCP, so you don't need to register an application. You only need to configure the Business Central environment and MCP server configuration details in the client:
+**Microsoft MCP clients** include authentication support for Business Central MCP, including a default application registration in Microsoft Entra ID. You only need to configure the Business Central environment and MCP server configuration details in the client:
 
 - Visual Studio Code uses Visual Studio Code's preregistered Microsoft Entra ID application. Learn more in [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
 - Copilot Studio handles authentication through Power Platform Connector framework. Learn more in [Connect from Copilot Studio](create-agent-in-copilot-studio.md)
@@ -98,16 +98,16 @@ The Business Central MCP server acts as a bridge between MCP clients and your Bu
 ![Shows how MCP clients connect to Business Central](../developer/media/mcp-auth-flow.svg)
 
 1. The MCP client sends an unauthenticated request to the MCP server.
-1. The server responds with `401 Unauthorized` and a `WWW-Authenticate` header pointing to the Protected Resource Metadata (PRM) endpoint.
+1. The server responds with `401 Unauthorized` and a `WWW-Authenticate` header pointing to the protected resource metadata (PRM) endpoint.
 1. The client retrieves the PRM document from `https://mcp.businesscentral.dynamics.com/.well-known/protected-resource-metadata`, which identifies Microsoft Entra ID as the authorization server.
-1. The client performs the OAuth 2.0 Authorization Code flow with [PKCE (RFC 7636)](https://datatracker.ietf.org/doc/html/rfc7636):
+1. The client performs the OAuth 2.0 authorization code flow with [Proof Key for Code Exchange (PKCE - RFC 7636)](https://datatracker.ietf.org/doc/html/rfc7636):
     - Generates a `code_verifier` and `code_challenge`
     - Redirects the user to the Microsoft Entra ID authorization endpoint
     - Exchanges the returned authorization code (along with the `code_verifier`) for an access token
 1. The client includes the access token in subsequent requests to the MCP server, making authorized requests on the user's behalf
 
 > [!NOTE]
-> Because Microsoft Entra ID doesn't support Dynamic Client Registration (DCR), the standard MCP DCR step is skipped. Microsoft-provided clients, like Visual Studio Code, built-in Microsoft applicationIDs. Non-Microsoft  clients require custom application registration in Microsoft Entra ID. Learn 
+> Microsoft Entra ID doesn't support Dynamic Client Registration (DCR), so the standard MCP DCR step is skipped. Microsoft-provided MCP clients, such as Visual Studio Code and Copilot Studio, use a default Microsoft Entra ID application. Non-Microsoft clients require a custom application registration in Microsoft Entra ID.
 
 This process ensures that:
 
