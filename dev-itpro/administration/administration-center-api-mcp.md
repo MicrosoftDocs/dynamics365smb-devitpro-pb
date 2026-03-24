@@ -27,6 +27,10 @@ https://mcp.businesscentral.dynamics.com/admin/v1
 
 Connect to the MCP server in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers), [Copilot Studio](/microsoft-copilot-studio/mcp-add-existing-server-to-agent), or any other tool that supports MCP.
 
+## Multitenancy
+
+Partners administering environments for multiple customers using [granular delegated admin privileges (GDAP)](/partner-center/customers/gdap-introduction) may want to use this MCP server to administer environments across customer tenants. During public preview, this endpoint supports the same single-tenant authentication as other [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API endpoints. To facilitate multi-tenant administration, partners can use a MCP Proxy available on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/BcAdminMcpProxy) to specify different target tenants for their requests.
+
 ## Excluded tools
 
 The MCP server includes all tools available in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API, except for endpoints that might disrupt an environment if called unintentionally. The following API endpoints **are excluded during the public preview**:
