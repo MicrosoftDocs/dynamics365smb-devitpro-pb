@@ -26,7 +26,7 @@ Before you begin, ensure the following requirements are met:
 
 - Visual Studio Code installed with GitHub Copilot extension
 - Access to a Business Central online environment configured with the MCP server. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
-- Connection string details for MCP server configuration you want to use for agents (TenantId, EnvironmentName, Company, and ConfigurationName).
+- Connection string details for MCP server configuration you want to use for agents (TenantId, EnvironmentName, Company, and ConfigurationName)
 
   You can get the complete MCP server configuration connection string directly from the Business Central web client. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
 
@@ -90,8 +90,8 @@ Before you begin, ensure the following requirements are met:
 
 Once the MCP server is configured, you can interact with Business Central through GitHub Copilot Chat.
 
-1. Open the GitHub Copilot chat (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>) and set it to agent mode.
-1. In the Chat, ask a question or give instruction like: "Can you list all items" or "list my customers". 
+1. In Visual Studio Code, open the GitHub Copilot Chat in the Agent mode (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>).
+1. In the Chat input boc, type a question or instructions like: "Can you list all items" or "list my customers".
 1. The agent starts working on a response, like fetching customer data.
 
    > [!NOTE]
