@@ -31,29 +31,31 @@ This article gives instructions for configuring the Business Central MCP server 
    | `TenantId` | Your organization's Microsoft Entra tenant ID | `aaaabbbb-0000-cccc-1111-dddd2222eeee` |
    | `EnvironmentName` | The name of your Business Central environment | `Production` |
    | `Company` | The company name in Business Central to connect to| `CRONUS USA, Inc.` |
-   | `ConfigurationName` | (Optional) The MCP server configuration to use | `SalesTeamConfig` |
+   | `ConfigurationName` | (Optional) The MCP server configuration to use. | `SalesTeamConfig` |
 
   You can get the complete MCP server configuration connection string directly from the Business Central web client. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
 
 ## Set up the MCP Server in Visual Studio Code
 
 1. Open Visual Studio Code.
-1. You can configure the MCP server in Visual Studio Code at either the user level or the workspace level, depending on whether you want the configuration to apply globally or only to a specific project.
+1. Configure the MCP server either the user level or the workspace level, depending on whether you want the configuration to apply globally or only to a specific workspace:
 
-   **User-level configuration:**
+   # [User level (most common)](#tab/userlevel)
 
    Follow these steps if you want the MCP server configuration available in every file, folder, or workspace:
 
    1. Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open Command Palette.
    1. In search, enter and select **MCP: Open User Configuration**.
 
-   **Workspace-level configuration:**
+   # [Workspace-level](#tab/workspacelevel)
 
    Follow these steps if you want the MCP server configuration to apply only to a specific folder or workspace.
 
    1. Open the root folder of the workspace or project
    1. In this folder, create a folder named `.vscode` if it doesn't already exist.  
    1. In the `.vscode` folder, create a file called `mcp.json`.
+
+   ---
 
 1. Add the Business Central MCP server configuration connection string within the `"servers": { }` element of the `mcp.json` file as illustrated in the following json code.  
 
@@ -74,7 +76,7 @@ This article gives instructions for configuring the Business Central MCP server 
     }
     ```
 
-   Replace the placeholder `<>`values with your actual Business Central environment details. [Learn more](#prerequisites)
+   Replace the placeholder `<>` values with your actual Business Central environment details ([Learn more](#prerequisites)). Omit `"ConfigurationName"` or leave the value empty to give read-only access to all API pages.
 
    > [!TIP]
    > If you copied the MCP server configuration connection string directly from the Business Central web client, paste the copy within `"servers": { }`. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
