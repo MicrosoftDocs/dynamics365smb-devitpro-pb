@@ -19,7 +19,7 @@ dynamics365smb-devitpro/
 │   ├── api-reference/                #   Business Central REST API reference (v1.0, v2.0)
 │   ├── api-sustainability/           #   ESG and sustainability reporting APIs
 │   ├── auditing/                     #   Activity tracking and compliance auditing
-│   ├── compliance/                   #   AppSource validation and country compliance
+│   ├── compliance/                   #   AppSource validation and compliance
 │   ├── cside/                        #   Legacy C/SIDE development tools
 │   ├── deployment/                   #   Architecture, installation, system requirements
 │   ├── developer/                    #   AL language, extensions, testing, best practices
