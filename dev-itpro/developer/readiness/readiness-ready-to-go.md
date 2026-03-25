@@ -105,6 +105,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## AI innovation and Copilot
 
+- Discover all AI capabilities in Business Central: [AI in Business Central](/dynamics365/business-central/ai-in-bc)
+
 ### Agents in Business Central
 
 - Agent pitch deck - [aka.ms/BCAgentPitchDeck](https://aka.ms/BCAgentPitchDeck)
