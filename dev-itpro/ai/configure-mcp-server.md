@@ -7,7 +7,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: 
-ms.search.form: 8350_Primary, 8351_Primary, 
+ms.search.form: 8350_Primary, 8351_Primary, 8359, 
 ---
 
 # Configure Business Central MCP Server
