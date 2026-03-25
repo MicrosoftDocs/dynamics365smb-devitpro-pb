@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 02/05/2026
+ms.date: 03/24/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -11,7 +11,7 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The [!INCLUDE [prod_short](../includes/prod_short.md)] release wave 1 2026 public preview is just around the corner and will be available for public use on March 2. The new release brings many improvements and we're looking forward to your feedback. More updates coming soon — stay tuned!
+> The [!INCLUDE [prod_short](../includes/prod_short.md)] is in public preview. We need your help testing, providing feedback, and fine-tuning our upcoming release. Please report bugs and provide feedback on [aka.ms/BCPreviewBugs](https://aka.ms/BCPreviewBugs). Learn more in [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
@@ -22,7 +22,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Download 'What's new' partner deck: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK) 
 - Download BCLE Highlight videos: [aka.ms/BCHighlights](https://aka.ms/BCHighlights) 
 - Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
-- Move your on-premises customers to the cloud, find resources here: [https://aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- Move your on-premises customers to the cloud, find resources here: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Latest release and updates  
 
@@ -31,7 +31,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
 - Alert Microsoft on an upcoming regulatory feature: [aka.ms/BCAlerts](https://aka.ms/BCAlerts)
-- Optional features that are now mandatory [https://aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
+- Optional features that are now mandatory [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
 - Where is [!INCLUDE [prod_short](../includes/prod_short.md)] available? [aka.ms/BCCountries](https://aka.ms/BCCountries)
 
 ## Stay up to date
@@ -65,11 +65,11 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Go to market
 
-- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [www.business-central.com](https://www.business-central.com)  
+- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [www.businesscentral.com](https://www.businesscentral.com)  
 - Try [!INCLUDE [prod_short](../includes/prod_short.md)] for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
 - Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
-- Transact capability for [!INCLUDE [prod_short](../includes/prod_short.md)] Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
+- Transact capability for [!INCLUDE [prod_short](../includes/prod_short.md)] Apps on Microsoft Marketplace: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 - Find the capability guide: [aka.ms/BCCapabilities](https://aka.ms/BCCapabilities)
 - Find pitch decks: [aka.ms/BCPitchDecks](https://aka.ms/BCPitchDecks)  
 - Find Dynamics 365 icons and guidelines on usage: [aka.ms/Dynamics365Icons](https://aka.ms/Dynamics365Icons)
@@ -103,14 +103,17 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
   - Watch videos comparing work in [Dynamics GP to Dynamics 365 Business Central](https://www.youtube.com/playlist?list=PL1FESh9FqyhQIVH-Tu2RdAAG13gcZ-a9B)
   - Marketing & campaign resources - [Event-in-a-box](https://dynamicspartners.transform.microsoft.com/download/protected?assetname=protectedassets%2FDynamics%20GP%20Migration%20Campaign%20in%20a%20Box.zip&download=1&protected=1&src=https:%2F%2Fdynamicspartners.transform.microsoft.com%2Fgtm%2Fsmb%2Fbusiness-central)
 
-
 ## AI innovation and Copilot
+
+- AI capabilities in Business Central: [AI in Business Central](/dynamics365/business-central/ai-in-bc)
 
 ### Agents in Business Central
 
 - Agent pitch deck - [aka.ms/BCAgentPitchDeck](https://aka.ms/BCAgentPitchDeck)
 - Sales Order Agent overview (preview) [Learn more](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
-- Payable Agent overview (preview) [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
+- Sales Order Agent demo [aka.ms/SalesOrderAgentDemo](https://aka.ms/SalesOrderAgentDemo)
+- Payables Agent overview (preview) [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
+- Payables Agent demo [aka.ms/PayablesAgentDemo](https://aka.ms/PayablesAgentDemo)
 - Designing and coding agents (preview) [Learn more](../../ai/ai-development-toolkit-landing-page.yml)
 - Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
@@ -145,7 +148,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Automate: [aka.ms/BCAutomate](https://aka.ms/BCAutomate) 
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
-- [Prototype] Low code sync of [!INCLUDE [prod_short](../includes/prod_short.md)] entities to Dataverse: [aka.ms/bc2dataverse](https://aka.ms/BC2Dataverse)
+- [!INCLUDE [prod_short](../includes/prod_short.md)] and Copilot Studio: [aka.ms/BCCopilotStudio](https://aka.ms/BCCopilotStudio)
 
 ## Shopify
 
@@ -175,15 +178,15 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Learn how to develop your own API to use Business Central data in other products: [aka.ms/BCCustomAPI](https://aka.ms/BCCustomAPI)
 <!-- - Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))  -->
 
-## Developing apps for AppSource
+## Developing apps for Marketplace
 
-- AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)  
-- AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)  
-- AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ)  
-- Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)  
+- Marketplace marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)  
+- Marketplace technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)  
+- Marketplace technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ)  
+- Set up DevOps for your Marketplace apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)  
 - Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps)  
-- Transact capability for Business Central Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
-<!-- - Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([New to Yammer?](../../join-viva-engage.md))  -->
+- Transact capability for Business Central Apps on Microsoft Marketplace: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
+<!-- - Ask your question related to Marketplace in the Marketplace group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([New to Yammer?](../../join-viva-engage.md))  -->
 
 ## Developing customer specific solutions
 

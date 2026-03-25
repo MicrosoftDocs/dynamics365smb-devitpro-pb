@@ -3,8 +3,8 @@ title: Development and administration for Business Central
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 04/10/2025
-ms.topic: article
+ms.date: 03/23/2026
+ms.topic: concept-article
 ms.reviewer: solsen
 ---
 
@@ -44,6 +44,9 @@ The following table outlines recommended content for you to get started:
 |[Developer learning paths on Microsoft Learn](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&resource_type=learning%20path&products=dynamics-business-central&roles=developer)| Provides links to role-specific training. |
 |[Development in AL](developer/devenv-dev-overview.md)|Get an understanding of the basics and terms you will encounter while working in Visual Studio Code with the AL extension.|
 |[Get started with AL](developer/devenv-get-started.md)|Learn how to set up a development environment.|
+|[Develop with AI](ai/ai-development-toolkit-overview.md)|Learn how to build AI-powered experiences, including Copilot features and agents, using the AI Development Toolkit.|
+|[AL-Go for GitHub](al-go/algo-overview.md)|Learn how to use AL-Go templates and actions to automate DevOps and CI/CD processes for your AL projects.|
+|[Power Platform integration](powerplatform/powerplat-overview.md)|Learn how to integrate [!INCLUDE [prod_short](developer/includes/prod_short.md)] with Microsoft Power Platform using virtual tables, Power Automate, and Power Apps.|
 |[The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)|Learn about the business opportunity for building your app on top of [!INCLUDE [prod_short](developer/includes/prod_short.md)].|
 |[Get started with building apps](developer/readiness/get-started.md)|Learn how to get started as a partner.|
 
@@ -78,7 +81,7 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 [FAQ for Dynamics 365 Business Central development and administration](faq.yml)  
 [Resources for help and support for [!INCLUDE[prod_long](includes/prod_long.md)]](help-and-support.md)  
 [The lifecycle of apps and extensions](developer/devenv-app-life-cycle.md)  
-[Maintenance of AppSource apps and per-tenant extensions](developer/app-maintain.md)  
+[Maintenance of Marketplace apps and per-tenant extensions](developer/app-maintain.md)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  
 [Dynamics NAV developer and IT-pro content](/dynamics-nav/index)  

@@ -4,7 +4,7 @@ description: "How you extend item charges in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: how-to
-ms.author: grobyns
+ms.author: solsen
 ms.reviewer: jswymer
 ---
 

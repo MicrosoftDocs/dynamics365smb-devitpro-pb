@@ -4,7 +4,7 @@ description: Learn about best practices for testing the Copilot capability in AL
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 07/02/2025
+ms.date: 03/13/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started

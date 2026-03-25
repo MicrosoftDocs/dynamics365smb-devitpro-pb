@@ -17,7 +17,7 @@ summary: |
   - Visit [FAQ about library and dependency apps](developer/app-faq-dependencies-libraries.md) to learn about differences between library and dependency apps.
   - Visit [FAQ about updating your app](developer/app-faq-update.md) to get answers to questions on tenants, versioning, and compatibility.
   - Visit [FAQ about testing your app](developer/app-faq-test.md) to learn about testing before submitting an app.
-  - Visit [FAQ about update lifecycle for AppSource apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
+  - Visit [FAQ about update lifecycle for Marketplace apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
   - Visit [FAQ about migrating to the cloud from on-premises solutions](administration/faq-migrate-data.md) to learn about what is supported.
   - Visit [FAQ about the windows client](faq-win-cli.md) to learn about support for the [!INCLUDE[prod_short](includes/prod_short.md)] Windows client.
   - Visit [FAQ about signing up and using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prod_short](includes/prod_short.md)] in the business functionality content for.

@@ -2,7 +2,7 @@
 title: Developing extensions in AL
 description: Overview of the development experience for building extensions using the AL language.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2025
+ms.date: 03/19/2026
 ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
@@ -75,9 +75,13 @@ Extensions are compiled as .app package files. The .app package file can be depl
 
 [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. You can configure your extension to send this data to a specific Application Insights resource on Microsoft Azure. Learn more in [Sending extension telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
 
+## Evaluating AL coding agents with BC-Bench
+
+BC‑Bench is a benchmarking framework for evaluating agent performance on real‑world [!INCLUDE[prod_short](includes/prod_short.md)] AL coding tasks. It provides measurable, repeatable results, helping developers understand what improvements actually work. Learn more in [BC-Bench](https://supreme-dollop-8eqm7r4.pages.github.io/)
+
 ## Submitting your app
 
-After development and testing are done, you can submit your extension package to AppSource. Before you submit the extension package, we encourage you to read the checklist to facilitate the validation process. Learn more in [Checklist for submitting your app](devenv-checklist-submission.md). To get code validation helping you to bring your extension package to AppSource, you can enable the AppSourceCop code analyzer. Learn more in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
+After development and testing are done, you can submit your extension package to Marketplace. Before you submit the extension package, we encourage you to read the checklist to facilitate the validation process. Learn more in [Checklist for submitting your app](devenv-checklist-submission.md). To get code validation helping you to bring your extension package to Marketplace, you can enable the AppSourceCop code analyzer. Learn more in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 
 ## Related information
 
