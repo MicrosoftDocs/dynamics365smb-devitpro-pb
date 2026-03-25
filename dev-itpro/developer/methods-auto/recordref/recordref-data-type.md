@@ -2,7 +2,7 @@
 title: "RecordRef data type"
 description: "References a record in a table."
 ms.author: solsen
-ms.date: 10/03/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -57,6 +57,7 @@ The following methods are available on instances of the RecordRef data type.
 |[FindLast()](recordref-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
 |[FindSet([Boolean])](recordref-findset-boolean-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
 |[FindSet(Boolean, Boolean)](recordref-findset-boolean-boolean-method.md)|Finds a set of records in a table based on the current key and filter. FindSet can only retrieve records in ascending order.|
+|[FullyQualifiedName()](recordref-fullyqualifiedname-method.md)|Identifies the fully qualified name of the table.|
 |[Get(RecordId)](recordref-get-method.md)|Gets a record based on the ID of the record.|
 |[GetBySystemId(Guid)](recordref-getbysystemid-method.md)|Gets a record based on the ID of the record. The RecordRef must already be opened.|
 |[GetFilters()](recordref-getfilters-method.md)|Determines which filters have been applied to the table referred to by the RecordRef.|
@@ -82,7 +83,8 @@ The following methods are available on instances of the RecordRef data type.
 |[Name()](recordref-name-method.md)|Identifies the name of the table|
 |[Next([Integer])](recordref-next-method.md)|Steps through a specified number of records and retrieves a record.|
 |[Number()](recordref-number-method.md)|Gets the table ID (number) of the table that contains the record that was referred to by the RecordRef.|
-|[Open(Integer [, Boolean] [, Text])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
+|[Open(Integer [, Boolean] [, Text])](recordref-open-integer-boolean-string-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
+|[Open(Text [, Boolean] [, Text])](recordref-open-string-boolean-string-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
 |[ReadConsistency()](recordref-readconsistency-method.md)|Gets a value indicating whether read consistency is enabled.|
 |[ReadIsolation([IsolationLevel])](recordref-readisolation-method.md)|Gets or sets the read isolation level.|
 |[ReadPermission()](recordref-readpermission-method.md)|Determines if you can read from a table.|
