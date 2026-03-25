@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry, mcp, ai
-ms.date: 03/10/2026
+ms.date: 03/25/2026
 ---
 
 # The Business Central Admin Center API MCP server (preview)
@@ -29,7 +29,7 @@ Connect to the MCP server in [Visual Studio Code](https://code.visualstudio.com/
 
 ## Multitenancy
 
-Partners administering environments for multiple customers using [granular delegated admin privileges (GDAP)](/partner-center/customers/gdap-introduction) may want to use this MCP server to administer environments across customer tenants. During public preview, this endpoint supports the same single-tenant authentication as other [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API endpoints. To facilitate multi-tenant administration, partners can use a MCP Proxy available on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/BcAdminMcpProxy) to specify different target tenants for their requests.
+Partners administering environments for multiple customers using [granular delegated admin privileges (GDAP)](/partner-center/customers/gdap-introduction) might want to use this MCP server to administer environments across customer tenants. During public preview, this endpoint supports the same single-tenant authentication as other [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API endpoints. To facilitate multi-tenant administration, partners can use an MCP Proxy available on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/BcAdminMcpProxy) to specify different target tenants for their requests.
 
 ## Excluded tools
 
