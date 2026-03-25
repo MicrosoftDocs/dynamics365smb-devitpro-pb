@@ -551,6 +551,7 @@
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
 #### [Optimize Visual Studio Code for AL development](developer/devenv-optimize-visual-studio-code.md)
 #### [Running a container-based development environment](developer/devenv-running-container-development.md)
+#### [Use GitHub Codespaces for Business Central development](developer/devenv-code-spaces-and-al.md)
 ### Configure projects and workspaces
 #### [Work with multiple AL project folders within one workspace](developer/devenv-multiroot-workspaces.md)
 #### [Work with multiple projects and project References](developer/devenv-work-workspace-projects-references.md)
