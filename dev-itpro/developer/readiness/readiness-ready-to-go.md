@@ -22,7 +22,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Download 'What's new' partner deck: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK) 
 - Download BCLE Highlight videos: [aka.ms/BCHighlights](https://aka.ms/BCHighlights) 
 - Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
-- Move your on-premises customers to the cloud, find resources here: [https://aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- Move your on-premises customers to the cloud, find resources here: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Latest release and updates  
 
@@ -31,7 +31,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
 - Alert Microsoft on an upcoming regulatory feature: [aka.ms/BCAlerts](https://aka.ms/BCAlerts)
-- Optional features that are now mandatory [https://aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
+- Optional features that are now mandatory [aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
 - Where is [!INCLUDE [prod_short](../includes/prod_short.md)] available? [aka.ms/BCCountries](https://aka.ms/BCCountries)
 
 ## Stay up to date
