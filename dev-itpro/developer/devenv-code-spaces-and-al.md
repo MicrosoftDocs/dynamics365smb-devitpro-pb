@@ -14,13 +14,13 @@ GitHub Codespaces gives you a ready-to-use, cloud-hosted development environment
 
 ## What is a codespace?
 
-A codespace is a development environment hosted in the cloud by GitHub. It runs Visual Studio Code in your browser, or connects to your local VS Code, and comes with all the tools and extensions your project needs - defined in a configuration file called `devcontainer.json`.
+A codespace is a development environment hosted in the cloud by GitHub. It runs Visual Studio Code in your browser, or connects to your local Visual Studio Code, and comes with all the tools and extensions your project needs - defined in a configuration file called `devcontainer.json`.
 
 Think of it as your development laptop in the cloud. When you open a codespace, it builds a container with your preferred editor settings, extensions, and tools already installed. Close the browser, and your work is saved. Open it again, and you're right back where you left off.
 
-## Why use codespaces for Business Central?
+## Why use Codespaces for Business Central?
 
-Here are some reasons you might want to use codespaces:
+Here are some reasons you might want to use Codespaces:
 
 - Fast onboarding - New team members get a working environment in minutes, not hours.
 - No local setup - No need to install Visual Studio Code, the AL Language extension, PowerShell, or .NET locally.
@@ -113,12 +113,12 @@ This line specifies the base operating system for your codespace. The `base:ubun
 }
 ```
 
-Features are pre-packaged tool installers. Instead of writing custom scripts, you declare which tools you need:
+Features are prepackaged tool installers. Instead of writing custom scripts, you declare which tools you need:
 
 | Feature | What it adds | Why you need it |
 |---------|-------------|----------------|
 | dotnet | .NET SDK (version 8.0) | Required by some AL build tools and scripts |
-| powershell | PowerShell Core | Used for build scripts and automation tasks |
+| PowerShell | PowerShell Core | Used for build scripts and automation tasks |
 | node | Node.js and npm | Needed for frontend tooling and task runners |
 | github-cli | GitHub CLI (gh) | Create pull requests, manage issues, and trigger workflows from the terminal |
 
@@ -145,7 +145,7 @@ Business Central development:
 | Extension | Purpose |
 |-----------|---------|
 | ms-dynamics-smb.al | The AL Language extension - provides IntelliSense, compilation, and deployment for Business Central |
-| ms-vscode.powershell | PowerShell language support for build and automation scripts |
+| ms-vscode.PowerShell | PowerShell language support for build and automation scripts |
 
 GitHub workflow (recommended for projects hosted on GitHub):
 
@@ -158,7 +158,7 @@ GitHub workflow (recommended for projects hosted on GitHub):
 | ms-azuretools.vscode-docker | Manage Docker containers, images, and registries - useful if your workflow involves Business Central Docker containers |
 
 > [!TIP]
-> The example installs the stable release of the AL Language extension. If you want the latest preview features, append @prerelease to the extension identifier: "ms-dynamics-smb.al@prerelease". The pre-release version gives you early access to new language features and fixes, but may occasionally include breaking changes. For production projects, the stable release is the safer choice.
+> The example installs the stable release of the AL Language extension. If you want the latest preview features, append @prerelease to the extension identifier: "ms-dynamics-smb.al@prerelease". The prerelease version gives you early access to new language features and fixes, but might occasionally include breaking changes. For production projects, the stable release is the safer choice.
 
 > [!NOTE]
 > The GitHub Copilot extensions require a GitHub Copilot subscription. If your team doesn't have Copilot licenses, remove those two extensions from the list - the codespace works fine without them.
@@ -182,9 +182,9 @@ GitHub workflow (recommended for projects hosted on GitHub):
 These settings configure the AL development experience:
 
 **al.enableCodeAnalysis** - Turns on the built-in code analysis tools that check your code for common issues and best practices.
-**al.enableCodeActions** - Enables quick-fix suggestions (the lightbulb icon) so you can resolve code analyzer warnings with a single click.
+**al.enableCodeActions** - Enables quick-fix suggestions (the light bulb icon) so you can resolve code analyzer warnings with a single select.
 **al.codeAnalyzers** - Specifies which analyzers to run. CodeCop and UICop are enabled by default. Uncomment the analyzer that matches your extension type (see the table below).
-**al.useVsCodeAuthentication** - Uses VS Code's built-in authentication to sign in to Business Central. This is the recommended approach in codespaces because it works seamlessly with browser-based authentication.
+**al.useVsCodeAuthentication** - Uses VS Code's built-in authentication to sign in to Business Central. This is the recommended approach in Codespaces because it works seamlessly with browser-based authentication.
 
 Learn more about code analyzers in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 
@@ -309,20 +309,20 @@ You can add Model Context Protocol (MCP) servers to give AI tools like GitHub Co
 
 ## Limitations and considerations
 
-Keep the following points in mind when using codespaces for Business Central development:
+Keep the following points in mind when using Codespaces for Business Central development:
 
 - **No local Business Central container** - Codespaces run on Linux. You can't run a Windows-based Business Central Docker container inside a codespace. Instead, connect to an external Business Central environment (online sandbox or a server reachable over the internet).
 - **Debugging** - You can debug AL code against a Business Central online sandbox. On-premises debugging requires the server to be reachable from the internet.
-- **AL extension on Linux** - The AL Language extension runs on Linux in codespaces. Some features that depend on Windows-specific components might behave differently. Check the AL Language extension configuration for the latest compatibility information.
+- **AL extension on Linux** - The AL Language extension runs on Linux in Codespaces. Some features that depend on Windows-specific components might behave differently. Check the AL Language extension configuration for the latest compatibility information.
 - **Performance** - Codespace performance depends on your selected machine type. For large AL projects, choose a machine with more cores and memory.
 - **Cost** - Codespaces are billed based on compute time and storage. Stop your codespace when you're not using it to manage costs.
 
 > [!TIP]
-> Set an idle timeout in your GitHub codespace settings to automatically stop codespaces after a period of inactivity. This helps you avoid unexpected charges.
+> Set an idle timeout in your GitHub codespace settings to automatically stop Codespaces after a period of inactivity. This helps you avoid unexpected charges.
 
 ## Tips for consultants and functional users
 
-If you're a Business Central consultant or functional user who wants to explore AL development without a complex local setup, codespaces are a good starting point. Here are some tips:
+If you're a Business Central consultant or functional user who wants to explore AL development without a complex local setup, Codespaces are a good starting point. Here are some tips:
 
 - **Start with a template** - Fork a repository that already has a `devcontainer.json` configured, such as the BCApps repository. Then customize it for your project.
 - **Use a Business Central online sandbox** - Connect your codespace to a sandbox environment to safely test your extensions without affecting production data.
