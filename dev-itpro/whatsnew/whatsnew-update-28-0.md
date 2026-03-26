@@ -23,7 +23,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 |Product area|Feature|Public preview/General availability|
 |-|-|-|
 |Application|External storage support for document attachments|General availability|
-|Copilot and agents|[Connect AI agents to Business Central through MCP server](../ai/mcp-overview.md)|
+|Copilot and agents|[Connect AI agents to Business Central through MCP server (now with Visual Studio Code and non-Microsoft clients)](../ai/mcp-overview.md)|General availability|
 ||[Discover emails in the mailbox that have been processed by Payables Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/discover-emails-mailbox-that-have-been-processed-payables-agent)|General availability|
 ||Get item insights with advanced KPIs and Summary|General availability|
 ||[Manage tasks from all agents in dedicated task pane](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-tasks-all-agents-dedicated-task-pane)|General availability|
@@ -149,13 +149,11 @@ Several objects marked as obsolete in these earlier versions are no longer inclu
 
 ### Business Central Launch Edition - 2026 release wave 1
 
-The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
+Explore the Business Central Launch Edition (BCLE)&mdash;a comprehensive skilling experience designed to help partners stay up to date, aligned, and ready to deliver value faster with every release wave.
 
-- What's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
+- 40+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
 - 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
-- BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
-- 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
-- BCLE 2026 release wave 1 group on Viva Engage for asking questions to our product experts: \<link to be determined\>
+- Have questions? Go to the new Business Central partner communities on Viva Engage and ask the product experts: [aka.ms/BCVivaEngage](https://aka.ms/BCVivaEngage)
 
 ### Discover all partner related resources
 
