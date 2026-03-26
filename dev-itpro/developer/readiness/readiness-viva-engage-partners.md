@@ -40,7 +40,7 @@ Business Central Partner Communities:
 - Governance, Administration, and Security
 - Performance
 
-## How to join for the Business Central Viva Engage Groups
+## How to join the Business Central Viva Engage Groups
 
 Access to the partner communities is granted through a Microsoft maintained enrollment process. All requests must be submitted through the official forms at XXX 
 
@@ -48,7 +48,9 @@ For broader updates, follow [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn).
 
 ## Support
 
-If you need support, contact the Business[!INCLUDE [prod_short](../includes/prod_short.md)] Central Partner Team at XXXX
-Thank you for being a valued member of the Business[!INCLUDE [prod_short](../includes/prod_short.md)] Central Partner Community
+If you need support, contact the [!INCLUDE [prod_short](../includes/prod_short.md)] Partner Team at XXXX
+Thank you for being a valued member of the [!INCLUDE [prod_short](../includes/prod_short.md)] Partner Community
 
 ## Related information
+
+[Resources for partners](readiness-ready-to-go.md)  
