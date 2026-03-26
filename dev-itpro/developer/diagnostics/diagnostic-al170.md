@@ -2,7 +2,7 @@
 title: "Compiler Error AL0170"
 description: "An '=' is expected for property {0}."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An '=' is expected for property {0}.
+An '=' is expected for property {0}. Use the format: PropertyName = Value;.
 
 
 ## Description
