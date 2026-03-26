@@ -20,40 +20,6 @@ This article provides an overview of new and updated features in update 28.0 pub
 
 This table lists new and updated features in update 28.0. Learn more about all features planned for 2026 release wave 1 (version 28) in [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central).
 
-<!-- Generate table:
-
-1. In successHub, filter on releas plns similar to https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entitylist&etn=rn_releasenote&viewid=9d407e0c-72e4-ef11-a731-7c1e520c4fd1&viewType=4230&lid=1738859869588
-2. Export to Excel
-3. Install excel to markdown extension in VScode:
-4. Open Excel file
-5. Sort product area column in ascending orders
-1. Copy rows and columns
-1. In VS Code, press Shift Alt V
-
-Add links:
-
-1. Start Copilot Chat
-1. Select table you just cretaed.
-1. Copy thi prompt in chat:
-
-In the table, make each feature name in the Feature column a markdown link. Follow these steps for each row in the column:
- 
-1. Identify the markdown file name in "Release Plan URL" column.
-2. Create a relative link on the text in the "Feature" column using the format: [<text>](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/<markdown file name>. 
-3. Omit .md in the link
-4. Create a column named "Public preview/General availability". If a row has a date in the "GA - Release Date" column for April 2026, set the "Public preview/General availability" column in the row to "General availability". Otherwise set the "Public preview/General availability" column to "Public preview".
-5. Delete the "General availability - Release Date", "Public Preview/Early Access - Release Date", and "Release Plan URL" columnw from the table, so the table only has the format:
-   
-| Product area| Feature| Public preview/General availability|
-|-|-|-|
-6. List row in aphabetical order by "Product area" then "Feature" column.
-7. Remove duplicates in "Product area" column
-8. Remove all unnecessary spaces
-
-
-For preview: ask chat to run Parse-TSV-Robust.ps1
--->
-
 |Product area|Feature|Public preview/General availability|
 |-|-|-|
 |Application|External storage support for document attachments|General availability|
@@ -135,6 +101,9 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 Select and download the package for the appropriate country or region version from Microsoft Support.
 
+*<To be determined>*
+
+<!--
 |Country/region|Download package|
 |-|-|
 |AT - Austria|[Dynamics.365.BC.40242.AT.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.AT.DVD.zip)|
@@ -159,7 +128,7 @@ Select and download the package for the appropriate country or region version fr
 |RU - Russia|[Dynamics.365.BC.40242.RU.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.RU.DVD.zip)|
 |SE - Sweden|[Dynamics.365.BC.40242.SE.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.SE.DVD.zip)|
 |US - United States|[Dynamics.365.BC.40242.US.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.US.DVD.zip)|
-|All other countries/regions (W1)|[Dynamics.365.BC.40242.W1.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.W1.DVD.zip)|
+|All other countries/regions (W1)|[Dynamics.365.BC.40242.W1.DVD.zip](https://download.microsoft.com/download/89d503da-3f84-4167-8799-f17c287b15ec/Dynamics.365.BC.40242.W1.DVD.zip)|-->
 
 ## Upgrade to 28.0
 
@@ -182,11 +151,11 @@ Several objects marked as obsolete in these earlier versions are no longer inclu
 
 The Business Central Launch Event has transformed into the Business Central Launch Edition&mdash;a comprehensive readiness experience to support you throughout the release wave. The Business Central Launch Edition provides you with a suite of resources:
 
-- 45+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
+- What's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
 - 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
 - BCLE Highlight videos for download: [aka.ms/BCHighlights](https://aka.ms/BCHighlights)
 - 'Ask Us Anything' Office Hours in November: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
-- BCLE 2026 release wave 1 group on Viva Engage for asking questions to our product experts: [BCLE 2026 release wave 1]()
+- BCLE 2026 release wave 1 group on Viva Engage for asking questions to our product experts: \<link to be determined\>
 
 ### Discover all partner related resources
 
