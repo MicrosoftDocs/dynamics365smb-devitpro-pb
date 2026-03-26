@@ -2,7 +2,7 @@
 title: "Compiler Error AL0181"
 description: "Invalid filter expression."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Invalid filter expression.
+Invalid filter expression. Check the syntax and ensure all field names and operators are correct.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

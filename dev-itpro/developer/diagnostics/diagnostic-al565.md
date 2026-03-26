@@ -2,7 +2,7 @@
 title: "Compiler Error AL0565"
 description: "Fast publishing requires a built application file to be present."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Fast publishing requires a built application file to be present. The '{0}' application file contains a manifest which is not valid. Please rebuild the application file before continuing with fast publishing.
+Fast publishing requires a built application file to be present. The '{0}' application file contains a manifest which is not valid. Rebuild the application file before continuing with fast publishing.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

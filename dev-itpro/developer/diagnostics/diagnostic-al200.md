@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0200"
 description: "Property '{0}' is obsolete and will be removed in a future version."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Property '{0}' is obsolete and will be removed in a future version.
+Property '{0}' is obsolete and will be removed in a future version. Update your code to use the recommended alternative.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

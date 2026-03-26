@@ -534,8 +534,6 @@
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Get started with AL for on-premises
-#### [Get started with C/SIDE and AL side-by-side for on-premises](developer/devenv-get-started-al-for-onprem.md)
-#### [Run C/SIDE and AL side-by-side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Create runtime packages for Business Central on-premises](developer/devenv-creating-runtime-packages.md)
 
 ## Development environment
@@ -1977,6 +1975,7 @@
 #### [Optimizing SQL server performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility level](administration/optimize-sql-set-compatibility-level.md)
 #### [Using table partitioning and data compression](administration/using-sql-partitioning-and-compression.md)
+#### [Managing database indexes](/dynamics365/business-central/manage-indexes?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
 #### [Monitoring performance counters](administration/performance-counters.md)

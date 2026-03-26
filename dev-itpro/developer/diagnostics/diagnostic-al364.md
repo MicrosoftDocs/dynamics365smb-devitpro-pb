@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0364"
-description: "Option members must be accessed with ::."
+description: "Option members must be accessed with '::' (e.g., MyEnum::Value)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Option members must be accessed with ::.
+Option members must be accessed with '::' (e.g., MyEnum::Value). Update the syntax to use the scope operator.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
