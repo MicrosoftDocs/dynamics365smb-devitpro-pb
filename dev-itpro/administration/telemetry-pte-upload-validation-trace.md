@@ -26,17 +26,25 @@ The PTE submission validation flow is as follows:
 
 PTE submission validation request started (LC0200). This includes the main extension to be validated and a list of extensions it depends on.
 For each extension (main + dependent extensions)
-        Extension validation started (LC0204)
-
-        Either 
-                Extension validation completed successfully (LC0205)
-        or
-                Validation diagnostic reported (LC0210)
-                Extension validation completed with failures (LC0206)
+        For the main extension:
+                Extension validation started (LC0204)
+                Either 
+                        Extension validation completed successfully (LC0205)
+                or
+                        Validation diagnostic reported (LC0210)
+                        Extension validation completed with failures (LC0206)
+        For each dependent extension:
+                Dependent extension validation started (LC0207)
+                Either
+                        Dependent extension validation completed successfully (LC0208)
+                or
+                        Validation diagnostic reported (LC0210)
+                        Dependent extension validation completed with failures (LC0209)
 
 Then either 
         PTE submission validation request completed successfully (LC0202)
 or
+        PTE submission diagnostic reported (LC0201)
         PTE submission validation request completed with failures (LC0203)
 ```
 
@@ -62,9 +70,36 @@ Occurs when a new per-tenant extension (PTE) validation attempt is started on th
 |submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-submission-operation-id.md)] |
 
 
+## <a name="pte-submission-diagnostic-reported"></a>PTE submission diagnostic reported (LC0201)
+
+Occurs during the PTE submission validation request to report diagnostics related to the submission itself. For example, it could be that a submission has duplicate object IDs. This signal isn't necessarily an error, but can also be a warning or information.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Diagnostic reported on PTE submission validation request: {submissionId}**|
+|severityLevel|**1** for information, **2** for warning, **3** for error|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**LC0201**|
+|environmentId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|mainExtension|A JSON structure that contains information about the extension that is being uploaded.|
+|submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-submission-operation-id.md)] |
+|dependentExtensions|A JSON structure that contains information about the dependent extensions.|
+|diagnosticCode|[!INCLUDE[diagnosticCode](../includes/include-telemetry-dimension-diagnostics-code.md)]|
+|diagnosticMessage|[!INCLUDE[diagnosticMessage](../includes/include-telemetry-dimension-diagnostics-message.md)]|
+|diagnosticSeverity|[!INCLUDE[diagnosticSeverity](../includes/include-telemetry-dimension-diagnostics-severity.md)]|
+
+
 ## <a name="extension-validation-started"></a>Extension validation started (LC0204)
 
-Occurs for each extension in the upload.
+Occurs for each extension in the upload. This event is emitted for the main extension being uploaded.
 
 ### General dimensions
 
@@ -144,6 +179,81 @@ Occurs if the extension could not compile against the environment.
 |submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-submission-operation-id.md)] |
 |failureReason|The overall reason that the extension failed to validate.|
 
+
+## <a name="dependent-extension-validation-started"></a>Dependent extension validation started (LC0207)
+
+Occurs for each dependent extension in the upload. This event is emitted for extensions that the main extension depends on, not the main extension itself.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**LC0207**|
+|environmentId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|extensionName|Specifies the name of the dependent extension that was to be validated.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
+|extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
+|submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-submission-operation-id.md)] |
+
+
+## <a name="dependent-extension-validation-completed-successfully"></a>Dependent extension validation completed successfully (LC0208)
+
+Occurs if the dependent extension can compile against the environment.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**LC0208**|
+|environmentId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|extensionName|Specifies the name of the dependent extension that was validated.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
+|extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
+|submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-submission-operation-id.md)] |
+
+
+## <a name="dependent-extension-validation-completed-with-failures"></a>Dependent extension validation completed with failures (LC0209)
+
+Occurs if the dependent extension could not compile against the environment.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**LC0209**|
+|environmentId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|extensionName|Specifies the name of the dependent extension that was validated.|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
+|extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
+|submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-submission-operation-id.md)] |
+|failureReason|The overall reason that the dependent extension failed to validate.|
 
 
 ## <a name="pte-validation-completed-successfully"></a>Per-tenant extension (PTE) validation completed successfully (LC0202)
