@@ -2,7 +2,7 @@
 title: "Caption property"
 description: "Sets the string that is used to identify a control or other object in the user interface."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,6 +39,7 @@ Sets the string that is used to identify a control or other object in the user i
 -   Page System Action
 -   Page File Upload Action
 -   Page View
+-   Page Analysis View
 -   Report Column
 -   Report Layout
 -   Profile
