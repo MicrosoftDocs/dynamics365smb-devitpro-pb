@@ -1,7 +1,7 @@
 ---
 title: Table keys
 description: Learn about table keys in AL, including primary and secondary keys, and how to define keys in table objects and table extension objects.
-ms.date: 04/23/2025
+ms.date: 03/24/2026
 ms.reviewer: solsen
 ms.topic: how-to
 author: jswymer
@@ -34,6 +34,10 @@ The primary key is always active. SQL Server keeps the table sorted in primary k
 
 > [!NOTE]  
 > In the development environment, it's technically possible to create a primary key based on up to 20 fields. However, because of SQL Server limitations, only the first 16 are used.
+
+### Automatic key splitting
+
+When the [AutoSplitKey](properties/devenv-autosplitkey-property.md) property is enabled on a page, a value is automatically calculated for the last field of the primary key so that a new record is inserted between two adjacent records. Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1, the platform can also generate negative key values when a row is inserted before the first record in the list. The value 0 is a valid key, but is not currently generated as a key value when using `AutoSplitKey`.
 
 ## Secondary keys
 
