@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0457"
 description: "The label syntax is not correct."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The label syntax is not correct. Please move the '{0}' to its designated attribute.
+The label syntax is not correct. Move the '{0}' to its designated attribute.
 
 
 ## Description
