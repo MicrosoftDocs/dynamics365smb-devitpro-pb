@@ -8,11 +8,11 @@ ms.topic: article
 ms.author: solsen
 ---
 
-# Viva Engage for Dynamics 365 Business Central Partners
+# Viva Engage for Dynamics 365 Business Central partners
 
 This article provides a comprehensive guide for partners who want to understand, join, and actively participate in the Microsoft hosted Viva Engage communities dedicated to Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] partners.
 
-## What Is Viva Engage?
+## What is Viva Engage?
 
 Viva Engage is Microsoft’s modern collaboration and community platform designed to connect people across organizations. 
 The Viva Engage communities for Business Central partners enable you to:
@@ -24,10 +24,11 @@ The Viva Engage communities for Business Central partners enable you to:
 
 Viva Engage replaces the former Dynamics 365 Business Central Partner Yammer communities and brings an enhanced, secure, Microsoft hosted experience tailored for structured partner engagement, and rapid knowledge sharing.
 
-## Business Central Viva Engage Group Structure
+## Business Central Viva Engage group structure
 
-The Business Central partner community within Viva Engage is divided into specialized groups so partners can join the conversations most relevant to their role and areas of expertise.
-Business Central Partner Communities:
+The [!INCLUDE [prod_short](../includes/prod_short.md)] partner community within Viva Engage is divided into specialized groups so partners can join the conversations most relevant to their role and areas of expertise.
+
+The following [!INCLUDE [prod_short](../includes/prod_short.md)] partner communities are available on Viva Engage:
 
 - Microsoft Announcements 
 - Integrations 
@@ -40,7 +41,7 @@ Business Central Partner Communities:
 - Governance, Administration, and Security
 - Performance
 
-## How to join the Business Central Viva Engage Groups
+## How to join the Business Central Viva Engage groups
 
 Access to the partner communities is granted through a Microsoft maintained enrollment process. All requests must be submitted through the official forms at XXX 
 
