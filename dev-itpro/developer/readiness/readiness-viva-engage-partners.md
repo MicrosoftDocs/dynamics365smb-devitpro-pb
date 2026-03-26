@@ -43,14 +43,9 @@ The following [!INCLUDE [prod_short](../includes/prod_short.md)] partner communi
 
 ## How to join the Business Central Viva Engage groups
 
-Access to the partner communities is granted through a Microsoft maintained enrollment process. All requests must be submitted through the official forms at XXX 
+Access to the partner communities is granted through a Microsoft maintained enrollment process. All requests must be submitted through the official forms at [aka.ms/BCVivaSignUp](https://aka.ms/BCVivaSignUp).
 
 For broader updates, follow [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn).
-
-## Support
-
-If you need support, contact the [!INCLUDE [prod_short](../includes/prod_short.md)] Partner Team at XXXX
-Thank you for being a valued member of the [!INCLUDE [prod_short](../includes/prod_short.md)] Partner Community
 
 ## Related information
 
