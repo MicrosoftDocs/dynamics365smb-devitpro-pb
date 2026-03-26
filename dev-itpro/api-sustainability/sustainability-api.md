@@ -1,6 +1,6 @@
 ---
 title: Sustainability API
-description: Learn how to use APIs in related to the sustainability features.
+description: Learn how to use APIs related to the sustainability features.
 author: altotovi
 ms.topic: reference
 ms.date: 06/18/2024
@@ -151,7 +151,7 @@ Represents the *Sustainability Ledger Entries* in [!INCLUDE[prod_short](../inclu
 | emissionCO2 | decimal | Specifies the CO2 emission for the sustainabilityLedgerEntry. |
 | emissionCH4 | decimal | Specifies the CH4 emission for the sustainabilityLedgerEntry. |
 | emissionN2O | decimal | Specifies the N2O emission for the sustainabilityLedgerEntry. |
-| countryRegion | string | The country/region code in the V. |
+| countryRegion | string | The country/region code in the sustainabilityLedgerEntry. |
 | responsibilityCenter | string | The responsibility center code in the sustainabilityLedgerEntry. |
 | userID | GUID | The user ID in this sustainabilityLedgerEntry. |
 | sourceCode | string | The source code in the sustainabilityLedgerEntry. |

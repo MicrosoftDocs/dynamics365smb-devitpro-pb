@@ -115,6 +115,10 @@ A drawback of reading from a replica is that it introduces a slight delay compar
 
 Having many companies can cause administrative tasks, like upgrades, point-in-time restores, and database exports, to take a long time and potentially hit timeout values. If you have more than 50 companies, we recommend that you test these operations and typical usage scenarios extensively. Delete companies that are no longer needed.
 
+## Manage database index usage
+
+[!INCLUDE[database-index-management](../developer/includes/database-index-management.md)]
+
 ## Don't do these things
 
 Finally, make sure that you don't repeat these performance mistakes that we have seen cause massive performance issues for customers:
