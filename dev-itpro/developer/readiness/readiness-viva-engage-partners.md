@@ -22,7 +22,7 @@ The Viva Engage communities for Business Central partners enable you to:
 - Ask questions and participate in technical and product discussions
 - Stay informed through announcements, product updates, and best practices
 
-Viva Engage replaces the former Dynamics 365 Business Central Partner Yammer communities and brings an enhanced, secure, Microsoft hosted experience tailored for structured partner engagement, and rapid knowledge sharing.
+Viva Engage replaces the former Dynamics 365 Business Central Partner Yammer communities and brings an enhanced, secure, Microsoft-hosted experience tailored for structured partner engagement, and rapid knowledge sharing.
 
 ## Business Central Viva Engage group structure
 
