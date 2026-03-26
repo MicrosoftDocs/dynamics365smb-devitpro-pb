@@ -23,7 +23,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 |Product area|Feature|Public preview/General availability|
 |-|-|-|
 |Application|External storage support for document attachments|General availability|
-|Copilot and agents|[Connect AI agents to Business Central through MCP server (now with Visual Studio Code and non-Microsoft clients)](../ai/mcp-overview.md)|General availability|
+|Copilot and agents|[Connect AI agents to Business Central through MCP server (now from Visual Studio Code and non-Microsoft clients)](../ai/mcp-overview.md)|General availability|
 ||[Discover emails in the mailbox that have been processed by Payables Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/discover-emails-mailbox-that-have-been-processed-payables-agent)|General availability|
 ||Get item insights with advanced KPIs and Summary|General availability|
 ||[Manage tasks from all agents in dedicated task pane](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-tasks-all-agents-dedicated-task-pane)|General availability|
