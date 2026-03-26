@@ -925,6 +925,7 @@
 #### Views
 ##### [Designing views](developer/devenv-views.md)
 ##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
+##### [Packaging analysis views](developer/devenv-analysis-view-package.md)
 
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
