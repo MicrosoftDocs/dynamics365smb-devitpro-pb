@@ -15,14 +15,14 @@ This article provides a comprehensive guide for partners who want to understand,
 ## What is Viva Engage?
 
 Viva Engage is Microsoft’s modern collaboration and community platform designed to connect people across organizations. 
-The Viva Engage communities for Business Central partners enable you to:
+The Viva Engage communities for [!INCLUDE [prod_short](../includes/prod_short.md)] partners enable you to:
 
 - Engage directly with Microsoft product and engineering subject matter experts 
-- Provide feedback to Microsoft relevant to Business Central 
+- Provide feedback to Microsoft relevant to [!INCLUDE [prod_short](../includes/prod_short.md)] 
 - Ask questions and participate in technical and product discussions
 - Stay informed through announcements, product updates, and best practices
 
-Viva Engage replaces the former Dynamics 365 Business Central Partner Yammer communities and brings an enhanced, secure, Microsoft-hosted experience tailored for structured partner engagement, and rapid knowledge sharing.
+Viva Engage replaces the former Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] Partner Yammer communities and brings an enhanced, secure, Microsoft-hosted experience tailored for structured partner engagement, and rapid knowledge sharing.
 
 ## Business Central Viva Engage group structure
 
