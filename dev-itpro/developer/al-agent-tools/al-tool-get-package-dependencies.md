@@ -73,7 +73,7 @@ Each item in `Dependencies` has:
 
 ## Suggested next steps
 
-- Use the returned dependency list to decide which packages to download with [`al_downloadsymbols`](al-tool-downloadsymbols.md).
+- Use the returned dependency list to decide which packages to download with [`al_downloadsymbols`](al-tool-download-symbols.md).
 - Compare the declared dependencies against what is available in `.alpackages` to identify missing symbols.
 
 ## Related tools

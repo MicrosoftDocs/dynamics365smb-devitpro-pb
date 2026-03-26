@@ -22,11 +22,11 @@ The AL Language extension registers a set of Language Model Tools with the Visua
 |------|-------------|
 | [`al_build`](al-tool-build.md) | Build the AL project and generate the `.app` package. |
 | [`al_publish`](al-tool-publish.md) | Publish the extension to Business Central. |
-| [`al_downloadsymbols`](al-tool-downloadsymbols.md) | Download dependent symbol packages from the configured BC server or global sources. |
-| [`al_symbolsearch`](al-tool-symbolsearch.md) | Search AL symbols across the project and its dependencies. |
-| [`al_getdiagnostics`](al-tool-getdiagnostics.md) | Retrieve compilation diagnostics from the Problems panel. |
+| [`al_downloadsymbols`](al-tool-download-symbols.md) | Download dependent symbol packages from the configured BC server or global sources. |
+| [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies. |
+| [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve compilation diagnostics from the Problems panel. |
 | [`al_debug`](al-tool-debug.md) | Start a debug session without republishing. |
-| [`al_setbreakpoint`](al-tool-debug.md#al_setbreakpoint—Set-or-remove-a-breakpoint) | Add, remove, or toggle a breakpoint at a specific file and line. |
+| [`al_setbreakpoint`](al-tool-debug.md##al_setbreakpoint--set-or-remove-a-breakpoint) | Add, remove, or toggle a breakpoint at a specific file and line. |
 | `al_snapshotdebugging` | Manage snapshot debugging sessions. |
 
 ## Using tools in Copilot Chat

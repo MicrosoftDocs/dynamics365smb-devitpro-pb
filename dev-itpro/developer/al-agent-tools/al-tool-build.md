@@ -53,7 +53,7 @@ On failure, the tool returns a list of diagnostics describing what prevented the
 ## Prerequisites
 
 - The AL project folder must contain a valid `app.json` file.
-- Required symbol packages must be available in the `.alpackages` folder. If they're missing, run [`al_downloadsymbols`](al-tool-downloadsymbols.md) first.
+- Required symbol packages must be available in the `.alpackages` folder. If they're missing, run [`al_downloadsymbols`](al-tool-download-symbols.md) first.
 
 ## Examples
 

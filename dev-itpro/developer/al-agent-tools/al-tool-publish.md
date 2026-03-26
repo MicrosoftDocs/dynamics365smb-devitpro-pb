@@ -137,7 +137,7 @@ Copilot calls `al_publish` with the default parameters. Connection details come 
 | Outcome | Suggested action |
 |---------|-----------------|
 | Published successfully | In Visual Studio Code, the debugger attaches automatically (when `debug: true`). In AL MCP, verify the deployment on the BC server. |
-| Build error before publish | Run [`al_getdiagnostics`](al-tool-getdiagnostics.md) to review the errors, fix the code, and retry. |
+| Build error before publish | Run [`al_getdiagnostics`](al-tool-get-diagnostics.md) to review the errors, fix the code, and retry. |
 | Authentication error | Run [`al_auth_login`](al-tool-auth.md#al_auth_login) (AL MCP) and retry, or set `noCache: true`. |
 
 ## Related tools

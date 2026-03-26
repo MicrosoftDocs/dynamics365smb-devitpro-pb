@@ -40,7 +40,7 @@ The following tools are available across both surfaces. Some tools are exclusive
 | [`al_downloadsymbols`](al-tool-download-symbols.md) | Download dependent symbol packages required for compilation | ✓ | ✓ |
 | [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies | ✓ | ✓ |
 | [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve filtered compilation diagnostics | ✓ | ✓ |
-| [`al_getpackagedependencies`](al-tool-get-packagedependencies.md) | List the project's `app.json` dependencies (MCP only) | — | ✓ |
+| [`al_getpackagedependencies`](al-tool-get-package-dependencies.md) | List the project's `app.json` dependencies (MCP only) | — | ✓ |
 | [`al_debug`](al-tool-debug.md) | Start a debug session without republishing (Visual Studio Code only) | ✓ | — |
 | `al_setbreakpoint` | Programmatically add, remove, or toggle breakpoints (Visual Studio Code only) | ✓ | — |
 | `al_snapshotdebugging` | Manage snapshot debugging sessions (Visual Studio Code only) | ✓ | — |
@@ -126,6 +126,6 @@ To force re-authentication, set `noCache: true` on any tool that supports it, or
 [AL tool reference: al_build](al-tool-build.md)  
 [AL tool reference: al_compile](al-tool-compile.md)  
 [AL tool reference: al_publish](al-tool-publish.md)  
-[AL tool reference: al_downloadsymbols](al-tool-downloadsymbols.md)  
-[AL tool reference: al_symbolsearch](al-tool-symbolsearch.md)  
-[AL tool reference: al_getdiagnostics](al-tool-getdiagnostics.md)  
+[AL tool reference: al_downloadsymbols](al-tool-download-symbols.md)  
+[AL tool reference: al_symbolsearch](al-tool-symbol-search.md)  
+[AL tool reference: al_getdiagnostics](al-tool-get-diagnostics.md)  

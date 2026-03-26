@@ -51,10 +51,10 @@ The following tools are exposed by the AL MCP Server. Tools marked **MCP only** 
 | [`al_build`](al-tool-build.md) | Build the AL project and generate the `.app` package. |
 | [`al_compile`](al-tool-compile.md) | Validate AL code without generating an `.app`. Faster than a full build. |
 | [`al_publish`](al-tool-publish.md) | Publish the extension to a Business Central cloud or on-premises environment. |
-| [`al_downloadsymbols`](al-tool-downloadsymbols.md) | Download dependent symbol packages from a BC environment or global sources. |
-| [`al_symbolsearch`](al-tool-symbolsearch.md) | Search AL symbols across the project and its dependencies. |
-| [`al_getdiagnostics`](al-tool-getdiagnostics.md) | Retrieve compilation diagnostics with filtering. |
-| [`al_getpackagedependencies`](al-tool-getpackagedependencies.md) | List the project's declared `app.json` dependencies. **MCP only.** |
+| [`al_downloadsymbols`](al-tool-download-symbols.md) | Download dependent symbol packages from a BC environment or global sources. |
+| [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies. |
+| [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve compilation diagnostics with filtering. |
+| [`al_getpackagedependencies`](al-tool-get-package-dependencies.md) | List the project's declared `app.json` dependencies. **MCP only.** |
 | [`al_auth_login`](al-tool-auth.md#al_auth_login) | Authenticate to Microsoft Entra ID for cloud operations. **MCP only.** |
 | [`al_auth_logout`](al-tool-auth.md#al_auth_logout) | Clear cached authentication tokens. **MCP only.** |
 
