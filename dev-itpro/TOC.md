@@ -569,6 +569,7 @@
 #### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Conditional breakpoints](developer/devenv-debugging-conditional-breakpoints.md)
+#### [Troubleshooting MCP Server for AL](developer/devenv-debug-mcp-server.md)
 #### [Attach and debug next](developer/devenv-attach-debug-next.md)
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
@@ -580,6 +581,7 @@
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
+#### [Run AL tests in Visual Studio Code](developer/devenv-test-explorer-vscode.md)
 #### [Test codeunits and test methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md)
 #### [Test runner codeunits](developer/devenv-testrunner-codeunits.md)
@@ -925,6 +927,7 @@
 #### Views
 ##### [Designing views](developer/devenv-views.md)
 ##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
+##### [Packaging analysis views](developer/devenv-analysis-view-package.md)
 
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
