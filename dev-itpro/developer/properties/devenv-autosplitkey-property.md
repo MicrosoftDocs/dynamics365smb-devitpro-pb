@@ -2,7 +2,7 @@
 title: "AutoSplitKey property"
 description: "Sets whether a key is automatically created for a new record placed between the current record and the previous record."
 ms.author: solsen
-ms.date: 02/26/2026
+ms.date: 03/24/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -43,7 +43,7 @@ When AutoSplitKey is enabled, a value is automatically calculated for the last f
 
 [!INCLUDE[2025-releasewave1-later](../../includes/2025-releasewave1-later.md)]
 
-If a new row is inserted before the first record in the list, a negative key value is generated so that the new record sorts before all existing records. The value 0 is never generated as a key value, but negative values are allowed for integer-based key fields.
+If a new row is inserted before the first record in the list, a negative key value may generated so that the new record sorts before all existing records. Both 0 and negative values are allowed for numeric key fields, though `AutoSplitKey` doesn't currently generate 0 as a value.
 
 ## Related information  
 
