@@ -7743,6 +7743,21 @@
       "source_path": "dev-itpro/developer/devenv-connect-apps-delta.md",
       "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/dynamics-subscriptions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/developer/devenv-extend-edocuments-old.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-extend-edocuments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/developer/devenv-get-started-al-for-onprem.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/developer/devenv-running-cside-and-al-side-by-side.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-get-started",
+      "redirect_document_id": false
     }
   ] 
 }
