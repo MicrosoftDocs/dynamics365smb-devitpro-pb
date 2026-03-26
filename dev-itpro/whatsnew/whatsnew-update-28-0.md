@@ -123,6 +123,10 @@ For preview: ask chat to run Parse-TSV-Robust.ps1
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 28.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
+### Optional feature now mandatory
+
+- [Feature: Enable MCP Server access](https://go.microsoft.com/fwlink/?linkid=2336932) (**Note:** In 28.0, this feature is listed in **Feature Management** as **Enabled for all users**. However, disabling the feature has no effect. The feature will be removed from Feature Management in a future update.)
+
 ### New optional features
 
 - [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-enhanced-financial-reporting).
