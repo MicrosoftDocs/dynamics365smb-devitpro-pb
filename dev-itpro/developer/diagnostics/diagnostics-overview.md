@@ -2,7 +2,7 @@
 title: "AL diagnostics"
 description: ""
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,69 +22,69 @@ ms.reviewer: solsen
 |[AL0104](diagnostic-al104.md)|Syntax error, '{0}' expected.|Error|
 |[AL0105](diagnostic-al105.md)|Syntax error, identifier expected; '{1}' is a keyword.|Error|
 |[AL0106](diagnostic-al106.md)|Syntax error, 'TO' or 'DOWNTO' expected.|Error|
-|[AL0107](diagnostic-al107.md)|Syntax error, identifier expected.|Error|
-|[AL0108](diagnostic-al108.md)|Indexers must have at least one value.|Error|
-|[AL0109](diagnostic-al109.md)|Unexpected token.|Error|
+|[AL0107](diagnostic-al107.md)|Syntax error, identifier expected. Provide a valid name (letters, digits, and underscores only).|Error|
+|[AL0108](diagnostic-al108.md)|Indexers must have at least one value. Provide an index value inside the brackets (e.g., [1] or [i]).|Error|
+|[AL0109](diagnostic-al109.md)|Unexpected token encountered. Check syntax for missing operators, keywords, or delimiters.|Error|
 |[AL0110](diagnostic-al110.md)|Orphaned ELSE statement. This is most likely because of an unnecessary semicolon placed just before the ELSE keyword.|Error|
-|[AL0111](diagnostic-al111.md)|Semicolon expected.|Error|
-|[AL0112](diagnostic-al112.md)|{0} is not a valid attribute.|Error|
-|[AL0113](diagnostic-al113.md)|At least one dimension must be specified.|Error|
-|[AL0114](diagnostic-al114.md)|Syntax error, integer literal expected.|Error|
-|[AL0115](diagnostic-al115.md)|Object type expected.|Error|
+|[AL0111](diagnostic-al111.md)|Semicolon expected. Add a semicolon (;) to terminate the statement.|Error|
+|[AL0112](diagnostic-al112.md)|{0} is not a valid attribute. Check the attribute name and supported attributes for this context.|Error|
+|[AL0113](diagnostic-al113.md)|At least one dimension must be specified for the array declaration (e.g., [10] or [5,5]).|Error|
+|[AL0114](diagnostic-al114.md)|Syntax error, integer literal expected. Provide a numeric value (e.g., 0, 1, 42).|Error|
+|[AL0115](diagnostic-al115.md)|Object type expected. Valid types include: Table, Page, Report, Codeunit, Query, XmlPort, etc.|Error|
 |[AL0116](diagnostic-al116.md)|Invalid value for '{0}'. Allowed values are '{1}'.|Error|
 |[AL0117](diagnostic-al117.md)|Illegal statement. Only assignment and method invocation can be used as a statement.|Error|
 |[AL0118](diagnostic-al118.md)|The name '{0}' does not exist in the current context.|Error|
 |[AL0119](diagnostic-al119.md)|The parameter name '{0}' is already defined.|Error|
 |[AL0120](diagnostic-al120.md)|A local or parameter named '{0}' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter.|Error|
 |[AL0121](diagnostic-al121.md)|The variable name '{0}' is already defined.|Error|
-|[AL0122](diagnostic-al122.md)|Cannot implicitly convert type '{0}' to '{1}'.|Error|
+|[AL0122](diagnostic-al122.md)|Cannot implicitly convert type '{0}' to '{1}'. Use an explicit conversion or change the type.|Error|
 |[AL0123](diagnostic-al123.md)|The return value name '{0}' is already defined.|Error|
-|[AL0124](diagnostic-al124.md)|The property '{0}' cannot be used in this context.|Error|
-|[AL0125](diagnostic-al125.md)|Method name expected.|Error|
+|[AL0124](diagnostic-al124.md)|The property '{0}' cannot be used in this context. Verify the property is available for the current object type.|Error|
+|[AL0125](diagnostic-al125.md)|Method name expected after invocation operator '()'.|Error|
 |[AL0126](diagnostic-al126.md)|No overload for method '{0}' takes {1} arguments. Candidates: {2}.|Error|
-|[AL0127](diagnostic-al127.md)|Member '{0}' cannot be used like a method.|Error|
-|[AL0128](diagnostic-al128.md)|Language identifier expected.|Error|
+|[AL0127](diagnostic-al127.md)|Member '{0}' cannot be used like a method. Remove the parentheses or call a valid method.|Error|
+|[AL0128](diagnostic-al128.md)|Language identifier expected (e.g., 'ENU', 'DEU', or an LCID).|Error|
 |[AL0129](diagnostic-al129.md)|The left-hand side of an assignment must be a variable or field.|Error|
-|[AL0130](diagnostic-al130.md)|A 'var' argument must be an assignable variable.|Error|
+|[AL0130](diagnostic-al130.md)|A 'var' argument must be an assignable variable (field, variable, or parameter), not a constant or expression.|Error|
 |[AL0131](diagnostic-al131.md)|The property CharAllowed must be specified in pairs of characters. The first character in the pair must be equal to or less than the second.|Error|
 |[AL0132](diagnostic-al132.md)|'{0}' does not contain a definition for '{1}'.|Error|
 |[AL0133](diagnostic-al133.md)|Argument {0}: cannot convert from '{1}' to '{2}'.|Error|
-|[AL0134](diagnostic-al134.md)|'{0}' is not recognized as a valid type.|Error|
+|[AL0134](diagnostic-al134.md)|'{0}' is not recognized as a valid type. Verify the type name is correct and the required dependencies are referenced.|Error|
 |[AL0135](diagnostic-al135.md)|There is no argument given that corresponds to the required formal parameter '{0}' of '{1}'.|Error|
 |[AL0136](diagnostic-al136.md)|The loop variable in a 'for' statement must be a numeric type.|Error|
-|[AL0137](diagnostic-al137.md)|No enclosing loop out of which to break.|Error|
-|[AL0138](diagnostic-al138.md)|The case expression cannot be an array.|Error|
+|[AL0137](diagnostic-al137.md)|No enclosing loop out of which to break. The 'break' statement can only be used inside a for, while, or repeat loop.|Error|
+|[AL0138](diagnostic-al138.md)|The case expression cannot be an array. Use a simple type (Integer, Text, Option, etc.) for case expressions.|Error|
 |[AL0139](diagnostic-al139.md)|Since '{0}' doesn't have a return value, EXIT cannot be called with a value.|Error|
-|[AL0140](diagnostic-al140.md)|The expression is not valid for the WITH statement.|Error|
+|[AL0140](diagnostic-al140.md)|The expression is not valid for the WITH statement. Use a record variable or table reference.|Error|
 |[AL0142](diagnostic-al142.md)|Only variables of type record can be marked as TEMPORARY.|Error|
 |[AL0143](diagnostic-al143.md)|Cannot apply indexing with [] to an expression of type '{0}'.|Error|
 |[AL0144](diagnostic-al144.md)|Wrong number of indices inside []; expected {0}.|Error|
-|[AL0145](diagnostic-al145.md)|Assignment is not valid for arrays.|Error|
+|[AL0145](diagnostic-al145.md)|Direct assignment is not valid for arrays. Use array indexing to assign individual elements or a loop to copy elements.|Error|
 |[AL0146](diagnostic-al146.md)|The maximum number of array elements is {0}. Actual number is {1}.|Error|
-|[AL0147](diagnostic-al147.md)|An array dimension must be a positive number.|Error|
-|[AL0148](diagnostic-al148.md)|The table filter is not valid.|Error|
+|[AL0147](diagnostic-al147.md)|An array dimension must be a positive number. Use a positive integer value for the array size (e.g., [10]).|Error|
+|[AL0148](diagnostic-al148.md)|The table filter is not valid. Ensure the filter follows the format: Field=CONST(value) or Field=FILTER(expression).|Error|
 |[AL0149](diagnostic-al149.md)|There is an 'ELSE' statement without an 'IF' in property {0}.|Error|
 |[AL0150](diagnostic-al150.md)|Invalid CONST expression. A valid integer or an identifier is expected.|Error|
-|[AL0151](diagnostic-al151.md)|Expression must be an Option.|Error|
+|[AL0151](diagnostic-al151.md)|Expression must be an Option type. Use '::' to access option members (e.g., MyOption::Value).|Error|
 |[AL0152](diagnostic-al152.md)|The value '{0}' is used more than once.|Error|
-|[AL0153](diagnostic-al153.md)|The property '{0}' cannot be blank.|Error|
+|[AL0153](diagnostic-al153.md)|The property '{0}' cannot be blank. Provide a value for this required property.|Error|
 |[AL0154](diagnostic-al154.md)|The maximum length for a field of type '{0}' is {1}.|Error|
 |[AL0155](diagnostic-al155.md)|A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'.|Error|
-|[AL0156](diagnostic-al156.md)|'{0}' is not a valid field type.|Error|
-|[AL0157](diagnostic-al157.md)|'{0}' is not a valid variable type.|Error|
-|[AL0158](diagnostic-al158.md)|'{0}' is not a valid parameter type.|Error|
-|[AL0159](diagnostic-al159.md)|'{0}' is not a valid return type.|Error|
-|[AL0160](diagnostic-al160.md)|'{0}' is not a valid language identifier.|Error|
+|[AL0156](diagnostic-al156.md)|'{0}' is not a valid field type. Use basic types (Text, Integer, Decimal, etc.) or reference custom types (Record, Enum, etc.).|Error|
+|[AL0157](diagnostic-al157.md)|'{0}' is not a valid variable type. Use basic types (Text, Integer, Decimal, etc.) or reference custom types (Record, Enum, etc.).|Error|
+|[AL0158](diagnostic-al158.md)|'{0}' is not a valid parameter type. Use basic types (Text, Integer, Decimal, etc.) or reference custom types (Record, Enum, etc.).|Error|
+|[AL0159](diagnostic-al159.md)|'{0}' is not a valid return type. Use basic types (Text, Integer, Decimal, etc.) or reference custom types (Record, Enum, etc.).|Error|
+|[AL0160](diagnostic-al160.md)|'{0}' is not a valid language identifier. Use a standard language code (e.g., 'ENU', 'DEU') or LCID.|Error|
 |[AL0161](diagnostic-al161.md)|'{0}' is inaccessible due to its protection level.|Error|
-|[AL0162](diagnostic-al162.md)|'{0}' is not a valid trigger.|Error|
+|[AL0162](diagnostic-al162.md)|'{0}' is not a valid trigger for this object type. Check the object documentation for supported triggers.|Error|
 |[AL0163](diagnostic-al163.md)|Wrong signature. Correct signature for '{0}' is '{1}'.|Error|
 |[AL0164](diagnostic-al164.md)|The trigger '{0}' is already defined.|Error|
-|[AL0165](diagnostic-al165.md)|Triggers cannot be called directly.|Error|
-|[AL0166](diagnostic-al166.md)|Argument {0}: must be a member.|Error|
+|[AL0165](diagnostic-al165.md)|Triggers cannot be called directly. Triggers are automatically invoked by the system in response to events.|Error|
+|[AL0166](diagnostic-al166.md)|Argument {0}: must be a member (field, property, or variable), not an expression or constant.|Error|
 |[AL0167](diagnostic-al167.md)|The {0} '{1}' can only be used if the property '{2}' is set with any of the values of: '{3}'.|Error|
 |[AL0168](diagnostic-al168.md)|The {0} '{1}' can only be used if the property '{2}' is set.|Error|
-|[AL0169](diagnostic-al169.md)|The option value '{0}' is not valid.|Error|
-|[AL0170](diagnostic-al170.md)|An '=' is expected for property {0}.|Error|
+|[AL0169](diagnostic-al169.md)|The option value '{0}' is not valid. Check the enum definition for valid values.|Error|
+|[AL0170](diagnostic-al170.md)|An '=' is expected for property {0}. Use the format: PropertyName = Value;.|Error|
 |[AL0171](diagnostic-al171.md)|The property value '{0}' on property '{1}' is not valid.|Error|
 |[AL0172](diagnostic-al172.md)|Operator '{0}' is ambiguous on an operand of type '{1}'.|Error|
 |[AL0173](diagnostic-al173.md)|Operator '{0}' cannot be applied to an operand of type '{1}'.|Error|
@@ -92,13 +92,13 @@ ms.reviewer: solsen
 |[AL0175](diagnostic-al175.md)|Operator '{0}' cannot be applied to operands of type '{1}' and '{2}'.|Error|
 |[AL0176](diagnostic-al176.md)|Expected one of the calculation formula methods (Average,Count,Exist,Min,Max,Lookup,Sum).|Error|
 |[AL0177](diagnostic-al177.md)|Invalid application object identifier. A number or an application object name is expected.|Error|
-|[AL0178](diagnostic-al178.md)|A 'FILTER' keyword or an identifier is expected.|Error|
-|[AL0179](diagnostic-al179.md)|An identifier or a member access expression is expected.|Error|
-|[AL0180](diagnostic-al180.md)|A 'FILTER' keyword is expected.|Error|
-|[AL0181](diagnostic-al181.md)|Invalid filter expression.|Error|
+|[AL0178](diagnostic-al178.md)|A 'FILTER' keyword or an identifier is expected in the filter expression. Use FILTER(...) or a field name.|Error|
+|[AL0179](diagnostic-al179.md)|An identifier or a member access expression is expected (e.g., 'FieldName' or 'Record.FieldName').|Error|
+|[AL0180](diagnostic-al180.md)|A 'FILTER' keyword is expected in this context. Use FILTER(...) to specify filter conditions.|Error|
+|[AL0181](diagnostic-al181.md)|Invalid filter expression. Check the syntax and ensure all field names and operators are correct.|Error|
 |[AL0182](diagnostic-al182.md)|An identifier or a literal is expected as the value of a filter expression.|Error|
-|[AL0183](diagnostic-al183.md)|Unexpected character '{0}'.|Error|
-|[AL0184](diagnostic-al184.md)|The expression '{0}' is not valid.|Error|
+|[AL0183](diagnostic-al183.md)|Unexpected character '{0}'. Remove the invalid character or check if a special character needs escaping.|Error|
+|[AL0184](diagnostic-al184.md)|The expression '{0}' is not valid. Verify that all referenced fields exist and syntax is correct.|Error|
 |[AL0185](diagnostic-al185.md)|{0} '{1}' is missing.|Error|
 |[AL0186](diagnostic-al186.md)|Reference '{0}' in application object '{1}' does not exist.|Error|
 |[AL0187](diagnostic-al187.md)|Attribute '{0}' is valid only for {1}.|Error|
@@ -112,29 +112,29 @@ ms.reviewer: solsen
 |[AL0197](diagnostic-al197.md)|An application object of type '{0}' with name '{1}' is already declared by the extension '{2}'.|Error|
 |[AL0198](diagnostic-al198.md)|Expected one of the application object keywords ({0}).|Error|
 |[AL0199](diagnostic-al199.md)|The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Integer, or Duration).|Error|
-|[AL0200](diagnostic-al200.md)|Property '{0}' is obsolete and will be removed in a future version.|Warning|
+|[AL0200](diagnostic-al200.md)|Property '{0}' is obsolete and will be removed in a future version. Update your code to use the recommended alternative.|Warning|
 |[AL0201](diagnostic-al201.md)|The {0} FlowField is not a Boolean field. If a FlowField CalcFormula starts with 'Exist', then the FlowField must be a Boolean type field.|Error|
 |[AL0202](diagnostic-al202.md)|The {0} FlowField is not an Integer field. If a FlowField CalcFormula starts with 'Count', then the FlowField must be an Integer type field.|Error|
 |[AL0203](diagnostic-al203.md)|Cannot calculate Sum or Average for the field {0} because it is not a numeric field (Decimal, BigInteger, Integer, or Duration data type).|Error|
 |[AL0204](diagnostic-al204.md)|Field type {0} is not convertible to field type {1}.|Error|
 |[AL0206](diagnostic-al206.md)|A field with ID {0} is already defined in {1} '{2}' by the extension '{3}'.|Error|
-|[AL0207](diagnostic-al207.md)|The expression must be of Text type.|Error|
-|[AL0208](diagnostic-al208.md)|The expression must be of Boolean type.|Error|
+|[AL0207](diagnostic-al207.md)|The expression must be of Text type. Convert the expression or use a Text variable.|Error|
+|[AL0208](diagnostic-al208.md)|The expression must be of Boolean type. Use a comparison or boolean expression.|Error|
 |[AL0210](diagnostic-al210.md)|A control with ID = {0} is already defined.|Error|
 |[AL0211](diagnostic-al211.md)|Unknown area type '{0}'.|Error|
 |[AL0212](diagnostic-al212.md)|An area of type '{0}' is already defined.|Error|
 |[AL0213](diagnostic-al213.md)|An area of type '{0}' is only valid on pages of type(s) '{1}'.|Error|
 |[AL0214](diagnostic-al214.md)|An area of type 'FactBoxes' is not valid on Part type pages.|Error|
-|[AL0215](diagnostic-al215.md)|A Part type page cannot contain other parts.|Error|
+|[AL0215](diagnostic-al215.md)|A Part type page cannot contain other parts. Part pages (List Part, Card Part) can only contain fields and actions.|Error|
 |[AL0216](diagnostic-al216.md)|Only parts are valid in an area of type 'FactBoxes'.|Error|
 |[AL0217](diagnostic-al217.md)|Only parts and groups are valid in an area of type 'RoleCenter'.|Error|
 |[AL0218](diagnostic-al218.md)|An integer literal value is expected for property {0}.|Error|
-|[AL0219](diagnostic-al219.md)|Syntax error, string literal expected.|Error|
-|[AL0220](diagnostic-al220.md)|Syntax error, boolean literal expected.|Error|
+|[AL0219](diagnostic-al219.md)|Syntax error, string literal expected. Enclose the text in single quotes (e.g., 'text').|Error|
+|[AL0220](diagnostic-al220.md)|Syntax error, boolean literal expected. Use 'true' or 'false'.|Error|
 |[AL0221](diagnostic-al221.md)|The value '{0}' is not valid. The valid range is {1}..{2}.|Error|
 |[AL0222](diagnostic-al222.md)|The ID '{0}' is not valid. ID's must be greater than zero.|Error|
 |[AL0223](diagnostic-al223.md)|The {0} '{1}' can only be used if the property '{2}' is set to '{3}'.|Error|
-|[AL0224](diagnostic-al224.md)|Expression expected.|Error|
+|[AL0224](diagnostic-al224.md)|Expression expected. Provide a valid expression (variable, constant, calculation, or method call).|Error|
 |[AL0227](diagnostic-al227.md)|A key with ID {0} is already defined.|Error|
 |[AL0228](diagnostic-al228.md)|A field group with ID {0} is already defined.|Error|
 |[AL0229](diagnostic-al229.md)|The data type on the {0} field is not valid because the ExtendedDatatype property is set to Ratio. Valid data types are Integer, BigInteger and Decimal.|Error|
@@ -152,12 +152,12 @@ ms.reviewer: solsen
 |[AL0243](diagnostic-al243.md)|Attribute {0} can only be used within a codeunit of subtype {1}.|Error|
 |[AL0244](diagnostic-al244.md)|The signature of procedure '{0}' does not match the signature required by attribute '{1}': return value is expected to be of type '{2}' but found type '{3}'. The expected signature is: {4}.|Error|
 |[AL0245](diagnostic-al245.md)|The signature of procedure '{0}' does not match the signature required by attribute '{1}': procedure cannot be local.|Error|
-|[AL0246](diagnostic-al246.md)|The property '{0}' cannot be customized.|Error|
+|[AL0246](diagnostic-al246.md)|The property '{0}' cannot be customized. This property is read-only in the current context.|Error|
 |[AL0247](diagnostic-al247.md)|The target {0} '{1}' for the extension object is not found.|Error|
 |[AL0250](diagnostic-al250.md)|The data type on the {0} field is not valid because the ExtendedDatatype property is set to Person. Valid data types are Media and MediaSet.|Error|
-|[AL0251](diagnostic-al251.md)|Application object '{0}' is missing.|Warning|
+|[AL0251](diagnostic-al251.md)|Application object '{0}' is missing. Verify the object exists and is included in the project dependencies.|Warning|
 |[AL0252](diagnostic-al252.md)|Expected 'Ascending' or 'Descending' value.|Error|
-|[AL0254](diagnostic-al254.md)|Sorting field '{0}' should be part of the keys for table '{1}'.|Warning|
+|[AL0254](diagnostic-al254.md)|Sorting field '{0}' should be part of the keys for table '{1}'. Add the field to a key definition to improve performance.|Warning|
 |[AL0255](diagnostic-al255.md)|Property '{0}' requires an application object reference for the 'RunObject' property.|Error|
 |[AL0256](diagnostic-al256.md)|The flowfield '{0}' cannot be part of the keys for table '{1}'.|Error|
 |[AL0257](diagnostic-al257.md)|Constant value '{0}' is outside the range for a DateTime data type, only 0 is valid.|Error|
@@ -174,7 +174,7 @@ ms.reviewer: solsen
 |[AL0271](diagnostic-al271.md)|The action '{0}' is not found in the target '{1}'.|Error|
 |[AL0272](diagnostic-al272.md)|The anchoring symbol '{0}' must be a grouping symbol.|Error|
 |[AL0273](diagnostic-al273.md)|The name '{0}' is an Area type. Using an Area type name will limit extensibility as dependent extension won't be able to reference it.|Warning (future error)|
-|[AL0274](diagnostic-al274.md)|The anchoring symbol '{0}' cannot be an area.|Error|
+|[AL0274](diagnostic-al274.md)|The anchoring symbol '{0}' cannot be an area. Use a field, group, or action as the anchor target.|Error|
 |[AL0275](diagnostic-al275.md)|'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.|Error|
 |[AL0276](diagnostic-al276.md)|A Time literal value is expected for property {0}.|Error|
 |[AL0277](diagnostic-al277.md)|A Date literal value is expected for property {0}.|Error|
@@ -214,13 +214,13 @@ ms.reviewer: solsen
 |[AL0313](diagnostic-al313.md)|Attribute {0} can only be used within {1}.|Error|
 |[AL0314](diagnostic-al314.md)|The property '{0}' is only valid in controls of type '{1}'.|Error|
 |[AL0315](diagnostic-al315.md)|Control '{0}' does not exist in group '{1}'.|Error|
-|[AL0316](diagnostic-al316.md)|The expression must be of Integer type.|Error|
+|[AL0316](diagnostic-al316.md)|The expression must be of Integer type. Convert the expression or use an Integer variable.|Error|
 |[AL0317](diagnostic-al317.md)|A property with the same name has already been declared.|Error|
 |[AL0318](diagnostic-al318.md)|The value assigned to the 'RunObject' property is not valid. Valid object types are codeunit, page, xmlport, report, and query.|Error|
 |[AL0319](diagnostic-al319.md)|At least one target has to be specified for the move.|Error|
 |[AL0320](diagnostic-al320.md)|The referenced page '{0}' must specify a 'SourceTable'.|Error|
-|[AL0321](diagnostic-al321.md)|Variable {0} cannot be included in the data set.|Error|
-|[AL0322](diagnostic-al322.md)|{0} is not valid for client expressions.|Error|
+|[AL0321](diagnostic-al321.md)|Variable {0} cannot be included in the data set. Only simple types and record fields are allowed in report datasets.|Error|
+|[AL0322](diagnostic-al322.md)|{0} is not valid for client expressions. Client expressions can only use simple data types and field references.|Error|
 |[AL0323](diagnostic-al323.md)|The value assigned to the SystemPart type is not valid. Valid values are {0}.|Error|
 |[AL0324](diagnostic-al324.md)|The language {0} must only be specified one time.|Error|
 |[AL0325](diagnostic-al325.md)|The field '{0}' in the table '{1}' cannot be included in a key because its type is '{2}'.|Error|
@@ -228,7 +228,7 @@ ms.reviewer: solsen
 |[AL0327](diagnostic-al327.md)|Missing file '{0}'.|Error|
 |[AL0329](diagnostic-al329.md)|The {0} property must reference a top-level DataItem.|Error|
 |[AL0331](diagnostic-al331.md)|The property 'DataItemLink' cannot be set on a top-level DataItem.|Error|
-|[AL0332](diagnostic-al332.md)|The control {0} must be of type {1}.|Error|
+|[AL0332](diagnostic-al332.md)|The control {0} must be of type {1}. Change the control type or use a different control.|Error|
 |[AL0333](diagnostic-al333.md)|The syntax for accessing fields is not valid. Specify target field with 'tableName.fieldName' syntax.|Error|
 |[AL0334](diagnostic-al334.md)|The extension object '{0}' cannot be declared. Another extension for target '{1}' or the target itself is already declared in this module.|Error|
 |[AL0335](diagnostic-al335.md)|Attributes must be specified before elements inside of an element.|Error|
@@ -239,7 +239,7 @@ ms.reviewer: solsen
 |[AL0341](diagnostic-al341.md)|'{0}' property is missing.|Error|
 |[AL0342](diagnostic-al342.md)|You cannot combine two DataItems at the same level because unions are not supported.|Error|
 |[AL0343](diagnostic-al343.md)|Queries must define a top-level DataItem.|Error|
-|[AL0344](diagnostic-al344.md)|The property 'DataItemLink' must be set.|Error|
+|[AL0344](diagnostic-al344.md)|The property 'DataItemLink' must be set for nested data items. Specify how this data item relates to its parent data item.|Error|
 |[AL0345](diagnostic-al345.md)|The source of a Column or Filter must be a field defined on the table referenced by its parent DataItem.|Error|
 |[AL0346](diagnostic-al346.md)|The methods '{0}' can only be used on Columns that have a Date or DateTime type.|Error|
 |[AL0347](diagnostic-al347.md)|The methods '{0}' can only be used on Columns that have a Decimal, BigInteger, Integer, or Duration type.|Error|
@@ -250,15 +250,15 @@ ms.reviewer: solsen
 |[AL0353](diagnostic-al353.md)|A Column must have a valid data source or have the 'Method' property set to 'Count'.|Error|
 |[AL0354](diagnostic-al354.md)|Cannot move element '{0}' relative to itself in page '{1}'.|Error|
 |[AL0355](diagnostic-al355.md)|Cannot move the {0} '{1}' multiple times inside of a single move operation.|Error|
-|[AL0356](diagnostic-al356.md)|Cannot modify the {0} '{1}' multiple times.|Error|
+|[AL0356](diagnostic-al356.md)|Cannot modify the {0} '{1}' multiple times. Remove duplicate modifications or consolidate changes.|Error|
 |[AL0357](diagnostic-al357.md)|Cannot add {0} '{1}' with the same name multiple times.|Error|
 |[AL0358](diagnostic-al358.md)|Cannot move or modify the {0} '{1}' in the same '{2}' that you added.|Error|
-|[AL0359](diagnostic-al359.md)|The XML node name is not valid. {0}.|Error|
+|[AL0359](diagnostic-al359.md)|The XML node name is not valid. {0} XML names must start with a letter and contain only letters, digits, and underscores.|Error|
 |[AL0360](diagnostic-al360.md)|Text literal was not properly terminated. Use the character ' to terminate the literal.|Error|
 |[AL0361](diagnostic-al361.md)|Identifier was not properly terminated. Use the character " to terminate the identifier.|Error|
-|[AL0362](diagnostic-al362.md)|The path must be relative to the project root.|Error|
+|[AL0362](diagnostic-al362.md)|The path must be relative to the project root. Remove any absolute path prefixes (e.g., 'C:\' or '/').|Error|
 |[AL0363](diagnostic-al363.md)|The directory separator used in this property value is not compatible with the current operating system.|Error|
-|[AL0364](diagnostic-al364.md)|Option members must be accessed with ::.|Error|
+|[AL0364](diagnostic-al364.md)|Option members must be accessed with '::' (e.g., MyEnum::Value). Update the syntax to use the scope operator.|Error|
 |[AL0365](diagnostic-al365.md)|The property '{0}' cannot be set if the property '{1}' is set to '{2}'.|Error|
 |[AL0366](diagnostic-al366.md)|A table has to have at least one Normal field.|Error|
 |[AL0367](diagnostic-al367.md)|An array must have at least one dimension.|Error|
@@ -267,12 +267,12 @@ ms.reviewer: solsen
 |[AL0370](diagnostic-al370.md)|Division by constant zero.|Error|
 |[AL0371](diagnostic-al371.md)|The operation overflows at compile time.|Error|
 |[AL0372](diagnostic-al372.md)|The length of the String constant exceeds the current memory limit.|Error|
-|[AL0373](diagnostic-al373.md)|The XML name cannot be empty.|Error|
+|[AL0373](diagnostic-al373.md)|The XML name cannot be empty. Provide a valid XML node name.|Error|
 |[AL0374](diagnostic-al374.md)|The use of a unique ID has been deprecated and the ID can be removed.|Warning|
-|[AL0375](diagnostic-al375.md)|Option members cannot contain comma.|Error|
+|[AL0375](diagnostic-al375.md)|Option members cannot contain comma. Use a different separator or rename the option member.|Error|
 |[AL0376](diagnostic-al376.md)|A control of type '{0}' is not allowed in a parent control of type '{1}'.|Error|
 |[AL0377](diagnostic-al377.md)|'{0}' is not a valid value for the '{1}' attribute on variables of type '{2}'.|Error|
-|[AL0378](diagnostic-al378.md)|A page of type Role Center cannot have triggers.|Error|
+|[AL0378](diagnostic-al378.md)|A page of type Role Center cannot have triggers. Remove all trigger implementations from this page.|Error|
 |[AL0379](diagnostic-al379.md)|The name '{0}' cannot be used as an identifier because it does not comply with the Common Language Specification.|Error|
 |[AL0380](diagnostic-al380.md)|Cannot move symbol '{0}' from '{1}' area to '{2}' area.|Error|
 |[AL0381](diagnostic-al381.md)|The keys '{0}' and '{1}' have an identical list of fields.|Error|
@@ -286,7 +286,7 @@ ms.reviewer: solsen
 |[AL0389](diagnostic-al389.md)|The date formula '{0}' contains a number that is too large. The number must be in the range {1} - {2}.|Error|
 |[AL0390](diagnostic-al390.md)|The date formula '{0}' must include a time unit. Time units can be: D,WD,W,M,Q, or Y. C specifies the current time unit based on date and can be used as a prefix to any of the time units.|Error|
 |[AL0391](diagnostic-al391.md)|The date formula '{0}' must include a number.|Error|
-|[AL0392](diagnostic-al392.md)|The input cannot be longer than {0}.|Error|
+|[AL0392](diagnostic-al392.md)|The input cannot be longer than {0} characters. Reduce the length of the date formula.|Error|
 |[AL0393](diagnostic-al393.md)|Application object {0} is already referenced.|Error|
 |[AL0395](diagnostic-al395.md)|You can only specify Move and Modify actions in the layout section of a page customization.|Error|
 |[AL0396](diagnostic-al396.md)|Procedures and triggers are not allowed on page customizations.|Error|
@@ -297,7 +297,7 @@ ms.reviewer: solsen
 |[AL0402](diagnostic-al402.md)|Expression {0} cannot be specified more than once in a 'case' statement.|Error|
 |[AL0403](diagnostic-al403.md)|To modify '{0}' you must add at least one property or trigger.|Error|
 |[AL0404](diagnostic-al404.md)|Property '{0}' is not allowed on a table extension.|Error|
-|[AL0405](diagnostic-al405.md)|An option value is expected.|Error|
+|[AL0405](diagnostic-al405.md)|An option value is expected. Use '::' to access option members (e.g., MyEnum::Value).|Error|
 |[AL0406](diagnostic-al406.md)|The type for {0} is not valid. Expected {1}, but found {2}.|Error|
 |[AL0407](diagnostic-al407.md)|The generic '{0}' type expects {1} type arguments.|Error|
 |[AL0408](diagnostic-al408.md)|The type '{0}' cannot be used as a type argument in this context.|Error|
@@ -347,14 +347,14 @@ ms.reviewer: solsen
 |[AL0454](diagnostic-al454.md)|The {0} {1} of type {2} cannot be extended.|Error|
 |[AL0455](diagnostic-al455.md)|Option ordinal value '{0}' is not valid. Valid values are -1 and positive integers.|Error|
 |[AL0456](diagnostic-al456.md)|The number of option ordinal values is not valid. There must be as many option ordinal values as there are option members.|Error|
-|[AL0457](diagnostic-al457.md)|The label syntax is not correct. Please move the '{0}' to its designated attribute.|Warning|
+|[AL0457](diagnostic-al457.md)|The label syntax is not correct. Move the '{0}' to its designated attribute.|Warning|
 |[AL0458](diagnostic-al458.md)|'{0}' is not a valid attribute on variables of type '{1}'.|Error|
 |[AL0459](diagnostic-al459.md)|The attribute '{0}' is only allowed on global variables.|Error|
 |[AL0460](diagnostic-al460.md)|Client-side events are supported only on pages and page extensions.|Error|
 |[AL0461](diagnostic-al461.md)|'{0}' is not a valid event publisher.|Error|
 |[AL0462](diagnostic-al462.md)|The publisher '{0}' does not have any public events named '{1}'.|Error|
 |[AL0463](diagnostic-al463.md)|Parameter '{0}' must be 'var' if and only if the publisher parameter is 'var'.|Error|
-|[AL0464](diagnostic-al464.md)|Could not determine a suitable default primary key for table '{0}'. Please specify a primary key for the table.|Error|
+|[AL0464](diagnostic-al464.md)|Could not determine a suitable default primary key for table '{0}'. Specify a primary key for the table.|Error|
 |[AL0465](diagnostic-al465.md)|The property '{0}' does not accept references to external files.|Error|
 |[AL0466](diagnostic-al466.md)|Cannot access file '{0}'. The file is most likely read-only.|Error|
 |[AL0467](diagnostic-al467.md)|Cannot access file '{0}'. The file is most likely read-only.|Warning|
@@ -371,7 +371,7 @@ ms.reviewer: solsen
 |[AL0479](diagnostic-al479.md)|There must be only one translation item for each ID.|Warning|
 |[AL0480](diagnostic-al480.md)|Attributes cannot have nested elements.|Error|
 |[AL0481](diagnostic-al481.md)|The property Image can only be used on fields that are contained in a CueGroup control.|Warning (future error)|
-|[AL0482](diagnostic-al482.md)|The image {0} is not valid in this context.|Warning|
+|[AL0482](diagnostic-al482.md)|The image {0} is not valid in this context. Verify the image name is correct and supported for this control type.|Warning|
 |[AL0483](diagnostic-al483.md)|The property Image cannot be used on nested Action Groups inside the 'Sections' area.|Warning|
 |[AL0484](diagnostic-al484.md)|The property '{0}' must be alphanumeric.|Error|
 |[AL0485](diagnostic-al485.md)|The property '{0}' is mandatory for objects of type API.|Error|
@@ -445,13 +445,13 @@ ms.reviewer: solsen
 |[AL0556](diagnostic-al556.md)|The RunObject property value of actions defined in the '{0}' area must only reference objects of type {1}.|Warning (future error)|
 |[AL0557](diagnostic-al557.md)|The name of the codeunit local variable '{0}' is identical to a field in table '{1}' and will shadow that table field.|Warning|
 |[AL0558](diagnostic-al558.md)|The name of the codeunit global variable '{0}' is identical to a field in table '{1}'.|Warning|
-|[AL0559](diagnostic-al559.md)|A Part type page cannot contain other parts.|Warning (future error)|
+|[AL0559](diagnostic-al559.md)|A Part type page cannot contain other parts. Part pages (List Part, Card Part) can only contain fields and actions.|Warning (future error)|
 |[AL0560](diagnostic-al560.md)|Only parts and groups are valid in an area of type 'RoleCenter'.|Warning (future error)|
 |[AL0561](diagnostic-al561.md)|Only parts are valid in an area of type 'FactBoxes'.|Warning (future error)|
 |[AL0562](diagnostic-al562.md)|The value assigned to the SystemPart type is not valid. Valid values are {0}.|Warning (future error)|
 |[AL0563](diagnostic-al563.md)|A control of type '{0}' is not allowed in a parent control of type '{1}'.|Warning (future error)|
 |[AL0564](diagnostic-al564.md)|The object {0} '{1}' is not extensible.|Error|
-|[AL0565](diagnostic-al565.md)|Fast publishing requires a built application file to be present. The '{0}' application file contains a manifest which is not valid. Please rebuild the application file before continuing with fast publishing.|Error|
+|[AL0565](diagnostic-al565.md)|Fast publishing requires a built application file to be present. The '{0}' application file contains a manifest which is not valid. Rebuild the application file before continuing with fast publishing.|Error|
 |[AL0566](diagnostic-al566.md)|The field '{0}' is using an Id {1} that is reserved for system fields.|Error|
 |[AL0567](diagnostic-al567.md)|The field '{0}' is using the same name as a system-provided field and will shadow that field.|Warning|
 |[AL0568](diagnostic-al568.md)|Groups defined in the action area '{0}' should only contain actions or groups.|Warning (future error)|
@@ -459,7 +459,7 @@ ms.reviewer: solsen
 |[AL0570](diagnostic-al570.md)|The symbol '{0}' results in the same translation ID as one or more other symbols. Rename symbol to resolve the problem.|Error|
 |[AL0571](diagnostic-al571.md)|The property 'Description' should only be used for internal comments. Use the property 'Caption' or 'CaptionML' in order to specify the profile caption displayed to end users.|Warning (future error)|
 |[AL0572](diagnostic-al572.md)|I/O operations on the file or folder '{0}' resulted in an exception with the Windows 32 error code '{1}'.|Error|
-|[AL0573](diagnostic-al573.md)|{0} is not valid for client expressions.|Warning (future error)|
+|[AL0573](diagnostic-al573.md)|{0} is not valid for client expressions. Client expressions can only use simple data types and field references.|Warning (future error)|
 |[AL0574](diagnostic-al574.md)|This feature is under development and cannot be used in an extension.|Error|
 |[AL0575](diagnostic-al575.md)|You cannot reference the {0} '{1}' because it is defined in the page customization '{2}'.|Error|
 |[AL0576](diagnostic-al576.md)|The profile name '{0}' is not valid because it contains leading or trailing spaces.|Error|
@@ -473,7 +473,7 @@ ms.reviewer: solsen
 |[AL0585](diagnostic-al585.md)|An interface cannot have any variables.|Error|
 |[AL0586](diagnostic-al586.md)|The identifier contains characters that are not valid: {0}.|Warning (future error)|
 |[AL0587](diagnostic-al587.md)|'{0}' is already listed in the interface list.|Error|
-|[AL0588](diagnostic-al588.md)|The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'. Please update the subscriber type to match the publisher.|Warning|
+|[AL0588](diagnostic-al588.md)|The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'. Update the subscriber type to match the publisher.|Warning|
 |[AL0589](diagnostic-al589.md)|The name '{0}' is used across multiple columns and data items. This will prevent extensibility of this column or data item.|Warning (future error)|
 |[AL0590](diagnostic-al590.md)|The property {0} is only supported on {1}.|Warning (future error)|
 |[AL0591](diagnostic-al591.md)|The property {0} is only supported on {1}.|Error|
@@ -543,13 +543,15 @@ ms.reviewer: solsen
 |[AL0657](diagnostic-al657.md)|The property {0} is mandatory for ListParts and PageParts.|Error|
 |[AL0658](diagnostic-al658.md)|Member name '{0}' is only allowed on triggers.|Error|
 |[AL0659](diagnostic-al659.md)|The length of the enum identifier '{0}' should not exceed {1} characters as it may result in runtime issues in cases where there are other enums with the same first {1} characters.|Warning|
-|[AL0660](diagnostic-al660.md)|The property '{0}' cannot be customized.|Warning (future error)|
+|[AL0660](diagnostic-al660.md)|The property '{0}' cannot be customized. This property is read-only in the current context.|Warning (future error)|
+|[AL0662](diagnostic-al662.md)|Implicit conversion from BigInteger '{0}' to {1} '{2}' in property expression may overflow at runtime. Consider changing the target field type to BigInteger.|Warning|
+|[AL0663](diagnostic-al663.md)|Implicit conversion from BigInteger '{0}' to Enum '{1}' in property expression may overflow at runtime and can lead to unexpected enum value behavior. This conversion is dangerous and may cause runtime issues. Consider changing the target field type to BigInteger.|Warning|
 |[AL0665](diagnostic-al665.md)|'{0}' is not a valid return type in runtime version '{1}'. The supported runtime versions are: {2}.|Error|
 |[AL0666](diagnostic-al666.md)|'{0}' is not available in runtime version '{1}'. The supported runtime versions are: {2}.|Error|
 |[AL0667](diagnostic-al667.md)|'{0}' is being deprecated in the versions: {1} {2}.|Warning (future error)|
 |[AL0668](diagnostic-al668.md)|This feature is not available on cross-platform builds of the AL compiler.|Error|
-|[AL0670](diagnostic-al670.md)|Fast publishing failed because the RAD file has specified a non-existing application object of type : '{0}' name: '{1}' ID: '{2}' to be added or modified. Please do a full publishing before issuing a fast publishing again.|Error|
-|[AL0671](diagnostic-al671.md)|Fast publishing failed because the RAD file has specified an existing application object of type: '{0}' name: '{1}' ID: '{2}' to be deleted. Please do a full publishing before issuing a fast publishing again.|Error|
+|[AL0670](diagnostic-al670.md)|Fast publishing failed because the RAD file has specified a non-existing application object of type : '{0}' name: '{1}' ID: '{2}' to be added or modified. Do a full publishing before issuing a fast publishing again.|Error|
+|[AL0671](diagnostic-al671.md)|Fast publishing failed because the RAD file has specified an existing application object of type: '{0}' name: '{1}' ID: '{2}' to be deleted. Do a full publishing before issuing a fast publishing again.|Error|
 |[AL0672](diagnostic-al672.md)|Filtering is only allowed on fields where FieldClass is set to Normal. Create a Filter column and specify the filter by using the 'ColumnFilter' property.|Error|
 |[AL0673](diagnostic-al673.md)|The property '{0}' is required.|Error|
 |[AL0674](diagnostic-al674.md)|The property '{0}' is required when property '{1}' is set to '{2}'.|Error|
@@ -563,7 +565,7 @@ ms.reviewer: solsen
 |[AL0682](diagnostic-al682.md)|A DataItem or Column with name '{0}' could not be found in the target {1}.|Error|
 |[AL0683](diagnostic-al683.md)|The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements.|Error|
 |[AL0684](diagnostic-al684.md)|The permissionset '{0}' contains permissionsets or permission for objects from other module. Permissions on objects from other modules will be ignored.|Warning|
-|[AL0685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. Please make sure that the target field's length is less than equal to the source field length.|Warning (future error)|
+|[AL0685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. Make sure that the target field's length is less than equal to the source field length.|Warning (future error)|
 |[AL0686](diagnostic-al686.md)|The base type already defines a method called '{0}' with the same parameter types.|Error|
 |[AL0687](diagnostic-al687.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the primary key in the IncludeFields property.|Error|
 |[AL0688](diagnostic-al688.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the key in the IncludeFields property.|Error|
@@ -684,7 +686,7 @@ ms.reviewer: solsen
 |[AL0805](diagnostic-al805.md)|The object ID '{0}' should not be surrounded with quotes.|Warning (future error)|
 |[AL0806](diagnostic-al806.md)|The object ID '{0}' should not be surrounded with quotes.|Error|
 |[AL0807](diagnostic-al807.md)|The integer '{0}' should not be used as the name for the object.|Warning|
-|[AL0808](diagnostic-al808.md)|You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'.|Error|
+|[AL0808](diagnostic-al808.md)|You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'. Reason: '{5}'.|Error|
 |[AL0809](diagnostic-al809.md)|The variable '{0}' is not allowed to be of type 'SecretText' because it is declared as protected.|Error|
 |[AL0810](diagnostic-al810.md)|The name '{0}' cannot be used for a system action. The allowed names in a '{1}' page are: '{2}'.|Error|
 |[AL0811](diagnostic-al811.md)|The trigger '{0}' cannot be defined on the system action named '{1}' in a page of type '{2}'.|Error|
@@ -768,6 +770,25 @@ ms.reviewer: solsen
 |[AL0890](diagnostic-al890.md)|The identifier assigned to the Summary SystemPart type is not valid. Valid identifier is {0}.|Error|
 |[AL0891](diagnostic-al891.md)|The ExtendedDataType '{0}' cannot be used on pages of type {1}.|Error|
 |[AL0892](diagnostic-al892.md)|Fields set as ExtendedDataType '{0}' cannot be referenced on {1} type pages.|Error|
+|[AL0893](diagnostic-al893.md)|The native procedure '{0}' can't contain code.|Error|
+|[AL0894](diagnostic-al894.md)|The native procedure '{0}' can't contain local variables.|Error|
+|[AL0895](diagnostic-al895.md)|The native procedure '{0}' can only be declared in the system object ID range within the platform symbols app.|Error|
+|[AL0896](diagnostic-al896.md)|The field '{0}' cannot be defined because it has a calculation formula that leads to a cycle. The field '{1}' from table '{2}' is involved in the cycle.|Error|
+|[AL0898](diagnostic-al898.md)|Declaring analysis views is only supported on pages of type {0}.|Error|
+|[AL0899](diagnostic-al899.md)|The analysis view '{0}' is not found in the target '{1}'.|Error|
+|[AL0900](diagnostic-al900.md)|The file in DefinitionFile must end with '{0}' file extension.|Error|
+|[AL0901](diagnostic-al901.md)|The analysis view schema in '{0}' is invalid.|Error|
+|[AL0902](diagnostic-al902.md)|The value '{0}' for the property '{1}' in DefinitionFile '{2}' must match '{3}', given by the object containing the analysis view '{4}'.|Error|
+|[AL0903](diagnostic-al903.md)|The DefinitionFile '{0}' is already being used. To avoid build issues, an analysis view file should only be used once in a page.|Error|
+|[AL0904](diagnostic-al904.md)|The property '{0}' must be defined in the analysis view.|Error|
+|[AL0906](diagnostic-al906.md)|The ConfigurationDialog page type is currently in public preview and may change in future releases.|Warning|
+|[AL0907](diagnostic-al907.md)|The page {0} of type ConfigurationDialog must have the "Agent Setup Part" page from the System Application as the first element in its content area.|Error|
+|[AL0908](diagnostic-al908.md)|The data type on the field '{0}' is not valid because the ExtendedDatatype property is set to Task. Valid data type is BigInteger.|Error|
+|[AL0909](diagnostic-al909.md)|The analysis view definition file for '{0}' has a dependency on app '{1}' by '{2}' with version '{3}', which is missing on this project. This might result in the analysis view to ignore unresolved columns. To avoid this, make sure that the app reference is included in the dependencies of the app.json and the symbols are downloaded.|Warning|
+|[AL0910](diagnostic-al910.md)|The field '{0}' cannot be used in a query DataItemLink because it is a FlowField or FlowFilter.|Warning (future error)|
+|[AL0911](diagnostic-al911.md)|The field '{0}' cannot be used in a query DataItemLink because it is a FlowField or FlowFilter.|Error|
+|[AL0912](diagnostic-al912.md)|The name of a {0} cannot be empty because it can cause runtime errors.|Warning (future error)|
+|[AL0913](diagnostic-al913.md)|The name of a {0} cannot be empty because it can cause runtime errors.|Error|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
@@ -820,8 +841,8 @@ ms.reviewer: solsen
 |[AL1051](diagnostic-al1051.md)|Fast publishing requires that there are no manifest changes for the application '{0}'.|Error|
 |[AL1052](diagnostic-al1052.md)|The link '{0}' can only contain one placeholder with value 0 for the user locale. No other placeholder values are allowed.|Error|
 |[AL1053](diagnostic-al1053.md)|The value '{0}' is not valid for the manifest property '{1}'.|Error|
-|[AL1054](diagnostic-al1054.md)|Invalid reference module: {0}. Please clear the downloaded symbols cache and re-download symbols.|Error|
-|[AL1055](diagnostic-al1055.md)|Invalid reference module: {0}. Please clear the downloaded symbols cache and re-download symbols.|Warning|
+|[AL1054](diagnostic-al1054.md)|Invalid reference module: {0}. Clear the downloaded symbols cache and re-download symbols.|Error|
+|[AL1055](diagnostic-al1055.md)|Invalid reference module: {0}. Clear the downloaded symbols cache and re-download symbols.|Warning|
 |[AL1056](diagnostic-al1056.md)|A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded. {3}.|Warning|
 |[AL1057](diagnostic-al1057.md)|The module specification is not valid. One or more of the required attributes: 'publisher', 'name', and 'id' are either missing or not valid.|Error|
 |[AL1058](diagnostic-al1058.md)|appId and Id are both specified for a dependency property. The appId value will be ignored.|Warning|
@@ -849,6 +870,9 @@ ms.reviewer: solsen
 |[AL1080](diagnostic-al1080.md)|Source will still be visible for this extension via debugging because 'allowDebugging' has been set to true.|Information|
 |[AL1081](diagnostic-al1081.md)|Unable to update report layout '{0}' for '{1}'. Reason: {2}.|Error|
 |[AL1082](diagnostic-al1082.md)|The manifest property '{0}' is only available for Target '{1}'.|Error|
+|[AL1083](diagnostic-al1083.md)|There are multiple .lcl translation files providing translations for the locale '{0}'.|Error|
+|[AL1084](diagnostic-al1084.md)|There are multiple .xlf translation files providing translations for the locale '{0}' for app '{1}'.|Error|
+|[AL1085](diagnostic-al1085.md)|The package file {0} is locked and cannot be accessed.|Warning|
 |[AL1100](diagnostic-al1100.md)|File name '{0}' is empty, contains invalid characters, has a drive specification without an absolute path, or is too long.|Fatal error|
 |[AL1101](diagnostic-al1101.md)|Target must specify one of: 'internal', 'solution', 'extension'.|Fatal error|
 |[AL1130](diagnostic-al1130.md)|The format of property '{0}' must be a timeout duration specified as '[d.]hh:mm:ss[.fffffff]'.|Error|
@@ -885,6 +909,9 @@ ms.reviewer: solsen
 |[AL1424](diagnostic-al1424.md)|The name '{0}' does not exist in the current context.|Designer customization warning|
 |[AL1425](diagnostic-al1425.md)|The field with ID '{0}' and name '{1}' cannot be used as source expression in the page customization '{2}' targeting page '{3}'. Ignoring the page field.|Designer customization warning|
 |[AL1426](diagnostic-al1426.md)|The namespace '{0}' is unknown.|Designer customization warning|
+|[AL1427](diagnostic-al1427.md)|You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'. Reason: '{5}'. Ignoring the property.|Designer customization warning|
+|[AL1428](diagnostic-al1428.md)|The analysis view '{0}' is not found in the target '{1}'.|Designer customization warning|
+|[AL1429](diagnostic-al1429.md)|Cannot move symbol '{0}' from '{1}' area to '{2}' area. This move is ignored.|Designer customization warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
