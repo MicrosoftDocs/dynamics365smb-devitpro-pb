@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0254"
 description: "Sorting field '{0}' should be part of the keys for table '{1}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Sorting field '{0}' should be part of the keys for table '{1}'.
+Sorting field '{0}' should be part of the keys for table '{1}'. Add the field to a key definition to improve performance.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

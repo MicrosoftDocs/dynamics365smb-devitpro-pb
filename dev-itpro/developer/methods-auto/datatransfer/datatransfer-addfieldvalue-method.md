@@ -2,7 +2,7 @@
 title: "DataTransfer.AddFieldValue(Integer, Integer) Method"
 description: "Specifies a source and destination field, where the values from the source field are to be copied to the destination field."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -27,11 +27,11 @@ An instance of the [DataTransfer](datatransfer-data-type.md) data type.
 
 *SourceField*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The source table field. Only fields of [FieldClass](../fieldclass/fieldclass-option.md) type Normal are supported. 
+The source table field.  
 
 *DestinationField*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The destination table field. Only fields of [FieldClass](../fieldclass/fieldclass-option.md) type Normal are supported. 
+The destination table field.  
 
 
 

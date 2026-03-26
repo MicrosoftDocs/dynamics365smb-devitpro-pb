@@ -75,6 +75,7 @@
 ## Learn
 ### [Discover all aka.ms links related to Business Central](developer/readiness/readiness-bcall.yml)
 ### [Resources for partners](developer/readiness/readiness-ready-to-go.md)
+### [Viva Engage for partners](developer/readiness/readiness-viva-engage-partners.md)
 ### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -534,8 +535,6 @@
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Get started with AL for on-premises
-#### [Get started with C/SIDE and AL side-by-side for on-premises](developer/devenv-get-started-al-for-onprem.md)
-#### [Run C/SIDE and AL side-by-side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Create runtime packages for Business Central on-premises](developer/devenv-creating-runtime-packages.md)
 
 ## Development environment
@@ -551,6 +550,7 @@
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
 #### [Optimize Visual Studio Code for AL development](developer/devenv-optimize-visual-studio-code.md)
 #### [Running a container-based development environment](developer/devenv-running-container-development.md)
+#### [Use GitHub Codespaces for Business Central development](developer/devenv-code-spaces-al.md)
 ### Configure projects and workspaces
 #### [Work with multiple AL project folders within one workspace](developer/devenv-multiroot-workspaces.md)
 #### [Work with multiple projects and project References](developer/devenv-work-workspace-projects-references.md)
@@ -570,6 +570,7 @@
 #### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Conditional breakpoints](developer/devenv-debugging-conditional-breakpoints.md)
+#### [Troubleshooting MCP Server for AL](developer/devenv-debug-mcp-server.md)
 #### [Attach and debug next](developer/devenv-attach-debug-next.md)
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
@@ -581,6 +582,7 @@
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
+#### [Run AL tests in Visual Studio Code](developer/devenv-test-explorer-vscode.md)
 #### [Test codeunits and test methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md)
 #### [Test runner codeunits](developer/devenv-testrunner-codeunits.md)
@@ -926,6 +928,7 @@
 #### Views
 ##### [Designing views](developer/devenv-views.md)
 ##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
+##### [Packaging analysis views](developer/devenv-analysis-view-package.md)
 
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
@@ -1977,6 +1980,7 @@
 #### [Optimizing SQL server performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility level](administration/optimize-sql-set-compatibility-level.md)
 #### [Using table partitioning and data compression](administration/using-sql-partitioning-and-compression.md)
+#### [Managing database indexes](/dynamics365/business-central/manage-indexes?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
 #### [Monitoring performance counters](administration/performance-counters.md)
