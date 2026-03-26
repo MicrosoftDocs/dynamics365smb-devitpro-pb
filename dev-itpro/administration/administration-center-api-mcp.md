@@ -29,7 +29,7 @@ Connect to the MCP server in [Visual Studio Code](https://code.visualstudio.com/
 
 ## Multitenancy
 
-Partners administering environments for multiple customers using [granular delegated admin privileges (GDAP)](/partner-center/customers/gdap-introduction) might want to use this MCP server to administer environments across customer tenants. During public preview, this endpoint supports the same single-tenant authentication as other [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API endpoints. To facilitate multi‑tenant administration, partners can refer to a sample MCP Proxy available on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/BcAdminMcpProxy) to at illustrates how requests might be routed to different target tenants. 
+Partners administering environments for multiple customers using [granular delegated admin privileges (GDAP)](/partner-center/customers/gdap-introduction) might want to use this MCP server to administer environments across customer tenants. During public preview, this endpoint supports the same single-tenant authentication as other [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API endpoints. To facilitate multi‑tenant administration, partners can refer to a sample MCP Proxy available on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/BcAdminMcpProxy) that illustrates how requests might be routed to different target tenants. 
 
 The sample MCP Proxy is provided as‑is, for reference purposes only, and is not supported or intended for production use. Partners assume full responsibility for any use, modification, or deployment of the sample.
 
