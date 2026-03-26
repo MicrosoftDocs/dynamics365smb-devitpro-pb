@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # AL Language Model tools for Visual Studio Code
 
-[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)]
+[!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)]
 
 The AL Language extension registers a set of Language Model Tools with the Visual Studio Code Language Model Tools API. These tools are available to GitHub Copilot in Agent mode and to any Copilot-compatible extension running inside Visual Studio Code. They allow an AI agent to perform core AL development tasks—building, publishing, downloading symbols, searching symbols, reading diagnostics, and debugging—directly from a conversation.
 

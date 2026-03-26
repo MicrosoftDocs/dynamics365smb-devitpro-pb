@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Download AL symbol packages - al_downloadsymbols
 
-[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
+[!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
 
 The `al_downloadsymbols` tool downloads dependent `.app` symbol packages that AL compilation requires. Symbol packages contain the type information for objects defined in other extensions and in the Business Central base application.
 

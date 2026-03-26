@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Get AL diagnostics - al_getdiagnostics
 
-[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
+[!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
 
 The `al_getdiagnostics` tool retrieves AL compilation diagnostics—errors, warnings, informational messages, and hints—with flexible filtering by scope, severity, source area, file, or folder.
 

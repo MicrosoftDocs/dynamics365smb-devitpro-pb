@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Debugging tools - al_debug, al_setbreakpoint, al_snapshotdebugging
 
-[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)] | Available in: Visual Studio Code only
+[!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)] | Available in: Visual Studio Code only
 
 Three tools support debugging AL extensions inside Visual Studio Code. All three are available only in Visual Studio Code (not in the AL MCP Server), because they interact directly with the Visual Studio Code debugger and Problems panel.
 

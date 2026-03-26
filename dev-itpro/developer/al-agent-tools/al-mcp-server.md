@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # AL MCP server
 
-[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)]
+[!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)]
 
 The AL MCP Server is a standalone Model Context Protocol (MCP) server that exposes AL development tools—building, compiling, publishing, symbol search, diagnostics, and more—to any MCP-compatible AI agent. It runs as a separate process and doesn't require Visual Studio Code.
 

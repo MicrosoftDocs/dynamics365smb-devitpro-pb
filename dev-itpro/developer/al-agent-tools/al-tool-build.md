@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Build AL project - al_build
 
-[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
+[!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
 
 The `al_build` tool compiles AL source code and generates a deployable `.app` package. It supports building a single project or the entire workspace including the full dependency tree, and returns detailed diagnostics on completion.
 

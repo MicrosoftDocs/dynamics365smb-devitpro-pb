@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Compile AL project - al_compile
 
-[!INCLUDE [2026rw1-and-later-al-ext](../includes/2026rw1-and-later-al-ext.md)] | Available in: AL MCP Server only
+[!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)] | Available in: AL MCP Server only
 
 The `al_compile` tool compiles the AL workspace and returns diagnostics **without** generating an `.app` package. Because it skips the packaging step, it's faster than [`al_build`](al-tool-build.md) and is the preferred choice for validation-only scenarios such as pull-request checks, precommit gates, and quick iterative feedback loops.
 
