@@ -580,6 +580,7 @@
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
+#### [Run AL tests in Visual Studio Code](developer/devenv-test-explorer-vscode.md)
 #### [Test codeunits and test methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md)
 #### [Test runner codeunits](developer/devenv-testrunner-codeunits.md)
