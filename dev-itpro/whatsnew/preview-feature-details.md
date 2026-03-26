@@ -821,7 +821,7 @@ New method overloads have been introduced to support running codeunits, pages, a
 
 ## Run AL Tests from Visual Studio Code
 
-You can now use the built in Text Explorer in Visual Studio Code to discover and run AL tests in the workspace. Read more about the Test Explorer and running tests in Visual Studio Code here https://code.visualstudio.com/docs/debugtest/testing
+You can now use the built in Test Explorer in Visual Studio Code to discover and run AL tests in the workspace. Read more about the Test Explorer and running tests in Visual Studio Code here https://code.visualstudio.com/docs/debugtest/testing
 
 Currently, only tests in the active workspace are added to the Test Explorer. The tests have to be published beforehand to a Business Central server before being run.
 
@@ -833,7 +833,7 @@ Note: This feature is under active development, and more functionality may be ad
 
 ## Send posted sales shipments and return receipts by email
 
-We're introducing the ability so send posted sales shipments and posted return receipts by email, which compliments the **Print** option and aligns the experience of handling these documents with that of posted sales invoices and credit memos. This enhancement gives you several options:
+We're introducing the ability to send posted sales shipments and posted return receipts by email, which compliments the **Print** option and aligns the experience of handling these documents with that of posted sales invoices and credit memos. This enhancement gives you several options:
 
 - **Send by Email**: Send the posted document by email to the customer.
 - **Send**: Use the standard sending options that are available for other posted documents.
