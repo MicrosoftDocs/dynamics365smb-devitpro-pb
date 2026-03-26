@@ -34,7 +34,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Align VAT periods with Microsoft standards for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/align-vat-periods-standards-czechia)|General availability|
 ||Change original document VAT date in VAT entries for Czechia|General availability|
 ||[Get started with clearer user setup controls for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/get-started-clearer-user-setup-controls-czechia)|General availability|
-||[Transfer journal line descriptions to bank statements](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
+||[Transfer journal line descriptions to bank statements for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
 ||[Use carbon footprint with OIOUBL e-invoicing format](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-carbon-footprint-oioubl-e-invoicing-format)|General availability|
 ||Use e-invoice formats for service invoices in Germany|Public preview|
 |Development|[Download symbols from NuGet feed](../developer/devenv-al-extension-configuration.md)|General availability|
