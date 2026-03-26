@@ -125,7 +125,6 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ### New optional features
 
-- Feature Update: Accelerated Depreciation (disabled by default)
 - [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-enhanced-financial-reporting).
 
 ## On-premises download packages
