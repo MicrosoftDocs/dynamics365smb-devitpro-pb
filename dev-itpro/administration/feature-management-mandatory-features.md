@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: article
-ms.date: 03/12/2026
+ms.date: 03/26/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.collection:
@@ -34,11 +34,7 @@ These features are no longer controlled in **Feature management**, so they can't
 
 ### New features added and enabled by default in version 28
 
-- [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting).
-
-### New features added and disabled by default in version 28
-
-- Feature Update: Accelerated Depreciation
+- [Feature Update: Improved performance in Trial Balance-related Excel reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
 
 ## 2025 release wave 2 (version 27)
 
@@ -162,40 +158,6 @@ The following features are generally available. However, they aren't turned on b
 |[Feature Update: Enable use of new extensible invoice posting engine](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)  |Regulations in different countries/regions and industries, and customer business practices, might require a change to how general ledger entries are aggregated during posting. We remove the dependencies from the Invoice Posting Buffer table in the base application and build an invoice posting component with an interface and an extensible enum for the implementation setup. This refactoring makes the posting process for sales, purchase, and service transactions extensible.  |
 |[Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/adjust-exchange-rates-easily-replace-built-in-batch-job)  |When companies operate in multiple countries or regions, it's important that they can do business and run financial reports in more than one currency. Because exchange rates often change, businesses must periodically update the rates in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This feature update gives accountants more control over how they adjust exchange rates. At the same time, it allows partners to extend and customize an exchange rate adjustment to meet the needs of specific industries or markets.  |
 |[Feature Update: Enable Tri-State locking in AL](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/performance-gain-reducing-locks-database)  |The tri-state locking feature is aimed at enhancing the performance and concurrency of database transactions. By enabling this feature, AL-based read operations that follow write operations are performed optimistically, rather than with strict consistency and low concurrency. Consequently, users can expect higher levels of concurrency and fewer blocked or failed operations while accessing data. [Learn more about tri-state locking](../developer/devenv-tri-state-locking.md).  |
-
-<!--
-
-Coming soon...
-
-|Feature  |Description  |
-|---------|---------|
-|**Feature Update: Use the platform table 'Report Layout List' for adding and selecting layouts in the 'Report Selection' pages**  | Users can choose which report layout to use on the request page. This will make it easier to use different report layouts for different purposes, especially for Excel layouts. |
-
--->
-
-<!-- v24
-### Features postponed from becoming mandatory in 2023 Release Wave 2
-
-The change to making these features mandatory is postponed. They aren't turned on by default and must be enabled manually. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
-
-|Feature  |Description  |Expected to be mandatory release wave |
-|---------|---------|-|
-|[Feature: Create AI-powered product descriptions with Copilot](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/drive-sales-ai-generated-product-descriptions) | Great products deserve great marketing, but authoring compelling product descriptions for dozens or even hundreds of similar products for your online store requires time, skill, and creativity. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] accelerates time to market with AI-generated product descriptions, right from where you manage your inventory. We've streamlined the end-to-end process, starting from uploading a picture to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], to AI-powered suggestions for marketing copy based on your product attributes such as color and material, to publishing that to your online store with just a few clicks. |2024 release wave 1 |-->
-
-<!--v24
-|Feature  |Description  |Expected to be mandatory release wave |
-|---------|---------|-|
-|[Feature Update: Legacy list views are hidden](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/legacy-list-views-are-hidden)  | Legacy views are list views that were created by developers in previous versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by placing them on the role center page. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page, but legacy views offer a degraded experience and fewer options compared to modern views.|2024 release wave 1 |-->
-
-<!-- now 28
-|Feature  |Description  |Expected to be mandatory release wave |
-|---------|---------|-|
-|[Feature Update: Auto-save with every field change](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)  | [!INCLUDE [prod_short](../developer/includes/prod_short.md)] immediately saves changes to individual fields as soon as you tab away from the field or set focus to another element on the page, instead of only saving when the page is closed. Changes are saved to the database without any noticeable impact to performance. |2024 release wave 2 |
-
-<!-- now 28
-|Feature  |Expected to be mandatory release wave |
-|---------|---------|
-|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     | 2025 release wave 1        | -->
 
 ## 2023 release wave 1 (version 22)
 
