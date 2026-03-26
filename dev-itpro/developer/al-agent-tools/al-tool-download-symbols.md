@@ -108,7 +108,7 @@ This mode doesn't require a Business Central server connection. It downloads the
 
 - [`al_build`](al-tool-build.md) — Build the project after downloading symbols.
 - [`al_compile`](al-tool-compile.md) — Validate code after downloading symbols (AL MCP only).
-- [`al_getpackagedependencies`](al-tool-getpackagedependencies.md) — List the dependencies defined in `app.json` (AL MCP only).
+- [`al_getpackagedependencies`](al-tool-get-package-dependencies.md) — List the dependencies defined in `app.json` (AL MCP only).
 - [`al_auth_login`](al-tool-auth.md#al_auth_login) — Authenticate before downloading symbols from a cloud environment.
 
 ## Related information

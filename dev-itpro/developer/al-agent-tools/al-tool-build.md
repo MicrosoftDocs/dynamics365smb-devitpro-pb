@@ -104,8 +104,8 @@ On failure, the tool returns a list of diagnostics describing what prevented the
 ## Related tools
 
 - [`al_compile`](al-tool-compile.md) — Validate code without generating an `.app` (AL MCP only, faster).
-- [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download symbol packages before building.
-- [`al_getdiagnostics`](al-tool-getdiagnostics.md) — Read errors and warnings after a build.
+- [`al_downloadsymbols`](al-tool-download-symbols.md) — Download symbol packages before building.
+- [`al_getdiagnostics`](al-tool-get-diagnostics.md) — Read errors and warnings after a build.
 - [`al_publish`](al-tool-publish.md) — Deploy the built `.app` to Business Central.
 
 ## Related information

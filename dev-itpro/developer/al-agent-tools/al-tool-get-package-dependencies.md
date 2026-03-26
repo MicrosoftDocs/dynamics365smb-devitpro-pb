@@ -78,8 +78,8 @@ Each item in `Dependencies` has:
 
 ## Related tools
 
-- [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download the symbol packages for the listed dependencies.
-- [`al_symbolsearch`](al-tool-symbolsearch.md) — Search symbols within the downloaded packages.
+- [`al_downloadsymbols`](al-tool-download-symbols.md) — Download the symbol packages for the listed dependencies.
+- [`al_symbolsearch`](al-tool-symbol-search.md) — Search symbols within the downloaded packages.
 
 ## Related information
 

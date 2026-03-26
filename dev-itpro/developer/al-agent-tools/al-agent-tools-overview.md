@@ -37,13 +37,13 @@ The following tools are available across both surfaces. Some tools are exclusive
 | [`al_build`](al-tool-build.md) | Build the AL project and generate the `.app` package | ✓ | ✓ |
 | [`al_compile`](al-tool-compile.md) | Validate AL code without generating an `.app` (MCP only) | — | ✓ |
 | [`al_publish`](al-tool-publish.md) | Publish the extension to Business Central (cloud or on-premises) | ✓ | ✓ |
-| [`al_downloadsymbols`](al-tool-downloadsymbols.md) | Download dependent symbol packages required for compilation | ✓ | ✓ |
-| [`al_symbolsearch`](al-tool-symbolsearch.md) | Search AL symbols across the project and its dependencies | ✓ | ✓ |
-| [`al_getdiagnostics`](al-tool-getdiagnostics.md) | Retrieve filtered compilation diagnostics | ✓ | ✓ |
-| [`al_getpackagedependencies`](al-tool-getpackagedependencies.md) | List the project's `app.json` dependencies (MCP only) | — | ✓ |
+| [`al_downloadsymbols`](al-tool-download-symbols.md) | Download dependent symbol packages required for compilation | ✓ | ✓ |
+| [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies | ✓ | ✓ |
+| [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve filtered compilation diagnostics | ✓ | ✓ |
+| [`al_getpackagedependencies`](al-tool-get-packagedependencies.md) | List the project's `app.json` dependencies (MCP only) | — | ✓ |
 | [`al_debug`](al-tool-debug.md) | Start a debug session without republishing (Visual Studio Code only) | ✓ | — |
-| [`al_setbreakpoint`](al-tool-setbreakpoint.md) | Programmatically add, remove, or toggle breakpoints (Visual Studio Code only) | ✓ | — |
-| [`al_snapshotdebugging`](al-tool-snapshotdebugging.md) | Manage snapshot debugging sessions (Visual Studio Code only) | ✓ | — |
+| `al_setbreakpoint` | Programmatically add, remove, or toggle breakpoints (Visual Studio Code only) | ✓ | — |
+| `al_snapshotdebugging` | Manage snapshot debugging sessions (Visual Studio Code only) | ✓ | — |
 | [`al_auth_login`](al-tool-auth.md#al_auth_login) | Authenticate to Microsoft Entra ID (MCP only) | — | ✓ |
 | [`al_auth_logout`](al-tool-auth.md#al_auth_logout) | Clear cached authentication tokens (MCP only) | — | ✓ |
 

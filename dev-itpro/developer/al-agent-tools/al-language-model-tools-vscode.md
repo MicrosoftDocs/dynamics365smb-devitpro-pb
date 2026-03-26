@@ -26,8 +26,8 @@ The AL Language extension registers a set of Language Model Tools with the Visua
 | [`al_symbolsearch`](al-tool-symbolsearch.md) | Search AL symbols across the project and its dependencies. |
 | [`al_getdiagnostics`](al-tool-getdiagnostics.md) | Retrieve compilation diagnostics from the Problems panel. |
 | [`al_debug`](al-tool-debug.md) | Start a debug session without republishing. |
-| [`al_setbreakpoint`](al-tool-debug.md#al_setbreakpoint) | Add, remove, or toggle a breakpoint at a specific file and line. |
-| [`al_snapshotdebugging`](al-tool-debug.md#al_snapshotdebugging) | Manage snapshot debugging sessions. |
+| [`al_setbreakpoint`](al-tool-debug.md#al_setbreakpoint—Set-or-remove-a-breakpoint) | Add, remove, or toggle a breakpoint at a specific file and line. |
+| `al_snapshotdebugging` | Manage snapshot debugging sessions. |
 
 ## Using tools in Copilot Chat
 
@@ -91,7 +91,7 @@ To use this in Copilot Chat: *"Download symbols from global sources only."*
 [AL MCP Server reference](al-mcp-server.md)  
 [al_build](al-tool-build.md)  
 [al_publish](al-tool-publish.md)  
-[al_downloadsymbols](al-tool-downloadsymbols.md)  
-[al_symbolsearch](al-tool-symbolsearch.md)  
-[al_getdiagnostics](al-tool-getdiagnostics.md)  
+[al_downloadsymbols](al-tool-download-symbols.md)  
+[al_symbolsearch](al-tool-symbol-search.md)  
+[al_getdiagnostics](al-tool-get-diagnostics.md)  
 [al_debug, al_setbreakpoint, al_snapshotdebugging](al-tool-debug.md)  

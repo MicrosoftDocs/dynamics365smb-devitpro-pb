@@ -94,8 +94,8 @@ Each item in the `Diagnostics` array has the following structure:
 ## Related tools
 
 - [`al_build`](al-tool-build.md) — Build and produce an `.app` package (both surfaces).
-- [`al_getdiagnostics`](al-tool-getdiagnostics.md) — Retrieve diagnostics with richer filtering options.
-- [`al_downloadsymbols`](al-tool-downloadsymbols.md) — Download symbol packages before compiling.
+- [`al_getdiagnostics`](al-tool-get-diagnostics.md) — Retrieve diagnostics with richer filtering options.
+- [`al_downloadsymbols`](al-tool-download-symbols.md) — Download symbol packages before compiling.
 
 ## Related information
 

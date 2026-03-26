@@ -125,7 +125,7 @@ Copilot calls `al_snapshotdebugging` with `action="view"`.
 ## Related tools
 
 - [`al_publish`](al-tool-publish.md) — Deploy the extension before starting a debug session.
-- [`al_getdiagnostics`](al-tool-getdiagnostics.md) — Review compilation errors to identify where to set breakpoints.
+- [`al_getdiagnostics`](al-tool-get-diagnostics.md) — Review compilation errors to identify where to set breakpoints.
 
 ## Related information
 
