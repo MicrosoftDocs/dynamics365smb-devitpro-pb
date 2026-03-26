@@ -89,7 +89,7 @@ Each item in the `Diagnostics` array has the following structure:
 |---------|-----------------|
 | No errors | Proceed with [`al_build`](al-tool-build.md) to generate the `.app` package. |
 | Errors reported | Fix the reported issues and rerun `al_compile`. |
-| Symbols not found | Run [`al_downloadsymbols`](al-tool-downloadsymbols.md) to refresh the symbol packages. |
+| Symbols not found | Run [`al_downloadsymbols`](al-tool-download-symbols.md) to refresh the symbol packages. |
 
 ## Related tools
 

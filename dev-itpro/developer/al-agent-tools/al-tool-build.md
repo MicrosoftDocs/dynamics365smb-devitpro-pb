@@ -98,8 +98,8 @@ On failure, the tool returns a list of diagnostics describing what prevented the
 | Outcome | Suggested action |
 |---------|-----------------|
 | Build succeeded | Call [`al_publish`](al-tool-publish.md) to deploy the extension to Business Central. |
-| Build failed with diagnostics | Call [`al_getdiagnostics`](al-tool-getdiagnostics.md) for the full diagnostic list, fix the reported issues, and rebuild. |
-| Symbols not found | Call [`al_downloadsymbols`](al-tool-downloadsymbols.md) and then retry. |
+| Build failed with diagnostics | Call [`al_getdiagnostics`](al-tool-get-diagnostics.md) for the full diagnostic list, fix the reported issues, and rebuild. |
+| Symbols not found | Call [`al_downloadsymbols`](al-tool-download-symbols.md) and then retry. |
 
 ## Related tools
 

@@ -26,7 +26,7 @@ The AL Language extension registers a set of Language Model Tools with the Visua
 | [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies. |
 | [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve compilation diagnostics from the Problems panel. |
 | [`al_debug`](al-tool-debug.md) | Start a debug session without republishing. |
-| [`al_setbreakpoint`](al-tool-debug.md##al_setbreakpoint--set-or-remove-a-breakpoint) | Add, remove, or toggle a breakpoint at a specific file and line. |
+| [`al_setbreakpoint`](al-tool-debug.md#al_setbreakpoint--set-or-remove-a-breakpoint) | Add, remove, or toggle a breakpoint at a specific file and line. |
 | `al_snapshotdebugging` | Manage snapshot debugging sessions. |
 
 ## Using tools in Copilot Chat
