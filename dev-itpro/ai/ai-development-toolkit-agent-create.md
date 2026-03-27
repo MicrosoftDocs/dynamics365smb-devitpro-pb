@@ -83,6 +83,10 @@ In the Copilot chat pane for the specific agent, choose the :::image type="conte
 
 An agent is by default in the **Disabled** state. You must activate the agent to use it, but you can only activate it after you have defined its purpose and tasks. Working on the setup, you can switch the agent between **Disabled** and **Active** states as needed.
 
+### Recognizing agent icons
+
+[!INCLUDE [agent-badges](../includes/agent-badges.md)]
+
 ## Related information
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
