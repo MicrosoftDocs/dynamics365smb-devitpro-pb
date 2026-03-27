@@ -22,6 +22,8 @@ This table lists new and updated features in update 28.0. Learn more about all f
 
 |Product area|Feature|Public preview/General availability|
 |-|-|-|
+|
+|Adapt faster with Power Platform|Map new Dataverse fields in Business Central|General availability|
 |Application|External storage support for document attachments|General availability|
 |Copilot and agents|Connect AI agents to Business Central through MCP server (now from Visual Studio Code and other MCP-compliant clients)|General availability|
 ||[Discover emails in the mailbox that have been processed by Payables Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/discover-emails-mailbox-that-have-been-processed-payables-agent)|General availability|
