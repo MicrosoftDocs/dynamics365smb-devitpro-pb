@@ -36,7 +36,7 @@ Represents the *Sustainability Category* in [!INCLUDE[prod_short](../includes/pr
 | id | GUID | The unique ID of the sustainabilityAccountCategory. Noneditable. |
 | code | string | The code of sustainabilityAccountCategory. |
 | displayName | string | Specifies the sustainabilityAccountCategory's name. |
-| emmisionScope | string | Specifies the sustainabilityAccountCategory's emission  scope. It can be "Scope 1," "Scope 2," or "Scope 3." |
+| emmisionScope | string | Specifies the sustainabilityAccountCategory's emission scope. It can be "Scope 1," "Scope 2," or "Scope 3." |
 | registerCO2 | boolean | Specifies the sustainabilityAccountCategory that's used to register CO2 emission. |
 | registerCH4 | boolean | Specifies the sustainabilityAccountCategory that's used to register CH4 emission. |
 | registerN20 | boolean | Specifies the sustainabilityAccountCategory that's used to register N2O emission. |
@@ -175,7 +175,7 @@ Represents the *Sust. Posted ESG Report Line* in [!INCLUDE[prod_short](../includ
 | esgReportingTemplateName | string | Specifies the postedESGReportLine's template name. |
 | esgReportingName | string | Specifies the postedESGReportLine's reporting name. |
 | lineNo | string | Specifies the postedESGReportLine's line number. |
-| grouping | string | Specifies the postedESGReportLine's groupin info. |
+| grouping | string | Specifies the postedESGReportLine's grouping info. |
 | rowNo | string | Specifies the postedESGReportLine's row number. |
 | description | string | Specifies the postedESGReportLine's description. |
 | reportingCode | string | Specifies the postedESGReportLine's reporting code. |
@@ -221,7 +221,7 @@ Represents the *Sustainability Value Entry* in [!INCLUDE[prod_short](../includes
 |itemLedgerEntryNo|string |Specifies the sustainabilityValueEntry's connected item ledger entry number.|
 |valuedQuantity|decimal |Specifies the sustainabilityValueEntry's already valued quantity.|
 |itemLedgerEntryQuantity|decimal |Specifies the sustainabilityValueEntry's quantity in the item ledger entry.|
-|invoicedQuantity|decimal |Specifies the sustainabilityValueEntry's  invoiced quantity.|
+|invoicedQuantity|decimal |Specifies the sustainabilityValueEntry's invoiced quantity.|
 |co2EPerUnit|decimal |Specifies the sustainabilityValueEntry's carbon footprint per unit.|
 |userID|string |Specifies the sustainabilityValueEntry's user ID. |
 |sourceCode|string |Specifies the sustainabilityValueEntry's source code. |
