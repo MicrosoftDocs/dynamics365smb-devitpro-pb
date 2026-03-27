@@ -1240,7 +1240,7 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=3>Agent configuration changed by UserSecurityId [AgentUserId]</td>
+            <td rowspan=3>Agent configuration changed</td>
             <td>AgentUserId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -1253,7 +1253,7 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=5>Agent state changed for UserSecurityId [AgentUserId]</td>
+            <td rowspan=5>Agent state changed</td>
             <td>AgentUserId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -1274,7 +1274,7 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Inactive</td>
         </tr>
         <tr>
-            <td rowspan=3>User-agent interaction by UserSecurityId [AgentUserId]</td>
+            <td rowspan=3>User-agent interaction</td>
             <td>InteractionType</td>
             <td>Prompt</td>
         </tr>
@@ -1287,7 +1287,7 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=5>Agent action executed by UserSecurityId [AgentUserId]</td>
+            <td rowspan=5>Agent action executed</td>
             <td>ActionName</td>
             <td>CreateRecord</td>
         </tr>
@@ -1308,7 +1308,7 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=4>Draft message created by UserSecurityId [AgentUserId]</td>
+            <td rowspan=4>Draft message created</td>
             <td>MessageContent</td>
             <td>Draft message text</td>
         </tr>
@@ -1325,7 +1325,7 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=6>Agent task status changed by UserSecurityId [AgentUserId]</td>
+            <td rowspan=6>Agent task status changed</td>
             <td>PreviousStatus</td>
             <td>InProgress</td>
         </tr>
