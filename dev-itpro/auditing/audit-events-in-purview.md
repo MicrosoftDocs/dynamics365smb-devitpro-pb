@@ -1253,7 +1253,7 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=5>Agent state changed</td>
+            <td rowspan=4>Agent state changed</td>
             <td>AgentUserId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -1274,7 +1274,11 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Inactive</td>
         </tr>
         <tr>
-            <td rowspan=3>User-agent interaction</td>
+            <td rowspan=4>User-agent interaction</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
             <td>InteractionType</td>
             <td>Prompt</td>
         </tr>
@@ -1287,7 +1291,11 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=5>Agent action executed</td>
+            <td rowspan=6>Agent action executed</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
             <td>ActionName</td>
             <td>CreateRecord</td>
         </tr>
@@ -1308,7 +1316,11 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=4>Draft message created</td>
+            <td rowspan=5>Draft message created</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
             <td>MessageContent</td>
             <td>Draft message text</td>
         </tr>
@@ -1325,7 +1337,11 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=6>Agent task status changed</td>
+            <td rowspan=7>Agent task status changed</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
             <td>PreviousStatus</td>
             <td>InProgress</td>
         </tr>
@@ -1348,7 +1364,6 @@ You can audit the activities in the table below by filtering to the `Configured 
         <tr>
             <td>AgentAppPublisher</td>
             <td>Microsoft</td>
-        </tr>
     </tbody>
 </table>
 
