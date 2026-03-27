@@ -1,6 +1,6 @@
 ---
-title: Use GitHub Codespaces for Business Central development
-description: GitHub Codespaces gives you a ready-to-use, cloud-hosted development environment for Business Central that runs in your browser.
+title: Use GitHub Codespaces for AL development
+description: GitHub Codespaces gives you a ready-to-use, cloud-hosted development environment for AL that runs in your browser.
 author: SusanneWindfeldPedersen
 ms.date: 03/25/2026
 ms.topic: article
@@ -8,7 +8,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Use GitHub Codespaces for Business Central development
+# Use GitHub Codespaces for AL development
 
 GitHub Codespaces gives you a ready-to-use, cloud-hosted development environment for [!INCLUDE [prod_short](includes/prod_short.md)] that runs in your browser. Instead of spending time installing tools on your local machine, you open a codespace and start writing AL code in minutes. This article shows you how to set one up, explains the configuration options, and walks you through common tasks.
 
@@ -18,7 +18,7 @@ A codespace is a development environment hosted in the cloud by GitHub. It runs 
 
 Think of it as your development laptop in the cloud. When you open a codespace, it builds a container with your preferred editor settings, extensions, and tools already installed. Close the browser, and your work is saved. Open it again, and you're right back where you left off.
 
-## Why use Codespaces for Business Central?
+## Why use Codespaces for AL?
 
 Here are some reasons you might want to use Codespaces:
 

@@ -10,6 +10,8 @@ ms.reviewer: solsen
 
 # Export and package analysis views
 
+[!INCLUDE [2026-releasewave1-later](../includes/2026-releasewave1-later.md)]
+
 [!INCLUDE [prod_short](includes/prod_short.md)] allows you to export analysis views that are created in Analysis Mode for list and worksheet pages, package them, and deliver them as part of your AL extensions. This article describes how to export a view definition, add it to your AL project, and define it on a page, page extension, or page customization.
 
 The end-to-end process for delivering analysis views with your extension is:
