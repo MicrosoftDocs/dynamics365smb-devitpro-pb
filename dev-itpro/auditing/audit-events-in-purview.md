@@ -1253,7 +1253,7 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>Microsoft</td>
         </tr>
         <tr>
-            <td rowspan=4>Agent state changed</td>
+            <td rowspan=5>Agent state changed</td>
             <td>AgentUserId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
