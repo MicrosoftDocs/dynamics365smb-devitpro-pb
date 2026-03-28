@@ -1267,11 +1267,11 @@ You can audit the activities in the table below by filtering to the `Configured 
         </tr>
         <tr>
             <td>PreviousAgentState</td>
-            <td>Active</td>
+            <td>Enabled</td>
         </tr>
         <tr>
             <td>NewAgentState</td>
-            <td>Inactive</td>
+            <td>Disabled</td>
         </tr>
         <tr>
             <td rowspan=4>User-agent interaction</td>
@@ -1280,7 +1280,7 @@ You can audit the activities in the table below by filtering to the `Configured 
         </tr>
         <tr>
             <td>InteractionType</td>
-            <td>Prompt</td>
+            <td>Review</td>
         </tr>
         <tr>
             <td>AgentAppId</td>
