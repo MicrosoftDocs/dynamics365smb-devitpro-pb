@@ -55,12 +55,7 @@ How you connect depends on the client you're using. Microsoft MCP clients (Visua
 
 All MCP clients must specify the target environment using the following HTTP headers:
 
-| HTTP header | Description | Example |
-|--------|-------------|---------|
-| `TenantId` | Your Microsoft Entra tenant ID (GUID) | `aaaabbbb-0000-cccc-1111-dddd2222eeee` |
-| `EnvironmentName` | The name of the Business Central environment to connect to| `Production` |
-| `Company` | The company name within the environment | `CRONUS USA, Inc.` |
-| `ConfigurationName` | (Optional) The MCP server configuration in the enviroment to use | `SalesTeamConfig` |
+[!INCLUDE [mcp-server-headers](../developer/includes/mcp-server-headers.md)]
 
 ### How authentication works
 

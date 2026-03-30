@@ -72,8 +72,9 @@ After an app registered for MCP clients, you can connect clients the Business Ce
 | Token endpoint | `https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/token` |
 | Scope | `https://mcp.businesscentral.dynamics.com/.default` |
 
-Configure the environment headers:
+Also, configure the environment headers:
 
+[!INCLUDE [mcp-server-headers](../developer/includes/mcp-server-headers.md)]
 
 When you initiate the connection, a browser window opens for you to sign in with your Microsoft account.
 
