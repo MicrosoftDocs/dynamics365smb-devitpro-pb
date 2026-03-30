@@ -1,0 +1,2 @@
+> [!NOTE]
+> We're no longer updating this content. Check the [Microsoft Product Lifecycle](/lifecycle/products/dynamics-365-business-central-onpremises-modern-policy) for information about how this version.
