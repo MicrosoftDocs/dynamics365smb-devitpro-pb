@@ -91,7 +91,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 28.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
-### Optional feature now mandatory
+### Optional features now mandatory
 
 - [Feature: Enable MCP Server access](https://go.microsoft.com/fwlink/?linkid=2336932) (**Note:** In 28.0, this feature is listed in **Feature Management** and **Enabled for all users**. However, disabling the feature has no effect. The feature will be removed from Feature Management in a future update.)
 
