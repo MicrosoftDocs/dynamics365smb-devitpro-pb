@@ -21,23 +21,13 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open s
 
 An **MCP server** is a service that implements the Model Context Protocol, exposing an application's data and functionality to AI clients. When an AI client connects to an MCP server, it can read data, perform actions, and integrate that application's capabilities directly into conversational workflows—all through a standardized interface.
 
-The Business Central MCP server enables AI clients to interact with Business Central environments, allowing customers and employees to conversationally work with Business Central data and business logic from various channels, including:
-
-- **Visual Studio Code**: AI-assisted development and data exploration with GitHub Copilot
-- **Copilot Studio**: Create custom agents that use natural language to query data and perform actions in Business Central, and integrate with Microsoft 365 Copilot
-- **Non-Microsoft MCP clients**:  MCP‑compatible clients such as Claude and ChatGPT
+The Business Central MCP server enables AI clients to interact with Business Central environments from various channels such as Visual Studio Code, Copilot Studio, and other MCP-compliant clients, allowing customers and employees to conversationally work with Business Central data and business logic.
 
 ![Shows how MCP clients connect to Business Central](../developer/media/mcp-client-server.svg)
 
 ## What the MCP Server can do
 
-By default, the Business Central MCP server provides read-only access to all exposed Business Central API pages. With no extra configuration, MCP clients can immediately read data from your Business Central environment.
-
-To allow agents to create, modify, or delete data, administrators must configure the MCP server. Configuration includes:
-
-- Adding specific API page objects
-- Defining allowed operations (read, create, modify, delete, bound actions)
-- Assigning permissions to control what data agents can access
+By default, the Business Central MCP server provides read-only access to all exposed Business Central API pages. With no extra configuration, MCP clients can immediately read data from your Business Central environment. To enable write operations, administrators configure API page objects with specific permissions for create, modify, delete, and bound actions.
 
 Once configured, these capabilities are exposed to agents as tools, which they can use to:
 
@@ -61,14 +51,13 @@ All MCP clients connect to the Business Central MCP server using the following e
 
 `https://mcp.businesscentral.dynamics.com`
 
-How you connect depends on the client you're using.
+How you connect depends on the client you're using. Microsoft MCP clients (Visual Studio Code and Copilot Studio) include built-in authentication support with a default application registration in Microsoft Entra ID. Other MCP-compliant clients require you to register an application in Microsoft Entra ID and configure authentication manually.
 
-**Microsoft MCP clients** include authentication support for Business Central MCP, including a default application registration in Microsoft Entra ID. You only need to configure the Business Central environment and MCP server configuration details in the client:
+Learn more about connecting specific clients:
 
-- Visual Studio Code uses Visual Studio Code's preregistered Microsoft Entra ID application. Learn more in [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
-- Copilot Studio handles authentication through Power Platform Connector framework. Learn more in [Connect from Copilot Studio](create-agent-in-copilot-studio.md)
-
-**Other MCP clients** require more setup. You must register an application in Microsoft Entra ID and configure the client with your application credentials and environment details. Learn more in [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md).
+- [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
+- [Connect from Copilot Studio](create-agent-in-copilot-studio.md)
+- [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md)
 
 ### Required environment details
 
