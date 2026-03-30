@@ -27,7 +27,7 @@ Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Cen
 
    [!INCLUDE [mcp-server-headers](../developer/includes/mcp-server-headers.md)]
 
-  You can get the complete MCP server configuration connection string directly from the Business Central web client. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
+  You can get the complete MCP server configuration connection string directly from the Business Central web client. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection-string).
 
 ## Set up the MCP Server in Visual Studio Code
 
@@ -73,7 +73,7 @@ Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Cen
    Replace the placeholder `<>` values with your actual Business Central environment details ([Learn more](#prerequisites)). Omit `"ConfigurationName"` or leave the value empty to give read-only access to all API pages.
 
    > [!TIP]
-   > If you copied the MCP server configuration connection string directly from the Business Central web client, paste the copy within `"servers": { }`. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection).
+   > If you copied the MCP server configuration connection string directly from the Business Central web client, paste the copy within `"servers": { }`. Learn more in [Get the MCP server configuration connection](configure-mcp-server.md#get-the-mcp-server-configuration-connection-string).
 
 1. In the toolbar that appears under `"servers":` line, select **Start** to start the server.
 

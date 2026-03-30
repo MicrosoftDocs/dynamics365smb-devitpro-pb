@@ -32,7 +32,7 @@ Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Cen
 
 This step is typically done by a tenant admin. You can use the same app registration for different clients.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoftonline.com).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 
 1. Create the app registration:
 
@@ -46,7 +46,7 @@ This step is typically done by a tenant admin. You can use the same app registra
 1. Add the redirect URI of the MCP client to the app registration
 
    1. Select **Authentication** > **+ Add Redirect URI** > **Mobile and desktop applications platform**.
-   1. In the Add Redirect URI pane, enter the MCP clients redirect URI, for example *https://claude.ai/api/mcp/auth_callback*.
+   1. In the Add Redirect URI pane, enter the MCP clients redirect URI, for example `https://claude.ai/api/mcp/auth_callback`.
 
    Learn more in [How to add a redirect URI to your application](/entra/identity-platform/how-to-add-redirect-uri).
 1. Add API permissions to Business Central
@@ -58,7 +58,7 @@ This step is typically done by a tenant admin. You can use the same app registra
 
    Learn more in [Configure app permissions for a web API](/entra/identity-platform/quickstart-configure-app-access-web-apis).
 
-1. (optional) Record information about the registered app in the **Model Context Protocol (MCP) Server Entra Applications** page in Business Central. Learn more in [Record and obtain Microsoft Entra app registrations for MCP clients](#record-and-obtain-microsoft-entra-app-registrations-for-mcp-clients).
+1. (optional) Record information about the registered app in the **Model Context Protocol (MCP) Server Entra Applications** page in Business Central. Learn more in [Record and obtain Microsoft Entra app registrations for MCP clients](#record-and-retrieve-microsoft-entra-app-registrations-for-mcp-clients).
 
    This step is done for convenience only and required for app registration.
 
