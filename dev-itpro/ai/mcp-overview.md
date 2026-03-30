@@ -53,24 +53,16 @@ All MCP clients connect to the Business Central MCP server using the following e
 
 How you connect depends on the client you're using. Microsoft MCP clients (Visual Studio Code and Copilot Studio) include built-in authentication support with a default application registration in Microsoft Entra ID. Other MCP-compliant clients require you to register an application in Microsoft Entra ID and configure authentication manually.
 
-Learn more about connecting specific clients:
+All MCP clients must specify the target environment using the following HTTP headers:
 
-- [Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
-- [Connect from Copilot Studio](create-agent-in-copilot-studio.md)
-- [Connect non-Microsoft clients to Business Central MCP](use-mcp-server-non-microsoft.md)
-
-### Required environment details
-
-All MCP clients connecting to Business Central need to specify which environment to target:
-
-| Detail | Description | Example |
+| HTTP header | Description | Example |
 |--------|-------------|---------|
 | `TenantId` | Your Microsoft Entra tenant ID (GUID) | `aaaabbbb-0000-cccc-1111-dddd2222eeee` |
 | `EnvironmentName` | The name of your Business Central environment | `Production` |
 | `Company` | The company name within the environment | `CRONUS USA, Inc.` |
 | `ConfigurationName` | (Optional) The MCP server configuration to use | `SalesTeamConfig` |
 
-### How the connection and authentication work
+### How authentication works
 
 The Business Central MCP server acts as a bridge between MCP clients and your Business Central data. Business Central MCP authentication follows the standard [MCP authentication specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) with Microsoft Entra ID as the authorization server:
 
@@ -88,21 +80,14 @@ The Business Central MCP server acts as a bridge between MCP clients and your Bu
 > [!NOTE]
 > Microsoft Entra ID doesn't support Dynamic Client Registration (DCR), so the standard MCP DCR step is skipped. Microsoft-provided MCP clients, such as Visual Studio Code and Copilot Studio, use a default Microsoft Entra ID application. Non-Microsoft clients require a custom application registration in Microsoft Entra ID.
 
-This process ensures that:
-
-- All operations are performed with your user identity and permissions
-- Your Business Central permissions apply to all AI-initiated operations
-- Audit trails show who performed each action
-
 ## Next steps
 
 - [Configure Business Central MCP Server](configure-mcp-server.md)
-- [Connect from Visual Code](use-mcp-server-in-vscode.md)
-- [Connect from Copilot Studio](create-agent-in-copilot-studio.md)
-- [Connect other MCP clients](use-mcp-server-non-microsoft.md)
+- [Connect with Copilot Studio](create-agent-in-copilot-studio.md)
+- [Connect with Visual Code](use-mcp-server-in-vscode.md)
+- [Connect with non-Microsoft MCP clients](use-mcp-server-non-microsoft.md)
 
 ## Related information
 
 - [Model Context Protocol specification](https://modelcontextprotocol.io)
 - [Business Central APIs](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)
-- [Create agents with Copilot Studio](create-agent-in-copilot-studio.md)
