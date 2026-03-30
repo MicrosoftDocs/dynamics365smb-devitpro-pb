@@ -31,7 +31,7 @@ Key capabilities include:
 - Template-based inspections: Use quality inspection templates with customizable measurements and pass/fail criteria.
 - Lot blocking and grading: Automatically block or grade inventory lots based on test results.
 
-This early access feature comes with an early release of the documentation for it. Like the features themselves, the documentation is subject to change. To access the content, go to [Quality management overview](/dynamics365/business-central/qms-overview.md).
+This early access feature comes with an early release of the documentation for it. Like the features themselves, the documentation is subject to change. To access the content, go to [Quality management overview](/dynamics365/business-central/qms-overview).
 
 ## Related information
 

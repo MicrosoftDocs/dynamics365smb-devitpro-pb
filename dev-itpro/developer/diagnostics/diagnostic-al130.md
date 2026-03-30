@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0130"
-description: "A 'var' argument must be an assignable variable."
+description: "A 'var' argument must be an assignable variable (field, variable, or parameter), not a constant or expression."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-A 'var' argument must be an assignable variable.
+A 'var' argument must be an assignable variable (field, variable, or parameter), not a constant or expression.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

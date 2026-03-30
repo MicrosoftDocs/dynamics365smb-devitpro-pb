@@ -2,7 +2,7 @@
 title: "TextEncoding property"
 description: "Specifies the text encoding format to use when you use an XmlPort to export or import data as text."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,10 +22,10 @@ Specifies the text encoding format to use when you use an XmlPort to export or i
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**MSDOS**|runtime version 1.0|Use MS-DOS encoding format. It is the default value.|
-|**UTF8**|runtime version 1.0|Use UTF-8 encoding format.|
-|**UTF16**|runtime version 1.0|Use UTF-16 encoding format.|
-|**WINDOWS**|runtime version 1.0|Use Windows encoding format.|
+|**MSDOS**|runtime version 1.0|Use MS-DOS encoding. It is the default value.|
+|**UTF8**|runtime version 1.0|Use UTF-8 encoding with BOM (Binary Order Mark).|
+|**UTF16**|runtime version 1.0|Use UTF-16 encoding.|
+|**WINDOWS**|runtime version 1.0|Use Windows encoding.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0108"
 description: "Indexers must have at least one value."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Indexers must have at least one value.
+Indexers must have at least one value. Provide an index value inside the brackets (e.g., [1] or [i]).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

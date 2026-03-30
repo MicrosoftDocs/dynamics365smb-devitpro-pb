@@ -2,7 +2,7 @@
 title: "Page data type"
 description: "Contains a number of simpler elements called controls."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,10 +24,15 @@ The following methods are available on the Page data type.
 |-----------|-----------|
 |[GetBackgroundParameters()](page-getbackgroundparameters-method.md)|Gets the page background task input parameters.|
 |[Run(Integer [, Record] [, Any])](page-run-integer-table-joker-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[Run(Text [, Record] [, Any])](page-run-string-table-joker-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
 |[Run(Integer, Record, Integer)](page-run-integer-table-integer-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[Run(Text, Record, Integer)](page-run-string-table-integer-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
 |[RunModal(Integer [, Record] [, Any])](page-runmodal-integer-table-joker-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
+|[RunModal(Text [, Record] [, Any])](page-runmodal-string-table-joker-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[RunModal(Integer, Record, Integer)](page-runmodal-integer-table-integer-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
+|[RunModal(Text, Record, Integer)](page-runmodal-string-table-integer-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[RunModal(Integer, Record, FieldRef)](page-runmodal-integer-table-fieldref-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
+|[RunModal(Text, Record, FieldRef)](page-runmodal-string-table-fieldref-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[SetBackgroundTaskResult(Dictionary of [Text, Text])](page-setbackgroundtaskresult-method.md)|Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary.|
 
 ## Instance methods

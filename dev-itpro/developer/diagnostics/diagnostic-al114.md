@@ -2,7 +2,7 @@
 title: "Compiler Error AL0114"
 description: "Syntax error, integer literal expected."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Syntax error, integer literal expected.
+Syntax error, integer literal expected. Provide a numeric value (e.g., 0, 1, 42).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

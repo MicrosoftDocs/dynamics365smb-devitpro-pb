@@ -2,7 +2,7 @@
 title: "Compiler Error AL0184"
 description: "The expression '{0}' is not valid."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The expression '{0}' is not valid.
+The expression '{0}' is not valid. Verify that all referenced fields exist and syntax is correct.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
