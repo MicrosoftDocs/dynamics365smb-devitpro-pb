@@ -2,7 +2,7 @@
 title: What's New or Changed in Business Central 2026 release wave 1 - Update 28.0 preview
 description: Get an overview of new and changed capabilities in the 28.0 update of Business Central online, which is part of 2026 release wave 1.
 ms.author: jswymer
-ms.date: 03/23/2026
+ms.date: 03/30/2026
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
@@ -39,8 +39,11 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Transfer journal line descriptions to bank statements for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
 ||[Use carbon footprint with OIOUBL e-invoicing format](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-carbon-footprint-oioubl-e-invoicing-format)|General availability|
 ||Use e-invoice formats for service invoices in Germany|Public preview|
-|Development|[Download symbols from NuGet feed](../developer/devenv-al-extension-configuration.md)|General availability|
+|Development|Allow developers to define data analysis definitions in their apps|General availability|
+||[Download symbols from NuGet feed](../developer/devenv-al-extension-configuration.md)|General availability|
 ||[Evaluate AL coding agents with BC-Bench](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench)|General availability|
+||Get more secure out-going HTTP calls by default|General availability|
+||Make apps that use base 64 encodings faster|General availability|
 ||[Run AL objects and open record references using fully qualified names](../developer/devenv-namespaces-structure.md)|General availability|
 ||Run AL tests from Visual Studio Code|General availability|
 |Ecommerce|[Assign custom collections to items exported to Shopify](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/assign-custom-collections-items-exported-shopify)|General availability|
@@ -55,8 +58,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Calculate withholding taxes for vendors](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/calculate-withholding-taxes-vendors)|Public preview|
 ||Reduce time spent on recurring invoicing in Subscription Billing|General availability|
 ||[Use self-billed invoices](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-self-billed-invoices)|Public preview|
-|Governance and administration|[Audit user and group permissions across apps](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/audit-user-group-permissions-across-apps)|General availability|
-||[Connect AI agents to the admin center through MCP server](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/connect-ai-agents-admin-center-through-mcp-server)|Public preview|
+|Governance and administration|[Connect AI agents to the admin center through MCP server](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/connect-ai-agents-admin-center-through-mcp-server)|Public preview|
 ||Manage database index usage and cost per company|General availability|
 ||[Migrate to the cloud from any SQL database](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/migrate-cloud-sql-database)|General availability|
 |Productive with Microsoft 365|Stay in flow of work with updated Outlook integration|General availability|
