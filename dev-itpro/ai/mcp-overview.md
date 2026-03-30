@@ -47,15 +47,15 @@ An MCP client is an AI application that can connect to the Business Central MCP 
 
 ## How MCP clients connect to MCP server
 
-All MCP clients connect to the Business Central MCP server using the following endpoint:
+All MCP clients connect to the same Business Central MCP server endpoint:
 
 `https://mcp.businesscentral.dynamics.com`
 
-How you connect depends on the client you're using. Microsoft MCP clients (Visual Studio Code and Copilot Studio) include built-in authentication support with a default application registration in Microsoft Entra ID. Other MCP-compliant clients require you to register an application in Microsoft Entra ID and configure authentication manually.
-
-All MCP clients must specify the target environment using the following HTTP headers:
+You specify which Business Central environment to connect to using HTTP headers:
 
 [!INCLUDE [mcp-server-headers](../developer/includes/mcp-server-headers.md)]
+
+MCP clients authenticate with Business Central through a registered application in Microsoft Entra ID. Microsoft MCP clients (Visual Studio Code and Copilot Studio) use a preregistered application, so no extra setup is required. Non-Microsoft clients require you to register your own application.
 
 ### How authentication works
 

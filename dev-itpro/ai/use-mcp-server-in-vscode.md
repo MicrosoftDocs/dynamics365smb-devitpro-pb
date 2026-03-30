@@ -15,7 +15,9 @@ ms.collection:
 
 > **APPLIES TO:** Business Central online
 
-The Business Central Model Context Protocol (MCP) server lets developers and business users interact with Business Central data directly from Visual Studio Code by using natural language through GitHub Copilot. With this integration, you can perform common business operations&mdash;such as viewing customers, creating items, and processing sales orders&mdash;through conversational AI assistance. This article explains how to configure the Business Central MCP server in Visual Studio Code and how to use it with GitHub Copilot to manage Business Central data. Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Central](mcp-overview.md).
+The Business Central Model Context Protocol (MCP) server lets developers and business users interact with Business Central data directly from Visual Studio Code by using natural language through GitHub Copilot. With this integration, you can perform common business operations&mdash;such as viewing customers, creating items, and processing sales orders&mdash;through conversational AI assistance. This article explains how to configure the Business Central MCP server in Visual Studio Code and how to use it with GitHub Copilot to manage Business Central data.
+
+Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Central](mcp-overview.md).
 
 ## Prerequisites
 
