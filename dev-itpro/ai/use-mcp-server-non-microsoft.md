@@ -19,9 +19,6 @@ This article explains how to connect MCP clients that don't have built-in Busine
 
 Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Central](mcp-overview.md).
 
-> [!NOTE]
-> **Why is this needed?** The MCP specification supports Dynamic Client Registration (DCR), which allows clients to register themselves automatically with an authorization server. However, Microsoft Entra ID doesn't support DCR, so you must register an application for authentication the client.
-
 ## Prerequisites
 
 - An account in the Microsoft Entra tenant for Business Central environment with at least the [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Only required for registering an application in Microsoft Entra ID.
@@ -29,6 +26,9 @@ Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Cen
 - The redirect URI of the MCP client. Refer to the MCP client's documentation.
 
 ## Register an application in Microsoft Entra ID
+
+> [!NOTE]
+> **Why is this needed?** The MCP specification supports Dynamic Client Registration (DCR), which allows clients to register themselves automatically with an authorization server. However, Microsoft Entra ID doesn't support DCR, so you must register an application for authentication.
 
 This step is typically done by a tenant admin. You can use the same app registration for different clients.
 
