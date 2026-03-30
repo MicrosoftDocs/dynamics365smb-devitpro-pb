@@ -22,9 +22,9 @@ This article explains how to connect MCP clients that don't have built-in Busine
 
 ## Prerequisites
 
-To complete the connection, you meet the following requirements:
+To complete the connection, you need the following requirements:
 
-- An account in the Microsoft Entra tenant for Business Central environment with at least the [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Only required for step 1.
+- An account in the Microsoft Entra tenant for Business Central environment with at least the [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Only required for registering an application in Microsoft Entra ID.
 - The Microsoft Entra tenant ID for Business Central environment
 - The redirect URI of the MCP client
 
@@ -62,31 +62,32 @@ This step is typically done by a tenant admin. You can use the same app registra
 
 ## Connect the MCP client to the Business Central MCP server
 
-After an app registered for MCP clients, you can connect clients the Business Central MCP server. Refer to your MCP client's documentation for the specific configuration steps for connecting to MCP servers. Use the following information about the Business Central MCP server as needed:
+After an app registered for MCP clients, you can connect clients the Business Central MCP server. Refer to your MCP client's documentation for the specific configuration steps for connecting to MCP servers. Use the following information as needed:
 
 | Setting | Value |
 |---------|-------|
-| MCP server URL | `https://mcp.businesscentral.dynamics.com` |
-| Client ID | The application (client) ID of the registered app in Microsoft Entra used for authentication. See [Record and obtain Microsoft Entra app registrations for MCP clients](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/ai/use-mcp-server-non-microsoft#record-and-view-microsoft-entra-app-registrations-for-mcp-clients).|
+| Business MCP server URL | `https://mcp.businesscentral.dynamics.com` |
+| Client ID | The application (client) ID of the registered app in Microsoft Entra used for authentication. See the section that follows.|
 | Authorization endpoint | `https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/authorize` |
 | Token endpoint | `https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/token` |
 | Scope | `https://mcp.businesscentral.dynamics.com/.default` |
 
-Also configure the environment headers (`TenantId`, `EnvironmentName`, `Company`) as described in [How it works](mcp-overview.md#how-the-connection-works).
+Configure the environment headers:
 
-The client uses the OAuth 2.0 Authorization Code flow with PKCE to authenticate. When you initiate the connection, a browser window opens for you to sign in with your Microsoft account.
 
-## Record and obtain Microsoft Entra app registrations for MCP clients
+When you initiate the connection, a browser window opens for you to sign in with your Microsoft account.
 
-It's useful to record the application (client) ID of Microsoft Entra apps used for MCP client authentication. Users need this information to set up the connection from the MCP client to Business Central MCP server. Recording the information in Business Central makes is easier for users to retrieve it.
+## Record and retrieve Microsoft Entra app registrations for MCP clients
+
+It's useful to record the application (client) ID of Microsoft Entra apps used for MCP client authentication. Users need this information to set up the connection from the MCP client to Business Central MCP server. Recording the information in Business Central is optional.
 
 1. Sign in to [Business Central](https://businesscentral.dynamics.com/).
 1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page.
 1. Select **Advanced** > **Entra Applications**.
 
-   The **Model Context Protocol (MCP) Server Entra Applications** page lists apps registered in Microsoft Entra for authenticating MCP client users. 
+   The **Model Context Protocol (MCP) Server Entra Applications** page lists apps registered in Microsoft Entra for authenticating MCP client users.
 
-   Copy the Client ID as needed or select New to record another registered app.
+   Copy the Client ID as needed or select **New** to record another registered app.
 
 ## Related information
 
