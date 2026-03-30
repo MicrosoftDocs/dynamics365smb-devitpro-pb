@@ -27,7 +27,7 @@ The Business Central MCP server enables AI clients to interact with Business Cen
 
 ## What the MCP Server can do
 
-By default, the Business Central MCP server provides read-only access to all exposed Business Central API pages. With no extra configuration, MCP clients can immediately read data from your Business Central environment. To enable write operations, administrators configure API page objects with specific permissions for create, modify, delete, and bound actions.
+By default, the Business Central MCP server provides read-only access to all exposed Business Central API pages. With no extra configuration, MCP clients can read data from your Business Central environment. To enable write operations, administrators configure API page objects with specific permissions for create, modify, delete, and bound actions.
 
 Once configured, these capabilities are exposed to agents as tools, which they can use to:
 
@@ -51,7 +51,7 @@ All MCP clients connect to the same Business Central MCP server endpoint:
 
 `https://mcp.businesscentral.dynamics.com`
 
-You specify which Business Central environment to connect to using HTTP headers:
+You specify which Business Central environment to connect to using the following HTTP headers:
 
 [!INCLUDE [mcp-server-headers](../developer/includes/mcp-server-headers.md)]
 
