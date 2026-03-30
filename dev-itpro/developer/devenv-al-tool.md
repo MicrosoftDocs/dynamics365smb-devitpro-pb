@@ -2,7 +2,7 @@
 title: ALTool
 author: SusanneWindfeldPedersen
 description: Simplify AL extension development with ALTool. Validate code, package extensions, and integrate into CI/CD pipelines for seamless deployment.
-ms.date: 01/15/2026
+ms.date: 03/09/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ The ALTool is available through the Visual Studio Code AL Extension and can be a
 
 The ALTool executable is located in the `bin` folder in a path equivalent to the following depending on your operating system:
 
-```
+```shell
 C:\Users\<user>\.vscode\extensions\ms-dynamics-smb.al-17.0.1750311\bin\win32\alc.exe
 ```
 
@@ -49,7 +49,7 @@ alc.exe help
 
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
-| `compile`                      | Compile a package using `alc.exe`.  |
+| `compile`                      | Compile a package using `alc.exe`. Learn more in [Workspace compilation](#workspace-compilation). |
 | `workspace`                    | Workspace-related commands.  |
 | `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
@@ -58,6 +58,38 @@ alc.exe help
 | `help`                         | Display detailed information about a specific command. |
 | `version`                      | Display version information.                         |
 
+## Workspace compilation
+
+[!INCLUDE [2026-releasewave1-later](../includes/2026-releasewave1-later.md)]
+
+ALTool supports compiling all projects in a Visual Studio Code workspace in the correct dependency order. The command takes a `.code-workspace` file and compiles each project by invoking `alc`, automatically resolving inter-project dependencies and parallelizing compilations where possible.
+
+```bash
+altool workspace compile my.code-workspace
+```
+
+If the tool is installed from the [Business Central Development Tools NuGet package](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools) the command can be invoked with the `al` command that acts as a convenient alias for ALTool.
+
+```bash
+al workspace compile my.code-workspace
+```
+
+The following options are available:
+
+| Option | Description |
+|---|---|
+| `--maxcpucount` | Maximum number of concurrent compilations. Defaults to the number of processors. |
+| `--packagecachepath` | Semicolon-separated list of package cache directories. |
+| `--assemblyprobingpaths` | Semicolon-separated list of assembly probing paths. |
+| `--analyzers` | Built-in analyzers to run (CodeCop, AppSourceCop, PTECop, UICop). |
+| `--customanalyzers` | Paths to custom analyzer assemblies. Supports absolute paths, paths relative to the workspace directory, and well-known variables (for example, `${AnalyzerFolder}/MyAnalyzer.dll`). |
+| `--features` | Features to enable (LcgTranslationFile, TranslationFile, GenerateCaptions). |
+| `--generatereportlayout` | Generate report layout. |
+| `--define` | Preprocessor symbols to define. |
+| `--sourcerepositoryurl` | Source repository URL for the workspace. |
+| `--sourcecommit` | Source commit ID for the workspace. |
+| `--loglevel` | Logging level. |
+| `--logdirectory` | Directory to store compilation log files. |
 
 ## ALMCP
 
@@ -85,5 +117,6 @@ Once the server is launched, it listens on the specified port for MCP calls and 
 
 ## Related information
 
+[AI agent tools for AL development](al-agent-tools/al-agent-tools-overview.md)  
 [AL Development Tools package](devenv-al-tool-package.md)  
 [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools)
