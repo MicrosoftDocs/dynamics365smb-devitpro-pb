@@ -4,7 +4,7 @@ description: Provides an overview of the Business Central versions and their com
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.date: 03/03/2026
+ms.date: 03/30/2026
 ms.topic: upgrade-and-migration-article
 ms.custom: bap-template
 ---
@@ -23,21 +23,33 @@ Learn more about the supported paths in [Supported Upgrade Paths](upgrade-paths.
 Before you choose the target version for your upgrade, read the [Some Known Issues](known-issues.md) article. This article describes issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions that affect upgrade.
 
 > [!IMPORTANT]  
-> You can't upgrade directly from version 24 or earlier to version 26. Upgrade to version 25 first.
+> You can't upgrade directly from version 24 or earlier to version 26 and later. Upgrade to version 25 first.
+
+## Version 27 compatibility
+
+The following table lists the Business Central 26 update versions and the minimum version of later releases that are compatible for upgrade.
+
+|Version 27|Version 28|
+|-|-|
+|27.0 to 27.5|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|27.6<sup>[\[1\]](#1)</sup>|28.1|
+
+Get a list of all available version 27 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-2-7f4863fc-e30c-497d-b510-df9e7007253c).
 
 ## Version 26 compatibility
 
 The following table lists the Business Central 26 update versions and the minimum version of later releases that are compatible for upgrade.
 
-|Version 26 |Version 27|
-|-|-|
-|26.0 to 26.5|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[26.6](https://support.microsoft.com/help/5068248)|[27.1](https://support.microsoft.com/help/5071096)|
-|[26.7](https://support.microsoft.com/help/5071095)|[27.2](https://support.microsoft.com/help/5073765)|
-|[26.8](https://support.microsoft.com/help/5073764)|[27.3](https://support.microsoft.com/help/5075270)|
-|[26.9](https://support.microsoft.com/help/5075269)|[27.4](https://support.microsoft.com/help/5078591)|
-|[26.10](https://support.microsoft.com/help/5078590)|[27.5](https://support.microsoft.com/help/5081986)|
-|[26.11](https://support.microsoft.com/help/5081984)<sup>[\[1\]](#1)</sup>|27.6|
+|Version 26 |Version 27|Version 28|
+|-|-|-|
+|26.0 to 26.5|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[26.6](https://support.microsoft.com/help/5068248)|[27.1](https://support.microsoft.com/help/5071096)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[26.7](https://support.microsoft.com/help/5071095)|[27.2](https://support.microsoft.com/help/5073765)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[26.8](https://support.microsoft.com/help/5073764)|[27.3](https://support.microsoft.com/help/5075270)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[26.9](https://support.microsoft.com/help/5075269)|[27.4](https://support.microsoft.com/help/5078591)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[26.10](https://support.microsoft.com/help/5078590)|[27.5](https://support.microsoft.com/help/5081986)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[26.11](https://support.microsoft.com/help/5081984)|[27.6](https://support.microsoft.com/help/5086070)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|26.12<sup>[\[1\]](#1)</sup>|27.7|28.1|
 
 Get a list of all available updates for Business Central 2025 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-1-8cb260a4-6a57-4325-a4d7-7aa84c3234e6).
 
@@ -45,21 +57,22 @@ Get a list of all available updates for Business Central 2025 release wave 1 at 
 
 The following table lists the Business Central 25 update versions and the minimum version of later releases that are compatible for upgrade.
 
-|Version 25 |Version 26|Version 27|
-|-|-|-|
-|25.0 to 25.5|[26.0](../whatsnew/whatsnew-update-26-0.md#on-premises-download-packages)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[25.6](https://support.microsoft.com/help/5056718)|[26.1](https://support.microsoft.com/help/5059415)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[25.7](https://support.microsoft.com/help/5059414)|[26.2](https://support.microsoft.com/help/5061918)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[25.8](https://support.microsoft.com/help/5061917)|[26.3](https://support.microsoft.com/help/5063362)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[25.9](https://support.microsoft.com/help/5063361)|[26.4](https://support.microsoft.com/help/5064779)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[25.10](https://support.microsoft.com/help/5064778)|[26.5](https://support.microsoft.com/help/5066309)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[25.11](https://support.microsoft.com/help/5066308)|[26.6](https://support.microsoft.com/help/5068248)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|
-|[25.12](https://support.microsoft.com/help/5068247)|[26.7](https://support.microsoft.com/help/5071095)|[27.1](https://support.microsoft.com/help/5071096)|
-|[25.13](https://support.microsoft.com/help/5068247)|[26.8](https://support.microsoft.com/help/5073764)|[27.2](https://support.microsoft.com/help/5073765)|
-|[25.14](https://support.microsoft.com/help/5073763)|[26.9](https://support.microsoft.com/help/5075269)|[27.3](https://support.microsoft.com/help/5075270)|
-|[25.15](https://support.microsoft.com/help/5075268)|[26.10](https://support.microsoft.com/help/5078590)|[27.4](https://support.microsoft.com/help/5078591)|
-|[25.16](https://support.microsoft.com/help/5078589)|[26.11](https://support.microsoft.com/help/5081984)|27.5|
-|[25.17](https://support.microsoft.com/help/5081983)<sup>[\[1\]](#1)</sup>|26.12|27.6|
+|Version 25 |Version 26|Version 27|Version 28|
+|-|-|-|-|
+|25.0 to 25.5|[26.0](../whatsnew/whatsnew-update-26-0.md#on-premises-download-packages)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.6](https://support.microsoft.com/help/5056718)|[26.1](https://support.microsoft.com/help/5059415)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.7](https://support.microsoft.com/help/5059414)|[26.2](https://support.microsoft.com/help/5061918)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.8](https://support.microsoft.com/help/5061917)|[26.3](https://support.microsoft.com/help/5063362)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.9](https://support.microsoft.com/help/5063361)|[26.4](https://support.microsoft.com/help/5064779)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.10](https://support.microsoft.com/help/5064778)|[26.5](https://support.microsoft.com/help/5066309)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.11](https://support.microsoft.com/help/5066308)|[26.6](https://support.microsoft.com/help/5068248)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.12](https://support.microsoft.com/help/5068247)|[26.7](https://support.microsoft.com/help/5071095)|[27.1](https://support.microsoft.com/help/5071096)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.13](https://support.microsoft.com/help/5068247)|[26.8](https://support.microsoft.com/help/5073764)|[27.2](https://support.microsoft.com/help/5073765)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.14](https://support.microsoft.com/help/5073763)|[26.9](https://support.microsoft.com/help/5075269)|[27.3](https://support.microsoft.com/help/5075270)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.15](https://support.microsoft.com/help/5075268)|[26.10](https://support.microsoft.com/help/5078590)|[27.4](https://support.microsoft.com/help/5078591)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.16](https://support.microsoft.com/help/5078589)|[26.11](https://support.microsoft.com/help/5081984)|[27.5](https://support.microsoft.com/help/5081986)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|[25.17](https://support.microsoft.com/help/5081983)|[26.12](https://support.microsoft.com/help/5086069)|[27.6](https://support.microsoft.com/help/5086070)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
+|25.18<sup>[\[1\]](#1)</sup>|26.13|27.7|28.1|
 
 Get a list of all available updates for Business Central 2024 release wave 2 at [Released Updates for Microsoft Dynamics 365 Business Central 2024 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776).
 
@@ -84,7 +97,7 @@ The following table lists the Business Central 24 update versions and the minimu
 |[24.15](https://support.microsoft.com/help/5063360)|[25.10](https://support.microsoft.com/help/5064778)|
 |[24.16](https://support.microsoft.com/help/5064777)|[25.11](https://support.microsoft.com/help/5066308)|
 |[24.17](https://support.microsoft.com/help/5066307)|[25.12](https://support.microsoft.com/help/5068247)|
-|[24.18](https://support.microsoft.com/help/5068246)<sup>[\[1\]](#1)</sup>|25.13|
+|[24.18](https://support.microsoft.com/help/5068246)|[25.13](https://support.microsoft.com/help/5068247)|
 
 Get a list of all available updates for Business Central 2024 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2024 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65).
 
