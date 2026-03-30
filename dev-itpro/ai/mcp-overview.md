@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: concept-article
-ms.date: 02/18/2026
+ms.date: 03/30/2026
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
@@ -58,9 +58,9 @@ All MCP clients must specify the target environment using the following HTTP hea
 | HTTP header | Description | Example |
 |--------|-------------|---------|
 | `TenantId` | Your Microsoft Entra tenant ID (GUID) | `aaaabbbb-0000-cccc-1111-dddd2222eeee` |
-| `EnvironmentName` | The name of your Business Central environment | `Production` |
+| `EnvironmentName` | The name of the Business Central environment to connect to| `Production` |
 | `Company` | The company name within the environment | `CRONUS USA, Inc.` |
-| `ConfigurationName` | (Optional) The MCP server configuration to use | `SalesTeamConfig` |
+| `ConfigurationName` | (Optional) The MCP server configuration in the enviroment to use | `SalesTeamConfig` |
 
 ### How authentication works
 
@@ -76,9 +76,6 @@ The Business Central MCP server acts as a bridge between MCP clients and your Bu
     - Redirects the user to the Microsoft Entra ID authorization endpoint
     - Exchanges the returned authorization code (along with the `code_verifier`) for an access token
 1. The client includes the access token in subsequent requests to the MCP server, making authorized requests on the user's behalf
-
-> [!NOTE]
-> Microsoft Entra ID doesn't support Dynamic Client Registration (DCR), so the standard MCP DCR step is skipped. Microsoft-provided MCP clients, such as Visual Studio Code and Copilot Studio, use a default Microsoft Entra ID application. Non-Microsoft clients require a custom application registration in Microsoft Entra ID.
 
 ## Next steps
 

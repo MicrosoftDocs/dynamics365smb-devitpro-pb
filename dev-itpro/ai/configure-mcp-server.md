@@ -2,12 +2,14 @@
 title: Configure Business Central MCP Server
 description: Learn how to configure the Business Central MCP Server to enable AI agents to access and interact with your Business Central data and processes.
 ms.topic: how-to
-ms.date: 03/02/2026
+ms.date: 03/30/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: 
 ms.search.form: 8350_Primary, 8351_Primary, 8359, 
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Configure Business Central MCP Server
@@ -217,14 +219,11 @@ To get your MCP server configuration connection string:
 
 1. Copy the text or select **Download** to save it in a text (.txt) file on your device.
 
-
 ## Next steps
 
-[Create agents with Copilot Studio](create-agent-in-copilot-studio.md)
-
-[Use the Business Central MCP Server in Visual Studio Code](use-mcp-server-in-vscode.md)
-
-[Use Business Central MCP server with non-Microsoft clients](use-mcp-server-non-microsoft.md)
+- [Create agents with Copilot Studio](create-agent-in-copilot-studio.md)
+- [Connect to MCP Server with Visual Studio Code](use-mcp-server-in-vscode.md)
+- [Connect to MCP server with non-Microsoft clients](use-mcp-server-non-microsoft.md)
 
 ## Related information
 

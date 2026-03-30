@@ -6,13 +6,15 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.collection: 
-ms.date: 11/11/2025
+ms.date: 03/30/2026
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
 ms.search.form: 8350, 8351, 
 ---
 # Create agents in Copilot Studio that connect to Business Central
+
+> **APPLIES TO:** Business Central online
 
 This article explains how to build, configure, and publish agents in Copilot Studio that integrate with Business Central using either the Business Central Connector or the Business Central MCP Server.
 
@@ -133,10 +135,6 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 - **Logging:** Use the agent's execution logs to troubleshoot tool calls and to see request/response payloads.
 
 ## Create agents that connect to Business Central MCP Server
-
-[!INCLUDE [preview-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 Follow these steps to create an agent that connects to the Business MCP server.
 
