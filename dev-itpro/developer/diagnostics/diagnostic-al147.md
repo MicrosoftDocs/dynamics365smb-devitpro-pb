@@ -2,7 +2,7 @@
 title: "Compiler Error AL0147"
 description: "An array dimension must be a positive number."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An array dimension must be a positive number.
+An array dimension must be a positive number. Use a positive integer value for the array size (e.g., [10]).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0359"
 description: "The XML node name is not valid."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The XML node name is not valid. {0}.
+The XML node name is not valid. {0} XML names must start with a letter and contain only letters, digits, and underscores.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "Boolean data type"
 description: "Indicates true or false."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,7 +22,7 @@ The following methods are available on instances of the Boolean data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[ToText()](boolean-totext-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
+|[ToText()](boolean-totext--method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 |[ToText([Boolean])](boolean-totext-boolean-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

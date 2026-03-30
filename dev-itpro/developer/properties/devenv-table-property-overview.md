@@ -2,7 +2,7 @@
 title: "Table, Table fields, and Table extension properties"
 description: "This article lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md)."
 ms.author: solsen
-ms.date: 09/19/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,9 +34,9 @@ The following properties all apply to the Table object, only some of these prope
 |[BlankZero property](devenv-blankzero-property.md)| True| -Table field <br />  -Page Field <br /> |
 |[CalcFields property](devenv-calcfields-property.md)| | -Xml Port Table Element <br />  -Report Data Item <br /> |
 |[CalcFormula property](devenv-calcformula-property.md)| | -Table field <br /> |
-|[Caption property](devenv-caption-property.md)| True| -Table <br />  -Table field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Report Column <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
+|[Caption property](devenv-caption-property.md)| True| -Table <br />  -Table field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Page Analysis View <br />  -Report Column <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
 |[CaptionClass property](devenv-captionclass-property.md)| True| -Table field <br />  -Page Label <br />  -Page Field <br /> |
-|[CaptionML property](devenv-captionml-property.md)| True| -Table <br />  -Table field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Report Column <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
+|[CaptionML property](devenv-captionml-property.md)| True| -Table <br />  -Table field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Page Analysis View <br />  -Report Column <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
 |[CharAllowed property](devenv-charallowed-property.md)| | -Table field <br />  -Page Field <br /> |
 |[ClosingDates property](devenv-closingdates-property.md)| True| -Table field <br />  -Page Field <br /> |
 |[Clustered property](devenv-clustered-property.md)| | -Table key <br /> |
@@ -101,8 +101,8 @@ The following properties all apply to the Table object, only some of these prope
 |[TableRelation property](devenv-tablerelation-property.md)| True| -Table field <br />  -Page Field <br /> |
 |[TableType property](devenv-tabletype-property.md)| | -Table <br /> |
 |[TestTableRelation property](devenv-testtablerelation-property.md)| | -Table field <br /> |
-|[ToolTip property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
-|[ToolTipML property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTip property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTipML property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
 |[Unbound property](devenv-unbound-property.md)| | -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br /> |
 |[Unique property](devenv-unique-property.md)| | -Table key <br /> |
 |[ValidateTableRelation property](devenv-validatetablerelation-property.md)| | -Table field <br /> |

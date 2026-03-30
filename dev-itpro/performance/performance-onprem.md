@@ -87,6 +87,11 @@ These articles describe how you can use SQL Server table partitioning and data c
 - [Using SQL Server table partitioning](../administration/optimize-sql-data-access.md)  
 - [Using SQL Server data compression](../administration/optimize-sql-data-access.md)  
 
+#### Manage database indexes
+
+[!INCLUDE[database-index-management](../developer/includes/database-index-management.md)]
+
+
 #### SQL Server vs. Azure SQL database
 
 Read more about the difference between SQL Server and Azure SQL database performance:
