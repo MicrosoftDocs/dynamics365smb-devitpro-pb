@@ -22,6 +22,16 @@ The Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] Word add-in incl
 
     The **Business Central** tab appears in the ribbon.
 
+## Export Word layout from Business Central
+
+1. Sign in to Business Central.
+1. [!INCLUDE[open-report-layouts-page](includes/open-report-layouts-page.md)]
+1. Select the layout in the **Report Layouts** page.
+1. Select the **Actions** > **Update and Export Layout** to download the Word layout file (.docx).
+
+> [!IMPORTANT]
+> You must use the **Update and Export Layout** action to ensure the document includes the layout metadata required by the Word add-in. Without it, you get a message about it when you try to use the add-in in Word.
+
 ## Add data
 
 [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
