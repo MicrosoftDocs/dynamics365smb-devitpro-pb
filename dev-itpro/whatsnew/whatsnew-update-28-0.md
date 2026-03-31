@@ -22,9 +22,9 @@ This table lists new and updated features in update 28.0. Learn more about all f
 
 |Product area|Feature|Public preview/General availability|
 |-|-|-|
-|Adapt faster with Power Platform|[Map new Dataverse fields in Business Central](|General availability|
-|Application|External storage support for document attachments|General availability|
-|Copilot and agents|Connect AI agents to Business Central through MCP server (now from Visual Studio Code and other MCP-compliant clients)|General availability|
+|Adapt faster with Power Platform|[Map new Dataverse fields in Business Central](/dynamics365/business-central/admin-how-to-modify-table-mappings-for-synchronization)|General availability|
+|Application|[External storage support for document attachments](/dynamics365/business-central/across-store-document-attachments-externally)|General availability|
+|Copilot and agents|[Create agentic experiences with enhanced MCP server (now from Visual Studio Code and other MCP-compliant clients)](../ai/mcp-overview.md)|General availability|
 ||[Discover emails in the mailbox that have been processed by Payables Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/discover-emails-mailbox-that-have-been-processed-payables-agent)|General availability|
 ||Get item insights with advanced KPIs and Summary|General availability|
 ||[Manage tasks from all agents in dedicated task pane](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-tasks-all-agents-dedicated-task-pane)|General availability|
@@ -33,7 +33,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Stop all active tasks for selected agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/stop-all-active-tasks-selected-agent)|General availability|
 |Country and regional|[Adjust VAT in local currency on sales documents in Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/adjust-vat-local-currency-sales-documents-czechia)|General availability|
 ||[Align VAT periods with Microsoft standards for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/align-vat-periods-standards-czechia)|General availability|
-||Change original document VAT date in VAT entries for Czechia|General availability|
+||[Change original document VAT date in VAT entries for Czechia](|General availability|
 ||[Get started with clearer user setup controls for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/get-started-clearer-user-setup-controls-czechia)|General availability|
 ||[Transfer journal line descriptions to bank statements for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
 ||[Use carbon footprint with OIOUBL e-invoicing format](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-carbon-footprint-oioubl-e-invoicing-format)|General availability|
