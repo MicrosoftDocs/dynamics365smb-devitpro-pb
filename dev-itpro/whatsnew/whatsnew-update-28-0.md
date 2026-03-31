@@ -33,15 +33,15 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Stop all active tasks for selected agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/stop-all-active-tasks-selected-agent)|General availability|
 |Country and regional|[Adjust VAT in local currency on sales documents in Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/adjust-vat-local-currency-sales-documents-czechia)|General availability|
 ||[Align VAT periods with Microsoft standards for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/align-vat-periods-standards-czechia)|General availability|
-||[Change original document VAT date in VAT entries for Czechia](|General availability|
+||[Change original document VAT date in VAT entries for Czechia](/dynamics365/business-central/LocalFunctionality/Czech/how-to-setup-vat-date)|General availability|
 ||[Get started with clearer user setup controls for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/get-started-clearer-user-setup-controls-czechia)|General availability|
 ||[Transfer journal line descriptions to bank statements for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
 ||[Use carbon footprint with OIOUBL e-invoicing format](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-carbon-footprint-oioubl-e-invoicing-format)|General availability|
-||Use e-invoice formats for service invoices in Germany|Public preview|
+||[Use e-invoice formats for service invoices in Germany](/dynamics365/business-central/localfunctionality/germany/germany-einvoicing)|Public preview|
 |Development|Allow developers to define data analysis definitions in their apps|General availability|
 ||[Download symbols from NuGet feed](../developer/devenv-al-extension-configuration.md)|General availability|
 ||[Evaluate AL coding agents with BC-Bench](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench)|General availability|
-||Get more secure out-going HTTP calls by default|General availability|
+||[Get more secure outgoing HTTP calls by default](../developer/devenv-httpclient.md#anti-ssrf-validation-for-al-httpclient)|General availability|
 ||Make apps that use base 64 encodings faster|General availability|
 ||[Run AL objects and open record references using fully qualified names](../developer/devenv-namespaces-structure.md)|General availability|
 ||[Run AL tests from Visual Studio Code](../developer/devenv-test-explorer-vscode.md)|General availability|
@@ -58,9 +58,9 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||Reduce time spent on recurring invoicing in Subscription Billing|General availability|
 ||[Use self-billed invoices](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-self-billed-invoices)|Public preview|
 |Governance and administration|[Connect AI agents to the admin center through MCP server](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/connect-ai-agents-admin-center-through-mcp-server)|Public preview|
-||Manage database index usage and cost per company|General availability|
+||[Manage database index usage and cost per company](/dynamics365/business-central/manage-indexes)|General availability|
 ||[Migrate to the cloud from any SQL database](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/migrate-cloud-sql-database)|General availability|
-|Productive with Microsoft 365|Stay in flow of work with updated Outlook integration|General availability|
+|Productive with Microsoft 365|[Stay in flow of work with updated Outlook integration](/dynamics365/business-central/save-business-contacts-to-outlook)|General availability|
 |Reporting and data analysis|[Control the lifecycle of report layouts](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/control-lifecycle-report-layouts)|General availability|
 ||[Enhanced Subscription Billing Power BI app](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/enhanced-subscription-billing-power-bi-app)|General availability|
 ||[Financial Reporting enhancements](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/financial-reporting-enhancements)|General availability|
@@ -72,7 +72,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 |Supply chain management|[Add pictures to item variants to differentiate product options](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/add-pictures-item-variants-differentiate-product-options)|General availability|
 ||[Add the Description 2 field to various pages to gain more insight](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/add-description-2-field-various-pages-gain-more-insight)|General availability|
 ||[Approve requisition worksheets and item journals](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/approve-requisition-worksheets-item-journals)|General availability|
-||Choose planning behavior for items without SKUs at a location|General availability|
+||[Choose planning behavior for items without SKUs at a location](/dynamics365/business-central/production-about-planning-functionality##missing-sku-planning-policy)|General availability|
 ||[Create contract service orders with One Service Item Line/Order setting](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/create-contract-service-orders-respect-one-service-item-lineorder-setting)|General availability|
 ||[Create purchase orders from drop shipments](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/create-purchase-orders-drop-shipments)|General availability|
 ||[Create purchase quotes for contacts](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/create-purchase-quotes-contacts)|General availability|
@@ -84,7 +84,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Post purchase invoices for drop shipments independently of related sales invoices](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/post-purchase-invoices-drop-shipments-independently-related-sales-invoices)|General availability|
 ||[Reverse drop shipments when sales and purchase documents aren't invoiced](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/reverse-drop-shipments-when-sales-purchase-documents-arent-invoiced)|General availability|
 ||[Send posted sales shipments and return receipts by email](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/send-posted-sales-shipments-return-receipts-email)|General availability|
-||Use date formulas to control allowed posting periods|General availability|
+||[Use date formulas to control allowed posting periods](/dynamics365/business-central/finance-how-specify-posting-periods#dynamically-calculate-posting-periods)|General availability|
 |Sustainability management|[Use new APIs in Sustainability for better integration](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-apis-sustainability-better-integration)|Public preview|
 ||[Use new sales document report layouts that show your carbon footprint](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-new-sales-document-reports-layout-that-show-carbon-footprint)|General availability|
 
