@@ -91,7 +91,7 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 
 #### Step 2: Customize the layout using the Word add-in
 
-If you're using the Dynamics 365 Business Central Word Add-in (preview) version, there are two ways to complete this task. If you not using the preview version, use the data task pane.  
+If you're using the Dynamics 365 Business Central Word Add-in (preview) version, there are two ways to complete this task. If you're not using the preview version, use the data task pane.  
 
 # [Using data task pane](#tab/taskpane)
 
