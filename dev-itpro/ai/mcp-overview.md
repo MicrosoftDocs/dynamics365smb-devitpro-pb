@@ -17,13 +17,13 @@ ms.collection:
 
 The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open standard that defines how AI applications communicate with data sources and tools. It provides a consistent and secure way for AI clients&mdash;such as Copilot Studio, GitHub Copilot, Claude, ChatGPT, and custom agents&mdash;to access and interact with external systems like Business Central.
 
+![Shows how MCP clients connect to Business Central](../developer/media/mcp-client-server.svg)
+
 ## Business Central MCP Server
 
 An **MCP server** is a service that implements the Model Context Protocol, exposing an application's data and functionality to AI clients. When an AI client connects to an MCP server, it can read data, perform actions, and integrate that application's capabilities directly into conversational workflows—all through a standardized interface.
 
 The Business Central MCP server enables AI clients to interact with Business Central environments from various channels such as Visual Studio Code, Copilot Studio, and other MCP-compliant clients, allowing customers and employees to conversationally work with Business Central data and business logic.
-
-![Shows how MCP clients connect to Business Central](../developer/media/mcp-client-server.svg)
 
 ## What the MCP Server can do
 
