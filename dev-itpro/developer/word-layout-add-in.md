@@ -28,7 +28,8 @@ There are two versions of the Dynamics 365 Business Central Word add-in availabl
 ## Install the add-in
 
 1. On the **Home** tab, select **Get Add-ins**.
-1. In the **Search** field, enter *Dynamics 365 Business Central Word Add-in*, then select **Add** next to the add-in version you want.
+1. In the **Search** field, enter *Dynamics 365 Business Central Word Add-in* to display Business Central add-ins.
+1. Select the add-in version you want and then select **Add**.
 
    The **Business Central** tab appears in the ribbon.
 
@@ -42,13 +43,13 @@ There are two versions of the Dynamics 365 Business Central Word add-in availabl
 > [!IMPORTANT]
 > You must use the **Update and Export Layout** action to ensure the document includes the layout metadata required by the Word add-in. Without it, you get a message about it when you try to use the add-in in Word.
 
-## Add data
+## Add data using the task pane
 
 [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
-The Word add-in includes a task pane that lets you insert mapped fields, such as data, labels, and report information, in a layout. Use this task pane for an intuitive interface instead of the XML Mapping pane.
+The Word add-in includes a task pane that lets you insert mapped fields from a report dataset, such as data, labels, and report information, in a layout. Use this task pane for an intuitive interface instead of the XML Mapping pane.
 
-1. In the **Business Central** tab, select **Add Data** to open the **Business Central** task pane.
+1. In the **Business Central** tab, select **Add Data** to open the **Business Central** data task pane.
 1. Expand the collapsible tree to view data, labels, and report information:
 
    | Node| Description|
@@ -59,6 +60,9 @@ The Word add-in includes a task pane that lets you insert mapped fields, such as
 
 1. To add a field or repeater, place the cursor in the Word document where you want it.
 1. In the **Business Central** task pane, select the field or table, and then select **Add field** or **Add repeater**.
+
+   > [!TIP]
+   > A repeater is layout control that renders a collection of records as repeating rows, where each row represents one record and each column represents a field. It's the core control used to show lists of data.
 
 ### Exercise: Create a simple customer list layout
 
@@ -87,10 +91,13 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 
 #### Step 2: Customize the layout using the Word add-in
 
+# [Using data task pane](#tab/taskpane)
+
 1. Open the downloaded document in Word.
-1. Insert a table with two rows and four columns.
+1. Insert a table with two rows and four columns in the desired location in the document.
 
    The first is for defining the column headings. The second row is for the data for each customer (this row repeats).
+1. Select **Add Data** to open the **Business Central** data task pane.
 1. In the first row, add the following text in the columns: **No.**, **Name**, **Salesperson code**, **Balance**.
 1. Define the repeater on the second row for listing the customers:
 
@@ -106,9 +113,31 @@ In this exercise, you create a Word layout that lists customers. This exercise c
    1. Repeat steps 1 and 2 to add:
 
       - `CustAddr_1_` in the **Name** column
-      - `Customer__Salesperson_Code_Caption` in the **Salesperson code** column
+      - `Customer__Salesperson_Code` in the **Salesperson code** column
       - `Customer_Balance_LCY` in the **Balance** column.
 1. Save the Word file.
+
+# [Using insert table control (preview)](#tab/inserttable)
+
+[This feature is only available in Dynamics 365 Business Central Word Add-in (preview). This is prerelease documentation and is subject to change.]
+
+1. Open the downloaded document in Word.
+1. Place your cursor in the document where you want the table, and then select **Insert table**.
+
+   The **Create table** page appears.
+1. Set **Data source** to **Customer**.
+1. Under **Repeater fields**, add the columns for the list
+
+   1. Set **Field** to `Customer_No_` and **Headline** to `None`.
+   1. Select the ***Add Column** to add a new columns for `CustAddr_1_`, `Customer__Salesperson_Code`, and `Customer_Balance_LCY` fields.
+
+   :::image type="icon" source="media/word-add-in-insert-table.png":::
+
+   Include header row include a header row in the table with headlines. Auto-select headline automatically set columns headlines by matching field labels that end with "Caption".   
+1. Select **Create table** to insert the table in the layout.
+1. Save the Word file.
+
+---
 
 #### Step 3: Import and test the layout in Business Central
 
@@ -116,6 +145,18 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 1. Select the layout you created for the customer list, and then select the **Replace Layout** action.
 1. Browse for the Word layout document you modified and select **Open** to import the layout.
 1. Select the **Run Report** > **Print** to test the layout.
+
+## Insert table (preview)
+
+[This feature is only available in Dynamics 365 Business Central Word Add-in (preview). This is prerelease documentation and is subject to change.]
+
+The **Insert table** control provides an easier alternative to the task pane for displaying records in rows. Instead of creating the table manually, adding a repeater, and then adding field controls to each column, the **Insert table** control lets you design the table from a single dialog, where you:
+
+- Specify the data source and column headings (with an option to generate headings automatically by matching on caption fields)
+- Add a footer
+- Reorder columns by dragging
+
+Learn how to use this control in [Step 2: Customize the layout using the Word add-in](#step-2-customize-the-layout-using-the-word-add-in) of the previous example. 
 
 ## Insert Layout Comment
 
