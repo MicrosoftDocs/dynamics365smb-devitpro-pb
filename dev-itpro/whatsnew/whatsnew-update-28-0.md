@@ -22,7 +22,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 
 |Product area|Feature|Public preview/General availability|
 |-|-|-|
-|Adapt faster with Power Platform|Map new Dataverse fields in Business Central|General availability|
+|Adapt faster with Power Platform|[Map new Dataverse fields in Business Central](|General availability|
 |Application|External storage support for document attachments|General availability|
 |Copilot and agents|Connect AI agents to Business Central through MCP server (now from Visual Studio Code and other MCP-compliant clients)|General availability|
 ||[Discover emails in the mailbox that have been processed by Payables Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/discover-emails-mailbox-that-have-been-processed-payables-agent)|General availability|
@@ -44,7 +44,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||Get more secure out-going HTTP calls by default|General availability|
 ||Make apps that use base 64 encodings faster|General availability|
 ||[Run AL objects and open record references using fully qualified names](../developer/devenv-namespaces-structure.md)|General availability|
-||Run AL tests from Visual Studio Code|General availability|
+||[Run AL tests from Visual Studio Code](../developer/devenv-test-explorer-vscode.md)|General availability|
 |Ecommerce|[Assign custom collections to items exported to Shopify](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/assign-custom-collections-items-exported-shopify)|General availability|
 ||[Export items to Shopify with product options based on item attributes](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/export-items-shopify-product-options-based-item-attributes)|General availability|
 ||[Sync images of product variants between Business Central and Shopify](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/sync-images-product-variants-between-business-central-shopify)|General availability|
