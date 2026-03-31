@@ -91,6 +91,8 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 
 #### Step 2: Customize the layout using the Word add-in
 
+If you are using the Dynamics 365 Business Central Word Add-in (preview) version, there are two ways to complete this task. If you not using the preview version, use the data task pane.  
+
 # [Using data task pane](#tab/taskpane)
 
 1. Open the downloaded document in Word.
@@ -117,7 +119,7 @@ In this exercise, you create a Word layout that lists customers. This exercise c
       - `Customer_Balance_LCY` in the **Balance** column.
 1. Save the Word file.
 
-# [Using insert table control (preview)](#tab/inserttable)
+# [Using insert table control (preview only)](#tab/inserttable)
 
 [This feature is only available in Dynamics 365 Business Central Word Add-in (preview). This is prerelease documentation and is subject to change.]
 
