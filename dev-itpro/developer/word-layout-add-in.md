@@ -131,7 +131,7 @@ If you're using the Dynamics 365 Business Central Word Add-in (preview) version,
 1. Under **Repeater fields**, add the columns for the list
 
    1. Set **Field** to `Customer_No_` and **Headline** to `None`.
-   1. Select the ***Add Column** to add new columns for `CustAddr_1_`, `Customer__Salesperson_Code`, and `Customer_Balance_LCY` fields.
+   1. Select **Add Column** to add new columns for `CustAddr_1_`, `Customer__Salesperson_Code`, and `Customer_Balance_LCY` fields.
 
    :::image type="icon" source="media/word-add-in-insert-table.png":::
 
@@ -169,7 +169,7 @@ Use comments for tasks such as describing difficult parts of the layout or addin
 There are two ways to insert a comment:
 
 - Add your content as text and tables first, select the content and then **Business Central** > **Insert layout comment** to add the comment control. Clicking anywhere within the comment shows the **Hidden Comment** border.
-- Place your cursor where you want the comment, select **Business Central** > **Insert layout comment** to insert a comment control with the text `This text will not be printed in the final report`. Select inside the control and then  the comment.
+- Place your cursor where you want the comment, select **Business Central** > **Insert layout comment** to insert a comment control with the text `This text will not be printed in the final report`. Select inside the control and then edit the comment.
 
 ### Exercise: Add a versioning table in a layout
 
@@ -229,7 +229,7 @@ If you have a data item in the dataset, where field should determine whether the
 
 ## Hide Empty Table Column
 
-Suppose you have a data item in the dataset, where no table header and table column should be visible in the absence of data in the field (across all rows in the data item). In this case, you can enclose that field in the table header with the **Hide Empty Table Column** control. For datasets where no values exist for that field, columns that include the filed are removed from the rendered report at runtime.
+Suppose you have a data item in the dataset, where no table header and table column should be visible in the absence of data in the field (across all rows in the data item). In this case, you can enclose that field in the table header with the **Hide Empty Table Column** control. For datasets where no values exist for that field, columns that include the field are removed from the rendered report at runtime.
 
 A use case for this layout control is discounts, where you want to remove the discount column from the invoice if no discount is applied.
 
@@ -243,7 +243,7 @@ A use case for this layout control is discounts, where you want to remove the di
 
 The RDLC layout for report 406 **Purchase - Invoice** has a table with a **Discount %** column. The demonstration data for Cronus company should have plenty of purchase invoices without any discount.
 
-In this exercise, create an empty Word layout for report 406. Then, recreate the table from the RDLC layout but use the **Hide Empty Table Column** control to remove the *Discount %* column in the rendered report no discount is given.
+In this exercise, create an empty Word layout for report 406. Then, recreate the table from the RDLC layout but use the **Hide Empty Table Column** control to remove the *Discount %* column in the rendered report when no discount is given.
 
 ## Related information
 
