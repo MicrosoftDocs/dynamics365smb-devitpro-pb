@@ -20,9 +20,10 @@ The Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] Word add-in incl
 There are two versions of the Dynamics 365 Business Central Word add-in available:
 
 - **Dynamics 365 Business Central Word Add-in** - The stable release version with core functionality.
-- **Dynamics 365 Business Central Word Add-in (preview)** - Includes new features not yet in the stable release.
+- **Dynamics 365 Business Central Word Add-in (preview)** - Includes new features not yet in the stable release. The preview version allows you to try upcoming features and provide feedback. Preview features are subject to change and might not be included in future release versions.
 
-The preview version allows you to try upcoming features and provide feedback. Preview features are subject to change and might not be included in future release versions.
+> [!TIP]
+> You can install both versions in Word, and switch between them as you like.
 
 ## Install the add-in
 
