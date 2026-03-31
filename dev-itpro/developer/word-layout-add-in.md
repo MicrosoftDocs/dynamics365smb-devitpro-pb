@@ -43,7 +43,7 @@ There are two versions of the Dynamics 365 Business Central Word add-in availabl
 > [!IMPORTANT]
 > You must use the **Update and Export Layout** action to ensure the document includes the layout metadata required by the Word add-in. Without it, you get a message about it when you try to use the add-in in Word.
 
-## Add data using the task pane
+## Add Data
 
 [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
@@ -91,7 +91,7 @@ In this exercise, you create a Word layout that lists customers. This exercise c
 
 #### Step 2: Customize the layout using the Word add-in
 
-If you are using the Dynamics 365 Business Central Word Add-in (preview) version, there are two ways to complete this task. If you not using the preview version, use the data task pane.  
+If you're using the Dynamics 365 Business Central Word Add-in (preview) version, there are two ways to complete this task. If you not using the preview version, use the data task pane.  
 
 # [Using data task pane](#tab/taskpane)
 
@@ -131,11 +131,11 @@ If you are using the Dynamics 365 Business Central Word Add-in (preview) version
 1. Under **Repeater fields**, add the columns for the list
 
    1. Set **Field** to `Customer_No_` and **Headline** to `None`.
-   1. Select the ***Add Column** to add a new columns for `CustAddr_1_`, `Customer__Salesperson_Code`, and `Customer_Balance_LCY` fields.
+   1. Select the ***Add Column** to add new columns for `CustAddr_1_`, `Customer__Salesperson_Code`, and `Customer_Balance_LCY` fields.
 
    :::image type="icon" source="media/word-add-in-insert-table.png":::
 
-   Include header row include a header row in the table with headlines. Auto-select headline automatically set columns headlines by matching field labels that end with "Caption".   
+   **Include header row** adds a header row in the table with headlines. **Auto-select headline** automatically set columns headlines by matching field labels that end with "Caption".
 1. Select **Create table** to insert the table in the layout.
 1. Save the Word file.
 
@@ -148,9 +148,9 @@ If you are using the Dynamics 365 Business Central Word Add-in (preview) version
 1. Browse for the Word layout document you modified and select **Open** to import the layout.
 1. Select the **Run Report** > **Print** to test the layout.
 
-## Insert table (preview)
+## Insert Table (preview)
 
-[This feature is only available in Dynamics 365 Business Central Word Add-in (preview). This is prerelease documentation and is subject to change.]
+[This feature is only available in Dynamics 365 Business Central Word Add-in (preview) version. This is prerelease documentation and is subject to change.]
 
 The **Insert table** control provides an easier alternative to the task pane for displaying records in rows. Instead of creating the table manually, adding a repeater, and then adding field controls to each column, the **Insert table** control lets you design the table from a single dialog, where you:
 
