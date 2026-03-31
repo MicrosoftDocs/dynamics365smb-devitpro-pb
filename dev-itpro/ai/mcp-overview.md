@@ -59,18 +59,9 @@ MCP clients authenticate with Business Central through a registered application 
 
 ### How authentication works
 
-The Business Central MCP server acts as a bridge between MCP clients and your Business Central data. Business Central MCP authentication follows the standard [MCP authentication specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) with Microsoft Entra ID as the authorization server:
+The Business Central MCP server acts as a bridge between MCP clients and your Business Central data. Business Central MCP authentication follows the standard [MCP authentication specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) using OAuth 2.0 Authorization Code flow with [PKCE](https://datatracker.ietf.org/doc/html/rfc7636) and Microsoft Entra ID as the authorization server. All operations are performed with your user identity and permissions, ensuring audit trails show who performed each action.
 
 ![Shows how MCP clients connect to Business Central](../developer/media/mcp-auth-flow.svg)
-
-1. The MCP client sends an unauthenticated request to the MCP server.
-1. The server responds with `401 Unauthorized` and a `WWW-Authenticate` header pointing to the protected resource metadata (PRM) endpoint.
-1. The client retrieves the PRM document from `https://mcp.businesscentral.dynamics.com/.well-known/protected-resource-metadata`, which identifies Microsoft Entra ID as the authorization server.
-1. The client performs the OAuth 2.0 authorization code flow with [Proof Key for Code Exchange (PKCE - RFC 7636)](https://datatracker.ietf.org/doc/html/rfc7636):
-    - Generates a `code_verifier` and `code_challenge`
-    - Redirects the user to the Microsoft Entra ID authorization endpoint
-    - Exchanges the returned authorization code (along with the `code_verifier`) for an access token
-1. The client includes the access token in subsequent requests to the MCP server, making authorized requests on the user's behalf
 
 ## Next steps
 
