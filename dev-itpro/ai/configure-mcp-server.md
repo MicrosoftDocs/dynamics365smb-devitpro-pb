@@ -169,7 +169,7 @@ The following tools are made available in the server:
 
 - `ListAPIV2 - Customer_PAG30009`
 - `CreateAPIV2 - Customer_PAG30009`
-- `ListUpdate APIV2 - Customer_PAG30009`
+- `ListUpdateAPIV2 - Customer_PAG30009`
 - `DeleteAPIV2 - Customer_PAG30009`
 
 These tools appear in the MCP server and can be added to agents in Copilot Studio, allowing agents to perform the permitted operations on the specified API page objects.

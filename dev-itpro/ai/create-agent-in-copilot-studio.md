@@ -23,7 +23,7 @@ Copilot Studio is a graphical, low-code tool for building agents and agent flows
 
 Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules.
 
-[![Shows how agents work between Business Central and Coplito Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
+[![Shows how agents work between Business Central and Copilot Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
 After you create an agent, you can publish agents into multiple platforms or channels, like live websites and Microsoft 365 Copilot, or messaging platforms like Teams and Facebook.
 
@@ -161,7 +161,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
    1. Go to the **Tools** section to view the individual tools (APIs) available to the agent, based on the **MCP Server Configuration** field. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in the list header to make sure the view is up-to-date.
 
-      - If you didn't specify a configuration, the list shows only the system tools: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. Read-only tools are available to the agent for all API pages in Business Central but they're discovered dynamically and therefore not listed.|
+      - If you didn't specify a configuration, the list shows only the system tools: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. Read-only tools are available to the agent for all API pages in Business Central but they're discovered dynamically and therefore not listed.
       - If you specified a configuration that uses dynamic tool mode, the list shows the system tools: (`bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`). Tools for API pages defined in the configuration are available to the agent at runtime but aren't listed.
       - If you specified a configuration that doesn't use dynamic tool mode, the list includes tools for API pages included in the configuration , so you can review and manage them individually.
 
@@ -171,7 +171,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
    1. Select **Test** in the upper-right corner of any page to open the **Test your agent** pane.
    1. In the field at the bottom, enter text that explains what you want the agent to do.
 
-   Learn more in [Test you agent](/microsoft-copilot-studio/authoring-test-bot).
+   Learn more in [Test your agent](/microsoft-copilot-studio/authoring-test-bot).
 1. Publish and deploy the agent.
 
    Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
@@ -181,7 +181,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
 - To improve results, try these options:
 
   - Use a version of GTP-5 as the model
-  - Give the instructions to the agent.
+  - Give instructions to the agent.
   
     Instructions are the directions and parameters an agent follows. Agents depend on instructions to:
 

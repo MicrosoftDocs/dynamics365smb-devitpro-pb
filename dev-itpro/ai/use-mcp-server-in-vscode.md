@@ -1,5 +1,5 @@
 ---
-title: onnect to Business Central MCP Server with Visual Studio Code
+title: Connect to Business Central MCP Server with Visual Studio Code
 description: Learn how to set up and use the Business Central MCP server in Visual Studio Code to interact with your Business Central data through natural language.
 author: jswymer
 ms.author: jswymer
@@ -77,7 +77,7 @@ Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Cen
 
 1. In the toolbar that appears under `"servers":` line, select **Start** to start the server.
 
-   ![Shows the MCP server toolbar in the mcp.json file in Visiual Studio Code](../developer/media/vs-code-mcp-toolbar.png )
+   ![Shows the MCP server toolbar in the mcp.json file in Visual Studio Code](../developer/media/vs-code-mcp-toolbar.png )
 
    When started, the text changes to `Running`.
 
