@@ -38,7 +38,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Transfer journal line descriptions to bank statements for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
 ||[Use carbon footprint with OIOUBL e-invoicing format](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-carbon-footprint-oioubl-e-invoicing-format)|General availability|
 ||[Use e-invoice formats for service invoices in Germany](/dynamics365/business-central/localfunctionality/germany/germany-einvoicing)|Public preview|
-|Development|Allow developers to define data analysis definitions in their apps|General availability|
+|Development|[Allow developers to define data analysis definitions in their apps](../developer/devenv-analysis-view-package.md)|General availability|
 ||[Download symbols from NuGet feed](../developer/devenv-al-extension-configuration.md)|General availability|
 ||[Evaluate AL coding agents with BC-Bench](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench)|General availability|
 ||[Get more secure outgoing HTTP calls by default](../developer/devenv-httpclient.md#anti-ssrf-validation-for-al-httpclient)|General availability|
