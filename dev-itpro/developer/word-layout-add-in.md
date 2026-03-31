@@ -15,14 +15,23 @@ ms.custom: bap-template
 
 The Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] Word add-in includes several controls that you can use to change the behavior of Word layouts for document reports. A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
 
+## Word add-in versions
+
+There are two versions of the Dynamics 365 Business Central Word add-in available:
+
+- **Dynamics 365 Business Central Word Add-in** - The stable release version with core functionality.
+- **Dynamics 365 Business Central Word Add-in (preview)** - Includes new features not yet in the stable release.
+
+The preview version allows you to try upcoming features and provide feedback. Preview features are subject to change and might not be included in future release versions.
+
 ## Install the add-in
 
 1. On the **Home** tab, select **Get Add-ins**.
-2. In the **Search** field, enter *Dynamics 365 Business Central Word Add-in*, then select **Add** next to the add-in when it appears.
+1. In the **Search** field, enter *Dynamics 365 Business Central Word Add-in*, then select **Add** next to the add-in version you want.
 
-    The **Business Central** tab appears in the ribbon.
+   The **Business Central** tab appears in the ribbon.
 
-## Export Word layout from Business Central
+## Export the Word layout from Business Central
 
 1. Sign in to Business Central.
 1. [!INCLUDE[open-report-layouts-page](includes/open-report-layouts-page.md)]
