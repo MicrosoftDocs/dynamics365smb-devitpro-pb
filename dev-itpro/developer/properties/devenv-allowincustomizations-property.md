@@ -27,7 +27,7 @@ Specifies whether the fields declared in this object can be used as source expre
 |**Always**|runtime version 12.0|The field can be used as source expression for new page fields in page customizations, but it cannot be made editable.|
 |**Never**|runtime version 12.0|The field cannot be used as source expression for new page fields in page customizations.|
 |**AsReadOnly**|runtime version 16.0|The field can be used as source expression for new page fields in page customizations, but it cannot be made editable.|
-|**AsReadWrite**|runtime version 16.0|The field cannot be used as source expression for new page fields in page customizations.|
+|**AsReadWrite**|runtime version 16.0|The field can be used as source expression for new page fields in page customizations.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
