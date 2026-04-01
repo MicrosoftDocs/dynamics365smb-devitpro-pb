@@ -6,7 +6,7 @@ ms.author: kepontop
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.collection: 
-ms.date: 09/29/2025
+ms.date: 04/01/2026
 ms.custom: bap-template
 ---
 # Use the Word add-in for report layouts
@@ -62,11 +62,11 @@ The Word add-in includes a task pane that lets you insert mapped fields from a r
 1. In the **Business Central** task pane, select the field or table, and then select **Add field** or **Add repeater**.
 
    > [!TIP]
-   > A repeater is layout control that renders a collection of records as repeating rows, where each row represents one record and each column represents a field. It's the core control used to show lists of data.
+   > A repeater is a layout control that renders a collection of records as repeating rows, where each row represents one record and each column represents a field. It's the core control used to show lists of data.
 
 ### Exercise: Create a simple customer list layout
 
-In this exercise, you create a Word layout that lists customers. This exercise creates the layout based on report 101 Customer List. The layout lists customers in a table with columns for customer number, customer name, sales person code, and balance.
+In this exercise, you create a Word layout that lists customers. This exercise creates the layout based on report 101 Customer List. The layout lists customers in a table with columns for customer number, customer name, salesperson code, and balance.
 
 #### Step 1: Create and export a blank layout in Business Central
 
@@ -135,7 +135,7 @@ If you're using the Dynamics 365 Business Central Word Add-in (preview) version,
 
    :::image type="icon" source="media/word-add-in-insert-table.png":::
 
-   **Include header row** adds a header row in the table with headlines. **Auto-select headline** automatically set columns headlines by matching field labels that end with "Caption".
+   **Include header row** adds a header row in the table with headlines. **Auto-select headline** automatically sets column headlines by matching field labels that end with "Caption".
 1. Select **Create table** to insert the table in the layout.
 1. Save the Word file.
 
@@ -207,7 +207,7 @@ For this behavior, you can use the **Hide Field if Zero** control.
 1. In Word, select the field, which can be standalone field or included in a repeater.
 1. In the **Business Central** tab, select **Hide if empty** > **Hide Field if Zero**.
 
-When the report is run, zero values to a blank string.
+When the report is run, zero values are converted to a blank string.
 
 ## Hide Empty Table
 
