@@ -525,7 +525,7 @@
 ### Ready to Go
 #### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
 #### [Get started with building apps](developer/readiness/get-started.md)
-#### [Business Central on Microsoft training](/learn/dynamics366/business-central?WT.mc_id=dyn365bc_landingpage-docs)
+#### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### Marketplace validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
