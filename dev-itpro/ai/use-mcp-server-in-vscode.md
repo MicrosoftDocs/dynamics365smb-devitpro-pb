@@ -81,7 +81,7 @@ Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Cen
 
    When started, the text changes to `Running`.
 
-1. Go to the next section to verify the connection
+1. Go to the next section to verify the connection.
 
 ## Use Business Central MCP Server with agent
 
