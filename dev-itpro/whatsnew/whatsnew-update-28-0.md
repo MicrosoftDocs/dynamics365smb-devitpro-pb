@@ -2,7 +2,7 @@
 title: What's New or Changed in Business Central 2026 release wave 1 - Update 28.0 preview
 description: Get an overview of new and changed capabilities in the 28.0 update of Business Central online, which is part of 2026 release wave 1.
 ms.author: jswymer
-ms.date: 03/30/2026
+ms.date: 04/01/2026
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
