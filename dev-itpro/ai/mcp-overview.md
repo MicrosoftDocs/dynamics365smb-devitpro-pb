@@ -59,15 +59,15 @@ MCP clients authenticate with Business Central through a registered application 
 
 ### How authentication works
 
-The Business Central MCP server acts as a bridge between MCP clients and your Business Central data. Business Central MCP authentication follows the standard [MCP authentication specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) using OAuth 2.0 Authorization Code flow with [PKCE](https://datatracker.ietf.org/doc/html/rfc7636) and Microsoft Entra ID as the authorization server. All operations are performed with your user identity and permissions, ensuring audit trails show who performed each action.
+The Business Central MCP server acts as a bridge between MCP clients and your Business Central data. Business Central MCP authentication follows the standard [MCP authentication specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) using OAuth 2.0 Authorization Code flow with [Proof Key for Code Exchange (PKCE)](https://datatracker.ietf.org/doc/html/rfc7636) and Microsoft Entra ID as the authorization server. The MCP server exposes Protected Resource Metadata (PRM) to help clients discover the authorization endpoints and required parameters for authentication. All operations are performed with your user identity and permissions, ensuring audit trails show who performed each action.
 
-![Shows how MCP clients connect to Business Central](../developer/media/mcp-auth-flow.svg)
+![Shows the authentication flow between MCP clients and Business Central](../developer/media/mcp-auth-flow.svg)
 
 ## Next steps
 
 - [Configure Business Central MCP Server](configure-mcp-server.md)
 - [Connect with Copilot Studio](create-agent-in-copilot-studio.md)
-- [Connect with Visual Code](use-mcp-server-in-vscode.md)
+- [Connect with Visual Sudio Code](use-mcp-server-in-vscode.md)
 - [Connect with non-Microsoft MCP clients](use-mcp-server-non-microsoft.md)
 
 ## Related information

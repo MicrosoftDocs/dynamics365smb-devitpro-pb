@@ -1851,7 +1851,7 @@
 ## Local functionality
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
-### [Deprecated features in the Belgian Version](upgrade/devenv-deprecated-features-be.md)
+### [Deprecated features in the Belgian Version](upgrade/deprecated-features-be.md)
 ### [Deprecated features in the Canadian Version](upgrade/deprecated-features-ca.md)
 ### [Deprecated features in the Czech Version](upgrade/deprecated-features-cz.md)
 ### [Deprecated features in the Dutch Version](upgrade/deprecated-features-nl.md)
