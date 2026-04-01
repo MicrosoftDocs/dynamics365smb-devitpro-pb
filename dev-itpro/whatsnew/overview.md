@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 03/03/2026
+ms.date: 03/09/2026
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -29,17 +29,13 @@ Minor updates are released monthly and can include new release wave features, re
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
-|28.0 (preview) |Application Build 28.0 Platform Build 28.0|March 2026|[Update 28.0 for Business Central 2026 release wave 1 (preview)](whatsnew-update-28-0.md)|
+|28.0|Application Build 28.0 Platform Build 28.0|April 2026|[Update 28.0 for Business Central 2026 release wave 1](whatsnew-update-28-0.md)|
 |27.5|Application Build 27.5 Platform Build 27.0|March 2026|[Update 27.5 for Business Central 2025 release wave 2](whatsnew-update-27-5.md)|
 |27.4|Application Build 27.4 Platform Build 27.0|February 2026|[Update 27.4 for Business Central 2025 release wave 2](whatsnew-update-27-4.md)|
-|27.3|Application Build 27.3 Platform Build 27.0|January 2026|[Update 27.3 for Business Central 2025 release wave 2](whatsnew-update-27-3.md)|
-|27.2|Application Build 27.2 Platform Build 27.0|December 2025|[Update 27.2 for Business Central 2025 release wave 2](whatsnew-update-27-2.md)|
-|27.1|Application Build 27.1 Platform Build 27.0|November 2025|[Update 27.1 for Business Central 2025 release wave 2](whatsnew-update-27-1.md)|
-|27.0|Application Build 27.0 Platform Build 27.0|October 2025|[Update 27.0 for Business Central 2025 release wave 2](whatsnew-update-27-0.md)|
 
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 
-For earlier versions, visit the [Updates for earlier major versions](whatsnew-update-26-5.md) section.
+For earlier versions, visit the [Updates for earlier major versions](whatsnew-update-27-3.md) section.
 
 ## Get the latest version
 

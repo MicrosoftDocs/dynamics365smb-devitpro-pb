@@ -5,12 +5,15 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.collection: 
-ms.date: 11/11/2025
+ms.date: 03/30/2026
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ms.search.form: 8350, 8351, 
 ---
 # Create agents in Copilot Studio that connect to Business Central
+
+> **APPLIES TO:** Business Central online
 
 This article explains how to build, configure, and publish agents in Copilot Studio that integrate with Business Central using either the Business Central Connector or the Business Central MCP Server.
 
@@ -20,7 +23,7 @@ Copilot Studio is a graphical, low-code tool for building agents and agent flows
 
 Business Central provides two model‑aware tools that agents can use to interact directly with Business Central environments: Business Central MCP (Model Context Protocol) server and Business Central Connector for Power Platform. These tools let agents read and write records, call custom APIs exposed by AL extensions, and apply server‑side business logic such as pricing, discounts, and validation rules.
 
-[![Shows how agents work between Business Central and Coplito Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
+[![Shows how agents work between Business Central and Copilot Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
 After you create an agent, you can publish agents into multiple platforms or channels, like live websites and Microsoft 365 Copilot, or messaging platforms like Teams and Facebook.
 
@@ -44,7 +47,7 @@ The connector abstracts away many of the API details, making it easier to use bu
 
 Agents using the MCP server typically invoke HTTP operations (GET, POST, PATCH, DELETE) against Business Central endpoints, allowing for full customization and extensibility.
 
-**Choosing the connector and MCP Server:** Your choice depends on the agent’s requirements, the level of customization needed, and your familiarity with Business Central APIs. In short:
+**Choosing the connector and MCP Server:** Your choice depends on the agent's requirements, the level of customization needed, and your familiarity with Business Central APIs. In short:
 
 - Connector: For standard integration and automation
 - MCP server: For AI agents only
@@ -87,7 +90,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
    1. Select **Add to agent**. You return to the agent **Overview** tab.
    1. Repeat to add the connector action `Create record (V3)`. This agent uses this action to create a Customer record.
 
-   Learn more in [Use connectors in Copilot Studio](/microsoft-copilot-studio/advanced-connector).
+   Learn more in [Use connectors in Copilot Studio](/microsoft-copilot-studio/advanced-connectors).
 
 1. Configure the tools.
 
@@ -132,17 +135,13 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 
 ## Create agents that connect to Business Central MCP Server
 
-[!INCLUDE [preview-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
-
 Follow these steps to create an agent that connects to the Business MCP server.
 
 1. Create new or open existing agent.
 
    1. Sign in to [Copilot Studio](https://copilotstudio.microsoft.com/).
    1. In the left-side navigation pane, select **Agents**.
-   1. Select the agent you want to modify or select **New agent** to create a new agent.
+   1. Select the agent you want to modify or select **Create a blank agent** to create a new agent from scratch.
 
    Learn more about creating agents in [Create an agent in Copilot Studio](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-an-agent).
 
@@ -151,7 +150,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
    1. On the **Tools** tab of the agent page, select **+ Add a tool**.
    1. Search for and select **Dynamics 365 Business Central MCP Server (Preview)**.
    1. If the **Connection** box displays the `Not connected`, select the box, select **Create new connection** and sign in to Business Central with a valid account.
-   1. Select **Add and configure** to return to the **Tools** tab. If you select **Add agent**, you configure it later by opening the **Tools** tab.
+   1. Select **Add and configure** to return to the **Tools** tab.
    1. In **Inputs** section of the **Tools** tab, configure the MCP server to connect Business Central by setting the following fields.
 
       |Field|Value|
@@ -162,9 +161,9 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
    1. Go to the **Tools** section to view the individual tools (APIs) available to the agent, based on the **MCP Server Configuration** field. Select the refresh icon :::image type="icon" source="../developer/media/refresh-icon-copilot-studio.png"::: in the list header to make sure the view is up-to-date.
 
-      - If you didn't specify a configuration: the list shows only the standard server actions `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. Read-only tools are available to the agent for all API pages in Business Central but they're discovered dynamically and therefore not listed.|
-      - If you specified a configuration that uses dynamic tool mode: the list shows the standard actions (`bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`). Tools for API pages defined in the configuration are available to the agent at runtime but aren't listed.
-      - If you specified a configuration that doesn't use dynamic tool mode: the list includes tools for API pages included in the configuration, so you can review and manage them individually.
+      - If you didn't specify a configuration, the list shows only the system tools: `bc_actions_search`, `bc_actions_describe`, and `bc_actions_invoke`. Read-only tools are available to the agent for all API pages in Business Central but they're discovered dynamically and therefore not listed.
+      - If you specified a configuration that uses dynamic tool mode, the list shows the system tools: (`bc_actions_search`, `bc_actions_describe`, `bc_actions_invoke`). Tools for API pages defined in the configuration are available to the agent at runtime but aren't listed.
+      - If you specified a configuration that doesn't use dynamic tool mode, the list includes tools for API pages included in the configuration , so you can review and manage them individually.
 
       Learn more about tools and dynamics tool mode in [Create MCP Server configurations](configure-mcp-server.md#create-mcp-server-configurations) and [How API object entries in Business Central map to MCP server tools](configure-mcp-server.md#how-api-page-object-entries-map-to-mcp-server-tools).
 1. Select **Save**.
@@ -172,7 +171,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
    1. Select **Test** in the upper-right corner of any page to open the **Test your agent** pane.
    1. In the field at the bottom, enter text that explains what you want the agent to do.
 
-   Learn more in [Test you agent](/microsoft-copilot-studio/authoring-test-bot).
+   Learn more in [Test your agent](/microsoft-copilot-studio/authoring-test-bot).
 1. Publish and deploy the agent.
 
    Learn more in [Publish agents](/microsoft-copilot-studio/publication-fundamentals-publish-channels).
@@ -182,7 +181,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
 - To improve results, try these options:
 
   - Use a version of GTP-5 as the model
-  - Give the instructions to the agent.
+  - Give instructions to the agent.
   
     Instructions are the directions and parameters an agent follows. Agents depend on instructions to:
 
@@ -192,7 +191,7 @@ Follow these steps to create an agent that connects to the Business MCP server.
 
       To add instructions, go to the **Overview** tab on the agent page, and add instructions in the **Instructions** section. For example, try adding:
 
-      ```
+      ```text
       You are a Business Central agent. The user will ask a question, or ask you to perform a task or retrieve data. Start by outlining a plan of what you have and what you must do and then use the available tools to retrieve the relevant information.
    
       Clearly show your reasoning, before trying to invoke any tool. 

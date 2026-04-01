@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0145"
-description: "Assignment is not valid for arrays."
+description: "Direct assignment is not valid for arrays."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Assignment is not valid for arrays.
+Direct assignment is not valid for arrays. Use array indexing to assign individual elements or a loop to copy elements.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
