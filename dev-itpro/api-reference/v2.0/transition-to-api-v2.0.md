@@ -1,7 +1,7 @@
 ---
 title: Transitioning from API v1.0 to API v2.0
 description: Reference content for transitioning Dynamics 365 Business Central v1.0 API to v2.0.
-author: OnatBuyukakkus
+author: onbuyuka
 ms.reviewer: solsen
 ms.topic: get-started
 ms.devlang: al

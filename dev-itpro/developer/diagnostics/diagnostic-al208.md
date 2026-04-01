@@ -2,7 +2,7 @@
 title: "Compiler Error AL0208"
 description: "The expression must be of Boolean type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The expression must be of Boolean type.
+The expression must be of Boolean type. Use a comparison or boolean expression.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0321"
 description: "Variable {0} cannot be included in the data set."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Variable {0} cannot be included in the data set.
+Variable {0} cannot be included in the data set. Only simple types and record fields are allowed in report datasets.
 
 
 ## Description

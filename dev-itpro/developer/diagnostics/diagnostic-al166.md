@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0166"
-description: "Argument {0}: must be a member."
+description: "Argument {0}: must be a member (field, property, or variable), not an expression or constant."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Argument {0}: must be a member.
+Argument {0}: must be a member (field, property, or variable), not an expression or constant.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

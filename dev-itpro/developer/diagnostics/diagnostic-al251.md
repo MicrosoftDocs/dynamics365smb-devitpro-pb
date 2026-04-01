@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0251"
 description: "Application object '{0}' is missing."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Application object '{0}' is missing.
+Application object '{0}' is missing. Verify the object exists and is included in the project dependencies.
 
 
 ## Description
