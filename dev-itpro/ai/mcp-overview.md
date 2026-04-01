@@ -67,7 +67,7 @@ The Business Central MCP server acts as a bridge between MCP clients and your Bu
 
 - [Configure Business Central MCP Server](configure-mcp-server.md)
 - [Connect with Copilot Studio](create-agent-in-copilot-studio.md)
-- [Connect with Visual Sudio Code](use-mcp-server-in-vscode.md)
+- [Connect with Visual Studio Code](use-mcp-server-in-vscode.md)
 - [Connect with non-Microsoft MCP clients](use-mcp-server-non-microsoft.md)
 
 ## Related information
