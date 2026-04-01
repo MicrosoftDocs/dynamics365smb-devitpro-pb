@@ -1,0 +1,1 @@
+**Applies to:** AL Language extension 17.0 and later

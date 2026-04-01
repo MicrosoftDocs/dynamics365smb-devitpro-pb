@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0178"
-description: "A 'FILTER' keyword or an identifier is expected."
+description: "A 'FILTER' keyword or an identifier is expected in the filter expression."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-A 'FILTER' keyword or an identifier is expected.
+A 'FILTER' keyword or an identifier is expected in the filter expression. Use FILTER(...) or a field name.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

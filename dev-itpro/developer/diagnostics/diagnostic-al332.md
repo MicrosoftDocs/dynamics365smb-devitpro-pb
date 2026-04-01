@@ -2,7 +2,7 @@
 title: "Compiler Error AL0332"
 description: "The control {0} must be of type {1}."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The control {0} must be of type {1}.
+The control {0} must be of type {1}. Change the control type or use a different control.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

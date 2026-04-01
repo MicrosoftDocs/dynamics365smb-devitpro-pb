@@ -66,10 +66,10 @@ The following table shows the minimum system requirements for customizing or ext
 
 |Specification|Requirement|
 |-----|-----|
-|Supported operating systems|<ul><li>Windows Server 2025<li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows 11</li>/ul>Learn more about the supported versions and their lifecycles at [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
+|Supported operating systems|[!INCLUDE[supported-windows-versions](../developer/includes/supported-windows-versions.md)]|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL Language extension for Microsoft Dynamics 365 Business Central](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: four cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
-|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2021 or later</li></ul></li></ul>|  
+|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 (version 16.11) with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2021 or later</li></ul></li></ul>|  
 
 Learn more in [Get Started with AL](../developer/devenv-get-started.md).
 
@@ -79,28 +79,12 @@ Learn more in [Get Started with AL](../developer/devenv-get-started.md).
 
 The following table shows the minimum system requirements for [!INCLUDE[server](../developer/includes/server.md)].  
 
-<!-- Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2. 
-
-From version 25, Windows 10 will only support Version 22H2. 
-
-Windows 10, version 22H2 is the last feature update released for Windows 10 and will be serviced with monthly updates through October 14, 2025 after which it is no longer supported. So, we need to remove this for 2026w2.
-
-
-For Windows 11, https://learn.microsoft.com/en-gb/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-11-
-
-Windows 11 Enterprise, or Education: 36 months from release date
-Windows 11 Pro, or Education: 24 months from release date
-
-2025w1 <-> 22H1 (36 months)
-2025w1 <-> 23H1 (24 months)
--->
-
 |Specification|Requirement|  
 |-----|-----|  
-|Supported operating systems|<ul><li>Windows 11 Enterprise, or Education \(64-bit edition, version 22H1 and later.\)</li><li>Windows 11 Pro \(64-bit edition, version 23H1 and later.\)</li><li>Windows Server 2025 (Datacenter, Standard)</li><li>Windows Server 2022 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
+|Supported operating systems|[!INCLUDE[supported-windows-versions](../developer/includes/supported-windows-versions.md)]|
 |Hardware resources|<ul><li>Hard disk space: 100 GB</li><li>Memory:<br /> 16 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, refer to [Microsoft Dynamics 365 for Sales Integration Requirements](#CRM).|  
-|Additional software|<ul><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li></ul>.|  
+|Additional software|<ul><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET Windows Server Hosting 6.0.15</li><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Foundation*.</li><li>Report Builder for SQL Server 2019.<br><br> If Report Builder for SQL Server 2016 is already installed, it will be updated to Report Builder for SQL Server 2019.</li></ul></li></ul>|  
 
 \* Starting with update 18.1, Windows Identity Foundation is added to the product by Nuget. It's not installed by Setup.  
@@ -111,7 +95,7 @@ Windows 11 Pro, or Education: 24 months from release date
 
 |Specification|Requirement|  
 |----|----|  
-|Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education  \(64-bit edition, version 22H2 and later.\)</li><li>Windows Server 2025 (Datacenter, Standard)</li><li>Windows Server 2022 (Datacenter, Standard)</li></ul>Learn more about the supported versions and their lifecycles at [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!--Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2.-->|
+|Supported operating systems|[!INCLUDE[supported-windows-versions](../developer/includes/supported-windows-versions.md)]|
 |Web server|<ul><li>Internet Information Services 10.|
 |Additional software|<ul><li>Microsoft .NET 8.0</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Windows Server Hosting 6.0.15.</li><li>Microsoft .NET 8.0</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>Learn more about configuring IIS in [Configuring IIS](configure-iis.md)</li></ul>|  
@@ -162,7 +146,7 @@ The following table shows the product version requirements for integrating Busin
 
 <sup>2</sup> Requires the registration of a third party application in Azure AD. Learn more in [Register an application in Azure AD for connecting from Business Central to Dataverse](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#to-register-an-application-in-azure-ad-for-connecting-from-business-central-to-dataverse).
 
-<sup>3</sup> AD, IFD, and OAuth types are supported with on-premises version of Dynamics 365 Sales. OAuth and Office 365 (legacy – basic) and Office 365 (modern – MFA) authentication are supported for online versions of Dynamics 365 Sales. Learn more about authentication types at [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx). 
+<sup>3</sup> AD, IFD, and OAuth types are supported with on-premises version of Dynamics 365 Sales. OAuth and Office 365 (legacy – basic) and Office 365 (modern – MFA) authentication are supported for online versions of Dynamics 365 Sales. Learn more about authentication types at [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).
 
 ## Related information
 

@@ -2,9 +2,9 @@
 title: Auditing events in Microsoft Purview
 description: Get an overview of the signals Business Central emits to Microsoft Purview.
 author: jobulsin
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: concept-article
-ms.date: 01/22/2025
+ms.date: 03/27/2026
 ms.author: jobulsin
 ---
 
@@ -1239,6 +1239,131 @@ You can audit the activities in the table below by filtering to the `Configured 
             <td>UserSecurityId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
+        <tr>
+            <td rowspan=3>Agent configuration changed</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AgentAppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AgentAppPublisher</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td rowspan=5>Agent state changed</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AgentUserDisplayName</td>
+            <td>Agent Name</td>
+        </tr>
+        <tr>
+            <td>AgentAppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>PreviousAgentState</td>
+            <td>Enabled</td>
+        </tr>
+        <tr>
+            <td>NewAgentState</td>
+            <td>Disabled</td>
+        </tr>
+        <tr>
+            <td rowspan=4>User-agent interaction</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>InteractionType</td>
+            <td>Review</td>
+        </tr>
+        <tr>
+            <td>AgentAppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AgentAppPublisher</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td rowspan=6>Agent action executed</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>ActionName</td>
+            <td>CreateRecord</td>
+        </tr>
+        <tr>
+            <td>TargetElement</td>
+            <td>Customer</td>
+        </tr>
+        <tr>
+            <td>OperationSucceeded</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>AgentAppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AgentAppPublisher</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td rowspan=5>Draft message created</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>MessageContent</td>
+            <td>Draft message text</td>
+        </tr>
+        <tr>
+            <td>MessageReceiver</td>
+            <td>user@contoso.com</td>
+        </tr>
+        <tr>
+            <td>AgentAppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AgentAppPublisher</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td rowspan=7>Agent task status changed</td>
+            <td>AgentUserId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>PreviousStatus</td>
+            <td>InProgress</td>
+        </tr>
+        <tr>
+            <td>NewStatus</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>NeedsAttention</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>AgentTaskId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AgentAppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AgentAppPublisher</td>
+            <td>Microsoft</td>
     </tbody>
 </table>
 

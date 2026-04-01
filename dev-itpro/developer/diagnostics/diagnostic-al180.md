@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0180"
-description: "A 'FILTER' keyword is expected."
+description: "A 'FILTER' keyword is expected in this context."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-A 'FILTER' keyword is expected.
+A 'FILTER' keyword is expected in this context. Use FILTER(...) to specify filter conditions.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,15 +1,15 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
-## [Update 28.0 (preview)](whatsnew/whatsnew-update-28-0.md)
+## [Update 28.0](whatsnew/whatsnew-update-28-0.md)
 ## [Update 27.5](whatsnew/whatsnew-update-27-5.md)
 ## [Update 27.4](whatsnew/whatsnew-update-27-4.md)
-## [Update 27.3](whatsnew/whatsnew-update-27-3.md)
-## [Update 27.2](whatsnew/whatsnew-update-27-2.md)
-## [Update 27.1](whatsnew/whatsnew-update-27-1.md)
-## [Update 27.0](whatsnew/whatsnew-update-27-0.md)
 ## Updates for earlier major versions
+### [Update 27.3](whatsnew/whatsnew-update-27-3.md)
+### [Update 27.2](whatsnew/whatsnew-update-27-2.md)
+### [Update 27.1](whatsnew/whatsnew-update-27-1.md)
+### [Update 27.0](whatsnew/whatsnew-update-27-0.md)
 ### [Update 26.5](whatsnew/whatsnew-update-26-5.md)
 ### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
 ### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
@@ -75,6 +75,7 @@
 ## Learn
 ### [Discover all aka.ms links related to Business Central](developer/readiness/readiness-bcall.yml)
 ### [Resources for partners](developer/readiness/readiness-ready-to-go.md)
+### [Viva Engage for partners](developer/readiness/readiness-viva-engage-partners.md)
 ### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -534,8 +535,6 @@
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Get started with AL for on-premises
-#### [Get started with C/SIDE and AL side-by-side for on-premises](developer/devenv-get-started-al-for-onprem.md)
-#### [Run C/SIDE and AL side-by-side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Create runtime packages for Business Central on-premises](developer/devenv-creating-runtime-packages.md)
 
 ## Development environment
@@ -551,6 +550,7 @@
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
 #### [Optimize Visual Studio Code for AL development](developer/devenv-optimize-visual-studio-code.md)
 #### [Running a container-based development environment](developer/devenv-running-container-development.md)
+#### [Use GitHub Codespaces for AL development](developer/devenv-code-spaces-al.md)
 ### Configure projects and workspaces
 #### [Work with multiple AL project folders within one workspace](developer/devenv-multiroot-workspaces.md)
 #### [Work with multiple projects and project References](developer/devenv-work-workspace-projects-references.md)
@@ -570,6 +570,7 @@
 #### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Conditional breakpoints](developer/devenv-debugging-conditional-breakpoints.md)
+#### [Troubleshooting MCP Server for AL](developer/devenv-debug-mcp-server.md)
 #### [Attach and debug next](developer/devenv-attach-debug-next.md)
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
@@ -581,6 +582,7 @@
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
+#### [Run AL tests in Visual Studio Code](developer/devenv-test-explorer-vscode.md)
 #### [Test codeunits and test methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md)
 #### [Test runner codeunits](developer/devenv-testrunner-codeunits.md)
@@ -926,6 +928,7 @@
 #### Views
 ##### [Designing views](developer/devenv-views.md)
 ##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
+##### [Packaging analysis views](developer/devenv-analysis-view-package.md)
 
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
@@ -1515,9 +1518,13 @@
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
 ### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
-## Create agents that connect to Business Central
-### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## [Create agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## Integrate with Model Context Protocol (preview)
+### [MCP in Business Central overview](ai/mcp-overview.md)
+### [Configure Business Central MCP Server](ai/configure-mcp-server.md)
+### [Connect to MCP server with Copilot Studio](ai/create-agent-in-copilot-studio.md#create-agents-that-connect-to-business-central-mcp-server)
+### [Connect to MCP server with Visual Studio Code](ai/use-mcp-server-in-vscode.md)
+### [Connect to MCP server with non-Microsoft clients](ai/use-mcp-server-non-microsoft.md)
 ## Designing and coding agents (preview)
 ### [Overview](ai/ai-development-toolkit-landing-page.yml)
 ### [Designing and coding agents](ai/ai-development-toolkit-overview.md)
@@ -1874,6 +1881,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2026 release wave 1](deployment/system-requirements-business-central-v28.md)
 #### [2025 release wave 2](deployment/system-requirements-business-central-v27.md)
 #### [2025 release wave 1](deployment/system-requirements-business-central-v26.md)
 #### [2024 release wave 2](deployment/system-requirements-business-central-v25.md)
@@ -1891,21 +1899,22 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2026 release wave 1 on-premises updates](deployment/update-versions-28.md)
 #### [2025 release wave 2 on-premises updates](deployment/update-versions-27.md)
 #### [2025 release wave 1 on-premises updates](deployment/update-versions-26.md)
-#### [2024 release wave 2 on-premises updates](deployment/update-versions-25.md)
-#### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 ##### Versions no longer updated
+###### [2024 release wave 2 on-premises updates](deployment/update-versions-25.md)
+###### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 ###### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 ###### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 ###### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 ###### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
-###### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ###### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
 ###### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
 ###### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
 ###### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
 ###### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
+###### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ###### [October 2018 on-premises updates](deployment/update-versions-13.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -1977,6 +1986,7 @@
 #### [Optimizing SQL server performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility level](administration/optimize-sql-set-compatibility-level.md)
 #### [Using table partitioning and data compression](administration/using-sql-partitioning-and-compression.md)
+#### [Managing database indexes](/dynamics365/business-central/manage-indexes?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
 #### [Monitoring performance counters](administration/performance-counters.md)
@@ -2004,6 +2014,11 @@
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
 ### [Minor update compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+### Business Central 2026 release wave 1 (v28)
+#### [Overview of upgrade to v28](upgrade/upgrade-overview-v28.md)
+#### [Before upgrading to v28](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Upgrade to v28](upgrade/upgrade-unmodified-application-to-v28.md)
+#### [Installing v28 minor update](upgrade/upgrading-cumulative-update-v28.md)
 ### Business Central 2025 release wave 2 (v27)
 #### [Overview of upgrade to v27](upgrade/upgrade-overview-v27.md)
 #### [Before upgrading to v27](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -2083,12 +2098,9 @@
 ######## [Overview](developer/devenv-migrate-table-fields.md)
 ######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
 ######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-####### Data migration toolkit - India
-######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
 ##### Technical upgrade
 ###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v22.md)
-###### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
-###### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
+###### [From version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v22.md)
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
 #### Business Central 2022 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v21.md)
@@ -2126,7 +2138,7 @@
 ####### [Convert to AL](upgrade/devenv-code-conversion.md)
 ####### Migrating tables and fields between extensions
 ######## [Overview](developer/devenv-migrate-table-fields.md)
-######## [Moving fables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
 ######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ####### Data Migration Toolkit - India
 ######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
