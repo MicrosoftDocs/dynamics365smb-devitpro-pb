@@ -49,9 +49,9 @@ This step is typically done by a tenant admin. You can use the same app registra
    1. In the Add Redirect URI pane, enter the MCP client's redirect URI, for example `https://claude.ai/api/mcp/auth_callback`.
 
    Learn more in [How to add a redirect URI to your application](/entra/identity-platform/how-to-add-redirect-uri).
-1. Create a client secret for the registered application.
+1. Create a client secret for the registered application. Follow the general guidelines in [Add a client secret](/entra/identity-platform/how-to-add-credentials?tabs=client-secret).
 
-   Follow the general guidelines in [](/entra/identity-platform/how-to-add-credentials?tabs=client-secret) Add credentials to your web application.
+   This step might not be required for your MCP client. Consult your client's documentation for guidance.
 1. Add API permissions to Business Central
 
    1. Select **API permissions** > **+ Add permission**.
@@ -73,6 +73,7 @@ After an app is registered for MCP clients, you can connect clients to the Busin
 |---------|-------|
 | Business MCP server URL | `https://mcp.businesscentral.dynamics.com` |
 | Client ID | The application (client) ID of the registered app in Microsoft Entra used for authentication. See the section that follows.|
+| Client secret | The client secret on the registered app in Microsoft Entra. Not all clients require a secret.|
 | Authorization endpoint | `https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/authorize` |
 | Token endpoint | `https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/token` |
 | Scope | `https://mcp.businesscentral.dynamics.com/.default` |
