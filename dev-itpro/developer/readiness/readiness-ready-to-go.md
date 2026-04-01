@@ -11,16 +11,16 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The [!INCLUDE [prod_short](../includes/prod_short.md)] is in public preview. We need your help testing, providing feedback, and fine-tuning our upcoming release. Please report bugs and provide feedback on [aka.ms/BCPreviewBugs](https://aka.ms/BCPreviewBugs). Learn more in [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
+> Explore the Business Central Launch Edition (BCLE) 2026 release wave 1! BCLE is a comprehensive skilling experience designed to help partners stay up to date, aligned, and ready to deliver value faster with every release wave. Find the what's new videos at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
 
+- 40+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
+- 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
+- Have questions? Go to the new Business Central partner communities on Viva Engage and ask the product experts: [aka.ms/BCVivaEngage](https://aka.ms/BCVivaEngage)
 - Download [!INCLUDE [prod_short](../includes/prod_short.md)] icon source files: [aka.ms/BCicon](https://aka.ms/BCicon)
-- Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Edition 2026 release wave 1 'What's new' sessions: [aka.ms/BCLE](https://aka.ms/BCLE)
-- Download 'What's new' partner deck: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK) 
-- Download BCLE Highlight videos: [aka.ms/BCHighlights](https://aka.ms/BCHighlights) 
 - Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
 - Move your on-premises customers to the cloud, find resources here: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
@@ -161,7 +161,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
 - Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
 - Community group for questions and information about managing migrations to Business Central online: [aka.ms/BCCloudMigrationYammer](https://aka.ms/bccloudmigrationyammer) ([Learn more](../../join-viva-engage.md))
-- AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
+- AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Developing for Business Central in general
 
