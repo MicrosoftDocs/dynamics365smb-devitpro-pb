@@ -18,7 +18,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ## Hot topics right now
 
 - Download [!INCLUDE [prod_short](../includes/prod_short.md)] icon source files: [aka.ms/BCicon](https://aka.ms/BCicon)
-- Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Edition 2025 release wave 2 'What's new' sessions: [aka.ms/BCLE](https://aka.ms/BCLE)
+- Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Edition 2026 release wave 1 'What's new' sessions: [aka.ms/BCLE](https://aka.ms/BCLE)
 - Download 'What's new' partner deck: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK) 
 - Download BCLE Highlight videos: [aka.ms/BCHighlights](https://aka.ms/BCHighlights) 
 - Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
