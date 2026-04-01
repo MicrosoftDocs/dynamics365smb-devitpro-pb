@@ -88,8 +88,13 @@ Learn more about the MCP Server in [Model Context Protocol (MCP) in Business Cen
 Once the MCP server is configured, you can interact with Business Central through GitHub Copilot Chat.
 
 1. In Visual Studio Code, open the GitHub Copilot Chat in the Agent mode (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>).
-1. In the Chat input box, type a question or instructions like: "Can you list all items" or "list my customers".
+1. In the Chat box, type a question or instructions like: "Can you list all items" or "list my customers".
+
+   ![Shows the Github Chat box in Visual Studio Code, highlighting the Confige tools button](../developer/media/mcp-chat-tools.png )
+
 1. The agent starts working on a response, like fetching customer data.
+
+   If you don't get a response, select **Configure tools** in the Chat box to verify Business Central MCP sever is enabled. If it's enabled, there's entry for **businesscentral**.
 
    > [!NOTE]
    > The agent can only access data and perform operations permitted by the MCP server configuration. Your available operations depend on the API permissions defined in your Business Central environment. For example, you can only create a customer if you have Create permission on the Customer API. If an operation fails due to insufficient permissions, contact your Business Central administrator to enable the required API access. Learn more about configurations in [Configure Business Central MCP Server](configure-mcp-server.md)
