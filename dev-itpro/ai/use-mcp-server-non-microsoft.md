@@ -46,9 +46,14 @@ This step is typically done by a tenant admin. You can use the same app registra
 1. Add the redirect URI of the MCP client to the app registration
 
    1. Select **Authentication** > **+ Add Redirect URI** > **Mobile and desktop applications platform**.
-   1. In the Add Redirect URI pane, enter the MCP clients redirect URI, for example `https://claude.ai/api/mcp/auth_callback`.
+   1. In the Add Redirect URI pane, enter the MCP client's redirect URI, for example `https://claude.ai/api/mcp/auth_callback`.
 
    Learn more in [How to add a redirect URI to your application](/entra/identity-platform/how-to-add-redirect-uri).
+1. Create a client secret for the registered application.
+
+   Follow the general guidelines in [](/entra/identity-platform/how-to-add-credentials?tabs=client-secret) Add credentials to your web application.
+
+Before you leave the Certificates & secrets page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You use this key later in your client application code.
 1. Add API permissions to Business Central
 
    1. Select **API permissions** > **+ Add permission**.
