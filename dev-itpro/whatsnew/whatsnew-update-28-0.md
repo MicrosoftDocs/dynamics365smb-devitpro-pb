@@ -11,7 +11,7 @@ ms.custom:
 ---
 # Update 28.0 for Business Central 2026 release wave 1
 
-This article provides an overview of new and updated features in update 28.0, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
+This article provides an overview of the new and updated features and general information about update 28.0, which starts 2026 release wave 1.
 
 ## New and updated features
 
