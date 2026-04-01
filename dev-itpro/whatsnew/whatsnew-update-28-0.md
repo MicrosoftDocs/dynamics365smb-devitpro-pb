@@ -42,7 +42,6 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Download symbols from NuGet feed](../developer/devenv-al-extension-configuration.md)|General availability|
 ||[Evaluate AL coding agents with BC-Bench](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench)|General availability|
 ||[Get more secure outgoing HTTP calls by default](../developer/devenv-httpclient.md#anti-ssrf-validation-for-al-httpclient)|General availability|
-||Make apps that use base 64 encodings faster|General availability|
 ||[Run AL objects and open record references using fully qualified names](../developer/devenv-namespaces-structure.md#running-objects-by-fully-qualified-name)|General availability|
 ||[Run AL tests from Visual Studio Code](../developer/devenv-test-explorer-vscode.md)|General availability|
 |Ecommerce|[Assign custom collections to items exported to Shopify](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/assign-custom-collections-items-exported-shopify)|General availability|
@@ -55,7 +54,6 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Set up Service Participants to Company Information](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/set-up-service-participants-company-information)|General availability|
 |Financial management|[Calculate taxes for plastic and sugar](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/calculate-taxes-plastic-sugar)|Public preview|
 ||[Calculate withholding taxes for vendors](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/calculate-withholding-taxes-vendors)|Public preview|
-||Reduce time spent on recurring invoicing in Subscription Billing|General availability|
 ||[Use self-billed invoices](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-self-billed-invoices)|Public preview|
 |Governance and administration|[Connect AI agents to the admin center through MCP server](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/connect-ai-agents-admin-center-through-mcp-server)|Public preview|
 ||[Manage database index usage and cost per company](/dynamics365/business-central/manage-indexes)|General availability|
