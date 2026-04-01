@@ -52,8 +52,6 @@ This step is typically done by a tenant admin. You can use the same app registra
 1. Create a client secret for the registered application.
 
    Follow the general guidelines in [](/entra/identity-platform/how-to-add-credentials?tabs=client-secret) Add credentials to your web application.
-
-Before you leave the Certificates & secrets page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You use this key later in your client application code.
 1. Add API permissions to Business Central
 
    1. Select **API permissions** > **+ Add permission**.
