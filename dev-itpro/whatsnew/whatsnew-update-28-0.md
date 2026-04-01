@@ -35,7 +35,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Align VAT periods with Microsoft standards for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/align-vat-periods-standards-czechia)|General availability|
 ||[Change original document VAT date in VAT entries for Czechia](/dynamics365/business-central/LocalFunctionality/Czech/how-to-setup-vat-date)|General availability|
 ||[Get started with clearer user setup controls for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/get-started-clearer-user-setup-controls-czechia)|General availability|
-||[Transfer journal line descriptions to bank statements for Czechia](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
+||[Transfer journal line descriptions to bank statements](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/transfer-journal-line-descriptions-bank-statements)|General availability|
 ||[Use carbon footprint with OIOUBL e-invoicing format](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-carbon-footprint-oioubl-e-invoicing-format)|General availability|
 ||[Use e-invoice formats for service invoices in Germany](/dynamics365/business-central/localfunctionality/germany/germany-einvoicing)|Public preview|
 |Development|[Allow developers to define data analysis definitions in their apps](../developer/devenv-analysis-view-package.md)|General availability|
@@ -43,7 +43,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 ||[Evaluate AL coding agents with BC-Bench](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench)|General availability|
 ||[Get more secure outgoing HTTP calls by default](../developer/devenv-httpclient.md#anti-ssrf-validation-for-al-httpclient)|General availability|
 ||Make apps that use base 64 encodings faster|General availability|
-||[Run AL objects and open record references using fully qualified names](../developer/devenv-namespaces-structure.md)|General availability|
+||[Run AL objects and open record references using fully qualified names](../developer/devenv-namespaces-structure.md#running-objects-by-fully-qualified-name)|General availability|
 ||[Run AL tests from Visual Studio Code](../developer/devenv-test-explorer-vscode.md)|General availability|
 |Ecommerce|[Assign custom collections to items exported to Shopify](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/assign-custom-collections-items-exported-shopify)|General availability|
 ||[Export items to Shopify with product options based on item attributes](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/export-items-shopify-product-options-based-item-attributes)|General availability|
