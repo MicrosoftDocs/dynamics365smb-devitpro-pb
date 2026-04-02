@@ -2,7 +2,7 @@
 title: What's New or Changed in Business Central 2026 release wave 1 - Update 28.0 preview
 description: Get an overview of new and changed capabilities in the 28.0 update of Business Central online, which is part of 2026 release wave 1.
 ms.author: jswymer
-ms.date: 03/30/2026
+ms.date: 04/01/2026
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
@@ -100,7 +100,33 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ## On-premises download packages
 
-The on-premises download packages for version 28.0 are delayed and will be available shortly. Check back soon for updates.
+Select and download the package for the appropriate country/region version from Microsoft Support.
+
+|Country/region|Download package|
+|-|-|
+|AT - Austria|[Dynamics.365.BC.48549.AT.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.AT.DVD.zip)|
+|AU - Australia|[Dynamics.365.BC.48549.AU.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.AU.DVD.zip)|
+|BE - Belgium|[Dynamics.365.BC.48549.BE.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.BE.DVD.zip)|
+|CA - Canada|[Dynamics.365.BC.48549.CA.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.CA.DVD.zip)|
+|CH - Switzerland|[Dynamics.365.BC.48549.CH.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.CH.DVD.zip)|
+|CZ- Czechia|[Dynamics.365.BC.48549.CZ.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.CZ.DVD.zip)|
+|DE - Germany|[Dynamics.365.BC.48549.DE.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.DE.DVD.zip)|
+|DK - Denmark|[Dynamics.365.BC.48549.DK.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.DK.DVD.zip)|
+|ES - Spain|[Dynamics.365.BC.48549.ES.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.ES.DVD.zip)|
+|FI - Finland|[Dynamics.365.BC.48549.FI.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.FI.DVD.zip)|
+|FR - France|[Dynamics.365.BC.48549.FR.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.FR.DVD.zip)|
+|GB - United Kingdom|[Dynamics.365.BC.48549.GB.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.GB.DVD.zip)|
+|IN - India|[Dynamics.365.BC.48549.IN.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.IN.DVD.zip)|
+|IS - Iceland|[Dynamics.365.BC.48549.IS.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.IS.DVD.zip)|
+|IT - Italy|[Dynamics.365.BC.48549.IT.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.IT.DVD.zip)|
+|MX - Mexico|[Dynamics.365.BC.48549.MX.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.MX.DVD.zip)|
+|NL - Netherlands|[Dynamics.365.BC.48549.NL.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.NL.DVD.zip)|
+|NO - Norway|[Dynamics.365.BC.48549.NO.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.NO.DVD.zip)|
+|NZ - New Zealand|[Dynamics.365.BC.48549.NZ.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.NZ.DVD.zip)|
+|RU - Russia|[Dynamics.365.BC.48549.RU.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.RU.DVD.zip)|
+|SE - Sweden|[Dynamics.365.BC.48549.SE.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.SE.DVD.zip)|
+|US - United States|[Dynamics.365.BC.48549.US.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.US.DVD.zip)|
+|All other countries/regions (W1)|[Dynamics.365.BC.48549.W1.DVD.zip](https://download.microsoft.com/download/c9349b3d-84fd-4566-be6d-8149ceb6b583/Dynamics.365.BC.48549.W1.DVD.zip)|
 
 ## Upgrade to 28.0
 

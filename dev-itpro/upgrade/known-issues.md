@@ -32,7 +32,7 @@ PowerShell 7 has a known issue where [!INCLUDE[adminshell](../developer/include
 
    You get errors when running BCContainerHelper management functions such as  `Restart-BcContainer`, `Get-BcContainerAppInfo`, and `Publish-BcContainerApp`. These functions rely on Business Central admin modules, which BCContainerHelper invokes through a remote PowerShell session to the container.
 
-Depending on your enviroment, you might get errors similar to the following:
+Depending on your environment, you might get errors similar to the following:
 
 `Import-Module: Could not load file or assembly '<name , version, culture, public key token>'. Uncaught exception during type initialization.`
 
@@ -1053,7 +1053,7 @@ This occurs when a key fails to get renamed. To fix the problem, identify the ke
 
 ### Problem
 
-You get errors in the Event Log similar to the following errors when trying to start the [!INCLUDE[server](../developer/includes/server.md)] instance after changing a port number directly in it's CustomSettings.config file:
+You get errors in the Event Log similar to the following errors when trying to start the [!INCLUDE[server](../developer/includes/server.md)] instance after changing a port number directly in its CustomSettings.config file:
 
 - Message (HttpSysException): Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address http://gc1662:8085/BC210/client.
 - Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address

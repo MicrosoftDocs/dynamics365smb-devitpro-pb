@@ -122,7 +122,7 @@ This validation is always enabled with [!INCLUDE [prod_short](includes/prod_shor
 Learn how to configure [!INCLUDE [server](includes/server.md)] in [Configure Business Central Server ](../administration/configure-server-instance.md).
 
 > [!IMPORTANT]
-> If your current [!INCLUDE [prod_short](includes/prod_short.md)] version only includes `NavHttpClientAntiSSRFEnabled`, set it to `false` (disable) if your solution needs to  connect to internal endpoints.
+> If your current [!INCLUDE [prod_short](includes/prod_short.md)] version only includes `NavHttpClientAntiSSRFEnabled`, set it to `false` (disable) if your solution needs to connect to internal endpoints.
 >
 > Once `NavHttpClientAntiSSRFAllowedAddresses` is available in your version, set it to the specific IP addresses you need to allow and set `NavHttpClientAntiSSRFEnabled` to `true` to enable validation. Disabling validation entirely is discouraged because it removes an important layer of protection against SSRF attacks.
 

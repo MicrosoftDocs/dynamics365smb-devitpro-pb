@@ -1,5 +1,5 @@
 ---
-title: Running a container-based development environment"
+title: Running a container-based development environment
 description: Overview of how to run a container-based development.
 author: SusanneWindfeldPedersen
 ms.date: 10/04/2023
@@ -45,7 +45,7 @@ To support the use of containers, optional PowerShell scripts are available, whi
    install-module BCContainerHelper -force
    ```
 
-1. To get a list of functions are available in the BCContainerHelper module, run the following command:
+1. To get a list of functions that are available in the BCContainerHelper module, run the following command:
 
    ```powershell
    Write-BCContainerHelperWelcomeText
@@ -70,11 +70,11 @@ The `BCContainerHelper` creates a folder on the C:\ drive called *bcartifacts.ca
 If you encounter issues setting up Business Central containers, there are a few things you can try before creating an issue on GitHub.
 
 1. Make sure you're running the latest version of [Docker](https://www.docker.com/products/docker-desktop/) and the latest version of the [BcContainerHelper module](https://www.powershellgallery.com/packages/BcContainerHelper).
-2. If the container fails during creation?
+2. If the container fails during creation:
    - Check that you have enough memory (Business Central containers use at least 6 GB) and enough disk space (artifacts and container images uses ~15 GB)
    - You can try to add `-isolation hyperv` to your `New-BcContainer` command to see whether Hyper-V isolation solves the problem.
 3. If the container is created, but you can't navigate to the container in a browser?
-   - You can try to include the `-updateHosts` parameter on your `New-BcContainer`. This parameter adds an entry in your hosts file for the container.
+   - You can try to include the `-updateHosts` parameter on your `New-BcContainer` command. This parameter adds an entry in your hosts file for the container.
    - You can try to use Username/Password authentication instead of Windows authentication adding `-auth UserPassword -credential (Get-Credential)` to your `New-BcContainer` command.
 4. Try the most basic New-BcContainer command with the suggested arguments from this article to check whether the problem stems from advanced usage. 
 5. Remember to include the full output of your New-BcContainer command when creating an issue on GitHub.

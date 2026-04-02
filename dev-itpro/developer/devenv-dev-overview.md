@@ -77,7 +77,7 @@ Extensions are compiled as .app package files. The .app package file can be depl
 
 ## Evaluating AL coding agents with BC-Bench
 
-BC‑Bench is a benchmarking framework for evaluating agent performance on real‑world [!INCLUDE[prod_short](includes/prod_short.md)] AL coding tasks. It provides measurable, repeatable results, helping developers understand what improvements actually work. Learn more in [BC-Bench](https://supreme-dollop-8eqm7r4.pages.github.io/)
+BC‑Bench is a benchmarking framework for evaluating agent performance on real‑world [!INCLUDE[prod_short](includes/prod_short.md)] AL coding tasks. It provides measurable, repeatable results, helping developers understand what improvements actually work. Learn more in [BC-Bench](https://github.com/microsoft/BC-Bench) on GitHub.
 
 ## Submitting your app
 
