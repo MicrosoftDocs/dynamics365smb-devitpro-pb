@@ -262,7 +262,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>EnvironmentName</td>
         </tr>
         <tr>
-            <td rowspan=3>Unink Environment to Power Platform Environment</td>
+            <td rowspan=3>Unlink Environment to Power Platform Environment</td>
             <td>powerPlatformEnvironmentId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -841,7 +841,7 @@ Events in the table below are emitted with custom dimensions.
     <tbody>
         <tr>
             <td>Created new company</td>
-            <td>ompanyName</td>
+            <td>CompanyName</td>
             <td>CRONUS USA, Inc.</td>
         </tr>
         <tr>

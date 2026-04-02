@@ -62,7 +62,7 @@ These features are no longer controlled in **Feature management**, so they can't
 
 - [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) 
 - [Feature Update: Enable multiple users to post job ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
-- [Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
+- [Feature Update: Enable multiple users to post resource ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
 - [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
 
 ### Other feature key changes
@@ -90,7 +90,7 @@ These features are no longer controlled in **Feature management**, so they can't
 
 - [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) 
 - [Feature Update: Enable multiple users to post job ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
-- [Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
+- [Feature Update: Enable multiple users to post resource ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
 - [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)<!-- missing rp-->
 - [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](https://go.microsoft.com/fwlink/?linkid=2303767)

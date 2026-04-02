@@ -166,7 +166,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Martinique|Partner|W1|Available|MQ|5)|
 |Mauritania|Partner|W1|Available|MR|5)|
 |Mauritius|Partner|W1|Available|MU|South Africa|
-|Mayote|Partner|W1|Available|YT|5)|
+|Mayotte|Partner|W1|Available|YT|5)|
 |Mexico|Microsoft|NA|Available|MX|United States|
 |Micronesia|Partner|W1|Available|FM|Asia Pacific|
 |Moldova|Partner|W1|Available|MD|Europe|
@@ -245,7 +245,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Tajikistan|Partner|W1|Available|TJ|5)|
 |Tanzania|Partner|W1|Available|TZ|South Africa|
 |Thailand|Partner|W1|Available|TH|Asia Pacific|
-|TImor Leste|Partner|W1|Available|TL|5)|
+|Timor Leste|Partner|W1|Available|TL|5)|
 |Togo|Partner|W1|Available|TG|5)|
 |Tokelau|Partner|W1|Available|TK|5)|
 |Tonga|Partner|W1|Available|TO|5)|
