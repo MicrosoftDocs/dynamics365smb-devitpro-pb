@@ -100,7 +100,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ## On-premises download packages
 
-Select and download the package for the appropriate country or region version from Microsoft Support.
+Select and download the package for the appropriate country/region version from Microsoft Support.
 
 |Country/region|Download package|
 |-|-|
