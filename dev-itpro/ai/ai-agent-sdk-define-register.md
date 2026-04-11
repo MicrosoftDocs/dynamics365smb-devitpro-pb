@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/21/2026
+ms.date: 04/09/2026
 ms.update-cycle: 180-days
 ---
 
@@ -125,6 +125,9 @@ begin
     exit(MyAgentSetup.IsEmpty());
 end;
 ```
+
+> [!NOTE]
+> In addition to the `ShowCanCreateAgent` method, agent instance creation for extension agents is also governed by the **Agent Configuration Rights** page. This page allows agent administrators to define rules that restrict which users can create specific agent types in specific companies. By default, a rule is inserted to allow all users to create all types of agents in all companies. Learn more in [Understand agent visibility](ai-development-toolkit-agent-visibility.md) and [Agent permissions](ai-development-toolkit-permissions.md).
 
 ### Set the default profile
 

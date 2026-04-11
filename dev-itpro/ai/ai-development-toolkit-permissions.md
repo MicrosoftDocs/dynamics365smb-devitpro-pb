@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/23/2026
+ms.date: 04/09/2026
 ms.update-cycle: 180-days
 ---
 
@@ -86,17 +86,39 @@ An agent access control record defines which users have access to configure an a
 
 This allows users to be assigned as administrators of specific agent instances, without giving them access to configure all agents. Access can be revoked at any time by setting the `Can Configure Agent` field, either via the `Agent` card page or through code.
 
-## Agent administration permission sets
+## Agent administrators
+
+An **agent administrator** is a user who has the "Configure All Agents" system permission. This permission is granted by the `AGENT - ADMIN` permission set. Agent administrators can see, configure, and create all agents across the companies where they have the permission assigned.
+
+### Agent administration permission sets
 
 To assign a user as an administrator of all agents, they can be assigned the `AGENT - ADMIN` permission set. This permission set comes with the following privileges:
 
-**Configure all agents**: All agents are configurable by the user.
-**Create agents**: New agents can be created by the user
-**Configure profiles**: Profiles for both users and agents can be configured
+- **Configure All Agents**: All agents are configurable by the user.
+- **Create agents**: New agents can be created by the user.
+- **Configure profiles**: Profiles for both users and agents can be configured.
 
 ### Related permission sets
 
 The `AGENT - ADMIN` permission set is included in the `SECURITY` permission set. Users with the `SUPER` permission set also gain the same privileges.
+
+## Extension agent creation permissions
+
+> [!NOTE]
+> The extension agent creation permissions described in this section are available starting with version 28.1 and later.
+
+To allow non-admin users to create and activate agents from extensions, the following permission set and configuration page are available:
+
+### D365 Agent permission set
+
+The "D365 Agent" permission set grants the "Create Extension Agent" system permission. This permission set is included in "D365 BASIC", which means most users have it by default. Users with this permission can see extension agents that haven't been configured yet and can create new instances of extension agents from the role center, subject to additional conditions described in [Understand agent visibility](ai-development-toolkit-agent-visibility.md).
+
+> [!NOTE]
+> The "Create Extension Agent" permission is distinct from the permissions required to create agents through the Agent Design Experience. The Agent Design Experience still requires the "AGENT - ADMIN" permission set.
+
+### Agent Configuration Rights
+
+The **Agent Configuration Rights** page provides an additional layer of control over which users can create which types of extension agents in which companies. By default, all users can create all types of agents in all companies. Agent administrators can restrict this by modifying the rules in this page. For example, an administrator can limit creation so that only specific users can create certain agent types in specific companies.
 
 ### Configuring agent permissions across companies
 
