@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/09/2026
+ms.date: 04/17/2026
 ms.update-cycle: 180-days
 ---
 
@@ -62,7 +62,7 @@ For a user to see not-yet-activated agent avatars and create new agent instances
 
 For [agent administrators](ai-development-toolkit-permissions.md#agent-administrators) to create instances of agents defined in AL extensions, the following conditions must all apply:
 
-1. The user has permissions for the agent's setup page and the agent setup table. If enabling the agent is considered to have security implications, it is recommended to associate a specific permission set to its setup page and setup table instead of relying on inherent permissions.
+1. The user has permissions for the agent's setup page and the agent setup table. If enabling the agent is considered to have security implications, it's recommended to associate a specific permission set to its setup page and setup table instead of relying on inherent permissions.
 1. The agent type allows instance creation, meaning the `IAgentFactory.ShowCanCreateAgent` method returns `true`. Learn more in [Control agent instance creation](ai-agent-sdk-define-register.md#control-agent-instance-creation).
 
 #### For non-agent administrators
@@ -73,7 +73,7 @@ For [agent administrators](ai-development-toolkit-permissions.md#agent-administr
 For non-admin users to create instances of agents defined in AL extensions, the following conditions must all apply:
 
 1. The user has the "Create Extension Agent" system permission, which is included in the "D365 Agent" permission set (part of "D365 BASIC"). Most users have this permission by default.
-1. The user has permissions for the agent's setup page and the agent setup table. If enabling the agent is considered to have security implications, it is recommended to associate a specific permission set to its setup page and setup table instead of relying on inherent permissions.
+1. The user has permissions for the agent's setup page and the agent setup table. If enabling the agent is considered to have security implications, it's recommended to associate a specific permission set to its setup page and setup table instead of relying on inherent permissions.
 1. The agent type allows instance creation, meaning the `IAgentFactory.ShowCanCreateAgent` method returns `true`. Learn more in [Control agent instance creation](ai-agent-sdk-define-register.md#control-agent-instance-creation).
 1. A rule in the **Agent Configuration Rights** page allows the user to create an instance of the agent. By default, a rule is specified to allow all users can create all types of agents in all companies. However, users with "AGENT - ADMIN" permission set can restrict this by modifying the rules, for example, limiting which users can create specific agent types in specific companies.
 
