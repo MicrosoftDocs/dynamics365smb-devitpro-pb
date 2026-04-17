@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/09/2026
+ms.date: 04/17/2026
 ms.update-cycle: 180-days
 ---
 
@@ -127,7 +127,7 @@ end;
 ```
 
 > [!IMPORTANT]  
-> From version 28.1 and onward, agent discovery and creation is not limited to agent administrators anymore. If you only want agent administrators to discover your agent, you need to implement `ShowCanCreateAgent` accordingly.
+> From version 28.1 and onward, agent discovery and creation isn't limited to agent administrators anymore. If you only want agent administrators to discover your agent, you need to implement `ShowCanCreateAgent` accordingly.
 
 ```al
 procedure ShowCanCreateAgent(): Boolean
