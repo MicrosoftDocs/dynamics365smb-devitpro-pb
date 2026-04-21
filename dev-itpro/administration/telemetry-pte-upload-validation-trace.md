@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, when a user/administrator uploads a per-tenant extension to an environment from the Extension Management page, we proactively validate it against the environment.
 
-With this telemetry, partners can monitor these attempts for customers and setup alerts on failures so that they know up-front which customers will need help.
+With this telemetry, partners can monitor these attempts for customers and set up alerts on failures so that they know up-front which customers will need help.
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
@@ -66,7 +66,7 @@ Occurs when a new per-tenant extension (PTE) validation attempt is started on th
 |environmentId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
-|mainExtension|A json structure that contains information about the extension that is being uploaded.|
+|mainExtension|A JSON structure that contains information about the extension that is being uploaded.|
 |submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-submission-operation-id.md)] |
 
 
@@ -105,7 +105,7 @@ Occurs for each extension in the upload. This event is emitted for the main exte
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+|message|**Extension validation started: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
 
 ### Custom dimensions
 
@@ -130,7 +130,7 @@ Occurs if the extension can compile against the environment.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+|message|**Extension validation completed successfully: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
 
 ### Custom dimensions
 
@@ -154,7 +154,7 @@ Occurs if something was not right when validating the extension on the environme
 [!INCLUDE[LC0210](../includes/telemetry-LC0210.md)]
 
 
-## <a name="extension-validation-completed-with-failures"></a>Extension validation completed completed with failures (LC0206)
+## <a name="extension-validation-completed-with-failures"></a>Extension validation completed with failures (LC0206)
 
 Occurs if the extension could not compile against the environment.
 
@@ -162,7 +162,7 @@ Occurs if the extension could not compile against the environment.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the id of the extension.|
+|message|**Extension validation completed with failures: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})** <br /><br /> `{extensionName}` indicates the name of the extension.<br /><br /> `{extensionVersion}` indicates the version of the extension.<br /><br /> `{extensionPublisher}` indicates the publisher of the extension.<br /><br /> `{extensionId}` indicates the ID of the extension.|
 
 ### Custom dimensions
 
@@ -264,7 +264,7 @@ Occurs when a per-tenant extension (PTE) validation attempt is completed success
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**PTE submission validation request completed successfully: request {submission id}** <br /><br /> `{submissionId}` indicates the identifier for the validation attempt.|
+|message|**PTE submission validation request completed successfully: request {submissionId}** <br /><br /> `{submissionId}` indicates the identifier for the validation attempt.|
 
 ### Custom dimensions
 
@@ -297,7 +297,7 @@ Occurs when a new per-tenant extension (PTE) validation attempt completed with f
 |environmentId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
-|mainExtension|A json structure that contains information about the extension that is being uploaded.|
+|mainExtension|A JSON structure that contains information about the extension that is being uploaded.|
 |submissionOperationId|[!INCLUDE[submissionOperationId](../includes/include-telemetry-dimension-submission-operation-id.md)] |
 |failureReason|The overall reason that the extension failed to upload.|
 
