@@ -2,7 +2,7 @@
 title: "AL diagnostics"
 description: ""
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 04/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -487,7 +487,7 @@ ms.reviewer: solsen
 |[AL0600](diagnostic-al600.md)|The property '{0}' can only be set on elements of type Option.|Warning (future error)|
 |[AL0601](diagnostic-al601.md)|{0} '{1}' is removed. {2}.|Warning (future error)|
 |[AL0602](diagnostic-al602.md)|'{0}' is inaccessible due to its protection level.|Warning (future error)|
-|[AL0603](diagnostic-al603.md)|An implicit conversion is being performed from a value of type '{0}' to a value of type '{1}'. This conversion can lead to unexpected runtime issues.|Warning|
+|[AL0603](diagnostic-al603.md)|An implicit conversion is being performed from a value of type '{0}' to a value of type '{1}'. This conversion can lead to data loss and unexpected runtime issues.|Warning|
 |[AL0604](diagnostic-al604.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}'.|Warning (future error)|
 |[AL0605](diagnostic-al605.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}'.|Hidden|
 |[AL0606](diagnostic-al606.md)|The 'with' statement is deprecated and will be removed for cloud development in a future release.|Warning (future error)|
@@ -558,7 +558,7 @@ ms.reviewer: solsen
 |[AL0675](diagnostic-al675.md)|An implementation for the interface '{0}' is already specified in this list.|Error|
 |[AL0676](diagnostic-al676.md)|The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'.|Error|
 |[AL0677](diagnostic-al677.md)|The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'.|Warning (future error)|
-|[AL0678](diagnostic-al678.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Choose another name for one of them. Otherwise, this might cause runtime issues.|Information|
+|[AL0678](diagnostic-al678.md)|The metadata name of {0} '{1}' conflicts with {2} '{3}' defined in {4} '{5}' by the extension '{6}'. Choose another name for one of them. Otherwise, this might cause runtime issues.|Information|
 |[AL0679](diagnostic-al679.md)|The application object '{0}' is not included in any entitlement and will therefore not be accessible in the cloud.|Warning|
 |[AL0680](diagnostic-al680.md)|Cannot use addBefore or addAfter on a top-level data item. The anchor {0} is a top level data item.|Error|
 |[AL0681](diagnostic-al681.md)|A DataItem with name '{0}' could not be found in the target {1}.|Error|
@@ -637,8 +637,8 @@ ms.reviewer: solsen
 |[AL0754](diagnostic-al754.md)|The '{0}' already defines a built-in member called '{1}'. Choose another name for {2} '{1}', or it might cause runtime issues.|Error|
 |[AL0755](diagnostic-al755.md)|The '{0}' already defines a built-in member called '{1}'. Choose another name for {2} '{1}', or it might cause runtime issues.|Warning (future error)|
 |[AL0756](diagnostic-al756.md)|The division by Abs(integer) will change its behavior in release version 11. For more information visit the official documentation.|Warning|
-|[AL0757](diagnostic-al757.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Choose another name for one of them. Otherwise, this might cause runtime issues.|Error|
-|[AL0758](diagnostic-al758.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Choose another name for one of them. Otherwise, this might cause runtime issues.|Warning (future error)|
+|[AL0757](diagnostic-al757.md)|The metadata name of {0} '{1}' conflicts with {2} '{3}' defined in {4} '{5}' by the extension '{6}'. Choose another name for one of them. Otherwise, this might cause runtime issues.|Error|
+|[AL0758](diagnostic-al758.md)|The metadata name of {0} '{1}' conflicts with {2} '{3}' defined in {4} '{5}' by the extension '{6}'. Choose another name for one of them. Otherwise, this might cause runtime issues.|Warning (future error)|
 |[AL0759](diagnostic-al759.md)|The value '{0}' specified for FormatRegion cannot be parsed as a valid format culture name.|Error|
 |[AL0760](diagnostic-al760.md)|The value '{0}' specified for FormatRegion is not a standard format culture name.|Error|
 |[AL0761](diagnostic-al761.md)|An incorrect value was used for the category. One of the values of the enum {0} {1} is expected which is available in platform version {2} and higher.|Error|
@@ -789,6 +789,10 @@ ms.reviewer: solsen
 |[AL0911](diagnostic-al911.md)|The field '{0}' cannot be used in a query DataItemLink because it is a FlowField or FlowFilter.|Error|
 |[AL0912](diagnostic-al912.md)|The name of a {0} cannot be empty because it can cause runtime errors.|Warning (future error)|
 |[AL0913](diagnostic-al913.md)|The name of a {0} cannot be empty because it can cause runtime errors.|Error|
+|[AL0914](diagnostic-al914.md)|Table '{0}' has {1} fields. Tables with many fields might limit the ability of other extensions to add fields, as the total number of fields across a table and all its extensions cannot exceed the maximum number of columns allowed in SQL.|Warning|
+|[AL0915](diagnostic-al915.md)|Table extension '{0}' adds {1} fields to table '{2}'. Adding many fields in a single table extension might limit the ability of other extensions to add fields, as the total number of fields across a table and all its extensions cannot exceed the maximum number of columns allowed in SQL.|Warning|
+|[AL0916](diagnostic-al916.md)|The call is ambiguous between the built-in methods '{0}' and '{1}'. The compiler will implicitly choose the '{0}' overload. Make the call explicit by casting the Variant argument to the desired type.|Warning|
+|[AL0917](diagnostic-al917.md)|The Excel layout '{0}' was automatically upgraded to multi-sheet format. The original sheet '{1}' was not removed. Consider regenerating the layout by deleting '{0}'.|Warning|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|

@@ -1,8 +1,8 @@
 ---
 title: "Compiler Information AL0678"
-description: "The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'."
+description: "The metadata name of {0} '{1}' conflicts with {2} '{3}' defined in {4} '{5}' by the extension '{6}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 04/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,8 +14,11 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Choose another name for one of them. Otherwise, this might cause runtime issues.
+The metadata name of {0} '{1}' conflicts with {2} '{3}' defined in {4} '{5}' by the extension '{6}'. Choose another name for one of them. Otherwise, this might cause runtime issues.
 
+
+## Description
+During compilation, identifier names are transformed into metadata names, which are used to interface with the runtime and may be further constrained than regular AL identifiers. This can cause collisions when different AL names result in the same metadata name. Common causes include names that differ only in white space or identifiers that match keywords reserved by the system.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
