@@ -60,7 +60,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
 - The Microsoft coordinated #BCTalent offerings help partners with recruiting, training, and coaching services: [aka.ms/BCTalent](https://aka.ms/BCTalent)  
-- Sign up for Business Central Partner Sandbox offer: [aka.ms/BCPartnerSandbox](https://aka.ms/BCPartnerSandbox)
+- Sign up for Business Central Partner Sandbox offer: [aka.ms/BCPartnerSandbox](https://aka.ms/BCGetPartnerSandbox)
 <!-- - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md)) -->
 
 ## Go to market
