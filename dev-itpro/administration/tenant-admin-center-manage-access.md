@@ -45,11 +45,15 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
 > [!NOTE]
 > If you change or remove a group, it can take a while before the changes take effect or access is revoked from users.
 
-### Assign Essentials and Premium licenses across environments
+### Assign Essentials and Premium licenses across environments and companies
 
-You can't mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, you can apply Essentials or Premium licenses to different companies in the same environment. This way, your organization can consist of environments with Essentials and Premium companies. In such scenarios, assign Premium licenses to all users who need to sign in to both types of companies. 
+A tenant can contain multiple [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments, and each environment can contain multiple companies. Functionality included with a Premium user license is enabled at the company level. This means that users with different license types can sign in to the same environment, but access to individual companies depends on the company’s configuration.
 
-A Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, the Premium user can't use any features that the Premium license provides in an Essentials company. This approach doesn't work in the opposite direction. Users who have an Essentials license can't sign in to a company where the **User Experience** field is set to **Premium** on the **Company Information** page.
+For each company, the User Experience field on the Company Information page is set to Essentials or Premium. This setting determines both the functionality that is enabled in the company and the license type that a user must have to open the company.
+
+An Essentials user can only open companies where User Experience is set to Essentials. A Premium user can sign in to any company, regardless of the configured User Experience. However, when working in a company configured for Essentials, a Premium user can’t use Premium-only features.
+
+This behavior isn’t supported in the opposite direction. Users with an Essentials license can’t sign in to companies where the User Experience field is set to Premium on the Company Information page.
 
 To learn more about licensing, go to the [Business Central](https://www.microsoft.com/dynamics-365/products/business-central/) website.
 
