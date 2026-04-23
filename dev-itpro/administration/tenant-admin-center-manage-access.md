@@ -47,9 +47,9 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
 
 ### Assign Essentials and Premium licenses across environments
 
-You can't mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, you can apply Essentials or Premium licenses to different environments. This way, your organization can consist of environments with Essentials companies and environments with Premium companies. In such scenarios, assign Premium licenses to all users who need to sign in to both types of companies. 
+You can't mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, you can apply Essentials or Premium licenses to different companies in the same environment. This way, your organization can consist of environments with Essentials and Premium companies. In such scenarios, assign Premium licenses to all users who need to sign in to both types of companies. 
 
-A Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, the Premium user can't use any features that the Premium license provides. This approach doesn't work in the opposite direction. Users who have an Essentials license can't sign in to a company where the **User Experience** field is set to **Premium** on the **Company Information** page.
+A Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, the Premium user can't use any features that the Premium license provides in an Essentials company. This approach doesn't work in the opposite direction. Users who have an Essentials license can't sign in to a company where the **User Experience** field is set to **Premium** on the **Company Information** page.
 
 To learn more about licensing, go to the [Business Central](https://www.microsoft.com/dynamics-365/products/business-central/) website.
 
