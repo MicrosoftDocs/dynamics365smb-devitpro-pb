@@ -1,7 +1,7 @@
 ---
 title: Write agent tests
 description: Learn how to write AL tests for Business Central agents using the Agent test library to verify end-to-end agent behavior.
-author: SusanneWindfeldPedersen
+author: qutreson
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
@@ -48,7 +48,7 @@ codeunit 50200 "My Agent Accuracy Test"
 
 ### Step 2 - design the dataset
 
-Agent test datasets use a `question` element that contains at minimum a `from` (sender name) and a `message` (the natural-language instruction sent to the agent). You can add additional fields to carry test inputs and assertion data.
+Agent test datasets use a `question` element that contains at minimum a `from` (sender name) and a `message` (the natural-language instruction sent to the agent). You can add more fields to carry test inputs and assertion data.
 
 ```yaml
 tests:
@@ -240,7 +240,7 @@ if (AgentTask.Status = AgentTask.Status::Paused) and AgentTask."Needs Attention"
 
 ### Step 5c - handle multi-turn tasks
 
-For agents that may require multiple rounds of user input, use a loop that continues until the task is no longer paused:
+For agents that might require multiple rounds of user input, use a loop that continues until the task is no longer paused:
 
 ```al
 // Auto-continue: keep responding until the agent finishes
@@ -298,7 +298,7 @@ end;
 
 ### Step 7 - capture test output
 
-Use `WriteTaskToOutput` to include the full agent task log in the test output. This lets you inspect what the agent did step-by-step after the run, and is essential for external evaluation of agent behavior.
+Use `WriteTaskToOutput` to include the full agent task sign in the test output. This lets you inspect what the agent did step-by-step after the run, and is essential for external evaluation of agent behavior.
 
 ```al
 local procedure FinalizeTest(var AgentTask: Record "Agent Task"; TaskSuccessful: Boolean; ErrorReason: Text)
