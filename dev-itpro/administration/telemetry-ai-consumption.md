@@ -49,7 +49,7 @@ Occurs when Copilot Credits have been consumed.
 |externalConsumptionId|A guid representing the Copilot Credit consumption event|
 |featureName|Name of the feature for which Copilot Credits have been consumed|
 |telemetrySchemaVersion|0.1|
-|userId|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)]|
+|userId|Guid representing the identity of the agent for which Copilot Credits have been consumed|
 
 ### Sample KQL code (environment app hotfix scheduling by App Management API failed to be installed)
 
