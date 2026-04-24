@@ -44,14 +44,14 @@ The substring extracted from this instance.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Remarks
-Only in [!INCLUDE [prod_short](includes/prod_short.md)] application version 27.1 and beyond, a *count* parameter exceeding the input text length is supported by the platform.
-For example, in application version 25.0, the following code would create runtime error **Index and length must refer to a location within the string. (Parameter ‘length’)**:
-```AL
+
+Starting with [!INCLUDE [prod_short](includes/prod_short.md)] application version 27.1, the platform supports a `Count` parameter that exceeds the length of the input text. In application version 27.0 and earlier, the following code raises a runtime error **Index and length must refer to a location within the string. (Parameter 'length')**:
+
+```al
 NewString := '12345'.Substring(1, 10);
 ```
-The input text ('12345') length is 5, whereas *count* is higher, having value 10.
 
-Therefore, in application version 27.0 or older, it is recommended to use [`CopyStr`](text-copystr-method.md) instead of `Substring`.
+In this example, the input text `'12345'` has a length of 5, but the `Count` value is 10, which exceeds the string length. If you're targeting application version 27.0 or earlier, use [CopyStr](../system/system-copystr-method.md) instead of `Substring`.
 
 ## Related information
 [Text Data Type](text-data-type.md)  
