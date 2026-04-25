@@ -69,8 +69,9 @@ traces
 , copilotStudioFeature = customDimensions.copilotStudioFeature
 , featureName = customDimensions.featureName
 ```
+
 ## Related information
 
-[Manage consumption-based billing for agent capabilities](tenant-admin-center-manage-consumption-billing.md)
+[Manage consumption-based billing for agent capabilities](tenant-admin-center-manage-consumption-billing.md)  
 [Telemetry overview](telemetry-overview.md)  
 [Turn environment telemetry on or off](telemetry-enable-application-insights.md)  
