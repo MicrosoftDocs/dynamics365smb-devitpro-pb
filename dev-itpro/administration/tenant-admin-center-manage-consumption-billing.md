@@ -150,7 +150,7 @@ Watch this YouTube video for summary of how to manage pay-as-you-go billing:
 
 ## Manage capacity and usage
 
-You can view Copilot Credit capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Copilot Credits and capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
+You can view Copilot Credit capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Copilot Credits and capacity](/power-platform/admin/manage-copilot-studio-messages-capacity). Additionally, [telemetry](telemetry-overview.md) is emitted to the Application Insights resource set up for the [environment](telemetry-enable-application-insight.mds#turn-on-telemetry-on-environments) for Copilot Credits consumed. Learn more about this telemetry signal in [Analyzing AI Consumption Trace Telemetry](telemetry-ai-consumption.md).
 
 Business Central regularly checks the available capacity (quota) of Copilot Credits. If your organization's quota is low or depleted, users receive in-app notifications about the status and necessary actions. It's important to take timely action on these notifications by reallocating existing capacity or purchasing more capacity.
 
