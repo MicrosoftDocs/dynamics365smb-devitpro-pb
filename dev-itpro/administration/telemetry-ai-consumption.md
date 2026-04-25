@@ -7,17 +7,16 @@ ms.reviewer:
 ms.topic: concept-article
 ms.date: 04/23/2026
 ms.custom: bap-template
-
 ---
-# Analyzing AI Consumption Trace Telemetry
+# Analyzing AI consumption trace telemetry
 
-[!INCLUDE[component](../developer/includes/online_only.md)]
+[!INCLUDE[online_only](../developer/includes/online_only.md)]
 
 Environment lifecycle telemetry gathers data about the Copilot Credits consumed by features subject to [consumption-based billing](tenant-admin-center-manage-consumption-billing.md).
 
 ## AI Consumption Recorded
 
-Occurs when Copilot Credits have been consumed.
+Occurs when Copilot Credits are consumed.
 
 ### General dimensions
 
@@ -30,26 +29,26 @@ Occurs when Copilot Credits have been consumed.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
-|actions|The action for which Copilot Credits have been consumed, for example "Outbound Message" for Sales Order Agent|
-|agentTaskId|The task ID of the agent task for which Copilot Credits have been consumed|
-|appId|The application ID of the app the agent that consumed Copilot Credits belongs to|
-|appName|The application name of the app the agent that consumed Copilot Credits belongs to|
-|appPublisher|The publisher name for the app the agent that consumed Copilot Credits belongs to|
-|appVersion|The version number of the app the agent that consumed Copilot Credits belongs to|
+|actions|The action that consumed Copilot Credits, for example 'Outbound Message' for Sales Order Agent|
+|agentTaskId|The task ID of the agent task that consumed Copilot Credits|
+|appId|The application ID of the app associated with the agent that consumed Copilot Credits|
+|appName|The application name of the app associated with the agent that consumed Copilot Credits|
+|appPublisher|The publisher name for the app associated with the agent that consumed Copilot Credits|
+|appVersion|The version number of the app associated with the agent that consumed Copilot Credits|
 |companyName|The name of the company in which the agent that consumed Copilot Credits ran|
 |component|Dynamics 365 Business Central Server|
 |componentVersion|The version number of the Dynamics 365 Business Central server|
 |consumptionDateTime|The date and time at which Copilot Credit consumption was recorded|
 |copilotCredits|The number of Copilot Credits consumed for the recorded action|
 |copilotStudioFeature|The [Copilot Studio Agent Feature](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management#copilot-credits-billing-rates) used to record Copilot Consumption|
-|description|A description of the action for which Copilot Credits have been consumed|
+|description|A description of the action that consumed Copilot Credits|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**RT0055**|
-|externalConsumptionId|A guid representing the Copilot Credit consumption event|
-|featureName|Name of the feature for which Copilot Credits have been consumed|
+|externalConsumptionId|A GUID representing the Copilot Credit consumption event|
+|featureName|Name of the feature that consumed the Copilot Credits|
 |telemetrySchemaVersion|0.1|
-|userId|Guid representing the identity of the agent for which Copilot Credits have been consumed|
+|userId|GUID representing the identity of the agent that consumed Copilot Credits|
 
 ### Sample KQL code (environment app hotfix scheduling by App Management API failed to be installed)
 
