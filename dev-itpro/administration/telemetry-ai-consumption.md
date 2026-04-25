@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 Environment lifecycle telemetry gathers data about the Copilot Credits consumed by features subject to [consumption-based billing](tenant-admin-center-manage-consumption-billing.md).
 
-## AI Consumption Recorded
+## AI consumption recorded
 
 Occurs when Copilot Credits are consumed.
 
@@ -40,7 +40,7 @@ Occurs when Copilot Credits are consumed.
 |componentVersion|The version number of the Dynamics 365 Business Central server|
 |consumptionDateTime|The date and time at which Copilot Credit consumption was recorded|
 |copilotCredits|The number of Copilot Credits consumed for the recorded action|
-|copilotStudioFeature|The [Copilot Studio Agent Feature](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management#copilot-credits-billing-rates) used to record Copilot Consumption|
+|copilotStudioFeature|The [Copilot Studio Agent feature](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-billing-rates) used to record Copilot consumption|
 |description|A description of the action that consumed Copilot Credits|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
@@ -69,3 +69,8 @@ traces
 , copilotStudioFeature = customDimensions.copilotStudioFeature
 , featureName = customDimensions.featureName
 ```
+## Related information
+
+[Manage consumption-based billing for agent capabilities](tenant-admin-center-manage-consumption-billing.md)
+[Telemetry overview](telemetry-overview.md)  
+[Turn environment telemetry on or off](telemetry-enable-application-insights.md)  
