@@ -265,6 +265,7 @@
 #### [Overview](administration/telemetry-area-overview.md)
 #### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 #### [Marketplace app breaking changes validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
+#### [AI consumption](administration/telemetry-ai-consumption.md)
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)

@@ -1,1 +1,1 @@
-To learn more about how to setup alerting on Business Central telemetry, see [Alert on Telemetry](../administration/telemetry-alert.md).
+To learn more about how to set up alerting on Business Central telemetry, see [Alert on Telemetry](../administration/telemetry-alert.md).
