@@ -293,6 +293,7 @@
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 #### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [MCP Server telemetry](administration/telemetry-mcp-server-trace.md)
 #### [Onboarding telemetry](administration/telemetry-onboarding-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
 #### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
