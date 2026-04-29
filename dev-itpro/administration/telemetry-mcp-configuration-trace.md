@@ -14,14 +14,14 @@ ms.custom: bap-template
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2026 release wave 1, version 26.0, and later
 
-MCP (Model Context Protocol) configuration telemetry gathers data about the following operations:
+[Model Context Protocol (MCP)](../ai/mcp-overview.md) configuration telemetry gathers data about the following operations:
 
 - An MCP configuration was created
 - An MCP configuration was modified
 - An MCP configuration was deleted
 - An MCP configuration was designated as the default
 
-Use this telemetry to track changes to MCP server configurations in your environment, which is useful for auditing and troubleshooting AI agent integrations.
+Use this telemetry to track changes to MCP server configurations in your environment, which is useful for auditing and troubleshooting AI agent integrations. To learn how to configure the MCP server, see [Configure Business Central MCP Server](../ai/configure-mcp-server.md).
 
 ## <a name="created"></a>MCP configuration created
 
@@ -237,6 +237,11 @@ traces
 
 ## Related information
 
+[Model Context Protocol (MCP) in Business Central overview](../ai/mcp-overview.md)  
+[Configure Business Central MCP Server](../ai/configure-mcp-server.md)  
+[Connect to Business Central MCP Server with Visual Studio Code](../ai/use-mcp-server-in-vscode.md)  
+[Connect to Business Central MCP server with non-Microsoft clients](../ai/use-mcp-server-non-microsoft.md)  
+[Business Central Admin Center API MCP server](administration-center-api-mcp.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Alert on Telemetry](telemetry-alert.md)
