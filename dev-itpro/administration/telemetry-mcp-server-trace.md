@@ -14,9 +14,9 @@ ms.custom: bap-template
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2025 release wave 1, version 26.0, and later
 
-MCP (Model Context Protocol) Server telemetry gathers data about tool calls made through MCP Server configurations in Business Central. This telemetry helps you understand how external tools and services are being used through the MCP protocol.
+[Model Context Protocol (MCP)](../ai/mcp-overview.md) Server telemetry gathers data about tool calls made through MCP Server configurations in Business Central. This telemetry helps you understand how external tools and services are being used through the MCP protocol.
 
-For more information about MCP in Business Central, see [MCP Server Overview](mcp-server-overview.md).
+To learn how to configure the MCP server, see [Configure Business Central MCP Server](../ai/configure-mcp-server.md).
 
 ## <a name="rt0054"></a>MCP Server tool called
 
@@ -120,6 +120,11 @@ traces
 
 ## Related information
 
+[Model Context Protocol (MCP) in Business Central overview](../ai/mcp-overview.md)  
+[Configure Business Central MCP Server](../ai/configure-mcp-server.md)  
+[Connect to Business Central MCP Server with Visual Studio Code](../ai/use-mcp-server-in-vscode.md)  
+[Connect to Business Central MCP server with non-Microsoft clients](../ai/use-mcp-server-non-microsoft.md)  
+[Business Central Admin Center API MCP server](administration-center-api-mcp.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Alert on Telemetry](telemetry-alert.md)
