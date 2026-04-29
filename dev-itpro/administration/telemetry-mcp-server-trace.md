@@ -1,5 +1,5 @@
 ---
-title: Analyze MCP Server telemetry 
+title: Analyze MCP Server Calls Telemetry 
 description: Learn about the MCP Server telemetry in Business Central  
 author: jswymer
 ms.topic: how-to
@@ -10,7 +10,7 @@ ms.author: jswymer
 ms.custom: bap-template
 ---
 
-# Analyze MCP Server telemetry
+# Analyze MCP server tool calls telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2025 release wave 1, version 26.0, and later
 
