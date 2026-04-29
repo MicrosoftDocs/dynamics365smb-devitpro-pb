@@ -1,5 +1,5 @@
 ---
-title: Analyze MCP Server Calls Telemetry 
+title: Analyze MCP Server Tool Calls Telemetry 
 description: Learn about the MCP Server telemetry in Business Central  
 author: jswymer
 ms.topic: how-to
