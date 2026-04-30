@@ -34,3 +34,7 @@
 |AL0000EIV|Onboarding|[Onboarding criteria completed: {Criteria}](../administration/telemetry-onboarding-trace.md#CriteriaCompleted)|
 |AL0000O76|Financial Reports |[Financial report run from request page: {report definition code}](../administration/telemetry-financial-report-usage-trace.md#financial-report-run-from-request-page-report-definition-code)|
 |AL0000OKU|Financial Reports |[Financial report run on-screen: {report definition code}](../administration/telemetry-financial-report-usage-trace.md#financial-report-run-on-screen-report-definition-code)|
+|AL0000QE9|MCP configuration|[MCP Configuration modified](../administration/telemetry-mcp-configuration-trace.md#modified)|
+|AL0000QEB|MCP configuration|[MCP Configuration deleted](../administration/telemetry-mcp-configuration-trace.md#deleted)|
+|AL0000R0Q|MCP configuration|[MCP Configuration created](../administration/telemetry-mcp-configuration-trace.md#created)|
+|AL0000R0R|MCP configuration|[MCP default configuration designated](../administration/telemetry-mcp-configuration-trace.md#default)|
