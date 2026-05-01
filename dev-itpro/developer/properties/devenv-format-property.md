@@ -24,7 +24,7 @@ Sets the formats of the source expression for various data types.
 |-----------|-----------|---------------------------------------|
 |**Xml**|runtime version 1.0|Allows to work with XML documents. This is the default value.|
 |**VariableText**|runtime version 1.0|Allows to work with variable text files.|
-|**FixedText**|runtime version 1.0|Allows to to work with fixed-width text fields.|
+|**FixedText**|runtime version 1.0|Allows to work with fixed-width text fields.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

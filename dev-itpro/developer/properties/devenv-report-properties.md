@@ -152,4 +152,4 @@ This article lists properties of the report object.
 [Report, report data item, and report extension properties (AL language reference)](../properties/devenv-report-property-overview.md)   
 [Properties](devenv-properties.md)  
 [Table and table extension properties](devenv-table-properties.md)  
-[Page and page extenstion properties overview](devenv-page-property-overview.md)
+[Page and page extension properties overview](devenv-page-property-overview.md)
