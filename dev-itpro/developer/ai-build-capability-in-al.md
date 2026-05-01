@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: how-to
 ms.update-cycle: 180-days
-ms.date: 09/08/2025
+ms.date: 05/01/2026
 ms.collection:
   - get-started
   - bap-ai-copilot
