@@ -74,7 +74,7 @@ The following table lists the Business Central 25 update versions and the minimu
 |[25.15](https://support.microsoft.com/help/5075268)|[26.10](https://support.microsoft.com/help/5078590)|[27.4](https://support.microsoft.com/help/5078591)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |[25.16](https://support.microsoft.com/help/5078589)|[26.11](https://support.microsoft.com/help/5081984)|[27.5](https://support.microsoft.com/help/5081986)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |[25.17](https://support.microsoft.com/help/5081983)|[26.12](https://support.microsoft.com/help/5086069)|[27.6](https://support.microsoft.com/help/5086070)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
-|25.18<sup>[\[1\]](#1)</sup>|26.13|27.7|28.1|
+|[25.18](https://support.microsoft.com/topic/update-25-18-for-microsoft-dynamics-365-business-central-2024-release-wave-2-application-build-25-18-48229-platform-build-25-2-48119-e2f0099d-035b-44aa-8762-d31e4cc99a09)|[26.13](https://support.microsoft.com/help/5093778)|[27.7](https://support.microsoft.com/help/5093779)|[28.1](https://support.microsoft.com/help/5099999)|
 
 Get a list of all available updates for Business Central 2024 release wave 2 at [Released Updates for Microsoft Dynamics 365 Business Central 2024 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776).
 
