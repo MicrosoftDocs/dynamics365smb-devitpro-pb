@@ -59,6 +59,8 @@ Get a list of all available updates for Business Central 2025 release wave 1 at 
 
 The following table lists the Business Central 25 update versions and the minimum version of later releases that are compatible for upgrade.
 
+[!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
+
 |Version 25 |Version 26|Version 27|Version 28|
 |-|-|-|-|
 |25.0 to 25.5|[26.0](../whatsnew/whatsnew-update-26-0.md#on-premises-download-packages)|[27.0](../whatsnew/whatsnew-update-27-0.md#on-premises-download-packages)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
