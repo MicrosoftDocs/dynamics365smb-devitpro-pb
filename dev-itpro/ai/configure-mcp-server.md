@@ -2,7 +2,7 @@
 title: Configure Business Central MCP Server
 description: Learn how to configure the Business Central MCP Server to enable AI agents to access and interact with your Business Central data and processes.
 ms.topic: how-to
-ms.date: 03/30/2026
+ms.date: 05/03/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer

@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/21/2026
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ---
 
@@ -21,7 +21,7 @@ ms.update-cycle: 180-days
 In AL, you find interfaces and codeunits designed for building custom AI agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. This article provides an overview of these tools and links to detailed documentation for each area.
 
 > [!IMPORTANT]
-> This capability is currently enabled only for sandbox environments for evaluation purposes. Production environments don't support agent development at this time.
+> Agent development is available in both sandbox and production environments.
 
 ## Quick-start
 
