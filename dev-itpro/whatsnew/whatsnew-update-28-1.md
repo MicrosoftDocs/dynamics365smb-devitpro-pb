@@ -60,7 +60,10 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ### On-premises customers
 
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to update 28.1. Several objects marked as obsolete in these earlier versions are no longer included in the base application. Learn more in [Important information and considerations when upgrading to Business Central version 28](../upgrade/upgrade-considerations-v26.md).
+The upgrade path depends on your current major version. Select the instructions that match your deployment:
+
+- **Version 28**: Follow the instructions in [Install a Business Central 2026 release wave 1 update](../upgrade/upgrading-cumulative-update-v28.md).
+- **Version 27 and earlier**: Learn more about upgrading to version 28 in [Upgrading to Dynamics 365 Business Central 2026 release wave 1](../upgrade/upgrade-overview-v28.md).
 
 ## Good to know
 
