@@ -4,7 +4,7 @@ description: Explore testing strategies for Copilot features in AL. Ensure AI-ge
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 03/13/2026
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
