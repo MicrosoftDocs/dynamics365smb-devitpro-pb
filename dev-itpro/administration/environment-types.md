@@ -53,9 +53,19 @@ Instead, use the [Administration Center API](administration-center-api.md).
 As a partner, you can buy the *Dynamics 365 Business Central Partner Sandbox* license. You need a valid Microsoft Partner Network (MPN) ID. This offer was made available to support partners that need nonproduction environments to learn, test, develop, and deliver end-to-end customer demos with their solutions. The *Partner Sandbox* license has to be purchased for at least five users per tenant, gives access to Business Central Premium functionality, and acts as a normal *Premium* license that your customers might acquire.
 
 > [!IMPORTANT]
-> The environments that you acquire through the *Dynamics 365 Business Central Partner Sandbox* license are strictly meant for use only on the partner’s tenant. You aren't allowed to use this license in a customer tenant, nor in a production environment.
+> The environments that you acquire through the *Dynamics 365 Business Central Partner Sandbox* license are strictly meant for use by partners for non-production scenarios (learning, demoing, development and similar). You aren't allowed to use this license for customers (in a customer tenant), nor for production use (running business).
 
-The first pack of five *Partner Sandbox* licenses grants [a base environment quota](tenant-admin-center-capacity.md) of one production and three sandbox environments on the tenant. For each extra five Partner Sandbox licenses available on your tenant, the quota increases by three sandbox environments. Each Partner Sandbox license grants 5 GB of storage capacity on top of the [80 GB base storage quota](tenant-admin-center-capacity.md) to ensure sufficient storage remains available as the number of sandbox environments on the tenant increases.
+While it is possible to sign-up your own partner tenant for *Dynamics 365 Business Central Partner Sandbox* licenses, since this tenant is going to be used for non-production scenarios, for security reasons and easier administration we recommend you create a separate new Entra tenant (e.g. [yourtenant].onmicrosoft.com) and sign it up for those licenses.  
+
+The first pack of five *Partner Sandbox* licenses grants [a base environment quota](tenant-admin-center-capacity.md) of one production and three sandbox environments on the tenant. For each extra five Partner Sandbox licenses available on your tenant, the environments quota increases by three sandbox environments. Each Partner Sandbox license grants 5 GB of storage capacity on top of the [80 GB base storage quota](tenant-admin-center-capacity.md) to ensure sufficient storage remains available as the number of sandbox environments on the tenant increases.
+
+|No. of Partner Sandbox licenses  | Tenant Entitlements  |
+|---------|---------|
+|5 licenses | 1 Production + 3 Sandbox environments + 80 GB storage|
+|10 licenses | + 3 Sandbox environments + 25 GB storage |
+|15 licenses | + 3 Sandbox environments + 25 GB storage |
+|and so on     |         |
+
 
 Tenants that have the Partner Sandbox license can create sandbox environments on Early Access Preview versions. Learn more in [Early Access Preview Environments](preview-environments.md#early-access-preview).
 
