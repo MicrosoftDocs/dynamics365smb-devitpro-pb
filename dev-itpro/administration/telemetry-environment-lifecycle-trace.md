@@ -1097,7 +1097,7 @@ Occurs when the operation to move the environment to a different Entra tenant st
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation operation started: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation started: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant.|
 
 ### Custom dimensions
 
