@@ -985,6 +985,7 @@
 ###### [Working with RDL layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
+##### [Barcode fonts with Business Central online](developer/devenv-report-barcode-fonts.md)
 ##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
 ##### [Defining a custom report render](developer/devenv-report-custom-render.md)
 ##### Changing layouts (for users and administrators)
