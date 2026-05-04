@@ -2,7 +2,7 @@
 title: "Report.RunRequestPage([Text]) Method"
 description: "Runs the request page for a report without running the report."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 05/04/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -55,7 +55,7 @@ Because the request page runs in the context of where it was invoked from, users
 
  This example requires that you create a table for holding parameters that are entered on the report request page and a codeunit that runs the report methods.  
 
- Create a table called **Request Parameters** that has the following fields.  
+ Create a table called **ReportParameters** that has the following fields.  
 
 ```al
 var
@@ -68,7 +68,7 @@ var
 
 ```al
 var
-    ReportParameters: Record "Report Parameters";
+    ReportParameters: Record ReportParameters;
     XmlParameters: Text;
     OStream: OutStream;
     IStream: InStream;
