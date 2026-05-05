@@ -88,13 +88,22 @@ entitlement "Delegated BC Admin agent - Partner"
 
 An example of an entitlement where `Type` is `PerUserServicePlan`. This is the type used for the built-in Business Central plans (Premium, Essentials, Team Member, and so on) and is the most common type for extensions that bundle entitlements with a BC subscription. The `Id` property must contain the **Microsoft Entra service plan ID** (GUID) that identifies the plan.
 
+The following example is taken directly from the Business Central system application. Source: [Dynamics365BusinessCentralPremium.Entitlement.al](https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/Entitlements/Dynamics365BusinessCentralPremium.Entitlement.al)
+
 ```al
-entitlement MyApp_PremiumPlan
+namespace System.Security.AccessControl;
+
+using System.Azure.Identity;
+
+entitlement "Dynamics 365 Business Central Premium"
 {
     Type = PerUserServicePlan;
-    Id = '8e9002c0-a1d8-4465-b952-817d2948e6e2'; // Dynamics 365 Business Central Premium plan ID
+    Id = '8e9002c0-a1d8-4465-b952-817d2948e6e2';
 
-    ObjectEntitlements = "MyApp_FullAccessPermissionSet";
+    ObjectEntitlements = "Application Objects - Exec",
+                         "Azure AD Plan - Admin",
+                         "Security Groups - Admin",
+                         "System Application - Admin";
 }
 ```
 
@@ -183,10 +192,10 @@ procedure CheckingForEntitlementsUsingPermissions()
 
     procedure CheckingForOtherAppEntitlements()
     begin
-        if (NavApp.IsEntitled('Delegated Admin agent - Partner', '63ca2fa4-4f03-4f2b-a480-172fef340d3f')) then
+        if (NavApp.IsEntitled('Delegated Admin agent - Partner', '00000000-0000-0000-0000-000000000007')) then
             Message('User is assigned the delegated admin agent entitlement defined in the system app: https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/Entitlements/DelegatedAdminagentPartner.Entitlement.al')
         else
-            if (NavApp.IsEntitled('Dynamics 365 Business Central Essentials', '63ca2fa4-4f03-4f2b-a480-172fef340d3f')) then
+            if (NavApp.IsEntitled('Dynamics 365 Business Central Essentials', '920656a2-7dd8-4c83-97b6-a356414dbd36')) then
                 Message('User is assigned the essentials entitlement defined in the system app: https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/Entitlements/Dynamics365BusinessCentralEssentials.Entitlement.al');
     end;
 ...
