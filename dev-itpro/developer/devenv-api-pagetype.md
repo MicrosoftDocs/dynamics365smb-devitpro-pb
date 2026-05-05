@@ -41,6 +41,30 @@ If you only want your API to expose committed data, you can add an OnOpenPageTri
     end;
 ```
 
+## Performance optimization with DataAccessIntent
+
+For read-only API pages (integrations that only GET data), set `DataAccessIntent = ReadOnly` to route queries to a SQL read-only replica. This reduces load on the primary database and improves response times under high request volume.
+
+```AL
+page 50121 MyReadOnlyCustomerApi
+{
+    PageType = API;
+    APIPublisher = 'contoso';
+    APIGroup = 'app1';
+    APIVersion = 'v2.0';
+    EntityName = 'customer';
+    EntitySetName = 'customers';
+    SourceTable = Customer;
+    DataAccessIntent = ReadOnly;
+    InsertAllowed = false;
+    ModifyAllowed = false;
+    DeleteAllowed = false;
+    ...
+}
+```
+
+For more information, see [DataAccessIntent property](properties/devenv-dataaccessintent-property.md).
+
 ## Example of the API page type
 
 The following page example publishes an API available at:

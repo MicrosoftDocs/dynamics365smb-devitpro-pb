@@ -84,7 +84,21 @@ entitlement "Delegated BC Admin agent - Partner"
 }
 ```
 
-### Entitlement example - per-user plan
+### Entitlement example - per-user service plan
+
+An example of an entitlement where `Type` is `PerUserServicePlan`. This is the type used for the built-in Business Central plans (Premium, Essentials, Team Member, and so on) and is the most common type for extensions that bundle entitlements with a BC subscription. The `Id` property must contain the **Microsoft Entra service plan ID** (GUID) that identifies the plan.
+
+```al
+entitlement MyApp_PremiumPlan
+{
+    Type = PerUserServicePlan;
+    Id = '8e9002c0-a1d8-4465-b952-817d2948e6e2'; // Dynamics 365 Business Central Premium plan ID
+
+    ObjectEntitlements = "MyApp_FullAccessPermissionSet";
+}
+```
+
+### Entitlement example - per-user offer plan
 
 An example of an entitlement where `Type` is `PerUserOfferPlan`. This type is used to enable transactability for Marketplace apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through Marketplace](devenv-sell-apps-appsource.md).
 
