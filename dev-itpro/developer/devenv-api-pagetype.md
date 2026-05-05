@@ -45,8 +45,6 @@ If you only want your API to expose committed data, you can add an OnOpenPageTri
 
 For read-only API pages (integrations that only GET data), set `DataAccessIntent = ReadOnly` to route queries to a SQL read-only replica. This reduces load on the primary database and improves response times under high request volume.
 
-The following example is taken directly from the Business Central APIV2 extension. Source: [APIV2AccountingPeriods.Page.al](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/APIV2/app/src/pages/APIV2AccountingPeriods.Page.al)
-
 ```al
 namespace Microsoft.API.V2;
 

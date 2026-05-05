@@ -88,8 +88,6 @@ entitlement "Delegated BC Admin agent - Partner"
 
 An example of an entitlement where `Type` is `PerUserServicePlan`. This is the type used for the built-in Business Central plans (Premium, Essentials, Team Member, and so on) and is the most common type for extensions that bundle entitlements with a BC subscription. The `Id` property must contain the **Microsoft Entra service plan ID** (GUID) that identifies the plan.
 
-The following example is taken directly from the Business Central system application. Source: [Dynamics365BusinessCentralPremium.Entitlement.al](https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/Entitlements/Dynamics365BusinessCentralPremium.Entitlement.al)
-
 ```al
 namespace System.Security.AccessControl;
 
