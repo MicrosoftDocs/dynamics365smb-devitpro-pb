@@ -69,6 +69,9 @@ codeunit 50100 "Item Ch. Assign by Fairy Dust"
 ## To add a new distribution method for item charges
 In the new codeunit, add functions to distribute the charges over the item lines.
 
+> [!NOTE]
+> The `GetItemValues` procedure in the example below uses a `with` statement, which is deprecated since Business Central 2020 release wave 2. In new code, qualify field access with the record variable name instead. Learn more in [Deprecating explicit and implicit with statements](devenv-deprecating-with-statements-overview.md).
+
 ```AL
     local procedure AssignByFairyDust(var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal)
     var
