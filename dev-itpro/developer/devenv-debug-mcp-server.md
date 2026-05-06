@@ -16,9 +16,6 @@ ms.collection: get-started
 
 The Troubleshooting Model Context Protocol (MCP) Server is an AI-powered debugging tool that allows you to analyze the runtime state of AL code during active debugging sessions using natural language queries. Unlike traditional debugging where you manually inspect variables and step through code, the Troubleshooting MCP Server enables GitHub Copilot to programmatically access stack frames, variables, source code, and breakpoints to help diagnose issues.
 
-> [!NOTE]
-> The Troubleshooting MCP Server is only supported for local development scenarios for now, not for SaaS environments. Support for SaaS environments will be added in a future release.
-
 ## When to use the Troubleshooting MCP Server
 
 Use the Troubleshooting MCP Server when you want Copilot to help analyze:
