@@ -21,7 +21,7 @@ This update introduces the [Expense Agent](/dynamics365/release-plan/2026wave1/s
 
 Along side it, the new [Expense Management module](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-employee-expenses-using-expense-reports) in Business Central adds expense report management with itemization, per diem, mileage tracking, approval workflows, and reimbursement posting.
 
-Learn more in []()
+Learn more in [Expense management](/dynamics365/business-central/expense-management/expense-management-overview).
 
 ## Hotfixes
 
