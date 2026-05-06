@@ -2,7 +2,7 @@
 title: "TableRelation property"
 description: "Sets up a lookup into another table."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 05/06/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -51,7 +51,7 @@ table 50100 "Main Vendors"
     {
       DataClassification = ToBeClassified;
       TableRelation = Vendor."No." where ("Balance (LCY)" = filter (>= 10000));
-    {
+    }
 
     field(2; "Vendor Name"; Text[150])
     {
