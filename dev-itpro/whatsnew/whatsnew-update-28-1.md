@@ -23,7 +23,7 @@ Along side it, the new [Expense Management module](/dynamics365/release-plan/202
 
 ## Hotfixes
 
-Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 28.1 for Business Central 2026 release wave 1](https://support.microsoft.com/help/5099999).
+Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 28.1 for Business Central 2026 release wave 1](https://support.microsoft.com/help/5093780).
 
 ## Feature changes
 
