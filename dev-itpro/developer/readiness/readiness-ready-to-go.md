@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 03/24/2026
+ms.date: 04/21/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -60,7 +60,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
 - The Microsoft coordinated #BCTalent offerings help partners with recruiting, training, and coaching services: [aka.ms/BCTalent](https://aka.ms/BCTalent)  
-- Sign up for Business Central Partner Sandbox offer: [aka.ms/BCPartnerSandbox](https://aka.ms/BCPartnerSandbox)
+- Sign up for Business Central Partner Sandbox offer: [aka.ms/BCPartnerSandbox](https://aka.ms/BCGetPartnerSandbox)
 <!-- - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md)) -->
 
 ## Go to market
@@ -114,7 +114,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Sales Order Agent demo [aka.ms/SalesOrderAgentDemo](https://aka.ms/SalesOrderAgentDemo)
 - Payables Agent overview (preview) [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
 - Payables Agent demo [aka.ms/PayablesAgentDemo](https://aka.ms/PayablesAgentDemo)
-- Designing and coding agents (preview) [Learn more](../../ai/ai-development-toolkit-landing-page.yml)
+- Designing and coding agents (preview) [aka.ms/bcagentsgetstarted](../../ai/ai-development-toolkit-landing-page.yml)
+- Get started with designing and coding agents [here](https://aka.ms/bcdesignagents)
 - Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)

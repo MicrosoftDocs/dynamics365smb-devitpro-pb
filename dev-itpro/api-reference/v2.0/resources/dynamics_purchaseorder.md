@@ -4,7 +4,7 @@ description: A purchase order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -48,6 +48,7 @@ The response has no content; the response code is 204.
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the purchaseOrder.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseOrder.|
 |[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the purchaseOrder.|
+|[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfDocument of the purchaseOrder.|
 
 ## Properties
 
@@ -56,7 +57,7 @@ The response has no content; the response code is 204.
 |id|GUID|The unique ID of the purchase order. Non-editable.|
 |number|string|Specifies the number of the purchase order.|
 |orderDate|date|The order date.|
-|postingDate|date|The date that the purchase order   is posted.|
+|postingDate|date|The date that the purchase order is posted.|
 |vendorId|GUID|The unique ID of vendor.|
 |vendorNumber|string|Specifies vendor's number.|
 |vendorName|string|Specifies vendor's name.|
@@ -68,12 +69,12 @@ The response has no content; the response code is 204.
 |buyFromAddressLine1|string|Buy from address line 1.|
 |buyFromAddressLine2|string|Buy from address line 2.|
 |buyFromCity|string|Buy from city.|
-|buyFromCountry|string|Buy from state.|
+|buyFromCountry|string|Buy from country.|
 |buyFromState|string|Buy from state.|
-|buyFromPostCode|string|Buy from country.|
+|buyFromPostCode|string|Buy from post code.|
 |payToAddressLine1|string|Pay to address line 1.|
 |payToAddressLine2|string|Pay to address line 2.|
-|payToCity|string|Pay to address line 2.|
+|payToCity|string|Pay to city.|
 |payToCountry|string|Pay to country.|
 |payToState|string|Pay to state.|
 |payToPostCode|string|Pay to post code.|
@@ -83,8 +84,8 @@ The response has no content; the response code is 204.
 |shipToCountry|string|Ship to country.|
 |shipToState|string|Ship to state.|
 |shipToPostCode|string|Ship to post code.|
-|shortcutDimension1Code|string||
-|shortcutDimension2Code|string||
+|shortcutDimension1Code|string|The code for shortcut dimension 1.|
+|shortcutDimension2Code|string|The code for shortcut dimension 2.|
 |currencyId|GUID|Specifies which currency the purchase order uses.|
 |currencyCode|string|The default currency code for the purchase order.|
 |pricesIncludeTax|boolean|Specifies whether the prices include Tax or not. Read-Only.|
@@ -94,9 +95,9 @@ The response has no content; the response code is 204.
 |requestedReceiptDate|date|The date the receipt was requested. |
 |discountAmount|decimal|The purchase order discount amount.|
 |discountAppliedBeforeTax|boolean|Specifies whether the discount is applied before tax.|
-|totalAmountExcludingTax|decimal|The total amount excluding tax. Read-Only.  |
+|totalAmountExcludingTax|decimal|The total amount excluding tax. Read-Only.|
 |totalTaxAmount|decimal|The total tax amount for the purchase order. Read-Only.|
-|totalAmountIncludingTax|decimal|The total amount including tax. Read-Only.  |
+|totalAmountIncludingTax|decimal|The total amount including tax. Read-Only.|
 |fullyReceived|boolean|Specifies whether the purchase order has been fully received.|
 |status|NAV.purchaseOrderEntityBufferStatus|The status of the purchase order. It can be "Draft", "In Review" or "Open".|
 |lastModifiedDateTime|datetime|The last datetime the purchase order was modified. Read-Only.|

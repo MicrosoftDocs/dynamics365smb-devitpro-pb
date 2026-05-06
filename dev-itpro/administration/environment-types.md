@@ -55,7 +55,7 @@ As a partner, you can buy the *Dynamics 365 Business Central Partner Sandbox* li
 > [!IMPORTANT]
 > The environments that you acquire through the *Dynamics 365 Business Central Partner Sandbox* license are strictly meant for use only on the partner’s tenant. You aren't allowed to use this license in a customer tenant, nor in a production environment.
 
-The first pack of five *Partner Sandbox* licenses grants a base environment quota of one production and three sandbox environments on the tenant. For each extra five Partner Sandbox licenses available on your tenant, the quota increases by three sandbox environments.
+The first pack of five *Partner Sandbox* licenses grants [a base environment quota](tenant-admin-center-capacity.md) of one production and three sandbox environments on the tenant. For each extra five Partner Sandbox licenses available on your tenant, the quota increases by three sandbox environments. Each Partner Sandbox license grants 5 GB of storage capacity on top of the [80 GB base storage quota](tenant-admin-center-capacity.md) to ensure sufficient storage remains available as the number of sandbox environments on the tenant increases.
 
 Tenants that have the Partner Sandbox license can create sandbox environments on Early Access Preview versions. Learn more in [Early Access Preview Environments](preview-environments.md#early-access-preview).
 

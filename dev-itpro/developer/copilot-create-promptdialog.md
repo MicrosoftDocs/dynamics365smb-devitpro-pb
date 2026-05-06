@@ -9,7 +9,7 @@ ms.collection:
   - get-started
   - bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 07/16/2025
+ms.date: 05/03/2026
 ms.custom: bap-template
 ---
 # Create prompt dialog page for a Copilot feature

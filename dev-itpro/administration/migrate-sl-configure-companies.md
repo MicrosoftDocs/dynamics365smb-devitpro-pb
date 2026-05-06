@@ -5,17 +5,16 @@ author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 07/16/2025
+ms.date: 04/10/2026
 ms.custom: bap-template
 ---
-
 # Configure Dynamics SL company migration
 
-The Business Central cloud migration tools for Dynamics SL include the **SL Company Migration Configuration** page. This page lets you set global settings for all companies selected to migrate, with the option to update at a company level if necessary. Learn more about the data that can be migrated in [Dynamics SL data migrated to Business Central online](migrate-dynamics-SL.md).
+The Business Central cloud migration tools for Dynamics SL include the **SL Company Migration Configuration** page. This page lets you set global settings for all companies selected to migrate, with the option to update at a company level if necessary. Learn more about the data that can be migrated in  [Dynamics SL data migrated to Business Central online](migrate-dynamics-SL.md).
 
 Complete this task after you set up cloud migration and before you replicate data.
 
-[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-SL.md)]
+Learn more in [Dynamics SL migration to Business Central online: End-to-end overview](migrate-sl-overview.md#end-to-end-process).
 
 ## Prerequisites
 
@@ -25,11 +24,11 @@ Complete this task after you set up cloud migration and before you replicate dat
 
 The **SL Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup. You can also open the page by searching for and opening the **Cloud Migration Management** page and then selecting the **SL Company Migration Configuration** action.
 
-[![Shows SL company migration configuration page](../media/SL-Company-migration-Configuration-v2.jpg)](../media/SL-Company-migration-Configuration-v2.jpg#lightbox)
+[![Shows SL company migration configuration page](../developer/media/sl-company-migration-configuration.jpg)](../developer/media/sl-company-migration-configuration.jpg#lightbox)
 
 Once the **SL Company Migration Configuration** page is open, start configuring the data to migrate using the different sections of the page.
 
-The page allows you to configure the migration globally for all selected companies (using the upper sections of the page) or indivdually for each company using the **Per Company** section.
+The page allows you to configure the migration globally for all selected companies (using the upper sections of the page) or individually for each company using the **Per Company** section.
 
 You don't have to make changes on this page unless there's more than one subaccount segment in Dynamics SL. In that case, you must indicate which subaccount segment to use for the global dimensions.
 
@@ -41,7 +40,7 @@ The steps in this section configure the data migration globally for all companie
 
 1. **Set the dimensions**.
 
-   To assign default dimensions for the companies you're migrating, select the **Dimension 1** and **Dimension 2** values in the **Per Company** section for each company. Set the dimensions manually for these companies. **Dimension 1** and **Dimension 2** are selected from the Dynamics SL subaccount segments you want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions.  [Learn more about Dimensions](/dynamics365/business-central/finance-dimensions).
+   To assign default dimensions for the companies you're migrating, select the **Dimension 1** and **Dimension 2** values in the **Per Company** section for each company. Set the dimensions manually for these companies. **Dimension 1** and **Dimension 2** are selected from the Dynamics SL subaccount segments you want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions. [Learn more about Dimensions](/dynamics365/business-central/finance-dimensions).
 
 1. **Modules**: Choose the modules to migrate.
 
@@ -65,9 +64,9 @@ The steps in this section configure the data migration globally for all companie
 
    In the **Inactive records** section, specify the inactive records or discontinued items that you want to migrate. By default, no inactive records or discontinued items are migrated. For example, to migrate inactive customers, turn on the **Inactive Customers** switch.
 
-1. **Classes**: Choose the classes that you want to migrate as posting groups.
+1. **Classes**: Select which SL classes to migrate as posting groups in Business Central. You can migrate Vendor Classes (to **Vendor Posting Groups**), Customer Classes (to **Customer Posting Groups**), and Product Classes (to **Product Posting Groups**).
 
-   This feature is currently not available in the Dynamics SL Migration Tool.
+1. **Vendor 1099 Information**:  For the selected year, Vendor 1099 amounts are totaled by vendor and box, then vendor invoices are created and posted in Business Central for each total with the correct 1099 box indicated. Each invoice and its corresponding payment are posted using the vendor’s posting group AP account, creating wash transactions that don't impact GL balances
 
 1. **Historical Snapshots**: Choose the historical transactions that you want to migrate.
 
@@ -85,8 +84,9 @@ In the **Per Company** section, set the data migration settings separately for e
 Specify how far back in time to migrate general ledger (GL) account summary data and historical snapshots using the following fields:
 
 - **Oldest GL Year**: Select the year from which you want to migrate GL account summary transactions. If the **Oldest GL Year** field is empty, all years are migrated. Account summary transactions are generated and posted for open and history years set up in Dynamics SL. The summary amounts are created based on the fiscal periods set up in Dynamics SL. For example, if 2019, 2020, 2021, and 2022 are historical years in Dynamics SL, but you only want to migrate data from 2021 and later, set the **Oldest GL Year** to 2021. As a result, summary transactions for 2019 and 2020 aren't migrated to Business Central.
+
 - **Oldest Snapshot Year**: Select the year from which you want to migrate history snapshots. If the **Oldest GL Year** field is empty, history snapshots from all years are migrated.
 
 ## Next steps
 
-[Run data replication](migrate-data-replication-run-sl.md)
+[Run data replication](migrate-data-replication-run.md)

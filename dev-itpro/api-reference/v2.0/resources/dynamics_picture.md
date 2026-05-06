@@ -4,7 +4,7 @@ description: A picture object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -35,13 +35,14 @@ Represents a picture in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[contact](dynamics_contact.md)|contact |Gets the contact of the picture.|
 |[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the picture.|
 |[employee](dynamics_employee.md)|employee |Gets the employee of the picture.|
+|[itemVariant](dynamics_itemvariant.md)|itemVariant |Gets the item variant of the picture.|
 
 ## Properties
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the picture. Non-editable.|
-|parentType|NAV.pictureEntityParentType|The type of the parent document of the picture. It can be "Customer","Item", "Vendor", "Employee". |
+|parentType|NAV.pictureEntityParentType|The type of the parent document of the picture. It can be "Customer", "Item", "Vendor", "Employee", or "Contact".|
 |width|integer|The width of the picture.|
 |height|integer|The height of the picture.|
 |contentType|string|The media type of the picture.|
