@@ -4,9 +4,9 @@ description: A pdf document object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
-
+ms.date: 04/08/2026
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # pdfDocument resource type
@@ -36,6 +36,8 @@ Represents a PDF document in [!INCLUDE[prod_short](../../../includes/prod_short.
 |[purchaseInvoice](dynamics_purchaseinvoice.md)|purchaseInvoice |Gets the purchaseinvoice of the pdfDocument.|
 |[purchaseCreditMemo](dynamics_purchasecreditmemo.md)|purchaseCreditMemo |Gets the purchasecreditmemo of the pdfDocument.|
 |[customerContact](dynamics_customercontact.md)|customerContact |Gets the customercontact of the pdfDocument.|
+|[project](dynamics_project.md)|project |Gets the project of the pdfDocument.|
+|[purchaseOrder](dynamics_purchaseorder.md)|purchaseOrder |Gets the purchaseorder of the pdfDocument.|
 
 ## Properties
 
@@ -43,7 +45,7 @@ Represents a PDF document in [!INCLUDE[prod_short](../../../includes/prod_short.
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the PDF document. Non-editable.|
 |parentId|GUID|The ID of the parent entity. |
-|parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the PDF document. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice" or "Purchase Invoice".|
+|parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the PDF document. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice", "Purchase Invoice", "Purchase Order", "Purchase Credit Memo", or "Project".|
 |pdfDocumentContent|stream|The content of the PDF document.|
 
 ## JSON representation

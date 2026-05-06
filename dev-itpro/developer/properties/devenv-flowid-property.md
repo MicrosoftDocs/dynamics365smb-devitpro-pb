@@ -22,9 +22,9 @@ Sets the ID of the Power Automate Flow triggered by this action.
 
 ## Remarks
 
-You can get the flow ID in Power Automate. Sign in to [Power Automate](https://powerautomate.com) and open the flow for editing. Then, get the flow ID from the URL in the browser address, which has a format like: `https://make.powerautomate.com/environments/<environment ID>/flows/<environment ID>`.
+You can get the flow ID in Power Automate. Sign in to [Power Automate](https://powerautomate.com) and open the flow for editing. Then, get the flow ID from the URL in the browser address, which has a format like: `https://make.powerautomate.com/environments/<environment ID>/flows/<flow ID>`.
 
-To learn more about Power Automate flows with Business Central, see [Power Automate Integration Overview](../../powerplatform/power-automate-overview.md).
+Learn more about Power Automate flows with Business Central in [Power Automate Integration Overview](../../powerplatform/power-automate-overview.md).
 
 ## Example
 

@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.topic: how-to
 ms.collection:
   - bap-ai-copilot
-ms.date: 03/30/2026
+ms.date: 05/03/2026
 ms.custom: bap-template 
 ---
 
@@ -71,7 +71,7 @@ After an app is registered for MCP clients, you can connect clients to the Busin
 
 | Setting | Value |
 |---------|-------|
-| Business MCP server URL | `https://mcp.businesscentral.dynamics.com` |
+| Business Central MCP server URL | `https://mcp.businesscentral.dynamics.com` |
 | Client ID | The application (client) ID of the registered app in Microsoft Entra used for authentication. See the section that follows.|
 | Client secret | The client secret on the registered app in Microsoft Entra. Not all clients require a secret.|
 | Authorization endpoint | `https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/authorize` |

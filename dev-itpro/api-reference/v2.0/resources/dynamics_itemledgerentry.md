@@ -4,7 +4,7 @@ description: An item ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -22,7 +22,7 @@ Represents an item ledger entry in [!INCLUDE[prod_short](../../../includes/prod_
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[GET itemLedgerEntry](../api/dynamics_itemledgerentry_get.md)|itemLedgerEntry|Gets a item ledger entry object.|
+|[GET itemLedgerEntry](../api/dynamics_itemledgerentry_get.md)|itemLedgerEntry|Gets an item ledger entry object.|
 
 ## Properties
 

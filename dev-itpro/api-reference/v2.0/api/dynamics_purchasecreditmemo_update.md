@@ -4,9 +4,7 @@ description: Updates a  purchase credit memo object in Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/31/2024
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -49,7 +47,7 @@ Here's an example of the request.
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})
 Content-type: application/json
 {
-    "id": "5d863f66-7de2-4d80-95a6-c2ec47e7b8b2",
+    "id": "dddddddd-3333-4444-5555-eeeeeeeeeeee",
     "number": "PCM-00103"
 }
 ```
@@ -62,15 +60,15 @@ Here's an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id": "5d863f66-7de2-4d80-95a6-c2ec47e7b8b2",
+    "id": "dddddddd-3333-4444-5555-eeeeeeeeeeee",
     "number": "PCM-00103",
     "creditMemoDate": "2023-08-15",
     "postingDate": "2023-08-15",
     "dueDate": "2023-09-14",
-    "vendorId": "b3f1f2ac-5af6-40e5-b9ec-0155873d2768",
+    "vendorId": "eeeeeeee-4444-5555-6666-ffffffffffff",
     "vendorNumber": "V00010",
     "vendorName": "Contoso Office Supplies",
-    "payToVendorId": "b3f1f2ac-5af6-40e5-b9ec-0155873d2768",
+    "payToVendorId": "eeeeeeee-4444-5555-6666-ffffffffffff",
     "payToVendorNumber": "V00010",
     "payToName": "Contoso Office Supplies",
     "buyFromAddressLine1": "123 Vendor Street",
@@ -87,10 +85,10 @@ Content-type: application/json
     "payToPostCode": "98052",
     "shortcutDimension1Code": "SALES",
     "shortcutDimension2Code": "WEST",
-    "currencyId": "1f71830e-a4ea-47d5-992a-33535c05c773",
+    "currencyId": "aaaaaaaa-6666-7777-8888-bbbbbbbbbbbb",
     "currencyCode": "USD",
-    "paymentTermsId": "3ae2e784-5af7-49e1-a753-6912b14c3f44",
-    "shipmentMethodId": "7121d5f5-b64a-4d69-a598-1db41aeef722",
+    "paymentTermsId": "bbbbbbbb-7777-8888-9999-cccccccccccc",
+    "shipmentMethodId": "cccccccc-8888-9999-0000-dddddddddddd",
     "purchaser": "John Doe",
     "pricesIncludeTax": false,
     "discountAmount": 25.00,
@@ -100,9 +98,9 @@ Content-type: application/json
     "totalAmountIncludingTax": 513.00,
     "status": "Draft",
     "lastModifiedDateTime": "2023-08-15T14:22:30Z",
-    "invoiceId": "a9d7ce3f-7b6e-4a8c-8c25-3daadbf6fc5d",
+    "invoiceId": "dddddddd-9999-0000-1111-eeeeeeeeeeee",
     "invoiceNumber": "INV-00251",
-    "vendorReturnReasonId": "d8f4d778-8e9b-4c21-8af5-1b79f47fa261"
+    "vendorReturnReasonId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa"
 }
 ```
 

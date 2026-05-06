@@ -4,7 +4,7 @@ description: An item category object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -22,10 +22,10 @@ Represents an item category in [!INCLUDE[prod_short](../../../includes/prod_shor
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[GET itemCategory](../api/dynamics_itemcategory_get.md)|itemCategory|Gets a item category object.|
-|[DELETE itemCategory](../api/dynamics_itemcategory_delete.md)|none|Deletes a item category object.|
-|[POST itemCategory](../api/dynamics_itemcategory_create.md)|itemCategory|Creates a item category object.|
-|[PATCH itemCategory](../api/dynamics_itemcategory_update.md)|itemCategory|Updates a item category object.|
+|[GET itemCategory](../api/dynamics_itemcategory_get.md)|itemCategory|Gets an item category object.|
+|[DELETE itemCategory](../api/dynamics_itemcategory_delete.md)|none|Deletes an item category object.|
+|[POST itemCategory](../api/dynamics_itemcategory_create.md)|itemCategory|Creates an item category object.|
+|[PATCH itemCategory](../api/dynamics_itemcategory_update.md)|itemCategory|Updates an item category object.|
 
 ## Properties
 
