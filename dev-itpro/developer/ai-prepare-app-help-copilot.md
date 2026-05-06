@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ms.author: mikebc
 ms.topic: concept-article
-ms.date: 09/30/2025
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ms.search.keywords: copilot, copilot chat, online documentation, web search
 ms.collection:

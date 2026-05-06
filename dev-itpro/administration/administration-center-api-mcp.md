@@ -11,7 +11,7 @@ ms.date: 03/25/2026
 
 # The Business Central Admin Center API MCP server (preview)
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that that exposes [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] APIs in a standardized, self‑describing way. MCP‑compatible AI agents can discover available admin operations, understand context, and perform environment management tasks.
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that exposes [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] APIs in a standardized, self‑describing way. MCP‑compatible AI agents can discover available admin operations, understand context, and perform environment management tasks.
 
 Using tools like Visual Studio Code, administrators can ask questions such as environment update status, available upgrades, or installed extensions, and receive structured responses sourced directly from the Admin Center. Agents can also propose follow‑up actions; such as copying an environment to a sandbox, scheduling an update, or investigating a failed upgrade, while keeping the user in control through explicit confirmation steps.
 
