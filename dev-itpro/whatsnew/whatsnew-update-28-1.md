@@ -19,7 +19,9 @@ Would you like to know what changes are in update 28.1? Below you find an overvi
 
 This update introduces the [Expense Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-expenses-business-central-using-expense-agent), which uses AI to automate the end-to-end expense process. Users can upload receipts and submit expense reports via a web app or email. The agent extracts key details, detects duplicates, and generates reports automatically.
 
-Along side it, the new [Expense Management module](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-employee-expenses-using-expense-reports) adds built-in expense reports with itemization, per diem, mileage tracking, approval workflows, and reimbursement posting.
+Along side it, the new [Expense Management module](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-employee-expenses-using-expense-reports) in Business Central adds expense report management with itemization, per diem, mileage tracking, approval workflows, and reimbursement posting.
+
+Learn more in []()
 
 ## Hotfixes
 
