@@ -86,7 +86,7 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 
 `requestBodyRequired` - request body must be provided.
 
-`exportFailed` - export failed because the target environment's version is too old, it isn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports is used up.
+`exportFailed` - export failed, typically because the requesting tenant does not have a paid subscription, the calling user doesn't have permissions to export, or the quota of allowed exports is used up.
 
 ## Get export history
 
@@ -126,40 +126,6 @@ Returns a detailed list of the database exports that occurred within the provide
 
 > [!NOTE]
 > All datetime values are in UTC.
-
-## Case-invariant blocked environment names
-
-### All environment types
-
-- addremotehost
-- admin
-- api
-- clickonce
-- connectivity
-- deployment
-- error
-- getapp
-- health
-- home
-- invoicing
-- navwinclient
-- notsupported
-- officeaddin
-- phone
-- pwa
-- remotesignin
-- reset
-- shellservice
-- signout
-- tablet
-
-### Production environment types
-
-- production
-
-### Sandbox environment types
-
-- sandbox
 
 ## Related information
 

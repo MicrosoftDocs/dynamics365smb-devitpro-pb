@@ -2,12 +2,14 @@
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
+## [Update 28.0](whatsnew/whatsnew-update-28-0.md)
+## [Update 27.5](whatsnew/whatsnew-update-27-5.md)
 ## [Update 27.4](whatsnew/whatsnew-update-27-4.md)
-## [Update 27.3](whatsnew/whatsnew-update-27-3.md)
-## [Update 27.2](whatsnew/whatsnew-update-27-2.md)
-## [Update 27.1](whatsnew/whatsnew-update-27-1.md)
-## [Update 27.0](whatsnew/whatsnew-update-27-0.md)
 ## Updates for earlier major versions
+### [Update 27.3](whatsnew/whatsnew-update-27-3.md)
+### [Update 27.2](whatsnew/whatsnew-update-27-2.md)
+### [Update 27.1](whatsnew/whatsnew-update-27-1.md)
+### [Update 27.0](whatsnew/whatsnew-update-27-0.md)
 ### [Update 26.5](whatsnew/whatsnew-update-26-5.md)
 ### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
 ### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
@@ -73,6 +75,7 @@
 ## Learn
 ### [Discover all aka.ms links related to Business Central](developer/readiness/readiness-bcall.yml)
 ### [Resources for partners](developer/readiness/readiness-ready-to-go.md)
+### [Viva Engage for partners](developer/readiness/readiness-viva-engage-partners.md)
 ### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -86,29 +89,29 @@
 ### [The lifecycle of apps and extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
-### [Maintain AppSource apps and per-tenant extensions](developer/app-maintain.md)
-### [Discontinuing an AppSource app](developer/devenv-app-discontinue.md)
+### [Maintain Marketplace apps and per-tenant extensions](developer/app-maintain.md)
+### [Discontinuing a Marketplace app](developer/devenv-app-discontinue.md)
 ### [Development of a localization solution](developer/readiness/readiness-develop-localization.md)
 <!--#### How Microsoft runs the service -->
 ### [Microsoft responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and capabilities](deployment/app-components.md)
-### [Add your app to AppSource](administration/appsource.md)
+### [Add your app to Marketplace](administration/appsource.md)
 <!--AppSourcevalidation-->
-### AppSource validation
+### Marketplace validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Marketing validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
 
-#### [AppSource technical validation FAQ](developer/devenv-checklist-submission-faq.md)
-##### [AppSource technical validation process FAQ](developer/devenv-checklist-submission-validation-process.md)
-##### [AppSource app identity FAQ](developer/devenv-checklist-submission-app-identity.md)
-##### [AppSource Azure Application Insights and submission FAQ](developer/devenv-checklist-submission-app-insights.md)
-##### [AppSource app previews FAQ](developer/devenv-checklist-submission-app-preview.md)
-##### [AppSource Business Central offer FAQ](developer/devenv-checklist-submission-offer.md)
-##### [AppSource names, affixes, and ID ranges FAQ](developer/devenv-checklist-submission-name-affix-range.md)
-##### [Develop and maintain AppSource apps FAQ](developer/devenv-checklist-submission-develop-maintain.md)
-##### [AppSource code-signing validation FAQ](developer/devenv-checklist-submission-code-sign.md)
-##### [AppSource channels for questions and issues FAQ](developer/devenv-checklist-submission-channels.md)
+#### [Marketplace technical validation FAQ](developer/devenv-checklist-submission-faq.md)
+##### [Marketplace technical validation process FAQ](developer/devenv-checklist-submission-validation-process.md)
+##### [Marketplace app identity FAQ](developer/devenv-checklist-submission-app-identity.md)
+##### [Marketplace Azure Application Insights and submission FAQ](developer/devenv-checklist-submission-app-insights.md)
+##### [Marketplace app previews FAQ](developer/devenv-checklist-submission-app-preview.md)
+##### [Marketplace Business Central offer FAQ](developer/devenv-checklist-submission-offer.md)
+##### [Marketplace names, affixes, and ID ranges FAQ](developer/devenv-checklist-submission-name-affix-range.md)
+##### [Develop and maintain Marketplace apps FAQ](developer/devenv-checklist-submission-develop-maintain.md)
+##### [Marketplace code-signing validation FAQ](developer/devenv-checklist-submission-code-sign.md)
+##### [Marketplace channels for questions and issues FAQ](developer/devenv-checklist-submission-channels.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Embed apps
@@ -133,7 +136,7 @@
 ### [Set up company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding experiences](administration/onboarding-experiences.md)
-### [Selling Business Central apps through AppSource](developer/devenv-sell-apps-appsource.md)
+### [Selling Business Central apps through Marketplace](developer/devenv-sell-apps-appsource.md)
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.yml)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
@@ -142,7 +145,7 @@
 ### [FAQ about updating your Business Central app](developer/app-faq-update.md)
 ### [FAQ about managing and submitting your Business Central offer](developer/app-faq-offer.md)
 ### [FAQ for marketing validation](developer/readiness/readiness-marketing-validation-faq.md)
-### [FAQ for update lifecycle for AppSource apps](developer/devenv-update-app-life-cycle-faq.md)
+### [FAQ for update lifecycle for Marketplace apps](developer/devenv-update-app-life-cycle-faq.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## Help and support
@@ -215,6 +218,7 @@
 #### [Session management](administration/administration-center-api_session_management.md)
 #### [Support settings](administration/administration-center-api_support_settings.md)
 #### [Telemetry](administration/administration-center-api_telemetry.md)
+#### [MCP (preview)](administration/administration-center-api-mcp.md)
 <!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
 ## Entitlements and permissions
 ### [Licenses and entitlements](deployment/licensing.md)
@@ -231,7 +235,7 @@
 ### [Set up app key vaults for extensions](administration/setup-app-key-vault.md)
 ### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
 ### [Upgrading per-tenant extensions that conflict with other extensions](upgrade/upgrade-pte-merge-conflict.md)
-### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
+### [Upgrading Marketplace apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Apply company configuration packages](administration/apply-company-configuration-packages.md)
 <!-- onboard customers-->
@@ -259,7 +263,9 @@
 ### [Telemetry FAQ](administration/telemetry-faq.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
-#### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [Marketplace app breaking changes validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
+#### [AI consumption](administration/telemetry-ai-consumption.md)
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
@@ -288,6 +294,8 @@
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 #### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [MCP configuration telemetry](administration/telemetry-mcp-configuration-trace.md)
+#### [MCP Server telemetry](administration/telemetry-mcp-server-trace.md)
 #### [Onboarding telemetry](administration/telemetry-onboarding-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
 #### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
@@ -522,16 +530,15 @@
 #### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
 #### [Get started with building apps](developer/readiness/get-started.md)
 #### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
-### AppSource validation
+### Marketplace validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
-#### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [Marketplace submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [Marketplace app breaking changes validation telemetry](administration/telemetry-appsource-app-validation-trace.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Get started with AL for on-premises
-#### [Get started with C/SIDE and AL side-by-side for on-premises](developer/devenv-get-started-al-for-onprem.md)
-#### [Run C/SIDE and AL side-by-side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Create runtime packages for Business Central on-premises](developer/devenv-creating-runtime-packages.md)
 
 ## Development environment
@@ -547,6 +554,7 @@
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
 #### [Optimize Visual Studio Code for AL development](developer/devenv-optimize-visual-studio-code.md)
 #### [Running a container-based development environment](developer/devenv-running-container-development.md)
+#### [Use GitHub Codespaces for AL development](developer/devenv-code-spaces-al.md)
 ### Configure projects and workspaces
 #### [Work with multiple AL project folders within one workspace](developer/devenv-multiroot-workspaces.md)
 #### [Work with multiple projects and project References](developer/devenv-work-workspace-projects-references.md)
@@ -566,6 +574,7 @@
 #### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Conditional breakpoints](developer/devenv-debugging-conditional-breakpoints.md)
+#### [Troubleshooting MCP Server for AL](developer/devenv-debug-mcp-server.md)
 #### [Attach and debug next](developer/devenv-attach-debug-next.md)
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
@@ -577,6 +586,7 @@
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
+#### [Run AL tests in Visual Studio Code](developer/devenv-test-explorer-vscode.md)
 #### [Test codeunits and test methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md)
 #### [Test runner codeunits](developer/devenv-testrunner-codeunits.md)
@@ -720,7 +730,7 @@
 #### [Triggers](developer/triggers-auto/devenv-triggers.md)
 
 #### [Namespaces in AL](developer/devenv-namespaces-overview.md)
-##### [Structuring namespaces in AL](developer/devenv-namespaces-structure.md)
+##### [Adopting namespaces in AL](developer/devenv-namespaces-structure.md)
 
 ### Error handling
 #### [Failure modelling and robust coding practices](developer/devenv-robust-coding-practices.md) 
@@ -922,6 +932,7 @@
 #### Views
 ##### [Designing views](developer/devenv-views.md)
 ##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
+##### [Packaging analysis views](developer/devenv-analysis-view-package.md)
 
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
@@ -974,6 +985,7 @@
 ###### [Working with RDL layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Adding barcodes to report layouts](developer/devenv-report-add-barcodes.md)
+##### [Barcode fonts with Business Central online](developer/devenv-report-barcode-fonts.md)
 ##### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
 ##### [Defining a custom report render](developer/devenv-report-custom-render.md)
 ##### Changing layouts (for users and administrators)
@@ -1347,19 +1359,19 @@
 #### [FAQ about testing your Business Central app](developer/app-faq-test.md)
 
 ### Deploying and installing
-#### [Maintain AppSource apps and per-tenant extensions](developer/app-maintain.md)
+#### [Maintain Marketplace apps and per-tenant extensions](developer/app-maintain.md)
 #### [FAQ about managing and submitting your Business Central offer](developer/app-faq-offer.md)
 #### [Writing extension install code](developer/devenv-extension-install-code.md)
 #### [Publish and install an extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 #### [Uninstall and unpublish an extension](developer/devenv-unpublish-and-uninstall-extension-v2.md)
-#### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
+#### [Upgrading Marketplace apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 
 ### Updating and hotfixing
 #### [Overview](developer/devenv-app-life-cycle.md)
 #### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
-#### [Update lifecycle for AppSource apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
+#### [Update lifecycle for Marketplace apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about updating your Business Central app](developer/app-faq-update.md)
-#### [Hotfixing an AppSource app](developer/devenv-hotfixing-appsource-app.md)
+#### [Hotfixing a Marketplace app](developer/devenv-hotfixing-appsource-app.md)
 #### [Upgrading extensions](developer/devenv-upgrading-extensions.md)
 
 ### Deprecating code
@@ -1505,15 +1517,20 @@
 ##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
 ##### [Datasets](developer/ai-test-copilot-datasets.md)
 ##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
-##### [AI test tool](developer/ai-test-copilot-testtool.md)
+##### [Evaluation](developer/ai-test-copilot-testtool.md)
 ##### [Best practices](developer/ai-test-copilot-bestpractices.md)
 ## Develop AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
 ### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
-## Create agents that connect to Business Central
-### [Create and publish agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Configure Business Central MCP Server (preview)](ai/configure-mcp-server.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## [Create agents with Copilot Studio](ai/create-agent-in-copilot-studio.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## Integrate with Model Context Protocol
+### [MCP in Business Central overview](ai/mcp-overview.md)
+### [Configure Business Central MCP Server](ai/configure-mcp-server.md)
+### [AL MCP Server](developer/al-agent-tools/al-mcp-server.md)
+### [Connect to MCP server with Copilot Studio](ai/create-agent-in-copilot-studio.md#create-agents-that-connect-to-business-central-mcp-server)
+### [Connect to MCP server with Visual Studio Code](ai/use-mcp-server-in-vscode.md)
+### [Connect to MCP server with non-Microsoft clients](ai/use-mcp-server-non-microsoft.md)
 ## Designing and coding agents (preview)
 ### [Overview](ai/ai-development-toolkit-landing-page.yml)
 ### [Designing and coding agents](ai/ai-development-toolkit-overview.md)
@@ -1522,20 +1539,23 @@
 ### [Instruction keywords](ai/ai-development-toolkit-instruction-keywords.md)
 ### [Set up permissions and profiles](ai/ai-development-toolkit-permissions-profiles.md)
 ### [Run an agent](ai/ai-development-toolkit-run-agent.md)
+### [Integrate with the Tasks AL API](ai/ai-development-toolkit-tasks-api.md)
 ### [Attachment capabilities and limitations](ai/ai-development-toolkit-attachments.md)
 ### [Iterate and manage](ai/ai-development-toolkit-iterate.md)
 ### [Understand agent visibility](ai/ai-development-toolkit-agent-visibility.md)
-### [Export and import](ai/ai-development-toolkit-export-import.md)
+### [Export and import agents](ai/ai-development-toolkit-export-import.md)
+### [Convert an agent to AL code](ai/ai-agent-sdk-convert-agent.md)
 ### [Best practices](ai/ai-development-toolkit-best-practices.md)
 ### [FAQ](ai/ai-development-toolkit-faq.md)
 ### [Create a Sales Validation Agent](ai/ai-development-toolkit-sales-validation.md)
 ### Coding agents in AL
 #### [Overview](ai/ai-agent-sdk-overview.md)
 #### [Define and register an agent programmatically](ai/ai-agent-sdk-define-register.md)
+#### [Configure agents programmatically](ai/ai-agent-sdk-configuration.md)
 #### [Create agent setup pages](ai/ai-agent-sdk-setup-page.md)
 #### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
-#### [Integrate with the Tasks AL API](ai/ai-development-toolkit-tasks-api.md)
 #### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
+#### [Convert an agent to AL code](ai/ai-agent-sdk-convert-agent.md)
 ### [Transparency note: Business Central AI development toolkit](ai/transparency-note-ai-development-toolkit.md)
 <!-- end integration with AI-->
 
@@ -1867,6 +1887,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2026 release wave 1](deployment/system-requirements-business-central-v28.md)
 #### [2025 release wave 2](deployment/system-requirements-business-central-v27.md)
 #### [2025 release wave 1](deployment/system-requirements-business-central-v26.md)
 #### [2024 release wave 2](deployment/system-requirements-business-central-v25.md)
@@ -1884,20 +1905,22 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2026 release wave 1 on-premises updates](deployment/update-versions-28.md)
+#### [2025 release wave 2 on-premises updates](deployment/update-versions-27.md)
 #### [2025 release wave 1 on-premises updates](deployment/update-versions-26.md)
-#### [2024 release wave 2 on-premises updates](deployment/update-versions-25.md)
-#### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 ##### Versions no longer updated
+###### [2024 release wave 2 on-premises updates](deployment/update-versions-25.md)
+###### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 ###### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 ###### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 ###### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 ###### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
-###### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ###### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
 ###### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
 ###### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
 ###### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
 ###### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
+###### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ###### [October 2018 on-premises updates](deployment/update-versions-13.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -1969,6 +1992,7 @@
 #### [Optimizing SQL server performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility level](administration/optimize-sql-set-compatibility-level.md)
 #### [Using table partitioning and data compression](administration/using-sql-partitioning-and-compression.md)
+#### [Managing database indexes](/dynamics365/business-central/manage-indexes?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
 #### [Monitoring performance counters](administration/performance-counters.md)
@@ -1996,6 +2020,11 @@
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
 ### [Minor update compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+### Business Central 2026 release wave 1 (v28)
+#### [Overview of upgrade to v28](upgrade/upgrade-overview-v28.md)
+#### [Before upgrading to v28](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Upgrade to v28](upgrade/upgrade-unmodified-application-to-v28.md)
+#### [Installing v28 minor update](upgrade/upgrading-cumulative-update-v28.md)
 ### Business Central 2025 release wave 2 (v27)
 #### [Overview of upgrade to v27](upgrade/upgrade-overview-v27.md)
 #### [Before upgrading to v27](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -2075,12 +2104,9 @@
 ######## [Overview](developer/devenv-migrate-table-fields.md)
 ######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
 ######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-####### Data migration toolkit - India
-######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
 ##### Technical upgrade
 ###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v22.md)
-###### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
-###### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
+###### [From version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v22.md)
 ##### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
 #### Business Central 2022 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v21.md)
@@ -2118,7 +2144,7 @@
 ####### [Convert to AL](upgrade/devenv-code-conversion.md)
 ####### Migrating tables and fields between extensions
 ######## [Overview](developer/devenv-migrate-table-fields.md)
-######## [Moving fables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
 ######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ####### Data Migration Toolkit - India
 ######## [Overview](upgrade/india-data-migration-toolkit-overview.md)

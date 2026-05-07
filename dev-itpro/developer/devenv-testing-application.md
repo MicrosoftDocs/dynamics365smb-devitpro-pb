@@ -151,5 +151,6 @@ We recommend the following best practices for designing your application tests:
 [Application Testing Example: Testing Purchase Invoice Discounts](devenv-test-application-example-purchase-invoice-discounts.md)  
 [Random Test Data](devenv-Random-Test-Data.md)  
 [Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md)  
+[Run AL tests in Visual Studio Code](devenv-test-explorer-vscode.md)
 <!--[How to: Run Automated ApplicationTests](How-to--Run-Automated-ApplicationTests.md)   -->
 <!--[Walkthrough: Create a Test with Confirmation Dialog](Walkthrough--Create-a-Test-with-Confirmation-Dialog.md)  -->

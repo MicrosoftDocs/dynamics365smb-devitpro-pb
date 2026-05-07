@@ -2,7 +2,7 @@
 title: "Visible property"
 description: "Sets whether to display the page or control."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -28,6 +28,7 @@ Sets whether to display the page or control.
 -   Page Custom Action
 -   Page File Upload Action
 -   Page View
+-   Page Analysis View
 -   Page User Control
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

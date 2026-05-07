@@ -27,7 +27,7 @@ Extension upgrade telemetry gathers information about operations that can occur 
 
     The telemetry provides information about calls to the AL methods `HasUpgradeTag` and `SetUpgradeTag` from upgrade codeunits. These methods are provided by codeunit **9999 Upgrade Tag** in the System Application extension. Upgrade tags are used to control when upgrade code is run. For more information, see [Using upgrade tags to control upgrade code](../developer/devenv-upgrading-extensions.md#using-upgrade-tags-to-control-upgrade-code). This data can help you identify, troubleshoot, and resolve issues in upgrade code.
 
-The telemetry helps you troubleshoot and resolve code issues that block the data upgrade of per-tenant and AppSource extensions.
+The telemetry helps you troubleshoot and resolve code issues that block the data upgrade of per-tenant and Marketplace extensions.
 
 ## Extension Update Failed: exception raised in extension
 

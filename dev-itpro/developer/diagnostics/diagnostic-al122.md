@@ -2,7 +2,7 @@
 title: "Compiler Error AL0122"
 description: "Cannot implicitly convert type '{0}' to '{1}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Cannot implicitly convert type '{0}' to '{1}'.
+Cannot implicitly convert type '{0}' to '{1}'. Use an explicit conversion or change the type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

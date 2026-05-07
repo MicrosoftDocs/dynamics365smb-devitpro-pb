@@ -23,7 +23,7 @@ Sets the string used as a RequestFilterHeading Property for a request page tab.
 
 
 > [!NOTE]  
-> To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+> To submit an app to Marketplace, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 ## Example
 

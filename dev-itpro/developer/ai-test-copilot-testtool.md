@@ -1,10 +1,10 @@
 ---
-title: AI Test Tool
-description: Learn how to use the AI Test Tool to test Copilot features in AL.
+title: Evaluation
+description: Learn how to use Evaluation to test Copilot features and agents in AL.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
@@ -12,36 +12,40 @@ ms.collection:
 ms.reviewer: solsen
 ---
 
-# AI Test Tool
+# Evaluation
 
-The AI Test Tool is an essential component of the developer tools for Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. It focuses on data-driven test automation to ensure that AI systems are accurate with various inputs, maintain the trust and security of our customers and their data, and are resilient to changes in AI model versions.
+Evaluation for AL (formerly AI Test Toolkit) is an essential component of the developer tools for Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. It focuses on data-driven test automation to ensure that AI systems are accurate with various inputs, maintain the trust and security of our customers and their data, and are resilient to changes in AI model versions.
 
-With the AI Test Tool, you can:
+With Evaluation, you can:
 
 - Create tests for your prompt dialogues using a familiar framework in AL and Visual Studio Code.
 - Organize your test datasets based on purpose and prompt variations.
+- Configure suite-level metadata such as capability, test type, and execution frequency.
+- Run the same suite across multiple languages.
 - Implement automatic verification depending on your feature's use case.
+- Track Copilot credit consumption per run, test line, and dataset entry.
+- Build and validate Business Central agents in evaluation runs.
 - Run tests as fully automated or semi-automated.
 
-## Step-by-step: using the AI Test Tool
+## Step-by-step: using Evaluation
 
-This goes over how to use the AI Test tool to set up a test suite, execute it, and view the results.
+This section goes over how to use Evaluation to set up a test suite, execute it, and view the results.
 
-**Prerequisite**: You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](ai-test-copilot-datasets.md) and [Writing AI tests](ai-test-copilot-ai-tests.md).
+**Prerequisite**: 
+- You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](ai-test-copilot-datasets.md) and [Writing AI tests](ai-test-copilot-ai-tests.md).
+- You have the **AI TEST TOOLKIT** permission set assigned to your user.
 
 ### Step 1 - upload datasets
 
-1. Open the **AI Test Suite** page.
+1. Open the **AI Eval Suites** page.
 1. Open the **Test Input** page using the **Input Datasets** action.
 1. Import the dataset using the **Import data-driven test inputs** action and uploading your dataset.
 
 Once the dataset is uploaded, you can open and view the dataset in [!INCLUDE [prod_short](includes/prod_short.md)]. From here, you can also view the test input of each line by clicking the test input. You can also set the dataset to **Sensitive** by toggling the **Sensitive** toggle, which hides the test input and output by default, both in the dataset view and results view.
 
-![Image of dataset in BC](media/dataset.png "Dataset")
-
 ### Step 2 - set up the test suite
 
-1. Open the *AI Test Suite* page.
+1. Open the *AI Eval Suites* page.
 1. Upload the previously created datasets for the tests.
 1. Create a test suite using the New action.
 1. Open the newly created test suite.
@@ -49,13 +53,45 @@ Once the dataset is uploaded, you can open and view the dataset in [!INCLUDE [pr
 
 Specify a unique code for the test suite and description. On the header level, select the input dataset that was previously uploaded. On the test line, add the test codeunits previously created. Optionally, specify a line-specific input dataset for each line that requires a different input dataset than the header-level input dataset.
 
-![Image of configurated test suite in BC](media/test-suite.png "Test Suite")
+### Configure suite metadata
+
+As a step toward making AI quality easier to manage at scale, evaluation suites support suite-level configuration parameters. You can configure values such as capability, test type, and execution frequency. These settings apply to all tests in the suite and help keep large evaluation scenarios consistent and structured.
+
+These metadata values are also exported in the suite XML and can be consumed by automation, such as CI/CD pipelines.
+
+```xml
+<Root>
+    <AITSuite Code="DEMO" Description="Demo" TestRunnerId="130451" Capability="Sales Order Agent" Frequency="Daily" TestType="Agent">
+        <Line CodeunitID="133540" Description="Tests" Dataset="SET" />
+    </AITSuite>
+</Root>
+```
+
+### Configure languages for evaluation runs
+
+Business Central solutions are global, and AI experiences must work across languages. Evaluation supports multilingual datasets so you can validate the same scenario across multiple locales.
+
+In the evaluation setup, you can choose the language used for a specific run.
+
+You can also view and configure dataset content with language variants.
+
+Exported suite XML includes language tags that automation can use:
+
+```xml
+<Root>
+    <AITSuite Code="DEMO" Description="Demo" TestRunnerId="130451">
+        <Language Tag="da-DK" Frequency="Weekly" />
+        <Language Tag="en-US" Frequency="Weekly" />
+        <Line CodeunitID="50000" Description="Tests" Dataset="DATA" />
+    </AITSuite>
+</Root>
+```
 
 ### Step 3 - preconfigure the test app 
 
 These steps make sure that the test suite is preconfigured whenever the test app is installed.
 
-1. Open the **AI Test Suites** page.
+1. Open the **AI Eval Suites** page.
 1. Export the previously created test suite using the **Export** action.
 1. In your test app, add the datasets and test suite to the /.resources folder.
 1. Create an install codeunit that imports the test suite and dataset when installed.
@@ -108,18 +144,23 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ### Step 4 - run the test suite
 
-1. Open the **AI Test Suites** page.
+1. Open the **AI Eval Suites** page.
 1. Open the previously created test suite.
-1. Run the AI Test Suite using the **Start** action. Alternatively, run them one line at a time using the **Start** action for each line. Each test method is executed for each dataset line.
+1. Run the AI Eval Suites using the **Start** action. Alternatively, run them one line at a time using the **Start** action for each line. Each test method is executed for each dataset line.
 1. The tests doing the evaluation in AL either fail or succeed based on the condition.
 1. Test Output must be generated for all the tests, which needs to be evaluated externally.
 
 ### Step 5 - inspect the results
 
-1. Open the AL Test Tool and switch to the created test suite to execute each test manually.
+1. Open Evaluation and switch to the created test suite to execute each test manually.
 1. Open **Log Entries** page to see the result of each execution.
 1. Download the test output, which generates the .jsonl file or export the logs to Excel.
-1. Open the AL Test Tool and switch to the created test suite to execute each test manually.
+
+### Step 6 - review Copilot credit usage
+
+AI features consume Copilot credits. Evaluation provides visibility into credit consumption per run, per test line, and per dataset entry.
+
+Use this insight to understand consumption patterns, optimize prompts, and manage costs more effectively.
 
 
 > [!TIP]
@@ -127,7 +168,7 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ## Related information
 
-[Business Central Copilot Test Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
+[Business Central Copilot Evaluation](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
 [Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Create datasets](ai-test-copilot-datasets.md)  

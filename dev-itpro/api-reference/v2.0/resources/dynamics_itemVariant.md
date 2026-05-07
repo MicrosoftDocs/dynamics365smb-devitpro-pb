@@ -4,7 +4,7 @@ description: An item variant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -22,16 +22,17 @@ Represents an item variant in [!INCLUDE[prod_short](../../../includes/prod_short
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[GET itemVariant](../api/dynamics_itemvariant_get.md)|itemVariant|Gets a item variant object.|
-|[DELETE itemVariant](../api/dynamics_itemvariant_delete.md)|none|Deletes a item variant object.|
-|[POST itemVariant](../api/dynamics_itemvariant_create.md)|itemVariant|Creates a item variant object.|
-|[PATCH itemVariant](../api/dynamics_itemvariant_update.md)|itemVariant|Updates a item variant object.|
+|[GET itemVariant](../api/dynamics_itemvariant_get.md)|itemVariant|Gets an item variant object.|
+|[DELETE itemVariant](../api/dynamics_itemvariant_delete.md)|none|Deletes an item variant object.|
+|[POST itemVariant](../api/dynamics_itemvariant_create.md)|itemVariant|Creates an item variant object.|
+|[PATCH itemVariant](../api/dynamics_itemvariant_update.md)|itemVariant|Updates an item variant object.|
 
 ## Navigation
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[item](dynamics_item.md)|item |Gets the item of the itemVariant.|
+|[picture](dynamics_picture.md)|picture |Gets the picture of the itemVariant.|
 
 ## Properties
 

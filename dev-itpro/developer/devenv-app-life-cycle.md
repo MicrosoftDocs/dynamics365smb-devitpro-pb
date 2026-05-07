@@ -10,11 +10,11 @@ ms.reviewer: solsen
 
 # The lifecycle of apps and extensions for Business Central
 
-When you build an app or extension to [!INCLUDE[prod_short](includes/prod_short.md)] and get that published to AppSource, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, [!INCLUDE[prod_short](includes/prod_short.md)] online itself, also gets updated. But what happens after your app gets published?
+When you build an app or extension to [!INCLUDE[prod_short](includes/prod_short.md)] and get that published to Marketplace, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, [!INCLUDE[prod_short](includes/prod_short.md)] online itself, also gets updated. But what happens after your app gets published?
 
-When your app has passed all of our validations and is live on AppSource, customers can install your extension and use it for their business. But you're expected to keep it compliant with the service and update it if something changes.  
+When your app has passed all of our validations and is live on Marketplace, customers can install your extension and use it for their business. But you're expected to keep it compliant with the service and update it if something changes.  
 
-The following sections describe the different upgrade scenarios that we see play out as we update [!INCLUDE[prod_short](includes/prod_short.md)]. Learn more about your responsibility for keeping your app updated and the resources that are available to you in [Maintain AppSource apps and per-tenant extensions](app-maintain.md).  
+The following sections describe the different upgrade scenarios that we see play out as we update [!INCLUDE[prod_short](includes/prod_short.md)]. Learn more about your responsibility for keeping your app updated and the resources that are available to you in [Maintain Marketplace apps and per-tenant extensions](app-maintain.md).  
 
 ## Scenario 1: Business Central service update
 
@@ -30,7 +30,7 @@ You (our partner) add some features to your app and also some minor bug fixes. T
 
 ### Impact of app updates
 
-Internal and delegated administrators can update AppSource apps from the [[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](../administration/tenant-admin-center-manage-apps.md), and regular users can do so by uninstalling and reinstalling an app in the environment. AppSource apps are automatically updated to the latest version during a major update to an environment, unless the **App Update Cadence** has been set to **With minor and major updates** for the environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+Internal and delegated administrators can update Marketplace apps from the [[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](../administration/tenant-admin-center-manage-apps.md), and regular users can do so by uninstalling and reinstalling an app in the environment. Marketplace apps are automatically updated to the latest version during a major update to an environment, unless the **App Update Cadence** has been set to **With minor and major updates** for the environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 ## Scenario 3: Reported bugs in your app
 
@@ -60,13 +60,13 @@ Here's our process when this takes place:
 
 ## Conclusions
 
-You're responsible for your app. You own the process of updating the app and providing upgrade code if the schema changes between versions of the app. If a customer uninstalls your app, and then installs it again later, then when they install the app the second time, they get the latest version from AppSource.  
+You're responsible for your app. You own the process of updating the app and providing upgrade code if the schema changes between versions of the app. If a customer uninstalls your app, and then installs it again later, then when they install the app the second time, they get the latest version from Marketplace.  
 
 ### How Microsoft handles your app
 
 When Microsoft upgrades a tenant with a service update, your app is tested against the new service version. If the app breaks, Microsoft rolls back to the previous healthy state. Your customer never learns that anything was about to break.  
 
-When a tenant uninstalls and reinstalls an extension via the **Extension Management** page or AppSource, there's platform logic that determines whether an *Install* or an *Upgrade* must take place. We detect which version of the extension the tenant previously had installed and perform the appropriate action. Therefore, the result of manually uninstalling/installing the extension is the exact same as an automated upgrade.  
+When a tenant uninstalls and reinstalls an extension via the **Extension Management** page or Marketplace, there's platform logic that determines whether an *Install* or an *Upgrade* must take place. We detect which version of the extension the tenant previously had installed and perform the appropriate action. Therefore, the result of manually uninstalling/installing the extension is the exact same as an automated upgrade.  
 
 Additionally, there isn't any data loss during uninstall, install, or upgrade actions. Data for extensions is stored in its own tables in the tenant database. Before an extension gets installed, it first gets synchronized on the tenant database. This step is implicit and happens automatically when a tenant installs an extension. This synchronization process creates the database tables for the extension. Once the extension is installed and the tenant is using it, extension-specific data get stored in these tables.  
 
@@ -79,7 +79,7 @@ Learn more in [When apps or PTEs can't be updated by Microsoft](app-maintain.md#
 [Publishing and installing an extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  
 [Upgrading extensions](devenv-upgrading-extensions.md)  
-[Add your app to AppSource](../administration/appsource.md)  
+[Add your app to Marketplace](../administration/appsource.md)  
 [Checklist for submitting your app](devenv-checklist-submission.md)  
-[Upgrading AppSource apps in production](devenv-upgrade-appsource-app-in-prod.md)  
-[Maintain AppSource apps and per-tenant extensions](app-maintain.md)  
+[Upgrading Marketplace apps in production](devenv-upgrade-appsource-app-in-prod.md)  
+[Maintain Marketplace apps and per-tenant extensions](app-maintain.md)  

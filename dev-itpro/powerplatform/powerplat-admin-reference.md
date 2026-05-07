@@ -14,16 +14,16 @@ This article provides step-by-step instructions on how to set up and configure v
 
 ## Get the Business Central Virtual Table solution
 
-1. Go to [Business Central Virtual Table on AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity), select **Get it now** and follow the instructions.
+1. Go to [Business Central Virtual Table on Marketplace](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity), select **Get it now** and follow the instructions.
 1. If prompted, sign in to the Power Platform admin center.
 1. Select the Power Platform environment that includes Dataverse, and then select **Install**.
 
-The following solutions are installed in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are installed from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
+The following solutions are installed in [!INCLUDE[dataverse_short](../includes/dataverse_short.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are installed from [Marketplace](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
 - **Dynamics365Company** - Add the **cdm_company** table, which is referenced by all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. All communication to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] requires the company ID in the request. 
 - **MicrosoftBusinessCentralVESupport** - Provides the core support for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table feature.
 - **MicrosoftBusinessCentralERPCatalog** - Provides provides a list of available tables, including ones based on custom APIs, in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance.
-- **MicrosoftBusinessCentralVEAnchor** - Serves as a container, holding information needed for AppSource. 
+- **MicrosoftBusinessCentralVEAnchor** - Serves as a container, holding information needed for Marketplace. 
 - **MicrosoftBusinessCentralERPVE** - Contains virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in this solution. Tables are added automatically at runtime once they're made visible in the **MicrosoftBusinessCentralERPCatalog**.
 
 ## Set up authentication and authorization

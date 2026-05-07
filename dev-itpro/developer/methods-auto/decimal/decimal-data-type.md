@@ -2,7 +2,7 @@
 title: "Decimal data type"
 description: "Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,7 +22,7 @@ The following methods are available on instances of the Decimal data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[ToText()](decimal-totext-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
+|[ToText()](decimal-totext--method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 |[ToText([Boolean])](decimal-totext-boolean-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -13,7 +13,7 @@ ms.author: solsen
 If you want to bring the capabilities of the [!INCLUDE [prod_long](../../includes/prod_long.md)] to your local market, then there are several reasons why you would want to choose [!INCLUDE [prod_short](../../includes/prod_short.md)]:
 
 - Easy to translate and strong base capabilities ready for localization.
-- Reach more customers by showcasing your localization apps on Microsoft AppSource.
+- Reach more customers by showcasing your localization apps on Microsoft Marketplace.
 - [!INCLUDE [prod_long](../../includes/prod_long.md)] provides a proven ERP platform and application for your localization apps, which adapts functional areas to the requirements of the local market.  
 
 Localization apps are simply apps for [!INCLUDE [prod_long](../../includes/prod_long.md)] - learn more about getting onboarded as an app publisher in [Get started with building apps](get-started.md).  

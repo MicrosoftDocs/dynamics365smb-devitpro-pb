@@ -2,7 +2,7 @@
 title: OpenAPI specification version 1.0 for Dynamics 365 Business Central
 description: OpenAPI specification for Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
-ms.date: 11/13/2024
+ms.date: 02/16/2025
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen

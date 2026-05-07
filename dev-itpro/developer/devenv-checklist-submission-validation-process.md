@@ -1,6 +1,6 @@
 ---
-title: AppSource Technical validation process FAQ
-description: Describes the most common questions about the validation process when submitting your app to AppSource for Business Central.
+title: Marketplace Technical validation process FAQ
+description: Describes the most common questions about the validation process when submitting your app to Marketplace for Business Central.
 author: qutreson
 ms.date: 10/08/2025
 ms.reviewer: solsen
@@ -9,7 +9,7 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# AppSource technical validation process FAQ
+# Marketplace technical validation process FAQ
 
 This article addresses some of the most frequently asked questions about how submissions are handled and how to address the most common scenarios.
 
@@ -35,28 +35,28 @@ When you're adding new localizations in [!INCLUDE[prod_short](../includes/prod_s
 
 ## Against which baselines are my apps validated?
 
-The service verifies that your extensions don't introduce breaking changes by comparing them to the latest version available in AppSource for each country/region validated.
+The service verifies that your extensions don't introduce breaking changes by comparing them to the latest version available in Marketplace for each country/region validated.
 
 You can know which versions of your extensions were used as baseline during the breaking change validation by enabling Azure Application Insights in your extension and running this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
 > [!IMPORTANT]  
-> As soon as your app has been uploaded to the AppSource marketplace, it will be used as a baseline during the technical validation of your next submissions. As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes; breaking changes on tables or table extensions. This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you're still developing it and expect to change it soon.
+> As soon as your app has been uploaded to the Marketplace, it will be used as a baseline during the technical validation of your next submissions. As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes; breaking changes on tables or table extensions. This applies also if your extension isn't used by customers yet. You should then not submit your app to the Marketplace if you're still developing it and expect to change it soon.
 
 ## Which apps are validated in my submission?
 
 The main app and the libraries required by the main app are validated and uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)]. If you have included libraries, which aren't required by the main app, they're ignored during the validation and aren't uploaded to the service.
 
-For example, let's consider an app A, which has an offer in the AppSource marketplace and A depends on a library named B, which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, then only A and B are validated. C and D are ignored because they aren't required by the main app A. If B is updated to depend on C and D, then all apps in the submission are now validated by the service.
+For example, let's consider an app A, which has an offer in the Marketplace and A depends on a library named B, which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, then only A and B are validated. C and D are ignored because they aren't required by the main app A. If B is updated to depend on C and D, then all apps in the submission are now validated by the service.
 
 > [!NOTE]  
 > If some apps in your submission already have been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] with the same version for some countries/regions, then the app won't be validated again for these countries/regions.
 
 > [!IMPORTANT]
-> If one or more libraries in your submission have their own offer, their listings in the AppSource marketplace won't be updated automatically. In order to keep the listings in sync with the version of the apps uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)], you should submit a submission for their related offers.
+> If one or more libraries in your submission have their own offer, their listings in the Marketplace won't be updated automatically. In order to keep the listings in sync with the version of the apps uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)], you should submit a submission for their related offers.
 
 ## How long does the 'Automated application validation' take?
 
-During 'Automated application validation', the apps in your submission are validated for each of the country/regions and each of the releases of [!INCLUDE[prod_short](../includes/prod_short.md)] targeted. If you already have a version of these extensions published to AppSource, then it also runs the breaking change validation using the apps currently in AppSource as baseline. Depending on the size of your app, the validation time can vary. Submissions are processed within a few minutes and we expect all submissions to be processed under 3 hours. However, if your app contains thousands of AL files, this process can take longer. We would then recommend splitting the app in smaller modules as it would also improve the development experience and the maintainability of your code base.
+During 'Automated application validation', the apps in your submission are validated for each of the country/regions and each of the releases of [!INCLUDE[prod_short](../includes/prod_short.md)] targeted. If you already have a version of these extensions published to Marketplace, then it also runs the breaking change validation using the apps currently in Marketplace as baseline. Depending on the size of your app, the validation time can vary. Submissions are processed within a few minutes and we expect all submissions to be processed under 3 hours. However, if your app contains thousands of AL files, this process can take longer. We would then recommend splitting the app in smaller modules as it would also improve the development experience and the maintainability of your code base.
 
 ## How many automated tests do we need to run for validation and how high must the test coverage be?  
 
@@ -64,7 +64,7 @@ When setting up your offer in Partner Center, you must still include a test pack
 
 Test automation is something we expect you to run, to test your app, and to make sure that the quality of your app is high. We don't run tests of your apps, nor do we have a set value for a required code coverage. Instead, we rely on you to test your app properly to give your customers a good experience.
 
-## When I submit an app to AppSource; do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
+## When I submit an app to Marketplace; do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
 
 When setting up your offer in Partner Center, you must still include a document in 'Key Usage Scenario', but it isn't used during the validation of the submission.
 
@@ -72,7 +72,7 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 
 ## When are my apps ready to be installed in my Business Central environment?
 
-Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the AppSource marketplace.
+Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the Marketplace.
 
 Before going public with the submitted app version, you can test it after the "Preview creation" step, either yourself as a publisher or with select customers. In order to trigger an install of the preview version, customers must receive and use the app preview install URL:
 
@@ -86,7 +86,7 @@ Where
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
-Learn more about AppSource app preview in the section [Questions about AppSource app previews](devenv-checklist-submission-app-preview.md).
+Learn more about Marketplace app preview in the section [Questions about Marketplace app previews](devenv-checklist-submission-app-preview.md).
 
 ## When should I include my library apps as part of my submission?
 
@@ -105,14 +105,14 @@ If you receive an error with the diagnostic code `AVS0107` and a message similar
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
-- If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what caused the error. If you're using Azure Application Insights, information about the validation results is logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started. If you're experiencing issues with Azure Application Insights, refer to [Questions about Azure Application Insights usage during AppSource submissions](devenv-checklist-submission-app-insights.md).
+- If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what caused the error. If you're using Azure Application Insights, information about the validation results is logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started. If you're experiencing issues with Azure Application Insights, refer to [Questions about Azure Application Insights usage during Marketplace submissions](devenv-checklist-submission-app-insights.md).
 - If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. Learn more in "When should I include my library apps as part of my submission?".
 - If this stage failed with an error message similar to `The manifest property 'X' of the extension 'My App' by 'Publisher Name' (version '1.2.3.4') specifies 'Y' while the offer description specifies 'Z'.`, you should either change your app.json file or the offer description to match each other and submit a new version. Offer description changes in Partner Center can be made in the "Properties" section of your offer for the app version, "Offer listing" section for the app name, and your publisher name can be found in Partner Center under `Account Settings > Organizational Profile > Legal > Developer > Publisher Name` or by following [this link](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer). When changing any of these, remember to consult the section on this page called "Questions about app identity".
 - If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission doesn't target any country/region currently available in [!INCLUDE[prod_short](../includes/prod_short.md)]. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in [!INCLUDE[prod_short](../includes/prod_short.md)] and resubmit your offer. Generally, it's possible to upload apps for new localizations, a few weeks before they're made available to customers.
 - If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') contains inconsistent information about the package id/name/publisher/version`, it means that something went wrong when the package included in your submission was built. In order to mitigate the issue, you must rebuild the package and submit it again.
-- If this stage failed with an error message similar to `The App ID '<some-Guid>' is already used for Per-Tenant-Extensions in Business Central and cannot be used for the AppSource extension with name 'MyApp' and publisher 'MyPublisher'`, this means that there exists one or many PTEs with the same App ID in the service. Since [!INCLUDE[prod_short](../includes/prod_short.md)] doesn't support having AppSource apps and PTEs with the same App ID, it's then recommended to change the ID of your extension before submitting it in Partner Center. Learn more in [Moving a PTE to AppSource](devenv-extension-moving-scope.md#moving-a-pte-to-appsource). If the PTEs with that App ID aren't used in any customer environments anymore, you can create a support case in Partner Center to request an exception.
+- If this stage failed with an error message similar to `The App ID '<some-Guid>' is already used for Per-Tenant-Extensions in Business Central and cannot be used for the Marketplace extension with name 'MyApp' and publisher 'MyPublisher'`, this means that there exists one or many PTEs with the same App ID in the service. Since [!INCLUDE[prod_short](../includes/prod_short.md)] doesn't support having Marketplace apps and PTEs with the same App ID, it's then recommended to change the ID of your extension before submitting it in Partner Center. Learn more in [Moving a PTE to Marketplace](devenv-extension-moving-scope.md#moving-a-pte-to-marketplace). If the PTEs with that App ID aren't used in any customer environments anymore, you can create a support case in Partner Center to request an exception.
 
-- If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't live up to the code signing requirement of AppSource for [!INCLUDE[prod_short](../includes/prod_short.md)]. In order to correctly sign your app, check out [Questions about code-signing validation](devenv-checklist-submission-code-sign.md), and take a look at the article [Sign an app package file](devenv-sign-extension.md).
+- If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't live up to the code signing requirement of Marketplace for [!INCLUDE[prod_short](../includes/prod_short.md)]. In order to correctly sign your app, check out [Questions about code-signing validation](devenv-checklist-submission-code-sign.md), and take a look at the article [Sign an app package file](devenv-sign-extension.md).
 
 - If this stage failed with the following error message `The submitted package '{0}' by '{1}' was found to contain malware. If you believe this is an error, please retry your submission. If it fails again, follow the documentation to submit your app file for further investigation.`, your submission was flagged for containing malware. First, examine your included artifacts and resources to ensure that they're safe to include in the submission. Make sure you have the latest Windows updates and scan your files with Windows Defender to identify and mitigate the infected files. If you have reason to believe that the detection is a false positive, you can follow the documentation to [Submit a file for malware analysis](/defender-xdr/submission-guide#how-do-i-submit-a-file-to-microsoft-for-analysis) so that it can be manually reviewed.
 

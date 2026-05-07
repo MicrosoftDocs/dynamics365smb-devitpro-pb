@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="905"
+   height="527"
+   viewBox="0 0 905 527"
+   role="img"
+   aria-label="Business Central MCP authentication sequence using PRM and OAuth 2.0 Authorization Code with PKCE"
+   version="1.1"
+   id="svg23"
+   sodipodi:docname="mcp-auth-flow.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview23"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.7290909"
+     inkscape:cx="550"
+     inkscape:cy="290.0368"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg23" />
+  <style
+     id="style1">
+    text {
+      font-family: Segoe UI, Arial, sans-serif;
+      font-size: 14px;
+      fill: #242424;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .line {
+      stroke: #8A8886;
+      stroke-width: 1;
+    }
+    .arrow {
+      stroke: #0078D4;
+      stroke-width: 1.6;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .dashed {
+      stroke-dasharray: 6,4;
+    }
+    .step {
+      font-weight: 600;
+    }
+    .subtle {
+      fill: #605E5C;
+      font-size: 12px;
+    }
+    .endpoint {
+      fill: #323130;
+      font-size: 12px;
+    }
+  </style>
+  <defs
+     id="defs1">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9.5"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0,7 0,0 10,3.5 "
+         fill="#0078d4"
+         id="polygon1" />
+    </marker>
+  </defs>
+  <!-- Title -->
+  <text
+     x="436.06729"
+     y="15.80652"
+     text-anchor="middle"
+     class="title"
+     id="text1">Business Central MCP authentication flow</text>
+  <text
+     x="436.06729"
+     y="35.806519"
+     text-anchor="middle"
+     class="subtle"
+     id="text2">401 challenge, PRM discovery, OAuth 2.0 Authorization Code with PKCE</text>
+  <!-- Participants -->
+  <text
+     x="36.067299"
+     y="75.806519"
+     text-anchor="middle"
+     id="text3">MCP client</text>
+  <text
+     x="306.06729"
+     y="75.806519"
+     text-anchor="middle"
+     id="text4">MCP server</text>
+  <text
+     x="306.06729"
+     y="95.806519"
+     text-anchor="middle"
+     class="endpoint"
+     id="text5">https://mcp.businesscentral.dynamics.com</text>
+  <text
+     x="576.06732"
+     y="75.806519"
+     text-anchor="middle"
+     id="text6">PRM endpoint</text>
+  <text
+     x="576.06732"
+     y="95.806519"
+     text-anchor="middle"
+     class="subtle"
+     id="text7">/.well-known/protected-resource-metadata</text>
+  <text
+     x="846.06732"
+     y="75.806519"
+     text-anchor="middle"
+     id="text8">Microsoft Entra ID</text>
+  <!-- Lifelines -->
+  <line
+     x1="36.067299"
+     y1="113.80652"
+     x2="36.067299"
+     y2="523.80652"
+     class="line"
+     id="line8" />
+  <line
+     x1="306.06729"
+     y1="113.80652"
+     x2="306.06729"
+     y2="523.80652"
+     class="line"
+     id="line9" />
+  <line
+     x1="576.06732"
+     y1="113.80652"
+     x2="576.06732"
+     y2="523.80652"
+     class="line"
+     id="line10" />
+  <line
+     x1="846.06732"
+     y1="113.80652"
+     x2="846.06732"
+     y2="523.80652"
+     class="line"
+     id="line11" />
+  <!-- 1 -->
+  <path
+     d="M 36.067298,143.80652 H 306.0673"
+     class="arrow"
+     id="path11" />
+  <text
+     x="171.06729"
+     y="131.80652"
+     text-anchor="middle"
+     id="text11"><tspan
+   class="step"
+   id="tspan11">1.</tspan> Unauthenticated request</text>
+  <!-- 2 -->
+  <path
+     d="M 306.0673,183.80652 H 36.067298"
+     class="arrow dashed"
+     id="path12" />
+  <text
+     x="171.06729"
+     y="171.80652"
+     text-anchor="middle"
+     id="text12"><tspan
+   class="step"
+   id="tspan12">2.</tspan> 401 Unauthorized</text>
+  <text
+     x="169.91061"
+     y="197.01157"
+     text-anchor="middle"
+     class="subtle"
+     id="text13">WWW-Authenticate → PRM</text>
+  <!-- 3 -->
+  <path
+     d="M 36.067298,228.80652 H 576.0673"
+     class="arrow"
+     id="path13" />
+  <text
+     x="288.71713"
+     y="223.85489"
+     text-anchor="middle"
+     id="text14"><tspan
+   class="step"
+   id="tspan13">3.</tspan> Retrieve PRM document</text>
+  <path
+     d="M 576.0673,268.80652 H 36.067298"
+     class="arrow dashed"
+     id="path14" />
+  <text
+     x="306.06729"
+     y="259.80652"
+     text-anchor="middle"
+     id="text15">PRM response</text>
+  <text
+     x="306.06729"
+     y="279.80652"
+     text-anchor="middle"
+     class="subtle"
+     id="text16">Identifies Microsoft Entra ID as authorization server</text>
+  <!-- 4 -->
+  <path
+     d="M 36.067298,318.80652 H 846.0673"
+     class="arrow"
+     id="path16" />
+  <text
+     x="441.06729"
+     y="308.80652"
+     text-anchor="middle"
+     id="text17"><tspan
+   class="step"
+   id="tspan16">4.</tspan> Authorization request (OAuth 2.0 + PKCE)</text>
+  <text
+     x="439.91061"
+     y="329.9632"
+     text-anchor="middle"
+     class="subtle"
+     id="text18">code_challenge, user sign-in</text>
+  <path
+     d="M 846.0673,358.80652 H 36.067298"
+     class="arrow dashed"
+     id="path18" />
+  <text
+     x="441.06729"
+     y="348.80652"
+     text-anchor="middle"
+     id="text19">Authorization code</text>
+  <path
+     d="M 36.067298,398.80652 H 846.0673"
+     class="arrow"
+     id="path19" />
+  <text
+     x="441.06729"
+     y="388.80652"
+     text-anchor="middle"
+     id="text20">Token request (code + code_verifier)</text>
+  <path
+     d="M 846.0673,438.80652 H 36.067298"
+     class="arrow dashed"
+     id="path20" />
+  <text
+     x="441.06729"
+     y="428.80652"
+     text-anchor="middle"
+     id="text21">Access token</text>
+  <!-- 5 -->
+  <path
+     d="M 36.067298,478.80652 H 306.0673"
+     class="arrow"
+     id="path21" />
+  <text
+     x="171.06729"
+     y="468.80652"
+     text-anchor="middle"
+     id="text22"><tspan
+   class="step"
+   id="tspan21">5.</tspan> Authorized requests</text>
+  <text
+     x="171.06729"
+     y="489.9632"
+     text-anchor="middle"
+     class="subtle"
+     id="text23">Authorization: Bearer &lt;access_token&gt;</text>
+</svg>

@@ -15,7 +15,6 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 
 ## Considerations before you begin
 
-- You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
 - You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. Learn more in the [Users who can export databases](#users-who-can-export-databases) section.
 - You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
@@ -47,10 +46,10 @@ The next step is to generate a shared access signature (SAS) that provides secur
 1. In the **Allowed services** section of the shared access signature pane, select **Blob**, and clear the other options.
 1. In the **Allowed resource types** section, select **Container** and **Object**, and clear the other options.
 1. In the **Allowed permissions** section, mark **Read**, **Write**, **Delete**, and **Create**, and clear the other options.
-1. Select a start and end date and time for the SAS. A minimum expiration window of 24 hours from the initiation of the export is required.
+1. Select a start and end date and time for the SAS. A minimum expiration window of 72 hours from the initiation of the export is required.
 
     > [!TIP]
-    > It's a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation. However, the SAS must be valid for a minimum of 24 hours.
+    > It's a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation. However, the SAS must be valid for a minimum of 72 hours.
 
 1. In the **Allowed protocols** section, select **HTTPS only**.
 1. Select **Generate SAS and connection string**.
@@ -62,7 +61,7 @@ For more information on generating and using a SAS, see [Grant limited access to
 
 After you created the Azure storage account and generated the SAS URI, you can then create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-1. On the **Environments** list page, choose the relevant production environment to view the environment details.
+1. On the **Environments** list page, choose the relevant environment to view the environment details.
 1. On the action ribbon of the environment details, choose **Database**, and then choose **Create Database Export**.
 1. In the **File Name** field, specify a name for the export file, or leave the default value.
 1. In the **SAS URI** field, specify the **Blob service SAS URL** value that you copied in the previous section.

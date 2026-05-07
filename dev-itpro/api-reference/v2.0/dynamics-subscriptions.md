@@ -4,7 +4,7 @@ description: Overview of how to manage subscriptions to Dynamics 365 Business Ce
 author: SusanneWindfeldPedersen
 ms.topic: concept-article
 ms.devlang: al
-ms.date: 09/27/2024
+ms.date: 03/23/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -16,10 +16,10 @@ Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short
 In the sections that follow, replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on the environment by following the [guideline](endpoints-apis-for-dynamics.md).
 
 > [!IMPORTANT]  
-> With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RCF 7159, section 8.1.
+> With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RFC 7159, section 8.1.
 
 > [!NOTE]  
-> When an entity is changed by a delegated admin, a notification will not be triggered immediately. Only when an entity is changed by a licensed user will the notification be sent. This notification will contain changes made by all users - also the change made by the delegated admin.
+> When an entity is changed by a delegated admin, a notification isn't triggered immediately. Only when an entity is changed by a licensed user the notification is sent. This notification contains changes made by all users - also the change made by the delegated admin.
 
 ## Register a webhook subscription
 
@@ -52,7 +52,7 @@ If you're subscribing to a custom API page, both the URL you send the subscripti
 
 ## Renewing the subscription
 
-Subscriptions will expire after three days, if not renewed before. Subscriptions are renewed by issuing a [PATCH](api/dynamics_subscriptions_update.md) request to the subscription.
+Subscriptions expire after three days, if not renewed before. Subscriptions are renewed by issuing a [PATCH](api/dynamics_subscriptions_update.md) request to the subscription.
 
 ```
 PATCH https://{businesscentralPrefix}/api/v2.0/subscriptions({id}) 
@@ -117,7 +117,7 @@ The `"changeType"` parameter indicates the change type:
   Notifications aren't sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds. By default, the system waits 30 seconds after the first change to an entity before it sends the notification. During the 30-second delay, if more than a 1,000 records are changed, a single `collection` notification is sent&mdash;otherwise, a separate notification is sent for each change. With Business Central on-premises, this time delay and notification limit are configurable.  
 
   > [!TIP]
-  > - You can subscribe to integration event `OnGetDelayTime` in codeunit `API Webhook Notification Mgt.` to change the delay time. Keep in mind that the delay time is in millisecconds.
+  > - You can subscribe to integration event `OnGetDelayTime` in codeunit `API Webhook Notification Mgt.` to change the delay time. Keep in mind that the delay time is in milliseconds.
   > - You can subscribe to integration event `OnGetMaxNumberOfNotifications` in codeunit `API Webhook Notification Send` to change the notification threshold for collection.
 
 <!--

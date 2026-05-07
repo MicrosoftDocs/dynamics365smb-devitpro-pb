@@ -32,15 +32,15 @@ The type of entitlement. When a user logs into Business Central, it's checked if
 |**Application**|The entitlement is associated with a Microsoft Entra application.|
 |**ApplicationScope**|The entitlement is associated with a Microsoft Entra application scope.|
 |**Implicit**|Internal use only.|
-|**Unlicensed**|Entitlement applied when no other entitlements from an app has been applied. This type is used to enable side-by-side support for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](../devenv-sell-apps-appsource.md).|
-|**Group**|The entitlement is associated with a specific Microsoft Entra group, identified by the object ID specified in the id property. For more information, see [Selling Business Central apps through AppSource](../devenv-sell-apps-appsource.md).|
+|**Unlicensed**|Entitlement applied when no other entitlements from an app has been applied. This type is used to enable side-by-side support for transactability-enabled apps on Marketplace. For more information, see [Selling Business Central apps through Marketplace](../devenv-sell-apps-appsource.md).|
+|**Group**|The entitlement is associated with a specific Microsoft Entra group, identified by the object ID specified in the id property. For more information, see [Selling Business Central apps through Marketplace](../devenv-sell-apps-appsource.md).|
 
 ## Remarks
 
 > [!NOTE]  
-> With [!INCLUDE [prod_short](../../includes/prod_short.md)] 2023 release wave 1, the entitlement type `Unlicensed` is introduced. This type is used for scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans. 
+> With [!INCLUDE [prod_short](../../includes/prod_short.md)] 2023 release wave 1, the entitlement type `Unlicensed` is introduced. This type is used for scenarios when the user isn't licensed through entitlements mapping to Marketplace offer plans. 
 > 
-> The `Unlicensed` type of entitlement is only applied to users who don't have a plan, that is a license, defined in the app’s entitlements. You can test for the unlicensed scenario and perform your custom licensing as before for existing customers, allowing side-by-side support while transitioning existing customers to the new AppSource transactability model. For more information, see [Selling Business Central apps through AppSource](../devenv-sell-apps-appsource.md).
+> The `Unlicensed` type of entitlement is only applied to users who don't have a plan, that is a license, defined in the app’s entitlements. You can test for the unlicensed scenario and perform your custom licensing as before for existing customers, allowing side-by-side support while transitioning existing customers to the new Marketplace transactability model. For more information, see [Selling Business Central apps through Marketplace](../devenv-sell-apps-appsource.md).
 
 <!--
 > [!NOTE]  

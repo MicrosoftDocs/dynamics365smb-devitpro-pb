@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
 ms.date: 06/16/2023
-
 ms.topic: how-to
 ms.reviewer: solsen
 ---
@@ -14,14 +13,13 @@ ms.reviewer: solsen
 
 [!INCLUDE [online_only](../developer/includes/online_only.md)]
 
-
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
 The user can obtain a delta link from each entity API in the library by including the `odata.track-changes` preference in the header of the request. The response to the GET request returns a deltaLink parameter, providing an opaque URL.
 
 On subsequent calls, the API consumer can use the deltaLink URL, which will provide the changes that have occurred in the data set since the initial request was made including the following points.
 
-+ Any records that haven't changed will exclude from the resulting response
++ Any records that haven't changed will be excluded from the resulting response
 + Any added or updated entries appear as regular JSON objects with their current properties
 + Any records that have been removed will include in the response but represented only by their `"id"` and a `@odata.context` URL followed by a `/$deletedEntity`
 

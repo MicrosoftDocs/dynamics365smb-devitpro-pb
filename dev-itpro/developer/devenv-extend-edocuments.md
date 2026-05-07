@@ -615,7 +615,6 @@ If you think there are any essential features that could enhance the ease of dev
 
 ## Related information
 
-- [Extending e-documents functionality (deprecated)](devenv-extend-edocuments-old.md)
 - [Set up e-documents in Business Central](/dynamics365/business-central/finance-how-setup-edocuments)  
 - [Use e-documents in the sales process](/dynamics365/business-central/finance-how-use-edocuments)  
 - [Work with [!INCLUDE[prod_short](includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)  

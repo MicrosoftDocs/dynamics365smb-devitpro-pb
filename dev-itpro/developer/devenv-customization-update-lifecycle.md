@@ -13,7 +13,7 @@ ms.reviewer: jswymer
 
 When you create a tenant-specific customization, or an extension that is scoped to a single [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (often referred to as per-tenant extensions), you must take the lifecycle of the extension into consideration. For more information about the extension lifecycle and events that can cause incompatibilities between the extension and base application, see [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md). 
 
-You are responsible for your extension. You own the process of updating the extension and providing upgrade code if the schema changes between versions of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application. When an update is available for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment, all extensions, both AppSource extensions and tenant customizations, must be compatible with the next version of the base application before the update can be installed on the environment. You are responsible for ensuring that your extensions are compatible with the update version.
+You are responsible for your extension. You own the process of updating the extension and providing upgrade code if the schema changes between versions of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application. When an update is available for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment, all extensions, both Marketplace extensions and tenant customizations, must be compatible with the next version of the base application before the update can be installed on the environment. You are responsible for ensuring that your extensions are compatible with the update version.
 
 In this article, we describe the process for ensuring update compatibility for tenant customizations.
 
@@ -36,7 +36,7 @@ The notification is similar to that provided by the automated extension validati
 
 ## Automatic Extension Removal
 
-The publisher of an extension must maintain compatibility with the new release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information about automatic removal of incompatible extensions, see [Maintain AppSource apps and PTEs in Business Central online](app-maintain.md).
+The publisher of an extension must maintain compatibility with the new release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information about automatic removal of incompatible extensions, see [Maintain Marketplace apps and PTEs in Business Central online](app-maintain.md).
 
 ## Related information
 

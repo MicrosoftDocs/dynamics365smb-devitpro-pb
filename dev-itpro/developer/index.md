@@ -2,7 +2,7 @@
 title: AL Language reference overview
 description: Library of AL reference for developing for Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
-ms.date: 05/14/2025
+ms.date: 03/23/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -20,7 +20,8 @@ This section provides comprehensive reference documentation for the AL programmi
 | Reference Area | Description | Common Uses |
 |---------------|-------------|------------|
 | [Diagnostics](diagnostics/diagnostics-overview.md) | Error codes and troubleshooting | Resolve compiler errors |
-| [AVS diagnostics](avs-diagnostics/avs-diagnostics-overview.md) | AppSource validation errors | Prepare apps for AppSource |
+| [AVS diagnostics](avs-diagnostics/avs-diagnostics-overview.md) | Marketplace validation errors | Prepare apps for Marketplace |
+| Analyzers | Code analysis tools | Improve code quality |
 | [Data types and methods](methods-auto/library.md) | AL data types and their available methods | Manipulate data in your code |
 | [Method attributes](attributes/devenv-method-attributes.md) | Decorators that affect method behavior | Control method visibility and behavior |
 | [Properties](properties/devenv-properties.md) | Settings for objects and elements | Configure AL objects |

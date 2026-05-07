@@ -112,7 +112,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Search, navigate and use app symbols as context for GitHub Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/search-navigate-use-app-symbols-as-context-github-copilot) |
 |                           | [View build metadata in Extension Management page](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-build-metadata-extension-management-page) |
 |                           | [Work with multiline strings in AL](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/work-multiline-strings-al) |
-|                           | [Self-service App Key Vault onboarding for AppSource apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/self-service-app-key-vault-onboarding-appsource-apps) |
+|                           | [Self-service App Key Vault onboarding for Marketplace apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/self-service-app-key-vault-onboarding-appsource-apps) |
 |                           | [Use new IncStr parameter to change integers by more than 1 in string variables](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-incstr-parameter-change-integers-more-than-1-string-variables) |
 |                           | [Convert simple type values to text using new ToText method](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/convert-simple-type-values-text-using-new-totext-method) |
 |                           | [Create lists and dictionaries of interfaces in AL](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-list-dictionary-interfaces-al) |

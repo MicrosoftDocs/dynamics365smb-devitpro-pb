@@ -4,7 +4,7 @@ description: Learn how to create datasets for AI tests in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
@@ -21,11 +21,11 @@ A **dataset** is the foundation of AI testing in [!INCLUDE [prod_short](includes
 > [!TIP]
 > The full source code for the example used in this article can be found in the [Marketing Text Simple](ai-test-copilot-testtool.md) demo project.
 
-AI tests in [!INCLUDE [prod_short](includes/prod_short.md)] rely on datasets defined in either **JSONL** or **YAML** format. These datasets contain both test input and expected data values used by the AI Test Tool.
+AI tests in [!INCLUDE [prod_short](includes/prod_short.md)] rely on datasets defined in either **JSONL** or **YAML** format. These datasets contain both test input and expected data values used by Evaluation.
 
 ### Define a JSONL dataset
 
-While there's no rigid schema required, the AI Test Tool supports certain common elements like `test_setup` and `expected_data`. Using these keywords helps create a consistent structure.
+While there's no rigid schema required, Evaluation supports certain common elements like `test_setup` and `expected_data`. Using these keywords helps create a consistent structure.
 
 Here's an example of a valid JSONL dataset:
 
@@ -65,6 +65,20 @@ tests:
       tagline_max_length: 20
 ```
 
+Evaluation also supports dataset metadata and language tags in YAML. This format is useful when you run multilingual evaluations and want one logical dataset identity across test runs.
+
+```yaml
+name: DATA
+language: en-US
+tests:
+   - name: Case 1
+      query: Example query
+      test_setup: Setup.yaml
+   - name: Case 2
+      query: Example query
+      test_setup: Setup.yaml
+```
+
 ## Get data for your tests
 
 When you create AI tests, the data you use is as important as the AI features you're testing. Quality, consistency, and realism of data are critical for ensuring that your tests are comprehensive and meaningful.
@@ -100,9 +114,9 @@ When you create AI tests, the data you use is as important as the AI features yo
 
 ## Related information
 
-[Business Central Copilot Test Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
+[Business Central Copilot Evaluation](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
 [Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
-[AI Test Tool](ai-test-copilot-testtool.md)  
+[Evaluation](ai-test-copilot-testtool.md)  
 [Write AI tests](ai-test-copilot-ai-tests.md)  
 [Best practices for testing the Copilot capability](ai-test-copilot-bestpractices.md)  

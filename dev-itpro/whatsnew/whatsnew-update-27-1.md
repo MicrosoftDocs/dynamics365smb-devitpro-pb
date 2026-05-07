@@ -49,7 +49,7 @@ No localization updates for 27.1.
 
 ## Release plan
 
-Do you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2025 release wave 2 (release from October 2025 to April 2026)? Learn more at [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/)<!--(https://aka.ms/BCReleasePlan)-->.
+Do you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2025 release wave 2 (release from October 2025 to April 2026)? Learn more at [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/)<!--(https://aka.ms/BCReleasePlan)-->.
 
 ## Upgrade to 27.1
 

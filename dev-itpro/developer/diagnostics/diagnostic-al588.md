@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0588"
 description: "The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'. Please update the subscriber type to match the publisher.
+The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'. Update the subscriber type to match the publisher.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

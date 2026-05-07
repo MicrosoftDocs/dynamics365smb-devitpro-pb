@@ -2,7 +2,7 @@
 title: "Compiler Error AL0124"
 description: "The property '{0}' cannot be used in this context."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The property '{0}' cannot be used in this context.
+The property '{0}' cannot be used in this context. Verify the property is available for the current object type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

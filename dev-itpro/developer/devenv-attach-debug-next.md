@@ -2,7 +2,7 @@
 title: Attach and debug next
 description: Attach to a session on a specified server and debug for Web API sessions.
 ms.custom: bap-template
-ms.date: 01/10/2024
+ms.date: 03/04/2026
 ms.reviewer: solsen
 ms.topic: how-to
 author: SusanneWindfeldPedersen
@@ -28,7 +28,7 @@ You can activate the attach functionality by creating a new configuration in the
 > [!NOTE]  
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, two new properties are added to the launch configuration: `sessionId` and `userId`, which allow attaching to an ongoing session and also debugging on behalf of another user.
 
-In the attach configuration, the `breakOnNext` setting specifies the next client to break on when the debugging session starts and allows only one option. The available options are: `WebServiceClient`, `WebClient`, and `Background`. On a sandbox environment, you can only attach to and break on the next `WebServiceClient` session.
+In the attach configuration, the `breakOnNext` setting specifies the next client to break on when the debugging session starts and allows only one option. The available options are: `WebServiceClient`, `WebClient`, `Background`, and `Agent`. On a sandbox environment, you can only attach to and break on the next `WebServiceClient` or `Agent` session.
 
 Two other important properties are `sessionId` and `userId`. `sessionId` specifies an ongoing session of the specified type in `breakOnNext`. This session should belong to the user in `userId` property if specified.
 
@@ -45,23 +45,21 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 The following example illustrates a configuration for a local server, where you want to debug a web client session.
 
 ```json
-...
 {
-            "name": "My attach to local server",
-            "type": "al",
-            "request": "attach",
-            "server": "https://localhost",
-            "serverInstance": "BC200",
-            "authentication": "Windows",
-            "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10,
-            "breakOnNext": "WebClient"
-        }
-...
+    "name": "My attach to local server",
+    "type": "al",
+    "request": "attach",
+    "server": "https://localhost",
+    "serverInstance": "BC200",
+    "authentication": "Windows",
+    "breakOnError": true,
+    "breakOnRecordWrite": false,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "WebClient"
+}
 ```
 
 ## Example (attach to an online sandbox web services session)
@@ -69,32 +67,73 @@ The following example illustrates a configuration for a local server, where you 
 The following example illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
 
 ```json
-...
 {
-            "name": "Attach to online sandbox",
-            "type": "al",
-            "request": "attach",
-            "environmentType": "Sandbox",
-            "environmentName": "MyEnvironment",
-            "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10,
-            "breakOnNext": "WebServiceClient"
-        }
-...
+    "name": "Attach to online sandbox",
+    "type": "al",
+    "request": "attach",
+    "environmentType": "Sandbox",
+    "environmentName": "MyEnvironment",
+    "breakOnError": true,
+    "breakOnRecordWrite": false,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "WebServiceClient"
+}
+```
+
+## Example (attach to an agent session on a cloud sandbox)
+
+The following example illustrates a configuration for attaching to an agent session on a cloud sandbox.
+
+```json
+{
+    "name": "Attach to agent on cloud sandbox",
+    "type": "al",
+    "request": "attach",
+    "environmentType": "Sandbox",
+    "environmentName": "MyEnvironment",
+    "breakOnError": true,
+    "breakOnRecordWrite": false,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "Agent"
+}
+```
+
+## Example (attach to an agent session on your own server)
+
+The following example illustrates a configuration for attaching to an agent session on your own server.
+
+```json
+{
+    "name": "Attach to agent on own server",
+    "type": "al",
+    "request": "attach",
+    "server": "https://localhost",
+    "serverInstance": "BC200",
+    "authentication": "Windows",
+    "breakOnError": true,
+    "breakOnRecordWrite": false,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "Agent"
+}
 ```
 
 ## Supported Attach configurations
 
 The following configurations for attach are supported:
 
-|Business Central |Web client    |Web service client |Background session|
-|-----------------|--------------|-------------------|------------------|
-|On-premises      | Supported    |     Supported     |   Supported      |
-|Sandbox          | Supported    |     Supported     |   Supported      |
+|Business Central |Web client    |Web service client |Background session|Agent session |
+|-----------------|--------------|-------------------|------------------|--------------|
+|On-premises      | Supported    |     Supported     |   Supported      | Supported    |
+|Sandbox          | Supported    |     Supported     |   Supported      | Supported    |
 
 
 ## How to start an attach session

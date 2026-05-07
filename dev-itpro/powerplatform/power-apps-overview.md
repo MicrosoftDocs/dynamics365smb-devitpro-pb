@@ -1,8 +1,8 @@
 ---
 title: Business Central and Power Apps
 description: Get an overview Business Central and Power Apps integration 
-author: andersgMSFT
-ms.author: andersg
+author: jswymer
+ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: overview
 ms.date: 05/17/2023

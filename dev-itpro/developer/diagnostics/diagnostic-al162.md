@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0162"
-description: "'{0}' is not a valid trigger."
+description: "'{0}' is not a valid trigger for this object type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,11 +14,11 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-'{0}' is not a valid trigger.
+'{0}' is not a valid trigger for this object type. Check the object documentation for supported triggers.
 
 
 ## Description
-The referenced trigger is not valid.  
+The referenced trigger is not valid for this object type.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

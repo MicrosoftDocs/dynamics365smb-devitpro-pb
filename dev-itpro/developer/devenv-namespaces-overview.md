@@ -66,6 +66,7 @@ codeunit 10 MyCode
 > [!TIP]
 > With runtime 13, you can use the `editor.foldingImportsByDefault` setting to collapse `using` statements. When set to `true` it collapses all of the `using` statements when a file is opened. Use the **User Settings** or **Workspace Settings** to set the value to `true`.
 
+Learn more about structuring your namespaces in [Adopting namespaces in AL](devenv-namespaces-structure.md).
 
 ## Scope
 
@@ -95,4 +96,4 @@ using MyNamespace.MyNestedNamespace
 [Programming in AL](devenv-programming-in-al.md)  
 [Code actions](devenv-code-actions.md)  
 [AL Explorer](devenv-al-explorer.md)  
-[Structuring namespaces in AL](devenv-namespaces-structure.md)  
+[Adopting namespaces in AL](devenv-namespaces-structure.md)  

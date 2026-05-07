@@ -2,7 +2,7 @@
 title: "Compiler Error AL0183"
 description: "Unexpected character '{0}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Unexpected character '{0}'.
+Unexpected character '{0}'. Remove the invalid character or check if a special character needs escaping.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

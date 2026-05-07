@@ -2,7 +2,7 @@
 title: "Compiler Error AL0378"
 description: "A page of type Role Center cannot have triggers."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-A page of type Role Center cannot have triggers.
+A page of type Role Center cannot have triggers. Remove all trigger implementations from this page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

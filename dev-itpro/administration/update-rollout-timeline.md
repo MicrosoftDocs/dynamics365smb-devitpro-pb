@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 08/19/2025
+ms.date: 02/11/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -45,11 +45,14 @@ When a new version is available as update on the environment, [Notification reci
 The grace period starts when the update period ends and lasts one month. It occurs every September for the update period starting in April and every March for the update period starting in October. During the grace period, you can't reschedule an update to a later date or to a target version within the environment's current major version. Microsoft automatically reschedules unsuccessful environment updates to be reattempted seven days later. Administrators can only reschedule this attempt to an earlier date or to a different target version within the next major version. To ensure the environment update succeeds during the grace period, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and might send in-product notifications to end users about the upcoming enforced update period. Learn more in [When Microsoft can't update apps or per-tenant extensions (PTEs)](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
 > [!TIP]
-> We recommend that you keep any apps and per-tenant extensions ready to update at any given time, and that you actively test compatibility. Developers can get tips and guidance in the developer docs here: [Maintain AppSource Apps and Per-Tenant Extensions](../developer/app-maintain.md). Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
+> We recommend that you keep any apps and per-tenant extensions ready to update at any given time, and that you actively test compatibility. Developers can get tips and guidance in the developer docs here: [Maintain Marketplace Apps and Per-Tenant Extensions](../developer/app-maintain.md). Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
 
 ### Enforced update period
 
 The enforced period starts when the grace period ends. During this period, any extensions causing the update to the next major version to fail, for example, because of compatibility issues, might be automatically uninstalled from the environment so that the update succeeds. Data belonging to these uninstalled extensions isn't deleted from the environment and can be recovered by installing a compatible extension version after the update succeeds. Learn more in [When Microsoft can't update apps or PTEs](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
+
+> [!IMPORTANT]
+> It's not possible to [restore](tenant-admin-center-backup-restore.md) an environment to a version that is in its Grace or Enforced update period after an update to a later version has succeeded.
 
 ## Minor updates
 
@@ -66,7 +69,7 @@ An environment update completes when it succeeds, fails, or is canceled because 
 An environment might fail to update for various reasons, such as:
 
 - Per-tenant extension compatibility issues  
-- AppSource app compatibility issues  
+- Marketplace app compatibility issues  
 - Internal update issues  
 
 When an update fails or is canceled, the environment restores to the original application version so users can connect to it again. The environment is rescheduled for a new update attempt in seven days. To resolve the issue and retry the update, change the update date to an earlier or current date.

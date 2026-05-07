@@ -2,7 +2,7 @@
 title: "CaptionML property"
 description: "Sets the text string that displays with the object, control, or other element in user interface for the current language."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,6 +39,7 @@ Sets the text string that displays with the object, control, or other element in
 -   Page System Action
 -   Page File Upload Action
 -   Page View
+-   Page Analysis View
 -   Report Column
 -   Report Layout
 -   Profile
@@ -56,7 +57,7 @@ CaptionML = ENU= 'Name',DAN='Navn',ESP='Nombre',FRA='Nom',ENC='Name';
 ## Remarks
 
 > [!NOTE]  
-> To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+> To submit an app to Marketplace, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 The CaptionML property is multilanguage enabled, so it can contain a list of text strings in different languages. The string that is used is selected according to the user's language settings. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 

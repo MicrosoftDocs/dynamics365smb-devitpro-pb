@@ -2,7 +2,7 @@
 title: "Compiler Error AL0274"
 description: "The anchoring symbol '{0}' cannot be an area."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The anchoring symbol '{0}' cannot be an area.
+The anchoring symbol '{0}' cannot be an area. Use a field, group, or action as the anchor target.
 
 
 ## Description

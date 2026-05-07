@@ -2,7 +2,7 @@
 title: "Compiler Error AL0107"
 description: "Syntax error, identifier expected."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Syntax error, identifier expected.
+Syntax error, identifier expected. Provide a valid name (letters, digits, and underscores only).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

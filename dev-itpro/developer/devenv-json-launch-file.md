@@ -2,7 +2,7 @@
 title: Launch JSON file
 description: Description of the settings of the launch JSON file for AL in Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 05/26/2025
+ms.date: 03/04/2026
 ms.topic: overview
 ms.author: solsen
 ms.reviewer: solsen
@@ -18,6 +18,8 @@ The following configuration options are available:
 
 - [Attach to the client on the cloud sandbox](devenv-json-launch-file.md#attach-to-client-on-cloud-sandbox-settings-launchjson)
 - [Attach to the client on your own server](devenv-json-launch-file.md#attach-to-client-on-your-own-server-launchjson)
+- [Attach to an agent session on a cloud sandbox](devenv-json-launch-file.md#attach-to-agent-session-on-cloud-sandbox-launchjson)
+- [Attach to an agent session on your own server](devenv-json-launch-file.md#attach-to-agent-session-on-your-own-server-launchjson)
 - [Initialize a snapshot debugging session on cloud sandbox](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-a-cloud-production-environment-launchjson)
 - [Initialize a snapshot debugging session on your own server](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-your-own-server-launchjson)
 - [Publish to Microsoft cloud sandbox](devenv-json-launch-file.md#publish-to-cloud-settings-launchjson)
@@ -104,7 +106,7 @@ The following table describes the settings in the `launch.json` file for publish
 |environmentType|No|Specifies which type of environment to use to connect to [!INCLUDE [prod_short](includes/prod_short.md)]. Possible values are `OnPrem`, `Sandbox`, or `Production`.|
 |environmentName|No|Specifies which named production or sandbox environment to use in cases where multiple sandboxes are owned by the same tenant.|
 |breakOnError | No |Specifies if and how the debugger breaks on errors in Try functions. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnError` contains the following options: `true` `false`, `None`, `All`, `ExcludeTry`.<br>`false/None` - does not break on any errors, `true/All` -breaks on all errors, and `ExcludeTry` - breaks on errors only if they occur outside of the context of a Try function.<br> The values `true` and `false` are retained for now for backwards compatibility. They map to `All` and `None`. We recommend using the latter going forward. `True` and `false` might become obsolete in a future version.|
-|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including ODdata and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
+|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including ODdata and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md),<br> `Agent` - agent sessions. <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
 |breakOnRecordWrite | No |Specifies if and how the debugger breaks on record changes. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnRecordWrite` contains the following options: `true`, `false`, `None`, `All`, and `Exclude Temporary`. <br> - `false`/`None` specifies to not break on any record writes.<br>- `true`/`All` specifies to break on all record writes.<br>- `ExcludeTemporary` specifies to break on record writes only if they are not on a temporary table.<br><br>The values `true` and `false` are retained for backward compatibility, mapping to `All` and `None`. It's recommended using the latter going forward. `True` and `false` might become obsolete in a future version.|
 |launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value isn't specified or set to `true`, the session is started. If the value is explicitly set to `false`, the session isn't started unless you launch your extension in debugging mode.|
 |enableSqlInformationDebugger|Yes|Specifies whether the debugger shows the SQL information. The default value is `true`. For more information, see [Debugging SQL behavior](devenv-debugging.md#DebugSQL).|
@@ -202,7 +204,7 @@ The following table describes the settings in the `launch.json` file for attachi
 |environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Sandbox`.|
 |environmentName|Yes|Specifies which production, or sandbox environment to use.|
 |breakOnError | No |Specifies if and how the debugger breaks on errors in Try functions. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnError` contains the following options: `true`, `false`, `None`, `All`, `ExcludeTry`.<br>`false/None` - does not break on any errors, `true/All` -breaks on all errors, and `ExcludeTry` - breaks on errors only if they occur outside of the context of a Try function.<br> The values `true` and `false` are retained for now for backwards compatibility. They map to `All` and `None`. We recommend using the latter going forward. `True` and `false` might become obsolete in a future version.|
-|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
+|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md),<br> `Agent` - agent sessions. <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
 |breakOnRecordWrite | No |Specifies if and how the debugger breaks on record changes. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnRecordWrite` contains the following options: `true`, `false`, `None`, `All`, and `Exclude Temporary`. <br> - `false`/`None` specifies to not break on any record writes.<br>- `true`/`All` specifies to break on all record writes.<br>- `ExcludeTemporary` specifies to break on record writes only if they are not on a temporary table.<br><br>The values `true` and `false` are retained for backward compatibility, mapping to `All` and `None`. It's recommended using the latter going forward. `True` and `false` might become obsolete in a future version.|
 |enableSqlInformationDebugger|Yes|Specifies whether the debugger shows the SQL information. The default value is `true`. Learn more in [Debugging SQL behavior](devenv-debugging.md#DebugSQL).|
 |enableLongRunningSqlStatements|Yes|Specifies whether the debugger enables long running SQL statements in the debugger window.|
@@ -252,13 +254,66 @@ The settings for attaching to a client on your own server are described in the f
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
 |authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"` (Microsoft Entra ID). To use Microsoft Entra ID for authenticating on-premise servers, `primaryTenantDomain` setting must be entered. Learn more in [Using Microsoft Entra authentication for Business Central on-premises installations](devenv-aad-auth-onprem.md).|
 |breakOnError | No |Specifies if and how the debugger breaks on errors in Try functions. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnError` contains the following options: `true`, `false`, `None`, `All`, `ExcludeTry`.<br>`false/None` - does not break on any errors, `true/All` -breaks on all errors, and `ExcludeTry` - breaks on errors only if they occur outside of the context of a Try function.<br> The values `true` and `false` are retained for now for backwards compatibility. They map to `All` and `None`. We recommend using the latter going forward. `True` and `false` might become obsolete in a future version.|
-|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
+|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md),<br> `Agent` - agent sessions. <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
 |breakOnRecordWrite | No |Specifies if and how the debugger breaks on record changes. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnRecordWrite` contains the following options: `true`, `false`, `None`, `All`, and `Exclude Temporary`. <br> - `false`/`None` specifies to not break on any record writes.<br>- `true`/`All` specifies to break on all record writes.<br>- `ExcludeTemporary` specifies to break on record writes only if they are not on a temporary table.<br><br>The values `true` and `false` are retained for backward compatibility, mapping to `All` and `None`. It's recommended using the latter going forward. `True` and `false` might become obsolete in a future version.|
 |enableSqlInformationDebugger|Yes|Specifies whether the debugger shows the SQL information. The default value is `true`. Learn more in [Debugging SQL behavior](devenv-debugging.md#DebugSQL).|
 |enableLongRunningSqlStatements|Yes|Specifies whether the debugger enables long running SQL statements in the debugger window.|
 |longRunningSqlStatementsThreshold|Yes|Sets the number of milliseconds spent before a SQL statement is considered as long running in the debugger.|
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |tenant|Yes|For an on-premise server, this parameter must contain a tenant name, for example: MyTenant.|
+
+## Attach to agent session on cloud sandbox (launch.json)
+
+The attach configuration for agent sessions allows you to debug the AL code that an agent is executing on a cloud sandbox. Learn more in [Attach and debug next](devenv-attach-debug-next.md).
+
+Here's an example of a configuration file for attaching to an agent session on a cloud sandbox.
+
+``` json
+{
+    "name": "Attach: Agent on cloud sandbox",       // maybe change the configuration name
+    "type": "al",
+    "request": "attach",
+    "environmentType": "Sandbox",
+    "environmentName": "sandbox",                    // change this to point to your sandbox environment
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "Agent"
+}
+```
+
+The settings for attaching to an agent session on a cloud sandbox are the same as for [attaching to a client on a cloud sandbox](devenv-json-launch-file.md#attach-to-client-on-cloud-sandbox-settings-launchjson), except that `breakOnNext` is set to `Agent`.
+
+## Attach to agent session on your own server (launch.json)
+
+The attach configuration for agent sessions allows you to debug the AL code that an agent is executing on your own server. Learn more in [Attach and debug next](devenv-attach-debug-next.md).
+
+Here's an example of a configuration file for attaching to an agent session on your own server.
+
+``` json
+{
+    "name": "Attach: Agent on own server",           // maybe change the configuration name
+    "type": "al",
+    "request": "attach",
+    "environmentType": "OnPrem",
+    "server": "http://bcserver",                     // change this to point to your instance URI
+    "serverInstance": "BC",                          // change this to point to your instance
+    "authentication": "UserPassword",                // change this to your auth setup
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "Agent",
+    "tenant": "default",                             // change this to point to your tenant
+}
+```
+
+The settings for attaching to an agent session on your own server are the same as for [attaching to a client on your own server](devenv-json-launch-file.md#attach-to-client-on-your-own-server-launchjson), except that `breakOnNext` is set to `Agent`.
 
 ## Initialize a snapshot debugging session on a cloud production environment (launch.json)
 
@@ -289,7 +344,7 @@ The following table describes the settings in the `launch.json` file for snapsho
 |sessionId|No| A session ID for the user specified in `userId`.|
 |environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Production`.|
 |environmentName|Yes|Specifies the production environment to use.|
-|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
+|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md),<br> `Agent` - agent sessions. <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
 |executionContext|Yes|Specifies which kind of connection a snapshot debugging session will be established. There are three options: `Debug`, `DebugAndProfile`, and `Profile`. Learn more in [AL Profiler](devenv-al-profiler-overview.md#snapshot-configuration-settings).|
 |snapshotVerbosity|No|Specifies the verbosity level of snapshot data. If SnapPoint is specified then stacktraces and line information will only be gathered on snap points. The options are: `Full`, which allows stepping through every line executed and `SnapPoint`, which only allows stepping to lines with SnapPoints.|
 |profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`. Learn more in [AL Profiler](devenv-al-profiler-overview.md|
@@ -331,7 +386,7 @@ The following table describes the settings in the `launch.json` file for snapsho
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
 |authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. To use Microsoft Entra authentication for on-premise servers, `primaryTenantDomain` setting must be entered. Learn more in [Using Microsoft Entra authentication for Business Central on-premises installations](devenv-aad-auth-onprem.md).|
-|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
+|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md),<br> `Agent` - agent sessions. <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
 |executionContext|Yes|Specifies which kind of connection a snapshot debugging session will be established. There are three options: `Debug`, `DebugAndProfile`, and `Profile`. Learn more in [AL Profiler](devenv-al-profiler-overview.md#snapshot-configuration-settings).|
 |snapshotVerbosity|No|Specifies the verbosity level of snapshot data. If SnapPoint is specified then stacktraces and line information will only be gathered on snap points. The options are: <br>`Full`, which allows stepping through every line executed <br>`SnapPoint`, which only allows stepping to lines with SnapPoints.|
 |profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`. Learn more in [AL Profiler](devenv-al-profiler-overview.md).|

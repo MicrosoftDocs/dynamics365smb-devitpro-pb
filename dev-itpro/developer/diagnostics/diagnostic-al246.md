@@ -2,7 +2,7 @@
 title: "Compiler Error AL0246"
 description: "The property '{0}' cannot be customized."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The property '{0}' cannot be customized.
+The property '{0}' cannot be customized. This property is read-only in the current context.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

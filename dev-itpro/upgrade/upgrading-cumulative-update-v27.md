@@ -2,7 +2,7 @@
 title: Install a Business Central 2025 release Wave 2 (version 27) Update
 description: This article describes the tasks required for getting the monthly version 27 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 01/12/2026
+ms.date: 02/02/2026
 ms.reviewer: jswymer
 ms.topic: install-set-up-deploy
 ms.author: jswymer
@@ -79,7 +79,7 @@ $SystemAppPath = "The file path and name of the System Application extension for
 $BusFoundAppPath = "The file path and name of the Business Foundation extension for the update, for example: C:\DVD\Applications\BusinessFoundation\Source\Microsoft_Business Foundation.app"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
-$NewBcVersion = "The version number for the update, for example: 27.1.39901.0"
+$NewBcVersion = "The version number for the update, for example: 27.3.39901.0"
 $ExtPath = "The path and file name to an extension package" 
 $ExtName = "The name of an extension"
 $ExtVersion = "The version of an extension, for example, 1.0.0.0"

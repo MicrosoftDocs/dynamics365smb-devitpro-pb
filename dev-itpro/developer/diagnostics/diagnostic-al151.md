@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0151"
-description: "Expression must be an Option."
+description: "Expression must be an Option type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Expression must be an Option.
+Expression must be an Option type. Use '::' to access option members (e.g., MyOption::Value).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

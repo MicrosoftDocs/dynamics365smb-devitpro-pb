@@ -4,7 +4,7 @@ description: A project object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -33,6 +33,7 @@ Represents a project in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the project.|
+|[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfDocument of the project.|
 
 ## Properties
 

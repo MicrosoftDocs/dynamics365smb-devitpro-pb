@@ -2,7 +2,7 @@
 title: "Record data type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.date: 10/03/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -56,6 +56,7 @@ The following methods are available on instances of the Record data type.
 |[FindLast()](record-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
 |[FindSet([Boolean])](record-findset-boolean-method.md)|Finds a set of records in a table based on the current key and filter.|
 |[FindSet(Boolean, Boolean)](record-findset-boolean-boolean-method.md)|Finds a set of records in a table based on the current key and filter.|
+|[FullyQualifiedName()](record-fullyqualifiedname-method.md)|Gets the fully qualified name of a table.|
 |[Get([Any,...])](record-get-method.md)|Gets a record based on values stored in primary key fields.|
 |[GetAscending(Any)](record-getascending-method.md)|Gets the sort order for the records returned. You can use GETASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.|
 |[GetBySystemId(Guid)](record-getbysystemid-method.md)|Gets a record by its SystemId.|

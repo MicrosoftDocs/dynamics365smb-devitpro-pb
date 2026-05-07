@@ -24,9 +24,9 @@ Learn more about assigning licenses in [Licensing in Dynamics 365 Business Centr
 
 ## Permission set scope
 
-A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains many predefined permission sets that are added by Microsoft or by your software provider (by an ISV application that you installed from AppSource).
+A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains many predefined permission sets that are added by Microsoft or by your software provider (by an ISV application that you installed from Marketplace).
 
-Permission sets included with Microsoft and AppSource apps defined as AL objects are of the type **System**. <!-- If they are included in XML format, they are of the type **Extension**.--> <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
+Permission sets included with Microsoft and Marketplace apps defined as AL objects are of the type **System**. <!-- If they are included in XML format, they are of the type **Extension**.--> <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
 
 End-users can't create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions. Permission sets that users create, from new or as copies, are of the type **User-Defined** and they can be edited.
 
@@ -95,7 +95,7 @@ Keeping such sensitive information as data comes with other maintenance, securit
 
 Turning this data into code has another significant advantage: the ability to apply hotfixes to the entitlements and permissions in the same way that the hotfixes are applied to the apps themselves, simply by updating an app to a new version which carries fixed code. This improves [!INCLUDE [prod_short](includes/prod_short.md)] support agility considerably, ultimately improving customer satisfaction with the service.
 
-And finally, the new AL objects are envisioned to become the core building blocks in the story of monetizing the AppSource apps. It's through these new AL objects that AppSource ISVs will be able to define which capabilities of their apps should be made available to their users, when the customers purchase their app licenses. With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, we're paving the way by moving the entitlements and permission sets into AL objects for Microsoft apps, so that ISVs can follow the same approach for their apps, when the monetization story is introduced with one of the next releases of [!INCLUDE [prod_short](includes/prod_short.md)].
+And finally, the new AL objects are envisioned to become the core building blocks in the story of monetizing the Marketplace apps. It's through these new AL objects that Marketplace ISVs will be able to define which capabilities of their apps should be made available to their users, when the customers purchase their app licenses. With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, we're paving the way by moving the entitlements and permission sets into AL objects for Microsoft apps, so that ISVs can follow the same approach for their apps, when the monetization story is introduced with one of the next releases of [!INCLUDE [prod_short](includes/prod_short.md)].
 
 User-defined permission sets and permissions, and functionality around them, remain unchanged. They're still stored as data in the tenant database:
 

@@ -78,10 +78,10 @@ To handle this, you must create a custom codeunit that runs the **Sales & Receiv
 
 ## App installation
 
-When installing AppSource apps through the user interface, a wizard appears that initiates the installation of the app. This wizard gives the user an option to wait for installation to complete and let the user run the primary setup of the app. This works in two steps: First, the user is presented with a page that shows the installation status for the app. When the app installation completes the user is given the option to run the setup brought by the app. If a primary setup is specified as described above, this setup is run. The same happens if only one setup object is added by the app. If multiple setup objects are added and no primary is specified, the user is presented with the list of setup options provided by the app and can run each desired setup from there.
+When installing Marketplace apps through the user interface, a wizard appears that initiates the installation of the app. This wizard gives the user an option to wait for installation to complete and let the user run the primary setup of the app. This works in two steps: First, the user is presented with a page that shows the installation status for the app. When the app installation completes the user is given the option to run the setup brought by the app. If a primary setup is specified as described above, this setup is run. The same happens if only one setup object is added by the app. If multiple setup objects are added and no primary is specified, the user is presented with the list of setup options provided by the app and can run each desired setup from there.
 
 > [!IMPORTANT]  
-> The installation guidance to find the primary setup only works for AppSource apps. However, you should still provide **Guided Experience Item**s for the setup objects belonging to your app if it's a Per Tenant Extension. The user will still enjoy easy access to those objects via Extensions Management.  
+> The installation guidance to find the primary setup only works for Marketplace apps. However, you should still provide **Guided Experience Item**s for the setup objects belonging to your app if it's a Per Tenant Extension. The user will still enjoy easy access to those objects via Extensions Management.  
 
 ## First run experience of your app
 

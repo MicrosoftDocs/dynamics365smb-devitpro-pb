@@ -2,7 +2,7 @@
 title: "JsonObject data type"
 description: "Is a container for any well-formed JSON object."
 ms.author: solsen
-ms.date: 06/10/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -80,6 +80,7 @@ The following methods are available on instances of the JsonObject data type.
 |[Replace(Text, DateTime)](jsonobject-replace-string-datetime-method.md)|Replaces the value of the property with the given key with the new value.|
 |[Replace(Text, Text)](jsonobject-replace-string-string-method.md)|Replaces the value of the property with the given key with the new value.|
 |[SelectToken(Text, var JsonToken)](jsonobject-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
+|[SelectTokens(Text, var List of [JsonToken])](jsonobject-selecttokens-method.md)|Selects tokens based on a JPath expression and returns them in a new list.|
 |[Values()](jsonobject-values-method.md)|Gets a set of values of the JsonObject.|
 |[WriteTo(var Text)](jsonobject-writeto-text-method.md)|Serializes and writes the JSON data of the JsonObject to a given Text object.|
 |[WriteTo(OutStream)](jsonobject-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonObject to a given OutStream object.|

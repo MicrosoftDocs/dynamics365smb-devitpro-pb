@@ -2,7 +2,7 @@
 title: Best practices for Power Apps with Business Central
 description: Learn how to best develop Power Apps for Business Central
 author: andersgMSFT
-ms.author: andersg
+ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: best-practice
 ms.date: 04/24/2023

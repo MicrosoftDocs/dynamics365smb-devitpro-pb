@@ -1,7 +1,7 @@
 ---
 title: Install Business Central Using Setup
 description: Install Business Central using Setup to quickly deploy production, demo, or development environments. Follow step-by-step guidance.
-ms.date: 06/20/2025
+ms.date: 03/25/2026
 ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
@@ -36,6 +36,7 @@ There are some components that require other software to run. For example, the d
 
 1. Go to the update page for the release that you want to install:
 
+   - [Business Central 2025 Release Wave 2 (v27)](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-2-7f4863fc-e30c-497d-b510-df9e7007253c)
    - [Business Central 2025 Release Wave 1 (v26)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-1-8cb260a4-6a57-4325-a4d7-7aa84c3234e6)
    - [Business Central 2024 Release Wave 2 (v25)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776)
    - [Business Central 2024 Release Wave 1 (v24)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65)

@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0113"
-description: "At least one dimension must be specified."
+description: "At least one dimension must be specified for the array declaration (e.g., [10] or [5,5])."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-At least one dimension must be specified.
+At least one dimension must be specified for the array declaration (e.g., [10] or [5,5]).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -4,7 +4,7 @@ description: An item object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -22,10 +22,10 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[GET item](../api/dynamics_item_get.md)|item|Gets a item object.|
-|[DELETE item](../api/dynamics_item_delete.md)|none|Deletes a item object.|
-|[POST item](../api/dynamics_item_create.md)|item|Creates a item object.|
-|[PATCH item](../api/dynamics_item_update.md)|item|Updates a item object.|
+|[GET item](../api/dynamics_item_get.md)|item|Gets an item object.|
+|[DELETE item](../api/dynamics_item_delete.md)|none|Deletes an item object.|
+|[POST item](../api/dynamics_item_create.md)|item|Creates an item object.|
+|[PATCH item](../api/dynamics_item_update.md)|item|Updates an item object.|
 
 ## Navigation
 

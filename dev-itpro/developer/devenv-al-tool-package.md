@@ -1,6 +1,6 @@
 ---
 title: AL Development Tools package
-ms.date: 09/18/2025
+ms.date: 01/15/2026
 author: SusanneWindfeldPedersen
 description: Streamline AL extension development with the AL Development Tools package. Access powerful command-line utilities for compiling, packaging, and automating workflows.
 ms.topic: concept-article
@@ -30,7 +30,7 @@ Learn more in [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www
 
 ## Get started
 
-Get started with the AL Development Tools package by following the instructions on [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools). When you install the package, you get access to the ALTool command-line tool, and you can use the `al` alias to run it.
+Get started with the AL Development Tools package by following the instructions on [Microsoft.Dynamics.BusinessCentral.Development.Tools](https://www.nuget.org/packages/Microsoft.Dynamics.BusinessCentral.Development.Tools). When you install the package, you get access to the ALTool command-line tool, and you can use the `al` alias to run it. The `al` alias is a convenience provided by the tools package so you don't need to reference the full path to `alc.exe` as you would when using [ALTool directly from the Visual Studio Code AL Extension](devenv-al-tool.md#get-started).
 
 ## ALTool commands
 
@@ -43,6 +43,8 @@ al help
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
 | `compile`                      | Compile a package using `alc.exe`.  |
+| `workspace`                    | Workspace-related commands.  |
+| `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server. Learn more in [ALMCP](devenv-al-tool.md#almcp)  |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |

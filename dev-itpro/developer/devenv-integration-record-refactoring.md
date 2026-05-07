@@ -1,6 +1,6 @@
 ---
 title: Integration Management Refactoring Guidance
-description: This article offers guidance for refactoring the code in your AppSource app or per-tenant extension to use system fields rather than integration records.
+description: This article offers guidance for refactoring the code in your Marketplace app or per-tenant extension to use system fields rather than integration records.
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # How to refactor use of integration records to system fields
 
-In 2023 release wave 1 (version 22.0) Microsoft will remove legacy integration records code from Business Central. The obsoletion was announced in-product in version 15.0. We expect that most AppSource apps or per-tenant extensions for [!INCLUDE [prod_short](../includes/prod_short.md)] already use integration records based on [System Fields](devenv-table-system-fields.md). For those that don't, this article offers guidance for refactoring your code to use system fields rather than integration records.
+In 2023 release wave 1 (version 22.0) Microsoft will remove legacy integration records code from Business Central. The obsoletion was announced in-product in version 15.0. We expect that most Marketplace apps or per-tenant extensions for [!INCLUDE [prod_short](../includes/prod_short.md)] already use integration records based on [System Fields](devenv-table-system-fields.md). For those that don't, this article offers guidance for refactoring your code to use system fields rather than integration records.
 
 Using system fields instead of integration records offers the following benefits:
 

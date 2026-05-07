@@ -4,9 +4,7 @@ description: A customer payment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
