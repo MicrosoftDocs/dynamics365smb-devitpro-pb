@@ -86,9 +86,9 @@ The steps in this section configure the data migration globally for all companie
 
 1. Configure validation settings.
 
-   To configure validation settings that apply across all companies, select **GP Migration Settings** action at the top of the page. The **GP Migration Settings** page opens, where you can turn on the **Automatic Validation** option. When enabled, validation automatically runs after the migration process completes to verify that data migrated correctly from Dynamics GP to Business Central.
+   To configure validation settings that apply across all companies, select **Migration Settings** action at the top of the page. The **GP Migration Settings** page opens. From this page, turn on the **Automatic Validation** options. When enabled, validation automatically runs after the migration process completes to verify that data migrated correctly from Dynamics GP to Business Central.
 
-   For more information about migration validation, see [Validate Dynamics GP data migration](migrate-gp-validation.md).
+   Learn more in [Validate Dynamics GP data migration](migrate-gp-validation.md).
 
 ## Configure migration per company
 
