@@ -241,10 +241,6 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 ### Example
 
-The following code is taken directly from the `Sales Forecast Upgrade` codeunit in `microsoft/ALAppExtensions`. It demonstrates the canonical upgrade tag pattern: check the tag first, run conditional data migration, then set the tag to prevent the code from running again on future upgrades.
-
-> Source: [`SalesForecastUpgrade.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/SalesAndInventoryForecast/app/src/codeunits/SalesForecastUpgrade.Codeunit.al) in `microsoft/ALAppExtensions`
-
 ```AL
 namespace Microsoft.Inventory.InventoryForecast;
 
@@ -304,7 +300,7 @@ Key points from this production example:
 - `Access = Internal` prevents external callers from triggering the upgrade codeunit directly.
 - `NavApp.GetCurrentModuleInfo()` retrieves app metadata (including data version) to gate whether migration is needed.
 
-For bulk field migration across large tables (for example, copying data from an obsolete field to a replacement field), use `DataTransfer` instead of row-by-row `Modify`. For a real-world example of `DataTransfer` combined with upgrade tags, see [`Upgrade.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/ReviewGLEntries/app/src/codeunits/Upgrade.Codeunit.al) in the Review GL Entries extension.
+For bulk field migration across large tables (for example, copying data from an obsolete field to a replacement field), use `DataTransfer` instead of row-by-row `Modify`.
 
 ## Protecting sensitive code from running during upgrade
 
