@@ -110,17 +110,20 @@ All these properties are encapsulated in a `ModuleInfo` data type. You can acces
 This example uses the `OnCheckPreconditionsPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade before restoring the archived data of the old extension.
 
 ```AL
+namespace Contoso.MyExtension;
+
 codeunit 50100 MyUpgradeCodeunit
 {
-    Subtype=Upgrade;
+    Access = Internal;
+    Subtype = Upgrade;
 
-    trigger OnCheckPreconditionsPerDatabase();
+    trigger OnCheckPreconditionsPerDatabase()
     var
-        myInfo : ModuleInfo;
+        myInfo: ModuleInfo;
     begin
         if NavApp.GetCurrentModuleInfo(myInfo) then
             if myInfo.DataVersion = Version.Create(1, 0, 0, 1) then
-                error('The upgrade is not compatible');
+                Error('The upgrade is not compatible');
     end;
 
     trigger OnUpgradePerDatabase()
@@ -207,9 +210,14 @@ The following steps provide the general pattern for using an upgrade tag on upgr
     To register the tag, call the `SetUpgradeTag` method on the `OnInstallAppPerCompany` and `OnInstallAppPerDatabase` triggers in the extension's install codeunit.
 
     ```AL
+    namespace Contoso.ABCShoeExtension;
+
+    using System.Upgrade;
+
     codeunit 50100 InstallCodeunit
     {
-        Subtype=Install;
+        Access = Internal;
+        Subtype = Install;
 
         trigger OnInstallAppPerCompany()
         var
@@ -236,8 +244,14 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed ([ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
 
 ```AL
+namespace Contoso.ABCShoeExtension;
+
+using Microsoft.Sales.Customer;
+using System.Upgrade;
+
 codeunit 50100 "ABC Upgrade Shoe Size"
 {
+    Access = Internal;
     Subtype = Upgrade;
 
     trigger OnUpgradePerCompany()
@@ -280,8 +294,14 @@ codeunit 50100 "ABC Upgrade Shoe Size"
     end;
 }
 
+namespace Contoso.ABCShoeExtension;
+
+using System.Upgrade;
+
 codeunit 50101 "ABC Upgrade Tag Definitions"
 {
+    Access = Internal;
+
     // Register the new upgrade tag for new companies when they are created.
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
     local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]])
@@ -290,13 +310,16 @@ codeunit 50101 "ABC Upgrade Tag Definitions"
     end;
 
     // Use methods to avoid hard-coding the tags. It is easy to remove afterwards because it's compiler-driven.
-    procedure GetABCShoeSizeUpgradeTag(): Text
+    procedure GetABCShoeSizeUpgradeTag(): Code[250]
     begin
         exit('ABC-1234-ShoeSizeUpgrade-20201125');
     end;
 
 }
 ```
+
+> [!TIP]
+> This pattern is used verbatim in production Microsoft extensions. For example, see [`SalesForecastUpgrade.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/SalesAndInventoryForecast/app/src/codeunits/SalesForecastUpgrade.Codeunit.al) in `microsoft/ALAppExtensions` for a real-world upgrade codeunit with namespace declarations and upgrade tags.
 
 ## Protecting sensitive code from running during upgrade
 
