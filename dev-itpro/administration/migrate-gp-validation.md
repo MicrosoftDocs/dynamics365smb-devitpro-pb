@@ -10,7 +10,7 @@ ms.reviewer: jswymer
 
 # Validate Dynamics GP data migration
 
-**Migration validation** is a feature that verifies data migrated from Dynamics GP to Business Central by comparing source data in GP with migrated data in Business Central. This validation process ensures accuracy and improves efficiency by identifying discrepancies between the two systems.
+The **Migration validation** feature verifies data migrated from Dynamics GP to Business Central by comparing source data in GP with migrated data in Business Central. This validation process ensures accuracy and improves efficiency by identifying discrepancies between the two systems.
 
 The feature can run automatically after migration completes or be triggered manually at any time. It tests multiple entities including G/L accounts, customers, vendors, items, and other key business data to confirm successful data transfer.
 
