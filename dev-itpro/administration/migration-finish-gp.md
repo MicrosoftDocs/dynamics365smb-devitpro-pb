@@ -24,7 +24,7 @@ Before completing the migration, verify that data migrated correctly by running 
 
 You can run validation manually from the **Cloud Migration Management** page by selecting **Actions** > **Validation Status** > **Run All Validation**. Review any validation errors and resolve them before proceeding to disable cloud migration.
 
-For more information, see [Validate Dynamics GP data migration](migrate-gp-validation.md).
+Learn more in [Validate Dynamics GP data migration](migrate-gp-validation.md).
 
 ## Step 1: Disable the cloud migration
 

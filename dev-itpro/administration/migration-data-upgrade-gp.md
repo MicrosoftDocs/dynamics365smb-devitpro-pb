@@ -38,7 +38,7 @@ Inform any active Business Central online users to finish what they're doing and
 
 ## Next steps
 
-After data upgrade completes, verify the migrated data by running validation tests. For more information, see [Validate Dynamics GP data migration](migrate-gp-validation.md).
+After data upgrade completes, verify the migrated data by running validation tests. Learn more in [Validate Dynamics GP data migration](migrate-gp-validation.md).
 
 Then proceed to [Complete cloud migration](migration-finish-gp.md).  
 
