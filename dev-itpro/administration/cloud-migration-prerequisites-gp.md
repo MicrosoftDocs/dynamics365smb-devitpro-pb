@@ -19,9 +19,9 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
 
 - At least one user has *SUPER* permissions in the target company in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-  Users assigned with *SUPER* permissions are the only users who can make changes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online target company. Users who don't have *SUPER* permissions are automatically reassigned to the intelligent cloud user group, which limits them to read-only access to data. For more information, see [Working with environments during cloud migration](migrate-business-central-on-premises.md#working-with-environments-during-cloud-migration). 
+  Users assigned with *SUPER* permissions are the only users who can make changes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online target company. Users who don't have *SUPER* permissions are automatically reassigned to the intelligent cloud user group, which limits them to read-only access to data. Learn more in [Working with environments during cloud migration](migrate-business-central-on-premises.md#working-with-environments-during-cloud-migration). 
 
-  If you're the person who sets up and runs the cloud migration, you must have *SUPER* permissions and admin role in Microsoft admin center. If you're running cloud migration as a delegated admin, a Business Central user with *SUPER* permissions has to grant you permission. The permission is granted when you try to run the **Cloud Migration Setup**. For more information, see [About delegated administrators](migration-setup.md#about-delegated-administrators).
+  If you're the person who sets up and runs the cloud migration, you must have *SUPER* permissions and admin role in Microsoft admin center. If you're running cloud migration as a delegated admin, a Business Central user with *SUPER* permissions has to grant you permission. The permission is granted when you try to run the **Cloud Migration Setup**. Learn more in [About delegated administrators](migration-setup.md#about-delegated-administrators).
 
 - Install the Business Central migration apps 
 
@@ -53,7 +53,7 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
   The database can be hosted on SQL Server. The SQL Server database must meet the following requirements:
   - Uses SQL Server 2016 SP1 or later.
   - Compatibility level set to 130 or higher.
-  - TCP/IP is enabled. For more information, see [Enable or Disable a Server Network Protocol](/sql/database-engine/configure-windows/enable-or-disable-a-server-network-protocol) in the SQL Server documentation. 
+  - TCP/IP is enabled. Learn more in [Enable or Disable a Server Network Protocol](/sql/database-engine/configure-windows/enable-or-disable-a-server-network-protocol) in the SQL Server documentation. 
   - Configured for SQL Server authentication.
 
     > [!IMPORTANT]
