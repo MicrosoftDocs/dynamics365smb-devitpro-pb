@@ -28,6 +28,10 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use the *Generative answer* and *Agent action* [event scenarios](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) to bill for consumption as they complete their tasks.
 
+### Expense Agent billing
+
+The Expense Agent processes uploaded receipts and creates expense reports. Each uploaded receipt consumes 50 Copilot Credits, regardless of how many lines the resulting expense has.
+
 ### Sales Order Agent billing
 
 The Sales Order Agent connects to a shared mailbox that processes customer requests for sales quotes and orders. The following table shows how the Business Central scenarios performed by the Sales Order agent are mapped to Copilot Studio events.
@@ -94,9 +98,9 @@ For example, assume that:
 
 The estimated monthly cost is calculated as: `[50 + (5 × 3)] x 100 = 6,500 Copilot Credits/month`
 
-### AI development toolkit (preview) and Expense Agent (preview)
+### AI development toolkit (preview)
 
-Billing events for the AI development toolkit and Expense Agent will be announced in a future update.
+Billing events for the AI development toolkit will be announced in a future update.
 
 ## Set up billing model
 
