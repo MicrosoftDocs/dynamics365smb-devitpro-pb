@@ -57,6 +57,9 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ### Online customers
 
+> [!NOTE]
+> The rollout of Business Central online version 28.1 in Canada (CA) is currently delayed and is expected to start within a few days. Follow the latest status announcements on [Viva Engage]().
+
 - New customers get Business Central version 28.1 automatically.
 - Existing customers are notified when update 28.1 is available so they schedule the update. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management.md#schedule).
 
