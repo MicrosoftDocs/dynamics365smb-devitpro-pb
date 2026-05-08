@@ -36,7 +36,6 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 ||[Manage expenses in Business Central using Expense Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-expenses-business-central-using-expense-agent)|Public preview|
 |Country and regional|[Use e-invoice formats for service invoices in Germany](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-e-invoice-formats-service-invoices-germany)|General availability|
 |Development|[Enable Troubleshooting MCP Server for AL](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/enable-troubleshooting-mcp-server-al)|General availability|
-|Electronic documents|[Use payments with the E-Document framework](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-payments-e-document-framework)|Public preview|
 |Financial management|[Calculate excise taxes](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/calculate-excise-taxes)|General availability|
 ||[Enable Investment Boost for fixed assets](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/enable-investment-boost-fixed-assets)|General availability|
 ||[Manage employee expenses using expense reports](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-employee-expenses-using-expense-reports)|Public preview|
