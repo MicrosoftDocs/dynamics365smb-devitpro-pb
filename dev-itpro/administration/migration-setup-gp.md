@@ -55,6 +55,9 @@ Any user running the cloud migration setup flow as delegated administrator must 
 
    If you want to add or remove companies later, you can return to this page. For more information about using this page, see [Configure Dynamics GP company data migration](migrate-gp-configure-companies.md).
 
+   > [!TIP]
+   > You can enable automatic validation during migration setup. On the **GP Company Migration Configuration** page, select **GP Migration Settings** to access the option to turn on **Automatic Validation**. When enabled, validation runs automatically after migration completes. Learn more in [Validate Dynamics GP data migration](migrate-gp-validation.md).
+
 1. Select **Finish** to complete the cloud migration setup.
 
   If you want to open **Cloud Migration Management**, where you can run the migration, select **Yes**.
@@ -70,11 +73,11 @@ There are some scenarios where it might be necessary for you to run the cloud mi
 > [!TIP]
 > We recommend that you take a backup of the target environment so that you can easily restore the environment to a specific state and time, should you want to.
 
-A common scenario is when you want to add tenants to an existing runtime service. If you're a hosting partner, you might have multiple tenants running on the same integration runtime service. Each tenant is isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. For more information, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime) in the Azure docs.
+A common scenario is when you want to add tenants to an existing runtime service. If you're a hosting partner, you might have multiple tenants running on the same integration runtime service. Each tenant is isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. Learn more in [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime) in the Azure docs.
 
 In this scenario, you're making updates to an existing runtime service. When you get to the point of the assisted setup guide where you can specify an existing runtime services name, open the Microsoft Integration Runtime Service Manager. Then enter the runtime name in the field; you aren't allowed to copy and paste. The runtime service identifies that you're making updates to an existing service and doesn't create a new one.  
 
-Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline is created for that tenant. Regenerating an Azure Data Factory (ADF) key might be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see [Run the assisted setup guide](migration-setup.md#rerunning-cloud-migration-setup-guide).  
+Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline is created for that tenant. Regenerating an Azure Data Factory (ADF) key might be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. Learn more in [Run the assisted setup guide](migration-setup.md#rerunning-cloud-migration-setup-guide).  
 
 ## Troubleshoot and fix problems
 

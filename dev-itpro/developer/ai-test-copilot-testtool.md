@@ -158,13 +158,46 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ### Step 6 - review Copilot credit usage
 
-AI features consume Copilot credits. Evaluation provides visibility into credit consumption per run, per test line, and per dataset entry.
+AI features consume Copilot credits. Evaluation provides visibility into both token usage and Copilot credit consumption per run, per test line, and per dataset entry.
 
 Use this insight to understand consumption patterns, optimize prompts, and manage costs more effectively.
 
+> [!IMPORTANT]
+> Evaluation runs aren't free. Each test run consumes Copilot credits from your environment. We recommend using environments with prepaid Copilot credits when running eval suites, especially for automated or frequent runs.
+
+> [!NOTE]
+> For agent tests, the token usage displayed reflects only the tokens consumed by the AI evaluators, not the tokens used by the agent runtime during task execution.
 
 > [!TIP]
 > You can also use the API (page 149038 "AIT Log Entry API") to get the result for a suite.
+
+## Copilot credit limits for agent evaluation suites
+
+To prevent uncontrolled credit consumption, the system enforces monthly Copilot credit limits for agent evaluation tasks. Limits are applied at two independent levels:
+
+- **Environment level**: An overall credit limit for all companies in the environment combined.
+- **Company level**: An individual credit limit per company within the environment.
+
+Both limits are checked before a new evaluation task is allowed to start. If either limit has been reached, the task is blocked.
+
+**Example**: Environment limit is 100 credits, Company A limit is 50 credits.
+
+- If Company A has consumed 55 credits, then no new eval tasks can start for Company A, even if the overall environment limit hasn't been reached.
+- If all companies combined have consumed 105 credits, then no new eval tasks can start in any company in that environment.
+
+When a limit is reached, evaluation tasks that are already running continue to completion to avoid wasting credits already consumed. However, any tasks that are queued but haven't started yet are stopped, and a notification is raised indicating that the credit limit has been reached.
+
+> [!NOTE]
+> If a test run is cancelled or aborted, no credit consumption record or task link is created for that run.
+
+### Managing credit limits
+
+Credit limits can be viewed and modified by users with the **agent admin** role. For more information about agent admin permissions, see [Permissions in Evaluation](ai-development-toolkit-permissions.md).
+
+- Agent admins with permissions in specific companies can modify the credit limits for those companies only.
+- Agent admins with permissions in all companies can also modify the environment-level limit.
+
+All changes to credit limits are recorded in audit telemetry.
 
 ## Related information
 
