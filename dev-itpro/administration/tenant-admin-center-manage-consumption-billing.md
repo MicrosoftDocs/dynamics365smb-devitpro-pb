@@ -28,7 +28,7 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use the *Generative answer* and *Agent action* [event scenarios](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) to bill for consumption as they complete their tasks.
 
-### Expense Agent billing
+### Expense Agent (preview) billing
 
 The Expense Agent processes uploaded receipts and creates expense reports. Each uploaded receipt consumes 50 Copilot Credits, regardless of how many lines the resulting expense has.
 
