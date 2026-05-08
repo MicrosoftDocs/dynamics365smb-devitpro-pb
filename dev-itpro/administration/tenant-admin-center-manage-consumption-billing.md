@@ -21,7 +21,7 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 ### Billable agent capabilities
 
-- [Expense Agent](/dynamics365/business-central/expense-agent)
+- [Expense Agent (preview)](/dynamics365/business-central/expense-agent)
 - [Payables Agent](/dynamics365/business-central/payables-agent)
 - [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
 - [Designing and coding agents (preview)](../ai/ai-development-toolkit-overview.md)
