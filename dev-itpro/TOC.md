@@ -2,6 +2,7 @@
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
+## [Update 28.1](whatsnew/whatsnew-update-28-1.md)
 ## [Update 28.0](whatsnew/whatsnew-update-28-0.md)
 ## [Update 27.5](whatsnew/whatsnew-update-27-5.md)
 ## [Update 27.4](whatsnew/whatsnew-update-27-4.md)
@@ -469,6 +470,7 @@
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
+##### [Validate Dynamics GP data migration](administration/migrate-gp-validation.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### Finish cloud migration
