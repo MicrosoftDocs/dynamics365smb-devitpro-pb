@@ -18,6 +18,14 @@ This article explains tasks you do in the final phase of cloud migration&mdash;t
 
 [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
 
+## Step 0: Validate migrated data
+
+Before completing the migration, verify that data migrated correctly by running migration validation tests. Validation compares source data from Dynamics GP with migrated data in Business Central to identify any discrepancies.
+
+You can run validation manually from the **Cloud Migration Management** page by selecting **Actions** > **Validation Status** > **Run All Validation**. Review any validation errors and resolve them before proceeding to disable cloud migration.
+
+Learn more in [Validate Dynamics GP data migration](migrate-gp-validation.md).
+
 ## Step 1: Disable the cloud migration
 
 Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This step is important because each time someone runs the migration, outstanding documents (like for vendors and inventory items), and other changes made in the online target company are overwritten.

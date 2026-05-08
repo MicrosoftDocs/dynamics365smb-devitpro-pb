@@ -21,7 +21,10 @@ ms.update-cycle: 180-days
 In AL, you find interfaces and codeunits designed for building custom AI agents in [!INCLUDE [prod_short](../includes/prod_short.md)]. This article provides an overview of these tools and links to detailed documentation for each area.
 
 > [!IMPORTANT]
-> This capability is currently enabled only for sandbox environments for evaluation purposes. Production environments don't support agent development at this time.
+> This capability is available for sandbox environments for evaluation purposes from 27.4. Starting from version 28.1, production environments are also supported.
+
+> [!IMPORTANT]
+> Before deploying agents to a production environment, it's highly recommended to define and run thorough tests in a sandbox environment. Learn more in [Best practices for designing an agent (preview)](ai-development-toolkit-best-practices.md).
 
 ## Quick-start
 

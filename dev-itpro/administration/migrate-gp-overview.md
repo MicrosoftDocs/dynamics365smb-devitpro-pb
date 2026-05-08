@@ -98,7 +98,7 @@ This section outlines the general process or phases you go through to migrate da
 
 1. Data replication
 
-   This step migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment. 
+   This step migrates data from on-premises to online. It starts when you run the **Run Migration Now** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment. 
 
    At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. Once the data replicates to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
@@ -111,6 +111,12 @@ This section outlines the general process or phases you go through to migrate da
    To get started, go to [Upgrade data](migration-data-upgrade.md).
 
    [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
+
+1. Data validation
+
+   After data upgrade completes, verify that data migrated correctly by running migration validation. Validation compares source data from Dynamics GP with migrated data in Business Central to identify discrepancies. You can run validation automatically after migration or manually at any time from the **Cloud Migration Management** page.
+
+   To get started, go to [Validate Dynamics GP data migration](migrate-gp-validation.md).
 
 1. Completion and follow-up
 
