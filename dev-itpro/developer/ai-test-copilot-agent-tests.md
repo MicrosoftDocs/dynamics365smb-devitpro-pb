@@ -368,5 +368,5 @@ Set `TestType="Agent"` in your suite XML to mark it as an agent evaluation:
 [Write AI tests](ai-test-copilot-ai-tests.md)  
 [Create datasets](ai-test-copilot-datasets.md)  
 [Evaluation](ai-test-copilot-testtool.md)  
-[Permissions in Evaluation](ai-development-toolkit-permissions.md)  
+[Permissions in Evaluation](../ai/ai-development-toolkit-permissions.md)  
 [Best practices for testing the Copilot capability](ai-test-copilot-bestpractices.md)  

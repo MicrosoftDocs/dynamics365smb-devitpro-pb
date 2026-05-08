@@ -192,7 +192,7 @@ When a limit is reached, evaluation tasks that are already running continue to c
 
 ### Managing credit limits
 
-Credit limits can be viewed and modified by users with the **agent admin** role. For more information about agent admin permissions, see [Permissions in Evaluation](ai-development-toolkit-permissions.md).
+Credit limits can be viewed and modified by users with the **agent admin** role. For more information about agent admin permissions, see [Permissions in Evaluation](../ai/ai-development-toolkit-permissions.md).
 
 - Agent admins with permissions in specific companies can modify the credit limits for those companies only.
 - Agent admins with permissions in all companies can also modify the environment-level limit.
