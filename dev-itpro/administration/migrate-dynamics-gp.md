@@ -145,6 +145,7 @@ The GP Historical Snapshot will run as a background process after the migration 
 - [Run cloud migration setup](migration-setup-gp.md)
 - [Run data migration](migration-data-replication.md)
 - [Run data upgrade](migration-data-upgrade-gp.md)
+- [Validate migrated data](migrate-gp-validation.md)
 - [Complete cloud migration](migration-finish-gp.md)  
 
 ## Related information

@@ -23,7 +23,7 @@ The following diagram illustrates what happens during the data replication:
 
 The following steps provide more details of the different phases in the process:
 
-1. On the **Cloud Migration Management** page, select **Run data migration** to start data replication.
+1. On the **Cloud Migration Management** page, select **Run Migration Now** to start data replication.
 1. Business Central online calls the Azure Data Factory and the replication pipeline that was installed during the cloud migration setup.
 1. The replication pipeline starts and provides instructions to the self-hosted integration runtime for copying data from the on-premises tenant to the online tenant.
 1. The data copy process starts. In general, data is copied on a per-table basis. But for performance reasons, there are two flows - one for large tables and one for smaller tables.
