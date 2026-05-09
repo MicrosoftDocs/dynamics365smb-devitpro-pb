@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 This article explains how to move tables and fields from an extension to another extension that is up the dependency graph.
 
 > [!TIP]
-> For more information about the general concepts for moving tables and fields between extensions, see [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md). This article explains the the difference between moving up and down the dependency graph.
+> For more information about the general concepts for moving tables and fields between extensions, see [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md). This article explains the difference between moving up and down the dependency graph.
 
 ## Overview
 

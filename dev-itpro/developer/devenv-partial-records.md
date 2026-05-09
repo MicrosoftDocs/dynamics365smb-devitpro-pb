@@ -67,7 +67,7 @@ Notice that the call to [SetLoadFields](methods-auto/record/record-setloadfields
 This feature gives you the ability to limit the fields that load for a record to only those fields that are necessary. In general, loading fewer fields will make operations faster. But the most significant performance gains can be seen with table extensions - by not loading unnecessary fields in table extensions. Table extensions that don't have any fields for loading won't be part of the data join, which saves time.
 
 <!--
-The main goal of the feature is to provide the ability to limit the number of fields that are necessary to load. In general, loading fewer fields will make operations more performant. But the most significant performance gain  gain more importantly, limiting the set of fields needed to not load any fields from other table extensions is where the majority gain will be seen. Some of the performance issues that customers have observed with many table extensions on a base table will go away with this optimization.
+The main goal of the feature is to provide the ability to limit the number of fields that are necessary to load. In general, loading fewer fields will make operations more performant. But the most significant performance gain. More importantly, limiting the set of fields needed to not load any fields from other table extensions is where the majority gain will be seen. Some of the performance issues that customers have observed with many table extensions on a base table will go away with this optimization.
 -->
 
 > [!TIP]

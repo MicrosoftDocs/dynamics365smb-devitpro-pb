@@ -359,7 +359,7 @@ An internal PowerShell process should start and an output window appears in Visu
 ### Run using the PowerShell scripts
 
 > [!NOTE]  
-> The the Performance Toolkit extension in Visual Studio Code automatically installs these PowerShell scripts. However, if you aren't using the Performance Toolkit in Visual Studio Code, you'll need to download the scripts. The scripts are available in the [DVD](/dynamics365/business-central/dev-itpro/deployment/install-using-setup) in the **Applications\testframework\TestRunner** folder. To get there, follow these steps:
+> The Performance Toolkit extension in Visual Studio Code automatically installs these PowerShell scripts. However, if you aren't using the Performance Toolkit in Visual Studio Code, you'll need to download the scripts. The scripts are available in the [DVD](/dynamics365/business-central/dev-itpro/deployment/install-using-setup) in the **Applications\testframework\TestRunner** folder. To get there, follow these steps:
 >
 > 1. Go to [Download the files](/dynamics365/business-central/dev-itpro/deployment/install-using-setup#download-the-files).
 > 1. Choose the link to the latest version of [!INCLUDE [prod_short](../includes/prod_short.md)].
