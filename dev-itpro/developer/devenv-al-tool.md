@@ -2,7 +2,7 @@
 title: ALTool
 author: SusanneWindfeldPedersen
 description: Simplify AL extension development with ALTool. Validate code, package extensions, and integrate into CI/CD pipelines for seamless deployment.
-ms.date: 03/09/2026
+ms.date: 05/09/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -52,6 +52,7 @@ alc.exe help
 | `compile`                      | Compile a package using `alc.exe`. Learn more in [Workspace commands](#workspace-commands). |
 | `workspace`                    | Workspace commands for creating, compiling, and mapping multi-project AL workspaces. Learn more in [Workspace commands](#workspace-commands). |
 | `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
+| `launchlspserver`              | Launches an AL Language Server Protocol (LSP) server for use by autonomous AI agents and editors. Learn more in [AL LSP](#al-lsp). |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |
@@ -141,6 +142,44 @@ The following options are supported:
 | `-?, -h, --help`          | Show help and usage information |
 
 Once the server is launched, it listens on the specified port for MCP calls and provides several tools for agents to interact with the loaded projects.
+
+## AL LSP
+
+The [Language Server Protocol (LSP)](https://microsoft.github.io/language-server-protocol/) is the contract that editors and IDEs use for code intelligence. For autonomous AI agents working with AL—whether they're answering questions about a codebase, refactoring across files, or building new extensions—an LSP server provides the same grounded semantic understanding that a human developer gets inside Visual Studio Code, without the editor itself. Instead of guessing from raw source text, an agent can ask precise questions ("where is this procedure called?", "what's the type of this record?", "what symbols does this codeunit expose?") and receive structured answers from the language server.
+
+This is fundamentally more powerful than text-based search tools such as `grep` or regular expressions. A regular expression matches characters; it can't distinguish a procedure declaration from a comment that mentions the procedure's name, separate a `Customer` record reference from the word *Customer* in a message string, or know that two textually identical names in different namespaces refer to different symbols. The LSP server understands the language—scopes, types, accessibility, and the relationships between modules—and answers based on that, which is why agents that drive their navigation through LSP make fewer mistakes and need less context than those that fall back on text search.
+
+This matters in real-world AL workspaces, which routinely span multiple projects (a base app plus tests, or verticals plus extensions): semantic find-references and go-to-definition that correctly follow AL-specific relationships such as `internalsVisibleTo` and `propagateDependencies` are difficult to reproduce by hand or with text search, and an agent that navigates the workspace symbolically uses far less context than one that has to read files exhaustively to compensate. Refactorings such as rename remain accurate because the server knows every reference. The result is faster, more reliable agentic workflows on AL code.
+
+ALTool exposes this through the `launchlspserver` command. The agent or editor spawns ALTool as a child process and communicates with it over stdio using JSON-RPC. The server provides the full set of AL language features: hover, go-to-definition, completions, find-references (including across projects), document symbols, rename, formatting, inlay hints, folding ranges, and type hierarchy.
+
+Wire ALTool into your LSP host's plugin configuration so it's invoked as:
+
+```shell
+altool launchlspserver [<projects>...] [options]
+```
+
+The `projects` argument is a space-separated list of AL project folder paths. Wrap each path in double quotes `"`. When more than one project is supplied, ALTool reads each project's `app.json` and resolves the dependencies between them (including `internalsVisibleTo` and `propagateDependencies` relationships) so that find-references and other cross-project requests span every supplied project. If `<projects>` is omitted, ALTool falls back to scanning the `rootUri` from the LSP `initialize` request; that fallback suits a single-project workspace but doesn't enable cross-project resolution. The `--workspacefile` option below is an alternative source of project folders, and folders from a workspace file merge with positional projects.
+
+The following options are supported:
+
+| Option                 | Description |
+|------------------------|-------------|
+| `--packagecachepath <paths>` | Paths to the package cache folders containing the `.app` symbol packages (`System.app`, `BaseApp.app`, etc.). Optional when `al.packageCachePath` is supplied via `--settingspath` or `--workspacefile`. |
+| `--assemblyprobingpaths <paths>` | Paths to probe for dependent .NET assemblies. Required when AL projects reference .NET add-ins in non-standard locations. |
+| `--ruleset <path>`     | Path to a ruleset (`.json`) file for AL code analysis. |
+| `--settingspath <path>` | Path to a `settings.json` file (any VS Code scope—user, workspace, or folder) whose `al.*` keys override CLI defaults at startup. When omitted, ALTool auto-discovers `<rootUri>/.vscode/settings.json` from the LSP `initialize` request, walking ancestors. The LSP `initializationOptions.settingsPath` key from the client takes final precedence. |
+| `--workspacefile <path>` | Path to a VS Code `.code-workspace` file. Its `folders` extend the projects loaded at startup (merged with the positional `<projects>` argument), and its inline `settings` block contributes `al.*` keys as workspace-level configuration. `--settingspath`, when also supplied, overrides the inline settings. |
+| `--logfile <path>`     | Path to the log file. Defaults to `~/.al-mcp/almcp.log`. |
+| `--loglevel <level>`   | Log level: `Debug`, `Verbose`, `Normal` (default), `Warning`, `Error`. |
+| `--nolog`              | Disable logging entirely. |
+| `-?, -h, --help`       | Show help and usage information. |
+
+Configuration is layered, from least to most authoritative: CLI flags → `--workspacefile` inline settings → `--settingspath` file → auto-discovered `.vscode/settings.json` → LSP `initializationOptions`. The recognized `al.*` keys are `packageCachePath`, `assemblyProbingPaths`, `ruleSetPath`, `enableCodeAnalysis`, and `codeAnalyzers`. JSONC features (`//` comments, trailing commas) are tolerated to match VS Code's parser.
+
+ALTool validates the supplied input. `--workspacefile` and `--settingspath` paths must exist and parse, and a package cache must be reachable (the `.app` symbol packages are required for AL LSP to provide full language intelligence). When `assemblyProbingPaths` and `ruleSetPath` are both empty, ALTool emits a warning—compilation can fail on projects that reference .NET add-ins or rely on analyzer rulesets.
+
+Diagnostic output is written to the standard log file (`--logfile`) and mirrored to `stderr`, which the LSP host typically surfaces in its own diagnostic stream.
 
 ## Related information
 
