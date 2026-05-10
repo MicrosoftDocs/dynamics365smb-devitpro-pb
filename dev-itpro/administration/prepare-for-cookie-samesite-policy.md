@@ -47,7 +47,7 @@ To prevent disruption, you must upgrade the platform for your version of Dynamic
 |Dynamics NAV 2016|[49](https://support.microsoft.com/help/4528701/cumulative-update-49-for-microsoft-dynamics-nav-2016-build-51640)|
 |Dynamics NAV 2017|[36](https://support.microsoft.com/help/4528702/cumulative-update-36-for-microsoft-dynamics-nav-2017-build-30074)|
 |Dynamics NAV 2018|[23](https://support.microsoft.com/help/4528703/cumulative-update-23-for-microsoft-dynamics-nav-2018-build-37606)|
-|Dynamics 365 365 Business Central Fall 2018|[13](https://support.microsoft.com/help/4528704/cumulative-update-13-for-microsoft-dynamics-365-business-central-on-pr)|
+|Dynamics 365 Business Central Fall 2018|[13](https://support.microsoft.com/help/4528704/cumulative-update-13-for-microsoft-dynamics-365-business-central-on-pr)|
 |Dynamics 365 Business Central Spring 2019|[06](https://support.microsoft.com/help/4528705/cumulative-update-06-for-microsoft-dynamics-365-business-central-sprin)|
 |Dynamics 365 Business Central 2019 Release Wave 2|[15.2](https://support.microsoft.com/help/4533389/update-15-1-for-microsoft-dynamics-365-business-central-2019-release-w)|
 
