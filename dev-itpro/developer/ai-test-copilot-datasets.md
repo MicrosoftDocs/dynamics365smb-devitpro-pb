@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 # Datasets
 
-A **dataset** is the foundation of AI testing in [!INCLUDE [prod_short](includes/prod_short.md)]. Since AI tests are inherently data-driven, datasets allow you to simulate various user scenarios and interactions. By using diverse and comprehensive datasets, you can thoroughly evaluate AI features to ensure they meet high standards for correctness, safety, and accuracy.
+A **dataset** is the foundation of AI testing in Microsoft Dynamics 365 Business Central. Since AI tests are inherently data-driven, datasets allow you to simulate various user scenarios and interactions. By using diverse and comprehensive datasets, you can thoroughly evaluate AI features to ensure they meet high standards for correctness, safety, and accuracy.
 
 This article covers two dataset flows:
 
