@@ -16,7 +16,7 @@ ms.reviewer: solsen
 
 An **agent test** evaluates the end-to-end behavior of a Business Central agent by sending it natural-language input and then asserting that it took the correct actions in the system. Unlike AI tests that evaluate prompt outputs, agent tests verify the full task execution loop: the agent receives input, decides what to do, interacts with Business Central, and completes — or pauses to ask the user for input — before continuing.
 
-The **AI Test Suite** is the main driver of an agent test. It iterates the dataset, dispatches each turn to your test codeunit, and collects evaluation results. The `Library - Agent` codeunit is a reusable helper that structures YAML input into agent task operations so individual tests don't have to wire up the agent task framework directly.
+The **AI Test Suite** is the main driver of an agent test. It iterates the dataset, dispatches each turn to your test codeunit, and collects evaluation results. The `Library - Agent` codeunit is a reusable helper for interacting with the agent during a test. It reads the defined YAML structure and streamlines the agent interactions, so individual tests don't have to handle that wiring directly.
 
 > [!NOTE]
 > Agent tests run against a live agent service and consume Copilot credits. Run them in sandbox environments with prepaid credits. See [Evaluation](ai-test-copilot-testtool.md#copilot-credit-limits-for-agent-evaluation-suites) for credit limits.
@@ -28,9 +28,9 @@ The **AI Test Suite** is the main driver of an agent test. It iterates the datas
 
 The recommended pattern is data-driven: the dataset describes the input to the agent and the expected outcome, and your test code runs a small turn loop that delegates the agent interaction to `Library - Agent`.
 
-### Step 1 - define the test codeunit
+### Step 1 - define the test codeunit and run the turn loop
 
-An agent test is a standard AL test codeunit with `TestType = AITest`. It uses `Library - Agent` to run each turn and `AIT Test Context` to read dataset values.
+An agent test is a standard AL test codeunit with `TestType = AITest`. It uses `Library - Agent` to run each turn and `AIT Test Context` to read dataset values. The codeunit follows a small pattern: an `Initialize` procedure that resolves and activates the agent, and a `[Test]` procedure that drives a `repeat ... until` loop over the dataset turns.
 
 ```al
 codeunit 50200 "My Agent Accuracy Test"
@@ -54,36 +54,62 @@ codeunit 50200 "My Agent Accuracy Test"
 > [!NOTE]
 > Agent tests depend on datasets that describe the input sent to the agent and the expected outcome. Learn how to create one in [Datasets](ai-test-copilot-datasets.md#agent-test-datasets).
 
-### Step 2 - author the dataset
+#### Initialize the agent
 
-Agent test datasets use the `query:` element to describe what the agent receives. A task-input query has at minimum a `title` (used as the task subject) and typically a `from` (sender display name) and a `message` (the natural-language instruction).
+`Initialize` runs before the first turn. It resolves the agent under test, cleans up any tasks left from prior runs, and activates the agent. The agent identity can come from the evaluation suite (when set) or from your own setup — fall back to creating the agent programmatically if neither is available.
 
-```yaml
-suite_setup: MY-AGENT-SETUP
-tests:
-  - name: AGENT_TEST_01
-    description: Process sales orders with a future shipment date
-    turns:
-      - query:
-          from: Jane Doe
-          title: "Release all sales orders for $DateFormula-<CW+1M>$"
-          message: "Release all sales orders for $DateFormula-<CW+1M>$"
-        expected_data:
-          expected_released_count: 2
+```al
+local procedure Initialize()
+begin
+    if Initialized then
+        exit;
+
+    // Optionally read the agent under test from the evaluation suite.
+    // This enables A/B testing — you can point a suite at a different agent
+    // without changing test code. Skip the call if your test always targets
+    // a specific agent.
+    LibraryAgent.GetAgentUnderTest(AgentUserSecurityId);
+
+    // GetAgentUnderTest returns a null GUID when no agent is configured
+    // on the suite. Fall back to your own lookup or to creating the agent
+    // programmatically.
+    if IsNullGuid(AgentUserSecurityId) then
+        AgentUserSecurityId := GetOrCreateAgent();
+
+    // Clean up any tasks left from prior runs before activating the agent.
+    // Running cleanup at the start of Initialize replaces a separate
+    // [TearDown] step and makes the test resilient to previous failures
+    // that didn't shut down cleanly.
+    LibraryAgent.StopTasks(AgentUserSecurityId);
+
+    LibraryAgent.EnsureAgentIsActive(AgentUserSecurityId);
+
+    Initialized := true;
+end;
 ```
 
-A few things to call out:
+`GetOrCreateAgent` is application-specific. A common pattern is to look up the agent identity in a setup record and create it on first run by using the Agent SDK:
 
-- **Always use the `turns:` array**, even for single-turn tests. Multi-turn syntax is the supported format for both single-turn and multi-turn tests.
-- **Dates are expressed through placeholders** — `$DateFormula-<formula>$` is calculated relative to `WorkDate` so the test doesn't drift over time. See [Placeholders for dates](ai-test-copilot-datasets.md#placeholders-for-dates) for the full reference.
-- **`expected_data` is your validation contract.** Most keys you put there are read by your own validator. One sub-key, `intervention_request`, is recognized by the framework — see Step 4.
+```al
+local procedure GetOrCreateAgent(): Guid
+var
+    MyAgentSetup: Record "My Agent Setup";
+begin
+    if MyAgentSetup.FindFirst() then
+        exit(MyAgentSetup."Agent User Security ID");
 
-> [!NOTE]
-> Older datasets use the legacy `question:` element instead of `query:`. Both are accepted by the framework; new datasets should use `query:`. See [Datasets — backwards compatibility](ai-test-copilot-datasets.md#backwards-compatibility-question) for migration details.
+    // First run — create the agent and persist its identity.
+    // See "Define and register an agent programmatically" for the APIs.
+    exit(CreateMyAgent());
+end;
+```
 
-### Step 3 - run the turn loop
+> [!TIP]
+> Calling `GetAgentUnderTest` is optional. Use it when you want the evaluation suite to control which agent the test targets — for example, to A/B test two agent versions against the same dataset. Tests that always run against a specific agent can skip the call and assign `AgentUserSecurityId` directly. For details on creating an agent in code, see [Define and register an agent programmatically](../ai/ai-agent-sdk-define-register.md).
 
-The recommended pattern is a `repeat … until` loop that delegates each turn to `Library - Agent.RunTurnAndWait` and then to `Library - Agent.FinalizeTurn`. `RunTurnAndWait` reads the current turn's `query:`, dispatches it to the agent, and waits for completion. `FinalizeTurn` writes the turn output, validates intervention expectations declared in the dataset, and advances to the next turn.
+#### Run the turn loop
+
+With `Initialize` in place, write the `[Test]` procedure. It runs a `repeat ... until` loop that delegates each turn to `Library - Agent.RunTurnAndWait` and then to `Library - Agent.FinalizeTurn`. `RunTurnAndWait` reads the current turn's `query:`, dispatches it to the agent, and waits for completion. `FinalizeTurn` writes the turn output, validates intervention expectations declared in the dataset, and advances to the next turn.
 
 ```al
 [Test]
@@ -118,51 +144,6 @@ begin
 end;
 ```
 
-`Initialize` resolves the agent under test and activates it. The agent identity can come from the evaluation suite (when set) or from your own setup — fall back to creating the agent programmatically if neither is available.
-
-```al
-local procedure Initialize()
-begin
-    if Initialized then
-        exit;
-
-    // Optionally read the agent under test from the evaluation suite.
-    // This enables A/B testing — you can point a suite at a different agent
-    // without changing test code. Skip the call if your test always targets
-    // a specific agent.
-    LibraryAgent.GetAgentUnderTest(AgentUserSecurityId);
-
-    // GetAgentUnderTest returns a null GUID when no agent is configured
-    // on the suite. Fall back to your own lookup or to creating the agent
-    // programmatically.
-    if IsNullGuid(AgentUserSecurityId) then
-        AgentUserSecurityId := GetOrCreateAgent();
-
-    LibraryAgent.EnsureAgentIsActive(AgentUserSecurityId);
-
-    Initialized := true;
-end;
-```
-
-`GetOrCreateAgent` is application-specific. A common pattern is to look up the agent identity in a setup record and create it on first run by using the Agent SDK:
-
-```al
-local procedure GetOrCreateAgent(): Guid
-var
-    MyAgentSetup: Record "My Agent Setup";
-begin
-    if MyAgentSetup.FindFirst() then
-        exit(MyAgentSetup."Agent User Security ID");
-
-    // First run — create the agent and persist its identity.
-    // See "Define and register an agent programmatically" for the APIs.
-    exit(CreateMyAgent());
-end;
-```
-
-> [!TIP]
-> Calling `GetAgentUnderTest` is optional. Use it when you want the evaluation suite to control which agent the test targets — for example, to A/B test two agent versions against the same dataset. Tests that always run against a specific agent can skip the call and assign `AgentUserSecurityId` directly. For details on creating an agent in code, see [Define and register an agent programmatically](../ai/ai-agent-sdk-define-register.md).
-
 Validation reads the turn's `expected_data` from `AIT Test Context` and checks Business Central state. Return `false` with a populated `ErrorReason` on mismatch rather than calling `Error()` — that lets `FinalizeTurn` log the failure on the turn and (optionally) continue with the next turn.
 
 ```al
@@ -185,7 +166,34 @@ begin
 end;
 ```
 
-### Step 4 - handle interventions declaratively
+### Step 2 - author the dataset
+
+Agent test datasets use the `query:` element to describe what the agent receives. A task-input query has at minimum a `title` (used as the task subject) and typically a `from` (sender display name) and a `message` (the natural-language instruction).
+
+```yaml
+suite_setup: MY-AGENT-SETUP
+tests:
+  - name: AGENT_TEST_01
+    description: Process sales orders with a future shipment date
+    turns:
+      - query:
+          from: Jane Doe
+          title: "Release all sales orders for $DateFormula-<CW+1M>$"
+          message: "Release all sales orders for $DateFormula-<CW+1M>$"
+        expected_data:
+          expected_released_count: 2
+```
+
+A few things to call out:
+
+- **Always use the `turns:` array**, even for single-turn tests. Multi-turn syntax is the supported format for both single-turn and multi-turn tests.
+- **Dates are expressed through placeholders** — `$DateFormula-<formula>$` is calculated relative to `WorkDate` so the test doesn't drift over time. See [Placeholders for dates](ai-test-copilot-datasets.md#placeholders-for-dates) for the full reference.
+- **`expected_data` is your validation contract.** Most keys you put there are read by your own validator. One sub-key, `intervention_request`, is recognized by the framework — see Step 3.
+
+> [!NOTE]
+> Older datasets use the legacy `question:` element instead of `query:`. Both are accepted by the framework; new datasets should use `query:`. See [Datasets — backwards compatibility](ai-test-copilot-datasets.md#backwards-compatibility-question) for migration details.
+
+### Step 3 - handle interventions declaratively
 
 Some agents pause to ask the user for input before continuing. The framework validates these interventions for you based on what the dataset declares.
 
@@ -220,7 +228,7 @@ The second turn uses a continuation `query` instead of a task input. You can res
 
 So declare `intervention_request` on every turn where you expect the agent to pause; otherwise omit it.
 
-### Step 5 - prepare per-turn data
+### Step 4 - prepare per-turn data
 
 A turn's `turn_setup:` block contains data to materialize in Business Central before the agent runs. The shape is application-defined — the framework hands the YAML sub-tree to your test code, which dispatches to record-creation handlers.
 
@@ -256,7 +264,7 @@ end;
 
 For a complete dispatcher implementation, see the [`SalesValidationAgent3P`](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent/test) sample.
 
-### Step 6 - configure suite-level setup (optional)
+### Step 5 - configure suite-level setup (optional)
 
 Suite-level setup holds data that needs to be created only once across all tests in a suite — typical examples are master records every test relies on (locations, customers, posting groups). Define it in a separate YAML file under `.resources/suite_setup/` and reference it by name from the test dataset:
 
@@ -291,24 +299,6 @@ end;
 
 Call `SetupPerSuiteTestData` from `Initialize`. The `IsSuiteSetupDone` flag is sticky across runs — use the **Reset Suite Setup** action on the AI Eval Suite page after editing the `suite_setup:` content.
 
-### Step 7 - tear down
-
-Stop agent tasks during teardown to avoid leftover tasks interfering with other tests or consuming credits.
-
-```al
-[TearDown]
-procedure TearDown()
-begin
-    LibraryAgent.StopTasks(AgentUserSecurityId);
-end;
-```
-
-To stop tasks across all agents in a global teardown:
-
-```al
-LibraryAgent.StopAllTasks();
-```
-
 ## Configure the evaluation suite
 
 Set `TestType="Agent"` and `TestRunnerId="130451"` (`Test Runner - Isol. Disabled`) on the suite XML to mark it as an agent evaluation. Each `<Line>` points at a dataset and your test codeunit.
@@ -332,7 +322,7 @@ Set `TestType="Agent"` and `TestRunnerId="130451"` (`Test Runner - Isol. Disable
 - **`CreateMessageAndWait(var AgentTaskMessageBuilder)`** — Append a message to an existing task and wait.
 - **`ContinueTaskAndWait(var AgentTask)`** / `(var AgentTask, UserInput)` — Continue a paused task with default or custom free-text input.
 - **`WaitForTaskToComplete(var AgentTask)`** — Block until a task finishes. Use this in end-to-end scenarios that start the task from product code (for example, by invoking an action) rather than from the library.
-- **`StopTasks(AgentUserSecurityId)`** / **`StopAllTasks()`** — Teardown helpers.
+- **`StopTasks(AgentUserSecurityId)`** / **`StopAllTasks()`** — Cleanup helpers. The recommended flow calls `StopTasks` from `Initialize`; use these directly only when you need ad-hoc cleanup outside the standard turn loop.
 - **`SetAgentTaskTimeout(NewTimeout)`** — Override the 30-minute default wait for all `…AndWait` methods.
 
 Example: building and starting a task manually.
