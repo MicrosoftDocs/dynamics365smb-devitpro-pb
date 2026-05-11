@@ -49,7 +49,7 @@ codeunit 50200 "My Agent Accuracy Test"
 }
 ```
 
-`RequiredTestIsolation = Disabled` is needed because agent tasks span transactions.
+`RequiredTestIsolation = Disabled` is needed because agent tasks span transactions in a different session.
 
 > [!NOTE]
 > Agent tests depend on datasets that describe the input sent to the agent and the expected outcome. Learn how to create one in [Datasets](ai-test-copilot-datasets.md#agent-test-datasets).
@@ -74,7 +74,7 @@ tests:
 
 A few things to call out:
 
-- **Always use the `turns:` array**, even for single-turn tests. Multi-turn syntax is the supported shape.
+- **Always use the `turns:` array**, even for single-turn tests. Multi-turn syntax is the supported format for both single-turn and multi-turn tests.
 - **Dates are expressed through placeholders** — `$DateFormula-<formula>$` is calculated relative to `WorkDate` so the test doesn't drift over time. See [Placeholders for dates](ai-test-copilot-datasets.md#placeholders-for-dates) for the full reference.
 - **`expected_data` is your validation contract.** Most keys you put there are read by your own validator. One sub-key, `intervention_request`, is recognized by the framework — see Step 4.
 
@@ -106,7 +106,7 @@ begin
         TurnSuccessful := LibraryAgent.RunTurnAndWait(AgentUserSecurityId, AgentTask);
 
         if TurnSuccessful then
-            TurnSuccessful := ValidateBusinessCentralState(ErrorReason)
+            TurnSuccessful := ValidateTurnCompletedSuccessfully(ErrorReason)
         else
             ErrorReason := StrSubstNo(AgentStatusErr, AgentTask.Status);
 
@@ -118,7 +118,7 @@ begin
 end;
 ```
 
-`Initialize` resolves the agent under test and activates it:
+`Initialize` resolves the agent under test and activates it. The agent identity can come from the evaluation suite (when set) or from your own setup — fall back to creating the agent programmatically if neither is available.
 
 ```al
 local procedure Initialize()
@@ -126,20 +126,47 @@ begin
     if Initialized then
         exit;
 
+    // Optionally read the agent under test from the evaluation suite.
+    // This enables A/B testing — you can point a suite at a different agent
+    // without changing test code. Skip the call if your test always targets
+    // a specific agent.
     LibraryAgent.GetAgentUnderTest(AgentUserSecurityId);
+
+    // GetAgentUnderTest returns a null GUID when no agent is configured
+    // on the suite. Fall back to your own lookup or to creating the agent
+    // programmatically.
+    if IsNullGuid(AgentUserSecurityId) then
+        AgentUserSecurityId := GetOrCreateAgent();
+
     LibraryAgent.EnsureAgentIsActive(AgentUserSecurityId);
 
     Initialized := true;
 end;
 ```
 
+`GetOrCreateAgent` is application-specific. A common pattern is to look up the agent identity in a setup record and create it on first run by using the Agent SDK:
+
+```al
+local procedure GetOrCreateAgent(): Guid
+var
+    MyAgentSetup: Record "My Agent Setup";
+begin
+    if MyAgentSetup.FindFirst() then
+        exit(MyAgentSetup."Agent User Security ID");
+
+    // First run — create the agent and persist its identity.
+    // See "Define and register an agent programmatically" for the APIs.
+    exit(CreateMyAgent());
+end;
+```
+
 > [!TIP]
-> `GetAgentUnderTest` returns the agent configured in the evaluation suite. Using it instead of hard-coded agent IDs enables A/B testing — you can point a suite at a different agent without changing test code.
+> Calling `GetAgentUnderTest` is optional. Use it when you want the evaluation suite to control which agent the test targets — for example, to A/B test two agent versions against the same dataset. Tests that always run against a specific agent can skip the call and assign `AgentUserSecurityId` directly. For details on creating an agent in code, see [Define and register an agent programmatically](../ai/ai-agent-sdk-define-register.md).
 
 Validation reads the turn's `expected_data` from `AIT Test Context` and checks Business Central state. Return `false` with a populated `ErrorReason` on mismatch rather than calling `Error()` — that lets `FinalizeTurn` log the failure on the turn and (optionally) continue with the next turn.
 
 ```al
-local procedure ValidateBusinessCentralState(var ErrorReason: Text): Boolean
+local procedure ValidateTurnCompletedSuccessfully(var ErrorReason: Text): Boolean
 var
     ExpectedData: Codeunit "Test Input Json";
     ExpectedReleased: Integer;
