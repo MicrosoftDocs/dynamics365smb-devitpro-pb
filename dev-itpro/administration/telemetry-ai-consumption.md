@@ -50,7 +50,7 @@ Occurs when Copilot Credits are consumed.
 |telemetrySchemaVersion|0.1|
 |userId|GUID representing the identity of the agent that consumed Copilot Credits|
 
-### Sample KQL code (environment app hotfix scheduling by App Management API failed to be installed)
+### Sample KQL code
 
 This KQL code can help you get started analyzing consumed Copilot Credits:
 
