@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 # Datasets
 
-A **dataset** is the foundation of AI testing in Microsoft Dynamics 365 Business Central. Since AI tests are inherently data-driven, datasets allow you to simulate various user scenarios and interactions. By using diverse and comprehensive datasets, you can thoroughly evaluate AI features to ensure they meet high standards for correctness, safety, and accuracy.
+A **dataset** is the foundation of AI testing in [!INCLUDE [prod_short](includes/prod_short.md)]. Since AI tests are inherently data-driven, datasets allow you to simulate various user scenarios and interactions. By using diverse and comprehensive datasets, you can thoroughly evaluate AI features to ensure they meet high standards for correctness, safety, and accuracy.
 
 This article covers two dataset flows:
 
@@ -206,7 +206,7 @@ Declare `intervention_request` on every turn where you expect the agent to pause
 
 ### Per-turn setup
 
-`turn_setup:` holds data to materialize in Business Central before the agent runs. The shape is application-defined — most agents use the same `setup_actions` convention as the suite-setup, so one dispatcher in the test library can drive both.
+`turn_setup:` holds data to materialize in [!INCLUDE [prod_short](includes/prod_short.md)] before the agent runs. The shape is application-defined — most agents use the same `setup_actions` convention as the suite-setup, so one dispatcher in the test library can drive both.
 
 ```yaml
 turn_setup:
@@ -289,7 +289,7 @@ When you create AI tests, the data you use is as important as the AI features yo
 ## Related information
 
 [Business Central Copilot Evaluation](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
-[SalesValidationAgent3P sample on BCTech](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent/test)  
+[Sales Validation Agent sample on BCTech](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent/test)  
 [Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Evaluation](ai-test-copilot-testtool.md)  
