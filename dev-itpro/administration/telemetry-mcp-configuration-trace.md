@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Analyze MCP configuration telemetry
 
-**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2026 release wave 1, version 26.0, and later
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2026 release wave 1, version 28.0, and later
 
 [Model Context Protocol (MCP)](../ai/mcp-overview.md) configuration telemetry gathers data about the following operations:
 
