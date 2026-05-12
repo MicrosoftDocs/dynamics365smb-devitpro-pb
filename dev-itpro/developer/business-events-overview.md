@@ -176,31 +176,36 @@ To build and install an extension that implements custom business events, see ou
 1. Use the **Business Central Virtual Data Source Configuration** table to refresh the Business Central catalog with custom business events on your Dataverse environment (see [previous section](#refresh-business-central-catalog-of-business-events)).
 
 ```al
+namespace MyCompany.SalesExtension;
+
+using System.Integration;
+using Microsoft.Sales.Document;
+
 enumextension 50101 MyEnumExtension extends EventCategory
 {
-   value(0; "Sales")
-   {
-   }
+   value(0; "Sales")
+   {
+   }
 }
 
-codeunit 50102 MyCodeunit 
-{ 
-   trigger OnRun()
+codeunit 50102 MyCodeunit 
+{ 
+   trigger OnRun()
    begin
-   end; 
+   end; 
 
    [ExternalBusinessEvent('salesorderposted', 'Sales order posted', 'Triggered when sales order has been posted', EventCategory::"Sales")]
    [RequiredPermissions(PermissionObjectType::TableData, Database::"Sales Header", 'R')] // optional
-   procedure SalesOrderPosted(salesOrderId: Guid; customerName: Text; orderNumber: Text)
-   begin
-   end;
-   
-   [EventSubscriber(ObjectType::Page, Page::"Sales Order", 'OnPostDocumentBeforeNavigateAfterPosting', '', true, true)] 
-   local procedure OnPostDocument(var SalesHeader: Record "Sales Header"; var PostingCodeunitID: Integer; var Navigate: Enum "Navigate After Posting"; DocumentIsPosted: Boolean; var IsHandled: Boolean) 
+   procedure SalesOrderPosted(salesOrderId: Guid; customerName: Text; orderNumber: Text)
    begin
-      SalesOrderPosted(SalesHeader.SystemId, SalesHeader."Sell-to Customer Name", SalesHeader."No."); 
    end;
-} 
+   
+   [EventSubscriber(ObjectType::Page, Page::"Sales Order", 'OnPostDocumentBeforeNavigateAfterPosting', '', true, true)] 
+   local procedure OnPostDocument(var SalesHeader: Record "Sales Header"; var PostingCodeunitID: Integer; var Navigate: Enum "Navigate After Posting"; DocumentIsPosted: Boolean; var IsHandled: Boolean) 
+   begin
+      SalesOrderPosted(SalesHeader.SystemId, SalesHeader."Sell-to Customer Name", SalesHeader."No."); 
+   end;
+} 
 ```
 
 ## Query Business Central catalog of business events in non-Dataverse systems

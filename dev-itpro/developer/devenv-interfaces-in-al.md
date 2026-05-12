@@ -64,6 +64,8 @@ The following example defines an interface `IAddressProvider`, which has one met
 The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the `IAddressProvider` interface.
 
 ```AL
+namespace MyCompany.AddressManagement;
+
 interface "IAddressProvider"
 {
     procedure GetAddress(): Text
@@ -183,6 +185,10 @@ The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](met
 The following example illustrates how to create a [Dictionary](methods-auto/dictionary/dictionary-data-type.md) of interfaces:
 
 ```AL
+namespace MyCompany.BarcodeExamples;
+
+using System.Text;
+
 codeunit 50120 MyDictionaryCodeunit
 {
     procedure MyProcedure(): Dictionary of [Integer, Interface "Barcode Font Provider"]
@@ -199,6 +205,8 @@ codeunit 50120 MyDictionaryCodeunit
 The following example illustrates how to create a [List](methods-auto/list/list-data-type.md) of interfaces:
 
 ```al
+namespace MyCompany.ShapeExamples;
+
 interface IShape
 {
     procedure GetArea(): Decimal;
