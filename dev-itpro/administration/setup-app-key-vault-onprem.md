@@ -96,6 +96,14 @@ The steps in this task are done from the [Azure portal](https://portal.azure.com
 5. Select **Add**.
 6. Select **Save**.
 
+Perhaps, if your key vault is using Azure Role-Based Access Control then the steps would be:
+
+1. Navigate to your Azure Key Vault: In the Azure portal, go to your Key Vault resource.
+1. **Access Control (IAM)**: Under the Settings menu, select **Access control (IAM)**.
+1. Add Role Assignment: Select **+ Add** and choose **Add role assignment**.
+1. Select Role: On the Add role assignment page, search for **Key Vault Secrets User** and select it from the search results. This role allows the service identity to read secrets but not perform any other actions.
+1. Select Members: Go to the Members tab, select **User, group, or service principal**, then select **+ Select members**. In the pane on the right, search for either the application (client) ID or the display name eg: "Dynamics 365 Business Central Key Vault Reader On-Prem"
+
 At this point, the work in Azure is finished.
 
 ## Configure the Business Central Server to use the Apps Key Vault feature
