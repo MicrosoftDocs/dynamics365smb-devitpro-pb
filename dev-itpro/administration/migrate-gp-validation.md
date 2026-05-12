@@ -2,7 +2,7 @@
 title: Migration validation overview
 description: Learn about the migration validation feature that verifies data migrated from Dynamics GP to Business Central.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/09/2025
 ms.author: jswymer
 ms.reviewer: jswymer
