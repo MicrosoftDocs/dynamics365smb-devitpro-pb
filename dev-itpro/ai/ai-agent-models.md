@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/11/2026
+ms.date: 05/12/2026
 ms.update-cycle: 180-days
 ---
 
@@ -18,7 +18,10 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-Agents in [!INCLUDE [prod_short](../includes/prod_short.md)] can run on different AI models. The model an agent uses can affect its behavior, performance, and results. Multiple models can be available at the same time, and each agent can either use a specific model or rely on the automatic (default) model selection. If you add Copilot agents to your environment, there's no default model, you always have to specify, which one to use in code.
+Agents in [!INCLUDE [prod_short](../includes/prod_short.md)] can run on different AI models. The model an agent uses can affect its behavior, performance, and results. Multiple models can be available at the same time, and each agent can either use a specific model or rely on the automatic (default) model selection. 
+
+> [!NOTE]
+> If you add Copilot agents to your environment, there's no default model, you always have to specify, which one to use in code.
 
 > [!NOTE]
 > The AI models available for agents in [!INCLUDE [prod_short](../includes/prod_short.md)] are determined by Microsoft and may change over time. Model availability can depend on factors such as the agent's capabilities, the environment, and the stage of the model lifecycle.
@@ -44,6 +47,10 @@ The following points apply:
 - The model lifecycle doesn't align with the standard [!INCLUDE [prod_short](../includes/prod_short.md)] deprecation timelines.
 - The default model (used by auto mode) can change over time.
 - Agents that use auto selection might experience behavior changes when the default model changes.
+- Model updates and the availability of new model-selection features in the UI can roll out independently. During transitions, agents continue to work as expected with the updated model, even before the selection UI reflects the change.
+
+> [!IMPORTANT]
+> When the default model changes, we recommend that you re-evaluate your agents, because agent behavior and accuracy can be affected by the model update.
 
 ## Retired and obsolete models
 
