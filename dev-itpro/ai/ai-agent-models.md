@@ -28,9 +28,19 @@ Agents in [!INCLUDE [prod_short](../includes/prod_short.md)] can run on differen
 You can view and manage AI models in two ways:
 
 - **Agent configuration in the UI**  
-  The agent card and setup pages show the current model and allow you to change it. A dedicated list page shows all available models.
+  For agents created from the agent design experience, the agent card and setup pages show the current model and allow you to change it. A dedicated list page shows all available models. For coded agents, the model in use isn't visible in the UI.
 - **Agents coded in AL**  
-  APIs allow you to list available models and set the model on an agent programmatically.
+  APIs allow you to list available models and set the model on an agent or on individual tasks programmatically.
+
+## Model resolution
+
+When an agent runs a task, [!INCLUDE [prod_short](../includes/prod_short.md)] resolves which model to use in the following order:
+
+1. If a model is specified on the **task**, that model is used.
+2. If no model is set on the task but a model is specified on the **agent**, the agent-level model is used.
+3. If no model is set on either the task or the agent, the **default** model is used.
+
+This resolution order lets you set a general model preference at the agent level while overriding it for specific tasks that benefit from a different model.
 
 ## Model lifecycle
 
