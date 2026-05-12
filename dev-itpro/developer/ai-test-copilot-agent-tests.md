@@ -187,11 +187,11 @@ tests:
 A few things to call out:
 
 - **Always use the `turns:` array**, even for single-turn tests. Multi-turn syntax is the supported format for both single-turn and multi-turn tests.
-- **Dates are expressed through placeholders** — `$DateFormula-<formula>$` is calculated relative to `WorkDate` so the test doesn't drift over time. See [Placeholders for dates](ai-test-copilot-datasets.md#placeholders-for-dates) for the full reference.
+- **Dates are expressed through placeholders** — `$DateFormula-<formula>$` is calculated relative to `WorkDate` so the test doesn't drift over time. Learn more in [Placeholders for dates](ai-test-copilot-datasets.md#placeholders-for-dates) for the full reference.
 - **`expected_data` is your validation contract.** Most keys you put there are read by your own validator. One sub-key, `intervention_request`, is recognized by the framework — see Step 3.
 
 > [!NOTE]
-> Older datasets use the legacy `question:` element instead of `query:`. Both are accepted by the framework; new datasets should use `query:`. See [Datasets — backwards compatibility](ai-test-copilot-datasets.md#backwards-compatibility-question) for migration details.
+> Older datasets use the legacy `question:` element instead of `query:`. Both are accepted by the framework; new datasets should use `query:`. Learn more in [Datasets — backwards compatibility](ai-test-copilot-datasets.md#backwards-compatibility-question) about migration details.
 
 ### Step 3 - handle interventions declaratively
 
@@ -262,7 +262,7 @@ begin
 end;
 ```
 
-For a complete dispatcher implementation, see the [`SalesValidationAgent3P`](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent/test) sample.
+For a complete dispatcher implementation, check out the [`SalesValidationAgent3P`](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent/test) sample.
 
 ### Step 5 - configure suite-level setup (optional)
 
