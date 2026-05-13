@@ -128,6 +128,7 @@ Ready to try design an agent? The process involves enabling the feature, creatin
 [Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Agent models (preview)](ai-agent-models.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
 [Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
