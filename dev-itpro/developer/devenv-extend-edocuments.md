@@ -58,7 +58,7 @@ enumextension 50100 "EDocument Format Ext" extends "E-Document Format"
 The document interface has been divided into two sections:
 
 - Create an e-document from a [!INCLUDE [prod_short](../includes/prod_short.md)] document that can be sent to a designated endpoint: **Check**, **Create**, **CreateBatch**.
-- Receive a document from the endpoint: **GetBasicInfo**, **PrepareDocument**.
+- Receive a document from the endpoint: **GetBasicInfoFromReceivedDocument**, **GetCompleteInfoFromReceivedDocument**.
 
 Here's an example of how you could implement each of the methods within the interface:
 
@@ -142,10 +142,10 @@ procedure CreateBatch(EDocumentService: Record "E-Document Service"; var EDocume
     end;
 ```
 
-- **GetBasicInfo**: Use it to get the basic information of an e-document from a received blob.
+- **GetBasicInfoFromReceivedDocument**: Use it to get the basic information of an e-document from a received blob.
 
 ```AL
-procedure GetBasicInfo(var EDocument: Record "E-Document"; var TempBlob: Codeunit "Temp Blob")
+procedure GetBasicInfoFromReceivedDocument(var EDocument: Record "E-Document"; var TempBlob: Codeunit "Temp Blob")
     var
         XmlDoc: XmlDocument;
         DocInstr: InStream;
@@ -163,10 +163,10 @@ procedure GetBasicInfo(var EDocument: Record "E-Document"; var TempBlob: Codeuni
     end;
 ```
 
-- **PrepareDocument**: Use it to create a document from an imported blob.    
+- **GetCompleteInfoFromReceivedDocument**: Use it to create a document from an imported blob.    
 
 ```AL
-procedure PrepareDocument(var EDocument: Record "E-Document"; var CreatedDocumentHeader: RecordRef; var CreatedDocumentLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
+procedure GetCompleteInfoFromReceivedDocument(var EDocument: Record "E-Document"; var CreatedDocumentHeader: RecordRef; var CreatedDocumentLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
     begin
 
     end;
