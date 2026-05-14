@@ -144,8 +144,6 @@ procedure CreateBatch(EDocumentService: Record "E-Document Service"; var EDocume
 
 - **GetBasicInfoFromReceivedDocument**: Use it to get the basic information of an e-document from a received blob.
 
-> Source: [`EDocPEPPOLBIS30.Codeunit.al`](https://github.com/microsoft/BCApps/blob/main/src/Apps/W1/EDocument/App/src/Format/EDocPEPPOLBIS30.Codeunit.al) in `microsoft/BCApps`
-
 ```AL
 procedure GetBasicInfoFromReceivedDocument(var EDocument: Record "E-Document"; var TempBlob: Codeunit "Temp Blob")
 begin
@@ -154,8 +152,6 @@ end;
 ```
 
 - **GetCompleteInfoFromReceivedDocument**: Use it to create a document from an imported blob.    
-
-> Source: [`EDocPEPPOLBIS30.Codeunit.al`](https://github.com/microsoft/BCApps/blob/main/src/Apps/W1/EDocument/App/src/Format/EDocPEPPOLBIS30.Codeunit.al) in `microsoft/BCApps`
 
 ```AL
 procedure GetCompleteInfoFromReceivedDocument(var EDocument: Record "E-Document"; var CreatedDocumentHeader: RecordRef; var CreatedDocumentLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
@@ -224,8 +220,6 @@ The **Send** method is responsible for sending an e-document to an external serv
 
 Here's an example implementation of the **Send** method:
 
-> Source: [`PageroIntegrationImpl.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/EDocumentConnectors/Pagero/app/PageroIntegrationImpl.Codeunit.al) in `microsoft/ALAppExtensions`
-
 ```AL
 procedure Send(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; SendContext: Codeunit SendContext)
 var
@@ -278,8 +272,6 @@ The **GetResponse** method retrieves the response from the external service for 
 
 Here's an example implementation of the **GetResponse** method:
 
-> Source: [`PageroIntegrationImpl.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/EDocumentConnectors/Pagero/app/PageroIntegrationImpl.Codeunit.al) in `microsoft/ALAppExtensions`
-
 ```AL
 procedure GetResponse(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; SendContext: Codeunit SendContext): Boolean
 var
@@ -321,8 +313,6 @@ The **ReceiveDocuments** method retrieves one or more documents from the externa
 
 ##### Example implementation of the ReceiveDocuments method
 
-> Source: [`PageroIntegrationImpl.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/EDocumentConnectors/Pagero/app/PageroIntegrationImpl.Codeunit.al) in `microsoft/ALAppExtensions`
-
 ```AL
 procedure ReceiveDocuments(var EDocumentService: Record "E-Document Service"; DocumentsMetadata: Codeunit "Temp Blob List"; ReceiveContext: Codeunit ReceiveContext)
 begin
@@ -342,8 +332,6 @@ The **DownloadDocument** method downloads the content of a specific document (fo
 - **ReceiveContext**: A codeunit providing context and resources for the download operation.
 
 ##### Example implementation of the DownloadDocument method
-
-> Source: [`PageroIntegrationImpl.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/EDocumentConnectors/Pagero/app/PageroIntegrationImpl.Codeunit.al) in `microsoft/ALAppExtensions`
 
 ```AL
 procedure DownloadDocument(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; DocumentMetadata: Codeunit "Temp Blob"; ReceiveContext: Codeunit ReceiveContext)
@@ -378,8 +366,6 @@ To use the **ISentDocumentActions** interface, you need to implement the **GetAp
 
 ##### Example implementation of the GetApprovalStatus method
 
-> Source: [`PageroIntegrationImpl.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/EDocumentConnectors/Pagero/app/PageroIntegrationImpl.Codeunit.al) in `microsoft/ALAppExtensions`
-
 ```AL
 procedure GetApprovalStatus(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext) Success: Boolean
 var
@@ -403,8 +389,6 @@ end;
 - **ActionContext**: Codeunit **ActionContext** for managing HTTP requests and responses.  
 
 ##### Example implementation of the GetCancellationStatus method
-
-> Source: [`PageroIntegrationImpl.Codeunit.al`](https://github.com/microsoft/ALAppExtensions/blob/main/Apps/W1/EDocumentConnectors/Pagero/app/PageroIntegrationImpl.Codeunit.al) in `microsoft/ALAppExtensions`
 
 ```AL
 procedure GetCancellationStatus(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext) Success: Boolean
