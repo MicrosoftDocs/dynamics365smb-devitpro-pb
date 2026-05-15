@@ -527,7 +527,7 @@ The following example shows how to implement logic for defining prices.
 codeunit 50105 "Shpfy Custom Price"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnBeforeCalculateUnitPrice, '', false, false)]
-    procedure BeforeCalculateUnitPrice(Item: Record Item; VariantCode: Code[20]; UnitOfMeasure: Code[20]; ShopifyShop: Record "Shpfy Shop"; var UnitCost: Decimal; var Price: Decimal; var ComparePrice: Decimal; var Handled: Boolean)
+    procedure BeforeCalculateUnitPrice(Item: Record Item; VariantCode: Code[20]; UnitOfMeasure: Code[20]; ShopifyShop: Record "Shpfy Shop"; Catalog: Record "Shpfy Catalog"; var UnitCost: Decimal; var Price: Decimal; var ComparePrice: Decimal; var Handled: Boolean)
     var
         CurrExchRate: Record "Currency Exchange Rate";
         ItemUOM: Record "Item Unit of Measure";
@@ -556,7 +556,7 @@ The following example shows how to implement logic for defining compare-at price
 codeunit 50110 "Shpfy Custom Compare Price"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCalculateUnitPrice, '', false, false)]
-    procedure AfterCalculateUnitPrice(Item: Record Item; VariantCode: Code[20]; UnitOfMeasure: Code[20]; ShopifyShop: Record "Shpfy Shop"; var UnitCost: Decimal; var Price: Decimal; var ComparePrice: Decimal)
+    procedure AfterCalculateUnitPrice(Item: Record Item; VariantCode: Code[20]; UnitOfMeasure: Code[20]; ShopifyShop: Record "Shpfy Shop"; Catalog: Record "Shpfy Catalog"; var UnitCost: Decimal; var Price: Decimal; var ComparePrice: Decimal)
     begin
         ComparePrice := Round(Price * 1.3, 1);
         Price := Round(Price, 1) - 0.05;
