@@ -195,7 +195,7 @@ The following example shows how to check whether a Shopify order is ready to be 
 codeunit 50107 "Shpfy Order Check Pay. Method"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", OnBeforeCreateSalesHeader, '', false, false)]
-    internal procedure OnBeforeCreateSalesHeader(ShopifyOrderHeader: Record "Shpfy Order Header"; var SalesHeader: Record "Sales Header"; var Handled: Boolean)
+    internal procedure OnBeforeCreateSalesHeader(ShopifyOrderHeader: Record "Shpfy Order Header"; var SalesHeader: Record "Sales Header"; var LastCreatedDocumentId: Guid; var Handled: Boolean)
     begin
         ShopifyOrderHeader.Testfield("Payment Method Code");
     end;
