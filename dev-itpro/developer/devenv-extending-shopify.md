@@ -92,7 +92,7 @@ Now you can publish the updated connector and connect [!INCLUDE [prod_short](../
 
 ### Known issues with authentication
 
-#### Error: Oauth error invalid_request: The redirect_uri is not whitelisted.
+#### Error: Oauth error invalid_request: The redirect_uri is not allowlisted.
 
 Make sure that you filled in the **Allowed redirection URL(s)** field correctly in the **Configuration** section.
 
