@@ -93,8 +93,10 @@ These steps make sure that the test suite is preconfigured whenever the test app
 
 1. Open the **AI Eval Suites** page.
 1. Export the previously created test suite using the **Export** action.
-1. In your test app, add the datasets and test suite to the /.resources folder.
+1. In your test app, add the datasets and test suite under the `.resources` folder.
 1. Create an install codeunit that imports the test suite and dataset when installed.
+
+Datasets can be either JSONL or YAML, so the install codeunit loads any `*.yaml`, `*.jsonl`, and `*.xml` files under `.resources/` recursively. The conventional layout — used by the [SalesValidationAgent3P sample](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent/test) — places dataset files under `.resources/datasets/`, suite-setup files under `.resources/suite_setup/`, and suite definitions under `.resources/configuration/`, but folder names aren't enforced.
 
 ```al
 codeunit 50201 "Marketing Text Simple Install"
@@ -103,18 +105,16 @@ codeunit 50201 "Marketing Text Simple Install"
 
     trigger OnInstallAppPerCompany()
     var
-        DatasetPaths: List of [Text];
-        TestSuitePaths: List of [Text];
         ResourcePath: Text;
     begin
-        // Load Datasets
-        DatasetPaths := NavApp.ListResources('Datasets/*.jsonl');
-        foreach ResourcePath in DatasetPaths do
+        // Load datasets (YAML and JSONL)
+        foreach ResourcePath in NavApp.ListResources('*.yaml') do
+            SetupDataInput(ResourcePath);
+        foreach ResourcePath in NavApp.ListResources('*.jsonl') do
             SetupDataInput(ResourcePath);
 
-        // Load Test Suites
-        TestSuitePaths := NavApp.ListResources('TestSuites/*.xml');
-        foreach ResourcePath in TestSuitePaths do
+        // Load test suites
+        foreach ResourcePath in NavApp.ListResources('*.xml') do
             SetupTestSuite(ResourcePath);
     end;
 
@@ -127,7 +127,7 @@ codeunit 50201 "Marketing Text Simple Install"
         // Get the filename from the path
         FileName := FilePath.Substring(FilePath.LastIndexOf('/') + 1);
 
-        NavApp.GetResource(FilePath, ResInStream);
+        NavApp.GetResource(FilePath, ResInStream, TextEncoding::UTF8);
         AITALTestSuiteMgt.ImportTestInputs(FileName, ResInStream);
     end;
 

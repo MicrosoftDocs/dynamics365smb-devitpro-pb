@@ -48,9 +48,8 @@ Occurs when Copilot Credits are consumed.
 |externalConsumptionId|A GUID representing the Copilot Credit consumption event|
 |featureName|Name of the feature that consumed the Copilot Credits|
 |telemetrySchemaVersion|0.1|
-|userId|GUID representing the identity of the agent that consumed Copilot Credits|
 
-### Sample KQL code (environment app hotfix scheduling by App Management API failed to be installed)
+### Sample KQL code
 
 This KQL code can help you get started analyzing consumed Copilot Credits:
 
