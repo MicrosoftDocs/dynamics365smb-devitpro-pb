@@ -21,7 +21,7 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 ### Billable agent capabilities
 
-- [Expense Agent (preview)](/dynamics365/business-central/expense-agent)
+- [Expense Agent (preview)](/dynamics365/business-central/expense-management/expense-agent)
 - [Payables Agent](/dynamics365/business-central/payables-agent)
 - [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
 - [Designing and coding agents (preview)](../ai/ai-development-toolkit-overview.md)
@@ -150,7 +150,7 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
    As a reseller, contact the customer's internal admin. As an internal admin, use the Business Central admin center to link the Business Central environment to the Power Platform environment. Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
 
 > [!NOTE]
-> Billing partners who provide Azure cloud operations management (setup and maintenance of their customers' Azure subscriptions and resources deployed into those) become eligible for a Partner earned credit for services managed on the customers' Azure subscriptions. Read more: [Partner earned credits](partner-center/billing/partner-earned-credit). [@John - FYI, here is the full URL] https://learn.microsoft.com/en-us/partner-center/billing/partner-earned-credit 
+> Partners that provide Azure cloud operations management (such as setting up and maintaining customers' subscriptions and deployed resources) may be eligible for partner earned credit (PEC). Learn more in [Partner earned credits](/partner-center/billing/partner-earned-credit).  
 
 Watch this YouTube video for a summary of how to manage pay-as-you-go billing:
 
