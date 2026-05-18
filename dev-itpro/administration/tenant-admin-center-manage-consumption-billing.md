@@ -149,8 +149,8 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 
    As a reseller, contact the customer's internal admin. As an internal admin, use the Business Central admin center to link the Business Central environment to the Power Platform environment. Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
 
-[!NOTE]
-> Partners that bill customers for Azure cloud operations management (such as setting up and maintaining their Azure subscriptions and deployed resources) are eligible for Partner Earned Credit (PEC) on those subscriptions. Learn more in [Partner earned credit](partner-center/billing/partner-earned-credit).
+> [!NOTE]
+> Partners that provide Azure cloud operations management, including setting up and maintaining customer Azure subscriptions and deployed resources, are eligible for Partner Earned Credit (PEC) on those subscriptions.
 
 Watch this YouTube video for a summary of how to manage pay-as-you-go billing:
 
