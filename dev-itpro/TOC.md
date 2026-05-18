@@ -1554,6 +1554,7 @@
 #### [Overview](ai/ai-agent-sdk-overview.md)
 #### [Define and register an agent programmatically](ai/ai-agent-sdk-define-register.md)
 #### [Configure agents programmatically](ai/ai-agent-sdk-configuration.md)
+#### [AI models for agents](ai/ai-agent-models.md)
 #### [Create agent setup pages](ai/ai-agent-sdk-setup-page.md)
 #### [Managing agent tasks programmatically](ai/ai-agent-sdk-tasks.md)
 #### [The ConfigurationDialog page type](developer/devenv-page-type-configuration-dialog.md)
