@@ -29,9 +29,9 @@ Minor updates are released monthly and can include new release wave features, re
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|28.1|Application Build 28.1 Platform Build 28.0|May 2026|[Update 28.1 for Business Central 2026 release wave 1](whatsnew-update-28-1.md)|
 |28.0|Application Build 28.0 Platform Build 28.0|April 2026|[Update 28.0 for Business Central 2026 release wave 1](whatsnew-update-28-0.md)|
 |27.5|Application Build 27.5 Platform Build 27.0|March 2026|[Update 27.5 for Business Central 2025 release wave 2](whatsnew-update-27-5.md)|
-|27.4|Application Build 27.4 Platform Build 27.0|February 2026|[Update 27.4 for Business Central 2025 release wave 2](whatsnew-update-27-4.md)|
 
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 

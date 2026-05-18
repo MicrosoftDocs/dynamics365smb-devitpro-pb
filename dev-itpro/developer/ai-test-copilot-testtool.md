@@ -93,8 +93,10 @@ These steps make sure that the test suite is preconfigured whenever the test app
 
 1. Open the **AI Eval Suites** page.
 1. Export the previously created test suite using the **Export** action.
-1. In your test app, add the datasets and test suite to the /.resources folder.
+1. In your test app, add the datasets and test suite under the `.resources` folder.
 1. Create an install codeunit that imports the test suite and dataset when installed.
+
+Datasets can be either JSONL or YAML, so the install codeunit loads any `*.yaml`, `*.jsonl`, and `*.xml` files under `.resources/` recursively. The conventional layout — used by the [SalesValidationAgent3P sample](https://github.com/microsoft/BCTech/tree/master/samples/BCAgents/SalesValidationAgent/test) — places dataset files under `.resources/datasets/`, suite-setup files under `.resources/suite_setup/`, and suite definitions under `.resources/configuration/`, but folder names aren't enforced.
 
 ```al
 codeunit 50201 "Marketing Text Simple Install"
@@ -103,18 +105,16 @@ codeunit 50201 "Marketing Text Simple Install"
 
     trigger OnInstallAppPerCompany()
     var
-        DatasetPaths: List of [Text];
-        TestSuitePaths: List of [Text];
         ResourcePath: Text;
     begin
-        // Load Datasets
-        DatasetPaths := NavApp.ListResources('Datasets/*.jsonl');
-        foreach ResourcePath in DatasetPaths do
+        // Load datasets (YAML and JSONL)
+        foreach ResourcePath in NavApp.ListResources('*.yaml') do
+            SetupDataInput(ResourcePath);
+        foreach ResourcePath in NavApp.ListResources('*.jsonl') do
             SetupDataInput(ResourcePath);
 
-        // Load Test Suites
-        TestSuitePaths := NavApp.ListResources('TestSuites/*.xml');
-        foreach ResourcePath in TestSuitePaths do
+        // Load test suites
+        foreach ResourcePath in NavApp.ListResources('*.xml') do
             SetupTestSuite(ResourcePath);
     end;
 
@@ -127,7 +127,7 @@ codeunit 50201 "Marketing Text Simple Install"
         // Get the filename from the path
         FileName := FilePath.Substring(FilePath.LastIndexOf('/') + 1);
 
-        NavApp.GetResource(FilePath, ResInStream);
+        NavApp.GetResource(FilePath, ResInStream, TextEncoding::UTF8);
         AITALTestSuiteMgt.ImportTestInputs(FileName, ResInStream);
     end;
 
@@ -158,13 +158,46 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ### Step 6 - review Copilot credit usage
 
-AI features consume Copilot credits. Evaluation provides visibility into credit consumption per run, per test line, and per dataset entry.
+AI features consume Copilot credits. Evaluation provides visibility into both token usage and Copilot credit consumption per run, per test line, and per dataset entry.
 
 Use this insight to understand consumption patterns, optimize prompts, and manage costs more effectively.
 
+> [!IMPORTANT]
+> Evaluation runs aren't free. Each test run consumes Copilot credits from your environment. We recommend using environments with prepaid Copilot credits when running eval suites, especially for automated or frequent runs.
+
+> [!NOTE]
+> For agent tests, the token usage displayed reflects only the tokens consumed by the AI evaluators, not the tokens used by the agent runtime during task execution.
 
 > [!TIP]
 > You can also use the API (page 149038 "AIT Log Entry API") to get the result for a suite.
+
+## Copilot credit limits for agent evaluation suites
+
+To prevent uncontrolled credit consumption, the system enforces monthly Copilot credit limits for agent evaluation tasks. Limits are applied at two independent levels:
+
+- **Environment level**: An overall credit limit for all companies in the environment combined.
+- **Company level**: An individual credit limit per company within the environment.
+
+Both limits are checked before a new evaluation task is allowed to start. If either limit has been reached, the task is blocked.
+
+**Example**: Environment limit is 100 credits, Company A limit is 50 credits.
+
+- If Company A has consumed 55 credits, then no new eval tasks can start for Company A, even if the overall environment limit hasn't been reached.
+- If all companies combined have consumed 105 credits, then no new eval tasks can start in any company in that environment.
+
+When a limit is reached, evaluation tasks that are already running continue to completion to avoid wasting credits already consumed. However, any tasks that are queued but haven't started yet are stopped, and a notification is raised indicating that the credit limit has been reached.
+
+> [!NOTE]
+> If a test run is cancelled or aborted, no credit consumption record or task link is created for that run.
+
+### Managing credit limits
+
+Credit limits can be viewed and modified by users with the **agent admin** role. For more information about agent admin permissions, see [Permissions in Evaluation](../ai/ai-development-toolkit-permissions.md).
+
+- Agent admins with permissions in specific companies can modify the credit limits for those companies only.
+- Agent admins with permissions in all companies can also modify the environment-level limit.
+
+All changes to credit limits are recorded in audit telemetry.
 
 ## Related information
 

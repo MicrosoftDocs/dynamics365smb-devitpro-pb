@@ -2,7 +2,7 @@
 title: Upgrading to Dynamics 365 Business Central 2026 release wave 1
 description: Provides an overview of Business Central 2026 release wave 1 upgrade process.
 ms.custom: bap-template
-ms.date: 02/22/2026
+ms.date: 05/04/2026
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: overview
@@ -43,7 +43,7 @@ From these articles, use the links in the table of contents to view more depreca
 
 ## <a name="online"></a>Migrate to Business Central online
 
-[!INCLUDE[upgrade-migrate-online](../developer/includes/upgrade-migrate-online.md]
+[!INCLUDE[upgrade-migrate-online](../developer/includes/upgrade-migrate-online.md)]
 
 ## Related information  
 

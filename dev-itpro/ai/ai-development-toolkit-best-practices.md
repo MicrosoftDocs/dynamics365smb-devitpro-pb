@@ -120,6 +120,8 @@ Learn more in [Set up agent permissions and profiles (preview)](ai-development-t
 
 ## Testing and validation best practices
 
+It's highly recommended to define and complete your testing plan in a sandbox environment before deploying an agent to production. Because agents are non-deterministic, testing is the only reliable way to validate that they behave as intended across a range of scenarios.
+
 ### Systematic testing approach
 
 - Test with various input types and formats
