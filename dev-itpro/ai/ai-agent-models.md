@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/12/2026
+ms.date: 05/18/2026
 ms.update-cycle: 180-days
 ---
 
@@ -46,7 +46,7 @@ This resolution order lets you set a general model preference at the agent level
 
 Models follow a lifecycle similar to code deprecation in [!INCLUDE [prod_short](../includes/prod_short.md)]:
 
-**Preview** → **Available** → **Default** → **Obsolete** → **Retired**
+**Preview** → **Available** → **Obsolete** → **Retired**
 
 The following points apply:
 
