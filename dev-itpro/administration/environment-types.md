@@ -57,13 +57,13 @@ As a partner, you can buy the *Dynamics 365 Business Central Partner Sandbox* li
 
 While it's possible to sign up your own partner tenant for *Dynamics 365 Business Central Partner Sandbox* licenses, since this tenant is going to be used for nonproduction scenarios, for security reasons and easier administration we recommend you create a separate new Microsoft Entra tenant (for example, [your tenant].onmicrosoft.com) and sign it up for those licenses.  
 
-The first pack of five *Partner Sandbox* licenses grants [a base environment quota](tenant-admin-center-capacity.md) of one production and three sandbox environments on the tenant. For each extra five Partner Sandbox licenses available on your tenant, the environments quota increases by three sandbox environments. Each Partner Sandbox license grants 5 GB of storage capacity on top of the [80-GB base storage quota](tenant-admin-center-capacity.md) to ensure sufficient storage remains available as the number of sandbox environments on the tenant increases. For example:
+The first pack of five *Partner Sandbox* licenses grants [a base environment quota](tenant-admin-center-capacity.md) of one production and three sandbox environments on the tenant. For each extra five Partner Sandbox licenses available on your tenant, the environments quota increases by three sandbox environments. Each assigned Partner Sandbox license grants 5 GB of storage capacity on top of the [80-GB base storage quota](tenant-admin-center-capacity.md) to ensure sufficient storage remains available as the number of sandbox environments on the tenant increases. For example:
 
-|No. of Partner Sandbox licenses  | Environments  | Storage (Base + Per License) |
-|---------|---------|
-| 5 licenses | 1 Production + 3 Sandbox environments | 80 GB + (5 × 5 GB) = 105 GB |
-|10 licenses | 1 Production + 6 Sandbox environments | 80 GB + (10 × 5 GB) = 130 GB |
-|15 licenses | 1 Production + 9 Sandbox environments | 80 GB + (15 × 5 GB) = 155 GB |
+| No. of Partner Sandbox licenses | Environments                  | Storage (Base + Per license)       |
+|--------------------------------|-------------------------------|-------------------------------------|
+| 5 licenses                     | 1 Production + 3 Sandbox      | 80 GB + 25 GB (5 × 5 GB) = 105 GB   |
+| 10 licenses                    | 1 Production + 6 Sandbox      | 80 GB + 50 GB (10 × 5 GB) = 130 GB  |
+| 15 licenses                    | 1 Production + 9 Sandbox      | 80 GB + 75 GB (15 × 5 GB) = 155 GB  |
 
 This pattern continues for each additional five Partner Sandbox licenses purchased, with the environments and storage quotas increasing accordingly.
 
