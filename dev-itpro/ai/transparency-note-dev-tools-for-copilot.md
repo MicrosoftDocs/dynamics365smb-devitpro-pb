@@ -161,7 +161,7 @@ The toolkit includes built-in safety mechanisms that prevent the undesirable gen
 - an AI feature that generates project plans for testing of weapons might not be able to generate complete plans.
 - an AI feature for a customer selling child psychology services might not be able to operate the feature. 
 
-Microsoft doesn't provide a mechanism for partners or customers to remove these specific safeguards or add topics to any inclusion list within Business Central at this time. The list of impacted topics are:
+Microsoft doesn't provide a mechanism for partners or customers to remove these specific safeguards or add topics to any inclusion list within Business Central at this time. The list of impacted topics is:
 
 - Topics covering offensive material that might hurt or impact all or specific demographics, minorities, or children.
 - Adult material and sexually explicit topics.
