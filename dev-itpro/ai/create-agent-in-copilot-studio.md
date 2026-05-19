@@ -99,7 +99,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
 
       |Input name|Fill using|Value|
       |-|-|-|
-      |Envronment|Custom value|Set to Business Central environment, for example, `PRODUCTION`|
+      |Environment|Custom value|Set to Business Central environment, for example, `PRODUCTION`|
       |Company|Custom value|Set to Business Central environment, for example, `CRONUS USA, Inc.`|
       |API category|Custom value|`V2.0`|
       |Table name|Custom value|`customers`|
@@ -120,7 +120,7 @@ Follow the steps in this exercise to create an agent that uses the Dynamics 365 
     1. Wait for the response.
     1. Make necessary changes and save.
   
-    Learn more in [Test you agent](/microsoft-copilot-studio/authoring-test-bot).
+    Learn more in [Test your agent](/microsoft-copilot-studio/authoring-test-bot).
 
 1. Publish and deploy the agent.
 

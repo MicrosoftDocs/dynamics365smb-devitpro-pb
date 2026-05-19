@@ -363,7 +363,7 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
 { 
   "code": string, // Error Code 
   "message": string, // Detailed error message 
-  "data": { // Any additional data for the error. For example, when when "installOrUpdateNeededDependencies" in the request body was set to false, and dependencies need to be installed or updated.  
+  "data": { // Any additional data for the error. For example, when "installOrUpdateNeededDependencies" in the request body was set to false, and dependencies need to be installed or updated.  
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
         "appId": guid, 

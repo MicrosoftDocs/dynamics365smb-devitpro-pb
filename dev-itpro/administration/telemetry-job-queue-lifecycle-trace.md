@@ -357,7 +357,7 @@ In the table below, you can read more about the scenarios and get sample KQL cod
 | Condition | Area | Relevant for | Description | Event Id(s) | KQL sample code (*CTRL+click* to open in new page) |
 | --------- | -----| ------------ | ----------- | --------------- | ------------ |
 | Job queue errors | Errors | VAR | Get alerted on job queue entries fail. | AL0000E26 | [JobQueueFailures.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/Alerts/AlertingKQLSamples/JobQueueFailures.kql) |
-| Job queue stopped due to errors errors | Errors | VAR | Get alerted on job queue entries that are stopped due to recurring errors (because they have failed for all retry attempts). | AL0000JRG | [JobQueueFailures.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/Alerts/AlertingKQLSamples/JobQueueFailures.kql) |
+| Job queue stopped due to errors | Errors | VAR | Get alerted on job queue entries that are stopped due to recurring errors (because they have failed for all retry attempts). | AL0000JRG | [JobQueueFailures.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/Alerts/AlertingKQLSamples/JobQueueFailures.kql) |
 | Job queue not running | Errors | VAR | Get alerted if no job queue entries have been started in a given time period. | AL0000E26 | [NoJobQueueRuns.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/Alerts/AlertingKQLSamples/NoJobQueueRuns.kql) |
 
 

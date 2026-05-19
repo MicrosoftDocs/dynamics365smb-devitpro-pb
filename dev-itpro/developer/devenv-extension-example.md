@@ -47,9 +47,11 @@ The following code adds a new table **50100 Reward** for storing the reward leve
 > Type `ttable` followed by the <kbd>Tab</kbd> key. This snippet will create a basic layout for a table object.
 
 ```AL
+namespace Contoso.Rewards;
+
 table 50100 Reward
 {
-    DataClassification = ToBeClassified;
+    DataClassification = CustomerContent;
 
     fields
     {
@@ -57,13 +59,15 @@ table 50100 Reward
         // of the reward and can contain up to 30 Code characters. 
         field(1;"Reward ID";Code[30])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
         }
 
         // The "Description" field can contain a string 
         // with up to 250 characters.
         field(2;Description;Text[250])
         {
+            DataClassification = CustomerContent;
+
             // This property specified that 
             // this field cannot be left empty.
             NotBlank = true;
@@ -74,6 +78,8 @@ table 50100 Reward
         // be applied for this reward.
         field(3;"Discount Percentage";Decimal)
         {
+            DataClassification = CustomerContent;
+
             // The "MinValue" property sets the minimum value for the "Discount Percentage" 
             // field.
             MinValue = 0;
@@ -110,6 +116,8 @@ The following code adds a new page **50101 Reward Card** for viewing and editing
 > Use the snippet `tpage, Page` to create the basic structure for the page object.
 
 ```AL
+namespace Contoso.Rewards;
+
 page 50101 "Reward Card"
 {
     // The page will be of type "Card" and will render as a card.
@@ -160,6 +168,8 @@ The following code adds the **50102 Reward List** page that enables users to vie
 > Use the snippet `tpage, Page of type list` to create the basic structure for the page object. 
 
 ```AL
+namespace Contoso.Rewards;
+
 page 50102 "Reward List"
 {
     // Specify that this page will be a list page.
@@ -256,12 +266,18 @@ The following code creates a table extension for the **Customer** table and adds
 > Use the snippet `ttableext` to create a basic structure for the table extension object.
 
 ```AL
+namespace Contoso.Rewards;
+
+using Microsoft.Sales.Customer;
+
 tableextension 50103 "Customer Ext" extends Customer
 {
     fields
     {
         field(50100;"Reward ID";Code[30])
         {
+            DataClassification = CustomerContent;
+
             // Set links to the "Reward ID" from the Reward table.
             TableRelation = Reward."Reward ID";
 
@@ -269,14 +285,14 @@ tableextension 50103 "Customer Ext" extends Customer
             ValidateTableRelation = true;
 
            // "OnValidate" trigger executes when data is entered in a field.
-            trigger OnValidate();
+            trigger OnValidate()
             begin
 
             // If the "Reward ID" changed and the new record is blocked, an error is thrown. 
                 if (Rec."Reward ID" <> xRec."Reward ID") and
                     (Rec.Blocked <> Blocked::" ") then
                 begin
-                    Error('Cannot update the rewards status of a blocked customer.')
+                    Error('Cannot update the rewards status of a blocked customer.');
                 end;
             end;
         }
@@ -295,6 +311,10 @@ A page extension object can be used to add new functionality to pages that are p
 > Use the shortcuts `tpageext` to create the basic structure for the page extension object.
 
 ```AL
+namespace Contoso.Rewards;
+
+using Microsoft.Sales.Customer;
+
 pageextension 50104 "Customer Card Ext" extends "Customer Card"
 {
     layout
@@ -358,6 +378,8 @@ Next, you set the [ContextSensitiveHelpPage property](properties/devenv-contexts
 The following example shows the properties for the **Reward List** page after you've specified the context-sensitive help page.
 
 ```AL
+namespace Contoso.Rewards;
+
 page 50102 "Reward List"
 {
     // Specify that this page will be a list page.
@@ -437,13 +459,16 @@ In this example, the following install codeunit initializes the **Reward** table
 > Use the shortcuts `tcodeunit` to create the basic structure for the codeunit.
 
 ```AL
+namespace Contoso.Rewards;
+
 codeunit 50105 RewardsInstallCode
 {
     // Set the codeunit to be an install codeunit. 
     Subtype = Install;
+    Access = Internal;
     
     // This trigger includes code for company-related operations. 
-    trigger OnInstallAppPerCompany();
+    trigger OnInstallAppPerCompany()
     var
         Reward : Record Reward;
     begin
@@ -487,15 +512,18 @@ When you upgrade an extension to a newer version, any modifications, which are r
 > Remember to increase the `version` number of the extension in the app.json file.
 
 ```AL
+namespace Contoso.Rewards;
+
 codeunit 50106 RewardsUpgradeCode
 {
     // An upgrade codeunit includes AL methods for synchronizing changes to a table definition 
     // in an application with the business data table in SQL Server and migrating existing 
     // data.
     Subtype = Upgrade;
+    Access = Internal;
 
     // "OnUpgradePerCompany" trigger is used to perform the actual upgrade.
-    trigger OnUpgradePerCompany();
+    trigger OnUpgradePerCompany()
     var
         Reward : Record Reward;
 
