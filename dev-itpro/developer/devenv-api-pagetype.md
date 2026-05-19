@@ -65,9 +65,10 @@ page 50120 MyCustomerApi
         {
             repeater(GroupName)
             {
-                field(id; Id)
+                field(id; Rec.SystemId)
                 {
-                    Caption = 'ID';
+                    Caption = 'Id';
+                    Editable = false;
                 }
                 field(name; Name)
                 {
