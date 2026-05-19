@@ -44,6 +44,10 @@ The following diagram shows the relationship between the objects for email scena
 The following code example shows how to extend the `Email Scenario` enum by adding a new scenario named **BC LE Scenario**. After you extend the enum, the new BC LE option is available in the Email Scenario field. You can assign the scenario to accounts on the **Email Scenarios** page, or by using the `EmailScenario.SetEmailAccount()` method.
 
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 enumextension 50100 BCLEScenario extends "Email Scenario"​
 {​
     value(999888; BCLEScenario)​
@@ -54,6 +58,10 @@ enumextension 50100 BCLEScenario extends "Email Scenario"​
 ```
 
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 procedure AddEmailToScenario(Rec: Record "Email Account")
 var
     EmailScenario: Codeunit "Email Scenario";
@@ -74,6 +82,10 @@ The email address book lookup is what you use to choose email accounts in [!INCL
 The following code example shows how to extend the `Email Address Entity` enum by adding a **BCLE Entity** option. The BCLE entity has an email address that we want to be able to access.
 
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 enumextension 50110 "BCLE - Address Book" extends "Email Address Entity"​
 {​
     value(50110; "BCLE Entity")​
@@ -91,6 +103,7 @@ After you extend the `Email Address Entity` enum, subscribe to the `OnGetSuggest
 The following examples show how to implement the events.
 
 ```al
+namespace System.Email;
 
 [IntegrationEvent(false, false)]​
 internal procedure OnGetSuggestedAddresses(TableId: Integer; SystemId: Guid; var Address: Record "Email Address Lookup")​
@@ -100,6 +113,10 @@ internal procedure OnLookupAddressFromEntity(Entity: Enum "Email Address Entity"
 ```
 
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 var
     NoRecordsFoundMsg: Label 'No %1 found with an email address.', Comment = '%1 Entity type';
 
@@ -180,6 +197,8 @@ Email view policies give you control over the email messages that a user can acc
 The first step is to implement the `Email View Policy` interface.
 
 ```al
+namespace System.Email;
+
 interface "Email View Policy"​
 {​
     procedure GetSentEmails(var SentEmails: Record "Sent Email" temporary)
@@ -196,6 +215,10 @@ interface "Email View Policy"​
 Next, we'll extend the `Email View Policy` enum by adding a **BE LE View Policy** option.
 
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 enumextension 50108 "BC LE View Policy" extends "Email View Policy"​
 {​
     value(50108; "BC LE View Policy")​
@@ -227,6 +250,8 @@ All email accounts use a connector, and the accounts contain the information nee
 The first step is to implement the `Email Connector` interface.
 
 ```al
+namespace System.Email;
+
 interface "Email Connector"​
 {​
     procedure Send(EmailMessage: Codeunit "Email Message"; AccountId: Guid)
@@ -241,6 +266,11 @@ interface "Email Connector"​
 Next, we'll extend the `Email Connector` enum by adding an **SMTP** option.
 
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
+enumextension 50200 "My Email Connectors" extends "Email Connector"
 {​
     value(2147483647; SMTP)​
     {​
@@ -255,8 +285,15 @@ The last step is to create a page where we can view or create an email account. 
 > [!TIP]
 > If you want more details, there are several examples available on the [ALAppExtensions repository](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/Email%20-%20SMTP%20Connector/app). For example, the SMTP Connector is a good implementation to explore.
 
-Email Importance Enum
+## Email importance example
+
+The following example shows how to extend the email capabilities by adding an importance field to email messages. This pattern extends both the `Email Outbox` and `Sent Email` tables and their corresponding pages to expose the new field.
+
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 enum 50109 "Email Importance"
 {
     Extensible = true;
@@ -280,6 +317,10 @@ enum 50109 "Email Importance"
 
 Table extensions to add a new Importance field.
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 tableextension 50110 "Importance On Sent" extends "Sent Email"
 {
     fields
@@ -305,6 +346,10 @@ tableextension 50109 "Importance On Outbox" extends "Email Outbox"
 
 Page extensions on the Email Editor and Email Viewer that allow the Importance field to be viewed and changed.
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 pageextension 50111 "Importance On Editor" extends "Email Editor"
 {
     layout
@@ -323,6 +368,10 @@ pageextension 50111 "Importance On Editor" extends "Email Editor"
 ```
 
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 pageextension 50103 "Importance On Email Viewer" extends "Email Viewer"
 {
     layout
@@ -342,6 +391,10 @@ pageextension 50103 "Importance On Email Viewer" extends "Email Viewer"
 
 Page extensions for the Email Outbox and Sent Emails to display the Importance field.
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 pageextension 50109 "Importance On Outbox" extends "Email Outbox"
 {
     layout
@@ -359,6 +412,10 @@ pageextension 50109 "Importance On Outbox" extends "Email Outbox"
 }
 ```
 ```al
+namespace MyCompany.EmailExtension;
+
+using System.Email;
+
 pageextension 50110 "Importance On Sent" extends "Sent Emails"
 {
     layout

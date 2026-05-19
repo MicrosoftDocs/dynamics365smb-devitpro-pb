@@ -133,7 +133,7 @@ To keep the Role Center experience as clean as possible and avoid permission err
 
 <!-- Not necessarily. Most extensions will run without issues in the online environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It's a best practice to test any extension in a sandbox tenant configured for the Business Central online environment that you're connecting to. --> 
 
-No. But if your cloud migration includes data upgrade of a large amount of data, we recommend that you uninstall the extensions that that include any data to move. It speeds up the upgrade and overall cloud migration process. You can reinstall the extensions after the migration.
+No. But if your cloud migration includes data upgrade of a large amount of data, we recommend that you uninstall the extensions that include any data to move. It speeds up the upgrade and overall cloud migration process. You can reinstall the extensions after the migration.
 
 
 <!--## How do I build an extension that enables data replication?

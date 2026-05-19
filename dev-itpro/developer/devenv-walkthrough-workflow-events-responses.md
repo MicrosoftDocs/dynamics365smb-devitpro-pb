@@ -100,7 +100,7 @@ The following code illustrates the new method in the `MyWorkflowEvents` codeunit
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Workflow Event Handling", 'OnAddWorkflowEventsToLibrary', '', true, true)]
     procedure AddMyWorkflowEventsToLibrary()
     var
-        WorkflowEventHandling: Codeunit"Workflow Event Handling";
+        WorkflowEventHandling: Codeunit "Workflow Event Handling";
     begin
         WorkflowEventHandling.AddEventToLibrary(MyWorkflowEventCode(), Database::"Purchase Header", 'My workflow event description', 0, false);
     end;

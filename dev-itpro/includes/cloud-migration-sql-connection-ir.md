@@ -11,7 +11,7 @@ If the product you selected requires an SQL connection, the **Define your SQL da
 
 - **SQL connection**
 
-  Specify **SQL Server** if the database is installed locally on an SQL Server instance. Specify **Azure SQL** if the database is an Azure SQL Database database.
+  Specify **SQL Server** if the database is installed locally on an SQL Server instance. Specify **Azure SQL** if the database is an Azure SQL Database.
  
 <!-- 
   > [!IMPORTANT]
