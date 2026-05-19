@@ -32,7 +32,7 @@ You can have multiple setups with the same combination of method, type, and prod
 
 By default, all sales lines use the Business Central (Version 15.0) implementation to calculate prices, unless the second line has a detailed setup that defines exceptions. 
 
-The Price Calculation method on the document line searches for a setup that that has a matching combination of the method, the price type, and product type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an product (item, resource, and so on) on the document line. If a matching setup is found its implementation is used to calculate a price. If there is no matching setup exception, we use the default implementation. 
+The Price Calculation method on the document line searches for a setup that has a matching combination of the method, the price type, and product type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an product (item, resource, and so on) on the document line. If a matching setup is found its implementation is used to calculate a price. If there is no matching setup exception, we use the default implementation. 
 
 For example, let's say we have a line on a sales order for Customer 20000 contains item 1000. The default implementation for the sale of any asset is Business Central (Version 15.0), but the Business Central (Version 16.0) implementation contains a detailed setup line for Item 1000. That means that the Business Central (Version 16.0) implementation will calculate the price. 
 

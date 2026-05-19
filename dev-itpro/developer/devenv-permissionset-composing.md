@@ -140,7 +140,7 @@ The following table shows how the permissions are determined on a single object 
 |Permissions = tabledata Customer = RiMD<br>ExcludedPermissionSets = B|Permissions = tabledata Customer = IMD|tabledata Customer = R|
 
 > [!TIP]
-> When including and excluding multiple permission sets, it can be difficult to get an overview of what the resultant permissions will be. To help, use the **View all permissions** action from the the permission set in the client.
+> When including and excluding multiple permission sets, it can be difficult to get an overview of what the resultant permissions will be. To help, use the **View all permissions** action from the permission set in the client.
 
 ## Related information
 
