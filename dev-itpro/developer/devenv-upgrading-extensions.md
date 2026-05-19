@@ -110,17 +110,20 @@ All these properties are encapsulated in a `ModuleInfo` data type. You can acces
 This example uses the `OnCheckPreconditionsPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade before restoring the archived data of the old extension.
 
 ```AL
+namespace Contoso.MyExtension;
+
 codeunit 50100 MyUpgradeCodeunit
 {
-    Subtype=Upgrade;
+    Access = Internal;
+    Subtype = Upgrade;
 
-    trigger OnCheckPreconditionsPerDatabase();
+    trigger OnCheckPreconditionsPerDatabase()
     var
-        myInfo : ModuleInfo;
+        myInfo: ModuleInfo;
     begin
         if NavApp.GetCurrentModuleInfo(myInfo) then
             if myInfo.DataVersion = Version.Create(1, 0, 0, 1) then
-                error('The upgrade is not compatible');
+                Error('The upgrade is not compatible');
     end;
 
     trigger OnUpgradePerDatabase()
@@ -207,9 +210,14 @@ The following steps provide the general pattern for using an upgrade tag on upgr
     To register the tag, call the `SetUpgradeTag` method on the `OnInstallAppPerCompany` and `OnInstallAppPerDatabase` triggers in the extension's install codeunit.
 
     ```AL
+    namespace Contoso.ABCShoeExtension;
+
+    using System.Upgrade;
+
     codeunit 50100 InstallCodeunit
     {
-        Subtype=Install;
+        Access = Internal;
+        Subtype = Install;
 
         trigger OnInstallAppPerCompany()
         var
@@ -233,70 +241,66 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 ### Example
 
-The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed ([ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
-
 ```AL
-codeunit 50100 "ABC Upgrade Shoe Size"
+namespace Microsoft.Inventory.InventoryForecast;
+
+using System.Threading;
+using System.Upgrade;
+
+codeunit 1851 "Sales Forecast Upgrade"
 {
+    Access = Internal;
     Subtype = Upgrade;
 
     trigger OnUpgradePerCompany()
     var
-        ABCUpgradeTagDefinitions: Codeunit "ABC Upgrade Tag Definitions";
-        UpgradeTagMgt: Codeunit "Upgrade Tag";
+        ModuleInfo: ModuleInfo;
     begin
-
-        // Check whether the tag has been used before, and if so, don't run upgrade code
-        if UpgradeTagMgt.HasUpgradeTag(ABCUpgradeTagDefinitions.GetABCShoeSizeUpgradeTag()) then
-            exit;
-
-        // Run upgrade code
-        UpgradeShoeSize();
-
-        // Insert the upgrade tag in table 9999 "Upgrade Tags" for future reference
-        UpgradeTagMgt.SetUpgradeTag(ABCUpgradeTagDefinitions.GetABCShoeSizeUpgradeTag());
+        if NavApp.GetCurrentModuleInfo(ModuleInfo) then
+            SetConsentIfForecastAlreadyScheduled();
     end;
 
-    local procedure UpgradeShoeSize()
+    local procedure SetConsentIfForecastAlreadyScheduled()
     var
-        Customer: Record Customer;
+        SalesForecastSetup: Record "MS - Sales Forecast Setup";
+        JobQueueEntry: Record "Job Queue Entry";
+        UpgradeTag: Codeunit "Upgrade Tag";
     begin
-
-        if not Customer.FindSet() then
+        if UpgradeTag.HasUpgradeTag(GetForecastCustomerConsentTag(), '') then
             exit;
 
-        repeat
-            // Make sure that target field is blank because you're copying obsolete=removed field to new field
-            // Additional safety check
-            if Customer."ABC - Customer Shoesize" <> 0 then
-                Error('ShoeSize must be blank, the value is already assigned');
+        if UpgradeTag.HasUpgradeTag(GetForecastCustomerConsentTag()) then
+            exit;
 
-            // Avoid blank modifies - it is a performance hit and slows down the upgrade
-            if Customer."ABC - Customer Shoesize" <> Customer.Shoesize then begin
-                Customer."ABC - Customer Shoesize" := Customer.Shoesize;
-                Customer.Modify();
+        if SalesForecastSetup.Get() then
+            if not SalesForecastSetup.Enabled then begin
+                JobQueueEntry.SetRange("Object Type to Run", JobQueueEntry."Object Type to Run"::Codeunit);
+                JobQueueEntry.SetRange("Object ID to Run", Codeunit::"Sales Forecast Update");
+                if not JobQueueEntry.IsEmpty() then begin
+                    SalesForecastSetup.Enabled := true;
+                    SalesForecastSetup.Modify();
+                end;
             end;
-        until Customer.Next() = 0;
-    end;
-}
 
-codeunit 50101 "ABC Upgrade Tag Definitions"
-{
-    // Register the new upgrade tag for new companies when they are created.
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
-    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]])
-    begin
-        PerCompanyUpgradeTags.Add(GetABCShoeSizeUpgradeTag());
+        UpgradeTag.SetUpgradeTag(GetForecastCustomerConsentTag());
     end;
 
-    // Use methods to avoid hard-coding the tags. It is easy to remove afterwards because it's compiler-driven.
-    procedure GetABCShoeSizeUpgradeTag(): Text
+    internal procedure GetForecastCustomerConsentTag(): Code[250]
     begin
-        exit('ABC-1234-ShoeSizeUpgrade-20201125');
+        exit('MS-474737-SalesForecastCustomerConsent-20230607');
     end;
 
 }
 ```
+
+Key points from this production example:
+
+- `HasUpgradeTag` is called twice — once with an empty company string `''` (database-level scope) and once without (per-company scope). The double-check prevents re-execution across both scopes.
+- The upgrade tag procedure returns `Code[250]`, matching the parameter type of `HasUpgradeTag` and `SetUpgradeTag` exactly.
+- `Access = Internal` prevents external callers from triggering the upgrade codeunit directly.
+- `NavApp.GetCurrentModuleInfo()` retrieves app metadata (including data version) to gate whether migration is needed.
+
+For bulk field migration across large tables (for example, copying data from an obsolete field to a replacement field), use `DataTransfer` instead of row-by-row `Modify`.
 
 ## Protecting sensitive code from running during upgrade
 
