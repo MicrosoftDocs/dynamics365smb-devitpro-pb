@@ -1,6 +1,6 @@
 ---
 title: Database Lock Timeout Trace Telemetry | Microsoft Docs
-description: Learn about the database lock timeout Trace Telemetry telemetry in Business Central  
+description: Learn about the database lock timeout telemetry in Business Central  
 author: jswymer
 ms.topic: how-to
 ms.devlang: al
