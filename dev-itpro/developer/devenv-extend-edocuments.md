@@ -58,7 +58,7 @@ enumextension 50100 "EDocument Format Ext" extends "E-Document Format"
 The document interface has been divided into two sections:
 
 - Create an e-document from a [!INCLUDE [prod_short](../includes/prod_short.md)] document that can be sent to a designated endpoint: **Check**, **Create**, **CreateBatch**.
-- Receive a document from the endpoint: **GetBasicInfo**, **PrepareDocument**.
+- Receive a document from the endpoint: **GetBasicInfoFromReceivedDocument**, **GetCompleteInfoFromReceivedDocument**.
 
 Here's an example of how you could implement each of the methods within the interface:
 
@@ -142,34 +142,28 @@ procedure CreateBatch(EDocumentService: Record "E-Document Service"; var EDocume
     end;
 ```
 
-- **GetBasicInfo**: Use it to get the basic information of an e-document from a received blob.
+- **GetBasicInfoFromReceivedDocument**: Use it to get the basic information of an e-document from a received blob.
 
 ```AL
-procedure GetBasicInfo(var EDocument: Record "E-Document"; var TempBlob: Codeunit "Temp Blob")
-    var
-        XmlDoc: XmlDocument;
-        DocInstr: InStream;
-        NamespaceManager: XmlNamespaceManager;
-    begin
-        // Create an XML document from the blob
-        TempBlob.CreateInStream(DocInstr);
-        XmlDocument.ReadFrom(DocInstr, XmlDoc);
-
-        // Parse the document to fill EDocument information
-        EDocument."Bill-to/Pay-to No." := CopyStr(GetPEPPOLNode('//cac:InvoiceLine/cbc:ID', XmlDoc, NamespaceManager), 1, 20);
-        EDocument."Bill-to/Pay-to Name" := CopyStr(GetPEPPOLNode('//cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name', XmlDoc, NamespaceManager), 1, 20);
-        Evaluate(EDocument."Document Date", GetPEPPOLNode('//cbc:IssueDate', XmlDoc, NamespaceManager));
-        EDocument."Document Type" := EDocument."Document Type"::"Purchase Invoice";
-    end;
+procedure GetBasicInfoFromReceivedDocument(var EDocument: Record "E-Document"; var TempBlob: Codeunit "Temp Blob")
+begin
+    ImportPeppol.ParseBasicInfo(EDocument, TempBlob);
+end;
 ```
 
-- **PrepareDocument**: Use it to create a document from an imported blob.    
+- **GetCompleteInfoFromReceivedDocument**: Use it to create a document from an imported blob.    
 
 ```AL
-procedure PrepareDocument(var EDocument: Record "E-Document"; var CreatedDocumentHeader: RecordRef; var CreatedDocumentLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
-    begin
+procedure GetCompleteInfoFromReceivedDocument(var EDocument: Record "E-Document"; var CreatedDocumentHeader: RecordRef; var CreatedDocumentLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
+var
+    TempPurchaseHeader: Record "Purchase Header" temporary;
+    TempPurchaseLine: Record "Purchase Line" temporary;
+begin
+    ImportPeppol.ParseCompleteInfo(EDocument, TempPurchaseHeader, TempPurchaseLine, TempBlob);
 
-    end;
+    CreatedDocumentHeader.GetTable(TempPurchaseHeader);
+    CreatedDocumentLines.GetTable(TempPurchaseLine);
+end;
 ```
 
 > [!NOTE]
@@ -229,32 +223,14 @@ Here's an example implementation of the **Send** method:
 ```AL
 procedure Send(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; SendContext: Codeunit SendContext)
 var
-    MyServiceSetup: Record MyServiceSetup;
     TempBlob: Codeunit "Temp Blob";
-    HttpClient: HttpClient;
     HttpRequest: HttpRequestMessage;
     HttpResponse: HttpResponseMessage;
 begin
-    // Retrieve the TempBlob from SendContext
-    SendContext.GetTempBlob(TempBlob);
-
-    // Prepare the HTTP request using the TempBlob content
-    HttpRequest := SendContext.Http().GetHttpRequestMessage();
-    HttpRequest.Method := 'POST';
-    HttpRequest.SetRequestUri(MyServiceSetup."Service URL");
-    SetContent(HttpRequest, TempBlob); // Some method to do that
-
-    // Add authorization headers
-    HttpRequest.Headers.Add('Authorization', 'Bearer ' + MyServiceSetup."Access Token");
-
-    // Send the request and capture the response
-    HttpClient.Send(HttpRequest, HttpResponse);
-
-    // Handle the response
-    if HttpResponse.IsSuccessStatusCode() then
-        Message('E-Document sent successfully.');
-    else
-        Error('Failed to send E-Document: %1', HttpResponse.ReasonPhrase);
+    TempBlob := SendContext.GetTempBlob();
+    PageroProcessing.SendEDocument(EDocument, EDocumentService, TempBlob, HttpRequest, HttpResponse);
+    SendContext.Http().SetHttpRequestMessage(HttpRequest);
+    SendContext.Http().SetHttpResponseMessage(HttpResponse);
 end;
 ```
 
@@ -297,39 +273,16 @@ The **GetResponse** method retrieves the response from the external service for 
 Here's an example implementation of the **GetResponse** method:
 
 ```AL
-procedure GetResponse(
-    var EDocument: Record "E-Document"; 
-    var EDocumentService: Record "E-Document Service"; 
-    SendContext: Codeunit SendContext
-): Boolean
+procedure GetResponse(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; SendContext: Codeunit SendContext): Boolean
 var
-    MyServiceSetup: Record MyServiceSetup;
-    HttpClient: HttpClient;
     HttpRequest: HttpRequestMessage;
     HttpResponse: HttpResponseMessage;
+    Success: Boolean;
 begin
-    // Prepare the HTTP request to check the status of the E-Document
-    HttpRequest := SendContext.Http().GetHttpRequestMessage();
-    HttpRequest.Method := 'GET';
-    HttpRequest.SetRequestUri(MyServiceSetup."Service URL" + '/status/' + EDocument."Document ID");
-    HttpRequest.Headers.Add('Authorization', 'Bearer ' + MyServiceSetup."Access Token");
-
-    // Send the HTTP request
-    HttpClient.Send(HttpRequest, HttpResponse);
-
-    // Set the response in SendContext for automatic logging
+    Success := PageroProcessing.GetDocumentResponse(EDocument, EDocumentService, HttpRequest, HttpResponse);
+    SendContext.Http().SetHttpRequestMessage(HttpRequest);
     SendContext.Http().SetHttpResponseMessage(HttpResponse);
-
-    // Handle the response based on the HTTP status code
-    if HttpResponse.IsSuccessStatusCode() then
-        exit(true); // The document was successfully processed
-    else if HttpResponse.HttpStatusCode() = 202 then
-        exit(false); // The document is still being processed
-    else begin
-        // Log the error and set the status to "Sending Error"
-        EDocumentErrorHelper.LogSimpleErrorMessage(EDocument, 'Error retrieving response: ' + Format(HttpResponse.HttpStatusCode()));
-        exit(false);
-    end;
+    exit(Success);
 end;
 ```
 
@@ -362,30 +315,8 @@ The **ReceiveDocuments** method retrieves one or more documents from the externa
 
 ```AL
 procedure ReceiveDocuments(var EDocumentService: Record "E-Document Service"; DocumentsMetadata: Codeunit "Temp Blob List"; ReceiveContext: Codeunit ReceiveContext)
-var
-    HttpRequest: HttpRequestMessage;
-    JsonResponse: JsonArray;
-    DocumentBlob: Codeunit "Temp Blob";
-    JsonObject: JsonObject;
-    OutStream: OutStream;
 begin
-    // Prepare the HTTP request
-    HttpRequest := ReceiveContext.Http().GetHttpRequestMessage();
-    HttpRequest.Method := 'GET';
-    HttpRequest.SetRequestUri(EDocumentService."Service URL" + '/documents');
-
-    // Send the HTTP request
-    HttpClient.Send(HttpRequest, ReceiveContext.Http().GetHttpResponseMessage());
-
-    // Parse the JSON response
-    JsonResponse.ReadFrom(HttpResponse.ContentAsText());
-
-    // Iterate over each object in the JSON array and add a temp blob to the DocumentsMetadata list
-    foreach JsonObject in JsonResponse do begin
-        DocumentBlob.CreateOutStream(OutStream);
-        JsonObject.WriteTo(OutStream);
-        DocumentsMetadata.Add(DocumentBlob);
-    end;
+    PageroProcessing.ReceiveDocument(EDocumentService, DocumentsMetadata, ReceiveContext);
 end;
 ```
 
@@ -404,38 +335,8 @@ The **DownloadDocument** method downloads the content of a specific document (fo
 
 ```AL
 procedure DownloadDocument(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; DocumentMetadata: Codeunit "Temp Blob"; ReceiveContext: Codeunit ReceiveContext)
-var
-    Request: Codeunit Requests;
-    HttpExecutor: Codeunit "Http Executor";
-    ResponseContent: Text;
-    InStream: InStream;
-    DocumentId: Text;
-    OutStream: OutStream;
 begin
-    // Read the document ID from the DocumentMetadata
-    DocumentMetadata.CreateInStream(InStream, TextEncoding::UTF8);
-    InStream.ReadText(DocumentId);
-
-    if DocumentId = '' then begin
-        EDocumentErrorHelper.LogSimpleErrorMessage(EDocument, DocumentIdNotFoundErr);
-        exit;
-    end;
-
-    // Update the document record with the document ID
-    EDocument."Document Id" := CopyStr(DocumentId, 1, MaxStrLen(EDocument."Document Id"));
-    EDocument.Modify();
-
-    // Prepare the HTTP request
-    Request.Init();
-    Request.Authenticate().CreateDownloadRequest(DocumentId);
-    ReceiveContext.Http().SetHttpRequestMessage(Request.GetRequest());
-
-    // Execute the HTTP request
-    ResponseContent := HttpExecutor.ExecuteHttpRequest(Request, ReceiveContext.Http().GetHttpResponseMessage());
-
-    // Store the response in the ReceiveContext
-    ReceiveContext.GetTempBlob().CreateOutStream(OutStream, TextEncoding::UTF8);
-    OutStream.WriteText(ResponseContent);
+    PageroProcessing.DownloadDocument(EDocument, EDocumentService, DocumentMetadata, ReceiveContext);
 end;
 ```
 
@@ -466,30 +367,16 @@ To use the **ISentDocumentActions** interface, you need to implement the **GetAp
 ##### Example implementation of the GetApprovalStatus method
 
 ```AL
-procedure GetApprovalStatus(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext): Boolean
+procedure GetApprovalStatus(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext) Success: Boolean
 var
-    Request: Codeunit Requests;
-    HttpExecutor: Codeunit "Http Executor";
-    ResponseContent: Text;
+    Status: Enum "E-Document Service Status";
+    HttpRequest: HttpRequestMessage;
+    HttpResponse: HttpResponseMessage;
 begin
-    // Prepare the HTTP request
-    Request.Init();
-    Request.Authenticate().CreateApprovalRequest(EDocument."Document ID");
-    ActionContext.Http().SetHttpRequestMessage(Request.GetRequest());
-
-    // Execute the HTTP request
-    ResponseContent := HttpExecutor.ExecuteHttpRequest(Request, ActionContext.Http().GetHttpResponseMessage());
-
-    // Process the response to determine the approval status
-    if ResponseContent.Contains('approved') then begin
-        ActionContext.SetStatus(ActionContext.GetStatus()."Approved");
-        exit(true);
-    end else if ResponseContent.Contains('rejected') then begin
-        ActionContext.SetStatus(ActionContext.GetStatus()."Rejected");
-        exit(true);
-    end;
-
-    exit(false);
+    Success := PageroProcessing.GetDocumentApproval(EDocument, EDocumentService, HttpRequest, HttpResponse, Status);
+    ActionContext.Status().SetStatus(Status);
+    ActionContext.Http().SetHttpRequestMessage(HttpRequest);
+    ActionContext.Http().SetHttpResponseMessage(HttpResponse);
 end;
 ```
 
@@ -504,27 +391,16 @@ end;
 ##### Example implementation of the GetCancellationStatus method
 
 ```AL
-procedure GetCancellationStatus(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext): Boolean
+procedure GetCancellationStatus(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext) Success: Boolean
 var
-    Request: Codeunit Requests;
-    HttpExecutor: Codeunit "Http Executor";
-    ResponseContent: Text;
+    Status: Enum "E-Document Service Status";
+    HttpRequest: HttpRequestMessage;
+    HttpResponse: HttpResponseMessage;
 begin
-    // Prepare the HTTP request
-    Request.Init();
-    Request.Authenticate().CreateCancellationRequest(EDocument."Document ID");
-    ActionContext.Http().SetHttpRequestMessage(Request.GetRequest());
-
-    // Execute the HTTP request
-    ResponseContent := HttpExecutor.ExecuteHttpRequest(Request, ActionContext.Http().GetHttpResponseMessage());
-
-    // Process the response to determine the cancellation status
-    if ResponseContent.Contains('canceled') then begin
-        ActionContext.SetStatus(ActionContext.GetStatus()."Canceled");
-        exit(true);
-    end;
-
-    exit(false);
+    Success := PageroProcessing.CancelEDocument(EDocument, EDocumentService, HttpRequest, HttpResponse, Status);
+    ActionContext.Status().SetStatus(Status);
+    ActionContext.Http().SetHttpRequestMessage(HttpRequest);
+    ActionContext.Http().SetHttpResponseMessage(HttpResponse);
 end;
 ```
 

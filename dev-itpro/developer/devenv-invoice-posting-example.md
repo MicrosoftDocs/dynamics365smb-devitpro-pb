@@ -22,10 +22,10 @@ Extend the posting process for sales, purchase, and service documents by changin
 
 ## The objects to use for your extension
 
-* The **Invoice Posting** interface provides a set of procedures for posting sales, purchase, and service invoices. This interface lets's you replace the invoice posting implementation for an extension. 
+* The **Invoice Posting** interface provides a set of procedures for posting sales, purchase, and service invoices. This interface lets you replace the invoice posting implementation for an extension. 
    > [!NOTE]
    > The legacy implementation is still available in posting codeunits, but are tagged as `obsolete`.
-* The **Sales Invoice Posting**. **Purchase Invoice Posting**, and **Service Invoice Posting** enums are extensible and define the current implementation. 
+* The **Sales Invoice Posting**, **Purchase Invoice Posting**, and **Service Invoice Posting** enums are extensible and define the current implementation. 
 
 The following is an example of an implementation that uses the **Sales Invoice Posting** enum.
 
@@ -76,7 +76,7 @@ Typically, you'll only need to add fields to the Invoice Posting Buffer table.
     codeunit 50000 "Product Line Subscribers" 
     { 
       
-      [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Post Invoice", 'OnPrepareLineOnAfterFillInvoicePostingBuffer', '', false, false)] 
+      [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Post Invoice Events", 'OnPrepareLineOnAfterFillInvoicePostingBuffer', '', false, false)] 
         local procedure OnPrepareLineOnAfterFillInvoicePostingBuffer(var InvoicePostingBuffer: Record "Invoice Posting Buffer"; SalesLine: Record "Sales Line") 
         begin 
             InvoicePostingBuffer."Product Line Code" := SalesLine."Product Line Code"; 
@@ -86,7 +86,7 @@ Typically, you'll only need to add fields to the Invoice Posting Buffer table.
         local procedure InvoicePostingBufferOnAfterBuildPrimaryKey(var InvoicePostingBuffer: Record "Invoice Posting Buffer") 
         begin 
             // Product Line Code value added as first field to the existing primary key as example 
-            // although Hroup ID field can be composed in any alternative way to support another sorting and 
+            // although Group ID field can be composed in any alternative way to support another sorting and 
             //  aggregation of G/L entries for posting 
             InvoicePostingBuffer."Group ID" := 
                 InvoicePostingBuffer.PadField(InvoicePostingBuffer."Product Line Code", MaxStrLen(InvoicePostingBuffer."Product Line Code")) + 
