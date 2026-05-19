@@ -35,7 +35,7 @@ Specifies a collection of keys and values that are passed to the OnRun trigger o
 
 *[Optional] RunCompletionTriggers*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Runs the completion triggers after the completion of the code unit. Default value is **false**.  
+Runs the completion triggers after the completion of the codeunit. Default value is **false**.  
 
 
 ## Return Value

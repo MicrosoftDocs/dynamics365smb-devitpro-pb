@@ -46,7 +46,7 @@ This app is built as an example of a high-fidelity app with a full set of functi
 
 [![Shows a screenshot of the Coffee MR Power Apps](../developer/media/CoffeeMR-pwr-app-50.png)](../developer/media/CoffeeMR-pwr-app.png#lightbox)  
 
-This app is built using the visual style of the the Take Order app and focuses on showcases the technical aspects of using MR with Power Apps and Business Central
+This app is built using the visual style of the Take Order app and focuses on showcasing the technical aspects of using MR with Power Apps and Business Central
 
 [Find the app here](https://github.com/microsoft/bcsamples-CoffeeMR).
 

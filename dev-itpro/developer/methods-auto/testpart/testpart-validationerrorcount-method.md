@@ -28,7 +28,7 @@ An instance of the [TestPart](testpart-data-type.md) data type.
 ## Return Value
 *Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-Number of validation errors that occured on the test page.
+Number of validation errors that occurred on the test page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

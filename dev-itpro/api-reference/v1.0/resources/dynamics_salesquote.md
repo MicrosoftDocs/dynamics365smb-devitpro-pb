@@ -65,7 +65,7 @@ Represents a salesQuote resource type in [!INCLUDE[prod_short](../../../includes
 |totalTaxAmount|numeric|The total tax amount for the quote. Read-Only.|
 |totalAmountIncludingTax|numeric|The total amount for the quote, including tax. Read-Only.|
 |status|string, maximum size 20|The quote status. Status can be: Draft,Sent,Accepted. Read-Only.|
-|sentDate|datetime|The the date and time the quote was sent our to the customer. Read-Only.|
+|sentDate|datetime|The date and time the quote was sent out to the customer. Read-Only.|
 |validUntilDate|Date|The date a quote is valid until.|
 |acceptedDate|Date|The date a quote is accepted. Read-Only.|
 |billToName             |string, maximum length 100   |The name of the customer to bill.|

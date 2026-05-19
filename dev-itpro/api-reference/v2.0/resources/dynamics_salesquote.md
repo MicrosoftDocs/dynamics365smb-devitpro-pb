@@ -110,7 +110,7 @@ The response has no content; the response code is 204.
 |totalTaxAmount|decimal|The total tax amount for the sales quote. Read-Only.|
 |totalAmountIncludingTax|decimal|The total amount including tax. Read-Only.  |
 |status|NAV.salesQuoteEntityBufferStatus|Specifies the status of the sales quote. It can be "Draft", "Sent", "Accepted" or "Expired ".|
-|sentDate|datetime|The the date and time the quote was sent our to the customer. Read-Only.|
+|sentDate|datetime|The date and time the quote was sent out to the customer. Read-Only.|
 |validUntilDate|date|The date a quote is valid until.|
 |acceptedDate|date|The date a sales quote is accepted. Read-Only.|
 |lastModifiedDateTime|datetime|The last datetime the sales quote was modified. Read-Only.|

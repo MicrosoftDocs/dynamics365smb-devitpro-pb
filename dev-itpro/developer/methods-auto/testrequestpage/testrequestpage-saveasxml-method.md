@@ -29,7 +29,7 @@ An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 *ParameterFileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The path and file name to which the paramater file is saved.  
+The path and file name to which the parameter file is saved.  
 
 *DataSetFileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  

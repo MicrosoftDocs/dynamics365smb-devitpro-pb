@@ -48,7 +48,7 @@ The next step in the process is to provide [!INCLUDE[dataverse_short](../include
 
    By default, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants have an environment called `production`.
 
-1. Set the **Default Company** value to the Business Central company in the enviroment that you want to connect to by default.
+1. Set the **Default Company** value to the Business Central company in the environment that you want to connect to by default.
 
 ## Making virtual tables visible
 
