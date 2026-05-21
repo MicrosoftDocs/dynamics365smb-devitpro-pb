@@ -125,7 +125,7 @@ Try to use the “Object ActionInPastTense” pattern for the Message part of a 
 
 Here are some examples from the built-in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry: 
 - Web Service Called 
-- Report canceled: {report name name}
+- Report canceled: {report name}
 - Extension published: {Extension name}
 
 Consider also adding some of the dimension values into the message itself. This makes it easier to browse the events by message column alone (no need to open up custom dimensions for every single event to see, e.g.,  which page it was about). 

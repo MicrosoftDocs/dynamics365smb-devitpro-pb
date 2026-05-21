@@ -26,7 +26,7 @@ When designing an Excel layout, you need to know the following information:
 
 ### Excel layout data contract in 2023 release wave 1 and earlier versions
 
-Every Excel layout file must have a worksheet called _Data_. This worksheet has one purpose: defining which metadata fields from the the dataset definition of the report object the layout uses, which is sometimes also called the _data contract_ between the layout file and the report dataset definition. The data contract consists of the following rules:
+Every Excel layout file must have a worksheet called _Data_. This worksheet has one purpose: defining which metadata fields from the dataset definition of the report object the layout uses, which is sometimes also called the _data contract_ between the layout file and the report dataset definition. The data contract consists of the following rules:
 
 1. Metadata fields must be written in the first row of the _Data_ worksheet, one in each cell.
 1. All metadata fields in the _Data_ worksheet must exist as metadata fields in the dataset definition of the report object.

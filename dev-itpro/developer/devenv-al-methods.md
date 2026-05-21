@@ -19,7 +19,7 @@ There are two types of methods: system methods (built-in) and user-defined (cust
 
 - Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. Learn more about the available built-in methods in [AL method reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). Learn more about method scope in [Scope attribute](attributes/devenv-scope-attribute.md).
 
-- Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
+- Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and codeunits, together to form a unified whole. You can create special methods for use anywhere in the database.
 
 > [!TIP]  
 > If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
