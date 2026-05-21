@@ -1,6 +1,6 @@
 ---
-title: Using Word to author your report layout
-description: Learn how to create a report that uses a Word layout.
+title: Tips for Using Word to Author Your Report Layout
+description: Learn tips and techniques for authoring Word report layouts in Business Central, including sections, tables, conditional formatting, and more.
 author: KennieNP
 ms.custom: bap-template
 ms.date: 05/21/2026
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: kepontop
 ---
 
-# Using Word to author your report layout
+# Tips for using Word to author your report layout
 
 With Word layouts, you use Word as the editor for the report. Microsoft Word offers various features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that matches your organization.
 
@@ -187,7 +187,7 @@ Learn more in [Using hyperlinks in Word layouts](devenv-hyperlinks-in-word-repor
 If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, paper orientation, watermarks, and headers/footers.
 
 > [!NOTE]  
-> Before [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2, you couldn't include Word sections in report layouts that used the `WordMergeDataItem` property. This restriction is removed starting from 2024 release wave 2. Learn more in [How to iterate a Word layout over a data item](#how-to-iterate-a-word-layout-over-a-data-item).
+> Before [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2, you couldn't include Word sections in report layouts that used the `WordMergeDataItem` property. This restriction is removed starting from 2024 release wave 2. Learn more in [How to iterate a Word layout over a data item](devenv-howto-report-layout.md#how-to-iterate-a-word-layout-over-a-data-item).
 
 Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. Learn more in [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
