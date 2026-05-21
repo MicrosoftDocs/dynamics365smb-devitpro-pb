@@ -34,7 +34,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |Thoroughly test your extension in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] environment.|[Testing Your Extension](../compliance/apptest-testingyourextension.md)|
 |Don't use `OnBeforeCompanyOpen` or `OnAfterCompanyOpen`|[Replacement Options](../compliance/apptest-onbeforecompanyopen.md)|
 |Include the proper upgrade code allowing your app to successfully upgrade from version to version.|[Upgrading Extensions](devenv-upgrading-extensions.md)|
-|Pages and code units that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.|[Web Services Usage](../compliance/apptest-webservices.md)|
+|Pages and codeunits that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.|[Web Services Usage](../compliance/apptest-webservices.md)|
 |You're required to register affixes for your publisher name and to use them in your extension.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
 |You're required to register an ID range for your publisher name and to use it in your extension.|[Object Ranges](readiness/get-started.md#requesting-an-object-range)|
 |We strongly recommend you're using automated testing, using the AL Test Toolkit. You aren't required to include the test package with your extension.|[Test the advanced sample extension](devenv-extension-advanced-example-test.md)|
@@ -118,7 +118,7 @@ The following parameters can be used with the `Run-AlValidation` command:
 
 ### Run-AlCops
 
-`Run-AlCops` is used from `Run-AlValidation` every time AppSourceCop needs to be run, but it can also be used seperately. `Run-AlCops` needs a running docker container to perform the validation in. The function can be called as follows:
+`Run-AlCops` is used from `Run-AlValidation` every time AppSourceCop needs to be run, but it can also be used separately. `Run-AlCops` needs a running docker container to perform the validation in. The function can be called as follows:
 
 ```powershell
 $validationResults = Run-AlCops `

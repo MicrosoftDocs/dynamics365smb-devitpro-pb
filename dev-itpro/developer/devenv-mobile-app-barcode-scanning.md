@@ -73,7 +73,7 @@ Version 24 introduced barcode scanning APIs based on control add-ins​ to repla
 
 The simplest way to provide barcode scanning capability in the mobile app is by adding a barcode scanning button on a field that starts the barcode scanner capability of the device's camera. 
 
-![Shows the barcode scanning button an an item card](media/barcode-scanning-button.png)
+![Shows the barcode scanning button on an item card](media/barcode-scanning-button.png)
 
 This scanning is highly efficient and responsive. Once a barcode is scanned, its value is entered in the field on the page, and the focus moves to the next quick-entry field on the page. 
 

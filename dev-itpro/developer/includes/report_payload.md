@@ -198,7 +198,7 @@ Specifies the intent of the current report invocation, which can be one of the f
 
 #### *layoutmodel*
 
-Specifies the layout model selected for teh current report invocation, which can be one of the following values.
+Specifies the layout model selected for the current report invocation, which can be one of the following values.
 
 - Rdlc
 - Word

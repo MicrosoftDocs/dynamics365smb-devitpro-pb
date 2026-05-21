@@ -39,7 +39,7 @@ to:
 ```
 
 > [!NOTE]
-> Events that are emitted from within the OnCompanyOpen event will eventually be moved to the the `OnAfterLogin` event or the OnCompanyOpenCompleted event, or they'll be changed to isolated events.
+> Events that are emitted from within the OnCompanyOpen event will eventually be moved to the `OnAfterLogin` event or the OnCompanyOpenCompleted event, or they'll be changed to isolated events.
 
 ## Related information
 
