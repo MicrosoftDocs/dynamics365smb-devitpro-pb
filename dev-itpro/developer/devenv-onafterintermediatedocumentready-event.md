@@ -88,7 +88,7 @@ begin
     if Success = true then
         exit;
 
-    // Empty stream, no actions possible on the stream so return immediatly
+    // Empty stream, no actions possible on the stream so return immediately
     if DocumentStream.Length < 1 then
         exit;
 

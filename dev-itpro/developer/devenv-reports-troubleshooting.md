@@ -57,7 +57,7 @@ When you're developing and debugging an Excel/Word report layout, it can be usef
 [!INCLUDE [send-report-excel](../developer/includes/send-report-excel.md)]
 
 
-If the user sees this error message when running a report with a Word layout: `You cannot run the report because the {0} layout contains section breaks that conflict with the sections in the report. Remove the section breaks from the report layout, and then run the report.` then see this section to learn more: [Using sections in a Word layout](./devenv-howto-report-layout.md#using-sections-in-a-word-layout)
+If the user sees this error message when running a report with a Word layout: `You cannot run the report because the {0} layout contains section breaks that conflict with the sections in the report. Remove the section breaks from the report layout, and then run the report.` then see this section to learn more: [Using sections in a Word layout](./devenv-using-word-to-author-your-report-layout.md#using-sections-in-a-word-layout)
 
 ## Troubleshooting report AL code
 

@@ -74,7 +74,7 @@ Use the following guidelines to write URL syntax and create a URL:
 
 -   Enclose values in single quotation marks (`''`) if they're unescaped.
 
-##  <a name="Paramters"></a> URL parameters
+##  <a name="Parameters"></a> URL parameters
 
 The following table describes the parameters of the URL for displaying a page.
 

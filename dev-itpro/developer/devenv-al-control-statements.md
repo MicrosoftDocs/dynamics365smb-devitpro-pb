@@ -573,7 +573,7 @@ var
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
-With [!INCLUDE [prod_short](../includes/prod_short.md)] runtime 15.0, you can use the the `continue` statement to proceed to the next iteration of the iterative statement in which it appears.  
+With [!INCLUDE [prod_short](../includes/prod_short.md)] runtime 15.0, you can use the `continue` statement to proceed to the next iteration of the iterative statement in which it appears.  
 
 ```AL
 continue;  

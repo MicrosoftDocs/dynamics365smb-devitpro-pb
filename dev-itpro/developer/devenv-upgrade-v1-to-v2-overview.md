@@ -132,7 +132,7 @@ The steps use the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)].
     This removes the unused extension package from server.
 
 ## Going forward
-The upgrade code unit becomes an integral part of the extension. The **NAVAPP** methods were mainly be used for the conversion from V1 to V2. After converting the extension, you should begin to write upgrade code as described in [Upgrading Extensions](devenv-upgrading-extensions.md).
+The upgrade codeunit becomes an integral part of the extension. The **NAVAPP** methods were mainly be used for the conversion from V1 to V2. After converting the extension, you should begin to write upgrade code as described in [Upgrading Extensions](devenv-upgrading-extensions.md).
 
 ## Related information
 [Get Started with AL](devenv-get-started.md)  
