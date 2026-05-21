@@ -212,6 +212,7 @@ Other applications can then call these public procedures to interact with your a
 [Create agent setup pages (preview)](ai-agent-sdk-setup-page.md)  
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Define and register an agent programmatically (preview)](ai-agent-sdk-define-register.md)  
+[Agent models (preview)](ai-agent-models.md)  
 [Managing agent tasks programmatically (preview)](ai-agent-sdk-tasks.md)  
 [Agent permissions (preview)](ai-development-toolkit-permissions.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  

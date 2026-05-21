@@ -610,7 +610,7 @@ traces
 
 ## Financial report definition imported: {Report Definition Code}
 
-Occurs when a user imports a financial report report definition.
+Occurs when a user imports a financial report definition.
 
 ### General dimensions
 
@@ -649,7 +649,7 @@ traces
 
 ## Financial report definition exported: {Report Definition Code}
 
-Occurs when a user exports a financial report report definition.
+Occurs when a user exports a financial report definition.
 
 ### General dimensions
 
@@ -688,7 +688,7 @@ traces
 
 ## Financial report definition modified: {Report Definition Code}
 
-Occurs when a user modifies a financial report report definition.
+Occurs when a user modifies a financial report definition.
 
 ### General dimensions
 
@@ -727,7 +727,7 @@ traces
 
 ## Financial report definition deleted: {Report Definition Code}
 
-Occurs when a user deletes a financial report report definition.
+Occurs when a user deletes a financial report definition.
 
 ### General dimensions
 

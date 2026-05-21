@@ -68,7 +68,7 @@ The [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] re
 
    The ClickOnce online installation web page includes a link to download .NET Framework. However, using this option requires that users have administrative rights on their computers. 
 
-2. An administrator install install .NET Framework on users computers. 
+2. An administrator install .NET Framework on users' computers. 
 
    For more information about how to install .NET Framework, see [Install the .NET Framework for developers](https://go.microsoft.com/fwlink/?LinkId=272382).   
 

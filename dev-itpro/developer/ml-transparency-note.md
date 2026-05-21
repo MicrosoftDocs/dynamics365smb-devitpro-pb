@@ -43,7 +43,7 @@ Not only does this support our partner community, but many of Microsoft’s own 
 
 ### System components
 
-The APIs allows developers to build machine learning features (non-generative AI) integrated into Business Central's line-of-business functionality and deploy them as Business Central extensions to Business Central online. The following components are included:
+The APIs allow developers to build machine learning features (non-generative AI) integrated into Business Central's line-of-business functionality and deploy them as Business Central extensions to Business Central online. The following components are included:
 
 - **APIs**
 
