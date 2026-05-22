@@ -2,7 +2,7 @@
 title: "BigInteger.ToText() Method"
 description: "Converts the value to a text."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 05/22/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,8 +30,13 @@ An instance of the [BigInteger](biginteger-data-type.md) data type.
 &emsp;Type: [Text](../text/text-data-type.md)  
 The text representation of the value.
 
+TESTTESTTEST
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+TESTTESTTEST
 ## Related information
 [BigInteger data type](biginteger-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
