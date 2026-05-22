@@ -2,7 +2,7 @@
 title: "BigInteger data type"
 description: "Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,223,372,036,854,775,807."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 05/22/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -15,7 +15,7 @@ ms.reviewer: solsen
 
 Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,223,372,036,854,775,807.
 
-
+TESTTESTTEST
 
 ## Instance methods
 The following methods are available on instances of the BigInteger data type.
@@ -28,6 +28,7 @@ The following methods are available on instances of the BigInteger data type.
 
 ## Remarks  
  This data type is a 64-bit integer.  
+TESTTESTTEST
 
  You must add an L to the constant definition to inform AL that the integer must be interpreted and treated as a BigInteger.  
 
