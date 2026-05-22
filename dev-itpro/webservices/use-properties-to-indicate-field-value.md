@@ -15,7 +15,7 @@ The problem occurs because of the way proxies are auto-generated and the way the
   
  For example, the following code shows the schema for the two fields on this Customer Card web service:  
   
-```  
+```xml
 <xsd:element minOccurs="0" maxOccurs="1" name="Credit_Limit_LCY" type="xsd:decimal" />   
 <xsd:element minOccurs="0" maxOccurs="1" name="Salesperson_Code" type="xsd:string" />   
 ```  
@@ -24,26 +24,26 @@ The problem occurs because of the way proxies are auto-generated and the way the
   
  If both values are present, then the XML document should contain the following elements:  
   
-```  
+```xml
 <Credit_Limit_LCY>1000</Credit_Limit_LCY>   
 <Salesperson_Code>JR</Salesperson_Code>   
 ```  
   
  But if there is no information about the credit limit, then the document should contain the following element:  
   
-```  
+```xml
 <Salesperson_Code>JR</Salesperson_Code>   
 ```  
   
  If the credit limit is zero, then the document should contain the following line:  
   
-```  
+```xml
 <Credit_Limit_LCY>0</Credit_Limit_LCY>   
 ```  
   
  For the decimal type and all .NET Framework value types, you can handle this  state in the proxy objects by using a **Boolean \*Specified** property:  
   
-```  
+```csharp
 if (salesOrder.Credit_Limit_LCYSpecified)  
     there is a value present in salesOrder.Credit_Limit_LCY  
 else   
@@ -52,14 +52,14 @@ else
   
  If you assign a non-default value in the value type, then you should confirm this by setting the accompanying **Boolean \*Specified** property to `true`:  
   
-```  
+```csharp
 salesOrder.Credit_Limit_LCY = 1000;  
 salesOrder.Credit_Limit_LCYSpecified = true;  
 ```  
   
  To specify that there is no meaningful value in the `salesOrder.Credit_Limit_LCY` value type, set the accompanying **Boolean \*Specified** property to `false`:  
   
-```  
+```csharp
 salesOrder.Credit_Limit_LCYSpecified = false;  
 ```  
   
@@ -67,7 +67,7 @@ salesOrder.Credit_Limit_LCYSpecified = false;
   
  .NET Framework reference types, such as the String class, are handled differently because .NET Framework declarations that are based on those types can be null, which means that they can have an explicit expression of no value present:  
   
-```  
+```csharp
 if (salesOrder.Salesperson_Code != null)  
     there is a value present in salesOrder.Salesperson_Code  
 else   
@@ -76,19 +76,19 @@ else
   
  If you assign a value, then you implicitly also define it as present:  
   
-```  
+```csharp
 salesOrder.Salesperson_Code = "JR";  
 ```  
   
  To specify that there is no useful value in `salesOrder.Salesperson_Code`, you should set it to null:  
   
-```  
+```csharp
 salesOrder.Salesperson_Code = null;  
 ```  
   
 ### Example  
   
-```  
+```csharp
 SalesOrder salesOrder = new SalesOrder();  
 salesOrder.Order_Date = DateTime.Today;  
 salesOrder.Order_DateSpecified = true;  
