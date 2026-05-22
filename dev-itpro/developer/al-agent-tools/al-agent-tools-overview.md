@@ -119,6 +119,14 @@ Authentication tokens are never passed as tool parameters or returned in tool re
 
 To force re-authentication, set `noCache: true` on any tool that supports it, or call `al_auth_logout` first.
 
+## AL LSP for semantic code intelligence
+
+In addition to the task-oriented tools listed above, ALTool can launch a full Language Server Protocol (LSP) server via the `launchlspserver` command. While the MCP tools perform discrete actions (build, publish, search), the LSP server provides continuous semantic code intelligence—hover, go-to-definition, find-references, completions, rename, and type hierarchy—over JSON-RPC on stdio.
+
+The AL LSP server is the best choice when an agent needs to navigate and understand AL code structurally rather than perform predefined tasks. It correctly resolves cross-project relationships such as `internalsVisibleTo` and `propagateDependencies`, making it more reliable than text-based search for symbol resolution in multi-project workspaces.
+
+Learn more in [AL LSP](../devenv-al-tool.md#al-lsp).
+
 ## Related information
 
 [AL Language Model Tools for Visual Studio Code](al-language-model-tools-vscode.md)  
