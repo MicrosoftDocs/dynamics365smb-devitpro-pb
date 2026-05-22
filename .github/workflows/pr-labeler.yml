@@ -84,8 +84,6 @@ jobs:
             for (const fileDiff of fileDiffs) {
               const lines = fileDiff.split('\n');
 
-              // Check if changes are inside DO_NOT_EDIT blocks
-              // We look at the full file content for changed files
               const fileMatch = fileDiff.match(/^a\/(.+?) b\//);
               if (!fileMatch) continue;
               const filePath = fileMatch[1];
@@ -93,7 +91,7 @@ jobs:
               // Only analyze markdown files
               if (!filePath.endsWith('.md')) continue;
 
-              // Count additions and deletions (lines starting with + or - after the header)
+              // Count additions and deletions
               let inHunk = false;
               let addedLines = [];
               let removedLines = [];
@@ -116,14 +114,11 @@ jobs:
 
               // Check for code block changes (fenced code in AL, json, xml, etc.)
               const codeBlockPattern = /^```\s*(al|json|xml|yaml|powershell|csharp|cs|javascript|js)/i;
-              let inCodeBlock = false;
 
               for (const line of addedLines.concat(removedLines)) {
                 if (codeBlockPattern.test(line.trim())) {
-                  inCodeBlock = !inCodeBlock;
                   continue;
                 }
-                // If a changed line is inside a code fence, or looks like AL/code
                 if (line.match(/^\s*(trigger|procedure|local|var|begin|end;|if |then|else|exit\(|record\s|codeunit\s|page\s|table\s)/i)) {
                   hasCodeChanges = true;
                 }
@@ -138,23 +133,29 @@ jobs:
               // Check if changes touch DO_NOT_EDIT sections
               if (fs.existsSync(filePath)) {
                 const content = fs.readFileSync(filePath, 'utf8');
-                const doNotEditPattern = /(START>DO_NOT_EDIT)([\s\S]*?)(END>DO_NOT_EDIT)/g;
+                // Match DO_NOT_EDIT blocks using the actual closing marker format.
+                // AL reference uses: [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+                // API reference uses: <!-- END>DO_NOT_EDIT -->
+                // The previous pattern matched prematurely on the instructional comment
+                // "between here and the END>DO_NOT_EDIT" — fixed by requiring the
+                // closing marker prefix (IMPORTANT: or <!--).
+                const doNotEditPattern = /START>DO_NOT_EDIT[\s\S]*?(?:IMPORTANT: END>DO_NOT_EDIT|<!-- END>DO_NOT_EDIT)/g;
                 let match;
                 while ((match = doNotEditPattern.exec(content)) !== null) {
-                  // Check if any added/removed line appears within a DO_NOT_EDIT block
                   const blockContent = match[0];
-                  for (const changed of addedLines) {
+                  // Check both added and removed lines against the block
+                  for (const changed of addedLines.concat(removedLines)) {
                     if (changed.trim().length > 0 && blockContent.includes(changed.trim())) {
                       hasDoNotEditChanges = true;
                       break;
                     }
                   }
+                  if (hasDoNotEditChanges) break;
                 }
               }
 
               // Typo detection: large structural changes are not typos
               for (const added of addedLines) {
-                // If any added line is more than a small text change, it's not a typo
                 if (added.trim().startsWith('#') || added.trim().startsWith('```') ||
                     added.trim().length > 200) {
                   isTypoOnly = false;
@@ -167,7 +168,6 @@ jobs:
             if (totalChanges > 50 || hasCodeChanges) {
               isTypoOnly = false;
             }
-            // A PR with 0 changes isn't a typo either
             if (totalChanges === 0) {
               isTypoOnly = false;
             }
@@ -188,7 +188,6 @@ jobs:
               const labelsArray = [...labels];
               console.log(`Applying labels: ${labelsArray.join(', ')}`);
 
-              // Ensure labels exist (create if they don't)
               for (const label of labelsArray) {
                 try {
                   await github.rest.issues.getLabel({
