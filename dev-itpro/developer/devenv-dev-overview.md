@@ -92,3 +92,5 @@ After development and testing are done, you can submit your extension package to
 [Documenting your code with XML comments](devenv-xml-comments.md)  
 [FAQ for developing in AL](devenv-dev-faq.md)  
 [Sending extension telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
+[AI agent tools for AL development](al-agent-tools/al-agent-tools-overview.md)  
+[AL LSP for AI agents and editors](devenv-al-tool.md#al-lsp)  
