@@ -23,7 +23,7 @@ Represents an extension in [!INCLUDE[d365fin_long_md](../../includes/d365fin_lon
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[GET extension](../api/dynamics_extension_get.md)|extension|Gets a extension object.|
+|[GET extension](../api/dynamics_extension_get.md)|extension|Gets an extension object.|
 
 ## Bound Actions
 

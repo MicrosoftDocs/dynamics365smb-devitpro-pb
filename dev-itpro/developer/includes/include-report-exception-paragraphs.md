@@ -154,7 +154,7 @@ This happens when a developer is debugging a report
 Not an error<br><br>
 
 ### <a name=NavNCLDialogException></a>NavNCLDialogException
-The NavNCLDialogException error happens when a error function has been called in the report. 
+The NavNCLDialogException error happens when an error function has been called in the report. 
 
 **Suggested solution**<br>
 The error messages will in most cases provide the necessary information to mitigate the problem. If not, you need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
