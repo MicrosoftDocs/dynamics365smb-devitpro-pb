@@ -19,14 +19,15 @@ AI agent tools enable GitHub Copilot and any Model Context Protocol (MCP)-compat
 > [!TIP]
 > These tools are specific to AI agents in Visual Studio Code and are different from the [ALTool command-line tool](../devenv-al-tool.md), which is used for compiling and packaging AL extensions in CI/CD pipelines.
 
-These tools are designed for two usage surfaces that share a consistent set of tool names and behaviors:
+These tools are designed for three usage surfaces:
 
 | Surface | Description | Best for |
 |---------|-------------|----------|
 | **Visual Studio Code Language Model Tools** | Tools registered with the Visual Studio Code Language Model Tools API, available to GitHub Copilot in Agent mode and any Copilot-compatible extension | Developers working interactively in Visual Studio Code |
 | **AL MCP Server** | A standalone Model Context Protocol server (`altool launchmcpserver`) that exposes AL tools over STDIO or HTTP | Headless environments, CI/CD pipelines, AI agents that run outside Visual Studio Code |
+| **AL LSP Server** | A Language Server Protocol server (`altool launchlspserver`) that provides semantic code intelligence over JSON-RPC on stdio | Agents and editors that need continuous code navigation—go-to-definition, find-references, completions, rename, and type hierarchy across multi-project workspaces |
 
-Because both surfaces use the same tool names, an agent trained on one surface can work with the other with no retraining.
+The MCP and Visual Studio Code tools share a consistent set of tool names, so an agent trained on one surface can work with the other with no retraining. The AL LSP Server complements them by providing deep semantic understanding of the codebase rather than discrete task execution. Learn more in [AL LSP](../devenv-al-tool.md#al-lsp).
 
 ## Available tools
 
