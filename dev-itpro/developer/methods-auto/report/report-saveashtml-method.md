@@ -52,7 +52,7 @@ When you call the SaveAsHtml method, the report is generated and saved to the fi
 
 [!INCLUDE[report_download_file](../../includes/include-report-download-file.md)]
 
-Prior to version 23.0, the SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation. From version 23.0, the platform handles everything. 
+Prior to version 23.0, the SaveAsHTML method uses the logic in codeunit **9651 Document Report Mgt.** to handle the format transformation. From version 23.0, the platform handles everything. 
 
 ### Error conditions  
 The method can fail in the following five ways:

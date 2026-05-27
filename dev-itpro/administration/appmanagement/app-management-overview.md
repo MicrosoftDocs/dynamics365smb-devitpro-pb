@@ -12,9 +12,9 @@ ms.reviewer: jswymer
 
 [!INCLUDE[2020_releasewave1](../../includes/2020_releasewave1.md)]
 
-Each [!INCLUDE[prod_short](../../developer/includes/prod_short.md)] environment is built as a collection of apps. These apps include Microsoft apps and apps from AppSource that reselling partners have installed for customers. The apps are working together to provide customers with a broad set of features to address their various business, market, and industry needs.
+Each [!INCLUDE[prod_short](../../developer/includes/prod_short.md)] environment is built as a collection of apps. These apps include Microsoft apps and apps from Marketplace that reselling partners have installed for customers. The apps are working together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
-As an authorized ISV, you can deliver your functionality or your services as apps in AppSource. For more information, see [Get Started with Building Apps](../../developer/readiness/get-started.md). To help you manage your apps running in different customer Business Central environments, [!INCLUDE[prod_short](../../developer/includes/prod_short.md)] provides the App Management API.
+As an authorized ISV, you can deliver your functionality or your services as apps in Marketplace. For more information, see [Get Started with Building Apps](../../developer/readiness/get-started.md). To help you manage your apps running in different customer Business Central environments, [!INCLUDE[prod_short](../../developer/includes/prod_short.md)] provides the App Management API.
 
 ## About the App Management API
 
@@ -37,7 +37,7 @@ The App Management API lets you apply modern continuous integration (CI), contin
 For more information about the API, see [App Management API](app-management-api.md).
 
 > [!NOTE]
-> Currently, direct access to the API is only available for the ISVs working with the Embed apps; not Add-on and Connect apps. To manage versions of Add-on and Connect apps, you use Partner Center to upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. After passing validation, the new versions are made available in Business Central administration center to the customers that have these apps installed.
+> Currently, direct access to the API is only available for the ISVs working with the Embed apps; not Add-on and Connect apps. To manage versions of Add-on and Connect apps, you use Partner Center to upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on Marketplace. After passing validation, the new versions are made available in Business Central administration center to the customers that have these apps installed.
 
 ## Legal information
 

@@ -84,6 +84,12 @@ The steps in this section configure the data migration globally for all companie
    1. Turn on the switch for each transaction type you want to migrate, like **GL Transactions** and AR **Transactions**.
    1. Go to the **Per company** section and set **Oldest Snapshot Year** field the earliest year in GP that you want migrated.
 
+1. Configure validation settings.
+
+   To configure validation settings that apply across all companies, select **Migration Settings** action at the top of the page. The **GP Migration Settings** page opens. From this page, turn on the **Automatic Validation** options. When enabled, validation automatically runs after the migration process completes to verify that data migrated correctly from Dynamics GP to Business Central.
+
+   Learn more in [Validate Dynamics GP data migration](migrate-gp-validation.md).
+
 ## Configure migration per company
 
 Use the **Per company** section to set the data migration settings separately for each company when you're migrating more than one company. You can specify the same settings as you can globally, plus a couple more. By default, each company uses the global settings.

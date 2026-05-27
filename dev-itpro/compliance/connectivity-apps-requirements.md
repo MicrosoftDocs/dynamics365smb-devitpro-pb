@@ -20,7 +20,7 @@ In [!INCLUDE [prod_short](../includes/prod_short.md)] online, connectivity apps 
 
 ## What connectivity app publishers need to know
 
-Connectivity apps are AppSource apps for [!INCLUDE [prod_short](../includes/prod_short.md)] online built by independent software vendors (ISVs) to provide customers with a truly connected experience. Such apps connect [!INCLUDE [prod_short](../includes/prod_short.md)] to various types of external providers and bring relevant functionality to running a business in the cloud. The following list provides examples of types of apps that can boost productivity:
+Connectivity apps are Marketplace apps for [!INCLUDE [prod_short](../includes/prod_short.md)] online built by independent software vendors (ISVs) to provide customers with a truly connected experience. Such apps connect [!INCLUDE [prod_short](../includes/prod_short.md)] to various types of external providers and bring relevant functionality to running a business in the cloud. The following list provides examples of types of apps that can boost productivity:
 
 * Import bank transactions  
 * Initiate payment transfers  
@@ -35,7 +35,7 @@ Publishers of connectivity apps benefit from in-product visibility. They also ha
 
 * Test coverage
 
-    The connectivity app publisher also provides automated testing when they submit their app to AppSource. These tests must cover more than 85 percent of the app's functionality.
+    The connectivity app publisher also provides automated testing when they submit their app to Marketplace. These tests must cover more than 85 percent of the app's functionality.
 
 * Sales volume requirements
 
@@ -68,7 +68,7 @@ Publishers of connectivity apps benefit from in-product visibility. They also ha
   * Include only the functionality that serves the core purpose of the app.  
 
     To that end, if your app brings banking connectivity, it shouldn't contain all other financial functionality that depends upon bank data. Stick to the core functionality and offer more functionality in other apps.
-  * Have either a **get it now** or **free trial** call to action when published on AppSource.  
+  * Have either a **get it now** or **free trial** call to action when published on Marketplace.  
 
     No apps of requiring a customer to **contact me** is allowed.
   * For bank connectivity apps, provide connections to one or more banks. Make it easy for the [!INCLUDE [prod_short](../includes/prod_short.md)] user to retrieve account and transaction information and initiate single domestic payments.  
@@ -77,7 +77,7 @@ Publishers of connectivity apps benefit from in-product visibility. They also ha
 
 * Regulatory compliance
 
-    Connectivity apps must comply with local regulatory, security, and data protection requirements such as PSD2. In markets where PSD2 and similar regulation are used, it's the publisher's responsibility to ensure the necessary licenses are in place, such as account information service provider (AISP) and payment information service provider (PISP) licenses. Many aggregators of bank APIs offer an agent model where the app publisher is an agent of the aggregator and uses the aggregator's AISP or PISP licenses. If that's not possible, as when integrating directly with banks' APIs, it's necessary for the app publisher to provide the licenses. Failure to comply not only results in rejection from the connectivity apps list, but also rejection by AppSource.
+    Connectivity apps must comply with local regulatory, security, and data protection requirements such as PSD2. In markets where PSD2 and similar regulation are used, it's the publisher's responsibility to ensure the necessary licenses are in place, such as account information service provider (AISP) and payment information service provider (PISP) licenses. Many aggregators of bank APIs offer an agent model where the app publisher is an agent of the aggregator and uses the aggregator's AISP or PISP licenses. If that's not possible, as when integrating directly with banks' APIs, it's necessary for the app publisher to provide the licenses. Failure to comply not only results in rejection from the connectivity apps list, but also rejection by Marketplace.
 
 ## Get the app listed as a connectivity app
 

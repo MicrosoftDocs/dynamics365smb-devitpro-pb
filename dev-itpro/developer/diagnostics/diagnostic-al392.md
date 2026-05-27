@@ -1,8 +1,8 @@
 ---
 title: "Compiler Error AL0392"
-description: "The input cannot be longer than {0}."
+description: "The input cannot be longer than {0} characters."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The input cannot be longer than {0}.
+The input cannot be longer than {0} characters. Reduce the length of the date formula.
 
 
 ## Description

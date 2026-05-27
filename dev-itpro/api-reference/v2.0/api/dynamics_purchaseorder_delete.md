@@ -4,13 +4,11 @@ description: Deletes a purchase order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete purchaseOrders
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -19,7 +17,7 @@ Deletes a purchase order from [!INCLUDE[prod_short](../../../includes/prod_short
 
 ## HTTP request
 
-Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
 DELETE businesscentralPrefix/companies({id})/purchaseOrders({id})

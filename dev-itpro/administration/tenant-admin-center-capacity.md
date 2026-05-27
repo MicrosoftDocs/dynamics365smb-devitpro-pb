@@ -56,6 +56,7 @@ Apart from the default storage capacity, the customer is entitled to extra stora
 |Premium| 3 GB|
 |Essential| 2 GB|
 |Device|1 GB|
+|[Partner Sandbox](environment-types.md#partnersandbox)|5 GB|
 
 [!INCLUDE [db-storage-addons](../includes/db-storage-addons.md)]
 

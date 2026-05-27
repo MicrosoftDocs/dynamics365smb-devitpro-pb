@@ -71,7 +71,7 @@ For more information, see [Designing views](devenv-views.md)
 
 ## Queries
 
-Available from version 23, users can view and analyze query data directly from the [!INCLUDE[prod_short](includes/prod_short.md)] client in analysis mode. The data is analyzed in real time and respects the data security that has been set up for the users. Just like for pages, you can can make queries discoverable for users in Tell Me search and in the role explorer under Report and Analysis. 
+Available from version 23, users can view and analyze query data directly from the [!INCLUDE[prod_short](includes/prod_short.md)] client in analysis mode. The data is analyzed in real time and respects the data security that has been set up for the users. Just like for pages, you can make queries discoverable for users in Tell Me search and in the role explorer under Report and Analysis. 
 
 :::image type="content" source="/dynamics365/business-central/media/data-analysis-gl-entries.png" alt-text="Example of how to do data analysis on the G/L entries page." lightbox="/dynamics365/business-central/media/data-analysis-gl-entries.png":::
 

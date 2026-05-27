@@ -25,7 +25,7 @@ Microsoft responsibilities in the [!INCLUDE[prod_short](../developer/includes/pr
 ## Related information
 
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
-[Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md)  
+[Maintain Marketplace Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md)  
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Technical Support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../technical-support.md)  
 

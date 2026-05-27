@@ -6,7 +6,7 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 06/19/2025
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ms.reviewer: solsen
 ---
@@ -320,7 +320,7 @@ page 54320 "Copilot Job Proposal"
 }
 ```
 
-To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al). Learn more about building an AI capability in [Build the copilot capability in AL](ai-build-capability-in-al.md).
+To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/3-SuggestJob/DescribeJob/CopilotJobProposal.Page.al). Learn more about building an AI capability in [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
 Learn more about error handling in [Error handling in prompt dialogs](devenv-page-prompt-error-handling.md).
 

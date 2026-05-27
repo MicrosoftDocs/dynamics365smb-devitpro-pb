@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/21/2026
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ---
 
@@ -155,6 +155,35 @@ This pattern is useful for:
 - Providing additional information after the initial task creation
 - Continuing multi-turn conversations with your agent
 - Simulating email thread continuations
+
+## Skipping approval for incoming messages
+
+By default, incoming task messages require user approval before the agent starts processing them. This safety mechanism ensures that users can review messages before they're passed to the agent, which is particularly important during initial evaluation of the agent, or for agents working with external inputs.
+
+Starting with version 28.1, you can skip this approval step for incoming messages by calling the `SetRequiresReview` method on the `Agent Task Message Builder` with the parameter value `false`. This allows the agent to start processing messages immediately without requiring manual user approval.
+
+```al
+local procedure CreateTaskWithoutApproval(AgentUserSecurityId: Guid; Sender: Text; MessageText: Text)
+var
+    AgentTaskBuilder: Codeunit "Agent Task Builder";
+    AgentTaskMessageBuilder: Codeunit "Agent Task Message Builder";
+begin
+    AgentTaskMessageBuilder
+        .Initialize(Sender, MessageText)
+        .SetRequiresReview(false);
+
+    AgentTaskBuilder
+        .Initialize(AgentUserSecurityId, 'Process Message')
+        .AddTaskMessage(AgentTaskMessageBuilder)
+        .Create();
+end;
+```
+
+> [!IMPORTANT]
+> Only skip approval for messages from trusted, controlled sources where input has already been validated. For messages coming from external or untrusted sources, keep the default approval step in place to prevent unintended agent behavior.
+
+> [!NOTE]
+> If the implementation of the method `AnalyzeAgentTaskMessage` in the interface `IAgentTaskExecution` returns some annotations with severity `Warning`, an approval will be required.
 
 ## Tracking tasks
 

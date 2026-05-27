@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/12/2026
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ---
 
@@ -257,6 +257,7 @@ Your core instructions should be environment-agnostic. Use the agent's profile a
 [Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
 [Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Instruction keywords (preview)](ai-development-toolkit-instruction-keywords.md)  
+[Agent models (preview)](ai-agent-models.md)  
 [Integrate with the Tasks AL API (preview)](ai-development-toolkit-tasks-api.md)  
 [Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
 [Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  

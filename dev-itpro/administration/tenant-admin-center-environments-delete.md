@@ -17,7 +17,7 @@ When an environment is no longer needed, like a sandbox environment, you can del
 
 Deleting an environment makes it inaccessible to Business Central users and deletes all application and business data. However, when you delete an environment, it's not permanently deleted immediately. First, it's kept as a backup or snapshot and enters a retention period that lasts 14 days. This initial deletion phase is referred to as *soft delete*. During the retention period, you can fully recover the environment and its data if needed. After 14 days, the environment and data are permanently deleted and can't be recovered. This final deletion phase is often referred to as *hard delete*.
 
-Here's some important information about deleted environments and their recovery:  
+Here's some important information about deleted environments and their recovery:
 
 - If you delete an environment that has the status `Creating Failed` or `Removing Failed`, the environment isn't retained and is permanently deleted immediately.
 
@@ -25,9 +25,9 @@ Here's some important information about deleted environments and their recovery:
 
    If you need to recover an environment that was deleted more than 14 days ago, open a service request.
 
-- When you delete environment, it's automatically renamed to include a suffix with the format `-yyMMddHHmmss`.
+- When you delete environment, it's automatically renamed to include a suffix with the format `-yyMMddHHmmssff`.
 
-   The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you might want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name. 
+   The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you might want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name.
 
    If the environment name is too long, it's truncated to allow using the full suffix in the specified format. When the environment is recovered, it isn't automatically renamed back to the original name.
 
@@ -44,7 +44,7 @@ Here's some important information about deleted environments and their recovery:
 > You can recover a soft-deleted product environment even if doing so results in exceeding your environment quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription.
 >
 > This capability is provided as an exception to ensure that you can always recover your production environment in critical situations. You must return within your quota within 30 days following the recovery by deleting a production environment or purchasing an extra production environment. Learn more in [Managing Capacity](tenant-admin-center-capacity.md).
-  
+
 ## Delete an environment
 
 1. Before you delete an environment, make sure no users are using the environment, because they'll be disconnected.
@@ -64,5 +64,5 @@ Here's some important information about deleted environments and their recovery:
 
 ## Related information
 
-[Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md)  
-[Managing Capacity](tenant-admin-center-capacity.md)  
+[Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md)
+[Managing Capacity](tenant-admin-center-capacity.md)

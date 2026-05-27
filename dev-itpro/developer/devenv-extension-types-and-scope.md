@@ -19,7 +19,7 @@ An extension can move from one scope to another under certain circumstances. For
 The definition of a global app is that it fulfills one or more of the following criteria:
 
 - It's published by Microsoft  
-- It's installed from the AppSource marketplace  
+- It's installed from the Marketplace  
 - It's provided by embed ISVs if your environment uses a code-customized base application. For more information, see [Publishing a code-customized Base Application](devenv-publish-code-customization.md).
 
 Global apps are uniquely defined by their `id` and `version`.
@@ -36,13 +36,13 @@ Global apps can exist in Production and in sandbox environments. Learn more in [
 
 #### How to install
 
-For AppSource and Microsoft apps:
+For Marketplace and Microsoft apps:
 
-- From the AppSource marketplace, choose **Contact Me**, **Free Trial**, or **Get It Now** and follow the steps.
-- From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you can navigate to the AppSource embed view, locate the app, and install it. Learn more in [Installing and uninstalling extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
+- From the Marketplace, choose **Contact Me**, **Free Trial**, or **Get It Now** and follow the steps.
+- From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you can navigate to the Marketplace embed view, locate the app, and install it. Learn more in [Installing and uninstalling extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
 
 > [!NOTE]  
-> The AppSource offer listing contains the list of supported countries/regions. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation fails.
+> The Marketplace offer listing contains the list of supported countries/regions. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation fails.
 
 For apps provided by Embed ISVs, installation is handled by the Embed ISV partner.
 
@@ -50,10 +50,10 @@ For apps provided by Embed ISVs, installation is handled by the Embed ISV partne
 
 Global apps are preserved on upgrade for both production and sandbox environments.
 
-#### AppSource apps
+#### Marketplace apps
 
-- AppSource apps are never uninstalled unless they're preventing the tenant to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md).
-- AppSource apps are updated to the latest version during upgrades to a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version (for instance 19.5 to 20.0), but are preserved during minor version upgrade (for instance 19.0 to 19.1) - unless the app was marked as incompatible by the extension publisher through a support request.
+- Marketplace apps are never uninstalled unless they're preventing the tenant to upgrade. For more information, see [Maintain Marketplace apps and per-tenant extensions](app-maintain.md).
+- Marketplace apps are updated to the latest version during upgrades to a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version (for instance 19.5 to 20.0), but are preserved during minor version upgrade (for instance 19.0 to 19.1) - unless the app was marked as incompatible by the extension publisher through a support request.
 
 #### Microsoft apps
 
@@ -81,7 +81,7 @@ From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod
 	
 ### Behavior on upgrade
 
-PTEs are never uninstalled from a production environment, unless they're preventing the environment to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md). PTEs are uninstalled when the sandbox environment is relocated if they dependent on DEV extensions, but the data isn't removed. PTEs can be upgraded to a newer version during the environment upgrade if a newer version has been staged from the **Extension Management** page.
+PTEs are never uninstalled from a production environment, unless they're preventing the environment to upgrade. For more information, see [Maintain Marketplace apps and per-tenant extensions](app-maintain.md). PTEs are uninstalled when the sandbox environment is relocated if they dependent on DEV extensions, but the data isn't removed. PTEs can be upgraded to a newer version during the environment upgrade if a newer version has been staged from the **Extension Management** page.
 
 ## DEV extensions
 
@@ -113,9 +113,9 @@ DEV extensions are uninstalled when the sandbox environment is upgraded or reloc
 
 In general, extensions are uniquely defined by their `id`. A specific version of an app is defined by the `id` and `version`, adding `environment` for per-tenant extensions.
 
-- It isn't possible to deploy a **Global app** and a **PTE** with the same `id`. During the upload of a PTE, we're validating that there isn't a Global app with the same `id`. Currently, the AppSource validation process doesn't detect all identity conflicts with PTEs and uploading an app with the same ID as an existing PTE to AppSource means that it isn't possible to update the PTE anymore. Learn more in [Technical validation checklist](devenv-checklist-submission.md#technical-validation-checklist).
+- It isn't possible to deploy a **Global app** and a **PTE** with the same `id`. During the upload of a PTE, we're validating that there isn't a Global app with the same `id`. Currently, the Marketplace validation process doesn't detect all identity conflicts with PTEs and uploading an app with the same ID as an existing PTE to Marketplace means that it isn't possible to update the PTE anymore. Learn more in [Technical validation checklist](devenv-checklist-submission.md#technical-validation-checklist).
 
-- It isn't possible to deploy a **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio Code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to AppSource. Similarly, after you're done developing/testing your extension, you should increase the `version` before submitting to AppSource. 
+- It isn't possible to deploy a **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio Code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to Marketplace. Similarly, after you're done developing/testing your extension, you should increase the `version` before submitting to Marketplace. 
 
 ## Related information
 

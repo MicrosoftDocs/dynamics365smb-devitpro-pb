@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/30/2024
 ms.reviewer: solsen
 ms.topic: best-practice
-ms.author: grobyns
+ms.author: solsen
 ---
 
 # Best practices for deprecation of AL code
@@ -129,7 +129,7 @@ If an action or other code element points to a now removed object, then the guid
 
 ## Obsoleting reports
 
-If you plan to deprecate reports in your AppSource apps or per-tenant extensions, you might want to inform other developers and your users before you remove the reports. Learn more in [Obsoleting reports](devenv-reports-obsoletion.md).
+If you plan to deprecate reports in your Marketplace apps or per-tenant extensions, you might want to inform other developers and your users before you remove the reports. Learn more in [Obsoleting reports](devenv-reports-obsoletion.md).
 
 ## Related information
 

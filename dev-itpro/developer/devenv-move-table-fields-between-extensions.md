@@ -13,7 +13,7 @@ ms.date: 03/31/2025
 As extensions mature or as a consequence of an extension initially created as a large monolith, the need to break down the extension and transfer the ownership of tables or fields, including data, becomes apparent. Moving tables and fields between extensions improves maintainability, flexibility, and scalability of the extension. This feature introduces a controlled process for releasing and taking ownership of tables as part of the extension upgrade process.
 
 > [!NOTE]
-> This feature is available for [!INCLUDE [prod_short](includes/prod_short.md)] on-premises and AppSource apps starting from 2025 release wave 1. It's also enabled for development.
+> This feature is available for [!INCLUDE [prod_short](includes/prod_short.md)] on-premises and Marketplace apps starting from 2025 release wave 1. It's also enabled for development.
 >
 > It's not allowed for PTEs.
 
@@ -27,8 +27,8 @@ In the source table definition, you must add the [MovedTo](properties/devenv-mov
 
 Moving a table or a field can be considered a breaking change. Keep the following things in mind to avoid disruption to customers and to ensure the move is the intended action.
 
-- **A move is a schema breaking change** - Once a move is completed; tables and columns in the database might have changed and data might have been transferred. This can't be reverted by removing the properties. **Especially in AppSource, an exception will be needed to remove the properties**. The exception requires that no environments have completed the move or that data loss via force sync is acceptable. 
-- **Tables and fields can only be moved once** - A table or a field can't be moved to a new destination after they have been moved once in AppSource apps. This is a limitation of the current implementation. Multiple moves can only be allowed as an exception, if all the environments have successfully completed the move.
+- **A move is a schema breaking change** - Once a move is completed; tables and columns in the database might have changed and data might have been transferred. This can't be reverted by removing the properties. **Especially in Marketplace, an exception will be needed to remove the properties**. The exception requires that no environments have completed the move or that data loss via force sync is acceptable. 
+- **Tables and fields can only be moved once** - A table or a field can't be moved to a new destination after they have been moved once in Marketplace apps. This is a limitation of the current implementation. Multiple moves can only be allowed as an exception, if all the environments have successfully completed the move.
 
 ### Impact of a breaking change
 

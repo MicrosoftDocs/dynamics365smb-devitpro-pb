@@ -2,7 +2,7 @@
 title: "Compiler Error AL0405"
 description: "An option value is expected."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An option value is expected.
+An option value is expected. Use '::' to access option members (e.g., MyEnum::Value).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

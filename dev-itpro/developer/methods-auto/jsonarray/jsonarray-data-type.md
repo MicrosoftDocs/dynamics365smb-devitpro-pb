@@ -2,7 +2,7 @@
 title: "JsonArray data type"
 description: "Is a container for any well-formed JSON array."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -93,6 +93,7 @@ The following methods are available on instances of the JsonArray data type.
 |[ReadFrom(InStream)](jsonarray-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonArray variable.|
 |[RemoveAt(Integer)](jsonarray-removeat-method.md)|Removes the token at the given index.|
 |[SelectToken(Text, var JsonToken)](jsonarray-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
+|[SelectTokens(Text, var List of [JsonToken])](jsonarray-selecttokens-method.md)|Selects tokens based on a JPath expression and returns them in a new list.|
 |[Set(Integer, JsonToken)](jsonarray-set-integer-jsontoken-method.md)|Replaces the value at the given index with a new value.|
 |[Set(Integer, JsonObject)](jsonarray-set-integer-jsonobject-method.md)|Replaces the value at the given index with a new value.|
 |[Set(Integer, JsonArray)](jsonarray-set-integer-jsonarray-method.md)|Replaces the value at the given index with a new value.|

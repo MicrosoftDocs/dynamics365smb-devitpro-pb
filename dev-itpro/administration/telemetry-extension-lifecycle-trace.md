@@ -79,7 +79,7 @@ The traces in this section are recorded for extensions that are published to the
 
 - For on-premises, it includes extensions that are published by running the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) with the `-Scope Tenant` parameter.
 
-- For online, it includes per-tenant extensions uploaded from the **Extension Management** page in the client. It doesn't include Microsoft extensions or [AppSource extensions](https://appsource.microsoft.com/en-US/marketplace?product=dynamics-365-business-central).
+- For online, it includes per-tenant extensions uploaded from the **Extension Management** page in the client. It doesn't include Microsoft extensions or [Marketplace extensions](https://appsource.microsoft.com/en-US/marketplace?product=dynamics-365-business-central).
 
 ## <a name="compiledsuccess"></a>Extension compiled successfully
 
@@ -439,7 +439,7 @@ Occurs when an extension installs successfully on a tenant.
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the extension that was installed.|
-| extensionAvailability|Specifies the availability of an AppSource extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the AppSource publisher.</li>|
+| extensionAvailability|Specifies the availability of a Marketplace extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the Marketplace publisher.</li>|
 | extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
@@ -499,7 +499,7 @@ Occurs when an extension failed to install on a tenant.
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the extension that was installed.|
 |failureReason|Specifies the error that occurred when the extension was installed.|
-| extensionAvailability|Specifies the availability of an AppSource extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the AppSource publisher.</li>|
+| extensionAvailability|Specifies the availability of a Marketplace extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the Marketplace publisher.</li>|
 | extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
 | result|**Failed**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
@@ -639,7 +639,7 @@ Occurs when an extension updates successfully on the service. <!--The update ope
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the new version of the extension being upgraded.|
 | extensionVersionFrom|Specifies the old version of the extension being upgraded.|
-| extensionAvailability|Specifies the availability of an AppSource extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the AppSource publisher.</li>|
+| extensionAvailability|Specifies the availability of a Marketplace extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the Marketplace publisher.</li>|
 | extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
@@ -681,7 +681,7 @@ Occurs when an extension failed to update on the service. <!--The update operati
 | extensionVersionFrom|Specifies the old version of the extension being upgraded.|
 | failureReason|Specifies the error that occurred during upgrade.|
 | result|**Failure**|
-| extensionAvailability|Specifies the availability of an AppSource extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the AppSource publisher.</li>|
+| extensionAvailability|Specifies the availability of a Marketplace extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the Marketplace publisher.</li>|
 | extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |

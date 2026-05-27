@@ -2,7 +2,7 @@
 title: AL code actions
 description: Code actions in AL can help you fix code issues either for your project alone or for the entire workspace.
 author: SusanneWindfeldPedersen
-ms.date: 06/18/2025
+ms.date: 12/08/2025
 ms.topic: article
 ms.author: solsen
 ms.collection: get-started
@@ -34,6 +34,8 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the following code a
 - Insert `using` statement for a missing namespace. Fix for instance, document, project, or workspace.
 - Move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. Learn more in [Tooltip property](properties/devenv-tooltip-property.md).
 - Fix code to use the `this` keyword for self-reference and code readability. Learn more in [Use the this keyword for codeunit self-reference](devenv-al-this-keyword.md).
+- Add namespace from template/inferred from sibling files/publisher.project. Fix for instance, document, project, or workspace. Learn more in [Adopting namespaces in AL](devenv-namespaces-structure.md).
+- Sort `using` statements on the document, project, or workspace. 
 
 ## Examples
 

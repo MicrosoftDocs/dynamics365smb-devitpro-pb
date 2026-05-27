@@ -2,7 +2,7 @@
 title: Choose runtime version in AL
 description: How to choose runtime in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 10/01/2025
+ms.date: 03/16/2026
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 
 # Choose runtime version in AL
 
-The runtime version determines the capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)]. The runtime version can be specified in the `app.json` file for a project. It's expressed with the following syntax, for example: `"runtime": "15.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-premises or a mix of on-premises and SaaS. For SaaS only development, you'll most likely be interested in using the current runtime. If the runtime setting isn't specified, the compiler detects the runtime that matches the server.
+The runtime version determines the capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)]. The runtime version can be specified in the `app.json` file for a project. It's expressed with the following syntax, for example: `"runtime": "17.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-premises or a mix of on-premises and SaaS. For SaaS only development, you'll most likely be interested in using the current runtime. If the runtime setting isn't specified, the compiler detects the runtime that matches the server.
 
 The runtime version specified in the `app.json` file determines which runtime the project is targeting. An extension can be published to a server with the same or a later runtime version as the runtime version specified in the `app.json` file of the extension. In the absence of a specified runtime version, the compiler defaults to the latest major available version.
 
@@ -20,9 +20,9 @@ The most recent runtimes are listed here. For a full list of available runtimes,
 
 |Runtime version|Shipped with                       |Internal version|
 |---------------|-----------------------------------|----------------|  
-|`14.0`         |Business Central 2024 release wave 2|25.0|
 |`15.0`         |Business Central 2025 release wave 1|26.0|
 |`16.0`         |Business Central 2025 release wave 2|27.0|
+|`17.0`         |Business Central 2026 release wave 1|28.0|
 
 ## Setting the runtime version
 
@@ -55,6 +55,7 @@ If an earlier runtime is picked, it can be good idea to have a daily or weekly b
 |`11.0`         |Business Central 2023 release wave 1|22.0|
 |`12.0`         |Business Central 2023 release wave 2|23.0|
 |`13.0`         |Business Central 2024 release wave 1|24.0|
+|`14.0`         |Business Central 2024 release wave 2|25.0|
 
 ## Related information
 

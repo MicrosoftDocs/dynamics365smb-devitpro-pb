@@ -2,7 +2,7 @@
 title: "Compiler Error AL0112"
 description: "{0} is not a valid attribute."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-{0} is not a valid attribute.
+{0} is not a valid attribute. Check the attribute name and supported attributes for this context.
 
 
 ## Description

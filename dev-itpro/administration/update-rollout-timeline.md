@@ -45,7 +45,7 @@ When a new version is available as update on the environment, [Notification reci
 The grace period starts when the update period ends and lasts one month. It occurs every September for the update period starting in April and every March for the update period starting in October. During the grace period, you can't reschedule an update to a later date or to a target version within the environment's current major version. Microsoft automatically reschedules unsuccessful environment updates to be reattempted seven days later. Administrators can only reschedule this attempt to an earlier date or to a different target version within the next major version. To ensure the environment update succeeds during the grace period, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and might send in-product notifications to end users about the upcoming enforced update period. Learn more in [When Microsoft can't update apps or per-tenant extensions (PTEs)](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
 > [!TIP]
-> We recommend that you keep any apps and per-tenant extensions ready to update at any given time, and that you actively test compatibility. Developers can get tips and guidance in the developer docs here: [Maintain AppSource Apps and Per-Tenant Extensions](../developer/app-maintain.md). Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
+> We recommend that you keep any apps and per-tenant extensions ready to update at any given time, and that you actively test compatibility. Developers can get tips and guidance in the developer docs here: [Maintain Marketplace Apps and Per-Tenant Extensions](../developer/app-maintain.md). Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
 
 ### Enforced update period
 
@@ -69,7 +69,7 @@ An environment update completes when it succeeds, fails, or is canceled because 
 An environment might fail to update for various reasons, such as:
 
 - Per-tenant extension compatibility issues  
-- AppSource app compatibility issues  
+- Marketplace app compatibility issues  
 - Internal update issues  
 
 When an update fails or is canceled, the environment restores to the original application version so users can connect to it again. The environment is rescheduled for a new update attempt in seven days. To resolve the issue and retry the update, change the update date to an earlier or current date.

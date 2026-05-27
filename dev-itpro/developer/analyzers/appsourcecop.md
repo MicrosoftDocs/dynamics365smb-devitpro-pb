@@ -2,7 +2,7 @@
 title: "AppSourceCop analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -126,13 +126,13 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0113](appsourcecop-as0113.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
 |[AS0114](appsourcecop-as0114.md)|The name of an external business event cannot be changed.|Upgrade|Error|
 |[AS0115](appsourcecop-as0115.md)|The obsolete state cannot change directly from 'No' to 'Removed'.|Upgrade|Error|
-|[AS0116](appsourcecop-as0116.md)|Source application for the moved symbol cannot be found.|Upgrade|Error|
+|[AS0116](appsourcecop-as0116.md)|Source application for the moved symbol cannot be found.|Upgrade|Warning|
 |[AS0117](appsourcecop-as0117.md)|Application object is moved without the use of PendingMove.|Upgrade|Error|
 |[AS0118](appsourcecop-as0118.md)|The length of a field part of the primary key cannot change.|Upgrade|Error|
 |[AS0119](appsourcecop-as0119.md)|The value of the MovedTo property in the source symbol does not match the destination AppId.|Upgrade|Error|
 |[AS0120](appsourcecop-as0120.md)|The value of the MovedFrom property in the destination object does not match the source AppId.|Upgrade|Error|
 |[AS0121](appsourcecop-as0121.md)|When a symbol is moved the name must remain the same.|Upgrade|Error|
-|[AS0122](appsourcecop-as0122.md)|Source symbol for the moved symbol cannot be found in the package with the given AppId.|Upgrade|Error|
+|[AS0122](appsourcecop-as0122.md)|Source symbol for the moved symbol cannot be found in the package with the given AppId.|Upgrade|Warning|
 |[AS0123](appsourcecop-as0123.md)|A key cannot be declared as clustered on an existing table.|Upgrade|Error|
 |[AS0124](appsourcecop-as0124.md)|Changing an extension object's target is not allowed.|Upgrade|Error|
 |[AS0125](appsourcecop-as0125.md)|Changes the XLIFF translation ID are not allowed.|Upgrade|Info|
@@ -150,6 +150,10 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0137](appsourcecop-as0137.md)|The ID of fields in the primary key cannot change.|Upgrade|Error|
 |[AS0138](appsourcecop-as0138.md)|Table fields should use the AllowInCustomizations property|Extensibility|Hidden|
 |[AS0139](appsourcecop-as0139.md)|New table fields must use the AllowInCustomizations property|Upgrade|Warning|
+|[AS0140](appsourcecop-as0140.md)|Analysis views that have been published must not be deleted.|Upgrade|Error|
+|[AS0141](appsourcecop-as0141.md)|A table that appears to be moved from another app must have the MovedFrom property.|Upgrade|Error|
+|[AS0142](appsourcecop-as0142.md)|The destination table must have the MovedFrom property.|Upgrade|Error|
+|[AS0146](appsourcecop-as0146.md)|Changing a field from Integer to BigInteger may break dependent extensions.|Upgrade|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

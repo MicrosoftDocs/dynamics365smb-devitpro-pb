@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 01/27/2026
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -51,7 +51,7 @@ Agents operate in [!INCLUDE [prod_short](../includes/prod_short.md)] using AI to
 
 - Task execution and interaction  
 
-  The agent operates based on its instructions and user configuration. The instructions describe its purpose, tasks, and high-level considerations for how to perform the flow. These instructions are defined in the agent code and aren't visible to users. The agent uses AI to identify and carry out the steps needed to complete its task within the B[!INCLUDE [prod_short](../includes/prod_short.md)] environment.  
+  The agent operates based on its instructions and user configuration. The instructions describe its purpose, tasks, and high-level considerations for how to perform the flow. These instructions are defined in the agent code and aren't visible to users. The agent uses AI to identify and carry out the steps needed to complete its task within the [!INCLUDE [prod_short](../includes/prod_short.md)] environment.  
   
   The agent interacts with the [!INCLUDE [prod_short](../includes/prod_short.md)] web client using the logical UI API. The agent can:  
 

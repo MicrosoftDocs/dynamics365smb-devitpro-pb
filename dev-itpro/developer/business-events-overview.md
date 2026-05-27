@@ -50,7 +50,7 @@ To preview the new feature of business events on Business Central, do the follow
 
 1. In Business Central, use the **Dataverse Connection Setup** assisted setup guide to connect your Business Central environment to the Dataverse environment on which you want to submit subscriptions and receive notifications of business events.
 
-   This assisted setup guides you to install the *Business Central Virtual Table* app from AppSource that enables business event subscriptions/notifications on your Dataverse environment.
+   This assisted setup guides you to install the *Business Central Virtual Table* app from Marketplace that enables business event subscriptions/notifications on your Dataverse environment.
 
    > [!IMPORTANT]
    > Make sure that you install the latest version that supports business events (**1.023093.3 or higher**).
@@ -118,7 +118,7 @@ To connect your Business Central environment to a Dataverse environment on which
 
 1.	Review the relevant terms and conditions. If you agree to the terms, turn on the **I accept** switch and then select **Next**.
 1.	Specify your Dataverse environment URL, sign in as an administrator user, and select **Next**.
-1.	Install the **Business Central Virtual Table** app from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
+1.	Install the **Business Central Virtual Table** app from [Marketplace](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
     This app enables business event subscriptions and notifications on your Dataverse environment. Make sure that you install the latest version that supports business events (**1.023093.3 or later**).
 
@@ -176,31 +176,36 @@ To build and install an extension that implements custom business events, see ou
 1. Use the **Business Central Virtual Data Source Configuration** table to refresh the Business Central catalog with custom business events on your Dataverse environment (see [previous section](#refresh-business-central-catalog-of-business-events)).
 
 ```al
+namespace MyCompany.SalesExtension;
+
+using System.Integration;
+using Microsoft.Sales.Document;
+
 enumextension 50101 MyEnumExtension extends EventCategory
 {
-   value(0; "Sales")
-   {
-   }
+   value(0; "Sales")
+   {
+   }
 }
 
-codeunit 50102 MyCodeunit 
-{ 
-   trigger OnRun()
+codeunit 50102 MyCodeunit 
+{ 
+   trigger OnRun()
    begin
-   end; 
+   end; 
 
    [ExternalBusinessEvent('salesorderposted', 'Sales order posted', 'Triggered when sales order has been posted', EventCategory::"Sales")]
    [RequiredPermissions(PermissionObjectType::TableData, Database::"Sales Header", 'R')] // optional
-   procedure SalesOrderPosted(salesOrderId: Guid; customerName: Text; orderNumber: Text)
-   begin
-   end;
-   
-   [EventSubscriber(ObjectType::Page, Page::"Sales Order", 'OnPostDocumentBeforeNavigateAfterPosting', '', true, true)] 
-   local procedure OnPostDocument(var SalesHeader: Record "Sales Header"; var PostingCodeunitID: Integer; var Navigate: Enum "Navigate After Posting"; DocumentIsPosted: Boolean; var IsHandled: Boolean) 
+   procedure SalesOrderPosted(salesOrderId: Guid; customerName: Text; orderNumber: Text)
    begin
-      SalesOrderPosted(SalesHeader.SystemId, SalesHeader."Sell-to Customer Name", SalesHeader."No."); 
    end;
-} 
+   
+   [EventSubscriber(ObjectType::Page, Page::"Sales Order", 'OnPostDocumentBeforeNavigateAfterPosting', '', true, true)] 
+   local procedure OnPostDocument(var SalesHeader: Record "Sales Header"; var PostingCodeunitID: Integer; var Navigate: Enum "Navigate After Posting"; DocumentIsPosted: Boolean; var IsHandled: Boolean) 
+   begin
+      SalesOrderPosted(SalesHeader.SystemId, SalesHeader."Sell-to Customer Name", SalesHeader."No."); 
+   end;
+} 
 ```
 
 ## Query Business Central catalog of business events in non-Dataverse systems

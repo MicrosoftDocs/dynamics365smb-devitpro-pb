@@ -2,7 +2,7 @@
 title: "Compiler Error AL0215"
 description: "A Part type page cannot contain other parts."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-A Part type page cannot contain other parts.
+A Part type page cannot contain other parts. Part pages (List Part, Card Part) can only contain fields and actions.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -4,7 +4,7 @@ description: An employee object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 04/08/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -22,10 +22,10 @@ Represents an employee in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[GET employee](../api/dynamics_employee_get.md)|employee|Gets a employee object.|
-|[DELETE employee](../api/dynamics_employee_delete.md)|none|Deletes a employee object.|
-|[POST employee](../api/dynamics_employee_create.md)|employee|Creates a employee object.|
-|[PATCH employee](../api/dynamics_employee_update.md)|employee|Updates a employee object.|
+|[GET employee](../api/dynamics_employee_get.md)|employee|Gets an employee object.|
+|[DELETE employee](../api/dynamics_employee_delete.md)|none|Deletes an employee object.|
+|[POST employee](../api/dynamics_employee_create.md)|employee|Creates an employee object.|
+|[PATCH employee](../api/dynamics_employee_update.md)|employee|Updates an employee object.|
 
 
 ## Navigation

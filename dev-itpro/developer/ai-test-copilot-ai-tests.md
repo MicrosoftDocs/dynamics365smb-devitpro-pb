@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 09/05/2025
+ms.date: 05/03/2026
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -119,6 +119,19 @@ begin
 end;
 ```
 
+### Step 3b - access the selected Business Central agent
+
+When your evaluation targets a Business Central agent, use the `Agent Test Context` codeunit to access the selected agent identity during the test run.
+
+```al
+procedure GetAgentDuringTest(var AgentUserSecurityID: Guid)
+var
+    AgentTestContext: Codeunit "Agent Test Context";
+begin
+    AgentTestContext.GetAgentUserSecurityID(AgentUserSecurityID);
+end;
+```
+
 ### Step 4a - evaluate internally
 
 Use AL assertions to verify that the generated results meet expectations.
@@ -216,9 +229,9 @@ end;
 
 ## Related information
 
-[Business Central Copilot Test Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
+[Business Central Copilot Evaluation](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
 [Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Create datasets](ai-test-copilot-datasets.md)  
-[AI test tool](ai-test-copilot-testtool.md)  
+[Evaluation](ai-test-copilot-testtool.md)  
 [Best practices for testing the Copilot capability](ai-test-copilot-bestpractices.md)  

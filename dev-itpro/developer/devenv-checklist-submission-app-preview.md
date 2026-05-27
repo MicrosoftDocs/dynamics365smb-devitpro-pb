@@ -1,6 +1,6 @@
 ---
-title: AppSource App Previews FAQ
-description: Describes the most common questions about AppSource previews for Business Central.
+title: Marketplace App Previews FAQ
+description: Describes the most common questions about Marketplace previews for Business Central.
 author: qutreson
 ms.date: 10/08/2025
 ms.reviewer: solsen
@@ -9,11 +9,11 @@ ms.author: qutreson
 ms.custom: sfi-ropc-nochange
 ---
 
-# AppSource app previews FAQ
+# Marketplace app previews FAQ
 
-This article addresses some of the most frequently asked questions around previews for AppSource apps.
+This article addresses some of the most frequently asked questions around previews for Marketplace apps.
 
-## What should I do to enable previews of my AppSource apps?
+## What should I do to enable previews of my Marketplace apps?
 
 Preview support is now enabled for all submissions of [!INCLUDE[prod_short](../includes/prod_short.md)] offers. It uses the hide key specified on your offer in Partner Center under `Availability > Preview Audience > Hide Key`. Partner Center automatically generates a key when creating a new offer, but you can override it with any string using only lowercase letters and/or numbers.
 
@@ -33,7 +33,7 @@ Where
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
-After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. This preview listing can be accessed from Partner Center by checking off the "AppSource preview" option at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing isn't supported and the above mentioned preview app install URL must be used instead.
+After the "Preview creation", a preview listing of the offer is available in the Marketplace. This preview listing can be accessed from Partner Center by checking off the "Marketplace preview" option at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing isn't supported and the above mentioned preview app install URL must be used instead.
 
 ## How can I install preview versions of my library apps for selected customers?
 
@@ -50,7 +50,7 @@ If you're using Azure Application Insights for your extension, you can see which
 
 ## How do I go live with my preview version?
 
-You can make your preview version publicly available in the AppSource marketplace by clicking "Go Live" at the "Publisher signoff" step of the submission flow in Partner Center.
+You can make your preview version publicly available in the Marketplace by clicking "Go Live" at the "Publisher signoff" step of the submission flow in Partner Center.
 
 ## Is the preview key per submission or per offer?
 
@@ -64,7 +64,7 @@ Similarly, if you submitted the same library version 1.0.0.0 as part of two offe
 
 Preview versions are validated for breaking changes against the latest publicly available app. However, preview versions aren't used as baseline for validation of breaking changes of other submissions.
 
-For example, if you have version 1.0.0.0 as publicly available in AppSource and you submit version 2.0.0.0, then version 2.0.0.0 will be validated for breaking change against version 1.0.0.0. If you don't press "Go Live" for your submission of version 2.0.0.0, and decide to start a new submission with version 2.1.0.0, then version 2.1.0.0 is validated for breaking change against 1.0.0.0.
+For example, if you have version 1.0.0.0 as publicly available in Marketplace and you submit version 2.0.0.0, then version 2.0.0.0 will be validated for breaking change against version 1.0.0.0. If you don't press "Go Live" for your submission of version 2.0.0.0, and decide to start a new submission with version 2.1.0.0, then version 2.1.0.0 is validated for breaking change against 1.0.0.0.
 
 > [!NOTE]  
 > Since there can be breaking changes between a preview version that was never made public and the next version of the app, the schema update mode `ForceSync` is used when upgrading **from** a preview version.
@@ -77,9 +77,9 @@ Your submission fails during the "Automated Application Validation" stage if you
 
 ## What happens to preview versions during environment upgrades?
 
-During the upgrade of an environment to the next major, the latest publicly available version of AppSource apps are installed on the customer environment. If there's a higher version is available for your preview app, this version is installed. If the preview version is the highest version, the preview version is preserved.
+During the upgrade of an environment to the next major, the latest publicly available version of Marketplace apps are installed on the customer environment. If there's a higher version is available for your preview app, this version is installed. If the preview version is the highest version, the preview version is preserved.
 
-During the upgrade of an environment to the next minor, AppSource apps versions are preserved unless the environment settings specify to update apps to the latest version available.
+During the upgrade of an environment to the next minor, Marketplace apps versions are preserved unless the environment settings specify to update apps to the latest version available.
 
 ## Related information
 

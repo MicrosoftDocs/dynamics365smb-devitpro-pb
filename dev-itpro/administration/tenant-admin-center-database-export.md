@@ -46,10 +46,10 @@ The next step is to generate a shared access signature (SAS) that provides secur
 1. In the **Allowed services** section of the shared access signature pane, select **Blob**, and clear the other options.
 1. In the **Allowed resource types** section, select **Container** and **Object**, and clear the other options.
 1. In the **Allowed permissions** section, mark **Read**, **Write**, **Delete**, and **Create**, and clear the other options.
-1. Select a start and end date and time for the SAS. A minimum expiration window of 24 hours from the initiation of the export is required.
+1. Select a start and end date and time for the SAS. A minimum expiration window of 72 hours from the initiation of the export is required.
 
     > [!TIP]
-    > It's a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation. However, the SAS must be valid for a minimum of 24 hours.
+    > It's a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation. However, the SAS must be valid for a minimum of 72 hours.
 
 1. In the **Allowed protocols** section, select **HTTPS only**.
 1. Select **Generate SAS and connection string**.
@@ -97,7 +97,8 @@ To export data when moving the customer's [!INCLUDE [prod_short](../developer/in
 Learn more in [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 
 > [!NOTE]
-> If you're getting an error saying your file contains corrupted data when importing the bacpac file, make sure you're using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
+> - If you're getting an error saying your file contains corrupted data when importing the bacpac file, make sure you're using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
+> - When importing the exported database using SQL Server Management Studio (SSMS), we recommend using latest version. Earlier versions might not support all scenarios. Learn how to update SSMS in [Update SQL Server Management Studio](/ssms/install/update).
 
 ## Restoring the exported data to Business Central online
 

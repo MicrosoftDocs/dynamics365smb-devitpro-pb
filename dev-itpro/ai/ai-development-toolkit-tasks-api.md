@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/12/2026
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ---
 
@@ -69,7 +69,8 @@ Learn more about writing AL code specific to agent sessions, including event sub
 ## Related information
 
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
-[Designing and coding agents (preview)](ai-development-toolkit-overview.md)   
+[Designing and coding agents (preview)](ai-development-toolkit-overview.md)  
+[Agent models (preview)](ai-agent-models.md)  
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Create and activate (preview)](ai-development-toolkit-agent-create.md)  
 [Write effective instructions (preview)](ai-development-toolkit-instructions.md)  

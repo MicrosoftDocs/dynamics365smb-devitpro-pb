@@ -37,7 +37,7 @@ Use this property on a list page or listpart page to specify the card page that 
 
 You can modify the `CardPageID` on list and listpart pages through a page extension. This means that you can override, which card page should be displayed when an end user double-clicks an item on the list page or listpart page. 
 
-If the property is already specified on the base page, the value in the page extension overrides it. If multiple page extensions modify the property, the last extension to be applied takes effect. Because per-tenant extensions are applied after AppSource apps, this implies that any race condition across multiple AppSource apps setting the same `CardPageId` can be resolved in a per-tenant extension if needed, although this will seldom happen.
+If the property is already specified on the base page, the value in the page extension overrides it. If multiple page extensions modify the property, the last extension to be applied takes effect. Because per-tenant extensions are applied after Marketplace apps, this implies that any race condition across multiple Marketplace apps setting the same `CardPageId` can be resolved in a per-tenant extension if needed, although this will seldom happen.
   
 ## Related information
 

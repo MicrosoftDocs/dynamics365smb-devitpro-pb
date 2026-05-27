@@ -24,7 +24,7 @@ Alternatively, you can create a more tailored trial environment based on the [!I
 
 ## Tailoring trials for customers using the public trial
 
-As yet another alternative, partners can create customer centric trials via the public trial offered by Microsoft without the need for CSP in the initial phase, until the prospect wants to subscribe to [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. These types of trials require more initial efforts from resellers in building these trial experiences as apps to be published to AppSource. The investment is justified by being able to pivot the trial experience by customer or segment type. For more information about these types of trials, see [Create customer-centric onboarding experiences](../administration/onboarding-signupcontext.md).  
+As yet another alternative, partners can create customer centric trials via the public trial offered by Microsoft without the need for CSP in the initial phase, until the prospect wants to subscribe to [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. These types of trials require more initial efforts from resellers in building these trial experiences as apps to be published to Marketplace. The investment is justified by being able to pivot the trial experience by customer or segment type. For more information about these types of trials, see [Create customer-centric onboarding experiences](../administration/onboarding-signupcontext.md).  
 
 [!INCLUDE [admin-trial-types](../includes/admin-trial-types.md)]
 

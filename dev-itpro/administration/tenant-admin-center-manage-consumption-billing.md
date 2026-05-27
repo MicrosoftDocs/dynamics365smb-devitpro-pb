@@ -21,11 +21,16 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 ### Billable agent capabilities
 
+- [Expense Agent (preview)](/dynamics365/business-central/expense-management/expense-agent)
 - [Payables Agent](/dynamics365/business-central/payables-agent)
 - [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
 - [Designing and coding agents (preview)](../ai/ai-development-toolkit-overview.md)
 
 Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use the *Generative answer* and *Agent action* [event scenarios](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) to bill for consumption as they complete their tasks.
+
+### Expense Agent (preview) billing
+
+The Expense Agent processes uploaded receipts and creates expense reports. Each uploaded receipt consumes 50 Copilot Credits, regardless of how many lines the resulting expense has.
 
 ### Sales Order Agent billing
 
@@ -52,7 +57,7 @@ A typical [Sales Order Agent process flow](/dynamics365/business-central/sales-o
 
 For example, assume that:
 
-- 50% of emails include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such email attachment triggers an agent action at cost of 5 Copilot Credits.
+- 50% of emails include an attachment with usable sales data for making quotes, like a purchase order in PDF format. Each such email attachment triggers an agent action at a cost of 5 Copilot Credits.
 - Average usage is 100 requests per month.
 
 The estimated monthly cost is calculated as: `[2 + 5 + 5 + 2 + (5 × 0.5)] x 100 = 1,650 Copilot Credits/month`
@@ -85,11 +90,11 @@ A typical [Payables Agent process flow](/dynamics365/business-central/payables-a
 - Ten agent actions to process the vendor invoices and create the Purchase Document Draft (50 Copilot Credits)
 - One agent action per invoice line to process and interpret line information and perform intelligent matching with history (5 Copilot Credits)
 
-Emails that do not contain a valid invoice attachment does not incur any cost.
+Emails that don't contain a valid invoice attachment don't incur any cost.
 
 For example, assume that:
 
-- The agent receives 100 emails in a month, where each contains a valid vendor invoice in PDF format. Each such PDF attachment triggers an agent action at cost of 50 Copilot Credits. Assume that each invoice contains 3 invoice lines.
+- The agent receives 100 emails in a month, where each contains a valid vendor invoice in PDF format. Each such PDF attachment triggers an agent action at a cost of 50 Copilot Credits. Assume that each invoice contains 3 invoice lines.
 
 The estimated monthly cost is calculated as: `[50 + (5 × 3)] x 100 = 6,500 Copilot Credits/month`
 
@@ -144,13 +149,16 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 
    As a reseller, contact the customer's internal admin. As an internal admin, use the Business Central admin center to link the Business Central environment to the Power Platform environment. Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
 
-Watch this YouTube video for summary of how to manage pay-as-you-go billing:
+> [!NOTE]
+> Partners that provide Azure cloud operations management (such as setting up and maintaining customers' subscriptions and deployed resources) may be eligible for partner earned credit (PEC). Learn more in [Partner earned credits](/partner-center/billing/partner-earned-credit).  
+
+Watch this YouTube video for a summary of how to manage pay-as-you-go billing:
 
 [![Watch the video](../developer/media/pay-as-you-go-video.png)](https://www.youtube.com/watch?v=9esVS6I4wrY)
 
 ## Manage capacity and usage
 
-You can view Copilot Credit capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Copilot Credits and capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
+You can view Copilot Credit capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Copilot Credits and capacity](/power-platform/admin/manage-copilot-studio-messages-capacity). Additionally, [telemetry](telemetry-overview.md) is emitted to the Application Insights resource set up for the [environment](telemetry-enable-application-insights.md#turn-on-telemetry-on-environments) for Copilot Credits consumed. Learn more about this telemetry signal in [Analyzing AI Consumption Trace Telemetry](telemetry-ai-consumption.md).
 
 Business Central regularly checks the available capacity (quota) of Copilot Credits. If your organization's quota is low or depleted, users receive in-app notifications about the status and necessary actions. It's important to take timely action on these notifications by reallocating existing capacity or purchasing more capacity.
 

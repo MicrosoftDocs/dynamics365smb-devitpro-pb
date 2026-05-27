@@ -2,7 +2,7 @@
 title: "Compiler Error AL0165"
 description: "Triggers cannot be called directly."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Triggers cannot be called directly.
+Triggers cannot be called directly. Triggers are automatically invoked by the system in response to events.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

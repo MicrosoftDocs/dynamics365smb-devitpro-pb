@@ -1,7 +1,7 @@
 ---
 author: jswymer
 ms.topic: include
-ms.date: 03/04/2025
+ms.date: 02/22/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -32,21 +32,3 @@ Set-NAVAddIn -ServerInstance $NewBcServerInstance -AddinName 'Microsoft.Dynamics
 Set-NAVAddIn -ServerInstance $NewBcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.WebPageViewer' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'WebPageViewer\Microsoft.Dynamics.Nav.Client.WebPageViewer.zip')
 Set-NAVAddIn -ServerInstance $NewBcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
-
-<!--
-This failed:
-Set-NAVAddIn -ServerInstance $NewBcServerInstance -AddinName 'Microsoft.Dynamics.Nav.Client.SocialListening' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $AddinsFolder 'SocialListening\Microsoft.Dynamics.Nav.Client.SocialListening.zip')
-
-Set-NAVAddIn : [31;1mSet-NAVAddIn: [0m
-[31;1m[36;1mLine |[0m
-[31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSet-NAVAddIn @cmdletArgs[0m;[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mThe Add-in does not exist. Identification fields and values: Add-in Name='Microsoft.Dynamics.Nav.Client.SocialListening',Public Key 
-Token='31bf3856ad364e35',Version=''[0m
-At line:1 char:1
-+ Set-NAVAddIn -ServerInstance $NewBcServerInstance -AddinName 'Microso ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidData: ([31;1mSet-NAVA...ersion=''[0m
-:String) [Set-NAVAddIn], InvalidOperationException
-    + FullyQualifiedErrorId : navId,Microsoft.Dynamics.Nav.Management.SetNAVAddIn
--->

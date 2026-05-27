@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0482"
 description: "The image {0} is not valid in this context."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The image {0} is not valid in this context.
+The image {0} is not valid in this context. Verify the image name is correct and supported for this control type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

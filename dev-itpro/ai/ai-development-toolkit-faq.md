@@ -8,7 +8,7 @@ ms.topic: faq
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 02/10/2026
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ---
 
@@ -165,7 +165,7 @@ Customer service chatbots, HR support agents, IT helpdesk automation.
 - Need **full control** over the implementation and logic
 - Require **tight integration** with Business Central objects and events
 - Must meet **specific performance** or **security** requirements
-- Building **commercial solutions** for AppSource
+- Building **commercial solutions** for Marketplace
 - Need **version control** and **ALM** (Application Lifecycle Management)
 
 **Example scenarios:**  

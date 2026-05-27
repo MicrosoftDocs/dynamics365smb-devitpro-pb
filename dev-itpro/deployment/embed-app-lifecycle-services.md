@@ -44,7 +44,7 @@ Before deploying the [!INCLUDE[embedapp](../developer/includes/embedapp.md)], co
 
 2. Upload your apps into the App Repository
 
-    Upload new versions of your own apps into the App Repository using the App Management API. Don't upload Microsoft apps or apps from other ISVs. The Microsoft team regularly uploads Microsoft apps and AppSource apps to this repository, so you don't have to. For more information, see [App Management API](../administration/appmanagement/app-management-api.md#upload-version).
+    Upload new versions of your own apps into the App Repository using the App Management API. Don't upload Microsoft apps or apps from other ISVs. The Microsoft team regularly uploads Microsoft apps and Marketplace apps to this repository, so you don't have to. For more information, see [App Management API](../administration/appmanagement/app-management-api.md#upload-version).
 
 ### Upload the deployment package
 

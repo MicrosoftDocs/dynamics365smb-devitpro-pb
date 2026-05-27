@@ -122,9 +122,9 @@ Before capturing a snapshot with a performance profile, you can choose between u
 Read more about how to use the AL profiler to troubleshoot performance here [AL Profiler Overview](../developer/devenv-al-profiler-overview.md).
 
 
-## Example - How to deal with a performance problem in a report from an AppSource extension
+## Example - How to deal with a performance problem in a report from a Marketplace extension
 
-This example illustrates how you can use the performance tuning process and telemetry to deal with a performance problem in a report from an AppSource extension.
+This example illustrates how you can use the performance tuning process and telemetry to deal with a performance problem in a report from a Marketplace extension.
 
 - Together with the tenant administrator/customer, you need to define "slow" and what the acceptable rendering time will be. 
 - Then, use telemetry to find data about time spent in the report: long running SQL queries (eventId RT0005) and report rendering time (eventId RT0006) are the main data sources for this. Telemetry for long running AL methods (eventId RT00180) might also be useful here. Now you have baseline data.

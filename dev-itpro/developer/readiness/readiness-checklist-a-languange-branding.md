@@ -29,7 +29,7 @@ Your app can be in any language; if not in English, a document with English tran
 |Supported languages:| Must be in English.|
 
 > [!NOTE]  
-> If you are targeting an international audience, we  recommend you use English on AppSource.
+> If you are targeting an international audience, we  recommend you use English on Marketplace.
 
 ## Branding requirements 
 
@@ -46,5 +46,5 @@ Make sure to make the right reference throughout your content:
 
 
 ## Microsoft images 
-- You can include the [AppSource badge](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide) in your marketing material. 
+- You can include the [Marketplace badge](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide) in your marketing material. 
 - If you want to use the Dynamics 365 icons, you can learn about do's and don'ts [here](/dynamics365/get-started/icons). 

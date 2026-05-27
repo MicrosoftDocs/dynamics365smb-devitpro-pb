@@ -2,7 +2,7 @@
 title: "Compiler Error AL0111"
 description: "Semicolon expected."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Semicolon expected.
+Semicolon expected. Add a semicolon (;) to terminate the statement.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

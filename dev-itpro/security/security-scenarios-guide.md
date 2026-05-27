@@ -114,7 +114,7 @@ Your code acquires tokens automatically using the managed identity—no secrets 
 
 **Context and problem:**  
 
-Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (AppSource apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reaches these services. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is an online (SaaS) solution where environments are regularly rebalanced and upgraded across application services with changing IP addresses. So you need a solution that works with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s dynamic infrastructure.
+Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (Marketplace apps or per-tenant extensions) calls external services (APIs, Azure Storage, databases). You want to ensure only legitimate traffic from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reaches these services. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is an online (SaaS) solution where environments are regularly rebalanced and upgraded across application services with changing IP addresses. So you need a solution that works with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s dynamic infrastructure.
 
 **Solution:**  
 Use Azure service tags and network access controls to create allow lists based on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]'s IP ranges.
@@ -181,7 +181,7 @@ Learn more in [Monitoring and Analyzing Telemetry](../administration/telemetry-o
 **Guidance:**
 
 1. Set up Microsoft Entra ID sign-in logging:
-   1. In [Microsoft Entra admin center](https://entra.microsodt.com), open the Sign-in Logs. Learn more in [View logs through the Microsoft Entra admin center](/entra/identity/monitoring-health/howto-access-activity-logs#view-logs-through-the-microsoft-entra-admin-center).
+   1. In [Microsoft Entra admin center](https://entra.microsoft.com), open the Sign-in Logs. Learn more in [View logs through the Microsoft Entra admin center](/entra/identity/monitoring-health/howto-access-activity-logs#view-logs-through-the-microsoft-entra-admin-center).
    1. Configure diagnostic settings to route logs to:
 
       - [Azure Monitor Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) (recommended for querying)
@@ -400,7 +400,7 @@ Learn more in [What is Azure Key Vault?](/azure/key-vault/general/overview) and 
 1. AL code pattern: Use AL [HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md) with certificate authentication.
 
    > [!NOTE]
-   > The following example is conceptual and shows the general pattern. For complete implementation details including OAuth token acquisition, certificate management, and error handling, see [Azure Key Vault REST API](/rest/api/keyvault/secrets/get-secret) and [HttpClient.AddCertificate Method](../developer/methods-auto/httpclient/httpclient-addcertificate-method.md).
+   > The following example is conceptual and shows the general pattern. For complete implementation details including OAuth token acquisition, certificate management, and error handling, see [Azure Key Vault REST API](/rest/api/keyvault/secrets/get-secret) and [HttpClient.AddCertificate Method](../developer/methods-auto/httpclient/httpclient-addcertificate-string-string-method.md).
 
    ```al
    local procedure GetApiKey(): Text

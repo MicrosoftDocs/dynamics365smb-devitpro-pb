@@ -2,7 +2,7 @@
 title: "Compiler Error AL0156"
 description: "'{0}' is not a valid field type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-'{0}' is not a valid field type.
+'{0}' is not a valid field type. Use basic types (Text, Integer, Decimal, etc.) or reference custom types (Record, Enum, etc.).
 
 
 ## Description

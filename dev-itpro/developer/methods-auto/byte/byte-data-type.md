@@ -2,7 +2,7 @@
 title: "Byte data type"
 description: "Stores a single, 8-bit character as a value in the range 0 to 255."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,7 +22,7 @@ The following methods are available on instances of the Byte data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[ToText()](byte-totext-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
+|[ToText()](byte-totext--method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 |[ToText([Boolean])](byte-totext-boolean-method.md)|Converts the value to a text. Equivalent to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 01/12/2026
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ---
 
@@ -119,6 +119,8 @@ unavailable to the external customer like the wholesale acquisition cost of the 
 Learn more in [Set up agent permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md).
 
 ## Testing and validation best practices
+
+It's highly recommended to define and complete your testing plan in a sandbox environment before deploying an agent to production. Because agents are non-deterministic, testing is the only reliable way to validate that they behave as intended across a range of scenarios.
 
 ### Systematic testing approach
 

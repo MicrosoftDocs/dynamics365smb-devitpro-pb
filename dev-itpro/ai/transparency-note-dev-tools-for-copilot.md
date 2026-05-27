@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.topic: faq
 ms.collection:
   - bap-ai-copilot 
-ms.date: 06/19/2025
+ms.date: 05/03/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -26,7 +26,7 @@ Microsoft’s Transparency Notes are part of a broader effort at Microsoft to pu
 
 Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and midsized organizations. Copilot in Business Central is the AI-powered assistant that helps boost creativity and reduce repetitive tasks across lines of business, such as finance, operations, and marketing.
 
-Customers purchase Business Central through a network of software partners, who also customize the system to their needs via mature development tools in Visual Studio Code. Adaptability is a core tenet of Business Central. Partners around the world build their business on this principle. They tailor the system to individual and changing customer needs, provide solutions in almost every industry and region, and sell add-ons at scale through Microsoft AppSource. Naturally, both partners and customers expect Copilot to be as adaptable as the rest of Business Central.
+Customers purchase Business Central through a network of software partners, who also customize the system to their needs via mature development tools in Visual Studio Code. Adaptability is a core tenet of Business Central. Partners around the world build their business on this principle. They tailor the system to individual and changing customer needs, provide solutions in almost every industry and region, and sell add-ons at scale through Microsoft Marketplace. Naturally, both partners and customers expect Copilot to be as adaptable as the rest of Business Central.
 
 Business Central's development platform includes:
 
@@ -161,7 +161,7 @@ The toolkit includes built-in safety mechanisms that prevent the undesirable gen
 - an AI feature that generates project plans for testing of weapons might not be able to generate complete plans.
 - an AI feature for a customer selling child psychology services might not be able to operate the feature. 
 
-Microsoft doesn't provide a mechanism for partners or customers to remove these specific safeguards or add topics to any inclusion list within Business Central at this time. The list of impacted topics are:
+Microsoft doesn't provide a mechanism for partners or customers to remove these specific safeguards or add topics to any inclusion list within Business Central at this time. The list of impacted topics is:
 
 - Topics covering offensive material that might hurt or impact all or specific demographics, minorities, or children.
 - Adult material and sexually explicit topics.

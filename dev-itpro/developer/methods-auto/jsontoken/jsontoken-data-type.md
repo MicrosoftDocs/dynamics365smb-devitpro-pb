@@ -2,7 +2,7 @@
 title: "JsonToken data type"
 description: "Is a container for any well-formed JSON data."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 03/11/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,6 +33,7 @@ The following methods are available on instances of the JsonToken data type.
 |[ReadFrom(Text)](jsontoken-readfrom-string-method.md)|Reads the JSON data from the string into a JsonToken variable.|
 |[ReadFrom(InStream)](jsontoken-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonToken variable.|
 |[SelectToken(Text, var JsonToken)](jsontoken-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
+|[SelectTokens(Text, var List of [JsonToken])](jsontoken-selecttokens-method.md)|Selects tokens based on a JPath expression and returns them in a new list.|
 |[WriteTo(var Text)](jsontoken-writeto-text-method.md)|Serializes and writes the JSON data of the JsonToken to a given Text object.|
 |[WriteTo(OutStream)](jsontoken-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonToken to a given OutStream object.|
 

@@ -24,11 +24,11 @@ With **Go to Definition**, you can step into the referenced code and set breakpo
 
 You can always use **Go to Definition** on [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] code. However, if you want to use it on other extensions, the extension package that is now referenced, when originally published, must have the `includeSourceInSymbols` property set to `true`. The `includeSourceInSymbols` property is one of the three options inside the `resourceExposurePolicy` property. An example is, that if A is referencing B you can only use the Go To Definition on types of B, if B, when it was published, had the `includeSourceInSymbols` flag set to `true`. Learn more in [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
-## Runtime 5.2 and Go to Definition
+## Go to Definition
 
-From runtime 5.2 and onwards, **Go to Definition** will resolve sources from the downloaded application dependency. You can navigate from within a symbol source file (.dal) to another symbol source file. For example, you can use **Go to Definition** from the `Customer` source DAL file in the Base App to the `Customer List` DAL source also defined in the Base App.
+**Go to Definition** resolves sources from the downloaded application dependency. You can navigate from within a symbol source file (.dal) to another symbol source file. For example, you can use **Go to Definition** from the `Customer` source DAL file in the Base App to the `Customer List` DAL source also defined in the Base App.
 
-The following conditions still apply:
+The following conditions apply:
 
 - **Go to Definition** is forward only. It's due to how Visual Studio Code handles preview documents (DAL files). There's no backward navigation support for preview files within Visual Studio Code. This means that if you navigate from your AL file to the `Customer` DAL source, and from there to the `Customer List` DAL source, and you issue a backward navigation (<kbd>Alt</kbd>+Left arrow), you'll get back to the AL file and not what you would have expected; the `Customer` DAL source.
 

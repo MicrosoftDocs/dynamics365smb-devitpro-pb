@@ -38,3 +38,5 @@
 |RT0039|Web service publishing| [Web service metadata error: The record with name '{entityName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0039) |
 |RT0052|Outgoing Web service requests  | [HTTP server certificate validation failed when calling endpoint: {endpoint}](../administration/telemetry-webservices-outgoing-certificate-validation-errors.md) |
 |RT0053| Incoming Web service requests | [Deprecated endpoint called: {endpoint}](../administration/telemetry-webservices-trace.md#deprecated-endpoint-called-endpoint) |
+|RT0054| MCP Server | [MCP Server tool called: '{toolName}'](../administration/telemetry-mcp-server-trace.md#rt0054) |
+|RT0055|AI Consumption|[AI consumption recorded](../administration/telemetry-ai-consumption.md)|
