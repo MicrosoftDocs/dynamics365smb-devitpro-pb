@@ -76,7 +76,7 @@ The estimated monthly cost is calculated as: `[2 + (5 × 0.5) + 5 + 5 + 2] x 100
 
 ### Payables Agent billing
 
-The Payables Agent connects to a shared mailbox and processes incoming emails and imports and extracts information from vendor invoices and processes those invoices with AI, presented to agent supervisors in a Purchase Document Draft. The following table shows how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
+The Payables Agent accepts PDF uploads and/or connects to a shared mailbox and processes incoming emails and imports and extracts information from vendor invoices and processes those invoices with AI, presented to agent supervisors in a Purchase Document Draft. The following table shows how the Business Central scenarios performed by the Payables agent are mapped to Copilot Studio events.
 
 | Feature | Copilot Studio event scenario | Copilot Credits |
 |----------|----------|----------|
@@ -101,6 +101,9 @@ The estimated monthly cost is calculated as: `[50 + (5 × 3)] x 100 = 6,500 Copi
 ### AI development toolkit (preview)
 
 Billing events for the AI development toolkit will be announced in a future update.
+
+## Forecast Copilot credit consumption
+The Agent usage estiamtor helps organizations forecast their monthly Copilot credits consumption. Lear more about the [Agent usage estimator](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-usage-estimator).
 
 ## Set up billing model
 
@@ -172,6 +175,7 @@ Business Central regularly checks the available capacity (quota) of Copilot Cred
 
 > [!IMPORTANT]
 > When the quota is depleted, the AI capability is unavailable until more capacity is added.
+
 
 ## Related information
 
