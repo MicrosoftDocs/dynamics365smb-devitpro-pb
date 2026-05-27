@@ -123,7 +123,7 @@ Message('It''s a sunny day.');
 
 > [!NOTE]
 > The backslash (`\`) for newlines is interpreted by the `Message`, `Error`, `Confirm`, and `Dialog.Open` methods. It's not a general-purpose escape in string assignments. For multiline text assignments, use the `@` prefix for multiline strings instead.
-> If you use an unrecognized escape sequence, you get compiler error [AL0630](../../developer/diagnostics/diagnostic-al630.md).
+> If you use an unrecognized escape sequence, you get compiler error [AL0630](../../diagnostics/diagnostic-al630.md).
 
 ## Related information
 
