@@ -98,7 +98,7 @@ Learn more in [Quickstart: Import a BACPAC file to a database in Azure SQL Datab
 
 > [!NOTE]
 > - If you're getting an error saying your file contains corrupted data when importing the bacpac file, make sure you're using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
-> - When importing the exported database using SQL Server Management Studio (SSMS), we recommend using latest version. Earlier versions might not support all scenarios.
+> - When importing the exported database using SQL Server Management Studio (SSMS), we recommend using latest version. Earlier versions might not support all scenarios. Learn how to update SSMS in [Update SQL Server Management Studio](/ssms/install/update).
 
 ## Restoring the exported data to Business Central online
 
