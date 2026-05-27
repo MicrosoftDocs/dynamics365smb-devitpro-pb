@@ -26,7 +26,7 @@ The following sections provide the supported upgrade paths to the different [!IN
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2026 release wave 1 (v28)
 
-[!INCLUDE[upgrade-path-v27](../developer/includes/upgrade-path-v28.md)]
+[!INCLUDE[upgrade-path-v28](../developer/includes/upgrade-path-v28.md)]
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 2 (v27)
 
