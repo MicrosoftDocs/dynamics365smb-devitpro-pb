@@ -1,7 +1,7 @@
 ---
 title: "Progress Windows, Message, Error, and Confirm Methods"
 description: "Using specialized methods in AL for Business Central to display messages and gather input from the user."
-ms.date: 12/20/2023
+ms.date: 05/27/2026
 ms.reviewer: jswymer
 ms.topic: how-to
 author: SusanneWindfeldPedersen
@@ -25,7 +25,7 @@ We recommend the following guidelines for writing messages for end users:
 
 - Write messages correctly according to the grammatical rules for your language.  
 
-- Don't use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [Open Method)](methods-auto/dialog/dialog-Open-Method.md). You must use backslashes for the message to be aligned correctly.  
+- Don't use backslashes to indicate line breaks in `Message`, `Error`, or `Confirm` calls for end-user messages. Line formatting is completed automatically and messages should stay concise. However, in [Dialog.Open](methods-auto/dialog/dialog-Open-Method.md), you must use backslashes (`\`) to align fields correctly in progress windows. Learn more about escape sequences in [Text data type](methods-auto/text/text-data-type.md#escape-sequences-in-text-literals).  
 
 - Use the [FieldCaption Method)](methods-auto/record/record-FieldCaption-Method.md) and [TableCaption Method)](methods-auto/record/record-TableCaption-Method.md) whenever possible to return names of fields and tables as strings. It's so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [Open Method)](methods-auto/dialog/dialog-Open-Method.md) where you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FieldCaption method, then type the field name without any single or double quotation marks.  
 
