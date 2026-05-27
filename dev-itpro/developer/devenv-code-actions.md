@@ -114,13 +114,13 @@ Adds a `using` directive for a namespace that's referenced in the code but not y
 
 ### Convert page control tooltips
 
-Moves tooltips from page controls to the underlying table fields, or removes tooltips from page controls when the table field already has the same tooltip defined. This action helps consolidate tooltip definitions at the table field level, making them reusable across multiple pages.
+Moves tooltips from page controls down to the underlying table fields. Defining tooltips at the table field level makes them reusable across all pages that display the same field, so you don't have to maintain duplicate tooltip text on each page.
 
 The action uses the following logic:
 
-- If the table field doesn't have a tooltip, the tooltip from the page control is moved to the table field.
-- If the table field already has the same tooltip, the duplicate on the page control is removed.
-- If both the table field and the page control have different tooltips, the conflict is flagged for manual resolution.
+- If the table field doesn't have a tooltip yet, the tooltip is moved from the page control to the table field, and the page control tooltip is removed.
+- If the table field already has the same tooltip as the page control, the redundant page control tooltip is removed.
+- If the table field already has a different tooltip than the page control, the conflict is flagged for manual resolution.
 
 Learn more in [Tooltip property](properties/devenv-tooltip-property.md).
 
