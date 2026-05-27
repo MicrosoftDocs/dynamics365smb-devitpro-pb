@@ -17,6 +17,9 @@ This article explains how to set up a Business Central environment for billing C
 
 Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per use. These capabilities use Copilot Credits for AI interactions and tasks, like retrieving information and responding to prompts. *Copilot Credits* are the billing units that measure usage. The number of Copilot Credits consumed by an agent depends on the design of the agent, how often customers interact with it, and the features they use. Learn more about Copilot Credits in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
 
+### Forecast Copilot credit consumption
+The Agent usage estiamtor helps organizations forecast their monthly Copilot credits consumption. Lear more about the [Agent usage estimator](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-usage-estimator).
+
 <!--Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing). [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130)-->
 
 ### Billable agent capabilities
@@ -101,9 +104,6 @@ The estimated monthly cost is calculated as: `[50 + (5 × 3)] x 100 = 6,500 Copi
 ### AI development toolkit (preview)
 
 Billing events for the AI development toolkit will be announced in a future update.
-
-## Forecast Copilot credit consumption
-The Agent usage estiamtor helps organizations forecast their monthly Copilot credits consumption. Lear more about the [Agent usage estimator](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-usage-estimator).
 
 ## Set up billing model
 
