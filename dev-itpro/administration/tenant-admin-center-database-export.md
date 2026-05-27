@@ -97,7 +97,8 @@ To export data when moving the customer's [!INCLUDE [prod_short](../developer/in
 Learn more in [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 
 > [!NOTE]
-> If you're getting an error saying your file contains corrupted data when importing the bacpac file, make sure you're using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
+> - If you're getting an error saying your file contains corrupted data when importing the bacpac file, make sure you're using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
+> - When importing the exported database using SQL Server Management Studio (SSMS), we recommend using version 21 or later. Earlier versions might not support all scenarios.
 
 ## Restoring the exported data to Business Central online
 
