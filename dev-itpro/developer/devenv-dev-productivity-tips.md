@@ -64,7 +64,12 @@ Hold <kbd>Alt</kbd> and click in multiple places to add cursors, allowing you to
 
 Check the **Problems** panel (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>) to see all warnings and errors in your workspace at a glance.
 
+## AI agent workflows
+
+For developers adopting AI agents to navigate, refactor, or build AL code, ALTool provides a headless Language Server Protocol (LSP) server that gives agents the same semantic code intelligence available in Visual Studio Code—go-to-definition, find-references, completions, and rename across multi-project workspaces. Learn more in [AL LSP](devenv-al-tool.md#al-lsp).
+
 ## Related information
 
 [JSON files](devenv-json-files.md)  
 [Launch JSON file](devenv-json-launch-file.md)  
+[AI agent tools for AL development](al-agent-tools/al-agent-tools-overview.md)  

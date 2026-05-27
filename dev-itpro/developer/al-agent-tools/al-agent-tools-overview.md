@@ -19,14 +19,15 @@ AI agent tools enable GitHub Copilot and any Model Context Protocol (MCP)-compat
 > [!TIP]
 > These tools are specific to AI agents in Visual Studio Code and are different from the [ALTool command-line tool](../devenv-al-tool.md), which is used for compiling and packaging AL extensions in CI/CD pipelines.
 
-These tools are designed for two usage surfaces that share a consistent set of tool names and behaviors:
+These tools are designed for three usage surfaces:
 
 | Surface | Description | Best for |
 |---------|-------------|----------|
 | **Visual Studio Code Language Model Tools** | Tools registered with the Visual Studio Code Language Model Tools API, available to GitHub Copilot in Agent mode and any Copilot-compatible extension | Developers working interactively in Visual Studio Code |
 | **AL MCP Server** | A standalone Model Context Protocol server (`altool launchmcpserver`) that exposes AL tools over STDIO or HTTP | Headless environments, CI/CD pipelines, AI agents that run outside Visual Studio Code |
+| **AL LSP Server** | A Language Server Protocol server (`altool launchlspserver`) that provides semantic code intelligence over JSON-RPC on stdio | Agents and editors that need continuous code navigation—go-to-definition, find-references, completions, rename, and type hierarchy across multi-project workspaces |
 
-Because both surfaces use the same tool names, an agent trained on one surface can work with the other with no retraining.
+The MCP and Visual Studio Code tools share a consistent set of tool names, so an agent trained on one surface can work with the other with no retraining. The AL LSP Server complements them by providing deep semantic understanding of the codebase rather than discrete task execution. Learn more in [AL LSP](../devenv-al-tool.md#al-lsp).
 
 ## Available tools
 
@@ -118,6 +119,14 @@ When the AL MCP Server needs to connect to a Business Central cloud environment,
 Authentication tokens are never passed as tool parameters or returned in tool responses. When a tool requires access to a Business Central cloud environment, it triggers a browser-based Microsoft Entra ID sign-in flow. The resulting tokens are stored by MSAL in a secure local cache and reused transparently.
 
 To force re-authentication, set `noCache: true` on any tool that supports it, or call `al_auth_logout` first.
+
+## AL LSP for semantic code intelligence
+
+In addition to the task-oriented tools listed above, ALTool can launch a full Language Server Protocol (LSP) server via the `launchlspserver` command. While the MCP tools perform discrete actions (build, publish, search), the LSP server provides continuous semantic code intelligence—hover, go-to-definition, find-references, completions, rename, and type hierarchy—over JSON-RPC on stdio.
+
+The AL LSP server is the best choice when an agent needs to navigate and understand AL code structurally rather than perform predefined tasks. It correctly resolves cross-project relationships such as `internalsVisibleTo` and `propagateDependencies`, making it more reliable than text-based search for symbol resolution in multi-project workspaces.
+
+Learn more in [AL LSP](../devenv-al-tool.md#al-lsp).
 
 ## Related information
 
