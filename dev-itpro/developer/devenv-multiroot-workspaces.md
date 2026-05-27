@@ -43,3 +43,4 @@ The `al.packageCachePath` setting allows you to specify the path to a folder tha
 [Development in AL](devenv-dev-overview.md)  
 [Best Practices for AL](../compliance/apptest-bestpracticesforalcode.md)  
 [Working with Multiple Projects and Project References](devenv-work-workspace-projects-references.md)  
+[AL LSP for cross-project semantic navigation](devenv-al-tool.md#al-lsp)  
