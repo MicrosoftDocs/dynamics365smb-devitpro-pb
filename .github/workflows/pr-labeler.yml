@@ -1,7 +1,7 @@
 name: "PR Labeler"
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize]
 
 jobs:
@@ -14,16 +14,21 @@ jobs:
       pull-requests: write
 
     steps:
-      - name: Checkout code
+      - name: Checkout PR head
         uses: actions/checkout@v4
         with:
+          # Fetch the PR head so we can diff against the base
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
+
+      - name: Fetch base branch
+        run: git fetch origin ${{ github.event.pull_request.base.ref }}
 
       - name: Get changed files
         id: changed
         run: |
           # Get the list of changed files in the PR
-          git diff --name-only origin/${{ github.base_ref }}...HEAD > changed_files.txt
+          git diff --name-only origin/${{ github.event.pull_request.base.ref }}...${{ github.event.pull_request.head.sha }} > changed_files.txt
           echo "Changed files:"
           cat changed_files.txt
 
@@ -74,7 +79,7 @@ jobs:
 
             // Get the full diff
             const diff = execSync(
-              `git diff origin/${process.env.BASE_REF}...HEAD`,
+              `git diff origin/${process.env.BASE_REF}...${process.env.HEAD_SHA}`,
               { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 }
             );
 
@@ -251,4 +256,5 @@ jobs:
               }
             }
         env:
-          BASE_REF: ${{ github.base_ref }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
