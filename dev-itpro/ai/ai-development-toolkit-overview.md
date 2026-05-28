@@ -137,4 +137,6 @@ Ready to try design an agent? The process involves enabling the feature, creatin
 [Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
 [Best practices (preview)](ai-development-toolkit-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
+[Evaluate agents with Evaluation](../developer/ai-test-copilot-testtool.md)  
+[Write agent tests](../developer/ai-test-copilot-agent-tests.md)  
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)

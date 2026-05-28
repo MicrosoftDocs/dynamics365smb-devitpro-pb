@@ -518,9 +518,9 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 ## Next Steps
 
 If you're performing a technical upgrade from version 14.0, return to the technical upgrade step where you left off.
-- [Technical Upgrade to to version 20.0](upgrade-technical-upgrade-v14-v20.md#Preparedb)
-- [Technical Upgrade to to version 19.0](upgrade-technical-upgrade-v14-v19.md#Preparedb)
-- [Technical Upgrade to to version 18.0](upgrade-technical-upgrade-v14-v18.md#Preparedb)
+- [Technical Upgrade to version 20.0](upgrade-technical-upgrade-v14-v20.md#Preparedb)
+- [Technical Upgrade to version 19.0](upgrade-technical-upgrade-v14-v19.md#Preparedb)
+- [Technical Upgrade to version 18.0](upgrade-technical-upgrade-v14-v18.md#Preparedb)
 
 
 

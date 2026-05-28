@@ -44,7 +44,8 @@ al help
 |--------------------------------|-------------------------------------------------------|
 | `compile`                      | Compile a package using `alc.exe`.  |
 | `workspace`                    | Workspace-related commands.  |
-| `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server. Learn more in [ALMCP](devenv-al-tool.md#almcp)  |
+| `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server. Learn more in [ALMCP](devenv-al-tool.md#almcp).  |
+| `launchlspserver`              | Launches an AL Language Server Protocol (LSP) server for autonomous AI agents and editors. Learn more in [AL LSP](devenv-al-tool.md#al-lsp).  |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |

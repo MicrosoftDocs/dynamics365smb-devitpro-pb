@@ -40,7 +40,7 @@ You can use this method to set the record to display when the user opens the pag
   
 ## Example  
 
-The following example retrieves the record that has a primary key value of ‘30000’ from the Customer table. If the record is found, it is stored in the MyRecord variable. The **SetRecord** method uses the retrieved record as the current record and sets record for MyPage, which is a Customer Card page. When the code unit is run, the record is displayed on the MyPage page. If the record is not found, a message box displays a message that indicates that the record was not found. 
+The following example retrieves the record that has a primary key value of ‘30000’ from the Customer table. If the record is found, it is stored in the MyRecord variable. The **SetRecord** method uses the retrieved record as the current record and sets record for MyPage, which is a Customer Card page. When the codeunit is run, the record is displayed on the MyPage page. If the record is not found, a message box displays a message that indicates that the record was not found. 
 
 ```al
  var

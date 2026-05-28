@@ -2,7 +2,7 @@
 title: "Report.RunRequestPage(Integer [, Text]) Method"
 description: "Runs the request page for a report without running the report."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 05/04/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -99,7 +99,7 @@ Create a codeunit and add the following code to the *OnRun* trigger of the codeu
 
 ```al
 var
-    ReportParameters: Record "Report Parameters";
+    ReportParameters: Record ReportParameters;
     XmlParameters: Text;
     OStream: OutStream;
     IStream: InStream;

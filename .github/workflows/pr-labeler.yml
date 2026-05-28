@@ -136,10 +136,14 @@ jobs:
                 // Match DO_NOT_EDIT blocks using the actual closing marker format.
                 // AL reference uses: [//]: # (IMPORTANT: END>DO_NOT_EDIT)
                 // API reference uses: <!-- END>DO_NOT_EDIT -->
+                // The previous pattern matched prematurely on the instructional comment
+                // "between here and the END>DO_NOT_EDIT" — fixed by requiring the
+                // closing marker prefix (IMPORTANT: or <!--).
                 const doNotEditPattern = /START>DO_NOT_EDIT[\s\S]*?(?:IMPORTANT: END>DO_NOT_EDIT|<!-- END>DO_NOT_EDIT)/g;
                 let match;
                 while ((match = doNotEditPattern.exec(content)) !== null) {
                   const blockContent = match[0];
+                  // Check both added and removed lines against the block
                   for (const changed of addedLines.concat(removedLines)) {
                     if (changed.trim().length > 0 && blockContent.includes(changed.trim())) {
                       hasDoNotEditChanges = true;
@@ -212,7 +216,7 @@ jobs:
             } else {
               console.log('No labels to apply.');
             }
-
+ 
             // --- Post a comment if auto-generated content was edited (de-duplicated) ---
             if (hasDoNotEditChanges) {
               // Check if we already posted this warning on this PR

@@ -88,6 +88,19 @@ landingContent:
       - text: Convert an agent created in the UI to code
         url: ai-development-toolkit-export-import.md
 # Card
+  - title: Evaluate and test agents
+    linkLists:
+    - linkListType: how-to-guide
+      links:
+      - text: Evaluation overview
+        url: ../developer/ai-test-copilot-testtool.md
+      - text: Write agent tests
+        url: ../developer/ai-test-copilot-agent-tests.md
+      - text: Create datasets for evaluation
+        url: ../developer/ai-test-copilot-datasets.md
+      - text: Test the Copilot capability in AL
+        url: ../developer/ai-test-copilot.md
+# Card
   - title: Best practices
     linkLists:
     - linkListType: overview
