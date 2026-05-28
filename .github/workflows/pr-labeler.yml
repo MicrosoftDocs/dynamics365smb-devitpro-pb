@@ -216,5 +216,39 @@ jobs:
             } else {
               console.log('No labels to apply.');
             }
+
+            // --- Post a comment if auto-generated content was edited (de-duplicated) ---
+            if (hasDoNotEditChanges) {
+              // Check if we already posted this warning on this PR
+              const comments = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+              });
+
+              const marker = '<!-- auto-generated-edit-warning -->';
+              const alreadyPosted = comments.data.some(c => c.body.includes(marker));
+
+              if (!alreadyPosted) {
+                const body = marker + '\n' +
+                  `⚠️ **Auto-generated content edited**\n\n` +
+                  `This PR modifies content inside \`DO_NOT_EDIT\` markers. ` +
+                  `These sections are regenerated from source and your changes ` +
+                  `will be overwritten on the next refresh.\n\n` +
+                  `**What to do:**\n` +
+                  `- If you're fixing a bug in auto-generated content (syntax, description, parameters), ` +
+                  `the fix needs to go in the source \`.xml\` files in the ModernDev repo instead.\n` +
+                  `- If you're adding remarks, examples, or related information, move your content ` +
+                  `**below** the \`END>DO_NOT_EDIT\` marker where it will be preserved.\n\n` +
+                  `See the contribution guide for details on which sections are safe to edit.`;
+
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  body: body,
+                });
+              }
+            }
         env:
           BASE_REF: ${{ github.base_ref }}
