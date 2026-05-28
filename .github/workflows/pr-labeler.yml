@@ -216,7 +216,7 @@ jobs:
             } else {
               console.log('No labels to apply.');
             }
- 
+
             // --- Post a comment if auto-generated content was edited (de-duplicated) ---
             if (hasDoNotEditChanges) {
               // Check if we already posted this warning on this PR
