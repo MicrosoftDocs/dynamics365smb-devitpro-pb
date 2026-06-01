@@ -2,7 +2,7 @@
 title: "Text data type"
 description: "Denotes a text string."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 05/27/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -97,6 +97,33 @@ end;
 
 > [!NOTE]
 > Any added white space, such as line indentation, becomes part of the string, and is therefore not recommended.
+
+### Escape sequences in text literals
+
+AL text literals support the following escape sequences:
+
+| Sequence | Result |
+|----------|--------|
+| `\` | Starts a new line (line break). Used in `Message`, `Error`, `Confirm`, and `Dialog.Open` methods. |
+| `\\` | Displays a literal backslash character. |
+| `''` | Includes a single quote inside a single-quoted text literal. |
+
+The following example shows how to use escape sequences:
+
+```AL
+// Newline: displays on two lines
+Message('First line\Second line');
+
+// Literal backslash
+Message('The file is in C:\\Temp');
+
+// Single quote inside text
+Message('It''s a sunny day.');
+```
+
+> [!NOTE]
+> The backslash (`\`) for newlines is interpreted by the `Message`, `Error`, `Confirm`, and `Dialog.Open` methods. It's not a general-purpose escape in string assignments. For multiline text assignments, use the `@` prefix for multiline strings instead.
+> If you use an unrecognized escape sequence, you get compiler error [AL0630](../../diagnostics/diagnostic-al630.md).
 
 ## Related information
 
