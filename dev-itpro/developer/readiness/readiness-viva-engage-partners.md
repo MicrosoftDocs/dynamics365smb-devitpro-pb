@@ -28,15 +28,15 @@ Viva Engage replaces the former Dynamics 365 [!INCLUDE [prod_short](../includes/
 
 The [!INCLUDE [prod_short](../includes/prod_short.md)] partner community within Viva Engage is divided into specialized groups so partners can join the conversations most relevant to their role and areas of expertise. You will be added to the following Viva Engage Community groups for [!INCLUDE [prod_short](../includes/prod_short.md)] partners:  
 
-Announcements
-Business Central Development
-Business Central Cloud Migration
-Business Central Governance and Administration
-Business Central Functionality (application)
-Business Central AI, Copilot and Agents
-Business Central Integrations
-Business Central Localizations
-Business Central Test Automation
+- Announcements  
+- Business Central Development  
+- Business Central Cloud Migration  
+- Business Central Governance and Administration  
+- Business Central Functionality (application)  
+- Business Central AI, Copilot and Agents  
+- Business Central Integrations  
+- Business Central Localizations  
+- Business Central Test Automation  
  
 Once added, if there are groups you don't want to continue to be member of, you can easily remove yourself.
 
