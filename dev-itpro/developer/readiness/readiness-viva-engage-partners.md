@@ -26,8 +26,8 @@ Viva Engage replaces the former Dynamics 365 [!INCLUDE [prod_short](../includes/
 
 ## Business Central Viva Engage group structure
 
-The [!INCLUDE [prod_short](../includes/prod_short.md)] partner community within Viva Engage is divided into specialized groups so partners can join the conversations most relevant to their role and areas of expertise. You will be added to the following Viva Engage Community groups for [!INCLUDE [prod_short](../includes/prod_short.md)] partners: 
- 
+The [!INCLUDE [prod_short](../includes/prod_short.md)] partner community within Viva Engage is divided into specialized groups so partners can join the conversations most relevant to their role and areas of expertise. You will be added to the following Viva Engage Community groups for [!INCLUDE [prod_short](../includes/prod_short.md)] partners:  
+
 Announcements
 Business Central Development
 Business Central Cloud Migration
