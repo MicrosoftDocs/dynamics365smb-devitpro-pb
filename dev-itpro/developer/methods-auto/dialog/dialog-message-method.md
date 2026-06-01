@@ -2,7 +2,7 @@
 title: "Dialog.Message(Text [, Any,...]) Method"
 description: "Displays a text string in a message window."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 05/27/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ When a message statement in the AL code is executed, the message is not immediat
   
 The window is automatically sized to hold the longest line of text and the total number of lines.  
   
-For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [StartSession Method \(Sessions\)](../../methods-auto/session/session-startsession-integer-integer-string-table-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
+For sessions that are started by the [StartSession Method (Sessions)](../../methods-auto/session/session-startsession-integer-integer-string-table-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
   
 ## Programming Guidelines  
 
