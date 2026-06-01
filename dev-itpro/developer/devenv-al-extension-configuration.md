@@ -67,3 +67,4 @@ The following table describes the user and workspace settings for the AL Languag
 [Debugging in AL](devenv-debugging.md)  
 [JSON files](devenv-json-files.md)  
 [Working with multiple projects and project references](devenv-work-workspace-projects-references.md)  
+[AL LSP for AI agents and editors](devenv-al-tool.md#al-lsp)  

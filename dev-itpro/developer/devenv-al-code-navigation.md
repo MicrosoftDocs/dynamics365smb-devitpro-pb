@@ -42,3 +42,4 @@ Learn more about code navigation in Visual Studio Code in [Code navigation](http
 [JSON files](devenv-json-files.md)  
 [Debugging in AL](devenv-debugging.md)  
 [AL code actions](devenv-code-actions.md)  
+[AL LSP for AI agents and editors](devenv-al-tool.md#al-lsp)  
