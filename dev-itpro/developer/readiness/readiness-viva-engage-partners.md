@@ -33,7 +33,7 @@ The [!INCLUDE [prod_short](../includes/prod_short.md)] partner community within 
 - Business Central Cloud Migration  
 - Business Central Governance and Administration  
 - Business Central Functionality (application)  
-- Business Central AI, Copilot and Agents  
+- Business Central AI, Copilot, and Agents  
 - Business Central Integrations  
 - Business Central Localizations  
 - Business Central Test Automation  
