@@ -22,7 +22,7 @@ The threshold of when a SQL query is considered to be long running is controlled
 
 You can also change the setting by [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. The cmdlet includes the `-ApplyTo Memory`parameter that enables you to change the setting without doing a server restart. For example, to change the threshold dynamically to 2000 ms, run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
 
-```
+```powershell
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
 ```
 
