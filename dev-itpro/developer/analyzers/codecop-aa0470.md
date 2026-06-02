@@ -20,7 +20,7 @@ Provide an explanation that describes the content of each of the placeholders.
 
 ## Reason for the rule
 
-Documentation of placeholders is required in order to enable translators to properly know the construct of the label to be translated.
+Documentation of placeholders is required to enable translators to properly know the construct of the label to be translated.
 
 ## Bad code example
 ```AL
