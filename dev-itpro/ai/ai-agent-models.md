@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/18/2026
+ms.date: 06/02/2026
 ms.update-cycle: 180-days
 ---
 
@@ -31,6 +31,24 @@ You can view and manage AI models in two ways:
   For agents created from the agent design experience, the agent card and setup pages show the current model and allow you to change it. A dedicated list page shows all available models. For coded agents, the model in use isn't visible in the UI.
 - **Agents coded in AL**  
   APIs allow you to list available models and set the model on an agent or on individual tasks programmatically.
+
+## Select a model for a designed agent
+
+To change the AI model for an agent created in the design experience:
+
+1. In [!INCLUDE [prod_short](../includes/prod_short.md)], go to the **Agents** page.
+2. Select the agent you want to configure.
+3. On the agent card, find the **Agent model** section.
+4. In the **Model** field, select a model from the list, or choose **Auto** to let the system select the default model.
+
+:::image type="content" source="media/ai-agent-model-selection.png" alt-text="Agent card showing the Agent model section with the Model field set to Auto.":::
+
+The **Agent Models** list page shows all models available in the environment. Each entry displays the model name, its availability status, and its retirement date (if scheduled). Use this page to understand which models are currently available before making a selection.
+
+:::image type="content" source="media/ai-agent-models-list.png" alt-text="Agent Models list page showing available models with their status and retirement dates.":::
+
+> [!TIP]
+> If you select **Auto**, the agent uses whatever model Microsoft designates as the current default. This means the model can change over time without manual intervention. If you need predictable behavior, pin your agent to a specific model version.
 
 ## Model resolution
 
