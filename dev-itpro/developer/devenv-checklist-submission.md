@@ -196,7 +196,7 @@ For Marketplace extensions, it's now required to use the `application` property 
 
 <!-- ### How to specify a maximum release for your extension?
 
-In order to specify the maximum release for your extension, you must include a file named `submissionManifest.json` along with your libraries in Partner Center. This submission manifest allows you to specify the release for which your extension should stop being validated.
+To specify the maximum release for your extension, you must include a file named `submissionManifest.json` along with your libraries in Partner Center. This submission manifest allows you to specify the release for which your extension should stop being validated.
 
 For instance, the following submission manifest indicates that the extension will be validated for all releases versions from the minimum release version until 18.0 excluded. If the minimum release for the submission is 17.3, this means that this extension will be validated for 17.3, 17.4, and 17.5.
 

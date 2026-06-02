@@ -23,7 +23,7 @@ Preview versions can be installed on Sandbox environments running on [!INCLUDE[p
 
 ## How can I install preview versions for selected customers?
 
-Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. In order to trigger the install, customers must receive and use the preview app install URL:
+Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. To trigger the install, customers must receive and use the preview app install URL:
 
 `https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` 
 
