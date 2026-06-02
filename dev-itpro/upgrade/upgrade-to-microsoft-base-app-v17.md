@@ -140,7 +140,7 @@ The only file in the extension project that is required is an app.json. You can 
 4.  Build and compile the extension package. To build the extension package, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 > [!TIP]
-> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 14**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
+> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 14**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not include upgrade code.
 
 ## Task 3: Create table migration extension
 

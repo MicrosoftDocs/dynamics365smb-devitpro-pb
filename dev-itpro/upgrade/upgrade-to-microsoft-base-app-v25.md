@@ -171,7 +171,7 @@ The only file in the extension project that's required is an app.json. You can c
 4. Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
 
 > [!TIP]
-> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 17**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
+> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 17**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not include upgrade code.
 
 ## Task 5: Create table migration extension
 
