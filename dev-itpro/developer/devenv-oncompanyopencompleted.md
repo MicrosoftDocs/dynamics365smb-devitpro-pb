@@ -20,7 +20,7 @@ The base application subscribes to a platform-based event, `OnCompanyOpenComplet
 
 The `OnAfterLogin` and `OnCompanyOpenCompleted` events are both designed to replace the `OnCompanyOpen` event, which is obsolete and will eventually be removed. The application event subscribes to the platform event, so they are both raised during sign-in when [!INCLUDE [prod_short](includes/prod_short.md)] tries to open the relevant company.
 
-With the now obsolete `OnCompanyOpen` event, a failure in any event subscriber will stop the sign-in process. This behavior can be problematic for a couple reasons. There may be several subscribers from various extensions, and failures don't necessarily justify preventing the user from signing in. With the `OnAfterLogin` event, and it's sibling platform-based event, the sign-in process continues even though an event subscriber fails.
+With the now obsolete `OnCompanyOpen` event, a failure in any event subscriber will stop the sign-in process. This behavior can be problematic for a couple of reasons. There may be several subscribers from various extensions, and failures don't necessarily justify preventing the user from signing in. With the `OnAfterLogin` event, and it's sibling platform-based event, the sign-in process continues even though an event subscriber fails.
 
 ## Move to the OnAfterLogin event
 

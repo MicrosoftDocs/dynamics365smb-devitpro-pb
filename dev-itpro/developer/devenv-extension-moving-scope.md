@@ -122,7 +122,7 @@ You can find the full list of requirements for PTE in the documentation for the 
 
 - Marketplace apps and PTEs are using different ID ranges. You must then change the ID of all the objects in your extension. For more information, see [Object Ranges](devenv-object-ranges.md).
 
-- In order to avoid potential name conflicts if the Marketplace app and the PTE are installed side-by-side, it's recommend changing the name of all the objects in your extension.
+- To avoid potential name conflicts if the Marketplace app and the PTE are installed side-by-side, it's recommend changing the name of all the objects in your extension.
 
 - You can find the full list of requirements for PTE in the documentation for the [PerTenantExtensionCop Analyzer](analyzers/pertenantextensioncop.md).
 

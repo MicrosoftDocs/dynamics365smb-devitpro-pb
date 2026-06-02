@@ -32,7 +32,7 @@ You can have multiple setups with the same combination of method, type, and prod
 
 By default, all sales lines use the Business Central (Version 15.0) implementation to calculate prices, unless the second line has a detailed setup that defines exceptions. 
 
-The Price Calculation method on the document line searches for a setup that has a matching combination of the method, the price type, and product type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an product (item, resource, and so on) on the document line. If a matching setup is found its implementation is used to calculate a price. If there is no matching setup exception, we use the default implementation. 
+The Price Calculation method on the document line searches for a setup that has a matching combination of the method, the price type, and product type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and a product (item, resource, and so on) on the document line. If a matching setup is found its implementation is used to calculate a price. If there is no matching setup exception, we use the default implementation. 
 
 For example, let's say we have a line on a sales order for Customer 20000 contains item 1000. The default implementation for the sale of any asset is Business Central (Version 15.0), but the Business Central (Version 16.0) implementation contains a detailed setup line for Item 1000. That means that the Business Central (Version 16.0) implementation will calculate the price. 
 
@@ -257,7 +257,7 @@ The Price Source Group interface defines methods for a generic price source grou
 * Vendor (21)
 * Job (31)
 
-This enum is the subset of the Price Source Type enum. Both enums implement the Price Source Group interface. The interface helps to link the Price Source Type enum with the Sale Price Source Type, Purchase Price Source Type, and Job Price Source Type enums.
+This enum is the subset of the Price Source Type enum. Both enums implement the Price Source Group interface. The interface helps link the Price Source Type enum with the Sale Price Source Type, Purchase Price Source Type, and Job Price Source Type enums.
 
 :::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Diagram showing a price sources group.":::
 
@@ -470,7 +470,7 @@ The **Price Asset Type** enum implements the **Price Asset** interface. Add a **
     - FillFromBuffer(),
     - FillAdditionalFields()
 ```
-```
+```al
 codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
 {
     var

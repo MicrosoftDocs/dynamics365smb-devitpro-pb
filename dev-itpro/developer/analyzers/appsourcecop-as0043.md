@@ -25,7 +25,7 @@ It's not allowed to rename or remove the clustered key in a table. For more info
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, you must rename the clustered key or add it back so that it matches its definition in your baseline extension.
+To fix this diagnostic, you must rename the clustered key or add it back so that it matches its definition in your baseline extension.
 
 ## Code examples triggering the rule
 

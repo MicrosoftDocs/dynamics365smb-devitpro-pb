@@ -22,7 +22,7 @@ The threshold of when a SQL query is considered to be long running is controlled
 
 You can also change the setting by [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. The cmdlet includes the `-ApplyTo Memory`parameter that enables you to change the setting without doing a server restart. For example, to change the threshold dynamically to 2000 ms, run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
 
-```
+```powershell
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
 ```
 
@@ -92,7 +92,7 @@ The following tables explains the columns included in long running query events 
 
 The following shows an example of the CustomDimensions exported in CSV format.
  
-```
+```json
 {"Long running log threshold (ms)":"65","Telemetry schema version":"0.1","Execution time (ms)":"99","Component":"Navision_NAVPlatform - 15.0.35274.0","Environment type":"Production","SQL Statement":"SELECT \"2161\".\"timestamp\",\"2161\".\"User\",\"2161\".\"Default Execute Time\",\"2161\".\"Current Job Queue Entry\",\"2161\".\"$systemId\" FROM \"SQLDATABASE\".dbo.\"CURRENTCOMPANY$Calendar Event User Config_\" \"2161\"  WITH(UPDLOCK)  WHERE (\"2161\".\"User\"=@0) OPTION(OPTIMIZE FOR UNKNOWN)","Client Type":"Background","AL Stack Trace":"AppObjectType: CodeUnit\r\n  AppObjectId: 2160\r\n  AL CallStack: \"Calendar Event Mangement\"(CodeUnit 2160).GetCalendarEventUserConfiguration line 2\r\n\"Calendar Event Management\"(CodeUnit 2160).FindJobQueue line 1\r\n\"Calendar Event Execution\"(CodeUnit 2161).RunCalendarEvents line 20\r\n\"Calendar Event Execution\"(CodeUnit 2161).OnRun(Trigger) line 1\r\n\"Job Queue Start Codeunit\"(CodeUnit 449).OnRun(Trigger) line 6\r\n\"Job Queue Dispatcher\"(CodeUnit 448).HandleRequest line 18\r\n\"Job Queue Dispatcher\"(CodeUnit 448).OnRun(Trigger) line 12","AL Object Name":"Calendar Event Mangement","AL Object type":"CodeUnit","Company Name":"CRONUS International Ltd.","AL Object ID":"2160"}
 ```
 

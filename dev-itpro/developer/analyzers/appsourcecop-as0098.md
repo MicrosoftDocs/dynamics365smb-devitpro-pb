@@ -18,7 +18,7 @@ An affix is needed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-In order to avoid name clashes for objects added by your extension and objects added by other extensions, an affix must be prepended or appended to the name of all new application objects, extension objects, and fields. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
+To avoid name clashes for objects added by your extension and objects added by other extensions, an affix must be prepended or appended to the name of all new application objects, extension objects, and fields. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
 
 > [!NOTE]  
 > This rule mimics the behavior of [AS0011](appsourcecop-as0011.md) for a limited set of objects members for which AS0011 wasn't enforced when they were introduced in AL. Having them reported as a separate rule allows more granularity, especially in regard to AL code not respecting the use of affixes prior to the implementation of this rule.

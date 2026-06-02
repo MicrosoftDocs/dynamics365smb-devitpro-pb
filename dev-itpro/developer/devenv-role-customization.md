@@ -60,7 +60,7 @@ However, you can export user-defined profiles and page customizations from the c
 
 Profiles that are created in the client are indicated as **\(user-created\)**. Each user-created profile is exported to a separate .al file that contains the `profile` object that defines the profile and the page customizations it uses. For example, you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**, and you customized the Business Manager Role Center itself, plus the **Customer** list page. The exported zip file would contain file called **PROFILE.MyProfile.al** that includes the following code:
 
-```
+```al
 profile MyProfile
 {
   CaptionML = ENU='My Profile';
@@ -76,7 +76,7 @@ profile MyProfile
 
 Page customizations that are made to user-created profiles are exported to an .al files that include a `pagecustomization` object that defines the modification to the page. A separate file is created for each customized page. Referring to the example above, the zip file would include two files: **PageCustomization._Business Manager Role Center_.Configuration1.al** and **PageCustomization._Customer List_.Configuration2.al**. The files include code similar to the following:
 
-```
+```al
 pagecustomization Configuration1 customizes "Business Manager Role Center"
 {
   layout
@@ -94,7 +94,7 @@ pagecustomization Configuration1 customizes "Business Manager Role Center"
 
 And:
 
-```
+```al
 pagecustomization Configuration2 customizes "Customer List"
 {
   layout
@@ -114,7 +114,7 @@ pagecustomization Configuration2 customizes "Customer List"
 
 Page customizations that are made to extension-based profiles are exported to two types of .al files. The first file includes a `profileextension` object that specifies which profile has been modified and includes references to the page customization object files. The second file type includes a `pagecustomization` object that defines the modification to the page. A separate file is created for customized page. For example, if you customized the **Customer** page for the **Business Manager** profile that is provided by the Base Application extension, the zip file would contain two files: **ProfileExtension._BUSINESS MANAGER.al** and **PageCustomization._Customer List_.Configuration2.al**. The files will contain code similar to the following:
 
-```
+```al
 profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 {
   Customizations = Configuration3;
@@ -123,7 +123,7 @@ profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 
 And:
 
-```
+```al
 pagecustomization Configuration3 customizes "Customer List"
 {
   layout

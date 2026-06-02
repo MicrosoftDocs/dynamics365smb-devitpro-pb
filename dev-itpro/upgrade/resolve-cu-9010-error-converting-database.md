@@ -205,7 +205,7 @@ OBJECT Codeunit 9010 Microsoft Entra ID User Management
             NavUserPlan.DELETE;
             RemoveUserGroupsForUserAndPlan(NavUserPlan);
             IF NOT IsTest THEN
-              COMMIT; // Finalize the transaction. Else any further error can rollback and create elevation of priviledge
+              COMMIT; // Finalize the transaction. Else any further error can rollback and create elevation of privilege
           END;
         UNTIL TempNavUserPlan.NEXT = 0;
     END;
@@ -240,7 +240,7 @@ OBJECT Codeunit 9010 Microsoft Entra ID User Management
             // This happens only for users who are created from O365 (i.e. are added to plans)
             PermissionManager.UpdateUserAccessForSaaS(NavUserPlan."User Security ID");
             IF NOT IsTest THEN
-              COMMIT; // Finalize the transaction. Else any further error can rollback and create elevation of priviledge
+              COMMIT; // Finalize the transaction. Else any further error can rollback and create elevation of privilege
           END;
         UNTIL TempO365Plan.NEXT = 0;
     END;

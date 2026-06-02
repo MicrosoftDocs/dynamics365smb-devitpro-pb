@@ -27,7 +27,7 @@ For more information about the usage and benefits of the `application`, see [The
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, you have to specify the `application` property in the `app.json` of the extension.
+To fix this diagnostic, you have to specify the `application` property in the `app.json` of the extension.
 
 ## Code example triggering the rule
 

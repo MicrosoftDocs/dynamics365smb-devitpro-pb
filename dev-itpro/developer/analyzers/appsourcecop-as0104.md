@@ -20,7 +20,7 @@ The extension name is not valid.
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, you must change the extension name in the manifest (app.json) of your extension.
+To fix this diagnostic, you must change the extension name in the manifest (app.json) of your extension.
 
 ## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  

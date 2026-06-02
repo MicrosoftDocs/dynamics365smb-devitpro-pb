@@ -18,7 +18,7 @@ An affix is required.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-In order to avoid name clashes for objects added by your extension and objects added by other extensions, an affix must be prepended or appended to the name of all new application objects, extension objects, and fields. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
+To avoid name clashes for objects added by your extension and objects added by other extensions, an affix must be prepended or appended to the name of all new application objects, extension objects, and fields. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
 
 ### Using the property mandatoryAffixes
 
@@ -38,7 +38,7 @@ The `mandatoryAffixes` property expects to receive an array of string as follows
 
 ### Using the properties mandatoryPrefix and mandatorySuffix
 
-In order to preserve backward compatibility, the properties `mandatoryPrefix` and `mandatorySuffix` are still supported by the AppSourceCop.
+To preserve backward compatibility, the properties `mandatoryPrefix` and `mandatorySuffix` are still supported by the AppSourceCop.
 
 Both properties expect to receive a string as follows:
 

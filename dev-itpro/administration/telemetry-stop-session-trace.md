@@ -52,7 +52,7 @@ The following table describes the most relevant custom dimensions of the trace.
 
 <sup>*</sup><a name="1"></a> Not shown for sessions canceled from the admin center.
 <!--
-```
+```json
 {"result":"False","stoppingSessionID":"448999","cancellationComment":"Stopped by management PowerShell cmdlet.","component":"Dynamics 365 Business Central Server","environmentType":"Production","stoppingSessionIsAdmin":"False","eventId":"RT0029","clientType":"ManagementClient","telemetrySchemaVersion":"0.1","currentSessionID":"910803","componentVersion":"20.0.42653.43979","environmentName":"Production","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee"}-->
 
 <!--

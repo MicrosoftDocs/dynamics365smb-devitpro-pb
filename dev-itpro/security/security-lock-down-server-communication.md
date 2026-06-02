@@ -35,7 +35,7 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance include
 |SOAPServicesSSLEnabled​|false||
 |ClientServicesProtection|EncryptAndSign|Protects the data stream between clients and [!INCLUDE[server](../developer/includes/server.md)] instance. For background information, see [Understanding Protection Level](/dotnet/framework/wcf/understanding-protection-level)|
 |ReportAppDomainIsolation​|||
-|ClientServicesMaxUploadSize​|30MB|Helps to avoid out-of-memory errors.|
+|ClientServicesMaxUploadSize​|30MB|Helps avoid out-of-memory errors.|
 |RestrictedFileTypes​ (ClientServicesProhibitedFileTypes)||Prevents specific file types from uploaded to the database from the client. |
 |EnableDataExportImport​|||
 |EnableALServerFileAccess​|true|Specifies whether access to server files by AL file data type functions is allowed.|

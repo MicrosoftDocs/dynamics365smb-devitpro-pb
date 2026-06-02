@@ -164,7 +164,7 @@ Partial records are automatically applied based on the page’s metadata for Lis
 
 ### Table relation-based lookups
 
-Lookups that are based on table relations and not explicit lookup pages will automatically generate the set of fields to load by using the same logic as for determining which fields to shown. Because these lookups don't have a defined page, it isn’t possible, or necessary, to overrule the set of fields.
+Lookups that are based on table relations and not explicit lookup pages will automatically generate the set of fields to load by using the same logic as for determining which fields to show. Because these lookups don't have a defined page, it isn’t possible, or necessary, to overrule the set of fields.
 
 ## Related information
 

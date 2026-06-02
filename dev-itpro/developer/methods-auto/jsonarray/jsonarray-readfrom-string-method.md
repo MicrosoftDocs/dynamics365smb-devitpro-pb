@@ -41,7 +41,7 @@ The String object from which the JSON data will be read.
 ## Remarks
 This method can fail if the JSON data is malformed. If the operation succeeds, the JsonArray will be disconnected from its current JSON tree and the data contained by the JsonArray will be replaced with the new value. To delete the contents in a JsonArray variable use the Clear function.
 
-```
+```al
 Clear(JsonArray)
 ```
 

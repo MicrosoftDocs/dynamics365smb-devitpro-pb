@@ -23,7 +23,7 @@ The name of the assembly can be retrieved from the AssemblyName element in the `
 
 The following code sample contains the stub definition of the `Microsoft.Dynamics.Nav.Client.PingPong` .NET add-in.
  
-```
+```csharp
 namespace Microsoft.Dynamics.Nav.Client.PingPong 
 { 
 
@@ -67,7 +67,7 @@ The `ControlAddInExport` attribute's constructor takes as an argument the name o
 
  Remember to add the setting **"AL: Assembly Probing Paths"** in the **User Settings** or **Workspace Settings** specifying the path of the folder containing the assembly so that the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
 
-```
+```al
 dotnet
 {
     assembly("Microsoft.Dynamics.Nav.Client.PingPong")

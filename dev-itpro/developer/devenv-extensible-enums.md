@@ -48,7 +48,7 @@ enum 50121 Loyalty
 
 ## Enumextension object
 
-Enums can be extended in order to add more values to the enumeration list in which case the `Extensible` property must be set to `true`. The syntax for an enum extension, which extends the **Loyalty** enum with the value **Diamond**, is shown below.
+Enums can be extended to add more values to the enumeration list in which case the `Extensible` property must be set to `true`. The syntax for an enum extension, which extends the **Loyalty** enum with the value **Diamond**, is shown below.
 
 ```AL
 enumextension 50130 LoyaltyWithDiamonds extends Loyalty

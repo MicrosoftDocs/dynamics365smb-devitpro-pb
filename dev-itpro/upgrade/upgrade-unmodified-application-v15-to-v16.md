@@ -345,7 +345,7 @@ Run the data upgrade on extensions in order of dependency.
 
 On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows to change the version number:
     
-```
+```powershell
 Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial -SkipAppVersionCheck
 ```
 
@@ -353,7 +353,7 @@ Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 

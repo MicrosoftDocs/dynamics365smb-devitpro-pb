@@ -27,7 +27,7 @@ This rule validates that all table field IDs defined in your extension are withi
 
 ## How to fix this diagnostic?
 
-You must change the ID of the object or table field validated in order to use an ID within the range 50,000-99,999.
+You must change the ID of the object or table field validated to use an ID within the range 50,000-99,999.
 
 ## Code examples triggering the rule
 
