@@ -145,7 +145,7 @@ You need a developer to debug the report. If the report was supplied by Microsof
 A string cannot be converted to a date type.
 
 **Suggested solution**<br>
-Incorrect string format that cannot be converted to a date in the current regional setup. Inspect the data behing the report or change the regional settings to fit report requirements. In BC 23 and later, try to set the format region in the request page and rerun the report.<br><br>
+Incorrect string format that cannot be converted to a date in the current regional setup. Inspect the data behind the report or change the regional settings to fit report requirements. In BC 23 and later, try to set the format region in the request page and rerun the report.<br><br>
 
 ### <a name=NavNCLDebuggerActivityAbortedException></a>NavNCLDebuggerActivityAbortedException
 This happens when a developer is debugging a report
@@ -154,7 +154,7 @@ This happens when a developer is debugging a report
 Not an error<br><br>
 
 ### <a name=NavNCLDialogException></a>NavNCLDialogException
-The NavNCLDialogException error happens when a error function has been called in the report. 
+The NavNCLDialogException error happens when an error function has been called in the report. 
 
 **Suggested solution**<br>
 The error messages will in most cases provide the necessary information to mitigate the problem. If not, you need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>

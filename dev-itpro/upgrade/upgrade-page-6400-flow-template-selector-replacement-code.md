@@ -16,7 +16,7 @@ This article includes replacement code page **6400 Flow Template Selector** that
 
 To fix the compilation errors, replace the code with the following:
 
-```
+```al
 page 6400 "Flow Template Selector"
 {
     ApplicationArea = Suite;

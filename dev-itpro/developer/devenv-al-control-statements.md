@@ -27,7 +27,7 @@ The control structures in AL are divided into the following main groups, as desc
 
 ## AL compound statements
 
-In some cases, the AL syntax only lets you use a single statement. However, if you have to run more than one simple statement, the statements can be written as a compound statement by enclosing the them between the `begin` and `end` keywords.  
+In some cases, the AL syntax only lets you use a single statement. However, if you have to run more than one simple statement, the statements can be written as a compound statement by enclosing them between the `begin` and `end` keywords.  
 
 ```AL
 begin  
@@ -44,7 +44,7 @@ The individual statements are separated by a semicolon. In AL, a semicolon is us
 
 The `begin-end` structure is also called a *block*. Blocks can be useful to refer to the other control structures in AL.  
 
-When `begin` follows, `then`, `else`, or `do` it should be on the same line and preceeded by one space character.  
+When `begin` follows, `then`, `else`, or `do` it should be on the same line and preceded by one space character.  
 
 ### Example 1
 

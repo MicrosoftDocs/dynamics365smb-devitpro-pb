@@ -262,7 +262,7 @@ For the example above, the following steps are required:
 
 ## Handling the definitions of moved out tables or fields
 
-The AL source code of moved elements must be kept in the source destinations in order to validate the moves. Some recommendations for managing this code are given in the next sections.
+The AL source code of moved elements must be kept in the source destinations to validate the moves. Some recommendations for managing this code are given in the next sections.
 
 ### Moving a table
 

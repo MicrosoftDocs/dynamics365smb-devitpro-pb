@@ -43,7 +43,7 @@ This method can fail if the stream is in an invalid state or if the JSON data is
 If the operation succeeds, the JsonValue will be disconnected from its current JSON tree and the data contained by the JsonValue will be replaced with the new value.
 To delete the contents in a JsonValue variable use the Clear function.
 
-```
+```al
 Clear(JsonValue)
 ```
 

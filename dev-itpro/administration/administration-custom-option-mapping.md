@@ -230,7 +230,7 @@ To track whether an industry group is coupled to an industry code in [!INCLUDE[c
 
 3. Add a control that shows the **Coupled to CRM** field on the list page. There are no naming requirements for the control.
 
-Every time you couple or uncouple a record from your [!INCLUDE[prod_short](../includes/prod_short.md)] table to a option set in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], the synchronization engine will update the Coupled to CRM field that you added.
+Every time you couple or uncouple a record from your [!INCLUDE[prod_short](../includes/prod_short.md)] table to an option set in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], the synchronization engine will update the Coupled to CRM field that you added.
 
 This will only update records that you couple or uncouple after you have added the Coupled to CRM field. To update this field value on records that were coupled before you added the Coupled to CRM field, you must run the following code. We recommend that you run the code as a background task.
 
@@ -631,3 +631,4 @@ Users can now manually synchronize industry group records in [!INCLUDE[prod_shor
 [Mapping the Tables and Fields to Synchronize](/dynamics365/business-central/admin-how-to-modify-table-mappings-for-synchronization)  
 [Manually Synchronize Table Mappings](/dynamics365/business-central/admin-manual-synchronization-of-table-mappings)  
 [Schedule a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries)
+

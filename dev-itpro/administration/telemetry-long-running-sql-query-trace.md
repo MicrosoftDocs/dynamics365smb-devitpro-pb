@@ -55,7 +55,7 @@ This table explains the columns included in long running query events emitted to
 
 
 <!-- 
-```
+```json
 {"telemetrySchemaVersion":"0.3","executionTimeInMs":"99","component":"Dynamics Business Central Server - 15.0.35274.0","environmentType":"Production","sqlStatement":"SELECT \"2161\".\"timestamp\",\"2161\".\"User\",\"2161\".\"Default Execute Time\",\"2161\".\"Current Job Queue Entry\",\"2161\".\"$systemId\" FROM \"SQLDATABASE\".dbo.\"CURRENTCOMPANY$Calendar Event User Config_\" \"2161\"  WITH(UPDLOCK)  WHERE (\"2161\".\"User\"=@0) OPTION(OPTIMIZE FOR UNKNOWN)","clientType":"Background","alStackTrace":"AppObjectType: CodeUnit\r\n  AppObjectId: 2160\r\n  AL CallStack: \"Calendar Event Management\"(CodeUnit 2160).GetCalendarEventUserConfiguration line 2\r\n\"Calendar Event Management\"(CodeUnit 2160).FindJobQueue line 1\r\n\"Calendar Event Execution\"(CodeUnit 2161).RunCalendarEvents line 20\r\n\"Calendar Event Execution\"(CodeUnit 2161).OnRun(Trigger) line 1\r\n\"Job Queue Start Codeunit\"(CodeUnit 449).OnRun(Trigger) line 6\r\n\"Job Queue Dispatcher\"(CodeUnit 448).HandleRequest line 18\r\n\"Job Queue Dispatcher\"(CodeUnit 448).OnRun(Trigger) line 12","alObjectName":"Calendar Event Management","alObjectType":"CodeUnit","companyName":"CRONUS International Ltd.","alObjectId":"2160"}
 ```
 

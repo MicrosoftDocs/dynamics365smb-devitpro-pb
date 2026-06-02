@@ -56,7 +56,7 @@ Yes, we have some valuable tips we would like to share. These are tips that can 
 
 - Follow the checklist, for more information, see [Technical Validation Checklist](devenv-checklist-submission.md). The checklist is ever evolving and requirements might change or be added. You might miss something from the checklist, leading to validation failure and delaying the passing of your updated app.
 - Follow the technical validation FAQ, for more information, see [Technical Validation FAQ](devenv-checklist-submission-faq.md). We're regularly updating it based on the questions and support cases raised by partners.
-- Use AppSourceCop, for more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md). This helps to catch any missing prefix/suffix and DataClassification. Too often we see these fail the updated versions of apps.
+- Use AppSourceCop, for more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md). This helps catch any missing prefix/suffix and DataClassification. Too often we see these fail the updated versions of apps.
 - Sign your app. This fails many app validations. We try to publish the app during validation and it isn't properly code-signed leading to failure to publish.
 - Publish and install your app. This is another significant validation failure we see too often.
 - Test your app’s functionality with 100% coverage. You're the expert on the app and know it best. If you're only testing a small percentage of your app, customers will most likely find issues resulting in you having to update your app more often. And if customers are the ones finding your app issues, they might decide to uninstall it. You should have a vested interest in providing a quality app.

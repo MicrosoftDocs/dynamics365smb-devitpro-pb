@@ -26,7 +26,7 @@ The format of the Obsolete tag is not validated by the AL compiler. However, you
 
 ## Setting up AppSourceCop to validate the Obsolete Tag
 
-The diagnostics for rule AS0073 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to surface them.
+The diagnostics for rule AS0073 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) to surface them.
 
 For example, the following ruleset turns the diagnostic for rule AS0073 into an error.
 
@@ -50,7 +50,7 @@ For example, the following ruleset turns the diagnostic for rule AS0073 into an 
 ```
 
 > [!NOTE]  
-> In order to fully validate obsolete properties and attributes, it is recommended to enable the rules [AS0072](appsourcecop-as0072.md), [AS0073](appsourcecop-as0073.md), [AS0074](appsourcecop-as0074.md), [AS0075](appsourcecop-as0075.md), and [AS0076](appsourcecop-as0076.md).
+> To fully validate obsolete properties and attributes, it is recommended to enable the rules [AS0072](appsourcecop-as0072.md), [AS0073](appsourcecop-as0073.md), [AS0074](appsourcecop-as0074.md), [AS0075](appsourcecop-as0075.md), and [AS0076](appsourcecop-as0076.md).
 
 ## How to fix this diagnostic?
 

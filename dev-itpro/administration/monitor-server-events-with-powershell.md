@@ -73,7 +73,7 @@ You can filter the events that you view in a [!INCLUDE[server](../developer/incl
   
 The following example uses the Get-WinEvent cmdlet to view errors in the [!INCLUDE[server](../developer/includes/server.md)] Admin log for the tenant *MyTenant1* on the server instance *MyNavServerInstance1*.  
   
-```  
+```powershell
 Get-WinEvent -LogName 'Microsoft-DynamicsNAV-Server/Admin' -FilterXPath "*[System[(Level=2)]] and *[EventData[Data[@Name='tenantId'] and (Data = 'MyTenant1')]] and *[EventData[Data[@Name='serverInstanceName'] and Data='MyNavServerInstance1']]" | Format-List -Property Message-  
 ```  
   

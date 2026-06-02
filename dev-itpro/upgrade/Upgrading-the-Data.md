@@ -231,19 +231,19 @@ Use the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.managemen
 
 To see the current version, use the following command:
 
-```
+```powershell
 Get-NAVApplication -ServerInstance <ServerInstanceName>
 ```
 
 To increase the version by 1, run the following command:
 
-```
+```powershell
 Set-NAVApplication -ServerInstance <ServerInstanceName> -IncrementApplicationVersion
 ```
 
 Or, to specify change to another version, run the following command:
 
-```
+```powershell
 Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationVersion <N.N.N.N> -Force
 ```
 
@@ -255,13 +255,13 @@ Synchronize the database schema with validation.
 
 For example, run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
-```
+```powershell
 Sync-NAVTenant -ServerInstance <ServerInstanceName>
 ```
 
 When completed, the tenant (database) should have the status **OperationalDataUpgradePending**. To verify this, run the following cmdlet:
 
-```
+```powershell
 Get-NAVTenant -ServerInstance <ServerInstanceName> -tenant default
 ```
 

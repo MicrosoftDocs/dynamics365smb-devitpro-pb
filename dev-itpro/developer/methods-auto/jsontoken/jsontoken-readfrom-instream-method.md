@@ -43,7 +43,7 @@ This method can fail if the stream is in an invalid state or if the JSON data is
 If the operation succeeds, the JsonToken will be disconnected from its current JSON tree and the data contained by the JsonToken will be replaced with the new value.
 To delete the contents in a JsonToken variable use the Clear function.
 
-```
+```al
 Clear(JsonToken)
 ```
 

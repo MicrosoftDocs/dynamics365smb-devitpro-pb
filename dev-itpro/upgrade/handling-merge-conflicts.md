@@ -23,7 +23,7 @@ Because the CONFLICT files describe the conflicts, you can import the merged tex
 
 In most cases, the text files that contain the merged application objects clearly identify where the conflict is. The following code example illustrates an object that has a conflict.  
 
-```  
+```al
 PROCEDURE ApplicationBuild@3() : Text[80];  
 BEGIN  
   {>>>>>>>} ORIGINAL  

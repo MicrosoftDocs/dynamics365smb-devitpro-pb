@@ -47,7 +47,7 @@ Similarly to the `$select` clause guidelines, specify the properties in the `$se
 
 ## Using a filter on `LastModifiedOn` when you query for historical data
 
-When you query for historical data, the chances are that you're interested in the most recent period (for example, 30 days, 90 days). Because of how data audit fields are implemented in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, there is a update of the data in the `LastModifiedOn` system field, which makes it perfect for history filters.
+When you query for historical data, the chances are that you're interested in the most recent period (for example, 30 days, 90 days). Because of how data audit fields are implemented in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, there is an update of the data in the `LastModifiedOn` system field, which makes it perfect for history filters.
 
 ## Using `$top` query option to limit the number of records
 
@@ -77,3 +77,4 @@ Whatever your approach is, run both queries multiple times. For example, run the
 [OData Web Services](OData-Web-Services.md)  
 [Web service performance](web-service-performance.md)  
 [Business Central web services overview](web-services.md)  
+

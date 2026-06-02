@@ -50,7 +50,7 @@ The following example shows how to select a value from a complex JSON Object. We
 
 We assume that the company token contains JSON data similar to the one below.
 
-```
+```json
 { "company": {
     "employees": [
       { "id": "Marcy",

@@ -22,7 +22,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 
 ## Feature changes
 - [Editing in Excel more reliably](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/editing-excel-more-reliably)
-- [Support authentication of a SMTP connection using OAuth2](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/support-authentication-smtp-connection-using-oauth2)
+- [Support authentication of an SMTP connection using OAuth2](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/support-authentication-smtp-connection-using-oauth2)
 - [Extension lifecycle telemetry include signal from dependent extensions](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/extension-lifecycle-telemetry-include-signal-dependent-extensions)
 - [Edit active prices in Prices Overview and implement price changes using Price Worksheet](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/edit-active-prices-price-lists-price-overview-pages)
 - [Send documents as emails with any attached files automatically added as email attachments](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/send-documents-as-emails-attached-files-automatically-added-as-email-attachments)
@@ -67,3 +67,4 @@ You can still watch the 15+ on-demand sessions from the Business Central Launch 
 - Fixed connectivity problems with Business Central cloud  
 
 Please download and always use the latest version: [Windows (Microsoft Store)](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab),  [iOS (Apple's App Store)](https://apps.apple.com/app/project-madeira/id1093325047) or [Android (Google's Play Store)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira). Currently recommended versions of these apps are 3.2.x and 3.3.x (or later).
+

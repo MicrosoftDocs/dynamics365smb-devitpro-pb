@@ -152,7 +152,7 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
 
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment.
 
-```
+```powershell
 Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
 ```
 

@@ -28,7 +28,7 @@ For more information about the properties in the `app.json`, see [JSON files](..
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, you have to replace the dependencies specifed on the 'Base Application' and 'System Application'  in the `dependencies` property by the `application` property in the `app.json` of the extension.
+To fix this diagnostic, you have to replace the dependencies specifed on the 'Base Application' and 'System Application'  in the `dependencies` property by the `application` property in the `app.json` of the extension.
 
 ## Code example triggering the rule
 

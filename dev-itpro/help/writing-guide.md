@@ -339,7 +339,7 @@ Messages that users see when they work in [!INCLUDE [prod_short](../developer/in
 
 - Don't place quotation marks around placeholders.
 
-    However, if the placeholder represents free-text user input that is hard to distinguish, such as a payment comment on a bank transaction. The quotation marks then helps to distinguish the user input from other parts of the message.  
+    However, if the placeholder represents free-text user input that is hard to distinguish, such as a payment comment on a bank transaction. The quotation marks then help distinguish the user input from other parts of the message.  
 
     Example: *The payment line with transaction text '%1' isn't applied.*, where %1 = `Hi - here is my payment of invoice 1223344`.  
 

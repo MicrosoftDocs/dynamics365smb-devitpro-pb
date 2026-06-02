@@ -1,4 +1,4 @@
-﻿---
+---
 title: Feature details in update 28.0 public preview for 2026 release wave 1
 description: Feature details for Business Central 2026 release wave 1
 ms.date: 02/28/2026
@@ -132,7 +132,7 @@ You configure these approvals under **Workflows**:
 2.  Select an **Item Journal Batch Approval Workflow** or **Requisition Worksheet Batch Approval Workflow** workflow template.
 3.  Specify the template and batch in the event conditions.
 3.  Configure approvers, and enable the workflow.
-4.  Open a item journal or requisition/planning worksheet, and choose the **Send for approval** action.
+4.  Open an item journal or requisition/planning worksheet, and choose the **Send for approval** action.
 5.  Track the status of the approval in the **Status** field on the **Approval Entries** page.
 
 Microsoft Power Automate support is available through updated workflow events and responses, with guidance provided as part of the enhancement.
@@ -467,7 +467,7 @@ The following are more details about the changes we made to each report.
 
 **Revenue Forecast**
 
-* Added conditional formatting to more effectively analyse revenue forecast trends and outliers, and align with the sales app.
+* Added conditional formatting to more effectively analyze revenue forecast trends and outliers, and align with the sales app.
 
 **Billing Forecast**
 
@@ -1137,6 +1137,7 @@ Shopify order headers now include the **retailLocation** (ID and name). Business
 ### Update unit cost when syncing prices to Shopify
 
 When you turn off the **Sync Prices with Products** toggle, Business Central previously updated the **Unit Cost** field on the item variant entry but didn't send the change to Shopify. With this improvement, the unit cost is included in all price synchronization operations, both individual and bulk. When you sync prices, the **Price** and **Compare at Price** fields, and now the **Unit Cost** field, update in Shopify and correctly revert if a bulk operation fails.
+
 
 
 

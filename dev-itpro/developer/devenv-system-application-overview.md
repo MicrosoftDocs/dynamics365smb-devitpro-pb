@@ -95,7 +95,7 @@ You now have the latest version of the System Application, and you can download 
 
 7. Switch back to PowerShell and run the following cmdlet to publish and install a new version of the app:
 
-```
+```powershell
 Publish-BCContainerApp -containerName $containerName `
 
 -appFile "C:\ProgramData\BCContainerHelper\AL\DemoSolution\Microsoft_System Application_15.0.0.0.app" `

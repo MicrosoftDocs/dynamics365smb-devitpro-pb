@@ -51,7 +51,7 @@ For example, do the following steps:
 
 1. Export the custom base application objects.
     1. Create a folder for storing the exported base application objects to TXT files (for example, c:\export2al\baseapplication).
-    2. Run the following commands to export tha application objects, but omitting the system objects and test library objects.
+    2. Run the following commands to export the application objects, but omit the system objects and test library objects.
 
         ```ps
         Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\baseapplication\exportedbc14app-part1.txt" -Filter 'Id=1..129999'
