@@ -28,7 +28,7 @@ also validated by this rule.
 
 ## How to fix this diagnostic?
 
-In order to fix the diagnostics reported you must set the [DataClassification](../properties/devenv-dataclassification-property.md) property on the table fields in your extension following the guidelines defined in [Classifying Data in Dynamics 365](../devenv-classifying-data.md).
+To fix the diagnostics reported you must set the [DataClassification](../properties/devenv-dataclassification-property.md) property on the table fields in your extension following the guidelines defined in [Classifying Data in Dynamics 365](../devenv-classifying-data.md).
 
 ## Code examples triggering the rule
 
