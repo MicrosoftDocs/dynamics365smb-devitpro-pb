@@ -132,7 +132,7 @@ You configure these approvals under **Workflows**:
 2.  Select an **Item Journal Batch Approval Workflow** or **Requisition Worksheet Batch Approval Workflow** workflow template.
 3.  Specify the template and batch in the event conditions.
 3.  Configure approvers, and enable the workflow.
-4.  Open a item journal or requisition/planning worksheet, and choose the **Send for approval** action.
+4.  Open an item journal or requisition/planning worksheet, and choose the **Send for approval** action.
 5.  Track the status of the approval in the **Status** field on the **Approval Entries** page.
 
 Microsoft Power Automate support is available through updated workflow events and responses, with guidance provided as part of the enhancement.

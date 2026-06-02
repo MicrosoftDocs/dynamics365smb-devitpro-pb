@@ -23,9 +23,9 @@ Represents an extension upload in [!INCLUDE[d365fin_long_md](../../includes/d365
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[GET extensionUpload](../api/dynamics_extensionupload_get.md)|extensionUpload|Gets a extension upload object.|
-|[POST extensionUpload](../api/dynamics_extensionupload_create.md)|extensionUpload|Creates a extension upload object.|
-|[PATCH extensionUpload](../api/dynamics_extensionupload_update.md)|extensionUpload|Updates a extension upload object.|
+|[GET extensionUpload](../api/dynamics_extensionupload_get.md)|extensionUpload|Gets an extension upload object.|
+|[POST extensionUpload](../api/dynamics_extensionupload_create.md)|extensionUpload|Creates an extension upload object.|
+|[PATCH extensionUpload](../api/dynamics_extensionupload_update.md)|extensionUpload|Updates an extension upload object.|
 
 ## Bound Actions
 
