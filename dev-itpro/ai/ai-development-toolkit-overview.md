@@ -120,7 +120,7 @@ As a preview feature, the AI development toolkit has several important limitatio
 
 ## Getting started
 
-Ready to try design an agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-development-toolkit-agent-create.md).
+Ready to try to design an agent? The process involves enabling the feature, creating your agent, and configuring it for your specific use case. Learn more in [Create and activate an agent (preview)](./ai-development-toolkit-agent-create.md).
 
 ## Related information
 
