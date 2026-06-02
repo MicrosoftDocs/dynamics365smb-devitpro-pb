@@ -155,7 +155,7 @@ The join condition can be specified on arbitrary fields, which leaves the possib
 
 ### Example 2 - replace ModifyAll()
 
-In order to replace a Record.ModifyAll() with the DataTransfer data type, ensure that only one table is set (as both source and destination), apply filters if required, and then specify one or more new field values:
+To replace a Record.ModifyAll() with the DataTransfer data type, ensure that only one table is set (as both source and destination), apply filters if required, and then specify one or more new field values:
 
 ```AL
 local procedure CopyFieldsReplacingModifyAll()

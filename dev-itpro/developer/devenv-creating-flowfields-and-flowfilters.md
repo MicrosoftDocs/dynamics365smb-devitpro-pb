@@ -23,7 +23,7 @@ A typical scenario for using a FlowField could be the Account Balance field in t
 
 ## Classifying the field type
 
-In order to create FlowFields and FlowFilters, you must first classify the field type by using the FieldClass Property. For more information, see [FieldClass Property](properties/devenv-fieldclass-property.md). By classifying the field as a FlowField or a FlowFilter type, you enable the fields to act as a virtual field whose value can be dynamically derived based on the calculation formula. 
+To create FlowFields and FlowFilters, you must first classify the field type by using the FieldClass Property. For more information, see [FieldClass Property](properties/devenv-fieldclass-property.md). By classifying the field as a FlowField or a FlowFilter type, you enable the fields to act as a virtual field whose value can be dynamically derived based on the calculation formula. 
 
 ## Calculation formula
 

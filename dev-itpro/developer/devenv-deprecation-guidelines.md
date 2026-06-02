@@ -109,7 +109,7 @@ When we obsolete code, we:
         #endif
         ```
 
-In order to have the compiler take the new ‘clean’ code path, symbols must be defined. The symbols are defined in the `app.json` file with the following setting. Learn more in [JSON files](devenv-json-files.md).
+To have the compiler take the new ‘clean’ code path, symbols must be defined. The symbols are defined in the `app.json` file with the following setting. Learn more in [JSON files](devenv-json-files.md).
 
 ```al
 "preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]
