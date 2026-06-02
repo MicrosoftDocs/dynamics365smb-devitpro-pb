@@ -205,13 +205,13 @@ The version has the format `major.minor.build.revision`, such as, '14.3.14824.1'
 
 To change the application version, run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
-```
+```powershell
 Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
 ```
 
 For example:
 
-```
+```powershell
 Set-NAVApplication -ServerInstance BC160 -ApplicationVersion 16.0.38071.0 -Force
 ```
 
@@ -409,7 +409,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
