@@ -41,11 +41,11 @@ To change the AI model for an agent created in the design experience:
 3. On the agent card, find the **Agent model** section.
 4. In the **Model** field, select a model from the list, or choose **Auto** to let the system select the default model.
 
-:::image type="content" source="media/ai-agent-model-selection.png" alt-text="Agent card showing the Agent model section with the Model field set to Auto.":::
+:::image type="content" source="../media/ai-agent-model-selection.png" alt-text="Agent card showing the Agent model section with the Model field set to Auto.":::
 
 The **Agent Models** list page shows all models available in the environment. Each entry displays the model name, its availability status, and its retirement date (if scheduled). Use this page to understand which models are currently available before making a selection.
 
-:::image type="content" source="media/ai-agent-models-list.png" alt-text="Agent Models list page showing available models with their status and retirement dates.":::
+:::image type="content" source="../media/ai-agent-models-list.png" alt-text="Agent Models list page showing available models with their status and retirement dates.":::
 
 > [!TIP]
 > If you select **Auto**, the agent uses whatever model Microsoft designates as the current default. This means the model can change over time without manual intervention. If you need predictable behavior, pin your agent to a specific model version.
