@@ -43,7 +43,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
-|The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. Learn more in [Computation of releases for validation](#against-which-releases-of-business-central-is-your-submission-validated)|
+|The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required to compute the minimum release of Business Central targeted by your submission. Learn more in [Computation of releases for validation](#against-which-releases-of-business-central-is-your-submission-validated)|
 |The extension submitted should have a unique `AppId`.| Every extension should have a unique `AppId` and it's not allowed to submit PTEs and Marketplace apps with the same `AppId`. Also see [Constraints on extension types](devenv-extension-types-and-scope.md#constraints-on-extension-types).
 
 ## Technical validation performed by the Business Central services
@@ -152,9 +152,9 @@ Include app and all library apps in both previousApps and apps and also include 
 
 Detailed validation results are automatically logged to telemetry in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the manifest of the main extension in your submission.
 
-In order to enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. Learn more about this property in [JSON files](devenv-json-files.md).
+To enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. Learn more about this property in [JSON files](devenv-json-files.md).
 
-In order to get started on analyzing your validation results, you can use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - Marketplace Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
+To get started on analyzing your validation results, you can use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - Marketplace Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
 
 Learn more about the signals sent to telemetry during the technical validation in [Analyzing Marketplace submission validation telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
