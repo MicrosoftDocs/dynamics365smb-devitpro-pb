@@ -43,7 +43,7 @@ The next step in the process is to provide [!INCLUDE[dataverse_short](../include
    > [!TIP]
    > Power Apps is the primary tool for creating and modifying tables in Dataverse.
 
-1. In the **[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Data Source Configuration columns and data** section, use the **+ more** button to show the **environment** and **Default Company** columns in the **Business Central** row if the they are hidden.
+1. In the **[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Data Source Configuration columns and data** section, use the **+ more** button to show the **environment** and **Default Company** columns in the **Business Central** row if they are hidden.
 1. Enter the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to connect to in the **environment** column.
 
    By default, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants have an environment called `production`.
