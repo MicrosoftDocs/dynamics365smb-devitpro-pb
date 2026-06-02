@@ -29,7 +29,7 @@ When changing the publisher of an extension, you must:
 
 - increment the version number in the manifest of your extension,
 - make sure that your submission only targets releases of [!INCLUDE[prod_short](../includes/prod_short.md)] starting from 19.0,
-- contact d365val@microsoft.com in order to register your affixes to your new publisher name.
+- contact d365val@microsoft.com to register your affixes to your new publisher name.
 
 ## When is it okay to change the App ID of my extension?
 

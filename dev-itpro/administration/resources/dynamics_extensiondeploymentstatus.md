@@ -22,7 +22,7 @@ Represents an extension deployment status in [!INCLUDE[d365fin_long_md](../../in
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[GET extensionDeploymentStatus](../api/dynamics_extensiondeploymentstatus_get.md)|extensionDeploymentStatus|Gets a extension deployment status object.|
+|[GET extensionDeploymentStatus](../api/dynamics_extensiondeploymentstatus_get.md)|extensionDeploymentStatus|Gets an extension deployment status object.|
 
 
 

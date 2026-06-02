@@ -115,7 +115,7 @@ page 50100 MyPage
 
 There's no impact on the default section of the command bar since all actions remain hidden by the group. However, the actionref no longer appears in the promoted section of the command bar. Use this approach if you didn't expect `MyPromotedAction` to appear in the promoted section of the command bar and you want to hide it completely. 
 
-Remark, in order to be compliant with the breaking change validation from the [AppSourceCop](appsourcecop.md), the following change is recommended:
+Remark, to be compliant with the breaking change validation from the [AppSourceCop](appsourcecop.md), the following change is recommended:
 
 ```al
 page 50100 MyPage

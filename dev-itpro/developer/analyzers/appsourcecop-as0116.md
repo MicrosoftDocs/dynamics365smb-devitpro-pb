@@ -33,7 +33,7 @@ Ensure that the source application for the moved symbol is correctly referenced 
 
 ### Setting up AppSourceCop to validate moved symbols
 
-In order to set up AppSourceCop to validate moved symbols, the property `sourceMovedObjectsPackagesCachePath` must be set in the AppSourceCop.json file to point to a directory which will contain baseline packages for all the applications from which symbols are moved. If this is not set, validation is disabled. AppSourceCop will try to find the source applications from the dependencies of the current application first and then from all the packages which are placed in that directory. Thus, if a symbol is being moved from a dependency of the application, setting the property and leaving the directory empty will be enough. Otherwise, the source application needs to be compiled and copied or moved into the directory.
+To set up AppSourceCop to validate moved symbols, the property `sourceMovedObjectsPackagesCachePath` must be set in the AppSourceCop.json file to point to a directory which will contain baseline packages for all the applications from which symbols are moved. If this is not set, validation is disabled. AppSourceCop will try to find the source applications from the dependencies of the current application first and then from all the packages which are placed in that directory. Thus, if a symbol is being moved from a dependency of the application, setting the property and leaving the directory empty will be enough. Otherwise, the source application needs to be compiled and copied or moved into the directory.
 
 ## Related information
 

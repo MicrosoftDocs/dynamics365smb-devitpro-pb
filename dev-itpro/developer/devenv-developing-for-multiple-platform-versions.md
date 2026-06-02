@@ -24,7 +24,7 @@ The following two elements are compared when you publish an extension.
 1. The runtime version of the extension defined in the app.json file.
 2. The runtime version of the platform that the extension is targeting.
 
-In the app.json file, set the extension **runtime** version lower than the platform version. When you set the extension to a higher **runtime** version, the extension package may contain certain features that the platform may not support which would result in an error. Therefore, you must lower the extension runtime version than the one that platform supports in order to publish your extension.
+In the app.json file, set the extension **runtime** version lower than the platform version. When you set the extension to a higher **runtime** version, the extension package may contain certain features that the platform may not support which would result in an error. Therefore, you must lower the extension runtime version than the one that platform supports to publish your extension.
 
 ### Things to be aware of
 
@@ -34,7 +34,7 @@ In the app.json file, set the extension **runtime** version lower than the platf
 
 2. When you lower the extension runtime version, you may get warnings about the newest features not supported by the earlier versions of the platform.
 
-3. A best-effort compilation is made when you publish an extension compiled with a lower runtime version. This is allowed in order to avoid recompilation of the extension package every time you upgrade the platform. 
+3. A best-effort compilation is made when you publish an extension compiled with a lower runtime version. This is allowed to avoid recompilation of the extension package every time you upgrade the platform. 
 
 ## Related information
 

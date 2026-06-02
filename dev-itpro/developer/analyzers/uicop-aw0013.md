@@ -122,7 +122,7 @@ page 50100 MyPage
 
 There's no impact on the promoted section of the command bar as promoted actions remain visible. There's also no impact on the default section of the command bar since promoted actions are promoted only and non-promoted actions remain hidden.  
 
-Use this approach if you want to keep the current behaviour.
+Use this approach if you want to keep the current behavior.
 
 > [!IMPORTANT]
 > The behavior of the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property changes with Business Central 2022 release wave 2 since the platform handles the duplicity of promoted actions.
@@ -161,3 +161,4 @@ Use this approach if you didn't expect `MyPromotedAction` to appear in the promo
 [UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+

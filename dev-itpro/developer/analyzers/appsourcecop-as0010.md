@@ -25,7 +25,7 @@ It is not allowed to rename the primary key because this will break upgrade of e
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, you must rename the primary key or add it back so that it matches its definition in your baseline extension.
+To fix this diagnostic, you must rename the primary key or add it back so that it matches its definition in your baseline extension.
 
 ## Code examples triggering the rule
 

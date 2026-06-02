@@ -220,7 +220,7 @@ For more information, see [Business Central Windows PowerShell Cmdlets](/powersh
 
  The sample commands are assumed to run in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administration shell based on the [!INCLUDE[demolong](../developer/includes/demolong_md.md)] on a local computer.  
 
-```  
+```powershell
 Stop-NAVServerInstance –ServerInstance 'businesscentral_server_instance' 
 Export-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'BCDEMO' –DatabaseName 'Demo Database BC' –DestinationDatabaseName 'Business Central App'| Remove-NAVApplication –DatabaseName 'Demo Database BC' -Force
 Set-NAVServerConfiguration –ServerInstance 'businesscentral_server_instance' –element appSettings –KeyName 'DatabaseName' –KeyValue ''

@@ -98,7 +98,7 @@ Specifically for RDL layouts, there are many ways to control formatting of data 
 
 If you've created a [Rich Text content control](devenv-richtext-content-controls.md), you can display the text on an RDL report. This means that you can display multi-line formatted text, emphasize important points, and have clickable hyperlinks.
 
-Rich Text is stored as HTML within the database. In order to display the formatted HTML, you need to change the `Placeholder Properties` within your RDL.
+Rich Text is stored as HTML within the database. To display the formatted HTML, you need to change the `Placeholder Properties` within your RDL.
 
 1. After adding the field to your report layout that contains the Rich Text, left-click on the field so that the `<Expr>` tag is highlighted.
 

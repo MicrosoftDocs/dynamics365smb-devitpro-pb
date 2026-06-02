@@ -50,7 +50,7 @@ The method HttpClient.Send can fail and return false in the following ways:
 
 
 ## Example (HTTP PATCH)
-As an example of how to use the HttpClient.Send, we illustrate how to do a HTTP PATCH request. Examples of the other supported HTTP methods (DELETE, GET, POST, or PUT), see the respective articles for their methods (HttpClient.Delete, HttpClient.Get, HttpClient.Post, or HttpClient.Put).
+As an example of how to use the HttpClient.Send, we illustrate how to do an HTTP PATCH request. Examples of the other supported HTTP methods (DELETE, GET, POST, or PUT), see the respective articles for their methods (HttpClient.Delete, HttpClient.Get, HttpClient.Post, or HttpClient.Put).
 
 The PATCH request is a partial update to an existing resource. It doesn't create a new resource, and it's not intended to replace an existing resource. Instead, it updates a resource only partially. To make an HTTP PATCH request, given an HttpClient and a URI, use the HttpClient.Send method:
 
@@ -128,3 +128,4 @@ The preceding code:
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
+

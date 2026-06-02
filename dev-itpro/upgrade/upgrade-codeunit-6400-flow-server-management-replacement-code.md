@@ -16,7 +16,7 @@ This article includes replacement code codeunit **6400 Flow Server Management** 
 
 To fix the compilation errors, replace the code with the following:
 
-```
+```al
 codeunit 6400 "Flow Service Management"
 {
     // // Manages access to Power Automate service API

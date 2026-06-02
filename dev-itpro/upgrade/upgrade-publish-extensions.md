@@ -18,7 +18,7 @@ This article describes how to publish, upgrade and install extension when upgrad
 
 It is useful to get a list of the extensions that are currently published for future reference. To get list of the extensions currently published on the application, run the following command:
 
-```
+```powershell
 Get-NAVAppinfo -ServerInstance <ServerInstanceName>
 ```
 
@@ -88,7 +88,7 @@ The new extension versions are found in the `\Extensions` folder of the installa
 
 To publish the new extension version, run the [Publish-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
-```
+```powershell
 Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
 ```
            
@@ -96,7 +96,7 @@ Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName>
 
 For each extension, run the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
-```
+```powershell
 Sync-NavApp -ServerInstance <ServerInstanceName> -Name  <ExtensionFileName>  -Version N.N.N.N -Tenant <TenantID>
 ```
 
@@ -108,7 +108,7 @@ This step is not required for the newly published local functionality extensions
 
 To run the data upgrade, run the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
-```
+```powershell
 Start-NAVAppDataUpgrade -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
 ``` 
 
@@ -118,7 +118,7 @@ Apart from upgrading the data, this command will install the new extension versi
 
 Install the newly published local functionality extensions by running the [Install-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
 
-```    
+```powershell
 Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
 ```
 For more information about publishing extensions, see [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).

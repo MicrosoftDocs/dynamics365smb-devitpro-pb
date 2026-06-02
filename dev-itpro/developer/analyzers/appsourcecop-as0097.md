@@ -24,7 +24,7 @@ Changing the identity of extensions is only supported in Business Central starti
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, you must either:
+To fix this diagnostic, you must either:
 
 - change the publisher of the extension in the app.json to match the publisher name used in the baseline,
 - update the runtime version in the app.json to be 8.0 or higher.

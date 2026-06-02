@@ -165,7 +165,7 @@ Install the latest version of the package by using NuGet Package Manager in Visu
 1. Select **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 2. At the `PM>` prompt, enter the following command:
 
-    ```
+```powershell
     Install-Package Microsoft.Identity.Client -Version 4.40.0
     ```
 
@@ -175,7 +175,7 @@ Install the latest version of the package by using NuGet Package Manager in Visu
 
 1. In the code editor, write the following code. Replace brackets `<>` with your values.
 
-    ```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;

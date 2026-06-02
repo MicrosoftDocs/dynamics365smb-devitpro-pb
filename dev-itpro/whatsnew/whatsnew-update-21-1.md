@@ -22,7 +22,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 -  [Embed Business Central in Teams tabs](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/embed-business-central-teams-tabs)
-- [Auto-Save as you work:](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work) due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management
+- [Auto-Save as you work:](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work) due to popular demand, administrators can now choose to turn on or off the new auto-saving behavior using Feature Management
 - [Business Central is available in 11 more countries/regions](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
 - [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
 - [Use SharePoint Connector module in System Application to build integration between Business Central and Sharepoint](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-sharepoint-module-system-application-build-integrations-between-business-central-sharepoint) 
@@ -81,3 +81,4 @@ Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.m
 
 **Discover resources on aka.ms/BCAll**  
 Are you looking for relevant resources? Find it all in this article [aka.ms/BCAll](https://aka.ms/BCAll) and remember to bookmark it!
+

@@ -33,13 +33,13 @@ When you convert a [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] da
         </tr>
         </table>
     2.  Add the following code to the **OpenSettings** function:
-        ```
+```al
         PAGE.RUN(PAGE::"My Settings");
         ```
 2. Modify page **9176 My Settings**:
 
     In AL code, replace the code on the local function **GetTimeZone** with the following code.
-    ```
+```al
     TimeZone.SETRANGE(ID,TimeZoneID);
     IF TimeZone.FINDFIRST THEN
         EXIT(TimeZone."Display Name");

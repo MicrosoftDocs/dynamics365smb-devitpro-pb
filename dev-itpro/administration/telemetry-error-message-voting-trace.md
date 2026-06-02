@@ -24,7 +24,7 @@ This voting feature appears on all error messages that are thrown by calls to th
 
 ## <a name="succeeded"></a>User gave feedback on error message
 
-Occurs when a use selects either **Yes** or **No** to the question on the error dialog as to whether the message was helpful.
+Occurs when a user selects either **Yes** or **No** to the question on the error dialog as to whether the message was helpful.
 
 ### General dimensions
 
@@ -81,3 +81,4 @@ The following table explains the custom dimensions included in the trace.
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+

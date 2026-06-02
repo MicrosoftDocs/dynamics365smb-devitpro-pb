@@ -250,25 +250,25 @@ The application and tenant databases are tagged with `Family` and `Version`. To 
 
 To get the `Family` and `Version`, use the [Get-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet, for example:
 
-```  
+```powershell
 Get-NAVApplication -ServerInstance BC
 ```
 
 To set the `Family` and `Version`, use the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet. For example, to set the family, run the following command:
 
-```
+```powershell
 Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationFamily <Family> 
 ```
 
 To increase the version by 1, run the following command:
 
-```
+```powershell
 Set-NAVApplication -ServerInstance <ServerInstanceName> -IncrementApplicationVersion
 ```
 
 Or, to specify change to another version, run the following command:
 
-```
+```powershell
 Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationVersion <N.N.N.N> -Force
 ```
 

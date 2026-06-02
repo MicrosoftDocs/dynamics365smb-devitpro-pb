@@ -119,7 +119,7 @@ Even with AUTO_UPDATE_STATISTICS on, we recommend running a periodic SQL Agent j
 
 #### Index fragmentation
 
-Another important administration task that helps to reduce data size and improve performance is to reduce fragmentation for tables and nonclustered indexes. Learn more in [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
+Another important administration task that helps reduce data size and improve performance is to reduce fragmentation for tables and nonclustered indexes. Learn more in [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
 
 #### Other database options
 

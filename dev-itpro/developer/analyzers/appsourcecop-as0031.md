@@ -32,9 +32,9 @@ Removing an action, which has been published isn't allowed because it will break
 
 If the action was removed, revert the change by adding back the action and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 
-If the action was renamed in order to change its display string in the web client, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
+If the action was renamed to change its display string in the web client, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
 
-If the action was renamed in order to comply with naming rules such as [AS0011](appsourcecop-as0011.md), consider obsoleting the action before introducing a new one in the next version of the app.
+If the action was renamed to comply with naming rules such as [AS0011](appsourcecop-as0011.md), consider obsoleting the action before introducing a new one in the next version of the app.
 
 If the [Promoted](../properties/devenv-promoted-property.md) property was removed or set to false on an action, consider obsoleting the action before modifying the promoted property in the next version of the app.
 

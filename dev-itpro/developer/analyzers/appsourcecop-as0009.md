@@ -27,7 +27,7 @@ It is not allowed to change the list of fields for the primary key or for the [c
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, you must revert the changes done in the current version of your extension so that the list of fields for the primary key or the clustered key matches the one defined for the key in your baseline extension.
+To fix this diagnostic, you must revert the changes done in the current version of your extension so that the list of fields for the primary key or the clustered key matches the one defined for the key in your baseline extension.
 
 ## Code examples triggering the rule
 

@@ -49,12 +49,12 @@ The DestinationAppsForMigration setting serves the following purposes:
 
 You can only set the DestinationAppsForMigration by using the Set-NAVServerConfiguration cmdlet. To specify an extension, you must know the extension's ID, name, and publisher. The following code snippet shows the syntax for setting the DestinationAppsForMigration:
 
-```
+```powershell
 Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"<GUID>, "name":"<Extension name>", "publisher": "<Publisher>"},{"appId":"<GUID>, "name":"<Extension name>", "publisher": "<Publisher>"}]'
 ```
 For example, the following command specifies the Microsoft system and base applications and a custom extension named My Extension.
 
-```
+```powershell
 Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"My Extension", "publisher": "Me"}]'
 ```
 
