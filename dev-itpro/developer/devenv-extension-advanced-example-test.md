@@ -104,7 +104,7 @@ We're using the Application Test Toolkit to automate and run the tests that we w
 
 - Application objects for running application tests such as the **Test Tool** page. 
 
-In order to install the Application Test Toolkit:
+To install the Application Test Toolkit:
 
 1. Open the BCContainerHelper prompt found on the Desktop. You see a list of functions that you can run on the container.
 2. Run the `Import-TestToolkitToBCContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
@@ -151,7 +151,7 @@ The `GIVEN-WHEN-THEN` tags provide a framework for the specific test criteria.
 
 |Tag |Description|
 |----|------------ |
-|GIVEN |Describes one step in setting up the test. If you feel a need to add an AND, you should probably add a separate GIVEN. In most of cases, in order to run an action under test, you must prepare the database. Tests can be complex, so you can add more than one GIVEN. They can come in one block or comment particular lines of code. Don't try to repeat code and comment each line. Instead, add information of a higher level that would be valuable when reading without the test code. |
+|GIVEN |Describes one step in setting up the test. If you feel a need to add an AND, you should probably add a separate GIVEN. In most of cases, to run an action under test, you must prepare the database. Tests can be complex, so you can add more than one GIVEN. They can come in one block or comment particular lines of code. Don't try to repeat code and comment each line. Instead, add information of a higher level that would be valuable when reading without the test code. |
 |WHEN |Describes the action under test. A test is to test one thing. There should be only one WHEN in a test. It's the line of code that changes the state of something that we're going to verify. If you feel a need to add more than one WHEN followed by different verification, you should split this test in two or more tests. |
 |THEN |Describes what is verified by the test. All tests must have a verification part. If there's no verification, the test doesn't test anything. You can add more than one THEN tag. | 
 
@@ -971,7 +971,7 @@ At this point you can publish and run your tests on your tenant by selecting <kb
 
 ## Run the tests
 
-In order to run the tests, follow these steps:
+To run the tests, follow these steps:
 
 1. Open the **Test Tool** page (130401). 
 ![Test Tool.](media/TestToolPage.png)  
