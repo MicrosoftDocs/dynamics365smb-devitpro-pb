@@ -22,7 +22,7 @@ Additionally, when you explore the **Service Integration** option, you find seve
 
 ## Develop an e-documents extension  
 
-In order to implement your localization or other extension on top of the **E-Document Core** application, you should perform the following procedures.  
+To implement your localization or other extension on top of the **E-Document Core** application, you should perform the following procedures.  
 
 ### Create and set up a new extension
 
