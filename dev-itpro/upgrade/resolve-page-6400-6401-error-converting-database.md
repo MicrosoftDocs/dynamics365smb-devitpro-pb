@@ -43,14 +43,14 @@ The resolution requires that you make changes to codeunit 6400, and pages 6400 a
       ```
     4. Add a global function called **GetTemplateFilter** that has a **Text** type return value, and add the code `EXIT(TemplateFilterTxt)` to the function:
 
-      ```
+```al
       GetTemplateFilter() : Text
           // Gets the default text value that filters Flow templates when opening page 6400.
           EXIT(TemplateFilterTxt);
       ```
 2. In page 6400 and 6401, in the `ControlAddinReady` function, replace the following code:
 
-    ``` 
+```al
     CurrPage.FlowAddin.Initialize(
       FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
       AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE),
@@ -59,7 +59,7 @@ The resolution requires that you make changes to codeunit 6400, and pages 6400 a
     
     With the following code:
     
-    ```
+```al
     CurrPage.FlowAddin.Initialize(
             FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
             AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE),
