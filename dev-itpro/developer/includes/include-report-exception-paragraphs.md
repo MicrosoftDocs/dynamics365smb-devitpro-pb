@@ -145,7 +145,7 @@ You need a developer to debug the report. If the report was supplied by Microsof
 A string cannot be converted to a date type.
 
 **Suggested solution**<br>
-Incorrect string format that cannot be converted to a date in the current regional setup. Inspect the data behing the report or change the regional settings to fit report requirements. In BC 23 and later, try to set the format region in the request page and rerun the report.<br><br>
+Incorrect string format that cannot be converted to a date in the current regional setup. Inspect the data behind the report or change the regional settings to fit report requirements. In BC 23 and later, try to set the format region in the request page and rerun the report.<br><br>
 
 ### <a name=NavNCLDebuggerActivityAbortedException></a>NavNCLDebuggerActivityAbortedException
 This happens when a developer is debugging a report
