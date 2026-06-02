@@ -26,7 +26,7 @@ The ObsoleteTag [property](../properties/devenv-obsoletetag-property.md) and [at
 
 ### Enabling the rule using a ruleset
 
-The diagnostics for rule AS0076 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to surface them.
+The diagnostics for rule AS0076 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) to surface them.
 
 For example, the following ruleset turns the diagnostic for rule AS0076 into an error.
 
@@ -50,14 +50,14 @@ For example, the following ruleset turns the diagnostic for rule AS0076 into an 
 ```
 
 > [!NOTE]  
-> In order to fully validate obsolete properties and attributes, we recommend enabling the rules [AS0072](appsourcecop-as0072.md), [AS0073](appsourcecop-as0073.md), [AS0074](appsourcecop-as0074.md), [AS0075](appsourcecop-as0075.md), and [AS0076](appsourcecop-as0076.md).
+> To fully validate obsolete properties and attributes, we recommend enabling the rules [AS0072](appsourcecop-as0072.md), [AS0073](appsourcecop-as0073.md), [AS0074](appsourcecop-as0074.md), [AS0075](appsourcecop-as0075.md), and [AS0076](appsourcecop-as0076.md).
 
 ### Setting up the AppSourceCop.json
 
 By default, the rule will validate that the specified obsolete tags are following the pattern `(\\d+)\\.(\\d+)`.
 
 However, it is possible to specify a custom pattern as a regular expression using the `obsoleteTagPattern` property in the AppSourceCop.json.
-The property `obsoleteTagPatternDescription` can be used in order to provide a human readable version of the expected pattern. 
+The property `obsoleteTagPatternDescription` can be used to provide a human readable version of the expected pattern. 
 The pattern description is used when reporting diagnostics.
 
 ```json
@@ -69,7 +69,7 @@ The pattern description is used when reporting diagnostics.
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, make sure that your obsolete tags are matching the expected `obsoleteTagPattern`.
+To fix this diagnostic, make sure that your obsolete tags are matching the expected `obsoleteTagPattern`.
 
 For instance, when using the default obsolete tag pattern, two diagnostics will be reported by rule AS0076 because the obsolete tag property and the obsolete tag attribute parameter values do not respect the format Major.Minor.
 
