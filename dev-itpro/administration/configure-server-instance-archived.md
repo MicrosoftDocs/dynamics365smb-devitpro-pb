@@ -483,7 +483,7 @@ The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes several
 
 The main cmdlet for configuring a server instance is the Set-NAVServerConfiguration cmdlet. You can use this cmdlet to change any of the configuration settings that are listed in the previous sections. To change a configuration setting, you set `-KeyName` parameter to the **Key Name** that corresponds to the setting, and set the `-KeyValue` parameter to the new value. For example, you can change the value for `DatabaseServer` to `DatabaseServer.Domain.Com` for the server instance named `MyInstance` by executing this cmdlet:  
 
-```  
+```powershell
 Set-NAVServerConfiguration -ServerInstance "MyInstance" -KeyName "DatabaseServer" -KeyValue "DatabaseServer.Domain.Com"  
 ```  
 
@@ -499,7 +499,7 @@ For dynamically updatable settings, use the `-ApplyTo` parameter to specify how 
 
 For example, the following command sets the value for the `MaxStreamReadSize` key to `42424242`, without having to restart the server instance. 
 
-```  
+```powershell
 Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize -KeyValue 42424242 -ApplyTo Memory  
 ```
 
