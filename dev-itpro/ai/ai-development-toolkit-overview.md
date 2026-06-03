@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 06/02/2026
 ms.update-cycle: 180-days
 ---
 
@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [ai-designer-preview](../includes/ai-designer-preview.md)]
 
-The [!INCLUDE [prod_short](../includes/prod_short.md)] AI development toolkit provides an environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents. The agent design experience is available in sandbox environments and designed for testing and learning purposes, providing a safe environment to explore AI functionalities without affecting production data.
+The [!INCLUDE [prod_short](../includes/prod_short.md)] AI development toolkit provides an environment that allows developers and partners to experiment with AI capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] by building agents.
 
 ## Purpose and audience
 
@@ -48,7 +48,6 @@ Use the AI development toolkit when you want to:
 
 Don't use the AI development toolkit when:
 
-- **Production environments** are involved (sandbox only)
 - **Compliance or security evaluation** is the primary goal
 - **Final implementation** is ready (graduate to AL extension instead)
 - **End-user training** is the main objective (use production-ready Copilot features)
