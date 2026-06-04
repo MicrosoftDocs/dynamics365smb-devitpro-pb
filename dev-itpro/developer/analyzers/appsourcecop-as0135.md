@@ -32,7 +32,7 @@ Alternatively, if the intention is only to remove the containing object or proce
 
 ## Examples triggering this rule
 
-### Example 1 - Removing an external business event (independant of the object / procedure accessibilty)
+### Example 1 - Removing an external business event (independent of the object / procedure accessibility)
 
 Version 1 of the extension
 
