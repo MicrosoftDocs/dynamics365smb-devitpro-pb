@@ -101,6 +101,129 @@ Occurs when an index was removed from the base table by table extension object.
 {"extensionVersion":"1.0.0.0","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","extensionPublisher":"Default publisher","Component version":"18.0.22893.23353","Extension version":"1.0.0.0","Environment type":"Production","componentVersion":"18.0.22893.23353","Extension App Id":"00001111-aaaa-2222-bbbb-3333cccc4444","environmentType":"Production","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"bc-index5","extensionName":"bc-index5","alObjectName":"MyBaseTable","aadTenantId":"common","AadTenantId":"common","extensionId":"aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb","Component":"Dynamics 365 Business Central Server","alObjectId":"50120","component":"Dynamics 365 Business Central Server","eventId":"LC0025","keyMaintainSIFTIndex":"False","keyMaintainSQLIndex":"True","keyFields":"MyBaseField1, MyBaseField2","keyName":"Key2"}
 
 -->
+
+## <a name="LC0063"></a>Index enabled at runtime
+
+Occurs when an index is enabled at runtime using the Index Management API.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Index enabled at runtime: {keyName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+| Dimension | Description or value |
+|--|--|
+| eventId | **LC0063** |
+| alObjectId | Specifies the ID of table that the index was enabled on. |
+| alObjectName | Specifies the name of table that the index was enabled on. |
+| isALDefined | Specifies whether the key is defined by AL. Value is **true** or **false**. |
+| keyFields | Specifies the table fields that are included in the index. |
+| keyMaintainSIFTIndex | Specifies whether the index's [MaintainSIFTIndex property](../developer/properties/devenv-maintainsiftindex-property.md) is `true` or `false`. |
+| keyMaintainSQLIndex | Specifies whether the index's [MaintainSQLIndex property](../developer/properties/devenv-maintainsqlindex-property.md) is `true` or `false`. |
+| keyName | Specifies the name of the index that was enabled. |
+| keySqlIndexFields | Specifies the SQL index fields of the key. |
+| keySumIndexFields | Specifies the sum index fields (SIFT) of the key. |
+| [See common custom dimensions](#other) |
+
+### Sample KQL code
+
+```kql
+traces
+| where timestamp > ago(60d)
+| where customDimensions.eventId == 'LC0063'
+| project timestamp
+, message
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, keyName = customDimensions.keyName
+, keyFields = customDimensions.keyFields
+, keyMaintainSQLIndex = customDimensions.keyMaintainSQLIndex
+, keyMaintainSIFTIndex = customDimensions.keyMaintainSIFTIndex
+```
+
+## <a name="LC0064"></a>Index disabled at runtime
+
+Occurs when an index is disabled at runtime using the Index Management API.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Index disabled at runtime: {keyName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+| Dimension | Description or value |
+|--|--|
+| eventId | **LC0064** |
+| alObjectId | Specifies the ID of table that the index was disabled on. |
+| alObjectName | Specifies the name of table that the index was disabled on. |
+| isALDefined | Specifies whether the key is defined by AL. Value is **true** or **false**. |
+| keyFields | Specifies the table fields that are included in the index. Only present if the key is AL-defined. |
+| keyMaintainSIFTIndex | Specifies whether the index's [MaintainSIFTIndex property](../developer/properties/devenv-maintainsiftindex-property.md) is `true` or `false`. Only present if the key is AL-defined. |
+| keyMaintainSQLIndex | Specifies whether the index's [MaintainSQLIndex property](../developer/properties/devenv-maintainsqlindex-property.md) is `true` or `false`. Only present if the key is AL-defined. |
+| keyName | Specifies the name of the index that was disabled. |
+| keySqlIndexFields | Specifies the SQL index fields of the key. Only present if the key is AL-defined. |
+| keySumIndexFields | Specifies the sum index fields (SIFT) of the key. Only present if the key is AL-defined. |
+| [See common custom dimensions](#other) |
+
+### Sample KQL code
+
+```kql
+traces
+| where timestamp > ago(60d)
+| where customDimensions.eventId == 'LC0064'
+| project timestamp
+, message
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, keyName = customDimensions.keyName
+, isALDefined = customDimensions.isALDefined
+```
+
+## <a name="LC0065"></a>Sync table column count exceeded
+
+Occurs when a table synchronization is attempted on a table that exceeds the maximum number of columns.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Sync table column count exceeded: {alObjectName}**|
+|severityLevel|**3** (Error)|
+
+### Custom dimensions
+
+| Dimension | Description or value |
+|--|--|
+| eventId | **LC0065** |
+| alObjectId | Specifies the ID of table that exceeded the column count limit. |
+| alObjectName | Specifies the name of table that exceeded the column count limit. |
+| [See common custom dimensions](#other) |
+
+### Sample KQL code
+
+```kql
+traces
+| where timestamp > ago(60d)
+| where customDimensions.eventId == 'LC0065'
+| project timestamp
+, message
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+```
+
 ## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

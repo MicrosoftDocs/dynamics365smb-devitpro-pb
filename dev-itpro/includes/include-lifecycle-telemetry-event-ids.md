@@ -112,6 +112,16 @@
 | LC0055 | Profile Configuration Lifecycle | [Profile page customization converted: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-converted) |
 |LC0056|Extension Lifecycle |[Extension is already synchronized: {extensionName}](../administration/telemetry-extension-lifecycle-trace.md#alreadySynced)|
 |LC0058|Permissions |[Permission set changed by an extension](../administration/telemetry-permission-changes-trace.md#permissionsetchangedbyapp)|
+| LC0059 | AI Consumption | [Metadata embedding generation succeeded for extension {extensionId} version {extensionVersion}](../administration/telemetry-ai-consumption.md#LC0059) |
+| LC0060 | AI Consumption | [Metadata embedding generation failed for extension {extensionId} version {extensionVersion}](../administration/telemetry-ai-consumption.md#LC0060) |
+| LC0061 | AI Consumption | [Metadata embedding generation scheduled for extension {extensionId} version {extensionVersion}](../administration/telemetry-ai-consumption.md#LC0061) |
+| LC0062 | AI Consumption | [Metadata embedding generation started for extension {extensionId} version {extensionVersion}](../administration/telemetry-ai-consumption.md#LC0062) |
+| LC0063 | Table Index Lifecycle | [Index enabled at runtime: {keyName}](../administration/telemetry-table-index-trace.md#LC0063) |
+| LC0064 | Table Index Lifecycle | [Index disabled at runtime: {keyName}](../administration/telemetry-table-index-trace.md#LC0064) |
+| LC0065 | Table Index Lifecycle | [Sync table column count exceeded: {tableName}](../administration/telemetry-table-index-trace.md#LC0065) |
+| LC0066 | Agent Lifecycle | [Agent configuration changed: {agentDisplayName}](../administration/telemetry-agent-lifecycle-trace.md#lc0066) |
+| LC0067 | Agent Lifecycle | [Agent created: {agentDisplayName}](../administration/telemetry-agent-lifecycle-trace.md#lc0067) |
+| LC0068 | Agent Lifecycle | [Agent task created: {taskId}](../administration/telemetry-agent-lifecycle-trace.md#lc0068) |
 | LC0100 | Environment | [Environment update available for scheduling: {environmentName} to version {destinationVersion}.](../administration/telemetry-environment-lifecycle-trace.md#environment-update-available) |
 | LC0101 | Environment | [Environment update scheduled: {environmentName} to version {destinationVersion}, update on or after date: {registeredForUpdateOnOrAfterDateUtc}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-scheduled) |
 | LC0102 | Environment | [Environment update missed: {environmentName} to version {destinationVersion}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-missed) |
