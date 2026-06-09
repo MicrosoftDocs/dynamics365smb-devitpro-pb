@@ -181,6 +181,8 @@ It's possible to include a certificate when calling an external service using `H
 
 [!INCLUDE[httpclient_cert_example](includes/include-http-cert-example.md)]
 
+[!INCLUDE[httpclient_cert_remarks](includes/include-http-cert-remarks.md)]
+
 [!INCLUDE[httpclient_cert_note](includes/include-http-cert-note.md)]
 
 Learn more about certificates in:
