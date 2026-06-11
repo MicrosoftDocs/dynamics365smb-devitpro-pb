@@ -33,7 +33,8 @@ The following table lists the Business Central 26 update versions and the minimu
 |-|-|
 |27.0 to 27.5|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |[27.6](https://support.microsoft.com/help/5086070)|[28.1](https://support.microsoft.com/help/5093780)|
-|[27.7](https://support.microsoft.com/help/5093779)<sup>[\[1\]](#1)</sup>|28.2|
+|[27.7](https://support.microsoft.com/help/5093779)|[28.2](https://support.microsoft.com/help/5100266)|
+|[27.8](https://support.microsoft.com/help/5100265)<sup>[\[1\]](#1)</sup>|28.3|
 
 Get a list of all available version 27 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-2-7f4863fc-e30c-497d-b510-df9e7007253c).
 
@@ -51,7 +52,8 @@ The following table lists the Business Central 26 update versions and the minimu
 |[26.10](https://support.microsoft.com/help/5078590)|[27.5](https://support.microsoft.com/help/5081986)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |[26.11](https://support.microsoft.com/help/5081984)|[27.6](https://support.microsoft.com/help/5086070)|[28.0](../whatsnew/whatsnew-update-28-0.md#on-premises-download-packages)|
 |[26.12](https://support.microsoft.com/help/5093778)|[27.7](https://support.microsoft.com/help/5093779)|[28.1](https://support.microsoft.com/help/5093780)|
-|[26.13](https://support.microsoft.com/help/5093778)<sup>[\[1\]](#1)</sup>|27.8|28.2|
+|[26.13](https://support.microsoft.com/help/5093778)|[27.8](https://support.microsoft.com/help/5100265)|[28.2](https://support.microsoft.com/help/5100266)|
+|[26.14](https://support.microsoft.com/help/5100263)<sup>[\[1\]](#1)</sup>|27.9|28.3|
 
 Get a list of all available updates for Business Central 2025 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-1-8cb260a4-6a57-4325-a4d7-7aa84c3234e6).
 

@@ -33,7 +33,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 |Cloud migration|[Validate Dynamics GP data migration](../administration/migrate-gp-validation.md)|General availability|
 |Copilot and agents|[Envision and design AI agents in Business Central](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/envision-prototype-custom-ai-agents-using-agent-designer)|Public preview<br>(now on production environments and with evaluation tool)|
-||[Manage expenses in Business Central using Expense Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-expenses-business-central-using-expense-agent)|Public preview|
+|Governance and administration|[Manage expenses in Business Central using Expense Agent](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/manage-expenses-business-central-using-expense-agent)|Public preview|
 |Country and regional|[Use e-invoice formats for service invoices in Germany](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/use-e-invoice-formats-service-invoices-germany)|General availability|
 |Development|[Enable Troubleshooting MCP Server for AL](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/enable-troubleshooting-mcp-server-al)|General availability|
 |Financial management|[Calculate excise taxes](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/calculate-excise-taxes)|General availability|
