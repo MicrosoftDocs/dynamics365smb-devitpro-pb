@@ -23,7 +23,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint.<br><br>Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. A Microsoft page is a page that is created in an app with the publisher Microsoft. Therefore, this change is relevant for any page from any app with the publisher Microsoft (for example, Base Application, System Application, every first party app).<br><br>If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint.<br><br>Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. A Microsoft page is a page that is created in an app with the publisher Microsoft. Therefore, this change is relevant for any page from any app with the publisher Microsoft (for example, Base Application, System Application, every first party app).<br><br>If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in an extension/app. |
 
 ## Changes in 2026 release wave 2 (version 29.0)
 
@@ -31,7 +31,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension.|
+|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in an extension/app.|
 
 ### <a name="permissions"></a>Use only data-defined permission sets for on-premises (removal)
 
@@ -61,13 +61,13 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension. Until version 29 is released, you can still expose a Microsoft page as a SOAP endpoint, but not by default. If needed, use the **Feature: Disable SOAP web services on Microsoft UI pages** key in **Feature Management** to enable this capability. Learn more in [Disable SOAP web services on Microsoft UI pages feature key](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)|
+|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in an extension/app. Until version 29 is released, you can still expose a Microsoft page as a SOAP endpoint, but not by default. If needed, use the **Feature: Disable SOAP web services on Microsoft UI pages** key in **Feature Management** to enable this capability. Learn more in [Disable SOAP web services on Microsoft UI pages feature key](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)|
 
 ### <a name="odata-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as an OData endpoint (warning)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in an extension/app. |
 
 ### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
 
@@ -113,7 +113,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension.|
+|Removed | A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in an extension/app.|
 
 ### <a name="views"></a>Legacy views on list pages (removal)
 

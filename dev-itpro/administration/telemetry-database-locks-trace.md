@@ -101,11 +101,12 @@ traces
 )
 ```
 
-## Database lock snapshot
+## Database lock snapshot (entry)
 
 This telemetry event can occur in two ways:
-1. when a database lock has timed out
-2. when a user or AL process has issued that a snapshot is taken
+
+1. When a database lock has timed out
+1. When a user or AL process has issued that a snapshot is taken
 
 In the case of a database lock timeout, the BC server also takes a snapshot. Here, the **Database lock snapshot** trace event is associated with a specific **Database lock timed out** trace event. The value of the `{snapshotId}` maps to the `snapshotId` dimension of the **Database lock timed out** trace event that triggered this event.
 
@@ -175,6 +176,56 @@ traces
 , alSessionIdHoldingLock = customDimensions.sessionId
 ```
 
+## <a name="RT0027"></a>Database lock snapshot (parent)
+
+Occurs when a database lock snapshot is taken to capture the current locking state. This event is emitted as a header/parent event that groups related lock snapshot entries (RT0013).
+
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2024 release wave 2 and later
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Database locks snapshot: {snapshotId}**|
+|severityLevel|**3** (Error)|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId| [!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)] |
+|alObjectId| Specifies the ID of the AL object that requested the lock snapshot.|
+|alObjectName| Specifies the name of the AL object that requested the lock snapshot.|
+|alObjectType| Specifies the type of the AL object that requested the lock snapshot.|
+|clientType| [!INCLUDE[clientType](../includes/include-telemetry-dimension-client-type.md)] |
+|companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
+|component|**Dynamics 365 Business Central Server**|
+|componentVersion| Specifies the version number of the component that emits telemetry.|
+|environmentName| [!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)] |
+|environmentType| [!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)] |
+|eventId|**RT0027**|
+|extensionId| Specifies the AppID of the extension that contains the AL object.|
+|extensionName| Specifies the name of the extension that contains the AL object.|
+|extensionPublisher| Specifies the publisher of the extension that contains the AL object.|
+|extensionVersion| Specifies the version of the extension that contains the AL object.|
+|snapshotId| Specifies the unique GUID for the lock snapshot. Use this ID to correlate with lock snapshot entries (RT0013).|
+
+### Sample KQL code
+
+```kql
+traces
+| where timestamp > ago(60d)
+| where customDimensions.eventId == 'RT0027'
+| project timestamp
+, message
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, companyName = customDimensions.companyName
+, snapshotId = customDimensions.snapshotId
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+```
 
 ## Troubleshooting locking issues with telemetry
 
