@@ -2,7 +2,7 @@
 title: Update 28.2 for Microsoft Dynamics 365 Business Central 2026 Release Wave 1
 description: Get an overview of new and changed capabilities in the 28.2 update of Business Central online, which is part of 2026 release wave 1
 ms.author: jswymer
-ms.date: 06/08/2026
+ms.date: 06/12/2026
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer
@@ -50,9 +50,6 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 - New customers get Business Central version 28.2 automatically.
 - Existing customers are notified when update 28.2 is available so they can schedule the update. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management.md#schedule).
-
-> [!NOTE]
-> The rollout of Business Central online version 28.2 in Thailand (TH) is currently delayed and is expected to start within a few days.
 
 ### On-premises customers
 
