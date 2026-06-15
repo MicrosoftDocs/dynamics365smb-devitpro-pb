@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # (automation API) Update configurationPackage
 
 Updates the properties of a configuration package object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
@@ -57,7 +55,6 @@ Body: binary stream
 **Response**
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -78,7 +75,6 @@ Content-type: application/json
     "applyError" :
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
 ## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  

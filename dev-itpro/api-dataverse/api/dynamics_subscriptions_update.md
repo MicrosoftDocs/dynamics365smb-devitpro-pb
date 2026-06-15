@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # (Business Central Dataverse API) Update subscriptions
 
 Updates the properties of a subscriptions object for [!INCLUDE [prod_short](../../includes/prod_short.md)].

@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # (automation API) Get securityGroupMembers
 
 Retrieves the properties and relationships of a security group member object for [!INCLUDE[prod_short](../../includes/prod_short.md)].
@@ -42,16 +40,13 @@ If successful, this method returns a ```200 OK``` response code and a **security
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/securityGroupMembers({securityGroupId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
 **Response**
 
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
     "securityGroupCode" : "",
@@ -59,7 +54,6 @@ Here is an example of the response.
     "securityGroupName" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

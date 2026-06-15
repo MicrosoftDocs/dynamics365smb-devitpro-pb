@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # (automation API) Update userGroup
 
 > [!NOTE]  
@@ -47,7 +45,6 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values)-->
 
 ```json
 PATCH https:///microsoft/automation/{apiVersion}/companies({companyId})/userGroups({userGroupId})

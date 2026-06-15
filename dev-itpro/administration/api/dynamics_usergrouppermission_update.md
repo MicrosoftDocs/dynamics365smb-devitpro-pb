@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # (automation API) Update userGroupPermission
 
 Updates the properties of a user group permission object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].

@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # (automation API) Delete securityGroups
 
 Deletes a security group from [!INCLUDE[prod_short](../../includes/prod_short.md)].
@@ -44,11 +42,9 @@ If successful, this method returns ```204 No Content``` response code and delete
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
 DELETE https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/securityGroups({securityGroupId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
 **Response**
 
 Here is an example of the response.

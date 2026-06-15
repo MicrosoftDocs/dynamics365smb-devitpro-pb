@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # (automation API) Get permissionSet
 
 Retrieves the properties and relationships of a permission set object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
@@ -19,11 +17,9 @@ Retrieves the properties and relationships of a permission set object for [!INCL
 
 Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```
 GET /microsoft/automation/v2.0/companies({companyId})/permissionSets
 ```
-<!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
 
 |Header|Value|
