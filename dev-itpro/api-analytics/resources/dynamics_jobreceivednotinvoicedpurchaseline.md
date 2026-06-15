@@ -1,0 +1,62 @@
+---
+title: jobReceivedNotInvoicedPurchaseLine resource type
+description: Represents a jobReceivedNotInvoicedPurchaseLine entity in Dynamics 365 Business Central analytics API.
+author: SusanneWindfeldPedersen
+ms.topic: reference
+ms.devlang: al
+ms.date: 06/08/2026
+ms.author: solsen
+ms.reviewer: solsen
+---
+
+# jobReceivedNotInvoicedPurchaseLine resource type
+
+Represents a job received not invoiced purchase line in [!INCLUDE[prod_short](../../includes/prod_short.md)].
+
+## Methods
+
+| Method | Return Type|Description |
+|:--------------------|:-----------|:-------------------------|
+|[GET jobReceivedNotInvoicedPurchaseLine](../api/dynamics_jobreceivednotinvoicedpurchaseline_get.md)|jobReceivedNotInvoicedPurchaseLine|Gets a jobReceivedNotInvoicedPurchaseLine object.|
+
+## Properties
+
+| Property           | Type   |Description     |
+|:-------------------|:-------|:---------------|
+|documentType|string|The primary key of the jobReceivedNotInvoicedPurchaseLine.|
+|documentNo|string|The primary key of the jobReceivedNotInvoicedPurchaseLine.|
+|no|string|Specifies the no of the jobReceivedNotInvoicedPurchaseLine.|
+|lineNo|integer|The primary key of the jobReceivedNotInvoicedPurchaseLine.|
+|type|string|Specifies the type of the jobReceivedNotInvoicedPurchaseLine.|
+|qtyRcdNotInvoicedBase|decimal|Specifies the qtyRcdNotInvoicedBase of the jobReceivedNotInvoicedPurchaseLine.|
+|amtRcdNotInvoicedLCY|decimal|Specifies the amtRcdNotInvoicedLCY of the jobReceivedNotInvoicedPurchaseLine.|
+|jobNo|string|Specifies the jobNo of the jobReceivedNotInvoicedPurchaseLine.|
+|jobTaskNo|string|Specifies the jobTaskNo of the jobReceivedNotInvoicedPurchaseLine.|
+|expectedReceiptDate|Date|Specifies the expectedReceiptDate of the jobReceivedNotInvoicedPurchaseLine.|
+|dimensionSetID|integer|Specifies the dimensionSetID of the jobReceivedNotInvoicedPurchaseLine.|
+|description|string|Specifies the description of the jobReceivedNotInvoicedPurchaseLine.|
+
+## JSON representation
+
+Here's a JSON representation of the jobReceivedNotInvoicedPurchaseLine resource.
+
+```json
+{
+    "documentType": "string",
+    "documentNo": "string",
+    "no": "string",
+    "lineNo": "integer",
+    "type": "string",
+    "qtyRcdNotInvoicedBase": "decimal",
+    "amtRcdNotInvoicedLCY": "decimal",
+    "jobNo": "string",
+    "jobTaskNo": "string",
+    "expectedReceiptDate": "Date",
+    "dimensionSetID": "integer",
+    "description": "string"
+}
+```
+
+## Related information
+
+[GET jobReceivedNotInvoicedPurchaseLine](../api/dynamics_jobreceivednotinvoicedpurchaseline_get.md)
