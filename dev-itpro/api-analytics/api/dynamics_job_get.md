@@ -51,17 +51,17 @@ Here's an example of the response.
 
 ```json
 {
-    "no": "string",
-    "description": "string",
-    "billToCustomerNo": "string",
-    "creationDate": "Date",
-    "startingDate": "Date",
-    "endingDate": "Date",
-    "status": "string",
-    "jobPostingGroup": "string",
-    "blocked": "string",
-    "projectManager": "string",
-    "complete": "boolean"
+    "no": "10000",
+    "description": "ATHENS Desk",
+    "billToCustomerNo": "10000",
+    "creationDate": "2026-01-15",
+    "startingDate": "2026-01-01",
+    "endingDate": "2026-06-30",
+    "status": "Released",
+    "jobPostingGroup": "DOMESTIC",
+    "blocked": "",
+    "projectManager": "",
+    "complete": false
 }
 ```
 

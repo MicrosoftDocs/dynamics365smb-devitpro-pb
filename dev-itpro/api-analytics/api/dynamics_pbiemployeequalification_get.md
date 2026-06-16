@@ -51,9 +51,9 @@ Here's an example of the response.
 
 ```json
 {
-    "employeeNo": "string",
-    "qualificationCode": "string",
-    "auxiliaryIndex1": "integer"
+    "employeeNo": "10000",
+    "qualificationCode": "10000",
+    "auxiliaryIndex1": 1
 }
 ```
 

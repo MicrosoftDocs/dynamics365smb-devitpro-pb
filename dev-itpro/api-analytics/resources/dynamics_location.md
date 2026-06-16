@@ -33,9 +33,9 @@ Here's a JSON representation of the location resource.
 
 ```json
 {
-    "locationCode": "string",
-    "locationName": "string",
-    "adjustmentBinCode": "string"
+    "locationCode": "BLUE",
+    "locationName": "Blue Warehouse",
+    "adjustmentBinCode": "B-01-0001"
 }
 ```
 

@@ -33,9 +33,9 @@ Here's a JSON representation of the closeOpportunityCode resource.
 
 ```json
 {
-    "closeOpportunityCode": "string",
-    "closeOpportunityType": "string",
-    "closeOpportunityDescription": "string"
+    "closeOpportunityCode": "10000",
+    "closeOpportunityType": "",
+    "closeOpportunityDescription": "Standard posting"
 }
 ```
 

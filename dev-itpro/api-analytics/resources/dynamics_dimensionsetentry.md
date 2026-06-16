@@ -49,25 +49,25 @@ Here's a JSON representation of the dimensionSetEntry resource.
 
 ```json
 {
-    "id": "GUID",
-    "dimensionSetID": "integer",
-    "valueCount": "integer",
-    "dimension1ValueCode": "string",
-    "dimension1ValueName": "string",
-    "dimension2ValueCode": "string",
-    "dimension2ValueName": "string",
-    "dimension3ValueCode": "string",
-    "dimension3ValueName": "string",
-    "dimension4ValueCode": "string",
-    "dimension4ValueName": "string",
-    "dimension5ValueCode": "string",
-    "dimension5ValueName": "string",
-    "dimension6ValueCode": "string",
-    "dimension6ValueName": "string",
-    "dimension7ValueCode": "string",
-    "dimension7ValueName": "string",
-    "dimension8ValueCode": "string",
-    "dimension8ValueName": "string"
+    "id": "",
+    "dimensionSetID": 102,
+    "valueCount": 1,
+    "dimension1ValueCode": "10000",
+    "dimension1ValueName": "Adatum Corporation",
+    "dimension2ValueCode": "10000",
+    "dimension2ValueName": "Adatum Corporation",
+    "dimension3ValueCode": "10000",
+    "dimension3ValueName": "Adatum Corporation",
+    "dimension4ValueCode": "10000",
+    "dimension4ValueName": "Adatum Corporation",
+    "dimension5ValueCode": "10000",
+    "dimension5ValueName": "Adatum Corporation",
+    "dimension6ValueCode": "10000",
+    "dimension6ValueName": "Adatum Corporation",
+    "dimension7ValueCode": "10000",
+    "dimension7ValueName": "Adatum Corporation",
+    "dimension8ValueCode": "10000",
+    "dimension8ValueName": "Adatum Corporation"
 }
 ```
 

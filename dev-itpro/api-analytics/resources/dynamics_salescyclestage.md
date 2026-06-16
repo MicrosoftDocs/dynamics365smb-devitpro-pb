@@ -33,9 +33,9 @@ Here's a JSON representation of the salesCycleStage resource.
 
 ```json
 {
-    "salesCycleCode": "string",
-    "salesCycleStage": "integer",
-    "salesCycleStageDescription": "string"
+    "salesCycleCode": "10000",
+    "salesCycleStage": 1,
+    "salesCycleStageDescription": "1"
 }
 ```
 

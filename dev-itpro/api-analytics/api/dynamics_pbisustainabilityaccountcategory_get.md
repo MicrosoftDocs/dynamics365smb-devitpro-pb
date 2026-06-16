@@ -51,9 +51,9 @@ Here's an example of the response.
 
 ```json
 {
-    "code": "string",
-    "description": "string",
-    "emissionScope": "string"
+    "code": "DEPARTMENT",
+    "description": "ATHENS Desk",
+    "emissionScope": ""
 }
 ```
 

@@ -51,21 +51,21 @@ Here's an example of the response.
 
 ```json
 {
-    "status": "string",
-    "prodOrderNo": "string",
-    "routingNo": "string",
-    "routingReferenceNo": "integer",
-    "operationNo": "string",
-    "allocatedTime": "decimal",
-    "requestedOnly": "boolean",
-    "workCenterNo": "string",
-    "workCenterGroupCode": "string",
-    "date": "Date",
-    "no": "string",
-    "type": "string",
-    "neededTimeMs": "decimal",
-    "neededTime": "decimal",
-    "lineNo": "integer"
+    "status": "Released",
+    "prodOrderNo": "10000",
+    "routingNo": "R-1000",
+    "routingReferenceNo": 1,
+    "operationNo": "10000",
+    "allocatedTime": 100.00,
+    "requestedOnly": false,
+    "workCenterNo": "W100",
+    "workCenterGroupCode": "W100",
+    "date": "2026-01-15",
+    "no": "10000",
+    "type": "Item",
+    "neededTimeMs": 100.00,
+    "neededTime": 100.00,
+    "lineNo": 10000
 }
 ```
 

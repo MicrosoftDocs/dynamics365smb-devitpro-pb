@@ -51,11 +51,11 @@ Here's an example of the response.
 
 ```json
 {
-    "resourceNo": "string",
-    "resourceName": "string",
-    "baseUnitofMeasure": "string",
-    "unitCost": "decimal",
-    "unitPrice": "decimal"
+    "resourceNo": "R00010",
+    "resourceName": "Mary A. Dempsey",
+    "baseUnitofMeasure": "PCS",
+    "unitCost": 25.5,
+    "unitPrice": 49.99
 }
 ```
 

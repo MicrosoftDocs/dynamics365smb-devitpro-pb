@@ -42,18 +42,18 @@ Here's a JSON representation of the jobReceivedNotInvoicedPurchaseLine resource.
 
 ```json
 {
-    "documentType": "string",
-    "documentNo": "string",
-    "no": "string",
-    "lineNo": "integer",
-    "type": "string",
-    "qtyRcdNotInvoicedBase": "decimal",
-    "amtRcdNotInvoicedLCY": "decimal",
-    "jobNo": "string",
-    "jobTaskNo": "string",
-    "expectedReceiptDate": "Date",
-    "dimensionSetID": "integer",
-    "description": "string"
+    "documentType": "Invoice",
+    "documentNo": "103001",
+    "no": "10000",
+    "lineNo": 10000,
+    "type": "Item",
+    "qtyRcdNotInvoicedBase": 10.00,
+    "amtRcdNotInvoicedLCY": 100.00,
+    "jobNo": "J00010",
+    "jobTaskNo": "1000",
+    "expectedReceiptDate": "2026-01-18",
+    "dimensionSetID": 102,
+    "description": "ATHENS Desk"
 }
 ```
 

@@ -51,14 +51,14 @@ Here's an example of the response.
 
 ```json
 {
-    "emissionType": "string",
-    "scopeType": "string",
-    "startingDate": "Date",
-    "endingDate": "Date",
-    "countryRegionCode": "string",
-    "responsibilityCentre": "string",
-    "carbonFee": "decimal",
-    "carbonEquivalentFactor": "decimal"
+    "emissionType": "",
+    "scopeType": "",
+    "startingDate": "2026-01-01",
+    "endingDate": "2026-06-30",
+    "countryRegionCode": "US",
+    "responsibilityCentre": "",
+    "carbonFee": 100.00,
+    "carbonEquivalentFactor": 1.00
 }
 ```
 

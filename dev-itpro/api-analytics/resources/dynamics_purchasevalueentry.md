@@ -49,25 +49,25 @@ Here's a JSON representation of the purchaseValueEntry resource.
 
 ```json
 {
-    "entryNo": "integer",
-    "entryType": "string",
-    "documentNo": "string",
-    "documentType": "string",
-    "vendorNo": "string",
-    "postingDate": "Date",
-    "itemNo": "string",
-    "locationCode": "string",
-    "dimensionSetID": "integer",
-    "invoicedQuantity": "decimal",
-    "costAmountActual": "decimal",
-    "salespersonPurchaserCode": "string",
-    "returnReasonCode": "string",
-    "projectNo": "string",
-    "adjustment": "boolean",
-    "capacityLedgerEntryNo": "integer",
-    "discountAmount": "decimal",
-    "itemLedgerEntryNo": "integer",
-    "itemLedgerEntryType": "string"
+    "entryNo": 1001,
+    "entryType": "Sale",
+    "documentNo": "103001",
+    "documentType": "Invoice",
+    "vendorNo": "20000",
+    "postingDate": "2026-01-15",
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "dimensionSetID": 102,
+    "invoicedQuantity": 10.00,
+    "costAmountActual": 25.5,
+    "salespersonPurchaserCode": "JR",
+    "returnReasonCode": "RETURN",
+    "projectNo": "10000",
+    "adjustment": false,
+    "capacityLedgerEntryNo": 1002,
+    "discountAmount": 1500.00,
+    "itemLedgerEntryNo": 1003,
+    "itemLedgerEntryType": "Sale"
 }
 ```
 

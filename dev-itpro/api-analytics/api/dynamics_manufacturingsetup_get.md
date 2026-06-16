@@ -51,8 +51,8 @@ Here's an example of the response.
 
 ```json
 {
-    "showCapacityIn": "string",
-    "auxiliaryIndex1": "string"
+    "showCapacityIn": "",
+    "auxiliaryIndex1": ""
 }
 ```
 

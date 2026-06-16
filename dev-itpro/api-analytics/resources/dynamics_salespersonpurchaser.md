@@ -32,8 +32,8 @@ Here's a JSON representation of the salespersonPurchaser resource.
 
 ```json
 {
-    "salespersonPurchaserCode": "string",
-    "salespersonPurchaserName": "string"
+    "salespersonPurchaserCode": "JR",
+    "salespersonPurchaserName": "JR"
 }
 ```
 

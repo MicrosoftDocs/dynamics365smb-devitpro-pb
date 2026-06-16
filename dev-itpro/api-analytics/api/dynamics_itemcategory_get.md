@@ -51,10 +51,10 @@ Here's an example of the response.
 
 ```json
 {
-    "code": "string",
-    "description": "string",
-    "parentCategory": "string",
-    "systemId": "GUID"
+    "code": "DEPARTMENT",
+    "description": "ATHENS Desk",
+    "parentCategory": "",
+    "systemId": ""
 }
 ```
 

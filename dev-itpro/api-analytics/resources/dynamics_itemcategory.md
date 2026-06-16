@@ -34,10 +34,10 @@ Here's a JSON representation of the itemCategory resource.
 
 ```json
 {
-    "code": "string",
-    "description": "string",
-    "parentCategory": "string",
-    "systemId": "GUID"
+    "code": "DEPARTMENT",
+    "description": "ATHENS Desk",
+    "parentCategory": "",
+    "systemId": ""
 }
 ```
 

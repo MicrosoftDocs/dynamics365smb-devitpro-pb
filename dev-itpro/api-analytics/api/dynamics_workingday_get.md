@@ -51,8 +51,8 @@ Here's an example of the response.
 
 ```json
 {
-    "dayNumber": "integer",
-    "id": "GUID"
+    "dayNumber": 1,
+    "id": ""
 }
 ```
 

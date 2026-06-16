@@ -51,17 +51,17 @@ Here's an example of the response.
 
 ```json
 {
-    "actionType": "string",
-    "assembleToOrder": "boolean",
-    "atoComponent": "boolean",
-    "binCode": "string",
-    "itemNo": "string",
-    "locationCode": "string",
-    "qtyBase": "decimal",
-    "lotNo": "string",
-    "serialNo": "string",
-    "qtyPerUnitOfMeasure": "decimal",
-    "unitOfMeasureCode": "string"
+    "actionType": "",
+    "assembleToOrder": false,
+    "atoComponent": false,
+    "binCode": "B-01-0001",
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "qtyBase": 10.00,
+    "lotNo": "10000",
+    "serialNo": "10000",
+    "qtyPerUnitOfMeasure": 10.00,
+    "unitOfMeasureCode": "PCS"
 }
 ```
 

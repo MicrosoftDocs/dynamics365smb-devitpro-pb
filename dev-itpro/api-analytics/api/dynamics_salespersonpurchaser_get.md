@@ -51,8 +51,8 @@ Here's an example of the response.
 
 ```json
 {
-    "salespersonPurchaserCode": "string",
-    "salespersonPurchaserName": "string"
+    "salespersonPurchaserCode": "JR",
+    "salespersonPurchaserName": "JR"
 }
 ```
 

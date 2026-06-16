@@ -37,13 +37,13 @@ Here's a JSON representation of the generalLedgerAccount resource.
 
 ```json
 {
-    "accountNo": "string",
-    "accountName": "string",
-    "accountType": "string",
-    "incomeBalance": "string",
-    "accountSubcategoryEntryNo": "integer",
-    "indentation": "integer",
-    "totaling": "string"
+    "accountNo": "6120",
+    "accountName": "Advertising",
+    "accountType": "Posting",
+    "incomeBalance": "Income Statement",
+    "accountSubcategoryEntryNo": 1001,
+    "indentation": 0,
+    "totaling": "6110..6190"
 }
 ```
 

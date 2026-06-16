@@ -51,10 +51,10 @@ Here's an example of the response.
 
 ```json
 {
-    "categoryCode": "string",
-    "subcategoryCode": "string",
-    "subCategoryDescription": "string",
-    "subCategoryRenewableEnergy": "boolean"
+    "categoryCode": "10000",
+    "subcategoryCode": "10000",
+    "subCategoryDescription": "Standard posting",
+    "subCategoryRenewableEnergy": false
 }
 ```
 

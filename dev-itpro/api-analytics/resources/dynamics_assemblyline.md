@@ -38,14 +38,14 @@ Here's a JSON representation of the assemblyLine resource.
 
 ```json
 {
-    "itemNo": "string",
-    "remainingQuantity": "decimal",
-    "dueDate": "Date",
-    "locationCode": "string",
-    "documentNo": "string",
-    "dimensionSetID": "integer",
-    "qtyPerUnitOfMeasure": "decimal",
-    "unitOfMeasureCode": "string"
+    "itemNo": "1896-S",
+    "remainingQuantity": 10.00,
+    "dueDate": "2026-02-28",
+    "locationCode": "BLUE",
+    "documentNo": "103001",
+    "dimensionSetID": 102,
+    "qtyPerUnitOfMeasure": 10.00,
+    "unitOfMeasureCode": "PCS"
 }
 ```
 

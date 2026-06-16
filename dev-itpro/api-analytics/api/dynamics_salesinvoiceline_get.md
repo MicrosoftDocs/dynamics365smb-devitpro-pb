@@ -51,27 +51,27 @@ Here's an example of the response.
 
 ```json
 {
-    "postingDate": "Date",
-    "type": "string",
-    "description": "string",
-    "documentNo": "string",
-    "lineNo": "integer",
-    "no": "string",
-    "locationCode": "string",
-    "quantityBase": "decimal",
-    "amount": "decimal",
-    "unitCostLCY": "decimal",
-    "returnReasonCode": "string",
-    "shipmentDate": "Date",
-    "dimensionSetID": "integer",
-    "projectNo": "string",
-    "billToCustomerNo": "string",
-    "sellToCustomerNo": "string",
-    "salesInvoiceDocumentNo": "string",
-    "campaignNo": "string",
-    "salespersonCode": "string",
-    "opportunityNo": "string",
-    "quoteNo": "string"
+    "postingDate": "2026-01-15",
+    "type": "Item",
+    "description": "ATHENS Desk",
+    "documentNo": "103001",
+    "lineNo": 10000,
+    "no": "10000",
+    "locationCode": "BLUE",
+    "quantityBase": 10.00,
+    "amount": 1500.00,
+    "unitCostLCY": 25.5,
+    "returnReasonCode": "RETURN",
+    "shipmentDate": "2026-01-20",
+    "dimensionSetID": 102,
+    "projectNo": "10000",
+    "billToCustomerNo": "10000",
+    "sellToCustomerNo": "10000",
+    "salesInvoiceDocumentNo": "103001",
+    "campaignNo": "10000",
+    "salespersonCode": "JR",
+    "opportunityNo": "10000",
+    "quoteNo": "10000"
 }
 ```
 

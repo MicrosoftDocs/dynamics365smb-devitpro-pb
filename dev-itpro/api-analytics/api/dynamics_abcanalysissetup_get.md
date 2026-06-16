@@ -51,10 +51,10 @@ Here's an example of the response.
 
 ```json
 {
-    "categoryA": "decimal",
-    "categoryB": "decimal",
-    "categoryC": "decimal",
-    "auxiliaryIndex1": "string"
+    "categoryA": 100.00,
+    "categoryB": 100.00,
+    "categoryC": 100.00,
+    "auxiliaryIndex1": ""
 }
 ```
 

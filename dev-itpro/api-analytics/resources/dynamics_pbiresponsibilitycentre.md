@@ -33,9 +33,9 @@ Here's a JSON representation of the pbiResponsibilityCentre resource.
 
 ```json
 {
-    "code": "string",
-    "name": "string",
-    "waterCapactiybyMonth": "decimal"
+    "code": "DEPARTMENT",
+    "name": "Adatum Corporation",
+    "waterCapactiybyMonth": 100.00
 }
 ```
 

@@ -40,16 +40,16 @@ Here's a JSON representation of the pbiEmployee resource.
 
 ```json
 {
-    "no": "string",
-    "firstName": "string",
-    "lastName": "string",
-    "gender": "string",
-    "unionCode": "string",
-    "status": "string",
-    "casueofInactivty": "string",
-    "inactivedate": "Date",
-    "groudForTermCode": "string",
-    "dateOfBirth": "Date"
+    "no": "10000",
+    "firstName": "Adatum Corporation",
+    "lastName": "Adatum Corporation",
+    "gender": "",
+    "unionCode": "10000",
+    "status": "Released",
+    "casueofInactivty": "",
+    "inactivedate": "2026-01-15",
+    "groudForTermCode": "10000",
+    "dateOfBirth": "2026-01-15"
 }
 ```
 

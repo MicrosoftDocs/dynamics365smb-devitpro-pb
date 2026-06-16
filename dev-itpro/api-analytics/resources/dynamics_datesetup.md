@@ -48,24 +48,24 @@ Here's a JSON representation of the dateSetup resource.
 
 ```json
 {
-    "entryNo": "string",
-    "id": "GUID",
-    "fiscalCalendarFirstMonth": "integer",
-    "firstDayOfWeek": "string",
-    "isoCountryHolidays": "string",
-    "weeklyType": "string",
-    "quarterWeekType": "string",
-    "calendarRange": "string",
-    "calendarPrefix": "string",
-    "fiscalGregorianPrefix": "string",
-    "fiscalWeeklyPrefix": "string",
-    "useCustomFisclPeriods": "boolean",
-    "ignoreWeeklyPeriods": "boolean",
-    "timeZone": "string",
-    "timeZoneDisplayName": "string",
-    "dateTblStart": "Date",
-    "dateTblEnd": "Date",
-    "tenantID": "string"
+    "entryNo": "10000",
+    "id": "",
+    "fiscalCalendarFirstMonth": 1,
+    "firstDayOfWeek": "",
+    "isoCountryHolidays": "",
+    "weeklyType": "",
+    "quarterWeekType": "",
+    "calendarRange": "",
+    "calendarPrefix": "",
+    "fiscalGregorianPrefix": "",
+    "fiscalWeeklyPrefix": "",
+    "useCustomFisclPeriods": false,
+    "ignoreWeeklyPeriods": false,
+    "timeZone": "",
+    "timeZoneDisplayName": "Adatum Corporation",
+    "dateTblStart": "2026-01-01",
+    "dateTblEnd": "2026-06-30",
+    "tenantID": ""
 }
 ```
 

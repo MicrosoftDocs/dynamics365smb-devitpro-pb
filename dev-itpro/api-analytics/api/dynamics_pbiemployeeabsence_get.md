@@ -51,13 +51,13 @@ Here's an example of the response.
 
 ```json
 {
-    "employeeNo": "string",
-    "entryNo": "integer",
-    "fromDate": "Date",
-    "toDate": "Date",
-    "causeofAbsenceCode": "string",
-    "quantitybase": "decimal",
-    "description": "string"
+    "employeeNo": "10000",
+    "entryNo": 1001,
+    "fromDate": "2026-01-15",
+    "toDate": "2026-01-15",
+    "causeofAbsenceCode": "10000",
+    "quantitybase": 10.00,
+    "description": "ATHENS Desk"
 }
 ```
 

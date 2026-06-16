@@ -40,16 +40,16 @@ Here's a JSON representation of the outstandingPurchaseLine resource.
 
 ```json
 {
-    "itemNo": "string",
-    "outstandingQtyBase": "decimal",
-    "expectedReceiptDate": "Date",
-    "locationCode": "string",
-    "buyFromVendorNo": "string",
-    "documentNo": "string",
-    "documentType": "string",
-    "dimensionSetID": "integer",
-    "qtyPerUnitOfMeasure": "decimal",
-    "unitOfMeasureCode": "string"
+    "itemNo": "1896-S",
+    "outstandingQtyBase": 10.00,
+    "expectedReceiptDate": "2026-01-18",
+    "locationCode": "BLUE",
+    "buyFromVendorNo": "10000",
+    "documentNo": "103001",
+    "documentType": "Invoice",
+    "dimensionSetID": 102,
+    "qtyPerUnitOfMeasure": 10.00,
+    "unitOfMeasureCode": "PCS"
 }
 ```
 

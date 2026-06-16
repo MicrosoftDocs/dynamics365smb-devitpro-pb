@@ -33,9 +33,9 @@ Here's a JSON representation of the accountCategory resource.
 
 ```json
 {
-    "powerBIAccCategory": "string",
-    "glAccCategoryEntryNo": "integer",
-    "parentAccCategoryEntryNo": "integer"
+    "powerBIAccCategory": "",
+    "glAccCategoryEntryNo": 1001,
+    "parentAccCategoryEntryNo": 1002
 }
 ```
 

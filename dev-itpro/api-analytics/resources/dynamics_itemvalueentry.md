@@ -44,20 +44,20 @@ Here's a JSON representation of the itemValueEntry resource.
 
 ```json
 {
-    "entryNo": "integer",
-    "valuationDate": "Date",
-    "itemNo": "string",
-    "costAmountActual": "decimal",
-    "costAmountExpected": "decimal",
-    "costPostedToGL": "decimal",
-    "invoicedQuantity": "decimal",
-    "expectedCostPostedToGL": "decimal",
-    "locationCode": "string",
-    "itemLedgerEntryType": "string",
-    "postingDate": "Date",
-    "documentType": "string",
-    "type": "string",
-    "dimensionSetID": "integer"
+    "entryNo": 1001,
+    "valuationDate": "2026-01-15",
+    "itemNo": "1896-S",
+    "costAmountActual": 25.5,
+    "costAmountExpected": 25.5,
+    "costPostedToGL": 25.5,
+    "invoicedQuantity": 10.00,
+    "expectedCostPostedToGL": 25.5,
+    "locationCode": "BLUE",
+    "itemLedgerEntryType": "Sale",
+    "postingDate": "2026-01-15",
+    "documentType": "Invoice",
+    "type": "Item",
+    "dimensionSetID": 102
 }
 ```
 

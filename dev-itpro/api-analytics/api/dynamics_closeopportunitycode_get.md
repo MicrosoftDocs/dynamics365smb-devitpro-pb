@@ -51,9 +51,9 @@ Here's an example of the response.
 
 ```json
 {
-    "closeOpportunityCode": "string",
-    "closeOpportunityType": "string",
-    "closeOpportunityDescription": "string"
+    "closeOpportunityCode": "10000",
+    "closeOpportunityType": "",
+    "closeOpportunityDescription": "Standard posting"
 }
 ```
 

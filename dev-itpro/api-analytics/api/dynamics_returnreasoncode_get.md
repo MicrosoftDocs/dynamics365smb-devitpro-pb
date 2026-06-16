@@ -51,8 +51,8 @@ Here's an example of the response.
 
 ```json
 {
-    "reasonCode": "string",
-    "reasonDescription": "string"
+    "reasonCode": "RETURN",
+    "reasonDescription": "Standard posting"
 }
 ```
 

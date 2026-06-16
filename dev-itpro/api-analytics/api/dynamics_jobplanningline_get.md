@@ -51,20 +51,20 @@ Here's an example of the response.
 
 ```json
 {
-    "jobNo": "string",
-    "jobTaskNo": "string",
-    "lineNo": "integer",
-    "jobType": "string",
-    "lineType": "string",
-    "no": "string",
-    "description": "string",
-    "quantity": "decimal",
-    "unitCostLCY": "decimal",
-    "totalCostLCY": "decimal",
-    "unitPriceLCY": "decimal",
-    "lineAmountLCY": "decimal",
-    "totalPriceLCY": "decimal",
-    "planningDate": "Date"
+    "jobNo": "J00010",
+    "jobTaskNo": "1000",
+    "lineNo": 10000,
+    "jobType": "",
+    "lineType": "",
+    "no": "10000",
+    "description": "ATHENS Desk",
+    "quantity": 10.00,
+    "unitCostLCY": 25.5,
+    "totalCostLCY": 25.5,
+    "unitPriceLCY": 49.99,
+    "lineAmountLCY": 1500.00,
+    "totalPriceLCY": 49.99,
+    "planningDate": "2026-01-15"
 }
 ```
 

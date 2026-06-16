@@ -39,15 +39,15 @@ Here's a JSON representation of the vendor resource.
 
 ```json
 {
-    "vendorNo": "string",
-    "vendorName": "string",
-    "address": "string",
-    "address2": "string",
-    "city": "string",
-    "postCode": "string",
-    "county": "string",
-    "countryRegionCode": "string",
-    "vendorPostingGroup": "string"
+    "vendorNo": "20000",
+    "vendorName": "Fabrikam, Inc.",
+    "address": "192 Market Square",
+    "address2": "Suite 200",
+    "city": "Atlanta",
+    "postCode": "31772",
+    "county": "GA",
+    "countryRegionCode": "US",
+    "vendorPostingGroup": "DOMESTIC"
 }
 ```
 

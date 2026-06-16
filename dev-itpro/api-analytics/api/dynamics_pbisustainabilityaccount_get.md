@@ -51,10 +51,10 @@ Here's an example of the response.
 
 ```json
 {
-    "sustainabilityAccountNo": "string",
-    "sustainabilityAccountName": "string",
-    "sustainabilityAccountCategory": "string",
-    "sustainabilityAccountSubCategory": "string"
+    "sustainabilityAccountNo": "10000",
+    "sustainabilityAccountName": "Adatum Corporation",
+    "sustainabilityAccountCategory": "",
+    "sustainabilityAccountSubCategory": ""
 }
 ```
 

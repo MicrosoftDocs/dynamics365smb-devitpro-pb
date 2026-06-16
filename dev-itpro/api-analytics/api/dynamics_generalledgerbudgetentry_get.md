@@ -51,12 +51,12 @@ Here's an example of the response.
 
 ```json
 {
-    "budgetName": "string",
-    "glAccountNo": "string",
-    "budgetDate": "Date",
-    "budgetAmount": "decimal",
-    "dimensionSetID": "integer",
-    "entryNo": "integer"
+    "budgetName": "Adatum Corporation",
+    "glAccountNo": "10000",
+    "budgetDate": "2026-01-15",
+    "budgetAmount": 1500.00,
+    "dimensionSetID": 102,
+    "entryNo": 1001
 }
 ```
 

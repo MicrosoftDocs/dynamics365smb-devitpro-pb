@@ -41,17 +41,17 @@ Here's a JSON representation of the opportunity resource.
 
 ```json
 {
-    "opportunityNo": "string",
-    "opportunityDescription": "string",
-    "opportunitySalesCycle": "string",
-    "opportunityCreationDate": "Date",
-    "opportunityStatus": "string",
-    "opportunityClosed": "boolean",
-    "opportunitySalesDocumentNo": "string",
-    "opportunitySalesDocumentType": "string",
-    "opportunityPriority": "string",
-    "opportunityCampaignNo": "string",
-    "opportunitySegmentNo": "string"
+    "opportunityNo": "10000",
+    "opportunityDescription": "Standard posting",
+    "opportunitySalesCycle": "",
+    "opportunityCreationDate": "2026-01-15",
+    "opportunityStatus": "Released",
+    "opportunityClosed": false,
+    "opportunitySalesDocumentNo": "103001",
+    "opportunitySalesDocumentType": "Invoice",
+    "opportunityPriority": "",
+    "opportunityCampaignNo": "10000",
+    "opportunitySegmentNo": "10000"
 }
 ```
 

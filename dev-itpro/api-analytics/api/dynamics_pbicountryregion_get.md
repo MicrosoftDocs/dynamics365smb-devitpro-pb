@@ -51,8 +51,8 @@ Here's an example of the response.
 
 ```json
 {
-    "code": "string",
-    "name": "string"
+    "code": "DEPARTMENT",
+    "name": "Adatum Corporation"
 }
 ```
 

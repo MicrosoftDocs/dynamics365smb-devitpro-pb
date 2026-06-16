@@ -41,17 +41,17 @@ Here's a JSON representation of the customer resource.
 
 ```json
 {
-    "customerNo": "string",
-    "customerName": "string",
-    "address": "string",
-    "address2": "string",
-    "city": "string",
-    "postCode": "string",
-    "county": "string",
-    "countryRegionCode": "string",
-    "customerPostingGroup": "string",
-    "customerPriceGroup": "string",
-    "customerDiscGroup": "string"
+    "customerNo": "10000",
+    "customerName": "Adatum Corporation",
+    "address": "192 Market Square",
+    "address2": "Suite 200",
+    "city": "Atlanta",
+    "postCode": "31772",
+    "county": "GA",
+    "countryRegionCode": "US",
+    "customerPostingGroup": "DOMESTIC",
+    "customerPriceGroup": "PRICEGROUP",
+    "customerDiscGroup": "DISCGROUP"
 }
 ```
 

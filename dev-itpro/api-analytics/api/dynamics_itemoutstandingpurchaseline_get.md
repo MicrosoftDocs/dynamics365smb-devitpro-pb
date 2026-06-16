@@ -51,19 +51,19 @@ Here's an example of the response.
 
 ```json
 {
-    "purchOrderNo": "string",
-    "documentType": "string",
-    "vendorNo": "string",
-    "orderDate": "Date",
-    "purchaserCode": "string",
-    "purchaseLineDocumentType": "string",
-    "documentNo": "string",
-    "lineNo": "integer",
-    "itemNo": "string",
-    "locationCode": "string",
-    "outstandingQtyBase": "decimal",
-    "outstandingAmountLCY": "decimal",
-    "dimensionSetID": "integer"
+    "purchOrderNo": "10000",
+    "documentType": "Invoice",
+    "vendorNo": "20000",
+    "orderDate": "2026-01-12",
+    "purchaserCode": "JR",
+    "purchaseLineDocumentType": "Invoice",
+    "documentNo": "103001",
+    "lineNo": 10000,
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "outstandingQtyBase": 10.00,
+    "outstandingAmountLCY": 1500.00,
+    "dimensionSetID": 102
 }
 ```
 

@@ -32,8 +32,8 @@ Here's a JSON representation of the generalLedgerBudget resource.
 
 ```json
 {
-    "budgetName": "string",
-    "budgetDescription": "string"
+    "budgetName": "Adatum Corporation",
+    "budgetDescription": "Standard posting"
 }
 ```
 

@@ -51,9 +51,9 @@ Here's an example of the response.
 
 ```json
 {
-    "analysisArea": "string",
-    "budgetName": "string",
-    "budgetDescription": "string"
+    "analysisArea": "",
+    "budgetName": "Adatum Corporation",
+    "budgetDescription": "Standard posting"
 }
 ```
 

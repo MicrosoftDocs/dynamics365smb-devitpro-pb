@@ -51,21 +51,21 @@ Here's an example of the response.
 
 ```json
 {
-    "salesOrderNo": "string",
-    "documentType": "string",
-    "customerNo": "string",
-    "orderDate": "Date",
-    "salespersonCode": "string",
-    "salesLineDocumentType": "string",
-    "documentNo": "string",
-    "lineNo": "integer",
-    "itemNo": "string",
-    "locationCode": "string",
-    "qtyShippedNotInvdBase": "decimal",
-    "shippedNotInvoicedLCY": "decimal",
-    "unitCostLCY": "decimal",
-    "shippedNotInvoiced": "decimal",
-    "dimensionSetID": "integer"
+    "salesOrderNo": "10000",
+    "documentType": "Invoice",
+    "customerNo": "10000",
+    "orderDate": "2026-01-12",
+    "salespersonCode": "JR",
+    "salesLineDocumentType": "Invoice",
+    "documentNo": "103001",
+    "lineNo": 10000,
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "qtyShippedNotInvdBase": 10.00,
+    "shippedNotInvoicedLCY": 100.00,
+    "unitCostLCY": 25.5,
+    "shippedNotInvoiced": 100.00,
+    "dimensionSetID": 102
 }
 ```
 

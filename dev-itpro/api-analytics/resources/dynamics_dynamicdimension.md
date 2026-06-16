@@ -39,15 +39,15 @@ Here's a JSON representation of the dynamicDimension resource.
 
 ```json
 {
-    "dimensionSetID": "integer",
-    "customDimensionValueCode": "string",
-    "modifiedAt": "datetime",
-    "customDimensionValueName": "string",
-    "globalDimensionNo": "integer",
-    "customDimensionName": "string",
-    "customDimensionCode": "string",
-    "modifiedAtDimensionValue": "datetime",
-    "noRows": "integer"
+    "dimensionSetID": 102,
+    "customDimensionValueCode": "SALES",
+    "modifiedAt": "",
+    "customDimensionValueName": "Sales",
+    "globalDimensionNo": 1,
+    "customDimensionName": "Department",
+    "customDimensionCode": "DEPARTMENT",
+    "modifiedAtDimensionValue": "",
+    "noRows": 1
 }
 ```
 

@@ -36,12 +36,12 @@ Here's a JSON representation of the workCenter resource.
 
 ```json
 {
-    "no": "string",
-    "name": "string",
-    "workCenterGroupCode": "string",
-    "subcontractorNo": "string",
-    "unitOfMeasureCode": "string",
-    "workCenterGroupName": "string"
+    "no": "10000",
+    "name": "Adatum Corporation",
+    "workCenterGroupCode": "W100",
+    "subcontractorNo": "10000",
+    "unitOfMeasureCode": "PCS",
+    "workCenterGroupName": "Adatum Corporation"
 }
 ```
 

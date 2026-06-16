@@ -43,19 +43,19 @@ Here's a JSON representation of the inventoryAdjustmentEntryOrder resource.
 
 ```json
 {
-    "itemNo": "string",
-    "orderLineNo": "integer",
-    "orderNo": "string",
-    "singleLevelMaterialCost": "decimal",
-    "singleLevelCapacityCost": "decimal",
-    "singleLevelSubcontrdCost": "decimal",
-    "singleLevelCapOvhdCost": "decimal",
-    "singleLevelMfgOvhdCost": "decimal",
-    "iSFinished": "boolean",
-    "completelyInvoiced": "boolean",
-    "indirectCostPercent": "decimal",
-    "overheadRate": "decimal",
-    "auxiliaryIndex1": "string"
+    "itemNo": "1896-S",
+    "orderLineNo": 10000,
+    "orderNo": "10000",
+    "singleLevelMaterialCost": 25.5,
+    "singleLevelCapacityCost": 25.5,
+    "singleLevelSubcontrdCost": 25.5,
+    "singleLevelCapOvhdCost": 25.5,
+    "singleLevelMfgOvhdCost": 25.5,
+    "iSFinished": false,
+    "completelyInvoiced": false,
+    "indirectCostPercent": 25.5,
+    "overheadRate": 1.00,
+    "auxiliaryIndex1": ""
 }
 ```
 

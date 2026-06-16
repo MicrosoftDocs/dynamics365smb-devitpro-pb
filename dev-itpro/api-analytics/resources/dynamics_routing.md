@@ -34,10 +34,10 @@ Here's a JSON representation of the routing resource.
 
 ```json
 {
-    "no": "string",
-    "type": "string",
-    "status": "string",
-    "description": "string"
+    "no": "10000",
+    "type": "Item",
+    "status": "Released",
+    "description": "ATHENS Desk"
 }
 ```
 

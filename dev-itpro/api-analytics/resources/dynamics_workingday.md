@@ -32,8 +32,8 @@ Here's a JSON representation of the workingDay resource.
 
 ```json
 {
-    "dayNumber": "integer",
-    "id": "GUID"
+    "dayNumber": 1,
+    "id": ""
 }
 ```
 
