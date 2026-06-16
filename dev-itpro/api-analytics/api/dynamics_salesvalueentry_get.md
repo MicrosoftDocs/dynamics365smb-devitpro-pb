@@ -51,26 +51,26 @@ Here's an example of the response.
 
 ```json
 {
-    "itemLedgerEntryNo": "integer",
-    "itemLedgerEntryType": "string",
-    "entryNo": "integer",
-    "entryType": "string",
-    "documentNo": "string",
-    "documentType": "string",
-    "invoicedQuantity": "decimal",
-    "salesAmountActual": "decimal",
-    "costAmountActual": "decimal",
-    "costAmountNonInvtbl": "decimal",
-    "costPostedToGL": "decimal",
-    "customerNo": "string",
-    "postingDate": "Date",
-    "documentDate": "Date",
-    "itemNo": "string",
-    "locationCode": "string",
-    "dimensionSetID": "integer",
-    "salespersonPurchaserCode": "string",
-    "returnReasonCode": "string",
-    "projectNo": "string"
+    "itemLedgerEntryNo": 1001,
+    "itemLedgerEntryType": "Sale",
+    "entryNo": 1002,
+    "entryType": "Sale",
+    "documentNo": "103001",
+    "documentType": "Invoice",
+    "invoicedQuantity": 10.00,
+    "salesAmountActual": 1500.00,
+    "costAmountActual": 25.5,
+    "costAmountNonInvtbl": 25.5,
+    "costPostedToGL": 25.5,
+    "customerNo": "10000",
+    "postingDate": "2026-01-15",
+    "documentDate": "2026-01-10",
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "dimensionSetID": 102,
+    "salespersonPurchaserCode": "JR",
+    "returnReasonCode": "RETURN",
+    "projectNo": "10000"
 }
 ```
 

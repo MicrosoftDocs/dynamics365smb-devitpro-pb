@@ -51,16 +51,16 @@ Here's an example of the response.
 
 ```json
 {
-    "status": "string",
-    "no": "string",
-    "sourceType": "string",
-    "sourceNo": "string",
-    "routingNo": "string",
-    "startingDate": "Date",
-    "endingDate": "Date",
-    "dueDate": "Date",
-    "quantity": "decimal",
-    "description": "string"
+    "status": "Released",
+    "no": "10000",
+    "sourceType": "Customer",
+    "sourceNo": "10000",
+    "routingNo": "R-1000",
+    "startingDate": "2026-01-01",
+    "endingDate": "2026-06-30",
+    "dueDate": "2026-02-28",
+    "quantity": 10.00,
+    "description": "ATHENS Desk"
 }
 ```
 

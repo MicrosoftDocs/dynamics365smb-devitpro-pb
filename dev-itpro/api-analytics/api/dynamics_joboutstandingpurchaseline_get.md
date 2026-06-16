@@ -51,18 +51,18 @@ Here's an example of the response.
 
 ```json
 {
-    "documentType": "string",
-    "documentNo": "string",
-    "no": "string",
-    "type": "string",
-    "outstandingQtyBase": "decimal",
-    "outstandingAmountLCY": "decimal",
-    "jobNo": "string",
-    "jobTaskNo": "string",
-    "expectedReceiptDate": "Date",
-    "dimensionSetID": "integer",
-    "description": "string",
-    "auxiliaryIndex1": "integer"
+    "documentType": "Invoice",
+    "documentNo": "103001",
+    "no": "10000",
+    "type": "Item",
+    "outstandingQtyBase": 10.00,
+    "outstandingAmountLCY": 1500.00,
+    "jobNo": "J00010",
+    "jobTaskNo": "1000",
+    "expectedReceiptDate": "2026-01-18",
+    "dimensionSetID": 102,
+    "description": "ATHENS Desk",
+    "auxiliaryIndex1": 1
 }
 ```
 

@@ -51,20 +51,20 @@ Here's an example of the response.
 
 ```json
 {
-    "entryType": "string",
-    "orderType": "string",
-    "orderNo": "string",
-    "orderLineNo": "integer",
-    "postingDate": "Date",
-    "itemNo": "string",
-    "locationCode": "string",
-    "serialNo": "string",
-    "lotNo": "string",
-    "quantity": "decimal",
-    "dimensionSetID": "integer",
-    "positive": "boolean",
-    "costAmountActual": "decimal",
-    "locationName": "string"
+    "entryType": "Sale",
+    "orderType": "",
+    "orderNo": "10000",
+    "orderLineNo": 10000,
+    "postingDate": "2026-01-15",
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "serialNo": "10000",
+    "lotNo": "10000",
+    "quantity": 10.00,
+    "dimensionSetID": 102,
+    "positive": false,
+    "costAmountActual": 25.5,
+    "locationName": "Blue Warehouse"
 }
 ```
 

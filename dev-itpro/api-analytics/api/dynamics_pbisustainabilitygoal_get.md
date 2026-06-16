@@ -51,23 +51,23 @@ Here's an example of the response.
 
 ```json
 {
-    "scoreCardNo": "string",
-    "no": "string",
-    "lineNo": "integer",
-    "name": "string",
-    "owner": "string",
-    "countryRegion": "string",
-    "responsibilityCentre": "string",
-    "targetValueForCo2": "decimal",
-    "targetValueForCh4": "decimal",
-    "targetValueForN2O": "decimal",
-    "targetValueForWaterIntensity": "decimal",
-    "targetValueForWasteIntensity": "decimal",
-    "mainGoal": "boolean",
-    "startDate": "Date",
-    "endDate": "Date",
-    "baselineStartDate": "Date",
-    "baselineEndDate": "Date"
+    "scoreCardNo": "10000",
+    "no": "10000",
+    "lineNo": 10000,
+    "name": "Adatum Corporation",
+    "owner": "",
+    "countryRegion": "",
+    "responsibilityCentre": "",
+    "targetValueForCo2": 100.00,
+    "targetValueForCh4": 100.00,
+    "targetValueForN2O": 100.00,
+    "targetValueForWaterIntensity": 100.00,
+    "targetValueForWasteIntensity": 100.00,
+    "mainGoal": false,
+    "startDate": "2026-01-01",
+    "endDate": "2026-06-30",
+    "baselineStartDate": "2026-01-01",
+    "baselineEndDate": "2026-06-30"
 }
 ```
 

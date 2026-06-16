@@ -42,18 +42,18 @@ Here's a JSON representation of the transferLine resource.
 
 ```json
 {
-    "documentNo": "string",
-    "itemNo": "string",
-    "inTransitLocationCode": "string",
-    "transferToLocationCode": "string",
-    "transferFromLocationCode": "string",
-    "qtyInTransitBase": "decimal",
-    "outstandingQtyBase": "decimal",
-    "receiptDate": "Date",
-    "shipmentDate": "Date",
-    "dimensionSetID": "integer",
-    "qtyPerUnitOfMeasure": "decimal",
-    "unitOfMeasureCode": "string"
+    "documentNo": "103001",
+    "itemNo": "1896-S",
+    "inTransitLocationCode": "10000",
+    "transferToLocationCode": "10000",
+    "transferFromLocationCode": "10000",
+    "qtyInTransitBase": 10.00,
+    "outstandingQtyBase": 10.00,
+    "receiptDate": "2026-01-18",
+    "shipmentDate": "2026-01-20",
+    "dimensionSetID": 102,
+    "qtyPerUnitOfMeasure": 10.00,
+    "unitOfMeasureCode": "PCS"
 }
 ```
 

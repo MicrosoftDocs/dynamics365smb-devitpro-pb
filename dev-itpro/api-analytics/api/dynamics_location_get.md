@@ -51,9 +51,9 @@ Here's an example of the response.
 
 ```json
 {
-    "locationCode": "string",
-    "locationName": "string",
-    "adjustmentBinCode": "string"
+    "locationCode": "BLUE",
+    "locationName": "Blue Warehouse",
+    "adjustmentBinCode": "B-01-0001"
 }
 ```
 

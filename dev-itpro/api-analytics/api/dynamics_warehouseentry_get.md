@@ -51,15 +51,15 @@ Here's an example of the response.
 
 ```json
 {
-    "itemNo": "string",
-    "locationCode": "string",
-    "lotNo": "string",
-    "serialNo": "string",
-    "zoneCode": "string",
-    "binCode": "string",
-    "qtyBase": "decimal",
-    "qtyPerUnitOfMeasure": "decimal",
-    "unitOfMeasureCode": "string"
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "lotNo": "10000",
+    "serialNo": "10000",
+    "zoneCode": "PICK",
+    "binCode": "B-01-0001",
+    "qtyBase": 10.00,
+    "qtyPerUnitOfMeasure": 10.00,
+    "unitOfMeasureCode": "PCS"
 }
 ```
 

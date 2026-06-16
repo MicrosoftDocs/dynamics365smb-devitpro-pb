@@ -43,19 +43,19 @@ Here's a JSON representation of the itemReceivedNotInvoicedPurchaseLine resource
 
 ```json
 {
-    "purchaseOrderNo": "string",
-    "documentType": "string",
-    "vendorNo": "string",
-    "orderDate": "Date",
-    "purchaserCode": "string",
-    "purchaseLineDocumentType": "string",
-    "documentNo": "string",
-    "lineNo": "integer",
-    "itemNo": "string",
-    "locationCode": "string",
-    "qtyRcdNotInvoicedBase": "decimal",
-    "amtRcdNotInvoicedLCY": "decimal",
-    "dimensionSetID": "integer"
+    "purchaseOrderNo": "10000",
+    "documentType": "Invoice",
+    "vendorNo": "20000",
+    "orderDate": "2026-01-12",
+    "purchaserCode": "JR",
+    "purchaseLineDocumentType": "Invoice",
+    "documentNo": "103001",
+    "lineNo": 10000,
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "qtyRcdNotInvoicedBase": 10.00,
+    "amtRcdNotInvoicedLCY": 100.00,
+    "dimensionSetID": 102
 }
 ```
 

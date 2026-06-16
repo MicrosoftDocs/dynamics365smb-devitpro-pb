@@ -51,17 +51,17 @@ Here's an example of the response.
 
 ```json
 {
-    "entryNo": "integer",
-    "parentEntryNo": "integer",
-    "description": "string",
-    "presentationOrder": "string",
-    "siblingSequenceNo": "integer",
-    "indentation": "integer",
-    "accountCategory": "string",
-    "incomeBalance": "string",
-    "additionalReportDefinition": "string",
-    "systemGenerated": "boolean",
-    "hasChildren": "boolean"
+    "entryNo": 1001,
+    "parentEntryNo": 1002,
+    "description": "ATHENS Desk",
+    "presentationOrder": "",
+    "siblingSequenceNo": 1,
+    "indentation": 0,
+    "accountCategory": "",
+    "incomeBalance": "Income Statement",
+    "additionalReportDefinition": "",
+    "systemGenerated": false,
+    "hasChildren": false
 }
 ```
 

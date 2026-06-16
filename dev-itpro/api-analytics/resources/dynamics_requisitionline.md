@@ -46,22 +46,22 @@ Here's a JSON representation of the requisitionLine resource.
 
 ```json
 {
-    "worksheetTemplateName": "string",
-    "journalBatchName": "string",
-    "planningLineOrigin": "string",
-    "replenishmentSystem": "string",
-    "itemNo": "string",
-    "transferFromCode": "string",
-    "locationCode": "string",
-    "dueDate": "Date",
-    "startingDate": "Date",
-    "orderDate": "Date",
-    "transferShipmentDate": "Date",
-    "quantityBase": "decimal",
-    "dimensionSetID": "integer",
-    "qtyPerUnitOfMeasure": "decimal",
-    "unitOfMeasureCode": "string",
-    "auxiliaryIndex1": "integer"
+    "worksheetTemplateName": "Adatum Corporation",
+    "journalBatchName": "Adatum Corporation",
+    "planningLineOrigin": "",
+    "replenishmentSystem": "Purchase",
+    "itemNo": "1896-S",
+    "transferFromCode": "10000",
+    "locationCode": "BLUE",
+    "dueDate": "2026-02-28",
+    "startingDate": "2026-01-01",
+    "orderDate": "2026-01-12",
+    "transferShipmentDate": "2026-01-20",
+    "quantityBase": 10.00,
+    "dimensionSetID": 102,
+    "qtyPerUnitOfMeasure": 10.00,
+    "unitOfMeasureCode": "PCS",
+    "auxiliaryIndex1": 1
 }
 ```
 

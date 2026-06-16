@@ -32,8 +32,8 @@ Here's a JSON representation of the pbiCountryRegion resource.
 
 ```json
 {
-    "code": "string",
-    "name": "string"
+    "code": "DEPARTMENT",
+    "name": "Adatum Corporation"
 }
 ```
 

@@ -51,16 +51,16 @@ Here's an example of the response.
 
 ```json
 {
-    "primaryKey": "string",
-    "shortcutDimension1Code": "string",
-    "shortcutDimension2Code": "string",
-    "shortcutDimension3Code": "string",
-    "shortcutDimension4Code": "string",
-    "shortcutDimension5Code": "string",
-    "shortcutDimension6Code": "string",
-    "shortcutDimension7Code": "string",
-    "shortcutDimension8Code": "string",
-    "localCurrencyCode": "string"
+    "primaryKey": "",
+    "shortcutDimension1Code": "10000",
+    "shortcutDimension2Code": "10000",
+    "shortcutDimension3Code": "10000",
+    "shortcutDimension4Code": "10000",
+    "shortcutDimension5Code": "10000",
+    "shortcutDimension6Code": "10000",
+    "shortcutDimension7Code": "10000",
+    "shortcutDimension8Code": "10000",
+    "localCurrencyCode": "10000"
 }
 ```
 

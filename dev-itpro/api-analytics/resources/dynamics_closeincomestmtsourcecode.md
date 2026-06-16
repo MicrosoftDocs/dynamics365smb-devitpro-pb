@@ -31,7 +31,7 @@ Here's a JSON representation of the closeIncomeStmtSourceCode resource.
 
 ```json
 {
-    "sourceCode": "string"
+    "sourceCode": "10000"
 }
 ```
 

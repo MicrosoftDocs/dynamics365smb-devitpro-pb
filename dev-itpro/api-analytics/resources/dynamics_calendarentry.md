@@ -38,14 +38,14 @@ Here's a JSON representation of the calendarEntry resource.
 
 ```json
 {
-    "capacityType": "string",
-    "no": "string",
-    "workCenterGroupCode": "string",
-    "workShiftCode": "string",
-    "date": "Date",
-    "capacityEffective": "decimal",
-    "capacityTotal": "decimal",
-    "workCenterNo": "string"
+    "capacityType": "",
+    "no": "10000",
+    "workCenterGroupCode": "W100",
+    "workShiftCode": "10000",
+    "date": "2026-01-15",
+    "capacityEffective": 100.00,
+    "capacityTotal": 100.00,
+    "workCenterNo": "W100"
 }
 ```
 

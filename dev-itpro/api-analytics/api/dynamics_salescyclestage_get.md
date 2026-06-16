@@ -51,9 +51,9 @@ Here's an example of the response.
 
 ```json
 {
-    "salesCycleCode": "string",
-    "salesCycleStage": "integer",
-    "salesCycleStageDescription": "string"
+    "salesCycleCode": "10000",
+    "salesCycleStage": 1,
+    "salesCycleStageDescription": "1"
 }
 ```
 

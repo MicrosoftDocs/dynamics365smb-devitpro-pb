@@ -51,24 +51,24 @@ Here's an example of the response.
 
 ```json
 {
-    "sustainAccountNo": "string",
-    "entryNo": "integer",
-    "postingDate": "Date",
-    "documentType": "string",
-    "emissionco2": "decimal",
-    "emissionch4": "decimal",
-    "emissionN2O": "decimal",
-    "emissionCo2e": "decimal",
-    "carbonFee": "decimal",
-    "waterIntensity": "decimal",
-    "dischargedIntoWater": "decimal",
-    "wasteIntensity": "decimal",
-    "dimensionSetID": "integer",
-    "responsibilityCenter": "string",
-    "countryRegionCode": "string",
-    "description": "string",
-    "waterType": "string",
-    "waterWasteIntensityType": "string"
+    "sustainAccountNo": "10000",
+    "entryNo": 1001,
+    "postingDate": "2026-01-15",
+    "documentType": "Invoice",
+    "emissionco2": 100.00,
+    "emissionch4": 100.00,
+    "emissionN2O": 100.00,
+    "emissionCo2e": 100.00,
+    "carbonFee": 100.00,
+    "waterIntensity": 100.00,
+    "dischargedIntoWater": 100.00,
+    "wasteIntensity": 100.00,
+    "dimensionSetID": 102,
+    "responsibilityCenter": "",
+    "countryRegionCode": "US",
+    "description": "ATHENS Desk",
+    "waterType": "",
+    "waterWasteIntensityType": ""
 }
 ```
 

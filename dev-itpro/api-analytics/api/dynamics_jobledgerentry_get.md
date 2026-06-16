@@ -51,22 +51,22 @@ Here's an example of the response.
 
 ```json
 {
-    "jobNo": "string",
-    "jobTaskNo": "string",
-    "postingDate": "Date",
-    "entryType": "string",
-    "type": "string",
-    "no": "string",
-    "description": "string",
-    "locationCode": "string",
-    "unitOfMeasureCode": "string",
-    "quantity": "decimal",
-    "unitCostLCY": "decimal",
-    "totalCostLCY": "decimal",
-    "unitPrice": "decimal",
-    "totalPriceLCY": "decimal",
-    "dimensionSetID": "integer",
-    "auxiliaryIndex1": "integer"
+    "jobNo": "J00010",
+    "jobTaskNo": "1000",
+    "postingDate": "2026-01-15",
+    "entryType": "Sale",
+    "type": "Item",
+    "no": "10000",
+    "description": "ATHENS Desk",
+    "locationCode": "BLUE",
+    "unitOfMeasureCode": "PCS",
+    "quantity": 10.00,
+    "unitCostLCY": 25.5,
+    "totalCostLCY": 25.5,
+    "unitPrice": 49.99,
+    "totalPriceLCY": 49.99,
+    "dimensionSetID": 102,
+    "auxiliaryIndex1": 1
 }
 ```
 

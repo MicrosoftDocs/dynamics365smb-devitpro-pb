@@ -43,19 +43,19 @@ Here's a JSON representation of the manufacturingProdOrderComponent resource.
 
 ```json
 {
-    "prodOrderStatus": "string",
-    "prodOrderNo": "string",
-    "prodOrderLineNo": "integer",
-    "itemNo": "string",
-    "locationCode": "string",
-    "expectedQtyBase": "decimal",
-    "remainingQtyBase": "decimal",
-    "dueDate": "Date",
-    "routingLinkCode": "string",
-    "dimensionSetID": "integer",
-    "costAmount": "decimal",
-    "locationName": "string",
-    "auxiliaryIndex1": "integer"
+    "prodOrderStatus": "Released",
+    "prodOrderNo": "10000",
+    "prodOrderLineNo": 10000,
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "expectedQtyBase": 10.00,
+    "remainingQtyBase": 10.00,
+    "dueDate": "2026-02-28",
+    "routingLinkCode": "10000",
+    "dimensionSetID": 102,
+    "costAmount": 25.5,
+    "locationName": "Blue Warehouse",
+    "auxiliaryIndex1": 1
 }
 ```
 

@@ -39,15 +39,15 @@ Here's a JSON representation of the toBinWarehouseJournalLine resource.
 
 ```json
 {
-    "toBinCode": "string",
-    "itemNo": "string",
-    "locationCode": "string",
-    "qtyBase": "decimal",
-    "lotNo": "string",
-    "serialNo": "string",
-    "toZoneCode": "string",
-    "qtyPerUnitOfMeasure": "decimal",
-    "unitOfMeasureCode": "string"
+    "toBinCode": "B-01-0001",
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "qtyBase": 10.00,
+    "lotNo": "10000",
+    "serialNo": "10000",
+    "toZoneCode": "PICK",
+    "qtyPerUnitOfMeasure": 10.00,
+    "unitOfMeasureCode": "PCS"
 }
 ```
 

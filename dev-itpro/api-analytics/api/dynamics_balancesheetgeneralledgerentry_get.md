@@ -51,17 +51,17 @@ Here's an example of the response.
 
 ```json
 {
-    "incomeBalance": "string",
-    "glAccountNo": "string",
-    "postingDate": "Date",
-    "amount": "decimal",
-    "dimensionSetID": "integer",
-    "sourceCode": "string",
-    "entryNo": "integer",
-    "systemModifiedAt": "datetime",
-    "description": "string",
-    "sourceType": "string",
-    "sourceNo": "string"
+    "incomeBalance": "Income Statement",
+    "glAccountNo": "10000",
+    "postingDate": "2026-01-15",
+    "amount": 1500.00,
+    "dimensionSetID": 102,
+    "sourceCode": "10000",
+    "entryNo": 1001,
+    "systemModifiedAt": "",
+    "description": "ATHENS Desk",
+    "sourceType": "Customer",
+    "sourceNo": "10000"
 }
 ```
 

@@ -33,9 +33,9 @@ Here's a JSON representation of the itemBudget resource.
 
 ```json
 {
-    "analysisArea": "string",
-    "budgetName": "string",
-    "budgetDescription": "string"
+    "analysisArea": "",
+    "budgetName": "Adatum Corporation",
+    "budgetDescription": "Standard posting"
 }
 ```
 

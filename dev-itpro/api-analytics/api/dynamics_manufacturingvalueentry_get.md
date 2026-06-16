@@ -51,27 +51,27 @@ Here's an example of the response.
 
 ```json
 {
-    "entryNo": "integer",
-    "entryType": "string",
-    "capacityLedgerEntryNo": "integer",
-    "valuationDate": "Date",
-    "itemNo": "string",
-    "costAmountActual": "decimal",
-    "costAmountExpected": "decimal",
-    "expectedCostPostedtoGL": "decimal",
-    "costPostedtoGL": "decimal",
-    "costPerUnit": "decimal",
-    "itemLedgerEntryQuantity": "decimal",
-    "valuedQuantity": "decimal",
-    "locationCode": "string",
-    "itemLedgerEntryType": "string",
-    "postingDate": "Date",
-    "type": "string",
-    "no": "string",
-    "dimensionSetID": "integer",
-    "orderType": "string",
-    "orderNo": "string",
-    "expectedCost": "boolean"
+    "entryNo": 1001,
+    "entryType": "Sale",
+    "capacityLedgerEntryNo": 1002,
+    "valuationDate": "2026-01-15",
+    "itemNo": "1896-S",
+    "costAmountActual": 25.5,
+    "costAmountExpected": 25.5,
+    "expectedCostPostedtoGL": 25.5,
+    "costPostedtoGL": 25.5,
+    "costPerUnit": 25.5,
+    "itemLedgerEntryQuantity": 10.00,
+    "valuedQuantity": 10.00,
+    "locationCode": "BLUE",
+    "itemLedgerEntryType": "Sale",
+    "postingDate": "2026-01-15",
+    "type": "Item",
+    "no": "10000",
+    "dimensionSetID": 102,
+    "orderType": "",
+    "orderNo": "10000",
+    "expectedCost": false
 }
 ```
 

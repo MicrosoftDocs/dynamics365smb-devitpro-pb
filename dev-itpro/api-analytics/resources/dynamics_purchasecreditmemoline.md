@@ -49,25 +49,25 @@ Here's a JSON representation of the purchaseCreditMemoLine resource.
 
 ```json
 {
-    "postingDate": "Date",
-    "type": "string",
-    "description": "string",
-    "documentNo": "string",
-    "lineNo": "integer",
-    "no": "string",
-    "locationCode": "string",
-    "quantityBase": "decimal",
-    "amount": "decimal",
-    "unitCostLCY": "decimal",
-    "returnReasonCode": "string",
-    "expectedReceiptDate": "Date",
-    "dimensionSetID": "integer",
-    "projectNo": "string",
-    "payToVendorNo": "string",
-    "buyFromVendorNo": "string",
-    "purchaseCreditMemoDocumentNo": "string",
-    "campaignNo": "string",
-    "purchaserCode": "string"
+    "postingDate": "2026-01-15",
+    "type": "Item",
+    "description": "ATHENS Desk",
+    "documentNo": "103001",
+    "lineNo": 10000,
+    "no": "10000",
+    "locationCode": "BLUE",
+    "quantityBase": 10.00,
+    "amount": 1500.00,
+    "unitCostLCY": 25.5,
+    "returnReasonCode": "RETURN",
+    "expectedReceiptDate": "2026-01-18",
+    "dimensionSetID": 102,
+    "projectNo": "10000",
+    "payToVendorNo": "10000",
+    "buyFromVendorNo": "10000",
+    "purchaseCreditMemoDocumentNo": "103001",
+    "campaignNo": "10000",
+    "purchaserCode": "JR"
 }
 ```
 

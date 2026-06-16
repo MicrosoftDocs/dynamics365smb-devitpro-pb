@@ -33,9 +33,9 @@ Here's a JSON representation of the machineCenter resource.
 
 ```json
 {
-    "no": "string",
-    "name": "string",
-    "workCenterNo": "string"
+    "no": "10000",
+    "name": "Adatum Corporation",
+    "workCenterNo": "W100"
 }
 ```
 

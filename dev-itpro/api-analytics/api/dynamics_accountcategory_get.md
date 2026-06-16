@@ -51,9 +51,9 @@ Here's an example of the response.
 
 ```json
 {
-    "powerBIAccCategory": "string",
-    "glAccCategoryEntryNo": "integer",
-    "parentAccCategoryEntryNo": "integer"
+    "powerBIAccCategory": "",
+    "glAccCategoryEntryNo": 1001,
+    "parentAccCategoryEntryNo": 1002
 }
 ```
 

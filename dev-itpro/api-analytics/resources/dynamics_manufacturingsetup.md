@@ -32,8 +32,8 @@ Here's a JSON representation of the manufacturingSetup resource.
 
 ```json
 {
-    "showCapacityIn": "string",
-    "auxiliaryIndex1": "string"
+    "showCapacityIn": "",
+    "auxiliaryIndex1": ""
 }
 ```
 

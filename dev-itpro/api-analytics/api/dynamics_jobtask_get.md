@@ -51,14 +51,14 @@ Here's an example of the response.
 
 ```json
 {
-    "jobNo": "string",
-    "jobTaskNo": "string",
-    "description": "string",
-    "totaling": "string",
-    "jobTaskType": "string",
-    "indentation": "integer",
-    "startingDate": "Date",
-    "endingDate": "Date"
+    "jobNo": "J00010",
+    "jobTaskNo": "1000",
+    "description": "ATHENS Desk",
+    "totaling": "6110..6190",
+    "jobTaskType": "",
+    "indentation": 0,
+    "startingDate": "2026-01-01",
+    "endingDate": "2026-06-30"
 }
 ```
 

@@ -51,16 +51,16 @@ Here's an example of the response.
 
 ```json
 {
-    "entryNo": "integer",
-    "budgetName": "string",
-    "entryDate": "Date",
-    "itemNo": "string",
-    "locationCode": "string",
-    "sourceType": "string",
-    "sourceNo": "string",
-    "quantity": "decimal",
-    "costAmount": "decimal",
-    "dimensionSetID": "integer"
+    "entryNo": 1001,
+    "budgetName": "Adatum Corporation",
+    "entryDate": "2026-01-15",
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "sourceType": "Customer",
+    "sourceNo": "10000",
+    "quantity": 10.00,
+    "costAmount": 25.5,
+    "dimensionSetID": 102
 }
 ```
 

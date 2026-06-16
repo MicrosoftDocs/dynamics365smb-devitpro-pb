@@ -35,11 +35,11 @@ Here's a JSON representation of the resource resource.
 
 ```json
 {
-    "resourceNo": "string",
-    "resourceName": "string",
-    "baseUnitofMeasure": "string",
-    "unitCost": "decimal",
-    "unitPrice": "decimal"
+    "resourceNo": "R00010",
+    "resourceName": "Mary A. Dempsey",
+    "baseUnitofMeasure": "PCS",
+    "unitCost": 25.5,
+    "unitPrice": 49.99
 }
 ```
 

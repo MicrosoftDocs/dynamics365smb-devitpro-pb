@@ -51,24 +51,24 @@ Here's an example of the response.
 
 ```json
 {
-    "prodOrderStatus": "string",
-    "prodOrderNo": "string",
-    "prodOrderLineNo": "integer",
-    "itemNo": "string",
-    "locationCode": "string",
-    "quantityBase": "decimal",
-    "remainingQtyBase": "decimal",
-    "dueDate": "Date",
-    "routingNo": "string",
-    "routingReferenceNo": "integer",
-    "routingType": "string",
-    "dimensionSetID": "integer",
-    "finishedQtyBase": "decimal",
-    "scrapPrc": "decimal",
-    "overheadRate": "decimal",
-    "planningLevelCode": "integer",
-    "indirectCostPercent": "decimal",
-    "locationName": "string"
+    "prodOrderStatus": "Released",
+    "prodOrderNo": "10000",
+    "prodOrderLineNo": 10000,
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "quantityBase": 10.00,
+    "remainingQtyBase": 10.00,
+    "dueDate": "2026-02-28",
+    "routingNo": "R-1000",
+    "routingReferenceNo": 1,
+    "routingType": "",
+    "dimensionSetID": 102,
+    "finishedQtyBase": 10.00,
+    "scrapPrc": 5.00,
+    "overheadRate": 1.00,
+    "planningLevelCode": 1,
+    "indirectCostPercent": 25.5,
+    "locationName": "Blue Warehouse"
 }
 ```
 

@@ -40,16 +40,16 @@ Here's a JSON representation of the salesItemBudgetEntry resource.
 
 ```json
 {
-    "entryNo": "integer",
-    "budgetName": "string",
-    "entryDate": "Date",
-    "itemNo": "string",
-    "locationCode": "string",
-    "sourceType": "string",
-    "sourceNo": "string",
-    "quantity": "decimal",
-    "salesAmount": "decimal",
-    "dimensionSetID": "integer"
+    "entryNo": 1001,
+    "budgetName": "Adatum Corporation",
+    "entryDate": "2026-01-15",
+    "itemNo": "1896-S",
+    "locationCode": "BLUE",
+    "sourceType": "Customer",
+    "sourceNo": "10000",
+    "quantity": 10.00,
+    "salesAmount": 1500.00,
+    "dimensionSetID": 102
 }
 ```
 

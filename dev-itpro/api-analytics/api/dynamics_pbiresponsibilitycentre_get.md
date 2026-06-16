@@ -51,9 +51,9 @@ Here's an example of the response.
 
 ```json
 {
-    "code": "string",
-    "name": "string",
-    "waterCapactiybyMonth": "decimal"
+    "code": "DEPARTMENT",
+    "name": "Adatum Corporation",
+    "waterCapactiybyMonth": 100.00
 }
 ```
 

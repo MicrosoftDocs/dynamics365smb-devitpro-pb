@@ -33,9 +33,9 @@ Here's a JSON representation of the pbiSustainabilityAccountCategory resource.
 
 ```json
 {
-    "code": "string",
-    "description": "string",
-    "emissionScope": "string"
+    "code": "DEPARTMENT",
+    "description": "ATHENS Desk",
+    "emissionScope": ""
 }
 ```
 

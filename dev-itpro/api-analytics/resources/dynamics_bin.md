@@ -35,11 +35,11 @@ Here's a JSON representation of the bin resource.
 
 ```json
 {
-    "binCode": "string",
-    "description": "string",
-    "locationCode": "string",
-    "binType": "string",
-    "zoneCode": "string"
+    "binCode": "B-01-0001",
+    "description": "ATHENS Desk",
+    "locationCode": "BLUE",
+    "binType": "",
+    "zoneCode": "PICK"
 }
 ```
 

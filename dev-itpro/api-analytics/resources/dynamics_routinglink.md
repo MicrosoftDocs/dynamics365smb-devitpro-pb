@@ -32,8 +32,8 @@ Here's a JSON representation of the routingLink resource.
 
 ```json
 {
-    "code": "string",
-    "description": "string"
+    "code": "DEPARTMENT",
+    "description": "ATHENS Desk"
 }
 ```
 

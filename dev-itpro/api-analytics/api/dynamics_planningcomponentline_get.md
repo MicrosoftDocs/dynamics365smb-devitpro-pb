@@ -51,13 +51,13 @@ Here's an example of the response.
 
 ```json
 {
-    "itemNo": "string",
-    "dueDate": "Date",
-    "locationCode": "string",
-    "expectedQuantityBase": "decimal",
-    "dimensionSetID": "integer",
-    "qtyPerUnitOfMeasure": "decimal",
-    "unitOfMeasureCode": "string"
+    "itemNo": "1896-S",
+    "dueDate": "2026-02-28",
+    "locationCode": "BLUE",
+    "expectedQuantityBase": 10.00,
+    "dimensionSetID": 102,
+    "qtyPerUnitOfMeasure": 10.00,
+    "unitOfMeasureCode": "PCS"
 }
 ```
 

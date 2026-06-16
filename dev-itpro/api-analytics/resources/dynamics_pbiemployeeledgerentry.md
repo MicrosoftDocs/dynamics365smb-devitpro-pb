@@ -38,14 +38,14 @@ Here's a JSON representation of the pbiEmployeeLedgerEntry resource.
 
 ```json
 {
-    "employeeNo": "string",
-    "entryNo": "integer",
-    "postingDate": "Date",
-    "documentType": "string",
-    "documentNo": "string",
-    "dimensionSetID": "integer",
-    "description": "string",
-    "amount": "decimal"
+    "employeeNo": "10000",
+    "entryNo": 1001,
+    "postingDate": "2026-01-15",
+    "documentType": "Invoice",
+    "documentNo": "103001",
+    "dimensionSetID": 102,
+    "description": "ATHENS Desk",
+    "amount": 1500.00
 }
 ```
 

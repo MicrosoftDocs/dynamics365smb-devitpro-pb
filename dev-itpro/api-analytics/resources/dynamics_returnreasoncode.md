@@ -32,8 +32,8 @@ Here's a JSON representation of the returnReasonCode resource.
 
 ```json
 {
-    "reasonCode": "string",
-    "reasonDescription": "string"
+    "reasonCode": "RETURN",
+    "reasonDescription": "Standard posting"
 }
 ```
 

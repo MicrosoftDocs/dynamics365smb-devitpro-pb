@@ -51,23 +51,23 @@ Here's an example of the response.
 
 ```json
 {
-    "opportunityEntryEntryNo": "integer",
-    "opportunityEntryOpportunity": "string",
-    "salespersonCode": "string",
-    "opportunityEntryActive": "boolean",
-    "opportunityEntryActionTaken": "string",
-    "opportunityEntryDateChange": "Date",
-    "opportunityEntryEstCloseDate": "Date",
-    "opportunityEntryEstValue": "decimal",
-    "opportunityEntryCalcCurrentValue": "decimal",
-    "opportunityEntryCompleted": "decimal",
-    "opportunityEntryChanceSuccess": "decimal",
-    "opportunityEntryProbability": "decimal",
-    "opportunityEntrySalesCycleCode": "string",
-    "opportunityEntrySalesCycleStage": "integer",
-    "opportunityEntrySalesCycleStageDescription": "string",
-    "opportunityEntryCloseOpportunityCode": "string",
-    "opportunityContactNo": "string"
+    "opportunityEntryEntryNo": 1001,
+    "opportunityEntryOpportunity": "",
+    "salespersonCode": "JR",
+    "opportunityEntryActive": true,
+    "opportunityEntryActionTaken": "",
+    "opportunityEntryDateChange": "2026-01-15",
+    "opportunityEntryEstCloseDate": "2025-12-31",
+    "opportunityEntryEstValue": 100.00,
+    "opportunityEntryCalcCurrentValue": 100.00,
+    "opportunityEntryCompleted": 100.00,
+    "opportunityEntryChanceSuccess": 100.00,
+    "opportunityEntryProbability": 100.00,
+    "opportunityEntrySalesCycleCode": "10000",
+    "opportunityEntrySalesCycleStage": 1,
+    "opportunityEntrySalesCycleStageDescription": "1",
+    "opportunityEntryCloseOpportunityCode": "10000",
+    "opportunityContactNo": "10000"
 }
 ```
 

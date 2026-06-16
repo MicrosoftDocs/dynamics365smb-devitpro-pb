@@ -51,27 +51,27 @@ Here's a JSON representation of the salesInvoiceProjectLedgerEntry resource.
 
 ```json
 {
-    "postingDate": "Date",
-    "type": "string",
-    "description": "string",
-    "entryNo": "integer",
-    "no": "string",
-    "documentNo": "string",
-    "locationCode": "string",
-    "quantityBase": "decimal",
-    "totalPriceLCY": "decimal",
-    "totalCostLCY": "decimal",
-    "unitCostLCY": "decimal",
-    "reasonCode": "string",
-    "dimensionSetID": "integer",
-    "projectNo": "string",
-    "salesInvoiceDocumentNo": "string",
-    "campaignNo": "string",
-    "salespersonCode": "string",
-    "opportunityNo": "string",
-    "quoteNo": "string",
-    "billToCustomerNo": "string",
-    "sellToCustomerNo": "string"
+    "postingDate": "2026-01-15",
+    "type": "Item",
+    "description": "ATHENS Desk",
+    "entryNo": 1001,
+    "no": "10000",
+    "documentNo": "103001",
+    "locationCode": "BLUE",
+    "quantityBase": 10.00,
+    "totalPriceLCY": 49.99,
+    "totalCostLCY": 25.5,
+    "unitCostLCY": 25.5,
+    "reasonCode": "RETURN",
+    "dimensionSetID": 102,
+    "projectNo": "10000",
+    "salesInvoiceDocumentNo": "103001",
+    "campaignNo": "10000",
+    "salespersonCode": "JR",
+    "opportunityNo": "10000",
+    "quoteNo": "10000",
+    "billToCustomerNo": "10000",
+    "sellToCustomerNo": "10000"
 }
 ```
 

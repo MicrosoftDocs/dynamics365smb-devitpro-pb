@@ -41,17 +41,16 @@ Here's a JSON representation of the contact resource.
 
 ```json
 {
-    "contactNo": "string",
-    "contactType": "Microsoft.NAV.contactType",
-    "contactName": "string",
-    "companyNo": "string",
-    "companyName": "string",
-    "address": "string",
-    "address2": "string",
-    "city": "string",
-    "postCode": "string",
-    "county": "string",
-    "countryRegionCode": "string"
+    "contactNo": "10000",
+    "contactName": "Adatum Corporation",
+    "companyNo": "10000",
+    "companyName": "Adatum Corporation",
+    "address": "192 Market Square",
+    "address2": "Suite 200",
+    "city": "Atlanta",
+    "postCode": "31772",
+    "county": "GA",
+    "countryRegionCode": "US"
 }
 ```
 

@@ -51,10 +51,10 @@ Here's an example of the response.
 
 ```json
 {
-    "zoneCode": "string",
-    "zoneDescription": "string",
-    "locationCode": "string",
-    "binTypeCode": "string"
+    "zoneCode": "PICK",
+    "zoneDescription": "Pick Zone",
+    "locationCode": "BLUE",
+    "binTypeCode": "10000"
 }
 ```
 

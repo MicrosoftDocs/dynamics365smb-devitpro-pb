@@ -34,10 +34,10 @@ Here's a JSON representation of the pbiSustainabilitySubAccountCategory resource
 
 ```json
 {
-    "categoryCode": "string",
-    "subcategoryCode": "string",
-    "subCategoryDescription": "string",
-    "subCategoryRenewableEnergy": "boolean"
+    "categoryCode": "10000",
+    "subcategoryCode": "10000",
+    "subCategoryDescription": "Standard posting",
+    "subCategoryRenewableEnergy": false
 }
 ```
 

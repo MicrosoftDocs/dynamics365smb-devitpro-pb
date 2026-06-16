@@ -34,10 +34,10 @@ Here's a JSON representation of the zone resource.
 
 ```json
 {
-    "zoneCode": "string",
-    "zoneDescription": "string",
-    "locationCode": "string",
-    "binTypeCode": "string"
+    "zoneCode": "PICK",
+    "zoneDescription": "Pick Zone",
+    "locationCode": "BLUE",
+    "binTypeCode": "10000"
 }
 ```
 
