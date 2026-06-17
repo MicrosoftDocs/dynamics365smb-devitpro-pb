@@ -42,7 +42,7 @@ Occurs when an MCP Server tool is called from Business Central.
 |configurationSystemId|Specifies the system ID (GUID) of the MCP configuration record.|
 |toolName|Specifies the name of the MCP tool that was called.|
 |dynamicToolName|Specifies the action name for dynamic MCP tools. This dimension is populated when using dynamic tool configurations.|
-|clientName|Specifies the name of the MCP client that initiated the tool call.|
+|clientName|Specifies the name of the MCP host that initiated the tool call.|
 |authAppId|Specifies the authenticated application ID from the security token.|
 |result|Specifies the result of the operation. Possible values are **Success** or **Failure**.|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|

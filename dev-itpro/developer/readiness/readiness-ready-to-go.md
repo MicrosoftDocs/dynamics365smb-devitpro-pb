@@ -110,18 +110,18 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ### Agents in Business Central
 
 - Agent pitch deck - [aka.ms/BCAgentPitchDeck](https://aka.ms/BCAgentPitchDeck)
-- Sales Order Agent overview (preview) [Learn more](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)
+- Sales Order Agent overview [Learn more](/dynamics365/business-central/sales-order-agent)
 - Sales Order Agent demo [aka.ms/SalesOrderAgentDemo](https://aka.ms/SalesOrderAgentDemo)
-- Payables Agent overview (preview) [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
+- Payables Agent overview [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
 - Payables Agent demo [aka.ms/PayablesAgentDemo](https://aka.ms/PayablesAgentDemo)
+- Expense Agent overview (preview) [Learn more](/dynamics365/business-central/expense-management/expense-agent)
 - Designing and coding agents (preview) [aka.ms/bcagentsgetstarted](../../ai/ai-development-toolkit-landing-page.yml)
 - Get started with designing and coding agents [here](https://aka.ms/bcdesignagents)
 - Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
 - Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
 - Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
 - Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
-- Sales Order Agent is generally available in all countries/regions. 
-- Payable Agent is generally available in the following countries/regions (February 2026): United States, Canada, Belgium, Denmark, France, Germany, Italy, Netherlands, Norway, Spain, Sweden, United Kingdom, Australia, and New Zealand.
+- Sales Order Agent and Payables Agent are generally available in all countries/regions. 
 
 ### Copilot in Business Central 101
 
