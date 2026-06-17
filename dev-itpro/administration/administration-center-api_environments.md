@@ -837,7 +837,31 @@ Returns quotas object.
 }
 ```
 
-## Get environment operations
+## Get environment operation
+
+**INTRODUCED IN:** API version 2.28
+
+Gets details for a single operation.
+
+```HTTP
+GET /admin/{apiVersion}/environments/operations/{operationId}
+```
+
+Optionally, you can specify the environment name in your request. This ensures the operation will only be returned if it was applied to the specified environment.
+
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationType}/environments/{environmentName}/operations/{operationId}
+```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`operationId` - the ID of the operation
+
+`environmentName` - the name of the targeted environment
+
+## Get all environment operations
 
 **INTRODUCED IN:** API version 2.6
 
@@ -958,7 +982,7 @@ Example `200 OK` response:
 Gets the operations that occurred on all environments.
 
 ```HTTP
-GET /admin/{apiVersion}/applications/{applicationType}/environments/operations
+GET /admin/{apiVersion}/environments/operations
 ```
 
 ### Operation types
