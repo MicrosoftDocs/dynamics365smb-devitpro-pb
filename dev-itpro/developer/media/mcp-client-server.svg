@@ -641,14 +641,14 @@
 			<text x="4" y="290.29" class="st10" v:langID="1033"><v:paragraph/><v:tabList/>Visual Studio Code</text>		</g>
 		<g id="shape30-87" v:mID="30" v:groupContext="shape" transform="translate(2.04177,-92.7835)">
 			<title>Sheet.30</title>
-			<desc>Other MCP clients</desc>
+			<desc>Other MCP hosts</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(28000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="66.3647" cy="286.99" width="132.73" height="20"/>
 			<rect x="0" y="276.99" width="132.729" height="20" class="st2"/>
-			<text x="4" y="290.29" class="st10" v:langID="1033"><v:paragraph/><v:tabList/>Other MCP clients</text>		</g>
+			<text x="4" y="290.29" class="st10" v:langID="1033"><v:paragraph/><v:tabList/>Other MCP hosts</text>		</g>
 		<g id="shape32-90" v:mID="32" v:groupContext="shape" transform="translate(352.265,-226.729)">
 			<title>Sheet.32</title>
 			<desc>Environment</desc>
