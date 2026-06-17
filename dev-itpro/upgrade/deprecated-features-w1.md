@@ -29,6 +29,22 @@ This article describes the features that have been moved, removed, or replaced i
 |-----------------------------|-----|
 |Replaced| Support for Peppol BIS 2.0 and Peppol BIS 2.1 is removed in 2027 release wave 1 (version 29.0) and replaced by the Peppol BIS 3.0 standard. These Peppol formats were marked as `obsolete:pending` in version 26.0.<br><br>The Peppol network has officially phased out versions 2.0 and 2.1, and most government and B2B e-invoicing platforms now mandate Peppol BIS 3.0 for interoperability and compliance. Continuing to support outdated formats introduces security and compliance risks, and limits compatibility with modern e-document processing services.<br><br>You must update all integrations, mappings, and customizations to use Peppol BIS 3.0. This update ensures full compliance with current Peppol regulations and continued interoperability with global e-invoicing networks. |
 
+### Finance reports API (beta) (removal)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| The Finance reports API is removed in 2027 release wave 1 (version 30.0). The Finance reports API was introduced as a reporting endpoint for finance scenarios, but the Analytics API now provides read-only endpoints optimized for analytical and reporting workloads, including Power BI apps and custom reports.<br><br>Use the Analytics API instead of the Finance reports API for reporting and analysis scenarios. Learn more in [Analytics API overview](../api-analytics/api-analytics-overview.md). |
+
+## Changes in 2026 release wave 2
+
+The following features are marked as `obsolete:pending` in 2026 release wave 2.
+
+### Finance reports API (beta) (warning)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| The Finance reports API is marked as obsolete in 2026 release wave 2 (to be removed in 2027 release wave 1). The Finance reports API was introduced as a reporting endpoint for finance scenarios, but the Analytics API now provides read-only endpoints optimized for analytical and reporting workloads, including Power BI apps and custom reports.<br><br>Use the Analytics API instead of the Finance reports API for reporting and analysis scenarios. Learn more in [Analytics API overview](../api-analytics/api-analytics-overview.md). |
+
 ## Changes in 2026 release wave 1
 
 The following features will be removed in 2026 release wave 1 (version 28.0).
