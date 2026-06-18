@@ -2,7 +2,7 @@
 title: Set up the add-ins for Outlook in Business Central on-premises
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: bap-template
-ms.date: 08/06/2025
+ms.date: 03/16/2026
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: how-to
@@ -148,7 +148,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
    #### [Permissions for Exchange Online](#tab/exchange-onl-perms)
 
-   - In the **Microsoft APIs** tab, select **Microsoft Graph**, and **Delegated permissions**. From the list of available permissions, select **User.Read**, **Mail.ReadWrite**, and **EWS.AccessAsUser.All**.
+   - In the **Microsoft APIs** tab, select **Microsoft Graph**, and **Delegated permissions**. From the list of available permissions, select **User.Read**, **Mail.ReadWrite**, and **Calendars.Read**.
 
    - In the **APIs my organization uses** tab, search for the name of the registered app that authenticates Microsoft Entra ID users with Business Central and add the scope you created earlier. This app isn't the app you registered to connect Outlook and Business Central.
 
@@ -170,16 +170,16 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
 1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 1. Run the Set-NAVServerConfiguration cmdlet to set the `PublicWebBaseUrl` key to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
-   The base URL is the public URL that Outlook clients use to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer:443/BC252`.
+   The base URL is the public URL that Outlook clients use to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer:443/BC280`.
 
     ```powershell
-    Set-NavServerConfiguration -ServerInstance BC252 -KeyName PublicWebBaseUrl -Keyvalue "https://MyBCWebServer:443/BC252"
+    Set-NavServerConfiguration -ServerInstance BC280 -KeyName PublicWebBaseUrl -Keyvalue "https://MyBCWebServer:443/BC280"
     ```
 
 1. Run the Set-NAVServerConfiguration cmdlet to set the `ValidAudiences` key to the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. The value is the web client base URL *without* the port number and server instance, like `https://MyBCWebServer`.
 
     ```powershell
-    Set-NavServerConfiguration -ServerInstance BC252 -KeyName ValidAudiences -Keyvalue "https://MyBCWebServer"
+    Set-NavServerConfiguration -ServerInstance BC280 -KeyName ValidAudiences -Keyvalue "https://MyBCWebServer"
     ```
 
    If you have a multitenant deployment with different host names for tenants, like `https://tenant1.cronusinternational.com`, register each host name as a valid audience. You can do this task in two ways:
@@ -229,8 +229,8 @@ Set-NAVWebServerInstanceConfiguration -ServerInstance <BC server instance> -Tena
 For example:
 
 ```powershell
-Set-NAVWebServerInstanceConfiguration -ServerInstance BC252 -Tenant default -KeyName ExchangeOnlineAppId -KeyValue "00001111-aaaa-2222-bbbb-3333cccc4444" 
-Set-NAVWebServerInstanceConfiguration -ServerInstance BC252 -Tenant default -KeyName ExchangeOnlineAppScope -KeyValue "11112222-bbbb-3333-cccc-4444dddd5555/BusinessCentralOnPrem.Access" 
+Set-NAVWebServerInstanceConfiguration -ServerInstance BC280 -Tenant default -KeyName ExchangeOnlineAppId -KeyValue "00001111-aaaa-2222-bbbb-3333cccc4444" 
+Set-NAVWebServerInstanceConfiguration -ServerInstance BC280 -Tenant default -KeyName ExchangeOnlineAppScope -KeyValue "11112222-bbbb-3333-cccc-4444dddd5555/BusinessCentralOnPrem.Access" 
 ```
 
 Restart the web server instance when you're done.
@@ -291,7 +291,7 @@ Learn more in [Registering Business Central on-premises in Microsoft Entra ID](r
 
 ### Get the add-in (users)
 
-After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. Learn more in [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
+After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. Learn more in [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#install).
 
 ## <a name="manual-individual-deployment"></a>Manual individual deployment
 
@@ -299,7 +299,7 @@ With this deployment option, users install the Business Central add-in for Outlo
 
 ### Get the add-in (users)
 
-After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. Learn more in [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
+After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. Learn more in [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#install).
 
 ## Related information  
 
