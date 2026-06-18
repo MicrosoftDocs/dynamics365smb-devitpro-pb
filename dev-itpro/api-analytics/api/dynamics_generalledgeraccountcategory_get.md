@@ -7,6 +7,7 @@ ms.devlang: al
 ms.date: 06/08/2026
 ms.author: solsen
 ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 
 # Get generalLedgerAccountCategories
