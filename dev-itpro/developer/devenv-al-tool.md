@@ -37,19 +37,20 @@ The ALTool executable is located in the `bin` folder in a path equivalent to the
 C:\Users\<user>\.vscode\extensions\ms-dynamics-smb.al-17.0.1750311\bin\win32\alc.exe
 ```
 
-Alternatively, you can install the [AL Development Tools package](devenv-al-tool-package.md) as a NuGet package, which provides the `al` alias so you can run ALTool commands without specifying the full path to `alc.exe`. This option is ideal for CI/CD pipelines and automated environments where a full Visual Studio Code installation isn't needed.
+> [!NOTE]
+> It's recommended that you install the [AL Development Tools package](devenv-al-tool-package.md) as a NuGet package, which provides the `al` alias so you can run ALTool commands without specifying the full path to `alc.exe`. This option is ideal for CI/CD pipelines and automated environments where a full Visual Studio Code installation isn't needed. The examples in the next sections assume you have the tools package installed and can use the `al` alias to run ALTool commands. If you don't have the tools package installed, simply replace `al` with the full path to `alc.exe` in the examples below.
 
 ## ALTool commands
 
 To get a list of available commands, run the following command in your terminal or command prompt:
 
 ```shell
-alc.exe help
+al help
 ```
 
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
-| `compile`                      | Compile a package using `alc.exe`. Learn more in [Workspace commands](#workspace-commands). |
+| `compile`                      | Compile a package using `al.exe`. Learn more in [Workspace commands](#workspace-commands). |
 | `workspace`                    | Workspace commands for creating, compiling, and mapping multi-project AL workspaces. Learn more in [Workspace commands](#workspace-commands). |
 | `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
 | `launchlspserver`              | Launches an AL Language Server Protocol (LSP) server for use by autonomous AI agents and editors. Learn more in [AL LSP](#al-lsp). |
@@ -124,7 +125,7 @@ ALTool now supports detecting whether an app is symbol-only and whether a packag
 The ALMCP (AL Model Context Protocol) server allows autonomous agents to interact with an AL workspace. It's launched via ALTool with the `launchmcpserver` command. Its usage is as follows:
 
 ```shell
-alc.exe launchmcpserver [<projects>...] [options]
+al launchmcpserver [<projects>...] [options]
 ```
 
 The `projects` argument is a space-separated list of paths to AL project folders. Each path should be wrapped in double quotes `"`.
@@ -156,7 +157,7 @@ ALTool exposes this through the `launchlspserver` command. The agent or editor s
 Wire ALTool into your LSP host's plugin configuration so it's invoked as:
 
 ```shell
-altool launchlspserver [<projects>...] [options]
+al launchlspserver [<projects>...] [options]
 ```
 
 The `projects` argument is a space-separated list of AL project folder paths. Wrap each path in double quotes `"`. When more than one project is supplied, ALTool reads each project's `app.json` and resolves the dependencies between them (including `internalsVisibleTo` and `propagateDependencies` relationships) so that find-references and other cross-project requests span every supplied project. If `<projects>` is omitted, ALTool falls back to scanning the `rootUri` from the LSP `initialize` request; that fallback suits a single-project workspace but doesn't enable cross-project resolution. The `--workspacefile` option below is an alternative source of project folders, and folders from a workspace file merge with positional projects.

@@ -2,7 +2,7 @@
 title: Upgrading to Dynamics 365 Business Central 2025 release wave 2
 description: Provides an overview of Business Central 2025 release wave 2 upgrade process.
 ms.custom: bap-template
-ms.date: 09/30/2025
+ms.date: 01/06/2026
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: overview
@@ -43,7 +43,7 @@ From these articles, use the links in the table of contents to view more depreca
 
 ## <a name="online"></a>Migrate to Business Central online
 
-[!INCLUDE[upgrade-migrae-online](../developer/includes/upgrade-migrate-online.md]
+[!INCLUDE[upgrade-migrate-online](../developer/includes/upgrade-migrate-online.md)]
 
 ## Related information  
 

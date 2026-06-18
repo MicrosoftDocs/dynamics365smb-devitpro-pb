@@ -101,7 +101,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
    [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 
-4. (Single-tenant only) Uninstall all extensions from the old tenants.
+4. Uninstall all extensions from the old tenants.
 
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.
 
@@ -392,9 +392,10 @@ Synchronize the tenant's database schema with any schema changes in the new exte
 
 ## Task 10: Upgrade data
 
-In this task, you run a data upgrade for extensions.
+In this task, you run a data upgrade for extensions. 
 
-#### Single tenant
+> [!NOTE]
+> For multitenant deployments, repeat the following procedure for each tenant.
 
 Run the data upgrade/installation on extensions in order of dependency: System Application, Business Foundation, Base Application, Application.
 
@@ -403,7 +404,7 @@ Run the data upgrade/installation on extensions in order of dependency: System A
     To run the data upgrade, use the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
     ```powershell
-    Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "System Application" -Version $NewBCVersion
+    Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "System Application" -Version $NewBCVersion
     ```
 
     This step automatically installs the new system application on the tenant.
@@ -412,17 +413,17 @@ Run the data upgrade/installation on extensions in order of dependency: System A
    To install the  Business Foundation extension, use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
 
     ```powershell
-    Install-NAVApp -ServerInstance $NewBcServerInstance -Name "Business Foundation" -Version $NewBCVersion
+    Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
     ```
 
 1. Run the data upgrade for the Base Application, followed by Application extension.
 
     ```powershell
-    Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Base Application" -Version $NewBCVersion
+    Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Base Application" -Version $NewBCVersion
     ```
 
     ```powershell
-    Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Application" -Version $NewBCVersion
+    Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewBCVersion
     ```
 
     This step automatically installs the new versions of these extensions on the tenant.
@@ -435,6 +436,7 @@ Run the data upgrade/installation on extensions in order of dependency: System A
 
     This step also automatically installs the new extension version on the tenant.
 
+<!--
 #### Multitenant
 
 On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:
@@ -444,6 +446,7 @@ Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Fun
 ```
 
 This command upgrades and installs the extensions on the tenant.
+-->
 
 ## Task 11: Install new Microsoft or reinstall 3rd-party extensions
 
