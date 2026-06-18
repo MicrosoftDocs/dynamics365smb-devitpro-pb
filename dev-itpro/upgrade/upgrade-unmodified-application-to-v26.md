@@ -2,7 +2,7 @@
 title: Upgrading Microsoft System and Base Application to Version 26
 description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 26
 ms.custom: bap-template
-ms.date: 03/28/2025
+ms.date: 01/06/2026
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.author: jswymer
@@ -440,7 +440,7 @@ Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Fun
 
 This command upgrades and installs the extensions on the tenant.
 
-## Task 12: Install new Microsoft or reinstall 3rd-party extensions
+## Task 13: Install new Microsoft or reinstall 3rd-party extensions
 
 Complete this task to install new first-time Microsoft extensions that you published in task 10 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
@@ -448,11 +448,11 @@ Complete this task to install new first-time Microsoft extensions that you publi
 Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension version>
 ```
 
-## Task 13: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 14: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-## Task 14: Install upgraded permissions sets
+## Task 15: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you decided to use permission sets as AL objects or as data.
 
@@ -477,7 +477,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## Task 15: Change application version
+## Task 16: Change application version
 
 [!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version.md)]
 
