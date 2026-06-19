@@ -1,6 +1,6 @@
 ---
-title: Cloud migration setup overview 
-description: Gives an overview of what happens you set up cloud migration for Dynamics SL. 
+title: Cloud migration setup overview
+description: Learn what happens when you set up cloud migration from on-premises to Business Central online, including the data pipeline and connection process.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer

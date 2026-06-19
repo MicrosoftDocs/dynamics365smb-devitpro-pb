@@ -1,11 +1,11 @@
 ---
 title: FAQ about Migrating to Business Central Online
-description: Get answers to your questions about migrating to the cloud from an on-premises solution.
+description: Get answers to frequently asked questions about migrating to Business Central online from on-premises solutions, including supported versions and data limits.
 author: jswymer
 ms.reviewer: jswymer
 ms.topic: faq
-ms.search.keywords: cloud, edge
-ms.date: 11/30/2022
+ms.search.keywords: cloud, edge, migration, faq
+ms.date: 05/27/2026
 ms.author: jswymer
 ---
 
@@ -70,22 +70,15 @@ No, there's no limit on the number of tenants that can be added to your Self-Hos
 
 ## Will data from tables with code customizations migrate?
 
-No, only tables that are available in both your on-premises solution and your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant will migrate. Any customization must be made into an extension and installed on both your on-premises solution and your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant to replicate.  
+It depends on your approach:
 
-Yes, but it requires that someone defines tables mappings to move the customized fields. For more information, go to [Define Migration Table Mappings](migration-table-mapping.md). 
+- **Standard migration**: Only tables that are available in both your on-premises solution and your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant migrate. Any customization must be converted to an extension and installed on both your on-premises solution and your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant to replicate.
+- **With table mappings**: You can define table mappings to move data from customized fields to standard or extension fields. For more information, go to [Define Migration Table Mappings](migration-table-mapping.md).
+- **BC14 reimplementation**: If you use the [Business Central 14 reimplementation tool](migrate-bc14-reimplementation.md), only essential business data (master data, opening balances, setup) migrates. This option doesn't require converting customizations to extensions.
 
 ## Why are my permissions restricted in the Business Central online tenant?
 
 When you connect your on-premises solution to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online as part of the migration, all existing users are automatically added to the *Intelligent Cloud* user group, unless they have the SUPER permission set. In this configuration, your on-premises solution is the primary source where all business transactions take place. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment is read-only, and the data is used to generate intelligent business insights based on your on-premises data for you. We restrict permissions to prevent users from accidentally entering transactions or updating primary records only to have that information overwritten and lost when data replication takes place. Once the migration is complete, you can assign the relevant permissions to all users and stop using your on-premises solution.  
-
-<!-- 
-## Can I pause the migration?
-
-You can switch off your connection to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online environment at any point. At that point, your on-premises solution and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online become independent of one another.  
-
-If you switch off the connection, and you want to use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment as your primary solution to run and manage your business, you must reassign permissions to provide read/write access to the relevant users.  
-
-For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  -->
 
 ## Will my on-premises users and permissions replicate?
 
@@ -93,54 +86,27 @@ No. Since you aren't required to configure your on-premises solution with Micros
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
-<!-- 
-No. Because you aren't required to configure your on-premises solution with Microsoft Entra ID, we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Microsoft Entra accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions. But cloud migration does provide a way for you to easily map on-premises users to online user accounts.
-
-The following steps outline the general procedure:
-
-1. For each on-premises user account, create a user account in your Microsoft Entra tenant and assign the user a Business Central license.
-
-   1. Sign in to [Microsoft admin center](https://admin.microsoft.com).
-   2. In **User Management**, select **Add User** and follow the instructions.
-
-   For more information go to [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users?view=o365-worldwide).
-2. Add the online user accounts to the Business Central online environment:
-
-   1. Sign in to [Business Central online](https://businesscentral.dynamic.com).
-   2. Open the **Users** page, select **Update users from Microsoft 365** and follow the instructions.
-   3. Open the **Cloud Migration Management** page and select **Define User Mappings**.
-   4. For each on-premises user, set the **Cloud User** field to the corresponding Microsoft Entra account.
-   5. Select **OK** when done.  
-3. Go to the **Users** page and grant the users permissions in Business Central.
-
-   For more information, go to [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).-->
-
-<!--
-## Can I view intelligent insights from cloud services in my on-premises solution?
-
-No.  -->
-
 ## Is the data replication only one way?
 
 Yes, data is only replicated from the on-premises solution to your Business Central online tenant for the purposes of migration. Once you start using [!INCLUDE [prod_short](../includes/prod_short.md)] online, you must stop using your on-premises solution.  
 
-<!--
-## Why did my Role Center change after the migration?
-
-To keep the Role Center experience as clean as possible and avoid permission errors, we automatically hide actions that would generate a permission error for the user.  -->
-
 ## Should I uninstall all my Business Central extensions?
-
-<!-- Not necessarily. Most extensions will run without issues in the online environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It's a best practice to test any extension in a sandbox tenant configured for the Business Central online environment that you're connecting to. --> 
 
 No. But if your cloud migration includes data upgrade of a large amount of data, we recommend that you uninstall the extensions that include any data to move. It speeds up the upgrade and overall cloud migration process. You can reinstall the extensions after the migration.
 
+## How long does the initial migration take, and how can I reduce the data volume?
 
-<!--## How do I build an extension that enables data replication?
+The initial migration takes the longest because all data is moved. After the initial migration, only changes are transferred, so later replications run faster. The exact duration depends on the amount of data, your SQL Server configuration, and connection speeds.
 
-The extension must be created in the same manner as any other extension. For data to replicate, you must add a **ReplicateData** property to your table and set the value to *True*. If your extension connects with an external service and you want to restrict any service calls from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant, a good practice would be to store the connection information in a separate table and set the **ReplicateData** property to *False*. This would enable you to keep the extension installed but prevent it from making any type of service calls from the read-only [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Once the extension is installed in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, the data will begin to replicate.  -->
+To help manage timing and avoid storage limits, consider the following practices:
+
+- If your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online storage exceeds 80 GB, some administrative tasks are disabled. We recommend that you keep the amount of data to less than 30 GB per migration run.
+- Reduce the number of companies you migrate in a single run. You can migrate specific companies and add more companies later.
+- Delete outdated data in tables that contain log entries and archived records before you start the migration.
+- Consider deploying the source database to Azure SQL Database for improved migration speeds. Learn more at [Optimize cloud migration performance](migration-optimize-replication.md).
 
 ## Related information
 
+[Plan and prepare for cloud migration](cloud-migration-plan-prepare.md)  
 [Troubleshooting Cloud Migration](migration-troubleshooting.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  

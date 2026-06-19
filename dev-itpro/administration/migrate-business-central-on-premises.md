@@ -1,24 +1,18 @@
 ---
-title: Business Central On-premises to Online Migration End-to-end Overview
+title: Business Central on-premises to online migration overview
 description: This article provides an overview of how the migration works from Business Central on-premises and the necessary tasks for completing the migration.
 author: jswymer
-ms.topic: article
+ms.topic: overview
 ms.reviewer: jswymer
 ms.search.keywords: cloud, migrate, saas, online
-ms.date: 06/20/2025
+ms.date: 05/23/2026
 ms.author: jswymer
 ms.custom: bap-template
 ---
 
 # Business Central on-premises to online migration: End-to-end overview
 
-<!--Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution can have an identical twin in a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. Use this twin to migrate to the cloud. The migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
--->
-
-Migrating data from Business Central on-premises to online can seem like a complex process. This article provides an overview of how the migration works and the necessary tasks for completing the migration. By gaining an understanding of the data migration basics, you're able to plan and execute a smooth transition to the cloud. <!--This article explains how the data migration from Business Central on-premises to online works, and the end to end-process for completing the migration. Understanding the data migration basics will help you prepare for and run the data migration. -->
-
-<!--
-The end-to-end process is described [here](migrate-data.md). In this article, we talk about background information and things to take into consideration.  -->
+Migrating data from Business Central on-premises to online can seem like a complex process. This article provides an overview of how the migration works and the necessary tasks for completing the migration. By gaining an understanding of the data migration basics, you're able to plan and execute a smooth transition to the cloud.
 
 ## Understanding cloud migration
 
@@ -118,94 +112,62 @@ During the data migration process, [!INCLUDE[prod_short](../developer/includes/p
 
 If you upgrade to a new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online environment contains different extensions for the cloud migration. For more information, see [Business Central Cloud Migration Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
 -->
-## End-to-end process
+## Migration roadmap
 
-This section outlines the general process or phases you go through to migrate data from on-premises to online.
-<!--
-1. Evaluation
+This section outlines the phases you go through to migrate data from on-premises to online. This roadmap applies to full data migrations where you want to bring all your data and customizations to the cloud.
 
-   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. This phase involves considering factors such as data volumes, customizations, and integrations. By doing so, you can identify any potential issues that could arise during the migration process and take steps to address them beforehand.
+> [!TIP]
+> If you're on Business Central version 14 and want a fresh start without migrating all data and customizations, consider the [Business Central 14 reimplementation tool](migrate-bc14-reimplementation.md). It migrates only essential business data directly to the cloud.
 
-   To help you evaluate your readiness for migration, Microsoft offers a [Cloud migration assessment] tool that can analyze your on-premises environment and provide guidance on the migration process. This tool can help you determine if your system is ready for migration and highlight any potential issues that need to be addressed.
+### Phase 1: Preparation
 
-   For more information, visit [Cloud migration assessment].-->
+The preparation phase helps ensure the migration runs as fast and problem-free as possible. Preparation typically includes these tasks:
 
-1. Preparation
+- **Plan**: Develop a migration plan that includes a detailed timeline, resource requirements, and migration approach. A well-crafted plan can help minimize downtime and prevent users from losing work. You should plan to run cloud migration between environment updates. To get started, go to [Plan and prepare](cloud-migration-plan-prepare.md).
 
-   The preparation phase helps ensure the migration runs as fast and problem-free. Preparation typically includes these tasks:
+- **Verify prerequisites**: Prepare your on-premises environment for migration, including ensuring that it meets the prerequisites for migration, such as upgrading to the required version of Business Central on-premises. To get started, go to [Prerequisites](cloud-migration-prerequisites.md).
 
-   1. Plan:
+- **Verify data quality**: Review your data to ensure that it's clean, accurate, and in the best possible state for migration. To get started, go to [Align SQL table definitions](migration-align-table-definitions.md) and [Clean data](migration-clean-data.md).
 
-      Develop a migration plan that includes a detailed timeline, resource requirements, and migration approach. A well-crafted plan can help minimize downtime and prevent users from losing work. You should plan to run cloud migration between environment updates.
+- **Optimize performance**: Follow practical steps to enhance the efficiency and reliability of the migration process while minimizing the risk of data loss or downtime. To get started, go to [Optimize cloud migration performance](migration-optimize-replication.md).
 
-      To get started, go to [Plan](cloud-migration-plan-prepare.md).
-  
-   1. Verify prerequisites:
+### Phase 2: Cloud migration setup
 
-      Prepare your on-premises environment for migration, including ensuring that it meets the prerequisites for migration, such as upgrading to the latest version of Business Central on-premises. This step is crucial in ensuring that your environment is ready for the migration process.
+This phase doesn't migrate any data. It gets the environment ready for migration by establishing the connection and pipeline between the on-premises database and online tenant database. This phase starts when you run the **Set up Cloud Migration** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-      To get started, go to [Prerequisites](cloud-migration-prerequisites.md).
-   1. Verify that data is in the best state possible to complete the migration:
+To get started, go to [Set up cloud migration](migration-setup-overview.md).
 
-      This step involves reviewing your data to ensure that it's clean, accurate, and in the best possible state for migration.
+### Phase 3: Data replication
 
-      To get started, go to [Align SQL table definitions](migration-align-table-definitions.md) and [Clean data](migration-clean-data.md).
+This phase migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment.
 
-   1. Optimize cloud migration performance:
+You can verify whether the migration went well, fix any problems, and rerun the replication multiple times. For example, you might run the assisted setup guide from a test company in a sandbox environment to identify problematic extensions. Once the data is replicated, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-       Follow practical steps to enhance and improve the efficiency and reliability of the migration process while minimizing the risk of data loss or downtime. 
+To get started, go to [Replicate data](migration-data-replication.md).
 
-       To get started, go to [Align SQL table definitions](migration-optimize-replication.md).
+### Phase 4: Data upgrade
 
-1. Cloud migration setup
+After data replication is complete, the cloud migration might have the status *Upgrade Pending* on the **Cloud Migration Management** page. Data upgrade is typically required when migrating from a Business Central version that is earlier than the version used on the target online environment. During data upgrade, the platform-related data in the database is upgraded. This phase starts when you choose the **Run Data Upgrade Now** action on the **Cloud Migration Management** page.
 
-   The phase doesn't migrate any data, but it gets the environment ready for migration by establishing the connection and pipeline between the on-premises database and online tenant database. This phase starts when you run the **Set up Cloud Migration** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
+To get started, go to [Upgrade data](migration-data-upgrade.md).
 
-   To get started, go to [Set up cloud migration](migration-setup-overview.md).
+[!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
 
-1. Data replication
+### Phase 5: Completion
 
-   This step migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment. 
+Completion involves setting up and optimizing your new Business Central online environment:
 
-   At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. For example, suppose you ran the assisted setup guide from a test company in a sandbox environment because you worry that many extensions might be problematic. Once the data is replicated to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
+- **Optimize your environment**: Configure the system to meet your business needs, including setting up security, customizing forms and reports, and integrating with other systems.
 
-   To get started, go to [Replicate data](migration-data-replication.md).
+- **Set up user access**: Grant access to your new Business Central online system for all relevant users, including creating user accounts, setting up permissions, and defining roles.
 
-1. Data upgrade
+- **Reconnect integrations**: Re-establish connections to external services, APIs, Power Platform flows, and any third-party integrations that were running against the on-premises system. Test each integration end-to-end in the new environment.
 
-   After data replication is complete, the cloud migration might have the status *Upgrade Pending* on the **Cloud Migration Management** page. Data upgrade is typically required when migrating from Business Central version that is earlier than the version used on the target online environment. During data upgrade, the logic required upgrade the platform-related data in database is run. This step starts when you choose the **Run Data Upgrade Now** action in the **Cloud Migration Management** page in [!INCLUDE [prod_short](../includes/prod_short.md)] online for the specific environment.
+- **Monitor and validate**: After go-live, monitor the environment closely for performance issues, data discrepancies, and user-reported problems. Review [!INCLUDE [prod_short](../includes/prod_short.md)] telemetry in Application Insights to track errors and usage patterns. Set up alerts for key performance indicators and resolve issues promptly during the stabilization period.
 
-   <!--Once you have chosen this action, both the **Run Migration Now** and the **Run Data Upgrade Now** action can no longer be used for this company in the environment. If the upgrade has failed, an automatic point-in-time restore is run to revert the tenant to the point before upgrade. You can then fix the errors and try the upgrade again. Alternatively, you can start the cloud migration in another environment, or you can restore the current environment from a backup from a point in time before the data upgrade. Or, delete all companies in the current environment and start the migration again.-->
+- **Go live**: Switch over to the new Business Central online system. This task involves decommissioning the on-premises deployment and ensuring that all users are using the new system.
 
-   <!--If you want to migrate more companies, disable the migration, and start the setup again. Or, use the **Select Companies to Migrate** action from **Cloud Migration Management** page.-->
-
-   To get started, go to [Upgrade data](migration-data-upgrade.md).
-
-   [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
-
-1. Completion and follow-up
-
-   Completion and follow-up are crucial steps in the cloud migration process, as they involve setting up and optimizing your new Business Central online environment. Here are some essential tasks to consider:
-
-   1. Optimize your Business Central online environment:
-
-      Configure the system to meet your business needs. This task might include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
-   1. Set up user access
-
-      Grant access to your new Business Central online system for all relevant users. This task includes creating new user accounts, setting up permissions, and defining roles and responsibilities.
-   1. Go live:
-
-      Once you're satisfied that your new environment is set up correctly, it's time to switch over to the new Business Central online system. This task involves decommissioning the on-premises deployment and ensuring that all users are using the new system.
-
-   To get started, go to [Complete cloud migration](migration-finish.md).
-
-By completing these tasks, you can ensure a successful migration to the cloud-based Business Central solution.
-
-<!--	Train: Train users on the new system to ensure that they are comfortable with the new interface and functionality.-->
-<!--
-  > [!WARNING]
-  > Depending on your specific solution, you may have to work with the upgrade tools for some time. Make sure that no one is using either the existing on-premises solution or the new online environment until the data upgrade is complete.
--->
+To get started, go to [Complete cloud migration](migration-finish.md).
 
 ## Working with environments during cloud migration
 
@@ -234,7 +196,7 @@ Users that are reassigned to the *Intelligent Cloud* <!--user group--> permissio
 ## Related information
 
 [Migrate on-premises data to Business Central online introduction](migrate-data.md)  
+[Business Central 14 reimplementation tool for cloud migration](migrate-bc14-reimplementation.md)  
 [Intelligent insights with Business Central online](/dynamics365/business-central/about-intelligent-cloud)  
 [Migrate legacy help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] format](../upgrade/migrate-help.md)  
-[Upgrading from Dynamics NAV to Business Central online](../upgrade/Upgrade-Considerations.md#online)  
-[Important information and considerations for before upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019](../upgrade/Upgrade-Considerations.md)
+[Upgrading from Dynamics NAV to Business Central online](../upgrade/Upgrade-Considerations.md#online)
