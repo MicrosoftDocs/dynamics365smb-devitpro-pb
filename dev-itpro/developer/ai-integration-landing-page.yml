@@ -16,7 +16,7 @@ metadata:
   description: Build AL extensions that include copilot and generative AI experiences.
   author: jswymer
   ms.author: jswymer
-  ms.date: 04/01/2025
+  ms.date: 05/18/2026
   ms.topic: landing-page # DON'T CHANGE
   ms.service: dynamics-365-business-central
   ms.custom: bap-template #Required; don't change.
@@ -31,7 +31,7 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: What are the developer tools for Copilot
+      - text: What are the developer tools for Copilot?
         url: developer-tools-for-copilot-overview.md
       - text: What is considered a Copilot offering?
         url: ai-extend-copilot-overview.md
@@ -51,8 +51,10 @@ landingContent:
         url: copilot-and-agents-influence-without-extending.md
     - linkListType: reference
       links:
-      - text: About Copilot in Business Central
-        url: /dynamics365/business-central/copilot-overview
+      - text: AI in Business Central
+        url: /dynamics365/business-central/ai-in-bc
+      - text: AI in Dynamics 365
+        url: /dynamics365/copilot/ai-get-started
 # Card
   - title: Extend Copilot in Business Central
     linkLists:
