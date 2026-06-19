@@ -434,11 +434,11 @@
 #### Overview
 ##### [End-to-end process](administration/migrate-business-central-on-premises.md)
 ##### [Managing cloud migration](administration/migration-manage.md)
+##### [Business Central 14 reimplementation (preview)](administration/migrate-bc14-reimplementation.md)
 #### Prepare
 ##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare.md)
 ##### [Estimate data size in online tenant](administration/cloud-migration-estimate-compressed-data-size.md)
-##### [Prerequisites for cloud migration](administration/cloud-migration-prerequisites.md)
 ##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
 ##### [Clean data for cloud migration](administration/migration-clean-data.md)
 ##### [Optimize cloud migration performance](administration/migration-optimize-replication.md)
@@ -459,6 +459,7 @@
 ##### [Complete cloud migration](administration/migration-finish.md)
 ### Migrate from Dynamics NAV
 #### [Migrate from Dynamics NAV to Business Central online](administration/migrate-nav.md)
+#### [Customization migration guide](administration/migrate-nav-customization-playbook.md)
 ### Migrate from Dynamics GP
 #### Overview
 ##### [End-to-end process](administration/migrate-gp-overview.md)
@@ -503,6 +504,7 @@
 ##### [Run data upgrade](administration/migration-data-upgrade-sl.md)
 #### Finish cloud migration
 ##### [Complete cloud migration](administration/migration-finish-sl.md)
+### [Custom migration from any SQL source](administration/cloud-migration-custom-migration.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
@@ -1540,7 +1542,7 @@
 ### [AL MCP Server](developer/al-agent-tools/al-mcp-server.md)
 ### [Connect to MCP server with Copilot Studio](ai/create-agent-in-copilot-studio.md#create-agents-that-connect-to-business-central-mcp-server)
 ### [Connect to MCP server with Visual Studio Code](ai/use-mcp-server-in-vscode.md)
-### [Connect to MCP server with non-Microsoft clients](ai/use-mcp-server-non-microsoft.md)
+### [Connect to MCP server with GitHub Copilot CLI and other hosts](ai/use-mcp-server-non-microsoft.md)
 ## Designing and coding agents (preview)
 ### [Overview](ai/ai-development-toolkit-landing-page.yml)
 ### [Designing and coding agents](ai/ai-development-toolkit-overview.md)

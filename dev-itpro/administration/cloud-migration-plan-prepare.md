@@ -5,12 +5,23 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 01/23/2024
+ms.date: 05/23/2026
 ms.custom: bap-template 
 ---
 # Prepare and plan for cloud migration from Business Central on-premises
 
 This article provides recommendations to help you define your cloud migration strategy and get environments and users ready for cloud migration.
+
+## Assess your current state
+
+Before you start planning what data to migrate, assess your current on-premises environment to understand the scope and effort required. The following checklist outlines the key areas to review:
+
+- **Current version and cumulative update level**: Identify your current [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] or [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises version. This information determines the upgrade path you must follow.
+- **Database size, growth rate, and number of companies**: Measure the current database size and identify how many companies you need to migrate. Large databases or many companies require more planning around batches and timing.
+- **Customization inventory**: Catalog all modified objects, ISV add-ons, and integrations. Customizations typically represent the biggest technical risk and effort in a migration.
+- **Performance baseline and largest tables**: Identify the largest transactional and log tables. These tables affect migration duration and may be candidates for archiving or cleanup.
+- **Compliance and data residency requirements**: Determine whether data residency, industry compliance, or security requirements affect your migration approach or target environment region.
+- **Business validation criteria and sign-off owners**: Define who validates the migrated result and what success criteria must be met before cutover.
 
 ## Determine what data to migrate
 
@@ -30,6 +41,9 @@ You can choose to migrate data for all companies or only specific companies. It'
 > - We advise that you move all companies to the tenant before going live. Moving companies into a live tenant can lead to data loss in the live companies. [Learn more about migrating companies to live tenants](migrate-companies-live-tenant.md)].
 
 ### Extension data
+
+> [!NOTE]
+> This section doesn't apply if you're using the [Business Central 14 reimplementation tool](migrate-bc14-reimplementation.md). That tool migrates only essential business data and doesn't include extension data by default. You can extend the tool to migrate other fields, custom tables, and post‑migration actions. Learn more about the supported patterns in [Extend the tool](migrate-bc14-reimplementation.md#extend-the-tool).
 
 In general, on-premises data in table objects and table extension objects belonging to an extension is only migrated if the following conditions are met:
 
@@ -60,6 +74,22 @@ For more information, see [FAQ about migrating to Business Central online from o
 ## Estimate the data size in your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant
 
 In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], data is compressed using the SQL Server data compression feature. This condition means that the data size in your on-premises database might not match the data size when migrated to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. For more information on estimating the compressed size of your data, see [Estimating the data size in your Business Central online tenant](./cloud-migration-estimate-compressed-data-size.md). 
+
+## Prepare your data for migration
+
+Use the period before migration to reduce technical debt and potential issues in the database:
+
+- Archive obsolete history and shrink oversized transaction or log tables where appropriate.
+- Validate that any schema changes in your database are intentional and expected.
+- Confirm that the SQL Server version and database compatibility level meet the requirements (SQL Server 2016 or later, compatibility level 130 or higher).
+- If you plan a multi-company migration, design batches early so that timing and validation can be repeated consistently across dry runs and the final cutover.
+- Consider reducing the amount of data so that it's less than 30 GB per migration run. If your [!INCLUDE[prod_short](../includes/prod_short.md)] online storage exceeds 80 GB, some administrative tasks are disabled.
+
+## Plan your environment strategy
+
+When you set up cloud migration, the migration process replicates data into the target online environment. Don't set up cloud migration for a production environment that's already in use for business, because replication can overwrite data in the target environment.
+
+Instead, use a sandbox environment for dry runs and validation. This approach helps you identify issues and measure timing without risking production data. Only use a production environment as the target for the final cutover when you're ready to go live.
 
 ## Plan advanced migration approach
 
@@ -95,6 +125,32 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 > Avoid modifying the environment after the replication has been enabled. If you need to install or uninstall extensions or delete companies, disable the cloud migration, make the changes, then enable it again.
 
 Keep in mind that the migration process can be complex, and issues might arise that require more troubleshooting. It's important to stay flexible and be prepared to adjust your migration strategy as needed to address any problems that arise.
+
+## Create a governance plan
+
+Create a migration runbook that documents the owners, dependencies, expected durations, decision gates, change freeze timing, and rollback options for each phase of the migration. Update the runbook after each dry run with newly discovered issues and their mitigations. A well-maintained runbook helps ensure that everyone involved understands their responsibilities and that the migration proceeds predictably.
+
+### Runbook checklist
+
+A comprehensive migration runbook should include:
+
+| Section | Contents |
+|---------|----------|
+| **Roles and owners** | Name the migration lead, technical owner, business validation owner, and escalation contacts. |
+| **Timeline and milestones** | Define dates for dry runs, go/no-go decisions, change freeze, cutover weekend, and go-live. |
+| **Dependencies** | List external systems, ISV extensions, integrations, and any third parties that must be coordinated. |
+| **Decision gates** | Define criteria for proceeding at each phase (for example, "Data replication completes with <5 errors" or "Business users sign off on sandbox validation"). |
+| **Change freeze** | Specify when to stop on-premises development and data changes before the final cutover. |
+| **Rollback plan** | Document how to revert to the on-premises system if critical issues arise during cutover. Include data restore procedures and communication templates. |
+| **Communication plan** | Outline how and when to notify users about downtime, training, and the switch to the new system. |
+
+### Dry run cadence
+
+Plan at least two dry runs before the production cutover:
+
+1. **First dry run**: Identify technical issues, measure timing, and validate the migration process in a sandbox environment.
+2. **Second dry run**: Confirm fixes, refine timing estimates, and conduct business validation with key users.
+3. **Final cutover**: Execute the production migration using the validated runbook.
 
 ## Schedule
 

@@ -1,7 +1,7 @@
 ---
 author: jswymer
 ms.topic: include
-ms.date: 10/02/2023
+ms.date: 05/23/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -10,8 +10,10 @@ You can use the built-in migration tools to migrate data to [!INCLUDE [prod_shor
 - [!INCLUDE[prod_short](prod_short.md)] on-premises  
 
   [!INCLUDE [bc-cloud-versions](bc-cloud-versions.md)]
+
 - Dynamics NAV
 
   [!INCLUDE [bc-cloud-nav](../includes/bc-cloud-nav.md)]
-- Dynamics GP 2015 and later versions  - Dynamics GP 2015 and later versions 
+- Dynamics GP 2015 and later versions
 - Dynamics SL 2015 and later versions
+- Any other SQL source using custom migrations

@@ -105,3 +105,22 @@ If any data or transactions are dependent on a specific on-premises user account
 ## Step 6 Reconfigure the Dynamics 365 Sales connection
 
 If you're integrating with Dynamics 365 Sales, you have to set up the connection again. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).
+
+## Step 7 Reconnect integrations
+
+Re-establish connections to external services, APIs, Power Platform flows, and any third-party integrations that were running against the on-premises system:
+
+- Update connection strings, endpoints, and authentication credentials to point to the new online environment.
+- Reconfigure Power Automate flows that interact with [!INCLUDE[prod_short](../includes/prod_short.md)] data.
+- Test each integration end-to-end in the new environment before going live.
+
+## Step 8 Monitor and validate
+
+After you complete the migration and go live, monitor the environment closely during the stabilization period:
+
+- **Review telemetry**: Use Application Insights to track errors, performance, and usage patterns. Cloud migration emits telemetry that you can use to verify the migration completed successfully. Learn more in [Cloud migration telemetry](telemetry-cloud-migration-trace.md).
+- **Set up alerts**: Configure alerts for key performance indicators and error patterns so you can respond to issues quickly.
+- **Validate with users**: Have business users verify that key processes work correctly and that migrated data is accurate.
+- **Monitor performance**: Watch for slow queries or unexpected load patterns during the first few weeks of operation.
+
+For information about enabling telemetry, see [Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md).
