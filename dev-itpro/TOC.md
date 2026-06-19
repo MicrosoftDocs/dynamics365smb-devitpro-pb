@@ -1540,7 +1540,7 @@
 ### [AL MCP Server](developer/al-agent-tools/al-mcp-server.md)
 ### [Connect to MCP server with Copilot Studio](ai/create-agent-in-copilot-studio.md#create-agents-that-connect-to-business-central-mcp-server)
 ### [Connect to MCP server with Visual Studio Code](ai/use-mcp-server-in-vscode.md)
-### [Connect to MCP server with non-Microsoft clients](ai/use-mcp-server-non-microsoft.md)
+### [Connect to MCP server with GitHub Copilot CLI and other hosts](ai/use-mcp-server-non-microsoft.md)
 ## Designing and coding agents (preview)
 ### [Overview](ai/ai-development-toolkit-landing-page.yml)
 ### [Designing and coding agents](ai/ai-development-toolkit-overview.md)

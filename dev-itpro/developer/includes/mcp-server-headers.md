@@ -10,3 +10,4 @@
 > The encoded value must use the format `=?base64?<encodedvalue>?=`. Learn more in [Base64 decoding in the MCP HTTP standard](https://modelcontextprotocol.io/seps/2243-http-standardization#base64-decoding).
 >
 > With Copilot Studio, the platform handles the encoding, so manual encoding isn't required.  
+mcp-server-headers
