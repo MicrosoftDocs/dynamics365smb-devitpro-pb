@@ -302,6 +302,7 @@
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [MCP configuration telemetry](administration/telemetry-mcp-configuration-trace.md)
 #### [MCP Server telemetry](administration/telemetry-mcp-server-trace.md)
+#### [Metadata embeddings telemetry](administration/telemetry-metadata-embeddings-trace.md)
 #### [Onboarding telemetry](administration/telemetry-onboarding-trace.md)
 #### [Open in Excel telemetry](administration/telemetry-open-in-excel-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)

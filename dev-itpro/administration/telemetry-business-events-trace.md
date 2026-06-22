@@ -1,13 +1,14 @@
 ---
 title: Analyze business events telemetry
 description: Learn about business events telemetry in Business Central  
-author: kennienp
+author: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 05/01/2026
 ms.reviewer: jswymer
-ms.author: kepontop
+ms.author: jswymer
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Analyze business events telemetry

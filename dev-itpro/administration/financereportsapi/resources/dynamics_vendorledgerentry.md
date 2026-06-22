@@ -11,6 +11,8 @@ ms.reviewer: solsen
 
 # vendorLedgerEntry resource type (Beta)
 
+[!INCLUDE[finance-reports-api-deprecation](../../../includes/finance-reports-api-deprecation.md)]
+
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a vendor ledger entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].

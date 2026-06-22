@@ -11,6 +11,8 @@ ms.reviewer: solsen
 
 # vendor resource type (Beta)
 
+[!INCLUDE[finance-reports-api-deprecation](../../../includes/finance-reports-api-deprecation.md)]
+
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].

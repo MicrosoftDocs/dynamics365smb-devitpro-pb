@@ -8,6 +8,7 @@ ms.date: 05/01/2026
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Analyze API metadata validation telemetry
