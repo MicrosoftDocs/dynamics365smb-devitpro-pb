@@ -8,6 +8,7 @@ ms.date: 01/20/2025
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Analyze agent lifecycle telemetry

@@ -112,10 +112,10 @@
 | LC0055 | Profile Configuration Lifecycle | [Profile page customization converted: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-converted) |
 |LC0056|Extension Lifecycle |[Extension is already synchronized: {extensionName}](../administration/telemetry-extension-lifecycle-trace.md#alreadySynced)|
 |LC0058|Permissions |[Permission set changed by an extension](../administration/telemetry-permission-changes-trace.md#permissionsetchangedbyapp)|
-| LC0059 | AI Consumption | [Metadata embedding generation succeeded for extension {extensionId} version {extensionVersion}](../administration/telemetry-ai-consumption.md#LC0059) |
-| LC0060 | AI Consumption | [Metadata embedding generation failed for extension {extensionId} version {extensionVersion}](../administration/telemetry-ai-consumption.md#LC0060) |
-| LC0061 | AI Consumption | [Metadata embedding generation scheduled for extension {extensionId} version {extensionVersion}](../administration/telemetry-ai-consumption.md#LC0061) |
-| LC0062 | AI Consumption | [Metadata embedding generation started for extension {extensionId} version {extensionVersion}](../administration/telemetry-ai-consumption.md#LC0062) |
+| LC0059 | Metadata Embeddings | [Metadata embedding generation succeeded for extension {extensionId} version {extensionVersion}](../administration/telemetry-metadata-embeddings-trace.md#LC0059) |
+| LC0060 | Metadata Embeddings | [Metadata embedding generation failed for extension {extensionId} version {extensionVersion}](../administration/telemetry-metadata-embeddings-trace.md#LC0060) |
+| LC0061 | Metadata Embeddings | [Metadata embedding generation scheduled for extension {extensionId} version {extensionVersion}](../administration/telemetry-metadata-embeddings-trace.md#LC0061) |
+| LC0062 | Metadata Embeddings | [Metadata embedding generation started for extension {extensionId} version {extensionVersion}](../administration/telemetry-metadata-embeddings-trace.md#LC0062) |
 | LC0063 | Table Index Lifecycle | [Index enabled at runtime: {keyName}](../administration/telemetry-table-index-trace.md#LC0063) |
 | LC0064 | Table Index Lifecycle | [Index disabled at runtime: {keyName}](../administration/telemetry-table-index-trace.md#LC0064) |
 | LC0065 | Table Index Lifecycle | [Sync table column count exceeded: {tableName}](../administration/telemetry-table-index-trace.md#LC0065) |

@@ -8,6 +8,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 04/01/2021
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Analyzing Database Lock Timeout Trace Telemetry

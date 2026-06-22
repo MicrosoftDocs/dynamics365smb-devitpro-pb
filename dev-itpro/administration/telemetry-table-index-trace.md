@@ -8,6 +8,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 12/22/2023
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Analyze Table Index Trace Telemetry
