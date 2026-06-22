@@ -11,6 +11,8 @@ ms.reviewer: solsen
 
 # generalLedgerBudgets resource type (Beta)
 
+[!INCLUDE[finance-reports-api-deprecation](../../../includes/finance-reports-api-deprecation.md)]
+
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a general ledger budgets in [!INCLUDE[prod_short](../../../includes/prod_short.md)].

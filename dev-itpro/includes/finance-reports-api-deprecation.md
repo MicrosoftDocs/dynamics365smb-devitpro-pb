@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> The finance reports API is announced as deprecated starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2026 release wave 2 and will be removed in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2027 release wave 1. We recommend that you transition to the Analytics API instead. Learn more in [Analytics API overview](../api-analytics/api-analytics-overview.md).

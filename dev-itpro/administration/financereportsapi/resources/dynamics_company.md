@@ -11,6 +11,8 @@ ms.reviewer: solsen
 
 # company resource type (Beta)
 
+[!INCLUDE[finance-reports-api-deprecation](../../../includes/finance-reports-api-deprecation.md)]
+
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
