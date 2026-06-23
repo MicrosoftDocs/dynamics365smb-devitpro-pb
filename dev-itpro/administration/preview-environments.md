@@ -46,6 +46,21 @@ As early access previews coincide with development, environments on the early ac
 
 As in the public preview period, the system deletes preview environments 30 days after the preview version becomes generally available (GA). You can't update a preview environment to a different version.
 
+## Provide feedback in an early access preview environment
+
+If you're using an early access preview environment, you can provide feedback directly from within [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
+
+On the Role Center, a banner titled **Welcome to the early access preview** highlights new features available for testing. To explore these features and share feedback:
+
+1. Choose **Show new features and provide feedback** on the banner.
+2. Review the preview features.
+3. Submit your feedback as prompted in the experience.
+
+You can also provide feedback while using individual features by using the feedback options available in the product interface.
+
+> [!TIP]
+> Providing feedback during early preview helps improve features before general availability.
+
 ## Practice and test
 
 Sandbox environments on preview versions can be used to practice and test.
