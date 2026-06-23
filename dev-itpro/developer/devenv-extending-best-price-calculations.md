@@ -257,7 +257,7 @@ The Price Source Group interface defines methods for a generic price source grou
 * Vendor (21)
 * Job (31)
 
-This enum is the subset of the Price Source Type enum. Both enums implement the Price Source Group interface. The interface helps to link the Price Source Type enum with the Sale Price Source Type, Purchase Price Source Type, and Job Price Source Type enums.
+This enum is the subset of the Price Source Type enum. Both enums implement the Price Source Group interface. The interface helps link the Price Source Type enum with the Sale Price Source Type, Purchase Price Source Type, and Job Price Source Type enums.
 
 :::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Diagram showing a price sources group.":::
 
