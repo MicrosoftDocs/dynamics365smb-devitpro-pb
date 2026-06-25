@@ -1,5 +1,5 @@
 ---
-title: Upgrading reports
+title: Upgrade reports
 description: Describes how to upgrade reports in Business Central. 
 ms.custom: bap-template
 ms.date: 03/09/2024
@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.author: jswymer
 author: jswymer
 ---
-# Upgrading reports
+# Upgrade reports
 
 > **APPLIES TO:** Upgrading to Business Central 2024 release wave 1 (version 24) and later from Business Central version 19 and earlier 
 
@@ -16,11 +16,13 @@ This article discusses changes to the report platform done in Business Central 2
 
 ## Report platform changes
 
-Version 20 introduced a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made, including:
+Version 20 introduces a new report rendering model. Previously, the application rendered reports. With version 20 and later, the platform renders reports by default, 
+
+To support this new model, Business Central includes the following changes:
 
 - An updated Microsoft Word report rendering engine
-- A new custom report render
-- Improved layout management using extension layouts for designing multiple layouts for a single report.
+- A new custom report renderer
+- Improved layout management that supports multiple layouts per report by using extension layouts
 - New platform-supported layouts and layout selection tables
 - New and obsoleted application events in codeunit **44 ReportManagement**
 
@@ -142,26 +144,30 @@ Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Re
 
 ## What the changes mean for upgrade
 
-These report rendering changes may have implications on upgrading from earlier versions if your application includes reports that use layouts stored in application table **9650 Custom Report Layouts** or make use of the application report layout selection features. And, you have events that subscribe to any of the obsoleted events.
+These report rendering changes may affect upgrades from earlier versions if your application:
 
-Basically, the following areas can be impacted:
+- Uses layouts stored in application table **9650 Custom Report Layouts** 
+- Implements custom report layout selection
+- Subscribes to any of the obsoleted events.
 
-- Report layout selection with dependencies to the `OnAfterHasCustomLayout` event or design-time temporary selection. The reason is that layout selection logic has been extended because of new layout types.
+The following areas are commonly affected:
+
+- Report layout selection that depends on `OnAfterHasCustomLayout` event or design-time temporary selection. The platform extends layout selection to support additional layout types.
 - Events on the **Document Management** codeunit related to Word documents as layouts now render in platform by default.
 
-When doing a full upgrade (application and platform), you might have to rewrite custom code to use the new events. See [Upgrade of reports with custom layouts](#appupgrade).
+If you perform a full upgrade of the pplication and platform, you might have to rewrite custom code to use the new events. For more information, refer to [Upgrade of reports with custom layouts](#appupgrade).
 
-The report rendering changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
+These changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. If your solution doesn't include custom Word layouts, then no action is required.
 
-## <a name="appupgrade"></a>Upgrade of reports with custom layouts
+## Upgrade of reports with custom layouts
 
-The new platform supports the native rendering of Microsoft Word reports. With this new rendering, the following report events in AL are no longer used:
+The new platform now supports native rendering of Microsoft Word reports. As a result, the following report events in AL are no longer used:
 
 - `OnAfterHasCustomLayout`
 - `OnMergeDocumentReport`
 - `OnBeforeMergeDocument`
 
-If you have custom code that subscribes to these events, you'll have to change the code to subscribe to new events, including:
+If you have custom code that subscribes to these events, change the code to subscribe to new events, including:
 
 - `OnSelectReportLayoutCode`
 - `OnFetchReportLayoutByCode`
@@ -187,6 +193,6 @@ By subscribing to `OnCustomDocumentMergerEx`, the application can use extension 
 
 ## Related information  
 
-[Upgrading to Business Central](upgrading-to-business-central.md)  
-[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
-[Custom Report Render Event](../developer/devenv-oncustomdocumentmergerex-event.md)
+- [Upgrading to Business Central](upgrading-to-business-central.md)  
+- [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
+- [Custom Report Render Event](../developer/devenv-oncustomdocumentmergerex-event.md)
