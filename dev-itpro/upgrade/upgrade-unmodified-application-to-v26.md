@@ -1,6 +1,6 @@
 ---
-title: Upgrading Microsoft System and Base Application to Version 26
-description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 26
+title: Upgrade Microsoft System and Base Application to Version 26
+description: Learn how to upgrade an unmodified Business Central version 15 through 25 to version 26.
 ms.custom: bap-template
 ms.date: 01/06/2026
 ms.reviewer: jswymer
@@ -9,7 +9,7 @@ ms.author: jswymer
 author: jswymer
 ---
 
-# Upgrading Microsoft System and Base Application to Version 26
+# Upgrade Microsoft System and Base Application to Version 26
 
 Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that use the Microsoft system and base applications.
 
@@ -25,7 +25,10 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 - 2020 release wave 1 (version 16)
 - 2019 release wave 2 (version 15)
 
-You can't upgrade directly to version 26 from version 24 or earlier because version 26 deletes many objects. Upgrade to version 25 first. Learn more in [Deleted objects](upgrade-considerations-v26.md#deleted-objects).  
+You can't upgrade directly to version 26 from version 24 or earlier because version 26 deletes many objects. Upgrade to version 25 first. Learn more in [Deleted objects](upgrade-considerations-v26.md#deleted-objects). 
+
+> [!IMPORTANT]
+> To determine which update of version 26 is compatible with your current Business Central version, refer to [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc26-upgrade-unmodified-app.png)](../developer/media/bc26-upgrade-unmodified-app.png#lightbox)  
 
@@ -71,7 +74,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 26 server instal
 
 1. Download the latest available update for Business Central 2025 release wave 1 (version 26) that is compatible with your current version.
 
-    Learn more in [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   Learn more in [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 2. Before you install version 26, it can be useful to create a desktop shortcut the [!INCLUDE[admintool](../developer/includes/admintool.md)] for the current version. The reason is that the Start menu item for the current version is replaced with item for the [!INCLUDE[admintool](../developer/includes/admintool.md)] for version 26.
 
@@ -79,13 +82,13 @@ $AddinsFolder = "The file path to the Add-ins folder of version 26 server instal
 
     You keep the current version installed to complete some steps in the upgrade process. When you install version 26, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the current version's [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+    Learn more in [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 ## Task 4: Upgrade permission sets
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
+Learn more in [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
 
 ## Task 5: Prepare the existing databases
 
@@ -94,7 +97,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
     If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
 
-    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+    Learn more in [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
@@ -193,7 +196,7 @@ When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../d
     Set-NAVServerConfiguration -ServerInstance $NewBcServerInstance -KeyName DatabaseName -KeyValue $ApplicationDatabase
     ```
 
-    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. Learn more in [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
 2. Disable task scheduler on the server instance for purposes of upgrade.
 
@@ -286,7 +289,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 1. Publish the Microsoft_Application extension.
 
-    For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    For more information about this extension, refer to [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path $ApplicationAppPath
@@ -475,7 +478,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 4. Search for and open the **Permission Sets** page.
 5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
-For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
+For more information, refer [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 ## Task 16: Change application version
 
@@ -488,7 +491,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
 3. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
 4. If you want to use data encryption as before, enable it.
 
-   For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+   Learn more in [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 5. Import the customer license
@@ -502,5 +505,5 @@ For more information, see [To export and import a permission set](/dynamics365/b
 
 ## Related information  
 
-[Upgrading to Business Central](upgrading-to-business-central.md)  
-[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
+- [Upgrading to Business Central](upgrading-to-business-central.md)  
+- [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
