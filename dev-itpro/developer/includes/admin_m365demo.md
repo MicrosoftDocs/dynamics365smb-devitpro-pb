@@ -2,50 +2,60 @@
 author: dmc-dk
 ms.topic: include
 ms.reviewer: jswymer
-ms.date: 11/21/2024
+ms.date: 05/20/2026
 ms.author: jswymer
 ---
-1. Sign in to [aka.ms/cdx](https://aka.ms/cdx) using your partner account.
-1. Select the **My Environments** tab, and then, under **My tenants**, select the **Create Tenant** button.
-1. As the type, select **Quick Tenant**.
-1. As the period, select **90 days**. You can't select **1 year**.
 
-    Your account in CDX has access to a limited quota of tenants that can last three months (90 days). Learn more at [CDX FAQ](https://cdx.transform.microsoft.com/help/faq).  
-1. As the location, choose the region that is closest to your location.
+1. Sign in to [aka.ms/cdx](https://aka.ms/cdx) by using your partner account.
+1. Use the **Search** box to find the following demo experiences:
 
-    This setting determines the location in which the tenant is deployed, but you can add [!INCLUDE [prod_short](prod_short.md)] environments to it for any country/region afterwards.  
+   - Dynamics 365 Business Central Demo
+   - Dynamics 365 Business Central
+   - Microsoft 365 Business Premium Demo
 
-1. Choose one of the available content packs and then select the **Create Tenant** button.  
+   Not sure which experience to choose? Experiences are available in both 90-day and 1-year versions. Learn more in [Understand the differences between experiences](#understand-the-differences-between-experiences).
+1. On the tile for the experience you want to use, select **View experience** to show information about the experience.
+1. Under **Customer details**, fill in the information as needed.
+1. Under **Tenant details**, select **Claim new tenant**.
+1. Set the **Region** as you like.
 
-    Content packs offer different bundles of Microsoft software free trials. Each content pack typically results in a dedicated demonstration organization in Azure and multiple demonstration users, including preconfigured Microsoft 365 or Dynamics 365 applications. You can choose any of the content packs that match your prospects' industry or interests, and then add Business Central to the tenant afterwards.
+   This setting determines the Azure region where the tenant is deployed, not the Business Central country/region version. In most cases, choose the region that is closest to your location. You select the country/region version later when you sign up for the Business Central trial.
+1. Select **Start demo** to create the new tenant.
+1. When the tenant is created, a page appears with details of the tenant. Keep the page open because you need the administrator email and password in the next step.
+1. Start a [!INCLUDE [prod_short](prod_short.md)] trial in the new MDX tenant:
+   1. In a dedicated browser window, open [https://go.microsoft.com/fwlink/?linkid=2255328](https://go.microsoft.com/fwlink/?linkid=2255328).
+   1. Follow the online instructions to fill in the information required to sign up for Business Central. For the email, use the new administrator account email that was set up for the tenant in the previous step.
 
-    If you're uncertain which content pack is a fit for you, we recommend one of the following packs:
+   > [!TIP]
+   > We recommend that you use profiles in the Microsoft Edge browser rather than InPrivate or Incognito browser mode. Learn more at [Microsoft Edge](/microsoft-edge/).
 
-    - **Dynamics 365 Customer Engagement** currently includes Microsoft 365 Copilot, Power Platform, and the Dynamics 365 apps that Business Central typically integrates with.
-    - **Microsoft 365 Enterprise Demo Content** currently includes demonstration data that simulates an organization that is using Microsoft 365.
+When sign-up is complete, you have a dedicated demonstration organization that includes multiple demo users with Microsoft 365 licenses and a [!INCLUDE [prod_short](prod_short.md)] environment.
 
-    These content packs give you a dedicated demonstration organization in Azure that includes multiple demo users with Microsoft 365 licenses.  
+Expected result: Verify that these two companies are available in the initial [!INCLUDE [prod_short](prod_short.md)] demo environment:
 
-    > [!NOTE]
-    > When demand for a specific content pack is high, the **Create Tenant** button isn't activated, and you must choose a different content pack.
+- The CRONUS demonstration company
+- An empty company with the name *My Company* (the display name might differ for demo purposes)
 
-1. When the tenant is created, a page appears with details of tenant. Keep the page open because you need administrator email and password in the next step.
-1. Sign up for a [!INCLUDE [prod_short](prod_short.md)] trial by completing the following steps:
+#### Understand the differences between experiences
 
-   1. In a dedicated browser window, visit [https://www.microsoft.com/en-us/dynamics-365/products/business-central](https://www.microsoft.com/en-us/dynamics-365/products/business-central)
-   1. Select the **Try for free**
-   1. Follow the online instructions to fill in the information required to sign up to Business Central. For the email, use the new administrator account email that you got as part of your demo account in the previous step.
+All three experiences support the same core Business Central scenarios and include Microsoft 365 apps, such as Office apps, Teams, and Microsoft 365 Copilot.
 
-    > [!TIP]
-    > We recommend that you use profiles in the Microsoft Edge browser rather than InPrivate or Incognito browser mode. Learn more at [Microsoft Edge](/microsoft-edge/).
+The main differences are in the Power Platform configuration—specifically, Dynamics 365 apps availability and Dataverse and AI Builder default setup. The following table summarizes the key differences across tenants created from different experiences.
 
-By now, you have a dedicated demonstration organization in Azure that includes multiple demo users with Microsoft 365 licenses, and a [!INCLUDE [prod_short](prod_short.md)] environment.
+| Category | Dynamics 365 Business Central Demo | Dynamics 365 Business Central | Microsoft 365 Business Premium Demo |
+|-|-|-|-|
+| Licensing | Microsoft 365 E5, Dynamics 365, Business Central, Power Apps Plan 2 | Microsoft 365 E5, AI Builder | Microsoft 365 Business Premium |
+| Dynamics 365 apps in Power Platform | ✅ | ❌ | ✅ |
+| Dataverse enabled by default in Power Platform | ✅ | ❌ | ❌ |
+| AI Builder in Power Platform | ✅ | ✅ | ✅ |
 
-The initial [!INCLUDE [prod_short](prod_short.md)] demo environment comes with two companies:
+> [!NOTE]
+> - Some Business Central features integrate with Dataverse, such as Dynamics 365 Sales integration and Power Platform scenarios. These features are optional and don't affect core Business Central functionality.
+> - AI Builder requires Dataverse and sufficient capacity. Some capabilities might appear in a tenant after additional configuration or trials. The table reflects the default configuration of each experience.
 
-- The CRONUS demonstration company  
-- An empty company with the name *My Company*, but it might have a different display name for demo purposes  
+##### When to use each content pack
 
-You can keep using the demonstration company until the tenant expires, if you use it a couple of times per week. However, if you start the trial experience or switch to the empty *My Company*, that experience will expire after 30 days. If the trial expires, you can extend the trial, create a new environment, or return to the CRONUS demonstration company. Learn more at [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prod_short](prod_short.md)].
+- **Dynamics 365 Business Central Demo**: Use for end-to-end demos and scenarios that combine Business Central with Power Platform and Dynamics 365 apps.
+- **Dynamics 365 Business Central**: Use for testing, validation, or documentation scenarios where a simpler Dataverse-only environment is sufficient.
+- **Microsoft 365 Business Premium Demo**: Use for small and medium business scenarios that combine Microsoft 365 capabilities with Business Central and Power Platform, making it well suited for demonstrating end-to-end business workflows that extend beyond ERP.
 
-You can now enable the *Premium* user experience in the new company's **Company Information** page, populate the company with any data that is required for their evaluation scenarios, and present the environment to the prospect.  
