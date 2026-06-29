@@ -185,7 +185,11 @@
 ### [Technical support of Business Central](technical-support.md)
 ### Environment types
 #### [Production and sandbox environments](administration/environment-types.md)
-#### [Preparing demo environments](administration/demo-environment.md)
+#### Demo environments
+##### [Prepare demonstrations of Business Central](administration/demo-environment.md)
+##### [Set up demo environments with MDX](administration/demo-environment-mdx.md)
+##### [Use trial and sandbox demo environments](administration/demo-environment-trial.md)
+##### [Add enhancements to demo environments](administration/demo-environment-extend-enhancements.md)
 #### [Preparing test environments](administration/test-environment.md)
 #### [Prepare for major updates with preview environments](administration/preview-environments.md)
 ## Admin center
@@ -1283,6 +1287,7 @@
 #### [Discover events using the Event Recorder](developer/devenv-events-discoverability.md)
 #### [Event example](developer/devenv-events-example.md)
 #### [Walkthrough: Implementing new workflow events and responses](developer/devenv-walkthrough-workflow-events-responses.md)
+#### [Deprecate external business events](developer/devenv-deprecate-external-business-events.md)
 #### [Notifications](developer/devenv-notifications-developing.md)
 ### Developing client add-ins
 #### [Control add-in style guide](developer/devenv-control-addin-style.md)
@@ -2421,7 +2426,7 @@
 ###### [From version 16 Microsoft base application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
 ###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Data migration overview](developer/devenv-migrate-table-fields.md)
 ####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
 ####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ##### Technical upgrade

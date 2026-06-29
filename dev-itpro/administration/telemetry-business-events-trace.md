@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Analyze business events telemetry
 
-**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2024 release wave 2 and later
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2 and later
 
 Business events telemetry gathers data about the lifecycle and execution of business event subscriptions. Business events enable external systems to receive notifications when specific actions occur in [!INCLUDE[prod_short](../includes/prod_short.md)].
 

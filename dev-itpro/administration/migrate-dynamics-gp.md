@@ -22,6 +22,9 @@ The *fiscal periods setup* in Dynamics GP is migrated to Business Central as *ac
 
 The account number in Business Central is mapped from the main account segment from Dynamics GP. Remaining account segments are then defined as [dimensions](/dynamics365/business-central/finance-dimensions/) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The **GP Company Migration Configuration** asks you to enter a segment for *Global Dimension 1* and *Global Dimension 2*. If your chart of accounts in Dynamics GP has more than two segments outside of the main segment, the other segments are automatically set up as shortcut dimensions (3-8). You can verify the setup in the **General Ledger Setup** page in Business Central.
 
+> [!NOTE]
+> Dynamics GP unit accounts, which store nonfinancial metrics, correspond to statistical accounts in Business Central. When you use the migration tool, these accounts and their balances are automatically migrated.
+
 Let us look at an example of an account from Dynamics GP, using the year 2022 as an example:
 
 |Account in Dynamics GP |Year|Name  |Amount  |
@@ -67,13 +70,13 @@ We also bring over outstanding receivables transactions. These transactions are 
 
 ### Generating recurring sales lines
 
-The migration tools can automatically create recurring sales lines in Business Central based on sales accounts already set up in Dynamics GP. The option to create recurring sales lines is available on the **GP Company Migration Configuration** and **GP Company Migration Settings** page and is turned off by default.
+The migration tools can automatically create recurring sales lines in Business Central based on sales accounts already setup in Dynamics GP. The option to create recurring sales lines is available on the **GP Company Migration Configuration** and **GP Company Migration Settings** page and is turned off by default.
 
 When enabled, the migration tools conduct the following evaluation process:
 
 - If a customer has a sales account assigned, create a recurring sales line for that customer.
 - If no customer-level account exists but the customer's class has one, create the line and apply it to all customers in that class
-- If neither customer nor class has a sales account, use the default from **Posting Accounts Setup** in Dynamics GP (if available).
+- If the customer and the class both lack a sales account, use the default from **Posting Accounts Setup** in Dynamics GP (if available).
 
 Each recurring line includes a description based on the Dynamics GP account and dimensions, is linked to the correct GL account, and is configured to automatically insert on customer quotes, orders, invoices, and credit memos.
 
@@ -87,7 +90,7 @@ Vendor EFT Bank information is migrated to Business Central as Vendor Bank Accou
 
 We also bring over outstanding Payables transactions. These transactions are brought in with the amount remaining in Dynamics GP. For example, if an invoice for $1000 was entered into Dynamics GP, and it has been partially paid and has a remaining balance of $400, the new invoice created in Business Central is for $600 because that's the amount remaining to be paid. We bring over all transaction types from Payables Management.
 
-**1099** vendor information and amounts can be migrated to Business Central. The **GP Company Migration Configuration** page has the option where you can select if you want to migrate **1099** information. The tax type, Federal ID number, and **1099** box number from the vendor record are migrated. In addition, the  **1099** box amounts are migrated for each **1099** vendor. If you select to migration **1099** information, you must also indicate the calendar year for which you want to migrate **1099** amounts.  The first supported year for migrating **1099** information is 2024.
+**1099** vendor information and amounts can be migrated to Business Central. The **GP Company Migration Configuration** page has the option where you can select if you want to migrate **1099** information. The tax type, Federal ID number, and **1099** box number from the vendor record are migrated. In addition, the  **1099** box amounts are migrated for each **1099** vendor. If you select to migration **1099** information, you must also indicate the calendar year for which you want to migrate **1099** amounts. The first supported year for migrating **1099** information is 2024.
 
 You can also bring over Open Purchase Orders. When we migrate purchase orders, we're looking at the items and the quantities remaining on those items to determine what we bring over as an open purchase order. If an item is fully received and invoiced that item isn't migrated. By bringing over open purchase orders, you don't have to enter outstanding transactions from the purchase order aspect.
 
@@ -99,30 +102,30 @@ When enabled, the migration tools conduct the following evaluation process:
 
 - If a vendor has a purchasing account assigned, create a recurring purchase line for that vendor
 - If no vendor-level account exists but the vendor's class has one, create the line and apply it to all vendors in that class
-- If neither vendor nor class has a purchasing account, use the default from **Posting Accounts Setup** in Dynamics GP (if available).
+- If the vendor and the class both lack a purchasing account, use the default from **Posting Accounts Setup** in Dynamics GP (if available).
 
-Each recurring line includes a description based on the Dynamics GP account and dimensions, is linked to the correct GL account, and is configured to automatically insert on vendor quotes, orders, invoices, and credit memos.
+Each recurring line includes a description based on the Dynamics GP account and dimensions. The line is linked to the correct GL account, and is configured to automatically insert on vendor quotes, orders, invoices, and credit memos.
 
 ## Inventory items
 
 Inventory is imported with the cost valuation method that is set in GP at the time the migration is run. Location information and the quantity on hand for each time is migrated. If serial or lot information is tracked on an item, that information is also migrated.  
 
-In the **GP Company Migration Configuration** page, you can choose to migrate posting accounts on item classes. If you choose this option, posting accounts that are defined on *item classes* in Dynamics GP are migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating. If you only want to migrate active items, you can choose to exclude inactive items in the **GP Company Migration Configuration** page.  Also, you can choose if you don't want to migrate discontinued items.  
+In the **GP Company Migration Configuration** page, you can choose to migrate posting accounts on item classes. If you choose this option, posting accounts that are defined on *item classes* in Dynamics GP are migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating. If you only want to migrate active items, you can choose to exclude inactive items in the **GP Company Migration Configuration** page. Also, you can choose if you don't want to migrate discontinued items.  
 
 ## Inventory Unit of Measure
 
-In Business Central, there isn't a direct equivalent to the **Unit of Measure Schedules** table (IV40201) found in Dynamics GP. Schedules aren't actually units of measure; they're an ID in Dynamics GP that holds a group of units of measure.  Business Central doesn't have UofM Schedules. It only stores units of measure that would be in the GP table IV40202.  However, Business Central does allow you to set up and manage multiple units of measure for items.
+In Business Central, there isn't a direct equivalent to the **Unit of Measure Schedules** table (IV40201) found in Dynamics GP. Schedules aren't actually units of measure; they're an ID in Dynamics GP that holds a group of units of measure. Business Central doesn't have UofM Schedules. It only stores units of measure that would be in the GP table IV40202. However, Business Central does allow you to set up and manage multiple units of measure for items.
 
 You can define a base unit of measure for each item and then create alternate units of measure for purchasing, production, or sales. These alternate units of measure can be used to specify how many units of the base unit of measure are handled in different processes.
 [Set up item units of measure](/dynamics365/business-central/inventory-how-setup-units-of-measure)
 
 ## Checkbook transaction and master data 
 
-You can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating.  Any posted cash receipt should also be deposited in GP before migrating, because undeposited receipts aren't migrated. 
+You can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating. Any posted cash receipt should also be deposited in GP before migrating, because undeposited receipts aren't migrated. 
 
 ## GP Historical Snapshot
 
-In the GP Company Migration Configuration page, you can select if you want to migrate historical information from GP into Business Central. This migrated data is then visible in list pages found under the corresponding entities and navigating to GP Detail Snapshot. You can indicate if you want to migrate GL detail, Receivables, Payables, Sales Order Processing, Purchase Order Receipts, and Inventory transactions. The data is stored in extension tables in Business Central.  Data stored in those tables can be used in Power BI reports, Power Apps, or other non-Microsoft reporting tools. The tables containing the GP Historical Snapshot data are as follows:
+In the GP Company Migration Configuration page, you can select if you want to migrate historical information from GP into Business Central. This migrated data is then visible in list pages found under the corresponding entities and navigating to GP Detail Snapshot. You can indicate if you want to migrate GL detail, Receivables, Payables, Sales Order Processing, Purchase Order Receipts, and Inventory transactions. The data is stored in extension tables in Business Central. Data stored in those tables can be used in Power BI reports, Power Apps, or other non-Microsoft reporting tools. The tables containing the GP Historical Snapshot data are as follows:
 
 - Hist. G/L Account
 - Hist. Gen. Journal Line
@@ -135,7 +138,7 @@ In the GP Company Migration Configuration page, you can select if you want to mi
 - Hist. Inventory Trx. Header
 - Hist. Inventory Trx. Line
 
-You can limit the about of data migrated in the snapshot by entering the latest year in GP that you want brought over.  Enter this year in the **Oldest Snapshot Year** field in the GP Company Migration Configuration page.  
+You can limit the about of data migrated in the snapshot by entering the latest year in GP that you want brought over. Enter this year in the **Oldest Snapshot Year** field in the GP Company Migration Configuration page.  
 
 The GP Historical Snapshot will run as a background process after the migration is complete. The status of the GP Historical Snapshot data can be viewed in Fact boxes in the Cloud Migration Management page.
 
