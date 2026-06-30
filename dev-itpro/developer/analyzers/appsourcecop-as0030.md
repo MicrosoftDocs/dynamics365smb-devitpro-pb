@@ -30,11 +30,11 @@ It's allowed to rename page extensions, because page extensions can't be referen
 
 ## How to fix this diagnostic?
 
-Revert the change made on the page in order to keep the name defined previously. 
+Revert the change made on the page to keep the name defined previously. 
 
-If the rename was done in order to define the UI display of the page, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
+If the rename was done to define the UI display of the page, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
 
-If the rename was done in order to comply with naming rules such as [AS0011](appsourcecop-as0011.md), consider obsoleting the page and introducing a new one.
+If the rename was done to comply with naming rules such as [AS0011](appsourcecop-as0011.md), consider obsoleting the page and introducing a new one.
 
 ## Examples of errors for dependent extensions
 

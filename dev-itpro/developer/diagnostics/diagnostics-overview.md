@@ -398,7 +398,7 @@ ms.reviewer: solsen
 |[AL0509](diagnostic-al509.md)|Constant value '{0}' is outside of the valid ordinal range for this option type.|Warning|
 |[AL0510](diagnostic-al510.md)|The .NET type '{0}' is not a valid control add-in.|Error|
 |[AL0511](diagnostic-al511.md)|The property 'IsControlAddIn' must be set on the .NET type '{0}' if the type represents a .NET control add-in.|Error|
-|[AL0512](diagnostic-al512.md)|The manifest should define the 'supportedLocales' manifest property in order to use a placeholder in the '{0}' property.|Error|
+|[AL0512](diagnostic-al512.md)|The manifest should define the 'supportedLocales' manifest property to use a placeholder in the '{0}' property.|Error|
 |[AL0513](diagnostic-al513.md)|The FieldGroup '{0}' is not found in the target '{1}'.|Error|
 |[AL0514](diagnostic-al514.md)|The symbol file is not valid. An enum with ID '{0}' is already defined with a different name in module '{1}'.|Error|
 |[AL0515](diagnostic-al515.md)|The symbol file is not valid. An enum with name '{0}' is already defined with a different ID in module '{1}'.|Error|
@@ -429,7 +429,7 @@ ms.reviewer: solsen
 |[AL0540](diagnostic-al540.md)|The view name '{0}' is not valid.|Error|
 |[AL0541](diagnostic-al541.md)|The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed.|Error|
 |[AL0542](diagnostic-al542.md)|The property {0} cannot be used on page '{1}' because this page does not have a source table.|Error|
-|[AL0543](diagnostic-al543.md)|The manifest property 'contextSensitiveHelpUrl' must be set in order to use the property 'ContextSensitiveHelpPage'.|Error|
+|[AL0543](diagnostic-al543.md)|The manifest property 'contextSensitiveHelpUrl' must be set to use the property 'ContextSensitiveHelpPage'.|Error|
 |[AL0544](diagnostic-al544.md)|The property 'ContextSensitiveHelpPage' cannot contain a placeholder.|Error|
 |[AL0545](diagnostic-al545.md)|An area of type '{0}' is not valid on pages of type '{1}'.|Warning (future error)|
 |[AL0546](diagnostic-al546.md)|The control '{0}' cannot be modified in a view context because views only support modifying controls defined in the Content area.|Error|
