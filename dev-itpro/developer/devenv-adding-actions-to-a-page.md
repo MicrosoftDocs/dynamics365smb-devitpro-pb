@@ -32,7 +32,7 @@ Learn more about different types of actions and where to use them in [Actions ov
 
 The page actions are displayed on the header section. There are multiple tabs to help navigate to the right item.
   
-In order to add actions to the action bar, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. Learn more about adding, moving, and modifying actions in [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls).
+To add actions to the action bar, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. Learn more about adding, moving, and modifying actions in [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls).
 
 > [!NOTE]  
 > Actions can only be linked to a page, or to a group control. Actions cannot be linked to fields, or parts on a page.
@@ -50,7 +50,7 @@ In order to add actions to the action bar, you must use the keywords with Anchor
 
 The following example shows how to use different action areas on a **page object of the PageType Card**. These actions will display in the following menus in the action bar. The following example uses the *legacy* syntax for promoted actions. Learn more in [Promoted actions](devenv-promoted-actions.md).
 
-1. Actions menu: The `area(Processing)` action area is used to display the action in the Actions menu. This action uses the **Promoted** and **PromotedCategory** properties in order to display the action in the promoted actions menu called **Process**.  
+1. Actions menu: The `area(Processing)` action area is used to display the action in the Actions menu. This action uses the **Promoted** and **PromotedCategory** properties to display the action in the promoted actions menu called **Process**.  
 1. New Document group: The `area(Creation)` action area is used to display the action in the **New document** group in the Actions menu. Also, this action uses the **Image** property to display a form icon instead of a default icon.
 1. Navigate menu: The `area(Navigation)` action area is used to display the action in the Navigate tab. This action and other actions in this example uses the **RunObject** property to assign a page to the action.
 1. Report menu: The `area(Reporting)` action area is used to display this action in the Report menu, and also a Group control is added as a submenu to this menu. It sets the **Caption** property to make the action group visible in the Reports menu.
