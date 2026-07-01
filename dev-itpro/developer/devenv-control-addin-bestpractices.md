@@ -1,7 +1,7 @@
 ---
 title: Control add-in performance best practices
 description: Learn how to provide the best possible experience and performance for control add-ins in Business Central.
-ms.date: 05/01/2024
+ms.date: 06/24/2026
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -12,17 +12,27 @@ ms.reviewer: solsen
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-When developing control add-ins it's important to provide the best possible experience, as well as performance so that users can maintain their productivity without interruption. With version 20.0 of [!INCLUDE[prod_short](../includes/prod_short.md)] the client, if it detects a slow, or unhealthy control add-in, will present the user with a warning equivalent to the following.
+When developing control add-ins, it's important to provide the best possible experience and performance so that users can maintain their productivity without interruption. If the client detects a slow or unhealthy control add-in, it presents the user with a reduced functionality warning, similar to the following examples.
 
-:::image type="content" source="media/controladdin-resiliency.png" alt-text="Busy control add-in detected.":::
+- Busy control add-in
 
-The dialog can be closed by the user, but will appear again if the control add-in continues to run slowly. To ensure that the client is responsive and fast, the non-responsive or non-performant control add-in will result in continuous warnings, and if the problem persists the control add-in communication is throttled depending on the volume of communication with the [!INCLUDE[prod_short](../includes/prod_short.md)] service​. If the volume of requests to [!INCLUDE[prod_short](../includes/prod_short.md)] does not decrease, the service actively rejects incoming calls, resulting in some or all of the control add-in not functioning.
+  :::image type="content" source="media/controladdin-resiliency.png" alt-text="Shows the message when a busy control add-in is detected.":::
+
+  A user can close the dialog, but it reappears if the control add-in continues to run slowly. Continuous warnings are issued for nonresponsive or low performing control add-ins. If the problem persists, communication is throttled based on the volume of requests to [!INCLUDE[prod_short](../includes/prod_short.md)]. If traffic doesn't decrease, the service rejects incoming calls, causing the control add-in to malfunction partially or completely.
+
+- Excessive payload
+
+  :::image type="content" source="media/controladdin-resiliency-payload.png" alt-text="Shows the message when the control add-in experiences an excessive payload.":::
+
+  In this instance, the payload is too large and the request is rejected immediately. The solution is to send smaller payload
+
+Learn more in [Control add-in resiliency in Business Central](/dynamics365/business-central/across-controladdin-resiliency).
 
 ## Code examples
 
 ### Bad code example
 
-The following example illustrates code that is problematic and might cause performance issues because the trigger is invoked no matter if the previous calls are completed.
+The following example illustrates problematic code that might cause performance issues by invoking the trigger repeatedly without waiting for previous calls to complete.
 
 ```javascript
 function invokeALTriggerTheWrongWay() {
