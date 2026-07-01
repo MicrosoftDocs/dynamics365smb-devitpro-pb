@@ -33,7 +33,7 @@ The version specified as `obsoleteTagVersion` can be the same as the current Maj
 
 ### Enabling the rule using a ruleset
 
-The diagnostics for rule AS0074 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to surface them.
+The diagnostics for rule AS0074 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) to surface them.
 
 For example, the following ruleset turns the diagnostic for rule AS0074 into an error.
 
@@ -57,11 +57,11 @@ For example, the following ruleset turns the diagnostic for rule AS0074 into an 
 ```
 
 > [!NOTE]  
-> In order to fully validate obsolete properties and attributes, it is recommended to enable the rules [AS0072](appsourcecop-as0072.md), [AS0073](appsourcecop-as0073.md), [AS0074](appsourcecop-as0074.md), [AS0075](appsourcecop-as0075.md), and [AS0076](appsourcecop-as0076.md).
+> To fully validate obsolete properties and attributes, it is recommended to enable the rules [AS0072](appsourcecop-as0072.md), [AS0073](appsourcecop-as0073.md), [AS0074](appsourcecop-as0074.md), [AS0075](appsourcecop-as0075.md), and [AS0076](appsourcecop-as0076.md).
 
 ### Setting up the AppSourceCop.json
 
-In order to enable the validation, you must specify the `obsoleteTagVersion` in the AppSourceCop.json, but not specify the `obsoleteTagPattern` property to use the default pattern.
+To enable the validation, you must specify the `obsoleteTagVersion` in the AppSourceCop.json, but not specify the `obsoleteTagPattern` property to use the default pattern.
 
 ```json
 {
@@ -71,7 +71,7 @@ In order to enable the validation, you must specify the `obsoleteTagVersion` in 
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, make sure that all objects which did not change obsolete state in comparison to the baseline have an obsolete tag whose value is the one specified in the `obsoleteTagVersion` of the AppSourceCop.json.
+To fix this diagnostic, make sure that all objects which did not change obsolete state in comparison to the baseline have an obsolete tag whose value is the one specified in the `obsoleteTagVersion` of the AppSourceCop.json.
 
 ## Example of code triggering this rule
 
@@ -172,7 +172,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-The codeunit was marked as obsolete pending in the baseline without an obsolete tag. The new version of the extension specifies an obsolete version which is lower than the `obsoleteTagVersion`. This change is allowed by rule AS0074 in order to enable specifying tags without fixing the baselines.
+The codeunit was marked as obsolete pending in the baseline without an obsolete tag. The new version of the extension specifies an obsolete version which is lower than the `obsoleteTagVersion`. This change is allowed by rule AS0074 to enable specifying tags without fixing the baselines.
 
 ### Adding a tag for an obsolete object that didn't have one - higher than specified
 
@@ -194,7 +194,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-The codeunit was marked as obsolete pending in the baseline without an obsolete tag. The new version of the extension specifies an obsolete version which is higher than the `obsoleteTagVersion`. This change is allowed by rule AS0074 in order to enable specifying tags without fixing the baselines. However, a diagnostic will be reported by [AS0072](appsourcecop-as0072.md).
+The codeunit was marked as obsolete pending in the baseline without an obsolete tag. The new version of the extension specifies an obsolete version which is higher than the `obsoleteTagVersion`. This change is allowed by rule AS0074 to enable specifying tags without fixing the baselines. However, a diagnostic will be reported by [AS0072](appsourcecop-as0072.md).
 
 ## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
