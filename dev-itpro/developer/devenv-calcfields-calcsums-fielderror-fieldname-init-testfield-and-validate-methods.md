@@ -1,7 +1,7 @@
 ---
 title: Field calculation methods
 description: CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods in Business Central.
-ms.date: 01/14/2025
+ms.date: 06/29/2026
 ms.update-cycle: 1095-days
 ms.topic: how-to
 author: SusanneWindfeldPedersen
@@ -166,6 +166,21 @@ Record.TestField(Field, [Value]);
 ```  
 
 If the test fails, that is, if the field doesn't contain the specified value, an error message is displayed and a run-time error is triggered. This means that any changes that were made to the record are discarded. If the value that you test against is an empty string, the field must have a value other than blank or 0 (zero).  
+
+### Automatic navigation behavior
+
+The single-parameter overload `TestField(Field)` and the two-parameter overload `TestField(Field, Value)` behave differently when the test fails:
+
+| Overload | Error dialog behavior |
+|---|---|
+| `TestField(Field)` | Displays a **Show [Record]** button that navigates to the card page of the related record. This automatic navigation is built into the platform and doesn't require `ErrorInfo`. |
+| `TestField(Field, Value)` | Displays only an OK button. No automatic navigation. |
+
+The platform resolves the navigation target by finding a Card-type page whose `SourceTable` matches the record's table. For example, `Vendor.TestField("Subcontracting Location Code")` shows a "Show Vendor Card" button because the Vendor Card page (page 26) is a Card page with `SourceTable = Vendor`.
+
+> [!NOTE]
+> The automatic navigation doesn't highlight the specific field that needs attention. If you want field highlighting, a custom button caption, or navigation to a non-default page, use one of the overloads that accepts an [ErrorInfo](methods-auto/errorinfo/errorinfo-data-type.md) parameter. For more information, see [Actionable errors](devenv-actionable-errors.md).
+To add custom navigation to any `TestField` call, use one of the overloads that accepts an [ErrorInfo](methods-auto/errorinfo/errorinfo-data-type.md) parameter. The `ErrorInfo` object lets you specify a page ID and record ID for the navigation action.
 
 The following example tests the Language Code field for customer number 10000 in the Customer table and tests whether the Language Code is ZX.
 
