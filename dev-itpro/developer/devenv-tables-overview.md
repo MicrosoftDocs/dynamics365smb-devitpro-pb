@@ -1,6 +1,6 @@
 ---
 title: Tables overview
-description: Tables are the objects in which you store and manipulate data, and you create pages and reports in order to access and view the data in the tables.
+description: Tables are the objects in which you store and manipulate data, and you create pages and reports to access and view the data in the tables.
 ms.date: 03/01/2024
 ms.topic: overview
 ms.author: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 # Tables overview
 
-Tables are the fundamental objects in any database. They're the objects in which you store and manipulate data. This is true no matter what kind of data you need to manage. When you create a new database, you begin by building the tables. Later, you create pages and reports in order to access and view the data in the tables.  
+Tables are the fundamental objects in any database. They're the objects in which you store and manipulate data. This is true no matter what kind of data you need to manage. When you create a new database, you begin by building the tables. Later, you create pages and reports to access and view the data in the tables.  
 
 A table can be visualized as a two-dimensional matrix, consisting of columns and rows. In a table each row is a record and each column is a field. A table consists of two parts: the table data and a table description. The table data is the part users often think of as comprising the database, because it contains the actual records with their data fields. The layout and properties of those fields, however, are specified by the table description. The table description isn't directly visible to the user. The following illustration shows how the table data and the table description together form a table.  
   
