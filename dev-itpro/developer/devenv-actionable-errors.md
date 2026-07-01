@@ -2,7 +2,7 @@
 title: Actionable errors
 description: Learn how to write AL code that returns error dialogs where users might unblock themselves.
 ms.custom: bap-template
-ms.date: 11/11/2024
+ms.date: 06/29/2026
 ms.reviewer: solsen
 ms.topic: overview
 author: samirdal
@@ -112,6 +112,21 @@ If the user experience that the field can't be validated, they see the following
 ## <a name="show-it-actions"></a> Error messages with Show-it actions
 
 [!INCLUDE [actionable-errors-show-it-actions](includes/include-actionable-errors-show-it-actions.md)]
+
+### Automatic Show-it actions from TestField
+
+Not all Show-it buttons require explicit `ErrorInfo` code. The single-parameter [TestField(Field)](methods-auto/record/record-testfield-joker-method.md) method automatically adds a **Show [Record]** navigation button to the error dialog when validation fails. The platform resolves the target by finding a Card-type page whose `SourceTable` matches the record's table.
+
+This implicit behavior has limitations compared to explicit `ErrorInfo`-based navigation:
+
+- No field highlighting on the target page
+- No custom button caption (always "Show [Record Name]")
+- Always navigates to the default card page (can't specify an alternative page)
+- No detailed message or title
+
+The two-parameter [TestField(Field, Value)](methods-auto/record/record-testfield-joker-joker-method.md) overload doesn't auto-generate navigation — it shows only a plain error with an OK button.
+
+If you need more control over the Show-it behavior, use the `ErrorInfo` overloads of `TestField` or use `Error(ErrorInfo)` directly as shown in the examples in this section.
 
 ### Guidance for button labels for Show-it actions
 
