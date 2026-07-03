@@ -31,7 +31,7 @@ It's not allowed to remove pages which have been published unless they have been
 
 ## How to fix this diagnostic?
 
-In order to fix this diagnostic, the removal of the page extension must be reverted. The page extension should also be marked as [Obsolete](../properties/devenv-obsoletestate-property.md) instead, so that the page extension can be removed in a future version.
+To fix this diagnostic, the removal of the page extension must be reverted. The page extension should also be marked as [Obsolete](../properties/devenv-obsoletestate-property.md) instead, so that the page extension can be removed in a future version.
 
 ## Examples not triggering the rule
 
