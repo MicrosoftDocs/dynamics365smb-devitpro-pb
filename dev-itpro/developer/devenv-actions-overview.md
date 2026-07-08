@@ -35,7 +35,7 @@ For more information about actions used on the role center page, see [Designing 
  
 ## Types of actions
 
-Each page has a different set of actions depending on the page type, and the processes that the page supports. In order to create the appropriate set of actions for a particular page, you should have a good understanding of your customer's business processes.  
+Each page has a different set of actions depending on the page type, and the processes that the page supports. To create the appropriate set of actions for a particular page, you should have a good understanding of your customer's business processes.  
   
 Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
   
