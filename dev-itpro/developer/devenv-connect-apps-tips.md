@@ -91,6 +91,9 @@ When request header is specified, the value of the DataAccessIntent property def
 
 Modification requests (like POST, PUT, or DELETE) only support `ReadWrite` as a value for data access intent. Trying to specify `Data-Access-Intent: ReadOnly` for such requests will result in an error.
 
+#### Note
+When Data-Access-Intent: ReadOnly is specified, the server may advertise a different set of supported HTTP methods (for example through the Allow response header) and reject modification requests with 405 Method Not Allowed. Consequently, the observable HTTP capabilities of an endpoint may depend on the request's data access intent.
+
 ### Example
 
 `GET businesscentralPrefix/companies({id})/salesInvoices({salesInvoiceId})/pdfDocument({salesInvoiceId})/content`
