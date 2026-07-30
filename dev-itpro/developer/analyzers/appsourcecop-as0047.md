@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0047"
 description: "The extension name length must not exceed the limit of 200 characters."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 07/30/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,7 +20,7 @@ The extension name length must not exceed the limit of 200 characters.
 
 ## Remarks
 
-This rule verifies that the extension name specified in the [app.json](../devenv-json-files.md) does not exceed 50 characters.
+This rule verifies that the extension name specified in the [app.json](../devenv-json-files.md) does not exceed 200 characters.
 
 ## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
