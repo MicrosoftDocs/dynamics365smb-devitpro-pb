@@ -2,7 +2,7 @@
 title: ALTool
 author: SusanneWindfeldPedersen
 description: Simplify AL extension development with ALTool. Validate code, package extensions, and integrate into CI/CD pipelines for seamless deployment.
-ms.date: 06/18/2026
+ms.date: 08/03/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -191,8 +191,8 @@ The `launchprofilingmcpproxy` command lets an AI agent profile a slow [!INCLUDE 
 
 ALTool runs as a stdio MCP server that an agent host—for example, Visual Studio Code in agent mode—spawns as a child process. It exposes the following tools that the agent calls on the user's behalf:
 
-- **Schedule profiling** — arms a profiler schedule for a target session's user and activity type, enabled for a bounded window (5 minutes by default, capped at 1 hour). The platform then captures a profile automatically for every matching activity, exactly as if the schedule were created from the **Profiler Schedules** page.
-- **Stop schedule and get profiles** — disables the schedule and returns the captured `.alcpuprofile` files together with a per-activity overview (durations, SQL, and HTTP call counts and times).
+- **Schedule profiling** — arms a profiler schedule for a target session's user and activity type, enabled for a bounded window (5 minutes by default, capped at 1 hour). The platform then captures a profile automatically for every matching activity, exactly as if the schedule were created from the **Profiler Schedules** page. The session's memory usage is also estimated automatically, which is on by default, nothing to opt in to, and embedded into each captured profile.
+- **Stop schedule and get profiles** — disables the schedule and returns the captured `.alcpuprofile` files together with a per-activity overview (durations, SQL, and HTTP call counts and times). Each `.alcpuprofile` also carries two session-level totals when a memory estimate was captured: `totalMemoryUsed`; estimated managed memory held by the session, in bytes, and `totalObjectCount`; estimated managed object count. The detailed per-type memory breakdown goes to server-side telemetry rather than the downloaded profile.
 - **Get profile for activity** — returns a single activity's profile for a closer look.
 - **Analyze profiles in folder** — a *local* analysis tool that doesn't connect to Business Central. It lists the `.alcpuprofile` (or `.zip`) files you've placed in the proxy's user profile folder so the agent can read and analyze them with its filesystem tools. Use it for profiles obtained out of band or captured earlier: drop the files into the folder and call the tool.
 
