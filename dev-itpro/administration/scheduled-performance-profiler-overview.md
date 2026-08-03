@@ -2,7 +2,7 @@
 title: Scheduled performance profiler overview
 description: Describes how to use the Profiler Schedules page in Business Central to troubleshoot slow processes across time.
 ms.author: sodragon
-ms.date: 06/18/2026
+ms.date: 08/03/2026
 ms.reviewer: solsen
 ms.topic: article
 author: sodragon
@@ -119,14 +119,18 @@ The MCP server uses the same scheduling engine described earlier in this article
 
 | Tool | What it does | Manual equivalent |
 |------|--------------|-------------------|
-| Schedule profiling | Creates a schedule for the target session's user and activity type, enabled for a bounded window (5 minutes by default, up to 1 hour). | [Setting up a profiler schedule](#setting-up-a-profiler-schedule) |
-| Stop schedule and get profiles | Turns off the schedule and returns the recorded `.alcpuprofile` files plus a per-activity overview (durations, SQL, and HTTP call counts and times). | [Open Profiles](#viewing-and-analyzing-the-profiles-from-a-schedule) and [Download](#downloading-performance-profiles) |
+| Schedule profiling | Creates a schedule for the target session's user and activity type, enabled for a bounded window (5 minutes by default, up to 1 hour). Session memory usage is also estimated automatically. Learn more in [Session memory usage](#session-memory-usage). | [Setting up a profiler schedule](#setting-up-a-profiler-schedule) |
+| Stop schedule and get profiles | Turns off the schedule and returns the recorded `.alcpuprofile` files plus a per-activity overview (durations, SQL, and HTTP call counts and times). Each `.alcpuprofile` also carries the session's estimated total memory and object count. Learn more in [Session memory usage](#session-memory-usage). | [Open Profiles](#viewing-and-analyzing-the-profiles-from-a-schedule) and [Download](#downloading-performance-profiles) |
 | Get profile for activity | Returns a single activity's profile for a closer look. | Opening one row on the **Performance Profiles** page |
 | Analyze profiles in folder | A local tool that doesn't connect to Business Central. It lists the `.alcpuprofile` (or `.zip`) files you placed in the proxy's user profile folder so the agent can read and analyze them. Use it for profiles obtained out of band or captured earlier. | Opening downloaded recordings in the Visual Studio Code AL Profiler |
 
 When the agent interprets a profile, it evaluates the hot AL functions against the Business Central [performance patterns and anti-patterns](https://github.com/microsoft/BCQuality).
 
 The proxy also saves captured profiles to local files on the machine running the agent so MCP hosts that drop embedded binary content can still read them. Auto-captured profiles are grouped in per-schedule subfolders and removed once past a retention window (1 day by default; configurable with `--profileretentiondays`); cleanup runs at proxy startup and at the next capture, not on a background timer. Profiles you want to keep and analyze with the **Analyze profiles in folder** tool go in the `user` subfolder, which is never deleted automatically. The folder location is configurable with `--profilefolder`. These local files can contain sensitive business data, so handle them securely and in line with your privacy requirements.
+
+### Session memory usage
+
+Alongside the CPU sampling profiles, the profiling tools automatically estimate the profiled session's memory usage; there's nothing extra to turn on. When you collect with **Stop schedule and get profiles**, the session's estimated total memory and object count are retained with the results, and the agent presents them in a human-readable form, for example, "about 512 MiB across 1.2 million objects", so you can see at a glance whether memory is a factor.
 
 The profiles the agent collects are the same ones that appear on the **Performance Profiles** page, and you can open them in the Visual Studio Code AL Profiler just as you would a downloaded recording.
 
