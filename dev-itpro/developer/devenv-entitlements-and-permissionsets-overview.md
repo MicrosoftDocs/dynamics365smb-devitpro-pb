@@ -40,7 +40,7 @@ When developing an app, entitlements and permission sets are handled as objects 
 
 <!--
 > [!NOTE]  
-> In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases.  
+> In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)], Microsoft apps are the only apps that can include entitlements (enforced by the Marketplace cop rules and the technical validation checks that run for the apps submitted to Marketplace). These objects become available for ISV apps when the ability to monetize Marketplace apps is introduced in one of the future releases.  
 -->
 
 ## System Application objects for permissions

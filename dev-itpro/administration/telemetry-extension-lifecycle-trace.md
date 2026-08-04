@@ -50,7 +50,7 @@ Traces are recorded for operations started initiated from any of the following c
 
     - For on-premises, it includes extensions that are published by running the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) with the `-Scope Tenant` parameter.
     
-    - For online, it includes per-tenant extensions uploaded from the **Extension Management** page in the client. It doesn't include Microsoft extensions or [AppSource extensions](https://appsource.microsoft.com/en-US/marketplace?product=dynamics-365-business-central).
+    - For online, it includes per-tenant extensions uploaded from the **Extension Management** page in the client. It doesn't include Microsoft extensions or [Marketplace extensions](https://appsource.microsoft.com/en-US/marketplace?product=dynamics-365-business-central).
 
 - Synchronizing extensions
 

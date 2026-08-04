@@ -211,13 +211,13 @@ For instance, the following submission manifest indicates that the extension wil
 >
 > For example, if the maximum release specified is 18.0, your extensions will not be available for environments running on 18.0 or higher.
 >
-> If you do not provide a version of your extension that is compatible with this release of Business Central, your extension will cause a failure to upgrade the environments where your extension is installed. For more information about maintaining extensions, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md).
+> If you don't provide a version of your extension that's compatible with this release of Business Central, your extension causes a failure to upgrade the environments where your extension is installed. For more information about maintaining extensions, see [Maintain Marketplace Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md).
 
 ### When should you specify a maximum release for your extension?
 
 The `incompatibleFromRelease` property is meant to help you release a HotFix of your extension in production.
 
-Let's imagine that your AppSource extension is available for tenants on releases from 17.0 to 17.5 with version 1.0.0.0 and is available for release 18.0 with version 2.0.0.0. You are now required to release a bug fix for customers on releases 17.0 to 17.5 that are using version 1.0.0.0. If you submit a version 3.0.0.0 of your extension, it will be validated for breaking changes version 2.0.0.0 and will be validated for all releases from 17.0 to 18.0. However it is not always possible to have one version of an extension that is compatible with all releases of Business Central.
+Suppose your Marketplace extension is available for tenants on releases from 17.0 to 17.5 with version 1.0.0.0 and is available for release 18.0 with version 2.0.0.0. You're now required to release a bug fix for customers on releases 17.0 to 17.5 that are using version 1.0.0.0. If you submit a version 3.0.0.0 of your extension, the validation process checks for breaking changes against version 2.0.0.0 and validates all releases from 17.0 to 18.0. However, it's not always possible to have one version of an extension that is compatible with all releases of Business Central.
 
 In this case, you can create a version 1.0.0.1 of your extension and submit it with `incompatibleFromRelease` set to 18.0. This version of the extension will then only be validated for releases 17.0 to 17.5 and will be validated for breaking changes against version 1.0.0.0.
 

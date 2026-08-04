@@ -194,7 +194,7 @@ To fix this problem, go to the **Cloud Migration Management** page and run the *
 
     - Unpublish the relevant apps and sync the on-premises tenant to update the SQL Server database. Learn more in [Windows PowerShell Cmdlets for Business Central Version 19](/powershell/business-central/overview?view=businesscentral-ps-19&preserve-view=true).  
 
-    - Uninstall the relevant app from the online tenant, provided that they are no longer needed for working online. Use the [Business Central Administration Center API](administration-center-api_app_management.md) or AppSource.
+    - Uninstall the relevant app from the online tenant, provided that they're no longer needed for working online. Use the [Business Central Administration Center API](administration-center-api_app_management.md) or Marketplace.
 
   - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. Learn more in the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
 
