@@ -58,28 +58,28 @@ When you're adding new localizations in [!INCLUDE[prod_short](../includes/prod_s
 
 ### Against which baselines are my apps validated?
 
-The service verifies that your extensions don't introduce breaking changes by comparing them to the latest version available in AppSource for each country/region validated.
+The service verifies that your extensions don't introduce breaking changes by comparing them to the latest version available in Marketplace for each country or region validated.
 
 You can know which versions of your extensions were used as baseline during the breaking change validation by enabling Azure Application Insights in your extension and running this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
 > [!IMPORTANT]  
-> As soon as your app has been uploaded to the AppSource marketplace, it will be used as a baseline during the technical validation of your next submissions. As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes; breaking changes on tables or table extensions. This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you're still developing it and expect to change it soon.
+> As soon as you upload your app to the Marketplace, the service uses it as a baseline during the technical validation of your next submissions. As a consequence, you can't make breaking changes without first obsoleting the AL objects, and you can't make schema breaking changes. This restriction also applies if customers aren't using your extension yet. Don't submit your app to the Marketplace if you're still developing it and expect to change it soon.
 
 ### Which apps are validated in my submission?
 
 The main app and the libraries required by the main app are validated and uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)]. If you have included libraries, which aren't required by the main app, they're ignored during the validation and aren't uploaded to the service.
 
-For example, let's consider an app A, which has an offer in the AppSource marketplace and A depends on a library named B, which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, then only A and B are validated. C and D are ignored because they aren't required by the main app A. If B is updated to depend on C and D, then all apps in the submission are now validated by the service.
+For example, consider an app A that has an offer in the Marketplace and depends on a library named B, which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, the validation process checks only A and B. It ignores C and D because the main app A doesn't require them. If B is updated to depend on C and D, the validation process checks all apps in the submission.
 
 > [!NOTE]  
 > If some apps in your submission already have been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] with the same version for some countries/regions, then the app won't be validated again for these countries/regions.
 
 > [!IMPORTANT]
-> If one or more libraries in your submission have their own offer, their listings in the AppSource marketplace won't be updated automatically. In order to keep the listings in sync with the version of the apps uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)], you should submit a submission for their related offers.
+> If one or more libraries in your submission have their own offer, their listings in the Marketplace aren't updated automatically. To keep the listings in sync with the version of the apps uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)], you should submit a submission for their related offers.
 
 ### How long does the 'Automated application validation' take?
 
-During 'Automated application validation', the apps in your submission are validated for each of the country/regions and each of the releases of [!INCLUDE[prod_short](../includes/prod_short.md)] targeted. If you already have a version of these extensions published to AppSource, then it also runs the breaking change validation using the apps currently in AppSource as baseline. Depending on the size of your app, the validation time can vary. Submissions are processed within a few minutes and we expect all submissions to be processed under 3 hours. However, if your app contains thousands of AL files, this process can take longer. We would then recommend splitting the app in smaller modules as it would also improve the development experience and the maintainability of your code base.
+During automated application validation, the validation process checks the apps in your submission for each of the countries or regions and each of the releases of [!INCLUDE[prod_short](../includes/prod_short.md)] targeted. If you already have a version of these extensions published to Marketplace, the validation process also runs the breaking change validation by using the apps currently in Marketplace as baseline. Depending on the size of your app, the validation time can vary. The validation process processes submissions within a few minutes and it expects all submissions to be processed under three hours. However, if your app contains thousands of AL files, this process can take longer. Split the app into smaller modules as it would also improve the development experience and the maintainability of your code base.
 
 ### How many automated tests do we need to run for validation and how high must the test coverage be?  
 
@@ -87,7 +87,7 @@ When setting up your offer in Partner Center, you must still include a test pack
 
 Test automation is something we expect you to run, to test your app, and to make sure that the quality of your app is high. We don't run tests of your apps, nor do we have a set value for a required code coverage. Instead, we rely on you to test your app properly to give your customers a good experience.
 
-### When I submit an app to AppSource; do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
+### When I submit an app to Marketplace, do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
 
 When setting up your offer in Partner Center, you must still include a document in 'Key Usage Scenario', but it isn't used during the validation of the submission.
 
@@ -95,7 +95,7 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 
 ### When are my apps ready to be installed in my Business Central environment?
 
-Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the AppSource marketplace.
+Shortly after Partner Center finishes the offer publishing process, users can install your extensions on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the Marketplace.
 
 Before going public with the submitted app version, you can test it after the "Preview creation" step, either yourself as a publisher or with select customers. To trigger an install of the preview version, customers must receive and use the app preview install URL:
 	
@@ -107,7 +107,7 @@ Where
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
-Learn more about AppSource app preview in the section [Questions about AppSource app previews](#questions-about-appsource-app-previews) in this article.
+Learn more about Marketplace app preview in the section [Questions about Marketplace app previews](#questions-about-appsource-app-previews) in this article.
 
 ### When should I include my library apps as part of my submission?
 
@@ -126,14 +126,14 @@ If you receive an error with the diagnostic code `AVS0107` and a message similar
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
-- If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what caused the error. If you're using Azure Application Insights, information about the validation results is logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) to get started. If you're experiencing issues with Azure Application Insights, refer to the section [Questions bout Azure Application Insights usage during AppSource submissions](#questions-about-azure-application-insights-usage-during-appsource-submissions) in this article.
+- If this stage fails with an error message similar to `The validation of the submission failed for X out of Y tasks`, investigate what caused the error. If you're using Azure Application Insights, it logs information about the validation results. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) to get started. If you're experiencing issues with Azure Application Insights, refer to the section [Questions about Azure Application Insights usage during Marketplace submissions](#questions-about-azure-application-insights-usage-during-appsource-submissions) in this article.
 - If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. Learn more in "When should I include my library apps as part of my submission?".
 - If this stage failed with an error message similar to `The manifest property 'X' of the extension 'My App' by 'Publisher Name' (version '1.2.3.4') specifies 'Y' while the offer description specifies 'Z'.`, you should either change your app.json file or the offer description to match each other and submit a new version. Offer description changes in Partner Center can be made in the "Properties" section of your offer for the app version, "Offer listing" section for the app name, and your publisher name can be found in Partner Center under `Account Settings > Organizational Profile > Legal > Developer > Publisher Name` or by following [this link](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer). When changing any of these, remember to consult the section on this page called "Questions about app identity".
 - If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission doesn't target any countries/regions currently available in [!INCLUDE[prod_short](../includes/prod_short.md)]. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in [!INCLUDE[prod_short](../includes/prod_short.md)] and resubmit your offer. Generally, it's possible to upload apps for new localizations, a few weeks before they're made available to customers.
 - If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') contains inconsistent information about the package id/name/publisher/version`, it means that something went wrong when the package included in your submission was built. To mitigate the issue, you must rebuild the package and submit it again.
-- If this stage failed with an error message similar to `The App ID '<some-Guid>' is already used for Per-Tenant-Extensions in Business Central and cannot be used for the AppSource extension with name 'MyApp' and publisher 'MyPublisher'`, this means that there exists one or many PTEs with the same App ID in the service. Since [!INCLUDE[prod_short](../includes/prod_short.md)] doesn't support having AppSource apps and PTEs with the same App ID, it's then recommended to change the ID of your extension before submitting it in Partner Center. Learn more in [Moving a PTE to AppSource](devenv-extension-moving-scope.md#moving-a-pte-to-appsource). If the PTEs with that App ID aren't used in any customer environments anymore, you can create a support case in Partner Center to request an exception.
+- If this stage fails with an error message similar to `The App ID '<some-Guid>' is already used for Per-Tenant-Extensions in Business Central and cannot be used for the Marketplace extension with name 'MyApp' and publisher 'MyPublisher'`, one or more PTEs with the same App ID exist in the service. Since [!INCLUDE[prod_short](../includes/prod_short.md)] doesn't support having Marketplace apps and PTEs with the same App ID, change the ID of your extension before submitting it in Partner Center. To learn more, see [Moving a PTE to Marketplace](devenv-extension-moving-scope.md#moving-a-pte-to-appsource). If the PTEs with that App ID aren't used in any customer environments anymore, you can create a support case in Partner Center to request an exception.
 
-- If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't live up to the code signing requirement of AppSource for [!INCLUDE[prod_short](../includes/prod_short.md)]. In order to correctly sign your app, check out the section [Questions about code-signing validation](#questions-about-code-signing-validation) in this article, and take a look at the article [Sign an app package file](devenv-sign-extension.md).
+- If this stage fails with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has not been signed.` or `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has been signed, but the root certificate authority (CA) is not trusted.`, your submission doesn't meet the code signing requirement of Marketplace for [!INCLUDE[prod_short](../includes/prod_short.md)]. To correctly sign your app, see the section [Questions about code-signing validation](#questions-about-code-signing-validation) in this article, and see the article [Sign an app package file](devenv-sign-extension.md).
 
 - If this stage failed with the following error message `The submitted package '{0}' by '{1}' was found to contain malware. If you believe this is an error, please retry your submission. If it fails again, follow the documentation to submit your app file for further investigation.`, your submission was flagged for containing malware. First, examine your included artifacts and resources to ensure that they're safe to include in the submission. Make sure you have the latest Windows updates and scan your files with Windows Defender to identify and mitigate the infected files. If you have reason to believe that the detection is a false positive, you can follow the documentation to [Submit a file for malware analysis](/defender-xdr/submission-guide#how-do-i-submit-a-file-to-microsoft-for-analysis) so that it can be manually reviewed.
 
@@ -158,13 +158,13 @@ If this stage failed with the following error message `Automated upload to Busin
 
 If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in section [Channels to ask questions or report issues](#channels-to-ask-questions-or-report-issues) in this article.
 
-## Questions about hotfixing an AppSource app
+## Questions about hotfixing an Marketplace app
 
-For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an AppSource app](devenv-hotfixing-appsource-app.md)
+For questions like what qualifies as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an Marketplace app](devenv-hotfixing-appsource-app.md).
 
-## Questions about AppSource app previews
+## Questions about Marketplace app previews
 
-### What should I do to enable previews of my AppSource apps?
+### What should I do to enable previews of my Marketplace apps?
 
 Preview support is now enabled for all submissions of [!INCLUDE[prod_short](../includes/prod_short.md)] offers. It uses the hide key specified on your offer in Partner Center under `Availability > Preview Audience > Hide Key`. Partner Center automatically generates a key when creating a new offer, but you can override it with any string using only lowercase letters and/or numbers.
 
@@ -184,7 +184,7 @@ Where
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
-After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. This preview listing can be accessed from Partner Center by checking off the "AppSource preview" option at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing isn't supported and the above mentioned preview app install URL must be used instead.
+After the "Preview creation", a preview listing of the offer is available in the Marketplace marketplace. You can access this preview listing from Partner Center by checking off the "Marketplace preview" option at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing isn't supported. Customers must use the preview app install URL mentioned earlier.
 
 ### How can I install preview versions of my library apps for selected customers?
 
@@ -201,7 +201,7 @@ If you're using Azure Application Insights for your extension, you can see which
 
 ### How do I go live with my preview version?
 
-You can make your preview version publicly available in the AppSource marketplace by clicking "Go Live" at the "Publisher signoff" step of the submission flow in Partner Center.
+Make your preview version publicly available in the Marketplace by selecting **Go Live** at the **Publisher signoff** step of the submission flow in Partner Center.
 
 ### Is the preview key per submission or per offer?
 
@@ -215,7 +215,7 @@ Similarly, if you submitted the same library version 1.0.0.0 as part of two offe
 
 Preview versions are validated for breaking changes against the latest publicly available app. However, preview versions aren't used as baseline for validation of breaking changes of other submissions.
 
-For example, if you have version 1.0.0.0 as publicly available in AppSource and you submit version 2.0.0.0, then version 2.0.0.0 will be validated for breaking change against version 1.0.0.0. If you don't press "Go Live" for your submission of version 2.0.0.0, and decide to start a new submission with version 2.1.0.0, then version 2.1.0.0 is validated for breaking change against 1.0.0.0.
+For example, if you have version 1.0.0.0 as publicly available in Marketplace and you submit version 2.0.0.0, the validation process checks version 2.0.0.0 for breaking changes against version 1.0.0.0. If you don't select **Go Live** for your submission of version 2.0.0.0, and decide to start a new submission with version 2.1.0.0, the validation process checks version 2.1.0.0 for breaking changes against version 1.0.0.0.
 
 > [!NOTE]  
 > Since there can be breaking changes between a preview version that was never made public and the next version of the app, the schema update mode `ForceSync` is used when upgrading **from** a preview version.
@@ -228,11 +228,11 @@ Your submission fails during the "Automated Application Validation" stage if you
 
 ### What happens to preview versions during environment upgrades?
 
-During the upgrade of an environment to the next major, the latest publicly available version of AppSource apps are installed on the customer environment. If there's a higher version is available for your preview app, this version is installed. If the preview version is the highest version, the preview version is preserved.
+When you upgrade an environment to the next major version, the latest publicly available version of Marketplace apps is installed on the customer environment. If a higher version is available for your preview app, the upgrade process installs that version. If the preview version is the highest version, the upgrade process preserves the preview version.
 
-During the upgrade of an environment to the next minor, AppSource apps versions are preserved unless the environment settings specify to update apps to the latest version available.
+When you upgrade an environment to the next minor version, the upgrade process preserves Marketplace apps versions unless the environment settings specify to update apps to the latest version available.
 
-## Questions about Azure Application Insights usage during AppSource submissions
+## Questions about Azure Application Insights usage during Marketplace submissions
 
 ### How do I enable Application Insights telemetry for my submissions?
 
@@ -250,18 +250,18 @@ Here's a list of steps that you can follow to troubleshoot this issue:
 
 ### I can see some signals in Application Insights, but I can't find why my submission failed, what do I do next?
 
-Much information is provided in the custom dimensions of the signals. The validation errors can generally be found for the signals with eventId `LC0034`. Learn more about the signals emitted during the technical validation of AppSource submission in [Analyzing AppSource submission validation trace telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+The custom dimensions of the signals provide much information. You can generally find the validation errors for the signals with eventId `LC0034`. For more information about the signals emitted during the technical validation of Marketplace submission, see [Analyzing Marketplace submission validation trace telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
 > [!NOTE]
 > Instead of writing your own queries, we recommend using the executable Azure Data Studio [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). This guide contains queries that process the signals for your submission and extract the important information.
 
-## Questions about developing and maintaining AppSource apps
+## Questions about developing and maintaining Marketplace apps
 
-This section contains frequently asked questions regarding developing apps (in Docker or SaaS). Fore information, about maintaining apps after they've reached the AppSource marketplace, see [Update Lifecycle for AppSource Apps FAQ](devenv-update-app-life-cycle-faq.md).
+This section contains frequently asked questions about developing apps (in Docker or SaaS). For information about maintaining apps after they reach the Marketplace, see [Update Lifecycle for Marketplace Apps FAQ](devenv-update-app-life-cycle-faq.md).
 
 ### What does it mean if I have an app in development that needs another dependency loaded, but I can't get the dependency's codeunits to load in my BC docker instance because it says the dependency's range is outside my range?
 
-It means that your license doesn't allow you to publish that application. A recommendation would be to either get a runtime package from the developer of that AppSource app, which will allow you to bypass the licensing check or to try to test it on an online sandbox environment where that AppSource app is already installed. 
+It means that your license doesn't allow you to publish that application. Either get a runtime package from the developer of that Marketplace app, which bypasses the licensing check, or test it in an online sandbox environment where that Marketplace app is already installed. 
 
 ## Questions about code-signing validation
 
@@ -273,7 +273,7 @@ No, you need to use a Microsoft Windows computer that has [!INCLUDE[d365fin_long
 
 If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] isn't installed, you get an error similar to: "This file format can't be signed because it isn't recognized".
 
-### Can I use a self-signed certificate to sign my apps targeting AppSource?
+### Can I use a self-signed certificate to sign my apps targeting Marketplace?
 
 No, it isn't allowed to use a self-signed certificate. The .app package file must be signed using a certificate purchased from a Certification Authority that has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to GoDaddy, DigiCert, and Symantec.
 
@@ -311,7 +311,7 @@ We would like longer names as well. Introducing namespaces could be one investme
 
 ## Questions about app identity
 
-This section contains questions related to the identity of apps in AppSource. Learn more from the questions in [App identity](devenv-app-identity.md).
+This section contains questions related to the identity of apps in Marketplace. Learn more from the questions in [App identity](devenv-app-identity.md).
 
 ### When is it okay to change the name of my extension?
 
@@ -338,13 +338,13 @@ When changing the publisher of an extension, you must:
 > [!IMPORTANT]  
 > The App ID is a critical part of the identity of apps in [!INCLUDE[prod_short](../includes/prod_short.md)], and changing it is a breaking change for all extensions depending on it. You should then not change the App ID of extensions which are installed for customers in Business Central Online.
 
-If you're submitting a new version of your extension with a different App ID for an existing offer, then this new version is considered as a different extension. This means that all extensions that depend on the extension with the old app ID must be updated to reference the new App ID. If they aren't updated, this causes issues such as customer environment upgrade failures, which must be fixed within the required time period, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md). Since the app ID is part of how data is stored in [!INCLUDE[prod_short](../includes/prod_short.md)], this also means that you have to migrate the data for all customers that have the extension with the old App ID installed. We don't provide tools for performing data migration in SaaS, but you can create your own solution to export data from the old extension and reimport the data after the extension change.
+If you're submitting a new version of your extension with a different App ID for an existing offer, this new version is considered as a different extension. This condition means that all extensions that depend on the extension with the old app ID must be updated to reference the new App ID. If you don't update them, this condition causes problems such as customer environment upgrade failures, which you must fix within the required time period. For more information, see [Maintain Marketplace Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md). Since the app ID is part of how data is stored in [!INCLUDE[prod_short](../includes/prod_short.md)], this condition also means that you have to migrate the data for all customers that have the extension with the old App ID installed. Microsoft doesn't provide tools for performing data migration in SaaS, but you can create your own solution to export data from the old extension and reimport the data after the extension change.
 
-### Is it possible to have multiple apps with the same App ID in AppSource? 
+### Is it possible to have multiple apps with the same App ID in Marketplace? 
 
-Each unique codebase has one unique ID. If you have four apps in AppSource, you need to have four unique IDs for these apps. Otherwise you get conflicts. 
+Each unique codebase has one unique ID. If you have four apps in Marketplace, you need to have four unique IDs for these apps. Otherwise, you get conflicts. 
 
-### What if we already have an app on AppSource but we need to create the same app for another country/region; can we then have the same app ID for two different apps targeting two different countries/regions? 
+### What if I already have an app on Marketplace but I need to create the same app for another country or region; can I use the same app ID for two different apps targeting two different countries or regions? 
 
 If they're different apps (different code), they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries/regions (with one app identity) and localized functionality as extensions on top (with their own identity). 
 
@@ -352,14 +352,14 @@ If they're different apps (different code), they should have different identity.
 
 ### When is it okay to change the offer type of my offer?
 
-There exist two types of offers for [!INCLUDE[prod_short](../includes/prod_short.md)] in AppSource: `connect` apps and `add-on` apps. It's possible to change an offer type from `connect` to `add-on` by following the steps listed in the dedicated entry below. However, we don't recommend changing an offer from `add-on` to `connect` since it would be a breaking change for all other extensions depending on the apps in this offer.
+For [!INCLUDE[prod_short](../includes/prod_short.md)] in Marketplace, two types of offers exist: `connect` apps and `add-on` apps. You can change an offer type from `connect` to `add-on` by following the steps listed in the dedicated entry below. However, don't change an offer from `add-on` to `connect` since it would be a breaking change for all other extensions depending on the apps in this offer.
 
 Learn more in about the offer types for [!INCLUDE[prod_short](../includes/prod_short.md)] in [App type, contact type, and customer leads](readiness/readiness-checklist-e-industries-categories-apptype.md).
 
 ### How to change the offer type from 'connect' app to 'add-on' app?
 
 When changing a `connect` app to an `add-on` app, you should:
-- Navigate to your offer listing in the AppSource marketplace, and copy the URL for your offer
+- Go to your offer listing in the Marketplace, and copy the URL for your offer
 - Retrieve the App ID assigned by the service to your offer: the App ID can be found as `<appId>` in `https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.<publisherId>%7CAID.<offerId>%7CPAPPID.<appId>`
 - Use this App ID in the `app.json` of the main extension uploaded to your offer
 
@@ -368,11 +368,11 @@ When changing a `connect` app to an `add-on` app, you should:
 
 ### How to automatically update my offer using Partner Center submission API?
 
-It's possible to automatically submit apps to AppSource from our DevOps setup by using the [Partner Center Ingestion API](/azure/marketplace/azure-app-apis). <!--Learn more in this blog post [Automatic AppSource Submission of Business Central apps](https://freddysblog.com/2022/09/22/automatic-appsource-submission-of-business-central-apps). 
+You can automatically submit apps to Marketplace from your DevOps setup by using the [Partner Center Ingestion API](/azure/marketplace/azure-app-apis). <!--Learn more in this blog post [Automatic Marketplace Submission of Business Central apps](https://freddysblog.com/2022/09/22/automatic-appsource-submission-of-business-central-apps).
 
 ### How do I install an offer with 'Contact Me' listing type on a customer environment?
 
-Offers using 'Contact Me' as listing type can't be directly installed from the AppSource marketplace. When choosing 'Contact Me' on the offer listing, the customer is asked to share their information with Microsoft through your customer relationship management (CRM) system. These customer details, along with the offer name, ID, and marketplace source are sent to the CRM system, which you configured for your offer in Partner Center.
+You can't directly install offers that use the 'Contact Me' listing type from the Marketplace. When a customer selects 'Contact Me' on the offer listing, they're asked to share their information with Microsoft through your customer relationship management (CRM) system. You configured the CRM system for your offer in Partner Center. It sends these customer details, along with the offer name, ID, and marketplace source, to the CRM system.
 
 Based on this information, you can then build the install URL for your offer and share it with the customer:
 
@@ -412,9 +412,9 @@ Learn more in [https://github.com/microsoft/navcontainerhelper/issues](https://g
 
 ### When do I write on Viva Engage?
 
-When you have questions on developing and maintaining AppSource apps, on automatically submitting apps to AppSource, or about the validation process, you can ask a question on Viva Engage. In this group, you find announcements from Microsoft together with discussions around various AppSource-related articles.
+Write on Viva Engage when you have questions about developing and maintaining Marketplace apps, automatically submitting apps to Marketplace, or the validation process. In this group, you find announcements from Microsoft together with discussions around various Marketplace-related articles.  
 
-You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
+You can join this Marketplace group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
 
 -->
 ## Related information

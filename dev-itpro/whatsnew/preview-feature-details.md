@@ -488,7 +488,7 @@ By producing transparent metrics, BC‑Bench increases trust in Copilot capabili
 
 ## Evaluate the quality of goods and materials
 
-Quality Management features are available as an extension. The extension installs automatically on newly deployed environments. For upgraded environments, you can install the extension from AppSource.
+You can access Quality Management features through an extension. The extension installs automatically on newly deployed environments. For upgraded environments, you can install the extension from the Marketplace.
 
 The extension gives you full control of when you do quality checks:
 
@@ -739,7 +739,8 @@ This feature has a few limitations though:
 
 ## Migrate to the cloud from any SQL database
 
-Business Central cloud migration tooling is extended to let developers build fast, repeatable, and reliable data migration engines for SQL‑based source systems. These custom migration engines are implemented as extensions and can be packaged, installed, and reused through AppSource, enabling consistent delivery across customer projects.
+Business Central cloud migration tooling is extended to let developers build fast, repeatable, and reliable data migration engines for SQL‑based source systems. Developers implement these custom migration engines as extensions. By using the Marketplace, developers can package, install, and reuse these engines, which ensures consistent delivery across customer projects.
+
 
 The platform introduces a generic, system‑level migration module that integrates directly with the Cloud Migration wizard through a new Generic Custom migration type. Developers implement a standardized AL interface that defines how data is mapped, replicated, and transformed from external SQL sources into Business Central. The platform provides shared helper methods to simplify custom implementations, including mapping helpers, replication and transformation orchestration, and a generic UI for tracking migration progress and errors.
 
@@ -957,7 +958,7 @@ To use your own subscription, authenticate it with the `SetAuthorization` method
 AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions",GetEndpoint(),GetDeployment(),GetApiKey());
 ```
 
-This AI billing model isn't designed to replace the existing AppSource monetization pathway for publishers who create Business Central apps. Instead, it offers another option that simplifies AI consumption for customers and partners. ISVs can use the AppSource monetization option to monetize their IP.
+This AI billing model isn't designed to replace the existing Marketplace monetization pathway for publishers who create Business Central apps. Instead, it offers another option that simplifies AI consumption for customers and partners. ISVs can use the Marketplace monetization option to monetize their IP.
 
 
 ## Use carbon footprint with OIOUBL e-invoicing format
