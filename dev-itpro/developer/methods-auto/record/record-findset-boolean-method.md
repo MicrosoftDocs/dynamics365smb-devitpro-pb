@@ -45,9 +45,9 @@ You should use this method only when you explicitly want to loop through a recor
 
 The difference between `Find()` and `FindSet` is that `Find` uses paging and the method only requests N rows in the first request, and then if you need more rows, it'll submit a new SQL request. The `FindSet` method will request all rows at once. 
 
-The difference between `FindSet(false)` and `FindSet(true)` is that `FindSet(true)` will apply `Updlock` isolation level to find rows, which is an advantage if you plan to update all the rows you are finding.
+The difference between `FindSet(false)` and `FindSet(true)` is that `FindSet(true)` reads the records using `IsolationLevel::UpdLock` (SQL `UPDLOCK`), which is an advantage if you plan to update all the rows you are finding.
 
-This method works the same way as the [FindSet Method (RecordRef)](../recordref/recordref-findset-method.md).
+This method works the same way as the [FindSet Method (RecordRef)](../recordref/recordref-findset-boolean-method.md).
 
 ## Examples
 
