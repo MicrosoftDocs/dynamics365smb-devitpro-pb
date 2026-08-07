@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 04/21/2026
+ms.date: 08/06/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -109,19 +109,26 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ### Agents in Business Central
 
-- Agent pitch deck - [aka.ms/BCAgentPitchDeck](https://aka.ms/BCAgentPitchDeck)
-- Sales Order Agent overview [Learn more](/dynamics365/business-central/sales-order-agent)
-- Sales Order Agent demo [aka.ms/SalesOrderAgentDemo](https://aka.ms/SalesOrderAgentDemo)
-- Payables Agent overview [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)
-- Payables Agent demo [aka.ms/PayablesAgentDemo](https://aka.ms/PayablesAgentDemo)
-- Expense Agent overview (preview) [Learn more](/dynamics365/business-central/expense-management/expense-agent)
-- Designing and coding agents (preview) [aka.ms/bcagentsgetstarted](../../ai/ai-development-toolkit-landing-page.yml)
-- Get started with designing and coding agents [here](https://aka.ms/bcdesignagents)
-- Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
-- Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)
-- Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)
-- Agents in action | Capabilities [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)
-- Sales Order Agent and Payables Agent are generally available in all countries/regions. 
+- Getting started with agents [YouTube playlist](https://www.youtube.com/playlist?list=PL1FESh9FqyhRGlulbdtHSiKbQnhIj8ZTZ)  
+- Agent pitch deck - [aka.ms/BCAgentPitchDeck](https://aka.ms/BCAgentPitchDeck)  
+- Sales Order Agent overview [Learn more](/dynamics365/business-central/sales-order-agent)  
+- Sales Order Agent demo [aka.ms/SalesOrderAgentDemo](https://aka.ms/SalesOrderAgentDemo)  
+- Payables Agent overview [Learn more](/dynamics365/business-central/payables-agent?toc=%2Fdynamics365%2Fbusiness-central%2Ftoc.json)  
+- Payables Agent demo [aka.ms/PayablesAgentDemo](https://aka.ms/PayablesAgentDemo)  
+- Expense Agent overview (preview) [Learn more](/dynamics365/business-central/expense-management/expense-agent)  
+- Expense Agent walkthrough [Learn more](https://www.youtube.com/playlist?list=PLVPvbYXxhxmY)  
+- Agents in action [showcase video – Sep 2025](https://www.youtube.com/watch?v=UIL8ej7mSKQ&list=PL1FESh9FqyhRwm-yY9JroR6ZMIP2-KZ2a)  
+- Billing agents | how to set it up (including how to video) [Learn more](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-consumption-billing)  
+- Sales Order Agent and Payables Agent are generally available in all countries/regions.  
+- Expense Agent (preview) is available in Australia, Austria, Canada, Denmark, France, Germany, New Zealand, Spain, United Kingdom, and United States.
+
+### Get started building agents
+
+- Designing and coding agents (preview) [aka.ms/bcagentsgetstarted](../../ai/ai-development-toolkit-landing-page.yml)  
+- Get started with designing and coding agents [here](https://aka.ms/bcdesignagents)  
+- Get started with agent evals [Learn more](https://www.youtube.com/playlist?list=PLVGCOS-UXxGE)  
+- Get started with MCP server [Learn more](https://www.youtube.com/playlist?list=PL1FESh9FqyhQFP8f_gbBCooZzIR1vXTuB)  
+- Build agents with Microsoft Copilot Studio [here](https://youtu.be/EpDIrJE0HzA)  
 
 ### Copilot in Business Central 101
 
