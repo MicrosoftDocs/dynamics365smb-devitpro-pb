@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 03/09/2026
+ms.date: 08/01/2026
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -29,9 +29,9 @@ Minor updates are released monthly and can include new release wave features, re
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|28.4|Application Build 28.4 Platform Build 28.0|August 2026|[Update 28.4 for Business Central 2026 release wave 1](whatsnew-update-28-4.md)|
 |28.3|Application Build 28.3 Platform Build 28.0|July 2026|[Update 28.3 for Business Central 2026 release wave 1](whatsnew-update-28-3.md)|
 |28.2|Application Build 28.2 Platform Build 28.0|June 2026|[Update 28.2 for Business Central 2026 release wave 1](whatsnew-update-28-2.md)|
-|28.1|Application Build 28.1 Platform Build 28.0|May 2026|[Update 28.1 for Business Central 2026 release wave 1](whatsnew-update-28-1.md)|
 
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 

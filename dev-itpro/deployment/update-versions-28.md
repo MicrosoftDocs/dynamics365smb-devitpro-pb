@@ -27,6 +27,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5123580](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-28-4-for-microsoft-dynamics-365-business-central-2026-release-wave-1)|Update 28.4 |August 2026|Application Build 28.4.53241, Platform Build 28.0.53152|
 |[5105551](https://support.microsoft.com/help/5105551)|Update 28.3 |July 2026|Application Build 26.15.52222, Platform Build 26.0.52201|
 |[5100266](https://support.microsoft.com/help/5100266)|Update 28.2 |June 2026|Application Build 28.2.51034, Platform Build 28.0.50938|
 |[5099999](https://support.microsoft.com/help/5093780)|Update 28.1 |May 2026|Application Build 28.1.49838, Platform Build 28.0.49873|
