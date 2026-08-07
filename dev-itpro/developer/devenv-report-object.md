@@ -340,7 +340,7 @@ If any of these limits are reached, then the report is cancelled. If a report ge
 
 For more information on report limits in [!INCLUDE[prod_short](includes/prod_short.md)] and how they are configured in the online service, see [Report limits in Business Central](../administration/operational-limits-online.md#Reports).
 
-For more information on how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/configure-server-instance.md#Reports).
+For more information about how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/server-instance-settings.md#control-reports-documents-and-data-queries).
 
 > [!NOTE]
 > For Excel layouts and the ability to get report data in Excel without a layout, you also need to take Excel limits into consideration. Learn more in [Excel limits](../administration/operational-limits-online.md#Excel).

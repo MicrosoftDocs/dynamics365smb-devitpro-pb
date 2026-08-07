@@ -42,7 +42,7 @@ The page inspection pane shows the information for the main page or page part, i
 The following sections describe details about what is shown.
 
 > [!NOTE]
-> If you don't see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
+> If you don't see all details described below, you might not have the required permissions. Learn more in [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
 
 > [!TIP]
 > To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and select <kbd>Ctrl</kbd>+<kbd>C</kbd>.
@@ -71,7 +71,7 @@ The **Page** field shows information about the main page or a selected (highligh
 
 #### Explore page in Visual Studio Code
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can explore the code behind the page in Visual Studio Code to troubleshoot any issues. To do this, select the **Explore in Visual Studio Code** link, which opens the page in Visual Studio Code, where you can inspect the page object and its source table. For more information, see [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md). 
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can explore the code behind the page in Visual Studio Code to troubleshoot any issues. To do this, select the **Explore in Visual Studio Code** link, which opens the page in Visual Studio Code, where you can inspect the page object and its source table. Learn more in [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md). 
 
 
 ### [Table](#tab/table)
@@ -88,7 +88,7 @@ If the page uses a query object as a data source, the table field shows the quer
 If a page has a source table, the **View table** link is available. This link opens the table in a separate browser window, so you can see all records and fields in the table.
 
 > [!NOTE]
-> To view a table, you must have read permission on the table and direct execute permission on the system object **1350 Run table**. This is granted by a permission set on your user account. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
+> To view a table, you must have read permission on the table and direct execute permission on the system object **1350 Run table**. This is granted by a permission set on your user account. Learn more in [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
 ### [Table Fields](#tab/tablefields)
 
@@ -120,7 +120,7 @@ The **Extensions** tab displays installed extensions that affect the selected pa
 
 ![Page Inspection Extensions Tab.](media/page-inspection-extensions.png)
 
-Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#appjson-file).
+Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. Learn more in [App.json](devenv-json-files.md#appjson-file).
 
 The **ID**, which is sometimes referred to as AppID, is a 32-digit unique identifier, which is useful when identifying extensions and debugging issues.
 
@@ -142,10 +142,10 @@ There are four different extension types:
 The performance information includes two values. The first value indicates the time (in milliseconds) it took to run the extension in the call stack. The second value indicates the number of event subscribers run in the extension.
 
 > [!TIP]
-> You can get more performance data for extensions by using Application Insights and viewing the AL method traces. For more information, see [Analyzing Long Running AL Methods Telemetry](../administration/telemetry-al-method-trace.md).
+> You can get more performance data for extensions by using Application Insights and viewing the AL method traces. Learn more in [Analyzing Long Running AL Methods Telemetry](../administration/telemetry-al-method-trace.md).
 
 > [!NOTE]
-> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the performance data will only be shown if AL function timing is enabled on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#general-settings).  
+> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the performance data appears only if **ALFunctionTimingEnabled** setting is enabled on the [!INCLUDE[server](includes/server.md)] instance. Learn more in [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 ### [Page Filters](#tab/pagefilters)
 

@@ -28,7 +28,7 @@ Two types of trace events are emitted to Application Insights:
 - The **Database lock timed out** event then triggers one or more **Database lock snapshot** events. **Database lock snapshot** events provide details about SQL sessions that hold database locks at the time of lock timeout, including the session that caused the lock timeout. These events include specific details about the SQL lock request on the database, like the type, status, mode, and the table.
 
 > [!NOTE]
-> In later versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the [!INCLUDE[server](../developer/includes/server.md)] includes the `EnableLockTimeoutMonitoring` setting. Use this setting to turn database lock timeout telemetry on or off. By default, it is off. For more information, see [Configuring Business Central Server](configure-server-instance.md#Database).
+> In later versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the [!INCLUDE[server](../developer/includes/server.md)] includes the `EnableLockTimeoutMonitoring` setting. Use this setting to turn database lock timeout telemetry on or off. By default, it is off. For more information, see [Configuring Business Central Server](server-instance-settings.md#detect-database-contention-and-long-running-queries).
 
 ## Database lock timed out
 

@@ -13,7 +13,7 @@ In [!INCLUDE [prod_short](includes/prod_short.md)], there are different layers t
 
 ## Configure extension target on the server
 
-By setting the **Allowed Extension Target Level** flag in the server configuration, you control what can be published to the server by setting the **Cloud** or **OnPrem** flag. Learn more in [Configuring Business Central server](../administration/configure-server-instance.md#Development). 
+By setting the **ExtensionAllowedTargetLevel** flag in the server configuration, you control what can be published to the server by setting the **Cloud** or **OnPrem** flag. Learn more in [Configuring Business Central server](../administration/server-instance-settings.md). 
 
 ## Configure extension target for an extension
 
