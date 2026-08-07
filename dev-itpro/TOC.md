@@ -2,6 +2,7 @@
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
+## [Update 28.4](whatsnew/whatsnew-update-28-4.md)
 ## [Update 28.3](whatsnew/whatsnew-update-28-3.md)
 ## [Update 28.2](whatsnew/whatsnew-update-28-2.md)
 ## [Update 28.1](whatsnew/whatsnew-update-28-1.md)
@@ -2205,7 +2206,9 @@
 ##### [Configure Microsoft Entra authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
 ##### [Configure Microsoft Entra authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
 #### [Authenticating with NavUserPassword](administration/authenticating-users-with-navuserpassword.md)
-### [Configuring Business Central server](administration/configure-server-instance.md)
+### Configuring Business Central server
+#### [Configure Business Central server instances](administration/configure-server-instance.md)
+#### [Business Central server settings reference](administration/server-instance-settings.md)
 ### Configuring Business Central web server
 #### [Configuring Business Central web server instances](administration/configure-web-server.md)
 #### [Setting up multiple web server instances](deployment/configure-multiple-web-server-instances.md)

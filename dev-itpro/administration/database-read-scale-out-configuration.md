@@ -24,7 +24,7 @@ For [!INCLUDE[prod_short.md](../developer/includes/prod_short.md)] on-premises, 
     If the [!INCLUDE[prod_short.md](../developer/includes/prod_short.md)] database runs on SQL Server, determine whether your installation supports read scale-out and how to enable the feature. For more information, see [Configure read-only routing for an Always On availability group](/sql/database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server) in the SQL Server documentation.
 3. Enable SQL read-only replica support on the [!INCLUDE[server.md](../developer/includes/server.md)] instance.
 
-    [!INCLUDE[server.md](../developer/includes/server.md)] includes the **Enable SQL Read-Only Replica Support** (EnableSqlReadOnlyReplicaSupport) setting. This setting isn't enabled by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Database).
+    [!INCLUDE[server.md](../developer/includes/server.md)] includes the **Enable SQL Read-Only Replica Support** (EnableSqlReadOnlyReplicaSupport) setting. This setting isn't enabled by default. For more information, see [Business Central Server instance settings](server-instance-settings.md).
 
 ## Integrating directly on SQL Server objects
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]

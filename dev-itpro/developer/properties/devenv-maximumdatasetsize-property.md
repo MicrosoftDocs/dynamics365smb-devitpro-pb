@@ -41,4 +41,4 @@ For more information on report limits, see [Report limits](../devenv-report-obje
 [Report Properties](devenv-report-properties.md)  
 [Report Object](../devenv-report-object.md)  
 [Operational Limits for Business Central Online - Reports](../../administration/operational-limits-online.md#Reports)  
-[Configuring Business Central Server - Reports](../../administration/configure-server-instance.md#Reports)  
+[Configuring Business Central Server - Reports](../../administration/server-instance-settings.md#control-reports-documents-and-data-queries)  

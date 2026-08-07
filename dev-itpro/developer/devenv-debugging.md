@@ -14,7 +14,7 @@ ms.collection: get-started
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
-*Debugging* is the process of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You can start a debugging session by pressing <kbd>F5</kbd>. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
+*Debugging* is the process of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You can start a debugging session by pressing <kbd>F5</kbd>. Learn more about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
 
 An alternative to classic debugging is snapshot debugging, which allows you to record running code, and later debug it. Learn more in [Snapshot debugging](devenv-snapshot-debugging.md).
 
@@ -37,7 +37,7 @@ To control table data synchronization between each debugging session, see [Retai
 
 ## Breakpoints
   
-The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the **Debug Menu** in Visual Studio Code. For more information, see [Debugging shortcuts](#debugging-shortcuts). 
+The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the **Debug Menu** in Visual Studio Code. Learn more in [Debugging shortcuts](#debugging-shortcuts). 
  
 Set breakpoints on the external code that isn't part of your original project. You can step into the base application code by using the **Go to Definition** feature and set breakpoints on the referenced code, which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do as follows: 
 
@@ -138,7 +138,7 @@ The database insights also let you peek into the most recent and the latest long
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
 > [!NOTE]  
-> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics. These statistics are gathered and then displayed in the debugger, like whether long running SQL statements or SQL statements are shown. Check the server configuration if you don't see the insights that you expect in the debugger. Learn more in [Configuring Business Central server](../administration/configure-server-instance.md#Development).
+> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics. These statistics are gathered and then displayed in the debugger, like whether long running SQL statements or SQL statements are shown. Check the server configuration if you don't see the insights that you expect in the debugger. Learn more in [Configuring Business Central server](../administration/server-instance-settings.md#manage-extensions-and-development).
 
 ## Debugging web services
 

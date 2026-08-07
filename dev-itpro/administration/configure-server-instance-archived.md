@@ -41,13 +41,13 @@ After you install [!INCLUDE[server](../developer/includes/server.md)], you can c
 
 - Using the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
-    For more information, see [Settings in the Business Central Server Administration Tool](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](Administration-Tool.md). 
+    For more information, see [Settings in the Business Central Server Administration Tool](#NavAdminSettings) and [Business Central Server Administration Tool](Administration-Tool.md). 
 
     [!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
 
 - Using the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) that is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
-    For more information, see [Using Administration Shell Cmdlets to Modify Settings](configure-server-instance.md#UsingPowerShell).  
+    For more information, see [Using Administration Shell Cmdlets to Modify Settings](#UsingPowerShell).  
 
 - By directly editing CustomSettings.config using a text editor.
 

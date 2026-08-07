@@ -22,7 +22,7 @@ Getting extensions to use secrets from Azure Key Vault involves two areas of wor
 
 ### Setting up and configuring Azure Key Vaults
 
-An extension can retrieve secrets from one or two different Azure Key Vaults. These key vaults must be created in Azure, and the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service configured to access key vaults. The setup process is different for online and on-premises. For more information, see:
+An extension can retrieve secrets from one or two different Azure Key Vaults. These key vaults must be created in Azure, and the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service configured to access key vaults. The setup process is different for online and on-premises. Learn more in:
 
 - [Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online](../administration/setup-app-key-vault.md)
 - [Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises](../administration/setup-app-key-vault-onprem.md)
@@ -31,7 +31,7 @@ An extension can retrieve secrets from one or two different Azure Key Vaults. Th
 
 Once you have an Azure Key Vault, you can develop [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions to retrieve secrets from the key vault. In short, this work involves specifying the key vault's URL and adding code to retrieve a secret from the key vault.
 
-For more information, see [Using App Key Vault Secrets in Extensions](../developer/devenv-app-key-vault.md).
+Learn more in [Using App Key Vault Secrets in Extensions](../developer/devenv-app-key-vault.md).
 
 
 ### Monitoring the usage of and errors in Azure Key Vault with telemetry
@@ -40,11 +40,11 @@ App key vault telemetry gathers information about the acquisition of secrets in 
 
 The app key vault secret process has two operations: *initialization* and *retrieval*. The telemetry data provides information about the success or failure for each of these operations. There are various conditions that cause a failure. The failure messages provide insight into the cause of the failure, helping you identify, troubleshoot, and resolve issues.
 
-For more information, see [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md).
+Learn more in [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
 ## Related information  
 
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md)  
-[Configuring Business Central Server - Azure Key Vault Extensions](../administration/configure-server-instance.md#azure-key-vault-client-identity-and-extension-settings)  
+[Configuring Business Central Server](../administration/configure-server-instance.md)  

@@ -50,6 +50,6 @@ This procedure describes how to use the [!INCLUDE[admintool](../developer/includ
   
 [Upgrading the Data](../upgrade/Upgrading-the-Data.md)  
 [Converting a Database](../upgrade/converting-a-database.md)  
-[Configuring the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Database](configure-sql-server-authentication.md)  
-[Optimizing SQL Server Performance with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](optimize-sql-server-performance.md)  
-[Configuring [!INCLUDE[server](../developer/includes/server.md)] (Database Settings)](configure-server-instance.md#Database)  
+[Configuring the database](configure-sql-server-authentication.md)  
+[Optimizing SQL Server performance](optimize-sql-server-performance.md)  
+[Configuring Business Central server](server-instance-settings.md)  

@@ -44,10 +44,10 @@ The topics in this section describe the key concepts and techniques for accessin
 
 ## Enabling and Configuring OData on the [!INCLUDE[server](../developer/includes/server.md)] (on-premises only)
  
-The [!INCLUDE[server](../developer/includes/server.md)] instance has several configurations settings that enable and control OData services. For more information, see [OData Services Settings](../administration/configure-server-instance.md#ODataServices).
+The [!INCLUDE[server](../developer/includes/server.md)] instance has several configuration settings that enable and control OData services. Learn more in [OData Services Settings](../administration/server-instance-settings.md#expose-odata-and-api-services).
 
 ## Known Limitations with Business Central OData
-The Open Data Protocol \(OData\) implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not implement all features in the OData specification. For more information, see [Known OData Limitations](odata-known-limitations.md).
+The Open Data Protocol \(OData\) implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not implement all features in the OData specification. Learn more in [Known OData Limitations](odata-known-limitations.md).
 
 ## Related information  
 

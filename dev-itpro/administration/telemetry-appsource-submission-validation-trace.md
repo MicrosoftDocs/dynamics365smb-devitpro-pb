@@ -63,7 +63,7 @@ Occurs when an app is published from Partner Center. For more information about 
 |containsHotfix|Specifies whether the submission contains a hotfix of a Marketplace extension.|
 
 <!--
-{"telemetrySchemaVersion":"0.1","eventId":"LC0028","validationRequestId":"0f5978be-00ff-48a6-970c-339a036e7877","extensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"AppSource Simple\",\r\n \"Publisher\": \"AppSource Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n }\r\n ]\r\n}","severity":"Information","countryRegions":"DK, US","versions":"19.0"}
+{"telemetrySchemaVersion":"0.1","eventId":"LC0028","validationRequestId":"0f5978be-00ff-48a6-970c-339a036e7877","extensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"Marketplace Simple\",\r\n \"Publisher\": \"Marketplace Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n }\r\n ]\r\n}","severity":"Information","countryRegions":"DK, US","versions":"19.0"}
 -->
 
 <a name="other"></a>**Common custom dimensions**
@@ -141,7 +141,7 @@ Occurs when the validation has started for a specific version and country/region
 |[See common custom dimensions](#other)||
 
 <!--
-{"telemetrySchemaVersion":"0.1","version":"19.0","eventId":"LC0030","validationRequestId":"eae270f4-5686-460c-99ec-73f9ece08fe5","baselineExtensions":"{\r\n \"Extensions\": []\r\n}","allExtensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"AppSource Simple\",\r\n \"Publisher\": \"AppSource Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n },\r\n {\r\n \"Id\": \"c1335042-3002-4257-bf8a-75c898ccb1b8\",\r\n \"Name\": \"Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26075.0\"\r\n },\r\n {\r\n \"Id\": \"8874ed3a-0643-4247-9ced-7a7002f7135d\",\r\n \"Name\": \"System\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"18.0.26014.0\"\r\n },\r\n {\r\n \"Id\": \"63ca2fa4-4f03-4f2b-a480-172fef340d3f\",\r\n \"Name\": \"System Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26075.0\"\r\n },\r\n {\r\n \"Id\": \"437dbf0e-84ff-417a-965d-ed2bb9650972\",\r\n \"Name\": \"Base Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26075.0\"\r\n }\r\n ]\r\n}","countryRegion":"US","extensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"AppSource Simple\",\r\n \"Publisher\": \"AppSource Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n }\r\n ]\r\n}","severity":"Information"}
+{"telemetrySchemaVersion":"0.1","version":"19.0","eventId":"LC0030","validationRequestId":"eae270f4-5686-460c-99ec-73f9ece08fe5","baselineExtensions":"{\r\n \"Extensions\": []\r\n}","allExtensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"Marketplace Simple\",\r\n \"Publisher\": \"Marketplace Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n },\r\n {\r\n \"Id\": \"c1335042-3002-4257-bf8a-75c898ccb1b8\",\r\n \"Name\": \"Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26075.0\"\r\n },\r\n {\r\n \"Id\": \"8874ed3a-0643-4247-9ced-7a7002f7135d\",\r\n \"Name\": \"System\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"18.0.26014.0\"\r\n },\r\n {\r\n \"Id\": \"63ca2fa4-4f03-4f2b-a480-172fef340d3f\",\r\n \"Name\": \"System Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26075.0\"\r\n },\r\n {\r\n \"Id\": \"437dbf0e-84ff-417a-965d-ed2bb9650972\",\r\n \"Name\": \"Base Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26075.0\"\r\n }\r\n ]\r\n}","countryRegion":"US","extensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"Marketplace Simple\",\r\n \"Publisher\": \"Marketplace Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n }\r\n ]\r\n}","severity":"Information"}
 -->
 
 
@@ -172,7 +172,7 @@ Occurs when the validation for a specific extension the submission has started.
 |hotfixValidation|Specifies whether the extension validated is a hotfix.|
 |[See common custom dimensions](#other)||
 <!--
-{"version":"18.0","telemetrySchemaVersion":"0.1","validationRequestId":"c388ec8f-9b4a-40c3-a572-51af0722574a","extensionPublisher":"AppSource Publisher","extensionVersion":"1.0.0.0","countryRegion":"DK","extensionName":"AppSource Extension","eventId":"LC0032","extensionId":"1b8f9e14-dfc1-48c7-a8cb-d2223aa3c122","severity":"Information"}
+{"version":"18.0","telemetrySchemaVersion":"0.1","validationRequestId":"c388ec8f-9b4a-40c3-a572-51af0722574a","extensionPublisher":"Marketplace Publisher","extensionVersion":"1.0.0.0","countryRegion":"DK","extensionName":"Marketplace Extension","eventId":"LC0032","extensionId":"1b8f9e14-dfc1-48c7-a8cb-d2223aa3c122","severity":"Information"}
 -->
 
 ## <a name="validationdiagnosticreported"></a>Validation diagnostic reported

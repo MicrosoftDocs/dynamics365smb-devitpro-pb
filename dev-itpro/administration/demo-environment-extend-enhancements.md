@@ -60,7 +60,7 @@ After you have a Microsoft 365 demo account, you can sign up for trials of Dynam
    1. In the **Manage** pane, select **Environments**.
    1. On the **Environments** page, select the **Sales Trial** environment.
    1. Select **Resources**, and then select **Dynamics 365 apps**.
-   1. Select **Open AppSource** to go to Microsoft Marketplace.
+   1. Select **Open Marketplace** to go to Microsoft Marketplace.
    1. Search for **Trial: Dynamics 365 for Field Service**, select **Free trial**, and follow the instructions to install the app. When prompted to select an environment, select **Sales Trial**.
 
 Learn more about managing apps in Power Platform at [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).

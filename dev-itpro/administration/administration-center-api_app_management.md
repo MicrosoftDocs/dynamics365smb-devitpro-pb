@@ -25,9 +25,9 @@ By setting this parameter to `true`, you accept the following terms:
 > - I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products
 >- Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities.
 >- I agree to the provider's terms of use and privacy policy<sup>2</sup>.
->- I understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://privacy.microsoft.com/privacystatement).
+>- I understand that the rights to use this product don't come from Microsoft, unless Microsoft is the provider. Use of Marketplace is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://privacy.microsoft.com/privacystatement).
 
-<sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on AppSource. Links to these documents are typically under **Details + Support** > **Legal**. Or, if can't find this information, contact the provider.
+<sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on Marketplace. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
 
 -->
 ### Required In-Product Permissions for Installing and Uninstalling Apps

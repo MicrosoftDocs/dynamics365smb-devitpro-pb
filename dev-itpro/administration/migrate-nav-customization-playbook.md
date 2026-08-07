@@ -25,7 +25,7 @@ Keep in mind the following points:
 
 - Data from tables with code customizations can't be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] unless the customizations are handled by extensions installed on both on-premises and online.
 - Breaking schema changes (such as removing or renaming fields) prevent extension synchronization. Plan carefully to avoid data loss.
-- Per-tenant extensions and AppSource extensions are the two deployment models available online. Decide early which model fits each customization.
+- Online deployment models include per-tenant extensions and Marketplace extensions. Decide early which model fits each customization.
 
 ## Code-conversion workflow
 
@@ -70,7 +70,7 @@ Use the following workstream to organize the customization conversion as part of
 
 1. **Inventory and classify**: Catalog all modified objects, ISV add-ons, and integrations. Classify each item by complexity (simple field addition, complex business logic, third-party dependency).
 2. **Separate data from behavior**: Identify which customizations carry data (custom tables, added fields) versus behavior-only changes (page layouts, report logic). Data-carrying customizations must be handled as extensions before migration to avoid data loss.
-3. **Create an extension roadmap**: Decide how to package customizations into extensions. Group related objects, plan the extension dependency chain, and determine whether each extension is a per-tenant extension or an AppSource app.
+3. **Create an extension roadmap**: Decide how to package customizations into extensions. Group related objects, plan the extension dependency chain, and determine whether each extension is a per-tenant extension or a Marketplace extension.
 4. **Pilot conversion**: Convert a representative subset of objects to validate the workflow, estimate effort, and identify common issues.
 5. **Regression testing**: Test converted extensions against business scenarios in a sandbox environment. Include key business users in validation.
 6. **Freeze before cutover**: Stop C/AL development before the final cutover. All new work should be done in AL extensions.

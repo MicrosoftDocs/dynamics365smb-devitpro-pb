@@ -195,10 +195,10 @@ The available analyzers are:
 | CodeCop | Enforces general AL coding guidelines | Always - included by default |
 | UICop | Checks user interface best practices | Always - included by default |
 | PerTenantExtensionCop | Enforces per-tenant extension rules | Uncomment for per-tenant extensions (PTE) built for a specific customer |
-| AppSourceCop | Enforces AppSource submission rules | Uncomment for apps published globally through AppSource |
+| AppSourceCop | Enforces Marketplace submission rules | Uncomment for apps published globally through Marketplace |
 
 > [!IMPORTANT]
-> Enable either `PerTenantExtensionCop` or `AppSourceCop` based on your deployment target - not both. Per-tenant extensions are installed for a single customer, while AppSource apps are published to the marketplace for all Business Central customers.
+> Enable either `PerTenantExtensionCop` or `AppSourceCop` based on your deployment target - not both. Per-tenant extensions are installed for a single customer, while Marketplace apps are published to the marketplace for all Business Central customers.
 
 ## Set up your first codespace
 

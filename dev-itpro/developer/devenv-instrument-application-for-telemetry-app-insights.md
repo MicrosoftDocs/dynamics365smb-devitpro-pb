@@ -16,7 +16,7 @@ This article explains how to develop extensions to send custom telemetry trace e
 You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource, which you set up beforehand. In [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], the custom telemetry events are stored in the *traces* table.   
 
 > [!TIP]
-> Consider using the *Feature usage* module from the System Application for logging events from your extension instead of using raw Session.LogMessage calls as described in this article. For more information, see [Using Feature telemetry](../administration/telemetry-feature-telemetry.md).
+> Consider using the *Feature usage* module from the System Application for logging events from your extension instead of using raw Session.LogMessage calls as described in this article. Learn more in [Using Feature telemetry](../administration/telemetry-feature-telemetry.md).
 
 ## The Scope for extension telemetry
 
@@ -24,11 +24,11 @@ Telemetry for [!INCLUDE[prod_short](includes/prod_short.md)] can be defined in t
 
 - In the app.json file of the extension.
 
-    For more information, see [Setting up Telemetry in an App/Extension ](devenv-application-insights-for-extensions.md).
+    Learn more in [Setting up Telemetry in an App/Extension ](devenv-application-insights-for-extensions.md).
 
 - In the [!INCLUDE[prod_short](includes/prod_short.md)] environment.
 
-    For more information, see [Enabling Telemetry on Environments](../administration/telemetry-overview.md#enable).
+    Learn more in [Enabling Telemetry on Environments](../administration/telemetry-overview.md#enable).
 
 When you create a custom telemetry trace signal, you can specify the *scope* of the event. The telemetry scope determines if the event is only sent to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the extension's app.json or if the event is also sent to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource of the environment where the extension is installed.
 
@@ -71,7 +71,7 @@ Use the parameters to build the dimensions, or columns, that show for the trace 
 |EventID|A text string that assigns an identifier to the telemetry trace signal. The tag can consist of letters, numbers, and special characters. Try to make your tags unique. For example, use at least eight characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
 |Message|A text string that specifies the descriptive message for the telemetry trace signal.|message|
 |Verbosity<sup>[*](#*)|An enumeration that specifies the severity level of the telemetry trace signal. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br />`0`=`Verbose`<br />|
-|DataClassification[*](#*)|A DataClassification data type that assigns a classification to the telemetry trace signal. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|dataClassification|
+|DataClassification[*](#*)|A DataClassification data type that assigns a classification to the telemetry trace signal. Learn more in [Data Classifications](devenv-classifying-data.md#DataClassifications).|dataClassification|
 |TelemetryScope|Scope of emitting the telemetry. <ul><li>`extensionpublisher` sends the custom signal only to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the extension's app.json file</li><li>`all` sends the custom signal to the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the extension's app.json file and on the environment. </li></ul> |telemetryScope
 |CustomDimensions|A dictionary of text that defines the custom dimensions for the trace signal in Application Insights. There are several CustomDimensions that are included in traces by default. See [Default dimensions in CustomDimensions](#default-dimensions-in-customdimensions)|
 |Dimension1|A text string that specifies the name of the custom dimension.|
@@ -190,9 +190,10 @@ end;
 For privacy reasons, events that have a `DataClassification` other than `SystemMetadata` aren't sent to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]. During development of your extension, it's good practice to have a privacy review of the use of LogMessage calls to ensure that customer data isn't mistakenly leaked into [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources. 
 
 ### Diagnostic Trace Level (on-premises only)
+
 For [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls which signals are sent, based on their severity level.
 
-If the **Diagnostic Trace Level** is set to **Warning** for example, then **Normal** and **Verbose** signals won't be sent to Application Insights. For more information, see [Configuring Business Central Server - General](../administration/configure-server-instance.md#general-settings).
+If you set the **TraceLevel** to **Warning**, the system doesn't send **Normal** and **Verbose** signals to Application Insights. Learn more in [Configuring Business Central Server - General](../administration/server-instance-settings.md).
 
 
 <!--
