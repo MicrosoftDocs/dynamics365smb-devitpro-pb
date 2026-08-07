@@ -45,7 +45,7 @@ The following methods are available on instances of the HttpClient data type.
 
 ## Remarks
 
-The supported security protocols are controlled by the **SecurityProtocol** configuration setting. For more information, see [Microsoft Dynamics 365 Business Central Server Configuration](../../../administration/configure-server-instance.md#Compatibility).
+The supported security protocols are controlled by the **SecurityProtocol** configuration setting. Learn more in [Configure Business Central Server](../../../administration/configure-server-instance.md).
 
 ## Ways that HttpClient calls can fail
 

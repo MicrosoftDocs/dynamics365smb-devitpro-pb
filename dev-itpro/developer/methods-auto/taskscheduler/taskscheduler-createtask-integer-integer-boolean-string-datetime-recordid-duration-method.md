@@ -69,4 +69,4 @@ This version of the `TaskScheduler.CreateTask` method has the same semantics as 
 [Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)
+[Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/server-instance-settings.md#schedule-server-tasks)

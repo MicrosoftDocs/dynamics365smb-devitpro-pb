@@ -232,7 +232,7 @@ To re-enqueue a page background task, call the ENQUEUEBACKGROUNDTASK method on e
 
 - The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. 
 - On list pages, it's recommended not to enqueue a page background task from `OnAfterGetRecord` trigger, unless you're aware of the consequences. If you enqueue a page background task from the `OnAfterGetRecord`, the task will be immediately canceled after the first row is retrieved. The reason is that the `OnAfterGetRecord` trigger is called on every row. Because the record changes for each row, the page background task is canceled when the trigger runs after the first row.
-- ​By default, only five page background tasks can be run simultaneously for a parent session. If there are more than five, they're queued and run when a slot becomes available as other tasks finish.​ If you're using version 15.2 or later, you can increase or decrease this value by changing the **Child Sessions Max Concurrency** setting of the server instance. You can also change the **Child Sessions Max Queue Length** setting to specify the maximum number of child sessions that can be queued per parent session of a page background task. If this value is exceeded, an error occurs. For more information, see [Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT).
+- ​By default, only five page background tasks can run simultaneously for a parent session. If there are more than five, they're queued and run when a slot becomes available as other tasks finish.​ If you're using version 15.2 or later, you can increase or decrease this value by changing the **Child Sessions Max Concurrency** setting of the server instance. You can also change the **Child Sessions Max Queue Length** setting to specify the maximum number of child sessions that can be queued per parent session of a page background task. If this value is exceeded, an error occurs. For more information, see [Configuring Business Central Server - Asynchronous Processing](../administration/server-instance-settings.md#run-background-sessions-and-page-tasks).
   the Page.Rec is different.
 
 
@@ -529,7 +529,7 @@ Parts are a special category of page designed to be embedded within another page
 ## Related information
 [Async processing overview](devenv-async-overview.md)   
 [Performance Articles for Developers](../performance/performance-developer.md)   
-[Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT)  
+[Configuring Business Central Server - Asynchronous Processing](../administration/server-instance-settings.md#run-background-sessions-and-page-tasks)  
 [Business Central Performance Counters](../administration/performance-counters.md)  
 [Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
 [Page Parts Overview](devenv-designing-parts.md)  

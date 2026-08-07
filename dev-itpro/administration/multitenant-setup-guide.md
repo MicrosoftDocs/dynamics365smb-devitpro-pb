@@ -39,20 +39,20 @@ The application database includes tables that store information about the applic
 
 - Start from scratch and use the [New-NAVApplicationDatabase cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navapplicationdatabase).
 
-    This cmdlet is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. It creates a database in SQL Server that's initialized with the required tables and data. For more information, see [Create an Application Database](../deployment/devenv-create-databases.md#application).
+    This cmdlet is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. It creates a database in SQL Server that's initialized with the required tables and data. Learn more in [Create an Application Database](../deployment/devenv-create-databases.md#application).
 
 - Export the application objects from an existing database to a new database.
 
-    If you already have a database that includes the application, you can use the [Export-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/Export-NAVApplication) to export only the application objects to a new database.  For more information, see [Exporting the Application Tables to a Dedicated Application Database](../deployment/separating-application-data-from-business-data.md#exportapplication).
+    If you already have a database that includes the application, you can use the [Export-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/Export-NAVApplication) to export only the application objects to a new database.  Learn more in [Exporting the Application Tables to a Dedicated Application Database](../deployment/separating-application-data-from-business-data.md#exportapplication).
 
 ## Configure the [!INCLUDE[server](../developer/includes/server.md)] for multitenancy
 
 To set up the [!INCLUDE[server](../developer/includes/server.md)] instance for multitenancy, make the following changes to the server instance configuration:
 
 1. Enable the **Multitenant** setting.
-2. Set the server instance to connect to the application database by changing these settings: **DatabaseServer**, **DatabaseInstance**, and **DatabaseName**.
+1. Set the server instance to connect to the application database by changing these settings: **DatabaseServer**, **DatabaseInstance**, and **DatabaseName**.
 
-For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#general-settings) and [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).  
+Learn more in [Configuring Business Central Server](../administration/configure-server-instance.md) and [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).  
 
 > [!TIP]
 > Instead of doing the two previous steps, you could use the [Mount-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/Mount-NAVApplication). Running this cmdlet will enable the **Multitenant** and set up the data base connection.
@@ -65,7 +65,7 @@ If you want to use host names to access [!INCLUDE[nav_web](../developer/includes
 
 Before mounting tenants, publish the system symbols and extensions that make up your application. Publish the system application and base application extensions as a minimum. Then, as needed, publish any Microsoft and third-party extensions tenants may use.
 
-For more information, see [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).
+Learn more in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).
 
 ## Create, mount, and synchronize tenants
 

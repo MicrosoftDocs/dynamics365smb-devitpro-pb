@@ -152,7 +152,7 @@ The session runs by using the same user/credentials that are used when calling A
 
 The [!INCLUDE[prod_short](includes/prod_short.md)] service has limits on how long time a background session can run and how many tasks you can run in parallel with the task scheduler. The background sessions that are started to process scheduled tasks don't have the same concurrency limit as those started by other methods.
 
-For more information, see [Asynchronous task limits](../administration/operational-limits-online.md#Task).
+Learn more in [Asynchronous task limits](../administration/operational-limits-online.md#Task).
 
 ## Monitor and troubleshoot
 
@@ -172,7 +172,7 @@ From the [!INCLUDE[prod_short](includes/prod_short.md)] web client, you can open
 
 ## Configure task scheduler for Business Central on-premises
 
-[!INCLUDE[server](includes/server.md)] includes several settings related to task scheduler. These settings allow you to enable or disable task scheduler and manage tasks. Learn more in [Configure Business Central Server - Task Scheduler](../administration/configure-server-instance.md#Task).
+[!INCLUDE[server](includes/server.md)] includes several settings related to task scheduler. These settings allow you to enable or disable task scheduler and manage tasks. Learn more in [Configure Business Central Server - Task Scheduler](../administration/server-instance-settings.md#schedule-server-tasks).
 
 > [!NOTE]  
 > Task scheduler telemetry in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)] also works for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises.

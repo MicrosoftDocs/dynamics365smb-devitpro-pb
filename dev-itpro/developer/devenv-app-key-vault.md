@@ -118,8 +118,8 @@ Publisher validation is done by comparing the key vault's Microsoft Entra tenant
     > [!NOTE]
     > An error won't occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing you from publishing the extension at this point.
 
-2.  When the extension runs, it tries to initialize the **App Key Vault Secret Provider** codeunit.
-3. The system compares the key vault's Microsoft Entra tenant ID with the Microsoft Entra tenant ID published with the extension:
+1.  When the extension runs, it tries to initialize the **App Key Vault Secret Provider** codeunit.
+1. The system compares the key vault's Microsoft Entra tenant ID with the Microsoft Entra tenant ID published with the extension:
 
     - If they match, initialization succeeds.
     - If they don't match, an error occurs.
@@ -128,7 +128,7 @@ Publisher validation is done by comparing the key vault's Microsoft Entra tenant
 
 Publisher validation is turned on by default, which is the recommended setting. If it's turned off, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. So, don't turn off publisher validation unless you trust the extensions that can be potentially installed.
 
-For information about how to turn publisher validation on or off, see [Configuring Business Central Server](../administration/configure-server-instance.md#azure-key-vault-client-identity-and-extension-settings).
+Learn more about how to turn publisher validation on or off in [Configuring Business Central Server](../administration/server-instance-settings.md).
 
 ## <a name="troubleshooting"></a>Monitoring and troubleshooting
 
@@ -159,7 +159,7 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 
     The Application Insights resource will be assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
-    For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+    Learn more in [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
 2. In the app.json file of the extension, add the `"applicationInsightsKey"`:
 
@@ -169,7 +169,7 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 
 3. Now, you can run your extensions and view data in Application Insights.  
 
-For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
+Learn more in [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
 ## Related information
 

@@ -33,7 +33,7 @@ This article describes how to set up sending telemetry data to [!INCLUDE[appinsi
     > [!TIP]
     > You can use the same [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for multiple tenants and their different environments.
 
-    For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).  
+    Learn more in [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).  
 
 4. Depending on your [!INCLUDE[prod_short](../includes/prod_short.md)] version, get the **Connection String** or **Instrumentation Key** of the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
 
@@ -92,7 +92,8 @@ For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_s
 ```powershell
 Set-NAVServerConfiguration -ServerInstance BC200 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=aaaaaaaa-0b0b-1c1c-2d2d-333333333333;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
-For more information, see [Configuring Business Central Server](configure-server-instance.md#general-settings).
+
+Learn more in [Configuring Business Central Server](configure-server-instance.md).
 
 ### For on-premises environments (multitenant mode)
 

@@ -2,7 +2,7 @@
 title: Install a Business Central 2026 release wave 1 (version 28) Update
 description: This article describes the tasks required for getting the monthly version 28 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 02/21/2026
+ms.date: 08/01/2026
 ms.reviewer: jswymer
 ms.topic: install-set-up-deploy
 ms.author: jswymer

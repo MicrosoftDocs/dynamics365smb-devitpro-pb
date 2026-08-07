@@ -382,7 +382,7 @@ traces
 The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify slow-running reports - reports that take longer than expected to run and generate a large number of rows.
 
 > [!NOTE]
-> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds. For more information, see [Report Generation and Cancellation Flow](report-cancellation.md).
+> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds. Learn more in [Report Generation and Cancellation Flow](report-cancellation.md).
 
 #### Cancellation event received. Requesting cancellation of the action.
 
@@ -394,7 +394,7 @@ This message occurs when a user canceled a report in the client as it was being 
 
 #### The action took longer to complete ({0}) than the specified threshold ({1}). Requesting cancellation of the action.
 
-The service is configured to cancel reports if they take longer to generate than a set amount of time. With Business Central online, you can't change the threshold. With Business Central on-premises, you change the threshold by setting the **Max Execution Timeout** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no timeout for on-premises by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Reports).
+The service is configured to cancel reports if they take longer to generate than a set amount of time. With Business Central online, you can't change the threshold. With Business Central on-premises, you change the threshold by setting the **ReportTimeout** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no timeout for on-premises by default. Learn more in [Configuring Business Central Server](configure-server-instance.md).
 
 #### The rendering of the word report has been cancelled because it took longer than the specified threshold ({0})"
 
@@ -402,7 +402,7 @@ This message occurs when a report that based on a Word layout takes longer to ge
 
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
-The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no limit on rows for on-premises by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Reports).
+The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **ReportMaxRows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no limit on rows for on-premises by default. Learn more in [Configuring Business Central Server](configure-server-instance.md).
 
 ## <a name="commit"></a>Report cancelled but a commit occurred
 

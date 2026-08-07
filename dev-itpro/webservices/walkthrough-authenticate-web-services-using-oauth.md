@@ -26,7 +26,7 @@ To complete the following tasks in this article, make sure your system meets the
 
 - Configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Microsoft Entra ID or Microsoft 365 authentication.
 
-    For more information, see [Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID](../administration/authenticating-users-with-azure-active-directory.md).
+    Learn more in [Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID](../administration/authenticating-users-with-azure-active-directory.md).
 
     Also, for purposes of this article only, make sure that your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account is configured with a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Authentication password or web access key.  
 
@@ -37,11 +37,11 @@ To complete the following tasks in this article, make sure your system meets the
     |Setting/option|Description|
     |--------------|-----------|
     |Microsoft Entra tenant ID|The ID of the directory that's used by Business Central in Microsoft Entra ID. The Microsoft Entra tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name. The domain name is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have a Microsoft 365 subscription. You get the domain name from the **Domain** or **Custom domain names** settings for the AD tenant in the Azure portal. The Microsoft Entra tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance|
-    |App ID URI| When you configured Business Central for Microsoft Entra ID or Microsoft 365 authentication, you had to register Business Central as an application in the Microsoft Entra ID and also specify an APP ID URI. The APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/00001111-aaaa-2222-bbbb-3333cccc4444`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure portal by viewing the Business Central application **Settings** in Active Directory. This value is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, see [Microsoft Entra ID Settings](../administration/configure-server-instance.md#AzureAd).|
+    |App ID URI| When you configured Business Central for Microsoft Entra ID or Microsoft 365 authentication, you had to register Business Central as an application in the Microsoft Entra ID and also specify an APP ID URI. The APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/00001111-aaaa-2222-bbbb-3333cccc4444`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure portal by viewing the Business Central application **Settings** in Active Directory. This value is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. Learn more in [Microsoft Entra ID Settings](../administration/server-instance-settings.md#integrate-microsoft-entra-and-oauth-clients).|
   
 - Enable OData Services and V4 Endpoint on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-    For more information, see [OData Services Settings](../administration/configure-server-instance.md#ODataServices).
+    Learn more in [OData services settings](../administration/server-instance-settings.md#expose-odata-and-api-services).
   
 - Install Visual Studio.
 
@@ -59,7 +59,7 @@ To complete the following tasks in this article, make sure your system meets the
 
 When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the Microsoft Entra tenant, it was assigned an APP ID URI. For example, in this article, the APP ID URI is `https://mytenant.onmicrosoft.com/00001111-aaaa-2222-bbbb-3333cccc4444`.
 
-If you haven't already done so, set the **Microsoft Entra app ID URI** (or Azure AD app ID URI)) setting in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this step by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+If you haven't already done so, set the **Microsoft Entra app ID URI** (or Azure AD app ID URI)) setting in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this step by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. Learn more in [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 ## Expose a page as web service
 
@@ -78,7 +78,7 @@ Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to pu
 
     In the OData URL, `myserver` is the computer that is running the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance, `7048` is the port number used for OData, and `BC`is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance.
 
-    For more information about publishing, see [Publish a Web Service](./publish-web-service.md).
+    Learn more in [Publish a Web Service](./publish-web-service.md).
 5. After you publish the web service, you can now enter the OData URL in the address of an Internet browser.
 
     You're prompted for your user name and password. The user name and password that you enter is the user name and password (or web service access key) of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] account; not your Microsoft 365 or Microsoft Entra ID user name and password.
@@ -91,7 +91,7 @@ Although you haven't yet created the console application, the next thing to do i
 
 1. Using the Azure portal, register the console application as a native client application.
 
-    For information about how to do this step, follow the instructions in [Quickstart: Register an app with the Microsoft Entra ID](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app).
+    Learn more about how to do this step in [Quickstart: Register an app with the Microsoft Entra ID](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app).
 
     Use the following table as guide to help you determine some of the registration settings.
 
@@ -101,16 +101,16 @@ Although you haven't yet created the console application, the next thing to do i
     |Application Type|Set to `Native`|`Native`|
     |Redirect URI|Specifies the redirect URI to a valid URI for Microsoft Entra ID to redirect to in response to an OAuth request.<br /><br /> This value is a logical URL that only acts as a unique identifier for the application. It doesn't have to refer to an actual endpoint; but it must be a valid URI.|`https://mybcclient`|
 
-2. Grant the console application delegated permissions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
+1. Grant the console application delegated permissions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
 
     1. Select  **API Permissions ** > **Add a permission** > **APIs my organization uses**.
     2. Search for and select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application,
     3. Select **Delegated Permissions**.
     4. Under **Permissions**, select **user_impersonation**, then **Add permissions**.
 
-    For more information, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
+    Learn more in [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
   
-3. Make a note of the values of the **Application (client) ID** and **Redirect URI** values. You'll use this information later when you create the console application.
+1. Make a note of the values of the **Application (client) ID** and **Redirect URI** values. You'll use this information later when you create the console application.
 
     In the Azure portal, you can see these values by opening **Settings** for the registered application.
 
@@ -123,19 +123,19 @@ Here, you'll create the Windows console application that connects to the Custome
 ### Create the C\# project  
   
 1. In Visual Studio, on the **File** menu, point to **New**, and then choose **Project**.  
-2. In the pane on the left, select **Installed** > **Visual C\#** > **Windows (Classic) Desktop** > **Console App (.NET Framework)**.
-3. Set the **Name** and **Solution Name** to, for example, **BusinessCentralCustomers**, and choose  **OK** to exit the **New Project** page.
+1. In the pane on the left, select **Installed** > **Visual C\#** > **Windows (Classic) Desktop** > **Console App (.NET Framework)**.
+1. Set the **Name** and **Solution Name** to, for example, **BusinessCentralCustomers**, and choose  **OK** to exit the **New Project** page.
 
 ### Add a connected service reference for the OData web service
 
 1. Temporarily set the [!INCLUDE[server](../developer/includes/server.md)] to use **Windows** credential type.
 
     This step allows you to access the OData endpoint from Visual Studio.
-2. In the Solution Explorer pane, right-click the project (**BusinessCentralCustomers**), and then choose **Add** > **Connected Service** > **OData Connected Service**.  
+1. In the Solution Explorer pane, right-click the project (**BusinessCentralCustomers**), and then choose **Add** > **Connected Service** > **OData Connected Service**.  
 
-3. On the **Configure Endpoint** page, either keep the **Service name** of **OData Service** or change it if you like.
+1. On the **Configure Endpoint** page, either keep the **Service name** of **OData Service** or change it if you like.
 
-4. In the **Address** field, enter the URI for your OData web service.
+1. In the **Address** field, enter the URI for your OData web service.
 
     The endpoint has the format `https://<servercomputer>:<business-central-odata-port>/<business-central-server-instance>/ODataV4`, for example:
 
@@ -144,17 +144,17 @@ Here, you'll create the Windows console application that connects to the Custome
    > [!IMPORTANT]  
    >  In this example, we use the HTTP protocol to illustrate the use of OData web services. We recommend that you use the more secure HTTPS protocol when you consume web services.
   
-5. Choose **Next**.
-6. On the **Settings** page, either keep the file name **Reference** or change it if you like.
+1. Choose **Next**.
+1. On the **Settings** page, either keep the file name **Reference** or change it if you like.
   
    The project is created, and your OData web service is added as a connected service reference. Next, you add the code that will show a list of existing customers, add a customer, and then rename the new customer.
 
-7. From Solution Explorer, open the C\# reference file (Reference.cs or whatever you named it) under **Connected Services** > **OData Service**, and then do the following steps:
+1. From Solution Explorer, open the C\# reference file (Reference.cs or whatever you named it) under **Connected Services** > **OData Service**, and then do the following steps:
 
     - Replace all references to `Microsoft.OData.Edm.Library.Date` with `Microsoft.OData.Edm.Date`.
     - Replace all references to `Microsoft.OData.Edm.Csdl.EdmxReader` with `Microsoft.OData.Edm.Csdl.CsdlReader`.
 
-8. Set the [!INCLUDE[server](../developer/includes/server.md)] to use **AccessControlService** credential type again.
+1. Set the [!INCLUDE[server](../developer/includes/server.md)] to use **AccessControlService** credential type again.
 
 ### Install and add a reference to the Microsoft.Identity.Client
 
@@ -163,19 +163,19 @@ The Microsoft.Identity.Client library contains utilities for token acquisition f
 Install the latest version of the package by using NuGet Package Manager in Visual Studio Code as follows:
 
 1. Select **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-2. At the `PM>` prompt, enter the following command:
+1. At the `PM>` prompt, enter the following command:
 
-```powershell
+    ```powershell
     Install-Package Microsoft.Identity.Client -Version 4.40.0
     ```
 
-3. Add a reference to Microsoft.Identity.Client in the console application project.
+1. Add a reference to Microsoft.Identity.Client in the console application project.
 
 ### Add code to console application
 
 1. In the code editor, write the following code. Replace brackets `<>` with your values.
 
-```csharp
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -221,7 +221,7 @@ Install the latest version of the package by using NuGet Package Manager in Visu
     }
     ```
 
-2. Build and run the application.
+1. Build and run the application.
 
     You should be prompted to enter a user name and password. 
 
@@ -236,7 +236,6 @@ https://github.com/azureadsamples/nativeclient-windowsstore
 https://github.com/MSOpenTech/azure-activedirectory-library-for-ios
 
 https://github.com/MSOpenTech/azure-activedirectory-library-for-android
-
 
 ## Related information
   
