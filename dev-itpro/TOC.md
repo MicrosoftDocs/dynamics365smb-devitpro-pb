@@ -310,7 +310,7 @@
 #### [MCP Server telemetry](administration/telemetry-mcp-server-trace.md)
 #### [Metadata embeddings telemetry](administration/telemetry-metadata-embeddings-trace.md)
 #### [Onboarding telemetry](administration/telemetry-onboarding-trace.md)
-#### [Open in Excel telemetry](administration/telemetry-open-in-excel-trace.md)
+<!--add in v29 #### [Open in Excel telemetry](administration/telemetry-open-in-excel-trace.md)-->
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
 #### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
 #### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)

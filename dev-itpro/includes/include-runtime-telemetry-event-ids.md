@@ -56,4 +56,6 @@
 |RT0053| Incoming Web service requests | [Deprecated endpoint called: {endpoint}](../administration/telemetry-webservices-trace.md#deprecated-endpoint-called-endpoint) |
 |RT0054| MCP Server | [MCP Server tool called: '{toolName}'](../administration/telemetry-mcp-server-trace.md#rt0054) |
 |RT0055|AI Consumption|[AI consumption recorded](../administration/telemetry-ai-consumption.md)|
-|RT0056|Open in Excel|[Open in Excel: {pageName}](../administration/telemetry-open-in-excel-trace.md#RT0056) |
+
+<!-- available in v29
+|RT0056|Open in Excel|[Open in Excel: {pageName}](../administration/telemetry-open-in-excel-trace.md#RT0056)|-->
