@@ -36,7 +36,7 @@ The following table lists the Business Central 26 update versions and the minimu
 |[27.7](https://support.microsoft.com/help/5093779)|[28.2](https://support.microsoft.com/help/5100266)|
 |[27.8](https://support.microsoft.com/help/5100265)|[28.3](https://support.microsoft.com/help/5105551)|
 |[27.9](https://support.microsoft.com/help/5105548)|[28.4](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-28-4-for-microsoft-dynamics-365-business-central-2026-release-wave-1)|
-|[27.10](https://support.microsoft.com/help/5123579)<sup>[\[1\]](#1)</sup>|28.5|
+|[27.10](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-27-10-for-microsoft-dynamics-365-business-central-2025-release-wave-2)<sup>[\[1\]](#1)</sup>|28.5|
 
 Get a list of all available version 27 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-2-7f4863fc-e30c-497d-b510-df9e7007253c).
 
@@ -56,8 +56,8 @@ The following table lists the Business Central 26 update versions and the minimu
 |[26.12](https://support.microsoft.com/help/5093778)|[27.7](https://support.microsoft.com/help/5093779)|[28.1](https://support.microsoft.com/help/5093780)|
 |[26.13](https://support.microsoft.com/help/5093778)|[27.8](https://support.microsoft.com/help/5100265)|[28.2](https://support.microsoft.com/help/5100266)|
 |[26.14](https://support.microsoft.com/help/5100263)|[27.9](https://support.microsoft.com/help/5105548)|[28.3](https://support.microsoft.com/help/5105551)|
-|[26.15](https://support.microsoft.com/help/5105549)|[27.10](https://support.microsoft.com/help/5123579)|[28.4](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-28-4-for-microsoft-dynamics-365-business-central-2026-release-wave-1)|
-|[26.16](https://support.microsoft.com/help/5123578)<sup>[\[1\]](#1)</sup>|27.11|28.5|
+|[26.15](https://support.microsoft.com/help/5105549)|[27.10](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-27-10-for-microsoft-dynamics-365-business-central-2025-release-wave-2)|[28.4](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-28-4-for-microsoft-dynamics-365-business-central-2026-release-wave-1)|
+|[26.16](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-26-16-for-microsoft-dynamics-365-business-central-2025-release-wave-1)<sup>[\[1\]](#1)</sup>|27.11|28.5|
 
 Get a list of all available updates for Business Central 2025 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-1-8cb260a4-6a57-4325-a4d7-7aa84c3234e6).
 
