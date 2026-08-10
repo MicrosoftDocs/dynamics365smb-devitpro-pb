@@ -27,7 +27,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5123579](https://support.microsoft.com/help/5123579)|Update 27.10 |August 2026|Application Build 27.10.53179, Platform Build 27.0.53144|
+|[5123579](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-27-10-for-microsoft-dynamics-365-business-central-2025-release-wave-2)|Update 27.10 |August 2026|Application Build 27.10.53179, Platform Build 27.0.53144|
 |[5105548](https://support.microsoft.com/help/5105548)|Update 27.9 |July 2026|Application Build 27.9.52145, Platform Build 27.0.52102|
 |[5100265](https://support.microsoft.com/help/5100265)|Update 27.8 |June 2026|Application Build 27.8.50894, Platform Build 27.0.50789|
 |[5093779](https://support.microsoft.com/help/5093779)|Update 27.7 |May 2026|Application Build 27.7.49739, Platform Build 27.0.49664|

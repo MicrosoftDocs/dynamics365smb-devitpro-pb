@@ -28,6 +28,8 @@
 |AL0000K0K|Cloud migration|[Cloud migration data upgrade scheduled](../administration/telemetry-cloud-migration-trace.md#cloud-migration-data-upgrade-scheduled)|
 | AL0000EJA | Extension Lifecycle | [Upgrade tag set: {AlUpgradeTag}](../administration/telemetry-extension-update-trace.md#upgrade-tag-set) |
 | AL0000EIQ | User Checklist Lifecycle | [User checklist status updated: {oldStatus} to {newStatus}](../administration/telemetry-user-checklist-trace.md) |
+| AL0000EIT | User Checklist Lifecycle | [Checklist item status updated: {oldStatus} to {newStatus}](../administration/telemetry-user-checklist-trace.md) |
+| AL0000EIR | User Checklist Lifecycle | [Checklist item status updated with guided experience item: {oldStatus} to {newStatus}](../administration/telemetry-user-checklist-trace.md) |
 | AL0000JT3 | Feature Lifecycle | [Feature switch has been flipped](../administration/telemetry-feature-management-trace.md) |
 |AL0000G7J|	Feature Lifecycle |[More than one telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#multipleloggers)|
 |AL0000G7K|	Feature Lifecycle |[No telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#nologger)|

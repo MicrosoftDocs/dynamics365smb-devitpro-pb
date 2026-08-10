@@ -1,8 +1,8 @@
 ---
 title: Introduction to automation APIs
-description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
+description: Learn how automation APIs create companies, apply configuration packages, manage extensions, assign permissions, and inspect security settings.
 author: SusanneWindfeldPedersen
-ms.date: 12/05/2025
+ms.date: 08/05/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -156,6 +156,29 @@ To get new users from Office 365, two bound actions on the **users** endpoint ca
 
 > [!NOTE]
 > The `getNewUsersFromOffice365` and `getNewUsersFromOffice365Async` APIs aren't supported when using service-to-service (S2S) authentication. This operation requires that users are assigned the **SUPER** permission set in all companies, which can't be assigned to application users. Learn more at [Using service-to-service (S2S) authentication](/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication).
+
+## Inspect security and permissions
+
+Use the security and permission endpoints to inspect users, permission assignments, and object-level permissions. You access these endpoints through a company route, but their results aren't limited to the company in the route. They support `GET` requests and don't create, update, or delete security settings.
+
+| Endpoint | Description |
+|:---------|:------------|
+| `usersPermissions` | Gets users and their identity, state, license, and application information. |
+| `userPermissionSets` | Gets permission set assignments for users, including the assignment type, company, security group, scope, and app. |
+| `accessControls` | Gets access control assignments that connect users, companies, and permission sets. |
+| `aggregatePermissionSets` | Gets permission set identifiers, names, scopes, and originating apps. |
+| `expandedPermissionSets` | Gets object-level read, insert, modify, delete, and execute permissions in each permission set. |
+
+The `usersPermissions` endpoint includes users with the `Full User`, `Limited User`, `Device Only User`, `External User`, `External Administrator`, or `External Accountant` license type. The `aggregatePermissionSets` endpoint excludes internal permission sets whose app name matches `*_Exclude_*`.
+
+For example, to get users and their permission information, use the following request:
+
+```http
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/usersPermissions
+Authorization: Bearer {token}
+```
+
+Replace `usersPermissions` with another endpoint from the preceding table to inspect other security and permission information.
 
 ## Handling tenant extensions
 
