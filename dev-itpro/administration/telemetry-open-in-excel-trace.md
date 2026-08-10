@@ -9,11 +9,12 @@ ms.reviewer: jswymer
 ms.author: jswymer
 ms.custom: bap-template
 ai-usage: ai-assisted
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Analyze Open in Excel telemetry
 
-**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2024 release wave 2 and later
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2026 release wave 2 and later
 
 Open in Excel telemetry gathers data about when users export data from [!INCLUDE[prod_short](../includes/prod_short.md)] to Excel using the **Open in Excel** action. Learn more in [Open in Excel](/dynamics365/business-central/across-work-with-excel#open-in-excel).
 
