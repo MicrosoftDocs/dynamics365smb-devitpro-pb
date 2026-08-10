@@ -25,10 +25,6 @@ Here's some important information about deleted environments and their recovery:
 
    If you need to recover an environment that was deleted more than 14 days ago, open a service request.
 
-- The number of recently deleted environments for a tenant can't exceed 10 environments. If this limit is exceeded, the environment that has been in retention the longest is removed from the **Recently deleted environments** page to make room for the newly deleted environment.
-
-  If you need to recover an environment that was removed from the **Recently deleted environments** page, open a service request.
-
 - When you delete environment, it's automatically renamed to include a suffix with the format `-yyMMddHHmmssff`.
 
    The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you might want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name.

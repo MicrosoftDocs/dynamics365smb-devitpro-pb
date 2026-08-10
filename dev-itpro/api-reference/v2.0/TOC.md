@@ -31,6 +31,10 @@
 ## [Apply vendor entry](resources/dynamics_applyvendorentry.md)
 ### [Get apply vendor entry](api/dynamics_applyvendorentry_get.md)
 ### [Update apply vendor entry](api/dynamics_applyvendorentry_update.md)
+## [Approval entry](resources/dynamics_approvalentry.md)
+### [Get approval entry](api/dynamics_approvalentry_get.md)
+## [Approval user setup](resources/dynamics_approvalusersetup.md)
+### [Get approval user setup](api/dynamics_approvalusersetup_get.md)
 ## [Attachments](resources/dynamics_attachment.md)
 ### [Get attachments](api/dynamics_attachment_get.md)
 ### [Delete attachments](api/dynamics_attachment_delete.md)
@@ -203,6 +207,8 @@
 ### [Get picture](api/dynamics_picture_get.md)
 ### [Delete picture](api/dynamics_picture_delete.md)
 ### [Update picture](api/dynamics_picture_update.md)
+## [Posted approval entry](resources/dynamics_postedapprovalentry.md)
+### [Get posted approval entry](api/dynamics_postedapprovalentry_get.md)
 ## [Project](resources/dynamics_project.md)
 ### [Get project](api/dynamics_project_get.md)
 ### [Delete project](api/dynamics_project_delete.md)
@@ -342,5 +348,6 @@
 ### [Update vendor payment journal](api/dynamics_vendorpaymentjournal_update.md)
 ## [Vendor purchase](resources/dynamics_vendorpurchase.md)
 ### [Get vendor purchase](api/dynamics_vendorpurchase_get.md)
+## [Workflow approver](resources/dynamics_workflowapprover.md)
+### [Get workflow approver](api/dynamics_workflowapprover_get.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
-

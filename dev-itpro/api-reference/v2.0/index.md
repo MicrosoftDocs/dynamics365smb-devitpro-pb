@@ -4,7 +4,7 @@ description: Reference content for the API (v2.0) endpoint for integration with 
 author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: al
-ms.date: 10/28/2024
+ms.date: 08/10/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -22,18 +22,19 @@ Before you start using the Business Central APIs, familiarize yourself with the 
 
 ## Enabling APIs
 
-Learn more about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] in [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
+APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] online are enabled by default. Learn more about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] on-premises in [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
 
+## Available APIs
+
+For a complete list of available APIs and their operations, use the table of contents.
 
 ## Extending APIs
 
 [!INCLUDE[extending_APIs_is_not_supported](../../developer/includes/include-extending-APIs-is-not-supported.md)]
 
-
 ## Transition from API v1.0 to API v2.0
 
 Learn more about transitioning from API v1.0 to API v2.0 in [Transition from API v1.0 to API v2.0](transition-to-api-v2.0.md).
-
 
 ## Related information
 

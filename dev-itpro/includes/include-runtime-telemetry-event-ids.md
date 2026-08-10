@@ -13,7 +13,7 @@
 |RT0010|Extension lifecycle|[Extension Update Failed: exception raised in extension {extensionName} by {extensionPublisher} (updating to version {extensionTargetedVersion})](../administration/telemetry-extension-update-trace.md#extension-update-failed-exception-raised-in-extension) |
 | RT0011 | Report generation | [Report cancelled but a commit occurred](../administration/telemetry-reports-trace.md#commit) | 
 | RT0012 | Performance | [Database lock timed out](../administration/telemetry-database-locks-trace.md#database-lock-timed-out) | 
-| RT0013 | Performance | [Database lock snapshot: {snapshotId}](../administration/telemetry-database-locks-trace.md#database-lock-snapshot) |
+| RT0013 | Performance | [Database lock snapshot: {snapshotId}](../administration/telemetry-database-locks-trace.md#database-lock-snapshot-entry) |
 | RT0014 | Security | [App Key Vault initialization succeeded: '{keyVaultUri}'](../administration/telemetry-extension-key-vault-trace.md#initializedsuccess) |
 | RT0015 | Security | [App Key Vault initialization failed](../administration/telemetry-extension-key-vault-trace.md#initializedfailed) |
 | RT0016 | Security | [App Key Vault secret retrieval succeeded from key vault '{keyVaultUri}'](../administration/telemetry-extension-key-vault-trace.md#retrievedsuccess) |
@@ -37,6 +37,7 @@
 |RT0034|Web service publishing| [Web service metadata error: Control element with id {metadataObjectName} has a missing name. The page with the control was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0034) |
 |RT0035|Web service publishing| [Web service metadata error: The record with name '{webserviceRecordName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0035) |
 |RT0036|Web service publishing| [Web service metadata error: Table field name error, the page contaning the field with caption '{metaFieldCaption}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0036) |
+|RT0037|Web service publishing| [Web service metadata invalid page](../administration/telemetry-api-metadata-validation-trace.md#RT0037) |
 |RT0038|Web service publishing| [Web service metadata warning: Multiple options while generation navigation property for tablerelation.](../administration/telemetry-webservices-publish-failure-trace.md#rt0038) |
 |RT0039|Web service publishing| [Web service metadata error: The record with name '{entityName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0039) |
 |RT0040|Business events| [Business event subscription created](../administration/telemetry-business-events-trace.md#RT0040) |
@@ -55,4 +56,4 @@
 |RT0053| Incoming Web service requests | [Deprecated endpoint called: {endpoint}](../administration/telemetry-webservices-trace.md#deprecated-endpoint-called-endpoint) |
 |RT0054| MCP Server | [MCP Server tool called: '{toolName}'](../administration/telemetry-mcp-server-trace.md#rt0054) |
 |RT0055|AI Consumption|[AI consumption recorded](../administration/telemetry-ai-consumption.md)|
-|RT0056|Open in Excel|[Open in Excel: {pageName}](../administration/telemetry-open-in-excel-trace.md#RT0056)|
+|RT0056|Open in Excel|[Open in Excel: {pageName}](../administration/telemetry-open-in-excel-trace.md#RT0056) |

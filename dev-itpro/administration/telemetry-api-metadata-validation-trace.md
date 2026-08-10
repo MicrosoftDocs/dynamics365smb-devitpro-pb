@@ -52,6 +52,41 @@ traces
 , environmentType = customDimensions.environmentType
 ```
 
+## <a name="RT0037"></a>API metadata invalid page
+
+This error occurs when an API page has an invalid configuration that prevents it from being exposed as an API.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Web service metadata invalid page**|
+|severityLevel|**3** (Error)|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId| [!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)] |
+|component|**Dynamics 365 Business Central Server**|
+|componentVersion| Specifies the version number of the component that emits telemetry.|
+|environmentName| [!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)] |
+|environmentType| [!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)] |
+|eventId|**RT0037**|
+
+### Sample KQL code
+
+```kql
+traces
+| where timestamp > ago(60d)
+| where customDimensions.eventId == 'RT0037'
+| project timestamp
+, message
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+```
+
 ## <a name="RT00049"></a>API metadata circular API pages
 
 Occurs when API pages have circular references through navigation properties, creating an infinite loop in the metadata hierarchy.
