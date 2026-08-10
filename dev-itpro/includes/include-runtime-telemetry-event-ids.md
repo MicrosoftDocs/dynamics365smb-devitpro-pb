@@ -37,6 +37,7 @@
 |RT0034|Web service publishing| [Web service metadata error: Control element with id {metadataObjectName} has a missing name. The page with the control was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0034) |
 |RT0035|Web service publishing| [Web service metadata error: The record with name '{webserviceRecordName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0035) |
 |RT0036|Web service publishing| [Web service metadata error: Table field name error, the page contaning the field with caption '{metaFieldCaption}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0036) |
+|RT0037|Web service publishing| [Web service metadata invalid page](../administration/telemetry-api-metadata-validation-trace.md#RT0037) |
 |RT0038|Web service publishing| [Web service metadata warning: Multiple options while generation navigation property for tablerelation.](../administration/telemetry-webservices-publish-failure-trace.md#rt0038) |
 |RT0039|Web service publishing| [Web service metadata error: The record with name '{entityName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0039) |
 |RT0040|Business events| [Business event subscription created](../administration/telemetry-business-events-trace.md#RT0040) |
