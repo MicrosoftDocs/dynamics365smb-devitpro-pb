@@ -4,7 +4,7 @@ description: A company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 08/05/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -28,6 +28,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
+|[workflowApprovers](dynamics_workflowapprover.md)|workflowApprovers|Gets the workflow approvers of the company.|
 |[items](dynamics_item.md)|items |Gets the items of the company.|
 |[inventoryPostingGroups](dynamics_inventorypostinggroup.md)|inventoryPostingGroups |Gets the inventorypostinggroups of the company.|
 |[generalProductPostingGroups](dynamics_generalproductpostinggroup.md)|generalProductPostingGroups |Gets the generalproductpostinggroups of the company.|
@@ -105,6 +106,9 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[customerContacts](dynamics_customercontact.md)|customerContacts |Gets the customercontacts of the company.|
 |[jobQueueLogEntries](dynamics_jobqueuelogentry.md)|jobQueueLogEntries |Gets the jobqueuelogentries of the company.|
 |[jobQueueEntries](dynamics_jobqueueentry.md)|jobQueueEntries |Gets the jobqueueentries of the company.|
+|[postedApprovalEntries](dynamics_postedapprovalentry.md)|postedApprovalEntries|Gets the posted approval entries of the company.|
+|[approvalEntries](dynamics_approvalentry.md)|approvalEntries|Gets the approval entries of the company.|
+|[approvalUserSetups](dynamics_approvalusersetup.md)|approvalUserSetups|Gets the approval user setups of the company.|
 |[fixedAssetLocations](dynamics_fixedassetlocation.md)|fixedAssetLocations |Gets the fixedassetlocations of the company.|
 |[fixedAssets](dynamics_fixedasset.md)|fixedAssets |Gets the fixedassets of the company.|
 |[customerSales](dynamics_customersale.md)|customerSales |Gets the customersales of the company.|
