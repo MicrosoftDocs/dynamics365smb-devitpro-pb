@@ -72,8 +72,18 @@ The AL MCP Server is a standalone process that exposes AL tools over the Model C
 
 ### Starting the server
 
+The AL MCP Server requires one or more AL project paths as arguments. You can specify a single project or multiple projects.
+
+For example, to start the server with a single AL project over STDIO:
+
 ```bash
-altool launchmcpserver --transport stdio
+altool launchmcpserver "C:\path\to\your\al-project" --transport stdio
+```
+
+For multiple projects, specify each project path as a separate argument:
+
+```bash
+altool launchmcpserver "C:\path\to\project1" "C:\path\to\project2" --transport stdio
 ```
 
 JSON-RPC traffic is exchanged on `stdout`. All diagnostic logs are written to `stderr`. The server shuts down cleanly on EOF or Ctrl+C.
