@@ -44,38 +44,28 @@ Whether to allow the user to download or print the file from the client or not.
 
 ## Remarks
 
-This method works only in Business Central online environments and supports PDF files. For on-premises environments, use [File.ViewFromStream](file-viewfromstream-method.md).  
+This method works only in Business Central on-premises environments. For online environments, use [File.ViewFromStream](file-viewfromstream-method.md).  
 
 ## Example
 
-This example shows how to use the `File.View` method to preview the **Customer - Top 10 List** report as a PDF file embedded in the client UI. 
+This example shows how to use the `File.View` method to preview a file that resides on the Business Central server on the client computer.
 
 ```al
-procedure ShowTop10CustomersReport()
+procedure ViewServerFileOnClient()
 var
-    TempBlob: Codeunit "Temp Blob";
-    MyOutStream: OutStream;
-    MyInStream: InStream;
-    FileName: Text;
+    ServerFileName: Text;
     Success: Boolean;
 begin
-    // Define the file name for the PDF
-    FileName := 'Top10Customers.pdf';
+    // Full path to a file that exists on the Business Central server computer
+    ServerFileName := 'C:\Temp\Top10Customers.pdf';
 
-    // Save the "Customer - Top 10 List" report as a PDF in the TempBlob
-    TempBlob.CreateOutStream(MyOutStream);
-    if not Report.SaveAs(Report::"Customer - Top 10 List", '', ReportFormat::Pdf, MyOutStream) then
-        Error('Failed to generate the Top 10 Customers report.');
+    // Open the file on the client computer in preview mode,
+    // allowing the user to download and print it
+    Success := File.View(ServerFileName, true);
 
-    // Create an InStream from the TempBlob
-    TempBlob.CreateInStream(MyInStream);
-
-    // Display the PDF using File.ViewFromStream
-    Success := File.ViewFromStream(MyInStream, FileName, true);
-
-    // Handle the case where the PDF could not be displayed
+    // Handle the case where the file could not be displayed
     if not Success then
-        Error('Failed to display the Top 10 Customers report.');
+        Error('Failed to display the file.');
 end;
 ```
 
