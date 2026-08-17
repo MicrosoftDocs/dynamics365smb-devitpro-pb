@@ -1,9 +1,9 @@
 ---
 title: Get started developing Connect apps for Dynamics 365 Business Central
-description: Learn how to get started developing a Connect app 
+description: Learn how to develop a Connect app for Business Central, including setting up Microsoft Entra authentication and exploring REST APIs with Insomnia.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 11/13/2024
+ms.date: 06/19/2026
 ms.topic: get-started
 ms.collection: get-started
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 # Get started developing Connect apps for [!INCLUDE [prod_long](includes/prod_long.md)]
 
-A Connect app establishes a point-to-point connection between [!INCLUDE [prod_long](includes/prod_long.md)] and a third-party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. In the following section, you can read about how you get started exploring the available APIs for [!INCLUDE [prod_long](includes/prod_long.md)].
+A Connect app creates a point-to-point connection between [!INCLUDE [prod_long](includes/prod_long.md)] and a partner solution or service. You typically use a standard REST API to interchange data. You can use any coding language that calls REST APIs to develop your Connect app. The following section explains how to get started exploring the available APIs for [!INCLUDE [prod_long](includes/prod_long.md)].
 
 [![Shows the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
 
@@ -29,9 +29,7 @@ When you have your tenant, you can sign into the UI to explore the product and t
 
 To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a list of environments](../webservices/api-get-environments.md). OAuth is required for this endpoint. 
 
-<!-- Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#explore-rest-apis-with-postman-and-microsoft-entra-authentication) section. -->
-
-<!-- In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman. -->
+The following sections explain how to set up the two types of authentication and use Insomnia to explore the APIs.
 
 APIs can also be explored through the [OpenAPI specification for Business Central](/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
@@ -54,11 +52,9 @@ Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE [p
     - When you select the **Add** button, the key value is displayed, then copy, and save the value in a safe location.
 
     > [!NOTE]  
-    > You'll need this key later to configure the project in Visual Studio. This key value won't be displayed again, nor is it retrievable by any other means, so record it as soon as it's visible from the Azure portal.
+    > You need this key later to configure the project in Visual Studio. This key value isn't displayed again, nor is it retrievable by any other means, so record it as soon as it's visible from the Azure portal.
 
-You have now set up the Microsoft Entra ID based authentication. Next, you can go exploring the APIs. 
-
-<!-- Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#explore-apis-with-postman-and-basic-authentication-only-for-on-premises) section. -->
+You set up the Microsoft Entra ID-based authentication. Next, you can explore the APIs. Learn more in the [Explore REST APIs with Insomnia and Microsoft Entra authentication](#explore-rest-apis-with-insomnia-and-microsoft-entra-authentication) section.
 
 
 ## Set up basic authentication (only for on-premises)
@@ -67,74 +63,73 @@ You have now set up the Microsoft Entra ID based authentication. Next, you can g
 
 If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Microsoft Entra ID based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Microsoft Entra ID/Oauth v2 authentication, see the section [Setting up Microsoft Entra ID based authentication](#set-up-microsoft-entra-id-based-authentication).
 
-1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
+1. To set up basic authentication, sign in to your tenant. In the **Search** field, enter **Users** and then select the relevant link.
 2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
 3. Copy the generated key and use it as the password for the username. 
 
-Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Insomnia, Bruno, or Insomnium. <!-- In the [Exploring the APIs with Postman and basic authentication](#explore-apis-with-postman-and-basic-authentication-only-for-on-premises) section, we use Postman. -->
+Now that you have the username and password, you can connect and authenticate. In the [Explore APIs with Insomnia and basic authentication](#explore-apis-with-insomnia-and-basic-authentication-only-for-on-premises) section, we use Insomnia.
 
-<!--
-## Explore REST APIs with Postman and Microsoft Entra authentication
+## Explore REST APIs with Insomnia and Microsoft Entra authentication
 
-In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with Microsoft Entra authentication.
+In this example, you go over the basic steps required to retrieve the list of customers in your trial tenant. This example uses Microsoft Entra authentication with the OAuth 2.0 Authorization Code grant.
 
-1. First, in Postman, set up a `GET` call to the base API URL.
-    - When you call the base API URL, you get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/environment name/api/v2.0`
-2. On the **Authorization** tab in Postman, select **OAuth 2.0** in the **Type** and then choose **Get New Access Token**. 
-3. In the **GET NEW ACCESS TOKEN** window, enter the following information as specified below:
-    - In the **Token name** field, choose a descriptive name.
-    - In the **Grant type** field, choose **Authorization Code**.
-    - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure portal.
-    - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
-    - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/token?resource=https://api.businesscentral.dynamics.com`.
-    - In the **Client ID** field, enter the Application ID from the registered app in Azure portal.
-    - In the **Scope** field, 
-    - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Microsoft Entra ID based authentication](#set-up-microsoft-entra-id-based-authentication).
-    - In the **Client Authentication** field, choose the **Send client credentials in body** option.
-4. Choose the **Get New Access Token** button. The first time you sign in, you get prompted for consent.
-5. Scroll down and choose **Use token** button.  
-An Authorization request header is now added containing the Bearer token.
-6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
+1. Download and install [Insomnia](https://insomnia.rest/download) (free, open-source REST client by Kong).
+2. Create a new request collection, select the **+** button, and choose **HTTP** to create a new request.
+3. In the method dropdown, select **GET** and enter the base API URL in the endpoint field:  
+   `https://api.businesscentral.dynamics.com/v2.0/<environment name>/api/v2.0`
 
-## Explore APIs with Postman and basic authentication (only for on-premises)
+   > [!TIP]  
+   > When you call the base API URL, you get a list of all the available APIs. Append `$metadata` to the URL to also get information about the fields in the APIs.
 
-In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
+4. Select the **Auth** tab and choose **OAuth 2.0** from the auth type dropdown.
+5. Set **Grant Type** to **Authorization Code** and fill in the following fields:
+   - **Authorization URL**: `https://login.microsoftonline.com/<your tenant domain>/oauth2/v2.0/authorize`
+   - **Access Token URL**: `https://login.microsoftonline.com/<your tenant domain>/oauth2/v2.0/token`
+   - **Client ID**: The Application (client) ID from the registered app in Azure portal.
+   - **Client Secret**: The key you generated and copied in step 6 in [Set up Microsoft Entra ID based authentication](#set-up-microsoft-entra-id-based-authentication).
+   - **Redirect URL**: The URL you specified as the redirect URI in the Azure portal app registration.
+6. Expand **Advanced Options** and set:
+   - **Scope**: `https://api.businesscentral.dynamics.com/.default`
+   - **Credentials**: **In Request Body**
+7. Select **Fetch Tokens**. The first time you sign in, you're prompted for consent. After authentication completes, the access token appears in the token panel.
+8. Select **Send** to execute the call. The response pane displays the list of available APIs.
 
-1. First, in Postman, set up a `GET` call to the base API URL.  
-    - When you call the base API URL, you get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
+## Explore APIs with Insomnia and basic authentication (only for on-premises)
 
-    - Since we're using basic authentication, we need to include the user's domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/<your tenant domain>/<environment name>/api/v2.0`.
-        > [!NOTE]  
-        > The parameter `<your tenant domain>` is your default Microsoft Entra ID GUID.
-    
-2. On the **Authorization** tab in Postman, select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
+In this example, you learn the basic steps to retrieve the list of customers in your trial tenant. This example uses basic authentication.
 
-3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
+1. In Insomnia, create a new HTTP request. In the method dropdown, select **GET** and enter the base API URL in the endpoint field. Since you're using basic authentication, include the user's domain in the URL:  
+   `https://api.businesscentral.dynamics.com/v2.0/<your tenant domain>/<environment name>/api/v2.0`
 
+   > [!NOTE]  
+   > The parameter `<your tenant domain>` is your default Microsoft Entra ID GUID.
+
+2. Select the **Auth** tab and choose **Basic Auth** from the auth type dropdown.
+3. Enter the **Username** and the **Web Service Access Key** (from the previous section) as the **Password**.
+4. Select **Send** to execute the call. The response pane displays the list of available APIs.
 
 ## Call an API
 
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
 ```json
-    {
-        "@odata.context": "<endpoint>/$metadata#companies",
-        "value": [
-            {
-                "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
-                "systemVersion": "18453",
-                "name": "CRONUS USA, Inc.",
-                "displayName": "CRONUS USA, Inc.",
-                "businessProfileId": ""
-            }
-        ]
-    }
+{
+    "@odata.context": "<endpoint>/$metadata#companies",
+    "value": [
+        {
+            "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
+            "systemVersion": "18453",
+            "name": "CRONUS USA, Inc.",
+            "displayName": "CRONUS USA, Inc.",
+            "businessProfileId": ""
+        }
+    ]
+}
 ```
 
 The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis `()` after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/`.
 
-All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/prodlong.md)] tenant. Therefore, it's a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the "CRONUS USA, Inc." company, we must call a GET on the URL `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/customers`.
--->
+All resources, such as customers and invoices, exist in the context of a parent company. The [!INCLUDE[prod_long](includes/prod_long.md)] tenant can have more than one parent company. You must provide the company ID in the URL for all resource API calls. To get all customers in the "CRONUS USA, Inc." company, you must call a GET on the URL `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/customers`.
 
 ## Related information
 

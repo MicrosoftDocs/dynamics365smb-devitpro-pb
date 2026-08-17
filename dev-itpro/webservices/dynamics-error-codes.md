@@ -16,7 +16,6 @@ When troubleshooting failed REST API/OData calls, you have many tools/techniques
 - Telemetry 
 - HTTP status codes 
 - OData error codes 
-<!-- - Postman -->
 - AL debugger 
 
 ## Troubleshoot failed REST API/OData calls with telemetry
@@ -26,7 +25,7 @@ When troubleshooting failed REST API/OData calls, you have many tools/techniques
 > [!TIP]
 > The custom dimension *category* holds information about the type of endpoint (REST API, OData, or SOAP) being called. 
 
-For more information about web services telemetry (including KQL code samples), see [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md).
+Learn more in [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md).
 
 
 ## Troubleshoot failed REST API/OData calls with HTTP status codes
@@ -35,7 +34,7 @@ When you call a web service endpoint, either a [!INCLUDE[prod_short](../includes
 
 [!INCLUDE[on-prem-ws-off-405-note](../includes/include-on-prem-ws-off-405-note.md)]
 
-For more information, see [Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md#http-status-codes).
+Learn more in [Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md#http-status-codes).
 
 
 ## Error messages and error codes for REST API/OData failures
@@ -49,7 +48,6 @@ If a call to a REST API or OData endpoint fails, the [!INCLUDE[prod_short](../in
 |Authorization_*|The authenticated identity doesn't have the correct permissions.|Attempt operation using different credentials.|
 |Internal_*|Typically the error is an internal error in the application on the server or data integrity issue. For example, the [!INCLUDE[prod_short](../includes/prod_short.md)] server can't communicate with the SQL Server.|Attempt the operation again. Resolve data issues. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
 |Application_*|Typically an application logic error.|Request is made again with updated data. Use the information provided by the AL runtime exception to learn more about the nature of the error.|
-
 
 The following table explains how the OData error codes/messages translate to exceptions thrown by the AL runtime. The same OData error code appears multiple times in the table, each entry with a different AL runtime exception type. The OData error code tells you the type of error as seen from the OData layer, whereas the exception type tells you more about the root cause of the error as seen from the AL runtime.
 
@@ -73,7 +71,7 @@ The following table explains how the OData error codes/messages translate to exc
 |NavCSideValidateTableRelationException |Internal_InvalidTableRelation|The field Account No. of table Gen. Journal Line contains a value (ABL001)<br> that cannot be found in the related table (Vendor).|
 |NavCSideException                      |Internal_ServerError|Cannot establish a connection to the SQL Server/Database. |
 |NavCSideDuplicateKeyException          |Internal_EntityWithSameKeyExists|The Attachment Entity Buffer already exists. <br>Identification fields and values: Document Id=<br>'{DAC3AB2F-5FEA-4AD2-A663-EF832F270A7B}',Id='<br>{00000000-0000-0000-0000-000000000000}' |
-|NavCompanyNotFoundException            |Internal_CompanyNotFound|Cannot process the request because the default company cannot be found. <br>You can specify a default company in the service configuration file, <br>or specify one for each tenant, or you can add a query string in the form of "company=[name]". <br>You can see the available companies by accessing the default OData web service, Company. <br>For more information, see "OData Web Services" in Help|
+|NavCompanyNotFoundException            |Internal_CompanyNotFound|Can't process the request because the default company can't be found. <br>You can specify a default company in the service configuration file, <br>or specify one for each tenant, or add a query string in the form of `company=[name]`. <br>You can see the available companies by accessing the default OData web service, Company. <br>Learn more about "OData Web Services" in Help|
 |NavTenantNotAccessibleException        |Internal_TenantUnavailable|The tenant 'msca1a7355t05263373' is not accessible|
 |NavNCLDialogException                  |Application_DialogException|You cannot delete Item 1000 because there is at least one <br>outstanding Sales Quote that includes this item.|
 |NavNCLDialogException                  |Application_DialogException| A customerNumber or a customerID must be provided.|
@@ -90,31 +88,30 @@ The following table explains how the OData error codes/messages translate to exc
 |NavInvalidCredentialException          |Authentication_InvalidCredentials|The server has rejected the client credentials|
 |Any                                    |Unknown|Any|
 
-
 ## Debugging code called from a web service endpoint
 
-This article is covered in the general troubleshooting guide for web services. For more information, see [Debugging code called from a web service endpoint](web-service-troubleshooting.md#debugging-code-called-from-a-web-service-endpoint).
+This article is covered in the general troubleshooting guide for web services. Learn more in [Debugging code called from a web service endpoint](web-service-troubleshooting.md#debugging-code-called-from-a-web-service-endpoint).
 
 ## Explore REST APIs with an API explorer
 
-There are tools available for exploring and testing REST APIs. When troubleshooting API issues, consider using a tool, such as Insomnia, Bruno, or Insomnium to interact with the API endpoint to "debug" the API as seen from the web service client point of view. This technique is particularly useful if you are not allowed to debug the AL code for the API endpoint.
-<!--
-For more information, see [Explore REST APIs with Postman and Microsoft Entra authentication](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication). -->
+You can use tools to explore and test REST APIs. When troubleshooting API issues, consider using a tool such as Insomnia, Bruno, or Insomnium to interact with the API endpoint. By using this approach, you can "debug" the API as seen from the web service client point of view. This technique is useful if you can't debug the AL code for the API endpoint.
+
+Learn more in [Explore REST APIs with Insomnia and Microsoft Entra authentication](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-insomnia-and-microsoft-entra-authentication).
 
 
 ## Which IP addresses or ranges does my environment use?
 
-This article is covered in the general troubleshooting guide for web services. For more information, see [Which IP addresses or ranges does my environment use?](web-service-troubleshooting.md#which-ip-addresses-or-ranges-does-my-environment-use).
+This article is covered in the general troubleshooting guide for web services. Learn more in [Which IP addresses or ranges does my environment use?](web-service-troubleshooting.md#which-ip-addresses-or-ranges-does-my-environment-use).
 
 
 ## It works in my sandbox but not in production
 
-This article is covered in the general troubleshooting guide for web services. For more information, see [It works in my sandbox but not in production](web-service-troubleshooting.md#it-works-in-my-sandbox-but-not-in-production).
+This article is covered in the general troubleshooting guide for web services. Learn more in [It works in my sandbox but not in production](web-service-troubleshooting.md#it-works-in-my-sandbox-but-not-in-production).
 
 
 ## Related information
 
-<!-- [Explore REST APIs with Postman](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-postman-and-microsoft-entra-authentication) -->
+[Explore REST APIs with Insomnia](../developer/devenv-develop-connect-apps.md#explore-rest-apis-with-insomnia-and-microsoft-entra-authentication)  
 [Troubleshoot web service errors](web-service-troubleshooting.md)  
 [Web service performance](web-service-performance.md)  
 [Analyzing incoming web services request telemetry](../administration/telemetry-webservices-trace.md)  
