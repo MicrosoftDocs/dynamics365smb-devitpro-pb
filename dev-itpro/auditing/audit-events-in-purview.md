@@ -1,10 +1,10 @@
 ---
 title: Auditing events in Microsoft Purview
-description: Get an overview of the signals Business Central emits to Microsoft Purview.
+description: Discover how Business Central automatically emits Create, Update, and Delete events to Microsoft Purview auditing solutions.
 author: jobulsin
 ms.reviewer: jswymer
 ms.topic: concept-article
-ms.date: 03/27/2026
+ms.date: 07/07/2026
 ms.author: jobulsin
 ---
 
@@ -12,11 +12,13 @@ ms.author: jobulsin
 
 [!INCLUDE[online_only](../developer/includes/online_only.md)]
 
-Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit auditable events to [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. For [!INCLUDE[prod_short](../developer/includes/prod_short.md)], this means that Create, Update, and Delete events that require administrator privileges are emitted to Purview's unified audit log, aiding security, legal, and compliance investigation across all Microsoft services used in your organization.
+Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit auditable events to [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). 
+
+Microsoft Purview auditing solutions provide an integrated solution to help organizations respond to security events, forensic investigations, internal investigations, and compliance obligations. Create, Update, and Delete events that require administrator privileges are emitted to Purview's unified audit log, enabling security, legal, and compliance investigation across all Microsoft services in your organization.
 
 [!INCLUDE[audit_authentication_to_telemetry_tip](../includes/audit_authentication_to_telemetry_tip.md)]
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all events listed below to Microsoft Purview auditing solutions. Purview auditing solutions may be enabled automatically on your tenant depending on your Microsoft 365 subscription. Learn more about enabling or disabling Purview auditing solutions on your tenant in  [Turn auditing on or off](/purview/audit-log-enable-disable) in the Microsoft Purview documentation.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all the following events to Microsoft Purview auditing solutions. Purview auditing solutions can be enabled automatically on your tenant depending on your Microsoft 365 subscription. Learn more about enabling or disabling Purview auditing solutions on your tenant in  [Turn auditing on or off](/purview/audit-log-enable-disable) in the Microsoft Purview documentation.
 
 ## Schema overview
 
@@ -27,7 +29,7 @@ Every event emitted to Purview auditing solutions uses the [common schema](/offi
 |BcEnvironmentName|The name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment|False|Edm.String|
 |BcEnvironmentType|The type of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (that is, Production or Sandbox)|False|Edm.String|
 |BcCompanyName|The name of the company in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment|False|Edm.String|
-|BcCustomDimensions|Contains dynamic values based on the emitted event, see details for each event below|False|Edm.ComplexType|
+|BcCustomDimensions|Contains dynamic values based on the emitted event. See details for each event in the follwoing table|False|Edm.ComplexType|
 |BcOperationName|The name of the operation for which the log was emitted|True|Edm.String|
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] events emitted to Purview are categorized as events and activities; events are high-level and are parents to the more specific activities.
@@ -45,7 +47,7 @@ Every event emitted to Purview auditing solutions uses the [common schema](/offi
 
 ## Administered environment activities
 
-Activities listed in the table below can be audited by filtering to the `Administered environment` event.
+Activities listed in the following table can be audited by filtering to the `Administered environment` event.
 
 <table>
     <thead>
@@ -213,7 +215,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td></td>
         </tr>
         <tr>
-            <td>Cancelled Session</td>
+            <td>Canceled Session</td>
             <td>sessionId</td>
             <td>12345</td>
         </tr>
@@ -244,7 +246,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>EnvironmentName</td>
         </tr>
         <tr>
-            <td>Cancelled Environment Transfer Request</td>
+            <td>Canceled Environment Transfer Request</td>
             <td></td>
             <td></td>
         </tr>
@@ -327,7 +329,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
 
 ## Configured extension activities
 
-Activities listed in the table below can be audited by filtering to the `Configured extension` event.
+Activities listed in the following table can be audited by filtering to the `Configured extension` event.
 
 <table>
     <thead>
@@ -398,7 +400,7 @@ Activities listed in the table below can be audited by filtering to the `Configu
             <td>true</td>
         </tr>
         <tr>
-            <td rowspan=2>Cancelled Global App Update</td>
+            <td rowspan=2>Canceled Global App Update</td>
             <td>appId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -562,12 +564,56 @@ Activities listed in the table below can be audited by filtering to the `Configu
             <td>isNewPermissionSet</td>
             <td>True</td>
         </tr>
+        <tr>
+            <td rowspan=7>Uploaded Per-Tenant Extension (PTE) <sup>[1]</sup></td>
+            <td>FileName</td>
+            <td>HelloWorld.app</td>
+        </tr>
+        <tr>
+            <td>DeploymentSchedule</td>
+            <td>NextMajor</td>
+        </tr>
+        <tr>
+            <td>SyncMode</td>
+            <td>Add</td>
+        </tr>
+        <tr>
+            <td>LanguageId</td>
+            <td>en-us</td>
+        </tr>
+        <tr>
+            <td>AcceptIsvEula</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AppVersion</td>
+            <td>1.0.0.0</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Removed Scheduled PTE Version <sup>[1]</sup></td>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>TargetVersion</td>
+            <td>2.0.0.0</td>
+        </tr>
+        <tr>
+            <td>ScheduleKind</td>
+            <td>NextMajor</td>
+        </tr>
     </tbody>
 </table>
 
+<sup>[1]</sup> The admin center and its API emit these signals only for PTE operations. For more information, see [Managing Apps](../administration/tenant-admin-center-manage-apps.md).
+
 ## Administered user activities
 
-You can audit the activities in the table below by filtering to the `Administered user` event.
+You can audit the activities in the following table by filtering to the `Administered user` event.
 
 <table>
     <thead>
@@ -579,7 +625,7 @@ You can audit the activities in the table below by filtering to the `Administere
     </thead>
     <tbody>
         <tr>
-            <td rowspan=7>The tenant [TenantPermission] permission for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] has been updated with the value: "[Value]", by the UserSecurityId [UserSecurityId]</td>
+            <td rowspan=7>The tenant [TenantPermission] permission for the App ID [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] has been updated with the value: "[Value]", by the UserSecurityId [UserSecurityId]</td>
             <td>TenantPermission</td>
             <td>READ</td>
         </tr>
@@ -608,7 +654,7 @@ You can audit the activities in the table below by filtering to the `Administere
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=5>The Read permission for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been granted by the UserSecurityId [UserSecurityId]</td>
+            <td rowspan=5>The Read permission for the App ID [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been granted by the UserSecurityId [UserSecurityId]</td>
             <td>AppId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -629,7 +675,7 @@ You can audit the activities in the table below by filtering to the `Administere
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=10>The tenant permissions for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been inserted with the following values - Read "[Read]", Insert "[Insert]", Modify "[Modify]", Delete "[Delete]" and Execute "[Execute]" by the UserSecurityId [UserSecurityId]</td>
+            <td rowspan=10>The tenant permissions for the App ID [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been inserted with the following values - Read "[Read]", Insert "[Insert]", Modify "[Modify]", Delete "[Delete]" and Execute "[Execute]" by the UserSecurityId [UserSecurityId]</td>
             <td>AppId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -827,9 +873,9 @@ You can audit the activities in the table below by filtering to the `Administere
 
 ## Administered company activities
 
-You can audit the activities in the table below by filtering to the `Administered company` event.
+You can audit the activities in the following table by filtering to the `Administered company` event.
 
-Events in the table below are emitted with custom dimensions.
+Events in the following table are emitted with custom dimensions.
 <table>
     <thead>
         <tr>
@@ -867,7 +913,7 @@ Events in the table below are emitted with custom dimensions.
 </table>
 
 
-Events in the table below are emitted with message parameters.
+Events in the following table are emitted with message parameters.
 <table>
     <thead>
         <tr>
@@ -992,9 +1038,9 @@ Events in the table below are emitted with message parameters.
 
 ## Configured integration activities
 
-You can audit the activities in the table below by filtering to the `Configured integration` event.
+You can audit the activities in the following table by filtering to the `Configured integration` event.
 
-Events in the table below are emitted with custom dimensions.
+Events in the following table are emitted with custom dimensions.
 <table>
     <thead>
         <tr>
@@ -1215,7 +1261,7 @@ Events in the table below are emitted with message parameters.
 
 ## Configured Copilot activities
 
-You can audit the activities in the table below by filtering to the `Configured Copilot` event.
+You can audit the activities in the following table by filtering to the `Configured Copilot` event.
 
 <table>
     <thead>
@@ -1370,7 +1416,7 @@ You can audit the activities in the table below by filtering to the `Configured 
 
 ## Configured cloud migration activities
 
-You can audit the activities in the table below by filtering to the `Configured cloud migration` event.
+You can audit the activities in the following table by filtering to the `Configured cloud migration` event.
 
 <table>
 <thead><tr><th>Activity</th><th>Custom dimensions</th><th>Sample value</th></tr></thead>
@@ -1419,7 +1465,7 @@ You can audit the activities in the table below by filtering to the `Configured 
 <td rowspan="4">Cloud migration setup disabled by UserSecurityId [UserSecurityId].</td>
 <td>Category</td><td>Cloud Migration</td></tr>
 <tr>
-<td>DisabledReasonDescription</td><td>User cancelled migration</td></tr>
+<td>DisabledReasonDescription</td><td>User canceled migration</td></tr>
 <tr>
 <td>DisabledReason</td><td>Abandoned</td></tr>
 <tr>
@@ -1466,7 +1512,7 @@ You can audit the activities in the table below by filtering to the `Configured 
 
 ## Administered report activities
 
-You can audit the activities in the table below by filtering to the `Administered report` event.
+You can audit the activities in the following table by filtering to the `Administered report` event.
 
 <table>
     <thead>

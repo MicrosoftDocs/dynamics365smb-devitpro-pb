@@ -5,11 +5,11 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
-ms.date: 10/14/2025
+ms.date: 07/28/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Exporting databases in the admin center
+# Export databases in the admin center
 
 From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environments as BACPAC files to an Azure storage container.
 
@@ -17,24 +17,24 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 
 - You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. Learn more in the [Users who can export databases](#users-who-can-export-databases) section.
-- You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
-- You can export the database of an environment that's encrypted with a [customer-managed encryption key](../security/security-online.md#customer-managed-encryption-key). The bacpac files in the storage account are encrypted with the [encryption key applied to the storage account](/azure/storage/common/customer-managed-keys-overview), not the environment's encryption key.
+- You can't export your database to an Azure premium storage account. The steps in this article only support Azure standard storage accounts.
+- You can export the database of an environment that's encrypted with a [customer-managed encryption key](../security/security-online.md#customer-managed-encryption-key). The BACPAC files in the storage account are encrypted with the [encryption key applied to the storage account](/azure/storage/common/customer-managed-keys-overview), not the environment's encryption key.
 
 > [!NOTE]
 > For each environment, you can export the database a maximum of 10 times per month. You can see the number of exports still remaining for the current month in the **Create Database Export** pane when creating the export file.
 
-## Setting up Azure storage
+## Set up Azure storage
 
 Before you can export the file, set up the Azure storage account container that the BACPAC file. 
 
-### Creating the storage account
+### Create the storage account
 
 The first step is to create a **Standard general-purpose v2** Azure storage account, if you don't already have one. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure portal](https://portal.azure.com).
 
 > [!IMPORTANT]
 > Exporting an environment database to a storage account that isn't a **Standard general-purpose v2** Azure storage account, such as V1 or Premium storage accounts, isn't supported.
 
-For more information setting up an Azure storage account, see [Create a storage account](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
+Learn more about setting up an Azure storage account in [Create a storage account](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
 
 ### Generating a shared access signature (SAS)
 
@@ -45,11 +45,11 @@ The next step is to generate a shared access signature (SAS) that provides secur
 1. On the Azure storage account, choose **Shared access signature** in the navigation pane.
 1. In the **Allowed services** section of the shared access signature pane, select **Blob**, and clear the other options.
 1. In the **Allowed resource types** section, select **Container** and **Object**, and clear the other options.
-1. In the **Allowed permissions** section, mark **Read**, **Write**, **Delete**, and **Create**, and clear the other options.
-1. Select a start and end date and time for the SAS. A minimum expiration window of 72 hours from the initiation of the export is required.
+1. In the **Allowed permissions** section, select **Read**, **Write**, **Delete**, and **Create**, and clear the other options.
+1. Select a start and end date and time for the SAS. The SAS requires a minimum expiration window of 72 hours from the initiation of the export.
 
     > [!TIP]
-    > It's a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation. However, the SAS must be valid for a minimum of 72 hours.
+    > Use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what you need to complete the database export operation. However, the SAS must be valid for a minimum of 72 hours.
 
 1. In the **Allowed protocols** section, select **HTTPS only**.
 1. Select **Generate SAS and connection string**.
@@ -59,31 +59,27 @@ For more information on generating and using a SAS, see [Grant limited access to
 
 ## Creating the database export
 
-After you created the Azure storage account and generated the SAS URI, you can then create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+After you create the Azure storage account and generate the SAS URI, you can create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 1. On the **Environments** list page, choose the relevant environment to view the environment details.
 1. On the action ribbon of the environment details, choose **Database**, and then choose **Create Database Export**.
-1. In the **File Name** field, specify a name for the export file, or leave the default value.
-1. In the **SAS URI** field, specify the **Blob service SAS URL** value that you copied in the previous section.
-1. In the **Container Name** field, enter the name of the container in the Azure storage account to which you want the BACPAC file exported. If you already created a container in your Azure storage account, enter the name of that container here. Otherwise, if the name specified in the **Container Name** field doesn't exist in the Azure storage account, it's created for you.
+1. In the **File Name** field, enter a name for the export file, or accept the default value.
+1. In the **SAS URI** field, enter the **Blob service SAS URL** value that you copied in the previous section.
+1. In the **Container Name** field, enter the name of the container in the Azure storage account where you want to export the BACPAC file. If you already created a container in your Azure storage account, enter the name of that container. Otherwise, if the name you specify in the **Container Name** field doesn't exist in the Azure storage account, the portal creates it for you.
 
-Once the export operation begins, the BACPAC file is generated and exported to the indicated Azure storage account. The operation might take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export completes, you can access the export file in the defined container in your Azure storage account. Optionally, you can import the data into a new database in Azure SQL Database or SQL Server for further processing. Learn more in [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import).  
+When the export operation starts, the BACPAC file is generated and exported to the specified Azure storage account. The operation might take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export finishes, you can access the export file in the defined container in your Azure storage account. Optionally, you can import the data into a new database in Azure SQL Database or SQL Server for further processing. Learn more in [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import).    
 
 ## Viewing the export history
 
-All database export activity is logged for auditing purposes. To view the history, choose **Database**, then choose **View Export History** on the environment details page of the environment.
+The system logs all database export activity as environment operation for progress tracking and auditing purposes. To view the history, go to the **Operations** page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 ## Users who can export databases
 
-Permission to export databases is limited to specific types of users: internal and delegated administrators. The following users are allowed to export databases.
+Only specific types of users can export databases: internal and delegated administrators. The following users can export databases.
 
-- Delegated administrators from reselling partners
+In addition to an Entra role that grants access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
 
-- Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
-
-Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
-
-For more information about permissions sets and user groups, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
+Learn more about permission sets and user groups in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
 
 ## Using the exported data
 
@@ -98,11 +94,11 @@ Learn more in [Quickstart: Import a BACPAC file to a database in Azure SQL Datab
 
 > [!NOTE]
 > - If you're getting an error saying your file contains corrupted data when importing the bacpac file, make sure you're using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
-> - When importing the exported database using SQL Server Management Studio (SSMS), we recommend using latest version. Earlier versions might not support all scenarios. Learn how to update SSMS in [Update SQL Server Management Studio](/ssms/install/update).
+> - When importing the exported database by using SQL Server Management Studio (SSMS), use the latest version. Earlier versions might not support all scenarios. Learn how to update SSMS in [Update SQL Server Management Studio](/ssms/install/update).
 
 ## Restoring the exported data to Business Central online
 
-If you decide at some point that you want to restore the exported data to a new environment in [!INCLUDE [prod_short](../includes/prod_short.md)] online, then you must go through the same steps as you went through to migrate from on-premises to [!INCLUDE [prod_short](../includes/prod_short.md)] online. This way, you can prepare the database so that it's ready to migrate to the latest version of [!INCLUDE [prod_short](../includes/prod_short.md)]. For example, you could choose to replicate the data to a sandbox environment for further testing and training. Learn more in [Migrating on-premises data to Business Central online](migrate-data.md).  
+If you decide at some point that you want to restore the exported data to a new environment in [!INCLUDE [prod_short](../includes/prod_short.md)] online, you must go through the same steps as you went through to migrate from on-premises to [!INCLUDE [prod_short](../includes/prod_short.md)] online. This way, you can prepare the database so that it's ready to migrate to the latest version of [!INCLUDE [prod_short](../includes/prod_short.md)]. For example, you could choose to replicate the data to a sandbox environment for further testing and training. Learn more in [Migrating on-premises data to Business Central online](migrate-data.md).  
 
 ## Restoring the exported data to a container
 

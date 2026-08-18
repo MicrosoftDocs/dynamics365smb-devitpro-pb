@@ -1,10 +1,10 @@
 ---
 title: extensionUpload resource type
-description: An extension upload object in Dynamics 365 Business Central.
+description: Learn how the extensionUpload resource type works in Business Central. Review methods, the upload bound action, and properties for managing per-tenant extensions.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 07/07/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -16,8 +16,9 @@ ms.reviewer: solsen
 Represents an extension upload in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
+> Learn about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] in [Enabling the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
+[!INCLUDE[admin-install-pte-note](../../includes/admin-install-pte-note.md)]
 
 ## Methods
 
@@ -29,8 +30,8 @@ Represents an extension upload in [!INCLUDE[d365fin_long_md](../../includes/d365
 
 ## Bound Actions
 
-The extensionUpload resource type offers a bound action called `upload` which uploads the corresponding extensionUpload batch.
-This is illustrated in the following example:
+The extensionUpload resource type offers a bound action called `upload` that uploads the corresponding extensionUpload batch.
+This action is illustrated in the following example:
 `POST https://<server address>:<server API port>/<server instance name>/api/microsoft/automation/v2.0/companies({id})/extensionUpload({id})/Microsoft.NAV.upload`
 
 The response has no content; the response code is 204.
