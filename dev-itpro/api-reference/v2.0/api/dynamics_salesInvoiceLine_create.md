@@ -6,7 +6,7 @@ author: SusanneWindfeldPedersen
 
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 08/17/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -106,6 +106,83 @@ Content-type: application/json
     "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
+
+## Create a new sales invoice with a line by using deep insert
+
+If you need to create a new sales invoice together with one line, use a deep insert on [Create salesInvoices](dynamics_salesInvoice_create.md). Send the header fields and one nested `salesInvoiceLines` entry in one `POST` request.
+
+Deep insert and `$batch` are complementary:
+
+- Use deep insert to create a new invoice and one line in one atomic request. No batch envelope is required.
+- Use `$batch` to add multiple lines to an existing invoice or combine multiple operations in one transactional request.
+
+**Request**
+
+```json
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesInvoices
+Content-type: application/json
+
+{
+    "customerNumber": "20000",
+    "salesInvoiceLines": [
+        {
+            "lineType": "Item",
+            "lineObjectNumber": "1928-S",
+            "quantity": 3
+        }
+    ]
+}
+```
+
+A successful request returns `201 Created` and the created `salesInvoices` object.
+
+## Add multiple lines to an existing sales invoice by using $batch
+
+If the sales invoice already exists, use an [OData transactional `$batch` request](../../../webservices/use-odata-batch.md) to add multiple lines in a single HTTP call. This pattern is also useful when you need one transactional request that combines different operations.
+
+**Request**
+
+```json
+POST https://{businesscentralPrefix}/api/v2.0/$batch
+Content-type: application/json
+Isolation: snapshot
+
+{
+    "requests": [
+        {
+            "method": "POST",
+            "id": "1",
+            "url": "companies({id})/salesInvoices({salesInvoiceId})/salesInvoiceLines",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "body": {
+                "lineType": "Item",
+                "lineObjectNumber": "1928-S",
+                "quantity": 3,
+                "shipmentDate": "2024-04-15"
+            }
+        },
+        {
+            "method": "POST",
+            "id": "2",
+            "url": "companies({id})/salesInvoices({salesInvoiceId})/salesInvoiceLines",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "body": {
+                "lineType": "Item",
+                "lineObjectNumber": "1936-S",
+                "quantity": 6,
+                "shipmentDate": "2024-04-15"
+            }
+        }
+    ]
+}
+```
+
+> [!TIP]
+> The `Isolation: snapshot` header ensures that if any line fails validation, all changes in the batch are rolled back. Learn more in [Using OData transactional $batch requests](../../../webservices/use-odata-batch.md).
 
 ## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
