@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 03/31/2025
+ms.date: 07/07/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: sfi-image-nochange
@@ -36,7 +36,7 @@ When a link exists between a [!INCLUDE[prod_short](../developer/includes/prod_sh
 To complete this task, you need to be an internal admin with a role that grants access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and permissions to update the properties of the targeted Power Platform environment, such as environment administrator.
 
 > [!IMPORTANT]
-> Users with an admin Entra role assigned may not automatically gain the environment administrator role on the Power Platform environment. If the Power Platform environment does not show up as available to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to, verify that you are an Environment Admin for the Power Platform environment. For more information, go to [Role-based security roles](/power-platform/admin/database-security).
+> Users with an admin Microsoft Entra role assigned might not automatically gain the environment administrator role on the Power Platform environment. If the Power Platform environment doesn't show up as available to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to, verify that you're an Environment Admin for the Power Platform environment. For more information, go to [Role-based security roles](/power-platform/admin/database-security).
 
 1. Sign in to the Business Central admin center and open the environment.
 1. In the **Linked Power Platform Environment** section on the environment page, select **Link** under **Environment** or **Modify** to change to another Power Platform environment.
@@ -76,7 +76,7 @@ You can create different types of environments. Choose the type of environment b
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
-### Pre-sales performance evaluation
+### Presales performance evaluation
 
 [!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
@@ -100,7 +100,7 @@ You can create new environments that are either production environments or sandb
 1. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
 
    > [!TIP]
-   > To create a sandbox environment that's based on the Business Central W1 (non-localized) version, choose a country that uses the W1 BaseApp, as indicated in the [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md) article.
+   > To create a sandbox environment that's based on the Business Central W1 (nonlocalized) version, choose a country that uses the W1 BaseApp, as indicated in the [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md) article.
 
 1. In the **Version** list, specify the relevant application version for the new environment.
 
@@ -138,10 +138,10 @@ Currently, the log includes the following operations:
 |Rename environment|Environment was renamed.|[Rename environments](tenant-admin-center-environments-rename.md)|[Rename environment](administration-center-api_environments.md#rename-environment)||
 |Restart environment|Environment was restarted|[Restart environment](tenant-admin-center-manage-sessions.md#restart-environment)||
 |Update environment|An environment is updated to a newer version.|[Managing updates](tenant-admin-center-update-management.md)|[Environment settings](administration-center-api_environment_settings.md)|
-|Environment app hotfix|A hotfix was applied to the app by using the App Management API.||[Schedule environment hotfix](appmanagement/app-management-api.md#schedule-environment-hotfix)||
-|Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.||[Install an app](administration-center-api_app_management.md#install-an-app)|[Install and uninstall extensions](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
-|Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.||[Uninstall an app](administration-center-api_app_management.md#uninstall-an-app)|[Install and uninstall extensions](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
-|Environment app update |App was updated by the Admin Center or API update endpoint.|[Install an app update](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[Update an app](administration-center-api_app_management.md#update-an-app)||
+|Environment app hotfix|A hotfix was applied to an app.||[Schedule environment hotfix](appmanagement/app-management-api.md#schedule-environment-hotfix)||
+|Environment app install|App was installed.||[Install an app](administration-center-api_app_management.md#install-a-global-app)|[Install and uninstall extensions](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
+|Environment app uninstall|App was uninstalled.||[Uninstall an app](administration-center-api_app_management.md#uninstall-an-app)|[Install and uninstall extensions](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
+|Environment app update |App was updated to new version.|[Install an app update](tenant-admin-center-manage-apps.md#update-installed-apps-with-environment-updates)|[Update an app](administration-center-api_app_management.md#update-a-global-app)||
 
 ### Retention period
 
