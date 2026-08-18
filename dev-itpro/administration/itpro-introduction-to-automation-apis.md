@@ -214,6 +214,9 @@ Authorization: Bearer {token}
 
 ### Upload and install a per-tenant extension
 
+[!INCLUDE[admin-install-pte-note](../includes/admin-install-pte-note.md)]
+
+
 Use **extensionUpload** endpoint to upload and install the extension.
 
 > [!NOTE]  

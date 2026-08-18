@@ -25,6 +25,12 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint.<br><br>Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. A Microsoft page is a page that is created in an app with the publisher Microsoft. Therefore, this change is relevant for any page from any app with the publisher Microsoft (for example, Base Application, System Application, every first party app).<br><br>If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in an extension/app. |
 
+### Remove ability to upload and install PTEs from Extension Management page (replacement)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Uploading and installing per-tenant extensions (PTEs) from the **Extension Management** page inside a Business Central environment by using the **Extension Management** page or **Automation API** is being phased out. As of the 2026 release wave 1, administrators of SaaS environments should use the [Business Central Admin Center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps) or the [Admin Center API](/dynamics365/business-central/dev-itpro/administration/administration-center-api_app_management) to upload, install, schedule, and uninstall PTEs. The **Extension Management** page remains available for viewing installed extensions. It's expected to be removed as an upload surface in 2027 release wave 1. Plan to move tenant deployment workflows and any automation that depends on this page to the Admin Center or its API. Administrators of OnPrem environments should use the [Microsoft.Dynamics.Nav.Apps.Management Module](https://learn.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/?view=businesscentral-ps-23) to administer PTEs.|
+
 ## Changes in 2026 release wave 2 (version 29.0)
 
 ### Expose a Microsoft page as a SOAP endpoint (removal)
@@ -73,7 +79,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 26, this is no longer possible. |
+|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 26, this operation is no longer possible. |
 
 ## Changes in 2024 release wave 2 (version 25.0)
 
@@ -89,7 +95,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced | As part of our move to .NET Core, we've converted the following Business Central administration modules from PowerShell 5 to PowerShell 7: Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll. The PowerShell 7 modules are renamed with the prefix `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav` and are located in the new **Admin** folder of the Business Central Server installation.<br><br> For those who aren't ready to use PowerShell 7, we've included a Windows PowerShell 5 compatibility layer module that consolidates the cmdlets/functions of all three modules into a single module that can run with PowerShell 5. The PowerShell 5 compatibility layer module is called Microsoft.Dynamics.Nav.Management.dll, and it's installed side-by-side with the new PowerShell 7 modules as a part of Business Central Server installation except in the **Management** folder. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility).<br><br> We highly recommend that you use the PowerShell 7 modules instead PowerShell 5 compatibility module because they'll give you the best performance. If PowerShell 7 is installed on your device, the PowerShell 7 modules are used by default by selecting **Business Central Administration Shell** in the **Start** menu or by running the NavAdminTool.ps1 script.<br><br> The Windows PowerShell 5 compatibility layer module is planned for removal and won't receive any new functionality added in the new PowerShell 7 modules in the meantime.<br><br>This change affects server management in Business Central on-premises and container-based environments. Learn more in [Business Central admin shell](../administration/administration-shell.md) and [Running a container-based development environment](../developer/devenv-running-container-development.md).|
+|Replaced | As part of our move to .NET Core, we've converted the following Business Central administration modules from PowerShell 5 to PowerShell 7: Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll. The PowerShell 7 modules are renamed with the prefix `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav` and are located in the new **Admin** folder of the Business Central Server installation.<br><br> If you aren't ready to use PowerShell 7, we've included a Windows PowerShell 5 compatibility layer module that consolidates the cmdlets/functions of all three modules into a single module that can run with PowerShell 5. The PowerShell 5 compatibility layer module is called Microsoft.Dynamics.Nav.Management.dll, and it's installed side-by-side with the new PowerShell 7 modules as a part of Business Central Server installation except in the **Management** folder. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility).<br><br> We highly recommend that you use the PowerShell 7 modules instead PowerShell 5 compatibility module because they give you the best performance. If PowerShell 7 is installed on your device, the PowerShell 7 modules are used by default by selecting **Business Central Administration Shell** in the **Start** menu or by running the NavAdminTool.ps1 script.<br><br> The Windows PowerShell 5 compatibility layer module is planned for removal and won't receive any new functionality added in the new PowerShell 7 modules in the meantime.<br><br>This change affects server management in Business Central on-premises and container-based environments. Learn more in [Business Central admin shell](../administration/administration-shell.md) and [Running a container-based development environment](../developer/devenv-running-container-development.md).|
 
 ### <a name="schemaversion"></a>Schema version for custom APIs (changed default)
 
@@ -107,7 +113,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | For Business Central installations on-premises, it's possible to control many server settings. Two of these control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
+|Removed | For Business Central installations on-premises, it's possible to control many server settings. Two of these settings control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
 
 ### <a name="soap-on-baseapp-pages"></a>Expose a Microsoft page as SOAP endpoint (warning)
 
@@ -128,7 +134,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | For Business Central installations on-premises, it's possible to control many server settings. Two of these control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
+|Removed | For Business Central installations on-premises, it's possible to control many server settings. Two of these settings control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
 
 
 ### <a name="schemaversion"></a>Schema version for custom APIs (warning)

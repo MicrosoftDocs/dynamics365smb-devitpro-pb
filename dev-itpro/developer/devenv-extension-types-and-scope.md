@@ -1,8 +1,8 @@
 ---
 title: Extension types and scope
-description: Describes the different types of extensions for Business Central and how broad their scope is.
+description: "Extension types for Business Central explained: global apps, per-tenant extensions, and DEV extensions. Learn how scope and environment affect each type."
 ms.author: solsen
-ms.date: 05/21/2025
+ms.date: 08/10/2026
 ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -26,7 +26,7 @@ Global apps are uniquely defined by their `id` and `version`.
 
 You can't deploy a global app with the same `id` and `version`, but different content to multiple environments.
 
-You can choose to install, uninstall, or upgrade global apps, but you don't control when they're published or unpublished because other environments in the service might use them. You also can't force sync a global app.
+You can choose to install, uninstall, or upgrade global apps, but you don't control when they're published or unpublished, because other environments in the service might use them. You also can't force sync a global app.
 
 Global apps can only depend on other global apps.
 
@@ -52,7 +52,7 @@ Upgrades preserve global apps in both production and sandbox environments.
 
 #### Marketplace apps
 
-- Upgrades never uninstall marketplace apps unless the apps prevent the tenant from upgrading. Learn more in [Maintain Marketplace apps and per-tenant extensions](app-maintain.md).
+- Upgrades never uninstall marketplace apps unless the apps prevent the tenant from upgrading during the [Enforced Update Period](../administration/update-rollout-timeline.md). Learn more in [Maintain Marketplace apps and per-tenant extensions](app-maintain.md).
 - Upgrades update marketplace apps to the latest version during upgrades to a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version (for example, 19.5 to 20.0), but preserve them during minor version upgrades (for example, 19.0 to 19.1) - unless the extension publisher marks the app as incompatible through a support request.
 
 #### Microsoft apps
@@ -73,15 +73,17 @@ These apps are unique per environment. Per-tenant extensions are uniquely define
 
 ### Environment types
 
-PTEs can exist in production and sandbox environments. Learn more in [Production and sandbox environments](../administration/environment-types.md).
-	
+PTEs can exist in Production and sandbox environments. For more information, see [Production and sandbox environments](../administration/environment-types.md).
+
 ### How to install
 
-From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], upload the .app file. Learn more in [Installing and uninstalling extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
-	
+Upload the .app file from the **Manage Apps** page in the [!INCLUDE[prod_short](../includes/prod_short.md)] Admin Center or the **Extension Management** page in the environment. For more information, see [Installing and uninstalling extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
+
+[!INCLUDE[admin-install-pte-note](../includes/admin-install-pte-note.md)]
+
 ### Behavior on upgrade
 
-The upgrade process never uninstalls PTEs from a production environment, unless they're preventing the environment from upgrading. For more information, see [Maintain Marketplace apps and per-tenant extensions](app-maintain.md). The upgrade process uninstalls PTEs when the sandbox environment is relocated if they depend on DEV extensions, but the data isn't removed. The upgrade process can upgrade PTEs to a newer version during the environment upgrade if a newer version is staged from the **Extension Management** page.
+The upgrade process never uninstalls PTEs from a production environment, unless they're preventing the environment from upgrading during the [Enforced Update Period](../administration/update-rollout-timeline.md). For more information, see [Maintain Marketplace apps and per-tenant extensions](app-maintain.md). The upgrade process uninstalls PTEs when the sandbox environment is relocated if they depend on DEV extensions, but the upgrade process doesn't remove the data. The upgrade process can update PTEs to a newer version during an environment update if a newer version is staged for the target version of the update.
 
 ## DEV extensions
 

@@ -1,23 +1,24 @@
 ---
 title: Business Central Admin Center API - App Management
-description: Learn about using the Business Central admin center API to manage apps.
+description: Manage Business Central apps with the admin center API. Discover how to install, uninstall, update, and schedule PTEs, plus track operations and available updates.
 author: jswymer
+ms.author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/11/2025
+ms.date: 07/07/2026
 ---
 
 # Business Central Admin Center API - App Management
 
-Manage the apps that are installed on the environment.
+Manage the apps that are installed on an environment.
 
 ## Important Information before you get started
 
 ### <a name="eula"></a>End-User License Agreement and Terms of Use for Installing an App 
 
-When you install an app from Marketplace, you're shown a page for accepting the end-user license agreement, terms of use, and privacy policy. This isn't the case when you install an app using the API, because there's currently no user-interface with the feature. Instead, to install an app using the API, you must set the `"acceptIsvEula":` property in the request body, which is used for agreeing to the same terms as would when you install from Marketplace. For more information, see [acceptIsvEula](#acceptisveula).
+When you install an app from Marketplace, you're shown a page for accepting the end-user license agreement, terms of use, and privacy policy. This behavior isn't the case when you install an app using the API, because there's currently no user-interface with the feature. Instead, to install an app using the API, you must set the `"acceptIsvEula":` property in the request body, which is used for agreeing to the same terms as would when you install from Marketplace. For more information, see [acceptIsvEula](#acceptisveula).
 
 <!--
 By setting this parameter to `true`, you accept the following terms:
@@ -30,14 +31,8 @@ By setting this parameter to `true`, you accept the following terms:
 <sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on Marketplace. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
 
 -->
-### Required In-Product Permissions for Installing and Uninstalling Apps
 
-To use the `install` and `uninstall` endpoints, you must have the *Exten. Mgt. - Admin permission set* assigned to your Business Central user account or authorized Microsoft Entra app.
-
-> [!NOTE]
-> These permissions sets are the same permission sets that allow you to use **Extension Management** page in your tenant. Other app management endpoints, such as `update` or `availableupdates`, don't require these permission sets.
-
-## Install an App
+## Install a global app
 
 **INTRODUCED IN:** API version 2.6
 
@@ -116,11 +111,79 @@ Example `400 Bad Request` response when dependent apps need to be installed firs
 } 
 ```
 
+## Upload and schedule install for a per-tenant extension (PTE)
+
+**INTRODUCED IN:** API version 2.29
+
+Uploads an .app file for a PTE and schedules installation or update of the uploaded PTE.
+
+```HTTP
+Content-Type: multipart/form-data
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/pteInstall
+```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`applicationFamily` - the family of the environment's application, such as "BusinessCentral".  
+
+`environmentName` - the name of the targeted environment.
+
+### Body
+
+```JSON
+{ 
+  "extensionFile": file, // Required. The .app package to upload. Must have .app file extension and cannot exceed 50MB in size.
+  "deploymentSchedule": string, // Optional. Determines when the uploaded .app file will be installed on the environment. Possible values are "Immediate", "UpdateWindow", "NextMinorUpdate", and "NextMajorUpdate". Defaults to "Immediate" if omitted from request. Must be "Immediate" or "UpdateWindow" for new PTEs, updates to installed PTEs can use any deploymentSchedule.
+  "syncMode": string, // Optional. Determines the sync mode applied during install. Possible values are "Add" and "ForceSync". Defaults to "Add" if omitted from request.
+  "languageId": string, // Optional. Microsoft Language Code ID (for example, "en-US"). Defaults to "en-US" if omitted from request.
+  "acceptIsvEula": boolean, // Required. Must be true for installation to proceed. Setting this to true means you agree to the terms described in the acceptIsvEula section that follows.
+  "installOrUpdateNeededDependencies": boolean // Optional. Determines whether dependencies of the uploaded extension should be automatically installed or updated; otherwise the install fails when dependencies are missing. Defaults to false if omitted from request.
+} 
+```
+
+#### acceptIsvEula
+
+> [!IMPORTANT]
+> By setting the `acceptIsvEula` property to `true`, you agree to the ISV's end-user license terms (EULA) and also agree to these terms:
+>
+> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products. Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product don't come from Microsoft, unless Microsoft is the provider. Use of Marketplace is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://go.microsoft.com/fwlink/?LinkId=521839).**
+
+### Response
+
+Responds with operation details. The operation's status reflects the `deploymentSchedule` set in the request: `running` for uploads with an `immediate` deployment, and `scheduled` for uploads set to deploy at a later time.
+
+Example `200 OK` response with `immediate` deployment:
+
+```JSON
+{
+  "id": guid,                       // Tracking id of the install operation. Use it to look up the operation later.
+  "type": "install",                // Operation type. Always "install" for this endpoint.
+  "sourceAppVersion": string,       // Empty for installs.
+  "targetAppVersion": string,       // Version of the extension being installed, read from the uploaded .app package.
+  "status": string,                 // (enum | "scheduled", "running", "succeeded", "failed", "canceled", "skipped")
+  "createdOn": datetime,            // Date and time the operation was created.
+  "startedOn": datetime,            // Date and time the operation began running. Omitted for a deferred (still-scheduled) install.
+  "completedOn": datetime,          // Date and time the operation completed. Omitted until it finishes.
+  "errorMessage": string,           // Failure detail when status is "failed"; empty otherwise.
+  "createdBy": string,              // Email address if authenticated as a user, App ID if authenticated as a service principal.
+  "canceledBy": string,             // Empty for a newly-created install.
+  "creatorPrincipalType": string,   // (enum | "User", "App")
+  "appId": guid,                    // Id of the targeted app, read from the uploaded .app package.
+  "aadTenantId": guid,              // Microsoft Entra Tenant ID of the tenant the operation runs against.
+  "scheduleKind": string            // (enum | "Immediate", "UpdateWindow", "NextMinorUpdate", "NextMajorUpdate")
+}
+```
+
 ## Uninstall an App
 
 **INTRODUCED IN:** API version 2.6
 
 Uninstalls an app from an environment.
+
+> [!IMPORTANT]
+> PTEs can have versions scheduled for installation. When you uninstall a PTE by using this API endpoint, it doesn't remove scheduled versions. To remove these versions, use the **Cancel Scheduled Per-Tenant Extension (PTE) Install or Update** endpoint. This removal ensures a new version of the uninstalled PTE doesn't install later.
 
 ```HTTP
 Content-Type: application/json
@@ -183,14 +246,13 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
 }
 ```
 
-## Get uninstall requirements
+## Get Uninstall Requirements
 
 Lists dependent apps that need to be uninstalled in order to uninstall the targeted app.
 
 **INTRODUCED IN:** API version 2.25
 
 ```HTTP
-Content-Type: application/json
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstallRequirements  
 ```
 
@@ -267,15 +329,15 @@ Returns information about the apps installed on the environment.
 }
 ```
 
-## Get Available App Updates 
+## Get available global app updates
 
-Get information about new app versions that are available for apps currently installed on the environment.
+Get information about new global app versions that are available for apps currently installed on the environment.
 
 ```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
-### Route Parameters
+### Route parameters
 
 `apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
@@ -309,9 +371,9 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 }
 ```
 
-## Update an App
+## Update a Global App
 
-Updates an app using an existing endpoint, but when new parameters in the request body are available.
+Updates a global app by using an existing endpoint when new parameters in the request body are available. To update a PTE, upload a new version of the PTE by using the **Upload and schedule install for a per-tenant extension (PTE)** endpoint.
 
 ```HTTP
 Content-Type: application/json
@@ -377,9 +439,9 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
 }
 ```
 
-## Cancel a scheduled app update
+## Cancel a scheduled global app update
 
-Cancels an app update in scheduled state.
+Cancels a global app update that's in a scheduled state. This endpoint doesn't support PTEs.
 
 ```HTTP
 Content-Type: application/json
@@ -422,6 +484,128 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 }
 ```
 
+## Get scheduled per-tenant extension (PTE) installs and updates
+
+**INTRODUCED IN:** API version 2.29
+
+Lists scheduled install and update operations for per-tenant extensions (PTEs).
+
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/scheduledPteOperations
+```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`applicationFamily` - the family of the environment's application, such as "BusinessCentral".  
+
+`environmentName` - the name of the targeted environment.
+
+### Response
+
+Example `200 OK` response body:
+
+```JSON
+{
+  "value":
+  [
+    {
+      "id": guid, // Id of the operation
+      "type": string, // Operation type. For this endpoint, always "Install".
+      "sourceAppVersion": string, // Empty for scheduled installs.
+      "targetAppVersion": string, // Version of the extension that will be installed.
+      "status": "scheduled", // Always "scheduled"
+      "createdOn": datetime, // Date and time the schedule entry was created.
+      "startedOn": datetime, // Null for operations that have not yet started.
+      "completedOn": datetime, // Null for operations that have not yet completed.
+      "errorMessage": string, // Empty for currently-scheduled ops.
+      "createdBy": string, // Email address if authenticated as a user, App ID if authenticated as a service principal.
+      "canceledBy": string, // Empty for currently-scheduled ops.
+      "creatorPrincipalType": string, // (enum | "User", "App")
+      "appId": guid, // Id of the targeted app.
+      "aadTenantId": guid, // Microsoft Entra tenant id of the customer the operation runs against.
+      "scheduleKind": string, // (enum | "Immediate", "UpdateWindow", "NextMinorUpdate", "NextMajorUpdate")
+      "parameters": // Snapshot of the install request the operation was scheduled with.
+      {
+        "appId": guid, // Id of the targeted app.
+        "targetAppVersion": string, // Version of the extension that will be installed.
+        "countryCode": string, // Country code the install was scheduled with (for example, "US").
+        "languageId": string, // Microsoft Language Code ID the install was scheduled with (for example, "en-US").
+        "name": string, // Name of the extension as read from the uploaded .app package metadata.
+        "publisher": string, // Publisher of the extension as read from the uploaded .app package metadata.
+        "scheduleKind": string, // (enum | "Immediate", "UpdateWindow", "NextMinorUpdate", "NextMajorUpdate")
+        "targetRelease": string, // Platform release the staged entry targets in tenant application storage (for example, "29.0.0.0" for NextMajorUpdate when the tenant is on 28.x).
+        "syncMode": string // Sync mode supplied at upload time. One of "Add", "ForceSync".
+      }
+    }
+  ]
+}
+```
+
+## Cancel Scheduled Per-Tenant Extension (PTE) Install or Update
+
+**INTRODUCED IN:** API version 2.29
+
+Cancels a specific scheduled install or update for a per-tenant extension (PTE). To define the scheduled install or update, use `appId`, `targetVersion`, and `scheduleKind`. This operation permanently removes .app files for the PTE version from storage.
+
+```HTTP
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/removeScheduledPteVersion
+```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`applicationFamily` - the family of the environment's application, such as "BusinessCentral".  
+
+`environmentName` - the name of the targeted environment.
+
+`appId` - ID of the targeted app.
+
+### Body
+
+```JSON
+{
+  "targetVersion": string, //Required. Version of the scheduled per-tenant extension to remove (for example, "2.0.0.0").
+  "scheduleKind": string //Required. Identifies which scheduled operation to target. One of "NextMinorUpdate", "NextMajorUpdate", "UpdateWindow".
+}
+```
+
+### Response
+
+Example `200 OK` response body:
+
+```JSON
+{
+  "id": guid, // Id of the canceled operation.
+  "type": "install", // Operation type.
+  "sourceAppVersion": string,  // Empty.
+  "targetAppVersion": string, // Version of the extension that was scheduled.
+  "status": "canceled", // Final status after removal.
+  "createdOn": datetime, // Date and time the schedule entry was originally created.
+  "startedOn": datetime, // Omitted when removed before the operation began running.
+  "completedOn": datetime, // Date and time the cancel completed.
+  "errorMessage": string, // Reason the operation was canceled (for example, "Removed by user 'admin@contoso.com'").
+  "createdBy": string, // Email address if originally created by a user, App ID if created by a service principal.
+  "canceledBy": string, // Email address if removed by a user, App ID if removed by a service principal.
+  "creatorPrincipalType": string, // (enum | "User", "App")
+  "appId": guid, // Id of the targeted app.
+  "aadTenantId": guid, // Microsoft Entra Tenant ID of the customer the operation ran against.
+  "scheduleKind": string // Schedule kind of the removed operation.
+}
+```
+
+Example `404 Not Found` response body:
+
+```JSON
+{
+  "code": "ResourceDoesNotExist",
+  "message": "App with id '<appId>' is not installed on environment or the environment does not exist.",
+  "target": "BusinessCentral/<environment>/apps/<appId>"
+}
+```
+
 ## Get App Operations
 
 Gets information about app install, uninstall, and update operations for the specified app.
@@ -438,9 +622,9 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 `environmentName` - the name of the targeted environment.
 
-`appId` - Id of the targeted app.
+`appId` - ID of the targeted app.
 
-`operationId` - Id of the app update operation. Used for getting information about a specific operation.
+`operationId` - ID of the app update operation. Used for getting information about a specific operation.
 
 ### Response
 
@@ -473,7 +657,7 @@ Returns the list of app update operations for the specified app.
 > [!NOTE]
 > Samples of custom notifications and automations are shared by Microsoft and third parties in the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Alerts). You can also share your Application Insights alerts and automations with the community on GitHub.
 
-The sample below can help getting started with alerting in Microsoft Teams when app updates are available for an environment. When updates are available, an adaptive card will be created in a Teams channel, which allows for the automation of app updates by using S2S authentication that targets the admin center API.
+The following sample can help getting started with alerting in Microsoft Teams when app updates are available for an environment. When updates are available, an adaptive card is created in a Teams channel. This card allows for the automation of app updates by using S2S authentication that targets the admin center API.
 
 ### Example - Run a recurrent alerting API query that sends a Teams notification when app updates are available
 
@@ -483,11 +667,11 @@ This Logic App runs a specified number of times a day (parameter in deployment p
 
 ### Prerequisites
 
-Business Central admin center API is configured for S2S authentication of Microsoft Entra apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow).
+Business Central admin center API is configured for S2S authentication of Microsoft Entra apps. For more information, go to [Authenticate using service-to-service Microsoft Entra Apps](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow).
 
 ### Preparation
 
-You'll need the following information about Business Central and your Teams service to deploy the Logic App:
+You need the following information about Business Central and your Teams service to deploy the Logic App:
 
 |Service|Information|
 |-|-|
@@ -495,13 +679,13 @@ You'll need the following information about Business Central and your Teams serv
 |Teams|<ul><li>The group ID of the team in Teams that you want to send the alerts to</li><li>The ID of the channel in Teams that you want to send the alerts to</li></ul> |
 
 > [!IMPORTANT]
-> Deploying a Logic App to Azure also creates the API connection resources necessary to authenticate certain actions in the Logic Apps. In this example, the deployment will create a connection resource for the Teams API.
+> Deploying a Logic App to Azure also creates the API connection resources necessary to authenticate certain actions in the Logic Apps. In this example, the deployment creates a connection resource for the Teams API.
 >
 > If you already have an API connection resource for Teams in your resource group, you can reuse the existing connection resource by providing its name during deployment.
 
 ### Deploy the Logic App
 
-1. Select the **Deploy to Azure** button above and sign in to Azure portal when prompted.
+1. Select the **Deploy to Azure** button and sign in to Azure portal when prompted.
 
 2. Fill in the required fields on the **Custom deployment** page.
 

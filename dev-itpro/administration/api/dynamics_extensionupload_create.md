@@ -1,10 +1,10 @@
 ---
-title: (automation API) Create extensionUpload
-description: Creates an extension upload object in Dynamics 365 Business Central.
+title: (Automation API) Create extensionUpload
+description: Learn how to create an extensionUpload object using the Automation API in Dynamics 365 Business Central. Explore HTTP requests, headers, and examples.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 07/07/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -12,6 +12,8 @@ ms.reviewer: solsen
 # (automation API) Create extensionUpload
 
 Creates an extension upload in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+
+[!INCLUDE[admin-install-pte-note](../../includes/admin-install-pte-note.md)]
 
 ## Bound Actions
 
@@ -57,7 +59,7 @@ POST /microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensio
 
 ### Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
@@ -68,7 +70,7 @@ If successful, this method returns ```204 No Content``` response code.
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload
@@ -80,7 +82,7 @@ Content-type: application/json
 ```
 
 **Response**
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 201 Created
