@@ -7,12 +7,12 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 07/28/2026
 ---
 
 # Business Central Admin Center API - Environment database export
 
-Allows for the export of an environment's Azure database. Databases are exported to an Azure Storage account provided by you. There's a limit to the number of exports that can be done within a month as shown by the 'metrics' endpoint in the following section.
+Use this API to export an environment's Azure database to an Azure Storage account that you provide. The number of exports allowed per month is limited. To view the current limit, use the metrics endpoint described in the following section.
 
 ### Required in-product permissions for exporting an environment database
 
@@ -86,9 +86,12 @@ POST /admin/{apiVersion}/exports/applications/{applicationFamily}/environments/{
 
 `requestBodyRequired` - request body must be provided.
 
-`exportFailed` - export failed, typically because the requesting tenant does not have a paid subscription, the calling user doesn't have permissions to export, or the quota of allowed exports is used up.
+`exportFailed` - export failed, typically because the requesting tenant doesn't have a paid subscription, the calling user doesn't have permissions to export, or the quota of allowed exports is used up.
 
 ## Get export history
+
+> [!WARNING]
+> The API endpoint to get export history is supported up until version 2.29 of the API, and is deprecated from version 2.30. Use the API endpoints on [Environment Operations](administration-center-api_environments.md#get-environment-operation) instead.
 
 Gets information about the exports that happen within a provided time frame, for which environment, and by which user.
 
@@ -104,7 +107,7 @@ POST /admin/{apiVersion}/exports/history?start={startTime}&end={endTime}
 
 `startTime` - datetime // The start of the export history entry time window to query.
 
-`endTime` - datetime // The end of the  export history entry time window to query.
+`endTime` - datetime // The end of the export history entry time window to query.
 
 ### Response
 
