@@ -2,7 +2,7 @@
 title: "EventSubscriber attribute"
 description: "Specifies the event to which the method subscribes."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -60,27 +60,27 @@ Specifies what happens to the subscriber method call when the user account that 
 ## Remarks
 
 > [!TIP]
-> Use the <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd>** shortcut in the AL code editor to invoke the list of all [business](devenv-businessevent-attribute.md), [integration](devenv-integrationevent-attribute.md), and [internal](devenv-internalevent-attribute.md) events. Select the one you want to subscribe to and an event subscriber for the event will be inserted.
+> Use the <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd> shortcut in the AL code editor to open the list of [business](devenv-businessevent-attribute.md), [integration](devenv-integrationevent-attribute.md), and [internal](devenv-internalevent-attribute.md) events. Select an event to insert an event subscriber.
 
-The value of the *ObjectType* argument will depend on the type of event: business, integration, and trigger.
+The `ObjectType` value depends on whether you subscribe to a business, integration, internal, or trigger event.
 
-- Business and integration events are published by event publisher methods in any of the valid object types. To subscribe to a business or integration type event, you specify the object that contains the event publisher method that defines the event.
+- Business, integration, and internal events are published by event publisher methods. Specify the object that contains the publisher method.
 
-- Trigger events are system events that are automatically declared and published in table and page object. To subscribe to a trigger event, you specify the `Table` or `Page`, depending on where the trigger published from.
+- Trigger events are system events published by table and page objects. Set `ObjectType` to `ObjectType::Table` for a table trigger event or `ObjectType::Page` for a page trigger event. For `ObjectId`, use `Database::<ObjectName>` for a table or `Page::<ObjectName>` for a page.
 
 > [!IMPORTANT]  
-> If the *ObjectType* is set to `Table`, you speficy *ObjectId* by its name using the syntax `Database::<ObjectName>`, instead of `Table::<ObjectName>`.
+> For a table event, specify `ObjectId` by name with `Database::<ObjectName>`, not `Table::<ObjectName>`.
 
-For the *SkipOnMissingLicense* and *SkipOnMissingPermission* arguments, **True** will ignore the method call, and the code execution will continue to the next subscriber; **false** will throw an error and the code execution stops. **false** is the default. 
+For `SkipOnMissingLicense` and `SkipOnMissingPermission`, `true` skips the subscriber call when the required license or permission is missing. Execution then continues with the next subscriber. The default value, `false`, raises an error instead.
 
-## Example 1
-This example publishes an integration type event by using the **OnAddressLineChanged** method. The method takes a single text data type parameter. The *IncludeSender* and *GlobalVarAccess* arguments are set to **false**.
+## Integration event example
+This example publishes an integration type event by using the `OnAddressLineChanged` method. The method takes one `Text` parameter. The `IncludeSender` and `GlobalVarAccess` arguments are set to `false`.
 
 ```AL
 codeunit 50105 MyEventPublisher
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line : Text[100])
+    procedure OnAddressLineChanged(Line: Text[100])
     begin
     end;
 }
@@ -88,30 +88,28 @@ codeunit 50105 MyEventPublisher
 codeunit 50106 MyEventSubscriber
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyEventPublisher, 'OnAddressLineChanged', '', true, true)]
-    local procedure MyProcedure(line: Text[100])
+    local procedure MyProcedure(Line: Text[100])
     begin
     end;
 }
 ```
 
-## Example 2
+## Table trigger event example
 
-In this example, the **OnAfterValidateLocationCodePurchase** method is subscribed to an [OnAfterValidateEvent (Table) Trigger Event](../triggers-auto/events/table/devenv-onaftervalidateevent-table-trigger.md). Therefore, it's run after a field in the `"Purchase Line"` table is validated, after its value has been changed.
+In this example, the `OnAfterValidateLocationCodePurchase` method subscribes to the [OnAfterValidateEvent table trigger event](../triggers-auto/events/table/devenv-onaftervalidateevent-table-trigger.md). It runs after the `"Purchase Line"` table's `"Location Code"` field is validated.
 
 ```AL
 codeunit 50107 MyEventSubscriber
 {
-    // Update Purchase Line Jurisdiction Type once a Location Code change has been validated.
-
     [EventSubscriber(ObjectType::Table, Database::"Purchase Line", 'OnAfterValidateEvent', 'Location Code', false, false)]
     local procedure OnAfterValidateLocationCodePurchase(var Rec: Record "Purchase Line")
     begin
-        UpdateJurisdictionType(Rec);
+        // Add logic that runs after the Location Code field is validated.
     end;
 }
 ```
 
-## Related information  
+## Related information
 [AL method reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
 [Publishing events](../devenv-publishing-events.md)   

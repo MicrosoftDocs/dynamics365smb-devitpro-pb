@@ -39,7 +39,7 @@ The security filters applied to the record.
 
 You can use the [SecurityFiltering (Record) Method](../methods-auto/record/record-securityfiltering-method.md) to get or change the security filters applied to the record.
 
-For more information, see [Using Security Filters in Business Central](../../security/security-filters.md).
+Learn more in [Using Security Filters in Business Central](../../security/security-filters.md).
 
 
 ## Related information  
