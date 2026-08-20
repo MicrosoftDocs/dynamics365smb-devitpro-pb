@@ -2,7 +2,7 @@
 title: "TestPermissions attribute"
 description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by a test method."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,14 +39,14 @@ Specifies the permission sets used on tests that are run by the test method.
 
 ## Remarks
 
-The **InheritFromTestCodeunit** option value for the *TestPermissions* argument is only relevant for test methods; not test codeunits. It specifies that a test method uses the TestPermissions property setting of the test codeunit to which it belongs. If you use this value on a test codeunit, the property will resolve to **Restrictive** at runtime.
+The `InheritFromTestCodeunit` value applies only to test methods. It makes a test method use the `TestPermissions` property of its test codeunit. On a test codeunit, this value resolves to `Restrictive` at runtime.
 
-Apart from **InheritFromTestCodeunit**, the values themselves do not perform any operations or have any specific behavior. Instead, you programmatically define what each value does, and the permissions sets it applies at runtime, by adding code in a test runner codeunit.
+Apart from `InheritFromTestCodeunit`, the values don't perform operations by themselves. Add code to a test runner codeunit to define which permission sets each value applies at runtime.
 
 > [!NOTE]  
 > To specify the permission sets that are used by all the tests run by a test codeunit, use the [TestPermissions Property](../properties/devenv-testpermissions-property.md).
 
-## Related information  
+## Related information
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)   
 [TestPermissions Property](../properties/devenv-testpermissions-property.md)

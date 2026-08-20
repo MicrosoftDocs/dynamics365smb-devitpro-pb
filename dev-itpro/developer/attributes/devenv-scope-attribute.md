@@ -2,7 +2,7 @@
 title: "Scope attribute"
 description: "Specifies the scope of a method."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -46,25 +46,25 @@ The scope of the method.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!NOTE]  
-> In previous versions `OnPrem` was equivalent to `Internal` and `Cloud` was equivalent to `External`. Both `Internal` and `External` options are being deprecated.
+> Earlier scope values are deprecated. Use `OnPrem` instead of `Solution` or `Internal`. Use `Cloud` instead of `Personalization` or `Extension`.
 
-For more information, see [Compilation Scope Overview](../devenv-compilation-scope-overview.md).
+Learn more in [Compilation Scope Overview](../devenv-compilation-scope-overview.md).
 
 ## Example
 
-Setting the attribute on a method. Each method must be explicitly marked with `[Scope('OnPrem')]` because default is `[Scope('Cloud')]`.
+Methods use the `Cloud` scope by default. Add `[Scope('OnPrem')]` only to methods that require APIs available exclusively to on-premises extensions.
 
 ```AL
 procedure MyProcedureForCloud()
-    begin
-        Message('My procedure is available in cloud, but cannot call any onprem method.');
-    end;
+begin
+    Message('My procedure is available in the cloud but cannot call an on-premises method.');
+end;
 
 [Scope('OnPrem')]
 procedure MyProcedureForOnPrem()
-    begin
-        Message('My procedure is not available to a cloud extension.');
-    end;
+begin
+    Message('My procedure is not available to a cloud extension.');
+end;
 
 ```
   

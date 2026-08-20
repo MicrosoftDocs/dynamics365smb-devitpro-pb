@@ -2,7 +2,7 @@
 title: "WithEvents attribute"
 description: "Sets whether a DotNet variable subscribes to the events published by a .NET Framework type."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,9 +34,9 @@ Sets whether a DotNet variable subscribes to the events published by a .NET Fram
 
 ## Remarks
 
-You can only subscribe to events that are emitted by global variables of the .NET type marked with the WithEvents property. For all the global variables that are marked with this property, the compiler will expose the events available on the type as triggers on the variable. The syntax for declaring these triggers is `{VariableName}::{EventName}(...ParameterList)`, but IntelliSense will offer suggestions for the event name and autocomplete the parameter list.
+You can subscribe only to events exposed by global `DotNet` variables marked with `[WithEvents]`. For each marked variable, the compiler exposes the type's events as triggers on the variable. Declare the triggers by using the `{VariableName}::{EventName}(...ParameterList)` syntax. IntelliSense suggests event names and fills in the parameter list.
 
 ## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

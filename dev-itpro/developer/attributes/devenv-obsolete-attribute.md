@@ -2,7 +2,7 @@
 title: "Obsolete attribute"
 description: "Specifies that the annotated symbol will be deprecated."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -47,18 +47,16 @@ Specifies a free-form text to support tracking of where and when the object was 
 To mark objects and other elements of code, use the [ObsoleteState Property](../properties/devenv-obsoletestate-property.md) and [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md).
 
 ## Example
-Setting the attribute on a method or a variable. Each method must be marked with `[Obsolete('<Reason>','<tag>')]`.
+Apply `[Obsolete('<Reason>', '<Tag>')]` to each method or variable that you want to mark as obsolete.
     
 ```AL
 codeunit 50143 SoonObsolete
 {    
-       [Obsolete('Pending removal use X instead', '17.0')]
-       procedure MyProcedure()
-       var
-           myInt: Integer;
-       begin
-           // Make something happen
-       end;
+    [Obsolete('Pending removal. Use X instead.', '17.0')]
+    procedure MyProcedure()
+    begin
+        // Add the method implementation.
+    end;
 }    
     
 ```
@@ -66,9 +64,9 @@ codeunit 50143 SoonObsolete
 ## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
-[Method Attributes](devenv-obsolete-attribute.md)  
+[Method Attributes](devenv-method-attributes.md)  
 [Directives in AL](../directives/devenv-directives-in-al.md)  
 [Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md)  
 [ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md)  
-[ObsoleteTag Property](../properties/devenv-obsoletetag-property.md)  
+[ObsoleteTag Property](../properties/devenv-obsoletetag-property.md)

@@ -2,7 +2,7 @@
 title: "Test attribute"
 description: "Specifies that the method is a test method."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,11 +39,13 @@ procedure Test()
 
 ## Remarks
 
-You use test methods that include AL code that tests the business logic in the application, where each method covers a transaction. 
+Use test methods to test specific units of application business logic. The transaction behavior of a test method depends on its [`TransactionModel`](devenv-transactionmodel-attribute.md) setting.
 
-For more information, see [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md).
+Learn more in [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md).
 
-## Related information  
+## Related information
+
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)  
+[TransactionModel Attribute](devenv-transactionmodel-attribute.md)

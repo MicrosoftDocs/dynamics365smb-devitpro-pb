@@ -2,7 +2,7 @@
 title: "RequestPageHandler attribute"
 description: "Specifies that the method is a RequestPageHandler method, which handles the request page of a specific report."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -44,11 +44,11 @@ The ID of a specific report.
 
 ## Remarks
 
-The **RequestPageHandler** method is called when a report is invoked in the code. 
+The `RequestPageHandler` method is called when code invokes a report's request page.
 
-If you create a **ReportHandler** method, then that method replaces all code for running the report, including the request page, and a **RequestPageHandler** is not called. Only create a **RequestPageHandler** method if you are not using a **ReportHandler** one. 
+If a test uses a `ReportHandler` method for a report, the handler replaces the report run, including its request page. The `RequestPageHandler` method isn't called. Use `RequestPageHandler` only when the test doesn't use `ReportHandler` for that report.
 
-You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. For more information about handler methods, see [Create Handler Methods](../devenv-creating-handler-methods.md).
+You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. Learn more about handler methods in [Create Handler Methods](../devenv-creating-handler-methods.md).
 
 ## Related information
 
