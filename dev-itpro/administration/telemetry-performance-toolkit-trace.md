@@ -45,12 +45,12 @@ Occurs when the BCPT header gets the status running.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000DHR**|
-|runId|Specified the number from the BCPT header.|
-|code|Specified the code from the BCPT Header.|
-|currentRunType|Values are BCPT and PRT. BCPT for running all the sessions and PRT for only one itteration.|
-|version|Specified the version number of the BCPT Header.|
-|sessionCount|Specified the total number of all sessions.|
-|test Company Name|Specified the company where the BCPT is performed.|
+|alRunID|Number from the BCPT header.|
+|alCode|Code from the BCPT Header.|
+|alCurrentRunType|Values are BCPT and PRT. BCPT runs all the sessions and PRT runs only one iteration.|
+|alVersion|Version number of the BCPT Header.|
+|alSessionCount|Total number of all sessions.|
+|alTest Company Name|Company where the BCPT is performed.|
 
 <a name="other"></a>**Common custom dimensions**
 
@@ -85,13 +85,13 @@ Occurs when the BCPT header gets the status completed.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000DHS**|
-|runId|Specified the number from the BCPT header.|
-|code|Specified the code from the BCPT Header.|
-|currentRunType|Values are BCPT and PRT. BCPT for running all the sessions and PRT for only one itteration.|
-|durationInMinutes|Specified the total duration in minutes of the run.|
-|version|Specified the version number of the BCPT Header.|
-|sessionCount|Specified the total number of all sessions.|
-|test Company Name|Specified the company where the BCPT is performed.|
+|alRunID|Number from the BCPT header.|
+|alCode|Specified the code from the BCPT Header.|
+|alCurrentRunType|Values are BCPT and PRT. BCPT for running all the sessions and PRT for only one iteration.|
+|alDurationInMinutes|Specified the total duration in minutes of the run.|
+|alVersion|Specified the version number of the BCPT Header.|
+|alSessionCount|Specified the total number of all sessions.|
+|alTest Company Name|Specified the company where the BCPT is performed.|
 
 <a name="other"></a>**Common custom dimensions**
 
@@ -126,12 +126,12 @@ Occurs when the BCPT header gets the status cancelled.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000DHT**|
-|runId|Specified the number from the BCPT header.|
-|code|Specified the code from the BCPT Header.|
-|currentRunType|Values are BCPT and PRT. BCPT for running all the sessions and PRT for only one itteration.|
-|version|Specified the version number of the BCPT Header.|
-|sessionCount|Specified the total number of all sessions.|
-|test Company Name|Specified the company where the BCPT is performed.|
+|alRunID|Specified the number from the BCPT header.|
+|alCode|Specified the code from the BCPT Header.|
+|alCurrentRunType|Values are BCPT and PRT. BCPT for running all the sessions and PRT for only one iteration.|
+|alVersion|Specified the version number of the BCPT Header.|
+|alSessionCount|Specified the total number of all sessions.|
+|alTest Company Name|Specified the company where the BCPT is performed.|
 
 <a name="other"></a>**Common custom dimensions**
 
@@ -166,19 +166,19 @@ Occurs when ta BCPT scenario is finished and a log entry is written.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000DGF**|
-|runId|Specified the number from the BCPT header.|
-|code|Specified the code from the BCPT Header.|
-|lineNo|Specified the line number of the BCPT log entry.|
-|codeunitId|Specified the codeunit ID of the scenario that is executed.|
-|codeunitName|Specified the codeunit name of the scenario that is executed.|
-|operation|Specified the operation name of the scenario. The name that is entered for the startScenario procedure.|
-|tag|Specified the tag from the BCPT header.|
-|status|Specified the status of the BCPT log Entry. This can be success or error.|
-|noOfSqlStatements|Specified the number of SQL statements that is executed during the operation.|
-|startTime|Specified the starting time when the operation is executed.|
-|endTime|Specified the ending time when the operation is executed.|
-|durationInMs|Specified the total duration in milliseconds that the operation is executed.|
-|sessionNo|Specified the session number of the executed operation.|
+|alRunID|Specified the number from the BCPT header.|
+|alCode|Specified the code from the BCPT Header.|
+|alLineNo|Specified the line number of the BCPT log entry.|
+|alCodeunitId|Specified the codeunit ID of the scenario that is executed.|
+|alCodeunitName|Specified the codeunit name of the scenario that is executed.|
+|alOperation|Specified the operation name of the scenario. The name that is entered for the startScenario procedure.|
+|alTag|Specified the tag from the BCPT header.|
+|alStatus|Specified the status of the BCPT log Entry. This can be success or error.|
+|alNoOfSqlStatements|Specified the number of SQL statements that is executed during the operation.|
+|alStartTime|Specified the starting time when the operation is executed.|
+|alEndTime|Specified the ending time when the operation is executed.|
+|alDurationInMs|Specified the total duration in milliseconds that the operation is executed.|
+|alSessionNo|Specified the session number of the executed operation.|
 
 <a name="other"></a>**Common custom dimensions**
 
