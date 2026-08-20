@@ -2,7 +2,7 @@
 title: "NonDebuggable attribute"
 description: "Specifies that the annotated symbol will not be available to the debugger."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ Specifies that the annotated symbol will not be available to the debugger. E.g. 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
-Setting the attribute on a method. Each method must be marked with `[NonDebuggable]`.
+Add `[NonDebuggable]` to each method that you want to hide from the debugger.
 
 ```AL
 codeunit 50142 NoDebuggingOfMethod
@@ -48,9 +48,9 @@ codeunit 50142 NoDebuggingOfMethod
 
 ```
 
-Setting the attribute on variables. Each variable must be marked as `[NonDebuggable]`.
+Add `[NonDebuggable]` to each variable that you want to hide from the debugger.
 ```AL
-codeunit 50143 NoDebuggingOfVar 
+codeunit 50143 NoDebuggingOfVar
 {
     local procedure MyProcedure()
     var
@@ -65,14 +65,14 @@ codeunit 50143 NoDebuggingOfVar
 
 ## Remarks
 
-Regardless of the resource exposure policy setting, methods and variables marked with the `[NonDebuggable]` attribute, will remain non-debuggable.
+Regardless of the resource exposure policy setting, methods and variables marked with `[NonDebuggable]` remain unavailable to the debugger.
 
 > [!NOTE]  
-> During snapshot debugging, all frames are collected, also for non-debuggable methods, but no variables are shown in any of the snap points for methods that are decorated as non-debuggable. 
+> Snapshot debugging collects frames for non-debuggable methods but doesn't show their variables at snap points.
 
-For more information, see [Resource Exposure Policy Setting](../devenv-security-settings-and-ip-protection.md).
+Learn more in [Resource Exposure Policy Setting](../devenv-security-settings-and-ip-protection.md).
   
-## Related information  
+## Related information
 
 [AL method reference](../methods-auto/library.md)  
 [Debugging](../devenv-debugging.md)

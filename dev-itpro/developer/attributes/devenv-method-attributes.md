@@ -1,7 +1,7 @@
 ---
-title: Method attributes
-description: The attributes that you can apply to methods in AL for Business Central.
-ms.date: 04/26/2024
+title: Method Attributes in AL for Business Central
+description: Learn how AL method attributes modify method behavior in Business Central and review the syntax for applying attributes and arguments.
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -10,18 +10,21 @@ ms.reviewer: solsen
 
 # Method attributes
 
-An attribute is a modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the `Integration` attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
+An attribute is a modifier on a method declaration that controls the method's use and behavior. Adding an attribute to a method declaration is also known as *decorating* the method. For example, the `IntegrationEvent` attribute makes a method an event publisher. An attribute can have one or more arguments.
 
 In AL, attributes are placed before the method, and they have the following syntax:
 
-```AL
-[Attribute_Name(ArgumentName : data_type, ArgumentName : data_type)]
+```al
+[AttributeName(ArgumentValue1, ArgumentValue2)]
 ```
 
-For example, the `Integration` attribute has two arguments, and the syntax is:
+For example, the following method uses the `IntegrationEvent` attribute with both required arguments set to `false`:
 
 ```AL
-[Integration(IncludeSender : Boolean, GlobalVarAccess : Boolean)]
+[IntegrationEvent(false, false)]
+procedure OnSomethingChanged()
+begin
+end;
 ```
 
 > [!TIP]  
@@ -30,3 +33,4 @@ For example, the `Integration` attribute has two arguments, and the syntax is:
 ## Related information
 
 [AL method reference](../methods-auto/library.md)  
+[IntegrationEvent attribute](devenv-integrationevent-attribute.md)

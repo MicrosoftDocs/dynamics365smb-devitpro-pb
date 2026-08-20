@@ -45,7 +45,7 @@ Typing the shortcut `teventinternal` will create the basic internal attribute sy
 
 ## Remarks
 
-For more information about isolated events, see [Isolated Events](../devenv-events-isolated.md).
+Learn more about isolated events in [Isolated Events](../devenv-events-isolated.md).
 
 ## Example
 Setting the attribute on a method. Each method must be marked with `[InternalEvent]`.

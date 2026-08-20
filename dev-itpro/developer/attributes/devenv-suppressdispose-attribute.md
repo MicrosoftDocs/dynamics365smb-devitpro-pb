@@ -2,7 +2,7 @@
 title: "SuppressDispose attribute"
 description: "Specifies if a Microsoft .NET Framework object that is defined by a DotNet variable is disposed when it goes out of scope."
 ms.author: solsen
-ms.date: 04/09/2025
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,11 +34,11 @@ Specifies if a Microsoft .NET Framework object that is defined by a DotNet varia
 
 ## Remarks
 
-The **SuppressDispose** attribute applies to local variables of the **DotNet** data type.  
+The `SuppressDispose` attribute applies to local variables of the `DotNet` data type.
 
-When a local .NET Framework object is disposed, it can't be assigned outside the scope of its local function. If you want to assign the local **DotNet** variable to a global AL or .NET Framework object, then you set the `SuppressDispose` property to `Yes`.
+Add `[SuppressDispose]` when the runtime must not call `Dispose` after the local variable goes out of scope. For example, use the attribute when external .NET code retains the object beyond the local variable's scope. Assigning the object to another AL `DotNet` variable doesn't require the attribute because the runtime tracks AL references to the object.
 
 ## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

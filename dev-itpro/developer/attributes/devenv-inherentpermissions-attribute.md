@@ -2,7 +2,7 @@
 title: "InherentPermissions attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -52,18 +52,18 @@ Specifies the scope of the permissions that are assigned (Entitlements, Permissi
 
 For information about the `<permission value>` syntax, refer to [permissions values](../properties/devenv-permissions-property.md#property-values) or [permissions on objects](../devenv-permissions-on-database-objects.md#permissions-on-objects).
 
-## Example 
+## Example
 
 ```AL
 [InherentPermissions (PermissionObjectType::TableData, Database::"Customer", 'r', InherentPermissionsScope::Both)]
 ```
 
 > [!NOTE]  
-> Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
+> `InherentPermissionsScope` is optional. The default value is `Both`, which includes permissions and entitlements. Learn more in [InherentPermissionsScope option](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
 
 > [!NOTE]
 > You can use inherent permissions only for objects within the same extension.
 
-## Related information  
+## Related information
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,7 +2,7 @@
 title: "InDataSet attribute"
 description: "Sets whether the AL variable's value is included in the dataset."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,6 +32,8 @@ Sets whether the AL variable's value is included in the dataset.
 
 ## Example
 
+The following legacy example shows how earlier runtime versions used the attribute on page variables:
+
 ```al
 var
     [InDataSet]
@@ -42,12 +44,9 @@ var
 
 ## Remarks
 
-The **InDataSet** attribute is defined on variables of the type [Boolean](../methods-auto/boolean/boolean-data-type.md) or [Integer](../methods-auto/integer/integer-data-type.md) on pages.  
+The `InDataSet` attribute is obsolete as of runtime 11.0 and has no effect. Don't use it in new code.
 
-You must define this attribute on a variable if it's used as the value of the [Editable Property](../properties/devenv-editable-property.md), [Enabled Property](../properties/devenv-enabled-property.md), [Visible Property](../properties/devenv-visible-property.md) and [StyleExpr Property](../properties/devenv-styleexpr-property.md).  
-
-> [!NOTE]
-> This attribute is obsolete. It no longer works and isn't required to include the AL variable's value in the dataset.
+Earlier runtime versions used the attribute on page variables in dynamic control expressions, such as the [Editable](../properties/devenv-editable-property.md), [Enabled](../properties/devenv-enabled-property.md), [Visible](../properties/devenv-visible-property.md), [StyleExpr](../properties/devenv-styleexpr-property.md), and [IndentationColumn](../properties/devenv-indentationcolumn-property.md) properties. The attribute included those variables in the dataset.
 
 ## Related information
 

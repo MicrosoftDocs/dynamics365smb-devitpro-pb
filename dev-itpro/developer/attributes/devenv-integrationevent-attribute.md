@@ -2,7 +2,7 @@
 title: "IntegrationEvent attribute"
 description: "Specifies that the method is published as an integration type event."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -49,22 +49,22 @@ Typing the shortcut `teventint` will create the basic IntegrationEvent attribute
 
 ## Remarks
 
-When you set the *IncludeSender* argument to **true**, the signature of event subscriber methods that subscribe to the published event automatically supports a `sender` parameter for the published event object, which you must add manually (see the example). 
+When you set `IncludeSender` to `true`, an event subscriber can declare a `sender` parameter that references the publishing object. You must add the parameter to the subscriber manually, as shown in the example.
 
 > [!IMPORTANT]  
-> Using *GlobalVarAccess* will throw a compiler warning, which will become an error in a future release. Instead use the event parameters or mark the page or table variables as protected. For more information, see [Protected Variables](../devenv-protected-variables.md).
+> Avoid `GlobalVarAccess`. Use event parameters instead, or mark page or table variables as `protected`. Learn more in [Protected variables](../devenv-protected-variables.md).
 
-When you set the *GlobalVarAccess* argument to **true**, event subscriber methods that subscribe to the event can call the global variable parameters in the object that declares the event publisher method. You must add variable parameters to the event subscriber method signatures manually and use a name and type that matches the variable declaration in the event publisher object (see the example).
+When you set `GlobalVarAccess` to `true`, an event subscriber can access global variables in the object that declares the publisher method. Add each variable to the subscriber signature manually. Its name and type must match the declaration in the publishing object, as shown in the example.
 
-For more information about the different event types, see [Event Types](../devenv-event-types.md).
+Learn more about the different event types in [Event types](../devenv-event-types.md).
 
-For more information about isolated events, see [Isolated Events](../devenv-events-isolated.md).
+Learn more about isolated events in [Isolated events](../devenv-events-isolated.md).
 
 ## Example
 
-This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter.
+This example publishes an integration type event by using the `OnAddressLineChangedEvent` method. The method takes one `Text` parameter.
 
-The `IncludeSender` and `GlobalVarAccess` arguments are set to **true**. This means that the signature of event subscriber method `SubcribeToOnAddressLineChangedEvent` includes:
+The `IncludeSender` and `GlobalVarAccess` arguments are set to `true`. The subscriber method `SubscribeToOnAddressLineChangedEvent` therefore includes:
 
 - The `sender` parameter for event publishing codeunit `MyPublishingCodeunit`.
 - A parameter for the global variable `myGlobalVar` defined in the publishing codeunit `MyPublishingCodeunit`.
@@ -73,29 +73,30 @@ The `IncludeSender` and `GlobalVarAccess` arguments are set to **true**. This me
 codeunit 50102 MyPublishingCodeunit
 {
     [IntegrationEvent(true, true)]
-    procedure OnAddressLineChangedEvent(line : Text[100])
+    procedure OnAddressLineChangedEvent(Line: Text[100])
     begin
     end;
 
     var
-        myGlobalVar: Integer;
+        MyGlobalVar: Integer;
 }
 
 codeunit 50103 MySubscribingCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyPublishingCodeunit, 'OnAddressLineChangedEvent', '', true, true)]
-    local procedure SubcribeToOnAddressLineChangedEvent(sender: Codeunit MyPublishingCodeunit; myGlobalVar: Integer)
+    local procedure SubscribeToOnAddressLineChangedEvent(Sender: Codeunit MyPublishingCodeunit; MyGlobalVar: Integer)
     begin
         // My subscriber code
     end;
 }
 ```
 
-## Related information  
-[AL Method Reference](../methods-auto/library.md)  
+## Related information
+
+[AL method reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
-[Publishing Events](../devenv-publishing-events.md)   
-[Raising Events](../devenv-raising-events.md)   
-[Subscribing to Events](../devenv-subscribing-to-events.md)   
-[Isolated Events](../devenv-events-isolated.md)  
-[Method Attributes](devenv-method-attributes.md)
+[Publishing events](../devenv-publishing-events.md)  
+[Raising events](../devenv-raising-events.md)  
+[Subscribing to events](../devenv-subscribing-to-events.md)  
+[Isolated events](../devenv-events-isolated.md)  
+[Method attributes](devenv-method-attributes.md)

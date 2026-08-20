@@ -2,7 +2,7 @@
 title: "TryFunction attribute"
 description: "Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/19/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -40,38 +40,34 @@ procedure TryFunction()
 
 Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than those thrown by the system. You can use try methods to catch errors/exceptions that are thrown by [!INCLUDE[prod_short](../includes/prod_short.md)] or exceptions that are thrown during .NET Framework interoperability operations.  
 
-For more information, see [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md).  
+Learn more in [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md).
 
 ## Example
 
-The `IsSecureHttpUrl` method throws an error when trying to make a web request using an insecure URL. By setting the **TryFunction** attribute on it, the exception can be caught and handled by the `OnRun` trigger.
+The `IsSecureHttpUrl` method raises an error when a URL doesn't start with `https://`. The `TryFunction` attribute lets the `OnRun` trigger detect and handle the error without stopping execution.
 
 ```al
-[TryFunction]
-procedure IsSecureHttpUrl(Url: Text)
-var
-    Uri: DotNet Uri;
-begin
-    IsValidUri(Url);
-    Uri := Uri.Uri(Url);
-    if Uri.Scheme <> 'https' then
-        Error(NonSecureUriErr);
-end;
+codeunit 50100 TryFunctionExample
+{
+    trigger OnRun()
+    begin
+        if not IsSecureHttpUrl('http://www.contoso.com') then
+            Message('The URL is not secure.');
+    end;
+
+    [TryFunction]
+    local procedure IsSecureHttpUrl(Url: Text)
+    begin
+        if CopyStr(Url, 1, 8) <> 'https://' then
+            Error(NonSecureUrlErr);
+    end;
+
+    var
+        NonSecureUrlErr: Label 'The URL must use HTTPS.';
+}
 ```
 
-```al
-trigger OnRun()
-var
-    URL: Text;
-begin
-    if not IsSecureHttpUrl(URL) then begin
-        message('URL is not secure.')
-        exit(true);
-    exit(false);
-end;
-```
-
-## Related information  
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [Essential AL Methods](../devenv-essential-al-methods.md)  
