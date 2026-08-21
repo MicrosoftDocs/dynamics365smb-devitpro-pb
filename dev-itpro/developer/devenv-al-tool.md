@@ -55,6 +55,7 @@ al help
 | `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
 | `launchlspserver`              | Launches an AL Language Server Protocol (LSP) server for use by autonomous AI agents and editors. Learn more in [AL LSP](#al-lsp). |
 | `launchprofilingmcpproxy`      | Launches a Performance Profiling MCP proxy that lets an AI agent capture CPU profiles from a slow Business Central session. Learn more in [Performance Profiling MCP proxy](#performance-profiling-mcp-proxy). **NOTE:** This feature is available in preview with a prerelease of runtime 18 and Business Central Server version 29. |
+| `launchsnapshotmcpproxy`       | Launches a Snapshot Debugging MCP proxy that lets an AI agent capture an AL snapshot from the next Business Central session that reproduces a failing scenario. For more information, see [Snapshot debugging MCP proxy](#snapshot-debugging-mcp-proxy). **NOTE:** This feature is available in preview with a prerelease of runtime 18 and Business Central Server version 29. |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |
@@ -254,6 +255,75 @@ This token is short-lived (about one hour), so refresh it when it expires. Becau
 
 > [!TIP]  
 > In Visual Studio Code agent mode, the AL extension registers this proxy automatically as the **Business Central Profiling MCP Server** and derives the connection from your `launch.json`, so you don't normally run the command yourself. Sign in by using the **AL: Sign in to Business Central Profiling MCP** command, then ask the agent to profile a session. Learn more in [Profiling with an AI agent](/dynamics365/business-central/dev-itpro/administration/scheduled-performance-profiler-overview#profiling-with-an-ai-agent-mcp-server).
+
+## Snapshot debugging MCP proxy
+
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
+The `launchsnapshotmcpproxy` command lets an AI agent capture an AL [snapshot](devenv-snapshot-debugging.md) from a running [!INCLUDE [prod_short](includes/prod_short.md)] session and then debug the recorded execution offline. Where `launchmcpserver` and `launchlspserver` operate on a local AL workspace, this command connects *out* to a running Business Central environment and exposes the platform's [snapshot debugger](devenv-snapshot-debugging.md) as Model Context Protocol (MCP) tools. No AL project is loaded. For the end-to-end agent workflow, prerequisites, and permissions, see [Snapshot debugging with an AI agent](devenv-snapshot-debugging.md#snapshot-debugging-with-an-ai-agent-mcp-server).
+
+ALTool runs as a stdio MCP server that an agent host—for example, Visual Studio Code in agent mode—spawns as a child process. It exposes the following tools that the agent calls on the user's behalf:
+
+- **Initialize snapshot debugging** — arms a waiting snapshot on the server for a set of snappoints, optionally scoped to a specific user. There's usually no session yet: the server records the *next* session that reproduces the scenario.
+- **Get snapshot status** — reports whether the armed snapshot is still waiting, recording, or finished.
+- **Stop snapshot debugging** — finalizes the run and returns the recorded snapshot archive so the agent can debug it.
+
+The snapshot is recorded on the server while you reproduce the scenario. If the environment moves or restarts before you stop it, the in-progress recording is lost and the status tool reports that there's nothing to collect; simply initialize a new snapshot and reproduce the scenario again. The captured archive can contain sensitive business data, so handle it securely and in line with your privacy requirements.
+
+Snapshot debugging usually records the next session that reproduces a problem, so you don't need a session ID; if you want to target a session that's already running, its ID is supplied per tool call rather than as a launch option. The connection target and authentication are fixed for the lifetime of the proxy through the options below.
+
+Wire ALTool into your MCP host so it's invoked as:
+
+```shell
+al launchsnapshotmcpproxy [options]
+```
+
+The following options are supported:
+
+| Option | Description |
+|--------|-------------|
+| `--environmenttype <type>` | Cloud environment type—`Sandbox` or `Production`—or `OnPrem` for an on-premises server. |
+| `--environmentname <name>` | Cloud environment name (for example, `production`). Cloud only. |
+| `--tenant <tenant>` | Cloud: the Microsoft Entra tenant ID or primary domain (for example, `contoso.onmicrosoft.com`). Multitenant on-premises: the Business Central tenant name. |
+| `--applicationfamily <family>` | Application family for embed apps. Optional. |
+| `--authentication <method>` | `MicrosoftEntraID` (or `AAD`) for cloud, or `Windows` or `UserPassword` for on-premises. Defaults to Microsoft Entra ID. |
+| `--server <url>` | On-premises server URL (for example, `http://localhost`). On-premises only. |
+| `--serverinstance <name>` | On-premises server instance name (for example, `BC`). On-premises only. |
+| `--port <port>` | On-premises port that the MCP service shares with the Business Central API/OData endpoint (for example, `7047`)—not the development endpoint port (`7049`). On-premises only. |
+| `--logfile <path>` | Path to the diagnostics log file. Defaults to `%LOCALAPPDATA%/Microsoft/ALLanguageServer/snapshotmcpproxy.log`. |
+| `--loglevel <level>` | Log level: `Debug`, `Verbose`, `Normal` (default), `Warning`, `Error`. |
+| `--nolog` | Disable file logging entirely. |
+| `-?, -h, --help` | Show help and usage information. |
+
+Standard output is reserved for the MCP JSON-RPC stream; all human-readable diagnostics go to `stderr` and to the log file.
+
+### Authentication
+
+The proxy authenticates non-interactively and never opens a browser. For **cloud** connections, it resolves a token in this order: the `BC_ACCESS_TOKEN` environment variable, then a token cached by a prior interactive `altool auth login` sign-in. For **on-premises** hosts, you supply credentials through environment variables. Explicit options take precedence. The proxy caches values read from environment variables in memory only and never writes them to disk.
+
+| Variable | Use |
+|----------|-----|
+| `BC_ACCESS_TOKEN` | A preacquired Microsoft Entra bearer token for cloud connections. The token value is never logged. |
+| `BC_SERVER_USERNAME`, `BC_SERVER_PASSWORD` | Credentials for on-premises `UserPassword` (Basic) authentication. |
+
+On-premises `Windows` authentication uses the current Windows identity and needs no credentials.
+
+For a cloud environment, the simplest option is to sign in interactively once by using the `altool auth login` command. This action caches a token (together with a refresh token) that the proxy reuses and refreshes silently, so you don't need to set `BC_ACCESS_TOKEN`:
+
+```bash
+altool auth login --environmenttype Sandbox --environmentname sandbox --tenant contoso.onmicrosoft.com
+```
+
+Alternatively, for headless or CI/CD hosts where interactive sign-in isn't possible, acquire a `BC_ACCESS_TOKEN` by using the [Azure CLI](/cli/azure/) (after `az login` as a user who has access to the environment), requesting a token for the Business Central API scope:
+
+```bash
+az account get-access-token --scope https://api.businesscentral.dynamics.com/.default --query accessToken --output tsv
+```
+
+This token is short-lived (about one hour), so refresh it when it expires. Because `BC_ACCESS_TOKEN` takes precedence over a cached sign-in, leave it unset when you rely on `altool auth login`.
+
+> [!TIP]  
+> In Visual Studio Code agent mode, the AL extension registers this proxy automatically as the **Business Central Snapshot MCP Server** and derives the connection from your `launch.json`, so you don't normally run the command yourself. Sign in by using the **AL: Sign in to Business Central Snapshot MCP** command, then ask the agent to capture a snapshot. Learn more in [Snapshot debugging with an AI agent](devenv-snapshot-debugging.md#snapshot-debugging-with-an-ai-agent-mcp-server).
 
 ## Related information
 

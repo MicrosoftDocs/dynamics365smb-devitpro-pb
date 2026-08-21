@@ -2,7 +2,7 @@
 title: Snapshot debugging
 description: Overview of how snapshot debugging allows recording running AL code for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 09/03/2025
+ms.date: 08/03/2026
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -155,6 +155,176 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 |A snapshot debugger session with a [!INCLUDE[prod_short](includes/prod_short.md)] server will be closed if not attached to after 30 minutes.|
 |If a snapshot debugger session is started, it has to be finished after 10 minutes.|
  
+## Snapshot debugging with an AI agent (MCP server)
+
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
+> [!NOTE]
+> This feature is available in preview with a prerelease of runtime 18 and Business Central Server version 29.
+
+Instead of using the [keyboard-shortcut workflow](#snapshot-debugging-keyboard-shortcuts), you can use an AI agent to capture a snapshot through the **Snapshot Debugging MCP server**. You describe the failing scenario, the agent initializes a snapshot session, you reproduce the problem, and the agent collects the recorded snapshot. You don't need to press <kbd>F7</kbd>/<kbd>Alt</kbd>+<kbd>F7</kbd> or edit a snapshot launch configuration.
+
+The MCP server uses the same snapshot engine described earlier in this article, so how snapshots are initialized, recorded, and finalized is unchanged. It exposes the following tools that an agent calls on your behalf:
+
+| Tool | What it does | Manual equivalent |
+|------|--------------|-------------------|
+| Initialize snapshot debugging | Initializes a waiting snapshot for a set of snappoints, optionally scoped to a specific user. There's usually no session yet - the server records the next session that reproduces the scenario. | Start a session (<kbd>F7</kbd>). Learn more in [Initialize a snapshot debugging session](#initialize-a-snapshot-debugging-session) |
+| Get snapshot status | Reports whether the snapshot is waiting, recording, or finished. | List snapshots (<kbd>Shift</kbd>+<kbd>F7</kbd>). Learn more in [Status of a snapshot debugging session](#status-of-a-snapshot-debugging-session) |
+| Stop snapshot debugging | Finalizes the run and returns the recorded snapshot archive so the agent can debug it. | Finish a session (<kbd>Alt</kbd>+<kbd>F7</kbd>). Learn more in [Stop a snapshot debugging session](#stop-a-snapshot-debugging-session) |
+
+The snapshot the agent collects is the same recording you would produce manually, and it can contain customer privacy data. Handle it according to your privacy and compliance policies and delete it when it's no longer needed. You can open it in the Visual Studio Code snapshot debugger just as you would a downloaded snapshot file. See [Debugging a snapshot file](#debugging-a-snapshot-file).
+
+### Part of the Business Central MCP server
+
+The snapshot tools aren't a separate server - they're part of the [Business Central MCP server](../ai/mcp-overview.md), the same server that exposes your API pages to agents, surfaced as a developer debugging capability. To use them, provide **altool** with the `launchsnapshotmcpproxy` command - an MCP client you can set up with any MCP host (Claude CLI, GitHub Copilot CLI, Visual Studio Code, and so on), as shown in the following sections. Learn more in [Snapshot debugging MCP proxy](devenv-al-tool.md#snapshot-debugging-mcp-proxy).
+
+### Session ID is optional - arm the next reproduction or attach to a known session
+
+In most cases, you don't have a session yet, so don't pass a session ID. Snapshot debugging *arms* the server and records the next session that reproduces the problem. Describe the failing scenario to the agent - for example, *"A user gets an error when posting a sales order. Arm a snapshot on the posting codeunit so we can debug it."* - and, when the agent tells you it's armed, reproduce the scenario yourself (or have the affected user reproduce it). Optionally, the agent can scope the wait to a specific user.
+
+If you already know the session you want to record - for example, a session that's currently running - provide its session ID instead. The snapshot debugger then attaches to that session directly rather than waiting for the next reproduction.
+
+The snapshot is recorded on the server while you reproduce the scenario. If the environment moves or restarts before you stop it, the in-progress recording is lost and the agent reports that there's nothing to collect. When that happens, just arm a new snapshot and reproduce the scenario again.
+
+### What to tell the agent when you arm a snapshot
+
+Describe the scenario in natural language and the agent fills in the inputs to the **initialize snapshot debugging** tool for you. The more specific your prompt, the more precisely the agent arms the snapshot - so it helps to know what the tool accepts. All of its inputs are optional:
+
+| Input | What it's for | How to express it in a prompt |
+|-------|---------------|-------------------------------|
+| **Snappoints** | The specific AL lines to record. AL runtime errors are *always* captured automatically, so you only add snappoints when you also want to record lines that don't throw. | *"Add a snappoint at line 100 of codeunit 80."* |
+| **Client type** | The client surface that reproduces the scenario, so the server waits for a matching session. One of `WebClient` (the default), `WebServiceClient`, `Background`, or `ClientService`. | *"The error happens through a web service"* arms it for `WebServiceClient`. |
+| **Target user** | Whose next session to record, given as the user's security ID (a GUID). Omit it to record *your own* next session. | *"Wait for the next session of user `<user security ID>`."* |
+
+Each snappoint identifies an AL object and a line within it, using these fields:
+
+- `applicationObjectType` - the object type, for example `Codeunit`, `Page`, `Table`, or `Report`.
+- `applicationObjectId` **or** `applicationObjectName` - identify the object either by its ID or by its name (provide one).
+- `lineNumber` - the line to record, counted from the start of that object.
+
+For example, a snappoint on the sales-posting codeunit is `{ "applicationObjectType": "Codeunit", "applicationObjectId": 80, "lineNumber": 100 }`, or equivalently `{ "applicationObjectType": "Codeunit", "applicationObjectName": "Sales-Post", "lineNumber": 100 }`.
+
+Providing a session ID is optional. Omit it to arm and record the next session that reproduces the problem, or supply the ID of a session that's already running to attach to it directly.
+
+Putting it together, a fully specified prompt reads like: *"Arm a web client snapshot for the next session of user `<user security ID>`, with a snappoint at line 100 of codeunit 80 (Sales-Post), then tell me when to reproduce it."* A minimal prompt works too - *"Snapshot-debug why posting a sales order fails"* - because the agent defaults to your own next web client session and relies on the automatic capture of the AL error.
+
+### Set up the server
+
+The MCP server uses the `launchsnapshotmcpproxy` command from [ALTool](devenv-al-tool.md#snapshot-debugging-mcp-proxy), a .NET tool you install once:
+
+```bash
+dotnet tool install --global Microsoft.Dynamics.BusinessCentral.Development.Tools
+```
+
+Each MCP host runs that command as a stdio server. You pass the connection target (cloud environment or on-premises server) and the authentication method as command-line `args`. The examples in the following sections connect to a cloud sandbox. For on-premises servers, see [Snapshot debugging MCP proxy](devenv-al-tool.md#snapshot-debugging-mcp-proxy) for information about the `--server`, `--serverinstance`, and `--port` options, as well as the full option and authentication reference.
+
+> [!NOTE]  
+> The credentials aren't command-line arguments. The proxy has no option for them, so secrets never end up in `args`. The proxy reads them from its environment instead, which you set through the server's `env` block: for **cloud** you can either sign in interactively by using `altool auth login` (the proxy then reads the cached token automatically - no `env` block needed) or set `BC_ACCESS_TOKEN` (a Microsoft Entra access token); for **on-premises** `UserPassword` authentication set `BC_SERVER_USERNAME` and `BC_SERVER_PASSWORD`. Reference an environment variable rather than hardcoding the value so the secret stays out of the config file. In Visual Studio Code, the AL extension handles sign-in for you, so no `env` block is needed when the server is autoregistered.
+
+For a cloud environment, you can authenticate in one of two ways.
+
+**Interactive sign-in (recommended).** Sign in once as a user who has access to the environment:
+
+```bash
+altool auth login --environmenttype Sandbox --environmentname sandbox --tenant contoso.onmicrosoft.com
+```
+
+This method opens a browser and then stores the token - together with a refresh token - in a local cache shared by the Business Central AL dev tools. The proxy reads it automatically on every run and refreshes it silently, so you don't need a `BC_ACCESS_TOKEN` `env` block and you won't hit the one-hour token expiry.
+
+For example, after signing in once as shown previously, register the server with **no** `env` block at all - the proxy picks up the cached sign-in on its own:
+
+```json
+{
+  "mcpServers": {
+    "bc-snapshot": {
+      "command": "altool",
+      "args": ["launchsnapshotmcpproxy", "--environmenttype", "Sandbox", "--environmentname", "sandbox", "--tenant", "contoso.onmicrosoft.com"]
+    }
+  }
+}
+```
+
+This is the recommended approach: signing in interactively with `altool auth login` works against cloud sandbox and production environments alike. Only reach for `BC_ACCESS_TOKEN` when an interactive sign-in isn't possible.
+
+**Pre-acquired token (for headless or CI/CD).** When an interactive sign-in isn't possible, supply a token through `BC_ACCESS_TOKEN` instead. Acquire it by using the [Azure CLI](/cli/azure/) (after `az login` as a user who has access to the environment), requesting a token for the Business Central API scope:
+
+```bash
+az account get-access-token --scope https://api.businesscentral.dynamics.com/.default --query accessToken --output tsv
+```
+
+Assign the result to the `BC_ACCESS_TOKEN` environment variable that the `env` block references. This token is short-lived (about one hour), so refresh it when it expires. `BC_ACCESS_TOKEN` takes precedence over an interactive sign-in, so leave it unset when you use `altool auth login` - a stale value overrides the cached token and the connection fails. In Visual Studio Code, the AL extension acquires and refreshes the token for you.
+
+The host-specific examples in the following sections include a `BC_ACCESS_TOKEN` `env` block for the pre-acquired-token approach. If you signed in by using `altool auth login`, omit the `env` block entirely.
+
+#### Claude CLI
+
+Register the server by using the `claude mcp add` command:
+
+```bash
+claude mcp add bc-snapshot -e BC_ACCESS_TOKEN=$BC_ACCESS_TOKEN -- altool launchsnapshotmcpproxy --environmenttype Sandbox --environmentname sandbox --tenant contoso.onmicrosoft.com
+```
+
+This command is equivalent to the following stdio entry in your Claude configuration:
+
+```json
+{
+  "mcpServers": {
+    "bc-snapshot": {
+      "command": "altool",
+      "args": ["launchsnapshotmcpproxy", "--environmenttype", "Sandbox", "--environmentname", "sandbox", "--tenant", "contoso.onmicrosoft.com"],
+      "env": { "BC_ACCESS_TOKEN": "${BC_ACCESS_TOKEN}" }
+    }
+  }
+}
+```
+
+#### GitHub Copilot CLI
+
+Add the server to the Copilot CLI MCP configuration (`~/.copilot/mcp-config.json`):
+
+```json
+{
+  "mcpServers": {
+    "bc-snapshot": {
+      "type": "local",
+      "command": "altool",
+      "args": ["launchsnapshotmcpproxy", "--environmenttype", "Sandbox", "--environmentname", "sandbox", "--tenant", "contoso.onmicrosoft.com"],
+      "tools": ["*"],
+      "env": { "BC_ACCESS_TOKEN": "$BC_ACCESS_TOKEN" }
+    }
+  }
+}
+```
+
+#### Visual Studio Code
+
+In Visual Studio Code agent mode, you don't configure anything: the AL extension registers the **Business Central Snapshot MCP Server** automatically and derives the connection from your `launch.json`. Sign in by using the **AL: Sign in to Business Central Snapshot MCP** command when prompted, and then ask the agent to capture a snapshot. To wire it up manually in another editor, add an equivalent stdio entry to `.vscode/mcp.json`:
+
+```json
+{
+  "servers": {
+    "bc-snapshot": {
+      "type": "stdio",
+      "command": "altool",
+      "args": ["launchsnapshotmcpproxy", "--environmenttype", "Sandbox", "--environmentname", "sandbox", "--tenant", "contoso.onmicrosoft.com"],
+      "env": { "BC_ACCESS_TOKEN": "${env:BC_ACCESS_TOKEN}" }
+    }
+  }
+}
+```
+
+After the server is registered, prompt the agent - for example, *"A user gets an error posting a sales order; arm a snapshot on the posting codeunit, tell me when to reproduce it, then collect the snapshot"* - and it arms the snapshot, waits for you to reproduce the scenario, and returns the recording for offline debugging.
+
+### Permissions and limitations
+
+The agent connects by using your Business Central identity and acts entirely within your permissions. Every action is audited under your user, just like the manual workflow:
+
+- **Enable the MCP server** for the environment. To learn more, see [Configure the Business Central MCP server](../ai/configure-mcp-server.md).
+- **Snapshot debugging** needs the **D365 Snapshot Debug** permission set - the same permission required to create and download a snapshot by hand, as described at the [top of this article](#snapshot-debugging).
+- **The snapshot MCP server requires the D365 ATTACH DEBUG permission set for every snapshot** - including your own session, unlike the manual workflow where it's only needed to target another user. See [Attach and Debug Next](devenv-attach-debug-next.md). Without it, the request is denied.
+
+Finally, aside from the extra **D365 ATTACH DEBUG** requirement noted previously, the same permissions and time limits as the manual workflow apply throughout - the agent path adds no separate access model. The same time limits hold: an armed session is closed if it isn't attached to within 30 minutes, and a started session must be finished within 10 minutes. See [Snapshot debugging versus regular debugging](#snapshot-debugging-versus-regular-debugging).
+
 ## Related information
 
 [Debugging](devenv-debugging.md)  
