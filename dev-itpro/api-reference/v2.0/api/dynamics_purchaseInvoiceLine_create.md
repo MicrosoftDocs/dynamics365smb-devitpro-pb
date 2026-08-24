@@ -4,7 +4,7 @@ description: Creates a purchase invoice line object in Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/17/2026
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---

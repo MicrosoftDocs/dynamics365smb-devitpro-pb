@@ -4,7 +4,7 @@ description: Updates a  salesperson purchaser object in Dynamics 365 Business Ce
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/28/2025
+ms.date: 08/21/2026
 ms.author: solsen
 ---
 

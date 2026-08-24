@@ -1,23 +1,25 @@
 ---
-title: "UseTemporary Property"
-author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+title: UseTemporary Property Reference
+description: Learn where to use the UseTemporary property for report data items and XMLport table elements in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
-ms.assetid: 729f3649-f7c8-498d-8c16-961771f192a0
-ms.author: jswymer
-ms.reviewer: jswymer
+author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
- 
-# UseTemporary Property
+
+# UseTemporary property by object type
+
 > **Version**: _Available from runtime version 1.0._
 
-The UseTemporary property is applicable to the following types: 
-- [UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md) 
-- [UseTemporary Property (Report)](devenv-usetemporary-report-property.md)
+<!-- this article is manually created -->
 
-## Related information  
-[Properties](devenv-properties.md)   
-[XMLPort Object](../devenv-xmlport-object.md)    
-[Report Object](../devenv-report-object.md)  
-[UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)   
-[UseTemporary Property (Report)](devenv-usetemporary-report-property.md)
+The `UseTemporary` property applies to the following types:
+
+- [UseTemporary property for report data items](devenv-usetemporary-report-property.md)
+- [UseTemporary property for XMLport table elements](devenv-usetemporary-xmlport-property.md)
+
+## Related information
+
+[Temporary tables](../devenv-temporary-tables.md)  
+[Properties](devenv-properties.md)

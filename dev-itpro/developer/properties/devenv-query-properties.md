@@ -1,114 +1,98 @@
 ---
-title: "Query Properties"
-ms.author: solsen
-ms.date: 04/01/2021
+title: Query Object and Element Properties
+description: Review AL properties for query objects, data items, columns, and filters in Dynamics 365 Business Central, with links to each reference.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.reviewer: solsen
 ---
-# Query Properties
 
-This article lists properties that apply to the query object.  
+# Properties for query objects and elements
+
+<!-- this article is manually created -->
+
+This article lists properties that apply to query objects and their elements.
 
 [!INCLUDE[properties_note](../includes/properties_note.md)]
 
-|Property Name|Applies to|
-|-------------|-----------|  
-|[Access Property](devenv-access-property.md)|<ul><li>Query object</li></ul>|
-|[APIPublisher Property](devenv-apipublisher-property.md)|<ul><li>Query Object</li>|
-|[APIVersion Property (Query)](devenv-apiversion-query-property.md)|<ul><li>Query Object</li>|
-|[APIGroup Property](devenv-apigroup-property.md)|<ul><li>Query Object</li>|
-|[Caption Property](devenv-caption-property.md)|<ul><li>Query Object</li><li>Column control</li><li>Filter control</li></ul>|
-|[CaptionML Property](devenv-captionml-property.md)|<ul><li>Query Object</li><li>Column control</li><li>Filter control</li></ul>|
-|[ColumnFilter Property](devenv-columnfilter-property.md)|<ul><li>Column control</li><li>Filter control</li></ul>|
-|[DataAccessIntent Property](devenv-dataaccessintent-property.md)|<ul><li>Query Object</li></ul>|
-|[DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)|<ul><li>DataItem control</li></ul>|
-|[Description Property](devenv-description-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
-|[EntityCaption Property](devenv-entitycaption-property.md)|<ul><li>Query Object</li></ul>|
-|[EntityCaptionML Property](devenv-entitycaptionml-property.md)|<ul><li>Query Object</li></ul>|
-|[EntityName Property](devenv-entityname-property.md)|<ul><li>Query Object</li></ul>|
-|[EntitySetCaption Property](devenv-entitysetcaption-property.md)|<ul><li>Query Object</li></ul>|
-|[EntitySetCaptionML Property](devenv-entitysetcaptionml-property.md)|<ul><li>Query Object</li></ul>|
-|[EntitySetName Property](devenv-entitysetname-property.md)|<ul><li>Query Object</li></ul>|
-|[Method Property](devenv-method-property.md)|<ul><li>Column control</li></ul>|
-|[ObsoleteState Property](devenv-obsoletestate-property.md)|<ul><li>Query Object</li><li>Column control</li><li>DataItem control</li><li>Filter control</li></ul>|
-|[ObsoleteReason Property](devenv-obsoletereason-property.md)|<ul><li>Query Object</li><li>Column control</li><li>DataItem control</li><li>Filter control</li></ul>|
-|[OrderBy Property](devenv-orderby-property.md)|<ul><li>Query Object</li></ul>|
-|[Permissions Property](devenv-permissions-property.md)|<ul><li>Query Object</li></ul>|
-|[QueryCategory Property](devenv-querycategory-property.md)|<ul><li>Query Object</li></ul>|
-|[QueryType Property](devenv-querytype-property.md)|<ul><li>Query Object</li></ul>|
-|[ReadState Property](devenv-readstate-property.md)|<ul><li>Query Object</li></ul>|
-|[ReverseSign Property](devenv-reversesign-property.md)|<ul><li>Column control</li></ul>|
-|[TopNumberOfRows Property](devenv-topnumberofrows-property.md)|<ul><li>Query Object</li></ul>|
+## Query object properties
 
-<!--
+| Property |
+|----------|
+| [AboutText property](devenv-abouttext-property.md) |
+| [AboutTextML property](devenv-abouttextml-property.md) |
+| [AboutTitle property](devenv-abouttitle-property.md) |
+| [AboutTitleML property](devenv-abouttitleml-property.md) |
+| [Access property](devenv-access-property.md) |
+| [APIGroup property](devenv-apigroup-query-property.md) |
+| [APIPublisher property](devenv-apipublisher-query-property.md) |
+| [APIVersion property](devenv-apiversion-query-property.md) |
+| [Caption property](devenv-caption-property.md) |
+| [CaptionML property](devenv-captionml-property.md) |
+| [ContextSensitiveHelpPage property](devenv-contextsensitivehelppage-property.md) |
+| [DataAccessIntent property](devenv-dataaccessintent-property.md) |
+| [Description property](devenv-description-property.md) |
+| [EntityCaption property](devenv-entitycaption-property.md) |
+| [EntityCaptionML property](devenv-entitycaptionml-property.md) |
+| [EntityName property](devenv-entityname-property.md) |
+| [EntitySetCaption property](devenv-entitysetcaption-property.md) |
+| [EntitySetCaptionML property](devenv-entitysetcaptionml-property.md) |
+| [EntitySetName property](devenv-entitysetname-property.md) |
+| [HelpLink property](devenv-helplink-property.md) |
+| [InherentEntitlements property](devenv-inherententitlements-property.md) |
+| [InherentPermissions property](devenv-inherentpermissions-property.md) |
+| [ObsoleteReason property](devenv-obsoletereason-property.md) |
+| [ObsoleteState property](devenv-obsoletestate-property.md) |
+| [ObsoleteTag property](devenv-obsoletetag-property.md) |
+| [OrderBy property](devenv-orderby-property.md) |
+| [Permissions property](devenv-permissions-property.md) |
+| [QueryCategory property](devenv-querycategory-property.md) |
+| [QueryType property](devenv-querytype-property.md) |
+| [ReadState property](devenv-readstate-property.md) |
+| [TopNumberOfRows property](devenv-topnumberofrows-property.md) |
+| [UsageCategory property](devenv-usagecategory-property.md) |
 
-## Query Object Properties  
- The following properties apply to the query object as a whole.  
+## Query data item properties
 
-|Property Name|Query Object|
-|-------------|------------|
-|[Caption Property](devenv-caption-property.md)|X| 
-|[CaptionML Property](devenv-captionml-property.md)|X|
-|[Description Property](devenv-description-property.md)|X|
-|[ID Property](./devenv-properties.md)|X|
-|[Name Property](./devenv-properties.md)|X|
-|[OrderBy Property](devenv-orderby-property.md)|X|
-|[Permissions Property](devenv-permissions-property.md)|X|
-|[TopNumberOfRows Property](devenv-topnumberofrows-property.md)|X|
-|[ReadState Property](devenv-readstate-property.md)|X|
-|[EntityName Property](devenv-entityname-property.md)|X|
-|[EntitySetName Property](devenv-entitysetname-property.md)|X|
+| Property |
+|----------|
+| [DataItemLink property](devenv-dataitemlink-query-property.md) |
+| [DataItemTableFilter property](devenv-dataitemtablefilter-property.md) |
+| [Description property](devenv-description-property.md) |
+| [SqlJoinType property](devenv-sqljointype-property.md) |
 
-## Query Data Item Properties  
- The following properties apply to the **DataItem** control of a query.  
+## Query column properties
 
-|Property Name|Query Object|
-|-------------|------------|
-|[DataItemTable Property](./devenv-properties.md)|X|
-|[DataItemLink Property \(Query\)](devenv-dataitemlink-query-property.md)|X|
-|[DataItemLinkType Property](./devenv-sqljointype-property.md)|X|
-|[Description Property](devenv-description-property.md)|X| 
-|[DataItemTableFilter Property](./devenv-dataitemtablefilter-property.md)|X|
-|[ID Property](./devenv-properties.md)|X|  
-|[Indentation Property \(Query\)](./devenv-properties.md)|X|
-|[Name Property](./devenv-properties.md)|X| 
+| Property |
+|----------|
+| [Caption property](devenv-caption-property.md) |
+| [CaptionML property](devenv-captionml-property.md) |
+| [ColumnFilter property](devenv-columnfilter-property.md) |
+| [Description property](devenv-description-property.md) |
+| [Method property](devenv-method-property.md) |
+| [ObsoleteReason property](devenv-obsoletereason-property.md) |
+| [ObsoleteState property](devenv-obsoletestate-property.md) |
+| [ObsoleteTag property](devenv-obsoletetag-property.md) |
+| [ReverseSign property](devenv-reversesign-property.md) |
+| [ToolTip property](devenv-tooltip-property.md) |
+| [ToolTipML property](devenv-tooltipml-property.md) |
 
-## Query Column Properties  
+## Query filter properties
 
- The following properties apply to the **Column** control of a query.  
-|Property Name|Query Object|
-|-------------|------------|
-|[Caption Property](devenv-caption-property.md)|X|  
-|[CaptionML Property](devenv-captionml-property.md)|X|
-|[ColumnFilter Property](devenv-columnfilter-property.md)|X|
-|[DataSource Property](./devenv-properties.md)|X|
-|[Description Property](devenv-description-property.md)|X|
-|[ID Property](./devenv-properties.md)|X|
-|[Indentation Property \(Query\)](./devenv-properties.md)|X|
-|[Method Property](devenv-method-property.md)|X|
-|[MethodType Property](./devenv-properties.md)|X|
-|[Name Property](./devenv-properties.md)|X|
-|[ReverseSign Property](devenv-reversesign-property.md)|X|
+| Property |
+|----------|
+| [Caption property](devenv-caption-property.md) |
+| [CaptionML property](devenv-captionml-property.md) |
+| [ColumnFilter property](devenv-columnfilter-property.md) |
+| [Description property](devenv-description-property.md) |
+| [ObsoleteReason property](devenv-obsoletereason-property.md) |
+| [ObsoleteState property](devenv-obsoletestate-property.md) |
+| [ObsoleteTag property](devenv-obsoletetag-property.md) |
 
-## Query Filter Control Properties  
+## Related information
 
- The following properties apply to the **Filter** control of a query.  
-|Property Name|Query Object|
-|-------------|------------|
-|[Caption Property](devenv-caption-property.md)|X|
-|[CaptionML Property](devenv-captionml-property.md)|X|
-|[ColumnFilter Property](devenv-columnfilter-property.md)|X|
-|[DataSource Property](./devenv-properties.md)|X|
-|[Description Property](devenv-description-property.md)|X|
-|[ID Property](./devenv-properties.md)|X|
-|[Indentation Property \(Query\)](./devenv-properties.md)|X|
-|[Name Property](./devenv-properties.md)|X|
-
--->
-
-## Related information  
 [Properties](devenv-properties.md)  
-[Query Object](../devenv-query-object.md)  
-[Table and Table Extension Properties](devenv-table-properties.md)  
-[Page and Page Extension Properties Overview](devenv-page-property-overview.md)
+[Query object](../devenv-query-object.md)  
+[Table and table extension properties](devenv-table-property-overview.md)  
+[Page and page extension properties](devenv-page-property-overview.md)

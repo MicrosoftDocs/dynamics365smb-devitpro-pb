@@ -1,14 +1,16 @@
 ---
-title: "Demonstration License for Business Central On-Premises"
-description: Learn about the properties of the demo license for on-premises deployments.
+title: Demonstration License for Business Central On-Premises
+description: Learn about the capabilities and limitations of the demonstration license for Dynamics 365 Business Central on-premises deployments.
 ms.author: solsen
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.date: 03/23/2023
+ms.date: 08/21/2026
 ms.reviewer: solsen
 ---
 
-# Demonstration License for Business Central On-Premises
+# Capabilities of the demonstration license
+
+<!-- this article is manually created -->
 
 The demo license is automatically installed when you install the **Demo Option**. The license gives access to any [!INCLUDE [prod_short](../includes/prod_short.md)] application, including the Base Application, and full access to app development.
 
@@ -19,18 +21,18 @@ The demo license is automatically installed when you install the **Demo Option**
 
 ## Properties of the demo license
 
-When the demo license is installed, you can:  
-  
-* Start ten simultaneous client sessions on any platform.  
-* Create up to two companies.  
-* Support an unlimited number of web users.  
-* Run in any supported language.
-* Use all application functionality, including add-on products, local extensions and customizations in current and previous versions. This means that you can run and modify all object types within the range 1 to 99,999,999.  
-  
+When the demo license is installed, you can:
+
+- Start 10 simultaneous client sessions on any platform.
+- Create up to two companies.
+- Support an unlimited number of web users.
+- Run in any supported language.
+- Use all application functionality, including add-on products, local extensions, and customizations in current and previous versions. You can run and modify all object types within the range 1 to 99,999,999.
+
 ## Limitations of the demo license
 
-The demo license doesn't let you enter dates in months other than November, December, January, and February in any [!INCLUDE [prod_short](../includes/prod_short.md)] clients.
+The demo license doesn't let you enter dates in months other than November, December, January, and February in [!INCLUDE [prod_short](../includes/prod_short.md)] clients.
 
 ## Related information
 
-[Deploying the Demonstration Environment](../../deployment/deploy-demonstration-environment.md)  
+[Deploying the demonstration environment](../../deployment/deploy-demonstration-environment.md)

@@ -4,7 +4,7 @@ description: Use the Business Central API to retrieve current approval entries, 
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/05/2026
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---

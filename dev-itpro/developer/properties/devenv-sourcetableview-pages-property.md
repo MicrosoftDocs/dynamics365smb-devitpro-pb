@@ -1,52 +1,73 @@
 ---
-title: SourceTableView Property (Pages)
-description: Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.
-ms.date: 11/13/2024
+title: SourceTableView Property for Pages
+description: Learn how the SourceTableView property sets the key, sort order, and filters for records on a page in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
-ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# SourceTableView Property (Pages)
+# SourceTableView property on pages
+
 > **Version**: _Available from runtime version 1.0._
 
-Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.  
-  
-## Applies to  
-  
-- Pages  
+<!-- this article is manually created, and the parent node is devenv-sourcetableview-property.md -->
+
+Specifies the key, sort order, and filters that define the view of the source table on a page.
+
+## Applies to
+
+- Pages
 
 ## Example
 
-```AL
+```al
 page 50101 MyCustomers
 {
     PageType = List;
     SourceTable = Customer;
-    // The view of the Customer table is sorted by the Name and "No." fields on descending order.
-    SourceTableView = sorting (Name, "No.") order(descending)
- where ("Balance (LCY)" = filter (>= 50000), "Sales (LCY)" = filter (<> 0));
+    SourceTableView = sorting(Name) order(descending)
+        where("Balance (LCY)" = filter(>= 50000), "Sales (LCY)" = filter(<> 0));
+
     layout
     {
         area(Content)
         {
-            repeater(MyRepeater)
+            repeater(Customers)
             {
-                field(Name; Name) { }
-                field(Address; Address) { }
-                field("Balance (LCY)"; "Balance (LCY)") { }
+                field(Name; Rec.Name)
+                {
+                    Caption = 'Name';
+                    ToolTip = 'Specifies the customer name.';
+                    ApplicationArea = All;
+                }
+                field(Address; Rec.Address)
+                {
+                    Caption = 'Address';
+                    ToolTip = 'Specifies the customer address.';
+                    ApplicationArea = All;
+                }
+                field(Balance; Rec."Balance (LCY)")
+                {
+                    Caption = 'Balance (LCY)';
+                    ToolTip = 'Specifies the customer balance in local currency.';
+                    ApplicationArea = All;
+                }
             }
         }
     }
 }
 ```
 
-Learn more about how you can scan, find, and limit records in a list in [Sorting, searching, and filtering lists](/dynamics365/business-central/ui-enter-criteria-filters).
+For information about finding and limiting records in a list, see [Sorting, searching, and filtering lists](/dynamics365/business-central/ui-enter-criteria-filters).
 
-## Remarks  
- 
-When you combine a descending sort order on SourceTableView with overriding the OnFindRecord, you may experience that the page displays the last record instead of the first when the page opens. You can resolve this condition by adding `Rec.FindFirst` in the OnOpenPage trigger, or using `Find(-)` in the OnFindRecord trigger.
-  
-## Related information  
+## Remarks
 
+If you combine a descending `SourceTableView` sort order with an overridden `OnFindRecord` trigger, the page might display the last record instead of the first when it opens. To control the initial record, use `Rec.FindFirst()` in the `OnOpenPage` trigger or implement the required search behavior in `OnFindRecord`.
+
+## Related information
+
+[Page object](../devenv-page-object.md)  
+[SourceTableView property for XMLports](devenv-sourcetableview-xmlports-property.md)  
 [Properties](devenv-properties.md)

@@ -4,7 +4,7 @@ description: Deletes a purchase credit memo object in Dynamics 365 Business Cent
 author: SusanneWindfeldPedersen
 ms.topic: how-to
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---

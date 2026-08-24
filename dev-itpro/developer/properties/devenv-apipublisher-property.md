@@ -1,26 +1,26 @@
 ---
-title: "APIPublisher Property"
-description: "Sets APIPublisher property for pages and queries."
+title: APIPublisher Property for Pages and Queries
+description: Learn where to use the APIPublisher property to define the publisher segment for API page and API query endpoints in Dynamics 365 Business Central.
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 08/21/2026
 ms.topic: reference
-ms.assetid: 18e6df94-639e-4c5f-99ed-5729037bb719
-caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
- 
-# APIPublisher Property 
+
+# APIPublisher property reference
+
 > **Version**: _Available from runtime version 1.0._
 
-The APIPublisher property is applicable to the following types: 
-- [APIPublisher Property (Page)](devenv-APIPublisher-page-property.md)   
-- [APIPublisher Property (Query)](devenv-APIPublisher-query-property.md)   
+<!-- this article is manually created -->
 
+The `APIPublisher` property applies to the following object types:
 
-## Related information  
-[Properties](devenv-properties.md)   
-[Page Object](../devenv-page-object.md)   
-[Query Object](../devenv-query-object.md)   
-[APIPublisher Property (Page)](devenv-APIPublisher-page-property.md)  
-[APIPublisher Property (Query)](devenv-APIPublisher-query-property.md) 
+- [APIPublisher property for API pages](devenv-apipublisher-page-property.md)
+- [APIPublisher property for API queries](devenv-apipublisher-query-property.md)
+
+## Related information
+
+[Properties](devenv-properties.md)  
+[Page object](../devenv-page-object.md)  
+[Query object](../devenv-query-object.md)

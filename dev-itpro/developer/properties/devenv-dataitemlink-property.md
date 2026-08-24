@@ -1,23 +1,25 @@
 ---
-title: DataItemLink property
-description: The DataItemLink property for AL for Business Central can apply to reports and to queries.
-ms.date: 01/08/2025
+title: DataItemLink Property Reference
+description: Learn where to use the DataItemLink property to link data items in reports and queries in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# DataItemLink property
+# DataItemLink property by object type
+
 > **Version**: _Available from runtime version 1.0._
 
-The DataItemLink property is applicable to the following types: 
+<!-- this article is manually created -->
 
-- [DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md)  
-- [DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)
-  
+The `DataItemLink` property applies to the following object types:
+
+- [DataItemLink property for reports](devenv-dataitemlink-reports-property.md)
+- [DataItemLink property for queries](devenv-dataitemlink-query-property.md)
+
 ## Related information
 
-[OnPreDataItem trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   
-[DataItemLinkReference property](devenv-dataitemlinkreference-property.md)  
-[DataItemLink property (reports)](devenv-dataitemlink-reports-property.md)  
-[DataItemLink property (query)](devenv-dataitemlink-query-property.md)
+[OnPreDataItem trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)  
+[DataItemLinkReference property](devenv-dataitemlinkreference-property.md)

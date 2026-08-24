@@ -1,35 +1,36 @@
 ---
-title: "Type (Report) Property"
-description: "Sets the format type of the report layout."
-ms.author: solsen
-ms.date: 02/04/2022
+title: Type Property for Report Layouts
+description: Learn how the Type property specifies the format of a report layout in Dynamics 365 Business Central and review the supported values.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- this topic is manually created, parent node is devenv-type-property.md -->
+# Type property on report layouts
 
-# Type (Report) Property
-> **Version**: _Available or changed with runtime version 9.0._
+> **Version**: _Available from runtime version 9.0._
 
-Sets the format type of the report layout.
+<!-- this article is manually created, and the parent node is devenv-type-property.md -->
+
+Specifies the format of a report layout.
 
 ## Applies to
--   Report Layout
 
-## Property Value
+- Report layouts
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**RDLC**|Specifies that the format of this report layout is RDLC.|
-|**Word**|Specifies that the format of this report layout is Word.|
-|**Excel**|Specifies that the format of this report layout is Excel.|
-|**Custom**|Specifies that the format of this report layout is a user-defined custom type. This requires the MimeType property to be set.|
+## Property value
 
+| Value | Description |
+|-------|-------------|
+| `RDLC` | Defines an RDLC report layout. |
+| `Word` | Defines a Word report layout. |
+| `Excel` | Defines an Excel report layout. |
+| `Custom` | Defines a custom report layout. Set the [MimeType property](devenv-mimetype-property.md) for this type. |
 
 ## Related information
 
-[Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
-[Type (Entitlement) Property](devenv-type-entitlement-property.md)
+[Report layout properties](devenv-report-property-overview.md)  
+[Type property for entitlement objects](devenv-type-entitlement-property.md)  
+[Properties](devenv-properties.md)

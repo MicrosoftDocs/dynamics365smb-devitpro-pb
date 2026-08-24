@@ -4,7 +4,7 @@ description: Updates a  purchase order line object in Dynamics 365 Business Cent
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/08/2026
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---

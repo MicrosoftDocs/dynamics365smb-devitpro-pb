@@ -4,7 +4,7 @@ description: Represents a posted approval entry in Business Central, including i
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/05/2026
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
