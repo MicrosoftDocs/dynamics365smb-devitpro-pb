@@ -1,76 +1,65 @@
 ---
-title: "Promoted (Action) Property"
-description: "Sets the value that indicates whether the selected action is elevated to a promoted category in the action bar."
-ms.date: 07/08/2021
+title: Promoted Property for Page Actions
+description: Learn how the legacy Promoted property adds a page action to a promoted category in Dynamics 365 Business Central and review its behavior.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Promoted (Action) Property
+# Promoted property on page actions
 
 > **Version**: _Available from runtime version 1.0._
 
-<!-- this topic is manually created, parent node is devenv-promoted-property.md -->
+<!-- this article is manually created, and the parent node is devenv-promoted-property.md -->
 
-Sets the value that indicates whether the selected action is promoted, which means that it is elevated to a promoted category in the action bar, as well as the group where is it defined. **Promoted** can also be set on Profiles, see [Promoted (Profiles) Property](devenv-promoted-profile-property.md).
+Specifies whether a page action is added to a promoted category in the action bar.
 
-> [!NOTE]  
-> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](../devenv-promoted-actions.md).
+> [!IMPORTANT]
+> The `Promoted` property is part of the legacy syntax for promoted actions. We recommend that you use the `actionref` syntax introduced in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2. Learn more in [Promoted actions](../devenv-promoted-actions.md).
 
-> [!NOTE]  
-> Removing the Promoted property on a published action is considered a breaking change. For more information, see [AppSourceCop Error AS0031](../analyzers/appsourcecop-as0031.md) and [UICop Warning AW0013](../analyzers/uicop-aw0013.md).
+> [!NOTE]
+> Removing the `Promoted` property from a published action is a breaking change. Learn more in [AppSourceCop error AS0031](../analyzers/appsourcecop-as0031.md).
 
-  
-## Applies to  
-  
-- Page actions  
+The `Promoted` property also applies to profiles. Learn more in [Promoted property for profiles](devenv-promoted-profile-property.md).
 
-## Property Value
+## Applies to
 
-**true** promotes the action; otherwise **false**.
-  
+- Page actions
+
+## Property value
+
+Set the property to `true` to promote the action. Otherwise, set it to `false`. The default is `false`.
+
 ## Example
 
-The following code illustrates how to set the **Promoted** property.
- 
-```AL
-page 50110 PageName
+The following example uses the legacy syntax to promote an action to the **Process** category.
+
+```al
+action(MyAction)
 {
-    PageType = Card;
+    Caption = 'Process order';
+    ApplicationArea = All;
+    Promoted = true;
+    PromotedCategory = Process;
 
-    actions
-    {
-        // Adds the action called "My Actions" to the Action menu 
-        area(Processing)
-        {
-            action("My Actions")
-            {
-                Promoted = true;
-                PromotedCategory = Process;
-                ApplicationArea = All;
-
-...
+    trigger OnAction()
+    begin
+        Message('The order was processed.');
+    end;
+}
 ```
 
 ## Remarks
 
-This feature allows you to make a copy of an action and place it on the on the action bar where it is easier to find. 
+Use the [PromotedCategory property](devenv-promotedcategory-property.md) to specify where the promoted action appears. The `Promoted` property has an effect on actions on `Card`, `Document`, `List`, `ListPlus`, and `Worksheet` pages. It has no effect on actions in cue groups.
 
-In order to specify where the promoted action should be placed, you must also set the [PromotedCategory property](devenv-promotedcategory-property.md).
+For information about using `Promoted` with `Scope`, see [Scope property for page actions](devenv-scope-action-property.md).
 
-For more information about promoting actions, see [Promoted Actions](../devenv-promoted-actions.md).
+## Related information
 
-> [!NOTE]  
-> The Promoted property only has an effect on actions defined in pages of type Card, Document, List, ListPlus and Worksheet. The Promoted property has also no effect on actions defined in cuegroups.
-
-For more information about the Promoted property used together with the Scope property, see [Scope property](devenv-scope-action-property.md).
-
-> [!NOTE] 
-> On [!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)] and [!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)], only promoted actions are displayed.  
-  
-## Related information  
-
-[PromotedIsBig Property](devenv-promotedisbig-property.md)  
-[PromotedOnly Property](devenv-promotedonly-property.md)  
-[Promoted (Profiles) Property](devenv-promoted-profile-property.md)
-[Actions Overview](../devenv-actions-overview.md)  
+[PromotedIsBig property](devenv-promotedisbig-property.md)  
+[PromotedOnly property](devenv-promotedonly-property.md)  
+[Promoted property for profiles](devenv-promoted-profile-property.md)  
+[Actions overview](../devenv-actions-overview.md)

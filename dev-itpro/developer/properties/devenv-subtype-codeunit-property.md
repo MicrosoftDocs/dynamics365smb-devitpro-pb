@@ -1,64 +1,58 @@
 ---
-title: "SubType Property (Codeunit)"
-ms.date: 04/01/2021
+title: SubType Property for Codeunits
+description: Learn how the SubType property defines the purpose and runtime behavior of a codeunit in Dynamics 365 Business Central and review its values.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# SubType Property (Codeunit)
+# SubType property on codeunits
+
 > **Version**: _Available from runtime version 1.0._
 
-Sets the codeunit to method as a normal, test, test runner, or upgrade codeunit.  
-  
-## Applies to  
+<!-- this article is manually created, and the parent node is devenv-subtype-property.md -->
 
-- Codeunits  
-  
-## Property Value  
-  
-|**Value**|**Description**|  
-|---------------|---------------------|  
-|**Normal**|A normal codeunit. This is the default setting.|  
-|**Test**|A test codeunit includes AL methods that test the application. <!-- For more information, see [How to: Create Test Codeunits and Test Methods](../devenv-how-to-create-test-codeunits-and-test-methods.md).-->|  
-|**TestRunner**|A test runner codeunit manages the execution of one or more test codeunits. <!-- For more information, see [How to: Create a Test Runner Codeunit](../devenv-how-to-create-a-test-runner-codeunit.md).-->|  
-|**Upgrade**|An upgrade codeunit includes AL methods for synchronizing changes to a table definition in an application with the business data table in SQL Server and migrating existing data. <!-- For more information, see [Upgrade Codeunits](../devenv-upgrade-codeunits.md).-->|  
-|**Install**|An install codeunit includes AL methods for performing operations unconcerned with the extension code itself during the initial installation and the reinstallation of an extension.|
+Specifies the purpose of a codeunit.
+
+## Applies to
+
+- Codeunits
+
+## Property value
+
+| Value | Description |
+|-------|-------------|
+| `Normal` | Defines a general-purpose codeunit. This value is the default. |
+| `Test` | Defines a codeunit that contains test methods. |
+| `TestRunner` | Defines a codeunit that runs one or more test codeunits. |
+| `Upgrade` | Defines a codeunit that contains data-upgrade triggers. |
+| `Install` | Defines a codeunit that contains extension-installation triggers. |
 
 ## Syntax
 
-```AL
+```al
 SubType = Normal;
 ```
-  
+
 ## Remarks
 
-You can create test codeunits and test runner codeunits to test your application.  
-  
-You write test methods as AL code in the test codeunits. When a test codeunit runs, it executes the OnRun trigger and then executes each test method in the codeunit, records the outcome in a log, and displays the results in a message window. The continuation of the test method run is dependent on successful run of the OnRun trigger. The difference between a normal codeunit and a test codeunit is their execution at run time. When a normal codeunit is run, if one of its methods fails, then the codeunit is terminated. When a test codeunit is run, if a method fails, then the method is terminated, but the codeunit continues to run the remaining methods.  
-  
-A test runner codeunit runs the test codeunits that are programmed to run from its OnRun trigger. When a test runner codeunit runs, it does the following:  
-  
-- Calls the [OnBeforeTestRun Trigger](../triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md) before each test codeunit, and the OnRun trigger and test method is executed.  
-  
-- Calls the [OnAfterTestRun Trigger](../triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md) after each test codeunit, and the OnRun trigger and test method is executed.  
-  
-- Indicates that a test method has failed if it invokes the user interface.  
+Codeunits that have the `SubType` property set to `Test` or `TestRunner` support automated testing of your application.
 
-For more information, see [Testing the Application](../devenv-testing-application.md).  
+- A `Test` codeunit contains the test methods that test your application. When a test codeunit runs, it executes the `OnRun` trigger, and then executes each test method in the codeunit. Unlike a normal codeunit, where a failing method terminates the codeunit, a test codeunit continues to run its remaining test methods even if one test method fails. Learn more in [Test codeunits and test methods](../devenv-test-codeunits-and-test-methods.md).
 
-When developing a new extension version, you can use upgrade codeunits to upgrade data from the previous version and make it compatible with the new one. <!-- The data upgrade code is implemented through upgrade triggers, which are invoked when you run the upgrade process. --> For more information, see [Upgrading Extensions](../devenv-upgrading-extensions.md). 
+- A `TestRunner` codeunit manages the execution of one or more test codeunits and can integrate with external test management and reporting frameworks. It supports the `OnBeforeTestRun` and `OnAfterTestRun` triggers, which run immediately before and after each test codeunit runs, so you can do preprocessing and postprocessing, such as initialization or logging test results. Learn more in [Test runner codeunits](../devenv-testrunner-codeunits.md).
 
-For more information on how to use install codeunits to write extension install code, see [Writing Extension Install Code](../devenv-extension-install-code.md). 
+An `Upgrade` codeunit contains the code that upgrades data from a previous extension version so that it's compatible with the current version. Upgrade codeunits support system triggers, such as `OnUpgradePerCompany` and `OnUpgradePerDatabase`, that run when you start the data upgrade process. Learn more in [Upgrading extensions](../devenv-upgrading-extensions.md).
 
-## Related information  
+An `Install` codeunit contains code that runs operations, such as initializing data, when an extension is installed for the first time or reinstalled. Install codeunits support the `OnInstallAppPerCompany` and `OnInstallAppPerDatabase` triggers. Learn more in [Writing extension install code](../devenv-extension-install-code.md).
 
-[Properties](devenv-properties.md)  
-[Codeunit Properties](devenv-codeunit-properties.md)  
-[Subtype BLOB Property](devenv-subtype-blob-property.md)  
-[Testing the Application](../devenv-testing-application.md)  
-<!--
-[How to: Create Test Codeunits and Test Methods](How-to-Create-Test-Codeunits-and-Test-Methods.md)   
-[How to: Create Handler Methods](How-to-Create-Handler-Methods.md)   
-[Walkthrough: Testing Purchase Invoice Discounts](Walkthrough-Testing-Purchase-Invoice-Discounts.md)   
-[Codeunits](../devenv-codeunits.md) 
--->
+## Related information
+
+[Codeunit properties](devenv-codeunit-properties.md)  
+[Test codeunits and test methods](../devenv-test-codeunits-and-test-methods.md)  
+[Test runner codeunits](../devenv-testrunner-codeunits.md)  
+[Upgrade codeunits](../devenv-upgrading-extensions.md)  
+[Install codeunits](../devenv-extension-install-code.md)  
+[SubType property for BLOB fields](devenv-subtype-blob-property.md)

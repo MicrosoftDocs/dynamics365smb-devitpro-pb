@@ -1,51 +1,56 @@
 ---
-title: "Enabled (Profile) Property"
+title: Enabled Profile Property Reference
+description: Learn how the Enabled property controls whether a profile is available to users in Dynamics 365 Business Central and review its default value.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 08/21/2026
 ms.topic: reference
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Enabled (Profile) Property
-> **Version**: _Available from runtime version 1.0._
+# Enabled property on profiles
 
-Specifies whether the profile can be used by users or not.
+> **Version**: _Available from runtime version 4.0._
 
-For information about the **Enabled** property for pages, keys and table fields, see [Enabled Property](devenv-enabled-property.md).
+<!-- this article is manually created, and the parent node is devenv-enabled-property.md -->
 
-## Applies to  
+Specifies whether users can use the profile.
+
+For information about the `Enabled` property for pages, keys, and table fields, see [Enabled property](devenv-enabled-property.md).
+
+## Applies to
 
 - Profiles
 
-## Property Value
+## Property value
 
-**True** on profiles that should be available to the end-user; otherwise, **false**. **True** is default.
+Set the property to `true` to make the profile available to users. Otherwise, set it to `false`. The default is `true`.
 
 ## Syntax
 
-```AL
+```al
 Enabled = false;
 ```
 
 ## Example
 
-The following code illustrates how to set the **Enabled** property. **True** is default, but just used here for illustration purposes.
- 
-```AL
+The following example explicitly enables a profile.
+
+```al
 profile MyProfile
-{ 
-    Description = 'Some internal comment that only the Dev can see'; 
-    Caption = 'My User-friendly Name'; 
-    ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)' 
-    RoleCenter = MyRoleCenter; 
-    Enabled = true; 
-    Promoted = true; 
+{
+    Description = 'Sales order processor profile';
+    Caption = 'Sales order processor';
+    ProfileDescription = 'Creates and processes sales orders.';
+    RoleCenter = MyRoleCenter;
+    Enabled = true;
+    Promoted = true;
     Customizations = MyCustomization;
-} 
+}
 ```
 
-## Related information  
+## Related information
 
-[Table Properties](devenv-table-properties.md)  
-[Properties](devenv-properties.md)  
+[Profile object](../devenv-profile-object.md)  
+[Enabled property](devenv-enabled-property.md)  
+[Properties](devenv-properties.md)

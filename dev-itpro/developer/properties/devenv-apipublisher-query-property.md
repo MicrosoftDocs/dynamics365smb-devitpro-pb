@@ -1,33 +1,35 @@
 ---
-title: "APIPublisher Property (Query)"
-description: "Sets publisher of the API endpoint that the query is exposed in."
+title: APIPublisher Property for API Queries
+description: Learn how the APIPublisher property defines the publisher segment of an API query endpoint in Dynamics 365 Business Central and review its syntax.
 ms.author: solsen
-ms.date: 06/23/2023
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
- 
-# APIPublisher Property (Query)
+
+# APIPublisher property on API queries
+
 > **Version**: _Available from runtime version 1.0._
 
-<!-- this topic is manually created, parent node is devenv-apipublisher-property.md -->
+<!-- this article is manually created, and the parent node is devenv-apipublisher-property.md -->
 
-Sets the publisher of the API endpoint the query is exposed in. he APIPublisher contains the first part of the URL for the endpoint. The syntax for providing a publisher is illustrated in the example below, and is typically the name of the company that owns the API. The syntax for providing a publisher is illustrated in the example below:
+Specifies the publisher segment of the API endpoint that exposes the query. The publisher is the first custom API segment after `api` in the endpoint URL.
 
-## Applies to  
+## Applies to
 
-- Query object 
+- Query object
 
 ## Syntax
-```AL
+
+```al
 APIPublisher = 'contoso';
 ```
 
-For a full example, see [API Query Type](../devenv-api-querytype.md).
+For a complete example, see [API query type](../devenv-api-querytype.md).
 
+## Related information
 
-## Related information  
-[Properties](devenv-properties.md)   
-[Query Object](../devenv-query-object.md)  
-[APIPublisher Property (Page)](devenv-apipublisher-page-property.md)  
+[Properties](devenv-properties.md)  
+[Query object](../devenv-query-object.md)  
+[APIPublisher property for API pages](devenv-apipublisher-page-property.md)

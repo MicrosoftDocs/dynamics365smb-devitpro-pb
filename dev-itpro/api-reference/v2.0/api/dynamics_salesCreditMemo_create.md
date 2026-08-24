@@ -4,7 +4,7 @@ description: Creates a sales credit memo object in Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 02/16/2026
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---

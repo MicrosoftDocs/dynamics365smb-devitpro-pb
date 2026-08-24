@@ -1,21 +1,25 @@
 ---
-title: "SubType Property"
-ms.date: 04/01/2021
+title: SubType Property Reference in AL
+description: Learn where to use the SubType property for BLOB table fields and codeunits in Dynamics 365 Business Central and compare their values.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# SubType Property    
+# SubType property by object type
+
 > **Version**: _Available from runtime version 1.0._
-  
-The SubType property is applicable to the following types:
 
-- [Subtype Property (BLOB)](devenv-subtype-blob-property.md)  
-- [SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   
+<!-- this article is manually created -->
 
-## Related information  
+The `SubType` property applies to the following types:
 
-[Properties](devenv-properties.md)  
-[Codeunit Properties](devenv-codeunit-properties.md)  
-[Subtype Property (Blob)](devenv-subtype-blob-property.md)  
-[SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)     
+- [SubType property for BLOB fields](devenv-subtype-blob-property.md)
+- [SubType property for codeunits](devenv-subtype-codeunit-property.md)
+
+## Related information
+
+[Codeunit properties](devenv-codeunit-properties.md)  
+[Properties](devenv-properties.md)

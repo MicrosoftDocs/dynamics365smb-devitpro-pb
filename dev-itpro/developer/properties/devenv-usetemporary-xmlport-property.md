@@ -1,37 +1,42 @@
 ---
-title: "UseTemporary Property (XMLport)"
-author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+title: UseTemporary Property for XMLport Table Elements
+description: Learn how the UseTemporary property imports XMLport records into an in-memory temporary table in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
-ms.assetid: 729f3649-f7c8-498d-8c16-961771f192a0
-ms.author: jswymer
-ms.reviewer: jswymer
+author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
- 
-# UseTemporary Property (XMLport)
+
+# UseTemporary property on XMLport table elements
+
 > **Version**: _Available from runtime version 1.0._
 
-Sets whether a temporary table is created to store the records imported using the XmlPort.
+<!-- this article is manually created, and the parent node is devenv-usetemporary-property.md -->
 
-## Applies to  
+Specifies whether an XMLport table element uses a temporary table.
+
+## Applies to
 
 - XMLport table elements
 
+## Property value
+
+Set the property to `true` to use a temporary table. Otherwise, set it to `false`. The default is `false`.
 
 ## Syntax
 
-```AL
+```al
 UseTemporary = true;
 ```
 
 ## Remarks
 
-If the data that you are importing has a different structure than the table in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] that you want to insert it into, you could import the data into a temporary table. The temporary table holds the data in cache without writing it to the database. You can then modify the data before inserting it into the database.
+You can import records into a temporary table when the incoming data must be transformed before it's inserted into a physical table. The temporary table keeps the records in memory and doesn't write them to the Business Central database.
 
-## Related information  
+## Related information
 
-[Properties](devenv-properties.md)   
-[XMLPort Object](../devenv-xmlport-object.md)   
-[UseTemporary Property (Report)](devenv-usetemporary-report-property.md)  
-[Temporary Tables](../devenv-temporary-tables.md)
-
+[XMLport object](../devenv-xmlport-object.md)  
+[UseTemporary property for report data items](devenv-usetemporary-report-property.md)  
+[Temporary tables](../devenv-temporary-tables.md)  
+[Properties](devenv-properties.md)

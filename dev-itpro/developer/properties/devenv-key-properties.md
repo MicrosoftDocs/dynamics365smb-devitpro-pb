@@ -1,27 +1,38 @@
 ---
-title: "Key Properties"
-ms.date: 04/01/2021
+title: Table Key Property Reference in AL
+description: Review the AL properties that control table keys and SQL indexes in Dynamics 365 Business Central, with links to details for each property.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Key Properties
+# Properties for table keys
 
-The keys associated with a table have properties that describe their behavior, just as tables and fields do. When you create a key, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] automatically suggests a number of default values for these properties. Depending on the purpose of the key, you will sometimes want to change these default values.  
+<!-- this article is manually created -->
+
+Table keys have properties that control their behavior and the corresponding indexes in SQL Server.
 
 [!INCLUDE[properties_note](../includes/properties_note.md)]
 
-|Property Name|Use|  
-|-------------------|---------|  
-|[Enabled](devenv-enabled-property.md)|Determines whether the system will maintain any indexes for the key. You cannot use a key unless it is enabled.|  
-|[Key](./devenv-properties.md)|Defines the key name and fields.|  
-|[SumIndexFields](devenv-sumindexfields-property.md)|Determines the fields for which the system will maintain a SumIndex.|  
-|[MaintainSQLIndex](./devenv-maintainsqlindex-property.md)|Determines whether a SQL Server index corresponding to the fields in the key should be created.|  
-|[MaintainSIFTIndex](./devenv-maintainsiftindex-property.md)|Determines whether SIFT indexes (indexed views) structures should be created in SQL Server to support the corresponding SumIndexFields for the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] key.|  
-|[Clustered](devenv-clustered-property.md)|Sets a value that indicates whether the key defines the clustered index for the table.|  
-|[SQLIndex](./devenv-sqlindex-property.md)|Sets the actual fields and field order that are used in the corresponding index on SQL Server.|  
-|[Unique](devenv-unique-property.md)|Sets whether the value of a key must be unique.| 
+| Property | Description |
+|----------|-------------|
+| [Clustered property](devenv-clustered-property.md) | Specifies whether the key defines the clustered index for the table. |
+| [Description property](devenv-description-property.md) | Specifies a description for the key. |
+| [Enabled property](devenv-enabled-property.md) | Specifies whether the system maintains indexes for the key. |
+| [IncludedFields property](devenv-includedfields-property.md) | Specifies non-key fields to include in the SQL index. |
+| [MaintainSIFTIndex property](devenv-maintainsiftindex-property.md) | Specifies whether SQL Server maintains indexed views for the key's `SumIndexFields`. |
+| [MaintainSQLIndex property](devenv-maintainsqlindex-property.md) | Specifies whether SQL Server creates an index for the key. |
+| [ObsoleteReason property](devenv-obsoletereason-property.md) | Explains why the key is obsolete. |
+| [ObsoleteState property](devenv-obsoletestate-property.md) | Specifies whether the key is obsolete. |
+| [ObsoleteTag property](devenv-obsoletetag-property.md) | Specifies the version in which the key became obsolete. |
+| [SQLIndex property](devenv-sqlindex-property.md) | Specifies the fields and field order of the corresponding SQL Server index. |
+| [SumIndexFields property](devenv-sumindexfields-property.md) | Specifies the fields for which the system maintains a SumIndex. |
+| [Unique property](devenv-unique-property.md) | Specifies whether key values must be unique. |
 
-## Related information  
+## Related information
 
-[Table Keys](../devenv-table-keys.md)
+[Table keys](../devenv-table-keys.md)  
+[Table and table extension properties](devenv-table-property-overview.md)  
+[Properties](devenv-properties.md)

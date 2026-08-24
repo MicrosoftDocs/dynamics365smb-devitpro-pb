@@ -4,7 +4,7 @@ description: Deletes a purchase credit memo line object in Dynamics 365 Business
 author: SusanneWindfeldPedersen
 ms.topic: how-to
 ms.devlang: al
-ms.date: 04/08/2026
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---

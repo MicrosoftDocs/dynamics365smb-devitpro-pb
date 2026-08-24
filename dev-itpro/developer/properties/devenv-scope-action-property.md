@@ -1,37 +1,36 @@
 ---
-title: "Scope (Action) Property"
-description: Specifies the scope of the action to be page-specific or repeater control-specific in Business Central
-ms.date: 09/05/2022
+title: Scope Property for Page Actions
+description: Learn how the Scope property controls whether a page action applies to the page or a repeater in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Scope (Action) Property
+# Scope property on page actions
 
 > **Version**: _Available from runtime version 1.0._
 
-<!-- this topic is manually created, parent node is devenv-scope-property.md -->
+<!-- this article is manually created, and the parent node is devenv-scope-property.md -->
 
-Specifies the scope of the action to be either page-specific, or specific to a repeater control. The **Scope** property has two options; **Page** and **Repeater**.  
-  
-The **Scope** property is only used on pages that include a repeater control and it offers a way to determine the scope of an action to be the page or to be specific to the repeater control. In the repeater control, actions display in the shortcut menu that is available for each row in a list. The default behavior of the **Scope** property is **Page**.
+Specifies whether an action applies to the page or to a repeater control. The property has the values `Page` and `Repeater`. The default is `Page`.
 
+Use `Repeater` on pages that include a repeater control. The action then appears in the shortcut menu for each row in the list.
 
-The Scope property has the following effect:  
-  
--   On a [!INCLUDE[nav_web](../includes/nav_web_md.md)], if the **Scope** property is set to **Page**, the action will be shown in the action bar. If the **Scope** property is set to **Repeater** the action will be shown in both the repeater control shortcut menu and in the action bar.  
-  
--   On a [!INCLUDE[nav_tablet](../includes/nav_tablet_md.md)], if the **Scope** property is set to **Page**, the action will be shown in the page action menu. If the **Scope** property is set to **Repeater**, the action is moved from the page action menu to the repeater control shortcut menu.  
+## Applies to
 
--   On a [!INCLUDE[nav_phone](../includes/nav_phone_md.md)], if the **Scope** property is set to **Page**, the action will be shown in the page action menu. If the **Scope** property is set to **Repeater**, there are two scenarios:  
-  
-    -   If the list **is** associated with a card page, then the action is not available on the list page anywhere, and you should add the action to the card page.  
-  
-    -   If the list **is not** associated with a card page, and the user taps a row in the list to view details, the action is available on the details page.  
-    
-  
+- Page actions
+
+## Property value
+
+| Value | Description |
+|-------|-------------|
+| `Page` | The action applies to the page. |
+| `Repeater` | The action applies to the repeater control. |
+
 ## Related information
 
 [Properties](devenv-properties.md)  
-[Scope (Table) Property](devenv-scope-table-property.md)  
-[Defining Action Scope for Business Central Pages](../devenv-defining-action-scope-for-pages.md)
+[Scope property for tables](devenv-scope-table-property.md)  
+[Define action scope for Business Central pages](../devenv-defining-action-scope-for-pages.md)

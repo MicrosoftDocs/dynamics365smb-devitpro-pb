@@ -1,33 +1,35 @@
 ---
-title: "APIVersion Property (Query)"
-description: "Sets the versions of the API endpoint that the query is exposed in."
+title: APIVersion Property for API Queries
+description: Learn how the APIVersion property defines one or more versions for an API query endpoint in Dynamics 365 Business Central and review its syntax.
 ms.author: solsen
-ms.date: 06/23/2023
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
- 
-# APIVersion Property (Query)
-> **Version**: _Available from runtime version 1.0._ 
 
-<!-- this topic is manually created, parent node is devenv-apiversion-property.md -->
+# APIVersion property on API queries
 
-Sets the version(s) of the API endpoint the query is exposed in. If the `APIVersion` isn't specified, the default value is `beta`. The syntax for providing versions is illustrated in the example below:
+> **Version**: _Available from runtime version 1.0._
 
-## Applies to  
+<!-- this article is manually created, and the parent node is devenv-apiversion-property.md -->
 
-- Query object 
+Specifies one or more versions of the API endpoint that exposes the query. If you don't set the `APIVersion` property, the default value is `beta`.
+
+## Applies to
+
+- Query object
 
 ## Syntax
-```AL
+
+```al
 APIVersion = 'beta', 'v1.0';
 ```
 
-For a full example, see [API Query Type](../devenv-api-querytype.md).
+For a complete example, see [API query type](../devenv-api-querytype.md).
 
+## Related information
 
-## Related information  
-[Properties](devenv-properties.md)   
-[Query Object](../devenv-query-object.md)  
-[APIVersion Property (Page)](devenv-apiversion-page-property.md)  
+[Properties](devenv-properties.md)  
+[Query object](../devenv-query-object.md)  
+[APIVersion property for API pages](devenv-apiversion-page-property.md)
