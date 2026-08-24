@@ -4,7 +4,7 @@ description: Deletes subscriptions  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 11/20/2024
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---

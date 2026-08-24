@@ -4,7 +4,7 @@ description: API documentation for integration with Microsoft Graph
 author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 08/21/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---

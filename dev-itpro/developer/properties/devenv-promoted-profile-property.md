@@ -1,43 +1,50 @@
 ---
-title: "Promoted (Profile) Property"
-ms.date: 04/01/2021
+title: Promoted Property for Profiles
+description: Learn how the Promoted property controls whether a profile is available in Role Explorer in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Promoted (Profile) Property
-> **Version**: _Available from runtime version 1.0._
+# Promoted property on profiles
 
-<!-- this topic is manually created, parent node is devenv-promoted-property.md -->
+> **Version**: _Available from runtime version 4.0._
 
-For profiles the **Promoted** property specifies whether or not the profile is available in the **Role Explorer** to the user. **Promoted** can also be set on Page Actions, see [Promoted (Actions) Property](devenv-promoted-action-property.md).
-  
-## Applies to  
-  
+<!-- this article is manually created, and the parent node is devenv-promoted-property.md -->
+
+Specifies whether the profile is available to users in **Role Explorer**. The profile must also be enabled.
+
+The `Promoted` property also applies to page actions. Learn more in [Promoted property for page actions](devenv-promoted-action-property.md).
+
+## Applies to
+
 - Profiles
-  
-## Property Value  
 
-**True** if the profile is available from the **Role Explorer** in the UI; otherwise, **false**. The default is **false**.  
+## Property value
+
+Set the property to `true` to make the profile available in **Role Explorer** when the profile is enabled. Otherwise, set it to `false`. The default is `false`.
 
 ## Example
 
-The following code illustrates how to set the **Promoted** property.
- 
-```AL
+The following example makes a profile available in **Role Explorer**.
+
+```al
 profile MyProfile
-{ 
-    Description = 'Some internal comment that only the Dev can see'; 
-    Caption = 'My User-friendly Name'; 
-    ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)' 
-    RoleCenter = MyRoleCenter; 
-    Enabled = true; 
-    Promoted = true; 
+{
+    Description = 'Sales order processor profile';
+    Caption = 'Sales order processor';
+    ProfileDescription = 'Creates and processes sales orders.';
+    RoleCenter = MyRoleCenter;
+    Enabled = true;
+    Promoted = true;
     Customizations = MyCustomization;
-} 
+}
 ```
 
-## Related information  
+## Related information
 
 [Properties](devenv-properties.md)  
-[Promoted (Actions) Property](devenv-promoted-action-property.md) 
+[Profile properties](devenv-profile-properties.md)  
+[Promoted property for page actions](devenv-promoted-action-property.md)

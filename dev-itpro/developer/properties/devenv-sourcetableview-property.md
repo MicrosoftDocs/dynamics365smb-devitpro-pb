@@ -1,23 +1,26 @@
 ---
-title: SourceTableView Property
-description: The SourceTableView property is available for pages and for XMLPorts.
-ms.author: solsen
-ms.date: 11/13/2024
+title: SourceTableView Property Reference
+description: Learn where to use the SourceTableView property to define keys, sorting, and filters for pages and XMLports in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# SourceTableView Property
+# SourceTableView property by object type
 
 > **Version**: _Available from runtime version 1.0._
 
-The SourceTableView property is applicable to the following types:
+<!-- this article is manually created -->
 
-- [SourceTableView Property (Page)](devenv-sourcetableview-pages-property.md)  
-- [SourceTableView Property (XMLport)](devenv-sourcetableview-xmlports-property.md)  
+The `SourceTableView` property applies to the following object types:
+
+- [SourceTableView property for pages](devenv-sourcetableview-pages-property.md)
+- [SourceTableView property for XMLports](devenv-sourcetableview-xmlports-property.md)
 
 ## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing extensions](../devenv-dev-overview.md)  
+[Properties](devenv-properties.md)

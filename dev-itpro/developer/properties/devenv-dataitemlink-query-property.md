@@ -1,50 +1,55 @@
 ---
-title: DataItemLink Property (Query)
-description: Sets a reference between one or more fields of the data item table and data item or data items above it.
-ms.date: 01/08/2025
+title: DataItemLink Property for Queries
+description: Learn how the DataItemLink property joins query data items by matching fields in their source tables in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
 author: jswymer
 ms.reviewer: solsen
+ms.author: solsen
 ---
 
-# DataItemLink property (query)
+# DataItemLink property on query data items
 
 > **Version**: _Available from runtime version 1.0._
 
-Sets a reference between one or more fields of the data item table and data item or data items above it.  
-  
-## Applies to  
-  
-- Query data items  
-  
-## Property value  
+<!-- this article is manually created, and the parent node is devenv-dataitemlink-property.md -->
 
-`Field=Table.ReferenceField`  
-  
+Specifies links between fields in a query data item and fields in one or more data items above it.
+
+## Applies to
+
+- Query data items
+
+## Property value
+
+`Field=AncestorDataItem.ReferenceField`  
+
 - `Field` is the name of the field in the table of the lower data item.  
-- `Table` is the name of the table of the upper data item.  
-- `ReferenceField` is the name of the field in the table of the upper data item.  
-  
-> [!NOTE]  
-> You can link to more than one column. Separate multiple column links with a comma.
-  
-## Remarks  
+- `AncestorDataItem` is the name of an ancestor data item.  
+- `ReferenceField` is the name of a field in the table of the ancestor data item.
 
-The DataItemLink property works together with the SqlJoinType property to combine records from tables into a dataset. The DataItemLink property sets up an "equal to" (=) comparison between two fields of the data item tables. When the query is run, the query compares each row of the two data items to find records that having matching values for the fields. Records that have a matching field values are combined into a row in the resulting dataset. In some cases, there are records that don't have matching values. Set the [SQLJoinType property](devenv-sqljointype-property.md) to include records that don't have matching values. When setting up a data item link between two data items, you always set up the DataItemLink property on the lower data item in the query object.
-  
-> [!NOTE]  
-> If the [SQLJoinType property](devenv-sqljointype-property.md) is set to `Cross Join`, then you can't set the DataItemLink property. For more information, see [Linking and joining data items to define the query dataset](../devenv-query-links-joins.md).
+> [!NOTE]
+> You can link to more than one column. Separate multiple column links with a comma.
+
+## Remarks
+
+The `DataItemLink` property works with the [SqlJoinType property](devenv-sqljointype-property.md) to combine records from tables into a dataset. It defines an equal-to (`=`) comparison between fields in the data item tables. The query combines records that have matching field values. Set `DataItemLink` on the lower data item in the query object.
+
+> [!NOTE]
+> You can't set `DataItemLink` when `SqlJoinType` is set to `CrossJoin`. Learn more in [Linking and joining data items to define the query dataset](../devenv-query-links-joins.md).
+>
+> You can't use `FlowField` or `FlowFilter` fields in a query `DataItemLink`.
 
 ## Example
 
-A Salesperson table and a Sales Header table have the Code column and Salesperson\_Code field in common, respectively. To create a link between these two tables, you add the following value in the DataItemLink property of the **Sales Header** data item.  
-  
-```AL
-DataItemLink = "Salesperson Code" = Salesperson.Code  
-```  
+A `Salesperson` data item and a `Sales Header` data item contain the `Code` and `Salesperson Code` fields, respectively. To link the data items, set the `DataItemLink` property on the `Sales Header` data item.
+
+```al
+DataItemLink = "Salesperson Code" = Salesperson.Code;
+```
 
 ## Related information
 
 [Query object](../devenv-query-object.md)  
-[SQLJoinType property](devenv-sqljointype-property.md)
-[DataItemLink property (reports)](devenv-dataitemlink-reports-property.md)  
+[SqlJoinType property](devenv-sqljointype-property.md)  
+[DataItemLink property for reports](devenv-dataitemlink-reports-property.md)

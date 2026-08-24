@@ -1,26 +1,26 @@
 ---
-title: "APIVersion Property"
-description: "The APIVersion property for pages and queries."
+title: APIVersion Property for Pages and Queries
+description: Learn where to use the APIVersion property to define supported versions for API page and API query endpoints in Dynamics 365 Business Central.
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 08/21/2026
 ms.topic: reference
-ms.assetid: 18e6df94-639e-4c5f-99ed-5729037bb719
-caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
- 
-# APIVersion Property 
+
+# APIVersion property reference
+
 > **Version**: _Available from runtime version 1.0._
 
-The APIVersion property is applicable to the following types: 
-- [APIVersion Property (Page)](devenv-apiversion-page-property.md)   
-- [APIVersion Property (Query)](devenv-apiversion-query-property.md)   
+<!-- this article is manually created -->
 
+The `APIVersion` property applies to the following object types:
 
-## Related information  
-[Properties](devenv-properties.md)   
-[Page Object](../devenv-page-object.md)   
-[Query Object](../devenv-query-object.md)   
-[APIVersion Property (Page)](devenv-apiversion-page-property.md)  
-[APIVersion Property (Query)](devenv-apiversion-query-property.md) 
+- [APIVersion property for API pages](devenv-apiversion-page-property.md)
+- [APIVersion property for API queries](devenv-apiversion-query-property.md)
+
+## Related information
+
+[Properties](devenv-properties.md)  
+[Page object](../devenv-page-object.md)  
+[Query object](../devenv-query-object.md)

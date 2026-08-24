@@ -1,36 +1,40 @@
 ---
-title: "OptionMembers Property (Table field)"
-ms.date: 12/29/2022
+title: OptionMembers Property for Table Fields
+description: Learn how the OptionMembers property defines the available values for an Option field in Dynamics 365 Business Central and see an example.
+ms.date: 08/21/2026
 ms.topic: reference
 ms.author: solsen
 ms.reviewer: solsen
+author: SusanneWindfeldPedersen
 ---
 
-# OptionMembers Property (Table field)
+# OptionMembers property on table fields
+
 > **Version**: _Available from runtime version 1.0._
 
-Sets the list of options that are available in the table field that is currently selected. 
-  
-## Applies to  
-  
-- Table fields  
+<!-- this article is manually created, and the parent node is devenv-optionmembers-property.md -->
+
+Specifies the values that are available in an `Option` table field.
+
+## Applies to
+
+- Table fields
 
 ## Example
 
-In the code snippet below, you can see how the property is set.
+The following example defines three option values.
 
-```AL
-field(2; OptionField; option)
+```al
+field(2; OptionField; Option)
 {
-    OptionMembers = "Option with ", "spaces and ", "other symbols!";
+    OptionMembers = Open,Released,Closed;
 }
 ```
 
-Setting the `OptionMembers` property is necessary to enable the `OptionCaptionML` property. For more information, see [OptionCaptionML Property](devenv-optioncaptionml-property.md).
+The `OptionCaptionML` property is used only when the field has an `OptionMembers` property. Learn more in [OptionCaptionML property](devenv-optioncaptionml-property.md).
 
 ## Related information
 
 [Properties](devenv-properties.md)  
-[Report Object](../devenv-report-object.md)     
-[Report Properties](devenv-report-properties.md)   
-[OptionMembers Property (Report)](devenv-optionmembers-report-property.md)
+[OptionMembers property for reports](devenv-optionmembers-report-property.md)  
+[Option data type](../methods-auto/option/option-data-type.md)

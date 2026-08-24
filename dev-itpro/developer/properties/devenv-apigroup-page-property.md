@@ -1,35 +1,36 @@
 ---
-title: "APIGroup Property (Page)"
-description: "Sets the group of the API endpoint that the page is exposed in."
+title: APIGroup Property for API Pages
+description: Learn how the APIGroup property defines the group segment of an API page endpoint in Dynamics 365 Business Central and review its syntax.
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
 
-# APIGroup Property (Page)
+# APIGroup property on API pages
 
-<!-- this topic is manually created, parent node is devenv-apigroup-property.md -->
+<!-- this article is manually created, and the parent node is devenv-apigroup-property.md -->
 
 > **Version**: _Available from runtime version 1.0._
 
-Sets the group of the API endpoint the page is exposed in.  The syntax for providing versions is illustrated in the example below:
+Specifies the group segment of the API endpoint that exposes the page. The following example defines the group as `app1`.
 
-## Applies to  
+## Applies to
 
-- Page object 
+- Page object
 
 ## Syntax
-```AL
+
+```al
 APIGroup = 'app1';
 ```
 
-> [!NOTE]  
-> The property **APIGroup** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](../devenv-api-pagetype.md).
+> [!NOTE]
+> You can set the `APIGroup` property only when the [PageType property](devenv-pagetype-property.md) is set to `API`. Learn more in [API page type](../devenv-api-pagetype.md).
 
-## Related information  
+## Related information
 
-[Properties](devenv-properties.md)   
-[Page Object](../devenv-page-object.md)  
-[APIGroup Property (Query)](devenv-apigroup-query-property.md)  
+[Properties](devenv-properties.md)  
+[Page object](../devenv-page-object.md)  
+[APIGroup property for API queries](devenv-apigroup-query-property.md)

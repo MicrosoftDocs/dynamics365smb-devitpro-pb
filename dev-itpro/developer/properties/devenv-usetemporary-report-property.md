@@ -1,42 +1,42 @@
 ---
-title: "UseTemporary Property (Report)"
-author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+title: UseTemporary Property for Report Data Items
+description: Learn how the UseTemporary property uses an in-memory temporary table for a report data item in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
-ms.assetid: 729f3649-f7c8-498d-8c16-961771f192a0
-ms.author: jswymer
-ms.reviewer: jswymer
+author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
- 
-# UseTemporary Property (Report)
+
+# UseTemporary property on report data items
+
 > **Version**: _Available from runtime version 1.0._
 
-Sets whether a temporary table is used to store the data set that is returned for columns of a data item.
+<!-- this article is manually created, and the parent node is devenv-usetemporary-property.md -->
 
-## Applies to  
+Specifies whether a report data item uses a temporary table.
+
+## Applies to
 
 - Report data items
 
-## Property Value  
+## Property value
 
-**True** to use a temporary table; otherwise, **false**. The default value is **false**.  
+Set the property to `true` to use a temporary table. Otherwise, set it to `false`. The default is `false`.
 
 ## Syntax
 
-```AL
+```al
 UseTemporary = true;
 ```
 
-## Remarks  
+## Remarks
 
-A temporary table is used as a buffer or intermediate storage for data. A temporary table is not stored in the database, but is only held in memory until the report is closed. A temporary table is useful when the column data is not mapped directly to a field in the database but is instead the result of a process or operation, such as an aggregation of data from several columns. If a temporary table is not used, the data must be handled by AL code.  
-  
-For an example of the use of the UseTemporary property, see report 1306 in the [!INCLUDE[demolong](../includes/demolong_md.md)].  
+A temporary table stores data in memory instead of in the Business Central database. You can use it as a buffer for calculated or aggregated data that isn't read directly from a physical table.
 
-## Related information  
+## Related information
 
-[Properties](devenv-properties.md)   
-[Report Object](../devenv-report-object.md)   
-[UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)   
-[Temporary Tables](../devenv-temporary-tables.md)
-
+[Report object](../devenv-report-object.md)  
+[UseTemporary property for XMLport table elements](devenv-usetemporary-xmlport-property.md)  
+[Temporary tables](../devenv-temporary-tables.md)  
+[Properties](devenv-properties.md)

@@ -1,18 +1,25 @@
 ---
-title: "Promoted Property"
-ms.date: 04/01/2021
+title: Promoted Property Reference in AL
+description: Learn where to use the Promoted property for page actions and profiles in Dynamics 365 Business Central and compare runtime availability.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Promoted Property
-> **Version**: _Available from runtime version 1.0._
+# Promoted property by object type
 
-The **Promoted** property is applicable to the following types:
+<!-- this article is manually created -->
 
-- [Promoted (Actions) Property](devenv-promoted-action-property.md)  
-- [Promoted (Profile) Property](devenv-promoted-profile-property.md)
+The `Promoted` property applies to the following object types:
 
-## Related information  
+- [Promoted property for page actions](devenv-promoted-action-property.md)
+- [Promoted property for profiles](devenv-promoted-profile-property.md)
 
+The property is available for page actions from runtime version 1.0 and for profiles from runtime version 4.0.
+
+## Related information
+
+[Promoted actions](../devenv-promoted-actions.md)  
 [Properties](devenv-properties.md)

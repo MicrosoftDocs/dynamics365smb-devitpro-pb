@@ -1,7 +1,7 @@
 ---
-title: Properties overview
-description: Explore Dynamics 365 Business Central Developer Properties for objects like tables, pages, and reports. Maximize efficiency with our guide.
-ms.date: 04/26/2024
+title: AL Properties Overview for Business Central
+description: Explore AL properties for tables, pages, reports, queries, and other objects in Dynamics 365 Business Central development.
+ms.date: 08/21/2026
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -10,42 +10,48 @@ ms.reviewer: solsen
 
 # Properties overview
 
-This section describes the properties that are available to developers in [!INCLUDE [prod_short](../includes/prod_short.md)] for controlling the behavior of objects, like tables, pages, and reports.
+<!-- this article is manually created -->
 
-> [!TIP]  
-> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
+Properties control the behavior of AL objects and their elements, such as fields, actions, data items, and columns.
 
-There are different properties for various AL object types. Some properties can be set on the object-level, and others pertain to specific controls of the object. Properties are added at the beginning of the code for the object or control, after the its definition, by using the syntax: `Property_name = value;`. For example:
+> [!TIP]
+> If you know the name of a data type, method, property, or trigger, use the **Filter by title** field above the table of contents to find its article. Otherwise, browse the table of contents.
+
+Different properties apply to different AL object types and elements. Set object-level properties after the object declaration. Set element properties inside the element definition. Use the syntax `<PropertyName> = <Value>;`.
+
+The following example sets properties on a page object and one of its fields:
 
 ```al
 page 50100 MyPage
 {
-    // Page object properties
+    Caption = 'Customer names';
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Customer;
-    
+
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            group(General)
             {
-                field(Name; Name)
+                field(Name; Rec.Name)
                 {
-                    // Field properties
-                    ApplicationArea = All;                                     
+                    Caption = 'Name';
+                    ToolTip = 'Specifies the customer name.';
+                    ApplicationArea = All;
                 }
             }
         }
     }
+}
 ```
 
 > [!TIP]
-> Use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to trigger IntelliSense and get assistance on selecting a property and help on its syntax.
+> Use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to open IntelliSense and see the properties available for the current object or element.
 
 ## Related information
 
 [Methods](../methods-auto/library.md)  
-[Triggers](../triggers-auto/devenv-triggers.md)  
+[Triggers](../triggers-auto/devenv-triggers.md)

@@ -1,50 +1,54 @@
 ---
-title: DataItemLink Property (Reports)
-description: Sets the corresponding fields from two data items that are linked by the DataItemLinkReference property. The link is defined as a property of the child data item.
-ms.date: 01/08/2025
+title: DataItemLink Property for Reports
+description: Learn how the DataItemLink property filters a child report data item by matching its fields with fields in an ancestor data item.
+ms.date: 08/21/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
+ms.author: solsen
 ---
 
-# DataItemLink property (reports)
+# DataItemLink property on report data items
 
 > **Version**: _Available from runtime version 1.0._
 
-Sets the corresponding fields from two data items that are linked by the [DataItemLinkReference property](./devenv-dataitemlinkreference-property.md). The link is defined as a property of the child data item.  
-  
-## Applies to  
-  
-- Data items  
-- Reports  
-  
+<!-- this article is manually created, and the parent node is devenv-dataitemlink-property.md -->
+
+Specifies matching fields in two data items that are linked by the [DataItemLinkReference property](devenv-dataitemlinkreference-property.md). Set `DataItemLink` on the child data item. The referenced data item can be its parent or another ancestor.
+
+## Applies to
+
+- Report data items
+
 ## Remarks
 
-The following syntax shows the DataItemLink property.  
-  
-`<field>=FIELD\(\<reference field>)`
-  
-The following table describes **field** and **reference field**.  
-  
-|Syntax|Description|  
-|------------|-----------------|  
-|\<field>|A field from the child data item|  
-|\<reference field>|A field from the less indented (parent) data item that is identified by the [DataItemLinkReference property](./devenv-dataitemlinkreference-property.md)|  
-  
-The DataItemLink property sets a filter on the child data item. This filter selects records that contain the same field value in both the parent and child data items. 
-  
-The following example illustrates using this property. You have two data items, a parent and child. The parent data item is a list of customers, called Customer. The child data item contains a record of all sales orders. In the customer table, the primary key is the customer number, which is stored in the No. field. In the table that contains sales data, each record contains this customer number as a foreign key in a field called Sell-to Customer No. You set the value of the [DataItemLinkReference property](./devenv-dataitemlinkreference-property.md) on the child data item to the parent data item. You set the DataItemLink property of the child data item to the following value.  
-  
-**Sell-to Customer No.=FIELD(No.)**  
-  
-You now have a filter on the records in the child data item. This filter only displays records that pertain to the currently selected customer record. You can also accomplish the same task by placing the following AL statement in the [OnPreDataItem trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md) for the child data item.  
-  
-```AL
-SetRange("Sell-to Customer No.",Customer."No.");  
-```  
-  
+Use the following syntax:
+
+`<Field>=field(<ReferenceField>)`
+
+| Placeholder | Description |
+|-------------|-------------|
+| `<Field>` | A field from the child data item. |
+| `<ReferenceField>` | A field from the parent or ancestor data item identified by the [DataItemLinkReference property](devenv-dataitemlinkreference-property.md). |
+
+To link more than one pair of fields, separate the links with commas.
+
+The `DataItemLink` property sets a filter on the child data item. The filter selects records that have the same field values in the referenced and child data items.
+
+For example, a `Customer` parent data item and a `Sales Header` child data item both contain a customer number. Set `DataItemLinkReference` on the child data item to the `Customer` data item. Then set `DataItemLink` on the child data item as follows:
+
+```al
+DataItemLink = "Sell-to Customer No." = field("No.");
+```
+
+This filter selects sales headers for the current customer. You can create the same filter in the [OnPreDataItem trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md) of the child data item:
+
+```al
+SetRange("Sell-to Customer No.", Customer."No.");
+```
+
 ## Related information
 
-[OnPreDataItem trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   
-[DataItemLinkReference property](./devenv-dataitemlinkreference-property.md)   
-[DataItemLink property (query)](devenv-dataitemlink-query-property.md)
+[OnPreDataItem trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)  
+[DataItemLinkReference property](devenv-dataitemlinkreference-property.md)  
+[DataItemLink property for queries](devenv-dataitemlink-query-property.md)

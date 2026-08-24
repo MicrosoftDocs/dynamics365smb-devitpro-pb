@@ -1,37 +1,45 @@
 ---
-title: "Width Property (XMLport)"
-ms.date: 04/01/2021
+title: Width Property for XMLport Elements
+description: Learn how the Width property sets the number of characters in fixed-text XMLport elements and attributes in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
-ms.assetid: de3d7d92-255f-4d76-ade2-3eb8e23e7d61
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Width Property (XMLport)
+# Width property on XMLport elements
+
 > **Version**: _Available from runtime version 1.0._
 
-Sets the width of a data item of an XMLport.  
-  
-## Applies to  
+<!-- this article is manually created, and the parent node is devenv-width-property.md -->
 
--   Xml Port Text Element
--   Xml Port Field Element
--   Xml Port Table Element
--   Xml Port Field Attribute
--   Xml Port Text Attribute
+Specifies the number of characters in an XMLport element or attribute.
+
+## Applies to
+
+- XMLport text elements
+- XMLport field elements
+- XMLport table elements
+- XMLport field attributes
+- XMLport text attributes
+
+## Property value
+
+Set the property to an integer. The default is `0`.
 
 ## Syntax
 
-```AL
-Width = 1;
+```al
+Width = 10;
 ```
-  
-## Remarks  
 
-This property is used only if the [Format Property \(XMLports\)](devenv-format-property.md) is **Fixed Text**.  
-  
-The value is an integer that defines the number of characters in the field.  
- 
-## Related information  
+## Remarks
 
-[XMLport Properties](devenv-xmlport-properties.md)
+The property is used only when the XMLport [Format property](devenv-format-property.md) is set to `FixedText`.
+
+## Related information
+
+[XMLport properties](devenv-xmlport-properties.md)  
+[Width property for table and page fields](devenv-width-property.md)  
+[Properties](devenv-properties.md)

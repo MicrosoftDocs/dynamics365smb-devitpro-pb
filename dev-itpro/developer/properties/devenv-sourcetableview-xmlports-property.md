@@ -1,31 +1,37 @@
 ---
-title: "SourceTableView Property (XMLports)"
-ms.date: 04/01/2021
+title: SourceTableView Property for XMLports
+description: Learn how the SourceTableView property sets the key, sort order, and filters for an XMLport table element in Dynamics 365 Business Central.
+ms.date: 08/21/2026
 ms.topic: reference
-ms.assetid: f49d8c45-f2e6-4c96-a53b-31ddd1883e3b
-caps.latest.revision: 4
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# SourceTableView Property (XMLports)
+# SourceTableView property on XMLport table elements
+
 > **Version**: _Available from runtime version 1.0._
 
-Sets the key, sort order, and filter of the source table presented to the user.
-  
-## Applies to  
+<!-- this article is manually created, and the parent node is devenv-sourcetableview-property.md -->
 
-- Table elements in XMLports  
+Specifies the key, sort order, and filters for the source table of an XMLport table element.
+
+## Applies to
+
+- XMLport table elements
 
 ## Syntax
 
-```AL
-SourceTableView = SORTING(Code);
+```al
+SourceTableView = sorting(Code);
 ```
- 
-## Remarks  
 
-To sort a set of table fields in the table view, use the **sorting** keyword. To sort the records in ascending or descending order, use the **order** keyword.  And, to apply a set of filters in the table view, use the **where** keyword.
+## Remarks
 
-## Related information  
+Use `sorting` to select a key, `order` to specify ascending or descending order, and `where` to filter records.
 
+## Related information
+
+[SourceTableView property for pages](devenv-sourcetableview-pages-property.md)  
+[XMLport properties](devenv-xmlport-properties.md)  
 [Properties](devenv-properties.md)
