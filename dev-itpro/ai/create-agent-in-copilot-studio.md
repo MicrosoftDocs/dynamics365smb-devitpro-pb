@@ -25,7 +25,7 @@ Business Central provides two model‑aware tools that agents can use to interac
 
 [![Shows how agents work between Business Central and Copilot Studio](../developer/media/integrate-copilot-studio.svg)](../developer/media/integrate-copilot-studio.svg#lightbox)
 
-After you create an agent, you can publish agents into multiple platforms or channels, like live websites and Microsoft 365 Copilot, or messaging platforms like Teams and Facebook.
+After you create an agent, you can publish agents into multiple platforms or channels, like live websites and Microsoft Copilot, or messaging platforms like Teams and Facebook.
 
 Learn more about Copilot Studio and agents in [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
 

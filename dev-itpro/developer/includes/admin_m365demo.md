@@ -38,7 +38,7 @@ Expected result: Verify that these two companies are available in the initial [!
 
 #### Understand the differences between experiences
 
-All three experiences support the same core Business Central scenarios and include Microsoft 365 apps, such as Office apps, Teams, and Microsoft 365 Copilot.
+All three experiences support the same core Business Central scenarios and include Microsoft 365 apps, such as Office apps, Teams, and Microsoft Copilot.
 
 The main differences are in the Power Platform configuration—specifically, Dynamics 365 apps availability and Dataverse and AI Builder default setup. The following table summarizes the key differences across tenants created from different experiences.
 

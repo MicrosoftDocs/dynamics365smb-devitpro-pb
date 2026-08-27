@@ -16,7 +16,7 @@ ms.collection:
 
 > **APPLIES TO:** Business Central online
 
-The Business Central MCP Server enables AI clients to connect to your environments, allowing agents within those clients to perform a range of interactions and tasks. Customers and employees can conversationally engage with Business Central data and logic from various channels, like Microsoft 365 Copilot, Teams, Visual Studio Code, and websites.
+The Business Central MCP Server enables AI clients to connect to your environments, so agents within those clients can perform a range of interactions and tasks. Customers and employees can conversationally engage with Business Central data and logic from various channels, like Microsoft Copilot, Teams, Visual Studio Code, and websites.
 
 With the MCP Server configured, agents can perform tasks such as:
 
