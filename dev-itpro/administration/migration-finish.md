@@ -18,7 +18,18 @@ This article explains tasks you do in the final phase of cloud migration&mdash;t
 > [!TIP]
 > To keep track of which of tasks you did so far, use the [Post Migration Checklist](https://businesscentral.dynamics.com/?page=4020) page to check off tasks as you go along. To open the checklist, go to **Cloud Migration Setup** page then select **Actions** > **Setup checklist**.
 
-## Step 1 Disable the cloud migration
+## Step 1 Migrate record links and notes
+
+Record links and notes aren't automatically migrated to the target environment. Instead, they're stored in a buffer table during replication. To ensure they're properly transferred to the actual record link table, you must manually trigger the migration.
+
+1. Open the **Cloud Migration Management** page.
+2. Select the **Migrate Record Links and Notes** action.
+
+This action moves record links and notes from the buffer table to the actual table. If new replication runs are completed after completing this action, a warning to rerun this action appears in the **Cloud Migration Management** page. Existing records aren't overwritten if the action is run again.
+
+Complete this step before defining user mappings because user mappings also update the users associated with the record links and notes.
+
+## Step 2 Disable the cloud migration
 
 Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This step is important because each time someone runs the migration, outstanding documents (like for vendors and inventory items), and other changes made in the online target company are overwritten.
 
@@ -34,7 +45,7 @@ To disable cloud migration, complete the following steps:
 > [!NOTE]
 > The integration runtime remains installed on your on-premises machine. However, if it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. If you want to migrate data again, you must go through the cloud migration setup again and might also need to reinstall the Self-hosted Integration Runtime.
 
-## <a name="API"></a> Step 2 Run API data upgrade
+## <a name="API"></a> Step 3 Run API data upgrade
 
 This step is only required if you skipped the API data upgrade during the cloud migration. [Learn more about skipping API data upgrade](migration-skip-api-data-upgrade.md). 
 
@@ -58,7 +69,7 @@ This step is only required if you skipped the API data upgrade during the cloud 
 
 You can check the status of job queue entries on the **API Upgrade Overview** page and restart a job queue entry if it fails. When you restart a job queue entry, it continues at the point where it stopped. It's safe to rerun the job queue entry because it commits and releases any locks and shouldn't cause any performance degradation.
 
-## Step 3 Set up users and permissions
+## Step 4 Set up users and permissions
 
 User accounts and permissions in Business Central on-premises aren't migrated to the online. To give on-premises users access to the new online tenant, each user needs the following permissions:
 
@@ -72,17 +83,6 @@ User accounts and permissions in Business Central on-premises aren't migrated to
 
    > [!TIP]
    > You can go directly to setting up permission sets from the **Cloud Ready Checklist** page by selecting **Permission Sets**.
-
-## Step 4 Migrate record links and notes
-
-Record links and notes aren't automatically migrated to the target environment. Instead, they're stored in a buffer table during replication. To ensure they're properly transferred to the actual record link table, you must manually trigger the migration.
-
-1. Open the **Cloud Migration Management** page.
-2. Select the **Migrate Record Links and Notes** action.
-
-This action moves record links and notes from the buffer table to the actual table. If new replication runs are completed after completing this action, a warning to rerun this action appears in the **Cloud Migration Management** page. Existing records aren't overwritten if the action is run again.
-
-Complete this step before defining user mappings because user mappings also update the users associated with the record links and notes.
 
 ## Step 5 Define user mappings
 
