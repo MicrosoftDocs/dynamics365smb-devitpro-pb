@@ -4,7 +4,7 @@ description: Learn how to read version numbers in Business Central and how to un
 author: jswymer
 ms.topic: article
 ms.author: jswymer
-ms.date: 10/14/2025
+ms.date: 08/31/2026
 ms.custom: bap-template
 ms.reviewer: jswymer
 ---
@@ -28,6 +28,7 @@ The numbers are updated based on Microsoft's builds. In the default version of [
 The following list describes the meaning of each of the numbers in a full version number:
 
 - `major` is the major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+  - `28` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2026 release wave 1 update in April 2026 and forward
   - `27` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 2 update in October 2025 and forward
   - `26` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1 update in April 2025 and forward
   - `25` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 update in October 2024 and forward
