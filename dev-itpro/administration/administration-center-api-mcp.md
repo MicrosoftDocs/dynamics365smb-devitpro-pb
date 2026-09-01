@@ -73,12 +73,6 @@ POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{envi
 POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id}
 ```
 
-### Uninstall app - excluded during public preview
-
-```HTTP
-POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
-```
-
 ## Related information
 
 [Business Central Administration Center API reference](administration-center-api.md)  
