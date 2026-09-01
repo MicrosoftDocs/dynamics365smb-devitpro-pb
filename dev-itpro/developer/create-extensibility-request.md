@@ -10,11 +10,11 @@ ms.custom: bap-template
 ---
 # Create an extensibility request
 
-Microsoft's [ALAppExtension repository](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#microsoft-al-application-add-ons-for-microsoft-dynamics-365-business-central) on GitHub is a place where Microsoft and our partners can collaborate on building add-on apps and vertical solutions in the AL language for [!INCLUDE [prod_short](../includes/prod_short.md)].
+Microsoft's [BCApps repository](https://github.com/microsoft/BCApps) on GitHub is a place where Microsoft and our partners collaborate on building add-on apps and vertical solutions in the AL language for [!INCLUDE [prod_short](../includes/prod_short.md)].
 
 This article describes how to submit a request for a code change from Microsoft. Before you create an extensibility request, check out these guidelines. This guidance can help you, and Microsoft, get to the right solution faster.
 
-Collaborations start through extensibility requests that you submit from the [ALAppExtension](https://github.com/microsoft/ALAppExtensions/tree/main) repo. For example, you might request a new integration event or that we make a function external so your extension can access it. To learn more about extensibility requests, go to [Extensibility requests](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#extensibility-requests).
+Collaborations start through extensibility requests that you submit from the [BCApps](https://github.com/microsoft/BCApps) repo. For example, you might request a new integration event or that we make a function external so your extension can access it. To learn more about extensibility requests, go to [Extensibility requests](https://github.com/microsoft/BCApps/blob/main/README.md#extensibility-requests).
 
 Extensibility requests are optional. However, submitting structured requests makes things easier for everyone, and the change more likely to be implemented. Structured requests help us:
 

@@ -31,11 +31,11 @@ We welcome contributions to Microsoft's application add-ons.
 
 ## Create an extensibility request
 
-[ALAppExtensions](https://github.com/microsoft/ALAppExtensions/) is a repository where Microsoft and our vibrant community can work together to develop add-on apps in the AL language, and expand the general extensibility of [!INCLUDE [prod_short](includes/prod_short.md)].
+[BCApps](https://github.com/microsoft/BCApps/) is a repository where Microsoft and the community work together to develop add-on apps in the AL language and expand the general extensibility of [!INCLUDE [prod_short](includes/prod_short.md)].
 
 Before you create a request, review these guidelines:
 
-- [Extensibility requests](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#extensibility-requests)
+- [Extensibility requests](https://github.com/microsoft/BCApps/blob/main/README.md#extensibility-requests)
 - [Create an extensibility request](create-extensibility-request.md)
 - [Types of events for extensibility](types-of-events-for-extensibility.md)
 
@@ -45,7 +45,7 @@ Before you create a request, review these guidelines:
 > - We don't accept requests that contain anything marked as `Obsolete` or surrounded by `CLEAN` tags.
 > - We don't accept requests that target apps in BCApps. Instead, we encourage you to contribute it yourself.
 
-To create an extensibility request, go to the ALAppExtensions repository and create a [new issue](https://github.com/microsoft/ALAppExtensions/issues) using the **Create an extensibility request** template.
+To create an extensibility request, go to the BCApps repository and create a [new issue](https://github.com/microsoft/BCApps/issues) by using the **Create an extensibility request** template.
 
 > [!NOTE]
 > Don't submit requests for adding features as extensibility requests. Instead, engage with our partner community and create an idea in the [BC Ideas website](https://aka.ms/BCIdeas). Popular ideas get considered by our product team.
