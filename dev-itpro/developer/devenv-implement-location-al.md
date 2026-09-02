@@ -1,10 +1,10 @@
 ---
-title: Implementing Location in AL
+title: Implementing Location in AL for Business Central
 description: Learn how to implement location access in AL for Dynamics 365 Business Central. Enhance your app with GPS capabilities for better customer service.
-ms.date: 04/01/2021
+ms.date: 08/24/2026
 ms.topic: concept-article
-author: blrobl
-ms.author: brobledodiaz
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.reviewer: solsen
 ---
 
@@ -18,18 +18,21 @@ For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing 
 > [!IMPORTANT]  
 > Location information is only available on devices that are able to obtain location coordinates, such as using GPS capabilities. 
 
-## Example
-This example illustrates how to implement the location capability on a page in AL. The example implements a **GetLocation** action on a page that returns the coordinates of the current customer's address, but does not save this information to the database. 
+> [!IMPORTANT]  
+> This example uses .NET interoperability, which is only available for on-premises deployments. To use it, you must set `"target": "OnPrem"` in the `app.json` file. Learn more in [Get started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md). For online environments, use the `Geolocation` codeunit in the System Application instead. Learn more in [Geolocation](/dynamics365/business-central/application/system-application/codeunit/system.device.geolocation).
 
-The example also shows how to specify options for the location functionality such as setting a timeout or enabling high accuracy. For more information about the different options that can be set for location, see [LocationOptions Overview](devenv-location-options.md). 
+## Example
+This example illustrates how to implement the location capability on a page in AL. The example implements a **GetLocation** action on a page that returns the coordinates of the current customer's address, but doesn't save this information to the database. 
+
+The example also shows how to specify options for the location functionality such as setting a timeout or enabling high accuracy. Learn more about the options that you can set for location in [LocationOptions overview](devenv-location-options.md).
 
 > [!NOTE]
-> To enable the location functionality, it is required that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
+> To enable the location functionality, you must add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. Learn more in [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
 
 The following code will create two variables; the `LocationAvailable` variable is a **Boolean** that checks whether the current device has location capabilities. The `Location` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add an action to the page that lets the user retrieve the location information. Finally, the trigger `Location::LocationChanged` is defined to handle the incoming location information.  
 
 
-```AL
+```al
 page 50101 "Card with Location Capability"
 {
 
@@ -60,9 +63,9 @@ page 50101 "Card with Location Capability"
 
                 trigger OnAction()
                 begin
-                    LocationOptions := LocationOptions.LocationOptions;
-                    LocationOptions.EnableHighAccuracy();
-                    Location.RequestLocationAsync();
+                    LocationOptions := LocationOptions.LocationOptions();
+                    LocationOptions.EnableHighAccuracy := true;
+                    Location.RequestLocationAsync(LocationOptions);
                 end;
             }
         }
@@ -121,15 +124,15 @@ dotnet
 }
 ``` 
 
-For information about troubleshooting access to location information, see [Troubleshooting: Camera and Location](/dynamics365/business-central/ui-troubleshooting-camera-location).
+Learn more about troubleshooting access to location information in [Troubleshooting: camera and location](/dynamics365/business-central/ui-troubleshooting-camera-location).
 
 ## Related information  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
- [LocationOptions Overview](devenv-location-options.md)   
- [Troubleshooting: Camera and Location](/dynamics365/business-central/ui-troubleshooting-camera-location)  
- [Implementing the Camera in AL](devenv-implement-camera-al.md)    
- [RunOnClient property](./properties/devenv-properties.md)  
- [WithEvents property](./properties/devenv-properties.md)  
+[LocationOptions overview](devenv-location-options.md)  
+[Troubleshooting: camera and location](/dynamics365/business-central/ui-troubleshooting-camera-location)  
+[Implementing the camera in AL](devenv-implement-camera-al.md)  
+[RunOnClient property](properties/devenv-properties.md)  
+[WithEvents property](properties/devenv-properties.md)  
  <!--
  [Developing for the Business Central Mobile App](devenv-developing-for-the-business-central-mobile-app.md)   
  [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)-->

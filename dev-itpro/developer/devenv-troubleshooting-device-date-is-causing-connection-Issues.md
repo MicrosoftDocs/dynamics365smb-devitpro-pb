@@ -1,15 +1,16 @@
 ---
-title: Troubleshooting device date is causing connectivity issues
-description: Learn how to check how date can cause connectivity issues.
-ms.date: 12/21/2023
+title: Troubleshooting Device Date Causing Connectivity Issues
+description: Learn how an incorrect date on a device causes sign-in problems with the Business Central mobile app, and how to check the date against the certificate.
+ms.date: 08/24/2026
 ms.topic: troubleshooting
-author: blrobl
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Troubleshooting device date is causing connectivity issues
 
-You might experience connect issues when trying to sign in to the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] only runs with https. Check if your device has the correct date set; this date is validated against the certificate. For more information, see [Using HTTPS and Certificates](devenv-Using-HTTPS-and-Certificates-mobile-app.md).  
+You might experience connection issues when you try to sign in to the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] only runs over HTTPS. Check that your device has the correct date set. This date is validated against the certificate. Learn more in [Using HTTPS and certificates in the Business Central mobile app](devenv-using-https-and-certificates-mobile-app.md).  
   
 ## Related information
 
-[Troubleshooting the Business Central Mobile App](devenv-Troubleshooting-the-Mobile-App.md)
+[Troubleshooting the Business Central mobile app on-premises](devenv-troubleshooting-the-mobile-app.md)

@@ -1,17 +1,18 @@
 ---
-title: Test codeunits and test methods
-description: This article describes how to create test codeunits and how to create test methods in the test codeunits. 
-ms.date: 09/30/2025
+title: Test Codeunits and Test Methods in AL
+description: Learn how to create test codeunits and test methods in AL, set the SubType property to Test, and use the different test method attributes in Business Central.
+ms.date: 08/24/2026
 ms.reviewer: solsen
-ms.topic: article
-author: blrobl
+ms.topic: concept-article
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Create test codeunits and test methods
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can create test codeunits and then test methods in the test codeunits.  
 
-Test codeunits are codeunits that have the [SubType Property](properties/devenv-subtype-codeunit-property.md) set to **Test**. You write tests as AL code in the methods inside of the test codeunits. There are three types of methods that you can add in a test codeunit: test, handler, and normal. Each method type is used for a specific purpose and behaves differently. When a test codeunit runs, it runs the **OnRun** trigger, and then runs each test method in the codeunit.
+Test codeunits are codeunits that have the [SubType property](properties/devenv-subtype-codeunit-property.md) set to **Test**. You write tests as AL code in the methods inside of the test codeunits. There are three types of methods that you can add in a test codeunit: test, handler, and normal. Each method type is used for a specific purpose and behaves differently. When a test codeunit runs, it runs the **OnRun** trigger, and then runs each test method in the codeunit.
 
 By default, each test method runs in a separate database transaction, but you can use the [TransactionModel attribute](attributes/devenv-transactionmodel-attribute.md) on test methods and the [TestIsolation property](properties/devenv-testisolation-property.md) on test runner codeunits to control the transactional behavior. 
 
@@ -23,17 +24,16 @@ The methods in a test codeunit can be one of the following types:
 
 |Type|Description|
 |-------|-----------|
-|Test method|You use test methods that include AL code that tests the business logic in the application, where each method covers a transaction. You declare the [Test attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-test-attribute) on the method.|
-|Handler method|You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. Learn more in [Create Handler methods](devenv-creating-handler-methods.md) |
-|Normal method|You use normal methods to structure the test code by using the same design practices and principles as methods in other codeunits of the application. You declare the [Normal attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-normal-attribute) on the method.|
+|Test method|You use test methods that include AL code that tests the business logic in the application, where each method covers a transaction. You declare the [Test attribute](attributes/devenv-test-attribute.md) on the method.|
+|Handler method|You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. Learn more in [Create handler methods](devenv-creating-handler-methods.md).|
+|Normal method|You use normal methods to structure the test code by using the same design practices and principles as methods in other codeunits of the application. You declare the [Normal attribute](attributes/devenv-normal-attribute.md) on the method.|
 
 ## Test properties
 
 [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
-With runtime 16, you can in addition to the [TestIsolation property](properties/devenv-testisolation-property.md) use the [RequiredTestIsolation property](properties/devenv-requiredtestisolation-property.md) on test codeunits to specify the required test isolation level for the test codeunit. And you can use the [TestType property](properties/devenv-testtype-property.md) to categorize tests.
-
+With runtime version 16, you can use the [RequiredTestIsolation property](properties/devenv-requiredtestisolation-property.md) on test codeunits, in addition to the [TestIsolation property](properties/devenv-testisolation-property.md), to specify the required test isolation level for the test codeunit. You can also use the [TestType property](properties/devenv-testtype-property.md) to categorize tests.
 
 ## Related information
 
-[Testing the application](devenv-Testing-Application.md)
+[Testing the application](devenv-testing-application.md)

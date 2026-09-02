@@ -1,13 +1,14 @@
 ---
-title: Test Runner Codeunits
-description: This article describes how to create test codeunits and how to create test runner codeunits. 
-ms.date: 08/12/2022
+title: Create Test Runner Codeunits in AL
+description: Learn how to create test runner codeunits in AL to manage the execution of test codeunits and integrate with test management or test reporting frameworks.
+ms.date: 08/24/2026
 ms.reviewer: solsen
 ms.topic: how-to
-author: blrobl
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
-# Create Test Runner Codeunits
+# Create test runner codeunits
 
 You can create test runner codeunits to manage the execution of test codeunits and to integrate with test management or test reporting frameworks. By integrating with a test management framework, you can automate your tests and enable them to run unattended.  
 
@@ -37,39 +38,37 @@ In the **OnRun** trigger, you'll enter the code to run the codeunits. It runs wh
 
 This sample codeunit runs three test codeunits in the automated application test libraries.
 
-```AL
+```al
 codeunit 50101 TestRunnerCodeunit
 {
     Subtype = TestRunner;
 
     trigger OnRun()
     begin
-        Codeunit.RUN(Codeunit::"ERM Vendor Statistics");
-        Codeunit.RUN(Codeunit::"ERM Sales Quotes");
-        Codeunit.RUN(Codeunit::"ERM Dimension");
-
+        Codeunit.Run(Codeunit::"ERM Vendor Statistics");
+        Codeunit.Run(Codeunit::"ERM Sales Quotes");
+        Codeunit.Run(Codeunit::"ERM Dimension");
     end;
 }
 ```
 
 You may want to define your test suite in a table and then write code in the test runner codeunit to iterate through the items in the table. And then run each test codeunit. In that case, you can make use of the following example.
 
-```AL
-codeunit 50102 TestRunnerCodeunit
+```al
+codeunit 50102 EnabledTestRunnerCodeunit
 {
     Subtype = TestRunner;
 
     trigger OnRun()
     var
         EnabledTestCodeunit: Record "CAL Test Enabled Codeunit";
-        Object: Record "Object";
+        AllObj: Record AllObj;
     begin
-        if EnabledTestCodeunit.FINDSET then
+        if EnabledTestCodeunit.FindSet() then
             repeat
-                if Object.GET(ObjectType::Codeunit, '', EnabledTestCodeunit."Test Codeunit ID") then
-                    CODEUNIT.RUN(EnabledTestCodeunit."Test Codeunit ID");
-            until EnabledTestCodeunit.NEXT = 0
-
+                if AllObj.Get(AllObj."Object Type"::Codeunit, EnabledTestCodeunit."Test Codeunit ID") then
+                    Codeunit.Run(EnabledTestCodeunit."Test Codeunit ID");
+            until EnabledTestCodeunit.Next() = 0;
     end;
 }
 ```

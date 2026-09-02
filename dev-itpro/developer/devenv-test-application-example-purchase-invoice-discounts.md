@@ -1,13 +1,14 @@
 ---
 title: "Application Testing Example: Testing Purchase Invoice Discounts"
-description: Example to demonstrate the application testing scenario.
-ms.date: 08/12/2022
+description: Walk through an application testing example in AL that verifies purchase invoice discount calculations in Business Central before you go to production.
+ms.date: 08/24/2026
 ms.reviewer: solsen
-ms.topic: article
-author: blrobl
+ms.topic: concept-article
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
-# Application Testing Example: Testing Purchase Invoice Discounts
+# Application testing example: Testing purchase invoice discounts
 
 Before you release a customized [!INCLUDE[d365_bus_central](includes/d365_bus_central_md.md)] application to a production environment, you must test the application. This walkthrough demonstrates how to use the test codeunits and test libraries to test an application.  
   
@@ -58,7 +59,7 @@ Tne next task is to create a helper method that generates data for the test. The
 
 ## Code
 
-```AL
+```al
 codeunit 50111 "ERM Vendor Discount"
 {
     // Specifies the codeunit to be a test codeunit
@@ -87,46 +88,45 @@ codeunit 50111 "ERM Vendor Discount"
         // above the minimal amount required for invoice discount calculation.
         // [GIVEN] Vendor with invoice discount percentage "D" for minimal amount "A" in LCY
         // [GIVEN] Create purchase invoice with one line and amount >"A"
-        DiscountPct := RandomNumberGenerator.RandDec(100, 5);
-        MinAmount := RandomNumberGenerator.RandDec(1000, 2);
-        DocAmount := MinAmount + RandomNumberGenerator.RandDec(100, 2);
+        DiscountPct := LibraryRandom.RandDec(100, 5);
+        MinAmount := LibraryRandom.RandDec(1000, 2);
+        DocAmount := MinAmount + LibraryRandom.RandDec(100, 2);
         CreatePurchDocument(PurchLine, PurchLine."Document Type"::Invoice, DocAmount, MinAmount, DiscountPct);
         // [WHEN] Calculate invoice discount for purchase document (line)
-        PurchCalcDisc.RUN(PurchLine);
+        PurchCalcDisc.Run(PurchLine);
         // [THEN] "Inv. Discount Amount" = Amount "A" * discount "D" / 100
-        PurchLine.Find;
+        PurchLine.Find();
         Assert.AreEqual(Round(PurchLine."Line Amount" * DiscountPct / 100), PurchLine."Inv. Discount Amount", PurchInvDiscErr);
     end;
 
     // Creates the test helper method
-    local procedure CreatePurchDocument(var PurchLine: Record "Purchase Line"; DocumentType: Option; DocAmount: Decimal; MinAmount: Decimal; DiscountPct: Decimal)
+    local procedure CreatePurchDocument(var PurchLine: Record "Purchase Line"; DocumentType: Enum "Purchase Document Type"; DocAmount: Decimal; MinAmount: Decimal; DiscountPct: Decimal)
 
     var
         VendorInvoiceDisc: Record "Vendor Invoice Disc.";
         PurchaseHeader: Record "Purchase Header";
-        VendorNo: Code[30];
+        VendorNo: Code[20];
 
     begin
         // Create vendor
-        VendorNo := LibraryPurchase.CreateVendorNo;
+        VendorNo := LibraryPurchase.CreateVendorNo();
         // Create vendor invoice discount
-        VendorInvoiceDisc.Init;
+        VendorInvoiceDisc.Init();
         VendorInvoiceDisc.Code := VendorNo;
         VendorInvoiceDisc.Validate("Currency Code", '');
         VendorInvoiceDisc.Validate("Minimum Amount", MinAmount);
         VendorInvoiceDisc.Validate("Discount %", DiscountPct);
-        VendorInvoiceDisc.Insert(TRUE);
+        VendorInvoiceDisc.Insert(true);
         // Create purchase line
-        LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader, Purchline, DocumentType, VendorNo, '', 1, '', 0D);
+        LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader, PurchLine, DocumentType, VendorNo, '', 1, '', 0D);
         PurchLine.Validate("Direct Unit Cost", DocAmount);
-        PurchLine.Modify(TRUE);
+        PurchLine.Modify(true);
     end;
 
     var
-        RandomNumberGenerator: Codeunit "Library - Random";
+        LibraryRandom: Codeunit "Library - Random";
         LibraryPurchase: Codeunit "Library - Purchase";
         Assert: Codeunit Assert;
-        myInt: Integer;
         PurchInvDiscErr: Label 'The Purchase Invoice Discount Amount was not calculated correctly.';
 
 }

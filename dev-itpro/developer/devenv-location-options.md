@@ -1,28 +1,27 @@
 ---
-title: "LocationOptions Overview"
-ms.date: 12/18/2023
+title: LocationOptions Overview for Business Central
+ms.date: 08/24/2026
 ms.topic: overview
-author: blrobl
-description: Discover Dynamics365 Business Central Location Options - EnableHighAccuracy, Timeout, MaximumAge & more. Enhance your AL implementation.
+author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
+description: Learn about the LocationOptions that you can pass to RequestLocationAsync in AL, including EnableHighAccuracy, Timeout, and MaximumAge, in Business Central.
 ---
+
 # LocationOptions overview
-When implementing location from AL, there are some options that you can optionally pass to `LocationProvider.RequestLocationAsync(options)`. The options can be accessed by using `Microsoft.Dynamics.Nav.Client.Capabilities.LocationOptions` found in the `Microsoft.Dynamics.Nav.ClientExtensions` dll.  
 
- For most scenarios it is not necessary to specify options.  
+When you implement location from AL, you can optionally pass options to `LocationProvider.RequestLocationAsync(options)`. Access the options by using `Microsoft.Dynamics.Nav.Client.Capabilities.LocationOptions`, which is found in the `Microsoft.Dynamics.Nav.ClientExtensions` DLL.
 
-## LocationOptions list  
+For most scenarios, you don't need to specify options.
 
-`bool EnableHighAccuracy`
+## LocationOptions
 
-A value to provide a hint to the device that this request must have the best possible location accuracy.
+|Option|Description|
+|------|-----------|
+|`bool EnableHighAccuracy`|A value that provides a hint to the device that this request must have the best possible location accuracy.|
+|`int Timeout`|The maximum length of time, in milliseconds, that is allowed to pass for a location request.|
+|`int MaximumAge`|The maximum age, in milliseconds, of a cached location.|
 
-`int Timeout`
+## Related information
 
-The maximum length of time \(milliseconds\) that is allowed to pass to a location request.
-
-`int MaximumAge`
-The maximum length of time \(milliseconds\) of a cached location. 
-
-## Related information  
-[Implementing Location in AL](devenv-implement-location-al.md)  
-  
+[Implementing location in AL](devenv-implement-location-al.md)  
