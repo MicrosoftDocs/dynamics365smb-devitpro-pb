@@ -1,17 +1,19 @@
 ---
-title: "Opening the Business Central Tablet or Phone Client from a Browser"
-ms.date: 04/01/2021
+title: Opening the Tablet or Phone Client from a Browser
+description: Learn how to open the Business Central tablet or phone client in a browser, so that you can test your solution on different form factors during design.
+ms.date: 08/24/2026
 ms.reviewer: solsen
 ms.topic: how-to
-author: blrobl
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
-# Opening the Business Central Tablet or Phone Client from a Browser
-You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] by using a browser from a device that has a network connection. This can make it easier to test your solution during the design phase. <!--To be able to open the client in a browser you must know the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and the HTTP port that it is running on.-->
+# Opening the Business Central tablet or phone client from a browser
+You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] by using a browser from a device that has a network connection. This approach makes it easier to test your solution during the design phase. <!--To be able to open the client in a browser you must know the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and the HTTP port that it is running on.-->
 
-The steps in this article illustrates how you can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a browser. The syntax and options for opening [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser are the same; just replace *tablet* with *phone* in the examples later in this section.  
+The steps in this article illustrate how you can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a browser. The syntax and options for opening [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser are the same; just replace *tablet* with *phone* in the following examples.  
 
 > [!IMPORTANT]
-> Opening phone and tablet apps directly in the browser should only be used for testing. It isn't a supported production scenario.
+> Only open phone and tablet apps directly in the browser for testing. It isn't a supported production scenario.
 
 ## To open [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a browser  
 
@@ -33,9 +35,9 @@ The steps in this article illustrates how you can open the [!INCLUDE[nav_tablet]
 
     -   **Port** with the port number that you configured for the [!INCLUDE[webservercomponents](includes/webservercomponents.md)] during installation.  
 
-    -   **WebServerInstance** with the virtual directory alias under which the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] exists on the web server. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).  
+    -   **WebServerInstance** with the virtual directory alias under which the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] exists on the web server. Learn more in [Installing Business Central using Setup](../deployment/install-using-setup.md).  
 
-    -   **TenantID** with the name of the tenant that you want to connect to. This parameter is only required when [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] is deployed in a multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[server](includes/server.md)] instance that the [!INCLUDE[nav_web](includes/nav_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](../deployment/multitenant-deployment-architecture.md).  
+    -   **TenantID** with the name of the tenant that you want to connect to. This parameter is only required when [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] is deployed in a multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[server](includes/server.md)] instance that the [!INCLUDE[nav_web](includes/nav_web_md.md)] connects to. Learn more in [Multitenant deployment architecture](../deployment/Multitenant-Deployment-Architecture.md).  
 
     -   **CompanyName** with the name of the company in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)]. This parameter is optional and is only needed if you want to open a different company than the one specified in **My Settings**.  
 
@@ -44,4 +46,4 @@ The steps in this article illustrates how you can open the [!INCLUDE[nav_tablet]
     -   **ProfileID** with the ID that is assigned to the profile in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)].  
 
 ## Related information  
- [Introducing the Dynamics 365 Business Central Mobile App](devenv-Introducing-business-central-Mobile-App.md)   
+[Introducing the Business Central mobile app](devenv-introducing-business-central-mobile-app.md)  

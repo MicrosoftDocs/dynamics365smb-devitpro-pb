@@ -1,24 +1,24 @@
 ---
-title: Simple Role Center example
-description: "Provides AL code for a simple role center"
-author: blrobl
-ms.date: 04/01/2021
+title: Simple Role Center Code Example in AL
+description: Learn from a complete AL code example that builds a simple Role Center page and a profile that assigns the Role Center to users in Business Central.
+author: SusanneWindfeldPedersen
+ms.date: 08/24/2026
 ms.reviewer: jswymer
-ms.topic: article
-ms.author: brobledodiaz
+ms.topic: concept-article
+ms.author: solsen
 ---
 
 # Simple Role Center code example
 
 The AL code in this article creates a simple Role Center customized for users assigned to a new profile. 
 
-![Role Center example.](media/sample-role-center.png "Role Center example")
+:::image type="content" source="media/sample-role-center.png" alt-text="Role Center page showing a headline, an Invoices cue tile group, and navigation actions." lightbox="media/sample-role-center.png":::
 
-For a more detailed explanation of Role Centers, see [Designing Role Centers](devenv-designing-role-centers.md).
+Learn more about Role Centers in [Designing Role Centers](devenv-designing-role-centers.md).
 
-This example uses the **RoleCenterHeadline** page code [example](devenv-create-role-center-headline.md) to display the headline and the **SalesInvoiceCuePage** page and the following code [example](devenv-cues-action-tiles.md) for the Cue and Action tile.
+This example uses the **RoleCenterHeadline** page from [Creating a Role Center headline](devenv-create-role-center-headline.md) to display the headline, and the **SalesInvoiceCuePage** page from [Creating cues and action tiles](devenv-cues-action-tiles.md) for the cue and action tile.
 
-```AL
+```al
 page 50125 MyRoleCenter
 {
     PageType = RoleCenter;
@@ -131,7 +131,7 @@ page 50125 MyRoleCenter
             {
                 Caption = 'Sales Invoices Report';
                 Image = "Report";
-                RunObject = Report "Sales - Invoice";
+                RunObject = Report "Standard Sales - Invoice";
             }
         }
     }
@@ -148,9 +148,9 @@ profile MyProfile
 
 ## Related information
 
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Actions Overview](devenv-actions-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Actions overview](devenv-actions-overview.md)  
 [Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  
-[Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
+[Personalize your workspace](/dynamics365/business-central/ui-personalization-user)  
 [Use Designer](devenv-inclient-designer.md) 

@@ -1,12 +1,12 @@
 ---
-title: XMLport overview
-description: Describes the XMLport object in AL, which is composed of a schema, request page, properties, triggers, and code.
-author: blrobl
-ms.date: 01/30/2025
+title: XMLport Overview for Business Central
+description: Get an overview of the XMLport object in AL, which is composed of an XMLport schema, a request page, and properties, triggers, and code that you can extend.
+author: SusanneWindfeldPedersen
+ms.date: 08/24/2026
 ms.update-cycle: 1095-days
 ms.reviewer: solsen
 ms.topic: overview
-ms.author: brobledodiaz
+ms.author: solsen
 ms.custom: evergreen
 ---
 
@@ -38,7 +38,7 @@ Request pages are dialog boxes that enable the user to set a filter on the data,
 
 XMLport objects include triggers, methods, and properties that can be used to work with the object. Learn more in [XMLport data type](methods-auto/xmlport/xmlport-data-type.md) and [XMLport triggers](triggers-auto/xmlport/devenv-oninitxmlport-xmlport-trigger.md).
 
-When you design XMLports, you must set the value of the [Format property (XMLports)](properties/devenv-format-property.md) and the [Direction property](properties/devenv-direction-property.md). The [Format property (XMLports)](properties/devenv-format-property.md) indicates the type of file that you want to import or export and the [Direction property](properties/devenv-direction-property.md) value indicates whether the XMLport will be used for import or export.
+When you design XMLports, set the value of the [Format property (XMLports)](properties/devenv-format-property.md) and the [Direction property](properties/devenv-direction-property.md). The [Format property (XMLports)](properties/devenv-format-property.md) indicates the type of file that you want to import or export. The [Direction property](properties/devenv-direction-property.md) value indicates whether the XMLport is used for import or export.
 
 Learn more about data consistency and validation against possible errors when using XMLports in the blog post [Importing and exporting valid data using XMLports in Dynamics 365 Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/05/22/importing-and-exporting-valid-data-using-xmlports-in-dynamics-365-business-central/).
 
