@@ -1,9 +1,11 @@
 ---
-title: Troubleshooting client returns wrong CLIENTTYPE
-description: Learn how to ensure that the correct client type is returned for each client.
+title: Troubleshooting Client Returns Wrong CLIENTTYPE
+description: Learn why the tablet and phone clients return the same CLIENTTYPE in one browser session, and how to run each client so the correct type is returned.
 ms.date: 12/22/2023
 ms.topic: troubleshooting
-author: blrobl
+ms.reviewer: solsen
+ms.author: solsen
+author: SusanneWindfeldPedersen
 ---
 
 # Troubleshooting client returns wrong CLIENTTYPE
@@ -12,8 +14,8 @@ Running, for example, the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and 
 
 If you have implemented code that checks for the `CURRENTCLIENTTYPE`, you must run each of the different clients in separate browser windows to make sure that the correct client type is returned for each of the clients.  
   
-## See also
+## Related information
 
-[Designing for Different Screen Sizes on Tablet and Phone](devenv-designing-different-screen-sizes-tablet-and-phone.md)   
-[CurrentClientType Method](methods-auto/session/session-currentclienttype-method.md)   
+[Designing for Different Screen Sizes on Tablet and Phone](devenv-designing-different-screen-sizes-tablet-and-phone.md)  
+[CurrentClientType Method](methods-auto/session/session-currentclienttype-method.md)  
 [DefaultClientType Method](methods-auto/session/session-defaultclienttype-method.md)

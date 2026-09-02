@@ -1,28 +1,32 @@
 ---
-title: "Designing for different screen sizes on tablet and phone"
-ms.date: 01/02/2024
+title: Designing for Different Screen Sizes on Tablet and Phone
+ms.date: 08/24/2026
 ms.reviewer: jswymer
 ms.topic: concept-article
-author: blrobl
-ms.author: brobledodiaz
+author: SusanneWindfeldPedersen
+ms.author: solsen
 description: Optimize your Business Central app design for various screen sizes. Learn best practices for tablet and phone clients, and how to test using a browser.
 ---
+
 # Designing for different screen sizes on tablet and phone
-When designing application pages for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)], it's best practice to consider the size of the tablets or phones that your end users have access to. It's an advantage if the solution works well on both small and large screen sizes, but we also recommend that you consider thoroughly the most frequently used screen sizes for your end user experience. 
+
+When you design application pages for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)], consider the size of the tablets or phones that your users can access. It's an advantage if the solution works well on both small and large screen sizes, but also consider the most frequently used screen sizes for your user experience.
 
 Designing for small screens can be more challenging, because pages show fewer fields, columns, and tiles. Therefore, a good way to identify issues on how your application pages are displayed is to test on the smallest supported screen size. 
 
 <!--There are certain requirements for running the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on tablets and phones. For more information, see [System Requirements for Business Central](../deployment/system-requirement-business-central.md#DynNAVApp).-->
 
- ![Various sizes of screens.](media/screen_sizes.PNG)  
+:::image type="content" source="media/screen_sizes.PNG" alt-text="Business Central pages shown side by side on a phone, a small tablet, and a large tablet screen." lightbox="media/screen_sizes.PNG":::
 
-## Form factor considerations  
-Users can scroll both the navigation and the content area of the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a tablet to access all data for a given page. However, it's recommended that the scrolling in the navigation bar is minimal. The navigation bar is the area on the left-hand side of [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] and it's designed to provide easy access to important information and tasks that the user shouldn't lose sight of when scrolling on the content area. <!-- The static elements will display only as much data as they can reasonably fit on the screen. Developers should design to make sure that the important static elements are displayed first so that these will be shown even on the smallest, available devices.  -->
+## Form factor considerations
 
-On phones the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] displays only one part at a time on the Role Center. On the Home page, the Activity tiles are always displayed first, and you navigate through the bottom menu to explore the content area.  
+Users can scroll both the navigation and the content area of the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a tablet to access all data for a given page. However, keep scrolling in the navigation bar to a minimum. The navigation bar is the area on the left side of [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)], and it's designed to provide easy access to important information and tasks that the user shouldn't lose sight of when scrolling in the content area. <!-- The static elements display only as much data as they can reasonably fit on the screen. Developers should design to make sure that the important static elements are displayed first so that these are shown even on the smallest, available devices.  -->
 
-### Guidance for page element types on smallest tablet devices  
-The following table provides a list of elements that fit in the page content or the app bar without scrolling.  
+On phones, the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] displays only one part at a time on the Role Center. On the Home page, the Activity tiles always display first, and you use the bottom menu to explore the content area.
+
+### Guidance for page element types on smallest tablet devices
+
+The following table provides a list of elements that fit in the page content or the app bar without scrolling.
 
 |Page Type|Displays on smallest tablet device|  
 |---------------|----------------------------------------|  
@@ -31,14 +35,15 @@ The following table provides a list of elements that fit in the page content or 
 |Card Pages|-   CardPage Factbox with up to 15 fields<br />-   2 CardPage  with up to 6 fields each<br />-   Activities Factboxes with 4 tiles in 1 group, or 2 groups together with 2 tiles|  
 |Document Pages|-   CardPage Factbox with up to 15 fields<br />-   2 CardPage Factboxes with up to 6 fields each<br />-   Activities Factboxes with 4 tiles in 1 group, or 2 groups together with 2 tiles|  
 
-### Testing using a browser  
-Using a browser you can test how your application pages look on various device sizes. For more information, see [Opening the Business Central Tablet or Phone Client from a Browser](devenv-opening-business-central-tablet-or-phone-client-from-browser.md). 
- 
-When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. For more information, see [Microsoft Edge Developer Tools](/microsoft-edge/devtools-guide-chromium).
+### Testing by using a browser
 
+You can use a browser to test how your application pages look on various device sizes. Learn more in [Opening the Business Central tablet or phone client from a browser](devenv-opening-business-central-tablet-or-phone-client-from-browser.md).
 
-## Related information  
- [Deciding on Your Tablet and Phone Strategy](devenv-deciding-on-tablet-and-phone-strategy.md)   
- [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)    
- [Displaying Data as Tiles](devenv-lists-as-tiles.md)    
- [Gesture Property](properties/devenv-gesture-property.md)  
+When you run the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge DevTools to emulate different screen sizes. Learn more in [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium).
+
+## Related information
+
+[Deciding on your tablet and phone strategy](devenv-deciding-on-tablet-and-phone-strategy.md)  
+[Differences and limitations when developing pages for the Business Central mobile app](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
+[Displaying data as tiles](devenv-lists-as-tiles.md)  
+[Gesture property](properties/devenv-gesture-property.md)  

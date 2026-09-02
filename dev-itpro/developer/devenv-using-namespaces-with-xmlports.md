@@ -1,10 +1,10 @@
 ---
-title: Using namespaces with XMLports
-description: Learn how to use namespaces with XMLports in Dynamics 365 Business Central.
-author: blrobl
-ms.date: 01/30/2025
+title: Use Namespaces with XMLports in AL
+description: Learn how to declare namespaces on an XMLport in Business Central and apply namespace prefixes to text, table, and field elements in the XML schema.
+author: SusanneWindfeldPedersen
+ms.date: 08/24/2026
 ms.topic: concept-article
-ms.author: brobledodiaz
+ms.author: solsen
 ms.reviewer: solsen
 ---
 
@@ -34,16 +34,15 @@ For example, the following code is a portion of a simple XML document for transf
 
 Each namespace has the syntax *xmlns:prefix="namespacename"*.
 
-- The *namespacename* is a string of characters, often referred to as a Uniform Resource Identifier (URI), which uniquely identifies an Internet resource. This is typically a Uniform Resource Locator (URL) or Universal Resource Name (URN).
+- The *namespacename* is a string of characters, often referred to as a Uniform Resource Identifier (URI), which uniquely identifies an internet resource. This string is typically a Uniform Resource Locator (URL) or Universal Resource Name (URN).
 - The *prefix* is a short string of characters that acts as an alias for the namespace name. The prefix is applied to specific elements in the XML document. The example includes the prefixes `bcField` and `bcTable`.
-- A namespace that doesn't include a prefix declares the default namespace. In the example, the default namespace is urn:bc:schema:all. The default prefix is applied to all the elements that don't include a prefix.
+- A namespace that doesn't include a prefix declares the default namespace. In the example, the default namespace is `urn:bc:schema:all`. The default prefix applies to all the elements that don't include a prefix.
 
-You declare the namespaces used in the XMLport using the [Namespaces property](properties/devenv-namespaces-property.md). For each namespace, you specify a prefix and a namespace name. You can declare a default namespace by defining an empty prefix `""`. In the XML documents exported or imported by the XMLport, the namespaces declarations are only supported in the `<root>` element. 
+Declare the namespaces used in the XMLport by using the [Namespaces property](properties/devenv-namespaces-property.md). For each namespace, specify a prefix and a namespace name. You can declare a default namespace by defining an empty prefix `""`. In the XML documents that the XMLport exports or imports, you can only include namespace declarations in the `<root>` element.
 
-You then apply the namespaces to XMLport elements by setting the [NamespacePrefix property](properties/devenv-namespaceprefix-property.md) of the element to one of the namespace prefixes declared in the [Namespaces property](properties/devenv-namespaces-property.md). This property only applies to `textelement`, `tableelement` and `fieldelement` nodes, otherwise it's ignored.
+Apply the namespaces to XMLport elements by setting the [NamespacePrefix property](properties/devenv-namespaceprefix-property.md) of the element to one of the namespace prefixes declared in the [Namespaces property](properties/devenv-namespaces-property.md). This property only applies to `textelement`, `tableelement`, and `fieldelement` nodes. Otherwise, it's ignored.
 
-You can also specify a default namespace using the [DefaultNamespace property](properties/devenv-defaultnamespace-property.md) and setting the [UseDefaultNamespace property](properties/devenv-usedefaultnamespace-property.md) to **true**. There can only be one default namespace, so if you specify the default namespace in the [Namespaces property](properties/devenv-namespaces-property.md), you must set the [DefaultNamespace property](properties/devenv-defaultnamespace-property.md) to **false**. 
-
+You can also specify a default namespace by using the [DefaultNamespace property](properties/devenv-defaultnamespace-property.md) and setting the [UseDefaultNamespace property](properties/devenv-usedefaultnamespace-property.md) to **true**. There can only be one default namespace, so if you specify the default namespace in the [Namespaces property](properties/devenv-namespaces-property.md), you must set the [DefaultNamespace property](properties/devenv-defaultnamespace-property.md) to **false**.
 
 ## Related information
 

@@ -1,11 +1,11 @@
 ---
-title: Defining an XMLport schema
+title: Defining an XMLport Schema in AL
 description: An XMLport schema determines which data is exported from or imported to Dynamics 365 Business Central database tables and the format and structure of the files used.
-author: blrobl
-ms.date: 01/30/2025
+author: SusanneWindfeldPedersen
+ms.date: 08/24/2026
 ms.update-cycle: 1095-days
 ms.topic: concept-article
-ms.author: brobledodiaz
+ms.author: solsen
 ms.reviewer: solsen
 ms.custom: evergreen
 ---
@@ -39,13 +39,13 @@ There can be several attributes for a single element and their order doesn't mat
 
 ## Snippet support
 
-Typing the shortcut `txmlport` creates the basic layout for an XMLport object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
+Type the shortcut `txmlport` to create the basic layout for an XMLport object when you use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ### Example
 
 The following example adds the `Customer` table as a table element, the `Address` field as a field element and the `County` and `City` fields as field attributes.
 
-```AL
+```al
 schema
 {
     textelement(Customers)
@@ -66,7 +66,7 @@ Learn more about designing XMLports in [XMLport overview](devenv-xmlport-overvie
 
 Learn more about data consistency and validation against possible errors when using XMLports in the blog post [Importing and exporting valid data using XMLports in Dynamics 365 Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/05/22/importing-and-exporting-valid-data-using-xmlports-in-dynamics-365-business-central/). 
 
-Learn more about the use of namespaces in XMLports see [Using namespaces with XMLports](devenv-using-namespaces-with-xmlports.md).
+Learn more about namespaces in XMLports in [Using namespaces with XMLports](devenv-using-namespaces-with-xmlports.md).
 
 ## Related information
 

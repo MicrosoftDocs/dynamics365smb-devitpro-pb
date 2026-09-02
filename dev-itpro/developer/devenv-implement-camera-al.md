@@ -1,10 +1,10 @@
 ---
-title: Implementing the Camera in AL
-description: Learn about how to implement the camera capability on a page in AL.
-ms.date: 04/01/2021
+title: Implementing the Camera in AL for Business Central
+description: Learn how to implement the camera capability on a Business Central page in AL, so users can take pictures and handle them directly from the same device.
+ms.date: 08/24/2026
 ms.topic: concept-article
-author: blrobl
-ms.author: brobledodiaz
+author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.reviewer: solsen
 ---
 
@@ -17,18 +17,21 @@ You can also add access to the camera to a specific page from the [!INCLUDE[d365
 > [!IMPORTANT]  
 > The camera access is only available on devices that have a camera. 
 
+> [!IMPORTANT]  
+> This example uses .NET interoperability, which is only available for on-premises deployments. To use it, you must set `"target": "OnPrem"` in the `app.json` file. Learn more in [Get started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md). For online environments, use the `Camera` codeunit in the System Application instead. Learn more in [Camera](/dynamics365/business-central/application/system-application/codeunit/system.device.camera).
+
 ## Example
 
-This example illustrates how to implement the camera capability on a page in AL. The example implements three actions to take a picture: **Take Picture**, **Take Picture High Quality**, and **Take Picture Low Quality**. However, it does not include code that saves the picture to the database.
+This example illustrates how to implement the camera capability on a page in AL. The example implements three actions to take a picture: **Take Picture**, **Take Picture High Quality**, and **Take Picture Low Quality**. However, it doesn't include code that saves the picture to the database.
 
-The example also shows how to specify options for the camera functionality such as picture quality or source type. For more information about the different options that can be set for the camera, see [CameraOptions Overview](devenv-Camera-options.md). 
+The example also shows how to specify options for the camera functionality such as picture quality or source type. Learn more about the options that you can set for the camera in [CameraOptions overview](devenv-camera-options.md).
 
 > [!NOTE]
-> To enable the camera functionality, it is required that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
+> To enable the camera functionality, you must add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. Learn more in [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
 
 The following code will create two variables; the `CameraAvailable` variable is a **Boolean** that checks whether the current device has a camera. The `Camera` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add the actions to the page that lets the user start the camera. Finally, the trigger `Camera::PictureAvailable` is defined to handle the incoming picture.  
 
-```AL
+```al
 page 50101 "Card with Camera Capability"
 {
 
@@ -104,7 +107,7 @@ page 50101 "Card with Camera Capability"
         // The IsAvailable() enables the camera functionality based on its presence.
         if Camera.IsAvailable() then begin
             Camera := Camera.Create();
-            CameraAvailable := True;
+            CameraAvailable := true;
         end;
     end;
 
@@ -117,7 +120,7 @@ page 50101 "Card with Camera Capability"
         IncomingFile.Open(PictureFilePath);
         Message('Picture size: %1', IncomingFile.Len());
         IncomingFile.Close();
-        // It is important to clean up by using the File.Erase command to avoid accumulating image files.
+        // It's important to clean up by using the File.Erase command to avoid accumulating image files.
         File.Erase(PictureFilePath);
     end;
 
@@ -150,12 +153,12 @@ dotnet
 
 ```
 
-For information about troubleshooting access to camera, see [Troubleshooting: Camera and Location](/dynamics365/business-central/ui-troubleshooting-camera-location).
+Learn more about troubleshooting camera access in [Troubleshooting: camera and location](/dynamics365/business-central/ui-troubleshooting-camera-location).
 
 ## Related information  
 
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
-[Implementing Location in AL](devenv-implement-location-al.md)  
-[CameraOptions Overview](devenv-Camera-options.md)  
+[Implementing location in AL](devenv-implement-location-al.md)  
+[CameraOptions overview](devenv-camera-options.md)  
 [RunOnClient property](./properties/devenv-properties.md)  
 [WithEvents property](./properties/devenv-properties.md)

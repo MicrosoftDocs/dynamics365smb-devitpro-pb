@@ -1,15 +1,15 @@
 ---
-title: "Testing With Permission Sets"
-description: Learn how to run tests in Business Central using permission sets
-ms.date: 04/01/2021
+title: Testing with Permission Sets in Business Central
+description: Learn how to run application tests in Business Central with specific permission sets, so that your tests verify the access rights that users really have.
+ms.date: 08/24/2026
 ms.topic: how-to
-ms.author: jswymer
-author: blrobl
+ms.author: solsen
+author: SusanneWindfeldPedersen
 ROBOTS: NOINDEX
 ms.reviewer: jswymer
 ---
 
-# Testing With Permission Sets
+# Testing with permission sets
 You can write application tests in AL that use specific permission sets when the test is run. The permission sets define the access rights (such as read, write, and execute) on tables, reports, methods, and other objects in the database.
 
 Without applying any permission sets, a test will run with full permissions, similar to the rights that are granted by the SUPER permission set. This is probably satisfactory for testing the functionality in general. However, in most cases, users will be running with a permission set that limits their access to the functionality they need to do their work.
@@ -48,26 +48,24 @@ For applying permission sets, the code uses a *DotNet* data type variable for **
 
 The OnBeforeTestRun trigger will apply one of three permission sets, which have the Role IDs **O365 BASIC**, **O365 BUS FULL ACCESS**, and **SUPER**.
 
-```AL
+```al
 codeunit 50101 MyTestPermissionsTestRunner
 {
     Subtype = TestRunner;
 
     trigger OnBeforeTestRun(CodeunitId: Integer; CodeunitName: Text; MethodName: Text; Permissions: TestPermissions): Boolean
-    var
-        myInt: Integer;
     begin
-        if ISNULL(PermissionTestHelper) then
-            PermissionTestHelper := PermissionTestHelper.PermissionTestHelper;
+        if IsNull(PermissionTestHelper) then
+            PermissionTestHelper := PermissionTestHelper.PermissionTestHelper();
 
-        PermissionTestHelper.Clear;
+        PermissionTestHelper.Clear();
 
         case Permissions of
-            TESTPERMISSIONS::Restrictive:
+            TestPermissions::Restrictive:
                 PermissionTestHelper.AddEffectivePermissionSet('O365 BASIC');
-            TESTPERMISSIONS::NonRestrictive:
+            TestPermissions::NonRestrictive:
                 PermissionTestHelper.AddEffectivePermissionSet('O365 BUS FULL ACCESS');
-            TESTPERMISSIONS::Disabled:
+            TestPermissions::Disabled:
                 PermissionTestHelper.AddEffectivePermissionSet('SUPER');
         end;
 
@@ -76,11 +74,11 @@ codeunit 50101 MyTestPermissionsTestRunner
 
     trigger OnAfterTestRun(CodeunitId: Integer; CodeunitName: Text; MethodName: Text; Permissions: TestPermissions; Success: Boolean)
     begin
-      if ISNULL(PermissionTestHelper) then
-        PermissionTestHelper := PermissionTestHelper.PermissionTestHelper;
+        if IsNull(PermissionTestHelper) then
+            PermissionTestHelper := PermissionTestHelper.PermissionTestHelper();
 
-      if Permissions <> TESTPERMISSIONS::Disabled then
-        PermissionTestHelper.Clear;
+        if Permissions <> TestPermissions::Disabled then
+            PermissionTestHelper.Clear();
     end;
 
     var
