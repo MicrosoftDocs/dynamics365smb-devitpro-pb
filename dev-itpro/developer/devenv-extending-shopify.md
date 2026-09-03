@@ -5,7 +5,7 @@ description: Discover extensibility options for the Shopify Connector, including
 ms.author: bholtorf
 ms.reviewer: solsen
 ms.custom: bap-template
-ms.date: 11/24/2025
+ms.date: 09/03/2026
 ms.topic: how-to
 ---
 
@@ -389,9 +389,9 @@ pageextension 50101 "Shpfy Sales Line Extend" extends "Sales Order Subform"
 
 Companies have different rules on how and what items to expose to Shopify as available stock. 
 
-You can extend the **Shpfy Stock Calculation** enum by adding your own options. You'll also need to add your own implementation of the **Shpfy Stock Calculation** interface. Remember to add the implementation `Shpfy Can Have Stock` for `Shpfy IStock Available`.
+You can extend the **Shpfy Stock Calculation** enum by adding your own options. Each enum value must map both interfaces. The **Shpfy Stock Calculation** interface calculates the quantity, and the **Shpfy IStock Available** interface determines whether the connector can export that quantity. Map **Shpfy IStock Available** to `Shpfy Can Have Stock` when the calculation permits inventory export. If the mapping is missing or its implementation returns `false`, the connector can calculate and store the stock value without sending an inventory update to Shopify.
 
-To learn more about standard inventory calculation, go to [Sync inventory to Shopify](/dynamics365/business-central/shopify/synchronize-items#sync-inventory-to-shopify).
+To learn more about standard inventory calculation, go to [Synchronize inventory with Shopify](/dynamics365/business-central/shopify/synchronize-inventory).
 
 #### Calculate on-hand stock
 
