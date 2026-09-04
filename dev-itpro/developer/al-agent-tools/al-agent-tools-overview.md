@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 05/03/2026
+ms.date: 08/24/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---
@@ -42,6 +42,7 @@ The following tools are available across both surfaces. Some tools are exclusive
 | [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies | ✓ | ✓ |
 | [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve filtered compilation diagnostics | ✓ | ✓ |
 | [`al_getpackagedependencies`](al-tool-get-package-dependencies.md) | List the project's `app.json` dependencies (MCP only) | — | ✓ |
+| `al_addproject` | Add an AL project to the server workspace after startup (MCP only) | — | ✓ |
 | [`al_debug`](al-tool-debug.md) | Start a debug session without republishing (Visual Studio Code only) | ✓ | — |
 | `al_setbreakpoint` | Programmatically add, remove, or toggle breakpoints (Visual Studio Code only) | ✓ | — |
 | `al_snapshotdebugging` | Manage snapshot debugging sessions (Visual Studio Code only) | ✓ | — |
@@ -72,15 +73,27 @@ The AL MCP Server is a standalone process that exposes AL tools over the Model C
 
 ### Starting the server
 
-```bash
-altool launchmcpserver --transport stdio
+You can pass one or more AL project paths when you start the server. Wrap each path in double quotes.
+
+For example, to start the server with a single AL project over STDIO:
+
+```shell
+altool launchmcpserver "C:\<ProjectFolder>" --transport stdio
 ```
+
+For multiple projects, specify each project path as a separate argument:
+
+```shell
+altool launchmcpserver "C:\<ProjectFolder1>" "C:\<ProjectFolder2>" --transport stdio
+```
+
+If you start the server without a project path, no project is loaded. Tools that operate on a project return an error until you add one with the `al_addproject` tool.
 
 JSON-RPC traffic is exchanged on `stdout`. All diagnostic logs are written to `stderr`. The server shuts down cleanly on EOF or Ctrl+C.
 
 ### Connecting an agent
 
-Configure your MCP-compatible agent (for example, Claude Desktop, a custom agent built on the MCP SDK, or a CI pipeline agent) to launch the command above as an MCP server. The agent discovers the available AL tools automatically through the MCP `tools/list` call.
+Configure your MCP-compatible agent (for example, Claude Desktop, a custom agent built on the MCP SDK, or a CI pipeline agent) to start `altool launchmcpserver` as an MCP server. You can optionally pass one or more project paths. The agent discovers the available AL tools automatically through the MCP `tools/list` call.
 
 ### Authentication
 
