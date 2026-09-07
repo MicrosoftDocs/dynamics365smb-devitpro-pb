@@ -629,26 +629,6 @@ The following page improvements reduce extra navigation and prevent avoidable er
 - **Routing Link Code** is available on **Planning Routing**, **Prod. Order Components**, and **Prod. Order Comp. Line List**. On **Planning Routing**, add the hidden field through personalization when needed.
 - **Name 2** is available on Work Center and Machine Center cards and lists. The field is hidden by default and can be added through personalization.
 
-## Sustainability Management: Add EUDR certification information
-
-To help you track the information you need to conform with European Union Deforestation Regulation (EUDR) in Business Central, we added new fields and reports.
-
-On the **Item Card** page, the new **EUDR Relevant** toggle requires a lot-tracking code with a **Lot Info. Required** setting enabled. There's also a new **EUDR Commodity** option (Cattle, Cocoa, Coffee, Oil palm, Rubber, Soya, Wood).
-
-There are new fields for **Lot No. Information**:
-
-- EUDR Certificate No.
-- Certification Scheme
-- Valid From
-- Valid To
-- Country/Regions of Production (defaults from the source document, editable for the distributor case)
-- DDS Reference Number
-- DDS Verification No.
-
-The new **EUDR Sales Invoice** report is a variant of the standard sales invoice that prints, per line or lot, the certification scheme and certificate number registered in the report selection. It doesn't replace the default invoice.
-
-You can access certificate data visible from posted entries by using the standard **Lot No. Information** drill-down.
-
 ## Sustainability Management: Estimate your carbon footprint in Service Management
 
 This feature extends sustainability tracking to cover **Service Management** features by displaying carbon footprint values on service documents. Emission data comes from sustainability value entries for items and from resource cards for resource-related emissions.
