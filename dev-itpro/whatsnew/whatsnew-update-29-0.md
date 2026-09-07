@@ -2,7 +2,7 @@
 title: What's New or Changed in Business Central 2026 release wave 2 - Update 29.0 preview
 description: Get an overview of new and changed capabilities in the 29.0 update of Business Central online, which is part of 2026 release wave 2.
 ms.author: jswymer
-ms.date: 09/03/2026
+ms.date: 09/07/2026
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
@@ -102,8 +102,7 @@ This table lists new and updated features in update 29.0. Select a linked featur
 | | [Set up and explore subcontracting more easily](preview-feature-details.md#supply-chain-management-set-up-and-explore-subcontracting-more-easily) | Configure subcontracting with assisted setup and notifications that open missing vendor or location setup. Contoso demo data helps evaluate different subcontracting scenarios. |
 | | [Use inventory put-aways and picks for subcontracting](preview-feature-details.md#supply-chain-management-use-inventory-put-aways-and-picks-for-subcontracting) | Basic warehouse configurations now support subcontracting, so employees can process this work alongside their regular inbound and outbound activities. |
 | | [Work more efficiently with manufacturing documents and capacity calendars](preview-feature-details.md#supply-chain-management-work-more-efficiently-with-manufacturing-documents-and-capacity-calendars) | Create released orders from Planning Worksheet, monitor and update capacity calendars, and open production BOMs and routings from actionable errors. |
-| Sustainability Management | [Add EUDR certification information](preview-feature-details.md#sustainability-management-add-eudr-certification-information) | Add EUDR for Item and track EUDR Items with Item Tracking, fulfill EUDR details on Lot Information |
-| | [Estimate your carbon footprint in Service Management](preview-feature-details.md#sustainability-management-estimate-your-carbon-footprint-in-service-management) | Show an estimated carbon footprint on service invoices and related documents using sustainability data from items and resources in Service Management. |
+| Sustainability Management | [Estimate your carbon footprint in Service Management](preview-feature-details.md#sustainability-management-estimate-your-carbon-footprint-in-service-management) | Show an estimated carbon footprint on service invoices and related documents by using sustainability data from items and resources in Service Management. |
 | | [Reverse Sustainability Ledger entrie transaction](preview-feature-details.md#sustainability-management-reverse-sustainability-ledger-entries-transaction) | Reverse sustainability ledger entries posted from sustainability or general journals, directly from the Sustainability Ledger Entries page. |
 | | [Track your carbon footprint for fixed assets](preview-feature-details.md#sustainability-management-track-your-carbon-footprint-for-fixed-assets) | Enable carbon footprint tracking for fixed assets by adding sustainability accounts and CO₂e values to fixed asset transactions. |
 | | [Track your carbon footprint with item journals and item reclassification journals](preview-feature-details.md#sustainability-management-track-your-carbon-footprint-with-item-journals-and-item-reclassification-journals) | Track your carbon footprint in item journals and reclassification journals by adding CO₂e per unit and total emissions, with full value chain traceability. |
