@@ -2,8 +2,8 @@
 title: Country/Regional Availability and Supported Languages
 description: Learn where Business Central is available, which languages are supported, and how partners deliver localized solutions through Microsoft commercial marketplace.
 author: sorenfriisalexandersen
-ms.date: 02/12/2026
-ms.reviewer: v-soumramani
+ms.date: 08/03/2026
+ms.reviewer: solsen
 ms.topic: article
 ms.author: altotovi
 ms.custom: references_regions
@@ -65,7 +65,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Brazil|Partner|W1|Available|BR|Brazil|
 |Bulgaria|Partner|W1|Available|BG|Europe|
 |Burkina Faso|Partner|W1|Available|BF|South Africa|
-|Burundi|Partner|W1|Available|BI|5) Planned for April 2026|
+|Burundi|Partner|W1|Available|BI|South Africa|
 |Cambodia|Partner|W1|Available|KH|Asia Pacific|
 |Cameroon|Partner|W1|Available|CM|South Africa|
 |Canada|Microsoft|NA|Available|CA|Canada|
@@ -78,8 +78,8 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Cocos Islands|Partner|W1|Available|CC|5)|
 |Colombia|Partner|W1|Available|CO|Brazil|
 |Comoros|Partner|W1|Available|KM|5)|
-|Congo|Partner|W1|Available|CG|5) Planned for April 2026|
-|Congo (DRC)|Partner|W1|Available|CD|5) Planned for April 2026|
+|Congo|Partner|W1|Available|CG|South Africa|
+|Congo (DRC)|Partner|W1|Available|CD|South Africa|
 |Cook Islands|Partner|W1|Available|CK|5)|
 |Costa Rica|Partner|W1|Available|CR|Brazil|
 |Côte d’Ivoire|Partner|W1|Available|CI|South Africa|
@@ -92,12 +92,12 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Dominica|Partner|W1|Available|DM|Brazil|
 |Dominican Republic|Partner|W1|Available|DO|Brazil|
 |Ecuador|Partner|W1|Available|EC|Brazil|
-|Equatorial Guinea|Partner|W1|Available|GQ|5) Planned for April 2026|
+|Equatorial Guinea|Partner|W1|Available|GQ|South Africa|
 |El Salvador|Partner|W1|Available|SV|Brazil|
 |Egypt|Partner|W1|Available|EG|South Africa|
 |Eritrea|Partner|W1|Available|ER|South Africa|
 |Estonia|Partner|W1|Available|EE|Europe|
-|Eswatini|Partner|W1|Available|SZ|South Africa North|
+|Eswatini|Partner|W1|Available|SZ|South Africa|
 |Ethiopia|Partner|W1|Available|ET|South Africa|
 |Falkland Islands|Partner|W1|Available|FK|5)|
 |Faroe Islands (Denmark)|Microsoft|W1|Available|DK|Europe|
@@ -121,7 +121,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Guatemala|Partner|W1|Available|GT|Brazil|
 |Guernsey|Partner|GB|Available|GG|United Kingdom|
 |Guinea|Partner|W1|Available|GN|South Africa|
-|Guinea-Bissau|Partner|W1|Available|GW|South Africa North|
+|Guinea-Bissau|Partner|W1|Available|GW|South Africa|
 |Guyana|Partner|W1|Available|GY|Brazil|
 |Haiti|Partner|W1|Available|HT|Brazil|
 |Heard Island and McDonald Islands|Partner|W1|Available|HM|5)|
@@ -135,7 +135,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Ireland|Partner|W1|Available|IE|Europe|
 |Isle of Man|Partner|GB|Available|IM|United Kingdom|
 |Israel (no RTL; English only)|Partner|W1|Available|IL|UAE|
-|Italy|Microsoft|IT|Available|IT|Europe|
+|Italy|Microsoft|IT|Available|IT|Italy <sup>6</sup>|
 |Jamaica|Partner|W1|Available|JM|United States|
 |Japan|Partner|W1|Available|JP|Japan|
 |Jersey|Partner|GB|Available|JE|United Kingdom|
@@ -149,7 +149,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Laos|Partner|W1|Available|LA|Asia Pacific|
 |Latvia|Partner|W1|Available|LV|Europe|
 |Lebanon|Partner|W1|Available|LB|UAE|
-|Lesotho|Partner|W1|Available|LS|South Africa North|
+|Lesotho|Partner|W1|Available|LS|South Africa|
 |Liberia|Partner|W1|Available|LR|5)|
 |Libya|Partner|W1|Available|LY|5)|
 |Liechtenstein|Partner|CH|Available|LI|Europe|
@@ -184,7 +184,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |New Caledonia|Partner|W1|Available|NC|Australia|
 |New Zealand|Microsoft|NZ|Available|NZ|Australia|
 |Nicaragua|Partner|W1|Available|NI|Brazil|
-|Niger|Partner|W1|Available|NE|5) Planned for April 2026|
+|Niger|Partner|W1|Available|NE|South Africa|
 |Nigeria|Partner|W1|Available|NG|South Africa|
 |Niue|Partner|W1|Available|NU|5)|
 |Norfolk Island|Partner|W1|Available|NF|5)|
@@ -201,14 +201,14 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Peru|Partner|W1|Available|PE|Brazil|
 |Philippines|Partner|W1|Available|PH|Asia Pacific|
 |Pitcairn Islands|Partner|W1|Available|PN|5)|
-|Poland|Partner|W1|Available|PL|Europe|
+|Poland|Partner|W1|Available|PL|Poland <sup>6</sup>|
 |Portugal|Partner|W1|Available|PT|Europe|
 |Puerto Rico|Partner|W1|Available|PR|Brazil|
 |Qatar|Partner|W1|Available|QA|UAE|
-|Reunion|Partner|W1|Available|RE|5) Planned for April 2026|
+|Reunion|Partner|W1|Available|RE|South Africa|
 |Romania|Partner|W1|Available|RO|Europe|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|N/A|
-|Rwanda|Partner|W1|Available|RW|South Africa North|
+|Rwanda|Partner|W1|Available|RW|South Africa|
 |Saint Barthélemy|Partner|W1|Available|BL|5)|
 |Saint Kitts and Nevis|Partner|W1|Available|KN|Brazil|
 |Saint Lucia|Partner|W1|Available|LC|Brazil|
@@ -216,13 +216,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Saint Pierre and Miquelon|Partner|W1|Available|PM|5)|
 |Saint Vincent and the Grenadines|Partner|W1|Available|VC|Brazil|
 |Samoa|Partner|W1|Available|WS|Australia|
-|San Marino|Partner|IT|Available|SM|Europe|
+|San Marino|Partner|IT|Available|SM|Italy <sup>6</sup>|
 |Sao Tome & Principe|Partner|W1|Available|ST|South Africa|
 |Saudi Arabia|Partner|W1|Available|SA|UAE|
 |Senegal|Partner|W1|Available|SN|South Africa|
 |Serbia|Partner|W1|Available|RS|Europe|
 |Seychelles|Partner|W1|Available|SC|South Africa|
-|Sierra Leone|Partner|W1|Available|SL|5) Planned for April 2026|
+|Sierra Leone|Partner|W1|Available|SL|South Africa|
 |Singapore|Partner|W1|Available|SG|Asia Pacific|
 |Sint Maarten|Partner|W1|Available|SX|5)|
 |Slovakia|Partner|W1|Available|SK|Europe|
@@ -232,11 +232,11 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |South Africa|Partner|W1|Available|ZA|South Africa|
 |South Georgia and South Sandwich Islands|Partner|W1|Available|GS|5)|
 |South Korea|Partner|W1|Available|KR|Korea|
-|South Sudan|Partner|W1|Available|SS|5) Planned for April 2026|
+|South Sudan|Partner|W1|Available|SS|South Africa|
 |Spain|Microsoft|ES|Available|ES|Europe|
 |Sri Lanka|Partner|W1|Available|LK|Asia Pacific|
 |St Helena, Ascension, Tristan da Cunha|Partner|W1|Available|SH|5)|
-|Sudan|Partner|W1|Available|SD|5) Planned for April 2026|
+|Sudan|Partner|W1|Available|SD|South Africa|
 |Suriname|Partner|W1|Available|SR|Brazil|
 |Svalbard|Partner|W1|Available|SJ|5)|
 |Sweden|Microsoft|SE <sup>2</sup>|Available|SE|Sweden|
@@ -265,7 +265,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Uruguay|Partner|W1|Available|UY|Brazil|
 |Uzbekistan|Partner|W1|Available|UZ|UAE|
 |Vanuatu|Partner|W1|Available|VU|Australia|
-|Vatican City|Partner|IT|Available|VA|Europe|
+|Vatican City|Partner|IT|Available|VA|Italy <sup>6</sup>|
 |Vietnam|Partner|W1|Available|VN|Asia Pacific|
 |Wallis and Futuna|Partner|W1|Available|WH|5)|
 |Yemen|Partner|W1|Available|YE|UAE|
@@ -283,6 +283,8 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 > <sup>4</sup> BaseApp for United Kingdom was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 2. Current localization features are available as apps. Users can enable new features through the **Feature Management**.
 >
 > <sup>5</sup> The country or region is enabled in Marketplace and the CSP pricelist. Before deployment, you must submit a request to the [Microsoft localization team](mailto:d365bcloc@microsoft.com). **Deployment‑ready statuses** are published four times per year—in April, July, October, and January—and the wave depends on when your request is processed. If you see a planned availability date, don't submit a request, as this country or region is already in the queue for enablement. Also, don't sell in these countries or regions until they're fully available for deployment, even if they appear as planned.
+>
+> <sup>6</sup> Environments with IT, SM, VA, and PL localizations move from the Europe to the Italy and Poland Azure geographies with the update to version 28.5. Ensure the environment isn't linked to a Power Platform environment for the move to succeed.
 
 Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
