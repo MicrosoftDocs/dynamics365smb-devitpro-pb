@@ -89,7 +89,10 @@ By specifying HTTP request header `Data-Access-Intent`, it's possible to overrid
 
 When request header is specified, the value of the DataAccessIntent property defined on the object, if any, is ignored. Overrides that are specified on the page **9880 Database Access Intent List**  take higher precedence than the value in the request header.
 
-Modification requests (like POST, PUT, or DELETE) only support `ReadWrite` as a value for data access intent. Trying to specify `Data-Access-Intent: ReadOnly` for such requests will result in an error.
+Modification requests (like `POST`, `PATCH`, `PUT`, or `DELETE`) only support `ReadWrite` as a value for data access intent. Trying to specify `Data-Access-Intent: ReadOnly` for such requests will result in an error.
+
+> [!NOTE]
+> In Business Central online, the methods advertised by an `OPTIONS` request for the same API endpoint can depend on the request's `Data-Access-Intent` header. For example, `ReadOnly` can produce an `Allow` header that excludes modification methods that are advertised when the header is omitted or set to `ReadWrite`. Include this header when comparing endpoint capabilities or troubleshooting unexpected method availability.
 
 ### Example
 
