@@ -187,8 +187,10 @@ Case statements have the following syntax.
 ```AL 
 case <Expression> of  
     <Value set 1>:  
-        <Statement 1>;  
-    <Value set 2>:  
+        <Statement 1>;
+
+    <Value set 2>,
+    <Value set 3>:  
         <Statement 2>;  
 
     <Value set n>:  
@@ -198,7 +200,7 @@ case <Expression> of
 end;  
 ```  
 
-In this definition, the result of *`<Expression>`* is matched against each value set and *`<Value set>`* must be an expression or a range.  
+In this definition, the result of *`<Expression>`* is matched against each value set and *`<Value set>`* must be an expression or a range. Multiple comma-separated value sets can share the same statement.
 
 > [!NOTE]
 > *`<Expression>`* can't be an application object variable, since application objects don't have a comparator.
