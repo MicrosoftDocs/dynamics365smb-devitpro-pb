@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 08/06/2026
+ms.date: 08/15/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -17,12 +17,12 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Hot topics right now
 
-- 40+ what's new sessions on YouTube: [aka.ms/BCLE](https://aka.ms/BCLE)
-- 'What's new' partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
-- Have questions? Go to the new Business Central partner communities on Viva Engage and ask the product experts: [aka.ms/BCVivaEngage](https://aka.ms/BCVivaEngage)
-- Download [!INCLUDE [prod_short](../includes/prod_short.md)] icon source files: [aka.ms/BCicon](https://aka.ms/BCicon)
-- Find partner case studies: [aka.ms/D365PartnerSuccessStories](https://aka.ms/D365PartnerSuccessStories)
-- Move your on-premises customers to the cloud, find resources here: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- **Expense Agent – try it out today** [Expense Agent Overview](/dynamics365/business-central/expense-management/expense-agent)
+- **Expense Agent – dive into the latest videos** [Business Central Expense Agent Series](https://www.youtube.com/playlist?list=PLVPvbYXxhxmY)
+- **Explore migration options – read the newest blog** [Explore migration options for Microsoft Dynamics NAV, Microsoft Dynamics GP, and Microsoft Dynamics 365 Business Central](https://aka.ms/BCMigrationBlog)
+- **Use the new Copilot experience in Business Central to reason over business data** [Feature details in update 29.0 public preview for 2026 release wave 2](/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#copilot-and-agents-enable-unified-copilot-chat-experience-consistent-with-microsoft-copilot)
+- **New AI at Work roadmap instead of Release Plans** [What's New or Changed in Business Central 2026 release wave 2](../../whatsnew/whatsnew-update-29-0.md#new-ai-at-work-roadmap-instead-of-release-plans)
+- **Want to stay informed about upcoming Business Central releases** [What's New or Changed in Business Central 2026 release wave 2](../../whatsnew/whatsnew-update-29-0.md#want-to-stay-informed-about-upcoming-business-central-releases)
 
 ## Latest release and updates  
 
@@ -36,6 +36,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Stay up to date
 
+- Join the Business Central partner communities on Viva Engage: [aka.ms/BCVivaEngage](https://aka.ms/BCVivaEngage)
 - Watch the 'What's new' sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Stay up to date with AI Business Solutions CSP Office Hours: [aka.ms/CSPpartnerhours](https://aka.ms/CSPpartnerhours)
