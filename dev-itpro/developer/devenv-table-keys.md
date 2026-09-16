@@ -296,10 +296,6 @@ In table extension objects, you can define multiple keys, just like in a table o
 - In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, keys in table extension objects can include fields from the base table object and table extension object. However, a single key can't include fields from both the base table object and table extension object. In other words, each key must either contain only fields from the base table object or only fields from the table extension object in which the key is defined. It's also not possible to create keys for fields defined in another table extension.
 - You can use the same key name in the table extension, unless the key contains fields from the base table object.
 
-### Total number of keys
-
-Up to 40 keys can be associated with a table.
-
 ### Key modifications
 
 When developing a new version of an extension, be aware of the following restrictions to avoid schema synchronization errors that prevent you from publishing the new version:
