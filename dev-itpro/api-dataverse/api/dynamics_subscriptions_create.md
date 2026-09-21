@@ -1,93 +1,94 @@
 ---
-title: (Business Central Dataverse API) Create subscriptions
-description: Creates a subscriptions object in Dataverse API for Dynamics 365 Business Central.
+title: Create a Business Central Dataverse API Subscription
+description: Create a webhook subscription for the Business Central Dataverse API and complete the validation handshake for the notification URL.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 09/10/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# (Business Central Dataverse API) Create subscriptions
+# (Business Central Dataverse API) Create a subscription
 
-Creates a subscriptions in [!INCLUDE [prod_short](../../includes/prod_short.md)].
+Create a webhook subscription for the Business Central Dataverse API.
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
-```
-POST businesscentralPrefix/companies({id})/subscriptions({id})
+Replace `{environmentName}` with the environment name.
+
+```http
+POST https://api.businesscentral.dynamics.com/v2.0/{environmentName}/api/microsoft/dataverse/v1.0/subscriptions
 ```
 
 ## Request headers
 
-|Header|Value|
-|------|-----|
-|Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **subscriptions**, the **subscriptions** will not be updated. |
+| Header | Value |
+|---|---|
+| `Authorization` | `Bearer {token}`. Required. |
+| `Content-Type` | `application/json`. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of a **subscriptions** object.
+Specify the notification URL, the API resource to monitor, and an optional client state value.
+
+```json
+{
+  "notificationUrl": "https://contoso.com/api/dataverse-notifications",
+  "resource": "/api/microsoft/dataverse/v1.0/companies(00aa00aa-bb11-cc22-dd33-44ee44ee44ee)/dataverseEntityChanges",
+  "clientState": "A1bC2dE3fH4iJ5kL6mN7oP8qR9sT0u"
+}
+```
+
+Business Central sends a validation request to `notificationUrl`. The subscriber must return the `validationToken` value as plain text in the response body with a `200 OK` status code. Business Central creates the subscription only after a successful handshake.
 
 ## Response
 
-If successful, this method returns ```201 Created``` response code and a **subscriptions** object in the response body.
+If successful, this method returns a `201 Created` response code and a **subscription** object in the response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+```http
+POST https://api.businesscentral.dynamics.com/v2.0/production/api/microsoft/dataverse/v1.0/subscriptions
+Authorization: Bearer {token}
+Content-Type: application/json
 
-```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/subscriptions({id})
-Content-type: application/json
 {
-    "subscriptionId" : "",
-    "notificationUrl" : "",
-    "resource" : "",
-    "timestamp" : "",
-    "userId" : "",
-    "lastModifiedDateTime" : "",
-    "clientState" : "",
-    "expirationDateTime" : "",
-    "systemCreatedAt" : "",
-    "systemCreatedBy" : "",
-    "systemModifiedAt" : "",
-    "systemModifiedBy" : ""
+  "notificationUrl": "https://contoso.com/api/dataverse-notifications",
+  "resource": "/api/microsoft/dataverse/v1.0/companies(00aa00aa-bb11-cc22-dd33-44ee44ee44ee)/dataverseEntityChanges",
+  "clientState": "A1bC2dE3fH4iJ5kL6mN7oP8qR9sT0u"
 }
 ```
+
 **Response**
 
-Here is an example of the response.
-
-```json
+```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
+
 {
-    "subscriptionId" : "",
-    "notificationUrl" : "",
-    "resource" : "",
-    "timestamp" : "",
-    "userId" : "",
-    "lastModifiedDateTime" : "",
-    "clientState" : "",
-    "expirationDateTime" : "",
-    "systemCreatedAt" : "",
-    "systemCreatedBy" : "",
-    "systemModifiedAt" : "",
-    "systemModifiedBy" : ""
+  "subscriptionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+  "notificationUrl": "https://contoso.com/api/dataverse-notifications",
+  "resource": "/api/microsoft/dataverse/v1.0/companies(00aa00aa-bb11-cc22-dd33-44ee44ee44ee)/dataverseEntityChanges",
+  "timestamp": 638931456000000000,
+  "userId": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+  "lastModifiedDateTime": "2026-09-10T08:00:00Z",
+  "clientState": "A1bC2dE3fH4iJ5kL6mN7oP8qR9sT0u",
+  "expirationDateTime": "2026-09-13T08:00:00Z",
+  "systemCreatedAt": "2026-09-10T08:00:00Z",
+  "systemCreatedBy": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+  "systemModifiedAt": "2026-09-10T08:00:00Z",
+  "systemModifiedBy": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 }
 ```
 
 ## Related information
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[subscriptions](../resources/dynamics_subscriptions.md)  
-[GET subscriptions](dynamics_subscriptions_get.md)  
-[DELETE subscriptions](dynamics_subscriptions_delete.md)  
-[PATCH subscriptions](dynamics_subscriptions_update.md)  
-[Business Central Dataverse API](../dynamics-dataverse-api.md)  
+[Subscription resource type](../resources/dynamics_subscriptions.md)  
+[Get Dataverse API subscriptions](dynamics_subscriptions_get.md)  
+[Update a Dataverse API subscription](dynamics_subscriptions_update.md)  
+[Delete a Dataverse API subscription](dynamics_subscriptions_delete.md)  
+[Working with webhooks](../../api-reference/v1.0/dynamics_subscriptions.md)  
+[Business Central Dataverse API overview](../dynamics-dataverse-api.md)  

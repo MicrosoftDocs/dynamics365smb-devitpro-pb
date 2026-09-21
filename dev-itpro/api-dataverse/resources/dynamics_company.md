@@ -1,72 +1,68 @@
 ---
-title: (Business Central Dataverse API) company resource type
-description: A company object in the Dataverse API for Dynamics 365 Business Central.
+title: Company Resource for the Business Central Dataverse API
+description: Learn about the company resource in the Business Central Dataverse API, including its properties and Dataverse entity change navigation.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 09/10/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# (Business Central Dataverse API) company resource type
+# (Business Central Dataverse API) Company resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a company in [!INCLUDE [prod_short](../../includes/prod_short.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
+> Learn more about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] in [Enable the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
-| Method | Return Type|Description |
-|:--------------------|:-----------|:-------------------------|
-|[GET company](../api/dynamics_company_get.md)|company|Gets a company object.|
-
+| Method | Return type | Description |
+|---|---|---|
+| [Get a company](../api/dynamics_company_get.md) | company | Gets a company. |
 
 ## Navigation
 
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[dataverseEntityChanges](dynamics_dataverseentitychange.md)|dataverseEntityChanges |Gets the dataverseentitychanges of the company.|
+| Navigation | Return type | Description |
+|---|---|---|
+| [dataverseEntityChanges](dynamics_dataverseentitychange.md) | dataverseEntityChanges | Gets the Dataverse entity changes for the company. |
 
 ## Properties
 
-| Property           | Type   |Description     |
-|:-------------------|:-------|:---------------|
-|id|GUID|The unique ID of the company. Non-editable.|
-|systemVersion|string|Specifies the internal version of the company.|
-|timestamp|int64||
-|name|string|Represents the company's name.|
-|displayName|string|Specifies the company's name. This name will appear on all sales documents for the company.|
-|businessProfileId|string|Specifies the Business Profile ID linked to the company.|
-|systemCreatedAt|datetime|The datetime the company was created.|
-|systemCreatedBy|GUID|The ID of the user who created the company.|
-|systemModifiedAt|datetime|The last datetime the company was modified.|
-|systemModifiedBy|GUID|The ID of the user who last modified the company.|
+| Property | Type | Description |
+|---|---|---|
+| id | GUID | The unique ID of the company. Read-only. |
+| systemVersion | string | The Business Central version for the company. |
+| timestamp | int64 | The timestamp for the company record. |
+| name | string | The name of the company. |
+| displayName | string | The display name of the company. |
+| businessProfileId | string | The ID of the business profile associated with the company. |
+| systemCreatedAt | datetime | The date and time when the company was created. |
+| systemCreatedBy | GUID | The ID of the user who created the company. |
+| systemModifiedAt | datetime | The date and time when the company was last modified. |
+| systemModifiedBy | GUID | The ID of the user who last modified the company. |
 
 ## JSON representation
 
-Here is a JSON representation of the company resource.
-
+The following JSON object shows the company resource.
 
 ```json
 {
-    "id": "GUID",
-    "systemVersion": "string",
-    "timestamp": "int64",
-    "name": "string",
-    "displayName": "string",
-    "businessProfileId": "string",
-    "systemCreatedAt": "datetime",
-    "systemCreatedBy": "GUID",
-    "systemModifiedAt": "datetime",
-    "systemModifiedBy": "GUID"
+  "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+  "systemVersion": "29.0.12345.0",
+  "timestamp": 638931456000000000,
+  "name": "CRONUS USA, Inc.",
+  "displayName": "CRONUS USA, Inc.",
+  "businessProfileId": "",
+  "systemCreatedAt": "2026-09-01T08:00:00Z",
+  "systemCreatedBy": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+  "systemModifiedAt": "2026-09-09T12:30:00Z",
+  "systemModifiedBy": "bbbbbbbb-1111-2222-3333-cccccccccccc"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
-[GET company](../api/dynamics_company_get.md)  
-[Business Central Dataverse API](../dynamics-dataverse-api.md)  
+
+[Get a company](../api/dynamics_company_get.md)  
+[Business Central Dataverse API overview](../dynamics-dataverse-api.md)  
