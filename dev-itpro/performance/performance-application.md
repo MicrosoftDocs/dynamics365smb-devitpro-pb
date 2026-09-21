@@ -1,13 +1,13 @@
 ---
 title: "How Application Configurations Affect Performance"
-description: Learn about tips and tricks for how to tweak your Business Central performance.
+description: Learn how in-product configurations, such as extensions, background jobs, locking, and FlowFields, affect performance in Business Central.
 ms.date: 02/14/2025
 ms.reviewer: solsen
 ms.topic: article
 author: KennieNP
 ---
 
-# How Application Configurations Affect Performance
+# How application configurations affect performance
 
 The sections in this article are tips and tricks on how to set up [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -19,7 +19,7 @@ Any extensions that you install can affect the overall system performance. So if
 
 [!INCLUDE [extensions-performance-impact](../includes/extensions-performance-impact.md)]
 
-For more information about uninstalling extensions and managing orphaned data, see [Unpublishing and Uninstalling Extensions](../developer/devenv-unpublish-and-uninstall-extension-v2.md).
+Learn more about uninstalling extensions and managing orphaned data in [Unpublishing and Uninstalling Extensions](../developer/devenv-unpublish-and-uninstall-extension-v2.md).
 
 ## Run things in the background
 
@@ -40,11 +40,11 @@ When the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database ne
 
 ### Use number series that allow gaps
 
-Number series in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are shared resources that sometimes cause locking issues. Not all records that you create in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are financial transactions that must use sequential numbering. Customer cards, sales quotes, and warehouse activities are examples of records that are assigned a number from a number series. They aren't subject to financial auditing and can be deleted. For all such number series, consider using number series that allow gaps to avoid locking issues. For more information, see [Gaps in Number Series](/dynamics365/business-central/ui-create-number-series#gaps-in-number-series).
+Number series in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are shared resources that sometimes cause locking issues. Not all records that you create in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are financial transactions that require sequential numbering. Customer cards, sales quotes, and warehouse activities are examples of records that get a number from a number series. These records aren't subject to financial auditing and can be deleted. For all such number series, consider using number series that allow gaps to avoid locking issues. Learn more about gaps in number series in [Gaps in Number Series](/dynamics365/business-central/ui-create-number-series#gaps-in-number-series).
 
 ### Don't adjust cost item entries with too high a frequency
 
-All sales transactions have to get their cost calculated at some point&mdash;either at the time they're posted or batched up for later, like nightly or weekly, where all sales transactions that haven’t had their cost calculated yet are "adjusted". The main reason for postponing this operation to off-hours is that it locks many tables while running for a long time. A good frequency to start with could be to do it nightly and then evaluate if it needs to be adjusted to happen more or less frequently.
+All sales transactions need cost calculation at some point. The calculation can happen when you post the transaction or batch up for later, like nightly or weekly, where all sales transactions that don't have cost calculated yet are "adjusted". The main reason for postponing this operation to off-hours is that it locks many tables while running for a long time. A good frequency to start with could be to do it nightly and then evaluate if it needs to be adjusted to happen more or less frequently.
 
 ### Be cautious with the **Rename/Copy company** operations
 
@@ -79,7 +79,7 @@ Block inactive customers, vendors, or items to improve filtering and searching o
 
 There's a performance overhead involved in enabling integration on an entity such as **Customer** or **Contact**. Only enable integration if you intend to integrate with Dynamics 365 Sales. Enable it only on the required entities. 
 
-For more information, see [Synchronizing Data in Business Central and Dynamics 365 Sales](/dynamics365/business-central/admin-synchronizing-business-central-and-sales). <!-- change with CDS integration in spring 2020 -->
+Learn more about synchronizing data in Business Central and Dynamics 365 Sales in [Synchronizing Data in Business Central and Dynamics 365 Sales](/dynamics365/business-central/admin-synchronizing-business-central-and-sales). <!-- change with CDS integration in spring 2020 -->
 
 ## Performance effect of enabling change logging on a table
 
@@ -98,10 +98,10 @@ These areas of the application are known to cause a performance impact and requi
 
 ## If processing of Sales Order lines is slow
 
-If you experience that processing of Sales Order lines that contain bill-of-materials (BOMs) is slow, then check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to **true**. If that is the case, then change the value to **false**.
+If processing sales order lines that contain bill-of-materials (BOMs) is slow, check whether **Stockout Warning** on the **Sales & Receivables Setup** page is set to `true`. If it is, change the value to `false`.
 
 Why? 
-_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that havenn't yet been posted. Stockout Warning can still be used on items; by setting the individual Item’s _Stockout Warning_ to **true** on the Item Card. 
+**Stockout Warning** specifies whether to display a warning if a user enters a quantity on a sales document that brings the item's inventory below zero. The calculation includes all sales document lines that you didn't post yet. You can still use **Stockout Warning** on items by setting the individual item's **Stockout Warning** to `true` on the **Item Card**.
 
 ## Manage the database access intent on reports, API pages, and queries
 
@@ -109,7 +109,7 @@ _Stockout Warning_ specifies if a warning should be displayed if a user enters a
 
 **Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup essentially isolates them from the main read-write workload. This way, they won't affect the performance of business processes.
 
-A drawback of reading from a replica is that it introduces a slight delay compared to reading from the primary database. **Read Scale-Out** is controlled by the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md) on objects. This property determines whether to use a replica if one is available. If this delay isn't acceptable for an object, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent)
+A drawback of reading from a replica is that it introduces a slight delay compared to reading from the primary database. The [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md) on objects controls **Read Scale-Out**. This property determines whether to use a replica if one is available. If this delay isn't acceptable for an object, you can overwrite the default database access intent from the UI. To learn more about managing database access intent, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent).
 
 ## Number of companies
 
@@ -124,7 +124,7 @@ Having many companies can cause administrative tasks, like upgrades, point-in-ti
 Finally, make sure that you don't repeat these performance mistakes that we have seen cause massive performance issues for customers:
 
 - Don't adjust cost item entries with a high frequency.
-- Don't set up a change log for everything. For more information, see [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).  
+- Don't set up a change log for everything. Learn more about auditing changes in Business Central in [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).  
 - Don't run job queues too frequently.
 - Don't adjust item costs automatically if you have many item entries. Run in the background instead.  
 - Don't postpone setting up global dimensions, because it can be a heavy operation when you have much data. Set up correct global dimensions to avoid changing them later on.
@@ -133,9 +133,9 @@ Finally, make sure that you don't repeat these performance mistakes that we have
 
 ## Related information
 
-[Performance Overview](performance-overview.md)  
-[Performance Topics For Developers](performance-developer.md)  
+[Performance overview](performance-overview.md)  
+[Performance articles for developers](performance-developer.md)  
 [Performance tips for business users](performance-users.md)  
-[Performance Online](performance-online.md)  
-[Performance of on-premises Installations](performance-onprem.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[Performance online](performance-online.md)  
+[Performance of on-premises installations](performance-onprem.md)  
+[How to work with a performance problem](performance-work-perf-problem.md)  

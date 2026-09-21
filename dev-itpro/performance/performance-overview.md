@@ -1,5 +1,5 @@
 ---
-title: Performance overview
+title: Performance Overview for Business Central
 description: Learn different ways to improve the performance of Business Central as a functional consultant, a developer, or an administrator.
 ms.date: 04/25/2024
 ms.reviewer: solsen
@@ -7,7 +7,7 @@ ms.topic: overview
 author: KennieNP
 ---
 
-# Performance Overview
+# Performance overview
 
 The following sections help you understand and improve the performance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The content is centered around the different ways a functional consultant, a developer, or an administrator can make changes with a performance impact.
 

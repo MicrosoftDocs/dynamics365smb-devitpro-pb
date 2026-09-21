@@ -1,7 +1,7 @@
 ---
-title: How to work with a performance problem
-description: Troubleshooting process that can help to guide you to find the root cause slow performance.
-ms.date: 01/14/2026
+title: Troubleshoot a Performance Problem in Business Central
+description: Learn a troubleshooting process, including tools like the performance profiler and telemetry, to help you find the root cause of slow performance.
+ms.date: 09/11/2026
 ms.reviewer: solsen
 ms.topic: how-to
 author: KennieNP
@@ -23,7 +23,7 @@ You also need to measure how the system performs on the given operation before s
 
 To solve a performance problem, a common pattern is to do iterations of the following tasks:
 
-1. Measure system performance and collecting performance data
+1. Measure system performance and collect performance data
 2. Locate a bottleneck
 3. Eliminate the bottleneck
 
@@ -40,7 +40,7 @@ Business Central comes with tools that can be used to analyze a performance prob
 |In-client performance profiler | Good for troubleshooting a performance scenario in the web client. <br>No developer required to run the tool.<br>Learn more in [In-client performance profiler overview](../administration/performance-profiler-overview.md). | 
 |Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
 |Verbose telemetry | Gives you all SQL queries for the session where you repro the issue. <br> Slows down the system while running. <br> Can inject much data into Azure Application Insights. <br> Data collection must happen live. |
-|Database performance pages|The pages _Database Missing Indexes_ and _Database Wait Statistics_ show insights into database performance and how to fix it. |
+| Database performance pages|The pages **Database Missing Indexes** and **Database Wait Statistics** show insights into database performance and how to fix it. |
 | AL profiler | Good to troubleshoot performance of a scenario. <br> Detailed information on where in the code the time is spent. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. <br>Learn more in [AL Profiler](../developer/devenv-al-profiler-overview.md) |
 
 ## Analyzing performance issues using the scheduled performance profiler
@@ -68,16 +68,16 @@ For more specific information on how to start and use the in-client Performance 
 
 When analyzing the result, you have three options:
 
-1. Look at _Active Apps_ to see in which app time is spent (did you recently install an app?).
-2. Select an app to see how time is distributed over the apps/extensions that have code running in the app.
-3. Go to _Time Spent by Application Object_ to see the distribution of time spent in the AL call tree (this is an advanced option).
-4. Download the generated profile content and share it with a developer. The profile file can be viewed in Visual Studio Code with the standard AL Profiler editor. From there, you can use existing options to access the AL code that was slow.
+1. Look at **Active Apps** to see in which app time is spent. Did you recently install an app?
+2. Select an app to see how time is distributed over the apps and extensions that have code running in the app.
+3. Go to **Time Spent by Application Object** to see the distribution of time spent in the AL call tree. This option is for advanced users.
+4. Download the generated profile content and share it with a developer. You can view the profile file in Visual Studio Code by using the standard AL Profiler editor. From there, you can use existing options to access the AL code that was slow.
 
-The in-client Performance Profiler is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. For more specific information on how to use the in-client Performance Profiler to troubleshoot performance see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md). For more information about the AL Profiler, see [AL Profiler](../developer/devenv-al-profiler-overview.md).
+The in-client Performance Profiler is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. Learn more about how to use the in-client Performance Profiler to troubleshoot performance in [In-client Performance Profiler overview](../administration/performance-profiler-overview.md). Learn more about the AL Profiler in [AL Profiler](../developer/devenv-al-profiler-overview.md).
 
 ## Analyzing performance issues using telemetry
 
-For monitoring and analyzing performance issues in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md). 
+To monitor and analyze performance issues in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, connect Azure Application Insights to the environments you want to get signals from. Learn more about enabling telemetry to Application Insights in [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md). 
 
 In the following, you can read about ways where telemetry can help troubleshoot performance issues.
 
@@ -100,13 +100,13 @@ If you want to capture all SQL queries for a short period of time for a given se
 
 Read more about extra logging in the [Troubleshooting](/dynamics365/business-central/product-help-and-support#troubleshooting) section of the Resources for Help and Support article in the business functionality docs.
 
-With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can also change the default threshold that defines long running queries. For more information, see [Analyzing Long Running Operation (SQL Query) Telemetry](../administration/telemetry-long-running-sql-query-trace.md).
+By using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can also change the default threshold that defines long running queries. Learn more about analyzing long-running operation (SQL query) telemetry in [Analyzing Long Running Operation (SQL Query) Telemetry](../administration/telemetry-long-running-sql-query-trace.md).
 
 ## Analyzing performance issues using database missing indexes
 
 If you notice that the information retrieval from your database is slow, you can index columns that are frequently used by the application. You can see the list of potential columns that can be indexed and other useful information about them on **Database Missing Indexes**. This information helps you to optimize the performance of your database and application.
 
-For more information about missing indexes and how they help you in achieving performance objectives, see [Missing Indexes in Dynamics 365 Business Central](../administration/database-missing-indexes.md).
+Learn more about missing indexes and how they help you achieve performance objectives in [Missing Indexes in Dynamics 365 Business Central](../administration/database-missing-indexes.md).
 
 ## Analyzing performance issues using database wait statistics
 
@@ -127,7 +127,7 @@ Read more about how to use the AL profiler to troubleshoot performance here [AL 
 This example illustrates how you can use the performance tuning process and telemetry to deal with a performance problem in a report from a Marketplace extension.
 
 - Together with the tenant administrator/customer, you need to define "slow" and what the acceptable rendering time will be. 
-- Then, use telemetry to find data about time spent in the report: long running SQL queries (eventId RT0005) and report rendering time (eventId RT0006) are the main data sources for this. Telemetry for long running AL methods (eventId RT00180) might also be useful here. Now you have baseline data.
+- Use telemetry to find data about time spent in the report. Long running SQL queries (event ID RT0005) and report rendering time (event ID RT0006) are the main data sources for this information. Telemetry for long running AL methods (event ID RT0018) might also be useful. Now you have baseline data.
 - Also, use telemetry on report rendering time (eventId RT0006) to find out if the report is running with data access intent ReadOnly. If not, configure it to do so. Some reports write data, so this isn't always possible.
 - Do you see long running SQL queries for the report in telemetry (eventId RT0005)? If so, you can add appropriate indexes using a table extension.
 - After configuring, data access intent and maybe having added indexes, measure rendering time and compare with the baseline. Also check if the new rendering time is good enough with respect to the acceptable rendering time that you defined together with the tenant administrator/customer. If the performance is still not good enough, you probably need to involve the extension publisher. 
@@ -137,7 +137,7 @@ This example illustrates how you can use the performance tuning process and tele
 ## Related information
 
 [Performance overview](performance-overview.md)  
-[Performance topics For developers](performance-developer.md)  
+[Performance articles for developers](performance-developer.md)  
 [Performance tips for business users](performance-users.md)  
 [How application configurations affect performance](performance-application.md)  
 [Performance online](performance-online.md)  

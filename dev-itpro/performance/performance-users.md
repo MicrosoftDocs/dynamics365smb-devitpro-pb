@@ -1,6 +1,6 @@
 ---
 title: Performance Tips for Business Users
-description: Various tips and tricks to improve speed and agility of working with Business Central.
+description: Learn tips for choosing a browser and network connection, and for working faster and more efficiently in Business Central.
 ms.date: 02/04/2026
 ms.reviewer: jswymer
 ms.topic: article
@@ -8,7 +8,7 @@ author: mikebcMSFT
 ms.author: mikebc
 ---
 
-# Performance Tips for Business Users
+# Performance tips for business users
 
 This section describes how you can work with end-users to improve the performance that each individual experiences with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -54,7 +54,7 @@ Bandwidth requirements for [!INCLUDE[prod_short](../includes/prod_short.md)] dep
 
 ### Getting statistics on users network speed from telemetry
 
-[!INCLUDE[2026rw1](../includes/2025-releasewave1-later.md)]                                                                                           
+[!INCLUDE[2026rw1](../includes/2025-releasewave1-later.md)]
 
 If telemetry is enabled on the environment, you can see information about hardware and network for the client devices that access [!INCLUDE[prod_short](../includes/prod_short.md)]. This information includes properties such as network bandwidth and network round-trip time.
 
@@ -102,9 +102,9 @@ Users experiencing slow search in lists should consider using a column filter in
 
 ## Related information
 
-[Performance Overview](performance-overview.md)  
-[Configuring the application for performance](performance-application.md)  
-[Performance Topics For Developers](performance-developer.md)  
-[Performance Online](performance-online.md)  
-[Performance of On-Premises Installations](performance-onprem.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)
+[Performance overview](performance-overview.md)  
+[How application configurations affect performance](performance-application.md)  
+[Performance articles for developers](performance-developer.md)  
+[Performance online](performance-online.md)  
+[Performance of on-premises installations](performance-onprem.md)  
+[How to work with a performance problem](performance-work-perf-problem.md)  
