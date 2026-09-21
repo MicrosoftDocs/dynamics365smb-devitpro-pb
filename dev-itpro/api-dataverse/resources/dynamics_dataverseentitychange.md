@@ -1,53 +1,48 @@
 ---
-title: (Business Central Dataverse API) dataverseEntityChange resource type
-description: A dataverse entity change object in Dynamics 365 Business Central.
+title: Dataverse Entity Change Resource for Business Central
+description: Learn about the Dataverse entity change resource that notifies Business Central when a synchronized table changes in Microsoft Dataverse.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 09/10/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# (Business Central Dataverse API) dataverseEntityChange resource type
+# (Business Central Dataverse API) Dataverse entity change resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a dataverse entity change in [!INCLUDE [prod_short](../../includes/prod_short.md)].
+Represents a Dataverse entity change in [!INCLUDE [prod_short](../../includes/prod_short.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
+> Learn more about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] in [Enable the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
-| Method | Return Type|Description |
-|:--------------------|:-----------|:-------------------------|
-|[GET dataverseEntityChange](../api/dynamics_dataverseentitychange_get.md)|dataverseEntityChange|Gets a dataverse entity change object.|
-|[POST dataverseEntityChange](../api/dynamics_dataverseentitychange_create.md)|dataverseEntityChange|Creates a dataverse entity change object.|
-
-
+| Method | Return type | Description |
+|---|---|---|
+| [Get a Dataverse entity change](../api/dynamics_dataverseentitychange_get.md) | dataverseEntityChange | Gets a Dataverse entity change. |
+| [Create a Dataverse entity change](../api/dynamics_dataverseentitychange_create.md) | dataverseEntityChange | Creates a Dataverse entity change. |
 
 ## Properties
 
-| Property           | Type   |Description     |
-|:-------------------|:-------|:---------------|
-|id|GUID|The unique ID of the dataverse entity change. Non-editable.|
-|entityName|string||
+| Property | Type | Description |
+|---|---|---|
+| id | GUID | The unique ID of the Dataverse entity change. Read-only. |
+| entityName | string | The logical name of the Dataverse table that changed. |
 
 ## JSON representation
 
-Here is a JSON representation of the dataverseEntityChange resource.
-
+The following JSON object shows the **dataverseEntityChange** resource.
 
 ```json
 {
-    "id": "GUID",
-    "entityName": "string"
+  "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+  "entityName": "account"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
-[GET dataverseEntityChange](../api/dynamics_dataverseentitychange_get.md)
-[POST dataverseEntityChange](../api/dynamics_dataverseentitychange_create.md)  
-[Business Central Dataverse API](../dynamics-dataverse-api.md)  
+
+[Get a Dataverse entity change](../api/dynamics_dataverseentitychange_get.md)  
+[Create a Dataverse entity change](../api/dynamics_dataverseentitychange_create.md)  
+[Business Central Dataverse API overview](../dynamics-dataverse-api.md)  

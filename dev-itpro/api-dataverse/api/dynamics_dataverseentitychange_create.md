@@ -1,74 +1,76 @@
 ---
-title: (Business Central Dataverse API) Create dataverseEntityChanges
-description: Creates a dataverse entity change object in Dynamics 365 Business Central.
+title: Create a Dataverse Entity Change in Business Central
+description: Notify Business Central that a Dataverse table changed so the applicable Dataverse synchronization job can run immediately.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 09/10/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# (Business Central Dataverse API) Create dataverseEntityChanges
+# (Business Central Dataverse API) Create a Dataverse entity change
 
-Creates a dataverse entity change in [!INCLUDE [prod_short](../../includes/prod_short.md)].
+Create a Dataverse entity change in [!INCLUDE [prod_short](../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
+Replace `{environmentName}` and `{companyId}` with the environment name and company ID.
 
-```
-POST businesscentralPrefix/companies({id})/dataverseEntityChanges({id})
+```http
+POST https://api.businesscentral.dynamics.com/v2.0/{environmentName}/api/microsoft/dataverse/v1.0/companies({companyId})/dataverseEntityChanges
 ```
 
 ## Request headers
 
-|Header|Value|
-|------|-----|
-|Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **dataverseEntityChange**, the **dataverseEntityChange** will not be updated. |
+| Header | Value |
+|---|---|
+| `Authorization` | `Bearer {token}`. Required. |
+| `Content-Type` | `application/json`. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of a **dataverseEntityChange** object.
+In the request body, specify the logical name of the Dataverse table that changed.
+
+```json
+{
+  "entityName": "account"
+}
+```
 
 ## Response
 
-If successful, this method returns ```201 Created``` response code and a **dataverseEntityChange** object in the response body.
-
+If successful, this method returns a `201 Created` response code and a **dataverseEntityChange** object in the response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+```http
+POST https://api.businesscentral.dynamics.com/v2.0/production/api/microsoft/dataverse/v1.0/companies(00aa00aa-bb11-cc22-dd33-44ee44ee44ee)/dataverseEntityChanges
+Authorization: Bearer {token}
+Content-Type: application/json
 
-```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/dataverseEntityChanges({id})
-Content-type: application/json
 {
-    "id" : "",
-    "entityName" : ""
+  "entityName": "account"
 }
 ```
 
 **Response**
 
-Here is an example of the response.
-
-```json
+```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
+
 {
-    "id" : "",
-    "entityName" : ""
+  "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+  "entityName": "account"
 }
 ```
 
 ## Related information
 
+[Dataverse entity change resource type](../resources/dynamics_dataverseentitychange.md)  
+[Get a Dataverse entity change](dynamics_dataverseentitychange_get.md)  
+[Business Central Dataverse API overview](../dynamics-dataverse-api.md)  
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[dataverseEntityChange](../resources/dynamics_dataverseEntityChange.md)  
-[GET dataverseEntityChange](dynamics_dataverseentitychange_get.md)  
-[Business Central Dataverse API](../dynamics-dataverse-api.md)  

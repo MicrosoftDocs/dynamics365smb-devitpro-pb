@@ -1,65 +1,61 @@
 ---
-title: (Business Central Dataverse API) Delete subscriptions
-description: Deletes a subscriptions object in Dataverse API for Dynamics 365 Business Central.
+title: Delete a Business Central Dataverse API Subscription
+description: Delete a webhook subscription from the Business Central Dataverse API when an integration no longer needs change notifications.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 09/10/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# (Business Central Dataverse API) Delete subscriptions
+# (Business Central Dataverse API) Delete a subscription
 
-Deletes a subscriptions from [!INCLUDE [prod_short](../../includes/prod_short.md)].
+Delete a webhook subscription from the Business Central Dataverse API.
 
 ## HTTP request
 
-Replaces the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
+Replace `{environmentName}` and `{subscriptionId}` with the environment name and subscription ID. Enclose the subscription ID in single quotation marks.
 
-```
-DELETE businesscentralPrefix/companies({id})/subscriptions({id})
+```http
+DELETE https://api.businesscentral.dynamics.com/v2.0/{environmentName}/api/microsoft/dataverse/v1.0/subscriptions('{subscriptionId}')
 ```
 
 ## Request headers
 
-|Header|Value|
-|------|-----|
-|Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **subscriptions**, the **subscriptions** will not be updated. |
-
+| Header | Value |
+|---|---|
+| `Authorization` | `Bearer {token}`. Required. |
+| `If-Match` | The entity tag for the subscription. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns ```204 No Content``` response code and deletes the **subscriptions**. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code and no response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
-
-```json
-DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/subscriptions({id})
+```http
+DELETE https://api.businesscentral.dynamics.com/v2.0/production/api/microsoft/dataverse/v1.0/subscriptions('aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb')
+Authorization: Bearer {token}
+If-Match: *
 ```
 
 **Response**
 
-Here is an example of the response.
-
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 
 ## Related information
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[subscriptions](../resources/dynamics_subscriptions.md)  
-[GET subscriptions](dynamics_subscriptions_get.md)  
-[POST subscriptions](dynamics_subscriptions_create.md)  
-[PATCH subscriptions](dynamics_subscriptions_update.md)  
-[Business Central Dataverse API](../dynamics-dataverse-api.md)  
+[Subscription resource type](../resources/dynamics_subscriptions.md)  
+[Get Dataverse API subscriptions](dynamics_subscriptions_get.md)  
+[Create a Dataverse API subscription](dynamics_subscriptions_create.md)  
+[Update a Dataverse API subscription](dynamics_subscriptions_update.md)  
+[Business Central Dataverse API overview](../dynamics-dataverse-api.md)  

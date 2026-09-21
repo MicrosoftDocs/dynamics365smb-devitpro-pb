@@ -1,77 +1,76 @@
 ---
-title: (Business Central Dataverse API) Get subscriptions
-description: Gets a subscriptions object in Dataverse API for Dynamics 365 Business Central.
+title: Retrieve Business Central Dataverse API Subscriptions
+description: Retrieve webhook subscriptions for the Business Central Dataverse API, including their notification URLs, resources, and expiration times.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 09/10/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # (Business Central Dataverse API) Get subscriptions
 
-Retrieves the properties and relationships of a subscriptions object for [!INCLUDE [prod_short](../../includes/prod_short.md)].
+Retrieve webhook subscriptions for the Business Central Dataverse API.
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
+Replace `{environmentName}` with the environment name.
 
-```
-GET businesscentralPrefix/companies({id})/subscriptions({id})
+```http
+GET https://api.businesscentral.dynamics.com/v2.0/{environmentName}/api/microsoft/dataverse/v1.0/subscriptions
 ```
 
 ## Request headers
 
-|Header|Value|
-|------|-----|
-|Authorization  |Bearer {token}. Required. |
+| Header | Value |
+|---|---|
+| `Authorization` | `Bearer {token}`. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a ```200 OK``` response code and a **subscriptions** object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of **subscription** objects in the response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
-
-```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/subscriptions({id})
+```http
+GET https://api.businesscentral.dynamics.com/v2.0/production/api/microsoft/dataverse/v1.0/subscriptions
+Authorization: Bearer {token}
 ```
 
 **Response**
 
-Here is an example of the response.
-
-
 ```json
 {
-    "subscriptionId" : "",
-    "notificationUrl" : "",
-    "resource" : "",
-    "timestamp" : "",
-    "userId" : "",
-    "lastModifiedDateTime" : "",
-    "clientState" : "",
-    "expirationDateTime" : "",
-    "systemCreatedAt" : "",
-    "systemCreatedBy" : "",
-    "systemModifiedAt" : "",
-    "systemModifiedBy" : ""
+  "value": [
+    {
+      "subscriptionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+      "notificationUrl": "https://contoso.com/api/dataverse-notifications",
+      "resource": "/api/microsoft/dataverse/v1.0/companies(00aa00aa-bb11-cc22-dd33-44ee44ee44ee)/dataverseEntityChanges",
+      "timestamp": 638931456000000000,
+      "userId": "11bb11bb-cc22-dd33-ee44-55ff55ff55ff",
+      "lastModifiedDateTime": "2026-09-10T08:00:00Z",
+      "clientState": "A1bC2dE3fH4iJ5kL6mN7oP8qR9sT0u",
+      "expirationDateTime": "2026-09-13T08:00:00Z",
+      "systemCreatedAt": "2026-09-10T08:00:00Z",
+      "systemCreatedBy": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+      "systemModifiedAt": "2026-09-10T08:00:00Z",
+      "systemModifiedBy": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+    }
+  ]
 }
 ```
 
 ## Related information
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[subscriptions](../resources/dynamics_subscriptions.md)  
-[DELETE subscriptions](dynamics_subscriptions_delete.md)  
-[POST subscriptions](dynamics_subscriptions_create.md)  
-[PATCH subscriptions](dynamics_subscriptions_update.md)  
-[Business Central Dataverse API](../dynamics-dataverse-api.md)  
+[Subscription resource type](../resources/dynamics_subscriptions.md)  
+[Create a Dataverse API subscription](dynamics_subscriptions_create.md)  
+[Update a Dataverse API subscription](dynamics_subscriptions_update.md)  
+[Delete a Dataverse API subscription](dynamics_subscriptions_delete.md)  
+[Business Central Dataverse API overview](../dynamics-dataverse-api.md)  
