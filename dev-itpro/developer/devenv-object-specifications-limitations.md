@@ -1,6 +1,6 @@
 ---
 title: "Object Specifications and Limitations"
-ms.date: 04/01/2021
+ms.date: 09/22/2026
 ms.topic: article
 author: jswymer
 description: Explore the specifications and limitations for database and application objects in Microsoft's Dynamics 365 Business Central. Learn about SQL Server 2017's maximum capacities.
@@ -34,7 +34,6 @@ The following characteristics are based on maximum capacity specifications for S
 |Maximum record size|8060 bytes<sup>2</sup>|  
 |Maximum number of fields in a record|500|  
 |Range for field numbers|1 – 999,999,999|  
-|Maximum number of keys for a table|40|  
 |Maximum size of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] key|900 bytes|  
 |Maximum number of distinct fields per key|16|  
 |Maximum size of an (non-key) index|1700 bytes|  

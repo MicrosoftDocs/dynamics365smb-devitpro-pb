@@ -1,7 +1,7 @@
 ---
 title: Table keys
 description: Learn about table keys in AL, including primary and secondary keys, and how to define keys in table objects and table extension objects.
-ms.date: 03/24/2026
+ms.date: 09/22/2026
 ms.reviewer: solsen
 ms.topic: how-to
 author: jswymer
