@@ -1,6 +1,6 @@
 ---
 title: "Performance of Business Central On-Premises Installations"
-description: Learn about how you can investigate and improve performance in Business Central
+description: Learn how to tune the technology stack, scale components, and measure performance for Business Central on-premises installations.
 ms.custom: bap-template
 ms.date: 04/01/2021
 ms.reviewer: solsen
@@ -9,7 +9,7 @@ ms.topic: reference
 author: KennieNP
 ---
 
-# Performance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises Installations
+# Performance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises installations
 
 In this section, we highlight many resources that might be useful when doing performance investigations and tuning of on-premises installations. On-premises, in this context, means deployment to any environment that isn't the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. Running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on Azure resources is also considered on-premises.
 
@@ -37,7 +37,7 @@ There are three things of importance when dealing with client performance:
 - Choice of browser
 - Network bandwidth and latency between the client and the data center running [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-These subjects are described in [Performance Tips for Business Users](performance-users.md).
+These subjects are described in [Performance tips for business users](performance-users.md).
 
 ### Web Server
 
@@ -56,7 +56,7 @@ You can adjust the following [!INCLUDE[server](../developer/includes/server.md)]
 | DisableQueryHintLoopJoin | Check if this setting is set to **true**. | [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md) |
 | DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is bad, you might want to try isolating and testing FlowField queries separately. | [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md) |
 |EnableCloudReplicationMaintenance|Specifies whether to keep the cloud replication status in the database up to date. When enabled, synchronize operations on tenants and extensions will update records in the **Intelligent Cloud Status** table, and set change tracking on tables that are configured to [replicate data](../developer/properties/devenv-replicatedata-property.md).<br /><br />Enabling this setting isn't required for migrating most on-premises solutions to the cloud, and you'll improve synchronization and upgrade performance by disabling it.|[Configuring Business Central Server - EnableCloudReplicationMaintenance](../administration/server-instance-settings.md#preserve-compatibility-and-manage-upgrades)|
-|EnableProfileCacheSynchronization|	Specifies whether profile cache synchronization across multiple server instances is enabled. However, enabling this setting may lower the tenant performance.|[Configuring Business Central Server - EnableProfileCacheSynchronization](../administration/server-instance-settings.md#manage-extensions-and-development)|
+|EnableProfileCacheSynchronization|Specifies whether profile cache synchronization across multiple server instances is enabled. However, enabling this setting may lower the tenant performance.|[Configuring Business Central Server - EnableProfileCacheSynchronization](../administration/server-instance-settings.md#manage-extensions-and-development)|
 | SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance. But it also lowers the amount of memory that the server instance consumes.  | [Database Settings](../administration/server-instance-settings.md#tune-database-execution) |
 |SessionEventTableRetainInterval<br /><br />  NonInteractiveSessionsLogRetainInterval<br /><br /> SessionEventTablePurgeLookupPeriod|The system table **2000000111 Session Event** stores information about sessions between [!INCLUDE[server](../developer/includes/server.md)] instances and clients. Entries are recorded for various events, for example, when a user signs in or out of the client, or when a web service request starts or stops.<br /><br />It's a good idea to limit the number of entries in this table because performance can be adversely affected as the table size grows. Under normal conditions, you shouldn't experience any problems. But there might be situations or periods, typically dealing with web service calls, during which a high number of session events occur. <br /><br />These three settings enable you to control the table size by specifying how long to keep entries in the table before they're automatically deleted.|[Configuring Business Central Server - Session Event Table](../administration/server-instance-settings.md#maintain-sessions-and-company-data)|
 
@@ -73,7 +73,7 @@ You can adjust server instance settings related to the task scheduler to impleme
 
 - [Maximum Concurrent Running Tasks](../administration/server-instance-settings.md#schedule-server-tasks)
 
-### Database (SQL Server or Azure SQL database)
+### Database (SQL Server or Azure SQL Database)
 
 First of all, make sure that you avoid common pitfalls in your SQL Server setup: 
 
@@ -92,17 +92,17 @@ These articles describe how you can use SQL Server table partitioning and data c
 [!INCLUDE[database-index-management](../developer/includes/database-index-management.md)]
 
 
-#### SQL Server vs. Azure SQL database
+#### SQL Server vs. Azure SQL Database
 
-Read more about the difference between SQL Server and Azure SQL database performance:
+Read more about the difference between SQL Server and Azure SQL Database performance:
 
 - [Differences between Azure SQL database and SQL Server](../deployment/deploy-database-azure-sql-database.md#differences-between-azure-sql-database-and-sql-server)  
 
-#### Using Read-Scale Out
+#### Using Read Scale-Out
 
 If you run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in a High Availability architecture, you can use the built-in **Read Scale-Out** feature in Azure SQL Database or SQL Server to load-balance read-only workloads. **Read Scale-Out** uses read-only replicas instead of sharing the primary database. This way, read-only workloads (reports, queries, API pages, and OData GET requests) will be isolated from the main read-write workload (codeunits). They won't affect the performance of business processes.
 
-For more information, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
+Learn more about using Read Scale-Out for better performance in [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
 
 #### Troubleshooting database performance issues
 
@@ -129,15 +129,15 @@ Enabling Transparent Data Encryption (TDE) has a slight performance degradation 
 
 ## <a name="scaling"></a>Scaling [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-On compute ([!INCLUDE[server](../developer/includes/server.md)] and Web servers), it's possible to scale horizontally by separating [!INCLUDE[server](../developer/includes/server.md)] instances and Web servers on different nodes. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+On compute ([!INCLUDE[server](../developer/includes/server.md)] and Web servers), it's possible to scale horizontally by separating [!INCLUDE[server](../developer/includes/server.md)] instances and Web servers on different nodes. Learn more about configuring Business Central Server in [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 It's also common on larger installations to separate traffic based on client type (direct UI and OData traffic to different [!INCLUDE[server](../developer/includes/server.md)] instances); possibly cohosting [!INCLUDE[server](../developer/includes/server.md)] instances and Web servers on the same nodes.
 
 The [!INCLUDE[server](../developer/includes/server.md)] has a built-in thread dispatcher for AL execution. If you have more cores available, then the dispatcher allows for more parallel execution. But keep in mind that AL execution is single-threaded until the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (when we introduced async processing). For long running operations, such as heavy reports, using faster CPUs will give better performance.
 
-On the database side, make sure SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md).
+On the database side, make sure SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Learn more about installation considerations for Microsoft SQL Server and Business Central in [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md).
 
-## <a name="measure"></a>Measure and Monitor performance
+## <a name="measure"></a>Measure and monitor performance
 
 The following resources describe ways that you measure and monitor performance in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises installation:
 
@@ -148,10 +148,9 @@ The following resources describe ways that you measure and monitor performance i
 
 ## Related information
 
-[Performance Overview](performance-overview.md)  
-[Performance Topics For Developers](performance-developer.md)  
+[Performance overview](performance-overview.md)  
+[Performance articles for developers](performance-developer.md)  
 [Performance tips for business users](performance-users.md)  
-[How Application Configurations Affect Performance](performance-application.md)  
-[Performance Online](performance-online.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)  
-
+[How application configurations affect performance](performance-application.md)  
+[Performance online](performance-online.md)  
+[How to work with a performance problem](performance-work-perf-problem.md)  

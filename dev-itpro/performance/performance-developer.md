@@ -1,8 +1,8 @@
 ---
-title: Performance article for developers
-description: Provides information for developers to help improve performance in Business Central
+title: Performance Articles for AL Developers
+description: Learn how to write efficient AL code, pages, reports, and web services, and use tools like the AL Profiler to improve performance in Business Central.
 ms.custom: bap-template
-ms.date: 02/14/2025
+ms.date: 09/11/2026
 ms.reviewer: jswymer
 ms.topic: article
 author: KennieNP
@@ -17,7 +17,7 @@ In this article, you can read about ways to tune performance when developing for
 - [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
 - [Writing efficient reports](performance-developer.md#writing-efficient-al-reports)  
 - [AL performance patterns](performance-developer.md#al-performance-patterns)  
-- [Efficient Data access](performance-developer.md#efficient-data-access)  
+- [Efficient data access](performance-developer.md#efficient-data-access)  
 - [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
 - [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
 - [Using the AL Profiler to analyze performance](../developer/devenv-al-profiler-overview.md)
@@ -101,7 +101,7 @@ When establishing a data lake or a data warehouse, you typically need to do two 
 
 The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
 
-The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
+The fastest and least disruptive way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with **Read Scale-Out** and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
 
 Learn more in [Extract data from Business Central](../developer/devenv-extract-data.md).
 
@@ -117,11 +117,6 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
-When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, use a `TextBuilder` data type instead of `BigText` when possible. Learn more in [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
-
-If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. Learn more in [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
-
-Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). Learn more in [List Data Type](../developer/methods-auto/list/list-data-type.md).
 When working with strings, make sure to use the `TextBuilder` data type, and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, use a `TextBuilder` data type instead of `BigText` when possible. Learn more in [TextBuilder data type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. Learn more in [Dictionary data type](../developer/methods-auto/dictionary/dictionary-data-type.md).
@@ -138,8 +133,8 @@ Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `M
 
 The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are faster than looping over a result set and do the calculation for each row.
 
-- [CalcFields, CalcSums, and Count](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
-- [FindSet method](../developer/methods-auto/recordref/recordref-findset-method.md)
+- [CalcFields, CalcSums, and Count](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc)
+- [FindSet method](../developer/methods-auto/recordref/recordref-findset-boolean-method.md)
 
 One common use of the `CalcSums` method is to efficiently calculate totals. 
 
@@ -155,7 +150,7 @@ Consider using a query object if you want to use a set-based coding paradigm. Th
 
 |Pros for using a query object|Cons for using a query object | 
 |-----------------------------|------------------------------|
-| - Bypasses the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets aren't cached in the servers primary key (data) cache. <br> - No writes are allowed. <br> - You can't add a page on a query object. |
+| - Bypasses the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets aren't cached in the server's primary key (data) cache. <br> - No writes are allowed. <br> - You can't add a page on a query object. |
 
 Read more about query objects here:
 
@@ -217,7 +212,7 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 [!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
 
 ### Limit work done in sign in event subscribers
-[!INCLUDE[login_performance](../includes/include-telemetry-login-performance.md)])
+[!INCLUDE[login_performance](../includes/include-telemetry-login-performance.md)]
 
 ## Efficient data access 
 
@@ -238,14 +233,14 @@ Indexes have a cost to update, so it's recommended to not add too many of them o
 
 ### Using data audit fields to only read recent data
 
-Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) includes the following two system fields, which can be used for filtering records:
+Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes the following two system fields, which you can use to filter records:
 
 - `SystemCreatedAt`
 - `SystemModifiedAt`
 
 One example is to use the system field `SystemModifiedAt` to implement delta reads. Learn more about system fields in [System fields](../developer/devenv-table-system-fields.md).  
 
-### Non-clustered Columnstore Indexes (NCCI)
+### Nonclustered columnstore indexes (NCCI)
 
 Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], non-clustered columnstore indexes (sometimes referred to as NCCIs) are supported on tables. 
 
@@ -340,11 +335,11 @@ Read more here:
 - [Monitoring SQL Database Locks](../administration/monitor-database-locks.md)
 - [Analyzing Database Lock Timeout Trace Telemetry](../administration/telemetry-database-locks-trace.md)
 
-### Using Read-Scale Out
+### Using Read Scale-Out
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server. **Read Scale-Out** is used to load-balance analytical workloads in the database that only read data.  **Read Scale-Out** is built in as part of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, but it can also be enabled for on-premises.
 
-**Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload so that they won't affect the performance of business processes.
+**Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, set them up to run against a read-only replica. This setup isolates them from the main read-write workload so they don't affect the performance of business processes.
 
 As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessIntent property](../developer/properties/devenv-dataaccessintent-property.md). Learn more in [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
 
@@ -383,7 +378,7 @@ The following performance telemetry is available in Azure Application Insights (
 - Page views
 - Reports
 - Sessions started
-- Web service Requests
+- Web service requests
 
 Learn more in the [Analyzing performance issues using telemetry](performance-work-perf-problem.md#analyzing-performance-issues-using-telemetry) section.
 
