@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.custom: bap-template
-ms.date: 05/29/2024
+ms.date: 09/22/2026
 ms.topic: article
 ---
 
@@ -74,7 +74,7 @@ To enable transactional batch behavior, include the `Isolation: snapshot` header
 
 For more information, see [Using OData Transactional $batch Requests](../webservices/use-odata-batch.md)
 
-## <a name="DataAccessIntent"></a>Specifying Data Access Intent for GET requests
+## <a name="DataAccessIntent"></a>Specify data access intent for API requests
 
 By specifying HTTP request header `Data-Access-Intent`, it's possible to override data access intent of the API page or query that has been defined with [DataAccessIntent property](properties/devenv-dataaccessintent-property.md). 
 
