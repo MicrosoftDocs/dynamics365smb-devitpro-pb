@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 05/03/2026
+ms.date: 08/24/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---
@@ -26,18 +26,26 @@ This makes it possible to integrate AL development operations into CI/CD pipelin
 
 ## Starting the server
 
+You can pass one or more AL project paths when you start the server. Wrap each path in double quotes. If you don't specify a project path, no project is loaded. Add a project later with the `al_addproject` tool before you use tools that operate on a project.
+
 ### STDIO transport (recommended for most agents)
 
-```bash
-altool launchmcpserver --transport stdio
+```shell
+altool launchmcpserver "C:\<ProjectFolder>" --transport stdio
+```
+
+To load multiple projects, specify each project path as a separate argument:
+
+```shell
+altool launchmcpserver "C:\<ProjectFolder1>" "C:\<ProjectFolder2>" --transport stdio
 ```
 
 The server reads JSON-RPC requests from `stdin` and writes responses to `stdout`. All diagnostic log output is written to `stderr` and should be captured separately. The server shuts down cleanly when `stdin` reaches EOF or when the process receives a termination signal.
 
 ### HTTP transport
 
-```bash
-altool launchmcpserver --transport http --port 5010
+```shell
+altool launchmcpserver "C:\<ProjectFolder>" --transport http --port 5010
 ```
 
 The server listens for HTTP requests on the specified port. Use this transport for agents that connect over a network or for scenarios where launching a subprocess isn't practical.
@@ -55,6 +63,7 @@ The following tools are exposed by the AL MCP Server. Tools marked **MCP only** 
 | [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies. |
 | [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve compilation diagnostics with filtering. |
 | [`al_getpackagedependencies`](al-tool-get-package-dependencies.md) | List the project's declared `app.json` dependencies. **MCP only.** |
+| `al_addproject` | Add an AL project to the server workspace after startup. **MCP only.** |
 | [`al_auth_login`](al-tool-auth.md#al_auth_login) | Authenticate to Microsoft Entra ID for cloud operations. **MCP only.** |
 | [`al_auth_logout`](al-tool-auth.md#al_auth_logout) | Clear cached authentication tokens. **MCP only.** |
 
@@ -67,7 +76,7 @@ The exact configuration depends on your agent. Most MCP-compatible agents accept
   "mcpServers": {
     "al": {
       "command": "altool",
-      "args": ["launchmcpserver", "--transport", "stdio"]
+      "args": ["launchmcpserver", "C:\\<ProjectFolder>", "--transport", "stdio"]
     }
   }
 }
@@ -137,9 +146,9 @@ For on-premises Business Central deployments that use Windows authentication, no
 
 ### CI/CD validation pipeline
 
-```bash
+```shell
 # 1. Start the MCP server (managed by the CI agent)
-altool launchmcpserver --transport stdio
+altool launchmcpserver "C:\<ProjectFolder>" --transport stdio
 
 # The agent then calls tools in sequence:
 # al_downloadsymbols  (refresh symbols from global sources)
@@ -149,7 +158,7 @@ altool launchmcpserver --transport stdio
 
 ### Full build and deploy to sandbox
 
-```bash
+```shell
 # The agent calls:
 # al_auth_login       (authenticate to the cloud environment)
 # al_downloadsymbols  (refresh symbols)
@@ -159,7 +168,7 @@ altool launchmcpserver --transport stdio
 
 ### Code quality gate (AppSourceCop)
 
-```bash
+```shell
 # The agent calls:
 # al_compile with enableCodeAnalysis=true, codeAnalyzers=["${AppSourceCop}"]
 # al_getdiagnostics filtered by areas=["AppSourceCop"]
@@ -170,7 +179,7 @@ altool launchmcpserver --transport stdio
 
 The AL MCP Server maintains a compilation session during the process lifetime. The session is initialized when the server starts and is shared across all tool calls. This means that symbol state and compilation caches are preserved between calls, which improves performance for sequential operations such as compile → diagnose → fix → recompile.
 
-If you need to work with multiple AL projects in the same server session, use the `projectPath` parameter on individual tool calls to target a specific project.
+Use the `al_addproject` tool to load more projects after the server starts. When the server has multiple projects, use the `projectPath` parameter on individual tool calls to target a specific project.
 
 ## Related information
 
