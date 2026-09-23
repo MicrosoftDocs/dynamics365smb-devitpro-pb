@@ -1,21 +1,18 @@
 ---
-title: Use page scripting tool for acceptance testing (preview)
-description: Learn how to use the page scripting tool in the Business Central web client to record and replay your interaction with the user interface (UI)
+title: Use the page scripting tool for acceptance testing
+description: Learn how to record, edit, replay, and automate page scripts in Business Central to validate business processes and user acceptance tests.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 09/23/2026
 ms.custom: bap-template 
+ai-usage: ai-assisted
 ---
 
-# Use page scripting tool for acceptance testing (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Use the page scripting tool for acceptance testing
 
 The page scripting tool in the Business Central web client lets you record your interactions with the user interface (UI), such as opening pages, selecting actions, and filling in fields. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Use of the tool
 
@@ -83,7 +80,7 @@ While recording, you can edit captured steps to correct actions, add missing inp
 
 > APPLIES TO: Recording only
 
-The page scripting tool comes with its own clipboard. The clipboard lets you copy values of controls and then paste the values in others controls or expressions, or even use them to [validate results](#validate-control-values). Copy and paste are available from the right-click context menu on a control.
+The page scripting tool comes with its own clipboard. The clipboard lets you copy values of controls and then paste the values in other controls or expressions, or even use them to [validate results](#validate-control-values-and-dialog-text). Copy and paste are available from the right-click context menu on a control.
 
 - To copy a control value to the clipboard, right-click the control and then select **Page Scripting** > **Copy**. The value is saved to the clipboard for pasting later.
 - To paste a control value from the clipboard to another control, select **Page Scripting** > **Paste** > select the value from the list. Pasting a value from the clipboard creates an *input* step in the **Page Scripting** pane.
@@ -96,20 +93,48 @@ When recording, you have access to session information, such as the user ID. Thi
 
 An input step with property value `Session.'User ID'` is added in the **Page Scripting** pane.
 
-## Validate control values
+## Select multiple rows in a list
 
 > APPLIES TO: Recording only
 
-While recording, you can insert validation steps that assert that a control has a specific value when the recording is played back. When you insert a validation step, you can choose to validate using the control's current value, a value from the clipboard, or a custom value that you define using Power Fx.
+When you select multiple rows in a list, the page scripting tool records how you change the selection. The recording captures when you add or remove a row, extend the selection to a range of rows, select all rows, or clear the selection. During playback, the tool recreates the selection before it runs the next recorded action. You can use this capability to test bulk actions on a specific set of rows.
+
+To check the number of selected rows:
+
+1. Right-click a control in the list, and then select **Page Scripting** > **Validate** > **Selected row count**.
+1. Select **Is** *[current selected row count]*.
+
+   A validation step is added to the **Page Scripting** pane.
+
+The **Selected row count** option is available only when the entire list is loaded. This restriction prevents the recording from using an incomplete count from a partially loaded list.
+
+## Repeat steps for rows in a list
+
+> APPLIES TO: Recording only
+
+You can repeat a group of steps for each row or for each selected row in a list. For example, you can select a set of sales orders and validate a value on each selected order.
+
+To repeat steps:
+
+1. Right-click a control in the list, and then select **Page Scripting** > **For each**.
+1. Select **Row** to use every row or **Selected row** to use only the rows that you selected.
+1. Perform the steps that you want to repeat.
+1. Select **End scope** in the **Page Scripting** pane.
+
+## Validate control values and dialog text
+
+> APPLIES TO: Recording only
+
+While recording, you can insert validation steps that check whether a control has a specific value during playback. You can validate a field or other control, the text in a message or error dialog, a row count, or the number of selected rows in a fully loaded list. You can use the current value, a value from the clipboard, or a custom value that you define with Power Fx.
 
 To add a validation step:
 
-1. Right-click the control that you want to validate.
-1. In the content menu, select **Page Scripting** > **Validate** > **Current Value**.
-1. Select **Is** *[current value]* or a value under the **is equal to clipboard entry** (only appears if there you previously copied a value to the clipboard).
+1. Right-click the value that you want to validate. To validate a message or error, right-click the text in the dialog.
+1. In the context menu, select **Page Scripting** > **Validate** > **Current value**.
+1. Select **Is** *[current value]* or a value under **Is equal to clipboard entry**. This option appears only if you previously copied a value to the clipboard.
 
    A validate step is added to the **Page Scripting** pane.
-1. If you want to modify the value to be validated, go to the step, select ***...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields as needed.
+1. If you want to modify the value to be validated, go to the step, select **...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields as needed.
 
    ![Shows the properties of a validation step recording](media/page-scripting-validation-step.png)
 
@@ -331,7 +356,7 @@ You can share a recording or a playback as a link (URL) that you can share with 
   - Recording 2: create customer.
   - Recording 3: create sales order.
   - Recording 4: post sales order.
-- Multiple line selections aren't recorded as expected. If you select multiple records in a list during a recording, only the last line selection is recorded and played back.
+- When you validate the selected row count, make sure that the entire list is loaded. The **Selected row count** validation option isn't available for a partially loaded list.
 
 ## Run page scripts in pipelines
 
