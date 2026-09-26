@@ -37,7 +37,7 @@ Get started with the AL Development Tools package by following the instructions 
 To get a list of available commands, run the following command in your terminal or command prompt:
 
 ```shell
-al help
+al --help
 ```
 
 | Command                        | Description                                           |
