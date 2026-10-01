@@ -69,8 +69,14 @@ begin
 end;
 ```
 
-> [!TIP]  
-> The base application uses this method to view PDF attachments on documents like sales orders, items, and more. Learn more in the [Microsoft.Foundation.Attachment reference](/dynamics365/business-central/application/base-application/table/microsoft.foundation.attachment.document-attachment).
+> [!TIP]
+> Use this method to provide the built-in file preview experience in Business Central for supported PDF and image files. Users can preview content directly in the client instead of downloading the file first.
+>
+> Supported image formats include JPEG, JPG, PNG, BMP, SVG, WEBP, ICO, GIF, and AVIF. On Safari, TIFF and TIF images are also supported.
+>
+> The base application uses this method to preview attachments on sales documents, item cards, and other records. Learn more in the Table "Document Attachment" reference.
+
+## Related information
 
 [File data type](file-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  

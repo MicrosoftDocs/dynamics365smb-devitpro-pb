@@ -1,8 +1,8 @@
 ---
 title: "AppSourceCop Hidden AS0072"
-description: "The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version (Major.Minor)."
+description: "The attribute tag must be set to the next release version (Major.Minor)."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,18 +11,18 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Hidden AS0072
-The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version.
+The attribute tag must be set to the next release version.
 
 ## Description
-The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version (Major.Minor). This rule is only relevant if the Major.Minor format is set.
+The attribute tag must be set to the next release version (Major.Minor). This rule is only relevant if the Major.Minor format is set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-This rule verifies that the version specified as obsolete tag for objects whose obsolete state (not obsolete, obsolete pending, or obsolete removed) is updated with the current version is matching the version specified in the `obsoleteTagVersion` property of the AppSourceCop.json.
+This rule verifies that the version specified as tag for [Obsolete](../attributes/devenv-obsolete-attribute.md) or [RequiredPending](../attributes/devenv-requiredpending-attribute.md) attributes, or for objects whose obsolete state (not obsolete, obsolete pending, or obsolete removed) is updated, matches the version specified in the `obsoleteTagVersion` property of the AppSourceCop.json.
 
-Obsolete objects which have the same obsolete state as in the baseline are not validated by this rule, but are validated by [AS0074](appsourcecop-as0074.md).
+Objects or methods which have the same state as in the baseline are not validated by this rule, but are validated by [AS0074](appsourcecop-as0074.md).
 
 > [!NOTE]  
 > This rule is only enabled when using the default `obsoleteTagPattern` in the AppSourceCop.json.

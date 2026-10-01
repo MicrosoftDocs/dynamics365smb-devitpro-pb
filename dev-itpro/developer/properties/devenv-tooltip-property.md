@@ -1,8 +1,8 @@
 ---
 title: "ToolTip property"
-description: "Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button."
+description: "Sets the string used for the tooltip of the page."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,12 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ToolTip Property
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 18.0._
 
-Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button.
-
-In the client, tooltips appear when you point to the caption of the control.
+Sets the string used for the tooltip of the page. This is only used when the page is the target RunObject of an action — the action will inherit the tooltip of the page if no tooltip is explicitly specified on the action itself.
 
 ## Applies to
+-   Page
 -   Page Label
 -   Page Field
 -   Page Part
@@ -68,6 +67,9 @@ The default is an empty string, which means there will be no tooltip. According 
 With the `Locked` parameter, you can specify that the tooltip shouldn't be translated. This is useful when the tooltip is a technical term or a proper name, for example. The `Comment` parameter is used to provide additional information about the tooltip, for example, to explain why the tooltip shouldn't be translated. The `MaxLength` parameter is used to specify the maximum length of the tooltip. If the tooltip exceeds the maximum length, the rest of the tooltip is truncated `...`.
 
 > [!NOTE]  
+> With runtime version 18.0, the `ToolTip` property can be set at the page object level. When a navigation action has `RunObject = page X` and the target page has a `ToolTip` set, the action inherits the page's tooltip if no tooltip is explicitly specified on the action itself. This mirrors the existing behavior for reports.
+
+> [!NOTE]  
 > With runtime version 14.0, the `ToolTip` property is available for query columns.
 
 > [!NOTE]  
@@ -91,6 +93,18 @@ field("Reward ID";"Reward ID")
 {
     ApplicationArea = All;
     ToolTip = 'Specifies the level of reward that the customer has at this point.', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 100;
+}
+```
+
+The following example shows how to set a tooltip at the page object level. Navigation actions targeting this page inherit the tooltip automatically:
+
+```AL
+page 50100 MyPage
+{
+    ToolTip = 'Opens the My Page page.';
+    Caption = 'My Page';
+    PageType = Card;
+    // ...
 }
 ```
 

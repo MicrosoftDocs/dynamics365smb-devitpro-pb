@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 08/27/2026
+ms.date: 09/27/2026
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -19,13 +19,9 @@ Wondering about upcoming and recently released capabilities in Dynamics 365 Busi
 >
 > **Release Plans will no longer be published starting in September 2026.** New Dynamics 365 Business Central capabilities will be published to the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap) beginning in September 2026. Existing release plans will remain available for historical reference until further notice. Learn more about the roadmap and disclosure changes at [One always-on roadmap: Dynamics 365, Power Platform and Dataverse join the AI at Work roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
 
-Business Central follows a six‑month release cycle called a *release wave*, which groups new, changed, and planned features for a half‑year period. Details for each recent release wave are available through **Release Planner** and **Release Plans**. These sources use the same underlying data, but present it differently.
+Business Central follows a six‑month release cycle called a *release wave*, which groups new, changed, and planned features for a half‑year period. 
 
-- **Release Planner**: Explore feature details, availability, and rollout progress in an interactive view where you can filter and share selections. [View the release planner](https://experience.dynamics.com/releaseplans/?app=Business+Central).
-- **Release Plans**: Read about features in each release wave and optionally download a PDF. Choose a link for a release wave:
-
-  - Current wave: [2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/planned-features)
-  - Earlier waves: [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/)
+Learn about features in earlier waves at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/).
 
 ## New and changed features in recent minor updates
 
@@ -33,7 +29,7 @@ Minor updates are released monthly and can include new release wave features, re
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
-|29.0 (preview)|Application Build 29.0 Platform Build 29.0|September 2026|[Update 29.0 for Business Central 2026 release wave 2 (preview)](whatsnew-update-29-0.md)|
+|29.0|Application Build 29.0 Platform Build 29.0|October 2026|[Update 29.0 for Business Central 2026 release wave 2](whatsnew-update-29-0.md)|
 |28.5|Application Build 28.5 Platform Build 28.0|September 2026|[Update 28.5 for Business Central 2026 release wave 1](whatsnew-update-28-5.md)|
 |28.4|Application Build 28.4 Platform Build 28.0|August 2026|[Update 28.4 for Business Central 2026 release wave 1](whatsnew-update-28-4.md)|
 |28.3|Application Build 28.3 Platform Build 28.0|July 2026|[Update 28.3 for Business Central 2026 release wave 1](whatsnew-update-28-3.md)|
@@ -41,7 +37,7 @@ Minor updates are released monthly and can include new release wave features, re
 
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 
-For earlier versions, visit the [Updates for earlier major versions](whatsnew-update-27-3.md) section.
+For earlier versions, visit the [Updates for earlier major versions](whatsnew-update-27-5.md) section.
 
 ## Get the latest version
 

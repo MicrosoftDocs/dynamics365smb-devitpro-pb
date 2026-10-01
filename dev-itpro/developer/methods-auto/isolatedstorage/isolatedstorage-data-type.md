@@ -2,7 +2,7 @@
 title: "IsolatedStorage data type"
 description: "Provides data isolation for extensions."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -29,6 +29,10 @@ The following methods are available on the IsolatedStorage data type.
 |[Get(Text, var Text)](isolatedstorage-get-string-text-method.md)|Gets the value associated with the specified key.|
 |[Get(Text [, DataScope], var SecretText)](isolatedstorage-get-string-datascope-secrettext-method.md)|Gets the value associated with the specified key.|
 |[Get(Text, var SecretText)](isolatedstorage-get-string-secrettext-method.md)|Gets the value associated with the specified key.|
+|[Get(Text, DataScope, IsolationLevel, var Text)](isolatedstorage-get-string-datascope-isolationlevel-text-method.md)|Gets the value associated with the specified key, applying the specified isolation level to the read.|
+|[Get(Text, IsolationLevel, var Text)](isolatedstorage-get-string-isolationlevel-text-method.md)|Gets the value associated with the specified key, applying the specified isolation level to the read.|
+|[Get(Text, DataScope, IsolationLevel, var SecretText)](isolatedstorage-get-string-datascope-isolationlevel-secrettext-method.md)|Gets the value associated with the specified key, applying the specified isolation level to the read.|
+|[Get(Text, IsolationLevel, var SecretText)](isolatedstorage-get-string-isolationlevel-secrettext-method.md)|Gets the value associated with the specified key, applying the specified isolation level to the read.|
 |[Set(Text, Text [, DataScope])](isolatedstorage-set-string-string-datascope-method.md)|Sets the value associated with the specified key.|
 |[Set(Text, SecretText [, DataScope])](isolatedstorage-set-string-secrettext-datascope-method.md)|Sets the value associated with the specified key.|
 |[SetEncrypted(Text, Text [, DataScope])](isolatedstorage-setencrypted-string-string-datascope-method.md)|Encrypts and sets the value associated with the specified key. The input string cannot exceed a length of 215 plain characters; be aware that special characters take up more space.|

@@ -1,16 +1,17 @@
 ---
-title: Analyzing configuration package lifecycle trace telemetry
+title: Analyze Configuration Package Telemetry
 description: Learn about the telemetry for configuration package telemetry for Azure Application Insights.  
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 12/20/2023
+ms.date: 09/22/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
-# Analyzing configuration package telemetry
+# Analyze configuration package telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, version 17.2, and later
 
@@ -23,7 +24,9 @@ Configuration package telemetry gathers data about the following operations on c
 
 For information about working with configuration packages, see [Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)] Application Help.
 
-## <a name="other"></a>**Common custom dimensions**
+These events come from AL application code. The application source uses the event ID without the `AL` prefix. For example, the source ID `0000E3N` appears as `AL0000E3N` in Application Insights. Learn more in [Find AL event IDs in the application source](telemetry-event-ids.md#find-al-event-ids-in-the-application-source).
+
+## <a name="other"></a>Common custom dimensions
 The following table explains custom dimensions that are common to all configuration package traces. 
 
 |Dimension|Description or value|
@@ -47,7 +50,7 @@ Occurs when an export operation on a configuration package is started.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Configuration package export started: {alPackageCode}**|
+|message|**Configuration package export started: {packageSystemId}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -56,8 +59,9 @@ Occurs when an export operation on a configuration package is started.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000E3F**|
-|alExecutionId|Specifies the ID of the export operation.|
-|alPackageCode|Specifies the Code of the configuration package being exported.|
+|alExecutionId|Specifies the GUID that correlates the start and completion events for the export operation.|
+|alPackageCode|Specifies the system ID (GUID) of the configuration package being exported. The dimension name is retained for compatibility.|
+|[See common custom dimensions](#other)||
 
 
 ## <a name="exportsuccessful"></a>Configuration package exported successfully
@@ -68,7 +72,7 @@ Occurs when an export operation on a configuration package completes successfull
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Configuration package exported successfully: {alPackageCode}**|
+|message|**Configuration package exported successfully: {packageSystemId}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -77,9 +81,9 @@ Occurs when an export operation on a configuration package completes successfull
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000E3G**|
-|alExecutionId|Specifies the ID of the export operation.|
+|alExecutionId|Specifies the GUID that correlates the start and completion events for the export operation.|
 |alExecutionTimeInMs|Specifies the number of milliseconds it took to complete the export operation.|
-|alPackageCode|Specifies the Code of the configuration package that was exported.|
+|alPackageCode|Specifies the system ID (GUID) of the configuration package that was exported. The dimension name is retained for compatibility.|
 |[See common custom dimensions](#other)||
 
 
@@ -91,7 +95,7 @@ Occurs when an import operation on a configuration package is started.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Configuration package import started: {alPackageCode}**|
+|message|**Configuration package import started: {packageSystemId}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -101,8 +105,7 @@ Occurs when an import operation on a configuration package is started.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000E3H**|
-|alExecutionId|Specifies the ID of the import operation.|
-|alPackageCode|Specifies the ID of the configuration package being imported.|
+|alExecutionId|Specifies the GUID that correlates the start and completion events for the import operation.|
 |[See common custom dimensions](#other)||
 
 
@@ -114,7 +117,7 @@ Occurs when an import operation on a configuration package completes successfull
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Configuration package imported successfully: {alPackageCode}**|
+|message|**Configuration package imported successfully: {packageSystemId}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -124,8 +127,8 @@ Occurs when an import operation on a configuration package completes successfull
 |---------|-----|
 |eventId|**AL0000E3I**|
 |alExecutionTimeInMs|Specifies the number of milliseconds it took to complete the import operation.|
-|alExecutionId|Specifies the ID of the import operation.|
-|alPackageCode|Specifies the ID of the configuration package that was imported.|
+|alExecutionId|Specifies the GUID that correlates the start and completion events for the import operation.|
+|alFileSizeInBytes|Specifies the approximate size of the imported XML content in bytes.|
 |[See common custom dimensions](#other)||
 
 
@@ -137,7 +140,7 @@ Occurs when an apply operation on a configuration package is started.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Configuration package apply started: {alPackageCode}**|
+|message|**Configuration package apply started: {packageSystemId}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -146,8 +149,8 @@ Occurs when an apply operation on a configuration package is started.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000E3N**|
-|alExecutionId|Specifies the ID of the apply operation.|
-|alPackageCode|Specifies the Code of the configuration package being applied.|
+|alExecutionId|Specifies the GUID that correlates the start and completion events for the apply operation.|
+|alPackageCode|Specifies the system ID (GUID) of the configuration package being applied. The dimension name is retained for compatibility.|
 |[See common custom dimensions](#other)||
 
 
@@ -159,7 +162,7 @@ Occurs when an apply operation on a configuration package completes successfully
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Configuration package applied successfully: {alPackageCode}**|
+|message|**Configuration package applied successfully: {packageSystemId}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -168,11 +171,11 @@ Occurs when an apply operation on a configuration package completes successfully
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000E3O**|
-|alExecutionId|Specifies the ID of the apply operation.|
+|alExecutionId|Specifies the GUID that correlates the start and completion events for the apply operation.|
 |alExecutionTimeInMs|Specifies the number of milliseconds it took to complete the apply operation.|
 |alErrorCount|Specifies the number of errors that occurred when applying the configuration package.|
 |alFieldCount|Specifies the number of fields that were included in the migration table of the applied configuration package. |
-|alPackageCode|Specifies the Code of the configuration package that was applied.|
+|alPackageCode|Specifies the system ID (GUID) of the configuration package that was applied. The dimension name is retained for compatibility.|
 |alRecordCount|Specifies the number of records that were included in the applied configuration package.|
 |[See common custom dimensions](#other)||
 
@@ -185,7 +188,7 @@ Occurs when a configuration package is deleted successfully.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Configuration package deleted successfully: {alPackageCode}**|
+|message|**Configuration package deleted successfully: {packageSystemId}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -194,7 +197,7 @@ Occurs when a configuration package is deleted successfully.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000E3P**|
-|alPackageCode|Specifies the Code of the configuration package that was deleted.|
+|alPackageCode|Specifies the system ID (GUID) of the configuration package that was deleted. The dimension name is retained for compatibility.|
 |[See common custom dimensions](#other)||
 
 
@@ -203,3 +206,4 @@ Occurs when a configuration package is deleted successfully.
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)]  
+[Telemetry event IDs in Application Insights](telemetry-event-ids.md)

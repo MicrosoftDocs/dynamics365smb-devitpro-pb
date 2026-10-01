@@ -2,7 +2,7 @@
 title: "AL diagnostics"
 description: ""
 ms.author: solsen
-ms.date: 04/21/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -793,6 +793,21 @@ ms.reviewer: solsen
 |[AL0915](diagnostic-al915.md)|Table extension '{0}' adds {1} fields to table '{2}'. Adding many fields in a single table extension might limit the ability of other extensions to add fields, as the total number of fields across a table and all its extensions cannot exceed the maximum number of columns allowed in SQL.|Warning|
 |[AL0916](diagnostic-al916.md)|The call is ambiguous between the built-in methods '{0}' and '{1}'. The compiler will implicitly choose the '{0}' overload. Make the call explicit by casting the Variant argument to the desired type.|Warning|
 |[AL0917](diagnostic-al917.md)|The Excel layout '{0}' was automatically upgraded to multi-sheet format. The original sheet '{1}' was not removed. Consider regenerating the layout by deleting '{0}'.|Warning|
+|[AL0918](diagnostic-al918.md)|Interface '{0}' has the same runtime ID as interface '{1}' from module '{2}'. Rename one of the interfaces or change its methods to resolve the conflict.|Error|
+|[AL0919](diagnostic-al919.md)|The Scope attribute is not allowed on interface members.|Error|
+|[AL0920](diagnostic-al920.md)|The method '{0}' cannot be used as the implementation for the interface method '{1}' because it is not public.|Warning (future error)|
+|[AL0921](diagnostic-al921.md)|The method '{0}' cannot be used as the implementation for the interface method '{1}' because it is not public.|Error|
+|[AL0922](diagnostic-al922.md)|The method '{0}' cannot be used as the implementation for the interface method '{1}' because it has 'OnPrem' scope.|Error|
+|[AL0923](diagnostic-al923.md)|The attribute '[RequiredPending]' can only be applied to interface methods with a default implementation.|Error|
+|[AL0924](diagnostic-al924.md)|Interface method '{0}.{1}' will become required. {2}Add an implementation now to avoid a future breaking change.|Warning|
+|[AL0925](diagnostic-al925.md)|Interface '{0}' provides a default implementation for method '{1}'. Override it to customize the behavior.|Information|
+|[AL0926](diagnostic-al926.md)|The '{0}' section is not valid here. In a {1} object, the expected section order is: {2}. Metadata sections must appear before var declarations, triggers, and procedures.|Error|
+|[AL0927](diagnostic-al927.md)|The '{0}' with ID {1} is not valid because it is not from the System application. Its owning application is '{2}' by '{3}'.|Error|
+|[AL0928](diagnostic-al928.md)|Could not find the system {0} {1} with ID '{2}'. Ensure that you have downloaded the latest System symbols.|Error|
+|[AL0929](diagnostic-al929.md)|The DefaultHeaderFooterPart property can only be used with layouts that have the HeaderFooter subtype specified in the report's rendering section.|Error|
+|[AL0930](diagnostic-al930.md)|The DefaultThemePart property can only be used with layouts that have the Theme subtype specified in the report's rendering section.|Error|
+|[AL0931](diagnostic-al931.md)|'{0}' is not a namespace or a valid {1} reference.|Error|
+|[AL0932](diagnostic-al932.md)|The {0} property can only reference layouts that have the {1} subtype specified in the report's rendering section.|Error|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
@@ -887,6 +902,7 @@ ms.reviewer: solsen
 |[AL1154](diagnostic-al1154.md)|It is not possible to specify both '{0}' and '{1}' at the same time.|Error|
 |[AL1155](diagnostic-al1155.md)|Missing folder specification for '{0}' option.|Error|
 |[AL1156](diagnostic-al1156.md)|Comments are not recommended inside the manifest file as they can cause interoperability issues with CI/CD pipelines or other integrations.|Warning|
+|[AL1430](diagnostic-al1430.md)|Sorting on field '{0}' of table '{1}' is not backed by a key and may perform poorly on large tables. Because '{0}' is added by table extension '{2}' in another app, add a key that includes '{0}' to table extension '{2}', or remove the sort.|Warning|
 |[AL1401](diagnostic-al1401.md)|Reference '{0}' in application object '{1}' does not exist.|Designer customization warning|
 |[AL1402](diagnostic-al1402.md)|{0} '{1}' is missing.|Designer customization warning|
 |[AL1403](diagnostic-al1403.md)|'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.|Designer customization warning|

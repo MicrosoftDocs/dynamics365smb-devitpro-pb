@@ -2,7 +2,7 @@
 title: "Warnings turning into errors overview"
 description: ""
 ms.author: solsen
-ms.date: 04/21/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ This article lists all the warning diagnostics that will turn or have turned int
 
 |Release|Diagnostics|Message|
 |---------|-----------|------|
-|2027 release wave 1| - [AL0910](diagnostic-al910.md) <br />  - [AL0912](diagnostic-al912.md) <br /> | - The field '{0}' cannot be used in a query DataItemLink because it is a FlowField or FlowFilter.<br /> - The name of a {0} cannot be empty because it can cause runtime errors.<br />|
+|2027 release wave 1| - [AL0910](diagnostic-al910.md) <br />  - [AL0912](diagnostic-al912.md) <br />  - [AL0920](diagnostic-al920.md) <br /> | - The field '{0}' cannot be used in a query DataItemLink because it is a FlowField or FlowFilter.<br /> - The name of a {0} cannot be empty because it can cause runtime errors.<br /> - The method '{0}' cannot be used as the implementation for the interface method '{1}' because it is not public.<br />|
 |2026 release wave 2| - [AL0885](diagnostic-al885.md) <br /> | - The field '{0}' cannot be referenced in this context. You can only reference symbols from the base object '{1}' and the current extension.<br />|
 |2025 release wave 2| - [AL0864](diagnostic-al864.md) <br /> | - The control type 'ChartPart' is not supported.<br />|
 |2025 release wave 1| - [AL0755](diagnostic-al755.md) <br />  - [AL0803](diagnostic-al803.md) <br />  - [AL0816](diagnostic-al816.md) <br />  - [AL0818](diagnostic-al818.md) <br />  - [AL0826](diagnostic-al826.md) <br />  - [AL0837](diagnostic-al837.md) <br />  - [AL0845](diagnostic-al845.md) <br /> | - The '{0}' already defines a built-in member called '{1}'. Choose another name for {2} '{1}', or it might cause runtime issues.<br /> - The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Choose another name for one of them. Otherwise, this might cause runtime issues.<br /> - The property '{0}' cannot be set if the property '{1}' is set to '{2}'.<br /> - The {0} '{1}' already defines an event called '{2}' with the same parameter types in '{3}'.<br /> - The type '{0}' cannot be used as a type argument in this context.<br /> - The symbol '{0}' results in the same translation ID as one or more other symbols. Rename symbol to resolve the problem.<br /> - The {0} '{1}' is already being used. The EntityName and EntityNames property values must be unique.<br />|

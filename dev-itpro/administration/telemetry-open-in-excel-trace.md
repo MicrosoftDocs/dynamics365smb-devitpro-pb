@@ -4,12 +4,11 @@ description: Learn about the Open in Excel telemetry in Business Central
 author: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 05/01/2026
+ms.date: 09/22/2026
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.custom: bap-template
 ai-usage: ai-assisted
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Analyze Open in Excel telemetry
@@ -37,6 +36,7 @@ Occurs when a user successfully opens a page in Excel.
 |alObjectId| Specifies the ID of the page that was opened in Excel.|
 |alObjectName| Specifies the name of the page that was opened in Excel.|
 |alObjectType| Specifies the type of the AL object. Value is **Page**.|
+|alStackTrace| [!INCLUDE[alStackTrace](../includes/include-telemetry-dimension-al-stacktrace.md)] |
 |clientType| [!INCLUDE[clientType](../includes/include-telemetry-dimension-client-type.md)] |
 |companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |component|**Dynamics 365 Business Central Server**|
@@ -64,6 +64,7 @@ traces
 , clientType = customDimensions.clientType
 , alObjectId = customDimensions.alObjectId
 , alObjectName = customDimensions.alObjectName
+, alStackTrace = customDimensions.alStackTrace
 , extensionName = customDimensions.extensionName
 , extensionPublisher = customDimensions.extensionPublisher
 , extensionVersion = customDimensions.extensionVersion

@@ -4,7 +4,7 @@ description: Provides an overview of the different upgrade paths for Business Ce
 author: jswymer
 ms.topic: upgrade-and-migration-article
 ms.author: jswymer
-ms.date: 02/20/2026
+ms.date: 08/31/2026
 ms.reviewer: jswymer
 ---
 
@@ -12,17 +12,16 @@ ms.reviewer: jswymer
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises is available in several release versions. You can upgrade an existing Dynamics NAV or Business Central solution to any of these releases. Depending on your solution's current version, it might not be possible to upgrade directly to a particular release. You might have to upgrade indirectly through an intermediate release, before upgrading to the target release.  
 
-<!--
-
-Whether you can upgrade directly to a release will depend on the source version. For some targets, there's an indirect path through an intermediate version. The path that you must take to upgrade to the new Oracle Database 11g release depends on the release number of your current database. It might not be possible to directly upgrade from your current release of Oracle Database to the latest release. Depending on your current release, you might be required to upgrade through one or more intermediate releases to upgrade to the new Oracle Database 11g release.
-
--->
-
 The following sections provide the supported upgrade paths to the different [!INCLUDE[prod_short](../developer/includes/prod_short.md)] releases.
 
 > [!NOTE]
 > - Minor updates are regularly available for each release wave. Not all minor updates between two releases are compatible. Upgrade to a release update that's compatible with your current version to avoid problems. Learn more in [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
 > - Starting in 2025 release wave 1 (v26), the direct upgrade from Business Central 2019 (v14) to the latest release won't be supported. The supported upgrade path will be through 2024 release wave 2 (v25). Learn more in [Deprecated features in the platform - clients, server, and database](deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260)
+
+
+## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2026 release wave 2 (v29)
+
+[!INCLUDE[upgrade-path-v29](../developer/includes/upgrade-path-v29.md)]
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2026 release wave 1 (v28)
 

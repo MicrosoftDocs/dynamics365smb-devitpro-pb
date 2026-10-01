@@ -2,7 +2,7 @@
 title: "Compiler Error AL0199"
 description: "The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Integer, or Duration)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Inte
 
 
 ## Description
-Only fields of the numeric type (Decimal, BigInteger, Integer, or Duration) can be used as sum index fields.   
+Only fields of the numeric type (Decimal, BigInteger, Integer, or Duration) can be used as sum index fields.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

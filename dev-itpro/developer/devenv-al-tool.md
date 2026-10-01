@@ -1,14 +1,14 @@
 ---
-title: ALTool
+title: ALTool Command-Line Reference for AL Development
 author: SusanneWindfeldPedersen
 description: Simplify AL extension development with ALTool. Validate code, package extensions, and integrate into CI/CD pipelines for seamless deployment.
-ms.date: 08/03/2026
+ms.date: 09/03/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# ALTool
+# Develop AL extensions with ALTool
 
 ALTool is a command line tool used for compiling and packaging AL extensions for [!INCLUDE [prod_short](includes/prod_short.md)]. It's useful for integration into CI/CD pipelines to automate the build and deployment process.
 
@@ -48,10 +48,15 @@ To get a list of available commands, run the following command in your terminal 
 al help
 ```
 
+> [!NOTE]
+> Starting with Business Central 2026 release wave 2, ALTool command names are case-insensitive. For example, `al Compile` and `al compile` run the same command.
+
 | Command                        | Description                                           |
 |--------------------------------|-------------------------------------------------------|
 | `compile`                      | Compile a package using `al.exe`. Learn more in [Workspace commands](#workspace-commands). |
 | `workspace`                    | Workspace commands for creating, compiling, and mapping multi-project AL workspaces. Learn more in [Workspace commands](#workspace-commands). |
+| `runtests`                     | Run AL test codeunits from the command line. Learn more in [Run tests](#run-tests). |
+| `graph`                        | Build and query a static AL call graph across your apps. Learn more in [Graph commands](#graph-commands). |
 | `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
 | `launchlspserver`              | Launches an AL Language Server Protocol (LSP) server for use by autonomous AI agents and editors. Learn more in [AL LSP](#al-lsp). |
 | `launchprofilingmcpproxy`      | Launches a Performance Profiling MCP proxy that lets an AI agent capture CPU profiles from a slow Business Central session. Learn more in [Performance Profiling MCP proxy](#performance-profiling-mcp-proxy). **NOTE:** This feature is available in preview with a prerelease of runtime 18 and Business Central Server version 29. |
@@ -106,6 +111,11 @@ The following options are available:
 | `--sourcecommit` | Source commit ID for the workspace. |
 | `--loglevel` | Logging level. |
 | `--logdirectory` | Directory to store compilation log files. |
+| `--errorlogdirectory` | Directory to store a structured error log (JSON) for each project. If omitted, no error logs are written. |
+
+> **APPLIES TO:** Business Central 2026 release wave 2 and later
+
+When you specify `--errorlogdirectory`, `workspace compile` writes one structured error log for each project. It saves each log in that directory and names it `<project>_<timestamp>.errorLog.json`, such as `MyApp_20260615_093000.errorLog.json`. Each log captures errors, warnings, and code-analysis alerts produced while compiling the project. You can use these per-project diagnostics with external alert-tracking or reporting tools. If you omit `--errorlogdirectory`, no error logs are written.
 
 ### workspace map
 
@@ -122,6 +132,335 @@ al workspace map my.code-workspace output.md
 
 ALTool now supports detecting whether an app is symbol-only and whether a package is a runtime package. These checks help tools like AL-Go determine if an extension can be published to SaaS or containers.
 
+## Run tests
+
+> **APPLIES TO:** Business Central 2026 release wave 2 and later
+
+The `runtests` command runs AL test codeunits from the command line without the MCP server. Use it to run tests against a Business Central server as a CI/CD pipeline step.
+
+```shell
+al runtests [<codeunitId>] [options]
+```
+
+The optional `codeunitId` argument is the ID of the test codeunit to run (for example, `50100`). It's required unless you use `--testgroups` to run a batch of codeunits instead. The command connects to the target server, runs the specified test codeunit (or the codeunits listed in `--testgroups`), and reports the results.
+
+The following options are available:
+
+| Option | Description |
+|---|---|
+| `--testmethods <names>` | Test method names to run within the codeunit specified by `codeunitId`. Runs all methods in the codeunit if omitted. Requires `codeunitId` and can't be combined with `--testgroups`. |
+| `--project <path>` | AL project folder path, used to locate `launch.json` for connection settings. |
+| `--company <name>` | Company to use when running the tests (for example, `CRONUS International Ltd.`). |
+| `--testgroups <path>` | Path to a JSON file that runs a batch of codeunits over a single connection. Can't be combined with the `codeunitId` argument or `--testmethods`. Learn more in [Run tests in a batch](#run-tests-in-a-batch). |
+| `--raw` | Print a human-readable summary on the console instead of the default structured JSON result. Learn more in [Raw console output](#raw-console-output). |
+
+`runtests` also accepts the shared server-connection options `--server`, `--serverinstance`, `--port`, `--environmentname`, `--environmenttype`, `--authentication`, and `--tenant`. Learn more about environment variables for headless on-premises and container connections in [Environment variables for headless connections](#environment-variables-for-headless-connections).
+
+### Structured JSON results
+
+By default, `runtests` writes a single structured, machine-parseable JSON document to `stdout` and keeps `stdout` free of log noise. The tool writes server messages and any interactive authentication prompts to `stderr`. This approach makes results easy to consume in CI/CD pipelines without scraping console text.
+
+```json
+{
+  "succeeded": true,
+  "message": "Test run completed successfully.",
+  "data": {
+    "success": true,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "total": 2,
+    "results": [
+      {
+        "codeunitId": 50100,
+        "methodName": "TestPostSalesOrder",
+        "status": "passed",
+        "output": "",
+        "durationMs": 842
+      },
+      {
+        "codeunitId": 50100,
+        "methodName": "TestPostSalesCreditMemo",
+        "status": "passed",
+        "output": "",
+        "durationMs": 355
+      }
+    ]
+  },
+  "nextSteps": [],
+  "warnings": []
+}
+```
+
+| Field | Description |
+|---|---|
+| `succeeded` | Whether the command invocation completed as expected (for example, the connection was established and the run finished). |
+| `data.success` | Whether the test run succeeded, meaning no test failed (`data.failed` is `0`). |
+| `data.passed`, `data.failed`, `data.skipped`, `data.total` | Aggregate counts for the run. |
+| `data.results` | Array of per-method results. Each entry has `codeunitId`, `methodName`, `status` (`passed`, `failed`, or `skipped`), `output` (test output or error message), and `durationMs`. |
+
+The process exits with code `0` when the run succeeds (no failing tests) and `1` otherwise. You can use `runtests` to gate a CI/CD pipeline step on the exit code alone, without parsing the JSON.
+
+### Raw console output
+
+Pass `--raw` to get a human-readable summary instead of structured JSON: a progress line followed by a plain-text summary of the run.
+
+```bash
+al runtests 50100 --project ./MyApp --raw
+```
+
+### Run tests in a batch
+
+Use `--testgroups <path>` to run several codeunits, each with its own subset of methods, over a single authenticated server session instead of invoking `runtests` once per codeunit. This approach avoids the per-codeunit connection cost.
+
+```bash
+al runtests --testgroups testgroups.json --project ./MyApp
+```
+
+`testgroups.json` is a JSON array where each entry pairs a codeunit with the methods to run in it:
+
+```json
+[
+  {
+    "codeunitId": 134001,
+    "testMethods": ["MethodA", "MethodB"]
+  },
+  {
+    "codeunitId": 134002
+  }
+]
+```
+
+| Property | Type | Description |
+|---|---|---|
+| `codeunitId` | Number | The ID of the test codeunit to run. Must be a positive integer. |
+| `testMethods` | Array of strings | The methods to run in that codeunit. Optional—an empty or omitted array runs all methods in the codeunit. |
+
+`runtests` matches property names case-insensitively. You can't combine `--testgroups` with the `codeunitId` argument or `--testmethods`. List the methods for each codeunit inside the file instead. The whole batch still produces a single structured JSON result (or, with `--raw`, a single console summary) covering every codeunit in the file.
+
+## Environment variables for headless connections
+
+> **APPLIES TO:** Business Central 2026 release wave 2 and later
+
+The `runtests` and `publishapp` commands connect to a Business Central server. For cloud targets, both commands use Microsoft Entra ID authentication by default and honor any command-line options that you pass. A cloud target specifies `--environmentname` or sets `--environmenttype` to `Sandbox` or `Production`. For headless on-premises and container scenarios, both commands use the following environment variables for connection values that you don't pass explicitly:
+
+| Environment variable | Corresponds to |
+|---|---|
+| `BC_SERVER_URL` | `--server` |
+| `BC_SERVER_INSTANCE` | `--serverinstance` |
+| `BC_SERVER_PORT` | `--port` |
+| `BC_SERVER_USERNAME` | Username for `UserPassword` authentication |
+| `BC_SERVER_PASSWORD` | Password for `UserPassword` authentication |
+
+When you set both `BC_SERVER_USERNAME` and `BC_SERVER_PASSWORD` but don't pass `--authentication`, `runtests` and `publishapp` automatically select `UserPassword` authentication for an on-premises target. The commands treat the target as on-premises when either command gets a server URL or server instance from a command-line option or environment variable, or when you specify `--environmenttype OnPrem`.
+
+Precedence, from most to least authoritative:
+
+1. An explicit command-line option (for example, `--server`) always wins.
+2. For an explicit cloud target, the commands never consult the corresponding `BC_SERVER_*` environment variables. Cloud connection values must come from the command line.
+3. Otherwise, the commands use the matching `BC_SERVER_*` environment variable.
+4. If no option or environment variable supplies a value, `runtests` and `publishapp` use their cloud defaults (Microsoft Entra ID authentication).
+
+```powershell
+$env:BC_SERVER_URL = "http://localhost"
+$env:BC_SERVER_INSTANCE = "BC"
+$env:BC_SERVER_PORT = "7049"
+$env:BC_SERVER_USERNAME = "admin"
+$env:BC_SERVER_PASSWORD = "<Password>"
+
+al runtests 50100 --project ./MyApp
+```
+
+## Graph commands
+
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
+The `graph` command builds a static **call graph** across your AL apps and lets you query how code reaches other code. For example, you can see how internal code is reached from your public API surface, or where code that you can't inspect in the debugger hands data to code that can. It extracts facts per app from AL source, stitches them into one global call graph, and lets you query and export views of that graph.
+
+The workflow is a pipeline: **extract** the source into per-app fact shards, **stitch** the shards into one global graph, then **query** or **export** views of it.
+
+```text
+extract-all / extract-whole   (AL source  -> per-app fact shards)
+        |
+      stitch                  (shards      -> one global graph)
+        |
+        +-- query             (arbitrary reachability / paths)
+        +-- export            (query subgraph -> DGML / GraphML / SARIF)
+```
+
+The following examples use the `al` alias and a convenience variable, `$out`, for the output directory.
+
+### graph extract-all
+
+Extracts each app under `--corpus` into its own content-hashed fact shard. This mode is fast and incremental, because it only re-extracts changed apps. However, because it compiles each app on its own, it **doesn't resolve cross-app direct calls**. Use it for fast within-app analysis.
+
+```bash
+al graph extract-all --corpus C:\source\MyApps --out "$out\shards"
+```
+
+| Option | Description |
+|---|---|
+| `--corpus` | Root directory of app source folders (each containing an `app.json`). Required. |
+| `--out` | Output directory for the per-app fact shards. Required. |
+| `--parallel` | Maximum number of concurrent extractions. Defaults to the processor count. |
+
+### graph extract
+
+Extracts a single app folder into one fact shard.
+
+```bash
+al graph extract --app C:\source\MyApp --out "$out\shards"
+```
+
+| Option | Description |
+|---|---|
+| `--app` | App source folder containing an `app.json`. Required. |
+| `--out` | Output directory for the shard. Required. |
+
+### graph extract-whole
+
+Compiles **all** apps under the corpus root or roots together as one compilation, so cross-app calls resolve. This mode is heavier but produces a complete cross-app graph. Pass `--graph` to stitch the resulting shard straight to a graph file in one step, skipping a separate `stitch` call.
+
+```bash
+al graph extract-whole --corpus C:\source\MyApps --corpus C:\source\Dependencies --out "$out\whole" --graph "$out\graph.jsonl"
+```
+
+| Option | Description |
+|---|---|
+| `--corpus` | Corpus root. Repeat the option for multiple roots. Required. |
+| `--out` | Output directory for the combined shard. Required. |
+| `--graph` | Optional. Also stitch the shard straight to this graph file. |
+
+### graph stitch
+
+Merges the fact shards from a directory into one global graph, resolving cross-app, event, and interface edges. You don't need to run this command if you used `extract-whole --graph`.
+
+```bash
+al graph stitch --shards "$out\shards" --out "$out\graph.jsonl"
+```
+
+| Option | Description |
+|---|---|
+| `--shards` | Directory of fact shards produced by `extract`, `extract-all`, or `extract-whole`. Required. |
+| `--out` | Output graph file (JSONL). Required. |
+
+### graph query
+
+Runs an arbitrary reachability or path query over a stitched graph and writes the result to the console. Describe the endpoints by using [node selectors](#query-syntax) and shape the traversal with filters such as `--direction` and `--depth`.
+
+```bash
+# Who calls a specific object's method?
+al graph query --graph "$out\graph.jsonl" --to "obj:Codeunit/My Impl.#Create" --direction callers
+
+# Enumerate concrete paths between two namespaces
+al graph query --graph "$out\graph.jsonl" --from "ns:MyCompany.Sales*" --to "ns:MyCompany.Posting*" --paths
+```
+
+| Option | Description |
+|---|---|
+| `--graph` | Stitched graph file. Required. |
+| `--from` | Source node selector. See [Query syntax](#query-syntax). |
+| `--to` | Target node selector. |
+| `--direction` | `callees`, `callers`, or `both`. Default: `callees` for `--from`, `callers` for `--to`. |
+| `--edge-kinds` | Comma-separated edge kinds to traverse (`Direct`, `Event`, `Interface`, `Trigger`). |
+| `--scope` | Restrict results to `cloud` or `onprem`. |
+| `--depth` | Maximum traversal depth. `0` (the default) is unbounded. |
+| `--paths` | Enumerate concrete `from`->`to` paths rather than just reachability. |
+| `--max-paths` | Cap on enumerated paths when `--paths` is set. Defaults to `1000`. |
+| `--resolved-only` | Only follow statically resolved edges, dropping over-approximated indirect edges. |
+| `--frontier` | Return the *nearest* nodes matching this selector along the traversal. |
+| `--exclude` | Prune nodes matching this selector from the whole query (for example, `"ns:*Test*"` to drop test code). |
+
+### graph export
+
+Exports a subgraph in a format you can open in a viewer. The same [node selectors](#query-syntax) and traversal filters scope the export to a consumable subgraph. If you don't use selectors, the command exports the whole graph.
+
+```bash
+# An object and its call graph (callers + callees), depth-bounded, as DGML
+al graph export --graph "$out\graph.jsonl" --from "obj:Codeunit/My Impl." --direction both --depth 3 --format dgml --out "$out\my-impl.dgml"
+```
+
+`graph export` accepts the same query options as [`graph query`](#graph-query) (except `--paths`/`--max-paths` and `--scope`), plus:
+
+| Option | Description |
+|---|---|
+| `--format` | `dgml`, `graphml`, or `sarif`. Defaults to `dgml`. |
+| `--out` | Output export path. Required. |
+
+Choose the format for your viewer:
+
+| Format | Open with |
+|---|---|
+| `dgml` | Visual Studio (native). Renders as an interactive, collapsible tree. |
+| `graphml` | yEd, Gephi, or Cytoscape. |
+| `sarif` | Any SARIF viewer, Visual Studio, or GitHub code scanning. |
+
+Exports include each node's captured source location, so you can navigate from the graph back to the `.al` file: SARIF thread-flow steps include a `physicalLocation`, DGML nodes carry a `Reference` attribute and `Line` property, and GraphML nodes carry `sourcePath` and `line` keys. These point to the local source path captured during extraction.
+
+### Query syntax
+
+Node selectors identify the nodes for `--from`, `--to`, `--frontier`, and `--exclude`. Combine them with these operators:
+
+| Operator | Meaning |
+|---|---|
+| `,` | OR. |
+| `+` | AND (binds tighter than `,`). |
+| `!` or `not:` | Negates a single atom. |
+
+For example, `access:public+app:<guid>` matches public code in a specific app, and `!debuggable` matches nodes that can't be inspected in the debugger for any reason.
+
+Selectors are either a built-in named alias or a prefixed selector:
+
+| Selector | Matches |
+|---|---|
+| `debuggable` | Nodes whose execution can be inspected in the AL debugger. Use `!debuggable` for the opposite. |
+| `elevation` | Nodes that carry inherent permissions or entitlements. |
+| `onprem-surface` | The OnPrem-gated boundary (`Scope('OnPrem')` symbols, OnPrem `Scope` tables, and OnPrem platform built-ins). |
+| `ns:<glob>` | Namespace glob. Supports `*` and `?` wildcards. |
+| `obj:<Type>/<Name>` | An object by type and name. `obj:<Name>` matches by name only. Append `#<member>` for a member, or `#` alone for the object-level node only. A bare object (no `#`) matches the object and all its members. |
+| `app:<guid>` | All nodes in the app with this ID. |
+| `id:<moniker>` | A single node by its symbol identity. |
+| `kind:<nodeKind>` | Nodes of a kind: `Object`, `Method`, `Trigger`, `Table`, or `BuiltInMethod`. |
+| `scope:<cloud\|onprem>` | Nodes by compilation scope. |
+| `access:<internal\|public\|local\|protected>` | Nodes by declared accessibility. |
+
+> [!NOTE]
+> `--paths` is a capped sample: it clamps depth and stops at `--max-paths`, so a reachable target can have no emitted path. Rerun without `--paths` (an exhaustive reachability query) to confirm reachability. `--exclude` prunes matching nodes from the traversal itself, not just the result set, so a broad selector can hide a real path. Use it to focus a query, not to prove that code is unreachable.
+
+### Example scenarios
+
+To audit an extension's internal structure, scope any query to a single extension by using `app:<guid>` or a namespace glob. The following examples assume `$g` is your stitched graph file and `<guid>` is the app's ID from `app.json`.
+
+**Audit your public API surface.** Find how your internal code is reached from your public surface:
+
+```bash
+al graph query --graph "$g" --from "access:public+app:<guid>" --to "access:internal+app:<guid>" --paths
+```
+
+**Find the first public entry point** that exposes a piece of internal code. `--frontier` returns the nearest matching node along the traversal:
+
+```bash
+al graph query --graph "$g" --to "access:internal+app:<guid>" --direction callers --frontier access:public
+```
+
+**Review debug exposure inside your app.** Find where code that you can't inspect in the debugger hands data to code that you can:
+
+```bash
+al graph query --graph "$g" --from "!debuggable+app:<guid>" --to "debuggable+app:<guid>" --paths
+```
+
+**Explore one object's call graph** (callers and callees), depth-bounded, and open it in Visual Studio:
+
+```bash
+al graph export --graph "$g" --from "obj:Codeunit/My Impl." --direction both --depth 3 --format dgml --out "$out\my-impl.dgml"
+```
+
+**Review elevated surfaces** in your app. Find which nodes that carry inherent permissions or entitlements are reachable from your public API:
+
+```bash
+al graph query --graph "$g" --from "access:public+app:<guid>" --to "elevation+app:<guid>" --paths
+```
+
 ## ALMCP
 
 The ALMCP (AL Model Context Protocol) server allows autonomous agents to interact with an AL workspace. It's launched via ALTool with the `launchmcpserver` command. Its usage is as follows:
@@ -130,7 +469,7 @@ The ALMCP (AL Model Context Protocol) server allows autonomous agents to interac
 al launchmcpserver [<projects>...] [options]
 ```
 
-The `projects` argument is a space-separated list of paths to AL project folders. Each path should be wrapped in double quotes `"`.
+The `projects` argument is an optional space-separated list of paths to AL project folders. Wrap each path in double quotes `"`. If you omit this argument, the server starts without any projects loaded. You can add projects dynamically at runtime by using the `al_addproject` tool.
 
 The following options are supported:
 
@@ -142,9 +481,43 @@ The following options are supported:
 | `--ruleset <path>`     | Path to the ruleset file. |
 | `--outfolder <path>`   | Output folder for compilation artifacts. |
 | `--codeanalyzers <analyzers>` | Code analyzers to enable. |
+| `--logfile <path>`     | Path to the log file. Defaults to `~/.al-mcp/almcp.log`. |
+| `--loglevel <level>`   | Log level: `Debug`, `Verbose`, `Normal` (default), `Warning`, `Error`. |
+| `--nolog`              | Disable logging entirely. |
+| `--noauth`             | Bypass MCP-managed authentication handling. Learn more in [Headless authentication](#headless-authentication). |
 | `-?, -h, --help`          | Show help and usage information |
 
 Once the server is launched, it listens on the specified port for MCP calls and provides several tools for agents to interact with the loaded projects.
+
+### Add projects at runtime
+
+When the server starts without the `projects` argument, agents can call the `al_addproject` tool with the path to an AL project folder (containing an `app.json` file) to load it into the workspace. All other tools (`al_compile`, `al_build`, `al_symbolsearch`, and so on) return an actionable error if you invoke them before adding any projects.
+
+```bash
+al LaunchMcpServer --port 5000
+```
+
+### File logging
+
+Use the `--logfile` and `--loglevel` arguments to enable file-based logging for diagnostics and troubleshooting:
+
+```powershell
+al LaunchMcpServer --port 5000 --logfile C:\logs\almcp.log --loglevel Verbose
+```
+
+If you don't specify `--logfile`, logging defaults to `~/.al-mcp/almcp.log` on Windows, Linux, and macOS. Use `--nolog` to disable logging entirely.
+
+### Headless authentication
+
+> **APPLIES TO:** Business Central 2026 release wave 2 and later
+
+Pass `--noauth` to bypass the MCP server's credential lookup and interactive authentication prompting. Use this option in headless scenarios where an external process supplies authentication. For example, a CI/CD agent might already have a token or credentials configured outside the MCP server.
+
+```bash
+al LaunchMcpServer --port 5000 --noauth
+```
+
+`--noauth` only disables the server's authentication handling for publish, test, and symbol operations. It doesn't supply connection details on its own. You still need to provide the target server or environment through the usual connection configuration. Use a project's `launch.json` or the `BC_SERVER_*` environment variables described in [Environment variables for headless connections](#environment-variables-for-headless-connections).
 
 ## AL LSP
 

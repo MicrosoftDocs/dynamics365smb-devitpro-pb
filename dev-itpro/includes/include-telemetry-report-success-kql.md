@@ -27,6 +27,10 @@ traces
 , LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
 , LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
 , LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
+, ThemeLayoutAppId = customDimensions.themeLayoutAppId                 // added in version 29.0
+, ThemeLayoutName = customDimensions.themeLayoutName                   // added in version 29.0
+, HeaderFooterLayoutAppId = customDimensions.headerFooterLayoutAppId   // added in version 29.0
+, HeaderFooterLayoutName = customDimensions.headerFooterLayoutName     // added in version 29.0
 , reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
 , reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
 // which user ran the report
@@ -35,6 +39,7 @@ traces
 , 'N/A'
 )
 // performance data
+, numberOfDocuments = customDimensions.numberOfDocuments
 , numberOfRows = customDimensions.numberOfRows
 // , serverExecutionTime = customDimensions.serverExecutionTime // the datatype for executionTime is timespan
 , serverExecutionTimeInMS = toreal(totimespan(customDimensions.serverExecutionTime))/10000 // this shows how to convert timespan to milliseconds

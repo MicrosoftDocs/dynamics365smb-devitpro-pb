@@ -2,7 +2,7 @@
 title: API query type
 description: Description of the API query type used for exposing and viewing web service endpoints.
 author: SusanneWindfeldPedersen
-ms.date: 04/17/2024
+ms.date: 09/21/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -15,6 +15,8 @@ Queries of the type `API` are used to generate web service endpoints and this ty
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 [!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
+
+[!INCLUDE[describe-api-for-mcp-tools](includes/describe-api-for-mcp-tools.md)]
 
 ## Example of the API query type
 
@@ -70,6 +72,7 @@ query 20000 "APIV1 - Customer Sales"
 
 ## Related information
 
+[API developer overview](devenv-api.md)  
 [AL development environment](devenv-reference-overview.md)  
 [API page type](devenv-api-pagetype.md)  
 [APIPublisher property](properties/devenv-apipublisher-query-property.md)  

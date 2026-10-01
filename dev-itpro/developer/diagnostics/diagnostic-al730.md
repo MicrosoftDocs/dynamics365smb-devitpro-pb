@@ -2,7 +2,7 @@
 title: "Compiler Error AL0730"
 description: "The field '{0}' cannot be used in a sum index."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ The field '{0}' cannot be used in a sum index.
 
 
 ## Description
-The SystemRowVersion field cannot be used as a sum index field.   
+The SystemRowVersion field cannot be used as a sum index field.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

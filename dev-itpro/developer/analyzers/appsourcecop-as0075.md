@@ -1,8 +1,8 @@
 ---
 title: "AppSourceCop Warning AS0075"
-description: "Obsolete Reason must be set."
+description: "Attribute reason must be set."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,22 +11,24 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Warning AS0075
-Obsolete Reason must be set.
+Attribute reason must be set.
 
 ## Description
-Obsolete Reason must be set.
+Attribute reason must be set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-When an object, element, variable or procedure is marked as obsolete, you should also specify an obsolete reason. The obsolete reason can be used to provide valuable information, such as the reason for the obsoletion or a workaround to achieve the same goal, to developers that are referencing it. The obsolete reason appears in the message of the diagnostics AL0432 and AL0433 reported by the AL compiler when referencing obsolete elements.
+When an object, element, variable, or procedure is marked with [Obsolete](../attributes/devenv-obsolete-attribute.md) or [RequiredPending](../attributes/devenv-requiredpending-attribute.md), you should also specify a reason. The reason provides valuable information -- such as why the change is happening or a workaround -- to developers who reference the element. For `Obsolete`, the reason appears in AL0432 and AL0433. For `RequiredPending`, it appears in AL0924.
 
 ## How to fix this diagnostic?
 
 When the property [Obsolete State](../properties/devenv-obsoletestate-property.md) is used to mark an object as `Obsolete Pending` or `Obsolete Removed`, you need to also specify the property [Obsolete Reason](../properties/devenv-obsoletereason-property.md).
 
 When the attribute [Obsolete](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute) is used, you need to specify the obsolete reason attribute parameter.
+
+When the attribute [RequiredPending](../attributes/devenv-requiredpending-attribute.md) is used, you need to specify the `Reason` parameter.
 
 ## Code examples triggering the rule
 

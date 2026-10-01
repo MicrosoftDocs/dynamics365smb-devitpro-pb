@@ -21,7 +21,7 @@ ms.custom: bap-template
 - An MCP configuration was deleted
 - An MCP configuration was designated as the default
 
-Use this telemetry to track changes to MCP server configurations in your environment, which is useful for auditing and troubleshooting AI agent integrations. Learn how to configure the MCP server in [Configure Business Central MCP Server](../ai/configure-mcp-server.md).
+Use this telemetry to track changes to MCP server configurations in your environment. This information is useful for auditing and troubleshooting AI agent integrations. Learn how to configure the MCP server in [Configure Business Central MCP Server](../ai/configure-mcp-server.md).
 
 ## <a name="created"></a>MCP configuration created
 
@@ -210,7 +210,7 @@ traces
 
 ## Sample KQL code for monitoring all MCP configuration changes
 
-Use this KQL code if you want to monitor all MCP configuration lifecycle events:
+Use this KQL code to monitor all MCP configuration lifecycle events:
 
 ```kql
 traces

@@ -4,7 +4,7 @@ description: This article provides the specifications of minimum hardware and so
 ms.custom: bap-template
 ms.service: dynamics-365-op
 ms.topic: overview
-ms.date: 03/11/2026
+ms.date: 08/25/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -55,8 +55,8 @@ The following table shows the minimum system requirements for the Business Centr
 
 |Specification|Requirement|  
 |------|-----|  
-|Excel|<ul><li>Sending data to Excel requires Excel 2021, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2021 or Excel on the web.</li></ul>|  
-|Word|<ul><li>Microsoft Office 2021, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
+|Excel|<ul><li>Sending data to Excel requires Excel 2024, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2024 or Excel on the web.</li></ul>|  
+|Word|<ul><li>Microsoft Office 2024, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
 |Outlook|Learn more in [Business Inbox in Microsoft Outlook](#BusInboxOutlook).|  
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
 
@@ -69,7 +69,7 @@ The following table shows the minimum system requirements for customizing or ext
 |Supported operating systems|<ul><li>Windows Server 2025<li>Windows Server 2022</li><li>Windows 11</li></ul>Learn more about the supported versions and their lifecycles at [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL Language extension for Microsoft Dynamics 365 Business Central](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: four cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
-|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 (version 16.11) with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2021 or later</li></ul></li></ul>|  
+|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 (version 16.11) with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2024 or later</li></ul></li></ul>|  
 
 Learn more in [Get Started with AL](../developer/devenv-get-started.md).
 
@@ -146,7 +146,7 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 
 |Specification|Requirement|  
 |-----|-----|
-|Supported Outlook Applications |<ul><li>Outlook 2021</li><li>Outlook on the web</li></ul>|
+|Supported Outlook Applications |<ul><li>Outlook 2024</li><li>Outlook on the web</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2019<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
 |Supported Authentication|<ul><li>The [!INCLUDE[server](../developer/includes/server.md)] must be configured to authenticate users using NavUserPassword or Microsoft Entra ID.<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL). Learn more in [Authenticating users with NavUserPassword](../administration/authenticating-users-with-navuserpassword.md) or [Configure Microsoft Entra authentication with OpenID Connect](../administration/authenticating-users-with-azure-ad-openid-connect.md).</li></ul>|
 |Supported Browsers|<ul><li>When using Outlook on the web, your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] requirements.</li></ul>|

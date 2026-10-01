@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "dev-itpro/developer/word-layout-add-in.md",
+      "redirect_url": "/dynamics365/business-central/ui-design-word-layouts-business-central-add-in",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "dev-itpro/security/user-security.md",
       "redirect_url": "/dynamics365/business-central/dev-itpro/security/security-application",
       "redirect_document_id": false
@@ -7761,4 +7766,3 @@
     }
   ] 
 }
-

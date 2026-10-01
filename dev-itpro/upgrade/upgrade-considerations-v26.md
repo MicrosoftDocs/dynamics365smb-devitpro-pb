@@ -4,13 +4,13 @@ description: This article provides tips and considerations to prepare a solution
 author: jswymer
 ms.custom: bap-template
 ms.topic: article
-ms.date: 02/21/2026
+ms.date: 08/31/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 # Business Central upgrade considerations and preparation for v26 and later
 
-This article provides important information and tips for things to consider when you prepare to upgrade to 2025 release 1 (version 26), 2025 release 2 (version 27), or 2026 release 1 (version 28)  information that's relevant for you depends on which version you're upgrading from, and how much your solution differs from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application.
+This article provides important information and tips for things to consider when you prepare to upgrade to 2025 release 1 (version 26), 2025 release 2 (version 27), 2026 release 1 (version 28), or 2026 release 2 (version 29). The information that's relevant for you depends on which version you're upgrading from, and how much your solution differs from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application.
 
 ## Deprecated or redesigned functionality
 

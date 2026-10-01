@@ -28,6 +28,8 @@ APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] online are enabled
 
 For a complete list of available APIs and their operations, use the table of contents.
 
+[!INCLUDE[api-overview-note](../../includes/api-overview-note.md)]
+
 ## Extending APIs
 
 [!INCLUDE[extending_APIs_is_not_supported](../../developer/includes/include-extending-APIs-is-not-supported.md)]

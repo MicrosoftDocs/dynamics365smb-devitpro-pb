@@ -1,6 +1,6 @@
 ---
 title: Understand agent visibility (preview)
-description: Learn about the factors that control agent visibility in Dynamics 365 Business Central.
+description: Learn what controls agent visibility in Business Central, including permissions, access controls, activation state, and archived agent behavior.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 08/28/2026
 ms.update-cycle: 180-days
 ---
 
@@ -51,6 +51,21 @@ For an already activated agent to be visible for a user, at least one of the fol
 - The user exists in the agent user access controls of the agent. They don't need to have the right to configure the agent to see its avatar and tasks.
 
 If the user should be able to configure agents, they also require **permission to access the setup page**.
+
+### Archived agents
+
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
+For an activated agent to be visible to a user, it must not be archived. An archived agent never appears in the role center, for any user, regardless of permissions or access controls. Archived agents are also excluded from the **Agents** page by default via a filter on the **Substate** column.
+
+Archiving an agent is permanent, and the following conditions apply:
+
+- The agent must be inactive before it can be archived.
+- The user must have permission to configure the agent.
+
+Once an agent is archived, it can't be reactivated or reconfigured, but all of its existing logs and tasks remain available as read-only for auditing.
+
+Not all agent types support archiving. Learn more in [IAgentArchiving interface](ai-agent-sdk-define-register.md#iagentarchiving-interface).
 
 ## Not-yet-activated agents (creating new instances)
 

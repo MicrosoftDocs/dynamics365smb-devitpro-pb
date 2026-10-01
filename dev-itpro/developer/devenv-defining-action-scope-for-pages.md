@@ -17,7 +17,7 @@ The [Scope property](properties/devenv-scope-action-property.md) lets you add ro
 For example, **Line Comments** relates to a line, but appears in the action bar. You specify the scope of the action by setting the [Scope property](properties/devenv-scope-action-property.md) on the page action to either **Page** or **Repeater**.
 
 > [!NOTE]  
-> We strongly recommend that you always set the [Scope property](properties/devenv-scope-action-property.md) when you develop pages for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)].
+> Set the [Scope property](properties/devenv-scope-action-property.md) when you develop pages for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)].
 
 Learn more about how the settings are interpreted on the different clients in [Scope property](properties/devenv-scope-property.md).
 

@@ -2,7 +2,7 @@
 title: AL Language extension configuration
 description: Description of the AL Language extension settings in Visual Studio Code for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 08/19/2025
+ms.date: 08/25/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.collection: get-started
@@ -21,6 +21,9 @@ The AL Language extension has many settings that can be defined for a specific u
 
 The following table describes the user and workspace settings for the AL Language extension:
 
+> [!NOTE]
+> Starting with Business Central 2026 release wave 2, the `al.editorServicesPath` setting is removed. The AL Language extension always loads its binaries from the standard `bin` folder. Remove this setting from your user and workspace configurations because it no longer has any effect.
+
 |Setting|Value|
 |-------|-----|
 |Algo Suggested Folder| Sets the suggested folder when using AL:Go! command. Can be set per user or per workspace.|
@@ -32,11 +35,11 @@ The following table describes the user and workspace settings for the AL Languag
 |Code Analyzers|Sets the list of paths to code analyzers to use for performing code analysis. For example: `"al.codeAnalyzers": ["${AppSourceCop}", "${CodeCop}"]`.|
 |Compilation Options|Specifies the compilation options;  <br>`continueBuildOnError` - specifies if build should continue even if errors are found. The default and recommended value from a performance point of view is `false`. Set the value to `true` to continue building the project, even if errors are found.  It requires `al.incrementalBuild` to be `false`. <br>`delayAfterLastDocumentChange` - specifies the number of milliseconds to wait after the last buffer changes before getting document diagnostics. After changing the value of this option, you must restart Visual Studio Code for it to take effect. Default value is `800`. <br> `delayAfterLastProjectChange` - specifies the number of milliseconds to wait after the last buffer changes before getting complete diagnostics. After changing the value of this option, you must restart Visual Studio Code for it to take effect. Default value is `4000`.  <br> `maxDegreeOfParallelism` - specifies the maximum number of concurrent tasks the compiler should use when compiling the project. Default value is `2`. <br> `parallel` - controls whether to use concurrent builds. Default value is `true`.  <br>`generateReportLayout`- controls whether the compiler generates Report Layout files when building the package. Default value is `true`. <br> `outFolder` - Specifies the folder where the compiler should place the resulting .app file. If not specified, the compiler places the resulting .app file in the project folder.|
 |Editor Services Log Level|Sets the logging verbosity level for the AL Language Editor Services host executable. Possible values are `Verbose`, `Normal`, `Warning`, and `Error`.|
-|Editor Services Path|Specifies the path to the Editor Services host executable.|
 |Enable Code Actions|Specifies whether code actions should be enabled for all source files in the current project. Default is `false`.|
 |Enable Code Analysis|Specifies whether code analysis should be performed for all source files in the current project. Default is `false`. If this is set to `true`, you must specify the **Code Analyzers** setting with the list of code analyzers to use.|
 |Enable External Rulesets|Allows the use of URLs as the location of project rulesets or included rulesets. Syntax is `"al.enableExternalRulesets": true`.|
 |Enable Script IntelliSense|Specifies whether IntelliSense should be enabled for control add-in script files. Turn this off, if it interferes with advanced JavaScript or TypeScript configurations. Default is `true`.|
+|Global Sources Enforce Minor Version|Controls how the AL extension resolves package versions when downloading symbols from global sources. By default (`false`), the extension downloads the latest available version within the same major version as specified in `app.json`. When set to `true`, resolution is restricted to versions matching both the major and minor version, downloading the highest available patch within that minor. Applies to both direct dependencies and propagated dependencies. Syntax is `"al.globalSourcesEnforceMinorVersion": true`.|
 |Extend Go To Symbol in Workspace: Enabled|Enable/disable symbol search to include a broader range of AL symbols, such as procedures, events, global variables, page controls, page actions, and table fields. Syntax is `"al.extendGoToSymbolInWorkspace.enabled": true`.|
 |Extend Go To Symbol in Workspace: Include Symbol Files|Enable/disable search in dependencies symbol files. Syntax is `"al.extendGoToSymbolInWorkspace.IncludeSymbolFiles": true`.|
 |Extend Go To Symbol in Workspace: Result Limit|Sets the maximum number of symbol search results to display. Syntax is `"al.extendGoToSymbolInWorkspace.ResultLimit": 100`.|

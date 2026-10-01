@@ -2,7 +2,7 @@
 title: "Table, Table fields, and Table extension properties"
 description: "This article lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md)."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -101,8 +101,8 @@ The following properties all apply to the Table object, only some of these prope
 |[TableRelation property](devenv-tablerelation-property.md)| True| -Table field <br />  -Page Field <br /> |
 |[TableType property](devenv-tabletype-property.md)| | -Table <br /> |
 |[TestTableRelation property](devenv-testtablerelation-property.md)| | -Table field <br /> |
-|[ToolTip property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
-|[ToolTipML property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTip property](devenv-tooltip-property.md)| | -Page <br />  -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTipML property](devenv-tooltipml-property.md)| | -Page <br />  -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
 |[Unbound property](devenv-unbound-property.md)| | -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br /> |
 |[Unique property](devenv-unique-property.md)| | -Table key <br /> |
 |[ValidateTableRelation property](devenv-validatetablerelation-property.md)| | -Table field <br /> |

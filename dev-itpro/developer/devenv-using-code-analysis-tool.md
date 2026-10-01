@@ -2,7 +2,7 @@
 title: Using the code analysis tool
 description: Using static code analysis tool on an AL project.
 author: SusanneWindfeldPedersen
-ms.date: 11/13/2024
+ms.date: 08/25/2026
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
@@ -24,7 +24,7 @@ Follow these steps to create a basic project in AL.
 
 At this point, the selected analyzers run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate a violation of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
 
-> [!NOTE]  
+> [!NOTE]
 > By default, code analysis runs in the background. 
 
 ## Add your own code to the project
@@ -62,6 +62,9 @@ A code analyzer is a library that builds on the compiler's functionality to offe
 - **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft Marketplace. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](analyzers/appsourcecop.md).
 - **UICop** is an analyzer that enforces rules that must be respected by extensions that are meant to customize the web client. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
 
+> [!IMPORTANT]
+> Starting with Business Central 2026 release wave 2, the AL Language extension deploys its included analyzer assemblies directly in the extension's `bin` folder. If custom tooling loads these assemblies by path, update it to use `bin` instead of the previous `bin/Analyzers` folder. This change doesn't affect analyzer names such as `${CodeCop}` and `${AppSourceCop}` in the `al.codeAnalyzers` setting.
+
 ## Enable code analysis on large projects
 
 To improve performance while running code analysis on large projects, you can follow the performance tips in [Code analysis performance configuration](devenv-code-analysis-performance-configuration.md).
@@ -74,4 +77,3 @@ To improve performance while running code analysis on large projects, you can fo
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Debugging in AL](devenv-debugging.md)  
 [AL Language Extension configuration](devenv-al-extension-configuration.md)  
-
