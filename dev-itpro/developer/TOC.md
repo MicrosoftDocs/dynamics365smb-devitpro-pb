@@ -3192,7 +3192,6 @@
 ### [RequestPageHandler attribute](attributes/devenv-requestpagehandler-attribute.md)
 ### [RequiredPending attribute](attributes/devenv-requiredpending-attribute.md)
 ### [RequiredPermissions attribute](attributes/devenv-requiredpermissions-attribute.md)
-### [RequiredPending attribute](attributes/devenv-requiredpending-attribute.md)
 ### [RunOnClient attribute](attributes/devenv-runonclient-attribute.md)
 ### [Scope attribute](attributes/devenv-scope-attribute.md)
 ### [SecurityFiltering attribute](attributes/devenv-securityfiltering-attribute.md)
