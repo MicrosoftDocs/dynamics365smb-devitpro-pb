@@ -1,14 +1,14 @@
 ---
-title: "Table System fields"
-description: Description of the table System fields.
+title: Table System Fields in Business Central
+description: Learn how Business Central adds system fields for record IDs, data auditing, and timestamps to tables, including their behavior and use in AL code.
 author: jswymer
-ms.date: 06/20/2024
+ms.date: 08/25/2026
 ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
 --- 
 
-# System Fields
+# Work with table system fields
 
 System fields are fields that are automatically included in every table object by the platform. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes the following system fields:
 
@@ -35,14 +35,14 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 - The [Insert(Boolean, Boolean)](methods-auto/record/record-insert-boolean-boolean-method.md) lets you specify the **SystemId** value for a record, instead of using one assigned by the platform:
 
     ```AL
-    myRec.SystemId := '{B6666666-F5A2-E911-8180-001DD8B7338E}';  
+    myRec.SystemId := 'aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb';
     myRec.Insert(true, true);
     ```
 
 - The [GetBySystemId(Guid)](methods-auto/record/record-getbysystemid-method.md) uses the **SystemId** to get a record:
 
     ```AL
-    id := myRec.GetBySystemId('{B6666666-F5A2-E911-8180-001DD8B7338E}';  
+    id := myRec.GetBySystemId('aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb');
     ```
 
 - The [SystemIdNo()](methods-auto/recordref/recordref-systemidno-method.md) gets the field number used by the **SystemId** field in the table:
@@ -88,16 +88,31 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 
 Every table in [!INCLUDE[prod_short](includes/prod_short.md)] includes the following four system fields, which can be used for auditing records:
 
-|Field name (in AL) |Column name (in database)|Data type|Field number|Description|
-|-------------------|-------------------------|---------|------------|-----------|
-|SystemCreatedAt|$systemCreatedAt |DateTime|2000000001|Specifies the data and time that the record was created.|
-|SystemCreatedBy  |$systemCreatedBy |GUID |2000000002|Specifies security ID (SID) of the user that created the record.|
-|SystemModifiedAt|$systemModifiedAt |DateTime|2000000003|Specifies the data and time that the record was last modified.|
-|SystemModifiedBy|$systemModifiedBy |GUID|2000000004|Specifies the SID of the user that last modified the record|
+| Field name (in AL) | Column name (in database) | Data type | Field number | Description |
+|--------------------|---------------------------|-----------|--------------|-------------|
+| `SystemCreatedAt` | `$systemCreatedAt` | `DateTime` | 2000000001 | Specifies the date and time when you created the record. |
+| `SystemCreatedBy` | `$systemCreatedBy` | `GUID` | 2000000002 | Specifies the security ID (SID) of the user who created the record. |
+| `SystemModifiedAt` | `$systemModifiedAt` | `DateTime` | 2000000003 | Specifies the date and time when you last modified the record. |
+| `SystemModifiedBy` | `$systemModifiedBy` | `GUID` | 2000000004 | Specifies the SID of the user who last modified the record. |
 
-#### Runtime characteristics
+### User name and full name FlowFields
 
-At runtime, the data audit fields have the following characteristics and behavior: 
+[!INCLUDE[2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
+Starting with runtime 18.0, `Normal` and `Temporary` tables also include four system FlowFields that provide the user name and full name associated with the existing `SystemCreatedBy` and `SystemModifiedBy` GUID fields:
+
+| Field name (in AL) | Data type | Field number | Description |
+|--------------------|-----------|--------------|-------------|
+| `SystemCreatedByUserName` | `Text[50]` | 2000000005 | Specifies the user name of the user that created the record. |
+| `SystemCreatedByFullName` | `Text[80]` | 2000000006 | Specifies the full name of the user that created the record. |
+| `SystemModifiedByUserName` | `Text[50]` | 2000000007 | Specifies the user name of the user that last modified the record. |
+| `SystemModifiedByFullName` | `Text[80]` | 2000000008 | Specifies the full name of the user that last modified the record. |
+
+These read-only FlowFields aren't stored as separate database columns, and you can't assign values to them in AL. They use the security ID in `SystemCreatedBy` or `SystemModifiedBy` to look up the current user name or full name in the `User` table.
+
+### Runtime characteristics
+
+At runtime, the four stored data audit fields have the following characteristics and behavior:
 
 The platform will automatically generate and assign values according to the following triggers:
 
@@ -108,7 +123,7 @@ The platform will automatically generate and assign values according to the foll
 > [!NOTE]
 > You can assign the values, but the values written to the database are always provided by the platform.
 
-Fields are populated as follows:
+The platform populates the stored fields as follows:
 
 - When a new record is created, before calling Insert, the audit fields are given blank GUIDs and blank dates as values.
 
@@ -128,7 +143,7 @@ The platform won't populate audit field values in these cases:
 > [!NOTE]
 > Audit fields can't be imported with configuration packages.
 
-#### In AL
+### Use data audit fields in AL
 
 The data audit fields are exposed in AL code. As a developer, the audit fields give you an easy and performant way to program against historical data. For example, you can write AL queries that return data changes since a specific date and time.
 
@@ -146,7 +161,7 @@ There are a couple points of interest you should know:
 - If a record is copied into a temporary table, the data audit field values are copied as well. The values aren't changed by the server when calling a modify or insert method.  
 - It's possible to use audit fields in a key. The platform doesn't automatically index these fields in any way.
 
-If you want to translate a user security ID GUID to the corresponding user name, the following AL code might be useful:
+With runtime 18.0 or later, use `SystemCreatedByUserName`, `SystemCreatedByFullName`, `SystemModifiedByUserName`, or `SystemModifiedByFullName` to get the corresponding name. For earlier runtime versions, you can use AL code to translate a user security ID GUID to the corresponding user name:
 
 ```al
 procedure GetUserNameFromSecurityId(UserSecurityID: Guid): Code[50]
@@ -164,7 +179,7 @@ The **timestamp** field contains [rowversion](/sql/t-sql/data-types/rowversion-t
 
 A typical use of the **timestamp** field is for synchronizing data changes in tables. It lets you identify records that have changed since the last synchronization. For example, you can read all the records in a table, then store the highest **timestamp** value. Later, you can query and retrieve records that have a higher **timestamp** value than the stored value.  
 
-#### In AL
+### Use the timestamp field in AL
 
 In AL code, the **timestamp** is accessible through the `SystemRowVersion` field. However, you can't write to the field.
 
@@ -175,7 +190,7 @@ The following methods are also available on the [Database](methods-auto/database
 |[LastUsedRowVersion](methods-auto/database/database-lastusedrowversion-method.md)|Gets the last used rowversion from the database. This method does the same as the [@@DBTS (Transact-SQL) function](/sql/t-sql/functions/dbts-transact-sql).|
 |[MinimumActiveRowVersion](methods-auto/database/database-minimumactiverowversion-method.md)|Gets the lowest active rowversion in the database. This method returns the lowest rowversion of any uncommitted rows. Rows that have a lower timestamp than this returned value are guaranteed to be committed. If there are no active transactions, the value is equal to LastUsedRowVersion + 1. This method does the same as the [MIN_ACTIVE_ROWVERSION (Transact-SQL) function](/sql/t-sql/functions/min-active-rowversion-transact-sql).|
 
-#### Expose the timestamp field in Business Central version 20 and earlier
+### Expose the timestamp field in Business Central version 20 and earlier
 
 In versions of Business Central earlier than version 21, the **timestamp** field is hidden. But, you can expose it by using [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md). You're then able to write code against it, add filters, and so on, similar to any other field in a table. 
 

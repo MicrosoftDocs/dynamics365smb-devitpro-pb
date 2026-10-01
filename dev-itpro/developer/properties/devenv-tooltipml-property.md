@@ -1,8 +1,8 @@
 ---
 title: "ToolTipML property"
-description: "Sets the multilanguage string used for the tooltip of an action, a field, a FactBox, or an activity button."
+description: "Sets the multilanguage string used for the tooltip of the page."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,12 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ToolTipML Property
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 18.0._
 
-Sets the multilanguage string used for the tooltip of an action, a field, a FactBox, or an activity button.
-
-In the client, tooltips appear when you point to the caption of the control.
+Sets the multilanguage string used for the tooltip of the page. This is only used when the page is the target RunObject of an action — the action will inherit the tooltip of the page if no tooltip is explicitly specified on the action itself.
 
 ## Applies to
+-   Page
 -   Page Label
 -   Page Field
 -   Page Part
@@ -52,6 +51,9 @@ In the client, tooltips appear when you point to the caption of the control.
 ## Remarks  
 
 ToolTipML is multilanguage-enabled. This means that it can contain a list of strings for use by different languages. The text that is used is selected according to the user's current language setting. For more information, see [Multilanguage Development](../devenv-work-with-translation-files.md).  
+
+> [!NOTE]  
+> With runtime version 18.0, the `ToolTipML` property can be set at the page object level. When a navigation action has `RunObject = page X` and the target page has a `ToolTipML` set, the action inherits the page's tooltip if no tooltip is explicitly specified on the action itself.
 
 The ToolTipML property value has the following format.  
 

@@ -10,13 +10,13 @@
 | AL0000FMG | Job Queue Lifecycle | [Running job queue once](../administration/telemetry-job-queue-lifecycle-trace.md#runOnce) |
 | AL0000I49 | Job Queue Lifecycle | [Job queue entry rescheduled on login: {job queue entry id}](../administration/telemetry-job-queue-lifecycle-trace.md#rescheduledOnLogin) |
 | AL0000KZV | Job Queue Lifecycle | [Job queue entry cancelled: {job queue entry id}](../administration/telemetry-job-queue-lifecycle-trace.md#cancelled) |
-|AL0000E3F|Configuration Package|[Configuration package export started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportstarted)|
-|AL0000E3G|Configuration Package|[Configuration package exported successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportsuccessful)|
-|AL0000E3H|Configuration Package|[Configuration package import started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#importstarted)|
-|AL0000E3I|Configuration Package|[Configuration package imported successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#importsuccessful)|
-|AL0000E3N|Configuration Package|[Configuration package apply started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#applystarted)|
-|AL0000E3O|Configuration Package|[Configuration package applied successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#applysuccessful)|
-|AL0000E3P|Configuration Package|[Configuration package deleted successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#deletesuccessful)|
+|AL0000E3F|Configuration Package|[Configuration package export started: {packageSystemId}](../administration/telemetry-configuration-package-trace.md#exportstarted)|
+|AL0000E3G|Configuration Package|[Configuration package exported successfully: {packageSystemId}](../administration/telemetry-configuration-package-trace.md#exportsuccessful)|
+|AL0000E3H|Configuration Package|[Configuration package import started: {packageSystemId}](../administration/telemetry-configuration-package-trace.md#importstarted)|
+|AL0000E3I|Configuration Package|[Configuration package imported successfully: {packageSystemId}](../administration/telemetry-configuration-package-trace.md#importsuccessful)|
+|AL0000E3N|Configuration Package|[Configuration package apply started: {packageSystemId}](../administration/telemetry-configuration-package-trace.md#applystarted)|
+|AL0000E3O|Configuration Package|[Configuration package applied successfully: {packageSystemId}](../administration/telemetry-configuration-package-trace.md#applysuccessful)|
+|AL0000E3P|Configuration Package|[Configuration package deleted successfully: {packageSystemId}](../administration/telemetry-configuration-package-trace.md#deletesuccessful)|
 | AL0000EJ9 | Extension Lifecycle | [Upgrade tag searched for: {AlUpgradeTag}](../administration/telemetry-extension-update-trace.md#upgrade-tag-searched-for) |
 |AL0000FJ1|Cloud migration|[Companion table repair started](../administration/telemetry-cloud-migration-trace.md#companion-table-repair-started)|
 |AL0000FJ4|Cloud migration|[Companion table repair completed successfully](../administration/telemetry-cloud-migration-trace.md#companion-table-repair-completed-successfully)|
@@ -31,7 +31,6 @@
 | AL0000EIT | User Checklist Lifecycle | [Checklist item status updated: {oldStatus} to {newStatus}](../administration/telemetry-user-checklist-trace.md) |
 | AL0000EIR | User Checklist Lifecycle | [Checklist item status updated with guided experience item: {oldStatus} to {newStatus}](../administration/telemetry-user-checklist-trace.md) |
 | AL0000JT3 | Feature Lifecycle | [Feature switch has been flipped](../administration/telemetry-feature-management-trace.md) |
-|AL0000G7J|	Feature Lifecycle |[More than one telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#multipleloggers)|
 |AL0000G7K|	Feature Lifecycle |[No telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#nologger)|
 |AL0000N0D|Report Layout Lifecycle|[Report layout default changed by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-default-changed-by-user)|
 |AL0000N0E|Report Layout Lifecycle|[Report layout added by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-added-by-user)|
@@ -120,7 +119,7 @@
 | LC0062 | Metadata Embeddings | [Metadata embedding generation started for extension {extensionId} version {extensionVersion}](../administration/telemetry-metadata-embeddings-trace.md#LC0062) |
 | LC0063 | Table Index Lifecycle | [Index enabled at runtime: {keyName}](../administration/telemetry-table-index-trace.md#LC0063) |
 | LC0064 | Table Index Lifecycle | [Index disabled at runtime: {keyName}](../administration/telemetry-table-index-trace.md#LC0064) |
-| LC0065 | Table Index Lifecycle | [Sync table column count exceeded: {tableName}](../administration/telemetry-table-index-trace.md#LC0065) |
+| LC0065 | Database schema | [Column count exceeded recommended limit for {alObjectType} '{alObjectName}'](../administration/telemetry-table-index-trace.md#LC0065) |
 | LC0066 | Agent Lifecycle | [Agent configuration changed: {agentDisplayName}](../administration/telemetry-agent-lifecycle-trace.md#lc0066) |
 | LC0067 | Agent Lifecycle | [Agent created: {agentDisplayName}](../administration/telemetry-agent-lifecycle-trace.md#lc0067) |
 | LC0068 | Agent Lifecycle | [Agent task created: {taskId}](../administration/telemetry-agent-lifecycle-trace.md#lc0068) |

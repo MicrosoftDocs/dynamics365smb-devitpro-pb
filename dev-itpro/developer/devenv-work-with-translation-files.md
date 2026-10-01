@@ -1,7 +1,7 @@
 ---
-title: Working with translation files
-description: How to work with translations, multilanguage, and XLIFF files in Business Central.
-ms.date: 04/14/2025
+title: Work with XLIFF Translation Files
+description: Learn how to generate, maintain, and package XLIFF translation files for multilingual Business Central extensions, including namespace-aware IDs.
+ms.date: 08/25/2026
 ms.topic: concept-article
 ms.author: solsen
 author: SusanneWindfeldPedersen
@@ -71,44 +71,76 @@ By setting the `GenerateLockedTranslations` flag in the app.json file, you speci
   "features": [ "GenerateLockedTranslations" ]
 ```
 
+### Include namespaces in translation IDs
+
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
+Use the `TranslationsWithNamespaces` compiler feature to include an object's [namespace](devenv-namespaces-overview.md) in generated translation IDs. The compiler also uses readable object, member, and property names instead of hashed values when the generated ID is 400 characters or fewer. Namespace-aware IDs prevent collisions between objects that have the same name in different namespaces. They also make translation entries easier to identify.
+
+The feature requires runtime version 18.0 or later and the `TranslationFile` feature. Learn more in [Choose runtime version in AL](devenv-choosing-runtime.md). Add both features to the `features` setting in the `app.json` file:
+
+```json
+  "features": [ "TranslationFile", "TranslationsWithNamespaces" ]
+```
+
+For example, the generated translation ID for a page caption changes from:
+
+```text
+Page 1066360047 - Property 2879900210
+```
+
+to:
+
+```text
+Namespace MyNamespace.MyProductArea - Page SamplePage - Property Caption
+```
+
+If an object doesn't have a namespace, the compiler omits the namespace component but still uses readable names. If the readable ID would exceed 400 characters, the compiler generates a namespace-aware hashed ID instead.
+
+Enabling this feature changes the IDs in newly generated XLIFF files. The compiler can consume both legacy and namespace-aware IDs, so existing translation files remain valid.
+
+Enabling `TranslationsWithNamespaces` doesn't by itself trigger AppSourceCop rule AS0125. You can also add a namespace to an object that previously had none without triggering the rule if nothing else that affects its translation IDs changes. Moving a namespace, removing a namespace, or renaming an object or member are still breaking changes. Learn more in [AppSourceCop Info AS0125](analyzers/appsourcecop-as0125.md).
+
 ## Label syntax
 
-The label syntax is shown in the example below for the **Caption** property: 
+The following example shows the label syntax for the **Caption** property:
 
-```AL
-Caption = 'Developer translation for %1',  Comment = '%1 is extension name', locked = false, MaxLength=999; 
+```al
+Caption = 'Developer translation for %1', Comment = '%1 is extension name', Locked = false, MaxLength = 999;
 ```
 
 > [!NOTE]  
-> The `comment`, `locked`, and `maxLength` attributes are optional and the order isn't enforced. For more information, see [Label Data Type](methods-auto/label/label-data-type.md).
+> The `Comment`, `Locked`, and `MaxLength` attributes are optional, and the order isn't enforced. Learn more in [Label data type](methods-auto/label/label-data-type.md).
 
-Use the same syntax for report labels:  
+Use the same syntax for report labels:
 
-```AL
+```al
 labels
 {
-  LabelName = 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
-} 
+    LabelName = 'Label text', Comment = 'Context for the translator', MaxLength = 999, Locked = true;
+}
 ```
 
 And the following is the syntax for **Label** data types:
 
-```AL
+```al
 var
-    a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
+    GreetingLabel: Label 'Label text', Comment = 'Context for the translator', MaxLength = 999, Locked = true;
 ```
 
 ## The XLIFF file
 
-In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you'll now have to add the `target-language` and a `<target>` element per label. The `target-language` must be specified in the format `"<language code>-<country code>"`, for example `"da-DK"`, `"es-ES"`, or `"de-DE"`. The `<trans-unit id>` attribute corresponds to the object ID in the extension. This is illustrated in the example below.
+In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you need to add the `target-language` and a `<target>` element per label. Specify the `target-language` in the format `"<language code>-<country code>"`, such as `"da-DK"`, `"es-ES"`, or `"de-DE"`. The `<trans-unit id>` attribute identifies the object or object member that defines the text. Its format depends on whether you enable [namespace-aware translation IDs](#include-namespaces-in-translation-ids). This format is illustrated in the following example.
+
+The following example uses the legacy translation ID format.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="da-DK" original="ALProject16">
     <body>
       <group id="body">
-        <trans-unit id="PageExtension 50110" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 1716690578 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Developer translation for %1</source>
           <target>Udvikleroversættelse for %1</target>
           <note from="Developer" annotates="general" priority="2">%1 is extension name</note>
@@ -139,11 +171,14 @@ To translate other extensions, for example, when adding translations to the Base
 
 In order to translate other apps, you must use the `<trans-unit id>` of the original property, not the one of an extension object as that might have been modified.
 
+The following examples use the legacy translation ID format.
+
 If `MyPage` is defined as:
 
 ```al
-page 50000 MyPage {
-  Caption = 'Base Page'
+page 50000 MyPage
+{
+    Caption = 'Base Page';
 }
 ```
 

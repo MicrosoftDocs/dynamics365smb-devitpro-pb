@@ -312,6 +312,8 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 
 Both API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use the **InsertAllowed**, **ModifyAllowed**, and **DeleteAllowed** properties respectively.
 
+[!INCLUDE[api-overview-note](../includes/api-overview-note.md)]
+
 Now, we'll create a car brand:
 
 ```

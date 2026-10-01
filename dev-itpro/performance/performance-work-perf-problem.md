@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot a Performance Problem in Business Central
-description: Learn a troubleshooting process, including tools like the performance profiler and telemetry, to help you find the root cause of slow performance.
-ms.date: 09/11/2026
+title: How to work with a performance problem
+description: Troubleshooting process that can help to guide you to find the root cause slow performance.
+ms.date: 09/18/2026
 ms.reviewer: solsen
 ms.topic: how-to
 author: KennieNP
@@ -36,7 +36,6 @@ Business Central comes with tools that can be used to analyze a performance prob
 |Performance tool | Properties |
 |---------------------------------|-------------|
 | Scheduled performance profiler | Use the scheduled performance profiler to investigate on individual user interactions or system processes.<br> Learn more in [Scheduled performance profiler overview](../administration/scheduled-performance-profiler-overview.md)|
-| Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
 |In-client performance profiler | Good for troubleshooting a performance scenario in the web client. <br>No developer required to run the tool.<br>Learn more in [In-client performance profiler overview](../administration/performance-profiler-overview.md). | 
 |Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
 |Verbose telemetry | Gives you all SQL queries for the session where you repro the issue. <br> Slows down the system while running. <br> Can inject much data into Azure Application Insights. <br> Data collection must happen live. |
@@ -47,12 +46,6 @@ Business Central comes with tools that can be used to analyze a performance prob
 
 The scheduled performance profiler helps diagnose transient performance issues that occur when business processes interfere with each other, such as when scheduled jobs run simultaneously or during specific user workflows. Administrators can configure schedules to automatically capture snapshots of processes during defined time slots, producing individual profiles for retroactive investigation of what was running when performance degraded. Learn more in [Scheduled performance profiler overview](../administration/scheduled-performance-profiler-overview.md).
 
-
-## Analyzing performance issues using the page inspector
-
-If a specific page takes too long to load, it might be due to extensions that are adding expensive operations to the page triggers. You can use the page inspector to analyze this performance by navigating to the Extensions tab. It displays installed extensions that affect the selected page or its source table by showing the time (in milliseconds) it took to run the extension in the call stack and the number of event subscribers run in the extension.
-
-Read more about how to use the page inspector to troubleshoot extension performance here [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).
 
 ## Analyzing performance issues using the in-client Performance Profiler 
 

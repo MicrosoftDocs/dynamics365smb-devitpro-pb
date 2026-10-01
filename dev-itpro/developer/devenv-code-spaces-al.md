@@ -2,7 +2,7 @@
 title: Use GitHub Codespaces for AL development
 description: GitHub Codespaces gives you a ready-to-use, cloud-hosted development environment for AL that runs in your browser.
 author: SusanneWindfeldPedersen
-ms.date: 03/25/2026
+ms.date: 05/29/2026
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -184,7 +184,7 @@ These settings configure the AL development experience:
 **al.enableCodeAnalysis** - Turns on the built-in code analysis tools that check your code for common issues and best practices.
 **al.enableCodeActions** - Enables quick-fix suggestions (the light bulb icon) so you can resolve code analyzer warnings with a single select.
 **al.codeAnalyzers** - Specifies which analyzers to run. CodeCop and UICop are enabled by default. Uncomment the analyzer that matches your extension type (see the table below).
-**al.useVsCodeAuthentication** - Uses VS Code's built-in authentication to sign in to Business Central. This is the recommended approach in Codespaces because it works seamlessly with browser-based authentication.
+**al.useVsCodeAuthentication** - Uses VS Code's built-in authentication to sign in to Business Central. This setting defaults to `true` and is the recommended approach in Codespaces because it works seamlessly with browser-based authentication. If you need to use the legacy interactive or device code sign-in, set this to `false`.
 
 Learn more about code analyzers in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 

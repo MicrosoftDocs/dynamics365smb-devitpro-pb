@@ -6,7 +6,7 @@ ms.custom: bap-template
 ms.reviewer: jswymer
 ms.topic: article
 ms.author: jswymer
-ms.date: 03/18/2026
+ms.date: 09/01/2026
 ms.service: dynamics-365-op
 ---
 
@@ -18,13 +18,21 @@ The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes PowerSh
 
 The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] is installed together with [!INCLUDE[server](../developer/includes/server.md)] components by using the Business Central Setup wizard. To install it, run the setup.exe that's available on the installation media (DVD). Follow the wizard, and choose either the **Install Demo** option or the **Server** option in the customized setup. For more information, see [Install Using Setup](../deployment/install-using-setup.md).
 
-### PowerShell 7 and PowerShell 5 modules
+### About the PowerShell modules
 
-Starting with 2024 release wave 1 (v24), Business Central admin modules are installed in PowerShell 7 and Windows PowerShell 5 compatible versions.
+[!INCLUDE[adminshell](../developer/includes/adminshell.md)] consists of the following PowerShell script modules, which are stored in the Business Central Server installation **Admin** folder:
 
-- PowerShell 7 modules are most up-to-date and recommended for best performance. The PowerShell 7 modules are stored in the **Admin** folder of the Business Central Server installation and prefixed with `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav`: The Microsoft.BusinessCentral.Management.dll, Microsoft.BusinessCentral.Apps.Management.dll, and Microsoft.BusinessCentral.Apps.Tools.dll.
+- [Microsoft.BusinessCentral.Management](/powershell/module/Microsoft.Dynamics.Nav.Management) - Cmdlets for administering Business Central Server instances
+- [Microsoft.BusinessCentral.Apps.Management](/powershell/module/Microsoft.Dynamics.Nav.Apps.Management) - Cmdlets for administering Business Central extensions and apps
+- [NAVWebClientManagement](/powershell/module/NAVWebClientManagement) - Cmdlets for administering Business Central Web Server instances
 
-- A Windows PowerShell 5 compatibility layer module is available for users who aren't ready to use PowerShell 7. This module is named Microsoft.Dynamics.Nav.Management.dll and is stored in the **Management** folder of the Business Central Server installation. It consolidates the cmdlets/functions of all three modules (Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll) into a single module. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility).
+The [Microsoft.BusinessCentral.Apps.Tools](/powershell/module/Microsoft.Dynamics.Nav.Apps.Tools) module provides cmdlets for creating Business Central extension packages and exporting related application data and resources. This module isn't part of [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and must be imported separately.
+
+Only PowerShell 7 is supported. Windows PowerShell 5 might continue to work, but it isn't a supported configuration and might stop working in a future update.
+
+**Earlier versions**
+
+In 2026 release wave 1 (version 28) and earlier, modules are available as binary modules (.dll) for PowerShell 7 and in a PowerShell 5 compatibility layer. Windows PowerShell 5 compatibility layer consolidates the modules into a single module that can run with PowerShell 5. The module, Microsoft.Dynamics.Nav.Management.dll, is part of Business Central Server installation **Management** folder. Learn more about compatibility in [Windows PowerShell Compatibility in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility).
 
 ## Run the Business Central Administration Shell
 

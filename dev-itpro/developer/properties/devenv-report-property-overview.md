@@ -2,7 +2,7 @@
 title: "Report, Report fields, and Report extension properties"
 description: "This article lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md)."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,8 +36,10 @@ The following properties all apply to the Report object, only some of these prop
 |[DataItemLinkReference property](devenv-dataitemlinkreference-property.md)| | -Report Data Item <br /> |
 |[DataItemTableView property](devenv-dataitemtableview-property.md)| | -Report Data Item <br /> |
 |[DecimalPlaces property](devenv-decimalplaces-property.md)| | -Table field <br />  -Page Field <br />  -Report Column <br /> |
+|[DefaultHeaderFooterPart property](devenv-defaultheaderfooterpart-property.md)| | -Report <br /> |
 |[DefaultLayout property](devenv-defaultlayout-property.md)| | -Report <br /> |
 |[DefaultRenderingLayout property](devenv-defaultrenderinglayout-property.md)| | -Report <br /> |
+|[DefaultThemePart property](devenv-defaultthemepart-property.md)| | -Report <br /> |
 |[Description property](devenv-description-property.md)| True| -Codeunit <br />  -Table field <br />  -Table key <br />  -Page <br />  -Page Action <br />  -Page Action Area <br />  -Page Action Group <br />  -Page Area <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Query <br />  -Query Column <br />  -Query Data Item <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Table <br />  -Xml Port <br />  -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br />  -Profile <br /> |
 |[EnableExternalAssemblies property](devenv-enableexternalassemblies-property.md)| | -Report <br /> |
 |[EnableExternalImages property](devenv-enableexternalimages-property.md)| | -Report <br /> |
@@ -47,6 +49,7 @@ The following properties all apply to the Report object, only some of these prop
 |[ExecutionTimeout property](devenv-executiontimeout-property.md)| | -Report <br /> |
 |[Extensible property](devenv-extensible-property.md)| | -Table <br />  -Page <br />  -Report <br />  -Enum Type <br /> |
 |[FormatRegion property](devenv-formatregion-property.md)| | -Report <br /> |
+|[HeaderFooterPart property](devenv-headerfooterpart-property.md)| | -Report Layout <br /> |
 |[IncludeCaption property](devenv-includecaption-property.md)| | -Report Column <br /> |
 |[InherentEntitlements property](devenv-inherententitlements-property.md)| | -Query <br />  -Report <br />  -Xml Port <br />  -Table <br />  -Codeunit <br />  -Page <br /> |
 |[InherentPermissions property](devenv-inherentpermissions-property.md)| | -Query <br />  -Report <br />  -Xml Port <br />  -Table <br />  -Codeunit <br />  -Page <br /> |
@@ -75,8 +78,9 @@ The following properties all apply to the Report object, only some of these prop
 |[ShowPrintStatus property](devenv-showprintstatus-property.md)| | -Report <br /> |
 |[Summary property](devenv-summary-property.md)| | -Report Layout <br /> |
 |[SummaryML property](devenv-summaryml-property.md)| | -Report Layout <br /> |
-|[ToolTip property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
-|[ToolTipML property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ThemePart property](devenv-themepart-property.md)| | -Report Layout <br /> |
+|[ToolTip property](devenv-tooltip-property.md)| | -Page <br />  -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTipML property](devenv-tooltipml-property.md)| | -Page <br />  -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
 |[TransactionType property](devenv-transactiontype-property.md)| | -Xml Port <br />  -Report <br /> |
 |[UsageCategory property](devenv-usagecategory-property.md)| | -Query <br />  -Page <br />  -Report <br /> |
 |[UseRequestPage property](devenv-userequestpage-property.md)| | -Xml Port <br />  -Report <br /> |
@@ -89,3 +93,6 @@ The following properties all apply to the Report object, only some of these prop
 ## Related information  
 [Getting started with AL](../devenv-get-started.md)  
 [Developing extensions](../devenv-dev-overview.md)  
+[Declare report layouts in AL](../devenv-report-layout-declaration.md)  
+[DefaultHeaderFooterPart property](devenv-defaultheaderfooterpart-property.md)  
+[DefaultThemePart property](devenv-defaultthemepart-property.md)  

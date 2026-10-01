@@ -4,13 +4,14 @@ description: Learn about the report telemetry in Business Central.
 author: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/12/2025
+ms.date: 09/22/2026
 ms.author: jswymer
 ms.reviewer: solsen
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
-# Analyzing Report Telemetry
+# Analyze report telemetry
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
@@ -72,6 +73,11 @@ The custom dimensions that are of particular interest for this operation include
 | layoutAppId | Specifies the ID for the layout that was used to render the report. This dimension was added in version 20.0.| 
 | layoutName | Specifies the name for the layout that was used to render the report. This dimension was added in version 20.0.| 
 | layoutType | Specifies the type of the layout that was used to render the report. See [layoutType](#layoutType). This dimension was added in version 20.0.| 
+|themeLayoutAppId|Specifies the app ID of the report theme layout. The value is empty when no theme layout was applied. This dimension was added in version 29.0.|
+|themeLayoutName|Specifies the name of the report theme layout. The value is empty when no theme layout was applied. This dimension was added in version 29.0.|
+|headerFooterLayoutAppId|Specifies the app ID of the header and footer layout. The value is empty when no header and footer layout was applied. This dimension was added in version 29.0.|
+|headerFooterLayoutName|Specifies the name of the header and footer layout. The value is empty when no header and footer layout was applied. This dimension was added in version 29.0.|
+|numberOfDocuments|Specifies the number of documents that the report generated.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
 |reportAction|Specifies the action that was done on the report. See [reportAction](#reportAction). This dimension was added in version 20.0.|
 |reportingEngine | Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
@@ -160,8 +166,13 @@ traces
 , LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
 , LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
 , LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
+, ThemeLayoutAppId = customDimensions.themeLayoutAppId                 // added in version 29.0
+, ThemeLayoutName = customDimensions.themeLayoutName                   // added in version 29.0
+, HeaderFooterLayoutAppId = customDimensions.headerFooterLayoutAppId   // added in version 29.0
+, HeaderFooterLayoutName = customDimensions.headerFooterLayoutName     // added in version 29.0
 , reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
 , reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
+, numberOfDocuments = customDimensions.numberOfDocuments
 // which user ran the report
 , usertelemetryId = case(
   toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
@@ -227,12 +238,20 @@ The following table explains the general dimensions of the **Failed report gener
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |documentFormat|Specifies the format of the report outputs as a result of the report action. See [documentFormat](#documentFormat). This dimension was added in version 20.0.|
+|layoutAppId|Specifies the ID for the layout that was used to render the report. This dimension was added in version 20.0.|
+|layoutName|Specifies the name for the layout that was used to render the report. This dimension was added in version 20.0.|
+|layoutType|Specifies the type of the layout that was used to render the report. See [layoutType](#layoutType). This dimension was added in version 20.0.|
+|themeLayoutAppId|Specifies the app ID of the report theme layout. The value is empty when no theme layout was applied. This dimension was added in version 29.0.|
+|themeLayoutName|Specifies the name of the report theme layout. The value is empty when no theme layout was applied. This dimension was added in version 29.0.|
+|headerFooterLayoutAppId|Specifies the app ID of the header and footer layout. The value is empty when no header and footer layout was applied. This dimension was added in version 29.0.|
+|headerFooterLayoutName|Specifies the name of the header and footer layout. The value is empty when no header and footer layout was applied. This dimension was added in version 29.0.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
+|numberOfDocuments|Specifies the number of documents that the report generated before the failure.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
 |reportAction|Specifies the action that was done on the report. See [reportAction](#reportAction). This dimension was added in version 20.0.|
 |reportingEngine| Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
@@ -280,6 +299,10 @@ traces
 , LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
 , LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
 , LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
+, ThemeLayoutAppId = customDimensions.themeLayoutAppId                 // added in version 29.0
+, ThemeLayoutName = customDimensions.themeLayoutName                   // added in version 29.0
+, HeaderFooterLayoutAppId = customDimensions.headerFooterLayoutAppId   // added in version 29.0
+, HeaderFooterLayoutName = customDimensions.headerFooterLayoutName     // added in version 29.0
 , reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
 , reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
 // which user ran the report
@@ -290,6 +313,8 @@ traces
 // what happened
 , alStackTrace = customDimensions.alStackTrace
 , failureReason = customDimensions.result
+, numberOfDocuments = customDimensions.numberOfDocuments
+, numberOfRows = customDimensions.numberOfRows
 ```
 
 ## Cancellation report generation

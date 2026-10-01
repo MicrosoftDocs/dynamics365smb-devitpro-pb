@@ -3,7 +3,7 @@ title: Table object
 description: This article describes the structure, object limits, and extensibility of the table object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
-ms.date: 10/01/2024
+ms.date: 06/12/2026
 ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.author: solsen
@@ -154,6 +154,32 @@ table 50104 Address
     }
 }
 ```
+
+## Migrating fields from Integer to BigInteger
+
+Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2026 release wave 2 (runtime 18.0), you can change existing table fields from `Integer` to `BigInteger` during upgrades. This gradual migration enables you to expand the capacity of fields that might overflow as data volumes grow, without requiring a full schema rebuild.
+
+Key behaviors:
+
+- **Field type upgrade**: Changing a field from `Integer` to `BigInteger` is allowed when targeting runtime 18.0 or later.
+- **Property context warnings**: When a `BigInteger` field is referenced in property contexts (`TableRelation`, `CalcFormula` WHERE clauses), the compiler emits warnings for narrowing conversions (`BigInteger` → `Integer`) to alert about potential overflow at runtime.
+- **CalcFormula support**: `LOOKUP`, `MAX`, and `MIN` operations allow `Integer` ↔ `BigInteger` conversions with appropriate warnings for narrowing conversions.
+- **AppSourceCop rule AS0141**: Warns about the potential consequences for dependent extensions that reference a field whose type was changed from `Integer` to `BigInteger`.
+
+```al
+table 50100 "My Table"
+{
+    fields
+    {
+        // Changed from Integer to BigInteger in the new version
+        field(1; "Entry No."; BigInteger) { }
+        field(2; Description; Text[100]) { }
+    }
+}
+```
+
+> [!NOTE]
+> Narrowing conversions (`BigInteger` to `Integer`, `Option`, or `Enum`) in WHERE clauses emit compiler warnings. Review any dependent extensions that reference the upgraded field to ensure they handle the wider value range.
 
 ## Related information
 

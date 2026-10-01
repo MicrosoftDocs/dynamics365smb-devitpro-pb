@@ -2,7 +2,7 @@
 title: "Work with multiple AL project folders within one workspace"
 description: "Handling solutions in the AL language that contain multiple projects."
 author: SusanneWindfeldPedersen
-ms.date: 11/30/2022
+ms.date: 09/14/2026
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -31,6 +31,10 @@ It isn't mandatory to use only AL-based roots. Different kinds of projects can b
 - `al.enableCodeAnalysis`
 
 The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. It can be specified in the **User Settings**, **Workspace Settings**, or **Project Settings**. The `al.enableCodeAnalysis` setting allows you to enable the execution of code analyzers on your project. It can likewise be specified in the **User Settings**, **Workspace Settings**, or **Project Settings**. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+
+## AL0720 for cross-project inherent permissions
+
+Starting with runtime version 18.0, the compiler reports [AL0720](diagnostics/diagnostic-al720.md) when an `InherentPermissions` attribute in one project references an object from another project in a multi-root workspace. Each AL project builds a separate extension, and inherent permissions can reference only objects in the same extension. Learn more about inherent permissions in [Inherent permissions](devenv-inherent-permissions.md).
 
 ## Making sure that your project or workspace is updated
 

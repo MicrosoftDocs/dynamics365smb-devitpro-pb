@@ -2,7 +2,7 @@
 title: Get started with AL
 description: Description of how to get started with the AL development environment.
 author: SusanneWindfeldPedersen
-ms.date: 12/09/2025
+ms.date: 08/25/2026
 ms.topic: get-started
 ms.author: solsen
 ms.collection: get-started
@@ -41,6 +41,13 @@ You now have a `HelloWorld` sample that compiles and runs. The JSON files in the
 - You can't publish an extension from Visual Studio Code with the same identifiers as an extension that's already published to Marketplace. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
 - Due to keyboard or other settings, some users might find that the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut key doesn't work. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
 - You can change your configuration later in the `launch.json` file. Choose the **Add Configuration** button on the bottom right side, and then choose one of the available options. You don't have a `launch.json` file until you run the `AL:Go!` command.
+
+## Install the required .NET runtime
+
+> [!NOTE]
+> Starting with Business Central 2026 release wave 2, the AL Language extension uses the [.NET Install Tool for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-runtime) to acquire its required .NET 10.0 runtime. Visual Studio Code downloads and installs the runtime automatically when the AL Language extension starts.
+>
+> If your organization restricts Visual Studio Code extensions through a private marketplace, make the .NET Install Tool available there. The AL Language extension can't acquire its runtime dependency if the tool isn't available. If automatic acquisition fails after the extension starts, the extension tries to use a compatible ASP.NET Core runtime that is available through the system `dotnet` command.
 
 ## Tips and tricks
 

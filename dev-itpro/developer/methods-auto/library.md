@@ -2,7 +2,7 @@
 title: "Data types and methods in AL"
 description: ""
 ms.author: solsen
-ms.date: 06/10/2025
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -28,6 +28,7 @@ The following data types are available as part of the AL language. Each data typ
 |[CompanyProperty](companyproperty/companyproperty-data-type.md)|Provides language support for company properties.|
 |[Cookie](cookie/cookie-data-type.md)|Provides a data structure to work with Http cookies.|
 |[Database](database/database-data-type.md)|Provides access to common database functionality.|
+|[DataSourceContext](datasourcecontext/datasourcecontext-data-type.md)|Represents the context passed to a data source codeunit that implements the ITestDataSource interface.|
 |[DataTransfer](datatransfer/datatransfer-data-type.md)|A structure building bulk transfer of data between tables.|
 |[Date](date/date-data-type.md)|Denotes a date ranging from January 1, 1753 to December 31, 9999.|
 |[DateFormula](dateformula/dateformula-data-type.md)|Represents a date formula that has the same capabilities as an ordinary input string for the CALCDATE Method (Date). The DateFormula data type is used to provide multilanguage capabilities to the CALCDATE Method (Date).|
@@ -88,6 +89,7 @@ The following data types are available as part of the AL language. Each data typ
 |[TestField](testfield/testfield-data-type.md)|Represents a testable field on a page.|
 |[TestFilter](testfilter/testfilter-data-type.md)|Represents a test filter on a page.|
 |[TestFilterField](testfilterfield/testfilterfield-data-type.md)|Represents the type of a field filter in a test filter on a page or on a request page.|
+|[TestHandlerContext](testhandlercontext/testhandlercontext-data-type.md)|Provides context information about a test codeunit or procedure being run. Used as a parameter in ITestHandler interface methods.|
 |[TestHttpRequestMessage](testhttprequestmessage/testhttprequestmessage-data-type.md)|Represents a test HTTP request message.|
 |[TestHttpResponseMessage](testhttpresponsemessage/testhttpresponsemessage-data-type.md)|Represents a test HTTP response message including the status code and data.|
 |[TestPage](testpage/testpage-data-type.md)|Represents a variable type that can be used to test Page Application Objects.|

@@ -39,6 +39,7 @@
 |Marketplace Submission Validation|Provides information about validation when an extension is submitted to Marketplace.|![check mark for feature.](../developer/media/check.png)||![check mark for feature](../developer/media/check.png)|[Learn more](../administration/telemetry-appsource-submission-validation-trace.md)|
 |Metadata embeddings<sup>[\[13\]](#13)</sup>|Provides information about embedding generation lifecycle for extensions, used to power AI features like Copilot search.|![check mark for feature.](../developer/media/check.png)|||[Learn more](../administration/telemetry-metadata-embeddings-trace.md)|
 |Onboarding<sup>[\[7\]](#7)</sup>|Provides information about the onboarding of users.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-onboarding-trace.md) |
+|Open in Excel <sup>[\[14\]](#14)</sup>|Provides information about when users export data to Excel using the Open in Excel action.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-open-in-excel-trace.md)|
 |Page views|Provides information about the pages that users open in the modern client.|![check mark for feature.](../developer/media/check.png)|![check mark for feature.](../developer/media/check.png)<sup>[\[6\]](#6)</sup>|![check mark for feature](../developer/media/check.png)<sup>[\[4\]](#4)</sup>|[Learn more](../administration/telemetry-page-view-trace.md)|
 |Performance Toolkit (BCPT)|Provides information about test results from running the Business Central Performance Toolkit (BCPT).|![check mark for feature.](../developer/media/check.png)|![check mark for feature.](../developer/media/check.png)||[Learn more](../administration/telemetry-performance-toolkit-trace.md)|
 |Permissions|Provides information about adding, removing, and assigning permission sets.|![check mark for feature.](../developer/media/check.png)|||[Learn more](../administration/telemetry-permission-changes-trace.md)|
@@ -86,5 +87,4 @@
 
 <sup>13</sup><a name="13"></a>Introduced in Business Central 2026 release wave 1, version 28.0.
 
-<!-- available in 29 
-|Open in Excel <sup>[\[14\]](#14)</sup>|Provides information about when users export data to Excel using the Open in Excel action.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-open-in-excel-trace.md)|-->
+<sup>14</sup><a name="14"></a>Introduced in Business Central 2026 release wave 2, version 29.0.

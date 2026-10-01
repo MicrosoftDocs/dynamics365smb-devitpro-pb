@@ -3,7 +3,7 @@ title: Configure the Help experience
 description: Learn how to give your customers access to the right Help content for Business Central online and on-premises.
 author: SusanneWindfeldPedersen
 ms.topic: concept-article
-ms.date: 01/08/2025
+ms.date: 10/01/2026
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -30,7 +30,7 @@ For inspiration for how to create a website that can host your content, explore 
 For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can choose between using any online website or the legacy Dynamics NAV Help Server, and you can configure different Help experience for each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. For supported versions, the legacy Dynamics NAV Help Server component is a simple website that requires your Help to be in a specific format (HTML files). Other types of websites can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
 
 > [!IMPORTANT]
-> The legacy Dynamics NAV Help Server component was deprecated and removed in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. Learn more in [deprecation notice](../upgrade/deprecated-features-platform.md#the-help-server-component).
+> The legacy Dynamics NAV Help Server component was deprecated and removed in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. Learn more in [Help Server component](../upgrade/deprecated-features-platform.md#help-server-component).
 
 > [!TIP]
 > The content on the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.

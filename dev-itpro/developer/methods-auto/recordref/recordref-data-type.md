@@ -2,7 +2,7 @@
 title: "RecordRef data type"
 description: "References a record in a table."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -70,7 +70,7 @@ The following methods are available on instances of the RecordRef data type.
 |[Insert()](recordref-insert--method.md)|Inserts a record into a table without executing the code in the OnInsert trigger.|
 |[Insert(Boolean)](recordref-insert-boolean-method.md)|Inserts a record into a table.|
 |[Insert(Boolean, Boolean)](recordref-insert-boolean-boolean-method.md)|Inserts a record into a table.|
-|[IsDirty()](recordref-isdirty-method.md)|Gets a boolean value that indicates whether the current in-memory instance of a record or filtered set of records has changed since being retrieved from the database.|
+|[IsDirty()](recordref-isdirty-method.md)|Gets a boolean value that indicates whether the current in-memory record instance has different values than when it was loaded from the database.|
 |[IsEmpty()](recordref-isempty-method.md)|Determines whether any records exist in a filtered set of records in a table.|
 |[IsTemporary()](recordref-istemporary-method.md)|Determines whether a RecordRef refers to a temporary table.|
 |[KeyCount()](recordref-keycount-method.md)|Gets the number of keys that exist in the table that is referred to by the RecordRef. Returns an error if no table is selected.|

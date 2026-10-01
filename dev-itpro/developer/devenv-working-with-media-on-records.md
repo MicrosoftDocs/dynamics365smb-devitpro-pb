@@ -2,7 +2,7 @@
 title: "Working With Media on Records"
 ms.author: solsen
 description: Learn how to upload media, such as an image, to the database for displaying with records in the client. 
-ms.date: 11/08/2021
+ms.date: 09/14/2026
 ms.topic: how-to
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -82,6 +82,8 @@ A MIME type is defined by two parts, the *type* and *subtype*, where the format 
 
 > [!NOTE]  
 > GIF type is not supported on reports. If you want to display an image on a report, use another supported type.
+>
+> Use GIF files as FactBox thumbnails, including animation for GIFs that have up to 48 frames. The built-in previewer opens thumbnail previews for images and the first page of PDF files.
 >
 > Files with extensions that are not recognized are also supported and can be imported. These are stored as BLOBs (binary larger objects).
 

@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 08/24/2026
+ms.date: 08/25/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---
@@ -60,8 +60,9 @@ The following tools are exposed by the AL MCP Server. Tools marked **MCP only** 
 | [`al_compile`](al-tool-compile.md) | Validate AL code without generating an `.app`. Faster than a full build. |
 | [`al_publish`](al-tool-publish.md) | Publish the extension to a Business Central cloud or on-premises environment. |
 | [`al_downloadsymbols`](al-tool-download-symbols.md) | Download dependent symbol packages from a BC environment or global sources. |
-| [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies. |
+| [`al_symbolsearch`](al-tool-symbol-Search.md) | Search AL symbols across the project and its dependencies, or on the connected environment. |
 | [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve compilation diagnostics with filtering. |
+| [`al_getnextobjectid`](al-tool-get-next-object-id.md) | Allocate the next free AL object IDs before scaffolding a new object. |
 | [`al_getpackagedependencies`](al-tool-get-package-dependencies.md) | List the project's declared `app.json` dependencies. **MCP only.** |
 | `al_addproject` | Add an AL project to the server workspace after startup. **MCP only.** |
 | [`al_auth_login`](al-tool-auth.md#al_auth_login) | Authenticate to Microsoft Entra ID for cloud operations. **MCP only.** |
@@ -104,7 +105,7 @@ Tool calls follow the MCP JSON-RPC protocol. The agent sends a `tools/call` requ
 }
 ```
 
-**Example: search for symbols (note the required `parameters` wrapper)**
+**Example: search for symbols**
 
 ```json
 {
@@ -127,7 +128,7 @@ Tool calls follow the MCP JSON-RPC protocol. The agent sends a `tools/call` requ
 ```
 
 > [!NOTE]
-> The `al_symbolsearch` tool requires its search parameters to be wrapped under a `parameters` key. All other tools accept their parameters at the top level.
+> The `al_symbolsearch` tool accepts `query` and `filters` either at the top level or under a `parameters` key. The example uses the wrapper for compatibility with existing clients. Other tools accept their parameters at the top level.
 
 ## Authentication
 
@@ -191,5 +192,6 @@ Use the `al_addproject` tool to load more projects after the server starts. When
 [al_downloadsymbols](al-tool-download-symbols.md)  
 [al_symbolsearch](al-tool-symbol-search.md)  
 [al_getdiagnostics](al-tool-get-diagnostics.md)  
+[al_getnextobjectid](al-tool-get-next-object-id.md)  
 [al_getpackagedependencies](al-tool-get-package-dependencies.md)  
 [al_auth_login and al_auth_logout](al-tool-auth.md)  

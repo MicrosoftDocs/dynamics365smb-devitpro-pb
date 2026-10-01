@@ -2,7 +2,7 @@
 title: Troubleshooting tools and guides overview
 description: An overview of tools and processes that help troubleshoot issues in Business Central.
 ms.custom: bap-template
-ms.date: 07/01/2025
+ms.date: 09/18/2026
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: solsen
@@ -28,7 +28,7 @@ For a large collection of troubleshooting articles, see the following site provi
 These tools in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client help you understand trends in application behavior, identify performance issues, database locks, and more. 
 
 - Investigate root causes for errors with [Copy details in the error dialog](devenv-error-dialog.md)
-- Investigate page data, filters, and load times with the [Page Inspector](/dynamics365/business-central/across-inspect-page)
+- Investigate page data and filters with the [Page Inspector](/dynamics365/business-central/across-inspect-page).
 - See if the events you rely on are fired as expected with the [Event Recorder](devenv-events-discoverability.md)
 - Check for unexpected table sizes with [Tables information](/dynamics365/business-central/admin-view-table-information)
 - Find locks with [Database locks](/dynamics365/business-central/admin-view-database-locks)

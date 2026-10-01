@@ -4,11 +4,11 @@ description: Learn about the outgoing web service request telemetry in Business 
 author: kennienp
 ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 06/01/2023
+ms.date: 09/22/2026
 ms.author: kepontop
 ms.reviewer: jswymer
-
-ms-custom: bap-template
+ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Analyzing outgoing web service request telemetry
@@ -54,6 +54,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |extensionVersion|Specifies the version of the extension that made the request.|
 |httpHeaders|Specifies the http headers set in the request. </br></br>Introduced in version 17.2.|
 |httpMethod| [!INCLUDE[httpMethod](../includes/include-telemetry-dimension-http-method.md)] |
+|httpRequestError|Specifies the `System.Net.Http.HttpRequestError` value for a failed request. This dimension helps distinguish errors such as name resolution failures, connection failures, and secure connection failures. Introduced in version 29.0.|
 |httpReturnCode | **Deprecated in version 17.2. Use the dimension httpStatusCode instead.**  Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**404**<br />Not found. The given endpoint wasn't valid.</li></li></ul>|
 |httpStatusCode |Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**404**<br />Not found. The given endpoint wasn't valid.</li></li></ul>In the case of a failure, the reason for the underlying issue could be network connectivity, DNS failure, server certificate validation or timeout. The Business Central Server does not know which if these it might be. |
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request, including the time to open the company. The time has the format hh:mm:ss.sssssss.|
@@ -85,6 +86,7 @@ traces
 , extensionVersion = customDimensions.extensionVersion
 , httpMethod = toupper( customDimensions.httpMethod ) // httpMethod is logged as the value used in the AL code
 , httpStatusCode = case( isnotempty(customDimensions.httpStatusCode), customDimensions.httpStatusCode, customDimensions.httpReturnCode ) 
+, httpRequestError = customDimensions.httpRequestError // introduced in version 29.0
 , httpHeaders = customDimensions.httpHeaders       
 , executionTime = customDimensions.serverExecutionTime
 , executionTimeInMS = toreal(totimespan(customDimensions.serverExecutionTime))/10000 //the datatype for executionTime is timespan

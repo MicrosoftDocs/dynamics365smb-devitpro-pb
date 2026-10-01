@@ -5,9 +5,10 @@ author: bholtorf
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
-ms.date: 07/13/2023
+ms.date: 09/22/2026
 ms.author: bholtorf
 ms.reviewer: bholtorf
+ai-usage: ai-assisted
 ---
 
 # Feature telemetry
@@ -243,50 +244,7 @@ traces
 
 
 ## <a name="loggererrors"></a>Error telemetry for the app publisher
-When you use the feature telemetry module in your app, it's important to register exactly one telemetry logger. If you fail to do so, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server logs an event to your telemetry.
-
-### <a name="multipleloggers"></a>More than one telemetry logger has been registered for publisher {publisher}
-This event is logged if more than one telemetry logger has been registered for publisher.
-
-#### General dimensions
-
-|Dimension  | Description or value  |
-|---------|---------|
-|message     | More than one telemetry logger has been registered for publisher {publisher} |
-
-
-#### Custom dimensions
-
-|Dimension  | Description or value  |
-|---------|---------|
-|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises solutions that do not use Microsoft Entra authentication, this value is **common**.|
-|alCallerAppName     | The name of the extension that emitted telemetry.      |
-|alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
-|alCallerAppVersion     | The name of the extension that emitted telemetry.      |
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments). This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
-|eventId     | **AL0000G7J**        |
-
-#### Sample KQL code
-This KQL code can help you get started analyzing if an app has registered more than one telemetry logger.
-
-```kql
-// More than one telemetry logger has been registered for publisher <publisher>
-// The owner of the app needs to fix this if they want telemetry from the Feature Telemetry system module
-traces
-| where timestamp > ago(7d) // change as needed
-| where customDimensions has 'AL0000G7J'
-| where customDimensions.eventId == 'AL0000G7J'
-| project timestamp
-, aadTenantId = customDimensions.aadTenantId
-, environmentName = customDimensions.environmentName
-, environmentType = customDimensions.environmentType
-, appId = customDimensions.alCallerAppId
-, appPublisher = customDimensions.alCallerPublisher
-, appName = customDimensions.alCallerAppName
-, appVersion = customDimensions.alCallerAppVersion
-```
-
+When you use the feature telemetry module in your app, register a telemetry logger for the app publisher. If you don't register a logger, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server logs an event to environment telemetry.
 
 ### <a name="nologger"></a>No telemetry logger has been registered for publisher {publisher}
 This event is logged if no telemetry logger has been registered for publisher.
@@ -342,4 +300,3 @@ traces
 [Feature Management Telemetry](telemetry-feature-management-trace.md)  
 [Telemetry Overview](telemetry-overview.md)  
 [Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  
-

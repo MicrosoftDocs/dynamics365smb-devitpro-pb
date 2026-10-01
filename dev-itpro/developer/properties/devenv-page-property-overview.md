@@ -2,7 +2,7 @@
 title: "Page, Page fields, and Page extension properties"
 description: "This article lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -156,8 +156,8 @@ The following properties all apply to the Page object, only some of these proper
 |[SubPageView property](devenv-subpageview-property.md)| | -Page Part <br />  -Page System Part <br />  -Page Chart Part <br /> |
 |[TableRelation property](devenv-tablerelation-property.md)| True| -Table field <br />  -Page Field <br /> |
 |[Title property](devenv-title-property.md)| | -Page Field <br /> |
-|[ToolTip property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
-|[ToolTipML property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTip property](devenv-tooltip-property.md)| | -Page <br />  -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
+|[ToolTipML property](devenv-tooltipml-property.md)| | -Page <br />  -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page Analysis View <br />  -Report Column <br />  -Query Column <br />  -Table field <br /> |
 |[TreeInitialState property](devenv-treeinitialstate-property.md)| True| -Page Group <br /> |
 |[UpdatePropagation property](devenv-updatepropagation-property.md)| | -Page Part <br />  -Page System Part <br />  -Page Chart Part <br /> |
 |[UsageCategory property](devenv-usagecategory-property.md)| | -Query <br />  -Page <br />  -Report <br /> |
