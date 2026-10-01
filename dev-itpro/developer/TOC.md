@@ -898,7 +898,6 @@
 #### [AL1076](diagnostics/diagnostic-al1076.md)
 #### [AL1079](diagnostics/diagnostic-al1079.md)
 #### [AL1080](diagnostics/diagnostic-al1080.md)
-#### [AL0925](diagnostics/diagnostic-al925.md)
 ### Fatal error messages
 #### [AL1100](diagnostics/diagnostic-al1100.md)
 #### [AL1101](diagnostics/diagnostic-al1101.md)
