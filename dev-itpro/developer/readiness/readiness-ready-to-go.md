@@ -11,15 +11,15 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The Business Central 2026 release wave 2 (update 29.0) release plans are now available on the [AI at Work roadmap](http://aka.ms/AIatWorkRoadmap). The release plan article, available at [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan), highlights the innovations coming in this wave and provides additional context on Microsoft's transition to the AI at Work roadmap. Existing release plans remain accessible for historical reference. Explore the latest innovations across Business Central, Copilot, and agents.
+> The Business Central 2026 release wave 2 (update 29.0) release plans are now available on the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). The release plan article, available at [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan), highlights the innovations coming in this wave and provides additional context on Microsoft's transition to the AI at Work roadmap. Existing release plans remain accessible for historical reference. Explore the latest innovations across Business Central, Copilot, and agents.
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
 
-- **Explore the roadmap for Business Central 2026 release wave 2 (update 29)** [aka.ms/BCreleaseplan](http://aka.ms/BCreleaseplan)
-- **Learn what's new in minutes with YouTube videos at BCLE** [aka.ms/BCLE](http://aka.ms/BCLE)
-- **Tell your customers what's new in Business Central. Use the presentation to showcase the latest updates and innovations, download** [aka.ms/BCLEDECK](http://aka.ms/BCLEDECK)
+- **Explore the roadmap for Business Central 2026 release wave 2 (update 29)** [aka.ms/BCreleaseplan](https://aka.ms/BCreleaseplan)
+- **Learn what's new in minutes with YouTube videos at BCLE** [aka.ms/BCLE](https://aka.ms/BCLE)
+- **Tell your customers what's new in Business Central. Use the presentation to showcase the latest updates and innovations, download** [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
 - **Experience Business Central news and innovations firsthand at Directions EMEA in Paris, October 27-29** [Directions for Partners](https://www.directionsforpartners.com/) 
 - **Expense Agent – try it out today** [Expense Agent Overview](/dynamics365/business-central/expense-management/expense-agent)
 - **Expense Agent – dive into the latest videos** [Business Central Expense Agent Series](https://www.youtube.com/playlist?list=PLVPvbYXxhxmY)
