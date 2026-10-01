@@ -1,6 +1,6 @@
 ---
 title: Configure agents programmatically (preview)
-description: Learn how to configure agent instances and manage agent instructions programmatically in Dynamics 365 Business Central.
+description: Learn how to configure agent instances, manage lifecycle settings, and update agent instructions programmatically in Dynamics 365 Business Central.
 author: solsen
 ms.author: solsen
 ms.reviewer: solsen
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 08/28/2026
 ms.update-cycle: 180-days
 ---
 
@@ -30,6 +30,14 @@ The `Agent` codeunit provides methods to configure various aspects of an agent i
 
 - Activate or deactivate agent instances to control whether they can process tasks
 - Check the current activation state of an agent
+
+The archiving methods have the following availability:
+
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
+- Use [`Agent.Archive`](/dynamics365/business-central/application/system-application/codeunit/system.agents.agent#archive) to archive a deactivated agent that you no longer need.
+- Use [`Agent.IsArchived`](/dynamics365/business-central/application/system-application/codeunit/system.agents.agent#isarchived) to check whether an agent is archived.
+- Use [`IAgentArchiving.IsArchivingSupported`](/dynamics365/business-central/application/system-application/interface/system.agents.iagentarchiving#isarchivingsupported) to check whether an agent type supports archiving.
 
 ### Identity and display settings
 
@@ -210,6 +218,7 @@ Other applications can then call these public procedures to interact with your a
 ## Related information
 
 [Create agent setup pages (preview)](ai-agent-sdk-setup-page.md)  
+[Understand agent visibility (preview)](ai-development-toolkit-agent-visibility.md#archived-agents)  
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Define and register an agent programmatically (preview)](ai-agent-sdk-define-register.md)  
 [Agent models (preview)](ai-agent-models.md)  

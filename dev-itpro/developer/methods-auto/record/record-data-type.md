@@ -2,7 +2,7 @@
 title: "Record data type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -72,6 +72,7 @@ The following methods are available on instances of the Record data type.
 |[Insert()](record-insert--method.md)|Inserts a record into a table without executing the code in the OnInsert trigger.|
 |[Insert(Boolean)](record-insert-boolean-method.md)|Inserts a record into a table.|
 |[Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md)|Inserts a record into a table.|
+|[IsDirty()](record-isdirty-method.md)|Gets a boolean value that indicates whether the current in-memory record instance has different values than when it was loaded from the database.|
 |[IsEmpty()](record-isempty-method.md)|Determines whether a table or a filtered set of records is empty.|
 |[IsTemporary()](record-istemporary-method.md)|Determines whether a record refers to a temporary table.|
 |[LoadFields(Any,...)](record-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|

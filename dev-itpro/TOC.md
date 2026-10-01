@@ -2,16 +2,16 @@
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
-## [Update 29.0 preview](whatsnew/whatsnew-update-29-0.md)
+## [Update 29.0](whatsnew/whatsnew-update-29-0.md)
 ## [Update 28.5](whatsnew/whatsnew-update-28-5.md)
 ## [Update 28.4](whatsnew/whatsnew-update-28-4.md)
 ## [Update 28.3](whatsnew/whatsnew-update-28-3.md)
 ## [Update 28.2](whatsnew/whatsnew-update-28-2.md)
 ## [Update 28.1](whatsnew/whatsnew-update-28-1.md)
 ## [Update 28.0](whatsnew/whatsnew-update-28-0.md)
-## [Update 27.5](whatsnew/whatsnew-update-27-5.md)
-## [Update 27.4](whatsnew/whatsnew-update-27-4.md)
 ## Updates for earlier major versions
+### [Update 27.5](whatsnew/whatsnew-update-27-5.md)
+### [Update 27.4](whatsnew/whatsnew-update-27-4.md)
 ### [Update 27.3](whatsnew/whatsnew-update-27-3.md)
 ### [Update 27.2](whatsnew/whatsnew-update-27-2.md)
 ### [Update 27.1](whatsnew/whatsnew-update-27-1.md)
@@ -312,7 +312,7 @@
 #### [MCP Server telemetry](administration/telemetry-mcp-server-trace.md)
 #### [Metadata embeddings telemetry](administration/telemetry-metadata-embeddings-trace.md)
 #### [Onboarding telemetry](administration/telemetry-onboarding-trace.md)
-<!--add in v29 #### [Open in Excel telemetry](administration/telemetry-open-in-excel-trace.md)-->
+#### [Open in Excel telemetry](administration/telemetry-open-in-excel-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
 #### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
 #### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
@@ -716,6 +716,7 @@
 ##### [Interfaces](developer/devenv-interfaces-in-al.md)
 ##### [Extending interfaces in AL](developer/devenv-interfaces-in-al-extend.md)
 ##### [Type testing and casting operators for interfaces](developer/devenv-interfaces-in-al-operators.md)
+##### [Interface method lifecycle](developer/devenv-interface-method-lifecycle.md)
 
 #### [Methods](developer/devenv-al-methods.md)
 ##### [Progress windows, Message, Error, and Confirm methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
@@ -1000,7 +1001,7 @@
 ###### [Using Word to author your report layout](developer/devenv-using-word-to-author-your-report-layout.md)
 ###### [Using hyperlinks in Word layouts](developer/devenv-hyperlinks-in-word-report-layouts.md)  
 ###### [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
-###### [Using the Word add-in for layouts](developer/word-layout-add-in.md)
+###### [Using the Word add-in for layouts](/dynamics365/business-central/ui-design-word-layouts-business-central-add-in?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
 ###### [Working with RDL layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -1550,7 +1551,7 @@
 ### [MCP in Business Central overview](ai/mcp-overview.md)
 ### [Configure Business Central MCP Server](ai/configure-mcp-server.md)
 ### [AL MCP Server](developer/al-agent-tools/al-mcp-server.md)
-### [Connect to MCP server with Copilot Studio](ai/create-agent-in-copilot-studio.md#create-agents-that-connect-to-business-central-mcp-server)
+### [Connect to MCP server with Copilot Studio](ai/create-agent-in-copilot-studio.md#create-agents-that-connect-to-the-business-central-mcp-server)
 ### [Connect to MCP server with Visual Studio Code](ai/use-mcp-server-in-vscode.md)
 ### [Connect to MCP server with GitHub Copilot CLI and other hosts](ai/use-mcp-server-non-microsoft.md)
 ## Designing and coding agents (preview)
@@ -1607,6 +1608,7 @@
 
 ### APIs
 #### [Overview](webservices/api-overview.md)
+#### [Explore available APIs](/dynamics365/business-central/api-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [API endpoint structure](webservices/api-endpoint-structure.md)
 #### [API client performance](webservices/odata-client-performance.md)
 #### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
@@ -1865,6 +1867,10 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 #### [Sustainability API](api-sustainability/sustainability-api.md)
+#### [Report inbox companies API](api-reporting/report-inbox-companies-api.md)
+#### [Report inbox content API](api-reporting/report-inbox-content-api.md)
+#### [Report inbox file API](api-reporting/report-inbox-file-api.md)
+#### [Report inbox items API](api-reporting/report-inbox-items-api.md)
 #### [IRS 1099 API (United States)](api-irs1099/irs1099-api.md)
 
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
@@ -2117,6 +2123,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2026 release wave 2](deployment/system-requirements-business-central-v29.md)
 #### [2026 release wave 1](deployment/system-requirements-business-central-v28.md)
 #### [2025 release wave 2](deployment/system-requirements-business-central-v27.md)
 #### [2025 release wave 1](deployment/system-requirements-business-central-v26.md)
@@ -2252,6 +2259,11 @@
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
 ### [Minor update compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+### Business Central 2026 release wave 2 (v29)
+#### [Overview of upgrade to v29](upgrade/upgrade-overview-v29.md)
+#### [Before upgrading to v29](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Upgrade to v29](upgrade/upgrade-unmodified-application-to-v29.md)
+#### [Installing v29 minor update](upgrade/upgrading-cumulative-update-v29.md)
 ### Business Central 2026 release wave 1 (v28)
 #### [Overview of upgrade to v28](upgrade/upgrade-overview-v28.md)
 #### [Before upgrading to v28](upgrade/upgrade-considerations-v26.md?toc=/dynamics365/business-central/dev-itpro/toc.json)

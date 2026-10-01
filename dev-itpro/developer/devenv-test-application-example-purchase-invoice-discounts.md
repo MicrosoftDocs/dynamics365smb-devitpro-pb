@@ -1,6 +1,6 @@
 ---
-title: "Application Testing Example: Testing Purchase Invoice Discounts"
-description: Walk through an application testing example in AL that verifies purchase invoice discount calculations in Business Central before you go to production.
+title: Application Testing Example to Test Purchase Invoice Discounts
+description: Example to demonstrate the application testing scenario.
 ms.date: 08/24/2026
 ms.reviewer: solsen
 ms.topic: concept-article

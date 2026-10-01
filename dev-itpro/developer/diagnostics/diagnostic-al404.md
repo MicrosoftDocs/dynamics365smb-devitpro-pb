@@ -2,7 +2,7 @@
 title: "Compiler Error AL0404"
 description: "Property '{0}' is not allowed on a table extension."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Property '{0}' is not allowed on a table extension.
 
 
 ## Description
-The properties **AutoIncrement**, **SqlTimestamp** and **Clustered**, **Unique** are not allowed on a table extension.   
+The properties **AutoIncrement**, **SqlTimestamp**, **Clustered**, and **Unique** are not allowed on a table extension.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

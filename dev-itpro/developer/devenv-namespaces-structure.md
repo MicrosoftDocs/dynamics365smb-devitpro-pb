@@ -4,7 +4,7 @@ description: Learn about features, tools, and best practices for structuring and
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 09/22/2023
+ms.date: 06/09/2026
 ms.topic: concept-article
 ms.reviewer: solsen
 ---
@@ -27,13 +27,13 @@ A code action automatically adds namespaces to AL files that are missing them, h
 
 When you invoke the code action, the system resolves the appropriate namespace using the following priority:
 
-1. **Namespace template** - The system reads and parses the `al.namespaceTemplate` setting. You can use the `$(parentfolder)` placeholder to dynamically insert the parent directory name of the AL file.
+1. **Namespace template** - The system reads and parses the `al.namespaceTemplate` setting. Use the `$(parentfolder)` placeholder to dynamically insert the parent directory name of the AL file. The value substituted for `$(parentfolder)` is normalized into a valid namespace identifier by using the same rules as the publisher/projectname fallback. The system accepts folder names that use kebab case, contain spaces, or start with a digit (for example `customer-pages`, `Sales App`, `1Sales`).
 
 2. **Sibling file analysis** - If the namespace template isn't defined or doesn't resolve to a valid identifier, the system examines other AL files in the same folder, extracts their namespace declarations, and uses the longest common namespace prefix.
 
-3. **Publisher and project name** - If no sibling files exist or they don't have a common namespace, the system falls back to constructing a namespace from `publisher.projectname` as defined in your `app.json` file.
+3. **Publisher and project name** - If no sibling files exist or they don't have a common namespace, the system falls back to `publisher.projectname` from `app.json`. The system splits both values on `.` and normalizes each segment into a valid namespace identifier. The system drops leading nonletter characters (digits, underscores, punctuation), collapses runs of disallowed characters into a single `_`, and removes trailing disallowed characters. For example, `"My $$ Company"` becomes `My_Company` and `"1Sales"` becomes `Sales`.
 
-4. **No namespace added** - If none of the above methods produce a valid namespace name, no namespace declaration is added, and you must define one manually.
+4. **Default namespace fallback** - If none of the other resolution steps produce a valid namespace, the code action falls back to `Default.Namespace` so the action is always available.
 
 ### Example workflow
 

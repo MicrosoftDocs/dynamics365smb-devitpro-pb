@@ -43,6 +43,8 @@ APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] online are enabled
 1. On the **API Setup** page, choose the **Integrate APIs** button.  
     This starts a process of populating all the integration tables with records for all APIs. The process can take several minutes.
 
+[!INCLUDE[api-overview-note](../../includes/api-overview-note.md)]
+
 Depending on where you want to access the APIs from, you must specify the correct endpoint. Learn more in [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
 [!INCLUDE[on-prem-ws-off-405-note](../../includes/include-on-prem-ws-off-405-note.md)]

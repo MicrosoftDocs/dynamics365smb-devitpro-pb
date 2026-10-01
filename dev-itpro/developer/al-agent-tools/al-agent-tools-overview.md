@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 08/24/2026
+ms.date: 09/29/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---
@@ -39,8 +39,9 @@ The following tools are available across both surfaces. Some tools are exclusive
 | [`al_compile`](al-tool-compile.md) | Validate AL code without generating an `.app` (MCP only) | — | ✓ |
 | [`al_publish`](al-tool-publish.md) | Publish the extension to Business Central (cloud or on-premises) | ✓ | ✓ |
 | [`al_downloadsymbols`](al-tool-download-symbols.md) | Download dependent symbol packages required for compilation | ✓ | ✓ |
-| [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies | ✓ | ✓ |
+| [`al_symbolsearch`](al-tool-symbol-Search.md) | Search AL symbols across the project and its dependencies, or on the connected environment | ✓ | ✓ |
 | [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve filtered compilation diagnostics | ✓ | ✓ |
+| [`al_getnextobjectid`](al-tool-get-next-object-id.md) | Allocate the next free AL object ID(s) before scaffolding a new object | ✓ | ✓ |
 | [`al_getpackagedependencies`](al-tool-get-package-dependencies.md) | List the project's `app.json` dependencies (MCP only) | — | ✓ |
 | `al_addproject` | Add an AL project to the server workspace after startup (MCP only) | — | ✓ |
 | [`al_debug`](al-tool-debug.md) | Start a debug session without republishing (Visual Studio Code only) | ✓ | — |
@@ -122,6 +123,12 @@ When the AL MCP Server needs to connect to a Business Central cloud environment,
 
 1. Call `al_symbolsearch` with a query to find tables, codeunits, pages, fields, or other AL objects across the project and its dependencies.
 
+### Scaffold a new object
+
+1. Call `al_getnextobjectid` with the object type you want to create (for example, `objectType="Codeunit"`) to get a free, non-colliding ID.
+2. Create the object by using the returned ID, and then save the file. The tool doesn't reserve IDs, so a second call before saving returns the same value.
+3. Call `al_build` (or `al_compile` in AL MCP) and `al_getdiagnostics` to confirm that the new object compiles without errors.
+
 ### Debug an already-published extension (Visual Studio Code)
 
 1. Call `al_debug` to attach the debugger to the deployed extension without republishing.
@@ -151,3 +158,4 @@ Learn more in [AL LSP](../devenv-al-tool.md#al-lsp).
 [AL tool reference: al_downloadsymbols](al-tool-download-symbols.md)  
 [AL tool reference: al_symbolsearch](al-tool-symbol-search.md)  
 [AL tool reference: al_getdiagnostics](al-tool-get-diagnostics.md)  
+[AL tool reference: al_getnextobjectid](al-tool-get-next-object-id.md)  

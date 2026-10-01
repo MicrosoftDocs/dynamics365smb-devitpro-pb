@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 05/03/2026
+ms.date: 09/29/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)]
 
-The AL Language extension registers a set of Language Model Tools with the Visual Studio Code Language Model Tools API. These tools are available to GitHub Copilot in Agent mode and to any Copilot-compatible extension running inside Visual Studio Code. They allow an AI agent to perform core AL development tasks—building, publishing, downloading symbols, searching symbols, reading diagnostics, and debugging—directly from a conversation.
+The AL Language extension registers a set of Language Model Tools with the Visual Studio Code Language Model Tools API. GitHub Copilot in Agent mode and any Copilot-compatible extension running inside Visual Studio Code can use these tools. By using these tools, an AI agent can perform core AL development tasks; building, publishing, downloading symbols, searching symbols, allocating object IDs, reading diagnostics, and debugging, directly from a conversation.
 
 ## Available tools
 
@@ -23,8 +23,9 @@ The AL Language extension registers a set of Language Model Tools with the Visua
 | [`al_build`](al-tool-build.md) | Build the AL project and generate the `.app` package. |
 | [`al_publish`](al-tool-publish.md) | Publish the extension to Business Central. |
 | [`al_downloadsymbols`](al-tool-download-symbols.md) | Download dependent symbol packages from the configured BC server or global sources. |
-| [`al_symbolsearch`](al-tool-symbol-search.md) | Search AL symbols across the project and its dependencies. |
+| [`al_symbolsearch`](al-tool-symbol-Search.md) | Search AL symbols across the project and its dependencies, or on the connected environment. |
 | [`al_getdiagnostics`](al-tool-get-diagnostics.md) | Retrieve compilation diagnostics from the Problems panel. |
+| [`al_getnextobjectid`](al-tool-get-next-object-id.md) | Allocate the next free AL object IDs before scaffolding a new object. |
 | [`al_debug`](al-tool-debug.md) | Start a debug session without republishing. |
 | [`al_setbreakpoint`](al-tool-debug.md#al_setbreakpoint--set-or-remove-a-breakpoint) | Add, remove, or toggle a breakpoint at a specific file and line. |
 | `al_snapshotdebugging` | Manage snapshot debugging sessions. |
@@ -49,6 +50,7 @@ When GitHub Copilot is in Agent mode, it can invoke AL tools automatically in re
 | *"Download symbols."* | Copilot calls `al_downloadsymbols`. |
 | *"Find all codeunits related to posting."* | Copilot calls `al_symbolsearch` with `query="posting"` and `kinds=["Codeunit"]`. |
 | *"Show me all errors in the project."* | Copilot calls `al_getdiagnostics` with `scope="project"` and `severities=["error"]`. |
+| *"I need a new table—what ID should I use?"* | Copilot calls `al_getnextobjectid` with `objectType="Table"`. |
 | *"Start debugging without republishing."* | Copilot calls `al_debug`. |
 | *"Set a breakpoint on line 42 of CustomerMgt.Codeunit.al."* | Copilot calls `al_setbreakpoint` with `lineNumber=42` and `action="add"`. |
 | *"Start snapshot debugging."* | Copilot calls `al_snapshotdebugging` with `action="initialize"`. |
@@ -94,4 +96,5 @@ To use this in Copilot Chat: *"Download symbols from global sources only."*
 [al_downloadsymbols](al-tool-download-symbols.md)  
 [al_symbolsearch](al-tool-symbol-search.md)  
 [al_getdiagnostics](al-tool-get-diagnostics.md)  
+[al_getnextobjectid](al-tool-get-next-object-id.md)  
 [al_debug, al_setbreakpoint, al_snapshotdebugging](al-tool-debug.md)  

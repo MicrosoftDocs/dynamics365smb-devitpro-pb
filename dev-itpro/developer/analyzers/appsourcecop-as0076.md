@@ -1,8 +1,8 @@
 ---
 title: "AppSourceCop Hidden AS0076"
-description: "Obsolete Tag must have a specific format."
+description: "Attribute tag must have a specific format."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,16 +11,16 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Hidden AS0076
-Obsolete Tag format.
+Attribute tag format.
 
 ## Description
-Obsolete Tag must have a specific format.
+Attribute tag must have a specific format.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-The ObsoleteTag [property](../properties/devenv-obsoletetag-property.md) and [attribute parameter](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute) values are not validated by the AL compiler. However it is possible to setup the AppSourceCop to verify them using a Regex expression.
+The tag values for the [Obsolete](../attributes/devenv-obsolete-attribute.md) and [RequiredPending](../attributes/devenv-requiredpending-attribute.md) attributes, and the [ObsoleteTag property](../properties/devenv-obsoletetag-property.md), are not validated by the AL compiler. However, you can set up the AppSourceCop to verify them using a Regex expression. The same `obsoleteTagPattern` applies to both Obsolete and RequiredPending tags.
 
 ## Setting up AppSourceCop to validate the Obsolete Tag
 

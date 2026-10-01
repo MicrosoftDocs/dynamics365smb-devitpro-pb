@@ -2,7 +2,7 @@
 title: "AppSourceCop analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -83,11 +83,11 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0069](appsourcecop-as0069.md)|An enum field replacing an option field should have at least the same number of members.|Upgrade|Error|
 |[AS0070](appsourcecop-as0070.md)|An enum field replacing an option field should preserve the member names.|Upgrade|Error|
 |[AS0071](appsourcecop-as0071.md)|An enum field replacing an option field should preserve the member ordinal values.|Upgrade|Error|
-|[AS0072](appsourcecop-as0072.md)|The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version.|Design|Hidden|
-|[AS0073](appsourcecop-as0073.md)|Obsolete Tag must be set.|Design|Hidden|
-|[AS0074](appsourcecop-as0074.md)|The Obsolete Tag must be the same across branches.|Design|Hidden|
-|[AS0075](appsourcecop-as0075.md)|Obsolete Reason must be set.|Design|Warning|
-|[AS0076](appsourcecop-as0076.md)|Obsolete Tag format.|Design|Hidden|
+|[AS0072](appsourcecop-as0072.md)|The attribute tag must be set to the next release version.|Design|Hidden|
+|[AS0073](appsourcecop-as0073.md)|Attribute tag must be set.|Design|Hidden|
+|[AS0074](appsourcecop-as0074.md)|The attribute tag must be the same across branches.|Design|Hidden|
+|[AS0075](appsourcecop-as0075.md)|Attribute reason must be set.|Design|Warning|
+|[AS0076](appsourcecop-as0076.md)|Attribute tag format.|Design|Hidden|
 |[AS0077](appsourcecop-as0077.md)|Adding a var modifier in events is not allowed|Upgrade|Error|
 |[AS0078](appsourcecop-as0078.md)|Adding or removing a var modifier in external procedures is not allowed|Upgrade|Error|
 |[AS0079](appsourcecop-as0079.md)|An affix is required for procedures defined in extension objects.|Extensibility|Warning|
@@ -154,6 +154,12 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0141](appsourcecop-as0141.md)|A table that appears to be moved from another app must have the MovedFrom property.|Upgrade|Error|
 |[AS0142](appsourcecop-as0142.md)|The destination table must have the MovedFrom property.|Upgrade|Error|
 |[AS0146](appsourcecop-as0146.md)|Changing a field from Integer to BigInteger may break dependent extensions.|Upgrade|Warning|
+|[AS0147](appsourcecop-as0147.md)|Changing a parameter from Integer to BigInteger might break dependent extensions.|Upgrade|Warning|
+|[AS0148](appsourcecop-as0148.md)|An interface method was made required without first being marked [RequiredPending].|Upgrade|Error|
+|[AS0149](appsourcecop-as0149.md)|Adding or removing a required method on an interface may break dependent extensions at runtime.|Upgrade|Warning|
+|[AS0150](appsourcecop-as0150.md)|Fully-namespaced app objects must be in a compliant namespace|Extensibility|Error|
+|[AS0151](appsourcecop-as0151.md)|FullNamespaceScope conflicts with mandatory affix configuration|Extensibility|Info|
+|[AS0152](appsourcecop-as0152.md)|Removing a codeunit used as a default implementation is a runtime breaking change.|Upgrade|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -35,6 +35,8 @@ Learn more in [Using Word to author your report layout](devenv-using-word-to-aut
 
 With Word layouts, Word is used as the editor for the report. The person designing the layout interacts with the labels, data items, and fields from the dataset from the data picker in the Word add-in (or using the legacy XML Mapping Pane). If you want users to be able to change the layout, consider using friendly names for labels, data items, and fields. 
 
+Learn more in [Design Word layouts with the Business Central add-in](/dynamics365/business-central/ui-design-word-layouts-business-central-add-in).
+
 ## Using system dataitems 
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
@@ -381,4 +383,3 @@ Learn more in [Compare and merge two versions of a Word document](https://suppor
 [Developing a custom report render](devenv-report-custom-render.md)  
 [Creating an RDL layout report](devenv-howto-rdl-report-layout.md)  
 [Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
-

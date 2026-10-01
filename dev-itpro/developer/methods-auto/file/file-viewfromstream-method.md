@@ -2,7 +2,7 @@
 title: "File.ViewFromStream(InStream, Text [, Boolean]) Method"
 description: "Opens a file from the server on the client computer in preview mode."
 ms.author: solsen
-ms.date: 04/15/2025
+ms.date: 09/14/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -46,7 +46,7 @@ Whether to allow the user to download or print the file from the client or not.
 
 ## Remarks
 
-This method works only in Business Central online environments and supports PDF files. For on-premise environments, use [File.View](file-view-method.md).  
+This method works only in Business Central online environments and supports files that the built-in previewer can display, including PDF and supported image files. For on-premises environments, use [File.View](file-view-method.md). The method follows the same general pattern as `File.DownloadFromStream`, but previews the file in the client instead of downloading it first.
 
 ## Example
 
@@ -82,10 +82,15 @@ begin
 end;
 ```
 
-> [!TIP]  
-> The base application uses this method to view PDF attachments on documents like sales orders, items, and more. Learn more in the [Microsoft.Foundation.Attachment reference](/dynamics365/business-central/application/base-application/table/microsoft.foundation.attachment.document-attachment).
+> [!TIP]
+> Use this method to provide the built-in file preview experience in Business Central for supported PDF and image files. Users can preview content directly in the client instead of downloading the file first.
+>
+> Supported image formats include JPEG, JPG, PNG, BMP, SVG, WEBP, ICO, GIF, and AVIF. GIF and AVIF formats include support for animated files. On Safari, TIFF and TIF images are also supported.
+>
+> The base application uses this method to preview attachments on sales documents, item cards, and other records. Learn more in the [Microsoft.Foundation.Attachment reference](/dynamics365/business-central/application/base-application/table/microsoft.foundation.attachment.document-attachment).
 
 ## Related information
+
 [File data type](file-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)

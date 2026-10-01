@@ -2,7 +2,7 @@
 title: Launch JSON file
 description: Description of the settings of the launch JSON file for AL in Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 03/04/2026
+ms.date: 05/29/2026
 ms.topic: overview
 ms.author: solsen
 ms.reviewer: solsen
@@ -67,6 +67,7 @@ The following table describes the settings in the `launch.json` file for publish
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
 |authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. To use Microsoft Entra authentication for on-premise servers, `primaryTenantDomain` setting must be entered. Learn more in [Using Microsoft Entra authentication for Business Central on-premises installations](devenv-aad-auth-onprem.md).|
+|useVsCodeAuthentication|No|Specifies whether authentication tokens are acquired through Visual Studio Code's built-in authentication instead of the extension's interactive or device code sign-in. Defaults to `true`. Set to `false` to use the legacy interactive or device code sign-in.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`), a Table type (`"Table"`), a Report type (`"Report"`) or a Query type (`"Query"`) object. The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page, Table, Report, and Query are currently supported.|
 |startupCompany|No|Specifies the name of the company to open after publishing. If `startupCompany` is specified, the settings `startupObjectId` and `startupObjectType` must also be defined.|

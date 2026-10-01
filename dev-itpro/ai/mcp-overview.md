@@ -4,11 +4,12 @@ description: Learn how to set up and use the Business Central MCP server to enab
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: concept-article
-ms.date: 05/03/2026
+ms.topic: overview
+ms.date: 09/23/2026
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
+ai-usage: ai-assisted
 ---
 
 # Model Context Protocol (MCP) in Business Central overview
@@ -19,23 +20,28 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open s
 
 ![Shows how MCP hosts connect to Business Central](../developer/media/mcp-client-server.svg)
 
-## Business Central MCP Server
+## Business Central MCP server
 
 An **MCP server** is a service that implements the Model Context Protocol, exposing an application's data and functionality to AI clients. When an AI client connects to an MCP server, it can read data, perform actions, and integrate that application's capabilities directly into conversational workflows—all through a standardized interface.
 
 The Business Central MCP server enables AI clients to interact with Business Central environments from various channels such as Visual Studio Code, Copilot Studio, and other MCP-compliant clients, allowing customers and employees to conversationally work with Business Central data and business logic.
 
-## What the MCP Server can do
+## What the MCP server can do
 
-By default, the Business Central MCP server provides read-only access to all exposed Business Central API pages. With no extra configuration, MCP hosts can read data from your Business Central environment. To enable write operations, administrators configure API page objects with specific permissions for create, modify, delete, and bound actions.
+The built-in default configuration exposes dynamic discovery tools for read-only API access. Agents can discover eligible Business Central API pages and API queries that the signed-in user has permission to use. Administrators can designate another active configuration as the default or enable more capabilities by activating Server Features on their MCP configurations:
+
+- **API Tools**: Admins choose which API pages and API queries that agents can access. Agents can then perform allowed read, create, modify, delete, and action operations on selected objects.
+- **Dynamic Tool Mode**: Agents discover available tools dynamically, so you don't need to manually configure each tool. This feature is useful when you have many API objects.
+- **Data Query Tools (Preview)**: Enables agents to run queries directly against your Business Central database.
 
 Once configured, these capabilities are exposed to agents as tools, which they can use to:
 
-- View and manage records – List, create, update, and delete entities such as customers, items, and sales orders
-- Execute business processes – Post documents, change statuses, and run business logic
-- Answer natural language queries – Provide conversational access to Business Central data
+- **View and manage records**: List, create, update, and delete entities such as customers, items, and sales orders.
+- **Execute business processes**: Post documents, change statuses, and run business logic through API page actions or API codeunit actions.
+- **Query data**: Run read-only queries directly against your database for advanced analysis.
+- **Answer natural language queries**: Provide conversational access to Business Central data.
 
-The capabilities available to agents depend on how the MCP server is configured and the permissions assigned to each API. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
+The capabilities available to agents depend on which Server Features you enable and how you configure permissions on each API. Learn more in [Configure Business Central MCP Server](configure-mcp-server.md).
 
 ## Supported MCP hosts
 
@@ -51,11 +57,25 @@ All MCP hosts connect to the same Business Central MCP server endpoint:
 
 `https://mcp.businesscentral.dynamics.com`
 
-You specify which Business Central environment to connect to using the following HTTP headers:
+Use the following HTTP headers to select the Microsoft Entra tenant, Business Central environment, company, and MCP server configuration:
 
 [!INCLUDE [mcp-server-headers](../developer/includes/mcp-server-headers.md)]
 
-MCP hosts authenticate with Business Central through a registered application in Microsoft Entra ID. Microsoft MCP hosts (Visual Studio Code and Copilot Studio) use a preregistered application, so no extra setup is required. Non-Microsoft clients require you to register your own application.
+Whether you can omit `TenantId`, `EnvironmentName`, or `Company` depends on the MCP host. `ConfigurationName` is always optional:
+
+| MCP host | `TenantId` | `EnvironmentName` | `Company` |
+|-----------|------------|-------------------|-----------|
+| Visual Studio Code with GitHub Copilot | Can be omitted | Can be omitted | Can be omitted |
+| GitHub Copilot CLI | Can be omitted | Can be omitted | Can be omitted |
+| Copilot Studio* | Required | Required | Required |
+| Other MCP hosts | Depends on host support | Depends on host support | Depends on host support |
+
+\* Copilot Studio will soon support headerless configuration.
+
+
+When omitted, the server determines the tenant from the signed-in identity. When included, `EnvironmentName` and `Company` pin those values for the connection. When a supported host omits either header, tool calls require the corresponding parameter. The server also exposes `list_environments` or `list_companies`, as applicable, so the agent can discover values available to the signed-in user.
+
+For implementation details, see [Configure Business Central MCP Server](configure-mcp-server.md). Microsoft MCP hosts (Visual Studio Code and Copilot Studio) use a preregistered application, so you don't need to set up anything extra. Non-Microsoft clients require you to register your own application.
 
 ### How authentication works
 
@@ -73,5 +93,5 @@ The Business Central MCP server acts as a bridge between MCP hosts and your Busi
 ## Related information
 
 - [Model Context Protocol specification](https://modelcontextprotocol.io)
-- [Business Central APIs](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)
-- [Troubleshooting MCP Server for AL](../developer/devenv-debug-mcp-server.md)
+- [Business Central API Reference](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)  
+- [Troubleshooting MCP Server for AL](../developer/devenv-debug-mcp-server.md)  

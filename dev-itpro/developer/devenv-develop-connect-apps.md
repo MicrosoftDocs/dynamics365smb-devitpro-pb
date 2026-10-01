@@ -13,6 +13,8 @@ ms.reviewer: solsen
 
 A Connect app creates a point-to-point connection between [!INCLUDE [prod_long](includes/prod_long.md)] and a partner solution or service. You typically use a standard REST API to interchange data. You can use any coding language that calls REST APIs to develop your Connect app. The following section explains how to get started exploring the available APIs for [!INCLUDE [prod_long](includes/prod_long.md)].
 
+[!INCLUDE[api-overview-note](../includes/api-overview-note.md)]
+
 [![Shows the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
 
 To explore and develop against REST APIs in [!INCLUDE [prod_long](includes/prod_long.md)], you must first sign up for a trial tenant, and then you must connect and authenticate. To do that, follow these steps:

@@ -1,8 +1,8 @@
 ---
 title: "AppSourceCop Hidden AS0073"
-description: "Obsolete Tag must be set."
+description: "Attribute tag must be set."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,18 +11,20 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Hidden AS0073
-Obsolete Tag must be set.
+Attribute tag must be set.
 
 ## Description
-Obsolete Tag must be set.
+Attribute tag must be set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-When an object, element, variable or procedure is marked as obsolete, you should also specify an obsolete tag. The obsolete tag can be used to provide information, such as the timeline of the deprecation, to developers that are referencing it. The obsolete tag appears in the message of the diagnostics AL0432 and AL0433 reported by the AL compiler when referencing obsolete elements.
+This rule validates that a tag is specified when using the [Obsolete](../attributes/devenv-obsolete-attribute.md) or [RequiredPending](../attributes/devenv-requiredpending-attribute.md) attribute, or when setting the [Obsolete State](../properties/devenv-obsoletestate-property.md) property. The tag provides tracking information such as the timeline of the deprecation or transition.
 
-The format of the Obsolete tag is not validated by the AL compiler. However, you can specify an expected format to be validated by the AppSourceCop. For more information, see [AS0076](appsourcecop-as0076.md).
+For `Obsolete`, the tag appears in the diagnostics AL0432 and AL0433 reported by the AL compiler. For `RequiredPending`, it appears in the AL0924 warning.
+
+The format of the tag is not validated by the AL compiler. However, you can specify an expected format to be validated by the AppSourceCop. Learn more in [AS0076](appsourcecop-as0076.md).
 
 ## Setting up AppSourceCop to validate the Obsolete Tag
 
@@ -58,6 +60,8 @@ When the property [Obsolete State](../properties/devenv-obsoletestate-property.m
 
 When the attribute [Obsolete](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute) is used, you need to specify the obsolete tag attribute parameter.
 
+When the attribute [RequiredPending](../attributes/devenv-requiredpending-attribute.md) is used, you need to specify the `Tag` parameter.
+
 
 ## Code examples triggering the rule
 
@@ -89,6 +93,19 @@ codeunit 50100 MyCodeunit
 }
 ```
 
+### Example 3 - Default interface method marked as RequiredPending without tag
+
+```AL
+interface IMyInterface
+{
+    [RequiredPending('This method will become required.')]
+    procedure MyMethod(): Text
+    begin
+        exit('default');
+    end;
+}
+```
+
 ## Code examples not triggering the rule
 
 ### Example 1 - Table marked as Obsolete Pending
@@ -116,6 +133,19 @@ codeunit 50100 MyCodeunit
     procedure MyProcedure()
     begin
         // Business logic.
+    end;
+}
+```
+
+### Example 3 - Default interface method marked as RequiredPending with tag
+
+```AL
+interface IMyInterface
+{
+    [RequiredPending('This method will become required. Add your implementation now.', '26.0')]
+    procedure MyMethod(): Text
+    begin
+        exit('default');
     end;
 }
 ```

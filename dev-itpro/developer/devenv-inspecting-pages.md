@@ -2,7 +2,7 @@
 title: Inspecting pages
 description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
-ms.date: 09/15/2023
+ms.date: 09/18/2026
 ms.topic: troubleshooting-general
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -116,11 +116,11 @@ Each field is shown with the following information:
 
 ### [Extensions](#tab/extensions)
 
-The **Extensions** tab displays installed extensions that affect the selected page or its source table.
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
 
-![Page Inspection Extensions Tab.](media/page-inspection-extensions.png)
+The **Extensions** tab displays installed extensions that add or extend the selected page or its source table.
 
-Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. Learn more in [App.json](devenv-json-files.md#appjson-file).
+The tab shows the ID, name, version, publisher, and type of each extension. Except for the type, these values are defined in the extension's `app.json` file. Page Inspection derives the type from the objects in the extension. Learn more in [App.json](devenv-json-files.md#appjson-file).
 
 The **ID**, which is sometimes referred to as AppID, is a 32-digit unique identifier, which is useful when identifying extensions and debugging issues.
 
@@ -137,15 +137,9 @@ There are four different extension types:
 - **Adds table** indicates that the extension adds the table object.
 - **Extends table** indicates that the extension modifies the source table, like adding a field or code. In AL, these modifications are specified by a table extension object.  
 
-#### Performance
+#### Analyze extension performance
 
-The performance information includes two values. The first value indicates the time (in milliseconds) it took to run the extension in the call stack. The second value indicates the number of event subscribers run in the extension.
-
-> [!TIP]
-> You can get more performance data for extensions by using Application Insights and viewing the AL method traces. Learn more in [Analyzing Long Running AL Methods Telemetry](../administration/telemetry-al-method-trace.md).
-
-> [!NOTE]
-> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the performance data appears only if **ALFunctionTimingEnabled** setting is enabled on the [!INCLUDE[server](includes/server.md)] instance. Learn more in [Configuring Business Central Server](../administration/configure-server-instance.md).
+Page Inspection doesn't show extension execution time or the number of event subscribers. To record and analyze a slow scenario in the web client, use the [Performance Profiler](../administration/performance-profiler-overview.md). Developers can use the [AL Profiler](devenv-al-profiler-overview.md) for detailed code-level analysis. To investigate long-running AL methods by using historical data, use [Application Insights telemetry](../administration/telemetry-al-method-trace.md).
 
 ### [Page Filters](#tab/pagefilters)
 

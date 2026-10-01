@@ -5,11 +5,12 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: article
-ms.date: 03/26/2026
+ms.date: 09/24/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
+ai-usage: ai-assisted
 ---
 
 # Optional features that are now mandatory
@@ -23,6 +24,37 @@ This article provides the following information about optional features, startin
 Some of the features or design improvements in major and minor updates are optional and aren't immediately enabled. You can learn about these features in the release plans and documentation and decide whether your administrator should turn them on. To learn more about optional features, go to [Enabling Upcoming Features Ahead of Time](feature-management.md).
 
 However, these features are only optional for a while. The period in which they're optional typically starts when the update they're made in becomes generally available. The period ends when the features become mandatory and are automatically enabled. The approximate date and service update when we expect to make each optional feature mandatory is shown in the **Automatically enabled from** field on the **Feature Management** page. After that date, the feature will no longer appear on the Feature Management page, and you can't turn it off. To learn more about the optional period, go to [Example timeline for an optional feature](feature-management.md#example-timeline-for-an-optional-feature).
+
+## 2026 release wave 2 (version 29)
+
+### Features mandatory in version 29
+
+These features are no longer controlled in **Feature Management**, so you can't disable them.
+
+- [Feature Update: 'Manual' flushing method without requiring pick](https://go.microsoft.com/fwlink/?linkid=2311787)
+- [Feature Update: Enable generation of per Activity Code VAT Settlements in Italy](https://go.microsoft.com/fwlink/?linkid=2104024). Applies to the Italy localization.
+- [Feature Update: Provides functionality for having default values for financial reports](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting)
+- [Feature Update: Use new communication texts for reminder terms](https://go.microsoft.com/fwlink/?linkid=2259668)
+- [Feature: Disable SOAP web services on Microsoft UI pages](https://go.microsoft.com/fwlink/?linkid=2312202)
+- [Feature: Introduce UI support for masking sensitive data.](https://go.microsoft.com/fwlink/?linkid=2333197)
+
+### New features added and disabled by default in version 29
+
+- [Feature Update: Accelerated Depreciation](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/enable-accelerated-depreciation-methods-fixed-assets)
+- [Feature: New Document Report Experience](/dynamics365/business-central/ui-manage-report-layouts)
+
+### Existing features now enabled by default
+
+- [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650). The mandatory version moved from version 29 to version 30.
+- [Feature: Preview semantic similarity search on application metadata.](https://go.microsoft.com/fwlink/?linkid=2312404). The mandatory version moved from version 29 to version 30.
+
+### Other feature key changes
+
+- [Feature Update: Auto-save with every field change](https://go.microsoft.com/fwlink/?linkid=2212032) moved from mandatory in version 29 to mandatory in version 30.
+- [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) moved from mandatory in version 29 to mandatory in version 31.
+- [Feature Update: Enable multiple users to post job ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) moved from mandatory in version 29 to mandatory in version 31.
+- [Feature Update: Enable multiple users to post resource ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) moved from mandatory in version 29 to mandatory in version 31.
+- [Feature: Use optimized text search in lists](https://go.microsoft.com/fwlink/?linkid=2280603) moved from mandatory in version 29 to mandatory in version 30.
 
 ## 2026 release wave 1 (version 28)
 

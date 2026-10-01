@@ -48,6 +48,8 @@ Then, you need to specify that the endpoint is for an API object (API page or AP
 
 After that, you need to specify the API route (also called API category). For partner-created APIs, the API route is constructed using the `APIPublisher`, `APIGroup`, and `APIVersion` that you specify in your API object in AL. Learn more at [aka.ms/BCCustomAPI](https://aka.ms/bccustomapi).
 
+[!INCLUDE[api-overview-note](../includes/api-overview-note.md)]
+
 Every [!INCLUDE[prod_short](../includes/prod_short.md)] environment comes with a standard set of commonly used APIs; for these, the API route is simply an `APIVersion` (namely `v2.0`), with no group or publisher. 
 
 API route For Microsoft Standard API, use this path:

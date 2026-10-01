@@ -1,10 +1,10 @@
 ---
-title: Analyze Agent Lifecycle Telemetry 
-description: Learn about the agent lifecycle telemetry in Business Central  
+title: Analyze Agent Lifecycle Telemetry
+description: Learn how to analyze Business Central agent lifecycle telemetry for agent creation, configuration changes, state changes, and task activity.
 author: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, agent, AI, copilot
-ms.date: 01/20/2025
+ms.date: 09/22/2026
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.custom: bap-template
@@ -26,6 +26,7 @@ Occurs when a new agent is created in Business Central.
 |Dimension|Description or value|
 |---------|-----|
 |message|**Agent created: {agentDisplayName}**|
+|severityLevel|**1** (Informational)|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -71,11 +72,16 @@ traces
 
 Occurs when an agent's configuration is modified in Business Central. This event includes information about which fields changed and their previous values.
 
+The `substatePreviousValue` dimension has the following availability:
+
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
 |message|**Agent configuration changed: {agentDisplayName}**|
+|severityLevel|**1** (Informational) when the configured model is available or in preview. The value is **2** (Warning) when the model is obsolete or retired.|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -100,6 +106,7 @@ Occurs when an agent's configuration is modified in Business Central. This event
 |agentUserNamePreviousValue|Specifies the agent's user name before the change. Empty when the user name did not change.|
 |agentDisplayNamePreviousValue|Specifies the agent's display name before the change. Empty when the display name did not change.|
 |statePreviousValue|Specifies the agent's state before the change. Empty when the state did not change.|
+|substatePreviousValue|Specifies the agent's substate before the change, such as the state before the agent was archived. Empty when the substate did not change.|
 |modelIdPreviousValue|Specifies the configured model ID before the change. Empty when the model did not change.|
 |instructionsHashPreviousValue|Specifies the SHA-256 hash of the agent's instructions before the change. Empty when the instructions did not change.|
 
@@ -119,6 +126,7 @@ traces
 , changedFields = customDimensions.changedFields
 , oldState = customDimensions.statePreviousValue
 , newState = customDimensions.state
+, oldSubstate = customDimensions.substatePreviousValue
 , oldModelId = customDimensions.modelIdPreviousValue
 , newModelId = customDimensions.modelId
 ```
@@ -151,6 +159,7 @@ Occurs when a new agent task is created in Business Central. Agent tasks represe
 |Dimension|Description or value|
 |---------|-----|
 |message|**Agent task created: {taskId}**|
+|severityLevel|**1** (Informational) when the selected model is available or in preview. The value is **2** (Warning) when the model is obsolete or retired.|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions

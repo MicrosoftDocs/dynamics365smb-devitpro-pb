@@ -4,7 +4,7 @@ description: This article provides the specifications of minimum hardware and so
 ms.custom: bap-template
 ms.service: dynamics-365-op
 ms.topic: overview
-ms.date: 03/11/2026
+ms.date: 08/25/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -55,8 +55,8 @@ The following table shows the minimum system requirements for the Business Centr
 
 |Specification|Requirement|  
 |------|-----|  
-|Excel|<ul><li>Sending data to Excel requires Excel 2021, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2021 or Excel on the web.</li></ul>|  
-|Word|<ul><li>Microsoft Office 2021, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
+|Excel|<ul><li>Sending data to Excel requires Excel 2024, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2024 or Excel on the web.</li></ul>|  
+|Word|<ul><li>Microsoft Office 2024, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
 |Outlook|Learn more in [Business Inbox in Microsoft Outlook](#BusInboxOutlook).|  
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
 
@@ -69,7 +69,7 @@ The following table shows the minimum system requirements for customizing or ext
 |Supported operating systems|[!INCLUDE[supported-windows-versions](../developer/includes/supported-windows-versions.md)]|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL Language extension for Microsoft Dynamics 365 Business Central](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: four cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
-|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 (version 16.11) with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2021 or later</li></ul></li></ul>|  
+|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 (version 16.11) with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2024 or later</li></ul></li></ul>|  
 
 Learn more in [Get Started with AL](../developer/devenv-get-started.md).
 
@@ -84,8 +84,8 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 |Supported operating systems|[!INCLUDE[supported-windows-versions](../developer/includes/supported-windows-versions.md)]|
 |Hardware resources|<ul><li>Hard disk space: 100 GB</li><li>Memory:<br /> 16 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, refer to [Microsoft Dynamics 365 for Sales Integration Requirements](#CRM).|  
-|Additional software|<ul><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET Windows Server Hosting 6.0.15</li><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Foundation*.</li><li>Report Builder for SQL Server 2019.<br><br> If Report Builder for SQL Server 2016 is already installed, it will be updated to Report Builder for SQL Server 2019.</li></ul></li></ul>|  
+|Additional software|<ul><li>Microsoft .NET 10.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li><li>Windows PowerShell 7.6 (required for [Business Central Administration Shell](../administration/administration-shell.md))</ul>|  
+|Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET Windows Server Hosting 6.0.15</li><li>Microsoft .NET 10.0</li><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Foundation*.</li><li>Report Builder for SQL Server 2019.If Report Builder for SQL Server 2016 is already installed, it updates to Report Builder for SQL Server 2019.</li><li>Windows PowerShell 7.6, unless another Windows PowerShell 7.x version is already installed.</li></ul>|  
 
 \* Starting with update 18.1, Windows Identity Foundation is added to the product by Nuget. It's not installed by Setup.  
 
@@ -97,8 +97,8 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 |----|----|  
 |Supported operating systems|[!INCLUDE[supported-windows-versions](../developer/includes/supported-windows-versions.md)]|
 |Web server|<ul><li>Internet Information Services 10.|
-|Additional software|<ul><li>Microsoft .NET 8.0</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Windows Server Hosting 6.0.15.</li><li>Microsoft .NET 8.0</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>Learn more about configuring IIS in [Configuring IIS](configure-iis.md)</li></ul>|  
+|Additional software|<ul><li>Microsoft .NET 10.0</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Windows Server Hosting 6.0.15.</li><li>Microsoft .NET 10.0</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>Learn more about configuring IIS in [Configuring IIS](configure-iis.md)</li></ul>|  
 
 ## <a name="SQLReq"></a>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components
 
@@ -130,7 +130,7 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 
 |Specification|Requirement|  
 |-----|-----|
-|Supported Outlook Applications |<ul><li>Outlook 2021</li><li>Outlook on the web</li></ul>|
+|Supported Outlook Applications |<ul><li>Outlook 2024</li><li>Outlook on the web</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2019<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
 |Supported Authentication|<ul><li>The [!INCLUDE[server](../developer/includes/server.md)] must be configured to authenticate users using Microsoft Entra ID (recommended) or  NavUserPassword.<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL). Learn more in [Configure Microsoft Entra authentication with OpenID Connect](../administration/authenticating-users-with-azure-ad-openid-connect.md) or [Authenticating users with NavUserPassword](../administration/authenticating-users-with-navuserpassword.md).</li></ul>|
 |Supported Browsers|<ul><li>When using Outlook on the web, your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] requirements.</li></ul>|

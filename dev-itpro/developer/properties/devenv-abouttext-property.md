@@ -35,6 +35,8 @@ Accepts a text value and supports a rich text value such as `**bold**` and `*ita
 
 ## Remarks
 
+For [API pages](../devenv-api-pagetype.md) and [API queries](../devenv-api-querytype.md) exposed as tools, the Business Central MCP server uses `AboutText` as the tool description. Specify a meaningful value to help MCP hosts, agents, and agent makers understand and select the appropriate tool.
+
 - When setting this property, you must also set the [AboutTitle property](devenv-abouttitle-property.md). Both About properties must be specified for the teaching tip to appear.
 - The property is ignored at runtime if the current client isn't the Web client.
 - When setting this property on page objects:  
@@ -47,7 +49,7 @@ Accepts a text value and supports a rich text value such as `**bold**` and `*ita
   - The control teaching tip isn't shown if the control has a `Visible` property that evaluates to `false`. 
   - The control teaching tip is displayed for field controls only if they represent repeater fields or fields in the content area of the page. It isn't displayed for other uses of field controls, such as cues. 
   - The control teaching tip is displayed for actions and action groups on the primary page and sub forms. It isn't displayed for other uses of actions, such as actions displayed in context menus, action tiles, actions displayed in the footer of a NavigatePage, RoleCenter navigation menus, or actions displayed in the menu for a record in a list.
-  - If the page object is a part that is embedded on the hosting page or in a FactBox, the control teaching tip becomes part of the tour on the hosting page. If the part is hosted on a Role Center, then the teaching tip isn't displayed. 
+  - If the page object is a part that is embedded on the hosting page or in a FactBox, the control teaching tip becomes part of the tour on the hosting page. If the part is hosted on a Role Center, then the teaching tip isn't displayed.
 
 [!INCLUDE[aboutTeachingTips](../includes/include-about-teaching-tips.md)]
 

@@ -5,13 +5,13 @@ author: jswymer
 ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, table keys, indexes, keys, indexes
-ms.date: 12/22/2023
+ms.date: 09/22/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ai-usage: ai-assisted
 ---
 
-# Analyze Table Index Trace Telemetry
+# Analyze table index trace telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 1, version 18.0 and later
 
@@ -105,6 +105,8 @@ Occurs when an index was removed from the base table by table extension object.
 
 ## <a name="LC0063"></a>Index enabled at runtime
 
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2026 release wave 1, version 28.0, and later
+
 Occurs when an index is enabled at runtime using the Index Management API.
 
 ### General dimensions
@@ -150,6 +152,8 @@ traces
 
 ## <a name="LC0064"></a>Index disabled at runtime
 
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2026 release wave 1, version 28.0, and later
+
 Occurs when an index is disabled at runtime using the Index Management API.
 
 ### General dimensions
@@ -193,22 +197,31 @@ traces
 
 ## <a name="LC0065"></a>Sync table column count exceeded
 
-Occurs when a table synchronization is attempted on a table that exceeds the maximum number of columns.
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2026 release wave 1, version 28.0, and later
+
+Occurs during extension synchronization when a table has more than the recommended limit of 256 SQL columns.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Sync table column count exceeded: {alObjectName}**|
-|severityLevel|**3** (Error)|
+|message|**Column count exceeded recommended limit for {alObjectType} '{alObjectName}'**|
+|severityLevel|**2** (Warning)|
 
 ### Custom dimensions
 
 | Dimension | Description or value |
 |--|--|
 | eventId | **LC0065** |
-| alObjectId | Specifies the ID of table that exceeded the column count limit. |
-| alObjectName | Specifies the name of table that exceeded the column count limit. |
+| alObjectId | Specifies the ID of the table or table extension that exceeded the recommended column limit. |
+| alObjectName | Specifies the name of the table or table extension that exceeded the recommended column limit. |
+| alObjectType | Specifies whether the AL object is a **Table** or **TableExtension**. |
+| columnLimit | Specifies the recommended maximum number of SQL columns. The value is **256**. |
+| extensionId | Specifies the ID of the extension being synchronized. |
+| extensionName | Specifies the name of the extension being synchronized. |
+| extensionPublisher | Specifies the publisher of the extension being synchronized. |
+| extensionVersion | Specifies the version of the extension being synchronized. |
+| totalColumnCount | Specifies the total number of columns in the SQL table. |
 | [See common custom dimensions](#other) |
 
 ### Sample KQL code
@@ -223,6 +236,11 @@ traces
 , environmentName = customDimensions.environmentName
 , alObjectId = customDimensions.alObjectId
 , alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+, extensionName = customDimensions.extensionName
+, extensionVersion = customDimensions.extensionVersion
+, totalColumnCount = toint(customDimensions.totalColumnCount)
+, columnLimit = toint(customDimensions.columnLimit)
 ```
 
 ## Related information

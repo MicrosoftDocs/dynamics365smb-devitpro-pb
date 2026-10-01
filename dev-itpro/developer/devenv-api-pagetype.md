@@ -2,7 +2,7 @@
 title: API page type
 description: Description of the API page type used for exposing web service endpoints.
 author: SusanneWindfeldPedersen
-ms.date: 03/14/2024
+ms.date: 09/21/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -40,6 +40,8 @@ If you only want your API to expose committed data, you can add an OnOpenPageTri
         Rec.ReadIsolation := IsolationLevel::ReadCommitted;
     end;
 ```
+
+[!INCLUDE[describe-api-for-mcp-tools](includes/describe-api-for-mcp-tools.md)]
 
 ## Example of the API page type
 
@@ -82,7 +84,7 @@ page 50120 MyCustomerApi
 
 ## Related information
 
-[API developer overview](devenv-api.md)
+[API developer overview](devenv-api.md)  
 [AL development environment](devenv-reference-overview.md)  
 [API query type](devenv-api-querytype.md)  
 [Walkthrough: developing a custom API](devenv-develop-custom-api.md)   

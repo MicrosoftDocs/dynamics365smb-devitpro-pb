@@ -1,8 +1,8 @@
 ---
 title: "RecordRef.IsDirty() Method"
-description: "Gets a boolean value that indicates whether the current in-memory instance of a record or filtered set of records has changed since being retrieved from the database."
+description: "Gets a boolean value that indicates whether the current in-memory record instance has different values than when it was loaded from the database."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 08/31/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # RecordRef.IsDirty() Method
 > **Version**: _Available or changed with runtime version 5.0._
 
-Gets a boolean value that indicates whether the current in-memory instance of a record or filtered set of records has changed since being retrieved from the database.
+Gets a boolean value that indicates whether the current in-memory record instance has different values than when it was loaded from the database.
 
 
 ## Syntax
@@ -30,7 +30,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ## Return Value
 *Dirty*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the a table or filtered set of records has changed; otherwise, **false**.
+**true** if the current in-memory record instance has different values than when it was loaded from the database; otherwise, **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

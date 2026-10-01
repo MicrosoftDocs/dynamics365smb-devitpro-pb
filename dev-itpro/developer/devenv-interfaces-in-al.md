@@ -1,8 +1,8 @@
 ---
 title: Interfaces in AL
-description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
+description: Learn about interfaces in AL, including default method implementations and the RequiredPending attribute for evolving interfaces safely.
 author: SusanneWindfeldPedersen
-ms.date: 06/26/2025
+ms.date: 08/25/2026
 ms.topic: article
 ms.author: solsen
 ms.collection: get-started
@@ -32,6 +32,47 @@ You can declare variables as a given interface to allow passing objects that imp
 
 Interfaces in AL can be extended to allow other changes to interfaces without changing the core functionality. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
 
+## Default interface methods
+
+[!INCLUDE [2026-releasewave2](../includes/2026-releasewave2.md)]
+
+Interface methods can include a default implementation (a body). Methods with a body are optional - implementing codeunits don't have to override them. Methods without a body remain required and must be implemented by every codeunit that uses the interface.
+
+Default interface methods let you add new functionality to a published interface without breaking existing implementors. Because the new method already has a body, existing codeunits continue to compile and use the default behavior until they choose to override it.
+
+When you use **Go to Implementations** on an overriding method in a codeunit, the results include the matching default interface method and explicit implementations in other codeunits.
+
+### Syntax
+
+```AL
+interface IMyInterface
+{
+    // Required method - all implementors must provide this
+    procedure RequiredMethod();
+
+    // Default method - implementors can override, but don't have to
+    procedure OptionalMethod(): Text
+    begin
+        exit('default value');
+    end;
+}
+```
+
+### Runtime identity
+
+The interface runtime identifier is computed from the required (non-default) methods only. Adding a default method to a published interface doesn't change the runtime identifier, which means dependent extensions don't need to be recompiled.
+
+### Transitioning default methods to required
+
+When you decide that a default method must be implemented by all consumers, you can't simply remove the body in the next version. That change would break existing implementations. Instead, follow the two-phase transition using the [RequiredPending attribute](attributes/devenv-requiredpending-attribute.md):
+
+1. **Phase 1**: Add `[RequiredPending]` to the default method. Implementors receive a compiler warning (AL0924) encouraging them to add their own implementation.
+2. **Phase 2**: In a later major version, remove the body and the `[RequiredPending]` attribute to make the method required. The AppSourceCop rule [AS0149](analyzers/appsourcecop-as0149.md) warns about the runtime ID change.
+
+Skipping Phase 1 and directly removing the body triggers [AS0148](analyzers/appsourcecop-as0148.md), which is an error.
+
+Learn more in [Interface method lifecycle](devenv-interface-method-lifecycle.md).
+
 ## Interface creation
 
 When creating interfaces, consider the following guidelines:
@@ -40,17 +81,19 @@ When creating interfaces, consider the following guidelines:
 - Keep interfaces focused and cohesive, with a few related methods.
 - Use versioning for interfaces to manage changes over time.
 - Document the expected behavior of each method in the interface.
-- Consider using default implementations for methods in interfaces to reduce boilerplate code.
+- Consider using [default implementations](#default-interface-method-implementations) for methods in interfaces to reduce boilerplate code.
 
 ## Some design guidelines
 
-- Avoid adding methods to published interfaces. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md) catches this.
+- Avoid adding required methods to published interfaces. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md) catches this condition.
+- Use default methods to add new functionality to published interfaces safely.
+- Use `[RequiredPending]` when a default method must eventually become required. Learn more in [RequiredPending attribute](attributes/devenv-requiredpending-attribute.md).
 - Design interfaces with extension in mind. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
 - Understand circular reference limitations. Analyzer rule [AL0852](diagnostics/diagnostic-al852.md) catches this.
 - Interfaces can only contain procedure declarations. The analyzer rules [AL0584](diagnostics/diagnostic-al584.md), [AL0585](diagnostics/diagnostic-al585.md), and [AL0612](diagnostics/diagnostic-al612.md) catch this.
 - Avoid naming conflicts with built-in procedures. Analyzer rule [AL0616](diagnostics/diagnostic-al616.md) catches this.
 - When implementing multiple interfaces avoid duplication. The analyzer rules [AL0587](diagnostics/diagnostic-AL587.md) and [AL0675](diagnostics/diagnostic-AL675.md) catch this.
-- A new method can't be added to an already published interface. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md) catches this.
+- Learn more about the full lifecycle of interface methods in [Interface method lifecycle](devenv-interface-method-lifecycle.md).
 
 ## Snippet support
 
@@ -258,11 +301,123 @@ codeunit 50103 ShapeListDemo
 
 In the System Application, you can find the complete examples of using a list of interfaces in the [Telemetry Logger](https://github.com/search?q=repo%3Amicrosoft%2FBCApps+%22List+of+%5BInterface%22&type=code).
 
+## Default interface method implementations
+
+> **APPLIES TO:** Business Central 2026 release wave 2 and later, runtime version 18.0+
+
+Interfaces can include method bodies that serve as *default implementations*. Codeunits that implement the interface can omit these methods to inherit the default behavior, or provide their own implementation to override it.
+
+Default methods let you evolve interfaces over time without breaking existing implementors. When you add a new method with a default body, all codeunits that already implement the interface continue to compile and run — they inherit the default behavior automatically.
+
+### Syntax
+
+Define a default method by adding a body to a method declaration inside the interface object:
+
+```al
+interface IPaymentMethod
+{
+    // Default implementation — implementors can omit or override
+    procedure GetTransactionFee(): Decimal
+    begin
+        exit(0);
+    end;
+
+    // Abstract — must be implemented
+    procedure ValidateAmount(Amount: Decimal): Boolean;
+}
+```
+
+### Implementing an interface with default methods
+
+When a codeunit implements an interface that has default methods, the codeunit can choose to:
+
+- **Inherit** the default by not declaring the method at all.
+- **Override** the default by declaring its own implementation.
+
+```al
+codeunit 50100 CashPayment implements IPaymentMethod
+{
+    // GetTransactionFee is inherited from the interface default
+
+    procedure ValidateAmount(Amount: Decimal): Boolean
+    begin
+        exit(Amount > 0);
+    end;
+}
+
+codeunit 50101 CreditCardPayment implements IPaymentMethod
+{
+    // Override the default
+    procedure GetTransactionFee(): Decimal
+    begin
+        exit(2.5);
+    end;
+
+    procedure ValidateAmount(Amount: Decimal): Boolean
+    begin
+        exit(Amount > 0);
+    end;
+}
+```
+
+### Dispatch behavior
+
+Default methods are dispatched through the interface variable, not through the implementing codeunit's public API. This means you must call the method on an `Interface` variable:
+
+```al
+procedure ShowFee()
+var
+    PaymentMethod: Interface IPaymentMethod;
+    Cash: Codeunit CashPayment;
+begin
+    PaymentMethod := Cash;
+    Message('Fee: %1', PaymentMethod.GetTransactionFee()); // Returns 0 (default)
+end;
+```
+
+Calling `GetTransactionFee()` directly on a `Codeunit CashPayment` variable won't work if the codeunit doesn't declare the method — use an `Interface IPaymentMethod` variable instead.
+
+## The RequiredPending attribute
+
+The `[RequiredPending]` attribute marks a default interface method as becoming required (abstract) in a future version. This attribute gives implementors advance notice to add their own implementation before the default body is removed.
+
+When applied, the compiler reports a warning for any codeunit that relies on the default implementation instead of providing its own.
+
+### Syntax
+
+```al
+interface IPaymentMethod
+{
+    [RequiredPending('Will become mandatory in v28.0', '28.0')]
+    procedure GetTransactionFee(): Decimal
+    begin
+        exit(0);
+    end;
+}
+```
+
+The attribute takes two parameters:
+
+- **Message** — A description shown in the compiler warning, explaining why and when the method becomes required.
+- **Version** — The version in which the method becomes required. This parameter is informational and doesn't trigger automatic enforcement.
+
+### Lifecycle for evolving interfaces
+
+The `[RequiredPending]` attribute supports a safe transition lifecycle for published interfaces:
+
+1. **Add method with default body** — Existing implementers continue to work without changes.
+2. **Mark as `[RequiredPending]`** — Implementers receive a compiler warning prompting them to add their own implementation.
+3. **Remove the default body** — The method becomes abstract (required). Implementers that didn't update now get a compiler error.
+
+The AppSourceCop rules [AS0148](analyzers/appsourcecop-as0148.md) and [AS0149](analyzers/appsourcecop-as0149.md) enforce this lifecycle.
+
 ## Related information
 
 [Codeunit object](devenv-codeunit-object.md)  
 [Extensible enums](devenv-extensible-enums.md)  
 [Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  
 [Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)  
+[Interface method lifecycle](devenv-interface-method-lifecycle.md)  
+[RequiredPending attribute](attributes/devenv-requiredpending-attribute.md)  
 [Dictionary data type](methods-auto/dictionary/dictionary-data-type.md)  
 [List data type](methods-auto/list/list-data-type.md)  

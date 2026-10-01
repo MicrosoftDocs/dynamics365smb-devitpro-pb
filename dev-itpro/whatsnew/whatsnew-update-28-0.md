@@ -89,7 +89,7 @@ This table lists new and updated features in update 28.0. Learn more about all f
 
 ## Changes to optional features in Feature Management
 
-This section outlines changes to feature and feature updates controlled by **Feature management** in version 28.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
+This section outlines changes to features and feature updates controlled by **Feature management** in version 29.0. Learn more in [Optional features that are now mandatory](../administration/feature-management-mandatory-features.md).
 
 ### Optional features now mandatory
 

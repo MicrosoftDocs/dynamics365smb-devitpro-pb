@@ -4,7 +4,7 @@ description: Configure Business Central Server instance settings for security, e
 author: jswymer
 ms.topic: concept-article
 ms.service: dynamics-365-op
-ms.date: 08/04/2026
+ms.date: 09/18/2026
 ms.author: jswymer
 ms.reviewer: solsen
 ms.custom:
@@ -452,7 +452,7 @@ Send telemetry, trace runtime behavior, and capture diagnostics for debugging an
 
 |Key Name|Description|
 |--------|-----------|
-|ALFunctionTimingEnabled|Specifies whether AL function timing is enabled. When enabled, data about AL extension performance is collected and can be viewed in Application Insights and page inspection. Learn more in [Analyzing Long Running AL Methods Telemetry](telemetry-al-method-trace.md) and [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).<br /><br />Default: Enabled <br />Dynamically updatable: Yes|
+|ALFunctionTimingEnabled|Specifies whether AL function timing is enabled. When enabled, you collect data about AL extension performance and view it in Application Insights. Learn more in [Analyzing Long Running AL Methods Telemetry](telemetry-al-method-trace.md).<br /><br />Default: Enabled <br />Dynamically updatable: Yes|
 |ALLongRunningFunctionTracingThresholdForApplicationInsights|Specifies the amount of time (in milliseconds) that an AL function can run before a warning event is recorded in the partner's Application Insights resource trace log. If you don't want a threshold, set the value to -1. <br /><br />To collect this telemetry data, the **Application Insights Instrumentation Key** setting must be configured. For information about analyzing this telemetry in [Analyzing Long Running AL Methods Telemetry](telemetry-al-method-trace.md).<br /><br />Default: -1<br />Dynamically updatable: Yes|
 |EnableFullALFunctionTracing|Specifies whether full AL function tracing is enabled on Event Tracing for Windows \(ETW\) sessions.<br /><br /> When this setting is enabled, all AL function calls and statements are traced.<br /><br /> When this setting is disabled, only root AL function calls are traced. Statements and functions that are called from a function aren't traced.<br /><br /> Learn more in [Monitoring Business Central Server Events](monitor-server-events.md) .<br /><br /> Default: Not enabled<br />Dynamically updatable: Yes|
 |SamplingProfilingEnabled|Specifies whether sampling profiling is enabled for performance analysis of AL code execution.<br /><br />Default: Not enabled<br />Dynamically updatable: Yes|

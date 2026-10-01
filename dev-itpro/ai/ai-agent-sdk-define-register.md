@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 08/28/2026
 ms.update-cycle: 180-days
 ---
 
@@ -312,10 +312,21 @@ begin
 end;
 ```
 
+## IAgentArchiving interface
+
+[!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
+
+The [`IAgentArchiving` interface](/dynamics365/business-central/application/system-application/interface/system.agents.iagentarchiving) defines how your agent type takes part in archiving. It currently contains the [`IsArchivingSupported`](/dynamics365/business-central/application/system-application/interface/system.agents.iagentarchiving#isarchivingsupported) method, which controls whether users can archive agents of your type.
+
+Archiving is supported by default: agent types that don't specify `IAgentArchiving` in the `Implementation` list use the default implementation, which returns `true`. If your agent type needs specific handling as part of archiving that isn't in place yet, you can opt out by implementing `IAgentArchiving` and returning `false` from `IsArchivingSupported`.
+
+When the method returns `false`, the **Archive** action fails with a message stating that the agent type doesn't support archiving.
+
 ## Related information
 
 [Coding agents in AL (preview)](ai-agent-sdk-overview.md)  
 [Agent setup and configuration (preview)](ai-agent-sdk-configuration.md)  
+[Understand agent visibility (preview)](ai-development-toolkit-agent-visibility.md#archived-agents)  
 [Managing agent tasks programmatically (preview)](ai-agent-sdk-tasks.md)  
 [Overview (preview)](ai-development-toolkit-landing-page.yml)  
 [Designing and coding agents (preview)](ai-development-toolkit-overview.md)   

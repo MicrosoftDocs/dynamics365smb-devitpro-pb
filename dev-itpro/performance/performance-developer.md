@@ -2,7 +2,7 @@
 title: Performance Articles for AL Developers
 description: Learn how to write efficient AL code, pages, reports, and web services, and use tools like the AL Profiler to improve performance in Business Central.
 ms.custom: bap-template
-ms.date: 09/11/2026
+ms.date: 09/18/2026
 ms.reviewer: jswymer
 ms.topic: article
 author: KennieNP
@@ -387,7 +387,7 @@ Learn more in the [Analyzing performance issues using telemetry](performance-wor
 The following articles can be of help in troubleshooting performance issues:
 
 - [Find missing SIFT indexes for FlowFields by disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
-- [Use Page Inspection to find extensions participating on a page](../developer/devenv-inspecting-pages.md)
+- [Use the Performance Profiler to analyze a slow scenario](../administration/performance-profiler-overview.md)
 - [Viewing table sizes](/dynamics365/business-central/admin-view-table-information)
 
 ## Tuning the development environment 
