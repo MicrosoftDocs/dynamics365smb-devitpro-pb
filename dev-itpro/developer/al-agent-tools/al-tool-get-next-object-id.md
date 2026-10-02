@@ -13,10 +13,7 @@ ai-usage: ai-assisted
 
 # Get next object ID - al_getnextobjectid
 
-[!INCLUDE [2026rw1-later-al-ext](../includes/2026rw1-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
-
-> [!NOTE]
-> Requires AL Language extension version 18.0 or later.
+[!INCLUDE [2026rw2-later-al-ext](../includes/2026rw2-later-al-ext.md)] | Available in: Visual Studio Code, AL MCP Server
 
 The `al_getnextobjectid` tool returns the next available AL object ID (or IDs) for a given object type in the current AL project. Call it immediately before scaffolding a new object - table, page, codeunit, report, query, XML port, enum, permission set, or one of the matching `*Extension` types - so the generated code uses an ID that doesn't collide with anything already declared in the project. This approach removes the need for an agent to read the `app.json` file and scan existing objects manually.
 
