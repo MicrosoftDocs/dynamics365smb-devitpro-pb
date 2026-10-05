@@ -1,18 +1,18 @@
 ---
-title: Array methods
-description: Methods of the type array in AL for Business Central.
-ms.date: 03/19/2024
+title: Array Data Type and Methods in AL
+description: Use arrays in AL for Business Central, including declaration syntax, dimensions, index ranges, size limits, supported element types, and array methods.
+ms.date: 10/05/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 
-# Array methods
+# Work with arrays in AL
 
 An array is a data structure that contains many variables, which are accessed through computed indices. An index is the location of the variable stored in an array. The variables contained in an array are also called the elements of the array. The array always stores elements of the same data type.
 
-An array has a rank that determines the number of indices that is how long it takes to reach an element. And if there are repeating elements, their rank is same as their first occurrence in the array. The rank of an array is also referred to as the dimension of the array. An array with a rank of one is called a single-dimensional array. An array with a rank greater than one is called a multi-dimensional array. Specific sized multi-dimensional arrays are often referred to as two-dimensional arrays, three-dimensional arrays, and so on. Each dimension of an array has an associated length, which is an integral number greater than or equal to zero. The maximum number of dimensions is 10 and the total number of elements in all dimensions is 1,000,000.
+The rank of an array is its number of dimensions. Accessing an individual element requires one index for each dimension. An array with a rank of one is called a single-dimensional array. An array with a rank greater than one is called a multidimensional array. Specific-sized multidimensional arrays are often referred to as two-dimensional arrays, three-dimensional arrays, and so on. Each dimension has a positive integer length. The maximum number of dimensions is 10, and the total number of elements in all dimensions is 1,000,000.
 
-The length of a dimension determines the valid range of indices for that dimension. For a dimension of length N, indices can range from **1 to N** inclusive. The total number of elements in an array is the product of the lengths of each dimension in the array. If one or more of the dimensions of an array have a length of zero, the array is considered to be empty.
+The length of a dimension determines the valid range of indices for that dimension. For a dimension of length `N`, valid indices range from `1` through `N`, inclusive. The total number of elements in an array is the product of the lengths of each dimension. AL doesn't support zero-length array dimensions.
 
 ## Syntax 
 
@@ -44,10 +44,10 @@ arrayOfText: array [10] of Text[20];
 The following code sample shows the declaration of an array with a complex element type.
 
 ```AL
-arrayOfCodeunits: array [10] of Codeunit 10;
-arrayOfQueryes: array [10] of Query "My Query";
-arrayOfTemporaryRecords: array [10] of Record 10 Temporary;
-arrayOfDotNetVariables: array [10] of DotNet String;
+arrayOfCodeunits: array [10] of Codeunit "Type Helper";
+arrayOfQueries: array [10] of Query "Sales Opportunities";
+arrayOfTemporaryRecords: array [10] of Record "Shipment Method" temporary;
+arrayOfJsonObjects: array [10] of JsonObject;
 ```
 
 ## Methods
@@ -66,7 +66,7 @@ The following code sample shows the declaration of an array of temporary Item re
 itemRecArrayTemp: array[2] of Record Item temporary;
 ```
 
-In this case, each element of the array contains a temporary Item record referencing the same temporary table, meaning that an insert into `itemRecArrayTemp[0]` is also reflected in `itemRecArrayTemp[1]`.
+In this case, each array element contains a temporary `Item` record that references the same temporary table. An insert into `itemRecArrayTemp[1]` is also reflected in `itemRecArrayTemp[2]`.
 
 This is the same behavior as using [Copy(RecordRef [, Boolean])](../methods-auto/recordref/recordref-copy-recordref-boolean-method.md) with the `ShareTable` parameter set to `true`.
 

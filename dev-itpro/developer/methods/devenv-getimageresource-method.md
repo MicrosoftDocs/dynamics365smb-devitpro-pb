@@ -1,26 +1,26 @@
 ---
-title: GetImageResource method
-description: Learn about the GetImageResource method in control add-ins for Business Central.
+title: GetImageResource Method for Control Add-ins
+description: Use the GetImageResource method in a Business Central control add-in to retrieve the URL of an image declared in the control add-in manifest.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 10/05/2026
 ms.topic: reference
 ---
 
-# GetImageResource ethod
+# Use GetImageResource in a control add-in
 
-Gets the URL for an image resource specified in the control add-in manifest. The image resource is stored in the database as part of the .zip file for the control add-in and is exposed to the control add-in script running on the Business Central client using the URL that this method returns. 
+Gets the URL for an image resource specified in the control add-in manifest. [!INCLUDE[prod_short](../includes/prod_short.md)] stores the resource in the database as part of the control add-in's `.zip` file. The method returns a URL that the control add-in script can use to retrieve the resource.
 
-For more information, see [Control add-in object](../devenv-control-addin-object.md). 
+Learn more about control add-ins in [Control add-in object](../devenv-control-addin-object.md).
   
 ## Method signature  
 
-`string Microsoft.Dynamics.NAV.GetImageResource(imageName)`  
+`string Microsoft.Dynamics.NAV.GetImageResource(resourceName)`
   
 ## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|imageName|Type: String<br /><br /> A string that contains the name of the image resource to get a URL for. The image name is the name that is used in the control add-in manifest to reference the image.|  
+|`resourceName`|Type: `String`<br /><br />The name of the image resource as declared in the control add-in manifest.|
   
 ## Return value  
 
@@ -29,13 +29,12 @@ Type: String
 Returns a URL for the specified image resource.  
   
 ## Example  
-  
+
+The following example assigns the returned URL to an image element with the ID `pushpinImage`.
+
 ```javascript
-var map = new VEMap('controlAddIn');  
-map.LoadMap(...);  
-var pushpin = map.AddPushpin(map.GetCenter());  
 var imageUrl = Microsoft.Dynamics.NAV.GetImageResource('PushpinImage.png');  
-pushpin.SetCustomIcon("<div><img src='" + imageUrl +"'/></div>");   
+document.getElementById('pushpinImage').src = imageUrl;
 ```  
 
 ## Related information
