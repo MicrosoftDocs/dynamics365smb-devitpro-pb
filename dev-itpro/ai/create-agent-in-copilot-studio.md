@@ -5,11 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 09/23/2026
-ms.custom: bap-template
-ms.collection:
-  - bap-ai-copilot
-ms.search.form: 8350, 8351
+ms.date: 10/02/2026
 ---
 # Create agents in Copilot Studio that connect to Business Central
 

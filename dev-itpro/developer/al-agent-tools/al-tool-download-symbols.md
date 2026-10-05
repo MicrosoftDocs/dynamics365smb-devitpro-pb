@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---
@@ -46,6 +46,7 @@ After a successful download, the workspace is automatically reloaded to refresh 
 | `serverInstance` | string | — | On-premises server instance name (for example, `"BC"`). Overrides `launch.json`. |
 | `port` | integer | — | Development service port. Overrides `launch.json`. |
 | `authentication` | string | `"AAD"` | Authentication method: `"AAD"`, `"Windows"`, or `"UserPassword"`. |
+| `enforceMinorVersion` | boolean | `false` | The tool first selects the exact requested version when it's available. If the exact version isn't available and this parameter is `true`, the tool selects the highest available version with the same major and minor version for non-platform packages. For platform symbol references, the tool ignores this parameter and falls back to the highest available version with the same major version. If the exact version isn't available and this parameter is `false`, the tool falls back to the highest available version with the same major version. |
 
 ## Symbols storage
 
@@ -115,4 +116,3 @@ This mode doesn't require a Business Central server connection. It downloads the
 
 [AI agent tools overview](al-agent-tools-overview.md)  
 [AL MCP Server reference](al-mcp-server.md)  
-

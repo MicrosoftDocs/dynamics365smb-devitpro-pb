@@ -4,7 +4,7 @@ description: Learn how to use Evaluation to test Copilot features and agents in 
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
@@ -33,7 +33,7 @@ This section goes over how to use Evaluation to set up a test suite, execute it,
 
 **Prerequisite**: 
 - You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](ai-test-copilot-datasets.md) and [Writing AI tests](ai-test-copilot-ai-tests.md).
-- You have the **AI TEST TOOLKIT** permission set assigned to your user.
+- You have the **AI Eval Toolkit** permission set assigned to your user.
 
 ### Step 1 - upload datasets
 

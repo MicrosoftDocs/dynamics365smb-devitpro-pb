@@ -5,7 +5,7 @@ author: qutreson
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 05/11/2026
+ms.date: 10/02/2026
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -197,7 +197,7 @@ A few things to call out:
 
 Some agents pause to ask the user for input before continuing. The framework validates these interventions for you based on what the dataset declares.
 
-**Declare an expected intervention** in `expected_data.intervention_request`. The `type` value must be one of `Assistance`, `Review`, or `Message` (the English names of the `Agent User Int Request Type` enum). `suggestions` is optional — when present, every code listed must appear in the agent's actual request.
+**Declare an expected intervention** in `expected_data.intervention_request`. The `type` value must be one of `Assistance`, `ReviewMessage`, `ReviewRecord`, `ResumeTask`, `Retry`, `Approval`, or `Permission` (the English names of the `Agent User Int Request Type` enum). `suggestions` is optional — when present, every code listed must appear in the agent's actual request.
 
 ```yaml
 turns:
@@ -355,7 +355,7 @@ end;
 - **`GetUserInterventionRequestDetails(LogEntry, ...)`** — Read the intervention request attached to a specific log entry.
 - **`CreateUserInterventionAndWait(var AgentTask, UserInput)`** — Reply with free-text input and wait.
 - **`CreateUserInterventionFromSuggestionAndWait(var AgentTask, SuggestionCode)`** — Reply with a suggestion code and wait.
-- **`ParseUserInterventionRequestType(Text)`** — Convert a dataset string (`Assistance`, `Review`, `Message`) to the corresponding `Agent User Int Request Type` enum value.
+- **`ParseUserInterventionRequestType(Text)`** — Convert a dataset string (`Assistance`, `ReviewMessage`, `ReviewRecord`, `ResumeTask`, `Retry`, `Approval`, `Permission`) to the corresponding `Agent User Int Request Type` enum value.
 
 Example: detect an intervention and respond.
 
