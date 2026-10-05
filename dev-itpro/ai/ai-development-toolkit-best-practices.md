@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ---
 
@@ -212,6 +212,6 @@ It's highly recommended to define and complete your testing plan in a sandbox en
 [Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
 [Run an agent (preview)](ai-development-toolkit-run-agent.md)  
 [Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
-[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
+[Frequently asked questions (preview)](ai-development-toolkit-faq.md)  
 [Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

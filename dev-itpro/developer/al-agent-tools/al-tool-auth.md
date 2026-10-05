@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---
@@ -40,7 +40,7 @@ The `al_auth_login` tool opens a browser window for interactive Microsoft Entra 
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `Success` | boolean | `true` if authentication completed successfully. |
+| `Succeeded` | boolean | `true` if authentication completed successfully. |
 | `AuthRequired` | boolean | `true` if user interaction in the browser is required (this is the expected state for an interactive sign in). |
 | `Message` | string | Status message describing the outcome. |
 

@@ -1,8 +1,8 @@
 ---
-title: Procedure overload
-description: Using the procedure overload to create multiple procedures with the same name, but with different signatures, on the same application object.
+title: Overload AL Procedures by Signature
+description: Learn how AL procedure overload resolution uses names, parameter counts, orders, types, and implicit conversions to select a procedure at compile time.
 author: SusanneWindfeldPedersen
-ms.date: 04/26/2024
+ms.date: 10/05/2026
 ms.update-cycle: 1095-days
 ms.topic: reference
 ms.author: solsen
@@ -10,25 +10,25 @@ ms.custom: evergreen
 ms.reviewer: solsen
 ---
 
-# Procedure overload
+# Define overloaded procedures in AL
  
-Procedure overload enables developers to create multiple procedures with the same name, but with different signatures, on the same application object. Conceptually, overloaded procedures are used to execute the same task on a different set of arguments. When an overloaded procedure is called, a specific implementation of that procedure, appropriate to the context of the call, will be run. 
+Procedure overloading lets you define multiple procedures with the same name and different signatures on the same application object. The procedures perform the same task for different arguments. At each call site, the compiler uses overload resolution to select the best applicable procedure.
 
 ## Reasons for using procedure overload
 
-Overloaded procedures give programmers the flexibility to call a procedure with similar semantics for different types of data. At the same time, overloaded procedures remove the need for abusing the [Variant data type](../methods-auto/variant/variant-data-type.md) for the purpose of processing different types of data in a similar manner and allows the developer to write strongly-typed code and rely on the compiler for validation. 
+Procedure overloads let you use the same procedure name for different data types. They also let you write strongly typed code and rely on compiler validation instead of using the [Variant data type](../methods-auto/variant/variant-data-type.md) to process different types.
 
-### Remarks 
-Overload resolution is performed by using procedure signatures to find the best match. The signature of a procedure is represented by its name and the type, order, and number of parameters. The return type of a procedure is not part of the procedure’s signature. 
+## How overload resolution works
+Overload resolution uses the procedure name and the number, order, and types of the arguments to find the best match. The return type isn't used to select an overload at a call site.
 
 
 ## Example
-The following example shows how a **ToString** method can be implemented with and without using procedure overloads.  
-In the first code snippet, a **ToString** procedure is implemented. This takes a Variant value and inspects the type of the value to delegate to different implementations. If the caller passes a value of a different type than Integer, Date, and Text, an empty string will be returned. This can lead to bugs that will only show up at runtime. 
+The following examples compare implementations of a `ToString` procedure with and without procedure overloads.
+The first code snippet implements `ToString` with a `Variant` parameter. The procedure checks the value's type and delegates to a type-specific implementation. If the caller passes a type other than `Integer`, `Date`, or `Text`, the procedure returns an empty string. This behavior can cause errors that appear only at runtime.
 
 
 ```AL
-codeunit 10 Stringifier 
+codeunit 50100 Stringifier
 { 
     local procedure TextToString(value : Text) : Text
     begin 
@@ -59,10 +59,10 @@ codeunit 10 Stringifier
 }
 ```
 
-In the second code snippet, we overload the ToString procedure for Text, Date and Integer. At this point, it is not possible for a caller to call a ToString method with a different type other than Integer, Date, or Text. This will catch the bug above at compile time. 
+The second code snippet overloads the `ToString` procedure for `Text`, `Date`, and `Integer`. The compiler accepts a call only when overload resolution identifies a single best applicable procedure, including any permitted implicit conversions. If no overload is applicable, the compiler reports an error instead of allowing an unsupported value to reach the procedure at runtime.
 
 ```AL
-codeunit 10 StringifierWithOverloads 
+codeunit 50101 StringifierWithOverloads
 { 
     procedure ToString(value : Text) : Text
     begin 

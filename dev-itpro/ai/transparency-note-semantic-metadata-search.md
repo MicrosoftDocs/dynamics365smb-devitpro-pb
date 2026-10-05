@@ -7,12 +7,12 @@ ms.reviewer: jswymer
 ms.topic: faq
 ms.collection:
   - bap-ai-copilot 
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
-# Transparency note: Semantic Metadata Search in Business Central 
+# Transparency note: Semantic Metadata Search in Business Central
 
 ## What is a Transparency Note?
 
@@ -79,5 +79,5 @@ Tested with over 12,000 cases covering synonyms, abbreviations, and semantic var
 
 ## Related information
 
-[Configure Business MCP server](configure-mcp-server.md)  
+[Configure Business Central MCP Server](configure-mcp-server.md)  
 [Create agents with Copilot Studio](create-agent-in-copilot-studio.md)  

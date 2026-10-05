@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---
@@ -35,7 +35,7 @@ Use this tool to understand what packages a project requires before downloading 
 | `Succeeded` | boolean | `true` if the operation completed successfully. |
 | `ModuleName` | string | The name of the queried project or module. |
 | `Dependencies` | array | List of dependency items (see below). |
-| `ErrorMessage` | string | Error description if `Succeeded` is `false`. |
+| `Message` | string | Error description if `Succeeded` is `false`. |
 
 Each item in `Dependencies` has:
 

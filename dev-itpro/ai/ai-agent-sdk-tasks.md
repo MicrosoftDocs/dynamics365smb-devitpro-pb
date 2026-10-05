@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ---
 
@@ -142,7 +142,8 @@ begin
     // Add a new message to the task
     AgentTaskMessageBuilder
         .Initialize(Sender, MessageText)
-        .AddToTask(AgentTaskRecord);
+        .SetAgentTask(AgentTaskRecord)
+        .Create();
     
     // Restart the task if it's completed or stopped
     if AgentTask.CanSetStatusToReady(AgentTaskRecord) then
