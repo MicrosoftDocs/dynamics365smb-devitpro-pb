@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
 ms.update-cycle: 180-days
-ms.date: 08/25/2026
+ms.date: 10/02/2026
 ms.collection: bap-ai-copilot
 ms.reviewer: solsen
 ---

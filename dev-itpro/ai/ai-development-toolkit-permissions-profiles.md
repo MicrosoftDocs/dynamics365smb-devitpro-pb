@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ---
 
@@ -109,7 +109,7 @@ Once you have built and published a profile, you can assign it to the agent in t
 [Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
 [Run an agent (preview)](ai-development-toolkit-run-agent.md)  
 [Iterate and manage (preview)](ai-development-toolkit-iterate.md)  
-[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
-[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Frequently asked questions (preview)](ai-development-toolkit-faq.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

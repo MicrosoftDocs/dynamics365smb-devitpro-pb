@@ -4,7 +4,7 @@ description: Learn how to create datasets for AI tests and agent tests in Busine
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 05/11/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ms.collection:
   - get-started
@@ -194,13 +194,13 @@ query:
 ```yaml
 expected_data:
   intervention_request:                # framework-recognized
-    type: Assistance                   # Assistance | Review | Message
+    type: Assistance                   # see valid values below
     suggestions:                       # optional list of codes that MUST be present
       - PROVIDE_DATE
   expected_released_count: 1           # application-defined; your validator reads this
 ```
 
-`type` is the English name of the `Agent User Int Request Type` enum. `suggestions` is optional — when present, every listed code must appear in the agent's actual intervention request.
+`type` is the English name of a value of the `Agent User Int Request Type` enum: `Assistance`, `ReviewMessage`, `ReviewRecord`, `ResumeTask`, `Retry`, `Approval`, or `Permission`. `suggestions` is optional — when present, every listed code must appear in the agent's actual intervention request.
 
 Declare `intervention_request` on every turn where you expect the agent to pause. The framework fails the turn if the agent pauses without an expected intervention, or fails to pause when one is expected.
 

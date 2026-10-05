@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.topic: how-to
 ms.collection:
   - bap-ai-copilot
-ms.date: 09/23/2026
+ms.date: 10/02/2026
 ms.custom: bap-template
 ---
 
@@ -164,7 +164,7 @@ Include `TenantId` unless your MCP host supports determining the tenant from the
 It's useful to record the application (client) ID of Microsoft Entra apps used for MCP host authentication. Users need this information to set up the connection from the MCP host to Business Central MCP server. Recording the information in Business Central is optional.
 
 1. Sign in to [Business Central](https://businesscentral.dynamics.com/).
-1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page.
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8350) page.
 1. Select **Advanced** > **Entra Applications**.
 
    The **Model Context Protocol (MCP) Server Entra Applications** page lists apps registered in Microsoft Entra for authenticating MCP host users.

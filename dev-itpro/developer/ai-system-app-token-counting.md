@@ -7,7 +7,7 @@ ms.topic: reference
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: jswymer
@@ -41,8 +41,8 @@ The AOAIToken codeunit has the following methods to support token counting:
 
 - [GetGPT35TokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getgpt35tokencount)  
 - [GetGPT4TokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getgpt4tokencount)  
-- [GetGPTAdaTokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getadatokencount)  
-- [GetGPTDavinciTokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getdavincitokencount)
+- [GetAdaTokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getadatokencount)  
+- [GetDavinciTokenCount(Input):Integer](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-token#getdavincitokencount)
 
 These methods are version agnostic. For example, `GetGPT4TokenCount` works for GPT4 0613, GPT4 0125, and all versions. 
 

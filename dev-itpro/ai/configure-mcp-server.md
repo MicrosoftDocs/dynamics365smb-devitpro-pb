@@ -2,7 +2,7 @@
 title: Configure Business Central MCP Server
 description: Learn how to configure the Business Central MCP server to enable AI agents to access and interact with your Business Central data and processes.
 ms.topic: how-to
-ms.date: 09/23/2026
+ms.date: 10/02/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -41,11 +41,11 @@ When you enable and configure the MCP server, agent makers can use the individua
 
 ## Prerequisites
 
-- You have at least the **MCP - ADMIN** permission set or equivalent permissions.
+- You have at least the **MCP - Admin** permission set or equivalent permissions.
 
 ## Create MCP server configurations
 
-1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8350) page in Business Central.
 1. Select **New**.
 1. Set these general fields:  
 
@@ -90,7 +90,7 @@ When you enable and configure the MCP server, agent makers can use the individua
 
 The built-in default configuration has a blank name and is used when the MCP connection doesn't specify `ConfigurationName`. You can designate a named active configuration as the default instead.
 
-1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8350) page in Business Central.
 1. Select the active configuration that you want to use by default.
 1. Select **Set as Default**.
 
@@ -165,7 +165,7 @@ The following data query tools are available:
 
 Use **Validate** before activating or sharing a configuration. Validation checks for common issues, such as API objects that no longer exist, missing parent API pages, and API page entries where **Allow Modify** is enabled but **Allow Read** is disabled.
 
-1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8350) page in Business Central.
 1. Open the configuration.
 1. Select **Validate**.
 1. If warnings appear, review **Warning Message** and **Recommended Action**.
@@ -232,7 +232,7 @@ You can export MCP server configurations as JSON files, which makes it easier to
 
 To export an existing MCP server configuration:
 
-1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8350) page in Business Central.
 1. Select the configuration you want to export from the list.
 1. On the **Model Context Protocol (MCP) Server Configuration** page, select **Advanced** > **Export**.
 
@@ -242,7 +242,7 @@ The configuration downloads as a JSON file to your device. You can edit this fil
 
 To import an MCP server configuration from a JSON file:
 
-1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8350) page in Business Central.
 1. Select **Advanced** > **Import**.
 1. Browse to and select the JSON configuration file you want to import.
 
@@ -254,7 +254,7 @@ Each MCP server configuration has a connection string, which is a JSON definitio
 
 To get your MCP server configuration connection string:
 
-1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8351) page in Business Central.
+1. Search for and open the [Model Context Protocol (MCP) Server Configurations](https://businesscentral.dynamics.com/?page=8350) page in Business Central.
 1. Open the configuration from the list.
 1. On the **Model Context Protocol (MCP) Server Configuration** page, select **Advanced** > **Connection String**.
 

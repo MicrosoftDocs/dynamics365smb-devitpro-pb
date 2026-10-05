@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ---
 
@@ -117,7 +117,7 @@ As you iterate on your agent's instructions, the system maintains a version hist
 To access instruction version history:
 
 1. Open the agent setup, for example from the **Agents (preview)** page.
-2. In the **Agent - Instructions** section, use the **Get earlier version** button to view and restore previous versions.
+2. In the **Instructions** section, use the **View instruction history** button to view and restore previous versions.
 3. Test the restored version to validate it meets your requirements.
 
 This capability is useful when:
@@ -138,7 +138,7 @@ This capability is useful when:
 [Attachment capabilities and limitations (preview)](ai-development-toolkit-attachments.md)  
 [Set up permissions and profiles (preview)](ai-development-toolkit-permissions-profiles.md)  
 [Run an agent (preview)](ai-development-toolkit-run-agent.md)  
-[Best practices for designing an agent (preview)](ai-development-toolkit-faq.md)  
-[Best practices (preview)](ai-development-toolkit-best-practices.md)  
+[Frequently asked questions (preview)](ai-development-toolkit-faq.md)  
+[Best practices for designing an agent (preview)](ai-development-toolkit-best-practices.md)  
 [Create a Sales Validation Agent (preview)](ai-development-toolkit-sales-validation.md)  
 [Transparency note: Business Central AI development toolkit (preview)](transparency-note-ai-development-toolkit.md)  

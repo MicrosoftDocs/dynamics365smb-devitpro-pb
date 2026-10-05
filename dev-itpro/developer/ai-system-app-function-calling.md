@@ -7,7 +7,7 @@ ms.topic: reference
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 05/03/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: jswymer
@@ -50,10 +50,9 @@ Learn more in [“AOAI Chat Messages” codeunit](/dynamics365/business-central/
 The “AOAI Chat Messages” codeunit has many methods, the following methods are some of them:
 
 - [AddTool](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#addtool)  
-- [ModifyTool](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#modifytool)  
-- [DeleteTool](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#deletetool)  
-- [GetTools](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#gettools)  
-- [ToolsExist](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#toolsexists)  
+- [DeleteFunctionTool](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#deletefunctiontool)  
+- [GetFunctionTools](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#getfunctiontools)  
+- [ToolsExists](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#toolsexists)  
 - [SetAddToolsToPayload](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#setaddtoolstopayload)  
 - [SetToolChoice](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#settoolchoice)  
 - [GetToolChoice](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages#gettoolchoice)  
