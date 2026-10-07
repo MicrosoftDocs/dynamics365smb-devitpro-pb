@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0493"
 description: "The RunObject property value of actions defined in the '{0}' area must only reference pages of type 'List'."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

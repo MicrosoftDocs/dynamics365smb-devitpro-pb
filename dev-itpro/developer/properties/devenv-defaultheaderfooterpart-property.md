@@ -2,7 +2,7 @@
 title: DefaultHeaderFooterPart Property for Reports
 description: Learn how the DefaultHeaderFooterPart property sets the header and footer part that the Body Word layouts of a report use in Business Central.
 ms.author: solsen
-ms.date: 09/01/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

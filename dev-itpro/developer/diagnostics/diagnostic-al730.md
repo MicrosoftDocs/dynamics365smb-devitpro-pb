@@ -2,7 +2,7 @@
 title: "Compiler Error AL0730"
 description: "The field '{0}' cannot be used in a sum index."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

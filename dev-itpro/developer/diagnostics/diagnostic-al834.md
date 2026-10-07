@@ -2,7 +2,7 @@
 title: "Compiler Error AL0834"
 description: "'MovedTo' property is required for a symbol of kind '{0}' {1} that has ObsoleteState set to Moved or PendingMove."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

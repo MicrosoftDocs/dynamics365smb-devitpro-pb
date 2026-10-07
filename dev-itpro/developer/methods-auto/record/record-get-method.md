@@ -2,7 +2,7 @@
 title: "Record.Get([Any,...]) Method"
 description: "Gets a record based on values stored in primary key fields."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

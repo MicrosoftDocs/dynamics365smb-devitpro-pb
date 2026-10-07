@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0915"
 description: "Table extension '{0}' adds {1} fields to table '{2}'."
 ms.author: solsen
-ms.date: 04/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "TestPart data type"
 description: "Represents a variable type that can be used to test Page Application Objects of type Part."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

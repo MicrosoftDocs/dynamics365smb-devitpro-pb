@@ -2,7 +2,7 @@
 title: "Record.TestField(Any) Method"
 description: "Tests that the content of the field is not zero or blank (empty string)."
 ms.author: solsen
-ms.date: 06/29/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

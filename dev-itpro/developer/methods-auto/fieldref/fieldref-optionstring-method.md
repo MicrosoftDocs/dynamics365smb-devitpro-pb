@@ -2,7 +2,7 @@
 title: "FieldRef.OptionString() Method"
 description: "The 'OptionString' property has been deprecated and will be removed in the future."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Warning AL1156"
 description: "Comments are not recommended inside the manifest file as they can cause interoperability issues with CI/CD pipelines or other integrations."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

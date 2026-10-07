@@ -1,7 +1,7 @@
 ---
 title: DataItemLink Property for Reports
 description: Learn how the DataItemLink property filters a child report data item by matching its fields with fields in an ancestor data item.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

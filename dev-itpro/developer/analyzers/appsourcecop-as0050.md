@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0050"
 description: "The extensibility of an application object cannot be removed."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

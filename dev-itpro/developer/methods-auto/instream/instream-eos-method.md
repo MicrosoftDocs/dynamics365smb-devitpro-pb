@@ -2,7 +2,7 @@
 title: "InStream.EOS() Method"
 description: "Indicates whether an input stream has reached End of Stream (EOS)."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

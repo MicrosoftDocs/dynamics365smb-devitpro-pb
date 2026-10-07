@@ -2,7 +2,7 @@
 title: "Compiler Error AL0856"
 description: "Statements cannot start with a parenthesis in runtime version '{0}'."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

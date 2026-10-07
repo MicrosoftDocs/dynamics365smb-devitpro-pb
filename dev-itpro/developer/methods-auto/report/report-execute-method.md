@@ -2,7 +2,7 @@
 title: "Report.Execute(Integer, Text [, RecordRef]) Method"
 description: "Runs a report in preview or processing-only mode without showing the request page in the client."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "File.Download(Text, Text, Text, Text, var Text) Method"
 description: "Sends a file from a server computer to the client computer."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

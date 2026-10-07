@@ -2,7 +2,7 @@
 title: "System.Evaluate(var Any, Text [, Integer]) Method"
 description: "Evaluates a string representation of a value into its typical representation."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

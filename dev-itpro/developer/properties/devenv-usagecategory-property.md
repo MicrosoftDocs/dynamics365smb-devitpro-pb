@@ -2,7 +2,7 @@
 title: "UsageCategory property"
 description: "Sets the department column for a searched page, report, or query in the web client."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

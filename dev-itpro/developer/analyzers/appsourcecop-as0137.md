@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0137"
 description: "The ID of fields that are part of the primary key cannot be changed as it may break referential integrity."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

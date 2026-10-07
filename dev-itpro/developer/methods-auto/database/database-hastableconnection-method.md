@@ -2,7 +2,7 @@
 title: "Database.HasTableConnection(TableConnectionType, Text) Method"
 description: "Verifies if a connection to an external database exists based on the specified name."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

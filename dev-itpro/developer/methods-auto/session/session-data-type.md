@@ -2,7 +2,7 @@
 title: "Session data type"
 description: "Represents a Microsoft Dynamics Business Central session."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

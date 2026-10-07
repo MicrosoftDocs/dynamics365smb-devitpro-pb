@@ -2,7 +2,7 @@
 title: "ErrorInfo.Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method"
 description: "Creates a new ErrorInfo object."
 ms.author: solsen
-ms.date: 08/24/2021
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -1,7 +1,7 @@
 ---
 title: OptionMembers Property for Table Fields
 description: Learn how the OptionMembers property defines the available values for an Option field in Dynamics 365 Business Central and see an example.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 ms.author: solsen
 ms.reviewer: solsen

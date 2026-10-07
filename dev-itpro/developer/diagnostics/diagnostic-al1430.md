@@ -2,7 +2,7 @@
 title: "Compiler Warning AL1430"
 description: "Sorting on field '{0}' of table '{1}' is not backed by a key and may perform poorly on large tables."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

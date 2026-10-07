@@ -2,7 +2,7 @@
 title: "Compiler Error AL0832"
 description: "Action area of type '{0}' is not valid in control '{1}' of type '{2}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "NavApp.GetResourceAsText(Text, Guid [, TextEncoding]) Method"
 description: "Retrieves the specified public resource from the given app as Text."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

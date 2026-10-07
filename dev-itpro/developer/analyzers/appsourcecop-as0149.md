@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0149"
 description: "Making a method required or removing an obsolete method from a published interface changes the interface's runtime identifier."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

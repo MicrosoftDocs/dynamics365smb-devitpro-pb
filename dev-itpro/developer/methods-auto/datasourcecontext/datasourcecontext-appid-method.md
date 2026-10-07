@@ -2,7 +2,7 @@
 title: "DataSourceContext.AppId() Method"
 description: "Gets the ID of the app in which the test function is defined."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

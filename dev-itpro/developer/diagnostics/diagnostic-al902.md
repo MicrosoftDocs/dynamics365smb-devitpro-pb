@@ -2,7 +2,7 @@
 title: "Compiler Error AL0902"
 description: "The value '{0}' for the property '{1}' in DefinitionFile '{2}' must match '{3}', given by the object containing the analysis view '{4}'."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

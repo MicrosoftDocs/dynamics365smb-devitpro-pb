@@ -2,7 +2,7 @@
 title: "TestType property"
 description: "Specifies the type of test implemented in the codeunit, such as unit test."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

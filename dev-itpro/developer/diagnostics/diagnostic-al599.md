@@ -2,7 +2,7 @@
 title: "Compiler Error AL0599"
 description: "A control add-in with the same internal name '{0}' is already defined."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

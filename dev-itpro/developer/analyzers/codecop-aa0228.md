@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0228"
 description: "The local method must be used, otherwise the method is not necessary."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

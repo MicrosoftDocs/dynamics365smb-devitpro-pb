@@ -2,7 +2,7 @@
 title: "Compiler Error AL0304"
 description: "Length of the identifier '{0}' cannot exceed {1} characters."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

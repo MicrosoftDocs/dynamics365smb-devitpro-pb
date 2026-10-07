@@ -2,7 +2,7 @@
 title: "Record.SetCurrentKey(Any [, Any,...]) Method"
 description: "Selects a key for a table."
 ms.author: solsen
-ms.date: 02/23/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

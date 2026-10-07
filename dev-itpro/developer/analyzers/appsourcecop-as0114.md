@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0114"
 description: "The name attribute parameter of an external business event cannot be changed because it might break external subscribers."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

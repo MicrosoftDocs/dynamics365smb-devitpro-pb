@@ -2,7 +2,7 @@
 title: "Record.TransferFields(var Record, Boolean, Boolean) Method"
 description: "Copies all matching fields in one record to another record."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0698"
 description: "Type {0} cannot be used in a 'case' statement."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

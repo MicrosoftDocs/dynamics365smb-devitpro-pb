@@ -2,7 +2,7 @@
 title: "CodeCop Info AA0471"
 description: "Page control fields of type 'Decimal' must have the property AutoFormatType specified."
 ms.author: solsen
-ms.date: 08/05/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

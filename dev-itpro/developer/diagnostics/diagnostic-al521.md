@@ -2,7 +2,7 @@
 title: "Compiler Error AL0521"
 description: "The primary key '{0}' on table '{1}' (the first one in the key list) must not have the Unique property set."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

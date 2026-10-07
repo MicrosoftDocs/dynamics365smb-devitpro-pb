@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0101"
 description: "Any change to the 'Isolated' argument is disallowed because it may break dependent extensions that have subscribed to the event."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

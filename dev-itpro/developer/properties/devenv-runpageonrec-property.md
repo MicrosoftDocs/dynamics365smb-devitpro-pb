@@ -2,7 +2,7 @@
 title: "RunPageOnRec property"
 description: "Sets the same record on the page you launch from this control as is already displayed on the current page."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

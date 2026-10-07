@@ -2,7 +2,7 @@
 title: "Compiler Error AL0336"
 description: "There must be exactly one root node and it has to be an element."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

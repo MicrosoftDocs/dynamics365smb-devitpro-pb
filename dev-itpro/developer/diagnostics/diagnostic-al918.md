@@ -2,7 +2,7 @@
 title: "Compiler Error AL0918"
 description: "Interface '{0}' has the same runtime ID as interface '{1}' from module '{2}'."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

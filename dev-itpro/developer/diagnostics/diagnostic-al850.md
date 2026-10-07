@@ -2,7 +2,7 @@
 title: "Compiler Error AL0850"
 description: "This feature is under development and is exclusively accessible to Microsoft."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

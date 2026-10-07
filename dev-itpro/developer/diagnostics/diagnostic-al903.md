@@ -2,7 +2,7 @@
 title: "Compiler Error AL0903"
 description: "The DefinitionFile '{0}' is already being used."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

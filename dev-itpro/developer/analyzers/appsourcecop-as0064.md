@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0064"
 description: "An interface implementation that has been published must not be deleted, because dependent extensions may break."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

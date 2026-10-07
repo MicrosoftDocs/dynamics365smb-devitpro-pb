@@ -2,7 +2,7 @@
 title: "Compiler Error AL0264"
 description: "An application object of type '{0}' with ID '{1}' is already declared by the extension '{2}'."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

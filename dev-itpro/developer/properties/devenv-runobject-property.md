@@ -2,7 +2,7 @@
 title: "RunObject property"
 description: "Sets the object you want to run immediately when the action is activated."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

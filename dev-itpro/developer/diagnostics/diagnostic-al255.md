@@ -2,7 +2,7 @@
 title: "Compiler Error AL0255"
 description: "Property '{0}' requires an application object reference for the 'RunObject' property."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

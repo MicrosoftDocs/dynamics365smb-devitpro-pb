@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0677"
 description: "The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

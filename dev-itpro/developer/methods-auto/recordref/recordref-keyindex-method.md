@@ -2,7 +2,7 @@
 title: "RecordRef.KeyIndex(Integer) Method"
 description: "Gets the KeyRef of the key that has the index specified in the table that is currently selected."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

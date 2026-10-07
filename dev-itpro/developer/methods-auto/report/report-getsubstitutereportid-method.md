@@ -2,7 +2,7 @@
 title: "Report.GetSubstituteReportId(Integer) Method"
 description: "Gets the ID of the report that will be run by the platform after considering any substitutions made by extensions."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

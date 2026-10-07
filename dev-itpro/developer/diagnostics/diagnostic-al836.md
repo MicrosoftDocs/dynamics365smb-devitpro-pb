@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0836"
 description: "The {0} '{1}' contains a reference to the field '{2}' which is defined in another object from the same app."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

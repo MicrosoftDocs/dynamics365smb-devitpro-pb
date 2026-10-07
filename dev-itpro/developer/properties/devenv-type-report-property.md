@@ -1,7 +1,7 @@
 ---
 title: Type Property for Report Layouts
 description: Learn how the Type property specifies the format of a report layout in Dynamics 365 Business Central and review the supported values.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

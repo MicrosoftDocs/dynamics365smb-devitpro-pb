@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0481"
 description: "The property Image can only be used on fields that are contained in a CueGroup control."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

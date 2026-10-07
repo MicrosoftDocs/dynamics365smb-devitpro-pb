@@ -2,7 +2,7 @@
 title: "NavApp.GetCurrentModuleInfo(var ModuleInfo) Method"
 description: "Gets information about the application that contains the AL object that is currently running."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

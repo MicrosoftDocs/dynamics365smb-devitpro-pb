@@ -2,7 +2,7 @@
 title: "Compiler Error AL1153"
 description: "The referenced module '{1}' with runtime reference version '{0}' cannot be loaded by the compiler with version '{2}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

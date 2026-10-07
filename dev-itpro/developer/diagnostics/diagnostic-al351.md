@@ -2,7 +2,7 @@
 title: "Compiler Error AL0351"
 description: "The property 'DataItemLink' can only reference fields on ancestor data items."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

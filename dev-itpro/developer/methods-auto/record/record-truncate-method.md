@@ -2,7 +2,7 @@
 title: "Record.Truncate([Boolean]) Method"
 description: "Deletes all records in a table that fall within a specified range, in an efficient maner."
 ms.author: solsen
-ms.date: 10/03/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

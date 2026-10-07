@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0128"
 description: "An interface must not be removed from the list of extended interfaces on an interface that has been published, because dependent extensions may break"
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

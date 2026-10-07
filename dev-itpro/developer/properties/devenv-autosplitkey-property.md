@@ -2,7 +2,7 @@
 title: "AutoSplitKey property"
 description: "Sets whether a key is automatically created for a new record placed between the current record and the previous record."
 ms.author: solsen
-ms.date: 03/24/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

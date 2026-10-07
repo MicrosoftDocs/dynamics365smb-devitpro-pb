@@ -2,7 +2,7 @@
 title: "TestField.AsTime() Method"
 description: "Converts the value in a field on a test page to a Time data type."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

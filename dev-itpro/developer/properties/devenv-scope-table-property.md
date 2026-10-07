@@ -1,7 +1,7 @@
 ---
 title: Scope Property for Table Objects
 description: Learn how the Scope property controls whether a table is available to cloud or on-premises extensions in Dynamics 365 Business Central.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

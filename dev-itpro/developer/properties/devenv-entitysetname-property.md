@@ -2,7 +2,7 @@
 title: "EntitySetName property"
 description: "Sets the plural entity name with which the page is exposed in the API endpoint."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

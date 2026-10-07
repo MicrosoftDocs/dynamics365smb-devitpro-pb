@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0700"
 description: "Dependency '{0}' must be referenced in the property '{1}' rather than as an explicit dependency."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

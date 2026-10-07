@@ -1,7 +1,7 @@
 ---
 title: Width Property for Table and Page Fields
 description: Learn how the Width property suggests a column width for table fields, page fields, and page labels in Dynamics 365 Business Central.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: jswymer
 ms.author: solsen

@@ -1,7 +1,7 @@
 ---
 title: DataItemLink Property Reference
 description: Learn where to use the DataItemLink property to link data items in reports and queries in Dynamics 365 Business Central.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

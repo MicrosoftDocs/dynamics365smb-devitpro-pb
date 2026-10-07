@@ -2,7 +2,7 @@
 title: "InStream data type"
 description: "Is a generic stream object that you can use to read from or write to files and BLOBs."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

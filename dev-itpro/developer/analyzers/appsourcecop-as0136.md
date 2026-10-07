@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0136"
 description: "The field must be pending for obsoletion so that its ID can change."
 ms.author: solsen
-ms.date: 02/26/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "XmlName property"
 description: "Sets a variable name for the table or the text that is the data source of the current element."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

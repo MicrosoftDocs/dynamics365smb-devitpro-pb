@@ -2,7 +2,7 @@
 title: "OnAfterValidateEvent (Table) trigger event"
 description: "Executed after a field is validated when its value has been changed."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

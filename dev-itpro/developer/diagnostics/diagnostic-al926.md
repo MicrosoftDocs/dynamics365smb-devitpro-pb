@@ -2,7 +2,7 @@
 title: "Compiler Error AL0926"
 description: "The '{0}' section is not valid here."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

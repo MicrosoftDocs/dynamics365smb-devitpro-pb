@@ -2,7 +2,7 @@
 title: "Compiler Error AL0372"
 description: "The length of the String constant exceeds the current memory limit."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0093"
 description: "Entitlements cannot be defined in an extension because their use is restricted to Microsoft only."
 ms.author: solsen
-ms.date: 07/04/2022
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Error AL1154"
 description: "It is not possible to specify both '{0}' and '{1}' at the same time."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

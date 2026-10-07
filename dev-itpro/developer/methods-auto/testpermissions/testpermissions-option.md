@@ -2,7 +2,7 @@
 title: "TestPermissions system option"
 description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0002"
 description: "There must be no space character between a unary operator and its argument."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

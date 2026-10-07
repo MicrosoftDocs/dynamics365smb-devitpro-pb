@@ -2,7 +2,7 @@
 title: "TestHttpRequestMessage.Path() Method"
 description: "Gets the path of the HTTP request unless a secret URI was set, in which case it's an empty string."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "FormatRegion property"
 description: "Sets the format region that will be used when formatting numbers and date/time values."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0578"
 description: "The value for the property '{0}' is not valid because its length exceeds {1} characters ({2} characters)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

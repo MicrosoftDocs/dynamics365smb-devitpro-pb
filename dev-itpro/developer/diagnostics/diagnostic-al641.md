@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0641"
 description: "Parameter '{0}' has no matching param tag in the XML comment for '{1}' (but other parameters do)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

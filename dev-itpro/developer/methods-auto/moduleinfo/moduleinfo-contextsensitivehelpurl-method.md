@@ -2,7 +2,7 @@
 title: "ModuleInfo.ContextSensitiveHelpUrl() Method"
 description: "Gets the context sensitive help URL with the user's locale resolved from the application's supported locales."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

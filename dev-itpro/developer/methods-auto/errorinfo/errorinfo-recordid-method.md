@@ -2,7 +2,7 @@
 title: "ErrorInfo.RecordId([RecordId]) Method"
 description: "Specifies the record ID of the record that the error relates to."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Permissions property"
 description: "Sets permissions required to perform operations on one or more objects."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

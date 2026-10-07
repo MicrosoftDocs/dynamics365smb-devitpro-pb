@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0135"
 description: "One-step removal of the external business event is not allowed as it can introduce breaking changes for external subscribers."
 ms.author: solsen
-ms.date: 06/19/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "JsonObject.GetObject(Text [, Boolean]) Method"
 description: "Retrieves the value of a property with a given key from a JsonObject as a JsonObject."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

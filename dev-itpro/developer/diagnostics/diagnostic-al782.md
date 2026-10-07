@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0782"
 description: "A page extension is only allowed to access control add-ins defined within its own extension scope."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

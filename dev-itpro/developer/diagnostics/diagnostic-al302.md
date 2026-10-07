@@ -2,7 +2,7 @@
 title: "Compiler Error AL0302"
 description: "Cannot use '{0}' in {1} '{2}' before it is declared."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

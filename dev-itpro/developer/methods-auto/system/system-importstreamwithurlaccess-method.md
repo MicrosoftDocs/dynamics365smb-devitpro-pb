@@ -2,7 +2,7 @@
 title: "System.ImportStreamWithUrlAccess(InStream, Text [, Integer]) Method"
 description: "Imports an object into a media container to be used in a temporary URL with a default expiration time."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

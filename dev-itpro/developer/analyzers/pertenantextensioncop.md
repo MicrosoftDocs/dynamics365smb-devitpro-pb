@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop analyzer"
 description: "PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants."
 ms.author: solsen
-ms.date: 09/02/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

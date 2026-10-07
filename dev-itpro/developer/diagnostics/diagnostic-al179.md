@@ -2,7 +2,7 @@
 title: "Compiler Error AL0179"
 description: "An identifier or a member access expression is expected (e.g., 'FieldName' or 'Record.FieldName')."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

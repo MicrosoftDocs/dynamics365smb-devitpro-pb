@@ -2,7 +2,7 @@
 title: "Xmlport.Import(Integer, var InStream [, var Record]) Method"
 description: "Reads and parses an incoming XML data stream (XML document)."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

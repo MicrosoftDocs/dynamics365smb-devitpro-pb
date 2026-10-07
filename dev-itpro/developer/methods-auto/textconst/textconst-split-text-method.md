@@ -2,7 +2,7 @@
 title: "TextConst.Split([Text,...]) Method"
 description: "Splits a string into a maximum number of substrings based on a collection of separators."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

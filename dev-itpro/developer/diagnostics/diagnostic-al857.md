@@ -2,7 +2,7 @@
 title: "Compiler Error AL0857"
 description: "The size of resource file '{0}' exceeds the maximum allowed size limit of '{1}' MB."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

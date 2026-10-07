@@ -2,7 +2,7 @@
 title: "Compiler Error AL0686"
 description: "The base type already defines a method called '{0}' with the same parameter types."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

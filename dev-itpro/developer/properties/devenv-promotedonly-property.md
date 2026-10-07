@@ -2,7 +2,7 @@
 title: "PromotedOnly property"
 description: "Specifies whether the selected action is promoted only, which means that it will appear only on the Home tab in the ribbon and not on the tab (ActionContainer control) where it is defined."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

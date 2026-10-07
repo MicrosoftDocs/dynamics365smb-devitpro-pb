@@ -2,7 +2,7 @@
 title: "Compiler Designer customization information AL1414"
 description: "The page customization for page '{0}' does not make any modifications, so it can be removed without affecting any profiles or user personalization."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

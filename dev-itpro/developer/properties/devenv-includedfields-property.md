@@ -2,7 +2,7 @@
 title: "IncludedFields property"
 description: "Sets the fields that are included as non-key columns in the index on SQL Server."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

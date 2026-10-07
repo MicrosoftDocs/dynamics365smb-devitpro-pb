@@ -2,7 +2,7 @@
 title: "XmlNamespaceManager data type"
 description: "Represents a namespace manager that can be used to resolve, add and remove namespaces to a collection."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

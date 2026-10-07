@@ -2,7 +2,7 @@
 title: "ReportHandler attribute"
 description: "Specifies that the method is a ReportHandler method, which handles specific reports."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

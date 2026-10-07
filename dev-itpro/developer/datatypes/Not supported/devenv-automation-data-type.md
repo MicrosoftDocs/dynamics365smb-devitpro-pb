@@ -1,6 +1,6 @@
 ---
 title: Automation data type
-ms.date: 03/19/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

@@ -1,7 +1,7 @@
 ---
 title: DataItemLink Property for Queries
 description: Learn how the DataItemLink property joins query data items by matching fields in their source tables in Dynamics 365 Business Central.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: jswymer
 ms.reviewer: solsen

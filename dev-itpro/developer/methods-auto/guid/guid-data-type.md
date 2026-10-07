@@ -2,7 +2,7 @@
 title: "Guid data type"
 description: "Represents a 16 byte binary data type."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

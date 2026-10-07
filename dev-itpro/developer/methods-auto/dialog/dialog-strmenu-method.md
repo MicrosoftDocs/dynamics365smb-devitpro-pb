@@ -2,7 +2,7 @@
 title: "Dialog.StrMenu(Text [, Integer] [, Text]) Method"
 description: "Creates a menu window that displays a series of options."
 ms.author: solsen
-ms.date: 12/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

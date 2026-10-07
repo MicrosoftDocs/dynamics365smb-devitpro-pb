@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop Warning PTE0020"
 description: "The 'application' property should be used for expressing a dependency on the 'Base Application'."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

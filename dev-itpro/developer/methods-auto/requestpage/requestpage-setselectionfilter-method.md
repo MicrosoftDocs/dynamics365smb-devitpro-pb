@@ -2,7 +2,7 @@
 title: "RequestPage.SetSelectionFilter(var Record) Method"
 description: "Notes the records that the user has selected on the request page, marks those records in the table specified, and sets the filter to marked only."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

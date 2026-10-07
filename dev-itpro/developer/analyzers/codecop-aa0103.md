@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0103"
 description: "For queries of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName value should be camel-cased to follow the Microsoft REST API Guidelines."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

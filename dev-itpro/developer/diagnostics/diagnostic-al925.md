@@ -2,7 +2,7 @@
 title: "Compiler Information AL0925"
 description: "Interface '{0}' provides a default implementation for method '{1}'."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

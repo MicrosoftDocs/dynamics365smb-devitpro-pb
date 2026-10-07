@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0136"
 description: "Do not write code that will never be hit."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: HeaderFooterPart Property for Report Layouts
 description: Learn how the HeaderFooterPart property sets the header and footer part that a Body Word report layout uses when Business Central renders the report.
 ms.author: solsen
-ms.date: 09/01/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
