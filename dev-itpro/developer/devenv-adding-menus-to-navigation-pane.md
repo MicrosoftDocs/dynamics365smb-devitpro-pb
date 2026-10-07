@@ -1,22 +1,19 @@
 ---
-title: Adding Menus to the Navigation Area
-description: "Enable users to quickly navigate and perform actions by adding the menu items to the navigation area."
+title: Add Menus to Role Center Navigation
+description: Learn how to add pages, reports, and actions to Role Center navigation menus, navigation bars, and action areas in Business Central.
 author: jswymer
-ms.date: 08/08/2022
+ms.date: 10/06/2026
 ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Adding Menus to the Navigation and Actions Area
+# Add menus to navigation and action areas
 
-The navigation area appears at the top of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] window, and contains multiple sections that enable users to quickly navigate and perform actions in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. In the client, the navigation area is separated into three separate areas: navigation menu, navigation area, and actions area. For an illustration that identifies the different areas in a Role Center, see [Designing Role Centers](devenv-designing-role-centers.md). In AL, these areas are defined by the `area()` control, as described in the sections that follow.
+The navigation area appears at the top of a Role Center and contains sections that help users go to pages and perform actions in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. The client separates it into the navigation menu, navigation bar, and actions area. Learn more about the layout in [Designing Role Centers](devenv-designing-role-centers.md). In AL, the `area()` control defines these areas.
 
 ## Adding to the navigation menu
 
-The top-level navigation area is referred to as the navigation menu. The navigation menu contains one or more root menu items that expand to display links to other pages. The links can be grouped into submenus, enabling you to create a logical hierarchy. These links are defined by `action()` controls. You can also group `action()` controls in submenus. This enables you to create a logical hierarchy that matches the needs of the user role. The pages targeted by the links in the navigation menu will open in the content area of the Role Center.
-
-> [!NOTE]
-> The submenu items can include page extensions and other objects like reports, XMLPorts, and codeunits. The [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] doesn't support submenus in the navigation menu.
+The top-level navigation area is the navigation menu. It contains one or more root menu items that expand to show links to other pages. You define the links with `action()` controls and can group them into submenus that match the needs of the user role. Target pages open in the content area of the Role Center.
 
 You define the navigation menu by using an `area(Sections)` control in the page code.
 
@@ -24,9 +21,9 @@ You define the navigation menu by using an `area(Sections)` control in the page 
 The top-level navigation should provide access to relevant entity lists for the role's areas of business. For example, typical root items for a business manager could be finance, sales, and purchasing. You should place the root items in order of importance, starting from the left.The actions in this area are defined by a `area(Sections)` keyword. plays the Home menu items by default; the other menu items can be accessed by clicking on the small drop-down arrow placed next to the *selected* menu category in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For users, the menu groups that display in the navigation area could change depending on the Role Center page that they access. 
 -->
 
-## Example
+### Example
 
-The example below adds the root menu item called `My Customers` to the navigation menu of the **Sales Order Processor** Role Center. The `My Customers` menu item  contains two actions, the `Customer Bank Account List` and `Customer Ledger Entries` actions, which open corresponding page objects. The `My Customers` menu item also includes a group that contains two other actions, which open sales-related documents.
+The following example adds the **My Customers** root item to the navigation menu of the **Sales Order Processor** Role Center. **My Customers** contains the **Customer Bank Account List** and **Customer Ledger Entries** actions, which open the corresponding pages. It also contains a group with two actions that open sales documents.
 
 ```AL
 pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
@@ -57,10 +54,10 @@ pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
                         ApplicationArea = All;
                         RunObject = page "Sales Document Entity";
                     }
-                    action("Sales Document Line Entity")
+                    action("Posted Sales Invoices")
                     {
                         ApplicationArea = All;
-                        RunObject = page "Sales Document Line Entity";
+                        RunObject = page "Posted Sales Invoices";
                     }
                 }
             }
@@ -69,16 +66,16 @@ pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
 }
 ```
 
-You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Add pages and reports to Tell me](devenv-al-menusuite-functionality.md).
+You can also make pages and reports available in search. Learn more in [Add pages and reports to Tell Me](devenv-al-menusuite-functionality.md).
 
 ## Adding to the navigation bar
 
-The second-level navigation is referred to as the navigation bar. The navigation bar offers a flat list of links to other pages. These should be the most relevant pages needed for a user's business process. We recommend having only the most important items on this level and to place the others in the top-level navigation instead. 
+The second-level navigation is referred to as the navigation bar. The navigation bar offers a flat list of links to other pages. Navigation-bar links should open the pages most relevant to the user's business process. Place only the most important links at this level and place the other links in the top-level navigation.
 
 You define the navigation bar by using an `area(Embedding)` control in the page code.
 
 ### Example
-The following code adds a new link to the navigation bar by defining this area with an `area(Embedding)` control in the page code. The object targeted in this case is the `Sales Cycles` page and it will appear as the last one. 
+The following example uses an `area(Embedding)` control to add the **Sales Cycles** page as the last link in the navigation bar.
 
 ```AL
 ...
@@ -94,11 +91,11 @@ addlast(Embedding)
 
 ## Adding to actions
 
-The actions area displays the most important or most often used tasks and operations required by users. It contains links to pages, reports, and codeunits. The links are placed on the root-level, and they can be grouped in a submenu.
+The actions area displays the tasks and operations that users need most often. It contains links to pages, reports, and codeunits. You can place links at the root level or group them in a submenu.
 
 You can define the actions by using three different `area()` controls.
 
-The first action area that appears at the top of the Role Center page is `area(Creation)`. The following example adds the item last, and it allows opening the `Sales Journal` page.
+The first action area at the top of the Role Center page is `area(Creation)`. The following example adds an action that opens the **Sales Journal** page.
 
 ### Example
 
@@ -114,8 +111,8 @@ addlast(Creation)
 }
 ```
 
-The actions in the `area(Processing)` control appears after the `area(Creation)` items. 
-The example below shows how you can use the group control to organize similar actions under a common parent. The created group is placed at the end of this action area, and it targets pages needed for processing sales documents. 
+The actions in the `area(Processing)` control appear after the `area(Creation)` items.
+The following example uses a group control to organize similar actions under a common parent. The group appears at the end of the action area and opens pages for processing sales documents.
 
 ### Example
 
@@ -130,17 +127,17 @@ addlast(Processing)
             ApplicationArea = All;
             RunObject = page "Sales Document Entity";
         }
-        action("Sales Document Line Entity")
+        action("Posted Sales Invoices")
         {
             ApplicationArea = All;
-            RunObject = page "Sales Document Line Entity";
+            RunObject = page "Posted Sales Invoices";
         }
     }
 }
 ```
 
 
-The actions in the `area(Reporting)` control will appear last in the action area and they display with a default report icon. This control's purpose is to target report objects and the following example opens the `Customer Sales Statistics` report. 
+Actions in the `area(Reporting)` control appear last in the action area and use the default report icon. This area targets report objects. The following example opens the `Customer/Item Sales` report.
 
 ### Example
 
@@ -151,7 +148,7 @@ addlast(Reporting)
     action("Customer Statistics")
     {
         ApplicationArea = All;
-        RunObject = report "Customer Sales Statistics";
+        RunObject = report "Customer/Item Sales";
     }
 }
 ```
@@ -161,4 +158,4 @@ addlast(Reporting)
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell Me](devenv-al-menusuite-functionality.md)

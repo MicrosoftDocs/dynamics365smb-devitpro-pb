@@ -4,6 +4,7 @@ description: The AL Explorer for Business Central lets you explore and navigate 
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.date: 09/18/2024
 ms.collection: get-started

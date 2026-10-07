@@ -1,22 +1,22 @@
 ---
-title: Adding help links from pages, reports, and XMLports
-description: This article shows how to specify the Help link on pages, reports and XMLports in AL for Business Central.
+title: Context-Sensitive Help Links for AL Objects
+description: Learn how to use the ContextSensitiveHelpPage property in AL to connect pages, queries, and request pages to context-sensitive Help.
 author: SusanneWindfeldPedersen
-ms.date: 05/23/2022
+ms.date: 10/06/2026
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.author: solsen
 ---
 
-# Adding help links from pages, reports, and XMLports
+# Add context-sensitive Help links to AL objects
 
-When creating new pages, you can specify which Help file to open if the user selects the *Learn more* links in the UI of [!INCLUDE[prod_short](includes/prod_short.md)].  
+When you create pages, queries, or request pages for reports and XMLports, you can specify which Help file opens when the user selects a **Learn more** link in the [!INCLUDE[prod_short](includes/prod_short.md)] interface.
 
-The context-sensitive Help link is generated based on a configuration setting in the `app.json` file and the name of the relevant Help file that you specify as part of the metadata for the page object. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+The context-sensitive Help link combines a configuration setting in the `app.json` file with the name of the relevant Help file that you specify in the object metadata. Learn more about the configuration in [Configure context-sensitive Help](../help/context-sensitive-help.md).
 
-## Examples
+## Add context-sensitive Help links
 
-The following examples show how you can specify the *ContextSensitiveHelpPage* property from new pages, reports, and XMLports:
+The following examples show how you can specify the `ContextSensitiveHelpPage` property on a page and on request pages for reports and XMLports:
 
 ```AL
 page 50100 MyPageWithHelp
@@ -45,7 +45,7 @@ xmlport 50100 XmlPortWithHelp
 }
 ```
 
-In all three examples, the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) is set to point at the same Help file. This is because all three example objects support the same feature that is explained in the *sales-rewards* Help article. In your app, you can choose to structure the Help differently.  
+All three examples set the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) to the same Help file because the objects support the feature described in the `sales-rewards` Help article. You can structure Help differently in your app.
 
 ## Related information
 
@@ -55,5 +55,5 @@ In all three examples, the [ContextSensitiveHelpPage property](properties/devenv
 [Page Object](devenv-page-object.md)  
 [Report Object](devenv-report-object.md)  
 [XMLport Object](devenv-xmlport-object.md)  
-[Table Object](devenv-table-object.md)  
+[Query object](devenv-query-object.md)  
 [ContextSensitiveHelpPage Property](properties/devenv-contextsensitivehelppage-property.md)  
