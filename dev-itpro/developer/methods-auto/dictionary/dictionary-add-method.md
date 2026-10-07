@@ -2,7 +2,7 @@
 title: "Dictionary.Add(TKey, TValue) Method"
 description: "Adds the specified key and value to the dictionary."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

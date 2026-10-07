@@ -1,7 +1,7 @@
 ---
 title: XMLport Object and Element Properties
 description: Review AL properties for XMLport objects, table elements, field elements, text elements, and attributes in Dynamics 365 Business Central.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

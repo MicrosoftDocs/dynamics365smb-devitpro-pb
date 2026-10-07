@@ -2,7 +2,7 @@
 title: "Record.RecordId() Method"
 description: "Gets the RecordId of the record that is currently selected in the table."
 ms.author: solsen
-ms.date: 12/10/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

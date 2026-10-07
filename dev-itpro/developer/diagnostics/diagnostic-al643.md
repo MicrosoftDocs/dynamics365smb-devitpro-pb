@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0643"
 description: "XML comment is not placed on a valid language element."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

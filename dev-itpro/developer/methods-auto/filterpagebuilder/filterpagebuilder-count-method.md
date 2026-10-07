@@ -2,7 +2,7 @@
 title: "FilterPageBuilder.Count() Method"
 description: "Gets the number of filter controls that are specified in the FilterPageBuilder object instance."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

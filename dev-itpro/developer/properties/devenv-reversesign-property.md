@@ -2,7 +2,7 @@
 title: "ReverseSign property"
 description: "Changes negative values into positive values and positive values into negative values in a column of a resulting query data set."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

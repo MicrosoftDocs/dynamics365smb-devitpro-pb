@@ -2,7 +2,7 @@
 title: "File.Pos() Method"
 description: "Gets the current position of the file pointer in an ASCII or binary file."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

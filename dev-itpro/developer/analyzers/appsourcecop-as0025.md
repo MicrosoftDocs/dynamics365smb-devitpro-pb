@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0025"
 description: "Parameters cannot be modified, renamed, or removed from Business type and Integration type events, because it will break dependent extensions."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

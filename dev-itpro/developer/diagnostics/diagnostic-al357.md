@@ -2,7 +2,7 @@
 title: "Compiler Error AL0357"
 description: "Cannot add {0} '{1}' with the same name multiple times."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

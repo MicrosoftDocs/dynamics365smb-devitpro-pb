@@ -2,7 +2,7 @@
 title: "Report.TotalsCausedBy() Method"
 description: "Determines which field caused a group total to be calculated."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

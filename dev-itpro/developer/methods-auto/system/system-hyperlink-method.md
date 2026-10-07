@@ -2,7 +2,7 @@
 title: "System.Hyperlink(Text) Method"
 description: "Passes a URL as an argument to an Internet browser, such as Microsoft Edge."
 ms.author: solsen
-ms.date: 10/07/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0027"
 description: "Modifying the array size of a parameter in events and external procedures is not allowed."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

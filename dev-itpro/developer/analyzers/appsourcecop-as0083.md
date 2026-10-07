@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0083"
 description: "Deleting an enum value is not allowed, unless the enum is marked as obsolete."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

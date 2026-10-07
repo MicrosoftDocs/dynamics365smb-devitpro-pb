@@ -2,7 +2,7 @@
 title: "Compiler Error AL0290"
 description: "Element name is not allowed for the event '{0}' and must be empty."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

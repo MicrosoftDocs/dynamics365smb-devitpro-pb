@@ -1,7 +1,7 @@
 ---
 title: Type Property for Entitlement Objects
 description: Learn how the Type property identifies the licensing source for an entitlement object in Dynamics 365 Business Central and review its values.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

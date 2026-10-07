@@ -2,7 +2,7 @@
 title: "Compiler Error AL0380"
 description: "Cannot move symbol '{0}' from '{1}' area to '{2}' area."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Database.SelectLatestVersion(Integer) Method"
 description: "Ensures that the table's latest version is used, ignoring any cached values older than the method's call time."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

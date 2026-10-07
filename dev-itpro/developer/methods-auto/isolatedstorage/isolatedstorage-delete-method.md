@@ -2,7 +2,7 @@
 title: "IsolatedStorage.Delete(Text [, DataScope]) Method"
 description: "Deletes the value with the specified key from the isolated storage."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

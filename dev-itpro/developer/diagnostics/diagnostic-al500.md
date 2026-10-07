@@ -2,7 +2,7 @@
 title: "Compiler Error AL0500"
 description: "The HandlerFunctions attribute only accepts a string representing a comma separated list of procedure names without spaces."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

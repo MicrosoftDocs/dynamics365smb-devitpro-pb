@@ -1,47 +1,47 @@
 ---
-title: Preprocessor directives in AL
-description: The different types of preprocessor directives in AL; conditional, regions, and pragmas and preprocessorSymbols setting.
+title: AL Preprocessor Directives Overview
+description: Learn how to use conditional, region, and pragma preprocessor directives and define symbols in AL for Microsoft Dynamics 365 Business Central extensions.
 author: SusanneWindfeldPedersen
-ms.date: 11/17/2025
+ms.date: 10/05/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Preprocessor directives in AL
+# Use preprocessor directives in AL
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-In AL, like in other programming languages, preprocessor directives can be used to make code conditional, to suppress warnings, or to enable the ability to expand and collapse in code. Preprocessor directives can be divided into the following groups. For more information about each type, use the links provided in the following section.
+Use AL preprocessor directives to compile code conditionally, suppress compiler warnings, and organize code into collapsible regions. AL supports the following groups of directives:
 
 - [Conditional directives](devenv-directives-in-al.md#conditional-directives)
 - [Regions](devenv-directive-region.md)
 - [Pragmas](devenv-directive-pragma.md)
 
-Any code can be made conditional, including table fields, and checked using a conditional directive. To check code using a conditional directive, you must define a symbol to check. A symbol returns a boolean value: `true` or `false`. Symbols can be defined at the beginning of a source file, where the scope of the specific symbol is in the file in which it is defined. You can also define symbols in the `app.json` file, and then the scope is global for the extension.
+Any code can be made conditional, including table fields. A conditional directive evaluates a Boolean expression. The expression can contain defined or undefined symbols, the Boolean literals `true` and `false`, parentheses, and supported operators. A defined symbol evaluates to `true`, and an undefined symbol evaluates to `false`. Symbols defined in a source file have file scope. Symbols defined in the `app.json` file are available throughout the extension.
 
 > [!NOTE]  
 > Built-in symbols are currently not supported in AL. Symbols must be defined in a specific file or in the `app.json` file.
 
 > [!NOTE]  
-> User personalization and profile configuration (including profile copy) are not meant to work with directives, which means that they are ignored by the platform in the cases of #pragma, #region, #endregion and fail with an error when they are not supported for #if, #elif, #define, etc.
+> Personalization and profile configuration ignore `#pragma`, `#region`, and `#endregion` directives. Unsupported conditional directives, such as `#if`, `#elif`, and `#define`, cause an error.
 
 ## Conditional directives
 
 The following conditional preprocessor directives are supported in AL.
 
-|Conditional preprocessor directive |Description |
-|-----------------------|------------|
-|#if                    | Specifies the beginning of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol being checked is defined. <br><br>  Inside the `#if` directive, you can use logical operators to create complex conditions. The supported logical operators are shown in the [next section](#logical-operators-in-conditional-directives). |
-|#else                  | Specifies a compound conditional clause. If none of the preceding clauses evaluate to `true`, the compiler will evaluate code between `#else` and `#endif`. |
-|#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
-|#endif                 | Specifies the end of a conditional clause that begins with `#if`. |
-|#define                | Defines a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. The scope of the symbol is the file that it was defined in.|
-|#undef                 | Undefines a symbol. |
+| Conditional preprocessor directive | Description |
+|------------------------------------|-------------|
+| `#if` | Starts a conditional clause. The `#endif` directive ends it. Includes the following code when its expression evaluates to `true`. |
+| `#else` | Includes its code when no preceding branch in the conditional block evaluates to `true`. |
+| `#elif` | Evaluates another expression when no earlier branch in the conditional block was selected. If the expression evaluates to `true`, its code is included until the next conditional directive. |
+| `#endif` | Ends the conditional clause that begins with `#if`. |
+| `#define` | Defines a symbol for use in conditional compilation. The symbol has file scope. For example, `#define DEBUG`. |
+| `#undef` | Undefines a symbol. |
 
 ### Logical operators in conditional directives
 
-The operators `and`, `or`, and `not` are supported in conditional directives. `and` evaluates to `true` if both operands are true, `or` evaluates to `true` if at least one of the operands is true, and `not` negates the value of the operand.
+Conditional expressions support `and`, `or`, `not`, equality (`=`), inequality (`<>`), and parentheses. `and` evaluates to `true` if both operands are true, `or` evaluates to `true` if at least one operand is true, and `not` negates the value of the operand.
 
 ## Defining and using preprocessor symbols
 
@@ -57,11 +57,11 @@ Symbols can be defined globally in the `app.json` file, making them available th
 }
 ```
 
-When symbols are defined in `app.json`, they're automatically set to `true` for the entire extension.
+When you define symbols in `app.json`, they're available in every source file. A local `#undef` directive can make an `app.json` symbol undefined from that point forward in one file.
 
 ### Defining symbols in code
 
-You can also define symbols locally within a specific file using the `#define` directive. The symbol will only be available in that file:
+You can define symbols locally within a specific file by using the `#define` directive. Place `#define` and `#undef` directives before the first AL token in the file. Their effect is local to that file.
 
 ```AL
 #define TESTING
@@ -80,7 +80,7 @@ codeunit 50100 MyCodeunit
 
 ### Undefining symbols
 
-You can undefine a symbol using `#undef`, which sets it to `false` from that point forward in the file:
+You can undefine a symbol by using `#undef`, which makes the symbol undefined from that point forward in the file.
 
 ```AL
 #define DEBUG
@@ -96,7 +96,7 @@ You can undefine a symbol using `#undef`, which sets it to `false` from that poi
 - An **undefined** symbol (never defined, or after `#undef`) evaluates to `false`
 - Use `not` to check if a symbol is undefined: `#if not DEBUG`
 
-Learn more in [JSON Files](../devenv-json-files.md).
+Learn more about defining extension-wide symbols in [JSON files](../devenv-json-files.md).
 
 ## Examples
 
@@ -163,22 +163,27 @@ codeunit 50101 ConditionalCode
 }
 ```
 
-### Example 4: Environment-specific code
+### Example 4: Using custom build symbols
+
+The compiler doesn't define environment symbols automatically. For each build configuration, add the appropriate custom symbol to `preprocessorSymbols` in `app.json`. The following cloud configuration defines `CLOUD`. For an on-premises configuration, replace `CLOUD` with `ONPREM`.
+
+```json
+{
+  "preprocessorSymbols": [ "CLOUD" ]
+}
+```
 
 ```AL
-page 50100 MyPage
+codeunit 50103 EnvironmentSpecificCode
 {
-    trigger OnOpenPage()
+    trigger OnRun()
     begin
 #if CLOUD
-        // Cloud-specific logic
-        SetupCloudConnection();
+        Message('Run cloud-specific logic.');
 #elif ONPREM
-        // On-premises specific logic
-        SetupOnPremConnection();
+        Message('Run on-premises-specific logic.');
 #else
-        // Default behavior
-        SetupStandardConnection();
+        Message('Run default logic.');
 #endif
     end;
 }
@@ -194,13 +199,11 @@ codeunit 50102 FeatureToggle
     trigger OnRun()
     begin
 #if not PRODUCTION
-        // This code only runs when PRODUCTION is NOT defined
-        EnableExperimentalFeatures();
+        Message('Enable experimental features.');
 #endif
 
 #if PRODUCTION
-        // This code only runs when PRODUCTION IS defined
-        EnableStableFeatures();
+        Message('Enable stable features.');
 #endif
     end;
 }

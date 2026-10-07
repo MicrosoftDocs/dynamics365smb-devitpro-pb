@@ -2,7 +2,7 @@
 title: "TestPage.Last() Method"
 description: "Sets the current row of the test page as the last row in the data set."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

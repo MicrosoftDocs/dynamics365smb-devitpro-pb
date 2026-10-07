@@ -2,7 +2,7 @@
 title: "Database.CopyCompany(Text, Text) Method"
 description: "Creates a new company and copies all data from an existing company in the same database."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

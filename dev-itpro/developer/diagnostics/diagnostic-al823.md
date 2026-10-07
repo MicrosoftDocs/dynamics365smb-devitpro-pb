@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0823"
 description: "Field '{0}' is marked as PendingMove and cannot be used in an active key."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

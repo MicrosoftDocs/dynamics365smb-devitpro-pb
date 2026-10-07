@@ -2,7 +2,7 @@
 title: "TryFunction attribute"
 description: "Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run."
 ms.author: solsen
-ms.date: 08/19/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

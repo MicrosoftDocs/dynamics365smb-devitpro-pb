@@ -1,7 +1,7 @@
 ---
 title: "A suffix is required."
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "HttpHeaders.GetValues(String, Array of [Text]) Method"
 description: "Gets the values for the specified key."
 ms.author: solsen
-ms.date: 07/07/2021
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

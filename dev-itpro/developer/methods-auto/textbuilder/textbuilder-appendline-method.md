@@ -2,7 +2,7 @@
 title: "TextBuilder.AppendLine([Text]) Method"
 description: "Appends a copy of the specified string followed by the default line terminator to the end of the current TextBuilder object."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

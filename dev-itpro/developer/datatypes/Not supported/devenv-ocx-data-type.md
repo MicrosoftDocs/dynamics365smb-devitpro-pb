@@ -1,6 +1,6 @@
 ---
 title: "OCX Data Type"
-ms.date: 04/01/2021
+ms.date: 10/01/2026
 ms.topic: reference
 ---
 # OCX Data Type

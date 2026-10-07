@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0684"
 description: "The permissionset '{0}' contains permissionsets or permission for objects from other module."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

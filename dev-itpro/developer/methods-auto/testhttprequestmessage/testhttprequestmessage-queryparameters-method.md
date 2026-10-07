@@ -2,7 +2,7 @@
 title: "TestHttpRequestMessage.QueryParameters() Method"
 description: "Gets the query parameters of the HTTP request if the request does not have a secret URI, otherwise an empty Dictionary."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

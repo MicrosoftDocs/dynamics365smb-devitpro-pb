@@ -2,7 +2,7 @@
 title: "Compiler Error AL0296"
 description: "The application object or method '{0}' has scope '{1}' and cannot be used for '{2}' development."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

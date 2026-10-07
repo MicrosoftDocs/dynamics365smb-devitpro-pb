@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop Warning PTE0025"
 description: "Duplicate object names cause various runtime problems and upgrade for problems for dependent apps without namespaces."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

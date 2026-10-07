@@ -2,7 +2,7 @@
 title: "ExtendedDatatype property"
 description: "Sets the extended data type of a control."
 ms.author: solsen
-ms.date: 01/16/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

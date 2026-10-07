@@ -2,7 +2,7 @@
 title: "Page.PromptMode([PromptMode]) Method"
 description: "The mode of a PromptDialog page that prompts the user for input and shows the output of a copilot interaction."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

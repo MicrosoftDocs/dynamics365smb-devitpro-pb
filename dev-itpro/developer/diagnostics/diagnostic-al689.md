@@ -2,7 +2,7 @@
 title: "Compiler Error AL0689"
 description: "The key '{0}' on table '{1}' cannot contain the fields defined for the SqlIndex in the IncludeFields property."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

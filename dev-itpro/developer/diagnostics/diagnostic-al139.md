@@ -2,7 +2,7 @@
 title: "Compiler Error AL0139"
 description: "Since '{0}' doesn't have a return value, EXIT cannot be called with a value."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

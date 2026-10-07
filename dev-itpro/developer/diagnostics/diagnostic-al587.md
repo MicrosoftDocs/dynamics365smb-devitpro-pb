@@ -2,7 +2,7 @@
 title: "Compiler Error AL0587"
 description: "'{0}' is already listed in the interface list."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

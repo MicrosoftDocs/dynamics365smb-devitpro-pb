@@ -2,7 +2,7 @@
 title: "Compiler Error AL0720"
 description: "An application object '{0} {1}' could not be found in the current extension."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0150"
 description: "When the FullNamespaceScope feature is enabled, all objects must be declared in a compliant namespace with at least two levels (e.g., 'Publisher.Module')."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

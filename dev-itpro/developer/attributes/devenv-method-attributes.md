@@ -1,7 +1,7 @@
 ---
 title: Method Attributes in AL for Business Central
 description: Learn how AL method attributes modify method behavior in Business Central and review the syntax for applying attributes and arguments.
-ms.date: 08/19/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

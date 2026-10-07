@@ -2,7 +2,7 @@
 title: "Compiler Error AL0113"
 description: "At least one dimension must be specified for the array declaration (e.g., [10] or [5,5])."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

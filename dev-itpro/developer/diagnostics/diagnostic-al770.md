@@ -2,7 +2,7 @@
 title: "Compiler Error AL0770"
 description: "The identifier '{0}' cannot have any leading or trailing spaces."
 ms.author: solsen
-ms.date: 03/20/2023
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

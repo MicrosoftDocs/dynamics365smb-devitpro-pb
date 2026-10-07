@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0610"
 description: "Moving actions in CueGroups is not supported."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

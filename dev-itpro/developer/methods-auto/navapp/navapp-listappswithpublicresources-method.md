@@ -2,7 +2,7 @@
 title: "NavApp.ListAppsWithPublicResources([Text]) Method"
 description: "Gets the IDs of apps that expose public resources matching the optional filter."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

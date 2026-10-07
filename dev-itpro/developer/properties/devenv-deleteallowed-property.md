@@ -2,7 +2,7 @@
 title: "DeleteAllowed property"
 description: "Sets a value that specifies whether users can delete records while using the page."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

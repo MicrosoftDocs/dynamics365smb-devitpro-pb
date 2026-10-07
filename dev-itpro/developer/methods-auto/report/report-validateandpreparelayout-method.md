@@ -2,7 +2,7 @@
 title: "Report.ValidateAndPrepareLayout(Integer, InStream, var InStream, ReportLayoutType) Method"
 description: "Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

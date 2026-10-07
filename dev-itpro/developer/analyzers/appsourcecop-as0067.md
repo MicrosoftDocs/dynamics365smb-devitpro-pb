@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0067"
 description: "Adding an interface to an enum that has been published must have a default implementation, because dependent enum extensions don't implement the new interface and may break."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

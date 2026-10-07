@@ -2,7 +2,7 @@
 title: "ShowFilter property"
 description: "Sets whether the filter pane is shown on a page by default."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

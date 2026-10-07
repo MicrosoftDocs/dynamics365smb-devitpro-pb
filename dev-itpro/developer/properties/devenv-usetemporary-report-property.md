@@ -1,7 +1,7 @@
 ---
 title: UseTemporary Property for Report Data Items
 description: Learn how the UseTemporary property uses an in-memory temporary table for a report data item in Dynamics 365 Business Central.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

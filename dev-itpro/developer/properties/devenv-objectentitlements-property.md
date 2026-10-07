@@ -2,7 +2,7 @@
 title: "ObjectEntitlements property"
 description: "Determines the object permissions that this entitlement object permits a user or application to use."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

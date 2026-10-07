@@ -2,7 +2,7 @@
 title: "Label data type"
 description: "Denotes a string constant that can be optionally translated into multiple languages."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

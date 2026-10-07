@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0869"
 description: "'{0}' '{1}' was expected to be found in app '{2}' but was instead found in app '{3}', which is propagating its dependencies to '{2}'."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

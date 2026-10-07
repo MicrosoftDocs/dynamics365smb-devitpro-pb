@@ -2,7 +2,7 @@
 title: "Compiler Error AL0313"
 description: "Attribute {0} can only be used within {1}."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0013"
 description: "The field identifier must be within the allowed range and outside the range allocated to per-tenant customizations."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

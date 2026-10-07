@@ -2,7 +2,7 @@
 title: "System.Decrypt(Text) Method"
 description: "Takes a string as input and returns the decrypted value of the string."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

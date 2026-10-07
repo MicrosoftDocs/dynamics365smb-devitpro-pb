@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0924"
 description: "Interface method '{0}.{1}' will become required."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

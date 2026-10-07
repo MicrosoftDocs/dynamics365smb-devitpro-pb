@@ -2,7 +2,7 @@
 title: "Compiler Error AL0851"
 description: "The type '{0}' doesn't support casting."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

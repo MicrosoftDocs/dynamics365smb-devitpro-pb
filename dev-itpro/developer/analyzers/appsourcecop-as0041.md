@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0041"
 description: "Removing table field properties can lead to destructive changes that will break the upgrade of existing installations and dependent extensions."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

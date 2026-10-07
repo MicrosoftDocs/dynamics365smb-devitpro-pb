@@ -2,7 +2,7 @@
 title: "Compiler Error AL0168"
 description: "The {0} '{1}' can only be used if the property '{2}' is set."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

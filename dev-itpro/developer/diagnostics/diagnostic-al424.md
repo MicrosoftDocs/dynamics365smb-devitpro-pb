@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0424"
 description: "The multilanguage syntax should not be used because the app uses translation files (the features property of the app.json includes TranslationFile)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

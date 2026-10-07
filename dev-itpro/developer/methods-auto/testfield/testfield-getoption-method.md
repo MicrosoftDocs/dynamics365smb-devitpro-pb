@@ -2,7 +2,7 @@
 title: "TestField.GetOption([Integer]) Method"
 description: "Gets the options for a field on a test page."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

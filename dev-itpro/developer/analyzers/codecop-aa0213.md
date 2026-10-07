@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0213"
 description: "Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

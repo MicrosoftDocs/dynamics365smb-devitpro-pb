@@ -2,7 +2,7 @@
 title: "JsonObject.Replace(Text, BigInteger) Method"
 description: "Replaces the value of the property with the given key with the new value."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

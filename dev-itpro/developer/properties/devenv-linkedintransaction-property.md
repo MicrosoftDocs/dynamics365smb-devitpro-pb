@@ -2,7 +2,7 @@
 title: "LinkedInTransaction property"
 description: "Gets and sets data from linked server data sources, such as Microsoft Office Excel, Access, or another SQL Server."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

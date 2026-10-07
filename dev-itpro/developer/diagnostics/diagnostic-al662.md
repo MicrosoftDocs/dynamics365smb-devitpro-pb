@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0662"
 description: "Implicit conversion from BigInteger '{0}' to {1} '{2}' in property expression may overflow at runtime."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

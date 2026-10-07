@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0001"
 description: "There must be exactly one space character on each side of a binary operator such as := + - AND OR =."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0651"
 description: "'{0}' cannot be contained since it causes a circular reference."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

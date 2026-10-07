@@ -2,7 +2,7 @@
 title: APIPublisher Property for API Pages
 description: Learn how the APIPublisher property defines the publisher segment of an API page endpoint in Dynamics 365 Business Central and review its syntax.
 ms.author: solsen
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

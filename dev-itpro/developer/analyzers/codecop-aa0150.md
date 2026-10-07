@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0150"
 description: "Do not declare parameters by reference if their values are never changed."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "System.CopyArray(Array of [Any], Array of [Any], Integer [, Integer]) Method"
 description: "Copies one or more elements in an array to a new array."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

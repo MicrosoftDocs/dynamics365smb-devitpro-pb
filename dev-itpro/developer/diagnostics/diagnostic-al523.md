@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0523"
 description: "The {0} '{1}' already defines a method called '{2}' with the same parameter types in '{3}'."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

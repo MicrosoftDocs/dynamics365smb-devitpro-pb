@@ -2,7 +2,7 @@
 title: APIVersion Property for API Queries
 description: Learn how the APIVersion property defines one or more versions for an API query endpoint in Dynamics 365 Business Central and review its syntax.
 ms.author: solsen
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

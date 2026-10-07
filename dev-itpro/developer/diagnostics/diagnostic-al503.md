@@ -2,7 +2,7 @@
 title: "Compiler Error AL0503"
 description: "Reference '{0}' in application object '{1}' is ambiguous."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

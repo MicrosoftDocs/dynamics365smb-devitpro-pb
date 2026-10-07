@@ -2,7 +2,7 @@
 title: "JsonObject.ReadFromYaml(Text) Method"
 description: "Reads the YAML data from the string into a JsonObject variable."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

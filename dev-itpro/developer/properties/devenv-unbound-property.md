@@ -2,7 +2,7 @@
 title: "Unbound property"
 description: "Sets whether the element can be repeated an unknown number of times at runtime before the import or export moves on to the next element."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0016"
 description: "Fields of field class 'Normal' must use the DataClassification property and its value must be different from ToBeClassified."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

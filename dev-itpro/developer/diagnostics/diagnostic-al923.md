@@ -2,7 +2,7 @@
 title: "Compiler Error AL0923"
 description: "The attribute '[RequiredPending]' can only be applied to interface methods with a default implementation."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

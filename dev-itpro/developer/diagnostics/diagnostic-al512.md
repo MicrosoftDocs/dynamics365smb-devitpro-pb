@@ -2,7 +2,7 @@
 title: "Compiler Error AL0512"
 description: "The manifest should define the 'supportedLocales' manifest property in order to use a placeholder in the '{0}' property."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "IsolatedStorage.Get(Text, DataScope, IsolationLevel, var Text) Method"
 description: "Gets the value associated with the specified key, applying the specified isolation level to the read."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

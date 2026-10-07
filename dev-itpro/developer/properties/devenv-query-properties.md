@@ -1,7 +1,7 @@
 ---
 title: Query Object and Element Properties
 description: Review AL properties for query objects, data items, columns, and filters in Dynamics 365 Business Central, with links to each reference.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0848"
 description: "'{0}' is a keyword from version '{1}'."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0269"
 description: "The referenced page '{0}' should be a list part or a card part."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

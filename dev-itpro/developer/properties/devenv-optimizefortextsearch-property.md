@@ -2,7 +2,7 @@
 title: "OptimizeForTextSearch property"
 description: "Include the field in the optimized text search index to allow faster search in the UI."
 ms.author: solsen
-ms.date: 10/22/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

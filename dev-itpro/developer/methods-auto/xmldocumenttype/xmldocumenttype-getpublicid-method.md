@@ -2,7 +2,7 @@
 title: "XmlDocumentType.GetPublicId(var Text) Method"
 description: "Gets the public identifier for this Document Type Definition (DTD)."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

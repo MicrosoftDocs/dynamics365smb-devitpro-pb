@@ -2,7 +2,7 @@
 title: "RequestFilterFields property"
 description: "Sets which fields are automatically included on the tab of the request page that is related to this data item."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

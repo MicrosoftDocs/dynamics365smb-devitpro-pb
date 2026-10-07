@@ -2,7 +2,7 @@
 title: "List data type"
 description: "Represents a strongly typed list of ordered objects that can be accessed by index."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

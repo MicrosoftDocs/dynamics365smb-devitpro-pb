@@ -2,7 +2,7 @@
 title: "TestHttpResponseMessage.IsBlockedByEnvironment([Boolean]) Method"
 description: "Gets or sets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

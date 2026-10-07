@@ -1,7 +1,7 @@
 ---
 title: Promoted Property for Page Actions
 description: Learn how the legacy Promoted property adds a page action to a promoted category in Dynamics 365 Business Central and review its behavior.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

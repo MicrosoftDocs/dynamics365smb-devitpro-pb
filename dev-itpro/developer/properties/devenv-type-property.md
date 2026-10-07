@@ -1,7 +1,7 @@
 ---
 title: Type Property Reference by Object
 description: Learn where to use the Type property for entitlement objects and report layouts in Dynamics 365 Business Central and compare their values.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

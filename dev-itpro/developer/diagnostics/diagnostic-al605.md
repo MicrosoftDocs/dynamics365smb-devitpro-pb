@@ -2,7 +2,7 @@
 title: "Compiler Hidden AL0605"
 description: "Use of implicit 'with' will be removed in the future."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

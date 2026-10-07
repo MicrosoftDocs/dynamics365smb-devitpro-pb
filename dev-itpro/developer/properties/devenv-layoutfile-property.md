@@ -2,7 +2,7 @@
 title: "LayoutFile property"
 description: "The filename of the report layout file that should be imported with this layout."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

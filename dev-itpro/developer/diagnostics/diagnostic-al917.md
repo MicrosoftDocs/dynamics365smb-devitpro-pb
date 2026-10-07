@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0917"
 description: "The Excel layout '{0}' was automatically upgraded to multi-sheet format."
 ms.author: solsen
-ms.date: 04/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

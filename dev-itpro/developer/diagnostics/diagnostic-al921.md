@@ -2,7 +2,7 @@
 title: "Compiler Error AL0921"
 description: "The method '{0}' cannot be used as the implementation for the interface method '{1}' because it is not public."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

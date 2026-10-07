@@ -2,7 +2,7 @@
 title: "Report.DefaultLayout(Integer) Method"
 description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
-ms.date: 10/07/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

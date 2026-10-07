@@ -2,7 +2,7 @@
 title: "PopulateAllFields property"
 description: "Sets whether fields are filled out automatically with a single filter value when a new record is inserted in a table."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

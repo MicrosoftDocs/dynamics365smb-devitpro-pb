@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0796"
 description: "The 'Unwrap' method should only be used inside a non-debuggable method otherwise the contents of the value will be viewable through the debugger."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

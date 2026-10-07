@@ -2,7 +2,7 @@
 title: "Compiler Error AL0794"
 description: "The value '{0}' for property '{1}' is not valid for action '{2}' defined in control '{3}' of type '{4}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

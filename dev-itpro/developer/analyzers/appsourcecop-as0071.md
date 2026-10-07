@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0071"
 description: "An enum field replacing an option field should preserve the member ordinal values."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

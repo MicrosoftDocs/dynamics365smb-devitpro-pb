@@ -1,7 +1,7 @@
 ---
 title: Width Property for XMLport Elements
 description: Learn how the Width property sets the number of characters in fixed-text XMLport elements and attributes in Dynamics 365 Business Central.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

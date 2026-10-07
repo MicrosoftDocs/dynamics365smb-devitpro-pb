@@ -2,7 +2,7 @@
 title: "RecordRef.SetRecFilter() Method"
 description: "Sets a filter on a record that is referred to by a RecordRef."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

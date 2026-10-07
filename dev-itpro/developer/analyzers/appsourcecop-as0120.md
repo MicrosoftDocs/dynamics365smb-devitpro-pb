@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0120"
 description: "The destination symbol's MovedFrom property value does not match the source AppId."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
