@@ -1,23 +1,23 @@
 ---
-title: Region directive in AL
-description: The region directive in AL for Business Central.
+title: Region Directives for Organizing AL Code
+description: Learn how to use the region directive in AL to organize code into collapsible blocks and improve readability in Microsoft Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 06/02/2025
+ms.date: 10/05/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Region directive in AL
+# Organize AL code with region directives
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-## Region
+## Organize code into regions
 
-The `#region` directive is used to mark a block of code that you can expand or collapse. This can, for example, be useful for larger files for better readability or for focusing on code that you're currently working on. The `#endregion` specifies the end of a `#region` block of code. 
+Use the `#region` directive to mark a block of code that you can expand or collapse. Regions can improve readability in large files and help you focus on the code you're currently editing. The `#endregion` directive specifies the end of a `#region` block.
 
 > [!NOTE]  
-> On the first line of the `#region` a text comment can be added to describe the purpose of the block of code, see the following example.
+> Add a comment after the `#region` directive to describe the code block, as shown in the following example.
 
 ## Syntax
 
@@ -41,10 +41,10 @@ A `#region` block can't overlap with an `#if` block. However, a `#region` block 
 In this example, the `#region` directive makes a code block that is up for refactoring collapsible.
 
 ```AL
-#region Ugly code - let's not look at this
-    procedure UglyCode()
+#region Refactoring candidate
+    procedure CalculateLegacyValue()
     begin
-        // No one should look at this
+        // Refactor this implementation.
     end;
 #endregion
 ```

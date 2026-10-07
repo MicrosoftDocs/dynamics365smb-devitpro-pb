@@ -1,21 +1,21 @@
 ---
-title: Pragma Warning directive in AL
-description: The pragma warning instruction on the pragma directive in AL.
+title: Pragma Warning Directive in AL
+description: Learn how to use the pragma warning directive in AL to suppress and restore configurable compiler warnings in Microsoft Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 06/02/2025
+ms.date: 10/05/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Pragma Warning directive in AL
+# Control AL compiler warnings with pragma directives
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-The `#pragma warning` instruction can enable or disable certain warnings. This can be used as a solution to avoid getting warnings on, for example, string length on fields that you can't change. With the `#pragma warning disable` statement you disable the emit of the warning for a specific location in code, and with `#pragma warning restore` you restore the warning back to its original state. If you don't `restore`, the `disable` instruction is valid for the rest of the file.
+The `#pragma warning disable` directive suppresses specified compiler warnings from its location until a matching `#pragma warning restore` directive or the end of the file. If you omit the warning list, the directive applies to all configurable warnings.
 
 > [!IMPORTANT]  
-> It's important to be aware that most warnings are there for a reason, and suppressing them could lead to sudden impact if warnings are changed to errors, such as obsoletes. 
+> Suppress warnings only when you can't address their cause. A warning can become an error in a later release and break your extension.
 
 ## Syntax
 
@@ -29,13 +29,14 @@ The `#pragma warning` instruction can enable or disable certain warnings. This c
 
 ## Parameters
 
-*warning-list* 
-A comma-separated list of warning numbers.
+*warning-list*
 
-When no warning numbers are specified, `disable` disables all warnings, and `restore` enables all warnings.
+A comma-separated list of warning IDs or numeric warning codes, such as `AL0468, AL0604`.
+
+When you don't specify warning IDs, `disable` suppresses all configurable warnings from that point forward. `restore` clears the pragma warning state and returns all warnings to their default or project-configured reporting state.
 
 > [!NOTE]  
-> To find warning numbers in AL, build your AL project in Visual Studio Code and then look for the warning numbers in the **Output** window. For more information, see [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md).
+> To find warning IDs, build your AL project in Visual Studio Code and check the **Output** window. Learn more about code analysis in [Using the code analysis tool](../devenv-using-code-analysis-tool.md).
 
 ## Example
 
@@ -48,7 +49,7 @@ table 50110 MyTable
     {
         #pragma warning disable AL0468
         field(1; TableWithLongIdentifierThatExceedsOurMax; Integer) { }
-        #pragma warning restore
+        #pragma warning restore AL0468
     }
 }
 ```
