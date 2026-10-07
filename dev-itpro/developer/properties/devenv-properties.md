@@ -1,7 +1,7 @@
 ---
 title: AL Properties Overview for Business Central
 description: Explore AL properties for tables, pages, reports, queries, and other objects in Dynamics 365 Business Central development.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.author: solsen

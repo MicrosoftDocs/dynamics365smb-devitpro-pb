@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0134"
 description: "The version attribute parameter of an external business event cannot be changed because it might break external subscribers."
 ms.author: solsen
-ms.date: 06/19/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

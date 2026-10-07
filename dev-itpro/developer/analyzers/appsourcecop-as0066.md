@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0066"
 description: "A new method to an interface that has been published must not be added, because dependent extensions may break"
 ms.author: solsen
-ms.date: 04/30/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0381"
 description: "The keys '{0}' and '{1}' have an identical list of fields."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

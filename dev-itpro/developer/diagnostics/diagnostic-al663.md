@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0663"
 description: "Implicit conversion from BigInteger '{0}' to Enum '{1}' in property expression may overflow at runtime and can lead to unexpected enum value behavior."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

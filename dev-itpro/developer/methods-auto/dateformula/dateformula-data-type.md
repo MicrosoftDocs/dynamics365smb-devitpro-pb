@@ -2,7 +2,7 @@
 title: "DateFormula data type"
 description: "Represents a date formula that has the same capabilities as an ordinary input string for the CALCDATE Method (Date)."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

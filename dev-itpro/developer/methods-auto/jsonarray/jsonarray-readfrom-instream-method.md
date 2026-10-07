@@ -2,7 +2,7 @@
 title: "JsonArray.ReadFrom(InStream) Method"
 description: "Reads the JSON data from the stream into a JsonArray variable."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

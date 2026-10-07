@@ -2,7 +2,7 @@
 title: "Compiler Error AL0198"
 description: "Expected one of the application object keywords ({0})."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

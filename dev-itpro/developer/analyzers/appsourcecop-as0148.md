@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0148"
 description: "When transitioning an optional (default) interface method to required, the method must first be marked with [RequiredPending] in a prior version."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

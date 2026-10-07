@@ -2,7 +2,7 @@
 title: "WithEvents attribute"
 description: "Sets whether a DotNet variable subscribes to the events published by a .NET Framework type."
 ms.author: solsen
-ms.date: 08/19/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

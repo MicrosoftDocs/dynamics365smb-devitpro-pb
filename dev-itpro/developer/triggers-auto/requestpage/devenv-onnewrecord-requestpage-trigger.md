@@ -2,7 +2,7 @@
 title: "OnNewRecord (Request Page) trigger"
 description: "Runs after a new record is initialized, but before it is inserted as a record in the table."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

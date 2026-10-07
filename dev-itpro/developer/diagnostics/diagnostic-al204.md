@@ -2,7 +2,7 @@
 title: "Compiler Error AL0204"
 description: "Field type {0} is not convertible to field type {1}."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

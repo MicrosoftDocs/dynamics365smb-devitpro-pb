@@ -2,7 +2,7 @@
 title: "Report.Run(Text [, Boolean] [, Boolean] [, var Record]) Method"
 description: "Loads and executes the report that you specify."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

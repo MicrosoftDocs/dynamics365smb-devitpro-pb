@@ -2,7 +2,7 @@
 title: "InStream.ReadText(var Text [, Integer]) Method"
 description: "Reads text from an InStream object."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

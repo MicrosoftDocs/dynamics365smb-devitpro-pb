@@ -2,7 +2,7 @@
 title: "RecordRef.Rename(Any [, Any,...]) Method"
 description: "Changes the value of a primary key in a table."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

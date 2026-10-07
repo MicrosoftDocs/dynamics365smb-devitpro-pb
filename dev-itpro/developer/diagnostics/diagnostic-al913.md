@@ -2,7 +2,7 @@
 title: "Compiler Error AL0913"
 description: "The name of a {0} cannot be empty because it can cause runtime errors."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

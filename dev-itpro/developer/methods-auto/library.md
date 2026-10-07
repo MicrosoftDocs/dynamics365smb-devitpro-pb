@@ -2,7 +2,7 @@
 title: "Data types and methods in AL"
 description: ""
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

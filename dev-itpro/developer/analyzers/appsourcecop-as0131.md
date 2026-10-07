@@ -2,7 +2,7 @@
 title: "AppSourceCop Hidden AS0131"
 description: "Tables with schema should not be added."
 ms.author: solsen
-ms.date: 06/17/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "CodeCop Info AA0234"
 description: "You should write a tooltip in the Tooltip property for all fields on table objects."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop Error PTE0009"
 description: "The properties 'helpBaseUrl' and 'supportedLocales' are reserved for translation apps."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

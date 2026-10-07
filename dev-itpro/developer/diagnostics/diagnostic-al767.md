@@ -2,7 +2,7 @@
 title: "Compiler Error AL0767"
 description: "The URL '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

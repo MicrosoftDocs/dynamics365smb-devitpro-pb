@@ -2,7 +2,7 @@
 title: "Compiler Error AL0911"
 description: "The field '{0}' cannot be used in a query DataItemLink because it is a FlowField or FlowFilter."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

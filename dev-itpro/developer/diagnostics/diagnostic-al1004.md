@@ -2,7 +2,7 @@
 title: "Compiler Warning AL1004"
 description: "The assembly {0} does not contain any analyzers."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

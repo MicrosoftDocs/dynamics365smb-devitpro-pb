@@ -2,7 +2,7 @@
 title: "LinkFields property"
 description: "Specifies the fields that are linked between two tables using the LinkTable Property."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Report.Skip() Method"
 description: "Skips the current iteration of the current report or XmlPort."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

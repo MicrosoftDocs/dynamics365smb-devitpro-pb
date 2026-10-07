@@ -2,7 +2,7 @@
 title: "Time data type"
 description: "Denotes a time ranging from 00:00:00.000 to 23:59:59.999."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

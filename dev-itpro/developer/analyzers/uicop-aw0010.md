@@ -2,7 +2,7 @@
 title: "UICop Warning AW0010"
 description: "A Repeater control used on a List page must be defined at the beginning of the area(Content) section."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

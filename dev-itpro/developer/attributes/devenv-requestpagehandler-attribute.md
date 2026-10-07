@@ -2,7 +2,7 @@
 title: "RequestPageHandler attribute"
 description: "Specifies that the method is a RequestPageHandler method, which handles the request page of a specific report."
 ms.author: solsen
-ms.date: 08/19/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

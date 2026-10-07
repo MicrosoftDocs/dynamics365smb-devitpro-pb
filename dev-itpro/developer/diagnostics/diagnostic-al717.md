@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0717"
 description: "The property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

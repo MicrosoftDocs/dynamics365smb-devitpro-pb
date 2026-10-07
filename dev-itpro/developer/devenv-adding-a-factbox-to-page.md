@@ -1,43 +1,43 @@
 ---
-title: Adding a FactBox to a page
-description: A FactBox is located on the right-most side of a page. This area is used to display related facts about the current record including charts, data from related tables, Notes, and Links.
+title: Add FactBoxes to Business Central Pages
+description: Learn how to add FactBoxes to Business Central pages, connect related records, configure system parts, and improve page-loading performance.
 author: SusanneWindfeldPedersen
-ms.date: 10/03/2025
+ms.date: 10/06/2026
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Adding a FactBox to a page
+# Add a FactBox to a page
 
-FactBoxes surface related, at-a-glance information for the current record in the page’s right pane. They can host parts (CardPart or ListPart), charts and cues, and system parts such as Notes and Links. This article shows how to add a FactBox area to a page, add parts, pass context by using the `SubPageLink` or `SubPageView` properties, and apply performance best practices. A FactBox can be hidden or shown by the user by toggling the little **i** icon in the top right corner of the page.
+FactBoxes surface related, at-a-glance information for the current record in the page’s right pane. They can host `CardPart` or `ListPart` pages, charts and cues, and system parts such as Notes and Links. This article shows how to add a FactBox area to a page, add parts, pass context by using the `SubPageLink` or `SubPageView` properties, and apply performance best practices. Users can expand or collapse the FactBox pane by using the FactBox toggle in the top-right corner of the page.
 
-The following example shows a page that displays a sales order list, where a FactBox is used to show sell-to customer sales history for a selected sales order in the list.
+The following image shows customer sales information in the FactBox pane on a sales order.
 
-![Shows FactBox on a sales order.](media/factboxApril19.png)  
+:::image type="content" source="media/factboxApril19.png" alt-text="Sales order with customer sales information shown in the FactBox pane." lightbox="media/factboxApril19.png":::
 
 The following list highlights a few categories of FactBoxes:
 
-- Show related records/fields, which are modeled as ListParts or CardParts.
-- Show related KPIs, which are modeled as CardParts with charts or Cues. Learn more in [Designing Role Centers](devenv-designing-role-centers.md).
-- Visualize related data or display from external sources, which are modeled as CardParts containing a client add-in. For example, Bing maps, Power BI, Microsoft Social Engagement, and more.
+- Show related records and fields by using `ListPart` or `CardPart` pages.
+- Show related KPIs by using `CardPart` pages with charts or cues. Learn more about Role Center design in [Designing Role Centers](devenv-designing-role-centers.md).
+- Visualize related data from external sources by using a `CardPart` page that contains a client add-in.
 
 ## Adding a FactBox area to a page
 
 You define the FactBox by adding a FactBox area container control to the page. There can only be one FactBox area control on one page. The FactBox area container control acts as a placeholder to which you can add different parts for the FactBox. You can add a FactBox area container control on the following page types. 
   
-- Card  
-- Document  
-- ListPlus  
-- List  
-- Worksheet  
+- `Card`
+- `Document`
+- `ListPlus`
+- `List`
+- `Worksheet`
 
 > [!NOTE]  
-> You can add a part to the FactBox area that displays an existing page of the CardPart or ListPart type only. If you attempt to use another page type, you get an error. 
+> You can add a part to the FactBox area only if it displays an existing `CardPart` or `ListPart` page. If you attempt to use another page type, you get an error.
 
 ### Example
 
-The following example shows a simple customer card page with a FactBox. The FactBox contains a KPI for the customer's sales, a Notes part, and a Links part. With 2025 release wave 2, you can control the visibility of the `Summary` part, which is also illustrated in the following code example. Learn more about the system parts that you can choose in [System parts](#system-parts).
+The following example shows a simple page with a FactBox. The FactBox contains financial-report KPI lines, a Notes part, and a Links part. Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2025 release wave 2, you can control the visibility of the `Summary` part, as shown in the following code example. Learn more about the available system parts in [System parts](#system-parts).
 
 ```AL
 page 50100 "Simple Customercard Page"
@@ -71,77 +71,74 @@ page 50100 "Simple Customercard Page"
 ```
 
 > [!TIP]  
-> When used on Lists, FactBoxes can be used to show information about the entire list, or more contextually about the user’s current selection; the currently selected rows. You can control the filter, which gets passed to the FactBox that determines its contextual contents. 
+> On `List` pages, FactBoxes can show information about the entire list or the user's current selection. The filter passed to the FactBox determines its contextual content.
 
 ### System parts
 
-You can define the following system parts by using the `systempart()` keyword:
+Define system parts by using the `systempart()` keyword. The following table describes the system parts commonly used in FactBoxes:
 
 |  Value | Description |
 |--------|-------------|
-|  Links | Allows the user to add links to a URL or path on the record shown in the page. For example, on an Item card, a user can add a link to the supplier's item catalog. The links appear with the record when it's viewed. When a user chooses a link, the target file opens.|
-|  Notes | Allows the user to write a note on the record shown in the page. For example, when creating a sales order, a user can add a note about the order. The note appears with the item when it's viewed.|
-| Summary | Allows the user to view a summary of the record shown in the page on pages that display a summary by default. For example, on a Customer card, a user can see a summary of the customer's sales history. The summary is available on pages when the Summarize capability is enabled on the **Copilots and agents capabilities** page. The summary appears with the record when it's viewed. With 2025 release wave 2, the Summary part can be hidden in code on page objects, page extensions, and profiles. Use the `DefaultSummaryPart` keyword to refer to it in code. Learn more about how to use it in Business Central in [Summarize records with Copilot](/dynamics365/business-central/summarize-with-copilot).|
+| `Links` | Add links to a URL or path on the record shown in the page. For example, on an Item card, add a link to the supplier's item catalog. The links appear with the record when you view it. When a user chooses a link, the target file opens.|
+| `Notes` | Write a note on the record shown in the page. For example, when creating a sales order, add a note about the order. The note appears with the item when you view it.|
+| `Summary` | View a summary of the record shown in the page on pages that display a summary by default. For example, on a Customer card, see a summary of the customer's sales history. The summary is available on pages when the Summarize capability is enabled on the **Copilots and agents capabilities** page. The summary appears with the record when you view it. With 2025 release wave 2, you can hide the Summary part in code on page objects, page extensions, and profiles. Use the `DefaultSummaryPart` keyword to refer to it in code. Learn more about how to use it in Business Central in [Summarize records with Copilot](/dynamics365/business-central/summarize-with-copilot).|
 
 
 #### Summary
 
-The Summary part provides a high-level overview of the record, allowing users to quickly understand key information without having to navigate through multiple fields. The Summary part is of the type system part and can be controlled on `Card`, `Document`, and `ListPlus` pages, which allows developers to hide or configure the summary factbox when it's not needed. It can be hidden in code on page objects, page extensions, and profiles by using the identifier `DefaultSummaryPart` to refer to it in code. The Summary part is *enabled by default on all card, document, and listplus* pages that have a `FactBoxes` area.
+The Summary system part provides a high-level overview of a record. Developers can hide the Summary FactBox on `Card`, `Document`, and `ListPlus` pages when it isn't needed. Use `DefaultSummaryPart` to hide it in page objects, page extensions, and profiles. The Summary part is enabled by default on eligible `Card`, `Document`, and `ListPlus` pages that have a `FactBoxes` area. Eligibility also depends on the page using a normal, non-temporary source table, the desktop client, the Summarize capability, and the user's permissions.
 
 In the following example, a page extension of the Customer card hides the Summary part:
 
 ```al
-pageextension 50101 MyPageExtension extends "Customer Card"
+pageextension 50101 MyPageExtension extends "Customer Card"
 {
-    PageType = Card;
-    ApplicationArea = All;
-
     ...
-    layout
-    {
-        modify(DefaultSummaryPart)
-        {
-            Visible = false;
-        }
-    }
-    ...
+    layout
+    {
+        modify(DefaultSummaryPart)
+        {
+            Visible = false;
+        }
+    }
+    ...
 }
 ```
 
 Or, to hide it in new pages:
 
 ```al
-page 50101 MyPage
+page 50101 MyPage
 {
-    PageType = Card;
-    ApplicationArea = All;
+    PageType = Card;
+    ApplicationArea = All;
 
     ...
-    layout
-    {
-        area(FactBoxes)
-        {
-            systempart(DefaultSummaryPart; Summary)
-            {
-                Visible = false;
-            }
-        }
-    }
-    ...
+    layout
+    {
+        area(FactBoxes)
+        {
+            systempart(DefaultSummaryPart; Summary)
+            {
+                Visible = false;
+            }
+        }
+    }
+    ...
 }
 ```
 
 > [!NOTE]
-> There can only be one summary system part per page.
+> A page can contain only one `Summary` system part.
 
 
 ## Filtering data displayed on a page in a FactBox
 
-In many cases, you want to change the content that is displayed on the page in the FactBox based on the content of the main page. For example, if the main page is a Customer List, you can have a FactBox that includes the Customer Details page that shows information about a customer. When a user selects a customer in the Customer List, the Customer Details page displays information about the selected customer. To implement this functionality, you set up a table filter that associates a field in the table that is used by the Customer Details page with a field in the table that is used by the Customer List page, as shown in the next example. You can also filter on a constant value or set of conditions. 
+Use a FactBox filter to show content related to the current record on the main page. For example, a Customer List page can include a Customer Details FactBox. When a user selects a customer, the FactBox shows details for that customer. To create this behavior, associate a field in the FactBox source table with a field in the main page's source table. You can also filter on a constant value or a set of conditions.
 
 ### Example
 
-The following example 
+The following example adds a customer details FactBox to a customer list:
 
 ```AL
 page 50101 "Simple Customerlist Page"
@@ -168,7 +165,7 @@ page 50101 "Simple Customerlist Page"
             part(CustomerList; "Customer Details FactBox")
             {
                 ApplicationArea = All;
-                SubPageLink = "No." = FIELD ("No.");
+                SubPageLink = "No." = FIELD("No.");
             }
         }
     }
@@ -181,15 +178,15 @@ Having a page composed of multiple FactBox pages that each process data from dif
 
 1. Content on the hosting page is loaded first, and users can immediately begin interacting with it.
 2. The FactBox pane is loaded next, where each FactBox is loaded independently in sequence starting from the top.
-    1. FactBoxes having the `Visible` property evaluate to `false` won't be loaded.
+    1. FactBoxes whose `Visible` property evaluates to `false` aren't loaded.
     2. FactBoxes that aren't within view are only loaded when the user scrolls them into view.
-If the FactBox pane is collapsed, no FactBoxes are loaded until the user expands the FactBox pane.
+3. If the FactBox pane is collapsed, no FactBoxes are loaded until the user expands it.
 
 The following are some practical tips to help you make the most of this optimization:
 
-- Consider hiding any FactBoxes that represent secondary content that only some users require. Learn more about [Choosing the visibility of parts](devenv-designing-parts.md#choosing-the-visibility-of-parts).  
-- For FactBoxes that require heavy processing, consider processing in the page background task. Learn more about [Using page background tasks](devenv-designing-parts.md#using-page-background-tasks).  
-- Avoid having triggers on the hosting page that call into a FactBox because this condition forces the FactBox to ignore performance optimizations and load along with the content of the hosting page, adding to the total loading time. 
+- Consider hiding any FactBoxes that represent secondary content that only some users require. Learn more about part visibility in [Choosing the visibility of parts](devenv-designing-parts.md#choosing-the-visibility-of-parts).
+- For FactBoxes that require heavy processing, consider processing in the page background task. Learn more about background processing in [Using page background tasks](devenv-designing-parts.md#using-page-background-tasks).
+- Avoid triggers on the hosting page that call into a FactBox. These triggers bypass FactBox performance optimizations and force the FactBox to load with the hosting page, which increases load time.
  
 ### FAQ about performance
 
@@ -203,7 +200,7 @@ In this scenario, the `OnOpenPage` trigger is only run the first time. Once a Fa
 
 #### Are FactBoxes processed asynchronously?
 
-No. This optimization is simply a controlled sequence in which triggers are run, still within the same session as the hosting page. For more information about asynchronous processing in the background, see [Designing page parts for page background tasks](devenv-page-background-tasks.md#partpages).
+No. This optimization is simply a controlled sequence in which triggers are run, still within the same session as the hosting page. Learn more about asynchronous background processing in [Designing page parts for page background tasks](devenv-page-background-tasks.md#partpages).
 
 #### Does this optimization work with SubPageLink or SubPageView properties?
 
@@ -227,7 +224,7 @@ Each browser has its own definition of whether a FactBox is considered within vi
 
 #### Does this optimization apply to other form factors?
 
-This applies to desktop, tablet, and phone clients.
+This optimization applies to desktop, tablet, and phone clients where FactBoxes are supported. On tablet and phone clients, FactBoxes are shown on `Card` and `Document` pages, but not on `List` or `Worksheet` pages.
 
 ## Related information 
  

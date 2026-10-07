@@ -2,7 +2,7 @@
 title: "Compiler Error AL0665"
 description: "'{0}' is not a valid return type in runtime version '{1}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "RecordRef.IsDirty() Method"
 description: "Gets a boolean value that indicates whether the current in-memory record instance has different values than when it was loaded from the database."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

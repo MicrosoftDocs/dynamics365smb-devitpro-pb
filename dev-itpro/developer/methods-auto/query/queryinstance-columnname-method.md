@@ -2,7 +2,7 @@
 title: "Query.ColumnName(Any) Method"
 description: "Returns the name of a query column as a text string."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

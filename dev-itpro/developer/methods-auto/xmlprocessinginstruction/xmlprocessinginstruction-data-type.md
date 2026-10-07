@@ -2,7 +2,7 @@
 title: "XmlProcessingInstruction data type"
 description: "Represents a processing instruction, which XML defines to keep processor-specific information in the text of the document."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

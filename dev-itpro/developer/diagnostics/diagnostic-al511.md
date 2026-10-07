@@ -2,7 +2,7 @@
 title: "Compiler Error AL0511"
 description: "The property 'IsControlAddIn' must be set on the .NET type '{0}' if the type represents a .NET control add-in."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

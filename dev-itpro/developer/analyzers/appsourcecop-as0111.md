@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0111"
 description: "Permission set extensions should not include permission sets from another application."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

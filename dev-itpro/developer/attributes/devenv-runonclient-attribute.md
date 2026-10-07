@@ -2,7 +2,7 @@
 title: "RunOnClient attribute"
 description: "Sets whether a .NET object that is defined by a variable is run on the Business Central Web client or Dynamics 365 Business Central service."
 ms.author: solsen
-ms.date: 08/19/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "JsonToken.AsArray() Method"
 description: "Converts the value in a JsonToken to a JsonArray data type."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0548"
 description: "Cannot move symbol '{0}' from '{1}' area to '{2}' area."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -1,17 +1,17 @@
 ---
-title: Add tooltips to table and page fields
+title: Add Tooltips to Table and Page Fields
 description: Description of how you use AL to add tooltips to table and page fields so that they're available when users hover over fields in the client.
 author: kennieNP
 ms.reviewer: jswymer
-ms.date: 03/13/2024
+ms.date: 10/06/2026
 ms.topic: how-to
 ms.author: kepontop
 ms.collection: get-started
 ---
 
-# Add tooltips to table and page fields
+# Define tooltips for table and page fields
 
-Even the best designed user interface can still be confusing to some. It can be difficult to predict what users find confusing, and that's why the base application includes tooltips for all fields on pages. Tooltips help users unblock themselves by providing an answer to the most likely questions the users might have, such as "What data can I input here?" or "What is the data used for?". So keep tooltips in mind when you develop the user interface of your solution.
+Even a well-designed user interface can confuse some users. You can't predict every question, so the base application includes tooltips for all page fields. Tooltips explain what data users can enter and how Business Central uses it. Keep tooltips in mind when you develop your solution's user interface.
 
 Learn more in [Help users get unblocked (by providing tooltips)](../user-assistance.md#help-users-get-unblocked).
 
@@ -39,13 +39,13 @@ table 50102 MyTable
 ```
 
 > [!TIP]
-> The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code comes with a CodeCop warning AA0234 - *You must write a tooltip in the Tooltip property for all fields on table objects*. Consider enabling the rule if you want to ensure that all fields get a tooltip defined. Learn more in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
+> The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code includes the CodeCop informational rule `AA0234`: *You should write a tooltip in the Tooltip property for all fields on table objects*. Consider enabling the rule if you want to ensure that all fields have a tooltip. Learn more about code analysis in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 
 ## Overriding tooltips on table fields (2024 release wave 1 or later)
 
-Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip, but if you define a tooltip on the page field, then this version of the tooltip will be displayed in the client.
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. A page field inherits a table field's tooltip unless you define another tooltip on the page field. In that case, the client displays the page field's tooltip.
 
-The following example shows how a page overrides tooltips that were defined on the table level:
+The following example shows how a page field overrides a tooltip defined on a table field:
 
 ```AL
 page 50103 MyPage
@@ -63,12 +63,12 @@ page 50103 MyPage
             {
                 field(First; Rec.MyField)
                 {                   
-                    ToolTip = 'This tooltip overwrites the tooltip defined on the table field.'
+                    ToolTip = 'This tooltip overwrites the tooltip defined on the table field.';
                 }
 
                 field(Second; Rec.MySecondField)
                 {    
-                    ToolTip = 'Tooltip on page field (it was never defined on the table)'
+                    ToolTip = 'Tooltip on page field (it was never defined on the table)';
                 }
             }
         }
@@ -82,7 +82,7 @@ page 50103 MyPage
 
 In [!INCLUDE[prod_short](includes/prod_short.md)] 2023 release wave 2 or earlier, you can only define tooltips on page fields. 
 
-In case you need to display a table field in multiple pages (for example, on a card and a list), then you need to duplicate the code for the definition of the tooltip.
+If you display a table field on multiple pages, such as a card and a list, you must define the tooltip on each page.
 
 ## Related information
 

@@ -1,30 +1,32 @@
 ---
-title: Adding Custom Filter Tokens
-description: Learn how to use filter tokens to save time when you filter data in lists.
-ms.date: 04/01/2021
+title: Create Custom Filter Tokens in Business Central
+description: Learn how to create custom filter tokens in AL so users can enter shortcuts that resolve to reusable filter values in Business Central lists.
+ms.date: 10/06/2026
 ms.topic: concept-article
 author: mikebcMSFT
+ms.author: mikebc
+ms.reviewer: jswymer
 ---
 
-# Adding Custom Filter Tokens
+# Create a custom filter token
 
 In the client, when filtering lists using the filter pane, users can enter filter tokens, which are special words that resolve to one or more values. This powerful feature makes filtering easier by reducing the need to navigate to other pages to look up values to enter as filter criteria.
 
-There are several useful filter tokens available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For example, entering **%mycustomers** in a **Customer No.** field will resolve to the set of customers in the user's **My Customers** list such as `1001|1002`, making it easy to find relevant sales orders for customers 1001 and 1002.
+[!INCLUDE[prod_short](includes/prod_short.md)] provides several useful filter tokens. For example, when you enter `%mycustomers` in a **Customer No.** field, it resolves to the set of customers in the user's **My Customers** list, such as `1001|1002`. The resolved filter makes it easy to find relevant sales orders for customers 1001 and 1002.
 
-You can add custom filter tokens and make these available in any language and across the application. To add your custom filter token, you need to define the token word that users will enter as filter criteria, and define a handler that resolves the token to a concrete value at runtime. For more information, see [Filter Tokens](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Filter%20Tokens) in our BCApps repository on GitHub.
+You can add custom filter tokens and make these available in any language and across the application. To add your custom filter token, you need to define the token word that users will enter as filter criteria, and define a handler that resolves the token to a concrete value at runtime. Learn more about filter tokens in [Filter Tokens](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Filter%20Tokens) in the BCApps repository on GitHub.
 
-## Defining the token word and the handler
+## Define the token word and handler
 
 To create the token word, start by defining a multi-language text string for your word. Subscribe to the `OnResolveTextFilterToken` event associated with the `MakeTextFilter` method from the `Filter Tokens` codeunit.  
-In the event subscriber, if the value of the `TextToken` parameter contains the token string, process its value and construct the final filter string. If the filter string must contain multiple values, you must handle the operators that join them by adding the `|` filter symbol (OR operation). Complete the operation by setting the value of the `TextFilter` parameter to the value of the final filter string.
+In the event subscriber, if the value of the `TextToken` parameter contains the token string, process its value and construct the final filter string. If the filter string must contain multiple values, handle the operators that join them by adding the `|` filter symbol (OR operation). Complete the operation by setting the `TextFilter` parameter to the final filter string and the `Handled` parameter to `true`.
 
 > [!TIP]  
 > Filter criteria will often contain symbols along with filter tokens. We recommend that you only modify the filter token you have introduced and preserve the rest of the filter string.
 
-## Example
+## Create a custom filter token
 
-This example shows how you can use the guidelines above to create the **%MYTOKEN** filter token. This will return a filter with the accounts marked as favorite by the user.
+This example shows how you can use the guidelines to create the `%MYTOKEN` filter token. The token returns a filter with the accounts that the user marked as favorites.
 
 > [!NOTE]  
 > To keep this sample short and simple, the entire filter string is overwritten.
@@ -37,11 +39,12 @@ codeunit 50101 MyAccountFilterTokenSimple
     var
         MyAccount: Record "My Account";
         MaxCount: Integer;
+        MyTokenLbl: Label 'MYTOKEN';
     begin
         if StrLen(TextToken) < 3 then
             exit;
 
-        if StrPos(UpperCase('MYTOKEN'), UpperCase(TextToken)) = 0 then
+        if StrPos(UpperCase(MyTokenLbl), UpperCase(TextToken)) = 0 then
             exit;
 
        Handled := true;
@@ -63,7 +66,7 @@ codeunit 50101 MyAccountFilterTokenSimple
 
 }
 ```
-To try it out in the client, open the `Charts of Accounts` page, filter on **No.** field, and type in a substring that starts the same way with the chosen token word, like **%MYTO**.
+To try it in the client, open the **Chart of Accounts** page, filter the **No.** field, and enter a substring that starts with the chosen token word, such as `%MYTO`.
 
 <!--
 ## Filter token example
@@ -72,14 +75,14 @@ This example extends the application with a new token word "%mysalesperson" repr
 
 ## Design considerations
 
-Resolving tokens is intended to be fast, simple, and reliable. When implementing event subscribers to resolve filter tokens, keep in mind that these events can be triggered from any user task in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and in some cases may be triggered repeatedly such as when searching across columns. To improve usability and reduce the impact on performance, do consider the following practices:
+Filter tokens must resolve quickly and reliably. These events can run for any user task in [!INCLUDE[prod_short](includes/prod_short.md)]. In some cases, they run repeatedly, such as when users search across columns. To improve usability and performance, consider these practices:
 
- - Avoid implementing tokens that are only relevant to few business tasks, or assume they are used in the context of a specific page.
- - Avoid implementing tokens that are time-consuming to resolve. Examples of this include looking up records in large or poorly indexed tables, or fetching data from a remote service.
- - Avoid implementing tokens that are complex or unreliable and may result in error.
- - Avoid displaying pages, dialogs or any other form of interactive UI.
+- Avoid implementing tokens that are relevant to only a few business tasks or that assume they're used in the context of a specific page.
+- Avoid implementing tokens that are time-consuming to resolve. Examples include looking up records in large or poorly indexed tables and fetching data from a remote service.
+- Avoid implementing tokens that are complex or unreliable and might result in an error.
+- Avoid displaying pages, dialogs, or any other form of interactive UI.
 
 
 ## Related information
 
-[Sorting, Searching and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters)
+[Sorting, searching, and filtering lists](/dynamics365/business-central/ui-enter-criteria-filters)

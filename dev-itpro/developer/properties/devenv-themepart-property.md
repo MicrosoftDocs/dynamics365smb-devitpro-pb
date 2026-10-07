@@ -2,7 +2,7 @@
 title: ThemePart Property for Report Layouts
 description: Learn how the ThemePart property sets the theme part that gives a Body Word report layout its fonts, colors, and styles in Business Central.
 ms.author: solsen
-ms.date: 09/01/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

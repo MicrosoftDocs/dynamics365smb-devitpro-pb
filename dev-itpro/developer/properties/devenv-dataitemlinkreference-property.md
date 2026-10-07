@@ -2,7 +2,7 @@
 title: "DataItemLinkReference property"
 description: "Sets the parent data item to which a child (indented) data item is linked."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

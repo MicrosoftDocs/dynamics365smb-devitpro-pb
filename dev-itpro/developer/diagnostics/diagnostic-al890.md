@@ -2,7 +2,7 @@
 title: "Compiler Error AL0890"
 description: "The identifier assigned to the Summary SystemPart type is not valid."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

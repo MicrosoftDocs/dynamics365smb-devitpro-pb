@@ -1,7 +1,7 @@
 ---
 title: SubType Property for Codeunits
 description: Learn how the SubType property defines the purpose and runtime behavior of a codeunit in Dynamics 365 Business Central and review its values.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

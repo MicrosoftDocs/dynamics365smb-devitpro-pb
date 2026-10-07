@@ -2,7 +2,7 @@
 title: "Query.SetFilter(Any, Text [, Any,...]) Method"
 description: "Sets a filter on a column of a query to limit the records in the resulting data set of a query."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

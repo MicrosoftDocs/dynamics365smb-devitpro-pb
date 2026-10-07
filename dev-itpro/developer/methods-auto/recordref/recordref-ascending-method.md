@@ -2,7 +2,7 @@
 title: "RecordRef.Ascending([Boolean]) Method"
 description: "Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

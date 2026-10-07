@@ -2,7 +2,7 @@
 title: "MediaSet.ImportFile(Text, Text [, Text]) Method"
 description: "Adds a media, such as a JPEG image, to the MediaSet data type field of a record for displaying the media in the client."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

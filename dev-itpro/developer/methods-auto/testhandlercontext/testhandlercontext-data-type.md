@@ -2,7 +2,7 @@
 title: "TestHandlerContext data type"
 description: "Provides context information about a test codeunit or procedure being run."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

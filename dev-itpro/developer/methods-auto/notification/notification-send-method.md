@@ -2,7 +2,7 @@
 title: "Notification.Send() Method"
 description: "Sends the notification to the client, where it will display in the UI."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

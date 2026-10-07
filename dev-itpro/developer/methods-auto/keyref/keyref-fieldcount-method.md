@@ -2,7 +2,7 @@
 title: "KeyRef.FieldCount() Method"
 description: "Gets the number of fields that have been defined in a key."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

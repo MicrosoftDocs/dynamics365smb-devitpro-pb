@@ -2,7 +2,7 @@
 title: "Version.Create(Integer, Integer [, Integer] [, Integer]) Method"
 description: "Creates a version object from the major, minor, build and revision numbers provided."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "UICop Warning AW0013"
 description: "From Business Central 2022 Wave 2, promoted actions defined in a hidden group are rendered on the promoted side of the action bar only if the 'Modern Action Bar' feature is disabled for the environment."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

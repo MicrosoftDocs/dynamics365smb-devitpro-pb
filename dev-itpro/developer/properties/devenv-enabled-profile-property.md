@@ -2,7 +2,7 @@
 title: Enabled Profile Property Reference
 description: Learn how the Enabled property controls whether a profile is available to users in Dynamics 365 Business Central and review its default value.
 author: SusanneWindfeldPedersen
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 ms.author: solsen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "List.GetRange(Integer, Integer, var List of [T]) Method"
 description: "Get a shallow copy of a range of elements in the source."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

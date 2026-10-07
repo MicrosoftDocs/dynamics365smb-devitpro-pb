@@ -2,7 +2,7 @@
 title: "Compiler Error AL0887"
 description: "A member of type {0} named '{1}' conflicts with a similarly named member '{2}' of {3} {4}."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

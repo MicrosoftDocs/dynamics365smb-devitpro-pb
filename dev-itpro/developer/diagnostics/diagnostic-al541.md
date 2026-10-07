@@ -2,7 +2,7 @@
 title: "Compiler Error AL0541"
 description: "The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

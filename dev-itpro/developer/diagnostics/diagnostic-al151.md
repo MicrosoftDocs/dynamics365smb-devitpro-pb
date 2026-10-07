@@ -2,7 +2,7 @@
 title: "Compiler Error AL0151"
 description: "Expression must be an Option type."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

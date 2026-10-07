@@ -2,7 +2,7 @@
 title: "RecordRef.Reset() Method"
 description: "Removes all filters, including any special filters set by the MarkedOnly method (Record), changes fields select for loading back to all, sets the read isolation level to the default value, and changes the current key to the primary key."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

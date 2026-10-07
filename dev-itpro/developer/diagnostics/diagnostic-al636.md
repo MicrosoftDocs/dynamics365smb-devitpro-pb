@@ -2,7 +2,7 @@
 title: "Compiler Error AL0636"
 description: "The data type on the field '{0}' is not valid because the ExtendedDatatype property is set to RichText."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

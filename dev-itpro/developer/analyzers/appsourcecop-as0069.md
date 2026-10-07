@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0069"
 description: "An enum field replacing an option field should have at least the same number of values as the number of options members defined on the field in the previous version of the extension."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

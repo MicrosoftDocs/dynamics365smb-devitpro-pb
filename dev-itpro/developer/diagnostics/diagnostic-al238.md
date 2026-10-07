@@ -2,7 +2,7 @@
 title: "Compiler Error AL0238"
 description: "No overload for attribute '{0}' expects {1} arguments."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

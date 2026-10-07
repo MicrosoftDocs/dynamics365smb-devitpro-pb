@@ -2,7 +2,7 @@
 title: "Report.RunRequestPage([Text]) Method"
 description: "Runs the request page for a report without running the report."
 ms.author: solsen
-ms.date: 05/04/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

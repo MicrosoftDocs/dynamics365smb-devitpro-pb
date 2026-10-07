@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0606"
 description: "The 'with' statement is deprecated and will be removed for cloud development in a future release."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -1,9 +1,9 @@
 ---
-title: Use the this keyword for codeunit self-reference
-description: Enhance readability and pass current objects as arguments in AL codeunits using the self-reference keyword this.
+title: Use the AL this Keyword for Object Self-Reference
+description: Use the AL this keyword to qualify object members, improve code readability, and pass the current codeunit instance to other methods.
 ms.reviewer: solsen
 ms.topic: concept-article
-ms.date: 08/21/2024
+ms.date: 10/07/2026
 author: SusanneWindfeldPedersen
 ms.collection: get-started
 ms.custom:
@@ -13,11 +13,11 @@ ms.custom:
   - ai-seo-date:08/21/2024
 ---
 
-# Use the `this` keyword for codeunit self-reference
+# Reference the current AL object with the "this" keyword
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The `this` keyword is known from many programming languages such as C#, JavaScript, and Python. The `this` keyword can be used in codeunits in AL as a self-reference, and it allows passing the current object as an argument to methods. Additionally, using the `this` keyword enhances readability in larger methods by clearly indicating whether a variable is in the global or local scope.
+The `this` keyword is familiar from languages such as C#, JavaScript, and Python. In AL, it provides a self-reference for an object. For codeunits, you can also pass `this` as an argument or return it as the current codeunit instance. The keyword improves readability by distinguishing object members from local symbols.
 
 ## Scenarios for using `this`
 
@@ -26,10 +26,10 @@ The main benefits of using the `this` keyword are:
 - It allows codeunits to pass a reference to the current object (`this`) as an argument to another method.
 - It improves readability by indicating that a referenced symbol is a member of the object itself.
 
-The CodeCop rule [AA0248](analyzers/codecop-aa0248.md) is enabled by default with a severity level of `hidden`. Hidden means that it appears as three dots in the editor, but doesn't show up as a diagnostic in the **Problems** view in Visual Studio Code or in any pipelines. The CodeCop rule identifies where you can take advantage of using the `this` keyword. Additionally, a code action can help you update existing code to use the `this` keyword. Learn more in [AL code actions](devenv-code-actions.md).
+The CodeCop rule [AA0248](analyzers/codecop-aa0248.md) is enabled by default with a severity level of `hidden`. Hidden means that it appears as three dots in the editor, but doesn't show up as a diagnostic in the **Problems** view in Visual Studio Code or in any pipelines. The CodeCop rule identifies places where you can use the `this` keyword. A code action can update existing code to use the keyword. Learn more about applying code actions in [AL code actions](devenv-code-actions.md).
 
-> [!NOTE]  
-> The newest version of the [System Application](/dynamics365/business-central/application/system-application/module/system-application) has been updated to use the `this` keyword for referencing methods and globals within the same object.
+> [!NOTE]
+> The current [System Application](/dynamics365/business-central/application/system-application/module/system-application) uses the `this` keyword to reference methods and globals in the same object.
 
 ## Related information
 

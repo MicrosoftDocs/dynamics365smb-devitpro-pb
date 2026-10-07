@@ -2,7 +2,7 @@
 title: "Compiler Error AL0580"
 description: "The field '{0}' is used by the system and cannot be specified as a table key."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

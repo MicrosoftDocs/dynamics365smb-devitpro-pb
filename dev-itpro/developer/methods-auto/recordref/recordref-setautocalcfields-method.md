@@ -2,7 +2,7 @@
 title: "RecordRef.SetAutoCalcFields([Integer,...]) Method"
 description: "Sets the FlowFields that you specify to be automatically calculated when the RecordRef is retrieved from the database."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

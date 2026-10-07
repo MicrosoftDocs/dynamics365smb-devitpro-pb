@@ -1,7 +1,7 @@
 ---
 title: Promoted Property for Profiles
 description: Learn how the Promoted property controls whether a profile is available in Role Explorer in Dynamics 365 Business Central.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

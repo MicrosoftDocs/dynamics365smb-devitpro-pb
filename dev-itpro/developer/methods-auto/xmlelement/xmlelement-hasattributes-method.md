@@ -2,7 +2,7 @@
 title: "XmlElement.HasAttributes() Method"
 description: "Gets a boolean value indicating whether this element has at least one attribute."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

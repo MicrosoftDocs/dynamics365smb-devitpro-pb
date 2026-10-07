@@ -2,7 +2,7 @@
 title: "UICop Warning AW0014"
 description: "Actionrefs whose target actions are defined in a hidden group are still rendered on the promoted section of the command bar, but this behavior might change and these actionrefs might be hidden in the future."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

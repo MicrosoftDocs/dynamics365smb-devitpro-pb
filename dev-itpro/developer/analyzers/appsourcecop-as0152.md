@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0152"
 description: "Dependent enum extensions have the default implementation codeunit's object ID baked into their compiled metadata."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

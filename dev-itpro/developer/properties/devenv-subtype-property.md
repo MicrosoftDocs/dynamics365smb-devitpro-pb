@@ -1,7 +1,7 @@
 ---
 title: SubType Property Reference in AL
 description: Learn where to use the SubType property for BLOB table fields and codeunits in Dynamics 365 Business Central and compare their values.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

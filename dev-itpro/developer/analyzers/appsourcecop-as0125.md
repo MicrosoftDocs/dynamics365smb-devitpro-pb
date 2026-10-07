@@ -2,7 +2,7 @@
 title: "AppSourceCop Info AS0125"
 description: "Changes affecting the XLIFF translation ID of an object or object member that has been published are not allowed, because this will break the translations provided by dependent extensions for your extension."
 ms.author: solsen
-ms.date: 08/25/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

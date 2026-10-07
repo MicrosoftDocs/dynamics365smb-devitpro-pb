@@ -2,7 +2,7 @@
 title: "RecordRef.CurrentKeyIndex([Integer]) Method"
 description: "Gets or sets the current key of the table referred to by the RecordRef."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

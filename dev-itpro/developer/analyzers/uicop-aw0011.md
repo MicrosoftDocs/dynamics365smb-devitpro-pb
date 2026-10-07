@@ -2,7 +2,7 @@
 title: "UICop Info AW0011"
 description: "Add PromotedOnly=true to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

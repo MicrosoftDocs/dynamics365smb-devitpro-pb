@@ -2,7 +2,7 @@
 title: "Compiler Information AL1080"
 description: "Source will still be visible for this extension via debugging because 'allowDebugging' has been set to true."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

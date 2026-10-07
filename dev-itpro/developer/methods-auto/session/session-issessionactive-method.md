@@ -2,7 +2,7 @@
 title: "Session.IsSessionActive(Integer) Method"
 description: "Tests if the specified SessionID is active on the server instance where it was started."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0757"
 description: "The metadata name of {0} '{1}' conflicts with {2} '{3}' defined in {4} '{5}' by the extension '{6}'."
 ms.author: solsen
-ms.date: 04/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

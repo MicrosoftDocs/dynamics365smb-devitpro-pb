@@ -2,7 +2,7 @@
 title: "Compiler Designer customization warning AL1427"
 description: "You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customization '{4}'."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

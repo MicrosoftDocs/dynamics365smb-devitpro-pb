@@ -2,7 +2,7 @@
 title: "PdfFontEmbedding property"
 description: "Specifies whether fonts are embedded in PDF files that are generated for reports."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -1,20 +1,20 @@
 ---
-title: Pragma directive in AL
-description: Types of pragma directives supported in AL for Business Central.
+title: Pragma Directives in AL Overview
+description: Explore the pragma directives and supported actions that control compiler warnings and implicit record contexts in Microsoft Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 06/02/2025
+ms.date: 10/05/2026
 ms.topic: overview
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Pragma directive in AL
+# Pragma directives and actions in AL
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-## Pragma
+## Supported pragma directives
 
-The `#pragma` directive gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has many actions that can be used with the pragma instructions in the following sections, which are `disable`, `restore`, and `enable`. 
+The `#pragma` directive gives the compiler special instructions for the compilation of the file in which it appears. AL supports two pragma instructions. `#pragma warning` supports the `disable` and `restore` actions. `#pragma implicitwith` supports the `enable`, `disable`, and `restore` actions.
 
 AL supports the following pragma instructions:
 

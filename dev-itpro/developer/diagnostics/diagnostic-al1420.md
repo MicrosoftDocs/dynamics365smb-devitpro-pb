@@ -2,7 +2,7 @@
 title: "Compiler Designer customization warning AL1420"
 description: "The {0} '{1}' cannot be used as target of the ActionRef '{2}'."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

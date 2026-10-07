@@ -2,7 +2,7 @@
 title: "Compiler Designer customization warning AL1422"
 description: "The target action '{0}' cannot be resolved in page '{1}'."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "JsonObject.WriteWithSecretsTo(Text, SecretText, var SecretText) Method"
 description: "Replaces the placeholder value in the path with the secret and then serializes and writes the content of the JsonObject to a SecretText."
 ms.author: solsen
-ms.date: 06/10/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

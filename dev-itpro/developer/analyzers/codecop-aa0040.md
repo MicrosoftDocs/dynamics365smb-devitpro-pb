@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0040"
 description: "It can be difficult to see what variable that a member variable or function refers to, when nesting WITH statements of variables with different types."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

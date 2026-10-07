@@ -2,7 +2,7 @@
 title: "Compiler Error AL0874"
 description: "Pages with SubType set to UserControlHost must specify exactly one control of type usercontrol in the Content Area."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

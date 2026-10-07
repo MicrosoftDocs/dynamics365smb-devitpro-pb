@@ -2,7 +2,7 @@
 title: "Xmlport.Filename([Text]) Method"
 description: "Gets the current value of the FileName Property of an XmlPort and sets this property to a new value."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

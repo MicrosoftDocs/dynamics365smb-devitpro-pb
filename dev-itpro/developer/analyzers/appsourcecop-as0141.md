@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0141"
 description: "When a table is moved from one app to another under the Application umbrella, the destination table must have the MovedFrom property set to the source app ID."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

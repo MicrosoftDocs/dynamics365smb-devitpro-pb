@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0909"
 description: "The analysis view definition file for '{0}' has a dependency on app '{1}' by '{2}' with version '{3}', which is missing on this project."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

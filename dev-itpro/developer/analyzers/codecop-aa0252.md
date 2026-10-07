@@ -2,7 +2,7 @@
 title: "CodeCop Error AA0252"
 description: "Moving external business events to another app is not allowed as it can introduce breaking changes for external subscribers."
 ms.author: solsen
-ms.date: 08/05/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

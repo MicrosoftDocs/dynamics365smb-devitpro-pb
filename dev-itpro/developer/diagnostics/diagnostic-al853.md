@@ -2,7 +2,7 @@
 title: "Compiler Error AL0853"
 description: "'{0}' cannot be used as a part in '{1}' because it causes a circular reference."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

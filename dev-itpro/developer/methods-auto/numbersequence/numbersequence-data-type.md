@@ -2,7 +2,7 @@
 title: "NumberSequence data type"
 description: "Is a complex data type for creating and managing number sequences in the database."
 ms.author: solsen
-ms.date: 08/08/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

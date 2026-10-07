@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0147"
 description: "Starting with runtime version 18.0 (2026 release wave 2), you can change a procedure parameter from Integer to BigInteger."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

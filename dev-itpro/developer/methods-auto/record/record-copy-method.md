@@ -2,7 +2,7 @@
 title: "Record.Copy(Record [, Boolean]) Method"
 description: "Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record."
 ms.author: solsen
-ms.date: 06/04/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "SourceTable property"
 description: "Sets the ID of the table from which this page will display records."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

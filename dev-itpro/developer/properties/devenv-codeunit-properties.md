@@ -1,7 +1,7 @@
 ---
 title: Codeunit Object Properties in AL
 description: Review the AL properties that apply to codeunit objects in Dynamics 365 Business Central, with links to syntax and usage details for each property.
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.author: solsen

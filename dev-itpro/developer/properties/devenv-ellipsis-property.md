@@ -2,7 +2,7 @@
 title: "Ellipsis property"
 description: "Sets a value that specifies whether an ellipsis (...) is appended to the caption on a command button or menu item."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

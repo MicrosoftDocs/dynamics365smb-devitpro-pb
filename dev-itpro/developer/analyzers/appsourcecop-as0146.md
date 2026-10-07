@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0146"
 description: "Starting with runtime version 18.0 (Fall 2026), you can change a table field from Integer to BigInteger."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

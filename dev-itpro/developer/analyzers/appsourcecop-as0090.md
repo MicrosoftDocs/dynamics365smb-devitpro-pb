@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0090"
 description: "Objects than can be referenced and which have been published must not be renamed because it might break the upgrade of existing installations and dependent extensions."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Report.CreateTotals(var Decimal [, var Decimal,...]) Method"
 description: "Maintains totals for a variable in AL."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

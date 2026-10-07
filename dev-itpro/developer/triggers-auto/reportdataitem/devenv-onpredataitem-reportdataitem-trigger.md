@@ -2,7 +2,7 @@
 title: "OnPreDataItem (Report Data Item) trigger"
 description: "Runs before a data item is processed."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

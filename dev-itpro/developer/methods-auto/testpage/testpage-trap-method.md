@@ -2,7 +2,7 @@
 title: "TestPage.Trap() Method"
 description: "Traps the next test page that is invoked and assigns it to the test page variable."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

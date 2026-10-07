@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0753"
 description: "The name of a dataitem cannot be empty because it can cause runtime errors."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

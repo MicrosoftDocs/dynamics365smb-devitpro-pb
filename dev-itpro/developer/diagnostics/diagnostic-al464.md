@@ -2,7 +2,7 @@
 title: "Compiler Error AL0464"
 description: "Could not determine a suitable default primary key for table '{0}'."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

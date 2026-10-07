@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0102"
 description: "It is not allowed to add a return value to a publicly exposed procedure, because it might break dependent extensions at runtime."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

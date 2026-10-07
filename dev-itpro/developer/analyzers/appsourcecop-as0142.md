@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0142"
 description: "A table with a published SQL schema cannot be moved between apps."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

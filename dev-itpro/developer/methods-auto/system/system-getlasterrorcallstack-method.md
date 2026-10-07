@@ -2,7 +2,7 @@
 title: "System.GetLastErrorCallStack() Method"
 description: "Gets the call stack from where the last error occurred."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

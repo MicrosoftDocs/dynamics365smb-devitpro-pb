@@ -2,7 +2,7 @@
 title: "Compiler Error AL0683"
 description: "The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

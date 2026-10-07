@@ -2,7 +2,7 @@
 title: Control Add-In Object Properties
 description: Review the AL properties that apply to control add-in objects in Dynamics 365 Business Central, with links to details for each property.
 author: solsen
-ms.date: 08/21/2026
+ms.date: 10/01/2026
 ms.topic: reference
 ms.author: solsen
 ms.reviewer: solsen

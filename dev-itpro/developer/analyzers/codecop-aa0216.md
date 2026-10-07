@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0216"
 description: "Use a text constant for passing user messages and errors without concatenations."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

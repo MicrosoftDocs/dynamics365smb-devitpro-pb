@@ -2,7 +2,7 @@
 title: "Label.TrimStart([Text]) Method"
 description: "Removes all leading occurrences of a set of characters specified in an array from the current Text object."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

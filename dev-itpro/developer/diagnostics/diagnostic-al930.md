@@ -2,7 +2,7 @@
 title: "Compiler Error AL0930"
 description: "The DefaultThemePart property can only be used with layouts that have the Theme subtype specified in the report's rendering section."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

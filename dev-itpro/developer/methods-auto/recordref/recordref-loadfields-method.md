@@ -2,7 +2,7 @@
 title: "RecordRef.LoadFields(Integer,...) Method"
 description: "Accesses the table's corresponding data source and loads the values of the specified fields on the record."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: "Compiler Error AL0927"
 description: "The '{0}' with ID {1} is not valid because it is not from the System application."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

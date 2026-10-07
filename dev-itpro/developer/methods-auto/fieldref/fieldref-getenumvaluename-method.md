@@ -2,7 +2,7 @@
 title: "FieldRef.GetEnumValueName(Integer) Method"
 description: "Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

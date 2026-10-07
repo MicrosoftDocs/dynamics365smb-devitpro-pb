@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0448"
 description: "If you want to enable your application for multilanguage functionality, you must use the FieldCaption and TableCaption methods instead of the FieldName and TableName methods."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

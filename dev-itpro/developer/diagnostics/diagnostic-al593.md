@@ -2,7 +2,7 @@
 title: "Compiler Warning (future error) AL0593"
 description: "The type of the parameter '{0}' on the event subscriber '{1}' has a smaller capacity than the parameter type '{2}' on the publisher."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

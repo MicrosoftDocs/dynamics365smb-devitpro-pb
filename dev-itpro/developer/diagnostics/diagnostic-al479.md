@@ -2,7 +2,7 @@
 title: "Compiler Warning AL0479"
 description: "There must be only one translation item for each ID."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

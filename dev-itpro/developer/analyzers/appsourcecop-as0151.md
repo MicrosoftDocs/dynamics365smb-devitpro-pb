@@ -2,7 +2,7 @@
 title: "AppSourceCop Info AS0151"
 description: "The FullNamespaceScope feature is enabled but mandatory affix settings (mandatoryAffixes, mandatoryPrefix, or mandatorySuffix) are also configured."
 ms.author: solsen
-ms.date: 08/31/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

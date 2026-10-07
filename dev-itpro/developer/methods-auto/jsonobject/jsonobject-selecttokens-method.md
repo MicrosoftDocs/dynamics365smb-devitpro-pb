@@ -2,7 +2,7 @@
 title: "JsonObject.SelectTokens(Text, var List of [JsonToken]) Method"
 description: "Selects tokens based on a JPath expression and returns them in a new list."
 ms.author: solsen
-ms.date: 03/11/2026
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

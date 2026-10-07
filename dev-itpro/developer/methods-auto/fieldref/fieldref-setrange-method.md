@@ -2,7 +2,7 @@
 title: "FieldRef.SetRange([Any] [, Any]) Method"
 description: "Sets a simple filter on a field, such as a single range or a single value."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/01/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
