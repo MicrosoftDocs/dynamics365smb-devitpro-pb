@@ -1,24 +1,27 @@
 ---
-title: Debug upgrade and install code
-description: Overview of debugging upgrade and install codeunits in AL for Business Central
+title: Debug Upgrade and Install Code in AL
+description: Debug AL install and upgrade codeunits by attaching to Business Central before you publish an extension from Visual Studio Code.
 author: SusanneWindfeldPedersen
-ms.date: 08/01/2022
-ms.topic: install-set-up-deploy
+ms.date: 10/07/2026
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Debug upgrade and install code
+# Debug extension installation and upgrade
 
-To test and troubleshoot issues in install and upgrade code, it's important to ensure that these processes run smoothly when the app is installed for the first time or when it's upgraded. You can add breakpoints in the install or upgrade code, and then attach and trigger publishing of an extension to debug these scenarios.
+Use an attach debugging session to test and troubleshoot install and upgrade codeunits when an extension is installed or upgraded.
 
 ## Attach and debug
 
-1. In Visual Studio Code, ensure that you've a `launch.json` file with the `request` option set to `attach`. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).  
-1. Add one or more breakpoints in the code that you want to debug. For more information, see [Debugging](devenv-debugging.md).  
-    > [!NOTE]  
-    > If you *don't* increment the version of the app, the install codeunits will *not* be invoked. If you *do* increment the version of the app, or if you set the `forceUpgrade` flag to `true` in the `launch.json` file, the upgrade codeunits will be invoked.
-1. If your app isn't yet published, then use <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to publish the app file first; the `attach` option won't publish the app. After, start the attach session as you would normally start the debugging session with <kbd>F5</kbd>.  
+1. In Visual Studio Code, configure `launch.json` with `request` set to `attach`. Make sure that `useSystemSessionForDeployment` is `false`, which is the default. When it's `true`, install and upgrade codeunits run in a system session and can't be debugged.
+1. Add breakpoints to the install or upgrade code that you want to debug.
+1. Press <kbd>F5</kbd> to start the attach debugging session.
+1. After the debugger attaches, press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run **Publish extension without building**.
+
+If you don't increment the app version, the install codeunits run. If you increment the app version or set `forceUpgrade` to `true` in `launch.json`, the upgrade codeunits run.
+
+Learn more about attach configurations in [Attach and debug next](devenv-attach-debug-next.md). Learn more about setting breakpoints in [Debugging in AL](devenv-debugging.md).
 
 ## Related information
 
