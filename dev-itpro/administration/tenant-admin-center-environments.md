@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 07/28/2026
+ms.date: 09/28/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: sfi-image-nochange
@@ -27,7 +27,10 @@ In the environments list, you can view more details by choosing the link in the 
 
 ## Linked Power Platform environment
 
-A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can link to a Power Platform environment of the same type (production or sandbox) in the same Azure Geo. When you link to a Power Platform environment, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits selected settings from the Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center shows the status. It also provides a default target environment when setting up features that integrate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Power Platform and other Dynamics 365 products. Links between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments and Power Platform environments are exclusive. You can't simultaneously link multiple [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments to a single Power Platform environment or vice versa.
+A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can link to a Power Platform environment of the same type (production or sandbox). When you link to a Power Platform environment, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits selected settings from the Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center shows the status. It also provides a default target environment when setting up features that integrate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Power Platform and other Dynamics 365 products. Links between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments and Power Platform environments are exclusive. You can't simultaneously link multiple [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments to a single Power Platform environment or vice versa.
+
+> [!IMPORTANT]
+> Business Central and Power Platform environments can currently be linked across Azure geographies as Power Platform environments are created for [Macro Region Geographies](/power-platform/admin/macro-regions). However, enabling [customer-managed encryption keys](../security/security-online.md#customer-managed-encryption-key) requires the linked environments to reside in the same geography. If no Power Platform environment exists in the geography of your Business Central environment, purchase [Microsoft 365 Advanced Data Residency](/microsoft-365/enterprise/advanced-data-residency) to create a new Power Platform environment in the required geography.
 
 When a link exists between a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and a Power Platform environment, several environment lifecycle operations are blocked on the Power Platform environment. You can't delete the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment if it's linked to a Power Platform environment. For environment lifecycle operations on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment that create a new environment, such as [Copy](tenant-admin-center-environments-copy.md) and [Restore](tenant-admin-center-backup-restore.md), the target environment isn't linked to a Power Platform environment as part of the operation. You can link the target environment to a different Power Platform environment after the operation that creates the environment completes.
 
@@ -46,7 +49,7 @@ To complete this task, you need to be an internal admin with a role that grants 
    > [!NOTE]
    > Only Power Platforms that meet the following conditions are available to link:
    >
-   > - In the same Azure Geo.
+   > - In the **Ready** state.
    > - Same type of environment (Production or Sandbox).
    > - Not linked to another environment already.
 
