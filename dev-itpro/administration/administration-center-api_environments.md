@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 09/28/2026
 ---
 
 # Business Central Admin Center API - Environments
@@ -685,7 +685,7 @@ GET admin/{apiVersion}/applications/{applicationType}/environments/{environmentN
 
 **INTRODUCED IN:** API version 2.21
 
-Links the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to a Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment must be linked to a Power Platform environment of the same type (i.e. Production or Sandbox) and in the same Azure Geo.
+Links the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to a Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment must be linked to a Power Platform environment of the same type (i.e. Production or Sandbox).
 
 > [!NOTE]
 > This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
@@ -708,7 +708,7 @@ POST /admin/{apiVersion}/bap/applications/{applicationFamily}/environments/{envi
 200 OK.
 
 ### Expected error codes
-`BadArgument` - Occurs when the environments can not be linked, for example when either environment is in an inactive state or already linked to another environment, when the environment type or Azure Geo do not match, or when the environment does not exist.
+`BadArgument` - Occurs when the environments can not be linked, for example when either environment is in an inactive state or already linked to another environment, when the environment types do not match, or when the environment does not exist.
 `Forbidden` - Occurs when the user or application used to authenticate does not have the required permissions.
 
 ## Unlink Power Platform environment
