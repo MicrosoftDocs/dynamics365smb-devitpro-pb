@@ -22,7 +22,7 @@ When you submit an updated version of your app, you must increase the version nu
 
 Never change the app's App ID in the json/manifest files. This is must stay the same across versions for various reasons, not least for upgrade reasons.
 
-For information about what constitutes the identity of an app, see [App Identity](devenv-app-identity.md).
+Learn more about what constitutes the identity of an app in [Understand app identity for AL apps](devenv-app-identity.md).
 
 ## When is my updated app available for tenants to install?
 

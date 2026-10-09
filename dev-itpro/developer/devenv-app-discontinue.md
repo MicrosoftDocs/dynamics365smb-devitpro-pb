@@ -1,8 +1,8 @@
 ---
-title: Discontinuing a Marketplace app
-description: Learn how to discontinue an app that is available on Marketplace.
+title: Discontinuing a Marketplace App
+description: Learn how to stop distributing a Marketplace app, notify existing customers, preserve support during the wind-down, and manage installations.
 author: SusanneWindfeldPedersen
-ms.date: 03/13/2025
+ms.date: 10/09/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,45 +10,47 @@ ms.reviewer: solsen
 
 # Discontinue a Marketplace app
 
-The following section describes the process that we recommend Marketplace partners follow to remove an app from the Marketplace.
+The following sections describe the process that Marketplace partners can follow to remove an app from the Marketplace.
+
+In this timeline, T is the date you deprecate the app, and the offsets are measured in days.
 
 ## Update the Marketplace listing
 
 Update the Marketplace listing to inform potential customers that the app shouldn't be installed and that it will not be maintained in the future. The Marketplace listing should still remain available to allow you to deploy bug fixes for your existing customers, but also to allow your existing customers to reinstall the app if they have uninstalled it by accident as their business might depend on it.
 
 > [!NOTE]
-> As the offer can still be installed by new customers, we recommend switching the listing type to 'Contact Me' in order for you to control who is installing the app, see [Listing types](readiness/readiness-checklist-e-industries-categories-apptype.md#listing-type). You can also define custom logic within your app to define who is allowed to install it.
+> Because new customers can still install the offer, switch the listing type to **Contact Me** to remove the storefront's self-service acquisition path and route prospects to you. **Contact Me** isn't an access-control or licensing mechanism. Customers who know the app ID can still install the app through supported APIs or a direct installation URL. Add entitlement logic to the app if you must restrict its use. Learn more in [Listing types](readiness/readiness-checklist-e-industries-categories-apptype.md#listing-type).
 
 ## Notify existing customers (T+1 to T+60)
 
-Notify existing customers through the channels that you consider most appropriate about the fact that the app has been deprecated (day **T**) and that it's removed from the marketplace. If possible, you should recommend alternatives that the customer can use to fulfill the same business scenarios.
+Notify existing customers through the channels that you consider most appropriate. Explain that the app is deprecated and that you plan to stop its distribution. If possible, recommend alternatives that customers can use for the same business scenarios.
 
-## Remove the Marketplace listing (T+150)
+## Stop distributing the Marketplace offer (T+150)
 
-Remove the listing from Marketplace by using the **Stop selling** option in the Partner Center portal. It is your responsibility to maintain the app for the entire period until you select **Stop selling**. You can find more information here [Update existing offers in the commercial marketplace](/azure/marketplace/update-existing-offer#stop-distribution-of-an-offer-or-plan).
+When the wind-down period ends, select **Stop distribution** on the offer overview in Partner Center. This action prevents new acquisition. Existing installations can continue to run, but customers can't redownload or redeploy the stopped offer. Maintain the app until you stop its distribution. Learn more in [Update an existing offer in the commercial marketplace](/azure/marketplace/update-existing-offer#stop-distribution-of-an-offer-or-plan).
 
-You can optionally delete the offer from the Partner Center portal.
+After distribution stops, the offer remains visible in Partner Center with a **Not available** status.
 
-## FAQ
+## Frequently asked questions about discontinuing an app
 
 ### Do I have to uninstall the app for every tenant?
 
 No. It's the responsibility of the partner maintaining the environment to uninstall the app when they see fit.
 
-### Does the customer receive any kind of notification?
+### How should customers be notified?
 
-The customer doesn't receive any notification from Business Central about the fact that the offer has been deprecated. It's your responsibility to reach out to your customers. If at some point, the app blocks the upgrade of the environment, then the partner maintaining the environment is notified that the app is blocking upgrade. The partner maintaining the environment, can then decide at that point to uninstall it or to contact you for additional information. For more information, see [Maintain Marketplace apps and per-tenant extensions in Business Central online](app-maintain.md).
+Plan to notify customers directly when you deprecate an offer. If the app later blocks an environment update, the partner who maintains the environment receives information about the blocking app and can uninstall it or contact you. Learn more in [Maintain Marketplace apps and per-tenant extensions in Business Central online](app-maintain.md).
 
 ### Does the app get automatically uninstalled from customer environments?
 
-The app won't be automatically uninstalled from customer environments. If the app blocks the upgrade of the environment and the partner maintaining the environment hasn't unblocked the upgrade by uninstalling the app, the app is uninstalled automatically. Learn more in [Maintain Marketplace apps and per-tenant extensions in Business Central online](app-maintain.md).
+Stopping distribution doesn't automatically uninstall the app from customer environments. However, during an enforced-update period, the service might automatically uninstall an extension that continues to block the environment update. The extension's data is retained so that it can be recovered by installing a compatible version. Learn more in [Maintain Marketplace apps and per-tenant extensions in Business Central online](app-maintain.md).
 
-### Are the apps removed from Business Central?
+### Is the app removed from Business Central?
 
-Even after you removed your offer from the Marketplace, the apps are still stored in Business Central because there can still be customers using them.
+Even after you remove your offer from Marketplace, the app remains stored in Business Central because customers might still use it.
 
 ## Related information
 
 [The lifecycle of apps and extensions for Business Central](devenv-app-life-cycle.md)  
 [Maintain Marketplace apps and per-tenant extensions in Business Central online](app-maintain.md)  
-[App identity](devenv-app-identity.md)
+[Understand app identity for AL apps](devenv-app-identity.md)  

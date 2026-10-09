@@ -135,7 +135,7 @@ All resources, such as customers and invoices, exist in the context of a parent 
 
 ## Related information
 
-[API developer overview](devenv-api.md)
+[Develop APIs with pages and queries](devenv-api.md)
 [Using filtering with APIs](devenv-connect-apps-filtering.md)  
 [Tips for working with APIs](devenv-connect-apps-tips.md)   
 [Troubleshooting API calls](../webservices/dynamics-error-codes.md)    

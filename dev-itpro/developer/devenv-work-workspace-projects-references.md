@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 A project reference in an AL-based workspace is defined as a dependency in the `app.json` file and exists as a project in the workspace. There's no special visual representation of a project reference. 
 
 > [!IMPORTANT]  
-> A *project reference* is the full `id`, `name`, `publisher`, and `version` of an existing project in the workspace. This is contrary to an application reference where it's enough to specify a minimal version. If you're using workspaces with multiple projects and change the `name` or `publisher` of an extension in the workspace, the dependencies in the app.json file must be updated with the new name and publisher or you may encounter issues with reference resolution. For more information, see [App identity](devenv-app-identity.md).
+> A *project reference* is the full `id`, `name`, `publisher`, and `version` of an existing project in the workspace. This definition differs from an application reference, where you only need to specify a minimal version. If you're using workspaces with multiple projects and change the `name` or `publisher` of an extension in the workspace, update the dependencies in the `app.json` file with the new name and publisher. Otherwise, you might encounter issues with reference resolution. Learn more in [Understand app identity for AL apps](devenv-app-identity.md).
 
 In the example below, the project called **Leaf** defines two dependencies to the projects **Middle** and **Root**. Since, both Root and Middle are projects in the workspace, they're considered project references.
 

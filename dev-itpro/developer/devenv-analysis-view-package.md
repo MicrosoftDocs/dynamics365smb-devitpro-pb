@@ -1,14 +1,14 @@
 ---
-title: Export and package analysis views
-description: Learn how to export analysis views from Analysis Mode and package them as part of AL extensions in Business Central.
+title: Export and Package Analysis Views
+description: Learn how to export analysis views from Analysis Mode, add their definitions to AL projects, and package them in Business Central extensions.
 author: SusanneWindfeldPedersen
-ms.date: 02/27/2026
+ms.date: 10/08/2026
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Export and package analysis views
+# Package analysis views in AL extensions
 
 [!INCLUDE [2026-releasewave1-later](../includes/2026-releasewave1-later.md)]
 
@@ -21,7 +21,7 @@ The end-to-end process for delivering analysis views with your extension is:
 3. [Reference the file](#define-analysis-views-on-pages) from a `page`, `pageextension`, or `pagecustomization` object using the `analysisviews` construct.
 4. Compile and publish the extension.
 
-Learn more about *using* the analysis view in [Analysis views](/dynamics365/business-central/analysis-mode).
+Learn more about using analysis views in [Analysis views](/dynamics365/business-central/analysis-mode).
 
 ## Export an analysis view definition
 
@@ -31,10 +31,10 @@ Analysis Mode in the [!INCLUDE [prod_short](includes/prod_short.md)] client acts
 2. Enter **Analysis Mode**.
 3. On the analysis view tab, open the tab menu and choose **Export Definition**.
 
-This action downloads a JSON file that contains the serialized definition of the analysis view. Add this file to your AL extension project. 
+This action downloads a JSON file that contains the serialized definition of the analysis view. Add this file to your AL extension project.
 
 > [!TIP]
-> Avoid using data filters (filters on specific data values) in analysis views that you package in extensions. The data values you filter on, such as specific customer numbers or posting groups, might not exist on the environment or company where the extension is installed. Instead, limit the view definition to column layout, grouping, and aggregation settings.
+> Avoid filtering packaged analysis views on specific data values, such as customer numbers or posting groups. These values might not exist in the environment or company where the extension is installed. Instead, limit the view definition to column layout, grouping, and aggregation settings.
 
 ## Define analysis views on pages
 
@@ -73,7 +73,7 @@ page 50100 ListPageWithAnalysisView
         analysisview(MyAnalysisView)
         {
             Caption = 'Customer Analysis View';
-            Tooltip = 'My Analysis View description';
+            ToolTip = 'My Analysis View description';
             DefinitionFile = 'BasePage/Base.analysis.json';
         }
     }
@@ -100,7 +100,7 @@ pageextension 50101 MyExtension extends "Sales Order List"
             }
         }
 
-        modify(MyAnalysisView)
+        modify("Expected sales volume")
         {
             Visible = false;
         }
@@ -152,7 +152,7 @@ Unlike user-defined analysis views, packaged views:
 - Are consistent across users—every user who has the extension installed sees the same set of packaged views.
 - Survive user personalization resets, because they're defined in AL code rather than stored as user data.
 
-Packaged analysis views can't be deleted or moved. However, you can hide and unhide them by using:
+You can hide and unhide packaged analysis views by using:
 
 - [Designer](devenv-inclient-designer.md), which applies to all users
 - [Personalization](/dynamics365/business-central/ui-personalization-user), for the current user

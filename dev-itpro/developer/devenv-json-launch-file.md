@@ -404,7 +404,7 @@ With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a 
 
 [JSON files](devenv-json-files.md)  
 [AL development environment](devenv-reference-overview.md)  
-[App identity](devenv-app-identity.md)  
+[Understand app identity for AL apps](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md)  
 [AL Language extension configuration](devenv-al-extension-configuration.md)  

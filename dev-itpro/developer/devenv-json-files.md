@@ -31,8 +31,8 @@ The following table describes the settings in the `app.json` file. To see an exa
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value. <br>**Note:** The app ID is used at runtime to bind table names contained in the application. Changing the app ID results in data from old tables not being used.|
-|name|Yes|The unique extension name. The name can be changed to reflect branding or acquisition, but then the `version` must be incremented. <br>**Note:** The name might be used by other extensions to express a compile-time dependency on the extension. Changing the name of your extension forces any extensions that take a dependency to download symbols and recompile their extension. Learn more in [App Identity](devenv-app-identity.md).|
-|publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**. <br>**Note:** The publisher might be used by other extensions to express a compile-time dependency on the extension. Changing the publisher of your extension forces those extensions that take a dependency to download symbols and recompile their extension. Learn more in [App Identity](devenv-app-identity.md).|
+|name|Yes|The unique extension name. Change the name to reflect branding or acquisition, but then increment the `version`. <br>**Note:** Other extensions might use the name to express a compile-time dependency on the extension. Changing the name of your extension forces any extensions that take a dependency to download symbols and recompile their extension. Learn more in [Understand app identity for AL apps](devenv-app-identity.md).|
+|publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**. <br>**Note:** Other extensions might use the publisher to express a compile-time dependency on the extension. Changing the publisher of your extension forces those extensions that take a dependency to download symbols and recompile their extension. Learn more in [Understand app identity for AL apps](devenv-app-identity.md).|
 |brief|No, but required for Marketplace submission|Short description of the extension.|
 |description|No, but required for Marketplace submission|Longer description of the extension.|
 |version|Yes|The version of the app package.|
@@ -71,7 +71,7 @@ The following table describes the settings in the `app.json` file. To see an exa
 
 [Launch JSON file](devenv-json-launch-file.md)  
 [AL development environment](devenv-reference-overview.md)  
-[App identity](devenv-app-identity.md)  
+[Understand app identity for AL apps](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md)  
 [AL Language extension configuration](devenv-al-extension-configuration.md)  
