@@ -112,7 +112,7 @@ It's a requirement to enable overriding the resource policy, that you have a key
 > [!IMPORTANT]  
 > Resource exposure policy overrides can be used to dynamically grant users of a given Microsoft Entra tenant ID access. The users performing the action, such as debugging, **must be delegated admins or a guest user** on the target environment. In addition, you must specify the `tenant` property in the `launch.json` file. The `tenant` property must be set to the target tenant ID. For more information, see [JSON Files](devenv-json-launch-file.md#publish-to-cloud-settings-launchjson).
 
-For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault-overview.md) and [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md). For [!INCLUDE[prod_short](includes/prod_short.md)] online, the app key vault feature is only supported for Marketplace extensions.
+Learn more in [Use app key vaults with extensions](devenv-app-key-vault-overview.md) and [Set up app key vaults for Business Central online](../administration/setup-app-key-vault.md). For [!INCLUDE[prod_short](includes/prod_short.md)] online, the app key vault feature is only supported for Marketplace extensions.
 
 
 #### Common mistakes

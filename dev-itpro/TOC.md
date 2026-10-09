@@ -624,7 +624,7 @@
 #### [Work with development sandboxes and entitlements](developer/devenv-work-sandbox-entitlements.md)
 
 ### Working with apps
-#### [App identity](developer/devenv-app-identity.md)
+#### [Understand app identity for AL apps](developer/devenv-app-identity.md)
 #### [Choosing runtime version in AL](developer/devenv-choosing-runtime.md)
 #### [FAQ about library and dependency apps in Business Central](developer/app-faq-dependencies-libraries.md)
 #### [Adding data for extensions](developer/devenv-export-data-for-extension.md)
@@ -952,7 +952,7 @@
 #### Views
 ##### [Designing views](developer/devenv-views.md)
 ##### [Migrating from legacy to modern views](developer/devenv-views-legacy.md)
-##### [Packaging analysis views](developer/devenv-analysis-view-package.md)
+##### [Package analysis views in AL extensions](developer/devenv-analysis-view-package.md)
 
 #### Profiles
 ##### [Designing profiles](developer/devenv-design-profiles.md)
@@ -1092,7 +1092,7 @@
 ##### [Overview](developer/devenv-app-key-vault-overview.md)
 ##### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
 ##### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
-##### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+##### [Use key vault secrets in extensions](developer/devenv-app-key-vault.md)
 ##### [Analyzing app key vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 
@@ -1876,7 +1876,7 @@
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
-#### [API developer overview](developer/devenv-api.md)
+#### [Develop APIs with pages and queries](developer/devenv-api.md)
 
 ### OData
 #### [OData overview](webservices/odata-web-services.md)
@@ -1927,7 +1927,7 @@
 ### [Developing Connect apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
-### [API developer overview](developer/devenv-api.md)
+### [Develop APIs with pages and queries](developer/devenv-api.md)
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 

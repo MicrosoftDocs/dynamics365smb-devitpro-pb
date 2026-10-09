@@ -11,7 +11,7 @@ ms.custom: sfi-ropc-nochange
 
 # Marketplace app identity FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for Marketplace submission. This section contains questions related to the identity of apps in Marketplace. Learn more from the questions in [App identity](devenv-app-identity.md).
+This article addresses some of the most frequently asked questions about validating apps for Marketplace submission. This section contains questions related to the identity of apps in Marketplace. Learn more in [Understand app identity for AL apps](devenv-app-identity.md).
 
 ## When is it okay to change the name of my extension?
 

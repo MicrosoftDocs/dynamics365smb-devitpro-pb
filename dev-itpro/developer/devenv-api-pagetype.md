@@ -84,7 +84,7 @@ page 50120 MyCustomerApi
 
 ## Related information
 
-[API developer overview](devenv-api.md)  
+[Develop APIs with pages and queries](devenv-api.md)  
 [AL development environment](devenv-reference-overview.md)  
 [API query type](devenv-api-querytype.md)  
 [Walkthrough: developing a custom API](devenv-develop-custom-api.md)   

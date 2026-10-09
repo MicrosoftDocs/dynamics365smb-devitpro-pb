@@ -14,7 +14,7 @@ author: jswymer
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions can be developed to get secrets from Azure Keys Vaults. This article describes the tasks required to set up Azure Keys Vaults for storing extension secrets and configure them in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment.
 
-For more information about developing extensions with key vaults, see [Using Key Vault Secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault.md).
+Learn more about developing extensions with key vaults in [Use key vault secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault.md).
 
 ## Prerequisites
 
@@ -187,8 +187,8 @@ At this point, you can run your extensions that use key vault secrets to read se
 
 ## Related information  
 
-[Using App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault-overview.md)  
-[Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
-[Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
+[Use app key vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault-overview.md)  
+[Security considerations with app key vaults](../developer/devenv-app-key-vault.md#security)  
+[Monitor and troubleshoot app key vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [Authentication and Credential Types](Users-Credential-Types.md)  
 [Configuring Business Central Server](configure-server-instance.md)  

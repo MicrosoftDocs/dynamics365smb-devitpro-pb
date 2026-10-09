@@ -44,4 +44,4 @@ Represents report inbox information for a company in [!INCLUDE [prod_short](../i
 [Report Inbox Content API](report-inbox-content-api.md)  
 [Report Inbox File API](report-inbox-file-api.md)  
 [Report Inbox Items API](report-inbox-items-api.md)  
-[API developer overview](../developer/devenv-api.md)  
+[Develop APIs with pages and queries](../developer/devenv-api.md)  

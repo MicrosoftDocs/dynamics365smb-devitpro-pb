@@ -72,7 +72,7 @@ query 20000 "APIV1 - Customer Sales"
 
 ## Related information
 
-[API developer overview](devenv-api.md)  
+[Develop APIs with pages and queries](devenv-api.md)  
 [AL development environment](devenv-reference-overview.md)  
 [API page type](devenv-api-pagetype.md)  
 [APIPublisher property](properties/devenv-apipublisher-query-property.md)  

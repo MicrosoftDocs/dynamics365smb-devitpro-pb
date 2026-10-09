@@ -43,4 +43,4 @@ Represents the content and file metadata for a report inbox entry in [!INCLUDE [
 [Report Inbox Companies API](report-inbox-companies-api.md)  
 [Report Inbox File API](report-inbox-file-api.md)  
 [Report Inbox Items API](report-inbox-items-api.md)  
-[API developer overview](../developer/devenv-api.md)  
+[Develop APIs with pages and queries](../developer/devenv-api.md)  

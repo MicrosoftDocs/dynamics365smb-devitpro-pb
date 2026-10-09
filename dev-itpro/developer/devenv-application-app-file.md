@@ -141,4 +141,4 @@ To enable these benefits, all you need to do, as a Marketplace or PTE app owner,
 
 [JSON files](devenv-json-files.md)  
 [Install an update](../upgrade/upgrading-cumulative-update-v15.md)  
-[App identity](devenv-app-identity.md)  
+[Understand app identity for AL apps](devenv-app-identity.md)  
