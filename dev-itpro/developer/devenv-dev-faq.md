@@ -40,7 +40,7 @@ When submitting an app for Marketplace, you must make sure that it validates aga
 
 ## What constitutes the identity of an app?
 
-To read about app identity and why it's important to keep certain settings for an app unchanged, see [App Identity](devenv-app-identity.md).
+Learn more about app identity and why it's important to keep certain settings unchanged in [Understand app identity for AL apps](devenv-app-identity.md).
 
 ## Extensions published from Visual Studio Code or created Use Designer disappeared from a sandbox environment. Why?
 

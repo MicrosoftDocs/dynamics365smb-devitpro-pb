@@ -1,28 +1,28 @@
 ---
-title: Lifecycle of apps and extensions
-description: Overview of the process of updating an app for Business Central.
+title: Lifecycle of Apps and Extensions
+description: Learn how Marketplace apps behave during service and app updates, how administrators install updates, and how extension data is retained.
 author: SusanneWindfeldPedersen
 ms.topic: overview
 ms.author: solsen
-ms.date: 06/02/2025
+ms.date: 10/08/2026
 ms.reviewer: solsen
 ---
 
 # The lifecycle of apps and extensions for Business Central
 
-When you build an app or extension to [!INCLUDE[prod_short](includes/prod_short.md)] and get that published to Marketplace, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, [!INCLUDE[prod_short](includes/prod_short.md)] online itself, also gets updated. But what happens after your app gets published?
+When you build an app or extension for [!INCLUDE[prod_short](includes/prod_short.md)] and publish it to Marketplace, both the app and the online service receive updates. This article explains what happens after publication.
 
-When your app has passed all of our validations and is live on Marketplace, customers can install your extension and use it for their business. But you're expected to keep it compliant with the service and update it if something changes.  
+When your app passes all of the validations and goes live on Marketplace, customers can install your extension and use it for their business. But you need to keep it compliant with the service and update it if something changes.
 
-The following sections describe the different upgrade scenarios that we see play out as we update [!INCLUDE[prod_short](includes/prod_short.md)]. Learn more about your responsibility for keeping your app updated and the resources that are available to you in [Maintain Marketplace apps and per-tenant extensions](app-maintain.md).  
+The following sections describe the different upgrade scenarios that play out as we update [!INCLUDE[prod_short](includes/prod_short.md)]. Learn more about your responsibility for keeping your app updated and the resources that are available to you in [Maintain Marketplace apps and per-tenant extensions](app-maintain.md).
 
 ## Scenario 1: Business Central service update
 
-You don't need to make any bug fixes, feature adds, or app changes to your app. It continues to work fine without any interaction on your part.  
+You don't need to make any bug fixes, feature additions, or other changes to your app. It continues to work without any action on your part.
 
 ### Impact of service updates
 
-The monthly service upgrades to [!INCLUDE[prod_short](includes/prod_short.md)] don't affect your app. Your app just gets moved along and no upgrade code from your app needs to get used. [!INCLUDE[prod_short](includes/prod_short.md)] itself gets upgraded on your tenant, and once complete, the customer sees no difference with your app.
+Monthly service updates don't require changes to your app or run the app's upgrade code. [!INCLUDE[prod_short](includes/prod_short.md)] updates the tenant, and the app continues to work without visible changes.
 
 ## Scenario 2: App update
 
@@ -30,7 +30,7 @@ You (our partner) add some features to your app and also some minor bug fixes. T
 
 ### Impact of app updates
 
-Internal and delegated administrators can update Marketplace apps from the [[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](../administration/tenant-admin-center-manage-apps.md), and regular users can do so by uninstalling and reinstalling an app in the environment. Marketplace apps are automatically updated to the latest version during a major update to an environment, unless the **App Update Cadence** has been set to **With minor and major updates** for the environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+Internal and delegated administrators can update Marketplace apps from the [[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](../administration/tenant-admin-center-manage-apps.md). Marketplace apps update to the latest compatible version during major environment updates. If **Apps Update Cadence** is set to **With minor and major updates**, they also update during minor environment updates. Regardless of cadence, a required compatible app update can be installed when necessary for an environment update.
 
 ## Scenario 3: Reported bugs in your app
 
@@ -38,41 +38,35 @@ You (our partner) have various customers report some bugs that are impacting the
 
 ### Impact of bugs
 
-We still don't force the upgrade of this app to this latest version on all of the tenants. Some tenants might not be using the functionality that includes this bug and continue to work fine on the current version of the app. Therefore, you should work directly with all of the impacted customer tenants to uninstall and reinstall to get the latest app version that contains fixes for the bug.
+The service doesn't force an upgrade of this app to the latest version on all tenants. Some tenants might not use the functionality that contains the bug and can continue to use the current version. Work with impacted customers and their administrators to install the available update from **Manage Apps**.
 
 ## Scenario 4: Critical bug in your app
 
-If a bug, which leads to core functionality being broken or data loss/corruption/misrepresentation, is found in the application, and the issue prevents customers from performing time-critical tasks, the validation and deployment of the application can be prioritized. The partner must create a support ticket for this case and they must immediately provide a fixed app for validation through Partner Center. The validation team makes this a top priority and performs validation as soon as possible. If the fixed application passes validation, it's checked into the service and will become available for environment administrators to install.
+If a bug breaks core functionality, causes data loss or corruption, or prevents customers from performing time-critical tasks, create a support ticket and provide a fixed app for validation through Partner Center. Work with support and the Marketplace validation team on the appropriate escalation. If the fixed app passes validation, it becomes available for environment administrators to install.
 
 ## Scenario 5: Microsoft feature breaks your app
 
-Microsoft has to break your app file for a needed [!INCLUDE[prod_short](includes/prod_short.md)] core change. Some reasons for breaking could be security, bugs in the underlying code, high priority feature adds, and so on. Keep in mind, we do our best to not break your app through our changes. We try to find proper ways of doing the changes without breaking your app. However, if we can't find a proper (nonbreaking) way, then we could break your app. This isn't as likely in a minor update release (unless a security change is required on our part and that's the change that breaks you), but it can be more likely in our major (every six-month) releases.
+Microsoft might need to make a core [!INCLUDE[prod_short](includes/prod_short.md)] change that isn't compatible with your app. Reasons can include security fixes, bugs in underlying code, and product changes. Microsoft tests installed apps against upcoming service versions and works with publishers to make compatible app versions available before affected environments update.
 
 ### Impact of breaking changes
 
-Here's our process when this takes place:
+If an app update is required for an environment update, the service installs the compatible app version. If an incompatibility remains unresolved, the service can delay the environment update during the supported period. During an enforced-update period, the service might uninstall an extension that continues to block the update. The extension data is retained so that it can be recovered by installing a compatible version.
 
-- First of all, Microsoft isn't making a breaking change in the production environment at any point. Therefore, existing tenants aren't expected to see this breaking change occur.
-- When we make a breaking change, we do it in a build branch that is for a future release (monthly service minor or major release).
-- We notify the partner in advance and give the partner ample time to fix their app, get it validated, and have it ready.
-- The fixed app will already be in our service and slotted as required for when your tenant is to be moved to the [!INCLUDE[prod_short](includes/prod_short.md)] release that has the app breaking change.
-- As a result, the customer (tenant owner) should never see their [!INCLUDE[prod_short](includes/prod_short.md)] break. Because the tenant gets moved from one monthly service update of [!INCLUDE[prod_short](includes/prod_short.md)] to another, the tenant is being upgraded to the release of ours that breaks the specific app. However, our service detects that there's a new required version of that app (your fixed version). Therefore, we auto install the fixed version of the app for the tenant.
+## Maintain and update your app
 
-## Conclusions
-
-You're responsible for your app. You own the process of updating the app and providing upgrade code if the schema changes between versions of the app. If a customer uninstalls your app, and then installs it again later, then when they install the app the second time, they get the latest version from Marketplace.  
+You're responsible for your app. You own the process of updating the app and providing upgrade code if the schema changes between versions of the app. If a customer uninstalls your app and installs it again later, they get the latest available version from Marketplace.
 
 ### How Microsoft handles your app
 
-When Microsoft upgrades a tenant with a service update, your app is tested against the new service version. If the app breaks, Microsoft rolls back to the previous healthy state. Your customer never learns that anything was about to break.  
+When Microsoft prepares a service update, it tests installed apps for compatibility. The environment update can install required compatible app updates. If an app continues to block an enforced update, the service might uninstall it while retaining its data.
 
-When a tenant uninstalls and reinstalls an extension via the **Extension Management** page or Marketplace, there's platform logic that determines whether an *Install* or an *Upgrade* must take place. We detect which version of the extension the tenant previously had installed and perform the appropriate action. Therefore, the result of manually uninstalling/installing the extension is the exact same as an automated upgrade.  
+When a tenant reinstalls an extension through the **Extension Management** page or Marketplace, the platform examines the retained uninstall record and data version. Reinstalling a newer version can run the upgrade path. Reinstalling the same version runs a reinstall path. If the app data wasn't retained, the platform treats the app as a new installation.
 
-Additionally, there isn't any data loss during uninstall, install, or upgrade actions. Data for extensions is stored in its own tables in the tenant database. Before an extension gets installed, it first gets synchronized on the tenant database. This step is implicit and happens automatically when a tenant installs an extension. This synchronization process creates the database tables for the extension. Once the extension is installed and the tenant is using it, extension-specific data get stored in these tables.  
+By default, uninstalling an extension retains its application data, which allows a later compatible version to reuse or upgrade that data. Data can be lost if the administrator chooses to delete application data or schema, or if a supported update operation performs a destructive schema or data migration. Before an extension is installed, it synchronizes with the tenant database. This automatic synchronization creates the database tables for the extension. After installation, extension-specific data is stored in these tables.
 
-When an extension gets uninstalled, these tables don't get removed. Therefore, when the extension gets reinstalled (or upgraded), the data is still available. You don't need to worry about data loss for choosing the uninstall/install route. However, do keep in mind that if any actions are being performed on the tenant while the extension is uninstalled, the extension's *events and such aren't firing*, and your app might miss the creation of new data. Try to perform the uninstall/install while the tenant isn't online.  
+When an extension is uninstalled with application data retained, its data remains available for a later reinstall or upgrade. If the administrator chooses to delete application data or clean the schema, the app's data or database artifacts are removed. While the extension is uninstalled, its event subscribers and code don't run. The app might therefore miss changes that occur during that period. Plan the uninstall and reinstall for a maintenance window.
 
-Learn more in [When apps or PTEs can't be updated by Microsoft](app-maintain.md#when-microsoft-cant-update-apps-or-ptes).  
+Learn more in [When apps or PTEs can't be updated by Microsoft](app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
 ## Related information
 

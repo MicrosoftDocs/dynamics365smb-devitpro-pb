@@ -13,7 +13,7 @@ ms.reviewer: jswymer
 
 [!INCLUDE[prod_short](../includes/2020_releasewave2.md)]
 
-App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault-overview.md).
+App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. Learn more about app key vaults and secrets in [Use app key vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault-overview.md).
 
 The app key vault secret process has two operations: *initialization* and *retrieval*. The telemetry data provides information about the success or failure for each of these operations. There are various conditions that cause a failure. The failure messages provide insight into the cause of the failure, helping you identify, troubleshoot, and resolve issues.
 
@@ -33,7 +33,7 @@ Retrieval is the second stage, and occurs after a successful initialization. In 
 - The key vault doesn't exist.
 - The application ID doesn't have permission to read from the key vault.
 
-For more information about using key vault secrets with extensions, see [App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault-overview.md).
+Learn more about using key vault secrets with extensions in [Use app key vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault-overview.md).
 
 ## <a name="initializedsuccess"></a>App Key Vault secret initialization succeeded
 
@@ -258,7 +258,7 @@ traces
 
 ## Related information
 
-[App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault.md)  
+[Use key vault secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Alert on Telemetry](telemetry-alert.md)   

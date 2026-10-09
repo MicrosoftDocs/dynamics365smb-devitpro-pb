@@ -346,4 +346,4 @@ In this mode, the agent uses these standard tools to search for and execute the 
 
 [Transparency note: Semantic Metadata Search in Business Central](transparency-note-semantic-metadata-search.md)  
 [Business Central API Reference](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)  
-[API developer overview](../developer/devenv-api.md)  
+[Develop APIs with pages and queries](../developer/devenv-api.md)  

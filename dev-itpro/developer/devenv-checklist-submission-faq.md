@@ -311,7 +311,7 @@ We would like longer names as well. Introducing namespaces could be one investme
 
 ## Questions about app identity
 
-This section contains questions related to the identity of apps in Marketplace. Learn more from the questions in [App identity](devenv-app-identity.md).
+This section contains questions related to the identity of apps in Marketplace. Learn more in [Understand app identity for AL apps](devenv-app-identity.md).
 
 ### When is it okay to change the name of my extension?
 

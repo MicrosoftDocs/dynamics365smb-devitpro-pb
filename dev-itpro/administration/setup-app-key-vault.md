@@ -20,7 +20,7 @@ Marketplace apps for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 > [!TIP]
 > You must also specify secrets in a key vault if you deploy [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as part of the Embed App program. Especially if you must support the Outlook add-in, in which case you must specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. <!--For more information, see [Setting Up the Office Add-Ins for Outlook Integration with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](Setting-up-Office-Add-Ins-Outlook-Inbox.md).-->
 
-Learn more about developing extensions with key vaults in [Using key vault secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault.md).
+Learn more about developing extensions with key vaults in [Use key vault secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault.md).
 
 ## Create the Azure key vault with secrets
 
