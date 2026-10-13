@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 02/11/2026
+ms.date: 10/08/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -16,7 +16,7 @@ This article provides an overview of what you need to know about how a major or 
 
 [!INCLUDE [service-updates](../includes/service-updates.md)]
 
-Microsoft is committed to delivering predictable updates to the service. Updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. Administrators can set a maintenance window for each environment that determines when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md). Scheduled minor and major updates, and unscheduled critical fixes, respect the maintenance window set on each environment.
+Microsoft is committed to delivering predictable updates to the service. Updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. Administrators can set a maintenance window for each environment that determines when Microsoft is allowed to update that environment. Learn more at [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md). Scheduled minor and major updates, and unscheduled critical fixes, respect the maintenance window that you specify for each environment.
 
 You are in control and manage how your organization receives these updates. Microsoft applies updates to each environment based on your configuration. The only exception is how Microsoft maintains the underlying platform with invisible updates during low traffic hours, for example. For more information, see the [service updates](#service-updates) section.  
 
@@ -24,7 +24,7 @@ The Dynamics 365 team designs and develops each new update. Any new update is fi
 
 ## Major updates
 
-There are two major update cycles per year, with major releases every April and October. Major updates introduce new features, enhancements, and platform improvements. For each major update cycle, the following periods apply.
+There are two major releases every April and October. Major updates introduce new features, enhancements, and platform improvements. For each major update, the following periods apply.
 
 ### Preview period
 
@@ -57,10 +57,6 @@ The enforced period starts when the grace period ends. During this period, any e
 ## Minor updates
 
 Minor updates are released every month in which there's no major update release, that is, every month except April and October. These updates contain application changes that are critical improvements to the service, including regulatory updates. Like major updates, minor updates are generally available at the start of each calendar month. After a minor update is general available, new environments use the new minor version by default. The new minor version becomes available as an update to environments on the previous version about a week after general availability. The exact timing can vary by environment.  
-
-## Release plans
-
-Get an overview of the release plans at [Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/). For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans, select a release wave under **Dynamics 365**, then look under **SMB** in the table of contents. Learn about new functionality, bug fixes, and improvements shipped in recent versions in [What's new or changed](../whatsnew/overview.md).
 
 ## Completed updates
 
