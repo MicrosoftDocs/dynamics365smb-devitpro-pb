@@ -1,16 +1,16 @@
 ---
-title: Enabling upcoming features ahead of time
+title: Enabling Upcoming Features Ahead of Time
 description: Learn how to enable select features ahead of time as the administrator of Business Central online or on-premises. 
 author: mikebcMSFT
 
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
-ms.date: 10/26/2021
+ms.date: 10/13/2026
 ms.author: mikebc
 ms.reviewer: jswymer
 ---
 
-# Enabling Upcoming Features Ahead of Time
+# Enable upcoming features ahead of time
 
 We add new capabilities to [!INCLUDE [prod_short](../includes/prod_short.md)] in major updates and minor updates. Some new features can be enabled ahead of time on sandbox and production environments. Learn how you as an administrator can turn on new features using the **Feature Management** page.
 
@@ -23,15 +23,17 @@ When Microsoft releases features or feature design improvements as part of minor
 These features are only optional for a while. The option period typically starts from the minor update in which they're made generally available. The period ends when the features become mandatory and are automatically enabled in a later major update. To see the approximate date and service update when each feature is expected to become mandatory, see the **Automatically enabled from** field in the **Feature Management** page. After this date, the feature will no longer appear in the **Feature Management** page and can no longer be turned off. To learn more about features that are now, or soon will be mandatory or generally available, go to [Optional Features that are Now Mandatory](feature-management-mandatory-features.md).  
 
 > [!IMPORTANT]
-> The projected timeline for a feature is subject to change (see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332)).
+> The projected timeline for a feature is subject to change. Learn more at [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 
 ### Example timeline for an optional feature
 
 > [!div class="mx-imgBorder"]
 > ![Example timeline for an optional feature.](../media/timeline-optional-features.png "An example timeline for an optional feature in the Feature Management page")
 
-Learn about [what's new and planned](/dynamics365-release-plan/2021wave1/).  
-Learn about [new features available in the last minor update in a release wave](../whatsnew/whatsnew-update-17-5.md).  
+> [!TIP]
+>  [!INCLUDE [roadmap](~/../shared-content/shared/get-started-includes/roadmap.md)]
+
+Learn more about [!INCLUDE [prod_short](../includes/prod_short.md)] updates at [What's new and planned in Business Central](../whatsnew/overview.md), and learn about the release schedule for Dynamics 365 at [What is the Dynamics 365 release schedule and early access?](/dynamics365/get-started/release-schedule).
 
 > [!TIP]
 > To prepare for an upcoming feature, consider enabling the feature on a sandbox environment that has a copy of production data. Invite business users to test out the change using real-world tasks. Once you and your users are satisfied with the change, you can then enable it on production environments where they can immediately benefit from that feature.
@@ -59,7 +61,7 @@ Some features or feature improvements may permanently affect the state and capab
 > [!NOTE]
 > When you choose to enable an irreversible feature, a warning dialog that describes the consequences is displayed. Choose the **Yes** action to turn on the feature in that environment.
 
-Starting with version 19.1, when you create a copy of an environment, any irreversible features that were turned on are also available in the copy.  
+Since version 19.1, when you create a copy of an environment, any irreversible features that were turned on are also available in the copy.  
 
 ## Scheduling data updates for new features
 
@@ -72,7 +74,7 @@ You schedule a data update on the **Feature Management** page by choosing the **
 
 ## <a name="permission"></a>Control user access to feature management
 
-Most users, by default, won't have permission to enable upcoming features themselves. As an administrator, the easiest way to give a user permission is to assign them the **FEATURE MGT. - ADMIN** permission set. For more information, see [Assigning Permission Sets](/dynamics365/business-central/ui-define-granular-permissions). This permission set was introduced in version 18.1.
+Most users, by default, don't have permission to enable upcoming features themselves. As an administrator, the easiest way to give a user permission is to assign them the **FEATURE MGT. - ADMIN** permission set. Learn more at [Assigning Permission Sets](/dynamics365/business-central/ui-define-granular-permissions). This permission set was introduced in version 18.1.
 
 ## FAQ about Feature Management
 
@@ -136,7 +138,7 @@ Some features don't provide a way to try it out for yourself and won't display a
 
 Yes. Most optional features are turn on by default in new environments for new customers to benefit from. Administrators can still turn any of these features off from the **Feature Management** page. Some features are irreversible and aren't turn on by default.  
 
-Starting with version 19.1, when you create a copy of an environment, any irreversible features that were turned on are also available in the copy.  
+Since version 19.1, when you create a copy of an environment, any irreversible features that were turned on are also available in the copy.  
 
 #### Are optional features automatically enabled on sandbox environments?
 
@@ -146,7 +148,7 @@ When you create a new sandbox environment with a copy of production data, your c
 
 Microsoft's business functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] consists of functionality that is generic and functionality that is particular to a specific country or region. The **Feature Management** page will at times show optional features that are particular to a country, even if your [!INCLUDE [prod_short](../includes/prod_short.md)] is based on another country-specific version. This is due to the current limitations of feature management, which relies on a system table to populate the **Feature Management** page.  
 
-In a future version, we hope to redesign feature management to better reflect local functionality and partner-provided functionality.  
+We hope to redesign feature management in the future to better reflect local functionality and partner-provided functionality.  [!INCLUDE [roadmap](~/../shared-content/shared/get-started-includes/roadmap.md)]
 
 ### Is feature management applicable to on-premises deployments of Business Central?
 
@@ -154,6 +156,7 @@ Yes. You can turn optional features on or off in a similar way.
 
 ## Related information
 
-[New and planned features](/dynamics365-release-plan/2021wave1/)  
+[What's new and planned in Business Central](../whatsnew/overview.md)
 [Administration of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](tenant-administration.md)  
 [Major updates of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](update-rollout-timeline.md)
+[Roadmap](https://www.microsoft.com/microsoft-365/roadmap#Roadmap)
