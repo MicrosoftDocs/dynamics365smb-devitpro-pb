@@ -24,7 +24,7 @@ Telemetry for [!INCLUDE[prod_short](includes/prod_short.md)] can be defined in t
 
 - In the app.json file of the extension.
 
-    Learn more in [Setting up Telemetry in an App/Extension ](devenv-application-insights-for-extensions.md).
+    Learn more in [Set up telemetry in an extension](devenv-application-insights-for-extensions.md).
 
 - In the [!INCLUDE[prod_short](includes/prod_short.md)] environment.
 

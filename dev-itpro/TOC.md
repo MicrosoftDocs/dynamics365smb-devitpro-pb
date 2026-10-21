@@ -1133,8 +1133,8 @@
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Setting up telemetry in an app/extension](developer/devenv-application-insights-for-extensions.md)
-#### [Data logged to app/extension telemetry](developer/devenv-application-insights-for-extensions-data.md)
+#### [Set up telemetry in an extension](developer/devenv-application-insights-for-extensions.md)
+#### [Data logged to extension telemetry](developer/devenv-application-insights-for-extensions-data.md)
 #### [Using feature telemetry](administration/telemetry-feature-telemetry.md)
 #### [Creating custom telemetry events](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Creating custom events for Windows event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
