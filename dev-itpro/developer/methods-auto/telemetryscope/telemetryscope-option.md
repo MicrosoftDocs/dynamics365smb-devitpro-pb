@@ -25,7 +25,7 @@ Represents the emission scope of the telemetry signal.
 
 ## Examples
 
-The following code example emits telemetry only to the extension publisher's Application Insights account. The extension publisher configures their Application Insights connection string in the extension's app.json file. Learn more in [Setting up telemetry in an app/extension](../../devenv-application-insights-for-extensions.md).
+The following code example emits telemetry only to the extension publisher's Application Insights account. The extension publisher configures their Application Insights connection string in the extension's `app.json` file. Learn more in [Set up telemetry in an extension](../../devenv-application-insights-for-extensions.md).
 
 ```al
 Session.LogMessage('0000ABC', 'Order processed successfully', Verbosity::Normal, DataClassification::SystemMetadata, TelemetryScope::ExtensionPublisher, 'OrderProcessing');

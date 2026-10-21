@@ -1,8 +1,8 @@
 ---
-title: Field Arrangement on FastTabs
-description: FastTabs in Dynamics 365 Business Central allow users to find key information on a page displayed in separate groups.
-ms.date: 01/14/2025
-ms.topic: article
+title: FastTab Field Arrangement in Business Central
+description: Learn how Business Central arranges fields on FastTabs, adapts columns to screen space, and uses field importance to show summaries and additional fields.
+ms.date: 10/09/2026
+ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ms.author: solsen
@@ -10,23 +10,23 @@ ms.author: solsen
 
 # Field arrangement on FastTabs
 
-FastTabs in [!INCLUDE [prod_short](includes/prod_short.md)] allow users to find key information on a page by displaying the data in separate groups. This article describes how individual fields are arranged on a FastTab and ways that you can change the layout. 
+FastTabs in [!INCLUDE [prod_short](includes/prod_short.md)] help users find key information by displaying fields in separate groups. This article describes how fields are arranged on a FastTab and how you can change their presentation.
 
-Organizing data using FastTabs helps users to find key information quickly, while at the same time giving an overview of areas that otherwise would remain hidden. For example, the customer card page displays customer information in the following categories: General, Address & Contact, Invoicing, Payments, Shipping, and Statistics. Each category is a separate FastTab that can be expanded or collapsed, making it easier for users to focus on one subject at a time. On task pages, a FastTab typically represents a single step in a task.  
+For example, the **Customer Card** page has **General**, **Address & Contact**, **Invoicing**, **Payments**, **Shipping**, and **Statistics** FastTabs. Users can expand or collapse each FastTab to focus on one area.
 
 ## How fields are arranged on a FastTab of a page
 
-By default, a FastTab is divided into two columns for containing fields. Fields are automatically distributed between the left and right columns based on their order in the `layout` section of the page. Starting with the first field in the Page Layout and working downward, fields are positioned in the left column and then in the right column. The area that is occupied by the fields in each column is as equal as possible. Field captions are positioned to the left of fields. 
+Fields are distributed across the available columns in the order defined in the page's `layout` section. At widths that support two columns, fields flow down the left column and then down the right column. The client balances the space occupied by the columns.
 
-![Shows FastTab on customer card page.](media/fasttab-overview.png) 
+:::image type="content" source="media/fasttab-overview.png" alt-text="Customer Card example showing expanded and collapsed FastTabs, two field columns, and promoted summary fields." lightbox="media/fasttab-overview.png":::
 
-Pages automatically adjust to the available space on the screen. If horizontal space is reduced, a FastTab will adapt and distribute fields into a single column. Similarly, a FastTab will automatically distribute fields into more than two columns to take advantage of wider screens.  
+Pages adjust to the available screen space. A FastTab can use one column when space is limited and two columns at wider sizes. In wide or maximized layouts on sufficiently large screens, it can use three columns.
 
 ## FastTab example
 
-Creating a FastTab is easy. A FastTab is a group control directly within the `content` area of a card, document, or task page. The following example shows how you can create a FastTab that contains a couple of fields.
+A FastTab is a group control directly inside the `content` area of a card, document, or task page. The following example creates a FastTab with two customer fields.
 
-```AL
+```al
 page 50101 SimpleCustomerCard
 {
     PageType = Card;
@@ -38,15 +38,19 @@ page 50101 SimpleCustomerCard
         {
             group(GeneralFastTab)
             {
-                CaptionML = ENU = 'General';
-                
-                field(Name; Name)
+                Caption = 'General';
+
+                field(Name; Rec.Name)
                 {
                     ApplicationArea = All;
+                    Caption = 'Name';
+                    ToolTip = 'Specifies the customer name.';
                 }
-                field(Address; Address)
+                field(Address; Rec.Address)
                 {
                     ApplicationArea = All;
+                    Caption = 'Address';
+                    ToolTip = 'Specifies the customer address.';
                 }
             }
         }
@@ -54,26 +58,26 @@ page 50101 SimpleCustomerCard
 }
 ```
 
-## Collapsed or Expanded FastTabs
+## Initial expanded or collapsed state
 
-[!INCLUDE [prod_short](includes/prod_short.md)] automatically determines whether FastTabs are initially displayed as expanded or collapsed. For example, when a document page is opened the first time, the first two parts or FastTabs are automatically expanded. All other parts or FastTabs are shown as collapsed to provide an optimal starting experience. Users can change the state of a FastTab to be expanded or collapsed directly within the user interface, but developers can't specify the starting state.  
+[!INCLUDE [prod_short](includes/prod_short.md)] determines the initial expanded or collapsed state. When no saved user state exists, the first two collapsible sections are normally expanded and the others are collapsed. Saved user settings take precedence. Users can change the state in the client, but developers can't specify a FastTab's initial expanded state through an AL group property.
 
 ## Choosing how to show fields in a FastTab
 
-If a FastTab is expanded, you see all the fields. If it's collapsed, you just see the summary line. The summary line is the header that displays a name for the group, such as 'Communication'. It can also include important fields such as 'E-mail'. Promoting fields to the summary line enables you to present key information to the user, even if the FastTab is collapsed. You can also specify fields that only appear when the users select the **Show more** action on the FastTab. You promote a field or display it only when **Show more** is selected by setting the [Importance property](properties/devenv-importance-property.md) of the field.  
+An expanded FastTab shows its visible fields. A collapsed FastTab shows a summary line with the group caption and promoted fields. Use the field's `Importance` property to promote key information to the summary or to show additional fields only when users select **Show more**. Learn more in [Importance property](properties/devenv-importance-property.md).
 
-> [!NOTE]  
-> If a group doesn't specify the **CaptionML** property or this is set to an empty value, it's considered to be a group used only for structural purposes. This includes FastTabs. Structural FastTabs look and behave differently, for example, they can't be collapsed by users unless they include the **Show more** action.  
+> [!NOTE]
+> A group with no effective caption is used for structural layout. You can supply a caption with `Caption` or `CaptionML`. Captionless structural groups normally can't be collapsed. If they contain fields with `Importance = Additional`, users can reveal those fields with **Show more**.
 
 ## Organizing compound content in a FastTab
 
-By using a Group control in a FastTab, you can group fields by similarity. This pattern also gives you control over how fields are distributed between the left and right columns. When you group fields on a FastTab, the groups are distributed evenly between the left and right columns. Fields aren't.
+Use nested groups to keep related fields together as the client distributes content across the available columns. Fields in a nested group aren't split individually between columns.
 
-Similarly, page parts placed within a FastTab are distributed evenly between the columns. For example, a FastTab containing two ListParts may be used to display two lists side by side for easier comparison. Learn more about [Page parts](devenv-designing-parts.md).  
-  
-## Manually arranging fields in multiple rows and columns  
+Page parts also participate in the layout. A FastTab with two ListParts can display lists side by side when enough width is available. Learn more about page parts in [Designing page parts](devenv-designing-parts.md).
 
-Using the GridLayout or FixedLayout controls, you can arrange fields in multiple rows and columns in a grid-like format. These controls define a static layout that doesn't automatically adapt to the available space on the screen. It's recommended to use these controls only when you're sure your users access them on larger screens. Learn more in [Arranging fields using grid and fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md).
+## Manually arrange fields in columns
+
+Grid and Fixed controls constrain field placement and don't provide the same automatic reflow as ordinary FastTabs. Test these layouts at the screen sizes your users need. Learn more in [Arranging fields using grid and fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md).
 
 ## Related information
 
