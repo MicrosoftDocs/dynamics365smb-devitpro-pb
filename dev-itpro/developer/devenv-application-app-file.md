@@ -1,6 +1,6 @@
 ---
-title: The Microsoft_Application.app file
-description: The Microsoft_Application.app file encapsulates all of the extensions that make up a solution for Business Central.
+title: The Microsoft_Application.app File
+description: Learn how the Application app groups Business Central solution dependencies and how to reference it from extensions or a code-customized base application.
 ms.author: solsen
 ms.date: 01/16/2024
 ms.topic: reference
@@ -10,135 +10,112 @@ ms.reviewer: solsen
 
 # The Microsoft_Application.app file
 
-The Microsoft_Application.app file is included with [!INCLUDE[prod_short](includes/prod_short.md)] and is located in the `\Applications\Application\Source` folder. The `Microsoft_Application_<version>.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
+The `Microsoft_Application_<version>.app` file groups the application dependencies that make up a [!INCLUDE[prod_short](includes/prod_short.md)] solution. Extensions can reference this solution through the `application` property in `app.json` instead of declaring separate dependencies on its application packages.
 
-> [!NOTE]  
-> In previous versions the references to base and system application were stated explicitly under `dependencies` in the `app.json` file of the extension. Instead you must now use the `Application` version property in the `app.json` file. Learn more in [JSON files](devenv-json-files.md).
+The file is included with [!INCLUDE[prod_short](includes/prod_short.md)] in the `\Applications\Application\Source` folder. Its manifest name is `Application`, even though the package file name includes a publisher and version.
 
-The file name of the reference is `Microsoft_Application_<version>.app` and in the app.json file of the application package file, the name is `Application`. For code-customized base applications that have their own app ID, the `Microsoft_Application_<version>.app` file can be modified to reference the app ID of the code-customized base applications instead. This allows any extensions that are dependent on the `Application` to resolve to the custom app ID. 
+For code-customized base applications, an Application app can reference the customized Base Application instead of the Microsoft Base Application. Extensions that use the `application` property can then resolve their dependencies through that Application app.
 
-> [!NOTE]  
-> The partner who redefines the application must ensure that extensions that are dependent on the `Application` compile and work. This can be ensured, for example, by not introducing any breaking changes.
+> [!NOTE]
+> The partner who customizes the application must ensure that dependent extensions compile and work. Resolving dependencies doesn't guarantee compatibility with changed application code.
 
-> [!IMPORTANT]  
-> If you have modified the `Microsoft_Application_<version>.app` file, you can rename the file name. You should change information about the `publisher` and it's important to keep `"name": "Application"` in the extension, which is what is being checked for in terms of symbols references. It's also important to keep the `propagateDependencies` set to `true`. The `version` must be set to the version of the Microsoft base application with which it is compatible. The `id` must be changed to reference the app ID of the code-customized base application.
+> [!IMPORTANT]
+> Give the customized Application app its own app ID and publisher. Keep `"name": "Application"` and `"propagateDependencies": true`. Set its version to the Microsoft Base Application version with which the solution is compatible. The Application app's own ID must be distinct from the ID of its Base Application dependency.
 
-## Changing the app.json file for a code-customized base application
+## Customize the Application app manifest
 
-The `app.json` file of the `Microsoft_Application_<version>.app` file looks like the following example for [!INCLUDE[prod_short](includes/prod_short.md)] version 15.3.
+The Microsoft Application app references the System Application, Business Foundation, and Base Application. The following example shows the relevant manifest settings.
 
-```json
-{
-    "id":  "c1335042-3002-4257-bf8a-75c898ccb1b8",
-    "name":  "Application",
-    "publisher":  "Microsoft",
-    "version":  "15.3.40074.40254",
-    "propagateDependencies":  true,
-    "logo":  "ExtensionLogo.png",
-    "privacyStatement":  "https://go.microsoft.com/fwlink/?LinkId=724009",
-    "EULA":  "https://go.microsoft.com/fwlink/?linkid=2009120",
-    "help":  "https://go.microsoft.com/fwlink/?linkid=2104024",
-    "url":  "https://go.microsoft.com/fwlink/?LinkId=724011",
-    "dependencies":  [
-                         {
-                             "appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972",
-                             "name":  "Base Application",
-                             "publisher":  "Microsoft",
-                             "version":  "15.3.0.0"
-                         },
-                         {
-                             "appId":  "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
-                             "name":  "System Application",
-                             "publisher":  "Microsoft",
-                             "version":  "15.3.0.0"
-                         }
-                     ],
-    "screenshots":  [
-
-                    ],
-    "platform":  "15.0.0.0",
-    "showMyCode":  true,
-    "brief":  "Application (W1)"
-}
-```
-
-The `Microsoft_Application_<version>.app` file can be edited to use the code-customized base application as a dependency. To do so, update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the `appId` of your code-customized base application. You should update the `"name"` and `"publisher"` information to match too. Below is an example of a modified `Microsoft_Application.app` file using the required changes listed above.
+The examples use `29.0.0.0` as an illustrative target version, not as a requirement for every extension. Use the versions and app IDs from your target application packages. The GUIDs and the `BusinessFoundationAppId` placeholder are example values.
 
 ```json
 {
-    "id":  "<appId of the Application app>",
-    "name":  "Application",
-    "publisher":  "PartnerSolutions",
-    "version":  "15.3.0.0",
-    "propagateDependencies":  true,
-    "logo":  "ExtensionLogo.png",
-    "privacyStatement":  "https://go.microsoft.com/fwlink/?LinkId=724009",
-    "EULA":  "https://go.microsoft.com/fwlink/?linkid=2009120",
-    "help":  "https://go.microsoft.com/fwlink/?linkid=2104024",
-    "url":  "https://go.microsoft.com/fwlink/?LinkId=724011",
-    "dependencies":  [
-                         {
-                             "appId":  "<appId of the code-customized base app>",
-                             "name":  "Customized Base Application",
-                             "publisher":  "PartnerSolutions",
-                             "version":  "15.3.0.0"
-                         },
-                         {
-                             "appId":  "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
-                             "name":  "System Application",
-                             "publisher":  "Microsoft",
-                             "version":  "15.3.0.0"
-                         }
-                     ],
-    "screenshots":  [
-
-                    ],
-    "platform":  "15.0.0.0",
-    "showMyCode":  true,
-    "brief":  "Application (W1)"
+    "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
+    "name": "Application",
+    "publisher": "Microsoft",
+    "version": "29.0.0.0",
+    "propagateDependencies": true,
+    "dependencies": [
+        {
+            "id": "11112222-bbbb-3333-cccc-4444dddd5555",
+            "name": "Base Application",
+            "publisher": "Microsoft",
+            "version": "29.0.0.0"
+        },
+        {
+            "id": "22223333-cccc-4444-dddd-5555eeee6666",
+            "name": "System Application",
+            "publisher": "Microsoft",
+            "version": "29.0.0.0"
+        },
+        {
+            "id": "<BusinessFoundationAppId>",
+            "name": "Business Foundation",
+            "publisher": "Microsoft",
+            "version": "29.0.0.0"
+        }
+    ]
 }
 ```
 
-## Up-taking the Application app
-
-The Application app logically encapsulates apps making up a solution (such as the Base Application and System Application), and provides an abstraction to protect the Marketplace and per-tenant (PTEs) extensions running on top of that solution from not being able to resolve dependencies to these apps.
-
-When using it, future refactoring of the referenced solution; like extracting some areas into separate apps, or changes to the identities of the apps, which comprise the solution, won't be forcing all other dependent apps to change or add new apps to their dependencies, as these dependencies will be resolved implicitly via the reference to the Application app. 
-
-Additionally, it's meant to simplify the on-premises upgrade scenarios, when customizations are extracted from the Base Application into extensions. And finally it makes it possible to make the same apps available not only to the [!INCLUDE[prod_short](includes/prod_short.md)] customers, but also to the customers of the rich, vertical solutions called Embed Apps, which are also running in the [!INCLUDE[prod_short](includes/prod_short.md)] service. 
-
-To enable these benefits, all you need to do, as a Marketplace or PTE app owner, is to add the `"application"` property in the `app.json` file of your app and provide the minimum Microsoft Base Application version that this app is compatible with. For more information, see [JSON files](devenv-json-files.md). Also, you need to remove the direct dependencies to the Base Application and System Application from the `app.json` file. See the following example:
+To reference a code-customized base application, change the Base Application dependency's `id`, `name`, `publisher`, and `version` to match that application's manifest. Keep the other dependencies required by your solution. The following example shows a customized Application app.
 
 ```json
 {
-    "id":  "e5645aaf-74be-453a-ab50-2e34ec3ee53c",
-    "name":  "Fabrikam Gadgets Management",
-    "publisher":  "Fabrikam",
-    "version":  "15.3.41056.29085",
-    "logo":  "ExtensionLogo.png",
-    "privacyStatement":  "https://go.microsoft.com/fwlink/?LinkId=724009",
-    "EULA":  "https://go.microsoft.com/fwlink/?linkid=2009120",
-    "help":  "https://go.microsoft.com/fwlink/?linkid=2104024",
-    "url":  "https://go.microsoft.com/fwlink/?LinkId=724011",
-    "application": "15.3.0.0",
-    "dependencies":  [
-                     ],
-    "screenshots":  [
-
-                    ],
-    "platform":  "15.0.0.0",
-    "showMyCode":  true,
-    "brief":  "Fabrikam Gadgets Mgt."
+    "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
+    "name": "Application",
+    "publisher": "Fabrikam",
+    "version": "29.0.0.0",
+    "propagateDependencies": true,
+    "dependencies": [
+        {
+            "id": "11112222-bbbb-3333-cccc-4444dddd5555",
+            "name": "Customized Base Application",
+            "publisher": "Fabrikam",
+            "version": "29.0.0.0"
+        },
+        {
+            "id": "22223333-cccc-4444-dddd-5555eeee6666",
+            "name": "System Application",
+            "publisher": "Microsoft",
+            "version": "29.0.0.0"
+        },
+        {
+            "id": "<BusinessFoundationAppId>",
+            "name": "Business Foundation",
+            "publisher": "Microsoft",
+            "version": "29.0.0.0"
+        }
+    ]
 }
-
 ```
 
-> [!IMPORTANT]  
-> Soon up-taking the Application app will also be a mandatory requirement for Marketplace apps, enforced by the Marketplace technical validation. Thus, it is highly recommended to change the existing Marketplace apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new Marketplace apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prod_short](includes/prod_short.md)] online environments.
+## Reference the Application app from an extension
 
+Use the `application` property to specify the minimum application version that your extension supports. Remove direct dependencies on the Microsoft Base Application and System Application from `dependencies`. Learn more about manifest settings in [JSON files](devenv-json-files.md).
+
+The Application app propagates its dependencies to your extension. This abstraction reduces the dependency changes needed when a solution moves functionality between application packages. It can also support code-customized on-premises applications and Embed App solutions, provided that those solutions remain compatible with your extension.
+
+Your extension's own version is separate from its minimum application version, as shown in this example.
+
+```json
+{
+    "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
+    "name": "Fabrikam Gadgets Management",
+    "publisher": "Fabrikam",
+    "version": "1.0.0.0",
+    "application": "29.0.0.0",
+    "dependencies": []
+}
+```
+
+> [!IMPORTANT]
+> Marketplace apps must specify the `application` property. AppSourceCop reports AS0100 when the property is missing for runtime 4.3 or later. It reports AS0085 when an app declares explicit dependencies on the Microsoft Base Application or System Application. Learn more in [AppSourceCop rule AS0100](analyzers/appsourcecop-as0100.md) and [AppSourceCop rule AS0085](analyzers/appsourcecop-as0085.md).
 
 ## Related information
 
 [JSON files](devenv-json-files.md)  
+[AppSourceCop rule AS0100](analyzers/appsourcecop-as0100.md)  
+[AppSourceCop rule AS0085](analyzers/appsourcecop-as0085.md)  
 [Install an update](../upgrade/upgrading-cumulative-update-v15.md)  
 [Understand app identity for AL apps](devenv-app-identity.md)  
