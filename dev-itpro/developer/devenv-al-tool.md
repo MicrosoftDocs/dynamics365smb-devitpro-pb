@@ -2,7 +2,7 @@
 title: ALTool Command-Line Reference for AL Development
 author: SusanneWindfeldPedersen
 description: Simplify AL extension development with ALTool. Validate code, package extensions, and integrate into CI/CD pipelines for seamless deployment.
-ms.date: 09/03/2026
+ms.date: 09/25/2026
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
@@ -60,7 +60,7 @@ al help
 | `launchmcpserver`              | Launches an AL Model Context Protocol (MCP) server.  |
 | `launchlspserver`              | Launches an AL Language Server Protocol (LSP) server for use by autonomous AI agents and editors. Learn more in [AL LSP](#al-lsp). |
 | `launchprofilingmcpproxy`      | Launches a Performance Profiling MCP proxy that lets an AI agent capture CPU profiles from a slow Business Central session. Learn more in [Performance Profiling MCP proxy](#performance-profiling-mcp-proxy). **NOTE:** This feature is available in preview with a prerelease of runtime 18 and Business Central Server version 29. |
-| `launchsnapshotmcpproxy`       | Launches a Snapshot Debugging MCP proxy that lets an AI agent capture an AL snapshot from the next Business Central session that reproduces a failing scenario. For more information, see [Snapshot debugging MCP proxy](#snapshot-debugging-mcp-proxy). **NOTE:** This feature is available in preview with a prerelease of runtime 18 and Business Central Server version 29. |
+| `launchsnapshotmcpproxy`       | Launches a Snapshot Debugging MCP proxy that lets an AI agent capture an AL snapshot from the next Business Central session that reproduces a failing scenario. For more information, see [Snapshot debugging MCP proxy](#snapshot-debugging-mcp-proxy). |
 | `GetPackageManifest`           | Retrieve the manifest from a `.app` file.            |
 | `CreateSymbolPackage`          | Create a symbol-only package from a `.app` file.     |
 | `GetLatestSupportedRuntimeVersion` | Get the latest supported AL runtime version for a platform version. |
@@ -637,9 +637,12 @@ The `launchsnapshotmcpproxy` command lets an AI agent capture an AL [snapshot](d
 
 ALTool runs as a stdio MCP server that an agent host—for example, Visual Studio Code in agent mode—spawns as a child process. It exposes the following tools that the agent calls on the user's behalf:
 
-- **Initialize snapshot debugging** — arms a waiting snapshot on the server for a set of snappoints, optionally scoped to a specific user. There's usually no session yet: the server records the *next* session that reproduces the scenario.
+- **Initialize snapshot debugging** — arms a snapshot on the server for a set of snappoints, optionally scoped to a specific user. The optional `snapshotVerbosity` argument defaults to `SnapPoint`; `Full` applies to any session that attaches to the runtime.
+- **Run tests** — runs selected AL test codeunits in an isolated session attached to the armed snapshot.
 - **Get snapshot status** — reports whether the armed snapshot is still waiting, recording, or finished.
 - **Stop snapshot debugging** — finalizes the run and returns the recorded snapshot archive so the agent can debug it.
+
+`SnapPoint` records method contexts that hit a configured snappoint or contain an exception. `Full` records every method context and the source for every encountered non-IP-protected AL object for any attached session, but variable values remain limited to snappoints and exceptions. A full capture can materially increase Business Central Server CPU, memory, disk usage, archive size, and finalization time, so keep the reproduction short and targeted and stop the snapshot promptly. The agent must still call **Stop snapshot debugging** after **Run tests**, including when a test fails.
 
 The snapshot is recorded on the server while you reproduce the scenario. If the environment moves or restarts before you stop it, the in-progress recording is lost and the status tool reports that there's nothing to collect; simply initialize a new snapshot and reproduce the scenario again. The captured archive can contain sensitive business data, so handle it securely and in line with your privacy requirements.
 
