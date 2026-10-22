@@ -1,8 +1,8 @@
 ---
-title: AVS Error AVS0007
-description: "The release version '{0}' is not supported."
+title: AVS0007 Application Validation Error
+description: Learn why Application Validation Service diagnostic AVS0007 reports an unsupported release and how to verify the app's target release.
 ms.author: thpeder
-ms.date: 01/30/2025
+ms.date: 10/05/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
@@ -10,15 +10,13 @@ author: thpeder
 
 # AVS Error AVS0007
 
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
 The release version '{0}' is not supported.
 
 ## How to fix this diagnostic?
 
-In the app.json file of the app you must specify one of the supported runtime versions from [Choosing Runtime Version in AL](../devenv-choosing-runtime.md).
+Target a [!INCLUDE[prod_short](../includes/prod_short.md)] release that the validation service supports. This diagnostic concerns the release being validated, not only the `runtime` value in `app.json`. If you can't select the target release directly, verify the submission's application and dependency versions or contact support to determine why the unsupported release was selected.
 
 ## Related information
 
 [Get started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing extensions in AL](../devenv-dev-overview.md)  

@@ -1,8 +1,8 @@
 ---
-title: AVS Error AVS0001
-description: "The 'app.json' could not be found in the specified package."
+title: AVS0001 Application Validation Error
+description: Learn why Application Validation Service diagnostic AVS0001 reports a missing app.json file and how to rebuild the Business Central app package.
 ms.author: thpeder
-ms.date: 02/26/2024
+ms.date: 10/05/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
@@ -10,15 +10,13 @@ author: thpeder
 
 # AVS Error AVS0001
 
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
 The 'app.json' could not be found in the specified package.
 
 ## How to fix this diagnostic?
 
-Rebuild the app either from Visual Studio Code or by using the alc.exe tool.
+Rebuild the app in Visual Studio Code or with `alc.exe`.
 
 ## Related information
 
 [Get started with AL](../devenv-get-started.md)  
-[Developing extensions](../devenv-dev-overview.md)  
+[Developing extensions in AL](../devenv-dev-overview.md)  

@@ -1,8 +1,8 @@
 ---
-title: AVS Error AVS0106
-description: "The submission must target at least one existing country/region of Business Central. Verify that at least one country/region is marked as 'Available' at aka.ms/bccountries."
+title: AVS0106 Application Validation Error
+description: Learn why Application Validation Service diagnostic AVS0106 reports no target country or region and how to verify country or region availability.
 ms.author: thpeder
-ms.date: 01/30/2025
+ms.date: 10/05/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
@@ -10,12 +10,10 @@ author: thpeder
 
 # AVS Error AVS0106
 
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
-The submission must target at least one existing country/region of [!INCLUDE [prod_short](../includes/prod_short.md)]. Verify that at least one country/region is marked as 'Available' at [aka.ms/bccountries](https://aka.ms/bccountries). For more information, see the [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
+The submission must target at least one existing country/region of [!INCLUDE [prod_short](../includes/prod_short.md)]. Verify that at least one country/region is marked as 'Available' at [aka.ms/bccountries](https://aka.ms/bccountries). Learn more about country or region availability in [Technical validation FAQ](../devenv-checklist-submission-faq.md).
 
 ## Related information
 
-[Technical Validation FAQ](../devenv-checklist-submission-faq.md)
+[Technical validation FAQ](../devenv-checklist-submission-faq.md)  
 [Get started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing extensions in AL](../devenv-dev-overview.md)  
