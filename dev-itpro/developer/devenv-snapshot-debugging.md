@@ -2,7 +2,7 @@
 title: Snapshot debugging
 description: Overview of how snapshot debugging allows recording running AL code for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 08/03/2026
+ms.date: 09/25/2026
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -49,7 +49,7 @@ Choose whether to run the session on a cloud service or locally. The configurati
 |--------|-------------|
 |`userId`| The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` doesn't work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [Launch JSON file](devenv-json-launch-file.md).|
 |`sessionId`| A session ID for the user specified in `userId`.|
-|`snapshotVerbosity`| Determines how much execution context to be recorded. If **SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
+|`snapshotVerbosity`| Determines how much execution context is recorded. `SnapPoint` records methods that hit a snappoint. `Full` records every method context and the source for every encountered non-IP-protected AL object, which can materially increase Business Central Server CPU, memory, disk usage, and snapshot size. Variable values remain limited to snappoints and exceptions. Use `Full` only for short, targeted scenarios.|
 |`tenant`| The Microsoft Entra tenant ID for the tenant to connect to. Specify this if your target is a different tenant from the user's own Microsoft Entra tenant, for example when running as a delegated admin.|
 
 When a configuration is defined, a snapshot debugging session can be initialized by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then selecting **AL:Initialize Snapshot Debugging** or by selecting <kbd>F7</kbd>.
@@ -159,9 +159,6 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 
 [!INCLUDE [2026-releasewave2-later](../includes/2026-releasewave2-later.md)]
 
-> [!NOTE]
-> This feature is available in preview with a prerelease of runtime 18 and Business Central Server version 29.
-
 Instead of using the [keyboard-shortcut workflow](#snapshot-debugging-keyboard-shortcuts), you can use an AI agent to capture a snapshot through the **Snapshot Debugging MCP server**. You describe the failing scenario, the agent initializes a snapshot session, you reproduce the problem, and the agent collects the recorded snapshot. You don't need to press <kbd>F7</kbd>/<kbd>Alt</kbd>+<kbd>F7</kbd> or edit a snapshot launch configuration.
 
 The MCP server uses the same snapshot engine described earlier in this article, so how snapshots are initialized, recorded, and finalized is unchanged. It exposes the following tools that an agent calls on your behalf:
@@ -169,6 +166,7 @@ The MCP server uses the same snapshot engine described earlier in this article, 
 | Tool | What it does | Manual equivalent |
 |------|--------------|-------------------|
 | Initialize snapshot debugging | Initializes a waiting snapshot for a set of snappoints, optionally scoped to a specific user. There's usually no session yet - the server records the next session that reproduces the scenario. | Start a session (<kbd>F7</kbd>). Learn more in [Initialize a snapshot debugging session](#initialize-a-snapshot-debugging-session) |
+| Run tests | Runs selected AL test codeunits in an isolated session attached to the armed snapshot. The result reminds the agent to stop and collect the snapshot. | Run the test manually in the session selected for snapshot debugging. |
 | Get snapshot status | Reports whether the snapshot is waiting, recording, or finished. | List snapshots (<kbd>Shift</kbd>+<kbd>F7</kbd>). Learn more in [Status of a snapshot debugging session](#status-of-a-snapshot-debugging-session) |
 | Stop snapshot debugging | Finalizes the run and returns the recorded snapshot archive so the agent can debug it. | Finish a session (<kbd>Alt</kbd>+<kbd>F7</kbd>). Learn more in [Stop a snapshot debugging session](#stop-a-snapshot-debugging-session) |
 
@@ -185,6 +183,20 @@ In most cases, you don't have a session yet, so don't pass a session ID. Snapsho
 If you already know the session you want to record - for example, a session that's currently running - provide its session ID instead. The snapshot debugger then attaches to that session directly rather than waiting for the next reproduction.
 
 The snapshot is recorded on the server while you reproduce the scenario. If the environment moves or restarts before you stop it, the in-progress recording is lost and the agent reports that there's nothing to collect. When that happens, just arm a new snapshot and reproduce the scenario again.
+
+### Run AL tests under snapshot debugging
+
+To diagnose a failing AL test without manually finding its server session, ask the agent to initialize snapshot debugging, run the selected test through the snapshot server, and then stop and collect the snapshot. For example:
+
+> Run test method `PostingFailsWithExpectedError` in test codeunit `50100` under snapshot debugging, add a snappoint at line 42 of codeunit `50110`, then collect the snapshot and explain the failure.
+
+The agent passes test codeunits and optional test methods as arguments to **Run tests**, together with the `debuggingContext` returned by **Initialize snapshot debugging**. It must call **Stop snapshot debugging** afterward, including when the test fails or is canceled after attachment.
+
+By default, snapshot initialization uses `snapshotVerbosity: SnapPoint`, which records method contexts that hit a configured snappoint or contain an exception. If you need method frames outside those locations, explicitly ask the agent to initialize with full snapshot verbosity:
+
+> Run only test method `PostingFailsWithExpectedError` in codeunit `50100` under snapshot debugging with full snapshot verbosity, then collect and analyze the snapshot.
+
+`Full` records every method context and the source for every encountered non-IP-protected AL object. Variable values are still recorded only at snappoints and exceptions. The initialized mode applies to any session attached to the snapshot runtime, including the next matching session, an existing session, or an isolated AL test session. Because a full capture can materially increase Business Central Server CPU, memory, disk usage, archive size, and finalization time, use it only for short, targeted reproductions and stop the snapshot promptly.
 
 ### What to tell the agent when you arm a snapshot
 
