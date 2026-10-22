@@ -1,8 +1,8 @@
 ---
-title: AVS Error AVS0004
-description: "The specified ruleset could not be loaded. Details: {0}"
+title: AVS0004 Application Validation Error
+description: Learn why Application Validation Service diagnostic AVS0004 reports an invalid ruleset and how to correct the ruleset or get support.
 ms.author: thpeder
-ms.date: 01/30/2025
+ms.date: 10/05/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
@@ -10,15 +10,13 @@ author: thpeder
 
 # AVS Error AVS0004
 
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
 The specified ruleset could not be loaded. Details: {0}
 
 ## How to fix this diagnostic?
 
-Something went wrong when loading a ruleset, retry the operation and contact Partner Center support if it fails again.
+Review the details appended to the diagnostic and correct the invalid ruleset. AVS0004 is reported when loading the ruleset produces an error. If the validation service supplied the ruleset and you can't change it, retry once and then contact support with the complete diagnostic details.
 
 ## Related information
 
 [Get started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing extensions in AL](../devenv-dev-overview.md)  

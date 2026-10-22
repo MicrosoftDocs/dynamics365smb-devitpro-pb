@@ -1,8 +1,8 @@
 ---
-title: AVS Error AVS0105
-description: "The submission must target at least one existing release of Business Central. Verify the dependencies specified in the app.json of all the apps submitted."
+title: AVS0105 Application Validation Error
+description: Learn why Application Validation Service diagnostic AVS0105 reports no valid target release and how to verify application and dependency requirements.
 ms.author: thpeder
-ms.date: 01/30/2025
+ms.date: 10/05/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
@@ -10,16 +10,14 @@ author: thpeder
 
 # AVS Error AVS0105
 
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
-The submission must target at least one existing release of [!INCLUDE [prod_short](../includes/prod_short.md)]. Verify the dependencies specified in the `app.json` file of all the apps submitted. For more information about the target release computation, see the examples in the [Technical Validation Checklist](../devenv-checklist-submission.md).
+The submission must target at least one existing release of [!INCLUDE [prod_short](../includes/prod_short.md)]. Verify the dependencies specified in the `app.json` file of all the apps submitted. Learn more about the target release computation in [Technical validation checklist](../devenv-checklist-submission.md).
 
 ## How to fix this diagnostic?
 
-The app.json files has a dependency either from the `application` property or the `dependencies` section that sets the requirement higher than the available releases of [!INCLUDE [prod_short](../includes/prod_short.md)]. To learn more see [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
+One or more `app.json` files specify an `application` or `dependencies` requirement that is later than the available releases of [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more about dependency requirements in [Technical validation FAQ](../devenv-checklist-submission-faq.md).
 
 ## Related information
 
-[Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
-[Get started with AL](../devenv-get-started.md)
-[Developing Extensions](../devenv-dev-overview.md)
+[Choose runtime version in AL](../devenv-choosing-runtime.md)  
+[Get started with AL](../devenv-get-started.md)  
+[Developing extensions in AL](../devenv-dev-overview.md)  

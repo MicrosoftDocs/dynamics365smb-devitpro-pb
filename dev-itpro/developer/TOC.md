@@ -934,8 +934,8 @@
 #### [AL1417](diagnostics/diagnostic-al1417.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_DIAGNOSTICS) -->
 <!-- AVS section -->
-## Application Validation Service Diagnostics
-### [Application Validation Service Diagnostics Overview](avs-diagnostics/avs-diagnostics-overview.md)
+## Application validation diagnostics
+### [Application validation diagnostics overview](avs-diagnostics/avs-diagnostics-overview.md)
 ### [AVS0001](avs-diagnostics/diagnostic-avs0001.md)
 ### [AVS0002](avs-diagnostics/diagnostic-avs0002.md)
 ### [AVS0003](avs-diagnostics/diagnostic-avs0003.md)

@@ -1,16 +1,14 @@
 ---
-title: AVS Error AVS0102
-description: "A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded."
+title: AVS0102 Application Validation Error
+description: Learn why Application Validation Service diagnostic AVS0102 can't load a compatible package and what to do if another validation attempt fails.
 ms.author: thpeder
-ms.date: 01/30/2025
+ms.date: 10/05/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
 ---
 
 # AVS Error AVS0102
-
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded.
 
@@ -21,4 +19,4 @@ Retry the operation and contact Partner Center support if it fails again.
 ## Related information
 
 [Get started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing extensions in AL](../devenv-dev-overview.md)  

@@ -1,18 +1,18 @@
 ---
-title: Application Validation Service diagnostics overview
-description: The application validation service diagnostics.
+title: Application Validation Diagnostic Reference
+description: Review Application Validation Service diagnostics by ID, message, and severity, and open guidance for resolving each validation issue.
 ms.author: thpeder
-ms.date: 01/30/2025
+ms.date: 10/05/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
 ---
 
-# Application Validation Service diagnostics overview
+# Application validation diagnostics overview
 
-When an app is submitted for Marketplace, a per-tenant extension is submitted, or when a tenant is about to be upgraded, the Application Validation Service is run. This article gives an overview of the diagnostics that running the AVS tool gives, sorted by ID and severity. For more information about a specific diagnostic, choose the ID.
+Application Validation Service (AVS) runs when you submit an app to Marketplace or submit a per-tenant extension, and before a tenant upgrade. The following table lists each diagnostic by ID and severity. Select an ID to open its troubleshooting guidance.
 
-|ID|Message|Default Severity|
+|ID|Message|Default severity|
 |--|-----------|----------------|
 |[AVS0001](diagnostic-avs0001.md)|The 'app.json' could not be found in the specified package.|Error|
 |[AVS0002](diagnostic-avs0002.md)|The runtime version '{0}' of the extension is too recent for the release of Business Central being validated. The latest supported runtime version is '{1}'.|Error|
@@ -34,4 +34,3 @@ When an app is submitted for Marketplace, a per-tenant extension is submitted, o
 |[AVS0111](diagnostic-avs0111.md)|A {0} with name '{1}' is found in both {2} and {3}. Object names must be unique per environment. Resolve the conflict in your extension by using a different name and upload the extension again.|Warning|
 |[AVS0112](diagnostic-avs0112.md)|A {0} with ID {1} in '{2}' is found in both {3} and {4}. {0} IDs must be unique within the base objects and their extension objects. Resolve the conflict in your extension by using a different ID and upload the extension again.|Warning|
 |[AVS0113](diagnostic-avs0113.md)|A {0} with name '{1}' in '{2}' is found in both {3} and {4}. {0} names must be unique within the base objects and their extension objects. Resolve the conflict in your extension by using a different name and upload the extension again.|Warning|
-
