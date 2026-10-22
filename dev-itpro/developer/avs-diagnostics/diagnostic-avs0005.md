@@ -1,8 +1,8 @@
 ---
-title: AVS Error AVS0005
-description: "A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found."
+title: AVS0005 Application Validation Error
+description: Learn why Application Validation Service diagnostic AVS0005 can't find a compatible dependency package and what dependency details to verify.
 ms.author: thpeder
-ms.date: 01/30/2025
+ms.date: 10/05/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
@@ -10,15 +10,13 @@ author: thpeder
 
 # AVS Error AVS0005
 
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
 A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found.
 
-## How to fix this diagnostics?
+## How to fix this diagnostic?
 
-Validate that the dependency information is correct and that the dependencies are available for the countries/releases validated.
+Verify that the dependency information is correct and that the dependencies are available for the country or region and release combinations being validated.
 
 ## Related information
 
 [Get started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing extensions in AL](../devenv-dev-overview.md)  
