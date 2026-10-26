@@ -57,7 +57,7 @@ Shopify Connector has been non-extensible, but we're changing that. We're offeri
 
 We are opening for extensibility for specific scenarios, based on feedback from our partners and customers starting with **Stock calculation**.
 
-For more details, please follow this [repository](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/Shopify) on GitHub. Note that even though extensibility is limited, you can submit improvements directly.
+For implementation details, see the [Shopify connector source code](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/Shopify). Submit improvements through the [BCApps repository](https://github.com/microsoft/BCApps).
 
 **Power Apps and Power Automate support for media/image and document attachments**  
 Business Central connector (online only) for Power Platform and Azure Logic Apps has been enhanced with new capabilities and actions to allow makers to access rich data from Business Central. Note that the updated connector is rolling out to all Azure regions now and is backward compatible with latest Business Central online versions (including version 21.3 discussed here), but in order to take advantage of these new capabilities in Power Automate flows the user needs to create a new flow using the new action discussed [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/add-mediaimage-support-business-central-connectors).
