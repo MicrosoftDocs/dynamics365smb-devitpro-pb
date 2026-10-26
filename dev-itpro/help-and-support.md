@@ -163,9 +163,9 @@ GitHub brings together communities of developers and other contributors to disco
 
   For collaboration on the AL development environment in Visual Studio Code, use the GitHub repo here: [https://github.com/microsoft/al](https://github.com/microsoft/al)
 
-* Microsoft AL application add-ons
+* Microsoft Business Central applications
 
-  There are a couple of ways to engage with us in the [https://github.com/microsoft/ALAppExtensions](https://github.com/microsoft/ALAppExtensions/) repo:
+  There are a couple of ways to engage with us in the [BCApps repository](https://github.com/microsoft/BCApps):
 
   * You can grab the code and contribute to the published apps.
   * If you're building your own app and need something specific from us, such as an event, you can help improve the general extensibility of the business logic.
