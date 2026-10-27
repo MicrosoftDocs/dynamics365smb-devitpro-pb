@@ -1,7 +1,7 @@
 ---
-title: Control Add-in Style Guide
-description: Learn about the style guide for control add-ins in Dynamics 365 Finance.
-ms.date: 04/01/2021
+title: Control Add-in Styling for Business Central
+description: Style control add-ins for Business Central with selected colors, fonts, and CSS examples, and learn how to check readability and keyboard interaction.
+ms.date: 10/21/2026
 ms.topic: how-to
 author: jswymer
 ms.author: jswymer
@@ -10,96 +10,104 @@ ms.reviewer: solsen
 
 # Control add-in style guide
 
-This article offers a variety of stylistic definitions that are used throughout [!INCLUDE[d365fin_md](includes/d365fin_md.md)], which you can apply to your control add-ins to create an experience that complements [!INCLUDE[d365fin_md](includes/d365fin_md.md)].
+Use colors, fonts, and CSS to make your control add-ins complement the [!INCLUDE[prod_short](../includes/prod_short.md)] interface.
 
-## Introduction
+> [!NOTE]
+> This article is for developers who style content inside a control add-in. It doesn't describe how to change the colors of the entire client or distinguish production and sandbox environments.
 
-Control add-ins for [!INCLUDE[d365fin_md](includes/d365fin_md.md)] extend a business solution by surfacing contextual functionality alongside business data. Control add-ins empower users to get more done without costly context switching, no matter which device they access Dynamics 365 from. Typical uses of control add-ins include unique data visualizations, surfacing controls from a third party service, or displaying related content from another data source.
+## Design control add-ins for the client
 
-Apart from the functionality, an important aspect of creating a control add-in is making sure the control add-in looks good and blends seamlessly into [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. To achieve this, you should follow these basic principles:
+Control add-ins display contextual functionality alongside business data. Typical uses include data visualizations, third-party controls, and related content from another data source.
 
-- Apply similar patterns for command, navigation and presentation of data.
-- Favor content over chrome
+Follow these principles when designing a control add-in:
+
+- Apply similar patterns for commands, navigation, and data presentation.
+- Favor content over decorative interface elements.
 - Design for all platforms and input methods.
 - Make it accessible to all users.
 - Make it enjoyable and keep users in control.
 
-[!INCLUDE[d365fin_md](includes/d365fin_md.md)] uses a set of specific colors and fonts. You can employ these colors and fonts in your control add-ins to give it a style that matches the rest of client's user interface.  
+The following tables list selected colors and font definitions used by the client. Individual components can use different shades and styles depending on their context. Use these values as styling examples, not as a complete specification of the client interface.
 
+Test text contrast, keyboard interaction, input labels, visible focus, and forced-color modes. A palette or font choice alone doesn't ensure that a control add-in is accessible.
 
-## Colors
-Choosing the right color gives the interface visual continuity. Color can be used to convey information to users, indicate interactivity, give feedback, and more. The following sections describe the colors used in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. The colors can be used on all aspects of a UI element, such background, border, text, and more. 
+## Choose colors for control add-ins
+
+Colors can convey information, indicate interactivity, and provide feedback. You can apply the following colors to backgrounds, borders, text, and other interface elements. Choose foreground and background combinations with sufficient contrast.
 
 ### Main colors
 
-The following colors represent the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] theme main palette.
+The following colors are the primary and secondary colors in the client's base palette.
 
 |  Color  |  Name  |  Use  |  HEX value  |
 |---------|--------|-------|-------------|
-|![Primary (#00B7C3).](media/style/00B7C3.png "Primary (#00B7C3)")|Primary color|Prominent UI elements and areas.|#00B7C3|
-| ![Secondary (#505C6D).](media/style/505C6D.png "Secondary (#505C6D)")|Secondary color| UI elements and areas in default or subdued state.|#505C6D|
+|:::image type="content" source="media/style/00B7C3.png" alt-text="Color swatch showing the color #00B7C3, used as a styling example.":::|Primary color|Prominent UI elements and areas.|#00B7C3|
+| :::image type="content" source="media/style/505C6D.png" alt-text="Color swatch showing the color #505C6D, used as a styling example.":::|Secondary color| UI elements and areas in default or subdued state.|#505C6D|
 
 ### Style colors
-The following colors are used to express or accent conditions or user activity in the UI. For example, these colors are used as sentiments, or color indication, on Cues.
-  
+
+The following base palette colors express conditions or user activity, such as sentiments on cues. Don't rely on color alone to communicate meaning.
+
 |  Color  |  Description  | HEX value|
 |---------|---------------|----------|
-|![Standard (#00B7C3).](media/style/212121.png "Accent (#00B7C3)")|Standard|#212121|
-|![Accent (#00B7C3).](media/style/00B7C3.png "Accent (#00B7C3)")|Accent|#00B7C3|
-|![Strong (#00B7C3).](media/style/212121.png "Strong (#00B7C3)")|Strong|#212121|
-|![Favorable (#35AB22).](media/style/35AB22.png "Favorable (#35AB22)")|Favorable|#35AB22|
-|![Ambiguous (#9F9700).](media/style/9F9700.png "Ambiguous (#9F9700)")|Ambiguous|#9F9700|
-|![Unfavorable (#EB6965).](media/style/EB6965.png "Unfavorable (#EB6965)")|Unfavorable|#EB6965|
-|![Attention (#EB6965).](media/style/EB6965.png "Attention (#EB6965)")|Attention|#EB6965|
-|![Subordinate (#A7ADB6).](media/style/A7ADB6.png "Subordinate (#A7ADB6)")|Subordinate|#A7ADB6|
+|:::image type="content" source="media/style/212121.png" alt-text="Color swatch showing the color #212121, used as a styling example.":::|Standard|#212121|
+|:::image type="content" source="media/style/00B7C3.png" alt-text="Color swatch showing the color #00B7C3, used as a styling example.":::|Accent|#00B7C3|
+|:::image type="content" source="media/style/212121.png" alt-text="Color swatch showing the color #212121, used as a styling example.":::|Strong|#212121|
+|:::image type="content" source="media/style/35AB22.png" alt-text="Color swatch showing the color #35AB22, used as a styling example.":::|Favorable|#35AB22|
+|:::image type="content" source="media/style/9F9700.png" alt-text="Color swatch showing the color #9F9700, used as a styling example.":::|Ambiguous|#9F9700|
+|:::image type="content" source="media/style/EB6965.png" alt-text="Color swatch showing the color #EB6965, used as a styling example.":::|Unfavorable|#EB6965|
+|:::image type="content" source="media/style/EB6965.png" alt-text="Color swatch showing the color #EB6965, used as a styling example.":::|Attention|#EB6965|
+|:::image type="content" source="media/style/A7ADB6.png" alt-text="Color swatch showing the color #A7ADB6, used as a styling example.":::|Subordinate|#A7ADB6|
 
-### More palette colors
+### Additional palette colors
+
 The following table includes additional colors that you can use in the UI.
 
 |  Color  |  Description  | HEX value|
 |---------|---------------|----------|
-|![YELLOW (#C9C472).](media/style/C9C472.png "YELLOW (#C9C472)")|Yellow|#C9C472|
-|![GREEN (#88CE81).](media/style/88CE81.png "GREEN (#88CE81)")|Green|#88CE81|
-|![RED (#E97768).](media/style/E97768.png "RED (#E97768)")|Red|#E97768|
-|![BLUE (#75B5E7).](media/style/75B5E7.png "BLUE (#75B5E7)")|Blue|#75B5E7|
-|![LIGHTGREEN (#59CCB4).](media/style/59CCB4.png "LIGHTGREEN (#59CCB4)")|Light green|#59CCB4|
-|![SKY (#75D8E7).](media/style/75D8E7.png "SKY (#75D8E7)")|Sky|75D8E7|
-|![EGG (#EEEA86).](media/style/EEEA86.png "EGG (#EEEA86)")|Egg|EEEA86|
-|![ORANGE (#E89E63).](media/style/E89E63.png "ORANGE (#E89E63)")|Orange|#E89E63|
-|![VIOLET (#DBBDEB).](media/style/DBBDEB.png "VIOLET (#DBBDEB)")|Violet|#DBBDEB|
-|![TEAL (#39B294).](media/style/39B294.png "TEAL (#39B294)")|Teal|#39B294|
-|![GRASS (#73BA5A).](media/style/73BA5A.png "GRASS (#73BA5A)")|Grass|#73BA5A|
-|![SCARLET (#E65E6D).](media/style/E65E6D.png "SCARLET (#E65E6D)")|Scarlet|#E65E6D|
+|:::image type="content" source="media/style/C9C472.png" alt-text="Color swatch showing the color #C9C472, used as a styling example.":::|Yellow|#C9C472|
+|:::image type="content" source="media/style/88CE81.png" alt-text="Color swatch showing the color #88CE81, used as a styling example.":::|Green|#88CE81|
+|:::image type="content" source="media/style/E97768.png" alt-text="Color swatch showing the color #E97768, used as a styling example.":::|Red|#E97768|
+|:::image type="content" source="media/style/75B5E7.png" alt-text="Color swatch showing the color #75B5E7, used as a styling example.":::|Blue|#75B5E7|
+|:::image type="content" source="media/style/59CCB4.png" alt-text="Color swatch showing the color #59CCB4, used as a styling example.":::|Light green|#59CCB4|
+|:::image type="content" source="media/style/75D8E7.png" alt-text="Color swatch showing the color #75D8E7, used as a styling example.":::|Sky|#75D8E7|
+|:::image type="content" source="media/style/EEEA86.png" alt-text="Color swatch showing the color #EEEA86, used as a styling example.":::|Egg|#EEEA86|
+|:::image type="content" source="media/style/E89E63.png" alt-text="Color swatch showing the color #E89E63, used as a styling example.":::|Orange|#E89E63|
+|:::image type="content" source="media/style/DBBDEB.png" alt-text="Color swatch showing the color #DBBDEB, used as a styling example.":::|Violet|#DBBDEB|
+|:::image type="content" source="media/style/39B294.png" alt-text="Color swatch showing the color #39B294, used as a styling example.":::|Teal|#39B294|
+|:::image type="content" source="media/style/73BA5A.png" alt-text="Color swatch showing the color #73BA5A, used as a styling example.":::|Grass|#73BA5A|
+|:::image type="content" source="media/style/E65E6D.png" alt-text="Color swatch showing the color #E65E6D, used as a styling example.":::|Scarlet|#E65E6D|
 
-### Chart colors
-The following table describes the colors used in charts.
+### Example colors for charts
+
+The following colors are examples for chart series, not a complete chart palette. Chart implementations can use different shades, opacity, and color sequences.
 
 |  Color  |  Description  | HEX value|
 |---------|---------------|----------|
-| ![Secondary (#505C6D).](media/style/505C6D.png "Secondary (#505C6D)")|-|#505C6D|
-| ![Secondary (#008089).](media/style/008089.png "Secondary (#505C6D)")|-|#008089|
-|![Primary (#00B7C3).](media/style/00B7C3.png "Primary (#00B7C3)")|Primary color|#00B7C3|
-|![YELLOW (#C9C472).](media/style/C9C472.png "YELLOW (#C9C472)")|Yellow|#C9C472|
-|![RED (#E97768).](media/style/E97768.png "RED (#E97768)")|Red|#E97768|
-|![BLUE (#75B5E7).](media/style/75B5E7.png "BLUE (#75B5E7)")|Blue|#75B5E7|
-|![LIGHTGREEN (#59CCB4).](media/style/59CCB4.png "LIGHTGREEN (#59CCB4)")|Light green|#59CCB4|
-|![SKY (#75D8E7).](media/style/75D8E7.png "SKY (#75D8E7)")|Sky|75D8E7|
-|![EGG (#EEEA86).](media/style/EEEA86.png "EGG (#EEEA86)")|Egg|EEEA86|
-|![VIOLET (#DBBDEB).](media/style/DBBDEB.png "VIOLET (#DBBDEB)")|Violet|#DBBDEB|
-|![TEAL (#39B294).](media/style/39B294.png "TEAL (#39B294)")|Teal|#39B294|
-|![GRASS (#73BA5A).](media/style/73BA5A.png "GRASS (#73BA5A)")|Grass|#73BA5A|
+| :::image type="content" source="media/style/505C6D.png" alt-text="Color swatch showing the color #505C6D, used as a styling example.":::|-|#505C6D|
+| :::image type="content" source="media/style/008089.png" alt-text="Color swatch showing the color #008089, used as a styling example.":::|-|#008089|
+|:::image type="content" source="media/style/00B7C3.png" alt-text="Color swatch showing the color #00B7C3, used as a styling example.":::|Primary color|#00B7C3|
+|:::image type="content" source="media/style/C9C472.png" alt-text="Color swatch showing the color #C9C472, used as a styling example.":::|Yellow|#C9C472|
+|:::image type="content" source="media/style/E97768.png" alt-text="Color swatch showing the color #E97768, used as a styling example.":::|Red|#E97768|
+|:::image type="content" source="media/style/75B5E7.png" alt-text="Color swatch showing the color #75B5E7, used as a styling example.":::|Blue|#75B5E7|
+|:::image type="content" source="media/style/59CCB4.png" alt-text="Color swatch showing the color #59CCB4, used as a styling example.":::|Light green|#59CCB4|
+|:::image type="content" source="media/style/75D8E7.png" alt-text="Color swatch showing the color #75D8E7, used as a styling example.":::|Sky|#75D8E7|
+|:::image type="content" source="media/style/EEEA86.png" alt-text="Color swatch showing the color #EEEA86, used as a styling example.":::|Egg|#EEEA86|
+|:::image type="content" source="media/style/DBBDEB.png" alt-text="Color swatch showing the color #DBBDEB, used as a styling example.":::|Violet|#DBBDEB|
+|:::image type="content" source="media/style/39B294.png" alt-text="Color swatch showing the color #39B294, used as a styling example.":::|Teal|#39B294|
+|:::image type="content" source="media/style/73BA5A.png" alt-text="Color swatch showing the color #73BA5A, used as a styling example.":::|Grass|#73BA5A|
 
+### Apply colors with CSS
 
-### Applying colors
-To apply a color scheme to the control add-in, you specify CSS rule-sets that use the following properties:
+Use the following CSS properties to apply colors to your control add-in:
 
 |  Property  |  Description  |
 |------------|---------------|
-|`color`|Specifies font color.|
+|`color`|Specifies text color.|
 |`background-color`|Specifies background colors.|
-|`border-color`|Specifies Border colors. |
+|`border-color`|Specifies border colors. A visible border also requires a border style and width.|
 
-For example, to change the background of a part of your UI to use the `Secondary (#505C6D)` color, write the following CSS:
+For example, use the secondary color as a background:
 
 ```css
 .my-ui-part {
@@ -107,69 +115,50 @@ For example, to change the background of a part of your UI to use the `Secondary
 }
 ```
 
-If you want to change the text color of a caption to the Primary (#00B7C3) color, use the following CSS:
+To apply the primary color to caption text, use the following CSS. Check its contrast against the caption's background.
 
 ```css
 .my-caption {
     color: #00B7C3;
 }
 ```
-## Typography
 
-The main goal of typography is to provide clean and readable text in the user interface. Similar to colors, typography can also be used to convey or communicate conditions to the user. 
+## Choose fonts and text sizes
 
-### Font Families
+Choose fonts and sizes that keep text readable in the available space.
 
-[!INCLUDE[d365fin_md](includes/d365fin_md.md)] uses the following font families to specify the typeface and weight for text elements, such as headings, captions, messages, and so on:
+### Font families
+
+The following font definitions specify typefaces and weights for text elements such as headings, captions, and messages:
 
 |  Example  |  Name  | Value |
 |-----------|--------|:-----------:|
-|![Segoe UI font family.](media/style/segoe-ui.png "Segoe UI font family")| Segoe UI | `"Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif` |
-|![Segoe UI Light font family.](media/style/segoe-ui-light.png "Segoe UI Light font family")| Segoe UI Light | `"Segoe UI Light", "Segoe WP Light", device-segoe-light, "Segoe WP Semilight", "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
-|![Segoe UI Semilight font family.](media/style/segoe-ui-semi-light.png "Segoe UI Semilight font family")| Segoe UI Semilight | `"Segoe UI Semilight", "Segoe WP Semilight", device-segoe-semilight, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
-|![Segoe UI Semibold font family.](media/style/segoe-ui-semi-bold.png "Segoe UI Semibold font family")| Segoe UI Semibold | `"Segoe UI Semibold", "Segoe WP Semibold", device-segoe-semibold, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|:::image type="content" source="media/style/segoe-ui.png" alt-text="Sample text showing the Segoe UI font family.":::| Segoe UI | `"Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|:::image type="content" source="media/style/segoe-ui-light.png" alt-text="Sample text showing the Segoe UI Light font family.":::| Segoe UI Light | `"Segoe UI Light", "Segoe WP Light", device-segoe-light, "Segoe WP Semilight", "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|:::image type="content" source="media/style/segoe-ui-semi-light.png" alt-text="Sample text showing the Segoe UI Semilight font family.":::| Segoe UI Semilight | `"Segoe UI Semilight", "Segoe WP Semilight", device-segoe-semilight, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|:::image type="content" source="media/style/segoe-ui-semi-bold.png" alt-text="Sample text showing the Segoe UI Semibold font family.":::| Segoe UI Semibold | `"Segoe UI Semibold", "Segoe WP Semibold", device-segoe-semibold, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
 
-### Sizes
-[!INCLUDE[d365fin_md](includes/d365fin_md.md)] uses the following font sizes for text. The same font family on different clients may apply different sizes.
+### Font sizes
+
+The following table lists selected sizes from the client's font scale. Individual components can use other sizes.
 
 |  Example  | Name | Value |
 |-----------|------|:-----:|
-|![largest-plus-font-size (37.5pt).](media/style/37-5-fontsize.png "largest-plus-font-size (37.5pt)")| largest-plus-font-size | `37.5pt` |
-|![largest-font-size (30pt).](media/style/30-fontsize.png "largest-font-size (30pt)")| largest-font-size | `30pt` |
-|![large-plus-font-size (22.5pt).](media/style/22-5-fontsize.png "large-plus-font-size (22.5pt)")| large-plus-font-size | `22.5pt` |
-|![large-font-size (18pt).](media/style/18-fontsize.png "large-font-size (18pt)")| large-font-size | `18pt` |
-|![medium-plus-font-size (15pt).](media/style/15-fontsize.png "medium-plus-font-size (15pt)")| medium-plus-font-size | `15pt` |
-|![medium-font-size (13.5pt).](media/style/13-5-fontsize.png "medium-font-size (13.5pt)")| medium-font-size | `13.5pt` |
-|![small-plus-font-size (12pt).](media/style/12-fontsize.png "small-plus-font-size (12pt)")| small-plus-font-size | `12pt` |
-|![small-font-size (10.5pt).](media/style/10-5-fontsize.png "small-font-size (10.5pt)")| small-font-size | `10.5pt` |
-|![smallest-font-size (9pt).](media/style/9-fontsize.png "smallest-font-size (9pt)")| smallest-font-size | `9pt` |
+|:::image type="content" source="media/style/37-5-fontsize.png" alt-text="Sample text showing a font size of 37.5 points.":::| largest-plus-font-size | `37.5pt` |
+|:::image type="content" source="media/style/30-fontsize.png" alt-text="Sample text showing a font size of 30 points.":::| largest-font-size | `30pt` |
+|:::image type="content" source="media/style/22-5-fontsize.png" alt-text="Sample text showing a font size of 22.5 points.":::| large-plus-font-size | `22.5pt` |
+|:::image type="content" source="media/style/18-fontsize.png" alt-text="Sample text showing a font size of 18 points.":::| large-font-size | `18pt` |
+|:::image type="content" source="media/style/15-fontsize.png" alt-text="Sample text showing a font size of 15 points.":::| medium-plus-font-size | `15pt` |
+|:::image type="content" source="media/style/13-5-fontsize.png" alt-text="Sample text showing a font size of 13.5 points.":::| medium-font-size | `13.5pt` |
+|:::image type="content" source="media/style/12-fontsize.png" alt-text="Sample text showing a font size of 12 points.":::| small-plus-font-size | `12pt` |
+|:::image type="content" source="media/style/10-5-fontsize.png" alt-text="Sample text showing a font size of 10.5 points.":::| small-font-size | `10.5pt` |
+|:::image type="content" source="media/style/9-fontsize.png" alt-text="Sample text showing a font size of 9 points.":::| smallest-font-size | `9pt` |
 
-<!-- 
-| Large | `16pt` |
-| Medium+ | `14pt` |
-| Medium | `12pt` |
-| Small | `10pt` |
-| Smallest | `9pt` |
+### Apply fonts and sizes with CSS
 
-#### Phone client
+Use `font-family` to specify a font stack and `font-size` to specify the text size.
 
-| Name | Value |
-|------------|:-----:|
-| Largest | `24pt` |
-| Large | `18pt` |
-| Medium+ | `14pt` |
-| Medium | `14pt` |
-| Small | `12pt` |
-| Smallest | `10pt` |
--->
-
-### Applying Font Families and Sizes
-To apply fonts and sizes to text elements in the UI, you need specify the following CSS properties:
-
-- Font family. use property `font-family`.
-- Font size. use property `font-size`.
-
-For example, to change a UI element for the Web client to use the font family *Segoe UI Light* and the size *Small* (10.5pt), write the following CSS:
+For example, apply the Segoe UI Light stack and the small size of `10.5pt`:
 
 ```css
 .my-ui-part {
@@ -179,72 +168,67 @@ For example, to change a UI element for the Web client to use the font family *S
 ```
 
 > [!IMPORTANT]
->   To ensure that the correct fonts are used on devices, do not omit fonts or change the order of the fonts.
+> Keep the fonts in the listed order to preserve the intended fallback sequence. The font displayed depends on which fonts are available on the device.
 
-## Example
-This examples illustrates how to use CSS to style a simple HTML UI part of a control add-in. The example includes three UI controls, as shown in the following HTML code:
+## Style an HTML control add-in
+
+The following example styles two labeled text inputs and a native button. It demonstrates appearance only and doesn't include a submission handler.
 
 ```html
 <div class="addin">
     <div class="control">
-        <div class="caption">Name:</div>
-        <div class="value">
-            <input type="text" name="name">
-        </div>
+        <label class="caption" for="given-name">Given name</label>
+        <input class="value" id="given-name" name="given-name" type="text">
     </div>
 
     <div class="control">
-        <div class="caption">Surname:</div>
-        <div class="value">
-            <input type="text" name="name">
-        </div>
+        <label class="caption" for="family-name">Family name</label>
+        <input class="value" id="family-name" name="family-name" type="text">
     </div>
 
-    <div class="control">
-        <div class="submit">Submit</div>
-    </div>
+    <button class="submit" type="button">Submit</button>
 </div>
 ```
 
-The following is CSS code for styling the controls, including padding, background colors, and fonts:
+The CSS applies fonts directly to the inputs and button. It uses dark text on a light background and on the primary-color button.
 
 ```css
 .addin {
     padding: 1em;
-    background-color: #505C6D; /* Sets the background color to "Secondary" */
-}
-
-.addin .control {
-     border-color: #00B7C3; /* Sets the border color to "Primary" */
-}
-
-.addin .control .caption {
-    color: #00B7C3; /* Sets the captions to "Primary" */
-
-    /* Segoe UI Light, small */
-    font-family: "Segoe UI Light", "Segoe WP Light", device-segoe-light, "Segoe WP Semilight", "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif; /* Sets the font of the caption to ""Segoe UI Light" */
-    font-size: 10.5pt;
-}
-
-.addin .control .value {
-    color: #008089; /* Tertiary shade 2 */
-
-    /* Segoe UI, medium */
+    color: #212121;
+    background-color: #FFFFFF;
     font-family: "Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif;
     font-size: 12pt;
 }
 
-.addin .control .submit {
-    color: white; /* Sets the caption text to "white" */
-    background-color: #00B7C3; /* Sets the background to "Primary */
+.addin .control {
+    margin-bottom: 1em;
+}
 
-    /* Segoe UI Semibold, medium */
+.addin .control .caption {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.addin .control .value {
+    padding: 0.5em;
+    color: #212121;
+    background-color: #FFFFFF;
+    border: 1px solid #505C6D;
+    font: inherit;
+}
+
+.addin .submit {
+    padding: 0.5em 1em;
+    color: #212121;
+    background-color: #00B7C3;
+    border: 1px solid #505C6D;
     font-family: "Segoe UI Semibold", "Segoe WP Semibold", device-segoe-semibold, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif;
     font-size: 12pt;
-    text-transform: uppercase; /* Sets the caption to use all uppercase letters */
 }
 ```
 
-## Related information  
+## Related information
 
-[Control Add-in Best Practices](devenv-control-addin-bestpractices.md)
+[Control add-in object](devenv-control-addin-object.md)  
+[Control add-in performance best practices](devenv-control-addin-bestpractices.md)  

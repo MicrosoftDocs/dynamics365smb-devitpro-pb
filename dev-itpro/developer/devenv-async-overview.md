@@ -1,9 +1,8 @@
 ---
-title: Async processing Overview
-description: Overview on the different ways an AL developer can do asynchronous (async) processing.
-ms.date: 10/04/2023
+title: Async Processing Overview for Business Central
+description: Compare asynchronous processing options in AL, including page background tasks, background sessions, scheduled tasks, and job queues in Business Central.
+ms.date: 10/15/2026
 ms.reviewer: jswymer
-
 ms.topic: overview
 author: KennieNP
 ms.author: kepontop
@@ -13,19 +12,18 @@ ms.author: kepontop
 
 [!INCLUDE[async-overview](../includes/include-async-overview.md)]
 
-## Operational Limits for Business Central Online  
+## Operational limits for Business Central online
 
-To ensure the availability and quality of [!INCLUDE[prod_short](includes/prod_short.md)] services, there are limits on certain operations, such as how many child or background sessions, or scheduled tasks that can run at the same time. For more information, see [Operational Limits for Business Central Online](../administration/operational-limits-online.md).
+To help maintain service availability and quality, [!INCLUDE[prod_short](includes/prod_short.md)] online limits asynchronous operations. The comparison table identifies the limits for each option. Learn more about the current limits in [Asynchronous task limits](../administration/operational-limits-online.md#Task) and [Scheduled task limits](../administration/operational-limits-online.md#TaskUser).
 
-## Operational Limits for Business Central on-premises  
+## Operational limits for Business Central on-premises
 
-For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, you can control limits for operations related to sessions, such as how many child or background sessions, or scheduled tasks that can run at the same time. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
-
+For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can configure child session concurrency and queue limits, background session concurrency and queue limits, page background task timeouts, and scheduled task concurrency. Learn more in [Run background sessions and page tasks](../administration/server-instance-settings.md#run-background-sessions-and-page-tasks) and [Schedule server tasks](../administration/server-instance-settings.md#schedule-server-tasks).
 
 ## Related information
 
-[Job queue](devenv-job-queue.md)   
+[Job queue](devenv-job-queue.md)  
 [Page background tasks](devenv-page-background-tasks.md)  
 [Task scheduler](devenv-task-scheduler.md)  
-[Operational Limits for Business Central Online](../administration/operational-limits-online.md)  
-[Performance Articles for Developers](../performance/performance-developer.md)   
+[Operational limits for Business Central online](../administration/operational-limits-online.md)  
+[Performance articles for developers](../performance/performance-developer.md)  

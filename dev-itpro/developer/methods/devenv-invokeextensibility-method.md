@@ -1,8 +1,8 @@
 ---
-title: InvokeExtensibilityMethod method
-description: Learn about the InvokeExtensibilityMethod in control add-ins for Business Central.
+title: InvokeExtensibilityMethod Method
+description: Use InvokeExtensibilityMethod to raise AL control add-in events from JavaScript in Business Central and coordinate calls with completion callbacks.
 ms.author: solsen
-ms.date: 04/26/2024
+ms.date: 10/22/2026
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,55 +10,71 @@ ms.reviewer: solsen
 
 # InvokeExtensibilityMethod method
 
-Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in. For more information, see [Control add-in object](../devenv-control-addin-object.md).
+Raises an event declared in an AL `controladdin` object. The corresponding trigger in the page's `usercontrol` handles the event on the [!INCLUDE[prod_short](../../includes/prod_short.md)] server.
 
-For information about best practices on making control add-ins performant, see [Control add-in best practices](../devenv-control-addin-bestpractices.md).
-  
+Learn more about declaring events and handling them on a page in [Control add-in object](../devenv-control-addin-object.md).
+
 ## Method signature
 
-`void Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(name, arguments, skipIfBusy, successCallback, errorCallback)`  
-  
-## Parameters  
-  
-|Parameter|Description|  
-|---------------|-----------------|  
-|*name*|Type: String<br /><br /> A string that contains the name of the AL trigger to invoke. This must be the name of the specified event using the `[ApplicationVisible]` attribute that defines the control add-in.|  
-|*arguments*|Type: Array<br /><br /> An array that contains the arguments to pass to the AL trigger. Note that the arguments must be supplied in an array even when the trigger only takes one argument.|  
-|*skipIfBusy*|Type: Boolean<br /><br /> A value to indicate whether to invoke the extensibility method if the client is busy. This parameter is optional and the default value is **false**.|  
-|*successCallback*|Type: function<br /><br /> A function that is called when the extensibility method has finished execution on the server. This parameter is optional.<br /><br /> **Function Syntax**<br /><br /> The syntax of the function is the following:<br /><br /> `function successCallback()`|  
-|*errorCallback*|Type: function<br /><br /> A function that is called when the extensibility method could not be executed on the server. This parameter is optional.<br /><br /> **Function Syntax**<br /><br /> The syntax of the function is the following:<br /><br /> `function errorCallback()`|
-  
-> [!IMPORTANT]  
-> The callback functions are useful for synchronizing multiple calls to the server. This is used, for example, when transferring multiple data blocks to the server to prevent overflowing the communication channel between the client and the server.  
- 
-## `skipIfBusy` options
+`void Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(name, arguments, skipIfBusy, successCallback, errorCallback)`
 
-The following table illustrates the different settings of `skipIfBusy` combined with the client’s status.  
-  
-|skipIfBusy set to|Client is busy|Action|  
-|-----------------|--------------|------------|  
-|**false**|**false**|Method call invoked.|  
-|**false**|**true**|Method call is queued and will be invoked once the client is no longer busy.|  
-|**true**|**false**|Method call invoked.|  
-|**true**|**true**|No method call. The `errorCallback` is invoked instead.|  
+The method returns no value. Communication with AL is asynchronous.
 
-<!-- 
-## Example  
-For a detailed code example, see [Walkthrough: Creating and Using a Client Control Add-in](Walkthrough--Creating-and-Using-a-Client-Control-Add-in.md)  -->
-  
+## Method parameters
+
+|Parameter|Description|
+|---------|-----------|
+|`name`|Type: `String`<br /><br />The name of an event declared in the AL `controladdin` object. Implement the corresponding trigger in the page's `usercontrol`. Required.|
+|`arguments`|Type: `Array`<br /><br />An array of arguments to pass to the event's AL trigger, including when the event takes only one argument. Optional. For an event with no parameters, omit this argument or pass `[]`.|
+|`skipIfBusy`|Type: `Boolean`<br /><br />Controls whether to skip the invocation when the client is busy. Optional. The default is `false`. Learn more in [Behavior when the client is busy](#behavior-when-the-client-is-busy).|
+|`successCallback`|Type: `function`<br /><br />An optional function called when the client completes the invocation. It receives no arguments.<br /><br />Syntax: `function successCallback()`|
+|`errorCallback`|Type: `function`<br /><br />An optional function called when the client skips the invocation or the invocation fails. It receives no arguments.<br /><br />Syntax: `function errorCallback()`|
+
+## Behavior when the client is busy
+
+The table describes the busy-state decision after the page is open and the client session is initialized. When `skipIfBusy` is `true`, the containing page must also be the topmost page. Calls that proceed can still wait for client readiness or fail for other reasons.
+
+|`skipIfBusy`|Client is busy|Action|
+|------------|--------------|------|
+|`false`|No|The call proceeds when the client is ready.|
+|`false`|Yes|The call is queued until the client is no longer busy.|
+|`true`|No|The call proceeds if the containing page is topmost. Otherwise, it is skipped.|
+|`true`|Yes|The call is skipped.|
+
+If a call is skipped, the client calls `errorCallback` if you supplied it. A skipped call isn't automatically retried when the client is no longer busy.
+
+## Coordinate calls with callbacks
+
+Use the callbacks to sequence calls, such as sending the next data block after the previous invocation completes. This helps avoid issuing too many concurrent calls.
+
+> [!IMPORTANT]
+> These callbacks report the outcome of the client invocation. They don't provide an AL return value or exception details. Don't use them alone to determine whether AL business logic succeeded.
+
+To send result data from AL to JavaScript, use a separate control add-in procedure call. Learn more in [Asynchronous considerations](../devenv-control-addin-asynchronous-considerations.md).
+
+Learn more about limiting concurrent requests in [Control add-in performance best practices](../devenv-control-addin-bestpractices.md).
+
+## JavaScript example
+
+This example sends a customer number to AL. It assumes that the `controladdin` object declares a `CustomerSelected` event with one `Text` parameter and that the page's `usercontrol` implements the corresponding trigger. Run the script in the control add-in.
+
 ```javascript
-var map = new VEMap('controlAddIn');  
-map.onLoadMap = function () {  
-    var arguments = [map.GetCenter()];  
-    Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('MapLoaded', arguments);  
-};  
-map.LoadMap(...);  
+Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
+    "CustomerSelected",
+    ["10000"],
+    false,
+    function () {
+        console.log("The client completed the invocation.");
+    },
+    function () {
+        console.error("The invocation was skipped or failed.");
+    });
 ```
 
 ## Related information
 
 [AL method reference](../methods-auto/library.md)  
-[GetEnvironment method](devenv-getenvironment-method.md)   
+[GetEnvironment method](devenv-getenvironment-method.md)  
 [GetImageResource method](devenv-getimageresource-method.md)  
 [OpenWindow method](devenv-openwindow-method.md)  
-[Asynchronous considerations](../devenv-control-addin-asynchronous-considerations.md)
+[Asynchronous considerations](../devenv-control-addin-asynchronous-considerations.md)  

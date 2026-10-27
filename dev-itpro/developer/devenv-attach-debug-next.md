@@ -1,8 +1,8 @@
 ---
-title: Attach and debug next
-description: Attach to a session on a specified server and debug for Web API sessions.
+title: Attach and Debug Next in Business Central
+description: Attach the AL debugger to an existing or next session in Business Central. Configure web client, web service, background, and agent session debugging.
 ms.custom: bap-template
-ms.date: 03/04/2026
+ms.date: 10/15/2026
 ms.reviewer: solsen
 ms.topic: how-to
 author: SusanneWindfeldPedersen
@@ -13,47 +13,78 @@ ms.author: solsen
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server, and await a process to trigger the breakpoint you've set. Then debugging starts when the code that the breakpoint is set on is hit. 
+Attach the AL debugger to an existing session or wait for the next session to troubleshoot code without launching it from Visual Studio Code. When the session runs code that reaches a breakpoint, the debugger stops so that you can inspect the code.
 
-> [!NOTE]  
+<!--
+> [!NOTE]
 > To use the attach functionality, you must make sure that your app is published with <kbd>Ctrl</kbd>+<kbd>F5</kbd> first, or with <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with <kbd>F5</kbd>. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing <kbd>F5</kbd> (Refresh) in a browser might not create a new server session, because it's cached, but if a session is expired and refreshed that will create a new session.
+-->
 
-> [!IMPORTANT]  
-> Only the user who starts a Visual Studio Code attach session can issue the Web request on the server.
+## Prepare to attach the debugger
 
-## Attach configuration
+Make sure the app version you want to debug is published to the target environment and matches your source. Attaching doesn't publish the app. To publish local changes without debugging, select a launch configuration and press <kbd>Ctrl</kbd>+<kbd>F5</kbd>. For [RAD publishing](devenv-rad-publishing.md), press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd>.
 
-You can activate the attach functionality by creating a new configuration in the `launch.json` file. The configuration has two flavors; **Attach to the client on the cloud sandbox** and **Attach to the client on your server**. Use the first option to attach to a cloud session, and the second option to attach to a local server. For an overview of configuration options, see [Launch JSON file](devenv-json-launch-file.md).
+To debug code in another extension, that extension must allow debugging. Learn more in [Debug AL code](devenv-debugging.md).
 
-> [!NOTE]  
-> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, two new properties are added to the launch configuration: `sessionId` and `userId`, which allow attaching to an ongoing session and also debugging on behalf of another user.
+By default, the debugger targets a session that belongs to the user signed in to Visual Studio Code. To debug another user's session, specify `userId` or that user's `sessionId`. The user starting the debugger needs permission to attach to another user's session. The **D365 ATTACH DEBUG** permission set grants this permission.
 
-In the attach configuration, the `breakOnNext` setting specifies the next client to break on when the debugging session starts and allows only one option. The available options are: `WebServiceClient`, `WebClient`, `Background`, and `Agent`. On a sandbox environment, you can only attach to and break on the next `WebServiceClient` or `Agent` session.
+## Supported attach configurations
 
-Two other important properties are `sessionId` and `userId`. `sessionId` specifies an ongoing session of the specified type in `breakOnNext`. This session should belong to the user in `userId` property if specified.
+In sandbox and on-premises environments, you can attach to web client, web service client, background, and agent sessions.
 
-If `sessionId` isn't specified, but `userId` is, then the debugger will be attached to the next session of the type specified in `breakOnNext` for the given user. Learn more about the `userId` and `sessionId` properties in [Initialize a snapshot debugging session on a cloud production environment (launch.json)](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-a-cloud-production-environment-launchjson).
+| Business Central environment | Web client | Web service client | Background session | Agent session |
+|------------------------------|------------|--------------------|--------------------|---------------|
+| On-premises | Supported | Supported | Supported | Supported |
+| Sandbox | Supported | Supported | Supported | Supported |
 
-> [!IMPORTANT]  
-> In case of `userId` being a different user than the user logged into Visual Studio Code, then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
+Live attach debugging isn't supported in Business Central online production environments. To record and debug code in a production environment, use [Snapshot debugging](devenv-snapshot-debugging.md).
 
-> [!NOTE]  
-> The debugger is able to connect to *background sessions*, and not *background tasks*.
+> [!NOTE]
+> Use `breakOnNext: "Background"` for a background session. A page background task runs in a child session and isn't a separate `Background` attach target. To debug a page background task, debug its parent session.
 
-## Example (attach to a web client session)
+## Configure the target session
 
-The following example illustrates a configuration for a local server, where you want to debug a web client session.
+Add an attach configuration in the `launch.json` file for a cloud sandbox or your own server. The AL extension also provides Agent-specific attach configurations for both environments. Learn more in [Launch JSON file](devenv-json-launch-file.md).
+
+The commonly used `breakOnNext` values are `WebServiceClient`, `WebClient`, `Background`, and `Agent`. Specify one value to select the session type.
+
+Set `sessionId` to attach to an existing session. Set `breakOnNext` to match its client type. If you also specify `userId`, that user must own the session. If you omit `userId`, the debugger uses the session's owner and checks whether you have permission to debug that user's session.
+
+If you omit `sessionId`, the debugger waits for the next session of the type specified by `breakOnNext`. It targets `userId` when specified, or the user signed in to Visual Studio Code otherwise.
+
+> [!NOTE]
+> Starting in Business Central 2023 release wave 1, the `sessionId` and `userId` properties let you attach to an ongoing session or debug on behalf of another user.
+
+## Start an attach debugging session
+
+1. In Visual Studio Code, go to **Run** > **Add Configuration**.
+2. Select an AL attach configuration for a cloud sandbox or your own server.
+3. In `launch.json`, update the connection settings for your target environment.
+4. Set `breakOnNext` to the session type. To attach to an existing session, set `sessionId`. To target another user, set `userId` or that user's `sessionId`.
+5. Set a breakpoint in the code you want to debug.
+6. Select the attach configuration and press <kbd>F5</kbd>.
+7. If you're waiting for the next session, first create a new session of the type specified by `breakOnNext`. Run the functionality you want to debug in the target session.
+8. When execution reaches a breakpoint, inspect the code. You can add more breakpoints while debugging.
+9. To stop debugging, select **Detach** in the Visual Studio Code debug toolbar.
+
+> [!IMPORTANT]
+> If you change the app code, republish it so that the source matches the published app before you continue debugging.
+
+## Example: Attach to a web client session
+
+This configuration attaches to the next web client session on an on-premises server. Replace *\<ServerInstance\>* with the name of your Business Central Server instance, and update `server` and `authentication` for your environment.
 
 ```json
 {
-    "name": "My attach to local server",
+    "name": "Attach to web client on own server",
     "type": "al",
     "request": "attach",
+    "environmentType": "OnPrem",
     "server": "https://localhost",
-    "serverInstance": "BC200",
+    "serverInstance": "<ServerInstance>",
     "authentication": "Windows",
-    "breakOnError": true,
-    "breakOnRecordWrite": false,
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
     "enableSqlInformationDebugger": true,
     "enableLongRunningSqlStatements": true,
     "longRunningSqlStatementsThreshold": 500,
@@ -62,9 +93,9 @@ The following example illustrates a configuration for a local server, where you 
 }
 ```
 
-## Example (attach to an online sandbox web services session)
+## Example: Attach to a sandbox web service session
 
-The following example illustrates a configuration for an online sandbox, where you want to debug a web service endpoint.
+This configuration attaches to the next web service session in an online sandbox. Replace *\<EnvironmentName\>* with your sandbox's name.
 
 ```json
 {
@@ -72,9 +103,9 @@ The following example illustrates a configuration for an online sandbox, where y
     "type": "al",
     "request": "attach",
     "environmentType": "Sandbox",
-    "environmentName": "MyEnvironment",
-    "breakOnError": true,
-    "breakOnRecordWrite": false,
+    "environmentName": "<EnvironmentName>",
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
     "enableSqlInformationDebugger": true,
     "enableLongRunningSqlStatements": true,
     "longRunningSqlStatementsThreshold": 500,
@@ -83,9 +114,9 @@ The following example illustrates a configuration for an online sandbox, where y
 }
 ```
 
-## Example (attach to an agent session on a cloud sandbox)
+## Example: Attach to an agent session in a sandbox
 
-The following example illustrates a configuration for attaching to an agent session on a cloud sandbox.
+This configuration attaches to the next session for the specified agent in an online sandbox. Replace *\<EnvironmentName\>* with your sandbox's name and *\<AgentUserSecurityId\>* with the agent's user security ID. The user starting the debugger needs permission to attach to another user's session.
 
 ```json
 {
@@ -93,71 +124,47 @@ The following example illustrates a configuration for attaching to an agent sess
     "type": "al",
     "request": "attach",
     "environmentType": "Sandbox",
-    "environmentName": "MyEnvironment",
-    "breakOnError": true,
-    "breakOnRecordWrite": false,
+    "environmentName": "<EnvironmentName>",
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
     "enableSqlInformationDebugger": true,
     "enableLongRunningSqlStatements": true,
     "longRunningSqlStatementsThreshold": 500,
     "numberOfSqlStatements": 10,
-    "breakOnNext": "Agent"
+    "breakOnNext": "Agent",
+    "userId": "<AgentUserSecurityId>"
 }
 ```
 
-## Example (attach to an agent session on your own server)
+## Example: Attach to an agent session on your own server
 
-The following example illustrates a configuration for attaching to an agent session on your own server.
+This configuration connects to the next session for the specified agent on an on-premises server. Replace *\<ServerInstance\>* and *\<AgentUserSecurityId\>* with your server instance name and the agent's user security ID. Update `server` and `authentication` for your environment. The environment must provide agent sessions, and the user starting the debugger needs permission to connect to another user's session.
 
 ```json
 {
     "name": "Attach to agent on own server",
     "type": "al",
     "request": "attach",
+    "environmentType": "OnPrem",
     "server": "https://localhost",
-    "serverInstance": "BC200",
+    "serverInstance": "<ServerInstance>",
     "authentication": "Windows",
-    "breakOnError": true,
-    "breakOnRecordWrite": false,
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
     "enableSqlInformationDebugger": true,
     "enableLongRunningSqlStatements": true,
     "longRunningSqlStatementsThreshold": 500,
     "numberOfSqlStatements": 10,
-    "breakOnNext": "Agent"
+    "breakOnNext": "Agent",
+    "userId": "<AgentUserSecurityId>"
 }
 ```
 
-## Supported Attach configurations
-
-The following configurations for attach are supported:
-
-|Business Central |Web client    |Web service client |Background session|Agent session |
-|-----------------|--------------|-------------------|------------------|--------------|
-|On-premises      | Supported    |     Supported     |   Supported      | Supported    |
-|Sandbox          | Supported    |     Supported     |   Supported      | Supported    |
-
-
-## How to start an attach session
-
-1. In Visual Studio Code, under **Run**, choose **Add configuration**.
-2. Choose whether to attach to a cloud or a local session.  
-The `launch.json` file is now populated with the correct attach configuration settings. If you've selected a local session, change the default settings to point to your local server in the `server` and `serverInstance` settings.
-3. Set `breakOnNext` to specify the client type on which to break.
-4. In your code, set at least one breakpoint using **Run** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
-You can always add more breakpoints while debugging. 
-5. If your most recent app isn't yet published, it's important to make sure you publish it selecting <kbd>Ctrl</kbd>+<kbd>F5</kbd>; alternatively <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for RAD publishing. Then, use <kbd>F5</kbd> to start the attach session.  
-    > [!IMPORTANT]  
-    > If you modify the app code during the debugging session, make sure to re-publish the app using <kbd>Ctrl</kbd>+<kbd>F5</kbd> .
-6. After publishing the app, select <kbd>F5</kbd> to start a debugging session.  
-    > [!NOTE]  
-    > If you have more attach configuration settings, you must first select which configuration to start.
-7. Debug and inspect the code. You can add more breakpoints while debugging.
-8. Stop the attach debugging session by selecting **Detach** in the Visual Studio Code toolbar.
-
-
-## Related information  
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions in AL](devenv-dev-overview.md)  
-[Debugging](devenv-debugging.md)  
+[Debug AL code](devenv-debugging.md)  
 [Snapshot debugging](devenv-snapshot-debugging.md)  
+[Launch JSON file](devenv-json-launch-file.md)  
 [JSON files](devenv-json-files.md)  
