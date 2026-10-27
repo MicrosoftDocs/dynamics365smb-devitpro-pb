@@ -1,9 +1,9 @@
 ---
-title: AL code actions
+title: AL Code Actions in Visual Studio Code
 description: Learn about AL code actions in Visual Studio Code, including scope levels, available actions, and how to enable them for your project.
 author: SusanneWindfeldPedersen
-ms.date: 05/27/2026
-ms.topic: article
+ms.date: 10/16/2026
+ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -11,50 +11,46 @@ ms.reviewer: solsen
 
 # AL code actions
 
-[!INCLUDE [2024-releasewave2-changed](../includes/2024-releasewave2-changed.md)]
+Use code actions in the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] to fix code issues and refactor AL code. In Visual Studio Code, a light bulb appears when an action is available. Select the light bulb or press <kbd>Ctrl</kbd>+<kbd>.</kbd> to see the available actions. Some actions fix errors or warnings. Others are refactorings available at the current cursor position and don't require a diagnostic. Depending on the action, you can apply it to a single instance or a broader scope.
 
-[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
-
-The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] can help users fix issues in the code. **Code Actions** is a Visual Studio Code feature that provides the user with possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. When the user chooses the light bulb (or presses <kbd>Ctrl+.</kbd>), a list of available code actions is presented. A code action can be applied to a single instance or to a broader scope depending on the type of action.
-
-## Scope levels
+## Choose a code action scope
 
 Many code actions let you choose the scope of the fix. The following table explains each scope level.
 
 | Scope | Description |
 |-------|-------------|
-| Instance | Applies the fix to the single occurrence at the current cursor position. |
-| Document | Applies the fix to all occurrences in the current file. A file can contain multiple AL objects. |
-| Project | Applies the fix to all occurrences across all files in the current AL project. |
-| Workspace | Applies the fix to all occurrences across all projects in the current Visual Studio Code workspace. Relevant in multi-root workspaces. |
+| Instance | Applies the action at the current location. Depending on the action, this scope can affect an expression, object, or file. |
+| Document | Selects applicable occurrences in the current file. A file can contain multiple AL objects. Some actions also update related files. |
+| Project | Applies the fix to all applicable occurrences across all files in the current AL project. |
+| Workspace | Applies the fix to all applicable occurrences across all projects in the current Visual Studio Code workspace. This scope is relevant in multi-root workspaces. |
 
-When you select a code action from the light bulb menu, the available scope options are shown as sub-items. Choose the scope that matches how broadly you want the fix applied.
+When multiple scopes are available, choose the light bulb menu entry for the scope you want to apply.
 
 ## Available code actions
 
 In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the following code actions are available in the current version.
 
-### Multiple IF to CASE
+### Convert multiple if statements to case
 
-Converts a chain of `if ... else if` statements into a `case` statement when the same variable is tested in each condition. This action is triggered when the compiler detects a suitable `if`/`else if` pattern.
+Converts a chain of `if ... else if` statements into a `case` statement when the same expression is tested in each condition. This action is available when the cursor or selection is within a suitable chain of equality comparisons against the same expression.
 
 **Scope:** Instance only.
 
 ### Spell check
 
-Suggests corrections for misspelled identifiers in your AL code. Triggered on certain syntax errors where the compiler can identify a close match to a known identifier.
+Suggests corrections for misspelled identifiers and keywords. This action is available for certain compiler diagnostics when a similar completion candidate is available.
 
 **Scope:** Instance only.
 
 ### Interface implementer
 
-Generates stub procedure implementations for all members of an interface that aren't yet implemented in the current codeunit. Triggered when a codeunit declares that it implements an interface but is missing one or more procedure definitions.
+Generates missing interface procedure implementations in a codeunit. Depending on the diagnostic, you can implement required methods, all missing methods, or a `RequiredPending` method.
 
 **Scope:** Instance only.
 
 ### Make method local
 
-Changes a method's accessibility from public (or internal) to `local` when the method is only used within the same object. This action is the fix for [CodeCop Warning AA0207](analyzers/codecop-aa0207.md).
+Changes a nonlocal event subscriber procedure to `local`. This action fixes [CodeCop warning AA0207](analyzers/codecop-aa0207.md).
 
 **Scope:** Instance only.
 
@@ -72,19 +68,19 @@ Removes explicit `with` statements and qualifies all member references with the 
 
 ### Fix implicit `with` statements
 
-Resolves implicit `with` usage (where fields are accessed without qualification) by adding explicit record variable prefixes. This action helps you move away from the deprecated `with` syntax.
+Resolves implicit `with` usage by adding explicit record variable prefixes to fields accessed without qualification. This action helps you move away from the deprecated `with` syntax.
 
 **Scope:** Instance, document, project, or workspace.
 
 ### Fix old report layout
 
-Replaces the legacy report layout properties (`RDLCLayout`, `WordLayout`) with a `rendering` layout section. Triggered on reports that use the old layout declaration syntax.
+Replaces the legacy `RDLCLayout` and `WordLayout` properties with a `rendering` layout section. This action is available on reports and report extensions that use legacy layout properties and don't already have a rendering section.
 
 **Scope:** Instance only.
 
 ### Fix for AW0013
 
-Applies the fix for analyzer warning [AW0013](analyzers/uicop-aw0013.md), which flags groups in a page that contain only one action.
+Applies fixes for analyzer warning [AW0013](analyzers/uicop-aw0013.md), which flags hidden action groups that contain promoted actions.
 
 **Scope:** Instance only.
 
@@ -98,37 +94,39 @@ Converts pages or page extensions from legacy promoted action syntax to the `act
 
 Sets the `ApplicationArea` property at the page or report level and removes redundant per-field `ApplicationArea` declarations. This consolidates the property to the object level.
 
-**Scope:** Instance (single object), document, project, or workspace.
+**Scope:** Instance, document, project, or workspace. Instance scope applies to a single object.
 
 ### Convert event subscriber parameters
 
-Converts existing event parameters in event subscribers from the legacy string literal format to the new identifier format. This makes it easy to opt in to the new syntax in a controlled way.
+Converts `EventSubscriber` attribute arguments from string literals to identifiers. This conversion makes it easy to opt in to the new syntax in a controlled way.
 
 **Scope:** Instance, document, project, or workspace.
 
 ### Insert using statement
 
-Adds a `using` directive for a namespace that's referenced in the code but not yet declared. Triggered when the compiler detects an unresolved type that exists in a known namespace.
+Adds a `using` directive for a missing namespace import when the compiler detects an unresolved type in a known namespace. This action is available in files that already declare a namespace.
 
-**Scope:** Instance, document, project, or workspace.
+**Scope:** Instance. Document, project, and workspace scopes are available when the unresolved name has a single candidate symbol.
 
 ### Convert page control tooltips
 
 Moves tooltips from page controls down to the underlying table fields. Defining tooltips at the table field level makes them reusable across all pages that display the same field, so you don't have to maintain duplicate tooltip text on each page.
 
+The action applies to eligible page fields bound to `Rec` whose underlying table field is defined in the same project.
+
 The action uses the following logic:
 
 - If the table field doesn't have a tooltip yet, the tooltip is moved from the page control to the table field, and the page control tooltip is removed.
 - If the table field already has the same tooltip as the page control, the redundant page control tooltip is removed.
-- If the table field already has a different tooltip than the page control, the conflict is flagged for manual resolution.
+- If the table field already has a different tooltip, the action leaves the page control tooltip unchanged. Review these differences manually.
 
 Learn more in [Tooltip property](properties/devenv-tooltip-property.md).
 
-**Scope:** Instance, document, project, or workspace.
+**Scope:** Instance, document, or project.
 
-### Fix self-reference to use `this` keyword
+### Fix self-reference to use the this keyword
 
-Updates code to use the `this` keyword when a codeunit references its own methods or properties, improving code readability. Learn more in [Use the this keyword for codeunit self-reference](devenv-al-this-keyword.md).
+Adds the `this` qualifier to unqualified references to global variables and instance methods. This action fixes [CodeCop warning AA0248](analyzers/codecop-aa0248.md). Learn more in [Use the this keyword for codeunit self-reference](devenv-al-this-keyword.md).
 
 **Scope:** Instance, document, project, or workspace.
 
@@ -144,15 +142,15 @@ Reorders `using` directives alphabetically within a file, project, or workspace 
 
 **Scope:** Document, project, or workspace.
 
-## Examples
+## Examples of code actions
 
-The spell check code action is triggered on certain syntax errors:
+The spell check action can correct a misspelled keyword:
 
-:::image type="content" source="media/spellcheck-code-action.png" alt-text="spell check code action":::
+:::image type="content" source="media/spellcheck-code-action.png" alt-text="Screenshot of the spell check action changing the misspelled AL keyword them to then.":::
 
-The make method local action is triggered to fix the [CodeCop Warning AA0207](analyzers/codecop-aa0207.md):
+The make method local action is triggered to fix [CodeCop warning AA0207](analyzers/codecop-aa0207.md):
 
-:::image type="content" source="media/makemethodlocal-code-action.png" alt-text="make method local code action":::
+:::image type="content" source="media/makemethodlocal-code-action.png" alt-text="Screenshot of the Make method local action for a nonlocal event subscriber procedure.":::
 
 ## Code actions for promoted actions
 
@@ -160,25 +158,30 @@ Use the code action to convert *legacy* syntax for promoted actions to the `acti
 
 :::image type="content" source="media/codeaction_actionref.png" alt-text="Options for applying code action on actionref syntax":::
 
-  > [!NOTE]  
-  > For Designer extensions, use <kbd>F6</kbd>  to open **Designer**, which opens the page where the legacy syntax is used. Choose the Lock symbol and use **Unlock page** to automatically convert the legacy syntax for the running code. Selecting <kbd>Alt</kbd>+<kbd>F6</kbd> will bring you back into Visual Studio Code, and show the converted `actionref` code.
-  
-  
-## To enable AL code actions
+> [!NOTE]
+> For Designer extensions, press <kbd>F6</kbd> in Visual Studio Code to publish and open **Designer**. Open the page that uses the legacy syntax. Select the lock icon, and then select **Unlock page** to convert the legacy action syntax. Return to Visual Studio Code and press <kbd>Alt</kbd>+<kbd>F6</kbd> to download the updated source.
 
-1. Open the Command Palette by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and then open the `settings.json` file.  
-2. Enter the setting `al.enableCodeActions` and set it to `true` like this `"al.enableCodeActions": true`
-3. Save the settings file. You have now enabled code actions on your project.
+## Enable AL code actions
 
-Alternatively:
+AL code actions are enabled by default. If they're disabled, use either of the following methods to enable them.
 
-1. Open the settings page, <kbd>Ctrl</kbd>+<kbd>,</kbd> and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
-2. Navigate to **Extensions > AL Language extension configuration**.
-3. Choose the **Enable Code Actions** checkbox. You've now enabled code actions on your project.
+To edit the setting directly:
+
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the **Command Palette**, and select **Preferences: Open User Settings (JSON)**.
+2. Set `"al.enableCodeActions": true`.
+3. Save the settings file.
+
+To use the settings editor:
+
+1. Press <kbd>Ctrl</kbd>+<kbd>,</kbd> to open **Settings**. Choose user or workspace settings depending on where you want to enable the setting.
+2. Go to **Extensions** > **AL Language extension configuration**.
+3. Select the **Enable Code Actions** checkbox.
+
+Actions that fix CodeCop or UICop diagnostics require the corresponding analyzer to be configured and background code analysis to be enabled.
 
 ## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [AL outline view](devenv-al-outline-view.md)  
-[AL Formatter](devenv-al-formatter.md)  
+[AL formatter](devenv-al-formatter.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
