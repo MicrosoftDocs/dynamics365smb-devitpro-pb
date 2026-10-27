@@ -1,39 +1,41 @@
 ---
-title: Choose runtime version in AL
-description: How to choose runtime in AL for Business Central.
+title: Choose an AL Runtime Version for Business Central
+description: Choose an AL runtime version for Business Central extensions. Check compiler defaults, server compatibility, and runtime-to-product version mappings.
 author: SusanneWindfeldPedersen
-ms.date: 08/20/2026
-ms.topic: article
+ms.date: 10/16/2026
+ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # Choose runtime version in AL
 
-The runtime version determines the capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)]. You specify the runtime version in the `app.json` file for a project. You express it with the following syntax, for example: `"runtime": "18.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-premises or a mix of on-premises and SaaS. For SaaS-only development, use the current runtime. If you don't specify the runtime setting, the compiler detects the runtime that matches the server.
+The runtime version determines the capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)]. You specify the runtime version in the `app.json` file for a project, for example, `"runtime": "18.0"`. Choose a runtime supported by all environments where you plan to deploy the extension, including Business Central online environments.
 
-The runtime version specified in the `app.json` file determines which runtime the project is targeting. An extension can be published to a server with the same or a later runtime version as the runtime version specified in the `app.json` file of the extension. In the absence of a specified runtime version, the compiler defaults to the latest major available version.
+An extension requires a server that supports the same or a later runtime version. Its platform, application, and other dependency requirements must also be met. If you don't specify `runtime`, the compiler defaults to the first runtime version of its current major release. The compiler doesn't detect the target server's runtime.
 
 ## Currently available runtime versions
 
-The most recent runtimes are listed here. For a full list of available runtimes, use IntelliSense in the AL Extension.
+The most recent runtimes are listed here. For runtime version suggestions, use IntelliSense in the AL extension.
 
-|Runtime version|Shipped with                       |Internal version|
-|---------------|-----------------------------------|----------------|  
+The **Business Central version** column identifies the product release, not the value for the `runtime` setting. In `app.json`, `platform` and `application` separately specify minimum versions of the System symbols and Application package. Learn more in [App.json file settings](devenv-json-files.md#appjson-file).
+
+|Runtime version|Shipped with                       |Business Central version|
+|---------------|-----------------------------------|------------------------|
 |`16.0`         |Business Central 2025 release wave 2|27.0|
 |`17.0`         |Business Central 2026 release wave 1|28.0|
 |`18.0`         |Business Central 2026 release wave 2|29.0|
 
 ## Setting the runtime version
 
-Selecting the runtime depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works to ensure compatibility. This prevents you from inadvertently using features that aren't supported on the older server.
+If you have customers that run on older versions, set the runtime to the minimum version that supports the features your extension needs. Ensure that all target servers support that runtime. This approach prevents you from inadvertently using runtime features that aren't supported on an older server.
 
-If an earlier runtime is picked, it can be good idea to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime can detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime. Though it might not be possible to refactor code for a future runtime, while using an older runtime, staying on top of these changes may help making design decisions early on.
+If you target an earlier runtime, consider a daily or weekly build with the latest AL compiler. Also compile for the latest runtime and test on a corresponding Business Central environment to detect runtime-gated diagnostics and platform behavior changes. Tracking these changes can help you make design decisions before you raise the runtime version.
 
 ## Historical runtime versions
 
-|Runtime version|Shipped with                       |Internal version|
-|---------------|-----------------------------------|----------------|  
+|Runtime version|Shipped with                       |Business Central version|
+|---------------|-----------------------------------|------------------------|
 |`1.0`          |Business Central April 2018 Release|12.0|
 |`2.0`          |Business Central Fall '18 Release  |13.0|
 |`3.0`          |Business Central Spring '19 Release|14.0|
@@ -46,11 +48,11 @@ If an earlier runtime is picked, it can be good idea to have a daily or weekly b
 |`6.4`          |Business Central 2020 release wave 2 update 4|17.4|
 |`7.0`          |Business Central 2021 release wave 1|18.0|
 |`7.1`          |Business Central 2021 release wave 1 update 1|18.1|
-|`7.2`          |Business Central 2021 release wave 1 update 2|18.2|
+|`7.2`          |Business Central 2021 release wave 1 update 3|18.3|
 |`8.0`          |Business Central 2021 release wave 2|19.0|
 |`9.0`          |Business Central 2022 release wave 1|20.0|
 |`9.1`          |Business Central 2022 release wave 1 update 1|20.1|
-|`9.2`          |Business Central 2022 release wave 1 update 2|20.2|
+|`9.2`          |Business Central 2022 release wave 1 update 4|20.4|
 |`10.0`         |Business Central 2022 release wave 2|21.0|
 |`11.0`         |Business Central 2023 release wave 1|22.0|
 |`12.0`         |Business Central 2023 release wave 2|23.0|

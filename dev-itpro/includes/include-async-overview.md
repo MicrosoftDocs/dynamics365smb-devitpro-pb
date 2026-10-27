@@ -1,23 +1,10 @@
-It's often desirable to offload AL execution from the UI thread to a background session. 
+Use asynchronous processing to run AL code without making users wait for it to finish. For example, you can process batches in the background or split large tasks into smaller tasks that run in parallel.
 
-Here are some examples of this performance pattern:
+The following table compares the available options and identifies their main Business Central online limits.
 
-- Don't let the user wait for batches 
-- Split large tasks into smaller tasks and run them in parallel
-
-There are many different ways to spin up a new session:
-
-- [Page Background Task](../developer/devenv-page-background-tasks.md)  
-- [StartSession](../developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md)  
-- [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
-- [Job Queue](/dynamics365/business-central/admin-job-queues-schedule-tasks)  
-
-
-They come with different characteristics as described in this table:
-
-|Method to start a new asynchronous operation | Characteristics |
-|---------------------------|------------|
-| Page Background Task      | Can (will) be canceled <br> Read-only <br> Runs in a child session, which is bound to its parent session. <br> Bound to a page. <br> Lightweight |
-| StartSession              | Created immediately <br> Runs on same server as the session that starts it. <br> Runs as a background session. <br> Not as controlled as a Page Background Task |
-| Task                      | Queued up <br> Any server in a cluster can start it <br> Runs as a background session. <br> Survives server restarts <br> No logging in Business Central. | 
-| Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Runs as a scheduled task <br> Survives server restarts <br> Logging of results in Business Central. |
+| Option | Characteristics | Main Business Central online limits |
+|--------|-----------------|-------------------------------------|
+| [Page background task](../developer/devenv-page-background-tasks.md) | Runs in a read-only child session tied to the page and parent session. Can be canceled. Automatically canceled when the page closes, the current record changes, the parent session ends, or the task times out. | [Child session concurrency and queue length; page background task timeouts](../administration/operational-limits-online.md#Task) |
+| [StartSession](../developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md) | Creates a background session immediately on the same server instance. Execution can wait in a queue. Not tied to a page or the lifetime of the calling session. Can write to the database, subject to permissions. | [Background session concurrency, queue length, and waiting timeout](../administration/operational-limits-online.md#Task) |
+| [Task scheduler](../developer/devenv-task-scheduler.md) | Queues work for execution when ready and no earlier than its scheduled time. Runs in a background session on an eligible server instance in the cluster. Task definitions persist across server restarts; interrupted tasks can be rerun. Provides task scheduler telemetry and diagnostics, rather than job queue log entries. | [Scheduled task concurrency](../administration/operational-limits-online.md#TaskUser) |
+| [Job queue](../developer/devenv-job-queue.md) | Supports scheduled and recurring runs. Uses the task scheduler to run work in a background session on an eligible server instance in the cluster. Task definitions persist across server restarts; interrupted tasks can be rerun. Records execution status and errors in job queue log entries. | [Scheduled task concurrency, shared with other scheduled tasks](../administration/operational-limits-online.md#TaskUser) |

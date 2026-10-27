@@ -1,28 +1,39 @@
 ---
-title: "Asynchronous considerations for control add-ins"
-ms.date: 12/29/2023
-ms.topic: article
+title: Asynchronous Considerations for Control Add-ins
+ms.date: 10/21/2026
+ms.topic: conceptual
 ms.assetid: 6c90376e-b86e-406d-880d-3cc905bf6527
 author: SusanneWindfeldPedersen
-description: Learn about asynchronous communication limitations in Dynamics 365 Business Central server and how to effectively write control add-ins for all display targets.
+ms.author: solsen
+ms.reviewer: solsen
+description: Learn how control add-ins exchange data asynchronously between AL and JavaScript in Business Central without relying on synchronous return values.
 ---
 
 # Asynchronous considerations
-When writing control add-ins that work on all display targets, you have to consider some limitations regarding asynchronous communication. The limitations come from the nature of the asynchronous communication between the clients and the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server. All calls between the AL code running on the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server and the script method running in the Web browser are asynchronous. This means that methods in the control add-in interface must be of type void and property methods shouldn't be used.  
-  
-- To transfer a result from an AL trigger to the calling script method, just add a method to the control add-in interface that the AL trigger can invoke to send the result to the script.  
-  
-- To transfer a result from a script method to an AL trigger, just add an event to the control add-in interface that the script method can use to invoke an AL trigger that receives the result.  
 
+Communication between AL code on the [!INCLUDE[prod_short](../includes/prod_short.md)] server and a control add-in's JavaScript code in the browser is asynchronous. These calls don't provide a synchronous return value across that boundary.
 
-<!--
-The methods from the "See Also" section are not auto-generated as they come from the .NET assemblies in the platform. When the old methods folder will be deprecated, remember to not remove these methods. 
--->
-  
-## Related information  
+Declare procedures in the AL `controladdin` object without a return value. Exchange results through procedure parameters and event parameters instead.
 
-[InvokeExtensibilityMethod Method](methods/devenv-invokeextensibility-method.md)   
-[GetImageResource Method](methods/devenv-getimageresource-method.md)  
-[GetEnvironment Method](methods/devenv-getenvironment-method.md)    
-[Control Add-in Best Practices](devenv-control-addin-bestpractices.md)    
-[OpenWindow Method](methods/devenv-openwindow-method.md)  
+## Send results from AL to JavaScript
+
+To send a result from AL to JavaScript, declare a procedure in the `controladdin` object with parameters for the result. Implement the corresponding JavaScript function. Call the procedure from AL to pass the result to JavaScript.
+
+The result is sent in a separate procedure call, not returned to the original JavaScript call.
+
+## Send results from JavaScript to AL
+
+To send a result from JavaScript to AL, declare an event in the `controladdin` object with parameters for the result. In JavaScript, call `Microsoft.Dynamics.NAV.InvokeExtensibilityMethod` with the event name and an array of result arguments. Handle the event in the corresponding trigger on the page's `usercontrol`.
+
+The optional `successCallback` for `InvokeExtensibilityMethod` reports completion of the invocation. It doesn't receive a result from AL. To send result data to JavaScript, use a separate control add-in procedure call.
+
+Learn more about invoking AL triggers in [InvokeExtensibilityMethod method](methods/devenv-invokeextensibility-method.md).
+
+## Related information
+
+[Control add-in object](devenv-control-addin-object.md)  
+[InvokeExtensibilityMethod method](methods/devenv-invokeextensibility-method.md)  
+[GetImageResource method](methods/devenv-getimageresource-method.md)  
+[GetEnvironment method](methods/devenv-getenvironment-method.md)  
+[Control add-in performance best practices](devenv-control-addin-bestpractices.md)  
+[OpenWindow method](methods/devenv-openwindow-method.md)  
