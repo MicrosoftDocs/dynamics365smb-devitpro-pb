@@ -113,7 +113,7 @@ You can learn about current and coming capabilities through a number of differen
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Release plans |[learn.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
+> |Roadmap|[AIatWorkroadmap](https://aka.ms/AIatWorkroadmap) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
 > |Business functionality|[learn.microsoft.com/dynamics365/business-central/across-business-functionality](/dynamics365/business-central/across-business-functionality) |Use this content to learn about business functionality in the default version of [!INCLUDE [prod_short](developer/includes/prod_short.md)]. |
 > |Development in the AL language|[learn.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-dev-overview.md)|Use this content to learn how to extend and customize Business Central using the native AL language.|
 > |Administrative tasks|[learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/](administration/tenant-administration.md)|Use this content to learn how to administer Business Central online.|

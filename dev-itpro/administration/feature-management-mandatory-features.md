@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: article
-ms.date: 10/02/2026
+ms.date: 10/23/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.collection:
@@ -15,13 +15,15 @@ ai-usage: ai-assisted
 
 # Optional features that are now mandatory
 
-This article provides the following information about optional features, starting with 2023 release wave 1:
+This article provides the following information about optional features since 2023:
 
-* Features that are now mandatory and can't be disabled. Feature keys are removed from **Feature Management**.
-* Features that are turned on by default for new customers
-* Features that are now generally available
+- Features that are now mandatory and can't be disabled. Feature keys are removed from **Feature Management**.
+- Features that are turned on by default for new customers.
+- Features that are now generally available.
 
-Some of the features or design improvements in major and minor updates are optional and aren't immediately enabled. You can learn about these features in the release plans and documentation and decide whether your administrator should turn them on. To learn more about optional features, go to [Enabling Upcoming Features Ahead of Time](feature-management.md).
+Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+
+Some of the features or design improvements in major and minor updates are optional and aren't immediately enabled. You can learn about these features in the release plans and documentation and decide whether your administrator should turn them on. Learn more about optional features at [Enabling Upcoming Features Ahead of Time](feature-management.md).
 
 However, these features are only optional for a while. The period in which they're optional typically starts when the update they're made in becomes generally available. The period ends when the features become mandatory and are automatically enabled. The approximate date and service update when we expect to make each optional feature mandatory is shown in the **Automatically enabled from** field on the **Feature Management** page. After that date, the feature will no longer appear on the Feature Management page, and you can't turn it off. To learn more about the optional period, go to [Example timeline for an optional feature](feature-management.md#example-timeline-for-an-optional-feature).
 
@@ -79,7 +81,7 @@ These features are no longer controlled in **Feature management**, so they can't
 - [Feature Update: Enable using 1099 forms to transmit the tax data to the IRS in the United States](/dynamics365/business-central/localfunctionality/unitedstates/set-up-use-irs1099-form)
 - [Feature: Add fields from related tables in analysis mode.](/dynamics365/business-central/analysis-mode-feature-key)
 - [Feature: Enable server certificate validation for Http requests](/dynamics365/business-central/dev-itpro/developer/devenv-httpcertvalid-feature-key)
-- [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)	
+- [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)    
 
 ### New features added and enabled by default in version 27
 

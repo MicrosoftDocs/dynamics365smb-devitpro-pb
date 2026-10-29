@@ -104,7 +104,7 @@ An exception to this type of schedule is the continuous updates to the underlyin
 
 [!INCLUDE [prod_short](includes/prod_short.md)] online is governed by the Microsoft [Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. Learn more in [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
 
-Learn more about new and upcoming changes in [Dynamics 365 release plans](/dynamics365/release-plans/).  
+Learn more about new and upcoming changes in [the roadmap](https://aka.ms/AIatWorkroadmap).  
 
 ## Related information
 
