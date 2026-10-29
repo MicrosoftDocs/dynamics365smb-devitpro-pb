@@ -11,7 +11,7 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The Business Central 2026 release wave 2 (update 29.0) release plans are now available on the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). The release plan article, available at [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan), highlights the innovations coming in this wave and provides additional context on Microsoft's transition to the AI at Work roadmap. Existing release plans remain accessible for historical reference. Explore the latest innovations across Business Central, Copilot, and agents.
+> The Business Central 2026 release wave 2 (update 29.0) is now available on the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). Learn about the innovations in this wave and Microsoft's transition to the AI at Work roadmap in [What's new and planned in Business Central](../../whatsnew/overview.md). Explore the latest innovations across Business Central, Copilot, and agents.
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 

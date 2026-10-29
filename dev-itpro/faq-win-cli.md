@@ -75,7 +75,7 @@ Therefore, C/SIDE is discontinued for [!INCLUDE[prod_short](includes/prod_short.
 
 ## Which features are available in the modern clients and where can I find the roadmap?
 
-[!INCLUDE[prod_short](includes/prod_short.md)] is a highly adaptable modern business management solution. It is rich in features and options and is continuously being enhanced. The roadmap is best represented by the release plans, which are updated every six months. Learn more in [Overview of Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-business-central/).  
+[!INCLUDE[prod_short](includes/prod_short.md)] is a highly adaptable modern business management solution. It has many features and options and is continuously being enhanced. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ## Related information
 
