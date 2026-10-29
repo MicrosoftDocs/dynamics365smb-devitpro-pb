@@ -2,7 +2,7 @@
 title: Maintain Marketplace apps and per-tenant extensions
 description: Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product.
 author: SusanneWindfeldPedersen
-ms.date: 03/31/2025
+ms.date: 10/23/2026
 ms.topic: article
 ms.author: solsen
 ms.reviewer: jswymer
@@ -18,9 +18,9 @@ To not break this promise, developers that bring apps to Microsoft Marketplace, 
 
 To help app publishers keep up with their update responsibilities, Microsoft provides the following resources:
 
-- Release plans about what's new and planned
+- Roadmap of what's new and planned
 
-    For more information, see [Dynamics 365 release plans](/dynamics365/release-plans/).  
+    Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.  
 
 - Access to prerelease bits
 

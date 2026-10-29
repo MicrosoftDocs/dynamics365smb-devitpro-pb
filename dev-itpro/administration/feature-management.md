@@ -5,7 +5,7 @@ author: mikebcMSFT
 
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
-ms.date: 10/13/2026
+ms.date: 10/23/2026
 ms.author: mikebc
 ms.reviewer: jswymer
 ---
@@ -18,7 +18,7 @@ We add new capabilities to [!INCLUDE [prod_short](../includes/prod_short.md)] in
 
 Some new features can be enabled ahead of time on sandbox and production environments. This capability allows you to benefit as early as possible from feature improvements and innovative new features. It gives you the time you need to test and prepare your organization for change.
 
-When Microsoft releases features or feature design improvements as part of minor updates, some features aren't immediately enabled. Users as well as administrators can learn about these features in the release plans, and administrators can enable each individual feature from the **Feature Management** page inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Once a feature is enabled, it becomes available for all users on that environment no matter how they access [!INCLUDE[prod_short](../includes/prod_short.md)].  
+When Microsoft releases features or feature design improvements as part of minor updates, it doesn't immediately enable some features. Users and administrators can learn about these features in [the roadmap](https://aka.ms/AIatWorkroadmap), and administrators can enable each individual feature from the **Feature Management** page inside [!INCLUDE [prod_short](../includes/prod_short.md)]. When you enable a feature, it becomes available for all users on that environment no matter how they access [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
 These features are only optional for a while. The option period typically starts from the minor update in which they're made generally available. The period ends when the features become mandatory and are automatically enabled in a later major update. To see the approximate date and service update when each feature is expected to become mandatory, see the **Automatically enabled from** field in the **Feature Management** page. After this date, the feature will no longer appear in the **Feature Management** page and can no longer be turned off. To learn more about features that are now, or soon will be mandatory or generally available, go to [Optional Features that are Now Mandatory](feature-management-mandatory-features.md).  
 
@@ -31,7 +31,7 @@ These features are only optional for a while. The option period typically starts
 > ![Example timeline for an optional feature.](../media/timeline-optional-features.png "An example timeline for an optional feature in the Feature Management page")
 
 > [!TIP]
->  [!INCLUDE [roadmap](~/../shared-content/shared/get-started-includes/roadmap.md)]
+> [!INCLUDE [roadmap](~/../shared-content/shared/get-started-includes/roadmap.md)]
 
 Learn more about [!INCLUDE [prod_short](../includes/prod_short.md)] updates at [What's new and planned in Business Central](../whatsnew/overview.md), and learn about the release schedule for Dynamics 365 at [What is the Dynamics 365 release schedule and early access?](/dynamics365/get-started/release-schedule).
 

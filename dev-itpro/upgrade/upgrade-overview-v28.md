@@ -29,7 +29,7 @@ When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 
 
 ## New and changed features
 
-There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2026 release wave 1. These changes affect users, administrators, and developers. Learn more in [Overview of Dynamics 365 Business Central 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/).
+There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2026 release wave 1. These changes affect users, administrators, and developers. Learn more in [Update 28.0 for Business Central 2026 release wave 1](../whatsnew/whatsnew-update-28-0.md).
 
 ## Deprecated features
 

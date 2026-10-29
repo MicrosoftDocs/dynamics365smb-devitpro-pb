@@ -2,7 +2,7 @@
 title: Calculate only visible FlowFields feature key
 description: Learn about the Calculate only visible FlowFields feature key.
 ms.custom: bap-template
-ms.date: 03/12/2025
+ms.date: 10/23/2026
 ms.reviewer: jswymer
 ms.topic: article
 author: jswymer
@@ -17,4 +17,4 @@ By default, FlowFields are calculated even if their [Visible property](../develo
 ## Related information
 
 [Enabling upcoming features ahead of time](/dynamics365/business-central/dev-itpro/administration/feature-management)  
-[Release plan: Calculate values only for visible FlowFields](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/calculate-values-only-visible-flowfields)  
+
