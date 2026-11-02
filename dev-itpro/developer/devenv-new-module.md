@@ -2,7 +2,7 @@
 title: "Create a new module in the System Application"
 description: Learn how to create a new module in the System Application.
 author: bholtorf
-ms.date: 11/23/2023
+ms.date: 10/29/2026
 ms.reviewer: bholtorf
 ms.topic: how-to
 ms.author: bholtorf
@@ -16,6 +16,8 @@ This topic provides an overview of how to create a new module in the System Appl
 
 1. Familiarity with development in AL. For more information, see [AL Development](./devenv-get-started.md).
 2. Your development environment is ready. For more information, see [Set Up an Environment for Developing a Module](devenv-set-up-an-environment.md).
+3. Obtain Microsoft's approval for the related GitHub issue before opening a contribution pull request (PR). Follow the [BCApps contribution guidelines](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md).
+
 > [!NOTE]
 > Your environment must have the correct symbols. Go get those, in Visual Studio Code, select <kbd>F1>/kbd>, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
@@ -210,7 +212,7 @@ After running the tests successfully, changes are complete.
 * To commit your changes, run the **git commit -m "Your message"** command.
 * To push your changes, run the **git push** command.
 
-You can now go to your Github fork and open a pull request in the BCApps repository.
+After Microsoft approves the related GitHub issue, go to your GitHub fork and open a pull request in the BCApps repository. Link your pull request to the approved issue.
 
 ## Related information
 

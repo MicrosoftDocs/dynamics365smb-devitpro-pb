@@ -1,7 +1,7 @@
 ---
 title: Get started with modules
 description: Provides an overview of what you need to work with modules in the System Application.
-ms.date: 03/01/2024
+ms.date: 10/29/2026
 ms.topic: get-started
 author: bholtorf
 ms.collection: get-started
@@ -32,8 +32,13 @@ Want to improve an existing module? For more information, see [Change a module](
 
 For an overview of the system application reference documentation, see [Module System Application](/dynamics365/business-central/application/system-application/module/system-application).
 
-## Have an issue?
-Open an [issue](https://github.com/microsoft/BCApps/issues/new).
+## Get help or propose a change
+
+Choose the route that matches your need:
+
+* **Contribution proposal:** Follow the [BCApps contribution guidelines](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md) and create an issue by using the appropriate [issue template](https://github.com/microsoft/BCApps/issues/new/choose). Wait for Microsoft to approve the issue before opening a PR, and link the PR to that issue.
+* **Product defect affecting customers:** Follow [Technical support for Business Central](../technical-support.md). BCApps issues aren't a substitute for customer support and don't have support service-level agreements.
+* **Missing extensibility point:** [Create an extensibility request](create-extensibility-request.md).
 
 ## Related information
 

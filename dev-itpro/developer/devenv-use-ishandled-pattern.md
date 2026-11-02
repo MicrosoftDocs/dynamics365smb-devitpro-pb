@@ -2,7 +2,7 @@
 title: Using the IsHandled pattern
 description: This article describes how, and when, to use the popular IsHandled pattern for events.
 author: brentholtorf
-ms.date: 08/14/2025
+ms.date: 10/29/2026
 ms.topic: how-to
 ms.author: bholtorf
 ms.reviewer: bholtorf
@@ -216,7 +216,7 @@ begin
 
 No code is skipped, and the code is much more readable.
 
-Learn more about the different event types that you can use for extensibility at [Types of events for extensibility](types-of-events-for-extensibility.md).
+Learn more about the different event types that you can use for extensibility in [Types of events for extensibility](types-of-events-for-extensibility.md).
 
 ### Reimplement the functionality
 
@@ -263,6 +263,8 @@ Besides actions, you can replace fields. You can also replace either modules wit
 
 If none of these approaches are feasible, consider turning off as little code as you can. A good example is the OnSkip pattern, where we skip individual lines. The code that's skipped shouldn't call underlying code or methods. It should be a few lines of code, and what's skipped must be visible. Avoid skipping validation.
 
+The extensibility request review process considers the behavior being bypassed, not just the Boolean parameter's name. Naming a parameter `Handled` or `Skip...` doesn't automatically avoid `IsHandled`-style review. For the required justification and rejection cases, see [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md).
+
 To review an example of the OnSkip pattern, go to [OnSkip (operation) events](types-of-events-for-extensibility.md#onskip-operation-events).
 
 ## Summary
@@ -271,7 +273,7 @@ Defining `IsHandled` patterns is quick, however, they make the codebase more dif
 
 The `IsHandled` pattern makes it difficult to troubleshoot because multiple subscribers could do any operation.
 
-We should focus on defining proper extensibility and using better event patterns. Events should not skip code and should allow multiple subscribers to do an action. If you must use the `IsHandled` pattern, you should document your reason. To learn more, go to [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md).
+Focus on defining proper extensibility and using better event patterns. Events shouldn't skip code and should allow multiple subscribers to perform an action. If you must use the `IsHandled` pattern, document your reason. Learn more in [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md).
 
 ## Related information
 

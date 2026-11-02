@@ -2,7 +2,7 @@
 title: Minimum requirements for new IsHandled events
 description: Provides the minimum information that must accompany a request for adding a new IsHandled event.
 author: AleksandricMarko
-ms.date: 08/29/2025
+ms.date: 10/29/2026
 ms.topic: how-to
 ms.author: maleksandric
 ms.reviewer: bholtorf
@@ -19,12 +19,13 @@ If, after evaluating alternatives, you still conclude that an IsHandled event is
 
 1. Problem statement: A clear, concise description of the functional gap you need to address (what can't be done today, and why).
 2. Proposed code change: The exact code addition or modification, including the event publisher signature and placement (surrounding 5–10 lines of context).
-3. Invocation example (optional but recommended): How the event will be raised in your code and a sample subscriber showing intended use.
-4. Alternatives evaluated: Which existing events, patterns, or extensibility points you tried and why they weren't sufficient.
-5. Justification for IsHandled: Why a standard (non-IsHandled) event, redesign, or contribution isn't feasible.
-6. Performance considerations: Expected frequency of execution and any potential impact (loops, large datasets, locking, external calls).
-7. Data sensitivity review: Confirmation that the event doesn't expose sensitive or security‑relevant data (or a rationale if it must).
-8. Multi‑extension interaction: Risks if multiple extensions subscribe; explanation of how conflicts or ordering are mitigated.
+3. Alternatives evaluated: Which existing events, patterns, or extensibility points you tried and why they weren't sufficient.
+4. Justification for IsHandled: Why a standard (non-IsHandled) event, redesign, or contribution isn't feasible.
+5. Performance considerations: Expected frequency of execution and any potential impact (loops, large datasets, locking, external calls).
+6. Data sensitivity review: Whether sensitive or security-relevant data is involved and how the design avoids exposing protected data. A justification doesn't override restrictions on exposing that data.
+7. Multi-extension interaction: Risks if multiple extensions subscribe; explanation of how conflicts or ordering are mitigated.
+
+A sample subscriber that shows the intended use is optional but recommended. It doesn't replace the required publisher signature and call location.
 
 ## Guidance for the proposed publisher
 
@@ -33,6 +34,9 @@ When providing the proposed code:
 - Don't add unrelated side effects around the event call.
 - Place the event as narrowly scoped as possible. Avoid wrapping large code blocks where smaller refactoring would suffice.
 - Ensure the remaining code path after the check is minimal and predictable.
+- Initialize `IsHandled` to `false` immediately before raising the event. For a new event, place `var IsHandled: Boolean` last in the parameter list.
+- Preserve existing `OnAfter` event execution even when the new event bypasses base logic. Keep those calls outside the skipped block rather than bypassing them with an early exit.
+
 
 ## Submission quality checklist
 
@@ -44,7 +48,7 @@ Your request is more likely to be approved if:
 - You indicate any required test adjustments.
 
 > [!IMPORTANT]
-> We reject requests that don't include all minimum required information without a detailed review.
+> If information is missing, we add a comment to the issue listing the details needed for further processing. Update the issue description or reply to the comment with those details so we can continue reviewing your request. Requests that violate a rejection rule are rejected rather than approved after clarification.
 
 ## Example structure
 
@@ -68,9 +72,9 @@ Placement rationale: \<Why here>
 **Proposed code snippet (before -> after):**
 
 \<Old code excerpt>
-\<New code excerpt with OnBefore...IsHandled(var IsHandled; ...)> 
+\<New code excerpt with the event call, IsHandled check, and publisher signature>
 
-**Subscriber example (illustrative):**
+**Subscriber example (optional, illustrative):**
 
 \<Code>
 
