@@ -1,120 +1,189 @@
 ---
 title: "Creating and Interacting with an OData V4 Bound Action"
-description: "Document how to create and interact with an OData V4 Bound Action in AL."
+description: "Create an OData V4 bound action in AL, publish its page, and call it with an authenticated POST request to copy an existing sales invoice in Business Central."
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 10/29/2026
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Creating and Interacting with an OData V4 Bound Action
+# Creating and interacting with an OData V4 bound action
 
-This topic provides an overview of how to expose a procedure as an OData V4 web service action and how to verify that the service is working as expected.
+Use an OData V4 bound action to run an AL procedure for a specific record through a web service. This article shows how to copy an existing unposted sales invoice to a new unposted invoice, publish the custom page, and call its `Copy` action.
 
-## Declaring the OData bound action
+## Prerequisites for the invoice-copy example
 
-The following example shows you how you can declare an OData bound action on a page exposed as a web service. For that, you need to add a procedure to the `SalesInvoiceCopy` page, expose the procedure using the `[ServiceEnabled]` attribute, and use the `WebServiceActionContext` and `WebServiceActionResultCode` AL types to set the result of the function.  
+- An AL extension project that references the Business Central application. Include object ID **50110** in the project's `app.json` ID ranges.
+- A sandbox or test company with **Sales & Receivables Setup**, invoice number series, posting number series, and a valid unposted sales invoice with a customer. Start with a simple invoice whose data supports the standard copy-document operation.
+- Permission to publish web services. The calling identity also needs access to the custom page, the copy-document codeunit, sales documents, setup, and number series. Publishing the page doesn't grant these permissions.
+- An HTTP client and authentication for your environment. For Business Central online, use an OAuth access token. Learn more in [Using OAuth to authorize Business Central web services](../webservices/authenticate-web-services-using-oauth.md).
+- For on-premises environments, enabled OData V4 services. Learn more in [Business Central Server instance settings](../administration/server-instance-settings.md#expose-odata-and-api-services).
 
-> [!NOTE]   
-> Bound actions cannot be added by extending an existing page that has been exposed as a web service. 
+## Declare the OData bound action
 
-```AL
+Declare a procedure on the page and add the `[ServiceEnabled]` attribute. Use `WebServiceActionContext` to identify the new invoice and set `WebServiceActionResultCode::Created`.
+
+The page exposes `SystemId` through the `Id` control and uses it as the OData key. The action result must use the same table field, `SystemId`, when it identifies the new record.
+
+> [!NOTE]
+> Declare the procedure on the page object itself. Adding a procedure through a `pageextension` doesn't expose it as an OData bound action. You can define the new page in an AL extension.
+
+```al
+using Microsoft.Sales.Document;
+using Microsoft.Sales.Setup;
+using Microsoft.Utilities;
+
 page 50110 SalesInvoiceCopy
 {
-    ODataKeyFields = "Id";
+    Caption = 'Sales invoice copy';
+    PageType = Card;
     SourceTable = "Sales Header";
+    SourceTableView = where("Document Type" = const(Invoice));
+    ODataKeyFields = SystemId;
+    InsertAllowed = false;
+    ModifyAllowed = false;
+    DeleteAllowed = false;
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            group(General)
             {
-                field(Id; Id)
+                Caption = 'General';
+
+                field(Id; Rec.SystemId)
                 {
                     ApplicationArea = All;
+                    Caption = 'Id';
+                    ToolTip = 'Specifies the unique identifier of the sales invoice.';
                 }
 
-                field("No."; "No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'No.';
+                    ToolTip = 'Specifies the sales invoice number.';
                 }
 
-                field("Sell-to Customer No."; "Sell-to Customer No.")
+                field("Sell-to Customer No."; Rec."Sell-to Customer No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'Sell-to Customer No.';
+                    ToolTip = 'Specifies the customer who receives the sales invoice.';
                 }
             }
         }
     }
 
-    trigger OnOpenPage()
-    begin
-        rec.SetRange("Document Type", rec."Document Type"::Invoice);
-    end;
-
     [ServiceEnabled]
-    procedure Copy(var actionContext: WebServiceActionContext)
+    procedure Copy(var ActionContext: WebServiceActionContext)
     var
         FromSalesHeader: Record "Sales Header";
         ToSalesHeader: Record "Sales Header";
         SalesSetup: Record "Sales & Receivables Setup";
-        CopyDocMgt: Codeunit "Copy Document Mgt.";
-        DocType: Option Quote,"Blanket Order",Order,Invoice,"Return Order","Credit Memo","Posted Shipment","Posted Invoice","Posted Return Receipt","Posted Credit Memo";
+        CopyDocumentMgt: Codeunit "Copy Document Mgt.";
     begin
-        SalesSetup.Get;
-        CopyDocMgt.SetProperties(true, false, false, false, false, SalesSetup."Exact Cost Reversing Mandatory", false);
+        FromSalesHeader.Get(Rec."Document Type", Rec."No.");
+        FromSalesHeader.TestField(
+            "Document Type", FromSalesHeader."Document Type"::Invoice);
+        FromSalesHeader.TestField("Sell-to Customer No.");
 
-        FromSalesHeader.Get(rec."Document Type", rec."No.");
-        ToSalesHeader."Document Type" := FromSalesHeader."Document Type";
+        SalesSetup.Get();
+        CopyDocumentMgt.SetProperties(
+            true, false, false, false, true,
+            SalesSetup."Exact Cost Reversing Mandatory", false);
+
+        ToSalesHeader.Init();
+        ToSalesHeader."Document Type" :=
+            ToSalesHeader."Document Type"::Invoice;
+        ToSalesHeader.SetHideValidationDialog(true);
         ToSalesHeader.Insert(true);
 
-        CopyDocMgt.CopySalesDoc(DocType::Invoice, FromSalesHeader."No.", ToSalesHeader);
+        CopyDocumentMgt.CopySalesDoc(
+            "Sales Document Type From"::Invoice,
+            FromSalesHeader."No.", ToSalesHeader);
 
-        actionContext.SetObjectType(ObjectType::Page);
-        actionContext.SetObjectId(Page::SalesInvoiceCopy);
-        actionContext.AddEntityKey(Rec.FIELDNO(Id), ToSalesHeader.Id);
+        ToSalesHeader.Get(
+            ToSalesHeader."Document Type", ToSalesHeader."No.");
 
-        // Set the result code to inform the caller that an item was created.
-        actionContext.SetResultCode(WebServiceActionResultCode::Created);
+        ActionContext.SetObjectType(ObjectType::Page);
+        ActionContext.SetObjectId(Page::SalesInvoiceCopy);
+        ActionContext.AddEntityKey(
+            Rec.FieldNo(SystemId), ToSalesHeader.SystemId);
+        ActionContext.SetResultCode(WebServiceActionResultCode::Created);
     end;
 }
 ```
 
-## Registering and publishing the page as a web service
+The page settings prevent direct inserts, edits, and deletes through the page. The `Copy` procedure creates the new invoice through AL code. The sample suppresses standard dialogs. Permissions and applicable validation still run, but availability warnings and interactive credit-limit notifications don't run through this web-service path.
 
-1. Open the Business Central Web Client.
-2. In the **Search** box, enter **Web Services**, and choose the related link.
-3. In the **Web Services** page, on the **Home** tab, choose **New**.
-4. In the **Object Type** column, select **Page**. In the **Object ID** column, enter 43, and in the **Service Name** column, enter `SalesInvoiceCopy`.
-5. Select the check box in the **Published** column. 
-6. When you publish the web service, in the **OData URL** and **SOAP URL** fields, you can see the URLs that are generated for the web service. 
+## Publish the custom page as a web service
 
-## Verifying the web service availability  
+1. Build and publish the extension to your test environment.
+1. In Business Central, use **Search** to find and open the **Web Services** page.
+1. Select **New**.
+1. Set **Object Type** to **Page**, **Object ID** to **50110**, and **Service Name** to `SalesInvoiceCopy`.
+1. Select **Published**.
+1. Copy the **OData V4 URL** for the service.
 
-### HTTP request
+Publish page **50110**, not the standard **Sales Invoice** page, which has object ID **43**. The service name alone doesn't associate the custom action with another page. Learn more in [Publish a web service](../webservices/publish-web-service.md).
 
-```
-POST /ODataV4/Company({companyName})/SalesInvoiceCopy({id})/NAV.Copy
-```
+## Retrieve an invoice and its OData key
 
-### Request headers
+Use the copied URL to retrieve invoices before you invoke the action. In the following requests, replace `<BaseUrl>` with the URL prefix before `/ODataV4`. Replace `<CompanyName>` with your actual company name, URL-encoded and escaped as an OData string.
 
-|Header|Value|
-|------|-----|
-|Authorization|Bearer {token}. Required.|
+For Business Central online, `<BaseUrl>` is `https://api.businesscentral.dynamics.com/v2.0/<TenantId>/<EnvironmentName>`. Replace `<TenantId>` and `<EnvironmentName>` with your tenant ID and environment name. For on-premises environments, use the prefix from the copied service URL.
 
-### Example
+For OAuth authentication, replace `<AccessToken>` with an access token for your environment.
 
-```
-{baseurl}/ODataV4/Company('CRONUS%20USA%2C%20Inc.')/SalesInvoiceCopy('S-ORD101001')/NAV.Copy
+```http
+GET <BaseUrl>/ODataV4/Company('<CompanyName>')/SalesInvoiceCopy
+Authorization: Bearer <AccessToken>
+Accept: application/json
 ```
 
+In the returned collection, find the source invoice and copy its `Id` value. This property exposes the record's `SystemId`, not its invoice number.
+
+The GUID `aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` in the next example is an illustrative record ID. Replace it with the retrieved `Id`. Don't enclose the GUID in single quotation marks.
+
+## Invoke the bound action with POST
+
+Send a POST request to the invoice's URL followed by `/NAV.Copy`. Use the same `<BaseUrl>` and `<CompanyName>` values that you used to retrieve the invoice.
+
+```http
+POST <BaseUrl>/ODataV4/Company('<CompanyName>')/SalesInvoiceCopy(aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb)/NAV.Copy
+Authorization: Bearer <AccessToken>
+Content-Length: 0
+```
+
+This action has no request body. The platform supplies `ActionContext`; don't send it as a JSON parameter. A GET request retrieves data but doesn't invoke the action.
+
+### Expected response
+
+On success, the action returns `201 Created` with a `Location` header that identifies the new invoice. It doesn't return an invoice JSON body.
+
+```http
+HTTP/1.1 201 Created
+Location: <BaseUrl>/ODataV4/Company('<CompanyName>')/SalesInvoiceCopy(<NewInvoiceGuid>)
+```
+
+Retrieve the URL in the `Location` header to inspect the new invoice. Replace `<NewInvoiceGuid>` only if you're constructing the URL yourself; the actual response supplies the new record's GUID.
+
+Open the new invoice in Business Central and review its header and lines. The standard copy-document operation can skip lines, including lines with blocked items. A `201 Created` response confirms that the new invoice was created, not that every source line was copied.
+
+### Troubleshoot action requests
+
+- If the key count or type is incorrect, confirm that you published page **50110** and that its `ODataKeyFields` property is `SystemId`. Use the returned `Id` GUID, not the document number. Inspect `<BaseUrl>/ODataV4/$metadata` to check the published entity's key definition.
+- If the action isn't found, use the exact service name and `/NAV.Copy` suffix with POST. Confirm that the installed page declares the `[ServiceEnabled]` procedure.
+- If copying fails, check the calling identity's permissions, number series, company setup, and source invoice data.
 
 ## Related information
-[AL Development Environment](devenv-reference-overview.md)  
-[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
-[Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions.md)  
-[Exporting Permission Sets](devenv-export-permission-sets.md)  
-[Discover Events Using the Event Recorder](devenv-events-discoverability.md)    
+
+[ServiceEnabled attribute](attributes/devenv-serviceenabled-attribute.md)  
+[WebServiceActionContext data type](methods-auto/webserviceactioncontext/webserviceactioncontext-data-type.md)  
+[ODataKeyFields property](properties/devenv-odatakeyfields-property.md)  
+[System fields](devenv-table-system-fields.md)  
+[Publish a web service](../webservices/publish-web-service.md)  
+[Create and call an OData V4 unbound action](devenv-creating-and-interacting-with-odatav4-unbound-action.md)  

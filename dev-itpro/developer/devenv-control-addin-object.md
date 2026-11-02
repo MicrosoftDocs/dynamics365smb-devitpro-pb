@@ -73,7 +73,7 @@ Designing control add-ins that provide the best possible experience can require 
 - Respond to touch events so that mobile users or users on devices supporting touch input can also use the add-in.
 - Design content that is responsive and can flow, resize, or reorganize naturally based on the available space.
 - Consider the accessibility needs of users, for example by implementing keyboard access and support for screen readers.
-- Use the Style guidelines to apply a choice of colors, typefaces, and font sizes that match that of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Control add-in style guide](devenv-control-addin-style.md).
+- Use colors, typefaces, and font sizes that complement [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Learn more in [Style control add-ins for Business Central](devenv-control-addin-style.md).
 - Provide language translation and other localizations that match the current user language in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 - Don't reference font files in stylesheets in extensions for Business Central online, because the fonts won't display in client. Instead, do one of the following:
 

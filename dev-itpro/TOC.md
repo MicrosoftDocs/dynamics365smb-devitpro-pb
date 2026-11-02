@@ -967,7 +967,7 @@
 ##### [Business Central app URL](developer/devenv-link-to-mobile-app.md)
 
 #### Control add-ins
-##### [Control add-in style guide](developer/devenv-control-addin-style.md)
+##### [Style control add-ins](developer/devenv-control-addin-style.md)
 
 #### Developing for the Business Central mobile app
 ##### [Introducing the Business Central mobile app](developer/devenv-introducing-business-central-mobile-app.md)  
@@ -1295,7 +1295,7 @@
 #### [Deprecate external business events](developer/devenv-deprecate-external-business-events.md)
 #### [Notifications](developer/devenv-notifications-developing.md)
 ### Developing client add-ins
-#### [Control add-in style guide](developer/devenv-control-addin-style.md)
+#### [Style control add-ins](developer/devenv-control-addin-style.md)
 #### [Control add-in best practices](developer/devenv-control-addin-bestpractices.md)
 
 ### Embedding Power BI
@@ -1890,7 +1890,7 @@
 #### [Using OData on queries set with top number of rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to modify data](webservices/use-odata-to-modify-data.md)
 #### [Using OData transactional $batch requests](webservices/use-odata-batch.md)
-#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)  
+#### [Create and call an OData V4 unbound action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)  
 #### [Return or obtain service metadata EDMX document for OData](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or obtain a JSON document with OData](webservices/return-obtain-json-document.md)
 #### [Known OData limitations](webservices/odata-known-limitations.md)
@@ -2509,7 +2509,7 @@
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 ## [Transparency note: Semantic Metadata Search in Business Central](ai/transparency-note-semantic-metadata-search.md)  
-## [Transparency note: Business Central Agent Playground](ai/transparency-note-ai-development-toolkit)
+## [Transparency note: Business Central AI development toolkit (preview)](ai/transparency-note-ai-development-toolkit.md)
 
 <!-- end upgrade -->
 <!--on-prem ends-->
