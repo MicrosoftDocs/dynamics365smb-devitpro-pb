@@ -4,7 +4,7 @@ description: Learn how to contribute to Microsoft's AL codebase and expand exten
 author: AleksandricMarko
 ms.topic: concept-article
 ms.author: maleksandric
-ms.date: 04/02/2025
+ms.date: 10/29/2026
 ms.reviewer: bholtorf
 ms.custom: bap-template
 ---
@@ -13,25 +13,21 @@ ms.custom: bap-template
 
 Our AL codebase contains many scenarios that you can extend to cover the diverse needs of different businesses. However, you might have a business scenario that our extensibility offerings don't cover. For example, we might not have the event or interface you need, or you might want to add new functionality to one of our features.
 
-To get what you're missing, you can submit an extensibility request. Or, rather than wait for us to process your request, to unblock yourself you can contribute to our codebase. We very much encourage the latter. We want our codebase close to our partners, so that we can achieve more through joint efforts. To facilitate collaboration, part of our application code is available for improvements through contributions.
+To get a missing extensibility point, submit an extensibility request.
 
 ## Contribute a change
 
-The [BCApps](https://github.com/microsoft/BCApps) repository is the first truly open source component in our AL codebase. To learn more about contributing, go to [Readme](https://github.com/microsoft/BCApps/blob/main/README.md) and the [Contributing](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md.) guidelines.
+The [BCApps](https://github.com/microsoft/BCApps) repository is the open-source collaboration hub for Business Central application development. It includes the Base Application, Business Foundation, System Application, Microsoft's first-party apps, and developer tools. To learn more about contributing, go to [Readme](https://github.com/microsoft/BCApps/blob/main/README.md) and the [Contributing](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md) guidelines.
 
 To explore examples of previous contributions from our community, go to [history of our repository](https://github.com/microsoft/BCApps/pulls?q=is%3Apr+is%3Aclosed+is%3Amerged+-author%3Abcbuild-github-agent).
 
-We welcome contributions to Microsoft's application add-ons.
+We welcome contributions across all application areas.
 
-- If you're looking to contribute to the **System Application** or **Developer Tools**, you can do so in the [BCApps](https://github.com/microsoft/BCapps) repository.
-- If you want to contribute to the **Base Application**, you can do so in the [BusinessCentralApps](https://github.com/microsoft/BusinessCentralApps/) repository.
-
-    > [!NOTE]
-    > The BusinessCentralApps repository is private, so to get started you must request access to our contribution program. To request access, just fill out and submit this [form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR_Qj5hjzNeNOhBcvBoRIOltUOVBVTklZN1hBOTZJUU40OE5CUzNWNk1FQy4u).
+Help improve Business Central's extensibility by contributing the changes your solution needs. To learn more, go to [Contribute the implementation for an extensibility request](create-extensibility-request.md#contribute-the-implementation-for-an-extensibility-request).
 
 ## Create an extensibility request
 
-[BCApps](https://github.com/microsoft/BCApps/) is a repository where Microsoft and the community work together to develop add-on apps in the AL language and expand the general extensibility of [!INCLUDE [prod_short](includes/prod_short.md)].
+Submit requests for missing extensibility points in any of these application areas through [BCApps](https://github.com/microsoft/BCApps/).
 
 Before you create a request, review these guidelines:
 
@@ -43,9 +39,10 @@ Before you create a request, review these guidelines:
 >
 > - We add new events in the main branch and the latest release branch. In most cases, we make other types of requests in the main branch available in an upcoming major release.
 > - We don't accept requests that contain anything marked as `Obsolete` or surrounded by `CLEAN` tags.
-> - We don't accept requests that target apps in BCApps. Instead, we encourage you to contribute it yourself.
 
-To create an extensibility request, go to the BCApps repository and create a [new issue](https://github.com/microsoft/BCApps/issues) by using the **Create an extensibility request** template.
+To create an extensibility request, go to the BCApps repository and create a [new issue](https://github.com/microsoft/BCApps/issues/new?template=extensibility-request.yaml) by using the **Create an extensibility request** template.
+
+For the supported request types, submission requirements, and examples, go to [Create an extensibility request](create-extensibility-request.md).
 
 > [!NOTE]
 > Don't submit requests for adding features as extensibility requests. Instead, engage with our partner community and create an idea in the [BC Ideas website](https://aka.ms/BCIdeas). Popular ideas get considered by our product team.

@@ -6,7 +6,7 @@ ms.author: bholtorf
 ms.reviewer: solsen
 ms.topic: article
 ms.collection: 
-ms.date: 08/15/2025
+ms.date: 10/29/2026
 ms.custom: bap-template
 ---
 
@@ -418,6 +418,8 @@ codeunit 1248 "Process Bank Acc. Rec Lines"
 
 The signature expects multiple subscribers, so there can be multiple extensions that handle the event.
 
+The value ranking describes the event design, not whether an extensibility request is approved. Review considers the logic being bypassed, regardless of whether a Boolean parameter is named `IsHandled`, `Handled`, or `Skip...`. Requests that bypass existing logic can require the justification described in [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md).
+
 ```AL
 table 36 "Sales Header"
 {
@@ -471,6 +473,8 @@ codeunit 5600 "FA Insert Ledger Entry"
 
 > [!NOTE]
 > Subscribers must exit if the event is already handled, thus these events don't scale. Consider using skip events.
+
+Before requesting a new handled event, review [Using the IsHandled pattern](devenv-use-ishandled-pattern.md) and [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md). Changing an existing event to introduce handled behavior isn't accepted.
 
 ```AL
 page 42 "Sales Order"
