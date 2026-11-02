@@ -1,65 +1,94 @@
 ---
-title: Enable and disable Business Central self-service signups
-ms.date: 11/11/2024
+title: Manage Business Central Self-Service Signups
+ms.date: 10/29/2026
 ms.topic: how-to
 author: jswymer
-description: Learn how to prevent Microsoft Entra tenant users from self-service sign ups
+description: Learn how to allow or block Business Central self-service signups and check the setting for your Microsoft Entra tenant with Microsoft Graph PowerShell.
 ---
 
-# Enable and disable Business Central self-service signups
+# Allow or block Business Central self-service signups
 
-Administrators for a Microsoft 365 tenant might not want their users to sign up for the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] service without their awareness. You can complete the following procedure in Microsoft Entra ID to block individual user signups.  
+Control whether users in your Microsoft Entra tenant can sign up for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] without an administrator's approval. Use Microsoft Graph PowerShell to allow or block self-service signups and check the current setting.
 
-To complete this procedure, you must install and use Microsoft Entra ID cmdlets. For a list of MSOnline cmdlets that are available for Microsoft Entra ID using Windows PowerShell, see [MSOnline](/powershell/module/MSOnline/). 
+> [!IMPORTANT]
+> This setting applies to email-based self-service subscriptions across your tenant, not just to Business Central. It isn't a per-product control. Self-service purchases and trials managed through the `AllowSelfServicePurchase` policy use separate controls. Learn more in [Manage self-service purchases and trials](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-PowerShell commands can be used with Microsoft Entra ID to disable adhoc (self-service) subscriptions. 
+## Prerequisites for managing signups
 
-> [!NOTE]
-> These steps aren't specific to [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)]. This procedure disables self-service subscriptions for [any other products and services](https://support.office.com/article/using-self-service-sign-up-in-your-organization-4f8712ff-9346-4c6c-bb63-a21ad7a62cbd ). Microsoft Entra ID doesn't provide tools for blocking signups from specific products. You can reenable self-service signupslater.
+- An account with the Microsoft Entra Privileged Role Administrator role or a custom role with the required permissions. Privileged Role Administrator is the least privileged built-in role for updating the authorization policy. Learn more in [Update authorizationPolicy](/graph/api/authorizationpolicy-update).
+- Administrator consent for the `Policy.ReadWrite.Authorization` delegated permission for Microsoft Graph. The connection command in the next section requests this permission. Learn more in the [Microsoft Graph permissions reference](/graph/permissions-reference#policyreadwriteauthorization).
+- A supported PowerShell environment. We recommend PowerShell 7 or later. Learn more in [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation).
 
-## Disable self-service signups
+## Connect to your Microsoft Entra tenant
 
-1. Start Windows PowerShell as an administrator.
-1. At the command prompt, run the following command to import the PowerShellGet module:
+1. Open PowerShell and install the module for the current user:
 
-    ```PowerShell
-    Import-Module PowerShellGet
+    ```powershell
+    Install-Module -Name Microsoft.Graph.Identity.SignIns -Scope CurrentUser -Repository PSGallery
     ```
 
-1. Run the following command to connect to the Microsoft Entra service. You must provide your user name and password for managing the Microsoft Entra tenant.
+1. Import the module:
 
-    ```PowerShell
-    Connect-MsolService
+    ```powershell
+    Import-Module Microsoft.Graph.Identity.SignIns
     ```
 
-1. Run the following command to disable self-service signups:
+1. Replace `<TenantId>` with the ID of the tenant you want to manage. Run the following command and sign in with your administrator account:
 
-    ```PowerShell  
-    Set-MsolCompanySettings -AllowAdHocSubscriptions $false 
+    ```powershell
+    Connect-MgGraph -TenantId "<TenantId>" -Scopes "Policy.ReadWrite.Authorization" -ContextScope Process
     ```
 
-    When the command completes, self-service signups are disabled for your Microsoft Entra ID. Users who try to sign up for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] or any other self-service products get a message similar to:
+## Block self-service signups
 
-    **We can't finish signing you up.**
+After connecting to your tenant, run the following commands:
 
-    **Your IT department has turned off signup for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)]. Contact them to complete signup.** 
-
-## Enable self-service signups
-
-To enable self-service signups, follow the same steps to sign in and connect to your Microsoft Entra service, and then run the following command:
-
-```PowerShell  
-Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
+```powershell
+$parameters = @{
+    allowedToSignUpEmailBasedSubscriptions = $false
+}
+Update-MgPolicyAuthorizationPolicy -BodyParameter $parameters
 ```
 
-## Verify whether signups are enabled or disabled
+The `allowedToSignUpEmailBasedSubscriptions` setting controls whether users can sign up for email-based subscriptions. Setting it to `$false` blocks these signups for the tenant. The update request includes only this property.
 
-To check whether self-service signups are enabled in Microsoft Entra ID, follow the same steps to sign in and connect to the Microsoft Entra service. Then run the following command:
+Users who are blocked by this policy can't complete self-service signup. They must contact their administrator to request access. If a user reports that their IT department turned off signups, [check the current setting](#check-whether-self-service-signups-are-allowed). You can then decide whether to allow signups or arrange access through your organization's normal process.
 
-```PowerShell
-Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+Learn more about this tenant-wide setting in [Self-service sign up for email-verified users](/entra/identity/users/directory-self-service-signup).
+
+## Allow self-service signups
+
+To allow email-based self-service signups again, connect to your tenant and run the following commands:
+
+```powershell
+$parameters = @{
+    allowedToSignUpEmailBasedSubscriptions = $true
+}
+Update-MgPolicyAuthorizationPolicy -BodyParameter $parameters
+```
+
+## Check whether self-service signups are allowed
+
+In the same connected PowerShell session, run the following command:
+
+```powershell
+Get-MgPolicyAuthorizationPolicy |
+    Select-Object AllowedToSignUpEmailBasedSubscriptions
+```
+
+The value is `True` when email-based self-service signups are allowed and `False` when they're blocked.
+
+## Disconnect from Microsoft Graph
+
+When you finish, disconnect your PowerShell session:
+
+```powershell
+Disconnect-MgGraph
 ```
 
 ## Related information
 
-[Administration of Business Central Online](../administration/tenant-administration.md)
+[Administration of Business Central online](../administration/tenant-administration.md)  
+[Using self-service sign-up in your organization](/microsoft-365/admin/misc/self-service-sign-up)  
+[Update-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)  
+[Get-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthorizationpolicy)  

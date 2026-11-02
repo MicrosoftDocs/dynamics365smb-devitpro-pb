@@ -1,6 +1,6 @@
 ---
 title: "WebServiceActionContext.AddEntityKey(Integer, Any) Method"
-description: "Add a new \<fieldId, value\> pair to the collection of entity keys."
+description: Add a field ID and value to the collection of entity keys in an AL WebServiceActionContext instance for an OData V4 bound action.
 ms.author: solsen
 ms.date: 10/01/2026
 ms.topic: reference
@@ -45,13 +45,13 @@ The value for the field in the entity key.
 ## Example
 
 ```al
-actionContext.AddEntityKey(Rec.FieldNO(Id), ToSalesHeader.Id);
+ActionContext.AddEntityKey(Rec.FieldNo(SystemId), ToSalesHeader.SystemId);
 ```
-For a complete code example, see [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md).
+For a complete code example, see [Creating and interacting with an OData V4 bound action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md).
 
 
 ## Related information
 [WebServiceActionContext Data Type](webserviceactioncontext-data-type.md)  
-[Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md)  
+[Creating and interacting with an OData V4 bound action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
