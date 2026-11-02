@@ -1,137 +1,147 @@
 ---
-title: Module Architecture
-description: Learn about the internal components of modules in the System Application.
-ms.date: 06/16/2025
-ms.topic: article
+title: Module Architecture in the System Application
+description: Design System Application modules with clear public APIs, internal implementations, separate tests, and XML documentation that fit BCApps conventions.
+ms.date: 10/29/2026
+ms.topic: concept-article
 author: bholtorf
 ms.reviewer: solsen
 ---
 
 # Module architecture
 
-While the internal architecture of modules might vary, certain rules ensure consistency and reliability across application modules. To promote loose coupling and maintain consistency, each module is designed as a separate entity with a publicly accessible facade. The internal implementation details remain private, as illustrated in the following image: 
+Use these design recommendations when contributing modules to the System Application in [BCApps](https://github.com/microsoft/BCApps). They describe how to organize public APIs, implementation code, tests, and documentation. They aren't general AL language requirements.
 
-:::image type="content" source="media/module-architecture.png" alt-text="Architecture layout.":::
+Expose supported functionality through a public facade and keep implementation details behind that API. The following diagram illustrates this separation.
 
-The following sections describe the design principles for modules.
+:::image type="content" source="media/module-architecture.png" alt-text="Diagram of a public facade that delegates work to implementation components inside a module.":::
 
 ## One module, one project
 
-Modules are independent projects and have their own `app.json` files. Learn more about the contents of the `app.json` file in [Project setup](devenv-blueprint.md#project-setup).
+System Application modules have their own development projects and `app.json` files. BCApps also contains a combined System Application project. A module's conceptual boundary and development project don't necessarily match the app boundary in the compiled package.
+
+Learn more about organizing the files in [Project setup](#project-setup).
 
 ## Packaging and layering
 
-Modules can belong to a specific package, or functional layer. A module becomes part of a layer when it’s added to the folder structure of the layer’s package. A module can belong to several packages because the module is a package of its own, and can be bundled into larger functional layering packages.
+Organize modules in the appropriate application folder. App manifests and build configuration determine the projects, dependencies, and packages. Folder placement alone doesn't establish an AL app dependency or access boundary.
 
-## Dependencies
+## Dependencies between application layers
 
-Dependencies to other modules can only be taken to modules in the same functional layer or to lower layers. For example, a module in the Core Application can only take dependencies to modules in the Core Application or System Application, but never to extensions.
+Keep module dependencies within the same application layer or directed toward lower-level capabilities. For example, the Base Application depends on Business Foundation and System Application. This dependency direction is an architectural convention, not an AL restriction based on folder names.
 
-## Target environment
+## Choose the compilation target
 
-Every module must initially target the most restrictive environment, which is the cloud environment. If unsafe operations are required, those should result in a System Application module where the unsafe operations are wrapped with safe APIs. That is done by setting the `Target` to `OnPrem`. Modules in layers above the System Application must have `Target` set to `Cloud` in the `app.json` file.
+Prefer cloud-compatible public APIs and avoid unnecessary dependencies on restricted platform functionality. Follow the owning BCApps project's `target` setting in `app.json`. The System Application and Business Foundation manifests use `OnPrem`, which controls compilation API availability.
 
-## Object accessibility 
+When restricted platform functionality is needed, wrap it in an AL API that validates inputs and exposes only the intended operations. Keep restricted types and implementation details behind the facade.
 
-Only facade codeunits, pages, and tables required in the public API of the module can be accessible. Internal implementation details must be marked as such by setting the access modifier to `Internal`, that is, entities can be accessed within the module but can't be called from outside the module.
+Learn more about the difference between `Cloud` and `OnPrem` in [Compilation scope overview](devenv-compilation-scope-overview.md).
+
+## Control object accessibility
+
+Expose only the objects needed by the public API. These objects can include facade codeunits, tables, pages, enums, interfaces, queries, and XMLports. Mark implementation objects `Internal` where the object type supports the `Access` property. Pages don't support this property.
+
+`Internal` restricts compile-time access across AL app boundaries, subject to the `internalsVisibleTo` setting. It doesn't isolate conceptual module folders compiled into the same app.
+
+> [!IMPORTANT]
+> Access modifiers aren't a security boundary. Learn more in [Using access modifiers in AL](devenv-using-access-modifiers.md).
 
 ## Facade codeunits
 
-Every module must have a facade that meets the following rules:
+Use a public facade for modules that expose callable functionality. Modules that supply types, aliases, or other declarative capabilities don't need an artificial facade codeunit.
 
-* Access must be `Public`. It should be set explicitly to emphasize that this is a facade or an API-like codeunit that exposes the core functionality in the module.
-* All integration and business event publishers must be in the facade as internal functions. This prevents them from being invoked outside the module.
-* Event publishers should be marked as internal. Exceptions must be documented.
-* All external methods go in the facade.
-* Facades can't contain logic or local functions.
-* Because the facade is the codeunit that other modules reference, it should have a short, meaningful name. Internal implementation codeunits can be suffixed with “Impl,” for example, because they aren't referenced outside the module.
+Use these recommendations for service facades:
 
-## Business logic
+- Set `Access` explicitly to `Public` to identify the codeunit as part of the supported API.
+- Keep the facade thin and delegate business logic to implementation codeunits.
+- Place supported extension-point events in the facade where practical. Use an appropriate procedure access modifier to restrict direct publisher invocation. Implementation-level events can remain in implementation objects.
+- If a publisher must be public, document why callers outside the app need to raise the event.
+- Use a short, meaningful name. Internal implementation codeunits can use an `Impl` suffix.
 
-Implementation codeunits contain the business logic. Pages and tables can contain code, but should do so only when it's absolutely required.
+Public helper or value objects can contain the behavior and local procedures needed to represent their API.
 
-## Extensibility
+## Keep business logic in implementation codeunits
 
-Extensibility must be thought into the internal implementation of every module. If a module shouldn't be extensible, the `Extensibility` property on tables, pages, and enums must be set to `False` to prevent those objects from being extended.
+Place business logic in implementation codeunits. Keep code in pages and tables focused on the behavior those objects require.
 
-Functions and fields in extensible tables and pages must have an access modifier, as described in the following table.
+## Plan object extensibility
 
-|Access  |Description  |
-|---------|---------|
-|`Local`|Accessed only by code in the same table or table extension where the function or field is defined.|
-|`Internal`|Accessed only by code in the same module, but not from another module.|
-|`Protected`|Accessed only by code in the same table or table/page extensions of that table.|
-|`Public`|Accessed by any other code in the same module and in other modules that reference it.|
+Decide which objects support extensions. To prevent extension objects for a table, page, report, or enum, set its `Extensible` property to `false`. Learn more in [Extensible property](properties/devenv-extensible-property.md).
 
-## Documentation
+For table fields, use the `Access` property to control accessibility.
 
-Every publicly accessible object must be documented. Learn more in [Documentation](devenv-blueprint.md#documentation).
+| Access | Description |
+|--------|-------------|
+| `Local` | Accessible only by code in the table or table extension that declares the field. |
+| `Internal` | Accessible within the same app and from apps granted access through `internalsVisibleTo`. |
+| `Protected` | Accessible by code in the declaring table and table extensions of that table, not page extensions. |
+| `Public` | Accessible by code in the same app and other apps that reference it. |
 
-## Tests
+Procedure accessibility is specified separately in the procedure declaration. Don't apply the table-field access matrix to page controls. Learn more in [Access property](properties/devenv-access-property.md) and [AL methods](devenv-al-methods.md).
 
-Every module’s public API must be tested according to Microsoft standards. Learn more in [Testing](devenv-blueprint.md#testing).
+## Document and test the public API
 
-## Single instance
+Document publicly accessible objects and test the module's public API. Learn more in [Documentation guidelines](#documentation-guidelines) and [Testing module behavior](#testing-module-behavior).
 
-Use single instance only when it’s required, or if the module is expected to be called frequently.
+## Choose single-instance behavior
 
-## .NET
+Use `SingleInstance` when instance reuse or retained session and company state is intentional. Consider the lifetime of global variables and measure any performance benefit. Frequent calls alone aren't sufficient justification. Learn more in [SingleInstance property](properties/devenv-singleinstance-property.md).
 
-If a .NET type is an integral part of the module and isn't referenced elsewhere, the alias for that type must be defined in the module. If the .NET type is used in different modules, then the alias for it must be defined in the **DotNet Aliases** module.
+## Organize .NET type aliases
+
+Keep module-specific .NET aliases with the module. Use the DotNet Aliases module for shared aliases used by multiple modules.
 
 ## Project setup
 
-Every module begins with a project setup that includes the following: 
+Follow the current [BCApps contribution guidelines](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md) and the layout of neighboring modules.
 
-* **Module Name**: If the module represents an entity, name the module after the entity. If the module doesn't represent an entity, give it a name that describes what it does. Module names can be singular or plural, depending on whether they handle one or more entities or tasks.
-* **Location**: Determine which layer the module belongs to, and create a subfolder in a folder in that layer. For example, *Modules\System\My Module*.
-* **Source Code**: Add the source code of the module in a `\src` subfolder. For example, *Modules\System\My Module\src*.
+- Name the module after the entity or capability it provides.
+- Place source files under `src\System Application\App\<ModuleName>\src`.
+- Place corresponding tests under `src\System Application\Test\<ModuleName>\src`.
+- Keep the module's `app.json` file and README in its project folder.
 
-## Testing
+## Testing module behavior
 
-Every module must be tested through a separate test module. Only public functions that are exposed through the facade, or other public objects such as pages, tables, xmlports, and queries, are tested by the test module.
+Test the public API from separate test projects. Additional implementation-level tests can use internal APIs where the project's `internalsVisibleTo` configuration permits it.
 
-:::image type="content" source="media/module-testing.png" alt-text="Testing.":::
+:::image type="content" source="media/module-testing.png" alt-text="Diagram of a separate test app that exercises a module through its public facade.":::
 
-The test module should have the same name as the module it tests, but be placed in a separate layer/package that contains tests for all modules in the layer. For example, *Modules\\**System Tests**\My Module*. Test code can't reside in the same layer folder structure as the module, or within the module, because it must not be executable or part of a production environment.
+The source and test folders can share the module name. The test app has its own identity, such as *Base64 Convert Test*. Keep test code out of production app projects.
 
 ## Documentation guidelines
 
-It's important that you document your module. The following sections provide some guidelines.
+Document the module's purpose and its supported public API.
 
-### Modules
+### Module metadata and README
 
-The `app.json` file for each module must contain a user-friendly title, a short brief, and a description that states its purpose. 
+Give the module a user-friendly `name`, a concise `brief`, and a purpose-focused `description` in `app.json`. Describe the module's purpose and usage in its README. These recommendations are contributor recommendations, not additional AL language requirements.
 
-### Public API
+### Public object documentation
 
-Every publicly accessible object must have developer facing documentation that follows the XML documentation comments standard.
+Use XML documentation comments to describe public objects. Include a summary of the object's purpose. In AL source, prefix each XML documentation line with `///`.
 
-### Public objects
-
-Public objects, such as codeunits, tables, pages, and so on, must have a summary that states what the object is used for. Follow the XML documentation comments standard for the summary as the example below.
-
-```
-/// <summary>
-/// Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-/// </summary>
+```xml
+<summary>
+Provides helpers for converting text to and from Base64.
+</summary>
 ```
 
-## Public functions
+### Public procedure documentation
 
-Public functions must have a summary, a parameter description, and a return value description. The following is an example of the syntax.
+Document public procedures with a summary, a description for each parameter, and a return-value description when the procedure returns a value.
 
-```
-/// <summary>
-/// Maecenas sodales posuere ligula eu maximus.
-/// </summary>
-/// <param name="Lorem">The current language ID</param>
-/// <param name="ipsum ">The CaptionClass expression to resolve</param>
-/// <returns> Fusce in tristique massa, tincidunt tempor libero.</returns>
+For example, the following XML describes a procedure that accepts an `inputText` parameter and returns Base64-encoded text. Prefix each line with `///` in the AL source.
+
+```xml
+<summary>
+Converts text to its Base64 representation.
+</summary>
+<param name="inputText">The text to encode.</param>
+<returns>The Base64-encoded text.</returns>
 ```
 
 ## Related information
 
-[Getting started with modules](devenv-getting-started.md)  
+[Get started with modules in the System Application](devenv-getting-started.md)  
 [Create a new module in the System Application](devenv-new-module.md)  
-[Module architecture](devenv-blueprint.md)  
+[BCApps contribution guidelines](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)  

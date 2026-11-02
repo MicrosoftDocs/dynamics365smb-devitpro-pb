@@ -1,7 +1,7 @@
 ---
-title: Async Processing Overview for Business Central
-description: Compare asynchronous processing options in AL, including page background tasks, background sessions, scheduled tasks, and job queues in Business Central.
-ms.date: 10/15/2026
+title: Asynchronous Processing in AL for Business Central
+description: Compare asynchronous processing options in Business Central. Choose page background tasks, background sessions, scheduled tasks, or job queues for your AL code.
+ms.date: 10/23/2026
 ms.reviewer: jswymer
 ms.topic: overview
 author: KennieNP
@@ -14,11 +14,29 @@ ms.author: kepontop
 
 ## Operational limits for Business Central online
 
-To help maintain service availability and quality, [!INCLUDE[prod_short](includes/prod_short.md)] online limits asynchronous operations. The comparison table identifies the limits for each option. Learn more about the current limits in [Asynchronous task limits](../administration/operational-limits-online.md#Task) and [Scheduled task limits](../administration/operational-limits-online.md#TaskUser).
+Each asynchronous processing mechanism has its own concurrency and timeout controls. Use the following table to identify the applicable limits. Learn more about current values in [Operational limits for Business Central online](../administration/operational-limits-online.md).
 
-## Operational limits for Business Central on-premises
+| Mechanism | Limits to check |
+|-----------|-----------------|
+| Page background task | [Asynchronous task limits](../administration/operational-limits-online.md#Task): child sessions max concurrency and max queue length, per parent session; page background task default and maximum timeouts. |
+| `Session.StartSession` | [Asynchronous task limits](../administration/operational-limits-online.md#Task): background sessions max concurrency, max queue length, and default waiting timeout. |
+| Task scheduler | [Scheduled task limits per user](../administration/operational-limits-online.md#TaskUser): concurrent execution of scheduled tasks. |
+| Job queue | [Scheduled task limits per user](../administration/operational-limits-online.md#TaskUser), because scheduled job queue processing uses the task scheduler. |
 
-For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can configure child session concurrency and queue limits, background session concurrency and queue limits, page background task timeouts, and scheduled task concurrency. Learn more in [Run background sessions and page tasks](../administration/server-instance-settings.md#run-background-sessions-and-page-tasks) and [Schedule server tasks](../administration/server-instance-settings.md#schedule-server-tasks).
+Scheduled tasks run in background sessions, but they don't use the same concurrency limit as sessions started with `Session.StartSession`. Scheduled-task concurrency limits control how many tasks can run at the same time, not how many tasks can be stored for later execution.
+
+## Configure limits for Business Central on-premises
+
+For on-premises environments, configure the corresponding server instance settings.
+
+| Mechanism | Settings to check |
+|-----------|-------------------|
+| Page background task | `ChildSessionsMaxConcurrency`, `ChildSessionsMaxQueueLength`, `PageBackgroundTaskDefaultTimeout`, and `PageBackgroundTaskMaxTimeout`. |
+| `Session.StartSession` | `BackgroundSessionsMaxConcurrent`, `BackgroundSessionsMaxQueued`, and `BackgroundSessionsDefaultWaitTimeout`. `BackgroundSessionsDefaultTimeout` sets the execution timeout when the method call doesn't specify one. |
+| Task scheduler | `TaskSchedulerMaximumConcurrentRunningTasks` limits concurrent execution per server instance. `DefaultTaskSchedulerSessionTimeout` and `MaxTaskSchedulerSessionTimeout` control execution timeouts. Task scheduling must be enabled with `EnableTaskScheduler`. |
+| Job queue | The task-scheduler concurrency and maximum-timeout settings apply. The job queue supplies its job timeout when it creates the scheduled task. |
+
+Learn more about these settings in [Business Central Server instance settings](../administration/server-instance-settings.md). Learn more about changing them in [Configure Business Central Server](../administration/configure-server-instance.md).
 
 ## Related information
 
