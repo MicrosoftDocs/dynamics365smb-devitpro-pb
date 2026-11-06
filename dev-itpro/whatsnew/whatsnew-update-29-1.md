@@ -73,9 +73,9 @@ The upgrade path depends on your current major version. Select the instructions 
 
 ### New Microsoft Copilot capabilities in Business Central
 
-Starting with Business Central update 29.0, users can access Microsoft Copilot directly within Business Central to get help with everyday work. Learn more about these capabilities in [Use Microsoft Copilot in Business Central (preview)](https://aka.ms/BCCopilot). Or explore the Microsoft Copilot playlist at [aka.ms/BCCopilotPlatlist](https://aka.ms/BCCopilotPlatlist).
+Starting with Business Central update 29.0, users can access Microsoft Copilot directly within Business Central to get help with everyday work. Learn more about these capabilities in [Use Microsoft Copilot in Business Central (preview)](https://aka.ms/BCCopilot). Or explore the Microsoft Copilot playlist at [aka.ms/BCCopilotPlaylist](https://aka.ms/BCCopilotPlaylist).
 
-:::image type="content" source="../developer/media/copilot-chat-video.png" alt-text="Watch " link="https://aka.ms/BCCopilotPlatlist":::
+:::image type="content" source="../developer/media/copilot-chat-video.png" alt-text="Watch " link="https://aka.ms/BCCopilotPlaylist":::
 
 Microsoft is also introducing a new Business Central + Copilot offer, announced at Directions EMEA 2026 in Paris. The offer gives partners another way to introduce Copilot to Business Central customers. Learn more in the [Announcing new Business Central + Copilot offer and Copilot capabilities](https://aka.ms/BC-Copilot-Bundle) blog post.
 
