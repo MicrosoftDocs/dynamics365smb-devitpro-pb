@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 This article highlights new and updated features in update 29.1, with links to hotfixes, regulatory updates, and other useful resources.
 
 > [!TIP]
-> Explore what's new in [:::image type="icon" source="../developer/media/copilot-icon-rainbow.png"::: Microsoft Copilot capabilities](#new-microsoft-copilot-capabilities-in-business-central) and the bundle that helps introduce Copilot to customers.
+> Explore the new [:::image type="icon" source="../developer/media/copilot-icon-rainbow.png"::: Microsoft Copilot capabilities in Business Central](#new-microsoft-copilot-capabilities-in-business-central).
 
 ## Hotfixes
 
