@@ -4,9 +4,10 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 10/23/2026
+ms.date: 11/06/2026
 ms.custom: bap-template
 ms.topic: whats-new 
+ai-usage: ai-assisted
 ---
 
 # What's new and planned in Business Central
@@ -17,11 +18,11 @@ Wondering about upcoming and recently released capabilities in Dynamics 365 Busi
 
 > [!IMPORTANT]
 >
-> **New release plans are no longer published.** Since September 2026, new Dynamics 365 Business Central capabilities have been published to the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). Existing release plans remain available for historical reference. Learn more about the roadmap and disclosure changes at [One always-on roadmap: Dynamics 365, Power Platform and Dataverse join the AI at Work roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
+> **The AI at Work roadmap replaces new release plans.** Since September 2026, information about new Dynamics 365 Business Central capabilities is published on the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). Existing release plans remain available for historical reference.
+>
+> Learn more about this change in the [announcement about the move to the AI at Work roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
 
-Business Central follows a six‑month release cycle called a *release wave*, which groups new, changed, and planned features for a half‑year period. 
-
-Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+Business Central follows a six‑month release cycle for major version updates, which groups new, changed, and planned features for a half‑year period. To discover upcoming capabilities, track rollout progress, and plan adoption, visit the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap).
 
 ## New and changed features in recent minor updates
 
@@ -29,15 +30,14 @@ Minor updates are released monthly and can include new release wave features, re
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|29.1|Application Build 29.1, Platform Build 29.0|November 2026|[Update 29.1 for Business Central 2026 release wave 2](whatsnew-update-29-1.md)|
 |29.0|Application Build 29.0 Platform Build 29.0|October 2026|[Update 29.0 for Business Central 2026 release wave 2](whatsnew-update-29-0.md)|
 |28.5|Application Build 28.5 Platform Build 28.0|September 2026|[Update 28.5 for Business Central 2026 release wave 1](whatsnew-update-28-5.md)|
-|28.4|Application Build 28.4 Platform Build 28.0|August 2026|[Update 28.4 for Business Central 2026 release wave 1](whatsnew-update-28-4.md)|
-|28.3|Application Build 28.3 Platform Build 28.0|July 2026|[Update 28.3 for Business Central 2026 release wave 1](whatsnew-update-28-3.md)|
-|28.2|Application Build 28.2 Platform Build 28.0|June 2026|[Update 28.2 for Business Central 2026 release wave 1](whatsnew-update-28-2.md)|
+
 
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 
-For earlier versions, visit the [Updates for earlier major versions](whatsnew-update-27-5.md) section.
+For earlier versions, visit the [Update 28.4 for Business Central 2026 release wave 1](whatsnew-update-28-4.md).
 
 ## Get the latest version
 

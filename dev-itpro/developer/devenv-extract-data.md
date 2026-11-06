@@ -1,13 +1,14 @@
 ---
-title: "Extract data from Business Central"
-description: Explains how to extract data from Business Central with different tools
+title: Business Central Data Extraction Methods
+description: Compare Business Central data extraction options, including Microsoft Fabric mirroring, API-based delta loads, and custom ETL pipelines.
 ms.custom: bap-template
-ms.date: 12/23/2025
+ms.date: 10/28/2026
 ms.topic: how-to
 ms.search.keywords: Power BI, reports, data, data warehouse, etl
 author: kennieNP
 ms.author: kepontop
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Extract data from Business Central
@@ -23,17 +24,17 @@ Extract, transform, and load (ETL) is a data pipeline used to collect data from 
 When establishing a data lake or a data warehouse, you typically need to do two types of data extraction:
 
 1. A historical load (all data from a given point-in-time)
-2. Delta loads (what's changed since the historical load)
+1. Delta loads (what's changed since the historical load)
 
 ### Getting a historical load
 
-The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
+For a database-level historical load from [!INCLUDE[prod_short](includes/prod_short.md)] online, you can export a BACPAC file from the admin center and restore it in Azure SQL Database or SQL Server. For on-premises installations, you can take a backup of the tenant database. If Fabric is your destination, consider the managed initial snapshot described in [Microsoft Fabric data mirroring](#microsoft-fabric-data-mirroring).
 
 Learn more in [Exporting databases in the admin center](../administration/tenant-admin-center-database-export.md) and [Create a full database backup (on-premises)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?).
 
 ### Getting delta loads
 
-The fastest and least disruptive way to retrieve delta loads from [!INCLUDE[prod_short](includes/prod_short.md)] online is to configure API queries to run on read‑scaleout and filter the results using the data audit field `SystemModifiedAt` (exposed in APIs as `lastModifiedDateTime`). This implementation allows you to retrieve only the records that were added or modified since your last successful read. Here are the high-level steps involved.
+For API-based delta extraction from [!INCLUDE[prod_short](includes/prod_short.md)] online, configure API pages or queries to use read scale-out. Filter results on a modification timestamp, such as `SystemModifiedAt`, when the API exposes it as `lastModifiedDateTime`. This approach retrieves added or modified records; it doesn't identify deleted records. For managed synchronization to Fabric, consider [Microsoft Fabric data mirroring](#microsoft-fabric-data-mirroring).
 
 1. Enable read scale-out on the [!INCLUDE[prod_short](includes/prod_short.md)] database.
 
@@ -92,9 +93,34 @@ Also consider this pattern: For each company, start by determining which tables 
 
 For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you can just read directly from the environment database. This option isn't available for [!INCLUDE[prod_short](includes/prod_short.md)] online, so establishing this type of integration could block you from migrating from on-premises to the online version. 
 
-For [!INCLUDE[prod_short](includes/prod_short.md)] online, the only supported option for reading data is using APIs. The APIs can be either the standard APIs that are shipped with [!INCLUDE[prod_short](includes/prod_short.md)] or custom APIs that you build in Visual Studio Code and ship as an extension.
+For [!INCLUDE[prod_short](includes/prod_short.md)] online, use one of the following supported options:
+
+- Microsoft Fabric data mirroring for a managed connection that mirrors selected companies and tables to an open mirrored database in Microsoft Fabric.
+- Standard or custom Business Central APIs for transactional integrations and custom ETL pipelines.
 
 There exists a code sample that you can use to be more productive with APIs. Learn more in [API query generator](https://github.com/microsoft/BCTech/tree/master/samples/APIQueryGenerator)
+
+### Microsoft Fabric data mirroring
+
+> [!NOTE]
+> Data mirroring is a preview. Check the installed app's compatibility requirements and the prerequisites in [Set up data mirroring](/dynamics365/business-central/admin-set-up-fabric-mirroring#prerequisites).
+
+The Microsoft Fabric Mirroring (Preview) app connects selected Business Central companies and tables to an open mirrored database in Fabric. The integration supports an initial snapshot followed by incremental changes. In Fabric, the data is available in OneLake in Delta Parquet format for use with Power BI, Data Factory, and other Fabric workloads.
+
+Use data mirroring when:
+
+- You want a managed, continuous synchronization process instead of building an API extraction pipeline.
+- You need data from multiple Business Central companies.
+- Fabric is the destination for analytics or data engineering.
+- You want to monitor synchronization from Business Central, APIs, or Fabric.
+
+The app supports up to 1,000 selected tables across manual selections and active configuration packages. The table lookup excludes external, linked, virtual, and certain internal sensitive tables.
+
+Connection setup and synchronization are separate operations. An administrator configures authentication, grants workspace access, and selects **Connect to Fabric**. After setup succeeds, **Start synchronization** requests continuous export. Finishing the setup guide doesn't start synchronization.
+
+The Fabric Export APIs manage configuration and expose monitoring results. They don't expose the selected business tables as API entities. The API throughput estimates in the following section don't describe mirroring throughput.
+
+For setup and administration, see [Data mirroring to Microsoft Fabric from Business Central](/dynamics365/business-central/admin-fabric). For programmatic monitoring and configuration, see [Microsoft Fabric Export APIs](devenv-fabric-export-apis.md).
 
 ## Throughput of data reads with APIs
 

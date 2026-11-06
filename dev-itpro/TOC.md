@@ -2,14 +2,15 @@
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
+## [Update 29.1](whatsnew/whatsnew-update-29-1.md)
 ## [Update 29.0](whatsnew/whatsnew-update-29-0.md)
-## [Update 28.5](whatsnew/whatsnew-update-28-5.md)
-## [Update 28.4](whatsnew/whatsnew-update-28-4.md)
-## [Update 28.3](whatsnew/whatsnew-update-28-3.md)
-## [Update 28.2](whatsnew/whatsnew-update-28-2.md)
-## [Update 28.1](whatsnew/whatsnew-update-28-1.md)
-## [Update 28.0](whatsnew/whatsnew-update-28-0.md)
 ## Updates for earlier major versions
+### [Update 28.5](whatsnew/whatsnew-update-28-5.md)
+### [Update 28.4](whatsnew/whatsnew-update-28-4.md)
+### [Update 28.3](whatsnew/whatsnew-update-28-3.md)
+### [Update 28.2](whatsnew/whatsnew-update-28-2.md)
+### [Update 28.1](whatsnew/whatsnew-update-28-1.md)
+### [Update 28.0](whatsnew/whatsnew-update-28-0.md)
 ### [Update 27.5](whatsnew/whatsnew-update-27-5.md)
 ### [Update 27.4](whatsnew/whatsnew-update-27-4.md)
 ### [Update 27.3](whatsnew/whatsnew-update-27-3.md)
@@ -2034,6 +2035,16 @@
 #### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 #### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
+<!-- Microsoft Fabric -->
+## Integrating with Microsoft Fabric
+### [Overview](/dynamics365/business-central/admin-fabric?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### Administrator
+#### [Set up Fabric Export](/dynamics365/business-central/admin-set-up-fabric-mirroring?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Manage Fabric synchronization](/dynamics365/business-central/admin-manage-fabric-export?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Monitor and troubleshoot synchronization](/dynamics365/business-central/admin-monitor-fabric-export?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### Developer
+#### [Extract data from Business Central](developer/devenv-extract-data.md)
+<!-- end Microsoft Fabric -->
 <!-- Microsoft Copilot Studio -->
 ### Integrating with Microsoft Copilot Studio
 #### [Create agents that connect to Business Central](ai/create-agent-in-copilot-studio.md)

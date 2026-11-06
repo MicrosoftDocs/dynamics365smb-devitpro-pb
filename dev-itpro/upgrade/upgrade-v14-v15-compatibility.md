@@ -4,9 +4,10 @@ description: Provides an overview of the Business Central versions and their com
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.date: 10/01/2026
+ms.date: 11/06/2026
 ms.topic: upgrade-and-migration-article
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Business Central upgrade compatibility matrix
@@ -29,14 +30,15 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 
 The following table lists the Business Central 28 update versions and the minimum version of later releases that are compatible for upgrade.
 
-|Version 27|Version 28|
+|Version 28|Version 29|
 |-|-|
 |28.0 to 28.5|[29.0](../whatsnew/whatsnew-update-29-0.md#on-premises-download-packages)|
-|[28.6](https://support.microsoft.com/help/5130861)|29.1|
+|[28.6](https://support.microsoft.com/help/5130861)|[29.1](https://support.microsoft.com/help/5135161)|
+|[28.7](https://support.microsoft.com/help/5135159)<sup>[\[1\]](#1)</sup>|29.2|
 
 ## Version 27 compatibility
 
-The following table lists the Business Central 26 update versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 27 update versions and the minimum version of later releases that are compatible for upgrade.
 
 |Version 27|Version 28|Version 29|
 |-|-|-|
@@ -47,13 +49,16 @@ The following table lists the Business Central 26 update versions and the minimu
 |[27.9](https://support.microsoft.com/help/5105548)|[28.4](https://support.microsoft.com/servicing/dynamics/business-central/update/2026/08/update-28-4-for-microsoft-dynamics-365-business-central-2026-release-wave-1)|[29.0](../whatsnew/whatsnew-update-29-0.md#on-premises-download-packages)|
 |[27.10](https://support.microsoft.com/help/5123580)|[28.5](https://support.microsoft.com/help/5127206)|[29.0](../whatsnew/whatsnew-update-29-0.md#on-premises-download-packages)|
 |[27.11](https://support.microsoft.com/help/5127205)|[28.6](https://support.microsoft.com/help/5130861)|[29.0](../whatsnew/whatsnew-update-29-0.md#on-premises-download-packages)|
-|[27.12](https://support.microsoft.com/help/5130860)<sup>[\[1\]](#1)</sup>|28.7|29.1|
+|[27.12](https://support.microsoft.com/help/5130860)|[28.7](https://support.microsoft.com/help/5135159)|[29.1](https://support.microsoft.com/help/5135161)|
+|[27.13](https://support.microsoft.com/help/5135160)<sup>[\[1\]](#1)</sup>|28.8|29.2|
 
 Get a list of all available version 27 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-2-7f4863fc-e30c-497d-b510-df9e7007253c).
 
 ## Version 26 compatibility
 
 The following table lists the Business Central 26 update versions and the minimum version of later releases that are compatible for upgrade.
+
+[!INCLUDE [release-wave-no-longer-updated](../includes/release-wave-no-longer-updated.md)]
 
 |Version 26 |Version 27|Version 28|Version 29|
 |-|-|-|-|
@@ -70,7 +75,7 @@ The following table lists the Business Central 26 update versions and the minimu
 |[26.15](https://support.microsoft.com/help/5105549)|[27.10](https://support.microsoft.com/help/5123579)|[28.4](https://support.microsoft.com/help/5123580)|[29.0](../whatsnew/whatsnew-update-29-0.md#on-premises-download-packages)|
 |[26.16](https://support.microsoft.com/help/5123578)|[27.11](https://support.microsoft.com/help/5127205)|[28.5](https://support.microsoft.com/help/5127206)|[29.0](../whatsnew/whatsnew-update-29-0.md#on-premises-download-packages)|
 |[26.17](https://support.microsoft.com/help/5127204)|[27.12](https://support.microsoft.com/help/5130860)|[28.6](https://support.microsoft.com/help/5130861)|[29.0](../whatsnew/whatsnew-update-29-0.md#on-premises-download-packages)|
-|[26.18](https://support.microsoft.com/help/5130859)|27.13|28.7|29.1|
+|[26.18](https://support.microsoft.com/help/5130859)|[27.13](https://support.microsoft.com/help/5135160)|[28.7](https://support.microsoft.com/help/5135159)|[29.1](https://support.microsoft.com/help/5135161)|
 
 Get a list of all available updates for Business Central 2025 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2025 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-1-8cb260a4-6a57-4325-a4d7-7aa84c3234e6).
 
