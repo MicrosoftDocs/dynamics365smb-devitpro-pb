@@ -2,14 +2,15 @@
 
 # What's new and planned
 ## [Overview](whatsnew/overview.md)
+## [Update 29.1](whatsnew/whatsnew-update-29-1.md)
 ## [Update 29.0](whatsnew/whatsnew-update-29-0.md)
-## [Update 28.5](whatsnew/whatsnew-update-28-5.md)
-## [Update 28.4](whatsnew/whatsnew-update-28-4.md)
-## [Update 28.3](whatsnew/whatsnew-update-28-3.md)
-## [Update 28.2](whatsnew/whatsnew-update-28-2.md)
-## [Update 28.1](whatsnew/whatsnew-update-28-1.md)
-## [Update 28.0](whatsnew/whatsnew-update-28-0.md)
 ## Updates for earlier major versions
+### [Update 28.5](whatsnew/whatsnew-update-28-5.md)
+### [Update 28.4](whatsnew/whatsnew-update-28-4.md)
+### [Update 28.3](whatsnew/whatsnew-update-28-3.md)
+### [Update 28.2](whatsnew/whatsnew-update-28-2.md)
+### [Update 28.1](whatsnew/whatsnew-update-28-1.md)
+### [Update 28.0](whatsnew/whatsnew-update-28-0.md)
 ### [Update 27.5](whatsnew/whatsnew-update-27-5.md)
 ### [Update 27.4](whatsnew/whatsnew-update-27-4.md)
 ### [Update 27.3](whatsnew/whatsnew-update-27-3.md)
