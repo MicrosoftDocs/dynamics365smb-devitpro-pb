@@ -5,9 +5,10 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.date: 09/01/2026
+ms.date: 11/06/2026
 ms.topic: article
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 # Dynamics 365 Business Central on-premises 2026 release wave 1 updates
 
@@ -27,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5135159](https://support.microsoft.com/help/5135159)|Update 28.7 |November 2026|Application Build 28.7.57329, Platform Build 28.0.57236|
 |[5130861](https://support.microsoft.com/help/5130861)|Update 28.6|October 2026|Application Build 28.6.55443, Platform Build 28.0.55350|
 |[5127206](https://support.microsoft.com/help/5127206)|Update 28.5 |September 2026|Application Build 28.4.53241, Platform Build 28.0.53152|
 |[5123580](https://support.microsoft.com/help/5123580)|Update 28.4 |August 2026|Application Build 28.4.53241, Platform Build 28.0.53152|

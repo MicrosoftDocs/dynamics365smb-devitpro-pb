@@ -2,7 +2,7 @@
 title: Install a Business Central 2026 release wave 2 (version 29) Update
 description: This article describes the tasks required for getting the monthly version 29 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 09/23/2026
+ms.date: 11/02/2026
 ms.reviewer: jswymer
 ms.topic: install-set-up-deploy
 ms.author: jswymer
@@ -38,7 +38,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Application extension
 
-    The Application extension logically encapsulates all of the extensions that make up a solution. For example, it includes version `28.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for non-Microsoft extensions. Learn more in [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    The Application extension logically encapsulates all of the extensions that make up a solution. For example, it includes version `29.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for non-Microsoft extensions. Learn more in [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
 - Customization extensions
 
@@ -91,7 +91,7 @@ $CustomerLicense= "The file path and name of the customer license"
 
 First, download the update package that matches your Business Central solution.
 
-1. Go to the [list of available updates](../deployment/update-versions-28.md) for your on-premises version of Business Central. Then, choose the update that you want.
+1. Go to the [list of available updates](../deployment/update-versions-29.md) for your on-premises version of Business Central. Then, choose the update that you want.
 2. From the update page, under the **Resolution** section, select the link for downloading the update, and follow the instructions.
 3. On the computer where you downloaded the update .zip file, extract all the files to a selected location.
 
@@ -218,7 +218,7 @@ To ensure that the existing published extensions work on the new platform, recom
 
     ```powershell
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (28-0)
+    DatabaseName        : Demo Database BC (29-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
