@@ -1,11 +1,12 @@
 ---
-title: Integration overview for Business Central 
-description: Find links to information about the ways you can integrate Business Central to products and services.
+title: Integration Overview for Business Central
+description: Explore Business Central integration patterns, including REST APIs, Microsoft Fabric mirroring, and built-in connections to other products and services.
 author: kennienp
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
-ms.date: 10/19/2025
+ms.date: 10/28/2026
+ai-usage: ai-assisted
 ---
 
 # Integration overview for Business Central (for architects and developers)
@@ -19,9 +20,11 @@ The article describes integration patterns, integration scenarios, and integrati
 > [!NOTE]
 > Some integrations require a separate subscription or license. Please consult the documentation for that subscription for requirements and details.
 
-## Integrations to/from Business Central are done with web services
+## Choose between web services and built-in integrations
 
-Most integrations (except for a few built-in integrations) to and from [!INCLUDE[prod_short](../includes/prod_short.md)] are done using web services. [!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData. 
+Most integrations to and from [!INCLUDE[prod_short](../includes/prod_short.md)] use web services. Built-in integrations can provide a managed alternative for specific scenarios. For example, Microsoft Fabric data mirroring replicates selected data for analytics without requiring you to build a table-by-table API extraction pipeline.
+
+[!INCLUDE[prod_short](../includes/prod_short.md)] supports three types of web services: REST API, SOAP, and OData.
 
 :::image type="content" source="media/webservice-stack.svg" alt-text="Shows the three different types of web services in Business Central" lightbox="media/webservice-stack.svg":::
 
@@ -31,7 +34,7 @@ Learn more in [Web services overview](../webservices/web-services.md).
 
 ## How to explore and develop against Business Central REST APIs
 
-When you need to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] from another application, you should use REST APIs, either the built-in APIs or custom APIs.
+For request-response integrations with [!INCLUDE[prod_short](../includes/prod_short.md)], use REST APIs, either built-in or custom. If your goal is to replicate data to Fabric for analytics, consider the [built-in mirroring integration](#built-in-mirror-business-central-data-to-microsoft-fabric).
 
 [![Shows the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
 
@@ -71,6 +74,22 @@ Learn more in [Integrating Business Central with Microsoft 365](m365-integration
 - Copilot Studio
 
 Learn more in [Integrating Business Central with Power Platform](../powerplatform/powerplatform-integration-overview.md).
+
+## Built-in: Mirror Business Central data to Microsoft Fabric
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+
+The Microsoft Fabric Mirroring (Preview) app provides a managed connection from [!INCLUDE[prod_short](../includes/prod_short.md)] online to an open mirrored database in Microsoft Fabric. An administrator selects the companies and tables to synchronize. The integration supports an initial snapshot and ongoing changes to OneLake in Delta Parquet format.
+
+Use this integration for analytics and data engineering scenarios that need data from one or more Business Central companies. You can monitor synchronization in the Business Central client, through the Fabric Export APIs, or from Fabric.
+
+The app supports up to 1,000 selected tables across manual selections and configuration packages. The lookup excludes tables that aren't eligible for export.
+
+Connection setup and synchronization run asynchronously. **Connect to Fabric** prepares the connection; **Start synchronization** requests continuous export. The APIs manage configuration and expose operational results rather than exposing the selected business data as API entities.
+
+Data mirroring is a preview. Check the app's compatibility requirements and [setup prerequisites](/dynamics365/business-central/admin-set-up-fabric-mirroring#prerequisites) for your environment. Learn more in [Data mirroring to Microsoft Fabric from Business Central](/dynamics365/business-central/admin-fabric) and [Microsoft Fabric Export APIs](devenv-fabric-export-apis.md).
 
 ## Built-in: Integrating Business Central with Dataverse
 

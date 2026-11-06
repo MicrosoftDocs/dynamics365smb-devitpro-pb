@@ -2035,6 +2035,16 @@
 #### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 #### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
+<!-- Microsoft Fabric -->
+## Integrating with Microsoft Fabric
+### [Overview](/dynamics365/business-central/admin-fabric?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### Administrator
+#### [Set up Fabric Export](/dynamics365/business-central/admin-set-up-fabric-mirroring?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Manage Fabric synchronization](/dynamics365/business-central/admin-manage-fabric-export?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Monitor and troubleshoot synchronization](/dynamics365/business-central/admin-monitor-fabric-export?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### Developer
+#### [Extract data from Business Central](developer/devenv-extract-data.md)
+<!-- end Microsoft Fabric -->
 <!-- Microsoft Copilot Studio -->
 ### Integrating with Microsoft Copilot Studio
 #### [Create agents that connect to Business Central](ai/create-agent-in-copilot-studio.md)
