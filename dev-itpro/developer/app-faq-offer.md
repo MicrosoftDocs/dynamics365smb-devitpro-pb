@@ -31,7 +31,7 @@ No. If you don't change your app in a submission, we skip technical validation.
 
 ## Related information
 
-[FAQ about Updating your Business Central App](app-faq-update.md)  
+[FAQ about updating your Business Central app](app-faq-update.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  
 [Update Lifecycle for Marketplace Apps FAQ](devenv-update-app-life-cycle-faq.md)  
 [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  

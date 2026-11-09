@@ -1,84 +1,83 @@
 ---
-title: "Designing Profiles"
-description: "Gives an overview of profiles and page customizations."
+title: Designing Profiles in Business Central
+description: Learn how to use AL profiles, profile extensions, and page customizations to tailor Business Central pages to user roles and translate profile text.
 author: jswymer
-ms.date: 04/01/2021
+ms.date: 11/05/2026
 ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
-# Designing Profiles
+# Designing profiles
 
-A profile is the mechanism that makes a Role Center page and its associated pages and reports available to users in the client. It enables you to build an individual experience for users based on their role in the company by customizing the pages that they use to perform the daily tasks. In the client, profiles are referred to as **Roles**. When users sign in to [!INCLUDE[prod_short](includes/prod_short.md)], they are doing so under a specific role. Users can switch the role from the **My Settings** page.
+A *profile* makes a role center page and its associated pages and reports available to users in the client. Use profiles to tailor [!INCLUDE[prod_short](includes/prod_short.md)] pages to the daily tasks of a role in the company. In the client, profiles are referred to as roles. Users can switch their **Role** on the **My Settings** page.
 
 Creating profiles in AL involves three different object types: [profile object](devenv-profile-object.md), [profile extension object](devenv-profile-ext-object.md), and [page customization object](devenv-page-customization-object.md).
 
 ## Profile objects
 
-A profile object specifies an ID for the profile, a display name that appears in the client, a role center page, and the page customization objects that apply to the profile. Different profiles can use the same Role Center page.
+A profile object specifies an ID for the profile, a display name that appears in the client, a role center page, and the page customization objects that apply to the profile. Different profiles can use the same role center page.
 
 ## Profile extension objects
 
-A profile extension object is used to override properties of a profile object defined in another AL extension, such as its caption or role center page, and can define additional page customization objects to apply to the profile.
+A profile extension object overrides properties of a profile object defined in another AL extension, such as its caption or role center page. It can also define additional page customization objects to apply to the profile.
 
 ## Page customization object
 
-A page customization object specifies layout and action modifications to a specific page object. For example, you can move actions, fields, columns on list, or entire parts. The modifications apply only to the profile that they are used with. The page customizations will be seen by all users of the profile.
+A page customization object specifies layout and action modifications to a specific page object. For example, you can move actions, fields, columns on a list, or entire parts. The modifications apply to all users of the profiles that use the customization.
 
 To make the modifications, you use [placement keywords](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) in the `layout` and `actions` sections.
 
-The same page customization objects can be used in different profile objects. A profile object does not necessarily use any page customization objects, but a page customization has no effect without being associated with a profile object.
+The same page customization objects can be used in different profile objects. A profile object doesn't have to use page customization objects, but a page customization has no effect without being associated with a profile.
 
-## Example
+## Profile and page customization example
 
-The following example creates a profile object that uses the `Business Manager` role center page. It uses two page customization objects; one that modifies the **Business Manager Role Center** page and another that modifies the **Customer List** page. 
+The following example creates a profile object that uses the `"Business Manager Role Center"` page. It uses two page customization objects. One hides the **Customers** action on the role center. The other moves the **Balance (LCY)** column after **Phone No.** on the **Customer List** page.
 
-```AL
+```al
+using Microsoft.Finance.RoleCenters;
+using Microsoft.Sales.Customer;
+
 profile TheBoss
 {
-    Description = 'This is the profile for the Boss';
-    RoleCenter = "Business Manager";
+    ProfileDescription = 'The Boss';
+    RoleCenter = "Business Manager Role Center";
     Customizations = BusinessManagerCust, CustomerListCust;
     Caption = 'Boss';
 }
 
 pagecustomization BusinessManagerCust customizes "Business Manager Role Center"
 {
-  actions
-  {
-    // Hides the Customers action
-    modify(Customers)
+    actions
     {
-      Visible = false;
+        modify(Customers)
+        {
+            Visible = false;
+        }
     }
-  }
 }
 
 pagecustomization CustomerListCust customizes "Customer List"
 {
     layout
     {
-      {
-        // Moves the Balance (LCY) column after the Phone No. column
-        moveafter("Phone No.";"Balance (LCY)")
-      }
+        moveafter("Phone No."; "Balance (LCY)")
     }
 }
 ```
 
 ## Using the client to create AL profiles, profile extensions, and page customizations
 
-Creating profiles, profile extensions, and page customizations can also be done from the client. This will typically be done by administrators or consultants to create new profiles or fine-tune the page customizations that are provided by extensions. However, as a developer, you can also leverage the client to make profiles, profile extensions, and page customizations in AL extensions. For more information, see [Using the Client to Create Profiles and Page Customizations](devenv-design-profiles-using-client.md).
+Administrators and consultants can create profiles or fine-tune page customizations in the client. As a developer, you can export these changes for use in AL extensions. Learn more in [Using the client to create profiles and page customizations](devenv-design-profiles-using-client.md).
 
 ## Translating profiles
 
-A profile's `Caption` and `ProfileDescription` properties appear in the client user-interface, so you will typically want to translate these into different languages. Like other objects, this is done by creating XLIFF files for the different languages from the source language. The generated XLIFF file contains a `<source>` tag for both the `Caption` and `ProfileDescription` to which you can add a `<target>` tag for the translated text. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
+A profile's `Caption` and `ProfileDescription` properties appear in the client user interface. To translate them, generate an XLIFF file and add a translation for each target language. The generated file contains a `<source>` element for each property. Add a `<target>` element with the translated text. Learn more in [Working with translation files](devenv-work-with-translation-files.md).
 
-For example, the following code is the content of an XLIFF file for translating the example profile mentioned above from its source language, en-US, to the target language da-DK.
+The following XLIFF example translates the profile from en-US to da-DK. Keep the translation-unit IDs from the file generated for your extension.
 
 ```xml
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="da-DK" original="profiles">
     <body>
       <group id="body">
@@ -93,6 +92,7 @@ For example, the following code is the content of an XLIFF file for translating 
           <target>Chef</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Profile TheBoss - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>
@@ -100,8 +100,9 @@ For example, the following code is the content of an XLIFF file for translating 
 ```
 
 ## Related information
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Object](devenv-page-object.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Page Extension Properties](properties/devenv-page-property-overview.md)   
+
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Page object](devenv-page-object.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Page extension properties](properties/devenv-page-property-overview.md)  
