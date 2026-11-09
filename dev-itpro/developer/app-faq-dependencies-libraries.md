@@ -40,6 +40,6 @@ Library apps only get validated technically, but don't go through any type of ma
 ## Related information
 
 [FAQ about Managing and Submitting your Business Central Offer](app-faq-offer.md)  
-[FAQ about Updating your Business Central App](app-faq-update.md)  
+[FAQ about updating your Business Central app](app-faq-update.md)  
 [Update Lifecycle for Marketplace Apps FAQ](devenv-update-app-life-cycle-faq.md)  
 [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  

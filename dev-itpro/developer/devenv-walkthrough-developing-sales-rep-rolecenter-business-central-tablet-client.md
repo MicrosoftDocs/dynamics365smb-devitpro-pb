@@ -1,60 +1,75 @@
 ---
 title: "Develop a Sales Rep Role Center for the Tablet Client"
-description: "Create a Role Center for the Business Central Tablet client for a sales representative."
+description: "Build a sales representative's role center for the Business Central tablet client with existing page parts, quote actions, and profile setup."
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ---
 
-# Develop a Sales Rep Role Center for the Tablet Client
+# Develop a sales rep role center for the tablet client
 
-In this example, you will learn how to create a new Role Center for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)]. Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] occurs in the [!INCLUDE[d365_dev_long](includes/d365_dev_long_md.md)] and is not much different from developing for one of the other [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] clients. This example will concentrate on how to build a Role Center for a sales representative, which links to already existing page objects, but combined in a way so that it works well on the tablet.  
+Create a sales representative role center for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] by combining existing page parts and actions. Use the [!INCLUDE[d365_dev_long](includes/d365_dev_long_md.md)] to develop the page, just as you would for other [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] clients. Check the parts against your target version and test the layout in the tablet client.
 
-## About this example 
- This example illustrates the following tasks:  
+This example targets Business Central 2026 release wave 2, version 29. Verify the referenced pages and client requirements if you use another version.
 
--   Creating a Role Center page  
--   Adding existing pages to the Role Center
--   Adding actions to pages from the Role Center
--   Testing the Role Center page
+## About this example
+ This example illustrates the following tasks:
 
-## Prerequisites  
- To complete this example, you will need:  
+-   Creating a role center page
+-   Adding existing pages to the role center
+-   Adding role center actions that open existing pages
+-   Testing the role center page
 
--   [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] installed with a developer license  
--   [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)]  
--   [!INCLUDE[demolong](includes/demolong_md.md)]  
--   A supported browser. For more information, see [System Requirements for Dynamics 365 Business Central 2020 Release Wave 1](../deployment/system-requirement-business-central-v16.md)  
+## Prerequisites
+To complete this example, you need:
 
-## Story  
-Simon is a partner developer working for CRONUS International Ltd. Nancy is a Sales Representative at Contoso Consulting. Simon has to build a new Role Center to support Nancy's job. When at work, Nancy spends some time on the road with only their tablet available on customer visits. Nancy needs easy access to KPIs on the front page to filter the customers visited. When at the customer site, Nancy creates sales quotes. Simon wants to build a Role Center that can be used on a tablet and reuse as much code and as many page objects as possible.  
+- Access to a [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] development environment with the Base Application and permissions to publish and install your extension. For an on-premises environment, meet its licensing requirements.
+- Access to the web client. For an on-premises deployment, configure the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] before testing.
+- A test company with sample customers, items, and sales data, such as a [!INCLUDE[demolong](includes/demolong_md.md)].
+- A browser supported by your target version. Learn more about version 29 in [System requirements for Business Central 2026 release wave 2](../deployment/system-requirements-business-central-v29.md).
 
-The following code illustrates how Simon implements the Role Center.
+## Story
+Simon is a partner developer working for CRONUS International Ltd. Nancy is a sales representative at Contoso Consulting. Nancy uses a tablet during customer visits and needs easy access to sales KPIs and frequently used customers. Nancy also creates sales quotes at customer sites. Simon wants to reuse existing page objects to build a tablet role center. The example displays activities and the current user's favorite customers. Filtering customers by visit status requires additional functionality.
+
+The following code illustrates the parts and page-opening actions. It uses `Help And Chart Wrapper` in place of the historical `Generic Chart` page and opens new sales quotes in create mode.
 
 ```AL
+namespace Contoso.Sales;
+
+using Microsoft.Finance.FinancialReports;
+using Microsoft.Inventory.Item;
+using Microsoft.Sales.Customer;
+using Microsoft.Sales.Document;
+using System.Environment;
+
 page 50106 "Sales Rep Role Center"
 {
     PageType = RoleCenter;
+    Caption = 'Sales Rep Role Center';
 
     layout
     {
-        // Add already existing pages to help Nancy access activities, customers, and charts to the Role Center.
+        // Add already existing pages to help Nancy access activities, customers, and charts to the role center.
         area(RoleCenter)
         {
             part("O365 Activities"; "O365 Activities")
             {
+                ApplicationArea = All;
             }
 
             part("My Customers"; "My Customers")
             {
+                ApplicationArea = All;
             }
 
-            part("Generic Chart"; "Generic Chart")
+            part("Generic Chart"; "Help And Chart Wrapper")
             {
+                ApplicationArea = All;
             }
 
             part("Trial Balance"; "Trial Balance")
             {
+                ApplicationArea = All;
             }
         }
     }
@@ -66,42 +81,53 @@ page 50106 "Sales Rep Role Center"
         {
             action("Sales Quote")
             {
+                ApplicationArea = All;
                 Caption = 'New';
                 RunObject = Page "Sales Quote";
+                RunPageMode = Create;
                 Image = Quote;
-                Promoted = true;
+                ToolTip = 'Create a new sales quote.';
             }
 
             action("Customer List")
             {
+                ApplicationArea = All;
                 Caption = 'Customers';
                 RunObject = Page "Customer List";
-                Promoted = true;
-                //  Sales Quote as an action item available from the action pane in the New group
-                PromotedCategory = New;
+                ToolTip = 'Open the customer list.';
             }
 
             action("Item List")
             {
+                ApplicationArea = All;
                 Caption = 'Items';
                 RunObject = Page "Item List";
-                Promoted = true;
-                PromotedCategory = New;
+                ToolTip = 'Open the item list.';
             }
         }
     }
 }
-```  
+```
 
-For more information about the specifics of Role Center structure and design, see [Designing Role Centers](devenv-designing-role-centers.md).
+Learn more about role center structure and design in [Designing role centers](devenv-designing-role-centers.md).
 
-Simon now wants to test the Sales Rep Role Center that was created, and uses a browser window for testing purposes. Simon enters a URL that specifically opens the page 50006 from tablet.aspx. The URL now resembles this: *https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?page=50006*. For more information, see [Opening the Business Central Tablet or Phone Client from a Browser](devenv-Opening-Business-Central-Tablet-or-Phone-Client-from-Browser.md).  
+Build the extension, then publish and install it in your development environment. The testing user needs permission to open its pages and access the underlying data.
 
-## Next steps  
-Nancy now has a Role Center that gives access to most of the information needed when on the road. The next step for Simon is to refine the Sales Rep Role Center by adding more functionality, for example, the ability to retrieve more lists or making sure that Nancy can smoothly continue to work back at the office on the desktop computer.  
+For an on-premises environment, open page `50106` with your configured web client URL. For example:
 
-## Related information  
- [Designing for Different Screen Sizes on Tablet and Phone](devenv-Designing-Different-Screen-Sizes-Tablet-and-Phone.md)   
- [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Mobile-App.md)   
- [Designing Role Centers](devenv-designing-role-centers.md)  
- [Role Center Behaviors](devenv-role-center-behaviors.md)   
+```text
+https://<WebClientHost>:<Port>/<WebServerInstance>/Tablet?page=50106
+```
+
+Replace the host, port, and instance path with your environment's values. Legacy `tablet.aspx` URLs redirect to the tablet route. Learn more in [Opening the Business Central tablet or phone client from a browser](devenv-Opening-Business-Central-Tablet-or-Phone-Client-from-Browser.md).
+
+## Next steps
+The preview brings together activities, favorite customers, financial information, and page-opening actions. To make this Nancy's normal workspace, associate the role center with a profile, select that profile for Nancy, and verify Nancy's permissions. Learn more in [Designing profiles](devenv-design-profiles.md).
+
+Simon can then add more list links and test the desktop layout so that Nancy can also use the role center back at the office.
+
+## Related information
+[Designing for different screen sizes on tablet and phone](devenv-Designing-Different-Screen-Sizes-Tablet-and-Phone.md)  
+[Differences and limitations when developing pages for the Business Central mobile app](devenv-Differences-and-Limitations-Developing-Pages-business-central-Mobile-App.md)  
+[Designing role centers](devenv-designing-role-centers.md)  
+[Role center behaviors](devenv-role-center-behaviors.md)  

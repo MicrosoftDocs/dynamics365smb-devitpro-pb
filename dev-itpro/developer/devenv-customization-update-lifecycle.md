@@ -1,46 +1,49 @@
 ---
 title: "Update Lifecycle for Tenant Customizations"
-description: "Overview of the process of ensuring extension compatibility with update versions"
+description: Learn how to keep per-tenant extensions compatible with Business Central online updates, receive validation notifications, and resolve update failures.
 author: jaredha
 
 ms.topic: reference
 ms.author: jaredha
-ms.date: 04/01/2021
+ms.date: 11/05/2026
 ms.reviewer: jswymer
 ---
 
-# Update Lifecycle for Customizations of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
+# Update lifecycle for customizations of Business Central online
 
-When you create a tenant-specific customization, or an extension that is scoped to a single [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment (often referred to as per-tenant extensions), you must take the lifecycle of the extension into consideration. For more information about the extension lifecycle and events that can cause incompatibilities between the extension and base application, see [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md). 
+When you create a *per-tenant extension* for a [!INCLUDE[prod_short](includes/prod_short.md)] online environment, plan how to maintain it as the application changes. Learn more about events that can cause incompatibilities in [The lifecycle of apps and extensions for Business Central](devenv-app-life-cycle.md).
 
-You are responsible for your extension. You own the process of updating the extension and providing upgrade code if the schema changes between versions of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application. When an update is available for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment, all extensions, both Marketplace extensions and tenant customizations, must be compatible with the next version of the base application before the update can be installed on the environment. You are responsible for ensuring that your extensions are compatible with the update version.
+You are responsible for updating your extension and providing upgrade code when schema changes require it. Keep both Marketplace apps and per-tenant extensions compatible with upcoming versions of the base application. Incompatible extensions can cause scheduled environment updates to fail.
 
-In this article, we describe the process for ensuring update compatibility for tenant customizations.
+This article explains how automated validation and notifications help you maintain update compatibility for per-tenant extensions.
 
-## Automated Extension Validation
+## Automated extension validation
 
-An automated service validates all tenant customizations before an update is marked for a scheduled update of an environment. This validation compares the extension's dependencies with the updated version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application to see if any changes caused incompatibilities with the new version.
+During the preview period for a major release, [!INCLUDE[prod_short](includes/prod_short.md)] automatically tests per-tenant extensions running in production for technical incompatibilities with the upcoming release. This validation helps identify changes in the application and its dependencies that affect your extension.
 
-If the validation service discovers any tenant customizations that are not compatible with the update, an email notification is sent to the tenant administrators listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](../administration/tenant-admin-center-notifications.md).
+Technical validation doesn't replace functional and logical testing. Test your extension in a preview sandbox to confirm that business processes still work. Learn more in [Prepare for major updates with preview environments](../administration/preview-environments.md).
+
+If validation detects an incompatible per-tenant extension, an email notification is sent to the recipients configured on the **Notification recipients** page of the [!INCLUDE[prodadmincenter](includes/prodadmincenter.md)]. Learn more in [Managing tenant notifications](../administration/tenant-admin-center-notifications.md).
 
 > [!IMPORTANT]
-> At least one email address must be specified as a notification recipient to receive the update notifications. If you do not specify an email address, you will not be notified of updates and other changes to the tenant.
+> Configure at least one notification recipient to receive email notifications. If no notification recipient is configured, no email is sent.
 
-The email notification provides information on the incompatible extension, detail on which properties must be updated, and steps to bring the extension into compatibility.
+The notification provides details about the incompatible extension and recommended actions. Use these details to identify and fix the compatibility issue.
 
-## Update Failure Notification
+## Update failure notifications
 
-If a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment has an extension that is not compatible with the update version, the update cannot be applied. If an update fails due to an incompatible extension, a notification is sent to the tenant administrators listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
+If a scheduled environment update fails because an extension is incompatible, the configured notification recipients receive failure details and recommended actions.
 
-The notification is similar to that provided by the automated extension validation. It provides information on the incompatible extension, detail on which properties must be updated, and steps to bring the extension into compatibility.
+As with automated validation notifications, use the failure details to update the extension and resolve the incompatibility. Learn more about scheduling and monitoring updates in [Updating environments](../administration/tenant-admin-center-update-management.md).
 
-## Automatic Extension Removal
+## Automatic extension removal
 
-The publisher of an extension must maintain compatibility with the new release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information about automatic removal of incompatible extensions, see [Maintain Marketplace apps and PTEs in Business Central online](app-maintain.md).
+Publishers must maintain compatibility with new releases. During the enforced update period, extensions that prevent an update might be uninstalled automatically so that the update can proceed. Data belonging to these extensions isn't deleted. You can recover the data by installing a compatible version after the update succeeds.
+
+An incompatible extension that blocks a critical security update might be uninstalled within 14 days of that update becoming available. Learn more about the update periods and removal policy in [Maintain Marketplace apps and per-tenant extensions](app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
 ## Related information
 
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  
-[Upgrading Extensions](devenv-upgrading-extensions.md)  
-[Updating Environments](../administration/tenant-admin-center-update-management.md)  
-
+[Upgrading extensions](devenv-upgrading-extensions.md)  
+[Updating environments](../administration/tenant-admin-center-update-management.md)  

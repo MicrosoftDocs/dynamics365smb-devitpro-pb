@@ -1,128 +1,132 @@
 ---
-title: Designing the User Interface
-description: "Provides an overview of the components available when designing a user interface in Business Central"
+title: Designing the User Interface in Business Central
+description: Learn how to design Business Central user interfaces with role centers, pages, actions, views, queries, profiles, and discoverability features.
 author: kennieNP
-ms.date: 04/22/2024
+ms.date: 11/05/2026
 ms.topic: concept-article
 ms.author: kepontop
 ms.reviewer: jswymer
 ---
 
-# Designing the User Interface
+# Designing the user interface
 
-Understanding how Business Central displays a page dependent on its page type is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface. The user interface for [!INCLUDE[prod_short](includes/prod_short.md)] consists of many types of components, such as 
+Choose page types and components that help users complete their tasks in [!INCLUDE[prod_short](includes/prod_short.md)]. Use page properties and layout options to build a clear, efficient user interface. The main components include:
 
-* **Role Centers**. These serve as personalized dashboards tailored to specific user roles. They provide quick access to relevant information, tasks, and reports.
-* **Pages**. Business Central’s interface is organized into pages. These can be list pages, displaying records in a tabular format, or card pages, showing detailed information for a single record. Pages display fields, which represent data elements within records. Users input or view data in these fields.
-* **Actions**. Users can perform actions such as creating, editing, deleting, or posting records. These actions are available through buttons on the pages.
-* **Views**. Views allow users to filter and sort data on pages. They define how records are displayed.
-* **Queries**. Users can analyze data from queries to perform reporting tasks.
-* **Profiles**. Profiles control access rights and permissions for different users or user groups.
+- Role centers are tailored to business roles. They provide quick access to relevant information, tasks, and reports.
+- Pages display data and let users work with it. For example, list pages show collections of records, and card pages show details for one record. Page fields let users enter or view values.
+- Actions let users perform tasks such as creating, editing, deleting, or posting records.
+- Views define filters, sorting, and layouts for data on list pages.
+- Queries let users analyze data for reporting tasks.
+- Profiles define role centers and page customizations for different business roles. Permission sets, not profiles, control access to objects and data.
 
-Apart from the components mentioned above, [!INCLUDE[prod_short](includes/prod_short.md)] also comes with Discoverability features:
-* **Tell Me**. A search feature that helps users find specific pages, actions, or reports by typing keywords.
-* **Role Explorer**. Provides an overview of available roles and their associated tasks.
+[!INCLUDE[prod_short](includes/prod_short.md)] also provides discoverability features:
 
-As a developer, mastering the different user interface components enhances efficiency and productivity for the users of your [!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions. This overview article explains each topic on a high level and provides links for learning more.
+- **Tell Me** helps users find pages, actions, and reports by entering keywords.
+- **Role Explorer** helps users explore pages and reports for their current role and other roles configured to appear there.
+
+This overview explains the components and links to guidance for designing them in AL.
+
+## Role centers for business roles
+
+The role center is the user's entry point and home page. You can develop role centers for different profiles, such as business owners, department leads, and information workers.
+
+Design a role center around the user's daily work. Give users quick access to relevant information and pages for completing their tasks.
+
+The following illustration shows the navigation and content areas. Their exact appearance can vary by version and configuration.
+
+:::image type="content" source="media/rolecenter-overview-no-references.png" alt-text="Illustration of the navigation and content areas of a Business Central role center." lightbox="media/rolecenter-overview-no-references.png":::
+
+Learn more in [Designing role centers](devenv-designing-role-centers.md).
 
 
-## Role Centers
+## Pages and page types
 
-The Role Center is the user's entry point and home page for [!INCLUDE[prod_short](includes/prod_short.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have Role Centers that target the different levels within an organization, such business owners, department leads, and information workers. 
-
-Role Centers are based on a user-centric design model. You should design a Role Center to give users quick access to the information that is most important to them in their daily work. Like, displaying information that is pertinent to their role in the company and enabling them to easily navigate to relevant pages for viewing data and doing tasks.
-
-:::image type="content" source="media/rolecenter-overview-no-references.png" alt-text="Shows the overall structure of a role center in Business Central" lightbox="media/rolecenter-overview-no-references.png":::
-
-For more information, see [Designing role centers](devenv-designing-role-centers.md).
-
-
-## Pages
-
-Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface. A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exist: *entity*-oriented (typical for the `Card` page type) and *collection*-oriented (typical for the `List` page type.) 
+A *page type* determines how the client presents a page and its data. Two main patterns are *entity-oriented* pages, such as `Card` pages, and *collection-oriented* pages, such as `List` pages.
 
 |`Card`, `Document`, and `ListPlus`|`List` and `Worksheet`|
 |---------|---------------|
-|![Entity page actions](media/page-layout-entity-actions.png "Entity pages and their actions")|![Collection page actions](media/page-layout-collection-actions.png "Collection pages and their actions")|
-|The **entity-oriented** page types have actions (in top and in action bar) that affect the entity or context given by the title of the page.|The **collection-oriented** page types provide actions in action bar (and on the rows' action menu) that take effect on the selected row(s) in the collection.|
+|:::image type="content" source="media/page-layout-entity-actions.png" alt-text="Diagram showing actions that apply to the current entity on a card or document page.":::|:::image type="content" source="media/page-layout-collection-actions.png" alt-text="Diagram showing actions that apply to selected records on a collection-oriented page.":::|
+|Entity-oriented pages have actions at the top and in the action bar that affect the entity or context identified by the page title.|Collection-oriented pages have actions in the action bar and row menus that affect the selected records.|
 
-For more information, see [Pages overview](devenv-pages-overview.md) and [Page Types and Layouts](devenv-page-types-and-layouts.md).
+Learn more in [Pages overview](devenv-pages-overview.md) and [Page types and layouts](devenv-page-types-and-layouts.md).
 
 
-## Actions
+## Actions on pages
 
 In [!INCLUDE[prod_short](includes/prod_short.md)], actions are displayed at the top of each page, referred to as the action bar. The actions can be displayed in different menus on the action bar to enable users to quickly locate the actions they want to use.
 
-![image text.](media/action-overview.png) 
+The following illustration identifies promoted menus and the action bar. Action placement can differ by version and client.
 
-For more information, see [Actions overview](devenv-actions-overview.md).
+:::image type="content" source="media/action-overview.png" alt-text="Annotated Business Central action bar identifying promoted action menus and other page actions." lightbox="media/action-overview.png":::
 
+Learn more in [Actions overview](devenv-actions-overview.md).
 
-## Views
+## Views on list pages
 
 Views in [!INCLUDE[prod_short](includes/prod_short.md)] are used on list pages to define a different view of the data on a given page. A view offers:
 
 - Filtering on multiple table fields on the source table defined for the page.
-- Sorting of the data on multiple table fields, but only in one direction; either *ascending* or *descending*.
-- Layout changes, modifying page columns, moving them, etc. 
+- Sorting on multiple table fields in one direction, either ascending or descending.
+- Column layout changes, such as showing, hiding, or moving columns. A view can share the page layout or use its own layout.
 
-For more information, see [Designing views](devenv-views.md)
+Learn more in [Designing views](devenv-views.md).
 
 
-## Queries
+## Queries for data analysis
 
-Available from version 23, users can view and analyze query data directly from the [!INCLUDE[prod_short](includes/prod_short.md)] client in analysis mode. The data is analyzed in real time and respects the data security that has been set up for the users. Just like for pages, you can make queries discoverable for users in Tell Me search and in the role explorer under Report and Analysis. 
+Starting in version 23, you can view and analyze query data directly in the client in analysis mode. The data is analyzed in real time and respects your data permissions. You can make normal queries discoverable in **Tell Me** and under **Reports and Analysis** in **Role Explorer** by setting `UsageCategory`. Availability depends on permissions and configuration.
 
 :::image type="content" source="/dynamics365/business-central/media/data-analysis-gl-entries.png" alt-text="Example of how to do data analysis on the G/L entries page." lightbox="/dynamics365/business-central/media/data-analysis-gl-entries.png":::
 
-For more information, see [Query Object](devenv-query-object.md) and [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json).
+Learn more in [Query object](devenv-query-object.md) and [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
 
-## Profiles
+## Profiles and role customization
 
-A profile is the mechanism that makes a Role Center page and its associated pages and reports available to users in the client. It enables you to build an individual experience for users based on their role in the company by customizing the pages that they use to perform the daily tasks. In the client, profiles are referred to as **Roles**. When users sign in to [!INCLUDE[prod_short](includes/prod_short.md)], they are doing so under a specific role. Users can switch the role from the **My Settings** page. 
+A *profile* associates a role center and page customizations with a business role. Users sign in with a selected role and can change their **Role** on the **My Settings** page. Profiles tailor the experience but don't grant permissions.
 
-For more information, see [Designing profiles](devenv-design-profiles.md) and [Customizing for user roles](devenv-role-customization.md).
+Learn more in [Designing profiles](devenv-design-profiles.md) and [Customizing for user roles](devenv-role-customization.md).
 
 
-## Discoverability features 
+## Discoverability features for pages
 
-After you develop a page and before you make it available for users, you must consider *discoverability* for the page, meaning:
+Before you make a page available, consider its *discoverability*:
 
-- How users can discover that the page exists?
-- Ensure that users can find it.
-- Ensure that users know how to use it. 
+- How will users discover that the page exists?
+- How will they find it when needed?
+- How will they learn to use it?
 
-[!INCLUDE[prod_short](includes/prod_short.md)] comes with various features that you can use to make that happen, such as **Tell me** search, actions on role centers and pages, Role explorer, teaching tips, and context-specific help. 
+Use features such as **Tell Me**, actions on role centers and pages, **Role Explorer**, teaching tips, and context-specific help.
 
-![TellMe.](media/tellmeApril19.png)
+The following illustration shows how Tell Me groups search results. The available results and categories depend on configuration and version.
 
-For more information, see [Page discoverability overview](devenv-page-discoverability.md).
+:::image type="content" source="media/tellmeApril19.png" alt-text="Tell Me search results grouped into current-page actions, pages, reports, and documentation." lightbox="media/tellmeApril19.png":::
 
+Learn more in [Page discoverability overview](devenv-page-discoverability.md).
 
 ## Develop once, render on multiple client types
 
-[!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions can run on many types of devices such as browsers, tablets, desktops, phones, and more. With a huge number of device targets and screen sizes across the device ecosystem, rather than optimizing your UI for each device, when designing the user interface in AL, you don't have to think about screen sizes - the different [!INCLUDE[prod_short](includes/prod_short.md)] clients (browser, mobile, or desktop app) are responsive to screen sizes and device types. 
+[!INCLUDE[prod_short](includes/prod_short.md)] extensions use the same AL page definitions across web, desktop, tablet, and phone clients. The clients adapt layouts to screen size and device type. Design for the capabilities and constraints of the target clients, and test important tasks on those clients.
 
-If you design for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)], you must make sure that scenarios are simple enough to be meaningful and usable. The tablet and phone designs are meant for lighter tasks and are useful, for example, for traveling salespeople or service technicians who need a portable, online, easy-to-use app that provides an overview, for example, of daily tasks and items in stock. For more information, see [Developing for the Dynamics 365 Business Central Mobile App](devenv-introducing-business-central-mobile-app.md).
+Keep phone and tablet scenarios simple and usable. These clients suit lighter tasks, such as checking daily work or stock availability while traveling. Salespeople and service technicians can use them to get an overview away from the office. Learn more in [Developing for the Dynamics 365 Business Central mobile app](devenv-introducing-business-central-mobile-app.md).
 
-If you want to test how your app/extension renders on the mobile app or the desktop app, then please visit these articles to learn more
+To install clients for testing, see:
+
 - [Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json).
-- [Get Business Central Desktop App](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)
+- [Get Business Central desktop app](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
 ## Related information
 
 [Designing role centers](devenv-designing-role-centers.md)  
-[Pages overview](devenv-pages-overview.md)   
-[Page Types and Layouts](devenv-page-types-and-layouts.md)  
-[Actions overview](devenv-actions-overview.md)   
-[Query Object](devenv-query-object.md)   
+[Pages overview](devenv-pages-overview.md)  
+[Page types and layouts](devenv-page-types-and-layouts.md)  
+[Actions overview](devenv-actions-overview.md)  
+[Query object](devenv-query-object.md)  
 [Analyze data on lists and queries](/dynamics365/business-central/analysis-mode?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-[Designing views](devenv-views.md)   
+[Designing views](devenv-views.md)  
 [Designing profiles](devenv-design-profiles.md)  
 [Customizing for user roles](devenv-role-customization.md)  
-[Page discoverability overview](devenv-page-discoverability.md)   
-[Developing for the Dynamics 365 Business Central Mobile App](devenv-introducing-business-central-mobile-app.md)   
+[Page discoverability overview](devenv-page-discoverability.md)  
+[Developing for the Dynamics 365 Business Central mobile app](devenv-introducing-business-central-mobile-app.md)  
 [Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-[Get Business Central Desktop App](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)  
-
+[Get Business Central desktop app](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)  
