@@ -1,8 +1,8 @@
 ---
-title: Using the client to create profiles
-description: Gives an overview of how to create profiles by using the client together with Visual Studio Code.
+title: Using the Client to Create Profiles
+description: Learn how to create, export, modify, and import Business Central profiles and page customizations by using the client and Visual Studio Code.
 author: jswymer
-ms.date: 09/30/2024
+ms.date: 11/03/2026
 ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -12,20 +12,20 @@ ms.reviewer: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-Besides creating profiles, profile extensions, and page customizations by writing AL code, you can use the client. The client is a useful alternative, because you work with the user interface just as the users would. This method is especially advantageous for consultants, application administrators, and less technical users.
+You can create profiles, profile extensions, and page customizations in the client instead of writing AL code. Use the Business Central web client to customize pages and export or import profile packages. Working directly with the user interface is useful for consultants, application administrators, and users who don't develop AL extensions.
 
-## Overview
+## Create and reuse profiles
 
-For detailed instructions on how to use the client to create and modify profiles, see the following articles in the Business Central application help:
+For instructions on creating profiles and customizing their pages, see:
 
 - [Create profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile)
-- [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
+- [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage)
 
-A consequence of using the client is that profile changes apply only to the tenant. Extension-based profiles and customizations, by contrast, are available for all tenants. However, the client lets you export user-created profiles and page customizations from a tenant, then import them on another tenant.
+Profiles and page customizations that you create in the client apply in the current environment. You can export them and import them into another environment, including an environment in another tenant. Profiles delivered in an extension are available where that extension is installed.
 
-Profiles created in the client are marked as **\(User-created\)** profiles. The export and import functionality lets you:
+Profiles that you create in the client are marked as **(User-created)** in the **Source** field. Export and import let you:
 
-- Backup profiles, profile extensions, and page customizations locally.
+- Back up profiles, profile extensions, and page customizations locally.
 - Make further changes to profiles, profile extensions, and page customizations away from the production environment.
 - Replicate profiles, profile extensions, and page customizations on other environments and tenants.
 - Preview changes in sandbox environments before going into production.
@@ -48,70 +48,70 @@ To export user-created profiles and page customizations,  are exported to a *pro
 
 - Make additional modifications before importing to a tenant.
 
-- Use the files as the starting point for extension-based profiles. 
+- Use the files as the starting point for extension-based profiles.
 
     Create an AL project in a Visual Studio Code project. Then, compile them into an extension package that can be published and available to all tenants.
 -->
 
 ## Exporting profiles
 
-When you export profiles, the system exports all user-defined profiles, profile extensions, and page customizations that have been made in the tenant. It doesn't export profiles, profile extensions, and page customizations introduced by extensions.
+When you export profiles, the system exports user-created profiles and customizations in the current environment. This process includes changes that users made to profiles from extensions. It doesn't export the profile definitions and page customizations that extensions deliver.
 
-To export profiles from the client, open the **Profiles (Roles)** page, and select the **Export Profiles** action. A zip file is downloaded to your computer. The file is referred to as a *profile package*.
+Open the **Profiles (Roles)** page and select **Export Profiles**. The client downloads a ZIP file called a *profile package*.
 
-Once you have the profile package, you can import it as-is to another tenant. Or, you extract the files and make more changes to profiles, profile extensions, and page customizations. When you're done, you compress the files into a profile package again and import it on tenants, or deploy them as part of an AL extension.
+Import the package as-is into another environment, or extract the files to make further changes. After editing, compress the files into a profile package again for import. You can also use the AL files in an extension.
 
 > [!NOTE]
-> To export profiles, a user requires read permission to the **Profiles** page and table as a minimum. This capability allows normal users to hand over profiles to others for troubleshooting.
+> To export profiles, you need permission to open the **Profiles (Roles)** page and read the `All Profile` table, along with permissions to run the export. Read access lets you help with troubleshooting without granting permission to import profiles.
 
 ## Importing profiles
 
-Importing profiles lets you add new profiles and page customizations on a tenant or replace existing ones. To import profiles, do the following steps:
+Import profiles to add or replace profiles and page customizations in an environment.
 
 1. Get the profile package that contains the new or modified profiles.
 2. Before you import a package, we recommend that you export the current profiles so you have a copy.
 3. Open the **Profiles (Roles)** page, select the **Import Profiles** action, and follow the instructions to import the profile package.
 
-    You don't have to import all profiles contained in the package. You can select specific profiles. 
+You don't have to import every profile in the package. You can select specific profiles.
 
-When you replace a profile, signed-in users of the profile may be interrupted briefly.
+When you replace a profile, signed-in users who use that profile might be interrupted.
 
 > [!IMPORTANT]
-> To import profiles, you must be assigned the **SUPER** or **D365 Profile Mgmt** permission set.
+> To import profiles, you need permissions to manage profiles and page customizations, such as those included in the **SUPER** or **D365 PROFILE MGT** permission set.
 <!--
 However, you can export user-created profiles and page customizations from the client to files (.al type) that contain the changes as AL code. Once you have the files, you can include them in a Visual Studio Code project and compile them into an extension package that can be published and available to all tenants. To export user-cret profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A .zip file is downloaded to your computer. The zip files contains .al files for the profile and page customizations, plus an app.json and profiles.json file.
 -->
 
 ## Working with the profile package and files
 
-A profile package is a zip file that contains profiles, profile extensions, and page customizations in separate files. These files basically contain AL source code and are grouped in a folder per profile. The following table provides an overview of the file types in a profile package.
+A profile package is a ZIP file with AL source files for profiles, profile extensions, and page customizations. The AL files are grouped in a folder per profile. The exported `app.json` and `profiles.json` files are at the root of the ZIP file.
 
 |File type|Description|
 |----|-----------|
-|app.json|A required configuration file that includes dependencies to the base application and system application. In most cases, you shouldn't modify this file after exporting it. The app.json must be included in the profile package that you import.|
-|profile.json|A required configuration file that specifies information about the profiles in the package. In most cases, you shouldn't modify this file after exporting it. The profile.json must be included in the profile package that you import.|
-|profile file|An AL file for a user-created profile. There's a separate file for each profile. A profile file has the format `<profile ID>.Profile.al`.|
-|profile extension file|An AL file for customizations made to an extension-based profile. These file types have the format `<profile ID>.ProfileExt.al`. |
-|page customization file|An AL file that specifies all customizations made to a page for a specific profile. A page customization file has the format `[page name].PageCust.al`.|
+|`app.json`|A required manifest that records extension dependencies used by the exported objects. Keep it in the package and ensure the required extensions are installed in the destination environment. Keep the exported file unless a dependency change is needed.|
+|`profiles.json`|A required configuration file with information about the profiles in the package. Keep it in the package that you import. Keep the exported file unless a change is needed.|
+|Profile file|An AL file for a user-created profile. Each profile has a separate file with the format `<ProfileId>.Profile.al`.|
+|Profile extension file|An AL file for customizations to an extension-based profile, with the format `<ProfileId>.ProfileExt.al`.|
+|Page customization file|An AL file with the page customizations for a profile, with the format `<PageName>.PageCust.al`.|
 
 The sections that follow explain a bit more about the file types and creating the profile package.
 
 > [!NOTE]
-> This section describes the package structure and file naming for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 (version 25.0) and later.
+> This section describes the package structure and file naming for [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2, version 25.0, and later.
 
 ### Profile files
 
-Each user-created profile is exported to a separate AL file in a dedicated folder. This file contains the `profile` object that defines the profile's ID, name, and Role Center. It also includes references to the page customizations it uses. For example, let's say you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**.  You then customized the Business Manager Role Center itself and the **Customer** list page. The exported profile package would contain a folder named **MYPROFILE** and a file called **MYPROFILE.Profile.al**. This file would include the following code:
+You export each user-created profile to an AL file in a dedicated folder. The `profile` object defines the profile's ID, name, role center, and page customization references. For example, a profile with ID `MyProfile` uses page 9022, **Business Manager Role Center**. You customize that role center and the **Customer List** page. The exported package contains the folder `MYPROFILE` and the file `MYPROFILE.Profile.al`:
 
-```AL
+```al
 profile MyProfile
 {
   CaptionML = ENU='My Profile';
   Enabled = true;
-  ProfileDescriptionML = ENU='This is my sample profiles';
+  ProfileDescriptionML = ENU='This is my sample profile';
   Promoted = true;
   RoleCenter = 9022;
-  Customizations = Configuration1; Configuration2;
+  Customizations = Configuration1, Configuration2;
 }
 ```
 
@@ -121,12 +121,12 @@ The `Customizations` property identifies the page customization objects used by 
 
 Customizations made to extension-based profiles are exported to a profile extension file. This file includes a `profileextension` object that specifies two types of information, depending on the changes:
 
-- Properties that specify metadata like, the CaptionML, ProfileDescriptionML, and RoleCenter. 
-- References to configuration files that define page customizations. 
+- Properties such as `CaptionML`, `ProfileDescriptionML`, and `RoleCenter`.
+- References to objects that define page customizations.
 
-For example, let's say you changed the description and customized the **Customer List** page for the **Business Manager** profile that is provided by the Base Application extension. The profile package would then contain a folder named **BUSINESS MANAGER** and the file **BUSINESS MANAGER.ProfileExt.al**. This file will contain code similar to the following code:
+For example, you change the description and customize the **Customer List** page for the **Business Manager** profile from the Base Application extension. The package includes the `BUSINESS MANAGER` folder and the `BUSINESS MANAGER.ProfileExt.al` file with code similar to:
 
-```AL
+```al
 profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 {
   CaptionML = ENU='Business Manager';
@@ -138,7 +138,7 @@ profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 }
 ```
 
-`Configuration3` is a reference to a page customization file for the **Customer List** page. For more information, see the next section.
+`Configuration3` references the page customization for **Customer List**, which the next section shows.
 
 <!--And:
 
@@ -161,17 +161,19 @@ pagecustomization Configuration3 customizes "Customer List"
 
 ### Page customization files
 
-Page customizations made to user-created profiles and extension-based profiles are exported to AL files that include a `pagecustomization` object. This object defines each modification to the page. Referring to the examples above, the zip file would include three files in two different folders:
+Export page customizations for user-created and extension-based profiles as AL `pagecustomization` objects. For the preceding examples, the ZIP file includes three files in two folders:
 
-- **MYPROFILE\Business Manager Role Center.PageCust.al**
-- **MYPROFILE\Customer List.PageCust.al**
-- **BUSINESS MANAGER\Customer List.PageCust.al**
+- `MYPROFILE\Business Manager Role Center.PageCust.al`
+- `MYPROFILE\Customer List.PageCust.al`
+- `BUSINESS MANAGER\Customer List.PageCust.al`
 
 The files would include code similar to the following code:
 
-##### MYPROFILE\Business Manager Role Center.PageCust.al
+#### Role center customization for MYPROFILE
 
-```AL
+File: `MYPROFILE\Business Manager Role Center.PageCust.al`.
+
+```al
 pagecustomization Configuration1 customizes "Business Manager Role Center"
 {
   layout
@@ -184,9 +186,11 @@ pagecustomization Configuration1 customizes "Business Manager Role Center"
 }
 ```
 
-##### MYPROFILE\Customer List.PageCust.al
+#### Customer List customization for MYPROFILE
 
-```AL
+File: `MYPROFILE\Customer List.PageCust.al`.
+
+```al
 pagecustomization Configuration2 customizes "Customer List"
 {
   layout
@@ -199,9 +203,11 @@ pagecustomization Configuration2 customizes "Customer List"
 }
 ```
 
-##### BUSINESS MANAGER\Customer List.PageCust.al
+#### Customer List customization for BUSINESS MANAGER
 
-```AL
+File: `BUSINESS MANAGER\Customer List.PageCust.al`.
+
+```al
 pagecustomization Configuration3 customizes "Customer List"
 {
   layout
@@ -246,9 +252,9 @@ pagecustomization Configuration3 customizes "Customer List"
 
 ### Creating a profile package for import
 
-After you make modifications to exported profiles, profile extensions, and page customizations, you'll have to create the profile package before you can import the changes.
+After you edit the exported AL files, create a profile package to import the changes.
 
-The profile package doesn't have to contain the same files that were originally exported. But it must contain the app.json and profile.json files. Otherwise, you can't import the package. To create the profile package, just compress the files into a zip folder.  
+Include `app.json`, `profiles.json`, and the AL files required by the profiles that you want to import. You don't have to include every profile from the original export. Compress the files into a ZIP file.
 
 ## Related information
 
@@ -256,4 +262,4 @@ The profile package doesn't have to contain the same files that were originally 
 [AL development environment](devenv-reference-overview.md)  
 [Page object](devenv-page-object.md)  
 [Page extension object](devenv-page-ext-object.md)  
-[Page extension properties](properties/devenv-page-property-overview.md)   
+[Page extension properties](properties/devenv-page-property-overview.md)  

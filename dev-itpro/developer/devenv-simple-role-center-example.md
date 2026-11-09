@@ -1,22 +1,24 @@
 ---
 title: Simple Role Center Code Example in AL
-description: Learn from a complete AL code example that builds a simple Role Center page and a profile that assigns the Role Center to users in Business Central.
+description: Build a simple Business Central role center in AL with headline and cue parts, navigation actions, and a profile that references the page.
 author: SusanneWindfeldPedersen
-ms.date: 08/24/2026
+ms.date: 11/05/2026
 ms.reviewer: jswymer
-ms.topic: concept-article
+ms.topic: how-to
 ms.author: solsen
 ---
 
-# Simple Role Center code example
+# Simple role center code example
 
-The AL code in this article creates a simple Role Center customized for users assigned to a new profile. 
+The AL code in this article creates a simple role center for users assigned to a new profile. Defining the profile doesn't assign users or grant data permissions.
 
-:::image type="content" source="media/sample-role-center.png" alt-text="Role Center page showing a headline, an Invoices cue tile group, and navigation actions." lightbox="media/sample-role-center.png":::
+:::image type="content" source="media/sample-role-center.png" alt-text="Role center page showing a headline, an Invoices cue tile group, and navigation actions." lightbox="media/sample-role-center.png":::
 
-Learn more about Role Centers in [Designing Role Centers](devenv-designing-role-centers.md).
+Learn more about role centers in [Designing role centers](devenv-designing-role-centers.md).
 
-This example uses the **RoleCenterHeadline** page from [Creating a Role Center headline](devenv-create-role-center-headline.md) to display the headline, and the **SalesInvoiceCuePage** page from [Creating cues and action tiles](devenv-cues-action-tiles.md) for the cue and action tile.
+This example uses the `RoleCenterHeadline` page from [Creating a role center headline](devenv-create-role-center-headline.md) and the `SalesInvoiceCuePage` page from [Creating cues and action tiles](devenv-cues-action-tiles.md). Add those objects to the same project. Verify the user's permissions before deploying.
+
+The sales-document entity actions target integration pages. Their navigation behavior needs to suit your users' workflow.
 
 ```al
 page 50125 MyRoleCenter
@@ -37,6 +39,7 @@ page 50125 MyRoleCenter
 
                 part(Part2; SalesInvoiceCuePage)
                 {
+                    ApplicationArea = All;
                     Caption = 'Invoices';
                 }
             }
@@ -108,8 +111,10 @@ page 50125 MyRoleCenter
         {
             action(SeeSalesInvoices)
             {
+                ApplicationArea = All;
                 Caption = 'See Sales Invoices';
                 RunObject = Page "Posted Sales Invoices";
+                ToolTip = 'Open the posted sales invoice list.';
             }
 
         }
@@ -118,10 +123,12 @@ page 50125 MyRoleCenter
         {
             action(AddSalesInvoice)
             {
+                ApplicationArea = All;
                 Caption = 'Add Sales Invoice';
                 Image = NewInvoice;
                 RunObject = Page "Sales Invoice";
                 RunPageMode = Create;
+                ToolTip = 'Create a new sales invoice.';
             }
         }
 
@@ -129,9 +136,11 @@ page 50125 MyRoleCenter
         {
             action(SalesInvoicesReport)
             {
+                ApplicationArea = All;
                 Caption = 'Sales Invoices Report';
                 Image = "Report";
                 RunObject = Report "Standard Sales - Invoice";
+                ToolTip = 'Run the sales invoice report.';
             }
         }
     }
@@ -151,6 +160,6 @@ profile MyProfile
 [AL development environment](devenv-reference-overview.md)  
 [Page extension object](devenv-page-ext-object.md)  
 [Actions overview](devenv-actions-overview.md)  
-[Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell Me](devenv-al-menusuite-functionality.md)  
 [Personalize your workspace](/dynamics365/business-central/ui-personalization-user)  
-[Use Designer](devenv-inclient-designer.md) 
+[Use Designer](devenv-inclient-designer.md)  

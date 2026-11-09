@@ -1,9 +1,9 @@
 ---
 title: Designing Assisted Setup Guides
-description: Learn how to create wizards using the NavigatePage page type in Business Central"
+description: Learn how to build and register assisted setup guides in Business Central with NavigatePage steps, footer actions, and temporary source records.
 ms.custom: bap-template
 ms.date: 10/14/2025
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -11,25 +11,25 @@ ms.reviewer: jswymer
 ---
 # Designing assisted setup guides
 
-In [!INCLUDE[prod_short](includes/prod_short.md)], you use the `NavigatePage` page type to create an assisted setup. An assisted setup, also called a wizard, is a page that consists of one or more user input pages or steps. These steps are linked together, enabling users to carry out infrequently performed tasks, such as configuration or specific business tasks. In the client, the `NavigatePage` page doesn't an action bar. It's designed to have buttons at the bottom that let users move back and forth through the steps by selecting the **Back** and **Next** buttons, until they finish by selecting the **Finish** button.
+In [!INCLUDE[prod_short](includes/prod_short.md)], use the `NavigatePage` page type to create an assisted setup guide. An assisted setup, also called a wizard, is a page with one or more user input steps. Link these steps to help users complete configuration or infrequent business tasks. In the client, the `NavigatePage` page doesn't have an action bar. Buttons at the bottom let users move through the steps with **Back** and **Next**, then complete the guide with **Finish**.
 
-![To-do assisted setup welcome step](media/to-do-assisted-setup-1.png)
+:::image type="content" source="media/to-do-assisted-setup-1.png" alt-text="Screenshot of the welcome step in the sample to-do assisted setup guide.":::
 
-An example in [!INCLUDE[prod_short](includes/prod_short.md)] is the **Company Setup** assisted setup, page 1803.  
+An example in [!INCLUDE[prod_short](includes/prod_short.md)] is the **Company Setup** assisted setup, page 1803.
 
 ## Build the assisted setup
 
-This section describes the basic tasks for creating an assisted setup. It gives you an understanding of the general structure of an assisted setup guide. Knowing this information helps you build assisted setup guides that look and feel like the ones provided by Microsoft. This section includes some basic AL code for the various steps involved in creating an assisted setup guide. For more information about the code and logic, see the [full example](#example) in this article. The example code for reference only, and your implementation might vary.
+This section describes the structure and basic tasks for creating an assisted setup guide. Use the AL snippets to build steps that look and feel like the guides provided by Microsoft. Learn more about the code and logic in the [full example](#example). The snippets illustrate the page structure; your implementation must also handle validation and data persistence.
 
 1. Create a page for the assisted setup, for example:
 
     ```al
     page 50100 ToDoAssistedSetup
     {
-    PageType = NavigatePage;
-    SourceTable = "To-do";
-    SourceTableTemporary = true;
-    Caption = 'Add a To-Do for the Team';
+        PageType = NavigatePage;
+        SourceTable = "To-do";
+        SourceTableTemporary = true;
+        Caption = 'Add a To-Do for the Team';
     }
     ```
 
@@ -39,12 +39,12 @@ This section describes the basic tasks for creating an assisted setup. It gives 
     |-|-|
     |[PageType property](properties/devenv-pagetype-property.md)|Set to `NavigatePage`.|
     |[SourceTable](properties/devenv-sourcetable-property.md)|Set to the name of the table that stores the data for the assisted setup.|
-    |[SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md)|Set to `true`. The reason is because Business Central automatically stores all modifications to database tables as soon as users move focus to another field or close the page. Using a temporary table let's users exit the assisted setup guide at any point, without saving the changes they made so far to the database. Instead, the data modifications are only stored in memory, until code is run to transfer the data to the database.|
+    |[SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md)|Set to `true` to collect the page's source-record changes in temporary records. Explicitly transfer the data to persistent tables when the user finishes. This setting doesn't prevent database writes made by other page logic.|
     |[Caption](properties/devenv-caption-property.md)|Set to the title that you want to show on the top of each step of the assisted guide.|
 
 1. Add the steps that comprise the assisted setup.
 
-   For each step that you want in the guide, add a `group()` control to the root-level of the `layout` >  `area(Content)` control. For example, the following code adds three steps.
+   For each step, add a `group()` control directly inside `area(Content)` in the `layout` section. Define a Boolean visibility variable for each step and an option variable that tracks the active step. Set the visibility variables in AL code so that only the active step appears. For example, the following code defines three steps.
 
     ```al
     layout
@@ -100,25 +100,9 @@ This section describes the basic tasks for creating an assisted setup. It gives 
     end;
     ```
 
-   - The individual `group()` controls define the content to display for the step, like text and data entry fields. For example, use the [Caption](properties/devenv-caption-property.md) and [InstructionalText](properties/devenv-instructionaltext-property.md) properties to add text. Use `field()` controls for source table fields.
-   - The order of the `group()` controls doesn't necessarily determine the order of the steps in the assisted setup. You add AL code to define the logic for when each step appears.
-   - You can include `group()` controls within the root-level `group()` controls. These subgroups can be useful for adjusting the layout fields on a step and adding captions and instructional text.
-
-   Because only one step can be shown at a time, you have to add logic to control when each step is shown. To control the visibility, add the following code:
-
-   - For each step, define a global boolean variable or a step number condition and apply it the group's [Visible](properties/devenv-visible-property.md) property. The example, uses the boolean variables `Step1Visible`, `Step2Visible`, and `Step2Visible`.
-
-     You then have to add AL code to change these variables depending on which step the user is working on.
-   - Define a global option variable that has a value for each step.
-
-     You use this variable in code to track which step is active. 
-
-    > [!NOTE]
-    > Multiline fields shown inside a step are shown without a gray background. This behavior allows you to write a list of items or any formatted text that requires new lines.
-
 1. Add the navigation buttons.
 
-    Assisted setups typically have a **Back**, **Next**, and **Finish** button at the bottom-right of the page. Add each button by using an `action()` control. 
+    Add **Back**, **Next**, and **Finish** buttons by using `action()` controls. Set [InFooterBar](properties/devenv-infooterbar-property.md) to `true`. Bind each action's [Enabled](properties/devenv-enabled-property.md) property to a Boolean variable and update the variables for the active step. Set [Image](properties/devenv-image-property.md) to `PreviousRecord`, `NextRecord`, and `Approve` for **Back**, **Next**, and **Finish**, respectively.
 
     ```al
     actions
@@ -183,14 +167,6 @@ This section describes the basic tasks for creating an assisted setup. It gives 
 
     ```
 
-    - Set the [InFooterBar property](properties/devenv-infooterbar-property.md) for each to `true`.
-
-      If the property isn't set or is `false`, then the actions don't' appear.
-    - Similar to the `Visible` property on the groups, use the [Enabled](properties/devenv-enabled-property.md) property to control when buttons are active on the different steps. For example, **Back** isn't active in the first step, and **Next** isn't active in the last step.
-
-        Like on groups, define global boolean variables for each action, then apply the variable to the action's `Editable` property. The global variables are then controlled in AL code.
-    - To style the buttons to match other assisted setups in the Microsoft base application, set the [Image](properties/devenv-visible-property.md) property to `PreviousRecord` for the back button, `NextRecord` for the next button, and  `Approve` for the finish.
-
 1. Transfer data from the temporary table to the database table. For example:
 
    ```al
@@ -199,23 +175,42 @@ This section describes the basic tasks for creating an assisted setup. It gives 
 
     local procedure StoreRecordVar()
     begin
+        Clear(ToDoRec);
         ToDoRec.TransferFields(Rec, true);
-        ToDoRec.Insert();
+        ToDoRec."No." := '';
+        ToDoRec.Insert(true);
     end;
    ```
 
-   In this example, the `StoreRecordVar` procedure is called from the `Finished` procedure used on the actions.
+   Call `StoreRecordVar` from the `Finished` procedure used on the actions.
+
+> [!NOTE]
+> `Insert(true)` runs the table's insertion trigger to assign a task number. Configure **To-do Nos.** in **Marketing Setup** before using this pattern.
+
+> [!IMPORTANT]
+> The transfer snippet saves only the parent task record. It doesn't save the temporary attendees selected in the subpage or implement task assignment and meeting validation. Before using the example in an extension, complete those steps by following the task-creation flow in the base application's **Create Task** page and `To-do` table.
+
+### Step layout and navigation behavior
+
+The individual `group()` controls define the content for each step, such as text and data entry fields. Use the [Caption](properties/devenv-caption-property.md) and [InstructionalText](properties/devenv-instructionaltext-property.md) properties to add text. Use `field()` controls for source table fields. Nested groups can help arrange fields and add captions and instructional text within a step.
+
+The order of the groups doesn't determine the step sequence. Your AL logic controls which group is visible. Apply a global Boolean variable or a step number condition to each group's [Visible](properties/devenv-visible-property.md) property. The example uses `Step1Visible`, `Step2Visible`, and `Step3Visible`, and a global option variable with one value for each step to track the active step.
+
+In the desktop web client, navigation buttons typically appear at the bottom-right. Their presentation adapts on mobile devices. An action is added to the footer only when `InFooterBar` is `true`. Use the Boolean variables to disable **Back** on the first step and **Next** on the last step. The recommended `Image` values let the client recognize the navigation actions and apply the standard presentation.
+
+> [!NOTE]
+> Read-only multiline fields without captions inherit the step's background. Use them for instructional text with line breaks.
 
 ## Add standard banners
 
-You might notice that most assisted setup guides in the base application, and in this article, include two different banners under the step caption: a gear and a check mark. These banners are based on the following image files in **Media Repository** table:
+Assisted setup guides in the base application, and in this article, can include two banners under the step caption: a gear and a check mark. These banners use the following image files in the `Media Repository` table:
 
-- AssistedSetup-NoText-400px.png for the gear
-- AssistedSetupDone-NoText-400px.png for the check mark.
+- `AssistedSetup-NoText-400px.png` for the gear.
+- `AssistedSetupDone-NoText-400px.png` for the check mark.
 
 You can reuse these images in your custom assisted setup guides to provide a consistent look.
 
-To a display the banners, add two root-level `group()` controls in to the `area(Content)` control, like for the steps. Use  `field()` controls for displaying the gear and check mark images. The following snippets illustrate one way of adding the banners:
+To display the banners, add two root-level `group()` controls to the `area(Content)` control, as you did for the steps. Use `field()` controls to display the gear and check mark images. The following snippet illustrates one way to add the banners:
 
 ```AL
 ...
@@ -278,9 +273,9 @@ end;
 
 ## Add to the Assisted Setup page
 
-Page 1901 "Assisted Setup" of the base application gives users quick access to all assisted setup guides. This section explains how you can add your assisted setup guide to the page.
+Page 1801 **Assisted Setup** in the System Application gives users quick access to registered assisted setup guides. This section explains how to add your guide to the page.
 
-The base application includes several objects that control what items appear in the **Assisted Setup** page. For example, table 1990 "Guided Experience Item" is an internal table that's the source for the **Assisted Setup** page. Codeunit 1990 "Guided Experience" is used to register your assisted setup guide in the **Guided Experience Item** table and run it from the **Assisted Setup** page. The **Guided Experience** codeunit publishes the `OnRegisterAssistedSetup` event that notifies the **Assisted Setup** page to add new items.
+The System Application includes the objects that control which items appear on the **Assisted Setup** page. Table 1990 `Guided Experience Item` is an internal table that stores the registered items. Use codeunit 1990 `Guided Experience` to register your guide and run it from the **Assisted Setup** page. Subscribe to its `OnRegisterAssistedSetup` event and register your guide through the codeunit. The **Assisted Setup** page displays the registered items.
 
 ```al
 [IntegrationEvent(false, false)]
@@ -289,7 +284,7 @@ begin
 end;
 ```
 
-To add an assisted setup guide to the **Assisted Setup** page, add a codeunit that subscribes to the `OnRegisterAssistedSetup` event. The following code illustrates how you can add the **ToDoAssistedSetup** assisted setup guide. The example also creates a new category called **Tasks** on the **Assisted Setup** page, where a link to **ToDoAssistedSetup** is listed:
+To add a guide to the **Assisted Setup** page, subscribe to `OnRegisterAssistedSetup` in a codeunit. The following example registers `ToDoAssistedSetup` in a new **Tasks** category. Call `InsertAssistedSetup` on each registration event so that the framework can refresh the registration and its translations.
 
 ```al
 codeunit 50100 "AddToDoAssistedSetup"
@@ -298,30 +293,26 @@ codeunit 50100 "AddToDoAssistedSetup"
     local procedure OnRegisterAssistedSetup()
     var
         AssistedSetup: Codeunit "Guided Experience";
-        GuidedExperienceType: Enum "Guided Experience Type";
         AssistedSetupGroup: Enum "Assisted Setup Group";
         VideoCategory: Enum "Video Category";
     begin
-        if not AssistedSetup.Exists(GuidedExperienceType::"Assisted Setup",
-                                    ObjectType::Page,
-                                    Page::"ToDoAssistedSetup") then
-            AssistedSetup.InsertAssistedSetup(
-                                             // Link text for the assisted setup guide
-                                             'Add a to-do',
-                                             // Short description, not shown on page 
-                                             'Create a task for your team',
-                                             // Text that shows in Description column
-                                             'Register a task for your team and assign people',
-                                             1,
-                                             ObjectType::Page,
-                                             Page::ToDoAssistedSetup,
-                                             // Assign guide to Task category
-                                             AssistedSetupGroup::Tasks,
-                                             //Video URL not required
-                                             '',
-                                             VideoCategory::Uncategorized,
-                                             //Help URL not required
-                                             '');
+        AssistedSetup.InsertAssistedSetup(
+            // Link text for the assisted setup guide
+            'Add a to-do',
+            // Short description, not shown on the page
+            'Create a task for your team',
+            // Text shown in the Description column
+            'Demonstrate task-entry steps and save a parent task record',
+            1,
+            ObjectType::Page,
+            Page::ToDoAssistedSetup,
+            // Assign the guide to the Tasks category
+            AssistedSetupGroup::Tasks,
+            // Video URL isn't required
+            '',
+            VideoCategory::Uncategorized,
+            // Help URL isn't required
+            '');
     end;
 }
 
@@ -330,19 +321,20 @@ enumextension 50100 MyEnumExtension extends "Assisted Setup Group"
 {
     value(100; Tasks)
     {
+        Caption = 'Tasks';
     }
 }
 ```
 
 ## Example
 
-This code example shows how to use a `NavigatePage` type page to create an assisted setup guide with three steps, as illustrated in the following figures. The assisted setup lets users add entries to a to-do list, which is stored in table **To-do**. The code for the first step includes a part that reuses the page **Attendee Wizard Subform** of the base application. This part allows users, when they first start the setup, to select the salesperson that the to-do is for.
+This example shows the layout and navigation for a three-step `NavigatePage` guide, as illustrated in the following figures. It uses the `To-do` table for task data. The second step includes the base application's **Attendee Wizard Subform** page for attendee selection. The example saves only the parent task record; implement assignment, validation, and attendee persistence before using it as a complete task-creation guide.
 
 |Step 1|Step 2|Step 3|
 |-|-|-
-| [![To-do assisted setup welcome step](media/to-do-assisted-setup-1.png)](media/to-do-assisted-setup-1.png#lightbox)|[![To-do assisted setup fill in step](media/to-do-assisted-setup-2.png)](media/to-do-assisted-setup-2.png#lightbox)|[![To-do assisted setup finish step](media/to-do-assisted-setup-3.png)](media/to-do-assisted-setup-3.png#lightbox)
+|:::image type="content" source="media/to-do-assisted-setup-1.png" alt-text="Screenshot of step one with welcome text and the Next button enabled." lightbox="media/to-do-assisted-setup-1.png":::|:::image type="content" source="media/to-do-assisted-setup-2.png" alt-text="Screenshot of step two with attendee selection and fields for task details." lightbox="media/to-do-assisted-setup-2.png":::|:::image type="content" source="media/to-do-assisted-setup-3.png" alt-text="Screenshot of step three with a completion banner and the Finish button enabled." lightbox="media/to-do-assisted-setup-3.png":::|
 
-### Code
+### Page and registration code
 
 ```al
 page 50111 ToDoAssistedSetup
@@ -389,6 +381,7 @@ page 50111 ToDoAssistedSetup
                     Caption = 'Add attendees and fill in details';
                     part(AttendeeSubForm; "Attendee Wizard Subform")
                     {
+                        ApplicationArea = All;
                     }
                 }
                 field("No."; Rec."No.")
@@ -447,7 +440,6 @@ page 50111 ToDoAssistedSetup
                     ApplicationArea = All;
                     Caption = 'What''s the end time?';
                 }
-                // }
             }
             group(Step3)
             {
@@ -531,20 +523,17 @@ page 50111 ToDoAssistedSetup
 
 
     trigger OnInit()
-    var
-
     begin
-
         EnableControls();
         LoadTopBanners();
     end;
 
     trigger OnOpenPage()
     begin
-        ToDoRec.Get();
-        ToDoRec.Init;
-        Rec := ToDoRec;
-        CurrPage.Update();
+        Clear(Rec);
+        Rec.Init();
+        Rec.Insert(false);
+        CurrPage.Update(false);
     end;
 
     var
@@ -619,6 +608,7 @@ page 50111 ToDoAssistedSetup
 
     local procedure ResetControls()
     begin
+        FinishActionEnabled := false;
         FinishEnable := false;
         BackEnable := true;
         NextEnable := true;
@@ -630,8 +620,10 @@ page 50111 ToDoAssistedSetup
 
     local procedure StoreRecordVar()
     begin
+        Clear(ToDoRec);
         ToDoRec.TransferFields(Rec, true);
-        ToDoRec.Insert();
+        ToDoRec."No." := '';
+        ToDoRec.Insert(true);
     end;
 
     local procedure LoadTopBanners()
@@ -652,24 +644,20 @@ codeunit 50100 "AddToDoAssistedSetup"
     local procedure OnRegisterAssistedSetup()
     var
         AssistedSetup: Codeunit "Guided Experience";
-        GuidedExperienceType: Enum "Guided Experience Type";
         AssistedSetupGroup: Enum "Assisted Setup Group";
         VideoCategory: Enum "Video Category";
     begin
-        if not AssistedSetup.Exists(GuidedExperienceType::"Assisted Setup",
-                                    ObjectType::Page,
-                                    Page::"ToDoAssistedSetup") then
-            AssistedSetup.InsertAssistedSetup(
-                                             'Add a to-do',
-                                             'Create a task for your team',
-                                             'Register a task for your team and assign people',
-                                             1,
-                                             ObjectType::Page,
-                                             Page::ToDoAssistedSetup,
-                                             AssistedSetupGroup::Tasks,
-                                             '',
-                                             VideoCategory::Uncategorized,
-                                             '');
+        AssistedSetup.InsertAssistedSetup(
+            'Add a to-do',
+            'Create a task for your team',
+            'Demonstrate task-entry steps and save a parent task record',
+            1,
+            ObjectType::Page,
+            Page::ToDoAssistedSetup,
+            AssistedSetupGroup::Tasks,
+            '',
+            VideoCategory::Uncategorized,
+            '');
     end;
 }
 
@@ -678,9 +666,14 @@ enumextension 50100 MyEnumExtension extends "Assisted Setup Group"
 {
     value(100; Tasks)
     {
+        Caption = 'Tasks';
     }
 }
 ```
-  
-## Related information  
 
+## Related information
+
+[Page types and layouts](devenv-page-types-and-layouts.md)  
+[Page object](devenv-page-object.md)  
+[Temporary tables](devenv-temporary-tables.md)  
+[InFooterBar property](properties/devenv-infooterbar-property.md)  
