@@ -550,7 +550,7 @@ You typically use the `break` statement in the repeating statements such as `for
 > [!NOTE]  
 > The `break` statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it's run.  
 
-## Example 20
+### Example 20
 
 The following AL code increases the variable `Count` by one for each iteration, and terminates the iteration when `Count` equals 10.  
 
@@ -586,7 +586,7 @@ You typically use the `continue` statement in the repeating statements such as `
 > [!NOTE]  
 > Due to backwards compatibility, the `continue` statement is designed to be backwards compatible with other elements like procedures and variables, which have the same name. For example, if there's a procedure named `Continue` in scope, the statement `continue` will be interpreted as invoking that procedure. This backwards compatibility will be removed in the future, therefore it's recommended to rename any conflicting elements.
 
-## Example 21
+### Example 21
 
 The following AL code increases the variable `Count` by one for each iteration, but skips all numbers divisible by 42. 
 
