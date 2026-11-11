@@ -5,7 +5,8 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
-ms.date: 09/18/2024
+ms.date: 11/11/2026
+ai-usage: ai-assisted
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.collection: get-started
@@ -146,6 +147,56 @@ codeunit 50122 TernaryOperator
         myVar := myExpression ? 'True' : 'False';
     end;
 }
+```
+
+### Result type and implicit conversion
+
+The data type of a ternary expression (`Condition ? TrueExpression : FalseExpression`) is determined by the true expression, even when the condition is false.
+
+If the false expression has a different data type, its value is implicitly converted to the type of the true expression when the false expression is selected. This conversion takes place before the result of the ternary expression is assigned to its destination. Consequently, the type of the destination doesn't affect the type of the ternary expression.
+
+The false expression must have a type that can be implicitly converted to the type of the true expression. Otherwise, a compiler error occurs. Even when the types are convertible, a runtime error occurs if the selected value can't be converted.
+
+For example:
+
+```al
+var
+    Condition: Boolean;
+    CodeValue: Code[20];
+    TextValue: Text[100];
+    Result: Text[250];
+begin
+    Condition := false;
+    TextValue := 'This value is longer than 20 characters.';
+    Result := Condition ? CodeValue : TextValue;
+end;
+```
+
+In this example, the type of the ternary expression is `Code[20]`, because `CodeValue` is the true expression. If `TextValue` is selected, its value is converted to `Code[20]` before the result is assigned to `Result`. A value longer than 20 characters can therefore cause a runtime conversion error even though `Result` is `Text[250]`.
+
+The same behavior applies to other data types. For example:
+
+```al
+var
+    UseDefault: Boolean;
+    OriginalQuantity: Decimal;
+    Quantity: Decimal;
+begin
+    UseDefault := false;
+    OriginalQuantity := 0.25;
+    Quantity := UseDefault ? 1 : OriginalQuantity;
+end;
+```
+
+Because `1` is an `Integer`, the ternary expression has the type `Integer`. If `OriginalQuantity` is selected, its value must first be converted to `Integer`, even though `Quantity` is a `Decimal`. In this example, `0.25` can't be converted to `Integer`, so a runtime conversion error occurs. The value isn't silently truncated.
+
+When the true and false expressions have different types, explicitly convert them to the intended common type or use an if-then-else statement to assign each value directly to the destination. For example, the following code preserves the decimal value:
+
+```al
+if UseDefault then
+    Quantity := 1
+else
+    Quantity := OriginalQuantity;
 ```
 
 ## Operator hierarchy
