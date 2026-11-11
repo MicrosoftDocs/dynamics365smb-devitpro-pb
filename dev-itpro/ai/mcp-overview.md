@@ -16,6 +16,9 @@ ai-usage: ai-assisted
 
 > **APPLIES TO:** Business Central online
 
+> [!NOTE]
+> **Planned monetization of MCP tools:** Microsoft plans to introduce charges for Business Central MCP tools. Details on pricing, affected tools, and rollout will be shared in a future update. Current availability and usage guidance remain unchanged.
+
 The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open standard that defines how AI applications communicate with data sources and tools. It provides a consistent and secure way for AI clients&mdash;such as Copilot Studio, GitHub Copilot, Claude, ChatGPT, and custom agents&mdash;to access and interact with external systems like Business Central.
 
 ![Shows how MCP hosts connect to Business Central](../developer/media/mcp-client-server.svg)
