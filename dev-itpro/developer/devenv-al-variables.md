@@ -3,7 +3,8 @@ title: AL variables
 description: Description of AL user-defined and system-defined variables.
 ms.reviewer: solsen
 ms.topic: concept-article
-ms.date: 04/26/2024
+ms.date: 11/11/2026
+ai-usage: ai-assisted
 ms.update-cycle: 1095-days
 author: KennieNP
 ms.author: solsen
@@ -82,6 +83,9 @@ Variables are automatically initialized before the AL code is run. A boolean var
 System-defined variables are automatically handled and initialized. No actions are required by the user before system-defined variables can be used.  
 
 ## Assignment and type conversion
+
+> [!NOTE]
+> When you assign a ternary (`? :`) expression to a variable, the true expression determines the type of the ternary expression. If you select the false expression and it has a different type, its value is implicitly converted to the type of the true expression before assignment to the destination. This conversion can cause a runtime error even if the destination can hold the original value. Learn more in [Result type and implicit conversion](devenv-al-operators.md#result-type-and-implicit-conversion).
 
 You can assign values in the following ways:  
 
