@@ -1,7 +1,7 @@
 ---
 title: Edit with Copilot
 description: Learn about the early access preview of Edit with Copilot for modifying and deleting data in Business Central.  
-ms.date: 10/23/2026
+ms.date: 11/11/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -26,6 +26,8 @@ Edit with Copilot helps you complete tasks in Business Central by using natural 
 ## About Edit with Copilot
 
 With update 29.0, Business Central customers received the new Microsoft Copilot Chat in Business Central, including the ability to ground every task in Business Central data. Learn more in [Chat with Copilot](/dynamics365/business-central/chat-with-copilot).
+
+Watch [Edit data with Copilot - an Early Access Preview for partners](https://go.microsoft.com/fwlink/?LinkId=2388658) on YouTube.
 
 Now, partners can experience the next wave of innovation that builds on that foundation. New tools enable Copilot to:
 
