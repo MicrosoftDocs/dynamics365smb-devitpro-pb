@@ -8,9 +8,10 @@ ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 11/17/2025
+ai-usage: ai-assisted
 ---
 
-# Business Central Admin Center API - Notifications (API)
+# Business Central admin center API - notifications
 
 Notifications are sent to the recipient email addresses that are set up for the tenant. For example, notifications are sent for update availability, successful updates, update failures, and extension validations.
 

@@ -1,15 +1,16 @@
 ---
 title: Business Central Admin Center API - Environment Outage Reporting
-description: Learn about the Business Central administration center API for reporting an environment outage.
+description: Use the Business Central admin center API to get outage types and questions, report an environment outage, and retrieve previously reported outages.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 11/13/2026
+ai-usage: ai-assisted
 ---
 
-# Business Central Admin Center API - Environment outage reporting
+# Business Central admin center API - environment outage reporting
 
 Enables the ability to report that an environment isn't accessible and might require attention.
 
@@ -35,7 +36,7 @@ Returns a list with information about the supported outage types for reporting.
     {
       "outageType": string, // The identifier of the outage type.
       "name": string, // A displayable name for the outage type.
-      "description": string, // A displayable description for the outage type.
+      "description": string // A displayable description for the outage type.
     }]
 }
 ```
@@ -58,6 +59,8 @@ GET /admin/{apiVersion}/support/outageTypes/{outageType}/outageQuestions
 
 `apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
+`outageType` - the outage type identifier returned by the get outage types endpoint.
+
 ### Response
 
 Returns the list of question metadata for the provided outage type.
@@ -67,9 +70,9 @@ Returns the list of question metadata for the provided outage type.
   "value": [
     {
       "sequence": int, // The order in which the question should be answered
-      "parentId": int, // The identifier of a toggle question whose value indicates if this question should be shown. that is if the parent value is 'true' then this question should also be answered
+      "parentId": string, // The identifier of a toggle question whose value indicates whether this question should be shown. If the parent value is 'true', this question should also be answered
       "id": string, // The unique identifier of the question
-      "defaultValue": string, // The default value of the question if it has no value
+      "defaultValue": any, // The default value of the question if it has no value
       "questionType": string, // (enum | "None", "Toggle", "TextField", "DateTime")
       "questionText": string, // The question's text to display
       "required": bool, // Indicates if the question must have a value
@@ -82,7 +85,7 @@ Returns the list of question metadata for the provided outage type.
 
 ### Expected error codes
 
-`cannotGetOutageQuestions` - an unhandled error occurred when trying to acquire the outage types.
+`cannotGetOutageQuestions` - an unhandled error occurred when trying to get the outage questions.
 
 `tenantNotFound` - the calling tenant information couldn't be found.
 
@@ -114,7 +117,7 @@ Returns the list of outages reported across all environments for the calling ten
       "IcmTicketId": string, // The identifier of the IcM ticket that is associated with the outage report.
       "AppVersion": string, // The version of the environment's application at the time of the outage report.
       "PlatformVersion": string, // The version of the environment's platform at the time of the outage report.
-      "OutageType": string, // The category of the reported outage.
+      "OutageType": string // The category of the reported outage.
     }]
 }
 ```
@@ -125,7 +128,7 @@ Returns the list of outages reported across all environments for the calling ten
 
 `tenantNotFound` - the calling tenant information couldn't be found.
 
-## Report outage
+## Report an environment outage
 
 Initiates an outage report indicating that an environment isn't accessible.
 
@@ -167,7 +170,7 @@ Returns information about the created outage report
 ```JSON
 {
     "creationStatus": string, // The status of the request to create an outage report. (enum | "Unknown", "Created", "UpdatedExisting", "Error")
-    "msaasCaseNumber": string, // The identifier of the MSaaS ticket that is associated with the outage report.
+    "msaasCaseNumber": string // The identifier of the MSaaS ticket that is associated with the outage report.
 }
 ```
 

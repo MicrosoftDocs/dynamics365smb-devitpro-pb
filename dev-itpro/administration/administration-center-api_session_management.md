@@ -7,10 +7,11 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 11/13/2026
+ai-usage: ai-assisted
 ---
 
-# Business Central Admin Center API - Session management
+# Business Central admin center API - session management
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
@@ -28,7 +29,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 `apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - the family of the ring's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - the name of the targeted environment
 
@@ -70,7 +71,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 `apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - the family of the ring's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - the name of the targeted environment
 
@@ -109,7 +110,7 @@ DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{enviro
 
 `apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
-`applicationFamily` - the family of the ring's application (for example, "BusinessCentral")
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - the name of the targeted environment
 

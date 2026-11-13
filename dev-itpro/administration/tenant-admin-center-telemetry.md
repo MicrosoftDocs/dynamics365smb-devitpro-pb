@@ -1,17 +1,18 @@
 ---
-title: Environment Telemetry
-description: Learn how the Business Central admin center provides telemetry for each environment.  
+title: Environment Telemetry in Business Central Admin Center
+description: Filter environment telemetry in the Business Central admin center to investigate errors, and enable Application Insights for richer diagnostics.
 author: jswymer
 
-ms.topic: article
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 11/13/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
-# Environment Telemetry in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
+# View environment telemetry in the Business Central admin center
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides telemetry for the tenant environments to enable troubleshooting and support for the tenant. The Telemetry tab provides telemetry of top-level AL events, and any errors resulting from calls through the telemetry stack.
 
@@ -22,21 +23,24 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 
 To filter the telemetry for an environment:
 
-1. Select a base point-in-time for the timestamp of the telemetry messages.
-2. Enter a number of minutes before or after the base point-in-time to set a range of time for the timestamp. A negative number indicates a number of minutes before the base point-in-time, and a positive number indicates a number of minutes following the base point-in-time. For example, a value of *-15* filters messages to a timestamp range of up to 15 minutes before the base point-in-time.
-3. Choose the message type.
-4. Choose the environment.
-5. Select **Filter**.
+1. Select **Telemetry** in the navigation pane.
+1. In **Timestamp**, select a base point in time for the telemetry messages.
+1. In **Time Window**, enter a whole number of minutes before or after the timestamp. Enter a negative number to select minutes before the timestamp, and a positive number to select minutes after it. For example, `-15` selects the preceding 15 minutes.
+1. Select the message type in **Query Category**.
+1. Select the **Environment**.
+1. Select **Search**.
 
-## Enable richer telemetry
+The default time window is the five minutes before the current time.
+
+## Enable richer telemetry with Application Insights
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-Get richer telemetry to help you troubleshoot by sending telemetry to Microsoft Azure Application Insights. For more information, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md#appinsights).
+Get richer telemetry to help you troubleshoot by sending telemetry to Microsoft Azure Application Insights. Learn more in [Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md#appinsights).
 
-Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
+Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. Learn more in [Introduction to Application Insights](/azure/azure-monitor/app/app-insights-overview).
 
-For an overview of the telemetry types that are currently emitted, see [Monitoring and Analyzing with Telemetry](telemetry-overview.md).
+Learn more in [Monitoring and analyzing telemetry](telemetry-overview.md) for an overview of the telemetry types that are currently emitted.
 
 [!INCLUDE [admin-appinsights-germany](../includes/admin-appinsights-germany.md)]
 

@@ -1,20 +1,21 @@
 ---
 title: Business Central Admin Center API - Manage Updates
 ms.author: jswymer
-description: Learn how to reschedule updates and manage target versions for Business Central environments using the Admin Center API.
+description: Learn how to select target versions, reschedule updates, and cancel running updates for Business Central environments using the admin center API.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 11/13/2026
+ai-usage: ai-assisted
 ---
 
-# Business Central Admin Center API - Manage updates
+# Business Central admin center API - manage updates
 
 Allows for the management of scheduled updates such as scheduling the update to run on or after a specific date within a provided range.
 
-## Get updates
+## Get environment update information
 
 Get information about update target versions and their status for a specific environment.
 
@@ -42,8 +43,8 @@ Returns information about updates available for the specified environment.
       "targetVersion": "26.1",
       "available": true, // Indicates whether the target version has been released
       "selected": true, // Indicates whether the next selected update is for this target version
-      "updateStatus": "scheduled", // 
       "scheduleDetails": {
+        "updateStatus": "scheduled", // Status of the selected update
         "latestSelectableDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the last date for which the update to this target version can be scheduled
         "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the datetime for which the update to this target version has been scheduled
         "ignoreUpdateWindow": false, // Indicates whether the update window for the environment may be ignored when running this update
@@ -115,9 +116,9 @@ Example for selecting a target version that's available.
 ```JSON
 {
   "selected": true, // Optional. Must be true to select target version; setting this to false returns an error. Omitting it from the body changes scheduleDetails properties for the targetVersion without selecting it or for a targetVersion that is already selected
-"targetVersionType": "GA", // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview". Defaults to "GA" if property is omitted from body. "Preview" and "EarlyAccessPreview" versions can only be scheduled for sandbox environments. Additionally, Partner Sandbox license is required to schedule update targetting "EarlyAccessPreview".
+  "targetVersionType": "GA", // Indicates the type of the target version, i.e. "GA", "Preview" or "EarlyAccessPreview". Defaults to "GA" if property is omitted from body. "Preview" and "EarlyAccessPreview" versions can only be scheduled for sandbox environments. Additionally, Partner Sandbox license is required to schedule update targetting "EarlyAccessPreview".
   "scheduleDetails": {
-    "selectedDateTime": datetime // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
+    "selectedDateTime": datetime, // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
     "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment might be ignored for this update
   }
 }
@@ -153,7 +154,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 `environmentName` - the name of the targeted environment
 
-`id` - The operation ID for the update operation. Can be obtained from the `GET /admin/v2.28/environments/{environmentName}/operations` endpoint
+`id` - The operation ID for the update operation. Get it from the `GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/operations` endpoint.
 
 ### Restrictions
 

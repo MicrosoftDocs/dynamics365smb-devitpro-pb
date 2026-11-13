@@ -1,13 +1,14 @@
 ---
-title: Transfer Environments
+title: Transfer Business Central Environments Between Tenants
 description: You can transfer a Business Central environment to another Microsoft Entra tenant. Start in the Business Central admin center.
 author: jobulsin
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, move
-ms.date: 10/08/2025
+ms.date: 11/13/2026
 ms.author: jobulsin
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 # Transfer environments
 
@@ -34,7 +35,7 @@ Once the transfer starts, all users in the source tenant are disconnected and th
 1. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Environment Transfers**.
 1. Select **Transfer Environments**.
 1. Select the environments to transfer, specify the Microsoft Entra tenant ID of the destination tenant, choose a date and time on which to transfer the chosen environments to the destination.
-1. Select confirm to create the transfer.
+1. Select **Confirm** to create the transfer.
 
 After you create a transfer on the source tenant, review the status on the **Pending outgoing transfers** list.
 
@@ -52,8 +53,8 @@ After you create a transfer on the source tenant, review the status on the **Pen
 To confirm the transfer, it has to be accepted on the destination tenant **within 8 hours** of creating the request on the source tenant.
 
 1. Ensure the destination tenant has at least one paid user license and sufficient environment and storage quota available to receive the new environments
-1. Sign in to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] as an internal admin in the source Microsoft Entra tenant.
-1. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Transfer Environments**.
+1. Sign in to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] as an internal admin in the destination Microsoft Entra tenant.
+1. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Environment Transfers**.
 1. Select **Receive Environments**.
 1. Specify the Microsoft Entra tenant ID of the source tenant you're accepting an environment transfer from.
 1. Select the environments for which you want to accept a transfer and confirm.
@@ -70,8 +71,8 @@ To confirm the transfer, it has to be accepted on the destination tenant **withi
 ## Cancel a pending transfer from source tenant
 
 1. Sign in to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] as an internal admin in the source Microsoft Entra tenant.
-1. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Transfer Environments**.
-1. Select the pending outgoing transfers that you would like to cancel and confirm.
+1. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Environment Transfers**.
+1. Select the pending outgoing transfers, then select **Cancel transfers** and confirm.
 
 > [!IMPORTANT]
 > Internal admins can cancel pending transfers at any time up until the transfer starts. They can cancel as long as the transfer isn't accepted on the destination tenant or the scheduled time for the transfer is in the future.
@@ -86,13 +87,13 @@ To confirm the transfer, it has to be accepted on the destination tenant **withi
 - You might need to reconfigure some add-ins, external applications, and settings after the tenant-to-tenant migration. Some examples include the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Outlook add-in, Excel add-in, Power BI, Power Apps, Power Automate connectors, Dataverse, user personalizations, and more.
 - External integrations might have to be updated to reflect the new environment URL, including the new Microsoft Entra Tenant ID.
 
-## Transfer auditing
+## Audit environment transfers
 
 Environment transfers create two distinct operations that can be audited on the Operations page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. The **Transfer Request** operation is created upon initiating a transfer in the source tenant and is only visible in the source tenant. The **Transfer** operation is created once a transfer is accepted in the destination tenant and lives in the tenant where the environment is located. Before the transfer is executed, this operation is found in the source tenant. After the environment transfer, the operation is found in the destination tenant.
 
 Telemetry signals for the environment transfer operation are emitted to the Application Insights resource to which the environment that is transferred is emitting telemetry. Signals related to this operation are emitted from the moment a transfer is accepted on the destination tenant, see [Environment Lifecycle Telemetry](telemetry-environment-lifecycle-trace.md#environment-transfer-to-different-entra-tenant-operation-scheduled).
 
-## Considerations
+## Environment transfer considerations
 
 - Environment data remains unchanged during the move operation. The exact same environment is linked to a specified Microsoft Entra tenant.
 - The localization, Azure region, and type of the environment (Production or Sandbox) remain the same, and can't be changed during this operation.

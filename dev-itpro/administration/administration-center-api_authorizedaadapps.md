@@ -1,15 +1,16 @@
 ---
-title: Business Central Admin Center API - Authorized Microsoft Entra Apps
-description: Learn about the Business Central administration center API for authorizing Microsoft Entra apps.
+title: Business Central Admin API - Authorized Microsoft Entra Apps
+description: Use the Business Central admin center API to list authorized Microsoft Entra apps, authorize or remove an app, and find manageable tenants.
 author: jobulsin
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 11/13/2026
+ai-usage: ai-assisted
 ---
 
-# Business Central admin center API - Authorized Microsoft Entra apps
+# Business Central admin center API - authorized Microsoft Entra apps
 
 Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
@@ -36,10 +37,10 @@ GET /admin/{apiVersion}/authorizedAadApps/manageableTenants
 {
     "value": [
         {
-            "entraTenantId": "00000000-0000-0000-0000-000000000000"
+            "entraTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee"
         },
         {
-            "entraTenantId": "11111111-1111-1111-1111-111111111111"
+            "entraTenantId": "bbbbcccc-1111-dddd-2222-eeee3333ffff"
         }
     ]
 }
@@ -65,11 +66,11 @@ GET /admin/{apiVersion}/authorizedAadApps
 ```JSON
 [
     {
-        "appId": "00000000-0000-0000-000000000000",
+        "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
         "isAdminConsentGranted": false
     },
     {
-        "appId": "11111111-1111-1111-111111111111",
+        "appId": "11112222-bbbb-3333-cccc-4444dddd5555",
         "isAdminConsentGranted": true
     }
 ]
@@ -90,11 +91,13 @@ PUT /admin/{apiVersion}/authorizedAadApps/<appClientId>
 
 `apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
 
+`appClientId` - the application (client) ID of the Microsoft Entra app to authorize.
+
 ### Response
 
 ```JSON
 {
-    "appId": "00000000-0000-0000-000000000000",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "isAdminConsentGranted": false
 }
 ```
@@ -110,6 +113,8 @@ DELETE /admin/{apiVersion}/authorizedAadApps/<appClientId>
 ### Route parameters
 
 `apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`appClientId` - the application (client) ID of the Microsoft Entra app to remove.
 
 ## Related information
 

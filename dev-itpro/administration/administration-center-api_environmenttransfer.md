@@ -1,15 +1,16 @@
 ---
-title: Business Central Admin Center API - Transfer environments
-description: Learn about the Business Central administration center API for transferring environments between Microsoft Entra tenants.
+title: Business Central Admin Center API - Transfer Environments
+description: Use the Business Central admin center API to request, accept, cancel, and list environment transfers between Microsoft Entra tenants.
 author: jobulsin
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 11/13/2026
+ai-usage: ai-assisted
 ---
 
-# Business Central Admin Center API - Transfer environments
+# Business Central admin center API - transfer environments
 
 Environments can be transferred between Microsoft Entra tenants by internal administrators, for example when multiple Microsoft Entra tenants are consolidated, when a business is acquired by or merging with another business, or when a partner prepares a demo environment in their tenant that needs to be transferred to the customer tenant for the customer to evaluate.
 
@@ -71,7 +72,7 @@ Returns details of the operation created to request the environment transfer.
         "productFamily": string, // Product family of the environment, e.g. "BusinessCentral"
         "runAt": datetime, // Date and time at which the transfer will run, if accepted on the destination tenant. Expressed as UTC timestamp
         "isAcceptedByDestinationEntraTenant": boolean, // Indicates whether the environment transfer has been accepted on the destination tenant
-        "expiresOn": datetime // Date and time at which the environment transfer request expires, i.e. the time before which the transfer must be accepted on the destination tenant for it to be executed on or after the RunOnUtc time specified in the request body.
+        "expiresOn": datetime // Date and time at which the environment transfer request expires, i.e. the time before which the transfer must be accepted on the destination tenant for it to be executed on or after the RunAt time specified in the request body.
     },
     "environmentName": string, // Name of the environment
     "environmentType": string, // Type of the environment, i.e. "production" or "sandbox"
@@ -175,7 +176,7 @@ Returns the details of the operation that was canceled in the source tenant.
         "sourceEnvironmentName": string, // Environment name of the environment in the source tenant
         "environmentType": string, // Environment type, i.e. "production" or "sandbox"
         "productFamily": string, // Product family of the environment, e.g. "BusinessCentral"
-        "runAt": datetime // Date and time at which the transfer would have ran. Expressed as UTC timestamp
+        "runAt": datetime, // Date and time at which the transfer would have run. Expressed as UTC timestamp
         "isAcceptedByDestinationEntraTenant": boolean, // Indicates whether the environment transfer has been accepted on the destination tenant
         "expiresOn": datetime // Date and time at which the environment transfer request would have expired
     },
@@ -206,7 +207,7 @@ GET /admin/{apiVersion}/transfers/outgoing
     "value": [
         {
             "id": Guid, // ID of the operation
-            "type": string, // Type of the cancelled operation, i.e. "requestTransferToAnotherEntraTenant"
+            "type": string, // Type of the transfer request operation, i.e. "requestTransferToAnotherEntraTenant"
             "status": string, // Status of the created operation, i.e. "queued"
             "aadTenantId": Guid, // Microsoft Entra tenant ID of the tenant for which the operation was created, the source tenant
             "createdOn": datetime, // Date and time at which the operation was created, expressed as UTC timestamp
@@ -219,9 +220,9 @@ GET /admin/{apiVersion}/transfers/outgoing
                 "sourceEnvironmentName": string, // Environment name of the environment in the source tenant
                 "environmentType": string, // Environment type, i.e. "production" or "sandbox"
                 "productFamily": string, // Product family of the environment, e.g. "BusinessCentral"
-                "runAt": datetime // // Date and time at which the transfer will run, expressed as UTC timestamp
+                "runAt": datetime, // Date and time at which the transfer will run, expressed as UTC timestamp
                 "isAcceptedByDestinationEntraTenant": boolean, // Indicates whether the environment transfer has been accepted on the destination tenant
-                "expiresOn": datetime // Date and time at which the environment transfer request expires, i.e. the time before which the transfer must be accepted on the destination tenant for it to be executed on or after the RunOnUtc time specified in the request body.
+                "expiresOn": datetime // Date and time at which the environment transfer request expires, i.e. the time before which the transfer must be accepted on the destination tenant for it to be executed on or after the RunAt time specified in the request body.
             },
             "environmentName": string, // Name of the environment
             "environmentType": string, // Type of the environment, i.e. "production" or "sandbox"
@@ -254,7 +255,7 @@ GET /admin/{apiVersion}/transfers/incoming/{sourceEntraTenantId}
     "value": [
         {
             "id": Guid, // ID of the operation in the source tenant
-            "type": string, // Type of the cancelled operation, i.e. "requestTransferToAnotherEntraTenant"
+            "type": string, // Type of the transfer request operation, i.e. "requestTransferToAnotherEntraTenant"
             "status": string, // Status of the created operation, i.e. "queued"
             "aadTenantId": Guid, // Microsoft Entra tenant ID of the tenant for which the operation was created, the source tenant
             "createdOn": datetime, // Date and time at which the operation was created, expressed as UTC timestamp
@@ -267,9 +268,9 @@ GET /admin/{apiVersion}/transfers/incoming/{sourceEntraTenantId}
                 "sourceEnvironmentName": string, // Environment name of the environment in the source tenant
                 "environmentType": string, // Environment type, i.e. "production" or "sandbox"
                 "productFamily": string, // Product family of the environment, e.g. "BusinessCentral"
-                "runAt": datetime // // Date and time at which the transfer will run, expressed as UTC timestamp
+                "runAt": datetime, // Date and time at which the transfer will run, expressed as UTC timestamp
                 "isAcceptedByDestinationEntraTenant": boolean, // Indicates whether the environment transfer has been accepted on the destination tenant
-                "expiresOn": datetime // Date and time at which the environment transfer request expires, i.e. the time before which the transfer must be accepted on the destination tenant for it to be executed on or after the RunOnUtc time specified in the request body.
+                "expiresOn": datetime // Date and time at which the environment transfer request expires, i.e. the time before which the transfer must be accepted on the destination tenant for it to be executed on or after the RunAt time specified in the request body.
             },
             "environmentName": string, // Name of the environment
             "environmentType": string, // Type of the environment, i.e. "production" or "sandbox"
