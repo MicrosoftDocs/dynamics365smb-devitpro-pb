@@ -6,10 +6,11 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 11/13/2026
 ms.custom: sfi-ga-nochange
+ai-usage: ai-assisted
 ---
-# Business Central admin center API - Environment settings
+# Business Central admin center API - environment settings
 
 Allows you to manage environment-specific settings such as the AppInsights key or the update window.
 
@@ -79,7 +80,7 @@ Returns a wrapped array of time zones.
         "displayName": string, // Display name of the time zone (for example, "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris")
         "currentUtcOffset": string, // Offset from UTC, expressed as a time span with +/-HH:mm format (for example, "+01:00", "-09:00")
         "supportsDaylightSavingTime": boolean, // Indicates whether the time zone supports daylight saving time rules
-        "isCurrentlyDaylightSavingTime": boolean, // Indicates whether daylight saving time is in effect for the given time zone, at the instant the request is issued
+        "isCurrentlyDaylightSavingTime": boolean // Indicates whether daylight saving time is in effect for the given time zone, at the instant the request is issued
       }
     ]
 }
@@ -127,7 +128,7 @@ Example with UTC parameter set:
 ```JSON
 {
   "preferredStartTimeUtc": datetime, // Start of environment update window
-  "preferredEndTimeUtc": datetime, // End of environment update window
+  "preferredEndTimeUtc": datetime // End of environment update window
 }
 ```
 
@@ -138,7 +139,7 @@ Returns the updated settings
 ```JSON
 {
   "preferredStartTimeUtc": datetime, // Start of environment update window
-  "preferredEndTimeUtc": datetime, // End of environment update window
+  "preferredEndTimeUtc": datetime // End of environment update window
 }
 ```
 
@@ -162,7 +163,7 @@ Returns the updated settings
 
 ## Set Application Insights key
 
-Sets the connection string or instrumentation key an environment uses for Azure Application Insights resource, which you can use to gather telemetry. For information about Application Insights and the connection string/instrumentation key, go to [Enable Environment Telemetry](telemetry-enable-application-insights.md#appinsights).
+Sets the connection string or instrumentation key an environment uses for Azure Application Insights resource, which you can use to gather telemetry. Learn more in [Enable Environment Telemetry](telemetry-enable-application-insights.md#appinsights).
 
 > [!IMPORTANT]
 > This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this task during nonworking hours to avoid disruptions.
@@ -184,7 +185,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ```JSON
 {
-  "key": string, // The Application Insights key for the environment
+  "key": string // The Application Insights key for the environment
 }
 ```
 
@@ -222,7 +223,7 @@ If the group exists in Microsoft Graph:
 
 ```JSON
 {
-    "id": "796d9c99-80e4-479c-8544-e745ffd18150",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
     "displayName": "Security group 1"
 }
 ```
@@ -231,12 +232,12 @@ If a previously assigned group no longer exists in Microsoft Graph:
 
 ```JSON
 {
-    "id": "796d9c99-80e4-479c-8544-e745ffd18150",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
     "displayName": ""
 } 
 ```
 
-If no group is configured for the tenant, returns 204. 
+If no group is configured for the environment, returns 204.
 
 ## Set security group
 
@@ -261,7 +262,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ```JSON
 {
-  "Value": GUID, // The object Id of the Microsoft Entra group, "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+  "Value": GUID // The object Id of the Microsoft Entra group, "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 }
 ```
 
@@ -291,7 +292,7 @@ DELETE /admin/{apiVersion}/applications/{applicationFamily}/environments/{enviro
 
 **INTRODUCED IN:** API version 2.22
 
-Returns a boolean value that indicates whether the environment allows access for delegated administrators and foreign multitenant apps and a list of allowlisted foreign Microsoft Entra tenant IDs.
+Returns the partner access status for delegated administrators and foreign multitenant apps, and a list of allowed foreign Microsoft Entra tenant IDs. The status is `Disabled`, `AllowAllPartnerTenants`, or `AllowSelectedPartnerTenants`.
 
 > [!IMPORTANT]
 > Only internal global administrators can use this API endpoint. Delegated administrator or application authentication isn't supported.
@@ -312,8 +313,8 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ```JSON
 {
-  "status": "Disabled | AllowAllPartnerTenants | AllowSelectedPartnerTenants",
-  "allowedPartnerTenantIds": ["guid1", "guid"2, ...] // Only if status is "AllowSelectedPartnerTenants"
+  "status": "AllowSelectedPartnerTenants",
+  "allowedPartnerTenantIds": ["aaaabbbb-0000-cccc-1111-dddd2222eeee"] // Only if status is "AllowSelectedPartnerTenants"
 }
 ```
 
@@ -322,6 +323,8 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 **INTRODUCED IN:** API version 2.22
 
 Enable or disable delegated administrators and foreign multitenant apps to administer and access the environment. Optionally, allowlist only specific foreign Microsoft Entra tenants to administer and access the environment.
+
+Set `status` to `Disabled`, `AllowAllPartnerTenants`, or `AllowSelectedPartnerTenants`.
 
 > [!IMPORTANT]
 > Only internal global administrators can use this API endpoint. Delegated administrator or application authentication isn't supported.
@@ -342,8 +345,8 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 ```JSON
 {
-  "status": "Disabled | AllowAllPartnerTenants | AllowSelectedPartnerTenants",
-  "allowedPartnerTenantIds": ["guid1", "guid2", ...] // Only if status is "AllowSelectedPartnerTenants"
+  "status": "AllowSelectedPartnerTenants",
+  "allowedPartnerTenantIds": ["aaaabbbb-0000-cccc-1111-dddd2222eeee"] // Only if status is "AllowSelectedPartnerTenants"
 }
 ```
 
@@ -351,7 +354,7 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 **INTRODUCED IN:** API version 2.12
 
-Returns a boolean value that indicates whether the environment allows access with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
+Returns a boolean value that indicates whether the environment allows access with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more in [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
 ```HTTP
 GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
@@ -377,7 +380,7 @@ GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 
 **INTRODUCED IN:** API version 2.12
 
-Specifies whether users can access the environment with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
+Specifies whether users can access the environment with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more in [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
 ```HTTP
 Content-Type: application/json
@@ -396,7 +399,7 @@ POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environm
 
 ```JSON
 { 
-   "enabled": "true" 
+   "enabled": true
 } 
 ```
 
@@ -408,7 +411,7 @@ Returns 200 if successful.
 
 **INTRODUCED IN:** API version 2.19
 
-Specifies whether Marketplace apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more at [Manage Apps](tenant-admin-center-manage-apps.md).
+Specifies whether Marketplace apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more in [Manage Apps](tenant-admin-center-manage-apps.md).
 
 ```HTTP
 Content-Type: application/json

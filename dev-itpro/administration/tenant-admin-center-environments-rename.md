@@ -1,16 +1,17 @@
 ---
 title: Rename Environments in the Admin Center
-description: Use the Business Central administration center to rename environments. 
+description: Rename a Business Central environment in the admin center. Review naming rules and plan for the URL changes that affect users and integrations.
 author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, rename
-ms.date: 04/01/2021
+ms.date: 11/13/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
-# Rename Environments in the Admin Center
+# Rename environments in the admin center
 
 You can change the name of an environment. The name uniquely identifies the environment from your other environments. Before you change a name, you must consider that the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
 
@@ -21,14 +22,15 @@ The renaming of an environment is logged and shown in the [operations log](tenan
 - Read the [Environment rename considerations](#consider) section to understand the consequences of renaming an environment.
 - Make sure you notify all your users, including any external service integrations you may have, about the upcoming URL change. It will let them prepare to update their references. 
 - Determine the best time to do the renaming. Renaming an environment requires a restart to the environment. We recommend doing this operation when no users are active in Business Central.  
+- Choose a name of up to 30 characters that starts with a letter and contains only letters, numbers, hyphens, and underscores. The name must be unique within the same application family in your tenant and can't be a reserved name, such as `admin` or `api`.
 
-## To rename an environment
+## Rename an existing environment
 
 1. Select **Environments**, then select the environment you want to rename.
-2. On the **Environment Details** page, select **Rename**.
-3. On **Rename environment** page, read the information.
-4. Enter the new name, and then select **Rename**.
-5. Confirm your intent to rename the environment.
+1. On the **Environment Details** page, select **Rename**.
+1. In the **Rename environment** pane, read the information.
+1. Enter the new name, and then select **Rename**.
+1. Confirm your intent to rename the environment.
 
 At this point, the environment state will first change to **Preparing | Rename Scheduled**, then to **Active** again when the rename has been completed. The new name will be available immediately. The environment will no longer be accessible using the old environment name.  
 

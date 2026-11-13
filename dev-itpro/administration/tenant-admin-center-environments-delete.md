@@ -1,12 +1,13 @@
 ---
-title: Delete and recover environments
-description: Learn how to delete and recover deleted environments using the Business Central admin center.
+title: Delete and Recover Business Central Environments
+description: Delete Business Central environments in the admin center and recover them during the retention period. Review deletion behavior and recovery limits.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 10/08/2025
+ms.date: 11/13/2026
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Delete and recover environments
@@ -41,26 +42,27 @@ Here's some important information about deleted environments and their recovery:
 - [Early access preview environments](preview-environments.md#early-access-preview) are automatically updated to a new preview build every Sunday. If the update fails, they're deleted. Early access preview environments that are deleted because the update to a new build failed can't be recovered. Early access preview environments that are deleted normally are only recoverable until the new preview build is released.
 
 > [!IMPORTANT]
-> You can recover a soft-deleted product environment even if doing so results in exceeding your environment quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription.
+> You can recover a soft-deleted production environment even if doing so results in exceeding your environment quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription.
 >
 > This capability is provided as an exception to ensure that you can always recover your production environment in critical situations. You must return within your quota within 30 days following the recovery by deleting a production environment or purchasing an extra production environment. Learn more in [Managing Capacity](tenant-admin-center-capacity.md).
 
 ## Delete an environment
 
 1. Before you delete an environment, make sure no users are using the environment, because they'll be disconnected.
-2. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, then select environment you want to delete.
-3. In the action ribbon at the top of the page, select **Delete** > **Yes**.
+1. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, and then select the environment you want to delete.
+1. In the action ribbon at the top of the page, select **Delete** > **Yes**.
+1. In the **Confirm environment deletion** pane, enter the environment name in the **Name** field, and then select **Delete**.
 
 ## Recover an environment
 
 1. In the navigation pane of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments** > **Recently deleted environments**.
-2. Select the environment you want to recover.
+1. Select the environment you want to recover.
 
    The environment details page opens.
-3. If you notice the environment has pending updates but you don't want to run them as part of the recovery, select **Update Settings** > **Set Update Date** to postpone the update until a later date.
+1. If the environment has a pending update that you don't want to run as part of recovery, select **Modify** next to **Next update** to postpone the update until a later date.
 
-   For more information about setting the update date, go to [Schedule an update date](tenant-admin-center-update-management.md#schedule).
-4. When ready to recover the environment, select **Recover**.
+   Learn more in [Schedule an update date](tenant-admin-center-update-management.md#schedule).
+1. When ready to recover the environment, select **Recover**, and then confirm the recovery.
 
 ## Related information
 

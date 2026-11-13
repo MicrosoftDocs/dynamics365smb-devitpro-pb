@@ -1,13 +1,14 @@
 ---
 title: Managing Updates in the Admin Center
-description: Use the Business Central administration center to manage environment updates, including setting update windows and update dates.  
+description: Use the Business Central administration center to manage environment updates, including setting update windows and update dates.
 author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 11/17/2025
+ms.date: 11/13/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Managing updates in the Business Central admin center
@@ -31,9 +32,9 @@ This window helps ensure updates are applied outside of the normal business hour
 To change the update window for an environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select the **Name** of the relevant environment to open the environment details.
-2. Select the **Update Settings** action, and then select the **Set update window** action.
-3. In the **Set update window** pane, specify the time zone, start time, and end time, for the update window for the environment. The update window must be a minimum of six hours.
-4. Select **Save**.
+1. Under **Update Settings**, select **Modify** next to **Update window**.
+1. In the **Set update window** pane, specify the time zone, start time, and end time, for the update window for the environment. The update window must be a minimum of six hours.
+1. Select **Save**.
 
 This timeslot now becomes the default window when updates are applied to this environment.
 
@@ -66,9 +67,9 @@ To schedule an update:
 1. Pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
 
    > [!NOTE]
-   > If you select today's date for the update but the environment's update window is already past, the update starts in the next day's update window.
+   > If today's update window already ended, you can't schedule an update for today while keeping that window. Select a later date or adjust the update window.
    >
-   > For example, if you change the **Scheduled update date** to the current date at 6 PM, and the update window is set to 1 AM–7 AM, the update doesn't start immediately but starts after 1 AM the next day.
+   > For example, at 6 PM, you can't schedule an update for today with an update window of 1 AM–7 AM. Select tomorrow to use the next day's window.
    >
    > To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets the update start immediately and allows large updates to run for longer than 24 hours if needed. Updates running in this mode aren't automatically canceled when the update window ends. Avoid using this setting for environments that must be available for users by a specific time.  
 

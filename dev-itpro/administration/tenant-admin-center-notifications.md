@@ -1,13 +1,14 @@
 ---
 title: Manage Tenant-Specific Notifications
-description: Learn about how an internal admin and a delegated admin can get notified of changes for Business Central tenants. 
+description: Set up recipients for Business Central tenant notifications and use email, Microsoft 365, and telemetry to monitor environment events.
 author: jswymer
-ms.topic: article
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, notifications
-ms.date: 10/20/2025
+ms.date: 11/13/2026
 ms.author: solsen
 ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 
 # Manage tenant-specific notifications
@@ -23,13 +24,20 @@ When these and other similar events occur on the tenant, an email is sent to the
 > [!NOTE]  
 > If a prospect signed up for a trial of [!INCLUDE [prod_short](../includes/prod_short.md)], make sure that they understand that they must sign up for notifications. This step is especially important if the prospect moves to **My Company** so that the tenant will expire after 30 days. Learn more in [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for Business Central.
 
-## Communication channels
+## Choose notification and monitoring channels
 
 Environment lifecycle events are communicated through various channels, each with their own benefits.  
 
 ### Email notification
 
 Notifications are sent to all email addresses that are listed in the **Notification recipients** list of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. To ensure the right individuals are notified of the event, manage the list manually by adding and removing recipients.
+
+1. In the admin center, select **Notification Recipients**.
+1. Select **Add recipient**.
+1. Enter the recipient's **Name** and **Email**.
+1. Select **Save**.
+
+To remove a recipient, select **Remove recipient** for that recipient and confirm the removal.
 
 > [!NOTE]
 >
@@ -39,7 +47,7 @@ Notifications are sent to all email addresses that are listed in the **Notificat
 > [!IMPORTANT]
 > [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
 
-### Microsoft 365 Message Center
+### Microsoft 365 Message center
 
 Most environment lifecycle events that emails are sent for are also soon posted to Microsoft 365 Message Center. Over time, emails that are sent to the specified notification recipients will be a subset of the messages that are posted in Message Center. Eventually, emails sent to notification recipients are deprecated.  
 
@@ -47,7 +55,7 @@ Already now, we warmly recommend that you make sure that the relevant people [si
 
 If you're a delegated admin, you might not be able to sign up yourself. In those cases, ask the internal admin to add you or a group email account as recipients. Also, in some scenarios where your organization manages multiple tenants, you might want to use the service communications API in Microsoft Graph to access the health status and message center posts about [!INCLUDE [prod_short](../includes/prod_short.md)]. Learn more in [Access service health and communications in Microsoft Graph](/graph/service-communications-concept-overview).  
 
-### Microsoft 365 Service Health Dashboard
+### Microsoft 365 Service health dashboard
 
 [!INCLUDE [admin-service-health](../includes/admin-service-health.md)]
 
@@ -55,33 +63,33 @@ If you're a delegated admin, you might not be able to sign up yourself. In those
 
 Application Insights telemetry includes the most complete list of Environment Lifecycle events, and can better be used for automation and reporting purposes than the other communication channels.
 
-Learn more about Environment Lifecycle trace telemetry [here](telemetry-environment-lifecycle-trace.md).
+Learn more in [Environment lifecycle trace telemetry](telemetry-environment-lifecycle-trace.md).
 
 #### Customize notifications and automation
 
-Azure Logic Apps and Power Automate have built-in connectors to query telemetry in Application Insights. Use the connectors to set up custom notifications or automate certain actions triggered by an environment lifecycle event.
+Azure Logic Apps and Power Automate have connectors, such as the [Azure Monitor Logs connector](/connectors/azuremonitorlogs/), to query telemetry in Application Insights. Use these connectors to set up custom notifications or automate actions triggered by an environment lifecycle event.
 
-Learn more about alerts on telemetry events [here](telemetry-overview.md).
+Learn more in [Monitoring and analyzing telemetry](telemetry-overview.md).
 
-##### Example: Grouped notification for available updates
+##### Example: grouped notification for available updates
 
 This Logic App runs every number of days (specified in deployment) and lists all updates made available to environments that emit telemetry to the specified Application Insights resource for the specified period. Administrators can use this information to replace the many email notifications they would receive for each individual environment when set up as notification recipient.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FAvailableUpdatesNotification.json)
+[:::image type="content" source="https://aka.ms/deploytoazurebutton" alt-text="Button to deploy the available updates notification to Azure.":::](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FAvailableUpdatesNotification.json)
 
-##### Example: Notification for deleted environment
+##### Example: notification for a deleted environment
 
 This Logic App queries Application Insights every number of minutes (specified in deployment) and notifies a user (also specified in deployment) of any deleted environments in Microsoft Teams. The action that sends the notification in Teams can be updated to notify a Channel or Group Chat instead.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FDeletedEnvironmentNotification.json)
+[:::image type="content" source="https://aka.ms/deploytoazurebutton" alt-text="Button to deploy the deleted environment notification to Azure.":::](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FDeletedEnvironmentNotification.json)
 
-##### Example: Take action on failed environment updates
+##### Example: take action on failed environment updates
 
-This Logic App runs a query that returns any failed environment updates ever number of hours (specified in deployment). Customize the Logic App after deploying to action the failed update, for example by opening a case in Dynamics 365 Customer Service using the Dataverse connector.
+This Logic App runs a query that returns failed environment updates every number of hours specified during deployment. Customize the Logic App after deployment to act on a failed update, for example, by opening a case in Dynamics 365 Customer Service using the Dataverse connector.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
+[:::image type="content" source="https://aka.ms/deploytoazurebutton" alt-text="Button to deploy automation for failed environment updates to Azure.":::](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
 
-##### Example: Post adaptive cards in Teams for each available environment update
+##### Example: post adaptive cards in Teams for each available environment update
 
 This Logic App queries Application Insights every number of minutes (specified in the deployment). It posts an adaptive card to a specified Microsoft Teams channel for each environment that has an update available. Based on the user's choice, the Logic App calls the Business Central admin center API using an authorized service-to-service Microsoft Entra app (configuration details specified in the deployment). The adaptive card gives the user four choices:  
 
@@ -90,17 +98,17 @@ This Logic App queries Application Insights every number of minutes (specified i
 - Ignore information about the update and close the card  
 - Open the admin center  
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentUpdateAdaptiveCard.json)
+[:::image type="content" source="https://aka.ms/deploytoazurebutton" alt-text="Button to deploy Teams cards for available environment updates to Azure.":::](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentUpdateAdaptiveCard.json)
 
-##### Example: Post adaptive cards in Teams for user permission errors
+##### Example: post adaptive cards in Teams for user permission errors
 
 This Logic App queries Application Insights every number of minutes (specified in the deployment). It posts adaptive cards to a specified Microsoft Teams channel for each permission error encountered by users in environments that emit telemetry to the specified Application Insights resource. Administrators can use the adaptive card to open Business Central to assign the needed permissions to the user.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FPermissionError.json)
+[:::image type="content" source="https://aka.ms/deploytoazurebutton" alt-text="Button to deploy Teams cards for user permission errors to Azure.":::](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FPermissionError.json)
 
-#### Reporting
+#### Report on environment lifecycle events
 
-To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft Marketplace. This app includes an Administration report that shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md), or get it immediately from [Microsoft Marketplace](https://aka.ms/bctelemetryreport).
+To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft Marketplace. This app includes an Administration report that shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more in [Power BI apps for telemetry](telemetry-power-bi-app.md), or get the app from [Microsoft Marketplace](https://aka.ms/bctelemetryreport).
 
 > [!NOTE]
 > The Power BI reports and dataset that make up this app are available on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/PowerBI/Reports/AppSource/enrironment-app-pbix). You can customize those resources for your own needs and publish from Power BI desktop.
@@ -113,33 +121,33 @@ The operations page doesn't notify you of environment lifecycle events. However,
 
 The following table illustrates how we communicate about the different environment lifecycle events and other communication scenarios on the different channels.  
 
-|-|Application Insights|Email Notification|Microsoft 365 Message Center<sup>[\[1\]](#1)|Microsoft 365 Service Health Dashboard|Tenant Admin Center Operations Page|
+|-|Application Insights|Email Notification|Microsoft 365 Message Center<sup>[\[1\]](#1)</sup>|Microsoft 365 Service Health Dashboard|Tenant Admin Center Operations Page|
 |---------|---------|---------|---------|---------|---------|
-|Environment Created|         |         |         |         |![check mark for feature](../developer/media/check.png)|
-|Update Available|![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |
-|Update Scheduled|![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |![check mark for feature](../developer/media/check.png)
-|Updates Postponed/Resumed|![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |
-|Update Started |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Update Succeeded/Failed<sup>[\[2\]](#2) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |![check mark for feature](../developer/media/check.png)
-|Environment Hotfix |![check mark for feature](../developer/media/check.png) |         |         |         |
-|Environment Restart |![check mark for feature](../developer/media/check.png)|         |         |         |![check mark for feature](../developer/media/check.png)
-|Environment Started/Stopped|![check mark for feature](../developer/media/check.png)|         |         |         |
-|Environment Copy |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Environment Restore |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Environment Microsoft Entra tenant Move |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Cancel Session |![check mark for feature](../developer/media/check.png) |         |         |         |
-|Database Export |![check mark for feature](../developer/media/check.png) |         |         |         |Export History Page
-|Environment Setting Change <sup>[\[3\]](#3) |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Environment Deleted |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Environment Renamed |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Marketplace App Install/Update Scheduling |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Marketplace App/PTE Install/Update |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
-|Marketplace App Uninstall Scheduling |![check mark for feature](../developer/media/check.png) |         |         |         |
-|Marketplace App/PTE Uninstall | ![check mark for feature](../developer/media/check.png)        |         |         |         | ![check mark for feature](../developer/media/check.png)
-|Marketplace App/PTE Dependency Install & Update Orchestration |![check mark for feature](../developer/media/check.png) |         |         |         |
-|Installed PTE incompatible with next version |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |         |
-|Service Incidents and Advisories |         |         |         |![check mark for feature](../developer/media/check.png) |
-|Feature Change and Deprecation Announcements |         |         |![check mark for feature](../developer/media/check.png) |         |
+|Environment Created| | | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Update Available|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | |
+|Update Scheduled|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**| |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Updates Postponed/Resumed|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | |
+|Update Started|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Update Succeeded/Failed<sup>[\[2\]](#2)</sup>|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**| |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Environment Hotfix|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | | |
+|Environment Restart|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Environment Started/Stopped|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | | |
+|Environment Copy|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Environment Restore|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Environment Microsoft Entra tenant Move|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Cancel Session|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | | |
+|Database Export|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |Export History Page|
+|Environment Setting Change <sup>[\[3\]](#3)</sup>|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Environment Deleted|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Environment Renamed|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Marketplace App Install/Update Scheduling|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Marketplace App/PTE Install/Update|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Marketplace App Uninstall Scheduling|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | | |
+|Marketplace App/PTE Uninstall|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Marketplace App/PTE Dependency Install & Update Orchestration|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | | |
+|Installed PTE incompatible with next version|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | |
+|Service Incidents and Advisories| | | |:::image type="icon" source="../developer/media/check.png"::: **Yes**| |
+|Feature Change and Deprecation Announcements| | |:::image type="icon" source="../developer/media/check.png"::: **Yes**| | |
 
 <sup>1</sup><a name="1"></a>Messages for environment lifecycle events are coming to Microsoft 365 Message Center soon.
 
@@ -167,9 +175,9 @@ The following list illustrates a typical timeline:
 
 If the problematic app isn't uninstalled at this point, Microsoft typically starts the process of force-uninstalling apps, including per-tenant extensions. Data isn't deleted.  
 
-For more information about updates, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md). For more information about how to keep your [!INCLUDE [prod_short](../includes/prod_short.md)] compliant with upcoming updates, see [Maintain Marketplace Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md).  
+Learn more in [Major updates and minor updates for Business Central online](update-rollout-timeline.md). To keep your [!INCLUDE [prod_short](../includes/prod_short.md)] apps compatible with upcoming updates, learn more in [Maintain Marketplace apps and per-tenant extensions in Business Central online](../developer/app-maintain.md).
 
-## Cleaning up settings
+## Remove recipients when ending a customer relationship
 
 If you end your relationship with a customer where your email address is set as a notification recipient, remove your email address while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 

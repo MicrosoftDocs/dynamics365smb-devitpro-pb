@@ -1,5 +1,5 @@
 ---
-title: Business Central Admin Center API - Support settings
+title: Business Central Admin Center API - Support Settings
 ms.author: jswymer
 description: Learn how to resolve support contact issues in Business Central environments using the Admin Center API. Get detailed guidance on API routes and responses.
 author: jswymer
@@ -8,8 +8,9 @@ ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 11/17/2025
+ai-usage: ai-assisted
 ---
-# Business Central Admin Center API - Support settings
+# Business Central admin center API - support settings
 
 Allows for the management of support settings, such as changing the contact, for a specific environment
 
@@ -37,7 +38,7 @@ Returns information about the support contact for that environment.
 {
   "name": string, // The name of the support contact.
   "email": string, // The email address of the support contact.
-  "url": string, // A freeform url for additional support contact information such as a support website.
+  "url": string // A freeform url for additional support contact information such as a support website.
 }
 ```
 
@@ -76,7 +77,7 @@ PUT /admin/{apiVersion}/support/applications/{applicationFamily}/environments/{e
 {
   "name": string, // The name of the support contact.
   "email": string, // The email address of the support contact.
-  "url": string, // A freeform url for additional support contact information such as a support website.
+  "url": string // A freeform url for additional support contact information such as a support website.
 }
 ```
 
