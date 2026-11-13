@@ -1,20 +1,21 @@
 ---
 title: Business Central Admin Center API - Available Applications
-description: Learn about the Business Central administration center API for getting information about the applications.
+description: Use the Business Central admin center API to find available application families, countries/regions, rings, and versions for creating environments.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 11/13/2026
+ai-usage: ai-assisted
 ---
 
-# Business Central admin center API - Available applications
+# Business Central admin center API - available applications
 
 Get information about the currently available application families, countries/regions, rings, and versions that environments can be created on.
 The API endpoints here should be utilized to determine what values can be used for environment creation or copying.
 
-## Applications and corresponding Countries/regions with Rings
+## Get applications, countries/regions, and rings
 
 Get a list of the currently available application families, the available countries/regions within those families, and the available rings within the countries/regions.
 
@@ -33,14 +34,14 @@ GET /admin/{apiVersion}/applications/
   "value": [
     {
       "applicationFamily": string, // The name of the family for a given Business Central offered application. (Typically this will just be "BusinessCentral")
-      "countriesringDetails": {
+      "countriesRingDetails": [{
           "countryCode": string, // Code for a country/region that the application family supports creating environments within.
           "rings": [{ // A list of logical ring groupings where environments can be created
             "name": string, // The API name of the ring (for example, PROD, PREVIEW)
             "productionRing": bool, // Indicates that the ring is a production ring. Currently there should only be one production ring within a country.
-            "friendlyName": string, // The display friendly name of the ring
+            "friendlyName": string // The display friendly name of the ring
           }]
-      }
+      }]
     }
   ]
 }

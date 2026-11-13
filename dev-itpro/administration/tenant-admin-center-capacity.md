@@ -1,13 +1,14 @@
 ---
-title: Managing Capacity
+title: Manage Business Central Environment Capacity
 description: Learn how to monitor and optimize storage, manage environments, and stay within your quota using the administration center.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
-ms.date: 11/12/2025
+ms.date: 11/13/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Managing capacity
@@ -18,7 +19,7 @@ To help our customers manage and plan their storage costs on an ongoing basis, t
 
 [!INCLUDE [db-storage-addons](../includes/db-storage-addons.md)]
 
-## Number of environments
+## Plan the number of environments
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators can create multiple sandbox and production type environments for various purposes, like:
 
@@ -41,7 +42,7 @@ When customer administrators create users in Microsoft 365 Admin Center and assi
 
 Partners using the [Partner Sandbox](environment-types.md#partnersandbox) license on their partner tenants can purchase extra sandbox environments by increasing the number of Partner Sandbox user licenses on their tenant. Like regular [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, the first five Partner Sandbox licenses grant one production environment and three sandbox environments on the tenant. Each extra five Partner Sandbox licenses automatically grant three more sandbox environments on the tenant.
 
-## Storage
+## Monitor database storage capacity
 
 Storage capacity usage of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is represented by **Database** on the **Capacity** page.  
 
@@ -65,11 +66,11 @@ The **Storage capacity, by source** section shows how much capacity is available
 > [!NOTE]
 > The capacity occupied by the files or Blob data stored in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database&mdash;including the Tenant Media and Tenant Media Thumbnails tables&mdash;count towards the overall database storage capacity.  
 
-The files and Blob data stored in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database—including the content of the Tenant Media and Tenant Media Thumbnails tables—count toward the customer's overall database storage capacity.
+The **Capacity** page shows cached storage usage and the time it was last updated. Select **Refresh** to request a new calculation. The calculation can take a long time, so you can leave the page and return later.
 
 ### Storage usage by environment
 
-The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. Here you can see how much database storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prod_short](../developer/includes/prod_short.md)], which let's you see the distribution of data size across tables.
+The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. You can see how much database storage each environment uses. For active environments, you can also open the [Table Information page](/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to see the distribution of data size across tables.
 
 The content of all nonsystem tables is counted towards the **Database usage** storage. 
 
@@ -86,7 +87,7 @@ These operations are also blocked for the customers who have more environments t
 
 ## Reducing data stored in databases
 
-There are a few things that you can do to reduce the amount of data stored in a database to keep it under its current limit. For more information, see [Reducing Data Stored in Databases](database-reduce-data.md).
+To keep the data stored in a database under its current limit, you can reduce the amount of data stored. Learn more in [Reducing data stored in databases](database-reduce-data.md).
 
 ## Related information
 

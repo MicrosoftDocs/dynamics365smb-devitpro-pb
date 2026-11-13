@@ -1,20 +1,21 @@
 ---
-title: Managing Apps
+title: Manage Apps in the Business Central Admin Center
 description: Discover how to use the Business Central administration center to manage apps, update environments, and ensure compatibility with the latest features. 
 author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, apps, versions, check for updates
-ms.date: 05/01/2025
+ms.date: 11/13/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
-# Managing Apps
+# Manage apps in the admin center
 
 A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is built as a collection of apps. These apps include Microsoft and non-Microsoft apps, for example, apps from Marketplace. The apps work together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
-You can install apps on your environment as Global App, Per-Tenant Extension (PTE), or DEV extension. For more information, see [app types and scopes](../developer/devenv-extension-types-and-scope.md).
+You can install apps on your environment as a Global App, Per-Tenant Extension (PTE), or DEV extension. Learn more in [App types and scopes](../developer/devenv-extension-types-and-scope.md).
 
 Microsoft, partners, and ISVs frequently release updates for these apps. App updates add new features and fix known problems. To keep your environment up to date and running smoothly, check for and install the latest updates regularly.
 
@@ -22,21 +23,21 @@ To help you manage apps, the administration center includes the **Manage Apps** 
 
 |App Type | View | Upload | Install | Update | Uninstall |
 |-----|-------------|------|-----------|-----------------|--------|
-|Global App|![check mark for feature.](../developer/media/check.png)| | | ![check mark for feature.](../developer/media/check.png) |![check mark for feature.](../developer/media/check.png)|
-|Per-Tenant Extensions|![check mark for feature.](../developer/media/check.png)|![check mark for feature.](../developer/media/check.png) | ![check mark for feature.](../developer/media/check.png) | ![check mark for feature.](../developer/media/check.png) |![check mark for feature.](../developer/media/check.png)|
-|DEV Extensions|![check mark for feature.](../developer/media/check.png)| |  |  |![check mark for feature.](../developer/media/check.png)|
+| Global App |:::image type="icon" source="../developer/media/check.png"::: **Yes**| | | :::image type="icon" source="../developer/media/check.png"::: **Yes** |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+| Per-Tenant Extensions |:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes** | :::image type="icon" source="../developer/media/check.png"::: **Yes** | :::image type="icon" source="../developer/media/check.png"::: **Yes** |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+| DEV Extensions |:::image type="icon" source="../developer/media/check.png"::: **Yes**| |  |  |:::image type="icon" source="../developer/media/check.png"::: **Yes**|
 
 > [!Note]
-> In the current version, you can't install new global apps from the Admin Center, either main apps or their dependencies (library apps). You can install new global apps from the marketplace at [marketplace.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2081646). After you install a global app on your environment, you can manage it from the Admin Center.
+> You can't install a new global app as a standalone operation from the admin center. Install it from [Microsoft Marketplace](https://go.microsoft.com/fwlink/?linkid=2081646), then manage it from the admin center. However, when you update an installed app, the admin center can install new global apps that are required dependencies of that update.
 
-## Manage apps
+## View installed and scheduled apps
 
-Open the **Manage Apps** page from the environment details page by selecting **Environments** > select the environment > **Manage Apps** icon. Use the dropdown to select the app type (Global, Per-tenant Extension, or Dev Extension). The **Manage Apps** page lists all the apps installed on the environment and indicates whether updates are available. View more details and available actions for an app by going to the **App Details** page by selecting the **App Name** from the overview.
+Open the **Manage Apps** page by selecting **Environments**, selecting the environment, and then selecting **Apps**. Use the dropdown to show all app types or filter to Marketplace apps, per-tenant extensions, or development extensions. The page lists installed apps and indicates whether updates are available. It also lists new per-tenant extensions with scheduled installations. Select an app name to open the **App Details** page for more details and available actions.
 
 ### Upload and install apps
 
 #### Global apps
-ISVs can upload new global apps or new versions of existing global apps to the Marketplace to make them available for customers. For more information, see [Add your App to Marketplace](appsource.md).
+ISVs can upload new global apps or new versions of existing global apps to the Marketplace to make them available for customers. Learn more in [Add your app to Marketplace](appsource.md).
 
 To install a new global app on your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment, find it on [marketplace.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2081646) and install it from there.
 
@@ -48,42 +49,40 @@ When the ISV uploads a new version of an app installed on your environment to Ma
 > [!Important]
 > When an ISV [provides a new version of their Marketplace app](appsource.md), Microsoft validates it against all available major and minor versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from the lowest supported version as defined by the ISV. If the new app version passes validation, it's made available for environments that are running on a version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that the app passed validation for. If a Marketplace app update isn't in the list, your environment might not yet be running on a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] the newer version of the app was validated for.
 
-A new version of a global app installed on your environment might introduce new dependencies that you must install or require already installed dependent apps to be updated to a newer version for the app update to succeed. In such cases, the **Next Update** column shows **Action Required**. For more information, see [Resolving requirements for app updates](#requirements).
+A new version of a global app installed on your environment might introduce new dependencies that must be installed or require existing dependency apps to be updated. In such cases, the **Next Update** column shows **Action required**. Learn more in [Resolve requirements for app updates](#requirements).
 
-#### Per-Tenant Extensions
+#### Per-tenant extensions
 Administrators can upload and schedule installation of Per-Tenant Extensions (PTEs) from the **Manage Apps** page in the Admin Center. To upload a new PTE or an update to an existing PTE, choose **Install Extension** on the **Manage Apps** or **App Details** page.
 
 1. Browse for and select the .app package for the PTE. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] automatically determines if the package is a new PTE for the environment or an update to an existing PTE.
 1. Choose when to install the PTE after the upload and validation succeed by using the **Deployment schedule**. You can choose to install the PTE immediately, during the environment's next [update window](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment), or during the environment's next minor or major update. If you're installing a new PTE on the environment, choose to install immediately or during the next update window. Scheduling new PTEs to be installed during a future environment update isn't supported.
-1. Choose the **Sync Mode** for the scheduled PTE install. For more information, see [Synchronizing Extension Data](../developer/devenv-retaining-data-after-publishing.md).
+1. Choose the **Sync Mode** for the scheduled PTE install. Learn more in [Synchronizing extension data](../developer/devenv-retaining-data-after-publishing.md).
 1. Review and accept the terms and confirm.
 1. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] runs some validations on the uploaded .app package and schedules the installation of the app. You can follow progress on the [Operations page](tenant-admin-center-environments.md#opslog) in the Admin Center.
 1. After you schedule a new PTE or a new version of an existing PTE to be installed, you can view and cancel scheduled installations from the **App Details** page for the PTE.
 
-##### Considerations and limitations
-- You can also manage PTEs by using the **Extension Management** page in the environment. Versions of PTEs scheduled to be installed from this page aren't visible in the Admin Center until after installation succeeds. Likewise, PTE installations scheduled from the Admin Center aren't visible on the Extension Management page in the environment until the installation succeeds. Use exclusively either PTE management tool and avoid mixing use of both tools for the same environment to have a consistent overview of scheduled PTE installations. In 2027 release wave 1, PTE management on the Extension Management page is removed. For more information, see [Deprecated features in the platform](..//upgrade/deprecated-features-platform.md).
+##### PTE installation considerations and limitations
+- You can also manage PTEs by using the **Extension Management** page in the environment. Versions of PTEs scheduled to be installed from this page aren't visible in the Admin Center until after installation succeeds. Likewise, PTE installations scheduled from the Admin Center aren't visible on the Extension Management page in the environment until the installation succeeds. Use exclusively either PTE management tool and avoid mixing use of both tools for the same environment to have a consistent overview of scheduled PTE installations. In 2027 release wave 1, PTE management on the Extension Management page is removed. Learn more in [Deprecated features in the platform](../upgrade/deprecated-features-platform.md).
 - It's possible to have multiple updates to the same PTE scheduled at the same time for different deployment schedules. For example, you can schedule different versions to be installed with the next update window and the next minor update. You can't have multiple versions for the same PTE scheduled for the same deployment schedule.
 - You can't schedule the same PTE version for multiple deployment schedules. If you need to change the deployment schedule for a scheduled installation, cancel the scheduled installation and reupload and reschedule the PTE version with the correct deployment schedule.
 
 ## <a name="requirements"></a>Resolve requirements for app updates
 
-For apps that have dependencies on other apps, you might have to update or install the dependency apps. The **Requirements for App Updates** page provide this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
+An app update can require other apps to be updated or installed. The **Requirements for App Update** pane lists these dependencies under **Update requirements** and **Install requirements**. You can include the required dependency changes in the app update.
 
-After you resolve all requirements, the app that you want to update will be ready to install.
+1. Review the dependency apps and required versions.
+1. Select **Update to the latest**.
+1. In the confirmation dialog, keep **Automatically install and update the required dependencies of this app** selected.
+1. Read and acknowledge the app provider's terms of use and privacy policy for the app and its dependencies.
+1. If needed, select **Schedule update in the next update window**, then confirm the update.
 
 ### Update requirements
 
-The **Update requirements** category lists existing dependency apps that have updates to be installed. To resolve these requirements, do the following steps for each app:
-
-1. Return to the **Manage Apps** page.
-2. Find the app in the list and select **Install update**.
-3. Wait for **Available update action** column to change to **Up to date**.
+The **Update requirements** category lists installed dependency apps that you must update to a compatible version. These updates are included when you confirm the app update with automatic dependency installation and updates enabled.
 
 ### Install requirements
 
-The **Install requirements** category lists dependency apps that aren't installed yet. For example, a new app was introduced that app update depends on.
-
-You can't, however, install a new app from the **Manage App** page. Use the **Extension Management** page in the client instead. Completing this step resolves the requirement. For more information, see [Installing an Extension](/dynamics365/business-central/ui-extensions#installing-an-extension).
+The **Install requirements** category lists dependency apps that you didn't install yet. These apps are included when you confirm the app update with automatic dependency installation and updates enabled. You don't need to install them separately in the client.
 
 ## Update installed apps with environment updates
 
@@ -111,7 +110,7 @@ Sometimes the update could fail because of a transient problem. Select **Retry**
    > [!TIP]
    > When reporting issues to Microsoft Support, always provide the **Operation ID** displayed in the error message. This information helps expedite the investigations.
 
-## Uninstall apps
+## Uninstall apps and their dependencies
 
 When an app is no longer needed, you can uninstall it from your environment. We recommend you always test uninstalling the app in a sandbox environment copied from the production environment first to ensure it doesn't disrupt operations or cause problems for environment users. 
 
@@ -135,7 +134,7 @@ The publisher of a Marketplace app might run a preview for a future version of a
 - Installed Preview versions automatically update to the latest publicly available version with the **App Update Cadence** set for the environment if the latest publicly available version is a higher version than the installed Preview version.
 - It's not visible in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] or on the **Extension Management** page in the environment that an installed version of an app is a preview version. [Extension Lifecycle Trace Telemetry signals](./telemetry-extension-lifecycle-trace.md) **LC0010** and **LC00022** emitted to the Application Insights resource set up for the environment on which the app is being installed include customDimensions `extensionAvailability` and `extensionPreviewKeyProvided` to indicate whether the signal relates to Preview or Public version of an app.
 
-[Learn more about Preview versions of Marketplace Apps](../developer/devenv-checklist-submission-app-preview.md).
+Learn more in [Preview versions of Marketplace apps](../developer/devenv-checklist-submission-app-preview.md).
 
 ## Related information
 
