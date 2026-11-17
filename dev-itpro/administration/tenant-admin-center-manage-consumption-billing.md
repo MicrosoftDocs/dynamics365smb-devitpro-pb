@@ -30,7 +30,20 @@ Billable agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 ### Expense Agent (preview) billing
 
-The Expense Agent processes uploaded receipts and creates expense reports. Each uploaded receipt consumes 50 Copilot Credits, regardless of how many lines the resulting expense has.
+The Expense Agent processes uploaded receipts, categorizes and itemizes them, and creates expense reports. It also supports the approval process with approval policies. The following table shows how the Business Central scenarios performed by the Expense Agent map to Copilot Studio events, starting from November 2026.
+
+| Feature | Copilot Studio event scenario | Copilot Credits |
+|----------|----------|----------|
+| Process expense (extraction, categorization, itemization) | Agent action for each expense |  25 |
+| Process approval policy | Agent action for each category with the policy, if enabled |  15 |
+
+Created expenses that don't contain a receipt don't incur any cost. Expenses without an enabled approval policy for their expense category also don't incur any cost.
+
+For example, assume that:
+
+- Five users created their expense reports, each containing 10 expenses: nine generated from attached receipts and one mileage expense. Two of these expenses have applicable approval policy rules defined for their expense categories. Each receipt attachment triggers an agent action that consumes 25 Copilot Credits. Additionally, each expense subject to an applicable approval policy rule consumes 15 Copilot Credits when approval policies are enabled.
+
+The estimated monthly cost is calculated as: `[(9 x 25) + (1 x 0) + (2 × 15)] x 5 = 1,275 Copilot Credits/month`
 
 ### Sales Order Agent billing
 
