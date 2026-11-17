@@ -4,7 +4,7 @@ description: Learn how environments in Business Central online reflect the Micro
 author: jswymer
 ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 06/20/2025
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -14,8 +14,7 @@ ms.reviewer: jswymer
 When someone wants to buy [!INCLUDE [prod_short](../includes/prod_short.md)] online, a couple of questions must be answered because [!INCLUDE [prod_short](../includes/prod_short.md)] can be configured along several different axes. This section explains the topology of [!INCLUDE [prod_short](../includes/prod_short.md)] online so you can decide how to deploy and configure a [!INCLUDE [prod_short](../includes/prod_short.md)] tenant.
 > [!TIP]
 > [!INCLUDE [prod_short](../includes/prod_short.md)] is available in a limited number of markets. Learn more in [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md).
->
-> For more details about where you can deploy [!INCLUDE [prod_short](../includes/prod_short.md)] and other Dynamics 365 products, go to [International availability of Dynamics 365](/dynamics365/get-started/availability). That article offers a PDF that you can download to learn more.
+
 
 ## Microsoft 365 and Microsoft Entra ID
 

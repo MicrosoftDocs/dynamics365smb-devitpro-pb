@@ -5,7 +5,7 @@ author: jswymer
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: jswymer
-ms.date: 12/02/2024
+ms.date: 11/17/2026
 ---
 <!-- comment: when viewing the live version of this article, there's a lot of redundancy in the Service Updates section (line 93). The "includes" text (line 91) contains much of the same info as the text in line 93. -->
 <!-- question: In the paragraph in line 21, what does 30-K mean? It looks like shortcut for 30,000, but that seems small. -->
@@ -28,7 +28,7 @@ The service is built from the ground up as a multitenant service, comprised of m
 
 [!INCLUDE[prod_short](includes/prod_short.md)] online is running globally in more than 170 countries/regions, out of 21 Microsoft Azure regions, and new countries/regions go live on a quarterly basis. Learn more in [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
 
-For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] online is deployed, visit [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) and then in the **Product** pane, under **Operations Apps**, select **Dynamics 365 Business Central**.  
+For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] online is deployed, visit [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).  
 
 ### Availability of Copilot in Business Central
 

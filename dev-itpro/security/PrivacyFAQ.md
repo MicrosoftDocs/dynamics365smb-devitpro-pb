@@ -2,7 +2,7 @@
 title: Privacy FAQ
 description: Find useful links and other answers to frequently asked questions about privacy in Dynamics 365 Business Central.
 author: jswymer
-ms.date: 08/12/2024
+ms.date: 11/17/2026
 ms.reviewer: jswymer
 ms.topic: faq
 ms.author: jswymer
@@ -18,8 +18,7 @@ Here you find links that can help you find answers to questions concerning priva
 - Customer definitions on Microsoft Trust Center: [How Microsoft categorizes data for online services](https://www.microsoft.com/trust-center/privacy/customer-data-definitions)
 - Site for legal terms for all Microsoft products: [Product Terms](https://go.microsoft.com/fwlink/?LinkId=2173816)
 - Azure Geo to Azure regional mapping: [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/)
-- Dynamics 365 and Power Platform availability: [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/)
-- Get the PDF file that shows the international availability of Dynamics 365:[International availability of Dynamics 365](/dynamics365/get-started/availability)
+- Dynamics 365 and Power Platform availability: [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability)
 - Business Central online uses Azure Front Door, which isn't in scope for the EU Data Boundary: [Services permanently excluded from the EU Data Boundary](/privacy/eudb/eu-data-boundary-permanent-transfers-from-services)
 
 ## Related information

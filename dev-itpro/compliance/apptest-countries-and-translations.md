@@ -2,7 +2,7 @@
 title: Country/Regional Availability and Supported Languages
 description: Learn where Business Central is available, which languages are supported, and how partners deliver localized solutions through Microsoft commercial marketplace.
 author: sorenfriisalexandersen
-ms.date: 08/03/2026
+ms.date: 11/17/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.author: altotovi
@@ -286,7 +286,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 >
 > <sup>6</sup> Environments with IT, SM, VA, and PL localizations move from the Europe to the Italy and Poland Azure geographies with the update to version 28.5. Ensure the environment isn't linked to a Power Platform environment for the move to succeed.
 
-Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
+Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 Administrators can use the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] admin center to find the Azure region that their environments are in.
 
