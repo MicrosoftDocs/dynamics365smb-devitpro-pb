@@ -1,37 +1,38 @@
 ---
-title: Analyzing Verbose Enable and Disable Telemetry | Microsoft Docs
-description: Learn about the verbose logging telemetry in Business Central  
+title: Analyzing Verbose Logging Telemetry
+description: Analyze verbose logging telemetry in Business Central to see when additional logging starts and ends for a session while troubleshooting user problems.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/23/2022
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
-# Analyzing Verbose Telemetry
+# Analyzing verbose telemetry
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)] 
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] users can temporarily set up their environment to emit more verbose telemetry by going to the **Help and Support** page in the client and selecting **Additional Logging**.  They'll typically only do this when asked by a partner or support representative to help troubleshoot problems. This additional logging will continue for 15 minutes or until the user closes the browser or signs out of Business Central&mdash;then it's turned off
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] users can temporarily set up their session to emit more verbose telemetry by going to the **Help and Support** page in the client and selecting **Additional Logging**. They'll typically only do this when asked by a partner or support representative to help troubleshoot problems. This additional logging applies to the current session for 15 minutes. It doesn't enable verbose logging for other users.
 
 A telemetry trace is recorded whenever additional logging is turned on or off.
 
-For information about enabling additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support#troubleshooting).
+Learn more in [Resources for Help and Support](/dynamics365/business-central/product-help-and-support#troubleshooting).
 
 ## <a name="enabled"></a>Verbose telemetry enabled for session
 
-Occurs when additional logging is turned on from the **Help and Support** page in the client. 
+Occurs when additional logging is turned on from the **Help and Support** page in the client or by an AL call to enable verbose telemetry.
 
 ### General dimensions
 
 The following table explains the general dimensions included in the trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|-----|
 |message|**Verbose telemetry enabled for session: {sessionId}**|
-|severityLevel|**3**|
+|severityLevel|**1**|
 
 ### Custom dimensions
 
@@ -42,8 +43,8 @@ The following table explains the custom dimensions included in the trace.
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension is only for traces from Business Central online.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|Specifies the name of the tenant environment. This dimension is only for traces from Business Central online. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**RT0023**|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
@@ -52,18 +53,18 @@ The following table explains the custom dimensions included in the trace.
 
 -->
 
-## <a name="enabled"></a>Verbose telemetry disabled for session
+## <a name="disabled"></a>Verbose telemetry disabled for session
 
-Occurs when additional logging is turned off because a user closed the browser in which Business Central was running or they signed out of Business Central.
+Occurs when the session's temporary verbose logging override is reset, including when its duration expires. This event doesn't specifically indicate that the user closed the browser or signed out.
 
 ### General dimensions
 
 The following table explains the general dimensions included in the trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|-----|
 |message|**Verbose telemetry disabled for session: {sessionId}**|
-|severityLevel|**3**|
+|severityLevel|**1**|
 
 ### Custom dimensions
 
@@ -75,8 +76,8 @@ The following table explains the custom dimensions included in the trace.
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension is only for traces from Business Central online.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|Specifies the name of the tenant environment. This dimension is only for traces from Business Central online. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <!--

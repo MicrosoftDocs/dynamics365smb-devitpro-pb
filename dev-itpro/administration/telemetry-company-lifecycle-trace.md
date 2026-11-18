@@ -1,11 +1,12 @@
 ---
-title: Company lifecycle trace | Microsoft Docs
-description: Learn about the company lifecycle telemetry in Business Central  
+title: Analyzing Company Lifecycle Trace Telemetry
+description: Analyze Business Central company lifecycle telemetry to track company creation, copying, and deletion, and investigate canceled or failed operations.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 12/21/2023
+ms.date: 11/17/2026
+ai-usage: ai-assisted
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -39,13 +40,13 @@ Occurs when the company has been successfully created.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|deprecatedKeys|Specifies a comma-separated list of keys that have been deprecated. We recommend that you update any queries that use these keys to use the new key names.|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0001**|
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the server to create the company. The time has the format hh:mm:ss.sssssss.|
@@ -71,16 +72,17 @@ Occurs when creating a company was canceled.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|deprecatedKeys|Specifies a comma-separated list of keys that have been deprecated. We recommend that you update any queries that use these keys to use the new key names.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0002**|
-|failureReason|**Operation was canceled**|
-|result|**Failure**|
-|serverExecutionTime|Specifies the amount of time it took the server create the company before being canceled. The time has the format hh:mm:ss.sssssss.|
+|cancelReason|Specifies why the operation was canceled.|
+|cancelReasonMessage|Specifies the exception message for the cancellation.|
+|result|**Canceled**|
+|serverExecutionTime|Specifies the amount of time it took the server to create the company before being canceled. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
@@ -95,7 +97,7 @@ Occurs when a company failed to be created.
 |Dimension|Description or value|
 |---------|-----|
 |message|**Company creation failed: {companyName}**<br /><br />`{companyName}` indicates the name of the company being created.|
-|severityLevel|**1**|
+|severityLevel|**3**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -103,16 +105,16 @@ Occurs when a company failed to be created.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|deprecatedKeys|Specifies a comma-separated list of keys that have been deprecated. We recommend that you update any queries that use these keys to use the new key names.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0003**|
 |failureReason|Specifies the exception that indicates the cause of the failure. |
 |result|**Failure**|
-|serverExecutionTime|Specifies the amount of time it took the server create the company before it failed. The time has the format hh:mm:ss.sssssss.|
+|serverExecutionTime|Specifies the amount of time it took the server to create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
@@ -126,8 +128,8 @@ Occurs when a company has been copied from another company successfully.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Company copied: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is name of the company that was copied.</li><li>`{companyNameDestination}`is the name of new company that was created.</li></ul>|
-|severityLevel|**2**|
+|message|**Company copied: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is the name of the company that was copied.</li><li>`{companyNameDestination}` is the name of the new company that was created.</li></ul>|
+|severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -135,13 +137,13 @@ Occurs when a company has been copied from another company successfully.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyNameDestination|Specifies the name of the new company.|
 |companyNameSource|Specifies the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|deprecatedKeys|Specifies a comma-separated list of keys that have been deprecated. We recommend that you update any queries that use these keys to use the new key names.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0004**|
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the server to copy the company. The time has the format hh:mm:ss.sssssss.|
@@ -153,13 +155,13 @@ Occurs when a company has been copied from another company successfully.
 
 ## Company copy canceled
 
-Occurs when a copying a company was canceled.
+Occurs when copying a company was canceled.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Company copied canceled: {source company name} to {destination company name}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul> |
+|message|**Company copy canceled: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is the name of the company that was being copied.</li><li>`{companyNameDestination}` is the name of the new company that was being created.</li></ul> |
 |severityLevel|**2**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -169,14 +171,16 @@ Occurs when a copying a company was canceled.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed operation, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|companyNameSource|Specifies the name of the company that was being copied.|
+|companyNameDestination|Specifies the name of the new company that was being created.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0005**|
-|failureReason|**Operation was canceled**. |
-|result|**Failure**|
+|cancelReason|Specifies why the operation was canceled.|
+|cancelReasonMessage|Specifies the exception message for the cancellation.|
+|result|**Canceled**|
 |serverExecutionTime|Specifies the amount of time it took the server to copy the company. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed. |
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
@@ -192,7 +196,7 @@ Occurs when a company failed to be copied from another company.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Company copy failed: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul>|
+|message|**Company copy failed: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is the name of the company that was being copied.</li><li>`{companyNameDestination}` is the name of the new company that was being created.</li></ul>|
 |severityLevel|**3**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -201,17 +205,18 @@ Occurs when a company failed to be copied from another company.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|companyNameSource|Specifies the name of the company that was being copied.|
+|companyNameDestination|Specifies the name of the new company that was being created.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0006**|
 |failureReason|Specifies the exception that indicates the cause of the failure.|
 |result|**Failure**|
 |serverExecutionTime|Specifies the amount of time on the server. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed.|
-|sqlRowsRead|Specifies the number of table rows that by the SQL statements.|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
@@ -233,14 +238,14 @@ Occurs when a company has been deleted successfully.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0007**|
 |result|**Success**|
-|serverExecutionTime|Specifies the amount of time it took on server. The time has the format hh:mm:ss.sssssss.|
+|serverExecutionTime|Specifies the amount of time it took on the server. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the operation executed.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
@@ -249,7 +254,7 @@ Occurs when a company has been deleted successfully.
 
 ## Company deletion canceled
 
-Occurs when deleting a company failed was canceled.
+Occurs when deleting a company was canceled.
 
 ### General dimensions
 
@@ -264,16 +269,17 @@ Occurs when deleting a company failed was canceled.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0008**|
-|failureReason|**Operation was canceled**|
-|result|**Failure**|
-|serverExecutionTime|Specifies the amount of time it took on server. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that executed by the operation.|
+|cancelReason|Specifies why the operation was canceled.|
+|cancelReasonMessage|Specifies the exception message for the cancellation.|
+|result|**Canceled**|
+|serverExecutionTime|Specifies the amount of time it took on the server. The time has the format hh:mm:ss.sssssss.|
+|sqlExecutes|Specifies the number of SQL statements that were executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to delete the company before being canceled. The time has the format hh:mm:ss.sssssss.|
@@ -295,16 +301,16 @@ Occurs when a company failed to be deleted.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that performed the operation, such as **Background** or **Web**. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |eventId|**LC0009**|
 |failureReason|Specifies the exception that caused the failure.|
-|result|**Failed**|
-|serverExecutionTime|Specifies the amount of time it took on server. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that executed by the operation.|
+|result|**Failure**|
+|serverExecutionTime|Specifies the amount of time it took on the server. The time has the format hh:mm:ss.sssssss.|
+|sqlExecutes|Specifies the number of SQL statements that were executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to delete the company before it failed. The time has the format hh:mm:ss.sssssss.|

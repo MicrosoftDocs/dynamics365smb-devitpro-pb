@@ -2,7 +2,7 @@
 title: What's New or Changed in Business Central 2026 release wave 2 - Update 29.0
 description: Get an overview of new and changed capabilities in the 29.0 update of Business Central online, which is part of 2026 release wave 2.
 ms.author: jswymer
-ms.date: 09/29/2026
+ms.date: 11/17/2026
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
@@ -17,11 +17,10 @@ This article provides an overview of the new and updated features and general in
 
 ## New and updated features
 
-The table lists new and updated features in update 29.0. Select a Roadmap ID to view the corresponding entry in the  [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap).
+The table lists new and updated features in update 29.0. Select a Roadmap ID to view the corresponding entry in the  [Microsoft Copilot Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap).
 
 |Product area|Feature|Availability|Roadmap ID|
 |-|-|-|-|
-|Adapt faster with Power Platform|Map new Dataverse fields in Business Central|General availability|[573365](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=573365)|
 |Copilot and agents|Enable Microsoft Copilot chat experience|Public preview|[573362](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=573362)|
 ||Improve purchase order matching in Payables Agent|General availability|[573380](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=573380)|
 ||Manage agent permissions easier|General availability|[573370](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=573370)|
@@ -174,9 +173,9 @@ Explore the Business Central Launch Edition (BCLE)&mdash;a comprehensive skillin
 - What's new partner deck for download: [aka.ms/BCLEDECK](https://aka.ms/BCLEDECK)
 - Have questions? Go to the new Business Central partner communities on Viva Engage and ask the product experts: [aka.ms/BCVivaEngage](https://aka.ms/BCVivaEngage)
 
-### New AI at Work roadmap instead of release plans
+### New Microsoft Copilot Roadmap instead of release plans
 
-Starting in September 2026, Microsoft stops publishing [release plans](/dynamics365/release-plans/). New Business Central capabilities will be published to the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). Existing release plans remain available for historical reference until further notice. Learn more about the roadmap and disclosure changes at [One always-on roadmap: Dynamics 365, Power Platform and Dataverse join the AI at Work roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
+Starting in September 2026, Microsoft stops publishing [release plans](/dynamics365/release-plans/). New Business Central capabilities will be published to the [Microsoft Copilot Roadmap](https://aka.ms/AIatWorkRoadmap). Existing release plans remain available for historical reference until further notice. Learn more about the roadmap and disclosure changes at [One always-on roadmap: Dynamics 365, Power Platform and Dataverse join the Microsoft Copilot Roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
 
 ### Want to stay informed about upcoming Business Central releases?
 

@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 09/28/2026
+ms.date: 11/18/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: sfi-image-nochange
@@ -34,33 +34,6 @@ A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can li
 
 When a link exists between a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and a Power Platform environment, several environment lifecycle operations are blocked on the Power Platform environment. You can't delete the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment if it's linked to a Power Platform environment. For environment lifecycle operations on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment that create a new environment, such as [Copy](tenant-admin-center-environments-copy.md) and [Restore](tenant-admin-center-backup-restore.md), the target environment isn't linked to a Power Platform environment as part of the operation. You can link the target environment to a different Power Platform environment after the operation that creates the environment completes.
 
-### Link Business Central environment to Power Platform environment
-
-To complete this task, you need to be an internal admin with a role that grants access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and permissions to update the properties of the targeted Power Platform environment, such as environment administrator.
-
-> [!IMPORTANT]
-> Users with an admin Microsoft Entra role assigned might not automatically gain the environment administrator role on the Power Platform environment. If the Power Platform environment doesn't show up as available to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to, verify that you're an Environment Admin for the Power Platform environment. Learn more in [Role-based security roles](/power-platform/admin/database-security).
-
-1. Sign in to the Business Central admin center and open the environment.
-1. In the **Linked Power Platform Environment** section on the environment page, select **Link** under **Environment** or **Modify** to change to another Power Platform environment.
-
-   ![Screenshot showing the Linked Power Platform setting on the environment in the Business Central admin center](../developer/media/admin/environment-linked-power-platform.png)
-
-   > [!NOTE]
-   > Only Power Platforms that meet the following conditions are available to link:
-   >
-   > - In the **Ready** state.
-   > - Same type of environment (Production or Sandbox).
-   > - Not linked to another environment already.
-
-1. In the **Link** pane, select the Power Platform environment, and then select **Link**.
-
-### Unlink environments
-
-You can unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from the Power Platform environment. When you unlink an environment, it disables any settings the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits from the Power Platform environment but doesn't disable any integrations set up between the two environments. Examples of these integrations include Power Automate flows created from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment or data integration with Dynamics 365 Sales or Dynamics 365 Field Service.
-
-You can [relink unlinked environments to the same or different environments](#link-business-central-environment-to-power-platform-environment).
-
 ## Types of environments
 
 You can create different types of environments. Choose the type of environment based on what you need it for. Learn more in [Production and Sandbox Environments](environment-types.md).  
@@ -76,12 +49,6 @@ You can create different types of environments. Choose the type of environment b
 ### Sandbox environments
 
 [!INCLUDE [admin-env-sandbox](../developer/includes/admin-env-sandbox.md)]
-
-[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
-
-### Presales performance evaluation
-
-[!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
 ## Create a new environment
 
@@ -121,6 +88,33 @@ You can create new environments that are either production environments or sandb
 
 To delete an environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then select **Delete** on the action ribbon.
 
+### Link Business Central environment to Power Platform environment
+
+To complete this task, you need to be an internal admin with a role that grants access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and permissions to update the properties of the targeted Power Platform environment, such as environment administrator.
+
+> [!IMPORTANT]
+> Users with an admin Microsoft Entra role assigned might not automatically gain the environment administrator role on the Power Platform environment. If the Power Platform environment doesn't show up as available to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to, verify that you're an Environment Admin for the Power Platform environment. Learn more in [Role-based security roles](/power-platform/admin/database-security).
+
+1. Sign in to the Business Central admin center and open the environment.
+1. In the **Linked Power Platform Environment** section on the environment page, select **Link** under **Environment** or **Modify** to change to another Power Platform environment.
+
+   ![Screenshot showing the Linked Power Platform setting on the environment in the Business Central admin center](../developer/media/admin/environment-linked-power-platform.png)
+
+   > [!NOTE]
+   > Only Power Platforms that meet the following conditions are available to link:
+   >
+   > - In the **Ready** state.
+   > - Same type of environment (Production or Sandbox).
+   > - Not linked to another environment already.
+
+1. In the **Link** pane, select the Power Platform environment, and then select **Link**.
+
+### Unlink environments
+
+You can unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from the Power Platform environment. When you unlink an environment, it disables any settings the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits from the Power Platform environment but doesn't disable any integrations set up between the two environments. Examples of these integrations include Power Automate flows created from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment or data integration with Dynamics 365 Sales or Dynamics 365 Field Service.
+
+You can [relink unlinked environments to the same or different environments](#link-business-central-environment-to-power-platform-environment).
+
 ## <a name="opslog"></a>Log of administrative operations
 
 The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner make in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Use this log to view which operations were created and when. You can also access detailed error messages in this log, should any operation fail.
@@ -148,7 +142,7 @@ Currently, the log includes the following operations:
 
 ### Retention period
 
-The operations are kept for 180 days, after which they're deleted.
+The system keeps operations for 180 days, and then deletes them. Operations are stored for a particular environment. If you permanently delete the environment, the system also deletes operations that belong to it, even if they're less than 180 days old. The system retains the environment delete operation for 180 days even after you permanently delete the environment. To store operation details outside of an environment's scope and for more than 180 days, use [auditing events in Purview](../auditing/audit-events-in-purview.md).
 
 ## Related information
 

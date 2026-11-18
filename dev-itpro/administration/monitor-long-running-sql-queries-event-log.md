@@ -1,28 +1,31 @@
 ---
-title: "Monitoring Long Running SQL Queries to the Event Log"
-description: This topic provides an overview on how to monitor long running SQL queries in the event log starting with NAV 2017. 
+title: "Monitoring Long-Running SQL Queries in the Event Log"
+description: Monitor long-running SQL queries from Business Central Server in the Windows event log and Application Insights to investigate slow database operations.
 ms.custom: bap-template
-ms.date: 04/01/2021
+ms.date: 11/17/2026
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
+ai-usage: ai-assisted
 ---
-# Monitoring and Analyzing Long Running SQL Queries
+# Monitoring and analyzing long-running SQL queries
 
 <!-- This topic needs to be updated for the BC autumn release. -->
  
 [!INCLUDE[nav2017](../developer/includes/nav2017.md)] was the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long. Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2, long running queries can also be emitted as telemetry to Microsoft Azure Application Insights. Using Application Insights requires that you first enable it on your tenant.
 
-## <a name="threshold"></a>Defining the long running SQL queries threshold
+## <a name="threshold"></a>Defining the long-running SQL query threshold
 
 The time logged when a SQL query runs is the time spent on the called database as seen from the server. There are multiple reasons that can cause a delay. For example, a delay happens when the database waits for a lock to release. Or it runs an operation that's missing indexes.
 
-The threshold of when a SQL query is considered to be long running is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting **SqlLongRunningThreshold**. The default value is 1000 milliseconds (ms). By default, the threshold is set to 1000 milliseconds. In this case, if a SQL query runs longer 1000 ms, a message is recorded in the event log and emitted as telemetry. The message indicates that the action took longer than expected or longer than the given threshold.
+The [!INCLUDE[server](../developer/includes/server.md)] configuration setting `SqlLongRunningThreshold` controls when a successful SQL query is logged as long-running in the Windows event log. In Business Central version 29, the default value is 750 milliseconds (ms). A query that takes at least the threshold is logged with a warning.
 
-Learn more about setting the **SqlLongRunningThreshold** by using the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in [Configuring Business Central Server](configure-server-instance.md).
+The separate setting `SqlLongRunningThresholdForApplicationInsights` controls the threshold for Application Insights telemetry. Its default value is also 750 ms. Changing one setting doesn't change the other.
 
-The cmdlet includes the `-ApplyTo Memory`parameter that enables you to change the setting without doing a server restart. For example, to change the threshold dynamically to 2000 ms, run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
+Learn more about setting `SqlLongRunningThreshold` by using the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in [Configuring Business Central Server](configure-server-instance.md).
+
+The cmdlet includes the `-ApplyTo Memory` parameter that enables you to change the setting without doing a server restart. For example, to change the event-log threshold dynamically to 2000 ms, run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
 
 ```powershell
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
@@ -30,9 +33,9 @@ Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLong
 
 ## Monitor and analyze data
 
-To use the Windows Event Log, see [Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md).
+Learn more about using the Windows event log in [Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md).
 
-To set up and use Application Insights, see [Enabling Application Insights for Tenant Telemetry](telemetry-enable-application-insights.md).
+Learn more about setting up and using Application Insights in [Enabling Application Insights for Tenant Telemetry](telemetry-enable-application-insights.md).
 <!-- 
 ## <a name="ApplicationInsights"></a>Enable Sending Telemetry to Application Insights
 
@@ -127,7 +130,7 @@ If you have access to an Application Insights resource in Microsoft Azure, you c
 ## Related information
 
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)  
-[Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
+[Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration)  
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  

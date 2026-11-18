@@ -1,30 +1,31 @@
 ---
-title: Skip API data upgrade in cloud migration
-description: This article explains things you can skip the API data upgrade during cloud migration and complete it after going live
+title: Skip API Data Upgrade During Cloud Migration
+description: Learn how to skip API data upgrade for selected companies during Business Central cloud migration and complete the upgrade after going live.
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 12/12/2023
+ms.date: 11/17/2026
 ms.custom: bap-template
 author: jswymer
+ai-usage: ai-assisted
 ---
 
 # Skip API data upgrade in cloud migration
 
-When running the data upgrade during cloud migration, you can experience a long running upgrade because of the API upgrade. To prevent this condition, you can skip the API data upgrade during cloud migration, and then run it after going live on the tenant. Skipping the API data upgrade is done on per-company basis, and the only consequence is that the company starts using APIs later after you schedule the upgrade.
+When running the data upgrade during cloud migration, you can experience a long-running upgrade because of the API upgrade. To prevent this condition, you can skip the API data upgrade during cloud migration, and then run it after going live on the tenant. Skipping the API data upgrade is done on a per-company basis. The affected API entities aren't ready for use until you complete their data upgrades.
 
-There are two ways to skip the API data upgrade during cloud migration. One way is to disable it as part of the on-premises upgrade process. The other way is to disable using cloud migration management in the Business Central online environment.
+There are two ways to skip the API data upgrade during cloud migration. One way is to disable it as part of the on-premises upgrade process. The other way is to disable it using cloud migration management in the Business Central online environment.
 
 ## Skip from the online environment
 
-Before you can do this task, you have to cloud migration setup and data replication. <!-- I disabled it before data rep, but after data rep, it was enabled again-->
+Before you can do this task, you have to complete cloud migration setup and data replication.
 
-1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
+1. Sign in to [Business Central online](https://businesscentral.dynamics.com).
 1. Search for and open the **Cloud Migration Management** page.
-1. Select the **Manage API Upgrade** action to open the **API upgrade overview** page. 
+1. Select the **Manage API Upgrade** action to open the **API Upgrade Overview** page.
 1. To disable the API data upgrade for a company, do the following steps:
 
-   1. On the **API upgrade overview** page, select the company in the **Company Name** column.
+   1. On the **API Upgrade Overview** page, select the company in the **Company Name** column.
 
       The **API Data Upgrade List** opens in a new browser tab. 
       
@@ -33,12 +34,12 @@ Before you can do this task, you have to cloud migration setup and data replicat
       You can close the **API Data Upgrade List** tab after you make the selection. 
 1. Repeat the previous step for each company you want to disable the API data upgrade.
 
-   The **API upgrade overview** page doesn't show the changes until it's refreshed (select (<kbd>F5</kbd>).
+The **API Upgrade Overview** page doesn't show the changes until it's refreshed. Press <kbd>F5</kbd> to refresh it.
 
 
 ## Skip from on-premises upgrade
 
-You can use the following SQL query to skip upgrade for a single company:
+You can use the following SQL query to skip upgrade for a single company. Replace `SetCompanyName` with the company name. Run the query only if the disable tag doesn't already exist for that company:
 
 ```sql
 DECLARE @UpgTag nvarchar(250);  
@@ -63,7 +64,7 @@ SET @UpgTag = UPPER('MS-469217-DisableAPIDataUpgrade-20230411')
 INSERT INTO [dbo].[Upgrade Tags$63ca2fa4-4f03-4f2b-a480-172fef340d3f] (Tag, [Tag Timestamp], [Skipped Upgrade], Company)  
 SELECT  
     UPPER(@UpgTag),  
-    'SetDate',  
+    '1753-01-01 00:00:00.000',
     1,  
     UPPER([Name])  
 FROM  
@@ -78,7 +79,7 @@ WHERE
 
 ## Completing API data upgrade after going live
 
-When you're finished with the cloud migration, run the API data upgrade as described [Run API data upgrade](migration-finish.md#API).
+When you're finished with the cloud migration, run the API data upgrade. Learn more in [Run API data upgrade](migration-finish.md#API).
 
 <!--
 1. Search for and open the **Cloud Migration Management** page.

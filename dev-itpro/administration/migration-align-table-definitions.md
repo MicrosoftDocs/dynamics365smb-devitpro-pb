@@ -1,39 +1,43 @@
 ---
-title: Align SQL Table Definitions
-description: Learn what table properties need to be the same in on-premises and online database for cloud migration to work.
+title: Align SQL Table Definitions for Cloud Migration
+description: Learn which SQL table definitions must match between Business Central on-premises and online databases before you run cloud migration.
+author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 
-ms.topic: article
-ms.date: 11/25/2022
+ms.topic: concept-article
+ms.date: 11/17/2026
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Align SQL table definitions
 
-For successful cloud migration and data upgrade, the on-premises source table objects and the corresponding online table objects must have the same definitions for the following properties:
+For successful cloud migration replication, the on-premises source tables and the corresponding online destination tables must have matching definitions for the following properties:
 
 - Primary keys
 - Field names and data types
 
-These properties are indicated by an asterisk `*` in the following code snippet:
+Replication also checks field lengths and reports incompatible lengths as column-mapping errors.
+
+In the following example, `MyField1` is the primary-key field. The fields being migrated must have matching names and data types in the source and destination, including the primary-key fields.
 
 ```al
-table id **MyTable
-{  
+table 50100 MyTable
+{
     fields
     {
-        field(1;*MyField1; *Integer)
-        {    
+        field(1; MyField1; Integer)
+        {
         }
-        field(2;*MyField2; *Integer)
-        {    
+        field(2; MyField2; Integer)
+        {
         }
     }
-    
+
     keys
     {
-        key(*Key1; *MyField1)
+        key(Key1; MyField1)
         {
             Clustered = true;
         }
@@ -43,16 +47,16 @@ table id **MyTable
     }
 ```
 
-Other properties of tables, like the following, are either not required to match or the difference can be handled by [table mapping](migration-table-mapping.md) during cloud migration setup.
+Other properties of tables, like the following, are either not required to match or the difference can be handled by table mapping during cloud migration setup. Learn more in [Define cloud migration table mappings](migration-table-mapping.md).
 
-- Different tables names can be handled by table mapping. In the previous code snippet, the table name is indicated by `**`.  
-- Missing fields or extra fields in tables can be handled by table mapping
-- Different IDs aren't relevant and don't affect cloud migration
-- Different secondary keys aren't relevant and don't affect cloud migration
+- Different table names can be handled by table mapping. In the previous code snippet, the table name is `MyTable`.
+- A subset of fields can be mapped to a different table or table extension. The fields being moved must still have matching names and data types.
+- Table and field IDs don't have to match for SQL replication.
+- Secondary keys don't have to match for SQL replication.
 
 > [!NOTE]
-> These properties must match to upgrade Dynamics NAV to Business Central on-premises.  
+> These rules apply to cloud migration replication, not to an on-premises application or data upgrade. An on-premises upgrade has separate requirements for preserving table and field identities and handling schema changes. Learn more in [Supported upgrade paths to Business Central releases](../upgrade/upgrade-paths.md).
 
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+[Define cloud migration table mappings](migration-table-mapping.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Power Platform integration with Business Central via Virtual Tables
 description: Learn about integration of Power Platform with Business Central via virtual tables.
-ms.date: 09/30/2025
+ms.date: 11/18/2026
 ms.reviewer: solsen
 ms.topic: overview
 author: SusanneWindfeldPedersen
@@ -46,6 +46,13 @@ There are known limitations with [!INCLUDE[prod_short](../developer/includes/pro
   - Combining **And** and **Or** groups across columns.
   - Filtering on related tables.
   - Filtering on calculated fields.
+
+> [!NOTE]
+> [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online can connect only to Dataverse environments that belong to the same Microsoft Entra tenant as the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. This requirement also applies to integrations with Dataverse and Field Service.
+>
+> Before you sign in, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] verifies that the environments belong to the same tenant. If the tenants differ, or [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can't verify the tenant, it blocks the connection.
+>
+> This requirement doesn't apply to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises.
 
 ## Related information
 

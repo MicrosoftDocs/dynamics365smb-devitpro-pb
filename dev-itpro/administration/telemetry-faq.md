@@ -1,13 +1,14 @@
 ---
 title: Telemetry FAQ (Frequently Asked Questions)
-description: See frequently asked questions we get on telemetry in Business Central
+description: Get answers about Business Central telemetry setup, costs, privacy, retention, access, and querying data in Azure Application Insights.
 author: kennie
-ms.topic: how-to
+ms.topic: faq
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/23/2024
+ms.date: 11/17/2026
 ms.author: kepontop
 ms.reviewer: jswymer
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 # Telemetry FAQ (Frequently Asked Questions)
 
@@ -19,9 +20,9 @@ This article addresses some of the most frequently asked questions around [!INCL
 
 ## How do I enable telemetry for apps/extensions?
 
-To set up an app/extension to send telemetry data to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], you need to add the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string to the extension's app.json.
+To set up an app/extension to send telemetry data to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], you need to add the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string to the extension's `app.json`.
 
-For more information, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
+Learn more in [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
 ## What does it cost?
 
@@ -33,7 +34,7 @@ For more information, see [Sending Extension Telemetry to Azure Application Insi
 
 ## How can I see what telemetry Business Central emits?
 
-See an overview at [Telemetry overview](telemetry-overview.md).
+Learn more in [Telemetry overview](telemetry-overview.md).
 
 ## How can I see which telemetry events are most common in my Application Insights?
 
@@ -41,14 +42,14 @@ See an overview at [Telemetry overview](telemetry-overview.md).
 
 ## Can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?
 
-Yes. Learn more at [How can I query telemetry from Azure Log Analytics?](telemetry-analyze-with-kql.md#how-can-i-query-telemetry-from-log-analytics).
+Yes. Learn more in [How can I query telemetry from Azure Log Analytics?](telemetry-analyze-with-kql.md#how-can-i-query-telemetry-from-log-analytics).
 
 ## Why do I see _1, _2 in custom dimensions?
 
-Each event has a `customDimensions` column that includes a set of dimensions containing metrics specific to the event. Each of these custom dimensions has a limit of 8,000 characters. When logging an event with a dimension exceeding 8,000 characters, the  [!INCLUDE[server](../developer/includes/server.md)] adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8,000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+Each event has a `customDimensions` column that includes a set of dimensions containing metrics specific to the event. Business Central uses 8,000-character chunks for long dimension values. When logging an event with a dimension exceeding 8,000 characters, the  [!INCLUDE[server](../developer/includes/server.md)] adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8,000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key_name>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
 
 > [!NOTE]
-> The 8000 character limit is governed by the [Application Insights API](/azure/azure-monitor/app/api-custom-events-metrics#limits).
+> Application Insights supports property values up to 8,192 characters. Business Central's overflow chunks use 8,000 characters. Learn more in [Application Insights limits](/azure/azure-monitor/fundamentals/service-limits#application-insights).
 
 ## Should each customer/app have their own Application Insights resource, rather than one insight for multiple customers/apps?
 
@@ -58,15 +59,15 @@ Also, it's recommended to separate per-environment telemetry from per-app teleme
 
 ## What is the data retention policy in Azure Application Insights?
 
-You can set the workspace default retention policy in the Azure portal to 30, 31, 60, 90, 120, 180, 270, 365, 550, and 730 days. It's also possible to set a different policy for specific tables.
+You configure retention in the Log Analytics workspace linked to your Application Insights resource. For Analytics tables, you can configure analytics retention up to two years and total retention up to 12 years. Data in long-term retention requires a search job. You can also set a different retention policy for specific tables.
 
-See [Configure the default workspace retention policy](/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2#configure-the-default-workspace-retention-policy)
+Learn more in [Manage data retention in a Log Analytics workspace](/azure/azure-monitor/logs/data-retention-configure).
 
 ## How do I delete data from Azure Application Insights?
 
-You can purge data in an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource by using the _purge_ REST API and set a set of user-defined filters.
+You can purge data in an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource by using the `purge` REST API and a set of user-defined filters.
 
-See [Application Insights purge API](/rest/api/application-insights/components/purge#examples).
+Learn more in [Application Insights purge API](/rest/api/application-insights/components/purge#examples).
 
 ## Can I grant read-only access to Azure Application Insights?
 
@@ -76,13 +77,15 @@ You might also need to add the role assignment "Reader" to the person on the Res
 
 ## What about privacy laws and regulations?
 
-The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service doesn't emit any personal or customer data to Application Insights. So the telemetry is born privacy compliant. The service only emits data generated while running the service or program and data that identifies a tenant, general configuration data, or usage data. This data isn't linkable to a user and doesn't contain customer data. <!--The meanings of these classifications are described here: [DataClassification Option Type](../developer/methods-auto/dataclassification/dataclassification-option)-->
+Telemetry includes tenant identifiers, configuration data, and usage data. Some events include a pseudonymous user telemetry ID in `user_Id`, which an administrator can associate with a user in Business Central. Telemetry can therefore be linked to a user and doesn't by itself guarantee compliance with privacy laws. Review the data you collect, including custom telemetry from extensions, and configure access and retention to meet your organization's requirements.
+
+Learn more in [Assign a telemetry ID to users](telemetry-enable-application-insights.md#assign-a-telemetry-id-to-users) and [Manage personal data in Azure Monitor Logs](/azure/azure-monitor/logs/personal-data-mgmt).
 
 ## Can I get telemetry in Azure Application Insights for on-premises installations?
 
-Yes, telemetry also works for on-premises installations (private or public cloud). A few events aren't emitted with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. For an overview of events not emitted, see [Telemetry overview](telemetry-overview.md).
+Yes, telemetry also works for on-premises installations (private or public cloud). A few events aren't emitted with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. Learn more in [Telemetry overview](telemetry-overview.md).
 
-For information about how to enable telemetry on-premises, see [Enable environment telemetry](telemetry-enable-application-insights.md#for-on-premises-environments-single-tenant-mode).
+Learn more in [Enable environment telemetry](telemetry-enable-application-insights.md#for-on-premises-environments-single-tenant-mode).
 
 ## Will you backport the Application Insights instrumentation to versions earlier than 15.0?
 
@@ -92,9 +95,9 @@ For each new signal type we add, we try to backport to the current major release
 
 ## How can I get the Power BI reports on telemetry?
 
-To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we developed two Power BI apps available from Microsoft Marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we developed two Power BI apps available from Microsoft Marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in `app.json`). Both apps are free and open source but require Power BI Pro licenses to install.
 
-Read more here: [Analyze telemetry with Power BI](telemetry-power-bi-app.md)
+Learn more in [Analyze telemetry with Power BI](telemetry-power-bi-app.md).
 
 ## Where can I learn more about KQL?
 
@@ -104,7 +107,7 @@ Read more here: [Analyze telemetry with Power BI](telemetry-power-bi-app.md)
 
 If you're familiar with SQL and want to learn KQL, you can use Azure Data Explorer to translate SQL queries into KQL. To translate an SQL query, preface the SQL query with a comment line, `--`, and the keyword explain. The output will show the KQL version of the query, which can help you understand the KQL syntax and concepts. You can also use the SQL to Kusto cheat sheet from the Azure Data Explorer documentation.
 
-Read more in the article [I know SQL. How do I do that in KQL?](/azure/data-explorer/kusto/query/sqlcheatsheet).
+Learn more in [I know SQL. How do I do that in KQL?](/azure/data-explorer/kusto/query/sqlcheatsheet).
 
 ## Which tools can I use (KQL editors and clients)?
 
@@ -112,11 +115,11 @@ Read more in the article [I know SQL. How do I do that in KQL?](/azure/data-expl
 
 ## Can I follow a session in telemetry?
 
-Yes. Learn more at [KQL example - following telemetry events for a session](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-session).
+Yes. Learn more in [KQL example - following telemetry events for a session](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-session).
 
 ## Can I follow telemetry events for a user in telemetry?
 
-Yes, if a telemetry ID is assigned to the user. Learn more at [KQL example - following telemetry events for a user](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-user).
+Yes, if a telemetry ID is assigned to the user. Learn more in [KQL example - following telemetry events for a user](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-user).
 
 ## Where can I find telemetry sample code?
 

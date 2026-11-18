@@ -1,23 +1,24 @@
 ---
 title: Analyzing Task Scheduler Telemetry
-description: Learn about the task scheduler telemetry in Business Central  
+description: Analyze Business Central task scheduler telemetry to track task creation and execution, investigate failures and cancellations, and monitor timeout changes.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 12/15/2023
+ms.date: 11/17/2026
+ai-usage: ai-assisted
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
-# Analyzing Task Scheduler Telemetry
+# Analyzing task scheduler telemetry
 
 [!INCLUDE[2021_releasewave2.md](../includes/2021_releasewave2.md)]
 
 [!INCLUDE[task_scheduler_telemetry](../includes/include-telemetry-task-scheduler.md)]
 
 > [!NOTE]
-> In this article, *main codeunit* refers to the codeunit that's run by the TaskScheduler.CreateTask method.
+> In this article, *main codeunit* refers to the codeunit that's run by the `TaskScheduler.CreateTask` method.
 
 Each scheduled task is assigned a unique identifier (ID), which is included in each trace related to the task. Using the ID makes it easy to query the flow of a task.
 
@@ -60,14 +61,14 @@ The following table explains other custom dimensions that are common to all task
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company in which the task was run.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|formatId|Specifies the regional setting of the session. The value is a culture identifiers (LCIDs), such as 1033 for English - United States.|
-|languageId|Specifies the language version of Business Central on which the task is run. The value is a culture identifiers (LCIDs), such as 1033 for English - United States.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
+|formatId|Specifies the regional setting of the session. The value is a locale identifier (LCID), such as 1033 for English - United States.|
+|languageId|Specifies the language of the session in which the task is run. The value is a locale identifier (LCID), such as 1033 for English - United States.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## Task ready
 
-Occurs when a task is set to the ready state by TaskScheduler.SetTaskReady method call in AL code. A task can't be run until it's in the ready state.
+Occurs when a task is set to the ready state by a `TaskScheduler.SetTaskReady` method call in AL code. A task can't be run until it's in the ready state.
 
 ### General dimensions
 
@@ -91,7 +92,7 @@ The following table explains the general dimensions of this trace.
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
 |isReady|**True**|
-|notBefore|Specifies the earliest date and time that was scheduled to run.|
+|notBefore|Specifies the earliest date and time the task was scheduled to run.|
 |taskId|Specifies the unique identifier assigned to the task.|
 |timeout|Specifies the timeout that was set on the task. If a task takes longer to complete than the specified time, it's canceled. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
@@ -100,7 +101,7 @@ The following table explains the general dimensions of this trace.
 
 ## Task removed
 
-Occurs when a task is deleted by a TaskScheduler.CancelTask method call in AL code.
+Occurs when a task is deleted by a `TaskScheduler.CancelTask` method call in AL code.
 
 ### General dimensions
 
@@ -108,7 +109,7 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Task {taskId} removed: {codeunitObjectId}.**|
+|message|**Task {taskId} removed: {codeunitObjectId}**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -135,7 +136,7 @@ Occurs when the execution of a task's main or failure codeunit is canceled by th
 For example, the service cancels a task when:
 
 - It takes longer to complete than the specified timeout. The timeout is specified on the task when it's created. Or if no timeout is specified, then the default timeout of the service is used. For online, the default task timeout is 12 hours. For on-premises, the default timeout is specified by the **Default Task Scheduler Session Timeout** setting on the Business Central Server instance.
-- The Session.StopSession method was called from AL code.
+- The `Session.StopSession` method was called from AL code.
 
 Users can cancel a task a couple ways. For example, with Business Central online, they can use the Business Central admin center. With on-premises, they can run the [Remove-NAVSession cmdlet](/powershell/module/microsoft.dynamics.nav.management/remove-navserversession).
 
@@ -145,7 +146,7 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|The messages will depend on whether the error occurred in the main codeunit of failure codeunit. <br><br>*Main codeunit*<br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried and the failure codeunit {failureCodeunitObjectId} will be run. Reason: Exception is not retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**<br><br>*Failure codeunit*<br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is not retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**|
+|message|The messages will depend on whether the error occurred in the main codeunit or failure codeunit. <br><br>*Main codeunit*<br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried and the failure codeunit {failureCodeunitObjectId} will be run. Reason: Exception is not retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**<br><br>*Failure codeunit*<br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is not retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**|
 |severityLevel|**2**|
 
 ### Custom dimensions
@@ -159,12 +160,14 @@ The following table explains the general dimensions of this trace.
 |---------|-----|-----------|
 |eventId|**LC0044**|
 |attemptNumber|Specifies the run attempt on the codeunit. **0** indicates the first run of the codeunit. Any value other than **0** indicates a retry.|
+|isRunningFailureCodeunit|**True** if the failure codeunit was run; otherwise, **False**.|
+|retryMessage|Explains whether the codeunit will be retried and why.|
 |cancelReason|Specifies why the task was canceled.|
 |cancelReasonMessage|Specifies the exception that caused the cancellation.|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
 |isReady|**True**|
-|notBefore|Specifies the earliest date and time to the task was scheduled to run.|
+|notBefore|Specifies the earliest date and time the task was scheduled to run.|
 |result|**Canceled** |
 |serverExecutionTime|Specifies the amount of time it took the server to run the codeunit. The time has the format hh:mm:ss.sssssss.|
 |sessionId|Specifies the unique identifier of the session in which the task's codeunit was run.|
@@ -177,7 +180,7 @@ The following table explains the general dimensions of this trace.
 
 ## Task failed
 
-Occurs when the execution of task's main codeunit or failure codeunit fails because of an exception thrown by the AL runtime.
+Occurs when the execution of a task's main codeunit or failure codeunit fails because of an exception thrown by the AL runtime.
 
 ### General dimensions
 
@@ -185,7 +188,7 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|The messages will depend on whether the error occurred in the main codeunit ot failure codeunit. <br><br>*Main codeunit*<br>**Task {taskId} main codeunit {codeunitObjectId} failed. It will not be retried and the failure codeunit {failureCodeunitObjectId} will be run. Reason: Exception is not retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} failed. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} failed. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**<br><br>*Failure codeunit*<br>**Task {taskId} failure codeunit {codeunitObjectId} failed. It will not be retried. Reason: Exception is not retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} failed. It will be retried. Reason: Exception is retriable**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} failed. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**|
+|message|The messages will depend on whether the error occurred in the main codeunit or failure codeunit. <br><br>*Main codeunit*<br>**Task {taskId} main codeunit {codeunitObjectId} failed. It will not be retried and the failure codeunit {failureCodeunitObjectId} will be run. Reason: Exception is not retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} failed. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} failed. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**<br><br>*Failure codeunit*<br>**Task {taskId} failure codeunit {failureCodeunitObjectId} failed. It will not be retried. Reason: Exception is not retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} failed. It will be retried. Reason: Exception is retriable**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} failed. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**|
 |severityLevel|**3**|
 
 ### Custom dimensions
@@ -199,9 +202,11 @@ The following table explains the general dimensions of this trace.
 |---------|-----|-----------|
 |eventId|**LC0045**|
 |attemptNumber|Specifies the retry attempt on the codeunit. **0** indicates the initial run of the codeunit, not a retry.|
+|isRunningFailureCodeunit|**True** if the failure codeunit was run; otherwise, **False**.|
+|retryMessage|Explains whether the codeunit will be retried and why.|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
-|failureReason|Specifies the exception that thrown as a result of the error.|
+|failureReason|Specifies the exception that was thrown as a result of the error.|
 |isReady|Specifies whether the task is in the ready state. **True** indicates that the task is in the ready state. **False** indicates that the task isn't in the ready state.|
 |notBefore|Specifies the earliest date and time that was scheduled to run.|
 |result|**Failure** |
@@ -211,12 +216,12 @@ The following table explains the general dimensions of this trace.
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements before the task failed.|
 |taskId|Specifies the unique identifier assigned to the task.|
 |timeout|Specifies the timeout that was set on the task. The time has the format hh:mm:ss.sssssss.|
-|totalTime|Specifies the amount of time it took to create the company. The time has the format hh:mm:ss.sssssss.|
+|totalTime|Specifies the amount of time it took to run the codeunit before it failed. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
 
-### Analyzing report generation failures
+### Analyzing task execution failures
 
-When a task fails, the `failureReason` column in the CustomDimensions will include the name of the exception that was thrown by the AL runtime.  
+When a task fails, the `failureReason` field in `customDimensions` includes the exception that was thrown by the AL runtime.
 
 ### Sample KQL code (failed tasks)
 
@@ -272,6 +277,7 @@ The following table explains the general dimensions of this trace.
 |Dimension|Description or value|
 |---------|-----|-----------|
 |eventId|**LC0043**|
+|isRunningFailureCodeunit|**True** if the failure codeunit was run; otherwise, **False**.|
 |attemptNumber|Specifies the retry attempt on the codeunit. **0** indicates the initial run of the codeunit, not a retry.|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
@@ -291,10 +297,10 @@ The following table explains the general dimensions of this trace.
 
 **INTRODUCED IN:** Version 22.0 
 
-Occurs if the timeout defined on a task exceeds that maximum timeout allowed by the server. The task is then assigned the timeout that's equal to the maximum timeout allowed by the server.
+Occurs if the timeout defined on a task exceeds the maximum timeout allowed by the server. The task is then assigned the timeout that's equal to the maximum timeout allowed by the server.
 
 > [!NOTE]
-> For Business Central online, the maximum timeout allowed is 23:59:59. For Business Central on-premises, the maximum timeout allowed is determined by the `MaxTaskSchedulerSessionTimeout` setting on the Business Central server instance. Learn more in [Configure Business Central Server](configure-server-instance.md).
+> The maximum timeout is determined by the `MaxTaskSchedulerSessionTimeout` setting on the Business Central Server instance. The default maximum is 48 hours. For Business Central on-premises, you can configure this setting. Learn more in [Configure Business Central Server](configure-server-instance.md).
 
 ### General dimensions
 
@@ -309,21 +315,14 @@ The following table explains the general dimensions of this trace.
 
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|-----|
 |eventId|**LC0057**|
-|attemptNumber|Specifies the retry attempt on the codeunit. **0** indicates the initial run of the codeunit, not a retry.|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
 |isReady|Specifies whether the task is in the ready state. **True** indicates that the task is in the ready state. **False** indicates that the task isn't in the ready state.|
-|notBefore|Specifies the earliest date and time that was scheduled to run.|
-|result| **Success**|
-|serverExecutionTime|Specifies the amount of time it took the server to run the codeunit. The time has the format hh:mm:ss.sssssss.|
-|sessionId|Specifies the unique identifier of the session in which the task was run.|
-|sqlExecutes|Specifies the number of SQL statements that were executed.|
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
+|notBefore|Specifies the earliest date and time the task was scheduled to run.|
 |taskId|Specifies the unique identifier assigned to the task.|
 |timeout|Specifies the timeout that was set on the task. The time has the format hh:mm:ss.sssssss.|
-|totalTime|Specifies the amount of time it took to run the codeunit. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
 
 ## Task scheduler and performance

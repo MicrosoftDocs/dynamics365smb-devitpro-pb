@@ -1,10 +1,11 @@
 ---
-title: Feature management telemetry
-description: Learn about the telemetry that is emitted from the Feature Management page in Business Central.
+title: Feature Management Trace Telemetry
+description: Analyze feature management telemetry in Business Central to identify feature switches, their new state, and the user who changed each feature.
 author: kennienp
-ms.topic: article
+ms.topic: reference
+ai-usage: ai-assisted
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
-ms.date: 12/22/2023
+ms.date: 11/17/2026
 ms.author: kepontop
 ms.reviewer: jswymer
 ---
@@ -17,7 +18,9 @@ When new capabilities are added to [!INCLUDE [prod_short](../includes/prod_short
 
 ## Feature switch has been flipped
 
-Occurs when a user changes the state of a feature on the Feature Management page.
+Occurs when the enabled state of a feature changes in a nontemporary `Feature Key` record, including changes made on the **Feature Management** page.
+
+This event uses normal verbosity (`severityLevel` **1**) and `TelemetryScope::All`.
 
 ### General dimensions
 
@@ -33,13 +36,13 @@ Occurs when a user changes the state of a feature on the Feature Management page
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alFeatureDescription|Specifies the description of the feature. |
 |alFeatureId|Specifies the name of the feature. |
-|alStatus|Specifies the new state of the feature, such as **enabled** or **disabled**. |
+|alStatus|Specifies the new state of the feature: **Enabled** for all users or **Disabled**. |
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000JT3** |
 
 ### Sample KQL code
-This KQL code can help you get started analyzing feature management telemetry or if you want to alert on these changes
+This KQL code can help you get started analyzing feature management telemetry or if you want to alert on these changes.
 
 ```kql
 traces

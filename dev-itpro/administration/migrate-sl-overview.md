@@ -1,14 +1,15 @@
 ---
-title: Dynamics SL migration to Business Central online End-to-end overview
-description: Learn about the migration process and the necessary tasks for completing the migration from Dynamics SL on-premises.
+title: Dynamics SL Migration to Business Central Online
+description: Understand how Dynamics SL cloud migration works, from assessment and setup through data replication, company-level transformation, testing, and going live.
 author: lcontreras
-ms.topic: article
+ms.topic: overview
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 12/13/2024
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Dynamics SL migration to Business Central online: End-to-end overview
@@ -23,7 +24,7 @@ Data migration securely moves data from an on-premises SQL Server instance to [!
 
 The following figure shows the main components involved in the data migration process.
 
-![Screenshot of the main components of cloud migration](../developer/media/cloud-migration-overview-gp.svg)
+:::image type="content" source="../developer/media/cloud-migration-overview-gp.svg" alt-text="Diagram of the database, Azure Data Factory, pipelines, and integration runtime used for cloud migration.":::
 <!-- no sl version-->
 
 |Component|Description|
@@ -38,30 +39,31 @@ The following figure shows the main components involved in the data migration pr
 
 In general, the cloud migration tool migrates the following data:
 
-- System and company setup, accounting periods (Dynamics SL Fiscal periods), tax areas (Dynamics SL Tax Groups), and locations (Dynamics SL Inventory Sites)
+- System and company setup, including accounting periods, tax areas, and locations. These records correspond to Dynamics SL fiscal periods, tax groups, and inventory sites.
 - Master data for accounts, customers, vendors, and items
-- Open Document amounts for customers and vendors
+- Open document amounts for customers and vendors
 - Account balances by period
 - Historical data
 
-The company data that is migrated is configurable as part of the cloud migration setup. Learn more in [Configure Dynamics SL company migration](migrate-dynamics-SL.md).
+The company data that is migrated is configurable as part of cloud migration setup. Learn more in [Configure Dynamics SL company migration](migrate-sl-configure-companies.md) and [Migrate Dynamics SL data to the cloud](migrate-dynamics-sl.md).
 
 ### How data is migrated
 
-Data is migrated table by table, and success and failures are tracked for each table. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed. Tables fail to migrate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables.  
+Data is replicated table by table, and successes and failures are tracked for each table. If a table fails to replicate, the error is captured, and replication moves on to the next table. Tables fail to replicate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables.
 
 Typically, you first run the migration as a test on a sandbox environment. Then, when you're ready to go live, you run the migration on the production environment. The data migration time can vary depending on factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds.
 
 > [!IMPORTANT]
 > [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]
 
-## End-to-end process
+<a name="end-to-end-process"></a>
+## End-to-end migration process
 
 This section outlines the general process or phases you go through to migrate data from on-premises to online.
 
 1. **Migration Assessment**
 
-   Before migrating your on-premises deployment to the cloud, evaluate its readiness using the Dynamics SL Analysis and Dynamics SL Repair tools. These tools provide migration options based on your needs and detect potential migration issues based on your Dynamics SL system structure. Download the tools from GitHub at [BCTech/Samples/DynamicsSLMigrationTools/Analysis and Repair Tool at master · microsoft/BC Tech](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool).
+   Before migrating your on-premises deployment to the cloud, evaluate its readiness using the Dynamics SL Analysis and Dynamics SL Repair tools. These tools provide migration options based on your needs and detect potential migration issues based on your Dynamics SL system structure. Download the [Dynamics SL Analysis and Repair tools](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool) from Microsoft's BCTech repository.
 
    - The **Analysis Tool** connects to a Microsoft Dynamics SL database and generates an analysis report text file.
    - The report outlines and provides an overview of the modules in use and examines the data that can be migrated to Business Central.
@@ -81,54 +83,52 @@ This section outlines the general process or phases you go through to migrate da
 
 1. **Preparation**
 
-   The preparation phase ensures a fast and problem-free migration. It typically includes these tasks:
+   The preparation phase helps reduce migration time and problems. It typically includes these tasks:
 
    1. **Plan**
 
-      Create a migration plan with a detailed timeline, resource requirements, and approach. A well-crafted plan minimizes downtime and prevents users from losing work. Plan to run cloud migration between environment updates.
+      Create a migration plan with a detailed timeline, resource requirements, and approach. A well-crafted plan can minimize downtime and help prevent users from losing work. Plan to run cloud migration between environment updates.
 
-      Learn more in [Prepare and plan for cloud migration from Dynamics SL](cloud-migration-plan-prepare-SL.md).
+      Learn more in [Prepare and plan for cloud migration from Dynamics SL](cloud-migration-plan-prepare-sl.md).
   
    1. **Verify prerequisites**
 
       Prepare your on-premises environment for migration, which includes ensuring that it meets the prerequisites for migration, such as using SL 2015 or later. This step is crucial in ensuring that your environment is ready for the migration process.
 
-      Learn more in [Cloud migration prerequisites for Dynamics SL](cloud-migration-prerequisites-SL.md).
+      Learn more in [Cloud migration prerequisites for Dynamics SL](cloud-migration-prerequisites-sl.md).
    1. Verify that data is in the best state possible to complete the migration:
 
       This step involves reviewing your data to ensure that it's clean, accurate, and in the best possible state for migration.
 
 1. **Cloud migration setup**
 
-   The phase doesn't migrate any data, but it gets the environment ready for migration by establishing the connection and pipeline between the on-premises database and the online tenant database. You also specify which companies to migrate. This phase starts when you run the **Set up Cloud Migration** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
+   This phase prepares the environment by establishing the connection and pipeline between the on-premises databases and the online tenant database. You also specify which companies to migrate. This phase starts when you run the **Cloud Migration Setup** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-   Learn more in [Set up cloud migration](migration-setup-overview.md).
+   Learn more in [Run cloud migration setup for Dynamics SL migration](migration-setup-sl.md).
 
 1. **Configure Dynamics SL company migration**
 
-   The step is part of the setup phase in which you select the companies and data that you want to migrate.
+   After you finish the setup guide, configure which SL company data to migrate.
 
-   Learn more in [Configure Dynamics SL company migration](migrate-SL-configure-companies.md).
+   Learn more in [Configure Dynamics SL company migration](migrate-sl-configure-companies.md).
 
 1. **Data replication**
 
-   This step migrates data from on-premises to online. It starts when you run the **Run data replication** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online. At the end of the process, you have a copy of the on-premises data in the relevant [!INCLUDE [prod_short](../includes/prod_short.md)] online environment.
+   This step copies SL data into migration tables in the online environment. It starts when you select **Run data replication** on **Cloud Migration Management**.
 
    At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. Once the data replicates to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-   Learn more in [Replicate data](migration-data-replication.md). <!--broken migration-data-replication-SL.md-->
+   Learn more in [Run and manage data replication](migrate-data-replication-run.md).
 
 1. **Data upgrade**
 
-   After data replication is complete, the cloud migration might have the status *Upgrade Pending* on the **Cloud Migration Management** page. This step starts when you choose the **Run Data Upgrade Now** action in the **Cloud Migration Management** page in [!INCLUDE [prod_short](../includes/prod_short.md)] online for the specific environment.
+   After your final replication completes, select **Run data upgrade** on **Cloud Migration Management**. This step transforms replicated SL data into Business Central data, company by company in the background.
 
-   Learn more in [Upgrade data for Dynamics SL cloud migration](migration-data-upgrade-SL.md).
-
-   [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
+   Learn more in [Upgrade data for Dynamics SL cloud migration](migration-data-upgrade-sl.md).
 
 1. **Completion and follow-up**
 
-   Completion and follow-up are crucial steps in the cloud migration process. They involve setting up and optimizing your new Business Central online environment. Consider these essential tasks:
+   Review migration errors, posting results, historical data, and the migrated business data. After testing is complete, disable cloud migration and complete these follow-up tasks:
 
    1. **Optimize your Business Central online environment**
 
@@ -141,7 +141,7 @@ This section outlines the general process or phases you go through to migrate da
 
    Once you're satisfied with the new environment setup, switch to the new Business Central online system. This task involves decommissioning the on-premises deployment and ensuring all users use the new system.
 
-   Learn more in [Complete Dynamics SL cloud migration](migration-finish-SL.md).
+   Learn more in [Complete Dynamics SL cloud migration to Business Central online](migration-finish-sl.md).
 
 By completing these tasks, you can ensure a successful migration to the cloud-based Business Central solution.
 
@@ -149,26 +149,26 @@ By completing these tasks, you can ensure a successful migration to the cloud-ba
 
 You manage the cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online. But once you start the migration phase, the on-premises solution remains the operative environment until you complete the migration. [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]  
 
-Any existing data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is overwritten with data from your on-premises solution, or source, once the data replication is run.  
+Rerunning migration can overwrite data in the target online companies.
 
 If you don't want data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to be overwritten, don't configure the connection.
 
 ### Limited data entry during the migration period
 
-Once the cloud migration is set up and underway, the data that you can enter in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant is limited to data that isn't included in data migration from on-premises. Otherwise, any data that was written to the tenant database would be continuously overwritten during the migration process.  
+Once cloud migration is set up and underway, avoid entering data in the online companies being migrated. Data entered there can be overwritten when you rerun migration.
 
-To make setting up this read-only tenant more efficient, we created the *Intelligent Cloud* permission set. Once the cloud migration environment is configured, existing users in the online tenant without SUPER permissions are automatically assigned to the *Intelligent Cloud* Permission Set. Only users with SUPER permissions can make modifications to the system at this point. If you add any online users later, assign them the *Intelligent Cloud* permission set. They're not assigned automatically.
+Dynamics SL migration retains existing Business Central user permissions. It doesn't automatically assign users to the **Intelligent Cloud** permission set. Review access and restrict data entry for existing users and users you add during migration.
 
 > [!NOTE]  
-> Before you configure a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, make sure that at least one user in each company is assigned SUPER permissions.  
+> Before you configure a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, make sure that at least one user in each company has the **SUPER** permission set.
 
-Users that are reassigned to the *Intelligent Cloud* <!--user group--> Permission Set have access to read ALL data by default. If you need to further restrict what data a user can read, the SUPER user can create new user groups and permission sets and assign users accordingly. It's highly recommended to create any new Permission Sets from a copy of the *Intelligent Cloud* Permission Set and then take away permissions you don't want users to have.  
+If you manually assign the **Intelligent Cloud** permission set, users can read all data by default. If you need to further restrict what a user can read, a user with **SUPER** can create and assign a more restrictive permission set. We recommend that you copy **Intelligent Cloud** and remove the permissions you don't want users to have.
 
 > [!WARNING]
 > If you grant insert, modify, or delete permissions to any resource set to read-only, it could negatively impact the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you might need to clear all your data and rerun a full migration to correct it.
 
 ## Related information
 
-[Migrate Dynamics SL Data to the Cloud](migrate-dynamics-SL.md)  
-[FAQ about Migrating to the Cloud from on-premises Solutions](faq-migrate-data.md)  
-[Managing Capacity](tenant-admin-center-capacity.md)  
+[Migrate Dynamics SL data to the cloud](migrate-dynamics-sl.md)\
+[FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md)\
+[Managing capacity](tenant-admin-center-capacity.md)

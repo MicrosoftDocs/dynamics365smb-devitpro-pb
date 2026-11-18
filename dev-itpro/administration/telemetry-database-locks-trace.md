@@ -1,17 +1,17 @@
 ---
-title: Database Lock Timeout Trace Telemetry | Microsoft Docs
-description: Learn about the database lock timeout telemetry in Business Central  
+title: Analyzing Database Lock Timeout Trace Telemetry
+description: Analyze database lock timeout telemetry in Business Central and correlate lock snapshots to identify blocked sessions and troubleshoot database contention.
 author: jswymer
-ms.topic: how-to
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ai-usage: ai-assisted
 ---
 
-# Analyzing Database Lock Timeout Trace Telemetry
+# Analyzing database lock timeout trace telemetry
 
 **INTRODUCED IN:** Business Central 2020 release wave 1, version 16.0
 
@@ -28,7 +28,7 @@ Two types of trace events are emitted to Application Insights:
 - The **Database lock timed out** event then triggers one or more **Database lock snapshot** events. **Database lock snapshot** events provide details about SQL sessions that hold database locks at the time of lock timeout, including the session that caused the lock timeout. These events include specific details about the SQL lock request on the database, like the type, status, mode, and the table.
 
 > [!NOTE]
-> In later versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the [!INCLUDE[server](../developer/includes/server.md)] includes the `EnableLockTimeoutMonitoring` setting. Use this setting to turn database lock timeout telemetry on or off. By default, it is off. For more information, see [Configuring Business Central Server](server-instance-settings.md#detect-database-contention-and-long-running-queries).
+> In later versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the [!INCLUDE[server](../developer/includes/server.md)] includes the `EnableLockTimeoutMonitoring` setting. Use this setting to turn database lock timeout telemetry on or off. By default, it is off. Learn more in [Configuring Business Central Server](server-instance-settings.md#detect-database-contention-and-long-running-queries).
 
 ## Database lock timed out
 
@@ -46,32 +46,32 @@ Occurs when a database lock has timed out for a session.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
-|alObjectName|Specifies the name of the running AL object that requested the lock. not shown|
+|alObjectName|Specifies the name of the running AL object that requested the lock.|
 |alObjectType|Specifies the type of the running AL object that requested the lock, such as a page or report. |
 |alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that executed the SQL statement, such as `Background` or `WebClient`. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that you update any queries that use these keys to use the new key name.|
 |eventId|**RT0012**|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |extensionId|Specifies the AppID of the extension that was involved in the lock.|
 |extensionName|Specifies the name of the extension that was involved in the lock.|
-|extensionVersion|Specifies the version of that was involved in the lock.|
+|extensionVersion|Specifies the version of the extension that was involved in the lock.|
 |sessionId|Specifies the ID of the session that requested the lock. |
 |snapshotId|Specifies the ID of the database snapshot. This ID is used to identify associated **Database lock snapshot** trace events.|
 |sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
+|sqlStatement|Specifies the SQL statement whose lock request timed out.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ### Sample KQL code
 
 This KQL code can help you get started troubleshooting lock timeouts.
 > [!NOTE]
-> Reminder, as stated in [previous section](#analyzing-database-lock-timeout-trace-telemetry) that if these events can't be found on on-premise installations it is because the `EnableLockTimeoutMonitoring` setting is inactivated.
+> If these events aren't available on-premises, check whether `EnableLockTimeoutMonitoring` is enabled. Learn more in [Analyzing database lock timeout trace telemetry](#analyzing-database-lock-timeout-trace-telemetry).
 
 ```kql
 traces 
@@ -107,7 +107,7 @@ traces
 This telemetry event can occur in two ways:
 
 1. When a database lock has timed out
-1. When a user or AL process has issued that a snapshot is taken
+1. When a user or AL process has requested that a snapshot is taken
 
 In the case of a database lock timeout, the BC server also takes a snapshot. Here, the **Database lock snapshot** trace event is associated with a specific **Database lock timed out** trace event. The value of the `{snapshotId}` maps to the `snapshotId` dimension of the **Database lock timed out** trace event that triggered this event.
 
@@ -115,7 +115,7 @@ In the case of a database lock timeout, the BC server also takes a snapshot. Her
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Database lock snapshot: {snapshotId}**|
+|message|**Database lock snapshot entry: {snapshotId}**|
 |severityLevel|**3**|
 
 ### Custom dimensions
@@ -123,23 +123,22 @@ In the case of a database lock timeout, the BC server also takes a snapshot. Her
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock.|
 |alObjectType|Specifies the type of the running AL object that requested the lock, such as a page or report. |
 |alStackTrace|The stack trace in AL.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that you update any queries that use these keys to use the new key name.|
 |eventId|**RT0013**|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |extensionId|Specifies the AppID of the extension that was involved in the lock.|
 |extensionName|Specifies the name of the extension that was involved in the lock.|
-|extensionVersion|Specifies the version of that was involved in the lock.|
+|extensionVersion|Specifies the version of the extension that was involved in the lock.|
 |sessionId|Specifies the ID of the session that requested the lock. |
 |snapshotId|Specifies the ID of the database snapshot. All messages in the snapshot share this ID.  |
-|sqlLockRequestMode|Specifies the lock mode that determines how concurrent transactions can access the resource. For more information, see [Lock Modes](/previous-versions/sql/sql-server-2008-r2/ms175519(v=sql.105)). |
+|sqlLockRequestMode|Specifies the lock mode that determines how concurrent transactions can access the resource. Learn more in [Lock Modes](/previous-versions/sql/sql-server-2008-r2/ms175519(v=sql.105)). |
 |sqlLockRequestStatus|Specifies the current status of the lock, which can be one of the following values:<ul><li>`CNVRT` - means that the lock is transitioning from another mode, but the conversion is blocked by another process that holds a lock with a conflicting mode.</li><li>`GRANT` - means that the lock is active.</li><li>`WAIT`- means that the lock is blocked by another process that holds a lock with a conflicting mode.</li></ul> |
 |sqlLockResourceType|Specifies the database resource affected by the lock. For example, `DATABASE`, `FILE`, `OBJECT`, `PAGE`, `KEY`, and more. |
 |sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
@@ -181,13 +180,13 @@ traces
 
 Occurs when a database lock snapshot is taken to capture the current locking state. This event is emitted as a header/parent event that groups related lock snapshot entries (RT0013).
 
-**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2024 release wave 2 and later
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 1, version 20.0, and later
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Database locks snapshot: {snapshotId}**|
+|message|**Database locks snapshot taken: {snapshotId}**|
 |severityLevel|**3** (Error)|
 
 ### Custom dimensions
@@ -232,7 +231,7 @@ traces
 
 The telemetry you see for lock timeouts only represents the session that is the victim in a locking issue, not the sessions that hold the locks. When analyzing database lock timeout telemetry, it's therefore useful to look at combined data from the **Database lock timed out** event and **Database lock snapshot** events. You might be lucky that the snapshot has captured information from locks that were held when the lock timeout occurred.
 
-You can combine data from different events by using *joins* in your Kusto queries. For an example, see [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/LockTimeouts.kql) in the **Microsoft/BCTech** repository on GitHub. For more general information about using joins, see [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
+You can combine data from different events by using *joins* in your Kusto queries. Learn more in [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/LockTimeouts.kql) in the `Microsoft/BCTech` repository on GitHub. Learn more in [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
 
 
 ## Related information

@@ -1,13 +1,14 @@
 ---
-title:  Analyzing client control add-in exception telemetry
-description: Learn about the telemetry from client add-in exceptions in Business Central  
+title: Analyzing Client Control Add-In Exception Telemetry
+description: Analyze Business Central control add-in exceptions in Application Insights to identify affected extensions, inspect error details, and troubleshoot failures.
 author: kennieNP
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/20/2025
+ms.date: 11/17/2026
 ms.author: kepontop
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 # Analyzing client control add-in exception telemetry
 
@@ -18,7 +19,7 @@ Client control add-in exception telemetry gathers data about exceptions thrown i
 Use the data to gather statistics about exceptions in control add-ins for troubleshooting and error mitigation.
 
 > [!NOTE]
-> In [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], telemetry about client add-in exceptions is logged to the **exceptions** table and not the **traces** table like other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] traces. This also means that you can use the built-in pages in the **Failures** page of the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for troubleshooting. For more information, see [Failures and Performance views](/azure/azure-monitor/app/failures-and-performance-views?tabs=failures-view).
+> In [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], telemetry about client add-in exceptions is logged to the `exceptions` table and not the `traces` table like other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] traces. This also means that you can use the built-in pages in the **Failures** page of the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for troubleshooting. Learn more in [Failures and Performance views](/azure/azure-monitor/app/failures-and-performance-views?tabs=failures-view).
 
 ## Exception raised inside a control add-in
 
@@ -26,7 +27,7 @@ Occurs when an exception was raised inside a control add-in.
 
 ### General dimensions
 
-The exceptions table is a built-in table in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]. Here are some of the fields most used in analysis of the signal:
+The `exceptions` table is a built-in table in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]. Here are some of the fields most used in analysis of the signal:
 
 |Field|Description or value|
 |---------|-----|
@@ -39,13 +40,14 @@ The exceptions table is a built-in table in [!INCLUDE[appinsights](../includes/a
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alObjectId|[!INCLUDE[objectId](../includes/include-telemetry-dimension-page-object-id.md)]|
 |alObjectName|[!INCLUDE[objectName](../includes/include-telemetry-dimension-page-object-name.md)]|
+|alObjectType|`ControlAddIn`|
 |appId|[!INCLUDE[appId](../includes/include-telemetry-dimension-page-app-id.md)]|
 |appName|[!INCLUDE[appName](../includes/include-telemetry-dimension-page-app-name.md)]|
 |appPublisher|[!INCLUDE[appPublisher](../includes/include-telemetry-dimension-page-app-publisher.md)]|
 |appVersion|[!INCLUDE[appVersion](../includes/include-telemetry-dimension-page-app-version.md)]|
 |clientType| [!INCLUDE[clientType](../includes/include-telemetry-dimension-client-type.md)] |
 |companyName|[!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)]|
-|controlAddInName| The name of the control add-in from which the exception was thrown. |
+|controlAddInName|The name of the page control that hosts the control add-in from which the exception was thrown.|
 |deviceScreenResolution| [!INCLUDE[deviceScreenResolution](../includes/include-telemetry-dimension-device-screen-resolution.md)] |
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
@@ -59,7 +61,7 @@ All error information is stored in the following properties:
 | problemId | The problem ID identifies where the exception was thrown in code. It's used for exceptions grouping. Typically, it's a combination of an exception type and a function from the call stack. |
 | type | The type of the error that occurred. |
 | assembly| The web assembly where the error occurred. |
-| method| The JavaScript method where error occurred. |
+| method| The JavaScript method where the error occurred. |
 | outerType | The top level error type on the stack trace. |
 | outerMessage | The top level error message on the stack trace. |
 | outerAssembly | The top level assembly on the stack trace. |
@@ -101,8 +103,7 @@ exceptions
 , clientType = customDimensions.clientType
 , hostType = customDimensions.hostType
 // device info
-, deviceScreenResolution = customDimensions.screenRes
-, hostType = customDimensions.hostType
+, deviceScreenResolution = customDimensions.deviceScreenResolution
 // error information
 , problemId 
 , type

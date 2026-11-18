@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/13/2026
+ms.date: 11/18/2026
 ms.custom: sfi-ga-nochange
 ai-usage: ai-assisted
 ---
@@ -409,8 +409,6 @@ Returns 200 if successful.
 
 ## Set app update cadence for environment
 
-**INTRODUCED IN:** API version 2.19
-
 Specifies whether Marketplace apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more in [Manage Apps](tenant-admin-center-manage-apps.md).
 
 ```HTTP
@@ -437,6 +435,114 @@ PUT /admin/{apiVersion}/applications/{applicationFamily}/environments/{environme
 ### Response
 
 Returns 200 if successful.
+
+## Get sandbox environment database configuration match eligibility
+
+Checks whether a sandbox environment is eligible to [match its database configuration](tenant-admin-center-environments.md#sandbox-environment-resource-configuration) to that of a typical production environment. Returns the tenant-wide monthly allowance, used/remaining requests, quota reset time, server-defined duration, and a blocked reason when applicable. Does not start an operation or consume quota.
+
+```HTTP
+GET /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/matchProductionConfiguration/metrics
+```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment
+
+### Response
+
+Returns the database configuration match metrics for the current month.
+
+```
+{
+  "requestsPerMonth": int, // Maximum number of requests allowed per calendar month
+  "requestsUsedThisMonth": int, // Number of requests used in the current month
+  "requestsRemainingThisMonth": int, // Number of requests remaining in the current month
+  "resetsAtUtc": datetime, // When the monthly count resets (start of next month, UTC)
+  "canMatchProductionConfiguration": bool, // Whether a new request can be made now
+  "blockedReason": string, // (enum | "NotEligible", "AlreadyActive", "MonthlyLimitReached", "QuotaCheckUnavailable") Why a request can't be made. Null if canMatchProductionConfiguration is true
+  "durationInHours": int // How long the production configuration is applied for each request
+}
+```
+
+### Expected error codes
+
+`environmentNotFound` - the targeted environment couldn't be found
+
+- target: {applicationFamily}/{environmentName}
+
+## Match sandbox environment database configuration to production
+
+Requests temporary (72 hours) database configuration match for a sandbox environment. Independently rechecks eligibility and quota before accepting.
+
+```HTTP
+POST /admin/{apiVersion}/applications/{applicationFamily}/environments/{environmentName}/matchProductionConfiguration
+```
+
+### Route parameters
+
+`apiVersion` - the version of the Admin Center API. Currently, the latest version is [!INCLUDE[admincenterapiversion](../developer/includes/admincenterapiversion.md)]
+
+`applicationFamily` - the family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - the name of the targeted environment
+
+### Response
+
+Returns 202 (Accepted) with details of the operation created to apply the production configuration.
+
+```
+{
+  "id": GUID, // Operation ID
+  "type": "moveToProductionDatabaseConfiguration",
+  "status": "scheduled",
+  "aadTenantId": GUID,
+  "createdOn": datetime,
+  "startedOn": datetime,
+  "completedOn": datetime,
+  "createdBy": string, // Email address if authenticated as user, App ID if authenticated as app
+  "creatorPrincipalType": "user", // "user" or "application"
+  "canceledBy": string, // Empty for a newly-created operation
+  "errorMessage": string,
+  "parameters": null, // This operation type has no parameters
+  "environmentName": string,
+  "environmentType": "sandbox",
+  "productFamily": string
+}
+```
+
+When the period ends, a `moveToSandboxDatabaseConfiguration` operation is created automatically to return the environment to its sandbox configuration.
+
+### Expected error codes
+
+`environmentNotFound` - the targeted environment couldn't be found
+
+- target: {applicationFamily}/{environmentName}
+
+`invalidTenantLicense` - the Microsoft Entra tenant doesn't have a paid Business Central license
+
+`productionConfigurationNotEligible` - the environment isn't an active sandbox that's eligible for this feature
+
+- target: {applicationFamily}/{environmentName}
+
+`productionConfigurationAlreadyActive` - the production configuration is already applied to the environment
+
+- target: {applicationFamily}/{environmentName}
+
+`productionConfigurationMonthlyLimitReached` - the monthly request limit has been reached
+
+- target: {applicationFamily}/{environmentName}
+
+`productionConfigurationQuotaCheckUnavailable` - the monthly request count couldn't be checked; try again later
+
+- target: {applicationFamily}/{environmentName}
+
+`productionConfigurationOutcomeUnknown` - the request timed out and its outcome is unknown; check the environment's operations before retrying
+
+- target: {applicationFamily}/{environmentName}
 
 ## Related information
 

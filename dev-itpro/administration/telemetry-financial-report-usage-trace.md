@@ -1,11 +1,12 @@
 ---
-title: Analyzing financial report usage trace telemetry
-description: Learn about the telemetry for financial report usage telemetry in Azure Application Insights.  
+title: Analyzing Financial Report Usage Trace Telemetry
+description: Analyze financial report usage telemetry in Business Central to identify reports viewed on-screen or run as reports, including their definition codes.
 author: kennieNP
-ms.topic: concept-article
+ms.topic: reference
+ai-usage: ai-assisted
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/20/2025
+ms.date: 11/17/2026
 ms.author: kepontop
 ms.reviewer: jswymer
 ---
@@ -19,7 +20,9 @@ Financial report usage telemetry gathers data about the following operations wit
 - Financial report run on-screen
 - Financial report run from request page
 
-Learn more about working with financial reporting in [Primary capabilities of financial reporting](/dynamics365/business-central/finance-financial-reporting-capabilities) in the [!INCLUDE[prod_short](../includes/prod_short.md)] Application Help.
+Learn more in [Primary capabilities of financial reporting](/dynamics365/business-central/finance-financial-reporting-capabilities) in the [!INCLUDE[prod_short](../includes/prod_short.md)] Application Help.
+
+These events use normal verbosity (`severityLevel` **1**) and `TelemetryScope::All`.
 
 ## Common dimensions for all financial report usage events
 
@@ -43,7 +46,7 @@ Occurs when a user views a financial report from the user interface.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report run on-screen: {report definition code}**|
+|message|**Financial Report run on-screen: {report definition code}**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -78,13 +81,13 @@ traces
 
 ## Financial report run from request page: {report definition code}
 
-Occurs when a user views a financial report from the request page.
+Occurs when the **Account Schedule** report starts processing a financial report. The event can also occur when the report runs without a request page.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report run from request page: {report definition code}**|
+|message|**Financial Report run from request page: {report definition code}**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -92,10 +95,13 @@ Occurs when a user views a financial report from the request page.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000O76**|
+|alReportId|The object ID of the report.|
+|alReportName|The name of the report object.|
+|alUseRequestPage|Whether the report uses a request page.|
 
 ### Sample KQL code (financial report run from the request page)
 
-This KQL code can help you get started analyzing usage of financial reports (producing a PDF from the request page).
+This KQL code can help you get started analyzing usage of financial reports through the report object.
 
 ```kql
 // Financial report run from request page

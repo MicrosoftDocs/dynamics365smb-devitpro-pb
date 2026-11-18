@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/17/2025
+ms.date: 11/17/2026
 ai-usage: ai-assisted
 ---
 

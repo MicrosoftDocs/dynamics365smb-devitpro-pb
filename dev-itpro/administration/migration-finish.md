@@ -1,95 +1,99 @@
 ---
-title: Complete cloud migration
-description: This article describes the task you do to complete the data migration from on-premises to online. 
+title: Complete Cloud Migration to Business Central Online
+description: Learn how to complete Business Central cloud migration, migrate record links and notes, disable migration, and set up users and integrations.
 author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 09/22/2025
+ms.date: 11/17/2026
 ms.custom: bap-template 
+ai-usage: ai-assisted
 ---
 
-# Complete cloud migration to Business Central online
+# Complete your cloud migration to Business Central online
 
 > **APPLIES TO:** Migration from Business Central on-premises only
 
 This article explains tasks you do in the final phase of cloud migration&mdash;that is, after completing replication, upgrading the data in the online environment, and testing the result of the cloud migration.
 
 > [!TIP]
-> To keep track of which of tasks you did so far, use the [Post Migration Checklist](https://businesscentral.dynamics.com/?page=4020) page to check off tasks as you go along. To open the checklist, go to **Cloud Migration Setup** page then select **Actions** > **Setup checklist**.
+> To keep track of which tasks you did so far, use the **Post Migration Checklist** page to check off tasks as you go along. To open the checklist, go to the **Cloud Migration Management** page in a migrated company, then select **Setup checklist**.
 
 ## Step 1 Migrate record links and notes
 
 Record links and notes aren't automatically migrated to the target environment. Instead, they're stored in a buffer table during replication. To ensure they're properly transferred to the actual record link table, you must manually trigger the migration.
 
 1. Open the **Cloud Migration Management** page.
-2. Select the **Migrate Record Links and Notes** action.
+1. Select the **Migrate record links and notes** action after the final data replication. The action is enabled when the record-link buffer contains data and isn't blocked.
 
-This action moves record links and notes from the buffer table to the actual table. If new replication runs are completed after completing this action, a warning to rerun this action appears in the **Cloud Migration Management** page. Existing records aren't overwritten if the action is run again.
+This action moves record links and notes from the buffer table to the actual table. If new replication runs are completed after completing this action, a warning to rerun this action appears in the **Cloud Migration Management** page. If you run the action again, previously migrated records can be updated from the buffer. The action warns that repeating the migration might cause unwanted results.
 
 Complete this step before defining user mappings because user mappings also update the users associated with the record links and notes.
 
 ## Step 2 Disable the cloud migration
 
-Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This step is important because each time someone runs the migration, outstanding documents (like for vendors and inventory items), and other changes made in the online target company are overwritten.
+Once you migrate the desired data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, you end the migration by disabling cloud migration from the **Cloud Migration Management** page. This step is important because subsequent replications can overwrite outstanding documents for vendors and inventory items and other changes made in the online target company.
 
-When you disable the cloud migration, the cloud migration setup for the environment is deleted. But integration runtime remains. So if you want to migrate data again, you have to first go through the cloud migration setup.
+When you disable cloud migration, the environment is no longer enabled for replication. But the integration runtime remains installed. So if you want to migrate data again, you have to first go through the cloud migration setup.
 
 To disable cloud migration, complete the following steps:
 
-1. Go to the **Cloud Migration Management** page and select **[Complete Cloud](https://businesscentral.dynamics.com/?page=40063)**.
+1. Go to the **Cloud Migration Management** page and select **Complete migration**. You must have the **SUPER** permission set. Resolve failed tables, finish data repair, and complete any required data upgrade first.
 1. On the **Cloud Ready Checklist** page, read the information.
-1. If you agree, turn on the **I have read and understand the recommended step** switch.
-1. Select the **Disable Cloud Migration** > **Yes**.
+1. If you agree, select **I have read and understand the recommended steps**.
+1. Select **Disable Cloud Migration** > **Yes**.
 
 > [!NOTE]
 > The integration runtime remains installed on your on-premises machine. However, if it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. If you want to migrate data again, you must go through the cloud migration setup again and might also need to reinstall the Self-hosted Integration Runtime.
 
-## <a name="API"></a> Step 3 Run API data upgrade
+<a name="API"></a>
 
-This step is only required if you skipped the API data upgrade during the cloud migration. [Learn more about skipping API data upgrade](migration-skip-api-data-upgrade.md). 
+## Step 3 Run API data upgrade
 
-1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
+This step is only required if you skipped the API data upgrade during the cloud migration. Learn more in [Skip API data upgrade in cloud migration](migration-skip-api-data-upgrade.md).
+
+1. Sign in to [Business Central online](https://businesscentral.dynamics.com).
 1. Search for and open the **Cloud Migration Management** page.
-1. Select the **Manage API Upgrade** action to open the **API Upgrade overview** page. 
+1. Select the **Manage API Upgrade** action to open the **API Upgrade Overview** page.
 
    Companies that weren't upgraded have the **API Upgrade Status** of **Disabled**.
 
 1. To run the API data upgrade for a company, do the following steps:
 
-   1. On the **API upgrade overview** page, select the company name.
+   1. On the **API Upgrade Overview** page, select the company name.
 
       The **API Data Upgrade List** opens in a new browser tab.
-   1. On the **API Data Upgrade List** page, select all entities, and then select **Reset** > **"Schedule Upgrades** > **Yes**.
+   1. On the **API Data Upgrade List** page, select an entity and select **Reset** if its status needs to be cleared. Repeat for each entity you want to reset.
+   1. Select all entities you want to upgrade, then select **Schedule Upgrades** > **Yes** to open the job queue entry.
 
-      A job queues entry is created and opened.
-   1. Schedule the job queue entry to run. [Learn more](/dynamics365/business-central/admin-job-queues-schedule-tasks).
+      A job queue entry is created or an existing entry is reused.
+   1. Schedule the job queue entry to run. Learn more in [Use job queues to schedule tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks).
   
 1. Repeat the previous step for each company you want to run the API data upgrade.
 
-You can check the status of job queue entries on the **API Upgrade Overview** page and restart a job queue entry if it fails. When you restart a job queue entry, it continues at the point where it stopped. It's safe to rerun the job queue entry because it commits and releases any locks and shouldn't cause any performance degradation.
+The **API Upgrade Overview** page shows whether API data upgrade is enabled or disabled for each company, not the status of job queue entries. Check entity progress on the company's **API Data Upgrade List** page and check the job queue entry for failures. When you restart the job queue entry, it processes entities that are still scheduled.
 
 ## Step 4 Set up users and permissions
 
-User accounts and permissions in Business Central on-premises aren't migrated to the online. To give on-premises users access to the new online tenant, each user needs the following permissions:
+User accounts and permissions in Business Central on-premises aren't migrated to the online environment. To give on-premises users access to the new online tenant, each user needs the following:
 
 1. An account in the Microsoft 365 tenant with a Business Central license.
 
-   For more information, go to [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users).
+   Learn more in [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users).
 
 1. An account in Business Central associated with their Microsoft 365 account email and assigned the proper permissions to data in Business Central.
 
-   For more information, go to [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions). 
+   Learn more in [Create users according to licenses](/dynamics365/business-central/ui-how-users-permissions).
 
    > [!TIP]
-   > You can go directly to setting up permission sets from the **Cloud Ready Checklist** page by selecting **Permission Sets**.
+   > Before disabling cloud migration, you can open permission sets from the **Cloud Ready Checklist** page by selecting **Permission Sets**. After disabling migration, search for and open the **Permission Sets** page instead.
 
 ## Step 5 Define user mappings
 
 If any data or transactions are dependent on a specific on-premises user account, then you must map the on-premises user account to an online user account. 
 
 > [!IMPORTANT]
-> User mappings can only be done once per environment, so do this task as one of the last steps. You can copy to a sandbox and test the changes there so it doesn't affect the production environment.
+> Define user mappings only once, as one of the last steps. Repeating the mapping displays a warning that it might cause unwanted results. You can copy to a sandbox and test the changes there so it doesn't affect the production environment.
 
 ### Map on-premises users to online accounts
 
@@ -99,12 +103,12 @@ If any data or transactions are dependent on a specific on-premises user account
 
 ### Technical details
 
-- The users are copied from the on-premises database from both **User** and **User Property** tables to the buffer table. If you're using custom SQL scripts to move the data, be sure to include **User Property** table. If this table isn't included, then no data is copied.
-- Not all tables are included in the rename process. Codeunit 418 **User Management** is used to rename the records that don't have the table relationship property set. Some tables, like **Change Log Entry**, aren't supported for this functionality, because they're too large. These tables are excluded from the rename process. 
+- The users are copied from the on-premises database from both `User` and `User Property` tables to the buffer table. If you're using custom SQL scripts to move the data, be sure to include the `User Property` table. If this table isn't included, then no data is copied.
+- The mapping renames the online account's `User Name` to the on-premises user name and calls the `User` codeunit's `RenameUser` procedure to update dependent data. Not all tables are included in the rename process. Some tables, like `Change Log Entry`, are excluded.
 
 ## Step 6 Reconfigure the Dynamics 365 Sales connection
 
-If you're integrating with Dynamics 365 Sales, you have to set up the connection again. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).
+If you're integrating with Dynamics 365 Sales, you have to set up the connection again. Learn more in [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).
 
 ## Step 7 Reconnect integrations
 
@@ -123,4 +127,4 @@ After you complete the migration and go live, monitor the environment closely du
 - **Validate with users**: Have business users verify that key processes work correctly and that migrated data is accurate.
 - **Monitor performance**: Watch for slow queries or unexpected load patterns during the first few weeks of operation.
 
-For information about enabling telemetry, see [Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md).
+Learn more in [Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md).

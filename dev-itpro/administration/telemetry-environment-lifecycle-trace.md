@@ -1,15 +1,16 @@
 ---
-title:  Analyzing Environment Lifecycle Trace Telemetry 
-description: Learn about the environment lifecycle telemetry in Business Central.
+title: Environment Lifecycle Telemetry in Business Central
+description: Analyze Business Central environment lifecycle telemetry to monitor updates, restarts, copies, restores, transfers, and other administrative operations.
 author: KennieNP
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.topic: concept-article
-ms.date: 03/31/2025
+ms.topic: reference
+ms.date: 11/17/2026
 ms.custom: bap-template
+ai-usage: ai-assisted
 
 ---
-# Analyzing Environment Lifecycle Trace Telemetry
+# Analyzing environment lifecycle trace telemetry
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
@@ -36,7 +37,7 @@ Telemetry is also gathered on the following data update events:
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
-### Custom dimensions available in all events
+## Custom dimensions available in all events
 
 The following dimensions are available in all events described below and aren't included in the individual event documentation:
 
@@ -433,7 +434,7 @@ Occurs when a start operation has been initiated for the environment.
 
 ## Environment started successfully
 
-Occurs when a restart operation succeeded for the environment.
+Occurs when a start operation succeeded for the environment.
 
 ### General dimensions
 
@@ -1064,9 +1065,9 @@ Occurs when the operation to schedule a transfer of an environment to a differen
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
-### Sample KQL code (failed move of environment to different AAD tenant)
+### Sample KQL code (failed move of environment to different Microsoft Entra tenant)
 
-This KQL code can help you get started analyzing failures in moving an environment to a different AAD tenant:
+This KQL code can help you get started analyzing failures in moving an environment to a different Microsoft Entra tenant:
 
 ```kql
 traces
@@ -1162,9 +1163,9 @@ Occurs when the operation to transfer the environment to a different Entra tenan
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 
-### Sample KQL code (failed move of environment to different AAD tenant)
+### Sample KQL code (failed move of environment to different Microsoft Entra tenant)
 
-This KQL code can help you get started analyzing failures in moving an environment to a different AAD tenant:
+This KQL code can help you get started analyzing failures in moving an environment to a different Microsoft Entra tenant:
 
 ```kql
 // Environment move to different AAD tenant failed
@@ -1424,7 +1425,7 @@ Occurs when a configuration key for the environment failed to be updated.
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
 |eventId|**LC0143**|
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
-|newValue|[ The value that the operation was supposed to update to |
+|newValue|The value that the operation was supposed to update to.|
 |oldValue|[!INCLUDE[oldValue](../includes/include-telemetry-dimension-old-value.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
@@ -1459,7 +1460,7 @@ Occurs when a configuration key for the environment was successfully deleted.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment configuration key {environmentConfigurationKey} deleted for environment {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment. <br /><br /> `{environmentConfigurationKey}` indicates the name of the configuration key to be updated.|
+|message|**Environment configuration key {environmentConfigurationKey} deleted for environment {environmentName}** <br /><br /> `{environmentName}` indicates the name of the environment. <br /><br /> `{environmentConfigurationKey}` indicates the name of the configuration key to be deleted.|
 
 ### Custom dimensions
 
@@ -1503,7 +1504,7 @@ Occurs when a configuration key for the environment failed to be deleted.
 
 ### Sample KQL code (environment configuration key failed to be deleted)
 
-This KQL code can help you get started analyzing failures when deletin a environment configuration key:
+This KQL code can help you get started analyzing failures when deleting an environment configuration key:
 
 ```kql
 traces
@@ -1551,7 +1552,7 @@ Occurs when the update window for the environment was successfully updated.
 
 ## Environment update window modification failed
 
-Occurs when a update window failed to be updated.
+Occurs when an update window failed to be updated.
 
 ### General dimensions
 
@@ -1584,7 +1585,7 @@ This KQL code can help you get started analyzing failures for updating the envir
 ```kql
 traces
 | where timestamp > ago(30d) // adjust as needed
-| where customDimensions.eventId == 'LC0145' 
+| where customDimensions.eventId == 'LC0147'
 | project timestamp
 , message
 // in which environment did it happen
@@ -1595,10 +1596,10 @@ traces
 , environmentType = customDimensions.environmentType
 // what happened
 , failureReason = customDimensions.failureReason
-, newUpdateWindowStartTimeUtc = customDimension.newUpdateWindowStartTimeUtc
-, newUpdateWindowEndTimeUtc = customDimension.newUpdateWindowEndTimeUtc
-, oldUpdateWindowStartTimeUtc = customDimension.oldUpdateWindowStartTimeUtc
-, oldUpdateWindowEndTimeUtc = customDimension.oldUpdateWindowEndTimeUtc
+, newUpdateWindowStartTimeUtc = customDimensions.newUpdateWindowStartTimeUtc
+, newUpdateWindowEndTimeUtc = customDimensions.newUpdateWindowEndTimeUtc
+, oldUpdateWindowStartTimeUtc = customDimensions.oldUpdateWindowStartTimeUtc
+, oldUpdateWindowEndTimeUtc = customDimensions.oldUpdateWindowEndTimeUtc
 ```
 
 
@@ -1818,9 +1819,11 @@ traces
 ```
 
 
-## Environment recovery (un-delete) operation started
+<a name="environment-recovery-un-delete-operation-started"></a>
 
-Occurs when a recovery (un-delete) operation was started for the environment.
+## Environment recovery (undelete) operation started
+
+Occurs when a recovery (undelete) operation was started for the environment.
 
 ### General dimensions
 
@@ -1844,7 +1847,7 @@ Occurs when a recovery (un-delete) operation was started for the environment.
 
 ## Environment recovered
 
-Occurs when the environment was successfully recovered (un-deleted).
+Occurs when the environment was successfully recovered (undeleted).
 
 ### General dimensions
 
@@ -1867,9 +1870,11 @@ Occurs when the environment was successfully recovered (un-deleted).
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 
-## Environment recovery (un-delete) operation failed
+<a name="environment-recovery-un-delete-operation-failed"></a>
 
-Occurs when a recovery (un-delete) operation for the environment failed.
+## Environment recovery (undelete) operation failed
+
+Occurs when a recovery (undelete) operation for the environment failed.
 
 ### General dimensions
 
@@ -1892,9 +1897,11 @@ Occurs when a recovery (un-delete) operation for the environment failed.
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 
-### Sample KQL code (environment un-delete failed)
+<a name="sample-kql-code-environment-un-delete-failed"></a>
 
-This KQL code can help you get started analyzing failures for un-deleting an environment:
+### Sample KQL code (environment undelete failed)
+
+This KQL code can help you get started analyzing failures for undeleting an environment:
 
 ```kql
 traces
@@ -2036,7 +2043,7 @@ Occurs when an app hotfix for the environment has been scheduled by the App Mana
 
 
 ## Environment app hotfix scheduling by App Management API failed to be scheduled
-Occurs when an app hotfix for the environment could not be scheduled by the App Management API service.
+Occurs when an app hotfix for the environment couldn't be scheduled by the App Management API service.
 
 ### General dimensions
 
@@ -2064,7 +2071,7 @@ Occurs when an app hotfix for the environment could not be scheduled by the App 
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
-|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 
 ### Sample KQL code (environment app hotfix scheduling by App Management API failed to be scheduled)
@@ -2160,7 +2167,7 @@ Occurs when an app hotfix for the environment was started by the App Management 
 
 
 ## Environment app hotfix applied successfully by App Management API
-Occurs when an app hotfix for the environment applied successfully by the App Management API service.
+Occurs when an app hotfix for the environment was applied successfully by the App Management API service.
 
 ### General dimensions
 

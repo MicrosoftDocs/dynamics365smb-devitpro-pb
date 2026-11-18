@@ -2,7 +2,7 @@
 title: Update 28.2 for Microsoft Dynamics 365 Business Central 2026 Release Wave 1
 description: Get an overview of new and changed capabilities in the 28.2 update of Business Central online, which is part of 2026 release wave 1
 ms.author: jswymer
-ms.date: 06/12/2026
+ms.date: 11/18/2026
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer

@@ -1,33 +1,34 @@
 ---
-title:  Error method trace telemetry
-description: Learn about the Error method telemetry in Business Central  
+title: Analyzing Error Method Trace Telemetry
+description: Analyze error dialog telemetry in Business Central to investigate AL errors, inspect stack traces and failure reasons, and identify problems affecting users.
 author: jswymer
 
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 12/21/2023
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Analyzing error method telemetry
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
-When a user gets an error dialog while working in [!INCLUDE[prod_shoirt](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource. 
+When a user gets an error dialog while working in [!INCLUDE[prod_short](../includes/prod_short.md)], a telemetry signal is emitted, which can be logged in an [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] resource.
 
-This telemetry data let's you identify and analyze calls to the `Error` method from AL code. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
+This telemetry data lets you identify and analyze calls to the `Error` method from AL code and errors raised by the platform. You can also set up alerts in [!INCLUDE[appInsights](../includes/azure-appinsights-name.md)] to get notified if many users experience errors.
 
 ## Error dialog displayed
 
-Occurs when the `Error` method is called and displays a dialog to the user.
+Occurs when an error is sent to the client for display, including errors raised by the AL `Error` method and by the platform.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Error dialog displayed: {failureReason}**|
+|message|**Error dialog shown: {failureReason}**|
 |severityLevel|**3**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -36,8 +37,9 @@ Occurs when the `Error` method is called and displays a dialog to the user.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**RT0030**|
-|alErrorMessage|The error string defined in the error method and displayed in the client.<br><br>The actual error string from AL code is shown in this dimension only if the string is a `Label` or `TextConst` data type. For all other data types, the string `Use ERROR with a text constant to improve telemetry details` is shown instead of the actual string.<br><br> Some messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Information that belongs to other data classifications, like customer data, isn't shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."| 
-|alEnglishLanguageDiagnosticsMessage|The error message in English (no matter which language the user had specified in the client).<br /><br />This dimension was introduced in Business Central 2023 release wave 1, version 22.0.  |
+|alErrorMessage|The error message, with private information removed.<br><br>For calls to `Error(String)`, the error string from AL code is shown only if the string is a `Label` or `TextConst` data type. For other nonempty strings, `Use ERROR with a text constant to improve telemetry details` is shown instead. Substitution values aren't included in the diagnostic text.<br><br>Messages from `Error(ErrorInfo)` are also subject to privacy filtering. Some messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-instrument-application-for-telemetry-app-insights.md#using-dataclassification-for-privacy). Information that belongs to other data classifications, like customer data, isn't shown. A redaction message is shown instead.|
+|alDetailedErrorMessage|The detailed error message, with private information removed.|
+|alEnglishLanguageDiagnosticsMessage|The error message in English, regardless of the user's client language.<br /><br />This dimension is available in version 22.0 and was backported to version 21.4.|
 |alObjectId|Specifies the ID of the AL object.|
 |alObjectType|Specifies the type of the AL object. |
 |alStackTrace| [!INCLUDE[alStackTrace](../includes/include-telemetry-dimension-al-stacktrace.md)] |
@@ -54,8 +56,8 @@ The following table explains other custom dimensions that are common to all erro
 |aadTenantId|The Microsoft Entra tenant ID that's used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|The version number of the component that emits telemetry (see the component dimension)|
-|environmentName|The name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
-|environmentType|The environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|The name of the tenant environment. This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|The environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |extensionName| [!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)] |
 |extensionPublisher| [!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)] |
 |extensionVersion| [!INCLUDE[extensionVersion](../includes/include-telemetry-dimension-extension-version.md)] |
@@ -102,14 +104,14 @@ traces
 // error information
 , clientType = customDimensions.clientType
 , errorMessageInUsersLanguage = customDimensions.alErrorMessage
-, errorMessageInEnglish = customDimensions.alEnglishLanguageDiagnosticsMessage // This dimension was introduced in Business Central 2023 release wave 1, version 21.4.
+, errorMessageInEnglish = customDimensions.alEnglishLanguageDiagnosticsMessage // Available in version 22.0 and backported to version 21.4.
 , alStackTrace = customDimensions.alStackTrace
 , failureReason = customDimensions.failureReason
 ```
 
 ## Understanding the error dialog
 
-To effectively help users mitigate any issues they might encounter, you should learn more about the different parts of the error dialog, including how to interpret the AL stack trace. For more information, see [Understanding the error dialog](../developer/devenv-error-dialog.md).
+To effectively help users mitigate any issues they might encounter, we recommend learning about the different parts of the error dialog, including how to interpret the AL stack trace. Learn more in [Understanding the error dialog](../developer/devenv-error-dialog.md).
 
 ## Related information
 
