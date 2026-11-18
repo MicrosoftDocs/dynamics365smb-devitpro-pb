@@ -1,33 +1,34 @@
 ---
-title: Analyze and monitor telemetry with KQL
-description: Learn how to query Business Central telemetry with KQL.  
+title: Analyze and Monitor Telemetry with KQL
+description: Query Business Central telemetry with Kusto Query Language to follow sessions and users, investigate performance, and analyze report usage.
 author: kennienp
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 12/19/2024
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: solsen
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 # Analyze and monitor telemetry with KQL
 
-Telemetry from [!INCLUDE[prod_short](../includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] in the tables *traces* and *pageViews*. The language used to query data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is _Kusto Query Language_ (KQL). This article has information and links to resources to get started learning about the KQL language.
+Telemetry from [!INCLUDE[prod_short](../includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] in the tables `traces` and `pageViews`. The language used to query data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is _Kusto Query Language_ (KQL). This article has information and links to resources to get started learning about the KQL language.
 
 As a simple example, follow these steps:
   
 1. In the Azure portal, open your Application Insights resource.
-2. In the **Monitoring** menu, select **Logs**.
-3. On the **New Query** tab, enter the following to get the last 100 traces:
+1. In the **Monitoring** menu, select **Logs**.
+1. On the **New Query** tab, enter the following to get the last 100 traces:
 
     ```kql
     traces
     | where timestamp > ago(7d)                     // look back 7 days
-    | take 100                                      // only take 100 rows
+    | top 100 by timestamp desc                     // get the most recent 100 rows
     | project timestamp, message, customDimensions  // only choose these three columns 
     | sort by timestamp desc                        // show the most recent data first
     ```
 
-## Where can I use Kusto Queries?
+## Where can I use Kusto queries?
 
 You can use Kusto queries as the data source in many places. For example:
 
@@ -70,7 +71,7 @@ traces
 // project clause here
 ```
 
-To learn more, go to [datetime_utc_to_local()](/kusto/query/datetime-utc-to-local-function)
+Learn more in [datetime_utc_to_local()](/kusto/query/datetime-utc-to-local-function).
 
 
 ## KQL example - finding the start time of an event
@@ -83,9 +84,10 @@ Use this KQL code to query the start time for a long running event:
 // Long running SQL queries (get start time for events)
 traces
 | where timestamp > ago(30d) // adjust as needed
-| where customDimensions has 'RT0005'
-| extend executionTimeInMS = toint(totimespan(customDimensions.executionTime))/10000 //the datatype for executionTime is timespan 
-| project start_time = datetime_add('millisecond', -executionTimeInMS, timestamp)
+| where customDimensions.eventId == 'RT0005'
+| extend executionTime = totimespan(customDimensions.executionTime)
+| extend executionTimeInMS = executionTime / 1ms
+| project start_time = timestamp - executionTime
 , executionTimeInMS
 , end_time=timestamp
 // add more data as needed 
@@ -98,7 +100,7 @@ In [!INCLUDE[prod_short](../includes/prod_short.md)] version 24 and later, the s
 Use this KQL code to query what happens in a single session:
 
 ```kql
-let _session_Id = 'fea0995e-525d-499a-bc2e-0fd27bfe412b' // change to the guid for the session you want to follow
+let _session_Id = 'aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb' // change to the guid for the session you want to follow
 ;
 let pv = 
 pageViews
@@ -122,7 +124,7 @@ In [!INCLUDE[prod_short](../includes/prod_short.md)] version 24 and later, the s
 Use this KQL code to query what a user does across sessions:
 
 ```kql
-let _user_Id = 'b99ed22a-4681-41e8-b5fc-91c004e1979a' // change to the guid for the user you want to follow
+let _user_Id = '00aa00aa-bb11-cc22-dd33-44ee44ee44ee' // change to the guid for the user you want to follow
 ;
 let pv = 
 pageViews
@@ -199,7 +201,7 @@ traces // which kusto table that stores the data
 
 When writing KQL queries, it's good practice to limit the number of rows while developing it. This practice allows for quick explorations and experimentation without having to wait for the result in each modification of the query.
 
-So, before running the query, add a `take` operator on a new line after the `where` operator and the `project` operator:
+So, before running the query, add a `take` operator on a new line after the `where` operators and before the `project` operator:
 
 Your query should now look like this:
 
@@ -240,12 +242,12 @@ traces
 // performance data
 , numberOfRows = customDimensions.numberOfRows
 // , serverExecutionTime = customDimensions.serverExecutionTime // the datatype for executionTime is timespan
-, serverExecutionTimeInMS = toreal(totimespan(customDimensions.serverExecutionTime))/10000 // this shows how to convert timespan to millisecods
+, serverExecutionTimeInMS = totimespan(customDimensions.serverExecutionTime) / 1ms // convert timespan to milliseconds
 , sqlDatabaseAccessIntent = customDimensions.sqlDatabaseAccessIntent  // sqlDatabaseAccessIntent dimension added in version 19.1
 , sqlExecutes = customDimensions.sqlExecutes 
 , sqlRowsRead = customDimensions.sqlRowsRead
 // , totalTime = customDimensions.totalTime // the datatype for totalTime is timespan
-, totalTimeInMS = toreal(totimespan(customDimensions.totalTime))/10000 // this shows how to convert timespan to millisecods
+, totalTimeInMS = totimespan(customDimensions.totalTime) / 1ms // convert timespan to milliseconds
 | extend renderTimeInMS = totalTimeInMS - serverExecutionTimeInMS
 ```
 
@@ -311,7 +313,7 @@ This query shows you a total count of all reports that were run. Because you hav
 ```kql
 // Note that this query will fail with the error
 // 
-// Summarize group key 'alObjectId' is of a 'dynamic' type. Please use an explicit cast (for example, 'summarize ... by tostring(alObjectId)') as grouping by a 'dynamic' type is not supported.
+// Summarize group key 'alObjectName' is of a 'dynamic' type. Please use an explicit cast (for example, 'summarize ... by tostring(alObjectName)') as grouping by a 'dynamic' type is not supported.
 //
 traces
 | where timestamp > ago(60d) // adjust as needed
@@ -339,7 +341,7 @@ traces
 
 All of the context for the report rendering (which object ID/name, extension/app details etc.) is stored in a data structure called `customDimensions`. For such columns to work in the `by` part of the  `summarize` operator, they must be converted to strings or numbers, otherwise you get this error when running the query:
 
-_Summarize group key 'alObjectId' is of a 'dynamic' type. Please use an explicit cast (for example, 'summarize ... by tostring(alObjectId)') as grouping by a 'dynamic' type is not supported._
+> Summarize group key 'alObjectName' is of a 'dynamic' type. Please use an explicit cast (for example, 'summarize ... by tostring(alObjectName)') as grouping by a 'dynamic' type is not supported.
 
 Let's quickly fix that and add a `tostring` command to the `by` part of the `summarize` line:
 
@@ -368,7 +370,7 @@ traces
 | summarize count() by tostring(alObjectName)
 ```
 
-The _Summarize group key 'alObjectId' is of a 'dynamic' type_ error is common to get when you write KQL. Now you know how to fix it.
+The error about grouping by a `dynamic` value is common when you write KQL. Now you know how to fix it.
 
 Let's add a few more columns to the `by` part of the `summarize` line and tidy up the query (remove comments and unused columns from the `project` part):
 

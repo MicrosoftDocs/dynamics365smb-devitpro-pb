@@ -1,19 +1,22 @@
 ---
-title: Server certificate validation errors for outgoing web service requests
-description: Learn about telemetry for server certificate validation errors for outgoing web service requests in Business Central  
+title: Outgoing Web Service Certificate Validation Error Telemetry
+description: Analyze outgoing web service certificate validation telemetry in Business Central to identify invalid server certificates and troubleshoot AL HttpClient requests.
 author: kennienp
 ms.topic: concept-article
-ms.date: 03/20/2025
+ms.date: 11/17/2026
 ms.author: kepontop
 ms.reviewer: jswymer
-ms-custom: bap-template
+ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Analyzing server certificate validation errors for outgoing web service requests telemetry
 
 [!INCLUDE[introduced_in_2025rw1](../developer/includes/2025rw1_and_later.md)]
 
-Server certificate validation error telemetry gathers data about errors in validating server certificates on the endpoint when doing outgoing web service requests using the AL HTTPClient module. Use the data to contact the owner of the endpoint and ask them to fix their certificate.
+Server certificate validation error telemetry gathers data about errors in validating server certificates on the endpoint when doing outgoing web service requests using the AL `HttpClient` data type. Use the data to contact the owner of the endpoint and ask them to fix their certificate.
+
+The event is emitted when a certificate validation error is detected, even if certificate validation is bypassed for the request. The event alone doesn't mean that the HTTP request was blocked.
 
 ## General dimensions
 
@@ -22,6 +25,7 @@ The following table explains the general dimensions included in a **server certi
 |Dimension|Description or value|
 |---------|--------------|
 |message|**HTTP server certificate validation failed when calling endpoint: {endpoint}**|
+|severityLevel|**3**|
 
 ## Custom dimensions
 
@@ -50,7 +54,7 @@ The following table explains the custom dimensions included in a **server certif
 
 ## Sample KQL code
 
-This KQL code can help you get started analyzing server certificate validation errors
+This KQL code can help you get started analyzing server certificate validation errors.
 
 ```kql
 // added in version 26.0

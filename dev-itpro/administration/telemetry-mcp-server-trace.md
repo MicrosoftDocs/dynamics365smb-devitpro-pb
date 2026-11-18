@@ -1,26 +1,27 @@
 ---
-title: Analyze MCP Server Tool Calls Telemetry 
-description: Learn about the MCP Server telemetry in Business Central  
+title: Analyze MCP Server Tool Calls Telemetry
+description: Analyze Business Central MCP server tool call telemetry to track tool usage, investigate invocation failures, and compare performance across configurations.
 author: jswymer
-ms.topic: how-to
+ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, mcp, copilot
-ms.date: 01/20/2025
+ms.date: 11/17/2026
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Analyze MCP server tool calls telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2026 release wave 1, version 28.0, and later
 
-[Model Context Protocol (MCP)](../ai/mcp-overview.md) Server telemetry gathers data about tool calls made through MCP Server configurations in Business Central. This telemetry helps you understand how external tools and services are being used through the MCP protocol.
+[Model Context Protocol (MCP)](../ai/mcp-overview.md) server telemetry gathers data about calls that external MCP hosts make to tools exposed by Business Central MCP server configurations. This telemetry helps you understand how external clients use Business Central through MCP.
 
-Learn how to configure the MCP server in [Configure Business Central MCP Server](../ai/configure-mcp-server.md).
+Learn more in [Configure Business Central MCP Server](../ai/configure-mcp-server.md).
 
-## <a name="rt0054"></a>MCP Server tool called
+## <a name="rt0054"></a>MCP server tool called
 
-Occurs when an MCP Server tool is called from Business Central.
+Occurs when Business Central processes a tool call from an MCP host.
 
 ### General dimensions
 
@@ -47,7 +48,7 @@ Occurs when an MCP Server tool is called from Business Central.
 |result|Specifies the result of the operation. Possible values are **Success** or **Failure**.|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 |serverExecutionTime|[!INCLUDE[serverExecutionTime](../includes/include-telemetry-dimension-server-executiontime.md)]|
-|toolInvocationResult|Specifies the result of the MCP tool invocation. Possible values are **Success** or **Failure**.|
+|toolInvocationResult|Specifies the result of the MCP tool invocation. Possible values are **Success** or **Failure**. This dimension can be absent if an exception prevents the tool call from returning a result.|
 |toolInvocationFailureReason|Specifies the reason for the tool invocation failure. This dimension is only populated when **toolInvocationResult** is **Failure**.|
 
 ### Sample KQL code
@@ -107,7 +108,7 @@ traces
     TotalCalls = count()
   , SuccessfulCalls = countif(customDimensions.toolInvocationResult == 'Success')
   , FailedCalls = countif(customDimensions.toolInvocationResult == 'Failure')
-  , AvgServerExecutionTime = avg(toreal(customDimensions.serverExecutionTime))
+  , AvgServerExecutionTimeInMs = avg(toreal(totimespan(customDimensions.serverExecutionTime)) / 10000)
   by 
     ConfigurationName = tostring(customDimensions.configurationName)
   , ToolName = tostring(customDimensions.toolName)

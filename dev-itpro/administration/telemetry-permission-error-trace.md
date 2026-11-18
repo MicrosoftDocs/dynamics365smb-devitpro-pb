@@ -1,24 +1,25 @@
 ---
 title: Analyzing Permission Error Trace Telemetry
-description: Learn about the permission error telemetry in Business Central  
+description: Analyze permission error telemetry in Business Central to identify missing permissions, inspect affected objects, and investigate errors reported to users.
 author: jswymer
 
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/27/2022
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
-# Analyzing Permission Error Trace Telemetry
+# Analyzing permission error trace telemetry
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
 When a user gets an error dialog about lack of permissions while working in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], a telemetry signal is emitted. This signal can be logged in an Application Insights resource.
 
-This telemetry data let's you identify and analyze permission problems that users may experience in Business Central.
+This telemetry data lets you identify and analyze permission problems that users may experience in Business Central.
 
-## Permission Error Shown
+## Permission error shown
 
 Occurs when a user gets a permissions-related error message in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] when they try to do an operation in the application.
 
@@ -40,13 +41,13 @@ Occurs when a user gets a permissions-related error message in [!INCLUDE[prod_sh
 |alObjectName|The name of the AL object that the user was trying to access, like a table or page. |
 |alObjectType|The type of the AL object that the user was trying to access, like a table or page. |
 |alStackTrace| [!INCLUDE[alStackTrace](../includes/include-telemetry-dimension-al-stacktrace.md)] |
-|clientType|The type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|The type of client that attempted the operation, such as `Background` or `WebClient`. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|The version number of the component that emits telemetry (see the component dimension)|
-|environmentName|The name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
-|environmentType|The environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|errorMessage|The error string defined in the error method and displayed in the client.| 
+|environmentName|The name of the tenant environment. This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|The environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
+|errorMessage|The permission error message, with private information removed.|
 |extensionName| [!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)] |
 |extensionPublisher| [!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)] |
 |extensionVersion| [!INCLUDE[extensionVersion](../includes/include-telemetry-dimension-extension-version.md)] |

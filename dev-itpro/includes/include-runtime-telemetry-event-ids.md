@@ -13,7 +13,7 @@
 |RT0010|Extension lifecycle|[Extension Update Failed: exception raised in extension {extensionName} by {extensionPublisher} (updating to version {extensionTargetedVersion})](../administration/telemetry-extension-update-trace.md#extension-update-failed-exception-raised-in-extension) |
 | RT0011 | Report generation | [Report cancelled but a commit occurred](../administration/telemetry-reports-trace.md#commit) | 
 | RT0012 | Performance | [Database lock timed out](../administration/telemetry-database-locks-trace.md#database-lock-timed-out) | 
-| RT0013 | Performance | [Database lock snapshot: {snapshotId}](../administration/telemetry-database-locks-trace.md#database-lock-snapshot-entry) |
+| RT0013 | Performance | [Database lock snapshot entry: {snapshotId}](../administration/telemetry-database-locks-trace.md#database-lock-snapshot-entry) |
 | RT0014 | Security | [App Key Vault initialization succeeded: '{keyVaultUri}'](../administration/telemetry-extension-key-vault-trace.md#initializedsuccess) |
 | RT0015 | Security | [App Key Vault initialization failed](../administration/telemetry-extension-key-vault-trace.md#initializedfailed) |
 | RT0016 | Security | [App Key Vault secret retrieval succeeded from key vault '{keyVaultUri}'](../administration/telemetry-extension-key-vault-trace.md#retrievedsuccess) |
@@ -24,19 +24,19 @@
 | RT0021 | Web service key request| [Authentication with Web Service Key failed: {endpoint}](../administration/telemetry-webservices-access-key-trace.md#failed) |
 | RT0022 | Security | [App secret initialization failed](../administration/telemetry-app-resource-exposure-trace.md#RT0022) |
 |RT0023|Troubleshooting|[Verbose telemetry enabled for session: {sessionId}](../administration/telemetry-verbose-logging-trace.md#enabled)|
-|RT0024|Troubleshooting|[Verbose telemetry disabled for session: {sessionId}](../administration/telemetry-verbose-logging-trace.md#enabled)|
+|RT0024|Troubleshooting|[Verbose telemetry disabled for session: {sessionId}](../administration/telemetry-verbose-logging-trace.md#disabled)|
 | RT0025 | Performance | [Database wait statistics snapshot taken: {snapshotId}](../administration/telemetry-database-wait-statistics-trace.md#waitstatstaken) | 
 | RT0026 | Performance | [Database wait statistics snapshot entry: {databaseWaitStatisticsCategory}](../administration/telemetry-database-wait-statistics-trace.md#waitstatsentry) | 
-| RT0027 | Performance | [Database locks snapshot: {snapshotId}](../administration/telemetry-database-locks-trace.md#RT0027) |
+| RT0027 | Performance | [Database locks snapshot taken: {snapshotId}](../administration/telemetry-database-locks-trace.md#RT0027) |
 | RT0028 | Performance | [Database deadlock occurred](../administration/telemetry-database-deadlocks-trace.md#database-deadlock-occurred) |
-|RT0029|Sessions|[The StopSession method was invoked on session {failureReason}](../administration/telemetry-stop-session-trace.md) |
-| RT0030 | Error method call| [Error dialog displayed: {errorMessage}](../administration/telemetry-error-method-trace.md) | 
+|RT0029|Sessions|[The StopSession method was invoked on session {stoppingSessionID}](../administration/telemetry-stop-session-trace.md) |
+| RT0030 | Error method call| [Error dialog shown: {failureReason}](../administration/telemetry-error-method-trace.md) |
 | RT0031 | Permission error| [Permission error shown](../administration/telemetry-permission-error-trace.md) | 
-|RT0032|Permission error| [Dependency cycle discovered in permission sets](../administration/telemetry-permission-dependency-cycle-trace.md) |
+|RT0032|Permission error| [Dependency cycle discovered in permission sets.](../administration/telemetry-permission-dependency-cycle-trace.md) |
 |RT0033|Web service publishing| [Web service metadata error: Name for subpage of parent page '{parentPageName}' is missing. Subpage is skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0033) |
 |RT0034|Web service publishing| [Web service metadata error: Control element with id {metadataObjectName} has a missing name. The page with the control was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0034) |
 |RT0035|Web service publishing| [Web service metadata error: The record with name '{webserviceRecordName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0035) |
-|RT0036|Web service publishing| [Web service metadata error: Table field name error, the page contaning the field with caption '{metaFieldCaption}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0036) |
+|RT0036|Web service publishing| [Web service metadata error: Table field name error, the page contaning the field with caption '{metafieldCaption}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0036) |
 |RT0037|Web service publishing| [Web service metadata invalid page](../administration/telemetry-api-metadata-validation-trace.md#RT0037) |
 |RT0038|Web service publishing| [Web service metadata warning: Multiple options while generation navigation property for tablerelation.](../administration/telemetry-webservices-publish-failure-trace.md#rt0038) |
 |RT0039|Web service publishing| [Web service metadata error: The record with name '{entityName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0039) |

@@ -1,41 +1,42 @@
 ---
-title:  App Key Vault Secret Trace Telemetry | Microsoft Docs
-description: Learn about app key vault secret trace telemetry in Business Central  
+title: Analyzing App Key Vault Secret Trace Telemetry
+description: Analyze app key vault telemetry in Business Central to troubleshoot extension initialization failures and secret retrieval errors in Azure Key Vault.
 author: jswymer
-ms.topic: how-to
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 09/25/2025
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
-# Analyze an app key vault secret trace telemetry
+# Analyze app key vault secret trace telemetry
 
 [!INCLUDE[prod_short](../includes/2020_releasewave2.md)]
 
-App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. Learn more about app key vaults and secrets in [Use app key vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault-overview.md).
+App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. These events are sent to the extension's Application Insights resource, not the environment's resource. Learn more in [Use app key vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault-overview.md).
 
 The app key vault secret process has two operations: *initialization* and *retrieval*. The telemetry data provides information about the success or failure for each of these operations. There are various conditions that cause a failure. The failure messages provide insight into the cause of the failure, helping you identify, troubleshoot, and resolve issues.
 
-#### Initialization
+## Initialize the app key vault provider
 
 Initialization is the first stage. It verifies the configuration of the app key vault provider in the extension and on the service. This stage is initiated by the `TryInitializeFromCurrentApp` method call in the extension code. Some conditions that cause failures in this stage include:
 
-- The extension doesn't specify a key vault in it's app.json file.
+- The extension doesn't specify a key vault in its `app.json` file.
 - The Azure Key Vault Client Identity settings are incorrect. For example, it could be that the application (client) ID that you specified for the key vault reader application in Azure is wrong.
 - The Business Central Server lacks permission to the private key of the Azure Key Vault client certificate.
 
-#### Retrieval
+## Retrieve an app key vault secret
 
 Retrieval is the second stage, and occurs after a successful initialization. In this stage, the service tries to get a secret from a specified key vault. This stage is initiated by the `GetSecret` method call in the extension code. Some conditions that cause failures include:
 
-- The secret name requested by the extension is doesn't exist or isn't valid.
+- The secret name requested by the extension doesn't exist or isn't valid.
 - The key vault doesn't exist.
 - The application ID doesn't have permission to read from the key vault.
 
-Learn more about using key vault secrets with extensions in [Use app key vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault-overview.md).
+Learn more in [Use app key vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions](../developer/devenv-app-key-vault-overview.md).
 
-## <a name="initializedsuccess"></a>App Key Vault secret initialization succeeded
+## <a name="initializedsuccess"></a>App key vault secret initialization succeeded
 
 Occurs when an extension secret was successfully initialized.  
 
@@ -54,10 +55,10 @@ Occurs when an extension secret was successfully initialized.
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed the request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that executed the request, such as `Background` or `WebClient`. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that you update any queries that use these keys to use the new key name.|
 |eventId|**RT0014**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
 |extensionName|Specifies the name of the extension that requested the secret. |
@@ -66,9 +67,9 @@ Occurs when an extension secret was successfully initialized.
 |keyVaultUrls|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-### Sample KQL code (successful Azure Keyvault initializations)
+### Sample KQL code (successful Azure Key Vault initializations)
 
-This KQL code can help you get started analyzing Azure Keyvault initializations.
+This KQL code can help you get started analyzing Azure Key Vault initializations.
 
 ```kql
 traces
@@ -88,7 +89,7 @@ traces
 ```
 
 
-## <a name="initializedfailed"></a>App Key Vault initialization failed
+## <a name="initializedfailed"></a>App key vault initialization failed
 
 Occurs when a key vault failed to be initialized.  
 
@@ -107,10 +108,10 @@ Occurs when a key vault failed to be initialized.
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that executed the request, such as `Background` or `WebClient`. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that you update any queries that use these keys to use the new key name.|
 |eventId|**RT0015**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
 |extensionName|Specifies the name of the extension that requested the secret.|
@@ -120,9 +121,9 @@ Occurs when a key vault failed to be initialized.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
-### Sample KQL code (Azure Keyvault initialization errors)
+### Sample KQL code (Azure Key Vault initialization errors)
 
-This KQL code can help you get started troubleshooting and alerting on Azure Keyvault retrieval errors.
+This KQL code can help you get started troubleshooting and alerting on Azure Key Vault initialization errors.
 
 ```kql
 traces
@@ -143,7 +144,7 @@ traces
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
-## <a name="retrievedsuccess"></a>App Key Vault secret retrieval succeeded
+## <a name="retrievedsuccess"></a>App key vault secret retrieval succeeded
 
 Occurs when a secret used by an extension is successfully retrieved from an Azure Key Vault.
 
@@ -162,10 +163,10 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that requested the secret, such as `Background` or `WebClient`. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that you update any queries that use these keys to use the new key name.|
 |eventId|**RT0016**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
 |extensionName|Specifies the name of the extension that requested the secret. |
@@ -175,9 +176,9 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |secretName|Specifies the secret name.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-### Sample KQL code (successful Azure Keyvault retrievals)
+### Sample KQL code (successful Azure Key Vault retrievals)
 
-This KQL code can help you get started analyzing Azure Keyvault retrievals.
+This KQL code can help you get started analyzing Azure Key Vault retrievals.
 
 ```kql
 traces
@@ -194,11 +195,11 @@ traces
 , extensionPublisher = customDimensions.extensionPublisher
 , extensionVersion = customDimensions.extensionVersion
 , keyVaultUrl = customDimensions.keyVaultUrl
-, secretName = customDimensions.SecretName
+, secretName = customDimensions.secretName
 ```
 
 
-## <a name="retrievedfailed"></a>App Key Vault secret retrieval failed
+## <a name="retrievedfailed"></a>App key vault secret retrieval failed
 
 Occurs when an extension failed to retrieve a secret from a specified Azure key vault.  
 
@@ -217,22 +218,23 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that requested the secret, such as `Background` or `WebClient`. Learn more in [ClientType option type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that you update any queries that use these keys to use the new key name.|
 |eventId|**RT0017**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
 |extensionName|Specifies the name of the extension that requested the secret. |
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
+|failureReason|Specifies the error that occurred while retrieving the secret.|
 |keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |secretName|Specifies the secret name.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-### Sample KQL code (Azure Keyvault retrieval errors)
+### Sample KQL code (Azure Key Vault retrieval errors)
 
-This KQL code can help you get started troubleshooting and alerting on Azure Keyvault retrieval errors.
+This KQL code can help you get started troubleshooting and alerting on Azure Key Vault retrieval errors.
 
 ```kql
 traces
@@ -250,7 +252,7 @@ traces
 , extensionVersion = customDimensions.extensionVersion
 , failureReason = customDimensions.failureReason
 , keyVaultUrl = customDimensions.keyVaultUrl
-, secretName = customDimensions.SecretName
+, secretName = customDimensions.secretName
 ```
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]

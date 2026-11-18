@@ -1,11 +1,12 @@
 ---
-title: Analyzing profile configuration lifecycle telemetry
-description: Learn about the telemetry for configuration profiles using the in-client designer.  
+title: Analyzing Profile Configuration Lifecycle Telemetry
+description: Analyze Business Central profile configuration telemetry to track profile imports, exports, copying, creation, deletion, and page customization changes.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: concept-article
-ms.date: 12/18/2023
+ms.date: 11/17/2026
+ai-usage: ai-assisted
 ms.custom: bap-template
 ---
 
@@ -13,11 +14,11 @@ ms.custom: bap-template
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 2, version 21.0, and later
 
-From the [!INCLUDE[web](../developer/includes/webclient.md)], users can do various operations on profiles, like, import/export, create, copy, and remove. To learn more about these operations, see [Manage User Profiles](/dynamics365/business-central/admin-users-profiles-roles) and [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
+From the [!INCLUDE[web](../developer/includes/webclient.md)], users can do various operations on profiles, like import/export, create, copy, and remove. Learn more in [Manage user profiles](/dynamics365/business-central/admin-users-profiles-roles) and [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
 
 Business Central emits telemetry signals for these operations, which you can collect using an Application Insights resource. As a partner or consultant, this information gives you insight into what the service does with the profiles and page customizations you provide.
 
-## <a name="other"></a>**Common custom dimensions**
+## <a name="other"></a>Common custom dimensions
 
 The following table explains custom dimensions that are common to all profile configuration traces. 
 
@@ -27,7 +28,7 @@ The following table explains custom dimensions that are common to all profile co
 |companyName|The name of the company where the operation is applied. Added in version 20.0. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## <a name="import-success"></a>Profile import succeeded 
@@ -102,7 +103,8 @@ Occurs when a profile was successfully exported to a file.
 |---------|-----|
 |eventId|**LC0048**|
 |diagnostics|List of diagnostics (severity and message) from compiler and designer. |
-|force|Species whether the Force flag was set, allowing to export profiles even with compilation errors. |
+|force|Specifies whether the Force flag was set, allowing profiles to be exported even with compilation errors.|
+|profileCount|Specifies the number of profiles that were exported.|
 |sqlExecutes|[!INCLUDE[sqlExecutes](../includes/include-telemetry-dimension-sqlexecutes.md)]|
 |serverExecutionTime|[!INCLUDE[server-executiontime](../includes/include-telemetry-dimension-server-executiontime.md)]|
 |sqlRowsRead|[!INCLUDE[sqlRowsRead](../includes/include-telemetry-dimension-sqlrowsread.md)]|
@@ -135,6 +137,7 @@ Occurs when a profile failed to be exported to a file.
 |eventId|**LC0049**|
 |diagnostics|List of diagnostics (severity and message) from compiler and designer. |
 |failureReason|Specifies why the export operation failed.|
+|force|Specifies whether the Force flag was set, allowing profiles to be exported even with compilation errors.|
 |[See common custom dimensions](#other)||
 
 <!--
@@ -159,8 +162,8 @@ Occurs when a profile was copied successfully.
 |---------|-----|
 |eventId|**LC0050**|
 |diagnostics|List of diagnostics (severity and message) from compiler and designer. |
-|ProfileAppId|Specifies the ID of the extension that included the profile that was copied. An empty value or  `00000000-0000-0000-0000-000000000000` indicates the profile was created from the Business Central web client or programmatically using AL code.|
-|ProfileId|Specifies the ID of the profile that was copied.|
+|profileAppId|Specifies the ID of the extension that included the profile that was copied. An empty value or  `00000000-0000-0000-0000-000000000000` indicates the profile was created from the Business Central web client or programmatically using AL code.|
+|profileId|Specifies the ID of the profile that was copied.|
 |newProfileAppId|Specifies the ID of the extension that included the new profile. An empty value or  `00000000-0000-0000-0000-000000000000` indicates the profile was created from the Business Central web client or programmatically using AL code.|
 |newProfileId|Specifies the ID of the new profile that was created from a copy.|
 |sqlExecutes|[!INCLUDE[sqlExecutes](../includes/include-telemetry-dimension-sqlexecutes.md)]|
@@ -210,7 +213,7 @@ Occurs when a new profile was created successfully.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Profile created successfully:  {profileId} in app/extension {profileAppId}**|
+|message|**Profile created successfully: {profileId} in app/extension {profileAppId}**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -304,7 +307,7 @@ Occurs when a page customization was converted successfully.
 
 ## Next steps
 
-Use this telemetry data to determine how the users are working with the profiles that you provide in extensions. Then, make changes to better suit the users needs as you see fit.
+Use this telemetry data to determine how the users are working with the profiles that you provide in extensions. Then, make changes to better suit the users' needs as you see fit.
 
 ## Related information
 

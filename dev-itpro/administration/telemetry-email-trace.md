@@ -1,10 +1,11 @@
 ---
-title: Analyze email trace telemetry 
-description: Learn about the email telemetry in Business Central  
+title: Analyzing Email Trace Telemetry
+description: Analyze email telemetry in Business Central to monitor email delivery and troubleshoot failures when connecting or authenticating to SMTP servers.
 author: kennienp
-ms.topic: how-to
+ms.topic: reference
+ai-usage: ai-assisted
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/02/2024
+ms.date: 11/17/2026
 ms.reviewer: jswymer
 ms.author: kepontop
 
@@ -20,15 +21,18 @@ Email telemetry gathers data about the following operations:
 - An email was sent successfully
 - An attempt to send an email failed 
 
-From [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 1, update 23.2, and later, the following operations are also emitted to telemetry:
+In application versions that include the SMTP telemetry events documented below, the following operations are also emitted to telemetry:
 
-- Authentication to an SMTP server succeded/failed
-- Connection to an SMTP server succeded/failed
+- Authentication to an SMTP server succeeded or failed
+- Connection to an SMTP server succeeded or failed
+- Sending an email through SMTP succeeded or failed
 
 
 <!--Today, partners can test email setup during setup (click a test button). If settings change on SMTP side later, they don't get notified before something stops working. -->
 
-Before you can collect this data, you'll have to set up email. For more information, see [Set Up Email](/dynamics365/business-central/admin-how-setup-email) in the [!INCLUDE[prod_short](../includes/prod_short.md)] application help.
+Before you can collect this data, you'll have to set up email. Learn more in [Set Up Email](/dynamics365/business-central/admin-how-setup-email) in the [!INCLUDE[prod_short](../includes/prod_short.md)] application help.
+
+These events use `TelemetryScope::All`. The failed-to-send event uses error verbosity (`severityLevel` **3**). The other events use normal verbosity (`severityLevel` **1**), including SMTP events whose result dimension is **No**.
 
 > [!TIP]
 > You can also view failed emails in the **Email Outbox** page in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
@@ -36,13 +40,13 @@ Before you can collect this data, you'll have to set up email. For more informat
 
 ## <a name="success"></a>Email sent successfully
 
-Occurs when an email was successfully sent from the client.
+Occurs when the email dispatcher successfully sends an email.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Email sent successfully**|
+|message|**Email sent**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -54,22 +58,22 @@ Occurs when an email was successfully sent from the client.
 |companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] | 
 |environmentName| [!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)] |
 |environmentType| [!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)] |
-|alConnector|Specifies the email-provider connector used to send the email. Possible values include: <ul><li>Current User</li><li>Microsoft 365</li><li>SMTP</li><li>Other custom connectors installed by extensions.</li></ul> The connector is specified on the email accounts that are set up in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Adding Email Accounts](/dynamics365/business-central/admin-how-setup-email#adding-email-accounts).|
-|alEmailMessageID|Specifies the GUID assigned to email, like C7A56676-9F3F-4044-90F0-D7F3196AC366.|
-|alObjectId|**8888**, which is the ID of the system application codeunit that sends emails.|
-|alObjectName|**Email Dispatcher**, which is the name of the system application codeunit that sends the emails.|
+|alFeatureName|**Emailing**|
+|alEventName|**Email sent**|
+|alObjectId|**8713**, which is the ID of the system application telemetry logger codeunit.|
+|alObjectName|`System Telemetry Logger`, which emits the event on behalf of the email dispatcher.|
 |alObjectType|**CodeUnit**|
 |eventId|**AL0000CTV**|
 
 ## <a name="failed"></a>Failed to send email
 
-Occurs when an email failed to be sent from the client.
+Occurs when the email dispatcher fails to send an email.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Failed to send email.**|
+|message|The error text returned by the failed send operation.|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -81,12 +85,12 @@ Occurs when an email failed to be sent from the client.
 |companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] | 
 |environmentName| [!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)] |
 |environmentType| [!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)] |
-|alConnector|Specifies the email-provider connector used to send the email. Possible values include: <ul><li>Current User</li><li>Microsoft 365</li><li>SMTP</li><li>Other custom connectors installed by extensions.</li></ul> The connector is specified on the email accounts that are set up in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Adding Email Accounts](/dynamics365/business-central/admin-how-setup-email#adding-email-accounts).|
-|alEmailMessageID|Specifies the GUID assigned to email, like C7A56676-9F3F-4044-90F0-D7F3196AC366.|
+|alFeatureName|**Emailing**|
+|alEventName|**Failed to send email**|
 |alErrorCallStack| Specifies the AL callstack when the error occurred. This dimension was added in version 19.0.|
 |alErrorText| Specifies the AL error message. This dimension was added in version 19.0. |
-|alObjectId|**8888**, which is the ID of the system application codeunit that sends emails.|
-|alObjectName|**Email Dispatcher**, which is the name of the system application codeunit that sends the emails.|
+|alObjectId|**8713**, which is the ID of the system application telemetry logger codeunit.|
+|alObjectName|`System Telemetry Logger`, which emits the event on behalf of the email dispatcher.|
 |alObjectType|**CodeUnit**|
 |eventId|**AL0000CTP**|
 
@@ -98,7 +102,7 @@ Occurs when the SMTP module is authenticating to an SMTP server.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Authenticated to SMTP server**|
+|message|**Authenticated to SMTP server.**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -119,7 +123,6 @@ This KQL code can help you get started analyzing SMTP authentication failures:
 
 ```kql
 // Authenticated to SMTP server
-// Introduced in version 22.3
 traces
 | where timestamp > ago(60d) // adjust as needed
 | where customDimensions.eventId == 'AL0000GKK'
@@ -142,7 +145,7 @@ Occurs when the SMTP module is connecting to an SMTP server.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Connected to SMTP server**|
+|message|**Connected to SMTP server.**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -163,7 +166,6 @@ This KQL code can help you get started analyzing SMTP connection failures:
 
 ```kql
 // Connected to SMTP server
-// Introduced in version 22.3
 traces
 | where timestamp > ago(60d) // adjust as needed
 | where customDimensions.eventId == 'AL0000GKJ'
@@ -186,7 +188,7 @@ Occurs when the SMTP module is sending an email.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Email sent**|
+|message|**Sent email.**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -206,8 +208,7 @@ Occurs when the SMTP module is sending an email.
 This KQL code can help you get started analyzing failures in sending emails:
 
 ```kql
-// Connected to SMTP server
-// Introduced in version 22.3
+// Sent email
 traces
 | where timestamp > ago(60d) // adjust as needed
 | where customDimensions.eventId == 'AL0000GKL'

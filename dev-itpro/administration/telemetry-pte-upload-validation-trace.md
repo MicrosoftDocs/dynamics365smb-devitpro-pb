@@ -1,19 +1,20 @@
 ---
-title:  Analyzing Extension Upload Validation Telemetry 
-description: Learn about the extension upload validation telemetry in Business Central.
+title: Analyzing Extension Upload Validation Telemetry
+description: Analyze Business Central per-tenant extension upload validation telemetry to track validation attempts, investigate failures, and configure alerts.
 author: KennieNP
 ms.author: kepontop
 ms.reviewer: jswymer
 ms.topic: concept-article
-ms.date: 11/03/2023
+ms.date: 11/17/2026
 ms.custom: bap-template
+ai-usage: ai-assisted
 
 ---
-# Analyzing Extension Upload Validation Telemetry 
+# Analyzing extension upload validation telemetry
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
-In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, when a user/administrator uploads a per-tenant extension to an environment from the Extension Management page, we proactively validate it against the environment.
+In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, when a user or administrator uploads a per-tenant extension to an environment from the **Extension Management** page, Business Central proactively validates it against the environment.
 
 With this telemetry, partners can monitor these attempts for customers and set up alerts on failures so that they know up-front which customers will need help.
 
@@ -148,7 +149,7 @@ Occurs if the extension can compile against the environment.
 
 
 
-## <a name="extension-validation-reported"></a>Extension Validation diagnostic reported (LC0210)
+## <a name="extension-validation-reported"></a>Extension validation diagnostic reported (LC0210)
 Occurs if something was not right when validating the extension on the environment.
 
 [!INCLUDE[LC0210](../includes/telemetry-LC0210.md)]
@@ -302,7 +303,7 @@ Occurs when a new per-tenant extension (PTE) validation attempt completed with f
 |failureReason|The overall reason that the extension failed to upload.|
 
 
-### Sample KQL code (Per-tenant extension (PTE) validation completed with failures)
+### Sample KQL code (per-tenant extension (PTE) validation completed with failures)
 
 This KQL code can help you get started analyzing validation failures for uploading an extension to the environment:
 
@@ -315,11 +316,8 @@ traces
 | extend mainExtension = parse_json(tostring( customDimensions.mainExtension ))
 | project timestamp
 // in which environment is the extension being validated
-, aadTenantId = case(
-  isnotempty(customDimensions.aadTenantId), customDimensions.aadTenantId  
-, isnotempty(customDimensions.environmentId), customDimensions.environmentId
-, 'Unknown'
-)
+, aadTenantId = customDimensions.aadTenantId
+, environmentId = customDimensions.environmentId
 , environmentName = customDimensions.environmentName
 // which extension/app is being validated
 , mainExtensionId = mainExtension.Id

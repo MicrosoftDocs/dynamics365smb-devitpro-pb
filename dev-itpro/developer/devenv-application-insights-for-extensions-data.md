@@ -1,10 +1,11 @@
 ---
 title: Extension Telemetry Data in Business Central
 description: Learn which Business Central events can reach an extension's Application Insights resource and how to identify signals that support extension telemetry.
-ms.date: 02/09/2024
+ms.date: 11/17/2026
 ms.reviewer: solsen
 ms.topic: reference
 author: kennieNP
+ai-usage: ai-assisted
 ---
 
 # Data logged to extension telemetry

@@ -23,15 +23,15 @@
 |AL0000D6H |Retention Policy|[Records Deleted Using Retention Policy: Deleted {alRecordsDeleted} records from Table {alTableNo}, {alTableName}](../administration/telemetry-retention-policy-trace.md#deleted)|
 |AL0000D6I|Retention Policy|[First retention policy enabled on: {alCompanyName}](../administration/telemetry-retention-policy-trace.md#first)|
 |AL0000D6J|	Retention Policy|[Last retention policy disabled on: {alCompanyName}](../administration/telemetry-retention-policy-trace.md#last)|
-|AL0000I74|	Azure Function Integration |[Request sent to Azure function succeeded: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|
+|AL0000I74|	Azure Function Integration |[Request sent to Azure function succeeded](../administration/telemetry-azure-function-integration-trace.md)|
 |AL0000I75|	Azure Function Integration |[Authorization failed to Azure function: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|
 |AL0000I7P|	Azure Function Integration |[Request sent to Azure function failed: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|
-|AL0000DHR|	Performance Toolkit |[Performance Toolkit run started](../administration/telemetry-performance-toolkit-trace.md#started)|
-|AL0000DHS|	Performance Toolkit |[Performance Toolkit run finished](../administration/telemetry-performance-toolkit-trace.md#completed)|
-|AL0000DHT|	Performance Toolkit |[Performance Toolkit run cancelled](../administration/telemetry-performance-toolkit-trace.md#cancelled)|
-|AL0000DGF|	Performance Toolkit |[Performance Toolkit - {BCPT Header code} - {BCPT Scenario code} - {BCPT Line status}](../administration/telemetry-performance-toolkit-trace.md#scenario)|
-|AL0000EIW|Onboarding|[Onboarding Started](../administration/telemetry-onboarding-trace.md#started)|
-|AL0000EIV|Onboarding|[Onboarding criteria completed: {Criteria}](../administration/telemetry-onboarding-trace.md#CriteriaCompleted)|
+|AL0000DHR|	Performance Toolkit |[Performance Toolkit run started.](../administration/telemetry-performance-toolkit-trace.md#started)|
+|AL0000DHS|	Performance Toolkit |[Performance Toolkit run finished.](../administration/telemetry-performance-toolkit-trace.md#completed)|
+|AL0000DHT|	Performance Toolkit |[Performance Toolkit run cancelled.](../administration/telemetry-performance-toolkit-trace.md#cancelled)|
+|AL0000DGF|	Performance Toolkit |[Performance Toolkit - {BCPT Header code} - {Scenario label} - {BCPT log entry status}](../administration/telemetry-performance-toolkit-trace.md#scenario)|
+|AL0000EIW|Onboarding|[Onboarding Signal Started: {signal type}](../administration/telemetry-onboarding-trace.md#started)|
+|AL0000EIV|Onboarding|[Onboarding Signal Completed: {signal type}](../administration/telemetry-onboarding-trace.md#CriteriaCompleted)|
 |AL0000O76|Financial Reports |[Financial report run from request page: {report definition code}](../administration/telemetry-financial-report-usage-trace.md#financial-report-run-from-request-page-report-definition-code)|
 |AL0000OKU|Financial Reports |[Financial report run on-screen: {report definition code}](../administration/telemetry-financial-report-usage-trace.md#financial-report-run-on-screen-report-definition-code)|
 |AL0000QE9|MCP configuration|[MCP Configuration modified](../administration/telemetry-mcp-configuration-trace.md#modified)|

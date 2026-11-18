@@ -1,16 +1,17 @@
 ---
-title: Authorization Trace | Microsoft Docs
-description: Learn about the Authorization telemetry in Business Central  
+title: Analyzing Authorization Trace Telemetry
+description: Analyze Business Central authorization telemetry to troubleshoot sign-in failures, company access problems, entitlements, and company-opening performance.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 09/12/2022
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
-# Analyzing Authorization Trace Telemetry
+# Analyzing authorization trace telemetry
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -25,7 +26,7 @@ Authorization signals are emitted in two stages of sign-in. The first stage is t
 - Type of user (such as normal, administrator, or delegated user)
 - Whether the user belongs to the tenant or is an invited user
 
-The next stage occurs after a successful authorization attempt, when trying to open the company (that is, when the CompanyOpen trigger run). The telemetry data indicates whether the company opened successfully or failed (for some reason).
+The next stage occurs after a successful authorization attempt, when trying to open the company and run the `OnOpenCompany` trigger. The telemetry data indicates whether the company opened successfully or failed.
 
 > [!NOTE]
 > Business Central 2020 release wave 1, version 16.1, introduces changes to some `operation_Name` and `message` dimension values. The differences from earlier versions are indicated in the following sections.
@@ -39,7 +40,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 |Dimension|Description or value|
 |---------|-----|
 |message|Version 16.1 and later:<br />**Authorization Succeeded (Pre Open Company)**<br /><br />Before Version 16.1:<br />**Authorization steps prior to the open company trigger succeeded.**|
-|operation_Name|**Authorization Succeeded (Pre Open Company)** <br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|operation_Name|**Authorization Succeeded (Pre Open Company)** <br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. In version 16.1 and later, use `customDimensions.eventId` in Kusto queries instead of `operation_Name`.|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -48,6 +49,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Succeeded**|
+|clientType|`UnknownClient` because the client type isn't known at this stage.|
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -60,7 +62,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 | userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] |
 
 
-### <a name="usertype"></a> UserType
+### <a name="usertype"></a> User types
 
 |Value|Description|See more|
 |-----|-----------|--------|
@@ -74,7 +76,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 -->
 
 > [!NOTE]
-> The client type is not known when the server emits the pre-open company events (RT0001 and RT0003). You need to join to data for the events RT0002/RT0004 if you need both userType and clientType.
+> The client type isn't known when the server emits RT0003. For RT0001, `clientType` is populated only if a session is available. You can join to RT0002 or RT0004 to get the client type for the company-opening stage.
 
 ## Authorization Failed (Pre Open Company)
 
@@ -84,9 +86,9 @@ Occurs when a user sign-in has failed authorization. This data is not emitted fo
 
 |Dimension|Description or value|
 |---------|-----|
-|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Pre Open Company): User is disabled.**</li><li>**Authorization Failed (Pre Open Company): User has no entitlements.**</li><li>**User has no access**</li></li><li>**User is not a member of the environment's security group**</li></ul>Before Version 16.1:<br />**Authorization steps prior to the open company trigger failed, see failureReason column for details.**|
-|operation_Name|**Authorization Failed (Pre Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|severityLevel|**3**|
+|message|Version 16.1 and later: **Authorization Failed (Pre Open Company): {reason}**. Reasons include **User is disabled.**, **User has no entitlements.**, **User has no access**, and **User is not a member of the environment's security group**.<br /><br />Before version 16.1:<br />**Authorization steps prior to the open company trigger failed, see failureReason column for details.**|
+|operation_Name|**Authorization Failed (Pre Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. In version 16.1 and later, use `customDimensions.eventId` in Kusto queries instead of `operation_Name`.|
+|severityLevel|**2**|
 
 <!--
 |operation_Name|**Authorization Failed (Pre Open Company)**||
@@ -101,8 +103,10 @@ Occurs when a user sign-in has failed authorization. This data is not emitted fo
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Failed**|
+|clientType|The client type if a session is available; otherwise, an empty string.|
+|entitlementSetIds|Specifies the entitlements available for the user when authorization failed.|
 |eventId|**RT0001**|
-|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.|
+|failureReason|Specifies why the sign-in failed. Learn more in [Troubleshooting authorization failures](#authorizationfailures).|
 | guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] |
 | userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] |
 
@@ -114,25 +118,25 @@ This message occurs when the user's account is valid, but the account is disable
 
 *Resolution*
 
-Enable the user account by setting the **State** field to **Enabled**. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
+Enable the user account by setting the **State** field to **Enabled**. Learn more in [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
 ### A user successfully authenticated in Microsoft Entra ID but the user does not have any entitlements in Business Central.
 
 This message occurs if the user has an account, but the account hasn't been assigned any entitlements.
 
-Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Microsoft Entra role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
+Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Microsoft Entra role or license. Learn more in [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/).
 
 *Resolution*
 
 Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They aren't assigned in Business Central. To assign entitlements to a user, see one of the following articles:
 
-- From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Microsoft 365](/microsoft-365/admin/add-users/add-users).
+- From [Microsoft 365 admin center](https://admin.microsoft.com), assign a license. Learn more in [Add users individually or in bulk to Microsoft 365](/microsoft-365/admin/add-users/add-users).
 
-- From the Microsoft Partner Center, see [User management tasks for customer accounts](/partner-center/assign-licenses-to-users).
+- From Microsoft Partner Center, assign a license. Learn more in [User management tasks for customer accounts](/partner-center/assign-licenses-to-users).
 
 ### The user is not a direct/indirect member of the security group associated with the environment, or the group does not exist, hence restricting the user access to the environment
 
-In Microsoft Entra ID, you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Microsoft Entra ID. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
+In Microsoft Entra ID, you can create security groups that include users that you want to give access to your environments. Then, from the Business Central admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Microsoft Entra ID. Learn more in [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
 
 ## Authorization Succeeded (Open Company)
 
@@ -143,7 +147,7 @@ Occurs when the company has opened successfully. This data is emitted both for o
 |Dimension|Description or value|
 |---------|--------------------|
 |message|Version 16.1 and later:<br />**Authorization Succeeded (Open Company)**<br /><br />Before version 16.1:<br />**Authorization steps in the open company trigger succeeded.**|
-|operation_Name|**Authorization Succeeded (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future  versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|operation_Name|**Authorization Succeeded (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. In version 16.1 and later, use `customDimensions.eventId` in Kusto queries instead of `operation_Name`.|
 |severityLevel|**1**|
 
 <!--
@@ -168,7 +172,7 @@ Occurs when the company has opened successfully. This data is emitted both for o
 | guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)] |
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the server to open the company. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that the report executed.|
+|sqlExecutes|Specifies the number of SQL statements executed while opening the company.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements**.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to open the company**. The time has the format hh:mm:ss.sssssss.|
@@ -189,7 +193,7 @@ Occurs when a company has failed to open. This data is emitted both for online a
 |Dimension|Description or value|
 |---------|-----|
 |message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li><li>**Authorization Failed (Open Company): The tenant is locked.**</li><li>**Authorization Failed (Open Company): The license has expired or the trial period has ended.**</li><li>**Authorization Failed (Open Company): The user's license is not valid for use on production companies.**</li><li>**Authorization Failed (Open Company): Error in OnOpenCompany trigger**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
-|operation_Name|**Authorization Failed (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|operation_Name|**Authorization Failed (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. In version 16.1 and later, use `customDimensions.eventId` in Kusto queries instead of `operation_Name`.|
 |severityLevel|**3**|
 
 <!--
@@ -203,10 +207,10 @@ Occurs when a company has failed to open. This data is emitted both for online a
 
 |Dimension|Description or value|
 |---------|-----|
-|authorizationStatus|**Failed**|
+|status|**Failed**|
 |companyName|Specifies the name of the company that the user tried to open.|
 |companyId|Specifies the ID of the company that the user tried to open. This dimension is available from version 25 (and was backported to versions 22, 23, and 24, where it is available in the latest CU.) |
-|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.|
+|failureReason|Specifies why the sign-in failed. Learn more in [Troubleshooting company-opening authorization failures](#opencompanyfailures).|
 |eventId|**RT0002**|
 | guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)] |
 | userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)]|
@@ -228,7 +232,7 @@ This message occurs when a user account in Business Central doesn't have the pro
 
 *Resolution*
 
-In Business Central, open the user account and modify the permissions the user to give them access to the company. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+In Business Central, open the user account and modify the user's permissions to give them access to the company. Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 > [!TIP]
 > A good starting point is to look at the **Effective Permissions** that the user has on the company. You can do this from the user card by selecting **Effective Permissions** and setting the **Company** to the company in question.
@@ -243,15 +247,11 @@ This message typically occurs when a user tries to access a specific company in 
 
 ### User cannot open the company because the tenant is locked.
 
-This message indicates that the tenant has been locked by Microsoft, typically for security reasons like preventing repeated malicious sign-in attempts. The tenant isn't accessible by any user.
+This message indicates that the Business Central tenant license state is locked. It doesn't refer to an individual user's Microsoft Entra account being locked.
 
 *Resolution*
 
-For help with resolving this issue, read the following articles or contact Microsoft Support: 
-
-- [Troubleshoot account lockout problems with a Microsoft Entra ID Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
-
-- ["It looks like your account has been blocked" error when signing in to Microsoft 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
+Contact Microsoft Support for help resolving the tenant's locked state.
 
 ### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
 
@@ -263,7 +263,7 @@ This message occurs for one the following reasons:
 *Resolution*
 
 Renew the existing license or obtain a new license. Licenses are purchased through the Cloud Solution Provider (CSP)
-program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
+program. Learn more in the [Cloud Service Provider site](https://partner.microsoft.com/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
 
 ### You can't open the company, because it is a production company. Your license isn't valid for use on production companies.
 
@@ -272,7 +272,7 @@ This message occurs because the license doesn't allow the user to open productio
 *Resolution*
 
 Obtain a license that can be used on production companies. Licenses are purchased through the Cloud Solution Provider (CSP)
-program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
+program. Learn more in the [Cloud Service Provider site](https://partner.microsoft.com/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
 
 ### Error in OnOpenCompany trigger
 
@@ -282,8 +282,8 @@ This message occurs when AL code causes an error during the OnOpenCompany trigge
 
 Because AL code can trigger any type of error, the resolution will depend on the executed AL code. See the **failureReason** dimension for a callstack to determine where the error occurred.
 
-## Troubleshooting (Open Company) login performance
-[!INCLUDE[login_performance](../includes/include-telemetry-login-performance.md)])
+## Troubleshooting company-opening sign-in performance
+[!INCLUDE[login_performance](../includes/include-telemetry-login-performance.md)]
 
 
 ## Related information

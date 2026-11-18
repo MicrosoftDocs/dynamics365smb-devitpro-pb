@@ -1,16 +1,16 @@
 ---
-title: Analyzing Performance Toolkit Telemetry
-description: Learn about the telemetry for the Performance Toolkit in Business Central  
+title: Performance Toolkit Trace Telemetry
+description: Analyze Performance Toolkit telemetry in Business Central to monitor test runs and compare scenario duration, SQL statement counts, and execution results.
 author: bverbeek
-ms.topic: concept-article
+ms.topic: reference
+ai-usage: ai-assisted
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, BCPT, Performance Toolkit, performance
-ms.date: 03/22/2023
+ms.date: 11/17/2026
 ms.author: jswymer
-ms.reviewe: jswymer
 ms.reviewer: jswymer
 ---
 
-# Analyzing Performance Toolkit Telemetry
+# Analyzing Performance Toolkit telemetry
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
@@ -20,16 +20,18 @@ The Performance Toolkit extension helps answer questions such as, "Does my solut
 
 The extension doesn't answer questions such as, "How many orders can Business Central process per hour?"
 
-To gather this data, you'll have to install and implement the Performance Toolkit extension.  For more information, see [The Performance Toolkit Extension](/dynamics365/business-central/dev-itpro/developer/devenv-performance-toolkit) in the Development help.
+To gather this data, you'll have to install and implement the Performance Toolkit extension. Learn more in [The Performance Toolkit Extension](/dynamics365/business-central/dev-itpro/developer/devenv-performance-toolkit) in the Development help.
 
 Telemetry is then logged for the following operations:
 
-- When the BCPT header has the status Started
+- When the BCPT header has the status Running
 - When the BCPT header has the status Completed
 - When the BCPT header has the status Cancelled
-- When a BCPT scenario is finished
+- When a BCPT operation or scenario is finished
 
-## <a name="started"></a>When the BCPT header has the status started
+These events use normal verbosity (`severityLevel` **1**) and `TelemetryScope::All`, including scenario events with an error status.
+
+## <a name="started"></a>When the BCPT header has the status running
 
 Occurs when the BCPT header gets the status running.
 
@@ -54,7 +56,7 @@ Occurs when the BCPT header gets the status running.
 
 <a name="other"></a>**Common custom dimensions**
 
-The following table explains other custom dimensions that are common to all field monitoring traces. 
+The following table explains other custom dimensions that are common to all Performance Toolkit traces.
 
 |Dimension|Description or value|
 |---------|-----|
@@ -62,16 +64,16 @@ The following table explains other custom dimensions that are common to all fiel
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|extensionName|Specifies the name of the base application. |
-|extensionId|Specifies the ID of the base extension.|
+|deprecatedKeys|When present, lists deprecated dimension keys. We recommend that you update queries to use the new key names.|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
+|extensionName|Specifies the name of the Performance Toolkit extension. |
+|extensionId|Specifies the ID of the Performance Toolkit extension.|
 |extensionPublisher|Specifies the publisher of the extension.|
-|extensionVersion|Specifies the version of the base application.|
+|extensionVersion|Specifies the version of the Performance Toolkit extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-## <a name="completed"></a>When the BCPT header has the status Completed
+## <a name="completed"></a>When the BCPT header has the status completed
 
 Occurs when the BCPT header gets the status completed.
 
@@ -93,9 +95,9 @@ Occurs when the BCPT header gets the status completed.
 |alSessionCount|Specified the total number of all sessions.|
 |alTest Company Name|Specified the company where the BCPT is performed.|
 
-<a name="other"></a>**Common custom dimensions**
+<a name="completed-dimensions"></a>**Common custom dimensions**
 
-The following table explains other custom dimensions that are common to all field monitoring traces. 
+The following table explains other custom dimensions that are common to all Performance Toolkit traces.
 
 |Dimension|Description or value|
 |---------|-----|
@@ -103,16 +105,16 @@ The following table explains other custom dimensions that are common to all fiel
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|extensionName|Specifies the name of the base application. |
-|extensionId|Specifies the ID of the base extension.|
+|deprecatedKeys|When present, lists deprecated dimension keys. We recommend that you update queries to use the new key names.|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
+|extensionName|Specifies the name of the Performance Toolkit extension. |
+|extensionId|Specifies the ID of the Performance Toolkit extension.|
 |extensionPublisher|Specifies the publisher of the extension.|
-|extensionVersion|Specifies the version of the base application.|
+|extensionVersion|Specifies the version of the Performance Toolkit extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-## <a name="cancelled"></a>When the BCPT header has the status Cancelled
+## <a name="cancelled"></a>When the BCPT header has the status cancelled
 
 Occurs when the BCPT header gets the status cancelled.
 
@@ -133,9 +135,9 @@ Occurs when the BCPT header gets the status cancelled.
 |alSessionCount|Specified the total number of all sessions.|
 |alTest Company Name|Specified the company where the BCPT is performed.|
 
-<a name="other"></a>**Common custom dimensions**
+<a name="cancelled-dimensions"></a>**Common custom dimensions**
 
-The following table explains other custom dimensions that are common to all field monitoring traces. 
+The following table explains other custom dimensions that are common to all Performance Toolkit traces.
 
 |Dimension|Description or value|
 |---------|-----|
@@ -143,22 +145,22 @@ The following table explains other custom dimensions that are common to all fiel
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|extensionName|Specifies the name of the base application. |
-|extensionId|Specifies the ID of the base extension.|
+|deprecatedKeys|When present, lists deprecated dimension keys. We recommend that you update queries to use the new key names.|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
+|extensionName|Specifies the name of the Performance Toolkit extension. |
+|extensionId|Specifies the ID of the Performance Toolkit extension.|
 |extensionPublisher|Specifies the publisher of the extension.|
-|extensionVersion|Specifies the version of the base application.|
+|extensionVersion|Specifies the version of the Performance Toolkit extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## <a name="scenario"></a>When a BCPT scenario is finished
 
-Occurs when ta BCPT scenario is finished and a log entry is written.
+Occurs when a BCPT operation or scenario is finished and a log entry is written.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Performance Toolkit - {BCPT Header code} - {BCPT Scenario code} - {BCPT Line status}.**|
+|message|**Performance Toolkit - {BCPT Header code} - {Scenario label} - {BCPT log entry status}**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -168,21 +170,26 @@ Occurs when ta BCPT scenario is finished and a log entry is written.
 |eventId|**AL0000DGF**|
 |alRunID|Specified the number from the BCPT header.|
 |alCode|Specified the code from the BCPT Header.|
-|alLineNo|Specified the line number of the BCPT log entry.|
+|alLineNo|Specifies the BCPT configuration line number associated with the log entry.|
+|alVersion|Specifies the version number recorded in the BCPT log entry.|
 |alCodeunitId|Specified the codeunit ID of the scenario that is executed.|
 |alCodeunitName|Specified the codeunit name of the scenario that is executed.|
-|alOperation|Specified the operation name of the scenario. The name that is entered for the startScenario procedure.|
+|alOperation|Specifies the operation name recorded in the log entry.|
 |alTag|Specified the tag from the BCPT header.|
 |alStatus|Specified the status of the BCPT log Entry. This can be success or error.|
+|alStackTrace|Specifies the error call stack. Included only when the log entry has an error status.|
+|alMessage|Specifies the message recorded in the log entry.|
 |alNoOfSqlStatements|Specified the number of SQL statements that is executed during the operation.|
 |alStartTime|Specified the starting time when the operation is executed.|
 |alEndTime|Specified the ending time when the operation is executed.|
 |alDurationInMs|Specified the total duration in milliseconds that the operation is executed.|
 |alSessionNo|Specified the session number of the executed operation.|
 
-<a name="other"></a>**Common custom dimensions**
+The scenario label in the message is `Scenario` in English and can be localized. It isn't the codeunit or operation name. Use `alCodeunitName` and `alOperation` to identify the work being measured.
 
-The following table explains other custom dimensions that are common to all field monitoring traces. 
+<a name="scenario-dimensions"></a>**Common custom dimensions**
+
+The following table explains other custom dimensions that are common to all Performance Toolkit traces.
 
 |Dimension|Description or value|
 |---------|-----|
@@ -190,13 +197,13 @@ The following table explains other custom dimensions that are common to all fiel
 |alDataClassification|**SystemMetadata**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|extensionName|Specifies the name of the base application. |
-|extensionId|Specifies the ID of the base extension.|
+|deprecatedKeys|When present, lists deprecated dimension keys. We recommend that you update queries to use the new key names.|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
+|extensionName|Specifies the name of the Performance Toolkit extension. |
+|extensionId|Specifies the ID of the Performance Toolkit extension.|
 |extensionPublisher|Specifies the publisher of the extension.|
-|extensionVersion|Specifies the version of the base application.|
+|extensionVersion|Specifies the version of the Performance Toolkit extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## Related information

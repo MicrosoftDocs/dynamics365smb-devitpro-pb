@@ -1,15 +1,16 @@
 ---
-title:  Extension Lifecycle Trace Telemetry | Microsoft Docs
-description: Learn about the extension lifecycle telemetry in Business Central  
+title: Analyzing Extension Lifecycle Trace Telemetry
+description: Analyze Business Central extension lifecycle telemetry to track publishing, installation, synchronization, updates, and failures across environments.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 05/12/2021
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
-# Analyzing Extension Lifecycle Trace Telemetry
+# Analyzing extension lifecycle trace telemetry
 
 **INTRODUCED IN:** Business Central 2020 release wave 1, version 16.3. Extension-level support introduced in 2020 release wave 2, version 17.1.
 
@@ -25,15 +26,15 @@ Extension lifecycle telemetry gathers data about the success or failure of the f
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
-Traces are recorded for operations started initiated from any of the following components, depending whether you have Business Central online or on-premises:
+Traces are recorded for operations initiated from any of the following components, depending on whether you have Business Central online or on-premises:
 
 |Component|Online|On-premises|
 |---------|------|-----------|
-|[Extension Management page](/dynamics365/business-central/ui-extensions) in the Business Central client.|![check mark for feature.](../developer/media/check.png)|![check mark for feature.](../developer/media/check.png)|
-|[Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central admin center.|![check mark for feature.](../developer/media/check.png)||
-|[App Management API](administration-center-api_app_management.md) of the Business Central admin center.|![check mark for feature.](../developer/media/check.png)||
-|[Extension management PowerShell cmdlets](/powershell/module/microsoft.dynamics.nav.apps.management) from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]||![check mark for feature.](../developer/media/check.png)|
-|Business Central control plane, which is the online service managed by Microsoft.|![check mark for feature.](../developer/media/check.png)||
+|[Extension Management page](/dynamics365/business-central/ui-extensions) in the Business Central client.|:::image type="icon" source="../developer/media/check.png"::: **Yes**|:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|[Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central admin center.|:::image type="icon" source="../developer/media/check.png"::: **Yes**||
+|[App Management API](administration-center-api_app_management.md) of the Business Central admin center.|:::image type="icon" source="../developer/media/check.png"::: **Yes**||
+|[Extension management PowerShell cmdlets](/powershell/module/microsoft.dynamics.nav.apps.management) from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]||:::image type="icon" source="../developer/media/check.png"::: **Yes**|
+|Business Central control plane, which is the online service managed by Microsoft.|:::image type="icon" source="../developer/media/check.png"::: **Yes**||
 
 <!--
 - [Extension Management page](/dynamics365/business-central/ui-extensions) in the Business Central client.
@@ -71,9 +72,9 @@ Traces are recorded for operations started initiated from any of the following c
     - For online, data is recorded when an extension is updated from the [Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central administration center.-->
 
 > [!NOTE]
-> For some operations, you might experience that certain custom dimensions aren't available. The reason is that custom dimensions are added to the signal gradually, as the information is retrieved. If the operation fails before the custom dimension is retrieved, it isn't included in the result. For example, if you try to uninstall an extension using the Ininstall-NAVApp cmdlet, and the specified extension name is wrong, the operation fails. In this case, the `extensionid` and `extensionVersion` will be excluded from the results.  
+> For some operations, you might experience that certain custom dimensions aren't available. The reason is that custom dimensions are added to the signal gradually, as the information is retrieved. If the operation fails before the custom dimension is retrieved, it isn't included in the result. For example, if you try to uninstall an extension using the Uninstall-NAVApp cmdlet, and the specified extension name is wrong, the operation fails. In this case, the `extensionId` and `extensionVersion` will be excluded from the results.
 
-## ENVIRONMENT/SERVER TRACES
+## Environment and server traces
 
 The traces in this section are recorded for extensions that are published to the environment/server in the tenant scope only.
 
@@ -97,7 +98,7 @@ Occurs when an extension compiles successfully on the service. An extension comp
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0020**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md).|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. Learn more in [About custom dimensions](telemetry-overview.md).|
 |extensionCompilationResult |**Compilation succeeded without errors or warnings.**|
 |extensionName|Specifies the name of the extension that was compiled.|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
@@ -119,10 +120,10 @@ The following table explains custom dimensions that are common to all traces.
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|A comma-separated list of keys that have been deprecated. We recommend that you update any queries that use these keys to use the new key names.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 <!--
 ### Example
@@ -146,7 +147,7 @@ Occurs when an extension failed to compile on the service. An extension compiles
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0021**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md).|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. Learn more in [About custom dimensions](telemetry-overview.md).|
 |extensionCompilationResult |Specifies details about the error that occurred during compilation.|
 | extensionName|Specifies the name of the extension that failed to compile.|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
@@ -176,8 +177,8 @@ Occurs when an extension published successfully on the service. <!--For on-premi
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**LC0014**|
-| extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Work with Rapid Application Development](../developer/devenv-rad-publishing.md).|
-| extensionName|Specifies the name of the extension that published.|
+| extensionIsRad|Specifies whether the extension was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing is a partial publishing operation that only publishes application objects that have changed during development. Learn more in [Work with Rapid Application Development](../developer/devenv-rad-publishing.md).|
+| extensionName|Specifies the name of the extension that was published.|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
@@ -197,7 +198,7 @@ Occurs when an extension published successfully on the service. <!--For on-premi
 
 ## <a name="publishedfailed"></a>Extension failed to publish
 
-Occurs when an extension failed publish on the service. <!--For on-premises, an extension is published by running the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) . For online, an extension is published when it's uploaded from the **Extension Management** page in the client.-->
+Occurs when an extension failed to publish on the service. <!--For on-premises, an extension is published by running the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) . For online, an extension is published when it's uploaded from the **Extension Management** page in the client.-->
 
 ### General dimensions
 
@@ -211,7 +212,7 @@ Occurs when an extension failed publish on the service. <!--For on-premises, an 
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**LC0015**|
-| extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing only is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Work with Rapid Application Development](../developer/devenv-rad-publishing.md).|
+| extensionIsRad|Specifies whether the extension was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing is a partial publishing operation that only publishes application objects that have changed during development. Learn more in [Work with Rapid Application Development](../developer/devenv-rad-publishing.md).|
 | extensionName|Specifies the name of the extension that published.|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
@@ -234,7 +235,7 @@ Occurs when an extension was unpublished successfully on the service. <!--An ext
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension unpublished successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})**|
+|message|**Extension un-published successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -296,7 +297,7 @@ Occurs when an extension fails to unpublish on the service.
 
 -->
 
-## TENANT TRACES
+## Tenant traces
 
 The traces in this section are recorded for synchronizing, installing and updating extensions on a tenant.
 
@@ -339,8 +340,8 @@ Occurs when an extension synchronizes successfully on the tenant.
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
-| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). it's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
-| extensionVersion|Specifies the version of the extension was synchronized.|
+| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add**: The database schema defined by the objects in the extension is added to the database schema of the tenant database. This mode is typically used after you publish an extension for the first time.</li><li>**Clean**: The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions are unpublished.</li><li>**Development**: This mode acts similarly to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version of the app can be currently published.</li><li>**ForceSync**: This mode is like **Add** except it supports destructive schema changes, such as removing fields, renaming them, and changing their data types. It's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> Learn more in [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
+| extensionVersion|Specifies the version of the extension that was synchronized.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
@@ -353,7 +354,7 @@ Occurs when an extension synchronizes successfully on the tenant.
 {"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","Component version":"16.0.14073.14105","Environment type":"Production","componentVersion":"16.0.14073.14105","environmentType":"Production","extensionPublishedAs":"Tenant","component":"Dynamics 365 Business Central Server","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","serverExecutionTime":"00:00:00.3318695","extensionPublisher":"Default publisher","Extension version":"1.0.0.0","Extension App Id":"00001111-aaaa-2222-bbbb-3333cccc4444","extensionVersion":"1.0.0.0","aadTenantId":"common","AadTenantId":"common","extensionScope":"Tenant","Extension name":"ExtZ","extensionName":"ExtZ","extensionId":"00001111-aaaa-2222-bbbb-3333cccc4444","eventId":"LC0012","totalTime":"00:00:00.3318695","sqlRowsRead":"114","sqlExecutes":"22","result":"Success","extensionSynchronizationMode":"Add"}
 -->
 
-## <a name="syncedfailed"></a>Extension synchronized failed
+## <a name="syncedfailed"></a>Extension failed to synchronize
 
 Occurs when an extension fails to synchronize on the tenant.
 
@@ -362,7 +363,7 @@ Occurs when an extension fails to synchronize on the tenant.
 |Dimension|Description or value|
 |---------|-----|
 |message|**Extension failed to synchronize: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})**|
-|severityLevel|**1**|
+|severityLevel|**3**|
 
 ### Custom dimensions
 
@@ -374,7 +375,7 @@ Occurs when an extension fails to synchronize on the tenant.
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
-| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). it's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
+| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add**: The database schema defined by the objects in the extension is added to the database schema of the tenant database. This mode is typically used after you publish an extension for the first time.</li><li>**Clean**: The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions are unpublished.</li><li>**Development**: This mode acts similarly to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version of the app can be currently published.</li><li>**ForceSync**: This mode is like **Add** except it supports destructive schema changes, such as removing fields, renaming them, and changing their data types. It's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> Learn more in [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
 | extensionVersion|Specifies the version of the extension was synchronized.|
 | failureReason|Specifies the error that occurred when synchronizing the extension.|
 | result|**Failure**|
@@ -406,7 +407,7 @@ Occurs when an extension was already synchronized on the tenant. Added in versio
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
-| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). it's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
+| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add**: The database schema defined by the objects in the extension is added to the database schema of the tenant database. This mode is typically used after you publish an extension for the first time.</li><li>**Clean**: The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions are unpublished.</li><li>**Development**: This mode acts similarly to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version of the app can be currently published.</li><li>**ForceSync**: This mode is like **Add** except it supports destructive schema changes, such as removing fields, renaming them, and changing their data types. It's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> Learn more in [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
 | extensionVersion|Specifies the version of the extension was synchronized.|
 | failureReason|Specifies the error that occurred when synchronizing the extension.|
 | result|**Failure**|
@@ -456,7 +457,7 @@ Occurs when an extension is installed because another extension that depends on 
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Dependent Extension installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})**|
+|message|**Dependent extension installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -493,7 +494,7 @@ Occurs when an extension failed to install on a tenant.
 |---------|-----|
 | eventId|**LC0011**|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
-| extensionName|Specifies the name of the extension that failed to uninstall.|
+| extensionName|Specifies the name of the extension that failed to install.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
@@ -501,7 +502,7 @@ Occurs when an extension failed to install on a tenant.
 |failureReason|Specifies the error that occurred when the extension was installed.|
 | extensionAvailability|Specifies the availability of a Marketplace extension:<ul><li>**Public** - The version is public and can be installed on any environment.</li><li>**Preview** - The version is in preview and can be installed on selected Sandbox environments using a preview key provided by the Marketplace publisher.</li>|
 | extensionPreviewKeyProvided|Specifies whether a preview key was specified when installing the extension. A preview key is required to install preview versions.|
-| result|**Failed**|
+| result|**Failure**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
@@ -530,7 +531,7 @@ Occurs when an extension is successfully uninstalled from a tenant.
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
-| extensionVersion|Specifies the version of the extension was uninstalled.|
+| extensionVersion|Specifies the version of the extension that was uninstalled.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
@@ -564,7 +565,7 @@ Occurs when an extension is uninstalled because an extension that it's dependent
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the dependent extension that was uninstalled.|
 | extensionPublisher|Specifies the dependent extension's publisher.|
-| extensionVersion|Specifies the version of the dependent extension was uninstalled.|
+| extensionVersion|Specifies the version of the dependent extension that was uninstalled.|
 | parentExtensionId|Specifies the ID of the extension that the uninstalled extension is dependent on.|
 |[See common custom dimensions](#other)||
 
@@ -590,8 +591,8 @@ Occurs when an extension failed to uninstall on a tenant.
 |---------|-----|
 | eventId|**LC0017**|
 |doNotSaveData|Specifies whether the uninstall operation was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 | extensionName|Specifies the name of the extension that failed to uninstall.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
@@ -617,21 +618,21 @@ Occurs when an extension failed to uninstall on a tenant.
 Occurs when an extension updates successfully on the service. <!--The update operation is run by the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade).-->
 
 > [!NOTE]
-> Data is also recorded for any upgrade code that was run. For more information, see [Analyzing Extension Update Trace Telemetry](telemetry-extension-update-trace.md).
+> Data is also recorded for any upgrade code that was run. Learn more in [Analyzing extension update trace telemetry](telemetry-extension-update-trace.md).
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Extension updated successfully: {extensionName} version {extensionVersion} by {extensionPublisher}**|
+|message|**Extension updated successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})**|
 |severityLevel|**1**|
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-| environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+| environmentName|Specifies the name of the tenant environment. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 | eventId|**LC0022**|
 | extensionCulture|Specifies the language version for which the extension that was upgraded. The value is a language culture name, such as **en-US** or **da-DK**. If a language wasn't specified when the extension was installed, then en-US is used by default. |
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
@@ -657,7 +658,7 @@ Occurs when an extension updates successfully on the service. <!--The update ope
 Occurs when an extension failed to update on the service. <!--The update operation is run by the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade).-->
 
 > [!NOTE]
-> Data is also recorded for any upgrade code that was run. For more information, see [Analyzing Extension Update Trace Telemetry](telemetry-extension-update-trace.md).
+> Data is also recorded for any upgrade code that was run. Learn more in [Analyzing extension update trace telemetry](telemetry-extension-update-trace.md).
 
 ### General dimensions
 
@@ -670,8 +671,8 @@ Occurs when an extension failed to update on the service. <!--The update operati
 
 |Dimension|Description or value|
 |---------|-----|
-| environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+| environmentName|Specifies the name of the tenant environment. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 | eventId|**LC0023**|
 | extensionCulture|Specifies the language version for which the extension that was upgraded. The value is a language culture name, such as **en-US** or **da-DK**. If a language wasn't specified when the extension was installed, then en-US is used by default. |
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
@@ -694,14 +695,14 @@ Occurs when an extension failed to update on the service. <!--The update operati
 {"result":"Failure","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:00.0063533","Extension version":"1.0.0.5","Component version":"16.0.13877.0","componentVersion":"16.0.13877.0","extensionCulture":"en-US","Environment type":"Production","extensionVersion":"1.0.0.5","environmentType":"Production","Extension name":"pbt","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, AadTenantId, Environment name, Environment type","extensionName":"pbt","failureReason":"Cannot upgrade the extension 'pbt by Me 1.0.0.5' because its version must be newer than the current version. The current version is '1.0.0.6'","DeveloperMode":"true","aadTenantId":"common","sqlExecutes":"7","AadTenantId":"common","sqlRowsRead":"32","component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.0063533","Component":"Dynamics 365 Business Central Server","eventId":"LC0023"}
 -->
 
-## CONTROL PLANE TRACES
+## Control plane traces
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
-The traces in this section are emitted by the Business Central control plane service during the installation or update operation of an extension/app. Theses traces compliment the tenant traces described above and help you identify the origin or cause of the extension's installation or update. The traces are recorded when:
+The traces in this section are emitted by the Business Central control plane service during the installation or update operation of an extension/app. These traces complement the tenant traces described above and help you identify the origin or cause of the extension's installation or update. The traces are recorded when:
 
 - The extension is explicitly installed or updated
-- The extension is installed or updated because an extension that's dependant on it was installed or updated.
+- The extension is installed or updated because an extension that's dependent on it was installed or updated.
 - A hotfix is applied to the extension by Microsoft or ISV embed partner.
 
 The following table illustrates the traces you can expect to see with the installation or update of an extension, in the order that they'll occur. The trace messages have been simplified for illustration purposes.

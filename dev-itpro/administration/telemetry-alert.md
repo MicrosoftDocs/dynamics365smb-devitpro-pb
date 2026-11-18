@@ -1,31 +1,31 @@
 ---
-title: Alert on Telemetry
-description: Learn how to alert on Business Central telemetry.  
+title: Set Up Business Central Telemetry Alerts
+description: Set up alerts on Business Central telemetry with Azure Monitor, Logic Apps, or Power Automate to respond to issues and environment changes.
 author: kennieNP
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/17/2022
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
-# Alert on Telemetry
+# Alert on telemetry
 
 If something happens in your environment or app that you need to act on, you can set up a system that sends you an alert. [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] makes it easy to define such alerts.
 
 You can use the following tools to define and set up alerts on telemetry events:
 
-- Power BI metrics (if you use the Power BI app on telemetry data)
 - [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] Alerts
 - Azure Logic Apps
 - Power Automate
 
-Use the Power BI Metrics approach if you want a no-code experience and if you do not have any experience with the KQL language.
+If you use the Power BI app on telemetry data, you can also use Power BI goals to track measures against business objectives.
 
-For the latter three approaches, you need a Kusto (KQL) query to define the alerting condition.
+For telemetry alerts, you need a Kusto (KQL) query to define the alerting condition.
 
-## No-code alerting with Power BI Metrics
+## <a name="no-code-alerting-with-power-bi-metrics"></a>Track telemetry with Power BI goals
 
 [!INCLUDE[pbimetrics](../includes/include-telemetry-alerting-powerbi-metrics.md)]
 
@@ -34,7 +34,7 @@ For the latter three approaches, you need a Kusto (KQL) query to define the aler
 When defining an alert based directly on telemetry, you need to define two things:
 
 1. A Kusto (KQL) query that defines the alerting condition. It's considered good practice to add a `where` clause that limits the timestamp of events in the query, for example, `| where timestamp > ago(1h)`. 
-2. How often you want to run the alerting query. Typically, the recurrence follows the `where` clause in the alerting query. For example, if the query looks back 1 hour, then you set your recurrence to 1 hour as well.
+1. How often you want to run the alerting query. Choose the frequency based on how quickly you need to respond and account for ingestion delay. The frequency can be shorter than the query's lookback period.
 
 > [!TIP]
 > Samples of alerting queries are shared by Microsoft and third parties on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Alerts). You can also share your alerting queries with the community on GitHub.
@@ -44,38 +44,39 @@ When defining an alert based directly on telemetry, you need to define two thing
 If you want to create alerts in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], then do as follows:
 
 1. Open the [Azure portal](https://portal.azure.com) and locate your Application Insights resource.
-2. In the navigation pane on the left, select **Alerts**.
-3. Add a KQL alerting condition query in the condition for a custom log search.
+1. In the navigation pane on the left, select **Alerts**, and then select **Create** > **Alert rule**.
+1. On the **Condition** tab, select **Custom log search**, and then enter your KQL alerting query.
+1. Configure the threshold and evaluation frequency, select or create an action group for notifications, and create the alert rule.
 
-To read more about Azure Monitor alerts, go to [Azure Application Insights](/azure/azure-monitor/alerts/alerts-overview) in the Azure documentation. <!-- /azure/azure-monitor/platform/alerts-unified-log-->
+Learn more in [Create Azure Monitor log search alert rules](/azure/azure-monitor/alerts/alerts-create-log-alert-rule).
 
 ### Create alerts using Azure Logic Apps and Power Automate
 
-Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for setting up custom notifications or automating certain actions that are triggered by an environment's lifecycle event.
+Azure Logic Apps and Power Automate can use the Azure Monitor Logs connector to query telemetry for custom notifications or actions triggered by an environment's lifecycle event. When querying the linked Log Analytics workspace, use workspace table and column names, such as `AppTraces`, `TimeGenerated`, and `Properties`, instead of `traces`, `timestamp`, and `customDimensions`. Learn more in [Azure Monitor Logs connector](/connectors/azuremonitorlogs/).
 
 > [!NOTE]
 > Samples of custom notifications and automations are shared by Microsoft and third parties on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Alerts). You can also share your Application Insights Alerts and Automations with the community on GitHub.
 
-The samples below can help getting started with customization and automation using Application Insights.
+The samples below can help you get started with customization and automation using Application Insights.
 
 > [!IMPORTANT]
-> Deploying a Logic App to Azure also creates the API Connection Resources necessary to authenticate certain actions in the Logic Apps.
+> These sample templates use the deprecated Azure Application Insights connector and API-key authentication. For new workflows, use the Azure Monitor Logs connector with Microsoft Entra authentication. Adapt the sample queries, connection resources, and result handling before using them with the new connector.
 >
-> After deploying the Logic App, navigate to the created API Connection Resources in the Azure Portal to authenticate them. The Application Insights API Connection Resource can be authenticated using the Application ID and an API Key. These can be found and generated on the API Access page of the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource in the Azure Portal.
+> Deploying a Logic App also creates the API connection resources needed by its actions. After deployment, open those resources in the Azure portal to authenticate them.
 >
-> If you have already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App you can reuse them by entering the same resource name before deploying the Logic App.
+> If the required API connection resources already exist in the selected resource group, you can reuse them by entering the same resource name before deployment.
 
 #### Example - Run an alerting query every "n" days and send an email
 
-This Logic App runs every number of days (specified in app deployment). It lists all updates made available to environments that emit telemetry to the specified Application Insights resource during the period. Administrators can use this app to replace email notifications they'd receive for environments when set up as notification recipient.
+This Logic App runs at an interval in days specified during deployment. It lists updates automatically scheduled for environments that emit telemetry to the specified Application Insights resource during that period. It filters on event `LC0101` and excludes schedules selected by a partner. Administrators can use this app to supplement update notifications.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAvailableUpdatesNotification.json)
+[Deploy the available update notification template to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAvailableUpdatesNotification.json).
 
 #### Example - Run an alerting query every "n" minutes and send a message to Teams
 
 This Logic App queries Application Insights every number of minutes (specified in app deployment). It notifies a user (also specified in deployment) of any deleted environments in Microsoft Teams. The action that sends the notification in Teams can be updated to notify a Channel or Group Chat instead.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FDeletedEnvironmentNotification.json)
+[Deploy the deleted environment notification template to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FDeletedEnvironmentNotification.json).
 
 
 
