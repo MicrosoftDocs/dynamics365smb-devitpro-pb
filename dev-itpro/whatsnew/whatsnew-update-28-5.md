@@ -33,7 +33,7 @@ No updates
 For a comprehensive overview of what's new and planned for Business Central online for the entire 2026 release wave 1 (release from April 2026 to October 2026), see [Plan and prepare for Dynamics 365 Business Central in 2026 release wave 1](/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/planned-features)<!--(https://aka.ms/BCReleasePlan)-->.
 
 > [!NOTE]
-> Starting in September 2026, Microsoft stops publishing [Release Plans](/dynamics365/release-plans/). New Business Central capabilities will be published to the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). Existing release plans remain available for historical reference until further notice. Learn more about the roadmap and disclosure changes at [One always-on roadmap: Dynamics 365, Power Platform and Dataverse join the AI at Work roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
+> Starting in September 2026, Microsoft stops publishing [Release Plans](/dynamics365/release-plans/). New Business Central capabilities will be published to the [Microsoft Copilot Roadmap](https://aka.ms/AIatWorkRoadmap). Existing release plans remain available for historical reference until further notice. Learn more about the roadmap and disclosure changes at [One always-on roadmap: Dynamics 365, Power Platform and Dataverse join the Microsoft Copilot Roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
 
 ## Upgrade to 28.5
 

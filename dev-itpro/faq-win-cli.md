@@ -75,7 +75,7 @@ Therefore, C/SIDE is discontinued for [!INCLUDE[prod_short](includes/prod_short.
 
 ## Which features are available in the modern clients and where can I find the roadmap?
 
-[!INCLUDE[prod_short](includes/prod_short.md)] is a highly adaptable modern business management solution. It has many features and options and is continuously being enhanced. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+[!INCLUDE[prod_short](includes/prod_short.md)] is a highly adaptable modern business management solution. It has many features and options and is continuously being enhanced. Visit the [Microsoft Copilot Roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ## Related information
 

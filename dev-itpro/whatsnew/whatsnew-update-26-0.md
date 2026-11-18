@@ -2,12 +2,14 @@
 title: What's New or Changed in Business Central 2025 Release Wave 1 Update 26.0
 description: Get an overview of new and changed capabilities in the 26.0 update of Business Central online, which is part of 2025 release wave 1.
 ms.author: jswymer
-ms.date: 04/24/2025
+ms.date: 11/18/2026
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.topic: whats-new
 author: jswymer
 ms.custom: 
     - bap-template
+    - evergreen
 ---
 # Update 26.0 for Business Central 2025 release wave 1
 

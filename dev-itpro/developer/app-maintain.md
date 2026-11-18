@@ -20,7 +20,7 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Roadmap of what's new and planned
 
-    Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.  
+    Visit the [Microsoft Copilot Roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.  
 
 - Access to prerelease bits
 

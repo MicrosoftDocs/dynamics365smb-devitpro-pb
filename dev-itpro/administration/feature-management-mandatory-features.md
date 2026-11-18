@@ -21,7 +21,7 @@ This article provides the following information about optional features since 20
 - Features that are turned on by default for new customers.
 - Features that are now generally available.
 
-Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+Visit the [Microsoft Copilot Roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 Some of the features or design improvements in major and minor updates are optional and aren't immediately enabled. You can learn about these features in the release plans and documentation and decide whether your administrator should turn them on. Learn more about optional features at [Enabling Upcoming Features Ahead of Time](feature-management.md).
 

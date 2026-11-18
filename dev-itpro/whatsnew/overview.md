@@ -18,11 +18,11 @@ Wondering about upcoming and recently released capabilities in Dynamics 365 Busi
 
 > [!IMPORTANT]
 >
-> **The AI at Work roadmap replaces new release plans.** Since September 2026, information about new Dynamics 365 Business Central capabilities is published on the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). Existing release plans remain available for historical reference.
+> **The Microsoft Copilot Roadmap replaces new release plans.** Since September 2026, information about new Dynamics 365 Business Central capabilities is published on the [Microsoft Copilot Roadmap](https://aka.ms/AIatWorkRoadmap). Existing release plans remain available for historical reference.
 >
-> Learn more about this change in the [announcement about the move to the AI at Work roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
+> Learn more about this change in the [announcement about the move to the Microsoft Copilot Roadmap](https://aka.ms/ReleasePlannerMigrationBlog).
 
-Business Central follows a six‑month release cycle for major version updates, which groups new, changed, and planned features for a half‑year period. To discover upcoming capabilities, track rollout progress, and plan adoption, visit the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap).
+Business Central follows a six‑month release cycle for major version updates, which groups new, changed, and planned features for a half‑year period. To discover upcoming capabilities, track rollout progress, and plan adoption, visit the [Microsoft Copilot Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap).
 
 ## New and changed features in recent minor updates
 

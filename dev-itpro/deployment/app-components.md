@@ -18,7 +18,7 @@ When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_shor
 
 [!INCLUDE [admin-baseapp](../developer/includes/admin-baseapp.md)]
 
-Microsoft recommends that all partners move toward a model that doesn't use code customization for the base application. Visit the [AI at Work roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
+Microsoft recommends that all partners move toward a model that doesn't use code customization for the base application. Visit the [Microsoft Copilot Roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ### Platform
 
