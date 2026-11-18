@@ -1,9 +1,9 @@
 ---
-title: Deprecated Features in the application
+title: Deprecated features in the application
 description: Describes the features that have been moved, removed, or replaced in the W1 version.
 author: brentholtorf
 ms.author: bholtorf
-ms.date: 02/20/2026
+ms.date: 11/16/2026
 ms.reviewer: solsen
 ms.topic: article
 ms.custom: bap-template
@@ -34,6 +34,14 @@ This article describes the features that have been moved, removed, or replaced i
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| The Finance reports API is removed in 2027 release wave 1 (version 30.0). The Finance reports API was introduced as a reporting endpoint for finance scenarios, but the Analytics API now provides read-only endpoints optimized for analytical and reporting workloads, including Power BI apps and custom reports.<br><br>Use the Analytics API instead of the Finance reports API for reporting and analysis scenarios. Learn more in [Analytics API overview](../api-analytics/api-analytics-overview.md). |
+
+## Changes in December 2026 (version 29.3)
+
+### Item substitution suggestions with Copilot
+
+|Moved, removed, or replaced? | Why? |
+|-----------------------------|-----|
+|Replaced| Starting December 2, 2026, Copilot item substitution suggestions won't be available. The workflow that finds substitute items changes from Copilot-generated suggestions to modern search and manual selection. To find substitute items, choose **Use modern search** from the search menu on the **Items** page, and then add them as substitutes on the **Item Substitution Entry** page.<br><br>Learn more in [Set up item substitutions](/dynamics365/business-central/inventory-how-register-new-items#set-up-item-substitutions) and [Choose between modern search and legacy search](/dynamics365/business-central/ui-enter-criteria-filters#choose-between-modern-search-and-legacy-search). |
 
 ## Changes in 2026 release wave 2
 
