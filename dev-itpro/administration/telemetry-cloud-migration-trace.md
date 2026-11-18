@@ -1,6 +1,6 @@
 ---
-title: Cloud Migration Telemetry in Business Central
-description: Analyze Business Central cloud migration telemetry to monitor replication runs, companion table repairs, data upgrades, and migration status.
+title: Analyze Business Central Cloud Migration Trace Telemetry
+description: Analyze cloud migration trace telemetry in Business Central to monitor replication, companion table repair, data upgrades, and migration disablement.
 author: jobulsin
 ms.topic: reference
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, cloud migration
@@ -22,7 +22,7 @@ Cloud migration telemetry gathers data about the success or failure of the follo
 - Cloud migration setup
 - Data upgrade 
 
-Failed operations result in a trace log entry that includes a reason for the failure.
+Use failure details, where provided, to investigate unsuccessful operations.
 
 ## Replication run started
 
@@ -215,7 +215,7 @@ Occurs when a data upgrade operation on an environment is started.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0175**|
+|eventId|`LC0175`|
 
 ## Environment data upgrade operation completed successfully
 
@@ -236,7 +236,7 @@ Occurs when a data upgrade operation on an environment has completed successfull
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0176**|
+|eventId|`LC0176`|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 ## Environment data upgrade operation failed
@@ -258,7 +258,7 @@ Occurs when a data upgrade operation on an environment has failed.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0177**|
+|eventId|`LC0177`|
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
@@ -281,7 +281,7 @@ Occurs when a recovery operation that's run after a failed data upgrade operatio
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0178**|
+|eventId|`LC0178`|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 ## Recovery from a failed data upgrade operation has failed
@@ -303,7 +303,7 @@ Occurs when a recovery operation that's run after a failed data upgrade operatio
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0179**|
+|eventId|`LC0179`|
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 

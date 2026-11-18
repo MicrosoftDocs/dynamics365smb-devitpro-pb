@@ -1,6 +1,6 @@
 ---
-title: Compare work processes in Dynamics SL to Business Central
-description: Get tips and tricks for how to do things in Business Central online that you currently do in Dynamics SL.
+title: Compare Work in Dynamics SL and Business Central
+description: Compare everyday work in Dynamics SL and Business Central online through videos about transactions, vendor payments, dimensions, journals, and reports.
 author: lcontreras
 ms.topic: article
 ms.devlang: al
@@ -8,9 +8,10 @@ ms.reviewer: jswymer
 ms.search.keywords: cloud, edge, SL, migration, video
 ms.date: 12/13/2024
 ms.author: jswymer
+ai-usage: ai-assisted
 ---
 
-# Compare Work Processes in Dynamics SL to Business Central
+# Compare work processes in Dynamics SL to Business Central
 
 Moving to [!INCLUDE [prod_short](../includes/prod_short.md)] from Dynamics SL can seem daunting, even for experienced users. To help you quickly become productive, we’re producing videos that explain the differences and similarities in work processes.
 
@@ -25,7 +26,8 @@ This video compares the process of entering receivables transactions in Dynamics
 
 > [!VIDEO https://www.youtube.com/embed/fatcqVFrTXI?si=Q_9ODkN8N7VtxysH]
 
-## Pay vendors
+<a name="pay-vendors"></a>
+## Pay your vendors
 
 This video compares the process of paying vendors in Dynamics SL and [!INCLUDE [prod_short](../includes/prod_short.md)].
 
@@ -73,7 +75,7 @@ This video compares the process of setting up classes and templates in Dynamics 
 
 <br><br>
 
-> [!Video https://www.youtube.com/embed/cc6rEVDhlzs?si=nTYcM2dANI-fiQcz]
+> [!VIDEO https://www.youtube.com/embed/cc6rEVDhlzs?si=nTYcM2dANI-fiQcz]
 
 ## Use general journal entries
 
@@ -97,7 +99,7 @@ This video compares the process of running trial balance and aging reports in Dy
 
 <br><br>
 
-> [!Video https://www.youtube.com/embed/O2RPBlr_GiE?si=hYWWt_-erFIB7pI4]
+> [!VIDEO https://www.youtube.com/embed/O2RPBlr_GiE?si=hYWWt_-erFIB7pI4]
 
 ## Use posting accounts
 
@@ -109,5 +111,5 @@ This video compares the process of using posting accounts and posting groups in 
 
 ## Related information
 
-[Migrate Dynamics SL data to the Cloud](migrate-dynamics-SL.md)  
-[Migrate on-premises data to Business Central Online](migrate-data.md)
+[Migrate Dynamics SL data to the cloud](migrate-dynamics-sl.md)\
+[Migrate on-premises data to Business Central online](migrate-data.md)

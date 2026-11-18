@@ -4,19 +4,20 @@ description: Learn how to troubleshoot problems that you might experience with t
 author: jswymer
 ms.topic: troubleshooting
 ms.search.keywords: cloud, edge
-ms.date: 05/19/2025
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
-# Troubleshooting cloud migration
+# Troubleshoot cloud migration to Business Central online
 
 In this article, you learn how to troubleshoot problems that you might experience with the cloud migration of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
 
 ## Cloud migration setup and data replication troubleshooting articles
 
-For a collection of troubleshooting articles related cloud migration setup and data replication, refer to [Cloud migration troubleshooting for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
+Learn more in [Cloud migration troubleshooting for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) for a collection of articles related to cloud migration setup and data replication.
 
-The sections that follow provide guidance for general error that you might experience during cloud migration.
+The sections that follow provide guidance for general errors that you might experience during cloud migration.
 
 ## SQL Server compatibility level
 
@@ -30,7 +31,7 @@ To check the compatibility level run following query: 
 SELECT compatibility_level FROM sys.databases WHERE name = 'YourDatabaseName';  
 ```
 
-If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to meet the current SQL Server compatibility requirements. Learn more in [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
+If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to meet the current SQL Server compatibility requirements. Learn more in [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true).
 
 ```sql
 ALTER DATABASE YourDatabaseName SET COMPATIBILITY_LEVEL = 130; 
@@ -69,31 +70,28 @@ To enable change tracking on specific tables, run the following query:
 ALTER TABLE [YOUR TABLE] ENABLE CHANGE_TRACKING 
 ```
 
-## Insufficient user permissions (Business Central and SQL Server users)  
+## Insufficient user permissions
 
 > Database: online
 
 If a user has problems managing a cloud migration, like starting migration, initializing companies, or migrating data from earlier versions, check that:
 
-- The user has a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license (Essentials or Premium, depending on their solution). We recommend using free Dynamics 365 Business Central Premium Trial subscription for this user.  
-- The user is assigned to the SUPER permission set.
+- The user has a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license—Essentials or Premium, depending on their solution. We recommend using a free Dynamics 365 Business Central Premium Trial subscription for this user.
+- The user is assigned to the **SUPER** permission set.
 
 Running cloud migration requires SUPER permissions because the operation has to be able to schedule diverse background tasks on behalf of the user. As part of the setup to run cloud migration, delegated administrators can obtain consent from an internal licensed user that has SUPER permissions. Other delegated roles can't run cloud migration.
 
-## Self-Hosted Integration Runtime
+## Self-hosted integration runtime
 
 > Database: on-premises
 
-- Ensure that you're running the latest, compatible version of Microsoft Integration Runtime (IR).
+- Ensure that you're running the latest, compatible version of Microsoft Integration Runtime, also called IR.
 
     You can check for and download the latest version from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=39717).
 
-    When downloading and installing Integration Runtime, choose version 5 (IntegrationRuntime_5.x.x.x.msi) only if your machine runs .NET Framework Runtime 4.7.2. Otherwise, or if in doubt, choose version 4 (IntegrationRuntime_4.x.x.x.msi).
-
-    > [!IMPORTANT]
-    > Running Integration Runtime v5 on a machine that doesn't have .NET Framework Runtime 4.7.2 can cause timeouts when connecting to the on-premises SQL Server, which breaks the cloud migration setup.
+    The self-hosted integration runtime requires a 64-bit operating system and .NET Framework 4.7.2 or later. Learn more in [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime#prerequisites).
   
-    Before you install a new Integration Runtime version, uninstall the old version. When you uninstall the old version, choose to delete the user data (such as authentication key and data source credentials) when prompted. Then, install the Integration Runtime again and connect it to the online environment using the new authentication key.  
+    Before you install a new Integration Runtime version, uninstall the old version. When you uninstall the old version, choose to delete the user data, such as the authentication key and data source credentials, when prompted. Then, install the Integration Runtime again and connect it to the online environment using the new authentication key.
 
 - If you get a "Failed to enable your replication." error when running the **Data Migration Setup** assisted setup, check the IR logs.
 
@@ -103,9 +101,9 @@ Running cloud migration requires SUPER permissions because the operation has to 
 
     The computer where IR is installed ideally shouldn't be switched off, go to sleep, or hibernate. If these conditions happen, the IR might get into an error state. In this case, we recommend that you reinstall the IR and turn off sleep hibernate on the computer.  
 
-- Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Running out of memory on the machine can interrupt migration, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every extra parallel migration slows down the overall progress considerably.
+- Make sure the machine that you use for hosting IR has plenty of memory available. Running out of memory on the machine can interrupt migration, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every extra parallel migration slows down the overall progress considerably.
 
-If you experience problems with Microsoft Integration Runtime, also see [Troubleshoot self-hosted integration runtime](/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide).
+If you experience problems with Microsoft Integration Runtime, learn more in [Troubleshoot self-hosted integration runtime](/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide).
 
 ## Migrating between multiple source and destination databases
 
@@ -137,7 +135,7 @@ This section explains how to avoid and fix errors caused by incompatible version
 
 **The version of the on-premises deployment does not match the requirements of Business Central online. Check if the version was set correctly on the database.**
 
-- When running the **Cloud Migration Setup** assisted setup, make sure to select the right product that you want to migrate from. Depending on which Cloud Migration apps are installed, the assisted setup lets you choose from three options:
+- When running the **Cloud Migration Setup** assisted setup, make sure to select the right product that you want to migrate from. Depending on which cloud migration apps are installed, the assisted setup offers options such as:
 
     |Option|When to use|
     |------|-----------|
