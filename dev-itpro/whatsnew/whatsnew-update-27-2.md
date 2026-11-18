@@ -2,7 +2,7 @@
 title: Update 27.2 for Microsoft Dynamics 365 Business Central 2025 Release Wave 2
 description: Get an overview of new and changed capabilities in the 27.2 update of Business Central online, which is part of 2025 release wave 2
 ms.author: jswymer
-ms.date: 12/08/2025
+ms.date: 11/18/2026
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer

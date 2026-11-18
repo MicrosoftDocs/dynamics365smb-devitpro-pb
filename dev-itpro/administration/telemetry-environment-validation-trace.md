@@ -1,12 +1,13 @@
 ---
-title:  Analyzing environment validation telemetry 
-description: Learn about the environment validation telemetry in Business Central.
+title: Environment Validation Telemetry in Business Central
+description: Analyze Business Central environment validation telemetry to identify extension compatibility issues and prepare customer environments for major updates.
 author: KennieNP
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.topic: concept-article
-ms.date: 10/27/2023
+ms.topic: reference
+ms.date: 11/17/2026
 ms.custom: bap-template
+ai-usage: ai-assisted
 
 ---
 
@@ -14,11 +15,11 @@ ms.custom: bap-template
 
 [!INCLUDE[component](../developer/includes/online_only.md)]
 
-Non-compatible, partner apps (per-tenant extensions) can block upgrades to next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they can't compile on that version. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service proactively validates all environments regularly against the next release. If an environment isn't ready to be updated, then the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service sends an email to the administrator and, starting from September 2023, emits telemetry on these validations. 
+Incompatible partner apps (per-tenant extensions) can block upgrades to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] if they can't compile on that version. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service proactively validates all environments regularly against the next release. If an environment isn't ready to be updated, then the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service sends an email to the administrator and, starting from September 2023, emits telemetry on these validations.
 
-With this telemetry, partners can monitor environments for the customers and setup alerts so that they know up front which customers need help prior to updating to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+With this telemetry, partners can monitor environments for the customers and set up alerts so that they know up front which customers need help prior to updating to the next major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-Failed operations result in a tracelog entry that includes a reason for the failure.
+Failed operations result in a trace log entry that includes a reason for the failure.
 
 The validation flow is as follows:
 
@@ -134,7 +135,7 @@ Occurs if the extension validated successfully on the next major of [!INCLUDE[pr
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
 
-## <a name="extension-validation-diagnostic-reported"></a>Extension Validation diagnostic reported (LC0210)
+## <a name="extension-validation-diagnostic-reported"></a>Extension validation diagnostic reported (LC0210)
 
 Occurs if something wasn't right when validating the extension on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -165,7 +166,7 @@ Occurs if something wasn't right when validating the extension on the next major
 
 
 
-### Sample KQL code (Extension Validation diagnostic reported)
+### Sample KQL code (extension validation diagnostic reported)
 
 This KQL code can help you get started analyzing validation failures for an app on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
@@ -223,7 +224,7 @@ Occurs if the extension validated with one or more failures on the next major of
 |failureReason|The overall reason that the extension failed to validate on the new major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
 
 
-### Sample KQL code (Extension validation completed with failures)
+### Sample KQL code (extension validation completed with failures)
 
 This KQL code can help you get started analyzing validation failures for an app on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
@@ -317,7 +318,7 @@ Occurs if an extension validated with a diagnostic on the next major of [!INCLUD
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |extensionVersion|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-version.md)]|
-|mainExtension|Specifies the name of an extension that the validated extension has taken a dependency n.|
+|mainExtension|Specifies the name of an extension that the validated extension has taken a dependency on.|
 |diagnosticCode|[!INCLUDE[diagnosticCode](../includes/include-telemetry-dimension-diagnostics-code.md)]|
 |diagnosticMessage|[!INCLUDE[diagnosticMessage](../includes/include-telemetry-dimension-diagnostics-message.md)]|
 |diagnosticSeverity|[!INCLUDE[diagnosticSeverity](../includes/include-telemetry-dimension-diagnostics-severity.md)]|
@@ -326,7 +327,7 @@ Occurs if an extension validated with a diagnostic on the next major of [!INCLUD
 |targetVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-validation-target-version.md)]|
 
 
-### Sample KQL code (Environment diagnostic reported)
+### Sample KQL code (environment diagnostic reported)
 
 This KQL code can help you get started analyzing validation failures for an app on the next major of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 

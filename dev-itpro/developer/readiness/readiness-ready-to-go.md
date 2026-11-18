@@ -11,7 +11,7 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The Business Central 2026 release wave 2 (update 29.0) is now available on the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). Learn about the innovations in this wave and Microsoft's transition to the AI at Work roadmap in [What's new and planned in Business Central](../../whatsnew/overview.md). Explore the latest innovations across Business Central, Copilot, and agents.
+> The Business Central 2026 release wave 2 (update 29.0) is now available on the [Microsoft Copilot Roadmap](https://aka.ms/AIatWorkRoadmap). Learn about the innovations in this wave and Microsoft's transition to the Microsoft Copilot Roadmap in [What's new and planned in Business Central](../../whatsnew/overview.md). Explore the latest innovations across Business Central, Copilot, and agents.
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
@@ -25,7 +25,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - **Expense Agent – dive into the latest videos** [Business Central Expense Agent Series](https://www.youtube.com/playlist?list=PLVPvbYXxhxmY)
 - **Explore migration options – read the newest blog** [Explore migration options for Microsoft Dynamics NAV, Microsoft Dynamics GP, and Microsoft Dynamics 365 Business Central](https://aka.ms/BCMigrationBlog)
 - **Use the new Copilot experience in Business Central to reason over business data** [Feature details in update 29.0 public preview for 2026 release wave 2](/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#copilot-and-agents-enable-unified-copilot-chat-experience-consistent-with-microsoft-copilot)
-- **New AI at Work roadmap instead of Release Plans** [What's New or Changed in Business Central 2026 release wave 2](../../whatsnew/whatsnew-update-29-0.md#new-ai-at-work-roadmap-instead-of-release-plans)
+- **New Microsoft Copilot Roadmap instead of Release Plans** [What's New or Changed in Business Central 2026 release wave 2](../../whatsnew/whatsnew-update-29-0.md#new-ai-at-work-roadmap-instead-of-release-plans)
 - **Want to stay informed about upcoming Business Central releases** [What's New or Changed in Business Central 2026 release wave 2](../../whatsnew/whatsnew-update-29-0.md#want-to-stay-informed-about-upcoming-business-central-releases)
 
 ## Latest release and updates  

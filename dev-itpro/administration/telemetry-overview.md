@@ -1,13 +1,14 @@
 ---
 title: Monitoring and Analyzing Telemetry
-description: Learn how Business Central provides telemetry for each environment, both for online and on-premises environments.  
+description: Monitor Business Central environments and extensions with Application Insights telemetry to diagnose errors, analyze performance, and track usage.
 author: jswymer
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 06/20/2025
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Monitoring and analyzing telemetry
@@ -40,20 +41,20 @@ Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers te
 
 [!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
 
-## <a name="enable"></a> Enable Telemetry
+## <a name="enable"></a> Enable telemetry
 
 [!INCLUDE[enableTelemetryEnvironment](../includes/include-telemetry-enable-environment.md)]
 
 > [!NOTE]
-> For apps/extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
+> For apps/extensions, learn more in [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
 ## <a name="ingest"></a> Control telemetry cost
 
-[!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is billed based on the volume of telemetry data that is sent (data ingestion) and how long time you want data to be available (data retention). 
+[!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is billed based on the volume of telemetry data that is sent (data ingestion) and how long you want data to be available (data retention).
 
-Check the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] documentation for up-to-date information on pricing at [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/).
+Learn more in [Azure Monitor pricing](https://azure.microsoft.com/pricing/details/monitor/).
 
-For more information, go to [Control Telemetry Cost](telemetry-control-cost.md).
+Learn more in [Control telemetry cost](telemetry-control-cost.md).
 
 ## <a name="view"></a>Viewing telemetry data with Power BI
 
@@ -63,22 +64,22 @@ Learn more in [Analyze and Monitor Telemetry with Power BI](telemetry-power-bi-a
 
 ## <a name="analyze"></a>Analyze telemetry data
 
-Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] Logs in the *traces* and *pageViews* tables. You can view collected data by writing log queries using Kusto query language (KQL). Learn more at [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
+Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] Logs in the `traces` and `pageViews` tables. You can view collected data by writing log queries using Kusto Query Language (KQL). Learn more in [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
 
-For more information, go to [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md).
+Learn more in [Analyze telemetry with KQL](telemetry-analyze-with-kql.md).
 
 ## Setting up alerts on telemetry
 
 If something happens in your environment or app that you need to act on, you can set up a system that sends you an alert. [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] makes it easy to define such alerts. You can set up alerts on telemetry events with various tools depending on your role.
 
-If you're a project manager, product owner, or functional consultant, consider using the no-code tool Power BI Metrics for your alerting needs.
+If you're a project manager, product owner, or functional consultant, consider using Power BI goals to track telemetry measures against business objectives.
 
 If you prefer more control, consider using one of these low-code tools for your alerting needs.
 - Azure Application Insights Alerts
 - Azure Logic Apps
 - Power Automate
 
-For more information, go to [Alert on Telemetry](telemetry-alert.md).
+Learn more in [Alert on telemetry](telemetry-alert.md).
 
 ## Telemetry sample code
 
@@ -97,7 +98,7 @@ Get answers to common questions about telemetry in [Telemetry FAQ](telemetry-faq
 [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)  
 [Alert on Telemetry](telemetry-alert.md)  
 [Telemetry FAQ](telemetry-faq.md)   
-[Feature Telemetry* codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)  
+[Feature Telemetry codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)
 [Custom telemetry with LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
 [Working with Administration Tools](administration.md)  
 [Business Central Administration Center](tenant-admin-center.md)  

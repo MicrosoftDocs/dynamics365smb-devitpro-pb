@@ -2,12 +2,14 @@
 title: Update 26.5 for Microsoft Dynamics 365 Business Central 2025 Release Wave 1
 description: Get an overview of new and changed capabilities in the 26.5 update of Business Central online, which is part of 2025 release wave 1
 ms.author: jswymer
-ms.date: 08/04/2025
+ms.date: 11/18/2026
+ms.update-cycle: 1095-days
 ms.reviewer: solsen
 ms.topic: concept-article
 author: jswymer
 ms.custom:
     - bap-template
+    - evergreen
 ---
 # Update 26.5 for Business Central 2025 release wave 1
 

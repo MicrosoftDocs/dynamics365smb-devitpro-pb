@@ -1,13 +1,14 @@
 ---
-title: Analyzing Marketplace submission validation trace telemetry
-description: Learn about the telemetry for publishing apps to Marketplace from Partner Center.  
+title: Analyzing Marketplace Submission Validation Telemetry
+description: Analyze Business Central Marketplace submission validation telemetry to track validation stages, identify diagnostics, and investigate publication failures.
 author: jswymer
-ms.topic: how-to
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, Marketplace, validation
-ms.date: 08/01/2021
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Analyzing Marketplace submission validation telemetry
@@ -16,16 +17,16 @@ ms.reviewer: jswymer
 
 When you submit an app to Marketplace using Partner Center, it starts an automated validation process. This technical validation process ensures the extensions in the app meet the technical requirements for going live. It goes through many of the same checks described in [technical validation](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission).
 
-If an app's set up for it, telemetry traces are emitted to and recorded in Application Insights. The data provides details about the success or failure of different phases of the validation. For more information about setting up telemetry for an app, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
+If an app's set up for it, telemetry traces are emitted to and recorded in Application Insights. The data provides details about the success or failure of different phases of the validation. Learn more in [Sending extension telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
 > [!NOTE]  
 > In order to start analyzing your validation results, use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - Marketplace Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
 
 ## Validation process overview
 
-The validation process starts when you publish the app. The validation runs against each extension in the app, for each country/region (market) specified for the offer in Partner Center, and for each Business Central version that the submissions targets. For more information versions, see [Against which releases of Business Central is your submission validated?](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
+The validation process starts when you publish the app. The validation runs against each extension in the app, for each country/region (market) specified for the offer in Partner Center, and for each Business Central version that the submission targets. Learn more in [Against which releases of Business Central is your submission validated?](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
 
-Extensions are validated using the AL compiler and the [AppSourceCop code analyzer](../developer/devenv-using-code-analysis-tool.md). Traces are emitted at different phases during the process. Each submission is assigned a unique identifier (ID). This ID is included in each trace for a submission, allowing you to query all trace related to the submission. The general flow for the validation process is illustrated below:
+Extensions are validated using the AL compiler and the [AppSourceCop code analyzer](../developer/devenv-using-code-analysis-tool.md). Traces are emitted at different phases during the process. Each submission is assigned a unique identifier (ID). This ID is included in each trace for a submission, allowing you to query all traces related to the submission. The general flow for the validation process is illustrated below:
 
 1. Marketplace submission validation request started
 2. Validation diagnostic reported for information, warnings, or errors that occur on the submission
@@ -43,7 +44,7 @@ To reduce the risk of failing the Marketplace validation process, review the [te
 
 ## <a name="validationrequeststarted"></a>Marketplace submission validation request started
 
-Occurs when an app is published from Partner Center. For more information about publishing from Partner Center, see [Review and publish a Dynamics 365 offer - Validation and publishing steps](/azure/marketplace/dynamics-365-review-publish#validation-and-publishing-steps).
+Occurs when an app is published from Partner Center. Learn more in [Review and publish a Dynamics 365 offer - Validation and publishing steps](/azure/marketplace/dynamics-365-review-publish#validation-and-publishing-steps).
 
 ### General dimensions
 
@@ -148,7 +149,7 @@ Occurs when the validation has started for a specific version and country/region
 
 ## <a name="extensionvalidationstarted"></a>Extension validation started
 
-Occurs when the validation for a specific extension the submission has started.
+Occurs when the validation for a specific extension in the submission has started.
 
 ### General dimensions
 
@@ -235,7 +236,7 @@ traces
 
 ## <a name="extensionvalidationcompleted"></a>Extension validation completed successfully
 
-Occurs when the validation for a specific extension the submission has completed, and no errors occurred.
+Occurs when the validation for a specific extension in the submission has completed, and no errors occurred.
 
 ### General dimensions
 
@@ -268,7 +269,7 @@ Occurs when the validation for a specific extension the submission has completed
 
 ## <a name="extensionvalidationcompletedwithfailures"></a>Extension validation completed with failures
 
-Occurs when the validation for a specific extension the submission has completed, but errors occurred.
+Occurs when the validation for a specific extension in the submission has completed, but errors occurred.
 
 ### General dimensions
 

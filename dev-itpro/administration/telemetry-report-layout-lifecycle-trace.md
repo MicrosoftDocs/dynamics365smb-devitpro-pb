@@ -1,10 +1,11 @@
 ---
-title: Analyzing report layout lifecycle telemetry
-description: Learn about report layout lifecycle telemetry in Business Central  
+title: Report Layout Lifecycle Telemetry Reference
+description: Analyze report layout lifecycle telemetry in Business Central to track layouts added, replaced, deleted, exported, or selected as the report default.
 author: jswymer
-ms.topic: concept-article
+ms.topic: reference
+ai-usage: ai-assisted
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/06/2024
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
@@ -14,7 +15,9 @@ ms.custom: bap-template
 
 [!INCLUDE[2024_releasewave2.md](../developer/includes/2024rw2_and_later.md)]
 
-This article describes the telemetry gathered for actions taken by users on report layouts. Learn more about the actions users can take on report layouts at [Get started with report layouts](/dynamics365/business-central/ui-get-started-layouts?tabs=copy#get-started).
+This article describes the telemetry gathered for actions taken by users on report layouts. Learn more in [Get started with report layouts](/dynamics365/business-central/ui-get-started-layouts?tabs=copy#get-started).
+
+These events use normal verbosity (`severityLevel` **1**) and `TelemetryScope::All`.
 
 ## Report layout added by user
 
@@ -35,6 +38,8 @@ The following table explains the general dimensions of this trace.
 |---------|-----|
 |aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alAction|**New**|
+|alLayoutDescription|Specifies the description supplied for the new layout.|
+|alExcelConfiguration|Specifies the Excel sheet configuration recorded for the layout.|
 |alLayoutFormat|Specifies the layout file type. Possible values: `RDLC` (.rdlc file type), `Word` (.docx file type), `Excel` (.xlsx file type), Custom (custom file type, indicated as **External** in the client UI).|
 |alLayoutName |Specifies the name of the report layout.|
 |alReportId|Specifies the ID of the report assigned the layout.|
@@ -45,7 +50,7 @@ The following table explains the general dimensions of this trace.
 
 ### Sample KQL code (report layout added)
 
-This KQL code can help you get started analyzing which reports users run:
+This KQL code can help you get started analyzing which report layouts users add:
 
 ```kql
 traces
@@ -87,7 +92,7 @@ The following table explains the general dimensions of this trace.
 |---------|-----|
 |aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alAction|**SetDefault**|
-|alLayoutFormat|Specifies the layout file type. Possible values: `RDLC` (.rdlc file type), `Word` (.docx file type), `Excel` (.xlsx file type), Custom (custom file type, indicated as **External** in the client UI).|
+|alLayoutFormat|In versions that emit this dimension, specifies the layout file type. Before version 25.1, the value is an integer. The current default-change event doesn't emit this dimension.|
 |alLayoutName |Specifies the name of the report layout.|
 |alReportId|Specifies the ID of the report assigned the layout.|
 |companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
@@ -97,7 +102,7 @@ The following table explains the general dimensions of this trace.
 
 ### Sample KQL code (report layout default changed)
 
-This KQL code can help you get started analyzing which reports users run:
+This KQL code can help you get started analyzing which report layouts users select as defaults:
 
 ```kql
 traces
@@ -114,6 +119,7 @@ traces
 , reportId = customDimensions.alReportId // object ID of the report
 , newDefaultLayoutName = customDimensions.alLayoutName 
 // NB! alLayoutFormat shows as an integer in the telemetry in versions prior to 25.1
+// The current default-change event doesn't emit alLayoutFormat.
 , layoutFormat = customDimensions.alLayoutFormat // possible values: RDLC, Word, Excel, Custom
 // what did the user do
 , action = customDimensions.alAction // alAction is "SetDefault" for this event
@@ -123,7 +129,7 @@ traces
 
 ## Report layout properties changed by user
 
-Occurs when a user changes the properties of layout used by a report.
+Occurs when a user changes the properties of a user-defined layout or creates a copy through the layout properties dialog.
 
 ### General dimensions
 
@@ -140,8 +146,8 @@ The following table explains the general dimensions of this trace.
 |---------|-----|
 |aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alAction|**Edit**|
-|alOldLayoutDescription|Specifies the description of the layout before it was changed.|
-|alOldLayoutName|Specifies the name of the layout before it was changed.|
+|alOldLayoutDescription|Specifies the layout description recorded in the old-value dimension. The value is captured after the layout is updated and can match `alNewLayoutDescription`.|
+|alOldLayoutName|Specifies the layout name recorded in the old-value dimension. The value is captured after the layout is updated and can match `alNewLayoutName`.|
 |alNewLayoutDescription|Specifies the new description of the layout.|
 |alNewLayoutName|Specifies the new name of the layout.|
 |alReportId|Specifies the ID of the report assigned the layout.|
@@ -152,7 +158,7 @@ The following table explains the general dimensions of this trace.
 
 ### Sample KQL code (report layout properties changed)
 
-This KQL code can help you get started analyzing which reports users run:
+This KQL code can help you get started analyzing changes to report layout properties:
 
 ```kql
 traces
@@ -205,7 +211,7 @@ The following table explains the general dimensions of this trace.
 
 ### Sample KQL code (report layout exported)
 
-This KQL code can help you get started analyzing which reports users run:
+This KQL code can help you get started analyzing which report layouts users export:
 
 ```kql
 // 
@@ -238,7 +244,7 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Report layout exported by user**|
+|message|**Report layout deleted by user**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -256,7 +262,7 @@ The following table explains the general dimensions of this trace.
 
 ### Sample KQL code (report layout deleted)
 
-This KQL code can help you get started analyzing which reports users run:
+This KQL code can help you get started analyzing which report layouts users delete:
 
 ```kql
 traces
@@ -288,7 +294,7 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Report layout exported by user**|
+|message|**Report layout replaced by user**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -297,6 +303,8 @@ The following table explains the general dimensions of this trace.
 |---------|-----|
 |aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alAction|**Replace**|
+|alLayoutDescription|Specifies the description supplied for the replacement layout.|
+|alLayoutFormat|Specifies the replacement layout format. Possible values include `RDLC`, `Word`, `Excel`, and `Custom`.|
 |alLayoutName |Specifies the name of the report layout.|
 |alReportId|Specifies the ID of the report assigned the layout.|
 |companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
@@ -306,7 +314,7 @@ The following table explains the general dimensions of this trace.
 
 ### Sample KQL code (report layout replaced)
 
-This KQL code can help you get started analyzing which reports users run:
+This KQL code can help you get started analyzing which report layouts users replace:
 
 ```kql
 traces

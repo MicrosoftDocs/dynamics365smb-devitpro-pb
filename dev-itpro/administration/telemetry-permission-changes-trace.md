@@ -1,16 +1,17 @@
 ---
 title: Analyzing Permission Changes Trace Telemetry
-description: Learn about the telemetry for permission changes made in Business Central  
+description: Analyze Business Central permission change telemetry to track permission sets, user assignments, and changes made by extensions during installation or updates.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
-# Analyzing Permission Changes Trace Telemetry
+# Analyzing permission changes trace telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, version 17.2, and later
 
@@ -21,24 +22,26 @@ Permission changes telemetry gathers data about the following operations on perm
 - A permission set was assigned to or removed from a user or user group
 - A permission set was changed by an app/extension
 
-For information about managing permission sets, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+Learn more in [Assign permissions to users and groups](/dynamics365/business-central/ui-define-granular-permissions).
+
+The AL events in this article are emitted only in Business Central online. The `LC0058` event is emitted by the server during extension installation or updates.
 
 
 ## <a name="other"></a>Common custom dimensions
 
-The following table explains custom dimensions that are common to all permission traces. 
+The following table explains custom dimensions for permission traces. The `al`-prefixed dimensions apply to the AL events, not to `LC0058`.
 
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alCategory|**AL PermissionSet**|
 |alDataClassification|**SystemMetadata**|
-|alObjectId|**1351**, which is the ID of the system application codeunit that subscribes to the telemetry events.|
-|alObjectName|**Telemetry Subscribers**, which is the name of the system application codeunit that subscribes to the telemetry events.|
+|alObjectId|**1351**, which is the ID of the Base Application codeunit that subscribes to the telemetry events.|
+|alObjectName|**Telemetry Subscribers**, which is the name of the Base Application codeunit that subscribes to the telemetry events.|
 |alObjectType|**CodeUnit**|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
@@ -69,7 +72,7 @@ This KQL code can help you get started analyzing when a user-defined permission 
 ```kql
 // User-defined permission set added 
 traces
-| timestamp > ago(60d) // adjust as needed
+| where timestamp > ago(60d) // adjust as needed
 | where customDimensions has 'AL0000E2A'
 | where customDimensions.eventId == 'AL0000E2A'
 | project timestamp
@@ -114,7 +117,7 @@ Occurs when a user-defined permission set is deleted.
 |alPermissionSetId|Specifies the ID of the permission set that was deleted.|
 |[See common custom dimensions](#other)||
 
-### Sample KQL code (User-defined permission set removed)
+### Sample KQL code (user-defined permission set removed)
 
 This KQL code can help you get started analyzing when a user-defined permission set was removed.
 
@@ -196,7 +199,7 @@ Occurs when a user-defined permission set, which is linked to a system permissio
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Permission set link removed {alSourcePermissionSetId} -> {alLinkedPermissionSetId}**|
+|message|**Permission set link removed: {alSourcePermissionSetId} -> {alLinkedPermissionSetId}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -210,7 +213,7 @@ Occurs when a user-defined permission set, which is linked to a system permissio
 |alNumberOfUserDefinedPermissionSetLinks|Specifies the total number of user-defined permission sets that are linked to system permission sets.|
 |[See common custom dimensions](#other)||
 
-### Sample KQL code (Permission set link removed)
+### Sample KQL code (permission set link removed)
 
 This KQL code can help you get started analyzing when a permission set link was removed.
 
@@ -255,9 +258,11 @@ Occurs when a permission set is assigned to a user.
 |---------|-----|
 |eventId|**AL0000E2C**|
 |alPermissionSetId|Specifies the ID of the permission set that was assigned to a user.|
+|alPermissionSetAppId|Specifies the app ID associated with the assigned permission set.|
+|alPermissionSetScope|Specifies the scope of the assigned permission set.|
 |[See common custom dimensions](#other)||
 
-### Sample KQL code (Permission set assigned to user)
+### Sample KQL code (permission set assigned to user)
 
 This KQL code can help you get started analyzing when a permission set was assigned to a user.
 
@@ -284,7 +289,7 @@ traces
 
 ## <a name="removeduser"></a>Permission set removed from user  
 
-Occurs when a permission set is removed from a user.
+Occurs when a permission set is removed from a user group.
 
 ### General dimensions
 
@@ -300,10 +305,12 @@ Occurs when a permission set is removed from a user.
 |---------|-----|
 |eventId|**AL0000E2D**|
 |alPermissionSetId|Specifies the ID of the permission set that was removed from the user.|
+|alPermissionSetAppId|Specifies the app ID associated with the removed permission set.|
+|alPermissionSetScope|Specifies the scope of the removed permission set.|
 |[See common custom dimensions](#other)||
 
 
-### Sample KQL code (Permission set removed from user)
+### Sample KQL code (permission set removed from user)
 
 This KQL code can help you get started analyzing when a permission set was removed from a user.
 
@@ -349,7 +356,7 @@ Occurs when a permission set is assigned to a user group.
 |alUserGroupId|Specifies the ID of the user group that the permission set was assigned to.|
 |[See common custom dimensions](#other)||
 
-### Sample KQL code (Permission set assigned to user group)
+### Sample KQL code (permission set assigned to user group)
 
 This KQL code can help you get started analyzing when a permission set was assigned to a user group.
 
@@ -397,7 +404,7 @@ Occurs when a permission set is removed from a user.
 |[See common custom dimensions](#other)||
 
 
-### Sample KQL code (Permission set removed from user group)
+### Sample KQL code (permission set removed from user group)
 
 This KQL code can help you get started analyzing when a permission set was removed from a user group.
 
@@ -424,7 +431,7 @@ traces
 ```
 
 
-## <a name="permissionsetchangedbyapp"></a>Permission set changed by an extension.
+## <a name="permissionsetchangedbyapp"></a>Permission set changed by an extension
 
 Occurs when a permission set was changed by an app/extension at install/update time.
 
@@ -443,7 +450,7 @@ Occurs when a permission set was changed by an app/extension at install/update t
 |extensionName|Specifies the name of the app/extension that changed the permission set.|
 |extensionId|Specifies the id of the app/extension that changed the permission set.|
 |extensionVersion|Specifies the version of the app/extension that changed the permission set.|
-|extensionpublisher|Specifies the publisher of the app/extension that changed the permission set.|
+|extensionPublisher|Specifies the publisher of the app/extension that changed the permission set.|
 |permissionSetExtensionObjectId|Specifies the object ID for the permission set extension that changed the permission set.|
 |permissionSetExtensionObjectName|Specifies the name of the object for the permission set extension that changed the permission set.|
 |permissionSetId|Specifies the ID of the permission set that was changed.|
@@ -457,7 +464,7 @@ This KQL code can help you get started analyzing changes to permission sets.
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where customDimensions.eventId == 'RT0011'
+| where customDimensions.eventId == 'LC0058'
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -469,25 +476,16 @@ traces
 , extensionName = customDimensions.extensionName
 , extensionVersion = customDimensions.extensionVersion
 , extensionPublisher = customDimensions.extensionPublisher
-// in which object
-, alObjectId = customDimensions.alObjectId
-, alObjectName = customDimensions.alObjectName
-, alObjectType = customDimensions.alObjectType
-// what did the user do
-, documentFormat = customDimensions.documentFormat   // documentFormat dimension added in version 20.0
-, LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
-, LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
-, LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
-, reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
-, reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
-// which user ran the report
+// which permission set extension changed which permission set
+, permissionSetExtensionObjectId = customDimensions.permissionSetExtensionObjectId
+, permissionSetExtensionObjectName = customDimensions.permissionSetExtensionObjectName
+, permissionSetId = customDimensions.permissionSetId
+, permissionSetName = customDimensions.permissionSetName
+// which user initiated the operation
 , usertelemetryId = case(
   toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry ID was introduced in the platform in version 20.0
 , 'N/A'
 )
-// why was the report cancelled
-, cancelReason = tostring( customDimensions.cancelReason )
-, alStackTrace = customDimensions.alStackTrace
 ```
 
 

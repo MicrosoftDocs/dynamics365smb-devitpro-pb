@@ -1,12 +1,13 @@
 ---
-title: Cloud Migration Prerequisites for Dynamics GP
-description: This article outlines requirements on the Dynamics GP on-premises and online environments for cloud migration.
+title: Dynamics GP Migration Prerequisites for Business Central
+description: Check Dynamics GP source database, SQL Server, Business Central permissions, migration apps, and integration runtime requirements before cloud migration.
 author: jswymer 
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: article
-ms.date: 02/29/2024
+ms.date: 11/17/2026
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Cloud migration prerequisites for Dynamics GP
@@ -15,13 +16,13 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
 
 ## Destination online environment
 
-- Customer has a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant  
+- The customer has a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant.
 
-- At least one user has *SUPER* permissions in the target company in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
+- At least one user has the **SUPER** permission set in the target company in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-  Users assigned with *SUPER* permissions are the only users who can make changes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online target company. Users who don't have *SUPER* permissions are automatically reassigned to the intelligent cloud user group, which limits them to read-only access to data. Learn more in [Working with environments during cloud migration](migrate-business-central-on-premises.md#working-with-environments-during-cloud-migration). 
+  Dynamics GP migration retains existing Business Central user permissions. Users aren't automatically reassigned to the **Intelligent Cloud** permission set. Review access and restrict data entry in the target companies until migration is complete. Learn more in [Working with environments during cloud migration](migrate-gp-overview.md#working-with-environments-during-cloud-migration).
 
-  If you're the person who sets up and runs the cloud migration, you must have *SUPER* permissions and admin role in Microsoft admin center. If you're running cloud migration as a delegated admin, a Business Central user with *SUPER* permissions has to grant you permission. The permission is granted when you try to run the **Cloud Migration Setup**. Learn more in [About delegated administrators](migration-setup.md#about-delegated-administrators).
+  If you set up and run cloud migration, you must have the **SUPER** permission set. If you're running cloud migration as a delegated administrator, a licensed Business Central user with **SUPER** must grant consent. Learn more in [About delegated administrators](migration-setup-gp.md#about-delegated-administrators).
 
 - Install the Business Central migration apps 
 
@@ -48,32 +49,32 @@ This article outlines requirements on the [!INCLUDE [dyn_gp_prod](../includes/dy
 
 - Database
 
-  <!--The database can be hosted on SQL Server or Azure SQL Database.-->  
-
   The database can be hosted on SQL Server. The SQL Server database must meet the following requirements:
   - Uses SQL Server 2016 SP1 or later.
   - Compatibility level set to 130 or higher.
-  - TCP/IP is enabled. Learn more in [Enable or Disable a Server Network Protocol](/sql/database-engine/configure-windows/enable-or-disable-a-server-network-protocol) in the SQL Server documentation. 
+  - TCP/IP is enabled. Learn more in [Enable or disable a server network protocol](/sql/database-engine/configure-windows/enable-or-disable-a-server-network-protocol) in the SQL Server documentation.
   - Configured for SQL Server authentication.
 
     > [!IMPORTANT]
-    > The login account used for SQL server authentication must have the **sysadmin** role on the server level and **db_owner** role on the database level.
+    > The login account used for SQL Server authentication must have the **sysadmin** role at the server level and the **db_owner** role at the database level.
 
-### Is a data upgrade needed?
+<a name="is-a-data-upgrade-needed"></a>
+### Choose a SQL Server edition
 
 A cloud migration can be performed either on a live system or from a backup. 
  
-- For a migration from a live system, the database is running a production workload and must therefore use a nondeveloper SKU of SQL Server. So if you're running your [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] production environment on a SQL Server version 2014 or earlier, you need to upgrade the database before starting your cloud migration project. You might want to consider using an Azure SQL Managed Instance resource as a stepping stone. This type of Azure SQL database allows for importing a database backup and also supports most of the on-premises features of SQL Server. 
+- For a migration from a live system, use a SQL Server edition licensed for production workloads. If you're running your [!INCLUDE [dyn_gp_prod](../includes/dyn_gp_prod.md)] production environment on SQL Server 2014 or earlier, upgrade SQL Server before starting your cloud migration project.
  
-- For a migration from a backup, you can just restore the backup using a SQL Server 2022 (or later) developer edition and run the migration project from there, as long as you don't use that SQL Server for other workloads.
+- For a migration from a backup, restore the GP databases to a SQL Server instance that meets the migration prerequisites. Choose an edition licensed for the intended workload. SQL Server Developer edition is licensed for development and testing, not production. Don't assume that using an instance only as a migration source makes it eligible for Developer edition. Learn more in [Editions and supported features of SQL Server 2022](/sql/sql-server/editions-and-components-of-sql-server-2022).
 
 
-## Other
+<a name="other"></a>
+## Integration runtime requirements
 
-- Self-hosted integration runtime machine (local on-premises database only; not Azure Database Server)
+- Self-hosted integration runtime machine
 
-   The computer from which you'll run the cloud migration and self-hosted integration runtime should meet the requirements described at [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime?tabs=data-factory#prerequisites).
+   The computer that hosts the runtime must meet the requirements in [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime?tabs=data-factory#prerequisites).
 
 ## Next steps
 
-- [Migrate Dynamics GP Data to the Cloud](migrate-dynamics-gp.md)  
+- [Dynamics GP data migrated to Business Central online](migrate-dynamics-gp.md)

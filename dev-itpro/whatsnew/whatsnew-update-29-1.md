@@ -50,10 +50,10 @@ No updates
 
 ## Business Central roadmap
 
-Explore upcoming Business Central features and their estimated release dates in the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap). Plans and dates can change, and entries are removed when features become generally available, are canceled, or are postponed.
+Explore upcoming Business Central features and their estimated release dates in the [Microsoft Copilot Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5B%22Dynamics+365+Business+Central%22%5D#Roadmap). Plans and dates can change, and entries are removed when features become generally available, are canceled, or are postponed.
 
 > [!NOTE]
-> The AI at Work roadmap replaced Business Central release plans in September 2026. Previous [release plans](/dynamics365/release-plans/) remain available for historical reference. Learn more about [the roadmap changes](https://aka.ms/ReleasePlannerMigrationBlog).
+> The Microsoft Copilot Roadmap replaced Business Central release plans in September 2026. Previous [release plans](/dynamics365/release-plans/) remain available for historical reference. Learn more about [the roadmap changes](https://aka.ms/ReleasePlannerMigrationBlog).
 
 ## Upgrade to 29.1
 

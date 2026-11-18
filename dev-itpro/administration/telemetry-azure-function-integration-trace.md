@@ -1,29 +1,32 @@
 ---
 title:  Azure Function Integration Telemetry
-description: Learn about telemetry on Azure Function integrations with Business Central
+description: Analyze Azure Function integration telemetry in Business Central to monitor successful requests, failed requests, and OAuth authorization failures.
 author: KennieNP
-ms.topic: how-to
+ms.topic: reference
+ai-usage: ai-assisted
 ms.devlang: al
 ms.search.keywords: administration, tenant, telemetry
-ms.date: 08/16/2022
+ms.date: 11/17/2026
 ms.author: kepontop
 ms.reviewer: jswymer
 ---
-# Analyzing Azure Function Integration Telemetry
+# Analyzing Azure Function integration telemetry
 
 Azure Function integration telemetry gathers data about the success or failure of calls from Business Central to Azure Functions using the [Azure Function module](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function) in the System Application.
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
+These events use `TelemetryScope::All`. Successful requests use normal verbosity (`severityLevel` **1**). Failed requests and authorization failures use error verbosity (`severityLevel` **3**).
+
 ## Custom dimensions available in all events
 
-The following dimensions are available in all events described below and not included in the individual event documentation:
+The following dimensions can be available in all events described below and aren't included in the individual event documentation. Some dimensions depend on the environment or the session's permissions.
 
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alCountryCode| [!INCLUDE[environmentType](../includes/include-telemetry-dimension-country-code.md)] |
-|alFunctionHost| The base URL for the Azure function called from Business Central |
+|alFunctionHost| The host name of the Azure function called from Business Central, without the URL scheme or path. |
 |alIsAdmin| [!INCLUDE[environmentType](../includes/include-telemetry-dimension-is-tenant-admin.md)]|
 |alIsEvaluationCompany| [!INCLUDE[environmentType](../includes/include-telemetry-dimension-is-evaluation-company.md)] |
 |alTenantLicenseState | [!INCLUDE[environmentType](../includes/include-telemetry-dimension-tenant-license-state.md)] |
@@ -34,13 +37,13 @@ The following dimensions are available in all events described below and not inc
 
 ## Request sent to Azure function succeeded
 
-Occurs when a request to an Azure function hosted from the URL {alFunctionHost} succeeded.
+Occurs when a request to an Azure function on the host {alFunctionHost} succeeded.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Request sent to Azure function succeeded: {alFunctionHost}**|
+|message|**Request sent to Azure function succeeded**|
 
 ### Custom dimensions
 
@@ -56,7 +59,7 @@ Occurs when a request to an Azure function hosted from the URL {alFunctionHost} 
 -->
 ## Request sent to Azure function failed
 
-Occurs when a request to an Azure function hosted from the URL {alFunctionHost} failed.
+Occurs when a request to an Azure function on the host {alFunctionHost} failed.
 
 ### General dimensions
 |Dimension|Description or value|
@@ -96,7 +99,7 @@ traces
 
 ## Authorization failed to Azure function
 
-Occurs when the environment was scheduled to be updated, but it wasn't possible to start the update within the update window defined in the Business Central admin center. For more information about the update window in the admin center, see [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md).
+Occurs when OAuth authentication with a client secret or certificate doesn't return an access token for the Azure function.
 
 ### General dimensions
 
@@ -109,7 +112,8 @@ Occurs when the environment was scheduled to be updated, but it wasn't possible 
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**AL0000I75**|
-|alErrorText|The reason for the failure.|
+|alErrorText|**Authorization failed to Azure function: {alFunctionHost}**|
+|alEventName|**Acquiring token**|
 
 ### Sample KQL code
 This KQL code can help you get started analyzing and alerting on failures to authorize to Azure functions:

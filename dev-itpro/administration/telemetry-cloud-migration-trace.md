@@ -1,14 +1,15 @@
 ---
-title: Analyzing Cloud migration trace telemetry
-description: Learn about cloud migration telemetry for Dynamics 365 Business Central  
+title: Analyze Business Central Cloud Migration Trace Telemetry
+description: Analyze cloud migration trace telemetry in Business Central to monitor replication, companion table repair, data upgrades, and migration disablement.
 author: jobulsin
-ms.topic: concept-article
+ms.topic: reference
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, cloud migration
-ms.date: 05/12/2023
+ms.date: 11/17/2026
 ms.author: jobulsin
 ms.reviewer: jswymer
 
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Analyzing cloud migration trace telemetry
@@ -21,7 +22,7 @@ Cloud migration telemetry gathers data about the success or failure of the follo
 - Cloud migration setup
 - Data upgrade 
 
-Failed operations result in a trace log entry that includes a reason for the failure.
+Use failure details, where provided, to investigate unsuccessful operations.
 
 ## Replication run started
 
@@ -44,10 +45,13 @@ Occurs when a replication run starts.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000K0J**|
+|alCategory|**CloudMigration**.|
+|alReplicationType|The type of replication run: **Data Replication**, **Azure Data Lake**, or **Diagnostic**.|
+|alSourceProduct|The product ID configured for cloud migration.|
 
 ## Replication run completed
 
-Occurs when a replication run completes successfully.
+Occurs when a replication run completes, including when tables have failed. If tables have failed, the **AL0000K0I** event is also emitted.
 
 ### General dimensions
 
@@ -61,10 +65,14 @@ Occurs when a replication run completes successfully.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|component|[!INCLUDE[include-telemetry-dimension-component-server](../includes/include-telemetry-dimension-component-server.md)]|
 |componentVersion|[!INCLUDE[include-telemetry-dimension-component-version](../includes/include-telemetry-dimension-component-version.md)]|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000K0H**|
+|alCategory|**CloudMigration**.|
+|alReplicationType|The type of replication run: **Data Replication**, **Azure Data Lake**, or **Diagnostic**.|
+|alSourceProduct|The product ID configured for cloud migration, if the setup record is available.|
 
 ## Replication run completed with failed tables
 
@@ -87,6 +95,12 @@ Occurs when a replication run completes with failed tables.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000K0I**|
+|alCategory|**CloudMigration**.|
+|alReplicationType|The type of replication run: **Data Replication**, **Azure Data Lake**, or **Diagnostic**.|
+|alSourceProduct|The product ID configured for cloud migration, if the setup record is available.|
+|alHasFailures|**true**. Indicates that the replication run has failed tables.|
+|alNumberOfFailedTables|The number of tables that failed in the replication run.|
+|alDetails|Additional details from the replication run summary.|
 
 ## Companion table repair scheduled
 
@@ -109,6 +123,7 @@ Occurs when a companion table repair is scheduled.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000FXC**|
+|alCategory|**CloudMigration**. Use this dimension to distinguish the cloud migration event from other events with the same ID.|
 
 ## Companion table repair started
 
@@ -118,7 +133,7 @@ Occurs when a companion table repair is started.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Companion Table repair started.**|
+|message|**Companion table repair started.**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -131,6 +146,7 @@ Occurs when a companion table repair is started.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000FJ1**|
+|alCategory|**CloudMigration**.|
 
 ## Companion table repair completed successfully
 
@@ -153,6 +169,7 @@ Occurs when a companion table repair has succeeded.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000FJ4**|
+|alCategory|**CloudMigration**.|
 
 ## Cloud migration data upgrade scheduled
 
@@ -175,6 +192,8 @@ Occurs when a data upgrade has been scheduled.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000K0K**|
+|alCategory|**CloudMigration**.|
+|alSourceProduct|The product ID configured for cloud migration, if the setup record is available.|
 
 ## Environment data upgrade operation started
 
@@ -196,7 +215,7 @@ Occurs when a data upgrade operation on an environment is started.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0175**|
+|eventId|`LC0175`|
 
 ## Environment data upgrade operation completed successfully
 
@@ -217,7 +236,7 @@ Occurs when a data upgrade operation on an environment has completed successfull
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0176**|
+|eventId|`LC0176`|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 ## Environment data upgrade operation failed
@@ -239,13 +258,13 @@ Occurs when a data upgrade operation on an environment has failed.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0177**|
+|eventId|`LC0177`|
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 ## Recovery from a failed data upgrade operation has completed successfully
 
-Occurs when recovery operation that's run after a failed data upgrade operation has completed successfully.
+Occurs when a recovery operation that's run after a failed data upgrade operation has completed successfully.
 
 ### General dimensions
 
@@ -262,12 +281,12 @@ Occurs when recovery operation that's run after a failed data upgrade operation 
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0178**|
+|eventId|`LC0178`|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 ## Recovery from a failed data upgrade operation has failed
 
-Occurs when recovery operation that's run after a failed data upgrade operation has also failed.
+Occurs when a recovery operation that's run after a failed data upgrade operation has also failed.
 
 ### General dimensions
 
@@ -284,19 +303,19 @@ Occurs when recovery operation that's run after a failed data upgrade operation 
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
-|eventId|**LC0179**|
+|eventId|`LC0179`|
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
 ## Cloud migration disabled
 
-Occurs when cloud migration was disabled for a company.
+Occurs when cloud migration is disabled for the environment.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Cloud migration has been disabled from company {companyname}.**<br /><br />`{companyName}` indicates the name of the company from which cloud migration was disabled.|
+|message|**Cloud migration has been disabled.**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -309,6 +328,10 @@ Occurs when cloud migration was disabled for a company.
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000IGC**|
+|alCategory|**CloudMigration**.|
+|alDisabledReason|The reason recorded in the cloud migration setup: **Abandoned**, **Completed**, **Paused**, or an empty value if no reason is available.|
+|alDisabledReasonDescription|The reason text supplied when cloud migration is disabled.|
+|alSourceProduct|The product ID configured for cloud migration, if the setup record is available.|
 
 ## Related information
 

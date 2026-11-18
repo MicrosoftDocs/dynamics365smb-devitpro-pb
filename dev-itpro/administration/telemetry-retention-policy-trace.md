@@ -1,11 +1,12 @@
 ---
-title: Analyzing retention policy trace telemetry
-description: Learn about the telemetry for retention policies in Business Central  
+title: Retention Policy Trace Telemetry Reference
+description: Analyze retention policy telemetry in Business Central to monitor policy log entries, deleted records, and when policies are enabled or disabled.
 author: jswymer
-ms.topic: concept-article
+ms.topic: reference
+ai-usage: ai-assisted
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 12/27/2023
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -16,7 +17,7 @@ ms.reviewer: jswymer
 
 Administrators define retention policies to specify how frequently they want [!INCLUDE[prod_short](../includes/prod_short.md)] to delete outdated data in tables that contain log entries and archived records. For example, cleaning up log entries makes it easier to work with the data that's relevant. Policies can include all data in the tables that is past the expiration date. Or you can add filter criteria to include only certain expired data in the policy.
 
-To gather this telemetry data, you have to set up retention policies on tables that contain log entries and archived records. For more information, see [Define Retention Policies](/dynamics365/business-central/admin-data-retention-policies) in the Application help.
+To gather this telemetry data, you have to set up retention policies on tables that contain log entries and archived records. Learn more in [Define Retention Policies](/dynamics365/business-central/admin-data-retention-policies) in the Application help.
 
 Telemetry is then logged for the following operations:
 
@@ -26,7 +27,9 @@ Telemetry is then logged for the following operations:
 - A retention policy is applied, either manually or automatically
 - Data is deleted because of a retention policy
 - The first retention policy is enabled on a table in a company
-- The last retention policy is removed in a company
+- The last enabled retention policy is disabled or deleted in a company
+
+These events use `TelemetryScope::All` and the `OrganizationIdentifiableInformation` data classification.
 
 ## <a name="info"></a>Retention policy log entry logged
 
@@ -37,7 +40,7 @@ Occurs when a retention policy is enabled, applied, or disabled. It provides inf
 |Dimension|Description or value|
 |---------|-----|
 |message|**Retention Policy Log Entry Logged: {alMessageType}**|
-|severityLevel|**1** for error, **2** for warning, **3** for info|
+|severityLevel|**3** for error, **2** for warning, **1** for info|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
@@ -48,7 +51,7 @@ Occurs when a retention policy is enabled, applied, or disabled. It provides inf
 |alCategory|Specifies the aspect of the retention policy that created the log entry. For example, it can be related to setup, the retention period, and when the policy was applied. Some of the values are: **Retention Policy - Setup**, **Retention Policy - Apply**, **Retention Policy - Schedule**, **Retention Policy - Allowed Tables**.|
 |alCompanyName|Specifies the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that the retention policy applies to.|
 |alLogEntry|Specifies message about the retention policy execution step, for example: Table 405 Change Log Entry was added to the list of allowed tables. Default Date Field No.: 2000000001|
-|alMessageType|Specifies the message type for the log entry: <ul><li>**Error** - indicates an error occurred and the operation was unsuccessful</li><li>**Warning** - indicates that the operation succeeded but there's a warning</li><li> **Info** - indicates that the operation was successful.|
+|alMessageType|Specifies the message type for the log entry: <ul><li>**Error**: Indicates an error occurred.</li><li>**Warning**: Indicates a warning condition.</li><li>**Info**: Provides information about the operation.</li></ul>|
 
 
 <a name="other"></a>**Common custom dimensions**
@@ -60,15 +63,15 @@ The following table explains other custom dimensions that are common to all rete
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
-|alDataClassification|**SystemMetadata**|
-|alObjectId|**3912**, which is the ID of the **Reten. Policy Telemetry Imp.** codeunit.|
-|alObjectName|**Reten. Policy Telemetry Impl.**|
-|alObjectType|**Codeunit**|
+|environmentName|Specifies the name of the tenant environment. Learn more in [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
+|alDataClassification|**OrganizationIdentifiableInformation**|
+|alObjectId|**3912**, which is the ID of the `Reten. Policy Telemetry Impl.` codeunit.|
+|alObjectName|`Reten. Policy Telemetry Impl.`|
+|alObjectType|**CodeUnit**|
 |extensionId|Specifies the ID of the system application: **63ca2fa4-4f03-4f2b-a480-172fef340d3f**.|
 |extensionName|**System Application**|
 |extensionVersion|Specifies the version of the system application.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
@@ -81,7 +84,7 @@ The following table explains other custom dimensions that are common to all rete
 
 ## <a name="deleted"></a>Records deleted using retention policy
 
-Occurs when a record is deleted by a retention policy.
+Occurs when a batch of records is deleted by a retention policy.
 
 ### General dimensions
 
@@ -129,7 +132,7 @@ Occurs when the first retention policy is enabled in a company.
 
 ## <a name="last"></a>Last retention policy disabled on company
 
-Occurs when the last retention policy is disabled in a company.
+Occurs when the last enabled retention policy is disabled or deleted in a company.
 
 ### General dimensions
 
@@ -145,8 +148,8 @@ Occurs when the last retention policy is disabled in a company.
 |---------|-----|
 |eventId|**AL0000D6J**|
 |alCompanyName|Specifies the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that the retention policy applies to.|
-|alTableName| Specifies the name of the table from which the records were deleted.|
-|alTableNo|Specifies the ID of the table from which the records were deleted.|
+|alTableName|Specifies the name of the table whose retention policy was disabled or deleted.|
+|alTableNo|Specifies the ID of the table whose retention policy was disabled or deleted.|
 |[See common custom dimensions](#other)||
 
 <!--

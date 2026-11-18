@@ -1,20 +1,23 @@
 ---
 title: Analyzing Long Running AL Methods Telemetry
-description: Learn about analyzing long running AL methods in Business Central.  
+description: Analyze long-running AL method telemetry in Business Central to identify slow extension code, examine execution times, and troubleshoot performance issues.
 author: jswymer
 ms.topic: concept-article
 ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/14/2025
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Analyzing long running AL methods telemetry
 
 [!INCLUDE[prod_short](../includes/2020_releasewave2.md)], version 17.1. Available in extension telemetry starting with version 18.1.
 
-The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, including the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
+The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, including the time spent in the database. Through version 28, the signal also includes extension execution metrics, including event subscriber counts. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
+
+Starting with version 29, the `extensionInfo` dimension is empty. The long-running AL method event (`RT0018`) continues to include method execution times and SQL metrics.
 
 <!--
 > [!NOTE]
@@ -34,15 +37,15 @@ The following table explains the general dimensions included in the trace. The t
 |severityLevel|**2**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
-## CustomDimensions
+## Custom dimensions
 
-This table describes the different dimensions of a **Operation exceeded time threshold (AL method)** operation.
+This table describes the different dimensions of an **Operation exceeded time threshold (AL method)** operation.
 
 |Column (key)|Description or value|
 |------------|---------------|
 |aadTenantId|Specifies the Microsoft Entra tenant ID when using Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |alMethod|The name of the long running AL method.|
-|alObjectId|The type of the AL object that executed the AL method.|
+|alObjectId|The ID of the AL object that executed the AL method.|
 |alObjectName|The name of the AL object that executed the AL method.|
 |alObjectType|The type of the AL object that executed the AL method.|
 |alStackTrace| [!INCLUDE[alStackTrace](../includes/include-telemetry-dimension-al-stacktrace.md)] |
@@ -50,18 +53,18 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that you update any queries that use these keys to use the new key name.|
 |environmentType|Specifies the environment type of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, such as Production or Sandbox.|
 |environmentName|Specifies the environment name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, such as Production or Sandbox.|
 |eventId|**RT0018**|
 |exclusiveTime|Specifies the execution time of the operation without the time where AL execution was suspended due to client callback (such as when waiting for user input.) The value has the format hh:mm:ss.sssssss. </br></br>Introduced in versions 21.6 and 22.1.|
 |executionTime|Specifies the total time that it took to execute the AL method. The value has the format hh:mm:ss.sssssss.|
-|extensionInfo|Specifies information about individual extensions that contributed to the execution time spent in the call stack up until the point at which the long-running threshold was exceeded and the trace was emitted. The following information is included for each extension:<ul><li>`id` -  the ID of the extension.</li><li>`extensionName` - the name of the extension.</li><li>`extensionVersion` - the version of the extension.</li><li>`extensionPublisher` - the publisher of the extension.</li><li>`subscriberExecutionCount` - the number of event subscribers executed in this extension.</li><li>`executionTime` - the total execution time in milliseconds for this extension in the call stack.</li></ul>|
-|extensionName|Specifies the name of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted. |
-|extensionPublisher|Specifies the publisher of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
-|extensionVersion|Specifies the version of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
-|extensionId|Specifies the ID of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
-|longRunningThreshold|Specifies the time that defines a long-running AL method, after which the trace is emitted. The value has the format hh:mm:ss.sssssss. |
+|extensionInfo|Through version 28, specifies execution metrics for individual extensions in the session when the trace is emitted at method exit. The following information is included for each extension:<ul><li>`id`: the ID of the extension.</li><li>`extensionName`: the name of the extension.</li><li>`extensionVersion`: the version of the extension.</li><li>`extensionPublisher`: the publisher of the extension.</li><li>`subscriberExecutionCount`: the number of event subscribers executed in this extension.</li><li>`executionTime`: the millisecond component of the accumulated execution time, not the total number of milliseconds.</li></ul>From version 29, this dimension is empty.|
+|extensionName|Specifies the name of the extension that contains the long-running AL method. |
+|extensionPublisher|Specifies the publisher of the extension that contains the long-running AL method.|
+|extensionVersion|Specifies the version of the extension that contains the long-running AL method.|
+|extensionId|Specifies the ID of the extension that contains the long-running AL method.|
+|longRunningThreshold|Specifies the AL function logging threshold included in the event. The value has the format hh:mm:ss.sssssss. The separate **AL Function Logging Threshold - Application Insights** setting determines whether the event is emitted to Application Insights.|
 |sqlExecutes|Specifies the number of SQL statements that was executed in the method.<br /><br />This dimension was introduced in Business Central 2023 release wave 1, version 22.0. |
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<br /><br />This dimension was introduced in Business Central 2023 release wave 1, version 22.0.  |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema. |
@@ -74,7 +77,7 @@ Use this KQL code if you want to analyze AL method performance.
 traces
 | where timestamp > ago(60d) // adjust as needed
 | where customDimensions.eventId == 'RT0018' 
-| where customDimensions.alObjectId > 0 // filter out internal server calls
+| where toint(customDimensions.alObjectId) > 0 // filter out internal server calls
 | project aadTenantId = customDimensions.aadTenantId
 , environmentName = customDimensions.environmentName
 , environmentType = customDimensions.environmentType
@@ -88,7 +91,7 @@ traces
 // exclusiveTime is the execution time of the operation, without the time where AL execution was suspended due to client callback
 , exclusiveTime = customDimensions.exclusiveTime // This dimension was introduced in Business Central 2023 release wave 1, version 22.1. Backported to version 21.6
 , exclusiveTimeInMS = toreal(totimespan(customDimensions.exclusiveTime))/10000 //the datatype for exclusiveTime is timespan 
-// exclusiveTime is the total time of the operation, including wait time due to client callback
+// executionTime is the total time of the operation, including wait time due to client callback
 , totalTime = customDimensions.executionTime
 , totalTimeInMS = toreal(totimespan(customDimensions.executionTime))/10000 //the datatype for executionTime is timespan 
 , extensionId = customDimensions.extensionId

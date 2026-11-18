@@ -1,11 +1,12 @@
 ---
-title: Analyzing financial report lifecycle trace telemetry
-description: Learn about the telemetry for financial report lifecycle telemetry in Azure Application Insights.  
+title: Analyzing Financial Report Lifecycle Trace Telemetry
+description: Analyze financial report lifecycle telemetry in Business Central to track changes, copies, imports, and exports of report, row, and column definitions.
 author: kennieNP
-ms.topic: concept-article
+ms.topic: reference
+ai-usage: ai-assisted
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/20/2025
+ms.date: 11/17/2026
 ms.author: kepontop
 ms.reviewer: jswymer
 ---
@@ -35,11 +36,15 @@ Financial report lifecycle telemetry gathers data about the following lifecycle 
 - Financial report definition imported
 - Financial report definition deleted
 
-Learn more about working with financial reporting in [Primary capabilities of financial reporting](/dynamics365/business-central/finance-financial-reporting-capabilities) of the [!INCLUDE[prod_short](../includes/prod_short.md)] Application Help.
+Learn more in [Primary capabilities of financial reporting](/dynamics365/business-central/finance-financial-reporting-capabilities) in the [!INCLUDE[prod_short](../includes/prod_short.md)] Application Help.
+
+These events use normal verbosity (`severityLevel` **1**) and `TelemetryScope::All`. The creation, modification, deletion, import, and export events documented here are emitted only in online environments. Copy events can also be emitted on-premises.
+
+Import and export operations share an event ID for each definition type. The sample queries also filter the message to distinguish these operations.
 
 ## General dimensions for all financial report lifecycle events
 
-The following table explains general dimensions that are common to all financial report usage events.
+The following table explains general dimensions that are common to all financial report lifecycle events.
 
 |Dimension|Description or value|
 |---------|-----|
@@ -47,7 +52,7 @@ The following table explains general dimensions that are common to all financial
 
 ## Common dimensions for all financial report lifecycle events
 
-The following table explains custom dimensions that are common to all financial report usage events. 
+The following table explains custom dimensions that are common to all financial report lifecycle events.
 
 |Dimension|Description or value|
 |---------|-----|
@@ -64,7 +69,7 @@ Occurs when a user creates a new financial report row definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report row definition created: {Row Definition Code}**|
+|message|**Financial Report Row Definition created: {Row Definition Code}**|
 
 ### Custom dimensions
 
@@ -103,7 +108,7 @@ Occurs when a user modifies a financial report row definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report row definition modified: {Row Definition Code}**|
+|message|**Financial Report Row Definition modified: {Row Definition Code}**|
 
 ### Custom dimensions
 
@@ -142,14 +147,14 @@ Occurs when a user copies a financial report row definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report row definition copied: {Row Definition Code}**|
+|message|**Financial Report Row Definition copied: {Row Definition Code}**|
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
 |alSourceRowDefinitionCode|The code of the row definition that was copied.|
-|alSourceRowDefinitionCode|The code of the copy of the row definition.|
+|alNewRowDefinitionCode|The code of the copy of the row definition.|
 |eventId|**AL0000OKV**|
 
 ### Sample KQL code (row definition copied)
@@ -170,7 +175,7 @@ traces
 , companyName = customDimensions.companyName
 // which definition was copied
 , sourceRowDefinitionCode = customDimensions.alSourceRowDefinitionCode
-, newRowDefinitionCode = customDimensions.alSourceRowDefinitionCode
+, newRowDefinitionCode = customDimensions.alNewRowDefinitionCode
 // which user did it
 , usertelemetryId = user_Id
 ```
@@ -183,7 +188,7 @@ Occurs when a user imports a financial report row definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report row definition imported: {Row Definition Code}**|
+|message|**Financial Report Row Definition imported: {Row Definition Code}**|
 
 ### Custom dimensions
 
@@ -200,8 +205,9 @@ This KQL code can help you get started analyzing import actions for financial re
 // Financial report row definition imported: {Row Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
-| where customDimensions has 'AL0000ONP' // event id collision
-| where customDimensions.eventId == 'AL0000ONP' // event id collision
+| where customDimensions has 'AL0000ONP'
+| where customDimensions.eventId == 'AL0000ONP'
+| where message startswith 'Financial Report Row Definition imported:'
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -222,7 +228,7 @@ Occurs when a user exports a financial report row definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report row definition exported: {Row Definition Code}**|
+|message|**Financial Report Row Definition exported: {Row Definition Code}**|
 
 ### Custom dimensions
 
@@ -239,8 +245,9 @@ This KQL code can help you get started analyzing export actions for financial re
 // Financial report row definition exported: {Row Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
-| where customDimensions has 'AL0000ONP' // event id collision
-| where customDimensions.eventId == 'AL0000ONP' // event id collision
+| where customDimensions has 'AL0000ONP'
+| where customDimensions.eventId == 'AL0000ONP'
+| where message startswith 'Financial Report Row Definition exported:'
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -261,7 +268,7 @@ Occurs when a user deletes a financial report row definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report row definition deleted: {Row Definition Code}**|
+|message|**Financial Report Row Definition deleted: {Row Definition Code}**|
 
 ### Custom dimensions
 
@@ -300,7 +307,7 @@ Occurs when a user creates a new financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report column definition created: {Column Definition Code}**|
+|message|**Financial Report Column Definition created: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -339,7 +346,7 @@ Occurs when a user modifies a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report column definition modified: {Column Definition Code}**|
+|message|**Financial Report Column Definition modified: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -378,7 +385,7 @@ Occurs when a user copies a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report column definition copied: {Column Definition Code}**|
+|message|**Financial Report Column Definition copied: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -419,7 +426,7 @@ Occurs when a user imports a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report column definition imported: {Column Definition Code}**|
+|message|**Financial Report Column Definition imported: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -436,8 +443,9 @@ This KQL code can help you get started analyzing import actions of financial rep
 // Financial report column definition imported: {Column Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
-| where customDimensions has 'AL0000ONQ' // event id collision
-| where customDimensions.eventId == 'AL0000ONQ' // event id collision
+| where customDimensions has 'AL0000ONQ'
+| where customDimensions.eventId == 'AL0000ONQ'
+| where message startswith 'Financial Report Column Definition imported:'
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -458,7 +466,7 @@ Occurs when a user exports a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report column definition exported: {Column Definition Code}**|
+|message|**Financial Report Column Definition exported: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -475,8 +483,9 @@ This KQL code can help you get started analyzing exports of financial report col
 // Financial report column definition exported: {Column Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
-| where customDimensions has 'AL0000ONQ' // event id collision
-| where customDimensions.eventId == 'AL0000ONQ' // event id collision
+| where customDimensions has 'AL0000ONQ'
+| where customDimensions.eventId == 'AL0000ONQ'
+| where message startswith 'Financial Report Column Definition exported:'
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -497,7 +506,7 @@ Occurs when a user deletes a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report column definition deleted: {Column Definition Code}**|
+|message|**Financial Report Column Definition deleted: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -536,7 +545,7 @@ Occurs when a user creates a new financial report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report definition created: {Report Definition Code}**|
+|message|**Financial Report created: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -575,7 +584,7 @@ Occurs when a user takes a copy of a financial report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report definition copied: {Report Definition Code}**|
+|message|**Financial Report Definition copied: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -616,7 +625,7 @@ Occurs when a user imports a financial report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report definition imported: {Report Definition Code}**|
+|message|**Financial Report Definition imported: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -633,8 +642,9 @@ This KQL code can help you get started analyzing imports of financial report def
 // Financial report definition imported: {Report Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
-| where customDimensions has 'AL0000ONR' // event id collision
-| where customDimensions.eventId == 'AL0000ONR' // event id collision
+| where customDimensions has 'AL0000ONR'
+| where customDimensions.eventId == 'AL0000ONR'
+| where message startswith 'Financial Report Definition imported:'
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -655,7 +665,7 @@ Occurs when a user exports a financial report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report definition exported: {Report Definition Code}**|
+|message|**Financial Report Definition exported: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -672,8 +682,9 @@ This KQL code can help you get started analyzing export actions of financial rep
 // Financial report definition exported: {Report Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
-| where customDimensions has 'AL0000ONR' // event id collision
-| where customDimensions.eventId == 'AL0000ONR' // event id collision
+| where customDimensions has 'AL0000ONR'
+| where customDimensions.eventId == 'AL0000ONR'
+| where message startswith 'Financial Report Definition exported:'
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
@@ -694,7 +705,7 @@ Occurs when a user modifies a financial report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report definition modified: {Report Definition Code}**|
+|message|**Financial Report modified: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -733,7 +744,7 @@ Occurs when a user deletes a financial report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial report definition deleted: {Report Definition Code}**|
+|message|**Financial Report deleted: {Report Definition Code}**|
 
 ### Custom dimensions
 

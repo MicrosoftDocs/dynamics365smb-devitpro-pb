@@ -1,27 +1,28 @@
 ---
-title: "Monitoring SQL Database Locks"
-description: Read about database locks for Business Central on-premises.
+title: "Monitoring SQL Database Locks in Business Central"
+description: Monitor database locks in Business Central to identify affected tables, SQL sessions, and AL code, and investigate transactions that block other users.
 ms.custom: bap-template
-ms.date: 04/01/2021
+ms.date: 11/17/2026
 ms.reviewer: jswymer
 ms.topic: concept-article
 author: jswymer
+ai-usage: ai-assisted
 ---
-# Monitoring SQL Database Locks
+# Monitoring SQL database locks
 
-## About Locks
+## About database locks
 
-Locking controls access to the same data at the same time by multiple users. To protect a transaction from another transaction modifying the same data, the first transaction puts a lock on the data. The lock remains until the transactions is done.
+Locking controls access to the same data at the same time by multiple users. To protect a transaction from another transaction modifying the same data, the first transaction puts a lock on the data. The lock remains until the transaction is done.
 
-When a database lock occurs, concurrent transactions are limited in their access to the affected data resource. The limit is determined by the locking mode set by SQL Server. In the client, depending on the locking mode, users may be blocked from completing transactions on the locked data. If so, they'll typically get a message that indicates lock condition.
+When a database lock occurs, concurrent transactions are limited in their access to the affected data resource. The limit is determined by the locking mode set by SQL Server. In the client, depending on the locking mode, users may be blocked from completing transactions on the locked data. If so, they'll typically get a message that indicates a lock condition.
 
-For general information about database locks in SQL Server, see [Transaction Locking and Row Versioning Guide](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide).
+Learn more about database locks in SQL Server in [Transaction Locking and Row Versioning Guide](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide).
 
-## View Database Locks
+## View database locks
 
-To view database locks, open page **9511 Database Locks** in the client.
+To view database locks, open the **Database Locks** page, which has the ID **9511**, in the client.
 
-The **Database Locks** page gives a snapshot of all current database locks in SQL Server. It provides information like the table and database resource affected by the lock. Or, the AL object or method that ran the transaction that caused the lock. These details can help you better understand the locking condition. For an explanation about the fields shown, use the tooltips on the page or refer to [sp_lock (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-lock-transact-sql)
+The **Database Locks** page gives a snapshot of database lock requests for the current database. Intent and schema locks are excluded. It provides information like the table and database resource affected by the lock. It also shows the AL object or method associated with the lock, when that information is available. These details can help you better understand the locking condition. For an explanation about the fields shown, use the tooltips on the page. Learn more about the underlying lock information in [sys.dm_tran_locks (Transact-SQL)](/sql/relational-databases/system-dynamic-management-views/sys-dm-tran-locks-transact-sql).
 
 > [!TIP]
 > If you are running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Fall 2018 or earlier, you'll have to use the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]. On the **Tools** menu, choose **Debugger**, and then choose **Database Locks**.
@@ -37,7 +38,7 @@ The **Database Locks** page gives a snapshot of all current database locks in SQ
 |Executing AL Object Id|Specifies the ID of the object that is running.|
 |Executing AL Method|Specifies the AL function that is running the transaction that caused the lock.|
 -->
-##  See Also
+## Related information
 
 [Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks)  
 [Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md)

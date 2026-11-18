@@ -1,22 +1,23 @@
 ---
-title: Analyzing Error Message Vote Telemetry | Microsoft Docs
-description: Learn about error message vote telemetry in Business Central  
+title: Analyzing Error Message Vote Telemetry
+description: Analyze error message vote telemetry in Business Central to find messages users consider unhelpful and investigate the associated errors and extensions.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/22/2022
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
-# Analyzing Error Message Quality Telemetry
+# Analyzing error message quality telemetry
 
 **APPLIES TO:** [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
 When a user gets an error message in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] while working in the application, the message includes a yes or no question as to whether the message was helpful, similar to the following illustration:
 
-![Shows the error dialog and the voting actions, Yes and No, about the helpfulness of the message.](../developer/media/error-voting.png )
+:::image type="content" source="../developer/media/error-voting.png" alt-text="Shows the error dialog and the voting actions, Yes and No, about the helpfulness of the message.":::
 
 If a user selects either **Yes** or **No**, a signal is emitted and recorded in [!INCLUDE[azure-appinsights-name](../includes/azure-appinsights-name.md)]. This information can help partners and developers get insight into error messages that users find hard to understand. They can then follow up with the customer to help out.
 
@@ -33,7 +34,7 @@ The following table explains the general dimensions included in the trace. The t
 |Dimension|Description or value|
 |---------|--------------------|
 |message| **User gave feedback on error message: [OK\|Not OK]** |
-|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br><br>Data in user_Id from the **User** card was introduced in version 24 for page view telemetry.  |
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 <!-- removed by request |severityLevel|**3**| -->
 
@@ -45,17 +46,17 @@ The following table explains the custom dimensions included in the trace.
 |---------|-----|
 |eventId|**CL0002**|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|alObjectId|Specifies the ID of the AL object that threw the error.|
-|alObjectName|Specifies the ID of the AL object that threw the error.|
-|alObjectType|Specifies the ID of the AL object that threw the error.|
+|alObjectId|Specifies the page ID in the client context where feedback was submitted. For an error dialog, this value can be `-1`.|
+|alObjectName|Specifies the page name in the client context where feedback was submitted, such as `Dialog`.|
+|alObjectType|`Page`|
 |alStackTrace|Specifies the stack trace in AL code for the error.|
 |appId|Specifies the ID of the extension that threw the error.|
 |appName|Specifies the name of the extension that threw the error.|
 |appVersion|Specifies the version of the extension that threw the error.|
-|component|**Dynamics 365 Business Central Server**|
+|component|**Dynamics 365 Business Central Client**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentName|Specifies the name of the tenant environment. This dimension isn't included with Business Central on-premises. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|Specifies the name of the tenant environment. This dimension isn't included with Business Central on-premises. Learn more in [Managing environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. Learn more in [Environment types](tenant-admin-center-environments.md#types-of-environments).|
 |errorMessage|Specifies the error shown to the user.|
 |exceptionId|Specifies the GUID assigned to the error.|
 |userFeedback|Specifies what the user voted, which can be either **Yes** or **No**.|

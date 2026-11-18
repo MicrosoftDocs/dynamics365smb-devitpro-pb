@@ -1,11 +1,12 @@
 ---
-title: Analyzing Changelog Configuration Changes Telemetry
-description: Learn about the telemetry for monitoring changes to changelog configuration in Business Central  
+title: Analyzing Changelog Configuration Changes Trace Telemetry
+description: Analyze changelog configuration telemetry in Business Central to identify fields added to tracking, logging changes, and fields removed from tracking.
 author: kennienp
-ms.topic: concept-article
+ms.topic: reference
+ai-usage: ai-assisted
 
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
-ms.date: 10/23/2023
+ms.date: 11/17/2026
 ms.author: kepontop
 ms.reviewer: jswymer
 ---
@@ -16,12 +17,14 @@ ms.reviewer: jswymer
 
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] changelog feature lets you track direct modifications a user makes to data in the database. You specify each table and field that you want the system to log, and then you activate the changelog. The changelog is based on changes that are made to data in the tables that you track. 
 
-For more information about the changelog feature, see [Auditing changes in Business Central](/dynamics365/business-central/across-log-changes).
+Learn more in [Auditing changes in Business Central](/dynamics365/business-central/across-log-changes).
 
 Telemetry is logged for the following changes to the configuration of the changelog:
 - When a field is added to be tracked in the changelog.
 - When changelog configuration for a field is changed.
-- When a field is removed for being tracked in the changelog.
+- When a field is removed from tracking in the changelog.
+
+These events use normal verbosity (`severityLevel` **1**) and `TelemetryScope::All`. Their `alCategory` dimension is `Change Log`.
 
 ## <a name="added"></a>Field added to changelog configuration
 
@@ -145,7 +148,7 @@ traces
 
 ## <a name="removed"></a>Field removed from changelog configuration
 
-Occurs when a field is removed for being tracked in the changelog.
+Occurs when a field is removed from tracking in the changelog.
 
 ### General dimensions
 
@@ -166,6 +169,9 @@ Occurs when a field is removed for being tracked in the changelog.
 |alTableCaption| Specifies the name of the table where the changed field is included. |
 |alFieldNumber | Specifies the ID of the field to no longer be logged. |
 |alFieldCaption| Specifies the name of the field to no longer be logged.|
+|alLogInsertion| Were insertions logged for the removed field? (**Yes** or **No**) |
+|alLogModification| Were data modifications logged for the removed field? (**Yes** or **No**) |
+|alLogDeletion| Were deletions logged for the removed field? (**Yes** or **No**) |
 
 
 ### Sample KQL code (field removed)

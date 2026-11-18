@@ -1,8 +1,9 @@
 ---
 author: jswymer
 ms.topic: include
-ms.date: 09/28/2021
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
-For example, an extension extends a table in the base application. In SQL Server, the table doesn't contain the data from the base app table for some reason. In this example, the **Cloud Migration Management** page shows the table as not migrated, and the page that renders the table is blank. The solution is to verify on-premises that the table with the table extension contains the same count of records as the table for the base app table.
+For example, an extension extends a table in the base application, but records are missing from the extension's companion table in SQL Server. In this case, the **Cloud Migration Management** page can show the table as not migrated, and the page that displays the data can appear blank. Verify on-premises that the companion table contains a corresponding record for each record in the base application table. If records were copied but don't appear in the online user interface, use **Repair companion table records** on the **Cloud Migration Management** page to insert missing companion records.

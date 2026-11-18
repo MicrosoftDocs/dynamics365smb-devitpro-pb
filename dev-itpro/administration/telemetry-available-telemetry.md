@@ -1,24 +1,25 @@
 ---
-title: Available Telemetry
-description: Get an overview of available telemetry in Business Central
+title: Available Business Central Telemetry
+description: Find Business Central telemetry by area or event ID to monitor environments and extensions, diagnose errors, and analyze performance.
 author: jswymer
 ms.topic: overview
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/09/2021
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
+ai-usage: ai-assisted
 ---
 
 # Available telemetry
-In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is logged into the traces or pageview tables. 
+In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is logged into the `traces` or `pageViews` tables.
 
 ## Telemetry by area
 Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations:  
 
 [!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
 
-## Telemetry by Event ID
+## Telemetry by event ID
 
 The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry events that are emitted into Azure Application Insights.
 

@@ -1,12 +1,12 @@
-If you use the Power BI app on telemetry data, it's very easy to track the metrics that are important to you. 
+If you use the Power BI app on telemetry data, you can track the goals that are important to you.
 
-With metrics in Power BI, you can curate your own metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations. 
+With goals in Power BI, you can curate your own goals and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
-Follow this simple four-step process to setup alerting with Power BI Metrics:
+Follow this four-step process to set up goals in Power BI:
 
-1. First, you need to create a scorecard in the Power BI service. See [Create scorecards in Power BI](/power-bi/create-reports/service-goals-create).
-2. Then simply add the _metrics_ you want to track by connecting to your Power BI report on telemetry. See [Create connected metrics](/power-bi/create-reports/service-goals-create-connected).
-3. To add alerting, define status rules for your metrics. This will automate status updates based on rules that govern that metric. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible. For connected metrics, these status rules are refreshed every time the data in your scorecard is refreshed. For more information, see [Create automated status rules for metrics](/power-bi/create-reports/service-metrics-status-rules).
-4. Finally, follow metrics to get alerts in Teams or by email. See [Follow your metrics](/power-bi/create-reports/service-metrics-follow).
+1. Create a scorecard in the Power BI service. Learn more in [Create scorecards in Power BI](/power-bi/create-reports/service-goals-create).
+1. Add the goals you want to track by connecting to your Power BI report on telemetry. Learn more in [Create connected goals](/power-bi/create-reports/service-goals-create-connected).
+1. Define status rules for your goals to automate status updates based on value, percentage of target met, date conditions, or a combination. For connected goals, these status rules are refreshed every time the data in your scorecard is refreshed. Learn more in [Create automated status rules for goals](/power-bi/create-reports/service-metrics-status-rules).
+1. Review the goal details and status changes in the scorecard. Learn more in [Stay on top of your goals in Power BI](/power-bi/create-reports/service-metrics-follow).
 
-For more information about Power BI Metrics, see [Get started with metrics in Power BI](/power-bi/create-reports/service-goals-introduction).
+For notifications based on a telemetry query, use Azure Monitor alerts, Azure Logic Apps, or Power Automate. Learn more in [Alert on telemetry](../administration/telemetry-alert.md) and [Get started with goals in Power BI](/power-bi/create-reports/service-goals-introduction).

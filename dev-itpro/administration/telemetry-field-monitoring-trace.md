@@ -1,28 +1,31 @@
 ---
-title: Analyzing Field Monitoring Telemetry
-description: Learn about the telemetry for monitoring changes to sensitive data in Business Central  
+title: Analyzing Field Monitoring Trace Telemetry
+description: Analyze field monitoring telemetry in Business Central to track changes to sensitive fields, monitoring status, and the fields selected for monitoring.
 author: jswymer
-ms.topic: concept-article
+ms.topic: reference
+ai-usage: ai-assisted
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
-ms.date: 05/01/2021
+ms.date: 11/17/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
-# Analyzing Field Monitoring Telemetry
+# Analyzing field monitoring telemetry
 
 [!INCLUDE[2020_releasewave2-17-1-later](../includes/2020_releasewave2-17-1-later.md)]
 
 Keeping sensitive data secure and private is a core concern for most businesses. To add a layer of security, you can monitor important fields when someone changes a value. For example, you might want to know if someone changes your company's IBAN number.
 
-To gather this data, you'll have to start field monitoring and specify the fields that you want to monitor.  For more information, see [Auditing Changes in Business Central - Monitoring Sensitive Fields](/dynamics365/business-central/across-log-changes#monitoring-sensitive-fields) in the Application help.
+To gather this data, you'll have to start field monitoring and specify the fields that you want to monitor. Learn more in [Auditing Changes in Business Central - Monitoring Sensitive Fields](/dynamics365/business-central/across-log-changes#monitoring-sensitive-fields) in the Application help.
 
 Telemetry is then logged for the following operations:
 
 - When field monitoring is stopped or started
 - When a field is added or removed for monitoring (only in version 18.0 and later)
 - When a field value is changed  
+
+These events use normal verbosity (`severityLevel` **1**) and `TelemetryScope::All`.
 
 ## <a name="status"></a>Sensitive field monitor status changed
 
@@ -37,7 +40,7 @@ Occurs when the field monitor feature is started or stopped in the company.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Sensitive field monitor status has changed to {almonitorStatus}**|
+|message|**Sensitive field monitor status has changed to {alMonitorStatus}**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -61,7 +64,7 @@ The following table explains other custom dimensions that are common to all fiel
 
 ## <a name="changed"></a>Sensitive field value has changed
 
-Occurs the value of a monitored field has changed in the company.
+Occurs when the value of a monitored field has changed in the company.
 
 <!-- example for reference:
 {"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.18204.18458","componentVersion":"17.0.18204.18458","Environment type":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","AadTenantId":"common","alObjectId":"1367","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000CTE","alDataClassification":"SystemMetadata","altableCaption":"Customer","alfieldCaption":"Name","alObjectType":"CodeUnit","alObjectName":"Monitor Sensitive Field Data"}
@@ -73,7 +76,7 @@ Occurs the value of a monitored field has changed in the company.
 
 |Dimension|Description or value|
 |---------|---------|
-|message|**Sensitive field value has changed: {alfieldCaption} ({alFieldNumber}) in table {altableCaption} ({alTableNumber})**|
+|message|**Sensitive field value has changed: {alFieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
@@ -90,19 +93,19 @@ Occurs the value of a monitored field has changed in the company.
 
 > [!NOTE]
 > Changes to fields in the following tables are always logged: 
-> - Fields in the **Field Monitoring Setup** table. Many of the fields are included on the **Field Monitoring Setup** page.
-> - Fields in the **Change Log Setup (Field)** table. Many of the fields are included on the **Field Monitoring Worksheet** page.
+> - Fields in the `Field Monitoring Setup` table, except `Notification Count`. Many of the fields are included on the **Field Monitoring Setup** page.
+> - Fields in the `Change Log Setup (Field)` table. For monitored fields, only changes to `Table No.`, `Field No.`, and `Notify` are logged. Many of the fields are included on the **Field Monitoring Worksheet** page.
 > - The **Contact Email** field in the **User** table.
 
 ## <a name="added"></a>Sensitive field added to or removed from monitor
 
-Occurs when a field has been added to or removed from monitoring. This dimension was introduced in version 18.0.
+Occurs when a field has been added to or removed from monitoring. This event was introduced in version 18.0.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Sensitive field added to monitor: {alfieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})**<br />or<br />**Sensitive field removed from monitor: {alfieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})**|
+|message|**Sensitive field added to monitor: {alFieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})**<br />or<br />**Sensitive field removed from monitor: {alFieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
