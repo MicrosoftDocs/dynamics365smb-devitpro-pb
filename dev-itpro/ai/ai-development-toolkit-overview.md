@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 10/02/2026
+ms.date: 11/17/2026
 ms.update-cycle: 180-days
 ---
 
@@ -91,8 +91,6 @@ Tasks are a way to trigger the agent. Tasks can only be added when the agent is 
 ### Supported languages
 
 This feature currently supports only English as language. While this feature can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might affect accuracy and the user experience.
-
-Learn more about geographic and language availability at [Copilot international availability](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
 
 ### Permissions and profiles
 
