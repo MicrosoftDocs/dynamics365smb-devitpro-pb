@@ -35,7 +35,7 @@ This article describes the features that have been moved, removed, or replaced i
 |-----------------------------|-----|
 |Replaced| The Finance reports API is removed in 2027 release wave 1 (version 30.0). The Finance reports API was introduced as a reporting endpoint for finance scenarios, but the Analytics API now provides read-only endpoints optimized for analytical and reporting workloads, including Power BI apps and custom reports.<br><br>Use the Analytics API instead of the Finance reports API for reporting and analysis scenarios. Learn more in [Analytics API overview](../api-analytics/api-analytics-overview.md). |
 
-## Changes in December 2026 (version 29.3)
+## Changes in December 2026 (version 29.2)
 
 ### Item substitution suggestions with Copilot
 
