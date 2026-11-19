@@ -27,6 +27,8 @@ If you're missing functionality you need, instead of building a per-tenant exten
 
 ## Useful hints for co-development
 
+If you build apps for other merchants, join the [Shopify Partner Program](https://help.shopify.com/partners/about).
+
 ### Registering the Shopify app
 
 Follow [Create apps using the Dev Dashboard](https://shopify.dev/docs/apps/build/dev-dashboard/create-apps-using-dev-dashboard) to create your app, release a version, and install it on a development store. Keep the **Client ID** and **Client secret** from the app's **Settings** page for the connector changes below.
