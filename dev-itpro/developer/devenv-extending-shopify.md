@@ -5,7 +5,7 @@ description: Discover extensibility options for the Shopify Connector, including
 ms.author: bholtorf
 ms.reviewer: solsen
 ms.custom: bap-template
-ms.date: 09/03/2026
+ms.date: 11/19/2026
 ms.topic: how-to
 ---
 
@@ -44,6 +44,18 @@ The following are the main steps. For specific details, refer to the Shopify doc
 7. For co-development, because the Shopify Connector reads all orders, and not only orders from the last 60 days, you must request access for your app. Go to **API access**, and choose the **Request access** button in **Read all order scopes**. The process requires review, which might take some time, so plan in advance. To learn more, go to [Orders permissions](https://shopify.dev/docs/api/usage/access-scopes#orders-permissions). You'll receive an email from Shopify when access is granted. You can also check the **API access** section of the  **Shopify Partner dashboard**. You'll see the following message, "Your app can access the full order history for a store".
 
 While in the **Shopify partner admin**, consider creating a development store for testing. Learn more in [Development Store](/dynamics365/business-central/shopify/shopify-account#development-store).
+
+#### Configure network access for your app
+
+If you register your own Shopify app, you're responsible for managing its Shopify IP allowlist. If you use Microsoft's standard Shopify Connector, you don't need to register another app or manage Microsoft's app-wide policy.
+
+With IP allowlist enforcement enabled, Shopify checks the source IP address of GraphQL Admin API and REST Admin API requests that [!INCLUDE [prod_short](../includes/prod_short.md)] online sends using your app's access tokens. These rules control outbound requests to Shopify, not inbound access to [!INCLUDE [prod_short](../includes/prod_short.md)], storefront access, or webhook sources. Network allowlisting is an additional control. It doesn't replace token authentication or app authorization.
+
+Learn more about Shopify's requirements in [Restrict API access to your IP addresses](https://shopify.dev/docs/apps/build/security/credentials-and-data/restrict-api-access-to-your-ip-addresses). Follow Shopify's maintained setup and testing instructions in [Restrict API access with an IP allowlist](https://shopify.dev/docs/apps/build/dev-dashboard/ip-allowlist).
+
+The `Dynamics365BusinessCentral` Azure service tag identifies the [!INCLUDE [prod_short](../includes/prod_short.md)] address ranges. To obtain the current IPv4 and IPv6 ranges through the documented Azure Management API or downloadable JSON files, go to [Restrict traffic from Business Central](../security/security-service-tags.md#restrict-traffic-from-business-central). Use these ranges when configuring IP address or CIDR rules in Shopify, and keep the rules up to date as the ranges change. The ranges cover all [!INCLUDE [prod_short](../includes/prod_short.md)] online environments. Don't narrow them to a single environment, region, or country.
+
+Shopify supports IP address, CIDR, and autonomous system number (ASN) rules, not Azure service-tag names. Don't enter `Dynamics365BusinessCentral` as a Shopify allowlist rule. A hosting provider's ASN covers a broader shared network, not just [!INCLUDE [prod_short](../includes/prod_short.md)]. Evaluate that broader access before choosing ASN rules, and follow Shopify's testing guidance before enforcing your app's policy.
 
 ### Adjusting the Shopify Connector for co-development
 
