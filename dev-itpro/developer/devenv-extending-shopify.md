@@ -31,7 +31,11 @@ If you're missing functionality you need, instead of building a per-tenant exten
 
 Follow [Create apps using the Dev Dashboard](https://shopify.dev/docs/apps/build/dev-dashboard/create-apps-using-dev-dashboard) to create your app, release a version, and install it on a development store. Keep the **Client ID** and **Client secret** from the app's **Settings** page for the connector changes below.
 
-The connector uses OAuth authorization code authentication, not the tutorial's client credentials grant. Register the exact redirect URL returned by [GetDefaultRedirectURL()](/dynamics365/business-central/application/system-application/codeunit/system.security.authentication.oauth2#getdefaultredirecturl). Configure scopes to match the connector, including `read_all_orders` for orders older than 60 days. For Partner-organization apps, request approval through **Access requests** on the app's **Settings** page before adding that scope.
+In the **Redirect URLs** section, enter the connector's OAuth redirect URL. In the legacy dashboard, use the **Allowed redirection URL(s)** field. Use the exact value returned by [GetDefaultRedirectURL()](/dynamics365/business-central/application/system-application/codeunit/system.security.authentication.oauth2#getdefaultredirecturl). Development URLs use the format `<Server>[:port]/<ServerInstance>/OauthLanding.htm`, for example, `https://bc-shopify.westeurope.cloudapp.azure.com/BC/OauthLanding.htm` or `https://localhost:48900/BC/OAuthLanding.htm`.
+
+Make sure the redirect URL is reachable. If you use a container sandbox development environment, consider using the deployment template from [aka.ms/getbc](https://aka.ms/getbc). You can enable the Let's Encrypt SSL certificate to ensure that [!INCLUDE [prod_short](../includes/prod_short.md)] is accessible in the container.
+
+Configure scopes to match the connector, including `read_all_orders` for orders older than 60 days. For Partner-organization apps, request approval through **Access requests** on the app's **Settings** page before adding that scope.
 
 Configure your app's IP allowlist for Admin API requests. For [!INCLUDE [prod_short](../includes/prod_short.md)] online, obtain current IPv4 and IPv6 ranges from [Restrict traffic from Business Central](../security/security-service-tags.md#restrict-traffic-from-business-central). Enter addresses, not Azure service-tag names, and keep the list current. Provider autonomous system number (ASN) rules allow a broader shared network. For locally originating requests, add the development computer's public outbound IP.
 
@@ -84,7 +88,7 @@ Now you can publish the updated connector and connect [!INCLUDE [prod_short](../
 
 #### Error: Oauth error invalid_request: The redirect_uri is not whitelisted.
 
-Make sure the app's configured redirect URL exactly matches the URL that the connector sends to Shopify.
+Make sure the app's **Redirect URLs** section includes the exact URL that the connector sends to Shopify. In the legacy dashboard, check the **Allowed redirection URL(s)** field.
 
 #### Error: cannot install app
 
