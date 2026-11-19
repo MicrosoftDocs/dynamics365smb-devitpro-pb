@@ -28,7 +28,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
   This feature is supported in English. While it can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might impact accuracy and the user experience.
 
-  Learn more in [Chat with Copilot](/dynamics365/business-central/chat-with-copilot) and check geographic and language availability at [Copilot international availability](https://aka.ms/bapcopilot-intl-report-external).
+  Learn more in [Chat with Copilot](/dynamics365/business-central/chat-with-copilot) and check geographic and language availability at [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 - Improvements to the **Copilot & AI capabilities** page
 
