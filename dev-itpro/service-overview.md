@@ -32,7 +32,7 @@ For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] o
 
 ### Availability of Copilot in Business Central
 
-Microsoft Copilot in Business Central includes a variety of features that can each be in preview or generally available in different languages and regions. Learn more in [Copilot international availability](https://aka.ms/bapcopilot-intl-report-external).
+Microsoft Copilot in Business Central includes a variety of features that can each be in preview or generally available in different languages and regions. Learn more in the [roadmap](https://aka.ms/AIatWorkroadmap).
 
 ## Built upon a foundation of trust, security, and compliance
 
