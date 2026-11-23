@@ -1,7 +1,7 @@
 ---
 title: Edit with Copilot
 description: Learn about the early access preview of Edit with Copilot for modifying and deleting data in Business Central.  
-ms.date: 11/11/2026
+ms.date: 11/23/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -22,6 +22,7 @@ Edit with Copilot helps you complete tasks in Business Central by using natural 
 > - This feature is available only in early access preview environments, which require a [Dynamics 365 Business Central Partner Sandbox license](../administration/environment-types.md#partnersandbox) and support only the United States (US), United Kingdom (GB), and Germany (DE) versions.
 > - These environments are for evaluation only. Partners can use them to try features before public release and provide feedback.
 > - Preview features aren't meant for production use, might have restricted functionality, and are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
+> - Early Access Previews are CONFIDENTIAL. By accessing or using this preview, participants agree not to disclose any information about the preview to any third party.
 
 ## About Edit with Copilot
 
