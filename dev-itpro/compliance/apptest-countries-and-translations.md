@@ -152,7 +152,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Lesotho|Partner|W1|Available|LS|South Africa|
 |Liberia|Partner|W1|Available|LR|5)|
 |Libya|Partner|W1|Available|LY|5)|
-|Liechtenstein|Partner|CH|Available|LI|Europe|
+|Liechtenstein|Partner|CH|Available|LI|Switzerland|
 |Lithuania|Partner|W1|Available|LT|Europe|
 |Luxembourg|Partner|W1|Available|LU|Europe|
 |Macao (SAR China)|Partner|W1|Available|MO|Asia Pacific|
