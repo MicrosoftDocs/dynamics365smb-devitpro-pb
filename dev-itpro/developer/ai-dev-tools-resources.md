@@ -1,6 +1,6 @@
 ---
-title: Use developer tools for Copilot in Business Central AI resources 
-description: Learn how you can use the developer tools for Copilot in Business Central AI resources in your own Marketplace extensions to create Copilot experiences in Business Central
+title: Business Central AI Resources for Copilot Development
+description: Learn how to choose between Microsoft-managed Business Central AI resources and your own Azure OpenAI subscription for Copilot in Marketplace extensions.
 author: pborring
 ms.author: solsen
 ms.reviewer: solsen
@@ -8,8 +8,9 @@ ms.topic: article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 10/02/2026
+ms.date: 11/25/2026
 ms.update-cycle: 180-days
+ai-usage: ai-assisted
 ---
 
 # Business Central AI resources (preview)
@@ -39,15 +40,15 @@ You can read more about each of the models here [Azure OpenAI Models](/azure/ai-
 
 Using the AI resources provides several benefits, including:
 
-- *Reduced operational overhead*  
+- *Reduced operational overhead*<br>
 Avoid the need to handle infrastructure management, updates, monitoring, troubleshooting, or maintenance of custom Azure OpenAI subscriptions, freeing up resources to focus on core business operations and providing value-adding IP to customers.
-- *Simplified onboarding*  
+- *Simplified onboarding*<br>
 Quickly integrate AI capabilities into your solutions without having to navigate the complexities of setting up and managing your own Azure OpenAI subscription.
-- *Improved reliability*  
+- *Improved reliability*<br>
 Proactive scaling, throttling, load balancing, and fault tolerance measures, ensuring consistent performance during peak demand.
-- *Enhanced security compliance*  
+- *Enhanced security compliance*<br>
 Built-in compliance measures and governance, including robust protection from malicious and harmful content, ensuring compliance with data residency requirements, reducing the burden of ensuring regulatory compliance for ISVs.
-- *Streamlined experience for customers*  
+- *Streamlined experience for customers*<br>
 Customers experience a more seamless AI resource management process, avoiding the need to maintain different configurations for separate ISV solutions.
 
 ## Consumption-based customer billing when using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
@@ -67,8 +68,8 @@ This allows customers to:
 |GPT-4.1-mini|Basic|
 
 Learn more about the rates under AI Tools in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management#message-scenarios)
- 
-> [!NOTE]  
+
+> [!NOTE]
 > It's important to note that the AI billing model isn't intended to replace the existing Marketplace monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the Marketplace monetization option available to ISVs to monetize their intellectual property (IP).
 
 ### Gracefully handle errors if there is overconsumption
@@ -90,6 +91,14 @@ Here are some examples of using an instance of `AOAI Operation Response` to iden
 
 For most ISVs, the default [!INCLUDE [prod_short](includes/prod_short.md)] AI resources are enough, However, if you have needs that aren't fulfilled with the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, such as specific models including fine-tuned ones, you can bring your own (BYO) subscription to customers. If that's the case, the ISV is responsible for the deployment, maintenance, scaling, and security of the service - and the billing of AI resources to customers.
 
+### Choose models for EU customers
+
+When you use your own Azure OpenAI subscription for customers in the European Union (EU), evaluate the legal and regulatory requirements that apply to your solution, including the EU AI Act. Before you select a model, review whether its capabilities support those requirements. Availability in an Azure region isn't an assurance that your solution complies with applicable requirements.
+
+Learn more about the EU AI Act in [Microsoft's EU AI Act guidance](https://www.microsoft.com/en/trust-center/compliance/eu-ai-act). For model-specific support for identifying AI-generated content, review [Content provenance](/azure/foundry/responsible-ai/content-safety/provenance-disclosure). You're responsible for evaluating and meeting the transparency obligations that apply to your solution.
+
+Also check the model's regional availability and deployment options in [Foundry Models sold by Azure](/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure). Review where prompts and responses are processed in [Deployment types in Microsoft Foundry Models](/azure/foundry/foundry-models/concepts/deployment-types) against your customers' data residency requirements.
+
 ## Differences between [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and custom Azure OpenAI subscriptions
 
 By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot, partners can easily get access to AI resources when they extend Copilot in [!INCLUDE [prod_short](includes/prod_short.md)].
@@ -100,7 +109,7 @@ By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for
 |Area|Business Central AI resources|Your own AOAI subscription|
 |----|-----------------------------|--------------------------|
 |Deployment|Microsoft manages the AI resources. <br><br>We ask you to have an active Azure OpenAI subscription for sign-up, but no model. | You must handle deploying models, keep them up to date, set up Azure subscriptions, take care of geography and data residency, etc. <br><br>You're charged for deployed models even if they aren't used.|
-|Model support|Production-ready models available (today GPT-4.1, GPT-4.1 mini and their preview equivalent, more in the future). <br><br> Get notified via developer telemetry when new models are coming, and old models are obsoleted. Observe that when models are no longer supported, partners are accountable for migrating to newer models and model versions as dictated by Microsoft within communicated SLA.<br><br>Embeddings aren't yet available.|All Azure OpenAI models are available. <br><br>Follow Azure OpenAI model deprecation timelines. <br><br>Embeddings and fine tuning are available depending on your model.|
+|Model support|Production-ready models available (today GPT-4.1, GPT-4.1 mini and their preview equivalent, more in the future). <br><br> Get notified via developer telemetry when new models are coming, and old models are obsoleted. When models are no longer supported, partners are accountable for migrating to newer models and model versions as dictated by Microsoft within communicated SLA.<br><br>Embeddings aren't yet available.|Choose from the Azure OpenAI models available for your region and deployment type. For EU customers, review the [model selection guidance](#choose-models-for-eu-customers). <br><br>Follow Azure OpenAI model deprecation timelines. <br><br>Embeddings and fine tuning are available depending on your model.|
 |Responsible AI|Azure OpenAI content filters predefined by Business Central. <br><br>Microsoft automatically appends safeguard prompts to your system prompt that increase protection against typical harms such as generation of harmful content and prompt injection attacks.|Azure OpenAI content filters, configurable by you. <br><br>Microsoft automatically appends safeguard prompts to your system prompt that increase protection against typical harms such as generation of harmful content and prompt injection attacks in Saas|
 |Environments|SaaS only|Can be used in SaaS, and for testing in containers.|
 |Billing|Microsoft charges the customer when they use AI. <br><br> Customers can track usage, set limits, and get a single, detailed invoice across Copilot features that use the toolkit AI resources. <br><br>You charge the customer for your IP.|You must track billing, split billing if multiple customers share the same subscription, manage spending limits, provide usage statistics etc.|
@@ -135,7 +144,7 @@ AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions",GetEndp
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] AI resources can only be used in customer production environments. Therefore, it's recommended that partners create and use their own Azure OpenAI subscriptions as part of noncustomer usage, for example, when prototyping, developing, testing, and supporting AI capabilities.
 
-> [!NOTE]  
+> [!NOTE]
 > You must have an Azure subscription in order to use the AI development toolkit in Business Central. If you don't have the Azure subscription, you might not use the AI development toolkit in Business Central. Azure OpenAI Service is made available to customers under the terms governing their subscription to Microsoft Azure Services, including Product Terms such as the Universal License Terms applicable to Microsoft Generative AI Services and the product offering terms for Azure OpenAI. Review these terms carefully as they contain important conditions and obligations governing your use of Azure OpenAI Service. Unless otherwise indicated in the service, all Azure customers are eligible for access to Azure OpenAI models, and all uses consistent with the Product Terms and Code of Conduct are permitted. If you're using the AI development toolkit in Business Central to develop features that run on managed AI resources, you should enable app/extension-level telemetry, so we can directly communicate the underlying AI model changes to you in a timely manner.
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot easily allow conditionally branching on the Azure OpenAI subscription used, for example, using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources when running in customer environments and a custom Azure OpenAI subscription for the rest.

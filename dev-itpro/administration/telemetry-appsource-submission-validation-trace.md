@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, Marketplace, validation
-ms.date: 11/17/2026
+ms.date: 11/23/2026
 ms.author: jswymer
 ms.reviewer: jswymer
 ai-usage: ai-assisted
@@ -25,6 +25,8 @@ If an app's set up for it, telemetry traces are emitted to and recorded in Appli
 ## Validation process overview
 
 The validation process starts when you publish the app. The validation runs against each extension in the app, for each country/region (market) specified for the offer in Partner Center, and for each Business Central version that the submission targets. Learn more in [Against which releases of Business Central is your submission validated?](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
+
+To reduce the validation time, the same validation result can be reported for several [!INCLUDE[prod_short](../includes/prod_short.md)] versions or countries/regions. In that case, the `allExtensions` and `baselineExtensions` dimensions can list the extensions resolved for another [!INCLUDE[prod_short](../includes/prod_short.md)] version, such as its Base Application, and diagnostic messages can mention another [!INCLUDE[prod_short](../includes/prod_short.md)] version or country/region.
 
 Extensions are validated using the AL compiler and the [AppSourceCop code analyzer](../developer/devenv-using-code-analysis-tool.md). Traces are emitted at different phases during the process. Each submission is assigned a unique identifier (ID). This ID is included in each trace for a submission, allowing you to query all traces related to the submission. The general flow for the validation process is illustrated below:
 
