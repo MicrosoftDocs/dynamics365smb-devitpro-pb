@@ -2,11 +2,12 @@
 title: Marketplace Technical validation process FAQ
 description: Describes the most common questions about the validation process when submitting your app to Marketplace for Business Central.
 author: qutreson
-ms.date: 10/08/2025
+ms.date: 11/23/2026
 ms.reviewer: solsen
 ms.topic: faq
 ms.author: qutreson
 ms.custom: sfi-ropc-nochange
+ai-usage: ai-assisted
 ---
 
 # Marketplace technical validation process FAQ
@@ -120,6 +121,9 @@ At this stage, your extensions are validated to assess whether they meet the req
 
 > [!NOTE]
 > Because the extensions in your submission are validated for each release and country/region targeted by the submissions, the validation results can be verbose and can't always be displayed in their full length in Partner Center. The error message will then end with `...(Truncated)`. If that happens for your submission, you should either enable Azure Application Insights in your extension, run the self-validation script, or fix the errors visible and iterate on your submission.
+
+> [!NOTE]
+> To reduce the validation time, the same validation result can be reported for several releases of [!INCLUDE[prod_short](../includes/prod_short.md)] or several countries/regions. In that case, an error message can mention a release of [!INCLUDE[prod_short](../includes/prod_short.md)] or a country/region other than the one it's reported for.
 
 ## My app failed at the "Certification" stage, what do I do next?
 
