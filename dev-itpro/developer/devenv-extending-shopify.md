@@ -5,7 +5,7 @@ description: Discover extensibility options for the Shopify Connector, including
 ms.author: bholtorf
 ms.reviewer: solsen
 ms.custom: bap-template
-ms.date: 09/03/2026
+ms.date: 11/19/2026
 ms.topic: how-to
 ---
 
@@ -27,23 +27,19 @@ If you're missing functionality you need, instead of building a per-tenant exten
 
 ## Useful hints for co-development
 
+If you build apps for other merchants, join the [Shopify Partner Program](https://help.shopify.com/partners/about).
+
 ### Registering the Shopify app
 
-Begin by joining the [Shopify Partner Program](https://help.shopify.com/partners/about). Afterward, use the **Partner Dashboard** to create the development store and app.
+Follow [Create apps using the Dev Dashboard](https://shopify.dev/docs/apps/build/dev-dashboard/create-apps-using-dev-dashboard) to create your app, release a version, and install it on a development store. Keep the **Client ID** and **Client secret** from the app's **Settings** page for the connector changes below.
 
-The following are the main steps. For specific details, refer to the Shopify documentation.
+In the app's **Allowed redirection URL(s)** field, enter the connector's OAuth redirect URL. Use the exact value returned by [GetDefaultRedirectURL()](/dynamics365/business-central/application/system-application/codeunit/system.security.authentication.oauth2#getdefaultredirecturl). Development URLs use the format `<Server>[:port]/<ServerInstance>/OauthLanding.htm`, for example, `https://bc-shopify.westeurope.cloudapp.azure.com/BC/OauthLanding.htm` or `https://localhost:48900/BC/OAuthLanding.htm`.
 
-1. In the **Shopify Partner Dashboard**, go to **Apps** > **All apps**, and choose the **Create app** button.
-2. Choose the **Create app manually** button.
-3. Enter the **App name**, and choose **Create**.
-4. In the **Overview** section of the app, note the **Client credentials**, **Client ID**, and **Client secret**. You'll use this information to access the Shopify API.
-5. In the **Configuration** section, enter a valid URL in the **App URL** field.
-6. Fill in the **Allowed redirection URL(s)** field using the following formats:`<Server>[:port]/<ServerInstance>/OauthLanding.htm` (for example, `https://bc-shopify.westeurope.cloudapp.azure.com/BC/OauthLanding.htm` or `https://localhost:48900/BC/OAuthLanding.htm`). 
+Make sure the redirect URL is reachable. If you use a container sandbox development environment, consider using the deployment template from [aka.ms/getbc](https://aka.ms/getbc). You can enable the Let's Encrypt SSL certificate to ensure that [!INCLUDE [prod_short](../includes/prod_short.md)] is accessible in the container.
 
-   The exact value depends on the configuration of your development environment. You can see what your development environment returns by calling the [GetDefaultRedirectUrl()](/dynamics365/business-central/application/system-application/codeunit/system.security.authentication.oauth2#getdefaultredirecturl) method of the **OAuth2** system module. Also, make sure that this URL is reachable. If you use a container sandbox development environment, consider using the deployment template from [aka.ms/getbc](https://aka.ms/getbc), where you can enable the Let's Encrypt SSL certificate to ensure that [!INCLUDE [prod_short](../includes/prod_short.md)] is accessible in the container.
-7. For co-development, because the Shopify Connector reads all orders, and not only orders from the last 60 days, you must request access for your app. Go to **API access**, and choose the **Request access** button in **Read all order scopes**. The process requires review, which might take some time, so plan in advance. To learn more, go to [Orders permissions](https://shopify.dev/docs/api/usage/access-scopes#orders-permissions). You'll receive an email from Shopify when access is granted. You can also check the **API access** section of the  **Shopify Partner dashboard**. You'll see the following message, "Your app can access the full order history for a store".
+Configure scopes to match the connector, including `read_all_orders` for orders older than 60 days. For Partner-organization apps, request approval through **Access requests** on the app's **Settings** page before adding that scope.
 
-While in the **Shopify partner admin**, consider creating a development store for testing. Learn more in [Development Store](/dynamics365/business-central/shopify/shopify-account#development-store).
+Configure your app's IP allowlist for Admin API requests. For [!INCLUDE [prod_short](../includes/prod_short.md)] online, obtain current IPv4 and IPv6 ranges from [Restrict traffic from Business Central](../security/security-service-tags.md#restrict-traffic-from-business-central). Enter addresses, not Azure service-tag names, and keep the list current. Provider autonomous system number (ASN) rules allow a broader shared network. For locally originating requests, add the development computer's public outbound IP.
 
 ### Adjusting the Shopify Connector for co-development
 
@@ -94,11 +90,11 @@ Now you can publish the updated connector and connect [!INCLUDE [prod_short](../
 
 #### Error: Oauth error invalid_request: The redirect_uri is not whitelisted.
 
-Make sure that you filled in the **Allowed redirection URL(s)** field correctly in the **Configuration** section.
+Make sure the URL in the app's **Allowed redirection URL(s)** field exactly matches the URL that the connector sends to Shopify.
 
 #### Error: cannot install app
 
-In the **Overview** section of the app, choose the **Select Store** action. First install the app from there, then try to connect [!INCLUDE [prod_short](../includes/prod_short.md)] to the Shopify store again.
+Install your app on the development store using the **Install app** action on the **Installs** card in the Shopify **Dev Dashboard**. Then try connecting [!INCLUDE [prod_short](../includes/prod_short.md)] to the Shopify store again.
 
 
 ## Extensibility examples
