@@ -98,7 +98,7 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 |Supported operating systems|[!INCLUDE[supported-windows-versions](../developer/includes/supported-windows-versions.md)]|
 |Web server|<ul><li>Internet Information Services 10.</li></ul>|
 |Additional software|<ul><li>Microsoft .NET 10.0</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Windows Server Hosting 6.0.15.</li><li>Microsoft .NET 10.0</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>Learn more about configuring IIS in [Configuring IIS](configure-iis.md).</li></ul>|
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET 10.0 Windows Server Hosting, which includes the .NET 10 runtime, ASP.NET Core 10 runtime, and ASP.NET Core Module for IIS.</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>Learn more about configuring IIS in [Configuring IIS](configure-iis.md).</li></ul>|
 
 ## <a name="SQLReq"></a>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components
 
