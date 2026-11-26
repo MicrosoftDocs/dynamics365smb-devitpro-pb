@@ -4,7 +4,7 @@ description: This article provides the specifications of minimum hardware and so
 ms.custom: bap-template
 ms.service: dynamics-365-op
 ms.topic: overview
-ms.date: 08/27/2025
+ms.date: 11/25/2026
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -85,7 +85,7 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 |Hardware resources|<ul><li>Hard disk space: 100 GB</li><li>Memory:<br /> 16 GB for running application only<br />16 GB for publishing small extensions (&lt;1000 objects) to server<br />32-64 GB for publishing large extensions (&gt;1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, refer to [Microsoft Dynamics 365 for Sales Integration Requirements](#microsoft-dataverse-and-dynamics-365-for-sales-integration).|  
 |Additional software|<ul><li>Microsoft .NET 10.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li><li>Windows PowerShell 7.6 (required for [Business Central Administration Shell](../administration/administration-shell.md))</ul>|  
-|Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET Windows Server Hosting 6.0.15</li><li>Microsoft .NET 10.0</li><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Foundation*.</li><li>Report Builder for SQL Server 2019. If Report Builder for SQL Server 2016 is already installed, it updates to Report Builder for SQL Server 2019.</li><li>Windows PowerShell 7.6, unless another Windows PowerShell 7.x version is already installed.</li></ul>|  
+|Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET 10.0 Windows Server Hosting, which includes the .NET 10 runtime, ASP.NET Core 10 runtime, and ASP.NET Core Module for IIS.</li><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Foundation*</li><li>Report Builder for SQL Server 2019. If Report Builder for SQL Server 2016 is already installed, it updates to Report Builder for SQL Server 2019.</li><li>Windows PowerShell 7.6, unless another Windows PowerShell 7.x version is already installed.</li></ul>|  
 
 \* Starting with update 18.1, Windows Identity Foundation is added to the product by NuGet. Setup doesn't install it.  
 
