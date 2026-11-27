@@ -6,6 +6,7 @@ ms.date: 06/24/2024
 ms.reviewer: jswymer
 ms.topic: how-to
 author: jswymer
+ai-usage: ai-assisted
 ms.service: dynamics-365-op
 ---
 # Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with NavUserPassword
@@ -94,5 +95,5 @@ Learn more in [Configure Configuring [!INCLUDE[webserver](../developer/includes/
 ## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
+[Troubleshooting: SAML2 token errors with Microsoft Entra ID or Office 365 authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
 [Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md)

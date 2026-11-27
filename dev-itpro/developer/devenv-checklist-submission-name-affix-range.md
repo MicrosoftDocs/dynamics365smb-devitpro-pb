@@ -1,12 +1,13 @@
 ---
 title: Marketplace Names, Affixes, and ID Ranges FAQ
-description: Describes the most common questions about names, affixes, and ID ranges in your Marketplace app for Business Central.
-author: qutreson
-ms.date: 10/08/2025
+description: Find answers about publisher affixes, object ID ranges, namespaces, and object name limits when preparing Business Central apps for Marketplace.
+author: SusanneWindfeldPedersen
+ms.date: 11/27/2026
 ms.reviewer: solsen
 ms.topic: faq
-ms.author: qutreson
+ms.author: solsen
 ms.custom: sfi-ropc-nochange
+ai-usage: ai-assisted
 ---
 
 # Marketplace names, affixes, and ID ranges FAQ
@@ -17,17 +18,21 @@ This article addresses some of the most frequently asked questions around how af
 
 No, you don't need to register affixes for each of your extensions.
 
-The object affixes are registered per publisher so if your apps all have the same publisher, they can share the same affixes. The automated validation verifies that you're using the three letters affix registered by Microsoft in your extension, but this still allows you to create longer affixes per extension. For example, if you registered ABC as your affix, you can use ABCD as the prefix in Extension 1 and ABCE as the prefix in Extension 2. Learn more in [Prefix and suffix for naming in extensions](../compliance/apptest-prefix-suffix.md).
+Publishers register object affixes, so apps with the same publisher can share the same affixes. For new registrations, the affix must have exactly three characters. You can use a longer prefix or suffix for each extension. For example, if you registered **ABC** as your affix, you can use **ABCD** as the prefix in Extension 1 and **ABCE** as the prefix in Extension 2.
+
+Automated validation checks the applicable naming requirements. A namespace with at least two levels can replace the affix on top-level objects. Members you add to objects from other publishers still need affixes where required. Learn more in [Prefix and suffix for naming in extensions](../compliance/apptest-prefix-suffix.md).
 
 ## Do I need to request a different ID range for each of my extensions?
 
 No, you don't need to request a new ID range for each of your extensions.
 
-The object IDs are registered per partner, not per extension. You can then use a subset of this range for each of your extensions. It is your responsibility to ensure that you aren't defining objects with the same IDs in different extensions. If you're doing so, the extensions defining these objects can't be installed together on the same environment. Learn more in [Get started building apps](readiness/get-started.md#requesting-an-object-range).
+The Marketplace assigns object ID ranges per partner, not per extension. You can use a subset of this range for each of your extensions. Assign nonoverlapping IDs within each object type across your extensions. You can't install together in the same environment extensions that define different objects with the same object type and ID. Learn more in [Get started building apps](readiness/get-started.md#requesting-an-object-range).
 
-## Will there be any changes made to the object names character limitation (30 characters) within the near future? 
+## What are the object name length limits, and can I use namespaces?
 
-We would like longer names as well. Introducing namespaces could be one investment. However, such a change has down-stream breaking impact (any caller needs to qualify calls) and there are SQL constraints on name lengths for tables, which currently include company name, table name, app ID and needs to be maximum 255. This is on our long term backlog, but haven't any changes planned soon.
+The general application-object name limit remains 30 characters. Namespaces have been available since Business Central version 23. They help organize objects and reduce naming conflicts without increasing this limit. References can use fully qualified names or `using` directives. Changing an existing object's namespace can break dependent apps. Learn more in [Namespaces in AL](devenv-namespaces-overview.md).
+
+SQL Server identifiers have a maximum length of 128 characters. Business Central SQL table names can include the company name, table name, and app ID, so the generated name must fit within that limit. Learn more in [Database identifiers](/sql/relational-databases/databases/database-identifiers).
 
 ## Related information
 
@@ -37,7 +42,6 @@ We would like longer names as well. Introducing namespaces could be one investme
 [Azure Application Insights and Marketplace submission FAQ](devenv-checklist-submission-app-insights.md)  
 [Marketplace app previews FAQ](devenv-checklist-submission-app-preview.md)  
 [Business Central offer FAQ](devenv-checklist-submission-offer.md)  
-[Names, affixes, and ID ranges FAQ](devenv-checklist-submission-name-affix-range.md)  
 [Develop and maintain Marketplace apps FAQ](devenv-checklist-submission-develop-maintain.md)  
 [Code-signing validation FAQ](devenv-checklist-submission-code-sign.md)  
 [Channels for questions and issues FAQ](devenv-checklist-submission-channels.md)

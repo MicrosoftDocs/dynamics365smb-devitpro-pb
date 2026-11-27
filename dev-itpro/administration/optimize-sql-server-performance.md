@@ -7,6 +7,7 @@ ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: concept-article
 author: jswymer
+ai-usage: ai-assisted
 ---
 # Optimizing SQL Server Performance with Business Central
 
@@ -28,7 +29,7 @@ The following articles describe how to optimize performance in [!INCLUDE[prod_lo
 
 [Using Read Scale-Out for Better Performance](database-read-scale-out-overview.md)  
 
-[Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
+[Troubleshooting: Long running SQL queries involving FlowFields by disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
 
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)
 

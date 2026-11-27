@@ -10,6 +10,7 @@ ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
+ai-usage: ai-assisted
 ms.author: jswymer
 ---
 # Configure Microsoft Entra authentication with WS-Federation
@@ -577,5 +578,5 @@ If you are connecting to your solution from Visual Studio Code, then you must al
 ## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
+[Troubleshooting: SAML2 token errors with Microsoft Entra ID or Office 365 authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
 [Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md)

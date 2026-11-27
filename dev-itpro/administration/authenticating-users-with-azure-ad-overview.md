@@ -7,6 +7,7 @@ ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
+ai-usage: ai-assisted
 ms.author: jswymer
 ---
 # Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID 
@@ -79,5 +80,5 @@ For the complete setup, see [Configure Microsoft Entra authentication with WS-Fe
 ## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
+[Troubleshooting: SAML2 token errors with Microsoft Entra ID or Office 365 authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
 [Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md)

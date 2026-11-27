@@ -1,66 +1,83 @@
 ---
-title: "FAQ about Testing your Business Central App"
-description: "Get answers to some of your questions about testing when you build an app for Dynamics 365 Business Central"
-author: susannewindfeldpedersen
-ms.date: 08/15/2022
+title: "Business Central App Testing FAQ"
+description: "Learn how to test Business Central Marketplace apps across releases and countries/regions, verify upgrade paths, and distinguish testing from validation."
+author: SusanneWindfeldPedersen
+ms.date: 11/27/2026
 ms.reviewer: jswymer
 ms.topic: faq
+ai-usage: ai-assisted
 ms.author: solsen
 ---
 
-# FAQ about Testing your Business Central App
+# FAQ about testing your Business Central app
 
-This section contains answers to frequently asked questions about testing your app when you submit an app for [!INCLUDE[prod_short](../includes/prod_short.md)].
+Find answers about testing functionality, compatibility, and upgrades before submitting your Marketplace app for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 ## Since my app goes through validation, do I really need to thoroughly test my app?
 
-Yes. It's your app and you're the expert, so you should have a vested interest in high quality. The main goal of validation is to ensure app code is meeting requirements and policy. The testing done during validation is only to ensure good user experience on the most common app scenarios. We don't test every scenario of an app. Using customers to find bugs isn't the proper approach.
+Yes. You're responsible for thoroughly testing your app. Automated technical validation checks technical requirements and compatibility. Microsoft doesn't run your app's functional tests or manually test its usage scenarios during submission validation. Test the customer experience before publication rather than relying on customers to find bugs.
+
+Learn more about [testing and technical validation](devenv-checklist-submission-validation-process.md#how-many-automated-tests-do-we-need-to-run-for-validation-and-how-high-must-the-test-coverage-be).
 
 ## Is it ok to submit my app for validation before we complete our own testing?
 
-No. Please, don't submit your app for validation until it has been 100% tested. This will lead to many delays in the validation process otherwise. Also, it wastes time and resources.
+No. Complete your functional and upgrade testing before submission. We recommend aiming for 100% coverage of your app's functionality, or as close as practical. This guidance is about quality, not a required numerical code-coverage threshold for Marketplace validation. Finding issues before submission helps avoid repeat submissions and customer deployment failures.
 
 ## Is it ok to test my Marketplace app in an on-premises environment?
 
-No. You must test your app using [!INCLUDE[prod_short](includes/prod_short.md)] online. Although [!INCLUDE[prod_short](includes/prod_short.md)] online and on-premises are similar, they aren't the exact same. If you only test on-premises, invariably issues will be found in our validation testing.
+On-premises testing alone isn't sufficient. Test your Marketplace app in [!INCLUDE[prod_short](includes/prod_short.md)] online before submission. You can also use sandbox artifacts in Docker for development and automated testing. Online and on-premises environments differ, so on-premises-only testing can miss online-specific issues.
+
+Learn more about [testing your extension](../compliance/apptest-testingyourextension.md).
 
 ## Does it really matter what version of Business Central I test on before submitting my app for validation?
 
-Yes. It's critical that you always test on the latest version at the time when you're ready to submit for validation. Testing on the wrong version usually leads to validation failure. For example, let’s say the latest version of [!INCLUDE[prod_short](includes/prod_short.md)] is 15.4 at the time when you submit for validation you tested on 15.0. The product has changed between those versions, and deprecated features or other changes could result in your app behavior changing.
+Yes. Test your app against all [!INCLUDE[prod_short](includes/prod_short.md)] releases targeted by your submission, including the current production release when it's targeted. The service computes the targeted releases from your manifests. Testing only one release can miss compatibility or behavior differences.
 
-We recommend that you consider using Docker containers. Use the `Get-BcArtifactUrl` function in the BCContainerHelper PowerShell module to give you the artifact URL for the latest sandbox build for the specified country. You don’t have to figure out what product version is active at time of submission. That function does it for you.
+For example, suppose the latest targeted release is 15.4, but you test only on 15.0. Product changes between those releases can affect your app's behavior. The same principle applies to current releases.
+
+We recommend using Docker containers for automated testing. The `Get-BcArtifactUrl` function in the `BCContainerHelper` PowerShell module gets the latest available sandbox artifact for the specified country/region by default. Use the `-version` parameter to select other releases targeted by your submission. The function selects an artifact; it doesn't calculate all releases targeted by your submission.
+
+Learn more about [targeted validation releases](devenv-checklist-submission-validation-process.md#against-which-releases-are-my-apps-validated).
 
 ## How thorough should our testing be?
 
-You should always test with 100% coverage, or at least as close to 100% as you can get. The testing should be a combination of automated and manual tests. The apps with good testing infrastructure behind them are the most successful.
+Aim for 100% coverage of your app's functionality, or as close as practical, using automated and manual tests. Good testing infrastructure helps you find issues before customers encounter them. Microsoft doesn't set a numerical code-coverage requirement for technical validation.
 
 ## Do I have to test on every country that I intend to support with my app?
 
-Yes. If you support multiple countries/regions, test your app on every country. Each country's code base is slightly different from both the base application and other countries/regions. It's critical to make sure that the app publishes, syncs, and installs on every country you support. Because an app installs fine on one country doesn’t mean it will publish/install fine on another. We have seen many times where it passes on one but fails on another during our validation.
+Yes. Test your app in every country or region that you support. Localized applications can differ, so verify that the app publishes, synchronizes, installs, and works correctly in each one. A successful installation in one country or region doesn't establish compatibility in another.
 
 ## Do you have recommendations on maintenance testing of our apps?
 
-Yes. You should be testing your apps against our various build branches. Through Docker, you have access to our latest sandbox builds and our latest next major and next minor insider builds - all are public. Test often, especially against the Next Minor build. This allows you to catch any bugs that may arise from core changes in the product.
+Yes. Through Docker, you can test against the latest sandbox builds and available next major and next minor insider builds. Insider artifacts are available to customers and partners, but require acceptance of the insider EULA. In `Get-BcArtifactUrl`, use `-select NextMajor` or `-select NextMinor` with `-accept_insiderEula`. When the next release is a major release, `NextMinor` selects that major release. Check that an artifact is available for the requested release and country/region.
+
+Test often, especially against the next minor build, to find issues caused by product changes before release.
+
+Learn more about [accessing prerelease builds](app-maintain.md).
 
 ## I only made minor code changes in my updated app. Can I test just these changes?
 
-No. You should always test 100% coverage no matter what. Testing only what you changed isn't the correct approach. Even minor changes can lead to breaking changes where you least expect it.
+No. Run regression tests beyond the code that you changed. Even minor changes can affect other functionality. Aim for the same comprehensive coverage that you use for larger releases.
 
 ## Do I need to do upgrade testing?
 
-Yes, this is a must. If an app fails to upgrade, customers are unable to get your updated app. This is one of the common failures we see today in validations. You should want your app upgrade to work optimally.
+Yes. Verify that customers can upgrade to your updated app. Automated technical validation doesn't replace testing your upgrade logic. An upgrade failure can prevent customers from installing the update.
 
 ## Any recommendations on upgrade testing?
 
-Test the upgrade with extensive app data included. Many of the upgrade failures for customers are data related. The upgrade fails because specific data scenarios weren't considered for testing. Or worse, the upgrade succeeds, and data is lost.
+Test upgrades with extensive, representative app data. Include data scenarios that exercise your upgrade logic and verify that the data remains correct afterward. An upgrade can fail because of an untested data scenario, or appear to succeed while losing data.
 
 ## Do I only need to do upgrade testing from previous version to current?
 
-No. It's important you test from various previous versions of your app. This is because we don't automatically upgrade apps for minor releases. You could have a tenant back on version 1.0.0.0 of your app and have to jump all the way to version 1.0.0.5. We don’t guarantee direct upgrades of apps from their most previous version.
+No. Test upgrades from various previous versions that customers might still have installed. Customers don't necessarily install every app version. For example, an environment could still have version 1.0.0.0 and need to upgrade directly to version 1.0.0.5.
+
+Minor environment updates update apps according to the app update cadence and compatibility requirements. Don't assume that customers have installed the immediately preceding app version.
+
+Learn more about [upgrading extensions](devenv-upgrading-extensions.md) and [automatic app updates](../administration/tenant-admin-center-manage-apps.md#update-installed-apps-with-environment-updates).
 
 ## Related information
 
 [FAQ about updating your Business Central app](app-faq-update.md)  
-[FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  
-[Update Lifecycle for Marketplace Apps FAQ](devenv-update-app-life-cycle-faq.md)  
-[The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  
+[FAQ about library and dependency apps in Business Central](app-faq-dependencies-libraries.md)  
+[Update lifecycle for Marketplace apps FAQ](devenv-update-app-life-cycle-faq.md)  
+[The lifecycle of apps and extensions for Business Central](devenv-app-life-cycle.md)  
