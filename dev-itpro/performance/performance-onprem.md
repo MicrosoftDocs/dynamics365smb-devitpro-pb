@@ -7,6 +7,7 @@ ms.reviewer: solsen
 ms.service: dynamics-365-op
 ms.topic: reference
 author: KennieNP
+ai-usage: ai-assisted
 ---
 
 # Performance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises installations
@@ -54,7 +55,7 @@ You can adjust the following [!INCLUDE[server](../developer/includes/server.md)]
 | BufferedInsertEnabled | Disabling bulk inserts can be helpful when you're troubleshooting failures that occur when inserting records. | [Disabling Bulk Inserts](../administration/optimize-sql-bulk-inserts.md) | 
 | DisableQueryHintForceOrder | Check if this setting is set to **true**. | [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md) |
 | DisableQueryHintLoopJoin | Check if this setting is set to **true**. | [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md) |
-| DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is bad, you might want to try isolating and testing FlowField queries separately. | [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md) |
+| DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is bad, you might want to try isolating and testing FlowField queries separately. | [Troubleshooting: Long running SQL queries involving FlowFields by disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md) |
 |EnableCloudReplicationMaintenance|Specifies whether to keep the cloud replication status in the database up to date. When enabled, synchronize operations on tenants and extensions will update records in the **Intelligent Cloud Status** table, and set change tracking on tables that are configured to [replicate data](../developer/properties/devenv-replicatedata-property.md).<br /><br />Enabling this setting isn't required for migrating most on-premises solutions to the cloud, and you'll improve synchronization and upgrade performance by disabling it.|[Configuring Business Central Server - EnableCloudReplicationMaintenance](../administration/server-instance-settings.md#preserve-compatibility-and-manage-upgrades)|
 |EnableProfileCacheSynchronization|Specifies whether profile cache synchronization across multiple server instances is enabled. However, enabling this setting may lower the tenant performance.|[Configuring Business Central Server - EnableProfileCacheSynchronization](../administration/server-instance-settings.md#manage-extensions-and-development)|
 | SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance. But it also lowers the amount of memory that the server instance consumes.  | [Database Settings](../administration/server-instance-settings.md#tune-database-execution) |
@@ -108,7 +109,7 @@ Learn more about using Read Scale-Out for better performance in [Using Read Scal
 
 These articles can be useful when troubleshooting database performance issues:
 
-- [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
+- [Troubleshooting: Long running SQL queries involving FlowFields by disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 - [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md)  
 - [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
 

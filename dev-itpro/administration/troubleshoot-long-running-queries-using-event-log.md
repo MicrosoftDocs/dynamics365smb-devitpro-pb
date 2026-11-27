@@ -69,7 +69,7 @@ CounterInformation:
 
 ## Related information
 
-[Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)   
+[Troubleshooting: Long running SQL queries involving FlowFields by disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
 [Monitoring Long Running SQL Queries using the Event Log](monitor-long-running-sql-queries-event-log.md)  
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
 [Business Central Server Administration Tool](administration-tool.md)  

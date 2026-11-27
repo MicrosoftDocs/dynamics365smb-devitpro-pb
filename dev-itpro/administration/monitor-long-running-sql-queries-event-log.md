@@ -59,7 +59,7 @@ If you are using the event log, refer to the following articles:
 
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)
 
-[Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)
+[Troubleshooting: Long running SQL queries involving FlowFields by disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)
 
 If you are using application Insights, see:
 
@@ -130,7 +130,7 @@ If you have access to an Application Insights resource in Microsoft Azure, you c
 ## Related information
 
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)  
-[Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
+[Troubleshooting: Long running SQL queries involving FlowFields by disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration)  
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  

@@ -1,45 +1,48 @@
 ---
 title: Marketplace Channels for Questions and Issues FAQ
-description: Describes the most common questions about channels that you can use for questions and issues you might have when submitting your app to Marketplace for Business Central.
-author: qutreson
+description: Find the right support channel for Business Central Marketplace submissions, validation failures, app installation issues, and BcContainerHelper questions.
+author: SusanneWindfeldPedersen
 ms.date: 10/08/2025
 ms.reviewer: solsen
 ms.topic: faq
-ms.author: qutreson
+ai-usage: ai-assisted
+ms.author: solsen
 ms.custom: sfi-ropc-nochange
 ---
 
 # Marketplace channels for questions and issues FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for Marketplace submission. In the following, you can read about how you reach out for support most efficiently.
+Use this FAQ to choose a support channel for your Marketplace app. Find where to ask about submission validation, customer installation and usage, and development tools.
 
 ## When do I contact d365val@microsoft.com?
 
-When registering affixes for your publisher, or adding a new publisher name to your affixes. When contacting d365val@microsoft.com, make sure to provide the required information documented in [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
+Contact d365val@microsoft.com to register affixes for your publisher or add a new publisher name to your affixes. Provide the required information described in [Benefits and guidelines for using a prefix or suffix](../compliance/apptest-prefix-suffix.md).
 
 ## When do I contact Partner Center customer support?
 
-When your submission fails to be successfully completed in Partner Center, but you're experiencing issues updating your extensions to fix the validation errors.
+Contact Partner Center support if your submission doesn't complete and you have trouble updating your extensions to fix validation errors.
 
-> [!IMPORTANT]  
-> If you're using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages that you found. Including the results from the TSG is also recommended.
+> [!IMPORTANT]
+> If you use Azure Application Insights, you must analyze the [validation telemetry](../administration/telemetry-appsource-submission-validation-trace.md) in your Application Insights resource before opening a support case for a failure in **Automated application validation**. You can use the [troubleshooting guide](https://go.microsoft.com/fwlink/?linkid=2172328) to help with this analysis. When opening a case, you must include the Kusto queries you used and the diagnostic messages you found. We also recommend including the troubleshooting guide results.
 
 ## When do I contact Business Central customer support?
 
-When your submission has been successfully completed in Partner Center, but your customers are experiencing issues installing or using the app.
+Contact Business Central support if your submission completed successfully in Partner Center but customers have issues installing or using the app.
 
 ## When do I log an issue on NavContainerHelper on GitHub?
 
-When you have questions or bugs regarding the self-validation script, or any of the modules exposed by BcContainerHelper.
+Open an issue for questions or bugs about the self-validation script or commands provided by the `BcContainerHelper` PowerShell module.
 
-Learn more in [https://github.com/microsoft/navcontainerhelper/issues](https://github.com/microsoft/navcontainerhelper/issues).
+Learn more in [BcContainerHelper issues on GitHub](https://github.com/microsoft/navcontainerhelper/issues).
 
 ## When do I write on Viva Engage?
 
-When you have questions on developing and maintaining Marketplace apps, on automatically submitting apps to Marketplace, or about the validation process, you can ask a question on Viva Engage. In this group, you find announcements from Microsoft together with discussions around various Marketplace-related articles.
+Ask questions on Viva Engage about developing and maintaining Marketplace apps, automatically submitting apps, or the validation process. The group includes Microsoft announcements and discussions about Marketplace-related articles.
+
+Learn more about joining the broader partner community in [About the Business Central partner community on Viva Engage](../join-viva-engage.md).
 
 <!-- You can join this Marketplace group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. -->
 
 ## Related information
 
-[Technical validation checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)  

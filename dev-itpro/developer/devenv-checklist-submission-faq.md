@@ -1,33 +1,34 @@
 ---
-title: Technical validation FAQ
-description: Describes the most common questions when submitting your app to Marketplace for Business Central.
-author: qutreson
-ms.date: 02/19/2025
+title: Business Central Technical Validation FAQ
+description: Find answers about technical validation, app identity, previews, offers, and support channels when submitting Business Central apps to Marketplace.
+author: SusanneWindfeldPedersen
+ms.date: 11/10/2026
 ms.reviewer: solsen
 ms.topic: faq
-ms.author: qutreson
+ai-usage: ai-assisted
+ms.author: solsen
 ms.custom: sfi-ropc-nochange
 ---
 
 # Technical validation FAQ
 
-This article addresses some of the most frequently asked questions around validation of apps for Marketplace submission. In the following sections, you can read about the technical validation process, questions about app identity, code-signing validation, Azure Application Insights usage during Marketplace submissions, channels to ask questions or report issues, and Marketplace app previews.
+This article answers frequently asked questions about validation of apps for Marketplace submission. Use the following articles to learn about technical validation, app identity, code-signing validation, Azure Application Insights during submissions, support channels, and Marketplace app previews.
 
 |Article|Description |
 |---|---|
-|[Technical validation process FAQ](devenv-checklist-submission-validation-process.md)|Describes the most common questions about the validation process when submitting your app to Marketplace for Business Central.|
-|[App identity FAQ](devenv-checklist-submission-app-identity.md)|Describes the most common questions about app identity in your Marketplace app for Business Central.|
-|[Azure Application Insights and Marketplace submission FAQ](devenv-checklist-submission-app-insights.md)|Describes the most common questions when submitting your app to Marketplace for Business Central.|
-|[Marketplace app previews FAQ](devenv-checklist-submission-app-preview.md)|Describes the most common questions about Marketplace previews for Business Central.|
-|[Business Central offer FAQ](devenv-checklist-submission-offer.md)|Describes the most common questions about Marketplace app offers for Business Central.|
-|[Names, affixes, and ID ranges FAQ](devenv-checklist-submission-name-affix-range.md)|Describes the most common questions about names, affixes, and ID ranges in your Marketplace app for Business Central.|
-|[Develop and maintain Marketplace apps FAQ](devenv-checklist-submission-develop-maintain.md)|Describes the most common questions when submitting your app to Marketplace for Business Central.|
-|[Code-signing validation FAQ](devenv-checklist-submission-code-sign.md)|Describes the most common questions when about code-signing your Marketplace app for Business Central.|
-|[Channels for questions and issues FAQ](devenv-checklist-submission-channels.md)|Describes the most common questions when submitting your app to Marketplace for Business Central.|
+|[Technical validation process FAQ](devenv-checklist-submission-validation-process.md)|Find answers about validation steps, failures, and resubmissions.|
+|[App identity FAQ](devenv-checklist-submission-app-identity.md)|Learn when you can change an app's name, publisher, or app ID.|
+|[Azure Application Insights and Marketplace submission FAQ](devenv-checklist-submission-app-insights.md)|Find answers about using Azure Application Insights during app validation.|
+|[Marketplace app previews FAQ](devenv-checklist-submission-app-preview.md)|Learn about preview versions of Marketplace apps.|
+|[Business Central offer FAQ](devenv-checklist-submission-offer.md)|Find answers about Marketplace app offers for Business Central.|
+|[Names, affixes, and ID ranges FAQ](devenv-checklist-submission-name-affix-range.md)|Understand requirements for app names, registered affixes, and object ID ranges.|
+|[Develop and maintain Marketplace apps FAQ](devenv-checklist-submission-develop-maintain.md)|Find answers about developing and maintaining apps for Marketplace.|
+|[Code-signing validation FAQ](devenv-checklist-submission-code-sign.md)|Find answers about signing app packages and validating code-signing certificates.|
+|[Channels for questions and issues FAQ](devenv-checklist-submission-channels.md)|Find out where to ask questions, report issues, and get support.|
 
 ## Questions about hotfixing a Marketplace app
 
-For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing a Marketplace app](devenv-hotfixing-appsource-app.md)
+Learn more about which changes qualify for a hotfix and which changes aren't allowed in [Hotfixing a Marketplace app](devenv-hotfixing-appsource-app.md).
 
 
 <!-- delete sections and create overview - hotfixing can stay in ths article
@@ -42,17 +43,17 @@ The extensions in your submission are validated for all the releases targeted by
 
 Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. Learn more in the example in [Technical validation checklist](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated). The 'Target Release' (Current, Next Minor, Next Major) available under 'Supplemental Content' in Partner Center is ignored and will be removed.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > The minimum release computed for your submission also defines the availability in [!INCLUDE[prod_short](../includes/prod_short.md)] of all the extensions in your submission.
 >
 > For example, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
 
-> [!NOTE]  
+> [!NOTE]
 > Thirty days before the release of a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version, all submissions are validated against the upcoming release. The apps in your submission must then be compatible with the upcoming release. The goal is to ensure that your customers won't be blocked during the upgrade of their environment.
 
 ### Against which countries/regions are my apps validated?
 
-The extensions in your submission are validated for all the countries/regions targeted by the submission, which are available in [!INCLUDE[prod_short](../includes/prod_short.md)]. You can see which countries/regions you've selected in Partner Center under `Availability > Edit Markets`. 
+The service validates the extensions in your submission for all the countries and regions that your submission targets and that are available in [!INCLUDE[prod_short](../includes/prod_short.md)]. You can see the selected countries and regions in Partner Center under `Availability > Edit Markets`.
 
 When you're adding new localizations in [!INCLUDE[prod_short](../includes/prod_short.md)], these countries/regions can be added to Partner Center before they're ready in [!INCLUDE[prod_short](../includes/prod_short.md)]. If you're targeting a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), depending on when your submission is processed, your apps might not be uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] if the localization isn't yet ready in [!INCLUDE[prod_short](../includes/prod_short.md)]. Generally, it's possible to upload apps for 'Planned' localizations a few weeks before they're officially released. When the localization becomes available, if you're experiencing issues installing your apps, you should increase the version in the app.json and submit the packages again in Partner Center. If you're using Azure Application Insights, you can check whether the country/region was validated using this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
@@ -62,7 +63,7 @@ The service verifies that your extensions don't introduce breaking changes by co
 
 You can know which versions of your extensions were used as baseline during the breaking change validation by enabling Azure Application Insights in your extension and running this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > As soon as you upload your app to the Marketplace, the service uses it as a baseline during the technical validation of your next submissions. As a consequence, you can't make breaking changes without first obsoleting the AL objects, and you can't make schema breaking changes. This restriction also applies if customers aren't using your extension yet. Don't submit your app to the Marketplace if you're still developing it and expect to change it soon.
 
 ### Which apps are validated in my submission?
@@ -71,7 +72,7 @@ The main app and the libraries required by the main app are validated and upload
 
 For example, consider an app A that has an offer in the Marketplace and depends on a library named B, which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, the validation process checks only A and B. It ignores C and D because the main app A doesn't require them. If B is updated to depend on C and D, the validation process checks all apps in the submission.
 
-> [!NOTE]  
+> [!NOTE]
 > If some apps in your submission already have been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] with the same version for some countries/regions, then the app won't be validated again for these countries/regions.
 
 > [!IMPORTANT]
@@ -81,13 +82,13 @@ For example, consider an app A that has an offer in the Marketplace and depends 
 
 During automated application validation, the validation process checks the apps in your submission for each of the countries or regions and each of the releases of [!INCLUDE[prod_short](../includes/prod_short.md)] targeted. If you already have a version of these extensions published to Marketplace, the validation process also runs the breaking change validation by using the apps currently in Marketplace as baseline. Depending on the size of your app, the validation time can vary. The validation process processes submissions within a few minutes and it expects all submissions to be processed under three hours. However, if your app contains thousands of AL files, this process can take longer. Split the app into smaller modules as it would also improve the development experience and the maintainability of your code base.
 
-### How many automated tests do we need to run for validation and how high must the test coverage be?  
+### How many automated tests do I need to run for validation, and how high must the test coverage be?
 
 When setting up your offer in Partner Center, you must still include a test package in 'App Tests Automation', but it isn't used during the validation of the submission.
 
 Test automation is something we expect you to run, to test your app, and to make sure that the quality of your app is high. We don't run tests of your apps, nor do we have a set value for a required code coverage. Instead, we rely on you to test your app properly to give your customers a good experience.
 
-### When I submit an app to Marketplace, do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
+### When I submit an app to Marketplace, do you always perform manual validation based on the provided 'Key Usage Scenario' document?
 
 When setting up your offer in Partner Center, you must still include a document in 'Key Usage Scenario', but it isn't used during the validation of the submission.
 
@@ -98,13 +99,13 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 Shortly after Partner Center finishes the offer publishing process, users can install your extensions on all [!INCLUDE[prod_short](../includes/prod_short.md)] environments from the Marketplace.
 
 Before going public with the submitted app version, you can test it after the "Preview creation" step, either yourself as a publisher or with select customers. To trigger an install of the preview version, customers must receive and use the app preview install URL:
-	
-`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` 
-	
+
+`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503`
+
 Where
 
-- `[TenantID]` is the Microsoft Entra ID of the customer environment, 
-- `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
+- `[TenantID]` is the Microsoft Entra ID of the customer environment,
+- `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
 Learn more about Marketplace app preview in the section [Questions about Marketplace app previews](#questions-about-appsource-app-previews) in this article.
@@ -115,7 +116,7 @@ You aren't required to always include the dependencies of your extension as part
 
 You're only required to include the dependencies for your extension as part of your submission if you're submitting a newer version for them. If you don't include them in your submission, they're downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions.
 
-> [!NOTE]  
+> [!NOTE]
 > If you include the dependencies of your extension as part of the submission, these dependency versions are used during the validation, even if there are higher versions already available in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 If you didn't include the dependencies for your app and they aren't publicly available, your submission fails during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
@@ -176,12 +177,12 @@ Preview versions can be installed on Sandbox environments running on [!INCLUDE[p
 
 Selected customers can install the preview version of the extensions in your submission after the "Preview creation" step of the submission flow in Partner Center. To trigger the install, customers must receive and use the preview app install URL:
 
-`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503` 
+`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]' AND 'PreviewKey' IS '[PreviewKey]'&page=2503`
 
 Where
 
-- `[TenantID]` is the Microsoft Entra ID of the customer environment, 
-- `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
+- `[TenantID]` is the Microsoft Entra ID of the customer environment,
+- `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
 After the "Preview creation", a preview listing of the offer is available in the Marketplace marketplace. You can access this preview listing from Partner Center by checking off the "Marketplace preview" option at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing isn't supported. Customers must use the preview app install URL mentioned earlier.
@@ -196,7 +197,7 @@ You can ensure that your library apps are installed on your customer's environme
 
 If you're using Azure Application Insights for your extension, you can see which customers installed it as a preview version by selecting signals `LC0010` and `LC0022` where the custom dimension `extensionAvailability` is set to `Preview`. You can also see which customers used a preview key when installing your extensions by filtering on the custom dimension `extensionPreviewKeyProvided`. Learn more in [Analyzing extension lifecycle trace telemetry](../administration/telemetry-extension-lifecycle-trace.md).
 
-> [!NOTE]  
+> [!NOTE]
 > If you see some extensions installed with `extensionAvailability` set to `Public` even if `extensionPreviewKeyProvided` is set to `True`, this means that the customers used the preview key they received after you selected `Go Live` in Partner Center to make the extension public.
 
 ### How do I go live with my preview version?
@@ -205,7 +206,7 @@ Make your preview version publicly available in the Marketplace by selecting **G
 
 ### Is the preview key per submission or per offer?
 
-The preview key specified in Partner Center under `Availability > Preview Audience > Hide Key` **at the time of the submission** is the one that must be used by customers to install this preview version. 
+Customers must use the preview key you specify in Partner Center under `Availability > Preview Audience > Hide Key` **at the time of the submission** to install the preview version.
 
 If you change the preview key for your offer in Partner Center, the submitted preview version isn't automatically updated and will still use the previous preview key. For example, if you submit version 1.0.0.0 with the preview key `key-1`, then version 1.0.0.0 can be installed by customer that adds the key `key-1` in the install URL. If you change the preview key for your offer in Partner Center to `key-2`, this key won't be used until you start a new submission. If you submit version 1.0.0.0 again, customers are able to install it using either `key-1` or `key-2`. If you submit version 2.0.0.0, then customers are able to install it with version `key-2` only.
 
@@ -217,12 +218,12 @@ Preview versions are validated for breaking changes against the latest publicly 
 
 For example, if you have version 1.0.0.0 as publicly available in Marketplace and you submit version 2.0.0.0, the validation process checks version 2.0.0.0 for breaking changes against version 1.0.0.0. If you don't select **Go Live** for your submission of version 2.0.0.0, and decide to start a new submission with version 2.1.0.0, the validation process checks version 2.1.0.0 for breaking changes against version 1.0.0.0.
 
-> [!NOTE]  
+> [!NOTE]
 > Since there can be breaking changes between a preview version that was never made public and the next version of the app, the schema update mode `ForceSync` is used when upgrading **from** a preview version.
 
 ### Can the submission for one offer depend on preview versions of libraries from another offer?
 
-Dependencies, which aren't included in the submission will be downloaded automatically if they're publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions. 
+If dependencies aren't included in the submission but are publicly available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries or regions, they're automatically downloaded.
 
 Your submission fails during the "Automated Application Validation" stage if you didn't include the dependencies for your app and they aren't publicly available. The submission will also fail if the dependencies are only available as Preview and aren't included in the submission. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
@@ -246,7 +247,7 @@ Here's a list of steps that you can follow to troubleshoot this issue:
 2. Validate that the time range when running the query covers the time of the submission.
 3. If you're using the `applicationInsightsKey` property in the manifest (app.json) of your extension, you should use the `applicationInsightsConnectionString` property instead because it's more reliable. Make sure to use the full connection string from your Azure Application Resource.
 4. If you're using the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension, make sure that you're using the full connection string and that it contains, at least, the following key-value pairs: `InstrumentationKey=<some-key>`, `IngestionEndpoint=<some-url>`, and `LiveEndpoint=<some-url>`. Learn more in [Connection strings](/azure/azure-monitor/app/sdk-connection-string)
-5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to 'Configure > Usage and estimated costs'. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. Learn more in [Sampling in Application Insights](/azure/azure-monitor/app/sampling). 
+5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to **Configure** > **Usage and estimated costs**. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. Learn more in [Sampling in Application Insights](/azure/azure-monitor/app/sampling).
 
 ### I can see some signals in Application Insights, but I can't find why my submission failed, what do I do next?
 
@@ -257,11 +258,11 @@ The custom dimensions of the signals provide much information. You can generally
 
 ## Questions about developing and maintaining Marketplace apps
 
-This section contains frequently asked questions about developing apps (in Docker or SaaS). For information about maintaining apps after they reach the Marketplace, see [Update Lifecycle for Marketplace Apps FAQ](devenv-update-app-life-cycle-faq.md).
+This section contains frequently asked questions about developing apps (in Docker or SaaS). For information about maintaining apps after they reach the Marketplace, see [Update lifecycle for Marketplace apps FAQ](devenv-update-app-life-cycle-faq.md).
 
 ### What does it mean if I have an app in development that needs another dependency loaded, but I can't get the dependency's codeunits to load in my BC docker instance because it says the dependency's range is outside my range?
 
-It means that your license doesn't allow you to publish that application. Either get a runtime package from the developer of that Marketplace app, which bypasses the licensing check, or test it in an online sandbox environment where that Marketplace app is already installed. 
+It means that your license doesn't allow you to publish that application. Either get a runtime package from the developer of that Marketplace app, which bypasses the licensing check, or test it in an online sandbox environment where that Marketplace app is already installed.
 
 ## Questions about code-signing validation
 
@@ -305,7 +306,7 @@ No, you don't need to request a new ID range for each of your extensions.
 
 The object IDs are registered per partner, not per extension. You can then use a subset of this range for each of your extensions. It is your responsibility to ensure that you aren't defining objects with the same IDs in different extensions. If you're doing so, the extensions defining these objects can't be installed together on the same environment. Learn more in [Get started building apps](readiness/get-started.md#requesting-an-object-range).
 
-### Will there be any changes made to the object names character limitation (30 characters) within the near future? 
+### Will there be any changes made to the object names character limitation (30 characters) in the near future?
 
 We would like longer names as well. Introducing namespaces could be one investment. However, such a change has down-stream breaking impact (any caller needs to qualify calls) and there are SQL constraints on name lengths for tables, which currently include company name, table name, app ID and needs to be maximum 255. This is on our long term backlog, but haven't any changes planned soon.
 
@@ -335,18 +336,18 @@ When changing the publisher of an extension, you must:
 
 ### When is it okay to change the App ID of my extension?
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > The App ID is a critical part of the identity of apps in [!INCLUDE[prod_short](../includes/prod_short.md)], and changing it is a breaking change for all extensions depending on it. You should then not change the App ID of extensions which are installed for customers in Business Central Online.
 
 If you're submitting a new version of your extension with a different App ID for an existing offer, this new version is considered as a different extension. This condition means that all extensions that depend on the extension with the old app ID must be updated to reference the new App ID. If you don't update them, this condition causes problems such as customer environment upgrade failures, which you must fix within the required time period. For more information, see [Maintain Marketplace Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md). Since the app ID is part of how data is stored in [!INCLUDE[prod_short](../includes/prod_short.md)], this condition also means that you have to migrate the data for all customers that have the extension with the old App ID installed. Microsoft doesn't provide tools for performing data migration in SaaS, but you can create your own solution to export data from the old extension and reimport the data after the extension change.
 
-### Is it possible to have multiple apps with the same App ID in Marketplace? 
+### Can I have multiple apps with the same App ID in Marketplace?
 
-Each unique codebase has one unique ID. If you have four apps in Marketplace, you need to have four unique IDs for these apps. Otherwise, you get conflicts. 
+Each unique codebase has one unique ID. If you have four apps in Marketplace, you need four unique IDs for these apps. Otherwise, you get conflicts.
 
-### What if I already have an app on Marketplace but I need to create the same app for another country or region; can I use the same app ID for two different apps targeting two different countries or regions? 
+### What if I already have an app on Marketplace but I need to create the same app for another country or region? Can I use the same app ID for two different apps targeting two different countries or regions?
 
-If they're different apps (different code), they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries/regions (with one app identity) and localized functionality as extensions on top (with their own identity). 
+If they're different apps (different code), they should have different identity. You use identity in app management, dependencies, support cases, and telemetry. If you reuse identity across different apps, you lose identity uniqueness. Another approach could be a common shared (internal or library) app across countries or regions (with one app identity) and localized functionality as extensions on top (with their own identity).
 
 ## Questions about Business Central offer
 
@@ -363,7 +364,7 @@ When changing a `connect` app to an `add-on` app, you should:
 - Retrieve the App ID assigned by the service to your offer: the App ID can be found as `<appId>` in `https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.<publisherId>%7CAID.<offerId>%7CPAPPID.<appId>`
 - Use this App ID in the `app.json` of the main extension uploaded to your offer
 
-> [!NOTE]  
+> [!NOTE]
 > The App ID is used as part of the URL of the offer listing and is used as a key to retrieve to customer review left on the offer listing. Not preserving the App ID means that the offer URL will change and customer reviews will be lost.
 
 ### How to automatically update my offer using Partner Center submission API?
@@ -376,7 +377,7 @@ You can't directly install offers that use the 'Contact Me' listing type from th
 
 Based on this information, you can then build the install URL for your offer and share it with the customer:
 
-`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]'&page=2503` 
+`https://businesscentral.dynamics.com/[TenantID]/?noSignUpCheck=1&filter='ID' IS '[AppID]'&page=2503`
 
 Where
 
@@ -397,7 +398,7 @@ When registering affixes for your publisher, or adding a new publisher name to y
 
 When your submission fails to be successfully completed in Partner Center, but you're experiencing issues updating your extensions to fix the validation errors.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > If you're using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages that you found. Including the results from the TSG is also recommended.
 
 ### When do I contact Business Central customer support?
@@ -412,11 +413,11 @@ Learn more in [https://github.com/microsoft/navcontainerhelper/issues](https://g
 
 ### When do I write on Viva Engage?
 
-Write on Viva Engage when you have questions about developing and maintaining Marketplace apps, automatically submitting apps to Marketplace, or the validation process. In this group, you find announcements from Microsoft together with discussions around various Marketplace-related articles.  
+Write on Viva Engage when you have questions about developing and maintaining Marketplace apps, automatically submitting apps to the Marketplace, or the validation process. In this group, you find announcements from Microsoft together with discussions about various Marketplace-related articles.  
 
-You can join this Marketplace group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
+You can join this Marketplace group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (you need to be a Microsoft partner to join). If you have problems connecting, email dyn365bep@microsoft.com.
 
 -->
 ## Related information
 
-[Technical validation checklist](devenv-checklist-submission.md)
+[Technical validation checklist](devenv-checklist-submission.md)  

@@ -6,6 +6,7 @@ ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: how-to
 author: jswymer
+ai-usage: ai-assisted
 ms.service: dynamics-365-op
 ms.custom:
   - bap-template
@@ -436,5 +437,5 @@ We recommend that you provide guidance to your users for signing out of their ac
 ## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
+[Troubleshooting: SAML2 token errors with Microsoft Entra ID or Office 365 authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
 [Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md)
